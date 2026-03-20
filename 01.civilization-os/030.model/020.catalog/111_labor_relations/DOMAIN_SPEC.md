@@ -1,0 +1,35 @@
+domain: 111_labor_relations
+models: 30
+
+0001 labor_relations_system
+0002 labor_relations_structure
+0003 labor_relations_network
+0004 labor_relations_institution
+0005 labor_relations_actor
+0006 labor_relations_organization
+0007 labor_relations_process
+0008 labor_relations_operation
+0009 labor_relations_service
+0010 labor_relations_market
+
+0011 labor_relations_policy
+0012 labor_relations_regulation
+0013 labor_relations_governance
+0014 labor_relations_management
+0015 labor_relations_coordination
+0016 labor_relations_monitoring
+0017 labor_relations_data
+0018 labor_relations_analysis
+0019 labor_relations_infrastructure
+0020 labor_relations_platform
+
+0021 labor_relations_crisis
+0022 labor_relations_disruption
+0023 labor_relations_recovery
+0024 labor_relations_reform
+0025 labor_relations_transition
+0026 labor_relations_stability
+0027 labor_relations_risk
+0028 labor_relations_capacity
+0029 labor_relations_system_design
+0030 labor_relations_system_state

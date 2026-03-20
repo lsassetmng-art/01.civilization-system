@@ -1,0 +1,35 @@
+domain: 059_construction
+models: 30
+
+0001 construction
+0002 construction_project
+0003 construction_site
+0004 construction_company
+0005 construction_worker
+0006 construction_equipment
+0007 construction_material
+0008 construction_plan
+0009 construction_schedule
+0010 construction_cost
+
+0011 construction_contract
+0012 construction_design
+0013 construction_engineering
+0014 construction_management
+0015 construction_safety
+0016 construction_quality
+0017 construction_regulation
+0018 construction_permit
+0019 construction_monitoring
+0020 construction_data
+
+0021 construction_crisis
+0022 construction_delay
+0023 construction_recovery
+0024 construction_reform
+0025 construction_transition
+0026 construction_stability
+0027 construction_analysis
+0028 construction_coordination
+0029 construction_system_design
+0030 construction_system_state

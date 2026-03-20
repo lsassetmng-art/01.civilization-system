@@ -1,0 +1,57 @@
+# MODEL BOOK
+# COSMOS DOMAIN
+
+122001 cosmos_system
+122002 universe_structure
+122003 cosmic_environment
+122004 cosmic_cycle
+122005 cosmic_balance
+122006 cosmic_event
+122007 cosmic_radiation
+122008 cosmic_energy
+122009 cosmic_matter
+122010 cosmic_field
+
+122011 galaxy
+122012 galaxy_cluster
+122013 star_system
+122014 star_lifecycle
+122015 planet_system
+122016 planetary_orbit
+122017 asteroid_field
+122018 comet_system
+122019 interstellar_medium
+122020 cosmic_background
+
+122021 planetary_habitability
+122022 planetary_environment
+122023 planetary_atmosphere
+122024 planetary_geology
+122025 planetary_magnetosphere
+122026 planetary_ocean
+122027 planetary_climate
+122028 planetary_biosphere
+122029 planetary_resource
+122030 planetary_risk
+
+122031 cosmic_monitoring
+122032 cosmic_observation
+122033 cosmic_registry
+122034 cosmic_metric
+122035 cosmic_indicator
+122036 cosmic_dashboard
+122037 cosmic_analysis
+122038 cosmic_model
+122039 cosmic_projection
+122040 cosmic_scenario
+
+122041 cosmic_program
+122042 cosmic_program_state
+122043 cosmic_cluster
+122044 cosmic_network
+122045 cosmic_platform
+122046 cosmic_operation
+122047 cosmic_operation_state
+122048 cosmic_transition
+122049 cosmic_evolution
+122050 cosmos_system_state

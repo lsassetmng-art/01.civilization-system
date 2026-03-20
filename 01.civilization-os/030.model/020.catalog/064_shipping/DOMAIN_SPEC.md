@@ -1,0 +1,35 @@
+domain: 064_shipping
+models: 30
+
+0001 shipping
+0002 shipping_route
+0003 shipping_network
+0004 shipping_port
+0005 shipping_vessel
+0006 shipping_operator
+0007 shipping_service
+0008 shipping_capacity
+0009 shipping_flow
+0010 shipping_schedule
+
+0011 shipping_terminal
+0012 shipping_logistics
+0013 shipping_container
+0014 shipping_cargo
+0015 shipping_inspection
+0016 shipping_regulation
+0017 shipping_policy
+0018 shipping_monitoring
+0019 shipping_data
+0020 shipping_management
+
+0021 shipping_crisis
+0022 shipping_disruption
+0023 shipping_recovery
+0024 shipping_reform
+0025 shipping_transition
+0026 shipping_stability
+0027 shipping_coordination
+0028 shipping_analysis
+0029 shipping_system_design
+0030 shipping_system_state

@@ -1,0 +1,28 @@
+# MODEL BOOK
+# CIRCULAR ECONOMY DOMAIN
+
+103001 circular_economy_system
+103002 circular_market
+103003 circular_industry
+103004 circular_company
+103005 circular_resource_flow
+103006 circular_recycling
+103007 circular_reuse
+103008 circular_supply_chain
+103009 circular_platform
+103010 circular_infrastructure
+103011 circular_policy
+103012 circular_regulation
+103013 circular_governance
+103014 circular_monitoring
+103015 circular_data
+103016 circular_analysis
+103017 circular_metric
+103018 circular_indicator
+103019 circular_dashboard
+103020 circular_program
+103021 circular_program_state
+103022 circular_market_state
+103023 circular_network
+103024 circular_cluster
+103025 circular_system_state

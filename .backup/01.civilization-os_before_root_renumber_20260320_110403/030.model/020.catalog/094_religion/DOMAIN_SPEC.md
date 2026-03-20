@@ -1,0 +1,35 @@
+domain: 094_religion
+models: 30
+
+0001 religion
+0002 religious_institution
+0003 religious_organization
+0004 religious_leader
+0005 religious_member
+0006 religious_community
+0007 religious_practice
+0008 religious_ritual
+0009 religious_belief
+0010 religious_tradition
+
+0011 religious_authority
+0012 religious_law
+0013 religious_event
+0014 religious_network
+0015 religious_influence
+0016 religious_conflict
+0017 religious_policy
+0018 religious_regulation
+0019 religious_monitoring
+0020 religious_data
+
+0021 religious_crisis
+0022 religious_reform
+0023 religious_transition
+0024 religious_stability
+0025 religious_coordination
+0026 religious_analysis
+0027 religious_governance
+0028 religious_management
+0029 religious_system_design
+0030 religious_system_state

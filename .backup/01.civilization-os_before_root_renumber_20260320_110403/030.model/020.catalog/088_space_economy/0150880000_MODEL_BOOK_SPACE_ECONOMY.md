@@ -1,0 +1,28 @@
+# MODEL BOOK
+# SPACE ECONOMY DOMAIN
+
+088001 space_economy_system
+088002 space_market
+088003 space_industry
+088004 space_company
+088005 space_investment
+088006 space_finance
+088007 space_trade
+088008 space_service
+088009 space_platform
+088010 space_infrastructure
+088011 space_policy
+088012 space_governance
+088013 space_regulation
+088014 space_monitoring
+088015 space_data
+088016 space_analysis
+088017 space_metric
+088018 space_indicator
+088019 space_dashboard
+088020 space_program
+088021 space_program_state
+088022 space_market_state
+088023 space_network
+088024 space_cluster
+088025 space_economy_state

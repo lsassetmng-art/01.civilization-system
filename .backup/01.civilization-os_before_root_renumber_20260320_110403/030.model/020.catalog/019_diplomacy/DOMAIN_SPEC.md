@@ -1,0 +1,35 @@
+domain: 019_diplomacy
+models: 30
+
+0001 diplomacy
+0002 diplomatic_relation
+0003 diplomatic_mission
+0004 ambassador
+0005 diplomatic_staff
+0006 diplomatic_protocol
+0007 diplomatic_negotiation
+0008 diplomatic_agreement
+0009 diplomatic_treaty
+0010 diplomatic_dialogue
+
+0011 diplomatic_channel
+0012 diplomatic_message
+0013 diplomatic_visit
+0014 diplomatic_summit
+0015 diplomatic_alliance
+0016 diplomatic_conflict
+0017 diplomatic_mediation
+0018 diplomatic_sanction
+0019 diplomatic_strategy
+0020 diplomatic_policy
+
+0021 diplomatic_crisis
+0022 diplomatic_resolution
+0023 diplomatic_transition
+0024 diplomatic_stability
+0025 diplomatic_coordination
+0026 diplomatic_network
+0027 diplomatic_intelligence
+0028 diplomatic_monitoring
+0029 diplomatic_governance
+0030 diplomatic_system_state

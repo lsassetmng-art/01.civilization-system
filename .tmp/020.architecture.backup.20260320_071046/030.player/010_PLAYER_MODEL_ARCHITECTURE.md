@@ -1,0 +1,1 @@
+Defines player core model.

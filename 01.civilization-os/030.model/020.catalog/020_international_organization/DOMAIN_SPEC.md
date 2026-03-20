@@ -1,0 +1,35 @@
+domain: 020_international_organization
+models: 30
+
+0001 international_organization
+0002 international_body
+0003 international_member_state
+0004 international_secretariat
+0005 international_charter
+0006 international_mandate
+0007 international_program
+0008 international_operation
+0009 international_funding
+0010 international_budget
+
+0011 international_resolution
+0012 international_committee
+0013 international_conference
+0014 international_cooperation
+0015 international_coordination
+0016 international_monitoring
+0017 international_evaluation
+0018 international_standard
+0019 international_regulation
+0020 international_agreement
+
+0021 international_crisis_response
+0022 international_mediation
+0023 international_reform
+0024 international_transition
+0025 international_stability
+0026 international_governance
+0027 international_network
+0028 international_data
+0029 international_policy
+0030 international_system_state

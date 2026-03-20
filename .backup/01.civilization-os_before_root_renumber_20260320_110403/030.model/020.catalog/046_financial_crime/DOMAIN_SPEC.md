@@ -1,0 +1,35 @@
+domain: 046_financial_crime
+models: 30
+
+0001 financial_crime
+0002 money_laundering
+0003 terrorist_financing
+0004 fraud
+0005 insider_trading
+0006 market_manipulation
+0007 corruption
+0008 bribery
+0009 embezzlement
+0010 financial_scandal
+
+0011 suspicious_transaction
+0012 financial_investigation
+0013 financial_enforcement
+0014 financial_penalty
+0015 financial_sanction
+0016 aml_program
+0017 compliance_program
+0018 risk_assessment
+0019 financial_surveillance
+0020 financial_reporting
+
+0021 financial_crime_regulation
+0022 financial_crime_monitoring
+0023 financial_crime_prevention
+0024 financial_crime_crisis
+0025 financial_crime_recovery
+0026 financial_crime_transition
+0027 financial_crime_stability
+0028 financial_crime_data
+0029 financial_crime_system_design
+0030 financial_crime_system_state

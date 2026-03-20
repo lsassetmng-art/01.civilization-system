@@ -1,0 +1,35 @@
+domain: 097_culture
+models: 30
+
+0001 culture
+0002 cultural_system
+0003 cultural_institution
+0004 cultural_heritage
+0005 cultural_tradition
+0006 cultural_expression
+0007 cultural_event
+0008 cultural_program
+0009 cultural_network
+0010 cultural_community
+
+0011 cultural_policy
+0012 cultural_regulation
+0013 cultural_governance
+0014 cultural_monitoring
+0015 cultural_data
+0016 cultural_management
+0017 cultural_service
+0018 cultural_infrastructure
+0019 cultural_market
+0020 cultural_innovation
+
+0021 cultural_crisis
+0022 cultural_conflict
+0023 cultural_recovery
+0024 cultural_reform
+0025 cultural_transition
+0026 cultural_stability
+0027 cultural_coordination
+0028 cultural_analysis
+0029 cultural_system_design
+0030 cultural_system_state

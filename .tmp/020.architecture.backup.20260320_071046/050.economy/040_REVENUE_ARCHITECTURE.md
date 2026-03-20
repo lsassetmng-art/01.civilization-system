@@ -1,0 +1,1 @@
+Defines revenue (prepaid model).

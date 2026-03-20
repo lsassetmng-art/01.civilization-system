@@ -1,0 +1,35 @@
+domain: 090_healthcare
+models: 30
+
+0001 healthcare_system
+0002 healthcare_provider
+0003 hospital
+0004 clinic
+0005 healthcare_worker
+0006 patient
+0007 medical_service
+0008 medical_procedure
+0009 healthcare_infrastructure
+0010 healthcare_delivery
+
+0011 healthcare_policy
+0012 healthcare_regulation
+0013 healthcare_governance
+0014 healthcare_financing
+0015 healthcare_insurance
+0016 healthcare_quality
+0017 healthcare_monitoring
+0018 healthcare_data
+0019 healthcare_management
+0020 healthcare_operations
+
+0021 healthcare_crisis
+0022 healthcare_outbreak
+0023 healthcare_recovery
+0024 healthcare_reform
+0025 healthcare_transition
+0026 healthcare_stability
+0027 healthcare_coordination
+0028 healthcare_analysis
+0029 healthcare_system_design
+0030 healthcare_system_state

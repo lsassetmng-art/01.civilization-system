@@ -1,0 +1,60 @@
+app_id: pocket-secretary
+display_name: Pocket Secretary
+
+status: canonical
+owner: Boss
+prepared_by: Zero
+
+category: local_first_secretary_app
+
+app_role:
+  - smartphone_secretary
+  - local_assistant
+  - persona_client
+  - life_assistant
+
+local_first: true
+offline_capable: true
+
+used_os:
+  - persona-os
+  - life-os
+
+optional_used_os:
+  - business-os
+
+used_schema:
+  - personaos
+  - life
+
+optional_used_schema:
+  - business
+
+platforms:
+  - android
+  - mobile
+
+core_functions:
+  - persona_interaction
+  - schedule_management
+  - task_management
+  - notes
+  - journal
+  - calculator
+  - notification
+  - local_library
+  - local_reader
+
+optional_online_functions:
+  - persona_growth_sync
+  - shared_library
+  - marketplace
+  - asset_download
+
+integration_targets:
+  - persona-runtime
+  - local-storage
+  - notification-engine
+  - optional-marketplace-api
+  - optional-library-api
+

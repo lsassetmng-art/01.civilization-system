@@ -1,0 +1,28 @@
+# MODEL BOOK
+# STANDARDS DOMAIN
+
+108001 standards_system
+108002 standards_body
+108003 standards_framework
+108004 standards_protocol
+108005 standards_specification
+108006 standards_registry
+108007 standards_platform
+108008 standards_network
+108009 standards_infrastructure
+108010 standards_operation
+108011 standards_policy
+108012 standards_regulation
+108013 standards_governance
+108014 standards_monitoring
+108015 standards_data
+108016 standards_analysis
+108017 standards_metric
+108018 standards_indicator
+108019 standards_dashboard
+108020 standards_program
+108021 standards_program_state
+108022 standards_network_state
+108023 standards_cluster
+108024 standards_operation_state
+108025 standards_system_state

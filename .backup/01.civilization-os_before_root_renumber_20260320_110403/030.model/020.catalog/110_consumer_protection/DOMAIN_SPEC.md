@@ -1,0 +1,35 @@
+domain: 110_consumer_protection
+models: 30
+
+0001 consumer_protection_system
+0002 consumer_protection_structure
+0003 consumer_protection_network
+0004 consumer_protection_institution
+0005 consumer_protection_actor
+0006 consumer_protection_organization
+0007 consumer_protection_process
+0008 consumer_protection_operation
+0009 consumer_protection_service
+0010 consumer_protection_market
+
+0011 consumer_protection_policy
+0012 consumer_protection_regulation
+0013 consumer_protection_governance
+0014 consumer_protection_management
+0015 consumer_protection_coordination
+0016 consumer_protection_monitoring
+0017 consumer_protection_data
+0018 consumer_protection_analysis
+0019 consumer_protection_infrastructure
+0020 consumer_protection_platform
+
+0021 consumer_protection_crisis
+0022 consumer_protection_disruption
+0023 consumer_protection_recovery
+0024 consumer_protection_reform
+0025 consumer_protection_transition
+0026 consumer_protection_stability
+0027 consumer_protection_risk
+0028 consumer_protection_capacity
+0029 consumer_protection_system_design
+0030 consumer_protection_system_state

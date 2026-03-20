@@ -1,0 +1,35 @@
+domain: 106_platform_economy
+models: 30
+
+0001 platform_economy_system
+0002 platform_economy_structure
+0003 platform_economy_network
+0004 platform_economy_institution
+0005 platform_economy_actor
+0006 platform_economy_organization
+0007 platform_economy_process
+0008 platform_economy_operation
+0009 platform_economy_service
+0010 platform_economy_market
+
+0011 platform_economy_policy
+0012 platform_economy_regulation
+0013 platform_economy_governance
+0014 platform_economy_management
+0015 platform_economy_coordination
+0016 platform_economy_monitoring
+0017 platform_economy_data
+0018 platform_economy_analysis
+0019 platform_economy_infrastructure
+0020 platform_economy_platform
+
+0021 platform_economy_crisis
+0022 platform_economy_disruption
+0023 platform_economy_recovery
+0024 platform_economy_reform
+0025 platform_economy_transition
+0026 platform_economy_stability
+0027 platform_economy_risk
+0028 platform_economy_capacity
+0029 platform_economy_system_design
+0030 platform_economy_system_state

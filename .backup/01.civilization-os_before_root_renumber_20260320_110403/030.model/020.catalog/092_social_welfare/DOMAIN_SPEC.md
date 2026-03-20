@@ -1,0 +1,35 @@
+domain: 092_social_welfare
+models: 30
+
+0001 social_welfare
+0002 welfare_system
+0003 welfare_program
+0004 welfare_benefit
+0005 welfare_recipient
+0006 welfare_agency
+0007 welfare_service
+0008 welfare_policy
+0009 welfare_regulation
+0010 welfare_management
+
+0011 social_support
+0012 social_protection
+0013 income_support
+0014 disability_support
+0015 elderly_support
+0016 family_support
+0017 welfare_financing
+0018 welfare_monitoring
+0019 welfare_data
+0020 welfare_governance
+
+0021 welfare_crisis
+0022 welfare_shortage
+0023 welfare_recovery
+0024 welfare_reform
+0025 welfare_transition
+0026 welfare_stability
+0027 welfare_coordination
+0028 welfare_analysis
+0029 welfare_system_design
+0030 welfare_system_state

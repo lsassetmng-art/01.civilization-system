@@ -1,0 +1,28 @@
+# MODEL BOOK
+# LABOR RELATIONS DOMAIN
+
+111001 labor_relations_system
+111002 labor_market
+111003 labor_union
+111004 labor_company
+111005 labor_contract
+111006 labor_negotiation
+111007 labor_dispute
+111008 labor_agreement
+111009 labor_platform
+111010 labor_infrastructure
+111011 labor_policy
+111012 labor_regulation
+111013 labor_governance
+111014 labor_monitoring
+111015 labor_data
+111016 labor_analysis
+111017 labor_metric
+111018 labor_indicator
+111019 labor_dashboard
+111020 labor_program
+111021 labor_program_state
+111022 labor_market_state
+111023 labor_network
+111024 labor_cluster
+111025 labor_system_state

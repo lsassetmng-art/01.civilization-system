@@ -1,0 +1,1 @@
+GameOS development guidelines.

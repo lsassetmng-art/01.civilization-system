@@ -1,0 +1,3 @@
+# SEASON
+
+Season-based competition

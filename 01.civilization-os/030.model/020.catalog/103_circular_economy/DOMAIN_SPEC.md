@@ -1,0 +1,35 @@
+domain: 103_circular_economy
+models: 30
+
+0001 circular_economy_system
+0002 circular_economy_structure
+0003 circular_economy_network
+0004 circular_economy_institution
+0005 circular_economy_actor
+0006 circular_economy_organization
+0007 circular_economy_process
+0008 circular_economy_operation
+0009 circular_economy_service
+0010 circular_economy_market
+
+0011 circular_economy_policy
+0012 circular_economy_regulation
+0013 circular_economy_governance
+0014 circular_economy_management
+0015 circular_economy_coordination
+0016 circular_economy_monitoring
+0017 circular_economy_data
+0018 circular_economy_analysis
+0019 circular_economy_infrastructure
+0020 circular_economy_platform
+
+0021 circular_economy_crisis
+0022 circular_economy_disruption
+0023 circular_economy_recovery
+0024 circular_economy_reform
+0025 circular_economy_transition
+0026 circular_economy_stability
+0027 circular_economy_risk
+0028 circular_economy_capacity
+0029 circular_economy_system_design
+0030 circular_economy_system_state

@@ -1,0 +1,8 @@
+Streaming events include
+
+stream_started
+stream_ended
+viewer_joined
+chat_received
+reaction_added
+donation_received

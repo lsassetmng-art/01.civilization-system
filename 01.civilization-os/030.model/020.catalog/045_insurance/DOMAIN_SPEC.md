@@ -1,0 +1,35 @@
+domain: 045_insurance
+models: 30
+
+0001 insurance
+0002 insurance_company
+0003 insurance_policy
+0004 insurance_premium
+0005 insurance_claim
+0006 insurance_payout
+0007 insurance_underwriting
+0008 insurance_risk
+0009 insurance_pool
+0010 insurance_reserve
+
+0011 life_insurance
+0012 health_insurance
+0013 property_insurance
+0014 liability_insurance
+0015 reinsurance
+0016 insurance_market
+0017 insurance_distribution
+0018 insurance_agent
+0019 insurance_broker
+0020 insurance_contract
+
+0021 insurance_regulation
+0022 insurance_compliance
+0023 insurance_monitoring
+0024 insurance_crisis
+0025 insurance_recovery
+0026 insurance_transition
+0027 insurance_stability
+0028 insurance_data
+0029 insurance_system_design
+0030 insurance_system_state

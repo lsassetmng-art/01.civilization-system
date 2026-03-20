@@ -1,0 +1,35 @@
+domain: 119_global_trade_system
+models: 30
+
+0001 global_trade_system_system
+0002 global_trade_system_structure
+0003 global_trade_system_network
+0004 global_trade_system_institution
+0005 global_trade_system_actor
+0006 global_trade_system_organization
+0007 global_trade_system_process
+0008 global_trade_system_operation
+0009 global_trade_system_service
+0010 global_trade_system_market
+
+0011 global_trade_system_policy
+0012 global_trade_system_regulation
+0013 global_trade_system_governance
+0014 global_trade_system_management
+0015 global_trade_system_coordination
+0016 global_trade_system_monitoring
+0017 global_trade_system_data
+0018 global_trade_system_analysis
+0019 global_trade_system_infrastructure
+0020 global_trade_system_platform
+
+0021 global_trade_system_crisis
+0022 global_trade_system_disruption
+0023 global_trade_system_recovery
+0024 global_trade_system_reform
+0025 global_trade_system_transition
+0026 global_trade_system_stability
+0027 global_trade_system_risk
+0028 global_trade_system_capacity
+0029 global_trade_system_system_design
+0030 global_trade_system_system_state

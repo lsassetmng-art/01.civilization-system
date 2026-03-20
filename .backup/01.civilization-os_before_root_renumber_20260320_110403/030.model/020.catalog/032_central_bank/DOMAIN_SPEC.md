@@ -1,0 +1,35 @@
+domain: 032_central_bank
+models: 30
+
+0001 central_bank
+0002 central_bank_governor
+0003 central_bank_board
+0004 monetary_policy
+0005 policy_rate
+0006 open_market_operation
+0007 central_bank_balance_sheet
+0008 central_bank_reserve
+0009 central_bank_currency_issue
+0010 central_bank_liquidity
+
+0011 lender_of_last_resort
+0012 discount_window
+0013 quantitative_easing
+0014 reserve_requirement
+0015 central_bank_supervision
+0016 central_bank_regulation
+0017 financial_stability
+0018 systemic_risk
+0019 macroprudential_policy
+0020 central_bank_communication
+
+0021 central_bank_crisis_response
+0022 central_bank_intervention
+0023 central_bank_coordination
+0024 central_bank_transition
+0025 central_bank_reform
+0026 central_bank_strategy
+0027 central_bank_monitoring
+0028 central_bank_data
+0029 central_bank_system_design
+0030 central_bank_system_state

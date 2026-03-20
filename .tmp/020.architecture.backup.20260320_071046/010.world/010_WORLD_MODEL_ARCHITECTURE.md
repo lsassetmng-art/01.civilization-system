@@ -1,0 +1,1 @@
+Defines world data model.

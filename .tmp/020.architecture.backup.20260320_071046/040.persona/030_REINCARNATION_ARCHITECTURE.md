@@ -1,0 +1,1 @@
+Defines inheritance system.

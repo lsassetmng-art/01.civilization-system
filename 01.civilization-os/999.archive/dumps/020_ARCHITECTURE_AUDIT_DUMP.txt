@@ -1,0 +1,365 @@
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/030.player/032_EXAM_ARCHITECTURE.md
+============================================================
+# EXAM SYSTEM ARCHITECTURE
+status: canonical
+layer: architecture
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/030.player/042_LOYALTY_ARCHITECTURE.md
+============================================================
+# ============================================================
+# LOYALTY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Represents attachment to nation.
+
+range:
+
+0.0 - 100.0
+
+effects:
+
+- low loyalty:
+  - protest
+  - crime increase
+  - rebellion risk
+
+- high loyalty:
+  - productivity bonus
+  - stability
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/030.player/036_PLAYER_DECISION_ARCHITECTURE.md
+============================================================
+# ============================================================
+# PLAYER DECISION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Decision engine for all player actions.
+
+inputs:
+- current_state
+- environment
+- events
+- goals
+
+outputs:
+- selected_action
+
+types:
+- manual (user)
+- ai_human
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/030.player/047_PLAYER_EVENT_CONSUMER_ARCHITECTURE.md
+============================================================
+# ============================================================
+# PLAYER EVENT CONSUMER ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Handles incoming events.
+
+sources:
+- exam
+- war
+- economy
+- relationship
+
+outputs:
+- state_transition_via_event
+- decision_trigger
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/080.runtime/183_EVENT_ENGINE_ARCHITECTURE.md
+============================================================
+# EVENT ARCHITECTURE
+
+purpose:
+Define event as the core mutation mechanism of CivilizationOS.
+
+principle:
+nothing changes without an event.
+
+event roles:
+trigger
+propagation unit
+state transition cause
+metric derive_from_event source
+timeline anchor
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/080.runtime/184_EVENT_PIPELINE_ARCHITECTURE.md
+============================================================
+# EVENT PIPELINE ARCHITECTURE
+
+purpose:
+Define event processing pipeline.
+
+pipeline:
+ingest
+validate
+classify
+score severity
+propagate
+transition state
+derive_from_event relations
+recompute metrics
+commit snapshot
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/080.runtime/190_PERMISSION_ARCHITECTURE.md
+============================================================
+# ============================================================
+# PERMISSION MODEL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Permissions define what each actor may do in the system.
+
+actor_types:
+- player
+- ai_human
+- ai_robot
+- public_officer
+- company_ceo
+- nation_leader
+- triple
+- aerial
+
+permission_examples:
+- player:
+  - make personal decisions
+  - found company
+  - apply for jobs
+- company_ceo:
+  - manage company actions
+- nation_leader:
+  - declare war
+  - propose and enact law under system rules
+- triple:
+  - emit balancing events only
+- aerial:
+  - enforce safety controls
+
+principle:
+- permissions are explicit
+- no actor has unrestricted universal control
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/080.runtime/191_DATA_ARCHITECTURE.md
+============================================================
+# DATA ARCHITECTURE
+
+purpose:
+Define core conceptual data objects.
+
+objects:
+model
+entity
+state
+event
+relation
+metric
+policy
+snapshot
+scenario
+control_command
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.economy/065_COMPANY_ARCHITECTURE.md
+============================================================
+# ============================================================
+# COMPANY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Company is an economic organization operating inside a nation.
+
+company_types:
+- user_company
+- ai_company
+
+common_rules:
+- both consume company cap
+- total_company_count <= nation_company_cap
+- founding conditions are equal for player and ai_human
+
+founding_requirements:
+- funding available
+- achievement / score threshold
+- empty company slot in nation
+
+user_company:
+- ceo must be player
+- no auto dissolution
+- can hire ai_human and ai_robot
+- can participate in m&a / ipo / tob if eligible
+
+ai_company:
+- ceo is ai_human
+- can auto dissolve
+- treated as dynamic historical company entity
+
+company_resources:
+- national_currency
+- labor
+- assets
+- reputation
+- market_share
+
+constraints:
+- ai_robot cannot be ceo
+- user company ceo cannot be ai_human
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.economy/071_REVENUE_LEDGER_ARCHITECTURE.md
+============================================================
+# ============================================================
+# REVENUE LEDGER ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Revenue ledger is the immutable settlement source of truth.
+
+properties:
+- append_only
+- immutable
+- auditable
+
+records:
+- payment source
+- civ_cash purchase
+- service purchase
+- company revenue attribution
+- nation score impact
+- settlement result
+
+flow:
+- user payment
+- ledger record
+- company revenue
+- nation score impact
+- monthly settlement
+- creator payout
+
+constraints:
+- no ledger bypass
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/050.government/090_TAX_ARCHITECTURE.md
+============================================================
+# ============================================================
+# TAX ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Tax is imposed by nation and platform according to separate layers.
+
+tax_types:
+- corporate_tax
+- platform_fee
+- wage_tax (future extension)
+- transaction_tax (future extension)
+
+corporate_tax:
+- paid in national_currency
+- based on nation-defined tax model
+- may use score-based or law-defined structure
+
+platform_fee:
+- applied at monthly settlement
+- base_rate: 30%
+- reduced_rate: 20% when condition is satisfied
+- no fee above defined platform fee model
+
+principles:
+- state tax is legal layer
+- platform fee is system settlement layer
+- both are separate
+
+
+============================================================
+FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/050.government/094_PARLIAMENT_ARCHITECTURE.md
+============================================================
+# ============================================================
+# PARLIAMENT ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+definition:
+
+Parliament is the lightweight legislative approval structure.
+
+applicable_scope:
+- democracy by default
+- limited or bypassed in other nation types
+
+structure:
+- parliament_id
+- nation_id
+- total_seats
+- bloc_distribution
+- approval_threshold
+
+functions:
+- law approval
+- policy blocking
+- legitimacy balancing
+- dissolution events
+
+events:
+- parliament_deadlock
+- law_rejected
+- dissolution
+- re_election
+
+principles:
+- lightweight model
+- no fully simulated legislative bureaucracy
+- sufficient to constrain leadership power
+
+

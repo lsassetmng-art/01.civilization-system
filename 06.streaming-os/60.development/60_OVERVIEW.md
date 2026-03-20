@@ -1,0 +1,1 @@
+StreamingOS development guidelines.

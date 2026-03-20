@@ -1,0 +1,35 @@
+domain: 049_logistics
+models: 30
+
+0001 logistics
+0002 logistics_network
+0003 logistics_route
+0004 logistics_hub
+0005 logistics_facility
+0006 logistics_provider
+0007 logistics_operation
+0008 logistics_management
+0009 logistics_service
+0010 logistics_flow
+
+0011 logistics_transport
+0012 logistics_storage
+0013 logistics_inventory
+0014 logistics_distribution
+0015 logistics_tracking
+0016 logistics_optimization
+0017 logistics_cost
+0018 logistics_risk
+0019 logistics_performance
+0020 logistics_capacity
+
+0021 logistics_crisis
+0022 logistics_recovery
+0023 logistics_reform
+0024 logistics_transition
+0025 logistics_stability
+0026 logistics_monitoring
+0027 logistics_data
+0028 logistics_analysis
+0029 logistics_system_design
+0030 logistics_system_state

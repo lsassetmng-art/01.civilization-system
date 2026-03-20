@@ -1,0 +1,35 @@
+domain: 084_communications
+models: 30
+
+0001 communication_system
+0002 communication_network
+0003 communication_channel
+0004 communication_protocol
+0005 communication_platform
+0006 communication_service
+0007 communication_provider
+0008 communication_infrastructure
+0009 communication_flow
+0010 communication_exchange
+
+0011 communication_standard
+0012 communication_policy
+0013 communication_regulation
+0014 communication_governance
+0015 communication_monitoring
+0016 communication_data
+0017 communication_management
+0018 communication_strategy
+0019 communication_operations
+0020 communication_security
+
+0021 communication_crisis
+0022 communication_disruption
+0023 communication_recovery
+0024 communication_reform
+0025 communication_transition
+0026 communication_stability
+0027 communication_coordination
+0028 communication_analysis
+0029 communication_system_design
+0030 communication_system_state

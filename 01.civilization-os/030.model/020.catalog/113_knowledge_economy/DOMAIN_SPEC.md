@@ -1,0 +1,35 @@
+domain: 113_knowledge_economy
+models: 30
+
+0001 knowledge_economy_system
+0002 knowledge_economy_structure
+0003 knowledge_economy_network
+0004 knowledge_economy_institution
+0005 knowledge_economy_actor
+0006 knowledge_economy_organization
+0007 knowledge_economy_process
+0008 knowledge_economy_operation
+0009 knowledge_economy_service
+0010 knowledge_economy_market
+
+0011 knowledge_economy_policy
+0012 knowledge_economy_regulation
+0013 knowledge_economy_governance
+0014 knowledge_economy_management
+0015 knowledge_economy_coordination
+0016 knowledge_economy_monitoring
+0017 knowledge_economy_data
+0018 knowledge_economy_analysis
+0019 knowledge_economy_infrastructure
+0020 knowledge_economy_platform
+
+0021 knowledge_economy_crisis
+0022 knowledge_economy_disruption
+0023 knowledge_economy_recovery
+0024 knowledge_economy_reform
+0025 knowledge_economy_transition
+0026 knowledge_economy_stability
+0027 knowledge_economy_risk
+0028 knowledge_economy_capacity
+0029 knowledge_economy_system_design
+0030 knowledge_economy_system_state

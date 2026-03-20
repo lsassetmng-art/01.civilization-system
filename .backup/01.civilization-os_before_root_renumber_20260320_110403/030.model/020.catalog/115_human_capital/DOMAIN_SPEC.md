@@ -1,0 +1,35 @@
+domain: 115_human_capital
+models: 30
+
+0001 human_capital_system
+0002 human_capital_structure
+0003 human_capital_network
+0004 human_capital_institution
+0005 human_capital_actor
+0006 human_capital_organization
+0007 human_capital_process
+0008 human_capital_operation
+0009 human_capital_service
+0010 human_capital_market
+
+0011 human_capital_policy
+0012 human_capital_regulation
+0013 human_capital_governance
+0014 human_capital_management
+0015 human_capital_coordination
+0016 human_capital_monitoring
+0017 human_capital_data
+0018 human_capital_analysis
+0019 human_capital_infrastructure
+0020 human_capital_platform
+
+0021 human_capital_crisis
+0022 human_capital_disruption
+0023 human_capital_recovery
+0024 human_capital_reform
+0025 human_capital_transition
+0026 human_capital_stability
+0027 human_capital_risk
+0028 human_capital_capacity
+0029 human_capital_system_design
+0030 human_capital_system_state

@@ -1,0 +1,28 @@
+# MODEL BOOK
+# HOSPITALITY DOMAIN
+
+101001 hospitality_system
+101002 hospitality_industry
+101003 hospitality_company
+101004 hospitality_service
+101005 hospitality_facility
+101006 hospitality_hotel
+101007 hospitality_resort
+101008 hospitality_booking
+101009 hospitality_platform
+101010 hospitality_operation
+101011 hospitality_management
+101012 hospitality_policy
+101013 hospitality_regulation
+101014 hospitality_governance
+101015 hospitality_monitoring
+101016 hospitality_data
+101017 hospitality_analysis
+101018 hospitality_metric
+101019 hospitality_indicator
+101020 hospitality_dashboard
+101021 hospitality_program
+101022 hospitality_program_state
+101023 hospitality_network
+101024 hospitality_cluster
+101025 hospitality_system_state

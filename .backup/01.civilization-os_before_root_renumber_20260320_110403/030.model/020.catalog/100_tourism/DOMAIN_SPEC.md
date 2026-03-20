@@ -1,0 +1,35 @@
+domain: 100_tourism
+models: 30
+
+0001 tourism
+0002 tourism_industry
+0003 tourism_destination
+0004 tourism_service
+0005 tourism_operator
+0006 tourism_market
+0007 tourism_flow
+0008 tourism_infrastructure
+0009 tourism_facility
+0010 tourism_experience
+
+0011 tourism_policy
+0012 tourism_regulation
+0013 tourism_governance
+0014 tourism_monitoring
+0015 tourism_data
+0016 tourism_management
+0017 tourism_program
+0018 tourism_network
+0019 tourism_platform
+0020 tourism_investment
+
+0021 tourism_crisis
+0022 tourism_disruption
+0023 tourism_recovery
+0024 tourism_reform
+0025 tourism_transition
+0026 tourism_stability
+0027 tourism_coordination
+0028 tourism_analysis
+0029 tourism_system_design
+0030 tourism_system_state

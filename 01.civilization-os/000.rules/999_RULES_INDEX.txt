@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000.rules/000_MODEL_ROOT_UNIFICATION_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000.rules/000_POLICY_ROOT_UNIFICATION_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000.rules/000_RULES_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000.rules/999_RULES_INDEX.txt

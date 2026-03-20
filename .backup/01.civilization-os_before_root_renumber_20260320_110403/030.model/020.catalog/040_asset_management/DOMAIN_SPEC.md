@@ -1,0 +1,35 @@
+domain: 040_asset_management
+models: 30
+
+0001 asset_management
+0002 asset_manager
+0003 asset_fund
+0004 mutual_fund
+0005 hedge_fund
+0006 pension_fund
+0007 sovereign_wealth_fund
+0008 investment_portfolio
+0009 portfolio_strategy
+0010 portfolio_allocation
+
+0011 asset_class
+0012 asset_price
+0013 asset_return
+0014 asset_risk
+0015 asset_liquidity
+0016 asset_diversification
+0017 asset_performance
+0018 asset_benchmark
+0019 asset_reporting
+0020 asset_custodian
+
+0021 asset_management_regulation
+0022 asset_management_compliance
+0023 asset_management_monitoring
+0024 asset_management_crisis
+0025 asset_management_recovery
+0026 asset_management_transition
+0027 asset_management_stability
+0028 asset_management_data
+0029 asset_management_system_design
+0030 asset_management_system_state
