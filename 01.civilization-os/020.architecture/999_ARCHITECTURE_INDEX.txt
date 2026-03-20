@@ -28,6 +28,9 @@
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/020_SNAPSHOT_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/030_REINCARNATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/040_PERSONALITY_EVOLUTION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/041_PERSONA_RELEASE_INTEGRATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/042_PERSONA_LICENSE_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/043_PERSONA_COMMERCE_BOUNDARY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/050_RELATIONSHIP_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/060_LIFE_EVENT_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.persona/070_LIFE_EXPECTANCY_ARCHITECTURE.md

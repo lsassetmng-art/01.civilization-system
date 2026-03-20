@@ -1,0 +1,3 @@
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/060.operations/040.persona/041_PERSONA_LICENSE_SYNC_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/060.operations/040.persona/042_PERSONA_RELEASE_PUBLISH_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/060.operations/999_OPERATIONS_INDEX.txt

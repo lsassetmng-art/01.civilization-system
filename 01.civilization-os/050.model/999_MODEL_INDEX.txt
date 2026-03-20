@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.model/040.persona/PERSONA_ACCESS_GRANT_REF_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.model/040.persona/PERSONA_LICENSE_REF_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.model/040.persona/PERSONA_RELEASE_REF_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.model/999_MODEL_INDEX.txt
