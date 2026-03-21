@@ -1,7 +1,0 @@
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000000_CIVILIZATION_OS_CANONICAL.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000_CIVILIZATION_OS_INDEX.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000_ROOT_FILE_INDEX.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/000_ROOT_RENUMBER_MAP_20260320_110403.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999_ROOT_FILES_INDEX.txt
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_ACTIVE_FILE_LIST_20260320_103624.txt
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_FULL_DUMP_ACTIVE_20260320_103624.md
