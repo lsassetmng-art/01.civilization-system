@@ -1,0 +1,11 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/040.persona/041_PERSONA_BUSINESS_INTEGRATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/040.persona/042_PERSONA_BUSINESS_USAGE_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/060.integration/061_BUSINESS_SYNC_CONSUMER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/20_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/20_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/21_BUSINESS_OS_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/22_BUSINESS_OS_COMPONENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/23_BUSINESS_OS_DEPENDENCY_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/24_BUSINESS_OS_DATA_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/25_BUSINESS_OS_INTEGRATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/999_ARCHITECTURE_INDEX.txt

@@ -1,0 +1,28 @@
+# MODEL BOOK
+# TELECOM DOMAIN
+
+085001 telecom_system
+085002 telecom_network
+085003 telecom_operator
+085004 telecom_service
+085005 telecom_infrastructure
+085006 telecom_platform
+085007 telecom_protocol
+085008 telecom_standard
+085009 telecom_regulation
+085010 telecom_policy
+085011 telecom_governance
+085012 telecom_security
+085013 telecom_monitoring
+085014 telecom_data
+085015 telecom_exchange
+085016 telecom_flow
+085017 telecom_analysis
+085018 telecom_metric
+085019 telecom_indicator
+085020 telecom_dashboard
+085021 telecom_program
+085022 telecom_program_state
+085023 telecom_network_state
+085024 telecom_operation
+085025 telecom_system_state

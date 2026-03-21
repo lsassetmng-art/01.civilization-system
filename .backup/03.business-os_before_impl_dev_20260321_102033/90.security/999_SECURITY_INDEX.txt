@@ -1,0 +1,5 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/90.security/010.access/0900100001_BUSINESS_ACCESS_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/90.security/020.tenant/0900200001_BUSINESS_TENANT_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/90.security/030.audit/0900300001_BUSINESS_AUDIT_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/90.security/040.integration/0900400001_BUSINESS_INTEGRATION_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/90.security/999_SECURITY_INDEX.txt

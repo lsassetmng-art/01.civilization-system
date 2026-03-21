@@ -1,0 +1,35 @@
+domain: 105_ocean_trade
+models: 30
+
+0001 ocean_trade_system
+0002 ocean_trade_structure
+0003 ocean_trade_network
+0004 ocean_trade_institution
+0005 ocean_trade_actor
+0006 ocean_trade_organization
+0007 ocean_trade_process
+0008 ocean_trade_operation
+0009 ocean_trade_service
+0010 ocean_trade_market
+
+0011 ocean_trade_policy
+0012 ocean_trade_regulation
+0013 ocean_trade_governance
+0014 ocean_trade_management
+0015 ocean_trade_coordination
+0016 ocean_trade_monitoring
+0017 ocean_trade_data
+0018 ocean_trade_analysis
+0019 ocean_trade_infrastructure
+0020 ocean_trade_platform
+
+0021 ocean_trade_crisis
+0022 ocean_trade_disruption
+0023 ocean_trade_recovery
+0024 ocean_trade_reform
+0025 ocean_trade_transition
+0026 ocean_trade_stability
+0027 ocean_trade_risk
+0028 ocean_trade_capacity
+0029 ocean_trade_system_design
+0030 ocean_trade_system_state

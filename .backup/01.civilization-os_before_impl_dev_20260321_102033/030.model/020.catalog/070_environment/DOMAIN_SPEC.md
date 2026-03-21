@@ -1,0 +1,35 @@
+domain: 070_environment
+models: 30
+
+0001 environment
+0002 ecosystem
+0003 biodiversity
+0004 natural_resource
+0005 environmental_quality
+0006 environmental_risk
+0007 environmental_monitoring
+0008 environmental_data
+0009 environmental_management
+0010 environmental_policy
+
+0011 environmental_regulation
+0012 environmental_protection
+0013 pollution
+0014 pollution_control
+0015 waste_management
+0016 recycling_system
+0017 environmental_impact
+0018 environmental_assessment
+0019 environmental_governance
+0020 environmental_planning
+
+0021 environmental_crisis
+0022 environmental_disaster
+0023 environmental_recovery
+0024 environmental_reform
+0025 environmental_transition
+0026 environmental_stability
+0027 environmental_coordination
+0028 environmental_analysis
+0029 environmental_system_design
+0030 environmental_system_state

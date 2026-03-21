@@ -1,0 +1,3 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/041_PERSONA_BUSINESS_BINDING_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/042_PERSONA_BUSINESS_ACCESS_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/999_FLOW_INDEX.txt

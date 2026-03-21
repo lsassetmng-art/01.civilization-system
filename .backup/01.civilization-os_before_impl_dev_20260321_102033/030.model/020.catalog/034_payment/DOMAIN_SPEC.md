@@ -1,0 +1,35 @@
+domain: 034_payment
+models: 30
+
+0001 payment
+0002 payment_transaction
+0003 payment_account
+0004 payment_network
+0005 payment_processor
+0006 payment_gateway
+0007 payment_method
+0008 payment_card
+0009 payment_terminal
+0010 payment_wallet
+
+0011 digital_payment
+0012 mobile_payment
+0013 online_payment
+0014 instant_payment
+0015 cross_border_payment
+0016 payment_settlement
+0017 payment_clearing
+0018 payment_authorization
+0019 payment_security
+0020 payment_fraud
+
+0021 payment_regulation
+0022 payment_compliance
+0023 payment_monitoring
+0024 payment_dispute
+0025 payment_crisis
+0026 payment_transition
+0027 payment_stability
+0028 payment_management
+0029 payment_system_design
+0030 payment_system_state

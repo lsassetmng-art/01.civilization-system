@@ -1,0 +1,35 @@
+domain: 120_civilization_meta
+models: 30
+
+0001 civilization_meta_system
+0002 civilization_meta_structure
+0003 civilization_meta_network
+0004 civilization_meta_institution
+0005 civilization_meta_actor
+0006 civilization_meta_organization
+0007 civilization_meta_process
+0008 civilization_meta_operation
+0009 civilization_meta_service
+0010 civilization_meta_market
+
+0011 civilization_meta_policy
+0012 civilization_meta_regulation
+0013 civilization_meta_governance
+0014 civilization_meta_management
+0015 civilization_meta_coordination
+0016 civilization_meta_monitoring
+0017 civilization_meta_data
+0018 civilization_meta_analysis
+0019 civilization_meta_infrastructure
+0020 civilization_meta_platform
+
+0021 civilization_meta_crisis
+0022 civilization_meta_disruption
+0023 civilization_meta_recovery
+0024 civilization_meta_reform
+0025 civilization_meta_transition
+0026 civilization_meta_stability
+0027 civilization_meta_risk
+0028 civilization_meta_capacity
+0029 civilization_meta_system_design
+0030 civilization_meta_system_state

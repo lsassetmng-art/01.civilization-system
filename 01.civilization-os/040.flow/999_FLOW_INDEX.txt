@@ -1,4 +1,0 @@
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.flow/040.persona/041_PERSONA_SNAPSHOT_PRODUCT_REGISTRATION_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.flow/040.persona/042_PERSONA_SNAPSHOT_PURCHASE_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.flow/040.persona/043_PERSONA_SNAPSHOT_ACCESS_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.flow/999_FLOW_INDEX.txt

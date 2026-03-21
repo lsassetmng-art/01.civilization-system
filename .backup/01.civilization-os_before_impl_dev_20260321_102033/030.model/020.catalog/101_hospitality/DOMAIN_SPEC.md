@@ -1,0 +1,35 @@
+domain: 101_hospitality
+models: 30
+
+0001 hospitality_system
+0002 hospitality_structure
+0003 hospitality_network
+0004 hospitality_institution
+0005 hospitality_actor
+0006 hospitality_organization
+0007 hospitality_process
+0008 hospitality_operation
+0009 hospitality_service
+0010 hospitality_market
+
+0011 hospitality_policy
+0012 hospitality_regulation
+0013 hospitality_governance
+0014 hospitality_management
+0015 hospitality_coordination
+0016 hospitality_monitoring
+0017 hospitality_data
+0018 hospitality_analysis
+0019 hospitality_infrastructure
+0020 hospitality_platform
+
+0021 hospitality_crisis
+0022 hospitality_disruption
+0023 hospitality_recovery
+0024 hospitality_reform
+0025 hospitality_transition
+0026 hospitality_stability
+0027 hospitality_risk
+0028 hospitality_capacity
+0029 hospitality_system_design
+0030 hospitality_system_state

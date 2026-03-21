@@ -134,6 +134,8 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/120.logs/0301200003_event_stream.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/120.logs/0301200003_persona_log.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/120.logs/0301200004_decision_log.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/130.integration/0301300001_persona_event_outbox.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/130.integration/0301300002_persona_sync_event_contract.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/130.simulation/0301300001_simulation.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/130.simulation/0301300002_scenario.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/50.model/130.simulation/0301300003_simulation_event.md

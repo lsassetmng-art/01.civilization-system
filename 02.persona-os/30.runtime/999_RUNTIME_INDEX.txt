@@ -3,6 +3,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/30.runtime/040.external/043_PERSONA_ACCESS_GRANT_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/30.runtime/040.external/044_PERSONA_TRANSFER_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/30.runtime/040.external/045_PERSONA_PACKAGE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/30.runtime/060.integration/061_PERSONA_EVENT_OUTBOX_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/30.runtime/30_PERSONA_RUNTIME_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/30.runtime/30_RUNTIME_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/30.runtime/30_RUNTIME_OVERVIEW.md

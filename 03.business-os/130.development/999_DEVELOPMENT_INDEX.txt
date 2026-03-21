@@ -1,0 +1,8 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/60_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/60_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/61_BUSINESS_OS_CODING_STANDARD.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/62_BUSINESS_OS_MODULE_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/63_BUSINESS_OS_TEST_STRATEGY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/64_BUSINESS_OS_VERSION_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/65_BUSINESS_OS_CI_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/999_DEVELOPMENT_INDEX.txt

@@ -1,0 +1,9 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/060.integration/061_BUSINESS_SYNC_CONSUMER_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/30_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/30_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/31_BUSINESS_OS_RUNTIME_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/32_BUSINESS_OS_EVENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/33_BUSINESS_OS_STATE_MACHINE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/34_BUSINESS_OS_WORKFLOW_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/35_BUSINESS_OS_SCHEDULER_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/999_RUNTIME_INDEX.txt

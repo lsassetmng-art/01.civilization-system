@@ -1,0 +1,35 @@
+domain: 118_geopolitics
+models: 30
+
+0001 geopolitics_system
+0002 geopolitics_structure
+0003 geopolitics_network
+0004 geopolitics_institution
+0005 geopolitics_actor
+0006 geopolitics_organization
+0007 geopolitics_process
+0008 geopolitics_operation
+0009 geopolitics_service
+0010 geopolitics_market
+
+0011 geopolitics_policy
+0012 geopolitics_regulation
+0013 geopolitics_governance
+0014 geopolitics_management
+0015 geopolitics_coordination
+0016 geopolitics_monitoring
+0017 geopolitics_data
+0018 geopolitics_analysis
+0019 geopolitics_infrastructure
+0020 geopolitics_platform
+
+0021 geopolitics_crisis
+0022 geopolitics_disruption
+0023 geopolitics_recovery
+0024 geopolitics_reform
+0025 geopolitics_transition
+0026 geopolitics_stability
+0027 geopolitics_risk
+0028 geopolitics_capacity
+0029 geopolitics_system_design
+0030 geopolitics_system_state

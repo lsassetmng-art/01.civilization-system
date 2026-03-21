@@ -1,0 +1,38 @@
+# CONSTITUTION INDEX
+
+status: canonical
+layer: index
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Provide the canonical file index for this layer.
+
+## FILES
+010.constitution/000_CONSTITUTION_INDEX.md
+010.constitution/001_CIVILIZATION_CONSTITUTION_CANONICAL.md
+010.constitution/010_CONSTITUTION_OVERVIEW.md
+010.constitution/011_CORE_PRINCIPLES.md
+010.constitution/012_LAYER_RULES.md
+010.constitution/013_DEPENDENCY_RULES.md
+010.constitution/014_DATA_RULES.md
+010.constitution/015_EVENT_RULES.md
+010.constitution/016_SECURITY_RULES.md
+010.constitution/017_EVOLUTION_RULES.md
+010.constitution/018_FAILURE_RULES.md
+010.constitution/019_GOVERNANCE_RULES.md
+010.constitution/020_SECURITY_CONSTITUTION.md
+010.constitution/021_IDENTITY_CONSTITUTION.md
+010.constitution/022_DATA_GOVERNANCE_CONSTITUTION.md
+010.constitution/023_SYSTEM_EVOLUTION_CONSTITUTION.md
+010.constitution/024_INTERFACE_CONSTITUTION.md
+010.constitution/025_FAILURE_CONSTITUTION.md
+010.constitution/026_GOVERNANCE_CONSTITUTION.md
+010.constitution/027_ECONOMY_CONSTITUTION.md
+010.constitution/028_CURRENCY_CONSTITUTION.md
+010.constitution/029_MARKETPLACE_CONSTITUTION.md
+010.constitution/030_PRODUCT_CONSTITUTION.md
+010.constitution/031_TAX_CONSTITUTION.md
+010.constitution/032_REVENUE_AND_SETTLEMENT_CONSTITUTION.md
+010.constitution/033_NATION_FINANCE_CONSTITUTION.md
+010.constitution/034_COMPANY_MODEL_CONSTITUTION.md

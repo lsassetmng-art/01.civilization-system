@@ -19,9 +19,12 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/040.integration/PERSONA_COMMUNICATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/040.integration/PERSONA_CONTEXT_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/040.integration/PERSONA_SOCIAL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/050.business/051_PERSONA_TO_BUSINESS_INTERFACE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/050.business/052_PERSONA_BUSINESS_USAGE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/050.security/PERSONA_COORDINATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/050.security/PERSONA_DEPENDENCY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/050.security/PERSONA_SECURITY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/060.integration/061_PERSONA_EVENT_OUTBOX_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/20_ARCHITECTURE_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/20_ARCHITECTURE_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/20.architecture/20_PERSONA_OS_ARCHITECTURE.md

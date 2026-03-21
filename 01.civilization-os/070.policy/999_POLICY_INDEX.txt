@@ -1,2 +1,0 @@
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.policy/040.persona/041_PERSONA_EXTERNAL_USAGE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.policy/999_POLICY_INDEX.txt

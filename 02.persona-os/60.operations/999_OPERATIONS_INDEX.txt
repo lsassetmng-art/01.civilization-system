@@ -22,6 +22,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/60.operations/060.communication/PERSONA_DIALOGUE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/60.operations/060.communication/PERSONA_MESSAGE_PROCESSING_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/60.operations/060.communication/PERSONA_RESPONSE_GENERATION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/60.operations/060.integration/061_PERSONA_OUTBOX_DISPATCH_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/60.operations/070.learning/PERSONA_KNOWLEDGE_UPDATE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/60.operations/070.learning/PERSONA_LEARNING_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/60.operations/070.learning/PERSONA_STRATEGY_UPDATE_OPERATION.md

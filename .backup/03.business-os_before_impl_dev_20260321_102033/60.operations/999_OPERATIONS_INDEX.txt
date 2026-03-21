@@ -1,0 +1,9 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/060.integration/061_BUSINESS_SYNC_CONSUME_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/50_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/50_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/51_BUSINESS_OS_DEPLOYMENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/52_BUSINESS_OS_BACKUP_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/53_BUSINESS_OS_MONITORING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/54_BUSINESS_OS_FAILURE_HANDLING.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/55_BUSINESS_OS_LOGGING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/60.operations/999_OPERATIONS_INDEX.txt

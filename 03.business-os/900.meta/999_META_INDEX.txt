@@ -1,0 +1,6 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/900.meta/90_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/900.meta/90_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/900.meta/91_BUSINESS_OS_CHANGELOG.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/900.meta/92_BUSINESS_OS_DEPENDENCY_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/900.meta/93_BUSINESS_OS_DOCUMENT_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/900.meta/999_META_INDEX.txt

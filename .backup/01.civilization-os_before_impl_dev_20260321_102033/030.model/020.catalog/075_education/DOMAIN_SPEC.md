@@ -1,0 +1,35 @@
+domain: 075_education
+models: 30
+
+0001 education_system
+0002 education_institution
+0003 school
+0004 student
+0005 teacher
+0006 curriculum
+0007 education_program
+0008 education_policy
+0009 education_regulation
+0010 education_standard
+
+0011 education_access
+0012 education_quality
+0013 education_outcome
+0014 education_assessment
+0015 education_funding
+0016 education_infrastructure
+0017 education_governance
+0018 education_monitoring
+0019 education_data
+0020 education_management
+
+0021 education_crisis
+0022 education_disruption
+0023 education_recovery
+0024 education_reform
+0025 education_transition
+0026 education_stability
+0027 education_coordination
+0028 education_analysis
+0029 education_system_design
+0030 education_system_state

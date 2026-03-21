@@ -1,0 +1,35 @@
+domain: 058_automotive
+models: 30
+
+0001 automotive_industry
+0002 vehicle
+0003 vehicle_design
+0004 vehicle_manufacturing
+0005 automotive_factory
+0006 automotive_supply
+0007 automotive_component
+0008 automotive_engine
+0009 automotive_battery
+0010 electric_vehicle
+
+0011 automotive_market
+0012 automotive_sales
+0013 automotive_distribution
+0014 automotive_dealer
+0015 automotive_service
+0016 automotive_repair
+0017 automotive_regulation
+0018 automotive_policy
+0019 automotive_monitoring
+0020 automotive_data
+
+0021 automotive_crisis
+0022 automotive_disruption
+0023 automotive_recovery
+0024 automotive_reform
+0025 automotive_transition
+0026 automotive_stability
+0027 automotive_analysis
+0028 automotive_coordination
+0029 automotive_system_design
+0030 automotive_system_state

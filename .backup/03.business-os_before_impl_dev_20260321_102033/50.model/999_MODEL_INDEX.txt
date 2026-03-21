@@ -1,0 +1,16 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/010.core/0500100001_business_app.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/010.core/0500100002_business_module.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/010.core/0500100003_business_setting.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/020.workspace/0500200001_business_workspace.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/020.workspace/0500200002_business_workspace_member.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/030.access/0500300001_business_user.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/030.access/0500300002_business_role.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/030.access/0500300003_business_role_assignment.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/040.integration/0500400001_business_event.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/040.integration/0500400002_business_integration_ref.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/040.persona/BUSINESS_PERSONA_ACCESS_REF_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/040.persona/BUSINESS_PERSONA_LICENSE_REF_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/040.persona/BUSINESS_PERSONA_RELEASE_REF_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/040.persona/BUSINESS_PERSONA_USAGE_BINDING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/050.integration/0500500003_business_sync_event_inbox.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/50.model/999_MODEL_INDEX.txt

@@ -1,0 +1,28 @@
+# MODEL BOOK
+# DIGITAL GOVERNMENT DOMAIN
+
+107001 digital_government_system
+107002 digital_government_platform
+107003 digital_government_service
+107004 digital_government_infrastructure
+107005 digital_government_data
+107006 digital_government_identity
+107007 digital_government_registry
+107008 digital_government_network
+107009 digital_government_operation
+107010 digital_government_policy
+107011 digital_government_regulation
+107012 digital_government_governance
+107013 digital_government_monitoring
+107014 digital_government_security
+107015 digital_government_analysis
+107016 digital_government_metric
+107017 digital_government_indicator
+107018 digital_government_dashboard
+107019 digital_government_program
+107020 digital_government_program_state
+107021 digital_government_network_state
+107022 digital_government_platform_state
+107023 digital_government_cluster
+107024 digital_government_operation_state
+107025 digital_government_system_state

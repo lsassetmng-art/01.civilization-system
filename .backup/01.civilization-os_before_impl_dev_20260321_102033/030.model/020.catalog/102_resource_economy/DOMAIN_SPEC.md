@@ -1,0 +1,35 @@
+domain: 102_resource_economy
+models: 30
+
+0001 resource_economy_system
+0002 resource_economy_structure
+0003 resource_economy_network
+0004 resource_economy_institution
+0005 resource_economy_actor
+0006 resource_economy_organization
+0007 resource_economy_process
+0008 resource_economy_operation
+0009 resource_economy_service
+0010 resource_economy_market
+
+0011 resource_economy_policy
+0012 resource_economy_regulation
+0013 resource_economy_governance
+0014 resource_economy_management
+0015 resource_economy_coordination
+0016 resource_economy_monitoring
+0017 resource_economy_data
+0018 resource_economy_analysis
+0019 resource_economy_infrastructure
+0020 resource_economy_platform
+
+0021 resource_economy_crisis
+0022 resource_economy_disruption
+0023 resource_economy_recovery
+0024 resource_economy_reform
+0025 resource_economy_transition
+0026 resource_economy_stability
+0027 resource_economy_risk
+0028 resource_economy_capacity
+0029 resource_economy_system_design
+0030 resource_economy_system_state

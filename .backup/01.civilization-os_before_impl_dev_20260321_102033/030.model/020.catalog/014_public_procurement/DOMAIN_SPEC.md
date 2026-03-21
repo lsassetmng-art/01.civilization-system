@@ -1,0 +1,35 @@
+domain: 014_public_procurement
+models: 30
+
+0001 procurement_system
+0002 procurement_authority
+0003 procurement_plan
+0004 procurement_budget
+0005 procurement_contract
+0006 procurement_supplier
+0007 procurement_bid
+0008 procurement_tender
+0009 procurement_award
+0010 procurement_process
+
+0011 procurement_rule
+0012 procurement_compliance
+0013 procurement_transparency
+0014 procurement_audit
+0015 procurement_monitoring
+0016 procurement_evaluation
+0017 procurement_record
+0018 procurement_platform
+0019 procurement_standard
+0020 procurement_policy
+
+0021 procurement_risk
+0022 procurement_dispute
+0023 procurement_fraud
+0024 procurement_reform
+0025 procurement_transition
+0026 procurement_crisis
+0027 procurement_resilience
+0028 procurement_efficiency
+0029 procurement_governance
+0030 procurement_system_state

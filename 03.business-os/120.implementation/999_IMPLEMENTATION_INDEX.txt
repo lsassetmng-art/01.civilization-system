@@ -1,0 +1,8 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/40_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/40_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/41_BUSINESS_OS_MODULE_STRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/42_BUSINESS_OS_API_INTERFACE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/43_BUSINESS_OS_DATA_MODEL_MAPPING.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/44_BUSINESS_OS_ANDROID_STRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/45_BUSINESS_OS_DATABASE_MAPPING.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/999_IMPLEMENTATION_INDEX.txt

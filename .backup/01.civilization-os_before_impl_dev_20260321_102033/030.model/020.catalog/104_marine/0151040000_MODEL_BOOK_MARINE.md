@@ -1,0 +1,28 @@
+# MODEL BOOK
+# MARINE DOMAIN
+
+104001 marine_system
+104002 marine_environment
+104003 marine_resource
+104004 marine_industry
+104005 marine_company
+104006 marine_operation
+104007 marine_transport
+104008 marine_platform
+104009 marine_infrastructure
+104010 marine_network
+104011 marine_policy
+104012 marine_regulation
+104013 marine_governance
+104014 marine_monitoring
+104015 marine_data
+104016 marine_analysis
+104017 marine_metric
+104018 marine_indicator
+104019 marine_dashboard
+104020 marine_program
+104021 marine_program_state
+104022 marine_network_state
+104023 marine_cluster
+104024 marine_operation_state
+104025 marine_system_state

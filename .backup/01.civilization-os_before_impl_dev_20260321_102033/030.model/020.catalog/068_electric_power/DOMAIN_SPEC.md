@@ -1,0 +1,35 @@
+domain: 068_electric_power
+models: 30
+
+0001 electric_power
+0002 power_generation
+0003 power_plant
+0004 power_grid
+0005 transmission_network
+0006 distribution_network
+0007 power_operator
+0008 electricity_market
+0009 electricity_price
+0010 electricity_demand
+
+0011 electricity_supply
+0012 power_capacity
+0013 power_storage
+0014 power_outage
+0015 grid_management
+0016 grid_stability
+0017 electricity_regulation
+0018 electricity_policy
+0019 electricity_monitoring
+0020 electricity_data
+
+0021 electricity_crisis
+0022 blackout
+0023 electricity_recovery
+0024 electricity_reform
+0025 electricity_transition
+0026 electricity_stability
+0027 electricity_analysis
+0028 electricity_coordination
+0029 electricity_system_design
+0030 electricity_system_state

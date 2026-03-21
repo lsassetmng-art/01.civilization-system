@@ -1,0 +1,2 @@
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/130.development/130_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/130.development/999_DEVELOPMENT_INDEX.txt

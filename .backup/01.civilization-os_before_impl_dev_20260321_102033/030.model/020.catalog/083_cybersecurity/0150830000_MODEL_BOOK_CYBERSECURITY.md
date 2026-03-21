@@ -1,0 +1,28 @@
+# MODEL BOOK
+# CYBERSECURITY DOMAIN
+
+083001 cybersecurity_system
+083002 security_policy
+083003 security_framework
+083004 security_architecture
+083005 security_operation
+083006 security_monitoring
+083007 security_incident
+083008 security_response
+083009 security_recovery
+083010 security_audit
+083011 security_risk
+083012 security_control
+083013 security_identity
+083014 security_access
+083015 security_network
+083016 security_endpoint
+083017 security_encryption
+083018 security_threat
+083019 security_intelligence
+083020 security_metric
+083021 security_indicator
+083022 security_dashboard
+083023 security_program
+083024 security_program_state
+083025 cybersecurity_system_state

@@ -1,0 +1,8 @@
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/010.launcher/0800100001_BUSINESS_APP_LAUNCHER_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/010.launcher/0800100002_BUSINESS_MODULE_SELECTOR_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/020.workspace/0800200001_BUSINESS_WORKSPACE_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/020.workspace/0800200002_BUSINESS_WORKSPACE_MEMBER_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/030.admin/0800300001_BUSINESS_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/030.admin/0800300002_BUSINESS_ACCESS_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/040.persona/041_BUSINESS_PERSONA_BINDING_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/999_INTERFACE_INDEX.txt

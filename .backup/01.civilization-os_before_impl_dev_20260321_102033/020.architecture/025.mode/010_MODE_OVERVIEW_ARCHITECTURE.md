@@ -1,0 +1,1 @@
+Defines persona/story modes.

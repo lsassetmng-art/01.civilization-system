@@ -1,0 +1,35 @@
+domain: 033_currency
+models: 30
+
+0001 currency
+0002 legal_tender
+0003 currency_supply
+0004 currency_demand
+0005 currency_circulation
+0006 currency_issue
+0007 currency_withdrawal
+0008 currency_exchange
+0009 currency_conversion
+0010 currency_reserve
+
+0011 fiat_currency
+0012 commodity_currency
+0013 digital_currency
+0014 central_bank_digital_currency
+0015 stablecoin
+0016 currency_standard
+0017 currency_regulation
+0018 currency_policy
+0019 currency_market
+0020 currency_valuation
+
+0021 currency_crisis
+0022 currency_devaluation
+0023 currency_reform
+0024 currency_transition
+0025 currency_stability
+0026 currency_management
+0027 currency_monitoring
+0028 currency_data
+0029 currency_system_design
+0030 currency_system_state

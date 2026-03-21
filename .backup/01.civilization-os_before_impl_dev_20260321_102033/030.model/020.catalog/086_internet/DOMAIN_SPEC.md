@@ -1,0 +1,35 @@
+domain: 086_internet
+models: 30
+
+0001 internet
+0002 internet_network
+0003 internet_protocol
+0004 internet_service
+0005 internet_provider
+0006 internet_platform
+0007 internet_infrastructure
+0008 internet_exchange
+0009 internet_domain
+0010 internet_routing
+
+0011 internet_traffic
+0012 internet_standard
+0013 internet_governance
+0014 internet_policy
+0015 internet_regulation
+0016 internet_monitoring
+0017 internet_data
+0018 internet_management
+0019 internet_security
+0020 internet_operations
+
+0021 internet_crisis
+0022 internet_outage
+0023 internet_recovery
+0024 internet_reform
+0025 internet_transition
+0026 internet_stability
+0027 internet_coordination
+0028 internet_analysis
+0029 internet_system_design
+0030 internet_system_state

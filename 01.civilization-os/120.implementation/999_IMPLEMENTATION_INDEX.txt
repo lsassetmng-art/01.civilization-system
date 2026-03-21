@@ -1,0 +1,2 @@
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/120_IMPLEMENTATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/999_IMPLEMENTATION_INDEX.txt

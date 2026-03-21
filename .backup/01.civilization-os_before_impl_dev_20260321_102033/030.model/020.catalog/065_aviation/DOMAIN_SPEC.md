@@ -1,0 +1,35 @@
+domain: 065_aviation
+models: 30
+
+0001 aviation
+0002 aviation_network
+0003 aviation_route
+0004 aviation_airport
+0005 aviation_aircraft
+0006 aviation_operator
+0007 aviation_service
+0008 aviation_capacity
+0009 aviation_flow
+0010 aviation_schedule
+
+0011 aviation_control
+0012 aviation_navigation
+0013 aviation_safety
+0014 aviation_security
+0015 aviation_ticketing
+0016 aviation_fare
+0017 aviation_policy
+0018 aviation_regulation
+0019 aviation_monitoring
+0020 aviation_data
+
+0021 aviation_crisis
+0022 aviation_accident
+0023 aviation_recovery
+0024 aviation_reform
+0025 aviation_transition
+0026 aviation_stability
+0027 aviation_coordination
+0028 aviation_analysis
+0029 aviation_system_design
+0030 aviation_system_state
