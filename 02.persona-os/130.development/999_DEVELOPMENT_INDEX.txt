@@ -8,6 +8,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/050.deployment/1300500001_PERSONA_DEPLOYMENT_DEVELOPMENT.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.ci/1300600001_PERSONA_CI_PIPELINE_DEVELOPMENT.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610001_PERSONA_OUTBOX_IMPLEMENTATION_ORDER.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610002_PERSONA_GROWTH_SYNC_IMPLEMENTATION_ORDER.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/070.monitoring/1300700001_PERSONA_RUNTIME_MONITORING_DEVELOPMENT.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300000_DEVELOPMENT_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300001_DEVELOPMENT_OVERVIEW.md
@@ -16,3 +17,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300004_TESTING_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300005_RELEASE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300006_CODING_STANDARD.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/999_DEVELOPMENT_INDEX.txt

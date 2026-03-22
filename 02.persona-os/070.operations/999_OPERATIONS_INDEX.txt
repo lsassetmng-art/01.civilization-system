@@ -23,6 +23,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600003_PERSONA_MESSAGE_PROCESSING_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600004_PERSONA_RESPONSE_GENERATION_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610001_PERSONA_OUTBOX_DISPATCH_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610002_PERSONA_GROWTH_REQUEST_CONSUME_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700001_PERSONA_KNOWLEDGE_UPDATE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700002_PERSONA_LEARNING_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700003_PERSONA_STRATEGY_UPDATE_OPERATION.md
@@ -41,3 +42,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900001_PERSONA_EVENT_PROCESSING_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900002_PERSONA_OPERATION_DISPATCH.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900003_PERSONA_RUNTIME_COORDINATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/999_OPERATIONS_INDEX.txt

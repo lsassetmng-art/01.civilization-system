@@ -1,6 +1,6 @@
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/10_INDEX.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/10_OVERVIEW.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/11_BUSINESS_OS_CONSTITUTION.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/12_BUSINESS_OS_SCOPE.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/13_BUSINESS_OS_BOUNDARY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100001_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100002_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100003_BUSINESS_OS_CONSTITUTION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100004_BUSINESS_OS_SCOPE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100005_BUSINESS_OS_BOUNDARY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/999_CONSTITUTION_INDEX.txt

@@ -5,3 +5,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200004_PERSONA_OS_CHANGELOG.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200005_PERSONA_OS_DESIGN_HISTORY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200006_PERSONA_OS_FULL_ARCHITECTURE_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/999_META_INDEX.txt

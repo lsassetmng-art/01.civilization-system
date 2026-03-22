@@ -1,3 +1,5 @@
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/041_PERSONA_BUSINESS_BINDING_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/042_PERSONA_BUSINESS_ACCESS_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/0500001_PERSONA_BUSINESS_BINDING_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/0500002_PERSONA_BUSINESS_ACCESS_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/060.integration/0500003_BUSINESS_TO_PERSONA_GROWTH_REQUEST_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/060.integration/0500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/999_FLOW_INDEX.txt

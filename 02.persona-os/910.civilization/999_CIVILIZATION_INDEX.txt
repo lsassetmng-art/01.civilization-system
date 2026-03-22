@@ -8,3 +8,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/080.diplomacy/9100800001_CIVILIZATION_DIPLOMACY_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/090.civilization-history/9100900001_CIVILIZATION_HISTORY_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/9100001_CIVILIZATION_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/999_CIVILIZATION_INDEX.txt

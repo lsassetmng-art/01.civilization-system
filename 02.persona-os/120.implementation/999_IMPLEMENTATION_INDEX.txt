@@ -23,3 +23,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200008_PERSONA_ASSET_GENERATION_SPEC.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200009_PERSONA_CAPABILITY_SPEC.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200010_PERSONA_POLICY_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/999_IMPLEMENTATION_INDEX.txt

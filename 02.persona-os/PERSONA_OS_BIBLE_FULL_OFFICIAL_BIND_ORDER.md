@@ -1,37 +1,34 @@
 # ============================================================
 # PERSONA OS BIBLE FULL OFFICIAL BIND ORDER
+# STRICT CHAPTER ORDER
 # ============================================================
 
-status: official-integrated
-scope: persona-os
-owner: Boss
-prepared_by: Zero
-generated_at: 2026-03-22 21:14:48
+generated_at: 2026-03-23 06:04:50 +0900
+root: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
+bind_rule: strict chapter order
 
 # ============================================================
-# BIND ORDER RULE
+# ACTIVE FILE LIST
 # ============================================================
 
-Within each chapter:
-1. overview
-2. index
-3. root body files
-4. nested files
-
-# ============================================================
-# INCLUDED FILES
-# ============================================================
-
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100001_CONSTITUTION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/0000000_PERSONA_OS_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100000_CONSTITUTION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100001_CONSTITUTION_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100002_PERSONA_OS_CONSTITUTION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100003_PERSONA_EXISTENCE_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100004_PERSONA_RIGHTS_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100005_PERSONA_DEATH_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100006_PERSONA_REINCARNATION_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100007_PERSONA_WORLD_RELATION_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200001_ARCHITECTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100001_PERSONA_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100002_PERSONA_SYSTEM_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200001_PERSONA_ENGINE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200002_PERSONA_EVENT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200004_PERSONA_EXECUTION_MODEL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200005_PERSONA_STATE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200000_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200001_ARCHITECTURE_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200002_PERSONA_OS_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200004_PERSONA_RUNTIME_ARCHITECTURE.md
@@ -46,13 +43,6 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200013_PERSONA_EDGE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200014_PERSONA_CAPABILITY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200015_PERSONA_POLICY_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100001_PERSONA_LAYER_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100002_PERSONA_SYSTEM_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200001_PERSONA_ENGINE_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200002_PERSONA_EVENT_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200004_PERSONA_EXECUTION_MODEL_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200005_PERSONA_STATE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300001_PERSONA_BEHAVIOR_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300002_PERSONA_COGNITION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300003_PERSONA_DATA_FLOW_ARCHITECTURE.md
@@ -73,7 +63,7 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510002_PERSONA_DEPENDENCY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510003_PERSONA_SECURITY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600001_PERSONA_EVENT_OUTBOX_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/0300000_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600002_PERSONA_INBOUND_GROWTH_APPLY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100001_persona.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100002_persona_identity.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100003_persona_profile.md
@@ -212,6 +202,8 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210005_decision_log.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300004_persona_growth_result_contract.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310001_simulation.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310002_scenario.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310003_simulation_event.md
@@ -233,9 +225,15 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200004_PERSONA_OS_MODEL_STRUCTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200005_PERSONA_KERNEL_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/030.binding/0300300001_PERSONA_CIVILIZATION_MODEL_BOUNDARY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/0300000_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400001_PERSONA_EXTERNAL_RELEASE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400002_PERSONA_LICENSE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400003_PERSONA_ACCESS_GRANT_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400004_PERSONA_TRANSFER_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400005_PERSONA_PACKAGE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400000_RUNTIME_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400001_PERSONA_RUNTIME_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400002_RUNTIME_OVERVIEW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400000_RUNTIME_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400003_PERSONA_EVENT_APPLY_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400004_PERSONA_GROWTH_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400005_PERSONA_MEMORY_RUNTIME.md
@@ -251,12 +249,8 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400015_PERSONA_RUNTIME_COORDINATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400016_PERSONA_SOCIAL_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400017_PERSONA_STATE_RUNTIME.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400001_PERSONA_EXTERNAL_RELEASE_RUNTIME.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400002_PERSONA_LICENSE_RUNTIME.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400003_PERSONA_ACCESS_GRANT_RUNTIME.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400004_PERSONA_TRANSFER_RUNTIME.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400005_PERSONA_PACKAGE_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600001_PERSONA_EVENT_OUTBOX_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600002_PERSONA_GROWTH_REQUEST_CONSUME_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400001_PERSONA_EXTERNAL_RELEASE_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400002_PERSONA_LICENSE_ISSUE_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400003_PERSONA_ACCESS_GRANT_FLOW.md
@@ -265,15 +259,8 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400006_PERSONA_DISTRIBUTION_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700001_OPERATIONS_OVERVIEW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700008_PERSONA_OPERATIONS_OVERVIEW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700000_OPERATIONS_INDEX.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700002_AUTHENTICATION_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700003_INTERNAL_TOKEN_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700004_STORAGE_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700005_DEPLOYMENT_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700006_MONITORING_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700007_AUDIT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500003_BUSINESS_TO_PERSONA_GROWTH_APPLY_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100001_PERSONA_CONTEXT_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100002_PERSONA_ENGINE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100003_PERSONA_EVENT_LOOP_OPERATION.md
@@ -299,9 +286,19 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600003_PERSONA_MESSAGE_PROCESSING_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600004_PERSONA_RESPONSE_GENERATION_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610001_PERSONA_OUTBOX_DISPATCH_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610002_PERSONA_GROWTH_REQUEST_CONSUME_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700001_PERSONA_KNOWLEDGE_UPDATE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700002_PERSONA_LEARNING_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700003_PERSONA_STRATEGY_UPDATE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700000_OPERATIONS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700001_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700002_AUTHENTICATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700003_INTERNAL_TOKEN_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700004_STORAGE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700005_DEPLOYMENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700006_MONITORING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700007_AUDIT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700008_PERSONA_OPERATIONS_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800001_PERSONA_GOAL_UPDATE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800002_PERSONA_LIFECYCLE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800003_PERSONA_STATE_TRANSITION_OPERATION.md
@@ -315,6 +312,7 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400005_PERSONA_DISTRIBUTION_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business/0800500001_PERSONA_BUSINESS_INTERFACE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600002_PERSONA_GROWTH_APPLY_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
@@ -322,17 +320,6 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/050.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200000_IMPLEMENTATION_INDEX.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200008_PERSONA_ASSET_GENERATION_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200009_PERSONA_CAPABILITY_SPEC.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200010_PERSONA_POLICY_SPEC.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/010.engine/1200100001_PERSONA_ENGINE_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/020.cognition/1200200001_PERSONA_COGNITION_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/030.behavior/1200300001_PERSONA_BEHAVIOR_IMPLEMENTATION.md
@@ -347,13 +334,17 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/070.learning/1200700001_PERSONA_LEARNING_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/080.lifecycle/1200800001_PERSONA_LIFECYCLE_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/090.system/1200900001_PERSONA_SYSTEM_IMPLEMENTATION.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300001_DEVELOPMENT_OVERVIEW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300000_DEVELOPMENT_INDEX.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300002_EDGE_DEVELOPMENT_GUIDE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300003_DATABASE_MIGRATION_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300004_TESTING_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300005_RELEASE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300006_CODING_STANDARD.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200008_PERSONA_ASSET_GENERATION_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200009_PERSONA_CAPABILITY_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200010_PERSONA_POLICY_SPEC.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/010.build/1300100001_PERSONA_BUILD_DEVELOPMENT.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/020.module/1300200001_PERSONA_MODULE_STRUCTURE_DEVELOPMENT.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/030.code/1300300001_PERSONA_CODE_CONVENTION_DEVELOPMENT.md
@@ -364,8 +355,15 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/050.deployment/1300500001_PERSONA_DEPLOYMENT_DEVELOPMENT.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.ci/1300600001_PERSONA_CI_PIPELINE_DEVELOPMENT.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610001_PERSONA_OUTBOX_IMPLEMENTATION_ORDER.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610002_PERSONA_GROWTH_SYNC_IMPLEMENTATION_ORDER.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/070.monitoring/1300700001_PERSONA_RUNTIME_MONITORING_DEVELOPMENT.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/9000001_SOCIETY_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300000_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300001_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300002_EDGE_DEVELOPMENT_GUIDE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300003_DATABASE_MIGRATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300004_TESTING_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300005_RELEASE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300006_CODING_STANDARD.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/010.actor/9000100001_SOCIETY_ACTOR_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/020.relationship/9000200001_SOCIETY_RELATIONSHIP_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/030.organization/9000300001_SOCIETY_ORGANIZATION_MODEL.md
@@ -374,7 +372,7 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/060.culture/9000600001_SOCIETY_CULTURE_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/070.event/9000700001_SOCIETY_EVENT_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/080.history/9000800001_SOCIETY_HISTORY_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/9100001_CIVILIZATION_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/9000001_SOCIETY_LAYER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/010.state/9100100001_CIVILIZATION_STATE_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/020.law/9100200001_CIVILIZATION_LAW_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/030.economy/9100300001_CIVILIZATION_ECONOMY_MODEL.md
@@ -384,8 +382,9 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/070.population/9100700001_CIVILIZATION_POPULATION_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/080.diplomacy/9100800001_CIVILIZATION_DIPLOMACY_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/090.civilization-history/9100900001_CIVILIZATION_HISTORY_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200001_META_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/9100001_CIVILIZATION_LAYER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200000_META_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200001_META_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200002_PERSONA_OS_DEPENDENCY_MAP.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200003_PERSONA_OS_EVENT_CATALOG.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200004_PERSONA_OS_CHANGELOG.md
@@ -393,9 +392,414 @@ Within each chapter:
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200006_PERSONA_OS_FULL_ARCHITECTURE_MAP.md
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/0000000_PERSONA_OS_INDEX.md
+# ============================================================
+
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/0000000_PERSONA_OS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100000_CONSTITUTION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100001_CONSTITUTION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100002_PERSONA_OS_CONSTITUTION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100003_PERSONA_EXISTENCE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100004_PERSONA_RIGHTS_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100005_PERSONA_DEATH_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100006_PERSONA_REINCARNATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100007_PERSONA_WORLD_RELATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100001_PERSONA_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100002_PERSONA_SYSTEM_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200001_PERSONA_ENGINE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200002_PERSONA_EVENT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200004_PERSONA_EXECUTION_MODEL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200005_PERSONA_STATE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200000_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200001_ARCHITECTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200002_PERSONA_OS_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200004_PERSONA_RUNTIME_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200005_PERSONA_VISUAL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200006_PERSONA_SECURITY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200007_PERSONA_APPROVAL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200008_PERSONA_ASSET_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200009_PERSONA_INTEGRATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200010_PERSONA_RENDERING_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200011_PERSONA_DATA_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200012_PERSONA_CLASS_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200013_PERSONA_EDGE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200014_PERSONA_CAPABILITY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200015_PERSONA_POLICY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300001_PERSONA_BEHAVIOR_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300002_PERSONA_COGNITION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300003_PERSONA_DATA_FLOW_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300004_PERSONA_LEARNING_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300005_PERSONA_MEMORY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400001_PERSONA_ACCESS_GRANT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400002_PERSONA_TRANSFER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400003_PERSONA_EXTERNAL_RELEASE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400004_PERSONA_PACKAGE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400005_PERSONA_DISTRIBUTION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400006_PERSONA_LICENSE_AUTHORITY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.integration/0200410001_PERSONA_COMMUNICATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.integration/0200410002_PERSONA_CONTEXT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.integration/0200410003_PERSONA_SOCIAL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.business/0200500001_PERSONA_TO_BUSINESS_INTERFACE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.business/0200500002_PERSONA_BUSINESS_USAGE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510001_PERSONA_COORDINATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510002_PERSONA_DEPENDENCY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510003_PERSONA_SECURITY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600001_PERSONA_EVENT_OUTBOX_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600002_PERSONA_INBOUND_GROWTH_APPLY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100001_persona.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100002_persona_identity.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100003_persona_profile.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100004_persona_metadata.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100005_persona_lifecycle.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100006_persona_origin.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100007_persona_personality.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100008_persona_goal.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100009_persona_alignment.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100010_persona_objective.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100011_persona_priority.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100012_persona_strategy.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100013_persona_self_model.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100014_persona_self_awareness.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100015_persona_state.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100016_persona_status.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100017_persona_identity_role.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100018_persona_system_role.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100019_persona_trait.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100020_persona_value.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100021_persona_trait_set.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100022_persona_preference.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200001_cognition.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200002_reasoning.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200003_decision.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200004_planning.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200005_learning.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200006_reasoning_strategy.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200007_decision_context.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200008_planning_goal.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200009_learning_feedback.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200010_attention.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200011_decision_policy.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200012_decision_option.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200013_decision_evaluation.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200014_goal_planning.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200015_perception.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200016_perception_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200017_attention_context.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200018_context_state.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200019_learning_model.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200020_learning_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200021_persona_cognitive_goal.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200022_persona_cognitive_strategy.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200023_persona_decision.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200024_decision_tree.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200025_persona_learning_state.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200026_persona_world_model.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300001_emotion.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300002_mood.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300003_motivation.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300004_wellbeing.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300005_emotion_state.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300006_emotion_vector.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300007_emotion_trigger.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300008_emotion_history.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300009_emotion_regulation.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300010_emotion_expression.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400001_behavior.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400002_action.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400003_task.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400004_habit.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400005_task_execution.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400006_action_sequence.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500001_communication.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500002_message.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500003_conversation.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500004_dialogue_context.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500005_message_intent.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500006_message_response.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600001_social_relation.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600002_social_role.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600003_group.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600004_social_network.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600005_social_trust.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600006_social_influence.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600007_persona_relationship.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600008_relationship_state.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600009_relationship_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600010_social_interaction.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600011_social_perception.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600012_social_signal.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600013_persona_relationship_profile.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600014_persona_trust.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700001_capability.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700002_skill.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700003_competency.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700004_capability_profile.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700005_capability_development.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800001_knowledge.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800002_memory.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800003_experience.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800004_knowledge_graph.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800005_knowledge_fact.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800006_knowledge_rule.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800007_knowledge_source.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800009_persona_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800010_persona_snapshot.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800011_persona_history.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800012_persona_experience.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800013_persona_growth.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800014_memory_index.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800015_memory_retrieval.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800016_memory_decay.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800018_persona_experience_archive.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900001_schedule.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900002_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900003_reminder.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900004_schedule_plan.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900005_schedule_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900006_schedule_priority.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000001_finance_account.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000002_transaction.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000003_budget.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000004_financial_activity.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000005_resource_allocation.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100001_security_identity.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100002_access_policy.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100003_credential.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100004_persona_guardrail.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100005_behavior_constraint.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200001_persona_snapshot_release.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200002_persona_license.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200003_persona_access_grant.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200004_persona_transfer_rule.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200005_persona_transfer_record.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200006_persona_package.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200007_persona_package_item.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200008_persona_distribution_record.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210001_log_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210002_audit_log.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210003_event_stream.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210004_persona_log.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210005_decision_log.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300004_persona_growth_result_contract.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310001_simulation.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310002_scenario.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310003_simulation_event.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310004_simulation_world.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310005_simulation_actor.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310006_simulation_outcome.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400001_visual_avatar.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400002_visual_asset.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400003_animation_profile.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400004_visual_state.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400005_visual_expression.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500001_voice_profile.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500002_voice_asset.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500003_voice_state.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500004_voice_expression.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200001_PERSONA_MODEL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200002_PERSONA_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200003_PERSONA_MODEL_DEPENDENCY_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200004_PERSONA_OS_MODEL_STRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200005_PERSONA_KERNEL_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/030.binding/0300300001_PERSONA_CIVILIZATION_MODEL_BOUNDARY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/0300000_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400001_PERSONA_EXTERNAL_RELEASE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400002_PERSONA_LICENSE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400003_PERSONA_ACCESS_GRANT_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400004_PERSONA_TRANSFER_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400005_PERSONA_PACKAGE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400000_RUNTIME_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400001_PERSONA_RUNTIME_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400002_RUNTIME_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400003_PERSONA_EVENT_APPLY_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400004_PERSONA_GROWTH_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400005_PERSONA_MEMORY_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400006_PERSONA_VISUAL_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400007_PERSONA_SNAPSHOT_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400008_PERSONA_APPROVAL_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400009_PERSONA_CAPABILITY_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400010_PERSONA_COMMUNICATION_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400011_PERSONA_ENGINE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400012_PERSONA_EVENT_PIPELINE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400013_PERSONA_MEMORY_RUNTIME_DUPLICATE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400014_PERSONA_RUNTIME_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400015_PERSONA_RUNTIME_COORDINATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400016_PERSONA_SOCIAL_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400017_PERSONA_STATE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600001_PERSONA_EVENT_OUTBOX_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600002_PERSONA_GROWTH_REQUEST_CONSUME_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400001_PERSONA_EXTERNAL_RELEASE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400002_PERSONA_LICENSE_ISSUE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400003_PERSONA_ACCESS_GRANT_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400004_PERSONA_TRANSFER_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400005_PERSONA_PACKAGE_PUBLISH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400006_PERSONA_DISTRIBUTION_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500003_BUSINESS_TO_PERSONA_GROWTH_APPLY_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100001_PERSONA_CONTEXT_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100002_PERSONA_ENGINE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100003_PERSONA_EVENT_LOOP_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100004_PERSONA_STATE_UPDATE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/020.cognition/0700200001_PERSONA_DECISION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/020.cognition/0700200002_PERSONA_PERCEPTION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/020.cognition/0700200003_PERSONA_REASONING_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/030.behavior/0700300001_PERSONA_ACTION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/030.behavior/0700300002_PERSONA_BEHAVIOR_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400001_PERSONA_LICENSE_ISSUE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400002_PERSONA_ACCESS_GRANT_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400003_PERSONA_TRANSFER_APPROVAL_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400004_PERSONA_RELEASE_ISSUE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400005_PERSONA_PACKAGE_PUBLISH_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400006_PERSONA_DISTRIBUTION_SYNC_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.memory/0700410001_PERSONA_MEMORY_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500001_PERSONA_GROUP_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500002_PERSONA_RELATION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500003_PERSONA_SOCIAL_INTERACTION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500004_PERSONA_TRUST_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600001_PERSONA_COMMUNICATION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600002_PERSONA_DIALOGUE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600003_PERSONA_MESSAGE_PROCESSING_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600004_PERSONA_RESPONSE_GENERATION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610001_PERSONA_OUTBOX_DISPATCH_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610002_PERSONA_GROWTH_REQUEST_CONSUME_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700001_PERSONA_KNOWLEDGE_UPDATE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700002_PERSONA_LEARNING_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700003_PERSONA_STRATEGY_UPDATE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700000_OPERATIONS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700001_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700002_AUTHENTICATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700003_INTERNAL_TOKEN_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700004_STORAGE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700005_DEPLOYMENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700006_MONITORING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700007_AUDIT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700008_PERSONA_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800001_PERSONA_GOAL_UPDATE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800002_PERSONA_LIFECYCLE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800003_PERSONA_STATE_TRANSITION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900001_PERSONA_EVENT_PROCESSING_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900002_PERSONA_OPERATION_DISPATCH.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900003_PERSONA_RUNTIME_COORDINATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400001_PERSONA_EXTERNAL_RELEASE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400002_PERSONA_LICENSE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400003_PERSONA_ACCESS_GRANT_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400004_PERSONA_TRANSFER_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400005_PERSONA_DISTRIBUTION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business/0800500001_PERSONA_BUSINESS_INTERFACE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600002_PERSONA_GROWTH_APPLY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400004_PERSONA_TRANSFER_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/050.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/010.engine/1200100001_PERSONA_ENGINE_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/020.cognition/1200200001_PERSONA_COGNITION_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/030.behavior/1200300001_PERSONA_BEHAVIOR_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400002_PERSONA_LICENSE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400003_PERSONA_ACCESS_GRANT_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400004_PERSONA_TRANSFER_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400005_PERSONA_PACKAGE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.memory/1200410001_PERSONA_MEMORY_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/050.communication/1200500001_PERSONA_COMMUNICATION_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/060.social/1200600001_PERSONA_SOCIAL_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/070.learning/1200700001_PERSONA_LEARNING_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/080.lifecycle/1200800001_PERSONA_LIFECYCLE_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/090.system/1200900001_PERSONA_SYSTEM_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200008_PERSONA_ASSET_GENERATION_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200009_PERSONA_CAPABILITY_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200010_PERSONA_POLICY_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/010.build/1300100001_PERSONA_BUILD_DEVELOPMENT.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/020.module/1300200001_PERSONA_MODULE_STRUCTURE_DEVELOPMENT.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/030.code/1300300001_PERSONA_CODE_CONVENTION_DEVELOPMENT.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.external_rights/1300400001_PERSONA_EXTERNAL_RIGHTS_ROADMAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.external_rights/1300400002_PERSONA_EXTERNAL_RIGHTS_DEPENDENCY_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.external_rights/1300400003_PERSONA_EXTERNAL_RIGHTS_IMPLEMENTATION_ORDER.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.test/1300410001_PERSONA_TEST_ARCHITECTURE_DEVELOPMENT.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/050.deployment/1300500001_PERSONA_DEPLOYMENT_DEVELOPMENT.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.ci/1300600001_PERSONA_CI_PIPELINE_DEVELOPMENT.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610001_PERSONA_OUTBOX_IMPLEMENTATION_ORDER.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610002_PERSONA_GROWTH_SYNC_IMPLEMENTATION_ORDER.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/070.monitoring/1300700001_PERSONA_RUNTIME_MONITORING_DEVELOPMENT.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300000_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300001_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300002_EDGE_DEVELOPMENT_GUIDE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300003_DATABASE_MIGRATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300004_TESTING_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300005_RELEASE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300006_CODING_STANDARD.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/010.actor/9000100001_SOCIETY_ACTOR_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/020.relationship/9000200001_SOCIETY_RELATIONSHIP_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/030.organization/9000300001_SOCIETY_ORGANIZATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/040.economy/9000400001_SOCIETY_ECONOMY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/050.governance/9000500001_SOCIETY_GOVERNANCE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/060.culture/9000600001_SOCIETY_CULTURE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/070.event/9000700001_SOCIETY_EVENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/080.history/9000800001_SOCIETY_HISTORY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/9000001_SOCIETY_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/010.state/9100100001_CIVILIZATION_STATE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/020.law/9100200001_CIVILIZATION_LAW_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/030.economy/9100300001_CIVILIZATION_ECONOMY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/040.war/9100400001_CIVILIZATION_WAR_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/050.religion/9100500001_CIVILIZATION_RELIGION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/060.technology/9100600001_CIVILIZATION_TECHNOLOGY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/070.population/9100700001_CIVILIZATION_POPULATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/080.diplomacy/9100800001_CIVILIZATION_DIPLOMACY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/090.civilization-history/9100900001_CIVILIZATION_HISTORY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/9100001_CIVILIZATION_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200000_META_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200001_META_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200002_PERSONA_OS_DEPENDENCY_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200003_PERSONA_OS_EVENT_CATALOG.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200004_PERSONA_OS_CHANGELOG.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200005_PERSONA_OS_DESIGN_HISTORY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200006_PERSONA_OS_FULL_ARCHITECTURE_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_ARCHITECTURE_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_CIVILIZATION_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_CONSTITUTION_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_DEVELOPMENT_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_IMPLEMENTATION_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_MODEL_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_OPERATIONS_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_RUNTIME_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/full-books_20260321_144842/PERSONA_OS_SOCIETY_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/legacy-index/000_PERSONA_OS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/PERSONA_OS_BIBLE_FULL_OFFICIAL_BIND_ORDER.md
+
 
 # ============================================================
-# FILE: 010.constitution/0100001_CONSTITUTION_OVERVIEW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100000_CONSTITUTION_INDEX.md
+# ============================================================
+
+# CONSTITUTION INDEX
+
+See:
+- 999_CONSTITUTION_INDEX.txt
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100001_CONSTITUTION_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -422,20 +826,8 @@ persona world relationship
 
 
 
-
 # ============================================================
-# FILE: 010.constitution/0100000_CONSTITUTION_INDEX.md
-# ============================================================
-
-# CONSTITUTION INDEX
-
-See:
-- 999_CONSTITUTION_INDEX.txt
-
-
-
-# ============================================================
-# FILE: 010.constitution/0100002_PERSONA_OS_CONSTITUTION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100002_PERSONA_OS_CONSTITUTION.md
 # ============================================================
 
 # ============================================================
@@ -639,9 +1031,8 @@ and signed public proof.
 
 
 
-
 # ============================================================
-# FILE: 010.constitution/0100003_PERSONA_EXISTENCE_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100003_PERSONA_EXISTENCE_MODEL.md
 # ============================================================
 
 # ============================================================
@@ -759,9 +1150,8 @@ inside PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 010.constitution/0100004_PERSONA_RIGHTS_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100004_PERSONA_RIGHTS_MODEL.md
 # ============================================================
 
 # ============================================================
@@ -877,9 +1267,8 @@ within PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 010.constitution/0100005_PERSONA_DEATH_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100005_PERSONA_DEATH_MODEL.md
 # ============================================================
 
 # ============================================================
@@ -992,9 +1381,8 @@ to historical existence within PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 010.constitution/0100006_PERSONA_REINCARNATION_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100006_PERSONA_REINCARNATION_MODEL.md
 # ============================================================
 
 # ============================================================
@@ -1119,9 +1507,8 @@ with preserved continuity and reduced capability.
 
 
 
-
 # ============================================================
-# FILE: 010.constitution/0100007_PERSONA_WORLD_RELATION_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100007_PERSONA_WORLD_RELATION_MODEL.md
 # ============================================================
 
 # ============================================================
@@ -1246,9 +1633,924 @@ without losing PersonaOS state authority.
 
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100001_PERSONA_LAYER_ARCHITECTURE.md
+# ============================================================
 
 # ============================================================
-# FILE: 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md
+# PERSONA LAYER ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+# PURPOSE
+Defines architectural layer structure.
+
+# DESCRIPTION
+PersonaOS layers:
+
+model
+operations
+runtime
+implementation
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core/0200100002_PERSONA_SYSTEM_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# PERSONA SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+# PURPOSE
+Defines the overall architecture of PersonaOS.
+
+# DESCRIPTION
+PersonaOS operates as an agent system
+running inside CivilizationOS.
+
+The architecture connects models,
+operations and runtime execution.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200001_PERSONA_ENGINE_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# PERSONA ENGINE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+component: persona-engine
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# PURPOSE
+# ============================================================
+
+Define the implementable architecture
+of the Persona Engine.
+
+This document specifies:
+
+- execution responsibility
+- subsystem boundaries
+- processing order
+- state update rules
+- dependency direction
+- failure handling
+
+
+# ============================================================
+# ROLE
+# ============================================================
+
+The Persona Engine is the central
+execution core of PersonaOS.
+
+It coordinates:
+
+- event intake
+- perception
+- reasoning
+- decision
+- behavior
+- memory update
+- state synchronization
+
+
+# ============================================================
+# ENGINE RESPONSIBILITIES
+# ============================================================
+
+The engine must:
+
+1. receive persona events
+2. resolve current persona context
+3. invoke cognition pipeline
+4. invoke emotion update when required
+5. produce decision output
+6. dispatch behavior execution
+7. persist memory changes
+8. update persona runtime state
+
+
+# ============================================================
+# ARCHITECTURAL BOUNDARY
+# ============================================================
+
+The Persona Engine does not define:
+
+- database schema
+- external API contract
+- UI rendering logic
+- civilization-level world structures
+
+The Persona Engine defines only
+internal persona execution architecture.
+
+
+# ============================================================
+# SUBSYSTEMS
+# ============================================================
+
+The engine is composed of
+the following subsystems.
+
+event intake
+context resolver
+perception processor
+reasoning processor
+decision processor
+behavior dispatcher
+memory writer
+state synchronizer
+runtime coordinator
+
+
+# ============================================================
+# DEPENDENCY DIRECTION
+# ============================================================
+
+Execution dependency must follow:
+
+event
+↓
+context
+↓
+perception
+↓
+reasoning
+↓
+decision
+↓
+behavior
+↓
+memory
+↓
+state update
+
+Reverse dependency is forbidden.
+
+
+# ============================================================
+# INPUTS
+# ============================================================
+
+The engine accepts the following inputs:
+
+- persona_event
+- runtime tick
+- internal trigger
+- communication input
+- social interaction signal
+- schedule trigger
+
+
+# ============================================================
+# OUTPUTS
+# ============================================================
+
+The engine produces the following outputs:
+
+- persona_decision
+- action dispatch
+- state update
+- memory update
+- communication response
+- runtime log event
+
+
+# ============================================================
+# EXECUTION MODES
+# ============================================================
+
+The engine supports:
+
+1. event-driven execution
+2. scheduled execution
+3. internal reflex execution
+
+Event-driven execution is the primary mode.
+
+
+# ============================================================
+# EXECUTION STEPS
+# ============================================================
+
+Step 1
+Receive event
+
+Step 2
+Load persona kernel state
+
+Step 3
+Resolve active context
+
+Step 4
+Evaluate relevant perception signals
+
+Step 5
+Run reasoning
+
+Step 6
+Evaluate goals and priorities
+
+Step 7
+Generate decision
+
+Step 8
+Dispatch behavior or communication
+
+Step 9
+Write memory artifacts
+
+Step 10
+Synchronize persona state
+
+
+# ============================================================
+# STATE ACCESS RULE
+# ============================================================
+
+The engine may read:
+
+- persona_state
+- persona_memory
+- persona_goal
+- persona_relationship
+- persona_context_state
+
+The engine may update:
+
+- persona_state
+- persona_memory
+- persona_history
+- decision_log
+- persona_log
+
+
+# ============================================================
+# FAILURE HANDLING
+# ============================================================
+
+If perception fails:
+stop downstream execution
+and record runtime error.
+
+If reasoning fails:
+do not dispatch behavior.
+
+If memory write fails:
+retain decision result
+but mark persistence degraded.
+
+If state synchronization fails:
+engine must fail closed.
+
+
+# ============================================================
+# CONSISTENCY RULE
+# ============================================================
+
+A behavior must never be dispatched
+without a resolved decision context.
+
+A memory update must never occur
+without a source event or source action.
+
+A state update must always occur
+after behavior dispatch or explicit no-op decision.
+
+
+# ============================================================
+# IMPLEMENTATION NOTES
+# ============================================================
+
+Recommended runtime shape:
+
+EngineCoordinator
+ContextResolver
+PerceptionProcessor
+ReasoningProcessor
+DecisionProcessor
+BehaviorDispatcher
+MemoryWriter
+StateSynchronizer
+
+The implementation may separate
+these as classes, modules or services,
+but architectural responsibility
+must remain unchanged.
+
+
+# ============================================================
+# MINIMUM IMPLEMENTABLE LOOP
+# ============================================================
+
+persona_event
+→ load persona state
+→ resolve context
+→ run reasoning
+→ select decision
+→ dispatch action
+→ write memory
+→ update state
+
+
+# ============================================================
+# STATUS
+# ============================================================
+
+This document defines the
+implementable architecture
+of the Persona Engine.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200002_PERSONA_EVENT_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# PERSONA EVENT ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+# PURPOSE
+Defines event architecture.
+
+# DESCRIPTION
+Events drive persona behavior
+and system updates.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# PERSONA EVENT PIPELINE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+component: persona-event-pipeline
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# PURPOSE
+# ============================================================
+
+Define the implementable event pipeline
+for PersonaOS.
+
+This document specifies:
+
+- event stages
+- event routing
+- processing order
+- failure points
+- persistence expectations
+
+
+# ============================================================
+# ROLE
+# ============================================================
+
+The event pipeline moves a persona event
+from intake to final state update.
+
+The pipeline is the primary execution route
+of PersonaOS.
+
+
+# ============================================================
+# PIPELINE STAGES
+# ============================================================
+
+Stage 1
+Event intake
+
+Stage 2
+Event classification
+
+Stage 3
+Context resolution
+
+Stage 4
+Cognition processing
+
+Stage 5
+Decision generation
+
+Stage 6
+Behavior dispatch
+
+Stage 7
+Memory persistence
+
+Stage 8
+State synchronization
+
+Stage 9
+Logging and audit
+
+
+# ============================================================
+# EVENT TYPES
+# ============================================================
+
+Supported architectural event classes:
+
+external_input
+communication_event
+social_event
+schedule_event
+internal_reflection_event
+learning_event
+system_event
+
+
+# ============================================================
+# EVENT INTAKE RULE
+# ============================================================
+
+Every event entering the pipeline
+must contain at minimum:
+
+- event id
+- persona id
+- event type
+- timestamp
+- source
+- payload reference or payload body
+
+Invalid events must be rejected
+before context resolution.
+
+
+# ============================================================
+# CLASSIFICATION RULE
+# ============================================================
+
+The pipeline must classify events
+before cognition begins.
+
+Classification determines:
+
+- required processors
+- priority
+- synchronous or deferred handling
+- persistence requirement
+
+
+# ============================================================
+# PRIORITY RULE
+# ============================================================
+
+Priority order:
+
+1. safety/system event
+2. direct communication event
+3. explicit scheduled event
+4. social interaction event
+5. learning/reflection event
+
+Lower priority events must not block
+higher priority execution.
+
+
+# ============================================================
+# ROUTING RULE
+# ============================================================
+
+The pipeline routes events into
+the minimum required processors only.
+
+Examples:
+
+communication_event
+→ context
+→ reasoning
+→ response generation
+→ memory
+→ state update
+
+schedule_event
+→ context
+→ goal evaluation
+→ planning
+→ action dispatch
+→ memory
+→ state update
+
+
+# ============================================================
+# PROCESSING CONTRACT
+# ============================================================
+
+Each stage must satisfy:
+
+input contract
+processing contract
+output contract
+failure contract
+
+No stage may emit implicit side effects
+outside its defined output.
+
+
+# ============================================================
+# STATE MUTATION RULE
+# ============================================================
+
+Only the final update stages may mutate:
+
+- persona_state
+- persona_memory
+- persona_history
+- runtime logs
+
+Upstream processing stages must remain
+pure or side-effect controlled.
+
+
+# ============================================================
+# FAILURE HANDLING
+# ============================================================
+
+If event intake fails:
+drop event and log rejection.
+
+If classification fails:
+route to error log and stop.
+
+If cognition fails:
+stop decision generation
+and mark event as failed.
+
+If behavior dispatch fails:
+write failure record
+and do not fake success.
+
+If memory persistence fails:
+mark degraded completion.
+
+If state sync fails:
+fail closed.
+
+
+# ============================================================
+# IDEMPOTENCY RULE
+# ============================================================
+
+The same event id must not be applied twice
+to state mutation stages.
+
+Event reprocessing must be
+idempotent or explicitly rejected.
+
+
+# ============================================================
+# LOGGING RULE
+# ============================================================
+
+The pipeline must log:
+
+- intake accepted/rejected
+- stage transitions
+- dispatch result
+- memory write result
+- state sync result
+- failure cause
+
+
+# ============================================================
+# IMPLEMENTATION NOTES
+# ============================================================
+
+Recommended pipeline modules:
+
+EventReceiver
+EventClassifier
+ContextResolver
+CognitionPipeline
+DecisionDispatcher
+BehaviorDispatcher
+MemoryPersister
+StateSynchronizer
+PipelineLogger
+
+The implementation may combine modules,
+but the stage boundaries must remain explicit.
+
+
+# ============================================================
+# MINIMUM IMPLEMENTABLE PIPELINE
+# ============================================================
+
+receive event
+→ validate event
+→ classify event
+→ resolve context
+→ run required cognition
+→ generate decision
+→ dispatch behavior
+→ persist memory
+→ synchronize state
+→ write log
+
+
+# ============================================================
+# STATUS
+# ============================================================
+
+This document defines the
+implementable event pipeline
+for PersonaOS.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200004_PERSONA_EXECUTION_MODEL_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# PERSONA EXECUTION MODEL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+component: persona-execution-model
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# PURPOSE
+# ============================================================
+
+Define the implementable execution model
+used by PersonaOS during runtime.
+
+This document specifies:
+
+- execution unit
+- execution order
+- coordination model
+- concurrency policy
+- state visibility rules
+
+
+# ============================================================
+# EXECUTION UNIT
+# ============================================================
+
+The primary execution unit is:
+
+one persona
+processing one event
+through one execution cycle
+
+This is the atomic architectural unit
+of PersonaOS execution.
+
+
+# ============================================================
+# EXECUTION CYCLE
+# ============================================================
+
+A single execution cycle contains:
+
+1. state load
+2. context resolve
+3. cognition pass
+4. decision pass
+5. behavior pass
+6. memory pass
+7. state commit
+
+
+# ============================================================
+# EXECUTION ORDER
+# ============================================================
+
+Execution order is strict.
+
+state load
+↓
+context resolve
+↓
+reasoning
+↓
+decision
+↓
+behavior
+↓
+memory
+↓
+commit
+
+No later step may run
+before earlier prerequisites complete.
+
+
+# ============================================================
+# CONCURRENCY POLICY
+# ============================================================
+
+Within a single persona:
+
+state mutation execution is serialized.
+
+Across different personas:
+
+execution may run concurrently
+as long as shared resources are protected.
+
+
+# ============================================================
+# VISIBILITY RULE
+# ============================================================
+
+During one execution cycle:
+
+read set is fixed at cycle start
+unless explicitly refreshed.
+
+write set becomes externally visible
+only at commit stage.
+
+This prevents partial visible state.
+
+
+# ============================================================
+# COMMIT RULE
+# ============================================================
+
+A cycle commits only when:
+
+- decision phase completed
+- behavior phase completed or explicit no-op
+- memory write completed or degraded completion allowed
+- state synchronization succeeded
+
+If commit conditions fail,
+the cycle is incomplete.
+
+
+# ============================================================
+# NO-OP RULE
+# ============================================================
+
+The engine may complete a valid cycle
+with no external action.
+
+A no-op cycle still requires:
+
+- event acknowledgment
+- state review
+- log record
+
+
+# ============================================================
+# SHARED RESOURCE RULE
+# ============================================================
+
+Shared resources include:
+
+- memory stores
+- communication channels
+- schedule queue
+- social relationship data
+- runtime logs
+
+Shared resource access must be
+ordered or synchronized.
+
+
+# ============================================================
+# RETRY RULE
+# ============================================================
+
+Retry is allowed for:
+
+- transient dispatch failure
+- transient persistence failure
+- transient external dependency failure
+
+Retry is not allowed for:
+
+- invalid state contract
+- invalid event schema
+- policy violation
+
+
+# ============================================================
+# FAILURE MODEL
+# ============================================================
+
+Execution failure categories:
+
+validation failure
+processing failure
+dispatch failure
+persistence failure
+commit failure
+
+Each category must produce
+a distinct log outcome.
+
+
+# ============================================================
+# IMPLEMENTATION SHAPE
+# ============================================================
+
+Recommended runtime structure:
+
+ExecutionCycle
+ExecutionContext
+ReadStateSnapshot
+DecisionResult
+BehaviorResult
+MemoryWriteResult
+CommitResult
+
+This shape is implementation-ready
+for class-based or service-based design.
+
+
+# ============================================================
+# MINIMUM IMPLEMENTABLE EXECUTION MODEL
+# ============================================================
+
+load state snapshot
+→ build execution context
+→ process cognition
+→ produce decision result
+→ dispatch or no-op
+→ write memory artifacts
+→ commit updated state
+
+
+# ============================================================
+# STATUS
+# ============================================================
+
+This document defines the
+implementable execution model
+for PersonaOS runtime.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine/0200200005_PERSONA_STATE_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# PERSONA STATE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+
+# PURPOSE
+Defines state representation architecture.
+
+# DESCRIPTION
+State architecture maintains persona
+internal and external conditions.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200000_ARCHITECTURE_INDEX.md
+# ============================================================
+
+# ARCHITECTURE INDEX
+
+See:
+- 999_ARCHITECTURE_INDEX.txt
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200001_ARCHITECTURE_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -1269,20 +2571,8 @@ asset system
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200000_ARCHITECTURE_INDEX.md
-# ============================================================
-
-# ARCHITECTURE INDEX
-
-See:
-- 999_ARCHITECTURE_INDEX.txt
-
-
-
-# ============================================================
-# FILE: 020.architecture/0200002_PERSONA_OS_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200002_PERSONA_OS_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1337,9 +2627,8 @@ Direct cross-layer mutation is prohibited.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1377,9 +2666,8 @@ Silent mutation is forbidden.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200004_PERSONA_RUNTIME_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200004_PERSONA_RUNTIME_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1405,9 +2693,8 @@ audit traceability
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200005_PERSONA_VISUAL_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200005_PERSONA_VISUAL_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1433,9 +2720,8 @@ Visual composition uses manifest-based layers.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200006_PERSONA_SECURITY_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200006_PERSONA_SECURITY_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1460,9 +2746,8 @@ auditable actions
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200007_PERSONA_APPROVAL_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200007_PERSONA_APPROVAL_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1490,9 +2775,8 @@ visual generation requests
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200008_PERSONA_ASSET_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200008_PERSONA_ASSET_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1515,9 +2799,8 @@ with signed access.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200009_PERSONA_INTEGRATION_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200009_PERSONA_INTEGRATION_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1541,9 +2824,8 @@ External systems must not mutate PersonaOS state.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200010_PERSONA_RENDERING_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200010_PERSONA_RENDERING_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1763,9 +3045,8 @@ Rig / Bone support
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200011_PERSONA_DATA_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200011_PERSONA_DATA_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1789,9 +3070,8 @@ External systems may only consume snapshots.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200012_PERSONA_CLASS_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200012_PERSONA_CLASS_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -1992,9 +3272,8 @@ of persona class.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200013_PERSONA_EDGE_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200013_PERSONA_EDGE_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -2024,9 +3303,8 @@ signed event handling
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200014_PERSONA_CAPABILITY_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200014_PERSONA_CAPABILITY_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -2366,9 +3644,8 @@ inside PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/0200015_PERSONA_POLICY_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200015_PERSONA_POLICY_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -2426,922 +3703,8 @@ enforced at runtime
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/010.core/0200100001_PERSONA_LAYER_ARCHITECTURE.md
-# ============================================================
-
-# ============================================================
-# PERSONA LAYER ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-
-# PURPOSE
-Defines architectural layer structure.
-
-# DESCRIPTION
-PersonaOS layers:
-
-model
-operations
-runtime
-implementation
-
-
-
-# ============================================================
-# FILE: 020.architecture/010.core/0200100002_PERSONA_SYSTEM_ARCHITECTURE.md
-# ============================================================
-
-# ============================================================
-# PERSONA SYSTEM ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-
-# PURPOSE
-Defines the overall architecture of PersonaOS.
-
-# DESCRIPTION
-PersonaOS operates as an agent system
-running inside CivilizationOS.
-
-The architecture connects models,
-operations and runtime execution.
-
-
-
-# ============================================================
-# FILE: 020.architecture/020.engine/0200200001_PERSONA_ENGINE_ARCHITECTURE.md
-# ============================================================
-
-# ============================================================
-# PERSONA ENGINE ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-component: persona-engine
-
-owner: Boss
-prepared_by: Zero
-
-
-# ============================================================
-# PURPOSE
-# ============================================================
-
-Define the implementable architecture
-of the Persona Engine.
-
-This document specifies:
-
-- execution responsibility
-- subsystem boundaries
-- processing order
-- state update rules
-- dependency direction
-- failure handling
-
-
-# ============================================================
-# ROLE
-# ============================================================
-
-The Persona Engine is the central
-execution core of PersonaOS.
-
-It coordinates:
-
-- event intake
-- perception
-- reasoning
-- decision
-- behavior
-- memory update
-- state synchronization
-
-
-# ============================================================
-# ENGINE RESPONSIBILITIES
-# ============================================================
-
-The engine must:
-
-1. receive persona events
-2. resolve current persona context
-3. invoke cognition pipeline
-4. invoke emotion update when required
-5. produce decision output
-6. dispatch behavior execution
-7. persist memory changes
-8. update persona runtime state
-
-
-# ============================================================
-# ARCHITECTURAL BOUNDARY
-# ============================================================
-
-The Persona Engine does not define:
-
-- database schema
-- external API contract
-- UI rendering logic
-- civilization-level world structures
-
-The Persona Engine defines only
-internal persona execution architecture.
-
-
-# ============================================================
-# SUBSYSTEMS
-# ============================================================
-
-The engine is composed of
-the following subsystems.
-
-event intake
-context resolver
-perception processor
-reasoning processor
-decision processor
-behavior dispatcher
-memory writer
-state synchronizer
-runtime coordinator
-
-
-# ============================================================
-# DEPENDENCY DIRECTION
-# ============================================================
-
-Execution dependency must follow:
-
-event
-↓
-context
-↓
-perception
-↓
-reasoning
-↓
-decision
-↓
-behavior
-↓
-memory
-↓
-state update
-
-Reverse dependency is forbidden.
-
-
-# ============================================================
-# INPUTS
-# ============================================================
-
-The engine accepts the following inputs:
-
-- persona_event
-- runtime tick
-- internal trigger
-- communication input
-- social interaction signal
-- schedule trigger
-
-
-# ============================================================
-# OUTPUTS
-# ============================================================
-
-The engine produces the following outputs:
-
-- persona_decision
-- action dispatch
-- state update
-- memory update
-- communication response
-- runtime log event
-
-
-# ============================================================
-# EXECUTION MODES
-# ============================================================
-
-The engine supports:
-
-1. event-driven execution
-2. scheduled execution
-3. internal reflex execution
-
-Event-driven execution is the primary mode.
-
-
-# ============================================================
-# EXECUTION STEPS
-# ============================================================
-
-Step 1
-Receive event
-
-Step 2
-Load persona kernel state
-
-Step 3
-Resolve active context
-
-Step 4
-Evaluate relevant perception signals
-
-Step 5
-Run reasoning
-
-Step 6
-Evaluate goals and priorities
-
-Step 7
-Generate decision
-
-Step 8
-Dispatch behavior or communication
-
-Step 9
-Write memory artifacts
-
-Step 10
-Synchronize persona state
-
-
-# ============================================================
-# STATE ACCESS RULE
-# ============================================================
-
-The engine may read:
-
-- persona_state
-- persona_memory
-- persona_goal
-- persona_relationship
-- persona_context_state
-
-The engine may update:
-
-- persona_state
-- persona_memory
-- persona_history
-- decision_log
-- persona_log
-
-
-# ============================================================
-# FAILURE HANDLING
-# ============================================================
-
-If perception fails:
-stop downstream execution
-and record runtime error.
-
-If reasoning fails:
-do not dispatch behavior.
-
-If memory write fails:
-retain decision result
-but mark persistence degraded.
-
-If state synchronization fails:
-engine must fail closed.
-
-
-# ============================================================
-# CONSISTENCY RULE
-# ============================================================
-
-A behavior must never be dispatched
-without a resolved decision context.
-
-A memory update must never occur
-without a source event or source action.
-
-A state update must always occur
-after behavior dispatch or explicit no-op decision.
-
-
-# ============================================================
-# IMPLEMENTATION NOTES
-# ============================================================
-
-Recommended runtime shape:
-
-EngineCoordinator
-ContextResolver
-PerceptionProcessor
-ReasoningProcessor
-DecisionProcessor
-BehaviorDispatcher
-MemoryWriter
-StateSynchronizer
-
-The implementation may separate
-these as classes, modules or services,
-but architectural responsibility
-must remain unchanged.
-
-
-# ============================================================
-# MINIMUM IMPLEMENTABLE LOOP
-# ============================================================
-
-persona_event
-→ load persona state
-→ resolve context
-→ run reasoning
-→ select decision
-→ dispatch action
-→ write memory
-→ update state
-
-
-# ============================================================
-# STATUS
-# ============================================================
-
-This document defines the
-implementable architecture
-of the Persona Engine.
-
-
-
-
-# ============================================================
-# FILE: 020.architecture/020.engine/0200200002_PERSONA_EVENT_ARCHITECTURE.md
-# ============================================================
-
-# ============================================================
-# PERSONA EVENT ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-
-# PURPOSE
-Defines event architecture.
-
-# DESCRIPTION
-Events drive persona behavior
-and system updates.
-
-
-
-# ============================================================
-# FILE: 020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
-# ============================================================
-
-# ============================================================
-# PERSONA EVENT PIPELINE ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-component: persona-event-pipeline
-
-owner: Boss
-prepared_by: Zero
-
-
-# ============================================================
-# PURPOSE
-# ============================================================
-
-Define the implementable event pipeline
-for PersonaOS.
-
-This document specifies:
-
-- event stages
-- event routing
-- processing order
-- failure points
-- persistence expectations
-
-
-# ============================================================
-# ROLE
-# ============================================================
-
-The event pipeline moves a persona event
-from intake to final state update.
-
-The pipeline is the primary execution route
-of PersonaOS.
-
-
-# ============================================================
-# PIPELINE STAGES
-# ============================================================
-
-Stage 1
-Event intake
-
-Stage 2
-Event classification
-
-Stage 3
-Context resolution
-
-Stage 4
-Cognition processing
-
-Stage 5
-Decision generation
-
-Stage 6
-Behavior dispatch
-
-Stage 7
-Memory persistence
-
-Stage 8
-State synchronization
-
-Stage 9
-Logging and audit
-
-
-# ============================================================
-# EVENT TYPES
-# ============================================================
-
-Supported architectural event classes:
-
-external_input
-communication_event
-social_event
-schedule_event
-internal_reflection_event
-learning_event
-system_event
-
-
-# ============================================================
-# EVENT INTAKE RULE
-# ============================================================
-
-Every event entering the pipeline
-must contain at minimum:
-
-- event id
-- persona id
-- event type
-- timestamp
-- source
-- payload reference or payload body
-
-Invalid events must be rejected
-before context resolution.
-
-
-# ============================================================
-# CLASSIFICATION RULE
-# ============================================================
-
-The pipeline must classify events
-before cognition begins.
-
-Classification determines:
-
-- required processors
-- priority
-- synchronous or deferred handling
-- persistence requirement
-
-
-# ============================================================
-# PRIORITY RULE
-# ============================================================
-
-Priority order:
-
-1. safety/system event
-2. direct communication event
-3. explicit scheduled event
-4. social interaction event
-5. learning/reflection event
-
-Lower priority events must not block
-higher priority execution.
-
-
-# ============================================================
-# ROUTING RULE
-# ============================================================
-
-The pipeline routes events into
-the minimum required processors only.
-
-Examples:
-
-communication_event
-→ context
-→ reasoning
-→ response generation
-→ memory
-→ state update
-
-schedule_event
-→ context
-→ goal evaluation
-→ planning
-→ action dispatch
-→ memory
-→ state update
-
-
-# ============================================================
-# PROCESSING CONTRACT
-# ============================================================
-
-Each stage must satisfy:
-
-input contract
-processing contract
-output contract
-failure contract
-
-No stage may emit implicit side effects
-outside its defined output.
-
-
-# ============================================================
-# STATE MUTATION RULE
-# ============================================================
-
-Only the final update stages may mutate:
-
-- persona_state
-- persona_memory
-- persona_history
-- runtime logs
-
-Upstream processing stages must remain
-pure or side-effect controlled.
-
-
-# ============================================================
-# FAILURE HANDLING
-# ============================================================
-
-If event intake fails:
-drop event and log rejection.
-
-If classification fails:
-route to error log and stop.
-
-If cognition fails:
-stop decision generation
-and mark event as failed.
-
-If behavior dispatch fails:
-write failure record
-and do not fake success.
-
-If memory persistence fails:
-mark degraded completion.
-
-If state sync fails:
-fail closed.
-
-
-# ============================================================
-# IDEMPOTENCY RULE
-# ============================================================
-
-The same event id must not be applied twice
-to state mutation stages.
-
-Event reprocessing must be
-idempotent or explicitly rejected.
-
-
-# ============================================================
-# LOGGING RULE
-# ============================================================
-
-The pipeline must log:
-
-- intake accepted/rejected
-- stage transitions
-- dispatch result
-- memory write result
-- state sync result
-- failure cause
-
-
-# ============================================================
-# IMPLEMENTATION NOTES
-# ============================================================
-
-Recommended pipeline modules:
-
-EventReceiver
-EventClassifier
-ContextResolver
-CognitionPipeline
-DecisionDispatcher
-BehaviorDispatcher
-MemoryPersister
-StateSynchronizer
-PipelineLogger
-
-The implementation may combine modules,
-but the stage boundaries must remain explicit.
-
-
-# ============================================================
-# MINIMUM IMPLEMENTABLE PIPELINE
-# ============================================================
-
-receive event
-→ validate event
-→ classify event
-→ resolve context
-→ run required cognition
-→ generate decision
-→ dispatch behavior
-→ persist memory
-→ synchronize state
-→ write log
-
-
-# ============================================================
-# STATUS
-# ============================================================
-
-This document defines the
-implementable event pipeline
-for PersonaOS.
-
-
-
-
-# ============================================================
-# FILE: 020.architecture/020.engine/0200200004_PERSONA_EXECUTION_MODEL_ARCHITECTURE.md
-# ============================================================
-
-# ============================================================
-# PERSONA EXECUTION MODEL ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-component: persona-execution-model
-
-owner: Boss
-prepared_by: Zero
-
-
-# ============================================================
-# PURPOSE
-# ============================================================
-
-Define the implementable execution model
-used by PersonaOS during runtime.
-
-This document specifies:
-
-- execution unit
-- execution order
-- coordination model
-- concurrency policy
-- state visibility rules
-
-
-# ============================================================
-# EXECUTION UNIT
-# ============================================================
-
-The primary execution unit is:
-
-one persona
-processing one event
-through one execution cycle
-
-This is the atomic architectural unit
-of PersonaOS execution.
-
-
-# ============================================================
-# EXECUTION CYCLE
-# ============================================================
-
-A single execution cycle contains:
-
-1. state load
-2. context resolve
-3. cognition pass
-4. decision pass
-5. behavior pass
-6. memory pass
-7. state commit
-
-
-# ============================================================
-# EXECUTION ORDER
-# ============================================================
-
-Execution order is strict.
-
-state load
-↓
-context resolve
-↓
-reasoning
-↓
-decision
-↓
-behavior
-↓
-memory
-↓
-commit
-
-No later step may run
-before earlier prerequisites complete.
-
-
-# ============================================================
-# CONCURRENCY POLICY
-# ============================================================
-
-Within a single persona:
-
-state mutation execution is serialized.
-
-Across different personas:
-
-execution may run concurrently
-as long as shared resources are protected.
-
-
-# ============================================================
-# VISIBILITY RULE
-# ============================================================
-
-During one execution cycle:
-
-read set is fixed at cycle start
-unless explicitly refreshed.
-
-write set becomes externally visible
-only at commit stage.
-
-This prevents partial visible state.
-
-
-# ============================================================
-# COMMIT RULE
-# ============================================================
-
-A cycle commits only when:
-
-- decision phase completed
-- behavior phase completed or explicit no-op
-- memory write completed or degraded completion allowed
-- state synchronization succeeded
-
-If commit conditions fail,
-the cycle is incomplete.
-
-
-# ============================================================
-# NO-OP RULE
-# ============================================================
-
-The engine may complete a valid cycle
-with no external action.
-
-A no-op cycle still requires:
-
-- event acknowledgment
-- state review
-- log record
-
-
-# ============================================================
-# SHARED RESOURCE RULE
-# ============================================================
-
-Shared resources include:
-
-- memory stores
-- communication channels
-- schedule queue
-- social relationship data
-- runtime logs
-
-Shared resource access must be
-ordered or synchronized.
-
-
-# ============================================================
-# RETRY RULE
-# ============================================================
-
-Retry is allowed for:
-
-- transient dispatch failure
-- transient persistence failure
-- transient external dependency failure
-
-Retry is not allowed for:
-
-- invalid state contract
-- invalid event schema
-- policy violation
-
-
-# ============================================================
-# FAILURE MODEL
-# ============================================================
-
-Execution failure categories:
-
-validation failure
-processing failure
-dispatch failure
-persistence failure
-commit failure
-
-Each category must produce
-a distinct log outcome.
-
-
-# ============================================================
-# IMPLEMENTATION SHAPE
-# ============================================================
-
-Recommended runtime structure:
-
-ExecutionCycle
-ExecutionContext
-ReadStateSnapshot
-DecisionResult
-BehaviorResult
-MemoryWriteResult
-CommitResult
-
-This shape is implementation-ready
-for class-based or service-based design.
-
-
-# ============================================================
-# MINIMUM IMPLEMENTABLE EXECUTION MODEL
-# ============================================================
-
-load state snapshot
-→ build execution context
-→ process cognition
-→ produce decision result
-→ dispatch or no-op
-→ write memory artifacts
-→ commit updated state
-
-
-# ============================================================
-# STATUS
-# ============================================================
-
-This document defines the
-implementable execution model
-for PersonaOS runtime.
-
-
-
-
-# ============================================================
-# FILE: 020.architecture/020.engine/0200200005_PERSONA_STATE_ARCHITECTURE.md
-# ============================================================
-
-# ============================================================
-# PERSONA STATE ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-
-# PURPOSE
-Defines state representation architecture.
-
-# DESCRIPTION
-State architecture maintains persona
-internal and external conditions.
-
-
-
-# ============================================================
-# FILE: 020.architecture/030.dataflow/0200300001_PERSONA_BEHAVIOR_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300001_PERSONA_BEHAVIOR_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -3470,9 +3833,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/030.dataflow/0200300002_PERSONA_COGNITION_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300002_PERSONA_COGNITION_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -3642,9 +4004,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/030.dataflow/0200300003_PERSONA_DATA_FLOW_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300003_PERSONA_DATA_FLOW_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -3662,9 +4023,8 @@ Data flows between perception,
 reasoning, decision and behavior modules.
 
 
-
 # ============================================================
-# FILE: 020.architecture/030.dataflow/0200300004_PERSONA_LEARNING_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300004_PERSONA_LEARNING_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -3786,9 +4146,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/030.dataflow/0200300005_PERSONA_MEMORY_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow/0200300005_PERSONA_MEMORY_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -3806,9 +4165,8 @@ Memory stores experiences
 and knowledge structures.
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.external/0200400001_PERSONA_ACCESS_GRANT_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400001_PERSONA_ACCESS_GRANT_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA ACCESS GRANT ARCHITECTURE
@@ -3835,9 +4193,8 @@ External systems may reference access grant state,
 but may not invent, override, or extend grant validity.
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.external/0200400002_PERSONA_TRANSFER_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400002_PERSONA_TRANSFER_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA TRANSFER ARCHITECTURE
@@ -3865,9 +4222,8 @@ Commercial systems may request transfer,
 but PersonaOS determines whether transfer is valid.
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.external/0200400003_PERSONA_EXTERNAL_RELEASE_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400003_PERSONA_EXTERNAL_RELEASE_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA EXTERNAL RELEASE ARCHITECTURE
@@ -3895,9 +4251,8 @@ PersonaOS owns:
 - release visibility
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.external/0200400004_PERSONA_PACKAGE_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400004_PERSONA_PACKAGE_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA PACKAGE ARCHITECTURE
@@ -3925,9 +4280,8 @@ Package content authority remains in PersonaOS.
 External systems may distribute only approved package forms.
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.external/0200400005_PERSONA_DISTRIBUTION_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400005_PERSONA_DISTRIBUTION_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA DISTRIBUTION ARCHITECTURE
@@ -3953,9 +4307,8 @@ External platforms may mirror metadata,
 but PersonaOS remains the publishing authority.
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.external/0200400006_PERSONA_LICENSE_AUTHORITY_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external/0200400006_PERSONA_LICENSE_AUTHORITY_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA LICENSE AUTHORITY ARCHITECTURE
@@ -3982,9 +4335,8 @@ PersonaOS determines:
 License truth never originates outside PersonaOS.
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.integration/0200410001_PERSONA_COMMUNICATION_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.integration/0200410001_PERSONA_COMMUNICATION_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -4103,9 +4455,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.integration/0200410002_PERSONA_CONTEXT_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.integration/0200410002_PERSONA_CONTEXT_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -4193,9 +4544,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/040.integration/0200410003_PERSONA_SOCIAL_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.integration/0200410003_PERSONA_SOCIAL_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -4300,9 +4650,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/050.business/0200500001_PERSONA_TO_BUSINESS_INTERFACE_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.business/0200500001_PERSONA_TO_BUSINESS_INTERFACE_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA TO BUSINESS INTERFACE ARCHITECTURE
@@ -4328,9 +4677,8 @@ PersonaOS provides mirrorable state only.
 BusinessOS must not be treated as rights authority.
 
 
-
 # ============================================================
-# FILE: 020.architecture/050.business/0200500002_PERSONA_BUSINESS_USAGE_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.business/0200500002_PERSONA_BUSINESS_USAGE_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA BUSINESS USAGE ARCHITECTURE
@@ -4354,9 +4702,8 @@ Define supported BusinessOS usage of Persona-derived units.
 Business usage is allowed only through externally released and rights-valid Persona units.
 
 
-
 # ============================================================
-# FILE: 020.architecture/050.security/0200510001_PERSONA_COORDINATION_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510001_PERSONA_COORDINATION_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -4434,9 +4781,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/050.security/0200510002_PERSONA_DEPENDENCY_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510002_PERSONA_DEPENDENCY_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -4525,9 +4871,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/050.security/0200510003_PERSONA_SECURITY_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510003_PERSONA_SECURITY_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -4618,9 +4963,8 @@ for PersonaOS.
 
 
 
-
 # ============================================================
-# FILE: 020.architecture/060.integration/0200600001_PERSONA_EVENT_OUTBOX_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600001_PERSONA_EVENT_OUTBOX_ARCHITECTURE.md
 # ============================================================
 
 # PERSONA EVENT OUTBOX ARCHITECTURE
@@ -4651,25 +4995,31 @@ PersonaOS publishes state changes through an event outbox.
 - other approved external sync targets
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600002_PERSONA_INBOUND_GROWTH_APPLY_ARCHITECTURE.md
+# ============================================================
+
+# PERSONA INBOUND GROWTH APPLY ARCHITECTURE
+
+status: canonical
+layer: architecture
+domain: integration
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Define the canonical inbound request path for Business-originated growth changes.
+
+## RULE
+PersonaOS may consume approved external growth requests.
+PersonaOS alone decides final growth truth mutation.
+
+## SOURCE
+- BusinessOS approved outbox events
+
 
 # ============================================================
-# FILE: 030.model/0300000_MODEL_INDEX.md
-# ============================================================
-
-# MODEL INDEX
-
-See:
-- 999_MODEL_INDEX.txt
-
-Structure:
-- 010.canonical
-- 020.catalog
-- 030.binding
-
-
-
-# ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100001_persona.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100001_persona.md
 # ============================================================
 
 # ============================================================
@@ -4730,9 +5080,8 @@ persona
  -> persona_relationship
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100002_persona_identity.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100002_persona_identity.md
 # ============================================================
 
 # ============================================================
@@ -4779,9 +5128,8 @@ persona_identity
  -> persona_role
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100003_persona_profile.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100003_persona_profile.md
 # ============================================================
 
 # ============================================================
@@ -4826,9 +5174,8 @@ persona_profile
  -> persona_identity
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100004_persona_metadata.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100004_persona_metadata.md
 # ============================================================
 
 # MODEL
@@ -4841,9 +5188,8 @@ system: persona_os
 Additional metadata associated with persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100005_persona_lifecycle.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100005_persona_lifecycle.md
 # ============================================================
 
 # ============================================================
@@ -4888,9 +5234,8 @@ persona_lifecycle
  -> persona_state
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100006_persona_origin.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100006_persona_origin.md
 # ============================================================
 
 # MODEL
@@ -4903,9 +5248,8 @@ system: persona_os
 Origin source of the persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100007_persona_personality.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100007_persona_personality.md
 # ============================================================
 
 # MODEL
@@ -4918,9 +5262,8 @@ system: persona_os
 Personality configuration of persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100008_persona_goal.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100008_persona_goal.md
 # ============================================================
 
 # MODEL
@@ -4936,9 +5279,8 @@ Represents goal of persona.
 Defines long-term objective pursued by persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100009_persona_alignment.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100009_persona_alignment.md
 # ============================================================
 
 # MODEL
@@ -4954,9 +5296,8 @@ Represents alignment or orientation of persona.
 Defines directional orientation such as ethical or strategic alignment.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100010_persona_objective.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100010_persona_objective.md
 # ============================================================
 
 # ============================================================
@@ -4994,9 +5335,8 @@ persona_objective
  -> planning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100011_persona_priority.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100011_persona_priority.md
 # ============================================================
 
 # ============================================================
@@ -5034,9 +5374,8 @@ persona_priority
  -> decision
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100012_persona_strategy.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100012_persona_strategy.md
 # ============================================================
 
 # ============================================================
@@ -5074,9 +5413,8 @@ persona_strategy
  -> persona_goal
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100013_persona_self_model.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100013_persona_self_model.md
 # ============================================================
 
 # ============================================================
@@ -5104,9 +5442,8 @@ persona_self_model
  -> persona_memory
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100014_persona_self_awareness.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100014_persona_self_awareness.md
 # ============================================================
 
 # ============================================================
@@ -5134,9 +5471,8 @@ persona_self_awareness
  -> cognition
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100015_persona_state.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100015_persona_state.md
 # ============================================================
 
 # ============================================================
@@ -5181,9 +5517,8 @@ persona_state
  -> persona_lifecycle
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100016_persona_status.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100016_persona_status.md
 # ============================================================
 
 # MODEL
@@ -5196,9 +5531,8 @@ system: persona_os
 Operational status of the persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100017_persona_identity_role.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100017_persona_identity_role.md
 # ============================================================
 
 # ============================================================
@@ -5220,9 +5554,8 @@ Defines functional or social role assigned to persona.
 persona_role -> persona
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100018_persona_system_role.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100018_persona_system_role.md
 # ============================================================
 
 # MODEL
@@ -5235,9 +5568,8 @@ system: persona_os
 Assigned role or function of persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100019_persona_trait.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100019_persona_trait.md
 # ============================================================
 
 # MODEL
@@ -5253,9 +5585,8 @@ Represents personality trait.
 Defines persistent characteristics of persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100020_persona_value.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100020_persona_value.md
 # ============================================================
 
 # MODEL
@@ -5271,9 +5602,8 @@ Represents core value of persona.
 Defines ethical or motivational value system.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100021_persona_trait_set.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100021_persona_trait_set.md
 # ============================================================
 
 # MODEL
@@ -5286,9 +5616,8 @@ system: persona_os
 Trait definitions of persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/010.identity/0300100022_persona_preference.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity/0300100022_persona_preference.md
 # ============================================================
 
 # MODEL
@@ -5301,9 +5630,8 @@ system: persona_os
 Preference configuration for persona.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200001_cognition.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200001_cognition.md
 # ============================================================
 
 # MODEL
@@ -5311,9 +5639,8 @@ cognition
 model_id: 0300200001
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200002_reasoning.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200002_reasoning.md
 # ============================================================
 
 # ============================================================
@@ -5357,9 +5684,8 @@ reasoning
  -> decision
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200003_decision.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200003_decision.md
 # ============================================================
 
 # ============================================================
@@ -5398,9 +5724,8 @@ decision
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200004_planning.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200004_planning.md
 # ============================================================
 
 # ============================================================
@@ -5438,9 +5763,8 @@ planning
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200005_learning.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200005_learning.md
 # ============================================================
 
 # ============================================================
@@ -5478,9 +5802,8 @@ learning
  -> knowledge
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200006_reasoning_strategy.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200006_reasoning_strategy.md
 # ============================================================
 
 # MODEL
@@ -5496,9 +5819,8 @@ Represents reasoning strategy.
 Defines structured method used by persona for reasoning.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200007_decision_context.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200007_decision_context.md
 # ============================================================
 
 # MODEL
@@ -5514,9 +5836,8 @@ Represents decision environment.
 Defines contextual information used during decision making.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200008_planning_goal.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200008_planning_goal.md
 # ============================================================
 
 # MODEL
@@ -5532,9 +5853,8 @@ Represents planning target.
 Defines specific objective used during planning.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200009_learning_feedback.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200009_learning_feedback.md
 # ============================================================
 
 # MODEL
@@ -5550,9 +5870,8 @@ Represents feedback for learning.
 Defines signals used to improve future reasoning or behavior.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200010_attention.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200010_attention.md
 # ============================================================
 
 # MODEL
@@ -5568,9 +5887,8 @@ Represents cognitive focus.
 Defines allocation of cognitive resources.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200011_decision_policy.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200011_decision_policy.md
 # ============================================================
 
 # ============================================================
@@ -5596,9 +5914,8 @@ decision_policy
  -> persona_value
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200012_decision_option.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200012_decision_option.md
 # ============================================================
 
 # ============================================================
@@ -5624,9 +5941,8 @@ decision_option
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200013_decision_evaluation.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200013_decision_evaluation.md
 # ============================================================
 
 # ============================================================
@@ -5652,9 +5968,8 @@ decision_evaluation
  -> reasoning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200014_goal_planning.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200014_goal_planning.md
 # ============================================================
 
 # ============================================================
@@ -5680,9 +5995,8 @@ goal_planning
  -> persona_goal
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200015_perception.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200015_perception.md
 # ============================================================
 
 # ============================================================
@@ -5708,9 +6022,8 @@ perception
  -> knowledge
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200016_perception_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200016_perception_event.md
 # ============================================================
 
 # ============================================================
@@ -5736,9 +6049,8 @@ perception_event
  -> persona_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200017_attention_context.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200017_attention_context.md
 # ============================================================
 
 # ============================================================
@@ -5765,9 +6077,8 @@ attention_context
  -> decision
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200018_context_state.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200018_context_state.md
 # ============================================================
 
 # ============================================================
@@ -5793,9 +6104,8 @@ context_state
  -> decision_context
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200019_learning_model.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200019_learning_model.md
 # ============================================================
 
 # ============================================================
@@ -5821,9 +6131,8 @@ learning_model
  -> knowledge_graph
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200020_learning_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200020_learning_event.md
 # ============================================================
 
 # ============================================================
@@ -5849,9 +6158,8 @@ learning_event
  -> persona_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200021_persona_cognitive_goal.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200021_persona_cognitive_goal.md
 # ============================================================
 
 # ============================================================
@@ -5877,9 +6185,8 @@ persona_goal
  -> planning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200022_persona_cognitive_strategy.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200022_persona_cognitive_strategy.md
 # ============================================================
 
 # ============================================================
@@ -5905,9 +6212,8 @@ persona_strategy
  -> planning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200023_persona_decision.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200023_persona_decision.md
 # ============================================================
 
 # ============================================================
@@ -5933,9 +6239,8 @@ persona_decision
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200024_decision_tree.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200024_decision_tree.md
 # ============================================================
 
 # ============================================================
@@ -5961,9 +6266,8 @@ decision_tree
  -> cognition
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200025_persona_learning_state.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200025_persona_learning_state.md
 # ============================================================
 
 # ============================================================
@@ -5989,9 +6293,8 @@ persona_learning_state
  -> persona_memory
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/020.cognition/0300200026_persona_world_model.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition/0300200026_persona_world_model.md
 # ============================================================
 
 # ============================================================
@@ -6018,9 +6321,8 @@ persona_world_model
  -> perception
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300001_emotion.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300001_emotion.md
 # ============================================================
 
 # ============================================================
@@ -6067,9 +6369,8 @@ emotion
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300002_mood.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300002_mood.md
 # ============================================================
 
 # ============================================================
@@ -6114,9 +6415,8 @@ mood
  -> cognition
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300003_motivation.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300003_motivation.md
 # ============================================================
 
 # ============================================================
@@ -6155,9 +6455,8 @@ motivation
  -> decision
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300004_wellbeing.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300004_wellbeing.md
 # ============================================================
 
 # ============================================================
@@ -6195,9 +6494,8 @@ wellbeing
  -> mood
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300005_emotion_state.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300005_emotion_state.md
 # ============================================================
 
 # MODEL
@@ -6213,9 +6511,8 @@ Represents current emotional condition.
 Defines emotional configuration at runtime.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300006_emotion_vector.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300006_emotion_vector.md
 # ============================================================
 
 # MODEL
@@ -6231,9 +6528,8 @@ Represents emotional intensity dimensions.
 Defines multidimensional emotion representation.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300007_emotion_trigger.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300007_emotion_trigger.md
 # ============================================================
 
 # MODEL
@@ -6249,9 +6545,8 @@ Represents cause of emotion.
 Defines event or stimulus generating emotion.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300008_emotion_history.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300008_emotion_history.md
 # ============================================================
 
 # MODEL
@@ -6267,9 +6562,8 @@ Represents emotional timeline.
 Records past emotional states.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300009_emotion_regulation.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300009_emotion_regulation.md
 # ============================================================
 
 # ============================================================
@@ -6295,9 +6589,8 @@ emotion_regulation
  -> cognition
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/030.emotion/0300300010_emotion_expression.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion/0300300010_emotion_expression.md
 # ============================================================
 
 # ============================================================
@@ -6323,9 +6616,8 @@ emotion_expression
  -> communication
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/040.behavior/0300400001_behavior.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400001_behavior.md
 # ============================================================
 
 # ============================================================
@@ -6367,9 +6659,8 @@ behavior
  -> decision
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/040.behavior/0300400002_action.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400002_action.md
 # ============================================================
 
 # ============================================================
@@ -6408,9 +6699,8 @@ action
  -> decision
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/040.behavior/0300400003_task.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400003_task.md
 # ============================================================
 
 # ============================================================
@@ -6449,9 +6739,8 @@ task
  -> schedule
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/040.behavior/0300400004_habit.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400004_habit.md
 # ============================================================
 
 # ============================================================
@@ -6489,9 +6778,8 @@ habit
  -> learning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/040.behavior/0300400005_task_execution.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400005_task_execution.md
 # ============================================================
 
 # ============================================================
@@ -6517,9 +6805,8 @@ task_execution
  -> action
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/040.behavior/0300400006_action_sequence.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior/0300400006_action_sequence.md
 # ============================================================
 
 # ============================================================
@@ -6545,9 +6832,8 @@ action_sequence
  -> task
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/050.communication/0300500001_communication.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500001_communication.md
 # ============================================================
 
 # ============================================================
@@ -6587,9 +6873,8 @@ communication
  -> social_relation
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/050.communication/0300500002_message.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500002_message.md
 # ============================================================
 
 # ============================================================
@@ -6627,9 +6912,8 @@ message
  -> communication
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/050.communication/0300500003_conversation.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500003_conversation.md
 # ============================================================
 
 # ============================================================
@@ -6668,9 +6952,8 @@ conversation
  -> social_relation
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/050.communication/0300500004_dialogue_context.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500004_dialogue_context.md
 # ============================================================
 
 # ============================================================
@@ -6697,9 +6980,8 @@ dialogue_context
  -> conversation
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/050.communication/0300500005_message_intent.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500005_message_intent.md
 # ============================================================
 
 # ============================================================
@@ -6725,9 +7007,8 @@ message_intent
  -> cognition
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/050.communication/0300500006_message_response.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication/0300500006_message_response.md
 # ============================================================
 
 # ============================================================
@@ -6753,9 +7034,8 @@ message_response
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600001_social_relation.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600001_social_relation.md
 # ============================================================
 
 # ============================================================
@@ -6795,9 +7075,8 @@ social_relation
  -> social_role
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600002_social_role.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600002_social_role.md
 # ============================================================
 
 # ============================================================
@@ -6835,9 +7114,8 @@ social_role
  -> group
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600003_group.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600003_group.md
 # ============================================================
 
 # ============================================================
@@ -6877,9 +7155,8 @@ group
  -> social_relation
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600004_social_network.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600004_social_network.md
 # ============================================================
 
 # MODEL
@@ -6895,9 +7172,8 @@ Represents network of social relations.
 Defines graph of persona interactions.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600005_social_trust.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600005_social_trust.md
 # ============================================================
 
 # MODEL
@@ -6910,9 +7186,8 @@ system: 03.persona_os
 Represents trust level between personas.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600006_social_influence.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600006_social_influence.md
 # ============================================================
 
 # MODEL
@@ -6925,9 +7200,8 @@ system: 03.persona_os
 Represents influence relationships between personas.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600007_persona_relationship.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600007_persona_relationship.md
 # ============================================================
 
 # ============================================================
@@ -6969,9 +7243,8 @@ persona_relationship
  -> social_network
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600008_relationship_state.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600008_relationship_state.md
 # ============================================================
 
 # ============================================================
@@ -7009,9 +7282,8 @@ relationship_state
  -> social_trust
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600009_relationship_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600009_relationship_event.md
 # ============================================================
 
 # ============================================================
@@ -7049,9 +7321,8 @@ relationship_event
  -> persona_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600010_social_interaction.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600010_social_interaction.md
 # ============================================================
 
 # ============================================================
@@ -7091,9 +7362,8 @@ social_interaction
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600011_social_perception.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600011_social_perception.md
 # ============================================================
 
 # ============================================================
@@ -7120,9 +7390,8 @@ social_perception
  -> social_interaction
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600012_social_signal.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600012_social_signal.md
 # ============================================================
 
 # ============================================================
@@ -7148,9 +7417,8 @@ social_signal
  -> communication
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600013_persona_relationship_profile.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600013_persona_relationship_profile.md
 # ============================================================
 
 # ============================================================
@@ -7176,9 +7444,8 @@ persona_relationship
  -> persona
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/060.social/0300600014_persona_trust.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social/0300600014_persona_trust.md
 # ============================================================
 
 # ============================================================
@@ -7204,9 +7471,8 @@ persona_trust
  -> social_interaction
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/070.capability/0300700001_capability.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700001_capability.md
 # ============================================================
 
 # ============================================================
@@ -7244,9 +7510,8 @@ capability
  -> competency
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/070.capability/0300700002_skill.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700002_skill.md
 # ============================================================
 
 # ============================================================
@@ -7285,9 +7550,8 @@ skill
  -> learning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/070.capability/0300700003_competency.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700003_competency.md
 # ============================================================
 
 # ============================================================
@@ -7325,9 +7589,8 @@ competency
  -> capability
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/070.capability/0300700004_capability_profile.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700004_capability_profile.md
 # ============================================================
 
 # ============================================================
@@ -7353,9 +7616,8 @@ capability_profile
  -> skill
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/070.capability/0300700005_capability_development.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability/0300700005_capability_development.md
 # ============================================================
 
 # ============================================================
@@ -7381,9 +7643,8 @@ capability_development
  -> persona_growth
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800001_knowledge.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800001_knowledge.md
 # ============================================================
 
 # ============================================================
@@ -7426,9 +7687,8 @@ knowledge
  -> cognition
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800002_memory.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800002_memory.md
 # ============================================================
 
 # ============================================================
@@ -7468,9 +7728,8 @@ memory
  -> learning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800003_experience.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800003_experience.md
 # ============================================================
 
 # ============================================================
@@ -7509,9 +7768,8 @@ experience
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800004_knowledge_graph.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800004_knowledge_graph.md
 # ============================================================
 
 # MODEL
@@ -7524,9 +7782,8 @@ system: 03.persona_os
 Represents graph structure of knowledge.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800005_knowledge_fact.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800005_knowledge_fact.md
 # ============================================================
 
 # MODEL
@@ -7539,9 +7796,8 @@ system: 03.persona_os
 Represents atomic knowledge element.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800006_knowledge_rule.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800006_knowledge_rule.md
 # ============================================================
 
 # MODEL
@@ -7554,9 +7810,8 @@ system: 03.persona_os
 Represents logical rule.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800007_knowledge_source.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800007_knowledge_source.md
 # ============================================================
 
 # MODEL
@@ -7569,9 +7824,8 @@ system: 03.persona_os
 Represents origin of knowledge.
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
 # ============================================================
 
 # ============================================================
@@ -7614,9 +7868,8 @@ persona_memory
  -> persona_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800009_persona_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800009_persona_event.md
 # ============================================================
 
 # ============================================================
@@ -7656,9 +7909,8 @@ persona_event
  -> emotion_trigger
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800010_persona_snapshot.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800010_persona_snapshot.md
 # ============================================================
 
 # ============================================================
@@ -7697,9 +7949,8 @@ persona_snapshot
  -> persona_memory
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800011_persona_history.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800011_persona_history.md
 # ============================================================
 
 # ============================================================
@@ -7738,9 +7989,8 @@ persona_history
  -> persona_snapshot
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800012_persona_experience.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800012_persona_experience.md
 # ============================================================
 
 # ============================================================
@@ -7778,9 +8028,8 @@ persona_experience
  -> learning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800013_persona_growth.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800013_persona_growth.md
 # ============================================================
 
 # ============================================================
@@ -7820,9 +8069,8 @@ persona_growth
  -> capability
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800014_memory_index.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800014_memory_index.md
 # ============================================================
 
 # ============================================================
@@ -7848,9 +8096,8 @@ memory_index
  -> memory
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800015_memory_retrieval.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800015_memory_retrieval.md
 # ============================================================
 
 # ============================================================
@@ -7876,9 +8123,8 @@ memory_retrieval
  -> memory_index
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800016_memory_decay.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800016_memory_decay.md
 # ============================================================
 
 # ============================================================
@@ -7904,9 +8150,8 @@ memory_decay
  -> memory
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
 # ============================================================
 
 # ============================================================
@@ -7933,9 +8178,8 @@ persona_memory
  -> persona_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/080.knowledge/0300800018_persona_experience_archive.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800018_persona_experience_archive.md
 # ============================================================
 
 # ============================================================
@@ -7961,9 +8205,8 @@ persona_experience
  -> learning
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/090.schedule/0300900001_schedule.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900001_schedule.md
 # ============================================================
 
 # ============================================================
@@ -8002,9 +8245,8 @@ schedule
  -> task
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/090.schedule/0300900002_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900002_event.md
 # ============================================================
 
 # ============================================================
@@ -8042,9 +8284,8 @@ event
  -> reminder
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/090.schedule/0300900003_reminder.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900003_reminder.md
 # ============================================================
 
 # ============================================================
@@ -8082,9 +8323,8 @@ reminder
  -> schedule
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/090.schedule/0300900004_schedule_plan.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900004_schedule_plan.md
 # ============================================================
 
 # ============================================================
@@ -8110,9 +8350,8 @@ schedule_plan
  -> task
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/090.schedule/0300900005_schedule_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900005_schedule_event.md
 # ============================================================
 
 # ============================================================
@@ -8138,9 +8377,8 @@ schedule_event
  -> task
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/090.schedule/0300900006_schedule_priority.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule/0300900006_schedule_priority.md
 # ============================================================
 
 # ============================================================
@@ -8166,9 +8404,8 @@ schedule_priority
  -> persona_priority
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/100.finance/0301000001_finance_account.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000001_finance_account.md
 # ============================================================
 
 # ============================================================
@@ -8207,9 +8444,8 @@ finance_account
  -> budget
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/100.finance/0301000002_transaction.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000002_transaction.md
 # ============================================================
 
 # ============================================================
@@ -8247,9 +8483,8 @@ transaction
  -> finance_account
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/100.finance/0301000003_budget.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000003_budget.md
 # ============================================================
 
 # ============================================================
@@ -8288,9 +8523,8 @@ budget
  -> transaction
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/100.finance/0301000004_financial_activity.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000004_financial_activity.md
 # ============================================================
 
 # ============================================================
@@ -8317,9 +8551,8 @@ financial_activity
  -> finance_account
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/100.finance/0301000005_resource_allocation.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance/0301000005_resource_allocation.md
 # ============================================================
 
 # ============================================================
@@ -8346,9 +8579,8 @@ resource_allocation
  -> financial_activity
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/110.security/0301100001_security_identity.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100001_security_identity.md
 # ============================================================
 
 # ============================================================
@@ -8387,9 +8619,8 @@ security_identity
  -> credential
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/110.security/0301100002_access_policy.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100002_access_policy.md
 # ============================================================
 
 # ============================================================
@@ -8428,9 +8659,8 @@ access_policy
  -> credential
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/110.security/0301100003_credential.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100003_credential.md
 # ============================================================
 
 # ============================================================
@@ -8468,9 +8698,8 @@ credential
  -> security_identity
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/110.security/0301100004_persona_guardrail.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100004_persona_guardrail.md
 # ============================================================
 
 # ============================================================
@@ -8496,9 +8725,8 @@ persona_guardrail
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/110.security/0301100005_behavior_constraint.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security/0301100005_behavior_constraint.md
 # ============================================================
 
 # ============================================================
@@ -8524,9 +8752,8 @@ behavior_constraint
  -> persona_guardrail
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200001_persona_snapshot_release.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200001_persona_snapshot_release.md
 # ============================================================
 
 # persona_snapshot_release
@@ -8554,9 +8781,8 @@ Represent a releasable externally usable Persona snapshot unit.
 - external_use_allowed
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200002_persona_license.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200002_persona_license.md
 # ============================================================
 
 # persona_license
@@ -8584,9 +8810,8 @@ Represent canonical PersonaOS license authority.
 - issued_at
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200003_persona_access_grant.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200003_persona_access_grant.md
 # ============================================================
 
 # persona_access_grant
@@ -8613,9 +8838,8 @@ Represent granted external usage access.
 - suspended_at
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200004_persona_transfer_rule.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200004_persona_transfer_rule.md
 # ============================================================
 
 # persona_transfer_rule
@@ -8639,9 +8863,8 @@ Represent transfer permissions and constraints.
 - updated_at
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200005_persona_transfer_record.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200005_persona_transfer_record.md
 # ============================================================
 
 # persona_transfer_record
@@ -8668,9 +8891,8 @@ Represent executed or rejected transfer attempts.
 - transferred_at
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200006_persona_package.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200006_persona_package.md
 # ============================================================
 
 # persona_package
@@ -8695,9 +8917,8 @@ Represent an externally distributable Persona package.
 - revoked_at
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200007_persona_package_item.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200007_persona_package_item.md
 # ============================================================
 
 # persona_package_item
@@ -8721,9 +8942,8 @@ Represent package membership of Persona-derived assets.
 - active
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.external_rights/0301200008_persona_distribution_record.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights/0301200008_persona_distribution_record.md
 # ============================================================
 
 # persona_distribution_record
@@ -8748,9 +8968,8 @@ Represent publication of mirrorable metadata to external platforms.
 - synced_at
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.logs/0301210001_log_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210001_log_event.md
 # ============================================================
 
 # ============================================================
@@ -8788,9 +9007,8 @@ log_event
  -> event_stream
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.logs/0301210002_audit_log.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210002_audit_log.md
 # ============================================================
 
 # ============================================================
@@ -8827,9 +9045,8 @@ audit_log
  -> log_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.logs/0301210003_event_stream.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210003_event_stream.md
 # ============================================================
 
 # ============================================================
@@ -8867,9 +9084,8 @@ event_stream
  -> log_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.logs/0301210004_persona_log.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210004_persona_log.md
 # ============================================================
 
 # ============================================================
@@ -8896,9 +9112,8 @@ persona_log
  -> behavior
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/120.logs/0301210005_decision_log.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210005_decision_log.md
 # ============================================================
 
 # ============================================================
@@ -8924,9 +9139,8 @@ decision_log
  -> decision_evaluation
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
 # ============================================================
 
 # persona_event_outbox
@@ -8953,9 +9167,8 @@ Represent outbound integration events generated by PersonaOS.
 - dispatched_at
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md
 # ============================================================
 
 # persona_sync_event_contract
@@ -8980,9 +9193,63 @@ Define canonical outbound sync event contract types from PersonaOS.
 Payloads must be deterministic and mirrorable.
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+# ============================================================
+
+# persona_growth_request_inbox
+
+status: canonical
+layer: model
+domain: integration
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Represent inbound Business-originated growth requests consumed by PersonaOS.
+
+## FIELDS
+- persona_growth_request_inbox_id
+- source_system
+- request_id
+- event_type
+- persona_id
+- growth_dimension
+- delta_value
+- payload_json
+- consume_state
+- received_at
+- consumed_at
+
 
 # ============================================================
-# FILE: 030.model/010.canonical/130.simulation/0301310001_simulation.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300004_persona_growth_result_contract.md
+# ============================================================
+
+# persona_growth_result_contract
+
+status: canonical
+layer: model
+domain: integration
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Define the canonical result payload emitted after PersonaOS applies a growth request.
+
+## FIELDS
+- request_id
+- persona_id
+- growth_dimension
+- previous_value
+- new_value
+- growth_version
+- result_state
+- applied_at
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310001_simulation.md
 # ============================================================
 
 # ============================================================
@@ -9021,9 +9288,8 @@ simulation
  -> simulation_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/130.simulation/0301310002_scenario.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310002_scenario.md
 # ============================================================
 
 # ============================================================
@@ -9061,9 +9327,8 @@ scenario
  -> simulation_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/130.simulation/0301310003_simulation_event.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310003_simulation_event.md
 # ============================================================
 
 # ============================================================
@@ -9102,9 +9367,8 @@ simulation_event
  -> scenario
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/130.simulation/0301310004_simulation_world.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310004_simulation_world.md
 # ============================================================
 
 # ============================================================
@@ -9130,9 +9394,8 @@ simulation_world
  -> scenario
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/130.simulation/0301310005_simulation_actor.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310005_simulation_actor.md
 # ============================================================
 
 # ============================================================
@@ -9158,9 +9421,8 @@ simulation_actor
  -> persona
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/130.simulation/0301310006_simulation_outcome.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310006_simulation_outcome.md
 # ============================================================
 
 # ============================================================
@@ -9186,9 +9448,8 @@ simulation_outcome
  -> simulation_event
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/140.visual/0301400001_visual_avatar.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400001_visual_avatar.md
 # ============================================================
 
 # ============================================================
@@ -9225,9 +9486,8 @@ visual_avatar
  -> visual_asset
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/140.visual/0301400002_visual_asset.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400002_visual_asset.md
 # ============================================================
 
 # ============================================================
@@ -9265,9 +9525,8 @@ visual_asset
  -> visual_avatar
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/140.visual/0301400003_animation_profile.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400003_animation_profile.md
 # ============================================================
 
 # ============================================================
@@ -9305,9 +9564,8 @@ animation_profile
  -> visual_avatar
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/140.visual/0301400004_visual_state.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400004_visual_state.md
 # ============================================================
 
 # ============================================================
@@ -9333,9 +9591,8 @@ visual_state
  -> animation_profile
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/140.visual/0301400005_visual_expression.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual/0301400005_visual_expression.md
 # ============================================================
 
 # ============================================================
@@ -9361,9 +9618,8 @@ visual_expression
  -> emotion_expression
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/150.voice/0301500001_voice_profile.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500001_voice_profile.md
 # ============================================================
 
 # ============================================================
@@ -9400,9 +9656,8 @@ voice_profile
  -> voice_asset
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/150.voice/0301500002_voice_asset.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500002_voice_asset.md
 # ============================================================
 
 # ============================================================
@@ -9439,9 +9694,8 @@ voice_asset
  -> voice_profile
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/150.voice/0301500003_voice_state.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500003_voice_state.md
 # ============================================================
 
 # ============================================================
@@ -9467,9 +9721,8 @@ voice_state
  -> communication
 
 
-
 # ============================================================
-# FILE: 030.model/010.canonical/150.voice/0301500004_voice_expression.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice/0301500004_voice_expression.md
 # ============================================================
 
 # ============================================================
@@ -9495,9 +9748,8 @@ voice_expression
  -> emotion_expression
 
 
-
 # ============================================================
-# FILE: 030.model/020.catalog/0300200001_PERSONA_MODEL_OVERVIEW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200001_PERSONA_MODEL_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -9522,9 +9774,8 @@ ddd  domain
 mmmm model
 
 
-
 # ============================================================
-# FILE: 030.model/020.catalog/0300200002_PERSONA_MODEL_INDEX.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200002_PERSONA_MODEL_INDEX.md
 # ============================================================
 
 # ============================================================
@@ -9550,9 +9801,8 @@ Domains
 150.voice
 
 
-
 # ============================================================
-# FILE: 030.model/020.catalog/0300200003_PERSONA_MODEL_DEPENDENCY_MAP.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200003_PERSONA_MODEL_DEPENDENCY_MAP.md
 # ============================================================
 
 # ============================================================
@@ -9853,9 +10103,8 @@ for PersonaOS models.
 
 
 
-
 # ============================================================
-# FILE: 030.model/020.catalog/0300200004_PERSONA_OS_MODEL_STRUCTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200004_PERSONA_OS_MODEL_STRUCTURE.md
 # ============================================================
 
 # ============================================================
@@ -10452,9 +10701,8 @@ for PersonaOS model expansion.
 
 
 
-
 # ============================================================
-# FILE: 030.model/020.catalog/0300200005_PERSONA_KERNEL_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200005_PERSONA_KERNEL_MODEL.md
 # ============================================================
 
 # ============================================================
@@ -10665,9 +10913,8 @@ operations
 
 
 
-
 # ============================================================
-# FILE: 030.model/030.binding/0300300001_PERSONA_CIVILIZATION_MODEL_BOUNDARY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/030.binding/0300300001_PERSONA_CIVILIZATION_MODEL_BOUNDARY.md
 # ============================================================
 
 # ============================================================
@@ -10901,9 +11148,152 @@ between PersonaOS and CivilizationOS.
 
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/0300000_MODEL_INDEX.md
+# ============================================================
+
+# MODEL INDEX
+
+See:
+- 999_MODEL_INDEX.txt
+
+Structure:
+- 010.canonical
+- 020.catalog
+- 030.binding
+
 
 # ============================================================
-# FILE: 040.runtime/0400001_PERSONA_RUNTIME_OVERVIEW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400001_PERSONA_EXTERNAL_RELEASE_RUNTIME.md
+# ============================================================
+
+# PERSONA EXTERNAL RELEASE RUNTIME
+
+status: canonical
+layer: runtime
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Define runtime behavior for issuing and revoking external release units.
+
+## RUNTIME STEPS
+- validate source snapshot
+- validate external use eligibility
+- generate release state
+- apply signature state
+- publish release event
+- support revoke transition
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400002_PERSONA_LICENSE_RUNTIME.md
+# ============================================================
+
+# PERSONA LICENSE RUNTIME
+
+status: canonical
+layer: runtime
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Define runtime handling of Persona license state.
+
+## RUNTIME STEPS
+- issue license
+- activate license
+- suspend license
+- revoke license
+- expose mirrorable state
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400003_PERSONA_ACCESS_GRANT_RUNTIME.md
+# ============================================================
+
+# PERSONA ACCESS GRANT RUNTIME
+
+status: canonical
+layer: runtime
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Define runtime state transitions for access grants.
+
+## STATES
+draft
+active
+expired
+revoked
+suspended
+
+## RULE
+Usage access is permitted only in active state.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400004_PERSONA_TRANSFER_RUNTIME.md
+# ============================================================
+
+# PERSONA TRANSFER RUNTIME
+
+status: canonical
+layer: runtime
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Define runtime behavior for transfer approval and execution.
+
+## RUNTIME STEPS
+- receive transfer request
+- validate transfer rule
+- validate current rights state
+- approve or deny
+- emit transfer update
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external/0400400005_PERSONA_PACKAGE_RUNTIME.md
+# ============================================================
+
+# PERSONA PACKAGE RUNTIME
+
+status: canonical
+layer: runtime
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Define runtime generation and publication of Persona packages.
+
+## RUNTIME STEPS
+- collect approved package items
+- validate package completeness
+- issue package artifact
+- assign publication state
+- emit distribution metadata
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400000_RUNTIME_INDEX.md
+# ============================================================
+
+# RUNTIME INDEX
+
+See:
+- 999_RUNTIME_INDEX.txt
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400001_PERSONA_RUNTIME_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -10954,9 +11344,8 @@ Optional Snapshot Trigger
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400002_RUNTIME_OVERVIEW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400002_RUNTIME_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -10976,20 +11365,8 @@ visual runtime
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400000_RUNTIME_INDEX.md
-# ============================================================
-
-# RUNTIME INDEX
-
-See:
-- 999_RUNTIME_INDEX.txt
-
-
-
-# ============================================================
-# FILE: 040.runtime/0400003_PERSONA_EVENT_APPLY_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400003_PERSONA_EVENT_APPLY_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11027,9 +11404,8 @@ duplicate events must not corrupt state
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400004_PERSONA_GROWTH_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400004_PERSONA_GROWTH_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11065,9 +11441,8 @@ growth history stored in growth_events.
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400005_PERSONA_MEMORY_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400005_PERSONA_MEMORY_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11099,9 +11474,8 @@ memory must remain auditable
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400006_PERSONA_VISUAL_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400006_PERSONA_VISUAL_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11134,9 +11508,8 @@ final visual assets stored in storage buckets.
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400007_PERSONA_SNAPSHOT_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400007_PERSONA_SNAPSHOT_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11173,9 +11546,8 @@ multiple snapshots may coexist
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400008_PERSONA_APPROVAL_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400008_PERSONA_APPROVAL_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11210,9 +11582,8 @@ special lifecycle events
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400009_PERSONA_CAPABILITY_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400009_PERSONA_CAPABILITY_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11258,9 +11629,8 @@ and enforce policy restrictions.
 
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400010_PERSONA_COMMUNICATION_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400010_PERSONA_COMMUNICATION_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11278,9 +11648,8 @@ Processes dialogue and messaging
 between personas and users.
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400011_PERSONA_ENGINE_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400011_PERSONA_ENGINE_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11298,9 +11667,8 @@ Coordinates cognition, behavior
 and memory subsystems.
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400012_PERSONA_EVENT_PIPELINE_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400012_PERSONA_EVENT_PIPELINE_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11318,9 +11686,8 @@ Event pipeline routes events through
 persona processing stages.
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400013_PERSONA_MEMORY_RUNTIME_DUPLICATE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400013_PERSONA_MEMORY_RUNTIME_DUPLICATE.md
 # ============================================================
 
 # ============================================================
@@ -11338,9 +11705,8 @@ Memory runtime stores and retrieves
 persona experiences.
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400014_PERSONA_RUNTIME_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400014_PERSONA_RUNTIME_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -11359,9 +11725,8 @@ Runtime layer executes operational
 logic defined in operations layer.
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400015_PERSONA_RUNTIME_COORDINATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400015_PERSONA_RUNTIME_COORDINATION.md
 # ============================================================
 
 # ============================================================
@@ -11379,9 +11744,8 @@ Ensures synchronization between
 runtime components.
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400016_PERSONA_SOCIAL_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400016_PERSONA_SOCIAL_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11399,9 +11763,8 @@ Handles relationship and interaction
 dynamics between personas.
 
 
-
 # ============================================================
-# FILE: 040.runtime/0400017_PERSONA_STATE_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400017_PERSONA_STATE_RUNTIME.md
 # ============================================================
 
 # ============================================================
@@ -11419,133 +11782,8 @@ State runtime maintains current
 persona internal state.
 
 
-
 # ============================================================
-# FILE: 040.runtime/040.external/0400400001_PERSONA_EXTERNAL_RELEASE_RUNTIME.md
-# ============================================================
-
-# PERSONA EXTERNAL RELEASE RUNTIME
-
-status: canonical
-layer: runtime
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PURPOSE
-Define runtime behavior for issuing and revoking external release units.
-
-## RUNTIME STEPS
-- validate source snapshot
-- validate external use eligibility
-- generate release state
-- apply signature state
-- publish release event
-- support revoke transition
-
-
-
-# ============================================================
-# FILE: 040.runtime/040.external/0400400002_PERSONA_LICENSE_RUNTIME.md
-# ============================================================
-
-# PERSONA LICENSE RUNTIME
-
-status: canonical
-layer: runtime
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PURPOSE
-Define runtime handling of Persona license state.
-
-## RUNTIME STEPS
-- issue license
-- activate license
-- suspend license
-- revoke license
-- expose mirrorable state
-
-
-
-# ============================================================
-# FILE: 040.runtime/040.external/0400400003_PERSONA_ACCESS_GRANT_RUNTIME.md
-# ============================================================
-
-# PERSONA ACCESS GRANT RUNTIME
-
-status: canonical
-layer: runtime
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PURPOSE
-Define runtime state transitions for access grants.
-
-## STATES
-draft
-active
-expired
-revoked
-suspended
-
-## RULE
-Usage access is permitted only in active state.
-
-
-
-# ============================================================
-# FILE: 040.runtime/040.external/0400400004_PERSONA_TRANSFER_RUNTIME.md
-# ============================================================
-
-# PERSONA TRANSFER RUNTIME
-
-status: canonical
-layer: runtime
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PURPOSE
-Define runtime behavior for transfer approval and execution.
-
-## RUNTIME STEPS
-- receive transfer request
-- validate transfer rule
-- validate current rights state
-- approve or deny
-- emit transfer update
-
-
-
-# ============================================================
-# FILE: 040.runtime/040.external/0400400005_PERSONA_PACKAGE_RUNTIME.md
-# ============================================================
-
-# PERSONA PACKAGE RUNTIME
-
-status: canonical
-layer: runtime
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PURPOSE
-Define runtime generation and publication of Persona packages.
-
-## RUNTIME STEPS
-- collect approved package items
-- validate package completeness
-- issue package artifact
-- assign publication state
-- emit distribution metadata
-
-
-
-# ============================================================
-# FILE: 040.runtime/060.integration/0400600001_PERSONA_EVENT_OUTBOX_RUNTIME.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600001_PERSONA_EVENT_OUTBOX_RUNTIME.md
 # ============================================================
 
 # PERSONA EVENT OUTBOX RUNTIME
@@ -11564,9 +11802,29 @@ prepared_by: Zero
 5. failed delivery remains retryable
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600002_PERSONA_GROWTH_REQUEST_CONSUME_RUNTIME.md
+# ============================================================
+
+# PERSONA GROWTH REQUEST CONSUME RUNTIME
+
+status: canonical
+layer: runtime
+domain: integration
+owner: Boss
+prepared_by: Zero
+
+## RUNTIME STEPS
+1. PersonaOS receives growth request
+2. request is validated and deduplicated
+3. applyability is checked against policy
+4. growth truth is updated
+5. growth history is recorded
+6. canonical result sync event is written to outbox
+
 
 # ============================================================
-# FILE: 050.flow/040.external/0500400001_PERSONA_EXTERNAL_RELEASE_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400001_PERSONA_EXTERNAL_RELEASE_FLOW.md
 # ============================================================
 
 # PERSONA EXTERNAL RELEASE FLOW
@@ -11586,9 +11844,8 @@ prepared_by: Zero
 6. release becomes externally publishable
 
 
-
 # ============================================================
-# FILE: 050.flow/040.external/0500400002_PERSONA_LICENSE_ISSUE_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400002_PERSONA_LICENSE_ISSUE_FLOW.md
 # ============================================================
 
 # PERSONA LICENSE ISSUE FLOW
@@ -11608,9 +11865,8 @@ prepared_by: Zero
 6. mirrorable license state becomes available
 
 
-
 # ============================================================
-# FILE: 050.flow/040.external/0500400003_PERSONA_ACCESS_GRANT_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400003_PERSONA_ACCESS_GRANT_FLOW.md
 # ============================================================
 
 # PERSONA ACCESS GRANT FLOW
@@ -11630,9 +11886,8 @@ prepared_by: Zero
 6. current access state is published
 
 
-
 # ============================================================
-# FILE: 050.flow/040.external/0500400004_PERSONA_TRANSFER_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400004_PERSONA_TRANSFER_FLOW.md
 # ============================================================
 
 # PERSONA TRANSFER FLOW
@@ -11652,9 +11907,8 @@ prepared_by: Zero
 6. resulting rights state is published
 
 
-
 # ============================================================
-# FILE: 050.flow/040.external/0500400005_PERSONA_PACKAGE_PUBLISH_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400005_PERSONA_PACKAGE_PUBLISH_FLOW.md
 # ============================================================
 
 # PERSONA PACKAGE PUBLISH FLOW
@@ -11674,9 +11928,8 @@ prepared_by: Zero
 6. package becomes publishable to external platforms
 
 
-
 # ============================================================
-# FILE: 050.flow/040.external/0500400006_PERSONA_DISTRIBUTION_SYNC_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400006_PERSONA_DISTRIBUTION_SYNC_FLOW.md
 # ============================================================
 
 # PERSONA DISTRIBUTION SYNC FLOW
@@ -11696,9 +11949,8 @@ prepared_by: Zero
 6. retry is scheduled for failed targets
 
 
-
 # ============================================================
-# FILE: 050.flow/050.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
 # ============================================================
 
 # PERSONA TO BUSINESS RELEASE SYNC FLOW
@@ -11717,9 +11969,8 @@ prepared_by: Zero
 5. Business-facing availability is recalculated
 
 
-
 # ============================================================
-# FILE: 050.flow/050.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
 # ============================================================
 
 # PERSONA TO BUSINESS RIGHTS SYNC FLOW
@@ -11737,9 +11988,628 @@ prepared_by: Zero
 4. invalid external usage is disabled in Business context
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500003_BUSINESS_TO_PERSONA_GROWTH_APPLY_FLOW.md
+# ============================================================
+
+# BUSINESS TO PERSONA GROWTH APPLY FLOW
+
+status: canonical
+layer: flow
+domain: business
+owner: Boss
+prepared_by: Zero
+
+## FLOW
+1. BusinessOS emits approved growth request
+2. PersonaOS receives request
+3. PersonaOS validates policy and idempotency
+4. PersonaOS applies growth truth mutation
+5. apply result is recorded
+
 
 # ============================================================
-# FILE: 070.operations/0700001_OPERATIONS_OVERVIEW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_FLOW.md
+# ============================================================
+
+# PERSONA TO BUSINESS GROWTH RESULT FLOW
+
+status: canonical
+layer: flow
+domain: business
+owner: Boss
+prepared_by: Zero
+
+## FLOW
+1. PersonaOS completes growth update
+2. PersonaOS emits growth result event
+3. BusinessOS receives canonical result payload
+4. reflected growth state is updated
+5. Business-side persona behavior is recalculated
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100001_PERSONA_CONTEXT_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA CONTEXT OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Maintains runtime context.
+
+# DESCRIPTION
+Context integrates perception,
+memory and environment signals.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100002_PERSONA_ENGINE_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA ENGINE OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+component: persona-engine
+
+# PURPOSE
+Defines the core execution mechanism
+of the Persona Engine.
+
+# DESCRIPTION
+The engine coordinates cognition,
+behavior, memory and communication operations.
+
+# FLOW
+event
+→ perception
+→ reasoning
+→ decision
+→ behavior
+→ memory update
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100003_PERSONA_EVENT_LOOP_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA EVENT LOOP OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Defines continuous processing loop.
+
+# DESCRIPTION
+Persona engine continuously processes
+incoming events and internal state changes.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine/0700100004_PERSONA_STATE_UPDATE_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA STATE UPDATE OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Updates internal persona state.
+
+# DESCRIPTION
+State update reflects changes
+in cognition, emotion and context.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/020.cognition/0700200001_PERSONA_DECISION_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA DECISION OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Represents decision making.
+
+# DESCRIPTION
+Selects actions based on reasoning
+results and internal state.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/020.cognition/0700200002_PERSONA_PERCEPTION_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA PERCEPTION OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Handles perception processing.
+
+# DESCRIPTION
+Transforms environmental signals
+into internal representations.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/020.cognition/0700200003_PERSONA_REASONING_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA REASONING OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Performs reasoning processes.
+
+# DESCRIPTION
+Evaluates context, memory and goals
+to determine possible actions.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/030.behavior/0700300001_PERSONA_ACTION_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA ACTION OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Executes individual actions.
+
+# DESCRIPTION
+Actions interact with environment
+and other personas.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/030.behavior/0700300002_PERSONA_BEHAVIOR_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA BEHAVIOR OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Defines behavior execution.
+
+# DESCRIPTION
+Behavior translates decisions
+into concrete actions.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400001_PERSONA_LICENSE_ISSUE_OPERATION.md
+# ============================================================
+
+# PERSONA LICENSE ISSUE OPERATION
+
+status: canonical
+layer: operations
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PROCEDURE
+- validate release state
+- validate external use eligibility
+- generate license record
+- assign effective period and scope
+- record issuance event
+- expose mirrorable state
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400002_PERSONA_ACCESS_GRANT_OPERATION.md
+# ============================================================
+
+# PERSONA ACCESS GRANT OPERATION
+
+status: canonical
+layer: operations
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PROCEDURE
+- validate release and license state
+- identify holder
+- issue or update grant
+- enforce expiration and revocation
+- publish current grant state
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400003_PERSONA_TRANSFER_APPROVAL_OPERATION.md
+# ============================================================
+
+# PERSONA TRANSFER APPROVAL OPERATION
+
+status: canonical
+layer: operations
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PROCEDURE
+- validate transfer rule
+- validate current license and grant state
+- confirm approval requirement
+- record transfer decision
+- update downstream mirrorable state
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400004_PERSONA_RELEASE_ISSUE_OPERATION.md
+# ============================================================
+
+# PERSONA RELEASE ISSUE OPERATION
+
+status: canonical
+layer: operations
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PROCEDURE
+- validate source snapshot
+- validate external release eligibility
+- issue release record
+- confirm signature state
+- publish release availability
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400005_PERSONA_PACKAGE_PUBLISH_OPERATION.md
+# ============================================================
+
+# PERSONA PACKAGE PUBLISH OPERATION
+
+status: canonical
+layer: operations
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PROCEDURE
+- validate package completeness
+- validate referenced release items
+- issue package state
+- publish distribution metadata
+- record publication result
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights/0700400006_PERSONA_DISTRIBUTION_SYNC_OPERATION.md
+# ============================================================
+
+# PERSONA DISTRIBUTION SYNC OPERATION
+
+status: canonical
+layer: operations
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PROCEDURE
+- identify mirrorable release/package changes
+- publish sync payload
+- record distribution state
+- retry failed sync targets
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.memory/0700410001_PERSONA_MEMORY_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA MEMORY OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Handles memory storage and retrieval.
+
+# DESCRIPTION
+Memory records events, decisions
+and experiences.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500001_PERSONA_GROUP_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA GROUP OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Defines group-level interactions.
+
+# DESCRIPTION
+Group operation manages participation
+in teams, organizations and communities.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500002_PERSONA_RELATION_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA RELATION OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Manages relationships between personas.
+
+# DESCRIPTION
+Defines how relationships are created,
+updated and evaluated.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500003_PERSONA_SOCIAL_INTERACTION_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA SOCIAL INTERACTION OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Handles interactions between personas.
+
+# DESCRIPTION
+Social interaction coordinates
+communication and behavior
+between agents.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social/0700500004_PERSONA_TRUST_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA TRUST OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Represents trust dynamics.
+
+# DESCRIPTION
+Trust evolves through interactions
+and shared experiences.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600001_PERSONA_COMMUNICATION_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA COMMUNICATION OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Handles message exchange.
+
+# DESCRIPTION
+Defines how personas send and receive
+communication signals.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600002_PERSONA_DIALOGUE_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA DIALOGUE OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Represents conversational processes.
+
+# DESCRIPTION
+Dialogue structures multi-turn
+communication sequences.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600003_PERSONA_MESSAGE_PROCESSING_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA MESSAGE PROCESSING OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Processes incoming messages.
+
+# DESCRIPTION
+Transforms communication signals
+into internal understanding.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication/0700600004_PERSONA_RESPONSE_GENERATION_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA RESPONSE GENERATION OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Generates communication responses.
+
+# DESCRIPTION
+Responses are produced based on
+reasoning, emotion and context.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610001_PERSONA_OUTBOX_DISPATCH_OPERATION.md
+# ============================================================
+
+# PERSONA OUTBOX DISPATCH OPERATION
+
+status: canonical
+layer: operations
+domain: integration
+owner: Boss
+prepared_by: Zero
+
+## PROCEDURE
+- read pending outbox events
+- publish payload to approved downstream target
+- record dispatch result
+- increment retry metadata on failure
+- stop retry only on terminal invalid configuration
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration/0700610002_PERSONA_GROWTH_REQUEST_CONSUME_OPERATION.md
+# ============================================================
+
+# PERSONA GROWTH REQUEST CONSUME OPERATION
+
+status: canonical
+layer: operations
+domain: integration
+owner: Boss
+prepared_by: Zero
+
+## OPERATION
+- read pending inbound growth requests
+- validate and deduplicate
+- apply growth update
+- write result event to outbox
+- keep failed processing retryable
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700001_PERSONA_KNOWLEDGE_UPDATE_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA KNOWLEDGE UPDATE OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Updates knowledge structures.
+
+# DESCRIPTION
+New information modifies the
+persona knowledge base.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700002_PERSONA_LEARNING_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA LEARNING OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Handles learning processes.
+
+# DESCRIPTION
+Learning updates knowledge and
+capabilities from experience.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning/0700700003_PERSONA_STRATEGY_UPDATE_OPERATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA STRATEGY UPDATE OPERATION
+# ============================================================
+
+status: canonical
+layer: operations
+
+# PURPOSE
+Adjusts behavioral strategies.
+
+# DESCRIPTION
+Strategies evolve through
+learning and outcomes.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700000_OPERATIONS_INDEX.md
+# ============================================================
+
+# OPERATIONS INDEX
+
+See:
+- 999_OPERATIONS_INDEX.txt
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700001_OPERATIONS_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -11801,9 +12671,245 @@ System observability and incident detection.
 
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700002_AUTHENTICATION_MODEL.md
+# ============================================================
 
 # ============================================================
-# FILE: 070.operations/0700008_PERSONA_OPERATIONS_OVERVIEW.md
+# PERSONA AUTHENTICATION MODEL
+# ============================================================
+
+status: canonical
+component: persona-authentication
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Define how users and applications authenticate
+to PersonaOS.
+
+# AUTHENTICATION TYPES
+
+User authentication
+
+Handled via Supabase Auth.
+
+Application authentication
+
+Handled via service keys or internal tokens.
+
+# AUTHENTICATION FLOW
+
+Client → Auth provider → access token → API access
+
+# PRINCIPLE
+
+Authentication verifies identity.
+Authorization determines permission.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700003_INTERNAL_TOKEN_MODEL.md
+# ============================================================
+
+# ============================================================
+# PERSONA INTERNAL TOKEN MODEL
+# ============================================================
+
+status: canonical
+component: persona-internal-token
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Define secure internal communication
+between PersonaOS services.
+
+# TOKEN TYPE
+
+Internal dispatch token.
+
+Used for:
+
+Edge function invocation
+internal event dispatch
+system operations
+
+# SECURITY RULE
+
+Internal tokens must never be exposed
+to external clients.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700004_STORAGE_MODEL.md
+# ============================================================
+
+# ============================================================
+# PERSONA STORAGE MODEL
+# ============================================================
+
+status: canonical
+component: persona-storage
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Define how PersonaOS stores data and assets.
+
+# STORAGE TYPES
+
+Database storage
+
+Used for:
+
+persona state
+events
+growth logs
+snapshots
+
+Object storage
+
+Used for:
+
+visual assets
+generated images
+imported resources
+
+# STORAGE PRINCIPLE
+
+Structured data must remain in database.
+Binary assets must reside in object storage.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700005_DEPLOYMENT_MODEL.md
+# ============================================================
+
+# ============================================================
+# PERSONA DEPLOYMENT MODEL
+# ============================================================
+
+status: canonical
+component: persona-deployment
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Define deployment procedures
+for PersonaOS components.
+
+# DEPLOYED COMPONENTS
+
+database schema
+edge functions
+storage buckets
+runtime applications
+
+# DEPLOYMENT RULES
+
+Deployment must be reproducible.
+
+All deployments must be traceable
+through versioned artifacts.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700006_MONITORING_MODEL.md
+# ============================================================
+
+# ============================================================
+# PERSONA MONITORING MODEL
+# ============================================================
+
+status: canonical
+component: persona-monitoring
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Define system monitoring
+and observability.
+
+# MONITORING TARGETS
+
+event processing
+edge function execution
+error rates
+system latency
+
+# INCIDENT HANDLING
+
+Detected failures must produce
+audit logs and alerts.
+
+# PRINCIPLE
+
+Operational visibility
+is required for system trust.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700007_AUDIT_MODEL.md
+# ============================================================
+
+# ============================================================
+# PERSONA AUDIT MODEL
+# ============================================================
+
+status: canonical
+component: persona-os
+document: persona-audit-model
+
+owner: Boss
+prepared_by: Zero
+
+
+# PURPOSE
+
+Define audit logging for PersonaOS.
+
+
+# AUDIT TARGET
+
+runtime actions
+policy decisions
+capability updates
+approval decisions
+
+
+# AUDIT PRINCIPLE
+
+All critical operations must be traceable.
+
+
+# AUDIT DATA
+
+timestamp
+actor
+operation
+result
+
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700008_PERSONA_OPERATIONS_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -11896,841 +13002,8 @@ PersonaOS operations layer begins here.
 
 
 
-
 # ============================================================
-# FILE: 070.operations/0700000_OPERATIONS_INDEX.md
-# ============================================================
-
-# OPERATIONS INDEX
-
-See:
-- 999_OPERATIONS_INDEX.txt
-
-
-
-# ============================================================
-# FILE: 070.operations/0700002_AUTHENTICATION_MODEL.md
-# ============================================================
-
-# ============================================================
-# PERSONA AUTHENTICATION MODEL
-# ============================================================
-
-status: canonical
-component: persona-authentication
-
-owner: Boss
-prepared_by: Zero
-
-# PURPOSE
-
-Define how users and applications authenticate
-to PersonaOS.
-
-# AUTHENTICATION TYPES
-
-User authentication
-
-Handled via Supabase Auth.
-
-Application authentication
-
-Handled via service keys or internal tokens.
-
-# AUTHENTICATION FLOW
-
-Client → Auth provider → access token → API access
-
-# PRINCIPLE
-
-Authentication verifies identity.
-Authorization determines permission.
-
-
-
-
-# ============================================================
-# FILE: 070.operations/0700003_INTERNAL_TOKEN_MODEL.md
-# ============================================================
-
-# ============================================================
-# PERSONA INTERNAL TOKEN MODEL
-# ============================================================
-
-status: canonical
-component: persona-internal-token
-
-owner: Boss
-prepared_by: Zero
-
-# PURPOSE
-
-Define secure internal communication
-between PersonaOS services.
-
-# TOKEN TYPE
-
-Internal dispatch token.
-
-Used for:
-
-Edge function invocation
-internal event dispatch
-system operations
-
-# SECURITY RULE
-
-Internal tokens must never be exposed
-to external clients.
-
-
-
-
-# ============================================================
-# FILE: 070.operations/0700004_STORAGE_MODEL.md
-# ============================================================
-
-# ============================================================
-# PERSONA STORAGE MODEL
-# ============================================================
-
-status: canonical
-component: persona-storage
-
-owner: Boss
-prepared_by: Zero
-
-# PURPOSE
-
-Define how PersonaOS stores data and assets.
-
-# STORAGE TYPES
-
-Database storage
-
-Used for:
-
-persona state
-events
-growth logs
-snapshots
-
-Object storage
-
-Used for:
-
-visual assets
-generated images
-imported resources
-
-# STORAGE PRINCIPLE
-
-Structured data must remain in database.
-Binary assets must reside in object storage.
-
-
-
-
-# ============================================================
-# FILE: 070.operations/0700005_DEPLOYMENT_MODEL.md
-# ============================================================
-
-# ============================================================
-# PERSONA DEPLOYMENT MODEL
-# ============================================================
-
-status: canonical
-component: persona-deployment
-
-owner: Boss
-prepared_by: Zero
-
-# PURPOSE
-
-Define deployment procedures
-for PersonaOS components.
-
-# DEPLOYED COMPONENTS
-
-database schema
-edge functions
-storage buckets
-runtime applications
-
-# DEPLOYMENT RULES
-
-Deployment must be reproducible.
-
-All deployments must be traceable
-through versioned artifacts.
-
-
-
-
-# ============================================================
-# FILE: 070.operations/0700006_MONITORING_MODEL.md
-# ============================================================
-
-# ============================================================
-# PERSONA MONITORING MODEL
-# ============================================================
-
-status: canonical
-component: persona-monitoring
-
-owner: Boss
-prepared_by: Zero
-
-# PURPOSE
-
-Define system monitoring
-and observability.
-
-# MONITORING TARGETS
-
-event processing
-edge function execution
-error rates
-system latency
-
-# INCIDENT HANDLING
-
-Detected failures must produce
-audit logs and alerts.
-
-# PRINCIPLE
-
-Operational visibility
-is required for system trust.
-
-
-
-
-# ============================================================
-# FILE: 070.operations/0700007_AUDIT_MODEL.md
-# ============================================================
-
-# ============================================================
-# PERSONA AUDIT MODEL
-# ============================================================
-
-status: canonical
-component: persona-os
-document: persona-audit-model
-
-owner: Boss
-prepared_by: Zero
-
-
-# PURPOSE
-
-Define audit logging for PersonaOS.
-
-
-# AUDIT TARGET
-
-runtime actions
-policy decisions
-capability updates
-approval decisions
-
-
-# AUDIT PRINCIPLE
-
-All critical operations must be traceable.
-
-
-# AUDIT DATA
-
-timestamp
-actor
-operation
-result
-
-
-
-
-
-# ============================================================
-# FILE: 070.operations/010.engine/0700100001_PERSONA_CONTEXT_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA CONTEXT OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Maintains runtime context.
-
-# DESCRIPTION
-Context integrates perception,
-memory and environment signals.
-
-
-
-# ============================================================
-# FILE: 070.operations/010.engine/0700100002_PERSONA_ENGINE_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA ENGINE OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-component: persona-engine
-
-# PURPOSE
-Defines the core execution mechanism
-of the Persona Engine.
-
-# DESCRIPTION
-The engine coordinates cognition,
-behavior, memory and communication operations.
-
-# FLOW
-event
-→ perception
-→ reasoning
-→ decision
-→ behavior
-→ memory update
-
-
-
-# ============================================================
-# FILE: 070.operations/010.engine/0700100003_PERSONA_EVENT_LOOP_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA EVENT LOOP OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Defines continuous processing loop.
-
-# DESCRIPTION
-Persona engine continuously processes
-incoming events and internal state changes.
-
-
-
-# ============================================================
-# FILE: 070.operations/010.engine/0700100004_PERSONA_STATE_UPDATE_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA STATE UPDATE OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Updates internal persona state.
-
-# DESCRIPTION
-State update reflects changes
-in cognition, emotion and context.
-
-
-
-# ============================================================
-# FILE: 070.operations/020.cognition/0700200001_PERSONA_DECISION_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA DECISION OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Represents decision making.
-
-# DESCRIPTION
-Selects actions based on reasoning
-results and internal state.
-
-
-
-# ============================================================
-# FILE: 070.operations/020.cognition/0700200002_PERSONA_PERCEPTION_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA PERCEPTION OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Handles perception processing.
-
-# DESCRIPTION
-Transforms environmental signals
-into internal representations.
-
-
-
-# ============================================================
-# FILE: 070.operations/020.cognition/0700200003_PERSONA_REASONING_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA REASONING OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Performs reasoning processes.
-
-# DESCRIPTION
-Evaluates context, memory and goals
-to determine possible actions.
-
-
-
-# ============================================================
-# FILE: 070.operations/030.behavior/0700300001_PERSONA_ACTION_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA ACTION OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Executes individual actions.
-
-# DESCRIPTION
-Actions interact with environment
-and other personas.
-
-
-
-# ============================================================
-# FILE: 070.operations/030.behavior/0700300002_PERSONA_BEHAVIOR_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA BEHAVIOR OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Defines behavior execution.
-
-# DESCRIPTION
-Behavior translates decisions
-into concrete actions.
-
-
-
-# ============================================================
-# FILE: 070.operations/040.external_rights/0700400001_PERSONA_LICENSE_ISSUE_OPERATION.md
-# ============================================================
-
-# PERSONA LICENSE ISSUE OPERATION
-
-status: canonical
-layer: operations
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PROCEDURE
-- validate release state
-- validate external use eligibility
-- generate license record
-- assign effective period and scope
-- record issuance event
-- expose mirrorable state
-
-
-
-# ============================================================
-# FILE: 070.operations/040.external_rights/0700400002_PERSONA_ACCESS_GRANT_OPERATION.md
-# ============================================================
-
-# PERSONA ACCESS GRANT OPERATION
-
-status: canonical
-layer: operations
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PROCEDURE
-- validate release and license state
-- identify holder
-- issue or update grant
-- enforce expiration and revocation
-- publish current grant state
-
-
-
-# ============================================================
-# FILE: 070.operations/040.external_rights/0700400003_PERSONA_TRANSFER_APPROVAL_OPERATION.md
-# ============================================================
-
-# PERSONA TRANSFER APPROVAL OPERATION
-
-status: canonical
-layer: operations
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PROCEDURE
-- validate transfer rule
-- validate current license and grant state
-- confirm approval requirement
-- record transfer decision
-- update downstream mirrorable state
-
-
-
-# ============================================================
-# FILE: 070.operations/040.external_rights/0700400004_PERSONA_RELEASE_ISSUE_OPERATION.md
-# ============================================================
-
-# PERSONA RELEASE ISSUE OPERATION
-
-status: canonical
-layer: operations
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PROCEDURE
-- validate source snapshot
-- validate external release eligibility
-- issue release record
-- confirm signature state
-- publish release availability
-
-
-
-# ============================================================
-# FILE: 070.operations/040.external_rights/0700400005_PERSONA_PACKAGE_PUBLISH_OPERATION.md
-# ============================================================
-
-# PERSONA PACKAGE PUBLISH OPERATION
-
-status: canonical
-layer: operations
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PROCEDURE
-- validate package completeness
-- validate referenced release items
-- issue package state
-- publish distribution metadata
-- record publication result
-
-
-
-# ============================================================
-# FILE: 070.operations/040.external_rights/0700400006_PERSONA_DISTRIBUTION_SYNC_OPERATION.md
-# ============================================================
-
-# PERSONA DISTRIBUTION SYNC OPERATION
-
-status: canonical
-layer: operations
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PROCEDURE
-- identify mirrorable release/package changes
-- publish sync payload
-- record distribution state
-- retry failed sync targets
-
-
-
-# ============================================================
-# FILE: 070.operations/040.memory/0700410001_PERSONA_MEMORY_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA MEMORY OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Handles memory storage and retrieval.
-
-# DESCRIPTION
-Memory records events, decisions
-and experiences.
-
-
-
-# ============================================================
-# FILE: 070.operations/050.social/0700500001_PERSONA_GROUP_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA GROUP OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Defines group-level interactions.
-
-# DESCRIPTION
-Group operation manages participation
-in teams, organizations and communities.
-
-
-
-# ============================================================
-# FILE: 070.operations/050.social/0700500002_PERSONA_RELATION_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA RELATION OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Manages relationships between personas.
-
-# DESCRIPTION
-Defines how relationships are created,
-updated and evaluated.
-
-
-
-# ============================================================
-# FILE: 070.operations/050.social/0700500003_PERSONA_SOCIAL_INTERACTION_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA SOCIAL INTERACTION OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Handles interactions between personas.
-
-# DESCRIPTION
-Social interaction coordinates
-communication and behavior
-between agents.
-
-
-
-# ============================================================
-# FILE: 070.operations/050.social/0700500004_PERSONA_TRUST_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA TRUST OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Represents trust dynamics.
-
-# DESCRIPTION
-Trust evolves through interactions
-and shared experiences.
-
-
-
-# ============================================================
-# FILE: 070.operations/060.communication/0700600001_PERSONA_COMMUNICATION_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA COMMUNICATION OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Handles message exchange.
-
-# DESCRIPTION
-Defines how personas send and receive
-communication signals.
-
-
-
-# ============================================================
-# FILE: 070.operations/060.communication/0700600002_PERSONA_DIALOGUE_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA DIALOGUE OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Represents conversational processes.
-
-# DESCRIPTION
-Dialogue structures multi-turn
-communication sequences.
-
-
-
-# ============================================================
-# FILE: 070.operations/060.communication/0700600003_PERSONA_MESSAGE_PROCESSING_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA MESSAGE PROCESSING OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Processes incoming messages.
-
-# DESCRIPTION
-Transforms communication signals
-into internal understanding.
-
-
-
-# ============================================================
-# FILE: 070.operations/060.communication/0700600004_PERSONA_RESPONSE_GENERATION_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA RESPONSE GENERATION OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Generates communication responses.
-
-# DESCRIPTION
-Responses are produced based on
-reasoning, emotion and context.
-
-
-
-# ============================================================
-# FILE: 070.operations/060.integration/0700610001_PERSONA_OUTBOX_DISPATCH_OPERATION.md
-# ============================================================
-
-# PERSONA OUTBOX DISPATCH OPERATION
-
-status: canonical
-layer: operations
-domain: integration
-owner: Boss
-prepared_by: Zero
-
-## PROCEDURE
-- read pending outbox events
-- publish payload to approved downstream target
-- record dispatch result
-- increment retry metadata on failure
-- stop retry only on terminal invalid configuration
-
-
-
-# ============================================================
-# FILE: 070.operations/070.learning/0700700001_PERSONA_KNOWLEDGE_UPDATE_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA KNOWLEDGE UPDATE OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Updates knowledge structures.
-
-# DESCRIPTION
-New information modifies the
-persona knowledge base.
-
-
-
-# ============================================================
-# FILE: 070.operations/070.learning/0700700002_PERSONA_LEARNING_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA LEARNING OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Handles learning processes.
-
-# DESCRIPTION
-Learning updates knowledge and
-capabilities from experience.
-
-
-
-# ============================================================
-# FILE: 070.operations/070.learning/0700700003_PERSONA_STRATEGY_UPDATE_OPERATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA STRATEGY UPDATE OPERATION
-# ============================================================
-
-status: canonical
-layer: operations
-
-# PURPOSE
-Adjusts behavioral strategies.
-
-# DESCRIPTION
-Strategies evolve through
-learning and outcomes.
-
-
-
-# ============================================================
-# FILE: 070.operations/080.lifecycle/0700800001_PERSONA_GOAL_UPDATE_OPERATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800001_PERSONA_GOAL_UPDATE_OPERATION.md
 # ============================================================
 
 # ============================================================
@@ -12748,9 +13021,8 @@ Goals evolve through context,
 learning and priorities.
 
 
-
 # ============================================================
-# FILE: 070.operations/080.lifecycle/0700800002_PERSONA_LIFECYCLE_OPERATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800002_PERSONA_LIFECYCLE_OPERATION.md
 # ============================================================
 
 # ============================================================
@@ -12768,9 +13040,8 @@ Lifecycle includes initialization,
 growth and long-term evolution.
 
 
-
 # ============================================================
-# FILE: 070.operations/080.lifecycle/0700800003_PERSONA_STATE_TRANSITION_OPERATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle/0700800003_PERSONA_STATE_TRANSITION_OPERATION.md
 # ============================================================
 
 # ============================================================
@@ -12788,9 +13059,8 @@ Defines rules for state change
 within persona lifecycle.
 
 
-
 # ============================================================
-# FILE: 070.operations/090.system/0700900001_PERSONA_EVENT_PROCESSING_OPERATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900001_PERSONA_EVENT_PROCESSING_OPERATION.md
 # ============================================================
 
 # ============================================================
@@ -12808,9 +13078,8 @@ Events trigger cognition,
 behavior and memory updates.
 
 
-
 # ============================================================
-# FILE: 070.operations/090.system/0700900002_PERSONA_OPERATION_DISPATCH.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900002_PERSONA_OPERATION_DISPATCH.md
 # ============================================================
 
 # ============================================================
@@ -12828,9 +13097,8 @@ Dispatch mechanism routes events
 to appropriate operational modules.
 
 
-
 # ============================================================
-# FILE: 070.operations/090.system/0700900003_PERSONA_RUNTIME_COORDINATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system/0700900003_PERSONA_RUNTIME_COORDINATION.md
 # ============================================================
 
 # ============================================================
@@ -12848,9 +13116,8 @@ Ensures synchronization between
 persona subsystems.
 
 
-
 # ============================================================
-# FILE: 080.policy/040.external_rights/0800400001_PERSONA_EXTERNAL_RELEASE_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400001_PERSONA_EXTERNAL_RELEASE_POLICY.md
 # ============================================================
 
 # PERSONA EXTERNAL RELEASE POLICY
@@ -12868,9 +13135,8 @@ prepared_by: Zero
 - release visibility must be explicitly controlled
 
 
-
 # ============================================================
-# FILE: 080.policy/040.external_rights/0800400002_PERSONA_LICENSE_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400002_PERSONA_LICENSE_POLICY.md
 # ============================================================
 
 # PERSONA LICENSE POLICY
@@ -12888,9 +13154,8 @@ prepared_by: Zero
 - external systems may mirror, but not originate, license truth
 
 
-
 # ============================================================
-# FILE: 080.policy/040.external_rights/0800400003_PERSONA_ACCESS_GRANT_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400003_PERSONA_ACCESS_GRANT_POLICY.md
 # ============================================================
 
 # PERSONA ACCESS GRANT POLICY
@@ -12908,9 +13173,8 @@ prepared_by: Zero
 - external usage must deny inactive grant state
 
 
-
 # ============================================================
-# FILE: 080.policy/040.external_rights/0800400004_PERSONA_TRANSFER_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400004_PERSONA_TRANSFER_POLICY.md
 # ============================================================
 
 # PERSONA TRANSFER POLICY
@@ -12928,9 +13192,8 @@ prepared_by: Zero
 - transfer must not bypass current license or access constraints
 
 
-
 # ============================================================
-# FILE: 080.policy/040.external_rights/0800400005_PERSONA_DISTRIBUTION_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400005_PERSONA_DISTRIBUTION_POLICY.md
 # ============================================================
 
 # PERSONA DISTRIBUTION POLICY
@@ -12948,9 +13211,8 @@ prepared_by: Zero
 - failed sync must be detectable and retryable
 
 
-
 # ============================================================
-# FILE: 080.policy/050.business/0800500001_PERSONA_BUSINESS_INTERFACE_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business/0800500001_PERSONA_BUSINESS_INTERFACE_POLICY.md
 # ============================================================
 
 # PERSONA BUSINESS INTERFACE POLICY
@@ -12968,9 +13230,8 @@ prepared_by: Zero
 - BusinessOS may bind Persona usage only within valid rights constraints
 
 
-
 # ============================================================
-# FILE: 080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
 # ============================================================
 
 # PERSONA OUTBOX POLICY
@@ -12988,9 +13249,27 @@ prepared_by: Zero
 - dispatch failure must remain observable and retryable
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600002_PERSONA_GROWTH_APPLY_POLICY.md
+# ============================================================
+
+# PERSONA GROWTH APPLY POLICY
+
+status: canonical
+layer: policy
+domain: integration
+owner: Boss
+prepared_by: Zero
+
+## RULES
+- PersonaOS is the only growth truth holder
+- external systems may request but not directly set truth
+- growth apply must be deterministic, auditable, and idempotent
+- result synchronization must occur through outbox
+
 
 # ============================================================
-# FILE: 090.interface/040.external_rights/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
 # ============================================================
 
 # PERSONA RELEASE ADMIN INTERFACE
@@ -13009,9 +13288,8 @@ prepared_by: Zero
 - release revoke action
 
 
-
 # ============================================================
-# FILE: 090.interface/040.external_rights/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
 # ============================================================
 
 # PERSONA LICENSE ADMIN INTERFACE
@@ -13030,9 +13308,8 @@ prepared_by: Zero
 - transferability view
 
 
-
 # ============================================================
-# FILE: 090.interface/040.external_rights/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
 # ============================================================
 
 # PERSONA ACCESS GRANT ADMIN INTERFACE
@@ -13051,9 +13328,8 @@ prepared_by: Zero
 - revoke or suspend action
 
 
-
 # ============================================================
-# FILE: 090.interface/040.external_rights/0900400004_PERSONA_TRANSFER_ADMIN_INTERFACE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400004_PERSONA_TRANSFER_ADMIN_INTERFACE.md
 # ============================================================
 
 # PERSONA TRANSFER ADMIN INTERFACE
@@ -13072,9 +13348,8 @@ prepared_by: Zero
 - transfer history
 
 
-
 # ============================================================
-# FILE: 090.interface/040.external_rights/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
 # ============================================================
 
 # PERSONA PACKAGE ADMIN INTERFACE
@@ -13093,9 +13368,8 @@ prepared_by: Zero
 - publish action
 
 
-
 # ============================================================
-# FILE: 090.interface/040.external_rights/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
 # ============================================================
 
 # PERSONA DISTRIBUTION ADMIN INTERFACE
@@ -13114,9 +13388,8 @@ prepared_by: Zero
 - failure detail
 
 
-
 # ============================================================
-# FILE: 090.interface/050.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/050.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
 # ============================================================
 
 # PERSONA BUSINESS DISTRIBUTION INTERFACE
@@ -13135,9 +13408,332 @@ prepared_by: Zero
 - sync retry action
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/010.engine/1200100001_PERSONA_ENGINE_IMPLEMENTATION.md
+# ============================================================
 
 # ============================================================
-# FILE: 120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
+# PERSONA ENGINE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines implementation structure of Persona Engine.
+
+# COMPONENTS
+
+EngineCoordinator
+EventReceiver
+ContextResolver
+ReasoningProcessor
+DecisionProcessor
+BehaviorDispatcher
+MemoryWriter
+StateSynchronizer
+
+# EXECUTION LOOP
+
+receive event
+→ resolve context
+→ run reasoning
+→ generate decision
+→ dispatch behavior
+→ write memory
+→ update state
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/020.cognition/1200200001_PERSONA_COGNITION_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA COGNITION IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines cognition module implementation.
+
+# COMPONENTS
+
+PerceptionProcessor
+AttentionResolver
+ReasoningProcessor
+DecisionEvaluator
+PlanningSupport
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/030.behavior/1200300001_PERSONA_BEHAVIOR_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA BEHAVIOR IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines behavior execution modules.
+
+# COMPONENTS
+
+BehaviorSelector
+ConstraintChecker
+ActionDispatcher
+TaskExecutor
+BehaviorResultEmitter
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md
+# ============================================================
+
+# PERSONA EXTERNAL RELEASE SPEC
+
+status: canonical
+layer: implementation
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## PURPOSE
+Specify implementation behavior for external release issuance.
+
+## REQUIREMENTS
+- deterministic release code
+- signature-ready payload
+- revocation support
+- mirrorable metadata export
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400002_PERSONA_LICENSE_SPEC.md
+# ============================================================
+
+# PERSONA LICENSE SPEC
+
+status: canonical
+layer: implementation
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## REQUIREMENTS
+- explicit license code
+- effective period support
+- scope support
+- revocation support
+- transferability flag
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400003_PERSONA_ACCESS_GRANT_SPEC.md
+# ============================================================
+
+# PERSONA ACCESS GRANT SPEC
+
+status: canonical
+layer: implementation
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## REQUIREMENTS
+- holder resolution
+- access scope resolution
+- expiration enforcement
+- revocation enforcement
+- mirrorable current state
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400004_PERSONA_TRANSFER_SPEC.md
+# ============================================================
+
+# PERSONA TRANSFER SPEC
+
+status: canonical
+layer: implementation
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## REQUIREMENTS
+- transfer request record
+- approval decision record
+- constraint validation
+- resulting rights state update
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external/1200400005_PERSONA_PACKAGE_SPEC.md
+# ============================================================
+
+# PERSONA PACKAGE SPEC
+
+status: canonical
+layer: implementation
+domain: external_rights
+owner: Boss
+prepared_by: Zero
+
+## REQUIREMENTS
+- package metadata
+- package item manifest
+- package release state
+- package distribution visibility
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.memory/1200410001_PERSONA_MEMORY_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA MEMORY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines memory subsystem implementation.
+
+# COMPONENTS
+
+MemoryStore
+MemoryRetriever
+ExperienceRecorder
+MemoryIndexer
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/050.communication/1200500001_PERSONA_COMMUNICATION_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA COMMUNICATION IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines communication modules.
+
+# COMPONENTS
+
+MessageReceiver
+IntentResolver
+DialogueManager
+ResponseGenerator
+ResponseDispatcher
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/060.social/1200600001_PERSONA_SOCIAL_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA SOCIAL IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines social interaction modules.
+
+# COMPONENTS
+
+RelationshipManager
+TrustManager
+InteractionRecorder
+GroupManager
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/070.learning/1200700001_PERSONA_LEARNING_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA LEARNING IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines learning modules.
+
+# COMPONENTS
+
+FeedbackInterpreter
+KnowledgeUpdater
+CapabilityUpdater
+StrategyUpdater
+LearningStateManager
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/080.lifecycle/1200800001_PERSONA_LIFECYCLE_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA LIFECYCLE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines persona lifecycle handling.
+
+# COMPONENTS
+
+LifecycleManager
+GoalUpdater
+StateTransitionManager
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/090.system/1200900001_PERSONA_SYSTEM_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# PERSONA SYSTEM IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines system level modules.
+
+# COMPONENTS
+
+RuntimeCoordinator
+OperationDispatcher
+SystemLogger
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+# ============================================================
+
+# IMPLEMENTATION INDEX
+
+See:
+- 999_IMPLEMENTATION_INDEX.txt
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -13157,20 +13753,8 @@ Event signing
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200000_IMPLEMENTATION_INDEX.md
-# ============================================================
-
-# IMPLEMENTATION INDEX
-
-See:
-- 999_IMPLEMENTATION_INDEX.txt
-
-
-
-# ============================================================
-# FILE: 120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13233,9 +13817,8 @@ explicit audit logging
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13271,9 +13854,8 @@ invalid signatures must be rejected
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13316,9 +13898,8 @@ version metadata
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13358,9 +13939,8 @@ snapshot represents a point-in-time proof
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13402,9 +13982,8 @@ invalid signatures must fail execution
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13439,9 +14018,8 @@ invalid signature
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200008_PERSONA_ASSET_GENERATION_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200008_PERSONA_ASSET_GENERATION_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13478,9 +14056,8 @@ before public use.
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200009_PERSONA_CAPABILITY_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200009_PERSONA_CAPABILITY_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13525,9 +14102,8 @@ and traceable.
 
 
 
-
 # ============================================================
-# FILE: 120.implementation/1200010_PERSONA_POLICY_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200010_PERSONA_POLICY_SPEC.md
 # ============================================================
 
 # ============================================================
@@ -13571,337 +14147,295 @@ security policy
 
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/010.build/1300100001_PERSONA_BUILD_DEVELOPMENT.md
+# ============================================================
 
 # ============================================================
-# FILE: 120.implementation/010.engine/1200100001_PERSONA_ENGINE_IMPLEMENTATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA ENGINE IMPLEMENTATION
+# PERSONA BUILD DEVELOPMENT
 # ============================================================
 
 status: canonical
-layer: implementation
+layer: development
 
 # PURPOSE
-Defines implementation structure of Persona Engine.
+Defines build process of PersonaOS.
 
-# COMPONENTS
+# BUILD STEPS
 
-EngineCoordinator
-EventReceiver
-ContextResolver
-ReasoningProcessor
-DecisionProcessor
-BehaviorDispatcher
-MemoryWriter
-StateSynchronizer
+source validation
+→ dependency resolution
+→ module compilation
+→ artifact generation
 
-# EXECUTION LOOP
+# OUTPUT
 
-receive event
-→ resolve context
-→ run reasoning
-→ generate decision
-→ dispatch behavior
-→ write memory
-→ update state
-
+persona-engine
+persona-runtime
+persona-modules
 
 
 # ============================================================
-# FILE: 120.implementation/020.cognition/1200200001_PERSONA_COGNITION_IMPLEMENTATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/020.module/1300200001_PERSONA_MODULE_STRUCTURE_DEVELOPMENT.md
 # ============================================================
 
 # ============================================================
-# PERSONA COGNITION IMPLEMENTATION
+# PERSONA MODULE STRUCTURE
 # ============================================================
 
 status: canonical
-layer: implementation
+layer: development
 
-# PURPOSE
-Defines cognition module implementation.
+# MODULES
 
-# COMPONENTS
+persona-engine
+persona-cognition
+persona-behavior
+persona-memory
+persona-communication
+persona-social
+persona-learning
+persona-runtime
 
-PerceptionProcessor
-AttentionResolver
-ReasoningProcessor
-DecisionEvaluator
-PlanningSupport
-
-
-
-# ============================================================
-# FILE: 120.implementation/030.behavior/1200300001_PERSONA_BEHAVIOR_IMPLEMENTATION.md
-# ============================================================
 
 # ============================================================
-# PERSONA BEHAVIOR IMPLEMENTATION
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/030.code/1300300001_PERSONA_CODE_CONVENTION_DEVELOPMENT.md
+# ============================================================
+
+# ============================================================
+# PERSONA CODE CONVENTION
 # ============================================================
 
 status: canonical
-layer: implementation
+layer: development
 
-# PURPOSE
-Defines behavior execution modules.
+# LANGUAGE
 
-# COMPONENTS
+Java
+Kotlin
+Edge Functions
 
-BehaviorSelector
-ConstraintChecker
-ActionDispatcher
-TaskExecutor
-BehaviorResultEmitter
+# RULES
 
+Explicit state transition
+No hidden mutation
+Event based interaction
+Deterministic behavior
+
+# LOGGING
+
+All critical operations must log:
+
+operation_id
+persona_id
+timestamp
+result
 
 
 # ============================================================
-# FILE: 120.implementation/040.external/1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.external_rights/1300400001_PERSONA_EXTERNAL_RIGHTS_ROADMAP.md
 # ============================================================
 
-# PERSONA EXTERNAL RELEASE SPEC
+# PERSONA EXTERNAL RIGHTS ROADMAP
 
 status: canonical
-layer: implementation
+layer: development
 domain: external_rights
 owner: Boss
 prepared_by: Zero
 
-## PURPOSE
-Specify implementation behavior for external release issuance.
-
-## REQUIREMENTS
-- deterministic release code
-- signature-ready payload
-- revocation support
-- mirrorable metadata export
-
+## PHASES
+1. release authority
+2. license authority
+3. access grant
+4. transfer rule
+5. package publication
+6. external distribution sync
 
 
 # ============================================================
-# FILE: 120.implementation/040.external/1200400002_PERSONA_LICENSE_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.external_rights/1300400002_PERSONA_EXTERNAL_RIGHTS_DEPENDENCY_MAP.md
 # ============================================================
 
-# PERSONA LICENSE SPEC
+# PERSONA EXTERNAL RIGHTS DEPENDENCY MAP
 
 status: canonical
-layer: implementation
+layer: development
 domain: external_rights
 owner: Boss
 prepared_by: Zero
 
-## REQUIREMENTS
-- explicit license code
-- effective period support
-- scope support
-- revocation support
-- transferability flag
-
+## DEPENDENCIES
+- snapshot
+- visual asset
+- voice asset
+- access policy
+- release authority
+- external sync target
 
 
 # ============================================================
-# FILE: 120.implementation/040.external/1200400003_PERSONA_ACCESS_GRANT_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.external_rights/1300400003_PERSONA_EXTERNAL_RIGHTS_IMPLEMENTATION_ORDER.md
 # ============================================================
 
-# PERSONA ACCESS GRANT SPEC
+# PERSONA EXTERNAL RIGHTS IMPLEMENTATION ORDER
 
 status: canonical
-layer: implementation
+layer: development
 domain: external_rights
 owner: Boss
 prepared_by: Zero
 
-## REQUIREMENTS
-- holder resolution
-- access scope resolution
-- expiration enforcement
-- revocation enforcement
-- mirrorable current state
-
+## ORDER
+1. models
+2. architecture
+3. runtime
+4. operations
+5. external sync
+6. platform integration validation
 
 
 # ============================================================
-# FILE: 120.implementation/040.external/1200400004_PERSONA_TRANSFER_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.test/1300410001_PERSONA_TEST_ARCHITECTURE_DEVELOPMENT.md
 # ============================================================
 
-# PERSONA TRANSFER SPEC
+# ============================================================
+# PERSONA TEST ARCHITECTURE
+# ============================================================
 
 status: canonical
-layer: implementation
-domain: external_rights
+layer: development
+
+# TEST TYPES
+
+unit test
+integration test
+runtime test
+behavior simulation
+
+# PURPOSE
+
+Ensure stability of persona cognition,
+behavior and memory subsystems.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/050.deployment/1300500001_PERSONA_DEPLOYMENT_DEVELOPMENT.md
+# ============================================================
+
+# ============================================================
+# PERSONA DEPLOYMENT DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+
+# PURPOSE
+Defines deployment of PersonaOS components.
+
+# TARGET
+
+Android applications
+Server runtime
+Edge functions
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.ci/1300600001_PERSONA_CI_PIPELINE_DEVELOPMENT.md
+# ============================================================
+
+# ============================================================
+# PERSONA CI PIPELINE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+
+# PIPELINE
+
+commit
+→ build
+→ test
+→ artifact validation
+→ deployment candidate
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610001_PERSONA_OUTBOX_IMPLEMENTATION_ORDER.md
+# ============================================================
+
+# PERSONA OUTBOX IMPLEMENTATION ORDER
+
+status: canonical
+layer: development
+domain: integration
 owner: Boss
 prepared_by: Zero
 
-## REQUIREMENTS
-- transfer request record
-- approval decision record
-- constraint validation
-- resulting rights state update
-
+## ORDER
+1. outbox model
+2. event contract
+3. dispatcher runtime
+4. retry handling
+5. downstream consumer validation
 
 
 # ============================================================
-# FILE: 120.implementation/040.external/1200400005_PERSONA_PACKAGE_SPEC.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration/1300610002_PERSONA_GROWTH_SYNC_IMPLEMENTATION_ORDER.md
 # ============================================================
 
-# PERSONA PACKAGE SPEC
+# PERSONA GROWTH SYNC IMPLEMENTATION ORDER
 
 status: canonical
-layer: implementation
-domain: external_rights
+layer: development
+domain: integration
 owner: Boss
 prepared_by: Zero
 
-## REQUIREMENTS
-- package metadata
-- package item manifest
-- package release state
-- package distribution visibility
-
-
-
-# ============================================================
-# FILE: 120.implementation/040.memory/1200410001_PERSONA_MEMORY_IMPLEMENTATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA MEMORY IMPLEMENTATION
-# ============================================================
-
-status: canonical
-layer: implementation
-
-# PURPOSE
-Defines memory subsystem implementation.
-
-# COMPONENTS
-
-MemoryStore
-MemoryRetriever
-ExperienceRecorder
-MemoryIndexer
-
+## ORDER
+1. inbox model
+2. result contract
+3. consume runtime
+4. flow
+5. policy
+6. operation
+7. outbox verification
 
 
 # ============================================================
-# FILE: 120.implementation/050.communication/1200500001_PERSONA_COMMUNICATION_IMPLEMENTATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/070.monitoring/1300700001_PERSONA_RUNTIME_MONITORING_DEVELOPMENT.md
 # ============================================================
 
 # ============================================================
-# PERSONA COMMUNICATION IMPLEMENTATION
+# PERSONA RUNTIME MONITORING DEVELOPMENT
 # ============================================================
 
 status: canonical
-layer: implementation
+layer: development
 
 # PURPOSE
-Defines communication modules.
+Defines monitoring of persona runtime.
 
-# COMPONENTS
+# METRICS
 
-MessageReceiver
-IntentResolver
-DialogueManager
-ResponseGenerator
-ResponseDispatcher
-
+event processing latency
+decision accuracy
+memory usage
+behavior execution success rate
 
 
 # ============================================================
-# FILE: 120.implementation/060.social/1200600001_PERSONA_SOCIAL_IMPLEMENTATION.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300000_DEVELOPMENT_INDEX.md
 # ============================================================
 
-# ============================================================
-# PERSONA SOCIAL IMPLEMENTATION
-# ============================================================
+# DEVELOPMENT INDEX
 
-status: canonical
-layer: implementation
-
-# PURPOSE
-Defines social interaction modules.
-
-# COMPONENTS
-
-RelationshipManager
-TrustManager
-InteractionRecorder
-GroupManager
-
+See:
+- 999_DEVELOPMENT_INDEX.txt
 
 
 # ============================================================
-# FILE: 120.implementation/070.learning/1200700001_PERSONA_LEARNING_IMPLEMENTATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA LEARNING IMPLEMENTATION
-# ============================================================
-
-status: canonical
-layer: implementation
-
-# PURPOSE
-Defines learning modules.
-
-# COMPONENTS
-
-FeedbackInterpreter
-KnowledgeUpdater
-CapabilityUpdater
-StrategyUpdater
-LearningStateManager
-
-
-
-# ============================================================
-# FILE: 120.implementation/080.lifecycle/1200800001_PERSONA_LIFECYCLE_IMPLEMENTATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA LIFECYCLE IMPLEMENTATION
-# ============================================================
-
-status: canonical
-layer: implementation
-
-# PURPOSE
-Defines persona lifecycle handling.
-
-# COMPONENTS
-
-LifecycleManager
-GoalUpdater
-StateTransitionManager
-
-
-
-# ============================================================
-# FILE: 120.implementation/090.system/1200900001_PERSONA_SYSTEM_IMPLEMENTATION.md
-# ============================================================
-
-# ============================================================
-# PERSONA SYSTEM IMPLEMENTATION
-# ============================================================
-
-status: canonical
-layer: implementation
-
-# PURPOSE
-Defines system level modules.
-
-# COMPONENTS
-
-RuntimeCoordinator
-OperationDispatcher
-SystemLogger
-
-
-
-# ============================================================
-# FILE: 130.development/1300001_DEVELOPMENT_OVERVIEW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300001_DEVELOPMENT_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -13954,20 +14488,8 @@ Controlled production deployment.
 
 
 
-
 # ============================================================
-# FILE: 130.development/1300000_DEVELOPMENT_INDEX.md
-# ============================================================
-
-# DEVELOPMENT INDEX
-
-See:
-- 999_DEVELOPMENT_INDEX.txt
-
-
-
-# ============================================================
-# FILE: 130.development/1300002_EDGE_DEVELOPMENT_GUIDE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300002_EDGE_DEVELOPMENT_GUIDE.md
 # ============================================================
 
 # ============================================================
@@ -14014,9 +14536,8 @@ never mutate state silently
 
 
 
-
 # ============================================================
-# FILE: 130.development/1300003_DATABASE_MIGRATION_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300003_DATABASE_MIGRATION_POLICY.md
 # ============================================================
 
 # ============================================================
@@ -14055,9 +14576,8 @@ Dropping critical tables without migration plan.
 
 
 
-
 # ============================================================
-# FILE: 130.development/1300004_TESTING_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300004_TESTING_POLICY.md
 # ============================================================
 
 # ============================================================
@@ -14096,9 +14616,8 @@ must be testable.
 
 
 
-
 # ============================================================
-# FILE: 130.development/1300005_RELEASE_POLICY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300005_RELEASE_POLICY.md
 # ============================================================
 
 # ============================================================
@@ -14137,9 +14656,8 @@ All releases must be versioned.
 
 
 
-
 # ============================================================
-# FILE: 130.development/1300006_CODING_STANDARD.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300006_CODING_STANDARD.md
 # ============================================================
 
 # ============================================================
@@ -14184,275 +14702,189 @@ security or policy layers.
 
 
 
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/010.actor/9000100001_SOCIETY_ACTOR_MODEL.md
+# ============================================================
 
 # ============================================================
-# FILE: 130.development/010.build/1300100001_PERSONA_BUILD_DEVELOPMENT.md
-# ============================================================
-
-# ============================================================
-# PERSONA BUILD DEVELOPMENT
+# SOCIETY ACTOR MODEL
 # ============================================================
 
 status: canonical
-layer: development
+layer: society
 
 # PURPOSE
-Defines build process of PersonaOS.
+Defines actors within society.
 
-# BUILD STEPS
+# ACTOR TYPES
 
-source validation
-→ dependency resolution
-→ module compilation
-→ artifact generation
+persona
+group
+organization
+institution
+state
 
-# OUTPUT
-
-persona-engine
-persona-runtime
-persona-modules
-
+# DESCRIPTION
+Actors represent entities that
+participate in social interaction.
 
 
 # ============================================================
-# FILE: 130.development/020.module/1300200001_PERSONA_MODULE_STRUCTURE_DEVELOPMENT.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/020.relationship/9000200001_SOCIETY_RELATIONSHIP_MODEL.md
 # ============================================================
 
 # ============================================================
-# PERSONA MODULE STRUCTURE
+# SOCIETY RELATIONSHIP MODEL
 # ============================================================
 
 status: canonical
-layer: development
-
-# MODULES
-
-persona-engine
-persona-cognition
-persona-behavior
-persona-memory
-persona-communication
-persona-social
-persona-learning
-persona-runtime
-
-
-
-# ============================================================
-# FILE: 130.development/030.code/1300300001_PERSONA_CODE_CONVENTION_DEVELOPMENT.md
-# ============================================================
-
-# ============================================================
-# PERSONA CODE CONVENTION
-# ============================================================
-
-status: canonical
-layer: development
-
-# LANGUAGE
-
-Java
-Kotlin
-Edge Functions
-
-# RULES
-
-Explicit state transition
-No hidden mutation
-Event based interaction
-Deterministic behavior
-
-# LOGGING
-
-All critical operations must log:
-
-operation_id
-persona_id
-timestamp
-result
-
-
-
-# ============================================================
-# FILE: 130.development/040.external_rights/1300400001_PERSONA_EXTERNAL_RIGHTS_ROADMAP.md
-# ============================================================
-
-# PERSONA EXTERNAL RIGHTS ROADMAP
-
-status: canonical
-layer: development
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## PHASES
-1. release authority
-2. license authority
-3. access grant
-4. transfer rule
-5. package publication
-6. external distribution sync
-
-
-
-# ============================================================
-# FILE: 130.development/040.external_rights/1300400002_PERSONA_EXTERNAL_RIGHTS_DEPENDENCY_MAP.md
-# ============================================================
-
-# PERSONA EXTERNAL RIGHTS DEPENDENCY MAP
-
-status: canonical
-layer: development
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## DEPENDENCIES
-- snapshot
-- visual asset
-- voice asset
-- access policy
-- release authority
-- external sync target
-
-
-
-# ============================================================
-# FILE: 130.development/040.external_rights/1300400003_PERSONA_EXTERNAL_RIGHTS_IMPLEMENTATION_ORDER.md
-# ============================================================
-
-# PERSONA EXTERNAL RIGHTS IMPLEMENTATION ORDER
-
-status: canonical
-layer: development
-domain: external_rights
-owner: Boss
-prepared_by: Zero
-
-## ORDER
-1. models
-2. architecture
-3. runtime
-4. operations
-5. external sync
-6. platform integration validation
-
-
-
-# ============================================================
-# FILE: 130.development/040.test/1300410001_PERSONA_TEST_ARCHITECTURE_DEVELOPMENT.md
-# ============================================================
-
-# ============================================================
-# PERSONA TEST ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: development
-
-# TEST TYPES
-
-unit test
-integration test
-runtime test
-behavior simulation
+layer: society
 
 # PURPOSE
+Defines relationships between actors.
 
-Ensure stability of persona cognition,
-behavior and memory subsystems.
+# RELATIONS
 
+friendship
+alliance
+competition
+conflict
+hierarchy
 
 
 # ============================================================
-# FILE: 130.development/050.deployment/1300500001_PERSONA_DEPLOYMENT_DEVELOPMENT.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/030.organization/9000300001_SOCIETY_ORGANIZATION_MODEL.md
 # ============================================================
 
 # ============================================================
-# PERSONA DEPLOYMENT DEVELOPMENT
+# SOCIETY ORGANIZATION MODEL
 # ============================================================
 
 status: canonical
-layer: development
+layer: society
 
 # PURPOSE
-Defines deployment of PersonaOS components.
+Defines social organizations.
 
-# TARGET
+# TYPES
 
-Android applications
-Server runtime
-Edge functions
-
-
-
-# ============================================================
-# FILE: 130.development/060.ci/1300600001_PERSONA_CI_PIPELINE_DEVELOPMENT.md
-# ============================================================
-
-# ============================================================
-# PERSONA CI PIPELINE DEVELOPMENT
-# ============================================================
-
-status: canonical
-layer: development
-
-# PIPELINE
-
-commit
-→ build
-→ test
-→ artifact validation
-→ deployment candidate
-
+company
+guild
+government
+community
 
 
 # ============================================================
-# FILE: 130.development/060.integration/1300610001_PERSONA_OUTBOX_IMPLEMENTATION_ORDER.md
-# ============================================================
-
-# PERSONA OUTBOX IMPLEMENTATION ORDER
-
-status: canonical
-layer: development
-domain: integration
-owner: Boss
-prepared_by: Zero
-
-## ORDER
-1. outbox model
-2. event contract
-3. dispatcher runtime
-4. retry handling
-5. downstream consumer validation
-
-
-
-# ============================================================
-# FILE: 130.development/070.monitoring/1300700001_PERSONA_RUNTIME_MONITORING_DEVELOPMENT.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/040.economy/9000400001_SOCIETY_ECONOMY_MODEL.md
 # ============================================================
 
 # ============================================================
-# PERSONA RUNTIME MONITORING DEVELOPMENT
+# SOCIETY ECONOMY MODEL
 # ============================================================
 
 status: canonical
-layer: development
+layer: society
 
 # PURPOSE
-Defines monitoring of persona runtime.
+Defines economic interactions.
 
-# METRICS
+# ELEMENTS
 
-event processing latency
-decision accuracy
-memory usage
-behavior execution success rate
-
+resource
+production
+exchange
+consumption
 
 
 # ============================================================
-# FILE: 900.society/9000001_SOCIETY_LAYER_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/050.governance/9000500001_SOCIETY_GOVERNANCE_MODEL.md
+# ============================================================
+
+# ============================================================
+# SOCIETY GOVERNANCE MODEL
+# ============================================================
+
+status: canonical
+layer: society
+
+# PURPOSE
+Defines governance structures.
+
+# ELEMENTS
+
+rules
+authority
+decision
+policy
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/060.culture/9000600001_SOCIETY_CULTURE_MODEL.md
+# ============================================================
+
+# ============================================================
+# SOCIETY CULTURE MODEL
+# ============================================================
+
+status: canonical
+layer: society
+
+# PURPOSE
+Defines culture and shared values.
+
+# ELEMENTS
+
+belief
+tradition
+norm
+symbol
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/070.event/9000700001_SOCIETY_EVENT_MODEL.md
+# ============================================================
+
+# ============================================================
+# SOCIETY EVENT MODEL
+# ============================================================
+
+status: canonical
+layer: society
+
+# PURPOSE
+Defines social events.
+
+# TYPES
+
+interaction
+transaction
+conflict
+cooperation
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/080.history/9000800001_SOCIETY_HISTORY_MODEL.md
+# ============================================================
+
+# ============================================================
+# SOCIETY HISTORY MODEL
+# ============================================================
+
+status: canonical
+layer: society
+
+# PURPOSE
+Defines historical records.
+
+# ELEMENTS
+
+event_record
+timeline
+civilization_memory
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/9000001_SOCIETY_LAYER_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -14525,198 +14957,205 @@ network position
 
 
 
-
 # ============================================================
-# FILE: 900.society/010.actor/9000100001_SOCIETY_ACTOR_MODEL.md
-# ============================================================
-
-# ============================================================
-# SOCIETY ACTOR MODEL
-# ============================================================
-
-status: canonical
-layer: society
-
-# PURPOSE
-Defines actors within society.
-
-# ACTOR TYPES
-
-persona
-group
-organization
-institution
-state
-
-# DESCRIPTION
-Actors represent entities that
-participate in social interaction.
-
-
-
-# ============================================================
-# FILE: 900.society/020.relationship/9000200001_SOCIETY_RELATIONSHIP_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/010.state/9100100001_CIVILIZATION_STATE_MODEL.md
 # ============================================================
 
 # ============================================================
-# SOCIETY RELATIONSHIP MODEL
+# CIVILIZATION STATE MODEL
 # ============================================================
 
 status: canonical
-layer: society
+layer: civilization
 
 # PURPOSE
-Defines relationships between actors.
+Defines political state entities.
 
-# RELATIONS
+# ELEMENTS
 
-friendship
-alliance
-competition
-conflict
-hierarchy
-
-
-
-# ============================================================
-# FILE: 900.society/030.organization/9000300001_SOCIETY_ORGANIZATION_MODEL.md
-# ============================================================
-
-# ============================================================
-# SOCIETY ORGANIZATION MODEL
-# ============================================================
-
-status: canonical
-layer: society
-
-# PURPOSE
-Defines social organizations.
-
-# TYPES
-
-company
-guild
+territory
 government
-community
-
-
-
-# ============================================================
-# FILE: 900.society/040.economy/9000400001_SOCIETY_ECONOMY_MODEL.md
-# ============================================================
-
-# ============================================================
-# SOCIETY ECONOMY MODEL
-# ============================================================
-
-status: canonical
-layer: society
-
-# PURPOSE
-Defines economic interactions.
-
-# ELEMENTS
-
-resource
-production
-exchange
-consumption
-
-
-
-# ============================================================
-# FILE: 900.society/050.governance/9000500001_SOCIETY_GOVERNANCE_MODEL.md
-# ============================================================
-
-# ============================================================
-# SOCIETY GOVERNANCE MODEL
-# ============================================================
-
-status: canonical
-layer: society
-
-# PURPOSE
-Defines governance structures.
-
-# ELEMENTS
-
-rules
 authority
-decision
-policy
-
+population
 
 
 # ============================================================
-# FILE: 900.society/060.culture/9000600001_SOCIETY_CULTURE_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/020.law/9100200001_CIVILIZATION_LAW_MODEL.md
 # ============================================================
 
 # ============================================================
-# SOCIETY CULTURE MODEL
+# CIVILIZATION LAW MODEL
 # ============================================================
 
 status: canonical
-layer: society
+layer: civilization
 
 # PURPOSE
-Defines culture and shared values.
+Defines legal systems.
+
+# ELEMENTS
+
+law
+regulation
+court
+enforcement
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/030.economy/9100300001_CIVILIZATION_ECONOMY_MODEL.md
+# ============================================================
+
+# ============================================================
+# CIVILIZATION ECONOMY MODEL
+# ============================================================
+
+status: canonical
+layer: civilization
+
+# PURPOSE
+Defines macro economic systems.
+
+# ELEMENTS
+
+market
+currency
+trade
+production
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/040.war/9100400001_CIVILIZATION_WAR_MODEL.md
+# ============================================================
+
+# ============================================================
+# CIVILIZATION WAR MODEL
+# ============================================================
+
+status: canonical
+layer: civilization
+
+# PURPOSE
+Defines warfare systems.
+
+# ELEMENTS
+
+military
+battle
+strategy
+conflict
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/050.religion/9100500001_CIVILIZATION_RELIGION_MODEL.md
+# ============================================================
+
+# ============================================================
+# CIVILIZATION RELIGION MODEL
+# ============================================================
+
+status: canonical
+layer: civilization
+
+# PURPOSE
+Defines religion systems.
 
 # ELEMENTS
 
 belief
-tradition
-norm
-symbol
-
-
-
-# ============================================================
-# FILE: 900.society/070.event/9000700001_SOCIETY_EVENT_MODEL.md
-# ============================================================
-
-# ============================================================
-# SOCIETY EVENT MODEL
-# ============================================================
-
-status: canonical
-layer: society
-
-# PURPOSE
-Defines social events.
-
-# TYPES
-
-interaction
-transaction
-conflict
-cooperation
-
+ritual
+institution
+mythology
 
 
 # ============================================================
-# FILE: 900.society/080.history/9000800001_SOCIETY_HISTORY_MODEL.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/060.technology/9100600001_CIVILIZATION_TECHNOLOGY_MODEL.md
 # ============================================================
 
 # ============================================================
-# SOCIETY HISTORY MODEL
+# CIVILIZATION TECHNOLOGY MODEL
 # ============================================================
 
 status: canonical
-layer: society
+layer: civilization
 
 # PURPOSE
-Defines historical records.
+Defines technological development.
 
 # ELEMENTS
 
-event_record
-timeline
-civilization_memory
-
+innovation
+knowledge
+engineering
+science
 
 
 # ============================================================
-# FILE: 910.civilization/9100001_CIVILIZATION_LAYER_ARCHITECTURE.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/070.population/9100700001_CIVILIZATION_POPULATION_MODEL.md
+# ============================================================
+
+# ============================================================
+# CIVILIZATION POPULATION MODEL
+# ============================================================
+
+status: canonical
+layer: civilization
+
+# PURPOSE
+Defines population systems.
+
+# ELEMENTS
+
+birth
+death
+migration
+demographics
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/080.diplomacy/9100800001_CIVILIZATION_DIPLOMACY_MODEL.md
+# ============================================================
+
+# ============================================================
+# CIVILIZATION DIPLOMACY MODEL
+# ============================================================
+
+status: canonical
+layer: civilization
+
+# PURPOSE
+Defines relations between states.
+
+# ELEMENTS
+
+alliance
+treaty
+negotiation
+conflict resolution
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/090.civilization-history/9100900001_CIVILIZATION_HISTORY_MODEL.md
+# ============================================================
+
+# ============================================================
+# CIVILIZATION HISTORY MODEL
+# ============================================================
+
+status: canonical
+layer: civilization
+
+# PURPOSE
+Defines civilization historical memory.
+
+# ELEMENTS
+
+timeline
+historical events
+civilization evolution
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/9100001_CIVILIZATION_LAYER_ARCHITECTURE.md
 # ============================================================
 
 # ============================================================
@@ -14787,215 +15226,18 @@ economic activity
 
 
 
-
 # ============================================================
-# FILE: 910.civilization/010.state/9100100001_CIVILIZATION_STATE_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION STATE MODEL
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200000_META_INDEX.md
 # ============================================================
 
-status: canonical
-layer: civilization
+# META INDEX
 
-# PURPOSE
-Defines political state entities.
-
-# ELEMENTS
-
-territory
-government
-authority
-population
-
+See:
+- 999_META_INDEX.txt
 
 
 # ============================================================
-# FILE: 910.civilization/020.law/9100200001_CIVILIZATION_LAW_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION LAW MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines legal systems.
-
-# ELEMENTS
-
-law
-regulation
-court
-enforcement
-
-
-
-# ============================================================
-# FILE: 910.civilization/030.economy/9100300001_CIVILIZATION_ECONOMY_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION ECONOMY MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines macro economic systems.
-
-# ELEMENTS
-
-market
-currency
-trade
-production
-
-
-
-# ============================================================
-# FILE: 910.civilization/040.war/9100400001_CIVILIZATION_WAR_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION WAR MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines warfare systems.
-
-# ELEMENTS
-
-military
-battle
-strategy
-conflict
-
-
-
-# ============================================================
-# FILE: 910.civilization/050.religion/9100500001_CIVILIZATION_RELIGION_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION RELIGION MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines religion systems.
-
-# ELEMENTS
-
-belief
-ritual
-institution
-mythology
-
-
-
-# ============================================================
-# FILE: 910.civilization/060.technology/9100600001_CIVILIZATION_TECHNOLOGY_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION TECHNOLOGY MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines technological development.
-
-# ELEMENTS
-
-innovation
-knowledge
-engineering
-science
-
-
-
-# ============================================================
-# FILE: 910.civilization/070.population/9100700001_CIVILIZATION_POPULATION_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION POPULATION MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines population systems.
-
-# ELEMENTS
-
-birth
-death
-migration
-demographics
-
-
-
-# ============================================================
-# FILE: 910.civilization/080.diplomacy/9100800001_CIVILIZATION_DIPLOMACY_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION DIPLOMACY MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines relations between states.
-
-# ELEMENTS
-
-alliance
-treaty
-negotiation
-conflict resolution
-
-
-
-# ============================================================
-# FILE: 910.civilization/090.civilization-history/9100900001_CIVILIZATION_HISTORY_MODEL.md
-# ============================================================
-
-# ============================================================
-# CIVILIZATION HISTORY MODEL
-# ============================================================
-
-status: canonical
-layer: civilization
-
-# PURPOSE
-Defines civilization historical memory.
-
-# ELEMENTS
-
-timeline
-historical events
-civilization evolution
-
-
-
-# ============================================================
-# FILE: 920.meta/9200001_META_OVERVIEW.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200001_META_OVERVIEW.md
 # ============================================================
 
 # ============================================================
@@ -15007,20 +15249,8 @@ catalogs and documentation history.
 
 
 
-
 # ============================================================
-# FILE: 920.meta/9200000_META_INDEX.md
-# ============================================================
-
-# META INDEX
-
-See:
-- 999_META_INDEX.txt
-
-
-
-# ============================================================
-# FILE: 920.meta/9200002_PERSONA_OS_DEPENDENCY_MAP.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200002_PERSONA_OS_DEPENDENCY_MAP.md
 # ============================================================
 
 # ============================================================
@@ -15109,9 +15339,8 @@ External Applications
 
 
 
-
 # ============================================================
-# FILE: 920.meta/9200003_PERSONA_OS_EVENT_CATALOG.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200003_PERSONA_OS_EVENT_CATALOG.md
 # ============================================================
 
 # ============================================================
@@ -15220,9 +15449,8 @@ actor_id
 
 
 
-
 # ============================================================
-# FILE: 920.meta/9200004_PERSONA_OS_CHANGELOG.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200004_PERSONA_OS_CHANGELOG.md
 # ============================================================
 
 # ============================================================
@@ -15273,9 +15501,8 @@ Initial PersonaOS design structure.
 
 
 
-
 # ============================================================
-# FILE: 920.meta/9200005_PERSONA_OS_DESIGN_HISTORY.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200005_PERSONA_OS_DESIGN_HISTORY.md
 # ============================================================
 
 # ============================================================
@@ -15344,9 +15571,8 @@ event-driven
 
 
 
-
 # ============================================================
-# FILE: 920.meta/9200006_PERSONA_OS_FULL_ARCHITECTURE_MAP.md
+# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200006_PERSONA_OS_FULL_ARCHITECTURE_MAP.md
 # ============================================================
 
 # ============================================================

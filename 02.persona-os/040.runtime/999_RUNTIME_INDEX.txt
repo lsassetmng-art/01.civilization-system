@@ -22,3 +22,5 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400016_PERSONA_SOCIAL_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400017_PERSONA_STATE_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600001_PERSONA_EVENT_OUTBOX_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration/0400600002_PERSONA_GROWTH_REQUEST_CONSUME_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/999_RUNTIME_INDEX.txt

@@ -6,3 +6,6 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400006_PERSONA_DISTRIBUTION_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500003_BUSINESS_TO_PERSONA_GROWTH_APPLY_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/999_FLOW_INDEX.txt

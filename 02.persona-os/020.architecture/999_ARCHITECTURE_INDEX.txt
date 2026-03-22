@@ -41,3 +41,5 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510002_PERSONA_DEPENDENCY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security/0200510003_PERSONA_SECURITY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600001_PERSONA_EVENT_OUTBOX_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration/0200600002_PERSONA_INBOUND_GROWTH_APPLY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/999_ARCHITECTURE_INDEX.txt

@@ -1,5 +1,5 @@
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/010.runtime/1000100001_BUSINESS_RUNTIME_INFRASTRUCTURE.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/020.storage/1000200001_BUSINESS_STORAGE_INFRASTRUCTURE.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/030.integration/1000300001_BUSINESS_INTEGRATION_INFRASTRUCTURE.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/040.operations/1000400001_BUSINESS_OPERATIONAL_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/010.runtime/1100001_BUSINESS_RUNTIME_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/020.storage/1100002_BUSINESS_STORAGE_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/030.integration/1100003_BUSINESS_INTEGRATION_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/040.operations/1100004_BUSINESS_OPERATIONAL_INFRASTRUCTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/999_INFRASTRUCTURE_INDEX.txt

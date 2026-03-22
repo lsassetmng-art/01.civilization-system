@@ -7,3 +7,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/070.event/9000700001_SOCIETY_EVENT_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/080.history/9000800001_SOCIETY_HISTORY_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/9000001_SOCIETY_LAYER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/999_SOCIETY_INDEX.txt

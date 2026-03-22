@@ -6,3 +6,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100005_PERSONA_DEATH_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100006_PERSONA_REINCARNATION_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100007_PERSONA_WORLD_RELATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/999_CONSTITUTION_INDEX.txt

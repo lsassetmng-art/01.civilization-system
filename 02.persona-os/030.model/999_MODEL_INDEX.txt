@@ -136,6 +136,8 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs/0301210005_decision_log.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300004_persona_growth_result_contract.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310001_simulation.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310002_scenario.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation/0301310003_simulation_event.md
@@ -158,3 +160,4 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog/0300200005_PERSONA_KERNEL_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/030.binding/0300300001_PERSONA_CIVILIZATION_MODEL_BOUNDARY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/0300000_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/999_MODEL_INDEX.txt

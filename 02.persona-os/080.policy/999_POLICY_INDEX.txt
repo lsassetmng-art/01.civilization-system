@@ -5,3 +5,5 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400005_PERSONA_DISTRIBUTION_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business/0800500001_PERSONA_BUSINESS_INTERFACE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600002_PERSONA_GROWTH_APPLY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/999_POLICY_INDEX.txt
