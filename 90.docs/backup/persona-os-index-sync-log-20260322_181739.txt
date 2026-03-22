@@ -1,0 +1,22 @@
+RENAMED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/10_CONSTITUTION_INDEX.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/0100000_CONSTITUTION_INDEX.md
+RENAMED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/20_ARCHITECTURE_INDEX.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/0200000_ARCHITECTURE_INDEX.md
+RENAMED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/30_RUNTIME_INDEX.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/0400000_RUNTIME_INDEX.md
+RENAMED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/60_OPERATIONS_INDEX.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/0700000_OPERATIONS_INDEX.md
+RENAMED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/40_IMPLEMENTATION_INDEX.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+RENAMED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/70_DEVELOPMENT_INDEX.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/1300000_DEVELOPMENT_INDEX.md
+RENAMED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/90_META_INDEX.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200000_META_INDEX.md
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution/999_CONSTITUTION_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/999_ARCHITECTURE_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/999_MODEL_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/999_RUNTIME_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/999_FLOW_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/999_OPERATIONS_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/999_POLICY_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/999_INTERFACE_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/999_IMPLEMENTATION_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/999_DEVELOPMENT_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/999_SOCIETY_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/999_CIVILIZATION_INDEX.txt
+INDEX TXT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/999_META_INDEX.txt
+REBUILT: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/000_PERSONA_OS_INDEX.md
+REBUILT index md files

@@ -1,0 +1,9 @@
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/010.actor/SOCIETY_ACTOR_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/020.relationship/SOCIETY_RELATIONSHIP_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/030.organization/SOCIETY_ORGANIZATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/040.economy/SOCIETY_ECONOMY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/050.governance/SOCIETY_GOVERNANCE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/060.culture/SOCIETY_CULTURE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/070.event/SOCIETY_EVENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/080.history/SOCIETY_HISTORY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/SOCIETY_LAYER_ARCHITECTURE.md

@@ -1,0 +1,8 @@
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/90_META_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/90_META_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/91_PERSONA_OS_DEPENDENCY_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/92_PERSONA_OS_EVENT_CATALOG.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/93_PERSONA_OS_CHANGELOG.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/94_PERSONA_OS_DESIGN_HISTORY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/95_PERSONA_OS_FULL_ARCHITECTURE_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/999_META_INDEX.txt

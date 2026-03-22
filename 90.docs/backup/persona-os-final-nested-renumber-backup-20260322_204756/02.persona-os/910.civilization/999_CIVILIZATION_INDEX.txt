@@ -1,0 +1,10 @@
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/010.state/CIVILIZATION_STATE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/020.law/CIVILIZATION_LAW_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/030.economy/CIVILIZATION_ECONOMY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/040.war/CIVILIZATION_WAR_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/050.religion/CIVILIZATION_RELIGION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/060.technology/CIVILIZATION_TECHNOLOGY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/070.population/CIVILIZATION_POPULATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/080.diplomacy/CIVILIZATION_DIPLOMACY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/090.civilization-history/CIVILIZATION_HISTORY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/CIVILIZATION_LAYER_ARCHITECTURE.md

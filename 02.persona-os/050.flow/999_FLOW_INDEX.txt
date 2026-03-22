@@ -1,9 +1,8 @@
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/041_PERSONA_EXTERNAL_RELEASE_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/042_PERSONA_LICENSE_ISSUE_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/043_PERSONA_ACCESS_GRANT_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/044_PERSONA_TRANSFER_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/045_PERSONA_PACKAGE_PUBLISH_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/046_PERSONA_DISTRIBUTION_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/051_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/052_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/999_FLOW_INDEX.txt
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400001_PERSONA_EXTERNAL_RELEASE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400002_PERSONA_LICENSE_ISSUE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400003_PERSONA_ACCESS_GRANT_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400004_PERSONA_TRANSFER_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400005_PERSONA_PACKAGE_PUBLISH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external/0500400006_PERSONA_DISTRIBUTION_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md

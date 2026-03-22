@@ -1,0 +1,8 @@
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/041_PERSONA_RELEASE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/042_PERSONA_LICENSE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/043_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/044_PERSONA_TRANSFER_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/045_PERSONA_PACKAGE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/046_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/050.business/051_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/999_INTERFACE_INDEX.txt

@@ -1,8 +1,7 @@
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/041_PERSONA_EXTERNAL_RELEASE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/042_PERSONA_LICENSE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/043_PERSONA_ACCESS_GRANT_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/044_PERSONA_TRANSFER_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/045_PERSONA_DISTRIBUTION_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business/051_PERSONA_BUSINESS_INTERFACE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/061_PERSONA_OUTBOX_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/999_POLICY_INDEX.txt
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400001_PERSONA_EXTERNAL_RELEASE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400002_PERSONA_LICENSE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400003_PERSONA_ACCESS_GRANT_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400004_PERSONA_TRANSFER_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400005_PERSONA_DISTRIBUTION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business/0800500001_PERSONA_BUSINESS_INTERFACE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
