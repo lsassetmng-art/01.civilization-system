@@ -1,0 +1,35 @@
+domain: 060_real_estate
+models: 30
+
+0001 real_estate
+0002 real_estate_property
+0003 real_estate_land
+0004 real_estate_building
+0005 real_estate_developer
+0006 real_estate_investor
+0007 real_estate_market
+0008 real_estate_price
+0009 real_estate_transaction
+0010 real_estate_listing
+
+0011 real_estate_rent
+0012 real_estate_lease
+0013 real_estate_management
+0014 real_estate_valuation
+0015 real_estate_financing
+0016 real_estate_mortgage
+0017 real_estate_regulation
+0018 real_estate_policy
+0019 real_estate_monitoring
+0020 real_estate_data
+
+0021 real_estate_crisis
+0022 real_estate_bubble
+0023 real_estate_recovery
+0024 real_estate_reform
+0025 real_estate_transition
+0026 real_estate_stability
+0027 real_estate_analysis
+0028 real_estate_coordination
+0029 real_estate_system_design
+0030 real_estate_system_state

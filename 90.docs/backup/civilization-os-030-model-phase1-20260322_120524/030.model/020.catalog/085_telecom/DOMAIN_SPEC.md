@@ -1,0 +1,35 @@
+domain: 085_telecom
+models: 30
+
+0001 telecom
+0002 telecom_network
+0003 telecom_operator
+0004 telecom_service
+0005 telecom_infrastructure
+0006 telecom_station
+0007 telecom_frequency
+0008 telecom_bandwidth
+0009 telecom_capacity
+0010 telecom_traffic
+
+0011 telecom_standard
+0012 telecom_policy
+0013 telecom_regulation
+0014 telecom_governance
+0015 telecom_monitoring
+0016 telecom_data
+0017 telecom_management
+0018 telecom_operations
+0019 telecom_security
+0020 telecom_service_quality
+
+0021 telecom_crisis
+0022 telecom_outage
+0023 telecom_recovery
+0024 telecom_reform
+0025 telecom_transition
+0026 telecom_stability
+0027 telecom_coordination
+0028 telecom_analysis
+0029 telecom_system_design
+0030 telecom_system_state

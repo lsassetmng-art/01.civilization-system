@@ -1,0 +1,35 @@
+domain: 016_military
+models: 30
+
+0001 military_force
+0002 military_command
+0003 military_unit
+0004 military_personnel
+0005 military_rank
+0006 military_operation
+0007 military_strategy
+0008 military_tactics
+0009 military_logistics
+0010 military_supply
+
+0011 military_base
+0012 military_equipment
+0013 military_weapon
+0014 military_training
+0015 military_readiness
+0016 military_intelligence
+0017 military_planning
+0018 military_doctrine
+0019 military_alliance
+0020 military_mission
+
+0021 military_conflict
+0022 military_defense
+0023 military_deterrence
+0024 military_crisis
+0025 military_transition
+0026 military_reform
+0027 military_modernization
+0028 military_coordination
+0029 military_stability
+0030 military_system_state

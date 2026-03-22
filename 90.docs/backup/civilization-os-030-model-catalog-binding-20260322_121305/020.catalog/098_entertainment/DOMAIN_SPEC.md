@@ -1,0 +1,35 @@
+domain: 098_entertainment
+models: 30
+
+0001 entertainment
+0002 entertainment_industry
+0003 entertainment_company
+0004 entertainment_platform
+0005 entertainment_content
+0006 entertainment_event
+0007 entertainment_market
+0008 entertainment_distribution
+0009 entertainment_audience
+0010 entertainment_service
+
+0011 entertainment_production
+0012 entertainment_program
+0013 entertainment_network
+0014 entertainment_policy
+0015 entertainment_regulation
+0016 entertainment_governance
+0017 entertainment_monitoring
+0018 entertainment_data
+0019 entertainment_management
+0020 entertainment_operations
+
+0021 entertainment_crisis
+0022 entertainment_disruption
+0023 entertainment_recovery
+0024 entertainment_reform
+0025 entertainment_transition
+0026 entertainment_stability
+0027 entertainment_coordination
+0028 entertainment_analysis
+0029 entertainment_system_design
+0030 entertainment_system_state

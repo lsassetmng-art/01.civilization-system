@@ -1,0 +1,28 @@
+# MODEL BOOK
+# COMMUNICATIONS DOMAIN
+
+084001 communication_system
+084002 communication_network
+084003 communication_platform
+084004 communication_protocol
+084005 communication_channel
+084006 communication_service
+084007 communication_operator
+084008 communication_infrastructure
+084009 communication_standard
+084010 communication_regulation
+084011 communication_policy
+084012 communication_governance
+084013 communication_security
+084014 communication_monitoring
+084015 communication_data
+084016 communication_exchange
+084017 communication_flow
+084018 communication_analysis
+084019 communication_metric
+084020 communication_indicator
+084021 communication_dashboard
+084022 communication_program
+084023 communication_program_state
+084024 communication_network_state
+084025 communication_system_state

@@ -1,0 +1,28 @@
+# MODEL BOOK
+# OCEAN TRADE DOMAIN
+
+105001 ocean_trade_system
+105002 ocean_trade_market
+105003 ocean_trade_route
+105004 ocean_trade_port
+105005 ocean_trade_company
+105006 ocean_trade_network
+105007 ocean_trade_platform
+105008 ocean_trade_infrastructure
+105009 ocean_trade_operation
+105010 ocean_trade_policy
+105011 ocean_trade_regulation
+105012 ocean_trade_governance
+105013 ocean_trade_monitoring
+105014 ocean_trade_data
+105015 ocean_trade_analysis
+105016 ocean_trade_metric
+105017 ocean_trade_indicator
+105018 ocean_trade_dashboard
+105019 ocean_trade_program
+105020 ocean_trade_program_state
+105021 ocean_trade_market_state
+105022 ocean_trade_network_state
+105023 ocean_trade_cluster
+105024 ocean_trade_operation_state
+105025 ocean_trade_system_state

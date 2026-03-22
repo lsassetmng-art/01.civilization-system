@@ -1,0 +1,35 @@
+domain: 041_private_equity
+models: 30
+
+0001 private_equity
+0002 private_equity_firm
+0003 private_equity_fund
+0004 private_equity_investor
+0005 private_equity_deal
+0006 private_equity_target
+0007 leveraged_buyout
+0008 growth_equity
+0009 buyout_fund
+0010 private_equity_portfolio
+
+0011 private_equity_capital
+0012 private_equity_commitment
+0013 private_equity_drawdown
+0014 private_equity_exit
+0015 private_equity_valuation
+0016 private_equity_return
+0017 private_equity_risk
+0018 private_equity_strategy
+0019 private_equity_governance
+0020 private_equity_management
+
+0021 private_equity_regulation
+0022 private_equity_compliance
+0023 private_equity_monitoring
+0024 private_equity_crisis
+0025 private_equity_recovery
+0026 private_equity_transition
+0027 private_equity_stability
+0028 private_equity_data
+0029 private_equity_system_design
+0030 private_equity_system_state

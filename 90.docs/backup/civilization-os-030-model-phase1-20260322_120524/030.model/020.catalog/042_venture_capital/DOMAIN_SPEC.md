@@ -1,0 +1,35 @@
+domain: 042_venture_capital
+models: 30
+
+0001 venture_capital
+0002 venture_capital_firm
+0003 venture_capital_fund
+0004 venture_capital_investor
+0005 venture_capital_deal
+0006 venture_capital_portfolio
+0007 seed_investment
+0008 early_stage_investment
+0009 growth_stage_investment
+0010 venture_round
+
+0011 venture_equity
+0012 venture_valuation
+0013 venture_term_sheet
+0014 venture_exit
+0015 venture_return
+0016 venture_risk
+0017 venture_strategy
+0018 venture_network
+0019 venture_ecosystem
+0020 venture_support
+
+0021 venture_regulation
+0022 venture_compliance
+0023 venture_monitoring
+0024 venture_crisis
+0025 venture_recovery
+0026 venture_transition
+0027 venture_stability
+0028 venture_data
+0029 venture_system_design
+0030 venture_system_state

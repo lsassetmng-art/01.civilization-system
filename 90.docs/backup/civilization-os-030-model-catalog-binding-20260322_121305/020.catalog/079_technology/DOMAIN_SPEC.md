@@ -1,0 +1,35 @@
+domain: 079_technology
+models: 30
+
+0001 technology
+0002 technology_system
+0003 technology_platform
+0004 technology_infrastructure
+0005 technology_standard
+0006 technology_development
+0007 technology_transfer
+0008 technology_adoption
+0009 technology_diffusion
+0010 technology_lifecycle
+
+0011 technology_innovation
+0012 technology_company
+0013 technology_market
+0014 technology_policy
+0015 technology_regulation
+0016 technology_governance
+0017 technology_monitoring
+0018 technology_data
+0019 technology_management
+0020 technology_strategy
+
+0021 technology_crisis
+0022 technology_disruption
+0023 technology_recovery
+0024 technology_reform
+0025 technology_transition
+0026 technology_stability
+0027 technology_coordination
+0028 technology_analysis
+0029 technology_system_design
+0030 technology_system_state

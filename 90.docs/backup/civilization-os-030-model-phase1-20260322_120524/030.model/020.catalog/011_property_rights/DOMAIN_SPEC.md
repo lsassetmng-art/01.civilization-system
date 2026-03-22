@@ -1,0 +1,35 @@
+domain: 011_property_rights
+models: 30
+
+0001 property
+0002 property_owner
+0003 property_title
+0004 property_registration
+0005 property_transfer
+0006 property_right
+0007 property_use
+0008 property_restriction
+0009 property_tax
+0010 property_valuation
+
+0011 land_property
+0012 building_property
+0013 intellectual_property
+0014 mineral_right
+0015 water_right
+0016 air_right
+0017 property_lease
+0018 property_mortgage
+0019 property_inheritance
+0020 property_dispute
+
+0021 property_regulation
+0022 property_compliance
+0023 property_enforcement
+0024 property_reform
+0025 property_market
+0026 property_registry_system
+0027 property_policy
+0028 property_conflict
+0029 property_transition
+0030 property_system_state

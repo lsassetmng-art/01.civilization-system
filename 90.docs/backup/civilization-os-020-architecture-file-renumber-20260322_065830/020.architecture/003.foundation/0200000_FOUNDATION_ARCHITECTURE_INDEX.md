@@ -1,0 +1,14 @@
+# ============================================================
+# CIVILIZATION OS FOUNDATION ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+folder: 020.architecture/020.foundation
+
+0200000_FOUNDATION_ARCHITECTURE_INDEX.md
+0200001_FOUNDATION_OVERVIEW_ARCHITECTURE.md
+0200002_WORLD_FOUNDATION_BOUNDARY_ARCHITECTURE.md
+0200003_CORE_ENTITY_LIFECYCLE_ARCHITECTURE.md
+0200004_CANONICAL_ID_ARCHITECTURE.md
+0200005_NAMESPACE_ARCHITECTURE.md

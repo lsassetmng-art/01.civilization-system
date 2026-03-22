@@ -1,0 +1,35 @@
+domain: 048_customs
+models: 30
+
+0001 customs
+0002 customs_authority
+0003 customs_officer
+0004 customs_clearance
+0005 customs_declaration
+0006 customs_duty
+0007 customs_tariff
+0008 customs_control
+0009 customs_inspection
+0010 customs_checkpoint
+
+0011 customs_document
+0012 customs_regulation
+0013 customs_compliance
+0014 customs_enforcement
+0015 customs_monitoring
+0016 customs_risk
+0017 customs_security
+0018 customs_data
+0019 customs_system
+0020 customs_record
+
+0021 customs_crisis
+0022 customs_recovery
+0023 customs_reform
+0024 customs_transition
+0025 customs_stability
+0026 customs_coordination
+0027 customs_management
+0028 customs_analysis
+0029 customs_system_design
+0030 customs_system_state

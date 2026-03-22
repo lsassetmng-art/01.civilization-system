@@ -1,0 +1,35 @@
+domain: 108_standards
+models: 30
+
+0001 standards_system
+0002 standards_structure
+0003 standards_network
+0004 standards_institution
+0005 standards_actor
+0006 standards_organization
+0007 standards_process
+0008 standards_operation
+0009 standards_service
+0010 standards_market
+
+0011 standards_policy
+0012 standards_regulation
+0013 standards_governance
+0014 standards_management
+0015 standards_coordination
+0016 standards_monitoring
+0017 standards_data
+0018 standards_analysis
+0019 standards_infrastructure
+0020 standards_platform
+
+0021 standards_crisis
+0022 standards_disruption
+0023 standards_recovery
+0024 standards_reform
+0025 standards_transition
+0026 standards_stability
+0027 standards_risk
+0028 standards_capacity
+0029 standards_system_design
+0030 standards_system_state

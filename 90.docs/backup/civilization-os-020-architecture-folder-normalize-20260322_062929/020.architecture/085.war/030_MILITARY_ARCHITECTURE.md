@@ -1,0 +1,3 @@
+# MILITARY
+
+Defines armed forces

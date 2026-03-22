@@ -1,0 +1,28 @@
+# MODEL BOOK
+# INTERNET DOMAIN
+
+086001 internet_system
+086002 internet_network
+086003 internet_protocol
+086004 internet_platform
+086005 internet_service
+086006 internet_operator
+086007 internet_infrastructure
+086008 internet_exchange
+086009 internet_domain
+086010 internet_registry
+086011 internet_standard
+086012 internet_governance
+086013 internet_security
+086014 internet_monitoring
+086015 internet_data
+086016 internet_flow
+086017 internet_analysis
+086018 internet_metric
+086019 internet_indicator
+086020 internet_dashboard
+086021 internet_program
+086022 internet_program_state
+086023 internet_network_state
+086024 internet_operation
+086025 internet_system_state

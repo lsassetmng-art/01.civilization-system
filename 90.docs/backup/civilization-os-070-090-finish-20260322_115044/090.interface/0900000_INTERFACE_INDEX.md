@@ -1,0 +1,48 @@
+# ============================================================
+# CIVILIZATION OS INTERFACE INDEX
+# ============================================================
+
+status: canonical
+layer: interface
+folder: 090.interface
+owner: Boss
+prepared_by: Zero
+
+0900000_INTERFACE_INDEX.md
+0900999_INTERFACE_INDEX.txt
+
+090.interface/001.core/0900010000_CORE_INTERFACE_INDEX.md
+090.interface/001.core/0900010001_INTERFACE_OVERVIEW.md
+090.interface/001.core/0900010002_INTERFACE_PRINCIPLES.md
+
+090.interface/002.navigation/0900020000_NAVIGATION_INTERFACE_INDEX.md
+090.interface/002.navigation/0900020001_NAVIGATION_INTERFACE.md
+
+090.interface/003.player/0900030000_PLAYER_INTERFACE_INDEX.md
+090.interface/003.player/0900030001_PLAYER_INTERFACE.md
+
+090.interface/004.persona/0900040000_PERSONA_INTERFACE_INDEX.md
+090.interface/004.persona/0900040001_PERSONA_INTERFACE.md
+
+090.interface/005.education/0900050000_EDUCATION_INTERFACE_INDEX.md
+090.interface/005.education/0900050001_EDUCATION_INTERFACE.md
+
+090.interface/006.career/0900060000_CAREER_INTERFACE_INDEX.md
+090.interface/006.career/0900060001_CAREER_INTERFACE.md
+
+090.interface/007.economy/0900070000_ECONOMY_INTERFACE_INDEX.md
+090.interface/007.economy/0900070001_ECONOMY_INTERFACE.md
+
+090.interface/008.world/0900080000_WORLD_INTERFACE_INDEX.md
+090.interface/008.world/0900080001_WORLD_INTERFACE.md
+
+090.interface/009.admin/0900090000_ADMIN_INTERFACE_INDEX.md
+090.interface/009.admin/0900090001_ADMIN_INTERFACE.md
+
+090.interface/010.government/0900100000_GOVERNMENT_INTERFACE_INDEX.md
+090.interface/010.government/0900100001_GOVERNMENT_INTERFACE.md
+
+090.interface/011.meta/0900110000_META_INTERFACE_INDEX.md
+090.interface/011.meta/0900110001_META_INTERFACE.md
+
+090.interface/999.meta/0909990999_INTERFACE_INDEX.md

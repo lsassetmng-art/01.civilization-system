@@ -1,0 +1,35 @@
+domain: 072_disaster_management
+models: 30
+
+0001 disaster
+0002 disaster_event
+0003 disaster_risk
+0004 disaster_hazard
+0005 disaster_exposure
+0006 disaster_vulnerability
+0007 disaster_impact
+0008 disaster_warning
+0009 disaster_response
+0010 disaster_recovery
+
+0011 disaster_prevention
+0012 disaster_preparedness
+0013 disaster_resilience
+0014 disaster_management_system
+0015 disaster_operation
+0016 disaster_coordination
+0017 disaster_policy
+0018 disaster_regulation
+0019 disaster_monitoring
+0020 disaster_data
+
+0021 disaster_crisis
+0022 disaster_response_operation
+0023 disaster_reconstruction
+0024 disaster_reform
+0025 disaster_transition
+0026 disaster_stability
+0027 disaster_analysis
+0028 disaster_command
+0029 disaster_system_design
+0030 disaster_system_state

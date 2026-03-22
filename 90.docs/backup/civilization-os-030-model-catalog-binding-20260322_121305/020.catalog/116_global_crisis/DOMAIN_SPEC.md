@@ -1,0 +1,35 @@
+domain: 116_global_crisis
+models: 30
+
+0001 global_crisis_system
+0002 global_crisis_structure
+0003 global_crisis_network
+0004 global_crisis_institution
+0005 global_crisis_actor
+0006 global_crisis_organization
+0007 global_crisis_process
+0008 global_crisis_operation
+0009 global_crisis_service
+0010 global_crisis_market
+
+0011 global_crisis_policy
+0012 global_crisis_regulation
+0013 global_crisis_governance
+0014 global_crisis_management
+0015 global_crisis_coordination
+0016 global_crisis_monitoring
+0017 global_crisis_data
+0018 global_crisis_analysis
+0019 global_crisis_infrastructure
+0020 global_crisis_platform
+
+0021 global_crisis_crisis
+0022 global_crisis_disruption
+0023 global_crisis_recovery
+0024 global_crisis_reform
+0025 global_crisis_transition
+0026 global_crisis_stability
+0027 global_crisis_risk
+0028 global_crisis_capacity
+0029 global_crisis_system_design
+0030 global_crisis_system_state

@@ -1,0 +1,35 @@
+domain: 093_housing
+models: 30
+
+0001 housing_system
+0002 housing_unit
+0003 housing_market
+0004 housing_supply
+0005 housing_demand
+0006 housing_policy
+0007 housing_regulation
+0008 housing_development
+0009 housing_management
+0010 housing_financing
+
+0011 housing_mortgage
+0012 housing_subsidy
+0013 housing_affordability
+0014 housing_quality
+0015 housing_infrastructure
+0016 housing_planning
+0017 housing_monitoring
+0018 housing_data
+0019 housing_governance
+0020 housing_service
+
+0021 housing_crisis
+0022 housing_shortage
+0023 housing_recovery
+0024 housing_reform
+0025 housing_transition
+0026 housing_stability
+0027 housing_coordination
+0028 housing_analysis
+0029 housing_system_design
+0030 housing_system_state

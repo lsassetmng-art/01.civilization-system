@@ -1,0 +1,35 @@
+domain: 035_capital_market
+models: 30
+
+0001 capital_market
+0002 capital_market_participant
+0003 capital_market_instrument
+0004 capital_market_transaction
+0005 capital_market_price
+0006 capital_market_liquidity
+0007 capital_market_index
+0008 capital_market_exchange
+0009 capital_market_regulation
+0010 capital_market_supervision
+
+0011 primary_market
+0012 secondary_market
+0013 capital_issuance
+0014 capital_allocation
+0015 capital_flow
+0016 capital_mobility
+0017 capital_structure
+0018 capital_risk
+0019 capital_return
+0020 capital_strategy
+
+0021 capital_market_crisis
+0022 capital_market_recovery
+0023 capital_market_reform
+0024 capital_market_transition
+0025 capital_market_stability
+0026 capital_market_monitoring
+0027 capital_market_data
+0028 capital_market_analysis
+0029 capital_market_system_design
+0030 capital_market_system_state

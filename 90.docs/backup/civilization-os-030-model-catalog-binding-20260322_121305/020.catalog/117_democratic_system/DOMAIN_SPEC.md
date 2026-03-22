@@ -1,0 +1,35 @@
+domain: 117_democratic_system
+models: 30
+
+0001 democratic_system_system
+0002 democratic_system_structure
+0003 democratic_system_network
+0004 democratic_system_institution
+0005 democratic_system_actor
+0006 democratic_system_organization
+0007 democratic_system_process
+0008 democratic_system_operation
+0009 democratic_system_service
+0010 democratic_system_market
+
+0011 democratic_system_policy
+0012 democratic_system_regulation
+0013 democratic_system_governance
+0014 democratic_system_management
+0015 democratic_system_coordination
+0016 democratic_system_monitoring
+0017 democratic_system_data
+0018 democratic_system_analysis
+0019 democratic_system_infrastructure
+0020 democratic_system_platform
+
+0021 democratic_system_crisis
+0022 democratic_system_disruption
+0023 democratic_system_recovery
+0024 democratic_system_reform
+0025 democratic_system_transition
+0026 democratic_system_stability
+0027 democratic_system_risk
+0028 democratic_system_capacity
+0029 democratic_system_system_design
+0030 democratic_system_system_state

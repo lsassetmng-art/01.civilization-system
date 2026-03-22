@@ -1,0 +1,35 @@
+domain: 091_public_health
+models: 30
+
+0001 public_health_system
+0002 public_health_agency
+0003 disease_surveillance
+0004 epidemic_monitoring
+0005 outbreak_detection
+0006 vaccination_program
+0007 public_health_policy
+0008 public_health_regulation
+0009 health_promotion
+0010 health_prevention
+
+0011 epidemiology
+0012 population_health
+0013 health_risk
+0014 health_indicator
+0015 health_data
+0016 health_monitoring
+0017 health_infrastructure
+0018 health_response
+0019 health_management
+0020 health_governance
+
+0021 public_health_crisis
+0022 pandemic_event
+0023 public_health_recovery
+0024 public_health_reform
+0025 public_health_transition
+0026 public_health_stability
+0027 public_health_coordination
+0028 public_health_analysis
+0029 public_health_system_design
+0030 public_health_system_state

@@ -1,0 +1,35 @@
+domain: 050_supply_chain
+models: 30
+
+0001 supply_chain
+0002 supply_chain_network
+0003 supply_chain_node
+0004 supply_chain_flow
+0005 supply_chain_partner
+0006 supply_chain_contract
+0007 supply_chain_management
+0008 supply_chain_operation
+0009 supply_chain_strategy
+0010 supply_chain_planning
+
+0011 supply_chain_inventory
+0012 supply_chain_distribution
+0013 supply_chain_procurement
+0014 supply_chain_transport
+0015 supply_chain_risk
+0016 supply_chain_resilience
+0017 supply_chain_visibility
+0018 supply_chain_coordination
+0019 supply_chain_performance
+0020 supply_chain_capacity
+
+0021 supply_chain_crisis
+0022 supply_chain_recovery
+0023 supply_chain_reform
+0024 supply_chain_transition
+0025 supply_chain_stability
+0026 supply_chain_monitoring
+0027 supply_chain_data
+0028 supply_chain_analysis
+0029 supply_chain_system_design
+0030 supply_chain_system_state

@@ -1,0 +1,35 @@
+domain: 057_semiconductor
+models: 30
+
+0001 semiconductor
+0002 semiconductor_chip
+0003 semiconductor_design
+0004 semiconductor_fabrication
+0005 semiconductor_foundry
+0006 semiconductor_equipment
+0007 semiconductor_material
+0008 semiconductor_process
+0009 semiconductor_yield
+0010 semiconductor_supply
+
+0011 semiconductor_factory
+0012 semiconductor_engineer
+0013 semiconductor_technology
+0014 semiconductor_innovation
+0015 semiconductor_market
+0016 semiconductor_trade
+0017 semiconductor_policy
+0018 semiconductor_regulation
+0019 semiconductor_monitoring
+0020 semiconductor_data
+
+0021 semiconductor_crisis
+0022 semiconductor_shortage
+0023 semiconductor_recovery
+0024 semiconductor_reform
+0025 semiconductor_transition
+0026 semiconductor_stability
+0027 semiconductor_analysis
+0028 semiconductor_coordination
+0029 semiconductor_system_design
+0030 semiconductor_system_state

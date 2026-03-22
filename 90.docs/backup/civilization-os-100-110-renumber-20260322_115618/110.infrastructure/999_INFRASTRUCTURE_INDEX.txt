@@ -1,0 +1,13 @@
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/000.core/000_INFRASTRUCTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/010.database/010_DATABASE_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/020.storage/010_STORAGE_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/030.compute/010_COMPUTE_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/040.network/010_NETWORK_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/050.jobs/010_JOB_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/060.backup/010_BACKUP_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/070.deploy/010_DEPLOY_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/080.environment/010_ENVIRONMENT_INFRASTRUCTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/100_INFRASTRUCTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/110_INFRASTRUCTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/999.meta/999_INFRASTRUCTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/999_INFRASTRUCTURE_INDEX.txt

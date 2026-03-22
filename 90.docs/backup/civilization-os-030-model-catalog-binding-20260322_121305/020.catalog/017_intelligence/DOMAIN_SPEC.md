@@ -1,0 +1,35 @@
+domain: 017_intelligence
+models: 30
+
+0001 intelligence_system
+0002 intelligence_agency
+0003 intelligence_operation
+0004 intelligence_collection
+0005 intelligence_analysis
+0006 intelligence_report
+0007 intelligence_source
+0008 intelligence_network
+0009 intelligence_surveillance
+0010 intelligence_signal
+
+0011 intelligence_human_source
+0012 intelligence_cyber
+0013 intelligence_counterintelligence
+0014 intelligence_security
+0015 intelligence_risk
+0016 intelligence_assessment
+0017 intelligence_warning
+0018 intelligence_coordination
+0019 intelligence_strategy
+0020 intelligence_policy
+
+0021 intelligence_crisis
+0022 intelligence_threat
+0023 intelligence_response
+0024 intelligence_reform
+0025 intelligence_transition
+0026 intelligence_resilience
+0027 intelligence_monitoring
+0028 intelligence_control
+0029 intelligence_governance
+0030 intelligence_system_state

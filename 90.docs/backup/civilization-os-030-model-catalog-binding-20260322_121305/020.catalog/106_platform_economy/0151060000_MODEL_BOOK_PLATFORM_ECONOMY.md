@@ -1,0 +1,45 @@
+# MODEL BOOK
+# PLATFORM ECONOMY DOMAIN
+
+106001 platform_economy_system
+106002 platform_market
+106003 platform_company
+106004 platform_service
+106005 platform_network
+106006 platform_user
+106007 platform_provider
+106008 platform_transaction
+106009 platform_infrastructure
+106010 platform_operation
+106011 platform_policy
+106012 platform_regulation
+106013 platform_governance
+106014 platform_monitoring
+106015 platform_data
+106016 platform_analysis
+106017 platform_metric
+106018 platform_indicator
+106019 platform_dashboard
+106020 platform_program
+106021 platform_program_state
+106022 platform_market_state
+106023 platform_network_state
+106024 platform_cluster
+106025 platform_system_state
+106026 marketplace
+106027 marketplace_listing
+106028 digital_asset
+106029 asset_license
+106030 creator
+106031 creator_economy
+106032 creator_revenue
+106033 installation
+106034 civilization_currency
+106035 wallet
+106036 account_balance
+106037 ledger_transaction
+106038 order
+106039 payment
+106040 revenue_distribution
+106041 subscription
+106042 rating_review

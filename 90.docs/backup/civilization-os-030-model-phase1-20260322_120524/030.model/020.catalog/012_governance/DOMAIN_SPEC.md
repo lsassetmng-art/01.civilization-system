@@ -1,0 +1,35 @@
+domain: 012_governance
+models: 30
+
+0001 governance_system
+0002 governance_structure
+0003 governance_authority
+0004 governance_accountability
+0005 governance_transparency
+0006 governance_policy
+0007 governance_regulation
+0008 governance_process
+0009 governance_actor
+0010 governance_decision
+
+0011 governance_coordination
+0012 governance_monitoring
+0013 governance_evaluation
+0014 governance_compliance
+0015 governance_control
+0016 governance_risk
+0017 governance_strategy
+0018 governance_framework
+0019 governance_standard
+0020 governance_guideline
+
+0021 governance_reform
+0022 governance_transition
+0023 governance_stability
+0024 governance_legitimacy
+0025 governance_innovation
+0026 governance_resilience
+0027 governance_crisis
+0028 governance_network
+0029 governance_system_design
+0030 governance_system_state

@@ -1,0 +1,35 @@
+domain: 078_science
+models: 30
+
+0001 science
+0002 scientific_field
+0003 scientific_method
+0004 scientific_theory
+0005 scientific_model
+0006 scientific_experiment
+0007 scientific_data
+0008 scientific_discovery
+0009 scientific_innovation
+0010 scientific_community
+
+0011 scientific_publication
+0012 scientific_collaboration
+0013 scientific_network
+0014 scientific_infrastructure
+0015 scientific_knowledge
+0016 scientific_standard
+0017 science_policy
+0018 science_regulation
+0019 science_monitoring
+0020 science_management
+
+0021 science_crisis
+0022 science_disruption
+0023 science_recovery
+0024 science_reform
+0025 science_transition
+0026 science_stability
+0027 science_coordination
+0028 science_analysis
+0029 science_system_design
+0030 science_system_state

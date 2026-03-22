@@ -1,0 +1,35 @@
+domain: 077_research_funding
+models: 30
+
+0001 research_funding
+0002 research_grant
+0003 funding_agency
+0004 funding_program
+0005 grant_application
+0006 grant_review
+0007 grant_award
+0008 research_budget
+0009 research_finance
+0010 funding_allocation
+
+0011 funding_policy
+0012 funding_strategy
+0013 funding_priority
+0014 research_investment
+0015 research_endowment
+0016 research_sponsorship
+0017 funding_regulation
+0018 funding_monitoring
+0019 funding_data
+0020 funding_management
+
+0021 funding_crisis
+0022 funding_shortage
+0023 funding_recovery
+0024 funding_reform
+0025 funding_transition
+0026 funding_stability
+0027 funding_coordination
+0028 funding_analysis
+0029 funding_system_design
+0030 funding_system_state

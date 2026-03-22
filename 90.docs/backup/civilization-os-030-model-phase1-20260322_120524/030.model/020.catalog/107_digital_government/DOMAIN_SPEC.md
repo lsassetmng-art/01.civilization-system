@@ -1,0 +1,35 @@
+domain: 107_digital_government
+models: 30
+
+0001 digital_government_system
+0002 digital_government_structure
+0003 digital_government_network
+0004 digital_government_institution
+0005 digital_government_actor
+0006 digital_government_organization
+0007 digital_government_process
+0008 digital_government_operation
+0009 digital_government_service
+0010 digital_government_market
+
+0011 digital_government_policy
+0012 digital_government_regulation
+0013 digital_government_governance
+0014 digital_government_management
+0015 digital_government_coordination
+0016 digital_government_monitoring
+0017 digital_government_data
+0018 digital_government_analysis
+0019 digital_government_infrastructure
+0020 digital_government_platform
+
+0021 digital_government_crisis
+0022 digital_government_disruption
+0023 digital_government_recovery
+0024 digital_government_reform
+0025 digital_government_transition
+0026 digital_government_stability
+0027 digital_government_risk
+0028 digital_government_capacity
+0029 digital_government_system_design
+0030 digital_government_system_state

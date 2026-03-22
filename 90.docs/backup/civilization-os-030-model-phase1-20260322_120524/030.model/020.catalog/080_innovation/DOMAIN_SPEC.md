@@ -1,0 +1,35 @@
+domain: 080_innovation
+models: 30
+
+0001 innovation
+0002 innovation_system
+0003 innovation_ecosystem
+0004 innovation_actor
+0005 innovation_network
+0006 innovation_process
+0007 innovation_project
+0008 innovation_platform
+0009 innovation_strategy
+0010 innovation_policy
+
+0011 innovation_funding
+0012 innovation_program
+0013 innovation_lab
+0014 innovation_cluster
+0015 innovation_output
+0016 innovation_diffusion
+0017 innovation_adoption
+0018 innovation_monitoring
+0019 innovation_data
+0020 innovation_management
+
+0021 innovation_crisis
+0022 innovation_disruption
+0023 innovation_recovery
+0024 innovation_reform
+0025 innovation_transition
+0026 innovation_stability
+0027 innovation_coordination
+0028 innovation_analysis
+0029 innovation_system_design
+0030 innovation_system_state

@@ -1,0 +1,35 @@
+domain: 056_manufacturing
+models: 30
+
+0001 manufacturing
+0002 manufacturing_plant
+0003 manufacturing_process
+0004 manufacturing_line
+0005 manufacturing_worker
+0006 manufacturing_equipment
+0007 manufacturing_input
+0008 manufacturing_output
+0009 manufacturing_quality
+0010 manufacturing_standard
+
+0011 production_plan
+0012 production_schedule
+0013 production_capacity
+0014 production_efficiency
+0015 production_cost
+0016 production_inventory
+0017 production_control
+0018 production_automation
+0019 industrial_robot
+0020 manufacturing_supply
+
+0021 manufacturing_crisis
+0022 manufacturing_disruption
+0023 manufacturing_recovery
+0024 manufacturing_reform
+0025 manufacturing_transition
+0026 manufacturing_stability
+0027 manufacturing_monitoring
+0028 manufacturing_data
+0029 manufacturing_system_design
+0030 manufacturing_system_state

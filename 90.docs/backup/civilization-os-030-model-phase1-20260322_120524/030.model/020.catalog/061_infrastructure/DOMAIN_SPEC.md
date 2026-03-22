@@ -1,0 +1,35 @@
+domain: 061_infrastructure
+models: 30
+
+0001 infrastructure
+0002 infrastructure_system
+0003 infrastructure_network
+0004 infrastructure_asset
+0005 infrastructure_project
+0006 infrastructure_operator
+0007 infrastructure_provider
+0008 infrastructure_service
+0009 infrastructure_capacity
+0010 infrastructure_utilization
+
+0011 infrastructure_plan
+0012 infrastructure_policy
+0013 infrastructure_financing
+0014 infrastructure_investment
+0015 infrastructure_maintenance
+0016 infrastructure_upgrade
+0017 infrastructure_resilience
+0018 infrastructure_monitoring
+0019 infrastructure_data
+0020 infrastructure_management
+
+0021 infrastructure_failure
+0022 infrastructure_disruption
+0023 infrastructure_recovery
+0024 infrastructure_reform
+0025 infrastructure_transition
+0026 infrastructure_stability
+0027 infrastructure_coordination
+0028 infrastructure_analysis
+0029 infrastructure_system_design
+0030 infrastructure_system_state

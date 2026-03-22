@@ -1,0 +1,35 @@
+domain: 039_derivatives_market
+models: 30
+
+0001 derivatives_market
+0002 derivative_contract
+0003 futures_contract
+0004 options_contract
+0005 swap_contract
+0006 derivative_underlying
+0007 derivative_price
+0008 derivative_trade
+0009 derivative_position
+0010 derivative_settlement
+
+0011 derivative_margin
+0012 derivative_leverage
+0013 derivative_hedging
+0014 derivative_speculation
+0015 derivative_clearing
+0016 derivative_exchange
+0017 derivative_risk
+0018 derivative_regulation
+0019 derivative_compliance
+0020 derivative_monitoring
+
+0021 derivative_market_crisis
+0022 derivative_market_recovery
+0023 derivative_market_transition
+0024 derivative_market_stability
+0025 derivative_market_analysis
+0026 derivative_market_data
+0027 derivative_market_strategy
+0028 derivative_market_management
+0029 derivative_market_system_design
+0030 derivative_market_system_state

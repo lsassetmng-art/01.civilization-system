@@ -1,0 +1,35 @@
+domain: 076_research_university
+models: 30
+
+0001 research_university
+0002 university
+0003 research_lab
+0004 researcher
+0005 academic_department
+0006 research_program
+0007 research_project
+0008 academic_publication
+0009 research_output
+0010 research_collaboration
+
+0011 university_governance
+0012 university_funding
+0013 research_infrastructure
+0014 academic_network
+0015 research_capacity
+0016 research_impact
+0017 university_policy
+0018 university_regulation
+0019 research_monitoring
+0020 research_data
+
+0021 research_crisis
+0022 research_disruption
+0023 research_recovery
+0024 research_reform
+0025 research_transition
+0026 research_stability
+0027 research_coordination
+0028 research_analysis
+0029 research_system_design
+0030 research_system_state

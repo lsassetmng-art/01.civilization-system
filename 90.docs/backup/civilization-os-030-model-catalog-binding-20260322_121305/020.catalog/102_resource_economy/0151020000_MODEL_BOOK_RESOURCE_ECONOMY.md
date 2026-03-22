@@ -1,0 +1,28 @@
+# MODEL BOOK
+# RESOURCE ECONOMY DOMAIN
+
+102001 resource_economy_system
+102002 resource_market
+102003 resource_industry
+102004 resource_company
+102005 resource_extraction
+102006 resource_processing
+102007 resource_trade
+102008 resource_supply
+102009 resource_platform
+102010 resource_infrastructure
+102011 resource_policy
+102012 resource_regulation
+102013 resource_governance
+102014 resource_monitoring
+102015 resource_data
+102016 resource_analysis
+102017 resource_metric
+102018 resource_indicator
+102019 resource_dashboard
+102020 resource_program
+102021 resource_program_state
+102022 resource_market_state
+102023 resource_network
+102024 resource_cluster
+102025 resource_system_state

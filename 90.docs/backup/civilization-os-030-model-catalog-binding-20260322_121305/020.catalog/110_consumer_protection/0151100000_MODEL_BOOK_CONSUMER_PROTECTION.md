@@ -1,0 +1,28 @@
+# MODEL BOOK
+# CONSUMER PROTECTION DOMAIN
+
+110001 consumer_protection_system
+110002 consumer_market
+110003 consumer_company
+110004 consumer_product
+110005 consumer_service
+110006 consumer_right
+110007 consumer_claim
+110008 consumer_complaint
+110009 consumer_platform
+110010 consumer_infrastructure
+110011 consumer_policy
+110012 consumer_regulation
+110013 consumer_governance
+110014 consumer_monitoring
+110015 consumer_data
+110016 consumer_analysis
+110017 consumer_metric
+110018 consumer_indicator
+110019 consumer_dashboard
+110020 consumer_program
+110021 consumer_program_state
+110022 consumer_market_state
+110023 consumer_network
+110024 consumer_cluster
+110025 consumer_system_state

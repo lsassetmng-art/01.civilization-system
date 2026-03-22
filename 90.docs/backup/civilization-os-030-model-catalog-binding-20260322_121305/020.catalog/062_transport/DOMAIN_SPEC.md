@@ -1,0 +1,35 @@
+domain: 062_transport
+models: 30
+
+0001 transport
+0002 transport_network
+0003 transport_route
+0004 transport_node
+0005 transport_operator
+0006 transport_vehicle
+0007 transport_service
+0008 transport_capacity
+0009 transport_flow
+0010 transport_demand
+
+0011 transport_schedule
+0012 transport_ticketing
+0013 transport_fare
+0014 transport_terminal
+0015 transport_hub
+0016 transport_logistics
+0017 transport_policy
+0018 transport_regulation
+0019 transport_monitoring
+0020 transport_data
+
+0021 transport_crisis
+0022 transport_disruption
+0023 transport_recovery
+0024 transport_reform
+0025 transport_transition
+0026 transport_stability
+0027 transport_coordination
+0028 transport_analysis
+0029 transport_system_design
+0030 transport_system_state
