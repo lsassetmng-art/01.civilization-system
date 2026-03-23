@@ -6,8 +6,8 @@ status: canonical
 system: life-os
 owner: Boss
 prepared_by: Zero
+generated_at: 2026-03-23 20:13:07 +0900
 source: LIFE_OS_BIBLE_FULL_OFFICIAL_BIND.md
-generated_at: 2026-03-23 17:45:57 +0900
 
 
 --------------------------------------------------------------------------------

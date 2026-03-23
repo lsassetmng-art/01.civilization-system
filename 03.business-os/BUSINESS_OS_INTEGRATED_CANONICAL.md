@@ -6,7 +6,8 @@ status: canonical
 system: business-os
 owner: Boss
 prepared_by: Zero
-generated_at: 2026-03-23 17:19:39 +0900
+generated_at: 2026-03-23 20:13:04 +0900
+source: BUSINESS_OS_BIBLE_FULL_OFFICIAL_BIND.md
 
 
 --------------------------------------------------------------------------------

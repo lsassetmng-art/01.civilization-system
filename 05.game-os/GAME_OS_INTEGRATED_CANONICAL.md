@@ -6,7 +6,7 @@ status: canonical
 system: game-os
 owner: Boss
 prepared_by: Zero
-generated_at: 2026-03-23 17:19:44 +0900
+generated_at: 2026-03-23 20:13:09 +0900
 
 
 --------------------------------------------------------------------------------

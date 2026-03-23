@@ -6,7 +6,7 @@ status: canonical
 system: civilization-system-rules
 owner: Boss
 prepared_by: Zero
-generated_at: 2026-03-23 17:19:10 +0900
+generated_at: 2026-03-23 20:12:28 +0900
 
 
 --------------------------------------------------------------------------------
