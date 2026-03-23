@@ -1,14 +1,24 @@
+# ============================================================
 # PERSONA BUSINESS ACCESS SYNC FLOW
+# ============================================================
 
 status: canonical
-layer: flow
-domain: persona
+layer: 050.flow
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## FLOW
-1. PersonaOS changes release, license, or access state
-2. BusinessOS receives sync payload
-3. mirrored ref models are updated
-4. affected usage bindings are recalculated
-5. invalid bindings are disabled
+purpose:
+Define how Persona access, license, release, and binding state
+are synchronized into BusinessOS.
+
+flow_steps:
+1 PersonaOS emits usage-domain sync result
+2 BusinessOS receives event into inbox
+3 Business sync consumer classifies usage event
+4 usage permission consume runtime reflects state
+5 business-facing Persona availability is recalculated
+
+notes:
+This flow covers permission-side availability,
+not trust-side exposure strength.

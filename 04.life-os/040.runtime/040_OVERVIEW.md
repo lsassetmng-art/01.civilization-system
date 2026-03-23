@@ -1,21 +1,23 @@
 # ============================================================
-# LIFE OS
-# 30 OVERVIEW
+# LIFE OS RUNTIME OVERVIEW
 # ============================================================
 
 status: canonical
-system_id: 04
-layer: runtime
-
+layer: 040.runtime
+system: life-os
 owner: Boss
 prepared_by: Zero
 
+purpose:
+Define the runtime behavior of Life OS.
 
-# CONTENTS
+runtime_scope:
+- state handling
+- event handling
+- scheduling
+- workflow execution support
 
-31_LIFE_OS_RUNTIME_MODEL
-32_LIFE_OS_EVENT_MODEL
-33_LIFE_OS_STATE_MACHINE
-34_LIFE_OS_WORKFLOW_MODEL
-35_LIFE_OS_SCHEDULER_MODEL
-
+boundary:
+Runtime defines operational behavior inside Life OS.
+Domain meaning belongs to model.
+Step order belongs to flow.

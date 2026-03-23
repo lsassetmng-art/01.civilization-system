@@ -1,20 +1,19 @@
 # ============================================================
-# LIFE OS
-# 90 OVERVIEW
+# LIFE OS META OVERVIEW
 # ============================================================
 
 status: canonical
-system_id: 04
-layer: meta
-
+layer: 920.meta
+system: life-os
 owner: Boss
 prepared_by: Zero
 
+purpose:
+Define meta documents used to maintain Life OS documentation integrity.
 
-# CONTENTS
-
-90_INDEX
-91_LIFE_OS_CHANGELOG
-92_LIFE_OS_DEPENDENCY_MAP
-93_LIFE_OS_DOCUMENT_MAP
-
+scope:
+- changelog
+- dependency map
+- document map
+- layer map
+- archive references

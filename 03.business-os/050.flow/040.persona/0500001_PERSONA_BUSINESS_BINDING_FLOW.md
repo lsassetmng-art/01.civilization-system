@@ -1,14 +1,28 @@
+# ============================================================
 # PERSONA BUSINESS BINDING FLOW
+# ============================================================
 
 status: canonical
-layer: flow
-domain: persona
+layer: 050.flow
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## FLOW
-1. BusinessOS selects externally usable Persona release
-2. release, license, and access states are synchronized from PersonaOS
-3. Business usage context is chosen
-4. usage binding is created
-5. Business app may use Persona only while mirrored rights state remains valid
+purpose:
+Define how BusinessOS binds a Persona to business usage context.
+
+flow_steps:
+1 business context identifies Persona need
+2 BusinessOS checks access, permission, release, and trust refs
+3 binding-eligible Persona candidates are filtered
+4 Persona binding result is consumed or selected
+5 active binding is reflected into business usage context
+
+binding_examples:
+- sales assistant binding
+- approval assistant binding
+- reporting assistant binding
+- support assistant binding
+
+gate_rule:
+Binding requires compatible access and sufficient trust.

@@ -1,21 +1,22 @@
 # ============================================================
-# LIFE OS
-# 50 OVERVIEW
+# LIFE OS OPERATIONS OVERVIEW
 # ============================================================
 
 status: canonical
-system_id: 04
-layer: operations
-
+layer: 070.operations
+system: life-os
 owner: Boss
 prepared_by: Zero
 
+purpose:
+Define operational handling for running Life OS safely and continuously.
 
-# CONTENTS
+scope:
+- failure handling
+- run procedures
+- maintenance support
+- operational continuity
 
-51_LIFE_OS_DEPLOYMENT_MODEL
-52_LIFE_OS_BACKUP_RULE
-53_LIFE_OS_MONITORING_MODEL
-54_LIFE_OS_FAILURE_HANDLING
-55_LIFE_OS_LOGGING_MODEL
-
+boundary:
+Operational procedures belong here.
+Control policies belong in 080.policy.

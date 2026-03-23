@@ -1,13 +1,24 @@
+# ============================================================
 # BUSINESS PERSONA USAGE POLICY
+# ============================================================
 
 status: canonical
-layer: policy
-domain: persona
+layer: 080.policy
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## RULES
-- BusinessOS may use only PersonaOS-approved external units
-- BusinessOS must not override Persona rights truth
-- invalid Persona rights state must disable Business usage
-- Persona usage context in BusinessOS must be explicit and auditable
+purpose:
+Define policy rules for Persona usage inside BusinessOS.
+
+usage_principles:
+- Persona use requires valid permission state
+- Persona use requires valid access state
+- Persona use requires compatible release state
+- Persona use requires valid binding state
+- Persona truth remains outside BusinessOS
+
+policy_rules:
+- revoked, expired, or incompatible Persona state must disable use
+- BusinessOS must not infer unrestricted use from partial sync state
+- permission-side eligibility must be evaluated before business exposure

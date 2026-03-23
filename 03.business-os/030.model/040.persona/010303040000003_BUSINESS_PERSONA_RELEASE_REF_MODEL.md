@@ -1,25 +1,59 @@
-# BUSINESS_PERSONA_RELEASE_REF_MODEL
+# ============================================================
+# BUSINESS PERSONA RELEASE REF MODEL
+# ============================================================
 
 status: canonical
-layer: model
-domain: persona
+layer: 030.model
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## PURPOSE
-Reference a PersonaOS release unit in BusinessOS.
+purpose:
+Reference Persona release validity state inside BusinessOS.
 
-## FIELDS
+role:
+Represent whether a Persona release/version is currently valid
+for BusinessOS usage.
+
+primary_key:
 - business_persona_release_ref_id
-- persona_id
-- persona_snapshot_release_id
-- release_code
-- release_type
-- release_state
-- signature_state
-- visibility_state
-- synced_at
 
-## RULE
-This is a mirrored reference only.
-Release authority remains in PersonaOS.
+natural_key:
+- company_id
+- persona_id
+- release_version
+
+fields:
+- business_persona_release_ref_id
+- company_id
+- business_user_id
+- persona_id
+- release_version
+- release_status
+- compatibility_status
+- effective_from
+- effective_until
+- invalid_reason
+- source_sync_event_id
+- source_sync_version
+- correlation_id
+- synced_at
+- created_at
+- updated_at
+
+release_status_enum:
+- pending
+- active
+- inactive
+- deprecated
+- revoked
+- expired
+
+compatibility_status_enum:
+- compatible
+- limited
+- incompatible
+
+rules:
+- BusinessOS may only expose releases that are active and compatible
+- PersonaOS is truth holder for release validity

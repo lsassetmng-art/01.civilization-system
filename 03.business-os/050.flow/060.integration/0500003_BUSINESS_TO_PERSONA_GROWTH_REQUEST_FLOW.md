@@ -1,15 +1,31 @@
+# ============================================================
 # BUSINESS TO PERSONA GROWTH REQUEST FLOW
+# ============================================================
 
 status: canonical
-layer: flow
-domain: integration
+layer: 050.flow
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## FLOW
-1. Business activity produces a growth-relevant event
-2. BusinessOS determines growth delta and target dimension
-3. BusinessOS writes request to outbox
-4. PersonaOS receives request payload
-5. PersonaOS validates applyability
-6. PersonaOS updates growth truth
+purpose:
+Define the flow for Business-originated Persona growth requests.
+
+flow_steps:
+1 business milestone or approved trigger occurs
+2 trigger is projected into allowed growth context
+3 growth request model is created
+4 outbox event is created
+5 outbox dispatch sends request to PersonaOS
+6 growth tracking ref is updated
+7 Persona result is awaited through sync inbox
+
+growth_examples:
+- sales milestone reached
+- support quality milestone
+- continuity achievement
+- approval quality milestone
+
+boundary:
+Business sends request only.
+PersonaOS decides and applies growth truth.

@@ -1,34 +1,22 @@
 # ============================================================
-# LIFE OS
-# 10 OVERVIEW
+# LIFE OS CONSTITUTION OVERVIEW
 # ============================================================
 
 status: canonical
-system_id: 04
-layer: constitution
-
+layer: 010.constitution
+system: life-os
 owner: Boss
 prepared_by: Zero
 
+purpose:
+Define the constitutional layer of Life OS.
 
-# PURPOSE
+role:
+Life OS manages the user's own life data.
+Life OS does not manage persona data.
+Life OS remains personal-data centered.
 
-Define the constitutional layer
-of LifeOS.
-
-
-# ROLE
-
-LifeOS manages the user's own life data.
-
-LifeOS does not manage persona data.
-
-LifeOS is personal-data oriented.
-
-
-# CONTENTS
-
-11_LIFE_OS_CONSTITUTION
-12_LIFE_OS_SCOPE
-13_LIFE_OS_BOUNDARY
-
+contents:
+- constitution principles
+- scope definition
+- boundary definition

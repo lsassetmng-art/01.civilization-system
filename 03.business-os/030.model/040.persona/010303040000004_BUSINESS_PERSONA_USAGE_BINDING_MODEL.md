@@ -1,24 +1,60 @@
-# BUSINESS_PERSONA_USAGE_BINDING_MODEL
+# ============================================================
+# BUSINESS PERSONA USAGE BINDING MODEL
+# ============================================================
 
 status: canonical
-layer: model
-domain: persona
+layer: 030.model
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## PURPOSE
-Bind a Persona release to a BusinessOS usage context.
+purpose:
+Bind BusinessOS usage context to a Persona.
 
-## FIELDS
+role:
+Represent which Persona is bound to which business context.
+
+primary_key:
 - business_persona_usage_binding_id
-- business_app_id
-- business_workspace_id
-- business_module_id
-- business_persona_release_ref_id
-- usage_role
-- binding_state
-- bound_at
-- unbound_at
 
-## RULE
-Binding is valid only while Persona release, license, and access states remain valid.
+natural_key:
+- company_id
+- business_user_id
+- persona_id
+- usage_context
+
+fields:
+- business_persona_usage_binding_id
+- company_id
+- business_user_id
+- persona_id
+- usage_context
+- binding_status
+- primary_persona_flag
+- valid_from
+- valid_until
+- binding_reason
+- source_sync_event_id
+- correlation_id
+- synced_at
+- created_at
+- updated_at
+
+usage_context_examples:
+- sales_assistant
+- approval_assistant
+- reporting_assistant
+- support_assistant
+- dashboard_assistant
+
+binding_status_enum:
+- pending
+- active
+- inactive
+- revoked
+- expired
+
+rules:
+- PersonaOS returns binding truth
+- BusinessOS consumes and reflects binding state
+- only active binding may be used

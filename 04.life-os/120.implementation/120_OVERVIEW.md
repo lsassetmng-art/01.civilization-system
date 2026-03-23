@@ -1,21 +1,22 @@
 # ============================================================
-# LIFE OS
-# 40 OVERVIEW
+# LIFE OS IMPLEMENTATION OVERVIEW
 # ============================================================
 
 status: canonical
-system_id: 04
-layer: implementation
-
+layer: 120.implementation
+system: life-os
 owner: Boss
 prepared_by: Zero
 
+purpose:
+Define implementation structures and mappings of Life OS.
 
-# CONTENTS
+scope:
+- module structure
+- data model mapping
+- android structure
+- database mapping
 
-41_LIFE_OS_MODULE_STRUCTURE
-42_LIFE_OS_API_INTERFACE_SPEC
-43_LIFE_OS_DATA_MODEL_MAPPING
-44_LIFE_OS_ANDROID_STRUCTURE
-45_LIFE_OS_DATABASE_MAPPING
-
+boundary:
+Implementation realizes the design.
+It does not replace constitutional or policy decisions.

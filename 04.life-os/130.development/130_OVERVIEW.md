@@ -1,21 +1,19 @@
 # ============================================================
-# LIFE OS
-# 60 OVERVIEW
+# LIFE OS DEVELOPMENT OVERVIEW
 # ============================================================
 
 status: canonical
-system_id: 04
-layer: development
-
+layer: 130.development
+system: life-os
 owner: Boss
 prepared_by: Zero
 
+purpose:
+Define development rules and engineering workflow for Life OS.
 
-# CONTENTS
-
-61_LIFE_OS_CODING_STANDARD
-62_LIFE_OS_MODULE_RULE
-63_LIFE_OS_TEST_STRATEGY
-64_LIFE_OS_VERSION_RULE
-65_LIFE_OS_CI_RULE
-
+scope:
+- coding standard
+- module rule
+- test strategy
+- version rule
+- CI rule
