@@ -1,0 +1,10 @@
+# ============================================================
+# PLACEMENT SAMPLE INDEX
+# ============================================================
+
+2721_COMMERCIAL_PLACEMENT_SAMPLE.md
+2722_EDUCATION_PLACEMENT_SAMPLE.md
+2723_MILITARY_PLACEMENT_SAMPLE.md
+2724_CULTURE_PLACEMENT_SAMPLE.md
+2725_RELIGION_PLACEMENT_SAMPLE.md
+2726_HYBRID_PLACEMENT_SAMPLE.md

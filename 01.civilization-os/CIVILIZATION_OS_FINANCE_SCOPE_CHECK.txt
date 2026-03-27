@@ -1,0 +1,108 @@
+=== civilization finance scope check ===
+
+---- 170.finance-credit live files ----
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_CREDIT_PROFILE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_FINANCIAL_OBLIGATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_DEBT_OBLIGATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_LOAN_CONTRACT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_INSURANCE_POLICY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301305_CIVILIZATION_CLAIM_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/170.finance-credit/0501300_CIVILIZATION_FINANCIAL_OBLIGATION_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/170.finance-credit/0501301_CIVILIZATION_INSURANCE_AND_RELIEF_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/170.finance-credit/0501302_CIVILIZATION_CLAIM_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.policy/170.finance-credit/0701300_CIVILIZATION_FINANCE_CREDIT_GENERIC_POLICY.md
+
+---- loan contract hits outside 262.banking / 260.real-estate-regime ----
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_LOAN_CONTRACT_MODEL.md:18:- loan_contract_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_LOAN_CONTRACT_MODEL.md:26:- loan_contract_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md:21:- loan_contract_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md:26:- loan_contract_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_INTEGRATED_CANONICAL_ORDER.txt:737:/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_LOAN_CONTRACT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_FINANCE_SCOPE_CHECK.txt:9:/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_LOAN_CONTRACT_MODEL.md
+
+---- repayment schedule hits outside 262.banking / 260.real-estate-regime ----
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md:18:- repayment_schedule_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md:25:- repayment_schedule_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_INTEGRATED_CANONICAL_ORDER.txt:738:/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_FINANCE_SCOPE_CHECK.txt:10:/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_FINANCE_SCOPE_CHECK.txt:25:/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md:21:- loan_contract_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_FINANCE_SCOPE_CHECK.txt:26:/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_REPAYMENT_SCHEDULE_MODEL.md:26:- loan_contract_id
+
+---- default event hits outside 262.banking / 260.real-estate-regime ----
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/020.catalog/037_bond_market/0150370000_MODEL_BOOK_BOND_MARKET.md:61:default_event
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/020.catalog/0300200001_CIVILIZATION_MODEL_CANONICAL.md:34258:default_event
+
+---- insurance / subsidy / relief hits in 170.finance-credit ----
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_INSURANCE_POLICY_MODEL.md:12:Define the canonical insurance policy model.
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_INSURANCE_POLICY_MODEL.md:18:- insurance_policy_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_INSURANCE_POLICY_MODEL.md:26:- insurance_policy_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:12:Define the canonical subsidy allocation model.
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:18:- subsidy_allocation_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:21:- subsidy_scope
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:22:- subsidy_ref
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:25:- subsidy_allocation_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:26:- subsidy_scope
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:27:- subsidy_ref
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301306_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:29:- subsidy_type
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_FINANCIAL_OBLIGATION_MODEL.md:37:- insurance payout duty
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_FINANCIAL_OBLIGATION_MODEL.md:38:- subsidy disbursement duty
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_FINANCIAL_OBLIGATION_MODEL.md:48:- financial_obligation_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_FINANCIAL_OBLIGATION_MODEL.md:67:- insurance_payout
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_FINANCIAL_OBLIGATION_MODEL.md:68:- subsidy_payment
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301300_CIVILIZATION_FINANCIAL_OBLIGATION_MODEL.md:69:- relief_payment
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:12:Define the canonical financial relief program model.
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:18:- financial_relief_program_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:21:- relief_scope
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:22:- relief_code
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:23:- relief_version
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:26:- financial_relief_program_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:27:- relief_scope
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:28:- relief_code
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:29:- relief_version
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:30:- relief_status
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:31:- relief_objective
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:38:relief_status_enum:
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301309_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:48:Financial relief program truth belongs to CivilizationOS finance-credit domain.
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md:28:- insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md:29:- subsidy dispute
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md:32:- relief disbursement disagreement
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md:40:- financial_claim_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md:58:- insurance_claim
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md:59:- subsidy_claim
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301301_CIVILIZATION_FINANCIAL_CLAIM_MODEL.md:61:- relief_claim
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:12:Define the generic insurance policy model of CivilizationOS.
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:15:- property insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:16:- life insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:17:- health/event insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:18:- enterprise insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:19:- disaster insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:20:- liability insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301302_CIVILIZATION_INSURANCE_POLICY_MODEL.md:30:- insurance_policy_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:12:Define the subsidy allocation model of CivilizationOS.
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:15:- housing subsidy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:16:- disaster recovery subsidy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:17:- enterprise support subsidy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:18:- agricultural subsidy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:19:- public-interest subsidy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:27:- subsidy_allocation_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:29:- subsidy_program_type
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301303_CIVILIZATION_SUBSIDY_ALLOCATION_MODEL.md:32:- subsidy_currency_code
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:12:Define the financial relief program model of CivilizationOS.
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:15:- disaster relief
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:16:- emergency liquidity relief
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:18:- rent relief
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:27:- financial_relief_program_id
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:29:- relief_type
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/170.finance-credit/0301304_CIVILIZATION_FINANCIAL_RELIEF_PROGRAM_MODEL.md:32:- relief_rule_ref
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/170.finance-credit/0501301_CIVILIZATION_INSURANCE_AND_RELIEF_FLOW.md:12:Define flow for insurance, subsidy, and relief handling
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/170.finance-credit/0501301_CIVILIZATION_INSURANCE_AND_RELIEF_FLOW.md:44:Insurance, subsidy, and relief remain valid generic finance-credit domains,
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.policy/170.finance-credit/0701300_CIVILIZATION_FINANCE_CREDIT_GENERIC_POLICY.md:17:- insurance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.policy/170.finance-credit/0701300_CIVILIZATION_FINANCE_CREDIT_GENERIC_POLICY.md:18:- subsidy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.policy/170.finance-credit/0701300_CIVILIZATION_FINANCE_CREDIT_GENERIC_POLICY.md:19:- relief
