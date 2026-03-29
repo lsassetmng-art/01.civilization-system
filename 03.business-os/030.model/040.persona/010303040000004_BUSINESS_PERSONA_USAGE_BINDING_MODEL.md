@@ -9,52 +9,52 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Bind BusinessOS usage context to a Persona.
+Represent BusinessOS-side binding between a user/workspace app context
+and a Persona-derived unit.
 
-role:
-Represent which Persona is bound to which business context.
+BusinessOS is primarily user-scoped.
+Bindings should be rooted in user/workspace/app context.
+Company context is optional and only relevant for ERP-send-capable flows.
 
 primary_key:
 - business_persona_usage_binding_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
-- usage_context
+- binding_scope_type
+- binding_scope_id
 
 fields:
 - business_persona_usage_binding_id
-- company_id
 - business_user_id
 - persona_id
-- usage_context
+- binding_scope_type
+- binding_scope_id
 - binding_status
-- primary_persona_flag
-- valid_from
-- valid_until
-- binding_reason
+- binding_summary
+- erp_company_context_id
 - source_sync_event_id
+- source_sync_version
 - correlation_id
 - synced_at
 - created_at
 - updated_at
 
-usage_context_examples:
-- sales_assistant
-- approval_assistant
-- reporting_assistant
-- support_assistant
-- dashboard_assistant
+binding_scope_type_examples:
+- workspace
+- app_module
+- app_feature
+- assistant_surface
 
 binding_status_enum:
 - pending
 - active
-- inactive
+- suspended
 - revoked
 - expired
 
 rules:
-- PersonaOS returns binding truth
-- BusinessOS consumes and reflects binding state
-- only active binding may be used
+- PersonaOS remains truth holder for rights-validity inputs
+- BusinessOS uses this model for local binding visibility only
+- erp_company_context_id is optional

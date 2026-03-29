@@ -9,41 +9,44 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define runtime for tenant, workspace, org, role, workflow, approval, and metric handling.
+Define runtime for user, workspace, app, role, workflow, approval,
+and metric handling inside BusinessOS.
+
+BusinessOS is primarily user-scoped.
+Company context is not a default runtime root.
+Company context is attached only when an ERP-send-capable app flow
+needs company-scoped outbound payload generation.
 
 runtime_scope:
 - validate business target
-- validate tenant and org basis
+- validate user, workspace, app, and authority basis
 - update core business lifecycle state
 - preserve business traceability
+- attach company context only for ERP-send-capable outbound flows
 
 trigger_conditions:
-- tenant approved
+- user active
 - workspace activated
-- org revised
+- app action invoked
 - work request created
 - approval recorded
+- ERP-send requested where supported
 
 processing_steps:
 1 resolve business target
-2 verify tenant, workspace, org, and authority basis
+2 verify user, workspace, app, and authority basis
 3 apply business state transition
-4 persist business result
-5 preserve audit and business trace
+4 if ERP-send is requested, verify company context and mapping basis
+5 persist business result
+6 preserve audit and business trace
 
-state_transition:
-- draft -> approved
-- approved -> active
-- active -> suspended
-- active -> archived
-- created -> approved
-- approved -> completed
-- approved -> rejected
+state_rule:
+Normal BusinessOS local behavior remains user/workspace-scoped.
 
-success_condition:
-- business core lifecycle updated explicitly
+erp_send_rule:
+ERP-send is optional and must fail closed if required company context,
+mapping profile, or payload type is unresolved.
 
-failure_condition:
-- invalid target
-- tenant, org, or authority basis unresolved
-- persistence failure
+truth_boundary:
+BusinessOS truth is primarily user-scoped.
+ERP payload truth becomes company-scoped only at outbound send time.

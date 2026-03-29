@@ -3,23 +3,17 @@
 # ============================================================
 
 status: canonical
-system: business-os
-owner: Boss
-prepared_by: Zero
-generated_at: 2026-03-24 17:24:21 +0900
+generated_by: Zero
+generation_method: strict-folder-regeneration
 
+# ============================================================
+# FILE ORDER
+# ============================================================
 
---------------------------------------------------------------------------------
-FILE: 0000001_BUSINESS_OS_INDEX.md
---------------------------------------------------------------------------------
-
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/0000001_BUSINESS_OS_INDEX.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100001_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100002_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100003_BUSINESS_OS_CONSTITUTION.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100004_BUSINESS_OS_SCOPE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100005_BUSINESS_OS_BOUNDARY.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/0200001_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/0200002_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/0200003_BUSINESS_OS_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/0200004_BUSINESS_OS_COMPONENT_MODEL.md
@@ -31,6 +25,7 @@ FILE: 0000001_BUSINESS_OS_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/060.integration/0200010_BUSINESS_SYNC_CONSUMER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/060.integration/0200011_BUSINESS_EVENT_OUTBOX_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/060.integration/0200012_BUSINESS_TO_PERSONA_GROWTH_SYNC_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/020.architecture/220.app-access-control/0202200_BUSINESS_APP_ACCESS_CONTROL_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/010.core/010303010000001_BUSINESS_APP_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/010.core/010303010000002_BUSINESS_MODULE_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/010.core/010303010000003_BUSINESS_SETTING_MODEL.md
@@ -44,12 +39,43 @@ FILE: 0000001_BUSINESS_OS_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000003_BUSINESS_PERSONA_RELEASE_REF_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000005_BUSINESS_PERSONA_GROWTH_REF_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000006_BUSINESS_PERSONA_TRUST_REF_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000001_BUSINESS_INTEGRATION_REF_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000003_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000004_BUSINESS_SYNC_EVENT_INBOX_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/060.event/010303060000001_BUSINESS_EVENT_MODEL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/0400001_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302102_BUSINESS_ORG_UNIT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302103_BUSINESS_ACTOR_ROLE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302104_BUSINESS_WORK_REQUEST_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302105_BUSINESS_APPROVAL_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302106_BUSINESS_METRIC_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/220.app-access-control/0302200_BUSINESS_APP_ACCESS_CONTROL_MODEL_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/220.persona-integration/0302200_BUSINESS_PERSONA_BINDING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/220.persona-integration/0302201_BUSINESS_PERSONA_USAGE_REQUEST_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/220.persona-integration/0302202_BUSINESS_PERSONA_USAGE_RESULT_SYNC_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/220.persona-integration/0302203_BUSINESS_PERSONA_TRUST_SYNC_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/220.persona-integration/0302204_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/220.persona-integration/0302205_BUSINESS_PERSONA_ACCESS_ENTITLEMENT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302300_BUSINESS_EVENT_OUTBOX_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302301_BUSINESS_EVENT_INBOX_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302302_BUSINESS_DISPATCH_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302303_BUSINESS_SYNC_FAILURE_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302304_BUSINESS_RETRY_PROFILE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302305_BUSINESS_DEAD_LETTER_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302306_BUSINESS_REPLAY_REQUEST_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302307_BUSINESS_CORRECTION_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302308_BUSINESS_AUTHORITY_DECISION_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/230.event-integration/0302309_BUSINESS_EVIDENCE_LINKAGE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/240.cross-cutting-completion/0302400_BUSINESS_LIFECYCLE_STATE_PROFILE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/240.cross-cutting-completion/0302401_BUSINESS_APPROVAL_TRAIL_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/240.cross-cutting-completion/0302402_BUSINESS_OWNERSHIP_BOUNDARY_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/240.cross-cutting-completion/0302403_BUSINESS_COMPATIBILITY_RECORD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/240.cross-cutting-completion/0302404_BUSINESS_AUDIT_RECONSTRUCTION_BUNDLE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/240.cross-cutting-completion/0302405_BUSINESS_SHARED_RETRY_PROFILE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/240.cross-cutting-completion/0302406_BUSINESS_SHARED_DEAD_LETTER_RECORD_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/0400002_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/0400003_BUSINESS_OS_RUNTIME_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/0400004_BUSINESS_OS_EVENT_MODEL.md
@@ -60,30 +86,71 @@ FILE: 0000001_BUSINESS_OS_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/060.integration/0400009_BUSINESS_EVENT_OUTBOX_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/060.integration/0400010_BUSINESS_TO_PERSONA_GROWTH_REQUEST_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/060.integration/0400011_PERSONA_GROWTH_RESULT_CONSUME_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/060.integration/0400011_PERSONA_USAGE_PERMISSION_CONSUME_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/060.integration/0400012_PERSONA_TRUST_SYNC_CONSUME_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/220.app-access-control/0402200_BUSINESS_APP_ACCESS_CONTROL_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/220.persona-integration/0402200_BUSINESS_PERSONA_BINDING_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/220.persona-integration/0402201_BUSINESS_PERSONA_SYNC_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/230.event-integration/0402300_BUSINESS_EVENT_DISPATCH_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/230.event-integration/0402301_BUSINESS_FAILURE_RETRY_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/230.event-integration/0402302_BUSINESS_REPLAY_CORRECTION_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/240.cross-cutting-completion/0402400_BUSINESS_LIFECYCLE_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/240.cross-cutting-completion/0402401_BUSINESS_RETRY_DEAD_LETTER_RUNTIME.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/240.cross-cutting-completion/0402402_BUSINESS_GOVERNANCE_RUNTIME.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/0500001_PERSONA_BUSINESS_BINDING_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/040.persona/0500002_PERSONA_BUSINESS_ACCESS_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/060.integration/0500003_BUSINESS_TO_PERSONA_GROWTH_REQUEST_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/060.integration/0500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/060.integration/0500004_PERSONA_TO_BUSINESS_USAGE_RESULT_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/060.integration/0500005_PERSONA_TO_BUSINESS_TRUST_SYNC_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/220.app-access-control/0502200_BUSINESS_APP_ACCESS_CONTROL_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/220.persona-integration/0502200_BUSINESS_PERSONA_INTEGRATION_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/230.event-integration/0502300_BUSINESS_EVENT_DISPATCH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/230.event-integration/0502301_BUSINESS_FAILURE_RETRY_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/230.event-integration/0502302_BUSINESS_REPLAY_CORRECTION_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/240.cross-cutting-completion/0502400_BUSINESS_LIFECYCLE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/240.cross-cutting-completion/0502401_BUSINESS_RETRY_DEAD_LETTER_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/240.cross-cutting-completion/0502402_BUSINESS_GOVERNANCE_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/060.integration/0700008_BUSINESS_SYNC_CONSUME_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/060.integration/0700009_BUSINESS_OUTBOX_DISPATCH_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/060.integration/0700010_BUSINESS_GROWTH_SYNC_RETRY_OPERATION.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/0700001_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/0700002_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/0700003_BUSINESS_OS_DEPLOYMENT_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/0700004_BUSINESS_OS_BACKUP_RULE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/0700005_BUSINESS_OS_MONITORING_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/0700006_BUSINESS_OS_FAILURE_HANDLING.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/0700007_BUSINESS_OS_LOGGING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/220.persona-integration/0702200_BUSINESS_PERSONA_INTEGRATION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/230.event-integration/0702300_BUSINESS_EVENT_DISPATCH_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/230.event-integration/0702301_BUSINESS_FAILURE_RETRY_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/230.event-integration/0702302_BUSINESS_REPLAY_CORRECTION_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/240.cross-cutting-completion/0702400_BUSINESS_LIFECYCLE_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/240.cross-cutting-completion/0702401_BUSINESS_RETRY_DEAD_LETTER_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/240.cross-cutting-completion/0702402_BUSINESS_GOVERNANCE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/010.core/0800001_BUSINESS_APP_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/010.core/0800002_BUSINESS_WORKSPACE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800003_BUSINESS_ACCESS_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_TENANT_BOUNDARY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_USER_SCOPE_AND_ERP_SEND_BOUNDARY_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/030.module/0800005_BUSINESS_MODULE_INSTALL_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/030.module/0800006_BUSINESS_MODULE_ACTIVATION_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/040.integration/0800007_BUSINESS_SYNC_CONSUMER_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/040.persona/0800007_BUSINESS_SYNC_CONSUMER_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/040.persona/0800008_BUSINESS_PERSONA_USAGE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/040.persona/0800011_BUSINESS_PERSONA_TRUST_USAGE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/050.integration/0800009_BUSINESS_OUTBOX_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/050.integration/0800010_BUSINESS_TO_PERSONA_GROWTH_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/220.app-access-control/0802200_BUSINESS_APP_ACCESS_CONTROL_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/220.persona-integration/0802200_BUSINESS_PERSONA_INTEGRATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/230.event-integration/0802300_BUSINESS_EVENT_DISPATCH_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/230.event-integration/0802301_BUSINESS_FAILURE_RETRY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/230.event-integration/0802302_BUSINESS_REPLAY_CORRECTION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/240.cross-cutting-completion/0802400_BUSINESS_LIFECYCLE_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/240.cross-cutting-completion/0802401_BUSINESS_RETRY_DEAD_LETTER_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/240.cross-cutting-completion/0802402_BUSINESS_GOVERNANCE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/010.launcher/0900001_BUSINESS_APP_LAUNCHER_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/010.launcher/0900002_BUSINESS_MODULE_SELECTOR_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/020.workspace/0900003_BUSINESS_WORKSPACE_INTERFACE.md
@@ -92,65 +159,45 @@ FILE: 0000001_BUSINESS_OS_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/030.admin/0900006_BUSINESS_ACCESS_ADMIN_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/040.persona/0900007_BUSINESS_PERSONA_BINDING_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/040.persona/0900008_BUSINESS_PERSONA_SYNC_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/220.app-access-control/0902200_BUSINESS_APP_ACCESS_CONTROL_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/220.persona-integration/0902200_BUSINESS_PERSONA_INTEGRATION_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/230.event-integration/0902300_BUSINESS_EVENT_DISPATCH_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/230.event-integration/0902301_BUSINESS_FAILURE_RETRY_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/230.event-integration/0902302_BUSINESS_REPLAY_CORRECTION_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/240.cross-cutting-completion/0902400_BUSINESS_LIFECYCLE_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/240.cross-cutting-completion/0902401_BUSINESS_RETRY_DEAD_LETTER_INTERFACE_DETAIL.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/240.cross-cutting-completion/0902402_BUSINESS_GOVERNANCE_INTERFACE_DETAIL.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/010.access/1000001_BUSINESS_ACCESS_SECURITY.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.tenant/1000002_BUSINESS_TENANT_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/030.audit/1000003_BUSINESS_AUDIT_SECURITY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/040.integration/1000004_BUSINESS_INTEGRATION_SECURITY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/040.integration/1000005_BUSINESS_OUTBOX_SECURITY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/010.runtime/1100001_BUSINESS_RUNTIME_INFRASTRUCTURE.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/020.storage/1100002_BUSINESS_STORAGE_INFRASTRUCTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/030.integration/1100003_BUSINESS_INTEGRATION_INFRASTRUCTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/110.infrastructure/040.operations/1100004_BUSINESS_OPERATIONAL_INFRASTRUCTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/060.integration/1200008_BUSINESS_PERSONA_SYNC_IMPLEMENTATION.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/1200001_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/1200002_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/1200003_BUSINESS_OS_MODULE_STRUCTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/1200004_BUSINESS_OS_API_INTERFACE_SPEC.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/1200005_BUSINESS_OS_DATA_MODEL_MAPPING.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/1200006_BUSINESS_OS_ANDROID_STRUCTURE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/1200007_BUSINESS_OS_DATABASE_MAPPING.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/210.business-core/1202100_BUSINESS_STORAGE_SCOPE_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/060.integration/1300008_BUSINESS_PERSONA_SYNC_IMPLEMENTATION_ORDER.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/1300001_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/1300002_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/1300003_BUSINESS_OS_CODING_STANDARD.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/1300004_BUSINESS_OS_MODULE_RULE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/1300005_BUSINESS_OS_TEST_STRATEGY.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/1300006_BUSINESS_OS_VERSION_RULE.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/130.development/1300007_BUSINESS_OS_CI_RULE.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/920.meta/9200001_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/920.meta/9200002_OVERVIEW.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/920.meta/9200003_BUSINESS_OS_CHANGELOG.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/920.meta/9200004_BUSINESS_OS_DEPENDENCY_MAP.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/920.meta/9200005_BUSINESS_OS_DOCUMENT_MAP.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/full-books_20260321_144842/BUSINESS_OS_ARCHITECTURE_FULL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/full-books_20260321_144842/BUSINESS_OS_CONSTITUTION_FULL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/full-books_20260321_144842/BUSINESS_OS_DEVELOPMENT_FULL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/full-books_20260321_144842/BUSINESS_OS_IMPLEMENTATION_FULL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/full-books_20260321_144842/BUSINESS_OS_META_FULL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/full-books_20260321_144842/BUSINESS_OS_OPERATIONS_FULL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/full-books_20260321_144842/BUSINESS_OS_RUNTIME_FULL.md
-/data/data/com.termux/files/home/01.civilization-system/03.business-os/999.archive/legacy-dumps/BUSINESS_OS_FULL_DUMP_ACTIVE_20260321_230626.md
 
 
 
---------------------------------------------------------------------------------
-FILE: 010.constitution/0100001_INDEX.md
---------------------------------------------------------------------------------
-
-# ============================================================
-# BUSINESS OS
-# 10 INDEX
-# ============================================================
-
-11_BUSINESS_OS_CONSTITUTION.md
-12_BUSINESS_OS_SCOPE.md
-13_BUSINESS_OS_BOUNDARY.md
-
-
-
---------------------------------------------------------------------------------
-FILE: 010.constitution/0100002_OVERVIEW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS
@@ -190,9 +237,6 @@ ERP is a separate real-data system.
 
 
 
---------------------------------------------------------------------------------
-FILE: 010.constitution/0100003_BUSINESS_OS_CONSTITUTION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS CONSTITUTION
@@ -227,9 +271,6 @@ and app-oriented.
 
 
 
---------------------------------------------------------------------------------
-FILE: 010.constitution/0100004_BUSINESS_OS_SCOPE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS SCOPE
@@ -269,9 +310,6 @@ corporate HR core
 
 
 
---------------------------------------------------------------------------------
-FILE: 010.constitution/0100005_BUSINESS_OS_BOUNDARY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS BOUNDARY
@@ -304,26 +342,6 @@ master data as ERP does.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/0200001_INDEX.md
---------------------------------------------------------------------------------
-
-# ============================================================
-# BUSINESS OS
-# 20 INDEX
-# ============================================================
-
-21_BUSINESS_OS_ARCHITECTURE.md
-22_BUSINESS_OS_COMPONENT_MODEL.md
-23_BUSINESS_OS_DEPENDENCY_RULE.md
-24_BUSINESS_OS_DATA_FLOW.md
-25_BUSINESS_OS_INTEGRATION_MODEL.md
-
-
-
---------------------------------------------------------------------------------
-FILE: 020.architecture/0200002_OVERVIEW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS
@@ -355,9 +373,6 @@ of BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/0200003_BUSINESS_OS_ARCHITECTURE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS ARCHITECTURE
@@ -389,9 +404,6 @@ BusinessOS acts as platform, not product.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/0200004_BUSINESS_OS_COMPONENT_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS COMPONENT MODEL
@@ -417,9 +429,6 @@ notification subsystem
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/0200005_BUSINESS_OS_DEPENDENCY_RULE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS DEPENDENCY RULE
@@ -446,9 +455,6 @@ depend on ERP.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/0200006_BUSINESS_OS_DATA_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS DATA FLOW
@@ -477,9 +483,6 @@ notification or response
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/0200007_BUSINESS_OS_INTEGRATION_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS INTEGRATION MODEL
@@ -503,9 +506,6 @@ optional life-os bridge
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/040.persona/0200008_PERSONA_BUSINESS_INTEGRATION_ARCHITECTURE.md
---------------------------------------------------------------------------------
 
 # PERSONA BUSINESS INTEGRATION ARCHITECTURE
 
@@ -539,9 +539,6 @@ whose rights state is valid in PersonaOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/040.persona/0200009_PERSONA_BUSINESS_USAGE_BOUNDARY_ARCHITECTURE.md
---------------------------------------------------------------------------------
 
 # PERSONA BUSINESS USAGE BOUNDARY ARCHITECTURE
 
@@ -563,9 +560,6 @@ and BusinessOS operational usage.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/060.integration/0200010_BUSINESS_SYNC_CONSUMER_ARCHITECTURE.md
---------------------------------------------------------------------------------
 
 # BUSINESS SYNC CONSUMER ARCHITECTURE
 
@@ -591,9 +585,6 @@ BusinessOS must not treat itself as the source of Persona truth.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/060.integration/0200011_BUSINESS_EVENT_OUTBOX_ARCHITECTURE.md
---------------------------------------------------------------------------------
 
 # BUSINESS EVENT OUTBOX ARCHITECTURE
 
@@ -621,9 +612,6 @@ BusinessOS publishes approved outbound growth requests through an event outbox.
 
 
 
---------------------------------------------------------------------------------
-FILE: 020.architecture/060.integration/0200012_BUSINESS_TO_PERSONA_GROWTH_SYNC_ARCHITECTURE.md
---------------------------------------------------------------------------------
 
 # BUSINESS TO PERSONA GROWTH SYNC ARCHITECTURE
 
@@ -652,9 +640,160 @@ BusinessOS consumes the resulting synchronized state after PersonaOS applies it.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/010.core/010303010000001_BUSINESS_APP_MODEL.md
---------------------------------------------------------------------------------
+
+# ============================================================
+# BUSINESS APP ACCESS CONTROL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: 020.architecture
+system: business-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Define the official app access control architecture of BusinessOS.
+
+This architecture covers:
+- user-scoped data ownership
+- app requested scope
+- user granted scope
+- effective access decision
+- OS API enforcement
+
+BusinessOS is primarily user-scoped.
+
+
+# ============================================================
+# 1. CORE PRINCIPLE
+# ============================================================
+
+BusinessOS data ownership is user-scoped.
+
+This means:
+- user-owned data is primarily organized by user scope
+- same-user data does not require app-by-app physical DB silos by default
+
+However:
+effective app access is not automatically DB-wide.
+
+All effective restrictions must be enforced
+through BusinessOS API policy and runtime checks.
+
+
+# ============================================================
+# 2. ACCESS DECISION PRINCIPLE
+# ============================================================
+
+Effective access must be determined by:
+
+app_requested_scope
+AND
+user_granted_scope
+AND
+system_policy
+
+All three are required.
+
+No app may access a resource merely because
+the underlying data belongs to the same user.
+
+
+# ============================================================
+# 3. REQUESTED SCOPE PRINCIPLE
+# ============================================================
+
+Each app must declare the maximum scope it requests.
+
+Requested scope must define:
+- resource_domain
+- action_type
+- requested_scope_level
+- sensitivity_level
+
+This is developer-declared maximum authority only.
+
+
+# ============================================================
+# 4. USER GRANT PRINCIPLE
+# ============================================================
+
+The user of the app must decide actual granted scope.
+
+User grant should be managed through:
+- install / first-run review
+- app settings permission control
+- runtime reconfirmation for sensitive actions where required
+
+The user here means the app user, not the developer.
+
+
+# ============================================================
+# 5. RESOURCE DOMAIN PRINCIPLE
+# ============================================================
+
+Resource domains must be explicit.
+
+Examples:
+- business_card
+- contact
+- expense
+- task
+- customer
+- inventory
+- profile
+- workspace_setting
+- export_surface
+
+
+# ============================================================
+# 6. ACTION PRINCIPLE
+# ============================================================
+
+Action types must be explicit.
+
+Examples:
+- read
+- write
+- delete
+- execute
+- export
+
+This action-based model is mandatory.
+
+
+# ============================================================
+# 7. SENSITIVE ACTION PRINCIPLE
+# ============================================================
+
+Sensitive actions may require stronger controls.
+
+Examples:
+- delete
+- export
+- bulk_write
+- bulk_delete
+
+Recommended grant modes:
+- allow
+- deny
+- ask_each_time
+
+
+# ============================================================
+# 8. FINAL ARCHITECTURAL RULE
+# ============================================================
+
+BusinessOS app access control must be:
+
+- user-scoped in data ownership
+- app-scoped in request declaration
+- user-grant-aware in effective permission
+- API-enforced at runtime
+- fail-closed on unresolved rule chains
+
+
+
 
 # business_app
 
@@ -680,9 +819,6 @@ Represent a business application registered in BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/010.core/010303010000002_BUSINESS_MODULE_MODEL.md
---------------------------------------------------------------------------------
 
 # business_module
 
@@ -708,9 +844,6 @@ Represent an installable or activatable business module.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/010.core/010303010000003_BUSINESS_SETTING_MODEL.md
---------------------------------------------------------------------------------
 
 # business_setting
 
@@ -735,9 +868,6 @@ Represent platform or app-level business settings.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/020.workspace/010303020000001_BUSINESS_WORKSPACE_MODEL.md
---------------------------------------------------------------------------------
 
 # business_workspace
 
@@ -762,9 +892,6 @@ Represent a logical workspace in BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/020.workspace/010303020000002_BUSINESS_WORKSPACE_MEMBER_MODEL.md
---------------------------------------------------------------------------------
 
 # business_workspace_member
 
@@ -788,9 +915,6 @@ Represent membership of a user in a workspace.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/030.access/010303030000001_BUSINESS_USER_MODEL.md
---------------------------------------------------------------------------------
 
 # business_user
 
@@ -814,9 +938,6 @@ Represent a user acting inside BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/030.access/010303030000002_BUSINESS_ROLE_MODEL.md
---------------------------------------------------------------------------------
 
 # business_role
 
@@ -839,9 +960,6 @@ Represent a role assignable in BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/030.access/010303030000003_BUSINESS_ROLE_ASSIGNMENT_MODEL.md
---------------------------------------------------------------------------------
 
 # business_role_assignment
 
@@ -866,9 +984,6 @@ Represent role assignment of a user in a scope.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/040.persona/010303040000001_BUSINESS_PERSONA_ACCESS_REF_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA ACCESS REF MODEL
@@ -888,17 +1003,20 @@ This model is a synchronized reference model.
 Truth belongs to PersonaOS.
 BusinessOS must not directly author Persona truth here.
 
+BusinessOS is primarily user-scoped.
+Company context must not be part of the default identity of this model.
+Company context may be attached only for ERP-send-capable app flows
+when needed as outbound integration context.
+
 primary_key:
 - business_persona_access_ref_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
 
 fields:
 - business_persona_access_ref_id
-- company_id
 - business_user_id
 - persona_id
 - persona_code
@@ -906,6 +1024,7 @@ fields:
 - access_scope
 - access_granted_at
 - access_expires_at
+- erp_company_context_id
 - source_sync_event_id
 - source_sync_version
 - correlation_id
@@ -930,13 +1049,11 @@ rules:
 - only Persona-originated sync results may change access_status
 - BusinessOS may cache and read this model
 - BusinessOS must treat expired and revoked as unusable
+- erp_company_context_id is optional and must not be part of the default truth identity
 - correlation_id must trace back to Persona sync result when applicable
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/040.persona/010303040000002_BUSINESS_PERSONA_LICENSE_REF_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA LICENSE REF MODEL
@@ -954,17 +1071,19 @@ Reference Persona license or usage permission state inside BusinessOS.
 role:
 This model represents Business-visible permission state returned by PersonaOS.
 
+BusinessOS is primarily user-scoped.
+Company context may be attached only when ERP-send-capable app behavior
+requires outbound company-scoped payload construction.
+
 primary_key:
 - business_persona_license_ref_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
 
 fields:
 - business_persona_license_ref_id
-- company_id
 - business_user_id
 - persona_id
 - usage_permission_status
@@ -973,6 +1092,7 @@ fields:
 - revoked_reason
 - effective_from
 - effective_until
+- erp_company_context_id
 - source_sync_event_id
 - source_sync_version
 - correlation_id
@@ -992,12 +1112,10 @@ rules:
 - granted does not imply unrestricted exposure
 - BusinessOS must combine this model with trust ref
 - PersonaOS remains truth holder
+- erp_company_context_id is optional and must not be part of the default truth identity
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/040.persona/010303040000003_BUSINESS_PERSONA_RELEASE_REF_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA RELEASE REF MODEL
@@ -1016,25 +1134,26 @@ role:
 Represent whether a Persona release/version is currently valid
 for BusinessOS usage.
 
+BusinessOS is primarily user-scoped.
+Release visibility may later participate in ERP-send-capable app flows,
+but company context is optional and not part of default identity.
+
 primary_key:
 - business_persona_release_ref_id
 
 natural_key:
-- company_id
+- business_user_id
 - persona_id
-- release_version
+- persona_release_id
 
 fields:
 - business_persona_release_ref_id
-- company_id
 - business_user_id
 - persona_id
-- release_version
-- release_status
-- compatibility_status
-- effective_from
-- effective_until
-- invalid_reason
+- persona_release_id
+- release_validity_status
+- release_scope
+- erp_company_context_id
 - source_sync_event_id
 - source_sync_version
 - correlation_id
@@ -1042,28 +1161,20 @@ fields:
 - created_at
 - updated_at
 
-release_status_enum:
+release_validity_status_enum:
 - pending
-- active
-- inactive
-- deprecated
+- valid
+- invalid
 - revoked
 - expired
 
-compatibility_status_enum:
-- compatible
-- limited
-- incompatible
-
 rules:
-- BusinessOS may only expose releases that are active and compatible
-- PersonaOS is truth holder for release validity
+- PersonaOS remains truth holder
+- BusinessOS must treat invalid/revoked as unusable
+- erp_company_context_id is optional and not part of the natural key
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA USAGE BINDING MODEL
@@ -1076,61 +1187,58 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Bind BusinessOS usage context to a Persona.
+Represent BusinessOS-side binding between a user/workspace app context
+and a Persona-derived unit.
 
-role:
-Represent which Persona is bound to which business context.
+BusinessOS is primarily user-scoped.
+Bindings should be rooted in user/workspace/app context.
+Company context is optional and only relevant for ERP-send-capable flows.
 
 primary_key:
 - business_persona_usage_binding_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
-- usage_context
+- binding_scope_type
+- binding_scope_id
 
 fields:
 - business_persona_usage_binding_id
-- company_id
 - business_user_id
 - persona_id
-- usage_context
+- binding_scope_type
+- binding_scope_id
 - binding_status
-- primary_persona_flag
-- valid_from
-- valid_until
-- binding_reason
+- binding_summary
+- erp_company_context_id
 - source_sync_event_id
+- source_sync_version
 - correlation_id
 - synced_at
 - created_at
 - updated_at
 
-usage_context_examples:
-- sales_assistant
-- approval_assistant
-- reporting_assistant
-- support_assistant
-- dashboard_assistant
+binding_scope_type_examples:
+- workspace
+- app_module
+- app_feature
+- assistant_surface
 
 binding_status_enum:
 - pending
 - active
-- inactive
+- suspended
 - revoked
 - expired
 
 rules:
-- PersonaOS returns binding truth
-- BusinessOS consumes and reflects binding state
-- only active binding may be used
+- PersonaOS remains truth holder for rights-validity inputs
+- BusinessOS uses this model for local binding visibility only
+- erp_company_context_id is optional
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/040.persona/010303040000005_BUSINESS_PERSONA_GROWTH_REF_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA GROWTH REF MODEL
@@ -1149,17 +1257,19 @@ role:
 Track the latest Business -> Persona growth request/result linkage.
 This is a synchronization tracking model, not Persona truth.
 
+BusinessOS is primarily user-scoped.
+Company context is optional and used only when an ERP-send-capable flow
+needs to preserve outbound company context separately.
+
 primary_key:
 - business_persona_growth_ref_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
 
 fields:
 - business_persona_growth_ref_id
-- company_id
 - business_user_id
 - persona_id
 - last_growth_request_id
@@ -1168,6 +1278,7 @@ fields:
 - last_growth_sent_at
 - last_growth_result_status
 - last_growth_applied_at
+- erp_company_context_id
 - last_result_sync_event_id
 - correlation_id
 - created_at
@@ -1184,12 +1295,10 @@ rules:
 - BusinessOS may write outbound tracking state
 - Persona-originated result sync updates result-related fields
 - growth truth remains in PersonaOS
+- erp_company_context_id is optional and not part of the default truth identity
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/040.persona/010303040000006_BUSINESS_PERSONA_TRUST_REF_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA TRUST REF MODEL
@@ -1208,17 +1317,18 @@ role:
 Represent Persona-originated trust and safety values used by BusinessOS
 to gate assistant exposure.
 
+BusinessOS is primarily user-scoped.
+Company context must not be a default trust identity dimension.
+
 primary_key:
 - business_persona_trust_ref_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
 
 fields:
 - business_persona_trust_ref_id
-- company_id
 - business_user_id
 - persona_id
 - trust_score
@@ -1227,6 +1337,7 @@ fields:
 - stability_score
 - consistency_score
 - evaluation_basis
+- erp_company_context_id
 - last_evaluated_at
 - source_sync_event_id
 - source_sync_version
@@ -1246,12 +1357,10 @@ rules:
 - permission and trust are separate
 - granted permission with low trust may still restrict exposure
 - PersonaOS is truth holder for trust values
+- erp_company_context_id is optional and not part of the natural key
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/050.integration/010303050000001_BUSINESS_INTEGRATION_REF_MODEL.md
---------------------------------------------------------------------------------
 
 # business_integration_ref
 
@@ -1276,9 +1385,6 @@ Represent an external or cross-system reference used by BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT OUTBOX MODEL
@@ -1293,56 +1399,32 @@ prepared_by: Zero
 purpose:
 Store outbound integration events emitted from BusinessOS.
 
-role:
-Canonical dispatch queue for Business-originated sync events.
-
-primary_key:
-- outbox_event_id
-
-natural_key:
-- event_idempotency_key
+BusinessOS is primarily user-scoped.
+ERP company context may be attached only when the outbound event
+represents an ERP-send-capable app flow.
 
 fields:
 - outbox_event_id
 - event_type
 - aggregate_type
 - aggregate_id
-- company_id
-- business_user_id
-- target_system
 - payload
-- payload_hash
 - dispatch_status
 - retry_count
-- next_retry_at
-- last_error_code
-- last_error_message
 - correlation_id
 - causation_id
-- event_idempotency_key
+- erp_company_context_id
+- erp_payload_type
 - created_at
-- dispatched_at
 - updated_at
 
-dispatch_status_enum:
-- pending
-- dispatching
-- dispatched
-- failed
-- dead_lettered
-- cancelled
-
 rules:
-- all outbound Persona sync events must pass through this outbox
-- event_idempotency_key must prevent duplicate dispatch side effects
-- dispatched payload must be immutable after successful send
-- retry_count increments only on real dispatch attempts
+- erp_company_context_id is optional
+- company context must be attached only for ERP-send-capable outbound events
+- default BusinessOS outbound events remain user/workspace-scoped
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/050.integration/010303050000003_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA GROWTH REQUEST MODEL
@@ -1355,64 +1437,31 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Represent a Business-originated request to Persona growth processing.
+Represent a BusinessOS-originated request to Persona growth processing.
 
-role:
-Canonical request object derived from business-side growth triggers
-before or during outbox dispatch.
-
-primary_key:
-- growth_request_id
-
-natural_key:
-- company_id
-- business_user_id
-- persona_id
-- request_idempotency_key
+BusinessOS is primarily user-scoped.
+Company context is optional and only relevant
+when an ERP-send-capable flow must preserve outbound company context separately.
 
 fields:
 - growth_request_id
-- company_id
 - business_user_id
 - persona_id
 - growth_event_type
 - growth_context_projection
-- source_business_event_id
 - request_status
-- request_idempotency_key
 - correlation_id
-- causation_id
+- erp_company_context_id
 - created_at
-- sent_at
-- result_received_at
 - updated_at
 
-growth_event_type_examples:
-- sales_milestone_reached
-- customer_success_milestone
-- approval_quality_milestone
-- support_resolution_milestone
-- continuity_milestone
-
-request_status_enum:
-- pending
-- queued
-- sent
-- accepted
-- rejected
-- failed
-- expired
-
 rules:
-- projection must contain only allowed Business-side data
-- raw Persona truth must not be written here
-- request_idempotency_key must suppress duplicate growth requests
+- erp_company_context_id is optional
+- company context must not be part of the default identity of this model
+- Persona growth truth remains outside BusinessOS
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/050.integration/010303050000004_BUSINESS_SYNC_EVENT_INBOX_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS SYNC EVENT INBOX MODEL
@@ -1425,63 +1474,30 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Store inbound sync results received by BusinessOS from PersonaOS.
+Store inbound sync results received by BusinessOS from connected systems.
 
-role:
-Canonical receive queue for Persona-originated sync results.
-
-primary_key:
-- inbox_event_id
-
-natural_key:
-- source_event_id
+BusinessOS is primarily user-scoped.
+Company context may be attached only when needed
+to preserve ERP-related outbound/inbound linkage context.
 
 fields:
 - inbox_event_id
-- source_event_id
-- source_system
 - sync_event_type
-- company_id
-- business_user_id
-- persona_id
+- source_system
 - payload
-- payload_hash
 - consume_status
-- consume_attempt_count
-- last_error_code
-- last_error_message
 - correlation_id
-- causation_id
-- received_at
-- consumed_at
+- erp_company_context_id
 - created_at
+- consumed_at
 - updated_at
 
-sync_event_type_examples:
-- persona_to_business_usage_permission_synced
-- persona_to_business_access_state_synced
-- persona_to_business_release_validity_synced
-- persona_to_business_usage_binding_synced
-- persona_to_business_trust_state_synced
-
-consume_status_enum:
-- pending
-- consuming
-- consumed
-- failed
-- dead_lettered
-- ignored_duplicate
-
 rules:
-- Persona-originated sync results must land here before reflection
-- duplicate source_event_id must be safely ignored or merged idempotently
-- consume_status must be auditable
+- erp_company_context_id is optional
+- inbound sync truth must not assume company-scope by default
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/060.event/010303060000001_BUSINESS_EVENT_MODEL.md
---------------------------------------------------------------------------------
 
 # business_event
 
@@ -1506,12 +1522,9 @@ Represent a business platform event.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/210.business-core/0302100_BUSINESS_TENANT_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
-# BUSINESS TENANT MODEL
+# BUSINESS USER SCOPE MODEL
 # ============================================================
 
 status: canonical
@@ -1521,50 +1534,82 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define the canonical business tenant model.
+Define the official user-scope truth model of BusinessOS.
 
-model_type:
-- tenant truth model
+BusinessOS is primarily user-scoped.
+It hosts user-oriented small business applications
+with app-level paid features.
 
-primary_key:
-- business_tenant_id
+Some BusinessOS apps may send real operational data to ERP,
+for example:
+- travel expense data
+- business card data
 
-natural_key:
-- tenant_scope
-- tenant_code
-- tenant_version
-
-fields:
-- business_tenant_id
-- tenant_scope
-- tenant_code
-- tenant_version
-- tenant_status
-- owner_scope
-- tenant_class
-- effective_from
-- effective_until
-- created_at
-- updated_at
-
-tenant_status_enum:
-- draft
-- approved
-- active
-- suspended
-- archived
-
-contract_version_rule:
-Business tenants must expose explicit version semantics.
-
-truth_boundary:
-Business tenant truth belongs to BusinessOS business-core domain.
+When sending to ERP,
+BusinessOS attaches company context,
+because ERP is company-scoped.
 
 
+# ============================================================
+# 1. PRIMARY TRUTH HOLDER
+# ============================================================
 
---------------------------------------------------------------------------------
-FILE: 030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md
---------------------------------------------------------------------------------
+The default truth holder of BusinessOS is the user.
+
+BusinessOS must not treat:
+- company
+- company tenant
+- enterprise org
+
+as the default top-level truth holder.
+
+
+# ============================================================
+# 2. USER-SCOPE DOMAINS
+# ============================================================
+
+Typical user-scope domains may include:
+- travel expense draft/entry
+- business card entry/management
+- contacts
+- lightweight sales tracking
+- lightweight inventory notes
+- lightweight customer notes
+- task and schedule support
+- personal business utilities
+
+
+# ============================================================
+# 3. ERP-SEND EXCEPTION
+# ============================================================
+
+ERP-send is an exception path.
+
+When a BusinessOS app sends data to ERP,
+the payload must attach:
+- company_id
+- user/employee linkage where required
+- app context
+- payload type
+- mapping profile where required
+
+This does not change BusinessOS primary truth scope.
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+BusinessOS truth is primarily user-scoped.
+
+Core summary:
+
+- user is the default truth holder
+- apps are user-oriented
+- ERP-send adds company context only at send time
+
+
+
 
 # ============================================================
 # BUSINESS WORKSPACE MODEL
@@ -1577,50 +1622,87 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define the canonical business workspace model.
+Define the official workspace model of BusinessOS.
 
-model_type:
-- workspace truth model
+BusinessOS is primarily user-scoped.
+A workspace is a user-centered business app context,
+not a company truth container.
 
-primary_key:
-- business_workspace_id
+BusinessOS may support app-level paid features.
+Some apps may send real operational data to ERP.
+When sending to ERP, BusinessOS attaches company context
+because ERP is company-scoped.
 
-natural_key:
-- workspace_scope
+BusinessOS itself does not treat company as
+the default top-level truth holder.
+
+
+# ============================================================
+# 1. ROLE
+# ============================================================
+
+A workspace is the primary operating context
+for BusinessOS apps.
+
+It groups:
+- user-owned app data
+- app settings
+- app memberships where relevant
+- ERP-send capability flags where relevant
+
+A workspace is not equivalent to:
+- legal company truth
+- ERP company-scoped truth context
+- enterprise master truth
+
+
+# ============================================================
+# 2. CORE FIELDS
+# ============================================================
+
+recommended_fields:
+- workspace_id
+- owner_user_id
 - workspace_code
-- workspace_version
-
-fields:
-- business_workspace_id
-- workspace_scope
-- workspace_code
-- workspace_version
+- workspace_name
 - workspace_status
-- tenant_code
-- workspace_summary
-- effective_from
-- effective_until
+- default_app_scope
+- erp_send_capable_flag
 - created_at
 - updated_at
 
-workspace_status_enum:
-- draft
-- approved
-- active
-- suspended
-- archived
 
-contract_version_rule:
-Business workspaces must expose explicit version semantics.
+# ============================================================
+# 3. ERP CONTEXT
+# ============================================================
 
-truth_boundary:
-Business workspace truth belongs to BusinessOS business-core domain.
+A workspace may optionally carry ERP-send context hints,
+but these are not default truth identity.
+
+optional_fields:
+- default_company_id_for_erp_send
+- erp_mapping_profile_id
+- erp_send_policy_id
+
+These fields are used only when:
+- a BusinessOS app sends real data to ERP
+- the ERP payload must be company-scoped
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+BusinessOS workspace truth is user/workspace-scoped.
+
+Core summary:
+
+- workspace is a user-centered app container
+- workspace is not a company-scope root truth holder
+- company context is attached only for ERP-send flows
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/210.business-core/0302102_BUSINESS_ORG_UNIT_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS ORG UNIT MODEL
@@ -1675,9 +1757,6 @@ Business org unit truth belongs to BusinessOS business-core domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/210.business-core/0302103_BUSINESS_ACTOR_ROLE_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS ACTOR ROLE MODEL
@@ -1733,9 +1812,6 @@ Business actor role truth belongs to BusinessOS business-core domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/210.business-core/0302104_BUSINESS_WORK_REQUEST_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS WORK REQUEST MODEL
@@ -1787,9 +1863,6 @@ Business work request truth belongs to BusinessOS business-core domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/210.business-core/0302105_BUSINESS_APPROVAL_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS APPROVAL RECORD MODEL
@@ -1839,9 +1912,6 @@ Business approval truth belongs to BusinessOS business-core domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/210.business-core/0302106_BUSINESS_METRIC_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS METRIC RECORD MODEL
@@ -1892,9 +1962,129 @@ Business metric truth belongs to BusinessOS business-core domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/220.persona-integration/0302200_BUSINESS_PERSONA_BINDING_MODEL.md
---------------------------------------------------------------------------------
+
+# ============================================================
+# BUSINESS APP ACCESS CONTROL MODEL MAP
+# ============================================================
+
+status: canonical
+layer: 030.model
+system: business-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Define the minimum model map for app access control in BusinessOS.
+
+
+# ============================================================
+# 1. APP REQUESTED SCOPE
+# ============================================================
+
+core_fields:
+- app_requested_scope_id
+- app_id
+- resource_domain
+- action_type
+- requested_scope_level
+- sensitivity_level
+- scope_status
+- created_at
+- updated_at
+
+requested_scope_level examples:
+- basic
+- elevated
+- sensitive
+
+sensitivity_level examples:
+- low
+- normal
+- high
+- critical
+
+
+# ============================================================
+# 2. APP USER GRANTED SCOPE
+# ============================================================
+
+core_fields:
+- app_user_granted_scope_id
+- user_ref
+- app_id
+- resource_domain
+- action_type
+- grant_mode
+- grant_status
+- granted_at
+- revoked_at
+- created_at
+- updated_at
+
+grant_mode examples:
+- allow
+- deny
+- ask_each_time
+
+
+# ============================================================
+# 3. APP EFFECTIVE ACCESS DECISION
+# ============================================================
+
+core_fields:
+- app_effective_access_decision_id
+- user_ref
+- app_id
+- resource_domain
+- action_type
+- requested_scope_ref
+- granted_scope_ref
+- system_policy_ref
+- effective_decision
+- decision_reason_summary
+- decided_at
+- created_at
+
+effective_decision examples:
+- allowed
+- denied
+- ask_each_time
+- blocked_by_policy
+- unresolved_policy
+
+
+# ============================================================
+# 4. APP RESOURCE DOMAIN PROFILE
+# ============================================================
+
+core_fields:
+- app_resource_domain_profile_id
+- app_id
+- resource_domain
+- default_access_mode
+- export_allowed
+- delete_allowed
+- profile_status
+- created_at
+- updated_at
+
+
+# ============================================================
+# 5. FINAL MODEL MAP RULE
+# ============================================================
+
+This model map is the minimum support set
+for BusinessOS app access control.
+
+Core summary:
+
+- app requested scope is explicit
+- user granted scope is explicit
+- effective access decision is explicit
+- resource domain profile is explicit
+
+
+
 
 # ============================================================
 # BUSINESS PERSONA BINDING MODEL
@@ -1950,9 +2140,6 @@ Business persona binding truth belongs to BusinessOS persona-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/220.persona-integration/0302201_BUSINESS_PERSONA_USAGE_REQUEST_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA USAGE REQUEST MODEL
@@ -2004,9 +2191,6 @@ Business persona usage request truth belongs to BusinessOS persona-integration d
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/220.persona-integration/0302202_BUSINESS_PERSONA_USAGE_RESULT_SYNC_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA USAGE RESULT SYNC MODEL
@@ -2061,9 +2245,6 @@ Business persona usage result truth belongs to BusinessOS persona-integration do
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/220.persona-integration/0302203_BUSINESS_PERSONA_TRUST_SYNC_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA TRUST SYNC MODEL
@@ -2118,9 +2299,6 @@ Business persona trust sync truth belongs to BusinessOS persona-integration doma
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/220.persona-integration/0302204_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA GROWTH REQUEST MODEL
@@ -2172,9 +2350,6 @@ Business persona growth request truth belongs to BusinessOS persona-integration 
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/220.persona-integration/0302205_BUSINESS_PERSONA_ACCESS_ENTITLEMENT_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA ACCESS ENTITLEMENT MODEL
@@ -2231,9 +2406,6 @@ Business persona access entitlement truth belongs to BusinessOS persona-integrat
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302300_BUSINESS_EVENT_OUTBOX_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT OUTBOX MODEL
@@ -2288,9 +2460,6 @@ Business event outbox truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302301_BUSINESS_EVENT_INBOX_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT INBOX MODEL
@@ -2345,9 +2514,6 @@ Business event inbox truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302302_BUSINESS_DISPATCH_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS DISPATCH RECORD MODEL
@@ -2398,9 +2564,6 @@ Business dispatch truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302303_BUSINESS_SYNC_FAILURE_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS SYNC FAILURE RECORD MODEL
@@ -2452,9 +2615,6 @@ Business sync failure truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302304_BUSINESS_RETRY_PROFILE_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS RETRY PROFILE MODEL
@@ -2507,9 +2667,6 @@ Business retry profile truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302305_BUSINESS_DEAD_LETTER_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS DEAD LETTER RECORD MODEL
@@ -2559,9 +2716,6 @@ Business dead letter truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302306_BUSINESS_REPLAY_REQUEST_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS REPLAY REQUEST MODEL
@@ -2612,9 +2766,6 @@ Business replay request truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302307_BUSINESS_CORRECTION_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS CORRECTION RECORD MODEL
@@ -2665,9 +2816,6 @@ Business correction truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302308_BUSINESS_AUTHORITY_DECISION_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS AUTHORITY DECISION RECORD MODEL
@@ -2720,9 +2868,6 @@ Business authority decision truth belongs to BusinessOS event-integration domain
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/230.event-integration/0302309_BUSINESS_EVIDENCE_LINKAGE_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVIDENCE LINKAGE MODEL
@@ -2772,9 +2917,6 @@ Business evidence linkage truth belongs to BusinessOS event-integration domain.
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/240.cross-cutting-completion/0302400_BUSINESS_LIFECYCLE_STATE_PROFILE_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS LIFECYCLE STATE PROFILE MODEL
@@ -2827,9 +2969,6 @@ Business lifecycle state profile truth belongs to BusinessOS cross-cutting-compl
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/240.cross-cutting-completion/0302401_BUSINESS_APPROVAL_TRAIL_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS APPROVAL TRAIL MODEL
@@ -2879,9 +3018,6 @@ Business approval trail truth belongs to BusinessOS cross-cutting-completion dom
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/240.cross-cutting-completion/0302402_BUSINESS_OWNERSHIP_BOUNDARY_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OWNERSHIP BOUNDARY RECORD MODEL
@@ -2932,9 +3068,6 @@ Business ownership boundary truth belongs to BusinessOS cross-cutting-completion
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/240.cross-cutting-completion/0302403_BUSINESS_COMPATIBILITY_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS COMPATIBILITY RECORD MODEL
@@ -2984,9 +3117,6 @@ Business compatibility truth belongs to BusinessOS cross-cutting-completion doma
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/240.cross-cutting-completion/0302404_BUSINESS_AUDIT_RECONSTRUCTION_BUNDLE_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS AUDIT RECONSTRUCTION BUNDLE MODEL
@@ -3036,9 +3166,6 @@ Business audit reconstruction truth belongs to BusinessOS cross-cutting-completi
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/240.cross-cutting-completion/0302405_BUSINESS_SHARED_RETRY_PROFILE_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS SHARED RETRY PROFILE MODEL
@@ -3091,9 +3218,6 @@ Business shared retry profile truth belongs to BusinessOS cross-cutting-completi
 
 
 
---------------------------------------------------------------------------------
-FILE: 030.model/240.cross-cutting-completion/0302406_BUSINESS_SHARED_DEAD_LETTER_RECORD_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS SHARED DEAD LETTER RECORD MODEL
@@ -3143,26 +3267,6 @@ Business shared dead letter truth belongs to BusinessOS cross-cutting-completion
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/0400001_INDEX.md
---------------------------------------------------------------------------------
-
-# ============================================================
-# BUSINESS OS
-# 30 INDEX
-# ============================================================
-
-31_BUSINESS_OS_RUNTIME_MODEL.md
-32_BUSINESS_OS_EVENT_MODEL.md
-33_BUSINESS_OS_STATE_MACHINE.md
-34_BUSINESS_OS_WORKFLOW_MODEL.md
-35_BUSINESS_OS_SCHEDULER_MODEL.md
-
-
-
---------------------------------------------------------------------------------
-FILE: 040.runtime/0400002_OVERVIEW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS
@@ -3194,9 +3298,6 @@ of BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/0400003_BUSINESS_OS_RUNTIME_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS RUNTIME MODEL
@@ -3221,9 +3322,6 @@ sync coordination
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/0400004_BUSINESS_OS_EVENT_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS EVENT MODEL
@@ -3249,9 +3347,6 @@ notification_triggered
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/0400005_BUSINESS_OS_STATE_MACHINE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS STATE MACHINE
@@ -3277,9 +3372,6 @@ archived
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/0400006_BUSINESS_OS_WORKFLOW_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS WORKFLOW MODEL
@@ -3301,9 +3393,6 @@ for small business applications.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/0400007_BUSINESS_OS_SCHEDULER_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS SCHEDULER MODEL
@@ -3325,9 +3414,6 @@ inside BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/060.integration/0400008_BUSINESS_SYNC_CONSUMER_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS SYNC CONSUMER RUNTIME
@@ -3379,9 +3465,6 @@ Failed events remain retryable unless dead-lettered by policy.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/060.integration/0400009_BUSINESS_EVENT_OUTBOX_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT OUTBOX RUNTIME
@@ -3426,9 +3509,6 @@ After successful dispatch, payload must be treated as immutable.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/060.integration/0400010_BUSINESS_TO_PERSONA_GROWTH_REQUEST_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS TO PERSONA GROWTH REQUEST RUNTIME
@@ -3473,9 +3553,6 @@ Persona truth changes only inside PersonaOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/060.integration/0400011_PERSONA_GROWTH_RESULT_CONSUME_RUNTIME.md
---------------------------------------------------------------------------------
 
 # PERSONA GROWTH RESULT CONSUME RUNTIME
 
@@ -3494,9 +3571,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/060.integration/0400011_PERSONA_USAGE_PERMISSION_CONSUME_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # PERSONA USAGE PERMISSION CONSUME RUNTIME
@@ -3536,9 +3610,6 @@ business exposure is expanded.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/060.integration/0400012_PERSONA_TRUST_SYNC_CONSUME_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # PERSONA TRUST SYNC CONSUME RUNTIME
@@ -3575,9 +3646,6 @@ before exposing Persona broadly.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS CORE RUNTIME
@@ -3590,50 +3658,124 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define runtime for tenant, workspace, org, role, workflow, approval, and metric handling.
+Define runtime for user, workspace, app, role, workflow, approval,
+and metric handling inside BusinessOS.
+
+BusinessOS is primarily user-scoped.
+Company context is not a default runtime root.
+Company context is attached only when an ERP-send-capable app flow
+needs company-scoped outbound payload generation.
 
 runtime_scope:
 - validate business target
-- validate tenant and org basis
+- validate user, workspace, app, and authority basis
 - update core business lifecycle state
 - preserve business traceability
+- attach company context only for ERP-send-capable outbound flows
 
 trigger_conditions:
-- tenant approved
+- user active
 - workspace activated
-- org revised
+- app action invoked
 - work request created
 - approval recorded
+- ERP-send requested where supported
 
 processing_steps:
 1 resolve business target
-2 verify tenant, workspace, org, and authority basis
+2 verify user, workspace, app, and authority basis
 3 apply business state transition
-4 persist business result
-5 preserve audit and business trace
+4 if ERP-send is requested, verify company context and mapping basis
+5 persist business result
+6 preserve audit and business trace
 
-state_transition:
-- draft -> approved
-- approved -> active
-- active -> suspended
-- active -> archived
-- created -> approved
-- approved -> completed
-- approved -> rejected
+state_rule:
+Normal BusinessOS local behavior remains user/workspace-scoped.
 
-success_condition:
-- business core lifecycle updated explicitly
+erp_send_rule:
+ERP-send is optional and must fail closed if required company context,
+mapping profile, or payload type is unresolved.
 
-failure_condition:
-- invalid target
-- tenant, org, or authority basis unresolved
-- persistence failure
+truth_boundary:
+BusinessOS truth is primarily user-scoped.
+ERP payload truth becomes company-scoped only at outbound send time.
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/220.persona-integration/0402200_BUSINESS_PERSONA_BINDING_RUNTIME.md
---------------------------------------------------------------------------------
+
+# ============================================================
+# BUSINESS APP ACCESS CONTROL RUNTIME
+# ============================================================
+
+status: canonical
+layer: 040.runtime
+system: business-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Define runtime for app access control in BusinessOS.
+
+
+# ============================================================
+# 1. RUNTIME ROLE
+# ============================================================
+
+The runtime must evaluate:
+- whether requested scope exists
+- whether user grant exists and is active
+- whether system policy allows the action
+- whether sensitive action reconfirmation is required
+- whether effective access is allowed
+
+
+# ============================================================
+# 2. EFFECTIVE ACCESS RULE
+# ============================================================
+
+The runtime must determine effective access as:
+
+app_requested_scope
+AND
+user_granted_scope
+AND
+system_policy
+
+This is mandatory.
+
+
+# ============================================================
+# 3. SENSITIVE ACTION RULE
+# ============================================================
+
+If grant_mode is ask_each_time,
+runtime must require explicit confirmation
+before the action proceeds.
+
+
+# ============================================================
+# 4. FAIL-CLOSED RULE
+# ============================================================
+
+The runtime must fail closed if:
+- requested scope is missing
+- granted scope is missing where required
+- system policy is unresolved
+- effective access cannot be computed
+
+
+# ============================================================
+# 5. FINAL RUNTIME RULE
+# ============================================================
+
+BusinessOS app access runtime must be:
+- scope-aware
+- user-grant-aware
+- API-enforced
+- fail-closed
+
+
+
 
 # ============================================================
 # BUSINESS PERSONA BINDING RUNTIME
@@ -3685,9 +3827,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/220.persona-integration/0402201_BUSINESS_PERSONA_SYNC_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA SYNC RUNTIME
@@ -3743,9 +3882,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/230.event-integration/0402300_BUSINESS_EVENT_DISPATCH_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT DISPATCH RUNTIME
@@ -3803,9 +3939,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/230.event-integration/0402301_BUSINESS_FAILURE_RETRY_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS FAILURE RETRY RUNTIME
@@ -3863,9 +3996,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/230.event-integration/0402302_BUSINESS_REPLAY_CORRECTION_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS REPLAY CORRECTION RUNTIME
@@ -3920,9 +4050,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/240.cross-cutting-completion/0402400_BUSINESS_LIFECYCLE_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS LIFECYCLE RUNTIME
@@ -3977,9 +4104,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/240.cross-cutting-completion/0402401_BUSINESS_RETRY_DEAD_LETTER_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS RETRY DEAD LETTER RUNTIME
@@ -4037,9 +4161,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 040.runtime/240.cross-cutting-completion/0402402_BUSINESS_GOVERNANCE_RUNTIME.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS GOVERNANCE RUNTIME
@@ -4093,9 +4214,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/040.persona/0500001_PERSONA_BUSINESS_BINDING_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # PERSONA BUSINESS BINDING FLOW
@@ -4128,9 +4246,6 @@ Binding requires compatible access and sufficient trust.
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/040.persona/0500002_PERSONA_BUSINESS_ACCESS_SYNC_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # PERSONA BUSINESS ACCESS SYNC FLOW
@@ -4159,9 +4274,6 @@ not trust-side exposure strength.
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/060.integration/0500003_BUSINESS_TO_PERSONA_GROWTH_REQUEST_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS TO PERSONA GROWTH REQUEST FLOW
@@ -4197,9 +4309,6 @@ PersonaOS decides and applies growth truth.
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/060.integration/0500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_SYNC_FLOW.md
---------------------------------------------------------------------------------
 
 # PERSONA TO BUSINESS GROWTH RESULT SYNC FLOW
 
@@ -4218,9 +4327,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/060.integration/0500004_PERSONA_TO_BUSINESS_USAGE_RESULT_SYNC_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # PERSONA TO BUSINESS USAGE RESULT SYNC FLOW
@@ -4250,9 +4356,6 @@ result_examples:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/060.integration/0500005_PERSONA_TO_BUSINESS_TRUST_SYNC_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # PERSONA TO BUSINESS TRUST SYNC FLOW
@@ -4287,9 +4390,6 @@ Both must be evaluated together.
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS CORE FLOW
@@ -4302,20 +4402,141 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define the canonical business core flow.
+Define the official core flow of BusinessOS.
 
-flow_steps:
-1 business core action occurs
-2 tenant, org, and authority basis are verified
-3 business-core runtime updates state
-4 workflow or approval path may follow
-5 business trace remains preserved
+BusinessOS is primarily user-scoped.
+This flow governs user/workspace-scoped app operation
+and the optional ERP-send path.
 
 
+# ============================================================
+# 1. PRIMARY FLOW
+# ============================================================
 
---------------------------------------------------------------------------------
-FILE: 050.flow/220.persona-integration/0502200_BUSINESS_PERSONA_INTEGRATION_FLOW.md
---------------------------------------------------------------------------------
+Primary flow:
+
+user
+-> workspace
+-> app selection
+-> app data creation/update
+-> app-level paid feature where applicable
+-> optional ERP-send evaluation
+-> ERP-send payload creation where applicable
+
+BusinessOS core flow does not require
+company-scope truth for normal local use.
+
+
+# ============================================================
+# 2. ERP-SEND FLOW
+# ============================================================
+
+ERP-send flow:
+
+user-scoped app record
+-> ERP-send eligibility check
+-> company context attachment
+-> mapping/profile resolution
+-> ERP payload generation
+-> ERP submission
+
+Company context is attached only when needed
+for ERP submission.
+
+
+# ============================================================
+# 3. REQUIRED CHECKS
+# ============================================================
+
+Primary checks:
+- user exists
+- workspace exists
+- app scope is valid
+- paid feature entitlement is valid where required
+
+ERP-send checks:
+- ERP-send is enabled for the app
+- company_id is available
+- mapping profile is valid where required
+- payload type is valid
+
+No ERP-send may proceed without required company context.
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+BusinessOS core flow is user/workspace-first.
+
+Core summary:
+
+- normal BusinessOS flow is user-scoped
+- ERP-send is an optional company-context attachment path
+
+
+
+
+# ============================================================
+# BUSINESS APP ACCESS CONTROL FLOW
+# ============================================================
+
+status: canonical
+layer: 050.flow
+system: business-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Define flow for app access control in BusinessOS.
+
+
+# ============================================================
+# 1. APP INSTALL / FIRST-RUN FLOW
+# ============================================================
+
+app install or first run
+-> requested scopes displayed
+-> user grant selection
+-> grant records stored
+-> app becomes usable under effective access rules
+
+
+# ============================================================
+# 2. APP RUNTIME ACCESS FLOW
+# ============================================================
+
+app action request
+-> requested scope lookup
+-> user grant lookup
+-> system policy lookup
+-> effective access decision
+-> allow / deny / ask_each_time
+
+
+# ============================================================
+# 3. SETTINGS UPDATE FLOW
+# ============================================================
+
+user opens app permission settings
+-> current grants displayed
+-> user modifies grants
+-> grant records updated
+-> future runtime decisions change accordingly
+
+
+# ============================================================
+# 4. FINAL FLOW RULE
+# ============================================================
+
+BusinessOS app access flow must remain:
+- explicit
+- user-grant-aware
+- runtime-checkable
+- policy-enforced
+
+
+
 
 # ============================================================
 # BUSINESS PERSONA INTEGRATION FLOW
@@ -4339,9 +4560,6 @@ flow_steps:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/230.event-integration/0502300_BUSINESS_EVENT_DISPATCH_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT DISPATCH FLOW
@@ -4365,9 +4583,6 @@ flow_steps:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/230.event-integration/0502301_BUSINESS_FAILURE_RETRY_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS FAILURE RETRY FLOW
@@ -4391,9 +4606,6 @@ flow_steps:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/230.event-integration/0502302_BUSINESS_REPLAY_CORRECTION_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS REPLAY CORRECTION FLOW
@@ -4417,9 +4629,6 @@ flow_steps:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/240.cross-cutting-completion/0502400_BUSINESS_LIFECYCLE_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS LIFECYCLE FLOW
@@ -4443,9 +4652,6 @@ flow_steps:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/240.cross-cutting-completion/0502401_BUSINESS_RETRY_DEAD_LETTER_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS RETRY DEAD LETTER FLOW
@@ -4469,9 +4675,6 @@ flow_steps:
 
 
 
---------------------------------------------------------------------------------
-FILE: 050.flow/240.cross-cutting-completion/0502402_BUSINESS_GOVERNANCE_FLOW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS GOVERNANCE FLOW
@@ -4495,9 +4698,6 @@ flow_steps:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/060.integration/0700008_BUSINESS_SYNC_CONSUME_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS SYNC CONSUME OPERATION
@@ -4540,9 +4740,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/060.integration/0700009_BUSINESS_OUTBOX_DISPATCH_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OUTBOX DISPATCH OPERATION
@@ -4586,9 +4783,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/060.integration/0700010_BUSINESS_GROWTH_SYNC_RETRY_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS GROWTH SYNC RETRY OPERATION
@@ -4631,26 +4825,6 @@ terminal_failure_examples:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/0700001_INDEX.md
---------------------------------------------------------------------------------
-
-# ============================================================
-# BUSINESS OS
-# 50 INDEX
-# ============================================================
-
-51_BUSINESS_OS_DEPLOYMENT_MODEL.md
-52_BUSINESS_OS_BACKUP_RULE.md
-53_BUSINESS_OS_MONITORING_MODEL.md
-54_BUSINESS_OS_FAILURE_HANDLING.md
-55_BUSINESS_OS_LOGGING_MODEL.md
-
-
-
---------------------------------------------------------------------------------
-FILE: 070.operations/0700002_OVERVIEW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS
@@ -4682,9 +4856,6 @@ of BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/0700003_BUSINESS_OS_DEPLOYMENT_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS DEPLOYMENT MODEL
@@ -4706,9 +4877,6 @@ for BusinessOS components.
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/0700004_BUSINESS_OS_BACKUP_RULE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS BACKUP RULE
@@ -4730,9 +4898,6 @@ BusinessOS local and synced data.
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/0700005_BUSINESS_OS_MONITORING_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS MONITORING MODEL
@@ -4754,9 +4919,6 @@ runtime observation points.
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/0700006_BUSINESS_OS_FAILURE_HANDLING.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS FAILURE HANDLING
@@ -4778,9 +4940,6 @@ for BusinessOS applications and runtime.
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/0700007_BUSINESS_OS_LOGGING_MODEL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS LOGGING MODEL
@@ -4802,9 +4961,6 @@ for BusinessOS runtime and apps.
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS CORE OPERATION
@@ -4817,27 +4973,36 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define operational handling for business core lifecycle.
+Define the canonical operational procedure
+for BusinessOS core handling.
+
+BusinessOS is primarily user-scoped.
+Operational checks must therefore be rooted in:
+- user basis
+- workspace basis
+- app basis
+- authority basis
+- ERP-send context only when explicitly requested
 
 operation_steps:
-1 inspect business target and tenant basis
-2 invoke business-core runtime
-3 persist business outcome
-4 preserve business and audit trace
+1 inspect business target and user/workspace/app basis
+2 verify authority and app entitlement
+3 execute user-scoped business operation
+4 if ERP-send is requested, verify ERP-send permission, company context, and mapping basis
+5 persist result and audit trace
+6 expose retry/failure path where applicable
 
-success_condition:
-- business core lifecycle handled explicitly
+rules:
+- normal BusinessOS operation must not require company scope
+- ERP-send is optional and must fail closed when required company context is missing
+- tenant-as-company interpretation is invalid for BusinessOS operations
 
-failure_condition:
-- invalid target
-- basis unresolved
-- runtime or persistence failure
+final_rule:
+BusinessOS operations are user/workspace-first,
+with optional outbound ERP-send company context.
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/220.persona-integration/0702200_BUSINESS_PERSONA_INTEGRATION_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA INTEGRATION OPERATION
@@ -4868,9 +5033,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/230.event-integration/0702300_BUSINESS_EVENT_DISPATCH_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT DISPATCH OPERATION
@@ -4901,9 +5063,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/230.event-integration/0702301_BUSINESS_FAILURE_RETRY_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS FAILURE RETRY OPERATION
@@ -4934,9 +5093,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/230.event-integration/0702302_BUSINESS_REPLAY_CORRECTION_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS REPLAY CORRECTION OPERATION
@@ -4967,9 +5123,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/240.cross-cutting-completion/0702400_BUSINESS_LIFECYCLE_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS LIFECYCLE OPERATION
@@ -5000,9 +5153,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/240.cross-cutting-completion/0702401_BUSINESS_RETRY_DEAD_LETTER_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS RETRY DEAD LETTER OPERATION
@@ -5033,9 +5183,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 070.operations/240.cross-cutting-completion/0702402_BUSINESS_GOVERNANCE_OPERATION.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS GOVERNANCE OPERATION
@@ -5067,9 +5214,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/010.core/0800001_BUSINESS_APP_POLICY.md
---------------------------------------------------------------------------------
 
 # BUSINESS APP POLICY
 
@@ -5087,9 +5231,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/010.core/0800002_BUSINESS_WORKSPACE_POLICY.md
---------------------------------------------------------------------------------
 
 # BUSINESS WORKSPACE POLICY
 
@@ -5107,9 +5248,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/020.access/0800003_BUSINESS_ACCESS_POLICY.md
---------------------------------------------------------------------------------
 
 # BUSINESS ACCESS POLICY
 
@@ -5127,29 +5265,60 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/020.access/0800004_BUSINESS_TENANT_BOUNDARY_POLICY.md
---------------------------------------------------------------------------------
 
-# BUSINESS TENANT BOUNDARY POLICY
+# ============================================================
+# BUSINESS USER SCOPE AND ERP SEND BOUNDARY POLICY
+# ============================================================
 
 status: canonical
-layer: policy
-domain: access
+layer: 080.policy
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## RULES
-- tenant boundary must be explicit
-- cross-tenant mutation is prohibited
-- cross-tenant references require explicit integration rules
-- tenant scope must be auditable
+purpose:
+Define the boundary between normal user-scoped BusinessOS truth
+and ERP-send company-scoped payload generation.
+
+
+# ============================================================
+# 1. USER SCOPE
+# ============================================================
+
+BusinessOS default scope:
+- user
+- workspace
+- app data
+
+This is the normal operating boundary.
+
+
+# ============================================================
+# 2. ERP-SEND COMPANY SCOPE
+# ============================================================
+
+When an app sends data to ERP,
+the outbound payload must attach company context.
+
+Examples:
+- company_id
+- employee/user linkage
+- payload type
+- mapping profile where required
+
+This is an outbound company-scoped integration boundary,
+not a change in BusinessOS primary truth holder.
+
+
+# ============================================================
+# 3. FINAL RULE
+# ============================================================
+
+BusinessOS is user-scoped.
+ERP-send payloads are company-scoped only at send time.
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/030.module/0800005_BUSINESS_MODULE_INSTALL_POLICY.md
---------------------------------------------------------------------------------
 
 # BUSINESS MODULE INSTALL POLICY
 
@@ -5167,9 +5336,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/030.module/0800006_BUSINESS_MODULE_ACTIVATION_POLICY.md
---------------------------------------------------------------------------------
 
 # BUSINESS MODULE ACTIVATION POLICY
 
@@ -5187,9 +5353,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/040.integration/0800007_BUSINESS_SYNC_CONSUMER_POLICY.md
---------------------------------------------------------------------------------
 
 # BUSINESS SYNC CONSUMER POLICY
 
@@ -5207,9 +5370,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/040.persona/0800007_BUSINESS_SYNC_CONSUMER_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS SYNC CONSUMER POLICY
@@ -5233,9 +5393,6 @@ policy_rules:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/040.persona/0800008_BUSINESS_PERSONA_USAGE_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA USAGE POLICY
@@ -5264,9 +5421,6 @@ policy_rules:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/040.persona/0800011_BUSINESS_PERSONA_TRUST_USAGE_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS PERSONA TRUST USAGE POLICY
@@ -5298,9 +5452,6 @@ evaluation_order:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/050.integration/0800009_BUSINESS_OUTBOX_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OUTBOX POLICY
@@ -5326,9 +5477,6 @@ policy_rules:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/050.integration/0800010_BUSINESS_TO_PERSONA_GROWTH_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS TO PERSONA GROWTH POLICY
@@ -5358,9 +5506,6 @@ approved_growth_examples:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS CORE POLICY
@@ -5373,19 +5518,139 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define policy rules for business core lifecycle.
+Define the official core policy of BusinessOS.
 
-policy_rules:
-- tenant, workspace, org, role, workflow, and approval basis must remain explicit
-- suspended, rejected, or archived business states must remain explicit
-- business traceability must remain preserved
-- business core truth must remain canonical
+BusinessOS is primarily user-scoped.
+Company context exists only as an attached context
+for ERP-send-capable app flows.
 
 
+# ============================================================
+# 1. CORE POLICY
+# ============================================================
 
---------------------------------------------------------------------------------
-FILE: 080.policy/220.persona-integration/0802200_BUSINESS_PERSONA_INTEGRATION_POLICY.md
---------------------------------------------------------------------------------
+BusinessOS must treat:
+- user
+- workspace
+- app data
+
+as primary truth domains.
+
+BusinessOS must not treat:
+- company
+- tenant
+- enterprise org
+
+as default root truth domains.
+
+
+# ============================================================
+# 2. ERP-SEND POLICY
+# ============================================================
+
+Some BusinessOS apps may send real operational data to ERP.
+
+Examples:
+- travel expense data
+- business card data
+
+When sending to ERP:
+- company context must be attached
+- ERP payload must become company-scoped
+- BusinessOS source truth remains user-scoped
+
+
+# ============================================================
+# 3. FAIL-CLOSED POLICY
+# ============================================================
+
+ERP-send must fail closed if:
+- company_id is missing
+- required mapping is missing
+- payload type is invalid
+- ERP-send permission is not enabled
+
+Normal BusinessOS user-scoped operation
+must remain valid without ERP linkage.
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+BusinessOS is user-scoped by default.
+
+Core summary:
+
+- user/workspace/app data are primary truth
+- ERP-send adds company context only when required
+- company is not default BusinessOS truth
+
+
+
+
+# ============================================================
+# BUSINESS APP ACCESS CONTROL POLICY
+# ============================================================
+
+status: canonical
+layer: 080.policy
+system: business-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Define policy for app access control in BusinessOS.
+
+
+# ============================================================
+# 1. CORE POLICY
+# ============================================================
+
+BusinessOS must treat:
+- user-scoped data ownership
+- app-declared requested scope
+- user-granted actual scope
+- runtime API enforcement
+
+as distinct concepts.
+
+
+# ============================================================
+# 2. USER OWNERSHIP POLICY
+# ============================================================
+
+User ownership of BusinessOS data
+does not grant automatic full app access.
+
+All app access must still be evaluated
+through OS API control.
+
+
+# ============================================================
+# 3. FAIL-CLOSED POLICY
+# ============================================================
+
+The system must fail closed if:
+- requested scope is unresolved
+- user grant is unresolved
+- system policy is unresolved
+- effective access cannot be computed
+
+
+# ============================================================
+# 4. FINAL POLICY RULE
+# ============================================================
+
+BusinessOS app access control policy must be:
+- user-scoped in ownership
+- app-scoped in request
+- user-grant-aware in permission
+- API-controlled in enforcement
+- fail-closed
+
+
+
 
 # ============================================================
 # BUSINESS PERSONA INTEGRATION POLICY
@@ -5417,9 +5682,6 @@ evaluation_order:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/230.event-integration/0802300_BUSINESS_EVENT_DISPATCH_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT DISPATCH POLICY
@@ -5450,9 +5712,6 @@ evaluation_order:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/230.event-integration/0802301_BUSINESS_FAILURE_RETRY_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS FAILURE RETRY POLICY
@@ -5488,9 +5747,6 @@ dead_letter_conditions:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/230.event-integration/0802302_BUSINESS_REPLAY_CORRECTION_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS REPLAY CORRECTION POLICY
@@ -5520,9 +5776,6 @@ evaluation_order:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/240.cross-cutting-completion/0802400_BUSINESS_LIFECYCLE_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS LIFECYCLE POLICY
@@ -5545,9 +5798,6 @@ policy_rules:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/240.cross-cutting-completion/0802401_BUSINESS_RETRY_DEAD_LETTER_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS RETRY DEAD LETTER POLICY
@@ -5583,9 +5833,6 @@ dead_letter_conditions:
 
 
 
---------------------------------------------------------------------------------
-FILE: 080.policy/240.cross-cutting-completion/0802402_BUSINESS_GOVERNANCE_POLICY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS GOVERNANCE POLICY
@@ -5616,9 +5863,6 @@ evaluation_order:
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/010.launcher/0900001_BUSINESS_APP_LAUNCHER_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS APP LAUNCHER INTERFACE
 
@@ -5637,9 +5881,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/010.launcher/0900002_BUSINESS_MODULE_SELECTOR_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS MODULE SELECTOR INTERFACE
 
@@ -5658,9 +5899,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/020.workspace/0900003_BUSINESS_WORKSPACE_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS WORKSPACE INTERFACE
 
@@ -5679,9 +5917,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/020.workspace/0900004_BUSINESS_WORKSPACE_MEMBER_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS WORKSPACE MEMBER INTERFACE
 
@@ -5700,9 +5935,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/030.admin/0900005_BUSINESS_ADMIN_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS ADMIN INTERFACE
 
@@ -5721,9 +5953,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/030.admin/0900006_BUSINESS_ACCESS_ADMIN_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS ACCESS ADMIN INTERFACE
 
@@ -5742,9 +5971,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/040.persona/0900007_BUSINESS_PERSONA_BINDING_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS PERSONA BINDING INTERFACE
 
@@ -5763,9 +5989,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/040.persona/0900008_BUSINESS_PERSONA_SYNC_ADMIN_INTERFACE.md
---------------------------------------------------------------------------------
 
 # BUSINESS PERSONA SYNC ADMIN INTERFACE
 
@@ -5786,9 +6009,6 @@ Define the administrative interface used to inspect outbound growth requests and
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS CORE INTERFACE DETAIL
@@ -5801,28 +6021,123 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define interface detail for business core lifecycle handling.
+Define the interface detail for BusinessOS core operations.
 
-required_fields:
-- tenant_code or workspace_code or org_code or request_ref
-- owner_scope or requester_scope
+BusinessOS is primarily user-scoped.
+Core interfaces must therefore resolve from:
+- user_id
+- workspace_id or workspace_code
+- app/module context
+- request_ref or correlation_id
+- ERP-send company context only when explicitly needed
+
+required_identifiers:
+- user_id or business_user_id
+- workspace_id or workspace_code or request_ref
+- app_code or module_code where relevant
 - authority_basis
-- source_state_version where applicable
 - correlation_id
 
-success_condition:
-- business core request classified and routed safely
+optional_identifiers:
+- erp_company_context_id
+- erp_mapping_profile_id
+- erp_payload_type
 
-failure_condition:
-- invalid target
-- missing tenant, org, or authority basis
-- incompatible business-core handling
+error_conditions:
+- missing user basis
+- missing workspace or request basis
+- missing authority basis
+- missing ERP company context when ERP-send is requested
+- invalid app/module context
+- invalid mapping profile where required
+
+rules:
+- default BusinessOS interface resolution is user/workspace-first
+- ERP-send company context is optional except for outbound ERP-send actions
+- tenant_code is not a valid default root identifier for BusinessOS core interfaces
+
+final_rule:
+BusinessOS core interfaces must not assume company-tenant scope.
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/220.persona-integration/0902200_BUSINESS_PERSONA_INTEGRATION_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
+
+# ============================================================
+# BUSINESS APP ACCESS CONTROL INTERFACE DETAIL
+# ============================================================
+
+status: canonical
+layer: 090.interface
+system: business-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Define interface detail for app access control in BusinessOS.
+
+
+# ============================================================
+# 1. APP REQUESTED SCOPE INTERFACE
+# ============================================================
+
+required_fields:
+- app_id
+- resource_domain
+- action_type
+- requested_scope_level
+- sensitivity_level
+- correlation_id
+
+
+# ============================================================
+# 2. USER GRANT INTERFACE
+# ============================================================
+
+required_fields:
+- user_ref
+- app_id
+- resource_domain
+- action_type
+- grant_mode
+- correlation_id
+
+
+# ============================================================
+# 3. EFFECTIVE ACCESS CHECK INTERFACE
+# ============================================================
+
+required_fields:
+- user_ref
+- app_id
+- resource_domain
+- action_type
+- correlation_id
+
+
+# ============================================================
+# 4. OUTPUT RULE
+# ============================================================
+
+All outputs must distinguish:
+- allowed
+- denied
+- ask_each_time
+- blocked_by_policy
+- unresolved_policy
+
+
+# ============================================================
+# 5. FINAL INTERFACE RULE
+# ============================================================
+
+BusinessOS app access interfaces must be:
+- scope-aware
+- user-grant-aware
+- runtime-checkable
+- API-compatible
+
+
+
 
 # ============================================================
 # BUSINESS PERSONA INTEGRATION INTERFACE DETAIL
@@ -5849,9 +6164,6 @@ Business persona integration interfaces must remain actor-aware and contract-awa
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/230.event-integration/0902300_BUSINESS_EVENT_DISPATCH_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS EVENT DISPATCH INTERFACE DETAIL
@@ -5883,9 +6195,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/230.event-integration/0902301_BUSINESS_FAILURE_RETRY_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS FAILURE RETRY INTERFACE DETAIL
@@ -5912,9 +6221,6 @@ Business failure-retry interfaces must remain retry-aware and terminal-aware.
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/230.event-integration/0902302_BUSINESS_REPLAY_CORRECTION_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS REPLAY CORRECTION INTERFACE DETAIL
@@ -5941,9 +6247,6 @@ Business replay-correction interfaces must remain authority-aware and evidence-a
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/240.cross-cutting-completion/0902400_BUSINESS_LIFECYCLE_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS LIFECYCLE INTERFACE DETAIL
@@ -5975,9 +6278,6 @@ failure_condition:
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/240.cross-cutting-completion/0902401_BUSINESS_RETRY_DEAD_LETTER_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS RETRY DEAD LETTER INTERFACE DETAIL
@@ -6004,9 +6304,6 @@ Business retry-dead-letter interfaces must expose explicit recoverability semant
 
 
 
---------------------------------------------------------------------------------
-FILE: 090.interface/240.cross-cutting-completion/0902402_BUSINESS_GOVERNANCE_INTERFACE_DETAIL.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS GOVERNANCE INTERFACE DETAIL
@@ -6033,9 +6330,6 @@ Business governance interfaces must remain authority-aware and compatibility-awa
 
 
 
---------------------------------------------------------------------------------
-FILE: 100.security/010.access/1000001_BUSINESS_ACCESS_SECURITY.md
---------------------------------------------------------------------------------
 
 # BUSINESS ACCESS SECURITY
 
@@ -6054,29 +6348,68 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 100.security/020.tenant/1000002_BUSINESS_TENANT_SECURITY.md
---------------------------------------------------------------------------------
 
-# BUSINESS TENANT SECURITY
+# ============================================================
+# BUSINESS WORKSPACE SECURITY
+# ============================================================
 
 status: canonical
-layer: security
-domain: tenant
+layer: 100.security
+system: business-os
 owner: Boss
 prepared_by: Zero
 
-## RULES
-- tenant boundary must be explicit
-- cross-tenant mutation is prohibited
-- cross-tenant reference must use explicit integration rules
-- tenant-scoped data access must be auditable
+purpose:
+Define the official workspace/user-scope security model
+of BusinessOS.
+
+BusinessOS is primarily user-scoped.
+Security must therefore be enforced primarily on:
+- user identity
+- workspace membership
+- app entitlement
+- ERP-send permission where applicable
+
+
+# ============================================================
+# 1. PRIMARY SECURITY AXES
+# ============================================================
+
+Security must verify:
+- user identity
+- workspace access
+- app access
+- paid feature entitlement
+- ERP-send permission where applicable
+
+
+# ============================================================
+# 2. ERP-SEND SECURITY
+# ============================================================
+
+ERP-send requires additional checks:
+- company context availability
+- ERP-send authorization
+- payload mapping validity
+- outbound policy compliance
+
+No ERP-send may proceed on missing company context.
+
+
+# ============================================================
+# 3. FINAL RULE
+# ============================================================
+
+BusinessOS security is workspace/user-first.
+
+Core summary:
+
+- user/workspace/app security is primary
+- ERP-send adds extra outbound checks
+- company security is not the default root security model
 
 
 
---------------------------------------------------------------------------------
-FILE: 100.security/030.audit/1000003_BUSINESS_AUDIT_SECURITY.md
---------------------------------------------------------------------------------
 
 # BUSINESS AUDIT SECURITY
 
@@ -6094,9 +6427,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 100.security/040.integration/1000004_BUSINESS_INTEGRATION_SECURITY.md
---------------------------------------------------------------------------------
 
 # BUSINESS INTEGRATION SECURITY
 
@@ -6114,9 +6444,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 100.security/040.integration/1000005_BUSINESS_OUTBOX_SECURITY.md
---------------------------------------------------------------------------------
 
 # BUSINESS OUTBOX SECURITY
 
@@ -6134,9 +6461,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 110.infrastructure/010.runtime/1100001_BUSINESS_RUNTIME_INFRASTRUCTURE.md
---------------------------------------------------------------------------------
 
 # BUSINESS RUNTIME INFRASTRUCTURE
 
@@ -6161,37 +6485,6 @@ Define runtime infrastructure expectations for BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 110.infrastructure/020.storage/1100002_BUSINESS_STORAGE_INFRASTRUCTURE.md
---------------------------------------------------------------------------------
-
-# BUSINESS STORAGE INFRASTRUCTURE
-
-status: canonical
-layer: infrastructure
-domain: storage
-owner: Boss
-prepared_by: Zero
-
-## PURPOSE
-Define storage infrastructure expectations for BusinessOS.
-
-## COMPONENTS
-- configuration storage
-- workspace storage
-- membership and role storage
-- event storage
-- integration reference storage
-
-## RULES
-- storage scope must match tenant and workspace boundary
-- state persistence must be deterministic
-
-
-
---------------------------------------------------------------------------------
-FILE: 110.infrastructure/030.integration/1100003_BUSINESS_INTEGRATION_INFRASTRUCTURE.md
---------------------------------------------------------------------------------
 
 # BUSINESS INTEGRATION INFRASTRUCTURE
 
@@ -6216,9 +6509,6 @@ Define infrastructure needed for external and cross-system integration.
 
 
 
---------------------------------------------------------------------------------
-FILE: 110.infrastructure/040.operations/1100004_BUSINESS_OPERATIONAL_INFRASTRUCTURE.md
---------------------------------------------------------------------------------
 
 # BUSINESS OPERATIONAL INFRASTRUCTURE
 
@@ -6244,9 +6534,6 @@ Define operational infrastructure required by BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 120.implementation/060.integration/1200008_BUSINESS_PERSONA_SYNC_IMPLEMENTATION.md
---------------------------------------------------------------------------------
 
 # BUSINESS PERSONA SYNC IMPLEMENTATION
 
@@ -6266,26 +6553,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 120.implementation/1200001_INDEX.md
---------------------------------------------------------------------------------
-
-# ============================================================
-# BUSINESS OS
-# 40 INDEX
-# ============================================================
-
-41_BUSINESS_OS_MODULE_STRUCTURE.md
-42_BUSINESS_OS_API_INTERFACE_SPEC.md
-43_BUSINESS_OS_DATA_MODEL_MAPPING.md
-44_BUSINESS_OS_ANDROID_STRUCTURE.md
-45_BUSINESS_OS_DATABASE_MAPPING.md
-
-
-
---------------------------------------------------------------------------------
-FILE: 120.implementation/1200002_OVERVIEW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS
@@ -6317,9 +6584,6 @@ of BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 120.implementation/1200003_BUSINESS_OS_MODULE_STRUCTURE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS MODULE STRUCTURE
@@ -6345,9 +6609,6 @@ integration
 
 
 
---------------------------------------------------------------------------------
-FILE: 120.implementation/1200004_BUSINESS_OS_API_INTERFACE_SPEC.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS API INTERFACE SPEC
@@ -6369,9 +6630,6 @@ used by BusinessOS applications.
 
 
 
---------------------------------------------------------------------------------
-FILE: 120.implementation/1200005_BUSINESS_OS_DATA_MODEL_MAPPING.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS DATA MODEL MAPPING
@@ -6393,9 +6651,6 @@ implementation data structures.
 
 
 
---------------------------------------------------------------------------------
-FILE: 120.implementation/1200006_BUSINESS_OS_ANDROID_STRUCTURE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS ANDROID STRUCTURE
@@ -6417,9 +6672,6 @@ and package organization.
 
 
 
---------------------------------------------------------------------------------
-FILE: 120.implementation/1200007_BUSINESS_OS_DATABASE_MAPPING.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS DATABASE MAPPING
@@ -6441,9 +6693,35 @@ local or synced data storage.
 
 
 
---------------------------------------------------------------------------------
-FILE: 130.development/060.integration/1300008_BUSINESS_PERSONA_SYNC_IMPLEMENTATION_ORDER.md
---------------------------------------------------------------------------------
+
+# ============================================================
+# BUSINESS STORAGE SCOPE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: 120.implementation
+system: business-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Define storage-scope implementation guidance for BusinessOS.
+
+BusinessOS is primarily user-scoped.
+Storage scope must therefore match user/workspace boundary,
+not company boundary by default.
+
+storage_rule:
+- local BusinessOS truth is stored by user/workspace/app scope
+- company context is attached only for ERP-send-capable outbound flows
+- company-scoped payload storage must remain explicitly marked as ERP-send context
+- no default company-scope storage assumption is allowed
+
+final_rule:
+BusinessOS storage scope is user/workspace-first.
+
+
+
 
 # BUSINESS PERSONA SYNC IMPLEMENTATION ORDER
 
@@ -6464,26 +6742,6 @@ prepared_by: Zero
 
 
 
---------------------------------------------------------------------------------
-FILE: 130.development/1300001_INDEX.md
---------------------------------------------------------------------------------
-
-# ============================================================
-# BUSINESS OS
-# 60 INDEX
-# ============================================================
-
-61_BUSINESS_OS_CODING_STANDARD.md
-62_BUSINESS_OS_MODULE_RULE.md
-63_BUSINESS_OS_TEST_STRATEGY.md
-64_BUSINESS_OS_VERSION_RULE.md
-65_BUSINESS_OS_CI_RULE.md
-
-
-
---------------------------------------------------------------------------------
-FILE: 130.development/1300002_OVERVIEW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS
@@ -6515,9 +6773,6 @@ of BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 130.development/1300003_BUSINESS_OS_CODING_STANDARD.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS CODING STANDARD
@@ -6539,9 +6794,6 @@ for BusinessOS development.
 
 
 
---------------------------------------------------------------------------------
-FILE: 130.development/1300004_BUSINESS_OS_MODULE_RULE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS MODULE RULE
@@ -6563,9 +6815,6 @@ dependency rules.
 
 
 
---------------------------------------------------------------------------------
-FILE: 130.development/1300005_BUSINESS_OS_TEST_STRATEGY.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS TEST STRATEGY
@@ -6587,9 +6836,6 @@ BusinessOS apps and runtime.
 
 
 
---------------------------------------------------------------------------------
-FILE: 130.development/1300006_BUSINESS_OS_VERSION_RULE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS VERSION RULE
@@ -6611,9 +6857,6 @@ BusinessOS documents and modules.
 
 
 
---------------------------------------------------------------------------------
-FILE: 130.development/1300007_BUSINESS_OS_CI_RULE.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS CI RULE
@@ -6635,24 +6878,6 @@ BusinessOS repositories and builds.
 
 
 
---------------------------------------------------------------------------------
-FILE: 920.meta/9200001_INDEX.md
---------------------------------------------------------------------------------
-
-# ============================================================
-# BUSINESS OS
-# 90 INDEX
-# ============================================================
-
-91_BUSINESS_OS_CHANGELOG.md
-92_BUSINESS_OS_DEPENDENCY_MAP.md
-93_BUSINESS_OS_DOCUMENT_MAP.md
-
-
-
---------------------------------------------------------------------------------
-FILE: 920.meta/9200002_OVERVIEW.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS
@@ -6682,9 +6907,6 @@ Define metadata layer of BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 920.meta/9200003_BUSINESS_OS_CHANGELOG.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS CHANGELOG
@@ -6706,9 +6928,6 @@ in BusinessOS design.
 
 
 
---------------------------------------------------------------------------------
-FILE: 920.meta/9200004_BUSINESS_OS_DEPENDENCY_MAP.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS DEPENDENCY MAP
@@ -6730,9 +6949,6 @@ inside BusinessOS.
 
 
 
---------------------------------------------------------------------------------
-FILE: 920.meta/9200005_BUSINESS_OS_DOCUMENT_MAP.md
---------------------------------------------------------------------------------
 
 # ============================================================
 # BUSINESS OS DOCUMENT MAP

@@ -1,11 +1,11 @@
 # ============================================================
-# HOUSING BUILDER ARCHITECTURE
+# CITY BUILDER ARCHITECTURE
 # ============================================================
 
 status: canonical
 layer: architecture
-scope: housing-builder
-component: housing-builder
+scope: life-events-and-builders
+component: city-builder
 
 owner: Boss
 prepared_by: Zero
@@ -15,62 +15,104 @@ prepared_by: Zero
 # 1. PURPOSE
 # ============================================================
 
-Defines the official architecture for Housing Builder.
+Defines the official architecture
+for City Builder.
 
-Housing Builder is separate from Company Builder.
-It governs residential construction, purchase,
-design selection, interior/exterior setup,
-household fit, and move-in readiness.
+City Builder is separate from Company Builder
+and Nation Builder.
 
+City Builder handles:
 
-# ============================================================
-# 2. CORE RULE
-# ============================================================
-
-Housing Builder and Company Builder must remain separate.
-
-Housing Builder handles living space.
-Company Builder handles business entity and business site.
-
-
-# ============================================================
-# 3. CONSTRUCTION RULE
-# ============================================================
-
-Housing may be constructed only in housing-buildable zones.
-
-Construction execution must be performed by
-system construction_company.
-
-Construction cost is required,
-in the same structural sense as company establishment cost.
+- housing placement
+- residential block placement
+- urban block placement
+- city center placement
+- living area composition
+- city core composition
+- district-scale local layout
 
 
 # ============================================================
-# 4. SUPPORTED HOUSING TYPES
+# 2. BUILDER SEPARATION
 # ============================================================
 
-Supported types:
-- detached_house
-- two_family_house
-- townhouse
-- apartment_building
-- condominium_building
-- dormitory_residence
-- senior_residence
-- villa_house
-- shop_integrated_house
-- office_integrated_house
-- studio_integrated_house
-- rental_integrated_house
-- rental_shop
-- rental_office
-- rental_atelier
+City Builder and Company Builder
+must remain separate.
+
+City Builder handles urban spatial composition.
+
+Company Builder handles enterprise structure.
+
+Nation Builder handles institutional
+and sovereign structure.
 
 
 # ============================================================
-# 5. FINAL RULE
+# 3. PRIMARY OBJECT FAMILIES
 # ============================================================
 
-Housing Builder is the canonical living-space builder
-for residential and housing-origin mixed-use property.
+primary_object_families:
+- housing
+- residential_blocks
+- urban_blocks
+- city_centers
+- civic_core_zones
+- mixed_living_districts
+- settlement_expansion_zones
+
+
+# ============================================================
+# 4. PRIMARY ACTIONS
+# ============================================================
+
+primary_actions:
+- place_housing
+- place_residential_block
+- place_urban_block
+- place_city_center
+- place_prefectural_capital_core
+- place_regional_capital_core
+- configure_living_area_layout
+- expand_settlement_zone
+
+
+# ============================================================
+# 5. NATION BUILDER RELATION
+# ============================================================
+
+Nation Builder may define:
+
+- capital rules
+- city hierarchy rules
+- prefectural capital existence
+- regional capital existence
+- city-scale governance assumptions
+
+City Builder determines
+actual map placement and layout.
+
+
+# ============================================================
+# 6. COMPANY BUILDER RELATION
+# ============================================================
+
+Company Builder may place:
+
+- headquarters
+- stores
+- branches
+- enterprise facilities
+
+City Builder determines
+the surrounding urban structure
+into which those objects are placed.
+
+
+# ============================================================
+# 7. FINAL RULE
+# ============================================================
+
+City Builder is the canonical
+urban spatial builder.
+
+It is not limited to housing-only placement.

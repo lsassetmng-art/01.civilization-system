@@ -14,17 +14,19 @@ Reference Persona license or usage permission state inside BusinessOS.
 role:
 This model represents Business-visible permission state returned by PersonaOS.
 
+BusinessOS is primarily user-scoped.
+Company context may be attached only when ERP-send-capable app behavior
+requires outbound company-scoped payload construction.
+
 primary_key:
 - business_persona_license_ref_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
 
 fields:
 - business_persona_license_ref_id
-- company_id
 - business_user_id
 - persona_id
 - usage_permission_status
@@ -33,6 +35,7 @@ fields:
 - revoked_reason
 - effective_from
 - effective_until
+- erp_company_context_id
 - source_sync_event_id
 - source_sync_version
 - correlation_id
@@ -52,3 +55,4 @@ rules:
 - granted does not imply unrestricted exposure
 - BusinessOS must combine this model with trust ref
 - PersonaOS remains truth holder
+- erp_company_context_id is optional and must not be part of the default truth identity

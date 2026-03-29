@@ -1,0 +1,153 @@
+=== tenant / company_id / user-scope / ERP-send scope check ===
+
+---- tenant hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:34:- tenant-as-company interpretation is invalid for BusinessOS operations
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:32:- tenant
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:45:- tenant_code is not a valid default root identifier for BusinessOS core interfaces
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:48:BusinessOS core interfaces must not assume company-tenant scope.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:1:=== tenant / company_id / user-scope / ERP-send scope check ===
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:3:---- tenant hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md:36:- company tenant
+
+---- company_id hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_USER_SCOPE_AND_ERP_SEND_BOUNDARY_POLICY.md:36:- company_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:59:- company_id is missing
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:66:- company_id is available
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:1:=== tenant / company_id / user-scope / ERP-send scope check ===
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:8:/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:1:=== tenant / company_id / user-scope / ERP-send scope check ===
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:12:---- company_id hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md:70:- default_company_id_for_erp_send
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md:65:- company_id
+
+---- erp_company_context_id hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:30:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:22:---- erp_company_context_id hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000003_BUSINESS_PERSONA_RELEASE_REF_MODEL.md:37:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000003_BUSINESS_PERSONA_RELEASE_REF_MODEL.md:55:- erp_company_context_id is optional and not part of the natural key
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000005_BUSINESS_PERSONA_GROWTH_REF_MODEL.md:39:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000005_BUSINESS_PERSONA_GROWTH_REF_MODEL.md:56:- erp_company_context_id is optional and not part of the default truth identity
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000001_BUSINESS_PERSONA_ACCESS_REF_MODEL.md:40:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000001_BUSINESS_PERSONA_ACCESS_REF_MODEL.md:65:- erp_company_context_id is optional and must not be part of the default truth identity
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000002_BUSINESS_PERSONA_LICENSE_REF_MODEL.md:38:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000002_BUSINESS_PERSONA_LICENSE_REF_MODEL.md:58:- erp_company_context_id is optional and must not be part of the default truth identity
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md:36:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md:60:- erp_company_context_id is optional
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000006_BUSINESS_PERSONA_TRUST_REF_MODEL.md:38:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000006_BUSINESS_PERSONA_TRUST_REF_MODEL.md:58:- erp_company_context_id is optional and not part of the natural key
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000003_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md:26:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000003_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md:31:- erp_company_context_id is optional
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md:28:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md:34:- erp_company_context_id is optional
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000004_BUSINESS_SYNC_EVENT_INBOX_MODEL.md:25:- erp_company_context_id
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000004_BUSINESS_SYNC_EVENT_INBOX_MODEL.md:31:- erp_company_context_id is optional
+
+---- user-scoped / user/workspace hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:15:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:24:1 inspect business target and user/workspace/app basis
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:26:3 execute user-scoped business operation
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:37:BusinessOS operations are user/workspace-first,
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_USER_SCOPE_AND_ERP_SEND_BOUNDARY_POLICY.md:12:Define the boundary between normal user-scoped BusinessOS truth
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_USER_SCOPE_AND_ERP_SEND_BOUNDARY_POLICY.md:49:BusinessOS is user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:51:- BusinessOS source truth remains user-scoped
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:64:Normal BusinessOS user-scoped operation
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:72:BusinessOS is user-scoped by default.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:76:- user/workspace/app data are primary truth
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:43:- default BusinessOS interface resolution is user/workspace-first
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:15:This flow governs user/workspace-scoped app operation
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:43:user-scoped app record
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:77:BusinessOS core flow is user/workspace-first.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:81:- normal BusinessOS flow is user-scoped
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:15:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:44:Normal BusinessOS local behavior remains user/workspace-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:51:BusinessOS truth is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:44:---- user-scoped / user/workspace hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000003_BUSINESS_PERSONA_RELEASE_REF_MODEL.md:18:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000005_BUSINESS_PERSONA_GROWTH_REF_MODEL.md:18:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000001_BUSINESS_PERSONA_ACCESS_REF_MODEL.md:19:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000002_BUSINESS_PERSONA_LICENSE_REF_MODEL.md:17:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md:12:Represent BusinessOS-side binding between a user/workspace app context
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md:15:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md:16:Bindings should be rooted in user/workspace/app context.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000006_BUSINESS_PERSONA_TRUST_REF_MODEL.md:18:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000003_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md:36:- default BusinessOS outbound events remain user/workspace-scoped
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000004_BUSINESS_SYNC_EVENT_INBOX_MODEL.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md:83:BusinessOS workspace truth is user/workspace-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md:78:BusinessOS truth is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:15:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:56:- user/workspace/app security is primary
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/210.business-core/1202100_BUSINESS_STORAGE_SCOPE_IMPLEMENTATION.md:14:BusinessOS is primarily user-scoped.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/210.business-core/1202100_BUSINESS_STORAGE_SCOPE_IMPLEMENTATION.md:15:Storage scope must therefore match user/workspace boundary,
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/210.business-core/1202100_BUSINESS_STORAGE_SCOPE_IMPLEMENTATION.md:19:- local BusinessOS truth is stored by user/workspace/app scope
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/210.business-core/1202100_BUSINESS_STORAGE_SCOPE_IMPLEMENTATION.md:25:BusinessOS storage scope is user/workspace-first.
+
+---- ERP-send / company context hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:21:- ERP-send context only when explicitly requested
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:27:4 if ERP-send is requested, verify ERP-send permission, company context, and mapping basis
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:33:- ERP-send is optional and must fail closed when required company context is missing
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/070.operations/210.business-core/0702100_BUSINESS_CORE_OPERATION.md:38:with optional outbound ERP-send company context.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_USER_SCOPE_AND_ERP_SEND_BOUNDARY_POLICY.md:13:and ERP-send company-scoped payload generation.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_USER_SCOPE_AND_ERP_SEND_BOUNDARY_POLICY.md:33:the outbound payload must attach company context.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/020.access/0800004_BUSINESS_USER_SCOPE_AND_ERP_SEND_BOUNDARY_POLICY.md:50:ERP-send payloads are company-scoped only at send time.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:16:for ERP-send-capable app flows.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:49:- company context must be attached
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:58:ERP-send must fail closed if:
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:62:- ERP-send permission is not enabled
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/080.policy/210.business-core/0802100_BUSINESS_CORE_POLICY.md:77:- ERP-send adds company context only when required
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:20:- ERP-send company context only when explicitly needed
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:38:- missing ERP company context when ERP-send is requested
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/090.interface/210.business-core/0902100_BUSINESS_CORE_INTERFACE_DETAIL.md:44:- ERP-send company context is optional except for outbound ERP-send actions
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:16:and the optional ERP-send path.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:30:-> optional ERP-send evaluation
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:31:-> ERP-send payload creation where applicable
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:41:ERP-send flow:
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:44:-> ERP-send eligibility check
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:45:-> company context attachment
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:64:ERP-send checks:
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:65:- ERP-send is enabled for the app
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:70:No ERP-send may proceed without required company context.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/050.flow/210.business-core/0502100_BUSINESS_CORE_FLOW.md:82:- ERP-send is an optional company-context attachment path
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:17:Company context is attached only when an ERP-send-capable app flow
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:25:- attach company context only for ERP-send-capable outbound flows
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:33:- ERP-send requested where supported
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:39:4 if ERP-send is requested, verify company context and mapping basis
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/040.runtime/210.business-core/0402100_BUSINESS_CORE_RUNTIME.md:47:ERP-send is optional and must fail closed if required company context,
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:1:=== tenant / company_id / user-scope / ERP-send scope check ===
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:8:/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:1:=== tenant / company_id / user-scope / ERP-send scope check ===
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:16:/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:1:=== tenant / company_id / user-scope / ERP-send scope check ===
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:17:/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:8:/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:1:=== tenant / company_id / user-scope / ERP-send scope check ===
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/BUSINESS_OS_SCOPE_CHECK.txt:90:---- ERP-send / company context hits (live files only) ----
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000003_BUSINESS_PERSONA_RELEASE_REF_MODEL.md:19:Release visibility may later participate in ERP-send-capable app flows,
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000003_BUSINESS_PERSONA_RELEASE_REF_MODEL.md:20:but company context is optional and not part of default identity.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000005_BUSINESS_PERSONA_GROWTH_REF_MODEL.md:19:Company context is optional and used only when an ERP-send-capable flow
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000005_BUSINESS_PERSONA_GROWTH_REF_MODEL.md:20:needs to preserve outbound company context separately.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000001_BUSINESS_PERSONA_ACCESS_REF_MODEL.md:21:Company context may be attached only for ERP-send-capable app flows
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000002_BUSINESS_PERSONA_LICENSE_REF_MODEL.md:18:Company context may be attached only when ERP-send-capable app behavior
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/040.persona/010303040000004_BUSINESS_PERSONA_USAGE_BINDING_MODEL.md:17:Company context is optional and only relevant for ERP-send-capable flows.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000003_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md:16:when an ERP-send-capable flow must preserve outbound company context separately.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000003_BUSINESS_PERSONA_GROWTH_REQUEST_MODEL.md:32:- company context must not be part of the default identity of this model
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md:15:ERP company context may be attached only when the outbound event
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md:16:represents an ERP-send-capable app flow.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/050.integration/010303050000002_BUSINESS_EVENT_OUTBOX_MODEL.md:35:- company context must be attached only for ERP-send-capable outbound events
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md:20:When sending to ERP, BusinessOS attaches company context
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md:38:- ERP-send capability flags where relevant
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md:66:A workspace may optionally carry ERP-send context hints,
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302101_BUSINESS_WORKSPACE_MODEL.md:89:- company context is attached only for ERP-send flows
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md:24:BusinessOS attaches company context,
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md:61:ERP-send is an exception path.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/030.model/210.business-core/0302100_BUSINESS_USER_SCOPE_MODEL.md:84:- ERP-send adds company context only at send time
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:20:- ERP-send permission where applicable
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:32:- ERP-send permission where applicable
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:39:ERP-send requires additional checks:
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:40:- company context availability
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:41:- ERP-send authorization
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:45:No ERP-send may proceed on missing company context.
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/020.workspace/1000002_BUSINESS_WORKSPACE_SECURITY.md:57:- ERP-send adds extra outbound checks
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/210.business-core/1202100_BUSINESS_STORAGE_SCOPE_IMPLEMENTATION.md:20:- company context is attached only for ERP-send-capable outbound flows
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/120.implementation/210.business-core/1202100_BUSINESS_STORAGE_SCOPE_IMPLEMENTATION.md:21:- company-scoped payload storage must remain explicitly marked as ERP-send context

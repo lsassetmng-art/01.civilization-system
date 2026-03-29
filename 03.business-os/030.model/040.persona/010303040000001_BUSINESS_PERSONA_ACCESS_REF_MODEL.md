@@ -16,17 +16,20 @@ This model is a synchronized reference model.
 Truth belongs to PersonaOS.
 BusinessOS must not directly author Persona truth here.
 
+BusinessOS is primarily user-scoped.
+Company context must not be part of the default identity of this model.
+Company context may be attached only for ERP-send-capable app flows
+when needed as outbound integration context.
+
 primary_key:
 - business_persona_access_ref_id
 
 natural_key:
-- company_id
 - business_user_id
 - persona_id
 
 fields:
 - business_persona_access_ref_id
-- company_id
 - business_user_id
 - persona_id
 - persona_code
@@ -34,6 +37,7 @@ fields:
 - access_scope
 - access_granted_at
 - access_expires_at
+- erp_company_context_id
 - source_sync_event_id
 - source_sync_version
 - correlation_id
@@ -58,4 +62,5 @@ rules:
 - only Persona-originated sync results may change access_status
 - BusinessOS may cache and read this model
 - BusinessOS must treat expired and revoked as unusable
+- erp_company_context_id is optional and must not be part of the default truth identity
 - correlation_id must trace back to Persona sync result when applicable

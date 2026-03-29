@@ -1,11 +1,11 @@
 # ============================================================
-# HOUSING BUILDER RULE MASTER
+# CITY BUILDER RULE MASTER
 # ============================================================
 
 status: canonical
 layer: model
-scope: housing-builder
-component: housing-builder-rule-master
+scope: life-events-and-builders
+component: city-builder-rule-master
 
 owner: Boss
 prepared_by: Zero
@@ -15,53 +15,51 @@ prepared_by: Zero
 # 1. PURPOSE
 # ============================================================
 
-Defines configurable rule master values
-for Housing Builder.
+Defines the canonical rule master
+for City Builder.
 
 
 # ============================================================
-# 2. CORE RULE
+# 2. RULE MASTER FIELDS
 # ============================================================
 
-Housing Builder structure is canonical.
-Housing Builder operating conditions are configurable.
-
-This master may define:
-- enabled_housing_types
-- zone_compatibility_profile
-- buildable_zone_requirements
-- construction_cost_profile
-- purchase_cost_profile
-- design_cost_profile
-- equipment_cost_profile
-- default_construction_duration_days
-- move_in_requirements
-- nation_override_profile
-
-
-# ============================================================
-# 3. OFFICIAL FIELD SET
-# ============================================================
-
-Recommended fields:
-- housing_builder_rule_code
-- nation_id
+rule_master_fields:
+- city_builder_rule_code
+- rule_name
+- rule_scope
 - enabled_flag
-- enabled_housing_type_set
-- zone_compatibility_profile
-- buildable_zone_profile
-- construction_cost_profile
-- purchase_cost_profile
-- interior_exterior_cost_profile
-- default_construction_duration_days
-- move_in_requirements
-- notes
-- updated_at
+- severity
+- note
 
 
 # ============================================================
-# 4. FINAL RULE
+# 3. RULE THEMES
 # ============================================================
 
-Housing builder rule master controls variable build conditions,
-not housing builder core structure.
+rule_themes:
+- housing_placement_rule
+- residential_block_rule
+- urban_block_rule
+- city_center_rule
+- prefectural_capital_core_rule
+- regional_capital_core_rule
+- living_area_layout_rule
+- settlement_expansion_rule
+
+
+# ============================================================
+# 4. PRINCIPLE
+# ============================================================
+
+City Builder structure is canonical.
+City Builder operating conditions
+are configurable through rule masters.
+
+
+# ============================================================
+# 5. FINAL RULE
+# ============================================================
+
+City Builder rules
+must govern urban spatial composition,
+not housing-only logic.

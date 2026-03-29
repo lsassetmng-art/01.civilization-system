@@ -17,8 +17,8 @@ draft_identity:
   draft_status: draft
   builder_stage: draft
   created_by: system-template-seed
-  created_at: TBD
-  updated_at: TBD
+  created_at_pending: true
+  updated_at_pending: true
 
 template_binding:
   nation_template_code: commercial_nation_template
@@ -34,8 +34,8 @@ template_binding:
 
 symbolic_identity_bundle:
   source_mode: mixed
-  flag_asset_ref: TBD
-  emblem_asset_ref: TBD
+  flag_asset_ref_pending: true
+  emblem_asset_ref_pending: true
   national_color_palette:
     - gold
     - deep_blue

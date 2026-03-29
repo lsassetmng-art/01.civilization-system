@@ -15,25 +15,26 @@ role:
 Represent whether a Persona release/version is currently valid
 for BusinessOS usage.
 
+BusinessOS is primarily user-scoped.
+Release visibility may later participate in ERP-send-capable app flows,
+but company context is optional and not part of default identity.
+
 primary_key:
 - business_persona_release_ref_id
 
 natural_key:
-- company_id
+- business_user_id
 - persona_id
-- release_version
+- persona_release_id
 
 fields:
 - business_persona_release_ref_id
-- company_id
 - business_user_id
 - persona_id
-- release_version
-- release_status
-- compatibility_status
-- effective_from
-- effective_until
-- invalid_reason
+- persona_release_id
+- release_validity_status
+- release_scope
+- erp_company_context_id
 - source_sync_event_id
 - source_sync_version
 - correlation_id
@@ -41,19 +42,14 @@ fields:
 - created_at
 - updated_at
 
-release_status_enum:
+release_validity_status_enum:
 - pending
-- active
-- inactive
-- deprecated
+- valid
+- invalid
 - revoked
 - expired
 
-compatibility_status_enum:
-- compatible
-- limited
-- incompatible
-
 rules:
-- BusinessOS may only expose releases that are active and compatible
-- PersonaOS is truth holder for release validity
+- PersonaOS remains truth holder
+- BusinessOS must treat invalid/revoked as unusable
+- erp_company_context_id is optional and not part of the natural key
