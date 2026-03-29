@@ -22,7 +22,7 @@ bindings:
 - regional_governor -> campaign_politician_route
 - minister -> parliamentary_coalition_route
 - prime_minister -> parliamentary_coalition_route
-- head_of_state -> governance_specific_route
+- head_of_state -> electoral_head_of_state_route
 - regent -> bloodline_route
 - crown_heir -> bloodline_route
 - defense_minister -> military_command_route

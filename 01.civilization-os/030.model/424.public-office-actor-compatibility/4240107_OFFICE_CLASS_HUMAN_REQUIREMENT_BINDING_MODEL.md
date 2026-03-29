@@ -17,11 +17,11 @@ prepared_by: Zero
 
 bindings:
 - civil_service_office -> human_required
-- political_office -> office_specific_rule
-- military_office -> office_specific_rule
+- political_office -> electoral_human_with_legitimacy_required
+- military_office -> military_human_command_required
 - judicial_office -> human_required
-- ceremonial_office -> office_specific_rule
-- public_corporation_office -> office_specific_rule
+- ceremonial_office -> ceremonial_human_with_nation_override_required
+- public_corporation_office -> public_corporation_actor_compatible
 - support_execution_role -> no_human_requirement
 
 

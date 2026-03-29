@@ -62,8 +62,8 @@ default_compatibility:
     ai_robot: ineligible_non_human
 
 - theocratic_state:
-    user_persona: office_specific_rule
-    ai_human: office_specific_rule
+    user_persona: ceremonial_human_with_nation_override_required
+    ai_human: ceremonial_human_with_nation_override_required
     ai_robot: ineligible_non_human
 
 

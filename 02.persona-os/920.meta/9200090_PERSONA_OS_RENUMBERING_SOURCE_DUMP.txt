@@ -1,0 +1,254 @@
+# ============================================================
+# PERSONA OS RENUMBERING SOURCE DUMP
+# ============================================================
+
+generated_at: 2026-03-30 06:42:03 +0900
+base: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
+
+# ============================================================
+# ROOT DIRECTORIES
+# ============================================================
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/010.constitution
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/010.core
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/020.engine
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/030.dataflow
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/040.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.business
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/050.security
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/060.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/070.builder
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/020.catalog
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/030.binding
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/050.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/160.builder
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/220.rights-external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/230.external-sync
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/240.expression-composition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/250.cross-cutting-completion
+
+## SECOND-LEVEL DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/020.cognition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/030.emotion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/040.behavior
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/050.communication
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/060.social
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/070.capability
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/090.schedule
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/100.finance
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/110.security
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.external_rights
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/120.logs
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.simulation
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/140.visual
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/150.voice
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/040.external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/060.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/070.builder
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/220.rights-external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/230.external-sync
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/240.expression-composition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/250.cross-cutting-completion
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/040.external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.business
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/060.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/070.builder
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/220.rights-external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/230.external-sync
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/240.expression-composition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/250.cross-cutting-completion
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/010.engine
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/020.cognition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/030.behavior
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.external_rights
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/040.memory
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/050.social
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.communication
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/060.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/070.learning
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/080.lifecycle
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/090.system
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/220.rights-external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/230.external-sync
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/240.expression-composition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/250.cross-cutting-completion
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/220.rights-external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/230.external-sync
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/240.expression-composition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/250.cross-cutting-completion
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/050.business
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/070.builder
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/230.external-sync
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/240.expression-composition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/250.cross-cutting-completion
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/010.engine
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/020.cognition
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/020.visual-runtime
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/030.behavior
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.external
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/040.memory
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/050.communication
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/060.social
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/070.builder
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/070.learning
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/080.lifecycle
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/120.implementation/090.system
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/010.build
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/020.module
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/030.code
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.external_rights
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/040.test
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/050.deployment
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.ci
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/060.integration
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/070.builder
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/130.development/070.monitoring
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/010.actor
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/020.relationship
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/030.organization
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/040.economy
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/050.governance
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/060.culture
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/070.event
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/080.history
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/010.state
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/020.law
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/030.economy
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/040.war
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/050.religion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/060.technology
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/070.population
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/080.diplomacy
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/090.civilization-history
+
+## SECOND-LEVEL DIRECTORIES
+
+# ============================================================
+# LAYER: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta
+# ============================================================
+
+## DIRECT CHILD DIRECTORIES
+
+## SECOND-LEVEL DIRECTORIES
+
