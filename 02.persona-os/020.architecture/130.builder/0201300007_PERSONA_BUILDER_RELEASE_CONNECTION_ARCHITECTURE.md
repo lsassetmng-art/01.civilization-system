@@ -1,0 +1,132 @@
+# ============================================================
+# PERSONA BUILDER RELEASE CONNECTION ARCHITECTURE
+# ============================================================
+
+status: canonical
+scope: persona.builder.release.connection.architecture
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+
+# PURPOSE
+
+Define how Persona Builder connects to snapshot,
+package, distribution, marketplace, and external release surfaces.
+
+
+# CORE PRINCIPLE
+
+Persona Builder prepares release candidates,
+but does not own final release authority.
+
+
+# CONNECTED TARGETS
+
+Persona Builder may prepare candidates for:
+
+- Snapshot
+- Package
+- Distribution
+- Marketplace
+- External Release
+
+
+# SNAPSHOT RELATION
+
+Builder may prepare:
+- snapshot exposure fields
+- public profile readiness
+- capability summary for exposure
+
+Builder does not own:
+- snapshot issuance
+- snapshot signing
+- snapshot revocation authority
+
+
+# PACKAGE RELATION
+
+Builder may prepare:
+- package-facing summary
+- profile summary
+- visual summary
+- voice summary
+- capability summary
+
+Builder does not own final package publication authority.
+
+
+# DISTRIBUTION RELATION
+
+Builder may prepare:
+- distribution candidate
+- distribution visibility metadata
+- release restrictions
+- distribution tags
+
+Builder does not own final distribution publication authority.
+
+
+# MARKETPLACE RELATION
+
+Builder may prepare:
+- marketplace_short_pitch
+- marketplace_long_description
+- marketplace_tags
+- audience_note
+- content_rating_candidate
+- release_region_candidate
+- capability summary
+- qualification summary
+- skill summary
+
+Builder does not own:
+- listing approval
+- pricing authority
+- sale status authority
+- moderation authority
+- listing publication authority
+
+
+# EXTERNAL RELEASE RELATION
+
+Builder may prepare external-facing profile information,
+but does not own:
+
+- access grant authority
+- license authority
+- transfer authority
+- revocation authority
+
+
+# PUBLISH_PREPARED MEANING
+
+publish_prepared means:
+
+- handoff readiness
+- release candidate completeness
+- downstream transfer readiness
+
+publish_prepared does not mean:
+
+- already released
+- already sold
+- already listed
+- already issued
+- already licensed
+
+
+# SEPARATION RULE
+
+Persona truth,
+public profile,
+and marketplace listing
+must be treated as separate surfaces.
+
+
+# FINAL DEFINITION
+
+Persona Builder prepares release-facing candidates
+for downstream official release surfaces,
+but final authority remains outside Builder.

@@ -55,6 +55,12 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0200700003_PERSONA_BUILDER_APPROVAL_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0200700004_PERSONA_BUILDER_PUBLISH_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0200700005_PERSONA_BUILDER_VISUAL_BINDING_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0201300001_PERSONA_BUILDER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0201300006_PERSONA_BUILDER_CAPABILITY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0201300007_PERSONA_BUILDER_RELEASE_CONNECTION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0201300008_PERSONA_RELEASE_IMMUTABILITY_AND_SNAPSHOT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0201300009_PERSONA_SNAPSHOT_USAGE_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/130.builder/0201300010_PERSONA_SHARED_BASE_AND_USER_VARIATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/150.security/0200510001_PERSONA_COORDINATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/150.security/0200510002_PERSONA_DEPENDENCY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/020.architecture/150.security/0200510003_PERSONA_SECURITY_ARCHITECTURE.md
@@ -226,6 +232,11 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/100.integration/0300500011_PERSONA_EXTERNAL_USAGE_RESULT_CONTRACT_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/100.integration/0300500012_PERSONA_EXTERNAL_TRUST_RESULT_CONTRACT_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/100.integration/0300500013_PERSONA_EXTERNAL_SYNC_OUTBOX_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301300010_PERSONA_USER_SPECIFIC_USAGE_STATE_MODEL_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301300011_PERSONA_SKILL_MASTER_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301300012_PERSONA_SKILL_HOLDING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301300013_PERSONA_QUALIFICATION_HOLDING_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301300014_PERSONA_USER_SPECIFIC_USAGE_STATE_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301600001_persona_builder_draft.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301600002_persona_builder_section_state.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/130.builder/0301600003_persona_builder_validation_result.md
@@ -330,6 +341,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/130.builder/0500700002_PERSONA_BUILDER_EDIT_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/130.builder/0500700003_PERSONA_BUILDER_APPROVAL_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/130.builder/0500700004_PERSONA_BUILDER_PUBLISH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/130.builder/0501300005_PERSONA_BUILDER_STATE_TRANSITION_TABLE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/160.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/160.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/160.business/0500500003_BUSINESS_TO_PERSONA_GROWTH_APPLY_FLOW.md
@@ -380,6 +392,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/100.integration/0700012_PERSONA_EXTERNAL_SYNC_RETRY_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/100.integration/0700610001_PERSONA_OUTBOX_DISPATCH_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/100.integration/0700610002_PERSONA_GROWTH_REQUEST_CONSUME_OPERATION.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/130.builder/0701300001_PERSONA_BUILDER_REVIEW_CHECKLIST.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/140.lifecycle/0700800001_PERSONA_GOAL_UPDATE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/140.lifecycle/0700800002_PERSONA_LIFECYCLE_OPERATION.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/140.lifecycle/0700800003_PERSONA_STATE_TRANSITION_OPERATION.md
@@ -415,6 +428,10 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600002_PERSONA_GROWTH_APPLY_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/0800000_POLICY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/130.builder/0801300001_PERSONA_BUILDER_VALIDATION_CODE_TABLE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/130.builder/0801300002_PERSONA_SNAPSHOT_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/130.builder/0801300003_PERSONA_SNAPSHOT_RETENTION_RULE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/130.builder/0801300004_PERSONA_BUILDER_APPROVAL_RULE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/220.rights-external/0802200_PERSONA_RIGHTS_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/230.external-sync/0802300_PERSONA_EXTERNAL_CONTRACT_POLICY.md
@@ -428,6 +445,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/250.cross-cutting-completion/0802502_PERSONA_AUTHORITY_EVIDENCE_POLICY.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/0900000_INTERFACE_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/130.builder/0900700001_PERSONA_BUILDER_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/130.builder/0901300002_PERSONA_BUILDER_UI_ITEM_TABLE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/160.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
@@ -511,6 +529,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/060.culture/9000600001_SOCIETY_CULTURE_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/070.event/9000700001_SOCIETY_EVENT_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/080.history/9000800001_SOCIETY_HISTORY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/9000000_SOCIETY_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/900.society/9000001_SOCIETY_LAYER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/010.state/9100100001_CIVILIZATION_STATE_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/020.law/9100200001_CIVILIZATION_LAW_MODEL.md
@@ -521,6 +540,7 @@
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/070.population/9100700001_CIVILIZATION_POPULATION_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/080.diplomacy/9100800001_CIVILIZATION_DIPLOMACY_MODEL.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/090.civilization-history/9100900001_CIVILIZATION_HISTORY_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/9100000_CIVILIZATION_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/910.civilization/9100001_CIVILIZATION_LAYER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200000_META_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/920.meta/9200001_META_OVERVIEW.md
