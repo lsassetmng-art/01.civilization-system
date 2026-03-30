@@ -1,8 +1,8 @@
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400004_PERSONA_TRANSFER_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/040.external_rights/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/050.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400004_PERSONA_TRANSFER_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/160.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/999_INTERFACE_INDEX.txt
