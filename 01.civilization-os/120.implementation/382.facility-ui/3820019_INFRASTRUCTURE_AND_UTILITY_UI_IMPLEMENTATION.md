@@ -330,3 +330,164 @@ Infrastructure implementation must remain:
 - issue-visible
 - summary-first
 - clearly separable from logistics or manufacturing-only truth
+
+# ============================================================
+# SUPPLEMENT A. SYSTEM-ONLY INFRASTRUCTURE PLACEMENT RULE
+# ============================================================
+
+Infrastructure UI may include
+infrastructure placement capability.
+
+However,
+infrastructure placement is system-only.
+
+It must not be available
+to ordinary users,
+ordinary tenant operators,
+or ordinary facility operators.
+
+Infrastructure placement requires
+system-level authority.
+
+
+# ============================================================
+# SUPPLEMENT B. OPERATION VS PLACEMENT SEPARATION
+# ============================================================
+
+Operational infrastructure management
+and infrastructure placement
+must remain distinct.
+
+Operational infrastructure UI covers:
+
+- coverage visibility
+- supply posture
+- outage posture
+- dependency posture
+- maintenance posture
+- restoration posture
+
+Infrastructure placement UI covers:
+
+- infrastructure new placement
+- extension of infrastructure coverage
+- node placement
+- route or line placement
+- connection changes
+- placement validation
+- placement confirmation
+
+These must not be collapsed
+into one ambiguous operation surface.
+
+
+# ============================================================
+# SUPPLEMENT C. SYSTEM AUTHORITY RULE
+# ============================================================
+
+Infrastructure placement must require
+system-level authority.
+
+Representative system-only roles may include:
+
+- system operator
+- system builder
+- system infrastructure authority
+
+If a user does not have
+required system authority,
+the UI must:
+
+- hide placement action
+or
+- show blocked state explicitly
+
+Ordinary users must not be able
+to execute infrastructure placement.
+
+
+# ============================================================
+# SUPPLEMENT D. PLACEMENT VALIDATION RULE
+# ============================================================
+
+Infrastructure placement must remain
+explicit and validation-based.
+
+Representative validation concerns include:
+
+- placement target validity
+- route or line continuity validity
+- node compatibility
+- dependency compatibility
+- overlap conflict
+- supply impact posture
+- coverage impact posture
+- blocked placement area
+- required connection posture
+
+Placement must not be finalized
+without explicit validation result.
+
+
+# ============================================================
+# SUPPLEMENT E. IMPACT VISIBILITY RULE
+# ============================================================
+
+Before final placement confirmation,
+the UI should expose impact visibility such as:
+
+- expected coverage change
+- expected supply change
+- expected dependency change
+- expected affected region posture
+- expected service disruption risk where applicable
+
+Placement impact must be readable
+before confirmation.
+
+
+# ============================================================
+# SUPPLEMENT F. CONFIRMATION RULE
+# ============================================================
+
+Infrastructure placement is a high-impact action.
+
+It must require explicit confirmation.
+
+Placement must not occur
+as a side effect of simple map navigation
+or tentative preview.
+
+
+# ============================================================
+# SUPPLEMENT G. HISTORY RULE
+# ============================================================
+
+Completed infrastructure placement
+must remain visible in history.
+
+Representative recorded actions include:
+
+- infrastructure created
+- infrastructure extended
+- connection changed
+- placement cancelled
+- placement failed
+- placement reverted where supported
+
+Placement history must remain traceable.
+
+
+# ============================================================
+# SUPPLEMENT H. FINAL INFRASTRUCTURE PLACEMENT RULE
+# ============================================================
+
+Infrastructure placement inside infrastructure UI must remain:
+
+- system-only
+- validation-based
+- confirmation-required
+- impact-visible
+- traceable
+- clearly separated from ordinary infrastructure operation
+

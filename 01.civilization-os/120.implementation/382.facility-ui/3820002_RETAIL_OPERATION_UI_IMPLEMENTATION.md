@@ -459,3 +459,42 @@ Retail implementation must remain:
 - automation-visible
 - summary-first
 - explicitly actionable
+
+# ============================================================
+# SUPPLEMENT A. MARKETPLACE ENTRY RULE
+# ============================================================
+
+Retail operation UI may expose
+Marketplace entry
+as part of retail-side selling behavior.
+
+Representative Marketplace entry modes include:
+
+- company-filtered Marketplace entry
+- facility-filtered Marketplace entry
+- seller-side Marketplace operation entry
+- direct company sale posture
+- Marketplace sale posture
+
+Retail Marketplace entry must reuse
+canonical Marketplace routines.
+
+Retail UI must not create
+a separate retail-only Marketplace core.
+
+
+# ============================================================
+# SUPPLEMENT B. MARKETPLACE SELLER VISIBILITY RULE
+# ============================================================
+
+Where seller capability is enabled,
+retail UI should expose seller-side posture such as:
+
+- current listing visibility
+- listing blocked or review posture
+- order posture where relevant
+- payout or settlement visibility where relevant
+
+These views remain Marketplace-linked
+and do not replace retail operation truth.
+

@@ -360,3 +360,57 @@ Residence implementation must remain:
 - issue-visible
 - summary-first
 - explicitly separable from asset-only real-estate truth
+
+# ============================================================
+# SUPPLEMENT A. INTERIOR PLACEMENT RULE
+# ============================================================
+
+Residence UI may support
+interior placement behavior
+as part of residence operation.
+
+Representative interior placement contexts include:
+
+- room decoration
+- furniture placement
+- living-environment enhancement
+- support-item placement
+- residence-themed asset placement
+
+Interior placement must remain
+compatible with residence livability posture
+and must not silently break occupancy truth.
+
+
+# ============================================================
+# SUPPLEMENT B. OPTIONAL EXTERIOR PLACEMENT RULE
+# ============================================================
+
+Where the residence type allows it,
+residence UI may also support
+exterior placement behavior.
+
+Representative exterior contexts include:
+
+- exterior decoration
+- housing exterior design application
+- yard or frontage enhancement where applicable
+- optional building-skin or style application
+
+Exterior placement is optional by residence type.
+
+It must not be assumed
+for every residence configuration.
+
+
+# ============================================================
+# SUPPLEMENT C. PLACEMENT POSITION RULE
+# ============================================================
+
+Interior and optional exterior placement
+must remain part of residence-side operation,
+not pure Marketplace truth.
+
+Marketplace may provide the items or designs,
+but residence UI owns the placement context.
+

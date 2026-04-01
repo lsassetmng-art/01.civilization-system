@@ -1,0 +1,1808 @@
+# ============================================================
+# COMPANY CANDIDATES
+# ============================================================
+
+status: candidate
+source: 000_CIVILIZATION_OS_FULL_INTEGRATED.md
+prepared_by: Zero
+exclude: フォトン / Photon / PHOTON
+
+- -1. 01xx company identity / type
+- -1. company type rule
+- -1. company_draft
+- -1. user-creatable company types
+- -2. system-limited company types
+- -> many company_approval_record
+- -> many company_builder_audit_log
+- -> many company_draft_bundle
+- -> many company_establish_record
+- -> many company_template_application_log
+- -> many company_validation_result
+- -> many company_validation_run
+- ./029_company/DOMAIN_SPEC.md
+- A Civilization company may have
+- A Civilization company must be locatable in the world.
+- A company asset operation profile should contain
+- A company does not submit a prior nation application,
+- A company draft must bind to valid nation context
+- A company draft must have a valid company_type
+- A company equity holding should contain
+- A company evaluation structure should contain
+- A company is
+- A company is not an abstract shell.
+- A company listing readiness structure should contain
+- A company may
+- A company may be visible without being reputable,
+- A company may connect to premises through
+- A company may have
+- A company may have multiple sites.
+- A company may have one or many sites.
+- A company may hold and operate real estate,
+- A company may hold equity,
+- A company may hold equity.
+- A company may need
+- A company may not be treated as fully established
+- A company may not become established
+- A company may not enter listing_application stage
+- A company may occupy only part of a building,
+- A company may operate multiple sites simultaneously.
+- A company may perform
+- A company may perform asset operation.
+- A company may proceed to listing application
+- A company may track listing readiness
+- A company must be able to exist with real operational sites
+- A company must be nation-bound,
+- A company must not be established
+- A company must not be granted direct equity execution.
+- A company must not be treated as a pure shell.
+- A company must not enter established state
+- A company must not establish with unresolved product scope.
+- A company must not operate with an undefined product scope.
+- A company must receive evaluation as soon as it is established.
+- A company reaches operating state when
+- A company securities account profile should contain
+- A company should become evaluable at creation time.
+- A company site defines
+- A company site may only be created if
+- A company site may relate to building in several ways.
+- A company template should contain
+- A company type may be
+- A company type must not be allowed to sell anything arbitrarily.
+- A company type template should define
+- A company using tenant occupancy
+- A company_core should contain
+- A company_product_scope should contain
+- A company_site should contain
+- A dissolved company
+- A game-selling company may therefore be
+- A listed company must continuously satisfy
+- A listing preset prioritizing emerging company access,
+- A streamer agency is a Civilization company-side structure
+- A system-limited company type must not be established
+- ALLOWED COMPANY TYPES
+- ARCHITECTURAL DESIGN COMPANY
+- Actual readiness depends on nation market rules and company condition.
+- All company types should have these common UI items.
+- All upload-required company types must include
+- All user-creatable company families
+- Anchor company assignment must reflect
+- Anchor company naming must reflect
+- Anchor company sets should match
+- Anchor-company density should reflect role, population,
+- Any company type may
+- At minimum, a company may need
+- At or immediately after company creation,
+- CIVILIZATION COMPANY BUILDER FLOW
+- CIVILIZATION COMPANY BUILDER POLICY
+- CIVILIZATION COMPANY BUILDER RUNTIME
+- CIVILIZATION COMPANY BUILDER SCREEN FLOW
+- CIVILIZATION COMPANY BUILDER UI ITEM TABLE
+- CIVILIZATION COMPANY SITE FLOW
+- CIVILIZATION COMPANY SITE POLICY
+- CIVILIZATION COMPANY SITE RUNTIME
+- CIVILIZATION COMPANY TYPE SELLABLE PRODUCT TABLE
+- CIVILIZATION COMPANY TYPE UI SURFACE TABLE
+- CIVILIZATION COMPANY UI FLOW
+- CIVILIZATION COMPANY UI POLICY
+- CIVILIZATION COMPANY UI RUNTIME
+- CIVILIZATION COMPANY UI SCREEN TABLE
+- CIVILIZATION OS COMPANY INTEGRATION INDEX
+- CIVILIZATION OS COMPANY OPERATIONS INDEX
+- CIVILIZATION RENT AND COMPANY PREMISES POLICY
+- COMMON COMPANY EVENTS
+- COMPANY
+- COMPANY / TENANT / EVENT FILTER RULE
+- COMPANY AND HOUSING
+- COMPANY ASSET OPERATION PROFILE
+- COMPANY BUILDER
+- COMPANY BUILDER CONNECTION
+- COMPANY BUILDER RELATION
+- COMPANY BUILDER SCOPE
+- COMPANY BUILDER VALIDATION POLICY
+- COMPANY CORE BUNDLE
+- COMPANY DEFINITION
+- COMPANY DOMAIN
+- COMPANY ELIGIBILITY EVALUATION
+- COMPANY ENTRY BEHAVIOR
+- COMPANY HOME BLOCKS
+- COMPANY INTEGRATION
+- COMPANY LINKAGE LAYER
+- COMPANY LIST / DISCOVERY FLOW
+- COMPANY LISTING FLOW
+- COMPANY LOCATION AND GAMEOS SELLER RELATION
+- COMPANY MEMBERS
+- COMPANY OPERATIONS
+- COMPANY PREMISES / REAL ESTATE / RETAIL RELATION
+- COMPANY PREMISES COMMON SURFACES
+- COMPANY PREMISES FLOW
+- COMPANY PREMISES MANAGE SCREEN TABS
+- COMPANY PREMISES OVERVIEW SCREEN
+- COMPANY PREMISES POLICY
+- COMPANY PREMISES RELATION
+- COMPANY PREMISES SERVICE TRUTH
+- COMPANY PREMISES SUMMARY CARD
+- COMPANY PREMISES UI LIFECYCLE
+- COMPANY PREMISES UI MODES
+- COMPANY RATING CALCULATION
+- COMPANY RATING ENTITY
+- COMPANY RENT EVALUATION
+- COMPANY RENT RULE
+- COMPANY REVENUE
+- COMPANY SCALE CLASS ENUM MASTER
+- COMPANY SECURITIES ACCOUNT PROFILE
+- COMPANY SITE PRINCIPLE
+- COMPANY STATE MACHINE
+- COMPANY STORE ENTRY SURFACES
+- COMPANY TREASURY
+- COMPANY TYPE
+- COMPANY TYPE ENUM MASTER
+- COMPANY TYPE INITIALIZATION
+- COMPANY TYPE TEMPLATE NOTES
+- COMPANY TYPE TEMPLATE PRINCIPLE
+- COMPANY TYPES
+- COMPANY_ANALYTICS_METRIC
+- COMPANY_ANALYTICS_SNAPSHOT
+- COMPANY_BANKRUPTCY_STATE
+- COMPANY_BRANCH
+- COMPANY_BRAND_PROFILE
+- COMPANY_CONTRACT_PROFILE
+- COMPANY_CORE
+- COMPANY_CURRENT_EVALUATION_RECORD
+- COMPANY_DRAFT
+- COMPANY_DRAFT_APPROVAL
+- COMPANY_DRAFT_IDENTITY
+- COMPANY_INITIAL_EVALUATION_RECORD
+- COMPANY_JOB
+- COMPANY_LISTING_APPLICATION
+- COMPANY_LISTING_READINESS_RECORD
+- COMPANY_LIST_INDEX
+- COMPANY_MARKET_TIER_READINESS_CHECK
+- COMPANY_MARKET_TIER_STATUS
+- COMPANY_OPERATING_PREMISES
+- COMPANY_PORTFOLIO_PROFILE
+- COMPANY_PUBLICATION_RECORD
+- COMPANY_PUBLIC_PROFILE
+- COMPANY_REGISTERED_PREMISES
+- COMPANY_SITE
+- COMPANY_SITE_COMPATIBILITY_RULE
+- COMPANY_SITE_USE_PROFILE
+- COMPANY_STRATEGY_STATE
+- COMPANY_TYPE_LISTING_ELIGIBILITY_RULE
+- COMPANY_TYPE_TEMPLATE
+- COMPANY_TYPE_TEMPLATE_CAPABILITY
+- COMPANY_TYPE_TEMPLATE_PRODUCT_SCOPE
+- COMPANY_UPLOAD_PROFILE
+- COMPANY_UPLOAD_RECORD
+- CULTURE / ARTS COMPANY
+- CULTURE ARTS INITIAL COMPANY DRAFT SAMPLE
+- CULTURE_ARTS COMPANY
+- City Builder and Company Builder
+- City Builder is separate from Company Builder
+- Civilization company premises and rent are internal to Civilization.
+- Civilization company premises and rent must remain
+- Civilization company premises are not ERP entities.
+- Civilization company premises records
+- Civilization company truth
+- Civilization-side company continuity.
+- Commercial zones support spontaneous company opening
+- Company
+- Company -> Company
+- Company Builder
+- Company Builder creates a company candidate
+- Company Builder defines enterprise structure.
+- Company Builder does not define these rules.
+- Company Builder enum master phase 1
+- Company Builder enum master phase 2
+- Company Builder handles business entity and business site.
+- Company Builder handles enterprise structure.
+- Company Builder is a staged builder.
+- Company Builder is never nation-neutral.
+- Company Builder is the official path
+- Company Builder is the staged creation and establishment system
+- Company Builder may place
+- Company Builder must also determine whether
+- Company Builder must follow these principles.
+- Company Builder must initialize from company type,
+- Company Builder must not invent these regimes.
+- Company Builder must output at least
+- Company Builder must support
+- Company Builder must support asset operation posture.
+- Company Builder must support site occupancy planning.
+- Company Builder persistence must be
+- Company Builder phase 1 enums
+- Company Builder phase 2 enums
+- Company Builder should be organized into these sections.
+- Company Builder should initialize
+- Company Builder should initialize management posture.
+- Company Builder should not create direct market access.
+- Company Builder supports company type selection.
+- Company Builder validation determines whether
+- Company Builder validation is authoritative.
+- Company Builder validation must cover
+- Company Direct Store Entry
+- Company Publish
+- Company Stores
+- Company Template is a reusable preset used by Company Builder
+- Company Template provides
+- Company Transactions
+- Company UI flow must remain
+- Company UI must distinguish
+- Company UI policy in CivilizationOS must be
+- Company UI runtime must be
+- Company access must be limited to
+- Company access must not include
+- Company accumulates readiness data for possible listing.
+- Company analytics in CivilizationOS must be
+- Company analytics must distinguish
+- Company analytics should include asset-operation views.
+- Company asset operation means that a company
+- Company becomes officially established.
+- Company builder UI in CivilizationOS must be
+- Company builder UI item tables in CivilizationOS must be
+- Company builder UI must not behave as a direct
+- Company builder flow must remain
+- Company builder in CivilizationOS must be
+- Company builder must distinguish
+- Company builder must not mutate active company truth directly
+- Company builder must support at minimum
+- Company builder policy must be
+- Company builder runtime must be
+- Company builder screen flow must remain
+- Company builder should be template-driven.
+- Company core and company site must remain distinct.
+- Company core defines
+- Company core is not the same as site or store.
+- Company direct store must feel
+- Company entry must feel
+- Company equity holding must distinguish
+- Company evaluation begins at creation.
+- Company evaluation is the structured assessment system
+- Company evaluation may include asset-related factors.
+- Company evaluation starts at establishment,
+- Company events must reveal how firms reproduce labor,
+- Company is the core economic unit.
+- Company lifecycle must be explicit and state-driven.
+- Company list, analytics, evaluation, and listing-readiness
+- Company listing screens must remain distinct
+- Company may apply if eligible under nation market rules.
+- Company may sell, manage sites, hold assets, and operate.
+- Company owners may request payouts.
+- Company ownership is human-controlled.
+- Company premises UI must implement
+- Company premises and tenant UI
+- Company premises and tenant UI belongs to
+- Company premises and tenant UI in Civilization must remain
+- Company premises automation must remain visible.
+- Company premises issue tab must centralize
+- Company premises manage must default to
+- Company premises overview must prioritize
+- Company ranking is based on
+- Company revenue impacts national score.
+- Company scale class
+- Company site flow must remain
+- Company site is first-class.
+- Company site must not assume owned-only occupancy.
+- Company site policy in CivilizationOS must be
+- Company site relation is structured as
+- Company site runtime must be
+- Company type
+- Company type template is the source of truth
+- Company type template must define
+- Company type templates in CivilizationOS must be
+- Company types that are ineligible for listing
+- Company validation should include intermediary checks.
+- Company-premises KPI visibility is mandatory.
+- Company-premises UI is not identical to
+- Company-premises UI is related to
+- Company-premises UI may link to those surfaces,
+- Company-premises UI must allow
+- Company-premises UI must expose
+- Company-premises UI must inherit
+- Company-premises UI must not collapse
+- Company-premises UI must resolve from
+- Company-premises UI must treat company sites
+- Company-premises UI supports
+- Company-premises intervention must be explicit.
+- Company-premises operation requires
+- Company-premises truth covers
+- CompanyRatingCalculation
+- CompanyRatingScore
+- Construction is not performed directly by the company.
+- DOMAIN 0029 company
+- Define policy for company UI list/discovery,
+- Define policy for company builder
+- Define policy for company core/site/opening handling
+- Define policy for company premises and rent inside CivilizationOS.
+- Define runtime for company UI list/discovery,
+- Define runtime for company builder
+- Define runtime for company core/site/opening handling
+- Define the operational flow for company UI list/discovery,
+- Define the operational flow of company builder
+- Define the operational flow of company site,
+- Defines anchor-company density posture
+- Defines how initial city-level company and housing seed
+- Defines initial company seed posture
+- Defines nation-level anchor company posture
+- Defines the COMPANY within Civilization economy system.
+- Defines the COMPANY_BANKRUPTCY_STATE within Civilization economy system.
+- Defines the COMPANY_BRANCH within Civilization economy system.
+- Defines the COMPANY_STRATEGY_STATE within Civilization economy system.
+- Defines the anchor-company core
+- Dormant company effects
+- Draft state for incomplete company definition.
+- EDUCATION COMPANY
+- Each company contributes to a nation.
+- Each company has a wallet.
+- Each company type may require specialized setup.
+- Evaluation does not itself list the company,
+- Every established company must have
+- Every user-creatable company type should have
+- FASHION COMPANY
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/266.company-builder/0402660_CIVILIZATION_COMPANY_BUILDER_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/266.company-builder/0402661_CIVILIZATION_UPLOAD_MODERATION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/266.company-builder/0402662_CIVILIZATION_COMPANY_SITE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/266.company-builder/0402663_CIVILIZATION_COMPANY_UI_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/266.company-builder/0502660_CIVILIZATION_COMPANY_BUILDER_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/266.company-builder/0502661_CIVILIZATION_UPLOAD_MODERATION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/266.company-builder/0502662_CIVILIZATION_COMPANY_SITE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/266.company-builder/0502663_CIVILIZATION_COMPANY_UI_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/060.integration/011.company/0600110000_COMPANY_INTEGRATION_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/060.integration/011.company/0600110001_COMPANY_INTEGRATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/005.company/0700050000_COMPANY_OPERATIONS_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/005.company/0700050001_COMPANY_OPERATIONS.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/260.real-estate-regime/0802601_CIVILIZATION_RENT_AND_COMPANY_PREMISES_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/266.company-builder/0802660_CIVILIZATION_COMPANY_BUILDER_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/266.company-builder/0802661_CIVILIZATION_UPLOAD_MODERATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/266.company-builder/0802662_CIVILIZATION_COMPANY_SITE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/266.company-builder/0802663_CIVILIZATION_COMPANY_UI_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/266.company-builder/_legacy_hold/2666_COMPANY_BUILDER_VALIDATION_POLICY.md
+- FPR-009 company_scope_required
+- For the system real-estate company,
+- For upload-capable company types,
+- Formal legal registration location of a Civilization company.
+- GAME COMPANY
+- GameOS seller eligibility must refer to Civilization company truth,
+- GameOS seller linkage refers to Civilization company truth
+- Housing Builder and Company Builder must remain separate.
+- Housing Builder is separate from Company Builder.
+- Housing construction is company-executed only through
+- However, the company must not directly execute
+- INITIAL COMPANY DRAFT SAMPLE INDEX
+- INTERIOR COMPANY
+- INVESTMENT COMPANY
+- INVESTMENT INITIAL COMPANY DRAFT SAMPLE
+- If a Civilization company is tenant or landlord
+- If a Civilization company rents premises
+- If company allocation dominates,
+- If tenant or landlord is a Civilization company,
+- In Civilization company finance design,
+- Initial Company Draft is the editable instance-level
+- Initial Company Draft must follow these principles.
+- Initial Company Draft should contain
+- Initial anchor company naming is a nation-specific
+- Initial company and housing seed must be city-aware,
+- Initial company seed should define economic identity
+- It defines what the company is,
+- It is a user-creatable company type.
+- It is initialized from company type
+- It is intended for areas where multiple company types
+- It is not the company itself.
+- It is not the established company runtime object.
+- It must operate through staged company draft flow.
+- It only means the company may validly apply.
+- Listed status must remain explicit and separate from ordinary company status.
+- Morel Dock Company
+- NATION_ZONE_COMPANY_TYPE_RULE
+- Nation score is influenced by company activity.
+- Nation, company, law, war, persona remain domain-owned
+- Ninomiya naming is reserved for the railway company only
+- No company may be established,
+- No company may directly execute equity market interaction
+- No company may directly touch the exchange layer
+- No company should become established
+- No company should exist in established state
+- No company should silently move
+- Office zones support structured company operation
+- Official company lifecycle states
+- Operational handling for AI company failures, user company liquidation, and market balancing.
+- Operational location of a Civilization company.
+- Operational premises relation between company and property.
+- Optional review stage for company types or flows
+- Ordinary company intent is allowed.
+- Primary anchor site of the company.
+- Product scope is initialized from company type
+- RELATION TO COMPANY SITE
+- RELATION TO OTHER COMPANY TYPES
+- RELIGIOUS CORPORATION INITIAL COMPANY DRAFT SAMPLE
+- RETAIL COMPANY
+- RETAIL INITIAL COMPANY DRAFT SAMPLE
+- Real-estate transfer mediation must route through system real estate company.
+- Registered office relation between company and property.
+- Revenue Ledger contributes to company revenue.
+- SOFTWARE COMPANY
+- SOFTWARE INITIAL COMPANY DRAFT SAMPLE
+- SYSTEM COMPANY FACILITY TYPES
+- SYSTEM COMPANY SCREENS
+- SYSTEM COMPANY UI DOMAINS
+- SYSTEM REAL ESTATE COMPANY ROLE
+- SYSTEM-LIMITED COMPANY TYPES
+- SYSTEM_COMPANY_ADMIN_SURFACE_PROFILE
+- School, company, and city event seed must make visible
+- School, company, and city events must reflect
+- Seller and Company Store Layer
+- Site type compatibility should remain explicit by company type.
+- Some company types do not sell only self-created products.
+- State and company rating
+- Stores bundle payloads for company drafts.
+- Streamer agency belongs to Civilization company operation.
+- Streamer agency belongs to Civilization company structures.
+- System Company Service Facilities
+- System company UI in CivilizationOS must be
+- System company UI must be distinct from ordinary user company UI.
+- System company admin UI should support at minimum
+- System company facilities must provide
+- System real-estate-company mediation in CivilizationOS must be
+- System-service access must modulate company seed density
+- TABLE: company_approval_record
+- TABLE: company_builder_audit_log
+- TABLE: company_draft
+- TABLE: company_draft_bundle
+- TABLE: company_establish_record
+- TABLE: company_template_application_log
+- TABLE: company_validation_result
+- TABLE: company_validation_run
+- The company does not need a prior nation application
+- The company is a design provider,
+- The company may fund or own a building,
+- The initial user-creatable company types should include
+- The intermediary is not the company owner.
+- The system real-estate company should handle
+- Therefore a company should connect to real estate through
+- These actions are open broadly to company types,
+- These are not required for all company types,
+- These flags must not contradict company_type policy.
+- These may vary by system company type.
+- These should vary by company type.
+- This builder must not mutate active company truth directly.
+- This company acts as infrastructure mediator.
+- This company type creates and operates education offerings
+- This company type creates architectural design output,
+- This company type creates connected and standalone games
+- This company type creates interior and housing exterior related
+- This company type creates persona costume and accessory output
+- This field should be highly visible to both company management
+- This includes whether the company
+- This is initial company evaluation,
+- This means Company Builder configures participation posture,
+- This role binds organization to company_site.
+- This system-limited company type exists for public mission execution,
+- This system-limited company type handles lodging,
+- This system-limited company type operates routes, cargo movement,
+- Tide Net Company
+- UI-specialized by company type
+- USER COMPANY FACILITY TYPES
+- USER CREATABLE COMPANY RULE MATRIX
+- USER-CREATABLE COMPANY TYPES
+- Upload-capable company types must not bypass these UI items.
+- User -> Company
+- User Company Service Facilities
+- User Consumption + Company Transactions
+- User company facilities must support
+- Western Reef Trade Company
+- When a Civilization company sells games in GameOS,
+- Whether a company may hold a given right type
+- _COMPANY_INTEGRATION.md
+- _COMPANY_INTEGRATION_INDEX.md
+- _COMPANY_OPERATIONS.md
+- _COMPANY_OPERATIONS_INDEX.md
+- _CULTURE_ARTS_INITIAL_COMPANY_DRAFT_SAMPLE.md
+- _INVESTMENT_INITIAL_COMPANY_DRAFT_SAMPLE.md
+- _RELIGIOUS_CORPORATION_INITIAL_COMPANY_DRAFT_SAMPLE.md
+- _RETAIL_INITIAL_COMPANY_DRAFT_SAMPLE.md
+- _SOFTWARE_INITIAL_COMPANY_DRAFT_SAMPLE.md
+- _company
+- a Civilization company
+- a chain or larger company structure.
+- a company direct store resolves to direct-store retail logic
+- a company draft may proceed toward establishment
+- a company exists as a legal/organizational entity
+- a company is approved before it is published
+- a company is created through builder screens
+- a company is drafted before it is validated
+- a company is evaluated from the moment it is created
+- a company is not only an abstract legal entity
+- a company is published before it becomes active
+- a company is validated before it is approved
+- a company may proceed to establishment
+- a company should have real operational presence
+- a corresponding company template.
+- a listing opened from company direct store
+- a live company-occupancy institution
+- a nation may restrict certain company types from certain product scopes
+- active company state
+- active-company truth editor.
+- activity_score reflects whether the company
+- agency company goods
+- agency company profile
+- agency-company truth visible.
+- aggregate of company performance
+- ai_company
+- ai_company (system-owned)
+- ai_company is system-controlled
+- allowed company type configuration
+- allowed company types
+- allowed company types are explicit
+- allowed company types by zone
+- allowed company types configured
+- allowed company types must not be empty
+- allowed sellable categories by company type
+- allowed_company_type_list
+- allowed_company_type_matrix
+- allowed_company_types
+- allowed_sellable_product_types empty for active company type
+- an unnecessary manual system-company queue
+- analytics is a structured interpretation of company state,
+- anchor company naming pool for seed-world planning.
+- anchor company types
+- anchor_company_types
+- and User Company Direct Store UI
+- and company direct store detail
+- and company systems,
+- and company-occupancy operation in Civilization.
+- and company-occupancy truth dominate.
+- and company-operation truth,
+- and dominant company-occupancy truth,
+- and non-retail company concentration.
+- and state / company rating
+- and state / company rating calculation.
+- and turns it into an established company.
+- another company's product may be sold by a retail company
+- any company type may buy property
+- any company type may lease property
+- any company type may resell property
+- applicable company regime missing
+- applicable_company_regime
+- applicable_company_regime: broad_balanced_company_regime
+- applicable_company_regime: broad_company_enablement_regime
+- applicable_company_regime: creative_company_enablement_regime
+- applicable_company_regime: restricted_company_enablement_regime
+- architectural design originator company type.
+- architectural_design_company
+- architectural_design_company operates as a design-originator
+- architectural_design_company_template
+- are nation facilities, not ordinary company facilities.
+- at least two distinct company families should be supported
+- bank funds company
+- bank is a system-limited company type
+- bank is system company only.
+- base non-listable company entered listing application flow
+- base_listing_eligibility means whether the company type
+- before a company is established.
+- before detailed company-by-city assignment.
+- belongs to company
+- bio_company
+- blocked_listing_reason: company type is structurally non-listable
+- bond_market -> company
+- branch without company binding
+- broad_balanced_company_regime
+- broad_company_enablement_regime
+- builder-facing company screens
+- builder_stage: company_draft
+- but mediation and transfer must go through system real estate company
+- but operated and assessed through distinct company-management screens
+- but transactions must pass through a system real-estate company
+- by company type for CivilizationOS company builder.
+- by company type for CivilizationOS.
+- by company type inside CivilizationOS.
+- category: company_identity
+- category: company_type
+- certified_company_badge
+- certified_company_seller
+- circular_company
+- civilization company
+- civilization_company
+- civilization_company_sales
+- clearly separated from security-only or company-office truth
+- client company
+- common_company_builder_shell
+- company
+- company -> banking
+- company -> consumer_market
+- company -> labor
+- company -> supply_chain
+- company -> taxation
+- company / premises setup
+- company acquires land
+- company action
+- company activity
+- company activity are concentrated.
+- company activity contributes to national score
+- company activity level
+- company added to list index
+- company allocation truth -> company premises or dormitory-related branch
+- company analytics screens
+- company annual event posture
+- company asset-operation intent
+- company attire posture
+- company behavior
+- company binding present
+- company branches
+- company builder screens
+- company builder should expose how a company participates in larger systems
+- company business profile
+- company category/list visibility
+- company choice affects persona expense
+- company comparison
+- company comparison view
+- company context
+- company core
+- company core and company site must be separated
+- company core identity
+- company core is explicit
+- company created
+- company creates block trade intent
+- company creates order intent
+- company creates subscription intent
+- company creates tob tender intent
+- company creation
+- company creation is nation-bound
+- company creation/operation requires legal baseline
+- company credit screening
+- company crisis
+- company decision
+- company depends_on labor_market
+- company depends_on logistics
+- company detail / management screens
+- company digital products
+- company direct store
+- company direct store entry
+- company direct store entry may prefer return to seller store home
+- company direct store orders
+- company direct store physical goods
+- company does not transfer money to nation
+- company dormitory
+- company draft
+- company draft create
+- company draft creation
+- company draft is explicit
+- company draft list
+- company economy
+- company editor
+- company eligibility
+- company entry applies selected seller filter by default
+- company evaluation / rating screens
+- company evaluation score
+- company evaluation/listing-readiness screens
+- company events are closely tied to money-making performance
+- company events,
+- company existence
+- company existence and company premises are distinct
+- company existence and standing
+- company exists
+- company expresses intent
+- company facilities
+- company facilities require company-scope authority unless overridden by public governance rules
+- company funds building creation
+- company growth alerts high
+- company guarantee
+- company headquarters
+- company holder allowance
+- company holding is updated
+- company holding legality
+- company identity
+- company identity and downstream market behavior.
+- company instance data must be explicit
+- company is structurally non-listable
+- company is the unit of economic activity
+- company leases land
+- company leases whole building or primary building use
+- company ledger is updated
+- company legal standing
+- company legally established in-system
+- company lending
+- company lending is issued in the nation currency
+- company linkage layer
+- company list
+- company listing screens
+- company listing/catalog screens
+- company listing/discovery is explicit
+- company loan need
+- company management screens
+- company market-tier readiness
+- company matures
+- company may require interviews
+- company may require written exam
+- company metrics
+- company no longer exists as an active legal entity
+- company notification
+- company occupies a tenant subdivision inside building
+- company operates
+- company operating premises
+- company operation
+- company operational presence
+- company operational use
+- company ownership
+- company participates_in market
+- company premises
+- company premises UI
+- company premises and GameOS-selling companies can be connected cleanly
+- company premises are explicit
+- company premises can connect cleanly to GameOS-selling companies
+- company premises,
+- company price range affects expense
+- company price range influences expense
+- company product / portfolio screens
+- company product scope must be explicit
+- company public visibility
+- company published
+- company rating
+- company receives updated holding state
+- company regime
+- company registered premises
+- company registered premises standing where relevant
+- company remains a Civilization company
+- company rent stays inside Civilization
+- company restrictions are satisfied
+- company revenue
+- company revenue belongs to company domain
+- company revenue contributes to national score
+- company revenue summaries
+- company search
+- company selects tenant unit
+- company seller context
+- company seller to individual seller conversion is prohibited
+- company services
+- company site
+- company site / opening screens
+- company site created
+- company site creation eligibility
+- company site exists
+- company site is explicit
+- company site is valid
+- company site operation
+- company site operations
+- company site structure
+- company site update where applicable
+- company site use
+- company sites may occupy whole properties or tenant units
+- company stable
+- company standing check
+- company standing is valid
+- company state changes
+- company store context may add brand header
+- company store context must not redefine
+- company store identity
+- company store posture
+- company store view
+- company structure
+- company submits listing application when eligible
+- company summary
+- company type
+- company type allowance is unresolved
+- company type and nation rule consistency
+- company type and site type are compatible
+- company type coherence
+- company type determines sellable scope
+- company type determines what may be sold
+- company type eligibility
+- company type is disallowed in the target zone
+- company type is disallowed in the zone
+- company type is non-listable
+- company type listing eligibility
+- company type must be explicit
+- company type not eligible for intended flow
+- company type select
+- company type selection
+- company type template
+- company type template is explicit
+- company type template is unresolved
+- company type validity
+- company valuation and capital posture
+- company wants to open
+- company,
+- company, housing, and facility entry
+- company, housing, facility, and construction entry
+- company-activity visibility
+- company-aware
+- company-bound
+- company-compatible
+- company-core-aware
+- company-defined hiring
+- company-filter-compatible
+- company-filtered
+- company-filtered Marketplace
+- company-filtered Marketplace entry
+- company-filtered route
+- company-funded and system-constructed
+- company-funded building on leased land
+- company-funded building on owned land
+- company-governance internals,
+- company-law baseline
+- company-level mirrored revenue projections where allowed
+- company-linkage-aware
+- company-local access and occupancy continuity
+- company-managed office complex
+- company-occupancy truth clearly.
+- company-occupancy-truth aligned
+- company-operated facilities,
+- company-operation aligned
+- company-premises UI contracts such as
+- company-premises UI structure
+- company-premises UI-edited truths such as
+- company-scoped listings
+- company-service recovery visibility
+- company-service summary
+- company-site compatibility review
+- company-site-bindable
+- company-specific store variation
+- company-type eligibility is unresolved
+- company-type eligibility matrix
+- company-type eligibility rules configured
+- company-type listing eligibility changes
+- company-type listing eligibility editing
+- company-type listing eligibility is explicit
+- company-type-aware
+- company-type-specific product/service profile
+- company-type-specific setup
+- company-type-specific upload/configuration surfaces
+- company/site type allowance by zone
+- company/site/store allowance is unresolved
+- company/site/store compatibility checked
+- company/site/store opening depends on zone compatibility
+- company_acquisition
+- company_activity_screen
+- company_admin
+- company_analytics_metric_id
+- company_analytics_snapshot_id
+- company_and_housing
+- company_approval_record
+- company_approval_record_id
+- company_approval_request_screen
+- company_binding
+- company_brand_pack
+- company_brand_profile_id
+- company_brand_screen
+- company_builder
+- company_builder is launched from empty_lot build flow or manageable_company_lot
+- company_builder_audit_log
+- company_builder_audit_log_id
+- company_builder_high_priority_enum_groups
+- company_builder_scope
+- company_bundle_shortcuts
+- company_campaign_link
+- company_campaign_notice
+- company_categories
+- company_category
+- company_category is a wider display / grouping category.
+- company_category: commerce
+- company_category: culture
+- company_category: finance
+- company_category: religion
+- company_category: software
+- company_category_list_screen
+- company_code
+- company_code_candidate
+- company_comparison_screen
+- company_context
+- company_contract_profile_id
+- company_contracts_screen
+- company_core
+- company_core defines the company identity.
+- company_core defines what the company is.
+- company_core is the parent identity object
+- company_core must bind to nation context.
+- company_core_bundle
+- company_core_bundle defines company identity.
+- company_core_bundle.company_name
+- company_core_bundle.company_type
+- company_core_id
+- company_creation
+- company_current_evaluation_record_id
+- company_current_evaluation_screen
+- company_density
+- company_department
+- company_direct_store_home
+- company_direct_store_service
+- company_direct_store_ui
+- company_display_name
+- company_draft
+- company_draft_approval_id
+- company_draft_bundle
+- company_draft_bundle_id
+- company_draft_create_screen
+- company_draft_id
+- company_draft_id: sample-culture-arts-001
+- company_draft_id: sample-investment-001
+- company_draft_id: sample-religious-001
+- company_draft_id: sample-retail-001
+- company_draft_id: sample-software-001
+- company_draft_identity_id
+- company_draft_list_screen
+- company_draft_ref
+- company_draft_ref or company_ref
+- company_dress_code_strength_tendency
+- company_dress_code_strength_tendency modifies hiring and workplace culture events
+- company_employee
+- company_entity
+- company_entry_behavior
+- company_equity_holding_id
+- company_establish_record
+- company_establish_record_id
+- company_exhibition_day
+- company_exit
+- company_facilities
+- company_facility
+- company_facility_entry
+- company_facility_tap
+- company_funded_construction
+- company_growth_analytics_screen
+- company_guarantee
+- company_holding_policy_ref
+- company_home_blocks
+- company_icon
+- company_icon_grid_screen
+- company_id
+- company_identity_screen
+- company_initial_evaluation_record_id
+- company_initial_evaluation_screen
+- company_list_entry
+- company_list_index_id
+- company_list_tap
+- company_listed_status_screen
+- company_listing_application_id
+- company_listing_application_screen
+- company_listing_readiness_record_id
+- company_listing_readiness_screen
+- company_location_premises_screen
+- company_lot
+- company_lot_tap -> open_company_use_or_overview
+- company_management
+- company_market_role_entry
+- company_market_tier_readiness_check_id
+- company_market_tier_status_id
+- company_member
+- company_mission
+- company_mission missing
+- company_mission: Allocate capital efficiently and grow durable portfolio value.
+- company_mission: Expand civilization productivity through high-value software products.
+- company_mission: Make curated digital goods widely accessible through public-facing retail operations.
+- company_mission: Sustain faith, ritual continuity, and sacred community support.
+- company_mission: Turn stories, images, and events into enduring cultural value.
+- company_name
+- company_name is mandatory before validation pass.
+- company_name missing
+- company_name: Concordia Systems Lab
+- company_name: Dawn Covenant Temple Society
+- company_name: Lumen Storyworks
+- company_name: Meridian Capital Strategies
+- company_name: Meridian Public Retail Co.
+- company_notes
+- company_notes: equity and real-estate operation are strategically relevant
+- company_notes: office-centered software business
+- company_notes: starts with single flagship store plus future branch plan
+- company_notes: structurally non-listable by default
+- company_notes: supports creation plus exhibition and screening
+- company_notification
+- company_notification_enabled
+- company_operating_premises
+- company_operating_premises_id
+- company_operation
+- company_operator
+- company_overview_analytics_screen
+- company_overview_service
+- company_overview_ui
+- company_portfolio_analytics_screen
+- company_portfolio_profile_id
+- company_premises_access_and_movement_screen
+- company_premises_access_warning_panel
+- company_premises_history_screen
+- company_premises_intervention_screen
+- company_premises_issue_panel
+- company_premises_issue_screen
+- company_premises_kpi_strip
+- company_premises_linked_screen
+- company_premises_manage_screen
+- company_premises_overview_screen
+- company_premises_permission_screen
+- company_premises_recent_history_panel
+- company_premises_shared_space_screen
+- company_premises_staffing_screen
+- company_premises_status_strip
+- company_premises_structure_screen
+- company_premises_summary_card
+- company_premises_tenant_allocation_screen
+- company_premises_tenant_and_office
+- company_premises_tenant_warning_panel
+- company_premises_usage_visibility_screen
+- company_product_portfolio_screen
+- company_product_scope defines what a company
+- company_product_scope defines what the company
+- company_profile_screen
+- company_profile_surface
+- company_progression
+- company_public_list_screen
+- company_public_profile_id
+- company_public_profile_screen
+- company_public_rating_screen
+- company_publication_activation_screen
+- company_publication_record_id
+- company_publication_status_screen
+- company_rating_calculation_id
+- company_recipient_mode
+- company_record
+- company_recruitment_counter
+- company_recruitment_counter -> build_cost low / maintenance low / time 5
+- company_recruitment_counter -> recruitment_service
+- company_recruitment_counter -> recruitment_ui
+- company_recruitment_counter -> user_company
+- company_ref
+- company_ref or company_draft_ref
+- company_regime
+- company_regime_bundle
+- company_regime_bundle missing
+- company_regime_bundle: broad_balanced_company_regime
+- company_regime_bundle: broad_company_enablement_regime
+- company_regime_bundle: controlled_company_enablement_regime
+- company_regime_bundle: creative_company_enablement_regime
+- company_regime_bundle: education_supportive_company_regime
+- company_regime_bundle: restricted_company_enablement_regime
+- company_regime_profile
+- company_regime_profile_ref
+- company_registered_premises
+- company_registered_premises_id
+- company_registration
+- company_revenue
+- company_sales_analytics_screen
+- company_scale_class
+- company_scale_class_enum
+- company_scale_class_selector
+- company_scope
+- company_search_result_screen
+- company_seller
+- company_seller_verification_completed
+- company_service_recovery_screen
+- company_service_summary_section
+- company_service_surfaces
+- company_short_name
+- company_short_name auto-derived
+- company_short_name: Capital Strategies
+- company_short_name: Covenant Temple
+- company_short_name: Meridian Retail
+- company_short_name: Storyworks
+- company_short_name: Systems Lab
+- company_site
+- company_site binds to tenant_unit when
+- company_site defines where and how the company exists physically
+- company_site is the real operational site object
+- company_site must be separated from company_core.
+- company_site must bind to nation and zone context.
+- company_site occupancy must remain explicit,
+- company_site set
+- company_site supports structured occupancy.
+- company_site validation should include
+- company_site_analytics_screen
+- company_site_compatibility_rule_id
+- company_site_detail_screen
+- company_site_id
+- company_site_list_screen
+- company_site_ref
+- company_site_use_profile_id
+- company_status
+- company_store_detail
+- company_store_detail emphasizes brand and seller relationship
+- company_store_entry
+- company_store_entry_surfaces
+- company_store_fields
+- company_store_home
+- company_store_listing_surface
+- company_store_opening_screen
+- company_store_surface
+- company_strategy
+- company_structure
+- company_summary
+- company_summary missing
+- company_summary: A culture and arts company producing narrative and digital art content and operating public events.
+- company_summary: A religious corporation operating doctrine distribution, ritual activity, and donation programs.
+- company_summary: A retail company specializing in sourced portfolio sales inside a commercial nation.
+- company_summary: A software company building extensions, linked apps, and standalone packages.
+- company_summary: An investment company offering fund products and capital solicitation products under nation market rules.
+- company_summary_section
+- company_template_application_log
+- company_template_application_log_id
+- company_template_code
+- company_template_code: culture_arts_company_default
+- company_template_code: investment_company_default
+- company_template_code: religious_corporation_default
+- company_template_code: retail_company_default
+- company_template_code: software_company_default
+- company_treasury
+- company_type
+- company_type eligibility
+- company_type examples
+- company_type exists
+- company_type is initialized
+- company_type is mandatory before validation pass.
+- company_type is the authoritative structural type.
+- company_type missing
+- company_type: culture_arts_company
+- company_type: investment_company
+- company_type: religious_corporation
+- company_type: retail_company
+- company_type: software_company
+- company_type_code
+- company_type_eligibility
+- company_type_eligibility must be defined clearly
+- company_type_eligibility_matrix
+- company_type_enum
+- company_type_extension
+- company_type_listing_eligibility_rule_id
+- company_type_listing_eligibility_surface
+- company_type_scope
+- company_type_select_screen
+- company_type_selector
+- company_type_specific_setup_screen
+- company_type_template_capability_id
+- company_type_template_id
+- company_type_template_product_scope_id
+- company_upload_profile_id
+- company_upload_record_id
+- company_upload_record_ref
+- company_upload_review_status_screen
+- company_validation_result
+- company_validation_result_id
+- company_validation_run
+- company_validation_run_id
+- company_validation_screen
+- company_valuation
+- company_visibility_link
+- company_wallet
+- company_watchlist_connection
+- component: architectural-design-company
+- component: capital-anchor-company-core
+- component: city-anchor-company-assignment
+- component: city-anchor-company-density
+- component: company-asset-operation
+- component: company-builder
+- component: company-builder-enum-master-phase1
+- component: company-builder-enum-master-phase2
+- component: company-builder-high-priority-candidate-enum
+- component: company-builder-phase1-ui-binding
+- component: company-builder-phase2-ui-binding
+- component: company-builder-play-entry
+- component: company-builder-validation
+- component: company-builder-value-candidate-field
+- component: company-core
+- component: company-direct-store
+- component: company-direct-store-service
+- component: company-equity-holding
+- component: company-evaluation
+- component: company-lifecycle
+- component: company-listing-readiness
+- component: company-menu-and-company-list
+- component: company-naming-rule-summary
+- component: company-organization
+- component: company-premises-and-tenant-ui
+- component: company-product-scope
+- component: company-scale-class-enum-master
+- component: company-site
+- component: company-site-occupancy
+- component: company-store-listing-parity
+- component: company-template
+- component: company-type-enum-master
+- component: construction-company
+- component: culture-arts-company
+- component: culture-arts-company-sample
+- component: education-company
+- component: fashion-company
+- component: fitness-company
+- component: game-company
+- component: initial-anchor-company-name-candidate
+- component: initial-anchor-company-naming
+- component: initial-capital-company-and-housing-profile
+- component: initial-company-and-housing-seed
+- component: initial-company-draft
+- component: initial-company-event
+- component: initial-company-seed
+- component: initial-school-company-city-event-seed
+- component: insurance-company
+- component: interior-company
+- component: investment-company
+- component: investment-company-sample
+- component: major-city-anchor-company-assignment
+- component: manufacturing-company
+- component: medical-company
+- component: nation-anchor-company-set
+- component: real-estate-company
+- component: retail-company
+- component: retail-company-sample
+- component: software-company
+- component: software-company-sample
+- component: streamer-agency-company-type
+- component: system-company-service-facility
+- component: tourism-hospitality-company
+- component: transportation-logistics-company
+- component: user-company-service-facility
+- component: user-creatable-company-rule-matrix
+- conscription-related employer adjustments can affect company cycles
+- construction company
+- construction execution must go through system construction_company
+- construction execution must route through system construction_company
+- construction_company
+- construction_company is a system-limited company type
+- construction_company is system company
+- construction_company is system company only.
+- construction_company_presence_high
+- construction_company_revenue
+- consumer_company
+- consumer_market -> company
+- contract_required_company_types
+- controlled_company_enablement_regime
+- creative production and public culture company
+- creative_company_enablement_regime
+- creator support company structures in Civilization
+- creator-owned company facilities may expose management_supported=true
+- creator-owned company premises
+- creator_owned_company_facility
+- creator_owned_company_facility -> company_overview_service
+- creator_owned_company_facility -> company_overview_service -> owned_overview_entry
+- creator_owned_company_facility -> company_overview_ui
+- creator_owned_company_facility -> user_company
+- creator_owned_company_facility may be visible_and_usable with management_supported
+- creator_owner may manage owned company facilities
+- cross-border company behavior
+- culture/arts company flow
+- culture_arts_company
+- culture_arts_company -> PDF/JPEG content intake / exhibition setup
+- culture_arts_company -> true
+- culture_arts_company combines creative production
+- culture_arts_company is a user-creatable company type
+- culture_arts_company may support
+- culture_arts_company requires content import or content profile
+- culture_arts_company_default
+- culture_arts_company_template
+- debtor_ref: company trading account
+- debtor_ref: company_site / company
+- default company identity posture
+- defines how the company appears
+- deposit/payment rails, or finance-facing company operations
+- design-oriented company
+- design_provider_type: system_company
+- design_provider_type: user_company
+- development company flow
+- direct building construction without construction_company
+- direct company sale
+- direct company sale posture
+- direct property transfer without real_estate_company
+- direct real-money handling by company
+- direct regulated insurance service without insurance_company
+- direct stock execution by ordinary company
+- direct_company_entry
+- direct_company_sale
+- direct_store_facility -> company_direct_store_service -> direct_entry
+- distinct from user company UI
+- distributed through a retail company.
+- does not move company into trade domain
+- domain: 029_company
+- domain: company
+- draft structure used by Company Builder
+- draft_code: SAMPLE_CULTURE_ARTS_COMPANY_001
+- draft_code: SAMPLE_INVESTMENT_COMPANY_001
+- draft_code: SAMPLE_RETAIL_COMPANY_001
+- draft_code: SAMPLE_SOFTWARE_COMPANY_001
+- economic and company activity requires tax basis
+- education company flow
+- education_company
+- education_company -> text/program/age-band setup
+- education_company is a public-impact company type
+- education_company requires text/program/age-band setup
+- education_company_template
+- education_supportive_company_regime
+- eligible_company_scope_posture
+- entertainment_company
+- entitlement may be sold through retail company
+- evaluate_company_standing
+- every company belongs to one nation
+- existing company revision draft
+- expense is influenced by company price
+- expose nation and company market context
+- exposes company categories, featured goods, reviews, and bundles
+- f(CompanyStandaloneScore, SovereignConstraint)
+- fabless_company
+- facility_types_company_and_housing
+- fashion_company
+- fashion_company is a style and product company type,
+- fashion_company_template
+- field_map_company_lot_tap -> company_overview_or_use
+- finance → company
+- finance-sensitive user-creatable company
+- first_company_headquarters_opened
+- fitness_company does not perform
+- fitness_company is a training and wellness company,
+- fitness_company is a user-creatable company type
+- folder: 060.integration/011.company
+- folder: 070.operations/005.company
+- for Civilization company-occupancy-oriented facilities.
+- for Company Builder persistence.
+- for Company Builder.
+- for Company Template.
+- for Initial Company Draft.
+- for a company inside Civilization.
+- for architectural_design_company.
+- for company asset operation.
+- for company builder inside CivilizationOS.
+- for company core, site, opening, and system-company mediation
+- for company equity holding.
+- for company equity-related asset operation.
+- for company evaluation.
+- for company list/discovery, analytics, evaluation,
+- for company listing readiness.
+- for company premises and rent inside Civilization.
+- for company premises and tenant UI inside Civilization.
+- for company premises and tenant UI.
+- for company premises, office sites,
+- for company product scope.
+- for company site occupancy inside Civilization.
+- for company-occupancy-oriented facilities in Civilization.
+- for company-related UI inside CivilizationOS.
+- for company-related screens inside CivilizationOS.
+- for company-scoped or facility-scoped selling posture.
+- for company_core.
+- for company_site.
+- for initial company placement and housing placement
+- for system-side company work.
+- for user-creatable company governance.
+- for user-creatable company initialization.
+- for user-creatable company types.
+- foreign company holding
+- foreign/company holding behavior must be DB-controlled
+- foreign/company/approval context must be explicit when relevant
+- formal public company name
+- founder names must not be used in company naming
+- from company concept to established company.
+- from company detail screens.
+- from design origin and company ownership.
+- from security or company-office UI.
+- funds company
+- game production company
+- game_company
+- game_company -> game upload / release setup
+- game_company must distinguish connected-game operation
+- game_company requires game upload/release configuration
+- game_company_template
+- gas_company
+- generated for a specific taxpayer, company, user,
+- generic company office UI
+- generic company premises UI
+- generic company security UI
+- generic_company_upload
+- growth_score reflects whether the company
+- hiring conditions vary by company
+- holding_company
+- hospitality_company
+- how City Builder differs from Company Builder
+- how the company may distribute owned or third-party products
+- human-readable unique company code
+- if any company type is listing_eligible
+- if nation and company rules allow it.
+- in the same structural sense as company establishment cost.
+- individual and company sellers are both lawful
+- individual seller to company seller conversion is prohibited
+- initial company frame
+- initial company identity definition
+- initial company_site set
+- initial evaluation at company creation
+- initial_company_frame_summary
+- innovation_company
+- inside Company Builder.
+- inside company premises structures.
+- insurance -> company
+- insurance_company
+- insurance_company is a system-limited company type
+- insurance_company is system company only.
+- integration/011.company/0600110000_COMPANY_INTEGRATION_INDEX.md
+- integration/011.company/0600110001_COMPANY_INTEGRATION.md
+- integration/060.company/010_COMPANY_INTEGRATION.md
+- inter-nation company holding
+- interior_company
+- interior_company is a design company type.
+- interior_company_template
+- interview count configurable per company
+- interview count is configurable per company
+- into explicit city-level anchor company presence.
+- invalid company_type
+- investment company flow
+- investment_company
+- investment_company -> fund / portfolio / solicitation setup
+- investment_company is a user-creatable finance-sensitive company type
+- investment_company is user-creatable but finance-sensitive,
+- investment_company requires fund/portfolio setup
+- investment_company_default
+- investment_company_presence_high
+- investment_company_template
+- is visible in public company discovery or profiles.
+- jobs have requirements defined by company
+- labor -> company
+- labor_company
+- land use right holder = company under land lease
+- land_ref is not required on company site directly
+- larger company or state staffing systems,
+- larger company staffing systems,
+- legal_structure_profile: standard_for_profit_company
+- legitimacy_score reflects whether the company
+- linked company / marketplace / logistics / streaming-boundary surface
+- linked company identity
+- linked company premises where applicable
+- linked logistics / supply / infrastructure / company surface
+- linked real-estate / retail / company / support-facility surface
+- linked real-estate or company routing
+- listed company detail may backlink to securities company service
+- listed_company_count
+- listed_company_list
+- listing eligibility by company type
+- listing eligibility for the company type is unresolved
+- listing eligible company type scope
+- listing not applicable for this company type
+- listing readiness missing for listing-tracked company
+- listing_eligible_company_type_scope
+- local autonomy creates the strongest variation in school, company, and city event culture
+- lower company-governance internals
+- manual company creation
+- manufacturing_company
+- manufacturing_company is a system-limited company type
+- manufacturing_company is system company only.
+- marine_company
+- media_company
+- mediation_path: system_real_estate_company
+- medical_company
+- medical_company is a system-limited company type
+- medical_company is system company only.
+- merchandising company
+- mining_company
+- mirrored_company_id
+- must act as the Civilization-side company and logistics bridge
+- must be deducted from company treasury
+- must exist as an explicit Civilization company type.
+- must go through system real estate company.
+- must not create manual system-company work waiting
+- must use a new company creation flow if recreated later
+- nation anchor company sets
+- nation market regime excludes this company type
+- nation_zone_company_type_rule_id
+- no company may bypass compliance floor
+- not a financial or construction company type.
+- not a medical company.
+- not a standard profit-maximizing company.
+- not to ordinary company builder flows.
+- not treated as ordinary commercial company
+- notes: balanced opening zone for multiple company families
+- notes: flagship retail and market-facing company concentration
+- ocean_trade_company
+- of the company’s offerings.
+- oil_company
+- ongoing company rating/evaluation
+- open_company_activity
+- open_company_premises_issue
+- open_company_premises_manage
+- open_company_premises_structure
+- open_company_premises_tenant_allocation
+- open_company_profile
+- open_company_service_recovery
+- opening/company/market/infrastructure notifications must be routed
+- opens company direct store home
+- operations/005.company/0700050000_COMPANY_OPERATIONS_INDEX.md
+- operations/005.company/0700050001_COMPANY_OPERATIONS.md
+- operations/040.company/010_COMPANY_OPERATIONS.md
+- ownership may belong to many company types
+- paid by company
+- pe_portfolio_company
+- person, company, training, and outcome posture.
+- platform_company
+- population_notes: immigration and company activity are actively supported
+- port_service_facility -> public_or_system_company
+- portfolio_required_company_types
+- preserves company branding and store theme
+- primary use holder = leasing company
+- private_equity -> company
+- private_news_company
+- procurement -> company
+- product types the company may create as originator
+- product types the company may sell
+- product_scope_bundle defines company output scope.
+- property -> company
+- property is not the same as company site
+- property management company operation
+- property_right_holder = company
+- property_tenant_notes: sacred property and admin property both mediated through system real estate company
+- public / private / company / institutional posture where relevant
+- public / private / company / special posture where relevant
+- public or searchable company listing screens
+- public/company visibility
+- public_description: A culture and arts company creating narrative works, digital art, exhibitions, and screenings.
+- public_description: A public-facing retail company distributing sourced portfolio products through curated digital storefronts.
+- public_description: A software company developing BusinessOS extensions, linked apps, and standalone packages.
+- public_description: An investment company offering structured fund and capital products inside a regulated national market framework.
+- public_interest_corporation is system company only
+- public_profile_bundle defines company-facing discovery profile.
+- published company definition
+- published_company_ref
+- railway_service_branch -> system_company_or_public
+- readiness_notes: culture company likely targets growth-first market path
+- real estate mediation routes through system real estate company
+- real estate transfer mediation must go through system real estate company
+- real-estate transfer mediation must go through system real estate company
+- real-estate-related execution must go through system real estate company
+- real_estate_company
+- real_estate_company is a system-limited company type
+- real_estate_company is system company only.
+- real_estate_company mediation.
+- real_estate_company_fee
+- real_estate_company_fee_where_applicable
+- real_estate_intermediary_ref: system_real_estate_company_concordia
+- real_estate_intermediary_ref: system_real_estate_company_lumen
+- real_estate_intermediary_ref: system_real_estate_company_meridian
+- real_estate_intermediary_ref: system_real_estate_company_sancta
+- recommendation can affect school entry and company selection
+- recruitment_company_facility
+- recruitment_company_facility -> build_cost low / maintenance low / time 5
+- recruitment_company_facility -> mixed_allowed
+- recruitment_company_facility -> recruitment_service
+- recruitment_company_facility -> recruitment_ui
+- redevelopment_company
+- reference to company symbolic identity bundle or profile
+- reference to public-facing company profile bundle or profile
+- regime_bundle.company_regime_bundle
+- regional_company
+- related_company_links
+- related_company_ref_set
+- relation between premises truth and linked real-estate / company / retail truth
+- relationship between company premises and agency operation surfaces
+- religious_corporation is a special non-standard company type
+- research_company_presence_medium_high
+- resolve foreign/company holding legality
+- resource_company
+- restricted logic must remain consistent with company scope
+- restricted_company_enablement_regime
+- retail company flow
+- retail company sellable product classes
+- retail_company
+- retail_company -> supplier contract / portfolio setup
+- retail_company -> true
+- retail_company is a user-creatable company type
+- retail_company requires contract/portfolio setup
+- retail_company_default
+- retail_company_template
+- revenue ledger belongs to company accounting
+- same category may have different price ranges by company
+- school and company culture
+- school and company events still show status layering
+- scope: city-anchor-company-assignment
+- scope: company-builder
+- scope: company-builder-enum-master-phase1
+- scope: company-builder-enum-master-phase2
+- scope: company-premises-and-tenant-ui
+- scope: initial-anchor-company-naming
+- scope: initial-company-and-housing-seed
+- scope: initial-company-draft-sample
+- scope: school-company-city-event-seed
+- scout_by_system_company_ref
+- scouting company
+- searchable/listed company profile becomes available
+- section_id: company_premises_access_and_movement_section
+- section_id: company_premises_automation_section
+- section_id: company_premises_issue_section
+- section_id: company_premises_kpi_section
+- section_id: company_premises_shared_space_section
+- section_id: company_premises_staffing_section
+- section_id: company_premises_structure_section
+- section_id: company_premises_summary_card
+- section_id: company_premises_tenant_allocation_section
+- section_id: company_premises_usage_visibility_section
+- securities company facility
+- securities_company and license
+- securities_company_facility
+- securities_company_facility -> build_cost medium / maintenance low / time 10
+- securities_company_facility -> buildable medium_lot finance_or_mixed_use
+- securities_company_facility -> mixed_allowed
+- securities_company_facility -> securities_service
+- securities_company_facility -> securities_ui
+- securities_company_facility is compatible with finance_zone or mixed_use_zone
+- securities_company_facility prefers finance lot
+- securities_company_facility provides brokerage and portfolio services
+- securities_company_service
+- securities_firm is a system-limited company type
+- securities_firm is a system-limited company type.
+- securities_firm is system company only.
+- seller and company store rules
+- seller_company_ref
+- seller_store preserves company context on back
+- set_company_type_rule
+- setting allowed company types
+- setting company-type listing eligibility
+- site, occupancy, opening, and system-company mediation
+- software and app production company
+- software_company
+- software_company -> app upload / integration setup
+- software_company -> true
+- software_company is a user-creatable company type
+- software_company requires app upload/runtime configuration
+- software_company_default
+- software_company_template
+- sovereign and company rating visibility
+- space_company
+- specialized surfaces are company-type-specific
+- stage: company_draft
+- standard_for_profit_company
+- startup -> company
+- station_service_facility -> public_or_system_company
+- stock_company
+- stock_market -> company
+- streamer management company
+- summary_description: A trade-centered nation emphasizing company activity, retail growth, finance, and open civic commerce.
+- system company
+- system company -> false
+- system company UI is an operational/admin surface,
+- system company admin surfaces
+- system company admin surfaces are explicit
+- system company classes unless explicitly allowed
+- system company service facilities
+- system company settings
+- system construction_company executes construction
+- system construction_company execution path
+- system construction_company is the sole construction executor
+- system construction_company reference
+- system construction_company.
+- system real estate company.
+- system real-estate company listing or mediation path
+- system real-estate-company mediation validity
+- system-limited company cannot be established by user flow
+- system-limited company types require system-admin flow
+- system_company
+- system_company classes where excluded
+- system_company may receive stable baseline modifiers
+- system_company_admin_surface_profile_id
+- system_company_facility_types
+- system_company_only
+- system_company_only_respected
+- system_company_ref
+- system_company_screens
+- system_limited_company_types
+- system_marketplace_operator_facility -> system_company_only
+- system_real_estate_company_ref
+- target company profile
+- target_company_profile
+- target_company_ref
+- tax may affect income, luxury, company operation, and trade
+- taxation -> company
+- technology_company
+- template_notes: creative production and event operation company
+- template_notes: investment operations starter company
+- template_notes: public-facing retail starter company
+- template_notes: software app builder starter company
+- tenant unit is not the same as company core
+- that determines whether a company is approaching
+- the company adds administrative reach
+- the company adds operational sub-sites
+- the company expands geographically
+- the company extends nation-level presence
+- the company must not proceed.
+- the company operates its actual sites.
+- the company owner.
+- the company remains a Civilization company
+- the company type is compatible with the site type
+- the company/site type is allowed
+- the company_premises_tenant_and_office family.
+- the organizational posture of the company.
+- the system real-estate company
+- the system-side execution company
+- through the system real-estate company.
+- to company premises or managed residence logic.
+- to initialize company draft structure.
+- top foreign company towers
+- tourism_hospitality_company
+- tourism_hospitality_company is system company only.
+- transaction is mediated by the system real-estate company
+- transport_information_center -> public_or_system_company
+- transportation_logistics_company
+- transportation_logistics_company is system company only.
+- true if the company type requires system flow
+- typical_eligible_company_types
+- unique parent company identifier
+- unrelated company allowances should not dilute zone identity
+- update_company_type_eligibility
+- update_company_type_listing_eligibility
+- update_company_type_rule
+- upload_required_company_types
+- used by a company inside a nation.
+- used for company registration and formal existence inside Civilization.
+- used to track company quality, activity, legitimacy,
+- used when company type is structurally non-listable
+- user company may fund construction
+- user company may not execute construction directly
+- user company may own completed building
+- user company service facilities
+- user flow may create only user-creatable company types
+- user_company
+- user_company is user-controlled
+- user_company may face stricter review or higher premium in sensitive zones
+- user_company_allowed
+- user_company_allowed_respected
+- user_company_bank_branch
+- user_company_branch_store
+- user_company_branch_store -> company_overview_service
+- user_company_branch_store -> company_overview_ui
+- user_company_branch_store -> user_company
+- user_company_direct_store
+- user_company_direct_store -> build_cost low / maintenance low / time 5
+- user_company_direct_store -> company_direct_store_service
+- user_company_direct_store -> company_direct_store_ui
+- user_company_direct_store -> user_company
+- user_company_education_facility
+- user_company_entertainment_facility
+- user_company_facility_types
+- user_company_headquarters
+- user_company_headquarters -> build_cost medium / maintenance medium / time 10
+- user_company_headquarters -> company_overview_service
+- user_company_headquarters -> company_overview_ui
+- user_company_headquarters -> user_company
+- user_company_insurance_counter
+- user_company_media_facility
+- user_company_medical_facility
+- user_company_real_estate_counter
+- user_company_recruitment_counter
+- user_company_religious_facility
+- user_company_securities_branch
+- user_company_showroom
+- user_company_showroom -> company_overview_service
+- user_company_showroom -> company_overview_ui
+- user_company_showroom -> user_company
+- user_company_travel_counter
+- using national treasury for company operations
+- valid company
+- valid company existence
+- valid company premises require valid property right or occupancy basis
+- what kind of company premises exists.
+- where company-occupancy truth dominates
+- where streamer-agency company operation,
+- where the company carries out activity.
+- where the company physically or operationally exists
+- whether company holding is allowed
+- whether company holding is legal
+- whether the company may hold and operate equity assets
+- whether the company may hold and operate real estate assets
+- whether the company may hold, license, or distribute rights
+- whether the company may operate asset strategy
+- whether the company may publish into the marketplace
+- whether the company may run event-type offerings
+- whether the company type is structurally listable at all.
+- whether transfer to company is allowed
+- who the company is
+- without requiring full company scale.
+- work and company systems
+- written exam optional per company
+- xx company identity / type
+- zone allows company type but denies all compatible site types
+- zoning, and company distribution later.
+- × company_price_factor
+- → company
+- 二宮 naming is reserved for the railway company only
+- 国家は企業施策に直接介入しない

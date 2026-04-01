@@ -1,0 +1,1444 @@
+# ============================================================
+# STATE CANDIDATES
+# ============================================================
+
+status: candidate
+source: 000_CIVILIZATION_OS_FULL_INTEGRATED.md
+prepared_by: Zero
+method: headings_and_bullets_only
+exclude: フォトン / Photon / PHOTON
+
+- 003_nation
+- 004_subnational_government
+- 020_international_organization
+- 02xx nation binding / regime
+- 033 NATION FINANCE CONSTITUTION
+- 1. DONATION TYPES
+- 1. NATION BUILDER
+- 1. NATION BUILDER SURFACES
+- 1. NATION MARKETPLACE ENTRY SURFACES
+- 1. NATIONAL POSTURE
+- 1. NATIONAL TREASURY
+- 1. NATION_ENTERPRISE_FINANCE_RULE
+- 1. NATION_VALUATION_PROFILE
+- 1. REQUIRED EXPLANATION THEMES
+- 1. REQUIRED UI EXPLANATION BLOCKS
+- 10-2. 02xx nation binding / regime
+- 10. NATION MARKET CONNECTION
+- 10. TABLE: nation_activation_record
+- 11. NATION REGIME SEPARATION RULE
+- 11. TABLE: nation_template_application_log
+- 12. TABLE: nation_builder_audit_log
+- 14. HOLIDAY / NATIONAL EVENT SECTION UI ITEMS
+- 14. STATE BUILDER POSITION
+- 15. INITIAL NATION FRAME
+- 16. INITIAL NATION FRAME SECTION UI ITEMS
+- 16. STATE BUILDER SCALE FLOW
+- 2. DEFAULT DESTINATION
+- 2. EXTENDED NATION DOMAINS
+- 2. INITIAL NATION SET
+- 2. NATION ANCHOR POSTURE
+- 2. NATION ENTRY BEHAVIOR
+- 2. NATION METRIC TARGETS
+- 2. NATION NOTES
+- 2. NATION REGIME RESOLUTION
+- 2. NATIONAL CURRENCY
+- 2. NATIONAL DIFFERENCE NOTES
+- 2. NATIONAL PATTERNS
+- 2. NATIONAL POSTURE
+- 2. NATION_VALUATION_BIAS_RULE
+- 2. NORTHERN CONTINENT NATION BIAS
+- 23. STATE BUILDER ENTRY FUNCTION
+- 24. SCALE CHANGE IN STATE BUILDER
+- 24. STATE BUILDER FLOW FUNCTION
+- 26. STATE BUILDER SCALE FUNCTION
+- 3. CENTRAL CONTINENT NATION BIAS
+- 3. INCLUDED MAJOR NATIONS
+- 3. NATION HOME BLOCKS
+- 3. NATION NAMING POSTURES
+- 3. NATION TYPE PRINCIPLE
+- 3. NATION-SPECIFIC NOTES
+- 3. NATION-SPECIFIC REGIME LAYER
+- 3. NATION_DISTRICT_ROLE_PROFILE
+- 3. REQUIRED NATIONS
+- 3. ROLE OF NATION TEMPLATE
+- 3. SEIWA NATION
+- 3.1 NATION_PROPERTY_REGIME
+- 3.2 NATION_PROPERTY_RIGHT_TYPE_RULE
+- 3.3 NATION_PROPERTY_HOLDER_ELIGIBILITY_RULE
+- 3.4 NATION_PROPERTY_TRANSFER_RULE
+- 3.5 NATION_PROPERTY_EXPROPRIATION_RULE
+- 3.6 NATION_PROPERTY_FOREIGN_HOLDER_RULE
+- 3.7 NATION_PROPERTY_OVERRIDE_RULE
+- 31. LEGAL EXPLANATION ROUTE
+- 4. NATION NOTIFICATION PRINCIPLE
+- 4. NATIONAL SCORE IMPACT
+- 4. SEIWA NATION
+- 4. SOUTHERN CONTINENT NATION BIAS
+- 4. TABLE: nation_draft
+- 5. NATION BUILDER RELATION
+- 5. NATION PROPERTY REGIME LAYER
+- 5. NATION-TYPE-SENSITIVE RECOMMENDATION TABLE
+- 5. NATIONAL MOBILITY RULE
+- 5. RELATION TO NATION
+- 5. TABLE: nation_draft_bundle
+- 5.1 NATION PROPERTY REGIME
+- 6. NATION AND ZONE BINDING
+- 6. NATION BINDING
+- 6. NATION REGIME SEPARATION RULE
+- 6. NATIONAL SCORE RELATION
+- 6. STATE BUILDER FLOW
+- 6. TABLE: nation_validation_run
+- 7 initial AI nations
+- 7-1. commercial_nation_template
+- 7-2. education_nation_template
+- 7-2. nation binding rule
+- 7-3. military_nation_template
+- 7-4. culture_nation_template
+- 7-5. religion_nation_template
+- 7-6. hybrid_nation_template
+- 7. LEGAL EXPLANATION FUNCTION
+- 7. NATION BINDING
+- 7. NATION BINDING BUNDLE
+- 7. NATION REGIME CONNECTION
+- 7. TABLE: nation_validation_result
+- 8. DEFAULT / TERMINATION CONNECTION
+- 8. LEGAL EXPLANATION ROUTE RULE
+- 8. TABLE: nation_approval_record
+- 9. NATION AND REGION PRINCIPLE
+- 9. NATION CONSTRAINT RULE
+- 9. NATION DIFFERENTIATION RULE
+- 9. NATION REGIME SEPARATION RULE
+- 9. TABLE: nation_publication_record
+- > international_organization
+- > nation crisis
+- > nation notification sent
+- > opening proceeds and nation notification follows if allowed
+- > payment is due in nation currency
+- > state builder
+- > state builder start
+- AI cannot create nations
+- AI cannot create new nations
+- AI nation persists
+- AI nation:
+- AI nations always remain
+- CIVILIZATION NATION BUILDER EDITOR FLOW
+- CIVILIZATION NATION BUILDER EDITOR POLICY
+- CIVILIZATION NATION BUILDER EDITOR RUNTIME
+- CIVILIZATION NATION BUILDER EDITOR UI TABLE
+- CIVILIZATION NATION BUILDER EXTENDED FLOW
+- CIVILIZATION NATION BUILDER EXTENDED POLICY
+- CIVILIZATION NATION BUILDER EXTENDED RUNTIME
+- CIVILIZATION NATION BUILDER FLOW
+- CIVILIZATION NATION BUILDER POLICY
+- CIVILIZATION NATION BUILDER REGIME REQUIREMENT TABLE
+- CIVILIZATION NATION BUILDER RUNTIME
+- CIVILIZATION NATION BUILDER UI EDITOR EXTENSION
+- CIVILIZATION NATION BUILDER UI ITEM TABLE
+- CIVILIZATION NATION BUILDER UI SURFACE TABLE
+- CIVILIZATION NATION GOVERNANCE FLOW
+- CIVILIZATION NATION GOVERNANCE OPERATION
+- CIVILIZATION NATION GOVERNANCE POLICY
+- CIVILIZATION NATION LISTING AND ZONING FLOW
+- CIVILIZATION NATION LISTING AND ZONING POLICY
+- CIVILIZATION NATION LISTING AND ZONING RUNTIME
+- CIVILIZATION NATION STATE UPDATE RUNTIME
+- CIVILIZATION OS NATION OPERATIONS INDEX
+- CIVILIZATION REPLAY COORDINATION RUNTIME
+- CIVILIZATION RETRY COORDINATION RUNTIME
+- COMMERCIAL INITIAL NATION DRAFT SAMPLE
+- CSR-008 ineligible_nation_rule_blocked
+- CULTURE INITIAL NATION DRAFT SAMPLE
+- DOMAIN 0003 nation
+- DOMAIN 0004 subnational_government
+- DOMAIN 0020 international_organization
+- Doctrinal Service Examination Office
+- Donations and Resources
+- Donations and Resources must distinguish devotion income, patron income, and charity outflow
+- EDUCATION INITIAL NATION DRAFT SAMPLE
+- EXISTING NATION ENUM ASSIGNMENT MASTER
+- EXISTING NATION PHASE2 DEFAULT ASSIGNMENT MASTER
+- EXISTING NATION PHASE3 DEFAULT ASSIGNMENT MASTER
+- EXPLANATION RULE
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/010.constitution/0100025_NATION_FINANCE_CONSTITUTION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/040.detail/0400012_CIVILIZATION_RETRY_COORDINATION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/040.detail/0400016_CIVILIZATION_REPLAY_COORDINATION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/050.domain/0400100_CIVILIZATION_NATION_STATE_UPDATE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/265.nation-builder/0402650_CIVILIZATION_NATION_BUILDER_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/265.nation-builder/0402651_CIVILIZATION_FACILITY_PLACEMENT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/265.nation-builder/0402652_CIVILIZATION_NATION_LISTING_AND_ZONING_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/265.nation-builder/0402653_CIVILIZATION_NATION_BUILDER_EDITOR_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/265.nation-builder/0402654_CIVILIZATION_NATION_BUILDER_EXTENDED_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/370.migration-nationality/0403300_CIVILIZATION_RESIDENCY_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/370.migration-nationality/0403301_CIVILIZATION_ASYLUM_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/370.migration-nationality/0403302_CIVILIZATION_MIGRATION_ENFORCEMENT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/007.world/0500070001_NATION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/007.world/0500070003_LEGACY_NATION_FLOW_FROM_010_WORLD.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/050.domain/0500100_CIVILIZATION_NATION_GOVERNANCE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/265.nation-builder/0502650_CIVILIZATION_NATION_BUILDER_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/265.nation-builder/0502651_CIVILIZATION_FACILITY_PLACEMENT_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/265.nation-builder/0502652_CIVILIZATION_NATION_LISTING_AND_ZONING_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/265.nation-builder/0502653_CIVILIZATION_NATION_BUILDER_EDITOR_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/265.nation-builder/0502654_CIVILIZATION_NATION_BUILDER_EXTENDED_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/370.migration-nationality/0503300_CIVILIZATION_RESIDENCY_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/370.migration-nationality/0503301_CIVILIZATION_ASYLUM_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/370.migration-nationality/0503302_CIVILIZATION_REMOVAL_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/004.nation/0700040000_NATION_OPERATIONS_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/004.nation/0700040001_NATION_OPERATIONS.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/050.domain/0700100_CIVILIZATION_NATION_GOVERNANCE_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/370.migration-nationality/0703300_CIVILIZATION_RESIDENCY_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/370.migration-nationality/0703301_CIVILIZATION_ASYLUM_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/370.migration-nationality/0703302_CIVILIZATION_REMOVAL_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/002.world/0800020001_NATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/003.persona/0800030003_REINCARNATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/050.domain/0800100_CIVILIZATION_NATION_GOVERNANCE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/0802650_CIVILIZATION_NATION_BUILDER_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/0802651_CIVILIZATION_FACILITY_PLACEMENT_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/0802652_CIVILIZATION_NATION_LISTING_AND_ZONING_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/0802653_CIVILIZATION_NATION_BUILDER_EDITOR_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/0802654_CIVILIZATION_NATION_BUILDER_EXTENDED_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/2651_NATION_BUILDER_VALIDATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/_legacy_hold/2651_NATION_BUILDER_VALIDATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/370.migration-nationality/0803300_CIVILIZATION_RESIDENCY_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/370.migration-nationality/0803301_CIVILIZATION_ASYLUM_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/370.migration-nationality/0803302_CIVILIZATION_MIGRATION_ENFORCEMENT_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/050.integration.before_cleanup/010_NATION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/040.policy.pre_refactor_20260320_083912/010.world/020_NATION_CREATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/040.policy.pre_refactor_20260320_083912/040.persona/030_REINCARNATION_POLICY.md
+- FMV-003 nation_restricted
+- FMW-003 nation_style_mismatch
+- FNC-003 nation_link_completed
+- FNC-004 nation_aggregate_completed
+- FNC-005 nation_ui_refresh_completed
+- FNM-003 nation_aggregate_bound
+- FPR-008 nation_scope_required
+- Federal Economics Examination Center
+- HYBRID INITIAL NATION DRAFT SAMPLE
+- Head of State Builder
+- INITIAL NATION DRAFT SAMPLE INDEX
+- INTERNATIONAL ORGANIZATION DOMAIN
+- INTERNATIONAL TREATY
+- Institution Overview must summarize attendance, donation, clergy load, and alerts together
+- Island Craft Examination House
+- Liberta Civic Examination House
+- MILITARY INITIAL NATION DRAFT SAMPLE
+- NATION BUILDER VALIDATION POLICY
+- NATION CREATION POLICY
+- NATION CREATION RULE
+- NATION DOMAIN
+- NATION FLOW
+- NATION STATE MACHINE
+- NATION TEMPLATE INDEX
+- NATIONALIZATION RISK TYPE ENUM MASTER
+- NATIONAL_CURRENCY
+- NATION_BANKING_SERVICE_RULE
+- NATION_BANK_LENDING_RULE
+- NATION_DEPOSIT_PROTECTION_RULE
+- NATION_DRAFT
+- NATION_DRAFT_APPROVAL
+- NATION_DRAFT_AUTHORITY_SEAT
+- NATION_DRAFT_CURRENCY_PROFILE
+- NATION_DRAFT_FACILITY_PLACEMENT
+- NATION_DRAFT_GOVERNANCE_PROFILE
+- NATION_DRAFT_HOLIDAY
+- NATION_DRAFT_IDENTITY
+- NATION_DRAFT_INFRASTRUCTURE_PLACEMENT
+- NATION_DRAFT_INITIAL_FRAME
+- NATION_DRAFT_MAJOR_CITY_ROLE
+- NATION_DRAFT_NATIONAL_EVENT
+- NATION_DRAFT_NOTIFICATION_PROFILE
+- NATION_DRAFT_OPERATING_PROFILE
+- NATION_DRAFT_POPULATION_COMPOSITION
+- NATION_DRAFT_POPULATION_PROFILE
+- NATION_DRAFT_PRIORITY_INDUSTRY
+- NATION_DRAFT_PUBLIC_SERVICE_BASELINE
+- NATION_DRAFT_RELIGION_CULTURE_PROFILE
+- NATION_DRAFT_RULE_BUNDLE
+- NATION_DRAFT_RULE_CHECK
+- NATION_DRAFT_SYMBOLIC_IDENTITY
+- NATION_DRAFT_TEMPLATE_LINK
+- NATION_DRAFT_TERRITORY_PROFILE
+- NATION_DRAFT_VALUE_TAG
+- NATION_FX_RULE
+- NATION_LISTING_STYLE
+- NATION_MARKET_TIER
+- NATION_MARKET_TIER_RULE
+- NATION_PROPERTY_ENFORCEMENT_RULE
+- NATION_PROPERTY_FINANCE_RULE
+- NATION_PROPERTY_INHERITANCE_RULE
+- NATION_PROPERTY_TAX_RULE
+- NATION_PROPERTY_TRANSFER_RULE_EXT
+- NATION_PUBLICATION_RECORD
+- NATION_SECURITIES_FINANCE_RULE
+- NATION_SECURITIES_SERVICE_RULE
+- NATION_STORE_NOTIFICATION_RECORD
+- NATION_STORE_ZONE
+- NATION_TEMPLATE
+- NATION_ZONE
+- NATION_ZONE_COMPANY_TYPE_RULE
+- NATION_ZONE_COMPATIBILITY_CHECK
+- NATION_ZONE_RESTRICTION_RULE
+- NATION_ZONE_SITE_TYPE_RULE
+- NLF-001 nation_link_applied
+- NLF-002 nation_link_recalculated
+- NLF-003 nation_link_rollup_applied
+- NLF-004 nation_link_skipped_inactive
+- NLF-005 nation_link_removed
+- NLF-006 nation_link_replacement_applied
+- Nation Aggregation
+- Nation Builder
+- Nation Builder may define whether capital tiers exist
+- Nation Comparison
+- Nation Comparison and Preview
+- Nation Marketplace Entry
+- Nation Marketplace Policy Layer
+- Nation Master
+- Nation Overview and Detail
+- Nation Themes
+- Nation Variation Binding Map
+- Nation, company, law, war, persona remain domain-owned
+- National Service Day
+- National score impact
+- Nations
+- Nondomina Coordination Guard House
+- Overview: nation snapshot and build status
+- PAR-003 route_blocked_by_nation_override
+- PHR-005 replaced_with_nation_override_pending
+- POR-006 blocked_by_nation_override
+- REINCARNATION POLICY
+- RELIGION INITIAL NATION DRAFT SAMPLE
+- SUBNATIONAL GOVERNMENT DOMAIN
+- UI must show available power acquisition routes by nation
+- a mandatory nation rule is missing
+- a nation draft baseline is generated
+- a nation may restrict certain company types from certain product scopes
+- a nation may restrict distribution mode
+- a nation may restrict event operation
+- access_mode_explanation
+- active nation regime exists
+- active nation state
+- activity contributes to national score
+- add_facility -> nation_builder_preview
+- add_facility may affect builder preview and nation detail
+- add_national_event
+- advertising and media-space coordination
+- affects national score
+- aggregate nation coverage improvements may be summary_visible
+- all behavior is nation-governed and DB-controlled
+- all nation behavior is DB-controlled
+- allow state builder entry from empty area
+- anchor_facility_opened may prefer district_then_nation_rollup
+- applies nation cultural visibility profile
+- applies nation restriction profile
+- applies nation tax profile
+- applies to citizens with nationality and without disqualifying disabilities
+- apply_nation_modifiers
+- appointed by nation owner or authorized user
+- assassination_risk
+- asylum or nationality lifecycle updated explicitly
+- authority_explanation_summary
+- available at nation creation
+- available_in_current_nation
+- backlink must preserve nation and facility context when possible
+- banking_rate_board_facility -> nation_body
+- bankruptcy consequences depend on nation rules
+- bankruptcy consequences for personas depend on nation
+- based on activity / nation score
+- basic_identity_bundle.nation_type
+- blocked infrastructure actions may appear disabled with authority explanation
+- blocked infrastructure options may appear disabled with authority explanation
+- blocked-with-explanation
+- bookmarked destination sets
+- builder should show how grand play is shaped by nation design
+- bureaucracy and examination logic highly visible
+- cabinet existence is structure-layer locked after nation creation
+- campus and school-life coordination
+- cards may link to expanded nation detail
+- career consists of hire, promotion, demotion, transfer, resignation, and termination
+- category: nation_binding
+- causal explanation summaries
+- censorship may exist by nation ideology
+- ceremonial_human_with_nation_override_required
+- ceremonial_office -> ceremonial_human_with_nation_override_required
+- ceremonial_office -> nation_override_explicit_required
+- chain event that changes holder according to nation rule
+- chamber existence is structure-layer locked after nation creation
+- city centers are placed through City Builder, not Nation Builder
+- city-level and nation-level event differences
+- city_district_rollup -> nation_detail_binding
+- city_then_nation_rollup
+- civic emergency coordination
+- civilian education exists, but national-service timing affects life-course rhythm
+- civilization_basic_explanation
+- coerced_or_pressure_donation
+- command_coordination
+- commercial_nation_template
+- company activity contributes to national score
+- company creation is nation-bound
+- company does not transfer money to nation
+- company lending is issued in the nation currency
+- company revenue contributes to national score
+- company type and nation rule consistency
+- compatible_nation_rules
+- compulsory_service_applies_to_citizens_with_nationality_and_without_disqualifying_disabilities
+- configure_conscription -> nation_scope_or_military_scope
+- confirmation requirement base is structure-layer locked after nation creation
+- conscription and mobilization require elevated nation or military authority
+- consort_when_human_required_by_nation_rule
+- contamination concern where supported
+- contamination or cleanliness concern visibility where supported
+- contamination or environmental concern visibility where supported
+- contamination state
+- contamination-aware
+- contamination-state visibility
+- contamination/override visibility
+- contamination_concern_flag where supported
+- contamination_summary_section
+- continent-level nation viewing
+- continent_map_editable_custom_nation_tap -> nation_builder_edit_or_nation_overview
+- continent_map_empty_nation_slot_tap -> nation_builder_create
+- continent_map_nation_tap -> nation_overview
+- contract lawfulness under nation rule
+- contract termination
+- contributes to nation
+- converting national currency into CIV_CASH
+- converting national currency into real money
+- converting national currency to real money
+- coordination burden
+- coordination flags
+- coordination need with logistics
+- coordination need with logistics or retail
+- coordination pressure
+- coordination state with review and fulfillment
+- coordination_burden_flag
+- coordination_flag
+- coordination_role_stronger_than_strict_unified_control
+- coordination_speed
+- coordination_stronger_than_hard_central_control
+- core legislative powers are structure-layer locked after nation creation
+- core nation builder sections
+- core nation drafting surfaces are explicit
+- corruption support ceiling is structure-layer locked after nation creation
+- coverage_dimension -> nation_master
+- create_nation
+- create_nation requires explicit nation creation authority
+- create_or_load_nation_seed
+- creditor_ref: nation treasury
+- crime, liability, dispute, and court actions are nation-sensitive
+- cross-border services require explicit nation FX rules
+- cross-nation comparison matrix
+- cultural festivals, guidance periods, legal-study events, and public examinations are strong
+- culture_nation_template
+- current nation service coverage
+- current_nation_aggregate
+- custom_nation_only
+- default succession type base is structure-layer locked after nation creation
+- defense coordination routes
+- defense_coordination_posts
+- defined at nation creation
+- delivery / takeout coordination concern
+- denomination_profile
+- destination_city_focus
+- destination_scope
+- different nations may define different default timing
+- different nations may define different due timing
+- different nations may define different forced action paths
+- different nations may define different grace periods
+- direct conversion: national currency → real money
+- disabled after nation creation
+- disabled ports must not alter current field-map or nation behavior
+- disabled with explanation
+- dissolution base is structure-layer locked after nation creation
+- district and property valuation should consume nation valuation bias
+- district role profile lets each nation emphasize different district types
+- district_then_nation_rollup
+- dividend (national currency)
+- dividend = national currency
+- dividends for national stock are paid in national currency
+- dividends for national stock flows in national currency
+- doctrinal_indoctrination_heavy
+- doctrine, ritual, donation, and temple operation type
+- doctrine, ritual, donation, religious events
+- doctrine_nomination
+- doctrine_nomination requires doctrine-linked office class
+- doctrine_nomination_appointment
+- does not require prior nation application
+- domestic deposit accounts are denominated in nation currency
+- domestic lending is denominated in nation currency unless nation rules allow otherwise
+- donation
+- donation and event posture
+- donation and resource management
+- donation baseline
+- donation program support
+- donation settings
+- donation support
+- donation systems
+- donation/religious event setup
+- donation_administration_center
+- donation_and_charity_operation
+- donation_and_resource_layer
+- donation_cycle_loop
+- donation_enabled
+- donation_loyalty_level
+- donation_program
+- donation_program_opened
+- donation_relation
+- donation_requirement
+- donation_shortfall
+- donation_support_record
+- donation_support_services
+- donation_surface
+- downstream national effects are integrated explicitly
+- each nation has distinct valuation personality
+- eastern border areas are reinforced by national defense forces
+- economy_snapshot -> nation_master
+- edit_custom_nation
+- edit_custom_nation requires ownership or delegated nation authority
+- editable after nation creation within allowed rules
+- editable_custom_nation
+- editable_custom_nation_tap -> open_custom_nation
+- editable_nation_only
+- editorial or coordination burden
+- education_nation_template
+- emergency_donation_campaign
+- emergency_power_ceiling is structure-layer locked after nation creation
+- empty area tap -> state builder
+- empty_nation_slot
+- empty_nation_slot_tap -> create_nation
+- every company belongs to one nation
+- examination internals
+- examination tickets
+- examination_event
+- examination_pipeline
+- exchange rate defined between nations
+- execution_path_if_allowed_by nation rules
+- executive_selection_base is structure-layer locked after nation creation
+- exhibitor coordination burden
+- exhibitor or participant coordination
+- existing nation assignments
+- existing nations must be allowed to diverge from type defaults
+- existing_nation_assignment_preview
+- explanation_summary
+- explicit_nation_rule_block
+- expose nation and company market context
+- extended nation builder groups are explicit
+- extended nation profile sections
+- facility state remains committed even if nation UI refresh is deferred
+- facility_effect_summary -> nation_preview_binding
+- facility_state_to_nation_linkage
+- faction category base is structure-layer locked after nation creation
+- failure_explanation
+- festival_specific_donation
+- field map must expose recruitment or intake only where current nation policy allows
+- finance behavior is nation-governed and DB-controlled
+- fixed or protected nations may remain view-only
+- forced service may use nation_notice_route
+- forced_resignation
+- formal_appointment_type base is structure-layer locked after nation creation
+- foundation_mode may define nation base
+- freight coordination facility
+- global votes may apply international actions
+- governance builders should not open before nation identity exists
+- governance default and nation override must remain distinguishable
+- governance nation types
+- grand ritual and major patron donation logic should be visible
+- guild_nomination
+- head_of_government_type is structure-layer locked after nation creation
+- head_of_state -> nation_scope
+- head_of_state_type is structure-layer locked after nation creation
+- hidden_feature_removal_without_context_explanation
+- hidden_roll_events_must_still_produce user-legible result explanation
+- holiday and national event profile
+- home_nation_draft_ref
+- home_nation_id
+- home_nation_type
+- host_nation_scope
+- how City Builder differs from Nation Builder
+- how exhibitor or participant coordination is behaving
+- how nation-specific override affects visible routes
+- hybrid nation-specific systems
+- hybrid nations should use M1 as first growth absorber
+- hybrid_nation_template
+- if national_currency is sufficient,
+- impossible eligibility/rule combinations
+- incompatible restriction combinations
+- index(nation_draft_id, bundle_type, is_current)
+- index(nation_draft_id, created_at desc)
+- index(nation_draft_id, executed_at desc)
+- index(nation_draft_id, severity)
+- index(nation_validation_run_id)
+- ineligible_nation_rule_blocked
+- initial base nations = 7 AI nations
+- initial nation frame guidance
+- initial nation frame layer
+- initial nation parameter frame
+- initial nation posture
+- initial nations = 7 (AI controlled)
+- initial_nation_frame
+- initial_nation_frame_bundle
+- initial_nation_frame_summary
+- initial_nation_frame_surface
+- inter-nation company holding
+- inter-nation tension
+- interest-group category base is structure-layer locked after nation creation
+- international business offices
+- international commercial English naming
+- international commercial/financial naming
+- international organizations may exist
+- international rules
+- international_branching
+- international_top_firm_presence_very_high
+- international_top_firm_tower_belt
+- invalid style/tier combinations
+- invoke nation state update runtime
+- is allowed only in nation-designated allowed zones
+- issue_mobilization -> elevated_nation_scope_or_military_scope
+- kitchen and service-flow coordination
+- latest nation_activation_record by created_at
+- latest nation_approval_record by created_at
+- latest nation_publication_record by created_at
+- latest nation_validation_run by executed_at
+- lay_rail -> rail_operator_or_national_rail_authority_or_city_transit_authority
+- lay_road -> road_authority_or_city_scope_or_nation_scope
+- legal explanation
+- legal explanation detailed composition
+- legal explanation entry behavior
+- legal/effective realization is nation-specific
+- legal_explanation
+- legality ceiling for influence channels is structure-layer locked after nation creation
+- legislator -> nation_scope
+- lending legality and thresholds are nation-governed
+- life events reflect economy, nation, and relationships
+- life expectancy depends on nation medical level
+- lifecycle (reincarnation)
+- line_vs_node_explanation
+- linked commercial coordination visibility
+- linked external coordination routing
+- linked to civil registry and nation-specific registration logic
+- links to religious or national calendar
+- listed_international
+- listing_detail_to_nation_market_home
+- live execution belongs to nation detail or operational surfaces
+- load_nation_linkage_binding
+- load_nation_ui_binding
+- load_nation_variation_binding
+- local action must still remain connected to nation-scale systems
+- local allegiance may outperform nation-level loyalty
+- local versus national identity
+- location / nation / premises
+- locked_existing_nation
+- locked_existing_nation_tap -> open_nation_overview
+- logistics coordination
+- low nationwide standardization
+- major national flagship education complex exists
+- major_international_port
+- major_patron_donation
+- malware or virus contamination
+- manage_donation
+- manual nation creation
+- market coordination facilities
+- market is intentionally narrower than commercial nations
+- marketplace examination tickets
+- may assign family support, parent support, or no support depending on nation and class
+- may expose state-certified or nation-official goods first
+- memorial_donation
+- mercenary operations are a formal national industry
+- merchant-origin, commercial, financial, international naming
+- military_nation_template
+- military_nomination
+- military_nomination requires military-linked office class
+- military_nomination_appointment
+- minimum survival purchase uses national_currency
+- ministry base existence map is structure-layer locked after nation creation
+- ministry_coordination_requirement
+- missing_nation_variation_rule
+- mixed service may use both nation_notice_route and voluntary routes
+- modify_nation_policy
+- move_to_nation_asset_pending_registry
+- multi-tenant building coordination
+- multinational_corporation
+- multinational_headquarters
+- multiple property links across different regions or nations
+- must generate nation notification after becoming effective
+- names praising the nation or founder
+- nation
+- nation / public body where lawful
+- nation DB policy governs legality at each step
+- nation Marketplace entry
+- nation UI exposure
+- nation access state
+- nation activated with optional bundles omitted
+- nation affects:
+- nation affiliation
+- nation aggregate integration
+- nation anchor company sets
+- nation and city differences
+- nation and region difference awareness
+- nation binding
+- nation binding existence
+- nation binding is always required
+- nation binding missing
+- nation binding must be explicit
+- nation binding present
+- nation binding remains valid
+- nation binding validity
+- nation borders
+- nation builder creation and edit require nation-scope authority
+- nation builder defines structural rules, not live execution events
+- nation builder entry
+- nation builder final integration
+- nation builder must show governance defaults and nation-specific override clearly
+- nation builder must show type default and nation override separately
+- nation builder preview shows projected change, not historical change
+- nation builder refresh must preserve selected nation context
+- nation can censor content
+- nation character
+- nation civic visibility
+- nation comparison
+- nation comparison shows normalized metric comparisons
+- nation comparison uses normalized comparison values
+- nation compatibility
+- nation conditions may shorten or extend expected lifespan
+- nation context must be explicit
+- nation count limit DB-controlled
+- nation creation threshold
+- nation currency
+- nation currency settlement
+- nation detail
+- nation detail is the main entry for nation-scale grand play
+- nation detail is the main entry for nation-scale power route overview
+- nation detail refresh must preserve active drilldown if possible
+- nation detail should summarize effective national posture before deeper entry
+- nation detail shows expanded coverage and driver summaries
+- nation detail surfaces
+- nation development signals
+- nation difference
+- nation draft
+- nation draft creation
+- nation draft is explicit
+- nation entry applies selected nation restrictions by default
+- nation events
+- nation facility placement system
+- nation finance rule is explicit
+- nation governance action executed once under explicit authority
+- nation governance must remain approval-bound when required
+- nation governance structure
+- nation grid
+- nation history
+- nation identity
+- nation identity and variation
+- nation identity definition
+- nation ideology may censor content
+- nation incompatibility exists
+- nation infrastructure state
+- nation labels
+- nation list
+- nation listing style
+- nation listing style is explicit
+- nation listing style is unresolved
+- nation listing style validity
+- nation market boards prioritize ranking_strip and category trend graphs
+- nation market information board
+- nation market legibility
+- nation market regime excludes this company type
+- nation market rule violation
+- nation marketability effect
+- nation marketplace entry
+- nation modifiers
+- nation name, city name, ordinary surnames
+- nation names, city names, ordinary surnames
+- nation notification
+- nation notification after opening
+- nation notification chain is unresolved where required
+- nation notification is explicit
+- nation notification must be sent after opening
+- nation notification readiness
+- nation notification visibility
+- nation or state actor
+- nation overview shows compact aggregate metrics
+- nation overview uses compact cards
+- nation penalties
+- nation policy
+- nation policy and cultural context must be visible
+- nation policy and regulation
+- nation policy diversity without breaking common system structure
+- nation policy mutation may require nation-scope approval
+- nation policy resolution is complete
+- nation policy restrictions
+- nation prestige or stability signals
+- nation preview exposure
+- nation property regimes are resolved from DB policy records
+- nation public services
+- nation ratios and thresholds are satisfied
+- nation receives notification after opening becomes effective
+- nation receives post-opening notification
+- nation regime affects marketability, not place identity
+- nation regime compatibility
+- nation regime prohibits requested market participation
+- nation regime remains a separate layer
+- nation regime remains separate
+- nation regime resolution
+- nation regulation notes may be shown inline
+- nation relation
+- nation restriction and tax rules
+- nation rule allows the requested product
+- nation rule bundle setup
+- nation rules may alter welfare,
+- nation securities / market infrastructure
+- nation securities regime must be respected
+- nation selection
+- nation service coverage
+- nation service coverage aggregation
+- nation state updated under explicit authority
+- nation status update authorized
+- nation strategic character
+- nation structure definition
+- nation structure is explicit
+- nation tax rules
+- nation template and preset
+- nation templates
+- nation theme packs
+- nation truth must not be mutated by unauthorized paths
+- nation type
+- nation type and power acquisition design
+- nation type default
+- nation type default display
+- nation type default governance
+- nation valuation affects price tendency, not legal regime
+- nation valuation bias
+- nation valuation bias rule adjusts downstream local value
+- nation valuation profile stores macro nation bias
+- nation valuation sits between continent and district layers
+- nation, city, district, and operator modifiers
+- nation, city, district, and operator modifiers must be applied after base values are loaded
+- nation-aware
+- nation-bound
+- nation-config-aware
+- nation-configurable
+- nation-context restrictions must change with entry context
+- nation-controlled
+- nation-controlled currency
+- nation-currency credit creation
+- nation-currency lending
+- nation-currency-aware
+- nation-currency-based
+- nation-defined business/opening zones
+- nation-dependent law
+- nation-governed
+- nation-level economic effects where allowed
+- nation-level listing system style
+- nation-notification-aware
+- nation-praising or founder-praising medical naming
+- nation-praising or founder-praising naming
+- nation-resolvable
+- nation-sensitive welfare and ration differences
+- nation-side fee or tax
+- nation-side fee or tax receiver
+- nation-specific finance rules
+- nation-specific in behavior
+- nation-specific in legality
+- nation-specific legal behavior is DB-controlled
+- nation-specific marketplace variation
+- nation-specific office rule
+- nation-specific override
+- nation-specific override display
+- nation-specific override governance
+- nation-specific override profile
+- nation-specific price tables may be defined in national currency
+- nation-specific property regime is handled separately
+- nation-specific regime layer
+- nation-specific rights behavior is controlled by policy records
+- nation-specific rights logic must be resolved from DB policy records
+- nation-specific rights regime diversity
+- nation-type default governance
+- nation-type default military service mode
+- nation/location relation
+- nation: aurelia_federal_republic
+- nation: free_cities_union
+- nation: gladia_military_alliance
+- nation: helios_democratic_kingdom
+- nation: nova_commercial_federation
+- nation: orpheus_maritime_federation
+- nation: seiwa_nation
+- nation_activation_record
+- nation_activation_record_id
+- nation_aggregate_to_nation_ui
+- nation_aggregate_updates
+- nation_and_restriction_block
+- nation_approval
+- nation_approval_record
+- nation_approval_record_id
+- nation_availability
+- nation_availability_profile
+- nation_availability_summary
+- nation_bank_lending_rule_id
+- nation_banking_service_rule_id
+- nation_binding
+- nation_binding_bundle
+- nation_binding_notes
+- nation_body
+- nation_body may reduce activation friction for official facilities
+- nation_body_requirement_respected
+- nation_builder
+- nation_builder is launched from empty_nation_slot or editable_custom_nation
+- nation_builder shows current + projected metric panels
+- nation_builder_audit_log
+- nation_builder_audit_log_id
+- nation_builder_final_integration_layer
+- nation_builder_high_priority_enum_groups
+- nation_builder_metric_panel
+- nation_builder_preview
+- nation_builder_preview_coverage_panel
+- nation_builder_surface
+- nation_builder_tabs
+- nation_bundle_diff_record
+- nation_category
+- nation_character_type_summary
+- nation_code
+- nation_code_candidate
+- nation_comparison
+- nation_comparison shows normalized current metrics only
+- nation_comparison_coverage_panel
+- nation_comparison_metric_view
+- nation_comparison_preview
+- nation_comparison_surface
+- nation_context
+- nation_context_supported
+- nation_currency_only
+- nation_deposit_protection_rule_id
+- nation_detail
+- nation_detail shows current + rollup + driver views
+- nation_detail_coverage_panel
+- nation_detail_metric_drilldown
+- nation_detail_surface
+- nation_difference_profile
+- nation_display_name
+- nation_district_role_profile_id
+- nation_domain
+- nation_draft
+- nation_draft_approval_id
+- nation_draft_authority_seat_id
+- nation_draft_bundle
+- nation_draft_bundle where is_current = true
+- nation_draft_bundle_id
+- nation_draft_create_surface
+- nation_draft_currency_profile_id
+- nation_draft_facility_placement_id
+- nation_draft_governance_profile_id
+- nation_draft_holiday_id
+- nation_draft_id
+- nation_draft_identity_id
+- nation_draft_infrastructure_placement_id
+- nation_draft_initial_frame_id
+- nation_draft_list_surface
+- nation_draft_major_city_role_id
+- nation_draft_national_event_id
+- nation_draft_notification_profile_id
+- nation_draft_operating_profile_id
+- nation_draft_population_composition_id
+- nation_draft_population_profile_id
+- nation_draft_priority_industry_id
+- nation_draft_public_service_baseline_id
+- nation_draft_ref
+- nation_draft_religion_culture_profile_id
+- nation_draft_rule_bundle_id
+- nation_draft_rule_check_id
+- nation_draft_symbolic_identity_id
+- nation_draft_template_link_id
+- nation_draft_territory_profile_id
+- nation_draft_value_tag_id
+- nation_effect_ref
+- nation_enterprise_finance_rule_id
+- nation_event_recommendation_link
+- nation_facility_list_market_entry
+- nation_facility_list_market_tap
+- nation_fee_or_tax
+- nation_filter
+- nation_flavor_summary
+- nation_fx_rule_id
+- nation_grid
+- nation_id
+- nation_id_or_null
+- nation_identity_card
+- nation_identity_card -> nation_master
+- nation_identity_group
+- nation_label
+- nation_level
+- nation_linkage_binding_ref
+- nation_linkage_executes
+- nation_linkage_skipped
+- nation_linkage_to_nation_aggregate
+- nation_listing_style_id
+- nation_locked_item
+- nation_locked_items_must_be filtered by nation rules
+- nation_locked_slots_must_not_be_shown_as_selectable
+- nation_lookup_sequence
+- nation_market_detail
+- nation_market_detail emphasizes nation availability, tax, and restriction notes
+- nation_market_editor_snapshot
+- nation_market_entry
+- nation_market_facility_entry
+- nation_market_facility_tap
+- nation_market_home
+- nation_market_home preserves nation context on back
+- nation_market_home_to_listing_detail
+- nation_market_information_board
+- nation_market_information_board -> build_cost low / maintenance very_low / time 0
+- nation_market_information_board -> nation_body
+- nation_market_information_board -> nation_market_board_service
+- nation_market_information_board -> nation_market_board_ui
+- nation_market_tier_id
+- nation_market_tier_rule_id
+- nation_marketplace
+- nation_marketplace_home
+- nation_master_export
+- nation_master_ref
+- nation_membership
+- nation_menu_marketplace
+- nation_modifier_row
+- nation_modifier_summary
+- nation_name
+- nation_notice_route
+- nation_notice_surface
+- nation_object
+- nation_official_goods
+- nation_only
+- nation_operator
+- nation_operator may manage nation-scoped public objects
+- nation_or_city_context
+- nation_override
+- nation_override_explicit_required
+- nation_override_pending
+- nation_override_preview
+- nation_override_profile
+- nation_override_route_summary
+- nation_override_summary
+- nation_overview
+- nation_overview shows compact current metrics only
+- nation_overview_coverage_panel
+- nation_overview_enter_field -> field_map
+- nation_overview_metric_card
+- nation_overview_surface
+- nation_permission_required
+- nation_phase2_assignment_preview
+- nation_phase3_assignment_preview
+- nation_placement_snapshot
+- nation_policy
+- nation_policy_object
+- nation_policy_profile_id
+- nation_preview
+- nation_preview shows projected deltas only
+- nation_preview_back_to_field_action
+- nation_preview_projected_delta
+- nation_profile
+- nation_property_enforcement_rule_id
+- nation_property_expropriation_rule
+- nation_property_expropriation_rule_id
+- nation_property_finance_rule_id
+- nation_property_foreign_holder_rule
+- nation_property_foreign_holder_rule_id
+- nation_property_holder_eligibility_rule
+- nation_property_holder_eligibility_rule_id
+- nation_property_inheritance_rule_id
+- nation_property_override_rule
+- nation_property_override_rule_id
+- nation_property_regime
+- nation_property_regime_id
+- nation_property_right_type_rule
+- nation_property_right_type_rule_id
+- nation_property_tax_rule_id
+- nation_property_transfer_rule
+- nation_property_transfer_rule_ext_id
+- nation_property_transfer_rule_id
+- nation_public_profile_snapshot
+- nation_publication_record
+- nation_publication_record_id
+- nation_recommended
+- nation_recommended_goods
+- nation_recommended_list
+- nation_registration_or_tax_income
+- nation_regulation_profile
+- nation_restricted
+- nation_restriction_notice
+- nation_restriction_profile
+- nation_restriction_supported
+- nation_reviewer_assignment
+- nation_rule
+- nation_rule_effect
+- nation_rule_override
+- nation_scale_class
+- nation_scope
+- nation_scoped
+- nation_scoped_search
+- nation_score contribution
+- nation_securities_finance_rule_id
+- nation_securities_service_rule_id
+- nation_seed_id
+- nation_selection
+- nation_sensitive_facility
+- nation_short_description
+- nation_specific_life_path
+- nation_specific_override_profile
+- nation_specific_override_summary
+- nation_specific_rules
+- nation_specific_special_rule
+- nation_status
+- nation_store_notification_record_id
+- nation_store_zone_id
+- nation_store_zone_ref
+- nation_style_mismatch
+- nation_subsidized
+- nation_summary
+- nation_tax
+- nation_tax_notice
+- nation_tax_profile
+- nation_template_application_log
+- nation_template_application_log_id
+- nation_template_code
+- nation_template_id
+- nation_template_select
+- nation_theme_pack
+- nation_themes
+- nation_tone_ref
+- nation_trending_goods
+- nation_type
+- nation_type missing
+- nation_type_default_summary
+- nation_type_default_vs_override_panel
+- nation_ui_surfaces_refresh
+- nation_usage_notes
+- nation_usage_restriction
+- nation_validation_result
+- nation_validation_result_id
+- nation_validation_run
+- nation_validation_run_id
+- nation_valuation_bias_rule_id
+- nation_valuation_profile_id
+- nation_variation
+- nation_variation_priority
+- nation_variation_ref
+- nation_variation_supported
+- nation_violation_report
+- nation_visibility_notes
+- nation_zone_company_type_rule_id
+- nation_zone_compatibility_check_id
+- nation_zone_id
+- nation_zone_map_snapshot
+- nation_zone_ref
+- nation_zone_restriction_rule_id
+- nation_zone_site_type_rule_id
+- national central command
+- national colors
+- national colors not configured
+- national currencies are first-class
+- national currency
+- national currency (non-convertible)
+- national currency cannot be converted to real money
+- national currency is local to the nation
+- national currency is not convertible to CIV_CASH
+- national currency is not convertible to real money
+- national currency is policy-only
+- national currency is the domestic baseline
+- national currency not cashable
+- national currency usage
+- national defense deployment near eastern borders
+- national economic emphasis
+- national economy
+- national event profile
+- national exceptions if applicable
+- national governance
+- national growth promotion
+- national holidays
+- national market condition
+- national military/education/trade/culture identity
+- national rail authority facility
+- national rail integration
+- national rail transfer hub
+- national railway hub
+- national role in civilization
+- national score does not directly create real money
+- national securities market board
+- national securities market facility
+- national securities market facility is graph and board focused
+- national service overlays later educational and occupational timing
+- national treasury
+- national-currency based minimum-life purchase
+- national-currency-aware
+- national-currency-based retail is allowed
+- national_administration_beginner
+- national_brand
+- national_campaign_discount
+- national_civil_service_advanced
+- national_civil_service_beginner
+- national_civil_service_intermediate
+- national_color_palette
+- national_command_facilities
+- national_common_exam
+- national_core
+- national_corporation
+- national_currency
+- national_currency is allowed
+- national_currency_code
+- national_currency_usage_summary
+- national_diplomatic_officer_advanced
+- national_event_code
+- national_event_name
+- national_event_type
+- national_exhibition_cycle
+- national_finance_officer_intermediate
+- national_flagship_education_complex
+- national_gallery_complex
+- national_glory
+- national_government_core
+- national_headquarters
+- national_holidays
+- national_identity
+- national_identity_or_civic_instruction_boost
+- national_index_graph
+- national_market_board_ui
+- national_market_entry
+- national_market_index
+- national_media_entry
+- national_policy
+- national_policy_officer_advanced
+- national_political_ties
+- national_port_authority
+- national_prestige
+- national_priority_fit
+- national_public_contracts
+- national_qualification
+- national_rail_authority
+- national_rail_authority_facility
+- national_rail_connection
+- national_road_authority
+- national_school
+- national_securities_market_facility
+- national_securities_market_facility -> build_cost medium / maintenance low / time 5
+- national_securities_market_facility -> nation_body
+- national_securities_market_facility -> national_market_board_service
+- national_securities_market_facility -> national_market_board_ui
+- national_securities_market_facility -> view_only_or_city_anchor civic_or_finance_or_information
+- national_securities_market_facility is compatible with civic_zone, finance_zone, or information_zone
+- national_securities_market_facility is visible_view_only
+- national_securities_market_facility opened -> market_legibility increased
+- national_securities_market_facility prefers district_anchor or city_anchor
+- national_securities_market_facility provides graph and board viewing only
+- national_security_exposure
+- national_symbolic_representative
+- national_technical_officer_intermediate
+- national_tension
+- national_tier
+- nationalist_ideology_presence
+- nationality approved
+- nationality_grant_id
+- nationalization_pressure
+- nationalization_risk_entry
+- nationalization_risk_type
+- nationalization_risk_type_selector
+- nations
+- nations can form treaties
+- nationwide_branching
+- new nation creation
+- no destructive collapse at national level
+- no prior nation application
+- no_major_national_rail_backbone
+- non-owned locked nations do not open nation builder edit
+- nondomina: defense_coordination_city
+- not all routes are available in all nations
+- not_available_in_this_nation
+- office_category_base is structure-layer locked after nation creation
+- open_contamination_and_override
+- open_contamination_state
+- open_legal_explanation
+- open_nation_market_context
+- open_recruitment -> military_scope_or_nation_scope
+- opening is allowed only in nation-designated allowed zones
+- opens nation marketplace home
+- operational_coordination
+- operator-restricted facilities are hidden or disabled with explanation
+- operator_restricted opens restricted explanation
+- optional ports must not weaken active nation linkage logic
+- ordinary auto-purchase uses national_currency
+- ordinary goods sales coordination
+- ordinary state builder UI
+- other nation-allowed business use right
+- other nation-specific property regimes
+- owner_nation_id
+- pagination_supported
+- paid from national treasury
+- paid in national currency only
+- part of a nation
+- participant coordination burden
+- participant_coordination_burden
+- party_nomination_route
+- patriotic_national_brand
+- penalties may differ by nation
+- personal profile should show only routes relevant to current nation context
+- physical fulfillment coordination
+- physical-product fulfillment coordination
+- pilgrimage_donation
+- political_donation_risk_entry
+- political_office -> nation_override_explicit_required
+- port-rail coordination storage
+- post-opening nation notification is required
+- post-opening nation notification required
+- practical power center of the nation
+- preview must not use already-updated nation values as if they were projected values
+- preview_nation_effect
+- primary_nation_effect
+- prime_minister -> nation_scope
+- prior nation application is omitted
+- prioritizes featured, ranking, and cross-nation browsing
+- prioritizes nation-available and nation-recommended goods
+- projected_delta -> nation_builder_preview_binding
+- property nation
+- property nation currency is mandatory
+- property nation is unresolved
+- public civic facilities require city-scope or nation-scope authority
+- public event load should remain lighter than culture nations
+- public infrastructure placement requires city-scope, nation-scope, or delegated system-scope authority
+- public_explanation
+- public_high_school may be nation-specific
+- published nation definition
+- published_nation_ref
+- purge support ceiling is structure-layer locked after nation creation
+- quick-reference nation summaries
+- rail should feel like national infrastructure, not just transport business
+- real_estate_market_board_facility -> nation_body_or_city_body
+- rear support should feel like a core national system, not a minor subsystem
+- recommended nation direction
+- recommended_nation_type
+- recruitment / donation / doctrine / ritual / facility operation
+- recruitment and donation rules must remain explicit
+- recurring_congregation_donation
+- registry structure is common, registered rights differ by nation
+- reincarnation creates a new persona generation
+- reincarnation value is controlled, not absolute
+- related backlinks to nation marketplace are allowed
+- relation to nation
+- religion_nation_template
+- religious_corporation -> doctrine / recruitment / donation / facility setup
+- remove_facility -> nation_builder_preview
+- remove_facility may affect builder preview and nation detail
+- removes nation lock unless user applies filter
+- rent currency comes from property nation
+- rent currency is set to property nation currency
+- rent is collected in nation currency
+- rent is collected in property nation currency
+- rent is collected in the currency of the nation
+- rent is still collected in the property nation currency
+- rent, tax, and many real-economy obligations remain nation-currency-based
+- reopen_facility -> nation_detail_recovery_surface
+- replace_facility -> nation_builder_preview
+- report_contact_consult_norm_tendency modifies communication burden and coordination events
+- required facility / infrastructure bundles resolved if nation profile requires them
+- reserve_coordination_center
+- resolve nation-specific property regime
+- restricted actions may be shown as disabled with explanation
+- restricted_by_nation
+- restricted_in_current_nation
+- result_summary_must_reflect nation_and_religion_variation
+- revenue contributes to national score
+- revenue increases national score
+- right_type is allowed for that nation and property class
+- rights are nation-governed
+- ritual_coordination
+- road placement may be city-scope or nation-scope depending on policy
+- roster, goods, and mirrored-revenue coordination
+- route availability depends on governance_type and nation override
+- route to domain reflection or coordination handler
+- same payout destination cluster
+- school rhythm, public order, examinations, and civic institutions strongly organize the year
+- school should feel like a national backbone
+- seat class types are structure-layer locked after nation creation
+- secondary_nation_effect_set
+- selecting nation listing system style
+- seller context must not hide nation restrictions
+- separate from national treasury
+- separation between template guidance and nation instance data
+- set_national_colors
+- settlement is lawful under nation rules
+- shared national identity exists, but lived psychology is sharply stratified
+- shipment coordination concern
+- shipment_coordination_concern
+- smaller local hubs, communal markets, ritual facilities, and island service combinations should be visible
+- smell_and_contamination_risk
+- source_nation_id
+- special national naming rules
+- stable national utility coverage
+- staged nation draft editing
+- state and nation interaction
+- state builder
+- state builder entry behavior
+- state builder entry from empty area
+- state builder result review
+- state builder routing
+- state_supported_donation
+- story-mode access may use a separate dedicated destination
+- subsidy or donation linked finance
+- succession_base_rule is structure-layer locked after nation creation
+- supreme_commander -> nation_scope
+- supreme_judge -> nation_scope
+- suspend_facility -> nation_detail_warning_surface
+- target_nation_id
+- teaser_only may show that a route exists in this nation
+- template must not hardcode nation instance identity
+- template must remain nation-configurable after selection
+- template omission does not bypass mandatory nation rules
+- template_binding.nation_template_code must be set
+- tenancy_termination
+- term base is structure-layer locked after nation creation
+- termination_started
+- the company extends nation-level presence
+- the main route to power must differ by nation
+- the nation developed from western mountains, water systems, and coastal productivity
+- the right type is prohibited by nation regime
+- theocratic_state -> party_nomination_route
+- transition logic between world, nation, and field levels
+- treasury belongs to national finance
+- treasury holds only national currency
+- treaties may constrain nations
+- turnover_acceptance_tendency modifies resignation and career-mobility events
+- unauthorized nation mutation
+- unified national schooling: low
+- unique(nation_draft_id, bundle_type, version_no)
+- unresolved for the property class/right/holder combination
+- update nation state
+- upper and lower layers experience the nation very differently
+- use of nation market regime
+- use_nation_default
+- user nation collapse:
+- user nation creation allowed
+- user nation may liquidate or retain
+- uses non-convertible currency (national currency)
+- using national treasury for company operations
+- vaccination_event
+- vaccination_record_id
+- vaccination_ref
+- vaccination_scope
+- vaccination_status
+- valid nation/legal existence
+- valid nation/legal standing
+- validate nation target
+- valuation axes are independent from nation regime
+- view_existing_nation
+- visible entries depend on nation rules and actor authority
+- war affects economy, diplomacy, and nation state
+- weak nationwide zoning unification
+- weak unified national schooling
+- welfare_donation
+- what services the nation has
+- what the nation type default is
+- what this specific nation overrides
+- when the nation supports listing
+- which facility events affect Nation now
+- which nation metrics are updated
+- which nation metrics changed
+- why_this_district_changes_nation_score
+- zone creation/editing in nation draft
+- zoning-incompatible facilities are hidden or disabled with explanation
+- zoning_designation_id
+- zoning_restricted opens filtered build menu or restriction explanation
+- ヘリオス国家管理局
+- 国家は企業施策に直接介入しない
+- 成和国家資格試験院

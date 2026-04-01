@@ -1,0 +1,3038 @@
+# ============================================================
+# STATE CANDIDATES
+# ============================================================
+
+status: candidate
+source: 000_CIVILIZATION_OS_FULL_INTEGRATED.md
+prepared_by: Zero
+exclude: フォトン / Photon / PHOTON
+
+- ./0150000009_CIVILIZATION_STATE_MACHINE.md
+- ./036_STATE_MACHINE_RUNTIME.md
+- ./042_STATE_TRANSITION_FLOW.md
+- ./060_real_estate/DOMAIN_SPEC.md
+- A --> D[State List]
+- A building unit is a subdivided usable real-estate object.
+- A company may hold and operate real estate,
+- A company must not enter established state
+- A company reaches operating state when
+- A real-estate transaction reaches finality only when
+- A residence may link to real-estate surfaces,
+- A shock must produce auditable state changes.
+- A snapshot is a consistent civilization state
+- A state may also appear fragmented
+- A state may also have a formal cabinet
+- A state may appear formally constitutional
+- A state may have a symbolic ruler
+- A state template may influence
+- AI State
+- AI State Data
+- AI review state
+- AI technology is not adopted as a core state system
+- AI_NATION_STATE
+- APPLICATION STATES
+- APPLICATION_STATE
+- A[Continent Map] --> B[State Tap]
+- A[State Builder] --> B[Continent Scale Review]
+- A[Territory / Area Selection] --> B[10km x 10km State Cells]
+- Access state must be synchronized from PersonaOS.
+- Actual state territory determination happens in
+- Aggregate rebuild produces derived state only.
+- Ai(Robot) abnormal state machine
+- Applications do not mutate civilization state directly.
+- Aurelia State Arsenal
+- Aurelia State Arsenal Complex
+- Aurelia must support reconstruction and instability transition states
+- Automation state changes should be reflected in
+- B --> C[State Builder Start]
+- BLOCKED STATE BEHAVIOR
+- Blocked state must be used when
+- Blocked state must explain
+- Blocked state must not silently degrade
+- C --> D[State Template Selection]
+- C --> H[Minimum State Size Check]
+- CAREER_STATE
+- CIVILIZATION META STATE
+- CIVILIZATION NATION STATE UPDATE RUNTIME
+- CIVILIZATION OS STATE RUNTIME INDEX
+- CIVILIZATION REAL ESTATE EXTENDED FLOW
+- CIVILIZATION REAL ESTATE EXTENDED POLICY
+- CIVILIZATION REAL ESTATE EXTENDED RUNTIME
+- CIVILIZATION REAL ESTATE RIGHTS POLICY
+- CIVILIZATION REAL ESTATE RIGHTS RUNTIME
+- CIVILIZATION REAL ESTATE TRANSACTION FLOW
+- CIVILIZATION STATE MACHINE
+- CIVILIZATION STATE MACHINE FLOW
+- CIVILIZATION STATE MACHINE OPERATION
+- CIVILIZATION STATE MACHINE POLICY
+- CIVILIZATION STATE MACHINE RUNTIME
+- CIVILIZATION STATES
+- CIVILIZATION WORLD STATE AGGREGATE REBUILD RUNTIME
+- COMMON UI STATES
+- COMPANY PREMISES / REAL ESTATE / RETAIL RELATION
+- COMPANY STATE MACHINE
+- COMPANY_BANKRUPTCY_STATE
+- COMPANY_STRATEGY_STATE
+- Changes entity state.
+- CivilizationOS consumes Persona-originated events to update mirrored release, license, and access grant state.
+- CivilizationOS extended real-estate flow must remain
+- CivilizationOS extended real-estate runtime must be
+- CivilizationOS must maintain a world-common real-estate valuation layer.
+- CivilizationOS must never mutate Persona original state directly.
+- CivilizationOS must not invent or override license state.
+- CivilizationOS real-estate policy must be
+- CivilizationOS real-estate policy must preserve
+- CivilizationOS real-estate rights runtime
+- CivilizationOS real-estate transactions
+- CivilizationOS real-estate valuation must be split into
+- CivilizationOS real-estate valuation must remain layered and explicit.
+- CivilizationOS validates release ref and license ref state
+- Company lifecycle must be explicit and state-driven.
+- Construction and real estate
+- Construction and real estate KPI
+- Continent map is the state-selection layer.
+- Control state changes must be attributable to
+- Control state classes include
+- Control state must be externally observable.
+- Critical control state must be observable before
+- Current state should normally be derived as follows.
+- D --> D3[Number of States]
+- D --> E[State Information]
+- DB (state)
+- DB-controlled state/military/sovereign override behavior.
+- DECISION STATES
+- DOMAIN 0060 real_estate
+- Data is treated as governed state, not merely
+- Dead-letter records are failure trace state.
+- Decision = state + personality + environment
+- Define how entity states change.
+- Define operational handling for shared lifecycle state machines.
+- Define operational handling for summits and statements.
+- Define policy for extended real-estate domains inside CivilizationOS.
+- Define policy rules for shared lifecycle state governance.
+- Define policy rules for summits and statements.
+- Define provincial, prefectural, state, and municipal
+- Define runtime for lifecycle state-machine enforcement.
+- Define runtime for rebuilding world state aggregates.
+- Define runtime for summit sessions and joint statements.
+- Define runtime for updating nation state safely.
+- Define state transitions of CivilizationOS entities.
+- Define the official real-estate transaction flow of CivilizationOS.
+- Defines AI_NATION_STATE in Civilization world system.
+- Defines GLOBAL_STATE in Civilization world system.
+- Defines NATION_POLICY_STATE in Civilization world system.
+- Defines POPULATION_STATE in Civilization world system.
+- Defines business and state transition flows across domains.
+- Defines how persona state is accessed.
+- Defines the COMPANY_BANKRUPTCY_STATE within Civilization economy system.
+- Defines the COMPANY_STRATEGY_STATE within Civilization economy system.
+- Defines the ECONOMIC_STATE within Civilization economy system.
+- Defines the MARKET_STATE within Civilization economy system.
+- Detailed banking and real-estate finance disputes
+- Detailed banking and real-estate finance flows remain specialized.
+- Direct cross-system state mutation is prohibited.
+- Direct real-estate transfer must not bypass
+- Dispatcher mutation of domain state is prohibited.
+- Downfall must be a real play state,
+- Draft state for incomplete company definition.
+- ECONOMIC STATES
+- ECONOMIC_STATE
+- ELIGIBILITY STATES
+- EMPTY LOT STATES
+- EMPTY STATE BEHAVIOR
+- ERROR STATE BEHAVIOR
+- ERR_INVALID_STATE
+- ESTABLISHMENT STATE
+- EVENT STATE
+- EVENT_PIPELINE_STATE
+- EXAM_UI_STATE
+- Each blocked or review state
+- Each event may trigger one or more state changes.
+- Each signing state affects what the system may do
+- Each stage must be supported by explicit persisted state.
+- Economic indicator components are derived component state only.
+- Empty state must be used when
+- Empty state must not be used for
+- Empty-area tap is the trigger for state builder.
+- Ensures that duplicate events do not produce repeated state mutation.
+- Environmental state truth belongs to CivilizationOS environmental domain.
+- Error state must be used when
+- Error state must expose
+- Every event that changes world state
+- Every state change must record
+- Every state-changing action
+- Execute state transitions for entities and systems.
+- Execution that ignores active stop state is
+- Extended nation profile editing must remain part of nation draft state
+- Extended real-estate policy in CivilizationOS must be
+- F --> G[State Builder Start]
+- F --> G[State Identity Setup]
+- FEEDBACK STATES
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/005.state/0400050000_STATE_RUNTIME_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/005.state/0400050001_STATE_UPDATE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/005.state/0400050002_STATE_SNAPSHOT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/050.domain/0400100_CIVILIZATION_NATION_STATE_UPDATE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/050.domain/0400106_CIVILIZATION_WORLD_STATE_AGGREGATE_REBUILD_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/080.statecraft/0400400_CIVILIZATION_RESOURCE_LEDGER_POST_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/080.statecraft/0400401_CIVILIZATION_BUDGET_ALLOCATION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/080.statecraft/0400402_CIVILIZATION_TRADE_SETTLEMENT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/110.state-power/0400700_CIVILIZATION_JUDICIAL_CASE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/110.state-power/0400701_CIVILIZATION_TAX_COLLECTION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/110.state-power/0400702_CIVILIZATION_ELECTION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/110.state-power/0400703_CIVILIZATION_MIGRATION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/260.real-estate-regime/0402600_CIVILIZATION_REAL_ESTATE_RIGHTS_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/260.real-estate-regime/0402601_CIVILIZATION_RENT_COLLECTION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/260.real-estate-regime/0402602_CIVILIZATION_REAL_ESTATE_EXTENDED_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/260.real-estate-regime/0402603_CIVILIZATION_ENTERPRISE_FINANCE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/470.cross-cutting-completion/0404300_CIVILIZATION_STATE_MACHINE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/080.statecraft/0500400_CIVILIZATION_RESOURCE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/080.statecraft/0500401_CIVILIZATION_BUDGET_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/080.statecraft/0500402_CIVILIZATION_TRADE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/110.state-power/0500700_CIVILIZATION_JUDICIAL_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/110.state-power/0500701_CIVILIZATION_FISCAL_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/110.state-power/0500702_CIVILIZATION_ELECTION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/110.state-power/0500703_CIVILIZATION_MIGRATION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/260.real-estate-regime/0502600_CIVILIZATION_REAL_ESTATE_TRANSACTION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/260.real-estate-regime/0502601_CIVILIZATION_RENT_COLLECTION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/260.real-estate-regime/0502602_CIVILIZATION_REAL_ESTATE_EXTENDED_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/260.real-estate-regime/0502603_CIVILIZATION_ENTERPRISE_FINANCE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/470.cross-cutting-completion/0504300_CIVILIZATION_STATE_MACHINE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/060.integration/013.runtime/0600130003_STATE_INTEGRATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/080.statecraft/0700400_CIVILIZATION_RESOURCE_LEDGER_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/080.statecraft/0700401_CIVILIZATION_BUDGET_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/080.statecraft/0700402_CIVILIZATION_TRADE_SETTLEMENT_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/110.state-power/0700700_CIVILIZATION_JUDICIAL_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/110.state-power/0700701_CIVILIZATION_FISCAL_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/110.state-power/0700702_CIVILIZATION_ELECTION_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/110.state-power/0700703_CIVILIZATION_MIGRATION_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/470.cross-cutting-completion/0704300_CIVILIZATION_STATE_MACHINE_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/080.statecraft/0800400_CIVILIZATION_RESOURCE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/080.statecraft/0800401_CIVILIZATION_BUDGET_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/080.statecraft/0800402_CIVILIZATION_TRADE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/110.state-power/0800700_CIVILIZATION_JUDICIAL_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/110.state-power/0800701_CIVILIZATION_FISCAL_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/110.state-power/0800702_CIVILIZATION_ELECTION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/110.state-power/0800703_CIVILIZATION_MIGRATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/260.real-estate-regime/0802600_CIVILIZATION_REAL_ESTATE_RIGHTS_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/260.real-estate-regime/0802601_CIVILIZATION_RENT_AND_COMPANY_PREMISES_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/260.real-estate-regime/0802602_CIVILIZATION_REAL_ESTATE_EXTENDED_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/260.real-estate-regime/0802603_CIVILIZATION_ENTERPRISE_FINANCE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/470.cross-cutting-completion/0804300_CIVILIZATION_STATE_MACHINE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/050.integration.before_cleanup/020_STATE_INTEGRATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/030.runtime.pre_refactor_20260320_092319/036_STATE_MACHINE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/040.flow.pre_refactor_20260320_092319/042_STATE_TRANSITION_FLOW.md
+- FILE: 0150000009_CIVILIZATION_STATE_MACHINE.md
+- FINANCE / GOVERNMENT / REAL ESTATE RELATION
+- FORCED ACTION STATE
+- FULFILLMENT STATE
+- FULFILLMENT STATES
+- Facility state changes must be traceable
+- Fail closed on unresolved readiness state.
+- Failure states must be explicit
+- For election-based states,
+- For the system real-estate company,
+- Formal location/address object for real-estate records.
+- GENERIC STATES
+- GLOBAL STATE
+- GLOBAL_STATE
+- Gladia is a trauma-formed fortress military state
+- Governance states include
+- HUMAN STATES
+- Head of State
+- Head of State Builder
+- Head of State is locked in normal operation after creation
+- Head of state ascent
+- Historical Aurelia was organized as a religious extremist state
+- Housing purchase must follow real-estate mediation rules.
+- IDLE BUILDING STATE
+- IDLE PROPERTY STATE
+- INFRASTRUCTURE STATE MACHINE
+- INTERACTION STATES
+- INTERNATIONAL_OVERVIEW_UI_STATE
+- Idle state may affect
+- If direct state tap entered from map,
+- If exposed from a real-estate-related facility UI,
+- If real-estate operation is enabled,
+- If required state is unresolved,
+- Incident, disease, and legal state machine UI must remain
+- Inheritance and estate distribution must reveal
+- It governs the structural states from draft creation
+- It is not a direct state mutation mechanism.
+- It is the readiness state before application.
+- Joint statements must expose explicit version semantics.
+- Joint-statement truth belongs to CivilizationOS diplomatic-operations domain.
+- K -- Yes --> L[State Create]
+- L --> M[State Information]
+- LISTING READINESS STATE
+- LOGISTICS_STATE
+- Land is the base real estate layer.
+- Latest activation state
+- Latest approval state
+- Latest publication state
+- Lifecycle state must remain explicit.
+- Lifecycle state profiles must expose explicit version semantics.
+- Lifecycle-state-profile truth belongs to CivilizationOS cross-cutting-completion domain.
+- Listing readiness is the structured preparation state
+- Lock and Validation: structure lock state and errors
+- MARKET_STATE
+- MENU STATE RULE
+- MINIMUM STATE SIZE RULE
+- MODERATION STATES
+- Maintain active civilization world state during execution.
+- Major city assignment should make state administration,
+- Many real-estate operators manage
+- Marketplace payment success state
+- Metric publication records trace publication state, not source truth.
+- Metrics are derived from entity states,
+- Mikhail State Shipyard
+- Military, firefighter, rescue, and similar state facilities
+- Moderation state must be explicit.
+- Money flow is separated from system state.
+- NATION STATE MACHINE
+- NATION_POLICY_STATE
+- No company should exist in established state
+- No direct state mutation across OS boundaries.
+- No direct state mutation without event.
+- No later state may be assumed
+- No real-estate right may become active
+- No state may exist without causal history.
+- No state mutation path may exist outside governed
+- Notifications are emitted from validated state changes.
+- Nova is a market-state that grew from a merchant union.
+- OFFICIAL STATES
+- OPENING STATE
+- ORGANIZATION STATES
+- Official company lifecycle states
+- On entering state builder,
+- Onboarding state
+- Orpheus is an island-union state
+- Orpheus is not a fortress military state
+- Outbox state is operational only.
+- PAYMENT STATE
+- PERMISSION STATES
+- PERSONA_STATE
+- PLAYER_STATE
+- POPULATION_STATE
+- Persistence and Export: save, snapshot, publish-ready state
+- Persona mirrored state must be updated only from approved sync events
+- Persona original state remains owned by PersonaOS
+- Persona state
+- PersonaOS internal state.
+- PersonaOS issues or updates access grant state
+- Personal ascent unlocks state power.
+- Phased events must expose explicit progression states.
+- Player-facing views expose visible state only.
+- Preserve recoverable system state.
+- Producer mutation of target state is prohibited.
+- Production record truth belongs to CivilizationOS operational statecraft domain.
+- Published metrics remain derived publication state, not source truth.
+- Queue state is operational governance control state.
+- REAL ESTATE / CONSTRUCTION RELATION
+- REAL ESTATE / RESIDENCE RELATION
+- REAL ESTATE ASSET OPERATION
+- REAL ESTATE COLLATERAL RELATION
+- REAL ESTATE COMMON SURFACES
+- REAL ESTATE DOMAIN
+- REAL ESTATE MANAGE SCREEN TABS
+- REAL ESTATE OVERVIEW SCREEN
+- REAL ESTATE REGISTRY BOOK
+- REAL ESTATE REGISTRY ENTRY
+- REAL ESTATE SERVICE TRUTH
+- REAL ESTATE SUMMARY CARD
+- REAL ESTATE SYSTEM UI PRINCIPLE
+- REAL ESTATE UI LIFECYCLE
+- REAL ESTATE UI MODES
+- REAL ESTATE VALUATION RELATION
+- REAL-ESTATE-DESIGN RELATION
+- REAL_ESTATE_REGISTRY_BOOK
+- REAL_ESTATE_REGISTRY_ENTRY
+- REAL_ESTATE_REGISTRY_UPDATE_REQUEST
+- RECEIPT STATE
+- RECONSTRUCTION_STATE
+- REJECT_CONFLICTING_STATE
+- REPLACEMENT TARGET STATES
+- RESIDENCE / REAL ESTATE RELATION
+- RESULT STATES
+- REVIEW STATES
+- Readiness-state truth belongs to CivilizationOS military-operations domain.
+- Real Estate UI,
+- Real estate UI covers
+- Real estate UI is not identical to
+- Real estate UI must allow
+- Real estate UI must expose
+- Real estate UI must inherit
+- Real estate UI must not collapse
+- Real estate UI must prioritize
+- Real estate UI must resolve from
+- Real estate UI supports
+- Real estate and construction are related
+- Real estate and residence are related
+- Real estate asset operation includes
+- Real estate market board exists
+- Real estate must be split into two layers
+- Real estate operation UI belongs to
+- Real estate operation policy
+- Real estate requires a dedicated transaction layer.
+- Real estate service must distinguish
+- Real-estate KPI visibility is mandatory.
+- Real-estate UI may link to
+- Real-estate UI must implement
+- Real-estate UI must treat property
+- Real-estate UI requires
+- Real-estate and housing assignment must reveal
+- Real-estate and housing-distribution facilities must reflect
+- Real-estate automation must remain visible.
+- Real-estate design sale is Marketplace-centered.
+- Real-estate finance in CivilizationOS must be
+- Real-estate finance must distinguish
+- Real-estate inheritance and transfer in CivilizationOS must be
+- Real-estate intervention must be explicit.
+- Real-estate issue tab must centralize
+- Real-estate manage must default to
+- Real-estate mediation is mandatory for formal transfer or lease execution.
+- Real-estate operation UI in Civilization must remain
+- Real-estate operation UI may expose
+- Real-estate operation requires
+- Real-estate overview must prioritize
+- Real-estate seed must make visible
+- Real-estate tax in CivilizationOS must be
+- Real-estate transaction flow must be explicit.
+- Real-estate transfer mediation must route through system real estate company.
+- Real-estate truth covers
+- Real-estate valuation must be split into
+- Real-estate-related design offerings
+- Real-estate-related design sale
+- Receipt state is especially important
+- Recoverable State
+- Reference PersonaOS license state needed by CivilizationOS.
+- Reference external access grant state for Persona-derived usage.
+- Registration state
+- Rejected request must not mutate state.
+- Represent runtime lock state for deterministic processing.
+- Residence and real estate are related
+- Resilience records are derived state, not source truth.
+- Restart bootstrap sequence from initial state.
+- Review queue state is operational governance control state.
+- Runtime exposes logs, metrics, queue state, and failure signals.
+- SCALE CHANGE IN STATE BUILDER
+- SCREEN STATES
+- SEIWA STATE
+- SETTLEMENT STATE
+- STATE BUILDER ENTRY FUNCTION
+- STATE BUILDER FLOW
+- STATE BUILDER FLOW FUNCTION
+- STATE BUILDER POSITION
+- STATE BUILDER SCALE FLOW
+- STATE BUILDER SCALE FUNCTION
+- STATE DEPENDENCY TYPE ENUM MASTER
+- STATE EVENTS
+- STATE INFORMATION SCREEN
+- STATE LINEAGE
+- STATE LIST RULE
+- STATE LIST SCREEN
+- STATE MACHINE RUNTIME
+- STATE MARKET BELT
+- STATE MEANINGS
+- STATE PROGRESSION FAMILIES
+- STATE RATING CALCULATION
+- STATE RATING ENTITY
+- STATE RULES
+- STATE SEPARATION
+- STATE STRUCTURE
+- STATE TAP RULE
+- STATE TERRITORY SCALE RULE
+- STATE TERRITORY SELECTION FUNCTION
+- STATE TERRITORY SELECTION RULE
+- STATE TRANSITION
+- STATE TRANSITION FLOW
+- STATE TRANSITION INTEGRATION
+- STATES
+- SUPPLEMENT A. REAL-ESTATE-DESIGN MARKETPLACE RULE
+- SYSTEM REAL ESTATE COMPANY ROLE
+- Score component records are derived component state only.
+- Service queue state is operational service-delivery control state.
+- Settlement state must remain distinct
+- State
+- State Believer Credit Office
+- State End-of-Life Residence
+- State Final Care Residence
+- State Function Restoration Hall
+- State Machine
+- State Power Distribution Hall
+- State Protected Work Office
+- State Provision Control Authority
+- State Provision Farm Bureau
+- State Provision Market
+- State Provision Storage Hall
+- State Restore
+- State Structure Builder
+- State Update
+- State allocation flow
+- State and city builder result detail
+- State and company rating
+- State and society progression UI must implement
+- State and society progression UI must remain
+- State and society progression may include
+- State builder and city builder
+- State builder is entered from
+- State builder must distinguish
+- State builder must explicitly distinguish
+- State builder must implement
+- State builder must not use
+- State builder must support
+- State builder scale change exists
+- State builder supports
+- State creation must require explicit confirm.
+- State dependency type
+- State information UI must implement
+- State information must include
+- State information should support
+- State list is a structured entry route.
+- State list should support readable navigation
+- State market intervention
+- State mutation outside governed ownership is
+- State power reshapes all other domains.
+- State reconstruction
+- State tap is a primary action.
+- State tap must be explicit
+- State territory selection must support
+- State territory selection must use
+- State territory selection uses
+- State training facilities belong to Nation Builder,
+- State transitions must be auditable
+- State updates occur only after event handling.
+- StateRatingCalculation
+- StateRatingScore
+- States and society
+- States do not move only by law and money.
+- Store current state of a persona.
+- Store player progression state.
+- System real-estate-company mediation in CivilizationOS must be
+- TECHNOLOGY STATE MACHINE
+- TECHNOLOGY STATES
+- TENANCY STATE
+- TIME_CONTROL_UI_STATE
+- Tenancy state is not identical to payment state,
+- The market tier editor must edit draft listing-style state,
+- The real-estate rights runtime is the policy-evaluation layer
+- The review notice should state
+- The seven states must not collapse into the same valuation pattern.
+- The state territory selection function must support
+- The system must state that
+- The system real-estate company should handle
+- The valuation focus for real-estate use should primarily be
+- The zoning editor must edit draft zoning state,
+- Therefore a company should connect to real estate through
+- These actions must result in visible lifecycle state change
+- These are not simple end states.
+- These domains must be state-machine-capable.
+- These states are fulfillment states,
+- These states must not be collapsed
+- These states must not be conflated.
+- These states must remain explicit.
+- These states must remain separate
+- These states should be driven by timing and payment behavior.
+- These states should remain explicit
+- They do not themselves change the target truth state.
+- They must be able to alter nation aggregate state.
+- This is operational control state.
+- This is reflected state only.
+- This is reflected usage state.
+- This keeps state and society change readable early.
+- This preset defines a state-guided market structure.
+- This should be separate from payment_state.
+- Those belong to real-estate rights regime layers.
+- Time Tick → Event Trigger → State Update
+- Typical state identity inputs may include
+- Unauthorized control state mutation is prohibited.
+- Unresolved safety/policy state must fail closed.
+- Unresolved state must fail closed.
+- Unsafe paths must be blocked before state mutation.
+- VALIDATION STATES
+- VISIBILITY STATES
+- When state builder starts,
+- Where real-estate domains support
+- Workforce assignment truth belongs to CivilizationOS operational statecraft domain.
+- World = Nations + Population + Global State
+- World State
+- World aggregate components are derived component state only.
+- World scale must influence real-estate valuation through
+- _CIVILIZATION_STATE_MACHINE.md
+- _STATE_INTEGRATION.md
+- _STATE_MACHINE_RUNTIME.md
+- _STATE_RUNTIME_INDEX.md
+- _STATE_SNAPSHOT_RUNTIME.md
+- _STATE_TRANSITION_FLOW.md
+- _STATE_UPDATE_RUNTIME.md
+- _real_estate
+- a real-estate-type service resolves to real estate UI logic
+- a separate real-estate-design payment core
+- a state
+- abnormal-state-aware
+- about the seven major states into valuation behavior.
+- academic_focus_state
+- access_channel_state
+- access_granted_state
+- access_state
+- accident state machine
+- accident_state_screen
+- account and ownership state
+- account state
+- account_notice_state
+- account_state
+- account_state_section
+- achievement runtime updates state
+- action submit may show submitting state
+- activate or revoke law state
+- activate revised state
+- activation state must never be assumed before validation
+- activation_bundle stores live activation state.
+- activation_state
+- activation_state examples
+- activation_state: not_requested
+- activation_state_changed
+- active announcement or promotion state
+- active company state
+- active emergency power state
+- active nation state
+- active states
+- active_state
+- activity_state
+- actor and abnormal-state visibility
+- actor need state
+- actor state summary
+- actor_behavior_state_screen
+- actor_not_in_purchase_block_state
+- actor_state_summary_section
+- administrative state machine
+- administrative_state_screen
+- administrative_system_state
+- admission_state where applicable
+- advertising_state
+- aging or deterioration state
+- agrarian_cultural_state
+- agreed, failed, or withdrawn mediation states must remain explicit
+- agricultural_system_state
+- ai_program_state
+- ai_robot_abnormal_state_screen
+- ai_system_state
+- aid runtime updates state
+- alert-state handling
+- alert_state
+- all major state-builder decisions.
+- all metrics are derived from updated state.
+- all military states always seize all strategic land
+- all socialist states always prohibit all private rights
+- all state is resolved via PersonaSystem
+- alliance_command_state
+- allocation state
+- allocation_state
+- allow state builder entry from empty area
+- allow state selection
+- ambiguous compatibility state
+- ambiguous policy never grants real-estate finality
+- amendment_rule must exist for constitutional states
+- an operator-readable overview of the current store state.
+- analytics is a structured interpretation of company state,
+- and Nation aggregated state.
+- and broader family-state support structure.
+- and conditional story access states clear.
+- and inter-state relationship progression
+- and internal state.
+- and interstate conflict play
+- and legal-process state progression
+- and may optionally include real-estate collateral,
+- and must expose real-estate-specialized surfaces.
+- and remembered state.
+- and state / company rating
+- and state / company rating calculation.
+- and state contract
+- and state effects.
+- and state filtering.
+- and state-aware.
+- and state-society emotional response
+- and under what practical state.
+- and whether later readiness states are structurally valid.
+- appeal_state
+- application_states
+- apply achievement state transition
+- apply action state transition
+- apply allocation state transition
+- apply archive state transition
+- apply assessment or certification state transition
+- apply authority or evidence state transition
+- apply award or contract state transition
+- apply batch state transition
+- apply birth record state transition
+- apply breach state transition
+- apply broadcast state transition
+- apply case state transition
+- apply charge state transition
+- apply claim state transition
+- apply collection state transition
+- apply compliance state transition
+- apply contract state transition
+- apply control state transition
+- apply creator-platform state transition
+- apply death record state transition
+- apply declaration state transition
+- apply diplomatic mission state transition
+- apply disbursement state transition
+- apply disclosure state transition
+- apply dispatch or consume state transition
+- apply dispute state transition
+- apply distribution state transition
+- apply election state transition
+- apply emission state transition
+- apply enforcement state transition
+- apply enrollment state transition
+- apply episode state transition
+- apply estimate state transition
+- apply event-permit state transition
+- apply execution state transition
+- apply forecast-run state transition
+- apply grant state transition
+- apply heritage-related state transition
+- apply incident or containment state transition
+- apply incident state transition
+- apply incident-related state transition
+- apply inheritance state transition
+- apply inspection state transition
+- apply inspection-related state transition
+- apply instrument state transition
+- apply investigation state transition
+- apply invoice state transition
+- apply judicial state transition
+- apply lifecycle state transition
+- apply loan state transition
+- apply logistics state transition
+- apply maintenance state transition
+- apply marketplace state transition
+- apply mediation state transition
+- apply migration state transition
+- apply movement state transition
+- apply observation state transition
+- apply order state transition
+- apply outage state transition
+- apply payroll state transition
+- apply permission state transition
+- apply permit state transition
+- apply procurement state transition
+- apply publication state transition
+- apply qualification state transition
+- apply recovery action state transition
+- apply recovery state transition
+- apply recycling state transition
+- apply relief state transition
+- apply relocation state transition
+- apply remediation state transition
+- apply request state transition
+- apply retry or dead-letter state transition
+- apply review state transition
+- apply ritual state transition
+- apply round state transition
+- apply sanction state
+- apply sanction state transition
+- apply seller state transition
+- apply settlement state transition
+- apply shipment state transition
+- apply simulation-run state transition
+- apply standard state transition
+- apply state transition
+- apply stockpile state transition
+- apply summit-related state transition
+- apply supply state transition
+- apply tender lifecycle state transition
+- apply tourism-related state transition
+- apply transfer state transition
+- apply zoning-related state transition
+- appointment_by_head_of_state
+- approval state
+- approval-required states should explain missing office, authority, or legitimacy
+- approval-required states should explain what approval is missing
+- approval_bundle stores approval review state.
+- approval_bundle stores approval-if-needed state.
+- approval_state
+- approval_state examples
+- approval_state: not_requested
+- approved, rejected, or revoked review states must remain explicit
+- archipelagic_cultural_religious_union_state
+- archive runtime updates state
+- as a historical-state reference layer.
+- as layered state,
+- as soon as state tap and empty-area tap
+- as the direct state-establishment unit.
+- as the primary civilization-state design system.
+- asset / contract truth -> real estate UI
+- asset value, estate management, and business control dominate post-death transition
+- asset_management_system_state
+- asset_operation_bundle.real_estate_intermediary_ref
+- assignment or maintenance automation state where supported
+- assignment_state
+- asylum runtime updates state
+- atlas-style colored state presentation.
+- atmosphere_state
+- audience_state
+- audit state
+- audit state must remain append-oriented where possible
+- audit_quality_state
+- auditable state transition
+- auth-ready state
+- authority state is updated
+- authority-evidence runtime updates state
+- auto_answer_quality_depends_on_actor_state
+- auto_answer_state
+- automation confidence or visibility state
+- automation enabled / disabled state
+- automation enabled state
+- automation state changes where visible
+- automation state for replenishment
+- automation_confidence_state
+- automation_visibility_state
+- automotive_system_state
+- aviation_system_state
+- award-contract runtime updates state
+- back_to_state_list
+- backlog_state
+- balance_state
+- bank_system_state
+- bankruptcy state is proposed
+- base_state
+- basic livability state
+- batch state is persisted
+- belong to state and public-process posture.
+- beyond state, city, and actor layers.
+- bio_system_state
+- biosphere_system_state
+- birth registration runtime updates state
+- blocked states should explain which authority is required
+- blocked, suspended, revoked, or expired trade states must remain explicit
+- blocked_state
+- body_fat_state
+- bond_market_system_state
+- bond_system_state
+- border_system_state
+- boundary confirmation under state cell selection
+- boundary_state
+- breach runtime updates state
+- breached, actionable, or resolved compliance states must remain explicit
+- broad_state_taking_power
+- broadcast runtime updates state
+- broadcast state updated explicitly
+- browse and compare state
+- budget allocation runtime updates state
+- build menu disabled states must explain zoning, operator, or infrastructure restrictions
+- build_execution_to_facility_state
+- buildable_state
+- building_state_manager
+- building_use_state
+- burden_state
+- bureaucratic legal-administrative state
+- but mediation and transfer must go through system real estate company
+- but must not collapse into one state.
+- but remains governed by PersonaOS rights and access state.
+- but state or nation authorities retain stronger influence
+- but state routing remains usable.
+- but state selection and builder entry remain primary.
+- but transactions must pass through a system real-estate company
+- by explicit control state changes and recorded
+- cabinet states,
+- calculated screening state
+- cancel clears current input and current error state
+- cancel clears visible error state
+- cancel does not create partial account state
+- cancelled, concluded, or withdrawn summit states must remain explicit
+- capacity-control runtime updates state
+- capacity_state
+- capital_market_system_state
+- care_load_state
+- care_state_updated
+- case_state
+- casualty and recovery state
+- catch and quota state
+- category_balance_state
+- central_bank_system_state
+- charge runtime updates state
+- cheap stalls and state-linked supply dominate where stability is weak
+- child development may be filtered through ideological or state-protective logic
+- childcare_support_state
+- childhood is unstable, state-shaped, and ideologically filtered
+- circular_economy_system_state
+- circular_market_state
+- circular_program_state
+- circular_system_state
+- city and state burden
+- city map or state-local next route
+- city map or state-local operational route
+- civic or state utility should be clearer
+- civic_bureaucratic_state
+- civic_system_state
+- civil-engineering reconstruction, manual work, and state-directed roles are common
+- civil_service_eligibility_state
+- civil_society_system_state
+- civilization_meta_network_state
+- civilization_meta_platform_state
+- civilization_meta_state
+- civilization_meta_system_state
+- civilization_meta_transition_state
+- claim runtime updates state
+- class, religion, and result state.
+- class_and_teacher_state_checked
+- classify stockpile state
+- classify supply and quality state
+- classify supply state
+- cleaning_state
+- cleanliness and presentation state where relevant
+- cleanliness or sanitation state where relevant
+- cleanliness state where applicable
+- cleanliness_state where applicable
+- clearly separable from real-estate or retail-only truth
+- clearly separable from residence or real-estate-only truth
+- clearly separated from real-estate-only or retail-only truth
+- clearly separated from residence-only or real-estate-only truth
+- clearly separated from state-scale manipulation truth
+- clergy_and_resource_state_checked
+- climate_system_state
+- clinical episode runtime updates state
+- closed state-only facility pattern
+- collapse state
+- collect state version and compatibility context
+- collection state visibility where appropriate
+- comfort state
+- comfort_state
+- command states,
+- command-heavy state
+- command_state_executive
+- commercial_state
+- commit state,
+- common_state_items
+- communication_network_state
+- communication_program_state
+- communication_system_state
+- community_support_access_state
+- companies may lease real estate
+- companies may own real estate
+- companies may resell real estate
+- company receives updated holding state
+- company state changes
+- company_notes: equity and real-estate operation are strategically relevant
+- compatibility_state
+- compatible with actor and state progression
+- compatible with simulation state
+- compensation_process_state
+- completed or revoked restoration states must remain explicit
+- completion_state
+- compliance runtime updates state
+- component: accident-state-machine
+- component: administrative-process-state-machine
+- component: ai-robot-abnormal-state-machine
+- component: construction-and-real-estate-detailed-configuration-and-auto-operation
+- component: construction-and-real-estate-kpi
+- component: disease-state-machine
+- component: election-state-lock-rule
+- component: head-of-state-route-replacement
+- component: incident-disease-and-legal-state-machine
+- component: incident-disease-and-legal-state-machine-ui
+- component: inheritance-and-estate-distribution
+- component: initial-real-estate-and-housing-distribution-seed
+- component: insurance-realestate-recruitment-entry-parity
+- component: insurance-realestate-recruitment-services
+- component: judicial-process-state-machine
+- component: legislative-state-machine
+- component: login-entry-state
+- component: major-city-real-estate-and-housing-assignment
+- component: onboarding-state
+- component: power-route-visibility-state
+- component: public-office-visibility-state
+- component: real-estate-company
+- component: real-estate-market-board
+- component: real-estate-mediation
+- component: real-estate-operation-policy
+- component: real-estate-operation-ui
+- component: real-estate-ui
+- component: state-and-society-world-progression
+- component: state-and-society-world-progression-ui
+- component: state-dependency-type-enum-master
+- component: state-guided-market-preset
+- component: state-machine-detail
+- component: state-machine-detail-ui
+- component: state-market-intervention
+- component: user-registration-state
+- concentration_state
+- conditional, suspended, or revoked authorization states must remain explicit
+- confirm state creation
+- confirm_state_create
+- confirmed, contained, or resolved states must remain explicit
+- conformity runtime updates state
+- connected state cells
+- connected_state
+- constitutional and foundational state design
+- constrained, released, or expired reserve states must remain explicit
+- construction -> real_estate
+- construction and real estate
+- construction_real_estate_kpis
+- construction_state
+- construction_state examples
+- construction_system_state
+- consume_state
+- consumer_market_state
+- consumer_program_state
+- consumer_protection_system_state
+- consumer_system_state
+- contained, eradicated, recovered, or archived incident states must remain explicit
+- containment state
+- containment_state_screen
+- contamination state
+- contamination-state visibility
+- contamination_state_screen
+- content_state
+- continent and state layers
+- continent_grid_states
+- continuity_state
+- contract or application state
+- control state before execution.
+- control state changes
+- control-action runtime updates state
+- coordination state with review and fulfillment
+- corporate_system_state
+- corrected, retracted, or resolved states must remain explicit
+- cosmic_operation_state
+- cosmic_program_state
+- cosmos_system_state
+- cost_state
+- coup_state
+- coverage state
+- coverage_state
+- creator-platform runtime updates state
+- credential runtime updates state
+- credit culture, trade posture, and state style.
+- crew and vessel state
+- criminal_or_police_state
+- criminal_record_state
+- crisis cascades rapidly because labor, housing, and state continuity are unstable
+- crisis state
+- crisis states
+- critical_supply_state
+- crop_health_state
+- cross-domain effects require explicit state translation
+- crown, noble, state, and subject rights may differ
+- cultural-event runtime updates state
+- cultural_system_state
+- culture_notes: creative identity is a core state-strength axis
+- culture_notes: state symbolism emphasizes coexistence and continuity
+- culture_state
+- cured, escalated, fulfilled, or revoked enforcement states must remain explicit
+- currency_system_state
+- current active bundle state must be queryable
+- current announcement state
+- current drift or warning state
+- current evaluation state
+- current runtime state is post-dismantling collapse
+- current state
+- current state metrics
+- current state visibility
+- current vacancy / maintenance / leasing automation state
+- current_activation_state
+- current_approval_state
+- current_approval_state is not approved
+- current_establish_state
+- current_evaluation is the actively maintained evaluation state.
+- current_facility_state
+- current_field_state
+- current_publication_state
+- current_publication_state is not published
+- current_state
+- current_state_checked
+- current_state_section
+- current_validation_state
+- current_validation_state is failed
+- custody_stability_state where applicable
+- customs runtime updates state
+- customs_system_state
+- cyber-incident runtime updates state
+- cyber_system_state
+- cybersecurity_system_state
+- daily life support access state
+- daily_life_support_access_state
+- data_system_state
+- dead-letter state must not silently disappear
+- dead-letter state persisted
+- death can reinforce state recognition and family stabilization
+- death is filtered through doctrine, state oversight, and instability
+- death registration runtime updates state
+- death_or_lasting_disability_requires_state_compensation
+- decision_states
+- defense_state
+- define head_of_state_access_path
+- defines when the state may override
+- degraded state
+- delay_state
+- delinquency_state
+- delivered_state_section
+- demand_state
+- democratic_system_state
+- democratic_system_system_state
+- democratic_transition_state
+- demographic_system_state
+- denied, suspended, revoked, or expired permit states must remain explicit
+- denormalized latest activation state
+- denormalized latest approval state
+- denormalized latest publication state
+- denormalized latest validation state
+- dense state concentration
+- deny access when PersonaOS reports invalid state
+- deployment runtime updates state
+- deployment support state
+- deployment_support_state
+- deprecation_state
+- derivative_market_system_state
+- derivative_system_state
+- derived aggregate state
+- derived aggregate state must preserve source lineage
+- derived state must indicate its source truth boundary
+- derived state must preserve source lineage
+- derived state should preserve source version lineage where relevant
+- deselect state cell
+- deselect_state_cell
+- detached share lower than suburban monarchic states
+- deterioration state
+- deterioration_state
+- development_finance_system_state
+- digital_government_network_state
+- digital_government_operation_state
+- digital_government_platform_state
+- digital_government_program_state
+- digital_government_system_state
+- diplomatic_system_state
+- direct property transfer without real_estate_company
+- direct_state_control
+- disabled persons may be assigned supervised roles within state or doctrinal structure
+- disaster_system_state
+- discipline_state
+- disciplined and state-linked childhood environments are more common
+- disclosure runtime updates state
+- disease state machine
+- disease_state_screen
+- dismantled_historical_state
+- dispute runtime updates state
+- dispute state
+- dispute state visibility
+- dispute_state_section
+- dissolved state context
+- distinct from payment state.
+- distress state
+- distribution state is persisted
+- district or state structure
+- district_fit_state
+- diversification_state
+- doctrine_or_state_controlled_distribution
+- does not itself finalize state territory.
+- domain state.
+- domain: 060_real_estate
+- dormitory_linkage_state where applicable
+- downfall states must remain visible and actionable where possible
+- downstream execution does not bypass decision state
+- downstream governed handling follows the active law state
+- downstream state update
+- downtime_state
+- draft_or_published_state
+- due and overdue states must not be hidden
+- duplicate_risk_state
+- early life is strongly influenced by doctrine and state oversight
+- earth_system_state
+- economic_state
+- economic_system_state
+- ecosystem_state
+- education_research_state
+- education_state
+- education_system_state
+- effective burden depends on income disruption, day labor continuity, and remaining state channels
+- eldercare is tied to state protection, ideological continuity, and supervised support
+- election runtime updates state
+- election state updated explicitly
+- election_system_state
+- electoral_democracy -> electoral_head_of_state_route
+- electoral_head_of_state_route
+- electricity_system_state
+- eligibility and restriction state
+- eligibility_state
+- eligibility_states
+- emergency activation state
+- emergency control state
+- emergency override state
+- emergency staffing state
+- emergency-control runtime updates state
+- emergency_power_active_state
+- emergency_readiness_state
+- emergency_staffing_state
+- emergency_state_appointment_entry
+- emergency_state_appointment_entry -> ai_human
+- emergency_state_appointment_entry -> user_persona
+- emergency_state_maintenance
+- eminent_domain_policy_type: broad_state_taking_power
+- emission runtime updates state
+- employee_hygiene_state
+- employer_seat_protection_state
+- employment runtime updates state
+- employment state
+- employment_support_state
+- empty area tap -> state builder
+- empty-area state-builder entry
+- empty_lot_states
+- empty_state
+- encumbrance / registry state
+- encumbrance state is coherent
+- energy_system_state
+- enforcement runtime updates state
+- enrollment runtime updates state
+- enrollment state
+- enrollment_state
+- enterprise lending may use real-estate collateral
+- entertainment_system_state
+- entitlement/license state is unresolved
+- entitlement_state
+- entity state
+- entity state summary
+- entity states
+- entity_state
+- entity_state_summary
+- entry_state
+- environmental suitability state
+- environmental_state_id
+- environmental_suitability_state
+- environmental_system_state
+- equipment_state
+- equipment_sufficiency_state
+- error_state
+- escalate_emergency_state
+- escalation state
+- escalation state is resolved, dismissed, or archived
+- escalation_state
+- establish_bundle stores establishment state.
+- establish_state
+- establish_state: not_requested
+- establishment state must not be assumed before validation
+- establishment_state
+- estate distribution,
+- estate_distribution_confirmed
+- estate_identified
+- estate_scope
+- ethics runtime updates state
+- even if the nation is dismantled in current runtime state.
+- even when they cannot be replayed in state.
+- event / state impact
+- event pipeline state
+- event queue -> execution -> state update -> audit / notification
+- event truth and reflected event state must remain distinguishable
+- event-eligible death-risk state where supported
+- event-eligible outbreak state where supported
+- event_state
+- events create state change
+- events, state transitions, relations,
+- exceptions, controlled sectors, or state-sensitive operations.
+- execute_state_transitions
+- execution discipline, and state mutation rules.
+- execution runtime updates state
+- exhausted, quarantined, or restored failure states must remain explicit
+- expected_output_state
+- explicit in listed vs non-listed state
+- explicit in state handling
+- explicit in state transitions
+- explicit state handling
+- explicit states for
+- explicitly separable from asset-only real-estate truth
+- export_ready_state
+- export_state
+- expose facility-origin market visibility state
+- external domains consume persona state via explicit adapters
+- external use must respect PersonaOS license and access grant state
+- facility and infrastructure state reflection
+- facility impact visible at state scale
+- facility presence and facility state
+- facility state change
+- facility state remains committed even if nation UI refresh is deferred
+- facility-state reflection visibility
+- facility_construction_state_updates
+- facility_open_state_updates
+- facility_operation_state_screen
+- facility_state_loaded
+- facility_state_notice
+- facility_state_reflection_screen
+- facility_state_to_nation_linkage
+- fail-closed on unresolved illegality or policy state
+- failed or cancelled logistics states must remain explicit
+- failed or escalated inspection states must remain explicit
+- failed, agreed, or transferred states must remain explicit
+- failed, reversed, revoked, or expired transfer states must remain explicit
+- failure must not silently convert reflected state into truth
+- failure state
+- family_support_state
+- famine-eligible state where supported
+- fast understanding of current agency state.
+- fast understanding of current attraction state.
+- fast understanding of current civic-service state.
+- fast understanding of current defense state.
+- fast understanding of current dining state.
+- fast understanding of current finance-service state.
+- fast understanding of current institutional state.
+- fast understanding of current media state.
+- fast understanding of current medical state.
+- fast understanding of current movement state.
+- fast understanding of current order-and-justice state.
+- fast understanding of current premises state.
+- fast understanding of current production state.
+- fast understanding of current property state.
+- fast understanding of current research state.
+- fast understanding of current stay state.
+- fast understanding of current support state.
+- fast understanding of current utility state.
+- fast understanding of current venue or event state.
+- fast understanding of present living state.
+- fatigue_state
+- favorite_state
+- fear-of-state posture
+- fear_of_state_tendency
+- fear_of_state_tendency modifies silence and self-censorship events
+- feedback_states
+- field_grid_states
+- filter_by_owned_state
+- final post-refund state
+- financial_crime_system_state
+- financial_stability_system_state
+- financial_state
+- financial_state_change
+- fiscal_system_state
+- fisheries_system_state
+- fishery_system_state
+- folder: 040.runtime/005.state
+- food supply state updated explicitly
+- food_system_state
+- for Ai(Robot) abnormal-state execution,
+- for CivilizationOS real-estate rights and transactions.
+- for advanced real-estate operation in CivilizationOS.
+- for banking loans or real-estate loans.
+- for construction and real estate domains.
+- for cross-domain state-transition governance.
+- for enterprise operation and state relation.
+- for explicit state-machine detail
+- for idle-state update,
+- for incident, disease, and legal state machine UI
+- for incident, disease, and legal state machine runtime
+- for initial real-estate facilities,
+- for interstate and polity-level war risk.
+- for interstate or polity-level war escalation.
+- for order state,
+- for progressing Civilization world state
+- for real estate inside CivilizationOS.
+- for real-estate and property operation in Civilization.
+- for real-estate operation UI inside Civilization.
+- for real-estate operation UI.
+- for reflecting world-state change
+- for registrable real-estate rights.
+- for state and society progression UI
+- for state and society world progression
+- for state establishment.
+- for state information UI
+- for state machine detail UI
+- for state-level and society-level progression
+- for the Civilization state builder UI.
+- forced_action_state
+- forecast runtime updates state
+- forest_system_state
+- forestry_system_state
+- formal qualification state
+- formal state-linked child support exists, especially for service families
+- formal_monarchical_state_structure
+- former state
+- freeze/hold state
+- freeze_state
+- freshness state where applicable
+- freshness_state
+- freshness_state where applicable
+- freshness_state where supported
+- from field-map facility state.
+- from government or real-estate UI.
+- from pure real-estate asset logic.
+- from real-estate or retail UI.
+- from residence or real-estate UI.
+- fulfilled or revoked enforcement states must remain explicit
+- fulfilled, lifted, or revoked enforcement states must remain explicit
+- fulfilled, revoked, or degraded states must remain explicit
+- fulfillment state
+- fulfillment state visibility
+- fulfillment_state_section
+- full private ownership may coexist with granted estates
+- fully closed state-only configuration
+- funding_system_state
+- fx_market_system_state
+- fx_system_state
+- gas_system_state
+- gateway runtime updates state
+- generic state progression
+- geopolitical_conflict_state
+- geopolitical_strategy_state
+- geopolitical_system_state
+- geopolitics_system_state
+- gladia may reduce practical state-linked facility friction
+- global control state
+- global_crisis_system_state
+- global_trade_system_state
+- global_trade_system_system_state
+- governance runtime updates state
+- governance_integrity_state
+- governance_notes: officially secular, religion culturally influential but not state-governing
+- governance_system_state
+- governance_type: military_state
+- governance_type: party_socialist_state
+- governance_type: technocratic_state
+- governance_type: theocratic_state
+- governing basis and estate linkage are verified
+- government_system_state
+- grant runtime updates state
+- handed_off_to_building_state
+- handoff_stability_state
+- harbor_state_loaded
+- head of state ascent
+- head of state structure
+- head-of-state ascent
+- head-of-state profile
+- head_of_state
+- head_of_state -> electoral_head_of_state_route
+- head_of_state -> nation_scope
+- head_of_state -> political_power_surface
+- head_of_state_rule_binding
+- head_of_state_selection_type
+- head_of_state_setting
+- head_of_state_type
+- head_of_state_type is structure-layer locked after nation creation
+- health and concentration state
+- health state
+- health_state
+- health_state_change
+- healthcare_system_state
+- helios_city: state_research_industry_mixed
+- heritage runtime updates state
+- highly restricted state-only operations
+- historic_state_album
+- historical / dismantled state in current runtime posture
+- historical naval and state storage legacy
+- historical state
+- history and audit state
+- history and notice state
+- holder of a state allocation right
+- holding_state
+- hospitality_program_state
+- hospitality_system_state
+- household_state
+- household_state_change
+- household_system_state
+- households, veteran structures, or state ideology.
+- housing -> real_estate
+- housing builder, property, and household state.
+- housing state
+- housing_state_change
+- housing_system_state
+- how they pressure the state,
+- human review state
+- human-readable service state visibility.
+- human_capital_system_state
+- hybrid_state
+- hygiene_state
+- identify state boundaries well enough
+- identify tappable states
+- idle_building_state
+- idle_building_state examples
+- idle_property_state
+- idle_property_state examples
+- if death or lasting disability occurs during service, the state must compensate the individual or family
+- if governance_style_code is religious_state
+- if state information is incomplete
+- improved state
+- in an ambiguous state.
+- in banking and real-estate finance domains.
+- incident_state
+- including calculated due timing and current payment state.
+- incomplete builder state
+- industrial-return oriented, military, or state-controlled.
+- industrial_state
+- industrial_system_state
+- infectious-control runtime updates state
+- information_freshness_state
+- infrastructure_governance_mode: direct_state_control
+- infrastructure_system_state
+- inheritance runtime updates state
+- initial route load must show loading state
+- injury, service interruption, and reentry timing matter more than in other states
+- innovation_system_state
+- input_state
+- inside state builder.
+- insiders and outsiders live different state realities
+- inspect stockpile target and state basis
+- inspect target state and lineage
+- inspection-diplomacy runtime updates state
+- institution_state_loaded
+- instrument runtime updates state
+- insurance_system_state
+- intake state
+- intake_load_state
+- intake_state
+- integration/013.runtime/0600130003_STATE_INTEGRATION.md
+- integration/090.runtime/020_STATE_INTEGRATION.md
+- intellectual_property_system_state
+- intelligence_system_state
+- intent_state
+- inter-state relation visibility
+- inter-state trade
+- inter-state-aware
+- inter_state_relation_screen
+- inter_state_relation_summary_section
+- interaction_state
+- interaction_states
+- interfaith runtime updates state
+- internal system state.
+- internal_stability_state
+- international_member_state
+- international_system_state
+- internet_network_state
+- internet_program_state
+- internet_system_state
+- interrupted, rejected, or resolved inspection states must remain explicit
+- interstate-centered
+- into BusinessOS private state.
+- into empty state.
+- into one opaque global state view.
+- invalid allocation state
+- invalid item state
+- invalid, revoked, completed, or archived states must remain explicit
+- investigation runtime updates state
+- invoice runtime updates state
+- invoke nation state update runtime
+- invoke state-machine runtime
+- ip_market_state
+- ip_program_state
+- ip_system_state
+- is constrained by state rules.
+- issue count refreshes when issue state changes
+- its operational states.
+- its own empty/warning/blocked states
+- job state is persistent in career history
+- joint_statement_id
+- judicial case state updated explicitly
+- judicial runtime classifies and updates state
+- judicial state machine
+- judicial_state_screen
+- judicial_system_state
+- km state cells
+- km x 10km state cells
+- km_x_10km_state_cell
+- knowledge_economy_system_state
+- labor-dispute runtime updates state
+- labor-enforcement runtime updates state
+- labor-inspection runtime updates state
+- labor_market_state
+- labor_program_state
+- labor_relations_system_state
+- labor_system_state
+- larger company or state staffing systems,
+- law activation runtime updates state
+- law state updated explicitly with governing trace
+- law state updated under explicit legal basis
+- lease_right = allowed with state control
+- legacy head-of-state ascent placeholder token
+- legal and commercial estate processing is highly visible
+- legal_system_state
+- legislative state machine
+- legislative_state_screen
+- legislative_system_state
+- legislature_exists_but_command_state_shadow_strong
+- legitimacy_crisis_state
+- library_owned_state
+- license state
+- life state
+- life_continuity_state
+- life_stability_state
+- lifecycle_state_profile_id
+- lifecycle_state_section
+- lifted, failed, or reversed control states must remain explicit
+- limited_or_state_guided_listing_regime
+- line_state
+- lineage and state basis are verified
+- linked government / real-estate / commerce / support-facility surface
+- linked real-estate / retail / company / support-facility surface
+- linked real-estate or company routing
+- liquidation state
+- listed state if approved
+- listing becomes available only when release and license states are valid
+- listing runtime updates state
+- listing state groups
+- listing_readiness_state
+- listing_readiness_state: early_preparation
+- listing_readiness_state: not_applicable
+- listing_state
+- listing_state_section
+- listing_state_summary_section
+- listing_system_style: state_guided_market
+- livability state
+- livability_state
+- livestock_health_state
+- load_state
+- loading_state
+- loan runtime updates contract state
+- local protection depends on remaining state presence and political favor
+- local_leader_to_head_of_state
+- local_supply_state
+- local_system_state
+- logistics runtime updates state
+- logistics_and_border_state_shift
+- logistics_system_state
+- long-term care is state responsibility when recognized
+- lower attraction-state truth
+- lower infrastructure-state truth
+- lower project-state internals
+- lower room-state truth
+- loyalty_state_when_required
+- loyalty_tendency modifies service, state-duty, and patriotic response events
+- maintenance requires explicit target and lifecycle state
+- maintenance runtime updates state
+- maintenance state grouping
+- maintenance state updated once explicitly
+- maintenance_burden_state
+- major state change detected
+- major_state_facilities
+- major_state_facilities: very_high
+- managed allocation state
+- manufacturing_system_state
+- marine_network_state
+- marine_operation_state
+- marine_program_state
+- marine_system_state
+- maritime_state
+- market and shipment state
+- market_board_state where applicable
+- market_openness_type: state_screened_market
+- market_preset_code: state_guided_market
+- market_review_notes: state-guided review with policy discretion
+- market_system_state
+- marriage state
+- may create waiting states for builder execution.
+- may create waiting states.
+- may differ by listing state.
+- may expose state-certified or nation-official goods first
+- may use financial and real estate assets
+- media-enforcement runtime updates state
+- media-incident runtime updates state
+- media_control_type: state_dominant_media
+- media_system_state
+- mediated, escalated, or resolved dispute states must remain explicit
+- mediation runtime updates state
+- mediation_path: system_real_estate_company
+- medication supply runtime updates state
+- medicine_and_equipment_state_checked
+- member_state
+- menu_state
+- mercenary activity is state-backed or state-permitted and forms a para-military contract sector
+- migration runtime updates state
+- migration state updated explicitly
+- migration-enforcement runtime updates state
+- migration_system_state
+- military facility execution surfaces must respect permission and policy state
+- military or state reserve logic may affect distribution
+- military or state-service connection
+- military or state-service interruption
+- military_or_state_discount
+- military_or_state_priority_mode
+- military_or_state_priority_override
+- military_state
+- military_state -> coup_conspirator_route
+- military_state -> decorated_general_route
+- military_state -> military_capture_route
+- military_state_school
+- military_system_state
+- minimum compliance state
+- minimum disclosure state
+- minimum state cell size = 10km x 10km
+- minimum state establishment = 10 connected cells
+- minimum state establishment size = 10 connected cells
+- minimum state size is satisfied
+- mining_system_state
+- mission runtime updates state
+- mission-level directional statement
+- mitigated or restored outage states must remain explicit
+- mitigated, escalated, or resolved review states must remain explicit
+- mixed_state_private
+- moderation state is assigned
+- moderation_state
+- moderation_states
+- modify internal OS state.
+- mood_state
+- movement state is persisted
+- movement_readiness_state
+- multi-state
+- multi-state-aware
+- muscle_mass_state
+- must act as the main state-scale gateway
+- must be based on explicit token state,
+- must carry enough location and state context
+- must connect state decision,
+- must expose actionable risk and pressure states.
+- must go through system real estate company.
+- must make state and options visible.
+- must not skip fulfillment states.
+- must not stop at field-map state.
+- must operate on nation draft state only
+- must react to explicit risk states.
+- must remain state-explicit.
+- nation access state
+- nation infrastructure state
+- nation or state actor
+- nation state update runtime executes if approved
+- nation state updated under explicit authority
+- nation_type: commercial_state
+- nation_type: culture_state
+- nation_type: defense_state
+- nation_type: education_state
+- nation_type: hybrid_state
+- nation_type: religious_state
+- national_system_state
+- near_certain_state_takeover_risk
+- nearby_hospital_access_state
+- nearby_market_access_state
+- nearby_school_access_state
+- need-state visibility
+- negotiation state must remain explicit
+- negotiation state updated explicitly
+- neighboring state boundary dataset where applicable
+- network_state_loaded
+- neutral state
+- new entity states
+- new state
+- next season state is initialized
+- next state
+- next_state
+- no contradictory metric state
+- no hidden state mutation
+- no local source-of-truth persona state allowed
+- no metric without source state
+- no religion authority bundle because religion is not state-linked
+- no state change without event execution
+- no state update without triggering event
+- no unresolved policy state remains
+- nobles may hold grant-based estates
+- non-blocking but incomplete, weak, or suboptimal state
+- non-duplicative of real-estate finance
+- not a centralized ruler-state.
+- not every internal state transition.
+- not only abstract nation state.
+- not payment states.
+- not silently create the state.
+- notification state visibility
+- notification-linked state jump
+- notify dependent product/purchase enforcement if state changed
+- number of states
+- observation runtime updates state
+- occupancy state
+- occupancy_state
+- ocean_trade_market_state
+- ocean_trade_network_state
+- ocean_trade_operation_state
+- ocean_trade_program_state
+- ocean_trade_system_state
+- of armed interstate or polity conflict
+- of event execution and state mutation systems.
+- of kingdom hierarchy beneath its current industrial state form.
+- office_eligibility_state
+- official real-estate occupancy structures.
+- official_attempt_state
+- oil_gas_system_state
+- oil_system_state
+- on public permission or state support.
+- onboarding_state
+- only when listing_readiness_state reaches
+- open / closed state
+- open state information
+- open state list
+- open state-related routes clearly
+- open_actor_behavior_state
+- open_containment_state
+- open_contamination_state
+- open_facility_operation_state
+- open_facility_state_reflection
+- open_inter_state_relation
+- open_real_estate_issue
+- open_real_estate_manage
+- open_real_estate_portfolio
+- open_real_estate_tenancy
+- open_runaway_and_override_state
+- open_state
+- open_state_and_society
+- open_state_and_society_history
+- open_state_builder_result_detail
+- open_state_changed
+- open_state_information
+- open_state_list
+- open_state_machine_history
+- opening_state
+- operating-state visibility
+- operating_state
+- operating_state_summary_section
+- operational execution state
+- operational state
+- operational state must remain operational unless explicitly constitutionalized
+- operator class, and event state
+- operator-visible state indicators.
+- optional_avatar_state
+- or a state-guided market posture while remaining commercial.
+- or doctrine-guided state responsibility.
+- or lower infrastructure-state truth.
+- or show blocked / error state explicitly.
+- or symbolic state roles.
+- or terminal states where appropriate, alerting,
+- order posture by meaningful operational state.
+- order state
+- order_state_list_section
+- ordered movement of work or state
+- ordinary solvency state
+- ordinary state builder UI
+- outage runtime updates state
+- outage_state
+- outcomes may include forced labor, welfare support, or degraded state
+- output_state
+- override state
+- overview-only states should allow inspection without editing
+- owned_state
+- ownership_state
+- ownership_state examples
+- paid / partial / overdue state is determined
+- party_socialist_state
+- party_socialist_state -> party_control_route
+- party_socialist_state -> party_operator_route
+- pause state
+- paused state
+- payment or compliance state prohibits transition
+- payment redirect state
+- payment state
+- payment state visibility
+- payment success or buyer order state.
+- payment_default_state
+- payment_state
+- payment_state_section
+- payment_system_state
+- payout statements
+- payroll state is persisted
+- pe_system_state
+- pending_application_state
+- pending_contract_state
+- pending_order_state
+- pending_transaction_state
+- performance of equity / real-estate operation
+- permission runtime updates state
+- permission state
+- permission_policy_to_visibility_state
+- permission_state
+- permission_states
+- permit runtime updates state
+- permit state updated explicitly
+- permit-inspection runtime updates state
+- persist active, superseded, revoked, or expired state
+- persist enforcement state
+- persist escalation state
+- persist execution state
+- persist food supply state
+- persist order state
+- persist order state transition
+- persist position state
+- persist queue state
+- persist queue state update
+- persist rebuilt aggregate state
+- persist rebuilt score state
+- persist rebuilt state
+- persist request state
+- persist research result state
+- persist response state
+- persist result state transition
+- persist shipment state
+- persist snapshot state
+- persist stockpile state
+- persist updated aggregate state
+- persist water supply state
+- person_system_state
+- persona only (no world state)
+- persona state
+- persona state changes only through defined systems
+- persona state is owned by persona domain
+- persona state query
+- persona_state
+- personnel and deployment support state
+- pickup_state_section where supported
+- placeable facility state
+- platform_economy_system_state
+- platform_market_state
+- platform_network_state
+- platform_program_state
+- platform_system_state
+- policy state
+- policy-based auto pricing state where supported
+- policy-impact runtime updates state
+- policy_system_state
+- political and state relation
+- politically filtered state power weakens consistent recovery
+- population is more distributed across multiple cities than monarchic states
+- population_system_state
+- position state is persisted
+- post-opening operation state
+- post-order fulfillment states
+- post-publication moderation state
+- post-purchase state
+- post_revolution_symbolic_monarchy_industrial_state
+- power_system_state
+- premium memorial and premium estate management exist
+- preparedness_state
+- preparing_state_section
+- prerequisite_state
+- preservation and processing state
+- prestige pressure is weaker than in central-continent states
+- preview must evaluate candidate action against current committed state
+- preview state,
+- preview_state_snapshot
+- previous state
+- priority_state
+- privacy state where applicable
+- privacy_state where applicable
+- private_equity_system_state
+- procedural bureaucratic legal state
+- procedural_state_policing
+- process state
+- process_backlog_state
+- process_state
+- procurement runtime updates state
+- procurement state updated explicitly
+- procurement_system_state
+- product_quality_state
+- profit, state duty,
+- program_state
+- progression_state
+- property -> real_estate
+- property contract execution must route to real estate service
+- property transaction bypasses system real-estate mediation
+- property_building is the building-level real estate object
+- property_land is the land-level real estate object
+- property_system_state
+- property_tenant_notes: all real estate transactions mediated through system intermediary
+- property_tenant_notes: real estate execution routed through intermediary
+- property_tenant_notes: real estate routed through system intermediary only
+- property_tenant_notes: sacred property and admin property both mediated through system real estate company
+- prosecution runtime updates state
+- public_finance_system_state
+- public_health_state
+- public_health_system_state
+- public_information_state
+- public_or_internal_board_state
+- public_record_state
+- public_visibility_state
+- public_visibility_state: public
+- publication runtime updates state
+- publication state
+- publication state consistent
+- publication state inconsistent
+- publication/activation state
+- publication_bundle stores publication state.
+- publication_state
+- publication_state examples
+- publication_state: not_requested
+- publish-readiness of edited zoning/listing style state
+- publish/moderation state is active
+- published, suspended, revoked, failed, or reversed states must remain explicit
+- purchase completion state
+- qualification preparation state
+- qualification runtime updates state
+- qualification_preparation_state
+- quality_state
+- quasi_state_aligned
+- queue state and audit trace are updated
+- queue_state
+- quick info should distinguish open from construction states
+- rail_integrated_civil_engineering_state
+- railway_system_state
+- rather than forcing rail onto non-rail states.
+- reach_state
+- readable state boundaries
+- readiness commemorations, and state observance events.
+- readiness_state
+- readiness_state_id
+- readiness_state_updated
+- ready-state count
+- ready-state visibility
+- ready_state_count
+- real estate
+- real estate UI
+- real estate asset operation
+- real estate boards prioritize heatmap and trend graphs
+- real estate intermediary path missing for real-estate operation
+- real estate investment
+- real estate market board
+- real estate mediation routes through system real estate company
+- real estate operation posture
+- real estate transfer mediation must go through system real estate company
+- real estate,
+- real military posture and state philosophy.
+- real-estate
+- real-estate UI
+- real-estate UI contracts such as
+- real-estate UI structure
+- real-estate UI-edited truths such as
+- real-estate asset UI
+- real-estate asset logic,
+- real-estate collateral enforcement claims
+- real-estate finance support facility
+- real-estate intermediary path for property operation
+- real-estate intermediary path is required for property operation
+- real-estate mediation fee
+- real-estate mediation layer where applicable
+- real-estate portfolio UI
+- real-estate portfolio internals
+- real-estate repayment
+- real-estate rights, registry, and transaction domains.
+- real-estate rights, registry, and transaction evaluation.
+- real-estate rights, registry, and transaction handling.
+- real-estate transfer mediation must go through system real estate company
+- real-estate vacancy policy details
+- real-estate valuation
+- real-estate,
+- real-estate-backed enterprise lending
+- real-estate-design related facility
+- real-estate-design seller context
+- real-estate-design-linked physical items where supported
+- real-estate-design-only Marketplace core
+- real-estate-design-only listing core
+- real-estate-design-related facility
+- real-estate-regime
+- real-estate-related execution must go through system real estate company
+- real_estate
+- real_estate -> construction
+- real_estate -> finance
+- real_estate -> housing
+- real_estate_analysis
+- real_estate_and_construction
+- real_estate_backed_enterprise_loan
+- real_estate_bubble
+- real_estate_building
+- real_estate_company
+- real_estate_company is a system-limited company type
+- real_estate_company is system company only.
+- real_estate_company mediation.
+- real_estate_company_fee
+- real_estate_company_fee_where_applicable
+- real_estate_contract_history
+- real_estate_coordination
+- real_estate_crisis
+- real_estate_data
+- real_estate_developer
+- real_estate_development
+- real_estate_finance_facility
+- real_estate_finance_facility -> build_cost low / maintenance low / time 5
+- real_estate_finance_facility -> buildable small_lot_or_medium_lot finance_or_commerce_or_mixed_use
+- real_estate_finance_facility -> mixed_allowed
+- real_estate_finance_facility -> real_estate_service
+- real_estate_finance_facility -> real_estate_ui
+- real_estate_finance_facility is compatible with finance_zone, commerce_zone, or mixed_use_zone
+- real_estate_finance_facility provides real-estate-linked finance access
+- real_estate_financing
+- real_estate_history_screen
+- real_estate_holding_allowed
+- real_estate_holding_allowed: true
+- real_estate_holdings_value
+- real_estate_home
+- real_estate_index
+- real_estate_intermediary_ref
+- real_estate_intermediary_ref: system_real_estate_company_concordia
+- real_estate_intermediary_ref: system_real_estate_company_lumen
+- real_estate_intermediary_ref: system_real_estate_company_meridian
+- real_estate_intermediary_ref: system_real_estate_company_sancta
+- real_estate_intervention_screen
+- real_estate_investment
+- real_estate_investment_enabled
+- real_estate_investment_enabled: true
+- real_estate_investor
+- real_estate_issue_panel
+- real_estate_issue_screen
+- real_estate_kpi_strip
+- real_estate_land
+- real_estate_lease
+- real_estate_leasing
+- real_estate_linked_screen
+- real_estate_listing
+- real_estate_maintenance_screen
+- real_estate_maintenance_warning_panel
+- real_estate_manage_screen
+- real_estate_management
+- real_estate_market
+- real_estate_market_board_facility
+- real_estate_market_board_facility -> build_cost low / maintenance very_low / time 0
+- real_estate_market_board_facility -> nation_body_or_city_body
+- real_estate_market_board_facility -> real_estate_market_board_service
+- real_estate_market_board_facility -> real_estate_market_board_ui
+- real_estate_mediation_access: high
+- real_estate_mediation_access: medium
+- real_estate_mediation_access: medium_high
+- real_estate_mediation_fee
+- real_estate_monitoring
+- real_estate_mortgage
+- real_estate_notice_surface
+- real_estate_occupancy_screen
+- real_estate_operation_policies
+- real_estate_overview_screen
+- real_estate_permission_screen
+- real_estate_policy
+- real_estate_portfolio
+- real_estate_portfolio_screen
+- real_estate_price
+- real_estate_project
+- real_estate_property
+- real_estate_recent_history_panel
+- real_estate_record
+- real_estate_recovery
+- real_estate_redevelopment_screen
+- real_estate_reform
+- real_estate_registry
+- real_estate_registry_book
+- real_estate_registry_book_id
+- real_estate_registry_book_id or registry_scope
+- real_estate_registry_entry
+- real_estate_registry_entry_id
+- real_estate_registry_update_request_id
+- real_estate_regulation
+- real_estate_rent
+- real_estate_rights_screen
+- real_estate_risk
+- real_estate_search_history
+- real_estate_service
+- real_estate_stability
+- real_estate_statistics
+- real_estate_status_strip
+- real_estate_strategy
+- real_estate_summary_card
+- real_estate_system_design
+- real_estate_system_state
+- real_estate_tenancy_screen
+- real_estate_transaction
+- real_estate_transition
+- real_estate_ui
+- real_estate_ui_actions
+- real_estate_ui_fields
+- real_estate_unit
+- real_estate_vacancy_warning_panel
+- real_estate_valuation
+- rebuilt state persisted
+- receipt confirmation state
+- receipt state
+- receipt state override
+- receipt state visibility
+- receipt-fraud runtime updates state
+- receipt_state_section
+- recent intervention state
+- recent sales state
+- reconstruction labor and state-directed work events dominate where stable
+- recovery action state is persisted
+- recovery runtime updates state
+- recovery state
+- recovery states
+- recycling runtime updates state
+- redevelopment_policy_type: state_priority_redevelopment
+- redirect_to_review_state
+- reference active license state
+- reflected or coordinated state updated safely
+- reflected or coordinated state updates safely
+- reflected state is not truth ownership
+- reflected sync state
+- reflected sync state must indicate external truth source
+- reform cannot silently overwrite previous constitutional state
+- refund state
+- refund_state
+- regime change flows should be hidden unless transition state exists
+- regime_change_state_group
+- regional_system_state
+- rejected, appealed, or revoked states must remain explicit
+- rejected, escalated, or resolved fraud states must remain explicit
+- rejected, failed, suspended, or archived states must remain explicit
+- rejected, withdrawn, or cancelled tender states must remain explicit
+- relation between finance truth and linked government / real-estate / commerce truth
+- relation between premises truth and linked real-estate / company / retail truth
+- relationship state transitions and household impact.
+- relationship_state
+- release_state
+- reliability_state
+- relief runtime updates state
+- religion_state_conflict
+- religion_system_state
+- religious_extremist_naval_state
+- religious_state
+- religious_system_state
+- religious_traditional_state
+- relocation runtime updates state
+- relocation state updated explicitly
+- remediation runtime updates state
+- repair state
+- replace with explicit draft-state markers
+- replace_with_draft_state
+- replacement_target_states
+- replay must not silently rewrite truth state
+- replay_result_must_not_change_qualification_state
+- replay_unlock_state
+- request runtime updates state
+- request_state
+- request_state_or_military_support
+- requested_state
+- required compliance state
+- required_funds_state
+- required_relationship_state
+- required_score_state
+- required_state
+- research + state facilities + industry support
+- research_and_state_core_routes
+- research_system_state
+- reserved_lot opens reserved-state overview
+- residency runtime updates state
+- resolution state
+- resolve summit or statement target
+- resource and personnel state
+- resource_economy_system_state
+- resource_market_state
+- resource_program_state
+- resource_state
+- resource_system_state
+- restock disallowed state where applicable
+- restoration runtime updates state
+- restoration_progress_state
+- restored, expired, or destroyed archive state must remain explicit
+- restricted or state-guided review posture
+- restricted, restored, or revoked heritage states must remain explicit
+- restricted, suspended, or dissolved states must remain explicit
+- restriction and permission state
+- restriction state does not block action
+- restriction state is respected
+- result state
+- result_state
+- result_states
+- retry-dead-letter runtime updates state
+- retryable_state_examples
+- return to state-local route where defined later
+- review-required state
+- review_state
+- review_state_changed
+- review_states
+- review_visibility_state
+- reviewable state is complete and coherent.
+- revocation state
+- revoked Persona rights state must disable Civilization-side usage
+- revolution_state
+- risk escalation state
+- risk_state
+- ritual runtime updates state
+- rollback or recovery state
+- room-readiness state
+- room_readiness_state
+- rotating, revoked, or destroyed secret states must remain explicit
+- round runtime updates state
+- route_state
+- route_to_head_of_state_summary
+- runaway state
+- runaway_and_override_state_screen
+- runtime state outside governed flows.
+- runtime/005.state/0400050000_STATE_RUNTIME_INDEX.md
+- runtime/005.state/0400050001_STATE_UPDATE_RUNTIME.md
+- runtime/005.state/0400050002_STATE_SNAPSHOT_RUNTIME.md
+- runtime_state
+- rural_system_state
+- safety escalation state
+- safety incident response state updated explicitly
+- safety response runtime classifies and updates state
+- safety_context_state
+- safety_state
+- sale_state
+- same root state
+- sanction apply runtime updates sanction state
+- sanction state updated explicitly and traceably
+- sanitation_state
+- save listing-style draft state
+- save placement state
+- save topology state
+- save zoning draft state
+- schedule_state
+- school events may be state-shaped or doctrinally filtered
+- school_state_loaded
+- science_system_state
+- scientific_system_state
+- scope: accident-state-machine
+- scope: administrative-process-state-machine
+- scope: ai-robot-abnormal-state-machine
+- scope: construction-and-real-estate-detailed-configuration-and-auto-operation
+- scope: disease-state-machine
+- scope: incident-disease-and-legal-state-machine
+- scope: incident-disease-and-legal-state-machine-ui
+- scope: insurance-realestate-recruitment-services
+- scope: judicial-process-state-machine
+- scope: legislative-state-machine
+- scope: real-estate
+- scope: real-estate-and-housing-distribution-seed
+- scope: real-estate-operation-ui
+- scope: state-and-society-world-progression
+- scope: state-and-society-world-progression-ui
+- scope: state-machine-detail
+- scope: state-machine-detail-ui
+- screen state transitions
+- screen_states
+- seat_code: head_of_state
+- seating_state where applicable
+- secret runtime updates state
+- section_id: real_estate_automation_section
+- section_id: real_estate_issue_section
+- section_id: real_estate_kpi_section
+- section_id: real_estate_maintenance_section
+- section_id: real_estate_occupancy_section
+- section_id: real_estate_portfolio_section
+- section_id: real_estate_redevelopment_section
+- section_id: real_estate_rights_section
+- section_id: real_estate_summary_card
+- section_id: real_estate_tenancy_section
+- securities_regime_bundle: limited_or_state_guided_listing_regime
+- securitized real-estate valuation
+- security runtime updates state
+- security_program_state
+- security_system_state
+- seiwa_state
+- seiwa_state: 200,000,000
+- select state cell
+- select_state_cell
+- selectable state-cell dataset
+- selected_state_cell_count
+- seller runtime updates state
+- seller_verification_state
+- semiconductor_system_state
+- sentence runtime updates state
+- separate progression between those states.
+- service state
+- service_priority_state
+- service_reliability_state
+- service_state
+- session_code or statement_code
+- set_entity_state
+- settlement release state
+- settlement runtime updates state
+- settlement state
+- settlement_state_section
+- setup_completion_state
+- severity_state
+- shared/private state
+- shared_or_private_state
+- shipment state is persisted
+- shipment state updated once effectively
+- shipment_readiness_state
+- shipped_state_section
+- shipping_system_state
+- show blocked state explicitly
+- show states
+- signature and issuance state
+- signature_state
+- silent state mutation
+- simulation runtime updates state
+- skill level state
+- skill orientation begins earlier than in more civic states
+- skill_state
+- snapshot of civilization state
+- snapshot runtime updates state
+- so that election-based states do not allow
+- socialist state-lease systems
+- socialist_state_lease
+- sold-out state
+- source real-estate orientation.
+- source state version changed
+- source_persona_state_version
+- source_state_version
+- source_state_version where applicable
+- source_state_version where relevant
+- sovereign/state-issued special right
+- space_economy_state
+- space_market_state
+- space_mission_state
+- space_program_state
+- space_system_state
+- special_constitutional_convention_state
+- special_state_security_layers
+- sponsorship_state
+- sport_system_state
+- sports_system_state
+- stability depends on remaining state or doctrinal protection
+- stability_state
+- staff_and_bed_state_checked
+- staffing_state
+- standard runtime updates state
+- standards_network_state
+- standards_operation_state
+- standards_program_state
+- standards_system_state
+- startup_system_state
+- state
+- state / city correction posture
+- state / city viewing UI
+- state = current condition
+- state allocation decision
+- state allocation fee analogs where applicable
+- state and belief can produce loyalty without trust
+- state and city information
+- state and city layers
+- state and city systems
+- state and city warning systems
+- state and doctrine may intervene strongly
+- state and nation interaction
+- state and service ritual may matter more than expansive everyday pluralistic religion
+- state and society progression
+- state and society summary
+- state apply duration
+- state approval is missing where required
+- state approval required
+- state approval requirement
+- state arsenal legacy
+- state authority
+- state bookmark access
+- state boundary visibility
+- state builder
+- state builder entry
+- state builder entry behavior
+- state builder entry from empty area
+- state builder entry,
+- state builder result review
+- state builder routing
+- state builder start
+- state builder,
+- state burden
+- state cannot directly control enterprises
+- state carry-over from previous tick
+- state cell = 10km x 10km
+- state ceremony posture
+- state change
+- state changes through controlled execution
+- state constraints.
+- state control is sufficient to limit full public-order collapse, but weaker households remain exposed
+- state create
+- state distribution
+- state divergence
+- state emergency posture
+- state engine
+- state enterprise executives
+- state events
+- state food, stalls, and survival-oriented meal culture are visible
+- state form, power operation, and regime transition
+- state governance truth
+- state graph
+- state handling
+- state history
+- state honor and household stabilization coexist
+- state identity
+- state identity setup
+- state identity visibility
+- state impact type
+- state influence over succession can be strong
+- state information
+- state information entry
+- state intervention may exist but is uneven and politically filtered
+- state intervention posture if applicable
+- state is consistent
+- state leadership
+- state level
+- state lineage
+- state list
+- state list -> state information
+- state list entry
+- state loyalty posture
+- state machine visibility
+- state machines
+- state market authority
+- state messaging,
+- state mutation
+- state name
+- state or doctrinal oversight may shape routing
+- state or infrastructure burden where relevant
+- state or patron-influenced administration
+- state organ
+- state outside governed flows.
+- state overview entry
+- state policy internals
+- state policy truth
+- state posture
+- state power can overrun private continuity
+- state priority may override ordinary schedule stability
+- state progression
+- state rating
+- state rating and fiscal posture
+- state reassignment where allowed
+- state reconstruction
+- state relation posture
+- state relations
+- state repair procedures
+- state restoration
+- state retains ultimate land ownership
+- state search
+- state selection
+- state service connection,
+- state set
+- state structure, density, and resilience needs.
+- state support is selective and service-linked
+- state tampering
+- state tap
+- state tap -> city map
+- state tap routing
+- state template selection
+- state territory determination step.
+- state territory selection step.
+- state territory truth
+- state transition
+- state transition allowed
+- state transition bias
+- state transition engine
+- state transition flow
+- state transition influence
+- state transition order
+- state transition reference
+- state transitions
+- state transitions must be auditable
+- state transitions must be explainable
+- state transitions precisely enough
+- state update
+- state updated
+- state updated only via
+- state updates occur after propagation is resolved.
+- state updates where seller-side action is permitted.
+- state visibility
+- state, doctrinal, or old-regime naming tone
+- state-assigned development parcel
+- state-aware
+- state-backed guarantee
+- state-backed products where lawful
+- state-builder items
+- state-builder supervision
+- state-compatible
+- state-controlled religious gatherings
+- state-directed, or doctrine-controlled.
+- state-explicit
+- state-facing descriptive information.
+- state-guided discretion, and tighter strategic filtering.
+- state-guided market style
+- state-guided review must not silently bypass compliance floor
+- state-level dynamics
+- state-linked protected pockets may still exist
+- state-linked roles may partially stabilize otherwise unstable life course
+- state-linked_religious_operation
+- state-machine runtime
+- state-machine runtime updates state
+- state-machine summary
+- state-machine-aware
+- state-machine-capable
+- state-managed support is strong
+- state-readable
+- state-reflective
+- state-run commercial facilities
+- state-scale cells
+- state-scale territory cells.
+- state-selectable
+- state-sensitive restrictions may be stronger
+- state-separated
+- state-structured income posture
+- state-supported credit
+- state-to-state level
+- state-to-state pair
+- state-versus-private power balance
+- state_action_section
+- state_after
+- state_aligned_reporting
+- state_allocation
+- state_allocation_right
+- state_allocation_right = allowed
+- state_and_society_entry_screen
+- state_and_society_history_screen
+- state_and_society_summary_section
+- state_approval_required
+- state_arsenal_legacy
+- state_backed
+- state_backed_capital
+- state_backed_guarantee
+- state_bailout
+- state_bank
+- state_before
+- state_broadcaster
+- state_builder_map_canvas
+- state_builder_queue_section
+- state_builder_result_detail_screen
+- state_builder_start_screen
+- state_capacity
+- state_capital_selection_screen
+- state_categories
+- state_certified_badge
+- state_certified_seller
+- state_change
+- state_changed
+- state_changes
+- state_code
+- state_confirm_action_section
+- state_conflict_failure
+- state_controlled_and_bazaar_mixed
+- state_controlled_market_presence_historical
+- state_count
+- state_create_complete_screen
+- state_degraded
+- state_dependency
+- state_dependency_type
+- state_dependency_type_enum
+- state_dependency_type_selector
+- state_dominant_media
+- state_effect
+- state_entered
+- state_enterprise_executive
+- state_error_section
+- state_exited
+- state_failure
+- state_filter_section
+- state_formation
+- state_government_policy_setup_screen
+- state_guided
+- state_guided_market
+- state_honor_guard_head
+- state_id
+- state_identity_setup_screen
+- state_influence_media
+- state_information_screen
+- state_intervention
+- state_intervention_type
+- state_involvement_posture
+- state_list_screen
+- state_list_section
+- state_loyalty_tendency
+- state_loyalty_tendency modifies compliance and rally-around-state events
+- state_machine_detail_history_screen
+- state_machine_history_screen
+- state_machine_summary
+- state_machine_summary_section
+- state_market_and_bazaar_zone
+- state_market_operations
+- state_media_unit
+- state_mediated_union_relation
+- state_memory_note
+- state_meta_section
+- state_negotiation
+- state_note
+- state_organ
+- state_origin_note
+- state_owned
+- state_owned_enterprise
+- state_owned_land
+- state_planned_zoning
+- state_population_resource_setup_screen
+- state_prayer_ritual
+- state_pressure_event
+- state_priority
+- state_priority_redevelopment
+- state_rating_calculation_id
+- state_reassignment
+- state_recovered
+- state_rules
+- state_scope
+- state_screened_market
+- state_seizure where lawful
+- state_sensitive
+- state_sensitive_market_actor
+- state_snapshot
+- state_status
+- state_status_enum
+- state_summary_overlay where applicable
+- state_summary_section
+- state_supported_donation
+- state_supported_enterprise_loan
+- state_supported_logistics
+- state_tap
+- state_template_selection_screen
+- state_territory_area_selection_screen
+- state_transition
+- state_transition_code
+- state_type
+- state_validation_review_screen
+- state_validation_summary_section
+- state_value
+- state_war_supply_enterprise
+- state_window
+- stateful
+- stateless
+- statement approved
+- statement published
+- statement_code
+- statement_scope
+- statement_status
+- statement_status_enum
+- statement_version
+- states
+- states define condition
+- stayed, failed, or completed execution states must remain explicit
+- stayed, reversed, or failed removal states must remain explicit
+- stayed, suspended, terminated, or completed contract states must remain explicit
+- stock turnover state
+- stock_health_state
+- stock_system_state
+- stockpile runtime updates state
+- stockpile state handled explicitly
+- stockpile state is persisted
+- stockpile state updated explicitly
+- stop state
+- strategic and state-centered transport control may dominate
+- strategic_state_contracts
+- strategic_state_dependency
+- strategic_state_reserved_control
+- strict_review_or_state_guided
+- strong state or doctrinal tone
+- strongest state and institutional density
+- submission_state
+- submit_failed keeps user-editable state
+- subscription_state
+- subsystem control state
+- sufficiency_state
+- suitability state
+- suitability_state
+- summarize_current_state
+- summit or statement action occurs
+- summit or statement lifecycle updated explicitly
+- summit runtime updates state
+- superseded, invalidated, or reconstructed states must remain explicit
+- superseded, revoked, or expired zoning states must remain explicit
+- supply and quality state are persisted
+- supply and stock state
+- supply state is persisted
+- supply_chain_system_state
+- supply_state
+- support_state_loaded
+- suspended must show blocked-use state clearly
+- suspended or completed grant states must remain explicit
+- suspended or revoked publication states must remain explicit
+- suspended, recalled, or withdrawn mission states must remain explicit
+- suspended, revoked, or archived seller states must remain explicit
+- suspended, revoked, or expired authentication states must remain explicit
+- suspended, revoked, or expired event states must remain explicit
+- suspended, revoked, or expired residency states must remain explicit
+- suspended, revoked, or expired ritual states must remain explicit
+- suspension_state_changed
+- symbolic_state_note
+- system real estate company.
+- system real-estate company listing or mediation path
+- system real-estate mediation is explicit
+- system real-estate-company mediation validity
+- system_real_estate_branch
+- system_real_estate_company_ref
+- system_state
+- tab change may show local loading state
+- tap_state
+- tappable state distinction
+- tappable state posture
+- tappable states
+- target_lot_state
+- tax_system_state
+- tech-transfer runtime updates state
+- technocratic_state
+- technocratic_state -> reform_technocrat_route
+- technocratic_state -> technocratic_selection_route
+- technology_system_state
+- telecom_network_state
+- telecom_program_state
+- telecom_system_state
+- tenancy_state
+- tenant occupancy, opening, and mediated real-estate handling
+- tenant occupancy, opening, and mediated real-estate transactions
+- tender runtime updates state
+- tender_state
+- terminal state
+- terminal state entered
+- terminal states
+- terminal states must be distinguishable from retryable states
+- terminal_state_examples
+- terminal_state_summary
+- that the state has been created successfully.
+- the Streaming-side source state becomes finalized
+- the UI edits nation draft state,
+- the UI must show explicit blocking or warning state.
+- the current answer state is automatically submitted.
+- the current grand play state at a glance.
+- the degraded state is observable
+- the escalation state
+- the following UI states
+- the following common states
+- the king is not the practical center of state power after the revolution
+- the map should not claim fully ready state.
+- the national identity of each state.
+- the payment state
+- the real_estate_and_construction family
+- the same or modified civilization state.
+- the screen into empty state.
+- the screen may use partial_data state.
+- the state provides substitute-employment support to employers
+- the state takes responsibility for their care until the end of life
+- the system must remain in a controlled failed state.
+- the system real-estate company
+- the system should create initial evaluation state.
+- theocratic_state
+- theocratic_state -> high_priest_route
+- theocratic_state -> party_nomination_route
+- this trauma drove the state to prioritize force, surveillance, and rapid defense above all else
+- three_gods_relation_summary: Day God symbolism is respected in labor, trade, and civic order, but no state religion is declared
+- three_gods_relation_summary: Day God symbolism is strongest in public rhetoric; religion remains culturally strong but not a formal state theology
+- through explicit state transition.
+- through the system real-estate company.
+- throughput_state
+- tick state summary
+- tick state visibility
+- tick_state_summary_section
+- tier_summary: exceptional listing path under state-guided discretion
+- time_expired_state_blocks_further_edit
+- time_limit_for_emergency_state
+- timing_state
+- to a consistent and trusted operating state.
+- to expose market or civic state
+- to expose market or civic state clearly
+- to understand the state of property assets
+- touches interstate or international corridors.
+- tourism-compliance runtime updates state
+- tourism_system_state
+- trade_network_state
+- trade_platform_state
+- trade_state
+- trade_system_state
+- training support state
+- training_entry_state
+- transaction is mediated by the system real-estate company
+- transaction state
+- transfer may be restricted or state-mediated
+- transfer runtime updates state
+- transferability_state
+- transferability_state examples
+- transformation state
+- transforms civilization state over time.
+- transition_state_snapshot
+- transport and route state
+- transport_access_state
+- transport_system_state
+- trauma_formed_military_industrial_mercenary_alliance_state
+- treaty activation runtime updates treaty state
+- treaty lifecycle state updated explicitly
+- treaty state updated with explicit governance basis
+- treaty_state
+- trend_state
+- trigger -> event -> queue -> dispatcher -> handler -> state update
+- trigger state transition
+- trust_or_badge_state
+- turnover_state
+- ui_state
+- ui_visibility_state
+- unable_to_continue state
+- unexpected state mutation
+- unless required state is explicit,
+- unmarked reflected-state promotion
+- unresolved data may exist in draft state
+- unresolved mandatory state must fail validation
+- unresolved policy or blocked registry state prevents finality
+- unstable continuity and state interference weaken secure ownership transfer
+- unstable information-board state
+- unstable non-regular layers are common but not always socially excluded in the same way as in urban states
+- unstable_information_board_state
+- update achievement state
+- update archive state
+- update assessment and certification state
+- update authority, linkage, or audit state
+- update award and contract state
+- update batch state
+- update birth record state
+- update breach state
+- update broadcast state
+- update budget allocation state
+- update charge state
+- update claim state
+- update control-order state
+- update creator-platform lifecycle state
+- update credential or token state
+- update death record state
+- update declaration state
+- update deployment or readiness state
+- update disclosure state
+- update dispute or case state
+- update dispute state
+- update draft state
+- update election state
+- update emission state
+- update employment state
+- update enforcement lifecycle state
+- update enforcement state
+- update enrollment state
+- update episode state
+- update estimate state
+- update event permit state
+- update execution state
+- update forecast-run state
+- update funding or review state
+- update governance state
+- update grant state
+- update heritage or visitor state
+- update incident or containment state
+- update incident or review state
+- update incident response state
+- update incident state
+- update infectious case state
+- update inheritance state
+- update inspection or incident state
+- update inspection state
+- update inspection, review, or fraud case state
+- update instrument state
+- update investigation state
+- update invoice state
+- update judicial case state
+- update lifecycle state
+- update load or reroute state
+- update loan state
+- update logistics state
+- update maintenance state
+- update mediation or asset state
+- update mediation state
+- update migration state
+- update misconduct or integrity state
+- update mission or envoy state
+- update monitoring or violation state
+- update nation state
+- update negotiation state
+- update notice, submission, and evaluation state
+- update observation state
+- update outage state
+- update payroll state
+- update permission or revocation state
+- update permit or clearance state
+- update permit state
+- update procurement state
+- update publication state
+- update qualification state
+- update recovery action state
+- update recovery allocation state
+- update recycling state
+- update relief state
+- update relocation state
+- update remediation state
+- update request state
+- update restoration or maintenance state
+- update retry or dead-letter state
+- update review or authorization state
+- update review state
+- update ritual permit state
+- update round state
+- update secret, rotation, or revocation state
+- update seller lifecycle state
+- update shared lifecycle state
+- update simulation-run state
+- update standard state
+- update stockpile state
+- update summit or statement state
+- update supply state
+- update transfer state
+- update zoning state
+- updates states, recalculates indicators,
+- upper strata preserve estate and business continuity strongly
+- urban-enforcement runtime updates state
+- urban_system_state
+- usage becomes available only after PersonaOS-valid access state is confirmed
+- usage_state
+- used by CivilizationOS real-estate and geography-aware economy.
+- used for world valuation, real-estate valuation,
+- user_company_real_estate_counter
+- utility_availability_state
+- utilization_state
+- vacancy state
+- vacancy_state
+- valid opening state
+- validate negotiation scope and state transition
+- validate post-state
+- validate proposed state change
+- validate_market_tier_editor_state
+- validate_zoning_editor_state
+- validation state
+- validation_bundle stores validation state.
+- validation_state
+- validation_state examples
+- validation_state: not_run
+- validation_state_snapshot
+- validation_states
+- vc_system_state
+- vehicle_system_state
+- venture_system_state
+- verify approval state
+- verify certification rule basis and state version
+- verify effective period and revocation state
+- verify eligibility basis and source state version
+- verify goods basis and source state version
+- verify governing basis and estate linkage
+- verify initiating basis and source state version
+- verify lineage and source state version
+- verify program basis and source state version
+- verify registration basis and source state version
+- verify replay approval state
+- verify signature and usable state
+- verify source basis and state version
+- verify source lineage and source state version
+- verify source lineage and state version
+- version_state
+- visibility_state
+- visibility_states
+- visitor_flow_state
+- visitor_state
+- visual_condition_state
+- war affects economy, diplomacy, and nation state
+- war state becomes active
+- war-eligible state where supported
+- war_state_declared
+- warning_state
+- wartime and state-aligned enterprise behavior
+- waste_control_state
+- watchlist state
+- water supply state updated explicitly
+- water_system_state
+- weather and sea-risk state
+- weather_and_sea_state_checked
+- welfare_support_state
+- welfare_system_state
+- what campaign state is active
+- what crisis state may open additional routes
+- what entitlement/license state is attached
+- what fulfillment state exists
+- what scouting and roster state exists
+- what state emerged from it
+- when overdue state begins
+- when religious-state governance is selected
+- whether recovery is medical, civic, industrial, military, or state-structured.
+- whether state approval is required
+- whether state-guided review exists
+- whether the company may hold and operate real estate assets
+- whether the state may revoke or seize
+- while still showing facility-derived state.
+- while surfacing meaningful state change.
+- whose state geography is organized around market power and corporate density.
+- why_preview_differs_from_current_state
+- with time, state, and event semantics
+- within the state's structure definition.
+- without explicit persisted builder state.
+- workload_state
+- world control state
+- world state access
+- world state aggregate rebuilt with traceable lineage
+- world state changes must be explicit and auditable
+- world_state
+- world_state is source of truth
+- world_state_aggregate_id
+- world_state_applied
+- world_state_updated
+- zoning runtime updates state
+- zoning_match_state
+- zoning_system_type: state_planned_zoning
+- → state transition
+- → updated civilization state
+- ↓ (state_failure)
+- ヘリオス国家管理局
+- 国家は企業施策に直接介入しない
+- 成和国家資格試験院

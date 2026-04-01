@@ -1,0 +1,1515 @@
+# ============================================================
+# FACILITY CANDIDATES
+# ============================================================
+
+status: candidate
+source: 000_CIVILIZATION_OS_FULL_INTEGRATED.md
+prepared_by: Zero
+exclude: フォトン / Photon / PHOTON
+
+- -7. 07xx facility / infrastructure
+- -8. facility / infrastructure priority
+- A --> E[Local Facility Placement Review]
+- A --> F[Facility Tap]
+- A --> H[Linked Facility Screen]
+- A board facility must not silently become
+- A facility may be complete
+- A field facility must resolve
+- A field-map facility must be understood
+- A large complex facility may expose
+- A valid facility type
+- A[City Map] --> B[Facility Tap]
+- A[Facility Overview] --> B[Facility Manage]
+- A[Facility Placement] --> B[Zoom In for Local Precision]
+- All facility UIs must align with
+- All facility UIs must be derivable
+- All facility UIs must belong
+- All facility UIs must belong to
+- All facility UIs must implement
+- All facility UIs must inherit
+- All facility screens must implement
+- Any facility domain that already defines
+- Authority facility entry
+- B --> C1[Very Small Facility = 1]
+- B --> C2[Small Facility = 2]
+- B --> C3[Medium Facility = 3]
+- B --> C4[Large Facility = 5 to 10]
+- B --> C5[Extra Large Facility = One Full Cell or Multiple Cells]
+- B --> C[Facility Overview]
+- Balanced facility profile with governance, education,
+- Border Security Containment Facility
+- C --> D[District Facility List]
+- C --> D[Facility Manage]
+- C --> E[Facility Issue]
+- C --> F[Facility History]
+- C --> F[Initial Facility Planning]
+- C --> G[Facility Permission]
+- C --> H[Facility Jump]
+- C --> H[Linked Facility]
+- CAMPUS / CLASSROOM / FACILITY CAPACITY SURFACE
+- CITY CELL FACILITY CAPACITY FLOW
+- CITY CELL FACILITY CAPACITY FUNCTION
+- CITY CELL FACILITY CAPACITY RULE
+- CIVILIZATION FACILITY PLACEMENT FLOW
+- CIVILIZATION FACILITY PLACEMENT POLICY
+- CIVILIZATION FACILITY PLACEMENT RUNTIME
+- CIVILIZATION OS WITH FACILITY UI INTEGRATED
+- COMMON FACILITY UI FRAME
+- COMPLEX FACILITY RULE
+- Capital-level facility placement should intensify
+- Chargeable facility design packages are allowed.
+- Civilization OS / 382.facility-ui
+- Civilization facility UI must be unified
+- DIRECT ENTRY FACILITY TYPES
+- Define policy for facility and infrastructure placement
+- Define runtime for facility and infrastructure placement
+- Define the operational flow of facility and infrastructure placement
+- Defines how facility actions
+- ENTRY FACILITY TYPES
+- Each facility screen contract
+- Each linked facility item must define
+- Effective facility stat must be computed as
+- Every facility must be describable
+- Every facility must declare
+- Every facility type
+- Every field facility object
+- Every meaningful facility action
+- Every meaningful facility opening
+- F --> G[Facility Overview]
+- FACILITY / INFRASTRUCTURE FLOW
+- FACILITY / INFRASTRUCTURE PRIORITY
+- FACILITY BUNDLE
+- FACILITY CANDIDATE FIELDS WORTH NORMALIZING LATER
+- FACILITY CATEGORY CANDIDATES
+- FACILITY DEPLOYMENT TYPE ENUM MASTER
+- FACILITY DESIGN PRINCIPLE
+- FACILITY ENTRY FLOW
+- FACILITY ENTRY FROM CITY MAP
+- FACILITY ENTRY FUNCTION
+- FACILITY FAMILIES
+- FACILITY FUNCTION PRINCIPLE
+- FACILITY GROUPS
+- FACILITY IDENTITY AND PRODUCTION-ROLE SURFACE
+- FACILITY IDENTITY AND STAY-ROLE SURFACE
+- FACILITY LIST GROUPS
+- FACILITY MATRIX EXAMPLE
+- FACILITY OPERATION FLOW
+- FACILITY PLACEMENT BEHAVIOR
+- FACILITY PLACEMENT FLOW
+- FACILITY PLACEMENT FUNCTION
+- FACILITY PLACEMENT SCALE FLOW
+- FACILITY PLACEMENT UI ITEMS
+- FACILITY PRINCIPLE
+- FACILITY SIZE AND CAPACITY FEEDBACK
+- FACILITY SPLIT
+- FACILITY SUB-ZONES
+- FACILITY TAP RULE
+- FACILITY TYPE MASTER ALIGNMENT
+- FACILITY TYPES
+- FACILITY TYPES USING OVERVIEW-FIRST
+- FACILITY UI CATEGORY MAP
+- FACILITY UI FULL INDEX
+- FACILITY UI FULL INTEGRATED
+- FACILITY UI LIFECYCLE
+- FACILITY-LOCAL MARKETPLACE RULE
+- FACILITY-LOCAL SELLER OPERATION RULE
+- FACILITY-LOCAL SELLER RULE
+- FACILITY_ALLOWED_BONUS_STAT
+- FACILITY_BASE_STAT_PROFILE
+- FACILITY_DESIGN_BONUS_PROFILE
+- FACILITY_DESIGN_PACKAGE
+- FACILITY_DESIGN_RULE
+- FACILITY_EFFECTIVE_STAT_SNAPSHOT
+- FACILITY_PLACEMENT_VALIDATION_RECORD
+- FACILITY_TYPE
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/265.nation-builder/0402651_CIVILIZATION_FACILITY_PLACEMENT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/265.nation-builder/0502651_CIVILIZATION_FACILITY_PLACEMENT_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/265.nation-builder/0802651_CIVILIZATION_FACILITY_PLACEMENT_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/382_FACILITY_UI_FULL_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/382_FACILITY_UI_FULL_INTEGRATED.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/CIVILIZATION_OS_WITH_FACILITY_UI_INTEGRATED.md
+- FMV-009 facility_type_not_buildable
+- FNM-001 facility_master_bound
+- Facility Activation Profile
+- Facility Build and Placement
+- Facility Cost and Time Master
+- Facility Manage is the main operational screen.
+- Facility Modifier Master
+- Facility Operation Profile
+- Facility Overview
+- Facility Overview must summarize intake, bed pressure, staff burden, and alerts together
+- Facility Replacement Profile
+- Facility UI belongs to Civilization
+- Facility UI branches must be anchored by
+- Facility UI is composed of
+- Facility UI is not
+- Facility UI may be entered from
+- Facility UI must always respect
+- Facility UI must be divided into
+- Facility UI must be unified by role,
+- Facility UI must never become
+- Facility UI must remain connected
+- Facility UI must respect ownership,
+- Facility UI must support
+- Facility actions must separate
+- Facility and infrastructure base stats must be DB-controlled.
+- Facility autonomous operation UI must remain
+- Facility catalog variation must explain
+- Facility deployment type
+- Facility design may grant stat bonuses.
+- Facility design package is distinct from facility function.
+- Facility entry
+- Facility entry context may vary,
+- Facility form determines
+- Facility form determines entry route only.
+- Facility function defines
+- Facility function is the gameplay/governance truth.
+- Facility function, facility design, and placement instance
+- Facility guidance should indicate
+- Facility meaning must come
+- Facility operation must not become
+- Facility overview must act as
+- Facility placement and visibility
+- Facility placement flow must remain
+- Facility placement in CivilizationOS must be
+- Facility placement is therefore
+- Facility placement must distinguish
+- Facility placement must support
+- Facility placement policy must be
+- Facility placement runtime must be
+- Facility progression may include
+- Facility registry truth belongs to CivilizationOS public administration domain.
+- Facility service truth determines
+- Facility state changes must be traceable
+- Facility tap from city map
+- Facility tap is a primary operational action.
+- Facility tap must not skip directly
+- Facility taps and district taps
+- Facility type defines
+- Facility type determines
+- Facility type is a shared master object.
+- Facility type master exists
+- Facility type must remain explicit
+- Facility usage UI must implement
+- Facility usage runtime UI must remain
+- Facility usage runtime must support
+- Facility-autonomy UI must implement
+- Facility-derived nation metrics
+- Facility-local Marketplace entry
+- Facility-local and live-event Marketplace routes
+- Facility-local entry may open Marketplace
+- Facility-local seller operation
+- Facility-local seller operation must support
+- Field Facility Entry
+- Field facility list exists
+- Field-map facility events must be able to update
+- From facility overview,
+- Healthcare facility truth belongs to CivilizationOS healthcare-publichealth domain.
+- I --> J[Initial Facility Setup]
+- INITIAL FACILITY SETUP POSITION
+- INITIAL FACILITY SETUP SCREEN
+- If exposed from a real-estate-related facility UI,
+- If facility tap targets are unresolved,
+- If the user enters a facility from city map,
+- If the user enters a facility from search,
+- Initial facility placement must support
+- Initial facility setup is the step
+- Initial public-facility placement must reflect
+- It inventories the facility UI documents across
+- Judicial facility UI must remain
+- Judicial facility UI must support
+- LINKED FACILITY NAVIGATION RULE
+- LINKED FACILITY PANEL CONTRACT
+- LINKED FACILITY RULE
+- LINKED FACILITY SCREEN RESPONSIBILITY
+- Linked facility navigation must preserve
+- Local facility design
+- Major city public facility assignment should reinforce
+- Manufacturing operation must remain batch-aware and facility-aware.
+- Map entry is the most natural facility entry route.
+- Marketplace entry as part of facility UI
+- Meaningful facility lifecycle events
+- Medical service objects must remain facility-linked and regulated.
+- Military facility intake
+- NATION_DRAFT_FACILITY_PLACEMENT
+- NETWORK AND LINKED-FACILITY RULE
+- Nation UI must expose facility-derived metrics
+- Ninomiya naming is reserved for 二宮記念病院 as an honor exception
+- No facility UI may be designed
+- Only meaningful facility lifecycle events
+- Opening a linked facility must preserve
+- Overview-first facility
+- PRIMARY FACILITY UI STRATA
+- Placement instance is distinct from facility type.
+- Placement profile extends facility meaning
+- RETAIL FACILITY RELATION
+- SCALE CHANGE IN FACILITY PLACEMENT
+- SHARED-SPACE AND COMMON-FACILITY SURFACE
+- SYSTEM COMPANY FACILITY TYPES
+- Search must not be facility-only.
+- Single-function facility
+- TENANT AND FACILITY RELATION
+- TRAINING FACILITY FAMILIES
+- The facility catalog must support
+- The facility opens Marketplace
+- The facility-specific specialization provides
+- The same facility type must not be redefined
+- They are placed through Nation Builder facility placement.
+- They do not redefine facility meaning.
+- They do not replace facility_type master.
+- They should support linked facility jumps
+- UI-only invented facility categories
+- USER COMPANY FACILITY TYPES
+- VIEW-ONLY FACILITY TYPES
+- Visible facility history must track
+- When the user opens a linked facility,
+- Where city builder supports internal facility placement,
+- _FACILITY_UI_FULL_INDEX.md
+- _FACILITY_UI_FULL_INTEGRATED.md
+- a facility overview
+- a facility overview shell.
+- a live stay-oriented facility
+- a replacement for facility placement UI
+- a separate facility-only Marketplace core.
+- a standalone facility
+- a station facility
+- academic_training_facility
+- according to facility scale.
+- activation_profile -> facility_type_master
+- active_facility_context
+- add_facility
+- add_facility -> nation_builder_preview
+- add_facility may affect builder preview and nation detail
+- advertising-linked media facility
+- allow facility entry
+- anchor_facility_count
+- anchor_facility_opened
+- anchor_facility_opened may prefer district_then_nation_rollup
+- and explainable from facility event
+- and facility entry.
+- and facility placement rules
+- and facility reach.
+- and facility relationship surface.
+- and facility-executable.
+- and facility-linked.
+- and single-function facility services.
+- apply_facility_type_modifiers
+- as a local facility.
+- as a single-function bank facility
+- as a single-function securities facility
+- as an equivalent single-function facility
+- as facility-only lookup.
+- as military facility only.
+- assembly line facility
+- authority facility entry
+- authority facility entry is the preferred formal route for infrastructure actions
+- authority facility overview
+- authority_facility_entry_only
+- back to actual facility presence and gaps.
+- backlink must preserve nation and facility context when possible
+- bank facility
+- bank_facility
+- bank_facility -> bank_service
+- bank_facility -> bank_service -> direct_entry
+- bank_facility -> bank_ui
+- bank_facility -> build_cost medium / maintenance low / time 5
+- bank_facility -> buildable small_lot_or_medium_lot finance_or_commerce_or_mixed_use
+- bank_facility -> economic_pressure_entry
+- bank_facility -> mixed_allowed
+- bank_facility is compatible with finance_zone, commerce_zone, or mixed_use_zone
+- bank_facility is visible_and_usable
+- bank_facility opened -> finance_access increased
+- bank_facility prefers commerce or finance lot
+- bank_facility provides account and fund movement services
+- banking_rate_board_facility
+- banking_rate_board_facility -> bank_rate_board_service
+- banking_rate_board_facility -> bank_rate_board_ui
+- banking_rate_board_facility -> build_cost low / maintenance very_low / time 0
+- banking_rate_board_facility -> nation_body
+- banking_rate_board_facility is visible_view_only
+- base_stat_profile_ref: facility_base_stat_central_event_venue_v1
+- base_stat_profile_ref: facility_base_stat_central_school_complex_v1
+- base_stat_profile_ref: facility_base_stat_communications_center_v1
+- base_stat_profile_ref: facility_base_stat_defense_command_center_v1
+- base_stat_profile_ref: facility_base_stat_doctrine_center_v1
+- base_stat_profile_ref: facility_base_stat_financial_center_v1
+- base_stat_profile_ref: facility_base_stat_governance_center_v1
+- base_stat_profile_ref: facility_base_stat_grand_temple_complex_v1
+- base_stat_profile_ref: facility_base_stat_logistics_control_center_v1
+- base_stat_profile_ref: facility_base_stat_marketplace_hub_v1
+- base_stat_profile_ref: facility_base_stat_mixed_civic_hub_v1
+- base_stat_profile_ref: facility_base_stat_national_gallery_complex_v1
+- base_stat_profile_ref: facility_base_stat_public_service_center_v1
+- basic furnishing / facility completeness where supported
+- before a facility is rendered on the field map.
+- between field-map facility lifecycle events
+- board_facility_count
+- broadcast-related facility
+- build menu grouping may differ from facility master grouping
+- build menu grouping must not rename facility_type
+- build_cost should be displayed in primary facility build currency
+- build_execution_to_facility_state
+- builder-side facility creation UI
+- but facility entry,
+- but facility identity must remain stable.
+- but its primary calculation is above facility scale.
+- but must not remove facility_id
+- but not by facility identity drift.
+- but stronger culture / festival / religion facility density
+- but they must not change the facility type itself.
+- campus / classroom / facility capacity surface
+- campus / facility / dormitory linkage setup where applicable
+- campus / facility-capacity surfaces
+- campus or facility grouping
+- campus_or_facility_group
+- candidate_facility_action
+- capital required facility missing
+- category: facility
+- central administrative facility names
+- central_finance_district may increase finance facility cost
+- changed facility/infrastructure summary
+- childcare support facility
+- choose facility type
+- choose facility/infrastructure from palette
+- city administrative facility names
+- city transit authority facility
+- city-by-city facility ecology must vary strongly
+- city-level legal facility assignment
+- city-specific facility ecology must be strong
+- city_anchor_facility_opened
+- city_initial_facility_setup_screen
+- city_transit_authority_facility
+- civic_board_facility
+- civic_facility_opened
+- civil_defense_training_facility
+- class-separated and prestige-sensitive facility placement should be visible
+- classroom / facility allocation where supported
+- closed state-only facility pattern
+- common facility screen composition
+- common-facility load
+- common_facility_ui_frame
+- commoner_ring: ヘリオス中央義務学校
+- communications_facility
+- community counseling support facility
+- company, housing, and facility entry
+- company, housing, facility, and construction entry
+- company_facility
+- company_facility_entry
+- company_facility_tap
+- compatible facility types must be explicit
+- component: civilization-facility-ui
+- component: facility-action-to-nation-ui-binding
+- component: facility-activation-profile
+- component: facility-album-eligibility
+- component: facility-and-infrastructure-permission
+- component: facility-audit-log
+- component: facility-autonomous-operation
+- component: facility-autonomous-operation-ui
+- component: facility-candidate-detail-display
+- component: facility-cost-and-time-master
+- component: facility-cost-time-master-initial-values
+- component: facility-country-variation
+- component: facility-db-control-rule
+- component: facility-deployment-type-enum-master
+- component: facility-effect-to-nation-preview-binding
+- component: facility-event-to-nation-metric
+- component: facility-event-visibility
+- component: facility-history-backlink
+- component: facility-history-write
+- component: facility-interaction-priority
+- component: facility-log-retention
+- component: facility-modifier-evaluation-order
+- component: facility-modifier-master
+- component: facility-modifier-scope
+- component: facility-modifier-ui-explanation
+- component: facility-notice
+- component: facility-notification-priority
+- component: facility-operation-profile
+- component: facility-overview-ui
+- component: facility-placement-rule
+- component: facility-replacement-profile
+- component: facility-service-catalog-country-variation
+- component: facility-service-to-grand-play
+- component: facility-service-type
+- component: facility-to-service-binding
+- component: facility-type-alignment-rule
+- component: facility-type-master
+- component: facility-type-master-usage-rule
+- component: facility-type-operator-compatibility
+- component: facility-type-to-placement-profile
+- component: facility-type-to-service-family
+- component: facility-ui-full-index
+- component: facility-ui-full-integrated
+- component: facility-usage-and-queue-runtime
+- component: facility-usage-and-queue-runtime-ui
+- component: facility-visibility-and-interaction
+- component: facility-zoning-compatibility
+- component: field-facility-cost-display-ui
+- component: field-facility-economics-db
+- component: field-facility-history-notice-log
+- component: field-facility-list
+- component: field-facility-master-binding
+- component: field-facility-modifier-evaluation
+- component: field-facility-service-catalog
+- component: field-facility-to-nation-linkage
+- component: field-facility-ui-surface-binding
+- component: field-map-facility-interaction
+- component: final-evaluated-facility-value
+- component: financial-facility-split
+- component: infrastructure-authority-facility-entry
+- component: initial-administrative-facility-name-candidate
+- component: initial-agriculture-facility-name-candidate
+- component: initial-banking-facility-name-candidate
+- component: initial-childcare-facility-name-candidate
+- component: initial-correction-facility-name-candidate
+- component: initial-cultural-facility-name-candidate
+- component: initial-eldercare-facility-name-candidate
+- component: initial-employment-facility-name-candidate
+- component: initial-entertainment-facility-name-candidate
+- component: initial-exercise-and-training-facility-name-candidate
+- component: initial-fishery-facility-name-candidate
+- component: initial-housing-sales-facility-name-candidate
+- component: initial-industrial-facility-name-candidate
+- component: initial-insurance-facility-name-candidate
+- component: initial-life-leisure-facility-name-candidate
+- component: initial-market-facility-name-candidate
+- component: initial-memorial-facility-name-candidate
+- component: initial-military-facility-name-candidate
+- component: initial-port-facility-name-candidate
+- component: initial-power-facility-name-candidate
+- component: initial-public-facility-placement
+- component: initial-railway-facility-name-candidate
+- component: initial-rental-and-mediation-facility-name-candidate
+- component: initial-research-facility-name-candidate
+- component: initial-security-facility-name-candidate
+- component: initial-sports-facility-name-candidate
+- component: initial-tourism-facility-name-candidate
+- component: judicial-facility-operation-ui
+- component: major-city-public-facility-assignment
+- component: military-facility-intake
+- component: nation-builder-facility-metric-panel
+- component: nation-comparison-facility-metric
+- component: nation-detail-facility-metric-drilldown
+- component: nation-facility-aggregate
+- component: nation-facility-coverage
+- component: nation-facility-effect-execution
+- component: nation-facility-effect-summary
+- component: nation-facility-metric-preview
+- component: nation-menu-and-facility-list
+- component: nation-overview-facility-metric-card
+- component: nation-ui-facility-metric-integration
+- component: placeable-facility-status
+- component: public-training-facility
+- component: public-training-facility-type
+- component: retail-facility-type
+- component: system-company-service-facility
+- component: training-facility
+- component: training-facility-type
+- component: user-company-service-facility
+- component: view-only-market-and-board-facility
+- component: white-home-facility-hierarchy
+- contributing_facility_count
+- correction facility names
+- correction-facility operation
+- correction-related facility
+- cost_time_master_entry -> facility_type_master
+- cram_school_facility
+- creator_owned_company_facility
+- creator_owned_company_facility -> company_overview_service
+- creator_owned_company_facility -> company_overview_service -> owned_overview_entry
+- creator_owned_company_facility -> company_overview_ui
+- creator_owned_company_facility -> user_company
+- creator_owned_company_facility may be visible_and_usable with management_supported
+- creator_owned_editable_facility
+- creator_owned_housing_facility
+- creator_owned_housing_facility -> housing_overview_service
+- creator_owned_housing_facility -> housing_overview_ui
+- creator_owned_housing_facility -> mixed_allowed
+- crisis_liquidity_facility
+- current facility identity context.
+- current_facility_state
+- dance_training_facility
+- defense support facility
+- delivery-linked dining facility
+- democratization_added: ヘリオス外縁義務学校
+- deployment support facility
+- design bonus must never replace facility function
+- design bonus must respect facility-type allowed stat axes
+- detailed facility incident reporting
+- detention-oriented facility
+- direct_entry_facility_types
+- direct_service_facility
+- direct_service_facility_examples
+- direct_store_facility
+- direct_store_facility -> company_direct_store_service -> direct_entry
+- discipline_training_facility
+- distribution-support facility
+- district / facility / builder routes
+- district / facility structural review
+- district facility list
+- district_anchor_facility
+- district_and_facility_structure_review_screen
+- district_facility_list_section
+- downstream facility impact
+- downstream facility placement
+- duplicate facility identities
+- editorial production facility
+- education_career_guidance_facility
+- education_career_guidance_facility -> education_institution_or_public
+- education_career_guidance_facility -> recruitment_service
+- education_career_guidance_facility -> recruitment_ui
+- education_service_facility
+- education_service_facility -> build_cost medium / maintenance medium / time 10
+- education_service_facility -> buildable medium_lot education_or_mixed_use
+- education_service_facility -> education_service
+- education_service_facility -> education_ui
+- education_service_facility -> mixed_allowed
+- education_service_facility is compatible with education_zone or mixed_use_zone
+- education_service_facility opened -> education_access increased
+- education_support_unit -> facility_service_surface
+- effective facility stats
+- emergency-capable medical facility
+- employee stay facility where stay truth dominates
+- employment support facility
+- empty_lot is build_menu_entry rather than facility interaction
+- energy support facility
+- energy support research facility
+- enforcement-support facility
+- entry_facility_types
+- equipment/facility lending
+- exercise facility naming posture
+- existing_facility_type
+- explicit in facility entry
+- expose facility-origin market visibility state
+- extra-large facility = one full cell or multiple cells
+- facility
+- facility / infrastructure priority layer
+- facility UI fragmentation.
+- facility access,
+- facility action,
+- facility and actor layers
+- facility and care-capacity setup
+- facility and floor / zone surface
+- facility and infrastructure autonomous progression,
+- facility and infrastructure placement UI
+- facility and infrastructure priority guidance
+- facility and infrastructure state reflection
+- facility and line setup
+- facility and stay-role setup
+- facility availability change
+- facility availability checks
+- facility bundle is conditionally mandatory
+- facility burden and capacity fit.
+- facility business logic
+- facility business logic internals
+- facility capacity class
+- facility capacity posture
+- facility categories
+- facility condition impact on education
+- facility context
+- facility design bonus exceeds allowed ratio
+- facility design compatibility
+- facility design package
+- facility design package linkage
+- facility detail and overview
+- facility distinction
+- facility effective stat calculation
+- facility entry from city map
+- facility existence
+- facility failure
+- facility families and tap-entry behavior are already designed
+- facility family separation rules
+- facility family,
+- facility flow,
+- facility function
+- facility function defines what it is
+- facility function definition
+- facility function is explicit
+- facility history
+- facility identity
+- facility identity and ownership area
+- facility identity and production-role surface
+- facility identity and stay-role surface
+- facility identity context.
+- facility identity visibility
+- facility impact visible at state scale
+- facility incident alerts medium
+- facility interaction rules
+- facility issue
+- facility jump inside the district
+- facility manage
+- facility manage / issue / history / permission / linked facility
+- facility manager UI
+- facility operating hours
+- facility operation internals
+- facility operations,
+- facility or line type
+- facility or service type
+- facility overview
+- facility overview where relevant
+- facility permission
+- facility placement
+- facility placement bundle required but missing
+- facility placement expectation
+- facility placement inside city planning where applicable
+- facility placement instance
+- facility placement legality
+- facility placement must support
+- facility placement references missing facility function
+- facility placement references unknown facility function
+- facility placement screen
+- facility placement truth
+- facility presence and facility state
+- facility reflection summary
+- facility relation
+- facility relation setup
+- facility role matrix
+- facility rollout behavior
+- facility search
+- facility selection
+- facility seller context
+- facility service support
+- facility state change
+- facility state remains committed even if nation UI refresh is deferred
+- facility summary
+- facility support execution
+- facility tap
+- facility tap -> facility overview
+- facility tap entry
+- facility tap targets
+- facility truth
+- facility type
+- facility type compatibility
+- facility type is unresolved
+- facility type master
+- facility type master alignment
+- facility type master related documents
+- facility type master.
+- facility type selection
+- facility type.
+- facility usage
+- facility usage runtime
+- facility usage summary
+- facility usage visibility
+- facility-aware
+- facility-capacity mismatch
+- facility-compatible
+- facility-driven causes may be summarized, not fully expanded
+- facility-entry-capable
+- facility-entry-compatible
+- facility-filtered
+- facility-filtered Marketplace
+- facility-filtered Marketplace entry
+- facility-linked manufacturing execution
+- facility-local Marketplace entry
+- facility-local Marketplace entry,
+- facility-local filtered route
+- facility-local operational visibility.
+- facility-local raw-card payment core
+- facility-only seller core
+- facility-scale
+- facility-scale or city-scale cells
+- facility-scoped Marketplace orders
+- facility-scoped listings
+- facility-size-aware placement validation
+- facility-state reflection visibility
+- facility-type aligned
+- facility-type-aligned
+- facility/infrastructure placement surface
+- facility_activation_profile_fields
+- facility_activation_started
+- facility_alert_level
+- facility_alert_level: high
+- facility_alert_level: medium
+- facility_allowed_bonus_stat_id
+- facility_assigned
+- facility_autonomous_operation_entry_screen
+- facility_autonomy_history_screen
+- facility_base_stat_profile_id
+- facility_build_completed
+- facility_build_review_pending
+- facility_build_started
+- facility_builder
+- facility_builder is launched from empty_lot build flow or manageable_facility_lot
+- facility_builder_handoff_screen
+- facility_bundle
+- facility_bundle defines facility planning.
+- facility_candidate_detail
+- facility_catalog_id
+- facility_category
+- facility_category examples
+- facility_category_candidates
+- facility_change_set
+- facility_class
+- facility_code
+- facility_compatibility_surface
+- facility_condition
+- facility_condition_alert
+- facility_condition_score
+- facility_construction_state_updates
+- facility_control_shift_view
+- facility_cost_and_time_master_fields
+- facility_defined
+- facility_deployment_type
+- facility_deployment_type_enum
+- facility_deployment_type_selector
+- facility_design_bonus_profile_id
+- facility_design_package_id
+- facility_design_package_ref
+- facility_design_rule_id
+- facility_design_selection_refs
+- facility_design_selection_refs: []
+- facility_design_selection_surface
+- facility_domain
+- facility_effect_summary -> nation_preview_binding
+- facility_effective_stat_snapshot_id
+- facility_event_id
+- facility_event_missing_context
+- facility_families
+- facility_function: central_event_venue
+- facility_function: central_school_complex
+- facility_function: communications_center
+- facility_function: defense_command_center
+- facility_function: doctrine_center
+- facility_function: financial_center
+- facility_function: governance_center
+- facility_function: grand_temple_complex
+- facility_function: logistics_control_center
+- facility_function: marketplace_hub
+- facility_function: mixed_civic_hub
+- facility_function: national_gallery_complex
+- facility_function: public_service_center
+- facility_function_refs
+- facility_group
+- facility_history_screen
+- facility_id
+- facility_id_or_null
+- facility_identity_block
+- facility_intervention_screen
+- facility_issue_screen
+- facility_kpi_screen
+- facility_linked_screen
+- facility_list_groups
+- facility_loan
+- facility_manage_screen
+- facility_manager
+- facility_modifier_master_fields
+- facility_name
+- facility_network_screen
+- facility_notes
+- facility_notes: capital supports multiple functions at once
+- facility_notes: culture venues prioritized
+- facility_notes: education-support facilities prioritized
+- facility_notes: exact placement deferred
+- facility_notes: resilience-first layout
+- facility_notes: temple and doctrine facilities are first-class
+- facility_notice_fields
+- facility_open is medium or high for anchor facilities
+- facility_open_notice
+- facility_open_state_updates
+- facility_opened
+- facility_opened may be history and album_candidate depending on facility type
+- facility_opened may use direct_metric_delta_update or derived_metric_recalculation
+- facility_opened prefers facility_overview
+- facility_operation_profile_fields
+- facility_operation_state_screen
+- facility_or_tenant_context_banner
+- facility_or_unit_type
+- facility_overview
+- facility_overview_fields
+- facility_overview_layer
+- facility_overview_screen
+- facility_overview_surface
+- facility_overview_ui
+- facility_owner
+- facility_palette
+- facility_permission_screen
+- facility_placement
+- facility_placement_bundle
+- facility_placement_editor
+- facility_placement_group
+- facility_placement_instances
+- facility_placement_instances: []
+- facility_placement_items
+- facility_placement_map_canvas
+- facility_placement_profile_code
+- facility_placement_profile_code: commercial-capital-core
+- facility_placement_profile_code: culture-capital-core
+- facility_placement_profile_code: education-capital-core
+- facility_placement_profile_code: hybrid-capital-core
+- facility_placement_profile_code: sacred-capital-core
+- facility_placement_profile_code: strategic-capital-core
+- facility_placement_sample
+- facility_placement_surface
+- facility_placement_tabs
+- facility_placement_validation_record_id
+- facility_priority_summary
+- facility_public_view_screen
+- facility_ref
+- facility_reflection_summary_section
+- facility_registry_id
+- facility_relation
+- facility_relation_surface
+- facility_removed
+- facility_removed may use direct_metric_delta_update or derived_metric_recalculation
+- facility_reopened
+- facility_replaced
+- facility_replacement_profile_fields
+- facility_scope
+- facility_service_surface
+- facility_specific_specialization
+- facility_staff
+- facility_state_loaded
+- facility_state_notice
+- facility_state_reflection_screen
+- facility_state_to_nation_linkage
+- facility_status
+- facility_status_enum
+- facility_summary_section
+- facility_support_executor
+- facility_suspended
+- facility_tap
+- facility_type
+- facility_type -> build_menu_surface
+- facility_type -> candidate_detail_surface
+- facility_type -> facility_type_master
+- facility_type -> field_map_quick_info_surface
+- facility_type -> service_entry_surface
+- facility_type meaning.
+- facility_type must be referenced from facility_type_master
+- facility_type must be reused unchanged across service, routing, placement, and visibility layers
+- facility_type must not be renamed per map layer
+- facility_type_code
+- facility_type_id
+- facility_type_master_layer
+- facility_type_master_ref
+- facility_type_not_buildable
+- facility_type_or_null
+- facility_type_ref
+- facility_type_scope
+- facility_types
+- facility_types_company_and_housing
+- facility_types_education_and_medical
+- facility_types_finance_and_market
+- facility_types_marketplace_and_commerce
+- facility_types_mixed_use_and_tenant
+- facility_types_public_and_civic
+- facility_types_religion_and_memorial
+- facility_types_transport_and_infrastructure
+- facility_usage_queue_entry_screen
+- facility_usage_runtime_history_screen
+- facility_usage_summary_section
+- failure when facility unavailable
+- family support facility
+- family support remains important, but facility support is widely recognized
+- family-care vs facility-care posture
+- field facility economics integration
+- field facility entry
+- field facility placement rules
+- field facility service catalog
+- field facility visibility and interaction rules
+- field layers may not redefine facility_type into a new synonym
+- field layers may not split one facility_type into multiple conflicting identities
+- field map should expose action entries only where actor authority and facility context allow
+- field_map_market_facility_entry
+- field_map_public_facility_tap -> facility_use
+- finance education support facility
+- financial_facility_split
+- firefighter_training_facility
+- for a facility to stay usable.
+- for a facility.
+- for all facility operation UIs.
+- for company-scoped or facility-scoped selling posture.
+- for displaying evaluated facility cost,
+- for facility UI systems inside Civilization.
+- for facility autonomous operation UI
+- for facility autonomous progression
+- for facility build cost,
+- for facility economics and timing modifiers
+- for facility economics and timing.
+- for facility usage and queue UI
+- for facility usage and queue runtime
+- for facility usage,
+- for facility-level autonomous progression
+- for facility-local operation.
+- for field facility design objects.
+- for field-map facility economics,
+- for field-map facility listing,
+- for field-map facility placement and operation events.
+- for field-map facility placement,
+- for hospital and medical-facility operation in Civilization.
+- for incoming facility placement over existing facilities.
+- for initial public facility placement,
+- for injecting facility-derived nation metrics
+- for judicial facility operation
+- for judicial facility operation UI
+- for manufacturing and production-facility operation in Civilization.
+- for nation-builder facility and infrastructure placement.
+- for operational facility UIs.
+- for retail facility operation in Civilization.
+- for retail facility operation inside Civilization.
+- for school and education-facility operation in Civilization.
+- for the 382.facility-ui set.
+- for the current facility type,
+- for the same facility type
+- for this facility type,
+- freight coordination facility
+- from a single-function facility
+- from an infrastructure authority facility.
+- from facility type master
+- from field-map facility state.
+- from ordinary facility placement.
+- from ordinary public facility actions.
+- from parallel facility taxonomies.
+- from the facility service catalog.
+- gladia may reduce practical state-linked facility friction
+- government facility baseline
+- government service facility
+- government_facility
+- government_facility -> political_power_entry
+- government_service_facility
+- government_service_facility -> government_service
+- government_service_facility -> government_service_ui
+- government_service_facility -> public_only
+- guarantee_facility
+- healthcare_facility_id
+- high_visibility_facility
+- holding_facility_code
+- hospitality_facility
+- housing_facility
+- how facility ecology changes
+- how local facility actions become
+- how the stay facility is being used.
+- if nation uses facility placement as active nation structure
+- in education structure and facility placement.
+- inactive_facility
+- incoming_facility_type
+- industrial production facility
+- infrastructure and facility layers
+- infrastructure control facility
+- infrastructure placement, and facility design support
+- infrastructure_control_facility
+- infrastructure_control_facility -> facility_overview_ui
+- infrastructure_control_facility -> overview_service
+- infrastructure_control_facility -> public_only
+- infrastructure_facility_opened
+- initial facility frame
+- initial facility placement
+- initial facility placement behavior
+- initial facility placement validity
+- initial facility placement,
+- initial facility setup
+- initial_facility_frame_summary
+- inspect facility target and maintenance basis
+- insurance facility
+- insurance_facility
+- insurance_facility -> build_cost low / maintenance low / time 5
+- insurance_facility -> buildable small_lot_or_medium_lot finance_or_commerce_or_mixed_use
+- insurance_facility -> insurance_service
+- insurance_facility -> insurance_ui
+- insurance_facility -> mixed_allowed
+- insurance_facility is compatible with finance_zone, commerce_zone, or mixed_use_zone
+- insurance_facility provides insurance service access
+- into facility operation.
+- into one Civilization facility UI system.
+- invalid facility target
+- investment-support facility
+- judiciary-oriented facility
+- km city cells or facility placement units
+- large facility = 5 to 10
+- large_school_complex -> facility_overview_ui
+- law-enforcement support facility
+- legal-process support facility
+- line or facility role
+- linked authority-related facility
+- linked dormitory or ancillary facility visibility where applicable
+- linked education / manufacturing / infrastructure / support-facility surface
+- linked exhibition / media / commerce / support-facility surface
+- linked facility
+- linked facility list
+- linked facility navigation behavior
+- linked facility route
+- linked facility status visibility
+- linked facility-type identity where appropriate
+- linked government / real-estate / commerce / support-facility surface
+- linked government / residence / school / medical / support-facility surface
+- linked government / welfare / military / support-facility surface
+- linked logistics / government / security / support-facility surface
+- linked logistics / manufacturing / government / support-facility surface
+- linked media / commerce / culture / support-facility surface
+- linked property / district / support facility surface
+- linked real-estate / retail / company / support-facility surface
+- linked residence / construction / facility surface
+- linked residence / premises / support-facility surface
+- linked residence / training / civic / support-facility surface
+- linked retail / agriculture / logistics / event-facility surface
+- linked retail / logistics / property / support-facility surface
+- linked streamer / exhibition / government / support-facility surface
+- linked supplier-facing facility where surfaced
+- linked support facility
+- linked welfare / civic / logistics / support-facility surface
+- linked welfare / residence / security / support-facility surface
+- linked-facility and network area where applicable
+- linked-facility awareness
+- linked-facility dependency routing
+- linked-facility impact
+- linked-facility visibility
+- linked_facility_id
+- linked_facility_name
+- linked_facility_type
+- linked_facility_visibility
+- local facility placement review where supported
+- local regulation should visibly alter facility mix
+- logistics_facility
+- major military facility names
+- major_medical_complex -> facility_overview_ui
+- major_mixed_service_facility
+- major_temple_or_cathedral_complex -> facility_overview_ui
+- manage_military_facility
+- manage_military_facility -> military_scope
+- map and facility availability
+- marketplace_facility
+- marketplace_facility -> build_cost medium / maintenance low / time 10
+- marketplace_facility -> buildable small_lot_or_medium_lot commerce_or_mixed_use
+- marketplace_facility -> marketplace_service
+- marketplace_facility -> marketplace_service -> direct_entry
+- marketplace_facility -> marketplace_ui
+- marketplace_facility -> mixed_allowed
+- marketplace_facility is compatible with commerce_zone or mixed_use_zone
+- marketplace_facility is visible_and_usable
+- marketplace_facility opened -> commerce_access increased
+- marketplace_facility requires commerce-compatible lot
+- martial_arts_training_facility
+- media_facility
+- media_facility -> information_war_entry
+- medical facility operation
+- medical facility type
+- medical-facility classification
+- medical_facility_type
+- medical_service_facility
+- medical_service_facility -> build_cost medium / maintenance medium / time 10
+- medical_service_facility -> buildable medium_lot medical_or_mixed_use
+- medical_service_facility -> medical_service
+- medical_service_facility -> medical_ui
+- medical_service_facility -> mixed_allowed
+- medical_service_facility is compatible with medical_zone or mixed_use_zone
+- medical_service_facility opened -> health_access increased
+- medical_support_unit -> facility_service_surface
+- medium facility = 3
+- memorial facility
+- memorial_support_facility
+- memorial_support_facility -> facility_overview_ui
+- memorial_support_facility -> memorial_service
+- memorial_support_facility -> public_or_religion
+- military command-support facility
+- military facility execution surfaces must respect permission and policy state
+- military facility intake and assignment
+- military mobilization and military facility changes require military-scope authority
+- military_facility
+- military_facility -> mobilization_and_war_entry
+- military_facility_entry
+- military_facility_id
+- military_facility_route
+- military_facility_route is the primary intake and assignment route
+- military_facility_surface
+- military_operator is required for military facility management
+- military_training_facility
+- missing_facility_hint_set
+- mixed media facility
+- mixed passenger / freight transport facility
+- mixed-use facility tenant
+- must be able to resolve facility behavior
+- must be stricter than ordinary facility placement.
+- must distinguish facility type.
+- must know which facility action
+- must not create independent facility identities.
+- nation facility placement system
+- nation_draft_facility_placement_id
+- nation_facility_coverage_fields
+- nation_facility_list_market_entry
+- nation_facility_list_market_tap
+- nation_market_facility_entry
+- nation_market_facility_tap
+- nation_sensitive_facility
+- national rail authority facility
+- national securities market facility
+- national securities market facility is graph and board focused
+- national_rail_authority_facility
+- national_securities_market_facility
+- national_securities_market_facility -> build_cost medium / maintenance low / time 5
+- national_securities_market_facility -> nation_body
+- national_securities_market_facility -> national_market_board_service
+- national_securities_market_facility -> national_market_board_ui
+- national_securities_market_facility -> view_only_or_city_anchor civic_or_finance_or_information
+- national_securities_market_facility is compatible with civic_zone, finance_zone, or information_zone
+- national_securities_market_facility is visible_view_only
+- national_securities_market_facility opened -> market_legibility increased
+- national_securities_market_facility prefers district_anchor or city_anchor
+- national_securities_market_facility provides graph and board viewing only
+- no independent disability support facility baseline
+- no independent eldercare facility baseline
+- no independent terminal-care facility baseline
+- no strong independent large-scale welfare facility baseline
+- no_independent_eldercare_facility_assignment
+- no_independent_eldercare_facility_baseline
+- noble_ring: ヘリオスAI工業学校
+- node or facility type
+- non_editable_public_facility
+- not alternate facility identities.
+- not facility identity differences.
+- not facility-facing.
+- not facility-only entry points.
+- not only by facility size.
+- not what the facility means.
+- notes: continuity backbone facility
+- notes: flagship cultural identity facility
+- notes: retail and commerce focal facility
+- notification-linked facility jump
+- nova core cities may raise finance and premium facility cost
+- one facility only.
+- one-facility-only placement.
+- open linked facility action
+- open_facility_autonomous_operation
+- open_facility_autonomy_history
+- open_facility_jump
+- open_facility_operation_state
+- open_facility_state_reflection
+- open_facility_usage_queue
+- open_facility_usage_runtime_history
+- open_linked_facility
+- open_military_facility
+- operation_profile -> facility_type_master
+- or facility-side execution.
+- or ordinary facility operators.
+- or visible facility family
+- ordinary facility operation UI
+- ordinary facility-management UI
+- overview_first_facility
+- overview_first_facility_examples
+- overview_first_facility_type -> facility_overview_surface
+- patient, facility, and care basis must remain explicit
+- per-map renaming of facility type
+- performance_training_facility
+- physical_training_facility
+- place facility
+- place_facility
+- placeable facility design is substantially completed
+- placeable facility expectation
+- placeable facility state
+- placeable_facility_candidate_master_normalization
+- placement dictionaries may add attributes but may not redefine facility meaning
+- placement_rule -> facility_type_master
+- police-oriented facility
+- police_training_facility
+- political_office_facility
+- political_office_facility -> sovereign_action_entry
+- port authority facility
+- port authority service facility
+- port-side facility
+- port_authority_facility
+- port_service_facility
+- port_service_facility -> public_or_system_company
+- port_service_facility -> transport_service
+- port_service_facility -> transport_ui
+- post-placement facility setup UI
+- power facility linked to service zone
+- power_facility
+- preserve facility route identity
+- processing line facility
+- projected changes from facility additions or removals
+- public and civic facility UI
+- public facility adjacency tendency
+- public-order authority facility
+- public_body may reduce civic facility friction
+- public_emergency_response_facility
+- public_facility
+- public_facility_lot
+- public_facility_lot_tap -> open_facility_use
+- public_order_facility
+- public_order_facility -> crackdown_and_order_entry
+- publication-oriented media facility
+- rail operator facility
+- rail_operator_facility
+- railway service facility
+- real-estate finance support facility
+- real-estate-design related facility
+- real-estate-design-related facility
+- real_estate_finance_facility
+- real_estate_finance_facility -> build_cost low / maintenance low / time 5
+- real_estate_finance_facility -> buildable small_lot_or_medium_lot finance_or_commerce_or_mixed_use
+- real_estate_finance_facility -> mixed_allowed
+- real_estate_finance_facility -> real_estate_service
+- real_estate_finance_facility -> real_estate_ui
+- real_estate_finance_facility is compatible with finance_zone, commerce_zone, or mixed_use_zone
+- real_estate_finance_facility provides real-estate-linked finance access
+- real_estate_market_board_facility
+- real_estate_market_board_facility -> build_cost low / maintenance very_low / time 0
+- real_estate_market_board_facility -> nation_body_or_city_body
+- real_estate_market_board_facility -> real_estate_market_board_service
+- real_estate_market_board_facility -> real_estate_market_board_ui
+- recruitment / donation / doctrine / ritual / facility operation
+- recruitment_company_facility
+- recruitment_company_facility -> build_cost low / maintenance low / time 5
+- recruitment_company_facility -> mixed_allowed
+- recruitment_company_facility -> recruitment_service
+- recruitment_company_facility -> recruitment_ui
+- recruitment_facility_route
+- related_facility_ref_set
+- religion_service_facility
+- religion_service_facility -> build_cost medium / maintenance low / time 10
+- religion_service_facility -> buildable medium_lot religion_or_memorial
+- religion_service_facility -> mixed_allowed
+- religion_service_facility -> religion_service
+- religion_service_facility -> religion_ui
+- religion_service_facility is compatible with religion_zone or memorial_zone
+- religious facility-linked access
+- religious_corporation -> doctrine / recruitment / donation / facility setup
+- religious_facility_relation
+- remain supplemental to facility function
+- remaining facility families
+- remove placed facility
+- remove_facility
+- remove_facility -> nation_builder_preview
+- remove_facility may affect builder preview and nation detail
+- reopen_facility
+- reopen_facility -> nation_detail_recovery_surface
+- reopen_facility may affect overview and detail
+- replace placed facility where supported
+- replace_facility
+- replace_facility -> nation_builder_preview
+- replace_facility may affect preview, detail, and comparison
+- replacement_profile -> facility_type_master
+- required facility / infrastructure bundles resolved if nation profile requires them
+- required_facility_presence
+- rescue_training_facility
+- resolve facility target and maintenance ref
+- resolve_facility_type_master
+- resolved_authority_facility_id_or_null
+- retail facility
+- retail facility contracts
+- retail_facility_ref
+- retail_facility_types
+- returnability to the source facility context.
+- road authority facility
+- road_authority_facility
+- route to facility overview
+- scope: facility-autonomous-operation
+- scope: facility-autonomous-operation-ui
+- scope: facility-type-master
+- scope: facility-ui
+- scope: facility-ui-full-index
+- scope: facility-ui-full-integrated
+- scope: facility-usage-and-queue-runtime
+- scope: facility-usage-and-queue-runtime-ui
+- scope: field-facility-cost-display-ui
+- scope: field-facility-economics-db
+- scope: field-facility-history-notice-log
+- scope: field-facility-modifier-evaluation
+- scope: field-facility-service-catalog
+- scope: field-facility-to-nation-linkage
+- scope: judicial-facility-operation-ui
+- scope: nation-facility-aggregate
+- scope: nation-ui-facility-metric-integration
+- scope: public-facility-and-residential-seed
+- securities company facility
+- securities_company_facility
+- securities_company_facility -> build_cost medium / maintenance low / time 10
+- securities_company_facility -> buildable medium_lot finance_or_mixed_use
+- securities_company_facility -> mixed_allowed
+- securities_company_facility -> securities_service
+- securities_company_facility -> securities_ui
+- securities_company_facility is compatible with finance_zone or mixed_use_zone
+- securities_company_facility prefers finance lot
+- securities_company_facility provides brokerage and portfolio services
+- securities_facility
+- securities_facility -> market_visibility_entry
+- securities_facility -> securities_service -> direct_entry
+- security / policing facility names
+- selected facility size
+- selected facility size or capacity cost
+- selected facility warning contexts
+- selected tab only when valid for the target facility
+- selected_facility_count
+- selected_facility_size
+- send_to_processing_facility
+- service target structure is required for later facility validation
+- shared-space and common-facility surface
+- shared-space and common-facility surfaces
+- short-term stay facility
+- showcase facility
+- single-function facility entry prefers return to field map
+- single_function_facility prioritizes open_use
+- skill_training_facility
+- small facility = 2
+- some cities follow civic facility eldercare posture
+- source facility identity
+- source_facility_event_id
+- source_facility_event_type
+- source_facility_hint
+- source_facility_id
+- source_facility_type
+- space and facility readiness
+- special-facility pressure
+- special-room or specialized-facility pressure where relevant
+- special_facility_pressure_flag
+- specialized transformation facility
+- specialized_training_facility
+- speculative or ornamental facility clustering should be weaker
+- sports and public leisure facility
+- sports_facility
+- station_service_facility
+- station_service_facility -> build_cost medium / maintenance medium / time 10
+- station_service_facility -> buildable district_anchor transport
+- station_service_facility -> public_or_system_company
+- station_service_facility -> station_service
+- station_service_facility -> station_service_ui
+- station_service_facility is compatible with transport_zone
+- station_service_facility opened -> transport_access increased
+- strategic readiness facility
+- street-food facility
+- student stay facility where stay truth dominates
+- supply distribution support facility
+- support-oriented civic assistance facility
+- supported activities include armed security, facility defense, port defense, escort,
+- supported_facility_type
+- supported_facility_type_id
+- suspend_facility
+- suspend_facility -> nation_detail_warning_surface
+- suspend_facility may affect overview and detail
+- suspended_notice prefers facility_overview
+- system control facility
+- system_company_facility_types
+- system_education_operator_facility
+- system_entertainment_facility
+- system_marketplace_operator_facility
+- system_marketplace_operator_facility -> marketplace_service
+- system_marketplace_operator_facility -> marketplace_ui
+- system_marketplace_operator_facility -> system_company_only
+- system_media_operator_facility
+- system_medical_operator_facility
+- tap opens facility overview
+- tap resolves to facility overview first
+- tap_facility
+- tapping an authority facility may open infrastructure management home
+- target_facility_code
+- technology support facility
+- temple-centered facility governance
+- tenant bindings may specialize entry context but may not redefine facility_type
+- tenant composition, shared-facility usage,
+- tenant-specific redefinition of facility meaning
+- tenant_container_facility_type -> tenant_list_surface
+- that facility must route into
+- that would open from a single-function facility
+- the common facility UI frame
+- the common facility UI frame.
+- the facility does not own
+- the facility is operating as.
+- the facility truth itself.
+- the facility type master.
+- the linked facility screen must implement
+- the service truth of a facility interaction.
+- through visible facility and district change.
+- to actual facility presence,
+- to facility search only.
+- to facility-only lookup.
+- to prevent duplicated or drifting facility identities.
+- to that facility.
+- top_driver_facility_types
+- total design bonus <= 20% of base facility stat total
+- tourism facility
+- tourism_facility
+- traceability from one facility action
+- training facility baseline
+- training-oriented military facility
+- training_facility_site
+- transport_authority_facility
+- transport_authority_facility -> strategic_infrastructure_entry
+- transport_control_facility
+- underlying facility identity
+- unstable, uneven, and politically filtered facility distribution must be expressible
+- used by an equivalent single-function facility
+- user_company_education_facility
+- user_company_entertainment_facility
+- user_company_facility_types
+- user_company_media_facility
+- user_company_medical_facility
+- user_company_religious_facility
+- user_selects_facility_type
+- utility-support facility
+- verify patient, facility, and care basis
+- very small facility = 1
+- view-only market boards must remain distinct facility types from transactional financial facilities
+- view_only_facility_types
+- voluntary enlistment may use recruitment_facility_route
+- warehouse-linked production facility
+- water_facility
+- weapons facility power redundancy
+- wedding facility naming posture
+- what a facility means.
+- what campus or facility capacity exists
+- what facility changed
+- what kind of stay facility exists.
+- what linked-facility dependencies exist
+- what opening or removing a facility
+- what the facility actually does
+- what the facility is
+- what the facility is serving.
+- what this facility is,
+- when a facility becomes usable
+- when the nation profile requires explicit facility planning.
+- where a facility may exist,
+- whether a facility is culturally and structurally plausible
+- whether a facility is easy,
+- whether the facility is building,
+- which facility events affect Nation now
+- while still showing facility-derived state.
+- why a facility costs what it costs
+- why_anchor_facility_has_larger_effect
+- why_removed_facility_lowered_coverage
+- why_this_facility_changes_this_metric
+- with appropriate seller or facility filter context.
+- with facility tap or empty-area tap.
+- without changing facility identity.
+- without redefining facility meaning.
+- without redefining the facility.
+- xx facility / infrastructure
+- ウーノ港市場
+- ヘリオスAI工業学校
+- ヘリオス中央市場
+- ヘリオス中央病院
+- ヘリオス中央義務学校
+- ヘリオス住宅管理機構
+- ヘリオス住宅販売所
+- ヘリオス外縁義務学校
+- ヘリオス西港商業学校
+- ヘリオス西港総合病院
+- ヘリオス資源投資市場
+- 二宮記念病院
+- 京中央中学校
+- 京中央市場
+- 京中央病院
+- 京中央裁判所
+- 京住宅案内所
+- 京第一小学校
+- 京高等学校
+- 南清原農業学校
+- 南清原農産市場
+- 外縁再生住宅相談所
+- 外縁労働市場
+- 外縁更生施設
+- 成和住宅管理公社
+- 成和商事裁判所
+- 成和家族住宅相談館
+- 東加古奈工業専門学校
+- 東加古奈港市場
+- 東加古奈港湾病院
+- 東方開発住宅整備庁
+- 東方開発住宅案内所
+- 東部保全更生施設
+- 王城住宅案内館
+- 白鷺大学病院
+- 西京浜住宅販売所
+- 鉄央流通市場
+- 鉄央輸送投資市場
+- 青峰工業病院
+- 青峰工業高等学校

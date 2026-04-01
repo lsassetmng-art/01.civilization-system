@@ -400,3 +400,65 @@ Streamer agency implementation must remain:
 - mirrored-revenue-observable
 - summary-first
 - explicitly separated from StreamingOS-native truth
+
+# ============================================================
+# SUPPLEMENT A. MARKETPLACE ENTRY RULE
+# ============================================================
+
+Streamer agency UI may expose
+canonical Marketplace entry
+for agency-linked sale behavior.
+
+Representative Marketplace-linked contexts include:
+
+- ordinary goods sales
+- company store posture
+- event-linked limited sale
+- live-event-linked sale
+- agency-branded goods sale
+
+Streamer-agency Marketplace entry
+must reuse canonical Marketplace routines.
+
+It must not create
+a separate streamer-agency-only Marketplace core.
+
+
+# ============================================================
+# SUPPLEMENT B. EVENT-LINKED SALE RULE
+# ============================================================
+
+Streamer agency seller behavior
+may support event-linked limited sale
+through Marketplace seller operation.
+
+This may include:
+
+- live-event-linked digital goods
+- live-event-linked physical goods
+- event-participant-limited sale
+- event-window-limited sale
+
+The event venue may be digital-only,
+while goods may still be digital or physical.
+
+Fulfillment type must remain separate
+from event-venue type.
+
+
+# ============================================================
+# SUPPLEMENT C. SELLER VISIBILITY RULE
+# ============================================================
+
+Where seller capability is enabled,
+streamer agency UI should expose:
+
+- listing posture
+- review posture
+- fulfillment posture
+- payout / settlement posture
+- event-linked sale posture
+
+These are Marketplace-linked seller views,
+not replacements for agency roster or goods truth.
+

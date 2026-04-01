@@ -1,0 +1,1041 @@
+# ============================================================
+# INFRASTRUCTURE CANDIDATES
+# ============================================================
+
+status: candidate
+source: 000_CIVILIZATION_OS_FULL_INTEGRATED.md
+prepared_by: Zero
+exclude: フォトン / Photon / PHOTON
+
+- -7. 07xx facility / infrastructure
+- -8. facility / infrastructure priority
+- ./061_infrastructure/DOMAIN_SPEC.md
+- ./90_INFRASTRUCTURE_INDEX.md
+- ./91_NETWORK_INFRASTRUCTURE.md
+- ./92_COMPUTE_INFRASTRUCTURE.md
+- ./93_STORAGE_INFRASTRUCTURE.md
+- ./94_DATABASE_INFRASTRUCTURE.md
+- ./95_SECURITY_INFRASTRUCTURE.md
+- ./96_OBSERVABILITY_INFRASTRUCTURE.md
+- ./97_DEPLOYMENT_INFRASTRUCTURE.md
+- ./98_BACKUP_INFRASTRUCTURE.md
+- ./99_DISASTER_RECOVERY_INFRASTRUCTURE.md
+- BACKUP INFRASTRUCTURE
+- Broken or isolated infrastructure should be detectable by validation.
+- C --> E[Infrastructure Planning]
+- CIVILIZATION INFRASTRUCTURE MAINTENANCE FLOW
+- CIVILIZATION INFRASTRUCTURE MAINTENANCE OPERATION
+- CIVILIZATION INFRASTRUCTURE MAINTENANCE RUNTIME
+- CIVILIZATION INFRASTRUCTURE POLICY
+- CIVILIZATION OS BACKUP INFRASTRUCTURE INDEX
+- CIVILIZATION OS COMPUTE INFRASTRUCTURE INDEX
+- CIVILIZATION OS CORE INFRASTRUCTURE INDEX
+- CIVILIZATION OS DATABASE INFRASTRUCTURE INDEX
+- CIVILIZATION OS DEPLOY INFRASTRUCTURE INDEX
+- CIVILIZATION OS ENVIRONMENT INFRASTRUCTURE INDEX
+- CIVILIZATION OS INFRASTRUCTURE INDEX
+- CIVILIZATION OS JOBS INFRASTRUCTURE INDEX
+- CIVILIZATION OS NETWORK INFRASTRUCTURE INDEX
+- CIVILIZATION OS STORAGE INFRASTRUCTURE INDEX
+- COMPUTE INFRASTRUCTURE
+- CROSS BORDER INFRASTRUCTURE FLAG ENUM MASTER
+- CivilizationOS infrastructure.
+- Communication network truth belongs to CivilizationOS infrastructure domain.
+- Completed infrastructure placement
+- Compute infrastructure
+- Cross-border infrastructure flag
+- DATABASE INFRASTRUCTURE
+- DEPLOYMENT INFRASTRUCTURE
+- DISASTER RECOVERY INFRASTRUCTURE
+- DOMAIN 0061 infrastructure
+- Define infrastructure protection.
+- Define policy for facility and infrastructure placement
+- Define policy rules for infrastructure maintenance.
+- Define runtime for facility and infrastructure placement
+- Define runtime for infrastructure maintenance lifecycle.
+- Define the operational flow of facility and infrastructure placement
+- Defines database infrastructure.
+- Defines emergency and resilience infrastructure posture
+- Defines infrastructure supporting
+- Defines infrastructure-level
+- EVENT INFRASTRUCTURE
+- Each nation and city infrastructure seed should define
+- Energy distribution truth belongs to CivilizationOS infrastructure operations.
+- Energy grid truth belongs to CivilizationOS infrastructure domain.
+- Every infrastructure type
+- Every placeable infrastructure object
+- FACILITY / INFRASTRUCTURE FLOW
+- FACILITY / INFRASTRUCTURE PRIORITY
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/090.public-admin/0400502_CIVILIZATION_INFRASTRUCTURE_MAINTENANCE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/460.infrastructure-resilience/0404200_CIVILIZATION_OUTAGE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/460.infrastructure-resilience/0404201_CIVILIZATION_SERVICE_RESTORATION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/460.infrastructure-resilience/0404202_CIVILIZATION_CAPACITY_CONTROL_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/090.public-admin/0500502_CIVILIZATION_INFRASTRUCTURE_MAINTENANCE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/460.infrastructure-resilience/0504200_CIVILIZATION_OUTAGE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/460.infrastructure-resilience/0504201_CIVILIZATION_SERVICE_RESTORATION_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/460.infrastructure-resilience/0504202_CIVILIZATION_CAPACITY_CONTROL_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/090.public-admin/0700502_CIVILIZATION_INFRASTRUCTURE_MAINTENANCE_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/460.infrastructure-resilience/0704200_CIVILIZATION_OUTAGE_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/460.infrastructure-resilience/0704201_CIVILIZATION_SERVICE_RESTORATION_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/460.infrastructure-resilience/0704202_CIVILIZATION_CAPACITY_CONTROL_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/090.public-admin/0800502_CIVILIZATION_INFRASTRUCTURE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/460.infrastructure-resilience/0804200_CIVILIZATION_OUTAGE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/460.infrastructure-resilience/0804201_CIVILIZATION_SERVICE_RESTORATION_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/460.infrastructure-resilience/0804202_CIVILIZATION_CAPACITY_CONTROL_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/001.core/1100010000_CORE_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/001.core/1100010001_INFRASTRUCTURE_OVERVIEW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/002.database/1100020000_DATABASE_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/002.database/1100020001_DATABASE_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/003.storage/1100030000_STORAGE_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/003.storage/1100030001_STORAGE_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/004.compute/1100040000_COMPUTE_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/004.compute/1100040001_COMPUTE_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/005.network/1100050000_NETWORK_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/005.network/1100050001_NETWORK_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/006.jobs/1100060000_JOBS_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/006.jobs/1100060001_JOB_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/007.backup/1100070000_BACKUP_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/007.backup/1100070001_BACKUP_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/008.deploy/1100080000_DEPLOY_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/008.deploy/1100080001_DEPLOY_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/009.environment/1100090000_ENVIRONMENT_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/009.environment/1100090001_ENVIRONMENT_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/040.detail/1100008_CIVILIZATION_RUNTIME_SUBSTRATE_DETAIL.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/040.detail/1100009_CIVILIZATION_OBSERVABILITY_DETAIL.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/999.meta/1109990999_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/999.meta/pre_renumber_archive_20260322_115618/100_INFRASTRUCTURE_INDEX_20260322_115618.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/999.meta/pre_renumber_archive_20260322_115618/110_INFRASTRUCTURE_INDEX_20260322_115618.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/90_INFRASTRUCTURE_INDEX.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/91_NETWORK_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/92_COMPUTE_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/93_STORAGE_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/94_DATABASE_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/95_SECURITY_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/96_OBSERVABILITY_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/97_DEPLOYMENT_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/98_BACKUP_INFRASTRUCTURE.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/100.infrastructure.pre_refactor_20260320_092319/99_DISASTER_RECOVERY_INFRASTRUCTURE.md
+- FMV-007 infrastructure_missing_hard
+- FMW-002 infrastructure_suboptimal
+- FPR-010 infrastructure_scope_required
+- Facility and infrastructure base stats must be DB-controlled.
+- H --> I[Infrastructure Setup]
+- I = corporate investment + housing investment + infrastructure investment
+- INFRASTRUCTURE
+- INFRASTRUCTURE / LOGISTICS / MANUFACTURING RELATION
+- INFRASTRUCTURE ACTIONS
+- INFRASTRUCTURE BUNDLE
+- INFRASTRUCTURE CATEGORY ENUM MASTER
+- INFRASTRUCTURE COMMON SURFACES
+- INFRASTRUCTURE DOMAIN
+- INFRASTRUCTURE EVENTS
+- INFRASTRUCTURE GOVERNANCE MODE ENUM MASTER
+- INFRASTRUCTURE IMPACT REVIEW SCREEN
+- INFRASTRUCTURE INDEX
+- INFRASTRUCTURE LINE TYPES
+- INFRASTRUCTURE MANAGE SCREEN TABS
+- INFRASTRUCTURE OVERVIEW
+- INFRASTRUCTURE OVERVIEW SCREEN
+- INFRASTRUCTURE PLACEMENT FLOW
+- INFRASTRUCTURE PLACEMENT SCREEN
+- INFRASTRUCTURE PLACEMENT UI ITEMS
+- INFRASTRUCTURE REQUIREMENT TYPES
+- INFRASTRUCTURE SCENARIO
+- INFRASTRUCTURE SECURITY
+- INFRASTRUCTURE SERVICE TRUTH
+- INFRASTRUCTURE SETUP RULE
+- INFRASTRUCTURE STATE MACHINE
+- INFRASTRUCTURE SUMMARY CARD
+- INFRASTRUCTURE SUMMARY SURFACE
+- INFRASTRUCTURE TYPE ENUM MASTER
+- INFRASTRUCTURE TYPES
+- INFRASTRUCTURE UI LIFECYCLE
+- INFRASTRUCTURE UI MODES
+- INFRASTRUCTURE_BASE_STAT_PROFILE
+- INFRASTRUCTURE_CONNECTION_RECORD
+- INFRASTRUCTURE_TYPE
+- Infrastructure
+- Infrastructure KPI visibility is mandatory.
+- Infrastructure Security
+- Infrastructure Systems
+- Infrastructure UI
+- Infrastructure UI is not identical to
+- Infrastructure UI is related to
+- Infrastructure UI may include
+- Infrastructure UI may link to those surfaces,
+- Infrastructure UI must allow
+- Infrastructure UI must expose
+- Infrastructure UI must implement
+- Infrastructure UI must inherit
+- Infrastructure UI must make it clear
+- Infrastructure UI must not collapse
+- Infrastructure UI must resolve from
+- Infrastructure UI must treat foundational systems
+- Infrastructure UI supports
+- Infrastructure action
+- Infrastructure and utility UI
+- Infrastructure and utility UI belongs to
+- Infrastructure and utility UI in Civilization must remain
+- Infrastructure authority
+- Infrastructure automation must remain visible.
+- Infrastructure build menu
+- Infrastructure category
+- Infrastructure copy
+- Infrastructure governance
+- Infrastructure governance mode
+- Infrastructure guidance should indicate
+- Infrastructure intervention must be explicit.
+- Infrastructure is not generic utility only.
+- Infrastructure issue tab must centralize
+- Infrastructure lifecycle UI must implement
+- Infrastructure lifecycle UI must remain
+- Infrastructure maintenance truth belongs to CivilizationOS infrastructure operations.
+- Infrastructure manage must default to
+- Infrastructure management home
+- Infrastructure management must separate
+- Infrastructure must be determined in two layers
+- Infrastructure must enforce security boundaries.
+- Infrastructure must not be treated
+- Infrastructure must progress over time.
+- Infrastructure must remain
+- Infrastructure must separate
+- Infrastructure objects may require connection logic.
+- Infrastructure operation requires
+- Infrastructure overview must prioritize
+- Infrastructure permissions
+- Infrastructure placement
+- Infrastructure placement UI covers
+- Infrastructure placement and structural change
+- Infrastructure placement in CivilizationOS must be
+- Infrastructure placement inside infrastructure UI must remain
+- Infrastructure placement is a high-impact action.
+- Infrastructure placement must distinguish
+- Infrastructure placement must remain
+- Infrastructure placement must require
+- Infrastructure placement requires
+- Infrastructure placement should normally begin
+- Infrastructure preview
+- Infrastructure provides the
+- Infrastructure requires dedicated operator classes,
+- Infrastructure requires explicit candidate values
+- Infrastructure responsibilities
+- Infrastructure seed is a first-class layer
+- Infrastructure setup must expose
+- Infrastructure setup should be reviewable
+- Infrastructure system operations UI must implement
+- Infrastructure system operations UI must remain
+- Infrastructure system operations must remain
+- Infrastructure systems are highly dependent.
+- Infrastructure truth covers
+- Infrastructure type
+- Infrastructure validation must distinguish
+- Initial infrastructure placement must reflect
+- It is intentionally placed after infrastructure.
+- L9 infrastructure and utilities
+- LINE INFRASTRUCTURE CANDIDATES
+- Line infrastructure
+- Load-shedding truth belongs to CivilizationOS infrastructure-resilience domain.
+- MANUFACTURING / LOGISTICS / INFRASTRUCTURE RELATION
+- Maintenance-window truth belongs to CivilizationOS infrastructure-resilience domain.
+- Military and infrastructure policy
+- Minimum infrastructure types
+- NATION_DRAFT_INFRASTRUCTURE_PLACEMENT
+- NETWORK INFRASTRUCTURE
+- NODE INFRASTRUCTURE CANDIDATES
+- Network infrastructure
+- Network-reroute truth belongs to CivilizationOS infrastructure-resilience domain.
+- OBSERVABILITY INFRASTRUCTURE
+- Operational infrastructure UI covers
+- Operational infrastructure management
+- Outage-incident truth belongs to CivilizationOS infrastructure-resilience domain.
+- Placeable infrastructure
+- Placeable infrastructure enums
+- RUNTIME INFRASTRUCTURE
+- SECURITY INFRASTRUCTURE
+- STORAGE INFRASTRUCTURE
+- STRATEGIC INFRASTRUCTURE FLAG ENUM MASTER
+- SUPPLEMENT A. SYSTEM-ONLY INFRASTRUCTURE PLACEMENT RULE
+- SUPPLEMENT H. FINAL INFRASTRUCTURE PLACEMENT RULE
+- Seiwa = education/infrastructure premium
+- Seiwa intensifies central continent education/infrastructure premium
+- Service-restoration truth belongs to CivilizationOS infrastructure-resilience domain.
+- Storage infrastructure
+- Strategic infrastructure flag
+- TRANSPORT AND INFRASTRUCTURE
+- The infrastructure summary surface must provide
+- This company acts as infrastructure mediator.
+- Transport infrastructure must reflect
+- Transportation and logistics are infrastructure-support functions.
+- Typical infrastructure objects
+- Utility infrastructure must match
+- Where infrastructure domains support
+- World Infrastructure Activation
+- Zoning and Infrastructure
+- Zoning and Infrastructure: city form, ports, rail, districts, institutions
+- _BACKUP_INFRASTRUCTURE.md
+- _BACKUP_INFRASTRUCTURE_INDEX.md
+- _COMPUTE_INFRASTRUCTURE.md
+- _COMPUTE_INFRASTRUCTURE_INDEX.md
+- _CORE_INFRASTRUCTURE_INDEX.md
+- _DATABASE_INFRASTRUCTURE.md
+- _DATABASE_INFRASTRUCTURE_INDEX.md
+- _DEPLOY_INFRASTRUCTURE.md
+- _DEPLOY_INFRASTRUCTURE_INDEX.md
+- _ENVIRONMENT_INFRASTRUCTURE.md
+- _ENVIRONMENT_INFRASTRUCTURE_INDEX.md
+- _INFRASTRUCTURE_INDEX.md
+- _INFRASTRUCTURE_INDEX.txt
+- _INFRASTRUCTURE_OVERVIEW.md
+- _JOBS_INFRASTRUCTURE_INDEX.md
+- _JOB_INFRASTRUCTURE.md
+- _NETWORK_INFRASTRUCTURE.md
+- _NETWORK_INFRASTRUCTURE_INDEX.md
+- _STORAGE_INFRASTRUCTURE.md
+- _STORAGE_INFRASTRUCTURE_INDEX.md
+- _infrastructure
+- _person_infrastructure
+- a direct infrastructure shortcut may appear on field map if current actor has sufficient authority
+- ai_infrastructure
+- and infrastructure complexity.
+- and infrastructure expectation.
+- and infrastructure governance
+- and infrastructure lifecycle.
+- and infrastructure management flows
+- and infrastructure placement
+- and infrastructure placement inside Civilization.
+- and infrastructure systems,
+- and must expose infrastructure-specialized surfaces.
+- and what infrastructure shapes daily possibility.
+- and what kind of infrastructure action is allowed.
+- approve_public_infrastructure
+- authority facility entry is the preferred formal route for infrastructure actions
+- auto infrastructure operation where supported
+- aviation_infrastructure
+- baseline infrastructure governance
+- because infrastructure affects
+- blocked infrastructure actions may appear disabled with authority explanation
+- blocked infrastructure options may appear disabled with authority explanation
+- bond_infrastructure
+- border_infrastructure
+- build menu disabled states must explain zoning, operator, or infrastructure restrictions
+- build menu must show only infrastructure actions permitted in current context
+- capital_market_infrastructure
+- category: infrastructure
+- changed facility/infrastructure summary
+- choose facility/infrastructure from palette
+- choose infrastructure type
+- circular_economy_infrastructure
+- circular_infrastructure
+- city and infrastructure systems
+- city_infrastructure_setup_screen
+- civil/infrastructure hub districts
+- civil_service_officer -> office_scope_infrastructure_action
+- civil_society_infrastructure
+- civilization -> infrastructure
+- civilization_infrastructure
+- civilization_meta_infrastructure
+- clearly separable from manufacturing or infrastructure truth
+- clearly separated from ordinary infrastructure operation
+- communication_infrastructure
+- component: cross-border-infrastructure-flag-enum-master
+- component: facility-and-infrastructure-permission
+- component: field-map-infrastructure-build-menu
+- component: infrastructure-and-utility-ui
+- component: infrastructure-authority-facility-entry
+- component: infrastructure-authority-resolution
+- component: infrastructure-build-ui-integration
+- component: infrastructure-category-enum-master
+- component: infrastructure-direct-shortcut
+- component: infrastructure-governance-mode
+- component: infrastructure-governance-mode-enum-master
+- component: infrastructure-high-priority-candidate-enum
+- component: infrastructure-lifecycle-and-failure
+- component: infrastructure-lifecycle-and-failure-ui
+- component: infrastructure-line-and-node-preview
+- component: infrastructure-management-entry-ui
+- component: infrastructure-management-home
+- component: infrastructure-management-ui-copy
+- component: infrastructure-node
+- component: infrastructure-operator-class
+- component: infrastructure-permission-binding
+- component: infrastructure-permission-feedback-ui
+- component: infrastructure-placement-and-governance
+- component: infrastructure-placement-permission
+- component: infrastructure-requirement-validation
+- component: infrastructure-system-operations
+- component: infrastructure-system-operations-ui
+- component: infrastructure-type-enum-master
+- component: infrastructure-type-to-category-binding
+- component: infrastructure-type-to-line-node-binding
+- component: initial-infrastructure-placement
+- component: initial-transport-infrastructure
+- component: initial-utility-infrastructure
+- component: maintenance-and-infrastructure
+- component: military-and-infrastructure-permission-ui
+- component: military-and-infrastructure-preview
+- component: military-and-infrastructure-ui-integration
+- component: military-infrastructure-ui-copy
+- component: nation-infrastructure-and-market-metric
+- component: nation-infrastructure-difference-example
+- component: nation-specific-infrastructure-override
+- component: nation-type-infrastructure-default
+- component: office-authority-to-infrastructure-binding
+- component: placeable-infrastructure-enum-master
+- component: placeable-infrastructure-ui-binding
+- component: placeable-infrastructure-value-candidate
+- component: port-infrastructure-management-ui
+- component: strategic-infrastructure-flag-enum-master
+- computing -> infrastructure
+- congestion_and_infrastructure_burden_screen
+- connect infrastructure
+- construction -> infrastructure
+- construction or infrastructure domains,
+- construction or infrastructure systems,
+- consumer_infrastructure
+- consumer_protection_infrastructure
+- continued infrastructure operation
+- core infrastructure systems.
+- cross_border_infrastructure_flag
+- cross_border_infrastructure_flag_enum
+- cross_border_infrastructure_flag_selector
+- cultural_infrastructure
+- currency_infrastructure
+- current infrastructure-operation posture
+- cyber_infrastructure
+- define infrastructure and market flavor
+- defines how existing infrastructure
+- defines the concrete infrastructure object
+- defines when infrastructure
+- defines whether the infrastructure
+- defines who manages major port infrastructure nodes and expansion.
+- democratic_system_infrastructure
+- depends_on infrastructure
+- derivative_infrastructure
+- development_finance -> infrastructure
+- development_finance_infrastructure
+- digital_government_infrastructure
+- direct field-map infrastructure shortcut
+- direct shortcut may be hidden when infrastructure governance does not allow current actor action
+- direct shortcut must still resolve to a valid infrastructure authority owner
+- disaster_management -> infrastructure
+- district and infrastructure planning behavior
+- district and infrastructure planning context
+- domain: 061_infrastructure
+- education_infrastructure
+- effective infrastructure stats
+- electric_power -> infrastructure
+- emergency and resilience infrastructure
+- energy_infrastructure
+- entertainment_infrastructure
+- environment-linked infrastructure failure
+- event infrastructure
+- extension of infrastructure coverage
+- facility / infrastructure priority layer
+- facility and infrastructure autonomous progression,
+- facility and infrastructure placement UI
+- facility and infrastructure priority guidance
+- facility and infrastructure state reflection
+- facility/infrastructure placement surface
+- facility_types_transport_and_infrastructure
+- field map build menu must reflect currently permitted infrastructure modes
+- financial service facilities, and marketplace support infrastructure.
+- financial_stability_infrastructure
+- fishery_infrastructure
+- folder: 110.infrastructure
+- folder: 110.infrastructure/001.core
+- folder: 110.infrastructure/002.database
+- folder: 110.infrastructure/003.storage
+- folder: 110.infrastructure/004.compute
+- folder: 110.infrastructure/005.network
+- folder: 110.infrastructure/006.jobs
+- folder: 110.infrastructure/007.backup
+- folder: 110.infrastructure/008.deploy
+- folder: 110.infrastructure/009.environment
+- for entering infrastructure placement
+- for infrastructure and utility UI inside Civilization.
+- for infrastructure and utility UI.
+- for infrastructure continuity.
+- for infrastructure lifecycle and failure
+- for infrastructure lifecycle and failure UI
+- for infrastructure lifecycle,
+- for infrastructure placement.
+- for infrastructure system operations UI
+- for infrastructure, utility,
+- for infrastructure-management entry.
+- for initial infrastructure placement
+- for military and infrastructure control vocabulary.
+- for military intake and infrastructure control.
+- for nation-builder facility and infrastructure placement.
+- for placeable infrastructure inside Civilization.
+- for placing facilities and infrastructure.
+- for system-only infrastructure operations
+- for system-only infrastructure supervision,
+- forest_infrastructure
+- from an infrastructure authority facility.
+- from logistics or infrastructure UI.
+- from manufacturing or infrastructure UI.
+- from_infrastructure_ref
+- fx_infrastructure
+- geopolitics_infrastructure
+- global_crisis_infrastructure
+- global_trade_system_infrastructure
+- health_infrastructure
+- healthcare_infrastructure
+- history and infrastructure event surface
+- hospitality_infrastructure
+- housing_infrastructure
+- how infrastructure has developed
+- human_capital_infrastructure
+- identity infrastructure
+- if nation uses infrastructure placement as active nation structure
+- industrial_disaster_tendency influences factory and infrastructure shock events
+- industry, ports, culture, and infrastructure
+- infrastructure
+- infrastructure -> energy
+- infrastructure -> telecom
+- infrastructure -> transport
+- infrastructure / utility
+- infrastructure UI contracts such as
+- infrastructure UI structure
+- infrastructure UI-edited truths such as
+- infrastructure actions require explicit infrastructure authority
+- infrastructure actions show authority-specific disabled reasons when blocked
+- infrastructure alerts high
+- infrastructure and access value
+- infrastructure and expansion support heavy
+- infrastructure and facility layers
+- infrastructure and market indicators
+- infrastructure and market metric aggregation
+- infrastructure and scarcity
+- infrastructure and topology are explicit
+- infrastructure authority and permission
+- infrastructure burden
+- infrastructure burden visibility
+- infrastructure collapse
+- infrastructure concentration
+- infrastructure condition
+- infrastructure connection logic
+- infrastructure connection rule is unresolved where required
+- infrastructure connection topology
+- infrastructure connection validity
+- infrastructure context
+- infrastructure control facility
+- infrastructure corridor maps
+- infrastructure corridors
+- infrastructure cost
+- infrastructure coverage
+- infrastructure created
+- infrastructure damage
+- infrastructure demand
+- infrastructure dependency
+- infrastructure dependency chains
+- infrastructure depth
+- infrastructure disruption
+- infrastructure distribution
+- infrastructure events
+- infrastructure expansion
+- infrastructure extended
+- infrastructure extension
+- infrastructure extension corridors
+- infrastructure function definition
+- infrastructure governance behavior
+- infrastructure governance control surfaces
+- infrastructure grouping
+- infrastructure growth
+- infrastructure identity and coverage setup
+- infrastructure legibility and standardized control may be strong
+- infrastructure load/value
+- infrastructure maintenance unit
+- infrastructure management home
+- infrastructure management surfaces
+- infrastructure maturity posture
+- infrastructure may favor community and island connectivity over heavy centralized grids
+- infrastructure metrics
+- infrastructure monitoring UI
+- infrastructure new placement
+- infrastructure node/segment placement
+- infrastructure notification
+- infrastructure outage
+- infrastructure outage and restoration
+- infrastructure outage or restoration
+- infrastructure permissions may be rigid, uneven, or politically filtered
+- infrastructure placement
+- infrastructure placement bundle required but missing
+- infrastructure placement capability.
+- infrastructure placement is system-only.
+- infrastructure placement on field map
+- infrastructure placement permissions
+- infrastructure placement requires explicit infrastructure authority
+- infrastructure placement screen
+- infrastructure placement, and facility design support
+- infrastructure posture
+- infrastructure readiness
+- infrastructure recommendations
+- infrastructure redundancy
+- infrastructure reflection summary
+- infrastructure reflection visibility
+- infrastructure resilience
+- infrastructure scenario
+- infrastructure setup
+- infrastructure shock
+- infrastructure stress posture
+- infrastructure summary
+- infrastructure summary exposure
+- infrastructure summary surface
+- infrastructure support
+- infrastructure system operations
+- infrastructure system operator
+- infrastructure topology contains unresolved node
+- infrastructure type
+- infrastructure type selection
+- infrastructure uptime
+- infrastructure value
+- infrastructure,
+- infrastructure-aware
+- infrastructure-control internals
+- infrastructure-explicit
+- infrastructure-failure propagation
+- infrastructure-failure propagation visibility
+- infrastructure-failure summary
+- infrastructure-led zoning logic
+- infrastructure-only UI
+- infrastructure/000.core/000_INFRASTRUCTURE_OVERVIEW.md
+- infrastructure/001.core/1100010000_CORE_INFRASTRUCTURE_INDEX.md
+- infrastructure/001.core/1100010001_INFRASTRUCTURE_OVERVIEW.md
+- infrastructure/002.database/1100020000_DATABASE_INFRASTRUCTURE_INDEX.md
+- infrastructure/002.database/1100020001_DATABASE_INFRASTRUCTURE.md
+- infrastructure/003.storage/1100030000_STORAGE_INFRASTRUCTURE_INDEX.md
+- infrastructure/003.storage/1100030001_STORAGE_INFRASTRUCTURE.md
+- infrastructure/004.compute/1100040000_COMPUTE_INFRASTRUCTURE_INDEX.md
+- infrastructure/004.compute/1100040001_COMPUTE_INFRASTRUCTURE.md
+- infrastructure/005.network/1100050000_NETWORK_INFRASTRUCTURE_INDEX.md
+- infrastructure/005.network/1100050001_NETWORK_INFRASTRUCTURE.md
+- infrastructure/006.jobs/1100060000_JOBS_INFRASTRUCTURE_INDEX.md
+- infrastructure/006.jobs/1100060001_JOB_INFRASTRUCTURE.md
+- infrastructure/007.backup/1100070000_BACKUP_INFRASTRUCTURE_INDEX.md
+- infrastructure/007.backup/1100070001_BACKUP_INFRASTRUCTURE.md
+- infrastructure/008.deploy/1100080000_DEPLOY_INFRASTRUCTURE_INDEX.md
+- infrastructure/008.deploy/1100080001_DEPLOY_INFRASTRUCTURE.md
+- infrastructure/009.environment/1100090000_ENVIRONMENT_INFRASTRUCTURE_INDEX.md
+- infrastructure/009.environment/1100090001_ENVIRONMENT_INFRASTRUCTURE.md
+- infrastructure/010.database/010_DATABASE_INFRASTRUCTURE.md
+- infrastructure/020.storage/010_STORAGE_INFRASTRUCTURE.md
+- infrastructure/030.compute/010_COMPUTE_INFRASTRUCTURE.md
+- infrastructure/040.network/010_NETWORK_INFRASTRUCTURE.md
+- infrastructure/050.jobs/010_JOB_INFRASTRUCTURE.md
+- infrastructure/060.backup/010_BACKUP_INFRASTRUCTURE.md
+- infrastructure/070.deploy/010_DEPLOY_INFRASTRUCTURE.md
+- infrastructure/080.environment/010_ENVIRONMENT_INFRASTRUCTURE.md
+- infrastructure/100_INFRASTRUCTURE_INDEX.md
+- infrastructure/999.meta/1109990999_INFRASTRUCTURE_INDEX.md
+- infrastructure_action_type
+- infrastructure_actions
+- infrastructure_administration
+- infrastructure_analysis
+- infrastructure_and_market_metric_table
+- infrastructure_and_utility
+- infrastructure_asset
+- infrastructure_authority_required
+- infrastructure_base_stat_profile_id
+- infrastructure_build_menu
+- infrastructure_bundle
+- infrastructure_bundle defines infrastructure planning.
+- infrastructure_capacity
+- infrastructure_category
+- infrastructure_category examples
+- infrastructure_category_enum
+- infrastructure_category_preview
+- infrastructure_collapse_emergency
+- infrastructure_connection_change_screen
+- infrastructure_connection_fee_where_applicable
+- infrastructure_connection_record_id
+- infrastructure_control_facility
+- infrastructure_control_facility -> facility_overview_ui
+- infrastructure_control_facility -> overview_service
+- infrastructure_control_facility -> public_only
+- infrastructure_control_overlay
+- infrastructure_coordination
+- infrastructure_core_city
+- infrastructure_core_city: horizon_grid
+- infrastructure_coverage_and_region_screen
+- infrastructure_crisis
+- infrastructure_data
+- infrastructure_density_rank
+- infrastructure_density_rank: standard
+- infrastructure_density_rank: ultra_high
+- infrastructure_dependency_and_linkage_screen
+- infrastructure_dependency_warning_panel
+- infrastructure_disruption
+- infrastructure_execution_score
+- infrastructure_expansion_event
+- infrastructure_extension_screen
+- infrastructure_facility_opened
+- infrastructure_factor
+- infrastructure_failure
+- infrastructure_failure_propagation_screen
+- infrastructure_failure_summary_section
+- infrastructure_failure_tendency
+- infrastructure_failure_tendency influences city service interruption and trust erosion
+- infrastructure_financing
+- infrastructure_fund
+- infrastructure_governance_binding
+- infrastructure_governance_mode
+- infrastructure_governance_mode,
+- infrastructure_governance_mode: city_authority_control
+- infrastructure_governance_mode: direct_state_control
+- infrastructure_governance_mode: mixed_public_private_control
+- infrastructure_governance_mode: public_corporation_control
+- infrastructure_governance_mode_default
+- infrastructure_governance_mode_enum
+- infrastructure_governance_mode_selector
+- infrastructure_governance_panel
+- infrastructure_governance_policy
+- infrastructure_governance_preview
+- infrastructure_governance_summary
+- infrastructure_group
+- infrastructure_history_screen
+- infrastructure_impact_review_screen
+- infrastructure_index
+- infrastructure_intervention_screen
+- infrastructure_investment
+- infrastructure_issue_panel
+- infrastructure_issue_screen
+- infrastructure_kpi_strip
+- infrastructure_lifecycle_entry_screen
+- infrastructure_lifecycle_history_screen
+- infrastructure_line
+- infrastructure_line_types
+- infrastructure_link_type
+- infrastructure_linked_screen
+- infrastructure_lot
+- infrastructure_lot_tap -> open_infrastructure_overview
+- infrastructure_maintenance
+- infrastructure_maintenance_and_condition_screen
+- infrastructure_maintenance_execution
+- infrastructure_maintenance_record_id
+- infrastructure_maintenance_unit
+- infrastructure_maintenance_unit -> field_map
+- infrastructure_maintenance_unit -> maintenance_execution_only
+- infrastructure_manage_screen
+- infrastructure_management
+- infrastructure_market_actor
+- infrastructure_missing
+- infrastructure_missing opens filtered build menu plus requirement notice
+- infrastructure_missing_hard
+- infrastructure_monitoring
+- infrastructure_network
+- infrastructure_node
+- infrastructure_notes
+- infrastructure_notes: access reliability prioritized over heavy logistics
+- infrastructure_notes: balanced mobility and communications
+- infrastructure_notes: logistics priority high
+- infrastructure_notes: pilgrimage and civic access prioritized
+- infrastructure_notes: public event access and communications prioritized
+- infrastructure_notes: topology continuity is treated as strategic
+- infrastructure_notification
+- infrastructure_notification_enabled
+- infrastructure_operations_history_screen
+- infrastructure_operator
+- infrastructure_outage_and_restoration_screen
+- infrastructure_outage_warning_panel
+- infrastructure_overlay
+- infrastructure_overview_screen
+- infrastructure_palette
+- infrastructure_permission_feedback_surface
+- infrastructure_permission_screen
+- infrastructure_placement
+- infrastructure_placement_bundle
+- infrastructure_placement_editor
+- infrastructure_placement_instances
+- infrastructure_placement_instances: []
+- infrastructure_placement_items
+- infrastructure_placement_sample
+- infrastructure_placement_screen
+- infrastructure_placement_surface
+- infrastructure_placement_tabs
+- infrastructure_plan
+- infrastructure_planning
+- infrastructure_policy
+- infrastructure_policy_to_build_menu
+- infrastructure_policy_to_line_node_options
+- infrastructure_political_control_view
+- infrastructure_priority
+- infrastructure_priority_summary
+- infrastructure_profile
+- infrastructure_profile_code
+- infrastructure_profile_code: balanced-connectivity-v1
+- infrastructure_profile_code: event-connectivity-v1
+- infrastructure_profile_code: pilgrimage-support-v1
+- infrastructure_profile_code: service-access-v1
+- infrastructure_profile_code: strategic-resilience-v1
+- infrastructure_profile_code: trade-corridor-v1
+- infrastructure_project
+- infrastructure_provider
+- infrastructure_public_contracts
+- infrastructure_ready_required
+- infrastructure_recent_history_panel
+- infrastructure_recovery
+- infrastructure_reflection_screen
+- infrastructure_reflection_summary_section
+- infrastructure_reform
+- infrastructure_regulation
+- infrastructure_repair_priority
+- infrastructure_requirement_types
+- infrastructure_requirements
+- infrastructure_resilience
+- infrastructure_resilience_record_id
+- infrastructure_reuse_supported
+- infrastructure_risk
+- infrastructure_score
+- infrastructure_service
+- infrastructure_shortage_penalty
+- infrastructure_stability
+- infrastructure_staffing_and_control_screen
+- infrastructure_statistics
+- infrastructure_status
+- infrastructure_status_strip
+- infrastructure_strategy
+- infrastructure_suboptimal
+- infrastructure_summary
+- infrastructure_summary_card
+- infrastructure_summary_section
+- infrastructure_supply_and_capacity_screen
+- infrastructure_support_level
+- infrastructure_system
+- infrastructure_system_design
+- infrastructure_system_operations_entry_screen
+- infrastructure_system_state
+- infrastructure_target_level
+- infrastructure_transition
+- infrastructure_type
+- infrastructure_type: communications
+- infrastructure_type: logistics_hub
+- infrastructure_type: rail
+- infrastructure_type: road
+- infrastructure_type_code
+- infrastructure_type_enum
+- infrastructure_type_id
+- infrastructure_type_ref
+- infrastructure_type_section
+- infrastructure_type_selector
+- infrastructure_upgrade
+- infrastructure_utilization
+- infrastructure_value
+- infrastructure_value: high
+- infrastructure_value: low_medium
+- infrastructure_value: medium
+- infrastructure_value: standard
+- infrastructure_value: ultra_high
+- infrastructure_value_rank
+- infrastructure_weighted
+- inside infrastructure management flows.
+- institution, market, organization, infrastructure systems
+- intellectual_property_infrastructure
+- internet_infrastructure
+- investment → industry → infrastructure
+- invoke infrastructure maintenance runtime
+- ip_infrastructure
+- justified by military industry, logistics, ports, training zones, and defense infrastructure
+- knowledge_economy_infrastructure
+- labor_infrastructure
+- labor_relations_infrastructure
+- lay_infrastructure
+- layer: 110.infrastructure
+- layer: infrastructure
+- licensed private infrastructure options appear only where governance allows
+- licensed_private_infrastructure_operator
+- likely_infrastructure_operator_mix
+- line_infrastructure_candidates
+- linked education / manufacturing / infrastructure / support-facility surface
+- linked infrastructure
+- linked infrastructure dependency visibility
+- linked infrastructure identity
+- linked logistics / supply / infrastructure / company surface
+- linked retail / manufacturing / agriculture / infrastructure surface
+- local_infrastructure
+- logistics and storage infrastructure
+- logistics infrastructure sparse
+- lower infrastructure-state truth
+- maintenance and infrastructure condition
+- marine_infrastructure
+- market_infrastructure
+- may connect to infrastructure systems,
+- mayor -> city_scope_infrastructure_action
+- media_infrastructure
+- mining_infrastructure
+- minister -> strategic_ministry_infrastructure_action
+- mountain and water infrastructure resilience
+- movement is often constrained by reliability, safety, and uneven infrastructure
+- must make infrastructure governance visible
+- must map to one primary infrastructure category.
+- nation infrastructure state
+- nation securities / market infrastructure
+- nation_draft_infrastructure_placement_id
+- new infrastructure expansion
+- node_infrastructure_candidates
+- not for bypassing infrastructure governance.
+- ocean_trade_infrastructure
+- ongoing infrastructure operation
+- open_congestion_and_infrastructure_burden
+- open_infrastructure_coverage_and_region
+- open_infrastructure_failure_propagation
+- open_infrastructure_issue
+- open_infrastructure_lifecycle
+- open_infrastructure_lifecycle_history
+- open_infrastructure_manage
+- open_infrastructure_outage_and_restoration
+- open_infrastructure_reflection
+- open_infrastructure_system_operations
+- opening/company/market/infrastructure notifications must be routed
+- or infrastructure impact
+- or lower infrastructure-state truth.
+- payment_infrastructure
+- placeable infrastructure candidates
+- placeable_infrastructure_high_priority_enum_groups
+- platform_economy_infrastructure
+- platform_infrastructure
+- prefectural_governor -> prefectural_scope_infrastructure_action
+- preferred infrastructure absence may soft warn placement
+- preserve infrastructure traceability
+- private_infrastructure_permission_type
+- property-management or infrastructure layers,
+- public infrastructure placement requires city-scope, nation-scope, or delegated system-scope authority
+- public infrastructure spending
+- public road and rail placement requires explicit infrastructure authority
+- public_infrastructure
+- pure infrastructure-control UI
+- rail and public infrastructure employers carry formal annual rhythm
+- rail lines are placed as rail infrastructure on the field map
+- rail should feel like national infrastructure, not just transport business
+- railway -> infrastructure
+- railway_infrastructure
+- reconfigure_infrastructure
+- region -> infrastructure
+- regional_governor -> regional_scope_infrastructure_action
+- regional_infrastructure
+- relation between infrastructure truth and linked logistics / manufacturing / civic truth
+- relation between logistics truth and linked infrastructure truth
+- relation between manufacturing truth and linked maintenance or infrastructure truth
+- relation between research truth and linked education / manufacturing / infrastructure truth
+- remote_island_district may increase infrastructure-linked delay
+- required facility / infrastructure bundles resolved if nation profile requires them
+- required for infrastructure action.
+- required infrastructure absence may hard block placement
+- required infrastructure connection is unresolved
+- research_infrastructure
+- resource_economy_infrastructure
+- resource_infrastructure
+- roads are placed as linear infrastructure on the field map
+- rural -> infrastructure
+- rural_infrastructure
+- scholar_bureaucratic_and_infrastructure_governance
+- scientific_infrastructure
+- scope: civilization.security.infrastructure
+- scope: infrastructure-and-utility-ui
+- scope: infrastructure-lifecycle-and-failure
+- scope: infrastructure-lifecycle-and-failure-ui
+- scope: infrastructure-management-entry-ui
+- scope: infrastructure-placement-and-governance
+- scope: infrastructure-seed
+- scope: infrastructure-system-operations
+- scope: infrastructure-system-operations-ui
+- scope: military-and-infrastructure-ui-integration
+- scope: placeable-infrastructure-enum-master
+- seat_code: infrastructure_administration
+- seat_name: Minister of Infrastructure
+- seat_scope: infrastructure
+- section_id: infrastructure_automation_section
+- section_id: infrastructure_coverage_and_region_section
+- section_id: infrastructure_dependency_and_linkage_section
+- section_id: infrastructure_issue_section
+- section_id: infrastructure_kpi_section
+- section_id: infrastructure_maintenance_and_condition_section
+- section_id: infrastructure_outage_and_restoration_section
+- section_id: infrastructure_staffing_and_control_section
+- section_id: infrastructure_summary_card
+- section_id: infrastructure_supply_and_capacity_section
+- security-first communications infrastructure
+- security_infrastructure
+- seiwa rail infrastructure is a civilization-wide strategic export and a domestic integration backbone
+- ship and ferry are core everyday life infrastructure
+- shipping_infrastructure
+- source infrastructure orientation.
+- space_infrastructure
+- sport_infrastructure
+- sports_infrastructure
+- standards_infrastructure
+- state or infrastructure burden where relevant
+- stock_infrastructure
+- strategic infrastructure
+- strategic_infrastructure
+- strategic_infrastructure_flag
+- strategic_infrastructure_flag_enum
+- strategic_infrastructure_flag_selector
+- strategic_infrastructure_operator
+- strategic_infrastructure_priority
+- strategic_infrastructure_relief
+- strong capital and infrastructure improve recovery speed
+- strong infrastructure-linked land value
+- strong institutions and orderly infrastructure reduce disorder and routine accident exposure
+- strong telecom and data infrastructure
+- stronger infrastructure expansion bias
+- strongest listing and business infrastructure
+- system infrastructure authority
+- system-only infrastructure confirmation
+- system-only infrastructure placement
+- system-only infrastructure placement UI
+- tapping an authority facility may open infrastructure management home
+- technology_infrastructure
+- telecom_infrastructure
+- that normally owns or manages the infrastructure.
+- the infrastructure placement flow.
+- the infrastructure_and_utility family.
+- the military and infrastructure posture
+- through dedicated infrastructure authority facilities.
+- time discipline, infrastructure truth,
+- to execute infrastructure placement.
+- to infrastructure behavior
+- to infrastructure continuity.
+- to which the infrastructure belongs.
+- to_infrastructure_ref
+- tourism_infrastructure
+- trade_infrastructure
+- transport -> infrastructure
+- transport and logistics infrastructure
+- transport infrastructure
+- transport_and_infrastructure
+- transport_authority_facility -> strategic_infrastructure_entry
+- transport_infrastructure
+- urban -> infrastructure
+- urban density and infrastructure quality
+- urban_infrastructure
+- utility infrastructure
+- utility or infrastructure connection fee where applicable
+- vehicle_infrastructure
+- water_infrastructure
+- weak AI-dependent infrastructure posture
+- welfare and infrastructure balance
+- welfare_infrastructure
+- what kind of infrastructure service exists.
+- when infrastructure routing is selected.
+- when nation design explicitly includes infrastructure placement.
+- where infrastructure-service truth dominates
+- workforce_profile_summary: logistics, infrastructure, order maintenance, and strategic operations
+- xx facility / infrastructure
+- zoning and infrastructure view
+- × InfrastructureFactor(a,t)
+- 二宮青峰中央鉄道
+- 二宮青峰中央鉄道本社
+- 成和中央電力局
+- 成和鉄道監理庁
+- 成和鉄道防護指令所
+- 東部開発電力供給所
+- 鉄央鉄道技術学院
+- 鉄央鉄道技術研究所
+- 鉄央鉄道職員健康館
+- 鉄央鉄道資格認定所
+- 鉄央鉄道車両整備区
+- 鉄道技術文化館
+- 鉄道文明来訪センター
+- 鉄道文明記念館

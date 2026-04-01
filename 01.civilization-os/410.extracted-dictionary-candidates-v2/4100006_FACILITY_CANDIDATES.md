@@ -1,0 +1,2102 @@
+# ============================================================
+# FACILITY CANDIDATES
+# ============================================================
+
+status: candidate
+source: 000_CIVILIZATION_OS_FULL_INTEGRATED.md
+prepared_by: Zero
+method: headings_and_bullets_only
+exclude: フォトン / Photon / PHOTON
+
+- 007_judicial
+- 016_military
+- 028_consumer_market
+- 035_capital_market
+- 036_stock_market
+- 037_bond_market
+- 038_fx_market
+- 039_derivatives_market
+- 06xx zoning / market tier
+- 093_housing
+- 1. COMMON SCHOOL EVENTS
+- 1. ENTRY FACILITY TYPES
+- 1. FACILITY TYPES
+- 1. MARKET FIELDS
+- 1. MARKETPLACE AND COMMERCE
+- 1. MARKETPLACE PRODUCT TYPES
+- 1. MARKETPLACE-RELEVANT GLOBAL MENU ITEMS
+- 1. MILITARY ACTIONS
+- 1. NATION MARKETPLACE ENTRY SURFACES
+- 1. SCHOOL LEVELS
+- 1. SYSTEM COMPANY FACILITY TYPES
+- 1. USER COMPANY FACILITY TYPES
+- 1. VIEW-ONLY FACILITY TYPES
+- 10-6. 06xx zoning / market tier
+- 10. FACILITY TYPE MASTER ALIGNMENT
+- 10. HOSPITAL IDENTITY AND CARE-ROLE SURFACE
+- 10. NATION MARKET CONNECTION
+- 10. SCHOOL IDENTITY AND INSTITUTION SURFACE
+- 101_hospitality
+- 14. MARKET AND INFORMATION-BOARD SURFACE
+- 15. MARKET BUNDLE
+- 16. HOUSING POSITION RULE
+- 17. MARKETPLACE FUNCTION
+- 19. MARKET TIER EDITOR UI ITEMS
+- 2. DIRECT ENTRY FACILITY TYPES
+- 2. FINANCE AND MARKET
+- 2. HOUSING BALANCE RULE
+- 2. HOUSING DIMENSIONS
+- 2. MARKET TIER EDITOR FLOW
+- 2. MARKET TIER EDITOR UI TABLE
+- 2. MARKET TIER PRINCIPLE
+- 2. MARKETPLACE AND COMMERCE
+- 2. SCHOOL OPERATOR TYPES
+- 21. MILITARY / SECURITY / LOGISTICS RELATION
+- 21. SECURITY / GOVERNMENT / MILITARY RELATION
+- 22. HOSPITAL / WELFARE / CIVIC RELATION
+- 22. SCHOOL / RESIDENCE / TRAINING RELATION
+- 3. FINANCE AND MARKET
+- 3. MARKET / RATING / MACRO RELATION
+- 3. MARKET CONTROL PRINCIPLE
+- 3. MARKET TIER EDITOR RULE
+- 3. MARKET TIERS
+- 3. MARKETPLACE CORE REUSE RULE
+- 3. SCHOOL AND QUALIFICATION SEPARATION
+- 30. MARKETPLACE ROUTE INTERPRETATION
+- 392 MARKETPLACE ROUTING INTEGRATED
+- 4-1. standard market execution
+- 4. FACILITY TYPES USING OVERVIEW-FIRST
+- 4. GLADIA MILITARY ALLIANCE
+- 4. HOSPITAL SERVICE TRUTH
+- 4. MILITARY SERVICE TRUTH
+- 4. SCHOOL SERVICE TRUTH
+- 4. SUPPORTED HOUSING TYPES
+- 5-5. market defaults
+- 5. GLADIA MILITARY ALLIANCE
+- 5. HOSPITAL SUMMARY CARD
+- 5. MILITARY SUMMARY CARD
+- 5. SCHOOL SUMMARY CARD
+- 5. STATE MARKET BELT
+- 6. HOSPITAL UI LIFECYCLE
+- 6. HOUSING UI LIFECYCLE
+- 6. MARKET DEFAULTS
+- 6. MARKET TRANSFER
+- 6. MARKETPLACE CONTRACT
+- 6. MILITARY UI LIFECYCLE
+- 6. SCHOOL UI LIFECYCLE
+- 6. TARGET MARKET CANDIDATES
+- 7-3. military_nation_template
+- 7. COMPANY AND HOUSING
+- 7. HOSPITAL UI MODES
+- 7. LIVE-EVENT MARKETPLACE RULE
+- 7. MARKETABILITY ADJUSTMENT
+- 7. MILITARY UI MODES
+- 7. RELATION TO EXISTING AGRICULTURE / MARKET / DEATH DESIGN
+- 7. SCHOOL UI MODES
+- 8. COMPANY AND HOUSING
+- 8. FACILITY-LOCAL MARKETPLACE RULE
+- 8. HOSPITAL COMMON SURFACES
+- 8. MARKETPLACE RULE
+- 8. MILITARY COMMON SURFACES
+- 8. SCHOOL COMMON SURFACES
+- 9. HOSPITAL SUMMARY SURFACE
+- 9. HOUSING VS COMMERCIAL VS STRATEGIC PROPERTY
+- 9. MARKET AND INFORMATION TAB
+- 9. MILITARY SUMMARY SURFACE
+- 9. SCHOOL SUMMARY SURFACE
+- > Marketplace payment success state
+- > auto military operation
+- > auto military operation where supported
+- > buyer Marketplace visibility
+- > capital_market
+- > choose facility type
+- > consumer_market
+- > continued hospital operation
+- > continued military operation
+- > continued school operation
+- > create/edit market tiers
+- > facility manage / issue / history / permission / linked facility
+- > facility overview
+- > facility type selection
+- > information or market surface setup where applicable
+- > judicial
+- > listing readiness checked against target market tier
+- > market / tender / offering / action settles
+- > market tiers defined
+- > military
+- > military and diplomacy weighting
+- > ongoing military operation
+- > ongoing school operation
+- > open market tier editor
+- > school identity and scope setup
+- AI industrial school legacy
+- APP MARKET
+- ASSET MARKET
+- App Market
+- Asset Market
+- Aurelia Believer Housing Bureau
+- Aurelia Orthodoxy School
+- Aurelia Orthodoxy School Board
+- Aurelia Sacred Hospital
+- Aurelia Sacred Market
+- Aurelia Sacred Market Authority
+- BOND MARKET DOMAIN
+- Bad Drunk Night Market
+- Barracks Family Housing Bureau
+- Black Harbor Military Dock
+- BusinessOS market-app connection port
+- CAPITAL MARKET DOMAIN
+- CIVILIZATION JUDICIAL CASE RUNTIME
+- CIVILIZATION JUDICIAL FLOW
+- CIVILIZATION JUDICIAL OPERATION
+- CIVILIZATION JUDICIAL POLICY
+- CIVILIZATION MARKET EXECUTION RUNTIME
+- CIVILIZATION MARKET FLOW
+- CIVILIZATION MARKET OPERATION
+- CIVILIZATION MARKET ORDER RUNTIME
+- CIVILIZATION MARKET POLICY
+- CIVILIZATION MILITARY COMPLIANCE FLOW
+- CIVILIZATION MILITARY COMPLIANCE OPERATION
+- CIVILIZATION MILITARY COMPLIANCE POLICY
+- CIVILIZATION MILITARY COMPLIANCE RUNTIME
+- CIVILIZATION MILITARY LOGISTICS FLOW
+- CIVILIZATION MILITARY LOGISTICS OPERATION
+- CIVILIZATION MILITARY LOGISTICS POLICY
+- CIVILIZATION MILITARY LOGISTICS RUNTIME
+- COMMERCIAL MARKET TIER EDITOR SAMPLE
+- COMPANY_MARKET_TIER_READINESS_CHECK
+- COMPANY_MARKET_TIER_STATUS
+- CONSUMER MARKET DOMAIN
+- CULTURE MARKET TIER EDITOR SAMPLE
+- Center Business School
+- Center Central Market
+- Center Commercial General Hospital
+- Center Market Arbitration Hall
+- Center Market Exchange
+- Central Market Authority
+- Civilization Global Marketplace Layer
+- Civilization Marketplace ordinary goods sales
+- Civilization Marketplace ordinary physical goods
+- Concordia Service Market
+- Controlled Family Housing Office
+- Controlled Housing Management Office
+- DERIVATIVES MARKET DOMAIN
+- DOMAIN 0007 judicial
+- DOMAIN 0016 military
+- DOMAIN 0028 consumer_market
+- DOMAIN 0035 capital_market
+- DOMAIN 0036 stock_market
+- DOMAIN 0037 bond_market
+- DOMAIN 0038 fx_market
+- DOMAIN 0039 derivatives_market
+- DOMAIN 0093 housing
+- DOMAIN 0101 hospitality
+- Doctrinal Housing Mediation Bureau
+- EDUCATION MARKET TIER EDITOR SAMPLE
+- East Logistics Military Supply Complex
+- East Port Military Supply
+- East Port Military Terminal
+- Elewa Fish Market
+- Elewa Fish Market Square
+- Elewa Fisheries School
+- Executive Housing Sales Tower
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/010.constitution/0100021_MARKETPLACE_CONSTITUTION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/100.civil-sectors/0400600_CIVILIZATION_MARKET_ORDER_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/100.civil-sectors/0400601_CIVILIZATION_MARKET_EXECUTION_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/110.state-power/0400700_CIVILIZATION_JUDICIAL_CASE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/140.marketplace-platform/0401400_MARKETPLACE_SELLER_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/140.marketplace-platform/0401401_MARKETPLACE_GAME_LISTING_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/141.marketplace-transfer/0401410_MARKETPLACE_TRANSFER_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/310.capital-markets/0402700_CIVILIZATION_CAPITAL_INSTRUMENT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/310.capital-markets/0402701_CIVILIZATION_INVESTMENT_ROUND_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/310.capital-markets/0402702_CIVILIZATION_DISTRIBUTION_SETTLEMENT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/400.military-operations/0403600_CIVILIZATION_DEPLOYMENT_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/400.military-operations/0403601_CIVILIZATION_MILITARY_LOGISTICS_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/400.military-operations/0403602_CIVILIZATION_MILITARY_COMPLIANCE_RUNTIME.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/100.civil-sectors/0500600_CIVILIZATION_MARKET_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/110.state-power/0500700_CIVILIZATION_JUDICIAL_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/140.marketplace-platform/0501400_MARKETPLACE_SELLER_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/140.marketplace-platform/0501401_MARKETPLACE_GAME_LISTING_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/141.marketplace-transfer/0501410_MARKETPLACE_TRANSFER_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/310.capital-markets/0502700_CIVILIZATION_CAPITAL_INSTRUMENT_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/310.capital-markets/0502701_CIVILIZATION_FUNDRAISING_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/310.capital-markets/0502702_CIVILIZATION_PAYOUT_EXIT_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/400.military-operations/0503600_CIVILIZATION_DEPLOYMENT_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/400.military-operations/0503601_CIVILIZATION_MILITARY_LOGISTICS_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/400.military-operations/0503602_CIVILIZATION_MILITARY_COMPLIANCE_FLOW.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/100.civil-sectors/0700600_CIVILIZATION_MARKET_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/110.state-power/0700700_CIVILIZATION_JUDICIAL_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/140.marketplace-platform/0701400_MARKETPLACE_SELLER_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/140.marketplace-platform/0701401_MARKETPLACE_GAME_LISTING_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/141.marketplace-transfer/0701410_MARKETPLACE_TRANSFER_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/310.capital-markets/0702700_CIVILIZATION_CAPITAL_INSTRUMENT_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/310.capital-markets/0702701_CIVILIZATION_FUNDRAISING_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/310.capital-markets/0702702_CIVILIZATION_PAYOUT_EXIT_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/400.military-operations/0703600_CIVILIZATION_DEPLOYMENT_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/400.military-operations/0703601_CIVILIZATION_MILITARY_LOGISTICS_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/400.military-operations/0703602_CIVILIZATION_MILITARY_COMPLIANCE_OPERATION.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/007.economy/0800070002_MARKET_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/100.civil-sectors/0800600_CIVILIZATION_MARKET_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/110.state-power/0800700_CIVILIZATION_JUDICIAL_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/140.marketplace-platform/0801400_MARKETPLACE_SELLER_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/140.marketplace-platform/0801401_MARKETPLACE_GAME_LISTING_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/141.marketplace-transfer/0801410_MARKETPLACE_TRANSFER_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/310.capital-markets/0802700_CIVILIZATION_CAPITAL_INSTRUMENT_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/310.capital-markets/0802701_CIVILIZATION_FUNDRAISING_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/310.capital-markets/0802702_CIVILIZATION_PAYOUT_EXIT_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/372.digital-marketplace/3720801_MARKETPLACE_PREFERRED_FEE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/400.military-operations/0803600_CIVILIZATION_DEPLOYMENT_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/400.military-operations/0803601_CIVILIZATION_MILITARY_LOGISTICS_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/400.military-operations/0803602_CIVILIZATION_MILITARY_COMPLIANCE_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/392_MARKETPLACE_ROUTING_INTEGRATED.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/040.policy.pre_refactor_20260320_083912/045.education/010_SCHOOL_POLICY.md
+- FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/999.archive/pre_refactor/040.policy.pre_refactor_20260320_083912/050.economy/020_MARKET_POLICY.md
+- FPR-007 military_scope_required
+- FX MARKET DOMAIN
+- FX market
+- Facility Overview
+- Facility Overview must summarize intake, bed pressure, staff burden, and alerts together
+- Federal Market Compliance Office
+- First Port Military Authority
+- First Port Military Hospital
+- Fort Axis Command School
+- Freedal Harbor Fish Market
+- Freedal Harbor Market
+- Freedal Port School
+- Gladia = strategic/military premium
+- Grand Exchange Market
+- Grand Market Week
+- HOSPITALITY DOMAIN
+- HOUSING BUILDER RULE MASTER
+- HOUSING DOMAIN
+- HOUSING VALIDATION POLICY
+- HYBRID MARKET TIER EDITOR SAMPLE
+- Halberg Market House
+- Helios-prefixed hospitals and clinics
+- Housing
+- Island Market Union
+- Ivanov Doctrine School
+- JUDICIAL DOMAIN
+- Kara Coastal Arts School
+- Kara Harbor Housing Office
+- Kara Harbor Market
+- Laurent Open Market
+- Liberta Civic Hospital
+- Liberta Civic Housing House
+- Liberta Civic School
+- Liberta Open Market
+- MARKET OPENNESS TYPE ENUM MASTER
+- MARKET POLICY
+- MARKET PRESET INDEX
+- MARKET ROLE TYPE ENUM MASTER
+- MARKET TIER EDITOR SAMPLE INDEX
+- MARKETPLACE
+- MARKETPLACE CONSTITUTION
+- MARKETPLACE GAME LISTING FLOW
+- MARKETPLACE GAME LISTING OPERATION
+- MARKETPLACE GAME LISTING POLICY
+- MARKETPLACE GAME LISTING RUNTIME
+- MARKETPLACE PREFERRED FEE POLICY
+- MARKETPLACE SELLER FLOW
+- MARKETPLACE SELLER OPERATION
+- MARKETPLACE SELLER POLICY
+- MARKETPLACE SELLER RUNTIME
+- MARKETPLACE TRANSFER FLOW
+- MARKETPLACE TRANSFER OPERATION
+- MARKETPLACE TRANSFER POLICY
+- MARKETPLACE TRANSFER RUNTIME
+- MILITARY
+- MILITARY DOMAIN
+- MILITARY INITIAL NATION DRAFT SAMPLE
+- MILITARY MARKET TIER EDITOR SAMPLE
+- MILITARY PLACEMENT SAMPLE
+- MILITARY SERVICE MODE ENUM MASTER
+- MILITARY SUPPLY RELATION TYPE ENUM MASTER
+- MILITARY ZONE MAP SAMPLE
+- Market Arbitration Hall
+- Market Hill Ventures
+- Market Opening Day
+- Market and Shipment
+- Market and Shipment must expose freshness-versus-price tradeoff
+- Marketplace
+- Marketplace administration
+- Marketplace core browsing
+- Marketplace core browsing flow
+- Marketplace exposure scope
+- Marketplace item truth
+- Marketplace operations admin
+- Marketplace participation
+- Marketplace payment
+- Marketplace sale
+- Marketplace sale posture
+- Marketplace seller entry where supported
+- Marketplace settlement visibility
+- Marketplace transaction truth
+- Marketplace where applicable
+- Marketplace-related lower-layer documents
+- Marketplace-target item where supported
+- Military Asset Coverage Office
+- Military Assisted Life Bureau
+- Military Family Ceremony House
+- Military Family Child Support Office
+- Military Family Registry Bureau
+- Military Family Registry Hall
+- Military Household Formation Hall
+- Military Household Support Bureau
+- Military Senior Care House
+- Military Service Museum
+- Military and Security
+- Military and Security: armed force, policing, conscription, support posture
+- Moja Coastal Hospital
+- Moja Coastal Housing House
+- Moja Island Market
+- Moja Maritime School
+- Moja Music School
+- Moja Painting School
+- NATION_MARKET_TIER
+- NATION_MARKET_TIER_RULE
+- Nation Marketplace Entry
+- Nation Marketplace Policy Layer
+- North Port Trade Market
+- Open Market Day
+- Opena Free Market Visitor Center
+- Opena Market Administration House
+- Opena Market Care Center
+- Opena Market Dispute Room
+- Opena Market Dock
+- Opena Market Learning House
+- Opena Market Pantry Hall
+- Opena Market Square
+- Opena Market Stage
+- Orpheus is not a fortress military state
+- PAR-005 insufficient_military_support
+- PRODUCT MARKET
+- Political Juvenile Doctrinal Reformation School
+- Product Market
+- RELIGION MARKET TIER EDITOR SAMPLE
+- SCHOOL POLICY
+- STOCK MARKET DOMAIN
+- SUPPLEMENT A. MARKETPLACE ENTRY RULE
+- SUPPLEMENT A. REAL-ESTATE-DESIGN MARKETPLACE RULE
+- SUPPLEMENT B. MARKETPLACE SELLER VISIBILITY RULE
+- SUPPLEMENT B. MARKETPLACE-ONLY DESIGN SALE POSITION
+- Sacred Housing Bureau
+- Salima Brew Market
+- Salt Harbor Market Guild
+- School Overview
+- School Overview must summarize performance, staffing, support risk, and events together
+- Soldier Housing Mediation Bureau
+- South Armor Field Hospital
+- South Gate Commerce Market
+- Sovoda Workshop Market
+- State Provision Market
+- Tenant Marketplace Entry
+- Third Base Military Detention Hall
+- Third Base Military Hospital
+- Third Base Military Rail Yard
+- Third Base Military Tribunal
+- Third Base Supply Market
+- Tuba Dance School
+- Tuba Ritual Market
+- View-Only Market and Board Facilities
+- White Home Doctrine School
+- Ye Salima Brewing School
+- a facility overview
+- a market section
+- academic_schools
+- academic_support_schools
+- academy, institute, business school, corporate training tone
+- account / product / market / approval surface composition
+- active school-life issues
+- additive to existing market assets
+- administrative_school
+- administrative_school_when_exam_based
+- advanced_technical_schools
+- agricultural_schools
+- agriculture, logistics, and market visibility
+- ai_robot must not hold judicial human-only office
+- all military states always seize all strategic land
+- armor_worker_hospitals
+- arms_worker_housing
+- art_school
+- arts_school_operation
+- asset access is strongly market-mediated
+- assign_personnel -> military_scope
+- at least one school-compatible site type must exist
+- authority facility overview
+- autonomous coastal or market clusters
+- bad_drunk: old_market_and_heavy_commerce_city / nightlife_commercial_city / bar_and_tavern_district_core
+- bargaining_visibility_tendency modifies market-interaction events
+- base_commander -> military_surface
+- believer housing
+- believer_housing_legacy
+- boarding-school context where education truth dominates
+- boarding_school
+- bond market
+- bond market domain concepts
+- bond market remains valid as instrument domain
+- bond_market
+- brewing and hospitality districts
+- broad market access with clear maturity ladder
+- broad public-school naming is acceptable
+- budget_and_market_law_power_high
+- business school
+- business, commerce, economics, sales, negotiation, and market skill routes dominate
+- business, profits, markets, hiring, and performance are the center of institutional events
+- buyer Marketplace UI
+- buyer-side Marketplace UI
+- calendar effects on schools, labor, public facilities, and markets
+- campus and school-life coordination
+- cannot rewrite_judicial_structure_base
+- catch_target_and_market_context_checked
+- category: market_tier
+- ceasefire or evidence basis unresolved
+- ceasefire, ROE, and evidence basis must remain explicit
+- ceasefire_monitoring_id
+- ceasefire_offer
+- center_commercial_city: market_and_finance_anchor
+- central and port warehousing
+- central emergency hospitals
+- central hospital
+- central market districts
+- central market storage
+- central military stock depots
+- central warehousing
+- central_hospitals
+- central_market_access_roads
+- central_school_complex
+- centralized_military_security_command
+- certified_military_supplier
+- checks housing, income, family support, and vulnerability conditions
+- childbirth timing is strongly affected by housing cost and work style
+- childhood is highly sensitive to income, housing density, and family work style
+- citizen_schools
+- city and school autonomy create strong variation
+- city center placement should connect naturally with housing, civic, and transport structure
+- city-level assignment of public spaces and market facilities
+- city-specific civic, market, guild, debate, and music events
+- civic and market emergency support
+- civic gatherings, debate, port leisure, guild culture, music, and markets all matter
+- civic hospitals, merchant-funded hospitals, local clinics, and port emergency systems may diverge heavily
+- civic, city-name, market, port, mediation-oriented naming
+- civic-market hybrid
+- civic_and_market_split_districts
+- civic_markets
+- civic_mixed_housing_belt
+- civic_school_board
+- civic_schools
+- civilization may expose a business connection port for external market-related apps
+- civilization-global marketplace entry
+- civilization-wide central market
+- civilization-wide marketplace core
+- civilization_central_market
+- civilization_global_market_home
+- civilization_marketplace
+- civilization_marketplace_app_sale_where_allowed
+- civilization_marketplace_asset_sale
+- civilization_marketplace_physical_goods
+- civilization_marketplace_product_sale
+- class and inherited property strongly affect marriage and housing timing
+- class-layered access and school quality differences must remain expressible
+- class-sensitive marriage and housing timing
+- class_bands influence school access quality and branching outcomes
+- class_mobility_gap_tendency modifies unequal access to work, school, leisure, and safety events
+- cleanliness_expectation_tendency modifies school, workplace, and hospitality judgment events
+- clearly separable from Marketplace or governance-only truth
+- clearly separable from government or military-only truth
+- clearly separable from market or famine-only truth
+- clearly separable from residence-only or Marketplace-only truth
+- clearly separable from retail or hospital-only truth
+- clearly separated from government-only or military-only truth
+- closed_command_market
+- coastal housing high
+- coastal_hospitals
+- coastal_markets
+- coastal_schools
+- coastal_worker_housing
+- coding_school
+- command + arsenal + military logistics
+- command military roads
+- command, veteran, and military-industrial layers are visible
+- commercial-support school
+- commercial_support_schools
+- commoner_ring_compulsory_school
+- company market-tier readiness
+- company, housing, and facility entry
+- company, housing, facility, and construction entry
+- company-filtered Marketplace
+- company-filtered Marketplace entry
+- company_and_housing
+- company_market_role_entry
+- company_market_tier_readiness_check_id
+- company_market_tier_status_id
+- compatible facility types must be explicit
+- compatible with Marketplace and economy systems
+- compatible with lower existing market assets
+- compatible with shared Marketplace core
+- competition_tendency modifies school, hiring, and status rivalry events
+- compulsory school belt
+- compulsory service must remain visible as a major labor-market institution
+- compulsory_school_operation
+- configure_conscription -> nation_scope_or_military_scope
+- conscription and mobilization require elevated nation or military authority
+- conscripts may be deployed in real military operations only in rear-support roles
+- constrained by strategy, military, safety, or strong public rule
+- controlled believer housing legacy
+- controlled family housing + barracks support housing
+- controlled markets
+- controlled residential and schooling belts
+- controlled residential support housing
+- controlled support housing
+- controlled_worker_housing
+- council and market access routes
+- counterfeit_risk_tolerance_tendency modifies fraud and low-trust market events
+- craft_markets
+- cram_school_facility
+- create_market_tier
+- creating/editing market tiers
+- creator_owned_housing_facility
+- creator_owned_housing_facility -> housing_overview_service
+- creator_owned_housing_facility -> housing_overview_ui
+- creator_owned_housing_facility -> mixed_allowed
+- criminal_or_police_state
+- crisis cascades rapidly because labor, housing, and state continuity are unstable
+- cross-market-aware
+- cultural and coastal cities: mixed residential + tourism-linked housing
+- culture-market circulation paths
+- current runtime stable schooling: degraded
+- daily_school_loop
+- dance_and_music_school_support
+- decorated military ascent is primary
+- dedicated market terminal app may be separately developed
+- dedicated market terminal app remains separately developable on Business schema
+- default market structure assumptions
+- default_market_tiers
+- defense_hospitals
+- defense_minister -> military_command_route
+- defense_minister -> military_surface
+- define infrastructure and market flavor
+- define military emphasis
+- define_zoning_and_military
+- degraded current warehousing
+- degraded_historical_hospitals
+- degraded_worker_housing
+- deliberation + trade + mixed-use civic housing
+- democratic, social, military, imperial, and hybrid regimes are all possible
+- democratization added compulsory schools for outer districts
+- democratization-era outer compulsory school additions only
+- dense urban fire and medical response
+- dense urban medical and fire coverage
+- dense_young_worker_housing
+- depends on market
+- detached marginal households may still face crowded or rigid housing conditions
+- development is quickly linked to school readiness and future skill paths
+- different_core_purchase_logic_for_same_marketplace_type
+- difficult to compare in free-market terms
+- digital-only marketplace scope
+- direct sale / marketplace settings
+- discipline-heavy school ceremonies and training demonstrations are stronger
+- disclosure may be lighter than commerce-heavy markets
+- disclosure requirement may be lighter than strict public market
+- distinct from legislative and judicial progression
+- distinction between military training and civilian sport if relevant
+- distributed to supporting military-industrial belts,
+- district inequality and market access differences should still be expressible
+- district market distribution
+- district_market_supply
+- dockworker_housing
+- dockworker_support_housing
+- doctrinal and military projection zoning
+- doctrinal or ritual schooling if applicable
+- doctrinal school linkage
+- doctrinal schooling: historical_very_high
+- doctrinal_schooling_zone
+- doctrine filtering, instability, and fragile schooling conditions should be expressible
+- doctrine_filtered_school_operation
+- dormitory linkage where school truth dominates
+- draft market-tier edit validity
+- duplicate market rank prohibited
+- each school defines its own admission policy
+- east_logistics_city: military_logistics_anchor
+- eastern_military_support_city
+- economic and market play
+- economic_and_market_play
+- economy and market control
+- economy and market systems
+- education/military/welfare baseline
+- education_and_school
+- education_cost_burden_tendency influences school continuation pressure and branch limitation
+- elementary_school
+- elite and upper-track schools should diverge strongly from outer-district schools
+- elite business schools
+- elite inner housing + outer worker housing
+- elite schools: high
+- elite_business_schools
+- elite_housing_bias
+- elite_school_operation
+- elite_school_route
+- emergency_hospital
+- emergency_hospital_operation
+- employer_or_school_return_need
+- enabled_housing_type_set
+- enabled_housing_types
+- enterprise and market-linked storage
+- entitlement is marketplace-native
+- entrance exam may be required or not required per school
+- event-filtered Marketplace
+- event-filtered Marketplace entry
+- event-linked Marketplace entry
+- exchange_listed_market_actor
+- executive housing
+- executive luxury housing concentrated south of ASIC
+- existing bond-market domain existence
+- expanded support cities for population, housing,
+- expose facility-origin market visibility state
+- expose market data to external market terminal applications
+- expose nation and company market context
+- extraction_worker_housing_support
+- facility manage
+- facility manager UI
+- facility overview
+- facility overview where relevant
+- facility tap -> facility overview
+- facility type
+- facility type compatibility
+- facility type is unresolved
+- facility type master
+- facility type master alignment
+- facility type master related documents
+- facility-filtered Marketplace
+- facility-filtered Marketplace entry
+- facility-local Marketplace entry
+- facility-scoped Marketplace orders
+- facility_opened may be history and album_candidate depending on facility type
+- family and school norms strongly shape appearance
+- family hospital
+- family housing + student housing + orderly mixed-use
+- family housing high
+- family outing, school-related leisure, and seasonal local events are strong
+- family-heavy, school-heavy, rail-linked stable society
+- family_hospitals
+- family_housing
+- family_housing_support
+- family_schools
+- federal_market_core
+- field_map_housing_lot_tap -> housing_overview_or_use
+- field_map_market_facility_entry
+- filtered Marketplace
+- filtered Marketplace entry
+- finance_and_market
+- finance_center_open_market
+- fire and rescue
+- fire and rescue organizations
+- fire and rescue visibility
+- fire_rescue_summary_section
+- fire_risk_tendency
+- fire_risk_tendency influences housing loss and commercial interruption events
+- firearms
+- firearms_legacy_presence_historical
+- firefighter_training_facility
+- firefighting and rescue visibility
+- firefighting_and_rescue_tab
+- first_port_base: western_military_port
+- fisher_family_housing
+- flood or fire spread
+- food_market_dependency
+- formal_title_importance_tendency modifies office, school, and ceremony dialogue structure
+- fourth_port_base: eastern_military_port
+- fragmented post-collapse housing
+- fragmented_post_collapse_housing_belt
+- fresh_market_value
+- fx_market
+- general districts retain compulsory school structure
+- general hospital baseline
+- general schools: medium
+- general schools: medium_high
+- general_hospital
+- general_hospital_operation
+- general_schools
+- general_staff_member -> military_surface
+- gladia_military_alliance
+- gladia_military_alliance: 150,000,000
+- global Marketplace
+- global Marketplace entry
+- global market center
+- global marketplace rules
+- global_market_home
+- global_market_view
+- global_marketplace_home
+- governance_type: military_state
+- graduate_school
+- graph and market boards should feel competitive and performance-heavy
+- growth-oriented market style
+- growth_market
+- guest_space_importance_tendency modifies hospitality and ceremonial visit events
+- guild retail, port retail, civic market retail, and small-shop retail may all diverge heavily
+- guild, port, civic, workshop, and market-oriented work views may diverge heavily
+- guild, port, workshop, civic, and market styles coexist
+- guild-linked, civic, port, and workshop-oriented schooling may diverge heavily
+- hair_control_strength_tendency modifies school and workplace conformity events
+- harbor_housing_support
+- hardened military utility systems
+- heavy_industry_support_hospitals
+- high-end and mass-market event skins should diverge clearly
+- high-rise residential + luxury housing + dense rental
+- high_school
+- higher housing development potential
+- highest finance and market premium
+- holiday_bundle.market_holiday_interaction_profile
+- homes are organized for daily routine, storage, schooling, and family continuity
+- hospital
+- hospital UI
+- hospital UI structure
+- hospital and health-support visibility
+- hospital burden alerts
+- hospital burden visibility
+- hospital care load policy details
+- hospital identity and care-role surface
+- hospital load alone
+- hospital referral structures
+- hospital summary exposure
+- hospital summary surface
+- hospital systems
+- hospital triage details
+- hospital-specific surface composition
+- hospital_binding
+- hospital_capacity_warning_panel
+- hospital_issue_panel
+- hospital_kpi_strip
+- hospital_operation
+- hospital_recent_history_panel
+- hospital_status_strip
+- hospital_summary_card
+- hospital_supply_warning_panel
+- hospitality_service_delivered
+- hospitality_service_record
+- hospitalization-aware
+- hospitalization_event
+- hospitalized
+- hospitals should feel integrated into everyday civic life
+- hospitals: degraded
+- hospitals: high
+- hospitals: medium
+- household cost is shaped more by market structure than by simple tax level
+- housing
+- housing access
+- housing access is strongly tied to class position and family assets
+- housing acquisition is gradual and practical
+- housing and debt fragility
+- housing and occupancy
+- housing and population support
+- housing and property
+- housing and residence UI
+- housing burden posture
+- housing change
+- housing demand
+- housing distribution logic
+- housing exterior
+- housing exterior design
+- housing exterior design application
+- housing gap is one of the most visible internal differences
+- housing hierarchy
+- housing interior
+- housing interior design
+- housing interior/exterior design
+- housing is fragile and work continuity is weak
+- housing operation surface composition
+- housing placement
+- housing posture
+- housing sales naming posture
+- housing state
+- housing structure
+- housing subsidy
+- housing type balance
+- housing type compatibility
+- housing-target compatibility required
+- housing/mortgage credit
+- housing_and_block_layout
+- housing_and_living
+- housing_area_placement
+- housing_binding
+- housing_builder
+- housing_builder -> city_builder
+- housing_builder is launched from empty_lot build flow or manageable_housing_lot
+- housing_builder_rule_code
+- housing_class
+- housing_code
+- housing_compatibility_surface
+- housing_construction_event
+- housing_event
+- housing_exterior_design
+- housing_facility
+- housing_interior_design
+- housing_loan_start_event
+- housing_lot
+- housing_lot_tap -> open_housing_use_or_overview
+- housing_management_unit
+- housing_move_in_event
+- housing_or_agricultural_support_city: low_to_medium
+- housing_overview_service
+- housing_placement_rule
+- housing_policy
+- housing_priority
+- housing_purchase_event
+- housing_purchase_started
+- housing_record_id
+- housing_spatial_structure
+- housing_state_change
+- housing_status
+- housing_support_city_set
+- housing_type_bundle
+- housing_unit
+- housing_zone
+- how Marketplace contexts are filtered
+- how users enter Marketplace
+- human_only_judicial_office
+- hybrid market blends stability and access
+- hybrid market style
+- hybrid_market
+- ideological_school
+- ideological_school_legacy
+- ideological_schooling_complex
+- ideology schools
+- illegal/regulated real goods marketplace is not supported
+- illness, injury, loss of work, and housing collapse can cascade quickly
+- income_bands influence housing, marriage, and childbirth timing
+- increase_school_commuter_focus
+- industrial and market geography
+- industrial cities: mixed worker housing + medium apartment share
+- industrial support housing
+- industrial_hospitals
+- industrial_market_oriented
+- infrastructure and market indicators
+- infrastructure and market metric aggregation
+- infrastructure_and_market_metric_table
+- infrastructure_market_actor
+- initial market frame
+- initial_market_frame_summary
+- inner elite ring housing preserved
+- insecurity_sensitivity_tendency modifies housing, job-loss, and illness shock severity
+- insufficient_military_support -> decorated_general_route
+- intelligence_war_command_role -> military_surface
+- intercity_service_hospitals
+- interior and housing design
+- internal Marketplace settlement
+- internship may be limited to school recommendation
+- invalid market target
+- investor_to_market_power_actor
+- island autonomy, religion, fishery, family, and local market sections highly important
+- island residential + port-adjacent housing
+- island_community_school_operation
+- issue_mobilization -> elevated_nation_scope_or_military_scope
+- judicial case state updated explicitly
+- judicial cases require explicit governing rule
+- judicial enforcement
+- judicial handling
+- judicial lifecycle handled explicitly
+- judicial office
+- judicial or lawful process services
+- judicial organizations
+- judicial process visibility
+- judicial restriction where applicable
+- judicial state machine
+- judicial-sensitive placement
+- judicial_appointment_participation_power
+- judicial_case_id
+- judicial_office
+- judicial_office -> human_only_office
+- judicial_office -> human_required
+- judicial_sensitive_placement
+- judicial_structure_base
+- judicial_structure_type
+- junior_high_school
+- justified by military industry, logistics, ports, training zones, and defense infrastructure
+- kinship and household sharing reduce some direct market burdens
+- labor and school rhythm
+- labor market trend visibility is required
+- labor-market connection
+- labor-market posture
+- labor_housing
+- land market
+- landmark_market_opened
+- language_school
+- large school complex
+- large_hospital
+- large_school_complex
+- large_school_complex -> build_cost high / maintenance high / time 20
+- large_school_complex -> facility_overview_ui
+- large_school_complex -> mixed_allowed
+- large_school_complex -> overview_service
+- legal marketability value
+- legal_or_administrative_school_operation
+- legally distinct from market valuation
+- linkage to market or logistics where supported
+- linked company / marketplace / logistics / streaming-boundary surface
+- linked government / residence / school / medical / support-facility surface
+- linked government / welfare / military / support-facility surface
+- linked hospital
+- linked market
+- linked marketplace supply context
+- linked military or security support where applicable
+- linked residence / school / hospital context
+- linked school
+- listing eligibility and market rules must be respected
+- listing market eligibility narrow
+- listing style enabled but market tier set missing
+- listing style enabled with zero market tiers
+- listing style or market-tier rules are unresolved
+- listing_detail_to_civilization_market_home
+- listing_detail_to_nation_market_home
+- live-event limited-sale Marketplace
+- livestock_market_unit
+- local autonomy creates the strongest variation in school, company, and city event culture
+- local market and dock zones
+- local market and second-hand norms strong
+- local market retail
+- local market stall when store truth dominates
+- local market trust, face-known trade, fishery-linked goods, and communal familiarity should be visible
+- local markets shape everyday food more than federation identity
+- local markets, communal storefronts, ritual facilities, and island service hubs should be visible
+- local rules and market ecology should override broad federation uniformity
+- local schools: medium
+- local_market_dependence
+- local_market_listing
+- local_market_reliance_tendency
+- local_market_reliance_tendency modifies neighborhood economy and trust-chain events
+- local_market_stall
+- local_market_surface
+- logistics_commander -> military_surface
+- logistics_hospitals
+- long_commute_tolerance_tendency modifies housing-work separation and fatigue events
+- low luxury housing share
+- low trust market environments more common
+- lower formal tax and market burden in many areas
+- luxury_dining_visibility_tendency modifies elite status and hospitality events
+- luxury_hospitals
+- luxury_material_visibility_tendency modifies elite hospitality and wealth-display events
+- major market shifts may influence marketplace visibility and demand
+- major military facility names
+- major_holiday_market_bundle
+- major_school
+- major_school_opened
+- manage_military_facility
+- manage_military_facility -> military_scope
+- maritime, fishery, brewing, ritual, painting, music, dance, and craft schools are present
+- maritime_market_spaces
+- maritime_schools
+- market
+- market + finance + corporate concentration
+- market access
+- market access weakness
+- market action handled once effectively
+- market activity alerts high
+- market alerts low
+- market alerts low_to_medium
+- market alerts medium
+- market and board view-only facilities
+- market and consumption systems
+- market and information-board surface
+- market and information-board surfaces
+- market and local reputation both matter
+- market and macro cycles
+- market and nightlife posture
+- market and political consequences may be summarized during build or structure changes
+- market and redevelopment play
+- market and shipment state
+- market and tourism effects
+- market and tower district emergency response
+- market and transport support
+- market board and public information facilities should feel orderly
+- market brand identity
+- market control intervention
+- market coordination facilities
+- market cycle
+- market default layer
+- market demand
+- market depots
+- market detail
+- market disruption
+- market equity trades
+- market exchange
+- market facilities: very_high
+- market festivals
+- market holiday interaction posture
+- market hub UI
+- market is designed for creative growth rather than scale maturity
+- market is intentionally narrower than commercial nations
+- market list
+- market location
+- market maturity posture
+- market naming posture
+- market news, reputation, scandal, and advantage-seeking information are highly visible
+- market opening celebration
+- market openness
+- market openness is highly constrained historically
+- market or information exposure posture where relevant
+- market or information posture where relevant
+- market or tender settlement
+- market order submitted
+- market posture
+- market posture visibility
+- market route selection where applicable
+- market sentiment
+- market settlement
+- market shortage alone
+- market style is valid but unusually narrow
+- market tier changes
+- market tier creation/editing
+- market tier duplicate rank
+- market tier editor
+- market tier editor leaves unresolved threshold chains
+- market tier eligibility logic
+- market tier list
+- market tier rank duplicated with conflict
+- market tier rank/order is unresolved
+- market tier threshold rules missing
+- market tier threshold validity
+- market tier validation
+- market tiers
+- market tiers are explicit
+- market transfer
+- market updates
+- market versus store posture
+- market warning visibility
+- market, guild, civic, and port-style event skins may coexist
+- market, guild, port, and small-shop culture remain highly visible
+- market-aware
+- market-board grouping
+- market-board or finance-information continuity
+- market-board posture
+- market-centric urban roads
+- market-compatible
+- market-control supervision where policy allows
+- market-core functional zoning
+- market-distinct
+- market-facing execution classes
+- market-price family boundaries
+- market-pricing internals
+- market-risk products
+- market-side execution occurs
+- market-supportive administration
+- market-tier-aware
+- market-tier-specific thresholds
+- market/listing notification
+- market_activity
+- market_adjacent_citizen_housing_belt
+- market_alert_level
+- market_and_commercial_hub
+- market_and_information_tab
+- market_and_risk_summary_section
+- market_board_home
+- market_board_opened
+- market_board_opened may update market_legibility and civic_visibility
+- market_board_state where applicable
+- market_browse
+- market_bulletin_actor
+- market_bundle
+- market_bundle.listing_system_style
+- market_bundle.market_tiers
+- market_capitalization_threshold
+- market_city
+- market_condition
+- market_control_posture
+- market_event
+- market_execution
+- market_festival
+- market_governance_binding
+- market_halt
+- market_hill
+- market_hill: 8,000,000
+- market_hill: startup_and_commercial_growth_city
+- market_hill: startup_and_growth_anchor
+- market_holiday
+- market_holiday_interaction_profile
+- market_id
+- market_information_access
+- market_infrastructure
+- market_legibility
+- market_legibility_summary
+- market_listing_id
+- market_maker
+- market_mode where appropriate
+- market_notice_set
+- market_notice_surface
+- market_notification
+- market_notification_connection
+- market_notification_enabled
+- market_openness_type
+- market_openness_type_selector
+- market_or_sales_campaign_period
+- market_order
+- market_order_id
+- market_order_intent
+- market_position
+- market_preset_code
+- market_priority_zoning
+- market_purchase_priority
+- market_reactive_zoning
+- market_recalculation_trigger
+- market_release
+- market_review_notes
+- market_role_type
+- market_role_type_selector
+- market_scope
+- market_scope_type
+- market_sentiment
+- market_sentiment_shift
+- market_shift_to_public_order
+- market_square_center
+- market_squares
+- market_streets
+- market_surface
+- market_terminal_connection
+- market_throughput
+- market_tier posture
+- market_tier rules
+- market_tier_code
+- market_tier_editor
+- market_tier_editor_action
+- market_tier_editor_surface
+- market_tier_group
+- market_tier_threshold_surface
+- market_tiers
+- market_timing_loop
+- market_trade_execution_id
+- market_trust_delta
+- market_type
+- marketability visibility
+- marketplace
+- marketplace UI entry structure
+- marketplace application forms
+- marketplace compliance
+- marketplace detail may preserve prior browsing scope when possible
+- marketplace distribution
+- marketplace examination tickets
+- marketplace facilities
+- marketplace game listing lifecycle handled explicitly
+- marketplace game listing lifecycle handled once effectively
+- marketplace list navigation
+- marketplace may surface simplified market context without becoming the dedicated market app
+- marketplace moderation surfaces
+- marketplace performance
+- marketplace relation
+- marketplace remains commerce-facing, not a full securities terminal
+- marketplace routing
+- marketplace sale eligibility
+- marketplace seller lifecycle handled explicitly
+- marketplace seller lifecycle updated explicitly
+- marketplace seller request classified and routed safely
+- marketplace transfer lifecycle handled explicitly
+- marketplace transfer lifecycle updated explicitly without seller owner-class mutation
+- marketplace unavailable by route failure
+- marketplace where surfaced
+- marketplace world landing
+- marketplace-linked context
+- marketplace-linked economy play
+- marketplace-linked promotional context
+- marketplace-related sale and lease flows
+- marketplace/native entitlement only
+- marketplace_admin
+- marketplace_and_commerce
+- marketplace_binding
+- marketplace_category_section
+- marketplace_creator_profile_id
+- marketplace_facility
+- marketplace_facility -> build_cost medium / maintenance low / time 10
+- marketplace_facility -> buildable small_lot_or_medium_lot commerce_or_mixed_use
+- marketplace_facility -> marketplace_service
+- marketplace_facility -> marketplace_service -> direct_entry
+- marketplace_facility -> marketplace_ui
+- marketplace_facility -> mixed_allowed
+- marketplace_facility is compatible with commerce_zone or mixed_use_zone
+- marketplace_facility is visible_and_usable
+- marketplace_facility opened -> commerce_access increased
+- marketplace_facility requires commerce-compatible lot
+- marketplace_game_listing_id
+- marketplace_game_product_id
+- marketplace_game_purchase_link_id
+- marketplace_game_transfer_record_id
+- marketplace_game_transfer_request_id
+- marketplace_hub
+- marketplace_item_list_section
+- marketplace_listing
+- marketplace_moderation_surface
+- marketplace_official_seller
+- marketplace_operations
+- marketplace_payout_profile_id
+- marketplace_platform
+- marketplace_product_code
+- marketplace_product_ref
+- marketplace_sale
+- marketplace_sale where lawful
+- marketplace_sale_enabled
+- marketplace_sales
+- marketplace_seller_account_id
+- marketplace_seller_change_prohibition_id
+- marketplace_sentiment_link
+- marketplace_service
+- marketplace_summary_section
+- marketplace_surface
+- marketplace_tax_profile_id
+- marketplace_tenant
+- marketplace_ui
+- markets
+- markets, guild food, port food, and mixed street food cultures coexist
+- markets: high
+- marriage, childbirth, and housing are comparatively predictable
+- mass_market_brand
+- may have high strategic value but low free-market liquidity
+- mechanics_support_schools
+- medium-density island housing
+- medium_hospitals
+- mercenary activity is state-backed or state-permitted and forms a para-military contract sector
+- merchant_housing
+- military
+- military UI
+- military UI structure
+- military and command training
+- military and diplomacy play
+- military and doctrine pressure channels
+- military and industrial placement
+- military and industrial structure
+- military and media variation
+- military and para-military population concentration
+- military authority
+- military base
+- military cities: defense logistics / training / arsenal support
+- military command influence remains highly editable in scope layer
+- military command legitimacy is decisive
+- military command profile
+- military command-support facility
+- military compliance lifecycle handled explicitly
+- military compliance lifecycle updated explicitly
+- military culture structures ceremony strongly
+- military discipline reduces some public disorder risks while intensifying service-linked risks
+- military dormitory
+- military emergency dominance
+- military exposure if relevant
+- military facility execution surfaces must respect permission and policy state
+- military facility intake and assignment
+- military family housing
+- military high command
+- military hospital, field clinic, command medical naming
+- military hospitals: high
+- military imbalance
+- military industry, weapons, and training elevate industrial and service-linked risk
+- military influence
+- military injury, service rehabilitation, and structured return support are strong
+- military interruption
+- military logistics lifecycle handled explicitly
+- military logistics lifecycle updated explicitly
+- military logistics warehouses
+- military management actions use stricter visibility than ordinary service use
+- military management requires military-scope authority
+- military may occupy restricted areas without civil title
+- military memorial and disciplined ceremonial logic should be supportable
+- military mobilization and military facility changes require military-scope authority
+- military mobilization change
+- military office
+- military or civic control structure
+- military or civic discipline
+- military or civic duty posture
+- military or security support where applicable
+- military or state reserve logic may affect distribution
+- military or state-service connection
+- military or state-service interruption
+- military override may exist
+- military play
+- military plazas
+- military posture
+- military promotion surfaces
+- military readiness
+- military regime
+- military road grid
+- military service
+- military service behavior
+- military service control surfaces
+- military strength alone
+- military summary exposure
+- military summary surface
+- military supply depots
+- military supply posture
+- military supply routes
+- military support
+- military support rail, strategic route discipline, and command priority should be expressible
+- military support should generally feel lighter and more local or maritime
+- military support unit
+- military support where applicable
+- military systems
+- military traceability must remain preserved
+- military training: very_high
+- military trust
+- military, support, command chain, and emergency logic highly important
+- military-adjacent education routes should be visually and structurally legible
+- military-adjacent life events may carry structured visual hierarchy
+- military-adjacent worker housing high
+- military-aware
+- military-compliance traceability must remain preserved
+- military-controlled systems
+- military-family and service-household conditions shape early childhood
+- military-family childcare important
+- military-linked care pathways may overlap with civil care more than elsewhere
+- military-sensitive placement
+- military_access_request
+- military_and_defense
+- military_and_diplomacy_play
+- military_and_security_chain_high
+- military_and_security_sensitive_roles strongly filtered
+- military_appointment
+- military_assembly_plaza_belt
+- military_authority
+- military_autonomy_level
+- military_base
+- military_base_operation
+- military_binding
+- military_builder
+- military_capture_route
+- military_casualty_wave
+- military_chain_successor
+- military_channel
+- military_channel requires military-linked institution
+- military_city
+- military_city_set
+- military_civil_conflict
+- military_command
+- military_command_influence
+- military_command_power
+- military_command_power requires command holder definition
+- military_command_route
+- military_command_setting
+- military_confirmation
+- military_control_posture
+- military_control_type
+- military_controlled
+- military_council
+- military_defeat
+- military_emergency_priority
+- military_escalation
+- military_event
+- military_facility
+- military_facility -> mobilization_and_war_entry
+- military_facility_entry
+- military_facility_id
+- military_facility_route
+- military_facility_route is the primary intake and assignment route
+- military_facility_surface
+- military_factory
+- military_family_housing
+- military_governor
+- military_governor -> military_surface
+- military_group
+- military_guardianship_route
+- military_hardline_faction
+- military_hegemon
+- military_heroism_route
+- military_high_command
+- military_honor_surface
+- military_hospital
+- military_hospitals
+- military_human_command_required
+- military_human_with_service_record_required
+- military_identity
+- military_intake_open
+- military_issue_panel
+- military_kpi_strip
+- military_legitimacy
+- military_loading_supported
+- military_logistics
+- military_logistics_assignment_id
+- military_logistics_control
+- military_loyalty_reward
+- military_mobilization_overlay
+- military_nation_template
+- military_nomination
+- military_nomination requires military-linked office class
+- military_nomination_appointment
+- military_office
+- military_office -> military_human_command_required
+- military_office -> military_human_with_service_record_required
+- military_office -> non_human_support_only
+- military_office -> office_specific_rule
+- military_office_compatibility_summary
+- military_operator
+- military_operator is required for military facility management
+- military_or_service_branch_pressure
+- military_or_service_preparation
+- military_or_state_discount
+- military_or_state_priority_mode
+- military_or_state_priority_override
+- military_override_exists
+- military_policy_preview
+- military_policy_to_intake_entry
+- military_policy_to_recruitment_entry
+- military_port
+- military_ports
+- military_posture_changes
+- military_posture_entry
+- military_prep_school_operation
+- military_preparation_event
+- military_priority
+- military_priority_interruption
+- military_priority_ration
+- military_priority_slot_supported
+- military_priority_tag
+- military_procurement_group
+- military_readiness_priority
+- military_readiness_warning_panel
+- military_recent_history_panel
+- military_recovery_priority
+- military_recovery_support_operation
+- military_regime_bundle
+- military_regime_bundle missing
+- military_regime_bundle: recommended_high
+- military_regime_profile
+- military_regime_profile_ref
+- military_removal
+- military_reserved
+- military_rule
+- military_school
+- military_school_when_exam_based
+- military_scope
+- military_sensitive_placement
+- military_service_binding
+- military_service_event
+- military_service_interruption
+- military_service_mode
+- military_service_mode_default
+- military_service_mode_selector
+- military_service_mode_summary
+- military_service_pipeline
+- military_service_policy
+- military_service_policy_panel
+- military_service_transfer_entry
+- military_service_transfer_entry -> ai_human
+- military_service_transfer_entry -> user_persona
+- military_shadow_review
+- military_spatial_structure
+- military_state
+- military_state -> coup_conspirator_route
+- military_state -> decorated_general_route
+- military_state -> military_capture_route
+- military_state:
+- military_state_school
+- military_status_strip
+- military_style_visibility_tendency
+- military_style_visibility_tendency modifies service and authority presence events
+- military_summary_card
+- military_supply_hospitals
+- military_supply_relation_type
+- military_supply_relation_type_selector
+- military_supply_warning_panel
+- military_support
+- military_support_complex
+- military_support_rail
+- military_support_unit
+- military_support_unit -> military_surface
+- military_surface
+- military_training_facility
+- military_trust
+- military_trust_effect_default
+- military_trust_effect_override
+- military_use_right
+- military_use_right = strong
+- military_value: ultra_high
+- military_visibility
+- military_zone
+- mixed citizen housing
+- mixed_citizen_housing
+- mixed_civic_schools
+- mixed_housing
+- mixed_market_housing
+- mixed_market_streets
+- mixed_regulated_market
+- mixed_use_citizen_housing
+- mixed_use_housing_bias
+- mixed_use_housing_high
+- mixed_worker_housing
+- moderate local schooling
+- moderate market activity alerts
+- modest_worker_housing
+- morning_orientation_tendency modifies school and work start stability events
+- most orderly and institutionally structured school progression
+- multi-tier governance and market blending
+- multi-tier market structure
+- multi-tier market style
+- multi_tier_market
+- music_school
+- music_schools
+- nation Marketplace entry
+- nation market boards prioritize ranking_strip and category trend graphs
+- nation market information board
+- nation market legibility
+- nation market regime excludes this company type
+- nation market rule violation
+- nation marketability effect
+- nation marketplace entry
+- nation regime affects marketability, not place identity
+- nation regime prohibits requested market participation
+- nation securities / market infrastructure
+- nation-specific marketplace variation
+- nation-type default military service mode
+- nation: gladia_military_alliance
+- nation_facility_list_market_entry
+- nation_facility_list_market_tap
+- nation_market_detail
+- nation_market_detail emphasizes nation availability, tax, and restriction notes
+- nation_market_editor_snapshot
+- nation_market_entry
+- nation_market_facility_entry
+- nation_market_facility_tap
+- nation_market_home
+- nation_market_home preserves nation context on back
+- nation_market_home_to_listing_detail
+- nation_market_information_board
+- nation_market_information_board -> build_cost low / maintenance very_low / time 0
+- nation_market_information_board -> nation_body
+- nation_market_information_board -> nation_market_board_service
+- nation_market_information_board -> nation_market_board_ui
+- nation_market_tier_id
+- nation_market_tier_rule_id
+- nation_marketplace
+- nation_marketplace_home
+- nation_menu_marketplace
+- national market condition
+- national military/education/trade/culture identity
+- national securities market board
+- national securities market facility
+- national securities market facility is graph and board focused
+- national_market_board_ui
+- national_market_entry
+- national_market_index
+- national_school
+- national_securities_market_facility
+- national_securities_market_facility -> build_cost medium / maintenance low / time 5
+- national_securities_market_facility -> nation_body
+- national_securities_market_facility -> national_market_board_service
+- national_securities_market_facility -> national_market_board_ui
+- national_securities_market_facility -> view_only_or_city_anchor civic_or_finance_or_information
+- national_securities_market_facility is compatible with civic_zone, finance_zone, or information_zone
+- national_securities_market_facility is visible_view_only
+- national_securities_market_facility opened -> market_legibility increased
+- national_securities_market_facility prefers district_anchor or city_anchor
+- national_securities_market_facility provides graph and board viewing only
+- naval military transport routes
+- nearby hospital access posture
+- nearby market access posture
+- nearby school access posture
+- nearby_hospital_access_state
+- nearby_market_access_state
+- nearby_school_access_state
+- newly_eligible_for_school_application
+- newlywed housing support naming posture
+- nishi_keihin: western_housing_and_trade_city
+- no hybrid market selected
+- no_military_relation
+- noble_ring_ai_industrial_school
+- node or facility type
+- non-duplicative with Marketplace buyer UI
+- non-duplicative with Marketplace core
+- non-duplicative with shared Marketplace fulfillment
+- non-duplicative with shared Marketplace payment routing
+- non_marketplace_internal_transfer
+- north_training_zone: military_training_support_city
+- old noble districts retain elite AI-industrial schooling legacy
+- old_market_and_heavy_commerce_city
+- open market circulation emphasis
+- open market roads
+- open market storage blend
+- open market trust should feel weaker
+- open markets, crafts, debate, music, and public gathering
+- open_city_market_network
+- open_competitive_market
+- open_economy_and_market_control
+- open_economy_market_history
+- open_fire_and_rescue_activity
+- open_global_market_context
+- open_hospital_emergency
+- open_hospital_issue
+- open_hospital_manage
+- open_hospital_patient_flow
+- open_market
+- open_market_detail
+- open_market_facilities
+- open_market_squares
+- open_marketplace
+- open_marketplace_admin
+- open_marketplace_item
+- open_military_facility
+- open_military_force_organization
+- open_military_issue
+- open_military_manage
+- open_military_readiness_and_alert
+- open_nation_market_context
+- open_police_activity
+- open_recruitment -> military_scope_or_nation_scope
+- open_school_enrollment
+- open_school_issue
+- open_school_manage
+- open_school_student_life
+- open_work_and_school_schedule
+- opena: open_market_city
+- opens civilization-global marketplace home
+- opens nation marketplace home
+- opinion shifts quickly with market logic, scandal, and visible competence
+- optional_market_description
+- orderly transition from schooling to work
+- ordinary goods sales through Civilization Marketplace
+- ordinary users may at most view public-facing military notices where allowed
+- originally no school access
+- outer poor and former slave districts originally had no schools
+- outer worker_housing_high
+- outer_belt_compulsory_school_support
+- outer_ring: no_original_school_access
+- outer_ring_compulsory_school_added_after_democratization_only
+- overt doctrine-market behavior should be weaker than in Helios or Aurelia
+- ownership and residence can be household-linked rather than market-driven
+- ownership_housing_burden_tendency
+- ownership_housing_burden_tendency influences delayed housing purchase
+- painting_and_craft_school_support
+- painting_schools
+- para-military and mercenary support belts
+- para-military logistics belt
+- participate in marketplace
+- partnership exists under strong market logic
+- per-map renaming of facility type
+- personal housing finance
+- physical goods as a Marketplace product class
+- pickup-style delivery posture where Marketplace supports it
+- place_housing
+- police
+- police action
+- police activity visibility
+- police and internal security command
+- police organizations
+- police-oriented facility
+- police_binding
+- police_direction_power
+- police_or_internal_security_command
+- police_station
+- police_summary_section
+- police_training_facility
+- policy_change_to_market_shift
+- political and military control posture
+- poor_and_slave_outer_ring_had_no_original_school_access
+- port and civic logistics may matter more than centralized military chain identity
+- port cities, guild cities, market cities, and civic-rich cities keep visibly different clocks
+- port fire and cargo emergency support
+- port fire and market incident response
+- port storage and market depots
+- port warehousing
+- port, guild, civic, and market-centered cities create sharply different leisure ecologies
+- port, guild, market, and civic-discussion cities produce different speech ecologies
+- port, guild, market, and civic-rich cities all produce different movement ecologies
+- port, guild, market, and civic-rich cities produce different house cultures
+- port, guild, market, civic, and nightlife cities all run on different daily tempos
+- port, market, guild, and civic discussion culture all shape speech
+- port, market, housing, and craft belts are often adjacent
+- port, market, or industrial identity
+- port-market storage blend
+- port-to-command military corridors
+- port_adjacent_housing_belt
+- port_logistics_schools
+- poverty_rate_tendency influences household fragility and housing instability
+- practical family and school continuity
+- practical schools: medium_high
+- practical_military_control
+- practical_schools
+- pragmatic_marriage_tendency modifies housing, income, and work-based partner decisions
+- premium and speculative market visibility should be high
+- premium hospital
+- premium seafood, fast market timing, and price optimization should be emphasized
+- premium spiritual services, niche ritual markets, or reputation-driven patronage may exist
+- premium_hospitals
+- premium_schools
+- prepare_school_return_note
+- preserve judicial traceability
+- preserve marketplace traceability
+- preserve military traceability
+- prestige-heavy and rough-market coexistence must be supportable
+- prestige_sensitivity_tendency modifies visible consumption, school prestige, and status-comparison events
+- primary_school_entry
+- prime_market
+- prison_worker_housing
+- private school
+- private_elementary_school
+- private_elementary_school uses exam admission
+- private_high_school
+- private_high_school uses exam admission
+- private_junior_high_school
+- private_junior_high_school uses exam admission
+- private_school
+- procedural order, school stability, exam structure, and legal-administrative education should be strongest
+- processing choice changes market timing and margin profile
+- progression strongly rewards skill, performance, and market usefulness
+- promotion_misfire
+- property accumulation exists, but military and service structure shapes access
+- property market value
+- public contract and military relation
+- public market trading suspended
+- public school
+- public schools: very_high
+- public, school, and workplace speech show the clearest register control
+- public_elementary_school may use non-exam admission
+- public_high_school may be nation-specific
+- public_junior_high_school may use non-exam admission
+- public_market_hall
+- public_market_information_link
+- public_market_stage
+- public_market_visibility
+- public_private_mixed_school
+- public_school
+- public_schools
+- public_time_discipline_tendency modifies transport, school, and office synchronization events
+- pure marketplace UI
+- rail_reliance_tendency modifies school, work, and intercity commuting stability events
+- readiness and ability may be linked to future competitive schooling routes
+- real estate market board
+- real-estate-design-only Marketplace core
+- real-world goods marketplace is excluded
+- real-world physical goods marketplace
+- real-world physical goods marketplace is out of scope
+- real_estate_market_board_facility
+- real_estate_market_board_facility -> build_cost low / maintenance very_low / time 0
+- real_estate_market_board_facility -> nation_body_or_city_body
+- real_estate_market_board_facility -> real_estate_market_board_service
+- real_estate_market_board_facility -> real_estate_market_board_ui
+- rear-support military deployment may occur during compulsory service
+- recommendation can affect school entry and company selection
+- recommendation may be enabled per school
+- recommendation support may be enabled per school
+- recommended_school_match
+- reconstruction and ideological filtering distort normal school-to-career flow
+- reconstruction and poverty make housing tight and practical
+- redevelopment_housing_support
+- regional_commander -> military_surface
+- regional_hospitals
+- regional_market
+- regional_market_core
+- regional_military_core
+- regulate market
+- related backlinks to nation marketplace are allowed
+- relation between hospital truth and linked emergency-support truth
+- relation between hospital truth and linked welfare or civic truth
+- relation between micro, market, and macro layers
+- relation between military truth and linked logistics / government / security truth
+- relation between school truth and linked dormitory truth
+- relation between school truth and linked public / civic functions
+- relation between security truth and linked government / military / welfare truth
+- relation between support truth and linked government / residence / school / medical truth
+- relation to Marketplace core
+- relevant market tier rules are unresolved
+- religious_school
+- rental and civic mixed housing common
+- request_state_or_military_support
+- restricted military corridors
+- restriction profile should not invalidate school operation
+- retail-only Marketplace core
+- retail-scoped Marketplace goods
+- ritual and market harbor links
+- ritual_adjacent_housing
+- roads, military transport, convoy logic, and deployment mobility are highly visible
+- route depends heavily on housing, income, and urban work style
+- route to facility overview
+- route_military_override_supported
+- rural_hospitals
+- sacred_market_admin
+- scholar_housing
+- school
+- school / hospital / market accessibility where relevant
+- school UI
+- school UI structure
+- school academic cycle details
+- school access inequality
+- school access remains historically class-layered
+- school admission may require exam or not
+- school admission structure
+- school and company culture
+- school and company events still show status layering
+- school and training facilities
+- school and work culture
+- school and work cycles
+- school and workplace culture
+- school and workplace norms
+- school and workplace norms reduce chaotic appearance divergence
+- school annual event posture
+- school assignment
+- school baseline
+- school classification
+- school context
+- school culture
+- school dormitory
+- school dormitory UI where education truth dominates
+- school enrollment rule details
+- school events are orderly and institutionally dense
+- school events are unevenly colored by class history
+- school events connect early to business presentation, competition, and career display
+- school events may be state-shaped or doctrinally filtered
+- school exam
+- school festivals
+- school history
+- school history persistence
+- school identity and institution surface
+- school networks
+- school or training support
+- school posture
+- school readiness and public developmental support are strongest
+- school rhythm, public order, examinations, and civic institutions strongly organize the year
+- school rules are school-specific
+- school safety and discipline
+- school schedule
+- school schedules
+- school should feel like a national backbone
+- school sites
+- school summary exposure
+- school summary surface
+- school systems
+- school type
+- school uniform posture
+- school, education, and public institutional rhythm strongly shape the year
+- school, family, and civic ceremonial formatting should be stable and legible
+- school, household, and local festival food culture are strong
+- school, office, and family each have clearer bounded registers
+- school, rail, and family meal systems soften class-based food instability
+- school, rail, office, and public procedure reinforce punctuality
+- school-aware
+- school-life continuity concerns
+- school-life institutional management
+- school-life stability signals
+- school-life support grouping
+- school-site operation
+- school-specific surface composition
+- school-to-work transition is shaped by compulsory service between ages 25 and 28
+- school_album
+- school_and_growth
+- school_application_form_product
+- school_application_sales_closing_soon
+- school_application_sales_open
+- school_binding
+- school_building
+- school_capacity_warning_panel
+- school_commuter_priority
+- school_cultural_festival
+- school_detail_surface
+- school_entry
+- school_entry_event
+- school_exam
+- school_exam_schedule
+- school_growth_event
+- school_history
+- school_history_layer
+- school_history_written
+- school_id
+- school_issue_panel
+- school_kpi_strip
+- school_level
+- school_open_house
+- school_operation
+- school_overview_layer
+- school_progress
+- school_progression
+- school_recent_history_panel
+- school_result_announcement
+- school_site
+- school_site required
+- school_site_manager
+- school_staffing_warning_panel
+- school_state_loaded
+- school_status
+- school_status_strip
+- school_summary_card
+- school_term_opening
+- school_tick_resolved
+- school_type
+- school_uniform_strength_tendency
+- school_uniform_strength_tendency modifies school identity and youth conformity events
+- schooling
+- schooling may feel controlled, constrained, or uneven
+- schooling_event
+- schools
+- schools affect stats, skills, and future routes
+- schools may issue recommendation based on their own rules
+- schools: doctrinal_historical_high
+- schools: medium
+- schools: medium_high
+- schools: very_high
+- scripture_school
+- seasonal hospitality pricing
+- secret_police_supported_policing
+- secure_corporate_housing_belt
+- securities and market play
+- securities market boards prioritize line_graph and sector_distribution_graph
+- securities_facility -> market_visibility_entry
+- selected market tier detail
+- self-sufficiency reduces market dependency
+- sellable: housing interior / housing exterior
+- seller Marketplace UI
+- seller-less marketplace publication is prohibited
+- seller-side Marketplace UI
+- seller-side Marketplace operation entry
+- send_to_fresh_market
+- send_to_local_market
+- senior researcher and upper management housing
+- separate from executive and judicial progression
+- separate review-to-sale lifecycle unrelated to Marketplace core
+- separation from market currency
+- service and military meal culture influence everyday eating
+- shared across Marketplace contexts
+- shared across account and Marketplace systems
+- shift_hospital_loop
+- ship_to_local_market
+- ship_to_major_market
+- shipment_and_market_layer
+- shipping-based secondhand goods market
+- small firm, guild, workshop, and market-season events dominate
+- smaller local hubs, communal markets, ritual facilities, and island service combinations should be visible
+- smaller-scale boards may feel more natural than massive market halls
+- software support for schools should favor O1
+- soldier and family housing high
+- soldier housing
+- soldier_family_housing_support
+- some cities may run highly commercial fishery, others local market fishery
+- some cities resemble Seiwa-style moderation, some resemble Nova-style market pressure,
+- special_public_market
+- specialist_hospital_operation
+- specialty_hospital
+- stable domestic supply, orderly distribution, and school/family food-chain linkage should be supported
+- standard Marketplace orders
+- standard Marketplace physical goods
+- standard_market
+- standards vary by city and school culture
+- state market authority
+- state-guided market style
+- state_controlled_market_presence_historical
+- state_guided_market
+- state_market_and_bazaar_zone
+- state_market_operations
+- state_sensitive_market_actor
+- stock market
+- stock market and stock holding concepts
+- stock market remains valid as market container
+- stock_market
+- stock_market_scope_id
+- streamer_standard_digital_goods_where_marketplace_allows
+- street_food_visibility_tendency modifies market and nightlife activity events
+- strict public market style
+- strict_public_market
+- strong finance and market institutions
+- strong rental and metro-support housing
+- strong transport and military supply value
+- stronger new-city and new-housing development bias
+- strongest finance and capital-market premium
+- strongest performance and market logic
+- strongest school / academy / child education density
+- strongest service, discipline, and quasi-military clothing culture
+- strongest visible market and brand logic
+- strongest_market_and_financial_openness
+- structurally_uneven_housing_risk
+- student housing high in education cities
+- student_and_faculty_housing
+- student_hospitals
+- suburban_hospitals
+- supported marketplace/direct-sale behavior
+- supported_housing_type
+- supreme_commander -> military_heroism_route
+- supreme_commander -> military_surface
+- surveillance and military priority
+- suspend_military_operations
+- swimming_school
+- system_marketplace_operator_facility
+- system_marketplace_operator_facility -> marketplace_service
+- system_marketplace_operator_facility -> marketplace_ui
+- system_marketplace_operator_facility -> system_company_only
+- tap opens facility overview
+- tap resolves to facility overview first
+- target market compatibility
+- target market eligibility unresolved
+- target market fit view
+- target market or indicator
+- target markets
+- target_market_candidates
+- target_market_ref
+- target_market_tier_ref
+- tavern and beverage warehousing
+- technical school
+- technical schools
+- technical schools: high
+- technical_high_schools
+- technical_school
+- technical_school_operation
+- technical_school_when_exam_based
+- technical_schools
+- tenant Marketplace entry
+- tenant-based marketplace entry
+- tenant-filtered Marketplace
+- tenant_market_detail
+- tenant_market_detail emphasizes building and tenant context banner
+- tenant_market_entry
+- tier_code: growth_market
+- tier_code: prime_market
+- tier_code: special_public_market
+- tier_code: standard_market
+- tier_code: venture_market
+- tourism-adjacent housing moderate
+- tourism_hospitality
+- tourism_hospitality_company
+- trade and market rhythm strongly shape the calendar
+- trade warehousing
+- trade warehousing power and telecom
+- trade_schools
+- trade_worker_housing
+- training-oriented military facility
+- transfer unit must be marketplace product and linked game title, not seller identity
+- transport_hospitals
+- transport_worker_housing
+- transport_worker_housing_support
+- trauma_formed_military_industrial_mercenary_alliance_state
+- tre: eastern_military_support_city
+- unified national schooling: low
+- union cities: higher mixed-use and citizen housing balance
+- unit_commander -> military_surface
+- unstable labor and housing often destabilize family timing
+- unstable_housing_can_interrupt_family_formation
+- update judicial case state
+- update_market_tier_rule
+- upper institutional housing
+- upper-market and worker-market retail logic may diverge strongly
+- upper-track schools carry more formal prestige and symbolic ceremony
+- urban competition, housing cost, and income volatility create strong economic fragility
+- use of nation market regime
+- validate ceasefire and compliance basis
+- validate listing or market scope
+- validate marketplace target
+- validate_market_tier_editor_state
+- variable market-driven district value
+- venture_market
+- view-only boards may expose stressed markets rather than orderly ones
+- view-only market boards must remain distinct facility types from transactional financial facilities
+- vocational school
+- vocational_school
+- war_to_market_disruption
+- warehousing
+- weak unified national schooling
+- weapons_worker_hospitals
+- what market or information visibility exists
+- what school-life support is required
+- whether market and civic visibility are improving
+- whether the company may publish into the marketplace
+- wildfire where applicable
+- work and school history
+- work/school schedule visibility
+- work_school_summary_section
+- worker housing
+- worker_and_family_housing_support
+- worker_family_housing_support
+- worker_hospitals
+- worker_housing_bias
+- workshop-linked and civic-linked school events may coexist
+- workshop_adjacent_housing
+- workshop_adjacent_housing_belt
+- world map may expose high-level political and military tension
+- world map may expose major market and news summaries
+- 外縁更生施設
+- 東部保全更生施設

@@ -1,0 +1,257 @@
+# ============================================================
+# CONTINENT CANDIDATES
+# ============================================================
+
+status: candidate
+source: 000_CIVILIZATION_OS_FULL_INTEGRATED.md
+prepared_by: Zero
+exclude: フォトン / Photon / PHOTON
+
+- A --> D[Continent Information Panel]
+- A[Continent Map] --> B[Empty Area Tap]
+- A[Continent Map] --> B[State Tap]
+- A[Global Map] --> B[Continent Tap]
+- A[State Builder] --> B[Continent Scale Review]
+- Aurelia intensifies south continent redevelopment distortion
+- B --> C[Continent Map]
+- Back from continent map must return to
+- CENTRAL CONTINENT
+- CENTRAL CONTINENT CITY BIAS
+- CENTRAL CONTINENT NATION BIAS
+- CENTRAL CONTINENT VALUATION
+- CIVILIZATION CONTINENT MAP
+- CONTINENT DIFFERENTIATION RULE
+- CONTINENT INFORMATION PANEL
+- CONTINENT INFORMATION RULE
+- CONTINENT MAP FILTERS
+- CONTINENT MAP FLOW
+- CONTINENT MAP FUNCTION
+- CONTINENT MAP GRID
+- CONTINENT MAP OPTIONAL DETAIL ROUTES
+- CONTINENT MAP RESPONSIBILITY
+- CONTINENT MAP SCREEN
+- CONTINENT MAP VISUAL FUNCTION
+- CONTINENT SET
+- CONTINENT TAP RULE
+- CONTINENT TRANSLATION
+- CONTINENT-SCALE DESIGN VARIABLES
+- CONTINENT-SPECIFIC BIAS
+- CONTINENT_SCALE_PROFILE
+- C[Continent Map] --> T2[Top Right Menu]
+- Central continent
+- Central continent bias
+- City seed planning should reflect continent meaning
+- Civilization Continent Map
+- CivilizationOS continent valuation must reflect Foundation truth.
+- CivilizationOS world scale must be explicit at continent level.
+- Continent Overview
+- Continent information may appear as
+- Continent map initial load should prioritize
+- Continent map is responsible for
+- Continent map is the middle layer.
+- Continent map is the state-selection layer.
+- Continent map may initially use
+- Continent map may use partial_data
+- Continent map uses
+- Continent meaning should bias nation seed data,
+- Continent personality is the top macro bias,
+- Continent tap is the primary action
+- Continent tap must be explicit
+- Continent valuation is world-common.
+- Continent valuation must be based on Foundation truth.
+- Continental and ecosystem UI must remain
+- Continental progression UI must implement
+- Continental progression UI must remain
+- Continental progression may include
+- Continents
+- Continents must be treated as
+- D --> D4[Other Continent Metadata]
+- Define the continent-level valuation personality
+- Defines how Foundation-reflected continent identity
+- Defines how continent-level Foundation meaning
+- Each continent must support world-common macro variables.
+- Every continent should have an explicit Foundation-reflected profile
+- Free Federation intensifies south continent mixed flexibility
+- Gladia intensifies central continent strategic/restricted premium
+- Global map must expose continent information.
+- Helios intensifies north continent industrial/resource premium
+- If continent information is incomplete
+- Initial continent map may use
+- J --> K[Continent Map]
+- NORTH CONTINENT
+- NORTH CONTINENT VALUATION
+- NORTHERN CONTINENT
+- NORTHERN CONTINENT CITY BIAS
+- NORTHERN CONTINENT NATION BIAS
+- Nation valuation modifies continent valuation personality.
+- North continent
+- North continent bias
+- Not all continent area should be treated as equally habitable,
+- Nova intensifies central continent commercial/prestige premium
+- OFFICIAL CONTINENT SCALE
+- Orpheus intensifies south continent maritime/cultural premium
+- RELATION TO CONTINENT VALUATION
+- SOUTH CONTINENT
+- SOUTH CONTINENT VALUATION
+- SOUTHERN CONTINENT
+- SOUTHERN CONTINENT CITY BIAS
+- SOUTHERN CONTINENT NATION BIAS
+- SUPPLEMENT D. INITIAL CONTINENT MAP VISUAL RULE
+- Seiwa intensifies central continent education/infrastructure premium
+- South continent
+- South continent bias
+- Store macro scale baseline for one continent.
+- System service density should differ by continent
+- The continent map should still clearly expose
+- The continents must not be valued identically.
+- The initial continent map may use
+- The world has three primary continents
+- They may be refined later without changing continent identity.
+- When the user taps a continent,
+- a continent information surface,
+- allow continent selection
+- approximately one-half of central continent
+- approximately two-thirds of central continent
+- as soon as continent tap targets
+- atlas-style colored continent assets.
+- atlas-style colored continent presentation.
+- back -> continent map
+- back to continent map
+- back_to_continent_map
+- but continent navigation is usable,
+- but continent selection remains primary.
+- but does not force all nations on the same continent
+- central continent = civilization / finance / prestige premium
+- central continent: about 55 million km2
+- central_continent
+- central_continent_projection_posture
+- civilization_continent_map
+- compact high-contrast continent with mixed development pockets
+- component: continent-foundation-profile
+- component: continental-and-ecosystem-progression
+- component: continental-and-ecosystem-progression-ui
+- component: continental-progression
+- component: continental-progression-ui
+- continent
+- continent / region placement
+- continent alerts
+- continent and district personality affect base value
+- continent and state layers
+- continent characteristics
+- continent detail information
+- continent detailed information
+- continent gives macro bias
+- continent identity
+- continent information at minimum
+- continent information panel readiness
+- continent information should include
+- continent information visibility
+- continent level where applicable
+- continent map
+- continent map empty-area interaction.
+- continent map may also route to
+- continent map overlays where supported
+- continent map,
+- continent population
+- continent render visibility
+- continent scale is first-class
+- continent selection
+- continent separability
+- continent summaries
+- continent summary visibility
+- continent tap
+- continent truth
+- continent valuation bias
+- continent valuation is world-common
+- continent valuation personality
+- continent valuation personality is already defined
+- continent visibility
+- continent-level nation viewing
+- continent-level tension posture where applicable
+- continent-scale policy or alliance posture
+- continent-scale review
+- continent-selectable
+- continent_characteristics
+- continent_code
+- continent_grid_actions
+- continent_grid_states
+- continent_grid_type
+- continent_information_panel
+- continent_information_screen
+- continent_map
+- continent_map_canvas_section
+- continent_map_editable_custom_nation_tap -> nation_builder_edit_or_nation_overview
+- continent_map_empty_nation_slot_tap -> nation_builder_create
+- continent_map_filters
+- continent_map_menus
+- continent_map_nation_tap -> nation_overview
+- continent_map_role
+- continent_map_screen
+- continent_map_visible_objects
+- continent_name
+- continent_population
+- continent_scale_profile_id
+- continent_status
+- continent_tap
+- continent_valuation_profile
+- continental density structure
+- continental growth/decline posture
+- continental summary
+- continental_ecosystem_history_screen
+- continental_progression_entry_screen
+- continental_progression_history_screen
+- continental_summary_section
+- continents
+- entry into continent map
+- for autonomous continental progression
+- for city seed planning by continent.
+- for continent map UI
+- for continental and ecosystem progression
+- for continental and ecosystem progression UI
+- for continental progression
+- for continental progression UI
+- for continental progression,
+- for each official continent.
+- for system service availability by continent.
+- foundation defines what the continent is
+- global_map_continent_tap -> continent_map
+- island versus continental life
+- large expansion / frontier / industrial-potential continent
+- maritime projection bases toward central continent
+- nation valuation sits between continent and district layers
+- north continent = resource / industry / logistics premium
+- north continent: about 37 million km2
+- north_continent
+- northern_continent
+- open_continent_information
+- open_continent_map
+- open_continental_ecosystem_history
+- open_continental_progression
+- open_continental_progression_history
+- other continent metadata where available
+- other continent-level meta information where available
+- other_continent_metadata where applicable
+- prestige pressure is weaker than in central-continent states
+- return route to continent map
+- return to continent map
+- scope: continental-and-ecosystem-progression
+- scope: continental-and-ecosystem-progression-ui
+- scope: continental-progression
+- scope: continental-progression-ui
+- section_id: continent_information_panel
+- shared by global, continent, and city map.
+- show continent information
+- show continents
+- some cities adopt central-continent-style eldercare facilities
+- source continent context
+- south continent = maritime / culture / renewal premium
+- south continent: about 27.5 million km2
+- south_continent
+- southern_continent
+- tap_continent
+- tappable continent posture
+- tappable continent regions
+- three_gods_relation_summary: Central-continent style balance among Morning, Day, and Night symbolism is the dominant cultural posture
+- to continent or world posture
+- weaker pure prestige premium than central continent
+- zoomed-out continent-scale review

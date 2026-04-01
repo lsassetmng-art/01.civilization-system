@@ -23,15 +23,24 @@ prepared_by: Zero
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820011_MANUFACTURING_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820012_GOVERNMENT_AND_CIVIC_SERVICE_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820013_FINANCE_AND_SECURITIES_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820014_LODGING_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820014_SECURITY_AND_JUDICIARY_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820015_MILITARY_BASE_OPERATION_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820015_RESEARCH_AND_TECH_OPERATION_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820016_CULTURE_AND_LEISURE_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820016_MEDIA_OPERATION_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820017_COMMUNITY_SUPPORT_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820017_EXHIBITION_AND_EVENT_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820018_ADMINISTRATIVE_SERVICE_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820018_COMPANY_PREMISES_AND_TENANT_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820019_INFRASTRUCTURE_AND_UTILITY_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820020_CULTURE_AND_LEISURE_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820020_POLICE_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820021_COMMUNITY_AND_LIFE_SUPPORT_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820021_FIRE_AND_RESCUE_OPERATION_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820022_JUDICIAL_FACILITY_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820022_LODGING_AND_STAY_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820023_MILITARY_BASE_OPERATION_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820023_RESEARCH_AND_TECHNOLOGY_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/382_FACILITY_UI_ARCHITECTURE_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/382_FACILITY_UI_ARCHITECTURE_INTEGRATED.md
@@ -56,36 +65,58 @@ prepared_by: Zero
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820011_MANUFACTURING_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820012_GOVERNMENT_AND_CIVIC_SERVICE_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820013_FINANCE_AND_SECURITIES_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820014_LODGING_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820014_SECURITY_AND_JUDICIARY_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820015_MILITARY_BASE_OPERATION_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820015_RESEARCH_AND_TECH_OPERATION_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820016_CULTURE_AND_LEISURE_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820016_MEDIA_OPERATION_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820017_COMMUNITY_SUPPORT_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820017_EXHIBITION_AND_EVENT_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820018_ADMINISTRATIVE_SERVICE_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820018_COMPANY_PREMISES_AND_TENANT_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820019_INFRASTRUCTURE_AND_UTILITY_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820020_CULTURE_AND_LEISURE_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820020_POLICE_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820021_COMMUNITY_AND_LIFE_SUPPORT_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820021_FIRE_AND_RESCUE_OPERATION_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820022_JUDICIAL_FACILITY_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820022_LODGING_AND_STAY_UI_INTERFACE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820023_MILITARY_BASE_OPERATION_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820023_RESEARCH_AND_TECHNOLOGY_UI_INTERFACE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/382_FACILITY_UI_INTERFACE_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/382_FACILITY_UI_INTERFACE_INTEGRATED.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820001_CIVILIZATION_FACILITY_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820002_RETAIL_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820003_HOUSING_AND_RESIDENCE_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820004_REAL_ESTATE_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820005_STREAMER_AGENCY_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820006_SCHOOL_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820007_HOSPITAL_OPERATION_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820008_AGRICULTURE_AND_LIVESTOCK_OPERATION_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820009_FOOD_SERVICE_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820010_LOGISTICS_AND_TRANSPORT_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820011_MANUFACTURING_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820012_GOVERNMENT_AND_CIVIC_SERVICE_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820013_FINANCE_AND_SECURITIES_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820014_LODGING_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820014_SECURITY_AND_JUDICIARY_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820015_MILITARY_BASE_OPERATION_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820015_RESEARCH_AND_TECH_OPERATION_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820016_CULTURE_AND_LEISURE_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820016_MEDIA_OPERATION_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820017_COMMUNITY_SUPPORT_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820017_EXHIBITION_AND_EVENT_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820018_ADMINISTRATIVE_SERVICE_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820018_COMPANY_PREMISES_AND_TENANT_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820019_INFRASTRUCTURE_AND_UTILITY_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820020_CULTURE_AND_LEISURE_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820020_POLICE_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820021_COMMUNITY_AND_LIFE_SUPPORT_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820021_FIRE_AND_RESCUE_OPERATION_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820022_JUDICIAL_FACILITY_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820022_LODGING_AND_STAY_UI_IMPLEMENTATION.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820023_MILITARY_BASE_OPERATION_UI_IMPLEMENTATION.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820023_RESEARCH_AND_TECHNOLOGY_UI_IMPLEMENTATION.md
 
 
@@ -8294,6 +8325,80 @@ not only as ledger visibility.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820014_LODGING_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# LODGING OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: lodging-operation-ui
+component: lodging-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for lodging operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Lodging UI must support:
+
+- booking and reservation posture
+- room and unit assignment posture
+- occupancy and utilization posture
+- cleaning and turnover posture
+- guest support posture
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- booking_and_assignment_tab
+- occupancy_and_utilization_tab
+- room_and_unit_tab
+- cleaning_and_turnover_tab
+- guest_and_support_tab
+- money_visibility_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Lodging operation UI architecture must remain:
+
+- booking-aware
+- room-aware
+- turnover-aware
+- guest-support-aware
+- issue-visible
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820014_SECURITY_AND_JUDICIARY_UI_ARCHITECTURE.md
 # ============================================================
 
@@ -9480,6 +9585,154 @@ not only as readiness bookkeeping.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820015_RESEARCH_AND_TECH_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# RESEARCH AND TECH OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: research-and-tech-operation-ui
+component: research-and-tech-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for research and technology operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Research and tech UI must support:
+
+- research program visibility
+- lab and equipment visibility
+- progress and output visibility
+- staff and allocation visibility
+- budget and support visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- program_and_focus_tab
+- laboratory_and_equipment_tab
+- output_and_progress_tab
+- staff_and_allocation_tab
+- budget_and_support_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Research and tech operation UI architecture must remain:
+
+- program-aware
+- equipment-aware
+- progress-aware
+- allocation-aware
+- issue-visible
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820016_CULTURE_AND_LEISURE_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# CULTURE AND LEISURE OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: culture-and-leisure-operation-ui
+component: culture-and-leisure-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for culture and leisure operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Culture and leisure UI must support:
+
+- visitor and flow visibility
+- program and activity visibility
+- atmosphere and condition visibility
+- appeal and visibility posture
+- staffing and upkeep visibility
+- money visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- visitor_and_flow_tab
+- program_and_activity_tab
+- atmosphere_and_condition_tab
+- appeal_and_visibility_tab
+- staffing_and_upkeep_tab
+- money_visibility_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Culture and leisure operation UI architecture must remain:
+
+- visitor-aware
+- program-aware
+- appeal-aware
+- upkeep-aware
+- issue-visible
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820016_MEDIA_OPERATION_UI_ARCHITECTURE.md
 # ============================================================
 
@@ -10068,6 +10321,81 @@ Media operation UI in Civilization must remain:
 Media UI must treat media institutions
 as live communication reality,
 not only as content bookkeeping.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820017_COMMUNITY_SUPPORT_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# COMMUNITY SUPPORT OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: community-support-operation-ui
+component: community-support-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for community and life-support operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Community support UI must support:
+
+- access and eligibility visibility
+- case-load visibility
+- continuity and support-chain visibility
+- service-scope visibility
+- linkage visibility
+- staffing visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- access_and_eligibility_tab
+- case_load_tab
+- continuity_tab
+- service_scope_tab
+- linkage_tab
+- staffing_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Community support operation UI architecture must remain:
+
+- support-aware
+- case-load-aware
+- continuity-aware
+- linkage-aware
+- issue-visible
 
 
 # ============================================================
@@ -10682,6 +11010,81 @@ Exhibition and event UI in Civilization must remain:
 Exhibition UI must treat venues
 as live public-event reality,
 not only as booking bookkeeping.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820018_ADMINISTRATIVE_SERVICE_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# ADMINISTRATIVE SERVICE OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: administrative-service-operation-ui
+component: administrative-service-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for administrative service operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Administrative-service UI must support:
+
+- service scope visibility
+- counter and queue visibility
+- case and process visibility
+- document and notice visibility
+- public information visibility
+- staffing visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- service_scope_tab
+- counter_and_queue_tab
+- case_and_process_tab
+- document_and_notice_tab
+- public_information_tab
+- staffing_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Administrative service operation UI architecture must remain:
+
+- service-aware
+- queue-aware
+- case-aware
+- public-information-aware
+- issue-visible
 
 
 # ============================================================
@@ -12464,6 +12867,81 @@ not only as visitor bookkeeping.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820020_POLICE_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# POLICE OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: police-operation-ui
+component: police-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for police operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Police UI must support:
+
+- incident intake visibility
+- patrol and dispatch visibility
+- case progression visibility
+- custody and capacity visibility
+- readiness and escalation visibility
+- stability visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- incident_and_intake_tab
+- patrol_and_dispatch_tab
+- case_and_process_tab
+- custody_and_capacity_tab
+- readiness_and_escalation_tab
+- stability_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Police operation UI architecture must remain:
+
+- incident-aware
+- dispatch-aware
+- custody-aware
+- escalation-aware
+- issue-visible
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820021_COMMUNITY_AND_LIFE_SUPPORT_UI_ARCHITECTURE.md
 # ============================================================
 
@@ -13063,6 +13541,152 @@ not only as support bookkeeping.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820021_FIRE_AND_RESCUE_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# FIRE AND RESCUE OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: fire-and-rescue-operation-ui
+component: fire-and-rescue-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for fire and rescue operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Fire and rescue UI must support:
+
+- dispatch visibility
+- emergency readiness visibility
+- firefighting and rescue visibility
+- equipment and supply visibility
+- evacuation and public safety visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- dispatch_tab
+- readiness_tab
+- firefighting_and_rescue_tab
+- equipment_and_supply_tab
+- evacuation_and_public_safety_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Fire and rescue operation UI architecture must remain:
+
+- dispatch-aware
+- readiness-aware
+- rescue-aware
+- public-safety-aware
+- issue-visible
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820022_JUDICIAL_FACILITY_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# JUDICIAL FACILITY OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: judicial-facility-operation-ui
+component: judicial-facility-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for judicial facility operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Judicial facility UI must support:
+
+- case intake visibility
+- hearing and process visibility
+- detention or release relation visibility
+- judgment and outcome visibility
+- backlog and queue visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- case_intake_tab
+- hearing_and_process_tab
+- detention_and_release_relation_tab
+- judgment_and_outcome_tab
+- backlog_and_queue_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Judicial facility operation UI architecture must remain:
+
+- case-aware
+- hearing-aware
+- judgment-aware
+- backlog-aware
+- issue-visible
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820022_LODGING_AND_STAY_UI_ARCHITECTURE.md
 # ============================================================
 
@@ -13568,6 +14192,81 @@ Lodging and stay UI in Civilization must remain:
 Lodging UI must treat stay facilities
 as live temporary-occupancy reality,
 not only as room bookkeeping.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/382.facility-ui/3820023_MILITARY_BASE_OPERATION_UI_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# MILITARY BASE OPERATION UI ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+scope: military-base-operation-ui
+component: military-base-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the canonical UI architecture
+for military base operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+Military-base UI must support:
+
+- readiness and alert visibility
+- force organization visibility
+- equipment visibility
+- supply and support visibility
+- training visibility
+- deployment-support visibility
+- issue, history, permission, and linked routes
+
+
+# ============================================================
+# 3. CANONICAL TABS
+# ============================================================
+
+Recommended manage tabs include:
+
+- summary_tab
+- readiness_and_alert_tab
+- force_organization_tab
+- equipment_tab
+- supply_and_support_tab
+- training_tab
+- deployment_support_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Military base operation UI architecture must remain:
+
+- readiness-aware
+- equipment-aware
+- support-aware
+- deployment-aware
+- issue-visible
 
 
 # ============================================================
@@ -33400,6 +34099,85 @@ from government or real-estate UI.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820014_LODGING_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# LODGING OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: lodging-operation-ui
+component: lodging-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for lodging operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- lodging_overview_screen
+- lodging_manage_screen
+- lodging_issue_screen
+- lodging_history_screen
+- lodging_permission_screen
+
+Optional where supported:
+
+- lodging_linked_screen
+- lodging_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: lodging_manage_screen
+route_key: facility/lodging/manage
+
+visible_tabs:
+- summary_tab
+- booking_and_assignment_tab
+- occupancy_and_utilization_tab
+- room_and_unit_tab
+- cleaning_and_turnover_tab
+- guest_and_support_tab
+- money_visibility_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Lodging UI must remain:
+
+- booking-aware
+- room-aware
+- turnover-aware
+- guest-support-aware
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820014_SECURITY_AND_JUDICIARY_UI_INTERFACE.md
 # ============================================================
 
@@ -34122,6 +34900,163 @@ from security or logistics UI.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820015_RESEARCH_AND_TECH_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# RESEARCH AND TECH OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: research-and-tech-operation-ui
+component: research-and-tech-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for research and tech operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- research_tech_overview_screen
+- research_tech_manage_screen
+- research_tech_issue_screen
+- research_tech_history_screen
+- research_tech_permission_screen
+
+Optional where supported:
+
+- research_tech_linked_screen
+- research_tech_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: research_tech_manage_screen
+route_key: facility/research-tech/manage
+
+visible_tabs:
+- summary_tab
+- program_and_focus_tab
+- laboratory_and_equipment_tab
+- output_and_progress_tab
+- staff_and_allocation_tab
+- budget_and_support_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Research and tech UI must remain:
+
+- program-aware
+- equipment-aware
+- progress-aware
+- allocation-aware
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820016_CULTURE_AND_LEISURE_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# CULTURE AND LEISURE OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: culture-and-leisure-operation-ui
+component: culture-and-leisure-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for culture and leisure operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- culture_leisure_overview_screen
+- culture_leisure_manage_screen
+- culture_leisure_issue_screen
+- culture_leisure_history_screen
+- culture_leisure_permission_screen
+
+Optional where supported:
+
+- culture_leisure_linked_screen
+- culture_leisure_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: culture_leisure_manage_screen
+route_key: facility/culture-leisure/manage
+
+visible_tabs:
+- summary_tab
+- visitor_and_flow_tab
+- program_and_activity_tab
+- atmosphere_and_condition_tab
+- appeal_and_visibility_tab
+- staffing_and_upkeep_tab
+- money_visibility_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Culture and leisure UI must remain:
+
+- visitor-aware
+- program-aware
+- appeal-aware
+- upkeep-aware
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820016_MEDIA_OPERATION_UI_INTERFACE.md
 # ============================================================
 
@@ -34482,6 +35417,85 @@ from streamer or exhibition UI.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820017_COMMUNITY_SUPPORT_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# COMMUNITY SUPPORT OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: community-support-operation-ui
+component: community-support-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for community support operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- community_support_overview_screen
+- community_support_manage_screen
+- community_support_issue_screen
+- community_support_history_screen
+- community_support_permission_screen
+
+Optional where supported:
+
+- community_support_linked_screen
+- community_support_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: community_support_manage_screen
+route_key: facility/community-support/manage
+
+visible_tabs:
+- summary_tab
+- access_and_eligibility_tab
+- case_load_tab
+- continuity_tab
+- service_scope_tab
+- linkage_tab
+- staffing_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Community support UI must remain:
+
+- support-aware
+- case-load-aware
+- continuity-aware
+- linkage-aware
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820017_EXHIBITION_AND_EVENT_UI_INTERFACE.md
 # ============================================================
 
@@ -34839,6 +35853,85 @@ readiness-visible,
 issue-visible,
 and explicitly separable
 from media or culture UI.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820018_ADMINISTRATIVE_SERVICE_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# ADMINISTRATIVE SERVICE OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: administrative-service-operation-ui
+component: administrative-service-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for administrative service operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- administrative_service_overview_screen
+- administrative_service_manage_screen
+- administrative_service_issue_screen
+- administrative_service_history_screen
+- administrative_service_permission_screen
+
+Optional where supported:
+
+- administrative_service_linked_screen
+- administrative_service_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: administrative_service_manage_screen
+route_key: facility/administrative-service/manage
+
+visible_tabs:
+- summary_tab
+- service_scope_tab
+- counter_and_queue_tab
+- case_and_process_tab
+- document_and_notice_tab
+- public_information_tab
+- staffing_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Administrative service UI must remain:
+
+- service-aware
+- queue-aware
+- case-aware
+- public-information-aware
 
 
 # ============================================================
@@ -35918,6 +37011,85 @@ from exhibition or media UI.
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820020_POLICE_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# POLICE OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: police-operation-ui
+component: police-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for police operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- police_overview_screen
+- police_manage_screen
+- police_issue_screen
+- police_history_screen
+- police_permission_screen
+
+Optional where supported:
+
+- police_linked_screen
+- police_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: police_manage_screen
+route_key: facility/police/manage
+
+visible_tabs:
+- summary_tab
+- incident_and_intake_tab
+- patrol_and_dispatch_tab
+- case_and_process_tab
+- custody_and_capacity_tab
+- readiness_and_escalation_tab
+- stability_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Police UI must remain:
+
+- incident-aware
+- dispatch-aware
+- custody-aware
+- escalation-aware
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820021_COMMUNITY_AND_LIFE_SUPPORT_UI_INTERFACE.md
 # ============================================================
 
@@ -36278,6 +37450,162 @@ continuity-visible,
 issue-visible,
 and explicitly separable
 from government or medical UI.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820021_FIRE_AND_RESCUE_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# FIRE AND RESCUE OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: fire-and-rescue-operation-ui
+component: fire-and-rescue-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for fire and rescue operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- fire_rescue_overview_screen
+- fire_rescue_manage_screen
+- fire_rescue_issue_screen
+- fire_rescue_history_screen
+- fire_rescue_permission_screen
+
+Optional where supported:
+
+- fire_rescue_linked_screen
+- fire_rescue_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: fire_rescue_manage_screen
+route_key: facility/fire-rescue/manage
+
+visible_tabs:
+- summary_tab
+- dispatch_tab
+- readiness_tab
+- firefighting_and_rescue_tab
+- equipment_and_supply_tab
+- evacuation_and_public_safety_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Fire and rescue UI must remain:
+
+- dispatch-aware
+- readiness-aware
+- rescue-aware
+- public-safety-aware
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820022_JUDICIAL_FACILITY_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# JUDICIAL FACILITY OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: judicial-facility-operation-ui
+component: judicial-facility-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for judicial facility operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- judicial_overview_screen
+- judicial_manage_screen
+- judicial_issue_screen
+- judicial_history_screen
+- judicial_permission_screen
+
+Optional where supported:
+
+- judicial_linked_screen
+- judicial_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: judicial_manage_screen
+route_key: facility/judicial/manage
+
+visible_tabs:
+- summary_tab
+- case_intake_tab
+- hearing_and_process_tab
+- detention_and_release_relation_tab
+- judgment_and_outcome_tab
+- backlog_and_queue_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Judicial facility UI must remain:
+
+- case-aware
+- hearing-aware
+- judgment-aware
+- backlog-aware
 
 
 # ============================================================
@@ -36643,6 +37971,85 @@ occupancy-visible,
 issue-visible,
 and explicitly separable
 from residence or real-estate UI.
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/090.interface/382.facility-ui/3820023_MILITARY_BASE_OPERATION_UI_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# MILITARY BASE OPERATION UI INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+scope: military-base-operation-ui
+component: military-base-operation-ui
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the UI interface
+for military base operation
+inside Civilization.
+
+
+# ============================================================
+# 2. CANONICAL SCREENS
+# ============================================================
+
+Canonical screens:
+
+- military_base_overview_screen
+- military_base_manage_screen
+- military_base_issue_screen
+- military_base_history_screen
+- military_base_permission_screen
+
+Optional where supported:
+
+- military_base_linked_screen
+- military_base_intervention_screen
+
+
+# ============================================================
+# 3. MANAGE SCREEN TABS
+# ============================================================
+
+screen_id: military_base_manage_screen
+route_key: facility/military-base/manage
+
+visible_tabs:
+- summary_tab
+- readiness_and_alert_tab
+- force_organization_tab
+- equipment_tab
+- supply_and_support_tab
+- training_tab
+- deployment_support_tab
+- issue_tab
+- automation_tab
+- kpi_tab
+- history_tab
+- permission_tab
+- linked_tab
+
+
+# ============================================================
+# 4. FINAL RULE
+# ============================================================
+
+Military base UI must remain:
+
+- readiness-aware
+- equipment-aware
+- support-aware
+- deployment-aware
 
 
 # ============================================================
@@ -46751,6 +48158,45 @@ Retail implementation must remain:
 - summary-first
 - explicitly actionable
 
+# ============================================================
+# SUPPLEMENT A. MARKETPLACE ENTRY RULE
+# ============================================================
+
+Retail operation UI may expose
+Marketplace entry
+as part of retail-side selling behavior.
+
+Representative Marketplace entry modes include:
+
+- company-filtered Marketplace entry
+- facility-filtered Marketplace entry
+- seller-side Marketplace operation entry
+- direct company sale posture
+- Marketplace sale posture
+
+Retail Marketplace entry must reuse
+canonical Marketplace routines.
+
+Retail UI must not create
+a separate retail-only Marketplace core.
+
+
+# ============================================================
+# SUPPLEMENT B. MARKETPLACE SELLER VISIBILITY RULE
+# ============================================================
+
+Where seller capability is enabled,
+retail UI should expose seller-side posture such as:
+
+- current listing visibility
+- listing blocked or review posture
+- order posture where relevant
+- payout or settlement visibility where relevant
+
+These views remain Marketplace-linked
+and do not replace retail operation truth.
+
+
 
 # ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820003_HOUSING_AND_RESIDENCE_UI_IMPLEMENTATION.md
@@ -47118,6 +48564,436 @@ Residence implementation must remain:
 - issue-visible
 - summary-first
 - explicitly separable from asset-only real-estate truth
+
+# ============================================================
+# SUPPLEMENT A. INTERIOR PLACEMENT RULE
+# ============================================================
+
+Residence UI may support
+interior placement behavior
+as part of residence operation.
+
+Representative interior placement contexts include:
+
+- room decoration
+- furniture placement
+- living-environment enhancement
+- support-item placement
+- residence-themed asset placement
+
+Interior placement must remain
+compatible with residence livability posture
+and must not silently break occupancy truth.
+
+
+# ============================================================
+# SUPPLEMENT B. OPTIONAL EXTERIOR PLACEMENT RULE
+# ============================================================
+
+Where the residence type allows it,
+residence UI may also support
+exterior placement behavior.
+
+Representative exterior contexts include:
+
+- exterior decoration
+- housing exterior design application
+- yard or frontage enhancement where applicable
+- optional building-skin or style application
+
+Exterior placement is optional by residence type.
+
+It must not be assumed
+for every residence configuration.
+
+
+# ============================================================
+# SUPPLEMENT C. PLACEMENT POSITION RULE
+# ============================================================
+
+Interior and optional exterior placement
+must remain part of residence-side operation,
+not pure Marketplace truth.
+
+Marketplace may provide the items or designs,
+but residence UI owns the placement context.
+
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820004_REAL_ESTATE_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# REAL ESTATE OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: real-estate-operation-ui-implementation
+component: real-estate-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for real-estate operation UI inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- REAL_ESTATE_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Real-estate UI must implement:
+
+- real_estate_overview_screen
+- real_estate_manage_screen
+- real_estate_issue_screen
+- real_estate_history_screen
+- real_estate_permission_screen
+
+Optional where supported:
+
+- real_estate_linked_screen
+- real_estate_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Real-estate overview must prioritize
+asset posture and occupancy posture.
+
+Initial priority:
+
+1. property identity
+2. property type
+3. occupancy posture
+4. listing or lease posture
+5. maintenance warning summary
+6. revenue or utilization summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Real-estate manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- property_and_unit_tab
+- occupancy_and_contract_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. property_and_unit_tab
+3. occupancy_and_contract_tab
+4. listing_and_market_tab
+5. maintenance_and_condition_tab
+6. tenant_and_resident_tab
+7. issue_tab
+8. money_visibility_tab
+9. automation_tab
+10. kpi_tab
+11. history_tab
+12. permission_tab
+13. linked_tab
+
+Occupancy, contract posture, and condition posture
+must become visible early.
+
+
+# ============================================================
+# 6. PROPERTY AND UNIT TAB IMPLEMENTATION
+# ============================================================
+
+Property and unit tab must expose
+asset and unit structure posture.
+
+It should load:
+
+- property group
+- unit count
+- property type
+- occupancy suitability posture
+- underuse indicators
+- overuse indicators
+- reallocation need
+
+Property changes must remain explicit
+and should not silently mutate
+tenant or resident truth.
+
+
+# ============================================================
+# 7. OCCUPANCY AND CONTRACT TAB IMPLEMENTATION
+# ============================================================
+
+Occupancy and contract tab is a high-priority surface.
+
+It must expose:
+
+- occupancy posture
+- vacancy posture
+- active contract posture
+- contract expiry or renewal posture
+- assignment mismatch indicators
+- unresolved allocation burden
+
+Changes should refresh:
+
+- occupancy and contract section
+- overview occupancy summary
+- issue indicators when relevant
+
+
+# ============================================================
+# 8. LISTING AND MARKET TAB IMPLEMENTATION
+# ============================================================
+
+Listing and market tab must expose
+property-market posture.
+
+It should load:
+
+- listing visibility
+- availability posture
+- sale or lease offering posture
+- marketability visibility
+- blocked publication indicators
+- seller-operation linkage where supported
+
+This tab may route into
+canonical Marketplace seller flow
+for property-related sale contexts,
+but must not duplicate Marketplace core.
+
+
+# ============================================================
+# 9. MAINTENANCE AND CONDITION TAB IMPLEMENTATION
+# ============================================================
+
+Maintenance and condition tab must expose
+asset quality and repair burden.
+
+It should load:
+
+- maintenance burden
+- repair backlog
+- habitability or usability posture
+- degradation indicators
+- urgent repair visibility
+- correction urgency
+
+Condition changes should refresh:
+
+- maintenance section
+- overview condition summary
+- issue indicators
+
+
+# ============================================================
+# 10. TENANT AND RESIDENT TAB IMPLEMENTATION
+# ============================================================
+
+Tenant and resident tab must expose
+occupant context posture.
+
+It should load:
+
+- tenant grouping
+- resident grouping where applicable
+- support burden
+- occupancy mismatch indicators
+- unresolved support indicators
+- reassignment need
+
+Support routes should preserve
+property orientation and returnability.
+
+
+# ============================================================
+# 11. MONEY VISIBILITY TAB IMPLEMENTATION
+# ============================================================
+
+Money visibility tab must expose
+revenue and utilization posture
+without redefining accounting truth.
+
+It should load:
+
+- lease posture
+- sale posture where applicable
+- utilization posture
+- underperforming asset indicators
+- correction need
+- monetization note where applicable
+
+Money actions must remain explicit.
+
+
+# ============================================================
+# 12. AUTOMATION TAB IMPLEMENTATION
+# ============================================================
+
+Real-estate automation must remain visible.
+
+It should expose:
+
+- automation enabled
+- active policy profile
+- automation visibility posture
+- threshold summary
+- recent automated changes
+
+Automation must not hide
+occupancy instability,
+contract burden,
+or maintenance degradation.
+
+
+# ============================================================
+# 13. ISSUE TAB IMPLEMENTATION
+# ============================================================
+
+Real-estate issue tab must centralize
+asset-operation and occupancy problems.
+
+Typical issue groups include:
+
+- vacancy imbalance
+- occupancy mismatch
+- contract instability
+- maintenance overload
+- habitability concern
+- listing blockage
+- urgent intervention trigger
+
+Issue handling must remain explicit
+and severity-aware.
+
+
+# ============================================================
+# 14. ROLE APPLICATION RULE
+# ============================================================
+
+Recommended role behavior:
+
+manager:
+- all tabs visible
+- mutation allowed where permitted
+
+owner_or_asset_operator:
+- all core tabs visible
+- selected high-impact actions may be constrained
+
+tenant_operator:
+- occupancy visibility
+- limited contract visibility
+- issue visibility
+- summary visibility
+
+resident:
+- limited resident-facing visibility only
+- no core asset mutation visibility
+
+Restrictions should preserve operational readability.
+
+
+# ============================================================
+# 15. LINKED FACILITY RULE
+# ============================================================
+
+Linked routes may include:
+
+- residence
+- company premises
+- community support
+- security
+- Marketplace seller entry where supported
+
+Linked routing must preserve
+source real-estate orientation.
+
+
+# ============================================================
+# 16. FINAL RULE
+# ============================================================
+
+Real-estate implementation must remain:
+
+- asset-visible
+- occupancy-visible
+- contract-visible
+- condition-visible
+- issue-visible
+- summary-first
+- clearly separable from residence-only or Marketplace-only truth
+
+# ============================================================
+# SUPPLEMENT A. REAL-ESTATE-DESIGN MARKETPLACE RULE
+# ============================================================
+
+Real-estate-related design sale
+must route through canonical Marketplace.
+
+Representative design-sale examples include:
+
+- building exterior design
+- housing interior design
+- housing exterior design
+- property-themed design variation items
+
+Real-estate design sale is Marketplace-centered.
+
+It must not create
+a separate real-estate-design payment core
+or separate Marketplace core.
+
+
+# ============================================================
+# SUPPLEMENT B. MARKETPLACE-ONLY DESIGN SALE POSITION
+# ============================================================
+
+Where design-sale behavior is exposed,
+the seller-side operation belongs to
+canonical Marketplace seller operation.
+
+Real-estate operation UI may expose
+entry into that seller flow,
+but design sale itself remains
+Marketplace seller truth.
+
+This keeps:
+
+- asset / contract / occupancy truth
+separate from
+- design listing / publication / sale truth.
+
 
 
 # ============================================================
@@ -47526,6 +49402,68 @@ Streamer agency implementation must remain:
 - mirrored-revenue-observable
 - summary-first
 - explicitly separated from StreamingOS-native truth
+
+# ============================================================
+# SUPPLEMENT A. MARKETPLACE ENTRY RULE
+# ============================================================
+
+Streamer agency UI may expose
+canonical Marketplace entry
+for agency-linked sale behavior.
+
+Representative Marketplace-linked contexts include:
+
+- ordinary goods sales
+- company store posture
+- event-linked limited sale
+- live-event-linked sale
+- agency-branded goods sale
+
+Streamer-agency Marketplace entry
+must reuse canonical Marketplace routines.
+
+It must not create
+a separate streamer-agency-only Marketplace core.
+
+
+# ============================================================
+# SUPPLEMENT B. EVENT-LINKED SALE RULE
+# ============================================================
+
+Streamer agency seller behavior
+may support event-linked limited sale
+through Marketplace seller operation.
+
+This may include:
+
+- live-event-linked digital goods
+- live-event-linked physical goods
+- event-participant-limited sale
+- event-window-limited sale
+
+The event venue may be digital-only,
+while goods may still be digital or physical.
+
+Fulfillment type must remain separate
+from event-venue type.
+
+
+# ============================================================
+# SUPPLEMENT C. SELLER VISIBILITY RULE
+# ============================================================
+
+Where seller capability is enabled,
+streamer agency UI should expose:
+
+- listing posture
+- review posture
+- fulfillment posture
+- payout / settlement posture
+- event-linked sale posture
+
+These are Marketplace-linked seller views,
+not replacements for agency roster or goods truth.
+
 
 
 # ============================================================
@@ -48208,6 +50146,636 @@ Hospital implementation must remain:
 - issue-visible
 - summary-first
 - clearly separable from welfare-only or civic-only truth
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820008_AGRICULTURE_AND_LIVESTOCK_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# AGRICULTURE AND LIVESTOCK OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: agriculture-and-livestock-operation-ui-implementation
+component: agriculture-and-livestock-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for agriculture and livestock operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- AGRICULTURE_AND_LIVESTOCK_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Agriculture and livestock UI must implement:
+
+- agriculture_overview_screen
+- agriculture_manage_screen
+- agriculture_issue_screen
+- agriculture_history_screen
+- agriculture_permission_screen
+
+Optional where supported:
+
+- agriculture_linked_screen
+- agriculture_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Agriculture overview must prioritize
+yield posture and resource sufficiency.
+
+Initial priority:
+
+1. farm identity
+2. production type
+3. crop or livestock posture
+4. resource posture
+5. risk warning summary
+6. output summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Agriculture manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- production_tab
+- land_and_resource_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. production_tab
+3. land_and_resource_tab
+4. seasonal_and_climate_tab
+5. storage_and_output_tab
+6. issue_tab
+7. staffing_tab
+8. automation_tab
+9. kpi_tab
+10. history_tab
+11. permission_tab
+12. linked_tab
+
+Production and resource posture
+must become visible early.
+
+
+# ============================================================
+# 6. PRODUCTION TAB IMPLEMENTATION
+# ============================================================
+
+Production tab must expose
+crop or livestock production posture.
+
+It should load:
+
+- production groups
+- current output posture
+- yield indicators
+- growth or health posture where applicable
+- unsupported area indicators
+- reconfiguration pressure
+
+Production changes should refresh:
+
+- production section
+- overview output summary
+- issue indicators when relevant
+
+
+# ============================================================
+# 7. LAND AND RESOURCE TAB IMPLEMENTATION
+# ============================================================
+
+Land and resource tab is a high-priority surface.
+
+It must expose:
+
+- land allocation posture
+- water posture
+- feed or input posture where applicable
+- soil or resource burden where applicable
+- shortage indicators
+- correction need
+
+Resource changes should refresh:
+
+- land/resource section
+- overview risk summary
+- issue indicators
+
+
+# ============================================================
+# 8. SEASONAL AND CLIMATE TAB IMPLEMENTATION
+# ============================================================
+
+Seasonal and climate tab must expose
+season-linked production risk.
+
+It should load:
+
+- season posture
+- climate stress posture
+- weather-linked burden where supported
+- instability indicators
+- mitigation posture
+- correction urgency
+
+Critical season or climate stress
+must appear on overview as well.
+
+
+# ============================================================
+# 9. STORAGE AND OUTPUT TAB IMPLEMENTATION
+# ============================================================
+
+Storage and output tab must expose
+post-production continuity.
+
+It should load:
+
+- storage posture
+- spoilage risk where applicable
+- output availability
+- reserve posture
+- transfer burden
+- linkage to market or logistics where supported
+
+Storage changes should refresh:
+
+- storage section
+- output summary
+- issue indicators
+
+
+# ============================================================
+# 10. STAFFING TAB IMPLEMENTATION
+# ============================================================
+
+Staffing tab must expose
+farm-operation staffing sufficiency.
+
+It should load:
+
+- role groups
+- assigned staff counts
+- workload posture
+- seasonal burden
+- support gap indicators
+- reassignment need
+
+Staffing changes should refresh:
+
+- staffing tab
+- production posture when relevant
+- issue indicators
+
+
+# ============================================================
+# 11. AUTOMATION TAB IMPLEMENTATION
+# ============================================================
+
+Agriculture automation must remain visible.
+
+It should expose:
+
+- automation enabled
+- active policy profile
+- automation visibility posture
+- threshold summary
+- recent automated changes
+
+Automation must not hide
+production decline,
+resource shortage,
+or climate stress.
+
+
+# ============================================================
+# 12. ISSUE TAB IMPLEMENTATION
+# ============================================================
+
+Agriculture issue tab must centralize
+production and resource problems.
+
+Typical issue groups include:
+
+- yield decline
+- resource shortage
+- climate stress
+- storage loss
+- livestock health concern where applicable
+- staffing shortage
+- output instability
+
+Issue handling must remain explicit
+and severity-aware.
+
+
+# ============================================================
+# 13. ROLE APPLICATION RULE
+# ============================================================
+
+Recommended role behavior:
+
+manager:
+- all tabs visible
+- mutation allowed where permitted
+
+farm_operator:
+- production visibility
+- resource visibility
+- issue visibility
+- limited history visibility
+
+support_operator:
+- staffing visibility
+- storage visibility
+- issue visibility
+- summary visibility
+
+Restrictions should preserve operational readability.
+
+
+# ============================================================
+# 14. LINKED FACILITY RULE
+# ============================================================
+
+Linked routes may include:
+
+- market
+- logistics
+- community support
+- infrastructure / utility
+- famine / food-risk visibility where surfaced
+
+Linked routing must preserve
+source agriculture orientation.
+
+
+# ============================================================
+# 15. FINAL RULE
+# ============================================================
+
+Agriculture and livestock implementation must remain:
+
+- production-visible
+- resource-visible
+- season-visible
+- storage-visible
+- issue-visible
+- summary-first
+- clearly separable from market or famine-only truth
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820009_FOOD_SERVICE_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# FOOD SERVICE OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: food-service-operation-ui-implementation
+component: food-service-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for food service operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- FOOD_SERVICE_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Food service UI must implement:
+
+- food_service_overview_screen
+- food_service_manage_screen
+- food_service_issue_screen
+- food_service_history_screen
+- food_service_permission_screen
+
+Optional where supported:
+
+- food_service_linked_screen
+- food_service_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Food service overview must prioritize
+service continuity and ingredient posture.
+
+Initial priority:
+
+1. facility identity
+2. service type
+3. operation posture
+4. ingredient posture
+5. hygiene warning summary
+6. staffing or queue summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Food service manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- menu_and_service_tab
+- ingredient_and_stock_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. menu_and_service_tab
+3. ingredient_and_stock_tab
+4. kitchen_and_hygiene_tab
+5. queue_and_customer_flow_tab
+6. issue_tab
+7. staffing_tab
+8. automation_tab
+9. kpi_tab
+10. history_tab
+11. permission_tab
+12. linked_tab
+
+Service and ingredient posture
+must become visible early.
+
+
+# ============================================================
+# 6. MENU AND SERVICE TAB IMPLEMENTATION
+# ============================================================
+
+Menu and service tab must expose
+offerings and service posture.
+
+It should load:
+
+- menu groups
+- active service offerings
+- unsupported area indicators
+- service instability indicators
+- reprioritization need
+- demand pressure where supported
+
+Menu changes should refresh:
+
+- menu section
+- overview service summary
+- issue indicators when relevant
+
+
+# ============================================================
+# 7. INGREDIENT AND STOCK TAB IMPLEMENTATION
+# ============================================================
+
+Ingredient and stock tab is a high-priority surface.
+
+It must expose:
+
+- ingredient groups
+- stock posture
+- shortage indicators
+- freshness posture where applicable
+- spoilage indicators
+- replenishment need
+
+Ingredient changes should refresh:
+
+- ingredient section
+- overview ingredient summary
+- issue indicators
+
+
+# ============================================================
+# 8. KITCHEN AND HYGIENE TAB IMPLEMENTATION
+# ============================================================
+
+Kitchen and hygiene tab must expose
+food-safety and preparation posture.
+
+It should load:
+
+- kitchen readiness
+- hygiene posture
+- cleanliness posture
+- contamination concern where supported
+- correction urgency
+- blocked operation indicators
+
+Critical hygiene problems
+must appear on overview as well.
+
+
+# ============================================================
+# 9. QUEUE AND CUSTOMER FLOW TAB IMPLEMENTATION
+# ============================================================
+
+Queue and customer flow tab must expose
+frontline service burden.
+
+It should load:
+
+- queue posture
+- waiting burden
+- service speed posture
+- bottleneck indicators
+- overload indicators
+- corrective need
+
+Queue changes should refresh:
+
+- queue section
+- overview burden summary
+- issue indicators
+
+
+# ============================================================
+# 10. STAFFING TAB IMPLEMENTATION
+# ============================================================
+
+Staffing tab must expose
+service-operation staffing sufficiency.
+
+It should load:
+
+- role groups
+- assigned staff counts
+- coverage posture
+- kitchen burden
+- counter burden
+- reassignment need
+
+Staffing changes should refresh:
+
+- staffing tab
+- queue or hygiene posture when relevant
+- issue indicators
+
+
+# ============================================================
+# 11. AUTOMATION TAB IMPLEMENTATION
+# ============================================================
+
+Food service automation must remain visible.
+
+It should expose:
+
+- automation enabled
+- active policy profile
+- automation visibility posture
+- threshold summary
+- recent automated changes
+
+Automation must not hide
+ingredient shortage,
+hygiene risk,
+or queue overload.
+
+
+# ============================================================
+# 12. ISSUE TAB IMPLEMENTATION
+# ============================================================
+
+Food service issue tab must centralize
+service and food-safety problems.
+
+Typical issue groups include:
+
+- ingredient shortage
+- spoilage risk
+- hygiene concern
+- staffing shortage
+- queue overload
+- service instability
+- urgent intervention trigger
+
+Issue handling must remain explicit
+and severity-aware.
+
+
+# ============================================================
+# 13. ROLE APPLICATION RULE
+# ============================================================
+
+Recommended role behavior:
+
+manager:
+- all tabs visible
+- mutation allowed where permitted
+
+kitchen_operator:
+- ingredient visibility
+- kitchen/hygiene visibility
+- issue visibility
+- limited history visibility
+
+counter_operator:
+- queue visibility
+- limited menu visibility
+- issue visibility
+- summary visibility
+
+Restrictions should preserve operational readability.
+
+
+# ============================================================
+# 14. LINKED FACILITY RULE
+# ============================================================
+
+Linked routes may include:
+
+- retail
+- market
+- logistics
+- community support
+- health-related warning visibility where surfaced
+
+Linked routing must preserve
+source food-service orientation.
+
+
+# ============================================================
+# 15. FINAL RULE
+# ============================================================
+
+Food-service implementation must remain:
+
+- service-visible
+- ingredient-visible
+- hygiene-visible
+- queue-visible
+- issue-visible
+- summary-first
+- clearly separable from retail or hospital-only truth
 
 
 # ============================================================
@@ -49279,6 +51847,437 @@ Government implementation must remain:
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820013_FINANCE_AND_SECURITIES_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# FINANCE AND SECURITIES UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: finance-and-securities-ui-implementation
+component: finance-and-securities-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for finance and securities UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- FINANCE_AND_SECURITIES_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Finance and securities UI must implement:
+
+- finance_overview_screen
+- finance_manage_screen
+- finance_issue_screen
+- finance_history_screen
+- finance_permission_screen
+
+Optional where supported:
+
+- finance_linked_screen
+- finance_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Finance overview must prioritize
+account posture and risk posture.
+
+Initial priority:
+
+1. institution identity
+2. financial service type
+3. balance or account posture
+4. risk posture
+5. liquidity or settlement warning summary
+6. compliance or restriction summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Finance manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- account_and_product_tab
+- settlement_and_flow_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. account_and_product_tab
+3. settlement_and_flow_tab
+4. portfolio_and_position_tab
+5. risk_and_exposure_tab
+6. compliance_and_restriction_tab
+7. issue_tab
+8. automation_tab
+9. kpi_tab
+10. history_tab
+11. permission_tab
+12. linked_tab
+
+Account, settlement, and risk posture
+must become visible early.
+
+
+# ============================================================
+# 6. ACCOUNT AND PRODUCT TAB IMPLEMENTATION
+# ============================================================
+
+Account and product tab must expose
+service and product posture.
+
+It should load:
+
+- account groups
+- active service or product groups
+- unsupported area indicators
+- concentration indicators
+- product imbalance indicators
+- correction need
+
+Product changes should refresh:
+
+- account/product section
+- overview service summary
+- issue indicators when relevant
+
+
+# ============================================================
+# 7. SETTLEMENT AND FLOW TAB IMPLEMENTATION
+# ============================================================
+
+Settlement and flow tab is a high-priority surface.
+
+It must expose:
+
+- settlement posture
+- transfer or flow posture
+- pending indicators
+- delay indicators
+- blockage indicators
+- corrective urgency
+
+Settlement changes should refresh:
+
+- settlement section
+- overview liquidity or flow summary
+- issue indicators
+
+
+# ============================================================
+# 8. PORTFOLIO AND POSITION TAB IMPLEMENTATION
+# ============================================================
+
+Portfolio and position tab must expose
+position posture where applicable.
+
+It should load:
+
+- portfolio groups
+- position posture
+- imbalance indicators
+- concentration indicators
+- exposure posture
+- corrective need
+
+This tab must remain a visibility and controlled-operation surface,
+not a hidden mutation surface.
+
+
+# ============================================================
+# 9. RISK AND EXPOSURE TAB IMPLEMENTATION
+# ============================================================
+
+Risk and exposure tab must expose
+financial risk posture clearly.
+
+It should load:
+
+- exposure posture
+- concentration posture
+- unstable-position indicators
+- liquidity concern
+- settlement risk
+- escalation need
+
+Critical risk posture must appear
+on overview as well.
+
+
+# ============================================================
+# 10. COMPLIANCE AND RESTRICTION TAB IMPLEMENTATION
+# ============================================================
+
+Compliance and restriction tab must expose
+control posture.
+
+It should load:
+
+- compliance posture
+- restriction posture
+- blocked action indicators
+- review_hold indicators
+- unresolved control burden
+- correction need
+
+Compliance restrictions must be readable,
+not hidden silently.
+
+
+# ============================================================
+# 11. AUTOMATION TAB IMPLEMENTATION
+# ============================================================
+
+Finance automation must remain visible.
+
+It should expose:
+
+- automation enabled
+- active policy profile
+- automation visibility posture
+- threshold summary
+- recent automated changes
+
+Automation must not hide
+risk spikes,
+settlement blockage,
+or compliance concern.
+
+
+# ============================================================
+# 12. ISSUE TAB IMPLEMENTATION
+# ============================================================
+
+Finance issue tab must centralize
+financial-operation problems.
+
+Typical issue groups include:
+
+- settlement blockage
+- liquidity concern
+- exposure spike
+- concentration concern
+- compliance hold
+- suspicious-operation concern
+- urgent intervention trigger
+
+Issue handling must remain explicit
+and severity-aware.
+
+
+# ============================================================
+# 13. ROLE APPLICATION RULE
+# ============================================================
+
+Recommended role behavior:
+
+manager:
+- all tabs visible
+- mutation allowed where permitted
+
+operations_operator:
+- settlement visibility
+- limited account visibility
+- issue visibility
+- limited history visibility
+
+risk_operator:
+- risk visibility
+- portfolio visibility
+- issue visibility
+- summary visibility
+
+compliance_operator:
+- compliance visibility
+- issue visibility
+- limited settlement visibility
+- summary visibility
+
+Restrictions should preserve operational readability.
+
+
+# ============================================================
+# 14. LINKED FACILITY RULE
+# ============================================================
+
+Linked routes may include:
+
+- Marketplace settlement visibility
+- company premises
+- government and civic service
+- identity / anti-fraud related visibility where surfaced
+- district or city financial context where supported
+
+Linked routing must preserve
+source finance orientation.
+
+
+# ============================================================
+# 15. FINAL RULE
+# ============================================================
+
+Finance and securities implementation must remain:
+
+- account-visible
+- settlement-visible
+- risk-visible
+- compliance-visible
+- issue-visible
+- summary-first
+- clearly separable from Marketplace or governance-only truth
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820014_LODGING_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# LODGING OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: lodging-operation-ui-implementation
+component: lodging-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for lodging operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- LODGING_OPERATION_UI_ARCHITECTURE
+- LODGING_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Lodging UI must implement:
+
+- lodging_overview_screen
+- lodging_manage_screen
+- lodging_issue_screen
+- lodging_history_screen
+- lodging_permission_screen
+
+Optional where supported:
+
+- lodging_linked_screen
+- lodging_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Lodging overview must prioritize:
+
+1. facility identity
+2. booking posture
+3. occupancy posture
+4. room/unit posture
+5. cleaning/turnover posture
+6. guest-support summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Lodging manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- booking_and_assignment_tab
+- occupancy_and_utilization_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. booking_and_assignment_tab
+3. occupancy_and_utilization_tab
+4. room_and_unit_tab
+5. cleaning_and_turnover_tab
+6. guest_and_support_tab
+7. money_visibility_tab
+8. issue_tab
+9. automation_tab
+10. kpi_tab
+11. history_tab
+12. permission_tab
+13. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Lodging UI implementation must remain:
+
+- booking-aware
+- room-aware
+- turnover-aware
+- guest-support-aware
+- issue-visible
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820014_SECURITY_AND_JUDICIARY_UI_IMPLEMENTATION.md
 # ============================================================
 
@@ -49950,6 +52949,237 @@ Military implementation must remain:
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820015_RESEARCH_AND_TECH_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# RESEARCH AND TECH OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: research-and-tech-operation-ui-implementation
+component: research-and-tech-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for research and tech operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- RESEARCH_AND_TECH_OPERATION_UI_ARCHITECTURE
+- RESEARCH_AND_TECH_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Research/tech UI must implement:
+
+- research_tech_overview_screen
+- research_tech_manage_screen
+- research_tech_issue_screen
+- research_tech_history_screen
+- research_tech_permission_screen
+
+Optional where supported:
+
+- research_tech_linked_screen
+- research_tech_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Research/tech overview must prioritize:
+
+1. facility identity
+2. research program posture
+3. lab/equipment posture
+4. progress/output posture
+5. staff/allocation posture
+6. budget/support summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Research/tech manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- program_and_focus_tab
+- output_and_progress_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. program_and_focus_tab
+3. laboratory_and_equipment_tab
+4. output_and_progress_tab
+5. staff_and_allocation_tab
+6. budget_and_support_tab
+7. issue_tab
+8. automation_tab
+9. kpi_tab
+10. history_tab
+11. permission_tab
+12. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Research and tech UI implementation must remain:
+
+- program-aware
+- equipment-aware
+- progress-aware
+- allocation-aware
+- issue-visible
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820016_CULTURE_AND_LEISURE_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# CULTURE AND LEISURE OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: culture-and-leisure-operation-ui-implementation
+component: culture-and-leisure-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for culture and leisure operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- CULTURE_AND_LEISURE_OPERATION_UI_ARCHITECTURE
+- CULTURE_AND_LEISURE_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Culture/leisure UI must implement:
+
+- culture_leisure_overview_screen
+- culture_leisure_manage_screen
+- culture_leisure_issue_screen
+- culture_leisure_history_screen
+- culture_leisure_permission_screen
+
+Optional where supported:
+
+- culture_leisure_linked_screen
+- culture_leisure_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Culture/leisure overview must prioritize:
+
+1. facility identity
+2. visitor posture
+3. program posture
+4. atmosphere/condition posture
+5. appeal posture
+6. upkeep summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Culture/leisure manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- visitor_and_flow_tab
+- program_and_activity_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. visitor_and_flow_tab
+3. program_and_activity_tab
+4. atmosphere_and_condition_tab
+5. appeal_and_visibility_tab
+6. staffing_and_upkeep_tab
+7. money_visibility_tab
+8. issue_tab
+9. automation_tab
+10. kpi_tab
+11. history_tab
+12. permission_tab
+13. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Culture and leisure UI implementation must remain:
+
+- visitor-aware
+- program-aware
+- appeal-aware
+- upkeep-aware
+- issue-visible
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820016_MEDIA_OPERATION_UI_IMPLEMENTATION.md
 # ============================================================
 
@@ -50280,6 +53510,122 @@ Media implementation must remain:
 - issue-visible
 - summary-first
 - clearly separable from streamer or exhibition-only truth
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820017_COMMUNITY_SUPPORT_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# COMMUNITY SUPPORT OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: community-support-operation-ui-implementation
+component: community-support-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for community support operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- COMMUNITY_SUPPORT_OPERATION_UI_ARCHITECTURE
+- COMMUNITY_SUPPORT_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Community-support UI must implement:
+
+- community_support_overview_screen
+- community_support_manage_screen
+- community_support_issue_screen
+- community_support_history_screen
+- community_support_permission_screen
+
+Optional where supported:
+
+- community_support_linked_screen
+- community_support_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Community-support overview must prioritize:
+
+1. facility identity
+2. access/eligibility posture
+3. case-load posture
+4. continuity posture
+5. service-scope posture
+6. linkage/staffing summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Community-support manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- access_and_eligibility_tab
+- case_load_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. access_and_eligibility_tab
+3. case_load_tab
+4. continuity_tab
+5. service_scope_tab
+6. linkage_tab
+7. staffing_tab
+8. issue_tab
+9. automation_tab
+10. kpi_tab
+11. history_tab
+12. permission_tab
+13. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Community support UI implementation must remain:
+
+- support-aware
+- case-load-aware
+- continuity-aware
+- linkage-aware
+- issue-visible
 
 
 # ============================================================
@@ -50617,6 +53963,122 @@ Exhibition implementation must remain:
 - issue-visible
 - summary-first
 - clearly separable from media or culture-only truth
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820018_ADMINISTRATIVE_SERVICE_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# ADMINISTRATIVE SERVICE OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: administrative-service-operation-ui-implementation
+component: administrative-service-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for administrative service operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- ADMINISTRATIVE_SERVICE_OPERATION_UI_ARCHITECTURE
+- ADMINISTRATIVE_SERVICE_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Administrative-service UI must implement:
+
+- administrative_service_overview_screen
+- administrative_service_manage_screen
+- administrative_service_issue_screen
+- administrative_service_history_screen
+- administrative_service_permission_screen
+
+Optional where supported:
+
+- administrative_service_linked_screen
+- administrative_service_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Administrative-service overview must prioritize:
+
+1. facility identity
+2. service-scope posture
+3. counter/queue posture
+4. case/process posture
+5. document/notice posture
+6. public-information/staffing summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Administrative-service manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- service_scope_tab
+- counter_and_queue_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. service_scope_tab
+3. counter_and_queue_tab
+4. case_and_process_tab
+5. document_and_notice_tab
+6. public_information_tab
+7. staffing_tab
+8. issue_tab
+9. automation_tab
+10. kpi_tab
+11. history_tab
+12. permission_tab
+13. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Administrative service UI implementation must remain:
+
+- service-aware
+- queue-aware
+- case-aware
+- public-information-aware
+- issue-visible
 
 
 # ============================================================
@@ -51293,6 +54755,167 @@ Infrastructure implementation must remain:
 - summary-first
 - clearly separable from logistics or manufacturing-only truth
 
+# ============================================================
+# SUPPLEMENT A. SYSTEM-ONLY INFRASTRUCTURE PLACEMENT RULE
+# ============================================================
+
+Infrastructure UI may include
+infrastructure placement capability.
+
+However,
+infrastructure placement is system-only.
+
+It must not be available
+to ordinary users,
+ordinary tenant operators,
+or ordinary facility operators.
+
+Infrastructure placement requires
+system-level authority.
+
+
+# ============================================================
+# SUPPLEMENT B. OPERATION VS PLACEMENT SEPARATION
+# ============================================================
+
+Operational infrastructure management
+and infrastructure placement
+must remain distinct.
+
+Operational infrastructure UI covers:
+
+- coverage visibility
+- supply posture
+- outage posture
+- dependency posture
+- maintenance posture
+- restoration posture
+
+Infrastructure placement UI covers:
+
+- infrastructure new placement
+- extension of infrastructure coverage
+- node placement
+- route or line placement
+- connection changes
+- placement validation
+- placement confirmation
+
+These must not be collapsed
+into one ambiguous operation surface.
+
+
+# ============================================================
+# SUPPLEMENT C. SYSTEM AUTHORITY RULE
+# ============================================================
+
+Infrastructure placement must require
+system-level authority.
+
+Representative system-only roles may include:
+
+- system operator
+- system builder
+- system infrastructure authority
+
+If a user does not have
+required system authority,
+the UI must:
+
+- hide placement action
+or
+- show blocked state explicitly
+
+Ordinary users must not be able
+to execute infrastructure placement.
+
+
+# ============================================================
+# SUPPLEMENT D. PLACEMENT VALIDATION RULE
+# ============================================================
+
+Infrastructure placement must remain
+explicit and validation-based.
+
+Representative validation concerns include:
+
+- placement target validity
+- route or line continuity validity
+- node compatibility
+- dependency compatibility
+- overlap conflict
+- supply impact posture
+- coverage impact posture
+- blocked placement area
+- required connection posture
+
+Placement must not be finalized
+without explicit validation result.
+
+
+# ============================================================
+# SUPPLEMENT E. IMPACT VISIBILITY RULE
+# ============================================================
+
+Before final placement confirmation,
+the UI should expose impact visibility such as:
+
+- expected coverage change
+- expected supply change
+- expected dependency change
+- expected affected region posture
+- expected service disruption risk where applicable
+
+Placement impact must be readable
+before confirmation.
+
+
+# ============================================================
+# SUPPLEMENT F. CONFIRMATION RULE
+# ============================================================
+
+Infrastructure placement is a high-impact action.
+
+It must require explicit confirmation.
+
+Placement must not occur
+as a side effect of simple map navigation
+or tentative preview.
+
+
+# ============================================================
+# SUPPLEMENT G. HISTORY RULE
+# ============================================================
+
+Completed infrastructure placement
+must remain visible in history.
+
+Representative recorded actions include:
+
+- infrastructure created
+- infrastructure extended
+- connection changed
+- placement cancelled
+- placement failed
+- placement reverted where supported
+
+Placement history must remain traceable.
+
+
+# ============================================================
+# SUPPLEMENT H. FINAL INFRASTRUCTURE PLACEMENT RULE
+# ============================================================
+
+Infrastructure placement inside infrastructure UI must remain:
+
+- system-only
+- validation-based
+- confirmation-required
+- impact-visible
+- traceable
+- clearly separated from ordinary infrastructure operation
+
+
 
 # ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820020_CULTURE_AND_LEISURE_UI_IMPLEMENTATION.md
@@ -51630,6 +55253,122 @@ Culture and leisure implementation must remain:
 - issue-visible
 - summary-first
 - clearly separable from exhibition or media-only truth
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820020_POLICE_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# POLICE OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: police-operation-ui-implementation
+component: police-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for police operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- POLICE_OPERATION_UI_ARCHITECTURE
+- POLICE_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Police UI must implement:
+
+- police_overview_screen
+- police_manage_screen
+- police_issue_screen
+- police_history_screen
+- police_permission_screen
+
+Optional where supported:
+
+- police_linked_screen
+- police_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Police overview must prioritize:
+
+1. facility identity
+2. incident/intake posture
+3. patrol/dispatch posture
+4. case progression posture
+5. custody/capacity posture
+6. readiness/stability summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Police manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- incident_and_intake_tab
+- patrol_and_dispatch_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. incident_and_intake_tab
+3. patrol_and_dispatch_tab
+4. case_and_process_tab
+5. custody_and_capacity_tab
+6. readiness_and_escalation_tab
+7. stability_tab
+8. issue_tab
+9. automation_tab
+10. kpi_tab
+11. history_tab
+12. permission_tab
+13. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Police UI implementation must remain:
+
+- incident-aware
+- dispatch-aware
+- custody-aware
+- escalation-aware
+- issue-visible
 
 
 # ============================================================
@@ -51971,6 +55710,236 @@ Community support implementation must remain:
 
 
 # ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820021_FIRE_AND_RESCUE_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# FIRE AND RESCUE OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: fire-and-rescue-operation-ui-implementation
+component: fire-and-rescue-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for fire and rescue operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- FIRE_AND_RESCUE_OPERATION_UI_ARCHITECTURE
+- FIRE_AND_RESCUE_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Fire/rescue UI must implement:
+
+- fire_rescue_overview_screen
+- fire_rescue_manage_screen
+- fire_rescue_issue_screen
+- fire_rescue_history_screen
+- fire_rescue_permission_screen
+
+Optional where supported:
+
+- fire_rescue_linked_screen
+- fire_rescue_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Fire/rescue overview must prioritize:
+
+1. facility identity
+2. dispatch posture
+3. readiness posture
+4. firefighting/rescue posture
+5. equipment/supply posture
+6. evacuation/public-safety summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Fire/rescue manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- dispatch_tab
+- readiness_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. dispatch_tab
+3. readiness_tab
+4. firefighting_and_rescue_tab
+5. equipment_and_supply_tab
+6. evacuation_and_public_safety_tab
+7. issue_tab
+8. automation_tab
+9. kpi_tab
+10. history_tab
+11. permission_tab
+12. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Fire and rescue UI implementation must remain:
+
+- dispatch-aware
+- readiness-aware
+- rescue-aware
+- public-safety-aware
+- issue-visible
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820022_JUDICIAL_FACILITY_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# JUDICIAL FACILITY OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: judicial-facility-operation-ui-implementation
+component: judicial-facility-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for judicial facility operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- JUDICIAL_FACILITY_OPERATION_UI_ARCHITECTURE
+- JUDICIAL_FACILITY_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Judicial UI must implement:
+
+- judicial_overview_screen
+- judicial_manage_screen
+- judicial_issue_screen
+- judicial_history_screen
+- judicial_permission_screen
+
+Optional where supported:
+
+- judicial_linked_screen
+- judicial_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Judicial overview must prioritize:
+
+1. facility identity
+2. case-intake posture
+3. hearing/process posture
+4. detention/release relation posture
+5. judgment/outcome posture
+6. backlog summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Judicial manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- case_intake_tab
+- hearing_and_process_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. case_intake_tab
+3. hearing_and_process_tab
+4. detention_and_release_relation_tab
+5. judgment_and_outcome_tab
+6. backlog_and_queue_tab
+7. issue_tab
+8. automation_tab
+9. kpi_tab
+10. history_tab
+11. permission_tab
+12. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Judicial facility UI implementation must remain:
+
+- case-aware
+- hearing-aware
+- judgment-aware
+- backlog-aware
+- issue-visible
+
+
+# ============================================================
 # FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820022_LODGING_AND_STAY_UI_IMPLEMENTATION.md
 # ============================================================
 
@@ -52308,6 +56277,122 @@ Lodging implementation must remain:
 - issue-visible
 - summary-first
 - clearly separable from residence or real-estate-only truth
+
+
+# ============================================================
+# FILE: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/120.implementation/382.facility-ui/3820023_MILITARY_BASE_OPERATION_UI_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# MILITARY BASE OPERATION UI IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+scope: military-base-operation-ui-implementation
+component: military-base-operation-ui-implementation
+
+owner: Boss
+prepared_by: Zero
+
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+Define the implementation design
+for military base operation UI
+inside Civilization.
+
+This document must align with:
+
+- CIVILIZATION_FACILITY_UI_IMPLEMENTATION
+- MILITARY_BASE_OPERATION_UI_ARCHITECTURE
+- MILITARY_BASE_OPERATION_UI_INTERFACE
+
+
+# ============================================================
+# 2. CANONICAL SCREEN STACK
+# ============================================================
+
+Military-base UI must implement:
+
+- military_base_overview_screen
+- military_base_manage_screen
+- military_base_issue_screen
+- military_base_history_screen
+- military_base_permission_screen
+
+Optional where supported:
+
+- military_base_linked_screen
+- military_base_intervention_screen
+
+
+# ============================================================
+# 3. OVERVIEW INITIAL LOAD RULE
+# ============================================================
+
+Military-base overview must prioritize:
+
+1. facility identity
+2. readiness/alert posture
+3. force-organization posture
+4. equipment posture
+5. supply/support posture
+6. training/deployment summary
+7. KPI strip
+8. recent issue summary
+9. recent history summary
+
+
+# ============================================================
+# 4. MANAGE DEFAULT TAB RULE
+# ============================================================
+
+Military-base manage must default to:
+
+- summary_tab
+
+Fallback order:
+
+- readiness_and_alert_tab
+- force_organization_tab
+- issue_tab
+
+
+# ============================================================
+# 5. TAB LOADING ORDER
+# ============================================================
+
+Recommended loading order:
+
+1. summary_tab
+2. readiness_and_alert_tab
+3. force_organization_tab
+4. equipment_tab
+5. supply_and_support_tab
+6. training_tab
+7. deployment_support_tab
+8. issue_tab
+9. automation_tab
+10. kpi_tab
+11. history_tab
+12. permission_tab
+13. linked_tab
+
+
+# ============================================================
+# 6. FINAL RULE
+# ============================================================
+
+Military base UI implementation must remain:
+
+- readiness-aware
+- equipment-aware
+- support-aware
+- deployment-aware
+- issue-visible
 
 
 # ============================================================
