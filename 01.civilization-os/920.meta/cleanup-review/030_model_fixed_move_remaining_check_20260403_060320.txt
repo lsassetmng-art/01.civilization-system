@@ -1,0 +1,127 @@
+# ============================================================
+# CHECK
+# ============================================================
+generated_at: 2026-04-03 06:03:34 +0900
+base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model
+
+============================================================
+1. REMAINING CHILD DIRS UNDER SUBFOLDERS
+============================================================
+[HAS_CHILD_DIRS] 003.foundation/020.layer-boundary
+003.foundation/020.layer-boundary/010.canonical
+003.foundation/020.layer-boundary/030.binding
+
+[HAS_CHILD_DIRS] 005.story/020.historical-progression
+005.story/020.historical-progression/140.social-culture
+005.story/020.historical-progression/300.early-life-and-childhood-event-seed
+005.story/020.historical-progression/304.post-graduation-and-life-course-branching-seed
+005.story/020.historical-progression/305.life-course-and-family-timing-seed
+005.story/020.historical-progression/306.end-of-life-inheritance-and-succession-seed
+005.story/020.historical-progression/312.civic-psychology-and-value-axis-seed
+005.story/020.historical-progression/313.family-culture-and-relationship-psychology-seed
+005.story/020.historical-progression/314.food-dining-home-cooking-and-alcohol-culture-seed
+005.story/020.historical-progression/315.appearance-clothing-uniform-and-formalwear-culture-seed
+005.story/020.historical-progression/316.living-space-room-layout-and-cohabitation-culture-seed
+005.story/020.historical-progression/317.leisure-holiday-friendship-and-play-culture-seed
+005.story/020.historical-progression/318.communication-register-politeness-and-social-distance-seed
+005.story/020.historical-progression/319.body-aesthetic-cleanliness-scent-makeup-hair-culture-seed
+005.story/020.historical-progression/320.time-rhythm-punctuality-and-work-life-boundary-seed
+005.story/020.historical-progression/321.mobility-walking-rail-car-ship-and-distance-sense-seed
+005.story/020.historical-progression/323.media-information-and-rumor-culture-seed
+005.story/020.historical-progression/408.media-and-information-war-play
+005.story/020.historical-progression/409.personal-rise-and-fall-play
+005.story/020.historical-progression/410.religion-operations
+005.story/020.historical-progression/450.culture-tourism
+
+[HAS_CHILD_DIRS] 011.economy/070.manufacturing
+011.economy/070.manufacturing/267.industry-packs
+011.economy/070.manufacturing/268.industry-packs-phase2
+
+[HAS_CHILD_DIRS] 011.economy/080.food-service
+011.economy/080.food-service/434.food-service-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 011.economy/090.tax-and-settlement
+011.economy/090.tax-and-settlement/309.household-economy-and-cost-burden-seed
+
+[HAS_CHILD_DIRS] 011.economy/100.daily-necessities-and-self-sufficiency
+011.economy/100.daily-necessities-and-self-sufficiency/428.daily-necessities-and-self-sufficiency
+
+[HAS_CHILD_DIRS] 011.economy/110.market-play-and-economic-activity
+011.economy/110.market-play-and-economic-activity/100.civil-sectors
+011.economy/110.market-play-and-economic-activity/140.marketplace-platform
+011.economy/110.market-play-and-economic-activity/141.marketplace-transfer
+011.economy/110.market-play-and-economic-activity/190.organization-economy
+011.economy/110.market-play-and-economic-activity/266.company-builder
+011.economy/110.market-play-and-economic-activity/311.social-class-income-asset-consumption-seed
+011.economy/110.market-play-and-economic-activity/320.external-trade-aid
+011.economy/110.market-play-and-economic-activity/322.consumer-behavior-and-market-culture-seed
+011.economy/110.market-play-and-economic-activity/324.corporate-organization-and-workplace-culture-seed
+011.economy/110.market-play-and-economic-activity/372.digital-marketplace
+011.economy/110.market-play-and-economic-activity/393.economic-calculation
+011.economy/110.market-play-and-economic-activity/405.economic-and-market-play
+011.economy/110.market-play-and-economic-activity/418.company-builder-enum-master-phase1
+011.economy/110.market-play-and-economic-activity/419.company-builder-enum-master-phase2
+
+[HAS_CHILD_DIRS] 012.integration/020.streaming-commerce-bridge
+012.integration/020.streaming-commerce-bridge/429.streamer-agency-and-streaming-commerce-bridge
+
+[HAS_CHILD_DIRS] 015.government/005.government-core
+015.government/005.government-core/150.service-delivery
+
+[HAS_CHILD_DIRS] 015.government/070.governance-detail
+015.government/070.governance-detail/080.statecraft
+015.government/070.governance-detail/090.public-admin
+015.government/070.governance-detail/110.state-power
+015.government/070.governance-detail/265.nation-builder
+015.government/070.governance-detail/325.political-participation-and-public-opinion-seed
+015.government/070.governance-detail/330.nation-builder-power-structure-extension
+015.government/070.governance-detail/331.legislature-builder
+015.government/070.governance-detail/332.executive-builder
+015.government/070.governance-detail/333.official-executive-and-elite-appointment-builder
+015.government/070.governance-detail/334.faction-interest-group-and-lobby-builder
+015.government/070.governance-detail/340.urban-governance
+015.government/070.governance-detail/360.nation-builder-final-integration
+015.government/070.governance-detail/403.city-builder-rename
+015.government/070.governance-detail/404.political-power-and-election
+015.government/070.governance-detail/406.social-order-and-ideology-play
+015.government/070.governance-detail/410.civilization-grand-play-integration
+015.government/070.governance-detail/412.nation-type-and-power-acquisition
+015.government/070.governance-detail/413.power-route-ui-and-political-binding
+015.government/070.governance-detail/414.builder-value-candidate-definition
+015.government/070.governance-detail/415.nation-builder-enum-master-phase1
+015.government/070.governance-detail/416.nation-builder-enum-master-phase2
+015.government/070.governance-detail/417.nation-builder-enum-master-phase3
+015.government/070.governance-detail/420.city-builder-enum-master-phase1
+015.government/070.governance-detail/421.city-builder-enum-master-phase2
+015.government/070.governance-detail/423.civil-service-eligibility
+015.government/070.governance-detail/424.public-office-actor-compatibility
+015.government/070.governance-detail/425.office-eligibility-grand-play-binding
+015.government/070.governance-detail/430.builder-execution-and-property-revenue-distribution
+015.government/070.governance-detail/443.administration-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 015.government/080.fiscal-and-treaty
+015.government/080.fiscal-and-treaty/350.public-procurement
+015.government/080.fiscal-and-treaty/360.diplomatic-operations
+
+[HAS_CHILD_DIRS] 018.meta/413.foundation-7states-canonical-dictionary
+018.meta/413.foundation-7states-canonical-dictionary/4131.state-city-indices
+
+[HAS_CHILD_DIRS] 999.archive/018.meta
+999.archive/018.meta/020.catalog
+
+[HAS_CHILD_DIRS] 999.archive/model-dictionary-raw-drafts-retired-20260401
+999.archive/model-dictionary-raw-drafts-retired-20260401/414.education-institution-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/415.medical-institution-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/416.admin-port-rail-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/417.public-space-and-market-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/418.security-and-correction-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/419.legal-and-judicial-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/420.religious-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/422.person-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/423.company-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/424.state-institution-canonical-dictionary
+
+[HAS_CHILD_DIRS] 999.archive/model-dictionary-retired-20260401
+999.archive/model-dictionary-retired-20260401/full-bundles
+999.archive/model-dictionary-retired-20260401/master-index
+

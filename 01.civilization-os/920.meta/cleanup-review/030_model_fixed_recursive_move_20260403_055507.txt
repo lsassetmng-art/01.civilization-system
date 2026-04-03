@@ -1,0 +1,10 @@
+# ============================================================
+# 030 MODEL FIXED RECURSIVE MOVE
+# ============================================================
+generated_at: 2026-04-03 05:55:21 +0900
+base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model
+
+[PROCESS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/003.foundation/020.layer-boundary
+[STILL_HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/003.foundation/020.layer-boundary
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/003.foundation/020.layer-boundary/010.canonical
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/003.foundation/020.layer-boundary/030.binding

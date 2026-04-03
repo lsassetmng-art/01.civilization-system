@@ -1,0 +1,154 @@
+# ============================================================
+# CHECK
+# ============================================================
+generated_at: 2026-04-03 05:51:45 +0900
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/003.foundation/020.layer-boundary
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/003.foundation/020.layer-boundary/010.canonical
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/003.foundation/020.layer-boundary/030.binding
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/140.social-culture
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/300.early-life-and-childhood-event-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/304.post-graduation-and-life-course-branching-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/305.life-course-and-family-timing-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/306.end-of-life-inheritance-and-succession-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/312.civic-psychology-and-value-axis-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/313.family-culture-and-relationship-psychology-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/314.food-dining-home-cooking-and-alcohol-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/315.appearance-clothing-uniform-and-formalwear-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/316.living-space-room-layout-and-cohabitation-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/317.leisure-holiday-friendship-and-play-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/318.communication-register-politeness-and-social-distance-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/319.body-aesthetic-cleanliness-scent-makeup-hair-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/320.time-rhythm-punctuality-and-work-life-boundary-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/321.mobility-walking-rail-car-ship-and-distance-sense-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/323.media-information-and-rumor-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/408.media-and-information-war-play
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/409.personal-rise-and-fall-play
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/410.religion-operations
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/005.story/020.historical-progression/450.culture-tourism
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/010.school-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/010.school-system/302.school-progression-and-branching-seed
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/020.exam-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/020.exam-system/426.education-qualification-announcement
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/020.exam-system/445.common-exam-and-replay-mode
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/030.education-facility-operation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/030.education-facility-operation/303.school-company-city-event-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/030.education-facility-operation/437.school-detailed-configuration-and-auto-operation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/008.education/030.education-facility-operation/440.research-integrity
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/009.career/020.employment-route
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/009.career/020.employment-route/200.human-capital
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/009.career/020.employment-route/296.employment-and-qualification-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/009.career/020.employment-route/299.disability-rehab-and-work-support-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/009.career/020.employment-route/430.labor-administration
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/010.real-estate
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/010.real-estate/260.real-estate
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/010.real-estate/260.real-estate-regime
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/010.real-estate/292.real-estate-and-housing-distribution-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/010.real-estate/440.construction-and-real-estate-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/020.world-valuation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/020.world-valuation/261.world-valuation
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/030.banking
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/030.banking/170.finance-credit
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/030.banking/260.finance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/030.banking/262.banking
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/030.banking/290.finance-insurance-securities-seed
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/040.securities
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/040.securities/264.securities
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/040.securities/310.capital-markets
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/050.retail
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/050.retail/263.retail-digital-product
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/050.retail/429.retail-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/060.agriculture-and-livestock
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/060.agriculture-and-livestock/291.agriculture-fishery-food-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/060.agriculture-and-livestock/430.agriculture-retail-local-supply-linkage
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/060.agriculture-and-livestock/435.agriculture-and-livestock-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/070.manufacturing
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/070.manufacturing/160.supply-production
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/070.manufacturing/267.industry-packs
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/070.manufacturing/268.industry-packs-phase2
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/070.manufacturing/293.industry-research-power-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/070.manufacturing/436.railway-and-logistics-detailed-configuration-and-auto-operation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/070.manufacturing/439.manufacturing-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/080.food-service
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/080.food-service/434.food-service-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/090.tax-and-settlement
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/090.tax-and-settlement/309.household-economy-and-cost-burden-seed
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/100.daily-necessities-and-self-sufficiency
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/100.daily-necessities-and-self-sufficiency/428.daily-necessities-and-self-sufficiency
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/100.civil-sectors
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/140.marketplace-platform
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/141.marketplace-transfer
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/190.organization-economy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/266.company-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/311.social-class-income-asset-consumption-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/320.external-trade-aid
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/322.consumer-behavior-and-market-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/324.corporate-organization-and-workplace-culture-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/372.digital-marketplace
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/393.economic-calculation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/405.economic-and-market-play
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/418.company-builder-enum-master-phase1
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/011.economy/110.market-play-and-economic-activity/419.company-builder-enum-master-phase2
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/012.integration/020.streaming-commerce-bridge
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/012.integration/020.streaming-commerce-bridge/429.streamer-agency-and-streaming-commerce-bridge
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/005.government-core
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/005.government-core/150.service-delivery
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/080.statecraft
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/090.public-admin
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/110.state-power
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/265.nation-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/325.political-participation-and-public-opinion-seed
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/330.nation-builder-power-structure-extension
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/331.legislature-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/332.executive-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/333.official-executive-and-elite-appointment-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/334.faction-interest-group-and-lobby-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/340.urban-governance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/360.nation-builder-final-integration
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/403.city-builder-rename
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/404.political-power-and-election
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/406.social-order-and-ideology-play
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/410.civilization-grand-play-integration
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/412.nation-type-and-power-acquisition
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/413.power-route-ui-and-political-binding
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/414.builder-value-candidate-definition
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/415.nation-builder-enum-master-phase1
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/416.nation-builder-enum-master-phase2
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/417.nation-builder-enum-master-phase3
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/420.city-builder-enum-master-phase1
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/421.city-builder-enum-master-phase2
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/423.civil-service-eligibility
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/424.public-office-actor-compatibility
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/425.office-eligibility-grand-play-binding
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/430.builder-execution-and-property-revenue-distribution
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/070.governance-detail/443.administration-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/080.fiscal-and-treaty
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/080.fiscal-and-treaty/350.public-procurement
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/015.government/080.fiscal-and-treaty/360.diplomatic-operations
+
+[HAS_CHILD_DIRS] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/018.meta/413.foundation-7states-canonical-dictionary
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/030.model/018.meta/413.foundation-7states-canonical-dictionary/4131.state-city-indices
+

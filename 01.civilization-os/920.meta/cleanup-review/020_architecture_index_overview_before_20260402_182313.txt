@@ -1,0 +1,1029 @@
+# ============================================================
+# 020 ARCHITECTURE INDEX / OVERVIEW AUDIT
+# ============================================================
+generated_at: 2026-04-02 18:23:13 +0900
+base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture
+
+============================================================
+DOMAIN LEVEL
+============================================================
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/0200010000_CORE_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/0200010003_ARCHITECTURE_SUMMARY_CANONICAL.md
+  index: OK -> 0200010000_CORE_ARCHITECTURE_INDEX.md
+  overview: OK -> 0200010003_ARCHITECTURE_SUMMARY_CANONICAL.md
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/0200020000_WORLD_ARCHITECTURE_INDEX.md
+  index: OK -> 0200020000_WORLD_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/0200030000_FOUNDATION_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/0200030001_FOUNDATION_OVERVIEW_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/0200030004_CANONICAL_ID_ARCHITECTURE.md
+  index: OK -> 0200030000_FOUNDATION_ARCHITECTURE_INDEX.md
+  overview: OK -> 0200030001_FOUNDATION_OVERVIEW_ARCHITECTURE.md
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/0200040000_MODE_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/0200040001_MODE_OVERVIEW_ARCHITECTURE.md
+  index: OK -> 0200040000_MODE_ARCHITECTURE_INDEX.md
+  overview: OK -> 0200040001_MODE_OVERVIEW_ARCHITECTURE.md
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/0200050000_STORY_ARCHITECTURE_INDEX.md
+  index: OK -> 0200050000_STORY_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/0200060000_PLAYER_ARCHITECTURE_INDEX.md
+  index: OK -> 0200060000_PLAYER_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/0200070000_PERSONA_ARCHITECTURE_INDEX.md
+  index: OK -> 0200070000_PERSONA_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/0200080000_EDUCATION_ARCHITECTURE_INDEX.md
+  index: OK -> 0200080000_EDUCATION_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/0200090000_CAREER_ARCHITECTURE_INDEX.md
+  index: OK -> 0200090000_CAREER_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/0200100000_REWARD_ARCHITECTURE_INDEX.md
+  index: OK -> 0200100000_REWARD_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/0200110000_ECONOMY_ARCHITECTURE_INDEX.md
+  index: OK -> 0200110000_ECONOMY_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration/0200120000_INTEGRATION_ARCHITECTURE_INDEX.md
+  index: OK -> 0200120000_INTEGRATION_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/0200130000_LAW_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/0200130001_LAW_OVERVIEW_ARCHITECTURE.md
+  index: OK -> 0200130000_LAW_ARCHITECTURE_INDEX.md
+  overview: OK -> 0200130001_LAW_OVERVIEW_ARCHITECTURE.md
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/0200140000_SECURITY_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/0200140001_SECURITY_OVERVIEW_ARCHITECTURE.md
+  index: OK -> 0200140000_SECURITY_ARCHITECTURE_INDEX.md
+  overview: OK -> 0200140001_SECURITY_OVERVIEW_ARCHITECTURE.md
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/0200150000_GOVERNMENT_ARCHITECTURE_INDEX.md
+  index: OK -> 0200150000_GOVERNMENT_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/0200160000_WAR_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/0200160001_WAR_OVERVIEW_ARCHITECTURE.md
+  index: OK -> 0200160000_WAR_ARCHITECTURE_INDEX.md
+  overview: OK -> 0200160001_WAR_OVERVIEW_ARCHITECTURE.md
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/0200170000_RUNTIME_ARCHITECTURE_INDEX.md
+  index: OK -> 0200170000_RUNTIME_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/0200180000_META_ARCHITECTURE_INDEX.md
+  index: OK -> 0200180000_META_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/0200190000_INTERFACE_ARCHITECTURE_INDEX.md
+  index: OK -> 0200190000_INTERFACE_ARCHITECTURE_INDEX.md
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail
+  index: MISSING
+  overview: MISSING
+
+[DOMAIN] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta
+  index: MISSING
+  overview: MISSING
+
+============================================================
+SUBFOLDER LEVEL
+============================================================
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/010.auto-progression
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/010.system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/010.system/0200010001_SYSTEM_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/020.common-calculation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/020.dependency-graph
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/020.dependency-graph/0200010002_DEPENDENCY_GRAPH_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/030.state-machine
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/040.cadence-and-tick
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/050.global-rules
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/060.triple-governor
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/070.aerial-support-governor
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/005.world-model
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/005.world-model/0200020001_WORLD_MODEL_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/006.global-state
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/006.global-state/0200020002_GLOBAL_STATE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/010.world-seed-and-geography
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/020.disaster-calculation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/030.war-impact-calculation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/040.famine-and-shortage-calculation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/050.epidemic-calculation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/060.death-and-mortality-calculation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/070.population-structure
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/080.infrastructure-placement
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/090.life-events-and-world-events
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/100.triple-world-intervention
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/110.aerial-world-stabilization
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/010.system-principles
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/010.world-foundation-boundary
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/010.world-foundation-boundary/0200030002_WORLD_FOUNDATION_BOUNDARY_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/020.layer-boundary
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/020.layer-boundary/00302001_CIVILIZATION_SKILL_ACQUISITION_BOUNDARY_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/030.core-entity-lifecycle
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/030.core-entity-lifecycle/0200030003_CORE_ENTITY_LIFECYCLE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/030.data-contract
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/040.namespace
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/040.namespace/0200030005_NAMESPACE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation/040.naming-and-structure
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/003.foundation
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/010.feature-unlock
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/010.feature-unlock/0200040002_FEATURE_UNLOCK_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/010.normal-play
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/020.replay-mode
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/030.exam-mode
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode/040.scenario-mode
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/004.mode
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/010.story-engine
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/010.story-engine/0200050001_STORY_ENGINE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/010.world-background
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/011.scenario-structure
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/011.scenario-structure/0200050002_SCENARIO_STRUCTURE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/012.checkpoint
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/012.checkpoint/0200050003_CHECKPOINT_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/020.historical-progression
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story/030.narrative-conditions
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/005.story
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/010.player-model
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/010.player-model/0200060001_PLAYER_MODEL_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/010.player-role
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/020.decision-engine
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/020.decision-engine/0200060002_DECISION_ENGINE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/020.player-action-scope
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/030.player-permission-binding
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/030.time
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player/030.time/0200060003_TIME_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/006.player
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/010.persona-core
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/010.persona-core/0200070001_PERSONA_CORE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/010.persona-placement
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/020.persona-behavior-binding
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/020.snapshot
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/020.snapshot/0200070002_SNAPSHOT_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/030.persona-society-link
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/030.reincarnation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/030.reincarnation/0200070003_REINCARNATION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/040.personality-evolution
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/040.personality-evolution/0200070004_PERSONALITY_EVOLUTION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/050.release-and-distribution
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/050.release-and-distribution/0200070005_PERSONA_RELEASE_INTEGRATION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/060.license-and-boundary
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/060.license-and-boundary/0200070006_PERSONA_LICENSE_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/060.license-and-boundary/0200070012_PERSONA_LICENSE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/070.commerce-boundary
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/070.commerce-boundary/0200070007_PERSONA_COMMERCE_BOUNDARY_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/080.relationship
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/080.relationship/0200070008_RELATIONSHIP_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/090.life-event
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/090.life-event/0200070009_LIFE_EVENT_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/100.life-expectancy
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/100.life-expectancy/0200070010_LIFE_EXPECTANCY_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/110.skill-growth
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona/110.skill-growth/0200070011_SKILL_GROWTH_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/007.persona
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/010.school-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/010.school-system/0200080001_SCHOOL_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/020.exam-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/020.exam-system/0200080002_EXAM_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/030.education-facility-operation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/040.training-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/040.training-system/0200080003_TRAINING_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/050.certification-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/050.certification-system/0200080004_CERTIFICATION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/060.recommendation-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education/060.recommendation-system/0200080005_RECOMMENDATION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/008.education
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/010.job
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/010.job/0200090001_JOB_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/010.occupation-system
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/011.interview
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/011.interview/0200090002_INTERVIEW_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/012.hiring
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/012.hiring/0200090003_HIRING_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/013.evaluation
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/013.evaluation/0200090004_EVALUATION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/014.career-path
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/014.career-path/0200090005_CAREER_PATH_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/015.internship
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/015.internship/0200090006_INTERNSHIP_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/020.employment-route
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career/030.career-progression
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/009.career
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/010.login-bonus
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/010.login-bonus/0200100001_LOGIN_BONUS_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/010.reward-definition
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/020.reward-distribution
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/020.reward-distribution/0200100002_REWARD_DISTRIBUTION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/020.reward-grant
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward/030.reward-balance
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/010.reward
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/005.currency
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/005.currency/0200110001_CURRENCY_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/010.real-estate
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/020.world-valuation
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/030.banking
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/040.securities
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/050.retail
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/060.agriculture-and-livestock
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/070.manufacturing
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/080.food-service
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/090.tax-and-settlement
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/100.daily-necessities-and-self-sufficiency
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/110.market-play-and-economic-activity
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy/120.triple-economic-intervention
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/011.economy
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration/010.industry-packs
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration/010.sync-and-bridge
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration/020.streaming-commerce-bridge
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration/030.external-linkage
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/010.general-law
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/010.general-law/0200130002_CRIME_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/010.general-law/0200130003_PENALTY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/010.general-law/0200130004_COURT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/010.general-law/0200130005_CONTENT_REGULATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/010.general-law/0200130006_RATING_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/010.political-system
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/020.public-office-eligibility
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/030.civil-service-eligibility
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/040.military-service-and-mobilization
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/050.legal-role-binding
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/280.dispute-resolution
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/280.dispute-resolution/01328001_DISPUTE_RESOLUTION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/390.criminal-procedure
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/390.criminal-procedure/01339001_CRIMINAL_PROCEDURE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/010.internal-security
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/020.access-control
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/020.access-control/0200140002_ACCESS_CONTROL_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/020.public-order
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/030.audit-and-monitoring
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/030.audit-and-monitoring/0200140003_AUDIT_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/030.correction-and-enforcement
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/330.cyber-defense
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/330.cyber-defense/01433001_CYBER_DEFENSE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/005.government-core
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/01501001_NATION_BUILDER_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/01502001_COMPANY_BUILDER_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/025.city-builder
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/025.city-builder/01502501_CITY_BUILDER_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/030.initial-nation-and-city-set
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/040.nation-detail-set
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/050.zone-and-territory-structure
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/060.election-and-power-acquisition
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/060.election-and-power-acquisition/0200150003_ELECTION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/070.governance-detail
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/080.fiscal-and-treaty
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/010.military-organization
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/010.war-core
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/010.war-core/0200160002_WAR_DECLARATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/010.war-core/0200160003_MILITARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/010.war-core/0200160004_WAR_RESOLUTION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/010.war-core/0200160005_CIVIL_WAR_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/020.military-base
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/030.war-progression
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/040.defense-readiness
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/400.military-operations
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/400.military-operations/01640001_MILITARY_OPERATIONS_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/010.runtime-parameter
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/010.runtime-parameter/0200170001_RUNTIME_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/010.runtime-parameter/0200170004_TIME_SYSTEM_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/020.state-machine-detail
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/030.event-runtime
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/030.event-runtime/0200170002_EVENT_PIPELINE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/030.event-runtime/0200170003_EVENT_REGISTRY_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/030.map-visual-reflection
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/040.execution-control
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/050.approval-and-blocking
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/060.triple-intervention-runtime-control
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/070.aerial-intervention-runtime-control
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/010.common-tables-and-matrices
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/020.dictionary-extraction
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/030.builder-value-definition
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/040.enum-master
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/050.placeholder-resolution
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/060.meta-system
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/060.meta-system/0200180001_SEASON_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/060.meta-system/0200180002_RANKING_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/060.meta-system/0200180003_REWARD_SYSTEM_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/240.records-governance
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/240.records-governance/01824001_RECORDS_GOVERNANCE_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/290.observability-control
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/290.observability-control/01829001_OBSERVABILITY_CONTROL_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/350.integrated-master
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/350.integrated-master/01835001_INTEGRATED_MASTER_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/351.implementation-bridge-master
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/351.implementation-bridge-master/01835101_IMPLEMENTATION_BRIDGE_MASTER_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/470.cross-cutting-completion
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/470.cross-cutting-completion/01847001_CROSS_CUTTING_COMPLETION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/010.infrastructure-management-entry-ui
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/020.military-and-infrastructure-ui
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/030.grand-play-ui
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/030.grand-play-ui/0200190003_EXAM_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/030.grand-play-ui/0200190004_TIME_CONTROL_UI_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/040.life-event-ui
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/040.life-event-ui/01904001_LIFE_EVENT_UI_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/050.builder-entry-ui
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/050.builder-entry-ui/0200190001_UI_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/060.application-shell
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/060.application-shell/01906001_APPLICATION_SHELL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/060.application-shell/0200190002_APPLICATION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/370.civilization-map-ui
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/370.civilization-map-ui/01937001_CIVILIZATION_MAP_UI_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/373.marketplace-navigation-and-entry-ui
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/373.marketplace-navigation-and-entry-ui/01937301_MARKETPLACE_NAVIGATION_AND_ENTRY_UI_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/395.login-entry-screen
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/395.login-entry-screen/01939501_LOGIN_ENTRY_SCREEN_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/411.grand-play-ui-integration
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/411.grand-play-ui-integration/01941101_GRAND_PLAY_UI_INTEGRATION_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/432.occupation-detail-ui-common
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/432.occupation-detail-ui-common/01943201_OCCUPATION_DETAIL_UI_COMMON_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200008_CIVILIZATION_STATE_OWNERSHIP_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200009_CIVILIZATION_SYNC_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200010_CIVILIZATION_CONTRACT_VERSIONING_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200011_CIVILIZATION_EXECUTION_PATH_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200012_CIVILIZATION_FAILURE_CLASSIFICATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200013_CIVILIZATION_IDEMPOTENCY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200014_CIVILIZATION_AUDITABILITY_ARCHITECTURE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta/010.manifest
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta/010.manifest/0209990910_CANONICAL_MANIFEST.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta/020.freeze
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta/020.freeze/0209990920_FREEZE_CANDIDATE.md
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta/030.integrated-master
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta/040.bridge-master
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta
+
+[SUBFOLDER] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta/050.integration-support
+  index: MISSING
+  overview: MISSING
+  parent: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/999.meta
+

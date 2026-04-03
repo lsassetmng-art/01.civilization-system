@@ -2,7 +2,7 @@
 # CIVILIZATION OS 020 ARCHITECTURE INDEX
 # ============================================================
 
-generated_at: 2026-04-02 09:38:35 +0900
+generated_at: 2026-04-02 14:58:10 +0900
 base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture
 
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/001.core/010.system/0200010001_SYSTEM_ARCHITECTURE.md
@@ -233,11 +233,15 @@ base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/040.military-service-and-mobilization/399.military-service-and-mobilization/01304001_MILITARY_SERVICE_AND_MOBILIZATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/050.legal-role-binding/398.field-permission-control/01305002_FIELD_PERMISSION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/050.legal-role-binding/425.office-eligibility-grand-play-binding/01305001_OFFICE_ELIGIBILITY_GRAND_PLAY_BINDING_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/280.dispute-resolution/01328001_DISPUTE_RESOLUTION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/013.law/390.criminal-procedure/01339001_CRIMINAL_PROCEDURE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/020.access-control/0200140002_ACCESS_CONTROL_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/0200140000_SECURITY_ARCHITECTURE_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/0200140001_SECURITY_OVERVIEW_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/030.audit-and-monitoring/0200140003_AUDIT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/014.security/330.cyber-defense/01433001_CYBER_DEFENSE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/005.government-core/150.government-core/01500501_GOVERNMENT_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/01501001_NATION_BUILDER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder/01501001_CIVILIZATION_NATION_BUILDER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder/01501002_CIVILIZATION_NATION_BUILDER_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder/01501003_CIVILIZATION_NATION_BUILDER_SCREEN_FLOW.md
@@ -275,6 +279,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder/_legacy_hold/2676_MIXED_USE_ZONE_TEMPLATE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder/_legacy_hold/2677_SPECIAL_RESTRICTED_ZONE_TEMPLATE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/360.nation-builder-final-integration/01501030_NATION_BUILDER_FINAL_INTEGRATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/01502001_COMPANY_BUILDER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/266.company-builder/01502001_CIVILIZATION_COMPANY_BUILDER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/266.company-builder/01502002_CIVILIZATION_COMPANY_BUILDER_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/266.company-builder/01502003_CIVILIZATION_COMPANY_BUILDER_SCREEN_FLOW.md
@@ -294,6 +299,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/266.company-builder/_legacy_hold/2669_SECURITIES_INTERMEDIARY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/266.company-builder/_legacy_hold/2670_COMPANY_TEMPLATE_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/0200150000_GOVERNMENT_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/025.city-builder/01502501_CITY_BUILDER_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/025.city-builder/403.city-builder-rename/01502501_CITY_BUILDER_RENAME_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/030.initial-nation-and-city-set/272.initial-nation-and-city-set/01503001_INITIAL_NATION_SET_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/030.initial-nation-and-city-set/272.initial-nation-and-city-set/01503002_INITIAL_CITY_SET_ARCHITECTURE.md
@@ -341,6 +347,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/0200160001_WAR_OVERVIEW_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/030.war-progression/407.military-and-diplomacy-play/01603001_MILITARY_AND_DIPLOMACY_PLAY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/030.war-progression/408.media-and-information-war-play/01603002_MEDIA_AND_INFORMATION_WAR_PLAY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/016.war/400.military-operations/01640001_MILITARY_OPERATIONS_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/010.runtime-parameter/0200170001_RUNTIME_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/010.runtime-parameter/0200170004_TIME_SYSTEM_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/017.runtime/010.runtime-parameter/395.time-and-autonomous-behavior/01701001_CIVILIZATION_TIME_AND_AUTONOMOUS_BEHAVIOR_ARCHITECTURE.md
@@ -427,6 +434,11 @@ base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/060.meta-system/0200180001_SEASON_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/060.meta-system/0200180002_RANKING_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/060.meta-system/0200180003_REWARD_SYSTEM_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/240.records-governance/01824001_RECORDS_GOVERNANCE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/290.observability-control/01829001_OBSERVABILITY_CONTROL_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/350.integrated-master/01835001_INTEGRATED_MASTER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/351.implementation-bridge-master/01835101_IMPLEMENTATION_BRIDGE_MASTER_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/018.meta/470.cross-cutting-completion/01847001_CROSS_CUTTING_COMPLETION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/010.infrastructure-management-entry-ui/402.infrastructure-management-entry-ui/01901001_INFRASTRUCTURE_MANAGEMENT_ENTRY_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/020.military-and-infrastructure-ui/343.military-support-work-ui/01902001_MILITARY_SUPPORT_WORK_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/020.military-and-infrastructure-ui/401.military-and-infrastructure-ui-integration/01902002_MILITARY_AND_INFRASTRUCTURE_UI_INTEGRATION_ARCHITECTURE.md
@@ -446,6 +458,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/030.grand-play-ui/392.nation-ui-facility-metric-integration/01903013_NATION_UI_FACILITY_METRIC_INTEGRATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/030.grand-play-ui/411.grand-play-ui-integration/01903001_GRAND_PLAY_UI_INTEGRATION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/030.grand-play-ui/445.common-exam-and-replay-mode/01903002_COMMON_EXAM_AND_REPLAY_MODE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/040.life-event-ui/01904001_LIFE_EVENT_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/040.life-event-ui/327.life-event-ui/01904002_LIFE_EVENT_UI_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/040.life-event-ui/444.civilization-life-event-detailed-ui-and-progression/01904001_CIVILIZATION_LIFE_EVENT_DETAILED_UI_AND_PROGRESSION_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/050.builder-entry-ui/0200190001_UI_ARCHITECTURE.md
@@ -497,7 +510,15 @@ base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/050.builder-entry-ui/395.login-entry-screen/01905012_LOGIN_ENTRY_SCREEN_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/050.builder-entry-ui/396.user-registration-screen/01905013_USER_REGISTRATION_SCREEN_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/050.builder-entry-ui/397.post-registration-onboarding/01905014_POST_REGISTRATION_ONBOARDING_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/060.application-shell/01906001_APPLICATION_SHELL_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/060.application-shell/0200190002_APPLICATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/370.civilization-map-ui/01937001_CIVILIZATION_MAP_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/373.marketplace-navigation-and-entry-ui/01937301_MARKETPLACE_NAVIGATION_AND_ENTRY_UI_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/395.login-entry-screen/01939501_LOGIN_ENTRY_SCREEN_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/411.grand-play-ui-integration/01941101_GRAND_PLAY_UI_INTEGRATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/432.occupation-detail-ui-common/01943201_OCCUPATION_DETAIL_UI_COMMON_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/0200000_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/0200999_ARCHITECTURE_INDEX.txt
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200008_CIVILIZATION_STATE_OWNERSHIP_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200009_CIVILIZATION_SYNC_BOUNDARY_ARCHITECTURE.md
 /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/040.detail/010.detail-root/0200010_CIVILIZATION_CONTRACT_VERSIONING_ARCHITECTURE.md

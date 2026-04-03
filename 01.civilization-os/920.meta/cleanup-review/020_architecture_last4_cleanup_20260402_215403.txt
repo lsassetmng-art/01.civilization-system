@@ -1,0 +1,14 @@
+# ============================================================
+# 020 ARCHITECTURE LAST 4 CLEANUP
+# ============================================================
+generated_at: 2026-04-02 21:54:03 +0900
+base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture
+
+[SKIP_MISSING] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/002.world/090.life-events-and-world-events/270.life-events-and-builders
+
+[SKIP_MISSING] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration/010.industry-packs/267.industry-packs
+
+[SKIP_MISSING] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/012.integration/010.industry-packs/268.industry-packs-phase2
+
+[SKIP_MISSING] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder
+

@@ -1,0 +1,14 @@
+# ============================================================
+# REMOVE _LEGACY_HOLD UNDER 020.ARCHITECTURE
+# ============================================================
+generated_at: 2026-04-02 21:39:58 +0900
+base: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture
+
+[TARGET DIRS]
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder/_legacy_hold
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/266.company-builder/_legacy_hold
+
+[REMOVE] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/010.nation-builder/265.nation-builder/_legacy_hold
+[REMOVE] /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/015.government/020.company-builder/266.company-builder/_legacy_hold
+
+[REMAINING _legacy_hold]

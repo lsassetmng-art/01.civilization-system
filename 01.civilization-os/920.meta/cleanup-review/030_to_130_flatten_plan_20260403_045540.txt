@@ -1,0 +1,767 @@
+# ============================================================
+# 030-130 FLATTEN PLAN
+# ============================================================
+generated_at: 2026-04-03 04:55:40 +0900
+root: /data/data/com.termux/files/home/01.civilization-system/01.civilization-os
+
+============================================================
+LAYER: 030.model
+============================================================
+[HAS_CHILD_DIRS] 002.world/010.world-seed-and-geography
+002.world/010.world-seed-and-geography/271.world-seed-and-geography
+002.world/010.world-seed-and-geography/272.initial-nation-and-city-set
+002.world/010.world-seed-and-geography/273.nation-detail-set
+002.world/010.world-seed-and-geography/274.nation-internal-zone-structure
+002.world/010.world-seed-and-geography/276.initial-company-and-housing-seed
+002.world/010.world-seed-and-geography/277.anchor-company-naming
+002.world/010.world-seed-and-geography/278.city-anchor-company-assignment
+002.world/010.world-seed-and-geography/279.public-facility-and-residential-seed
+002.world/010.world-seed-and-geography/282.education-and-medical-seed
+002.world/010.world-seed-and-geography/283.religious-institution-seed
+002.world/010.world-seed-and-geography/284.admin-port-rail-seed
+002.world/010.world-seed-and-geography/285.public-space-and-market-seed
+002.world/010.world-seed-and-geography/286.security-and-correction-seed
+002.world/010.world-seed-and-geography/287.legal-and-judicial-seed
+
+[HAS_CHILD_DIRS] 002.world/020.disaster-calculation
+002.world/020.disaster-calculation/310.security-and-disaster-statistics-seed
+002.world/020.disaster-calculation/380.disaster-relief-stockpile
+
+[HAS_CHILD_DIRS] 002.world/060.death-and-mortality-calculation
+002.world/060.death-and-mortality-calculation/391.risk-and-mortality
+
+[HAS_CHILD_DIRS] 002.world/070.population-structure
+002.world/070.population-structure/281.population-structure-seed
+002.world/070.population-structure/308.social-statistics-seed
+
+[HAS_CHILD_DIRS] 002.world/080.infrastructure-placement
+002.world/080.infrastructure-placement/280.infrastructure-seed
+002.world/080.infrastructure-placement/380.field-map-facility-dictionary-and-placement
+002.world/080.infrastructure-placement/381.facility-type-master
+002.world/080.infrastructure-placement/382.field-facility-dictionary-alignment
+002.world/080.infrastructure-placement/383.field-map-placement-validation
+002.world/080.infrastructure-placement/385.field-facility-economics-db
+002.world/080.infrastructure-placement/386.field-facility-modifier-evaluation
+002.world/080.infrastructure-placement/388.field-facility-history-notice-log
+002.world/080.infrastructure-placement/390.field-facility-to-nation-linkage
+002.world/080.infrastructure-placement/391.nation-facility-aggregate
+002.world/080.infrastructure-placement/392.nation-ui-facility-metric-integration
+002.world/080.infrastructure-placement/393.field-nation-cross-integration
+002.world/080.infrastructure-placement/394.field-nation-master-integration
+002.world/080.infrastructure-placement/400.infrastructure-placement-and-governance
+002.world/080.infrastructure-placement/422.placeable-infrastructure-enum-master
+002.world/080.infrastructure-placement/438.hospital-detailed-configuration-and-auto-operation
+002.world/080.infrastructure-placement/460.infrastructure-resilience
+
+[HAS_CHILD_DIRS] 002.world/090.life-events-and-world-events
+002.world/090.life-events-and-world-events/130.civic-life
+002.world/090.life-events-and-world-events/180.civil-status
+002.world/090.life-events-and-world-events/210.healthcare-publichealth
+002.world/090.life-events-and-world-events/270.environment-circularity
+002.world/090.life-events-and-world-events/270.life-events-and-builders
+002.world/090.life-events-and-world-events/288.civil-registry-seed
+002.world/090.life-events-and-world-events/289.tourism-entertainment-culture-seed
+002.world/090.life-events-and-world-events/294.sports-and-life-leisure-seed
+002.world/090.life-events-and-world-events/295.childcare-and-early-family-support-seed
+002.world/090.life-events-and-world-events/297.marriage-and-family-formation-seed
+002.world/090.life-events-and-world-events/298.eldercare-and-end-of-life-seed
+002.world/090.life-events-and-world-events/301.religious-and-public-calendar-seed
+002.world/090.life-events-and-world-events/307.risk-and-disruption-event-seed
+002.world/090.life-events-and-world-events/370.migration-nationality
+
+[HAS_CHILD_DIRS] 003.foundation/020.layer-boundary
+003.foundation/020.layer-boundary/010.canonical
+003.foundation/020.layer-boundary/030.binding
+003.foundation/020.layer-boundary/120.foundation-systems
+
+[HAS_CHILD_DIRS] 005.story/020.historical-progression
+005.story/020.historical-progression/140.social-culture
+005.story/020.historical-progression/300.early-life-and-childhood-event-seed
+005.story/020.historical-progression/304.post-graduation-and-life-course-branching-seed
+005.story/020.historical-progression/305.life-course-and-family-timing-seed
+005.story/020.historical-progression/306.end-of-life-inheritance-and-succession-seed
+005.story/020.historical-progression/312.civic-psychology-and-value-axis-seed
+005.story/020.historical-progression/313.family-culture-and-relationship-psychology-seed
+005.story/020.historical-progression/314.food-dining-home-cooking-and-alcohol-culture-seed
+005.story/020.historical-progression/315.appearance-clothing-uniform-and-formalwear-culture-seed
+005.story/020.historical-progression/316.living-space-room-layout-and-cohabitation-culture-seed
+005.story/020.historical-progression/317.leisure-holiday-friendship-and-play-culture-seed
+005.story/020.historical-progression/318.communication-register-politeness-and-social-distance-seed
+005.story/020.historical-progression/319.body-aesthetic-cleanliness-scent-makeup-hair-culture-seed
+005.story/020.historical-progression/320.time-rhythm-punctuality-and-work-life-boundary-seed
+005.story/020.historical-progression/321.mobility-walking-rail-car-ship-and-distance-sense-seed
+005.story/020.historical-progression/323.media-information-and-rumor-culture-seed
+005.story/020.historical-progression/408.media-and-information-war-play
+005.story/020.historical-progression/409.personal-rise-and-fall-play
+005.story/020.historical-progression/410.religion-operations
+005.story/020.historical-progression/450.culture-tourism
+
+[HAS_CHILD_DIRS] 008.education/010.school-system
+008.education/010.school-system/302.school-progression-and-branching-seed
+
+[HAS_CHILD_DIRS] 008.education/020.exam-system
+008.education/020.exam-system/426.education-qualification-announcement
+008.education/020.exam-system/445.common-exam-and-replay-mode
+
+[HAS_CHILD_DIRS] 008.education/030.education-facility-operation
+008.education/030.education-facility-operation/303.school-company-city-event-seed
+008.education/030.education-facility-operation/437.school-detailed-configuration-and-auto-operation
+008.education/030.education-facility-operation/440.research-integrity
+
+[HAS_CHILD_DIRS] 009.career/020.employment-route
+009.career/020.employment-route/200.human-capital
+009.career/020.employment-route/296.employment-and-qualification-seed
+009.career/020.employment-route/299.disability-rehab-and-work-support-seed
+009.career/020.employment-route/430.labor-administration
+
+[HAS_CHILD_DIRS] 011.economy/010.real-estate
+011.economy/010.real-estate/260.real-estate
+011.economy/010.real-estate/260.real-estate-regime
+011.economy/010.real-estate/292.real-estate-and-housing-distribution-seed
+011.economy/010.real-estate/440.construction-and-real-estate-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 011.economy/020.world-valuation
+011.economy/020.world-valuation/261.world-valuation
+
+[HAS_CHILD_DIRS] 011.economy/030.banking
+011.economy/030.banking/170.finance-credit
+011.economy/030.banking/260.finance
+011.economy/030.banking/262.banking
+011.economy/030.banking/290.finance-insurance-securities-seed
+
+[HAS_CHILD_DIRS] 011.economy/040.securities
+011.economy/040.securities/264.securities
+011.economy/040.securities/310.capital-markets
+
+[HAS_CHILD_DIRS] 011.economy/050.retail
+011.economy/050.retail/263.retail-digital-product
+011.economy/050.retail/429.retail-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 011.economy/060.agriculture-and-livestock
+011.economy/060.agriculture-and-livestock/291.agriculture-fishery-food-seed
+011.economy/060.agriculture-and-livestock/430.agriculture-retail-local-supply-linkage
+011.economy/060.agriculture-and-livestock/435.agriculture-and-livestock-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 011.economy/070.manufacturing
+011.economy/070.manufacturing/160.supply-production
+011.economy/070.manufacturing/267.industry-packs
+011.economy/070.manufacturing/268.industry-packs-phase2
+011.economy/070.manufacturing/293.industry-research-power-seed
+011.economy/070.manufacturing/436.railway-and-logistics-detailed-configuration-and-auto-operation
+011.economy/070.manufacturing/439.manufacturing-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 011.economy/080.food-service
+011.economy/080.food-service/434.food-service-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 011.economy/090.tax-and-settlement
+011.economy/090.tax-and-settlement/309.household-economy-and-cost-burden-seed
+
+[HAS_CHILD_DIRS] 011.economy/100.daily-necessities-and-self-sufficiency
+011.economy/100.daily-necessities-and-self-sufficiency/428.daily-necessities-and-self-sufficiency
+
+[HAS_CHILD_DIRS] 011.economy/110.market-play-and-economic-activity
+011.economy/110.market-play-and-economic-activity/100.civil-sectors
+011.economy/110.market-play-and-economic-activity/140.marketplace-platform
+011.economy/110.market-play-and-economic-activity/141.marketplace-transfer
+011.economy/110.market-play-and-economic-activity/190.organization-economy
+011.economy/110.market-play-and-economic-activity/266.company-builder
+011.economy/110.market-play-and-economic-activity/311.social-class-income-asset-consumption-seed
+011.economy/110.market-play-and-economic-activity/320.external-trade-aid
+011.economy/110.market-play-and-economic-activity/322.consumer-behavior-and-market-culture-seed
+011.economy/110.market-play-and-economic-activity/324.corporate-organization-and-workplace-culture-seed
+011.economy/110.market-play-and-economic-activity/372.digital-marketplace
+011.economy/110.market-play-and-economic-activity/393.economic-calculation
+011.economy/110.market-play-and-economic-activity/405.economic-and-market-play
+011.economy/110.market-play-and-economic-activity/418.company-builder-enum-master-phase1
+011.economy/110.market-play-and-economic-activity/419.company-builder-enum-master-phase2
+
+[HAS_CHILD_DIRS] 012.integration/020.streaming-commerce-bridge
+012.integration/020.streaming-commerce-bridge/429.streamer-agency-and-streaming-commerce-bridge
+
+[HAS_CHILD_DIRS] 015.government/005.government-core
+015.government/005.government-core/150.service-delivery
+
+[HAS_CHILD_DIRS] 015.government/070.governance-detail
+015.government/070.governance-detail/080.statecraft
+015.government/070.governance-detail/090.public-admin
+015.government/070.governance-detail/110.state-power
+015.government/070.governance-detail/265.nation-builder
+015.government/070.governance-detail/325.political-participation-and-public-opinion-seed
+015.government/070.governance-detail/330.nation-builder-power-structure-extension
+015.government/070.governance-detail/331.legislature-builder
+015.government/070.governance-detail/332.executive-builder
+015.government/070.governance-detail/333.official-executive-and-elite-appointment-builder
+015.government/070.governance-detail/334.faction-interest-group-and-lobby-builder
+015.government/070.governance-detail/340.urban-governance
+015.government/070.governance-detail/360.nation-builder-final-integration
+015.government/070.governance-detail/403.city-builder-rename
+015.government/070.governance-detail/404.political-power-and-election
+015.government/070.governance-detail/406.social-order-and-ideology-play
+015.government/070.governance-detail/410.civilization-grand-play-integration
+015.government/070.governance-detail/412.nation-type-and-power-acquisition
+015.government/070.governance-detail/413.power-route-ui-and-political-binding
+015.government/070.governance-detail/414.builder-value-candidate-definition
+015.government/070.governance-detail/415.nation-builder-enum-master-phase1
+015.government/070.governance-detail/416.nation-builder-enum-master-phase2
+015.government/070.governance-detail/417.nation-builder-enum-master-phase3
+015.government/070.governance-detail/420.city-builder-enum-master-phase1
+015.government/070.governance-detail/421.city-builder-enum-master-phase2
+015.government/070.governance-detail/423.civil-service-eligibility
+015.government/070.governance-detail/424.public-office-actor-compatibility
+015.government/070.governance-detail/425.office-eligibility-grand-play-binding
+015.government/070.governance-detail/430.builder-execution-and-property-revenue-distribution
+015.government/070.governance-detail/443.administration-detailed-configuration-and-auto-operation
+
+[HAS_CHILD_DIRS] 015.government/080.fiscal-and-treaty
+015.government/080.fiscal-and-treaty/350.public-procurement
+015.government/080.fiscal-and-treaty/360.diplomatic-operations
+
+[HAS_CHILD_DIRS] 018.meta/020.catalog
+018.meta/020.catalog/000_person
+018.meta/020.catalog/001_world
+018.meta/020.catalog/002_region
+018.meta/020.catalog/003_nation
+018.meta/020.catalog/004_subnational_government
+018.meta/020.catalog/005_government
+018.meta/020.catalog/006_legislative
+018.meta/020.catalog/007_judicial
+018.meta/020.catalog/008_election
+018.meta/020.catalog/009_public_administration
+018.meta/020.catalog/010_law
+018.meta/020.catalog/011_property_rights
+018.meta/020.catalog/012_governance
+018.meta/020.catalog/013_public_policy
+018.meta/020.catalog/014_public_procurement
+018.meta/020.catalog/015_security
+018.meta/020.catalog/016_military
+018.meta/020.catalog/017_intelligence
+018.meta/020.catalog/018_border
+018.meta/020.catalog/019_diplomacy
+018.meta/020.catalog/020_international_organization
+018.meta/020.catalog/021_regional_integration
+018.meta/020.catalog/022_population
+018.meta/020.catalog/023_demography
+018.meta/020.catalog/024_migration
+018.meta/020.catalog/025_household
+018.meta/020.catalog/026_labor
+018.meta/020.catalog/027_macroeconomy
+018.meta/020.catalog/028_consumer_market
+018.meta/020.catalog/029_company
+018.meta/020.catalog/030_startup
+018.meta/020.catalog/031_banking
+018.meta/020.catalog/032_central_bank
+018.meta/020.catalog/033_currency
+018.meta/020.catalog/034_payment
+018.meta/020.catalog/035_capital_market
+018.meta/020.catalog/036_stock_market
+018.meta/020.catalog/037_bond_market
+018.meta/020.catalog/038_fx_market
+018.meta/020.catalog/039_derivatives_market
+018.meta/020.catalog/040_asset_management
+018.meta/020.catalog/041_private_equity
+018.meta/020.catalog/042_venture_capital
+018.meta/020.catalog/043_public_finance
+018.meta/020.catalog/044_taxation
+018.meta/020.catalog/045_insurance
+018.meta/020.catalog/046_financial_crime
+018.meta/020.catalog/047_trade
+018.meta/020.catalog/048_customs
+018.meta/020.catalog/049_logistics
+018.meta/020.catalog/050_supply_chain
+018.meta/020.catalog/051_agriculture
+018.meta/020.catalog/052_food
+018.meta/020.catalog/053_fisheries
+018.meta/020.catalog/054_forestry
+018.meta/020.catalog/055_mining
+018.meta/020.catalog/056_manufacturing
+018.meta/020.catalog/057_semiconductor
+018.meta/020.catalog/058_automotive
+018.meta/020.catalog/059_construction
+018.meta/020.catalog/060_real_estate
+018.meta/020.catalog/061_infrastructure
+018.meta/020.catalog/062_transport
+018.meta/020.catalog/063_railway
+018.meta/020.catalog/064_shipping
+018.meta/020.catalog/065_aviation
+018.meta/020.catalog/066_energy
+018.meta/020.catalog/067_oil_gas
+018.meta/020.catalog/068_electric_power
+018.meta/020.catalog/069_water
+018.meta/020.catalog/070_environment
+018.meta/020.catalog/071_climate
+018.meta/020.catalog/072_disaster_management
+018.meta/020.catalog/073_urban
+018.meta/020.catalog/074_rural
+018.meta/020.catalog/075_education
+018.meta/020.catalog/076_research_university
+018.meta/020.catalog/077_research_funding
+018.meta/020.catalog/078_science
+018.meta/020.catalog/079_technology
+018.meta/020.catalog/080_innovation
+018.meta/020.catalog/081_data
+018.meta/020.catalog/082_ai
+018.meta/020.catalog/083_cybersecurity
+018.meta/020.catalog/084_communications
+018.meta/020.catalog/085_telecom
+018.meta/020.catalog/086_internet
+018.meta/020.catalog/087_space
+018.meta/020.catalog/088_space_economy
+018.meta/020.catalog/089_bioeconomy
+018.meta/020.catalog/090_healthcare
+018.meta/020.catalog/091_public_health
+018.meta/020.catalog/092_social_welfare
+018.meta/020.catalog/093_housing
+018.meta/020.catalog/094_religion
+018.meta/020.catalog/095_civil_society
+018.meta/020.catalog/096_media
+018.meta/020.catalog/097_culture
+018.meta/020.catalog/098_entertainment
+018.meta/020.catalog/099_sports
+018.meta/020.catalog/100_tourism
+018.meta/020.catalog/101_hospitality
+018.meta/020.catalog/102_resource_economy
+018.meta/020.catalog/103_circular_economy
+018.meta/020.catalog/104_marine
+018.meta/020.catalog/105_ocean_trade
+018.meta/020.catalog/106_platform_economy
+018.meta/020.catalog/107_digital_government
+018.meta/020.catalog/108_standards
+018.meta/020.catalog/109_intellectual_property
+018.meta/020.catalog/110_consumer_protection
+018.meta/020.catalog/111_labor_relations
+018.meta/020.catalog/112_development_finance
+018.meta/020.catalog/113_knowledge_economy
+018.meta/020.catalog/114_financial_stability
+018.meta/020.catalog/115_human_capital
+018.meta/020.catalog/116_global_crisis
+018.meta/020.catalog/117_democratic_system
+018.meta/020.catalog/118_geopolitics
+018.meta/020.catalog/119_global_trade_system
+018.meta/020.catalog/120_civilization_meta
+018.meta/020.catalog/121_biosphere
+018.meta/020.catalog/122_cosmos
+
+[HAS_CHILD_DIRS] 018.meta/413.foundation-7states-canonical-dictionary
+018.meta/413.foundation-7states-canonical-dictionary/4131.state-city-indices
+
+[HAS_CHILD_DIRS] 999.archive/model-dictionary-raw-drafts-retired-20260401
+999.archive/model-dictionary-raw-drafts-retired-20260401/414.education-institution-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/415.medical-institution-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/416.admin-port-rail-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/417.public-space-and-market-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/418.security-and-correction-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/419.legal-and-judicial-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/420.religious-facility-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/422.person-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/423.company-canonical-dictionary
+999.archive/model-dictionary-raw-drafts-retired-20260401/424.state-institution-canonical-dictionary
+
+[HAS_CHILD_DIRS] 999.archive/model-dictionary-retired-20260401
+999.archive/model-dictionary-retired-20260401/full-bundles
+999.archive/model-dictionary-retired-20260401/master-index
+
+
+============================================================
+LAYER: 040.runtime
+============================================================
+[HAS_CHILD_DIRS] 002.world/020.disaster-calculation
+002.world/020.disaster-calculation/380.disaster-relief-stockpile
+
+[HAS_CHILD_DIRS] 002.world/080.infrastructure-placement
+002.world/080.infrastructure-placement/460.infrastructure-resilience
+
+[HAS_CHILD_DIRS] 002.world/090.life-events-and-world-events
+002.world/090.life-events-and-world-events/130.civic-life
+002.world/090.life-events-and-world-events/180.civil-status
+002.world/090.life-events-and-world-events/210.healthcare-publichealth
+002.world/090.life-events-and-world-events/270.environment-circularity
+002.world/090.life-events-and-world-events/370.migration-nationality
+
+[HAS_CHILD_DIRS] 003.foundation/020.layer-boundary
+003.foundation/020.layer-boundary/120.foundation-systems
+
+[HAS_CHILD_DIRS] 005.story/020.historical-progression
+005.story/020.historical-progression/140.social-culture
+005.story/020.historical-progression/410.religion-operations
+005.story/020.historical-progression/450.culture-tourism
+
+[HAS_CHILD_DIRS] 008.education/030.education-facility-operation
+008.education/030.education-facility-operation/440.research-integrity
+
+[HAS_CHILD_DIRS] 009.career/020.employment-route
+009.career/020.employment-route/200.human-capital
+009.career/020.employment-route/430.labor-administration
+
+[HAS_CHILD_DIRS] 011.economy/010.real-estate
+011.economy/010.real-estate/260.real-estate-regime
+
+[HAS_CHILD_DIRS] 011.economy/030.banking
+011.economy/030.banking/170.finance-credit
+011.economy/030.banking/262.banking
+
+[HAS_CHILD_DIRS] 011.economy/040.securities
+011.economy/040.securities/264.securities
+011.economy/040.securities/310.capital-markets
+
+[HAS_CHILD_DIRS] 011.economy/050.retail
+011.economy/050.retail/263.retail-digital-product
+
+[HAS_CHILD_DIRS] 011.economy/070.manufacturing
+011.economy/070.manufacturing/160.supply-production
+
+[HAS_CHILD_DIRS] 011.economy/110.market-play-and-economic-activity
+011.economy/110.market-play-and-economic-activity/100.civil-sectors
+011.economy/110.market-play-and-economic-activity/140.marketplace-platform
+011.economy/110.market-play-and-economic-activity/141.marketplace-transfer
+011.economy/110.market-play-and-economic-activity/190.organization-economy
+011.economy/110.market-play-and-economic-activity/266.company-builder
+011.economy/110.market-play-and-economic-activity/320.external-trade-aid
+
+[HAS_CHILD_DIRS] 015.government/005.government-core
+015.government/005.government-core/150.service-delivery
+
+[HAS_CHILD_DIRS] 015.government/070.governance-detail
+015.government/070.governance-detail/080.statecraft
+015.government/070.governance-detail/090.public-admin
+015.government/070.governance-detail/110.state-power
+015.government/070.governance-detail/265.nation-builder
+015.government/070.governance-detail/340.urban-governance
+
+[HAS_CHILD_DIRS] 015.government/080.fiscal-and-treaty
+015.government/080.fiscal-and-treaty/350.public-procurement
+015.government/080.fiscal-and-treaty/360.diplomatic-operations
+
+[HAS_CHILD_DIRS] 018.meta/010.common-tables-and-matrices
+018.meta/010.common-tables-and-matrices/050.domain
+018.meta/010.common-tables-and-matrices/070.subdomain
+018.meta/010.common-tables-and-matrices/240.records-governance
+018.meta/010.common-tables-and-matrices/290.observability-control
+018.meta/010.common-tables-and-matrices/470.cross-cutting-completion
+
+[HAS_CHILD_DIRS] 019.interface/050.builder-entry-ui
+019.interface/050.builder-entry-ui/142.creator-platform
+019.interface/050.builder-entry-ui/230.interface-governance
+019.interface/050.builder-entry-ui/420.media-communication
+
+
+============================================================
+LAYER: 050.flow
+============================================================
+[HAS_CHILD_DIRS] 002.world/020.disaster-calculation
+002.world/020.disaster-calculation/380.disaster-relief-stockpile
+
+[HAS_CHILD_DIRS] 002.world/080.infrastructure-placement
+002.world/080.infrastructure-placement/460.infrastructure-resilience
+
+[HAS_CHILD_DIRS] 002.world/090.life-events-and-world-events
+002.world/090.life-events-and-world-events/130.civic-life
+002.world/090.life-events-and-world-events/180.civil-status
+002.world/090.life-events-and-world-events/210.healthcare-publichealth
+002.world/090.life-events-and-world-events/270.environment-circularity
+002.world/090.life-events-and-world-events/370.migration-nationality
+
+[HAS_CHILD_DIRS] 003.foundation/020.layer-boundary
+003.foundation/020.layer-boundary/120.foundation-systems
+
+[HAS_CHILD_DIRS] 005.story/020.historical-progression
+005.story/020.historical-progression/140.social-culture
+005.story/020.historical-progression/410.religion-operations
+005.story/020.historical-progression/450.culture-tourism
+
+[HAS_CHILD_DIRS] 008.education/030.education-facility-operation
+008.education/030.education-facility-operation/440.research-integrity
+
+[HAS_CHILD_DIRS] 009.career/020.employment-route
+009.career/020.employment-route/200.human-capital
+009.career/020.employment-route/430.labor-administration
+
+[HAS_CHILD_DIRS] 011.economy/010.real-estate
+011.economy/010.real-estate/260.real-estate-regime
+
+[HAS_CHILD_DIRS] 011.economy/030.banking
+011.economy/030.banking/170.finance-credit
+011.economy/030.banking/262.banking
+
+[HAS_CHILD_DIRS] 011.economy/040.securities
+011.economy/040.securities/264.securities
+011.economy/040.securities/310.capital-markets
+
+[HAS_CHILD_DIRS] 011.economy/050.retail
+011.economy/050.retail/263.retail-digital-product
+
+[HAS_CHILD_DIRS] 011.economy/070.manufacturing
+011.economy/070.manufacturing/160.supply-production
+
+[HAS_CHILD_DIRS] 011.economy/110.market-play-and-economic-activity
+011.economy/110.market-play-and-economic-activity/100.civil-sectors
+011.economy/110.market-play-and-economic-activity/140.marketplace-platform
+011.economy/110.market-play-and-economic-activity/141.marketplace-transfer
+011.economy/110.market-play-and-economic-activity/190.organization-economy
+011.economy/110.market-play-and-economic-activity/320.external-trade-aid
+
+[HAS_CHILD_DIRS] 015.government/005.government-core
+015.government/005.government-core/150.service-delivery
+
+[HAS_CHILD_DIRS] 015.government/070.governance-detail
+015.government/070.governance-detail/080.statecraft
+015.government/070.governance-detail/090.public-admin
+015.government/070.governance-detail/110.state-power
+015.government/070.governance-detail/265.nation-builder
+015.government/070.governance-detail/340.urban-governance
+
+[HAS_CHILD_DIRS] 015.government/080.fiscal-and-treaty
+015.government/080.fiscal-and-treaty/350.public-procurement
+015.government/080.fiscal-and-treaty/360.diplomatic-operations
+
+[HAS_CHILD_DIRS] 018.meta/010.common-tables-and-matrices
+018.meta/010.common-tables-and-matrices/050.domain
+018.meta/010.common-tables-and-matrices/070.subdomain
+018.meta/010.common-tables-and-matrices/240.records-governance
+018.meta/010.common-tables-and-matrices/290.observability-control
+018.meta/010.common-tables-and-matrices/470.cross-cutting-completion
+
+[HAS_CHILD_DIRS] 018.meta/999.meta
+018.meta/999.meta/pre_renumber_archive_20260322_075258
+
+[HAS_CHILD_DIRS] 019.interface/050.builder-entry-ui
+019.interface/050.builder-entry-ui/142.creator-platform
+019.interface/050.builder-entry-ui/230.interface-governance
+019.interface/050.builder-entry-ui/420.media-communication
+
+
+============================================================
+LAYER: 070.operations
+============================================================
+[HAS_CHILD_DIRS] 002.world/090.world-and-builder-ops
+002.world/090.world-and-builder-ops/130.civic-life
+002.world/090.world-and-builder-ops/180.civil-status
+002.world/090.world-and-builder-ops/210.healthcare-publichealth
+002.world/090.world-and-builder-ops/270.environment-circularity
+002.world/090.world-and-builder-ops/370.migration-nationality
+002.world/090.world-and-builder-ops/380.disaster-relief-stockpile
+002.world/090.world-and-builder-ops/460.infrastructure-resilience
+
+[HAS_CHILD_DIRS] 003.foundation/003.foundation-systems
+003.foundation/003.foundation-systems/120.foundation-systems
+
+[HAS_CHILD_DIRS] 005.story/005.story-ops
+005.story/005.story-ops/140.social-culture
+005.story/005.story-ops/410.religion-operations
+005.story/005.story-ops/450.culture-tourism
+
+[HAS_CHILD_DIRS] 008.education/008.education-ops
+008.education/008.education-ops/440.research-integrity
+
+[HAS_CHILD_DIRS] 009.career/009.career-ops
+009.career/009.career-ops/200.human-capital
+009.career/009.career-ops/430.labor-administration
+
+[HAS_CHILD_DIRS] 011.economy/100.economy-and-market-ops
+011.economy/100.economy-and-market-ops/100.civil-sectors
+011.economy/100.economy-and-market-ops/140.marketplace-platform
+011.economy/100.economy-and-market-ops/141.marketplace-transfer
+011.economy/100.economy-and-market-ops/160.supply-production
+011.economy/100.economy-and-market-ops/170.finance-credit
+011.economy/100.economy-and-market-ops/190.organization-economy
+011.economy/100.economy-and-market-ops/310.capital-markets
+011.economy/100.economy-and-market-ops/320.external-trade-aid
+
+[HAS_CHILD_DIRS] 013.law/013.law-ops
+013.law/013.law-ops/280.dispute-resolution
+013.law/013.law-ops/390.criminal-procedure
+
+[HAS_CHILD_DIRS] 014.security/020.security-ops
+014.security/020.security-ops/220.security-enforcement
+014.security/020.security-ops/330.cyber-defense
+
+[HAS_CHILD_DIRS] 015.government/110.builder
+015.government/110.builder/090.public-admin
+015.government/110.builder/150.service-delivery
+
+[HAS_CHILD_DIRS] 015.government/130.policy-ops
+015.government/130.policy-ops/080.statecraft
+015.government/130.policy-ops/110.state-power
+015.government/130.policy-ops/340.urban-governance
+015.government/130.policy-ops/350.public-procurement
+015.government/130.policy-ops/360.diplomatic-operations
+
+[HAS_CHILD_DIRS] 016.war/016.war-ops
+016.war/016.war-ops/400.military-operations
+
+[HAS_CHILD_DIRS] 017.runtime/040.event-control
+017.runtime/040.event-control/060.control
+
+[HAS_CHILD_DIRS] 017.runtime/150.ai-ops
+017.runtime/150.ai-ops/250.planning-simulation
+
+[HAS_CHILD_DIRS] 018.meta/030.audit
+018.meta/030.audit/240.records-governance
+
+[HAS_CHILD_DIRS] 018.meta/120.meta
+018.meta/120.meta/290.observability-control
+018.meta/120.meta/470.cross-cutting-completion
+
+[HAS_CHILD_DIRS] 018.meta/170.domain-ops
+018.meta/170.domain-ops/050.domain
+018.meta/170.domain-ops/070.subdomain
+
+[HAS_CHILD_DIRS] 018.meta/999.meta
+018.meta/999.meta/pre_renumber_archive_20260322_113156
+
+[HAS_CHILD_DIRS] 019.interface/080.interface
+019.interface/080.interface/142.creator-platform
+019.interface/080.interface/230.interface-governance
+019.interface/080.interface/420.media-communication
+
+
+============================================================
+LAYER: 080.policy
+============================================================
+[HAS_CHILD_DIRS] 002.world/130.world-policy
+002.world/130.world-policy/130.civic-life
+002.world/130.world-policy/180.civil-status
+002.world/130.world-policy/210.healthcare-publichealth
+002.world/130.world-policy/270.environment-circularity
+002.world/130.world-policy/380.disaster-relief-stockpile
+002.world/130.world-policy/460.infrastructure-resilience
+
+[HAS_CHILD_DIRS] 003.foundation/100.rules
+003.foundation/100.rules/120.foundation-systems
+
+[HAS_CHILD_DIRS] 005.story/100.rules
+005.story/100.rules/140.social-culture
+005.story/100.rules/410.religion-operations
+005.story/100.rules/450.culture-tourism
+
+[HAS_CHILD_DIRS] 008.education/100.rules
+008.education/100.rules/440.research-integrity
+
+[HAS_CHILD_DIRS] 009.career/100.rules
+009.career/100.rules/200.human-capital
+009.career/100.rules/430.labor-administration
+
+[HAS_CHILD_DIRS] 011.economy/180.economy
+011.economy/180.economy/140.marketplace-platform
+011.economy/180.economy/141.marketplace-transfer
+011.economy/180.economy/160.supply-production
+011.economy/180.economy/170.finance-credit
+011.economy/180.economy/190.organization-economy
+011.economy/180.economy/262.banking
+011.economy/180.economy/263.retail-digital-product
+011.economy/180.economy/264.securities
+011.economy/180.economy/310.capital-markets
+011.economy/180.economy/320.external-trade-aid
+011.economy/180.economy/372.digital-marketplace
+
+[HAS_CHILD_DIRS] 013.law/100.rules
+013.law/100.rules/280.dispute-resolution
+013.law/100.rules/390.criminal-procedure
+
+[HAS_CHILD_DIRS] 014.security/110.access
+014.security/110.access/220.security-enforcement
+014.security/110.access/330.cyber-defense
+
+[HAS_CHILD_DIRS] 015.government/190.government
+015.government/190.government/080.statecraft
+015.government/190.government/090.public-admin
+015.government/190.government/110.state-power
+015.government/190.government/150.service-delivery
+015.government/190.government/265.nation-builder
+015.government/190.government/340.urban-governance
+015.government/190.government/350.public-procurement
+015.government/190.government/360.diplomatic-operations
+015.government/190.government/430.builder-execution-and-property-revenue-distribution
+
+[HAS_CHILD_DIRS] 015.government/266.company-builder
+015.government/266.company-builder/_legacy_hold
+
+[HAS_CHILD_DIRS] 016.war/100.rules
+016.war/100.rules/400.military-operations
+
+[HAS_CHILD_DIRS] 017.runtime/170.runtime
+017.runtime/170.runtime/060.control
+017.runtime/170.runtime/250.planning-simulation
+
+[HAS_CHILD_DIRS] 018.meta/200.meta
+018.meta/200.meta/050.domain
+018.meta/200.meta/070.subdomain
+018.meta/200.meta/240.records-governance
+018.meta/200.meta/290.observability-control
+
+[HAS_CHILD_DIRS] 018.meta/999.meta
+018.meta/999.meta/post_flatten_archive_20260322_115224
+018.meta/999.meta/pre_flatten_archive_20260322_113526
+
+[HAS_CHILD_DIRS] 019.interface/150.interface
+019.interface/150.interface/142.creator-platform
+019.interface/150.interface/420.media-communication
+
+
+============================================================
+LAYER: 090.interface
+============================================================
+[HAS_CHILD_DIRS] 002.world/120.world-ui
+002.world/120.world-ui/270.environment-circularity
+002.world/120.world-ui/380.disaster-relief-stockpile
+002.world/120.world-ui/460.infrastructure-resilience
+
+[HAS_CHILD_DIRS] 005.story/120.world-ui
+005.story/120.world-ui/410.religion-operations
+005.story/120.world-ui/450.culture-tourism
+
+[HAS_CHILD_DIRS] 008.education/110.ui-dev
+008.education/110.ui-dev/440.research-integrity
+
+[HAS_CHILD_DIRS] 009.career/110.ui-dev
+009.career/110.ui-dev/430.labor-administration
+
+[HAS_CHILD_DIRS] 011.economy/160.market-ui
+011.economy/160.market-ui/140.marketplace-platform
+011.economy/160.market-ui/141.marketplace-transfer
+011.economy/160.market-ui/262.banking
+011.economy/160.market-ui/263.retail-digital-product
+011.economy/160.market-ui/264.securities
+011.economy/160.market-ui/310.capital-markets
+011.economy/160.market-ui/320.external-trade-aid
+
+[HAS_CHILD_DIRS] 013.law/150.admin-ui
+013.law/150.admin-ui/280.dispute-resolution
+013.law/150.admin-ui/390.criminal-procedure
+
+[HAS_CHILD_DIRS] 014.security/150.admin-ui
+014.security/150.admin-ui/330.cyber-defense
+
+[HAS_CHILD_DIRS] 015.government/130.government-ui
+015.government/130.government-ui/340.urban-governance
+015.government/130.government-ui/350.public-procurement
+015.government/130.government-ui/360.diplomatic-operations
+
+[HAS_CHILD_DIRS] 015.government/170.builder-ui
+015.government/170.builder-ui/265.nation-builder
+
+[HAS_CHILD_DIRS] 016.war/130.government-ui
+016.war/130.government-ui/400.military-operations
+
+[HAS_CHILD_DIRS] 018.meta/180.meta-ui
+018.meta/180.meta-ui/050.domain
+018.meta/180.meta-ui/240.records-governance
+018.meta/180.meta-ui/290.observability-control
+
+[HAS_CHILD_DIRS] 018.meta/999.meta
+018.meta/999.meta/pre_renumber_archive_20260322_113156
+
+
+============================================================
+LAYER: 120.implementation
+============================================================
+[HAS_CHILD_DIRS] 011.economy/070.economy
+011.economy/070.economy/393.economic-calculation
+
+[HAS_CHILD_DIRS] 018.meta/110.meta
+018.meta/110.meta/409.extracted-core-dictionary
+
+
+============================================================
+LAYER: 130.development
+============================================================
+
