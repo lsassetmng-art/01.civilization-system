@@ -1,0 +1,24 @@
+# ============================================================
+# 090 INTERFACE INDEX
+# ============================================================
+
+status: draft
+layer: index
+system: applications
+application: NameCardManager
+directory: 090.interface
+owner: Boss
+prepared_by: Zero
+
+files:
+- 090_NAME_CARD_MANAGER_INTERFACE.md
+- 090100_LOGIN_SCREEN_INTERFACE.md
+- 090110_NAMECARD_LIST_SCREEN_INTERFACE.md
+- 090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md
+- 090130_SETTINGS_SCREEN_INTERFACE.md
+- 090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md
+- 090150_ERP_SETTING_SCREEN_INTERFACE.md
+- 090160_NAMECARD_RELATIONSHIP_INTERFACE.md
+- 090170_NAMECARD_UI_STATE_INTERFACE.md
+- 090180_NAMECARD_BADGE_LABEL_INTERFACE.md
+- 090190_NAMECARD_UI_MESSAGE_INTERFACE.md
