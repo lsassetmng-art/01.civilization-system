@@ -21,7 +21,7 @@ reusable component reuse, structured DB targeting,
 review/approval/apply control, Git-linked delivery,
 testing support, bug/version/progress management,
 multilingual operation, optional build execution,
-and guarded execution control.
+guarded execution control, and MVP-oriented Java implementation design.
 
 # ============================================================
 # 2. MAIN VALUE
@@ -135,14 +135,22 @@ The design set additionally includes guarded execution detail for:
 - execution matrix MVP rows
 - SQL/Git/escalation runtime-flow-policy-interface-implementation alignment
 
-This means execution behavior is now clearer for:
-- SQL execution
-- protected Git push
-- escalation from light control to strong control
-- actor-role-based action permission
+# ============================================================
+# 10. JAVA MVP SKELETON DESIGN
+# ============================================================
+
+The design set additionally includes MVP-oriented Java implementation guidance for:
+- package architecture
+- package structure list
+- class skeleton list
+- runtime usage direction
+- implementation flow
+- implementation guide
+
+This means Java-side MVP implementation can begin with a clearer structure.
 
 # ============================================================
-# 10. MVP IMPLEMENTATION ASSETS
+# 11. MVP IMPLEMENTATION ASSETS
 # ============================================================
 
 Current MVP-ready assets include:
@@ -151,9 +159,10 @@ Current MVP-ready assets include:
 - MVP API exact contracts
 - MVP UI exact screen/item sets
 - MVP execution control tables
+- MVP Java package/class skeleton design
 
 # ============================================================
-# 11. ROOT FILES
+# 12. ROOT FILES
 # ============================================================
 
 - 000_APP_DEVELOPMENT_STUDIO_OVERVIEW.md
@@ -163,6 +172,7 @@ Current MVP-ready assets include:
 - 00_APP_DEVELOPMENT_STUDIO_IMPLEMENTATION_READY_PACKAGE.md
 - 00_APP_DEVELOPMENT_STUDIO_IMPLEMENTATION_READY_SUMMARY.md
 - 00_APP_DEVELOPMENT_STUDIO_EXECUTION_CONTROL_SUMMARY.md
+- 00_APP_DEVELOPMENT_STUDIO_JAVA_SKELETON_SUMMARY.md
 - 00_APP_DEVELOPMENT_STUDIO_INTEGRATED_REBUILT.md
 - 9000_APP_DEVELOPMENT_STUDIO_FINAL_CHECK.md
 - 9001_APP_DEVELOPMENT_STUDIO_FINAL_RECHECK.md
@@ -172,7 +182,7 @@ Current MVP-ready assets include:
 - 2100_APP_DEVELOPMENT_STUDIO_MVP_API_EXACT_CONTRACTS.md
 
 # ============================================================
-# 12. LAYERS
+# 13. LAYERS
 # ============================================================
 
 - 010.constitution
@@ -190,7 +200,7 @@ Current MVP-ready assets include:
 - 130.development
 
 # ============================================================
-# 13. SUMMARY
+# 14. SUMMARY
 # ============================================================
 
 App Development Studio is now defined as a standalone,
@@ -198,4 +208,5 @@ implementation-ready application design and delivery tool
 with controllable automation, reuse-aware generation,
 DB/Git/test awareness, detailed design support
 for API, DB, UI, authority, readiness,
-and guarded execution behavior.
+guarded execution behavior,
+and Java-side MVP structure guidance.

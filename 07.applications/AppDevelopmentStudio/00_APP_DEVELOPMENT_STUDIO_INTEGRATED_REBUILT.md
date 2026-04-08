@@ -71,6 +71,7 @@ root_files:
 - 00_APP_DEVELOPMENT_STUDIO_IMPLEMENTATION_READY_PACKAGE.md
 - 00_APP_DEVELOPMENT_STUDIO_IMPLEMENTATION_READY_SUMMARY.md
 - 00_APP_DEVELOPMENT_STUDIO_EXECUTION_CONTROL_SUMMARY.md
+- 00_APP_DEVELOPMENT_STUDIO_JAVA_SKELETON_SUMMARY.md
 - 00_APP_DEVELOPMENT_STUDIO_INTEGRATED_REBUILT.md
 - 9000_APP_DEVELOPMENT_STUDIO_FINAL_CHECK.md
 - 9001_APP_DEVELOPMENT_STUDIO_FINAL_RECHECK.md
@@ -79,31 +80,16 @@ root_files:
 - 2000_APP_DEVELOPMENT_STUDIO_MVP_DB_DDL.sql
 - 2100_APP_DEVELOPMENT_STUDIO_MVP_API_EXACT_CONTRACTS.md
 
-execution_control_additions:
-- 030_SQL_SAFETY_CLASSIFICATION_TABLE.md
-- 030_GIT_EXACT_CONTROL_TABLE.md
-- 030_REVIEW_ESCALATION_DEFAULTS.md
-- 030_EXECUTION_MATRIX_MVP_ROWS.md
-- 040_SQL_SAFETY_RUNTIME.md
-- 040_GIT_CONTROL_RUNTIME.md
-- 040_ESCALATION_RUNTIME.md
-- 050_SQL_SAFETY_FLOW.md
-- 050_GIT_CONTROL_FLOW.md
-- 050_ESCALATION_FLOW.md
-- 080_SQL_SAFETY_POLICY.md
-- 080_GIT_EXACT_CONTROL_POLICY.md
-- 080_ESCALATION_POLICY.md
-- 090_SQL_SAFETY_INTERFACE.md
-- 090_GIT_CONTROL_INTERFACE.md
-- 090_ESCALATION_REASON_INTERFACE.md
-- 120_SQL_SAFETY_IMPLEMENTATION.md
-- 120_GIT_CONTROL_IMPLEMENTATION.md
-- 120_ESCALATION_IMPLEMENTATION.md
-- 130_SQL_AND_GIT_CONTROL_GUIDE.md
-
-mvp_assets:
-- 2000_APP_DEVELOPMENT_STUDIO_MVP_DB_DDL.sql
-- 2100_APP_DEVELOPMENT_STUDIO_MVP_API_EXACT_CONTRACTS.md
+java_skeleton_additions:
+- 020_APP_DEVELOPMENT_STUDIO_JAVA_PACKAGE_ARCHITECTURE.md
+- 030_JAVA_PACKAGE_STRUCTURE_MVP.md
+- 030_JAVA_CLASS_SKELETON_MVP.md
+- 040_JAVA_SKELETON_RUNTIME.md
+- 050_JAVA_SKELETON_IMPLEMENTATION_FLOW.md
+- 080_JAVA_SKELETON_POLICY.md
+- 090_JAVA_SKELETON_INTERFACE.md
+- 120_JAVA_SKELETON_IMPLEMENTATION.md
+- 130_JAVA_SKELETON_GUIDE.md
 
 
 # ============================================================
@@ -133,7 +119,7 @@ reusable component reuse, structured DB targeting,
 review/approval/apply control, Git-linked delivery,
 testing support, bug/version/progress management,
 multilingual operation, optional build execution,
-and guarded execution control.
+guarded execution control, and MVP-oriented Java implementation design.
 
 # ============================================================
 # 2. MAIN VALUE
@@ -247,14 +233,22 @@ The design set additionally includes guarded execution detail for:
 - execution matrix MVP rows
 - SQL/Git/escalation runtime-flow-policy-interface-implementation alignment
 
-This means execution behavior is now clearer for:
-- SQL execution
-- protected Git push
-- escalation from light control to strong control
-- actor-role-based action permission
+# ============================================================
+# 10. JAVA MVP SKELETON DESIGN
+# ============================================================
+
+The design set additionally includes MVP-oriented Java implementation guidance for:
+- package architecture
+- package structure list
+- class skeleton list
+- runtime usage direction
+- implementation flow
+- implementation guide
+
+This means Java-side MVP implementation can begin with a clearer structure.
 
 # ============================================================
-# 10. MVP IMPLEMENTATION ASSETS
+# 11. MVP IMPLEMENTATION ASSETS
 # ============================================================
 
 Current MVP-ready assets include:
@@ -263,9 +257,10 @@ Current MVP-ready assets include:
 - MVP API exact contracts
 - MVP UI exact screen/item sets
 - MVP execution control tables
+- MVP Java package/class skeleton design
 
 # ============================================================
-# 11. ROOT FILES
+# 12. ROOT FILES
 # ============================================================
 
 - 000_APP_DEVELOPMENT_STUDIO_OVERVIEW.md
@@ -275,6 +270,7 @@ Current MVP-ready assets include:
 - 00_APP_DEVELOPMENT_STUDIO_IMPLEMENTATION_READY_PACKAGE.md
 - 00_APP_DEVELOPMENT_STUDIO_IMPLEMENTATION_READY_SUMMARY.md
 - 00_APP_DEVELOPMENT_STUDIO_EXECUTION_CONTROL_SUMMARY.md
+- 00_APP_DEVELOPMENT_STUDIO_JAVA_SKELETON_SUMMARY.md
 - 00_APP_DEVELOPMENT_STUDIO_INTEGRATED_REBUILT.md
 - 9000_APP_DEVELOPMENT_STUDIO_FINAL_CHECK.md
 - 9001_APP_DEVELOPMENT_STUDIO_FINAL_RECHECK.md
@@ -284,7 +280,7 @@ Current MVP-ready assets include:
 - 2100_APP_DEVELOPMENT_STUDIO_MVP_API_EXACT_CONTRACTS.md
 
 # ============================================================
-# 12. LAYERS
+# 13. LAYERS
 # ============================================================
 
 - 010.constitution
@@ -302,7 +298,7 @@ Current MVP-ready assets include:
 - 130.development
 
 # ============================================================
-# 13. SUMMARY
+# 14. SUMMARY
 # ============================================================
 
 App Development Studio is now defined as a standalone,
@@ -310,7 +306,8 @@ implementation-ready application design and delivery tool
 with controllable automation, reuse-aware generation,
 DB/Git/test awareness, detailed design support
 for API, DB, UI, authority, readiness,
-and guarded execution behavior.
+guarded execution behavior,
+and Java-side MVP structure guidance.
 
 
 # ============================================================
@@ -418,6 +415,33 @@ The MVP execution-control design now includes:
 
 result:
 The guarded execution surface is now much clearer for implementation.
+
+
+# ============================================================
+# FILE: 00_APP_DEVELOPMENT_STUDIO_JAVA_SKELETON_SUMMARY.md
+# ============================================================
+
+# ============================================================
+# APP DEVELOPMENT STUDIO JAVA SKELETON SUMMARY
+# ============================================================
+
+status: canonical-draft
+system: applications
+application: App Development Studio
+owner: Boss
+prepared_by: Zero
+
+summary:
+The MVP Java implementation design now includes:
+- package architecture
+- package structure list
+- class skeleton list
+- runtime usage direction
+- implementation flow
+- implementation guide
+
+result:
+Java-side MVP implementation can start with much lower ambiguity.
 
 
 # ============================================================
@@ -2669,6 +2693,54 @@ decision_targets:
 - full_ready_with_warning
 - manual_required
 - blocked
+
+
+# ============================================================
+# FILE: 020.architecture/020_APP_DEVELOPMENT_STUDIO_JAVA_PACKAGE_ARCHITECTURE.md
+# ============================================================
+
+# ============================================================
+# APP DEVELOPMENT STUDIO JAVA PACKAGE ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+layer: architecture
+system: applications
+application: App Development Studio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the Java package split for MVP implementation.
+
+package_root:
+com.lsam.appdevelopmentstudio
+
+recommended_package_groups:
+- app
+- api
+- application
+- domain
+- infrastructure
+- ui
+- shared
+
+application_layer_examples:
+- request
+- readiness
+- proposal
+- review
+- apply
+- sql
+- git
+- bug
+- progress
+- settings
+
+principles:
+- feature-oriented first
+- DTO / service / repository / controller split inside feature when needed
+- policy and runtime decision logic should be isolated from UI
 
 
 # ============================================================
@@ -5725,6 +5797,229 @@ rows:
 
 
 # ============================================================
+# FILE: 030.model/030_JAVA_PACKAGE_STRUCTURE_MVP.md
+# ============================================================
+
+# ============================================================
+# JAVA PACKAGE STRUCTURE MVP
+# ============================================================
+
+status: canonical-draft
+layer: model
+application: App Development Studio
+
+package_root:
+com.lsam.appdevelopmentstudio
+
+packages:
+- com.lsam.appdevelopmentstudio.app
+- com.lsam.appdevelopmentstudio.api.common
+- com.lsam.appdevelopmentstudio.api.request
+- com.lsam.appdevelopmentstudio.api.readiness
+- com.lsam.appdevelopmentstudio.api.proposal
+- com.lsam.appdevelopmentstudio.api.review
+- com.lsam.appdevelopmentstudio.api.apply
+- com.lsam.appdevelopmentstudio.api.bug
+- com.lsam.appdevelopmentstudio.api.progress
+- com.lsam.appdevelopmentstudio.application.request
+- com.lsam.appdevelopmentstudio.application.readiness
+- com.lsam.appdevelopmentstudio.application.proposal
+- com.lsam.appdevelopmentstudio.application.review
+- com.lsam.appdevelopmentstudio.application.apply
+- com.lsam.appdevelopmentstudio.application.sql
+- com.lsam.appdevelopmentstudio.application.git
+- com.lsam.appdevelopmentstudio.application.bug
+- com.lsam.appdevelopmentstudio.application.progress
+- com.lsam.appdevelopmentstudio.application.settings
+- com.lsam.appdevelopmentstudio.domain.model
+- com.lsam.appdevelopmentstudio.domain.policy
+- com.lsam.appdevelopmentstudio.domain.runtime
+- com.lsam.appdevelopmentstudio.infrastructure.persistence
+- com.lsam.appdevelopmentstudio.infrastructure.git
+- com.lsam.appdevelopmentstudio.infrastructure.sql
+- com.lsam.appdevelopmentstudio.infrastructure.audit
+- com.lsam.appdevelopmentstudio.ui.screen.request
+- com.lsam.appdevelopmentstudio.ui.screen.readiness
+- com.lsam.appdevelopmentstudio.ui.screen.proposal
+- com.lsam.appdevelopmentstudio.ui.screen.review
+- com.lsam.appdevelopmentstudio.ui.screen.bug
+- com.lsam.appdevelopmentstudio.ui.screen.progress
+- com.lsam.appdevelopmentstudio.shared.util
+
+
+# ============================================================
+# FILE: 030.model/030_JAVA_CLASS_SKELETON_MVP.md
+# ============================================================
+
+# ============================================================
+# JAVA CLASS SKELETON MVP
+# ============================================================
+
+status: canonical-draft
+layer: model
+application: App Development Studio
+
+core_classes:
+
+app:
+- AppDevelopmentStudioApplication
+- AppContainer
+
+api.common:
+- ApiResponse
+- ApiError
+- ApiMeta
+
+api.request:
+- CreateDevelopmentRequestRequest
+- CreateDevelopmentRequestResponse
+
+api.readiness:
+- AssessGenerationReadinessRequest
+- AssessGenerationReadinessResponse
+
+api.proposal:
+- GenerateDesignProposalRequest
+- GenerateJavaProposalRequest
+- GenerateSqlProposalRequest
+- ProposalResponse
+
+api.review:
+- RetainProposalRequest
+- ApproveProposalRequest
+- RejectProposalRequest
+
+api.apply:
+- ExecuteApplyRequest
+- ExecuteApplyResponse
+
+api.bug:
+- CreateBugRecordRequest
+- CreateBugRecordResponse
+
+api.progress:
+- UpdateTestProgressRequest
+- UpdateTestProgressResponse
+- UpdateProjectProgressRequest
+- UpdateProjectProgressResponse
+
+application.request:
+- DevelopmentRequestService
+- DevelopmentRequestValidator
+
+application.readiness:
+- GenerationReadinessService
+- GenerationReadinessScorer
+
+application.proposal:
+- ProposalGenerationService
+- DesignProposalService
+- JavaProposalService
+- SqlProposalService
+
+application.review:
+- ProposalReviewService
+
+application.apply:
+- ApplyExecutionService
+- BackupPreparationService
+- VerificationService
+
+application.sql:
+- SqlSafetyClassifier
+- SqlExecutionPolicyResolver
+
+application.git:
+- GitControlService
+- GitPolicyResolver
+
+application.bug:
+- BugRecordService
+
+application.progress:
+- TestProgressService
+- ProjectProgressService
+
+application.settings:
+- RuleProfileService
+- LanguageProfileService
+- BuildPolicyService
+
+domain.model:
+- DevelopmentRequest
+- Proposal
+- ProposalReview
+- ApplyExecution
+- BugRecord
+- TestProgressRecord
+- DevelopmentProgressRecord
+- ConnectionProfile
+- RuleProfile
+
+domain.policy:
+- ReviewPolicy
+- ApprovalPolicy
+- BuildPolicy
+- SqlSafetyPolicy
+- GitControlPolicy
+- EscalationPolicy
+- ReadinessThresholdPolicy
+
+domain.runtime:
+- ReadinessDecision
+- EffectiveControlDecision
+- SqlSafetyClassification
+- GitActionDecision
+
+infrastructure.persistence:
+- DevelopmentRequestRepository
+- ProposalRepository
+- ProposalReviewRepository
+- ApplyExecutionRepository
+- BugRecordRepository
+- TestProgressRepository
+- DevelopmentProgressRepository
+- RuleProfileRepository
+
+infrastructure.git:
+- GitRepositoryGateway
+
+infrastructure.sql:
+- SqlExecutionGateway
+- ConnectionProfileGateway
+
+infrastructure.audit:
+- AuditRunRepository
+- AuditStepRepository
+
+ui.screen.request:
+- RequestInputViewModel
+- RequestInputState
+
+ui.screen.readiness:
+- ReadinessResultViewModel
+- ReadinessResultState
+
+ui.screen.proposal:
+- ProposalListViewModel
+- ProposalListState
+- DiffViewerViewModel
+- DiffViewerState
+
+ui.screen.review:
+- ReviewApprovalViewModel
+- ReviewApprovalState
+
+ui.screen.bug:
+- BugListViewModel
+- BugDetailViewModel
+
+ui.screen.progress:
+- TestProgressViewModel
+- ProjectProgressViewModel
+
+
+# ============================================================
 # FILE: 040.runtime/040_OVERVIEW.md
 # ============================================================
 
@@ -7075,6 +7370,34 @@ runtime_steps:
 
 
 # ============================================================
+# FILE: 040.runtime/040_JAVA_SKELETON_RUNTIME.md
+# ============================================================
+
+# ============================================================
+# JAVA SKELETON RUNTIME
+# ============================================================
+
+status: canonical-draft
+layer: runtime
+application: App Development Studio
+
+purpose:
+Defines how the MVP Java skeleton should be used at runtime.
+
+runtime_shape:
+- UI collects input
+- application services validate and orchestrate
+- domain policy/runtime objects decide control
+- infrastructure gateways persist and execute
+- API DTOs map request/response shapes
+
+runtime_rules:
+- controllers or UI handlers should not embed policy logic
+- repositories should not perform UI-oriented shaping
+- policy resolution should happen before execution surfaces
+
+
+# ============================================================
 # FILE: 050.flow/050_OVERVIEW.md
 # ============================================================
 
@@ -7725,6 +8048,24 @@ requested light control exists
 -> risky condition detected
 -> escalation rule matched
 -> effective stricter control applied
+
+
+# ============================================================
+# FILE: 050.flow/050_JAVA_SKELETON_IMPLEMENTATION_FLOW.md
+# ============================================================
+
+# ============================================================
+# JAVA SKELETON IMPLEMENTATION FLOW
+# ============================================================
+
+flow:
+create package root
+-> create common API envelope classes
+-> create core domain models
+-> create repositories/interfaces
+-> create services for request/readiness/proposal/review/apply
+-> create UI ViewModel/state classes
+-> wire SQL/Git/policy helpers
 
 
 # ============================================================
@@ -8958,6 +9299,25 @@ policy_principles:
 
 
 # ============================================================
+# FILE: 080.policy/080_JAVA_SKELETON_POLICY.md
+# ============================================================
+
+# ============================================================
+# JAVA SKELETON POLICY
+# ============================================================
+
+status: canonical-draft
+layer: policy
+application: App Development Studio
+
+policy_principles:
+- keep MVP package split stable
+- avoid mixing UI with execution policy
+- isolate guarded execution logic
+- preserve DTO stability once exposed
+
+
+# ============================================================
 # FILE: 090.interface/090_OVERVIEW.md
 # ============================================================
 
@@ -9699,6 +10059,24 @@ views:
 
 
 # ============================================================
+# FILE: 090.interface/090_JAVA_SKELETON_INTERFACE.md
+# ============================================================
+
+# ============================================================
+# JAVA SKELETON INTERFACE
+# ============================================================
+
+status: canonical-draft
+layer: interface
+application: App Development Studio
+
+views:
+- package structure overview
+- class responsibility overview
+- service-to-screen mapping
+
+
+# ============================================================
 # FILE: 100.security/100_OVERVIEW.md
 # ============================================================
 
@@ -10434,6 +10812,26 @@ implementation_direction:
 
 
 # ============================================================
+# FILE: 120.implementation/120_JAVA_SKELETON_IMPLEMENTATION.md
+# ============================================================
+
+# ============================================================
+# JAVA SKELETON IMPLEMENTATION
+# ============================================================
+
+status: canonical-draft
+layer: implementation
+application: App Development Studio
+
+implementation_direction:
+- start from interfaces and DTOs
+- keep repositories thin
+- keep services orchestration-focused
+- keep policy objects deterministic
+- keep ViewModel/state pairs screen-scoped
+
+
+# ============================================================
 # FILE: 130.development/130_OVERVIEW.md
 # ============================================================
 
@@ -10798,3 +11196,28 @@ guide_scope:
 - inspect repository/branch policy before push
 - apply escalation before actual execution
 - persist effective control to audit
+
+
+# ============================================================
+# FILE: 130.development/130_JAVA_SKELETON_GUIDE.md
+# ============================================================
+
+# ============================================================
+# JAVA SKELETON GUIDE
+# ============================================================
+
+status: canonical-draft
+layer: development
+application: App Development Studio
+
+recommended_order:
+1. api.common
+2. domain.model
+3. domain.policy / domain.runtime
+4. infrastructure.persistence
+5. application.request / readiness / proposal
+6. application.review / apply / sql / git
+7. ui.screen.*
+
+notes:
+This order minimizes circular confusion during MVP implementation.
