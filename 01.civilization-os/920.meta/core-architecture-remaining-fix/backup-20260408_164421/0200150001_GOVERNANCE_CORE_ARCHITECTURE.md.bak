@@ -1,0 +1,76 @@
+# ============================================================
+# GOVERNANCE CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: governance
+scope: governance.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of governance in CivilizationOS.
+
+## design_intent
+Governance is the bounded structure
+through which decision authority,
+review authority,
+oversight,
+accountability,
+and formal control
+become meaningful.
+
+Governance is not identical to policy text.
+It is the active system of who decides,
+who reviews,
+who supervises,
+and how responsibility is distributed.
+
+## architectural_position
+Governance sits between:
+- identity and permission
+- nation/company/organization authority
+- policy application
+- security boundary
+- audit and escalation handling
+
+## required_behavior
+- governance context must remain explicit
+- decision and review roles must remain explicit
+- accountability chain must remain explicit
+- current and historical governance states must remain distinguishable
+
+## canonical_rules
+- execution authority must not masquerade as review authority
+- oversight must remain attributable
+- historical governance trace must remain queryable
+- ambiguous governance scope fails closed
+
+## state_model
+The governance domain distinguishes:
+- proposed governance arrangement
+- active governance arrangement
+- restricted governance arrangement
+- escalated governance state
+- historical governance state
+
+## actor_boundary
+- decision maker
+- reviewer
+- overseer
+- operator
+- adapter
+
+## decision_matrix
+- if governance context is unclear, stop governance-sensitive action
+- if decision/review separation is unclear, fail closed
+- if accountability chain is broken, route to escalation
+- if governance becomes historical, preserve trace
+
+## review_checklist
+- governance context is explicit
+- decision/review split is explicit
+- accountability chain is explicit
+- historical distinction is explicit

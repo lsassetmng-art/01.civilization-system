@@ -1,0 +1,21 @@
+# ============================================================
+# ADMIN ROLE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: admin
+scope: admin.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related operations behavior for admin.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

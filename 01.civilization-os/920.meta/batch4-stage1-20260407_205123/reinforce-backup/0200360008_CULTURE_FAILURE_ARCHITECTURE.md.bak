@@ -1,0 +1,18 @@
+# ============================================================
+# CULTURE FAILURE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: culture
+scope: culture.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure architecture for culture.
+
+required_behavior:
+- failure outputs must be bounded
+- denial and review states must be explicit

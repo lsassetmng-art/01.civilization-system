@@ -1,0 +1,20 @@
+# ============================================================
+# PERMISSION ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: permission
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200180001_PERMISSION_CORE_ARCHITECTURE.md
+- 0200180002_PERMISSION_OVERVIEW_ARCHITECTURE.md
+- 0200180003_PERMISSION_ENTITY_ARCHITECTURE.md
+- 0200180004_PERMISSION_ROLE_ARCHITECTURE.md
+- 0200180005_PERMISSION_ACTIVITY_ARCHITECTURE.md
+- 0200180006_PERMISSION_BOUNDARY_ARCHITECTURE.md
+- 0200180007_PERMISSION_VALIDATION_ARCHITECTURE.md
+- 0200180008_PERMISSION_FAILURE_ARCHITECTURE.md

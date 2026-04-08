@@ -1,0 +1,19 @@
+# ============================================================
+# SECURITY_DOMAIN INTEGRATION INDEX
+# ============================================================
+
+status: canonical
+layer: integration
+domain: security
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0600160001_SECURITY_DOMAIN_CORE_INTEGRATION.md
+- 0600160002_SECURITY_DOMAIN_ENTITY_INTEGRATION.md
+- 0600160003_SECURITY_DOMAIN_ROLE_INTEGRATION.md
+- 0600160004_SECURITY_DOMAIN_ACTIVITY_INTEGRATION.md
+- 0600160005_SECURITY_DOMAIN_BOUNDARY_INTEGRATION.md
+- 0600160006_SECURITY_DOMAIN_VALIDATION_INTEGRATION.md
+- 0600160007_SECURITY_DOMAIN_FAILURE_INTEGRATION.md

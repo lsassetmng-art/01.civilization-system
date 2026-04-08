@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE VALIDATION DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: interface
+scope: interface.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related development behavior.
+
+validation_rules:
+- input check
+- actor check
+- route check
+- target check

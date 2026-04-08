@@ -1,0 +1,21 @@
+# ============================================================
+# RELATIONSHIP ROLE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: relationship
+scope: relationship.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related policy behavior for relationship.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

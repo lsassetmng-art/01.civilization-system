@@ -1,0 +1,20 @@
+# ============================================================
+# LEGAL FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: legal
+scope: legal.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for legal.
+
+failure_codes:
+- LEGAL_IMPLEMENTATION_IDENTITY_ERROR
+- LEGAL_IMPLEMENTATION_ROLE_ERROR
+- LEGAL_IMPLEMENTATION_ACTIVITY_ERROR
+- LEGAL_IMPLEMENTATION_BOUNDARY_ERROR

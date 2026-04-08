@@ -1,0 +1,22 @@
+# ============================================================
+# LEGAL OVERVIEW ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: legal
+scope: legal.overview
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the overview structure for 032.legal.
+
+required_behavior:
+- overview must explain identity,
+  role,
+  activity,
+  boundary,
+  validation,
+  and failure topics.

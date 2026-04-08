@@ -1,0 +1,20 @@
+# ============================================================
+# MEMORY FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: memory
+scope: memory.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for memory.
+
+failure_codes:
+- MEMORY_INTEGRATION_IDENTITY_ERROR
+- MEMORY_INTEGRATION_ROLE_ERROR
+- MEMORY_INTEGRATION_ACTIVITY_ERROR
+- MEMORY_INTEGRATION_BOUNDARY_ERROR

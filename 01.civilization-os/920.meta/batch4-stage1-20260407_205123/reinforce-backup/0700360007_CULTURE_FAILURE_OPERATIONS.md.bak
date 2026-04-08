@@ -1,0 +1,20 @@
+# ============================================================
+# CULTURE FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: culture
+scope: culture.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for culture.
+
+failure_codes:
+- CULTURE_OPERATIONS_IDENTITY_ERROR
+- CULTURE_OPERATIONS_ROLE_ERROR
+- CULTURE_OPERATIONS_ACTIVITY_ERROR
+- CULTURE_OPERATIONS_BOUNDARY_ERROR

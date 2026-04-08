@@ -1,0 +1,18 @@
+# ============================================================
+# HISTORY ENTITY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: history
+scope: history.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related integration behavior for history.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

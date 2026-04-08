@@ -1,0 +1,23 @@
+# ============================================================
+# VOTE CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: vote
+scope: vote.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of vote in CivilizationOS.
+
+## design_intent
+Vote is the bounded collective-choice structure
+through which eligibility,
+balloting,
+counting,
+result formation,
+and historical electoral trace
+become meaningful.

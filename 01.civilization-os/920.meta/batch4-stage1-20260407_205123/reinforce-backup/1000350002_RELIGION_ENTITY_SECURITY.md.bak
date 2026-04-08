@@ -1,0 +1,18 @@
+# ============================================================
+# RELIGION ENTITY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: religion
+scope: religion.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related security behavior for religion.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

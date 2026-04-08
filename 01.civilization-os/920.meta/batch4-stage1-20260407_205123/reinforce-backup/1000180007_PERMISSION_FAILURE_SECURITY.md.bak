@@ -1,0 +1,20 @@
+# ============================================================
+# PERMISSION FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: permission
+scope: permission.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for permission.
+
+failure_codes:
+- PERMISSION_SECURITY_IDENTITY_ERROR
+- PERMISSION_SECURITY_ROLE_ERROR
+- PERMISSION_SECURITY_ACTIVITY_ERROR
+- PERMISSION_SECURITY_BOUNDARY_ERROR

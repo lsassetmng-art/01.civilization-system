@@ -1,0 +1,18 @@
+# ============================================================
+# EVENT BOUNDARY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: event
+scope: event.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related integration behavior for event.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

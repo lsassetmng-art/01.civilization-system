@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: world
+scope: world.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for world.
+
+failure_codes:
+- WORLD_DEVELOPMENT_IDENTITY_ERROR
+- WORLD_DEVELOPMENT_ROLE_ERROR
+- WORLD_DEVELOPMENT_ACTIVITY_ERROR
+- WORLD_DEVELOPMENT_BOUNDARY_ERROR

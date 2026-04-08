@@ -1,0 +1,79 @@
+# ============================================================
+# NATION CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: nation
+scope: nation.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of nation in CivilizationOS.
+
+## design_intent
+Nation is the bounded jurisdictional and policy-bearing unit
+that organizes territory,
+population affiliation,
+institutional authority,
+law/policy effect,
+and sovereign or semi-sovereign governance logic.
+
+Nation is not merely a label for geography.
+It is the structure that gives
+policy effect,
+jurisdictional belonging,
+and collective authority
+their bounded meaning.
+
+## architectural_position
+Nation sits between:
+- world containment
+- territory/map relation
+- governance and vote structures
+- law/admin/security effect
+- family/work/company/policy consequences
+- cross-nation relation and trade consequences
+
+## required_behavior
+- nation identity must remain explicit
+- nation boundary must remain explicit
+- jurisdiction and belonging must remain explicit
+- current and historical nation states must remain distinguishable
+- policy-bearing authority must remain explicit
+
+## canonical_rules
+- nation truth must not be replaced by projection
+- territorial association must not imply unrestricted authority
+- historical nation state must remain queryable
+- cross-nation meaning must remain explicit
+- ambiguous jurisdiction fails closed
+
+## state_model
+The nation domain distinguishes:
+- proposed nation state
+- active nation state
+- restricted nation state
+- transformed nation state
+- historical nation state
+- dissolved nation state
+
+## actor_boundary
+- national authority
+- national operator
+- national reviewer
+- external adapter
+
+## decision_matrix
+- if nation identity is unresolved, stop jurisdictional action
+- if territorial/jurisdictional scope is unclear, fail closed
+- if cross-nation effect is requested, require explicit boundary handling
+- if nation is historical or dissolved, preserve historical distinction
+
+## review_checklist
+- nation identity is explicit
+- jurisdiction boundary is explicit
+- state model is explicit
+- cross-nation distinction is explicit

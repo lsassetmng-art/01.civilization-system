@@ -1,0 +1,98 @@
+# ============================================================
+# DETAIL CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the core architecture principles of the detail domain.
+
+scope:
+The core architecture governs responsibility, boundary,
+granularity, lifecycle, and consumption rules for all detail records.
+
+design_intent:
+CivilizationOS requires a canonical architectural place
+for detailed truth that is more granular than the base model
+but still stricter than presentation text.
+The detail core exists to stop semantic drift and accidental duplication.
+
+canonical_rules:
+- Detail must not redefine the meaning of a core model.
+- Detail must not directly own session runtime state.
+- Detail must not directly own flow sequencing authority.
+- Detail must not directly own screen implementation.
+- Detail must always bind to a canonical target reference.
+- Detail must always define visibility and lifecycle semantics.
+- Detail must remain structured and machine-readable.
+
+required_behavior:
+- The system must distinguish core truth from refined detail truth.
+- The system must reject detail records without canonical targets.
+- The system must reject detail records that contradict core truth.
+- The system must support stable consumption by runtime and interface layers.
+
+state_model:
+detail_record_state:
+- draft
+- reviewed
+- canonical
+- revised
+- deprecated
+- superseded
+
+detail_visibility_scope:
+- public
+- internal
+- restricted
+- sealed
+
+detail_lifecycle:
+- proposed
+- prepared
+- active
+- hidden
+- archived
+
+validation_rules:
+- target_ref is required.
+- detail_type is required.
+- visibility_scope is required.
+- lifecycle_state is required.
+- contradictory override of core truth is prohibited.
+- free-form unstructured payload without schema binding is prohibited.
+- missing ownership or consumer scope is prohibited.
+
+transition_rules:
+- draft -> reviewed
+- reviewed -> canonical
+- canonical -> revised
+- canonical -> deprecated
+- deprecated -> superseded
+- active -> hidden
+- hidden -> archived
+
+dependency:
+depends_on:
+- civilization core models
+- meta classification and provenance
+- world, story, player, and integration references
+
+consumed_by:
+- runtime detail loaders
+- interface view builders
+- flow support logic
+- audit and trace tools
+
+example_scenarios:
+- A school exists as a world facility model.
+  Its internal room semantics, operational notes,
+  usage boundaries, and visibility tiers belong to detail.
+- A player occupation exists as a player model.
+  Its detailed working conditions and contextual explanation
+  belong to detail.

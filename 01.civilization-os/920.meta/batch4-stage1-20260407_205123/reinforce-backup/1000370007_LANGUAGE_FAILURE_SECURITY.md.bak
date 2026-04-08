@@ -1,0 +1,20 @@
+# ============================================================
+# LANGUAGE FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: language
+scope: language.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for language.
+
+failure_codes:
+- LANGUAGE_SECURITY_IDENTITY_ERROR
+- LANGUAGE_SECURITY_ROLE_ERROR
+- LANGUAGE_SECURITY_ACTIVITY_ERROR
+- LANGUAGE_SECURITY_BOUNDARY_ERROR

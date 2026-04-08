@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: world
+scope: world.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for world.
+
+failure_codes:
+- WORLD_RUNTIME_IDENTITY_ERROR
+- WORLD_RUNTIME_ROLE_ERROR
+- WORLD_RUNTIME_ACTIVITY_ERROR
+- WORLD_RUNTIME_BOUNDARY_ERROR

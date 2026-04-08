@@ -1,0 +1,103 @@
+# ============================================================
+# ESTIMATE CREATOR FINAL MANUAL CHECK (BASH ONLY)
+# ============================================================
+
+status: canonical
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. APPLICATION PATH
+# ============================================================
+
+/data/data/com.termux/files/home/01.civilization-system/07.applications/EstimateCreator
+
+# ============================================================
+# 2. FILE COUNTS
+# ============================================================
+
+total_files: 167
+model_files: 35
+runtime_files: 9
+flow_files: 11
+integration_files: 13
+operations_files: 7
+policy_files: 14
+interface_files: 20
+security_files: 4
+infrastructure_files: 4
+implementation_files: 15
+development_files: 3
+meta_files: 22
+
+# ============================================================
+# 3. STRUCTURE CHECK
+# ============================================================
+
+root_overview: OK
+root_index: OK
+constitution: OK
+architecture: OK
+model: OK
+runtime: OK
+flow: OK
+integration: OK
+operations: OK
+policy: OK
+interface: OK
+security: OK
+infrastructure: OK
+implementation: OK
+development: OK
+meta: OK
+
+# ============================================================
+# 4. ENTRY / SESSION CHECK
+# ============================================================
+
+launch_context_model: OK
+entry_runtime: OK
+deeplink_contract: OK
+deeplink_interface: OK
+
+Required semantic checks (manual):
+- standalone launch is first-class
+- deeplink launch is first-class
+- deeplink reuses shared BusinessOS session when valid
+- deeplink does not require redundant login UI when shared session is valid
+- authorization is still required
+- raw credentials are not passed in deeplink business parameters
+
+# ============================================================
+# 5. BUSINESS CHECK
+# ============================================================
+
+Required semantic checks (manual):
+- rough_estimate is the default class
+- local_formal_estimate is explicit and exceptional
+- sharing is limited to preconfigured users
+- shareable objects include opportunity memo / meeting memo / rough estimate
+- inventory is reference only
+- premium features are gated and not forked
+- ERP publication uses shared BusinessOS publication path
+- sync follows common BusinessOS pattern
+- sharing follows NameCardManager common pattern
+
+# ============================================================
+# 6. 07.APPLICATIONS ROOT REFLECTION
+# ============================================================
+
+The following root markdown files currently contain "EstimateCreator":
+
+/data/data/com.termux/files/home/01.civilization-system/07.applications/APPLICATION_LAYER_OVERVIEW.md
+
+# ============================================================
+# 7. FINAL REVIEW RESULT
+# ============================================================
+
+structure_result:
+entry_session_result:
+business_result:
+applications_root_result:
+final_result:
+

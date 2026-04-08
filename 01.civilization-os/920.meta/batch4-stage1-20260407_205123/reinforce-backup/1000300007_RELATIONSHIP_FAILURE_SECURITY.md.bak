@@ -1,0 +1,20 @@
+# ============================================================
+# RELATIONSHIP FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: relationship
+scope: relationship.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for relationship.
+
+failure_codes:
+- RELATIONSHIP_SECURITY_IDENTITY_ERROR
+- RELATIONSHIP_SECURITY_ROLE_ERROR
+- RELATIONSHIP_SECURITY_ACTIVITY_ERROR
+- RELATIONSHIP_SECURITY_BOUNDARY_ERROR

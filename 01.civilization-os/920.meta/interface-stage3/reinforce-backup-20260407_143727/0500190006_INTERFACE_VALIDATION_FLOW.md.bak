@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE VALIDATION FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: interface
+scope: interface.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related flow behavior.
+
+validation_rules:
+- input check
+- actor check
+- route check
+- target check

@@ -1,0 +1,20 @@
+# ============================================================
+# QUEST FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: quest
+scope: quest.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for quest.
+
+failure_codes:
+- QUEST_POLICY_IDENTITY_ERROR
+- QUEST_POLICY_ROLE_ERROR
+- QUEST_POLICY_ACTIVITY_ERROR
+- QUEST_POLICY_BOUNDARY_ERROR

@@ -1,0 +1,25 @@
+# ============================================================
+# ACTIVITY DETAIL DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: detail
+subdomain: activity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines development guidance for activity detail.
+
+test_focus:
+- readiness evaluation
+- blocked-state reason requirement
+- pause/resume handling
+- execution-detail consistency
+- training versus execution separation
+
+anti_patterns:
+- training guidance overriding canonical execution authority
+- blocked state emitted without explicit blocking reason

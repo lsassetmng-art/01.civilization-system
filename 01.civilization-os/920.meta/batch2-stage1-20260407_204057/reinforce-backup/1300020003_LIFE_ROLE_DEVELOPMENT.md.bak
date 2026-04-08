@@ -1,0 +1,21 @@
+# ============================================================
+# LIFE ROLE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: life
+scope: life.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related development behavior for life.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

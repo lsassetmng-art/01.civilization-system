@@ -1,0 +1,20 @@
+# ============================================================
+# ORGANIZATION FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: organization
+scope: organization.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for organization.
+
+failure_codes:
+- ORGANIZATION_DEVELOPMENT_IDENTITY_ERROR
+- ORGANIZATION_DEVELOPMENT_ROLE_ERROR
+- ORGANIZATION_DEVELOPMENT_ACTIVITY_ERROR
+- ORGANIZATION_DEVELOPMENT_BOUNDARY_ERROR

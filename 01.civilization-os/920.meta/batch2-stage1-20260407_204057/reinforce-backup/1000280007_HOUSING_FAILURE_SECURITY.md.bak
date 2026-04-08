@@ -1,0 +1,20 @@
+# ============================================================
+# HOUSING FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: housing
+scope: housing.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for housing.
+
+failure_codes:
+- HOUSING_SECURITY_IDENTITY_ERROR
+- HOUSING_SECURITY_ROLE_ERROR
+- HOUSING_SECURITY_ACTIVITY_ERROR
+- HOUSING_SECURITY_BOUNDARY_ERROR

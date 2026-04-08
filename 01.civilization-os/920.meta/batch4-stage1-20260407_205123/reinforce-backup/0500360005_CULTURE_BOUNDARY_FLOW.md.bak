@@ -1,0 +1,18 @@
+# ============================================================
+# CULTURE BOUNDARY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: culture
+scope: culture.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related flow behavior for culture.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

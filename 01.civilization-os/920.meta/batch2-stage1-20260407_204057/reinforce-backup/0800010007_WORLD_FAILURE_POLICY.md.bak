@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: world
+scope: world.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for world.
+
+failure_codes:
+- WORLD_POLICY_IDENTITY_ERROR
+- WORLD_POLICY_ROLE_ERROR
+- WORLD_POLICY_ACTIVITY_ERROR
+- WORLD_POLICY_BOUNDARY_ERROR

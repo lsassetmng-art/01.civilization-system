@@ -1,0 +1,18 @@
+# ============================================================
+# SOCIAL ACTIVITY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: social
+scope: social.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related integration behavior for social.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

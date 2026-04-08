@@ -1,0 +1,20 @@
+# ============================================================
+# LANGUAGE FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: language
+scope: language.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for language.
+
+failure_codes:
+- LANGUAGE_INFRASTRUCTURE_IDENTITY_ERROR
+- LANGUAGE_INFRASTRUCTURE_ROLE_ERROR
+- LANGUAGE_INFRASTRUCTURE_ACTIVITY_ERROR
+- LANGUAGE_INFRASTRUCTURE_BOUNDARY_ERROR

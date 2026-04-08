@@ -1,0 +1,30 @@
+# ============================================================
+# STATUS DETAIL INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: detail
+subdomain: status-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines infrastructure support for status detail.
+
+infrastructure_focus:
+- target/status lookup
+- incident trace support
+- severity-aware delivery path
+- public-alert versus operational-detail separation
+
+retrieval_modes:
+- public_alert
+- operational_detail
+- incident_history
+- audit_status
+
+failure_codes:
+- STATUS_DETAIL_INFRA_TARGET_INDEX_MISSING
+- STATUS_DETAIL_INFRA_ALERT_PATH_CONFLICT

@@ -1,0 +1,74 @@
+# ============================================================
+# ITEM CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: item
+scope: item.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of item in CivilizationOS.
+
+## design_intent
+Item is the bounded identifiable object unit
+that may be possessed,
+placed,
+used,
+transferred,
+consumed,
+or referenced
+under explicit scope.
+
+Item is not identical to inventory.
+Item is the identifiable object meaning;
+inventory is one of the systems that tracks its possession state.
+
+## architectural_position
+Item sits between:
+- asset/object identity
+- inventory tracking
+- housing placement
+- market/trade exposure
+- work/quest consumption or usage
+
+## required_behavior
+- item identity must remain explicit
+- current and historical item states must remain distinguishable
+- possession and placement meaning must remain explicit
+- use/transfer/consumption meaning must remain explicit
+
+## canonical_rules
+- item identity must not be replaced by listing or placement projection
+- possession does not imply unrestricted transfer authority
+- historical item trace must remain queryable
+- ambiguous item ownership or usage fails closed
+
+## state_model
+The item domain distinguishes:
+- registered item
+- possessed item
+- placed item
+- restricted item
+- consumed/retired item
+- historical item
+
+## actor_boundary
+- item owner/holder
+- operator
+- reviewer
+- adapter
+
+## decision_matrix
+- if item identity is unclear, stop item-sensitive action
+- if possession basis is unclear, fail closed
+- if transfer/use exceeds authority, deny
+- if item becomes historical, preserve trace
+
+## review_checklist
+- item identity is explicit
+- possession/placement/use meanings are explicit
+- historical distinction is explicit

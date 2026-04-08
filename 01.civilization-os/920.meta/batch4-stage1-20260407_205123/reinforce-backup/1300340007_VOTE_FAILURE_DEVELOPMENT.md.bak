@@ -1,0 +1,20 @@
+# ============================================================
+# VOTE FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: vote
+scope: vote.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for vote.
+
+failure_codes:
+- VOTE_DEVELOPMENT_IDENTITY_ERROR
+- VOTE_DEVELOPMENT_ROLE_ERROR
+- VOTE_DEVELOPMENT_ACTIVITY_ERROR
+- VOTE_DEVELOPMENT_BOUNDARY_ERROR

@@ -1,0 +1,75 @@
+# ============================================================
+# ECONOMY CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: economy
+scope: economy.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of economy in CivilizationOS.
+
+## design_intent
+Economy is the bounded circulation structure
+through which value generation,
+exchange,
+allocation,
+storage,
+and consequence
+become meaningful across actors and institutions.
+
+Economy is not a single ledger line
+and not identical to finance.
+Economy is the broader value-flow environment
+within which finance becomes one formalized substructure.
+
+## architectural_position
+Economy sits between:
+- market and trade exchange
+- work and company output
+- finance and settlement consequence
+- nation policy influence
+- asset and inventory value movement
+
+## required_behavior
+- economic context must remain explicit
+- value-flow basis must remain explicit
+- current and historical economic states must remain distinguishable
+- local and cross-domain value effects must remain reviewable
+
+## canonical_rules
+- projected value must not overwrite source truth
+- exchange visibility must not imply ownership truth
+- historical economic trace must remain queryable
+- ambiguous economic scope fails closed
+
+## state_model
+The economy domain distinguishes:
+- declared economic context
+- active economic flow
+- restricted economic flow
+- transformed economic state
+- historical economic state
+
+## actor_boundary
+- participant
+- operator
+- reviewer
+- regulator
+- adapter
+
+## decision_matrix
+- if economic context is unclear, stop economy-sensitive action
+- if value-flow basis is unclear, fail closed
+- if cross-domain impact is unclear, route to review
+- if state becomes historical, preserve trace
+
+## review_checklist
+- economic context is explicit
+- value-flow basis is explicit
+- cross-domain effect is explicit
+- historical distinction is explicit

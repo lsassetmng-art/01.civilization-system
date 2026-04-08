@@ -1,0 +1,80 @@
+# ============================================================
+# QUEST CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: quest
+scope: quest.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of quest in CivilizationOS.
+
+## design_intent
+Quest is the bounded objective structure
+through which declared goals,
+conditions,
+progress,
+branching,
+completion,
+and failure
+become meaningful.
+
+Quest is not merely a task line.
+It is the governed goal-progress unit
+that binds objective meaning to stateful progression.
+
+## architectural_position
+Quest sits between:
+- actor activity
+- event-triggered progression
+- item/inventory dependencies
+- world/nation/location context
+- reward or closure consequences
+
+## required_behavior
+- quest identity must remain explicit
+- objective basis must remain explicit
+- progress state must remain explicit
+- completion and failure must remain distinguishable
+- historical quest trace must remain preserved
+
+## canonical_rules
+- quest proposal does not imply active quest
+- completion must not overwrite failure history
+- branching must remain reviewable
+- historical quest state must remain queryable
+- ambiguous quest progression fails closed
+
+## state_model
+The quest domain distinguishes:
+- proposed quest
+- active quest
+- blocked quest
+- branching quest
+- completed quest
+- failed quest
+- historical quest
+
+## actor_boundary
+- quest holder
+- quest issuer
+- reviewer
+- operator
+- adapter
+
+## decision_matrix
+- if objective basis is missing, stop activation
+- if progress basis is unclear, fail closed
+- if completion conditions are unmet, deny closure
+- if branching occurs, preserve route trace
+- if quest becomes historical, preserve result trace
+
+## review_checklist
+- objective basis is explicit
+- progress model is explicit
+- completion/failure distinction is explicit
+- historical distinction is explicit

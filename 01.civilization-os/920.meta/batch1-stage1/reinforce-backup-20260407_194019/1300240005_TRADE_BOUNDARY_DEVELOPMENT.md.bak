@@ -1,0 +1,18 @@
+# ============================================================
+# TRADE BOUNDARY DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: trade
+scope: trade.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related development behavior for trade.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

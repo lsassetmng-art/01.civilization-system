@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: interface
+scope: interface.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior.
+
+failure_codes:
+- INTERFACE_DEVELOPMENT_ROUTE_ERROR
+- INTERFACE_DEVELOPMENT_ACTOR_ERROR
+- INTERFACE_DEVELOPMENT_VALIDATION_ERROR
+- INTERFACE_DEVELOPMENT_TARGET_ERROR

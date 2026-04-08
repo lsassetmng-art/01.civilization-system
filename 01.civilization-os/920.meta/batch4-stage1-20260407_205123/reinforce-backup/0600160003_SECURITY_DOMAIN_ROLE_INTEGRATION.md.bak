@@ -1,0 +1,21 @@
+# ============================================================
+# SECURITY_DOMAIN ROLE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: security
+scope: security.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related integration behavior for security.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

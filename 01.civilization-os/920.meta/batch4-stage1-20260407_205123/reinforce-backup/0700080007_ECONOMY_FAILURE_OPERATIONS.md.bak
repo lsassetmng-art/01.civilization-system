@@ -1,0 +1,20 @@
+# ============================================================
+# ECONOMY FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: economy
+scope: economy.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for economy.
+
+failure_codes:
+- ECONOMY_OPERATIONS_IDENTITY_ERROR
+- ECONOMY_OPERATIONS_ROLE_ERROR
+- ECONOMY_OPERATIONS_ACTIVITY_ERROR
+- ECONOMY_OPERATIONS_BOUNDARY_ERROR

@@ -1,0 +1,20 @@
+# ============================================================
+# PERMISSION VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: permission
+scope: permission.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for permission.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

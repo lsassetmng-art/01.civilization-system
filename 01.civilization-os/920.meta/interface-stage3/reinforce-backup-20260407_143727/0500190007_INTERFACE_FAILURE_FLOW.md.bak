@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE FAILURE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: interface
+scope: interface.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related flow behavior.
+
+failure_codes:
+- INTERFACE_FLOW_ROUTE_ERROR
+- INTERFACE_FLOW_ACTOR_ERROR
+- INTERFACE_FLOW_VALIDATION_ERROR
+- INTERFACE_FLOW_TARGET_ERROR

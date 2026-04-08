@@ -1,0 +1,20 @@
+# ============================================================
+# MAP FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: map
+scope: map.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for map.
+
+failure_codes:
+- MAP_OPERATIONS_IDENTITY_ERROR
+- MAP_OPERATIONS_ROLE_ERROR
+- MAP_OPERATIONS_ACTIVITY_ERROR
+- MAP_OPERATIONS_BOUNDARY_ERROR

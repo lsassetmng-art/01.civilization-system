@@ -1,0 +1,66 @@
+# ============================================================
+# TIMELINE DETAIL OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines operational handling for timeline detail.
+
+scope:
+Covers milestone review, progression correction,
+cancellation handling, replay inspection,
+and containment of unsafe timeline exposure.
+
+required_behavior:
+- Support milestone review.
+- Support cancellation and replay inspection.
+- Support historical progression maintenance.
+- Support milestone correction with preserved trace.
+- Support containment for unsafe replay disclosure.
+
+state_model:
+timeline_detail_operational_state:
+- prepared
+- reviewed
+- active
+- cancelled
+- completed
+- archived
+- replay_only
+- contained
+
+validation_rules:
+- target_ref is required.
+- milestone ordering must remain coherent.
+- completed and cancelled stages must preserve history trace.
+- replay-only detail must not appear in current-active mode.
+
+transition_rules:
+- prepared -> reviewed
+- reviewed -> active
+- active -> completed
+- active -> cancelled
+- completed -> replay_only
+- cancelled -> replay_only
+- replay_only -> archived
+- active -> contained
+- contained -> reviewed
+
+operational_focus:
+- progression review
+- milestone correction handling
+- replay-safe archival control
+- cancellation-state review
+
+failure_codes:
+- TIMELINE_DETAIL_OP_REF_MISSING
+- TIMELINE_DETAIL_OP_ORDER_INVALID
+- TIMELINE_DETAIL_OP_MODE_CONFLICT
+- TIMELINE_DETAIL_OP_HISTORY_TRACE_MISSING

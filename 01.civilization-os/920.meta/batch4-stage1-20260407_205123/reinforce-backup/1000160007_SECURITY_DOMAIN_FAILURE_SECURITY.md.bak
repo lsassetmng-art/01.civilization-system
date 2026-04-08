@@ -1,0 +1,20 @@
+# ============================================================
+# SECURITY_DOMAIN FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: security
+scope: security.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for security.
+
+failure_codes:
+- SECURITY_DOMAIN_SECURITY_IDENTITY_ERROR
+- SECURITY_DOMAIN_SECURITY_ROLE_ERROR
+- SECURITY_DOMAIN_SECURITY_ACTIVITY_ERROR
+- SECURITY_DOMAIN_SECURITY_BOUNDARY_ERROR

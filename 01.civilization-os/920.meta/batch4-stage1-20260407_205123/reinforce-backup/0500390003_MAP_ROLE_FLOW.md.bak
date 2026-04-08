@@ -1,0 +1,21 @@
+# ============================================================
+# MAP ROLE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: map
+scope: map.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related flow behavior for map.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

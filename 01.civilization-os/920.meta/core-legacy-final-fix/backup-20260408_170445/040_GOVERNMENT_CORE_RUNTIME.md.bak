@@ -1,0 +1,35 @@
+# ============================================================
+# GOVERNMENT CORE
+# RUNTIME
+# ============================================================
+
+status: draft
+layer: runtime
+domain: 015.government
+owner: Boss
+prepared_by: Zero
+
+# 1. PURPOSE
+
+Defines runtime control for government core structures.
+
+# 2. RUNTIME STATE
+
+- active government-unit context
+- governing-authority resolution state
+- authority-term transition state
+- legitimacy/stability publication state
+
+# 3. EXECUTION RULES
+
+- one active governing authority must resolve per authority scope and term window
+- term transition must complete before authority publication
+- legitimacy/stability state must be explicit before publication
+- ambiguous governing authority is prohibited
+
+# 4. FAILURE HANDLING
+
+- missing government scope -> reject
+- incompatible active term overlap -> reject
+- ambiguous governing authority -> fail closed
+

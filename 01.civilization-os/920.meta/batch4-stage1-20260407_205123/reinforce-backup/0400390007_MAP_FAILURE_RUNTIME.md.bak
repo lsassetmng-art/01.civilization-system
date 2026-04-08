@@ -1,0 +1,20 @@
+# ============================================================
+# MAP FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: map
+scope: map.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for map.
+
+failure_codes:
+- MAP_RUNTIME_IDENTITY_ERROR
+- MAP_RUNTIME_ROLE_ERROR
+- MAP_RUNTIME_ACTIVITY_ERROR
+- MAP_RUNTIME_BOUNDARY_ERROR

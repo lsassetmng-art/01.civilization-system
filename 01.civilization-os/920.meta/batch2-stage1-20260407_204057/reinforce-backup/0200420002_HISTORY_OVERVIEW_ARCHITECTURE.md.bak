@@ -1,0 +1,22 @@
+# ============================================================
+# HISTORY OVERVIEW ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: history
+scope: history.overview
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the overview structure for 042.history.
+
+required_behavior:
+- overview must explain identity,
+  role,
+  activity,
+  boundary,
+  validation,
+  and failure topics.

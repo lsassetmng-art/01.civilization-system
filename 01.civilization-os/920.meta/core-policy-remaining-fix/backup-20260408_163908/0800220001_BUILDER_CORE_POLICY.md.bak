@@ -1,0 +1,56 @@
+# ============================================================
+# BUILDER CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: builder
+scope: builder.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for builder.
+
+## policy_rules
+Builder policy constrains:
+- who may initiate build actions
+- which templates/configurations may be used
+- which targets may be built into
+- which builds require review or approval
+- what build detail may be disclosed
+
+## required_behavior
+- builder authority must be explicit
+- template/config allowance must be explicit
+- target allowance must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- bounded public build summary
+- operator-scoped detail
+- reviewer/approver detail
+- historical build detail
+- denied output
+
+## allowed_denied_matrix
+- allow build only for valid actor scope
+- allow template/config only for valid usage scope
+- allow target execution only for valid boundary
+- deny hidden authority widening
+- deny invalid or out-of-policy build execution
+
+## escalation_rules
+If actor authority,
+template/config basis,
+target boundary,
+or disclosure scope is unclear,
+the builder path must stop and escalate.
+
+## review_checklist
+- builder policy is explicit
+- target policy is explicit
+- disclosure matrix exists
+- escalation rules are explicit

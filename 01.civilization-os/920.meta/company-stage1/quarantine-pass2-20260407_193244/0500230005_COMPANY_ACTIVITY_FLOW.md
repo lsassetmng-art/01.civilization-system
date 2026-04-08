@@ -1,0 +1,18 @@
+# ============================================================
+# COMPANY ACTIVITY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: company
+scope: company.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related flow behavior.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

@@ -1,0 +1,28 @@
+# ============================================================
+# MAP CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: map
+scope: map.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of map in CivilizationOS.
+
+## design_intent
+Map is the bounded spatial reference structure
+through which position,
+territory,
+adjacency,
+route relation,
+and location visualization
+become meaningful.
+
+## canonical_rules
+- visual map projection must not overwrite authoritative location truth
+- current and historical map references must remain distinguishable
+- ambiguous spatial scope fails closed

@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE VALIDATION INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: interface
+scope: interface.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related integration behavior.
+
+validation_rules:
+- input check
+- actor check
+- route check
+- target check

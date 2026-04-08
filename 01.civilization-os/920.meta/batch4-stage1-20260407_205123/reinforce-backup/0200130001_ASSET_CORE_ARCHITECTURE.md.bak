@@ -1,0 +1,52 @@
+# ============================================================
+# ASSET CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: asset
+scope: asset.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the canonical architectural role of asset in CivilizationOS.
+
+design_intent:
+This domain exists as an explicit governed structure
+rather than an informal bucket.
+
+required_behavior:
+- domain identity must be explicit
+- role structure must be explicit
+- activity scope must be explicit
+- authority/boundary meaning must be explicit
+- validation must be explicit
+- failure conditions must be reviewable
+
+canonical_rules:
+- projections must not overwrite truth
+- ambiguity fails closed
+- state transitions must remain reviewable
+
+state_model:
+The domain distinguishes
+registered state,
+active state,
+restricted state,
+historical state,
+and closed state.
+
+transition_rules:
+Transitions must preserve identity,
+boundary,
+activity meaning,
+and reviewability.
+
+review_checklist:
+- identity is explicit
+- roles are explicit
+- activity scope is explicit
+- boundaries are explicit
+- transition rules are explicit

@@ -1,0 +1,18 @@
+# ============================================================
+# TIME BOUNDARY RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: time
+scope: time.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related runtime behavior for time.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

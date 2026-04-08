@@ -1,0 +1,18 @@
+# ============================================================
+# CRIME ACTIVITY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: crime
+scope: crime.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related policy behavior for crime.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

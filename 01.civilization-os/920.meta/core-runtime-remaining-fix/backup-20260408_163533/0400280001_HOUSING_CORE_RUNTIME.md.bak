@@ -1,0 +1,56 @@
+# ============================================================
+# HOUSING CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: housing
+scope: housing.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for housing.
+
+## runtime_scope
+Runtime covers housing visibility,
+occupancy-aware display,
+access-aware surfaces,
+placement-aware state display,
+and safe failure rendering.
+
+## current_view_state
+Runtime-visible housing state must distinguish:
+- active occupied housing
+- restricted housing
+- partially occupied housing
+- historical housing
+- closed housing
+
+## validation_rules
+- housing identity must resolve
+- occupancy scope must resolve
+- actor access scope must resolve
+- placement scope must be valid
+- disclosure scope must be valid
+
+## failure_modes
+- invalid housing identity
+- invalid occupancy basis
+- invalid access scope
+- invalid placement scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish housing state,
+occupancy state,
+access result,
+placement result,
+and failure surface.
+
+## review_checklist
+- housing runtime scope is explicit
+- access-aware rendering is explicit
+- failure handling is explicit

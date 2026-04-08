@@ -1,0 +1,20 @@
+# ============================================================
+# JOB FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: job
+scope: job.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for job.
+
+failure_codes:
+- JOB_OPERATIONS_IDENTITY_ERROR
+- JOB_OPERATIONS_ROLE_ERROR
+- JOB_OPERATIONS_ACTIVITY_ERROR
+- JOB_OPERATIONS_BOUNDARY_ERROR

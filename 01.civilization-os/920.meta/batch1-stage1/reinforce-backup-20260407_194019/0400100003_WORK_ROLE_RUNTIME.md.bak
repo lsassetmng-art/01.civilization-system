@@ -1,0 +1,21 @@
+# ============================================================
+# WORK ROLE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: work
+scope: work.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related runtime behavior for work.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

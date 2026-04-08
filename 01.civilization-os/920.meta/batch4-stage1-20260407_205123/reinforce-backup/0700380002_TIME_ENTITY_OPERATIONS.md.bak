@@ -1,0 +1,18 @@
+# ============================================================
+# TIME ENTITY OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: time
+scope: time.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related operations behavior for time.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

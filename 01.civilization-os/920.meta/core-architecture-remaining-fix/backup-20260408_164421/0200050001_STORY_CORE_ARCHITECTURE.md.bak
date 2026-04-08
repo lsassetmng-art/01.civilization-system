@@ -1,0 +1,125 @@
+# ============================================================
+# STORY CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: story
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the core architecture of the story domain.
+
+scope:
+Defines canonical story units, story stages,
+branching, progression, actor implication,
+and historical preservation rules.
+
+design_intent:
+CivilizationOS requires narrative structure
+that is operationally meaningful rather than decorative.
+Story provides context, sequencing, and interpretive continuity
+for worlds, players, and events.
+
+canonical_rules:
+- Story must bind to a canonical target scope.
+- Story must define stage semantics.
+- Story must define branch semantics where branching is allowed.
+- Story must preserve progression history.
+- Story must not hide critical meaning in presentation-only text.
+- Story replay must remain distinguishable from active progression.
+
+required_behavior:
+- Support story registration.
+- Support stage progression.
+- Support branching.
+- Support historical replay.
+- Support consumer-safe story exposure.
+
+state_model:
+story_record:
+- story_id
+- story_code
+- story_scope
+- story_type
+- current_stage
+- lifecycle_state
+- branch_policy
+- effective_from
+- effective_to
+
+story_type:
+- world_story
+- player_story
+- event_story
+- progress_story
+
+lifecycle_state:
+- planned
+- active
+- paused
+- completed
+- cancelled
+- historical
+
+branch_policy:
+- linear_only
+- bounded_branch
+- conditional_branch
+- replay_only
+
+validation_rules:
+- story_code is required.
+- story_scope is required.
+- current_stage is required for active story.
+- active story must not point to invalid stage.
+- branch policy must be declared.
+- replay-only stage must not be exposed as active current stage.
+
+transition_rules:
+- planned -> active
+- active -> paused
+- paused -> active
+- active -> completed
+- active -> cancelled
+- completed -> historical
+- cancelled -> historical
+
+actor_boundary:
+- system may activate story progression rules
+- authorized controller may advance or pause story
+- ordinary consumer may observe allowed story context
+- replay consumer may observe historical story only
+
+decision_matrix:
+- linear_only + multiple active branch candidates -> invalid
+- bounded_branch + unmet condition -> branch denied
+- replay_only + current-mode request -> denied
+- historical story + current substitution request -> denied
+
+failure_codes:
+- STORY_CODE_MISSING
+- STORY_SCOPE_MISSING
+- STORY_STAGE_MISSING
+- STORY_BRANCH_POLICY_MISSING
+- STORY_BRANCH_CONFLICT
+- STORY_REPLAY_ONLY_CURRENT_DENIED
+
+dependency:
+depends_on:
+- world
+- player
+- timeline
+- event context
+
+consumed_by:
+- runtime
+- interface
+- flow
+- replay/history viewers
+
+example_scenarios:
+- A nation-wide reform storyline progresses through planned, active, completed, and historical stages.
+- A player onboarding story branches based on accepted tutorial conditions.

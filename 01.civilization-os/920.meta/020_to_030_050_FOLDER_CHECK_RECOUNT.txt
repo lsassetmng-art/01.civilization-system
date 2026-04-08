@@ -1,0 +1,298 @@
+=== 020 -> 030/050 FOLDER CHECK RECOUNT ===
+
+[timestamp]
+2026-04-04 11:00:37
+
+[gap count]
+88
+
+=== GAP BY TOP DOMAIN ===
+
+      9 017.runtime
+      8 003.foundation
+      7 013.law
+      7 008.education
+      7 006.player
+      7 005.story
+      6 999.meta
+      6 016.war
+      6 010.reward
+      6 004.mode
+      5 014.security
+      5 012.integration
+      1 040.detail
+      1 019.interface
+      1 018.meta
+      1 015.government
+      1 011.economy
+      1 009.career
+      1 007.persona
+      1 002.world
+      1 001.core
+
+=== GAP ONLY ===
+
+ARCH_DIR: /001.core
+  model=DIR_ONLY | flow=OK(2)
+
+ARCH_DIR: /002.world
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /003.foundation
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /003.foundation/010.system-principles
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /003.foundation/010.world-foundation-boundary
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /003.foundation/020.layer-boundary
+  model=OK(106) | flow=DIR_ONLY
+
+ARCH_DIR: /003.foundation/030.core-entity-lifecycle
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /003.foundation/030.data-contract
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /003.foundation/040.namespace
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /003.foundation/040.naming-and-structure
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /004.mode
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /004.mode/010.feature-unlock
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /004.mode/010.normal-play
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /004.mode/020.replay-mode
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /004.mode/030.exam-mode
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /004.mode/040.scenario-mode
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /005.story
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /005.story/010.story-engine
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /005.story/010.world-background
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /005.story/011.scenario-structure
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /005.story/012.checkpoint
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /005.story/020.historical-progression
+  model=OK(86) | flow=DIR_ONLY
+
+ARCH_DIR: /005.story/030.narrative-conditions
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /006.player
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /006.player/010.player-model
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /006.player/010.player-role
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /006.player/020.decision-engine
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /006.player/020.player-action-scope
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /006.player/030.player-permission-binding
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /006.player/030.time
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /007.persona
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /008.education
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /008.education/010.school-system
+  model=OK(3) | flow=MISSING
+
+ARCH_DIR: /008.education/020.exam-system
+  model=OK(24) | flow=MISSING
+
+ARCH_DIR: /008.education/030.education-facility-operation
+  model=OK(13) | flow=DIR_ONLY
+
+ARCH_DIR: /008.education/040.training-system
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /008.education/050.certification-system
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /008.education/060.recommendation-system
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /009.career
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /010.reward
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /010.reward/010.login-bonus
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /010.reward/010.reward-definition
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /010.reward/020.reward-distribution
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /010.reward/020.reward-grant
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /010.reward/030.reward-balance
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /011.economy
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /012.integration
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /012.integration/010.industry-packs
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /012.integration/010.sync-and-bridge
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /012.integration/020.streaming-commerce-bridge
+  model=OK(7) | flow=MISSING
+
+ARCH_DIR: /012.integration/030.external-linkage
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /013.law
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /013.law/010.general-law
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /013.law/010.political-system
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /013.law/020.public-office-eligibility
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /013.law/030.civil-service-eligibility
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /013.law/040.military-service-and-mobilization
+  model=OK(9) | flow=DIR_ONLY
+
+ARCH_DIR: /013.law/050.legal-role-binding
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /014.security
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /014.security/010.internal-security
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /014.security/020.access-control
+  model=OK(10) | flow=DIR_ONLY
+
+ARCH_DIR: /014.security/020.public-order
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /014.security/030.audit-and-monitoring
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /015.government
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /016.war
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /016.war/010.military-organization
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /016.war/010.war-core
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /016.war/020.military-base
+  model=OK(4) | flow=DIR_ONLY
+
+ARCH_DIR: /016.war/030.war-progression
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /016.war/040.defense-readiness
+  model=MISSING | flow=DIR_ONLY
+
+ARCH_DIR: /017.runtime
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /017.runtime/010.runtime-parameter
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /017.runtime/020.state-machine-detail
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /017.runtime/030.event-runtime
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /017.runtime/030.map-visual-reflection
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /017.runtime/040.execution-control
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /017.runtime/050.approval-and-blocking
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /017.runtime/060.triple-intervention-runtime-control
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /017.runtime/070.aerial-intervention-runtime-control
+  model=DIR_ONLY | flow=MISSING
+
+ARCH_DIR: /018.meta
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /019.interface
+  model=DIR_ONLY | flow=DIR_ONLY
+
+ARCH_DIR: /040.detail/010.detail-root
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /999.meta
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /999.meta/010.manifest
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /999.meta/020.freeze
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /999.meta/030.integrated-master
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /999.meta/040.bridge-master
+  model=MISSING | flow=MISSING
+
+ARCH_DIR: /999.meta/050.integration-support
+  model=MISSING | flow=MISSING
+

@@ -1,0 +1,18 @@
+# ============================================================
+# TIME ACTIVITY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: time
+scope: time.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related policy behavior for time.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

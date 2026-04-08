@@ -1,0 +1,62 @@
+# ============================================================
+# ENTITY DETAIL OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: detail
+subdomain: entity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines operational handling for entity detail.
+
+scope:
+Covers entity detail publication, revision,
+snapshot inspection, visibility incidents,
+and archival review.
+
+required_behavior:
+- Support entity-detail publication and revision.
+- Support visibility-safe operational review.
+- Support historical entity-detail inspection.
+- Support snapshot chain verification.
+- Support containment on profile visibility incidents.
+
+state_model:
+entity_detail_operational_state:
+- prepared
+- reviewed
+- active
+- hidden
+- archived
+- contained
+
+validation_rules:
+- entity_ref is required.
+- duplicate active detail_code within active entity scope is prohibited.
+- historical snapshots must preserve revision chain.
+- sealed entity detail must not enter public publication mode.
+
+transition_rules:
+- prepared -> reviewed
+- reviewed -> active
+- active -> hidden
+- active -> archived
+- active -> contained
+- contained -> hidden
+- hidden -> active
+
+operational_focus:
+- profile publication
+- snapshot review
+- visibility incident handling
+- historical snapshot inspection
+
+failure_codes:
+- ENTITY_DETAIL_OP_REF_MISSING
+- ENTITY_DETAIL_OP_DUPLICATE_ACTIVE
+- ENTITY_DETAIL_OP_SNAPSHOT_CHAIN_INVALID
+- ENTITY_DETAIL_OP_SEALED_SCOPE_VIOLATION

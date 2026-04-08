@@ -1,0 +1,21 @@
+# ============================================================
+# TRANSPORT ROLE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: transport
+scope: transport.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related development behavior for transport.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

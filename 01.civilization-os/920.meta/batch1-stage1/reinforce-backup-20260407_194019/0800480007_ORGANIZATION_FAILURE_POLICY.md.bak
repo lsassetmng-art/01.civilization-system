@@ -1,0 +1,20 @@
+# ============================================================
+# ORGANIZATION FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: organization
+scope: organization.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for organization.
+
+failure_codes:
+- ORGANIZATION_POLICY_IDENTITY_ERROR
+- ORGANIZATION_POLICY_ROLE_ERROR
+- ORGANIZATION_POLICY_ACTIVITY_ERROR
+- ORGANIZATION_POLICY_BOUNDARY_ERROR

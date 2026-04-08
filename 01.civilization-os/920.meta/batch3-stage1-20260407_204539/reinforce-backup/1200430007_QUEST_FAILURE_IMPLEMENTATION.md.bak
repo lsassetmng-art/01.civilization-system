@@ -1,0 +1,20 @@
+# ============================================================
+# QUEST FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: quest
+scope: quest.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for quest.
+
+failure_codes:
+- QUEST_IMPLEMENTATION_IDENTITY_ERROR
+- QUEST_IMPLEMENTATION_ROLE_ERROR
+- QUEST_IMPLEMENTATION_ACTIVITY_ERROR
+- QUEST_IMPLEMENTATION_BOUNDARY_ERROR

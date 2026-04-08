@@ -1,0 +1,18 @@
+# ============================================================
+# ORGANIZATION ACTIVITY INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: organization
+scope: organization.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related infrastructure behavior for organization.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

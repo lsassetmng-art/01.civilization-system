@@ -1,0 +1,71 @@
+# ============================================================
+# DETAIL CORE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core security rules for detail handling.
+
+scope:
+Covers authorization, masking, blocking,
+sealed-scope access, audit trace,
+and security decision logging.
+
+design_intent:
+Security for detail must be explicit and deterministic.
+This layer exists so that security decisions are stable,
+traceable, and bounded by visibility scope.
+
+required_behavior:
+- Enforce visibility scope.
+- Enforce consumer authorization.
+- Mask restricted fields where partial delivery is allowed.
+- Block sealed detail outside explicit authority.
+- Preserve security trace on exposure and rejection.
+- Support evidence-preserving incident review.
+
+actor_matrix:
+- public_consumer -> public only
+- internal_consumer -> public/internal as authorized
+- restricted_operator -> restricted as authorized
+- high_trust_operator -> sealed where explicitly allowed
+- audit_actor -> historical and audit-labeled records only as authorized
+
+security_controls:
+- allow
+- mask
+- block
+- audit
+
+decision_table:
+- allowed + no sensitive subfield -> allow
+- allowed + sensitive subfield -> mask
+- not allowed -> block
+- sealed without explicit authority -> block and audit
+- historical audit request without audit authority -> block
+
+validation_rules:
+- actor class must be known.
+- requested scope must be declared.
+- masking rules must be deterministic.
+- block decisions must emit trace.
+- sealed access must emit trace and authority basis.
+
+failure_codes:
+- DETAIL_SECURITY_ACTOR_UNKNOWN
+- DETAIL_SECURITY_SCOPE_DENIED
+- DETAIL_SECURITY_MASK_REQUIRED
+- DETAIL_SECURITY_SEALED_ACCESS_DENIED
+- DETAIL_SECURITY_TRACE_REQUIRED
+- DETAIL_SECURITY_AUDIT_SCOPE_DENIED
+
+example_scenarios:
+- A public consumer receives only public-safe summary detail.
+- An internal operator receives internal detail with selected fields masked.
+- A sealed record access attempt without explicit authority is blocked and logged.

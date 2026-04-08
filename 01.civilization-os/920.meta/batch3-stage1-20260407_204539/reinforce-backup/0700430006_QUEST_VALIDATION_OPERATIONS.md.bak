@@ -1,0 +1,20 @@
+# ============================================================
+# QUEST VALIDATION OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: quest
+scope: quest.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related operations behavior for quest.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

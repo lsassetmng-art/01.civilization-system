@@ -1,0 +1,289 @@
+# ============================================================
+# PERSONA OS DESIGN MAP
+# ============================================================
+
+status: canonical
+layer: meta
+domain: design-map
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the official top-level design map
+for PersonaOS.
+
+summary:
+This document fixes the official reading order,
+domain structure,
+and layer relationship
+for PersonaOS.
+
+# ============================================================
+# 1. OFFICIAL LAYER ORDER
+# ============================================================
+
+010.constitution
+020.architecture
+030.model
+040.runtime
+050.flow
+060.integration
+070.operations
+080.policy
+090.interface
+100.security
+110.infrastructure
+120.implementation
+130.development
+
+# ============================================================
+# 2. OFFICIAL DOMAIN ORDER
+# ============================================================
+
+010.core
+020.identity
+030.state
+040.memory
+050.growth
+060.builder
+070.visual
+080.runtime-hosting
+090.snapshot
+100.package
+110.distribution
+120.external-rights
+130.access-license-transfer
+140.integration
+150.security
+160.governance
+170.operations-support
+
+# ============================================================
+# 3. DOMAIN ROLE SUMMARY
+# ============================================================
+
+010.core:
+truth authority and persona continuity
+
+020.identity:
+internal/public identity boundary
+
+030.state:
+state and lifecycle boundary
+
+040.memory:
+memory authority and persistence boundary
+
+050.growth:
+growth truth and growth apply authority
+
+060.builder:
+authoring and draft subsystem
+
+070.visual:
+visual truth and visual semantics
+
+080.runtime-hosting:
+host/runtime session consumption boundary
+
+090.snapshot:
+immutable release-oriented unit
+
+100.package:
+distributable assembly unit
+
+110.distribution:
+release channel and publication state
+
+120.external-rights:
+approved outside-world rights authority
+
+130.access-license-transfer:
+explicit usage permission and authority transition
+
+140.integration:
+approved system-to-system contract boundary
+
+150.security:
+truth protection and fail-closed safety
+
+160.governance:
+approval, moderation, and eligibility authority
+
+170.operations-support:
+audit, rollback, diagnostics, and incident support
+
+# ============================================================
+# 4. LAYER INTENT SUMMARY
+# ============================================================
+
+010.constitution:
+defines non-negotiable rules
+
+020.architecture:
+defines structure and boundary
+
+030.model:
+defines canonical records and state structures
+
+040.runtime:
+defines execution behavior
+
+050.flow:
+defines ordered process sequences
+
+060.integration:
+defines system-to-system contract paths
+
+070.operations:
+defines operational observability and handling
+
+080.policy:
+defines permission and restriction rules
+
+090.interface:
+defines explicit request/response/event contracts
+
+100.security:
+defines protection and fail-closed controls
+
+110.infrastructure:
+defines technical substrate and delivery foundation
+
+120.implementation:
+defines concrete realization patterns
+
+130.development:
+defines future-safe extension rules
+
+# ============================================================
+# 4. LAYER INTENT SUMMARY
+# ============================================================
+
+010.constitution:
+defines non-negotiable rules
+
+020.architecture:
+defines structure and boundary
+
+030.model:
+defines canonical records and state structures
+
+040.runtime:
+defines execution behavior
+
+050.flow:
+defines ordered process sequences
+
+060.integration:
+defines system-to-system contract paths
+
+070.operations:
+defines operational observability and handling
+
+080.policy:
+defines permission and restriction rules
+
+090.interface:
+defines explicit request/response/event contracts
+
+100.security:
+defines protection and fail-closed controls
+
+110.infrastructure:
+defines technical substrate and delivery foundation
+
+120.implementation:
+defines concrete realization patterns
+
+130.development:
+defines future-safe extension rules
+
+# ============================================================
+# 6. SPECIALIZED READING PATHS
+# ============================================================
+
+Builder-focused path:
+060.builder
+160.governance
+150.security
+170.operations-support
+
+Visual/runtime path:
+070.visual
+080.runtime-hosting
+150.security
+170.operations-support
+
+Release/distribution path:
+090.snapshot
+100.package
+110.distribution
+120.external-rights
+130.access-license-transfer
+160.governance
+150.security
+
+External contract path:
+140.integration
+120.external-rights
+130.access-license-transfer
+150.security
+
+# ============================================================
+# 7. CANONICAL DESIGN RULES
+# ============================================================
+
+1. Constitution outranks all lower layers.
+2. Architecture defines structure, not runtime behavior.
+3. Model defines records, not policy.
+4. Runtime executes behavior, not authority origin.
+5. Flow defines order, not truth ownership.
+6. Integration carries approved contracts only.
+7. Policy constrains behavior explicitly.
+8. Interface must remain explicit.
+9. Security must fail closed.
+10. Infrastructure supports but does not redefine meaning.
+11. Implementation must preserve upper-layer intent.
+12. Development must preserve long-term consistency.
+
+# ============================================================
+# 8. NO-CONFUSION RULE
+# ============================================================
+
+The following confusions are prohibited:
+
+builder vs truth authority
+visual vs runtime-hosting
+snapshot vs live truth
+package vs distribution
+distribution vs external-rights
+external-rights vs access-license-transfer
+integration vs authority origin
+operations-support vs governance
+
+# ============================================================
+# 9. OFFICIAL POSITION
+# ============================================================
+
+PersonaOS is considered structurally valid
+only when its documents can be read
+through this design map
+without contradiction.
+
+# ============================================================
+# 10. NEXT MAINTENANCE RULE
+# ============================================================
+
+Any future new PersonaOS document
+must be placeable on this map
+by both:
+
+layer
+and
+domain
+
+If a new document cannot be placed clearly,
+the design is incomplete
+and must be reviewed before adoption.

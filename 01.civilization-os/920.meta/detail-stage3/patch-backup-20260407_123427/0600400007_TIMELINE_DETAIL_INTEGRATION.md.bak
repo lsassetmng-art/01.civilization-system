@@ -1,0 +1,82 @@
+# ============================================================
+# TIMELINE DETAIL INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines timeline detail integration behavior.
+
+scope:
+Covers progression export, milestone export,
+historical replay export, cancellation-state export,
+and bounded timeline-detail import.
+
+integration_intent:
+Timeline detail is shared with event views,
+journey views, replay systems, audit tools, and support systems.
+Integration must preserve temporal order and lifecycle truth.
+
+canonical_rules:
+- Timeline detail integration must bind to target_ref.
+- Export must preserve progression ordering.
+- Historical replay exports must be explicitly marked.
+- Cancelled stages must not be exported as active progression.
+- Imported timeline detail must not rewrite canonical event history.
+
+required_behavior:
+- Support current progression export.
+- Support historical replay export.
+- Support cancellation-aware export.
+- Support bounded import as proposal or auxiliary timeline note.
+
+integration_state_model:
+timeline_detail_projection_mode:
+- current_progression
+- historical_replay
+- cancelled_history
+- audit
+
+validation_rules:
+- target_ref is required.
+- temporal ordering must remain valid.
+- current and historical modes must not be silently mixed.
+- cancelled stages must be clearly labeled.
+- imported timeline detail must not overwrite canonical timeline history.
+
+integration_sequences:
+current_progression_sequence:
+1. bind target_ref
+2. resolve current active timeline detail
+3. validate milestone order
+4. export current progression contract
+
+historical_replay_sequence:
+1. bind target_ref
+2. resolve completed and historical timeline detail
+3. mark historical replay mode
+4. export replay-safe contract
+
+import_sequence:
+1. receive inbound timeline-related payload
+2. validate schema, source, and target scope
+3. reject history overwrite attempt
+4. accept only as proposal or auxiliary reference if allowed
+
+failure_codes:
+- TIMELINE_DETAIL_INTEGRATION_REF_MISSING
+- TIMELINE_DETAIL_INTEGRATION_TEMPORAL_INVALID
+- TIMELINE_DETAIL_INTEGRATION_MODE_CONFLICT
+- TIMELINE_DETAIL_INTEGRATION_CANCEL_STATE_INVALID
+- TIMELINE_DETAIL_INTEGRATION_HISTORY_OVERWRITE_DENIED
+
+example_scenarios:
+- A life-event viewer receives current progression detail only.
+- A replay system receives completed milestones as historical replay data.
+- External timeline commentary is attached only as auxiliary proposal data.

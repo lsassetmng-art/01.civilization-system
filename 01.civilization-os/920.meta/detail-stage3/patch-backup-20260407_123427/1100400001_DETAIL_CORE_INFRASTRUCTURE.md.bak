@@ -1,0 +1,64 @@
+# ============================================================
+# DETAIL CORE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core infrastructure requirements for detail.
+
+scope:
+Covers indexing, lookup, caching, masking support,
+history retrieval, trace persistence, and invalidation rules.
+
+design_intent:
+Infrastructure must support deterministic detail delivery
+without creating stale exposure or historical confusion.
+
+infrastructure_components:
+- detail resolver
+- detail cache
+- detail index
+- trace logger
+- historical retrieval support
+- masking support path
+- invalidation controller
+
+component_topology:
+- request enters resolver
+- resolver queries index by target_ref and detail_type
+- cache consulted with visibility-aware keying
+- masking support applied before delivery
+- trace logger records exposure or rejection
+- historical retrieval path separated from current-active path
+
+required_behavior:
+- Maintain deterministic lookup.
+- Prevent stale unsafe exposure where visibility changed.
+- Support traceable delivery.
+- Support revision-aware retrieval.
+- Separate current-active and historical retrieval paths.
+- Invalidate cached entries on visibility, revision, or lifecycle change.
+
+cache_rules:
+- cache key must include target_ref
+- cache key must include detail_type
+- cache key must include visibility-sensitive scope where relevant
+- historical mode must not reuse current-active cache entries
+- sealed delivery must not be cached in public/shared paths
+
+failure_codes:
+- DETAIL_INFRA_INDEX_MISSING
+- DETAIL_INFRA_CACHE_SCOPE_INVALID
+- DETAIL_INFRA_HISTORY_PATH_CONFLICT
+- DETAIL_INFRA_TRACE_WRITE_FAILED
+
+example_scenarios:
+- A current-active request is served from a valid scope-aware cache.
+- A visibility change invalidates prior cached entity detail.
+- A historical replay request uses a separate retrieval path from active delivery.

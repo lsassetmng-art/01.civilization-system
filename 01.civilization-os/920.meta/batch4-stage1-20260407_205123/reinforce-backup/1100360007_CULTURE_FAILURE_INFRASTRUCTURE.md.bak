@@ -1,0 +1,20 @@
+# ============================================================
+# CULTURE FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: culture
+scope: culture.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for culture.
+
+failure_codes:
+- CULTURE_INFRASTRUCTURE_IDENTITY_ERROR
+- CULTURE_INFRASTRUCTURE_ROLE_ERROR
+- CULTURE_INFRASTRUCTURE_ACTIVITY_ERROR
+- CULTURE_INFRASTRUCTURE_BOUNDARY_ERROR

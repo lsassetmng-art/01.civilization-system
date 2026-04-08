@@ -1,0 +1,21 @@
+# ============================================================
+# INTERFACE ACTOR IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: interface
+scope: interface.actor
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines actor-related implementation behavior.
+
+actor_matrix:
+- viewer
+- operator
+- reviewer
+- approver
+- adapter

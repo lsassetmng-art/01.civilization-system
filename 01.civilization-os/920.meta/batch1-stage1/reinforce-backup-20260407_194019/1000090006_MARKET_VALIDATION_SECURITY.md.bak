@@ -1,0 +1,20 @@
+# ============================================================
+# MARKET VALIDATION SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: market
+scope: market.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related security behavior for market.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

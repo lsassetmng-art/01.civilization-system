@@ -1,0 +1,18 @@
+# ============================================================
+# ECONOMY BOUNDARY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: economy
+scope: economy.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related integration behavior for economy.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

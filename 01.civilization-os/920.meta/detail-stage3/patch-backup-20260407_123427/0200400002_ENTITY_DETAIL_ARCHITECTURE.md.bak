@@ -1,0 +1,94 @@
+# ============================================================
+# ENTITY DETAIL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: detail
+subdomain: entity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines how detailed truth for entities is structured and governed.
+
+scope:
+Entity detail covers fine-grained attributes for persons,
+organizations, units, facilities, buildings, assets, and other targetable entities.
+
+design_intent:
+Core entity models define what an entity is.
+Entity detail defines how an entity is further described,
+classified, exposed, restricted, and operationally interpreted.
+
+canonical_rules:
+- Entity detail must attach to a canonical entity reference.
+- Entity detail must not replace the core entity identity definition.
+- Entity detail may refine explanation, context, capability visibility,
+  constraint detail, and presentation-facing semantics.
+- Entity detail must support multi-visibility consumption.
+
+required_behavior:
+- The architecture must support entity detail profiles and snapshots.
+- The architecture must support visibility-aware detail publication.
+- The architecture must support archival without loss of reference integrity.
+
+state_model:
+entity_detail_profile:
+- entity_detail_id
+- entity_ref
+- detail_code
+- detail_title
+- detail_summary
+- detail_body
+- visibility_scope
+- lifecycle_state
+- effective_from
+- effective_to
+
+entity_detail_snapshot:
+- snapshot_id
+- entity_detail_id
+- snapshot_version
+- snapshot_reason
+
+entity_detail_visibility:
+- public
+- internal
+- restricted
+- sealed
+
+validation_rules:
+- entity_ref is required.
+- detail_code must be unique within target scope.
+- summary and body granularity must not conflict.
+- visibility scope must be explicitly declared.
+- effective_from must not exceed effective_to.
+- removed core attributes must not be silently reintroduced through detail.
+
+transition_rules:
+- created -> enriched
+- enriched -> published
+- published -> revised
+- published -> hidden
+- hidden -> archived
+
+dependency:
+depends_on:
+- base entity models
+- classification and provenance models
+- access-control policy where applicable
+
+consumed_by:
+- detail viewers
+- entity profile screens
+- internal governance and inspection tooling
+
+example_scenarios:
+- A hospital exists as a facility model.
+  Department notes, room-type detail, visitor restrictions,
+  and service-detail explanation belong to entity detail.
+- A military unit exists as a unit model.
+  Public-safe description and restricted internal capability detail
+  are separated through entity detail visibility.

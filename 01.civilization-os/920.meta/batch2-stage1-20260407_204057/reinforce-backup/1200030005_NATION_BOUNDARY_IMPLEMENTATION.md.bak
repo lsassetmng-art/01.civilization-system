@@ -1,0 +1,18 @@
+# ============================================================
+# NATION BOUNDARY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: nation
+scope: nation.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related implementation behavior for nation.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

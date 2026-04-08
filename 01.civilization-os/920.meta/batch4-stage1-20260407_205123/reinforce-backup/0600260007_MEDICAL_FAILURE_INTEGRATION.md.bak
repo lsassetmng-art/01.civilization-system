@@ -1,0 +1,20 @@
+# ============================================================
+# MEDICAL FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: medical
+scope: medical.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for medical.
+
+failure_codes:
+- MEDICAL_INTEGRATION_IDENTITY_ERROR
+- MEDICAL_INTEGRATION_ROLE_ERROR
+- MEDICAL_INTEGRATION_ACTIVITY_ERROR
+- MEDICAL_INTEGRATION_BOUNDARY_ERROR

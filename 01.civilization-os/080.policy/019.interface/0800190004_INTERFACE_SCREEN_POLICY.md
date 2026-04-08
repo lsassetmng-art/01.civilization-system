@@ -1,0 +1,101 @@
+# ============================================================
+# 0800190004 INTERFACE SCREEN POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: interface
+scope: 0800190004.interface.screen.policy
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for 0800190004 INTERFACE SCREEN POLICY inside 019.interface.
+
+## required_behavior
+- actor scope must be explicit
+- disclosure must be explicit
+- route allowance must be explicit
+- binding allowance must be explicit
+- denial behavior must be explicit
+
+## policy_rules
+Policy exists to constrain interface behavior
+by actor,
+route,
+disclosure,
+binding,
+and failure exposure
+rather than convenience.
+
+## actor_matrix
+- viewer
+- operator
+- reviewer
+- approver
+- adapter
+
+## disclosure_matrix
+- bounded read output
+- masked output
+- review-only output
+- operator-detailed output
+- denied output
+
+## allowed_denied_matrix
+- allow bounded read for allowed viewers
+- allow action only for valid operator scope
+- allow review only for declared review scope
+- deny hidden route usage
+- deny hidden service binding
+- deny output scope widening
+
+## escalation_rules
+When actor,
+route,
+or target meaning is unclear,
+the interface path must stop and escalate.
+
+## failure_codes
+- INTERFACE_POLICY_ACTOR_DENIED
+- INTERFACE_POLICY_ROUTE_DENIED
+- INTERFACE_POLICY_BINDING_DENIED
+- INTERFACE_POLICY_DISCLOSURE_DENIED
+- INTERFACE_POLICY_ESCALATION_REQUIRED
+
+## review_checklist
+- actor matrix exists
+- disclosure matrix exists
+- allowed/denied matrix exists
+- escalation rules exist
+- fail-closed policy is explicit
+
+## state_model
+Policy must distinguish
+allowed access,
+masked access,
+review-only access,
+operator-detailed access,
+and denied access.
+
+## retention_rules
+Policy must preserve
+enough evidence for review
+without widening ordinary screen visibility.
+
+## review_notes
+Policy completeness requires
+actor scope clarity,
+disclosure clarity,
+allowed/denied clarity,
+and escalation clarity.
+
+## review_notes
+Policy is complete only when
+actor scope,
+disclosure scope,
+binding scope,
+denial behavior,
+and escalation behavior
+are explicit and fail-closed.

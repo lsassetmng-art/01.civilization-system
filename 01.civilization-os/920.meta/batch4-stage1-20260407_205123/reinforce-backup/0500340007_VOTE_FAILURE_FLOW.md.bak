@@ -1,0 +1,20 @@
+# ============================================================
+# VOTE FAILURE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: vote
+scope: vote.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related flow behavior for vote.
+
+failure_codes:
+- VOTE_FLOW_IDENTITY_ERROR
+- VOTE_FLOW_ROLE_ERROR
+- VOTE_FLOW_ACTIVITY_ERROR
+- VOTE_FLOW_BOUNDARY_ERROR

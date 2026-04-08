@@ -1,0 +1,77 @@
+# ============================================================
+# ACTIVITY DETAIL FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: detail
+subdomain: activity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the process flow for activity detail handling.
+
+scope:
+Covers activity preparation, condition evaluation,
+input requirement checking, interruption branching,
+completion branching, and failure branching.
+
+flow_intent:
+Activity detail flow ensures that operational actions
+proceed only with explicit prerequisites, explainable blocking,
+and explicit completion or failure semantics.
+
+canonical_rules:
+- Activity detail flow must start with activity_ref.
+- Trigger conditions must be evaluated before activity exposure.
+- Blocking reasons must be explicit.
+- Activity detail must not override canonical process order.
+
+required_behavior:
+- Bind activity context.
+- Resolve activity detail.
+- Evaluate readiness conditions.
+- Expose input and output expectations.
+- Support paused, blocked, completed, and failed branches.
+
+flow_state_model:
+activity_detail_flow_state:
+- requested
+- activity_bound
+- detail_resolved
+- readiness_checked
+- executable
+- paused
+- blocked
+- completed
+- failed
+
+execution_sequence:
+1. receive activity detail request
+2. bind activity_ref
+3. resolve current detail set
+4. validate actor and trigger conditions
+5. evaluate readiness
+6. if ready, expose execution detail
+7. if blocked, expose explicit block reason
+8. if executed, branch to completed or failed state
+
+pause_resume_sequence:
+1. activity enters paused state
+2. pause reason recorded
+3. resume eligibility checked
+4. activity returns to executable state or blocked state
+
+failure_codes:
+- ACTIVITY_DETAIL_FLOW_ACTIVITY_REF_MISSING
+- ACTIVITY_DETAIL_FLOW_TRIGGER_INVALID
+- ACTIVITY_DETAIL_FLOW_READINESS_FAILED
+- ACTIVITY_DETAIL_FLOW_BLOCK_REASON_REQUIRED
+- ACTIVITY_DETAIL_FLOW_EXECUTION_OUTPUT_INVALID
+
+example_scenarios:
+- A railway inspection action is exposed only after tool prerequisites are satisfied.
+- A medical intake action is blocked until required inputs are complete.
+- A field-service action pauses and later resumes under explicit rules.

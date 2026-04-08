@@ -1,0 +1,18 @@
+# ============================================================
+# LANGUAGE ENTITY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: language
+scope: language.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related policy behavior for language.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

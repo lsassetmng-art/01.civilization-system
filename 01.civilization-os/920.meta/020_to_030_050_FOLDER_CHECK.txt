@@ -1,0 +1,702 @@
+=== 020 -> 030/050 FOLDER CHECK ===
+
+[timestamp]
+2026-04-04 10:53:49
+
+[gap count]
+167
+
+=== GAP BY TOP DOMAIN ===
+
+     15 007.persona
+     14 011.economy
+     14 002.world
+     12 019.interface
+     12 018.meta
+     11 015.government
+     10 009.career
+     10 001.core
+      9 017.runtime
+      9 013.law
+      8 003.foundation
+      7 016.war
+      7 014.security
+      7 008.education
+      7 006.player
+      7 005.story
+      6 999.meta
+      6 010.reward
+      6 004.mode
+      5 012.integration
+      2 040.detail
+
+=== GAP ONLY ===
+
+ARCH_DIR: /001.core
+  model=DIR_ONLY | flow=OK(2)
+  status: GAP
+
+ARCH_DIR: /001.core/010.auto-progression
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/010.system
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/020.common-calculation
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/020.dependency-graph
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/030.state-machine
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/040.cadence-and-tick
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/050.global-rules
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/060.triple-governor
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /001.core/070.aerial-support-governor
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /002.world/005.world-model
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/006.global-state
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/010.world-seed-and-geography
+  model=OK(70) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/020.disaster-calculation
+  model=OK(9) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /002.world/030.war-impact-calculation
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/040.famine-and-shortage-calculation
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/050.epidemic-calculation
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/060.death-and-mortality-calculation
+  model=OK(5) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/070.population-structure
+  model=OK(8) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/080.infrastructure-placement
+  model=OK(127) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /002.world/090.life-events-and-world-events
+  model=OK(109) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /002.world/100.triple-world-intervention
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /002.world/110.aerial-world-stabilization
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /003.foundation
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /003.foundation/010.system-principles
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /003.foundation/010.world-foundation-boundary
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /003.foundation/020.layer-boundary
+  model=OK(106) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /003.foundation/030.core-entity-lifecycle
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /003.foundation/030.data-contract
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /003.foundation/040.namespace
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /003.foundation/040.naming-and-structure
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /004.mode
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /004.mode/010.feature-unlock
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /004.mode/010.normal-play
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /004.mode/020.replay-mode
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /004.mode/030.exam-mode
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /004.mode/040.scenario-mode
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /005.story
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /005.story/010.story-engine
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /005.story/010.world-background
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /005.story/011.scenario-structure
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /005.story/012.checkpoint
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /005.story/020.historical-progression
+  model=OK(86) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /005.story/030.narrative-conditions
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /006.player
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /006.player/010.player-model
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /006.player/010.player-role
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /006.player/020.decision-engine
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /006.player/020.player-action-scope
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /006.player/030.player-permission-binding
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /006.player/030.time
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /007.persona/010.persona-core
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/010.persona-placement
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/020.persona-behavior-binding
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/020.snapshot
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/030.persona-society-link
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/030.reincarnation
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/040.personality-evolution
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/050.release-and-distribution
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/060.license-and-boundary
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/070.commerce-boundary
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/080.relationship
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/090.life-event
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/100.life-expectancy
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /007.persona/110.skill-growth
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /008.education
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /008.education/010.school-system
+  model=OK(3) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /008.education/020.exam-system
+  model=OK(24) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /008.education/030.education-facility-operation
+  model=OK(13) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /008.education/040.training-system
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /008.education/050.certification-system
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /008.education/060.recommendation-system
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /009.career/010.job
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career/010.occupation-system
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career/011.interview
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career/012.hiring
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career/013.evaluation
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career/014.career-path
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career/015.internship
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /009.career/020.employment-route
+  model=OK(21) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /009.career/030.career-progression
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /010.reward
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /010.reward/010.login-bonus
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /010.reward/010.reward-definition
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /010.reward/020.reward-distribution
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /010.reward/020.reward-grant
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /010.reward/030.reward-balance
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /011.economy
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /011.economy/005.currency
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /011.economy/010.real-estate
+  model=OK(15) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /011.economy/020.world-valuation
+  model=OK(2) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /011.economy/030.banking
+  model=OK(23) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /011.economy/040.securities
+  model=OK(11) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /011.economy/050.retail
+  model=OK(19) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /011.economy/060.agriculture-and-livestock
+  model=OK(16) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /011.economy/070.manufacturing
+  model=OK(64) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /011.economy/080.food-service
+  model=OK(4) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /011.economy/090.tax-and-settlement
+  model=OK(4) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /011.economy/100.daily-necessities-and-self-sufficiency
+  model=OK(14) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /011.economy/110.market-play-and-economic-activity
+  model=OK(126) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /011.economy/120.triple-economic-intervention
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /012.integration
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /012.integration/010.industry-packs
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /012.integration/010.sync-and-bridge
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /012.integration/020.streaming-commerce-bridge
+  model=OK(7) | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /012.integration/030.external-linkage
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /013.law
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /013.law/010.general-law
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /013.law/010.political-system
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /013.law/020.public-office-eligibility
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /013.law/030.civil-service-eligibility
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /013.law/040.military-service-and-mobilization
+  model=OK(9) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /013.law/050.legal-role-binding
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /014.security
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /014.security/010.internal-security
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /014.security/020.access-control
+  model=OK(10) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /014.security/020.public-order
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /014.security/030.audit-and-monitoring
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /015.government
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /015.government/005.government-core
+  model=OK(10) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /015.government/010.nation-builder
+  model=DIR_ONLY | flow=OK(1)
+  status: GAP
+
+ARCH_DIR: /015.government/020.company-builder
+  model=DIR_ONLY | flow=OK(1)
+  status: GAP
+
+ARCH_DIR: /015.government/025.city-builder
+  model=DIR_ONLY | flow=OK(1)
+  status: GAP
+
+ARCH_DIR: /015.government/030.initial-nation-and-city-set
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /015.government/040.nation-detail-set
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /015.government/050.zone-and-territory-structure
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /015.government/060.election-and-power-acquisition
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /015.government/080.fiscal-and-treaty
+  model=OK(22) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /016.war
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /016.war/010.military-organization
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /016.war/010.war-core
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /016.war/020.military-base
+  model=OK(4) | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /016.war/030.war-progression
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /016.war/040.defense-readiness
+  model=MISSING | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /017.runtime
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /017.runtime/010.runtime-parameter
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /017.runtime/020.state-machine-detail
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /017.runtime/030.event-runtime
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /017.runtime/030.map-visual-reflection
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /017.runtime/040.execution-control
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /017.runtime/050.approval-and-blocking
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /017.runtime/060.triple-intervention-runtime-control
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /017.runtime/070.aerial-intervention-runtime-control
+  model=DIR_ONLY | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /018.meta
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /018.meta/010.common-tables-and-matrices
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /018.meta/020.dictionary-extraction
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /018.meta/030.builder-value-definition
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /018.meta/040.enum-master
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /018.meta/050.placeholder-resolution
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /018.meta/060.meta-system
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /019.interface
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /019.interface/010.infrastructure-management-entry-ui
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /019.interface/020.military-and-infrastructure-ui
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /019.interface/030.grand-play-ui
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /019.interface/040.life-event-ui
+  model=DIR_ONLY | flow=OK(1)
+  status: GAP
+
+ARCH_DIR: /019.interface/050.builder-entry-ui
+  model=DIR_ONLY | flow=DIR_ONLY
+  status: GAP
+
+ARCH_DIR: /019.interface/060.application-shell
+  model=DIR_ONLY | flow=OK(1)
+  status: GAP
+
+ARCH_DIR: /040.detail/010.detail-root
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /999.meta
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /999.meta/010.manifest
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /999.meta/020.freeze
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /999.meta/030.integrated-master
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /999.meta/040.bridge-master
+  model=MISSING | flow=MISSING
+  status: GAP
+
+ARCH_DIR: /999.meta/050.integration-support
+  model=MISSING | flow=MISSING
+  status: GAP
+

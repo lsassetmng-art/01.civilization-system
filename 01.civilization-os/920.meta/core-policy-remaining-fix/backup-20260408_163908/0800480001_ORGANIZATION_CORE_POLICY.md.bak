@@ -1,0 +1,56 @@
+# ============================================================
+# ORGANIZATION CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: organization
+scope: organization.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for organization.
+
+## policy_rules
+Organization policy constrains:
+- who may create organization structures
+- who may join or operate within them
+- what authority members may exercise
+- what organization detail may be disclosed
+- what must be restricted or denied
+
+## required_behavior
+- membership eligibility must be explicit
+- role eligibility must be explicit
+- disclosure scope must be explicit
+- authority boundary must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- public organization summary
+- member-scoped detail
+- operator-scoped detail
+- reviewer-scoped detail
+- denied output
+
+## allowed_denied_matrix
+- allow membership only for valid scope
+- allow role action only for valid authority
+- allow bounded disclosure only for allowed actors
+- deny hidden authority widening
+- deny out-of-scope organization action
+
+## escalation_rules
+If membership scope,
+role scope,
+authority boundary,
+or disclosure scope is unclear,
+the organization path must stop and escalate.
+
+## review_checklist
+- membership policy is explicit
+- role policy is explicit
+- disclosure matrix exists
+- escalation rules are explicit

@@ -1,0 +1,78 @@
+# ============================================================
+# LIFE CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: life
+scope: life.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of life in CivilizationOS.
+
+## design_intent
+Life is the bounded continuity layer
+that gives meaningful persistence
+to entities, actors, relations, conditions, and transitions
+across time.
+
+Life is not identical to a single event or single state.
+It is the continuity model that binds
+existence,
+change,
+state progression,
+and historical retention.
+
+## architectural_position
+Life sits between:
+- world containment
+- identity continuity
+- family/relationship continuity
+- medical/education/work continuity
+- history accumulation
+- event-driven change
+
+## required_behavior
+- life continuity must remain explicit
+- current and historical life states must remain distinct
+- change over time must remain reviewable
+- bounded transitions must remain explicit
+- invalid continuity assumptions must fail closed
+
+## canonical_rules
+- life truth must not be replaced by a single snapshot
+- current state must not erase historical state
+- life continuity must remain attributable
+- state transition without basis is prohibited
+- ambiguity in continuity fails closed
+
+## state_model
+The life domain distinguishes:
+- initialized life state
+- active life state
+- changed life state
+- restricted life state
+- historical life state
+- closed life state
+
+## actor_boundary
+- self-bearing actor
+- linked actor
+- reviewer
+- operator
+- adapter
+
+## decision_matrix
+- if continuity basis is missing, stop mutation
+- if current and historical states are mixed, fail closed
+- if transition basis is unclear, route to review
+- if state is closed, preserve historical continuity
+
+## review_checklist
+- continuity model is explicit
+- state model is explicit
+- transition basis is explicit
+- historical distinction is explicit

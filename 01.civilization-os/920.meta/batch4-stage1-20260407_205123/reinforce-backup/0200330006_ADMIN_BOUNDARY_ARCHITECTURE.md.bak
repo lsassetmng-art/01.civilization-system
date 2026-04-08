@@ -1,0 +1,18 @@
+# ============================================================
+# ADMIN BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: admin
+scope: admin.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines authority and operational boundary for admin.
+
+required_behavior:
+- authority basis must be explicit
+- hidden boundary crossing is prohibited

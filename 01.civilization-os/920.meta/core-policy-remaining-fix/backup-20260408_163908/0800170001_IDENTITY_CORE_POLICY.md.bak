@@ -1,0 +1,53 @@
+# ============================================================
+# IDENTITY CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: identity
+scope: identity.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for identity.
+
+## policy_rules
+Identity policy constrains:
+- who may view which identity detail
+- who may alter identity-linked state
+- how canonical and projected identity may be disclosed
+- when identity paths must be denied or escalated
+
+## required_behavior
+- identity disclosure scope must be explicit
+- alteration scope must be explicit
+- canonical/projection split must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- public identity summary
+- holder-scoped detail
+- operator/reviewer detail
+- historical identity detail
+- denied output
+
+## allowed_denied_matrix
+- allow identity-linked action only for valid scope
+- allow disclosure only for allowed actors
+- deny hidden identity substitution
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If identity basis,
+alteration scope,
+canonical/projection mode,
+or disclosure scope is unclear,
+the identity path must stop and escalate.
+
+## review_checklist
+- disclosure policy is explicit
+- canonical/projection policy is explicit
+- denial behavior is explicit
+- escalation rules are explicit

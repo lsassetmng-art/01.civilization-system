@@ -1,0 +1,20 @@
+# ============================================================
+# BUILDER FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: builder
+scope: builder.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for builder.
+
+failure_codes:
+- BUILDER_DEVELOPMENT_IDENTITY_ERROR
+- BUILDER_DEVELOPMENT_ROLE_ERROR
+- BUILDER_DEVELOPMENT_ACTIVITY_ERROR
+- BUILDER_DEVELOPMENT_BOUNDARY_ERROR

@@ -1,0 +1,21 @@
+# ============================================================
+# MAP ROLE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: map
+scope: map.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related security behavior for map.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: interface
+scope: interface.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior.
+
+failure_codes:
+- INTERFACE_POLICY_ROUTE_ERROR
+- INTERFACE_POLICY_ACTOR_ERROR
+- INTERFACE_POLICY_VALIDATION_ERROR
+- INTERFACE_POLICY_TARGET_ERROR

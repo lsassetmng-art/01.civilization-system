@@ -1,0 +1,18 @@
+# ============================================================
+# MAP FAILURE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: map
+scope: map.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure architecture for map.
+
+required_behavior:
+- failure outputs must be bounded
+- denial and review states must be explicit

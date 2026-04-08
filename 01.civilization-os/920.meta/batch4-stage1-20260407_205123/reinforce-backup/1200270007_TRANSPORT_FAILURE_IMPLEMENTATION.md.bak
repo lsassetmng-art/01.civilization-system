@@ -1,0 +1,20 @@
+# ============================================================
+# TRANSPORT FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: transport
+scope: transport.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for transport.
+
+failure_codes:
+- TRANSPORT_IMPLEMENTATION_IDENTITY_ERROR
+- TRANSPORT_IMPLEMENTATION_ROLE_ERROR
+- TRANSPORT_IMPLEMENTATION_ACTIVITY_ERROR
+- TRANSPORT_IMPLEMENTATION_BOUNDARY_ERROR

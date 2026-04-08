@@ -1,0 +1,38 @@
+# ============================================================
+# MEDICAL CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: medical
+scope: medical.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for medical.
+
+## policy_rules
+Medical policy constrains:
+- who may observe, assess, intervene, or review
+- what medical detail may be disclosed
+- when medical paths must be denied or escalated
+
+## required_behavior
+- intervention scope must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- bounded public medical summary
+- actor-scoped detail
+- operator/reviewer detail
+- historical medical detail
+- denied output
+
+## allowed_denied_matrix
+- allow medical action only for valid scope
+- allow disclosure only for allowed actors
+- deny hidden widening of medical authority
+- deny disclosure beyond allowed scope

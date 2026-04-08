@@ -1,0 +1,21 @@
+# ============================================================
+# LEGAL CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: legal
+scope: legal.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for legal.
+
+## runtime_scope
+Runtime covers legal-state visibility,
+procedure state,
+decision state,
+historical legal reference,
+and safe failure rendering.

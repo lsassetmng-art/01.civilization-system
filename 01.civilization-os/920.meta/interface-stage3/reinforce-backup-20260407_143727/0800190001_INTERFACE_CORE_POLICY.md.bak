@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: interface
+scope: interface.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core policy behavior for 019.interface.
+
+required_behavior:
+- screen-to-service relation must remain explicit
+- actor scope must remain explicit
+- route and validation must remain explicit
+- failure path must remain explicit

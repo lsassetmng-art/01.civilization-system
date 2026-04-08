@@ -1,0 +1,119 @@
+# ============================================================
+# MODE CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: mode
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the core architecture of the mode domain.
+
+scope:
+Defines what mode is, how mode is classified,
+how mode affects downstream behavior,
+and how mode conflicts are prevented.
+
+design_intent:
+CivilizationOS needs a canonical way to interpret context.
+The same user, world, or facility may behave differently
+depending on mode, but the underlying canonical truth must remain stable.
+Mode exists to separate context selection from truth mutation.
+
+canonical_rules:
+- Mode must be explicitly declared.
+- Mode must be typed and lifecycle-aware.
+- Mode must not silently mutate world truth.
+- Mode must not be inferred only from UI route.
+- Mode conflicts must be detectable and resolvable.
+- Mode must expose authority boundaries.
+
+required_behavior:
+- Support canonical mode registration.
+- Support active mode selection.
+- Support mode conflict detection.
+- Support mode transition.
+- Support consumer-safe mode exposure.
+
+state_model:
+mode_record:
+- mode_id
+- mode_code
+- mode_type
+- mode_scope
+- lifecycle_state
+- priority
+- effective_from
+- effective_to
+
+mode_type:
+- world_mode
+- access_mode
+- operation_mode
+- transition_mode
+
+lifecycle_state:
+- draft
+- reviewed
+- active
+- suspended
+- deprecated
+- archived
+
+validation_rules:
+- mode_code is required.
+- mode_type is required.
+- mode_scope is required.
+- active mode must not overlap invalidly with conflicting active mode.
+- effective period must be coherent.
+- undocumented implicit mode is prohibited.
+
+transition_rules:
+- draft -> reviewed
+- reviewed -> active
+- active -> suspended
+- suspended -> active
+- active -> deprecated
+- deprecated -> archived
+
+actor_boundary:
+- system may select default mode
+- authorized controller may switch mode
+- ordinary consumer may observe effective mode only where allowed
+- UI must consume mode, not originate hidden canonical mode
+
+decision_matrix:
+- same scope + non-conflicting type -> coexist allowed
+- same scope + conflicting type -> higher priority or explicit resolution required
+- archived mode -> current selection denied
+- deprecated mode -> new activation denied unless override path exists
+
+failure_codes:
+- MODE_CODE_MISSING
+- MODE_TYPE_MISSING
+- MODE_SCOPE_MISSING
+- MODE_CONFLICT_DETECTED
+- MODE_EFFECTIVE_PERIOD_INVALID
+- MODE_IMPLICIT_UNDECLARED
+
+dependency:
+depends_on:
+- world
+- player
+- interface
+- security
+
+consumed_by:
+- runtime
+- flow
+- interface
+- operations
+
+example_scenarios:
+- A facility remains the same facility,
+  but enters restricted operation mode during emergency handling.
+- A player remains the same player,
+  but is interpreted through onboarding mode during first-use progression.

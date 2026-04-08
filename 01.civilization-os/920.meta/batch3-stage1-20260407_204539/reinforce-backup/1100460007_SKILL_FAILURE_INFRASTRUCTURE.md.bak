@@ -1,0 +1,20 @@
+# ============================================================
+# SKILL FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: skill
+scope: skill.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for skill.
+
+failure_codes:
+- SKILL_INFRASTRUCTURE_IDENTITY_ERROR
+- SKILL_INFRASTRUCTURE_ROLE_ERROR
+- SKILL_INFRASTRUCTURE_ACTIVITY_ERROR
+- SKILL_INFRASTRUCTURE_BOUNDARY_ERROR

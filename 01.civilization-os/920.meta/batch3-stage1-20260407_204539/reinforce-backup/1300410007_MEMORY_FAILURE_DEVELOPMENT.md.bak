@@ -1,0 +1,20 @@
+# ============================================================
+# MEMORY FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: memory
+scope: memory.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for memory.
+
+failure_codes:
+- MEMORY_DEVELOPMENT_IDENTITY_ERROR
+- MEMORY_DEVELOPMENT_ROLE_ERROR
+- MEMORY_DEVELOPMENT_ACTIVITY_ERROR
+- MEMORY_DEVELOPMENT_BOUNDARY_ERROR

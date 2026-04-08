@@ -1,0 +1,21 @@
+# ============================================================
+# ADMIN ROLE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: admin
+scope: admin.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related implementation behavior for admin.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

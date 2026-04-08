@@ -1,0 +1,56 @@
+# ============================================================
+# QUEST CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: quest
+scope: quest.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for quest.
+
+## policy_rules
+Quest policy constrains:
+- who may issue quests
+- who may hold or progress quests
+- which quest detail may be disclosed
+- how completion/failure may be acknowledged
+- when quest paths must be denied or escalated
+
+## required_behavior
+- issuer eligibility must be explicit
+- holder/progress scope must be explicit
+- disclosure scope must be explicit
+- completion policy must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- public quest summary
+- holder-scoped detail
+- operator/reviewer detail
+- historical quest detail
+- denied output
+
+## allowed_denied_matrix
+- allow issue/progress only for valid scope
+- allow completion only for valid condition basis
+- allow disclosure only for allowed actors
+- deny hidden objective widening
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If issuer scope,
+progress scope,
+completion basis,
+or disclosure scope is unclear,
+the quest path must stop and escalate.
+
+## review_checklist
+- issuer policy is explicit
+- completion policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit

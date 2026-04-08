@@ -1,0 +1,59 @@
+# ============================================================
+# BUILDER CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: builder
+scope: builder.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for builder.
+
+## runtime_scope
+Runtime covers build draft visibility,
+validation state,
+approval state,
+execution state,
+completion/failure state,
+and safe failure rendering.
+
+## current_view_state
+Runtime-visible builder state must distinguish:
+- draft build
+- validated build
+- approved build
+- executing build
+- failed build
+- completed build
+- historical build
+
+## validation_rules
+- builder identity must resolve
+- template/config basis must resolve
+- actor authority must resolve
+- target boundary must be valid
+- execution mode must be valid
+
+## failure_modes
+- invalid template/config basis
+- invalid actor authority
+- invalid target boundary
+- invalid execution mode
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish validation,
+approval,
+execution,
+completion/failure,
+and failure surface.
+
+## review_checklist
+- builder runtime states are explicit
+- execution-aware runtime is explicit
+- failure handling is explicit

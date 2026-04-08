@@ -1,0 +1,18 @@
+# ============================================================
+# HOUSING ACTIVITY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: housing
+scope: housing.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related flow behavior for housing.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

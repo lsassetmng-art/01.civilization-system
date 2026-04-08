@@ -1,0 +1,95 @@
+# ============================================================
+# STATUS DETAIL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: detail
+subdomain: status-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines how detailed truth for statuses is structured and governed.
+
+scope:
+Status detail covers fine-grained state explanation
+for entities, facilities, zones, units, activities, players,
+services, and integration-linked targets.
+
+design_intent:
+A status code alone is not sufficient for operational clarity.
+Status detail exists to define severity, reason, recoverability,
+and structured explanation.
+
+canonical_rules:
+- Status detail must bind to a target reference.
+- Status detail must declare severity and reason semantics.
+- Status detail must not silently conflict with canonical target state.
+- Status detail must remain queryable for warning and degraded cases.
+
+required_behavior:
+- The architecture must support structured status reason detail.
+- The architecture must support severity-tier semantics.
+- The architecture must support recoverability and escalation semantics.
+
+state_model:
+status_detail_profile:
+- status_detail_id
+- target_ref
+- status_code
+- severity_level
+- status_reason
+- recoverability_flag
+- visibility_scope
+- lifecycle_state
+
+severity_level:
+- info
+- low
+- medium
+- high
+- critical
+
+status_lifecycle:
+- normal
+- warning
+- degraded
+- blocked
+- recovered
+- terminal
+
+validation_rules:
+- target_ref is required.
+- status_code is required.
+- severity_level is required.
+- blocked or terminal state must expose a reason.
+- recovered state must reference prior degraded or blocked semantics.
+- contradictory active status combinations are prohibited.
+
+transition_rules:
+- normal -> warning
+- warning -> degraded
+- degraded -> blocked
+- blocked -> recovered
+- recovered -> normal
+- degraded -> terminal
+
+dependency:
+depends_on:
+- security detail
+- integration status consumers
+- activity and facility references
+
+consumed_by:
+- alert panels
+- status boards
+- operational triage screens
+- audit and incident viewers
+
+example_scenarios:
+- A hospital service is active but degraded.
+  The structured cause, severity, and expected recovery path belong to status detail.
+- A border checkpoint is blocked.
+  The reason and visibility scope belong to status detail.

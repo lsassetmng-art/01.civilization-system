@@ -1,0 +1,20 @@
+# ============================================================
+# TRANSPORT ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: transport
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200270001_TRANSPORT_CORE_ARCHITECTURE.md
+- 0200270002_TRANSPORT_OVERVIEW_ARCHITECTURE.md
+- 0200270003_TRANSPORT_ENTITY_ARCHITECTURE.md
+- 0200270004_TRANSPORT_ROLE_ARCHITECTURE.md
+- 0200270005_TRANSPORT_ACTIVITY_ARCHITECTURE.md
+- 0200270006_TRANSPORT_BOUNDARY_ARCHITECTURE.md
+- 0200270007_TRANSPORT_VALIDATION_ARCHITECTURE.md
+- 0200270008_TRANSPORT_FAILURE_ARCHITECTURE.md

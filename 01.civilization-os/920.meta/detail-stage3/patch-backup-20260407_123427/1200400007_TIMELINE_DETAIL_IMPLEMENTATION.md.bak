@@ -1,0 +1,31 @@
+# ============================================================
+# TIMELINE DETAIL IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines implementation responsibilities for timeline detail.
+
+implementation_focus:
+- milestone selector
+- progression-chain validation
+- replay-safe historical reader
+- current versus replay mode selector
+
+module_split:
+- timeline_detail_validator
+- timeline_milestone_selector
+- timeline_history_reader
+- timeline_mode_selector
+
+failure_codes:
+- TIMELINE_DETAIL_IMPL_REF_MISSING
+- TIMELINE_DETAIL_IMPL_CHAIN_INVALID
+- TIMELINE_DETAIL_IMPL_MODE_SELECTOR_FAILED

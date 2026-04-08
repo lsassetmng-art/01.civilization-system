@@ -1,0 +1,55 @@
+# ============================================================
+# FAMILY CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: family
+scope: family.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for family.
+
+## policy_rules
+Family policy constrains:
+- who may view family detail
+- who may mutate family relation state
+- which care/responsibility actions are valid
+- what family history may be disclosed
+- when family paths must be denied or escalated
+
+## required_behavior
+- membership scope must be explicit
+- care/responsibility scope must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- bounded public family summary
+- member-scoped detail
+- operator/reviewer detail
+- historical family detail
+- denied output
+
+## allowed_denied_matrix
+- allow bounded read only for valid scope
+- allow mutation only for valid authority and basis
+- allow historical reference only in valid mode
+- deny hidden family-authority widening
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If family membership,
+responsibility scope,
+authority,
+or disclosure scope is unclear,
+the family path must stop and escalate.
+
+## review_checklist
+- membership policy is explicit
+- care/responsibility policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit

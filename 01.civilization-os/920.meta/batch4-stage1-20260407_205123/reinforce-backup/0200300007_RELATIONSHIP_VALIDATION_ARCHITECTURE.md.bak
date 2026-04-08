@@ -1,0 +1,20 @@
+# ============================================================
+# RELATIONSHIP VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: relationship
+scope: relationship.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for relationship.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

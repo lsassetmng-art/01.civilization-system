@@ -1,0 +1,20 @@
+# ============================================================
+# TRANSPORT FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: transport
+scope: transport.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for transport.
+
+failure_codes:
+- TRANSPORT_POLICY_IDENTITY_ERROR
+- TRANSPORT_POLICY_ROLE_ERROR
+- TRANSPORT_POLICY_ACTIVITY_ERROR
+- TRANSPORT_POLICY_BOUNDARY_ERROR

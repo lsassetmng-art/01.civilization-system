@@ -1,0 +1,20 @@
+# ============================================================
+# INVENTORY FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: inventory
+scope: inventory.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for inventory.
+
+failure_codes:
+- INVENTORY_SECURITY_IDENTITY_ERROR
+- INVENTORY_SECURITY_ROLE_ERROR
+- INVENTORY_SECURITY_ACTIVITY_ERROR
+- INVENTORY_SECURITY_BOUNDARY_ERROR

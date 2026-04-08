@@ -1,0 +1,31 @@
+# ============================================================
+# RELATIONSHIP DETAIL IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: detail
+subdomain: relationship-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines implementation responsibilities for relationship detail.
+
+implementation_focus:
+- relation-pair resolver
+- trust-detail masking
+- historical relation reader
+- public versus internal selector
+
+module_split:
+- relationship_detail_validator
+- relationship_pair_selector
+- relationship_trust_filter
+- relationship_history_reader
+
+failure_codes:
+- RELATIONSHIP_DETAIL_IMPL_PAIR_MISSING
+- RELATIONSHIP_DETAIL_IMPL_TYPE_INVALID
+- RELATIONSHIP_DETAIL_IMPL_TRUST_FILTER_FAILED

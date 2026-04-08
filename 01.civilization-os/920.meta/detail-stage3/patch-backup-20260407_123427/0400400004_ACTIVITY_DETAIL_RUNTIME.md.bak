@@ -1,0 +1,72 @@
+# ============================================================
+# ACTIVITY DETAIL RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: detail
+subdomain: activity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the runtime behavior for activity detail.
+
+scope:
+Covers activity readiness, interruption logic exposure,
+input requirement resolution, output expectation reads,
+and failure-aware operational delivery.
+
+runtime_intent:
+Activity detail runtime exists so that actions are executed
+with precise conditions and explainable detailed semantics.
+
+runtime_rules:
+- Runtime must resolve activity detail by activity_ref.
+- Runtime must preserve actor_type and trigger condition semantics.
+- Runtime must not let detail rewrite canonical flow order.
+- Runtime must expose blocking reasons when activity execution is blocked.
+
+required_behavior:
+- Resolve current activity detail.
+- Deliver input requirement and output expectation data.
+- Expose interruption rules.
+- Support ready, paused, blocked, completed, and failed operational states.
+
+state_model:
+activity_detail_runtime_state:
+- ready
+- in_progress
+- paused
+- blocked
+- completed
+- failed
+
+validation_rules:
+- activity_ref is required.
+- actor_type is required.
+- trigger_condition is required.
+- blocked state must expose blocking reason.
+- failed state must preserve failure explainability.
+- incompatible activity detail versions must not be merged silently.
+
+transition_rules:
+- ready -> in_progress
+- in_progress -> paused
+- paused -> in_progress
+- in_progress -> blocked
+- blocked -> ready
+- in_progress -> completed
+- in_progress -> failed
+
+failure_codes:
+- ACTIVITY_DETAIL_REF_MISSING
+- ACTIVITY_DETAIL_ACTOR_INVALID
+- ACTIVITY_DETAIL_TRIGGER_MISSING
+- ACTIVITY_DETAIL_BLOCK_REASON_MISSING
+- ACTIVITY_DETAIL_VERSION_CONFLICT
+
+example_runtime_scenarios:
+- A railway inspection task exposes tools required, interruption rules, and completion criteria.
+- A medical intake task exposes escalation rules and blocks when mandatory input is missing.

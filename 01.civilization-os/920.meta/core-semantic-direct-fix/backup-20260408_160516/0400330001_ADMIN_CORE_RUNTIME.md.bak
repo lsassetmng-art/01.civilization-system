@@ -1,0 +1,21 @@
+# ============================================================
+# ADMIN CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: admin
+scope: admin.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for admin.
+
+## runtime_scope
+Runtime covers administrative-state visibility,
+request handling,
+decision rendering,
+historical admin reference,
+and safe failure rendering.

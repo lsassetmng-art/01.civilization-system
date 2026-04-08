@@ -1,0 +1,18 @@
+# ============================================================
+# CRIME BOUNDARY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: crime
+scope: crime.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related security behavior for crime.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

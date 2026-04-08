@@ -1,0 +1,20 @@
+# ============================================================
+# HOUSING FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: housing
+scope: housing.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for housing.
+
+failure_codes:
+- HOUSING_POLICY_IDENTITY_ERROR
+- HOUSING_POLICY_ROLE_ERROR
+- HOUSING_POLICY_ACTIVITY_ERROR
+- HOUSING_POLICY_BOUNDARY_ERROR

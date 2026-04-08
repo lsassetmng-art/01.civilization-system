@@ -1,0 +1,20 @@
+# ============================================================
+# RELATIONSHIP FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: relationship
+scope: relationship.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for relationship.
+
+failure_codes:
+- RELATIONSHIP_RUNTIME_IDENTITY_ERROR
+- RELATIONSHIP_RUNTIME_ROLE_ERROR
+- RELATIONSHIP_RUNTIME_ACTIVITY_ERROR
+- RELATIONSHIP_RUNTIME_BOUNDARY_ERROR

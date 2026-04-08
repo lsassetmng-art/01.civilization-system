@@ -1,0 +1,20 @@
+# ============================================================
+# LIFE FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: life
+scope: life.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for life.
+
+failure_codes:
+- LIFE_INFRASTRUCTURE_IDENTITY_ERROR
+- LIFE_INFRASTRUCTURE_ROLE_ERROR
+- LIFE_INFRASTRUCTURE_ACTIVITY_ERROR
+- LIFE_INFRASTRUCTURE_BOUNDARY_ERROR

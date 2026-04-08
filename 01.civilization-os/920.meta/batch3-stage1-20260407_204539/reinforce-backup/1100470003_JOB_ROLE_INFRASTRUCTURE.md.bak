@@ -1,0 +1,21 @@
+# ============================================================
+# JOB ROLE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: job
+scope: job.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related infrastructure behavior for job.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

@@ -1,0 +1,20 @@
+# ============================================================
+# CULTURE FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: culture
+scope: culture.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for culture.
+
+failure_codes:
+- CULTURE_SECURITY_IDENTITY_ERROR
+- CULTURE_SECURITY_ROLE_ERROR
+- CULTURE_SECURITY_ACTIVITY_ERROR
+- CULTURE_SECURITY_BOUNDARY_ERROR

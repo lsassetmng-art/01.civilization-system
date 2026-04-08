@@ -1,0 +1,51 @@
+# ============================================================
+# TRADE CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: trade
+scope: trade.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for trade.
+
+## runtime_scope
+Runtime covers trade visibility,
+proposal state,
+approval state,
+active exchange state,
+dispute state,
+closure state,
+and bounded failure rendering.
+
+## validation_rules
+- trade identity must resolve
+- parties must resolve
+- exchange scope must resolve
+- approval scope must be valid
+- policy scope must be valid
+
+## failure_modes
+- invalid trade parties
+- invalid exchange scope
+- invalid approval path
+- invalid closure path
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish proposal,
+approval,
+active exchange,
+dispute,
+closure,
+and failure state.
+
+## review_checklist
+- trade states are explicit
+- approval-aware runtime is explicit
+- failure handling is explicit

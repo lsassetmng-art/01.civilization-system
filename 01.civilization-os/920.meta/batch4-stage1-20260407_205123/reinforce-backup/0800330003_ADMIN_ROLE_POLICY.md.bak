@@ -1,0 +1,21 @@
+# ============================================================
+# ADMIN ROLE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: admin
+scope: admin.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related policy behavior for admin.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

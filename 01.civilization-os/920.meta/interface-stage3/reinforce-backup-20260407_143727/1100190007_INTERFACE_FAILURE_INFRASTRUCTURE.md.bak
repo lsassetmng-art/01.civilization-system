@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: interface
+scope: interface.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior.
+
+failure_codes:
+- INTERFACE_INFRASTRUCTURE_ROUTE_ERROR
+- INTERFACE_INFRASTRUCTURE_ACTOR_ERROR
+- INTERFACE_INFRASTRUCTURE_VALIDATION_ERROR
+- INTERFACE_INFRASTRUCTURE_TARGET_ERROR

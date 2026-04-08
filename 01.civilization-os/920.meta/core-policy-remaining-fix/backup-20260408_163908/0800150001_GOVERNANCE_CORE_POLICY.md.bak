@@ -1,0 +1,54 @@
+# ============================================================
+# GOVERNANCE CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: governance
+scope: governance.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for governance.
+
+## policy_rules
+Governance policy constrains:
+- who may decide
+- who may review
+- who may oversee or escalate
+- what governance detail may be disclosed
+- when governance paths must be denied or escalated
+
+## required_behavior
+- decision scope must be explicit
+- review/oversight scope must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- public governance summary
+- operator-scoped detail
+- reviewer/oversight detail
+- historical governance detail
+- denied output
+
+## allowed_denied_matrix
+- allow governance action only for valid role scope
+- allow disclosure only for allowed actors
+- deny hidden role merging between decision and review
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If governance context,
+role separation,
+oversight scope,
+or disclosure scope is unclear,
+the governance path must stop and escalate.
+
+## review_checklist
+- decision policy is explicit
+- oversight policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit

@@ -1,0 +1,18 @@
+# ============================================================
+# MAP ACTIVITY RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: map
+scope: map.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related runtime behavior for map.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

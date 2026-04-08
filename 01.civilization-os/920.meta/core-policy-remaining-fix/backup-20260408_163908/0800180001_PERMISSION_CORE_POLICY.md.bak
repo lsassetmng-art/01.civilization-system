@@ -1,0 +1,53 @@
+# ============================================================
+# PERMISSION CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: permission
+scope: permission.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for permission.
+
+## policy_rules
+Permission policy constrains:
+- who may grant or revoke permission
+- how delegation works
+- what permission detail may be disclosed
+- when permission paths must be denied or escalated
+
+## required_behavior
+- grant/revoke scope must be explicit
+- delegation scope must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- public permission summary
+- holder-scoped detail
+- operator/reviewer detail
+- historical permission detail
+- denied output
+
+## allowed_denied_matrix
+- allow permission action only for valid scope
+- allow disclosure only for allowed actors
+- deny hidden widening through delegation
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If permission basis,
+grant/revoke scope,
+delegation scope,
+or disclosure scope is unclear,
+the permission path must stop and escalate.
+
+## review_checklist
+- grant/revoke policy is explicit
+- delegation policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit

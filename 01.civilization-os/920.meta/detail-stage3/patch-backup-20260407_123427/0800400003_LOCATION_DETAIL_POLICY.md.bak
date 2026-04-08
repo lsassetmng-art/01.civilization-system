@@ -1,0 +1,30 @@
+# ============================================================
+# LOCATION DETAIL POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: detail
+subdomain: location-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines policy rules for location detail.
+
+policy_focus:
+- open versus restricted zone disclosure
+- historical layout retention
+- facility-internal access disclosure limits
+- closure-state disclosure rules
+
+disclosure_matrix:
+- open_zone: public allowed
+- facility_internal: internal only
+- restricted_zone: public denied
+- historical_layout: history mode only
+
+validation_rules:
+- restricted or closed zones must not be classified as open public detail.
+- historical layouts must remain labeled as historical.

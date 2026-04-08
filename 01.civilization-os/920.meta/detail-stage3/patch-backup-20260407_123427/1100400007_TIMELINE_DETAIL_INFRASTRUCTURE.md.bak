@@ -1,0 +1,30 @@
+# ============================================================
+# TIMELINE DETAIL INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines infrastructure support for timeline detail.
+
+infrastructure_focus:
+- milestone-chain retrieval
+- replay retrieval path
+- historical sequence indexing
+- current versus replay cache separation
+
+retrieval_modes:
+- current_progression
+- historical_replay
+- cancelled_history
+- audit_trace
+
+failure_codes:
+- TIMELINE_DETAIL_INFRA_CHAIN_INDEX_MISSING
+- TIMELINE_DETAIL_INFRA_REPLAY_PATH_CONFLICT

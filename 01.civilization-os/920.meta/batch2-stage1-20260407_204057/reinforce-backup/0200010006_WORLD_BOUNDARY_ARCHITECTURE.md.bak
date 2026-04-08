@@ -1,0 +1,18 @@
+# ============================================================
+# WORLD BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: world
+scope: world.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines authority and operational boundary for world.
+
+required_behavior:
+- authority basis must be explicit
+- hidden boundary crossing is prohibited

@@ -1,0 +1,98 @@
+# ============================================================
+# 1300190002 INTERFACE ROUTE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: interface
+scope: 1300190002.interface.route.development
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines development rules for 1300190002 INTERFACE ROUTE DEVELOPMENT inside 019.interface.
+
+## scope
+Development covers design intent,
+implementation intent,
+test intent,
+review intent,
+and migration-safe change handling.
+
+## screen_test_scenarios
+- read-only screen render
+- actionable screen dispatch
+- masked output render
+- safe failure render
+
+## route_test_scenarios
+- valid route
+- invalid route
+- unauthorized route
+- missing target binding
+
+## validation_rules
+- actor validation test exists
+- route validation test exists
+- target validation test exists
+- output-scope validation test exists
+
+## failure_code_checklist
+- route error
+- actor error
+- validation error
+- binding error
+- safe fallback error
+
+## review_checklist
+- screen-to-service relation is explicit
+- actor matrix is explicit
+- route table is explicit
+- validation checklist is explicit
+- failure checklist is explicit
+
+## migration_rules
+Migration must preserve route meaning,
+actor meaning,
+screen meaning,
+and failure behavior.
+
+## done_definition
+This document is complete when
+the team can build,
+test,
+review,
+and evolve the interface subject
+without inventing missing intent.
+
+## state_model
+Development must distinguish
+design intent,
+implementation intent,
+test intent,
+review intent,
+and migration intent.
+
+## actor_matrix
+- designer defines bounded behavior
+- implementer realizes explicit route logic
+- tester validates actor and route distinctions
+- reviewer checks semantic drift
+- migration owner preserves compatibility
+
+## review_notes
+Development completeness requires
+test clarity,
+review clarity,
+migration clarity,
+and bounded-change clarity.
+
+## acceptance_criteria
+The subject is accepted only when
+route behavior,
+actor behavior,
+validation behavior,
+screen behavior,
+and failure behavior
+are all testable and reviewable.

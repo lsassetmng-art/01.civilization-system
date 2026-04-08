@@ -1,0 +1,20 @@
+# ============================================================
+# VOTE VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: vote
+scope: vote.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for vote.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

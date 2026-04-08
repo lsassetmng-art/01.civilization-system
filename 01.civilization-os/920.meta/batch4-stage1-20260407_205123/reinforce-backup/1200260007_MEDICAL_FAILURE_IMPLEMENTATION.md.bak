@@ -1,0 +1,20 @@
+# ============================================================
+# MEDICAL FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: medical
+scope: medical.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for medical.
+
+failure_codes:
+- MEDICAL_IMPLEMENTATION_IDENTITY_ERROR
+- MEDICAL_IMPLEMENTATION_ROLE_ERROR
+- MEDICAL_IMPLEMENTATION_ACTIVITY_ERROR
+- MEDICAL_IMPLEMENTATION_BOUNDARY_ERROR

@@ -1,0 +1,31 @@
+# ============================================================
+# TIMELINE DETAIL SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines security rules for timeline detail.
+
+security_focus:
+- current versus replay access control
+- cancellation-trace restriction
+- milestone-history access control
+- sealed timeline-trace access control
+
+actor_matrix:
+- current_viewer -> current progression only
+- history_viewer -> historical replay as authorized
+- audit -> cancelled and sealed trace as authorized
+- public -> no restricted replay trace
+
+failure_codes:
+- TIMELINE_DETAIL_SECURITY_SCOPE_DENIED
+- TIMELINE_DETAIL_SECURITY_REPLAY_SCOPE_DENIED
+- TIMELINE_DETAIL_SECURITY_CANCEL_TRACE_DENIED

@@ -1,0 +1,21 @@
+# ============================================================
+# FAMILY CORE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: family
+scope: family.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core flow behavior for family.
+
+required_behavior:
+- identity must remain explicit
+- role handling must remain explicit
+- activity handling must remain explicit
+- boundary handling must remain explicit
+- validation and failure must remain explicit

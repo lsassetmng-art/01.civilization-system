@@ -1,0 +1,20 @@
+# ============================================================
+# TIME FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: time
+scope: time.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for time.
+
+failure_codes:
+- TIME_DEVELOPMENT_IDENTITY_ERROR
+- TIME_DEVELOPMENT_ROLE_ERROR
+- TIME_DEVELOPMENT_ACTIVITY_ERROR
+- TIME_DEVELOPMENT_BOUNDARY_ERROR

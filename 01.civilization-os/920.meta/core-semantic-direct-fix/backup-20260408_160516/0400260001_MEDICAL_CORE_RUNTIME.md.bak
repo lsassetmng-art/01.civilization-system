@@ -1,0 +1,40 @@
+# ============================================================
+# MEDICAL CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: medical
+scope: medical.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for medical.
+
+## runtime_scope
+Runtime covers condition visibility,
+intervention state,
+recovery state,
+historical medical reference,
+and safe failure rendering.
+
+## validation_rules
+- medical context must resolve
+- assessment/intervention basis must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid medical context
+- invalid intervention basis
+- invalid disclosure scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish condition state,
+intervention state,
+recovery state,
+historical reference,
+and failure surface.

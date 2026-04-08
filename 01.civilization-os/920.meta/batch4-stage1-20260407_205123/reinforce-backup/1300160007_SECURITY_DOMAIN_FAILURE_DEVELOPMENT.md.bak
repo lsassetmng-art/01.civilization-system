@@ -1,0 +1,20 @@
+# ============================================================
+# SECURITY_DOMAIN FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: security
+scope: security.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for security.
+
+failure_codes:
+- SECURITY_DOMAIN_DEVELOPMENT_IDENTITY_ERROR
+- SECURITY_DOMAIN_DEVELOPMENT_ROLE_ERROR
+- SECURITY_DOMAIN_DEVELOPMENT_ACTIVITY_ERROR
+- SECURITY_DOMAIN_DEVELOPMENT_BOUNDARY_ERROR

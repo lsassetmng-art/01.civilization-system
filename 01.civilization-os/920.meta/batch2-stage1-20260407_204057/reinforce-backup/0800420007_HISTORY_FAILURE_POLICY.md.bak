@@ -1,0 +1,20 @@
+# ============================================================
+# HISTORY FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: history
+scope: history.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for history.
+
+failure_codes:
+- HISTORY_POLICY_IDENTITY_ERROR
+- HISTORY_POLICY_ROLE_ERROR
+- HISTORY_POLICY_ACTIVITY_ERROR
+- HISTORY_POLICY_BOUNDARY_ERROR

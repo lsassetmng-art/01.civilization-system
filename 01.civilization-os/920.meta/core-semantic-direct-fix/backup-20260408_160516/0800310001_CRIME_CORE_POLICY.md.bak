@@ -1,0 +1,19 @@
+# ============================================================
+# CRIME CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: crime
+scope: crime.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for crime.
+
+## policy_rules
+Crime policy constrains:
+- who may observe, investigate, review, or disclose crime detail
+- when crime paths must be denied or escalated

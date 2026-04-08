@@ -1,0 +1,25 @@
+# ============================================================
+# RELATIONSHIP DETAIL DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: detail
+subdomain: relationship-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines development guidance for relationship detail.
+
+test_focus:
+- subject/object binding
+- trust-detail masking
+- broken-state historical delivery
+- forged-authority rejection
+- public versus internal projection separation
+
+anti_patterns:
+- public output carrying internal trust nuance
+- broken relations returned as active current relations

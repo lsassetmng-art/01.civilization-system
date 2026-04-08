@@ -1,0 +1,25 @@
+# ============================================================
+# TIMELINE DETAIL DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines development guidance for timeline detail.
+
+test_focus:
+- milestone ordering
+- current versus historical mode split
+- cancellation handling
+- duplicate active milestone rejection
+- replay-path separation
+
+anti_patterns:
+- historical replay using current-active selector
+- cancelled stages exposed as current progression

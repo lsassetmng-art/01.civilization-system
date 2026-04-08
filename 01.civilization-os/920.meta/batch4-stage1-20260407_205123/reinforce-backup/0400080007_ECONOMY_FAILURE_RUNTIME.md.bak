@@ -1,0 +1,20 @@
+# ============================================================
+# ECONOMY FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: economy
+scope: economy.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for economy.
+
+failure_codes:
+- ECONOMY_RUNTIME_IDENTITY_ERROR
+- ECONOMY_RUNTIME_ROLE_ERROR
+- ECONOMY_RUNTIME_ACTIVITY_ERROR
+- ECONOMY_RUNTIME_BOUNDARY_ERROR

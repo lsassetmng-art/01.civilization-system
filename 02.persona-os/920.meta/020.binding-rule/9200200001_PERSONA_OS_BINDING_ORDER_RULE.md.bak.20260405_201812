@@ -1,0 +1,119 @@
+# ============================================================
+# PERSONA OS BINDING ORDER RULE
+# ============================================================
+
+status: canonical
+layer: meta
+domain: binding-order
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the fixed chapter order
+for PersonaOS integrated binding output.
+
+# ============================================================
+# 1. FIXED LAYER ORDER
+# ============================================================
+
+The binding order must follow:
+
+010.constitution
+020.architecture
+030.model
+040.runtime
+050.flow
+060.integration
+070.operations
+080.policy
+090.interface
+100.security
+110.infrastructure
+120.implementation
+130.development
+
+# ============================================================
+# 2. FIXED DOMAIN ORDER
+# ============================================================
+
+Within each layer, the fixed domain order must be:
+
+010.core
+020.identity
+030.state
+040.memory
+050.growth
+060.builder
+070.visual
+080.runtime-hosting
+090.snapshot
+100.package
+110.distribution
+120.external-rights
+130.access-license-transfer
+140.integration
+150.security
+160.governance
+170.operations-support
+
+# ============================================================
+# 3. FILE ORDER INSIDE EACH DOMAIN
+# ============================================================
+
+Inside each domain folder, files must be ordered by filename sort.
+
+Rule:
+- index first if present
+- overview second if present
+- remaining files in filename sort order
+
+# ============================================================
+# 4. BINDING INCLUSION RULE
+# ============================================================
+
+The integrated binding output must include:
+
+- top-level layer overview/index files
+- domain index files
+- domain overview files
+- domain canonical files
+
+The integrated binding output must exclude:
+
+- 999.archive
+- 999.dump
+- temporary files
+- *.moved.bak
+- ad hoc review outputs unless explicitly requested
+
+# ============================================================
+# 5. META INCLUSION RULE
+# ============================================================
+
+920.meta files are not included by default in the main canonical binding.
+
+Exception:
+Meta files may be included only when creating:
+- review bundle
+- migration bundle
+- design map bundle
+
+# ============================================================
+# 6. OFFICIAL CANONICAL BINDING PATH
+# ============================================================
+
+The main canonical integrated reading path is:
+
+010.constitution -> 020.architecture -> 030.model -> 040.runtime -> 050.flow -> 060.integration -> 070.operations -> 080.policy -> 090.interface -> 100.security -> 110.infrastructure -> 120.implementation -> 130.development
+
+# ============================================================
+# 7. STABILITY RULE
+# ============================================================
+
+Once a binding order is fixed,
+new documents must be inserted by layer and domain,
+not by ad hoc narrative order.
+
+If a new file cannot be placed clearly,
+the design is incomplete and must be reviewed first.

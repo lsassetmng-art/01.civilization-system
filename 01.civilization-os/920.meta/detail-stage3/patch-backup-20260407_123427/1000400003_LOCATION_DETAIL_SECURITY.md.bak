@@ -1,0 +1,31 @@
+# ============================================================
+# LOCATION DETAIL SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: detail
+subdomain: location-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines security rules for location detail.
+
+security_focus:
+- restricted-zone blocking
+- facility-internal detail masking
+- historical layout access control
+- closure-state disclosure control
+
+actor_matrix:
+- public -> open_zone only
+- internal -> facility_internal as authorized
+- restricted_operator -> restricted_zone as authorized
+- audit -> historical_layout as authorized
+
+failure_codes:
+- LOCATION_DETAIL_SECURITY_SCOPE_DENIED
+- LOCATION_DETAIL_SECURITY_RESTRICTED_ZONE_DENIED
+- LOCATION_DETAIL_SECURITY_HISTORY_DENIED

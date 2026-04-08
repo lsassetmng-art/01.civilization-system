@@ -1,0 +1,18 @@
+# ============================================================
+# ASSET ACTIVITY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: asset
+scope: asset.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related security behavior for asset.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

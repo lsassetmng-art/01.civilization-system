@@ -1,0 +1,20 @@
+# ============================================================
+# IDENTITY ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: identity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200170001_IDENTITY_CORE_ARCHITECTURE.md
+- 0200170002_IDENTITY_OVERVIEW_ARCHITECTURE.md
+- 0200170003_IDENTITY_ENTITY_ARCHITECTURE.md
+- 0200170004_IDENTITY_ROLE_ARCHITECTURE.md
+- 0200170005_IDENTITY_ACTIVITY_ARCHITECTURE.md
+- 0200170006_IDENTITY_BOUNDARY_ARCHITECTURE.md
+- 0200170007_IDENTITY_VALIDATION_ARCHITECTURE.md
+- 0200170008_IDENTITY_FAILURE_ARCHITECTURE.md

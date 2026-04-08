@@ -1,0 +1,20 @@
+# ============================================================
+# RELATIONSHIP FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: relationship
+scope: relationship.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for relationship.
+
+failure_codes:
+- RELATIONSHIP_INFRASTRUCTURE_IDENTITY_ERROR
+- RELATIONSHIP_INFRASTRUCTURE_ROLE_ERROR
+- RELATIONSHIP_INFRASTRUCTURE_ACTIVITY_ERROR
+- RELATIONSHIP_INFRASTRUCTURE_BOUNDARY_ERROR

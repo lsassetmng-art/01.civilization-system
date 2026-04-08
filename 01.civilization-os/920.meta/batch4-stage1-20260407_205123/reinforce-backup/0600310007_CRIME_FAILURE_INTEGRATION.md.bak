@@ -1,0 +1,20 @@
+# ============================================================
+# CRIME FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: crime
+scope: crime.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for crime.
+
+failure_codes:
+- CRIME_INTEGRATION_IDENTITY_ERROR
+- CRIME_INTEGRATION_ROLE_ERROR
+- CRIME_INTEGRATION_ACTIVITY_ERROR
+- CRIME_INTEGRATION_BOUNDARY_ERROR

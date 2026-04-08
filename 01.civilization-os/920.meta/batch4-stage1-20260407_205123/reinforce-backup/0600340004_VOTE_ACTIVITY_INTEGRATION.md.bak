@@ -1,0 +1,18 @@
+# ============================================================
+# VOTE ACTIVITY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: vote
+scope: vote.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related integration behavior for vote.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

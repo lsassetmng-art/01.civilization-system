@@ -1,0 +1,18 @@
+# ============================================================
+# ITEM FAILURE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: item
+scope: item.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure architecture for item.
+
+required_behavior:
+- failure outputs must be bounded
+- denial and review states must be explicit

@@ -1,0 +1,18 @@
+# ============================================================
+# SKILL ACTIVITY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: skill
+scope: skill.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related implementation behavior for skill.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

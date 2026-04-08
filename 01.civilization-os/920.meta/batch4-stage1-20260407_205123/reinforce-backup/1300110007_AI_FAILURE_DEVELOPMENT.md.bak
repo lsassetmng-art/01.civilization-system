@@ -1,0 +1,20 @@
+# ============================================================
+# AI FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: ai
+scope: ai.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for ai.
+
+failure_codes:
+- AI_DEVELOPMENT_IDENTITY_ERROR
+- AI_DEVELOPMENT_ROLE_ERROR
+- AI_DEVELOPMENT_ACTIVITY_ERROR
+- AI_DEVELOPMENT_BOUNDARY_ERROR

@@ -1,0 +1,20 @@
+# ============================================================
+# TRANSPORT FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: transport
+scope: transport.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for transport.
+
+failure_codes:
+- TRANSPORT_DEVELOPMENT_IDENTITY_ERROR
+- TRANSPORT_DEVELOPMENT_ROLE_ERROR
+- TRANSPORT_DEVELOPMENT_ACTIVITY_ERROR
+- TRANSPORT_DEVELOPMENT_BOUNDARY_ERROR

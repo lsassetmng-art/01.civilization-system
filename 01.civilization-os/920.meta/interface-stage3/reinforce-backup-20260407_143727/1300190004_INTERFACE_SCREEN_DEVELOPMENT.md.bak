@@ -1,0 +1,18 @@
+# ============================================================
+# INTERFACE SCREEN DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: interface
+scope: interface.screen
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines screen-related development behavior.
+
+screen_to_service_relation:
+Every actionable screen must declare
+its route and service target.

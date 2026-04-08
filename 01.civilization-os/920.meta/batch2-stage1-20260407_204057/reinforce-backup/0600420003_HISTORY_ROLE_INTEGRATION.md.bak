@@ -1,0 +1,21 @@
+# ============================================================
+# HISTORY ROLE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: history
+scope: history.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related integration behavior for history.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

@@ -1,0 +1,20 @@
+# ============================================================
+# FINANCE FAILURE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: finance
+scope: finance.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related flow behavior for finance.
+
+failure_codes:
+- FINANCE_FLOW_IDENTITY_ERROR
+- FINANCE_FLOW_ROLE_ERROR
+- FINANCE_FLOW_ACTIVITY_ERROR
+- FINANCE_FLOW_BOUNDARY_ERROR

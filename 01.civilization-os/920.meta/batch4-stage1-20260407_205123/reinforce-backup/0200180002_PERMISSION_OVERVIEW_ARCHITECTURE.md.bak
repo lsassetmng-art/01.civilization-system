@@ -1,0 +1,22 @@
+# ============================================================
+# PERMISSION OVERVIEW ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: permission
+scope: permission.overview
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the overview structure for 018.permission.
+
+required_behavior:
+- overview must explain identity,
+  role,
+  activity,
+  boundary,
+  validation,
+  and failure topics.

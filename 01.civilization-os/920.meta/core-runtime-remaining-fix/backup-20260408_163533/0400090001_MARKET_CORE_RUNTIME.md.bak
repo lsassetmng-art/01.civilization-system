@@ -1,0 +1,76 @@
+# ============================================================
+# MARKET CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: market
+scope: market.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for market.
+
+## runtime_scope
+Runtime covers listing visibility,
+search/browse exposure,
+state-aware display,
+bounded participation actions,
+and safe failure rendering.
+
+## current_view_state
+Runtime-visible market state must distinguish:
+- currently visible listings
+- restricted listings
+- hidden listings
+- historical listings
+- closed listings
+
+## transition_rules
+Runtime transitions move through:
+entry,
+identity resolution,
+listing-state resolution,
+validation,
+visibility/render execution,
+and bounded failure handling.
+
+## projection_rules
+Runtime may present rankings,
+sorting,
+or highlighted exposure,
+but these must not overwrite source truth.
+
+## masking_rules
+Masked listings and masked market outputs
+must remain identifiable as masked.
+
+## validation_rules
+- source identity must resolve
+- listing authority must resolve
+- market state must resolve
+- viewer scope must be valid
+- policy scope must be valid
+
+## failure_modes
+- invalid listing identity
+- invalid visibility state
+- invalid viewer scope
+- policy conflict
+- safe render fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish listing state,
+source relation,
+validation result,
+visibility result,
+and failure surface.
+
+## review_checklist
+- visibility states are explicit
+- projection limits are explicit
+- validation gating is explicit
+- failure handling is explicit

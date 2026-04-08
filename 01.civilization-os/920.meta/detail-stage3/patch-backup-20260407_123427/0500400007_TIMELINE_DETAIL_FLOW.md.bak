@@ -1,0 +1,82 @@
+# ============================================================
+# TIMELINE DETAIL FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the process flow for timeline detail handling.
+
+scope:
+Covers timeline request, milestone selection,
+progression-stage evaluation, temporal validation,
+current progression delivery, cancellation branching,
+and historical replay flow.
+
+flow_intent:
+Timeline detail flow ensures that local event progression
+is delivered in a time-correct and lifecycle-safe sequence.
+
+canonical_rules:
+- Timeline detail flow must start with target_ref.
+- Milestone order must remain temporally coherent.
+- Active and historical timeline outputs must remain separated by mode.
+- Duplicate active milestones in the same scope must be rejected.
+
+required_behavior:
+- Bind timeline context.
+- Resolve timeline detail candidates.
+- Validate ordering and stage coherence.
+- Deliver current progression or historical replay output.
+- Support completed, cancelled, and historical branches.
+
+flow_state_model:
+timeline_detail_flow_state:
+- requested
+- target_bound
+- detail_resolved
+- milestone_selected
+- validated
+- current_delivered
+- cancelled_delivered
+- historical_delivered
+- rejected
+
+current_progression_sequence:
+1. receive timeline request
+2. bind target_ref
+3. resolve active timeline detail
+4. select milestone and progression stage
+5. validate temporal order
+6. deliver current progression output
+
+historical_replay_sequence:
+1. receive historical replay request
+2. bind target_ref
+3. resolve completed and historical detail
+4. validate milestone chain
+5. deliver replay-safe output
+
+cancellation_sequence:
+1. active milestone cancelled
+2. cancellation state recorded
+3. current delivery removed where required
+4. historical trace preserved
+
+failure_codes:
+- TIMELINE_DETAIL_FLOW_TARGET_REF_MISSING
+- TIMELINE_DETAIL_FLOW_MILESTONE_INVALID
+- TIMELINE_DETAIL_FLOW_TEMPORAL_ORDER_INVALID
+- TIMELINE_DETAIL_FLOW_DUPLICATE_ACTIVE
+- TIMELINE_DETAIL_FLOW_MODE_CONFLICT
+
+example_scenarios:
+- A life-event viewer receives the current active stage only.
+- A replay viewer receives completed milestones in order.
+- A cancelled work-stage is excluded from current execution output but preserved in history.

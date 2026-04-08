@@ -1,0 +1,21 @@
+# ============================================================
+# CULTURE ROLE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: culture
+scope: culture.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related operations behavior for culture.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

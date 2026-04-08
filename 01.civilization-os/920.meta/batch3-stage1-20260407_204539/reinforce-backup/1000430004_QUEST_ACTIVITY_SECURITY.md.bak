@@ -1,0 +1,18 @@
+# ============================================================
+# QUEST ACTIVITY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: quest
+scope: quest.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related security behavior for quest.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

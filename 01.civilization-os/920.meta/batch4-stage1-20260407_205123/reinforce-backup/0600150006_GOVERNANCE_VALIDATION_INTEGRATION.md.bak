@@ -1,0 +1,20 @@
+# ============================================================
+# GOVERNANCE VALIDATION INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: governance
+scope: governance.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related integration behavior for governance.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

@@ -1,0 +1,18 @@
+# ============================================================
+# COMPANY FAILURE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: company
+scope: company.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure architecture for company.
+
+required_behavior:
+- failure outputs must be bounded
+- denial and review states must be explicit

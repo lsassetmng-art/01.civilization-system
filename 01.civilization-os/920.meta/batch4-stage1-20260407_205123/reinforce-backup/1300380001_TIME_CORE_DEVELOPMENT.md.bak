@@ -1,0 +1,21 @@
+# ============================================================
+# TIME CORE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: time
+scope: time.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core development behavior for time.
+
+required_behavior:
+- identity must remain explicit
+- role handling must remain explicit
+- activity handling must remain explicit
+- boundary handling must remain explicit
+- validation and failure must remain explicit

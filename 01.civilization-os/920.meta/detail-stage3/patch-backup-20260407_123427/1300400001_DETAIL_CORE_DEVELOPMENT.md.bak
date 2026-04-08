@@ -1,0 +1,50 @@
+# ============================================================
+# DETAIL CORE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines development guidance for detail implementation.
+
+development_rules:
+- Do not place canonical meaning in UI-only code.
+- Do not bypass detail validation.
+- Do not bypass visibility filtering.
+- Do not collapse historical and current modes.
+- Do not silently overwrite prior active detail.
+- Do not merge public and restricted delivery logic without explicit filtering.
+- Add explicit tests for fail-closed behavior.
+
+test_matrix:
+- target binding -> required
+- visibility masking -> required
+- lifecycle selection -> required
+- revision linkage -> required
+- historical retrieval -> required
+- rejection paths -> required
+- sealed scope denial -> required
+- cache invalidation behavior -> recommended
+
+anti_patterns:
+- free-form text as hidden canonical truth
+- UI component deciding visibility scope
+- historical replay using active-delivery path
+- silent fallback from restricted to public data
+
+review_checklist:
+- target_ref present
+- visibility rules enforced
+- current and history separated
+- revision chain preserved
+- failure code emitted
+- trace emitted where required
+
+example_scenarios:
+- A new detail handler includes validation, masking, and history-mode tests.
+- A pull request is rejected because it moves semantic filtering into the UI layer.

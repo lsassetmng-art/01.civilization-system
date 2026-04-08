@@ -1,0 +1,20 @@
+# ============================================================
+# HISTORY FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: history
+scope: history.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for history.
+
+failure_codes:
+- HISTORY_DEVELOPMENT_IDENTITY_ERROR
+- HISTORY_DEVELOPMENT_ROLE_ERROR
+- HISTORY_DEVELOPMENT_ACTIVITY_ERROR
+- HISTORY_DEVELOPMENT_BOUNDARY_ERROR

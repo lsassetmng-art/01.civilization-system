@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD VALIDATION OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: world
+scope: world.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related operations behavior for world.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

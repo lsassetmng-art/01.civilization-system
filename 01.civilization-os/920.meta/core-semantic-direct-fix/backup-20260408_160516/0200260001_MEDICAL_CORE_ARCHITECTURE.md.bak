@@ -1,0 +1,58 @@
+# ============================================================
+# MEDICAL CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: medical
+scope: medical.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of medical in CivilizationOS.
+
+## design_intent
+Medical is the bounded health-state structure
+through which condition,
+assessment,
+intervention,
+recovery,
+restriction,
+and clinical history
+become meaningful.
+
+## architectural_position
+Medical sits between:
+- life continuity
+- body/condition state
+- intervention and care
+- work/family/housing consequence
+- historical health trace
+
+## required_behavior
+- medical context must remain explicit
+- assessment/intervention basis must remain explicit
+- current and historical medical states must remain distinguishable
+- restriction and recovery meaning must remain explicit
+
+## canonical_rules
+- assessment does not imply unrestricted disclosure
+- intervention does not overwrite historical trace
+- ambiguous medical scope fails closed
+
+## state_model
+The medical domain distinguishes:
+- observed condition
+- assessed condition
+- active intervention
+- restricted condition
+- recovery state
+- historical medical state
+
+## review_checklist
+- medical context is explicit
+- intervention basis is explicit
+- recovery/restriction meaning is explicit
+- historical distinction is explicit

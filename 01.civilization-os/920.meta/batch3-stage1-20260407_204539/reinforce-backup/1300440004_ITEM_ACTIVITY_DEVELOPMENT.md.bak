@@ -1,0 +1,18 @@
+# ============================================================
+# ITEM ACTIVITY DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: item
+scope: item.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related development behavior for item.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

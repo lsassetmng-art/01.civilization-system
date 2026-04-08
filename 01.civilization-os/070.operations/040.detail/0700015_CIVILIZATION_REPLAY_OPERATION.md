@@ -3,25 +3,99 @@
 # ============================================================
 
 status: canonical
-layer: 070.operations
+layer: operations
+domain: detail
+scope: 0700015.civilization.replay.operation
 system: civilization-os
 owner: Boss
 prepared_by: Zero
 
-purpose:
-Define operational handling for replay execution.
+## purpose
+Defines the operational management rule for CIVILIZATION REPLAY OPERATION
+in the 040.detail domain.
 
-operation_steps:
-1 verify replay approval if required
-2 verify replay target and idempotency basis
-3 invoke replay coordination runtime
-4 persist replay result
-5 preserve traceability and operator visibility
+## operational_scope
+Operations covers execution review,
+retry handling,
+dead-letter handling,
+approval review,
+audit reconstruction,
+and replay support
+when those paths are relevant.
 
-success_condition:
-- replay executed once safely
+## required_behavior
+- operational checkpoints must be explicit
+- retry must remain bounded
+- replay must remain reviewable
+- approval must not bypass policy
+- dead-letter handling must preserve evidence
 
-failure_condition:
-- replay target invalid
-- idempotency basis missing
-- replay result not persisted
+## runbook
+1. identify subject and mode
+2. confirm authority boundary
+3. inspect validation outcome
+4. route to retry/replay/review only if allowed
+5. preserve audit evidence
+6. close with explicit status
+
+## retry_rules
+Retry may occur only for retry-eligible failures
+and must remain bounded,
+visible,
+and non-destructive.
+
+## escalation_rules
+Failures that imply authority ambiguity,
+compatibility ambiguity,
+or policy ambiguity
+must escalate to review rather than self-heal.
+
+## audit_requirements
+Operational handling must preserve
+enough evidence to reconstruct
+the effective path and decision taken.
+
+## failure_codes
+- DETAIL_OP_RETRY_LIMIT
+- DETAIL_OP_ESCALATION_REQUIRED
+- DETAIL_OP_REPLAY_REVIEW_REQUIRED
+- DETAIL_OP_APPROVAL_BLOCKED
+- DETAIL_OP_AUDIT_GAP
+
+## review_checklist
+- runbook is explicit
+- retry boundary is explicit
+- escalation path is explicit
+- audit evidence is explicit
+- closure status is explicit
+
+## state_model
+Operations must distinguish
+normal execution,
+retry execution,
+dead-letter state,
+approval review state,
+audit reconstruction state,
+and replay review state.
+
+## transition_rules
+Operational transitions must preserve
+failure reason,
+review status,
+retry eligibility,
+and audit continuity.
+No transition may silently discard evidence.
+
+## actor_matrix
+- operator observes and routes operational state
+- reviewer approves or denies gated handling
+- auditor reconstructs prior execution meaning
+- replay reviewer inspects replay-safe traces
+- escalation owner resolves ambiguous failures
+
+## review_notes
+Operational completeness requires
+runbook clarity,
+retry clarity,
+dead-letter clarity,
+and audit/replay clarity.

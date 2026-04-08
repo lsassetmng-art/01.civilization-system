@@ -1,0 +1,18 @@
+# ============================================================
+# INVENTORY ACTIVITY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: inventory
+scope: inventory.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related flow behavior for inventory.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

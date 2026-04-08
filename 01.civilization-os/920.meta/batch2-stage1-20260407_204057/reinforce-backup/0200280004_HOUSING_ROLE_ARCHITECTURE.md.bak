@@ -1,0 +1,21 @@
+# ============================================================
+# HOUSING ROLE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: housing
+scope: housing.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role structure for housing.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

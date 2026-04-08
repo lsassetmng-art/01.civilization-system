@@ -1,0 +1,20 @@
+# ============================================================
+# HOUSING FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: housing
+scope: housing.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for housing.
+
+failure_codes:
+- HOUSING_OPERATIONS_IDENTITY_ERROR
+- HOUSING_OPERATIONS_ROLE_ERROR
+- HOUSING_OPERATIONS_ACTIVITY_ERROR
+- HOUSING_OPERATIONS_BOUNDARY_ERROR

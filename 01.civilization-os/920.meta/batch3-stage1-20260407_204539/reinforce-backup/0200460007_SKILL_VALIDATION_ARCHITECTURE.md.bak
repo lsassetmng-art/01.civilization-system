@@ -1,0 +1,20 @@
+# ============================================================
+# SKILL VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: skill
+scope: skill.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for skill.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

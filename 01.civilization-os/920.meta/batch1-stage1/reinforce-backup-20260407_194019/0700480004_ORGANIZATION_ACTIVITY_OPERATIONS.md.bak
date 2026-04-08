@@ -1,0 +1,18 @@
+# ============================================================
+# ORGANIZATION ACTIVITY OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: organization
+scope: organization.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related operations behavior for organization.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

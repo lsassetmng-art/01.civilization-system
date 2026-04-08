@@ -1,0 +1,18 @@
+# ============================================================
+# LIFE ENTITY INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: life
+scope: life.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related infrastructure behavior for life.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

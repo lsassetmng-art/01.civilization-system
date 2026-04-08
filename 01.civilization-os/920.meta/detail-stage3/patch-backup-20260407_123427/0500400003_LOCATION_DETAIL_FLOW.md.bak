@@ -1,0 +1,73 @@
+# ============================================================
+# LOCATION DETAIL FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: detail
+subdomain: location-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the process flow for location detail handling.
+
+scope:
+Covers how location detail, zone detail,
+and access-condition detail are resolved and delivered.
+
+flow_intent:
+Location detail flow ensures that maps, facilities,
+and operational location consumers receive only context-valid detail.
+
+canonical_rules:
+- Location detail flow must start with location_ref.
+- Zone-level detail must remain scoped to a canonical location.
+- Access restrictions must be evaluated before exposure.
+- Historical location detail must not be mixed into active current output by default.
+
+required_behavior:
+- Bind location context.
+- Resolve zone and access-condition detail.
+- Validate zone scope and lifecycle.
+- Filter by access scope.
+- Deliver current or historical outputs.
+
+flow_state_model:
+location_detail_flow_state:
+- requested
+- location_bound
+- zone_resolved
+- validated
+- access_filtered
+- delivered
+- blocked
+- historical_delivered
+
+current_location_sequence:
+1. receive location detail request
+2. bind location_ref
+3. resolve active zone detail
+4. validate zone and lifecycle
+5. apply access filter
+6. deliver allowed detail
+
+historical_location_sequence:
+1. receive history-mode request
+2. bind location_ref
+3. resolve historical detail
+4. validate effective period
+5. apply historical access policy
+6. deliver historical detail
+
+failure_codes:
+- LOCATION_DETAIL_FLOW_LOCATION_REF_MISSING
+- LOCATION_DETAIL_FLOW_ZONE_SCOPE_INVALID
+- LOCATION_DETAIL_FLOW_ACCESS_DENIED
+- LOCATION_DETAIL_FLOW_HISTORICAL_CHAIN_INVALID
+
+example_scenarios:
+- Public map view receives open zone detail only.
+- Staff console receives restricted maintenance zone detail.
+- Historical viewer receives prior facility layout detail without affecting current map output.

@@ -1,0 +1,20 @@
+# ============================================================
+# IDENTITY FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: identity
+scope: identity.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for identity.
+
+failure_codes:
+- IDENTITY_INFRASTRUCTURE_IDENTITY_ERROR
+- IDENTITY_INFRASTRUCTURE_ROLE_ERROR
+- IDENTITY_INFRASTRUCTURE_ACTIVITY_ERROR
+- IDENTITY_INFRASTRUCTURE_BOUNDARY_ERROR

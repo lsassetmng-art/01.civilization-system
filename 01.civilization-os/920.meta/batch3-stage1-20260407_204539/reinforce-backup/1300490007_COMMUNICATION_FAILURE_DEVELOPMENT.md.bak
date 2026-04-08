@@ -1,0 +1,20 @@
+# ============================================================
+# COMMUNICATION FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: communication
+scope: communication.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for communication.
+
+failure_codes:
+- COMMUNICATION_DEVELOPMENT_IDENTITY_ERROR
+- COMMUNICATION_DEVELOPMENT_ROLE_ERROR
+- COMMUNICATION_DEVELOPMENT_ACTIVITY_ERROR
+- COMMUNICATION_DEVELOPMENT_BOUNDARY_ERROR

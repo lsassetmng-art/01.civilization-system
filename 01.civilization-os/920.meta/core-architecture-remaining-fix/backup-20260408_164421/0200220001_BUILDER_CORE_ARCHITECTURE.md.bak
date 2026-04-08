@@ -1,0 +1,80 @@
+# ============================================================
+# BUILDER CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: builder
+scope: builder.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of builder in CivilizationOS.
+
+## design_intent
+Builder is the bounded execution structure
+for creating,
+placing,
+configuring,
+assembling,
+or instantiating governed objects and environments.
+
+Builder is not merely a UI convenience.
+It is the formal path by which design intent
+becomes structured reality
+within world, nation, organization, housing, market,
+and other dependent domains.
+
+## architectural_position
+Builder sits between:
+- design intent
+- configuration intent
+- placement/construction intent
+- validation and policy gates
+- resulting domain objects
+
+## required_behavior
+- build intent must remain explicit
+- source template/configuration basis must remain explicit
+- actor authority must remain explicit
+- placement or construction boundary must remain explicit
+- current build state and historical build state must remain distinguishable
+
+## canonical_rules
+- builder must not invent authority
+- builder output must remain attributable
+- template/config source must remain explicit
+- failed build must not masquerade as completed build
+- ambiguous build boundary fails closed
+
+## state_model
+The builder domain distinguishes:
+- draft build
+- validated build
+- approved build
+- executing build
+- failed build
+- completed build
+- historical build
+
+## actor_boundary
+- builder owner
+- builder operator
+- reviewer
+- approver
+- adapter
+
+## decision_matrix
+- if template/config basis is missing, stop build
+- if actor authority is unclear, fail closed
+- if target boundary is invalid, deny execution
+- if build fails, preserve failure trace
+- if build completes, preserve attributable completion trace
+
+## review_checklist
+- build intent is explicit
+- template/config basis is explicit
+- execution boundary is explicit
+- lifecycle is explicit

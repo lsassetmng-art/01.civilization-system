@@ -1,0 +1,21 @@
+# ============================================================
+# VOTE ROLE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: vote
+scope: vote.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related flow behavior for vote.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

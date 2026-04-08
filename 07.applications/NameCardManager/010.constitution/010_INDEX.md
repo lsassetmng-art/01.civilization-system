@@ -2,7 +2,7 @@
 # 010 CONSTITUTION INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -12,3 +12,4 @@ prepared_by: Zero
 
 files:
 - 010_NAME_CARD_MANAGER_CONSTITUTION.md
+- 011_NAMECARDMANAGER_DEFINITION.md

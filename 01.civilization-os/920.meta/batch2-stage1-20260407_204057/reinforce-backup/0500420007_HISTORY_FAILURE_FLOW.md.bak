@@ -1,0 +1,20 @@
+# ============================================================
+# HISTORY FAILURE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: history
+scope: history.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related flow behavior for history.
+
+failure_codes:
+- HISTORY_FLOW_IDENTITY_ERROR
+- HISTORY_FLOW_ROLE_ERROR
+- HISTORY_FLOW_ACTIVITY_ERROR
+- HISTORY_FLOW_BOUNDARY_ERROR

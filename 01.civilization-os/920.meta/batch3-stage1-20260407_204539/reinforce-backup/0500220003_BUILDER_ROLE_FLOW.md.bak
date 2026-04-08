@@ -1,0 +1,21 @@
+# ============================================================
+# BUILDER ROLE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: builder
+scope: builder.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related flow behavior for builder.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

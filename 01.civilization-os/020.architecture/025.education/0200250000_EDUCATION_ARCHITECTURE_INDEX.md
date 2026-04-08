@@ -1,0 +1,20 @@
+# ============================================================
+# EDUCATION ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: education
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200250001_EDUCATION_CORE_ARCHITECTURE.md
+- 0200250002_EDUCATION_OVERVIEW_ARCHITECTURE.md
+- 0200250003_EDUCATION_ENTITY_ARCHITECTURE.md
+- 0200250004_EDUCATION_ROLE_ARCHITECTURE.md
+- 0200250005_EDUCATION_ACTIVITY_ARCHITECTURE.md
+- 0200250006_EDUCATION_BOUNDARY_ARCHITECTURE.md
+- 0200250007_EDUCATION_VALIDATION_ARCHITECTURE.md
+- 0200250008_EDUCATION_FAILURE_ARCHITECTURE.md

@@ -1,0 +1,22 @@
+# ============================================================
+# RELIGION OVERVIEW ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: religion
+scope: religion.overview
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the overview structure for 035.religion.
+
+required_behavior:
+- overview must explain identity,
+  role,
+  activity,
+  boundary,
+  validation,
+  and failure topics.

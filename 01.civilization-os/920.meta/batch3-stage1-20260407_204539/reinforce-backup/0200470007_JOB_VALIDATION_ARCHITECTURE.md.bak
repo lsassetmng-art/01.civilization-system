@@ -1,0 +1,20 @@
+# ============================================================
+# JOB VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: job
+scope: job.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for job.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

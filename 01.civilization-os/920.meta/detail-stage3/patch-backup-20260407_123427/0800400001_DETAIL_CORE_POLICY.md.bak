@@ -1,0 +1,79 @@
+# ============================================================
+# DETAIL CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core policy rules for detail records.
+
+scope:
+Covers disclosure, retention, revision,
+historical access, masking, and export boundaries.
+
+design_intent:
+The policy layer must define normative constraints
+that remain stable even when runtime or implementation changes.
+Detail policy exists to prevent accidental leakage,
+unsafe revision, and historical corruption.
+
+policy_classes:
+disclosure_class:
+- public
+- internal
+- restricted
+- sealed
+
+retention_class:
+- ephemeral
+- operational
+- historical
+- audit_mandatory
+
+revision_authority_class:
+- local_reviewer
+- domain_owner
+- high_trust_owner
+- audit_only
+
+policy_rules:
+- Public detail may be exported only in public-safe form.
+- Internal detail may be disclosed only to authorized internal consumers.
+- Restricted detail must be masked or blocked outside authority.
+- Sealed detail must require explicit high-trust approval.
+- Historical detail must remain labeled and separated from current-active detail.
+- Audit-mandatory detail must not be silently deleted.
+- Canonical detail overwrite without authorized path is prohibited.
+
+allowed_denied_matrix:
+- public -> public export allowed
+- public -> internal delivery allowed
+- internal -> public export denied unless projected summary exists
+- restricted -> public export denied
+- sealed -> all non-authorized export denied
+- historical -> current-active substitution denied
+- audit_mandatory -> silent deletion denied
+
+validation_rules:
+- disclosure_class is required.
+- retention_class is required.
+- revision authority must match requested change scope.
+- sealed detail must not be down-scoped without high-trust approval.
+- historical records must preserve historical labeling.
+
+failure_codes:
+- DETAIL_POLICY_DISCLOSURE_CLASS_MISSING
+- DETAIL_POLICY_RETENTION_CLASS_MISSING
+- DETAIL_POLICY_REVISION_AUTHORITY_DENIED
+- DETAIL_POLICY_SEALED_DOWNSCOPE_DENIED
+- DETAIL_POLICY_HISTORICAL_LABEL_REQUIRED
+
+example_scenarios:
+- A public entity summary may be exported publicly.
+- A restricted trust detail must be blocked from public delivery.
+- An audit-mandatory historical record must be retained even after active use ends.

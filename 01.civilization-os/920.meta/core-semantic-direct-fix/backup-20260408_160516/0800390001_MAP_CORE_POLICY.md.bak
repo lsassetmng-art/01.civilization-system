@@ -1,0 +1,20 @@
+# ============================================================
+# MAP CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: map
+scope: map.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for map.
+
+## policy_rules
+Map policy constrains:
+- which spatial detail may be disclosed
+- who may access route/location detail
+- when map-sensitive paths must be denied or escalated

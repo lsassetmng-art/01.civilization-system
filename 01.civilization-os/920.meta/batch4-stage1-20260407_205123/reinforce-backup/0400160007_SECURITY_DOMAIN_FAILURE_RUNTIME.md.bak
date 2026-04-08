@@ -1,0 +1,20 @@
+# ============================================================
+# SECURITY_DOMAIN FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: security
+scope: security.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for security.
+
+failure_codes:
+- SECURITY_DOMAIN_RUNTIME_IDENTITY_ERROR
+- SECURITY_DOMAIN_RUNTIME_ROLE_ERROR
+- SECURITY_DOMAIN_RUNTIME_ACTIVITY_ERROR
+- SECURITY_DOMAIN_RUNTIME_BOUNDARY_ERROR

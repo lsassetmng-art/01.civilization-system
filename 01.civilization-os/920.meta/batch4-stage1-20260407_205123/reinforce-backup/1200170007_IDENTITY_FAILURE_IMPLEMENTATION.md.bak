@@ -1,0 +1,20 @@
+# ============================================================
+# IDENTITY FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: identity
+scope: identity.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for identity.
+
+failure_codes:
+- IDENTITY_IMPLEMENTATION_IDENTITY_ERROR
+- IDENTITY_IMPLEMENTATION_ROLE_ERROR
+- IDENTITY_IMPLEMENTATION_ACTIVITY_ERROR
+- IDENTITY_IMPLEMENTATION_BOUNDARY_ERROR

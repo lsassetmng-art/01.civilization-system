@@ -1,0 +1,56 @@
+# ============================================================
+# MARKET CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: market
+scope: market.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for market.
+
+## policy_rules
+Market policy constrains:
+- who may list
+- what may be listed
+- when listings are visible
+- who may see which details
+- when listings must be restricted or hidden
+
+## required_behavior
+- listing eligibility must be explicit
+- visibility scope must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+- policy escalation must be explicit
+
+## disclosure_matrix
+- public summary listing
+- restricted detail listing
+- operator detail listing
+- reviewer detail listing
+- denied output
+
+## allowed_denied_matrix
+- allow bounded public visibility for allowed listings
+- allow restricted detail only for allowed actors
+- deny hidden authority claims through listings
+- deny source-truth overwrite by market projection
+- deny out-of-policy listing exposure
+
+## escalation_rules
+If source truth,
+listing authority,
+policy scope,
+or disclosure scope is unclear,
+the listing path must stop and escalate.
+
+## review_checklist
+- eligibility is explicit
+- disclosure matrix exists
+- denial behavior is explicit
+- escalation rules are explicit

@@ -1,0 +1,21 @@
+# ============================================================
+# SOCIAL ROLE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: social
+scope: social.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role structure for social.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

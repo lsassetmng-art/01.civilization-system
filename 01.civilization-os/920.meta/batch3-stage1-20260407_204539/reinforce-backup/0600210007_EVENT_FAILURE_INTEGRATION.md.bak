@@ -1,0 +1,20 @@
+# ============================================================
+# EVENT FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: event
+scope: event.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for event.
+
+failure_codes:
+- EVENT_INTEGRATION_IDENTITY_ERROR
+- EVENT_INTEGRATION_ROLE_ERROR
+- EVENT_INTEGRATION_ACTIVITY_ERROR
+- EVENT_INTEGRATION_BOUNDARY_ERROR

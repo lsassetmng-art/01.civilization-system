@@ -1,0 +1,18 @@
+# ============================================================
+# INVENTORY BOUNDARY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: inventory
+scope: inventory.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related implementation behavior for inventory.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

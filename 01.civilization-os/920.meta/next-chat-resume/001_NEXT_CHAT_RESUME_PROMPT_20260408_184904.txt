@@ -1,0 +1,19 @@
+次チャット再開用メモ
+
+最初に以下を正本として読む:
+1. /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/session-handoff-bundle/000_SESSION_HANDOFF_BUNDLE_20260408_184545.md
+2. /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/session-handoff-bundle/001_SESSION_HANDOFF_BUNDLE_POINTER_20260408_184545.md
+3. /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/top-level-progress/001_ROOM_STATE_POINTER_20260408_183802.md
+4. /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/top-level-progress/000_TOP_LEVEL_PROGRESS_MASTER_20260408_183802.md
+5. /data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/session-handoff/000_SESSION_HANDOFF_MASTER_20260408_184400.md
+
+現在状態:
+- core semantic 完了
+- post-core rebind 完了
+- progress / room pointer 完了
+- handoff bundle 完了
+
+再開方針:
+- まず bundle を基準に現在位置を確認
+- その後、上位 compiled docs / batch bible / 次レビュー lane のいずれかへ進む
+- 進捗更新時は room pointer を再更新する

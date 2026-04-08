@@ -3,32 +3,99 @@
 # ============================================================
 
 status: canonical
-layer: 070.operations
+layer: operations
+domain: detail
+scope: 0700011.civilization.dead.letter.operation
 system: civilization-os
 owner: Boss
 prepared_by: Zero
 
-purpose:
-Define the operational handling of dead-lettered units.
+## purpose
+Defines the operational management rule for CIVILIZATION DEAD LETTER OPERATION
+in the 040.detail domain.
 
-operation_scope:
-- classify terminal failure
-- mark unit dead-lettered
-- preserve traceability
-- expose operator review path
+## operational_scope
+Operations covers execution review,
+retry handling,
+dead-letter handling,
+approval review,
+audit reconstruction,
+and replay support
+when those paths are relevant.
 
-operation_steps:
-1 confirm terminal failure classification
-2 mark sync unit dead-lettered
-3 persist dead-letter timestamp and failure reason
-4 preserve correlation and causation traceability
-5 expose operator-visible review or repair path
+## required_behavior
+- operational checkpoints must be explicit
+- retry must remain bounded
+- replay must remain reviewable
+- approval must not bypass policy
+- dead-letter handling must preserve evidence
 
-success_condition:
-- dead-letter state persisted
-- unit excluded from infinite retry loops
-- review path remains visible
+## runbook
+1. identify subject and mode
+2. confirm authority boundary
+3. inspect validation outcome
+4. route to retry/replay/review only if allowed
+5. preserve audit evidence
+6. close with explicit status
 
-failure_condition:
-- terminal classification not persisted
-- unit remains retry-loop eligible incorrectly
+## retry_rules
+Retry may occur only for retry-eligible failures
+and must remain bounded,
+visible,
+and non-destructive.
+
+## escalation_rules
+Failures that imply authority ambiguity,
+compatibility ambiguity,
+or policy ambiguity
+must escalate to review rather than self-heal.
+
+## audit_requirements
+Operational handling must preserve
+enough evidence to reconstruct
+the effective path and decision taken.
+
+## failure_codes
+- DETAIL_OP_RETRY_LIMIT
+- DETAIL_OP_ESCALATION_REQUIRED
+- DETAIL_OP_REPLAY_REVIEW_REQUIRED
+- DETAIL_OP_APPROVAL_BLOCKED
+- DETAIL_OP_AUDIT_GAP
+
+## review_checklist
+- runbook is explicit
+- retry boundary is explicit
+- escalation path is explicit
+- audit evidence is explicit
+- closure status is explicit
+
+## state_model
+Operations must distinguish
+normal execution,
+retry execution,
+dead-letter state,
+approval review state,
+audit reconstruction state,
+and replay review state.
+
+## transition_rules
+Operational transitions must preserve
+failure reason,
+review status,
+retry eligibility,
+and audit continuity.
+No transition may silently discard evidence.
+
+## actor_matrix
+- operator observes and routes operational state
+- reviewer approves or denies gated handling
+- auditor reconstructs prior execution meaning
+- replay reviewer inspects replay-safe traces
+- escalation owner resolves ambiguous failures
+
+## review_notes
+Operational completeness requires
+runbook clarity,
+retry clarity,
+dead-letter clarity,
+and audit/replay clarity.

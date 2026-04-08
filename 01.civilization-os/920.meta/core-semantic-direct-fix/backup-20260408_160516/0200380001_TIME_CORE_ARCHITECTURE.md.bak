@@ -1,0 +1,28 @@
+# ============================================================
+# TIME CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: time
+scope: time.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of time in CivilizationOS.
+
+## design_intent
+Time is the bounded reference axis
+through which ordering,
+duration,
+currentness,
+historicalness,
+and scheduled relation
+become meaningful.
+
+## canonical_rules
+- current and historical time references must remain distinguishable
+- replay/reference time must not masquerade as original occurrence
+- ambiguous time scope fails closed

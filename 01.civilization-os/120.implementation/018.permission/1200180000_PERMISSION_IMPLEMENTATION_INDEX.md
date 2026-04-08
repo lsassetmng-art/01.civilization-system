@@ -1,0 +1,19 @@
+# ============================================================
+# PERMISSION IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: permission
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 1200180001_PERMISSION_CORE_IMPLEMENTATION.md
+- 1200180002_PERMISSION_ENTITY_IMPLEMENTATION.md
+- 1200180003_PERMISSION_ROLE_IMPLEMENTATION.md
+- 1200180004_PERMISSION_ACTIVITY_IMPLEMENTATION.md
+- 1200180005_PERMISSION_BOUNDARY_IMPLEMENTATION.md
+- 1200180006_PERMISSION_VALIDATION_IMPLEMENTATION.md
+- 1200180007_PERMISSION_FAILURE_IMPLEMENTATION.md

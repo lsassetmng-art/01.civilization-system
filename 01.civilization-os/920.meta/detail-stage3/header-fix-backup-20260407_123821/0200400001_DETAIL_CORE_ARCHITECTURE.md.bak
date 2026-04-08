@@ -1,0 +1,92 @@
+# ============================================================
+# 0200400001 DETAIL CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: detail
+scope: 0200400001.detail.core.architecture
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the architectural role of 0200400001 DETAIL CORE ARCHITECTURE
+inside the extended 040.detail domain.
+
+design_intent:
+This document exists to make the structure of
+detail handling explicit rather than implicit.
+It separates domain meaning, actor boundary,
+state meaning, and transition responsibility
+so later runtime and implementation layers
+do not invent incompatible assumptions.
+
+required_behavior:
+- detail structure must remain explicit
+- actor responsibility must remain named
+- state meaning must be distinguishable
+- transition intent must remain reviewable
+- cross-domain detail support must not replace core truth
+
+canonical_rules:
+- current and historical forms must be distinguishable
+- replay interpretation must not overwrite truth origin
+- projections must not be treated as authority origin
+- masking rules must be layer-safe
+- extensions must not redefine core meaning
+
+state_model:
+The document treats detail as a canonical structure
+that can appear as current detail,
+historical detail,
+reconstructed detail,
+and replay-visible detail,
+but each state must remain semantically distinct.
+
+transition_rules:
+A transition into or out of this detail scope
+must declare trigger,
+authority source,
+validation requirement,
+and resulting state interpretation.
+
+dependency:
+This architecture depends on the domain constitution
+and supplies stable intent to runtime,
+flow,
+integration,
+operations,
+security,
+infrastructure,
+implementation,
+and development layers.
+
+actor_boundary:
+Truth-authoring actors,
+projection actors,
+transport actors,
+review actors,
+and replay actors
+must remain explicitly separated.
+
+decision_matrix:
+- if truth authority exists, preserve authority origin
+- if only projection exists, expose projection as projection
+- if replay is requested, keep replay separate from current truth
+- if masking is required, apply masking without mutating origin
+- if a support extension is used, keep support subordinate to core detail
+
+example_scenarios:
+- entity detail is requested for current view
+- location detail is reconstructed for audit review
+- activity detail is replayed for investigation
+- relationship detail is projected to another layer
+- status or timeline detail is masked for limited readers
+
+review_checklist:
+- architectural role is explicit
+- state distinction is explicit
+- transition meaning is explicit
+- actor boundary is explicit
+- extension dependency is explicit

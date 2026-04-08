@@ -1,0 +1,20 @@
+# ============================================================
+# WORK FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: work
+scope: work.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for work.
+
+failure_codes:
+- WORK_POLICY_IDENTITY_ERROR
+- WORK_POLICY_ROLE_ERROR
+- WORK_POLICY_ACTIVITY_ERROR
+- WORK_POLICY_BOUNDARY_ERROR

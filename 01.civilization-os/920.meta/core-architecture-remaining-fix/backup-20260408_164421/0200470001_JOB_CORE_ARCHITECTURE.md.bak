@@ -1,0 +1,78 @@
+# ============================================================
+# JOB CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: job
+scope: job.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of job in CivilizationOS.
+
+## design_intent
+Job is the bounded institutional role structure
+through which function,
+responsibility,
+authority,
+expected capability,
+and accountability
+become meaningful.
+
+Job is not identical to skill or work.
+Skill is capability,
+work is execution flow,
+and job is the structured role
+within which duties and authority are recognized.
+
+## architectural_position
+Job sits between:
+- organization/company role topology
+- work assignment
+- skill expectations
+- authority boundary
+- review and accountability
+
+## required_behavior
+- job identity must remain explicit
+- duty and responsibility scope must remain explicit
+- authority scope must remain explicit
+- current and historical job states must remain distinguishable
+- job must not imply unrestricted actor authority
+
+## canonical_rules
+- job assignment does not imply unlimited discretion
+- job and skill meanings must remain distinct
+- historical job assignment must remain queryable
+- ambiguous job authority fails closed
+
+## state_model
+The job domain distinguishes:
+- proposed job
+- active job
+- restricted job
+- transformed job
+- closed job
+- historical job
+
+## actor_boundary
+- job holder
+- assigning authority
+- reviewer
+- operator
+- adapter
+
+## decision_matrix
+- if job identity is unclear, stop job-sensitive paths
+- if duty/authority scope is unclear, fail closed
+- if job changes, preserve assignment history
+- if job closes, preserve historical role trace
+
+## review_checklist
+- job identity is explicit
+- duty/authority scope is explicit
+- skill/job distinction is explicit
+- historical distinction is explicit

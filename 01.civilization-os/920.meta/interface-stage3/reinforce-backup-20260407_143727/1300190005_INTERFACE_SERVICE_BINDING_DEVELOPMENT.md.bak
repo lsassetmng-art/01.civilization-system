@@ -1,0 +1,18 @@
+# ============================================================
+# INTERFACE SERVICE BINDING DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: interface
+scope: interface.service-binding
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines service-binding development behavior.
+
+required_behavior:
+- binding must be explicit
+- binding must be reviewable

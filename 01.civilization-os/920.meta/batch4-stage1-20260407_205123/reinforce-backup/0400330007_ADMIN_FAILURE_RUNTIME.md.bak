@@ -1,0 +1,20 @@
+# ============================================================
+# ADMIN FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: admin
+scope: admin.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for admin.
+
+failure_codes:
+- ADMIN_RUNTIME_IDENTITY_ERROR
+- ADMIN_RUNTIME_ROLE_ERROR
+- ADMIN_RUNTIME_ACTIVITY_ERROR
+- ADMIN_RUNTIME_BOUNDARY_ERROR

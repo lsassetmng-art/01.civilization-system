@@ -1,0 +1,20 @@
+# ============================================================
+# ASSET FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: asset
+scope: asset.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for asset.
+
+failure_codes:
+- ASSET_SECURITY_IDENTITY_ERROR
+- ASSET_SECURITY_ROLE_ERROR
+- ASSET_SECURITY_ACTIVITY_ERROR
+- ASSET_SECURITY_BOUNDARY_ERROR

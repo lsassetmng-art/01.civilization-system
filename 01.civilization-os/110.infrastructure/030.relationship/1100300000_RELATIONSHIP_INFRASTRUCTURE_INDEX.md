@@ -1,0 +1,19 @@
+# ============================================================
+# RELATIONSHIP INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: relationship
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 1100300001_RELATIONSHIP_CORE_INFRASTRUCTURE.md
+- 1100300002_RELATIONSHIP_ENTITY_INFRASTRUCTURE.md
+- 1100300003_RELATIONSHIP_ROLE_INFRASTRUCTURE.md
+- 1100300004_RELATIONSHIP_ACTIVITY_INFRASTRUCTURE.md
+- 1100300005_RELATIONSHIP_BOUNDARY_INFRASTRUCTURE.md
+- 1100300006_RELATIONSHIP_VALIDATION_INFRASTRUCTURE.md
+- 1100300007_RELATIONSHIP_FAILURE_INFRASTRUCTURE.md

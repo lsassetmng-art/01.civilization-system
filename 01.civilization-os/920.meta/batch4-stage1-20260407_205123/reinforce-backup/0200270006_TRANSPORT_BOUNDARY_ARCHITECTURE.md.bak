@@ -1,0 +1,18 @@
+# ============================================================
+# TRANSPORT BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: transport
+scope: transport.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines authority and operational boundary for transport.
+
+required_behavior:
+- authority basis must be explicit
+- hidden boundary crossing is prohibited

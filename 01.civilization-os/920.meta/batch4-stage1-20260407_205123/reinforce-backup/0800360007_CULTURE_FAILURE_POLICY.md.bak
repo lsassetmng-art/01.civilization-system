@@ -1,0 +1,20 @@
+# ============================================================
+# CULTURE FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: culture
+scope: culture.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for culture.
+
+failure_codes:
+- CULTURE_POLICY_IDENTITY_ERROR
+- CULTURE_POLICY_ROLE_ERROR
+- CULTURE_POLICY_ACTIVITY_ERROR
+- CULTURE_POLICY_BOUNDARY_ERROR

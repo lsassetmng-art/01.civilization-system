@@ -1,0 +1,19 @@
+# ============================================================
+# COMMUNICATION INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: communication
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 1100490001_COMMUNICATION_CORE_INFRASTRUCTURE.md
+- 1100490002_COMMUNICATION_ENTITY_INFRASTRUCTURE.md
+- 1100490003_COMMUNICATION_ROLE_INFRASTRUCTURE.md
+- 1100490004_COMMUNICATION_ACTIVITY_INFRASTRUCTURE.md
+- 1100490005_COMMUNICATION_BOUNDARY_INFRASTRUCTURE.md
+- 1100490006_COMMUNICATION_VALIDATION_INFRASTRUCTURE.md
+- 1100490007_COMMUNICATION_FAILURE_INFRASTRUCTURE.md

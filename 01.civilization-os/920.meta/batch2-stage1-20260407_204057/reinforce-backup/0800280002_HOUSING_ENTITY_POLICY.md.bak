@@ -1,0 +1,18 @@
+# ============================================================
+# HOUSING ENTITY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: housing
+scope: housing.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related policy behavior for housing.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

@@ -3,30 +3,91 @@
 # ============================================================
 
 status: canonical
-layer: 100.security
+layer: security
+domain: detail
+scope: 1000008.civilization.access.control.detail
 system: civilization-os
 owner: Boss
 prepared_by: Zero
 
-purpose:
-Define detailed access control semantics for CivilizationOS.
+## purpose
+Defines the security control rule for CIVILIZATION ACCESS CONTROL DETAIL
+inside the 040.detail domain.
 
-access_dimensions:
-- constitutional access
-- policy access
-- operational access
-- runtime execution access
-- audit inspection access
+## security_objectives
+- protect authority origin
+- protect masked views
+- protect replay paths
+- protect audit evidence
+- prevent privilege widening
 
-evaluation_order:
-1 actor identity validity
-2 role validity
-3 scope validity
-4 domain boundary validity
-5 operation eligibility
-6 audit requirement attachment
+## trust_boundary
+Security must distinguish
+truth origin,
+transport,
+projection,
+replay,
+and review actors
+as separate trust positions.
 
-prohibited:
-- silent privilege escalation
-- unaudited privileged execution
-- cross-domain privilege inference without explicit rule
+## access_rules
+Access must be actor-based,
+purpose-based,
+and mode-aware.
+A valid actor for current detail
+is not automatically valid for replay or audit detail.
+
+## masking_rules
+When masking is required,
+security must ensure the masked output
+cannot be misread as full-authority detail.
+
+## audit_rules
+Security-relevant detail access
+must remain auditable without exposing more data
+than the audit path requires.
+
+## failure_codes
+- DETAIL_SEC_ACCESS_DENIED
+- DETAIL_SEC_TRUST_BOUNDARY_VIOLATION
+- DETAIL_SEC_MASKING_REQUIRED
+- DETAIL_SEC_REPLAY_SCOPE_DENIED
+- DETAIL_SEC_AUDIT_GAP
+
+## review_checklist
+- trust boundary is explicit
+- access rules are explicit
+- masking rules are explicit
+- audit rules are explicit
+- denial behavior is explicit
+
+## state_model
+Security handling must distinguish
+authorized access,
+masked access,
+audit access,
+replay-limited access,
+and denied access.
+These states must never be merged implicitly.
+
+## transition_rules
+Security transitions must preserve
+trust boundary meaning,
+access basis,
+masking requirement,
+and audit visibility.
+Privilege widening is prohibited.
+
+## actor_matrix
+- requester asks for subject detail
+- security guard evaluates entitlement
+- masking control reduces exposure when required
+- auditor inspects security-relevant access traces
+- reviewer resolves exceptional access cases
+
+## review_notes
+Security completeness requires
+trust boundary clarity,
+access control clarity,
+masking clarity,
+and security-audit clarity.

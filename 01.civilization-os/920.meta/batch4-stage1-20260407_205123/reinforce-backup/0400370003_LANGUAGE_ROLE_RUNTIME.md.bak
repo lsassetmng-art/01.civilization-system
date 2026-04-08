@@ -1,0 +1,21 @@
+# ============================================================
+# LANGUAGE ROLE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: language
+scope: language.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related runtime behavior for language.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

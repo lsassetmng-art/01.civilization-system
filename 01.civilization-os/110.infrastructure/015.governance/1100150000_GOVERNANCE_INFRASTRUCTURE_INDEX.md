@@ -1,0 +1,19 @@
+# ============================================================
+# GOVERNANCE INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: governance
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 1100150001_GOVERNANCE_CORE_INFRASTRUCTURE.md
+- 1100150002_GOVERNANCE_ENTITY_INFRASTRUCTURE.md
+- 1100150003_GOVERNANCE_ROLE_INFRASTRUCTURE.md
+- 1100150004_GOVERNANCE_ACTIVITY_INFRASTRUCTURE.md
+- 1100150005_GOVERNANCE_BOUNDARY_INFRASTRUCTURE.md
+- 1100150006_GOVERNANCE_VALIDATION_INFRASTRUCTURE.md
+- 1100150007_GOVERNANCE_FAILURE_INFRASTRUCTURE.md

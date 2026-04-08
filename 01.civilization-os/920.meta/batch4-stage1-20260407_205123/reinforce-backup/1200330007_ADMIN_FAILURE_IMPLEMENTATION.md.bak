@@ -1,0 +1,20 @@
+# ============================================================
+# ADMIN FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: admin
+scope: admin.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for admin.
+
+failure_codes:
+- ADMIN_IMPLEMENTATION_IDENTITY_ERROR
+- ADMIN_IMPLEMENTATION_ROLE_ERROR
+- ADMIN_IMPLEMENTATION_ACTIVITY_ERROR
+- ADMIN_IMPLEMENTATION_BOUNDARY_ERROR

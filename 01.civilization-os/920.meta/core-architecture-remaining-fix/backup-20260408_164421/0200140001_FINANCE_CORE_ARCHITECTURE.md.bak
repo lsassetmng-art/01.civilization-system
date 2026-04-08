@@ -1,0 +1,76 @@
+# ============================================================
+# FINANCE CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: finance
+scope: finance.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of finance in CivilizationOS.
+
+## design_intent
+Finance is the bounded formal structure
+through which balances,
+settlement,
+obligations,
+claims,
+reserves,
+and accounting consequences
+become meaningful.
+
+Finance is narrower and more formal than economy.
+Economy expresses value circulation;
+finance expresses formally tracked monetary or monetary-like consequence.
+
+## architectural_position
+Finance sits between:
+- economic consequence
+- trade and market settlement
+- company and organization funds
+- nation policy/tax effect
+- reporting and audit reconstruction
+
+## required_behavior
+- finance identity/context must remain explicit
+- balance and obligation basis must remain explicit
+- current and historical finance states must remain distinguishable
+- settlement and reservation must remain distinguishable
+
+## canonical_rules
+- pending settlement must not masquerade as settled balance
+- reserved amounts must not masquerade as freely available amounts
+- historical finance trace must remain queryable
+- ambiguous finance state fails closed
+
+## state_model
+The finance domain distinguishes:
+- pending finance state
+- available balance state
+- reserved balance state
+- settled state
+- disputed state
+- historical finance state
+
+## actor_boundary
+- holder/controller
+- operator
+- reviewer
+- approver
+- adapter
+
+## decision_matrix
+- if finance context is unclear, stop finance-sensitive action
+- if balance/obligation basis is unclear, fail closed
+- if settlement path is incomplete, deny finalization
+- if state becomes historical, preserve settlement trace
+
+## review_checklist
+- finance context is explicit
+- balance/obligation basis is explicit
+- settlement model is explicit
+- historical distinction is explicit

@@ -1,0 +1,21 @@
+# ============================================================
+# VOTE ROLE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: vote
+scope: vote.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related policy behavior for vote.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

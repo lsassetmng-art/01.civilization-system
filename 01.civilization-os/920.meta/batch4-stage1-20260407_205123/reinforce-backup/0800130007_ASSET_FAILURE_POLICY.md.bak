@@ -1,0 +1,20 @@
+# ============================================================
+# ASSET FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: asset
+scope: asset.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for asset.
+
+failure_codes:
+- ASSET_POLICY_IDENTITY_ERROR
+- ASSET_POLICY_ROLE_ERROR
+- ASSET_POLICY_ACTIVITY_ERROR
+- ASSET_POLICY_BOUNDARY_ERROR

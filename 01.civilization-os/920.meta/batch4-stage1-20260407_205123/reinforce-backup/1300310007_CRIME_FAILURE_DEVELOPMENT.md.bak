@@ -1,0 +1,20 @@
+# ============================================================
+# CRIME FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: crime
+scope: crime.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for crime.
+
+failure_codes:
+- CRIME_DEVELOPMENT_IDENTITY_ERROR
+- CRIME_DEVELOPMENT_ROLE_ERROR
+- CRIME_DEVELOPMENT_ACTIVITY_ERROR
+- CRIME_DEVELOPMENT_BOUNDARY_ERROR

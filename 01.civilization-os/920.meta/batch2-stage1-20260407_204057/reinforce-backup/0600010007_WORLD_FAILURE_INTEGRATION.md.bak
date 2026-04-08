@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: world
+scope: world.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for world.
+
+failure_codes:
+- WORLD_INTEGRATION_IDENTITY_ERROR
+- WORLD_INTEGRATION_ROLE_ERROR
+- WORLD_INTEGRATION_ACTIVITY_ERROR
+- WORLD_INTEGRATION_BOUNDARY_ERROR

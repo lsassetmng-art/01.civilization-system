@@ -1,0 +1,53 @@
+# ============================================================
+# SKILL CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: skill
+scope: skill.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for skill.
+
+## policy_rules
+Skill policy constrains:
+- who may view skill detail
+- who may evaluate or update skill state
+- how skill applicability may be disclosed
+- when skill-based claims must be denied or escalated
+
+## required_behavior
+- evaluation scope must be explicit
+- disclosure scope must be explicit
+- applicability claims must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- bounded public skill summary
+- holder-scoped detail
+- evaluator/reviewer detail
+- historical skill detail
+- denied output
+
+## allowed_denied_matrix
+- allow skill evaluation only for valid scope
+- allow skill disclosure only for allowed actors
+- deny hidden authority widening through skill claims
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If skill identity,
+evaluation basis,
+applicability scope,
+or disclosure scope is unclear,
+the skill path must stop and escalate.
+
+## review_checklist
+- evaluation policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit
+- escalation rules are explicit

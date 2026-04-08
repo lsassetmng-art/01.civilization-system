@@ -1,0 +1,71 @@
+# ============================================================
+# STATUS DETAIL RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: detail
+subdomain: status-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the runtime behavior for status detail.
+
+scope:
+Covers status reason loading, severity evaluation,
+recoverability reads, escalation semantics,
+and alert-safe operational exposure.
+
+runtime_intent:
+Status detail runtime exists so that coarse status codes
+become operationally meaningful and safely consumable.
+
+runtime_rules:
+- Runtime must resolve status detail by target_ref and status_code.
+- Runtime must expose severity and reason together.
+- Runtime must preserve recoverability semantics.
+- Runtime must not merge contradictory active status detail.
+
+required_behavior:
+- Resolve active status detail.
+- Support warning, degraded, blocked, recovered, and terminal interpretations.
+- Expose structured status reasons.
+- Support alerting and historical review consumers.
+
+state_model:
+status_detail_runtime_state:
+- normal
+- warning
+- degraded
+- blocked
+- recovered
+- terminal
+
+validation_rules:
+- target_ref is required.
+- status_code is required.
+- severity_level is required.
+- blocked and terminal states must expose a reason.
+- recovered state must preserve prior-state linkage where required.
+- contradictory active combinations are prohibited.
+
+transition_rules:
+- normal -> warning
+- warning -> degraded
+- degraded -> blocked
+- blocked -> recovered
+- recovered -> normal
+- degraded -> terminal
+
+failure_codes:
+- STATUS_DETAIL_REF_MISSING
+- STATUS_DETAIL_CODE_MISSING
+- STATUS_DETAIL_SEVERITY_MISSING
+- STATUS_DETAIL_REASON_MISSING
+- STATUS_DETAIL_CONFLICT
+
+example_runtime_scenarios:
+- A hospital service is degraded and exposes structured cause and expected recovery semantics.
+- A checkpoint is blocked and exposes reason detail only to allowed operational viewers.

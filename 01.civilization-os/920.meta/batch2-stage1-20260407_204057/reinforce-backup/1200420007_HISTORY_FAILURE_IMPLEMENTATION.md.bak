@@ -1,0 +1,20 @@
+# ============================================================
+# HISTORY FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: history
+scope: history.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for history.
+
+failure_codes:
+- HISTORY_IMPLEMENTATION_IDENTITY_ERROR
+- HISTORY_IMPLEMENTATION_ROLE_ERROR
+- HISTORY_IMPLEMENTATION_ACTIVITY_ERROR
+- HISTORY_IMPLEMENTATION_BOUNDARY_ERROR

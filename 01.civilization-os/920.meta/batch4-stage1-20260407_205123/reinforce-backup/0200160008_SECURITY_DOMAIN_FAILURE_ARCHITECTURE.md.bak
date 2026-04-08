@@ -1,0 +1,18 @@
+# ============================================================
+# SECURITY_DOMAIN FAILURE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: security
+scope: security.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure architecture for security.
+
+required_behavior:
+- failure outputs must be bounded
+- denial and review states must be explicit

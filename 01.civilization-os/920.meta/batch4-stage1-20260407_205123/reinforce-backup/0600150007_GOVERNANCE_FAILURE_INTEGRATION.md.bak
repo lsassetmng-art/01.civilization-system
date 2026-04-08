@@ -1,0 +1,20 @@
+# ============================================================
+# GOVERNANCE FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: governance
+scope: governance.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for governance.
+
+failure_codes:
+- GOVERNANCE_INTEGRATION_IDENTITY_ERROR
+- GOVERNANCE_INTEGRATION_ROLE_ERROR
+- GOVERNANCE_INTEGRATION_ACTIVITY_ERROR
+- GOVERNANCE_INTEGRATION_BOUNDARY_ERROR

@@ -1,0 +1,18 @@
+# ============================================================
+# AI ACTIVITY INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: ai
+scope: ai.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related infrastructure behavior for ai.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

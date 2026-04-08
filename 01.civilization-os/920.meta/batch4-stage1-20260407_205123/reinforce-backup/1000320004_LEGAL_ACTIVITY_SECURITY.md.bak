@@ -1,0 +1,18 @@
+# ============================================================
+# LEGAL ACTIVITY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: legal
+scope: legal.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related security behavior for legal.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

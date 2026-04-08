@@ -1,0 +1,20 @@
+# ============================================================
+# LANGUAGE VALIDATION IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: language
+scope: language.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related implementation behavior for language.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

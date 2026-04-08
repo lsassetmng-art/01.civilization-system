@@ -1,0 +1,20 @@
+# ============================================================
+# HISTORY FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: history
+scope: history.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for history.
+
+failure_codes:
+- HISTORY_RUNTIME_IDENTITY_ERROR
+- HISTORY_RUNTIME_ROLE_ERROR
+- HISTORY_RUNTIME_ACTIVITY_ERROR
+- HISTORY_RUNTIME_BOUNDARY_ERROR

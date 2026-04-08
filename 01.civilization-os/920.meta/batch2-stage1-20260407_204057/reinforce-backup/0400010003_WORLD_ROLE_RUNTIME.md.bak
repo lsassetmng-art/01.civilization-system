@@ -1,0 +1,21 @@
+# ============================================================
+# WORLD ROLE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: world
+scope: world.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related runtime behavior for world.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

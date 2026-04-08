@@ -1,0 +1,20 @@
+# ============================================================
+# SOCIAL VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: social
+scope: social.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for social.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

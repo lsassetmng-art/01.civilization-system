@@ -1,0 +1,20 @@
+# ============================================================
+# WORK FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: work
+scope: work.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for work.
+
+failure_codes:
+- WORK_INTEGRATION_IDENTITY_ERROR
+- WORK_INTEGRATION_ROLE_ERROR
+- WORK_INTEGRATION_ACTIVITY_ERROR
+- WORK_INTEGRATION_BOUNDARY_ERROR

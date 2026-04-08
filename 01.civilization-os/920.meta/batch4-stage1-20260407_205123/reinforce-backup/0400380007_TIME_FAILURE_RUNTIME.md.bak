@@ -1,0 +1,20 @@
+# ============================================================
+# TIME FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: time
+scope: time.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for time.
+
+failure_codes:
+- TIME_RUNTIME_IDENTITY_ERROR
+- TIME_RUNTIME_ROLE_ERROR
+- TIME_RUNTIME_ACTIVITY_ERROR
+- TIME_RUNTIME_BOUNDARY_ERROR

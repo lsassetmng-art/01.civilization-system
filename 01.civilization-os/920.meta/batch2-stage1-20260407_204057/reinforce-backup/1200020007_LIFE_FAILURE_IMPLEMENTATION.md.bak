@@ -1,0 +1,20 @@
+# ============================================================
+# LIFE FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: life
+scope: life.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for life.
+
+failure_codes:
+- LIFE_IMPLEMENTATION_IDENTITY_ERROR
+- LIFE_IMPLEMENTATION_ROLE_ERROR
+- LIFE_IMPLEMENTATION_ACTIVITY_ERROR
+- LIFE_IMPLEMENTATION_BOUNDARY_ERROR

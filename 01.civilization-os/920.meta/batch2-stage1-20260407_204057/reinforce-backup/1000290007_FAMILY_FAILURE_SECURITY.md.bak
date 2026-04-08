@@ -1,0 +1,20 @@
+# ============================================================
+# FAMILY FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: family
+scope: family.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for family.
+
+failure_codes:
+- FAMILY_SECURITY_IDENTITY_ERROR
+- FAMILY_SECURITY_ROLE_ERROR
+- FAMILY_SECURITY_ACTIVITY_ERROR
+- FAMILY_SECURITY_BOUNDARY_ERROR

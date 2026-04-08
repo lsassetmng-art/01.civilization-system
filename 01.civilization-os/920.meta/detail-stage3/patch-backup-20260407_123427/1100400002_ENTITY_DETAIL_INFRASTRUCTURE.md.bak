@@ -1,0 +1,29 @@
+# ============================================================
+# ENTITY DETAIL INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: detail
+subdomain: entity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines infrastructure support for entity detail.
+
+infrastructure_focus:
+- entity_ref indexing
+- snapshot retrieval
+- profile detail cache
+- visibility-aware cache invalidation
+
+retrieval_modes:
+- current_profile
+- historical_snapshot
+- audit_snapshot
+
+failure_codes:
+- ENTITY_DETAIL_INFRA_REF_INDEX_MISSING
+- ENTITY_DETAIL_INFRA_SNAPSHOT_PATH_INVALID

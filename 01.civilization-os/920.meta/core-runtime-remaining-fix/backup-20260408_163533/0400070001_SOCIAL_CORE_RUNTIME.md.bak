@@ -1,0 +1,46 @@
+# ============================================================
+# SOCIAL CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: social
+scope: social.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for social.
+
+## runtime_scope
+Runtime covers social visibility,
+participation-aware display,
+public/private rendering,
+historical social reference,
+and safe failure rendering.
+
+## validation_rules
+- social context must resolve
+- participation basis must resolve
+- public/private scope must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid social context
+- invalid participation basis
+- invalid private/public scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish social state,
+participation scope,
+visibility mode,
+historical reference,
+and failure surface.
+
+## review_checklist
+- social runtime scope is explicit
+- public/private rendering is explicit
+- failure handling is explicit

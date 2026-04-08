@@ -1,0 +1,55 @@
+# ============================================================
+# LIFE CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: life
+scope: life.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for life.
+
+## policy_rules
+Life policy constrains:
+- who may view which life states
+- who may mutate which life states
+- which transitions require review
+- what may be disclosed publicly or privately
+- how historical life data must be handled
+
+## required_behavior
+- disclosure scope must be explicit
+- mutation scope must be explicit
+- current/historical handling must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- bounded public summary
+- actor-scoped detail
+- operator/reviewer detail
+- historical reference detail
+- denied output
+
+## allowed_denied_matrix
+- allow bounded read only for valid scope
+- allow mutation only for valid authority and transition basis
+- allow historical reference only in valid mode
+- deny hidden current/historical merge
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If continuity basis,
+transition basis,
+authority,
+or disclosure scope is unclear,
+the path must stop and escalate.
+
+## review_checklist
+- life disclosure policy is explicit
+- mutation policy is explicit
+- denial behavior is explicit
+- escalation rules are explicit

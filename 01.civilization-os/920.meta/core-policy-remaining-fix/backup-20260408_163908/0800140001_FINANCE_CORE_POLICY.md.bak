@@ -1,0 +1,53 @@
+# ============================================================
+# FINANCE CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: finance
+scope: finance.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for finance.
+
+## policy_rules
+Finance policy constrains:
+- who may view which finance detail
+- who may reserve, settle, approve, or dispute finance state
+- what finance history may be disclosed
+- when finance paths must be denied or escalated
+
+## required_behavior
+- control scope must be explicit
+- settlement/approval scope must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- bounded finance summary
+- holder/operator detail
+- reviewer/approver detail
+- historical finance detail
+- denied output
+
+## allowed_denied_matrix
+- allow finance action only for valid scope
+- allow disclosure only for allowed actors
+- deny hidden widening of finance authority
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If finance context,
+settlement basis,
+approval scope,
+or disclosure scope is unclear,
+the finance path must stop and escalate.
+
+## review_checklist
+- finance-control policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit
+- escalation rules are explicit

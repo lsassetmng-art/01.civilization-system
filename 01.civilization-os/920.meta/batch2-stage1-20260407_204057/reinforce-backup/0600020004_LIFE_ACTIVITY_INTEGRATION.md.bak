@@ -1,0 +1,18 @@
+# ============================================================
+# LIFE ACTIVITY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: life
+scope: life.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related integration behavior for life.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

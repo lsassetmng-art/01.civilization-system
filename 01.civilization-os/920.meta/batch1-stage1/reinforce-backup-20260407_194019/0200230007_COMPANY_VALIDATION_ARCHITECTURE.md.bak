@@ -1,0 +1,20 @@
+# ============================================================
+# COMPANY VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: company
+scope: company.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for company.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

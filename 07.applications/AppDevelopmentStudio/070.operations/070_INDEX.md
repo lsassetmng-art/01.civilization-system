@@ -1,0 +1,16 @@
+# ============================================================
+# OPERATIONS INDEX
+# ============================================================
+
+files:
+- 070_OVERVIEW.md
+- 070_INDEX.md
+- 070_APP_DEVELOPMENT_STUDIO_OPERATIONS_OVERVIEW.md
+- 070_RUN_OPERATIONS.md
+- 070_REVIEW_QUEUE_OPERATIONS.md
+- 070_BACKUP_OPERATIONS.md
+- 070_RESTORE_OPERATIONS.md
+- 070_GIT_OPERATIONS.md
+- 070_RELEASE_CHECK_OPERATIONS.md
+- 070_AUDIT_RETENTION_OPERATIONS.md
+- 070_FAILURE_RESPONSE_OPERATIONS.md

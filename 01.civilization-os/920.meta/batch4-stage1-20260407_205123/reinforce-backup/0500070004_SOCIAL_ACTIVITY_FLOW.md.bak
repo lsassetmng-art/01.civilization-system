@@ -1,0 +1,18 @@
+# ============================================================
+# SOCIAL ACTIVITY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: social
+scope: social.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related flow behavior for social.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

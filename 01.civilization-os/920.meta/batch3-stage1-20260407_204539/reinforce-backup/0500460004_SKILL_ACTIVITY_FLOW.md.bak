@@ -1,0 +1,18 @@
+# ============================================================
+# SKILL ACTIVITY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: skill
+scope: skill.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related flow behavior for skill.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

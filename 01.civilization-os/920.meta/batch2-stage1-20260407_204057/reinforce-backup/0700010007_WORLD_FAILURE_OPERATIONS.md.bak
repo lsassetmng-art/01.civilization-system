@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: world
+scope: world.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for world.
+
+failure_codes:
+- WORLD_OPERATIONS_IDENTITY_ERROR
+- WORLD_OPERATIONS_ROLE_ERROR
+- WORLD_OPERATIONS_ACTIVITY_ERROR
+- WORLD_OPERATIONS_BOUNDARY_ERROR

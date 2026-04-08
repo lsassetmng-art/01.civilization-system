@@ -1,0 +1,83 @@
+# ============================================================
+# STORY CORE
+# DEVELOPMENT
+# ============================================================
+
+status: draft
+layer: development
+domain: 005.story
+owner: Boss
+prepared_by: Zero
+
+# 1. PURPOSE
+
+Defines the canonical development baseline for STORY CORE.
+
+# 2. SCOPE
+
+Story core governs story identity, publication continuity, and top-level coordination of story-facing structures.
+
+# 3. DESIGN INTENT
+
+This structure exists to keep meaning explicit,
+state transitions controlled, and downstream behavior stable.
+
+# 4. CORE RULES
+
+- scope must be explicit
+- linkage to adjacent structures must be explicit
+- hidden mutation across layers is prohibited
+- ambiguous interpretation must fail closed
+
+# 5. REQUIRED BEHAVIOR
+
+The development layer must preserve:
+- structural continuity
+- execution or interpretation stability
+- downstream compatibility
+- audit visibility
+
+# 6. STATE VIEW
+
+State should expose:
+- structure identity
+- governing status
+- active or blocked visibility where relevant
+- dependency linkage
+- revision and publication traceability
+
+# 7. TRIGGER VIEW
+
+Typical triggers include:
+- creation of a new structure
+- revision of control or meaning
+- activation, suspension, or replacement
+- dependency review after adjacent-domain change
+- governance or operational review
+
+# 8. FAILURE HANDLING
+
+The layer must fail closed when:
+- identity cannot be resolved
+- required linkage is missing
+- blocked state remains reachable
+- downstream compatibility is unknown
+- audit trail is incomplete
+
+# 9. COMPATIBILITY
+
+Compatibility review must consider:
+- prior continuity
+- downstream consumer expectations
+- adjacent-domain dependencies
+- migration visibility after revision
+
+# 10. OBSERVABILITY
+
+At minimum, the layer should expose:
+- active state
+- revision history
+- blocked or rejected decisions
+- dependency linkage
+- failure and suppression reasons
+

@@ -1,0 +1,20 @@
+# ============================================================
+# INTERFACE FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: interface
+scope: interface.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior.
+
+failure_codes:
+- INTERFACE_SECURITY_ROUTE_ERROR
+- INTERFACE_SECURITY_ACTOR_ERROR
+- INTERFACE_SECURITY_VALIDATION_ERROR
+- INTERFACE_SECURITY_TARGET_ERROR

@@ -1,0 +1,21 @@
+# ============================================================
+# FINANCE ROLE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: finance
+scope: finance.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related security behavior for finance.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

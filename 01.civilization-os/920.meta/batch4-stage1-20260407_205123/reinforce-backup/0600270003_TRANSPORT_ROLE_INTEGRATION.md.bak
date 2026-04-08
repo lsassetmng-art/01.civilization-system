@@ -1,0 +1,21 @@
+# ============================================================
+# TRANSPORT ROLE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: transport
+scope: transport.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related integration behavior for transport.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

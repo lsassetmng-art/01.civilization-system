@@ -2,7 +2,7 @@
 # 020 ARCHITECTURE INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -13,3 +13,4 @@ prepared_by: Zero
 files:
 - 020_NAME_CARD_MANAGER_ARCHITECTURE.md
 - 020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+- 021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md

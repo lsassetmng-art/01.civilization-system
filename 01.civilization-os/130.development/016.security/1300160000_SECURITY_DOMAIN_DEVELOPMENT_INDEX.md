@@ -1,0 +1,19 @@
+# ============================================================
+# SECURITY_DOMAIN DEVELOPMENT INDEX
+# ============================================================
+
+status: canonical
+layer: development
+domain: security
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 1300160001_SECURITY_DOMAIN_CORE_DEVELOPMENT.md
+- 1300160002_SECURITY_DOMAIN_ENTITY_DEVELOPMENT.md
+- 1300160003_SECURITY_DOMAIN_ROLE_DEVELOPMENT.md
+- 1300160004_SECURITY_DOMAIN_ACTIVITY_DEVELOPMENT.md
+- 1300160005_SECURITY_DOMAIN_BOUNDARY_DEVELOPMENT.md
+- 1300160006_SECURITY_DOMAIN_VALIDATION_DEVELOPMENT.md
+- 1300160007_SECURITY_DOMAIN_FAILURE_DEVELOPMENT.md

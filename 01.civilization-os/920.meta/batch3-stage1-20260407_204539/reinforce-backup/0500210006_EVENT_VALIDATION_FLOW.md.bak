@@ -1,0 +1,20 @@
+# ============================================================
+# EVENT VALIDATION FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: event
+scope: event.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related flow behavior for event.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

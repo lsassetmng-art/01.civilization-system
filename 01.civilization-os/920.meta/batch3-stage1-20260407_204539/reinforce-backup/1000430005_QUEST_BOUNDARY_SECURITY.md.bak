@@ -1,0 +1,18 @@
+# ============================================================
+# QUEST BOUNDARY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: quest
+scope: quest.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related security behavior for quest.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

@@ -1,0 +1,20 @@
+# ============================================================
+# NATION FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: nation
+scope: nation.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for nation.
+
+failure_codes:
+- NATION_IMPLEMENTATION_IDENTITY_ERROR
+- NATION_IMPLEMENTATION_ROLE_ERROR
+- NATION_IMPLEMENTATION_ACTIVITY_ERROR
+- NATION_IMPLEMENTATION_BOUNDARY_ERROR

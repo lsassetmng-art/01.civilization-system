@@ -1,0 +1,18 @@
+# ============================================================
+# BUILDER ACTIVITY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: builder
+scope: builder.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity structure for builder.
+
+required_behavior:
+- activity scope must be declared
+- prohibited activity must be blockable

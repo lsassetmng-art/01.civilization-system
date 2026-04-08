@@ -1,0 +1,15 @@
+# ============================================================
+# DEVELOPMENT INDEX
+# ============================================================
+
+files:
+- 130_OVERVIEW.md
+- 130_INDEX.md
+- 130_APP_DEVELOPMENT_STUDIO_DEVELOPMENT_OVERVIEW.md
+- 130_DEVELOPMENT_SETUP_GUIDE.md
+- 130_RULE_PROFILE_AUTHORING_GUIDE.md
+- 130_JAVA_OUTPUT_DEVELOPMENT_GUIDE.md
+- 130_SQL_OUTPUT_DEVELOPMENT_GUIDE.md
+- 130_GIT_WORKFLOW_GUIDE.md
+- 130_TESTING_GUIDE.md
+- 130_RELEASE_PREPARATION_GUIDE.md

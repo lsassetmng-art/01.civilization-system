@@ -1,0 +1,20 @@
+# ============================================================
+# BUILDER FAILURE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: builder
+scope: builder.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related flow behavior for builder.
+
+failure_codes:
+- BUILDER_FLOW_IDENTITY_ERROR
+- BUILDER_FLOW_ROLE_ERROR
+- BUILDER_FLOW_ACTIVITY_ERROR
+- BUILDER_FLOW_BOUNDARY_ERROR

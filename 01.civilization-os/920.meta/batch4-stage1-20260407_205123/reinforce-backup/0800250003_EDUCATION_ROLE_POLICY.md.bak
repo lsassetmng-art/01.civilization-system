@@ -1,0 +1,21 @@
+# ============================================================
+# EDUCATION ROLE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: education
+scope: education.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related policy behavior for education.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

@@ -1,0 +1,15 @@
+# ============================================================
+# BUSINESS-OS SECURITY INDEX
+# ============================================================
+
+status: canonical
+layer: security
+system: business-os
+document_type: index
+
+# FILES
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/100_BUSINESS_PERSONA_DISPATCH_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/101_BUSINESS_PERSONA_CALLER_AUTH_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/102_BUSINESS_PERSONA_REPLAY_PROTECTION_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/103_BUSINESS_PERSONA_SIGNATURE_SECURITY.md
+/data/data/com.termux/files/home/01.civilization-system/03.business-os/100.security/104_BUSINESS_PERSONA_AUDIT_SECURITY.md

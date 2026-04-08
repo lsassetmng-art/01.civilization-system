@@ -1,0 +1,71 @@
+# ============================================================
+# IDENTITY CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: identity
+scope: identity.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of identity in CivilizationOS.
+
+## design_intent
+Identity is the bounded continuity structure
+through which a subject remains meaningfully the same subject
+across states,
+roles,
+relations,
+and time.
+
+Identity is not merely a display name or identifier token.
+It is the authoritative basis
+for subject continuity and attributable action.
+
+## architectural_position
+Identity sits between:
+- subject continuity
+- permission/security checks
+- role and governance attribution
+- history reconstruction
+- integration and external reference
+
+## required_behavior
+- identity basis must remain explicit
+- current and historical identity states must remain distinguishable
+- identity continuity must remain attributable
+- alias/projection must remain distinguishable from canonical identity
+
+## canonical_rules
+- display identity must not overwrite canonical identity
+- continuity without basis is prohibited
+- historical identity trace must remain queryable
+- ambiguous identity fails closed
+
+## state_model
+The identity domain distinguishes:
+- canonical identity state
+- alias/projection identity state
+- restricted identity state
+- historical identity state
+- retired identity state
+
+## actor_boundary
+- identity holder
+- operator
+- reviewer
+- adapter
+
+## decision_matrix
+- if identity basis is unclear, stop identity-sensitive action
+- if canonical and projected identity are mixed, fail closed
+- if identity becomes historical or retired, preserve trace
+
+## review_checklist
+- identity basis is explicit
+- continuity model is explicit
+- canonical/projection split is explicit
+- historical distinction is explicit

@@ -1,0 +1,20 @@
+# ============================================================
+# INVENTORY ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: inventory
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200450001_INVENTORY_CORE_ARCHITECTURE.md
+- 0200450002_INVENTORY_OVERVIEW_ARCHITECTURE.md
+- 0200450003_INVENTORY_ENTITY_ARCHITECTURE.md
+- 0200450004_INVENTORY_ROLE_ARCHITECTURE.md
+- 0200450005_INVENTORY_ACTIVITY_ARCHITECTURE.md
+- 0200450006_INVENTORY_BOUNDARY_ARCHITECTURE.md
+- 0200450007_INVENTORY_VALIDATION_ARCHITECTURE.md
+- 0200450008_INVENTORY_FAILURE_ARCHITECTURE.md

@@ -1,0 +1,31 @@
+# ============================================================
+# ENTITY DETAIL SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: detail
+subdomain: entity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines security rules for entity detail.
+
+security_focus:
+- profile visibility enforcement
+- sealed entity-detail blocking
+- historical snapshot access control
+- partial-field masking for internal delivery
+
+actor_matrix:
+- public -> public_summary only
+- internal -> internal_profile as authorized
+- high_trust -> sealed_profile as authorized
+- audit -> historical_snapshot as authorized
+
+failure_codes:
+- ENTITY_DETAIL_SECURITY_SCOPE_DENIED
+- ENTITY_DETAIL_SECURITY_SEALED_DENIED
+- ENTITY_DETAIL_SECURITY_SNAPSHOT_DENIED

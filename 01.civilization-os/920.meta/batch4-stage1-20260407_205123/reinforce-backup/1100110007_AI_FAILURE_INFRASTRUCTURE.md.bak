@@ -1,0 +1,20 @@
+# ============================================================
+# AI FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: ai
+scope: ai.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for ai.
+
+failure_codes:
+- AI_INFRASTRUCTURE_IDENTITY_ERROR
+- AI_INFRASTRUCTURE_ROLE_ERROR
+- AI_INFRASTRUCTURE_ACTIVITY_ERROR
+- AI_INFRASTRUCTURE_BOUNDARY_ERROR

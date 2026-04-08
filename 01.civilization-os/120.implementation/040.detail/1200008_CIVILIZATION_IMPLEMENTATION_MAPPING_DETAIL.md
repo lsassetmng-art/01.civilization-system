@@ -3,21 +3,95 @@
 # ============================================================
 
 status: canonical
-layer: 120.implementation
+layer: implementation
+domain: detail
+scope: 1200008.civilization.implementation.mapping.detail
 system: civilization-os
 owner: Boss
 prepared_by: Zero
 
-purpose:
-Define detailed implementation mapping rules.
+## purpose
+Defines the implementation rule for CIVILIZATION IMPLEMENTATION MAPPING DETAIL
+inside the 040.detail domain.
 
-mapping_dimensions:
-- model to storage
-- runtime to execution unit
-- flow to orchestration path
-- policy to enforcement point
-- interface to gateway surface
+## required_behavior
+Implementation must realize
+detail behavior without collapsing
+authority,
+projection,
+replay,
+retry,
+or audit distinctions.
 
-mapping_rule:
-Implementation mapping must preserve truth boundary,
-idempotency basis, and audit traceability.
+## implementation_components
+- input adapter
+- validation module
+- authority guard
+- mode resolver
+- projection/masking module
+- result emitter
+- audit signal emitter
+
+## module_split
+Core subject handling
+and support extension handling
+must remain separable in code structure.
+
+## persistence_boundary
+Persistence may store supporting state,
+but it must not mutate truth origin silently.
+
+## integration_points
+All external or cross-layer handoffs
+must remain explicit and reviewable.
+
+## implementation_rules
+- fail closed on ambiguity
+- preserve actor boundary
+- preserve current/historical/replay distinction
+- preserve idempotent interpretation
+- preserve audit traceability
+
+## failure_codes
+- DETAIL_IMPL_VALIDATION_FAILED
+- DETAIL_IMPL_AUTHORITY_GUARD_FAILED
+- DETAIL_IMPL_MODE_RESOLUTION_FAILED
+- DETAIL_IMPL_MAPPING_GAP
+- DETAIL_IMPL_AUDIT_EMIT_FAILED
+
+## review_checklist
+- component split is explicit
+- persistence boundary is explicit
+- integration points are explicit
+- failure behavior is explicit
+- audit emission is explicit
+
+## state_model
+Implementation must distinguish
+input resolution,
+validation success/failure,
+authority-guard result,
+mode resolution,
+projection or masking path,
+and audit-emission result.
+
+## transition_rules
+Implementation transitions must preserve
+semantic intent from architecture and runtime.
+No code path may reinterpret truth,
+replay,
+or policy denial implicitly.
+
+## actor_matrix
+- adapter receives request form
+- validator checks shape and meaning
+- guard protects authority boundary
+- resolver determines processing mode
+- emitter writes result and audit signals
+
+## review_notes
+Implementation completeness requires
+component split clarity,
+boundary clarity,
+failure-path clarity,
+and audit-emission clarity.

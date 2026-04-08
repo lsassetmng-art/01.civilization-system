@@ -1,0 +1,20 @@
+# ============================================================
+# EVENT FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: event
+scope: event.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for event.
+
+failure_codes:
+- EVENT_POLICY_IDENTITY_ERROR
+- EVENT_POLICY_ROLE_ERROR
+- EVENT_POLICY_ACTIVITY_ERROR
+- EVENT_POLICY_BOUNDARY_ERROR

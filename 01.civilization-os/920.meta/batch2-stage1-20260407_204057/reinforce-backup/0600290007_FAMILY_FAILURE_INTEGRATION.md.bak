@@ -1,0 +1,20 @@
+# ============================================================
+# FAMILY FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: family
+scope: family.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for family.
+
+failure_codes:
+- FAMILY_INTEGRATION_IDENTITY_ERROR
+- FAMILY_INTEGRATION_ROLE_ERROR
+- FAMILY_INTEGRATION_ACTIVITY_ERROR
+- FAMILY_INTEGRATION_BOUNDARY_ERROR

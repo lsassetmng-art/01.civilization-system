@@ -1,0 +1,20 @@
+# ============================================================
+# HOUSING FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: housing
+scope: housing.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for housing.
+
+failure_codes:
+- HOUSING_DEVELOPMENT_IDENTITY_ERROR
+- HOUSING_DEVELOPMENT_ROLE_ERROR
+- HOUSING_DEVELOPMENT_ACTIVITY_ERROR
+- HOUSING_DEVELOPMENT_BOUNDARY_ERROR

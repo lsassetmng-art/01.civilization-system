@@ -1,0 +1,20 @@
+# ============================================================
+# CRIME VALIDATION IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: crime
+scope: crime.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related implementation behavior for crime.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

@@ -1,0 +1,18 @@
+# ============================================================
+# CULTURE ACTIVITY DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: culture
+scope: culture.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related development behavior for culture.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

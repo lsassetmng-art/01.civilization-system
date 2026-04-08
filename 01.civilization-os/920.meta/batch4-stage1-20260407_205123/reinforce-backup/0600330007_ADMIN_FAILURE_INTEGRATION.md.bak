@@ -1,0 +1,20 @@
+# ============================================================
+# ADMIN FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: admin
+scope: admin.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for admin.
+
+failure_codes:
+- ADMIN_INTEGRATION_IDENTITY_ERROR
+- ADMIN_INTEGRATION_ROLE_ERROR
+- ADMIN_INTEGRATION_ACTIVITY_ERROR
+- ADMIN_INTEGRATION_BOUNDARY_ERROR

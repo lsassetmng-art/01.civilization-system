@@ -1,0 +1,21 @@
+# ============================================================
+# EVENT ROLE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: event
+scope: event.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role structure for event.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

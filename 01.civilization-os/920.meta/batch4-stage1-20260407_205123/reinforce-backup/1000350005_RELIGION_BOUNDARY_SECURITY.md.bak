@@ -1,0 +1,18 @@
+# ============================================================
+# RELIGION BOUNDARY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: religion
+scope: religion.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related security behavior for religion.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

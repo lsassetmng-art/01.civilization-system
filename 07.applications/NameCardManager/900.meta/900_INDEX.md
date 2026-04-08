@@ -2,7 +2,7 @@
 # 900 META INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -25,3 +25,4 @@ files:
 - 900210_NAMECARD_UI_LABEL_META_NOTE.md
 - 900220_NAMECARD_CONSISTENCY_CHECK_META.md
 - 900230_NAMECARD_REVIEW_CHECKLIST_META.md
+- 900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md

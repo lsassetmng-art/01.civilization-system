@@ -1,0 +1,13 @@
+# ============================================================
+# INFRASTRUCTURE INDEX
+# ============================================================
+
+files:
+- 110_OVERVIEW.md
+- 110_INDEX.md
+- 110_APP_DEVELOPMENT_STUDIO_INFRASTRUCTURE_OVERVIEW.md
+- 110_TERMUX_INFRASTRUCTURE.md
+- 110_EDGE_FUNCTION_INFRASTRUCTURE.md
+- 110_ANDROID_COMPANION_INFRASTRUCTURE.md
+- 110_GIT_HOSTING_INFRASTRUCTURE.md
+- 110_STORAGE_INFRASTRUCTURE.md

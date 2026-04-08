@@ -1,0 +1,20 @@
+# ============================================================
+# TIME FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: time
+scope: time.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for time.
+
+failure_codes:
+- TIME_INFRASTRUCTURE_IDENTITY_ERROR
+- TIME_INFRASTRUCTURE_ROLE_ERROR
+- TIME_INFRASTRUCTURE_ACTIVITY_ERROR
+- TIME_INFRASTRUCTURE_BOUNDARY_ERROR

@@ -1,0 +1,20 @@
+# ============================================================
+# RELIGION ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: religion
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200350001_RELIGION_CORE_ARCHITECTURE.md
+- 0200350002_RELIGION_OVERVIEW_ARCHITECTURE.md
+- 0200350003_RELIGION_ENTITY_ARCHITECTURE.md
+- 0200350004_RELIGION_ROLE_ARCHITECTURE.md
+- 0200350005_RELIGION_ACTIVITY_ARCHITECTURE.md
+- 0200350006_RELIGION_BOUNDARY_ARCHITECTURE.md
+- 0200350007_RELIGION_VALIDATION_ARCHITECTURE.md
+- 0200350008_RELIGION_FAILURE_ARCHITECTURE.md

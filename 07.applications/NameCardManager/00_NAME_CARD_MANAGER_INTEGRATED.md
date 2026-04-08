@@ -6833,3 +6833,104 @@ review_checklist:
 
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md -->
+
+# ============================================================
+# ESTIMATE CREATOR
+# ============================================================
+
+status: canonical
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. POSITION
+# ============================================================
+
+EstimateCreator is an independent application under 07.applications.
+
+It is positioned as a BusinessOS-side simplified ERP-front application
+for estimate work.
+
+# ============================================================
+# 2. PRIMARY ROLE
+# ============================================================
+
+EstimateCreator provides:
+
+- rough estimate creation
+- offline estimate drafting
+- opportunity memo handling
+- meeting memo handling
+- app-internal sharing to preconfigured users
+- ERP rough estimate publication request
+- ERP inventory reference lookup
+
+# ============================================================
+# 3. COMMON CAPABILITY ALIGNMENT
+# ============================================================
+
+EstimateCreator aligns with NameCardManager for:
+
+- sharing pattern
+- sync pattern
+- ERP publication pattern
+
+These are reused through common BusinessOS capability paths
+rather than app-private incompatible logic.
+
+# ============================================================
+# 4. AUTHORITY BOUNDARY
+# ============================================================
+
+EstimateCreator is not the normal authoritative ERP formal estimate issuer.
+
+Default estimate class:
+
+- rough_estimate
+
+Formal ERP estimate authority normally remains in ERP.
+
+# ============================================================
+# 5. OFFLINE POSITION
+# ============================================================
+
+EstimateCreator supports offline drafting and preparation.
+
+Offline mode allows:
+
+- local estimate editing
+- local memo editing
+- local queueing
+- cached template usage
+
+Offline mode does not complete:
+
+- live ERP publication
+- live authoritative inventory confirmation
+- live external authority completion
+
+# ============================================================
+# 6. SHAREABLE OBJECTS
+# ============================================================
+
+App-internal shareable objects:
+
+- opportunity memo
+- meeting memo
+- rough estimate
+
+Sharing is limited to preconfigured users.
+
+# ============================================================
+# 7. PREMIUM FEATURES
+# ============================================================
+
+Premium option includes:
+
+- structured meeting memo
+- QA management
+- estimate templates
+
+Premium features are gated additions,
+not a separate architecture branch.
+

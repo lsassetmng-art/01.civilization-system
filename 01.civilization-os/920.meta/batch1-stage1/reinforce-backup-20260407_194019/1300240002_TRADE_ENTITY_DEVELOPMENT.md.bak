@@ -1,0 +1,18 @@
+# ============================================================
+# TRADE ENTITY DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: trade
+scope: trade.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related development behavior for trade.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

@@ -1,0 +1,20 @@
+# ============================================================
+# MARKET FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: market
+scope: market.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for market.
+
+failure_codes:
+- MARKET_DEVELOPMENT_IDENTITY_ERROR
+- MARKET_DEVELOPMENT_ROLE_ERROR
+- MARKET_DEVELOPMENT_ACTIVITY_ERROR
+- MARKET_DEVELOPMENT_BOUNDARY_ERROR

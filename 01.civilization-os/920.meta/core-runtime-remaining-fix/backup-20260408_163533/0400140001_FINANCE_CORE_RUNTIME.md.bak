@@ -1,0 +1,48 @@
+# ============================================================
+# FINANCE CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: finance
+scope: finance.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for finance.
+
+## runtime_scope
+Runtime covers balance visibility,
+reservation state,
+settlement state,
+dispute state,
+historical finance reference,
+and safe failure rendering.
+
+## validation_rules
+- finance context must resolve
+- holder/control basis must resolve
+- settlement/reservation scope must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid finance context
+- invalid balance basis
+- invalid settlement path
+- invalid disclosure scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish balance state,
+reservation state,
+settlement state,
+historical reference,
+and failure surface.
+
+## review_checklist
+- finance runtime scope is explicit
+- settlement-aware rendering is explicit
+- failure handling is explicit

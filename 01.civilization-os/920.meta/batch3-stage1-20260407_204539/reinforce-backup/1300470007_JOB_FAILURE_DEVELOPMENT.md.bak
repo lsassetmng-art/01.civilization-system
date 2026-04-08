@@ -1,0 +1,20 @@
+# ============================================================
+# JOB FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: job
+scope: job.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for job.
+
+failure_codes:
+- JOB_DEVELOPMENT_IDENTITY_ERROR
+- JOB_DEVELOPMENT_ROLE_ERROR
+- JOB_DEVELOPMENT_ACTIVITY_ERROR
+- JOB_DEVELOPMENT_BOUNDARY_ERROR

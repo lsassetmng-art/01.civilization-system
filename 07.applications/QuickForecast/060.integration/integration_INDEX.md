@@ -1,0 +1,21 @@
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+status: canonical
+application: QuickForecast
+layer: 060.integration
+owner: Boss
+prepared_by: Zero
+
+files:
+- integration_OVERVIEW.md
+- integration_INDEX.md
+- 060_QUICK_FORECAST_INTEGRATION.md
+- 060110_GENERAL_SIGNAL_INTEGRATION_CONTRACT.md
+- 060120_ERP_REFERENCE_INTEGRATION_CONTRACT.md
+- 060130_PROPOSAL_EXPORT_INTEGRATION_CONTRACT.md
+- 060140_PRO_APPROVAL_INTEGRATION_CONTRACT.md
+- 060150_GOVERNED_SUBMISSION_INTEGRATION_CONTRACT.md
+- 060160_SHARE_AND_PERMISSION_INTEGRATION_CONTRACT.md
+- 060170_ERP_HANDOFF_INTEGRATION_CONTRACT.md

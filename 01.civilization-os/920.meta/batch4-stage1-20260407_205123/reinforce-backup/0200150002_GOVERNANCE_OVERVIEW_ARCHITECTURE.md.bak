@@ -1,0 +1,22 @@
+# ============================================================
+# GOVERNANCE OVERVIEW ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: governance
+scope: governance.overview
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the overview structure for 015.governance.
+
+required_behavior:
+- overview must explain identity,
+  role,
+  activity,
+  boundary,
+  validation,
+  and failure topics.

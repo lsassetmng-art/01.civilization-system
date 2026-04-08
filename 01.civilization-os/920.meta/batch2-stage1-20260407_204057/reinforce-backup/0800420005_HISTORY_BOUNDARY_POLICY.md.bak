@@ -1,0 +1,18 @@
+# ============================================================
+# HISTORY BOUNDARY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: history
+scope: history.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related policy behavior for history.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

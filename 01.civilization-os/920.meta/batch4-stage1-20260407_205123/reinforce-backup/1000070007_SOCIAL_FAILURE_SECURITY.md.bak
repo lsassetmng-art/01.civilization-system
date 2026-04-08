@@ -1,0 +1,20 @@
+# ============================================================
+# SOCIAL FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: social
+scope: social.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for social.
+
+failure_codes:
+- SOCIAL_SECURITY_IDENTITY_ERROR
+- SOCIAL_SECURITY_ROLE_ERROR
+- SOCIAL_SECURITY_ACTIVITY_ERROR
+- SOCIAL_SECURITY_BOUNDARY_ERROR

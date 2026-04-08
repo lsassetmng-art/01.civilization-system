@@ -1,0 +1,25 @@
+# ============================================================
+# ENTITY DETAIL DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: detail
+subdomain: entity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines development guidance for entity detail.
+
+test_focus:
+- entity_ref binding
+- duplicate active rejection
+- snapshot retrieval
+- sealed visibility blocking
+- revision-aware snapshot linkage
+
+anti_patterns:
+- snapshot delivered as current-active without mode switch
+- sealed profile fields exposed through summary projection

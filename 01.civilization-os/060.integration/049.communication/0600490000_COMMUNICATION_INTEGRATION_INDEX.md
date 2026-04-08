@@ -1,0 +1,19 @@
+# ============================================================
+# COMMUNICATION INTEGRATION INDEX
+# ============================================================
+
+status: canonical
+layer: integration
+domain: communication
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0600490001_COMMUNICATION_CORE_INTEGRATION.md
+- 0600490002_COMMUNICATION_ENTITY_INTEGRATION.md
+- 0600490003_COMMUNICATION_ROLE_INTEGRATION.md
+- 0600490004_COMMUNICATION_ACTIVITY_INTEGRATION.md
+- 0600490005_COMMUNICATION_BOUNDARY_INTEGRATION.md
+- 0600490006_COMMUNICATION_VALIDATION_INTEGRATION.md
+- 0600490007_COMMUNICATION_FAILURE_INTEGRATION.md

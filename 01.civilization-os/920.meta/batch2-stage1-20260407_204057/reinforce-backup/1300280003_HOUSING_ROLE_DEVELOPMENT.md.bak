@@ -1,0 +1,21 @@
+# ============================================================
+# HOUSING ROLE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: housing
+scope: housing.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related development behavior for housing.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

@@ -1,0 +1,18 @@
+# ============================================================
+# SKILL BOUNDARY OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: skill
+scope: skill.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related operations behavior for skill.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

@@ -1,0 +1,53 @@
+# ============================================================
+# SECURITY CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: security
+scope: security.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for security.
+
+## policy_rules
+Security policy constrains:
+- which sensitive paths require verification
+- how masked output is handled
+- who may see security detail
+- when security paths must be denied or escalated
+
+## required_behavior
+- verification scope must be explicit
+- masking scope must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- bounded public security summary
+- operator-scoped detail
+- reviewer detail
+- historical security detail
+- denied output
+
+## allowed_denied_matrix
+- allow sensitive action only for valid verified scope
+- allow disclosure only for allowed actors
+- deny hidden privilege widening
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If security context,
+verification basis,
+masking scope,
+or disclosure scope is unclear,
+the security path must stop and escalate.
+
+## review_checklist
+- verification policy is explicit
+- masking policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit

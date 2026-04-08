@@ -1,0 +1,45 @@
+# ============================================================
+# LANGUAGE CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: language
+scope: language.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for language.
+
+## runtime_scope
+Runtime covers source-language display,
+translated/interpreted display,
+bounded wording changes,
+historical wording reference,
+and safe failure rendering.
+
+## validation_rules
+- language context must resolve
+- source meaning basis must resolve
+- translation/interpretation scope must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid language context
+- invalid source meaning basis
+- invalid translation scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish source wording,
+translated/interpreted wording,
+historical wording reference,
+and failure surface.
+
+## review_checklist
+- language runtime scope is explicit
+- source/translated rendering is explicit
+- failure handling is explicit

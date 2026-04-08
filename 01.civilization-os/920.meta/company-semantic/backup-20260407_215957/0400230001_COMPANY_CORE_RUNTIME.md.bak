@@ -1,0 +1,78 @@
+# ============================================================
+# COMPANY CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: company
+scope: company.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for company.
+
+## runtime_scope
+Runtime covers visible company state,
+role-aware access,
+validation gating,
+bounded state transitions,
+and safe failure rendering.
+
+## current_view_state
+Runtime-visible company state must distinguish:
+- active operational state
+- restricted state
+- suspended state
+- historical state
+- dissolved state
+
+## transition_rules
+Runtime transitions move through:
+entry,
+identity resolution,
+role resolution,
+validation,
+state execution,
+response rendering,
+and failure handling.
+
+## projection_rules
+Runtime may project company data
+for dashboards or operator views,
+but projected views must not replace company truth.
+
+## masking_rules
+Masked company output must remain identifiable as masked
+and must not resemble full-authority output.
+
+## validation_rules
+- company identity must resolve
+- role context must resolve
+- company state must resolve
+- activity scope must be valid
+- boundary scope must be valid
+
+## failure_modes
+- invalid company identity
+- invalid state transition
+- invalid role context
+- boundary conflict
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish identity,
+role,
+state,
+validation result,
+execution result,
+and failure surface.
+
+## review_checklist
+- runtime scope is explicit
+- company state rendering is explicit
+- validation gating is explicit
+- failure rendering is explicit
+- observability is explicit

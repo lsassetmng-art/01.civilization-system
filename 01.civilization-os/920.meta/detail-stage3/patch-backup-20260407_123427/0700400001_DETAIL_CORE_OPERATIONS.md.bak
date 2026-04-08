@@ -1,0 +1,113 @@
+# ============================================================
+# DETAIL CORE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the core operational handling of detail records.
+
+scope:
+Covers publishing, revising, hiding, archiving,
+inspecting, rolling back allowed exposure states,
+containing incidents, and preserving traceability.
+
+design_intent:
+Operational handling must preserve canonical detail truth
+while allowing controlled change.
+The core operations model exists so that detail remains
+reviewable, reversible where permitted, and safe under failure.
+
+canonical_rules:
+- Publication must occur only after validation and scope review.
+- Revision must preserve traceability to prior active detail.
+- Hide and archive actions must be explicit and reasoned.
+- Operational rollback must not silently destroy historical trace.
+- Incident handling must preserve evidence and containment state.
+- Manual intervention must remain auditable.
+
+required_behavior:
+- Support publication preparation and review.
+- Support active revision handling.
+- Support hide and archive handling.
+- Support incident containment and evidence preservation.
+- Support post-incident review and controlled reactivation where permitted.
+
+state_model:
+detail_operational_state:
+- prepared
+- under_review
+- publishable
+- active
+- hidden
+- archived
+- contained
+- incident_review
+
+detail_review_decision:
+- approved
+- rejected
+- returned_for_revision
+- escalated
+
+detail_containment_mode:
+- none
+- masked
+- blocked
+- frozen_for_review
+
+validation_rules:
+- publishable records must have valid target_ref and scope.
+- active records must have one primary active revision per active scope.
+- hidden records must not be delivered as current detail.
+- archived records must remain historical only.
+- contained records must preserve incident reason and timestamp.
+- rollback must preserve prior state trace.
+
+transition_rules:
+- prepared -> under_review
+- under_review -> publishable
+- under_review -> returned_for_revision
+- publishable -> active
+- active -> hidden
+- hidden -> active
+- active -> archived
+- active -> contained
+- contained -> incident_review
+- incident_review -> hidden
+- incident_review -> active
+- incident_review -> archived
+
+review_flow:
+1. detail prepared
+2. structural and scope validation executed
+3. reviewer decision applied
+4. approved detail becomes publishable
+5. publishable detail becomes active through explicit activation
+6. trace written for publication event
+
+containment_flow:
+1. unsafe exposure or inconsistency detected
+2. active detail moved to contained mode
+3. masking or blocking decision applied
+4. evidence and trace preserved
+5. incident review performed
+6. detail returned to hidden, active, or archived state
+
+failure_codes:
+- DETAIL_OP_REVIEW_REQUIRED
+- DETAIL_OP_VALIDATION_FAILED
+- DETAIL_OP_DUPLICATE_ACTIVE
+- DETAIL_OP_CONTAINMENT_REQUIRED
+- DETAIL_OP_REACTIVATION_DENIED
+- DETAIL_OP_TRACE_MISSING
+
+example_scenarios:
+- A revised detail record passes review and replaces the current active record.
+- An unsafe visibility exposure is detected and the detail is immediately contained.
+- A hidden record is restored to active only after explicit review and trace logging.

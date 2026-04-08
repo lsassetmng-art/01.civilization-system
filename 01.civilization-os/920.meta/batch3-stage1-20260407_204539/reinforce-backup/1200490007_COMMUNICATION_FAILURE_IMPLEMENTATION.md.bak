@@ -1,0 +1,20 @@
+# ============================================================
+# COMMUNICATION FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: communication
+scope: communication.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for communication.
+
+failure_codes:
+- COMMUNICATION_IMPLEMENTATION_IDENTITY_ERROR
+- COMMUNICATION_IMPLEMENTATION_ROLE_ERROR
+- COMMUNICATION_IMPLEMENTATION_ACTIVITY_ERROR
+- COMMUNICATION_IMPLEMENTATION_BOUNDARY_ERROR

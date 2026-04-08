@@ -1,0 +1,18 @@
+# ============================================================
+# ITEM ENTITY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: item
+scope: item.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related implementation behavior for item.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

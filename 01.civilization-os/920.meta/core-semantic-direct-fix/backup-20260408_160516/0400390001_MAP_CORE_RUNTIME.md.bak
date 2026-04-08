@@ -1,0 +1,21 @@
+# ============================================================
+# MAP CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: map
+scope: map.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for map.
+
+## runtime_scope
+Runtime covers spatial display,
+location-aware rendering,
+route/adjacency rendering,
+historical map reference,
+and safe failure rendering.

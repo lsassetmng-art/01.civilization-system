@@ -1,0 +1,54 @@
+# ============================================================
+# LIFE CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: life
+scope: life.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for life.
+
+## runtime_scope
+Runtime covers life-state visibility,
+current-vs-historical distinction,
+state transition display,
+bounded update surfaces,
+and safe failure rendering.
+
+## current_view_state
+Runtime-visible life state must distinguish:
+- current active state
+- changed state under review
+- restricted state
+- historical state
+- closed state
+
+## validation_rules
+- life identity/continuity basis must resolve
+- state basis must resolve
+- transition basis must be valid
+- disclosure scope must be valid
+
+## failure_modes
+- invalid continuity basis
+- invalid state transition
+- invalid historical merge
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish continuity basis,
+current state,
+historical state,
+transition result,
+and failure surface.
+
+## review_checklist
+- continuity-aware runtime is explicit
+- current/historical separation is explicit
+- failure handling is explicit

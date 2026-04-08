@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD FAILURE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: world
+scope: world.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related flow behavior for world.
+
+failure_codes:
+- WORLD_FLOW_IDENTITY_ERROR
+- WORLD_FLOW_ROLE_ERROR
+- WORLD_FLOW_ACTIVITY_ERROR
+- WORLD_FLOW_BOUNDARY_ERROR

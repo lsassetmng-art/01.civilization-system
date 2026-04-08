@@ -1,0 +1,18 @@
+# ============================================================
+# TRADE BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: trade
+scope: trade.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines authority and operational boundary for trade.
+
+required_behavior:
+- authority basis must be explicit
+- hidden boundary crossing is prohibited

@@ -1,0 +1,21 @@
+# ============================================================
+# INVENTORY ROLE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: inventory
+scope: inventory.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related infrastructure behavior for inventory.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

@@ -1,0 +1,90 @@
+# ============================================================
+# LOCATION DETAIL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: detail
+subdomain: location-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines how detailed truth for locations is structured and governed.
+
+scope:
+Location detail covers detailed semantics for zones,
+facilities, sub-areas, access boundaries, usage constraints,
+and location-specific explanatory context.
+
+design_intent:
+World map models define location existence and macro placement.
+Location detail defines the finer operational meaning of a place.
+
+canonical_rules:
+- Location detail must bind to a canonical location reference.
+- Location detail must not alter canonical map ownership by itself.
+- Access detail and zone detail must remain explicitly typed.
+- Historical location detail must remain queryable.
+
+required_behavior:
+- The architecture must support zone-level detail.
+- The architecture must support access-condition detail.
+- The architecture must support operational visibility boundaries.
+
+state_model:
+location_detail_profile:
+- location_detail_id
+- location_ref
+- zone_code
+- usage_type
+- detail_summary
+- access_scope
+- lifecycle_state
+
+access_condition_detail:
+- open
+- limited
+- permit-required
+- restricted
+- closed
+
+zone_detail_state:
+- planned
+- active
+- restricted
+- closed
+- historical
+
+validation_rules:
+- location_ref is required.
+- zone_code must be unique within a location scope.
+- access scope must be explicit.
+- closed zones must not be marked as open.
+- historical detail must not masquerade as current active detail.
+
+transition_rules:
+- planned -> active
+- active -> restricted
+- restricted -> closed
+- active -> historical
+- closed -> historical
+
+dependency:
+depends_on:
+- world map models
+- security access-control models
+- interface route consumers
+
+consumed_by:
+- map viewers
+- facility explorers
+- access rule evaluators
+- operational UI builders
+
+example_scenarios:
+- A market exists as a location.
+  Stall grouping, service windows, and internal usage zones belong to location detail.
+- A railway station exists as a location.
+  Platform-area rules, staff-only rooms, and restricted maintenance zones belong to location detail.

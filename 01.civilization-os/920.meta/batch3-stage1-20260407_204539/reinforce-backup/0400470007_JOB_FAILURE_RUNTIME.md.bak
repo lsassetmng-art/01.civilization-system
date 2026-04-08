@@ -1,0 +1,20 @@
+# ============================================================
+# JOB FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: job
+scope: job.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for job.
+
+failure_codes:
+- JOB_RUNTIME_IDENTITY_ERROR
+- JOB_RUNTIME_ROLE_ERROR
+- JOB_RUNTIME_ACTIVITY_ERROR
+- JOB_RUNTIME_BOUNDARY_ERROR

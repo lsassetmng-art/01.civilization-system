@@ -1,0 +1,18 @@
+# ============================================================
+# ITEM ACTIVITY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: item
+scope: item.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related security behavior for item.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

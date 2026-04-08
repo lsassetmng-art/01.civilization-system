@@ -1,0 +1,20 @@
+# ============================================================
+# VOTE FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: vote
+scope: vote.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for vote.
+
+failure_codes:
+- VOTE_POLICY_IDENTITY_ERROR
+- VOTE_POLICY_ROLE_ERROR
+- VOTE_POLICY_ACTIVITY_ERROR
+- VOTE_POLICY_BOUNDARY_ERROR

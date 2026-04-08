@@ -1,0 +1,56 @@
+# ============================================================
+# HOUSING CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: housing
+scope: housing.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for housing.
+
+## policy_rules
+Housing policy constrains:
+- who may occupy housing
+- who may enter or view housing details
+- what placement actions are allowed
+- what housing detail may be disclosed
+- when housing paths must be denied or escalated
+
+## required_behavior
+- occupancy eligibility must be explicit
+- access eligibility must be explicit
+- placement allowance must be explicit
+- disclosure scope must be explicit
+- denial behavior must be explicit
+
+## disclosure_matrix
+- public housing summary
+- resident-scoped detail
+- operator/reviewer detail
+- historical housing detail
+- denied output
+
+## allowed_denied_matrix
+- allow housing access only for valid role and scope
+- allow placement only for valid authority
+- allow disclosure only for allowed actors
+- deny hidden occupancy claims
+- deny disclosure beyond allowed scope
+
+## escalation_rules
+If housing identity,
+occupancy scope,
+access scope,
+or disclosure scope is unclear,
+the housing path must stop and escalate.
+
+## review_checklist
+- occupancy policy is explicit
+- access policy is explicit
+- disclosure matrix exists
+- denial behavior is explicit

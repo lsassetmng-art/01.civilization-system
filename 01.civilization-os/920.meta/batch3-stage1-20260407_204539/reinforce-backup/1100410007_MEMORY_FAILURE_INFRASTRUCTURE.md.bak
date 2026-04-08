@@ -1,0 +1,20 @@
+# ============================================================
+# MEMORY FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: memory
+scope: memory.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for memory.
+
+failure_codes:
+- MEMORY_INFRASTRUCTURE_IDENTITY_ERROR
+- MEMORY_INFRASTRUCTURE_ROLE_ERROR
+- MEMORY_INFRASTRUCTURE_ACTIVITY_ERROR
+- MEMORY_INFRASTRUCTURE_BOUNDARY_ERROR

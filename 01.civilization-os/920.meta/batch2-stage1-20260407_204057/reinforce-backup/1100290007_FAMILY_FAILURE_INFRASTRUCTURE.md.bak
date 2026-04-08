@@ -1,0 +1,20 @@
+# ============================================================
+# FAMILY FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: family
+scope: family.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for family.
+
+failure_codes:
+- FAMILY_INFRASTRUCTURE_IDENTITY_ERROR
+- FAMILY_INFRASTRUCTURE_ROLE_ERROR
+- FAMILY_INFRASTRUCTURE_ACTIVITY_ERROR
+- FAMILY_INFRASTRUCTURE_BOUNDARY_ERROR

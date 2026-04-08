@@ -1,0 +1,18 @@
+# ============================================================
+# CRIME ENTITY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: crime
+scope: crime.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related integration behavior for crime.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

@@ -1,0 +1,18 @@
+# ============================================================
+# VOTE ENTITY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: vote
+scope: vote.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related integration behavior for vote.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

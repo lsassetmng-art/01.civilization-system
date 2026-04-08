@@ -1,0 +1,20 @@
+# ============================================================
+# LEGAL FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: legal
+scope: legal.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for legal.
+
+failure_codes:
+- LEGAL_SECURITY_IDENTITY_ERROR
+- LEGAL_SECURITY_ROLE_ERROR
+- LEGAL_SECURITY_ACTIVITY_ERROR
+- LEGAL_SECURITY_BOUNDARY_ERROR

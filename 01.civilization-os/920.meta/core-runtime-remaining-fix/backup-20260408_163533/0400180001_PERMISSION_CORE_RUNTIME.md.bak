@@ -1,0 +1,45 @@
+# ============================================================
+# PERMISSION CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: permission
+scope: permission.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for permission.
+
+## runtime_scope
+Runtime covers permission visibility,
+allow/deny rendering,
+delegation-aware display,
+historical permission reference,
+and safe failure rendering.
+
+## validation_rules
+- permission basis must resolve
+- actor/resource/action scope must resolve
+- delegation scope must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid permission basis
+- invalid scope model
+- invalid delegation scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish granted/restricted/revoked state,
+delegation mode,
+historical reference,
+and failure surface.
+
+## review_checklist
+- permission runtime scope is explicit
+- allow/deny rendering is explicit
+- failure handling is explicit

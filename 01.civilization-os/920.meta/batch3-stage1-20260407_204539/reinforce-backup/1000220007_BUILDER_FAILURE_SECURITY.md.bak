@@ -1,0 +1,20 @@
+# ============================================================
+# BUILDER FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: builder
+scope: builder.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for builder.
+
+failure_codes:
+- BUILDER_SECURITY_IDENTITY_ERROR
+- BUILDER_SECURITY_ROLE_ERROR
+- BUILDER_SECURITY_ACTIVITY_ERROR
+- BUILDER_SECURITY_BOUNDARY_ERROR

@@ -1,0 +1,67 @@
+# ============================================================
+# LOCATION DETAIL RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: detail
+subdomain: location-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the runtime behavior for location detail.
+
+scope:
+Covers zone detail resolution, access-condition filtering,
+operational state handling, and historical location detail access.
+
+runtime_intent:
+Location detail runtime ensures that place-specific detailed truth
+is exposed correctly for maps, facilities, and controlled areas.
+
+runtime_rules:
+- Runtime must resolve location detail by location_ref.
+- Runtime must enforce access scope at runtime.
+- Runtime must not expose closed or restricted zones as open.
+- Runtime must preserve historical location detail queryability.
+
+required_behavior:
+- Resolve zone detail and access condition detail.
+- Filter location detail by current lifecycle state.
+- Support current mode and historical mode.
+- Support operational viewers and restricted viewers separately.
+
+state_model:
+location_detail_runtime_state:
+- unresolved
+- resolved
+- access_filtered
+- exposed
+- blocked
+- historical_only
+
+validation_rules:
+- location_ref is required.
+- zone_code must map to a known target scope.
+- access scope must be explicit.
+- closed and restricted location detail must not be rendered as public-open detail.
+
+transition_rules:
+- unresolved -> resolved
+- resolved -> access_filtered
+- access_filtered -> exposed
+- access_filtered -> blocked
+- resolved -> historical_only
+
+failure_codes:
+- LOCATION_DETAIL_REF_MISSING
+- LOCATION_DETAIL_ZONE_INVALID
+- LOCATION_DETAIL_ACCESS_DENIED
+- LOCATION_DETAIL_LIFECYCLE_CONFLICT
+
+example_runtime_scenarios:
+- A station platform detail is exposed to public navigation viewers.
+- Staff-only room detail is blocked for public viewers.
+- Closed zone detail appears only in historical or authorized operational mode.

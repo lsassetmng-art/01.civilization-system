@@ -1,0 +1,20 @@
+# ============================================================
+# EDUCATION FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: education
+scope: education.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for education.
+
+failure_codes:
+- EDUCATION_DEVELOPMENT_IDENTITY_ERROR
+- EDUCATION_DEVELOPMENT_ROLE_ERROR
+- EDUCATION_DEVELOPMENT_ACTIVITY_ERROR
+- EDUCATION_DEVELOPMENT_BOUNDARY_ERROR

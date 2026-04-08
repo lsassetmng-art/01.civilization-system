@@ -1,0 +1,21 @@
+# ============================================================
+# HOUSING ROLE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: housing
+scope: housing.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related integration behavior for housing.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

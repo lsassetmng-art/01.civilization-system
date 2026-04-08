@@ -1,0 +1,25 @@
+# ============================================================
+# LOCATION DETAIL DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: detail
+subdomain: location-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines development guidance for location detail.
+
+test_focus:
+- location_ref binding
+- restricted-zone masking
+- closed-zone filtering
+- historical layout retrieval
+- open versus restricted classification integrity
+
+anti_patterns:
+- restricted zone served through public navigation path
+- historical layout mixed into current map response

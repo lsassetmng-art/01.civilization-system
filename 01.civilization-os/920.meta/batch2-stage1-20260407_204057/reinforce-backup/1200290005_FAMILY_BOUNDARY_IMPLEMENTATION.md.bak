@@ -1,0 +1,18 @@
+# ============================================================
+# FAMILY BOUNDARY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: family
+scope: family.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related implementation behavior for family.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

@@ -1,0 +1,18 @@
+# ============================================================
+# ADMIN ACTIVITY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: admin
+scope: admin.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity structure for admin.
+
+required_behavior:
+- activity scope must be declared
+- prohibited activity must be blockable

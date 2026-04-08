@@ -1,0 +1,21 @@
+# ============================================================
+# AI ROLE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: ai
+scope: ai.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related integration behavior for ai.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

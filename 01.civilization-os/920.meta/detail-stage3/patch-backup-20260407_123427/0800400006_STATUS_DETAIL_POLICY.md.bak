@@ -1,0 +1,30 @@
+# ============================================================
+# STATUS DETAIL POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: detail
+subdomain: status-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines policy rules for status detail.
+
+policy_focus:
+- alert-safe disclosure
+- internal root-cause restriction
+- incident-history retention and masking
+- recovery-history disclosure rules
+
+disclosure_matrix:
+- public_alert: public allowed in summary form
+- operational_status_detail: internal only
+- internal_root_cause: restricted
+- incident_history: history/audit mode only
+
+validation_rules:
+- restricted internal cause detail must not be included in public alerts.
+- recovery history must preserve incident linkage.

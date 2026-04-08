@@ -1,0 +1,20 @@
+# ============================================================
+# ASSET FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: asset
+scope: asset.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for asset.
+
+failure_codes:
+- ASSET_INTEGRATION_IDENTITY_ERROR
+- ASSET_INTEGRATION_ROLE_ERROR
+- ASSET_INTEGRATION_ACTIVITY_ERROR
+- ASSET_INTEGRATION_BOUNDARY_ERROR

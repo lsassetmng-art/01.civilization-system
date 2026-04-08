@@ -1,0 +1,18 @@
+# ============================================================
+# LIFE ENTITY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: life
+scope: life.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity structure for life.
+
+required_behavior:
+- entity meaning must remain explicit
+- lifecycle must remain reviewable

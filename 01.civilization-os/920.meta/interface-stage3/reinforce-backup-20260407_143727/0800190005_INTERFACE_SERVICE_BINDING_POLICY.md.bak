@@ -1,0 +1,18 @@
+# ============================================================
+# INTERFACE SERVICE BINDING POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: interface
+scope: interface.service-binding
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines service-binding policy behavior.
+
+required_behavior:
+- binding must be explicit
+- binding must be reviewable

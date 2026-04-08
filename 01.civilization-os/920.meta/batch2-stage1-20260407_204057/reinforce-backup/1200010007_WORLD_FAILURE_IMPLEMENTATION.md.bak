@@ -1,0 +1,20 @@
+# ============================================================
+# WORLD FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: world
+scope: world.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for world.
+
+failure_codes:
+- WORLD_IMPLEMENTATION_IDENTITY_ERROR
+- WORLD_IMPLEMENTATION_ROLE_ERROR
+- WORLD_IMPLEMENTATION_ACTIVITY_ERROR
+- WORLD_IMPLEMENTATION_BOUNDARY_ERROR

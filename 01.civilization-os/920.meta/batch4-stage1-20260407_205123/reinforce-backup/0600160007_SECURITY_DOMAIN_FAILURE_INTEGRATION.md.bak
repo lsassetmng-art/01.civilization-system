@@ -1,0 +1,20 @@
+# ============================================================
+# SECURITY_DOMAIN FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: security
+scope: security.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for security.
+
+failure_codes:
+- SECURITY_DOMAIN_INTEGRATION_IDENTITY_ERROR
+- SECURITY_DOMAIN_INTEGRATION_ROLE_ERROR
+- SECURITY_DOMAIN_INTEGRATION_ACTIVITY_ERROR
+- SECURITY_DOMAIN_INTEGRATION_BOUNDARY_ERROR

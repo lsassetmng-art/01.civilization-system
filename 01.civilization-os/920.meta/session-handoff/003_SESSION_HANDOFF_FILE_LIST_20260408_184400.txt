@@ -1,0 +1,11 @@
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/core-semantic-finalize/000_CORE_SEMANTIC_FINAL_MASTER_POINTER_20260408_175613.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/core-semantic-finalize/001_CORE_SEMANTIC_FINAL_SUMMARY_20260408_175613.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/post-core-rebind-finalize/000_POST_CORE_REBIND_FINAL_MASTER_20260408_183208.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/post-core-rebind-finalize/001_POST_CORE_REBIND_FINAL_SUMMARY_20260408_183208.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/post-core-progress/000_POST_CORE_PROGRESS_MASTER_20260408_183329.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/top-level-progress/000_TOP_LEVEL_PROGRESS_MASTER_20260408_183802.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/top-level-progress/001_ROOM_STATE_POINTER_20260408_183802.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/top-level-progress/002_MILESTONE_SUMMARY_20260408_183802.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/batch-master-refresh/000_BATCH_MASTER_REFRESH_20260408_183433.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/batch-master-refresh/001_BATCH1_REFRESH_POINTER_20260408_183433.md
+/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/920.meta/batch-master-refresh/002_BATCH1_REFRESH_TABLE_20260408_183433.tsv

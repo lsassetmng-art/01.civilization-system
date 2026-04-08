@@ -1,0 +1,20 @@
+# ============================================================
+# GOVERNANCE FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: governance
+scope: governance.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for governance.
+
+failure_codes:
+- GOVERNANCE_IMPLEMENTATION_IDENTITY_ERROR
+- GOVERNANCE_IMPLEMENTATION_ROLE_ERROR
+- GOVERNANCE_IMPLEMENTATION_ACTIVITY_ERROR
+- GOVERNANCE_IMPLEMENTATION_BOUNDARY_ERROR

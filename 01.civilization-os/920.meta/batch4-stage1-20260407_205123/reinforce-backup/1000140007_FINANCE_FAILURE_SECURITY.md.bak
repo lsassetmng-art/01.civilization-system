@@ -1,0 +1,20 @@
+# ============================================================
+# FINANCE FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: finance
+scope: finance.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for finance.
+
+failure_codes:
+- FINANCE_SECURITY_IDENTITY_ERROR
+- FINANCE_SECURITY_ROLE_ERROR
+- FINANCE_SECURITY_ACTIVITY_ERROR
+- FINANCE_SECURITY_BOUNDARY_ERROR

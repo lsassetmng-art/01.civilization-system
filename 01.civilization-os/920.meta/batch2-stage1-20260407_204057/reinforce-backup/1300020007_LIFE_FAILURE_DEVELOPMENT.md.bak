@@ -1,0 +1,20 @@
+# ============================================================
+# LIFE FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: life
+scope: life.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for life.
+
+failure_codes:
+- LIFE_DEVELOPMENT_IDENTITY_ERROR
+- LIFE_DEVELOPMENT_ROLE_ERROR
+- LIFE_DEVELOPMENT_ACTIVITY_ERROR
+- LIFE_DEVELOPMENT_BOUNDARY_ERROR

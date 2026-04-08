@@ -1,0 +1,20 @@
+# ============================================================
+# AI FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: ai
+scope: ai.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for ai.
+
+failure_codes:
+- AI_OPERATIONS_IDENTITY_ERROR
+- AI_OPERATIONS_ROLE_ERROR
+- AI_OPERATIONS_ACTIVITY_ERROR
+- AI_OPERATIONS_BOUNDARY_ERROR

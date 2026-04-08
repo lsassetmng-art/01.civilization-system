@@ -1,0 +1,99 @@
+# ============================================================
+# DETAIL CORE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the core process flow for detail handling.
+
+scope:
+Covers the canonical sequence for requesting,
+resolving, validating, filtering, delivering,
+revising, hiding, and archiving detail.
+
+flow_intent:
+The core detail flow exists to make sure that all detail consumers
+receive structurally valid and scope-safe detail through a predictable sequence.
+
+canonical_rules:
+- Flow must begin with a valid target_ref or equivalent canonical context.
+- Flow must reject unbound detail requests.
+- Flow must validate before exposing.
+- Flow must filter by visibility and lifecycle before consumer delivery.
+- Flow must preserve explicit failure output.
+- Flow must preserve archival and historical query branches.
+
+required_behavior:
+- Support current-mode reads.
+- Support historical-mode reads.
+- Support audit-mode reads.
+- Support revision and supersession branches.
+- Support fail-closed rejection.
+
+flow_state_model:
+flow_request_state:
+- requested
+- target_bound
+- detail_resolved
+- validated
+- filtered
+- delivered
+- rejected
+- archived
+- historical_delivered
+
+validation_gate:
+- pass
+- fail
+
+visibility_gate:
+- allowed
+- masked
+- blocked
+
+canonical_sequence:
+1. accept request
+2. bind target context
+3. resolve detail candidates
+4. validate structure and scope
+5. apply lifecycle filter
+6. apply visibility filter
+7. produce consumer-safe detail output
+8. record trace where required
+
+rejection_sequence:
+1. detect invalid or incomplete request
+2. assign explicit failure code
+3. block downstream exposure
+4. return rejection result
+
+revision_sequence:
+1. receive revised detail candidate
+2. validate revision linkage
+3. supersede prior active detail where allowed
+4. expose new active revision
+5. preserve old revision for history
+
+archival_sequence:
+1. mark detail as archived or historical
+2. remove from active current delivery
+3. preserve for historical and audit queries
+
+failure_codes:
+- DETAIL_FLOW_TARGET_BIND_FAILED
+- DETAIL_FLOW_VALIDATION_FAILED
+- DETAIL_FLOW_VISIBILITY_BLOCKED
+- DETAIL_FLOW_LIFECYCLE_BLOCKED
+- DETAIL_FLOW_REVISION_LINK_INVALID
+- DETAIL_FLOW_CONSUMER_OUTPUT_BLOCKED
+
+example_scenarios:
+- A public detail request succeeds through validation and visibility gates.
+- A restricted detail request resolves but is blocked before delivery.
+- A revised detail set replaces the active version while preserving history.

@@ -1,0 +1,20 @@
+# ============================================================
+# GOVERNANCE ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: governance
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200150001_GOVERNANCE_CORE_ARCHITECTURE.md
+- 0200150002_GOVERNANCE_OVERVIEW_ARCHITECTURE.md
+- 0200150003_GOVERNANCE_ENTITY_ARCHITECTURE.md
+- 0200150004_GOVERNANCE_ROLE_ARCHITECTURE.md
+- 0200150005_GOVERNANCE_ACTIVITY_ARCHITECTURE.md
+- 0200150006_GOVERNANCE_BOUNDARY_ARCHITECTURE.md
+- 0200150007_GOVERNANCE_VALIDATION_ARCHITECTURE.md
+- 0200150008_GOVERNANCE_FAILURE_ARCHITECTURE.md

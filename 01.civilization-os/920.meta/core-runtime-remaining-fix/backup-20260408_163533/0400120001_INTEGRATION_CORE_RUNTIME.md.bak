@@ -1,0 +1,99 @@
+# ============================================================
+# INTEGRATION CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: integration
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core runtime behavior for the integration domain.
+
+scope:
+Covers active contract resolution,
+authority enforcement,
+projection filtering,
+import acceptance or rejection,
+event-handoff control,
+and integration trace emission.
+
+runtime_rules:
+- Runtime must resolve contract by contract type and scope.
+- Runtime must validate source and target scope.
+- Runtime must require authority basis where non-public transfer occurs.
+- Runtime must reject canonical overwrite without authorized path.
+- Runtime must emit explicit trace for sensitive export, import, and rejection.
+- Runtime must separate historical from live delivery modes.
+
+required_behavior:
+- Resolve active integration contract.
+- Filter export by projection scope.
+- Validate inbound import schema and authority.
+- Accept proposal path without canonical overwrite where allowed.
+- Reject unauthorized mutation attempts.
+- Emit trace and failure codes deterministically.
+
+state_model:
+integration_runtime_state:
+- unresolved
+- contract_resolved
+- scope_validated
+- projected
+- imported_as_proposal
+- delivered
+- blocked
+- historical_only
+
+delivery_mode:
+- internal_current
+- external_projected
+- live_event
+- replay_event
+- audit
+
+validation_rules:
+- contract_code is required.
+- contract_type is required.
+- source_scope is required.
+- target_scope is required.
+- authority_basis is required for restricted or mutating transfer.
+- live and historical delivery modes must not be mixed silently.
+- unauthorized overwrite attempt must be rejected.
+
+transition_rules:
+- unresolved -> contract_resolved
+- contract_resolved -> scope_validated
+- scope_validated -> projected
+- projected -> delivered
+- scope_validated -> imported_as_proposal
+- invalid path -> blocked
+- delivered -> historical_only for historical contract reads
+
+actor_matrix:
+- internal consumer -> internal_current where allowed
+- external consumer -> external_projected where allowed
+- integration actor -> transports contract, does not assume source ownership
+- auditor -> audit or historical delivery only where authorized
+
+decision_matrix:
+- valid contract + allowed scope + non-mutating export -> deliver
+- valid import + proposal path + no overwrite -> imported_as_proposal
+- overwrite attempt + no authority -> blocked
+- replay event request + replay label present -> deliver replay
+- replay event request + missing replay label -> block
+
+failure_codes:
+- INTEGRATION_RT_CONTRACT_CODE_MISSING
+- INTEGRATION_RT_CONTRACT_TYPE_MISSING
+- INTEGRATION_RT_SCOPE_INVALID
+- INTEGRATION_RT_AUTHORITY_REQUIRED
+- INTEGRATION_RT_OVERWRITE_DENIED
+- INTEGRATION_RT_TRACE_REQUIRED
+- INTEGRATION_RT_MODE_CONFLICT
+
+example_scenarios:
+- An internal consumer receives projected internal data under an active internal contract.
+- An external import is accepted as proposal path only and cannot overwrite canonical truth.

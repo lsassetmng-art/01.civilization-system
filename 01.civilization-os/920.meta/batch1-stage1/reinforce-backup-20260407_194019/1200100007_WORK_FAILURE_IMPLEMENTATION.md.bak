@@ -1,0 +1,20 @@
+# ============================================================
+# WORK FAILURE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: work
+scope: work.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related implementation behavior for work.
+
+failure_codes:
+- WORK_IMPLEMENTATION_IDENTITY_ERROR
+- WORK_IMPLEMENTATION_ROLE_ERROR
+- WORK_IMPLEMENTATION_ACTIVITY_ERROR
+- WORK_IMPLEMENTATION_BOUNDARY_ERROR

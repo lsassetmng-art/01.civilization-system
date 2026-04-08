@@ -1,0 +1,18 @@
+# ============================================================
+# GOVERNANCE BOUNDARY DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: governance
+scope: governance.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related development behavior for governance.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

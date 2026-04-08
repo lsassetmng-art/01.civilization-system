@@ -1,0 +1,78 @@
+# ============================================================
+# PLAYER CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: player
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core policy rules for player records.
+
+scope:
+Covers disclosure, lifecycle control,
+retention, role/progress/boundary governance,
+and overwrite constraints.
+
+design_intent:
+Player policy must protect participation truth.
+It defines who may see what,
+who may change lifecycle-relevant state,
+and how historical player states must persist.
+
+policy_classes:
+disclosure_class:
+- public_summary
+- self_only
+- internal
+- restricted
+- audit_only
+
+retention_class:
+- operational
+- historical_required
+- audit_required
+
+lifecycle_control_class:
+- standard_control
+- restricted_control
+- high_trust_control
+- audit_only
+
+policy_rules:
+- Every player record must declare disclosure_class.
+- Every player record must declare retention_class.
+- Archived or historical-only player state must not be presented as active live state.
+- Restricted player context must not be exported publicly in raw form.
+- Lifecycle-affecting mutation requires appropriate control class.
+- Audit-required player history must not be silently deleted.
+
+allowed_denied_matrix:
+- public_summary + public consumer -> allowed
+- self_only + unrelated consumer -> denied
+- internal + public consumer -> denied
+- restricted + non-authorized consumer -> denied
+- historical_required + live substitution -> denied
+- audit_required + silent deletion -> denied
+
+validation_rules:
+- player_ref is required.
+- disclosure_class is required.
+- retention_class is required.
+- historical output must carry historical labeling where applicable.
+- external overwrite attempt without authority is prohibited.
+
+failure_codes:
+- PLAYER_POLICY_REF_MISSING
+- PLAYER_POLICY_DISCLOSURE_CLASS_MISSING
+- PLAYER_POLICY_RETENTION_CLASS_MISSING
+- PLAYER_POLICY_LIVE_HISTORY_CONFLICT
+- PLAYER_POLICY_AUTHORITY_REQUIRED
+- PLAYER_POLICY_OVERWRITE_DENIED
+
+example_scenarios:
+- A public surface may show a safe player summary only.
+- A suspended or archived player cannot be represented as currently active.

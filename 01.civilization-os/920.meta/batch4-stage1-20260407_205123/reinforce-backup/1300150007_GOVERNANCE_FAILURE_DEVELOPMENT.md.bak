@@ -1,0 +1,20 @@
+# ============================================================
+# GOVERNANCE FAILURE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: governance
+scope: governance.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related development behavior for governance.
+
+failure_codes:
+- GOVERNANCE_DEVELOPMENT_IDENTITY_ERROR
+- GOVERNANCE_DEVELOPMENT_ROLE_ERROR
+- GOVERNANCE_DEVELOPMENT_ACTIVITY_ERROR
+- GOVERNANCE_DEVELOPMENT_BOUNDARY_ERROR

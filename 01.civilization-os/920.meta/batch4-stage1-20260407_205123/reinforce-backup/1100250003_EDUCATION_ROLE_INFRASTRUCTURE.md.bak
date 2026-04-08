@@ -1,0 +1,21 @@
+# ============================================================
+# EDUCATION ROLE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: education
+scope: education.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related infrastructure behavior for education.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

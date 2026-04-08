@@ -1,0 +1,18 @@
+# ============================================================
+# MEMORY BOUNDARY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: memory
+scope: memory.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related policy behavior for memory.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

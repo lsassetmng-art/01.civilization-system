@@ -1,0 +1,18 @@
+# ============================================================
+# HISTORY ACTIVITY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: history
+scope: history.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related integration behavior for history.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

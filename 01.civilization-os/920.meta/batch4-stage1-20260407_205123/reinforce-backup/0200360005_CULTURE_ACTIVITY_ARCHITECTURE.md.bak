@@ -1,0 +1,18 @@
+# ============================================================
+# CULTURE ACTIVITY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: culture
+scope: culture.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity structure for culture.
+
+required_behavior:
+- activity scope must be declared
+- prohibited activity must be blockable

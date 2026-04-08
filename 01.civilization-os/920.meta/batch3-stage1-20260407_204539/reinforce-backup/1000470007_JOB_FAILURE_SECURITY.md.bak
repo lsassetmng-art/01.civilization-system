@@ -1,0 +1,20 @@
+# ============================================================
+# JOB FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: job
+scope: job.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for job.
+
+failure_codes:
+- JOB_SECURITY_IDENTITY_ERROR
+- JOB_SECURITY_ROLE_ERROR
+- JOB_SECURITY_ACTIVITY_ERROR
+- JOB_SECURITY_BOUNDARY_ERROR

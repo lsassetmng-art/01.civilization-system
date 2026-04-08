@@ -1,0 +1,79 @@
+# ============================================================
+# 0200240005 TRADE ACTIVITY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: 0200240005
+scope: 0200240005.trade.activity.architecture
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the architectural role of 0200240005 TRADE ACTIVITY ARCHITECTURE
+as a bounded canonical structure.
+
+## design_intent
+This subject exists to make identity,
+role,
+activity,
+boundary,
+validation,
+and failure meaning explicit
+before later layers implement them.
+
+## required_behavior
+- identity meaning must remain explicit
+- role meaning must remain explicit
+- activity meaning must remain explicit
+- boundary meaning must remain explicit
+- validation meaning must remain explicit
+- failure meaning must remain explicit
+
+## canonical_rules
+- projections must not overwrite truth
+- hidden authority crossing is prohibited
+- state transitions must remain reviewable
+- ambiguity fails closed
+
+## state_model
+This subject distinguishes
+registered state,
+active state,
+restricted state,
+historical state,
+and closed state.
+
+## transition_rules
+A transition must preserve identity,
+boundary,
+activity meaning,
+and reviewability.
+
+## actor_boundary
+- owner
+- operator
+- reviewer
+- approver
+- adapter
+
+## decision_matrix
+- if identity is incomplete, stop processing
+- if boundary is unclear, fail closed
+- if activity exceeds scope, route to review
+- if state is historical, preserve historical distinction
+- if closure occurs, preserve history and denial behavior
+
+## example_scenarios
+- normal active state handling
+- review-required state transition
+- denied action due to boundary conflict
+- historical-state reference handling
+
+## review_checklist
+- architectural intent is explicit
+- state model is explicit
+- transition rules are explicit
+- boundaries are explicit
+- failure meaning is explicit

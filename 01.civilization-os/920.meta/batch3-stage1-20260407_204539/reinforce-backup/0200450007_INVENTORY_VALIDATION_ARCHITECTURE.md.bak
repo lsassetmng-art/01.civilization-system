@@ -1,0 +1,20 @@
+# ============================================================
+# INVENTORY VALIDATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: inventory
+scope: inventory.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation architecture for inventory.
+
+validation_matrix:
+- identity check
+- role check
+- activity check
+- boundary check

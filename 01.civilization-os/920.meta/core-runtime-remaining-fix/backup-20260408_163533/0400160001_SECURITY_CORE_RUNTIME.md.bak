@@ -1,0 +1,45 @@
+# ============================================================
+# SECURITY CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: security
+scope: security.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for security.
+
+## runtime_scope
+Runtime covers security-aware display,
+verification state,
+restricted/escalated state,
+masked output rendering,
+and safe failure rendering.
+
+## validation_rules
+- security context must resolve
+- verification basis must resolve
+- trust boundary must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid security context
+- invalid verification basis
+- invalid trust boundary
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish verification result,
+restriction/escalation state,
+masking result,
+and failure surface.
+
+## review_checklist
+- security runtime scope is explicit
+- masking-aware rendering is explicit
+- failure handling is explicit

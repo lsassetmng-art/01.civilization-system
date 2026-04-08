@@ -1,0 +1,21 @@
+# ============================================================
+# VOTE CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: vote
+scope: vote.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for vote.
+
+## runtime_scope
+Runtime covers vote visibility,
+eligibility-aware display,
+ballot/count state,
+historical vote reference,
+and safe failure rendering.

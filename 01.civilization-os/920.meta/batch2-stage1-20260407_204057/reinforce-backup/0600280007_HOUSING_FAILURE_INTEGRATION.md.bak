@@ -1,0 +1,20 @@
+# ============================================================
+# HOUSING FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: housing
+scope: housing.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for housing.
+
+failure_codes:
+- HOUSING_INTEGRATION_IDENTITY_ERROR
+- HOUSING_INTEGRATION_ROLE_ERROR
+- HOUSING_INTEGRATION_ACTIVITY_ERROR
+- HOUSING_INTEGRATION_BOUNDARY_ERROR

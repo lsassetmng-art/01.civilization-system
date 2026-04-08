@@ -1,0 +1,20 @@
+# ============================================================
+# TRANSPORT FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: transport
+scope: transport.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for transport.
+
+failure_codes:
+- TRANSPORT_INTEGRATION_IDENTITY_ERROR
+- TRANSPORT_INTEGRATION_ROLE_ERROR
+- TRANSPORT_INTEGRATION_ACTIVITY_ERROR
+- TRANSPORT_INTEGRATION_BOUNDARY_ERROR

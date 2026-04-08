@@ -1,0 +1,33 @@
+# ============================================================
+# INTERFACE CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: interface
+scope: interface.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the bounded architectural role of 019.interface.
+
+required_behavior:
+- route intent must be explicit
+- actor boundary must be explicit
+- screen and service relation must be explicit
+- validation and failure behavior must be explicit
+
+actor_boundary:
+- viewer
+- operator
+- reviewer
+- approver
+- adapter
+
+decision_matrix:
+- read surface stays bounded
+- action surface requires validated route
+- masked outputs remain visibly masked
+- ambiguity fails closed

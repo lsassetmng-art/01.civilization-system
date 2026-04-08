@@ -1,0 +1,18 @@
+# ============================================================
+# FINANCE BOUNDARY SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: finance
+scope: finance.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related security behavior for finance.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

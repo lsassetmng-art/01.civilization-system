@@ -1,0 +1,18 @@
+# ============================================================
+# PERMISSION ENTITY OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: permission
+scope: permission.entity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines entity-related operations behavior for permission.
+
+required_behavior:
+- entity meaning must be preserved
+- entity state must be reviewable

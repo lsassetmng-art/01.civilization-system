@@ -1,0 +1,18 @@
+# ============================================================
+# RELIGION ACTIVITY OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: religion
+scope: religion.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related operations behavior for religion.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

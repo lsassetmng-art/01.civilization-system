@@ -1,0 +1,20 @@
+# ============================================================
+# ORGANIZATION FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: organization
+scope: organization.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for organization.
+
+failure_codes:
+- ORGANIZATION_OPERATIONS_IDENTITY_ERROR
+- ORGANIZATION_OPERATIONS_ROLE_ERROR
+- ORGANIZATION_OPERATIONS_ACTIVITY_ERROR
+- ORGANIZATION_OPERATIONS_BOUNDARY_ERROR

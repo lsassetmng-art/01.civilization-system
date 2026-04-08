@@ -1,0 +1,82 @@
+# ============================================================
+# 0800230002 COMPANY ENTITY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: 0800230002
+scope: 0800230002.company.entity.policy
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for 0800230002 COMPANY ENTITY POLICY.
+
+## required_behavior
+- identity scope must be explicit
+- disclosure must be explicit
+- activity allowance must be explicit
+- boundary allowance must be explicit
+- denial behavior must be explicit
+
+## policy_rules
+Policy constrains subject behavior
+by identity,
+role,
+activity,
+boundary,
+and disclosure,
+not by convenience.
+
+## actor_matrix
+- owner
+- operator
+- reviewer
+- approver
+- adapter
+
+## disclosure_matrix
+- bounded read output
+- masked output
+- review-only output
+- operator-detailed output
+- denied output
+
+## allowed_denied_matrix
+- allow bounded read for allowed actors
+- allow action only for valid scope
+- allow review only for declared review scope
+- deny hidden boundary crossing
+- deny hidden widening of output scope
+- deny output scope widening
+
+## escalation_rules
+When identity,
+boundary,
+or activity meaning is unclear,
+the subject path must stop and escalate.
+
+## failure_codes
+- SUBJECT_POLICY_IDENTITY_DENIED
+- SUBJECT_POLICY_ACTIVITY_DENIED
+- SUBJECT_POLICY_BOUNDARY_DENIED
+- SUBJECT_POLICY_DISCLOSURE_DENIED
+- SUBJECT_POLICY_ESCALATION_REQUIRED
+
+## review_checklist
+- actor matrix exists
+- disclosure matrix exists
+- allowed/denied matrix exists
+- escalation rules exist
+- fail-closed policy is explicit
+
+## acceptance_criteria
+This policy subject is accepted only when
+identity scope,
+disclosure scope,
+allowed behavior,
+denied behavior,
+escalation behavior,
+and fail-closed intent
+are all explicit and reviewable.

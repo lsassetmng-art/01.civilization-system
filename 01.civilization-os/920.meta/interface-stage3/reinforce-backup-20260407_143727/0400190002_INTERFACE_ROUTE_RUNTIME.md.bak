@@ -1,0 +1,21 @@
+# ============================================================
+# INTERFACE ROUTE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: interface
+scope: interface.route
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines route-related runtime behavior.
+
+route_table:
+- route key
+- actor scope
+- target
+- output mode
+- failure mode

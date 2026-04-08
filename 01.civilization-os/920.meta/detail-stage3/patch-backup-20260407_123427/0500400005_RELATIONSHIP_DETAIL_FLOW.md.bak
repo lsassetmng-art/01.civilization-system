@@ -1,0 +1,73 @@
+# ============================================================
+# RELATIONSHIP DETAIL FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: detail
+subdomain: relationship-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the process flow for relationship detail handling.
+
+scope:
+Covers relationship request, subject-object binding,
+relation-type validation, trust-state handling,
+visibility filtering, and historical relation inspection.
+
+flow_intent:
+Relationship detail flow ensures that social,
+organizational, diplomatic, and operational relations
+are exposed with the correct nuance and the correct scope.
+
+canonical_rules:
+- Relationship detail flow must bind subject_ref and object_ref.
+- Relation type and direction must be validated before exposure.
+- Broken relation records must not enter active delivery flow.
+- Historical relation inspection must remain separated from current delivery.
+
+required_behavior:
+- Resolve relation detail candidates.
+- Validate active relation semantics.
+- Filter by visibility and lifecycle.
+- Support proposed, active, suspended, broken, and historical branches.
+
+flow_state_model:
+relationship_detail_flow_state:
+- requested
+- relation_bound
+- detail_resolved
+- validated
+- filtered
+- active_delivered
+- blocked
+- historical_delivered
+
+current_relation_sequence:
+1. receive relationship detail request
+2. bind subject_ref and object_ref
+3. resolve active relation detail
+4. validate relation type and direction
+5. apply visibility filter
+6. deliver active relation detail
+
+historical_relation_sequence:
+1. receive history-mode relation request
+2. resolve broken or historical relation detail
+3. validate timeline linkage
+4. deliver history-safe relation output
+
+failure_codes:
+- RELATIONSHIP_DETAIL_FLOW_SUBJECT_MISSING
+- RELATIONSHIP_DETAIL_FLOW_OBJECT_MISSING
+- RELATIONSHIP_DETAIL_FLOW_TYPE_INVALID
+- RELATIONSHIP_DETAIL_FLOW_DIRECTION_INVALID
+- RELATIONSHIP_DETAIL_FLOW_ACTIVE_HISTORICAL_MIX
+
+example_scenarios:
+- Public diplomacy view receives active alliance detail.
+- Internal governance view receives additional trust nuance.
+- Historical review receives suspended and broken relation detail.

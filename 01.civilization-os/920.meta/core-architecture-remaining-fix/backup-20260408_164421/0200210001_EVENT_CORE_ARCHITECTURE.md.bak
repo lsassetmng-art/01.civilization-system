@@ -1,0 +1,84 @@
+# ============================================================
+# EVENT CORE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: event
+scope: event.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the canonical architectural role of event in CivilizationOS.
+
+## design_intent
+Event is the bounded unit of meaningful change
+that records that something happened,
+who or what it affected,
+when it occurred,
+under which boundary it occurred,
+and what downstream interpretation is allowed.
+
+Event is not identical to state,
+not identical to history,
+and not identical to notification.
+It is the governed change record
+from which state transitions,
+history accumulation,
+and downstream reactions may derive.
+
+## architectural_position
+Event sits between:
+- actor/entity activity
+- state transition
+- history accumulation
+- integration exchange
+- audit reconstruction
+- replay and review flows
+
+## required_behavior
+- event identity must remain explicit
+- event source must remain explicit
+- event occurrence boundary must remain explicit
+- event payload meaning must remain explicit
+- current processing and historical retention must remain distinguishable
+- replay and original occurrence must remain distinguishable
+
+## canonical_rules
+- event must not overwrite source truth by itself
+- event occurrence and event interpretation must remain distinguishable
+- replayed event must not pretend to be original occurrence
+- current processing state and historical event state must remain distinguishable
+- ambiguous event boundary fails closed
+
+## state_model
+The event domain distinguishes:
+- proposed event
+- accepted event
+- recorded event
+- processed event
+- rejected event
+- replayed event
+- historical event
+
+## actor_boundary
+- source actor
+- system recorder
+- reviewer
+- operator
+- adapter
+
+## decision_matrix
+- if source identity is unclear, stop event acceptance
+- if occurrence boundary is unclear, fail closed
+- if payload exceeds declared meaning, route to denial or review
+- if replay is requested, preserve replay distinction
+- if historical reference is requested, preserve historical distinction
+
+## review_checklist
+- event identity is explicit
+- source and occurrence are explicit
+- replay distinction is explicit
+- historical distinction is explicit

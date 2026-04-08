@@ -1,0 +1,20 @@
+# ============================================================
+# NATION FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: nation
+scope: nation.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for nation.
+
+failure_codes:
+- NATION_INFRASTRUCTURE_IDENTITY_ERROR
+- NATION_INFRASTRUCTURE_ROLE_ERROR
+- NATION_INFRASTRUCTURE_ACTIVITY_ERROR
+- NATION_INFRASTRUCTURE_BOUNDARY_ERROR

@@ -1,0 +1,20 @@
+# ============================================================
+# GOVERNANCE FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: governance
+scope: governance.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for governance.
+
+failure_codes:
+- GOVERNANCE_OPERATIONS_IDENTITY_ERROR
+- GOVERNANCE_OPERATIONS_ROLE_ERROR
+- GOVERNANCE_OPERATIONS_ACTIVITY_ERROR
+- GOVERNANCE_OPERATIONS_BOUNDARY_ERROR

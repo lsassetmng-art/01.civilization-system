@@ -1,0 +1,21 @@
+# ============================================================
+# MEDICAL ROLE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: medical
+scope: medical.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related operations behavior for medical.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

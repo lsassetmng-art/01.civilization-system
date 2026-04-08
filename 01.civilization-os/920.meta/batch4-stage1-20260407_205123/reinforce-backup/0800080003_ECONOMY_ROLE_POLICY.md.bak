@@ -1,0 +1,21 @@
+# ============================================================
+# ECONOMY ROLE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: economy
+scope: economy.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related policy behavior for economy.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

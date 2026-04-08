@@ -1,0 +1,70 @@
+# ============================================================
+# STATUS DETAIL FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: detail
+subdomain: status-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the process flow for status detail handling.
+
+scope:
+Covers status request, severity interpretation,
+reason evaluation, escalation branching,
+recovery branching, and terminal-state handling.
+
+flow_intent:
+Status detail flow ensures that coarse status truth
+becomes actionable, explainable, and safely exposed.
+
+canonical_rules:
+- Status detail flow must start with target_ref and status_code.
+- Severity and reason must be delivered together where required.
+- Contradictory active statuses must be rejected.
+- Recovery paths must preserve prior degraded or blocked context where required.
+
+required_behavior:
+- Bind status context.
+- Resolve active status detail.
+- Validate severity and reason.
+- Expose status-safe output.
+- Support escalation and recovery branches.
+
+flow_state_model:
+status_detail_flow_state:
+- requested
+- target_bound
+- detail_resolved
+- validated
+- delivered
+- escalated
+- recovered
+- terminal
+- rejected
+
+status_transition_sequence:
+1. receive status detail request
+2. bind target_ref and status_code
+3. resolve active status detail
+4. validate severity and reason
+5. deliver current status detail
+6. if worsening, escalate
+7. if recovering, link prior degraded context
+8. if terminal, preserve terminal trace
+
+failure_codes:
+- STATUS_DETAIL_FLOW_TARGET_REF_MISSING
+- STATUS_DETAIL_FLOW_STATUS_CODE_MISSING
+- STATUS_DETAIL_FLOW_SEVERITY_INVALID
+- STATUS_DETAIL_FLOW_REASON_REQUIRED
+- STATUS_DETAIL_FLOW_CONTRADICTION_DETECTED
+
+example_scenarios:
+- A degraded hospital service exposes reason and recovery expectation.
+- A blocked checkpoint escalates to critical operational viewers.
+- A recovered facility preserves prior incident linkage in history mode.

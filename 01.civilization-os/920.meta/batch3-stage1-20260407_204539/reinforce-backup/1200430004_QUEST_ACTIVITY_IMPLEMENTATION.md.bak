@@ -1,0 +1,18 @@
+# ============================================================
+# QUEST ACTIVITY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: quest
+scope: quest.activity
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines activity-related implementation behavior for quest.
+
+required_behavior:
+- activity scope must be declared
+- activity execution must be bounded

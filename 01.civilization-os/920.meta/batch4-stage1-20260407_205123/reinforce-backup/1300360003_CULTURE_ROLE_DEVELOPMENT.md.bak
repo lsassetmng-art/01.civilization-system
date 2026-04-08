@@ -1,0 +1,21 @@
+# ============================================================
+# CULTURE ROLE DEVELOPMENT
+# ============================================================
+
+status: canonical
+layer: development
+domain: culture
+scope: culture.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related development behavior for culture.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

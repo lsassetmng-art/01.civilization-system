@@ -1,0 +1,21 @@
+# ============================================================
+# CRIME CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: crime
+scope: crime.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for crime.
+
+## runtime_scope
+Runtime covers allegation state,
+investigation state,
+disposition state,
+historical crime reference,
+and safe failure rendering.

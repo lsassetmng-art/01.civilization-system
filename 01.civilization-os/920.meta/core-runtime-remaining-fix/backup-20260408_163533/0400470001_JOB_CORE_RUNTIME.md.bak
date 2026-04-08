@@ -1,0 +1,46 @@
+# ============================================================
+# JOB CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: job
+scope: job.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for job.
+
+## runtime_scope
+Runtime covers job visibility,
+role-aware display,
+duty/authority-aware surfaces,
+historical job reference,
+and safe failure rendering.
+
+## validation_rules
+- job identity must resolve
+- holder/assigning basis must resolve
+- duty/authority scope must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid job identity
+- invalid assignment basis
+- invalid duty/authority scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish job state,
+assignment scope,
+authority scope,
+historical reference,
+and failure surface.
+
+## review_checklist
+- job runtime scope is explicit
+- authority-aware rendering is explicit
+- failure handling is explicit

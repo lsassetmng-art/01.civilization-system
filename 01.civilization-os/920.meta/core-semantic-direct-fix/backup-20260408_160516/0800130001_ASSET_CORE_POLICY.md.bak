@@ -1,0 +1,19 @@
+# ============================================================
+# ASSET CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: asset
+scope: asset.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for asset.
+
+## policy_rules
+Asset policy constrains:
+- who may hold/control/disclose asset detail
+- when asset-sensitive paths must be denied or escalated

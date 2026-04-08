@@ -1,0 +1,21 @@
+# ============================================================
+# INTERFACE ROUTE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: interface
+scope: interface.route
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines route-related integration behavior.
+
+route_table:
+- route key
+- actor scope
+- target
+- output mode
+- failure mode

@@ -1,0 +1,20 @@
+# ============================================================
+# ADMIN FAILURE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: admin
+scope: admin.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related policy behavior for admin.
+
+failure_codes:
+- ADMIN_POLICY_IDENTITY_ERROR
+- ADMIN_POLICY_ROLE_ERROR
+- ADMIN_POLICY_ACTIVITY_ERROR
+- ADMIN_POLICY_BOUNDARY_ERROR

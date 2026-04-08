@@ -1,0 +1,103 @@
+# ============================================================
+# 0500190006 INTERFACE VALIDATION FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: interface
+scope: 0500190006.interface.validation.flow
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines the flow logic for 0500190006 INTERFACE VALIDATION FLOW inside 019.interface.
+
+## request_entry
+The flow begins from screen entry,
+actor action,
+review action,
+approval action,
+or adapter-triggered invocation.
+
+## preconditions
+- actor is resolvable
+- route is resolvable
+- target binding is known
+- output mode is known
+- validation context is available
+
+## validation_rules
+- input check
+- actor check
+- route check
+- target check
+- output scope check
+
+## normal_flow
+1. enter surface
+2. resolve actor
+3. resolve route
+4. validate request
+5. bind target service
+6. dispatch request
+7. render bounded result
+
+## exception_flow
+Any failure in actor,
+route,
+validation,
+or service binding
+must stop normal flow
+and route to an explicit failure surface.
+
+## decision_matrix
+- if request is view-only, use bounded display path
+- if request is actionable, use validated dispatch path
+- if review is required, expose review route
+- if approval is required, expose gated approval route
+- if failure occurs, expose bounded failure path
+
+## outputs
+- bounded view output
+- actionable response output
+- review surface output
+- approval-required output
+- safe failure output
+
+## failure_codes
+- INTERFACE_FLOW_INVALID_ROUTE
+- INTERFACE_FLOW_ACTOR_DENIED
+- INTERFACE_FLOW_BINDING_FAILED
+- INTERFACE_FLOW_VALIDATION_STOP
+- INTERFACE_FLOW_SAFE_FALLBACK
+
+## review_checklist
+- request entry is explicit
+- validation is explicit
+- normal and exception paths are explicit
+- outputs are explicit
+- failure behavior is explicit
+
+## state_model
+Flow must distinguish
+entry,
+validation,
+dispatch,
+response,
+review,
+and failure paths.
+
+## actor_matrix
+- viewer follows read flow
+- operator follows action flow
+- reviewer follows review flow
+- approver follows gated approval flow
+- adapter follows bounded integration flow
+
+## review_notes
+Flow completeness requires
+entry clarity,
+validation clarity,
+dispatch clarity,
+and failure-path clarity.

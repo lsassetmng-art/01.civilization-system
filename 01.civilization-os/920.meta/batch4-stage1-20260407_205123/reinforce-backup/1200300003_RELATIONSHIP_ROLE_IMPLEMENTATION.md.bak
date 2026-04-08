@@ -1,0 +1,21 @@
+# ============================================================
+# RELATIONSHIP ROLE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: relationship
+scope: relationship.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related implementation behavior for relationship.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

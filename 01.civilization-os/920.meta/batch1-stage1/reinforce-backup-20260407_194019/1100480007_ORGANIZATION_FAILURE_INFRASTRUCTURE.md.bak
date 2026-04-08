@@ -1,0 +1,20 @@
+# ============================================================
+# ORGANIZATION FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: organization
+scope: organization.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for organization.
+
+failure_codes:
+- ORGANIZATION_INFRASTRUCTURE_IDENTITY_ERROR
+- ORGANIZATION_INFRASTRUCTURE_ROLE_ERROR
+- ORGANIZATION_INFRASTRUCTURE_ACTIVITY_ERROR
+- ORGANIZATION_INFRASTRUCTURE_BOUNDARY_ERROR

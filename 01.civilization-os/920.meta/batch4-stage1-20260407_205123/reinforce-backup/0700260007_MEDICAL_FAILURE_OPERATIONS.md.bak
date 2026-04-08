@@ -1,0 +1,20 @@
+# ============================================================
+# MEDICAL FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: medical
+scope: medical.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for medical.
+
+failure_codes:
+- MEDICAL_OPERATIONS_IDENTITY_ERROR
+- MEDICAL_OPERATIONS_ROLE_ERROR
+- MEDICAL_OPERATIONS_ACTIVITY_ERROR
+- MEDICAL_OPERATIONS_BOUNDARY_ERROR

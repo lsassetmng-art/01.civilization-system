@@ -1,0 +1,45 @@
+# ============================================================
+# ECONOMY CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: economy
+scope: economy.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for economy.
+
+## runtime_scope
+Runtime covers economic visibility,
+value-flow-aware display,
+restricted-flow rendering,
+historical economic reference,
+and safe failure rendering.
+
+## validation_rules
+- economic context must resolve
+- value-flow basis must resolve
+- participant scope must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid economic context
+- invalid value-flow basis
+- invalid participant scope
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish active flow,
+restricted flow,
+historical reference,
+and failure surface.
+
+## review_checklist
+- economy runtime scope is explicit
+- flow-aware rendering is explicit
+- failure handling is explicit

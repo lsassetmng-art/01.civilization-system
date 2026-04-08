@@ -1,0 +1,20 @@
+# ============================================================
+# ASSET FAILURE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: asset
+scope: asset.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related runtime behavior for asset.
+
+failure_codes:
+- ASSET_RUNTIME_IDENTITY_ERROR
+- ASSET_RUNTIME_ROLE_ERROR
+- ASSET_RUNTIME_ACTIVITY_ERROR
+- ASSET_RUNTIME_BOUNDARY_ERROR

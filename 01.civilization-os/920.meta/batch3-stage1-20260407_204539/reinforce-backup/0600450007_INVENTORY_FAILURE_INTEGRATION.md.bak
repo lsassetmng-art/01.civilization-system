@@ -1,0 +1,20 @@
+# ============================================================
+# INVENTORY FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: inventory
+scope: inventory.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for inventory.
+
+failure_codes:
+- INVENTORY_INTEGRATION_IDENTITY_ERROR
+- INVENTORY_INTEGRATION_ROLE_ERROR
+- INVENTORY_INTEGRATION_ACTIVITY_ERROR
+- INVENTORY_INTEGRATION_BOUNDARY_ERROR

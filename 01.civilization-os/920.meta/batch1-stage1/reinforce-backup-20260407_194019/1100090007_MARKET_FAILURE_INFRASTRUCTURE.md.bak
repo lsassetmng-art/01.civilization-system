@@ -1,0 +1,20 @@
+# ============================================================
+# MARKET FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: market
+scope: market.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for market.
+
+failure_codes:
+- MARKET_INFRASTRUCTURE_IDENTITY_ERROR
+- MARKET_INFRASTRUCTURE_ROLE_ERROR
+- MARKET_INFRASTRUCTURE_ACTIVITY_ERROR
+- MARKET_INFRASTRUCTURE_BOUNDARY_ERROR

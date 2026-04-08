@@ -1,0 +1,20 @@
+# ============================================================
+# COMPANY FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: company
+scope: company.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for company.
+
+failure_codes:
+- COMPANY_SECURITY_IDENTITY_ERROR
+- COMPANY_SECURITY_ROLE_ERROR
+- COMPANY_SECURITY_ACTIVITY_ERROR
+- COMPANY_SECURITY_BOUNDARY_ERROR

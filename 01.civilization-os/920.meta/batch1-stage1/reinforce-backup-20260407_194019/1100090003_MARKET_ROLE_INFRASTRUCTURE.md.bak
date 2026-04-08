@@ -1,0 +1,21 @@
+# ============================================================
+# MARKET ROLE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: market
+scope: market.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related infrastructure behavior for market.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

@@ -1,0 +1,20 @@
+# ============================================================
+# LANGUAGE FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: language
+scope: language.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for language.
+
+failure_codes:
+- LANGUAGE_INTEGRATION_IDENTITY_ERROR
+- LANGUAGE_INTEGRATION_ROLE_ERROR
+- LANGUAGE_INTEGRATION_ACTIVITY_ERROR
+- LANGUAGE_INTEGRATION_BOUNDARY_ERROR

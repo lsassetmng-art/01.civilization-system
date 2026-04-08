@@ -1,0 +1,20 @@
+# ============================================================
+# RELATIONSHIP FAILURE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: relationship
+scope: relationship.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related integration behavior for relationship.
+
+failure_codes:
+- RELATIONSHIP_INTEGRATION_IDENTITY_ERROR
+- RELATIONSHIP_INTEGRATION_ROLE_ERROR
+- RELATIONSHIP_INTEGRATION_ACTIVITY_ERROR
+- RELATIONSHIP_INTEGRATION_BOUNDARY_ERROR

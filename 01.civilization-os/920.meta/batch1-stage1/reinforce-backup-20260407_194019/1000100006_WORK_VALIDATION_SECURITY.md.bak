@@ -1,0 +1,20 @@
+# ============================================================
+# WORK VALIDATION SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: work
+scope: work.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related security behavior for work.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

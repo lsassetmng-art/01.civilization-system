@@ -1,0 +1,20 @@
+# ============================================================
+# JOB FAILURE INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: job
+scope: job.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related infrastructure behavior for job.
+
+failure_codes:
+- JOB_INFRASTRUCTURE_IDENTITY_ERROR
+- JOB_INFRASTRUCTURE_ROLE_ERROR
+- JOB_INFRASTRUCTURE_ACTIVITY_ERROR
+- JOB_INFRASTRUCTURE_BOUNDARY_ERROR

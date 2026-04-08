@@ -1,0 +1,18 @@
+# ============================================================
+# ORGANIZATION BOUNDARY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: organization
+scope: organization.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related flow behavior for organization.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

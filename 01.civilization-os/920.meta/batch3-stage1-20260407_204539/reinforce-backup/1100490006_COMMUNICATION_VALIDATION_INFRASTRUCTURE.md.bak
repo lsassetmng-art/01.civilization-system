@@ -1,0 +1,20 @@
+# ============================================================
+# COMMUNICATION VALIDATION INFRASTRUCTURE
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: communication
+scope: communication.validation
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines validation-related infrastructure behavior for communication.
+
+validation_rules:
+- identity check
+- role check
+- activity check
+- boundary check

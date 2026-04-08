@@ -1,0 +1,89 @@
+# ============================================================
+# STORY CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: story
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines core runtime behavior for the story domain.
+
+scope:
+Covers active story resolution, stage selection,
+branch evaluation, lifecycle filtering,
+historical replay separation, and consumer-safe delivery.
+
+runtime_rules:
+- Runtime must resolve story by canonical story scope.
+- Runtime must validate current stage.
+- Runtime must enforce branch policy.
+- Runtime must not deliver replay-only stage as current live stage.
+- Runtime must separate current and historical story modes.
+- Runtime must reject invalid live/historical mixing.
+
+required_behavior:
+- Resolve active story candidates.
+- Select current effective story stage.
+- Evaluate branch conditions.
+- Deliver current story context or historical replay context.
+- Emit explicit rejection and failure code when invalid.
+
+state_model:
+story_runtime_state:
+- unresolved
+- resolved
+- branch_evaluated
+- current_stage_selected
+- delivered
+- replay_delivered
+- blocked
+- historical_only
+
+delivery_mode:
+- current_live
+- replay_history
+- audit_history
+
+validation_rules:
+- story_scope is required.
+- active story must have valid current stage.
+- replay-only stage must not be used for current_live mode.
+- branch condition must be satisfied for bounded or conditional branch.
+- completed/cancelled story must not remain active current story.
+
+transition_rules:
+- unresolved -> resolved
+- resolved -> branch_evaluated
+- branch_evaluated -> current_stage_selected
+- current_stage_selected -> delivered
+- resolved -> historical_only
+- historical_only -> replay_delivered
+- any invalid path -> blocked
+
+actor_matrix:
+- ordinary consumer -> current story summary where allowed
+- active participant -> richer current stage where allowed
+- replay viewer -> replay history only
+- auditor -> audit history only where authorized
+
+decision_matrix:
+- active + valid stage + conditions met -> deliver
+- active + invalid stage -> block
+- replay_history requested + historical branch exists -> replay deliver
+- current_live requested + replay-only stage -> deny
+- linear_only + multiple branches -> block
+
+failure_codes:
+- STORY_RT_SCOPE_MISSING
+- STORY_RT_CURRENT_STAGE_INVALID
+- STORY_RT_BRANCH_CONDITION_UNMET
+- STORY_RT_REPLAY_ONLY_CURRENT_DENIED
+- STORY_RT_LIVE_HISTORY_MIX_DENIED
+
+example_scenarios:
+- A player onboarding story delivers the next valid current stage.
+- A completed world story is available only through replay_history mode.

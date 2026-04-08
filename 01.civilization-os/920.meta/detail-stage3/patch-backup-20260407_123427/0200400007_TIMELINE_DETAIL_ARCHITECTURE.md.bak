@@ -1,0 +1,89 @@
+# ============================================================
+# TIMELINE DETAIL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: detail
+subdomain: timeline-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines how detailed truth for timelines is structured and governed.
+
+scope:
+Timeline detail covers milestone detail,
+stage progression, event-density explanation,
+effective dating, and historical progression nuance.
+
+design_intent:
+World time and story progression define macro temporal truth.
+Timeline detail defines how individual events, life stages,
+work stages, and localized progressions are finely described.
+
+canonical_rules:
+- Timeline detail must bind to a canonical timeline or event reference.
+- Timeline detail must preserve temporal ordering.
+- Timeline detail must not rewrite world-time authority.
+- Timeline detail must distinguish scheduled, active, completed,
+  cancelled, and historical states.
+
+required_behavior:
+- The architecture must support milestone detail.
+- The architecture must support progression-stage detail.
+- The architecture must support historical retention and traceability.
+
+state_model:
+timeline_detail_entry:
+- timeline_detail_id
+- target_ref
+- milestone_code
+- progression_stage
+- occurred_at
+- effective_at
+- timeline_state
+- narrative_summary
+- visibility_scope
+
+timeline_state:
+- scheduled
+- active
+- completed
+- cancelled
+- historical
+
+validation_rules:
+- target_ref is required.
+- milestone_code is required where milestone semantics apply.
+- temporal fields must remain logically ordered.
+- completed items must not remain scheduled.
+- historical items must preserve their reference chain.
+- duplicate active milestones in the same scope are prohibited.
+
+transition_rules:
+- scheduled -> active
+- active -> completed
+- active -> cancelled
+- completed -> historical
+- cancelled -> historical
+
+dependency:
+depends_on:
+- world-time models
+- story progression models
+- life-event and work-event references
+- meta lineage and provenance support
+
+consumed_by:
+- event progression UIs
+- history viewers
+- journey summaries
+- audit and replay tools
+
+example_scenarios:
+- A life event progresses through multiple stages.
+  Stage detail, milestone codes, and effective timing belong to timeline detail.
+- A work order has scheduled, active, and completed stages.
+  The detailed stage semantics belong to timeline detail.

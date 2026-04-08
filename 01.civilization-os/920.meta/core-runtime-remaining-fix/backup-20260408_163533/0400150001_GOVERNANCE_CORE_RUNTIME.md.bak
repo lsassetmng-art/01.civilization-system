@@ -1,0 +1,46 @@
+# ============================================================
+# GOVERNANCE CORE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: governance
+scope: governance.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines core runtime handling for governance.
+
+## runtime_scope
+Runtime covers governance visibility,
+decision/review-aware display,
+escalation state,
+historical governance reference,
+and safe failure rendering.
+
+## validation_rules
+- governance context must resolve
+- decision/review scope must resolve
+- accountability scope must resolve
+- disclosure scope must be valid
+
+## failure_modes
+- invalid governance context
+- invalid role separation
+- invalid escalation path
+- safe runtime fallback
+
+## observability
+Runtime must emit enough signals
+to distinguish decision state,
+review state,
+escalation state,
+historical reference,
+and failure surface.
+
+## review_checklist
+- governance runtime scope is explicit
+- role-aware rendering is explicit
+- failure handling is explicit

@@ -1,0 +1,20 @@
+# ============================================================
+# FAMILY FAILURE FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: family
+scope: family.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related flow behavior for family.
+
+failure_codes:
+- FAMILY_FLOW_IDENTITY_ERROR
+- FAMILY_FLOW_ROLE_ERROR
+- FAMILY_FLOW_ACTIVITY_ERROR
+- FAMILY_FLOW_BOUNDARY_ERROR

@@ -1,0 +1,18 @@
+# ============================================================
+# COMPANY BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: company
+scope: company.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines authority and operational boundary for company.
+
+required_behavior:
+- authority basis must be explicit
+- hidden boundary crossing is prohibited

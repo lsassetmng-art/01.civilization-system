@@ -1,0 +1,74 @@
+# ============================================================
+# COMPANY CORE POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: company
+scope: company.core
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+## purpose
+Defines policy constraints for company.
+
+## required_behavior
+- company identity scope must be explicit
+- ownership scope must be explicit
+- actor allowance must be explicit
+- activity allowance must be explicit
+- disclosure allowance must be explicit
+- denial behavior must be explicit
+
+## policy_rules
+Company policy constrains behavior by:
+- company state
+- ownership basis
+- actor role
+- declared activity scope
+- policy boundary
+- disclosure boundary
+
+## actor_matrix
+- owner
+- executive
+- operator
+- reviewer
+- regulator
+- adapter
+
+## disclosure_matrix
+- public summary output
+- masked operational output
+- operator-scoped output
+- reviewer-scoped output
+- denied output
+
+## allowed_denied_matrix
+- allow bounded read for declared scope
+- allow company action only for valid state and role
+- allow review path for reviewer roles
+- deny hidden ownership claims
+- deny hidden authority widening
+- deny out-of-scope company activity
+
+## escalation_rules
+When ownership,
+authority,
+state,
+or activity meaning is unclear,
+the company path must stop and escalate.
+
+## failure_codes
+- COMPANY_POLICY_IDENTITY_DENIED
+- COMPANY_POLICY_STATE_DENIED
+- COMPANY_POLICY_ACTIVITY_DENIED
+- COMPANY_POLICY_BOUNDARY_DENIED
+- COMPANY_POLICY_ESCALATION_REQUIRED
+
+## review_checklist
+- actor matrix exists
+- disclosure matrix exists
+- allowed/denied matrix exists
+- escalation rules exist

@@ -1,0 +1,20 @@
+# ============================================================
+# PERMISSION FAILURE OPERATIONS
+# ============================================================
+
+status: canonical
+layer: operations
+domain: permission
+scope: permission.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related operations behavior for permission.
+
+failure_codes:
+- PERMISSION_OPERATIONS_IDENTITY_ERROR
+- PERMISSION_OPERATIONS_ROLE_ERROR
+- PERMISSION_OPERATIONS_ACTIVITY_ERROR
+- PERMISSION_OPERATIONS_BOUNDARY_ERROR

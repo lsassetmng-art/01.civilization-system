@@ -1,0 +1,18 @@
+# ============================================================
+# AI BOUNDARY FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: ai
+scope: ai.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related flow behavior for ai.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

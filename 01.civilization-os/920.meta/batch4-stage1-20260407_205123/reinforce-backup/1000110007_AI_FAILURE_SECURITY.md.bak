@@ -1,0 +1,20 @@
+# ============================================================
+# AI FAILURE SECURITY
+# ============================================================
+
+status: canonical
+layer: security
+domain: ai
+scope: ai.failure
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines failure-related security behavior for ai.
+
+failure_codes:
+- AI_SECURITY_IDENTITY_ERROR
+- AI_SECURITY_ROLE_ERROR
+- AI_SECURITY_ACTIVITY_ERROR
+- AI_SECURITY_BOUNDARY_ERROR

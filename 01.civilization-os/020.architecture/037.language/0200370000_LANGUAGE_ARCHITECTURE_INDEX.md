@@ -1,0 +1,20 @@
+# ============================================================
+# LANGUAGE ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: language
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0200370001_LANGUAGE_CORE_ARCHITECTURE.md
+- 0200370002_LANGUAGE_OVERVIEW_ARCHITECTURE.md
+- 0200370003_LANGUAGE_ENTITY_ARCHITECTURE.md
+- 0200370004_LANGUAGE_ROLE_ARCHITECTURE.md
+- 0200370005_LANGUAGE_ACTIVITY_ARCHITECTURE.md
+- 0200370006_LANGUAGE_BOUNDARY_ARCHITECTURE.md
+- 0200370007_LANGUAGE_VALIDATION_ARCHITECTURE.md
+- 0200370008_LANGUAGE_FAILURE_ARCHITECTURE.md

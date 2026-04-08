@@ -2,7 +2,7 @@
 # 060 INTEGRATION INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -19,3 +19,4 @@ files:
 - 060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
 - 060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
 - 060170_NAMECARD_API_FIELD_SCHEMA.md
+- 060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md

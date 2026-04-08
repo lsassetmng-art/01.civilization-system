@@ -1,0 +1,18 @@
+# ============================================================
+# QUEST BOUNDARY INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: quest
+scope: quest.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related integration behavior for quest.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited

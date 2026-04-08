@@ -1,0 +1,81 @@
+# ============================================================
+# ENTITY DETAIL FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+domain: detail
+subdomain: entity-detail
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the process flow for entity detail handling.
+
+scope:
+Covers how entity detail is requested, selected,
+validated, filtered, delivered, revised, and archived.
+
+flow_intent:
+Entity detail flow ensures that each consumer receives
+the correct detail slice for an entity under the correct visibility scope.
+
+canonical_rules:
+- Entity detail flow must start with entity_ref.
+- Entity detail flow must select current active detail by default.
+- Historical snapshots must be explicitly requested.
+- Restricted entity detail must not leak through summary aggregation.
+
+required_behavior:
+- Resolve entity-linked detail candidates.
+- Select active detail profile or historical snapshot.
+- Validate uniqueness and lifecycle.
+- Filter by visibility.
+- Deliver consumer-safe output.
+
+flow_state_model:
+entity_detail_flow_state:
+- requested
+- entity_bound
+- detail_selected
+- snapshot_selected
+- validated
+- filtered
+- delivered
+- blocked
+- archived_accessed
+
+current_delivery_sequence:
+1. receive entity detail request
+2. bind entity_ref
+3. load active detail candidates
+4. validate duplicates and lifecycle
+5. apply visibility filter
+6. deliver current detail output
+
+historical_delivery_sequence:
+1. receive historical request
+2. bind entity_ref
+3. select snapshot or archived revision
+4. validate snapshot chain
+5. apply audit or history visibility
+6. deliver historical detail output
+
+revision_flow:
+1. revised entity detail submitted
+2. prior active detail identified
+3. revision chain validated
+4. new detail marked active
+5. prior detail retained as non-primary historical record
+
+failure_codes:
+- ENTITY_DETAIL_FLOW_ENTITY_REF_MISSING
+- ENTITY_DETAIL_FLOW_DUPLICATE_ACTIVE
+- ENTITY_DETAIL_FLOW_SNAPSHOT_NOT_FOUND
+- ENTITY_DETAIL_FLOW_VISIBILITY_BLOCKED
+
+example_scenarios:
+- Public viewer receives school summary detail.
+- Authorized operator receives internal facility detail.
+- Audit viewer receives prior archived detail revision.

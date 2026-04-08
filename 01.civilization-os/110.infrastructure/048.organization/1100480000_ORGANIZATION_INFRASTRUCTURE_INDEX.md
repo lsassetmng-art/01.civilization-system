@@ -1,0 +1,19 @@
+# ============================================================
+# ORGANIZATION INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical
+layer: infrastructure
+domain: organization
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+files:
+- 1100480001_ORGANIZATION_CORE_INFRASTRUCTURE.md
+- 1100480002_ORGANIZATION_ENTITY_INFRASTRUCTURE.md
+- 1100480003_ORGANIZATION_ROLE_INFRASTRUCTURE.md
+- 1100480004_ORGANIZATION_ACTIVITY_INFRASTRUCTURE.md
+- 1100480005_ORGANIZATION_BOUNDARY_INFRASTRUCTURE.md
+- 1100480006_ORGANIZATION_VALIDATION_INFRASTRUCTURE.md
+- 1100480007_ORGANIZATION_FAILURE_INFRASTRUCTURE.md

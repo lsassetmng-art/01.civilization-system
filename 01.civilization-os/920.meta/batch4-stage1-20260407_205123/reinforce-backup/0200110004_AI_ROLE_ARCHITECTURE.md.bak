@@ -1,0 +1,21 @@
+# ============================================================
+# AI ROLE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+domain: ai
+scope: ai.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role structure for ai.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

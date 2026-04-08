@@ -1,0 +1,21 @@
+# ============================================================
+# RELATIONSHIP ROLE RUNTIME
+# ============================================================
+
+status: canonical
+layer: runtime
+domain: relationship
+scope: relationship.role
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines role-related runtime behavior for relationship.
+
+actor_matrix:
+- owner
+- operator
+- reviewer
+- approver
+- adapter

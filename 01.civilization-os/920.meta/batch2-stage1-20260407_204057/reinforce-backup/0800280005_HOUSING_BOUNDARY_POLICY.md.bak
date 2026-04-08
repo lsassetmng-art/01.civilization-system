@@ -1,0 +1,18 @@
+# ============================================================
+# HOUSING BOUNDARY POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+domain: housing
+scope: housing.boundary
+system: civilization-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines boundary-related policy behavior for housing.
+
+required_behavior:
+- authority basis must be explicit
+- hidden crossing is prohibited
