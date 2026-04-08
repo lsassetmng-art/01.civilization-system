@@ -1,8 +1,0 @@
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/020.architecture/019.interface/0200190001_INTERFACE_OVERVIEW_ARCHITECTURE.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/019.interface/040_019_INTERFACE_RUNTIME.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/050.flow/019.interface/050_019_INTERFACE_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/060.integration/019.interface/060_019_INTERFACE_INTEGRATION.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/070.operations/019.interface/070_019_INTERFACE_OPERATIONS.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/019.interface/080_019_INTERFACE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/100.security/019.interface/100_019_INTERFACE_SECURITY.md
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/110.infrastructure/019.interface/110_019_INTERFACE_INFRASTRUCTURE.md

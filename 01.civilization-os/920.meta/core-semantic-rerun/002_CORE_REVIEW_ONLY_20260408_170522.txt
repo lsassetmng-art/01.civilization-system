@@ -1,2 +1,0 @@
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/040.runtime/002.world/010.world-core/040_WORLD_CORE_RUNTIME.md	78	15	REVIEW
-/data/data/com.termux/files/home/01.civilization-system/01.civilization-os/080.policy/002.world/010.world-core/080_WORLD_CORE_POLICY.md	78	15	REVIEW
