@@ -63,7 +63,7 @@ structure:
 # NAME CARD MANAGER INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -83,101 +83,23 @@ prepared_by: Zero
 # ============================================================
 
 - 010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md
+- 010.constitution/011_NAMECARDMANAGER_DEFINITION.md
 - 020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md
 - 020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+- 020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
 - 030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
-- 030.model/030100_NAMECARD_RECORD_MODEL.md
-- 030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md
-- 030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md
-- 030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md
-- 030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md
-- 030.model/030150_NAMECARD_SYNC_STATE_MODEL.md
-- 030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md
-- 030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md
-- 030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md
-- 030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md
-- 030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md
-- 030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md
-- 030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md
-- 030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md
-- 030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md
-- 030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md
-- 030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md
-- 030.model/030270_NAMECARD_ERROR_CODE_MODEL.md
-- 030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md
-- 030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md
-- 030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md
-- 030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md
-- 030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md
 - 040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
-- 040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md
-- 040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md
 - 050.flow/050_NAME_CARD_MANAGER_FLOW.md
-- 050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md
-- 050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md
-- 050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md
 - 060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md
-- 060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md
-- 060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md
-- 060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md
-- 060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md
-- 060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
-- 060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
-- 060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md
+- 060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
 - 070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
-- 070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md
-- 070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md
-- 070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md
-- 070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md
 - 080.policy/080_NAME_CARD_MANAGER_POLICY.md
-- 080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md
-- 080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md
-- 080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md
-- 080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md
-- 080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md
-- 080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md
-- 080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md
-- 080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md
 - 090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
-- 090.interface/090100_LOGIN_SCREEN_INTERFACE.md
-- 090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md
-- 090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md
-- 090.interface/090130_SETTINGS_SCREEN_INTERFACE.md
-- 090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md
-- 090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md
-- 090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md
-- 090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md
-- 090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md
-- 090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md
 - 100.security/100_NAME_CARD_MANAGER_SECURITY.md
-- 100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md
 - 110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
-- 110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md
 - 120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
-- 120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md
-- 120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md
 - 130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
-- 900.meta/900_NAME_CARD_MANAGER_META.md
-- 900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md
-- 900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md
-- 900.meta/900130_NAMECARD_API_META_NOTE.md
-- 900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md
-- 900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md
-- 900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md
-- 900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md
-- 900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md
-- 900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md
-- 900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md
-- 900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md
-- 900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md
-- 900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md
+- 900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md -->
 
@@ -208,7 +130,7 @@ and ERP-wide publication constraints.
 # 010 CONSTITUTION INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -218,6 +140,7 @@ prepared_by: Zero
 
 files:
 - 010_NAME_CARD_MANAGER_CONSTITUTION.md
+- 011_NAMECARDMANAGER_DEFINITION.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_INDEX.md -->
 
@@ -314,6 +237,97 @@ NameCardManager may manage:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md -->
+# ============================================================
+# NAMECARDMANAGER DEFINITION
+# ============================================================
+
+status: canonical
+layer: constitution
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the formal application definition of NameCardManager.
+
+# ============================================================
+# 1. DEFINITION
+# ============================================================
+
+NameCardManager is a business card management application
+operating in the BusinessOS business domain inside Civilization,
+within a world whose core is PersonaOS.
+
+It is not a simple business card storage application.
+It manages business-card-linked business context including:
+- person understanding
+- responsibility scope
+- business and order history
+- relationship visibility
+
+BusinessOS exists inside Civilization as a business domain,
+but is not treated as a mere fully subordinate object.
+It contains its own business activity, enterprise functions,
+and enterprise products.
+
+NameCardManager belongs to that BusinessOS business domain.
+
+# ============================================================
+# 2. POSITIONING
+# ============================================================
+
+- PersonaOS is the core.
+- Civilization is the living environment of Persona.
+- BusinessOS is the business domain inside Civilization.
+- NameCardManager is a BusinessOS application.
+- ERP-wide publication is handled through shared BusinessOS capability.
+
+# ============================================================
+# 3. SOURCE OF TRUTH
+# ============================================================
+
+- BusinessOS is the source of truth.
+- Local storage is not canonical truth.
+- Local storage exists as offline work area and cache.
+- Long-term consistency is aligned to BusinessOS.
+
+# ============================================================
+# 4. SHARING MODEL
+# ============================================================
+
+There are only two sharing paths.
+
+1. App-internal sharing
+- explicit only
+- limited to configured targets
+- revocable
+
+2. ERP-wide publication
+- explicit only
+- approval-governed
+- executed through shared BusinessOS ERP publication capability
+- not ordinary-user revocable after publication
+
+# ============================================================
+# 5. FUNCTIONAL SCOPE
+# ============================================================
+
+NameCardManager manages:
+- basic name card information
+- person notes
+- responsibility scope notes
+- business/order history
+- relationship visibility
+- app-internal share state
+- ERP publication state
+- audit/history/approval traces
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_OVERVIEW.md -->
 # ============================================================
 # 020 ARCHITECTURE OVERVIEW
@@ -341,7 +355,7 @@ and shared ERP publication architecture.
 # 020 ARCHITECTURE INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -352,6 +366,7 @@ prepared_by: Zero
 files:
 - 020_NAME_CARD_MANAGER_ARCHITECTURE.md
 - 020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+- 021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_INDEX.md -->
 
@@ -525,6 +540,128 @@ It is a shared BusinessOS-controlled publication path.
 
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md -->
+# ============================================================
+# NAMECARDMANAGER PHYSICAL SCHEMA DESIGN
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the physical schema design before actual database execution.
+
+# ============================================================
+# 1. DATABASE POSITIONING
+# ============================================================
+
+- NameCardManager is a BusinessOS application.
+- This document fixes table-level physical design only.
+- No database execution is performed in this phase.
+
+# ============================================================
+# 2. SCHEMA NAME
+# ============================================================
+
+Recommended schema:
+- business
+
+# ============================================================
+# 3. TABLE LIST
+# ============================================================
+
+1. namecard_record
+2. namecard_detail_profile
+3. namecard_order_history
+4. namecard_share_target
+5. namecard_app_share_link
+6. namecard_erp_publish_setting
+7. namecard_pending_operation
+8. namecard_relationship
+9. namecard_erp_publication_request
+10. namecard_erp_publication_result
+11. namecard_approval_event
+12. namecard_audit_log
+13. namecard_history_entry
+
+# ============================================================
+# 4. MAIN DESIGN RULES
+# ============================================================
+
+- logical delete is adopted
+- updated_at is automatically maintained
+- canonical_version exists on main record
+- summary state and per-target detail are separated
+- audit/history/approval are separated
+- ERP publication request/result are separated
+- shared BusinessOS publication boundary is explicit
+
+# ============================================================
+# 5. MAIN TABLE NOTES
+# ============================================================
+
+namecard_record:
+- canonical record
+- sync/app-share/ERP-publication summary states
+- logical delete by deleted_at
+
+namecard_detail_profile:
+- one profile per namecard
+- extended person and responsibility notes
+
+namecard_order_history:
+- multiple entries per namecard
+- stores order/business history
+
+namecard_share_target:
+- configured app-internal share targets
+
+namecard_app_share_link:
+- per-namecard per-target app share detail
+
+namecard_erp_publish_setting:
+- ERP eligibility and publication configuration
+
+namecard_pending_operation:
+- offline operation queue
+
+namecard_relationship:
+- explicit and supported relationship links
+
+namecard_erp_publication_request:
+- request handed to shared BusinessOS publication capability
+
+namecard_erp_publication_result:
+- result returned from shared BusinessOS publication capability
+
+namecard_approval_event:
+- approval-side events distinct from final publication result
+
+namecard_audit_log:
+- detailed auditable records
+
+namecard_history_entry:
+- user-facing summarized history
+
+# ============================================================
+# 6. NON-GOALS AT THIS PHASE
+# ============================================================
+
+Not yet fixed here:
+- exact RLS policy
+- exact trigger implementation text
+- exact RPC / API implementation
+- exact storage bucket design
+- exact retention policy
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md -->
 
 
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_OVERVIEW.md -->
@@ -2465,7 +2602,7 @@ ERP publication payload field mapping, and API field schema.
 # 060 INTEGRATION INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -2482,6 +2619,7 @@ files:
 - 060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
 - 060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
 - 060170_NAMECARD_API_FIELD_SCHEMA.md
+- 060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md -->
 
@@ -3176,6 +3314,81 @@ fields:
 
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md -->
+# ============================================================
+# NAMECARDMANAGER API EXACT CONTRACT FREEZE
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes the exact API boundary direction before implementation.
+
+# ============================================================
+# 1. CONTRACT PRINCIPLES
+# ============================================================
+
+- sync API is separate from ERP publication API
+- validation_code is separate from error_code
+- canonical_version is used for update/sync safety
+- request/response naming must remain stable
+- UI state, error code, and validation code remain distinct layers
+
+# ============================================================
+# 2. REQUEST/RESPONSE NAMING
+# ============================================================
+
+Recommended naming:
+- snake_case
+- stable JSON keys
+- explicit required vs optional distinction
+
+# ============================================================
+# 3. UPDATE / SYNC SAFETY
+# ============================================================
+
+- update-oriented requests may carry canonical_version
+- sync push carries local_known_version where applicable
+- conflict must not be collapsed into generic failure
+
+# ============================================================
+# 4. ERP PUBLICATION BOUNDARY
+# ============================================================
+
+- ERP publication request targets shared BusinessOS capability
+- this is not direct application-to-ERP transmission
+- approval_required is distinct from publication_submitted
+- approved is distinct from published
+
+# ============================================================
+# 5. RESPONSE RULES
+# ============================================================
+
+Responses should:
+- always include success
+- include canonical identifiers where applicable
+- include validation_code for prerequisite failure
+- include error_code for execution/path failure
+- preserve approval/publication distinction
+
+# ============================================================
+# 6. IMPLEMENTATION ENTRY CONDITION
+# ============================================================
+
+Implementation may proceed after:
+- field-level schema is accepted
+- enum values are frozen
+- shared BusinessOS publication connection spec is frozen
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md -->
 
 
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_OVERVIEW.md -->
@@ -6184,7 +6397,7 @@ consistency check meta, and review checklist meta.
 # 900 META INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
@@ -6207,6 +6420,7 @@ files:
 - 900210_NAMECARD_UI_LABEL_META_NOTE.md
 - 900220_NAMECARD_CONSISTENCY_CHECK_META.md
 - 900230_NAMECARD_REVIEW_CHECKLIST_META.md
+- 900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_INDEX.md -->
 
@@ -6834,103 +7048,138 @@ review_checklist:
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md -->
 
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md -->
 # ============================================================
-# ESTIMATE CREATOR
+# NAMECARDMANAGER PRE-IMPLEMENTATION DECISION SHEET
 # ============================================================
 
 status: canonical
+layer: meta
+system: applications
+application: NameCardManager
 owner: Boss
 prepared_by: Zero
 
-# ============================================================
-# 1. POSITION
-# ============================================================
-
-EstimateCreator is an independent application under 07.applications.
-
-It is positioned as a BusinessOS-side simplified ERP-front application
-for estimate work.
+purpose:
+Fixes the pre-implementation decisions for NameCardManager.
 
 # ============================================================
-# 2. PRIMARY ROLE
+# 1. POSITIONING
 # ============================================================
 
-EstimateCreator provides:
-
-- rough estimate creation
-- offline estimate drafting
-- opportunity memo handling
-- meeting memo handling
-- app-internal sharing to preconfigured users
-- ERP rough estimate publication request
-- ERP inventory reference lookup
+- PersonaOS is the core.
+- Civilization is the living environment of Persona.
+- BusinessOS is a business domain inside Civilization.
+- BusinessOS is not a mere fully subordinate object of Civilization.
+- NameCardManager is a business application in the BusinessOS domain.
 
 # ============================================================
-# 3. COMMON CAPABILITY ALIGNMENT
+# 2. SOURCE OF TRUTH
 # ============================================================
 
-EstimateCreator aligns with NameCardManager for:
-
-- sharing pattern
-- sync pattern
-- ERP publication pattern
-
-These are reused through common BusinessOS capability paths
-rather than app-private incompatible logic.
+- BusinessOS is the source of truth.
+- Local storage is not canonical truth.
+- Local storage is an offline work area and cache.
 
 # ============================================================
-# 4. AUTHORITY BOUNDARY
+# 3. SYNCHRONIZATION
 # ============================================================
 
-EstimateCreator is not the normal authoritative ERP formal estimate issuer.
-
-Default estimate class:
-
-- rough_estimate
-
-Formal ERP estimate authority normally remains in ERP.
+- Synchronization adopts operation-queue style.
+- Offline changes are stored as pending operations.
+- Re-online state applies queued operations to BusinessOS.
+- Conflict is first handled mainly at record level.
+- Conflict must not be silently overwritten.
 
 # ============================================================
-# 5. OFFLINE POSITION
+# 4. ERP PUBLICATION
 # ============================================================
 
-EstimateCreator supports offline drafting and preparation.
-
-Offline mode allows:
-
-- local estimate editing
-- local memo editing
-- local queueing
-- cached template usage
-
-Offline mode does not complete:
-
-- live ERP publication
-- live authoritative inventory confirmation
-- live external authority completion
+- NameCardManager does not directly transmit to ERP.
+- NameCardManager issues publication requests.
+- Shared BusinessOS capability handles:
+  - eligibility check
+  - company context attachment
+  - approval routing
+  - payload transformation
+  - ERP execution
+  - result capture
+  - audit capture
 
 # ============================================================
-# 6. SHAREABLE OBJECTS
+# 5. ERP STATE
 # ============================================================
 
-App-internal shareable objects:
+Canonical publication progression:
+- not_published
+- pending_approval
+- approved_not_published
+- published
+- publish_failed
 
-- opportunity memo
-- meeting memo
-- rough estimate
-
-Sharing is limited to preconfigured users.
+Additional approval-side outcomes:
+- rejected
+- returned_for_fix
 
 # ============================================================
-# 7. PREMIUM FEATURES
+# 6. IMAGE POLICY
 # ============================================================
 
-Premium option includes:
+- Front/back two-sided handling
+- DB stores metadata/path references
+- Binary is handled through protected storage
+- OCR is not required in initial implementation
 
-- structured meeting memo
-- QA management
-- estimate templates
+# ============================================================
+# 7. RELATIONSHIP POLICY
+# ============================================================
 
-Premium features are gated additions,
-not a separate architecture branch.
+Relationship priority:
+- manual
+- same_company
+- order_history
 
+Automatic inference should be conservative.
+
+# ============================================================
+# 8. UI POLICY
+# ============================================================
+
+Recommended list density:
+- full name
+- company name
+- department/title
+- sync badge
+- share badge
+- ERP badge
+- relation icon
+
+Detail editing is section-based:
+- basic information
+- person information
+- responsibility scope
+- history
+- relationship
+
+# ============================================================
+# 9. DELETE POLICY
+# ============================================================
+
+- Delete is logical delete.
+- Deleted records remain auditable.
+- ERP-published history remains preserved.
+- Ordinary users do not roll back published ERP-wide state.
+
+# ============================================================
+# 10. CURRENT PHASE
+# ============================================================
+
+Current phase is still design finalization.
+
+- DB physical schema is not yet executed
+- Java implementation is not yet started
+- design is being fixed before implementation
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md -->
