@@ -25,4 +25,5 @@ meeting prep summary, duplicate candidate,
 next action suggestion, migration job,
 import mapping, import diagnostic, import result,
 import image support, migration summary,
-and rule-based enrichment.
+rule-based enrichment, locale model,
+and translation display model.

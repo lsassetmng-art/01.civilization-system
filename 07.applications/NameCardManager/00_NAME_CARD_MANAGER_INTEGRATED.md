@@ -104,6 +104,8 @@ prepared_by: Zero
 - 030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md
 - 030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md
 - 030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md
+- 030.model/030490_NAMECARD_LOCALE_MODEL.md
+- 030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md
 - 040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
 - 050.flow/050_NAME_CARD_MANAGER_FLOW.md
 - 050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md
@@ -119,6 +121,7 @@ prepared_by: Zero
 - 060.integration/060230_NAMECARD_IMPORT_CONTRACT.md
 - 060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
 - 060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
+- 060.integration/060260_NAMECARD_LOCALE_CONTRACT.md
 - 070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
 - 080.policy/080_NAME_CARD_MANAGER_POLICY.md
 - 080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md
@@ -126,6 +129,7 @@ prepared_by: Zero
 - 080.policy/080210_NAMECARD_PRICING_POLICY.md
 - 080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md
 - 080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
+- 080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md
 - 090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
 - 090.interface/090200_NAMECARD_SEARCH_INTERFACE.md
 - 090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md
@@ -136,12 +140,14 @@ prepared_by: Zero
 - 090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md
 - 090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
 - 090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
+- 090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
 - 100.security/100_NAME_CARD_MANAGER_SECURITY.md
 - 110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
 - 120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
 - 120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md
 - 120.implementation/120210_NAMECARD_IMPORT_GUIDE.md
 - 120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md
+- 120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md
 - 130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
 - 900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
 - 900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
@@ -737,7 +743,8 @@ meeting prep summary, duplicate candidate,
 next action suggestion, migration job,
 import mapping, import diagnostic, import result,
 import image support, migration summary,
-and rule-based enrichment.
+rule-based enrichment, locale model,
+and translation display model.
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_OVERVIEW.md -->
 
@@ -796,6 +803,8 @@ files:
 - 030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md
 - 030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md
 - 030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md
+- 030490_NAMECARD_LOCALE_MODEL.md
+- 030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_INDEX.md -->
 
@@ -2524,6 +2533,82 @@ processing_policy:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md -->
+# ============================================================
+# NAMECARD LOCALE MODEL
+# ============================================================
+
+status: canonical
+layer: model
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines locale handling model for NameCardManager.
+
+main_fields:
+- ui_locale
+- output_locale
+- fallback_locale
+- user_data_original_language_optional
+- translation_display_enabled
+- multilingual_search_enabled
+
+initial_supported_locales:
+- ja
+- en
+
+rules:
+- UI locale is independent from raw user data language
+- output locale may follow UI locale by default
+- fallback locale is required
+- user-entered source data must not be silently overwritten by translation
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md -->
+# ============================================================
+# NAMECARD TRANSLATION DISPLAY MODEL
+# ============================================================
+
+status: canonical
+layer: model
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines translation-aware display model while preserving original data.
+
+display_layers:
+- original_value
+- normalized_value_optional
+- translated_display_value_optional
+- search_assist_value_optional
+
+rules:
+- original value remains canonical for user-entered data
+- translated display is assistive and non-canonical
+- normalized value may support grouping/search
+- translated display must remain reviewable and replaceable
+
+target_fields_optional:
+- company_name
+- department_name
+- title_name
+- memo_summary
+- responsibility_scope_summary
+- meeting_prep_summary
+- publication_preview_summary
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_OVERVIEW.md -->
 # ============================================================
 # 040 RUNTIME OVERVIEW
@@ -3339,7 +3424,7 @@ ERP publication payload field mapping, API field schema,
 common component adoption, search contract,
 publication preflight contract, suggestion rule contract,
 import contract, import image contract,
-and rule-based enrichment contract.
+rule-based enrichment contract, and locale contract.
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_OVERVIEW.md -->
 
@@ -3374,6 +3459,7 @@ files:
 - 060230_NAMECARD_IMPORT_CONTRACT.md
 - 060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
 - 060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
+- 060260_NAMECARD_LOCALE_CONTRACT.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md -->
 
@@ -4499,6 +4585,44 @@ outputs:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md -->
+# ============================================================
+# NAMECARD LOCALE CONTRACT
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines locale-related boundary direction for UI and output behavior.
+
+request_direction:
+- ui_locale
+- output_locale_optional
+- fallback_locale
+- translation_display_enabled_optional
+
+response_direction:
+- effective_ui_locale
+- effective_output_locale
+- fallback_locale
+- translation_display_state
+- localized_labels_optional
+- localized_output_optional
+
+rules:
+- locale contract must not silently rewrite canonical user data
+- localized output may be generated from canonical data plus display rules
+- fallback behavior must be explicit
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_OVERVIEW.md -->
 # ============================================================
 # 070 OPERATIONS OVERVIEW
@@ -4852,7 +4976,7 @@ approval/audit code policy, error code policy,
 validation code policy, publication preview policy,
 duplicate review policy, pricing policy,
 import review policy, import enrichment policy,
-and visibility policy.
+localization policy, and visibility policy.
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_OVERVIEW.md -->
 
@@ -4885,6 +5009,7 @@ files:
 - 080210_NAMECARD_PRICING_POLICY.md
 - 080220_NAMECARD_IMPORT_REVIEW_POLICY.md
 - 080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
+- 080240_NAMECARD_LOCALIZATION_POLICY.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_INDEX.md -->
 
@@ -5669,6 +5794,43 @@ rules:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md -->
+# ============================================================
+# NAMECARD LOCALIZATION POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines localization and multilingual handling policy.
+
+policy_rules:
+- UI strings must be key-managed
+- user-entered business card data must preserve original value
+- translated display is assistive and non-canonical
+- multilingual search support may use normalized/search-assist values
+- locale-aware output should remain reviewable
+- ERP publication output must not silently misrepresent original meaning
+
+initial_scope:
+- Japanese UI
+- English UI
+
+future_scope:
+- multilingual preview support
+- multilingual meeting prep output
+- multilingual suggestion output
+- multilingual publication summary support
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_OVERVIEW.md -->
 # ============================================================
 # 090 INTERFACE OVERVIEW
@@ -5690,7 +5852,8 @@ badge labels, UI messages, search,
 company view, related person presentation,
 visibility preview, recent activity,
 meeting preparation mode, migration wizard,
-import review, and migration summary.
+import review, migration summary,
+and language setting.
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_OVERVIEW.md -->
 
@@ -5729,6 +5892,7 @@ files:
 - 090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md
 - 090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
 - 090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
+- 090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_INDEX.md -->
 
@@ -6823,6 +6987,38 @@ ui_blocks:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md -->
+# ============================================================
+# NAMECARD LANGUAGE SETTING INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines language and locale setting interface.
+
+ui_blocks:
+- UI language selector
+- output language selector
+- fallback language selector
+- translation display toggle
+- multilingual search toggle
+- original vs translated display hint
+
+requirements:
+- language settings must be easy to find
+- user must understand that original card data is preserved
+- translation display should be optional where applicable
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_OVERVIEW.md -->
 # ============================================================
 # 100 SECURITY OVERVIEW
@@ -7197,7 +7393,8 @@ approval/audit code implementation, error code implementation,
 UI state implementation, payload field mapping implementation,
 API field schema implementation, validation code implementation,
 UI label implementation, publication preflight implementation,
-import implementation, and rule-based enrichment implementation.
+import implementation, rule-based enrichment implementation,
+and localization implementation.
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_OVERVIEW.md -->
 
@@ -7229,6 +7426,7 @@ files:
 - 120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md
 - 120210_NAMECARD_IMPORT_GUIDE.md
 - 120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md
+- 120230_NAMECARD_LOCALIZATION_GUIDE.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_INDEX.md -->
 
@@ -7899,6 +8097,40 @@ implementation_rules:
 
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md -->
+# ============================================================
+# NAMECARD LOCALIZATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for localization and multilingual support.
+
+implementation_rules:
+- use key-managed UI strings
+- do not hardcode user-facing labels where localization is expected
+- preserve original user-entered values
+- separate canonical data from translated display values
+- keep multilingual search normalization reviewable
+- locale-aware outputs should accept locale as an explicit input
+
+initial_implementation_scope:
+- ja UI
+- en UI
+- original-data preservation
+- localized interface labels
+- localized validation and message wording
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md -->
 
 
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_OVERVIEW.md -->

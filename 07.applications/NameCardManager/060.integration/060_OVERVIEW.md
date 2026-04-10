@@ -18,4 +18,4 @@ ERP publication payload field mapping, API field schema,
 common component adoption, search contract,
 publication preflight contract, suggestion rule contract,
 import contract, import image contract,
-and rule-based enrichment contract.
+rule-based enrichment contract, and locale contract.

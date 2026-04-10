@@ -19,4 +19,4 @@ approval/audit code policy, error code policy,
 validation code policy, publication preview policy,
 duplicate review policy, pricing policy,
 import review policy, import enrichment policy,
-and visibility policy.
+localization policy, and visibility policy.

@@ -18,4 +18,5 @@ badge labels, UI messages, search,
 company view, related person presentation,
 visibility preview, recent activity,
 meeting preparation mode, migration wizard,
-import review, and migration summary.
+import review, migration summary,
+and language setting.
