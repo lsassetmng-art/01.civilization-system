@@ -2,7 +2,7 @@
 # 080 POLICY OVERVIEW
 # ============================================================
 
-status: draft
+status: canonical
 layer: overview
 system: applications
 application: NameCardManager
@@ -16,4 +16,7 @@ share policy, sensitivity policy, publication policy,
 approval policy, sync conflict policy, data protection policy,
 relationship visibility policy, audit/approval policy,
 approval/audit code policy, error code policy,
-validation code policy, and visibility policy.
+validation code policy, publication preview policy,
+duplicate review policy, pricing policy,
+import review policy, import enrichment policy,
+and visibility policy.

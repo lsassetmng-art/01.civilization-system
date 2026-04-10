@@ -2,7 +2,7 @@
 # 120 IMPLEMENTATION OVERVIEW
 # ============================================================
 
-status: draft
+status: canonical
 layer: overview
 system: applications
 application: NameCardManager
@@ -17,4 +17,5 @@ relationship rendering, UI modules, audit/approval implementation,
 approval/audit code implementation, error code implementation,
 UI state implementation, payload field mapping implementation,
 API field schema implementation, validation code implementation,
-and UI label implementation.
+UI label implementation, publication preflight implementation,
+import implementation, and rule-based enrichment implementation.

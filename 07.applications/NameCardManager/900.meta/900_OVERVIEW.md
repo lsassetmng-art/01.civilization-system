@@ -2,7 +2,7 @@
 # 900 META OVERVIEW
 # ============================================================
 
-status: draft
+status: canonical
 layer: overview
 system: applications
 application: NameCardManager
@@ -18,4 +18,5 @@ audit/approval meta notes, approval/audit code meta notes,
 error code meta notes, UI state meta notes,
 payload field map meta notes, API field schema meta notes,
 validation code meta notes, UI label meta notes,
-consistency check meta, and review checklist meta.
+consistency check meta, review checklist meta,
+pre-implementation decision sheet, and common component decision note.

@@ -2,7 +2,7 @@
 # 050 FLOW OVERVIEW
 # ============================================================
 
-status: draft
+status: canonical
 layer: overview
 system: applications
 application: NameCardManager
@@ -14,4 +14,6 @@ summary:
 Defines login, online boot, offline boot, create, update,
 delete, app-internal share, share revoke, ERP-wide share,
 ERP-wide share approval, relationship view, sync conflict resolution,
-and approval state transition flows.
+approval state transition, company group view,
+follow-up flow, migration wizard flow,
+and import review flow.
