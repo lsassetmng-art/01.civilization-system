@@ -87,70 +87,26 @@ prepared_by: Zero
 - 020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md
 - 020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
 - 020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
+- 020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md
+- 020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md
 - 030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
-- 030.model/030330_NAMECARD_SEARCH_INDEX_MODEL.md
-- 030.model/030340_NAMECARD_COMPANY_GROUP_MODEL.md
-- 030.model/030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md
-- 030.model/030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md
-- 030.model/030370_NAMECARD_RECENT_ACTIVITY_MODEL.md
-- 030.model/030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md
-- 030.model/030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md
-- 030.model/030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md
-- 030.model/030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md
-- 030.model/030420_NAMECARD_MIGRATION_JOB_MODEL.md
-- 030.model/030430_NAMECARD_IMPORT_MAPPING_MODEL.md
-- 030.model/030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md
-- 030.model/030450_NAMECARD_IMPORT_RESULT_MODEL.md
-- 030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md
-- 030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md
-- 030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md
-- 030.model/030490_NAMECARD_LOCALE_MODEL.md
-- 030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md
 - 040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
 - 050.flow/050_NAME_CARD_MANAGER_FLOW.md
-- 050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md
-- 050.flow/050150_NAMECARD_FOLLOWUP_FLOW.md
-- 050.flow/050160_NAMECARD_MIGRATION_WIZARD_FLOW.md
-- 050.flow/050170_NAMECARD_IMPORT_REVIEW_FLOW.md
 - 060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md
-- 060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
-- 060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md
-- 060.integration/060200_NAMECARD_SEARCH_CONTRACT.md
-- 060.integration/060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md
-- 060.integration/060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md
-- 060.integration/060230_NAMECARD_IMPORT_CONTRACT.md
-- 060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
-- 060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
-- 060.integration/060260_NAMECARD_LOCALE_CONTRACT.md
 - 070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
 - 080.policy/080_NAME_CARD_MANAGER_POLICY.md
-- 080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md
-- 080.policy/080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md
-- 080.policy/080210_NAMECARD_PRICING_POLICY.md
-- 080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md
-- 080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
-- 080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md
 - 090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
-- 090.interface/090200_NAMECARD_SEARCH_INTERFACE.md
-- 090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md
-- 090.interface/090220_NAMECARD_RELATED_PERSON_INTERFACE.md
-- 090.interface/090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md
-- 090.interface/090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md
-- 090.interface/090250_NAMECARD_MEETING_PREP_INTERFACE.md
-- 090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md
-- 090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
-- 090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
-- 090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
 - 100.security/100_NAME_CARD_MANAGER_SECURITY.md
 - 110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
 - 120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
-- 120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md
-- 120.implementation/120210_NAMECARD_IMPORT_GUIDE.md
-- 120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md
-- 120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md
 - 130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
-- 900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
-- 900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
+- 900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
+- 900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
+- 900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
+- 900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md
+- 900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md
+- 900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
+- 900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md -->
 
@@ -418,6 +374,8 @@ files:
 - 020_NAME_CARD_MANAGER_ARCHITECTURE.md
 - 020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
 - 021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
+- 021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md
+- 021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_INDEX.md -->
 
@@ -713,6 +671,107 @@ Not yet fixed here:
 
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md -->
+# ============================================================
+# NAMECARDMANAGER PHYSICAL SCHEMA DDL FREEZE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes DDL-adjacent physical schema decisions before execution.
+
+main_freeze_points:
+- primary keys are uuid for all primary records
+- namecard_record unique scope is per source record id only, not per full_name
+- namecard_detail_profile is one-to-one with namecard_record
+- namecard_app_share_link unique key is (namecard_id, share_target_id)
+- logical delete uses deleted_at
+- canonical_version increments on every successful record mutation
+- updated_at must be maintained on every mutation
+- company boundary must be preserved for publication-related records
+- audit/history tables are append-oriented
+
+image_handling_boundary:
+- image binary is outside relational row payload
+- record stores metadata/path/reference only
+- front/back partial presence is allowed
+- parent record delete does not imply immediate binary purge without lifecycle policy
+
+rls_freeze_direction:
+- owner can see own records
+- shared_viewer can see only granted shared records
+- publication-related privileged roles may see request/result records by company authorization
+- audit visibility is narrower than basic record visibility
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md -->
+# ============================================================
+# NAMECARDMANAGER PLATFORM SUPPORT ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes target platform support and platform-role architecture.
+
+supported_platforms:
+- iPhone
+- Android
+- tablet
+- PC
+
+platform_strategy:
+- mobile-first
+- tablet-extended
+- PC-management-enhanced
+
+platform_roles:
+- iPhone:
+  - quick capture
+  - quick edit
+  - quick follow-up check
+  - mobile auth use
+- Android:
+  - quick capture
+  - quick edit
+  - quick follow-up check
+  - mobile auth use
+- tablet:
+  - larger list/detail use
+  - meeting prep use
+  - review-oriented use
+  - shared review use
+- PC:
+  - migration/import use
+  - large-volume review
+  - company view
+  - configuration
+  - publication / approval review
+  - management-oriented operation
+
+architecture_rules:
+- platform support does not change canonical business meaning
+- platform-specific UX may differ while preserving shared behavior rules
+- image capture flows are mobile/tablet priority
+- import/review/admin flows are PC-priority capable
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md -->
 
 
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_OVERVIEW.md -->
@@ -3424,7 +3483,12 @@ ERP publication payload field mapping, API field schema,
 common component adoption, search contract,
 publication preflight contract, suggestion rule contract,
 import contract, import image contract,
-rule-based enrichment contract, and locale contract.
+rule-based enrichment contract, locale contract,
+API exact payload, sync replay/conflict contract,
+auth/authorization contract,
+shared BusinessOS publication connection spec,
+share/visibility/revoke exact contract,
+and search exact contract.
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_OVERVIEW.md -->
 
@@ -3460,6 +3524,12 @@ files:
 - 060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
 - 060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
 - 060260_NAMECARD_LOCALE_CONTRACT.md
+- 060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md
+- 060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md
+- 060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md
+- 060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md
+- 060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md
+- 060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md -->
 
@@ -4623,6 +4693,1003 @@ rules:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md -->
+# ============================================================
+# NAMECARDMANAGER API EXACT PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes initial exact request/response payloads for Phase A implementation.
+
+# ============================================================
+# 1. COMMON RESPONSE
+# ============================================================
+
+common_success_response:
+{
+  "success": true,
+  "data": {},
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+common_failure_response:
+{
+  "success": false,
+  "data": null,
+  "validation_code": "VALIDATION_CODE_OPTIONAL",
+  "error_code": "ERROR_CODE_OPTIONAL",
+  "message": "human readable optional message"
+}
+
+rules:
+- validation_code is used for prerequisite / field / policy failure
+- error_code is used for execution / system / path failure
+- success=false must not include partial success semantics unless explicitly documented
+- canonical identifiers are returned in data only
+
+# ============================================================
+# 2. LIST NAMECARDS
+# ============================================================
+
+endpoint:
+- POST /namecards/list
+
+request_payload:
+{
+  "query": "optional string",
+  "filters": {
+    "company_group_key": "optional string",
+    "sync_state": "optional enum",
+    "app_share_state": "optional enum",
+    "erp_publication_state": "optional enum",
+    "deleted_excluded": true
+  },
+  "sort": {
+    "key": "recent_update",
+    "direction": "desc"
+  },
+  "paging": {
+    "page": 1,
+    "page_size": 50
+  }
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "namecard_id": "uuid",
+        "full_name": "string",
+        "company_name": "string or null",
+        "department_name": "string or null",
+        "title_name": "string or null",
+        "sync_state": "enum",
+        "app_share_state": "enum",
+        "erp_publication_state": "enum",
+        "last_updated_at": "timestamp",
+        "last_contact_at": "timestamp or null"
+      }
+    ],
+    "paging": {
+      "page": 1,
+      "page_size": 50,
+      "total_count": 0
+    }
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 3. GET NAMECARD DETAIL
+# ============================================================
+
+endpoint:
+- POST /namecards/detail
+
+request_payload:
+{
+  "namecard_id": "uuid"
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "record": {
+      "namecard_id": "uuid",
+      "full_name": "string",
+      "company_name": "string or null",
+      "department_name": "string or null",
+      "title_name": "string or null",
+      "email": "string or null",
+      "phone": "string or null",
+      "address_text": "string or null",
+      "website_url": "string or null",
+      "memo": "string or null",
+      "sync_state": "enum",
+      "app_share_state": "enum",
+      "erp_publication_state": "enum",
+      "canonical_version": 1,
+      "created_at": "timestamp",
+      "updated_at": "timestamp"
+    },
+    "detail_profile": {
+      "tendency_note": "string or null",
+      "personality_note": "string or null",
+      "communication_note": "string or null",
+      "authority_scope_note": "string or null",
+      "decision_scope_note": "string or null",
+      "responsibility_scope_note": "string or null",
+      "work_scope_note": "string or null",
+      "work_content_note": "string or null",
+      "influence_scope_note": "string or null",
+      "relationship_note": "string or null"
+    }
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 4. UPSERT NAMECARD
+# ============================================================
+
+endpoint:
+- POST /namecards/upsert
+
+request_payload:
+{
+  "namecard_id": "uuid or null",
+  "canonical_version": 1,
+  "record": {
+    "full_name": "string",
+    "company_name": "string or null",
+    "department_name": "string or null",
+    "title_name": "string or null",
+    "email": "string or null",
+    "phone": "string or null",
+    "address_text": "string or null",
+    "website_url": "string or null",
+    "memo": "string or null"
+  },
+  "detail_profile": {
+    "tendency_note": "string or null",
+    "personality_note": "string or null",
+    "communication_note": "string or null",
+    "authority_scope_note": "string or null",
+    "decision_scope_note": "string or null",
+    "responsibility_scope_note": "string or null",
+    "work_scope_note": "string or null",
+    "work_content_note": "string or null",
+    "influence_scope_note": "string or null",
+    "relationship_note": "string or null"
+  }
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "namecard_id": "uuid",
+    "canonical_version": 2,
+    "updated_at": "timestamp"
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 5. LOGICAL DELETE NAMECARD
+# ============================================================
+
+endpoint:
+- POST /namecards/delete
+
+request_payload:
+{
+  "namecard_id": "uuid",
+  "canonical_version": 2
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "namecard_id": "uuid",
+    "deleted_at": "timestamp",
+    "canonical_version": 3
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 6. APP SHARE
+# ============================================================
+
+endpoint:
+- POST /namecards/share/apply
+
+request_payload:
+{
+  "namecard_ids": ["uuid"],
+  "share_target_ids": ["uuid"]
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "applied_count": 1,
+    "share_state": "shared_active"
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+endpoint:
+- POST /namecards/share/revoke
+
+request_payload:
+{
+  "namecard_ids": ["uuid"],
+  "share_target_ids": ["uuid"]
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "revoked_count": 1,
+    "share_state": "share_revoked"
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 7. PUBLICATION PREFLIGHT
+# ============================================================
+
+endpoint:
+- POST /namecards/publication/preflight
+
+request_payload:
+{
+  "requester_user_id": "uuid",
+  "namecard_ids": ["uuid"],
+  "company_id": "uuid",
+  "publication_policy_code": "string"
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "preflight_passed": true,
+    "blocking_validation_codes": [],
+    "warning_items": [],
+    "approval_required": true,
+    "publication_preview_payload": {}
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 8. PUBLICATION REQUEST
+# ============================================================
+
+endpoint:
+- POST /namecards/publication/request
+
+request_payload:
+{
+  "requester_user_id": "uuid",
+  "company_id": "uuid",
+  "publication_policy_code": "string",
+  "namecard_ids": ["uuid"],
+  "request_note": "optional string"
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "publication_request_id": "uuid",
+    "request_status": "pending_approval",
+    "approval_required": true
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 9. SYNC PUSH
+# ============================================================
+
+endpoint:
+- POST /namecards/sync/push
+
+request_payload:
+{
+  "device_id": "string",
+  "operations": [
+    {
+      "operation_id": "uuid",
+      "idempotency_key": "string",
+      "operation_type": "upsert_record",
+      "namecard_id": "uuid or null",
+      "base_canonical_version": 1,
+      "payload": {}
+    }
+  ]
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "operation_id": "uuid",
+        "result_state": "applied",
+        "namecard_id": "uuid",
+        "canonical_version": 2,
+        "validation_code": null,
+        "error_code": null
+      }
+    ]
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 10. SYNC PULL
+# ============================================================
+
+endpoint:
+- POST /namecards/sync/pull
+
+request_payload:
+{
+  "device_id": "string",
+  "since_timestamp": "timestamp"
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "records": [],
+    "server_time": "timestamp"
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md -->
+# ============================================================
+# NAMECARDMANAGER SYNC REPLAY AND CONFLICT CONTRACT
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes exact replay, retry, and conflict semantics for initial implementation.
+
+pending_operation_states:
+- queued
+- sending
+- applied
+- conflict
+- failed_retryable
+- failed_terminal
+
+rules:
+- operation_id is uuid and unique per local queued operation
+- idempotency_key is mandatory for every outgoing sync operation
+- replay order is ascending queued_at
+- local compression of multiple operations on the same record is not performed in Phase A
+- applied operation must never be replayed
+- failed_retryable may be replayed
+- failed_terminal requires explicit user or operator action
+- conflict state requires explicit review path
+
+canonical_version_rules:
+- base_canonical_version is required for update/delete
+- create may pass null base_canonical_version
+- server canonical_version mismatch produces conflict result_state
+
+conflict_resolution_rules:
+- server wins is the default storage truth rule
+- local wins is not allowed automatically
+- manual merge required for record conflicts where user-entered values differ
+- delete/update conflict is treated as conflict
+- image attachment conflict follows parent record conflict
+
+sync_result_states:
+- applied
+- conflict
+- failed_retryable
+- failed_terminal
+
+retry_rules:
+- retryable failures include transient network and temporary server unavailable
+- terminal failures include invalid payload and forbidden action
+- retry backoff is implementation-defined but required
+
+ui_requirements:
+- conflict item must be visible
+- retryable item must be visible
+- terminal failure must expose blocking reason
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md -->
+# ============================================================
+# NAMECARDMANAGER AUTH AND AUTHORIZATION CONTRACT
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes exact auth inheritance and authorization separation rules.
+
+auth_inheritance_context:
+{
+  "auth_context_type": "businessos_inherited",
+  "user_id": "uuid",
+  "company_id": "uuid or null",
+  "session_id": "string",
+  "device_id": "string or null",
+  "issued_at": "timestamp",
+  "expires_at": "timestamp"
+}
+
+rules:
+- authentication success is separate from authorization success
+- inherited auth may grant session entry but not operation permission
+- expired inherited auth must not be accepted
+- company context is required for publication-capable operations
+
+roles:
+- owner
+- editor
+- shared_viewer
+- publication_operator
+- approver
+
+role_capability_matrix:
+- owner:
+  - create yes
+  - update yes
+  - delete yes
+  - share yes
+  - publication_request yes
+  - import yes
+- editor:
+  - create yes
+  - update yes
+  - delete no
+  - share no
+  - publication_request no
+  - import yes
+- shared_viewer:
+  - create no
+  - update no
+  - delete no
+  - share no
+  - publication_request no
+  - import no
+- publication_operator:
+  - create no
+  - update no
+  - delete no
+  - share no
+  - publication_request yes
+  - import no
+- approver:
+  - create no
+  - update no
+  - delete no
+  - share no
+  - publication_request no
+  - import no
+  - approve yes
+
+initial_navigation_rules:
+- inherited auth success may enter app home
+- forbidden target operation must redirect to safe visible screen with permission message
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md -->
+# ============================================================
+# NAMECARDMANAGER SHARED BUSINESSOS PUBLICATION CONNECTION SPEC
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes exact connection boundary between NameCardManager and shared BusinessOS publication capability.
+
+principle:
+- NameCardManager does not directly transmit to ERP
+- NameCardManager connects only to shared BusinessOS publication capability
+
+preflight_request_direction:
+{
+  "source_application": "NameCardManager",
+  "requester_user_id": "uuid",
+  "company_id": "uuid",
+  "publication_policy_code": "string",
+  "namecard_ids": ["uuid"]
+}
+
+preflight_response_direction:
+{
+  "preflight_passed": true,
+  "approval_required": true,
+  "blocking_validation_codes": [],
+  "warning_items": [],
+  "publication_preview_payload": {}
+}
+
+publication_request_direction:
+{
+  "source_application": "NameCardManager",
+  "requester_user_id": "uuid",
+  "company_id": "uuid",
+  "publication_policy_code": "string",
+  "namecard_ids": ["uuid"],
+  "request_note": "optional string"
+}
+
+publication_response_direction:
+{
+  "publication_request_id": "uuid",
+  "request_status": "pending_approval",
+  "approval_required": true
+}
+
+result_poll_response_direction:
+{
+  "publication_request_id": "uuid",
+  "request_status": "pending_approval | accepted_for_publication | rejected | failed | published",
+  "publication_state": "not_published | pending_approval | approved_not_published | published | publish_failed | rejected | returned_for_fix",
+  "approval_event_items": [],
+  "result_code": "optional string"
+}
+
+mapping_rules:
+- pending_approval maps to namecard pending_approval
+- accepted_for_publication maps to approved_not_published until publication success
+- published maps to published
+- rejected maps to rejected
+- failed maps to publish_failed unless approval failure semantics apply
+
+duplicate_submission_rules:
+- duplicate request on the same source request payload must be blocked by idempotency control
+- repeated UI taps must not create duplicate publication requests
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md -->
+# ============================================================
+# NAMECARDMANAGER SHARE VISIBILITY REVOKE EXACT CONTRACT
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes exact share, visibility, and revoke behavior for initial implementation.
+
+# ============================================================
+# 1. SHARE UNIT
+# ============================================================
+
+initial_share_unit:
+- namecard unit only
+
+not_in_scope_phase_a:
+- company unit share
+- grouped contact share
+- bulk relationship-derived share
+
+# ============================================================
+# 2. SHARE TARGET MODEL
+# ============================================================
+
+share_target_exact_fields:
+- share_target_id
+- target_user_id
+- target_company_id_optional
+- granted_role
+- granted_at
+- granted_by_user_id
+- revoked_at_optional
+- revoke_reason_optional
+- share_state
+
+share_states:
+- shared_active
+- share_revoked
+
+granted_roles_for_shared_targets:
+- shared_viewer
+
+phase_a_rules:
+- app-internal share grants read-only view
+- app-internal shared target cannot re-share
+- app-internal shared target cannot publication-request
+- app-internal shared target cannot edit or delete source record
+
+# ============================================================
+# 3. VISIBILITY SCOPE
+# ============================================================
+
+visibility_scopes:
+- owner_only
+- app_shared
+- publication_pending
+- published_to_shared_businessos_capability
+- published_result_visible
+
+owner_visible_fields:
+- all record fields
+- all detail profile fields
+- relationship sections
+- history sections
+- order history sections
+- app share state
+- publication state
+- conflict / validation surfaces
+
+shared_viewer_visible_fields_phase_a:
+- basic record fields
+- safe detail profile summary only
+- relationship summary limited
+- recent activity limited
+- app share state visible
+- publication state visible limited
+
+shared_viewer_hidden_fields_phase_a:
+- protected internal notes
+- authority_scope_note full raw value
+- decision_scope_note full raw value
+- responsibility_scope_note full raw value
+- internal-only memo
+- pending sync conflict internals
+- publication request internal metadata
+- raw audit entries
+
+publication_operator_visible_fields_phase_a:
+- publication preflight relevant fields
+- publication preview relevant fields
+- publication state
+- approval / result state
+
+approver_visible_fields_phase_a:
+- publication request context
+- publication preview
+- approval events
+- result state
+- rejection / return-for-fix reason
+
+# ============================================================
+# 4. SHARE APPLY
+# ============================================================
+
+endpoint:
+- POST /namecards/share/apply
+
+request_payload:
+{
+  "namecard_ids": ["uuid"],
+  "share_target_ids": ["uuid"]
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "applied_count": 1,
+    "share_state": "shared_active"
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+apply_rules:
+- only owner may apply share in Phase A
+- duplicate active share link must not be duplicated
+- repeated request must remain idempotent at effect level
+- share applies only to selected namecard ids
+
+# ============================================================
+# 5. SHARE REVOKE
+# ============================================================
+
+endpoint:
+- POST /namecards/share/revoke
+
+request_payload:
+{
+  "namecard_ids": ["uuid"],
+  "share_target_ids": ["uuid"],
+  "revoke_reason": "optional string"
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "revoked_count": 1,
+    "share_state": "share_revoked"
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+revoke_rules:
+- only owner may revoke app-internal share in Phase A
+- revoke effect is immediate on next visibility evaluation
+- revoked shared target loses record visibility
+- revoke does not delete audit trail
+- revoke does not affect already-published ERP-side visibility/result history
+- ERP-wide publication is not revoked by normal user-side app revoke
+
+# ============================================================
+# 6. RELATIONSHIP / HISTORY VISIBILITY
+# ============================================================
+
+relationship_visibility_phase_a:
+- owner: full
+- shared_viewer: summary only
+- publication_operator: only publication-relevant summary if needed
+- approver: only approval-relevant summary if needed
+
+history_visibility_phase_a:
+- owner: full user-facing history
+- shared_viewer: limited business-facing history only
+- publication_operator: publication-related history only
+- approver: approval/publication-related history only
+
+# ============================================================
+# 7. AUDIT RULES
+# ============================================================
+
+audit_events_required:
+- share_apply
+- share_revoke
+- visibility_scope_evaluated_optional
+- revoke_attempt_rejected
+- forbidden_re_share_attempt
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md -->
+# ============================================================
+# NAMECARDMANAGER SEARCH EXACT CONTRACT
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes exact search scope, filter, and sorting behavior for initial implementation.
+
+# ============================================================
+# 1. SEARCH TARGETS
+# ============================================================
+
+phase_a_search_targets:
+- full_name
+- company_name
+- department_name
+- title_name
+- email
+- phone
+- memo
+- relationship_note
+- normalized_company_name
+
+phase_a_excluded_targets:
+- OCR-derived text
+- publication result text
+- raw audit entries
+- hidden protected internal notes for shared users
+
+# ============================================================
+# 2. MATCH MODES
+# ============================================================
+
+supported_match_modes_phase_a:
+- exact
+- prefix
+- partial
+- normalized_company_match
+
+rules:
+- exact compares normalized comparable string
+- prefix is left-match after normalization
+- partial is contains-match after normalization
+- normalized_company_match uses normalized company key/value when available
+
+phase_a_not_supported:
+- romaji conversion search
+- kana conversion search
+- phonetic fuzzy ranking
+- semantic embedding search
+
+# ============================================================
+# 3. BOOLEAN / FILTER BEHAVIOR
+# ============================================================
+
+default_query_behavior:
+- multi-token query uses AND semantics in Phase A
+
+supported_filters_phase_a:
+- company_group_key
+- sync_state
+- app_share_state
+- erp_publication_state
+- deleted_excluded
+
+filter_rules:
+- deleted_excluded defaults to true
+- unauthorized records must be filtered before result composition
+- shared users search only visible records
+
+# ============================================================
+# 4. SORT KEYS
+# ============================================================
+
+supported_sort_keys_phase_a:
+- recent_update
+- recent_contact
+- full_name
+- company_name
+- created_at
+
+supported_sort_directions:
+- asc
+- desc
+
+default_sort:
+- recent_update desc
+
+# ============================================================
+# 5. RELATED HIT CONDITIONS
+# ============================================================
+
+related_people_hits_optional_rules:
+- returned only when searching visible records
+- derived from visible relationship summary only
+- hidden protected relationship details must not leak through search
+
+grouped_company_hits_optional_rules:
+- returned only when normalized company grouping exists
+- ambiguous grouping remains reviewable and non-destructive
+
+# ============================================================
+# 6. REQUEST / RESPONSE
+# ============================================================
+
+endpoint:
+- POST /namecards/search
+
+request_payload:
+{
+  "query": "optional string",
+  "mode": "exact | prefix | partial | normalized_company_match",
+  "filters": {
+    "company_group_key": "optional string",
+    "sync_state": "optional enum",
+    "app_share_state": "optional enum",
+    "erp_publication_state": "optional enum",
+    "deleted_excluded": true
+  },
+  "sort": {
+    "key": "recent_update",
+    "direction": "desc"
+  },
+  "paging": {
+    "page": 1,
+    "page_size": 50
+  }
+}
+
+response_payload:
+{
+  "success": true,
+  "data": {
+    "items": [],
+    "grouped_company_hits_optional": [],
+    "related_people_hits_optional": [],
+    "paging": {
+      "page": 1,
+      "page_size": 50,
+      "total_count": 0
+    }
+  },
+  "validation_code": null,
+  "error_code": null,
+  "message": null
+}
+
+# ============================================================
+# 7. INDEX UPDATE STRATEGY
+# ============================================================
+
+phase_a_strategy:
+- search index/update follows canonical record update
+- async rebuild may exist but must not expose stale unauthorized visibility
+- normalized company search support must update when company normalization changes
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_OVERVIEW.md -->
 # ============================================================
 # 070 OPERATIONS OVERVIEW
@@ -5010,6 +6077,9 @@ files:
 - 080220_NAMECARD_IMPORT_REVIEW_POLICY.md
 - 080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
 - 080240_NAMECARD_LOCALIZATION_POLICY.md
+- 080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md
+- 080260_NAMECARD_SEARCH_POLICY_FREEZE.md
+- 080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_INDEX.md -->
 
@@ -5831,6 +6901,88 @@ future_scope:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md -->
+# ============================================================
+# NAMECARD SHARE VISIBILITY POLICY FREEZE
+# ============================================================
+
+status: canonical
+layer: policy
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes field-level and role-level visibility direction for sharing behavior.
+
+policy_rules:
+- app-internal share is read-only in Phase A
+- re-share is prohibited for shared_viewer
+- owner_only fields remain hidden from shared_viewer
+- publication-related privileged visibility must be role-based
+- ERP-side publication is not revoked by normal app revoke
+- visibility must be evaluated before search result composition
+- protected internal notes must not leak through list/search/summary surfaces
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md -->
+# ============================================================
+# NAMECARD SEARCH POLICY FREEZE
+# ============================================================
+
+status: canonical
+layer: policy
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes initial search capability boundary to reduce implementation drift.
+
+policy_rules:
+- Phase A search is lexical, not semantic
+- unsupported fuzzy dimensions must not be implied in UI
+- hidden fields must not participate in unauthorized user search visibility
+- normalized company search is allowed
+- initial multi-token semantics use AND
+- ranking remains simple and deterministic in Phase A
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md -->
+# ============================================================
+# NAMECARD PLATFORM SUPPORT POLICY
+# ============================================================
+
+status: canonical
+layer: policy
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines platform support policy and device-role separation.
+
+policy_rules:
+- NameCardManager must support iPhone, Android, tablet, and PC
+- mobile is the primary usage surface
+- tablet is the expanded review surface
+- PC is the stronger management and migration surface
+- authorization, visibility, and publication rules must remain consistent across platforms
+- device-specific UI adaptation must not create business-rule divergence
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_OVERVIEW.md -->
 # ============================================================
 # 090 INTERFACE OVERVIEW
@@ -5893,6 +7045,9 @@ files:
 - 090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
 - 090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
 - 090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
+- 090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md
+- 090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md
+- 090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_INDEX.md -->
 
@@ -7019,6 +8174,113 @@ requirements:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md -->
+# ============================================================
+# NAMECARD SHARE VISIBILITY INTERFACE FREEZE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes user-facing visibility presentation for Phase A share/revoke behavior.
+
+ui_requirements:
+- shared state badge must be visible
+- revoked state must not continue to expose record detail
+- shared_viewer must not see owner-only sections
+- publication state must be visible in limited form where applicable
+- forbidden actions must show permission reason
+- visibility preview should reflect role-based visible sections
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md -->
+# ============================================================
+# NAMECARD SEARCH INTERFACE FREEZE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes initial search UI scope for Phase A.
+
+ui_requirements:
+- expose supported search modes only
+- do not imply OCR search in Phase A
+- do not imply semantic fuzzy search in Phase A
+- support query + filter + sort + paging
+- expose normalized company search path where available
+- recent update default sort must be visible or predictable
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md -->
+# ============================================================
+# NAMECARD PLATFORM ADAPTIVE INTERFACE FREEZE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes adaptive/responsive interface direction across mobile, tablet, and PC.
+
+interface_strategy:
+- mobile-first layout
+- tablet expanded layout
+- PC dense management layout
+
+screen_role_guidance:
+- list/detail:
+  - mobile yes
+  - tablet yes
+  - pc yes
+- image capture:
+  - mobile primary
+  - tablet secondary
+  - pc non-primary
+- share / visibility review:
+  - mobile yes
+  - tablet yes
+  - pc yes
+- migration/import:
+  - mobile limited
+  - tablet partial
+  - pc primary
+- admin / review / bulk handling:
+  - mobile limited
+  - tablet partial
+  - pc primary
+
+ui_rules:
+- no platform may expose forbidden actions differently by business rule
+- responsive adaptation may change layout density, not permission meaning
+- PC may show more simultaneous panes
+- tablet may show split layout where useful
+- mobile may use step-based flow for dense review paths
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_OVERVIEW.md -->
 # ============================================================
 # 100 SECURITY OVERVIEW
@@ -7427,6 +8689,12 @@ files:
 - 120210_NAMECARD_IMPORT_GUIDE.md
 - 120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md
 - 120230_NAMECARD_LOCALIZATION_GUIDE.md
+- 120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md
+- 120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md
+- 120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md
+- 120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md
+- 120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md
+- 120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_INDEX.md -->
 
@@ -8133,6 +9401,238 @@ initial_implementation_scope:
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md -->
 
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARDMANAGER IMAGE HANDLING IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes exact image lifecycle direction for front/back business card handling.
+
+flow:
+- capture
+- local staging
+- review
+- commit metadata
+- upload / reference finalize
+- cleanup staging
+
+rules:
+- front and back are independently replaceable
+- mime whitelist is required
+- size limit is required
+- staging cleanup is required after commit or terminal cancel
+- failed upload must not silently mark image committed
+- record update and image metadata update must be consistent from UI perspective
+- OCR is out of initial scope
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md -->
+# ============================================================
+# NAMECARDMANAGER ROLE PERMISSION MATRIX
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation-facing role permission summary.
+
+matrix:
+- owner:
+  - list yes
+  - detail yes
+  - create yes
+  - update yes
+  - delete yes
+  - share yes
+  - revoke yes
+  - publication_preflight yes
+  - publication_request yes
+  - import yes
+- editor:
+  - list yes
+  - detail yes
+  - create yes
+  - update yes
+  - delete no
+  - share no
+  - revoke no
+  - publication_preflight no
+  - publication_request no
+  - import yes
+- shared_viewer:
+  - list yes limited
+  - detail yes limited
+  - create no
+  - update no
+  - delete no
+  - share no
+  - revoke no
+  - publication_preflight no
+  - publication_request no
+  - import no
+- publication_operator:
+  - list yes limited
+  - detail yes limited
+  - create no
+  - update no
+  - delete no
+  - share no
+  - revoke no
+  - publication_preflight yes
+  - publication_request yes
+  - import no
+- approver:
+  - list yes company scope
+  - detail yes company scope
+  - approve yes
+  - reject yes
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD SHARE VISIBILITY IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation rules for exact share/visibility/revoke behavior.
+
+implementation_rules:
+- evaluate authorization before composing response fields
+- shared_viewer field suppression must be server-side enforced
+- revoke must remove effective visibility immediately on next evaluation
+- audit share apply/revoke events
+- do not overload ERP publication state with app share state
+- keep share link and publication state separated
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD SEARCH IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation rules for exact Phase A search behavior.
+
+implementation_rules:
+- normalize searchable strings deterministically
+- apply visibility filter before final result emission
+- support only fixed Phase A modes
+- keep multi-token AND behavior consistent across API/UI
+- keep unsupported fuzzy dimensions out of UI and API claims
+- rebuild normalized company search support when normalization changes
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md -->
+# ============================================================
+# NAMECARDMANAGER PHASE A BUILD ORDER GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation-facing build order for Phase A.
+
+build_order:
+- project shell
+- model / dto shell
+- local persistence shell
+- list/detail UI shell
+- CRUD path
+- sync queue shell
+- auth entry shell
+- authorization checks
+- share core
+- publication core
+- image core
+- import minimum
+- audit/history core
+- test pass and freeze
+
+implementation_notes:
+- local-first path should be working before sync replay path
+- authorization checks should be added before share/publication actions are exposed
+- image handling should be added after basic record save path is stable
+- CSV import minimum should target acquisition value, not full enrichment
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD PLATFORM IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for platform support.
+
+implementation_rules:
+- preserve shared business rules across iPhone, Android, tablet, and PC
+- implement adaptive layout by screen size / interaction mode
+- keep mobile capture path simple and fast
+- keep PC migration/review path information-dense
+- avoid platform-only business features unless explicitly approved
+- test key paths on mobile, tablet, and PC separately
+
+priority_guidance:
+- Phase A must not assume phone-only support
+- image capture flow should be optimized first for mobile
+- migration/import and management review should be optimized first for PC
+- tablet should support review-oriented and meeting-prep flows well
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md -->
+
+
 <!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_OVERVIEW.md -->
 # ============================================================
 # 130 DEVELOPMENT OVERVIEW
@@ -8301,6 +9801,13 @@ files:
 - 900230_NAMECARD_REVIEW_CHECKLIST_META.md
 - 900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
 - 900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
+- 900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
+- 900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
+- 900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
+- 900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md
+- 900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md
+- 900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
+- 900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_INDEX.md -->
 
@@ -9109,3 +10616,623 @@ It fixes design-level adoption and commonization direction only.
 
 
 <!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md -->
+# ============================================================
+# NAMECARDMANAGER PHASE SCOPE FREEZE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes delivery phases to reduce implementation scope drift.
+
+phase_a:
+- auth entry
+- local CRUD
+- sync core
+- share core
+- publication preflight/request
+- front/back image basic handling
+- CSV import minimum entry
+- import preview minimum
+
+phase_b:
+- duplicate review
+- company grouping
+- recent activity
+- meeting prep
+- import diagnostics
+- migration review
+- migration summary basic
+
+phase_c:
+- rule-based enrichment advanced
+- localization expansion
+- import image support advanced
+- advanced migration support
+- advanced public company enrichment
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md -->
+# ============================================================
+# NAMECARDMANAGER EVENT TO AUDIT HISTORY UI MATRIX
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Maps event types to audit/history/UI visibility.
+
+matrix:
+- create_namecard:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification no
+- update_namecard:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification no
+- delete_namecard:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification no
+- share_apply:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification optional
+- share_revoke:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification optional
+- publication_preflight_failed:
+  - audit yes
+  - history no
+  - ui_message yes
+  - notification no
+- publication_requested:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification optional
+- publication_approved:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification optional
+- publication_rejected:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification optional
+- publication_published:
+  - audit yes
+  - history yes
+  - ui_message yes
+  - notification optional
+- sync_conflict:
+  - audit yes
+  - history no
+  - ui_message yes
+  - notification no
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md -->
+# ============================================================
+# NAMECARD SHARE VISIBILITY SEARCH SCOPE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Captures final scope note for remaining implementation-readiness gaps closed in this step.
+
+closed_items:
+- share / visibility / revoke exact
+- search exact
+
+phase_a_boundary_notes:
+- no company-unit share in Phase A
+- no re-share in Phase A
+- no OCR search in Phase A
+- no semantic fuzzy search in Phase A
+- hidden fields are suppressed before result emission
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md -->
+# ============================================================
+# NAMECARDMANAGER PHASE A IMPLEMENTATION START ORDER
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes the practical start order for Phase A implementation.
+
+phase_a_start_order:
+- step_01_project_shell_and_module_structure
+- step_02_ui_string_key_skeleton
+- step_03_local_schema_skeleton
+- step_04_basic_record_dto_and_api_contract_binding
+- step_05_list_and_detail_screen_skeleton
+- step_06_basic_crud_local_first_path
+- step_07_sync_queue_skeleton
+- step_08_auth_inheritance_entry
+- step_09_authorization_gate
+- step_10_share_apply_revoke_core
+- step_11_publication_preflight_request_core
+- step_12_front_back_image_basic_flow
+- step_13_csv_import_minimum_entry
+- step_14_basic_audit_history_surface
+- step_15_phase_a_integration_test_pass
+
+rules:
+- do not start advanced enrichment before phase_a core path works
+- do not start semantic search before exact lexical search works
+- do not start advanced migration support before minimum CSV import works
+- do not start ERP-direct assumptions because publication flows through shared BusinessOS capability only
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md -->
+# ============================================================
+# NAMECARDMANAGER PHASE A BLOCKERS AND EXIT CRITERIA
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines start blockers and finish criteria for Phase A.
+
+start_blockers:
+- api_exact_payload_not_fixed
+- sync_replay_conflict_not_fixed
+- auth_authorization_contract_not_fixed
+- shared_businessos_publication_spec_not_fixed
+- physical_schema_rls_image_lifecycle_not_fixed
+
+phase_a_exit_criteria:
+- local CRUD works
+- sync queue works at minimum skeleton level
+- auth inheritance entry works
+- authorization gate works
+- app share apply/revoke works
+- publication preflight/request works through shared BusinessOS capability
+- front/back image basic flow works
+- csv import minimum entry and preview works
+- audit/history basic visibility works
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md -->
+# ============================================================
+# NAMECARD PLATFORM SCOPE FREEZE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes supported platforms and their initial intended usage roles.
+
+frozen_supported_platforms:
+- iPhone
+- Android
+- tablet
+- PC
+
+frozen_usage_direction:
+- mobile centered
+- tablet expanded
+- PC management strengthened
+
+initial_platform_priority:
+- mobile:
+  - capture
+  - quick edit
+  - quick follow-up
+- tablet:
+  - review
+  - detail comparison
+  - meeting prep
+- pc:
+  - import
+  - migration review
+  - configuration
+  - publication / approval review
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md -->
+# ============================================================
+# NAMECARDMANAGER PHASE A TASK BREAKDOWN
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Breaks Phase A into executable implementation task units.
+
+# ============================================================
+# 0. PHASE A SCOPE
+# ============================================================
+
+phase_a_scope:
+- auth entry
+- local CRUD
+- sync core
+- share core
+- publication preflight / request
+- front / back image basic handling
+- CSV import minimum entry
+- import preview minimum
+
+not_in_scope:
+- advanced migration support
+- rule-based enrichment advanced
+- semantic search
+- OCR
+- advanced public company enrichment
+
+# ============================================================
+# 1. TASK ORDER
+# ============================================================
+
+phase_a_task_order:
+- A-01 project shell / module skeleton
+- A-02 UI string key skeleton
+- A-03 local DB skeleton
+- A-04 DTO / API contract binding skeleton
+- A-05 screen skeleton
+- A-06 basic CRUD local-first path
+- A-07 sync queue skeleton
+- A-08 auth inheritance entry
+- A-09 authorization gate
+- A-10 share apply / revoke core
+- A-11 publication preflight / request core
+- A-12 front / back image basic flow
+- A-13 CSV import minimum entry / preview
+- A-14 audit / history basic surface
+- A-15 Phase A integration test pass
+
+# ============================================================
+# 2. TASK DETAILS
+# ============================================================
+
+## A-01
+name:
+- project shell / module skeleton
+
+contents:
+- package/module skeleton
+- screen/model/local-data/sync/share/publication layer shell
+- feature-based directory layout
+- platform-aware structure shell
+
+done_when:
+- list/detail/settings/share target implementation can start
+
+## A-02
+name:
+- UI string key skeleton
+
+contents:
+- UI label keys
+- validation keys
+- error keys
+- badge keys
+- no hardcoded user-facing strings rule reflected in skeleton
+
+done_when:
+- main screens can be built with key-managed strings
+
+## A-03
+name:
+- local DB skeleton
+
+contents:
+- namecard_record
+- detail_profile
+- share_link
+- pending_operation
+- publication_request_state
+- publication_result_state
+- audit/history minimum
+- image metadata minimum
+
+done_when:
+- local CRUD persistence target is fixed
+
+## A-04
+name:
+- DTO / API contract binding skeleton
+
+contents:
+- exact request/response DTOs
+- enum models
+- validation_code / error_code models
+- share/publication/sync/search/CRUD payload models
+
+done_when:
+- API client and local model conversion can start
+
+## A-05
+name:
+- screen skeleton
+
+contents:
+- list screen shell
+- detail screen shell
+- settings screen shell
+- share target screen shell
+- adaptive layout shell for mobile/tablet/PC
+
+done_when:
+- CRUD/share/publication flows can be placed into screens
+
+## A-06
+name:
+- basic CRUD local-first path
+
+contents:
+- create
+- update
+- detail
+- list
+- logical delete
+- detail profile save
+- canonical_version minimum handling
+
+done_when:
+- offline/local CRUD works end-to-end
+
+## A-07
+name:
+- sync queue skeleton
+
+contents:
+- pending_operation creation
+- operation_id / idempotency_key
+- queue state transitions
+- push/pull shell
+- replay ordering
+- conflict state persistence
+
+done_when:
+- local changes are queued and sync state becomes visible
+
+## A-08
+name:
+- auth inheritance entry
+
+contents:
+- BusinessOS inherited auth context intake
+- expiry check
+- company context intake
+- safe landing screen routing
+
+done_when:
+- inherited entry path works safely
+
+## A-09
+name:
+- authorization gate
+
+contents:
+- owner/editor/shared_viewer/publication_operator/approver checks
+- screen gate
+- action gate
+- forbidden action handling
+
+done_when:
+- authenticated user still cannot perform unauthorized actions
+
+## A-10
+name:
+- share apply / revoke core
+
+contents:
+- share target selection
+- apply share
+- revoke share
+- shared_viewer restrictions
+- audit events
+
+done_when:
+- app-internal share basic behavior works
+
+## A-11
+name:
+- publication preflight / request core
+
+contents:
+- preflight call
+- blocking/warning rendering
+- approval_required rendering
+- request submission
+- state update
+- shared BusinessOS publication adapter usage only
+
+done_when:
+- publication request path works without ERP direct connection
+
+## A-12
+name:
+- front / back image basic flow
+
+contents:
+- front add/replace
+- back add/replace
+- staging
+- review
+- metadata commit
+- size/mime checks
+- staging cleanup
+
+done_when:
+- two-sided image basic lifecycle works
+
+## A-13
+name:
+- CSV import minimum entry / preview
+
+contents:
+- CSV file selection
+- source type minimum selection
+- minimum mapping
+- preview
+- minimum import commit
+
+done_when:
+- generic CSV minimum import path works
+
+## A-14
+name:
+- audit / history basic surface
+
+contents:
+- create/update/delete/share/revoke/publication request event display
+- audit/history separation
+- basic user-facing history
+
+done_when:
+- primary events are traceable in UI
+
+## A-15
+name:
+- Phase A integration test pass
+
+contents:
+- CRUD
+- sync queue
+- auth entry
+- authorization
+- share
+- publication preflight/request
+- image
+- CSV import minimum
+- history
+
+done_when:
+- Phase A exit criteria are satisfied
+
+# ============================================================
+# 3. DEPENDENCIES
+# ============================================================
+
+dependency_order:
+- A-01 -> A-02 -> A-03 -> A-04 -> A-05 -> A-06
+- A-06 -> A-07
+- A-06 -> A-08
+- A-08 -> A-09
+- A-09 -> A-10
+- A-09 -> A-11
+- A-06 -> A-12
+- A-06 -> A-13
+- A-10/A-11/A-12/A-13 -> A-14
+- A-14 -> A-15
+
+# ============================================================
+# 4. PARALLEL WORK BUNDLES
+# ============================================================
+
+parallel_bundle_1:
+- A-01
+- A-02
+- A-03
+- A-04
+
+parallel_bundle_2:
+- A-05
+- A-06
+
+parallel_bundle_3:
+- A-07
+- A-08
+- A-09
+
+parallel_bundle_4:
+- A-10
+- A-11
+
+parallel_bundle_5:
+- A-12
+- A-13
+
+parallel_bundle_6:
+- A-14
+- A-15
+
+# ============================================================
+# 5. IMPLEMENTATION PRIORITY
+# ============================================================
+
+priority_notes:
+- local-first CRUD before sync sophistication
+- sync/auth/authorization before share/publication exposure
+- image after stable basic record path
+- import minimum kept in Phase A for acquisition value
+- history after primary event path exists
+
+# ============================================================
+# 6. SUMMARY
+# ============================================================
+
+summary:
+Phase A should proceed in the order:
+CRUD -> sync/auth -> share/publication -> image/import -> history/test.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md -->
