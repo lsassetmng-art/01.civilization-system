@@ -1,0 +1,12 @@
+# 0700000 OPERATIONS INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/0700000_OPERATIONS_INDEX.md
+## Purpose
+CareerLaunch の 070.operations 配下を一覧する。
+
+## Children
+- 0700001_CAREER_LAUNCH_OPERATIONS_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

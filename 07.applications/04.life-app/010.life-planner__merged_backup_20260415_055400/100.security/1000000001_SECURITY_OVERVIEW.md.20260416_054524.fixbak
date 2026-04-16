@@ -1,0 +1,10 @@
+# ============================================================
+# SECURITY OVERVIEW
+# ============================================================
+
+layer: 100.security
+
+focus:
+  - sensitive data handling
+  - share scope enforcement
+  - access control

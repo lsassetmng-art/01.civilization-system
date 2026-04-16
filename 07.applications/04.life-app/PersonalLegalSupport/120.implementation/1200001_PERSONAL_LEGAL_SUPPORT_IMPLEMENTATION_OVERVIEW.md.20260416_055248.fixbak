@@ -1,0 +1,20 @@
+# ============================================================
+# PERSONAL LEGAL SUPPORT IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 120.implementation
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 実装レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 実装順序と固定対象を定義する
+  - 共通部品参照点とアプリ固有実装点を分ける
+  - payload 固定の前提を整える

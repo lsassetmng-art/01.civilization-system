@@ -1,0 +1,11 @@
+# Architecture Domain Index
+
+## purpose
+MealPlanner ドメイン構造を定義する
+
+## files
+- 0200200001_DOMAIN_OVERVIEW.md
+
+## notes
+- この index は Architecture Domain の入口である
+- 詳細は配下ドキュメントを参照する

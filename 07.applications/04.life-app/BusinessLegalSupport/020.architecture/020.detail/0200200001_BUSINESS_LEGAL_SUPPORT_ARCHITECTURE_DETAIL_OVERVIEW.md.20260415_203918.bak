@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT ARCHITECTURE DETAIL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 020.architecture
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - コンポーネント分離と責務境界を詳細化する
+  - write path と read path を分けて整理する
+  - source of truth の誤認を防ぐ

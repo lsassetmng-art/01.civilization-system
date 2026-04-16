@@ -1,0 +1,35 @@
+# ============================================================
+# END OF LIFE PLANNER INDEX
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+system: EndOfLifePlanner
+domain: 07.applications / 04.life-app
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - EndOfLifePlanner 正式設計書の入口
+  - 読み順固定
+  - 各層責務の分離
+  - 実装前固定事項の参照起点
+
+reading_order:
+  - 001_END_OF_LIFE_PLANNER_OVERVIEW.md
+  - 002_END_OF_LIFE_PLANNER_CANONICAL_DRAFT.md
+  - 010.constitution/010000_END_OF_LIFE_PLANNER_CONSTITUTION_INDEX.md
+  - 020.architecture/020000_END_OF_LIFE_PLANNER_ARCHITECTURE_INDEX.md
+  - 030.model/030000_END_OF_LIFE_PLANNER_MODEL_INDEX.md
+  - 040.runtime/040000_END_OF_LIFE_PLANNER_RUNTIME_INDEX.md
+  - 050.flow/050000_END_OF_LIFE_PLANNER_FLOW_INDEX.md
+  - 060.integration/060000_END_OF_LIFE_PLANNER_INTEGRATION_INDEX.md
+  - 070.operations/070000_END_OF_LIFE_PLANNER_OPERATIONS_INDEX.md
+  - 080.policy/080000_END_OF_LIFE_PLANNER_POLICY_INDEX.md
+  - 090.interface/090000_END_OF_LIFE_PLANNER_INTERFACE_INDEX.md
+  - 100.security/100000_END_OF_LIFE_PLANNER_SECURITY_INDEX.md
+  - 110.infrastructure/110000_END_OF_LIFE_PLANNER_INFRASTRUCTURE_INDEX.md
+  - 120.implementation/120000_END_OF_LIFE_PLANNER_IMPLEMENTATION_INDEX.md
+  - 130.development/130000_END_OF_LIFE_PLANNER_DEVELOPMENT_INDEX.md
+  - 900.meta/900000_END_OF_LIFE_PLANNER_META_INDEX.md
+  - 920.meta/920000_END_OF_LIFE_PLANNER_HANDOFF_INDEX.md

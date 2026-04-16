@@ -1,0 +1,16 @@
+# ============================================================
+# COPY POLICY OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 080.policy
+subfolder: 040.copy-policy
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - LifePlanner全体の文言トーンを固定する
+  - センシティブ領域でも違和感の少ない表現を保つ
+  - 通知、空状態、エラー、AI支援文言の基準を揃える

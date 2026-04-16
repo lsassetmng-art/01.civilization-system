@@ -1,14 +1,19 @@
-# ============================================================
 # PERSONA RUNTIME SESSION DEVELOPMENT GUIDE
-# ============================================================
 
-status: canonical
-layer: development
-domain: runtime-hosting
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-development_rules:
-do not allow stale session reuse
-prefer earlier deterministic disposal over risky lingering state
+session_lifecycle:
+- create
+- active
+- suspended
+- resumed
+- terminating
+- terminated
+- expired
+
+required_controls:
+- released snapshot or package only
+- heartbeat timeout exact handling
+- resume token or session restore contract fixed
+- termination reason fixed
+- session audit event emitted on each terminal path

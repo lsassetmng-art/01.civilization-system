@@ -1,0 +1,19 @@
+# ============================================================
+# ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+high_level_architecture:
+  - 記録取得層
+  - 正規化層
+  - 比較・解釈層
+  - 表示層
+  - 共有・出力層
+  - ガバナンス層
+
+key_decisions:
+  - iOS 主要窓口は Apple Health / HealthKit
+  - Android 主要窓口は Health Connect
+  - 生データと正規化データを分離する
+  - 健康スコアは説明可能性を持つ

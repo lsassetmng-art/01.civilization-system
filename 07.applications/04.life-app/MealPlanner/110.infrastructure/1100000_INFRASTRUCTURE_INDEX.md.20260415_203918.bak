@@ -1,0 +1,11 @@
+# Infrastructure Index
+
+## purpose
+MealPlanner の配置、実行基盤、依存基盤を定義する
+
+## files
+- 1100001_INFRASTRUCTURE_OVERVIEW.md
+
+## notes
+- この index は Infrastructure の入口である
+- 詳細は配下ドキュメントを参照する

@@ -1,0 +1,13 @@
+# 0400002 RUNTIME CORE INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0400003_RUNTIME_CORE_OVERVIEW.md
+- 0400004_CAREER_LAUNCH_RUNTIME_BEHAVIOR.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

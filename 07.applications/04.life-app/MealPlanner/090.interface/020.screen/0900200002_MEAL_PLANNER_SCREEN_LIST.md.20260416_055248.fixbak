@@ -1,0 +1,34 @@
+# MealPlanner Screen List
+
+## screens
+- dashboard_home
+- weekly_meal_planner
+- daily_meal_detail
+- monthly_meal_planner
+- menu_search_and_suggestion
+- pantry_inventory
+- shopping_list
+- family_settings
+- dietary_rules_settings
+- goal_and_budget_settings
+- template_library
+- favorite_menu_list
+- meal_history_log
+- user_menu_editor
+- user_menu_publish_status
+- notification_settings
+
+## 重要画面要件
+- weekly_meal_planner:
+  - 主導線
+  - CSV 出力ボタン
+- daily_meal_detail:
+  - 日次差し替え
+  - CSV 出力ボタン
+- monthly_meal_planner:
+  - 大枠計画
+  - CSV 出力ボタン
+- user_menu_editor:
+  - private 保存
+  - household 利用
+  - LifeOS 公開申請

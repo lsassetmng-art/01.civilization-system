@@ -1,0 +1,31 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# BUSINESS LEGAL SUPPORT INTEGRATION DETAIL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 060.integration
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - 連携境界を詳細に固定する
+  - LifeOS 内連携と BusinessOS への橋渡し条件を明確化する
+  - ERP 直結しない原則を明文化する

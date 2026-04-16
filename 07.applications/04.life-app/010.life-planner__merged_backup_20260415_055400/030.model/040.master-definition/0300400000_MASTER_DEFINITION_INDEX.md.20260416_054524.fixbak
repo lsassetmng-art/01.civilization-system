@@ -1,0 +1,18 @@
+# ============================================================
+# MASTER DEFINITION INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 040.master-definition
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0300400000_MASTER_DEFINITION_INDEX.md
+  - 0300400001_MASTER_DEFINITION_OVERVIEW.md
+  - 0300400002_LIFE_PLANNER_CATEGORY_MASTER.md
+  - 0300400003_LIFE_PLANNER_ENUM_MASTER.md
+  - 0300400004_LIFE_PLANNER_SENSITIVE_SCOPE_MASTER.md

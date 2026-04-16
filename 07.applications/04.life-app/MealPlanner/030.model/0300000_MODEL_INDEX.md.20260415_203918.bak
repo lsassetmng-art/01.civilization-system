@@ -1,0 +1,11 @@
+# Model Index
+
+## purpose
+MealPlanner のデータモデルと意味モデルを定義する
+
+## files
+- 0300001_MODEL_OVERVIEW.md
+
+## notes
+- この index は Model の入口である
+- 詳細は配下ドキュメントを参照する

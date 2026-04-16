@@ -1,0 +1,23 @@
+# ============================================================
+# CONNECTED APP ASSUMPTION OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 060.integration
+subfolder: 040.connected-app-assumption
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - LifePlannerが受け取る外部アプリ由来情報の前提を整理する
+  - まだ exact upstream contract が未固定でも、期待する意味単位を先に決める
+  - reflection candidate の品質を安定化する
+
+connected_apps:
+  - MoneyPlanner
+  - EndOfLifePlanner
+  - BodyMetrics
+  - TrainingCoach
+  - 法律系アプリ群

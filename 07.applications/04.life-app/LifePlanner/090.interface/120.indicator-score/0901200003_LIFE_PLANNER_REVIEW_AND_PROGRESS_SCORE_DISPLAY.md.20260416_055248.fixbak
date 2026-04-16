@@ -1,0 +1,40 @@
+# ============================================================
+# LIFE PLANNER REVIEW AND PROGRESS SCORE DISPLAY
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 120.indicator-score
+owner: Boss
+prepared_by: Zero
+schema: life
+
+progress_display_policy:
+  - prefer counts and states over opaque scores
+  - simple completion ratio can be shown when denominator is clear
+  - do not imply life quality score or human worth score
+
+allowed_summary_forms:
+  - completed_goal_count / total_goal_count
+  - in_progress_goal_count
+  - pending_candidate_count
+  - review_due_flag
+
+optional_score_like_forms:
+  - preparedness_indicator:
+      meaning:
+        - rough support signal only
+      caution:
+        - do not display as scientific precision
+
+  - review_attention_level:
+      meaning:
+        - low / medium / high attention
+      caution:
+        - driven by visible triggers only
+
+prohibited_forms:
+  - overall life score
+  - happiness score
+  - certainty score for future outcome

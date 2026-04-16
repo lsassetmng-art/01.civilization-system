@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT OPERATIONS DETAIL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 070.operations
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - owner の日常運用リズムを詳細化する
+  - 期限見直しと相談前整理を習慣化する
+  - advisor_viewer 共有の扱いを運用面で固定する

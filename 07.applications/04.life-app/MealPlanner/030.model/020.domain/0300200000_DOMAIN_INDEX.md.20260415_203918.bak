@@ -1,0 +1,11 @@
+# Model Domain Index
+
+## purpose
+MealPlanner の主要データモデルを定義する
+
+## files
+- 0300200001_DOMAIN_OVERVIEW.md
+
+## notes
+- この index は Model Domain の入口である
+- 詳細は配下ドキュメントを参照する

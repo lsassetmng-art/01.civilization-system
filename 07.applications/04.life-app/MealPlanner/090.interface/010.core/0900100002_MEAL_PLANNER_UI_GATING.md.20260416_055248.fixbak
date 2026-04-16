@@ -1,0 +1,23 @@
+# MealPlanner UI Gating
+
+## free
+- 週間献立
+- 日次提案
+- 月次提案
+- 買い物リスト生成
+- CSV 出力
+- user献立追加
+- favorite / template / history は制限
+
+## paid
+- free 全機能
+- pantry 連携
+- family 共有
+- 余り食材優先提案
+- 栄養簡易表示
+- LifeOS 連携
+- AIチャットサポート
+
+## 表示原則
+- 無料でも主導線は成立させる
+- 有料訴求は共有 / 在庫 / 連携で見せる

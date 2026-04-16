@@ -1,8 +1,13 @@
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400004_PERSONA_TRANSFER_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/160.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/999_INTERFACE_INDEX.txt
+PERSONA OS INTERFACE INDEX
+
+090_PERSONA_APPLY_REQUEST_INTERFACE.md
+091_PERSONA_APPLY_RESPONSE_INTERFACE.md
+092_PERSONA_REJECT_RESPONSE_INTERFACE.md
+093_PERSONA_APPLY_STATUS_INTERFACE.md
+060.builder/0900600002_PERSONA_BUILDER_DRAFT_INTERFACE.md
+080.runtime-hosting/0900800002_PERSONA_RUNTIME_SESSION_INTERFACE.md
+090.snapshot/0900900002_PERSONA_SNAPSHOT_ISSUE_INTERFACE.md
+120.external-rights/0901200002_PERSONA_EXTERNAL_RELEASE_INTERFACE.md
+130.access-license-transfer/0901300002_PERSONA_LICENSE_ACCESS_TRANSFER_INTERFACE.md
+130.builder/0900700001_PERSONA_BUILDER_INTERFACE.md
+130.builder/0901300002_PERSONA_BUILDER_UI_ITEM_TABLE.md

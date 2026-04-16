@@ -1,0 +1,38 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# BUSINESS LEGAL SUPPORT ACCESS CONTROL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 100.security
+subfolder: 020.access-control
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - BusinessLegalSupport の権限境界を固定する
+  - owner / advisor_viewer の責務差分を明確にする
+  - 実装前に life スキーマ前提のアクセス方針をそろえる
+
+security_principles:
+  - 正本データは owner 管理
+  - advisor_viewer は read-only
+  - share は明示操作のみ
+  - export は相談支援用途に限定
+  - share does not transfer ownership
+  - archive と soft delete は可視性ルールを分ける
+  - enterprise-wide authority は本アプリの責務外

@@ -1,0 +1,34 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# DERIVED DEFINITION OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 050.derived-definition
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 保存値ではなく計算で得る指標を固定する
+  - ダッシュボードやホームの件数・要約の意味を揃える
+  - screen / payload / logical schema / policy の解釈ズレを防ぐ
+
+principles:
+  - derived value is not stored truth
+  - same derived metric should mean the same across screens
+  - ambiguous counts should be avoided
+  - mixed-currency totals should not pretend to be a single precise sum

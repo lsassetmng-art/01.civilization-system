@@ -1,7 +1,11 @@
 # PERSONA REJECTION POLICY
-status: canonical
-layer: policy
-system: persona-os
-scope: persona-rejection-policy
 
-Defines reject policy and post-reject retention behavior.
+status: implementation-ready-followup
+
+policy_rule:
+Every rejection must map to a fixed reject code family and durable feedback record.
+
+forbidden:
+- free-text-only rejection
+- silent rejection
+- rejection without correlation id

@@ -1,18 +1,12 @@
-# ============================================================
 # PERSONA RUNTIME SESSION FLOW
-# ============================================================
 
-status: canonical
-layer: flow
-domain: runtime-hosting
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
 flow:
-1. host selects surface
-2. host provides manifest projection
-3. runtime session is created
-4. container is attached
-5. render executes
-6. session is disposed when host surface ends
+1. released snapshot or package resolved
+2. runtime session created
+3. session activated
+4. heartbeat maintained
+5. suspend/resume handled when needed
+6. terminate or expire
+7. terminal audit emitted

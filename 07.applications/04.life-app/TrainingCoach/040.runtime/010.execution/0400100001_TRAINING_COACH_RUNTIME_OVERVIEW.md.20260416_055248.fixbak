@@ -1,0 +1,39 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# TRAINING COACH RUNTIME OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+runtime_modes:
+  - menu_planning
+  - guided_execution
+  - quick_logging
+  - continuity_review
+
+runtime_behaviors:
+  - 実施開始時にセッションを起票する
+  - 実施中に進行状況を保持する
+  - 完了時に completion_log を確定する
+  - 疲労度入力があれば次回提案へ反映候補とする
+  - 通知はユーザー設定に従う
+
+runtime_constraints:
+  - 医療危険を断定しない
+  - 不調時は休息・受診導線を優先する
+  - オフラインでも最低限の記録継続を可能にする

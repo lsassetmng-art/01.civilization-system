@@ -1,28 +1,9 @@
-# ============================================================
 # PERSONA SNAPSHOT MODEL OVERVIEW
-# ============================================================
 
-status: canonical
-layer: model
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-purpose:
-Defines the overview of snapshot models.
-
-summary:
-Snapshot models define immutable point-in-time records
-derived from eligible source truth.
-
-scope:
-snapshot record
-source truth linkage
-snapshot status
-frozen truth structure
-
-boundary:
-Snapshot model does not replace live mutable truth.
-Snapshot model must remain immutable after issuance.
-Snapshot model is not identical to package or distribution record.
+snapshot_boundary:
+- snapshot is a frozen release candidate or release input
+- snapshot issuance records source draft version and content hash
+- snapshot immutability starts once issued
+- runtime and package consume snapshot lineage, not mutable draft lineage

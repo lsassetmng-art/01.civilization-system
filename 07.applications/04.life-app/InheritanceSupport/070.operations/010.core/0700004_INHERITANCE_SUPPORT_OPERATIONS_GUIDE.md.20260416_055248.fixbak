@@ -1,0 +1,28 @@
+# ============================================================
+# INHERITANCE SUPPORT OPERATIONS GUIDE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+operations:
+  monthly:
+    - 相続準備メモ見直し
+    - 資産/負債メモ更新確認
+  quarterly:
+    - 家族共有案件確認
+    - 重要書類の所在確認
+  yearly:
+    - 遺言/贈与メモ見直し
+    - 専門家相談要否確認
+
+ops_rules:
+  - 運用は owner 主体
+  - family は許可範囲閲覧
+  - 重要書類の現物所在確認を別途促す

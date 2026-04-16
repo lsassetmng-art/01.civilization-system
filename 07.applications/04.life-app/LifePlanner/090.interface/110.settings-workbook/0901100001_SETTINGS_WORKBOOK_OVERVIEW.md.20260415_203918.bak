@@ -1,0 +1,22 @@
+# ============================================================
+# SETTINGS WORKBOOK OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 110.settings-workbook
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - settings screen と workbook-like support screens の exact 設計を置く
+  - checklist / risk / value work を散らさず整理する
+  - 主要設定と補助ワークの入口を分かりやすくする
+
+screen_groups:
+  - settings
+  - future_checklist
+  - risk_list
+  - value_work

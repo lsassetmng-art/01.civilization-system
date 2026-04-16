@@ -1,0 +1,22 @@
+# ============================================================
+# HEALTH DOMAIN ARCHITECTURE
+# ============================================================
+
+status: draft
+
+record_domain:
+  - biometric_record
+  - activity_record
+  - sleep_record
+  - manual_note
+
+interpretation_domain:
+  - personal_average
+  - reference_range
+  - reference_average_optional
+  - health_score
+
+sharing_domain:
+  - family_care_share
+  - recipient_scope
+  - export_permission

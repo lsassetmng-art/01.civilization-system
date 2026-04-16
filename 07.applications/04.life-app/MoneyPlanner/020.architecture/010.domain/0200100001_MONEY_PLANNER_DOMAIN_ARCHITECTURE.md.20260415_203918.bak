@@ -1,0 +1,21 @@
+# ============================================================
+# MONEY PLANNER DOMAIN ARCHITECTURE
+# ============================================================
+
+domains:
+  - financial_capture
+  - planning
+  - projection
+  - scenario_management
+  - sharing
+  - lifeos_linkage
+
+core_modules:
+  - income_management
+  - expense_management
+  - asset_management
+  - liability_management
+  - saving_goal_management
+  - event_budget_management
+  - projection_engine
+  - sharing_control

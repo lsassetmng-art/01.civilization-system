@@ -1,0 +1,15 @@
+# ============================================================
+# 04 LIFE APP INDEX
+# ============================================================
+
+status: canonical-initialized
+layer: 04.life-app
+owner: Boss
+prepared_by: Zero
+
+contained_apps:
+  - LegalSupport
+
+notes:
+  - 04.life-app 配下の各アプリは CivilizationOS 系の層構造を踏襲する
+  - 各アプリは root / layer / subfolder で index と overview を持つ

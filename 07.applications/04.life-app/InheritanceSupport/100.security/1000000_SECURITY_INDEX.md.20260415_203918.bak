@@ -1,0 +1,17 @@
+# ============================================================
+# SECURITY INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 100.security
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000001_INHERITANCE_SUPPORT_SECURITY_OVERVIEW.md
+  - 010.core/1000002_SECURITY_CORE_INDEX.md
+  - 010.core/1000003_SECURITY_CORE_OVERVIEW.md
+  - 010.core/1000004_INHERITANCE_SUPPORT_SECURITY_MODEL.md

@@ -1,0 +1,30 @@
+# 0300300000 SCHEMA DESIGN INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300000_SCHEMA_DESIGN_INDEX.md
+## Purpose
+CareerLaunch の 030.schema 配下を一覧する。
+
+## Children
+- 0300300001_CAREER_LAUNCH_SCHEMA_DESIGN_OVERVIEW.md
+- 0300300002_CAREER_LAUNCH_LOGICAL_TABLE_CATALOG.md
+- 0300300003_CAREER_LAUNCH_LOGICAL_TABLE_DEFINITIONS.md
+- 0300300004_CAREER_LAUNCH_LOGICAL_COLUMN_STANDARD.md
+- 0300300005_CAREER_LAUNCH_LIFE_SCHEMA_BOUNDARY_POLICY.md
+- 0300300006_CAREER_LAUNCH_RETENTION_AND_SOFT_DELETE_POLICY.md
+- 0300300007_CAREER_LAUNCH_UNIQUE_KEY_AND_INDEX_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

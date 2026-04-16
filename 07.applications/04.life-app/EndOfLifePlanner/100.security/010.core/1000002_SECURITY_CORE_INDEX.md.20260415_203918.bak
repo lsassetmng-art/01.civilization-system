@@ -1,0 +1,18 @@
+# ============================================================
+# SECURITY CORE INDEX
+# ============================================================
+
+status: canonical-draft
+phase: L14-document-consistency-check
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: EndOfLifePlanner
+schema: life
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000003_SECURITY_CORE_OVERVIEW.md
+  - 1000004_END_OF_LIFE_PLANNER_SECURITY_MODEL.md

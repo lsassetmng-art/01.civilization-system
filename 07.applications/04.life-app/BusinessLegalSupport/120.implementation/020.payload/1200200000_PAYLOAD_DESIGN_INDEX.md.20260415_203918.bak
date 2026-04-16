@@ -1,0 +1,20 @@
+# ============================================================
+# PAYLOAD DESIGN INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 120.implementation
+subfolder: 020.payload
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1200200001_BUSINESS_LEGAL_SUPPORT_PAYLOAD_OVERVIEW.md
+  - 1200200002_BUSINESS_LEGAL_SUPPORT_LEGAL_ISSUE_PAYLOAD.md
+  - 1200200003_BUSINESS_LEGAL_SUPPORT_CONTRACT_AND_DEADLINE_PAYLOAD.md
+  - 1200200004_BUSINESS_LEGAL_SUPPORT_RISK_AND_CONSULTATION_PAYLOAD.md
+  - 1200200005_BUSINESS_LEGAL_SUPPORT_SUMMARY_EXPORT_AND_HANDOFF_PAYLOAD.md

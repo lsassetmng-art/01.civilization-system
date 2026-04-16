@@ -1,0 +1,20 @@
+# ============================================================
+# APP SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+audit_targets:
+  - share started
+  - share revoked
+  - sensitive document viewed
+  - export generated
+  - permission changed
+
+security_viewpoints:
+  - 案件単位保護
+  - 書類単位保護
+  - 高秘匿上書き保護
+  - 共有設定変更監査
+  - export 利用監査

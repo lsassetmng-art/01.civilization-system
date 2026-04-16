@@ -1,0 +1,270 @@
+# ============================================================
+# MONEY PLANNER SCREEN VALIDATION / ENUM CONSISTENCY CHECK
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 090.interface
+subdomain: screen
+
+purpose:
+  - screen validation と cross domain enum の整合を確認する
+  - UI 側 allowed 値と API / logical model 側 enum を一致させる
+  - 実装前にブレを止める
+
+source_of_truth:
+  validation_doc:
+    - 0900100002_MONEY_PLANNER_SCREEN_INPUT_VALIDATION_CANONICAL.md
+  enum_doc:
+    - 0300100002_MONEY_PLANNER_CROSS_DOMAIN_ENUM_CANONICAL.md
+  api_docs:
+    - 1200100003_MONEY_PLANNER_API_FIELD_REQUIRED_NULLABLE_CANONICAL.md
+    - 1200100007_MONEY_PLANNER_RECEIVE_CANDIDATE_API_EXACT_PAYLOAD_CANONICAL.md
+    - 1200100009_MONEY_PLANNER_FAMILY_SHARING_API_EXACT_PAYLOAD_CANONICAL.md
+    - 1200100011_MONEY_PLANNER_LINKAGE_SETTINGS_API_EXACT_PAYLOAD_CANONICAL.md
+    - 1200100013_MONEY_PLANNER_DASHBOARD_ALERT_API_EXACT_PAYLOAD_CANONICAL.md
+
+global_consistency_rules:
+  - UI allowed values は enum canonical と完全一致させる
+  - API request allowed values は UI allowed values と完全一致させる
+  - DB logical enum と screen enum で同義別名を作らない
+  - 画面表示文言は翻訳層で変換し、内部値は snake_case を保持する
+  - error key は field 単位または enum 単位で出し分ける
+
+consistency_matrix:
+
+  income_form.frequency:
+    screen_allowed:
+      - daily
+      - weekly
+      - monthly
+      - yearly
+      - one_time
+    enum_source: frequency
+    api_binding:
+      - POST /v1/money-planner/incomes
+      - PATCH /v1/money-planner/incomes/{income_id}
+    status: aligned
+
+  income_form.visibility_scope:
+    screen_allowed:
+      - private
+      - shared
+    enum_source: visibility_scope
+    note:
+      - screen validation は private/shared まで
+      - selected_only は受入候補/共有制御経由の詳細設計で扱う
+    status: partially_aligned_but_intentional
+
+  expense_form.frequency:
+    screen_allowed:
+      - daily
+      - weekly
+      - monthly
+      - yearly
+      - one_time
+    enum_source: frequency
+    status: aligned
+
+  expense_form.necessity_level:
+    screen_allowed:
+      - essential
+      - normal
+      - optional
+    enum_source: necessity_level
+    status: aligned
+
+  expense_form.visibility_scope:
+    screen_allowed:
+      - private
+      - shared
+    enum_source: visibility_scope
+    status: partially_aligned_but_intentional
+
+  asset_form.asset_type:
+    screen_allowed:
+      - cash
+      - bank_deposit
+      - securities
+      - insurance
+      - real_estate
+      - other
+    enum_source: asset_type
+    status: aligned
+
+  asset_form.valuation_basis:
+    screen_allowed:
+      - input_manual
+      - latest_known
+      - estimate
+    enum_source: valuation_basis
+    status: aligned
+
+  asset_form.liquidity_level:
+    screen_allowed:
+      - high
+      - medium
+      - low
+    enum_source: liquidity_level
+    status: aligned
+
+  asset_form.ownership_scope:
+    screen_allowed:
+      - individual
+      - couple
+      - family
+    enum_source: ownership_scope
+    status: aligned
+
+  liability_form.liability_type:
+    screen_allowed:
+      - mortgage
+      - loan
+      - credit_card
+      - other
+    enum_source: liability_type
+    status: aligned
+
+  liability_form.ownership_scope:
+    screen_allowed:
+      - individual
+      - couple
+      - family
+    enum_source: ownership_scope
+    status: aligned
+
+  saving_goal_form.status:
+    screen_allowed:
+      - active
+      - paused
+      - completed
+      - archived
+    enum_source: saving_goal_status
+    status: aligned
+
+  event_budget_form.priority:
+    screen_allowed:
+      - high
+      - medium
+      - low
+    enum_source: event_priority
+    status: aligned
+
+  scenario_form.scenario_type:
+    screen_allowed:
+      - default
+      - saving
+      - expense_increase
+      - income_decrease
+      - event_forward
+    enum_source: scenario_type
+    status: aligned
+
+  sharing_invite_form.role:
+    screen_allowed:
+      - partner_editor
+      - viewer
+    enum_source: shared_member_role
+    note:
+      - owner は招待フォームから新規作成不可
+    status: aligned_with_screen_constraint
+
+  sharing_invite_form.visibility_scope:
+    screen_allowed:
+      - all
+      - shared_only
+      - selected_only
+    enum_source: member_visibility_scope
+    status: aligned
+
+  memo_form.memo_type:
+    screen_allowed:
+      - general
+      - insurance
+      - pension
+      - tax_estimate
+      - handover
+    enum_source: memo_type
+    status: aligned
+
+  dashboard.summary_scope:
+    screen_allowed:
+      - owner
+      - shared
+    enum_source: dashboard_summary_scope
+    status: aligned
+
+  alerts.filter.alert_type:
+    screen_allowed:
+      - shortage_risk
+      - duplicate_candidate
+      - review_pending
+      - goal_delay
+      - sharing_visibility_warning
+    enum_source: alert_type
+    status: aligned
+
+  alerts.filter.severity:
+    screen_allowed:
+      - high
+      - medium
+      - low
+    enum_source: alert_severity
+    status: aligned
+
+  linkage_settings.target_system:
+    screen_allowed:
+      - life_planner
+      - end_of_life_planner
+      - inheritance_support
+    enum_source: linkage_target_system
+    status: aligned
+
+  receive_candidate.source_system_filter:
+    screen_allowed:
+      - life_planner
+      - end_of_life_planner
+      - inheritance_support
+    enum_source: import_source_system
+    note:
+      - manual は receive candidate screen filter には出さない
+    status: aligned_with_screen_constraint
+
+  receive_candidate.import_status_filter:
+    screen_allowed:
+      - received
+      - draft_candidate
+      - reviewed
+      - confirmed
+      - rejected
+      - archived
+    enum_source: import_status
+    status: aligned
+
+  receive_candidate.candidate_type_filter:
+    screen_allowed:
+      - event_budget
+      - saving_goal
+      - memo
+      - asset
+      - liability
+    enum_source: candidate_type
+    status: aligned
+
+mismatch_policy:
+  intentional_restrictions:
+    - visibility_scope:
+        reason:
+          - 一般入力フォームでは selected_only を直接出さない
+          - selected_only は共有文脈で owner が明示制御する
+    - shared_member_role:
+        reason:
+          - owner role は招待フォームで選べない
+    - import_source_system:
+        reason:
+          - manual は receive candidate screen filter には不要
+
+required_followups:
+  - screen 実装時は allowed values を enum canonical から直接参照できる形へ寄せる
+  - 翻訳表示と内部 enum 値を分離する
+  - partially_aligned_but_intentional は UI 注釈を残す

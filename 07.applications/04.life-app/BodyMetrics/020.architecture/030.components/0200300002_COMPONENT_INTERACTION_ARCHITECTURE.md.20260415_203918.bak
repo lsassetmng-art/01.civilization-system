@@ -1,0 +1,12 @@
+# ============================================================
+# COMPONENT INTERACTION ARCHITECTURE
+# ============================================================
+
+status: draft
+
+interaction_rules:
+  - input component は normalization service を通る
+  - graph component は normalized records と derived snapshots を参照する
+  - score component は score policy と score snapshots を参照する
+  - sharing component は recipient scope を常時適用する
+  - export component は permission context を確認してから生成する

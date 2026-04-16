@@ -1,0 +1,17 @@
+# CareerLaunch INDEX AND SEARCH POLICY
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## Search
+- 企業名、求人名、posting_body は検索対象。
+- document snapshot は文書比較と ATS keyword 提示のため検索対象。
+- interview notes は全文検索より application-position 経由の参照を優先。

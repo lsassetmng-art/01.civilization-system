@@ -1,0 +1,13 @@
+# ============================================================
+# APP SECURITY INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 1000101_APP_SECURITY_OVERVIEW.md
+  - 1000102_SECURITY_RULE_CANONICAL.md
+
+purpose:
+  - LegalSupport のアプリ内保護設計の入口

@@ -1,0 +1,3 @@
+# API OVERVIEW
+role:
+  - request / response exact payload 固定の入口

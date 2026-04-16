@@ -1,0 +1,51 @@
+# Model Overview
+
+## role
+MealPlanner のデータモデルと意味モデルを定義する。
+
+## model_summary
+MealPlanner は life schema 上に、household 固有設定、実績、private user_menu、買い物、通知設定を持つ。
+CX22073JW 側には基礎知識 / 公開知識 / 辞書知識の正本を置く。
+
+## core_runtime_models
+- family_profile
+- family_member_preference
+- budget_profile
+- goal_profile
+- dietary_rule
+- meal_plan
+- meal_slot
+- meal_history
+- shopping_list
+- shopping_list_item
+- pantry_item
+- user_menu
+- user_menu_ingredient
+- user_menu_publish_request
+- meal_plan_export_job
+- notification_preference
+
+## reference_and_cache_models
+- catalog_source_ref
+- ingredient_reference_cache
+- menu_reference_cache
+- published_user_menu_reference_cache
+
+## key_meaning_points
+- meal_plan:
+  - daily / weekly / monthly を持つ
+- meal_slot:
+  - 1食単位
+- user_menu:
+  - private 起点
+- user_menu_publish_request:
+  - 公開申請状態
+- meal_plan_export_job:
+  - CSV 出力依頼と結果
+- notification_preference:
+  - user 単位の通知設定
+
+## model_policies
+- budget の正本は budget_tier
+- 表示安定のため snapshot を重視する
+- free / paid 差は削除ではなく表示制御を優先する

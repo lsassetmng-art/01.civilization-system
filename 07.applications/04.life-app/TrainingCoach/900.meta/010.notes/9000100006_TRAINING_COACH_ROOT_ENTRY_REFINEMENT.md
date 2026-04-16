@@ -1,0 +1,33 @@
+# ============================================================
+# TRAINING COACH ROOT ENTRY REFINEMENT
+# ============================================================
+
+status: canonical-draft
+phase: design-closure
+system: TrainingCoach
+layer: 900.meta
+owner: Boss
+prepared_by: Zero
+
+recommended_root_entries:
+  primary:
+    - 000_START_HERE_TRAINING_COACH.md
+    - 00_TRAINING_COACH_CANONICAL_MASTER_SINGLE_FILE.md
+  secondary:
+    - 00_TRAINING_COACH_FINAL_INTEGRATED_CANONICAL_SUMMARY.md
+    - 9000100004_TRAINING_COACH_CANONICAL_READING_ORDER.md
+    - 9200100004_TRAINING_COACH_FINAL_HANDOFF_CHECKLIST.md
+
+reading_shortcuts:
+  product_only:
+    - 00_TRAINING_COACH_CANONICAL_MASTER_SINGLE_FILE.md
+  db_only:
+    - 0300100005_TRAINING_COACH_SCHEMA_BINDING.md
+    - 1200200001_TRAINING_COACH_LIFE_DDL_DRAFT.sql
+  copy_only:
+    - 0900100022_TRAINING_COACH_PREMIUM_ACTUAL_JA_EN_FULL_COPY_DRAFT.md
+    - 0900100013_TRAINING_COACH_ONBOARDING_ACTUAL_JA_COPY_DRAFT.md
+    - 0900100014_TRAINING_COACH_FAQ_ACTUAL_JA_COPY_DRAFT.md
+  handoff_only:
+    - 9200100003_TRAINING_COACH_HANDOFF_INVENTORY_AND_PACKAGE_GUIDE.md
+    - 9200100004_TRAINING_COACH_FINAL_HANDOFF_CHECKLIST.md

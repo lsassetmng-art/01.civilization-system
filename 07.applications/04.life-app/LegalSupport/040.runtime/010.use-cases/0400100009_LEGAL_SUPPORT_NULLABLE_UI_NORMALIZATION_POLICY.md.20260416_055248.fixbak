@@ -1,0 +1,42 @@
+# ============================================================
+# LEGAL SUPPORT NULLABLE UI NORMALIZATION POLICY
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: runtime
+subdomain: use-cases
+schema: life
+
+normalization_rules:
+  - 空文字は text nullable field で null 化してよい
+  - title, fact_text, question_text, summary など必須 text は空文字禁止
+  - date 未入力は null
+  - boolean 未指定は default を使う
+  - enum 未指定は default を使うが、必須確認画面では明示選択を促してよい
+
+recommended_null_targets:
+  - legal_case.summary
+  - fact_timeline.assumption_text
+  - fact_timeline.source_note
+  - stakeholder.relation_to_case
+  - stakeholder.contact_note
+  - document_item.note
+  - question_list.note
+  - consultation_note.counterpart_name
+  - consultation_note.pending_items
+  - consultation_note.next_confirmation_points
+  - action_item.due_date
+  - action_item.note
+  - deadline_item.note
+  - expense_record.paid_at
+  - expense_record.note
+
+non_null_text_targets:
+  - legal_case.title
+  - fact_timeline.fact_text
+  - stakeholder.display_name
+  - document_item.document_name
+  - question_list.question_text
+  - consultation_note.summary
+  - action_item.title

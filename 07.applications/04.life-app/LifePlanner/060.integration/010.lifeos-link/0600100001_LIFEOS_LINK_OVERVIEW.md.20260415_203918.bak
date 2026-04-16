@@ -1,0 +1,9 @@
+# ============================================================
+# LIFEOS LINK OVERVIEW
+# ============================================================
+
+topics:
+  - inbound from MoneyPlanner
+  - inbound from EndOfLifePlanner
+  - inbound from health apps
+  - inbound from legal memo apps

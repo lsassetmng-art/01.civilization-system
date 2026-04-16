@@ -1,0 +1,24 @@
+# ============================================================
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical-draft
+phase: implementation-prep-only
+schema_name: life
+
+files:
+  - 1200001_IMPLEMENTATION_OVERVIEW.md
+  - 010.api-fixed-prep/1200100_API_FIXED_PREP_INDEX.md
+  - 010.api-fixed-prep/1200101_API_FIXED_PREP_OVERVIEW.md
+  - 020.readiness/1200200_IMPLEMENTATION_PREP_INDEX.md
+  - 020.readiness/1200201_IMPLEMENTATION_PREPARATION_CANONICAL.md
+  - 020.readiness/1200202_FEATURE_TO_SCREEN_MODEL_RULE_MAPPING.md
+  - 020.readiness/1200203_API_IMPLEMENTATION_HANDOFF_CANONICAL.md
+  - 020.readiness/1200204_PERSISTENCE_IMPLEMENTATION_HANDOFF_CANONICAL.md
+  - 020.readiness/1200205_PERMISSION_AND_VISIBILITY_HANDOFF_CANONICAL.md
+  - 020.readiness/1200206_ERROR_EDGECASE_AND_RECOVERY_HANDOFF_CANONICAL.md
+
+purpose:
+  - LegalSupport の実装準備資料を固定する
+  - 実装に入る直前の handoff 一式を保持する
+  - 実装コードや DDL はまだ含めない

@@ -1,7 +1,23 @@
+# ============================================================
 # PERSONA APPLY RESULT FEEDBACK ARCHITECTURE
-status: canonical
-layer: architecture
-system: persona-os
-scope: persona-apply-result-feedback-architecture
+# ============================================================
 
-Defines result feedback path after apply or reject.
+status: implementation-ready-followup
+
+feedback_goal:
+Every inbound request must have a durable terminal feedback record.
+
+feedback_paths:
+- applied
+- rejected
+- duplicate_noop
+- deferred_retry
+- dead_lettered
+
+required_properties:
+- correlation id
+- target persona id
+- terminal status
+- fixed code
+- fixed message family
+- written_at timestamp

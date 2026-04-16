@@ -1,0 +1,34 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# LOGICAL SCHEMA INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 020.logical-schema
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0300200000_LOGICAL_SCHEMA_INDEX.md
+  - 0300200001_LOGICAL_SCHEMA_OVERVIEW.md
+  - 0300200002_LIFE_PLANNER_LOGICAL_SCHEMA_POLICY.md
+  - 0300200003_LIFE_PLANNER_LOGICAL_TABLE_LIFE_PLAN.md
+  - 0300200004_LIFE_PLANNER_LOGICAL_TABLE_GOAL_AND_MILESTONE.md
+  - 0300200005_LIFE_PLANNER_LOGICAL_TABLE_EVENT_TIMELINE.md
+  - 0300200006_LIFE_PLANNER_LOGICAL_TABLE_REVIEW_AND_REFLECTION.md
+  - 0300200007_LIFE_PLANNER_LOGICAL_TABLE_FAMILY_SHARE.md
+  - 0300200008_LIFE_PLANNER_LOGICAL_TABLE_SCENARIO_AND_DECISION.md
+  - 0300200009_LIFE_PLANNER_LOGICAL_RELATIONSHIP_NOTE.md

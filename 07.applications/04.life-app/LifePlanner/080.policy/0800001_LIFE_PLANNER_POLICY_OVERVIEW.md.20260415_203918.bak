@@ -1,0 +1,21 @@
+# ============================================================
+# LIFE PLANNER POLICY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - ポリシーレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 人生判断非代替、共有制御、関連アプリ連携のポリシーを定義する
+  - AI 利用時の制限を固定する
+  - 本人意思尊重を軸にした倫理境界を持つ

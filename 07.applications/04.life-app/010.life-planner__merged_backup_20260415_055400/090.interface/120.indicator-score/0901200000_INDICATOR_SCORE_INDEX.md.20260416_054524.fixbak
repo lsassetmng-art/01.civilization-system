@@ -1,0 +1,18 @@
+# ============================================================
+# INDICATOR SCORE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 120.indicator-score
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0901200000_INDICATOR_SCORE_INDEX.md
+  - 0901200001_INDICATOR_SCORE_OVERVIEW.md
+  - 0901200002_LIFE_PLANNER_BADGE_AND_INDICATOR_DESIGN.md
+  - 0901200003_LIFE_PLANNER_REVIEW_AND_PROGRESS_SCORE_DISPLAY.md
+  - 0901200004_LIFE_PLANNER_HOME_ATTENTION_CARD_DESIGN.md

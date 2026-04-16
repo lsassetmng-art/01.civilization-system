@@ -1,0 +1,18 @@
+# ============================================================
+# CHANGE REVIEW INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 100.change-review
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0901000000_CHANGE_REVIEW_INDEX.md
+  - 0901000001_CHANGE_REVIEW_OVERVIEW.md
+  - 0901000002_LIFE_PLANNER_CONFLICT_REVIEW_UI.md
+  - 0901000003_LIFE_PLANNER_OWNER_REVIEW_QUEUE_UI.md
+  - 0901000004_LIFE_PLANNER_ACTIVITY_HISTORY_UI.md

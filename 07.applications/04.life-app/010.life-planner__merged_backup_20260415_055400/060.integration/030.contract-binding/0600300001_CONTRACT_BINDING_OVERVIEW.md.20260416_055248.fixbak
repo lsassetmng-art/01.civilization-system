@@ -1,0 +1,32 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# CONTRACT BINDING OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 060.integration
+subfolder: 030.contract-binding
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - payload と論理テーブルの対応を固定する
+  - どの operation がどの entity を読むか / 書くかを明確化する
+  - 実装前に副作用範囲を固定する
+
+policy:
+  - list/detail/compare の多くは read 中心
+  - create/update/apply/invite は write を伴う
+  - reflection apply は複数entityへ影響する

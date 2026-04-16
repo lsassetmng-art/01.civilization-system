@@ -1,0 +1,22 @@
+# ============================================================
+# CHANGE REVIEW OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 100.change-review
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 変更確認や競合確認のUI方針を定義する
+  - owner review queue の見せ方を整理する
+  - 長期計画の変更履歴を読める形にする
+
+ui_principles:
+  - show latest truth clearly
+  - make conflicting values easy to compare
+  - avoid technical jargon
+  - keep family collaboration understandable

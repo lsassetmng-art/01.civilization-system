@@ -3,21 +3,37 @@
 # ============================================================
 
 status: canonical
-layer: 020.architecture
+layer: architecture
+domain: business-ai-worker
 system: business-os
 owner: Boss
 prepared_by: Zero
 
-boundary:
-PersonaOS may define persona-capable or role-capable template semantics.
+purpose:
+Defines the official boundary between Business AI Worker and PersonaOS.
 
-BusinessOS defines:
-- company employment
-- assignment / dispatch
-- company-scoped knowledge growth
-- company-local naming
-- company-scoped usage
+persona_os_owns:
+- persona identity
+- persona growth
+- persona trust
+- persona familiarity
+- persona affinity
+- persona relationship-oriented internal status
+- persona-side perception and reliability feeling
 
-rules:
-- BusinessOS must not redefine persona template semantics
-- PersonaOS must not own company employment or dispatch truth
+business_os_owns:
+- work knowledge
+- company terminology
+- company rules for work execution
+- AI employee employment state
+- AI employee assignment
+- AI employee rank
+- AI employee subscription
+- slot capacity
+- reservation queue
+- usage log
+- work performance context
+
+rule:
+Persona-side relationship state must never be canonicalized in BusinessOS.
+Company-side work knowledge must never be canonicalized in PersonaOS.

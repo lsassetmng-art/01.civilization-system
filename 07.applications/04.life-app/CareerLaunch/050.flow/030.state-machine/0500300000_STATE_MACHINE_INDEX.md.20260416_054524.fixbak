@@ -1,0 +1,17 @@
+# 0500300000 STATE MACHINE INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300000_STATE_MACHINE_INDEX.md
+## Purpose
+CareerLaunch の 030.state-machine 配下を一覧する。
+
+## Children
+- 0500300001_CAREER_LAUNCH_STATE_MACHINE_OVERVIEW.md
+- 0500300002_CAREER_LAUNCH_ISSUE_STATE_TRANSITIONS.md
+- 0500300003_CAREER_LAUNCH_CONTRACT_STATUS_TRANSITIONS.md
+- 0500300004_CAREER_LAUNCH_DEADLINE_COMPLETION_TRANSITIONS.md
+- 0500300005_CAREER_LAUNCH_ADVISOR_SHARE_LIFECYCLE.md
+- 0500300006_CAREER_LAUNCH_INVALID_TRANSITION_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

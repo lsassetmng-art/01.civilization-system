@@ -1,0 +1,18 @@
+# ============================================================
+# PRICING AND DISCLAIMER INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 080.policy
+subfolder: 030.pricing-and-disclaimer
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0800300001_BUSINESS_LEGAL_SUPPORT_PRICING_POLICY.md
+  - 0800300002_BUSINESS_LEGAL_SUPPORT_FEATURE_TIER_POLICY.md
+  - 0800300003_BUSINESS_LEGAL_SUPPORT_DISCLAIMER_TEXT_POLICY.md

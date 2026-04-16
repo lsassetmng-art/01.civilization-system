@@ -1,11 +1,15 @@
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.external/0500400001_PERSONA_EXTERNAL_RELEASE_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.external/0500400002_PERSONA_LICENSE_ISSUE_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.external/0500400003_PERSONA_ACCESS_GRANT_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.external/0500400004_PERSONA_TRANSFER_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.external/0500400005_PERSONA_PACKAGE_PUBLISH_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/050.external/0500400006_PERSONA_DISTRIBUTION_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/160.business/0500500001_PERSONA_TO_BUSINESS_RELEASE_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/160.business/0500500002_PERSONA_TO_BUSINESS_RIGHTS_SYNC_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/160.business/0500500003_BUSINESS_TO_PERSONA_GROWTH_APPLY_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/160.business/0500500004_PERSONA_TO_BUSINESS_GROWTH_RESULT_FLOW.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/999_FLOW_INDEX.txt
+PERSONA OS FLOW INDEX
+
+052_PERSONA_EVENT_REJECT_FLOW.md
+053_PERSONA_DUPLICATE_EVENT_FLOW.md
+054_PERSONA_APPLY_RESULT_FEEDBACK_FLOW.md
+060.builder/0500600002_PERSONA_BUILDER_DRAFT_FLOW.md
+080.runtime-hosting/0500800002_PERSONA_RUNTIME_SESSION_FLOW.md
+090.snapshot/0500900002_PERSONA_SNAPSHOT_ISSUE_FLOW.md
+120.external-rights/0501200002_PERSONA_EXTERNAL_RELEASE_FLOW.md
+130.access-license-transfer/0501300002_PERSONA_LICENSE_ACCESS_TRANSFER_FLOW.md
+130.builder/0500700001_PERSONA_BUILDER_CREATE_FLOW.md
+130.builder/0500700002_PERSONA_BUILDER_EDIT_FLOW.md
+130.builder/0500700003_PERSONA_BUILDER_APPROVAL_FLOW.md
+130.builder/0500700004_PERSONA_BUILDER_PUBLISH_FLOW.md
+250.cross-cutting-completion/0502501_PERSONA_RETRY_DEAD_LETTER_FLOW.md

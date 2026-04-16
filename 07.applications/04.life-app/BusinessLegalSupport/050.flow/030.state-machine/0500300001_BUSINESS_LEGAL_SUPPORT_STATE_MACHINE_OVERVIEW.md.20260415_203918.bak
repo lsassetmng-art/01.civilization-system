@@ -1,0 +1,31 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT STATE MACHINE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 050.flow
+subfolder: 030.state-machine
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - BusinessLegalSupport の状態遷移を固定する
+  - issue / contract / deadline / share の lifecycle を明文化する
+  - 実装前に許可遷移と禁止遷移をそろえる
+
+principles:
+  - status 遷移は owner 主導
+  - 自動遷移は最小限
+  - deadline completion は issue close を自動化しない
+  - share lifecycle は read-only 前提を崩さない
+  - archive と delete は別概念として扱う
+
+covered_objects:
+  - legal_issue
+  - contract_item
+  - deadline_record
+  - advisor_share_record

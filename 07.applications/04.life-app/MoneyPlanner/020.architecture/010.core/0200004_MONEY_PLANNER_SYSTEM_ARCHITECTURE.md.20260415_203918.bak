@@ -1,0 +1,30 @@
+# ============================================================
+# MONEY PLANNER SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+architecture_blocks:
+  - financial_plan_workspace
+  - income_expense_area
+  - asset_liability_area
+  - purpose_fund_area
+  - event_cost_area
+  - review_center
+  - note_attachment_area
+  - family_share_output
+  - ai_support_assist
+  - lifeos_bridge
+
+bridge_rules:
+  - LifeOS 連携は人生計画、相続、終活との接続を優先
+  - 会計や申告の詳細は専門系に渡す
+  - 共通部品の詳細定義は別正本を参照する

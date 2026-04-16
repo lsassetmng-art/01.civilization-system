@@ -1,0 +1,18 @@
+# ============================================================
+# CONFLICT CHANGE CONTROL INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 080.policy
+subfolder: 060.conflict-change-control
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0800600000_CONFLICT_CHANGE_CONTROL_INDEX.md
+  - 0800600001_CONFLICT_CHANGE_CONTROL_OVERVIEW.md
+  - 0800600002_LIFE_PLANNER_CONFLICT_POLICY.md
+  - 0800600003_LIFE_PLANNER_CHANGE_PROPOSAL_POLICY.md
+  - 0800600004_LIFE_PLANNER_ACTIVITY_HISTORY_POLICY.md

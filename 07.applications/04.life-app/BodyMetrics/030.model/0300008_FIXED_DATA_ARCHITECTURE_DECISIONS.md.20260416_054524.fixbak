@@ -1,0 +1,97 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# FIXED DATA ARCHITECTURE DECISIONS
+# ============================================================
+
+status: fixed
+
+schema_and_boundary:
+  runtime_schema:
+    name: life
+  fixed_knowledge_side:
+    name: CX22073
+
+fixed_data_policy:
+  - 個人の可変データは life schema に置く
+  - 固定知識は CX22073 側を参照する
+  - user runtime data を CX22073 に保存しない
+
+storage_separation:
+  biometric_record:
+    role: ユーザーが記録した実測の正本
+  biometric_record_raw:
+    role: 外部連携元データの追跡用
+  biometric_record_normalized:
+    role: 比較・分析・グラフ用
+  average_comparison_snapshot:
+    role: 比較結果の保持
+  health_score_snapshot:
+    role: 健康スコア結果の保持
+  health_score_component_snapshot:
+    role: 健康スコア内訳の保持
+
+fixed_persistence_rules:
+  average_comparison_snapshot:
+    policy: persist_snapshot
+    reason:
+      - 表示速度
+      - 説明可能性
+      - reference version 追跡
+  health_score_snapshot:
+    policy: persist_snapshot
+    reason:
+      - score version 追跡
+      - weekly review 安定化
+  reference_resolution:
+    policy: snapshot_with_effective_values
+    reason:
+      - 当時の比較根拠を後から再現できる
+
+time_series_rules:
+  local_first_vs_cloud_first:
+    fixed: local-first-with-sync
+  sleep_date_attribution:
+    fixed: wake_date_default
+    note:
+      - 標準帰属日は起床日基準
+      - 分析画面では開始日基準の補助表示を許可する
+  blood_pressure_timing:
+    fixed: standardized_tag
+    allowed_values:
+      - morning
+      - night
+      - other
+  missing_days_policy:
+    fixed: no_imputation
+
+conflict_resolution:
+  fixed: manual_priority_then_source_priority
+  priority_order:
+    - manual
+    - apple_health
+    - health_connect
+    - smartwatch_vendor
+
+code_and_constraint_policy:
+  id_type:
+    fixed: uuid
+  code_storage:
+    fixed: text_plus_master_contract
+    note:
+      - metric_type / goal_type / source_type / provider_type は DB enum にしない
+  foreign_key_policy:
+    fixed: selective_fk
+  soft_delete_policy:
+    fixed: not_global
+  updated_at_policy:
+    fixed: common_updated_at

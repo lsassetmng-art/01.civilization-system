@@ -1,0 +1,18 @@
+# ============================================================
+# DERIVED DEFINITION INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 050.derived-definition
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0300500000_DERIVED_DEFINITION_INDEX.md
+  - 0300500001_DERIVED_DEFINITION_OVERVIEW.md
+  - 0300500002_LIFE_PLANNER_DERIVED_METRIC_CATALOG.md
+  - 0300500003_LIFE_PLANNER_HOME_AND_PLAN_SUMMARY_DERIVED_RULES.md
+  - 0300500004_LIFE_PLANNER_DOMAIN_AND_AGE_DERIVED_RULES.md

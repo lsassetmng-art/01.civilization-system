@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT CONSTITUTION INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: CONSTITUTION
+
+purpose:
+  - アプリの存在目的、対象範囲、禁止事項、価格方針を定義する

@@ -1,0 +1,5 @@
+# CareerLaunch SCREEN TRANSITION RULES
+## Rules
+- application detail is central navigation node
+- document workspace and interview prep are reachable from application detail
+- post interview screen opens from completed interview state

@@ -1,0 +1,20 @@
+# ============================================================
+# LEGAL SUPPORT LISTING PERFORMANCE GUIDE
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: operations
+subdomain: support
+
+listing_principles:
+  - 一覧は 20件単位を基本にする
+  - dashboard は要点だけ返す
+  - 重い全文検索よりも絞り込み優先
+  - archived を既定で外して体感速度を保つ
+
+practical_rules:
+  - legal_case_list の初期表示は updated_at desc
+  - widget は最大10件まで
+  - document unresolved 集計は have/not have と pending を主軸にする
+  - family share 更新一覧は near realtime ではなく batch でもよい

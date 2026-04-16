@@ -1,0 +1,31 @@
+# ============================================================
+# LIFE PLANNER OPERATIONS GUIDE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+operations:
+  weekly:
+    - 計画メモ確認
+  monthly:
+    - 目標進捗見直し
+    - 近いライフイベント確認
+  quarterly:
+    - 重要優先度見直し
+    - 関連アプリ再確認
+  yearly:
+    - 人生計画全体見直し
+    - 大型イベント棚卸し
+
+ops_rules:
+  - 運用は owner 主体
+  - family は許可範囲閲覧
+  - 長期変化に合わせて柔軟に修正できる構造にする

@@ -1,0 +1,9 @@
+# ============================================================
+# INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+storage_policy:
+  - local first
+  - attachment metadata tracked
+  - export artifact managed separately

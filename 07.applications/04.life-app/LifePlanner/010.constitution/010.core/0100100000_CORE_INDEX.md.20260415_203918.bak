@@ -1,0 +1,12 @@
+# ============================================================
+# CORE INDEX
+# ============================================================
+
+layer: 010.constitution
+subfolder: 010.core
+
+documents:
+  - 0100100000_CORE_INDEX.md
+  - 0100100001_CORE_OVERVIEW.md
+  - 0100100002_LIFE_PLANNER_CORE_PRINCIPLES.md
+  - 0100100003_LIFE_PLANNER_SCOPE_AND_BOUNDARY.md

@@ -1,0 +1,368 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# SCREEN EXACT DISPLAY FIXED PACK
+# ============================================================
+
+status: fixed
+
+global_ui_principles:
+  - 医療診断に見える見せ方をしない
+  - 主要画面は summary first とする
+  - 詳細は drill-down で見せる
+  - 平均比較は first-class 表示
+  - 健康スコアは total と breakdown をセット表示
+  - Family Care は shared scope を超える内容を出さない
+  - 欠損値は補完せず null / no data として扱う
+
+device_policy:
+  smartphone:
+    focus:
+      - 記録
+      - 当日確認
+      - 週次ふりかえり
+      - 共有設定
+  pc_tablet:
+    focus:
+      - 分析
+      - 比較閲覧
+      - 長期傾向確認
+      - 出力確認
+
+screens:
+
+  dashboard_home:
+    purpose:
+      - 当日の健康状態を一目で把握する
+    required_sections:
+      - latest_weight_card
+      - latest_blood_pressure_card
+      - sleep_last_night_card
+      - steps_today_card
+      - health_score_summary_card
+      - average_comparison_summary_card
+      - sync_status_card
+    latest_weight_card:
+      fields:
+        - value
+        - unit_code
+        - measured_at
+        - trend_direction_optional
+    latest_blood_pressure_card:
+      fields:
+        - systolic_value
+        - diastolic_value
+        - measured_at
+        - timing_code_optional
+    sleep_last_night_card:
+      fields:
+        - duration_minutes
+        - local_date_anchor
+        - personal_7day_average_optional
+    steps_today_card:
+      fields:
+        - measured_value
+        - local_date
+        - goal_progress_optional
+    health_score_summary_card:
+      fields:
+        - total_score
+        - trend_direction
+        - summary_text
+    average_comparison_summary_card:
+      fields:
+        - metric_type
+        - current_value
+        - personal_7day_average
+        - gap_value
+        - gap_rate
+    sync_status_card:
+      fields:
+        - has_error
+        - last_sync_at
+    primary_actions:
+      - open_quick_record
+      - open_trend_analysis
+      - open_weekly_review
+      - open_family_care_settings
+
+  quick_record:
+    purpose:
+      - 最短導線で記録する
+    supported_record_types:
+      - weight
+      - blood_pressure
+      - blood_oxygen
+      - heart_rate
+      - sleep
+      - steps_manual
+      - note
+    required_fields_by_type:
+      weight:
+        - measured_value
+        - unit_code
+        - measured_at
+      blood_pressure:
+        - systolic_value
+        - diastolic_value
+        - pulse_value_optional
+        - measured_at
+        - timing_code_optional
+      blood_oxygen:
+        - measured_value
+        - measured_at
+      heart_rate:
+        - measured_value
+        - measured_at
+      sleep:
+        - sleep_start_at
+        - sleep_end_at
+        - duration_minutes
+      steps_manual:
+        - measured_value
+        - local_date
+      note:
+        - note_text
+    after_save_display:
+      - saved_message
+      - latest_value_summary
+      - personal_7day_average_optional
+      - gap_value_optional
+      - gap_rate_optional
+
+  metric_detail:
+    purpose:
+      - 指標別の詳細確認
+    required_sections:
+      - latest_value_panel
+      - trend_graph
+      - 7day_average_overlay
+      - 30day_average_overlay
+      - reference_band_optional
+      - source_type_legend
+      - related_notes
+    latest_value_panel:
+      fields:
+        - metric_type
+        - latest_value
+        - unit_code
+        - measured_at
+        - source_type
+    trend_graph:
+      modes:
+        - daily
+        - weekly
+        - monthly
+      fields:
+        - points
+        - missing_points_as_null
+    related_notes:
+      fields:
+        - noted_at
+        - note_text
+      display_rule:
+        - owner only full text
+        - Family Care は scope に従う
+
+  trend_analysis:
+    purpose:
+      - 平均比較と reference 比較の中心画面
+    required_sections:
+      - large_trend_graph
+      - overlay_selector
+      - reference_band
+      - source_type_filter
+      - date_range_selector
+      - comparison_summary_panel
+    comparison_summary_panel:
+      fields:
+        - current_value
+        - personal_7day_average
+        - personal_30day_average
+        - gap_value
+        - gap_rate
+        - reference_range_min_optional
+        - reference_range_max_optional
+    filters:
+      - metric_type
+      - range_type
+      - source_type
+    display_rules:
+      - external population average は初期表示しない
+      - reference は reference と明示する
+      - 欠損補完はしない
+
+  health_score_center:
+    purpose:
+      - 健康スコアの確認
+    required_sections:
+      - total_score_panel
+      - score_trend_graph
+      - component_breakdown_list
+      - explanation_panel
+    total_score_panel:
+      fields:
+        - total_score
+        - score_date
+        - trend_direction_optional
+    component_breakdown_list:
+      items:
+        - component_code
+        - component_score
+        - component_weight
+        - explanation_text
+    explanation_panel:
+      fields:
+        - summary_text
+      rules:
+        - medical diagnosis wording を使わない
+
+  weekly_review:
+    purpose:
+      - 週次の変化を振り返る
+    required_sections:
+      - weekly_metrics_summary
+      - health_score_weekly_comparison
+      - weekly_note_list
+      - week_highlight_text
+    weekly_metrics_summary:
+      items:
+        - metric_type
+        - latest_value
+        - weekly_average
+        - trend_direction
+    health_score_weekly_comparison:
+      fields:
+        - total_score
+        - previous_week_score
+        - delta
+    weekly_note_list:
+      fields:
+        - noted_at
+        - note_text
+    week_highlight_text:
+      rules:
+        - 責めない表現
+        - 変化を穏やかに伝える
+
+  goal_center:
+    purpose:
+      - 目標設定と進捗確認
+    required_sections:
+      - active_goal_list
+      - progress_summary
+      - related_metric_trend_shortcuts
+    active_goal_list:
+      items:
+        - goal_type
+        - target_value_optional
+        - target_range_min_optional
+        - target_range_max_optional
+        - start_date
+        - end_date_optional
+        - is_active
+    progress_summary:
+      items:
+        - goal_type
+        - progress_status
+        - latest_related_value
+
+  provider_link_settings:
+    purpose:
+      - 外部連携状態の確認と接続管理
+    required_sections:
+      - linked_provider_list
+      - permission_scope_view
+      - last_sync_status
+      - reconnect_actions
+    linked_provider_list:
+      items:
+        - provider_type
+        - link_status
+        - sync_enabled_flag
+        - last_sync_at
+    display_rules:
+      - provider credential detail は直接表示しない
+
+  family_care_settings:
+    purpose:
+      - Family Care 共有設定
+    required_sections:
+      - recipient_list
+      - shared_metric_scope_editor
+      - note_share_flag_toggle
+      - export_permission_flag_toggle
+      - summary_only_toggle
+      - active_period_editor
+    recipient_list:
+      items:
+        - recipient_user_id
+        - relationship_type_optional
+        - share_status
+        - start_at
+        - end_at_optional
+    shared_metric_scope_editor:
+      selectable_metrics:
+        - weight
+        - blood_pressure
+        - sleep
+        - steps
+        - summary_only
+    display_rules:
+      - 初期状態は非共有
+      - note_share_flag default false
+      - export_permission_flag default false
+      - recipient limit = 5
+
+  export_center:
+    purpose:
+      - PDF / CSV 出力
+    required_sections:
+      - format_selector
+      - metric_scope_selector
+      - include_notes_toggle
+      - date_range_selector
+      - export_history
+    format_selector:
+      values:
+        - pdf
+        - csv
+    export_history:
+      items:
+        - export_job_id
+        - format_type
+        - job_status
+        - created_at
+        - completed_at_optional
+
+pc_tablet_analysis_exact_layout:
+  top_bar:
+    - metric_tabs
+    - date_range_selector
+    - provider_filter
+  main_area:
+    - large_trend_graph
+    - average_overlay
+    - reference_band
+  side_panel:
+    - latest_value
+    - health_score_summary
+    - weekly_notes
+    - export_shortcuts
+
+default_metric_order:
+  - weight
+  - blood_pressure
+  - sleep
+  - steps
+  - heart_rate
+  - blood_oxygen

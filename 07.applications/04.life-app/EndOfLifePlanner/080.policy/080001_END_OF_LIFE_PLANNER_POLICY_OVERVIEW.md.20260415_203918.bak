@@ -1,0 +1,14 @@
+# ============================================================
+# END OF LIFE PLANNER POLICY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+policy_scope:
+  - non-medical
+  - non-legal-advice
+  - non-tax-certification
+  - password_plaintext_prohibited
+  - masking_required_for_sensitive_export
+  - owner_explicit_share_only

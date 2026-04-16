@@ -1,0 +1,25 @@
+# ============================================================
+# TRAINING COACH POLICY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+policies:
+  - 医療判断禁止
+  - 過負荷推奨禁止
+  - 体調不良時の休息推奨
+  - 多言語対応必須
+  - 多通貨対応必須
+  - iPhone / Android / PC / Tablet 対応必須
+  - AIサポートのみ
+
+pricing_policy:
+  free:
+    price_jpy: 0
+  premium:
+    price_jpy: 500

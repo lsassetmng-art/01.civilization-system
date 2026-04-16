@@ -1,0 +1,16 @@
+# Interface Overview
+
+app: CareerLaunch
+layer: 090.interface
+## Purpose
+画面一覧、遷移、画面項目、マルチプラットフォームUI方針を定義する。
+
+## Coverage
+- 画面一覧
+- 遷移
+- 主要操作
+- プラットフォーム差分
+- ペルソナ表示
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。

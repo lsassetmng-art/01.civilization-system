@@ -1,0 +1,14 @@
+# ============================================================
+# END OF LIFE PLANNER SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+security_scope:
+  - role_permission_matrix
+  - sensitivity_class
+  - reauthentication
+  - audit_log
+  - masking
+  - dangerous_input_detection

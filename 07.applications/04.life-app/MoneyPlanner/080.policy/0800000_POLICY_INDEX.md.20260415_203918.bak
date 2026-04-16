@@ -1,0 +1,18 @@
+# ============================================================
+# POLICY INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0800001_MONEY_PLANNER_POLICY_OVERVIEW.md
+  - 010.core/0800002_POLICY_CORE_INDEX.md
+  - 010.core/0800003_POLICY_CORE_OVERVIEW.md
+  - 010.core/0800004_MONEY_PLANNER_POLICY_SET.md

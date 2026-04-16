@@ -1,0 +1,22 @@
+# ============================================================
+# ARCHIVE DELETE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 090.archive-delete
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - archive / delete / restore のUI体験を設計する
+  - 誤操作を防ぎつつ長期利用に合う整理導線を作る
+  - 保存価値のある計画を不用意に消さない
+
+ui_principles:
+  - archive is the default safe action
+  - delete is secondary and high-friction
+  - restore is easy for owner
+  - copy should explain consequences calmly

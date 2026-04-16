@@ -199,6 +199,91 @@ Rig / Bone support
 
 
 # ============================================================
+# RENDER AUTHORITY BOUNDARY AND NON-AUTHORITATIVE OUTPUT
+# ============================================================
+
+Persona rendering inside PersonaOS shall preserve a strict authority
+boundary between canonical visual truth and execution-stage rendering.
+
+Canonical visual truth remains upstream from rendering.
+It includes the authoritative visual inputs, canonical visual selectors,
+composition meaning, and other canonical visual decisions
+owned by PersonaOS.
+
+Rendering architecture consumes those canonical inputs and resolves
+execution-stage behavior such as:
+
+- layer composition order
+- anchor interpretation
+- XY offset application
+- autocenter and layout behavior
+- rig and expression parameter application
+- render-plan realization
+- output generation
+
+These execution-stage results are render artifacts,
+not canonical visual truth.
+
+Rendered output, intermediate layout state,
+runtime adjustment state, runtime fallback behavior,
+preview images, and display-ready visual products
+must not silently replace canonical visual truth.
+
+A successful render does not imply canonical mutation.
+A displayed result does not imply authoritative truth.
+A locally corrected render result does not become canonical visual truth
+unless a separate canonical adoption path explicitly states so.
+
+# ============================================================
+# EXECUTION-STAGE RENDER SEMANTICS
+# ============================================================
+
+The rendering layer may resolve anchor points,
+autocenter behavior, offset corrections,
+layer composition instructions,
+and other display-side realization behavior,
+but these remain execution-stage semantics
+under canonical input authority.
+
+PersonaOS rendering must therefore explicitly distinguish:
+
+- canonical visual input reference
+- render plan resolution
+- runtime render session state
+- rendered output artifact
+- diagnostics, performance, and support traces
+
+The rendering layer may emit usable and correct outputs for runtime use,
+but those outputs remain non-authoritative by default.
+
+# ============================================================
+# PROHIBITED AUTHORITY PROMOTION
+# ============================================================
+
+The following interpretations are prohibited:
+
+- rendered output = canonical visual truth
+- preview success = canonical mutation
+- local fallback rendering = canonical correctness
+- display success = committed truth
+- runtime correction = authority update
+- render-local identifiers = Persona identity authority
+- appearance deltas = committed growth truth
+- cache or export artifacts = canonical snapshot authority
+
+Rendering behavior may reflect canonical truth,
+but it must not silently become canonical truth.
+
+# ============================================================
+# FIXED RENDERING STATEMENT
+# ============================================================
+
+PersonaOS rendering architecture is an execution architecture
+under canonical visual authority.
+It may resolve, compose, layout, and emit render artifacts,
+but it must not silently convert render-time outputs,
+runtime corrections, or display success into canonical truth.
+# ============================================================
 # CURRENT CANONICAL STATUS
 # ============================================================
 

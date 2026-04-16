@@ -1,0 +1,12 @@
+# ============================================================
+# ARCHITECTURE INDEX
+# ============================================================
+
+layer: 020.architecture
+
+documents:
+  - 0200000000_ARCHITECTURE_INDEX.md
+  - 0200000001_ARCHITECTURE_OVERVIEW.md
+
+subfolders:
+  - 010.application

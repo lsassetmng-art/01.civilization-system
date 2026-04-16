@@ -1,0 +1,16 @@
+# ============================================================
+# INTERFACE INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0900001_INTERFACE_OVERVIEW.md
+  - 010.screens/0900100_SCREEN_INDEX.md
+  - 010.screens/0900101_SCREEN_OVERVIEW.md
+  - 010.screens/0900102_SCREEN_DETAIL_CANONICAL.md
+  - 010.screens/0900103_SCREEN_DECISION_ADJUSTMENT_CANONICAL.md
+
+purpose:
+  - LegalSupport の画面構成と画面詳細を固定する

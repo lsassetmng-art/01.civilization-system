@@ -1,0 +1,8 @@
+# ============================================================
+# DOMAIN ARCHITECTURE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0200200001_DOMAIN_ARCHITECTURE_OVERVIEW.md
+  - 0200200002_HEALTH_DOMAIN_ARCHITECTURE.md

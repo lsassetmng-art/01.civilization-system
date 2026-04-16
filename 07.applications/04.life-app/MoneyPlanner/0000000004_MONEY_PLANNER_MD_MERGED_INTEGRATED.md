@@ -1,0 +1,11573 @@
+# ============================================================
+# MONEY PLANNER MD MERGED INTEGRATED
+# ============================================================
+
+status: canonical-merged
+system: MoneyPlanner
+domain: LifeOS
+schema_policy:
+  - life
+implementation_status:
+  - design_complete
+  - implementation_not_started
+
+merge_policy:
+  - MoneyPlanner 配下の .md を統合
+  - 本ファイル自身は再帰統合しない
+  - ファイル順は sort 順固定
+  - 各文書の前に source path を明記する
+  - 実装用 SQL / 非 md ファイルは含めない
+
+
+
+---
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/0000000000_MONEY_PLANNER_INDEX.md
+
+# ============================================================
+# MONEY PLANNER INDEX
+# ============================================================
+
+status: canonical-updated
+system: MoneyPlanner
+domain: LifeOS
+
+main_documents:
+  - 0000000001_MONEY_PLANNER_OVERVIEW.md
+  - 0000000002_MONEY_PLANNER_IMPLEMENTATION_READY_NOTE.md
+  - 0000000003_MONEY_PLANNER_INTEGRATED_CANONICAL.md
+
+reading_order:
+  - 0000000001_MONEY_PLANNER_OVERVIEW.md
+  - 0000000003_MONEY_PLANNER_INTEGRATED_CANONICAL.md
+  - 0000000002_MONEY_PLANNER_IMPLEMENTATION_READY_NOTE.md
+
+layer_roots:
+  - 010.constitution
+  - 020.architecture
+  - 030.model
+  - 040.runtime
+  - 050.flow
+  - 060.integration
+  - 070.operations
+  - 080.policy
+  - 090.interface
+  - 100.security
+  - 110.infrastructure
+  - 120.implementation
+  - 130.development
+  - 900.meta
+  - 920.meta
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/0000000001_MONEY_PLANNER_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER OVERVIEW
+# ============================================================
+
+status: canonical-updated
+system: MoneyPlanner
+domain: LifeOS
+
+current_state:
+  - MoneyPlanner の設計は統合版まで再生成済み
+  - schema 前提は life
+  - app 専用 schema は使わない
+  - 実装準備完了
+  - 実装はまだ開始していない
+
+core_identity:
+  - 家計簿ではなく中長期資金計画アプリ
+  - 人生設計、終活、相続準備の入口とつながる
+  - 個人/夫婦/家族向け
+  - 多言語/多通貨/マルチデバイス前提
+
+canonical_summary:
+  - 仕様固定済み
+  - 課金固定済み
+  - 画面固定済み
+  - API exact payload 固定済み
+  - life schema logical design 固定済み
+  - sharing / linkage / receive candidate 固定済み
+  - audit / history / review flow 固定済み
+  - implementation readiness 判定済み
+
+primary_reference:
+  - 0000000003_MONEY_PLANNER_INTEGRATED_CANONICAL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/0000000002_MONEY_PLANNER_IMPLEMENTATION_READY_NOTE.md
+
+# ============================================================
+# MONEY PLANNER IMPLEMENTATION READY NOTE
+# ============================================================
+
+status: implementation-ready-design-complete
+system: MoneyPlanner
+domain: LifeOS
+
+decision:
+  - MoneyPlanner は設計上、実装準備完了と判定する
+  - ただし現時点では実装はまだ開始しない
+  - schema は life を正本とする
+  - app 専用 schema は使わない
+  - 実装開始時は本設計群を正本として参照する
+
+ready_because:
+  - positioning 固定済み
+  - pricing 固定済み
+  - screen catalog 固定済み
+  - validation 固定済み
+  - family sharing rule 固定済み
+  - linkage payload 送受信設計 固定済み
+  - logical table / logical view 固定済み
+  - api exact payload 固定済み
+  - screen-to-api binding 固定済み
+  - enum / terminology 固定済み
+  - review flow / operation policy 固定済み
+  - audit / change_log / history 設計 固定済み
+
+non_blocking_items_only:
+  - 実SQL化は未実施
+  - 実装コードは未着手
+  - 画面UI細部デザインは実装時調整余地あり
+
+implementation_entry_reference:
+  - 1300100002_MONEY_PLANNER_IMPLEMENTATION_READINESS_CHECKLIST.md
+  - 1300100003_MONEY_PLANNER_IMPLEMENTATION_TRACEABILITY_MATRIX.md
+  - 1300100004_MONEY_PLANNER_IMPLEMENTATION_ENTRY_SEQUENCE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/0000000003_MONEY_PLANNER_INTEGRATED_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER INTEGRATED CANONICAL
+# LifeOS / 人生設計領域
+# ============================================================
+
+status: canonical-integrated
+system: MoneyPlanner
+domain: LifeOS
+prepared_by: Zero
+owner: Boss
+implementation_status:
+  - design_complete
+  - implementation_not_started
+
+# ============================================================
+# 01. POSITIONING
+# ============================================================
+
+app_name:
+  en: MoneyPlanner
+  ja: お金計画アプリ
+
+positioning:
+  - 家計簿ではなく、中長期の資金計画に強いアプリ
+  - 人生設計と結びついたお金管理
+  - 個人、夫婦、家族単位で将来資金計画を整理する LifeOS アプリ
+  - 住宅、教育、老後、終活、相続準備の入口まで見据えた資金整理アプリ
+
+core_purpose:
+  - 収入/支出/資産/負債の整理
+  - 目的別貯蓄
+  - 住宅、教育、老後などの計画
+  - 資金不足リスクの見える化
+  - 家族単位での将来資金計画の共有
+
+main_users:
+  - 個人
+  - 夫婦
+  - 家族単位
+
+primary_value_proposition:
+  - 将来必要なお金を見える化できる
+  - 家族で同じ資金計画を共有できる
+  - ライフイベントとお金をつなげて考えられる
+  - 終活・相続準備の入口としても使える
+  - 多通貨・多言語・マルチデバイス前提で長く使える
+
+# ============================================================
+# 02. PLATFORM / PRICING
+# ============================================================
+
+multilingual:
+  required: true
+
+multicurrency:
+  required: true
+  scope:
+    - すべての金額項目
+    - 複数通貨資産
+    - 為替換算表示
+    - 基準通貨表示
+    - 通貨別内訳表示
+
+multi_device:
+  iphone: true
+  android: true
+  pc: true
+  tablet: true
+
+pricing_design:
+  plans:
+    free:
+      price_jpy_monthly: 0
+      included:
+        - 収入管理
+        - 支出管理
+        - 資産一覧
+        - 負債一覧
+        - 貯蓄目標
+        - イベント費用計画
+        - 月次/年次見通し
+        - メモ
+        - 基本カテゴリ分析
+        - 単一シナリオ
+        - 多言語対応
+        - 多通貨対応
+      limitations:
+        - 家族共有なし
+        - 複数シナリオ比較なし
+        - 手動共有なし
+        - 高度警告なし
+
+    plus_family:
+      price_jpy_monthly: 500
+      included:
+        - Free 全機能
+        - 家族共有
+        - 共同編集
+        - 複数シナリオ比較
+        - 資金不足警告
+        - LifePlanner 連携強化
+        - EndOfLifePlanner 向け資産概要共有
+        - InheritanceSupport 向け資産概要共有
+      limitations:
+        - 投資助言なし
+        - 税務判断なし
+        - 法務判断なし
+        - サポートは AIチャットのみ
+
+support_policy:
+  - AIチャットのみ
+  - 人間サポートなし
+
+# ============================================================
+# 03. BOUNDARY
+# ============================================================
+
+lifeos_boundaries:
+  allowed:
+    - ライフイベント費用計画との連携
+    - 相続準備向け資産概要共有
+    - 人生設計計画との見通し共有
+  prohibited:
+    - 投資助言の確定提供
+    - 税務判断の確定提供
+    - 法務判断の確定提供
+    - 保険商品の勧誘
+    - 自動的な資産移転判断
+
+non_goals:
+  - 完全な会計ソフト化
+  - 税申告作成
+  - 自動投資判断
+  - 相続手続そのものの実行
+
+schema_policy:
+  schema_name: life
+  decision: fixed
+  note:
+    - app 専用 schema は使わない
+    - MoneyPlanner 固有データは life schema 内で mp_ prefix で分離する
+
+# ============================================================
+# 04. ROLE / SHARING
+# ============================================================
+
+roles:
+  owner:
+    - 全件閲覧
+    - 全件編集
+    - 共有設定
+    - 手動共有実行
+    - 候補 confirm / reject / archive
+  partner_editor:
+    - shared 範囲内の閲覧
+    - shared 範囲内の編集
+    - 候補 read limited
+  viewer:
+    - shared 範囲内の閲覧のみ
+
+visibility_scope:
+  object_visibility:
+    - private
+    - shared
+    - selected_only
+
+member_visibility_scope:
+  values:
+    - all
+    - shared_only
+    - selected_only
+
+family_sharing_rules:
+  - owner は全件閲覧可能
+  - partner_editor は shared / selected_only(対象時) のみ閲覧可能
+  - viewer は shared / selected_only(対象時) のみ閲覧可能
+  - private は owner 専用
+  - selected_only は owner が個別指定した相手だけ閲覧可能
+  - manual share は owner のみ
+
+# ============================================================
+# 05. CORE FUNCTIONS
+# ============================================================
+
+must_functions:
+  - 収入管理
+  - 支出管理
+  - 資産一覧
+  - 負債一覧
+  - 貯蓄目標
+  - イベント費用計画
+  - 月次/年次見通し
+  - メモ
+
+should_functions:
+  - 予算管理
+  - カテゴリ別分析
+  - ライフイベント連携
+  - 資金不足警告
+  - 保険/年金メモ
+  - 家族共有
+
+nice_to_have:
+  - 口座連携
+  - 投資資産メモ
+  - 税金概算メモ
+  - 複数シナリオ比較
+
+# ============================================================
+# 06. SCREEN CATALOG
+# ============================================================
+
+screens:
+  - MP-001 dashboard
+  - MP-002 income_list
+  - MP-003 expense_list
+  - MP-004 asset_list
+  - MP-005 liability_list
+  - MP-006 saving_goal_list
+  - MP-007 event_budget_list
+  - MP-008 monthly_projection
+  - MP-009 yearly_projection
+  - MP-010 scenario_compare
+  - MP-011 family_sharing
+  - MP-012 memo_list
+  - MP-013 alerts
+  - MP-014 linkage_settings
+  - MP-015 receive_candidate_review
+
+dashboard_widgets:
+  - total_income
+  - total_expense
+  - total_assets
+  - total_liabilities
+  - net_worth
+  - active_goal_count
+  - total_target_amount
+  - total_current_saved_amount
+  - upcoming_count
+  - total_upcoming_amount
+  - received_candidate_count
+  - duplicate_candidate_count
+
+# ============================================================
+# 07. DOMAIN MODEL
+# ============================================================
+
+core_entities:
+  - mp_plan
+  - mp_income_item
+  - mp_expense_item
+  - mp_asset_item
+  - mp_liability_item
+  - mp_saving_goal
+  - mp_event_budget
+  - mp_scenario
+  - mp_shared_member
+  - mp_memo_item
+  - mp_financial_snapshot
+  - mp_receive_candidate_registry
+  - mp_audit_event
+  - mp_change_log
+  - mp_history_snapshot
+
+entity_purpose:
+  mp_plan:
+    - MoneyPlanner の計画ルート
+  mp_income_item:
+    - 収入項目
+  mp_expense_item:
+    - 支出項目
+  mp_asset_item:
+    - 資産台帳
+  mp_liability_item:
+    - 負債台帳
+  mp_saving_goal:
+    - 目標積立
+  mp_event_budget:
+    - ライフイベント費用
+  mp_scenario:
+    - 比較シナリオ
+  mp_shared_member:
+    - 共有メンバー
+  mp_memo_item:
+    - 補足メモ
+  mp_financial_snapshot:
+    - 時点スナップショット
+  mp_receive_candidate_registry:
+    - 受入候補原本管理
+  mp_audit_event:
+    - 重要操作監査
+  mp_change_log:
+    - 項目変更履歴
+  mp_history_snapshot:
+    - 月次/年次履歴
+
+# ============================================================
+# 08. LOGICAL VIEW
+# ============================================================
+
+logical_views:
+  - life.v_mp_plan_balance_summary
+  - life.v_mp_goal_progress_summary
+  - life.v_mp_upcoming_event_budget_summary
+  - life.v_mp_receive_candidate_summary
+  - life.v_mp_shared_balance_summary
+  - life.v_mp_member_visible_object_summary
+  - life.v_mp_dashboard_composed_summary
+
+summary_rules:
+  - owner summary は private/shared/selected_only を含みうる
+  - shared summary は shared のみ
+  - member summary は member_visibility_scope を適用
+  - receive candidate summary は archived を通常件数から除外してよい
+
+# ============================================================
+# 09. RECEIVE CANDIDATE
+# ============================================================
+
+receive_sources:
+  - LifePlanner
+  - EndOfLifePlanner
+  - InheritanceSupport
+
+receive_policy:
+  - 明示受入のみ
+  - 自動確定しない
+  - candidate / draft 化を基本とする
+  - owner review 必須
+  - duplicate 時は reviewed 経由必須
+
+receive_candidate_status:
+  - received
+  - draft_candidate
+  - reviewed
+  - confirmed
+  - rejected
+  - archived
+
+candidate_type:
+  - event_budget
+  - saving_goal
+  - memo
+  - asset
+  - liability
+
+duplicate_policy:
+  - 完全一致でも自動上書きしない
+  - duplicate_candidate_flag を立てる
+  - owner が既存採用 / candidate採用 / archive 候補化を判断する
+
+# ============================================================
+# 10. API DESIGN
+# ============================================================
+
+major_api_groups:
+  - dashboard
+  - incomes
+  - expenses
+  - assets
+  - liabilities
+  - saving_goals
+  - event_budgets
+  - projections.monthly
+  - projections.yearly
+  - scenarios
+  - scenarios.compare
+  - sharing.members
+  - memos
+  - alerts
+  - linkages
+  - linkages.share
+  - receive-candidates
+  - receive-candidates.status
+  - receive-candidates.visibility
+  - receive-candidates.duplicate-reference
+
+api_policy:
+  - JSON request / response 固定
+  - id は uuid string
+  - amount は decimal string
+  - response は fixed key を基本
+  - nullable は null を返す
+  - required / nullable matrix は別 canonical で固定済み
+
+dashboard_api:
+  endpoint: GET /v1/money-planner/dashboard
+  summary_scope:
+    - owner
+    - shared
+
+family_sharing_api:
+  - GET /v1/money-planner/sharing/members
+  - POST /v1/money-planner/sharing/members
+  - PATCH /v1/money-planner/sharing/members/{shared_member_id}
+  - DELETE /v1/money-planner/sharing/members/{shared_member_id}
+  - GET /v1/money-planner/sharing/members/{shared_member_id}/visible-summary
+
+linkage_api:
+  - GET /v1/money-planner/linkages
+  - PATCH /v1/money-planner/linkages/{target_system}
+  - POST /v1/money-planner/linkages/share
+
+receive_candidate_api:
+  - GET /v1/money-planner/receive-candidates
+  - GET /v1/money-planner/receive-candidates/{candidate_registry_id}
+  - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/status
+  - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/visibility
+  - GET /v1/money-planner/receive-candidates/{candidate_registry_id}/duplicate-reference
+
+# ============================================================
+# 11. SCREEN TO API BINDING
+# ============================================================
+
+screen_to_api:
+  dashboard:
+    - GET /v1/money-planner/dashboard
+    - GET /v1/money-planner/alerts
+
+  income_list:
+    - GET /v1/money-planner/incomes
+    - POST /v1/money-planner/incomes
+    - PATCH /v1/money-planner/incomes/{income_id}
+    - DELETE /v1/money-planner/incomes/{income_id}
+
+  expense_list:
+    - GET /v1/money-planner/expenses
+    - POST /v1/money-planner/expenses
+    - PATCH /v1/money-planner/expenses/{expense_id}
+    - DELETE /v1/money-planner/expenses/{expense_id}
+
+  asset_list:
+    - GET /v1/money-planner/assets
+    - POST /v1/money-planner/assets
+    - PATCH /v1/money-planner/assets/{asset_id}
+    - DELETE /v1/money-planner/assets/{asset_id}
+
+  liability_list:
+    - GET /v1/money-planner/liabilities
+    - POST /v1/money-planner/liabilities
+    - PATCH /v1/money-planner/liabilities/{liability_id}
+    - DELETE /v1/money-planner/liabilities/{liability_id}
+
+  saving_goal_list:
+    - GET /v1/money-planner/saving-goals
+    - POST /v1/money-planner/saving-goals
+    - PATCH /v1/money-planner/saving-goals/{goal_id}
+    - DELETE /v1/money-planner/saving-goals/{goal_id}
+
+  event_budget_list:
+    - GET /v1/money-planner/event-budgets
+    - POST /v1/money-planner/event-budgets
+    - PATCH /v1/money-planner/event-budgets/{event_budget_id}
+    - DELETE /v1/money-planner/event-budgets/{event_budget_id}
+
+  scenario_compare:
+    - GET /v1/money-planner/scenarios
+    - POST /v1/money-planner/scenarios
+    - POST /v1/money-planner/scenarios/compare
+
+  family_sharing:
+    - GET /v1/money-planner/sharing/members
+    - POST /v1/money-planner/sharing/members
+    - PATCH /v1/money-planner/sharing/members/{shared_member_id}
+    - DELETE /v1/money-planner/sharing/members/{shared_member_id}
+
+  linkage_settings:
+    - GET /v1/money-planner/linkages
+    - PATCH /v1/money-planner/linkages/{target_system}
+    - POST /v1/money-planner/linkages/share
+
+  receive_candidate_review:
+    - GET /v1/money-planner/receive-candidates
+    - GET /v1/money-planner/receive-candidates/{candidate_registry_id}
+    - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/status
+    - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/visibility
+    - GET /v1/money-planner/receive-candidates/{candidate_registry_id}/duplicate-reference
+
+# ============================================================
+# 12. VALIDATION / ENUM / TERMINOLOGY
+# ============================================================
+
+validation_policy:
+  - UI で先に入力不備を防ぐ
+  - API validation と矛盾しない
+  - amount は decimal 前提
+  - currency_code は 3文字
+  - date は yyyy-mm-dd
+  - month は yyyy-mm
+
+cross_domain_enum:
+  frequency:
+    - daily
+    - weekly
+    - monthly
+    - yearly
+    - one_time
+  necessity_level:
+    - essential
+    - normal
+    - optional
+  asset_type:
+    - cash
+    - bank_deposit
+    - securities
+    - insurance
+    - real_estate
+    - other
+  liability_type:
+    - mortgage
+    - loan
+    - credit_card
+    - other
+  ownership_scope:
+    - individual
+    - couple
+    - family
+  visibility_scope:
+    - private
+    - shared
+    - selected_only
+  shared_member_role:
+    - owner
+    - partner_editor
+    - viewer
+  import_status:
+    - received
+    - draft_candidate
+    - reviewed
+    - confirmed
+    - rejected
+    - archived
+  alert_type:
+    - shortage_risk
+    - duplicate_candidate
+    - review_pending
+    - goal_delay
+    - sharing_visibility_warning
+
+terminology:
+  plan:
+    ja: 計画
+  saving_goal:
+    ja: 貯蓄目標
+  event_budget:
+    ja: イベント費用計画
+  receive_candidate:
+    ja: 受入候補
+  duplicate_candidate:
+    ja: 重複候補
+  owner_summary:
+    ja: owner summary
+  shared_summary:
+    ja: shared summary
+  manual_share:
+    ja: 手動共有
+
+# ============================================================
+# 13. ERROR / ALERT
+# ============================================================
+
+api_error_families:
+  - validation
+  - auth
+  - permission
+  - not_found
+  - conflict
+  - business_rule
+  - server
+
+screen_error_policy:
+  - field_error
+  - form_error
+  - global_error
+
+alert_types:
+  - shortage_risk
+  - duplicate_candidate
+  - review_pending
+  - goal_delay
+  - sharing_visibility_warning
+
+# ============================================================
+# 14. AUDIT / HISTORY / REVIEW OPERATION
+# ============================================================
+
+audit_objects:
+  - life.mp_audit_event
+  - life.mp_change_log
+  - life.mp_history_snapshot
+
+audit_policy:
+  - create/update/share/confirm/reject を audit 対象
+  - 金額変更は change_log 対象
+  - monthly / yearly review 完了時に history_snapshot 候補を残す
+
+monthly_review:
+  - dashboard summary 確認
+  - monthly projection 確認
+  - income / expense 更新確認
+  - asset / liability 更新確認
+  - goal / event 見直し
+  - receive candidate review
+  - monthly checkpoint 保存
+
+yearly_review:
+  - yearly projection 確認
+  - scenario compare 確認
+  - LifePlanner 連携イベント見直し
+  - EndOfLifePlanner / InheritanceSupport 候補見直し
+  - family sharing visibility 見直し
+  - yearly checkpoint 保存
+
+# ============================================================
+# 15. COMMON COMPONENT DECISION
+# ============================================================
+
+adopt_now:
+  - 資産負債台帳共通部品
+  - カテゴリ別分析共通部品
+  - 共同家計編集共通部品
+  - 目標積立共通部品
+  - ライフイベント費用計画共通部品
+  - 受入候補レビュー共通部品
+  - 手動共有共通部品
+
+adopt_later:
+  - 口座連携共通部品
+  - 税金概算支援共通部品
+  - 投資資産詳細分析共通部品
+
+rejected_now:
+  - 自動最適化提案エンジン
+
+# ============================================================
+# 16. IMPLEMENTATION READINESS
+# ============================================================
+
+implementation_readiness:
+  ready: true
+  blockers: []
+
+ready_items:
+  - positioning fixed
+  - pricing fixed
+  - screen catalog fixed
+  - screen validation fixed
+  - role / sharing fixed
+  - linkage send / receive fixed
+  - logical table fixed
+  - logical view fixed
+  - api exact payload fixed
+  - required / nullable fixed
+  - screen-to-api binding fixed
+  - enum / terminology fixed
+  - audit / history fixed
+  - review flow fixed
+  - test / acceptance design fixed
+  - implementation entry sequence fixed
+
+not_done_by_design:
+  - physical SQL not created
+  - implementation code not started
+  - visual polish not started
+
+final_state:
+  - design_complete
+  - implementation_ready
+  - implementation_not_started
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/0000000_MONEY_PLANNER_INDEX.md
+
+# ============================================================
+# MONEY PLANNER INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - MoneyPlanner の正本設計書群の入口
+  - 各レイヤの読み順固定
+  - LifeOS お金計画領域アプリとしての位置づけ整理
+
+read_order:
+  - 0000001_MONEY_PLANNER_OVERVIEW.md
+  - 0000002_MONEY_PLANNER_CANONICAL.md
+  - 010.constitution/0100000_CONSTITUTION_INDEX.md
+  - 020.architecture/0200000_ARCHITECTURE_INDEX.md
+  - 030.model/0300000_MODEL_INDEX.md
+  - 040.runtime/0400000_RUNTIME_INDEX.md
+  - 050.flow/0500000_FLOW_INDEX.md
+  - 060.integration/0600000_INTEGRATION_INDEX.md
+  - 070.operations/0700000_OPERATIONS_INDEX.md
+  - 080.policy/0800000_POLICY_INDEX.md
+  - 090.interface/0900000_INTERFACE_INDEX.md
+  - 100.security/1000000_SECURITY_INDEX.md
+  - 110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+  - 120.implementation/1200000_IMPLEMENTATION_INDEX.md
+  - 130.development/1300000_DEVELOPMENT_INDEX.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/0000001_MONEY_PLANNER_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+owner: Boss
+prepared_by: Zero
+
+summary:
+  - MoneyPlanner は家計簿ではなく、中長期の資金計画に強い LifeOS アプリである
+  - 収入、支出、資産、負債、目的別資金、将来イベント費用を整理し、見通し管理を支援する
+  - 日々の細かい記帳よりも、人生設計と結びついたお金の計画整理を主目的とする
+  - LifePlanner、InheritanceSupport、EndOfLifePlanner と連携しやすい中心設計を持つ
+
+main_users:
+  - 個人
+  - 夫婦
+  - 家族
+  - 将来資金を見通したい人
+
+core_functions:
+  - 資金計画表作成
+  - 収入/支出整理
+  - 資産/負債整理
+  - 目的別貯蓄管理
+  - 将来イベント費用計画
+  - 通貨別表示
+  - 見直し通知
+  - メモ添付
+
+pricing:
+  free: 0
+  plus: 500
+  family: 800
+
+non_goals:
+  - 投資判断の断定
+  - 税務判断の断定
+  - 会計ソフトの代替
+  - ERP/BusinessOS の正式会計正本化
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/0000002_MONEY_PLANNER_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+owner: Boss
+prepared_by: Zero
+
+positioning:
+  - LifeOS / 人生設計領域
+  - 家計簿ではなく中長期の資金計画に強いアプリ
+  - 住宅、教育、老後、医療、旅行、終活などの将来費用計画を支援する
+
+boundaries:
+  - 投資判断や税務判断の代替はしない
+  - 正式会計や正式申告の正本にはしない
+  - 共通部品詳細は別チャットで管理される前提とし、本設計はアプリ固有責務を中心に扱う
+  - BusinessOS/ERP の正式業務正本とは分離する
+
+required_cross_cutting:
+  multilingual: true
+  multicurrency: true
+  multi_device:
+    iphone: true
+    android: true
+    pc: true
+    tablet: true
+
+data_storage:
+  primary_schema: life
+  note:
+    - 本アプリのアプリデータは life スキーマを正本保存先とする
+    - 他スキーマへ自動保存しない
+
+ai_support:
+  enabled: true
+  scope:
+    - 計画項目整理
+    - 支出分類補助
+    - 目的別資金の分解案
+    - 見直しポイント提案
+    - 関連アプリ見直し提案
+  prohibited:
+    - 投資判断の断定
+    - 税務判断の断定
+    - 有資格者を装う表現
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md
+
+# ============================================================
+# CONSTITUTION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 010.constitution
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0100003_CONSTITUTION_CORE_OVERVIEW.md
+  - 0100004_MONEY_PLANNER_CORE_PRINCIPLES.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md
+
+# ============================================================
+# CONSTITUTION CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 010.constitution
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の 憲章 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/010.core/0100004_MONEY_PLANNER_CORE_PRINCIPLES.md
+
+# ============================================================
+# MONEY PLANNER CORE PRINCIPLES
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 010.constitution
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+principles:
+  - 人生に結びついた中長期の資金計画を支援する
+  - 本人や家族が見通しを持てる状態をつくる
+  - 自動決定ではなく整理支援である
+  - 複数通貨や将来イベント費用を扱える
+  - 共有は許可範囲に限定する
+
+boundaries:
+  - 投資判断を断定しない
+  - 税務判断を断定しない
+  - 正式会計処理を代替しない
+  - 他アプリ正本を置き換えない
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/010.core/0100100000_CORE_INDEX.md
+
+# CORE INDEX
+documents:
+  - 0100100001_MONEY_PLANNER_CORE_CONSTITUTION.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/010.core/0100100001_CORE_OVERVIEW.md
+
+# CORE OVERVIEW
+role:
+  - 中長期資金計画アプリとしての正本方針
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/010.core/0100100001_MONEY_PLANNER_CORE_CONSTITUTION.md
+
+# ============================================================
+# MONEY PLANNER CORE CONSTITUTION
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+
+positioning:
+  - 家計簿ではなく資金計画アプリ
+  - LifeOS の人生設計領域に属する
+  - 家族共有前提の長期プランニングアプリ
+
+must_principles:
+  - 将来見通しを主目的とする
+  - 単発記録より継続計画を重視する
+  - 家族共有は明示操作のみ
+  - 多言語/多通貨/マルチデバイスを初期前提とする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/0100000000_CONSTITUTION_INDEX.md
+
+# CONSTITUTION INDEX
+subfolders:
+  - 010.core
+  - 020.boundary
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/0100000001_CONSTITUTION_OVERVIEW.md
+
+# CONSTITUTION OVERVIEW
+
+role:
+  - MoneyPlanner の存在理由と境界を固定する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/0100000_CONSTITUTION_INDEX.md
+
+# ============================================================
+# CONSTITUTION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 010.constitution
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0100001_MONEY_PLANNER_CONSTITUTION_OVERVIEW.md
+  - 010.core/0100002_CONSTITUTION_CORE_INDEX.md
+  - 010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md
+  - 010.core/0100004_MONEY_PLANNER_CORE_PRINCIPLES.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/0100001_MONEY_PLANNER_CONSTITUTION_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER CONSTITUTION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 010.constitution
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 憲章レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 中長期資金計画アプリとしての存在目的を固定する
+  - 投資/税務判断代替ではないことを最上位で固定する
+  - 人生設計とお金計画の接続を明文化する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/020.boundary/0100200000_BOUNDARY_INDEX.md
+
+# BOUNDARY INDEX
+documents:
+  - 0100200001_MONEY_PLANNER_BOUNDARY_CONSTITUTION.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/020.boundary/0100200001_BOUNDARY_OVERVIEW.md
+
+# BOUNDARY OVERVIEW
+role:
+  - MoneyPlanner の責務境界と非責務を固定する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/010.constitution/020.boundary/0100200001_MONEY_PLANNER_BOUNDARY_CONSTITUTION.md
+
+# ============================================================
+# MONEY PLANNER BOUNDARY CONSTITUTION
+# ============================================================
+
+allowed:
+  - 収入/支出/資産/負債の整理
+  - 目標積立管理
+  - イベント費用試算
+  - 資金不足リスク可視化
+  - LifePlanner への資金計画共有
+  - EndOfLifePlanner への基礎資産概要共有
+  - InheritanceSupport への資産概要共有
+
+prohibited:
+  - 投資助言の確定提供
+  - 税務判断の確定提供
+  - 法務判断の確定提供
+  - 自動的な資産移転判断
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+
+# ============================================================
+# ARCHITECTURE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0200003_ARCHITECTURE_CORE_OVERVIEW.md
+  - 0200004_MONEY_PLANNER_SYSTEM_ARCHITECTURE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
+
+# ============================================================
+# ARCHITECTURE CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の アーキテクチャ における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/010.core/0200004_MONEY_PLANNER_SYSTEM_ARCHITECTURE.md
+
+# ============================================================
+# MONEY PLANNER SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+architecture_blocks:
+  - financial_plan_workspace
+  - income_expense_area
+  - asset_liability_area
+  - purpose_fund_area
+  - event_cost_area
+  - review_center
+  - note_attachment_area
+  - family_share_output
+  - ai_support_assist
+  - lifeos_bridge
+
+bridge_rules:
+  - LifeOS 連携は人生計画、相続、終活との接続を優先
+  - 会計や申告の詳細は専門系に渡す
+  - 共通部品の詳細定義は別正本を参照する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/010.domain/0200100000_DOMAIN_INDEX.md
+
+# DOMAIN INDEX
+documents:
+  - 0200100001_MONEY_PLANNER_DOMAIN_ARCHITECTURE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/010.domain/0200100001_DOMAIN_OVERVIEW.md
+
+# DOMAIN OVERVIEW
+role:
+  - ドメイン境界と主要機能群の整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/010.domain/0200100001_MONEY_PLANNER_DOMAIN_ARCHITECTURE.md
+
+# ============================================================
+# MONEY PLANNER DOMAIN ARCHITECTURE
+# ============================================================
+
+domains:
+  - financial_capture
+  - planning
+  - projection
+  - scenario_management
+  - sharing
+  - lifeos_linkage
+
+core_modules:
+  - income_management
+  - expense_management
+  - asset_management
+  - liability_management
+  - saving_goal_management
+  - event_budget_management
+  - projection_engine
+  - sharing_control
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/020.components/0200200000_COMPONENTS_INDEX.md
+
+# COMPONENTS INDEX
+documents:
+  - 0200200001_MONEY_PLANNER_COMPONENT_ARCHITECTURE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/020.components/0200200001_COMPONENTS_OVERVIEW.md
+
+# COMPONENTS OVERVIEW
+role:
+  - UI / service / storage / linkage の主要部品整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/020.components/0200200001_MONEY_PLANNER_COMPONENT_ARCHITECTURE.md
+
+# ============================================================
+# MONEY PLANNER COMPONENT ARCHITECTURE
+# ============================================================
+
+components:
+  - dashboard_component
+  - income_list_component
+  - expense_list_component
+  - asset_ledger_component
+  - liability_ledger_component
+  - goal_tracker_component
+  - event_budget_component
+  - projection_component
+  - scenario_compare_component
+  - family_sharing_component
+  - linkage_control_component
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/020.components/0200200002_MONEY_PLANNER_COMMON_COMPONENT_ADOPTION_DECISION.md
+
+# ============================================================
+# MONEY PLANNER COMMON COMPONENT ADOPTION DECISION
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 020.architecture
+subdomain: components
+
+purpose:
+  - 共通部品候補の採否を固定する
+  - 実装開始時に迷わないようにする
+
+adopt_now:
+  - name: 資産負債台帳共通部品
+    scope:
+      - asset list
+      - liability list
+      - amount + currency display
+      - ownership_scope
+      - visibility_scope
+    reason:
+      - MoneyPlanner の中核
+      - 他 life 系アプリにも再利用余地あり
+
+  - name: カテゴリ別分析共通部品
+    scope:
+      - income / expense category summary
+      - monthly / yearly breakdown
+    reason:
+      - dashboard / projection で再利用しやすい
+
+  - name: 共同家計編集共通部品
+    scope:
+      - shared_member
+      - role
+      - member_visibility_scope
+      - visible summary
+    reason:
+      - family sharing の核になる
+
+  - name: 目標積立共通部品
+    scope:
+      - saving_goal
+      - progress
+      - target / current / remaining
+    reason:
+      - MoneyPlanner の主要価値
+
+  - name: ライフイベント費用計画共通部品
+    scope:
+      - event_budget
+      - priority
+      - planned_date
+      - related member
+    reason:
+      - LifePlanner 連携の中心
+
+  - name: 受入候補レビュー共通部品
+    scope:
+      - receive candidate list
+      - duplicate badge
+      - status transition
+      - confirm / reject / archive
+    reason:
+      - 複数 LifeOS アプリからの受入に共通
+
+  - name: 手動共有共通部品
+    scope:
+      - linkage settings
+      - share target
+      - share scope
+      - share execution log summary
+    reason:
+      - LifePlanner / EndOfLifePlanner / InheritanceSupport 連携で共通化できる
+
+adopt_later:
+  - name: 口座連携共通部品
+    reason:
+      - 現段階では手動入力中心で成立する
+      - 外部依存が大きい
+
+  - name: 税金概算支援共通部品
+    reason:
+      - 税務判断へ踏み込みやすい
+      - 現時点では memo 中心で十分
+
+  - name: 投資資産詳細分析共通部品
+    reason:
+      - 本アプリの主軸ではない
+      - 投資助言境界を曖昧にしやすい
+
+rejected_now:
+  - name: 自動最適化提案エンジン
+    reason:
+      - 投資/税務/法務の境界を越えやすい
+      - 現設計方針と不整合
+
+decision_summary:
+  - 採用対象は MoneyPlanner のコア価値と共有/連携に直結するものだけに限定する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/0200000000_ARCHITECTURE_INDEX.md
+
+# ARCHITECTURE INDEX
+subfolders:
+  - 010.domain
+  - 020.components
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/0200000001_ARCHITECTURE_OVERVIEW.md
+
+# ARCHITECTURE OVERVIEW
+role:
+  - MoneyPlanner の構造分割と主要責務を定義する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/0200000_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0200001_MONEY_PLANNER_ARCHITECTURE_OVERVIEW.md
+  - 010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+  - 010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
+  - 010.core/0200004_MONEY_PLANNER_SYSTEM_ARCHITECTURE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/020.architecture/0200001_MONEY_PLANNER_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - アーキテクチャレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 資金計画、収入/支出、資産/負債、目的別資金、見直し通知を中心に構成する
+  - LifePlanner、InheritanceSupport、EndOfLifePlanner との連携を持つ
+  - 共通部品は外部正本を参照する前提にする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/010.core/0300002_MODEL_CORE_INDEX.md
+
+# ============================================================
+# MODEL CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300003_MODEL_CORE_OVERVIEW.md
+  - 0300004_MONEY_PLANNER_DOMAIN_MODEL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md
+
+# ============================================================
+# MODEL CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の モデル における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/010.core/0300004_MONEY_PLANNER_DOMAIN_MODEL.md
+
+# ============================================================
+# MONEY PLANNER DOMAIN MODEL
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+entities:
+  - financial_plan
+  - income_item
+  - expense_item
+  - asset_item
+  - liability_item
+  - purpose_fund
+  - event_cost_plan
+  - review_record
+  - financial_note
+  - attached_document
+  - family_share_record
+
+schema_policy:
+  primary_schema: life
+  rules:
+    - MoneyPlanner の業務データは life スキーマに保持する
+    - 資金計画データを他スキーマの正本として扱わない
+    - 外部連携があっても正本境界は life を維持する
+
+model_rules:
+  - financial_plan が中心で、収入/支出・資産/負債・目的別資金がぶら下がる
+  - 将来イベント費用は event_cost_plan で扱う
+  - 家族共有は正本移譲ではなく共有ビューとして扱う
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/010.domain-model/0300100000_DOMAIN_MODEL_INDEX.md
+
+# DOMAIN MODEL INDEX
+documents:
+  - 0300100001_MONEY_PLANNER_DOMAIN_ENTITY_MODEL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/010.domain-model/0300100001_DOMAIN_MODEL_OVERVIEW.md
+
+# DOMAIN MODEL OVERVIEW
+role:
+  - MoneyPlanner の主要 entity を定義する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/010.domain-model/0300100001_MONEY_PLANNER_DOMAIN_ENTITY_MODEL.md
+
+# ============================================================
+# MONEY PLANNER DOMAIN ENTITY MODEL
+# ============================================================
+
+entities:
+  - income_item
+  - expense_item
+  - asset_item
+  - liability_item
+  - saving_goal
+  - event_budget
+  - financial_snapshot
+  - scenario
+  - shared_member
+  - memo_item
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/010.domain-model/0300100002_MONEY_PLANNER_CROSS_DOMAIN_ENUM_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER CROSS DOMAIN ENUM CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 030.model
+subdomain: domain-model
+
+purpose:
+  - 画面/API/DB logical 設計で使う enum を横断統合する
+  - 同義語やブレを防ぐ
+  - 後続の SQL / implementation の土台にする
+
+enum_catalog:
+
+  frequency:
+    values:
+      - daily
+      - weekly
+      - monthly
+      - yearly
+      - one_time
+
+  necessity_level:
+    values:
+      - essential
+      - normal
+      - optional
+
+  asset_type:
+    values:
+      - cash
+      - bank_deposit
+      - securities
+      - insurance
+      - real_estate
+      - other
+
+  liability_type:
+    values:
+      - mortgage
+      - loan
+      - credit_card
+      - other
+
+  valuation_basis:
+    values:
+      - input_manual
+      - latest_known
+      - estimate
+
+  liquidity_level:
+    values:
+      - high
+      - medium
+      - low
+
+  ownership_scope:
+    values:
+      - individual
+      - couple
+      - family
+
+  visibility_scope:
+    values:
+      - private
+      - shared
+      - selected_only
+
+  member_visibility_scope:
+    values:
+      - all
+      - shared_only
+      - selected_only
+
+  saving_goal_status:
+    values:
+      - active
+      - paused
+      - completed
+      - archived
+
+  event_priority:
+    values:
+      - high
+      - medium
+      - low
+
+  scenario_type:
+    values:
+      - default
+      - saving
+      - expense_increase
+      - income_decrease
+      - event_forward
+
+  shared_member_role:
+    values:
+      - owner
+      - partner_editor
+      - viewer
+
+  shared_member_status:
+    values:
+      - pending
+      - active
+      - removed
+
+  memo_type:
+    values:
+      - general
+      - insurance
+      - pension
+      - tax_estimate
+      - handover
+
+  import_source_system:
+    values:
+      - manual
+      - life_planner
+      - end_of_life_planner
+      - inheritance_support
+
+  import_status:
+    values:
+      - received
+      - draft_candidate
+      - reviewed
+      - confirmed
+      - rejected
+      - archived
+
+  candidate_type:
+    values:
+      - event_budget
+      - saving_goal
+      - memo
+      - asset
+      - liability
+
+  dashboard_summary_scope:
+    values:
+      - owner
+      - shared
+
+  alert_type:
+    values:
+      - shortage_risk
+      - duplicate_candidate
+      - review_pending
+      - goal_delay
+      - sharing_visibility_warning
+
+  alert_severity:
+    values:
+      - high
+      - medium
+      - low
+
+  linkage_target_system:
+    values:
+      - life_planner
+      - end_of_life_planner
+      - inheritance_support
+
+  linkage_share_scope:
+    values:
+      - none
+      - financial_plan_summary
+      - asset_liability_summary
+      - asset_summary
+      - inheritance_financial_candidate
+      - end_of_life_cost_candidate
+      - life_event_financial_candidate
+
+enum_rules:
+  - 表記は snake_case で統一
+  - API / screen / db logical で同じ意味の enum は同じ値を使う
+  - 画面表示文言は翻訳層で別管理する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/020.logical-data/0300200000_LOGICAL_DATA_INDEX.md
+
+# LOGICAL DATA INDEX
+documents:
+  - 0300200001_MONEY_PLANNER_LOGICAL_DATA_OVERVIEW.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/020.logical-data/0300200001_LOGICAL_DATA_OVERVIEW.md
+
+# LOGICAL DATA OVERVIEW
+role:
+  - DB exact table 定義の前段となる論理データ整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/020.logical-data/0300200001_MONEY_PLANNER_LOGICAL_DATA_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER LOGICAL DATA OVERVIEW
+# ============================================================
+
+logical_groups:
+  - master_like:
+      - scenario
+      - shared_member
+  - transaction_like:
+      - income_item
+      - expense_item
+      - asset_item
+      - liability_item
+      - saving_goal
+      - event_budget
+      - memo_item
+  - snapshot_like:
+      - financial_snapshot
+
+policies:
+  - amount は decimal string 前提
+  - currency_code は全金額項目で必須
+  - deleted_at による論理削除前提
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/0300000000_MODEL_INDEX.md
+
+# MODEL INDEX
+subfolders:
+  - 010.domain-model
+  - 020.logical-data
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/0300000001_MODEL_OVERVIEW.md
+
+# MODEL OVERVIEW
+role:
+  - ドメインモデルと論理データ構成の整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/0300000_MODEL_INDEX.md
+
+# ============================================================
+# MODEL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300001_MONEY_PLANNER_MODEL_OVERVIEW.md
+  - 010.core/0300002_MODEL_CORE_INDEX.md
+  - 010.core/0300003_MODEL_CORE_OVERVIEW.md
+  - 010.core/0300004_MONEY_PLANNER_DOMAIN_MODEL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/030.model/0300001_MONEY_PLANNER_MODEL_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER MODEL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - モデルレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 資金計画の基本エンティティを定義する
+  - 収入/支出、資産/負債、目的別資金、将来費用、見直し記録の関係を固定する
+  - 家族共有は閲覧中心で扱う
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md
+
+# ============================================================
+# RUNTIME CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 040.runtime
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0400003_RUNTIME_CORE_OVERVIEW.md
+  - 0400004_MONEY_PLANNER_RUNTIME_BEHAVIOR.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md
+
+# ============================================================
+# RUNTIME CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 040.runtime
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の ランタイム における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/010.core/0400004_MONEY_PLANNER_RUNTIME_BEHAVIOR.md
+
+# ============================================================
+# MONEY PLANNER RUNTIME BEHAVIOR
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 040.runtime
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+runtime_events:
+  - create_financial_plan
+  - add_income_item
+  - add_expense_item
+  - add_asset_item
+  - add_liability_item
+  - add_purpose_fund
+  - register_review_cycle
+  - generate_plan_summary
+  - launch_ai_support
+  - trigger_review_notification
+
+runtime_rules:
+  - 通知は in_app を基本とする
+  - 投資や税務の自動結論は出さない
+  - AI は整理支援時のみ動作する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/010.user-runtime/0400100000_USER_RUNTIME_INDEX.md
+
+# USER RUNTIME INDEX
+documents:
+  - 0400100001_MONEY_PLANNER_USER_RUNTIME.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/010.user-runtime/0400100001_MONEY_PLANNER_USER_RUNTIME.md
+
+# ============================================================
+# MONEY PLANNER USER RUNTIME
+# ============================================================
+
+roles:
+  owner:
+    - 全件管理
+  partner_editor:
+    - 共有範囲内編集
+  viewer:
+    - 閲覧のみ
+
+runtime_focus:
+  - スマホ中心でも PC/タブレットで同機能利用可能
+  - 家族共有の更新反映
+  - 見通し更新は明示保存基準
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/010.user-runtime/0400100001_USER_RUNTIME_OVERVIEW.md
+
+# USER RUNTIME OVERVIEW
+role:
+  - オーナー/共同編集者/閲覧者の基本利用動線整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/0400000000_RUNTIME_INDEX.md
+
+# RUNTIME INDEX
+subfolders:
+  - 010.user-runtime
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/0400000001_RUNTIME_OVERVIEW.md
+
+# RUNTIME OVERVIEW
+role:
+  - 利用時の基本動作と実行前提の整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/0400000_RUNTIME_INDEX.md
+
+# ============================================================
+# RUNTIME INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0400001_MONEY_PLANNER_RUNTIME_OVERVIEW.md
+  - 010.core/0400002_RUNTIME_CORE_INDEX.md
+  - 010.core/0400003_RUNTIME_CORE_OVERVIEW.md
+  - 010.core/0400004_MONEY_PLANNER_RUNTIME_BEHAVIOR.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/040.runtime/0400001_MONEY_PLANNER_RUNTIME_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER RUNTIME OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - ランタイムレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 日常利用時の動作原則を定義する
+  - 計画更新、見直し通知、共有出力の実行順を整理する
+  - AI 支援の発火点を固定する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.core/0500002_FLOW_CORE_INDEX.md
+
+# ============================================================
+# FLOW CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 050.flow
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0500003_FLOW_CORE_OVERVIEW.md
+  - 0500004_MONEY_PLANNER_USER_FLOW.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md
+
+# ============================================================
+# FLOW CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 050.flow
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の フロー における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.core/0500004_MONEY_PLANNER_USER_FLOW.md
+
+# ============================================================
+# MONEY PLANNER USER FLOW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 050.flow
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+primary_flows:
+  - plan_intake -> income_expense_input -> asset_liability_input -> purpose_fund_setup -> review_cycle_register
+  - event_cost_input -> gap_check -> adjustment_note -> summary_output
+  - financial_plan_review -> family_share_judgment -> explicit_summary_share
+
+flow_rules:
+  - 最初に financial_plan を作る
+  - 次に収入/支出、資産/負債、目的別資金を埋める
+  - 見直しや共有は最後に明示操作で行う
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.user-flow/0500100000_USER_FLOW_INDEX.md
+
+# USER FLOW INDEX
+documents:
+  - 0500100001_MONEY_PLANNER_USER_FLOW.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.user-flow/0500100001_MONEY_PLANNER_USER_FLOW.md
+
+# ============================================================
+# MONEY PLANNER USER FLOW
+# ============================================================
+
+major_flows:
+  - 初期設定
+  - 収入/支出登録
+  - 資産/負債登録
+  - 貯蓄目標設定
+  - イベント費用設定
+  - 月次/年次見通し確認
+  - シナリオ比較
+  - 家族共有設定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.user-flow/0500100001_USER_FLOW_OVERVIEW.md
+
+# USER FLOW OVERVIEW
+role:
+  - 初回導入から見通し確認までの流れを定義
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.user-flow/0500100002_MONEY_PLANNER_OWNER_MONTHLY_REVIEW_FLOW.md
+
+# ============================================================
+# MONEY PLANNER OWNER MONTHLY REVIEW FLOW
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 050.flow
+subdomain: user-flow
+
+flow_name:
+  en: Owner Monthly Review Flow
+  ja: owner 月次レビュー flow
+
+purpose:
+  - 月単位で資金計画の実態を確認する
+  - 収入/支出/資産/負債の更新漏れを防ぐ
+  - 目標積立とイベント費用を見直す
+  - 次月の資金不足リスクを確認する
+
+actors:
+  - owner
+
+preconditions:
+  - 対象月が確定している
+  - current plan が存在する
+
+main_flow:
+  - step: 01
+    action: dashboard を開く
+    check:
+      - total_income
+      - total_expense
+      - net_worth
+      - active_goal_count
+      - upcoming_count
+
+  - step: 02
+    action: monthly_projection を確認する
+    check:
+      - expected_balance
+      - shortage_flag
+      - high_priority_event_amount
+
+  - step: 03
+    action: income_list / expense_list を確認する
+    check:
+      - active_flag の妥当性
+      - 月内変更の反映漏れ
+      - 不要項目の残存
+
+  - step: 04
+    action: asset_list / liability_list を確認する
+    check:
+      - 金額更新
+      - private / shared の見直し
+      - 大きな変動の確認
+
+  - step: 05
+    action: saving_goal / event_budget を確認する
+    check:
+      - target_amount の妥当性
+      - current_saved_amount の更新
+      - planned_date の見直し
+
+  - step: 06
+    action: receive candidate review を確認する
+    check:
+      - 新規候補の有無
+      - duplicate の有無
+      - confirm/reject 要否
+
+  - step: 07
+    action: 必要ならメモ更新
+    check:
+      - insurance
+      - pension
+      - tax_estimate
+      - handover
+
+  - step: 08
+    action: monthly review checkpoint を保存
+    result:
+      - history_snapshot 候補生成
+      - audit_event 候補生成
+
+monthly_review_outputs:
+  - updated monthly state
+  - shortage risk acknowledgment
+  - confirmed candidate imports
+  - monthly checkpoint
+
+warning_points:
+  - shared summary と owner summary を混同しない
+  - imported candidate を未確認のまま shared 化しない
+  - 大型イベント費用の見落としを避ける
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/010.user-flow/0500100003_MONEY_PLANNER_OWNER_YEARLY_REVIEW_FLOW.md
+
+# ============================================================
+# MONEY PLANNER OWNER YEARLY REVIEW FLOW
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 050.flow
+subdomain: user-flow
+
+flow_name:
+  en: Owner Yearly Review Flow
+  ja: owner 年次レビュー flow
+
+purpose:
+  - 年単位で人生設計と資金計画の整合を取る
+  - 大型イベント、老後、教育、住宅などの再評価を行う
+  - シナリオ比較と家族共有範囲を見直す
+
+actors:
+  - owner
+
+preconditions:
+  - 対象年が確定している
+  - yearly_projection を参照できる
+
+main_flow:
+  - step: 01
+    action: yearly_projection を確認する
+    check:
+      - expected_income
+      - expected_expense
+      - expected_balance
+      - event_impact_amount
+      - goal_target_total
+      - shortage_months_count
+
+  - step: 02
+    action: scenario_compare を確認する
+    check:
+      - default
+      - saving
+      - expense_increase
+      - income_decrease
+      - event_forward
+
+  - step: 03
+    action: LifePlanner 連携イベントを見直す
+    check:
+      - 年内イベント
+      - 数年先イベント
+      - 金額未設定イベント
+
+  - step: 04
+    action: EndOfLifePlanner / InheritanceSupport 由来候補を見直す
+    check:
+      - 終活費用候補
+      - 相続準備費用候補
+      - private 初期値の妥当性
+
+  - step: 05
+    action: saving_goal を再評価する
+    check:
+      - 目標額
+      - 期限
+      - 達成可能性
+      - shared 可否
+
+  - step: 06
+    action: shared_member と visibility を見直す
+    check:
+      - viewer のままでよいか
+      - partner_editor の範囲
+      - private / shared / selected_only の妥当性
+
+  - step: 07
+    action: yearly review checkpoint を保存
+    result:
+      - yearly history_snapshot 候補生成
+      - audit_event 候補生成
+
+yearly_review_outputs:
+  - annual revised plan
+  - revised goals
+  - revised event budgets
+  - revised sharing policy
+  - yearly checkpoint
+
+warning_points:
+  - 税務/法務/投資判断に踏み込まない
+  - shared 化は必要最小限にとどめる
+  - candidate を確定値として扱う前に owner review を完了する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/0500000000_FLOW_INDEX.md
+
+# FLOW INDEX
+subfolders:
+  - 010.user-flow
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/0500000001_FLOW_OVERVIEW.md
+
+# FLOW OVERVIEW
+role:
+  - 主要ユーザーフローの整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/0500000_FLOW_INDEX.md
+
+# ============================================================
+# FLOW INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 050.flow
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0500001_MONEY_PLANNER_FLOW_OVERVIEW.md
+  - 010.core/0500002_FLOW_CORE_INDEX.md
+  - 010.core/0500003_FLOW_CORE_OVERVIEW.md
+  - 010.core/0500004_MONEY_PLANNER_USER_FLOW.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/050.flow/0500001_MONEY_PLANNER_FLOW_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER FLOW OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 050.flow
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - フローレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 主要利用導線を固定する
+  - 計画開始から見直しまでの流れを明文化する
+  - 関連アプリ連携条件を整理する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md
+
+# ============================================================
+# INTEGRATION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0600003_INTEGRATION_CORE_OVERVIEW.md
+  - 0600004_MONEY_PLANNER_INTEGRATION_BOUNDARY.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md
+
+# ============================================================
+# INTEGRATION CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の 連携 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.core/0600004_MONEY_PLANNER_INTEGRATION_BOUNDARY.md
+
+# ============================================================
+# MONEY PLANNER INTEGRATION BOUNDARY
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+integration_targets:
+  - LifePlanner
+  - EndOfLifePlanner
+  - InheritanceSupport
+  - PersonalLegalSupport
+  - PocketSecretary
+
+boundary_rules:
+  - LifeOS 内は整理補助連携
+  - 専門判断は専門家または専門系システムで扱う
+  - BusinessOS/ERP の正式業務正本とは分離する
+  - 本アプリから外部へ自動送信しない
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100000_LIFEOS_LINKAGE_INDEX.md
+
+# LIFEOS LINKAGE INDEX
+documents:
+  - 0600100001_MONEY_PLANNER_LIFEOS_LINKAGE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100001_LIFEOS_LINKAGE_OVERVIEW.md
+
+# LIFEOS LINKAGE OVERVIEW
+role:
+  - 共有対象と共有禁止対象を定義
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100001_MONEY_PLANNER_LIFEOS_LINKAGE.md
+
+# ============================================================
+# MONEY PLANNER LIFEOS LINKAGE
+# ============================================================
+
+linkages:
+  - LifePlanner:
+      - 資金計画共有
+  - EndOfLifePlanner:
+      - 相続準備向け基礎資産情報共有
+  - InheritanceSupport:
+      - 資産概要共有
+
+rules:
+  - 明示共有のみ
+  - 必要最小限データのみ
+  - 自動判断を外部へ渡さない
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100002_MONEY_PLANNER_LIFEOS_LINKAGE_PAYLOAD_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER LIFEOS LINKAGE PAYLOAD CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+
+linkage_policy:
+  - 明示共有のみ
+  - 必要最小限データのみ
+  - 投資助言/税務判断/法務判断は共有しない
+  - 共有記録を残す
+
+payloads:
+  to_lifeplanner:
+    purpose:
+      - 人生設計へ資金計画の要約共有
+    request:
+      target_system: "life_planner"
+      share_scope: "financial_plan_summary"
+      payload:
+        plan_id: "uuid"
+        base_currency: "JPY"
+        monthly_projection:
+          expected_income: "300000.00"
+          expected_expense: "220000.00"
+          expected_balance: "80000.00"
+        yearly_projection:
+          expected_income: "3600000.00"
+          expected_expense: "2900000.00"
+          expected_balance: "700000.00"
+        saving_goals:
+          - goal_name: "教育資金"
+            target_amount: "1000000.00"
+            currency_code: "JPY"
+            target_date: "2029-03-31"
+        event_budgets:
+          - event_name: "住宅購入初期費用"
+            target_amount: "300000.00"
+            currency_code: "JPY"
+            planned_date: "2027-04-01"
+    response:
+      success: true
+      data:
+        target_system: "life_planner"
+        shared_at: "2026-04-14T10:00:00+09:00"
+
+  to_end_of_life_planner:
+    purpose:
+      - 終活準備へ基礎資産概要共有
+    request:
+      target_system: "end_of_life_planner"
+      share_scope: "asset_liability_summary"
+      payload:
+        plan_id: "uuid"
+        base_currency: "JPY"
+        total_assets: "5200000.00"
+        total_liabilities: "1800000.00"
+        net_worth: "3400000.00"
+        asset_summaries:
+          - asset_type: "bank_deposit"
+            amount: "1200000.00"
+            currency_code: "JPY"
+          - asset_type: "real_estate"
+            amount: "3000000.00"
+            currency_code: "JPY"
+        liability_summaries:
+          - liability_type: "mortgage"
+            balance_amount: "1800000.00"
+            currency_code: "JPY"
+    response:
+      success: true
+      data:
+        target_system: "end_of_life_planner"
+        shared_at: "2026-04-14T10:00:00+09:00"
+
+  to_inheritance_support:
+    purpose:
+      - 相続準備へ資産概要共有
+    request:
+      target_system: "inheritance_support"
+      share_scope: "asset_summary"
+      payload:
+        plan_id: "uuid"
+        base_currency: "JPY"
+        total_assets: "5200000.00"
+        total_liabilities: "1800000.00"
+        net_worth: "3400000.00"
+        asset_summaries:
+          - asset_type: "bank_deposit"
+            amount: "1200000.00"
+            currency_code: "JPY"
+          - asset_type: "real_estate"
+            amount: "3000000.00"
+            currency_code: "JPY"
+        memo:
+          - title: "引継ぎメモ"
+            body: "不動産の詳細は別管理"
+    response:
+      success: true
+      data:
+        target_system: "inheritance_support"
+        shared_at: "2026-04-14T10:00:00+09:00"
+
+common_audit_fields:
+  - source_app: MoneyPlanner
+  - share_executed_by: owner_user_id
+  - share_scope
+  - shared_at
+  - target_system
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100003_MONEY_PLANNER_LIFEPLANNER_RECEIVE_PAYLOAD_DESIGN.md
+
+# ============================================================
+# MONEY PLANNER LIFePLANNER RECEIVE PAYLOAD DESIGN
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 060.integration
+source_system: LifePlanner
+direction: receive_to_money_planner
+
+purpose:
+  - LifePlanner 上のライフイベントを MoneyPlanner の資金計画へ取り込む
+  - 長期予定を event_budget / saving_goal / memo に変換できるようにする
+  - 人生設計と資金計画を結びつける
+
+receive_policy:
+  - 明示受入のみ
+  - 自動確定登録はしない
+  - 受入後は下書き化または候補化できる
+  - 金額未設定イベントも受け入れ可能
+  - 法務/税務/投資判断は受け入れない
+
+payload_shape:
+  request:
+    source_system: "life_planner"
+    share_scope: "life_event_financial_candidate"
+    payload:
+      life_plan_id: "uuid"
+      base_currency: "JPY"
+      family_members:
+        - member_ref: "self"
+          display_name: "本人"
+        - member_ref: "partner"
+          display_name: "配偶者"
+      life_events:
+        - life_event_id: "uuid"
+          event_name: "住宅購入"
+          planned_date: "2028-04-01"
+          related_member_ref: "self"
+          financial_importance: "high"
+          estimated_amount: "300000.00"
+          currency_code: "JPY"
+          note: "頭金以外は別検討"
+        - life_event_id: "uuid"
+          event_name: "子ども進学"
+          planned_date: "2030-04-01"
+          related_member_ref: "child_01"
+          financial_importance: "high"
+          estimated_amount: null
+          currency_code: "JPY"
+          note: null
+
+mapping_policy:
+  life_events_to_event_budget:
+    conditions:
+      - estimated_amount がある
+      - event_name がある
+    target:
+      - mp_event_budget
+    mapped_fields:
+      - event_name -> event_name
+      - planned_date -> planned_date
+      - estimated_amount -> target_amount
+      - currency_code -> currency_code
+      - related_member_ref -> related_family_member
+      - note -> memo
+
+  life_events_to_saving_goal_candidate:
+    conditions:
+      - financial_importance = high
+      - planned_date が将来日付
+    target:
+      - mp_saving_goal candidate
+    mapped_fields:
+      - event_name -> goal_name candidate
+      - estimated_amount -> target_amount candidate
+      - planned_date -> target_date candidate
+
+  life_events_to_memo:
+    conditions:
+      - estimated_amount が未設定
+      - note が存在
+    target:
+      - mp_memo_item
+    mapped_fields:
+      - event_name -> title
+      - note -> body
+
+receive_validation:
+  required:
+    - source_system
+    - share_scope
+    - payload.life_plan_id
+    - payload.base_currency
+    - payload.life_events
+  nullable_allowed:
+    - estimated_amount
+    - note
+    - related_member_ref
+  rejected_cases:
+    - source_system 不一致
+    - share_scope 不一致
+    - event_name 空
+    - currency_code 不正
+    - estimated_amount が負数
+
+receive_result_shape:
+  success_response:
+    success: true
+    data:
+      imported_event_budget_candidates: 1
+      imported_saving_goal_candidates: 2
+      imported_memo_candidates: 1
+      received_at: "2026-04-14T20:00:00+09:00"
+
+notes:
+  - 受入直後は confirmed ではなく draft_candidate 扱いが望ましい
+  - 家族共有反映は owner の確認後
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100004_MONEY_PLANNER_END_OF_LIFE_PLANNER_RECEIVE_PAYLOAD_DESIGN.md
+
+# ============================================================
+# MONEY PLANNER END OF LIFE PLANNER RECEIVE PAYLOAD DESIGN
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 060.integration
+source_system: EndOfLifePlanner
+direction: receive_to_money_planner
+
+purpose:
+  - 終活イベントに伴う費用候補を MoneyPlanner に取り込む
+  - 医療/介護/葬儀/引継ぎ関連の資金準備を可視化する
+  - 終活設計と資金確保をつなぐ
+
+receive_policy:
+  - 明示受入のみ
+  - 終活計画の意思決定そのものは行わない
+  - 医療判断は受け入れない
+  - 法的効力の判断は受け入れない
+  - 費用候補と準備メモのみを対象にする
+
+payload_shape:
+  request:
+    source_system: "end_of_life_planner"
+    share_scope: "end_of_life_cost_candidate"
+    payload:
+      end_of_life_plan_id: "uuid"
+      base_currency: "JPY"
+      cost_candidates:
+        - candidate_id: "uuid"
+          category: "funeral"
+          title: "葬儀費用候補"
+          planned_date: null
+          estimated_amount: "1500000.00"
+          currency_code: "JPY"
+          priority: "high"
+          note: "家族と要相談"
+        - candidate_id: "uuid"
+          category: "care"
+          title: "介護準備費用候補"
+          planned_date: null
+          estimated_amount: "800000.00"
+          currency_code: "JPY"
+          priority: "medium"
+          note: null
+      handover_notes:
+        - note_id: "uuid"
+          title: "口座一覧の引継ぎ準備"
+          body: "整理状況は別紙参照"
+
+mapping_policy:
+  cost_candidates_to_event_budget:
+    target:
+      - mp_event_budget
+    mapped_fields:
+      - title -> event_name
+      - planned_date -> planned_date
+      - estimated_amount -> target_amount
+      - currency_code -> currency_code
+      - priority -> priority
+      - note -> memo
+
+  cost_candidates_to_saving_goal_candidate:
+    conditions:
+      - priority = high
+      - estimated_amount が存在
+    target:
+      - mp_saving_goal candidate
+    mapped_fields:
+      - title -> goal_name candidate
+      - estimated_amount -> target_amount candidate
+
+  handover_notes_to_memo:
+    target:
+      - mp_memo_item
+    mapped_fields:
+      - title -> title
+      - body -> body
+    memo_type:
+      - handover
+
+receive_validation:
+  required:
+    - source_system
+    - share_scope
+    - payload.end_of_life_plan_id
+    - payload.base_currency
+  nullable_allowed:
+    - planned_date
+    - note
+  rejected_cases:
+    - estimated_amount が負数
+    - currency_code 不正
+    - title 空
+
+receive_result_shape:
+  success_response:
+    success: true
+    data:
+      imported_event_budget_candidates: 2
+      imported_saving_goal_candidates: 1
+      imported_handover_memos: 1
+      received_at: "2026-04-14T20:00:00+09:00"
+
+notes:
+  - 終活費用は sensitive なため default_visibility は private 推奨
+  - owner 確認後に shared へ変更可能
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100005_MONEY_PLANNER_INHERITANCE_SUPPORT_RECEIVE_PAYLOAD_DESIGN.md
+
+# ============================================================
+# MONEY PLANNER INHERITANCE SUPPORT RECEIVE PAYLOAD DESIGN
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 060.integration
+source_system: InheritanceSupport
+direction: receive_to_money_planner
+
+purpose:
+  - 相続/贈与準備に伴う将来イベントや準備費用を MoneyPlanner に反映する
+  - 相続手続きそのものではなく、資金計画上の候補を受け取る
+  - 法務判断ではなく費用候補・時期候補・補足メモを扱う
+
+receive_policy:
+  - 明示受入のみ
+  - 相続割合の確定判断は受け入れない
+  - 税務確定値は受け入れない
+  - 手続き費用候補とイベント候補のみ扱う
+  - 不確実情報は memo として保持可能
+
+payload_shape:
+  request:
+    source_system: "inheritance_support"
+    share_scope: "inheritance_financial_candidate"
+    payload:
+      inheritance_case_id: "uuid"
+      base_currency: "JPY"
+      event_candidates:
+        - candidate_id: "uuid"
+          title: "相続手続関連費用"
+          planned_date: "2032-05-01"
+          estimated_amount: "500000.00"
+          currency_code: "JPY"
+          priority: "high"
+          note: "専門家費用含む見込み"
+        - candidate_id: "uuid"
+          title: "生前贈与準備費用"
+          planned_date: null
+          estimated_amount: "100000.00"
+          currency_code: "JPY"
+          priority: "medium"
+          note: null
+      informational_notes:
+        - note_id: "uuid"
+          title: "不動産評価は未確定"
+          body: "金額は別途再確認が必要"
+
+mapping_policy:
+  event_candidates_to_event_budget:
+    target:
+      - mp_event_budget
+    mapped_fields:
+      - title -> event_name
+      - planned_date -> planned_date
+      - estimated_amount -> target_amount
+      - currency_code -> currency_code
+      - priority -> priority
+      - note -> memo
+
+  event_candidates_to_saving_goal_candidate:
+    conditions:
+      - estimated_amount が存在
+      - priority in (high, medium)
+    target:
+      - mp_saving_goal candidate
+    mapped_fields:
+      - title -> goal_name candidate
+      - estimated_amount -> target_amount candidate
+      - planned_date -> target_date candidate
+
+  informational_notes_to_memo:
+    target:
+      - mp_memo_item
+    memo_type:
+      - general
+    mapped_fields:
+      - title -> title
+      - body -> body
+
+receive_validation:
+  required:
+    - source_system
+    - share_scope
+    - payload.inheritance_case_id
+    - payload.base_currency
+  rejected_cases:
+    - source_system 不一致
+    - share_scope 不一致
+    - estimated_amount が負数
+    - title 空
+    - currency_code 不正
+
+receive_result_shape:
+  success_response:
+    success: true
+    data:
+      imported_event_budget_candidates: 2
+      imported_saving_goal_candidates: 2
+      imported_notes: 1
+      received_at: "2026-04-14T20:00:00+09:00"
+
+notes:
+  - default_visibility は private 推奨
+  - 共有前に owner review を必須とする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100006_MONEY_PLANNER_CROSS_APP_RECEIVE_RULE_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER CROSS APP RECEIVE RULE CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 060.integration
+
+receive_sources:
+  - LifePlanner
+  - EndOfLifePlanner
+  - InheritanceSupport
+
+common_receive_rules:
+  - 受入は owner 明示操作のみ
+  - 自動作成ではなく candidate / draft 化を基本とする
+  - source_system と share_scope を必須とする
+  - base_currency を必須とする
+  - private 初期値を許容する
+  - 受入結果は audit_event 候補に記録する
+  - 外部アプリの判断を MoneyPlanner の確定値として扱わない
+
+canonical_target_mapping:
+  event_like_information:
+    target:
+      - mp_event_budget candidate
+  target_saving_like_information:
+    target:
+      - mp_saving_goal candidate
+  note_like_information:
+    target:
+      - mp_memo_item
+  summary_like_information:
+    target:
+      - dashboard helper summary candidate
+    note:
+      - 保存必須ではない
+
+visibility_policy_after_receive:
+  default:
+    - private
+  owner_can_change_to_shared:
+    - yes
+  partner_editor_can_change_visibility:
+    - no
+  viewer_can_view_received_private:
+    - no
+
+conflict_resolution:
+  - 同名イベントがあっても自動上書きしない
+  - 既存候補との重複は duplicate_candidate_flag で扱う
+  - 金額未設定は memo 化または incomplete_candidate 化する
+
+rejected_information_examples:
+  - 投資助言
+  - 税額確定
+  - 法務結論
+  - 医療判断
+  - 相続割合確定結論
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100007_MONEY_PLANNER_RECEIVE_CANDIDATE_STATUS_POLICY.md
+
+# ============================================================
+# MONEY PLANNER RECEIVE CANDIDATE STATUS POLICY
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 060.integration
+
+purpose:
+  - 他 LifeOS アプリから受け取った候補情報の状態遷移を固定する
+  - 自動確定を避け、owner review を前提にする
+  - 重複・却下・採用の区別を明確にする
+
+status_definitions:
+  received:
+    meaning:
+      - 受信完了直後
+      - 未レビュー
+  draft_candidate:
+    meaning:
+      - MoneyPlanner 内の候補として作成済み
+      - まだ確定保存ではない
+  reviewed:
+    meaning:
+      - owner が確認済み
+      - 採用可否は未最終
+  confirmed:
+    meaning:
+      - MoneyPlanner 本体データへ正式反映済み
+  rejected:
+    meaning:
+      - 受入不採用
+  archived:
+    meaning:
+      - 履歴保持のみ
+      - 画面の通常候補一覧からは外す
+
+state_transitions:
+  - received -> draft_candidate
+  - draft_candidate -> reviewed
+  - reviewed -> confirmed
+  - reviewed -> rejected
+  - confirmed -> archived
+  - rejected -> archived
+
+transition_rules:
+  - received から confirmed へ直接遷移しない
+  - partner_editor は confirmed へ遷移させられない
+  - viewer は状態変更不可
+  - duplicate_candidate_flag = true の場合は reviewed を経由必須
+  - rejected 後の再採用は新 candidate として扱う
+
+owner_review_requirements:
+  - source_system を確認する
+  - 金額妥当性を確認する
+  - visibility 初期値を確認する
+  - duplicate 判定結果を確認する
+  - shared 化するか private のままにするか決める
+
+mapping_after_confirmed:
+  event_budget:
+    target_table:
+      - life.mp_event_budget
+  saving_goal:
+    target_table:
+      - life.mp_saving_goal
+  memo:
+    target_table:
+      - life.mp_memo_item
+  asset:
+    target_table:
+      - life.mp_asset_item
+  liability:
+    target_table:
+      - life.mp_liability_item
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/010.lifeos-linkage/0600100008_MONEY_PLANNER_DUPLICATE_CANDIDATE_RULE_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER DUPLICATE CANDIDATE RULE CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 060.integration
+
+purpose:
+  - 他アプリ受入時の重複候補判定ルールを固定する
+  - 自動上書きを禁止し、候補マージ判断を owner に委ねる
+
+duplicate_detection_policy:
+  - 完全一致のみで自動マージしない
+  - 一定条件一致で duplicate_candidate_flag を立てる
+  - duplicate は reference object を保持する
+  - 同名でも別日付・別金額なら別候補を優先する
+
+candidate_types:
+
+  event_budget:
+    strong_match_conditions:
+      - event_name 一致
+      - planned_date 一致
+      - currency_code 一致
+      - target_amount 一致
+    soft_match_conditions:
+      - event_name 一致
+      - planned_date が近接
+      - currency_code 一致
+    result:
+      - strong_match なら duplicate_candidate_flag = true
+      - soft_match なら review_required_flag = true
+
+  saving_goal:
+    strong_match_conditions:
+      - goal_name 一致
+      - target_date 一致
+      - target_amount 一致
+      - currency_code 一致
+    soft_match_conditions:
+      - goal_name 類似
+      - target_date 近接
+    result:
+      - strong_match なら duplicate_candidate_flag = true
+      - soft_match なら review_required_flag = true
+
+  memo:
+    strong_match_conditions:
+      - title 一致
+      - body 一致
+    soft_match_conditions:
+      - title 一致
+    result:
+      - strong_match なら duplicate_candidate_flag = true
+      - soft_match なら duplicate_candidate_flag = false だが review_note 推奨
+
+  asset:
+    strong_match_conditions:
+      - asset_type 一致
+      - title 一致
+      - amount 一致
+      - currency_code 一致
+    result:
+      - strong_match なら duplicate_candidate_flag = true
+
+  liability:
+    strong_match_conditions:
+      - liability_type 一致
+      - title 一致
+      - balance_amount 一致
+      - currency_code 一致
+    result:
+      - strong_match なら duplicate_candidate_flag = true
+
+resolution_policy:
+  owner_choices:
+    - existing を採用し candidate を rejected
+    - candidate を採用し existing を残す
+    - candidate を採用し existing を archive 候補にする
+    - note だけ既存へ転記する
+  prohibited:
+    - 自動上書き
+    - partner_editor による最終マージ確定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/0600000000_INTEGRATION_INDEX.md
+
+# INTEGRATION INDEX
+subfolders:
+  - 010.lifeos-linkage
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/0600000001_INTEGRATION_OVERVIEW.md
+
+# INTEGRATION OVERVIEW
+role:
+  - LifeOS 他アプリとの連携境界を整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/0600000_INTEGRATION_INDEX.md
+
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 060.integration
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0600001_MONEY_PLANNER_INTEGRATION_OVERVIEW.md
+  - 010.core/0600002_INTEGRATION_CORE_INDEX.md
+  - 010.core/0600003_INTEGRATION_CORE_OVERVIEW.md
+  - 010.core/0600004_MONEY_PLANNER_INTEGRATION_BOUNDARY.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/060.integration/0600001_MONEY_PLANNER_INTEGRATION_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 060.integration
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 連携レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - LifeOS 内連携と外部境界を定義する
+  - LifePlanner / EndOfLifePlanner / InheritanceSupport との線引きを固定する
+  - 自動送信禁止を明確化する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md
+
+# ============================================================
+# OPERATIONS CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0700003_OPERATIONS_CORE_OVERVIEW.md
+  - 0700004_MONEY_PLANNER_OPERATIONS_GUIDE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md
+
+# ============================================================
+# OPERATIONS CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の 運用 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.core/0700004_MONEY_PLANNER_OPERATIONS_GUIDE.md
+
+# ============================================================
+# MONEY PLANNER OPERATIONS GUIDE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+operations:
+  monthly:
+    - 収入/支出計画見直し
+    - 目的別資金の進捗確認
+  quarterly:
+    - 資産/負債棚卸し
+    - 大型イベント費用見直し
+  yearly:
+    - 全体計画再確認
+    - 老後/住宅/教育計画見直し
+
+ops_rules:
+  - 運用は owner 主体
+  - family は許可範囲閲覧
+  - 数字の更新だけでなく前提条件の見直しも促す
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.plan-operation/0700100000_PLAN_OPERATION_INDEX.md
+
+# PLAN OPERATION INDEX
+documents:
+  - 0700100001_MONEY_PLANNER_OPERATION_MODEL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.plan-operation/0700100001_MONEY_PLANNER_OPERATION_MODEL.md
+
+# ============================================================
+# MONEY PLANNER OPERATION MODEL
+# ============================================================
+
+operation_cycles:
+  - monthly_update
+  - yearly_review
+  - event_budget_review
+  - family_sharing_review
+
+notes:
+  - 資産/負債は定期見直し
+  - 大型イベントは年次見通しへ反映
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.plan-operation/0700100001_PLAN_OPERATION_OVERVIEW.md
+
+# PLAN OPERATION OVERVIEW
+role:
+  - 月次更新・年次見直し・家族共有運用を整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.plan-operation/0700100002_MONEY_PLANNER_AUDIT_HISTORY_CHANGELOG_DESIGN.md
+
+# ============================================================
+# MONEY PLANNER AUDIT / HISTORY / CHANGELOG DESIGN
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 070.operations
+
+design_goal:
+  - 家族共有時の変更追跡を可能にする
+  - 誰が何を変えたかを確認できる
+  - 外部共有の記録を保持する
+  - 実装はまだ行わない
+
+logical_objects:
+  - logical_name: life.mp_audit_event
+    purpose:
+      - 重要操作監査
+    examples:
+      - plan_created
+      - shared_member_invited
+      - shared_member_role_changed
+      - linkage_shared
+      - scenario_compared
+
+  - logical_name: life.mp_change_log
+    purpose:
+      - 項目変更履歴
+    examples:
+      - income amount changed
+      - expense category changed
+      - asset amount changed
+      - goal target changed
+
+  - logical_name: life.mp_history_snapshot
+    purpose:
+      - 月次/年次の履歴保持
+    examples:
+      - monthly summary archived
+      - yearly review snapshot
+
+minimum_fields:
+  audit_event:
+    - audit_event_id
+    - plan_id
+    - actor_user_id
+    - event_type
+    - target_object_type
+    - target_object_id
+    - event_payload_summary
+    - executed_at
+
+  change_log:
+    - change_log_id
+    - plan_id
+    - actor_user_id
+    - target_object_type
+    - target_object_id
+    - field_name
+    - before_value
+    - after_value
+    - changed_at
+
+  history_snapshot:
+    - history_snapshot_id
+    - plan_id
+    - snapshot_type
+    - snapshot_date
+    - snapshot_payload
+    - created_at
+
+recording_policy:
+  - viewer の閲覧は通常 audit 対象外
+  - create/update/delete/share/role_change は audit 対象
+  - 金額変更は change_log 対象
+  - linkage manual share は必ず audit 対象
+  - plan review 完了時は history_snapshot 候補
+
+retention_policy_draft:
+  - audit_event は長期保持
+  - change_log は長期保持
+  - history_snapshot は月次/年次運用で保持
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.plan-operation/0700100003_MONEY_PLANNER_AUDIT_EVENT_CHANGE_LOG_LOGICAL_COLUMN_EXACT.md
+
+# ============================================================
+# MONEY PLANNER AUDIT EVENT / CHANGE LOG LOGICAL COLUMN EXACT
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 070.operations
+schema_name: life
+
+logical_tables:
+
+  life.mp_audit_event:
+    purpose:
+      - 重要操作監査
+    columns:
+      - column_name: audit_event_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: actor_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: actor_role
+        logical_type: enum[owner,partner_editor,viewer,system]
+        nullable: false
+      - column_name: event_type
+        logical_type: enum[
+          plan_created,
+          plan_updated,
+          income_created,
+          income_updated,
+          expense_created,
+          expense_updated,
+          asset_created,
+          asset_updated,
+          liability_created,
+          liability_updated,
+          saving_goal_created,
+          saving_goal_updated,
+          event_budget_created,
+          event_budget_updated,
+          scenario_created,
+          scenario_compared,
+          shared_member_invited,
+          shared_member_role_changed,
+          shared_member_removed,
+          receive_candidate_imported,
+          receive_candidate_reviewed,
+          receive_candidate_confirmed,
+          linkage_shared
+        ]
+        nullable: false
+      - column_name: target_object_type
+        logical_type: string(100)
+        nullable: false
+      - column_name: target_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: event_payload_summary
+        logical_type: json_like_object
+        nullable: false
+      - column_name: source_system
+        logical_type: enum[money_planner,life_planner,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: executed_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+
+  life.mp_change_log:
+    purpose:
+      - 項目変更履歴
+    columns:
+      - column_name: change_log_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: actor_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: target_object_type
+        logical_type: string(100)
+        nullable: false
+      - column_name: target_object_id
+        logical_type: uuid_or_string
+        nullable: false
+      - column_name: field_name
+        logical_type: string(100)
+        nullable: false
+      - column_name: before_value
+        logical_type: string_or_json
+        nullable: true
+      - column_name: after_value
+        logical_type: string_or_json
+        nullable: true
+      - column_name: change_reason
+        logical_type: text
+        nullable: true
+      - column_name: changed_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+
+  life.mp_history_snapshot:
+    purpose:
+      - 月次/年次の履歴スナップショット
+    columns:
+      - column_name: history_snapshot_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: snapshot_type
+        logical_type: enum[monthly,yearly,review_checkpoint]
+        nullable: false
+      - column_name: snapshot_date
+        logical_type: yyyy-mm-dd
+        nullable: false
+      - column_name: snapshot_payload
+        logical_type: json_like_object
+        nullable: false
+      - column_name: created_by_user_id
+        logical_type: uuid
+        nullable: true
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+
+recording_policy:
+  audit_event:
+    record_when:
+      - create
+      - update
+      - delete(logical)
+      - share
+      - role_change
+      - candidate_import
+      - candidate_review
+      - candidate_confirm
+      - compare_execution
+  change_log:
+    record_when:
+      - 金額変更
+      - visibility 変更
+      - status 変更
+      - date 変更
+      - title/name 変更
+  history_snapshot:
+    record_when:
+      - monthly review 完了
+      - yearly review 完了
+      - owner checkpoint 保存
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.plan-operation/0700100004_MONEY_PLANNER_MONTHLY_YEARLY_REVIEW_OPERATION_POLICY.md
+
+# ============================================================
+# MONEY PLANNER MONTHLY / YEARLY REVIEW OPERATION POLICY
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 070.operations
+subdomain: plan-operation
+
+operation_cycles:
+  monthly_review:
+    owner_recommended_frequency:
+      - every_month
+    mandatory_checks:
+      - dashboard summary
+      - monthly projection
+      - active income / expense validity
+      - goal progress
+      - receive candidate review
+    generated_records:
+      - mp_history_snapshot candidate
+      - mp_audit_event candidate
+
+  yearly_review:
+    owner_recommended_frequency:
+      - every_year
+    mandatory_checks:
+      - yearly projection
+      - scenario comparison
+      - major event budgets
+      - LifeOS linkage events
+      - family sharing visibility
+    generated_records:
+      - mp_history_snapshot candidate
+      - mp_audit_event candidate
+
+responsibility_split:
+  owner:
+    - final review decision
+    - final visibility decision
+    - candidate confirm/reject
+  partner_editor:
+    - supporting update
+    - shared item maintenance
+    - owner proposal support
+  viewer:
+    - reference only
+
+checkpoint_policy:
+  monthly:
+    snapshot_type: monthly
+    save_timing:
+      - after owner monthly review completion
+  yearly:
+    snapshot_type: yearly
+    save_timing:
+      - after owner yearly review completion
+
+non_goals:
+  - 自動月次締め処理
+  - 自動年次締め処理
+  - 税務申告確定
+  - 法務判断確定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/010.plan-operation/0700100005_MONEY_PLANNER_TEST_AND_ACCEPTANCE_DESIGN.md
+
+# ============================================================
+# MONEY PLANNER TEST AND ACCEPTANCE DESIGN
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 070.operations
+subdomain: plan-operation
+
+purpose:
+  - 実装開始前に受入観点を固定する
+  - 実装完了判定の軸を先に定義する
+
+acceptance_families:
+
+  screen_acceptance:
+    - dashboard が owner / shared summary を切り替えて表示できる
+    - income / expense / asset / liability / goal / event の CRUD 導線が成立する
+    - family sharing 画面で招待/更新/削除導線が成立する
+    - receive candidate review で confirm / reject / archive が成立する
+    - linkage settings で target system ごとの状態確認ができる
+
+  validation_acceptance:
+    - required field が UI で防止される
+    - enum 不正値が UI / API で弾かれる
+    - amount 非数値 / 負数 / scale over を防止できる
+    - date range 不正を防止できる
+
+  permission_acceptance:
+    - owner は全管理操作可
+    - partner_editor は shared のみ編集可
+    - viewer は read only
+    - manual share は owner のみ
+    - private 項目を partner_editor/viewer が閲覧できない
+
+  sharing_acceptance:
+    - shared summary は shared のみで再計算される
+    - selected_only は対象 member にのみ見える
+    - visible summary が member ごとに妥当
+    - 役割変更で visible summary が更新される
+
+  linkage_acceptance:
+    - LifePlanner 由来 event candidate を受け取れる
+    - EndOfLifePlanner 由来 cost candidate を受け取れる
+    - InheritanceSupport 由来 candidate を受け取れる
+    - private 情報が manual share payload に混入しない
+
+  receive_candidate_acceptance:
+    - received -> draft_candidate -> reviewed -> confirmed の遷移が成立する
+    - duplicate_candidate_flag 時は reviewed 経由必須
+    - confirm 後に mapped_target_object_id が紐づく
+    - rejected / archived が適切に分離される
+
+  audit_acceptance:
+    - create/update/share/confirm/reject に audit_event 候補が残る
+    - 金額変更に change_log 候補が残る
+    - monthly / yearly review で history_snapshot 候補が残る
+
+minimum_test_sets:
+  - owner basic flow
+  - partner_editor restricted flow
+  - viewer read only flow
+  - private/shared/selected_only visibility flow
+  - receive candidate duplicate flow
+  - free / plus_family plan restriction flow
+
+definition_of_ready_for_implementation:
+  - acceptance family が設計上すべて定義済み
+  - blocker 未解消項目がない
+  - 実装開始順が固定済み
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/0700000000_OPERATIONS_INDEX.md
+
+# OPERATIONS INDEX
+subfolders:
+  - 010.plan-operation
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/0700000001_OPERATIONS_OVERVIEW.md
+
+# OPERATIONS OVERVIEW
+role:
+  - 日常運用と更新ルール整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/0700000_OPERATIONS_INDEX.md
+
+# ============================================================
+# OPERATIONS INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 070.operations
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0700001_MONEY_PLANNER_OPERATIONS_OVERVIEW.md
+  - 010.core/0700002_OPERATIONS_CORE_INDEX.md
+  - 010.core/0700003_OPERATIONS_CORE_OVERVIEW.md
+  - 010.core/0700004_MONEY_PLANNER_OPERATIONS_GUIDE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/070.operations/0700001_MONEY_PLANNER_OPERATIONS_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 070.operations
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 運用レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 個人/家族での継続運用ルールを定義する
+  - 見直し、共有、更新タイミングを整理する
+  - 長期運用前提の見直し習慣を含める
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/010.core/0800002_POLICY_CORE_INDEX.md
+
+# ============================================================
+# POLICY CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 080.policy
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0800003_POLICY_CORE_OVERVIEW.md
+  - 0800004_MONEY_PLANNER_POLICY_SET.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md
+
+# ============================================================
+# POLICY CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 080.policy
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の ポリシー における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/010.core/0800004_MONEY_PLANNER_POLICY_SET.md
+
+# ============================================================
+# MONEY PLANNER POLICY SET
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 080.policy
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+policies:
+  planning_boundary:
+    - 投資判断の代替ではない
+    - 税務判断の代替ではない
+    - 最終判断は本人が行う
+  sharing:
+    - 家族共有は許可ベース
+    - 不要な自動共有をしない
+  ai:
+    - 整理支援のみ
+    - 断定表現を禁止する
+  export:
+    - 正式会計帳票の正本にはしない
+    - 正式申告資料の正本にはしない
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/010.pricing/0800100000_PRICING_INDEX.md
+
+# PRICING INDEX
+documents:
+  - 0800100001_MONEY_PLANNER_PRICING_POLICY.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/010.pricing/0800100001_MONEY_PLANNER_PRICING_POLICY.md
+
+# ============================================================
+# MONEY PLANNER PRICING POLICY
+# ============================================================
+
+plans:
+  free:
+    price_jpy_monthly: 0
+    includes:
+      - 基本の収入/支出/資産/負債管理
+      - 貯蓄目標
+      - イベント費用計画
+      - 月次/年次見通し
+  plus_family:
+    price_jpy_monthly: 500
+    includes:
+      - Free 全機能
+      - 家族共有
+      - 共同編集
+      - 複数シナリオ比較
+      - 資金不足警告
+      - LifeOS 連携強化
+
+support_policy:
+  - AIチャットのみ
+  - 人間サポートなし
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/010.pricing/0800100001_PRICING_OVERVIEW.md
+
+# PRICING OVERVIEW
+role:
+  - Free / Plus Family の整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/010.pricing/0800100002_MONEY_PLANNER_PLAN_API_ACCESS_POLICY.md
+
+# ============================================================
+# MONEY PLANNER PLAN API ACCESS POLICY
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 080.policy
+
+plans:
+  free:
+    allowed_api_groups:
+      - dashboard
+      - incomes
+      - expenses
+      - assets
+      - liabilities
+      - saving_goals
+      - event_budgets
+      - projections.monthly
+      - projections.yearly
+      - memos
+    denied_api_groups:
+      - scenarios.compare
+      - sharing.members
+      - alerts
+      - linkages.share
+    notes:
+      - 単一シナリオ前提
+      - 家族共有なし
+
+  plus_family:
+    allowed_api_groups:
+      - dashboard
+      - incomes
+      - expenses
+      - assets
+      - liabilities
+      - saving_goals
+      - event_budgets
+      - projections.monthly
+      - projections.yearly
+      - memos
+      - scenarios
+      - scenarios.compare
+      - sharing.members
+      - alerts
+      - linkages
+      - linkages.share
+    denied_api_groups: []
+    notes:
+      - 家族共有あり
+      - 複数シナリオ比較あり
+      - 手動共有あり
+
+enforcement_policy:
+  - plan 判定は API gateway or application service で行う
+  - denied は 422 系 error code を返す
+  - UI は plan ごとにボタン表示も制御する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/0800000000_POLICY_INDEX.md
+
+# POLICY INDEX
+subfolders:
+  - 010.pricing
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/0800000001_POLICY_OVERVIEW.md
+
+# POLICY OVERVIEW
+role:
+  - 課金・利用・制限の方針整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/0800000_POLICY_INDEX.md
+
+# ============================================================
+# POLICY INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0800001_MONEY_PLANNER_POLICY_OVERVIEW.md
+  - 010.core/0800002_POLICY_CORE_INDEX.md
+  - 010.core/0800003_POLICY_CORE_OVERVIEW.md
+  - 010.core/0800004_MONEY_PLANNER_POLICY_SET.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/080.policy/0800001_MONEY_PLANNER_POLICY_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER POLICY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - ポリシーレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 投資/税務非代替、共有制御、関連アプリ連携のポリシーを定義する
+  - AI 利用時の制限を固定する
+  - 本人意思尊重を軸にした倫理境界を持つ
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md
+
+# ============================================================
+# INTERFACE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 090.interface
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0900003_INTERFACE_CORE_OVERVIEW.md
+  - 0900004_MONEY_PLANNER_INTERFACE_SPEC.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md
+
+# ============================================================
+# INTERFACE CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 090.interface
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の インターフェース における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.core/0900004_MONEY_PLANNER_INTERFACE_SPEC.md
+
+# ============================================================
+# MONEY PLANNER INTERFACE SPEC
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 090.interface
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+screens:
+  - dashboard
+  - financial_plan_list
+  - financial_plan_detail
+  - income_expense_view
+  - asset_liability_view
+  - purpose_fund_view
+  - event_cost_timeline
+  - review_center
+  - family_share_view
+  - settings
+
+ui_rules:
+  - 計画中心ナビゲーション
+  - 将来見通しと現在値を両方見せる
+  - 重要度は色ではなくラベルでも表現
+  - 専門判断代替ではない表示を必要箇所に持つ
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.screen/0900100000_SCREEN_INDEX.md
+
+# SCREEN INDEX
+documents:
+  - 0900100001_MONEY_PLANNER_SCREEN_CATALOG.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.screen/0900100001_MONEY_PLANNER_SCREEN_CATALOG.md
+
+# ============================================================
+# MONEY PLANNER SCREEN CATALOG
+# ============================================================
+
+screens:
+  - dashboard
+  - income_list
+  - expense_list
+  - asset_list
+  - liability_list
+  - saving_goal_list
+  - event_budget_list
+  - monthly_projection
+  - yearly_projection
+  - scenario_compare
+  - family_sharing
+  - memo_list
+  - alerts
+  - linkage_settings
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.screen/0900100001_SCREEN_OVERVIEW.md
+
+# SCREEN OVERVIEW
+role:
+  - 主要画面一覧の正本
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.screen/0900100002_MONEY_PLANNER_SCREEN_INPUT_VALIDATION_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER SCREEN INPUT VALIDATION CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 090.interface
+subdomain: screen
+
+validation_policy:
+  - UI で先に入力不備を防ぐ
+  - API 側 validation と矛盾しない
+  - 多言語表示できるエラーキー設計を前提とする
+  - 金額は文字列入力でも内部では decimal 前提で正規化する
+  - 通貨コードは ISO 通貨コード前提
+  - required / nullable は API canonical に従う
+
+common_rules:
+  amount_string:
+    rules:
+      - 空文字不可
+      - 数値変換可能であること
+      - 0以上
+      - 小数点以下2桁まで
+    ui_error_keys:
+      - validation.amount.required
+      - validation.amount.invalid_format
+      - validation.amount.nonnegative_only
+      - validation.amount.scale_exceeded
+
+  positive_amount_string:
+    rules:
+      - 数値変換可能であること
+      - 0より大きい
+      - 小数点以下2桁まで
+    ui_error_keys:
+      - validation.amount.invalid_format
+      - validation.amount.positive_only
+      - validation.amount.scale_exceeded
+
+  currency_code:
+    rules:
+      - 3文字
+      - 英大文字推奨
+    ui_error_keys:
+      - validation.currency.required
+      - validation.currency.invalid
+
+  yyyy_mm_dd:
+    rules:
+      - yyyy-mm-dd 形式
+      - 実在日付
+    ui_error_keys:
+      - validation.date.required
+      - validation.date.invalid
+
+  yyyy_mm:
+    rules:
+      - yyyy-mm 形式
+      - 実在年月
+    ui_error_keys:
+      - validation.month.required
+      - validation.month.invalid
+
+screen_validations:
+
+  dashboard:
+    filters:
+      base_currency:
+        required: true
+        validation: currency_code
+      display_currency:
+        required: false
+        nullable: false
+        validation: currency_code
+      scenario_id:
+        required: false
+        nullable: false
+      target_month:
+        required: true
+        validation: yyyy_mm
+      target_year:
+        required: true
+        rules:
+          - integer
+          - 1900以上2100以下
+
+  income_form:
+    fields:
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      category:
+        required: true
+        rules:
+          - 1文字以上
+          - 100文字以内
+      amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      frequency:
+        required: true
+        allowed:
+          - daily
+          - weekly
+          - monthly
+          - yearly
+          - one_time
+      start_date:
+        required: true
+        validation: yyyy_mm_dd
+      end_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+        cross_rule:
+          - start_date 以下にできない
+      active_flag:
+        required: true
+        type: boolean
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  expense_form:
+    fields:
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      category:
+        required: true
+        rules:
+          - 1文字以上
+          - 100文字以内
+      amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      frequency:
+        required: true
+        allowed:
+          - daily
+          - weekly
+          - monthly
+          - yearly
+          - one_time
+      necessity_level:
+        required: true
+        allowed:
+          - essential
+          - normal
+          - optional
+      start_date:
+        required: true
+        validation: yyyy_mm_dd
+      end_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+        cross_rule:
+          - start_date 以下にできない
+      active_flag:
+        required: true
+        type: boolean
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  asset_form:
+    fields:
+      asset_type:
+        required: true
+        allowed:
+          - cash
+          - bank_deposit
+          - securities
+          - insurance
+          - real_estate
+          - other
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      institution_name:
+        required: false
+        nullable: true
+        rules:
+          - 200文字以内
+      valuation_basis:
+        required: true
+        allowed:
+          - input_manual
+          - latest_known
+          - estimate
+      liquidity_level:
+        required: true
+        allowed:
+          - high
+          - medium
+          - low
+      ownership_scope:
+        required: true
+        allowed:
+          - individual
+          - couple
+          - family
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  liability_form:
+    fields:
+      liability_type:
+        required: true
+        allowed:
+          - mortgage
+          - loan
+          - credit_card
+          - other
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      balance_amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      monthly_payment:
+        required: false
+        nullable: true
+        validation: amount_string
+      interest_note:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      due_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+      ownership_scope:
+        required: true
+        allowed:
+          - individual
+          - couple
+          - family
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  saving_goal_form:
+    fields:
+      goal_name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      target_amount:
+        required: true
+        validation: positive_amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      current_saved_amount:
+        required: true
+        validation: amount_string
+      monthly_target_amount:
+        required: false
+        nullable: true
+        validation: amount_string
+      target_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+      linked_event_id:
+        required: false
+        nullable: true
+      status:
+        required: true
+        allowed:
+          - active
+          - paused
+          - completed
+          - archived
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  event_budget_form:
+    fields:
+      event_name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      planned_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+      target_amount:
+        required: true
+        validation: positive_amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      priority:
+        required: true
+        allowed:
+          - high
+          - medium
+          - low
+      related_family_member:
+        required: false
+        nullable: true
+        rules:
+          - 200文字以内
+      funding_source_note:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  scenario_form:
+    fields:
+      name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      description:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      scenario_type:
+        required: true
+        allowed:
+          - default
+          - saving
+          - expense_increase
+          - income_decrease
+          - event_forward
+      base_currency:
+        required: true
+        validation: currency_code
+      adjustments:
+        required: true
+        rules:
+          - objectであること
+
+  sharing_invite_form:
+    fields:
+      user_ref:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      display_name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      role:
+        required: true
+        allowed:
+          - partner_editor
+          - viewer
+      visibility_scope:
+        required: true
+        allowed:
+          - all
+          - shared_only
+          - selected_only
+
+  memo_form:
+    fields:
+      memo_type:
+        required: true
+        allowed:
+          - general
+          - insurance
+          - pension
+          - tax_estimate
+          - handover
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      body:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 20000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+cross_screen_rules:
+  - private 項目は partner_editor から shared へ直接変更できない
+  - shared 項目を private に戻すのは owner のみ
+  - free plan では scenario compare 導線を非表示にする
+  - free plan では sharing invite 導線を非表示にする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.screen/0900100003_MONEY_PLANNER_RECEIVE_CANDIDATE_REVIEW_SCREEN_DESIGN.md
+
+# ============================================================
+# MONEY PLANNER RECEIVE CANDIDATE REVIEW SCREEN DESIGN
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 090.interface
+subdomain: screen
+
+screen_id: MP-015
+screen_name:
+  en: Receive Candidate Review
+  ja: 受入候補レビュー画面
+
+purpose:
+  - 他 LifeOS アプリから受け取った候補を確認する
+  - duplicate candidate を見分ける
+  - owner が採用/却下/保留を判断できるようにする
+  - 自動確定を防ぎ、安全に MoneyPlanner へ反映する
+
+entry_points:
+  - dashboard の receive candidate summary
+  - linkage settings 画面
+  - alerts 画面の候補通知
+  - imported candidate 一覧導線
+
+visible_for_roles:
+  owner:
+    - full_access
+  partner_editor:
+    - read_limited
+  viewer:
+    - no_access
+
+screen_sections:
+  header_summary:
+    fields:
+      - received_count
+      - draft_candidate_count
+      - reviewed_count
+      - confirmed_count
+      - rejected_count
+      - duplicate_candidate_count
+      - latest_received_at
+
+  source_filter:
+    filter_options:
+      - life_planner
+      - end_of_life_planner
+      - inheritance_support
+
+  status_filter:
+    filter_options:
+      - received
+      - draft_candidate
+      - reviewed
+      - confirmed
+      - rejected
+      - archived
+
+  candidate_type_filter:
+    filter_options:
+      - event_budget
+      - saving_goal
+      - memo
+      - asset
+      - liability
+
+  duplicate_filter:
+    filter_options:
+      - all
+      - duplicate_only
+      - non_duplicate_only
+
+  candidate_list:
+    list_columns:
+      - source_system
+      - candidate_type
+      - title_or_name
+      - planned_date_or_target_date
+      - amount
+      - currency_code
+      - import_status
+      - duplicate_candidate_flag
+      - received_at
+
+  candidate_detail_panel:
+    sections:
+      - raw_received_payload_summary
+      - mapped_target_summary
+      - duplicate_reference_summary
+      - visibility_initial_value
+      - review_note
+      - source_app_note
+
+  action_panel:
+    owner_actions:
+      - convert_to_draft_candidate
+      - mark_reviewed
+      - confirm_import
+      - reject_candidate
+      - archive_candidate
+      - open_duplicate_reference
+      - set_visibility_private
+      - set_visibility_shared
+      - set_visibility_selected_only
+    partner_editor_actions:
+      - read_only_comment_candidate
+    viewer_actions: []
+
+screen_states:
+  empty:
+    message:
+      - review対象の受入候補はありません
+  loading:
+    message:
+      - 読み込み中
+  error:
+    message:
+      - 候補の取得に失敗しました
+  duplicate_warning:
+    message:
+      - 重複候補の可能性があります。owner review が必要です
+
+field_display_rules:
+  amount:
+    - base_currency 表示を基本とする
+    - 元通貨が異なる場合は元通貨も併記可能
+  source_system:
+    - LifePlanner / EndOfLifePlanner / InheritanceSupport を表示
+  duplicate_reference_summary:
+    - duplicate_candidate_flag = true のとき表示
+  review_note:
+    - owner が編集可能
+    - partner_editor は閲覧のみ
+
+role_behavior:
+  owner:
+    - 全候補閲覧可
+    - 状態変更可
+    - visibility 決定可
+    - confirm 可
+  partner_editor:
+    - confirmed 前の候補は原則 read only
+    - duplicate 解消確定不可
+    - visibility 変更不可
+  viewer:
+    - 非表示
+
+screen_bindings:
+  summary_source:
+    - life.v_mp_receive_candidate_summary
+  detail_source:
+    - life.mp_receive_candidate_registry
+  duplicate_reference_source:
+    - mapped target object summary
+    - duplicate_reference_object_id
+
+ui_flags:
+  - show_duplicate_badge
+  - show_source_badge
+  - show_candidate_type_badge
+  - show_private_default_badge
+  - show_owner_review_required_badge
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.screen/0900100004_MONEY_PLANNER_RECEIVE_CANDIDATE_REVIEW_VALIDATION_AND_ACTION_RULE.md
+
+# ============================================================
+# MONEY PLANNER RECEIVE CANDIDATE REVIEW VALIDATION AND ACTION RULE
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 090.interface
+subdomain: screen
+
+action_rules:
+  convert_to_draft_candidate:
+    executable_by:
+      - owner
+    preconditions:
+      - import_status = received
+    result:
+      - import_status -> draft_candidate
+
+  mark_reviewed:
+    executable_by:
+      - owner
+    preconditions:
+      - import_status in [draft_candidate, received]
+    result:
+      - import_status -> reviewed
+
+  confirm_import:
+    executable_by:
+      - owner
+    preconditions:
+      - import_status = reviewed
+      - duplicate_candidate_flag = false or duplicate review 完了
+      - target mapping が確定している
+    result:
+      - import_status -> confirmed
+      - mapped_target_object_id を記録
+      - audit_event 候補を記録
+
+  reject_candidate:
+    executable_by:
+      - owner
+    preconditions:
+      - import_status in [received, draft_candidate, reviewed]
+    result:
+      - import_status -> rejected
+
+  archive_candidate:
+    executable_by:
+      - owner
+    preconditions:
+      - import_status in [confirmed, rejected]
+    result:
+      - import_status -> archived
+
+validation_rules:
+  - received から confirmed へ直接遷移しない
+  - duplicate_candidate_flag = true の場合は reviewed 必須
+  - visibility は owner のみ変更可
+  - partner_editor は confirm/reject/archive 不可
+  - viewer は画面表示対象外
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/010.screen/0900100005_MONEY_PLANNER_SCREEN_VALIDATION_ENUM_CONSISTENCY_CHECK.md
+
+# ============================================================
+# MONEY PLANNER SCREEN VALIDATION / ENUM CONSISTENCY CHECK
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 090.interface
+subdomain: screen
+
+purpose:
+  - screen validation と cross domain enum の整合を確認する
+  - UI 側 allowed 値と API / logical model 側 enum を一致させる
+  - 実装前にブレを止める
+
+source_of_truth:
+  validation_doc:
+    - 0900100002_MONEY_PLANNER_SCREEN_INPUT_VALIDATION_CANONICAL.md
+  enum_doc:
+    - 0300100002_MONEY_PLANNER_CROSS_DOMAIN_ENUM_CANONICAL.md
+  api_docs:
+    - 1200100003_MONEY_PLANNER_API_FIELD_REQUIRED_NULLABLE_CANONICAL.md
+    - 1200100007_MONEY_PLANNER_RECEIVE_CANDIDATE_API_EXACT_PAYLOAD_CANONICAL.md
+    - 1200100009_MONEY_PLANNER_FAMILY_SHARING_API_EXACT_PAYLOAD_CANONICAL.md
+    - 1200100011_MONEY_PLANNER_LINKAGE_SETTINGS_API_EXACT_PAYLOAD_CANONICAL.md
+    - 1200100013_MONEY_PLANNER_DASHBOARD_ALERT_API_EXACT_PAYLOAD_CANONICAL.md
+
+global_consistency_rules:
+  - UI allowed values は enum canonical と完全一致させる
+  - API request allowed values は UI allowed values と完全一致させる
+  - DB logical enum と screen enum で同義別名を作らない
+  - 画面表示文言は翻訳層で変換し、内部値は snake_case を保持する
+  - error key は field 単位または enum 単位で出し分ける
+
+consistency_matrix:
+
+  income_form.frequency:
+    screen_allowed:
+      - daily
+      - weekly
+      - monthly
+      - yearly
+      - one_time
+    enum_source: frequency
+    api_binding:
+      - POST /v1/money-planner/incomes
+      - PATCH /v1/money-planner/incomes/{income_id}
+    status: aligned
+
+  income_form.visibility_scope:
+    screen_allowed:
+      - private
+      - shared
+    enum_source: visibility_scope
+    note:
+      - screen validation は private/shared まで
+      - selected_only は受入候補/共有制御経由の詳細設計で扱う
+    status: partially_aligned_but_intentional
+
+  expense_form.frequency:
+    screen_allowed:
+      - daily
+      - weekly
+      - monthly
+      - yearly
+      - one_time
+    enum_source: frequency
+    status: aligned
+
+  expense_form.necessity_level:
+    screen_allowed:
+      - essential
+      - normal
+      - optional
+    enum_source: necessity_level
+    status: aligned
+
+  expense_form.visibility_scope:
+    screen_allowed:
+      - private
+      - shared
+    enum_source: visibility_scope
+    status: partially_aligned_but_intentional
+
+  asset_form.asset_type:
+    screen_allowed:
+      - cash
+      - bank_deposit
+      - securities
+      - insurance
+      - real_estate
+      - other
+    enum_source: asset_type
+    status: aligned
+
+  asset_form.valuation_basis:
+    screen_allowed:
+      - input_manual
+      - latest_known
+      - estimate
+    enum_source: valuation_basis
+    status: aligned
+
+  asset_form.liquidity_level:
+    screen_allowed:
+      - high
+      - medium
+      - low
+    enum_source: liquidity_level
+    status: aligned
+
+  asset_form.ownership_scope:
+    screen_allowed:
+      - individual
+      - couple
+      - family
+    enum_source: ownership_scope
+    status: aligned
+
+  liability_form.liability_type:
+    screen_allowed:
+      - mortgage
+      - loan
+      - credit_card
+      - other
+    enum_source: liability_type
+    status: aligned
+
+  liability_form.ownership_scope:
+    screen_allowed:
+      - individual
+      - couple
+      - family
+    enum_source: ownership_scope
+    status: aligned
+
+  saving_goal_form.status:
+    screen_allowed:
+      - active
+      - paused
+      - completed
+      - archived
+    enum_source: saving_goal_status
+    status: aligned
+
+  event_budget_form.priority:
+    screen_allowed:
+      - high
+      - medium
+      - low
+    enum_source: event_priority
+    status: aligned
+
+  scenario_form.scenario_type:
+    screen_allowed:
+      - default
+      - saving
+      - expense_increase
+      - income_decrease
+      - event_forward
+    enum_source: scenario_type
+    status: aligned
+
+  sharing_invite_form.role:
+    screen_allowed:
+      - partner_editor
+      - viewer
+    enum_source: shared_member_role
+    note:
+      - owner は招待フォームから新規作成不可
+    status: aligned_with_screen_constraint
+
+  sharing_invite_form.visibility_scope:
+    screen_allowed:
+      - all
+      - shared_only
+      - selected_only
+    enum_source: member_visibility_scope
+    status: aligned
+
+  memo_form.memo_type:
+    screen_allowed:
+      - general
+      - insurance
+      - pension
+      - tax_estimate
+      - handover
+    enum_source: memo_type
+    status: aligned
+
+  dashboard.summary_scope:
+    screen_allowed:
+      - owner
+      - shared
+    enum_source: dashboard_summary_scope
+    status: aligned
+
+  alerts.filter.alert_type:
+    screen_allowed:
+      - shortage_risk
+      - duplicate_candidate
+      - review_pending
+      - goal_delay
+      - sharing_visibility_warning
+    enum_source: alert_type
+    status: aligned
+
+  alerts.filter.severity:
+    screen_allowed:
+      - high
+      - medium
+      - low
+    enum_source: alert_severity
+    status: aligned
+
+  linkage_settings.target_system:
+    screen_allowed:
+      - life_planner
+      - end_of_life_planner
+      - inheritance_support
+    enum_source: linkage_target_system
+    status: aligned
+
+  receive_candidate.source_system_filter:
+    screen_allowed:
+      - life_planner
+      - end_of_life_planner
+      - inheritance_support
+    enum_source: import_source_system
+    note:
+      - manual は receive candidate screen filter には出さない
+    status: aligned_with_screen_constraint
+
+  receive_candidate.import_status_filter:
+    screen_allowed:
+      - received
+      - draft_candidate
+      - reviewed
+      - confirmed
+      - rejected
+      - archived
+    enum_source: import_status
+    status: aligned
+
+  receive_candidate.candidate_type_filter:
+    screen_allowed:
+      - event_budget
+      - saving_goal
+      - memo
+      - asset
+      - liability
+    enum_source: candidate_type
+    status: aligned
+
+mismatch_policy:
+  intentional_restrictions:
+    - visibility_scope:
+        reason:
+          - 一般入力フォームでは selected_only を直接出さない
+          - selected_only は共有文脈で owner が明示制御する
+    - shared_member_role:
+        reason:
+          - owner role は招待フォームで選べない
+    - import_source_system:
+        reason:
+          - manual は receive candidate screen filter には不要
+
+required_followups:
+  - screen 実装時は allowed values を enum canonical から直接参照できる形へ寄せる
+  - 翻訳表示と内部 enum 値を分離する
+  - partially_aligned_but_intentional は UI 注釈を残す
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/0900000000_INTERFACE_INDEX.md
+
+# INTERFACE INDEX
+subfolders:
+  - 010.screen
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/0900000001_INTERFACE_OVERVIEW.md
+
+# INTERFACE OVERVIEW
+role:
+  - 画面群と表示責務を整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/0900000_INTERFACE_INDEX.md
+
+# ============================================================
+# INTERFACE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0900001_MONEY_PLANNER_INTERFACE_OVERVIEW.md
+  - 010.core/0900002_INTERFACE_CORE_INDEX.md
+  - 010.core/0900003_INTERFACE_CORE_OVERVIEW.md
+  - 010.core/0900004_MONEY_PLANNER_INTERFACE_SPEC.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/090.interface/0900001_MONEY_PLANNER_INTERFACE_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER INTERFACE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - インターフェースレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 主要画面と UI 責務を定義する
+  - モバイル優先だが PC/タブレットでも読める設計にする
+  - 中長期の見通しが見やすい構造を持つ
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.access-control/1000100000_ACCESS_CONTROL_INDEX.md
+
+# ACCESS CONTROL INDEX
+documents:
+  - 1000100001_MONEY_PLANNER_ACCESS_CONTROL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.access-control/1000100001_ACCESS_CONTROL_OVERVIEW.md
+
+# ACCESS CONTROL OVERVIEW
+role:
+  - role 別の操作可否を整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.access-control/1000100001_MONEY_PLANNER_ACCESS_CONTROL.md
+
+# ============================================================
+# MONEY PLANNER ACCESS CONTROL
+# ============================================================
+
+roles:
+  owner:
+    - read
+    - create
+    - update
+    - delete
+    - share
+  partner_editor:
+    - read
+    - create_shared
+    - update_shared
+  viewer:
+    - read_only
+
+rules:
+  - private 項目は owner のみ編集可
+  - 明示共有なしで外部連携不可
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.access-control/1000100002_MONEY_PLANNER_ROLE_OPERATION_MATRIX.md
+
+# ============================================================
+# MONEY PLANNER ROLE OPERATION MATRIX
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+
+matrix:
+  dashboard:
+    owner: read
+    partner_editor: read
+    viewer: read
+
+  income_item:
+    owner: create_read_update_delete
+    partner_editor: create_read_update_shared_only
+    viewer: read
+
+  expense_item:
+    owner: create_read_update_delete
+    partner_editor: create_read_update_shared_only
+    viewer: read
+
+  asset_item:
+    owner: create_read_update_delete
+    partner_editor: create_read_update_shared_only
+    viewer: read
+
+  liability_item:
+    owner: create_read_update_delete
+    partner_editor: create_read_update_shared_only
+    viewer: read
+
+  saving_goal:
+    owner: create_read_update_delete
+    partner_editor: create_read_update_shared_only
+    viewer: read
+
+  event_budget:
+    owner: create_read_update_delete
+    partner_editor: create_read_update_shared_only
+    viewer: read
+
+  scenario:
+    owner: create_read_update_delete_compare
+    partner_editor: read_compare
+    viewer: read
+
+  shared_member:
+    owner: invite_change_role_remove
+    partner_editor: none
+    viewer: none
+
+  memo_item:
+    owner: create_read_update_delete
+    partner_editor: create_read_update_shared_only
+    viewer: read
+
+  linkage_manual_share:
+    owner: execute
+    partner_editor: none
+    viewer: none
+
+rules:
+  - private visibility は owner のみ編集可
+  - viewer は POST/PATCH/DELETE 不可
+  - partner_editor は shared のみ編集可
+  - 外部共有は owner の明示操作のみ
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.access-control/1000100003_MONEY_PLANNER_FAMILY_SHARING_VISIBILITY_RULE_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER FAMILY SHARING VISIBILITY RULE CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 100.security
+subdomain: access-control
+
+purpose:
+  - 家族共有時の見える範囲を固定する
+  - private / shared / selected の境界を明確化する
+  - owner / partner_editor / viewer の閲覧差を定義する
+
+core_rules:
+  - owner は全件閲覧可能
+  - partner_editor は共有対象のみ閲覧可能
+  - viewer は共有対象の閲覧のみ可能
+  - private は owner 専用
+  - shared は共有メンバーへ開放可能
+  - selected_only は owner が個別指定した対象のみ
+
+visibility_levels:
+  private:
+    readable_by:
+      - owner
+    writable_by:
+      - owner
+    notes:
+      - 共同編集者にも非表示
+      - 外部共有対象にも含めない
+
+  shared:
+    readable_by:
+      - owner
+      - partner_editor
+      - viewer
+    writable_by:
+      - owner
+      - partner_editor
+    notes:
+      - viewer は閲覧のみ
+      - 外部共有候補になりうるが owner 明示操作が必要
+
+  selected_only:
+    readable_by:
+      - owner
+      - individually_selected_member
+    writable_by:
+      - owner
+    notes:
+      - partner_editor 一律公開ではない
+      - viewer 一律公開ではない
+
+member_visibility_scope:
+  all:
+    can_read:
+      - shared
+      - selected_only_when_explicitly_selected
+    cannot_read:
+      - private
+
+  shared_only:
+    can_read:
+      - shared
+    cannot_read:
+      - private
+      - selected_only_unless_selected
+
+  selected_only:
+    can_read:
+      - selected_only_when_explicitly_selected
+    cannot_read:
+      - private
+      - shared_if_not_selected_by_rule
+    note:
+      - このモードは厳格公開を意図する
+
+object_level_rules:
+  income_item:
+    default_visibility_recommendation: shared
+  expense_item:
+    default_visibility_recommendation: shared
+  asset_item:
+    default_visibility_recommendation: private
+    note:
+      - センシティブ度が高いため初期値は private 推奨
+  liability_item:
+    default_visibility_recommendation: private
+  saving_goal:
+    default_visibility_recommendation: shared
+  event_budget:
+    default_visibility_recommendation: shared
+  memo_item:
+    default_visibility_recommendation: private
+
+role_specific_constraints:
+  owner:
+    allowed:
+      - create_any_visibility
+      - update_any_visibility
+      - invite_member
+      - remove_member
+      - manual_external_share
+
+  partner_editor:
+    allowed:
+      - read_shared
+      - read_selected_when_selected
+      - update_shared_only
+    denied:
+      - read_private
+      - change_private_to_shared
+      - manual_external_share
+      - invite_member
+      - role_change
+
+  viewer:
+    allowed:
+      - read_shared
+      - read_selected_when_selected
+    denied:
+      - create
+      - update
+      - delete
+      - invite
+      - role_change
+      - external_share
+
+external_share_rules:
+  - owner のみ実行可能
+  - private は payload に含めない
+  - selected_only は共有目的と整合する時だけ含める
+  - 共有実行時は audit_event を残す
+
+screen_behavior_rules:
+  - private 項目は非対象メンバー一覧に表示しない
+  - 集計画面でも private 項目は非対象者向け合算に含めない
+  - shared 項目だけで再計算した shared summary を持てる
+  - selected_only 項目は対象者ごとに summary を分離してもよい
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.core/1000002_SECURITY_CORE_INDEX.md
+
+# ============================================================
+# SECURITY CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000003_SECURITY_CORE_OVERVIEW.md
+  - 1000004_MONEY_PLANNER_SECURITY_MODEL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md
+
+# ============================================================
+# SECURITY CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の セキュリティ における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/010.core/1000004_MONEY_PLANNER_SECURITY_MODEL.md
+
+# ============================================================
+# MONEY PLANNER SECURITY MODEL
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+security_controls:
+  - owner_only_default
+  - explicit_family_share
+  - attachment_access_control
+  - local_data_protection
+  - export_confirmation
+  - sensitive_financial_warning
+
+security_rules:
+  - 初期状態は owner 限定
+  - 共有は計画単位
+  - 高機微データは自動拡散しない
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/1000000000_SECURITY_INDEX.md
+
+# SECURITY INDEX
+subfolders:
+  - 010.access-control
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/1000000001_SECURITY_OVERVIEW.md
+
+# SECURITY OVERVIEW
+role:
+  - 権限と共有制御の方針整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/1000000_SECURITY_INDEX.md
+
+# ============================================================
+# SECURITY INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 100.security
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000001_MONEY_PLANNER_SECURITY_OVERVIEW.md
+  - 010.core/1000002_SECURITY_CORE_INDEX.md
+  - 010.core/1000003_SECURITY_CORE_OVERVIEW.md
+  - 010.core/1000004_MONEY_PLANNER_SECURITY_MODEL.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/100.security/1000001_MONEY_PLANNER_SECURITY_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 100.security
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - セキュリティレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 資産や負債を含む機微情報の保護を定義する
+  - 添付、共有、出力時の制御を定める
+  - 最小権限を基本とする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
+
+# ============================================================
+# INFRASTRUCTURE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+  - 1100004_MONEY_PLANNER_INFRASTRUCTURE_PROFILE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+
+# ============================================================
+# INFRASTRUCTURE CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の インフラ における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/010.core/1100004_MONEY_PLANNER_INFRASTRUCTURE_PROFILE.md
+
+# ============================================================
+# MONEY PLANNER INFRASTRUCTURE PROFILE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+infrastructure_assumptions:
+  - mobile_first
+  - multi_device_access
+  - note_attachment_storage
+  - notification_scheduler
+  - app_setting_store
+
+infra_rules:
+  - 同期があっても正本境界は崩さない
+  - 通知基盤は見直し管理に従属する
+  - 添付保存は計画紐付けを必須とする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/010.deployment-assumption/1100100000_DEPLOYMENT_ASSUMPTION_INDEX.md
+
+# DEPLOYMENT ASSUMPTION INDEX
+documents:
+  - 1100100001_MONEY_PLANNER_DEPLOYMENT_ASSUMPTION.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/010.deployment-assumption/1100100001_DEPLOYMENT_ASSUMPTION_OVERVIEW.md
+
+# DEPLOYMENT ASSUMPTION OVERVIEW
+role:
+  - モバイル/PC/タブレット前提の配備想定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/010.deployment-assumption/1100100001_MONEY_PLANNER_DEPLOYMENT_ASSUMPTION.md
+
+# ============================================================
+# MONEY PLANNER DEPLOYMENT ASSUMPTION
+# ============================================================
+
+devices:
+  - iphone
+  - android
+  - pc
+  - tablet
+
+non_functional_notes:
+  - 多言語表示
+  - 多通貨表示
+  - 家族共有前提
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/1100000000_INFRASTRUCTURE_INDEX.md
+
+# INFRASTRUCTURE INDEX
+subfolders:
+  - 010.deployment-assumption
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/1100000001_INFRASTRUCTURE_OVERVIEW.md
+
+# INFRASTRUCTURE OVERVIEW
+role:
+  - 配備前提と基本非機能前提の整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+
+# ============================================================
+# INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 110.infrastructure
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1100001_MONEY_PLANNER_INFRASTRUCTURE_OVERVIEW.md
+  - 010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
+  - 010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+  - 010.core/1100004_MONEY_PLANNER_INFRASTRUCTURE_PROFILE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/110.infrastructure/1100001_MONEY_PLANNER_INFRASTRUCTURE_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 110.infrastructure
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - インフラレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - アプリ運用に必要な基盤前提を定義する
+  - マルチデバイス前提の同期/保存方針を整理する
+  - LifeOS 配下アプリとしての実装前提を置く
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100000_API_INDEX.md
+
+# API INDEX
+documents:
+  - 1200100001_MONEY_PLANNER_API_OVERVIEW.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100001_API_OVERVIEW.md
+
+# API OVERVIEW
+role:
+  - request / response exact payload 固定の入口
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100001_MONEY_PLANNER_API_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER API OVERVIEW
+# ============================================================
+
+major_endpoints:
+  - GET /v1/money-planner/dashboard
+  - GET /v1/money-planner/incomes
+  - POST /v1/money-planner/incomes
+  - GET /v1/money-planner/expenses
+  - POST /v1/money-planner/expenses
+  - GET /v1/money-planner/assets
+  - POST /v1/money-planner/assets
+  - GET /v1/money-planner/liabilities
+  - POST /v1/money-planner/liabilities
+  - GET /v1/money-planner/saving-goals
+  - POST /v1/money-planner/saving-goals
+  - GET /v1/money-planner/event-budgets
+  - POST /v1/money-planner/event-budgets
+  - GET /v1/money-planner/projections/monthly
+  - GET /v1/money-planner/projections/yearly
+  - GET /v1/money-planner/scenarios
+  - POST /v1/money-planner/scenarios/compare
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100002_MONEY_PLANNER_API_EXACT_PAYLOAD_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER API EXACT PAYLOAD CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+api_policy:
+  style:
+    - JSON request / response 固定
+    - REST風
+    - 資源単位設計
+    - 作成/更新/削除は明示操作のみ
+    - 金額は amount + currency_code で扱う
+    - amount は decimal string
+    - timestamp は ISO8601 string
+    - id は UUID
+  common_request_headers:
+    - Authorization: Bearer <token>
+    - Content-Type: application/json
+    - X-LifeOS-App: MoneyPlanner
+  common_response_rules:
+    - success は true / false
+    - data を返す
+    - error 時は error.code / error.message を返す
+    - 一覧は page / page_size / total_count を返す
+  role_policy:
+    - owner は全件操作可能
+    - partner_editor は shared 範囲のみ編集可能
+    - viewer は閲覧のみ
+
+dashboard_api:
+  endpoint: GET /v1/money-planner/dashboard
+  query:
+    base_currency: string
+    display_currency: string|null
+    scenario_id: uuid|null
+    target_month: yyyy-mm
+    target_year: integer
+  response_200:
+    success: true
+    data:
+      summary:
+        total_income: "1200000.00"
+        total_expense: "850000.00"
+        total_assets: "5200000.00"
+        total_liabilities: "1800000.00"
+        net_worth: "3400000.00"
+        base_currency: "JPY"
+        display_currency: "JPY"
+      monthly_projection:
+        target_month: "2026-04"
+        expected_income: "300000.00"
+        expected_expense: "220000.00"
+        expected_balance: "80000.00"
+        shortage_flag: false
+      yearly_projection:
+        target_year: 2026
+        expected_income: "3600000.00"
+        expected_expense: "2900000.00"
+        expected_balance: "700000.00"
+      goals:
+        active_goal_count: 3
+        completed_goal_count: 1
+        total_target_amount: "2000000.00"
+        total_current_saved_amount: "750000.00"
+      event_budgets:
+        upcoming_count: 2
+        total_upcoming_amount: "450000.00"
+      alerts:
+        - alert_id: "uuid"
+          alert_type: "shortage_risk"
+          severity: "high"
+          title: "2026-09 に資金不足見込み"
+          message: "イベント費用の影響で月次残高がマイナス見込みです。"
+    error: null
+
+income_api:
+  list:
+    endpoint: GET /v1/money-planner/incomes
+    query:
+      page: integer
+      page_size: integer
+      category: string|null
+      frequency: string|null
+      active_flag: boolean|null
+    response_200:
+      success: true
+      data:
+        items:
+          - id: "uuid"
+            title: "給与"
+            category: "salary"
+            amount: "300000.00"
+            currency_code: "JPY"
+            frequency: "monthly"
+            start_date: "2026-01-01"
+            end_date: null
+            active_flag: true
+            memo: null
+            visibility_scope: "shared"
+            updated_at: "2026-04-14T10:00:00+09:00"
+        page: 1
+        page_size: 20
+        total_count: 1
+      error: null
+
+  create:
+    endpoint: POST /v1/money-planner/incomes
+    request:
+      title: "給与"
+      category: "salary"
+      amount: "300000.00"
+      currency_code: "JPY"
+      frequency: "monthly"
+      start_date: "2026-01-01"
+      end_date: null
+      active_flag: true
+      memo: "手取り"
+      visibility_scope: "shared"
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        created_at: "2026-04-14T10:00:00+09:00"
+      error: null
+
+  update:
+    endpoint: PATCH /v1/money-planner/incomes/{income_id}
+    request:
+      title: "給与"
+      category: "salary"
+      amount: "320000.00"
+      currency_code: "JPY"
+      frequency: "monthly"
+      start_date: "2026-01-01"
+      end_date: null
+      active_flag: true
+      memo: "昇給反映"
+      visibility_scope: "shared"
+    response_200:
+      success: true
+      data:
+        id: "uuid"
+        updated_at: "2026-04-14T10:15:00+09:00"
+      error: null
+
+  delete:
+    endpoint: DELETE /v1/money-planner/incomes/{income_id}
+    response_200:
+      success: true
+      data:
+        id: "uuid"
+        deleted_at: "2026-04-14T10:20:00+09:00"
+      error: null
+
+expense_api:
+  create:
+    endpoint: POST /v1/money-planner/expenses
+    request:
+      title: "家賃"
+      category: "housing"
+      amount: "85000.00"
+      currency_code: "JPY"
+      frequency: "monthly"
+      necessity_level: "essential"
+      start_date: "2026-01-01"
+      end_date: null
+      active_flag: true
+      memo: null
+      visibility_scope: "shared"
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        created_at: "2026-04-14T10:00:00+09:00"
+      error: null
+
+asset_api:
+  create:
+    endpoint: POST /v1/money-planner/assets
+    request:
+      asset_type: "bank_deposit"
+      title: "普通預金"
+      amount: "1200000.00"
+      currency_code: "JPY"
+      institution_name: "〇〇銀行"
+      valuation_basis: "input_manual"
+      liquidity_level: "high"
+      ownership_scope: "family"
+      memo: null
+      visibility_scope: "shared"
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        created_at: "2026-04-14T10:00:00+09:00"
+      error: null
+
+liability_api:
+  create:
+    endpoint: POST /v1/money-planner/liabilities
+    request:
+      liability_type: "mortgage"
+      title: "住宅ローン"
+      balance_amount: "1800000.00"
+      currency_code: "JPY"
+      monthly_payment: "70000.00"
+      interest_note: "変動金利"
+      due_date: "2045-03-31"
+      ownership_scope: "family"
+      memo: null
+      visibility_scope: "shared"
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        created_at: "2026-04-14T10:00:00+09:00"
+      error: null
+
+saving_goal_api:
+  create:
+    endpoint: POST /v1/money-planner/saving-goals
+    request:
+      goal_name: "教育資金"
+      target_amount: "1000000.00"
+      currency_code: "JPY"
+      current_saved_amount: "250000.00"
+      monthly_target_amount: "30000.00"
+      target_date: "2029-03-31"
+      linked_event_id: null
+      status: "active"
+      memo: null
+      visibility_scope: "shared"
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        created_at: "2026-04-14T10:00:00+09:00"
+      error: null
+
+event_budget_api:
+  create:
+    endpoint: POST /v1/money-planner/event-budgets
+    request:
+      event_name: "住宅購入初期費用"
+      planned_date: "2027-04-01"
+      target_amount: "300000.00"
+      currency_code: "JPY"
+      priority: "high"
+      related_family_member: null
+      funding_source_note: "貯蓄から充当予定"
+      memo: null
+      visibility_scope: "shared"
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        created_at: "2026-04-14T10:00:00+09:00"
+      error: null
+
+projection_api:
+  monthly:
+    endpoint: GET /v1/money-planner/projections/monthly
+    query:
+      target_month: yyyy-mm
+      base_currency: string
+      scenario_id: uuid|null
+    response_200:
+      success: true
+      data:
+        target_month: "2026-04"
+        expected_income: "300000.00"
+        expected_expense: "220000.00"
+        expected_balance: "80000.00"
+        shortage_flag: false
+        breakdown:
+          incomes:
+            - category: "salary"
+              amount: "300000.00"
+          expenses:
+            - category: "housing"
+              amount: "85000.00"
+            - category: "food"
+              amount: "50000.00"
+      error: null
+
+  yearly:
+    endpoint: GET /v1/money-planner/projections/yearly
+    query:
+      target_year: integer
+      base_currency: string
+      scenario_id: uuid|null
+    response_200:
+      success: true
+      data:
+        target_year: 2026
+        expected_income: "3600000.00"
+        expected_expense: "2900000.00"
+        expected_balance: "700000.00"
+        event_impact_amount: "300000.00"
+        goal_target_total: "1200000.00"
+        shortage_months: []
+      error: null
+
+scenario_api:
+  list:
+    endpoint: GET /v1/money-planner/scenarios
+    response_200:
+      success: true
+      data:
+        items:
+          - id: "uuid-default"
+            name: "通常"
+            scenario_type: "default"
+            base_currency: "JPY"
+            active_flag: true
+          - id: "uuid-save"
+            name: "節約"
+            scenario_type: "saving"
+            base_currency: "JPY"
+            active_flag: false
+      error: null
+
+  create:
+    endpoint: POST /v1/money-planner/scenarios
+    request:
+      name: "節約"
+      description: "外食費を抑える"
+      scenario_type: "saving"
+      base_currency: "JPY"
+      adjustments:
+        expenses:
+          - expense_id: "uuid"
+            new_amount: "30000.00"
+        events: []
+        incomes: []
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        created_at: "2026-04-14T10:00:00+09:00"
+      error: null
+
+  compare:
+    endpoint: POST /v1/money-planner/scenarios/compare
+    request:
+      scenario_ids:
+        - "uuid-default"
+        - "uuid-save"
+      target_year: 2026
+      base_currency: "JPY"
+    response_200:
+      success: true
+      data:
+        compared:
+          - scenario_id: "uuid-default"
+            name: "通常"
+            expected_balance: "700000.00"
+            net_worth: "3400000.00"
+            shortage_month: null
+          - scenario_id: "uuid-save"
+            name: "節約"
+            expected_balance: "900000.00"
+            net_worth: "3600000.00"
+            shortage_month: null
+      error: null
+
+sharing_api:
+  invite_member:
+    endpoint: POST /v1/money-planner/sharing/members
+    request:
+      user_ref: "family_user_01"
+      display_name: "家族A"
+      role: "partner_editor"
+      visibility_scope: "all"
+    response_201:
+      success: true
+      data:
+        id: "uuid"
+        invited_at: "2026-04-14T10:00:00+09:00"
+        status: "pending"
+      error: null
+
+alerts_api:
+  endpoint: GET /v1/money-planner/alerts
+  response_200:
+    success: true
+    data:
+      items:
+        - alert_id: "uuid"
+          alert_type: "shortage_risk"
+          severity: "high"
+          target_month: "2026-09"
+          related_goal_id: null
+          related_event_budget_id: "uuid"
+          title: "2026-09 資金不足見込み"
+          message: "大型イベント費用により月次残高がマイナス見込みです。"
+          acknowledged_flag: false
+          created_at: "2026-04-14T10:00:00+09:00"
+    error: null
+
+error_contract:
+  sample:
+    success: false
+    data: null
+    error:
+      code: "MP-403-001"
+      message: "viewer role cannot update this resource"
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100005_MONEY_PLANNER_API_ERROR_CODE_CATALOG.md
+
+# ============================================================
+# MONEY PLANNER API ERROR CODE CATALOG
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+error_contract:
+  response_shape:
+    success: false
+    data: null
+    error:
+      code: string
+      message: string
+
+catalog:
+  validation:
+    - code: MP-400-001
+      meaning: required field missing
+    - code: MP-400-002
+      meaning: invalid currency_code
+    - code: MP-400-003
+      meaning: invalid enum value
+    - code: MP-400-004
+      meaning: invalid date range
+    - code: MP-400-005
+      meaning: amount must be nonnegative
+    - code: MP-400-006
+      meaning: target_amount must be positive
+
+  auth:
+    - code: MP-401-001
+      meaning: authentication required
+    - code: MP-401-002
+      meaning: token invalid
+
+  permission:
+    - code: MP-403-001
+      meaning: viewer role cannot update resource
+    - code: MP-403-002
+      meaning: partner_editor cannot update private resource
+    - code: MP-403-003
+      meaning: only owner can execute external share
+    - code: MP-403-004
+      meaning: plan access denied
+
+  not_found:
+    - code: MP-404-001
+      meaning: plan not found
+    - code: MP-404-002
+      meaning: income item not found
+    - code: MP-404-003
+      meaning: expense item not found
+    - code: MP-404-004
+      meaning: asset item not found
+    - code: MP-404-005
+      meaning: liability item not found
+    - code: MP-404-006
+      meaning: saving goal not found
+    - code: MP-404-007
+      meaning: event budget not found
+    - code: MP-404-008
+      meaning: scenario not found
+    - code: MP-404-009
+      meaning: shared member not found
+    - code: MP-404-010
+      meaning: memo not found
+
+  conflict:
+    - code: MP-409-001
+      meaning: shared member already exists
+    - code: MP-409-002
+      meaning: scenario name already exists
+    - code: MP-409-003
+      meaning: duplicate active plan name in same owner scope
+
+  business_rule:
+    - code: MP-422-001
+      meaning: free plan cannot use compare api
+    - code: MP-422-002
+      meaning: free plan cannot use sharing api
+    - code: MP-422-003
+      meaning: free plan cannot use linkage manual share
+    - code: MP-422-004
+      meaning: share_scope invalid for target system
+
+  server:
+    - code: MP-500-001
+      meaning: unexpected server error
+    - code: MP-503-001
+      meaning: projection service temporarily unavailable
+
+message_policy:
+  - UI 表示は message をそのまま使わず翻訳レイヤーで変換可能にする
+  - code を正本として扱う
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100006_MONEY_PLANNER_DASHBOARD_EXACT_PAYLOAD_RECONNECTED_TO_LOGICAL_VIEW.md
+
+# ============================================================
+# MONEY PLANNER DASHBOARD EXACT PAYLOAD RECONNECTED TO LOGICAL VIEW
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - dashboard exact payload を logical view 正本に接続し直す
+  - UI 初期表示の必要項目を固定する
+  - owner summary と shared summary の差を扱えるようにする
+
+logical_view_bindings:
+  owner_summary:
+    source_view:
+      - life.v_mp_dashboard_composed_summary
+  shared_summary:
+    source_view:
+      - life.v_mp_shared_balance_summary
+  candidate_summary:
+    source_view:
+      - life.v_mp_receive_candidate_summary
+
+endpoint:
+  method: GET
+  path: /v1/money-planner/dashboard
+
+query:
+  base_currency:
+    type: string
+    required: true
+  display_currency:
+    type: string
+    required: false
+  scenario_id:
+    type: uuid
+    required: false
+  target_month:
+    type: string(yyyy-mm)
+    required: true
+  target_year:
+    type: integer
+    required: true
+  summary_scope:
+    type: enum[owner,shared]
+    required: true
+    notes:
+      - owner = private/shared/selected_only を含む owner 視点
+      - shared = shared のみで再計算した共有視点
+
+response_200:
+  success: true
+  data:
+    summary_scope: "owner"
+    summary:
+      plan_id: "uuid"
+      owner_user_id: "uuid"
+      base_currency: "JPY"
+      total_income: "1200000.00"
+      total_expense: "850000.00"
+      total_assets: "5200000.00"
+      total_liabilities: "1800000.00"
+      net_worth: "3400000.00"
+
+    goal_summary:
+      active_goal_count: 3
+      completed_goal_count: 1
+      total_target_amount: "2000000.00"
+      total_current_saved_amount: "750000.00"
+
+    upcoming_event_summary:
+      upcoming_count: 2
+      total_upcoming_amount: "450000.00"
+      next_event_name: "住宅購入初期費用"
+      next_event_date: "2027-04-01"
+      next_event_amount: "300000.00"
+
+    receive_candidate_summary:
+      received_count: 4
+      draft_candidate_count: 2
+      reviewed_count: 1
+      confirmed_count: 5
+      rejected_count: 1
+      duplicate_candidate_count: 1
+      latest_received_at: "2026-04-14T20:00:00+09:00"
+
+    monthly_projection:
+      target_month: "2026-04"
+      expected_income: "300000.00"
+      expected_expense: "220000.00"
+      expected_balance: "80000.00"
+      shortage_flag: false
+      high_priority_event_amount: "300000.00"
+
+    yearly_projection:
+      target_year: 2026
+      expected_income: "3600000.00"
+      expected_expense: "2900000.00"
+      expected_balance: "700000.00"
+      event_impact_amount: "300000.00"
+      goal_target_total: "1200000.00"
+      shortage_months_count: 0
+
+    alerts:
+      - alert_id: "uuid"
+        alert_type: "shortage_risk"
+        severity: "high"
+        title: "2026-09 に資金不足見込み"
+        message: "大型イベント費用により月次残高がマイナス見込みです。"
+        acknowledged_flag: false
+        created_at: "2026-04-14T20:00:00+09:00"
+
+    calculated_at: "2026-04-14T20:00:00+09:00"
+  error: null
+
+response_rules:
+  - summary_scope=owner のとき owner summary を返す
+  - summary_scope=shared のとき shared summary を返す
+  - receive_candidate_summary は owner のみ full 表示
+  - partner_editor は shared summary + candidate summary limited を返してよい
+  - viewer は shared summary のみ表示可
+  - fixed key を基本とし、欠損は null で返す
+
+fixed_key_nullable_fields:
+  - upcoming_event_summary.next_event_name
+  - upcoming_event_summary.next_event_date
+  - upcoming_event_summary.next_event_amount
+  - receive_candidate_summary.latest_received_at
+
+screen_binding:
+  target_screen:
+    - dashboard
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100007_MONEY_PLANNER_RECEIVE_CANDIDATE_API_EXACT_PAYLOAD_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER RECEIVE CANDIDATE API EXACT PAYLOAD CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - receive candidate review screen 用 API payload を固定する
+  - source_system / status / duplicate を軸に扱えるようにする
+  - owner review 前提の action API を明確化する
+
+api_group:
+  - list_candidates
+  - get_candidate_detail
+  - update_candidate_status
+  - set_candidate_visibility
+  - get_duplicate_reference_summary
+
+list_candidates:
+  method: GET
+  path: /v1/money-planner/receive-candidates
+  query:
+    page:
+      type: integer
+      required: false
+    page_size:
+      type: integer
+      required: false
+    source_system:
+      type: enum[life_planner,end_of_life_planner,inheritance_support]
+      required: false
+    import_status:
+      type: enum[received,draft_candidate,reviewed,confirmed,rejected,archived]
+      required: false
+    candidate_type:
+      type: enum[event_budget,saving_goal,memo,asset,liability]
+      required: false
+    duplicate_only:
+      type: boolean
+      required: false
+  response_200:
+    success: true
+    data:
+      items:
+        - candidate_registry_id: "uuid"
+          plan_id: "uuid"
+          source_system: "life_planner"
+          source_case_id: "uuid"
+          source_object_id: "uuid"
+          candidate_type: "event_budget"
+          title_or_name: "住宅購入"
+          planned_date_or_target_date: "2028-04-01"
+          amount: "300000.00"
+          currency_code: "JPY"
+          import_status: "draft_candidate"
+          duplicate_candidate_flag: true
+          duplicate_reference_object_id: "uuid"
+          mapped_target_object_id: null
+          default_visibility_scope: "private"
+          received_at: "2026-04-14T20:00:00+09:00"
+          reviewed_at: null
+      page: 1
+      page_size: 20
+      total_count: 1
+    error: null
+
+get_candidate_detail:
+  method: GET
+  path: /v1/money-planner/receive-candidates/{candidate_registry_id}
+  response_200:
+    success: true
+    data:
+      candidate_registry_id: "uuid"
+      plan_id: "uuid"
+      source_system: "life_planner"
+      source_case_id: "uuid"
+      source_object_id: "uuid"
+      candidate_type: "event_budget"
+      import_status: "draft_candidate"
+      duplicate_candidate_flag: true
+      duplicate_reference_object_id: "uuid"
+      mapped_target_object_id: null
+      default_visibility_scope: "private"
+      review_note: null
+      payload_snapshot:
+        source_system: "life_planner"
+        share_scope: "life_event_financial_candidate"
+        payload:
+          life_event_id: "uuid"
+          event_name: "住宅購入"
+          planned_date: "2028-04-01"
+          estimated_amount: "300000.00"
+          currency_code: "JPY"
+          note: "頭金以外は別検討"
+      mapped_target_summary:
+        target_table: "life.mp_event_budget"
+        event_name: "住宅購入"
+        planned_date: "2028-04-01"
+        target_amount: "300000.00"
+        currency_code: "JPY"
+        priority: "high"
+      duplicate_reference_summary:
+        target_object_id: "uuid"
+        target_object_type: "event_budget"
+        title_or_name: "住宅購入"
+        planned_date_or_target_date: "2028-04-01"
+        amount: "300000.00"
+        currency_code: "JPY"
+      received_at: "2026-04-14T20:00:00+09:00"
+      reviewed_at: null
+      created_at: "2026-04-14T20:00:00+09:00"
+      updated_at: "2026-04-14T20:00:00+09:00"
+    error: null
+
+update_candidate_status:
+  method: PATCH
+  path: /v1/money-planner/receive-candidates/{candidate_registry_id}/status
+  request:
+    import_status:
+      type: enum[draft_candidate,reviewed,confirmed,rejected,archived]
+      required: true
+    review_note:
+      type: string|null
+      required: true
+  response_200:
+    success: true
+    data:
+      candidate_registry_id: "uuid"
+      previous_status: "draft_candidate"
+      current_status: "reviewed"
+      reviewed_at: "2026-04-14T20:10:00+09:00"
+      mapped_target_object_id: null
+    error: null
+
+set_candidate_visibility:
+  method: PATCH
+  path: /v1/money-planner/receive-candidates/{candidate_registry_id}/visibility
+  request:
+    visibility_scope:
+      type: enum[private,shared,selected_only]
+      required: true
+  response_200:
+    success: true
+    data:
+      candidate_registry_id: "uuid"
+      visibility_scope: "private"
+      updated_at: "2026-04-14T20:12:00+09:00"
+    error: null
+
+get_duplicate_reference_summary:
+  method: GET
+  path: /v1/money-planner/receive-candidates/{candidate_registry_id}/duplicate-reference
+  response_200:
+    success: true
+    data:
+      duplicate_candidate_flag: true
+      duplicate_reference_object_id: "uuid"
+      duplicate_reference_object_type: "event_budget"
+      reference_summary:
+        title_or_name: "住宅購入"
+        planned_date_or_target_date: "2028-04-01"
+        amount: "300000.00"
+        currency_code: "JPY"
+        visibility_scope: "private"
+    error: null
+
+role_rules:
+  owner:
+    - list_candidates
+    - get_candidate_detail
+    - update_candidate_status
+    - set_candidate_visibility
+    - get_duplicate_reference_summary
+  partner_editor:
+    - list_candidates(read_limited)
+    - get_candidate_detail(read_limited)
+  viewer: []
+
+status_transition_rules:
+  - received から confirmed へ直接更新不可
+  - duplicate_candidate_flag=true の場合 reviewed を経由必須
+  - confirmed 時は mapped_target_object_id を保持する
+  - rejected 後の再採用は新 candidate として扱う
+
+error_codes_related:
+  - MP-403-003
+  - MP-404-001
+  - MP-404-011
+  - MP-409-004
+  - MP-422-005
+
+additional_error_code_candidates:
+  - code: MP-404-011
+    meaning: receive candidate not found
+  - code: MP-409-004
+    meaning: duplicate reference conflict unresolved
+  - code: MP-422-005
+    meaning: invalid candidate status transition
+
+screen_binding:
+  target_screen:
+    - receive_candidate_review
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100008_MONEY_PLANNER_RECEIVE_CANDIDATE_REQUIRED_NULLABLE_MATRIX.md
+
+# ============================================================
+# MONEY PLANNER RECEIVE CANDIDATE REQUIRED / NULLABLE MATRIX
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+request_rule_definitions:
+  required:
+    - key 必須
+    - null 不可
+  required_nullable:
+    - key 必須
+    - null 可
+  optional_omit_only:
+    - 未指定時は key を送らない
+  fixed_key_nonnull:
+    - response key 固定
+    - null 不可
+  fixed_key_nullable:
+    - response key 固定
+    - null 可
+
+endpoints:
+
+  GET_/v1/money-planner/receive-candidates:
+    query:
+      page:
+        type: integer
+        rule: optional_omit_only
+      page_size:
+        type: integer
+        rule: optional_omit_only
+      source_system:
+        type: string
+        rule: optional_omit_only
+      import_status:
+        type: string
+        rule: optional_omit_only
+      candidate_type:
+        type: string
+        rule: optional_omit_only
+      duplicate_only:
+        type: boolean
+        rule: optional_omit_only
+    response_item:
+      candidate_registry_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      plan_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      source_system:
+        type: string
+        rule: fixed_key_nonnull
+      source_case_id:
+        type: uuid_or_string
+        rule: fixed_key_nonnull
+      source_object_id:
+        type: uuid_or_string
+        rule: fixed_key_nonnull
+      candidate_type:
+        type: string
+        rule: fixed_key_nonnull
+      title_or_name:
+        type: string
+        rule: fixed_key_nonnull
+      planned_date_or_target_date:
+        type: yyyy-mm-dd|null
+        rule: fixed_key_nullable
+      amount:
+        type: decimal_string|null
+        rule: fixed_key_nullable
+      currency_code:
+        type: string|null
+        rule: fixed_key_nullable
+      import_status:
+        type: string
+        rule: fixed_key_nonnull
+      duplicate_candidate_flag:
+        type: boolean
+        rule: fixed_key_nonnull
+      duplicate_reference_object_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      mapped_target_object_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      default_visibility_scope:
+        type: string
+        rule: fixed_key_nonnull
+      received_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+      reviewed_at:
+        type: iso8601|null
+        rule: fixed_key_nullable
+
+  GET_/v1/money-planner/receive-candidates/{candidate_registry_id}:
+    response:
+      candidate_registry_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      plan_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      source_system:
+        type: string
+        rule: fixed_key_nonnull
+      source_case_id:
+        type: uuid_or_string
+        rule: fixed_key_nonnull
+      source_object_id:
+        type: uuid_or_string
+        rule: fixed_key_nonnull
+      candidate_type:
+        type: string
+        rule: fixed_key_nonnull
+      import_status:
+        type: string
+        rule: fixed_key_nonnull
+      duplicate_candidate_flag:
+        type: boolean
+        rule: fixed_key_nonnull
+      duplicate_reference_object_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      mapped_target_object_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      default_visibility_scope:
+        type: string
+        rule: fixed_key_nonnull
+      review_note:
+        type: string|null
+        rule: fixed_key_nullable
+      payload_snapshot:
+        type: object
+        rule: fixed_key_nonnull
+      mapped_target_summary:
+        type: object
+        rule: fixed_key_nonnull
+      duplicate_reference_summary:
+        type: object|null
+        rule: fixed_key_nullable
+      received_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+      reviewed_at:
+        type: iso8601|null
+        rule: fixed_key_nullable
+      created_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+      updated_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+  PATCH_/v1/money-planner/receive-candidates/{candidate_registry_id}/status:
+    request:
+      import_status:
+        type: string
+        rule: required
+      review_note:
+        type: string|null
+        rule: required_nullable
+    response:
+      candidate_registry_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      previous_status:
+        type: string
+        rule: fixed_key_nonnull
+      current_status:
+        type: string
+        rule: fixed_key_nonnull
+      reviewed_at:
+        type: iso8601|null
+        rule: fixed_key_nullable
+      mapped_target_object_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+
+  PATCH_/v1/money-planner/receive-candidates/{candidate_registry_id}/visibility:
+    request:
+      visibility_scope:
+        type: string
+        rule: required
+    response:
+      candidate_registry_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      visibility_scope:
+        type: string
+        rule: fixed_key_nonnull
+      updated_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+  GET_/v1/money-planner/receive-candidates/{candidate_registry_id}/duplicate-reference:
+    response:
+      duplicate_candidate_flag:
+        type: boolean
+        rule: fixed_key_nonnull
+      duplicate_reference_object_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      duplicate_reference_object_type:
+        type: string|null
+        rule: fixed_key_nullable
+      reference_summary:
+        type: object|null
+        rule: fixed_key_nullable
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100009_MONEY_PLANNER_FAMILY_SHARING_API_EXACT_PAYLOAD_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER FAMILY SHARING API EXACT PAYLOAD CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - family sharing 画面の exact payload を固定する
+  - shared_member 一覧、招待、更新、削除、visible summary を正本化する
+  - visibility_scope と role の境界を API 上で明確にする
+
+api_group:
+  - list_members
+  - invite_member
+  - update_member
+  - remove_member
+  - get_member_visible_summary
+
+list_members:
+  method: GET
+  path: /v1/money-planner/sharing/members
+  query:
+    status:
+      type: enum[pending,active,removed]
+      required: false
+    role:
+      type: enum[owner,partner_editor,viewer]
+      required: false
+  response_200:
+    success: true
+    data:
+      items:
+        - shared_member_id: "uuid"
+          plan_id: "uuid"
+          user_ref: "family_user_01"
+          display_name: "家族A"
+          role: "partner_editor"
+          visibility_scope: "all"
+          invited_at: "2026-04-14T20:00:00+09:00"
+          accepted_at: "2026-04-14T20:10:00+09:00"
+          status: "active"
+          visible_summary:
+            visible_income_count: 5
+            visible_expense_count: 8
+            visible_asset_count: 2
+            visible_liability_count: 1
+            visible_saving_goal_count: 2
+            visible_event_budget_count: 3
+            visible_memo_count: 1
+      total_count: 1
+    error: null
+
+invite_member:
+  method: POST
+  path: /v1/money-planner/sharing/members
+  request:
+    user_ref: "family_user_01"
+    display_name: "家族A"
+    role: "partner_editor"
+    visibility_scope: "all"
+  response_201:
+    success: true
+    data:
+      shared_member_id: "uuid"
+      invited_at: "2026-04-14T20:00:00+09:00"
+      status: "pending"
+    error: null
+
+update_member:
+  method: PATCH
+  path: /v1/money-planner/sharing/members/{shared_member_id}
+  request:
+    role: "viewer"
+    visibility_scope: "shared_only"
+  response_200:
+    success: true
+    data:
+      shared_member_id: "uuid"
+      role: "viewer"
+      visibility_scope: "shared_only"
+      updated_at: "2026-04-14T20:20:00+09:00"
+    error: null
+
+remove_member:
+  method: DELETE
+  path: /v1/money-planner/sharing/members/{shared_member_id}
+  response_200:
+    success: true
+    data:
+      shared_member_id: "uuid"
+      status: "removed"
+      removed_at: "2026-04-14T20:30:00+09:00"
+    error: null
+
+get_member_visible_summary:
+  method: GET
+  path: /v1/money-planner/sharing/members/{shared_member_id}/visible-summary
+  response_200:
+    success: true
+    data:
+      shared_member_id: "uuid"
+      role: "partner_editor"
+      visibility_scope: "all"
+      visible_income_count: 5
+      visible_expense_count: 8
+      visible_asset_count: 2
+      visible_liability_count: 1
+      visible_saving_goal_count: 2
+      visible_event_budget_count: 3
+      visible_memo_count: 1
+      calculated_at: "2026-04-14T20:00:00+09:00"
+    error: null
+
+role_rules:
+  owner:
+    - list_members
+    - invite_member
+    - update_member
+    - remove_member
+    - get_member_visible_summary
+  partner_editor:
+    - list_members(read_limited)
+    - get_member_visible_summary(self_only_or_limited)
+  viewer: []
+
+business_rules:
+  - owner は招待・役割変更・削除可
+  - partner_editor は他 member の role 変更不可
+  - viewer は共有管理 API 不可
+  - owner は owner 以外のみ招待可能
+  - role=owner の追加作成は不可
+  - visibility_scope=selected_only の詳細選択は別設計で扱う
+
+error_code_candidates:
+  - MP-403-005: only owner can manage shared members
+  - MP-404-012: shared member not found
+  - MP-409-005: shared member already invited
+  - MP-422-006: invalid role transition
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100010_MONEY_PLANNER_FAMILY_SHARING_REQUIRED_NULLABLE_MATRIX.md
+
+# ============================================================
+# MONEY PLANNER FAMILY SHARING REQUIRED / NULLABLE MATRIX
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+rule_definitions:
+  required:
+    - key 必須
+    - null 不可
+  optional_omit_only:
+    - 未指定時は key を送らない
+  fixed_key_nonnull:
+    - response key 固定
+    - null 不可
+  fixed_key_nullable:
+    - response key 固定
+    - null 可
+
+endpoints:
+
+  GET_/v1/money-planner/sharing/members:
+    query:
+      status:
+        type: string
+        rule: optional_omit_only
+      role:
+        type: string
+        rule: optional_omit_only
+    response_item:
+      shared_member_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      plan_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      user_ref:
+        type: string
+        rule: fixed_key_nonnull
+      display_name:
+        type: string
+        rule: fixed_key_nonnull
+      role:
+        type: string
+        rule: fixed_key_nonnull
+      visibility_scope:
+        type: string
+        rule: fixed_key_nonnull
+      invited_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+      accepted_at:
+        type: iso8601|null
+        rule: fixed_key_nullable
+      status:
+        type: string
+        rule: fixed_key_nonnull
+      visible_summary:
+        type: object|null
+        rule: fixed_key_nullable
+
+  POST_/v1/money-planner/sharing/members:
+    request:
+      user_ref:
+        type: string
+        rule: required
+      display_name:
+        type: string
+        rule: required
+      role:
+        type: string
+        rule: required
+      visibility_scope:
+        type: string
+        rule: required
+    response:
+      shared_member_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      invited_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+      status:
+        type: string
+        rule: fixed_key_nonnull
+
+  PATCH_/v1/money-planner/sharing/members/{shared_member_id}:
+    request:
+      role:
+        type: string
+        rule: optional_omit_only
+      visibility_scope:
+        type: string
+        rule: optional_omit_only
+    response:
+      shared_member_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      role:
+        type: string
+        rule: fixed_key_nonnull
+      visibility_scope:
+        type: string
+        rule: fixed_key_nonnull
+      updated_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+  DELETE_/v1/money-planner/sharing/members/{shared_member_id}:
+    response:
+      shared_member_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      status:
+        type: string
+        rule: fixed_key_nonnull
+      removed_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+  GET_/v1/money-planner/sharing/members/{shared_member_id}/visible-summary:
+    response:
+      shared_member_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      role:
+        type: string
+        rule: fixed_key_nonnull
+      visibility_scope:
+        type: string
+        rule: fixed_key_nonnull
+      visible_income_count:
+        type: integer
+        rule: fixed_key_nonnull
+      visible_expense_count:
+        type: integer
+        rule: fixed_key_nonnull
+      visible_asset_count:
+        type: integer
+        rule: fixed_key_nonnull
+      visible_liability_count:
+        type: integer
+        rule: fixed_key_nonnull
+      visible_saving_goal_count:
+        type: integer
+        rule: fixed_key_nonnull
+      visible_event_budget_count:
+        type: integer
+        rule: fixed_key_nonnull
+      visible_memo_count:
+        type: integer
+        rule: fixed_key_nonnull
+      calculated_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100011_MONEY_PLANNER_LINKAGE_SETTINGS_API_EXACT_PAYLOAD_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER LINKAGE SETTINGS API EXACT PAYLOAD CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - linkage settings 画面の exact payload を固定する
+  - LifePlanner / EndOfLifePlanner / InheritanceSupport 連携状態を扱う
+  - 手動共有実行前の設定状態を正本化する
+
+api_group:
+  - get_linkages
+  - update_linkage_setting
+  - manual_share
+
+get_linkages:
+  method: GET
+  path: /v1/money-planner/linkages
+  response_200:
+    success: true
+    data:
+      life_planner:
+        enabled: true
+        share_scope: "financial_plan_summary"
+        last_shared_at: "2026-04-14T20:00:00+09:00"
+      end_of_life_planner:
+        enabled: false
+        share_scope: "none"
+        last_shared_at: null
+      inheritance_support:
+        enabled: false
+        share_scope: "none"
+        last_shared_at: null
+    error: null
+
+update_linkage_setting:
+  method: PATCH
+  path: /v1/money-planner/linkages/{target_system}
+  request:
+    enabled: true
+    share_scope: "financial_plan_summary"
+  response_200:
+    success: true
+    data:
+      target_system: "life_planner"
+      enabled: true
+      share_scope: "financial_plan_summary"
+      updated_at: "2026-04-14T20:15:00+09:00"
+    error: null
+
+manual_share:
+  method: POST
+  path: /v1/money-planner/linkages/share
+  request:
+    target_system: "inheritance_support"
+    share_scope: "asset_summary"
+    payload:
+      plan_id: "uuid"
+      base_currency: "JPY"
+      total_assets: "5200000.00"
+      total_liabilities: "1800000.00"
+      net_worth: "3400000.00"
+      asset_summaries:
+        - asset_type: "bank_deposit"
+          amount: "1200000.00"
+          currency_code: "JPY"
+        - asset_type: "real_estate"
+          amount: "3000000.00"
+          currency_code: "JPY"
+  response_200:
+    success: true
+    data:
+      target_system: "inheritance_support"
+      share_scope: "asset_summary"
+      shared_at: "2026-04-14T20:20:00+09:00"
+    error: null
+
+role_rules:
+  owner:
+    - get_linkages
+    - update_linkage_setting
+    - manual_share
+  partner_editor:
+    - get_linkages(read_limited)
+  viewer: []
+
+business_rules:
+  - manual_share は owner のみ
+  - enabled=false の target_system に share する場合は warning 候補
+  - share_scope=none のまま manual_share は不可
+  - private 項目は payload に含めない
+  - selected_only は owner が明示選択した対象だけ含める
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100012_MONEY_PLANNER_LINKAGE_SETTINGS_REQUIRED_NULLABLE_MATRIX.md
+
+# ============================================================
+# MONEY PLANNER LINKAGE SETTINGS REQUIRED / NULLABLE MATRIX
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+rule_definitions:
+  required:
+    - key 必須
+    - null 不可
+  fixed_key_nonnull:
+    - response key 固定
+    - null 不可
+  fixed_key_nullable:
+    - response key 固定
+    - null 可
+
+endpoints:
+
+  GET_/v1/money-planner/linkages:
+    response:
+      life_planner.enabled:
+        type: boolean
+        rule: fixed_key_nonnull
+      life_planner.share_scope:
+        type: string
+        rule: fixed_key_nonnull
+      life_planner.last_shared_at:
+        type: iso8601|null
+        rule: fixed_key_nullable
+      end_of_life_planner.enabled:
+        type: boolean
+        rule: fixed_key_nonnull
+      end_of_life_planner.share_scope:
+        type: string
+        rule: fixed_key_nonnull
+      end_of_life_planner.last_shared_at:
+        type: iso8601|null
+        rule: fixed_key_nullable
+      inheritance_support.enabled:
+        type: boolean
+        rule: fixed_key_nonnull
+      inheritance_support.share_scope:
+        type: string
+        rule: fixed_key_nonnull
+      inheritance_support.last_shared_at:
+        type: iso8601|null
+        rule: fixed_key_nullable
+
+  PATCH_/v1/money-planner/linkages/{target_system}:
+    request:
+      enabled:
+        type: boolean
+        rule: required
+      share_scope:
+        type: string
+        rule: required
+    response:
+      target_system:
+        type: string
+        rule: fixed_key_nonnull
+      enabled:
+        type: boolean
+        rule: fixed_key_nonnull
+      share_scope:
+        type: string
+        rule: fixed_key_nonnull
+      updated_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+  POST_/v1/money-planner/linkages/share:
+    request:
+      target_system:
+        type: string
+        rule: required
+      share_scope:
+        type: string
+        rule: required
+      payload:
+        type: object
+        rule: required
+    response:
+      target_system:
+        type: string
+        rule: fixed_key_nonnull
+      share_scope:
+        type: string
+        rule: fixed_key_nonnull
+      shared_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100013_MONEY_PLANNER_DASHBOARD_ALERT_API_EXACT_PAYLOAD_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER DASHBOARD ALERT API EXACT PAYLOAD CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - dashboard alerts の exact payload を固定する
+  - shortage / duplicate candidate / review pending を統一形式で扱う
+  - alert 一覧と acknowledge を正本化する
+
+api_group:
+  - list_alerts
+  - acknowledge_alert
+
+list_alerts:
+  method: GET
+  path: /v1/money-planner/alerts
+  query:
+    severity:
+      type: enum[high,medium,low]
+      required: false
+    alert_type:
+      type: enum[shortage_risk,duplicate_candidate,review_pending,goal_delay,sharing_visibility_warning]
+      required: false
+  response_200:
+    success: true
+    data:
+      items:
+        - alert_id: "uuid"
+          alert_type: "shortage_risk"
+          severity: "high"
+          target_month: "2026-09"
+          related_goal_id: null
+          related_event_budget_id: "uuid"
+          related_candidate_registry_id: null
+          title: "2026-09 資金不足見込み"
+          message: "大型イベント費用により月次残高がマイナス見込みです。"
+          acknowledged_flag: false
+          created_at: "2026-04-14T20:00:00+09:00"
+        - alert_id: "uuid"
+          alert_type: "duplicate_candidate"
+          severity: "medium"
+          target_month: null
+          related_goal_id: null
+          related_event_budget_id: null
+          related_candidate_registry_id: "uuid"
+          title: "重複候補があります"
+          message: "受入候補レビューで確認が必要です。"
+          acknowledged_flag: false
+          created_at: "2026-04-14T20:05:00+09:00"
+      total_count: 2
+    error: null
+
+acknowledge_alert:
+  method: PATCH
+  path: /v1/money-planner/alerts/{alert_id}/acknowledge
+  request:
+    acknowledged_flag: true
+  response_200:
+    success: true
+    data:
+      alert_id: "uuid"
+      acknowledged_flag: true
+      acknowledged_at: "2026-04-14T20:10:00+09:00"
+    error: null
+
+role_rules:
+  owner:
+    - list_alerts
+    - acknowledge_alert
+  partner_editor:
+    - list_alerts(limited)
+  viewer:
+    - list_alerts(shared_scope_only)
+
+alert_generation_policy:
+  shortage_risk:
+    generated_when:
+      - monthly_projection.shortage_flag = true
+  duplicate_candidate:
+    generated_when:
+      - duplicate_candidate_count > 0
+  review_pending:
+    generated_when:
+      - received_count > 0 or draft_candidate_count > 0
+  goal_delay:
+    generated_when:
+      - active goal の達成見込みが遅延
+  sharing_visibility_warning:
+    generated_when:
+      - shared summary と owner summary の差が大きい場合の注意候補
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100014_MONEY_PLANNER_DASHBOARD_ALERT_REQUIRED_NULLABLE_MATRIX.md
+
+# ============================================================
+# MONEY PLANNER DASHBOARD ALERT REQUIRED / NULLABLE MATRIX
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+rule_definitions:
+  optional_omit_only:
+    - 未指定時は key を送らない
+  required:
+    - key 必須
+    - null 不可
+  fixed_key_nonnull:
+    - response key 固定
+    - null 不可
+  fixed_key_nullable:
+    - response key 固定
+    - null 可
+
+endpoints:
+
+  GET_/v1/money-planner/alerts:
+    query:
+      severity:
+        type: string
+        rule: optional_omit_only
+      alert_type:
+        type: string
+        rule: optional_omit_only
+    response_item:
+      alert_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      alert_type:
+        type: string
+        rule: fixed_key_nonnull
+      severity:
+        type: string
+        rule: fixed_key_nonnull
+      target_month:
+        type: string|null
+        rule: fixed_key_nullable
+      related_goal_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      related_event_budget_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      related_candidate_registry_id:
+        type: uuid|null
+        rule: fixed_key_nullable
+      title:
+        type: string
+        rule: fixed_key_nonnull
+      message:
+        type: string
+        rule: fixed_key_nonnull
+      acknowledged_flag:
+        type: boolean
+        rule: fixed_key_nonnull
+      created_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+  PATCH_/v1/money-planner/alerts/{alert_id}/acknowledge:
+    request:
+      acknowledged_flag:
+        type: boolean
+        rule: required
+    response:
+      alert_id:
+        type: uuid
+        rule: fixed_key_nonnull
+      acknowledged_flag:
+        type: boolean
+        rule: fixed_key_nonnull
+      acknowledged_at:
+        type: iso8601
+        rule: fixed_key_nonnull
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100015_MONEY_PLANNER_SCREEN_TO_API_COMPLETE_BINDING_CATALOG.md
+
+# ============================================================
+# MONEY PLANNER SCREEN TO API COMPLETE BINDING CATALOG
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - 全画面と API の対応を正本化する
+  - 初期表示 / 作成 / 更新 / 削除 / 補助取得を一元管理する
+  - UI 実装時の迷いを減らす
+
+screens:
+
+  MP-001_dashboard:
+    screen_name: dashboard
+    initial_load:
+      - GET /v1/money-planner/dashboard
+      - GET /v1/money-planner/alerts
+    optional_followups:
+      - GET /v1/money-planner/projections/monthly
+      - GET /v1/money-planner/projections/yearly
+    source_docs:
+      - 1200100006_MONEY_PLANNER_DASHBOARD_EXACT_PAYLOAD_RECONNECTED_TO_LOGICAL_VIEW.md
+      - 1200100013_MONEY_PLANNER_DASHBOARD_ALERT_API_EXACT_PAYLOAD_CANONICAL.md
+
+  MP-002_income_list:
+    screen_name: income_list
+    initial_load:
+      - GET /v1/money-planner/incomes
+    create:
+      - POST /v1/money-planner/incomes
+    update:
+      - PATCH /v1/money-planner/incomes/{income_id}
+    delete:
+      - DELETE /v1/money-planner/incomes/{income_id}
+
+  MP-003_expense_list:
+    screen_name: expense_list
+    initial_load:
+      - GET /v1/money-planner/expenses
+    create:
+      - POST /v1/money-planner/expenses
+    update:
+      - PATCH /v1/money-planner/expenses/{expense_id}
+    delete:
+      - DELETE /v1/money-planner/expenses/{expense_id}
+
+  MP-004_asset_list:
+    screen_name: asset_list
+    initial_load:
+      - GET /v1/money-planner/assets
+    create:
+      - POST /v1/money-planner/assets
+    update:
+      - PATCH /v1/money-planner/assets/{asset_id}
+    delete:
+      - DELETE /v1/money-planner/assets/{asset_id}
+
+  MP-005_liability_list:
+    screen_name: liability_list
+    initial_load:
+      - GET /v1/money-planner/liabilities
+    create:
+      - POST /v1/money-planner/liabilities
+    update:
+      - PATCH /v1/money-planner/liabilities/{liability_id}
+    delete:
+      - DELETE /v1/money-planner/liabilities/{liability_id}
+
+  MP-006_saving_goal_list:
+    screen_name: saving_goal_list
+    initial_load:
+      - GET /v1/money-planner/saving-goals
+    create:
+      - POST /v1/money-planner/saving-goals
+    update:
+      - PATCH /v1/money-planner/saving-goals/{goal_id}
+    delete:
+      - DELETE /v1/money-planner/saving-goals/{goal_id}
+
+  MP-007_event_budget_list:
+    screen_name: event_budget_list
+    initial_load:
+      - GET /v1/money-planner/event-budgets
+    create:
+      - POST /v1/money-planner/event-budgets
+    update:
+      - PATCH /v1/money-planner/event-budgets/{event_budget_id}
+    delete:
+      - DELETE /v1/money-planner/event-budgets/{event_budget_id}
+
+  MP-008_monthly_projection:
+    screen_name: monthly_projection
+    initial_load:
+      - GET /v1/money-planner/projections/monthly
+
+  MP-009_yearly_projection:
+    screen_name: yearly_projection
+    initial_load:
+      - GET /v1/money-planner/projections/yearly
+
+  MP-010_scenario_compare:
+    screen_name: scenario_compare
+    initial_load:
+      - GET /v1/money-planner/scenarios
+    create:
+      - POST /v1/money-planner/scenarios
+    compare:
+      - POST /v1/money-planner/scenarios/compare
+
+  MP-011_family_sharing:
+    screen_name: family_sharing
+    initial_load:
+      - GET /v1/money-planner/sharing/members
+    create:
+      - POST /v1/money-planner/sharing/members
+    update:
+      - PATCH /v1/money-planner/sharing/members/{shared_member_id}
+    delete:
+      - DELETE /v1/money-planner/sharing/members/{shared_member_id}
+    supplementary:
+      - GET /v1/money-planner/sharing/members/{shared_member_id}/visible-summary
+
+  MP-012_memo_list:
+    screen_name: memo_list
+    initial_load:
+      - GET /v1/money-planner/memos
+    create:
+      - POST /v1/money-planner/memos
+    update:
+      - PATCH /v1/money-planner/memos/{memo_id}
+    delete:
+      - DELETE /v1/money-planner/memos/{memo_id}
+
+  MP-013_alerts:
+    screen_name: alerts
+    initial_load:
+      - GET /v1/money-planner/alerts
+    update:
+      - PATCH /v1/money-planner/alerts/{alert_id}/acknowledge
+
+  MP-014_linkage_settings:
+    screen_name: linkage_settings
+    initial_load:
+      - GET /v1/money-planner/linkages
+    update:
+      - PATCH /v1/money-planner/linkages/{target_system}
+    execute:
+      - POST /v1/money-planner/linkages/share
+
+  MP-015_receive_candidate_review:
+    screen_name: receive_candidate_review
+    initial_load:
+      - GET /v1/money-planner/receive-candidates
+    detail:
+      - GET /v1/money-planner/receive-candidates/{candidate_registry_id}
+    update_status:
+      - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/status
+    update_visibility:
+      - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/visibility
+    supplementary:
+      - GET /v1/money-planner/receive-candidates/{candidate_registry_id}/duplicate-reference
+
+binding_rules:
+  - 画面初期表示 API は screen open 時の最小集合とする
+  - 補助 summary は supplementary として分離できる
+  - role ごとの制御は API 側だけでなく UI 側でも隠す
+  - free / plus_family の plan 制御は screen 単位でも適用する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100016_MONEY_PLANNER_API_ERROR_CODE_TO_SCREEN_ERROR_KEY_MAPPING.md
+
+# ============================================================
+# MONEY PLANNER API ERROR CODE TO SCREEN ERROR KEY MAPPING
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - API error code と screen error key の対応を固定する
+  - UI が message 文字列に依存しないようにする
+  - field error / form error / global error の出し分けを整理する
+
+source_of_truth:
+  api_error_doc:
+    - 1200100005_MONEY_PLANNER_API_ERROR_CODE_CATALOG.md
+  screen_validation_doc:
+    - 0900100002_MONEY_PLANNER_SCREEN_INPUT_VALIDATION_CANONICAL.md
+
+error_display_levels:
+  field_error:
+    - 特定 field に紐づく
+  form_error:
+    - フォーム全体に紐づく
+  global_error:
+    - 画面全体の通知帯に表示する
+
+mapping:
+
+  MP-400-001:
+    meaning: required field missing
+    target_error_keys:
+      - validation.required
+    display_level: field_error
+    typical_targets:
+      - income_form.title
+      - income_form.amount
+      - expense_form.title
+      - saving_goal_form.goal_name
+      - event_budget_form.event_name
+      - sharing_invite_form.user_ref
+      - memo_form.body
+
+  MP-400-002:
+    meaning: invalid currency_code
+    target_error_keys:
+      - validation.currency.invalid
+    display_level: field_error
+    typical_targets:
+      - dashboard.base_currency
+      - income_form.currency_code
+      - expense_form.currency_code
+      - asset_form.currency_code
+      - liability_form.currency_code
+      - saving_goal_form.currency_code
+      - event_budget_form.currency_code
+
+  MP-400-003:
+    meaning: invalid enum value
+    target_error_keys:
+      - validation.enum.invalid
+    display_level: field_error
+    typical_targets:
+      - income_form.frequency
+      - expense_form.necessity_level
+      - asset_form.asset_type
+      - liability_form.liability_type
+      - saving_goal_form.status
+      - scenario_form.scenario_type
+      - sharing_invite_form.role
+      - sharing_invite_form.visibility_scope
+
+  MP-400-004:
+    meaning: invalid date range
+    target_error_keys:
+      - validation.date.invalid_range
+    display_level: field_error
+    typical_targets:
+      - income_form.end_date
+      - expense_form.end_date
+      - saving_goal_form.target_date
+
+  MP-400-005:
+    meaning: amount must be nonnegative
+    target_error_keys:
+      - validation.amount.nonnegative_only
+    display_level: field_error
+    typical_targets:
+      - income_form.amount
+      - expense_form.amount
+      - asset_form.amount
+      - liability_form.balance_amount
+      - liability_form.monthly_payment
+      - saving_goal_form.current_saved_amount
+      - saving_goal_form.monthly_target_amount
+
+  MP-400-006:
+    meaning: target_amount must be positive
+    target_error_keys:
+      - validation.amount.positive_only
+    display_level: field_error
+    typical_targets:
+      - saving_goal_form.target_amount
+      - event_budget_form.target_amount
+
+  MP-401-001:
+    meaning: authentication required
+    target_error_keys:
+      - auth.required
+    display_level: global_error
+    typical_targets:
+      - all_authenticated_screens
+
+  MP-401-002:
+    meaning: token invalid
+    target_error_keys:
+      - auth.invalid
+    display_level: global_error
+    typical_targets:
+      - all_authenticated_screens
+
+  MP-403-001:
+    meaning: viewer role cannot update resource
+    target_error_keys:
+      - permission.viewer.read_only
+    display_level: form_error
+    typical_targets:
+      - any_edit_form
+
+  MP-403-002:
+    meaning: partner_editor cannot update private resource
+    target_error_keys:
+      - permission.partner_editor.private_denied
+    display_level: form_error
+    typical_targets:
+      - receive_candidate_review
+      - income_form
+      - expense_form
+      - asset_form
+      - liability_form
+      - saving_goal_form
+      - event_budget_form
+      - memo_form
+
+  MP-403-003:
+    meaning: only owner can execute external share
+    target_error_keys:
+      - permission.owner_only.manual_share
+    display_level: form_error
+    typical_targets:
+      - linkage_settings
+      - receive_candidate_review
+
+  MP-403-004:
+    meaning: plan access denied
+    target_error_keys:
+      - permission.plan.access_denied
+    display_level: global_error
+    typical_targets:
+      - dashboard
+      - family_sharing
+      - linkage_settings
+      - receive_candidate_review
+
+  MP-403-005:
+    meaning: only owner can manage shared members
+    target_error_keys:
+      - permission.owner_only.sharing_manage
+    display_level: form_error
+    typical_targets:
+      - family_sharing
+
+  MP-404-001:
+    meaning: plan not found
+    target_error_keys:
+      - data.plan.not_found
+    display_level: global_error
+    typical_targets:
+      - dashboard
+      - yearly_projection
+      - monthly_projection
+      - family_sharing
+      - linkage_settings
+
+  MP-404-002:
+    meaning: income item not found
+    target_error_keys:
+      - data.income.not_found
+    display_level: form_error
+    typical_targets:
+      - income_list
+      - income_form
+
+  MP-404-003:
+    meaning: expense item not found
+    target_error_keys:
+      - data.expense.not_found
+    display_level: form_error
+    typical_targets:
+      - expense_list
+      - expense_form
+
+  MP-404-004:
+    meaning: asset item not found
+    target_error_keys:
+      - data.asset.not_found
+    display_level: form_error
+    typical_targets:
+      - asset_list
+      - asset_form
+
+  MP-404-005:
+    meaning: liability item not found
+    target_error_keys:
+      - data.liability.not_found
+    display_level: form_error
+    typical_targets:
+      - liability_list
+      - liability_form
+
+  MP-404-006:
+    meaning: saving goal not found
+    target_error_keys:
+      - data.saving_goal.not_found
+    display_level: form_error
+    typical_targets:
+      - saving_goal_list
+      - saving_goal_form
+
+  MP-404-007:
+    meaning: event budget not found
+    target_error_keys:
+      - data.event_budget.not_found
+    display_level: form_error
+    typical_targets:
+      - event_budget_list
+      - event_budget_form
+
+  MP-404-008:
+    meaning: scenario not found
+    target_error_keys:
+      - data.scenario.not_found
+    display_level: form_error
+    typical_targets:
+      - scenario_compare
+
+  MP-404-009:
+    meaning: shared member not found
+    target_error_keys:
+      - data.shared_member.not_found
+    display_level: form_error
+    typical_targets:
+      - family_sharing
+
+  MP-404-010:
+    meaning: memo not found
+    target_error_keys:
+      - data.memo.not_found
+    display_level: form_error
+    typical_targets:
+      - memo_list
+      - memo_form
+
+  MP-404-011:
+    meaning: receive candidate not found
+    target_error_keys:
+      - data.receive_candidate.not_found
+    display_level: form_error
+    typical_targets:
+      - receive_candidate_review
+
+  MP-404-012:
+    meaning: shared member not found
+    target_error_keys:
+      - data.shared_member.not_found
+    display_level: form_error
+    typical_targets:
+      - family_sharing
+
+  MP-409-001:
+    meaning: shared member already exists
+    target_error_keys:
+      - conflict.shared_member.exists
+    display_level: form_error
+    typical_targets:
+      - family_sharing.invite
+
+  MP-409-002:
+    meaning: scenario name already exists
+    target_error_keys:
+      - conflict.scenario.name_exists
+    display_level: field_error
+    typical_targets:
+      - scenario_form.name
+
+  MP-409-003:
+    meaning: duplicate active plan name in same owner scope
+    target_error_keys:
+      - conflict.plan.name_exists
+    display_level: field_error
+    typical_targets:
+      - plan_settings_form.plan_name
+
+  MP-409-004:
+    meaning: duplicate reference conflict unresolved
+    target_error_keys:
+      - conflict.receive_candidate.duplicate_unresolved
+    display_level: form_error
+    typical_targets:
+      - receive_candidate_review
+
+  MP-409-005:
+    meaning: shared member already invited
+    target_error_keys:
+      - conflict.shared_member.already_invited
+    display_level: form_error
+    typical_targets:
+      - family_sharing.invite
+
+  MP-422-001:
+    meaning: free plan cannot use compare api
+    target_error_keys:
+      - plan_limit.scenario_compare.unavailable
+    display_level: global_error
+    typical_targets:
+      - scenario_compare
+
+  MP-422-002:
+    meaning: free plan cannot use sharing api
+    target_error_keys:
+      - plan_limit.family_sharing.unavailable
+    display_level: global_error
+    typical_targets:
+      - family_sharing
+
+  MP-422-003:
+    meaning: free plan cannot use linkage manual share
+    target_error_keys:
+      - plan_limit.manual_share.unavailable
+    display_level: global_error
+    typical_targets:
+      - linkage_settings
+
+  MP-422-004:
+    meaning: share_scope invalid for target system
+    target_error_keys:
+      - validation.share_scope.invalid_for_target
+    display_level: form_error
+    typical_targets:
+      - linkage_settings
+
+  MP-422-005:
+    meaning: invalid candidate status transition
+    target_error_keys:
+      - validation.receive_candidate.invalid_status_transition
+    display_level: form_error
+    typical_targets:
+      - receive_candidate_review
+
+  MP-422-006:
+    meaning: invalid role transition
+    target_error_keys:
+      - validation.shared_member.invalid_role_transition
+    display_level: form_error
+    typical_targets:
+      - family_sharing
+
+  MP-500-001:
+    meaning: unexpected server error
+    target_error_keys:
+      - system.unexpected_error
+    display_level: global_error
+    typical_targets:
+      - all_screens
+
+  MP-503-001:
+    meaning: projection service temporarily unavailable
+    target_error_keys:
+      - system.projection_temporarily_unavailable
+    display_level: global_error
+    typical_targets:
+      - dashboard
+      - monthly_projection
+      - yearly_projection
+
+mapping_rules:
+  - field_error は可能なら具体 field へ紐づける
+  - field を特定できない validation は form_error に落とす
+  - permission / auth / server は原則 global_error
+  - UI 文言は error key から翻訳テーブルで解決する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.api/1200100017_MONEY_PLANNER_SCREEN_ERROR_KEY_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER SCREEN ERROR KEY CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - screen 表示用 error key の正本を固定する
+  - API error code mapping の受け皿にする
+
+error_keys:
+
+  validation:
+    - validation.required
+    - validation.currency.invalid
+    - validation.enum.invalid
+    - validation.date.invalid
+    - validation.date.invalid_range
+    - validation.amount.required
+    - validation.amount.invalid_format
+    - validation.amount.nonnegative_only
+    - validation.amount.positive_only
+    - validation.amount.scale_exceeded
+    - validation.share_scope.invalid_for_target
+    - validation.receive_candidate.invalid_status_transition
+    - validation.shared_member.invalid_role_transition
+
+  auth:
+    - auth.required
+    - auth.invalid
+
+  permission:
+    - permission.viewer.read_only
+    - permission.partner_editor.private_denied
+    - permission.owner_only.manual_share
+    - permission.owner_only.sharing_manage
+    - permission.plan.access_denied
+
+  data:
+    - data.plan.not_found
+    - data.income.not_found
+    - data.expense.not_found
+    - data.asset.not_found
+    - data.liability.not_found
+    - data.saving_goal.not_found
+    - data.event_budget.not_found
+    - data.scenario.not_found
+    - data.shared_member.not_found
+    - data.memo.not_found
+    - data.receive_candidate.not_found
+
+  conflict:
+    - conflict.shared_member.exists
+    - conflict.shared_member.already_invited
+    - conflict.scenario.name_exists
+    - conflict.plan.name_exists
+    - conflict.receive_candidate.duplicate_unresolved
+
+  plan_limit:
+    - plan_limit.scenario_compare.unavailable
+    - plan_limit.family_sharing.unavailable
+    - plan_limit.manual_share.unavailable
+
+  system:
+    - system.unexpected_error
+    - system.projection_temporarily_unavailable
+
+display_policy:
+  - form field に紐づくものは field_error として出す
+  - 画面全体制約は banner / dialog で出す
+  - 同時に複数発生する場合は field_error を優先して表示する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+
+# ============================================================
+# IMPLEMENTATION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 120.implementation
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+  - 1200004_MONEY_PLANNER_IMPLEMENTATION_PLAN.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+
+# ============================================================
+# IMPLEMENTATION CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 120.implementation
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の 実装 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/010.core/1200004_MONEY_PLANNER_IMPLEMENTATION_PLAN.md
+
+# ============================================================
+# MONEY PLANNER IMPLEMENTATION PLAN
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 120.implementation
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+implementation_steps:
+  - app_shell
+  - financial_plan_crud
+  - income_expense_management
+  - asset_liability_management
+  - purpose_fund_management
+  - event_cost_management
+  - review_cycle_management
+  - family_share_view
+  - ai_support_entry
+  - lifeos_bridge
+
+notes:
+  - 共通部品詳細は別正本参照
+  - 本アプリでは app-specific extension を実装する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200000_DB_INDEX.md
+
+# DB INDEX
+documents:
+  - 1200200001_MONEY_PLANNER_DB_LOGICAL_SCHEMA_OVERVIEW.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200001_DB_OVERVIEW.md
+
+# DB OVERVIEW
+role:
+  - exact table 定義前の論理整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200001_MONEY_PLANNER_DB_LOGICAL_SCHEMA_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER DB LOGICAL SCHEMA OVERVIEW
+# ============================================================
+
+tables:
+  - mp_income_item
+  - mp_expense_item
+  - mp_asset_item
+  - mp_liability_item
+  - mp_saving_goal
+  - mp_event_budget
+  - mp_financial_snapshot
+  - mp_scenario
+  - mp_shared_member
+  - mp_memo_item
+
+policies:
+  - UUID 主キー前提
+  - created_at / updated_at / deleted_at を基本採用
+  - amount は decimal string 相当精度で扱う前提
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200002_MONEY_PLANNER_DB_EXACT_TABLE_DEFINITION.md
+
+# ============================================================
+# MONEY PLANNER DB EXACT TABLE DEFINITION
+# 佐藤（DB担当）レビュー前提
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: db
+
+db_policy:
+  schema_name: app_money_planner
+  primary_key:
+    - UUID
+  lifecycle_columns:
+    - created_at
+    - updated_at
+    - deleted_at
+  amount_policy:
+    - amount系は numeric(18,2) 前提
+  currency_policy:
+    - currency_code は char(3) または varchar(3) 前提
+  notes:
+    - 本資料は logical exact 定義
+    - 実SQL化前に佐藤レビュー参加を前提とする
+
+tables:
+  mp_plan:
+    purpose:
+      - MoneyPlanner の1計画単位
+    columns:
+      - plan_id: uuid pk
+      - owner_user_id: uuid not null
+      - base_currency: varchar(3) not null
+      - display_currency: varchar(3) null
+      - plan_name: varchar(200) not null
+      - status: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_income_item:
+    purpose:
+      - 収入管理
+    columns:
+      - income_item_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - title: varchar(200) not null
+      - category: varchar(100) not null
+      - amount: numeric(18,2) not null
+      - currency_code: varchar(3) not null
+      - frequency: varchar(30) not null
+      - start_date: date not null
+      - end_date: date null
+      - active_flag: boolean not null
+      - memo: text null
+      - visibility_scope: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_expense_item:
+    purpose:
+      - 支出管理
+    columns:
+      - expense_item_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - title: varchar(200) not null
+      - category: varchar(100) not null
+      - amount: numeric(18,2) not null
+      - currency_code: varchar(3) not null
+      - frequency: varchar(30) not null
+      - necessity_level: varchar(30) not null
+      - start_date: date not null
+      - end_date: date null
+      - active_flag: boolean not null
+      - memo: text null
+      - visibility_scope: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_asset_item:
+    purpose:
+      - 資産台帳
+    columns:
+      - asset_item_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - asset_type: varchar(50) not null
+      - title: varchar(200) not null
+      - amount: numeric(18,2) not null
+      - currency_code: varchar(3) not null
+      - institution_name: varchar(200) null
+      - valuation_basis: varchar(50) not null
+      - liquidity_level: varchar(30) not null
+      - ownership_scope: varchar(30) not null
+      - memo: text null
+      - visibility_scope: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_liability_item:
+    purpose:
+      - 負債台帳
+    columns:
+      - liability_item_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - liability_type: varchar(50) not null
+      - title: varchar(200) not null
+      - balance_amount: numeric(18,2) not null
+      - currency_code: varchar(3) not null
+      - monthly_payment: numeric(18,2) null
+      - interest_note: text null
+      - due_date: date null
+      - ownership_scope: varchar(30) not null
+      - memo: text null
+      - visibility_scope: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_saving_goal:
+    purpose:
+      - 目標積立
+    columns:
+      - saving_goal_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - goal_name: varchar(200) not null
+      - target_amount: numeric(18,2) not null
+      - currency_code: varchar(3) not null
+      - current_saved_amount: numeric(18,2) not null
+      - monthly_target_amount: numeric(18,2) null
+      - target_date: date null
+      - linked_event_budget_id: uuid null
+      - status: varchar(30) not null
+      - memo: text null
+      - visibility_scope: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_event_budget:
+    purpose:
+      - ライフイベント費用
+    columns:
+      - event_budget_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - event_name: varchar(200) not null
+      - planned_date: date null
+      - target_amount: numeric(18,2) not null
+      - currency_code: varchar(3) not null
+      - priority: varchar(30) not null
+      - related_family_member: varchar(200) null
+      - funding_source_note: text null
+      - memo: text null
+      - visibility_scope: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_scenario:
+    purpose:
+      - 比較シナリオ
+    columns:
+      - scenario_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - name: varchar(200) not null
+      - description: text null
+      - scenario_type: varchar(50) not null
+      - base_currency: varchar(3) not null
+      - active_flag: boolean not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_shared_member:
+    purpose:
+      - 共同利用メンバー
+    columns:
+      - shared_member_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - user_ref: varchar(200) not null
+      - display_name: varchar(200) not null
+      - role: varchar(30) not null
+      - visibility_scope: varchar(30) not null
+      - invited_at: timestamptz not null
+      - accepted_at: timestamptz null
+      - status: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_memo_item:
+    purpose:
+      - 補足メモ
+    columns:
+      - memo_item_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - owner_user_id: uuid not null
+      - memo_type: varchar(50) not null
+      - title: varchar(200) not null
+      - body: text not null
+      - visibility_scope: varchar(30) not null
+      - created_at: timestamptz not null
+      - updated_at: timestamptz not null
+      - deleted_at: timestamptz null
+
+  mp_financial_snapshot:
+    purpose:
+      - 月次/年次スナップショット
+    columns:
+      - financial_snapshot_id: uuid pk
+      - plan_id: uuid fk->mp_plan.plan_id not null
+      - snapshot_date: date not null
+      - base_currency: varchar(3) not null
+      - total_income: numeric(18,2) not null
+      - total_expense: numeric(18,2) not null
+      - total_assets: numeric(18,2) not null
+      - total_liabilities: numeric(18,2) not null
+      - net_worth: numeric(18,2) not null
+      - scenario_id: uuid null
+      - created_at: timestamptz not null
+
+recommended_indexes:
+  - mp_income_item(plan_id, active_flag, start_date)
+  - mp_expense_item(plan_id, active_flag, start_date)
+  - mp_asset_item(plan_id, asset_type)
+  - mp_liability_item(plan_id, liability_type)
+  - mp_saving_goal(plan_id, status, target_date)
+  - mp_event_budget(plan_id, planned_date, priority)
+  - mp_scenario(plan_id, active_flag)
+  - mp_shared_member(plan_id, role, status)
+  - mp_financial_snapshot(plan_id, snapshot_date)
+
+join_principles:
+  - すべての主データは mp_plan に従属
+  - shared member は plan 単位で管理
+  - snapshot は plan 単位 + scenario 単位で保存可能
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200003_MONEY_PLANNER_DB_ENUM_AND_CONSTRAINT_POLICY.md
+
+# ============================================================
+# MONEY PLANNER DB ENUM AND CONSTRAINT POLICY
+# 佐藤（DB担当）レビュー前提
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+
+enum_candidates:
+  frequency:
+    - daily
+    - weekly
+    - monthly
+    - yearly
+    - one_time
+
+  necessity_level:
+    - essential
+    - normal
+    - optional
+
+  asset_type:
+    - cash
+    - bank_deposit
+    - securities
+    - insurance
+    - real_estate
+    - other
+
+  liability_type:
+    - mortgage
+    - loan
+    - credit_card
+    - other
+
+  valuation_basis:
+    - input_manual
+    - latest_known
+    - estimate
+
+  liquidity_level:
+    - high
+    - medium
+    - low
+
+  ownership_scope:
+    - individual
+    - couple
+    - family
+
+  visibility_scope:
+    - private
+    - shared
+
+  saving_goal_status:
+    - active
+    - paused
+    - completed
+    - archived
+
+  event_priority:
+    - high
+    - medium
+    - low
+
+  scenario_type:
+    - default
+    - saving
+    - expense_increase
+    - income_decrease
+    - event_forward
+
+  shared_role:
+    - owner
+    - partner_editor
+    - viewer
+
+  member_status:
+    - pending
+    - active
+    - removed
+
+  memo_type:
+    - general
+    - insurance
+    - pension
+    - tax_estimate
+    - handover
+
+constraint_candidates:
+  - amount >= 0
+  - balance_amount >= 0
+  - target_amount > 0
+  - current_saved_amount >= 0
+  - monthly_target_amount is null or monthly_target_amount >= 0
+  - monthly_payment is null or monthly_payment >= 0
+  - base_currency length = 3
+  - currency_code length = 3
+  - target_date is null or target_date >= start_date
+  - deleted_at is null or deleted_at >= created_at
+
+uniqueness_candidates:
+  - mp_shared_member(plan_id, user_ref) unique where deleted_at is null
+  - mp_scenario(plan_id, name) unique where deleted_at is null and active_flag in (true,false)
+
+notes:
+  - enum 実装は check constraint or reference master のいずれかで固定
+  - 実SQL化前に佐藤レビューを前提とする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200004_MONEY_PLANNER_DB_EXACT_SQL_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER DB EXACT SQL CANONICAL
+# 佐藤（DB担当）レビュー前提
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: db
+
+scope:
+  - schema 作成
+  - table 作成
+  - index 作成
+  - updated_at trigger 作成
+  - projection / dashboard 用 summary view 作成
+  - logical delete 前提
+
+sql_files:
+  - 1200200005_MONEY_PLANNER_DB_EXACT_SQL_DDL.sql
+  - 1200200006_MONEY_PLANNER_DB_EXACT_SQL_INDEX_AND_TRIGGER.sql
+  - 1200200007_MONEY_PLANNER_DB_EXACT_SQL_VIEW.sql
+
+review_rule:
+  - 実DB適用前に佐藤（DB担当）レビューを前提とする
+
+notes:
+  - 金額系は numeric(18,2)
+  - UUID 主キー
+  - timestamptz 採用
+  - deleted_at による論理削除前提
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200004_MONEY_PLANNER_LIFE_SCHEMA_DATA_PLACEMENT_POLICY.md
+
+# ============================================================
+# MONEY PLANNER LIFE SCHEMA DATA PLACEMENT POLICY
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: db
+schema_policy:
+  schema_name: life
+  decision: fixed
+  reason:
+    - MoneyPlanner は LifeOS 配下アプリである
+    - 個人/家族向け life domain データとして扱う
+    - app 専用 schema ではなく life schema 内で管理する
+
+placement_principles:
+  - MoneyPlanner 固有データは life schema に配置する
+  - 他 LifeOS アプリと衝突しないよう接頭辞で分離する
+  - physical SQL はまだ作らない
+  - 現段階では logical table / logical view / logical audit 単位で定義する
+  - 他アプリ共有は table 直結ではなく payload 境界を通す
+
+logical_object_prefix_policy:
+  table_prefix: mp_
+  view_prefix: v_mp_
+  audit_prefix: mp_audit_
+  history_prefix: mp_history_
+  note:
+    - mp = MoneyPlanner
+    - life schema 内で名前衝突を避ける
+
+scope_in_life_schema:
+  included:
+    - plan
+    - income
+    - expense
+    - asset
+    - liability
+    - saving_goal
+    - event_budget
+    - scenario
+    - shared_member
+    - memo
+    - financial_snapshot
+    - audit_log
+    - change_log
+  excluded:
+    - 投資助言エンジン
+    - 税務確定ロジック
+    - 法務確定ロジック
+    - 実行系バッチ詳細
+
+design_constraints:
+  - user 単位 / family 単位の境界を持つ
+  - private/shared の visibility を保持する
+  - deleted_at 前提の論理削除を基本とする
+  - 金額は多通貨対応前提で currency_code を持つ
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200005_MONEY_PLANNER_LIFE_SCHEMA_LOGICAL_TABLE_CATALOG.md
+
+# ============================================================
+# MONEY PLANNER LIFE SCHEMA LOGICAL TABLE CATALOG
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+schema_name: life
+
+logical_tables:
+  - logical_name: life.mp_plan
+    purpose:
+      - MoneyPlanner の1計画単位
+    key_fields:
+      - plan_id
+      - owner_user_id
+      - plan_name
+      - base_currency
+      - display_currency
+      - status
+
+  - logical_name: life.mp_income_item
+    purpose:
+      - 収入管理
+    key_fields:
+      - income_item_id
+      - plan_id
+      - title
+      - category
+      - amount
+      - currency_code
+      - frequency
+      - active_flag
+      - visibility_scope
+
+  - logical_name: life.mp_expense_item
+    purpose:
+      - 支出管理
+    key_fields:
+      - expense_item_id
+      - plan_id
+      - title
+      - category
+      - amount
+      - currency_code
+      - frequency
+      - necessity_level
+      - active_flag
+      - visibility_scope
+
+  - logical_name: life.mp_asset_item
+    purpose:
+      - 資産台帳
+    key_fields:
+      - asset_item_id
+      - plan_id
+      - asset_type
+      - title
+      - amount
+      - currency_code
+      - ownership_scope
+      - visibility_scope
+
+  - logical_name: life.mp_liability_item
+    purpose:
+      - 負債台帳
+    key_fields:
+      - liability_item_id
+      - plan_id
+      - liability_type
+      - title
+      - balance_amount
+      - currency_code
+      - ownership_scope
+      - visibility_scope
+
+  - logical_name: life.mp_saving_goal
+    purpose:
+      - 目標積立
+    key_fields:
+      - saving_goal_id
+      - plan_id
+      - goal_name
+      - target_amount
+      - currency_code
+      - current_saved_amount
+      - status
+      - visibility_scope
+
+  - logical_name: life.mp_event_budget
+    purpose:
+      - ライフイベント費用計画
+    key_fields:
+      - event_budget_id
+      - plan_id
+      - event_name
+      - planned_date
+      - target_amount
+      - currency_code
+      - priority
+      - visibility_scope
+
+  - logical_name: life.mp_scenario
+    purpose:
+      - 比較シナリオ
+    key_fields:
+      - scenario_id
+      - plan_id
+      - name
+      - scenario_type
+      - base_currency
+      - active_flag
+
+  - logical_name: life.mp_shared_member
+    purpose:
+      - 共有メンバー管理
+    key_fields:
+      - shared_member_id
+      - plan_id
+      - user_ref
+      - display_name
+      - role
+      - visibility_scope
+      - status
+
+  - logical_name: life.mp_memo_item
+    purpose:
+      - 保険/年金/税金概算/引継ぎメモ
+    key_fields:
+      - memo_item_id
+      - plan_id
+      - memo_type
+      - title
+      - body
+      - visibility_scope
+
+  - logical_name: life.mp_financial_snapshot
+    purpose:
+      - 月次/年次スナップショット
+    key_fields:
+      - financial_snapshot_id
+      - plan_id
+      - snapshot_date
+      - base_currency
+      - total_income
+      - total_expense
+      - total_assets
+      - total_liabilities
+      - net_worth
+      - scenario_id
+
+logical_views:
+  - logical_name: life.v_mp_plan_balance_summary
+    purpose:
+      - ダッシュボード用サマリ
+  - logical_name: life.v_mp_goal_progress_summary
+    purpose:
+      - 目標進捗サマリ
+  - logical_name: life.v_mp_upcoming_event_budget_summary
+    purpose:
+      - 今後イベント費用サマリ
+
+join_policy:
+  - 主要データは mp_plan 配下で束ねる
+  - shared_member は plan 単位
+  - snapshot は plan 単位 + scenario 単位で保持可能
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200006_MONEY_PLANNER_LIFE_SCHEMA_LOGICAL_TABLE_COLUMN_EXACT.md
+
+# ============================================================
+# MONEY PLANNER LIFE SCHEMA LOGICAL TABLE COLUMN EXACT
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: db
+schema_name: life
+
+policy:
+  - logical exact 定義であり physical SQL ではない
+  - MoneyPlanner 固有データは life schema 配下に置く
+  - 接頭辞 mp_ を使用する
+  - amount 系は decimal_string 相当精度を前提とする
+  - 実装時の SQL 化は別工程
+  - create/update/delete/share/import は監査対象候補
+
+logical_tables:
+
+  life.mp_plan:
+    purpose:
+      - MoneyPlanner の計画ルート
+    columns:
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+        required_on_create: true
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+        required_on_create: true
+      - column_name: plan_name
+        logical_type: string(200)
+        nullable: false
+        required_on_create: true
+      - column_name: base_currency
+        logical_type: string(3)
+        nullable: false
+        required_on_create: true
+      - column_name: display_currency
+        logical_type: string(3)
+        nullable: true
+        required_on_create: false
+      - column_name: status
+        logical_type: enum[active,archived,draft]
+        nullable: false
+        required_on_create: true
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_income_item:
+    purpose:
+      - 収入項目
+    columns:
+      - column_name: income_item_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: title
+        logical_type: string(200)
+        nullable: false
+      - column_name: category
+        logical_type: string(100)
+        nullable: false
+      - column_name: amount
+        logical_type: decimal_string
+        nullable: false
+      - column_name: currency_code
+        logical_type: string(3)
+        nullable: false
+      - column_name: frequency
+        logical_type: enum[daily,weekly,monthly,yearly,one_time]
+        nullable: false
+      - column_name: start_date
+        logical_type: yyyy-mm-dd
+        nullable: false
+      - column_name: end_date
+        logical_type: yyyy-mm-dd
+        nullable: true
+      - column_name: active_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: memo
+        logical_type: text
+        nullable: true
+      - column_name: visibility_scope
+        logical_type: enum[private,shared,selected_only]
+        nullable: false
+      - column_name: import_source_system
+        logical_type: enum[manual,life_planner,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: import_source_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[confirmed,draft_candidate,imported,reviewed,rejected]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_expense_item:
+    purpose:
+      - 支出項目
+    columns:
+      - column_name: expense_item_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: title
+        logical_type: string(200)
+        nullable: false
+      - column_name: category
+        logical_type: string(100)
+        nullable: false
+      - column_name: amount
+        logical_type: decimal_string
+        nullable: false
+      - column_name: currency_code
+        logical_type: string(3)
+        nullable: false
+      - column_name: frequency
+        logical_type: enum[daily,weekly,monthly,yearly,one_time]
+        nullable: false
+      - column_name: necessity_level
+        logical_type: enum[essential,normal,optional]
+        nullable: false
+      - column_name: start_date
+        logical_type: yyyy-mm-dd
+        nullable: false
+      - column_name: end_date
+        logical_type: yyyy-mm-dd
+        nullable: true
+      - column_name: active_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: memo
+        logical_type: text
+        nullable: true
+      - column_name: visibility_scope
+        logical_type: enum[private,shared,selected_only]
+        nullable: false
+      - column_name: import_source_system
+        logical_type: enum[manual,life_planner,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: import_source_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[confirmed,draft_candidate,imported,reviewed,rejected]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_asset_item:
+    purpose:
+      - 資産台帳
+    columns:
+      - column_name: asset_item_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: asset_type
+        logical_type: enum[cash,bank_deposit,securities,insurance,real_estate,other]
+        nullable: false
+      - column_name: title
+        logical_type: string(200)
+        nullable: false
+      - column_name: amount
+        logical_type: decimal_string
+        nullable: false
+      - column_name: currency_code
+        logical_type: string(3)
+        nullable: false
+      - column_name: institution_name
+        logical_type: string(200)
+        nullable: true
+      - column_name: valuation_basis
+        logical_type: enum[input_manual,latest_known,estimate]
+        nullable: false
+      - column_name: liquidity_level
+        logical_type: enum[high,medium,low]
+        nullable: false
+      - column_name: ownership_scope
+        logical_type: enum[individual,couple,family]
+        nullable: false
+      - column_name: memo
+        logical_type: text
+        nullable: true
+      - column_name: visibility_scope
+        logical_type: enum[private,shared,selected_only]
+        nullable: false
+      - column_name: import_source_system
+        logical_type: enum[manual,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: import_source_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[confirmed,draft_candidate,imported,reviewed,rejected]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_liability_item:
+    purpose:
+      - 負債台帳
+    columns:
+      - column_name: liability_item_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: liability_type
+        logical_type: enum[mortgage,loan,credit_card,other]
+        nullable: false
+      - column_name: title
+        logical_type: string(200)
+        nullable: false
+      - column_name: balance_amount
+        logical_type: decimal_string
+        nullable: false
+      - column_name: currency_code
+        logical_type: string(3)
+        nullable: false
+      - column_name: monthly_payment
+        logical_type: decimal_string
+        nullable: true
+      - column_name: interest_note
+        logical_type: text
+        nullable: true
+      - column_name: due_date
+        logical_type: yyyy-mm-dd
+        nullable: true
+      - column_name: ownership_scope
+        logical_type: enum[individual,couple,family]
+        nullable: false
+      - column_name: memo
+        logical_type: text
+        nullable: true
+      - column_name: visibility_scope
+        logical_type: enum[private,shared,selected_only]
+        nullable: false
+      - column_name: import_source_system
+        logical_type: enum[manual,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: import_source_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[confirmed,draft_candidate,imported,reviewed,rejected]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_saving_goal:
+    purpose:
+      - 目標積立
+    columns:
+      - column_name: saving_goal_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: goal_name
+        logical_type: string(200)
+        nullable: false
+      - column_name: target_amount
+        logical_type: decimal_string
+        nullable: false
+      - column_name: currency_code
+        logical_type: string(3)
+        nullable: false
+      - column_name: current_saved_amount
+        logical_type: decimal_string
+        nullable: false
+      - column_name: monthly_target_amount
+        logical_type: decimal_string
+        nullable: true
+      - column_name: target_date
+        logical_type: yyyy-mm-dd
+        nullable: true
+      - column_name: linked_event_budget_id
+        logical_type: uuid
+        nullable: true
+      - column_name: status
+        logical_type: enum[active,paused,completed,archived]
+        nullable: false
+      - column_name: memo
+        logical_type: text
+        nullable: true
+      - column_name: visibility_scope
+        logical_type: enum[private,shared,selected_only]
+        nullable: false
+      - column_name: import_source_system
+        logical_type: enum[manual,life_planner,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: import_source_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[confirmed,draft_candidate,imported,reviewed,rejected]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: review_note
+        logical_type: text
+        nullable: true
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_event_budget:
+    purpose:
+      - ライフイベント費用
+    columns:
+      - column_name: event_budget_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: event_name
+        logical_type: string(200)
+        nullable: false
+      - column_name: planned_date
+        logical_type: yyyy-mm-dd
+        nullable: true
+      - column_name: target_amount
+        logical_type: decimal_string
+        nullable: false
+      - column_name: currency_code
+        logical_type: string(3)
+        nullable: false
+      - column_name: priority
+        logical_type: enum[high,medium,low]
+        nullable: false
+      - column_name: related_family_member
+        logical_type: string(200)
+        nullable: true
+      - column_name: funding_source_note
+        logical_type: text
+        nullable: true
+      - column_name: memo
+        logical_type: text
+        nullable: true
+      - column_name: visibility_scope
+        logical_type: enum[private,shared,selected_only]
+        nullable: false
+      - column_name: import_source_system
+        logical_type: enum[manual,life_planner,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: import_source_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[confirmed,draft_candidate,imported,reviewed,rejected]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: review_note
+        logical_type: text
+        nullable: true
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_scenario:
+    purpose:
+      - 比較シナリオ
+    columns:
+      - column_name: scenario_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: name
+        logical_type: string(200)
+        nullable: false
+      - column_name: description
+        logical_type: text
+        nullable: true
+      - column_name: scenario_type
+        logical_type: enum[default,saving,expense_increase,income_decrease,event_forward]
+        nullable: false
+      - column_name: base_currency
+        logical_type: string(3)
+        nullable: false
+      - column_name: active_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_shared_member:
+    purpose:
+      - 共有メンバー
+    columns:
+      - column_name: shared_member_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: user_ref
+        logical_type: string(200)
+        nullable: false
+      - column_name: display_name
+        logical_type: string(200)
+        nullable: false
+      - column_name: role
+        logical_type: enum[owner,partner_editor,viewer]
+        nullable: false
+      - column_name: visibility_scope
+        logical_type: enum[all,shared_only,selected_only]
+        nullable: false
+      - column_name: invited_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: accepted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+      - column_name: status
+        logical_type: enum[pending,active,removed]
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_memo_item:
+    purpose:
+      - 補足メモ
+    columns:
+      - column_name: memo_item_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: owner_user_id
+        logical_type: uuid
+        nullable: false
+      - column_name: memo_type
+        logical_type: enum[general,insurance,pension,tax_estimate,handover]
+        nullable: false
+      - column_name: title
+        logical_type: string(200)
+        nullable: false
+      - column_name: body
+        logical_type: text
+        nullable: false
+      - column_name: visibility_scope
+        logical_type: enum[private,shared,selected_only]
+        nullable: false
+      - column_name: import_source_system
+        logical_type: enum[manual,life_planner,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: import_source_object_id
+        logical_type: uuid_or_string
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[confirmed,draft_candidate,imported,reviewed,rejected]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+  life.mp_financial_snapshot:
+    purpose:
+      - 時点スナップショット
+    columns:
+      - column_name: financial_snapshot_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: snapshot_date
+        logical_type: yyyy-mm-dd
+        nullable: false
+      - column_name: base_currency
+        logical_type: string(3)
+        nullable: false
+      - column_name: total_income
+        logical_type: decimal_string
+        nullable: false
+      - column_name: total_expense
+        logical_type: decimal_string
+        nullable: false
+      - column_name: total_assets
+        logical_type: decimal_string
+        nullable: false
+      - column_name: total_liabilities
+        logical_type: decimal_string
+        nullable: false
+      - column_name: net_worth
+        logical_type: decimal_string
+        nullable: false
+      - column_name: scenario_id
+        logical_type: uuid
+        nullable: true
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+
+  life.mp_receive_candidate_registry:
+    purpose:
+      - 他アプリから受け取った candidate の原本管理
+    columns:
+      - column_name: candidate_registry_id
+        logical_type: uuid
+        nullable: false
+      - column_name: plan_id
+        logical_type: uuid
+        nullable: false
+      - column_name: source_system
+        logical_type: enum[life_planner,end_of_life_planner,inheritance_support]
+        nullable: false
+      - column_name: source_case_id
+        logical_type: uuid_or_string
+        nullable: false
+      - column_name: source_object_id
+        logical_type: uuid_or_string
+        nullable: false
+      - column_name: candidate_type
+        logical_type: enum[event_budget,saving_goal,memo,asset,liability]
+        nullable: false
+      - column_name: mapped_target_object_id
+        logical_type: uuid
+        nullable: true
+      - column_name: import_status
+        logical_type: enum[received,draft_candidate,reviewed,confirmed,rejected,archived]
+        nullable: false
+      - column_name: duplicate_candidate_flag
+        logical_type: boolean
+        nullable: false
+      - column_name: duplicate_reference_object_id
+        logical_type: uuid
+        nullable: true
+      - column_name: payload_snapshot
+        logical_type: json_like_object
+        nullable: false
+      - column_name: review_note
+        logical_type: text
+        nullable: true
+      - column_name: received_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: reviewed_at
+        logical_type: iso8601_timestamp
+        nullable: true
+      - column_name: created_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: updated_at
+        logical_type: iso8601_timestamp
+        nullable: false
+      - column_name: deleted_at
+        logical_type: iso8601_timestamp
+        nullable: true
+
+logical_views:
+  - life.v_mp_plan_balance_summary
+  - life.v_mp_goal_progress_summary
+  - life.v_mp_upcoming_event_budget_summary
+  - life.v_mp_receive_candidate_summary
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200007_MONEY_PLANNER_LIFE_SCHEMA_LOGICAL_VIEW_EXACT.md
+
+# ============================================================
+# MONEY PLANNER LIFE SCHEMA LOGICAL VIEW EXACT
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: db
+schema_name: life
+
+policy:
+  - logical view 定義であり physical SQL ではない
+  - UI 初期表示と集計用途を安定化させる
+  - private/shared/selected_only を考慮した summary 分離を前提とする
+  - amount は base_currency 基準の表示用論理値として扱う
+  - view は table 正本を置き換えない
+
+logical_views:
+
+  life.v_mp_plan_balance_summary:
+    purpose:
+      - ダッシュボード上部サマリ
+    grain:
+      - 1 row per plan_id
+    source_tables:
+      - life.mp_plan
+      - life.mp_income_item
+      - life.mp_expense_item
+      - life.mp_asset_item
+      - life.mp_liability_item
+    logical_columns:
+      - plan_id: uuid
+      - owner_user_id: uuid
+      - base_currency: string(3)
+      - total_income: decimal_string
+      - total_expense: decimal_string
+      - total_assets: decimal_string
+      - total_liabilities: decimal_string
+      - net_worth: decimal_string
+      - active_income_count: integer
+      - active_expense_count: integer
+      - asset_count: integer
+      - liability_count: integer
+      - calculated_at: iso8601_timestamp
+
+  life.v_mp_goal_progress_summary:
+    purpose:
+      - 目標積立の進捗集計
+    grain:
+      - 1 row per plan_id
+    source_tables:
+      - life.mp_saving_goal
+    logical_columns:
+      - plan_id: uuid
+      - active_goal_count: integer
+      - completed_goal_count: integer
+      - paused_goal_count: integer
+      - archived_goal_count: integer
+      - total_target_amount: decimal_string
+      - total_current_saved_amount: decimal_string
+      - total_remaining_amount: decimal_string
+      - calculated_at: iso8601_timestamp
+
+  life.v_mp_upcoming_event_budget_summary:
+    purpose:
+      - 今後イベント費用の集計
+    grain:
+      - 1 row per plan_id
+    source_tables:
+      - life.mp_event_budget
+    logical_columns:
+      - plan_id: uuid
+      - upcoming_count: integer
+      - upcoming_high_priority_count: integer
+      - total_upcoming_amount: decimal_string
+      - next_event_name: string(200)|null
+      - next_event_date: yyyy-mm-dd|null
+      - next_event_amount: decimal_string|null
+      - calculated_at: iso8601_timestamp
+
+  life.v_mp_receive_candidate_summary:
+    purpose:
+      - 他アプリ受入候補の集計
+    grain:
+      - 1 row per plan_id
+    source_tables:
+      - life.mp_receive_candidate_registry
+    logical_columns:
+      - plan_id: uuid
+      - received_count: integer
+      - draft_candidate_count: integer
+      - reviewed_count: integer
+      - confirmed_count: integer
+      - rejected_count: integer
+      - duplicate_candidate_count: integer
+      - latest_received_at: iso8601_timestamp|null
+      - calculated_at: iso8601_timestamp
+
+  life.v_mp_shared_balance_summary:
+    purpose:
+      - shared 可視範囲だけで再計算した家族共有向け summary
+    grain:
+      - 1 row per plan_id
+    source_tables:
+      - life.mp_income_item
+      - life.mp_expense_item
+      - life.mp_asset_item
+      - life.mp_liability_item
+    filter_policy:
+      - visibility_scope = shared のみ
+    logical_columns:
+      - plan_id: uuid
+      - shared_total_income: decimal_string
+      - shared_total_expense: decimal_string
+      - shared_total_assets: decimal_string
+      - shared_total_liabilities: decimal_string
+      - shared_net_worth: decimal_string
+      - calculated_at: iso8601_timestamp
+
+  life.v_mp_member_visible_object_summary:
+    purpose:
+      - メンバー別に見える件数の集計
+    grain:
+      - 1 row per plan_id x member
+    source_tables:
+      - life.mp_shared_member
+      - life.mp_income_item
+      - life.mp_expense_item
+      - life.mp_asset_item
+      - life.mp_liability_item
+      - life.mp_saving_goal
+      - life.mp_event_budget
+      - life.mp_memo_item
+    logical_columns:
+      - plan_id: uuid
+      - shared_member_id: uuid
+      - role: enum[owner,partner_editor,viewer]
+      - member_visibility_scope: enum[all,shared_only,selected_only]
+      - visible_income_count: integer
+      - visible_expense_count: integer
+      - visible_asset_count: integer
+      - visible_liability_count: integer
+      - visible_saving_goal_count: integer
+      - visible_event_budget_count: integer
+      - visible_memo_count: integer
+      - calculated_at: iso8601_timestamp
+
+  life.v_mp_dashboard_composed_summary:
+    purpose:
+      - ダッシュボード初期表示用の合成 summary
+    grain:
+      - 1 row per plan_id
+    source_views:
+      - life.v_mp_plan_balance_summary
+      - life.v_mp_goal_progress_summary
+      - life.v_mp_upcoming_event_budget_summary
+      - life.v_mp_receive_candidate_summary
+    logical_columns:
+      - plan_id: uuid
+      - owner_user_id: uuid
+      - base_currency: string(3)
+      - total_income: decimal_string
+      - total_expense: decimal_string
+      - total_assets: decimal_string
+      - total_liabilities: decimal_string
+      - net_worth: decimal_string
+      - active_goal_count: integer
+      - completed_goal_count: integer
+      - total_target_amount: decimal_string
+      - total_current_saved_amount: decimal_string
+      - upcoming_count: integer
+      - total_upcoming_amount: decimal_string
+      - received_candidate_count: integer
+      - duplicate_candidate_count: integer
+      - calculated_at: iso8601_timestamp
+
+visibility_summary_rules:
+  - owner summary は private/shared/selected_only を含めてよい
+  - shared summary は shared のみを対象とする
+  - member visible summary は member_visibility_scope を適用する
+  - selected_only は対象 member にだけ集計へ含める
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/020.db/1200200008_MONEY_PLANNER_SUMMARY_DEFINITION_CANONICAL.md
+
+# ============================================================
+# MONEY PLANNER SUMMARY DEFINITION CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: db
+
+summary_families:
+
+  dashboard_summary:
+    used_by:
+      - dashboard
+    source:
+      - life.v_mp_dashboard_composed_summary
+    fields:
+      - total_income
+      - total_expense
+      - total_assets
+      - total_liabilities
+      - net_worth
+      - active_goal_count
+      - completed_goal_count
+      - total_target_amount
+      - total_current_saved_amount
+      - upcoming_count
+      - total_upcoming_amount
+      - received_candidate_count
+      - duplicate_candidate_count
+
+  monthly_projection_summary:
+    used_by:
+      - monthly_projection screen
+    source_tables:
+      - life.mp_income_item
+      - life.mp_expense_item
+      - life.mp_event_budget
+    fields:
+      - target_month
+      - expected_income
+      - expected_expense
+      - expected_balance
+      - shortage_flag
+      - high_priority_event_amount
+
+  yearly_projection_summary:
+    used_by:
+      - yearly_projection screen
+    source_tables:
+      - life.mp_income_item
+      - life.mp_expense_item
+      - life.mp_event_budget
+      - life.mp_saving_goal
+    fields:
+      - target_year
+      - expected_income
+      - expected_expense
+      - expected_balance
+      - event_impact_amount
+      - goal_target_total
+      - shortage_months_count
+
+  list_summary:
+    used_by:
+      - income_list
+      - expense_list
+      - asset_list
+      - liability_list
+      - saving_goal_list
+      - event_budget_list
+      - memo_list
+    fields:
+      - total_count
+      - active_count
+      - duplicate_candidate_count
+      - private_count
+      - shared_count
+      - selected_only_count
+
+  sharing_summary:
+    used_by:
+      - family_sharing screen
+    source:
+      - life.mp_shared_member
+      - life.v_mp_member_visible_object_summary
+    fields:
+      - active_member_count
+      - pending_member_count
+      - viewer_count
+      - partner_editor_count
+      - visible_object_total_by_member
+      - shared_visible_income_count
+      - shared_visible_expense_count
+      - shared_visible_asset_count
+      - shared_visible_liability_count
+
+  receive_candidate_summary:
+    used_by:
+      - receive_candidate review area
+    source:
+      - life.v_mp_receive_candidate_summary
+    fields:
+      - received_count
+      - draft_candidate_count
+      - reviewed_count
+      - confirmed_count
+      - rejected_count
+      - duplicate_candidate_count
+      - latest_received_at
+
+summary_calculation_principles:
+  - list summary は deleted_at is null 前提
+  - projection summary は active_flag を考慮する
+  - dashboard summary は base_currency 表示前提
+  - sharing summary は member ごとの可視範囲を考慮する
+  - receive candidate summary は archived を通常件数から除外してよい
+
+screen_binding_notes:
+  - dashboard は composed summary を優先
+  - 家族共有画面は sharing summary を優先
+  - 候補レビュー画面は receive candidate summary を優先
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/1200000000_IMPLEMENTATION_INDEX.md
+
+# IMPLEMENTATION INDEX
+subfolders:
+  - 010.api
+  - 020.db
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/1200000001_IMPLEMENTATION_OVERVIEW.md
+
+# IMPLEMENTATION OVERVIEW
+role:
+  - API と DB の実装入口
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+
+# ============================================================
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 120.implementation
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1200001_MONEY_PLANNER_IMPLEMENTATION_OVERVIEW.md
+  - 010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+  - 010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+  - 010.core/1200004_MONEY_PLANNER_IMPLEMENTATION_PLAN.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/120.implementation/1200001_MONEY_PLANNER_IMPLEMENTATION_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 120.implementation
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 実装レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 実装順序と固定対象を定義する
+  - 共通部品参照点とアプリ固有実装点を分ける
+  - payload 固定の前提を整える
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+
+# ============================================================
+# DEVELOPMENT CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1300003_DEVELOPMENT_CORE_OVERVIEW.md
+  - 1300004_MONEY_PLANNER_DEVELOPMENT_ROADMAP.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md
+
+# ============================================================
+# DEVELOPMENT CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - MoneyPlanner の 開発 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.core/1300004_MONEY_PLANNER_DEVELOPMENT_ROADMAP.md
+
+# ============================================================
+# MONEY PLANNER DEVELOPMENT ROADMAP
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+development_phases:
+  - phase_1_foundation_docs
+  - phase_2_payload_fix
+  - phase_3_screen_contract_fix
+  - phase_4_storage_and_sync_design
+  - phase_5_app_implementation
+
+review_points:
+  - お金計画と会計/税務責務が混ざりすぎていないか
+  - 家族共有が過剰になっていないか
+  - 自動判断に寄りすぎていないか
+  - 長期運用前提が維持されているか
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.roadmap/1300100000_ROADMAP_INDEX.md
+
+# ROADMAP INDEX
+documents:
+  - 1300100001_MONEY_PLANNER_DEVELOPMENT_ROADMAP.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.roadmap/1300100001_MONEY_PLANNER_DEVELOPMENT_ROADMAP.md
+
+# ============================================================
+# MONEY PLANNER DEVELOPMENT ROADMAP
+# ============================================================
+
+phases:
+  - phase_1:
+      - 仕様固定
+      - 画面一覧固定
+      - API overview 固定
+  - phase_2:
+      - exact payload 固定
+      - DB logical schema exact table 定義
+  - phase_3:
+      - 権限マトリクス固定
+      - LifeOS 連携 payload 固定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.roadmap/1300100001_ROADMAP_OVERVIEW.md
+
+# ROADMAP OVERVIEW
+role:
+  - 実装準備の段階整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.roadmap/1300100002_MONEY_PLANNER_IMPLEMENTATION_READINESS_CHECKLIST.md
+
+# ============================================================
+# MONEY PLANNER IMPLEMENTATION READINESS CHECKLIST
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 130.development
+subdomain: roadmap
+
+goal:
+  - 実装開始前の準備完了判定を行う
+
+checklist:
+
+  product_definition:
+    - item: positioning fixed
+      status: done
+    - item: target users fixed
+      status: done
+    - item: pricing fixed
+      status: done
+    - item: plan api access policy fixed
+      status: done
+
+  screen_design:
+    - item: screen catalog fixed
+      status: done
+    - item: receive candidate review screen fixed
+      status: done
+    - item: input validation fixed
+      status: done
+    - item: screen-to-api binding fixed
+      status: done
+
+  domain_and_data:
+    - item: life schema policy fixed
+      status: done
+    - item: logical table catalog fixed
+      status: done
+    - item: logical table column exact fixed
+      status: done
+    - item: logical view exact fixed
+      status: done
+    - item: summary definition fixed
+      status: done
+
+  api_design:
+    - item: dashboard exact payload fixed
+      status: done
+    - item: crud api exact payload fixed
+      status: done
+    - item: family sharing api fixed
+      status: done
+    - item: linkage settings api fixed
+      status: done
+    - item: dashboard alert api fixed
+      status: done
+    - item: receive candidate api fixed
+      status: done
+    - item: required / nullable matrix fixed
+      status: done
+
+  role_and_security:
+    - item: role operation matrix fixed
+      status: done
+    - item: family sharing visibility rule fixed
+      status: done
+    - item: manual share owner only rule fixed
+      status: done
+
+  cross_app_linkage:
+    - item: outbound payload fixed
+      status: done
+    - item: inbound payload fixed
+      status: done
+    - item: receive candidate status policy fixed
+      status: done
+    - item: duplicate candidate rule fixed
+      status: done
+
+  operations:
+    - item: monthly review flow fixed
+      status: done
+    - item: yearly review flow fixed
+      status: done
+    - item: audit / change log / history design fixed
+      status: done
+    - item: test / acceptance design fixed
+      status: done
+
+  cross_cutting:
+    - item: enum canonical fixed
+      status: done
+    - item: terminology canonical fixed
+      status: done
+    - item: error code mapping fixed
+      status: done
+
+final_judgement:
+  implementation_ready: true
+  blockers: []
+  note:
+    - 実装開始可能な設計粒度に到達
+    - ただし実装開始そのものは別判断
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.roadmap/1300100003_MONEY_PLANNER_IMPLEMENTATION_TRACEABILITY_MATRIX.md
+
+# ============================================================
+# MONEY PLANNER IMPLEMENTATION TRACEABILITY MATRIX
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 130.development
+subdomain: roadmap
+
+purpose:
+  - screen / api / data / validation / permission の対応を一望化する
+
+matrix:
+
+  dashboard:
+    screen_id: MP-001
+    api:
+      - GET /v1/money-planner/dashboard
+      - GET /v1/money-planner/alerts
+    logical_views:
+      - life.v_mp_dashboard_composed_summary
+      - life.v_mp_receive_candidate_summary
+      - life.v_mp_shared_balance_summary
+    validation:
+      - base_currency
+      - target_month
+      - target_year
+      - summary_scope
+    permission:
+      - owner
+      - partner_editor(limited)
+      - viewer(shared only)
+
+  income_list:
+    screen_id: MP-002
+    api:
+      - GET /v1/money-planner/incomes
+      - POST /v1/money-planner/incomes
+      - PATCH /v1/money-planner/incomes/{income_id}
+      - DELETE /v1/money-planner/incomes/{income_id}
+    logical_tables:
+      - life.mp_income_item
+    validation:
+      - title
+      - category
+      - amount
+      - currency_code
+      - frequency
+      - date_range
+      - visibility_scope
+    permission:
+      - owner full
+      - partner_editor shared_only
+      - viewer read_only
+
+  expense_list:
+    screen_id: MP-003
+    api:
+      - GET /v1/money-planner/expenses
+      - POST /v1/money-planner/expenses
+      - PATCH /v1/money-planner/expenses/{expense_id}
+      - DELETE /v1/money-planner/expenses/{expense_id}
+    logical_tables:
+      - life.mp_expense_item
+    validation:
+      - title
+      - category
+      - amount
+      - currency_code
+      - necessity_level
+      - frequency
+      - date_range
+      - visibility_scope
+    permission:
+      - owner full
+      - partner_editor shared_only
+      - viewer read_only
+
+  asset_list:
+    screen_id: MP-004
+    api:
+      - GET /v1/money-planner/assets
+      - POST /v1/money-planner/assets
+      - PATCH /v1/money-planner/assets/{asset_id}
+      - DELETE /v1/money-planner/assets/{asset_id}
+    logical_tables:
+      - life.mp_asset_item
+    validation:
+      - asset_type
+      - amount
+      - currency_code
+      - valuation_basis
+      - liquidity_level
+      - ownership_scope
+      - visibility_scope
+    permission:
+      - owner full
+      - partner_editor shared_only
+      - viewer read_only
+
+  liability_list:
+    screen_id: MP-005
+    api:
+      - GET /v1/money-planner/liabilities
+      - POST /v1/money-planner/liabilities
+      - PATCH /v1/money-planner/liabilities/{liability_id}
+      - DELETE /v1/money-planner/liabilities/{liability_id}
+    logical_tables:
+      - life.mp_liability_item
+    validation:
+      - liability_type
+      - balance_amount
+      - currency_code
+      - ownership_scope
+      - visibility_scope
+    permission:
+      - owner full
+      - partner_editor shared_only
+      - viewer read_only
+
+  saving_goal_list:
+    screen_id: MP-006
+    api:
+      - GET /v1/money-planner/saving-goals
+      - POST /v1/money-planner/saving-goals
+      - PATCH /v1/money-planner/saving-goals/{goal_id}
+      - DELETE /v1/money-planner/saving-goals/{goal_id}
+    logical_tables:
+      - life.mp_saving_goal
+    validation:
+      - goal_name
+      - target_amount
+      - current_saved_amount
+      - target_date
+      - status
+      - visibility_scope
+    permission:
+      - owner full
+      - partner_editor shared_only
+      - viewer read_only
+
+  event_budget_list:
+    screen_id: MP-007
+    api:
+      - GET /v1/money-planner/event-budgets
+      - POST /v1/money-planner/event-budgets
+      - PATCH /v1/money-planner/event-budgets/{event_budget_id}
+      - DELETE /v1/money-planner/event-budgets/{event_budget_id}
+    logical_tables:
+      - life.mp_event_budget
+    validation:
+      - event_name
+      - planned_date
+      - target_amount
+      - priority
+      - visibility_scope
+    permission:
+      - owner full
+      - partner_editor shared_only
+      - viewer read_only
+
+  family_sharing:
+    screen_id: MP-011
+    api:
+      - GET /v1/money-planner/sharing/members
+      - POST /v1/money-planner/sharing/members
+      - PATCH /v1/money-planner/sharing/members/{shared_member_id}
+      - DELETE /v1/money-planner/sharing/members/{shared_member_id}
+      - GET /v1/money-planner/sharing/members/{shared_member_id}/visible-summary
+    logical_tables:
+      - life.mp_shared_member
+    logical_views:
+      - life.v_mp_member_visible_object_summary
+    validation:
+      - role
+      - member_visibility_scope
+    permission:
+      - owner manage
+      - partner_editor limited read
+      - viewer none
+
+  linkage_settings:
+    screen_id: MP-014
+    api:
+      - GET /v1/money-planner/linkages
+      - PATCH /v1/money-planner/linkages/{target_system}
+      - POST /v1/money-planner/linkages/share
+    logical_tables:
+      - logical linkage setting state
+    validation:
+      - target_system
+      - share_scope
+      - payload shape
+    permission:
+      - owner manage/share
+      - partner_editor limited read
+      - viewer none
+
+  receive_candidate_review:
+    screen_id: MP-015
+    api:
+      - GET /v1/money-planner/receive-candidates
+      - GET /v1/money-planner/receive-candidates/{candidate_registry_id}
+      - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/status
+      - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/visibility
+      - GET /v1/money-planner/receive-candidates/{candidate_registry_id}/duplicate-reference
+    logical_tables:
+      - life.mp_receive_candidate_registry
+    logical_views:
+      - life.v_mp_receive_candidate_summary
+    validation:
+      - import_status transition
+      - visibility_scope
+      - duplicate rule
+    permission:
+      - owner full
+      - partner_editor read_limited
+      - viewer none
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/010.roadmap/1300100004_MONEY_PLANNER_IMPLEMENTATION_ENTRY_SEQUENCE.md
+
+# ============================================================
+# MONEY PLANNER IMPLEMENTATION ENTRY SEQUENCE
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 130.development
+subdomain: roadmap
+
+purpose:
+  - 実装開始時の順序を固定する
+  - 手戻りを減らす
+
+sequence:
+
+  step_01:
+    name: model constants foundation
+    includes:
+      - enum constants
+      - terminology constants
+      - error key constants
+      - api route constants
+
+  step_02:
+    name: life schema logical model to repository model
+    includes:
+      - mp_plan
+      - mp_income_item
+      - mp_expense_item
+      - mp_asset_item
+      - mp_liability_item
+      - mp_saving_goal
+      - mp_event_budget
+      - mp_scenario
+      - mp_shared_member
+      - mp_memo_item
+      - mp_financial_snapshot
+      - mp_receive_candidate_registry
+
+  step_03:
+    name: read side foundation
+    includes:
+      - dashboard summary read model
+      - monthly projection read model
+      - yearly projection read model
+      - alerts read model
+
+  step_04:
+    name: basic CRUD implementation
+    includes:
+      - income
+      - expense
+      - asset
+      - liability
+      - saving_goal
+      - event_budget
+      - memo
+
+  step_05:
+    name: scenario and family sharing
+    includes:
+      - scenario compare
+      - shared_member
+      - visible summary
+
+  step_06:
+    name: linkage settings and manual share
+    includes:
+      - linkage setting state
+      - manual share payload builder
+      - visibility filtering
+
+  step_07:
+    name: receive candidate workflow
+    includes:
+      - candidate registry
+      - review screen
+      - duplicate handling
+      - confirm / reject / archive
+
+  step_08:
+    name: audit history review flow
+    includes:
+      - audit_event
+      - change_log
+      - history_snapshot
+      - monthly review checkpoint
+      - yearly review checkpoint
+
+entry_rules:
+  - dashboard を最初に動かせる read side を優先する
+  - write side は basic CRUD から始める
+  - candidate workflow は sharing / linkage 後に着手する
+  - audit/history は最後に横断で入れる
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/1300000000_DEVELOPMENT_INDEX.md
+
+# DEVELOPMENT INDEX
+subfolders:
+  - 010.roadmap
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/1300000001_DEVELOPMENT_OVERVIEW.md
+
+# DEVELOPMENT OVERVIEW
+role:
+  - 実装準備の進め方整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/1300000_DEVELOPMENT_INDEX.md
+
+# ============================================================
+# DEVELOPMENT INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 130.development
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1300001_MONEY_PLANNER_DEVELOPMENT_OVERVIEW.md
+  - 010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+  - 010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md
+  - 010.core/1300004_MONEY_PLANNER_DEVELOPMENT_ROADMAP.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/130.development/1300001_MONEY_PLANNER_DEVELOPMENT_OVERVIEW.md
+
+# ============================================================
+# MONEY PLANNER DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 130.development
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 開発レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 開発ロードマップと確認観点を整理する
+  - 実装前の固定項目を明文化する
+  - 次段階へ渡す準備資料とする
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/900.meta/010.navigation/9000100000_NAVIGATION_INDEX.md
+
+# NAVIGATION INDEX
+documents:
+  - 9000100001_MONEY_PLANNER_NAVIGATION_NOTE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/900.meta/010.navigation/9000100001_MONEY_PLANNER_NAVIGATION_NOTE.md
+
+# ============================================================
+# MONEY PLANNER NAVIGATION NOTE
+# ============================================================
+
+recommended_reading_order:
+  - 0000000000_MONEY_PLANNER_INDEX.md
+  - 0000000001_MONEY_PLANNER_OVERVIEW.md
+  - 010.constitution
+  - 020.architecture
+  - 030.model
+  - 090.interface
+  - 120.implementation
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/900.meta/010.navigation/9000100001_NAVIGATION_OVERVIEW.md
+
+# NAVIGATION OVERVIEW
+role:
+  - 読み順メモ
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/900.meta/010.navigation/9000100002_MONEY_PLANNER_TERMINOLOGY_CANONICAL_DICTIONARY.md
+
+# ============================================================
+# MONEY PLANNER TERMINOLOGY CANONICAL DICTIONARY
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 900.meta
+
+purpose:
+  - 用語の揺れを止める
+  - 画面 / API / 設計書の表記を合わせる
+
+canonical_terms:
+
+  MoneyPlanner:
+    ja: お金計画アプリ
+    note:
+      - 本アプリ正式名
+
+  plan:
+    ja: 計画
+    note:
+      - MoneyPlanner 全体の1管理単位
+
+  income_item:
+    ja: 収入項目
+
+  expense_item:
+    ja: 支出項目
+
+  asset_item:
+    ja: 資産項目
+
+  liability_item:
+    ja: 負債項目
+
+  saving_goal:
+    ja: 貯蓄目標
+    alias_not_recommended:
+      - 積立目標
+      - 目標貯金
+    note:
+      - 正式には saving_goal で統一
+
+  event_budget:
+    ja: イベント費用計画
+    alias_not_recommended:
+      - ライフイベント予算
+      - イベント予算
+    note:
+      - 正式には event_budget で統一
+
+  financial_snapshot:
+    ja: 資金スナップショット
+
+  shared_member:
+    ja: 共有メンバー
+
+  receive_candidate:
+    ja: 受入候補
+    note:
+      - 他アプリから受け取った候補情報
+
+  duplicate_candidate:
+    ja: 重複候補
+
+  visibility_scope:
+    ja: 可視範囲
+    values:
+      - private
+      - shared
+      - selected_only
+
+  member_visibility_scope:
+    ja: メンバー可視範囲
+    values:
+      - all
+      - shared_only
+      - selected_only
+
+  owner_summary:
+    ja: owner summary
+    note:
+      - owner 視点の集計
+      - private/shared/selected_only を含みうる
+
+  shared_summary:
+    ja: shared summary
+    note:
+      - shared のみで再計算した集計
+
+  monthly_review:
+    ja: 月次レビュー
+
+  yearly_review:
+    ja: 年次レビュー
+
+  linkage:
+    ja: 連携
+    note:
+      - 他 LifeOS アプリとの接続設定
+
+  manual_share:
+    ja: 手動共有
+    note:
+      - owner の明示操作による共有実行
+
+prohibited_or_avoid_terms:
+  - 家計簿メイン
+  - 自動投資
+  - 税額確定
+  - 法務確定
+  - 相続割合確定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/900.meta/010.navigation/9000100003_MONEY_PLANNER_DESIGN_AUDIT_MEMO.md
+
+# ============================================================
+# MONEY PLANNER DESIGN AUDIT MEMO
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 900.meta
+
+audit_summary:
+  - MoneyPlanner 設計群は実装準備完了判定可能な粒度に到達
+  - blocker は見当たらない
+  - 残るのは implementation 開始判断のみ
+
+checked_areas:
+  - root positioning
+  - pricing
+  - screen catalog
+  - validation
+  - role / sharing / visibility
+  - linkage send / receive
+  - logical tables
+  - logical views
+  - api exact payload
+  - required / nullable
+  - screen-to-api binding
+  - enums
+  - terminology
+  - audit / history
+  - monthly / yearly review
+  - acceptance design
+  - implementation entry order
+
+audit_result:
+  ready_for_implementation: true
+  blocking_gaps: []
+  non_blocking_notes:
+    - physical SQL は未作成でよい
+    - UI visual design は実装時最適化余地あり
+    - account linkage は後続拡張扱いで問題なし
+
+guardrails:
+  - schema は life
+  - 実装前に app 専用 schema を再作成しない
+  - 実装前提でも投資/税務/法務確定ロジックに踏み込まない
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/900.meta/9000000000_META_INDEX.md
+
+# META INDEX
+subfolders:
+  - 010.navigation
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/900.meta/9000000001_META_OVERVIEW.md
+
+# META OVERVIEW
+role:
+  - 設計書の見方と参照順整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100000_HANDOFF_INDEX.md
+
+# HANDOFF INDEX
+documents:
+  - 9200100001_MONEY_PLANNER_HANDOFF_NOTE.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100001_HANDOFF_OVERVIEW.md
+
+# HANDOFF OVERVIEW
+role:
+  - 次作業への引継ぎ整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100001_MONEY_PLANNER_HANDOFF_NOTE.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE
+# ============================================================
+
+current_state:
+  - ルート設計書作成済み
+  - layer / subfolder index overview 作成済み
+  - API overview 作成済み
+  - DB logical schema overview 作成済み
+
+next_actions:
+  - exact payload 固定
+  - DB exact table 定義
+  - 権限別操作可否マトリクス固定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100002_MONEY_PLANNER_HANDOFF_NOTE_PHASE2.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE2
+# ============================================================
+
+status:
+  - API exact payload canonical 追加済み
+  - DB exact table definition 追加済み
+  - DB enum / constraint policy 追加済み
+  - role operation matrix 追加済み
+  - LifeOS linkage payload canonical 追加済み
+
+next_actions:
+  - DB exact SQL 化
+  - API nullable / required 固定
+  - screen-request-response mapping 固定
+  - pricing plan ごとの API 公開範囲固定
+  - audit / history / change_log 設計追加
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100003_MONEY_PLANNER_HANDOFF_NOTE_PHASE3_DB_SQL.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE3 DB SQL
+# ============================================================
+
+status:
+  - DB exact SQL canonical 追加済み
+  - DDL SQL 追加済み
+  - index / trigger SQL 追加済み
+  - summary view SQL 追加済み
+
+review_participants:
+  - 佐藤（DB担当）
+
+next_actions:
+  - Method A の実適用ワンブロック化
+  - API field nullable / required 固定
+  - screen-request-response exact mapping 固定
+  - audit / history / change_log 設計追加
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100005_MONEY_PLANNER_HANDOFF_NOTE_PHASE5_DESIGN_CONTINUE.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE5 DESIGN CONTINUE
+# ============================================================
+
+status:
+  - life schema 前提に修正済み
+  - logical table catalog 追加済み
+  - audit / history / changelog design 追加済み
+  - api error code catalog 追加済み
+  - plan api access policy 追加済み
+
+next_actions:
+  - screen input validation exact 固定
+  - family sharing visibility rule exact 固定
+  - LifePlanner / EndOfLifePlanner / InheritanceSupport の受入 payload 側設計
+  - logical table column exact 定義を life schema 前提で再整理
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100006_MONEY_PLANNER_HANDOFF_NOTE_PHASE6_VALIDATION_AND_VISIBILITY.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE6 VALIDATION AND VISIBILITY
+# ============================================================
+
+status:
+  - screen input validation canonical 追加済み
+  - family sharing visibility rule canonical 追加済み
+
+next_actions:
+  - LifePlanner 受入payload設計
+  - EndOfLifePlanner 受入payload設計
+  - InheritanceSupport 受入payload設計
+  - logical table column exact を life schema 前提で再固定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100007_MONEY_PLANNER_HANDOFF_NOTE_PHASE7_RECEIVE_PAYLOAD.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE7 RECEIVE PAYLOAD
+# ============================================================
+
+status:
+  - LifePlanner receive payload design 追加済み
+  - EndOfLifePlanner receive payload design 追加済み
+  - InheritanceSupport receive payload design 追加済み
+  - cross app receive rule canonical 追加済み
+
+next_actions:
+  - life schema 前提の logical table column exact 再固定
+  - receive candidate を保持するための logical status 設計
+  - duplicate_candidate 判定ルール設計
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100008_MONEY_PLANNER_HANDOFF_NOTE_PHASE8_LOGICAL_COLUMN_EXACT.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE8 LOGICAL COLUMN EXACT
+# ============================================================
+
+status:
+  - life schema logical table column exact 追加済み
+  - receive candidate status policy 追加済み
+  - duplicate candidate rule canonical 追加済み
+
+next_actions:
+  - life schema logical view exact 固定
+  - dashboard / list / sharing 用 summary definition 固定
+  - audit_event / change_log の logical column exact 固定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100009_MONEY_PLANNER_HANDOFF_NOTE_PHASE9_LOGICAL_VIEW_AND_AUDIT.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE9 LOGICAL VIEW AND AUDIT
+# ============================================================
+
+status:
+  - life schema logical view exact 追加済み
+  - summary definition canonical 追加済み
+  - audit_event / change_log logical column exact 追加済み
+
+next_actions:
+  - dashboard exact payload を life schema logical view に合わせて再固定
+  - receive candidate review screen 設計追加
+  - owner monthly review / yearly review flow 固定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100010_MONEY_PLANNER_HANDOFF_NOTE_PHASE10_REVIEW_SCREEN_AND_REVIEW_FLOW.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE10 REVIEW SCREEN AND REVIEW FLOW
+# ============================================================
+
+status:
+  - receive candidate review screen design 追加済み
+  - receive candidate review action rule 追加済み
+  - owner monthly review flow 追加済み
+  - owner yearly review flow 追加済み
+  - monthly / yearly review operation policy 追加済み
+
+next_actions:
+  - dashboard exact payload を logical view に再接続
+  - family sharing screen exact payload 固定
+  - receive candidate API exact payload 固定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100011_MONEY_PLANNER_HANDOFF_NOTE_PHASE11_DASHBOARD_AND_CANDIDATE_API.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE11 DASHBOARD AND CANDIDATE API
+# ============================================================
+
+status:
+  - dashboard exact payload reconnected to logical view 追加済み
+  - receive candidate api exact payload canonical 追加済み
+  - receive candidate required / nullable matrix 追加済み
+
+next_actions:
+  - family sharing exact payload 固定
+  - linkage settings exact payload 固定
+  - dashboard alert exact payload 固定
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100012_MONEY_PLANNER_HANDOFF_NOTE_PHASE12_SHARING_LINKAGE_ALERT_API.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE12 SHARING LINKAGE ALERT API
+# ============================================================
+
+status:
+  - family sharing api exact payload canonical 追加済み
+  - family sharing required / nullable matrix 追加済み
+  - linkage settings api exact payload canonical 追加済み
+  - linkage settings required / nullable matrix 追加済み
+  - dashboard alert api exact payload canonical 追加済み
+  - dashboard alert required / nullable matrix 追加済み
+
+next_actions:
+  - screen-to-api complete binding catalog 固定
+  - enum 正本の横断統合
+  - 用語統一辞書 fixed
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100013_MONEY_PLANNER_HANDOFF_NOTE_PHASE13_BINDING_ENUM_TERMINOLOGY.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE13 BINDING ENUM TERMINOLOGY
+# ============================================================
+
+status:
+  - screen to api complete binding catalog 追加済み
+  - cross domain enum canonical 追加済み
+  - terminology canonical dictionary 追加済み
+
+next_actions:
+  - screen validation と enum の相互整合チェック
+  - api error code と screen error key の対応表固定
+  - root index / overview への反映検討
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100014_MONEY_PLANNER_HANDOFF_NOTE_PHASE14_VALIDATION_ERROR_MAPPING.md
+
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE14 VALIDATION ERROR MAPPING
+# ============================================================
+
+status:
+  - screen validation / enum consistency check 追加済み
+  - api error code to screen error key mapping 追加済み
+  - screen error key canonical 追加済み
+
+next_actions:
+  - root index / overview への反映
+  - docs 間の相互参照リンク整理
+  - 必要なら MoneyPlanner 設計書全体の監査メモ作成
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/010.handoff/9200100015_MONEY_PLANNER_IMPLEMENTATION_READY_DECISION_LEDGER.md
+
+# ============================================================
+# MONEY PLANNER IMPLEMENTATION READY DECISION LEDGER
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 920.meta
+
+final_decision:
+  implementation_ready: true
+  implementation_started: false
+
+fixed_decisions:
+  - schema = life
+  - app 専用 schema は使わない
+  - 実装はまだ開始しない
+  - screen / api / logical data は正本化済み
+  - family sharing / linkage / receive candidate は設計固定済み
+  - audit / history / review flow は設計固定済み
+  - free / plus_family の公開範囲は固定済み
+
+entry_documents:
+  - 0000000002_MONEY_PLANNER_IMPLEMENTATION_READY_NOTE.md
+  - 1300100002_MONEY_PLANNER_IMPLEMENTATION_READINESS_CHECKLIST.md
+  - 1300100003_MONEY_PLANNER_IMPLEMENTATION_TRACEABILITY_MATRIX.md
+  - 1300100004_MONEY_PLANNER_IMPLEMENTATION_ENTRY_SEQUENCE.md
+  - 0700100005_MONEY_PLANNER_TEST_AND_ACCEPTANCE_DESIGN.md
+  - 9000100003_MONEY_PLANNER_DESIGN_AUDIT_MEMO.md
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/9200000000_META_INDEX.md
+
+# 920 META INDEX
+subfolders:
+  - 010.handoff
+
+
+---
+
+## SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/MoneyPlanner/920.meta/9200000001_META_OVERVIEW.md
+
+# 920 META OVERVIEW
+role:
+  - 引継ぎ用メモ整理

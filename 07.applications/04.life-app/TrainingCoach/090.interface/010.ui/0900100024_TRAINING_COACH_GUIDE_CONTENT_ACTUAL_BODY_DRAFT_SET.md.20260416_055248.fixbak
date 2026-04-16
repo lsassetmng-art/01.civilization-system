@@ -1,0 +1,88 @@
+# ============================================================
+# TRAINING COACH GUIDE CONTENT ACTUAL BODY DRAFT SET
+# ============================================================
+
+status: canonical-draft
+phase: design-consolidation
+system: TrainingCoach
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - seed 対象 guide_content の実際の本文ドラフトを置く
+  - text-only でも成立する初期ガイド資産を用意する
+  - safety-first かつ初心者向けの文調を維持する
+
+guide_body_policy:
+  - 短い
+  - 分かりやすい
+  - 無理を促さない
+  - 痛みや強い違和感がある場合は中止寄りを前提にする
+  - 医療判断はしない
+
+guide_copy_draft:
+
+TC_GUIDE_yoga_morning_breath_title:
+  ja_jp: "朝の呼吸を整える"
+  en: "Gentle morning breathing"
+
+TC_GUIDE_yoga_morning_breath_body:
+  ja_jp: |
+    楽な姿勢で座るか立ちます。
+    肩の力を抜いて、呼吸をゆっくり整えます。
+    苦しくない範囲で、吸う・吐くを落ち着いて繰り返してください。
+    めまいや強い違和感がある場合は中止してください。
+  en: |
+    Sit or stand in a comfortable position.
+    Relax your shoulders and slow your breathing down.
+    Repeat calm inhales and exhales only within a comfortable range.
+    Stop if you feel dizzy or strongly uncomfortable.
+
+TC_GUIDE_stretch_neck_title:
+  ja_jp: "首まわりをやさしく伸ばす"
+  en: "Gentle neck stretch"
+
+TC_GUIDE_stretch_neck_body:
+  ja_jp: |
+    首をゆっくり横に傾け、首まわりをやさしく伸ばします。
+    反動はつけず、呼吸を止めないようにしてください。
+    痛みがある場合は無理に伸ばさず中止してください。
+  en: |
+    Slowly tilt your head to one side and gently stretch the neck area.
+    Avoid bouncing and keep breathing normally.
+    If you feel pain, stop instead of pushing further.
+
+TC_GUIDE_cardio_walk_indoor_title:
+  ja_jp: "室内で軽く歩く"
+  en: "Light indoor walk"
+
+TC_GUIDE_cardio_walk_indoor_body:
+  ja_jp: |
+    室内で安全なスペースを確保し、無理のないペースで歩きます。
+    最初は短い時間でも大丈夫です。
+    息苦しさや強い疲れを感じたら、ペースを落とすか中止してください。
+  en: |
+    Make sure you have a safe indoor space and walk at an easy pace.
+    A short session is enough to begin with.
+    If you feel shortness of breath or strong fatigue, slow down or stop.
+
+TC_GUIDE_strength_squat_basic_title:
+  ja_jp: "基本のスクワット"
+  en: "Basic squat"
+
+TC_GUIDE_strength_squat_basic_body:
+  ja_jp: |
+    足を肩幅程度に開き、ゆっくり腰を下げて戻します。
+    深く下げすぎず、安定した範囲で行ってください。
+    膝や腰に痛みがある場合は中止してください。
+  en: |
+    Stand with your feet about shoulder-width apart, lower your hips slowly, then come back up.
+    Do not go deeper than feels stable and manageable.
+    Stop if you feel pain in your knees or lower back.
+
+style_notes:
+  - 初心者を前提にする
+  - 1本文は長くしすぎない
+  - 反動や無理を避ける表現を入れる
+  - safety notice code と矛盾しない

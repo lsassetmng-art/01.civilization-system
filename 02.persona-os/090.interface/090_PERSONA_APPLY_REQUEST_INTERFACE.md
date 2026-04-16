@@ -1,7 +1,13 @@
 # PERSONA APPLY REQUEST INTERFACE
-status: canonical
-layer: interface
-system: persona-os
-scope: persona-apply-request-interface
 
-Defines inbound apply request interface.
+status: implementation-ready-followup
+
+request_fields:
+- event_id
+- correlation_id
+- persona_id
+- event_type
+- schema_version
+- actor_id
+- event_payload
+- dedupe_key

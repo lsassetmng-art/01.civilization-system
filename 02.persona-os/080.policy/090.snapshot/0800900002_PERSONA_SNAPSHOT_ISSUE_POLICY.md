@@ -1,15 +1,9 @@
-# ============================================================
 # PERSONA SNAPSHOT ISSUE POLICY
-# ============================================================
 
-status: canonical
-layer: policy
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
 policy_rules:
-snapshot issuance requires eligible source truth
-issued snapshot is immutable
-snapshot must remain auditable and traceable
+- snapshot is immutable after issuance
+- content hash is deterministic
+- lineage to source draft version is mandatory
+- reissue creates a new snapshot id

@@ -1,0 +1,28 @@
+# ============================================================
+# IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: implementation-prep-only
+schema_name: life
+
+current_state:
+  - implementation is not started
+  - design is largely fixed
+  - readiness documents are prepared for future handoff
+
+implementation_prep_scope:
+  - feature mapping
+  - API handoff
+  - persistence handoff
+  - permission handoff
+  - edge case handoff
+  - acceptance and test prep
+
+out_of_scope_now:
+  - DDL finalization
+  - SQL execution
+  - psql execution
+  - app code
+  - API code
+  - sync code

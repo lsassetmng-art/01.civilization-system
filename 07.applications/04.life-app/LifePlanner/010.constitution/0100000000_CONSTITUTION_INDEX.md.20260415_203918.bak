@@ -1,0 +1,12 @@
+# ============================================================
+# CONSTITUTION INDEX
+# ============================================================
+
+layer: 010.constitution
+
+documents:
+  - 0100000000_CONSTITUTION_INDEX.md
+  - 0100000001_CONSTITUTION_OVERVIEW.md
+
+subfolders:
+  - 010.core

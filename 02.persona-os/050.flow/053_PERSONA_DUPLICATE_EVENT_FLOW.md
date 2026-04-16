@@ -1,7 +1,10 @@
 # PERSONA DUPLICATE EVENT FLOW
-status: canonical
-layer: flow
-system: persona-os
-scope: persona-duplicate-event-flow
 
-Defines duplicate event handling flow.
+status: implementation-ready-followup
+
+flow:
+1. dedupe key resolved
+2. prior terminal apply detected
+3. duplicate classified as noop
+4. feedback persisted
+5. caller receives duplicate_noop result

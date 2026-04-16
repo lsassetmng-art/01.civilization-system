@@ -1,0 +1,14 @@
+# ============================================================
+# RUNTIME OVERVIEW
+# ============================================================
+
+status: canonical-draft
+runtime_modes:
+  - single-owner local use
+  - owner plus family viewer
+  - owner plus delegated editor
+
+runtime_focus:
+  - low-friction entry
+  - safe incremental input
+  - save draft first

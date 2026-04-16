@@ -1,15 +1,12 @@
-# ============================================================
 # PERSONA EXTERNAL RELEASE INTERFACE
-# ============================================================
 
-status: canonical
-layer: interface
-domain: external-rights
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-interface_examples:
-PersonaExternalReleaseRequest
-PersonaExternalReleaseResponse
-PersonaExternalReleaseEvent
+external_release_fields:
+- release_request_id
+- release_scope
+- target_system_id
+- source_snapshot_id_or_package_id
+- release_status
+- result_code
+- released_at

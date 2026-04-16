@@ -1,0 +1,58 @@
+# ============================================================
+# LEGAL SUPPORT UI LABEL VOCABULARY POLICY
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: interface
+subdomain: screens
+
+purpose:
+  - 内部語彙とUI表示語彙の対応方針を固定する
+  - 日本語表示で意味がぶれないようにする
+  - family / share / export / handoff の誤解を避ける
+
+ui_label_policy:
+
+  internal_to_ja_examples:
+    owner:
+      ja: 管理者
+    shared_family_viewer:
+      ja: 家族共有閲覧者
+    plus_family:
+      ja: Plus / Family統合プラン
+    family_share:
+      ja: 家族共有
+    consultation_prep:
+      ja: 相談前準備
+    create_export_bundle:
+      ja: 共有資料出力
+    preview_cross_app_handoff:
+      ja: 他アプリ連携プレビュー
+    create_cross_app_handoff:
+      ja: 他アプリへ連携
+    confidentiality_level.normal:
+      ja: 通常
+    confidentiality_level.sensitive:
+      ja: 要注意
+    confidentiality_level.private:
+      ja: 非共有
+
+  wording_rules:
+    - UIでは「法的判断」「結論提供」を連想させる語を避ける
+    - summary は「要約」より「整理要約」と訳してもよい
+    - handoff は「他アプリ連携」や「他アプリへ引き継ぎ」で表現してよい
+    - family_share は「家族共有」で統一する
+    - export は「出力」または「共有資料出力」で統一する
+
+  do_not_use_examples:
+    - 法律診断
+    - 勝てる判定
+    - 法的結論
+    - 自動判断
+    - 公開リンク共有
+
+display_priority:
+  - 内部語彙の一貫性を優先
+  - UI では自然さより誤認防止を優先
+  - pricing 表示は「Free」「Plus / Family統合プラン」でよい

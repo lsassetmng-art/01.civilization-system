@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT OPERATIONS INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: OPERATIONS
+
+purpose:
+  - 運用ルール、サポート、通知方針を定義する

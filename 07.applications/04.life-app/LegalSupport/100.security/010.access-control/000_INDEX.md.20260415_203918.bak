@@ -1,0 +1,8 @@
+# ============================================================
+# LEGAL SUPPORT SECURITY ACCESS CONTROL INDEX
+# ============================================================
+
+status: canonical-initialized
+
+purpose:
+  - ロール別アクセス制御を置く

@@ -1,16 +1,12 @@
-# ============================================================
 # PERSONA BUILDER DRAFT INTERFACE
-# ============================================================
 
-status: canonical
-layer: interface
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-interface_examples:
-PersonaBuilderDraftCreateRequest
-PersonaBuilderDraftUpdateRequest
-PersonaBuilderValidationRequest
-PersonaBuilderApprovalPreparationResponse
+builder_draft_fields:
+- draft_id
+- persona_id
+- draft_version
+- status
+- last_validation_status
+- approval_status
+- updated_at

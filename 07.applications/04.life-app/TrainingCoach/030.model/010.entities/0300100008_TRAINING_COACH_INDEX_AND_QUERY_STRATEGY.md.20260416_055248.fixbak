@@ -1,0 +1,76 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# TRAINING COACH INDEX AND QUERY STRATEGY
+# ============================================================
+
+status: canonical-draft
+phase: implementation-readiness
+system: TrainingCoach
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+index_policy:
+  - dashboard / today_plan / streak 表示を優先して index 設計する
+  - owner_user_id 起点の検索を基本とする
+  - date 範囲検索と状態検索を重視する
+  - premature optimization は避けるが、主要画面は遅くしない
+
+recommended_indexes:
+
+life.training_plan:
+  - idx_training_plan_owner_status on (owner_user_id, status)
+  - idx_training_plan_owner_updated_at on (owner_user_id, updated_at desc)
+
+life.training_plan_item:
+  - idx_training_plan_item_plan_order on (training_plan_id, order_no)
+  - idx_training_plan_item_exercise on (exercise_item_id)
+
+life.training_session:
+  - idx_training_session_owner_date on (owner_user_id, scheduled_date)
+  - idx_training_session_owner_status_date on (owner_user_id, execution_status, scheduled_date)
+  - idx_training_session_plan_date on (training_plan_id, scheduled_date)
+
+life.completion_log:
+  - uidx_completion_log_session on (training_session_id)
+  - idx_completion_log_finalized_at on (finalized_at desc)
+
+life.fatigue_note:
+  - idx_fatigue_note_owner_date on (owner_user_id, record_date desc)
+
+life.training_goal:
+  - idx_training_goal_owner_status on (owner_user_id, status)
+  - idx_training_goal_target_date on (owner_user_id, target_date)
+
+life.streak_summary:
+  - uidx_streak_summary_owner on (owner_user_id)
+
+life.guide_content:
+  - idx_guide_content_exercise_locale_active on (exercise_item_id, locale, is_active)
+
+life.device_sync_state:
+  - idx_device_sync_state_owner_source on (owner_user_id, source_system)
+
+life.bodymetrics_daily_summary_cache:
+  - idx_bodymetrics_cache_owner_date on (owner_user_id, target_date desc)
+  - idx_bodymetrics_cache_owner_source_synced on (owner_user_id, source_synced_at desc)
+
+query_shapes:
+  dashboard:
+    - owner_user_id + target_date
+  today_plan:
+    - owner_user_id + target_date + execution_status
+  streak_view:
+    - owner_user_id
+  guide_viewer:
+    - exercise_item_id + locale + is_active

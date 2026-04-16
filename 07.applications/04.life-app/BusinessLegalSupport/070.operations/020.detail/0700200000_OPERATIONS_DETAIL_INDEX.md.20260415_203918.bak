@@ -1,0 +1,18 @@
+# ============================================================
+# OPERATIONS DETAIL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 070.operations
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0700200001_BUSINESS_LEGAL_SUPPORT_OPERATIONS_DETAIL_OVERVIEW.md
+  - 0700200002_BUSINESS_LEGAL_SUPPORT_OPERATING_RHYTHM.md
+  - 0700200003_BUSINESS_LEGAL_SUPPORT_NOTIFICATION_AND_REVIEW_POLICY.md

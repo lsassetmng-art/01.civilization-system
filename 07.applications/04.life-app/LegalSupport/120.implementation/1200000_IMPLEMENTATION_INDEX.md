@@ -1,0 +1,36 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical-draft
+phase: implementation-prep-only
+schema_name: life
+
+files:
+  - 1200001_IMPLEMENTATION_OVERVIEW.md
+  - 010.api-fixed-prep/1200100_API_FIXED_PREP_INDEX.md
+  - 010.api-fixed-prep/1200101_API_FIXED_PREP_OVERVIEW.md
+  - 020.readiness/1200200_IMPLEMENTATION_PREP_INDEX.md
+  - 020.readiness/1200201_IMPLEMENTATION_PREPARATION_CANONICAL.md
+  - 020.readiness/1200202_FEATURE_TO_SCREEN_MODEL_RULE_MAPPING.md
+  - 020.readiness/1200203_API_IMPLEMENTATION_HANDOFF_CANONICAL.md
+  - 020.readiness/1200204_PERSISTENCE_IMPLEMENTATION_HANDOFF_CANONICAL.md
+  - 020.readiness/1200205_PERMISSION_AND_VISIBILITY_HANDOFF_CANONICAL.md
+  - 020.readiness/1200206_ERROR_EDGECASE_AND_RECOVERY_HANDOFF_CANONICAL.md
+
+purpose:
+  - LegalSupport の実装準備資料を固定する
+  - 実装に入る直前の handoff 一式を保持する
+  - 実装コードや DDL はまだ含めない

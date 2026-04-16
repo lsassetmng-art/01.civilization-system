@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT RUNBOOK OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 070.operations
+subfolder: 030.runbook
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - owner の日常運用を runbook 化する
+  - 継続利用時に迷わない確認順を固定する
+  - アーカイブや見直しの判断軸をそろえる

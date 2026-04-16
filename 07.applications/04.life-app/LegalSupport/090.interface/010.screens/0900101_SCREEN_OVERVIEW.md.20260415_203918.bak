@@ -1,0 +1,14 @@
+# ============================================================
+# SCREEN OVERVIEW
+# ============================================================
+
+status: canonical-draft
+screens:
+  - home_dashboard
+  - case_list
+  - case_create
+  - case_detail
+  - document_list
+  - deadline_board
+  - consultation_log
+  - share_setting

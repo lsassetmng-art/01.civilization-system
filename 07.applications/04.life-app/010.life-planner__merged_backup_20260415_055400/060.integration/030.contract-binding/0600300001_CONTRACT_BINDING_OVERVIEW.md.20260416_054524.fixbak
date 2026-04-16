@@ -1,0 +1,21 @@
+# ============================================================
+# CONTRACT BINDING OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 060.integration
+subfolder: 030.contract-binding
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - payload と論理テーブルの対応を固定する
+  - どの operation がどの entity を読むか / 書くかを明確化する
+  - 実装前に副作用範囲を固定する
+
+policy:
+  - list/detail/compare の多くは read 中心
+  - create/update/apply/invite は write を伴う
+  - reflection apply は複数entityへ影響する

@@ -1,0 +1,53 @@
+# ============================================================
+# STATIC ART OS ERROR MAPPING SKELETON
+# ============================================================
+
+status: implementation-prep
+system: StaticArtOS
+owner: Boss
+prepared_by: Zero
+
+mapping_groups:
+  validation:
+    - STATICART_VALIDATION_ERROR -> 400
+    - STATICART_INVALID_ENUM -> 400
+    - STATICART_REQUIRED_FIELD_MISSING -> 400
+    - STATICART_INVALID_CURSOR -> 400
+
+  auth_permission:
+    - STATICART_UNAUTHORIZED -> 401
+    - STATICART_FORBIDDEN -> 403
+    - STATICART_ROLE_NOT_ALLOWED -> 403
+    - STATICART_ASSET_NOT_OWNED_BY_ACTOR -> 403
+
+  not_found_conflict:
+    - STATICART_ASSET_NOT_FOUND -> 404
+    - STATICART_FILE_NOT_FOUND -> 404
+    - STATICART_REVIEW_REQUEST_NOT_FOUND -> 404
+    - STATICART_ASSET_STATE_CONFLICT -> 409
+    - STATICART_REVIEW_ALREADY_PENDING -> 409
+    - STATICART_VERSION_CONFLICT -> 409
+    - STATICART_IDEMPOTENCY_REPLAY_MISMATCH -> 409
+
+  business_rule:
+    - STATICART_REVIEW_SUBMISSION_PRECONDITION_FAILED -> 422
+    - STATICART_PUBLISH_PRECONDITION_FAILED -> 422
+    - STATICART_RIGHTS_POLICY_BLOCKED -> 422 or 403 depending on surface
+    - STATICART_REGION_POLICY_BLOCKED -> 403
+    - STATICART_AGE_POLICY_BLOCKED -> 403
+    - STATICART_EXHIBITION_PROJECTION_INELIGIBLE -> 422
+    - STATICART_ENTITLEMENT_BLOCKED -> 403
+    - STATICART_SAMPLE_NOT_AVAILABLE -> 403
+    - STATICART_ACCESS_NOT_GRANTED -> 403
+
+  infra:
+    - STATICART_STORAGE_UPLOAD_FAILED -> 503 or 500
+    - STATICART_EXTERNAL_PAYMENT_SYNC_FAILED -> 503
+    - STATICART_EXTERNAL_SUBSCRIPTION_SYNC_FAILED -> 503
+    - STATICART_RATE_LIMITED -> 429
+    - STATICART_INTERNAL_ERROR -> 500
+
+rules:
+  - 409 is for conflict and state mismatch
+  - 422 is for valid shape but unmet business precondition
+  - 403 is for policy or permission block after auth

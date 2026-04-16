@@ -1,0 +1,83 @@
+# ============================================================
+# API EXACT PAYLOAD AND SCREEN MAPPING
+# ============================================================
+
+status: fixed
+
+screen_to_api_mapping:
+
+  dashboard_home:
+    reads:
+      - GET /life/bodymetrics/dashboard
+    cards:
+      - latest_weight
+      - latest_blood_pressure
+      - sleep_last_night
+      - steps_today
+      - health_score_summary
+      - average_comparison_summary
+      - sync_status
+
+  quick_record:
+    writes:
+      - POST /life/bodymetrics/records/metric
+      - POST /life/bodymetrics/records/blood-pressure
+      - POST /life/bodymetrics/records/sleep
+      - POST /life/bodymetrics/records/activity
+
+  metric_detail:
+    reads:
+      - GET /life/bodymetrics/trends/{metric_type}
+
+  health_score_center:
+    reads:
+      - GET /life/bodymetrics/health-score
+
+  weekly_review:
+    reads:
+      - GET /life/bodymetrics/reviews/weekly
+
+  goal_center:
+    writes:
+      - POST /life/bodymetrics/goals
+
+  provider_link_settings:
+    writes:
+      - POST /life/bodymetrics/providers/connect
+
+  family_care_settings:
+    reads:
+      - GET /life/bodymetrics/family-care/share-settings
+    writes:
+      - POST /life/bodymetrics/family-care/share-settings
+
+  export_center:
+    writes:
+      - POST /life/bodymetrics/exports
+
+payload_conventions:
+  ids:
+    type: uuid
+  timestamps:
+    type: iso8601
+  dates:
+    type: yyyy-mm-dd
+  scope_json:
+    type: object
+  nullable_convention:
+    - optional field は null を許可する
+  booleans:
+    - false を省略しない
+  metric_codes:
+    - weight
+    - blood_pressure
+    - blood_oxygen
+    - heart_rate
+    - sleep_duration
+    - steps
+
+ui_binding_rules:
+  - dashboard は card 単位で null 許容
+  - trend graph は欠損点を null で表現してよい
+  - health score は total と components を必須表示対象とする
+  - Family Care は shared_metric_scope をそのまま UI 制御に使える形で返す

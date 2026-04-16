@@ -1,0 +1,89 @@
+# ============================================================
+# BUSINESS APP LEDGER
+# 01.civilization-system / 07.applications / 03.business-app
+# ============================================================
+
+status: working-canonical-ledger
+owner: Boss
+prepared_by: Zero
+updated_at: 2026-04-14
+location: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app
+
+## 1. purpose
+
+この台帳は、
+03.business-app 配下の業務系アプリを一覧管理し、
+価格、ERP境界、設計根拠ファイルを確認しやすくするための作業台帳である。
+
+原則:
+- フォルダ実在を優先する
+- 価格未確定は unknown のまま残す
+- PocketSecretary は business-app 配下に存在するため本台帳に載せる
+- 詳細設計正本は各アプリの integrated 文書を参照する
+
+## 2. app ledger
+
+| no | folder_name | app_name | pricing | pricing_status | erp_boundary | design_status | source_file |
+|---:|---|---|---|---|---|---|---|
+| 1 | AppDevelopmentStudio | AppDevelopmentStudio | trial:10days / monthly:1980JPY / yearly:16800JPY | confirmed | standalone + target selectable | integrated-file-present | 00_APP_DEVELOPMENT_STUDIO_INTEGRATED_REBUILT.md |
+| 2 | EstimateCreator | EstimateCreator | Basic:free / Pro:500JPY_month | confirmed | explicit ERP alignment / estimate draft oriented | integrated-file-present | 00_ESTIMATE_CREATOR_INTEGRATED.md |
+| 3 | ExpenseSettlement | ExpenseSettlement | unknown | unknown | expected ERP linkage | integrated-file-present | 00_EXPENSE_SETTLEMENT_REGENERATED_FULL_PACK.md |
+| 4 | InvoiceFlow | InvoiceFlow | unknown | unknown | ERP is source of truth side | integrated-file-present | 00_INVOICE_FLOW_INTEGRATED.md |
+| 5 | Mbo | Mbo | unknown | unknown | business operation domain | integrated-file-present | 00_MBO_FULL_INTEGRATED_CANONICAL.md |
+| 6 | NameCardManager | NameCardManager | monthly:900JPY | confirmed | BusinessOS save + optional ERP publish/share | integrated-file-present | 00_NAME_CARD_MANAGER_INTEGRATED.md |
+| 7 | OrderFlow | OrderFlow | unknown | unknown | business operation / order flow domain | integrated-file-present | 00_ORDER_FLOW_INTEGRATED.md |
+| 8 | pocket-secretary | PocketSecretary | Free:free / Pro:300JPY_month / ForBusiness:700JPY_month | confirmed_in_chat | hybrid app + explicit business linkage | integrated-file-present | 00_POCKET_SECRETARY_INTEGRATED_REBUILT.md |
+| 9 | ProductPortfolioManager | ProductPortfolioManager | unknown | unknown | business portfolio domain | integrated-file-present | 00_PRODUCT_PORTFOLIO_MANAGER_FULL_INTEGRATED_REGENERATED.md |
+| 10 | ProjectFlow | ProjectFlow | trial:7days / monthly:900JPY | confirmed | standalone business app | integrated-file-present | 00_PROJECT_FLOW_INTEGRATED.md |
+| 11 | QuickForecast | QuickForecast | Basic:free / Pro:500JPY_month | confirmed_in_chat | standalone + optional ERP data use in Pro | integrated-file-present | 00_QUICK_FORECAST_INTEGRATED_REBUILT.md |
+| 12 | TalentGrowth | TalentGrowth | unknown | unknown | business HR/talent domain | integrated-file-present | 00_TALENT_GROWTH_INTEGRATED.md |
+
+## 3. pricing memo
+
+### confirmed
+- AppDevelopmentStudio
+  - trial: 10 days
+  - monthly: 1,980 JPY
+  - yearly: 16,800 JPY
+
+- EstimateCreator
+  - Basic: free
+  - Pro: 500 JPY / month
+
+- NameCardManager
+  - monthly: 900 JPY
+
+- ProjectFlow
+  - trial: 7 days
+  - monthly: 900 JPY
+
+### confirmed in chat
+- QuickForecast
+  - Basic: free
+  - Pro: 500 JPY / month
+
+- PocketSecretary
+  - Free: free
+  - Pro: 300 JPY / month
+  - For Business: 700 JPY / month
+
+### unknown
+- ExpenseSettlement
+- InvoiceFlow
+- Mbo
+- OrderFlow
+- ProductPortfolioManager
+- TalentGrowth
+
+## 4. next fix targets
+
+次に固定したい項目:
+- official_app_code
+- app_scope_summary
+- implementation_phase
+- erp_integration_level
+- schema_name
+- api_readiness
+- db_readiness
+- release_readiness
+

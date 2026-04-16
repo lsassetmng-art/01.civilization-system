@@ -1,0 +1,52 @@
+# ============================================================
+# LEGAL SUPPORT ARCHIVE SHARE UI GUARDS
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: interface
+subdomain: screens
+schema: life
+
+ui_guard_points:
+
+  archive_guard:
+    before_archive_checks:
+      - active_export_in_progress must be false
+      - user confirms archive intent
+      - user is informed notifications will stop
+
+  reopen_guard:
+    before_reopen_checks:
+      - owner only
+      - archived or completed only
+      - user confirms reopen intent
+
+  family_share_guard:
+    before_enable_checks:
+      - plus_family plan required
+      - visibility_scope reviewed
+      - hidden sections reviewed
+      - document shared_flag reviewed
+
+  export_guard:
+    before_pdf_export_checks:
+      - at least one section selected
+      - hidden documents excluded
+      - private notes excluded
+      - target scope confirmed
+
+  expense_guard:
+    before_family_exposure_checks:
+      - expense_record default hidden
+      - user explicitly opts in if future support added
+
+ui_messages:
+  archive_confirm:
+    - この案件をアーカイブすると通常通知は停止されます
+  reopen_confirm:
+    - この案件を再開すると更新と通知が再び有効になります
+  share_confirm:
+    - 共有範囲に含まれる内容を確認してください
+  export_confirm:
+    - PDFに含める項目を最終確認してください

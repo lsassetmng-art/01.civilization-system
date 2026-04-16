@@ -1,0 +1,16 @@
+# ============================================================
+# MODEL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+root_entities:
+  - legal_case
+  - stakeholder
+  - fact_timeline_event
+  - evidence_item
+  - legal_document
+  - consultation_note
+  - legal_task
+  - deadline_event
+  - advisor_contact
+  - case_share_pack

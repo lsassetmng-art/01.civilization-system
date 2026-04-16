@@ -1,0 +1,16 @@
+# ============================================================
+# SECURITY CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000003_SECURITY_CORE_OVERVIEW.md
+  - 1000004_PERSONAL_LEGAL_SUPPORT_SECURITY_MODEL.md

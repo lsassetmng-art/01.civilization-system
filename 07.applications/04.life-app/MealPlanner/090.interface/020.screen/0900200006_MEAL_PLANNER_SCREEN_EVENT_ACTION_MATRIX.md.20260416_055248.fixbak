@@ -1,0 +1,423 @@
+# MealPlanner Screen Event Action Matrix
+
+## 1. purpose
+画面イベント、呼び出し API、成功時反応、失敗時反応、未課金時反応を固定する。
+
+## 2. common_rules
+- success:
+  - state refresh or partial patch
+- failure:
+  - toast + retry_possible_message
+- unpaid:
+  - upgrade_modal or teaser
+- destructive action:
+  - confirm first when user data loss may happen
+- create/update success:
+  - optimistic UI を使っても最終 state は server response を正とする
+
+## 3. dashboard_home
+
+### event: refresh
+- api:
+  - GET /api/mealplanner/dashboard
+- success:
+  - cards refresh
+- failure:
+  - error toast
+- unpaid:
+  - n/a
+
+### event: tap_daily_suggestion
+- api:
+  - navigate only or generate flow entry
+- success:
+  - open daily_meal_detail or suggestion flow
+- failure:
+  - n/a
+- unpaid:
+  - available
+
+### event: tap_pantry_teaser_on_free
+- api:
+  - none
+- success:
+  - open upgrade_modal
+- failure:
+  - n/a
+- unpaid:
+  - yes
+
+## 4. weekly_meal_planner
+
+### event: generate_week_plan
+- api:
+  - POST /api/mealplanner/plan/generate
+- success:
+  - week_grid render
+  - header patch
+- failure:
+  - inline error + retry
+- unpaid:
+  - available
+
+### event: tap_slot
+- api:
+  - local selection or GET detail already held
+- success:
+  - open slot detail area
+- failure:
+  - n/a
+- unpaid:
+  - available
+
+### event: replace_slot_menu
+- api:
+  - POST /api/mealplanner/plan/slot/update
+- success:
+  - patch slot card
+  - changed badge show
+- failure:
+  - revert UI patch
+  - error toast
+- unpaid:
+  - available
+
+### event: save_template
+- api:
+  - future template save API
+- success:
+  - template saved toast
+- failure:
+  - error toast
+- unpaid:
+  - if limit reached then upgrade_modal
+
+### event: export_csv
+- api:
+  - POST /api/mealplanner/export/csv
+- success:
+  - export success toast
+  - download action enable
+- failure:
+  - export failed toast
+- unpaid:
+  - available
+
+## 5. daily_meal_detail
+
+### event: record_actual_result
+- api:
+  - POST /api/mealplanner/history/record
+- success:
+  - history_preview append
+  - actual_status badge update
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+### event: open_nutrition_panel
+- api:
+  - none or local
+- success:
+  - panel open
+- failure:
+  - n/a
+- unpaid:
+  - free -> upgrade_modal
+  - paid -> open panel
+
+### event: export_csv
+- api:
+  - POST /api/mealplanner/export/csv
+- success:
+  - export state update
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+## 6. monthly_meal_planner
+
+### event: generate_month_plan
+- api:
+  - POST /api/mealplanner/plan/generate
+- success:
+  - month blocks render
+- failure:
+  - inline error
+- unpaid:
+  - available
+
+### event: derive_week
+- api:
+  - POST /api/mealplanner/plan/derive-week
+- success:
+  - weekly_meal_plan linked
+  - navigate or badge update
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+### event: export_csv
+- api:
+  - POST /api/mealplanner/export/csv
+- success:
+  - export ready notice
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+## 7. menu_search_and_suggestion
+
+### event: search_execute
+- api:
+  - POST /api/mealplanner/menu/search
+- success:
+  - search_result_list render
+- failure:
+  - error state render
+- unpaid:
+  - available
+
+### event: suggest_execute
+- api:
+  - POST /api/mealplanner/menu/suggest
+- success:
+  - suggestion_result_list render
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+### event: tap_paid_suggestion_mode
+- api:
+  - none
+- success:
+  - upgrade_modal
+- failure:
+  - n/a
+- unpaid:
+  - yes
+
+## 8. pantry_inventory
+
+### event: open_pantry
+- api:
+  - GET /api/mealplanner/pantry/list
+- success:
+  - pantry list render
+- failure:
+  - error state
+- unpaid:
+  - free -> upgrade_modal or teaser
+  - paid -> open normally
+
+### event: save_pantry_item
+- api:
+  - POST /api/mealplanner/pantry/upsert
+- success:
+  - row patch or append
+- failure:
+  - revert edit + error toast
+- unpaid:
+  - free -> blocked by upgrade_modal
+  - paid -> available
+
+## 9. shopping_list
+
+### event: generate_shopping_list
+- api:
+  - POST /api/mealplanner/shopping/generate
+- success:
+  - shopping header + items render
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+### event: check_item
+- api:
+  - POST /api/mealplanner/shopping/item/check
+- success:
+  - checked badge patch
+  - progress summary patch
+- failure:
+  - revert check UI
+  - error toast
+- unpaid:
+  - free -> single basic check only
+  - paid -> shared check full
+
+### event: tap_shared_check_on_free
+- api:
+  - none
+- success:
+  - upgrade_modal
+- failure:
+  - n/a
+- unpaid:
+  - yes
+
+## 10. goal_and_budget_settings
+
+### event: change_budget_tier
+- api:
+  - POST /api/mealplanner/settings/budget-tier
+- success:
+  - derived budget preview patch
+- failure:
+  - revert selector
+  - error toast
+- unpaid:
+  - available
+
+### event: toggle_lifeos_integration_on_free
+- api:
+  - none
+- success:
+  - upgrade_modal
+- failure:
+  - n/a
+- unpaid:
+  - yes
+
+## 11. family_settings
+
+### event: save_family_profile
+- api:
+  - POST /api/mealplanner/settings/family-profile
+- success:
+  - member list refresh
+  - household size patch
+- failure:
+  - validation inline + toast
+- unpaid:
+  - available basic
+  - shared collaboration advanced -> paid
+
+## 12. template_library
+
+### event: apply_template
+- api:
+  - local selection + plan update flow
+- success:
+  - week/day/month patched
+- failure:
+  - error toast
+- unpaid:
+  - available within limit
+
+### event: save_template_when_limit_reached
+- api:
+  - none
+- success:
+  - upgrade_modal
+- failure:
+  - n/a
+- unpaid:
+  - yes
+
+## 13. favorite_menu_list
+
+### event: add_favorite
+- api:
+  - future favorite API or local save path
+- success:
+  - favorite_list patch
+- failure:
+  - error toast
+- unpaid:
+  - available within limit
+
+### event: add_favorite_when_limit_reached
+- api:
+  - none
+- success:
+  - upgrade_modal
+- failure:
+  - n/a
+- unpaid:
+  - yes
+
+## 14. meal_history_log
+
+### event: open_old_history_beyond_free_limit
+- api:
+  - none or server-gated fetch
+- success:
+  - free -> upgrade_modal
+  - paid -> history fetch
+- failure:
+  - n/a
+- unpaid:
+  - yes
+
+## 15. user_menu_editor
+
+### event: create_private_menu
+- api:
+  - POST /api/mealplanner/user-menu/create
+- success:
+  - editor enters saved state
+  - source badge = user_private
+- failure:
+  - inline validation + toast
+- unpaid:
+  - available
+
+### event: update_private_menu
+- api:
+  - POST /api/mealplanner/user-menu/update
+- success:
+  - updated_at patch
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+### event: submit_publish_request
+- api:
+  - POST /api/mealplanner/user-menu/publish-request
+- success:
+  - publication badge update to review_pending context
+  - navigate to publish status optionally
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+## 16. user_menu_publish_status
+
+### event: refresh_publish_status
+- api:
+  - GET /api/mealplanner/user-menu/publish-status
+- success:
+  - status card patch
+- failure:
+  - error toast
+- unpaid:
+  - available
+
+## 17. notification_settings
+
+### event: save_notification_pref
+- api:
+  - future notification settings API
+- success:
+  - saved toast
+- failure:
+  - error toast
+- unpaid:
+  - shared notification settings are teaser on free
+
+## 18. upgrade_modal triggers summary
+- pantry open on free
+- family shared check on free
+- nutrition panel open on free
+- LifeOS integration toggle on free
+- template limit reached
+- favorite limit reached
+- history beyond free limit

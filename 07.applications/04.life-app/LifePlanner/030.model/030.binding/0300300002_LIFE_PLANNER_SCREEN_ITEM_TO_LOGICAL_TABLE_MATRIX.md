@@ -1,0 +1,142 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LIFE PLANNER SCREEN ITEM TO LOGICAL TABLE MATRIX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 030.binding
+owner: Boss
+prepared_by: Zero
+schema: life
+
+matrix:
+
+  home:
+    main_bindings:
+      - section: review_needed_card
+        logical_source:
+          - life.life_review_log
+        note:
+          - 見直し必要件数は derived で算出する
+
+      - section: upcoming_events_card
+        logical_source:
+          - life.life_event_timeline
+        note:
+          - 次イベントは年表イベントから derived で算出する
+
+      - section: goal_progress_card
+        logical_source:
+          - life.life_goal
+        note:
+          - 件数系は derived
+
+      - section: reflection_candidate_card
+        logical_source:
+          - life.life_reflection_candidate
+        note:
+          - pending件数は derived
+
+  life_plan_detail:
+    main_bindings:
+      - section: plan_basic_summary
+        logical_source:
+          - life.life_plan
+
+      - section: goal_summary_section
+        logical_source:
+          - life.life_goal
+
+      - section: event_summary_section
+        logical_source:
+          - life.life_event_timeline
+
+      - section: cost_summary_section
+        logical_source:
+          - life.life_goal
+          - life.life_event_timeline
+          - life.life_scenario
+        note:
+          - 合計値は保持せず derived
+
+      - section: review_summary_section
+        logical_source:
+          - life.life_review_log
+
+  create_plan_and_plan_edit:
+    main_bindings:
+      - section: plan_basic_form
+        logical_source:
+          - life.life_plan
+
+      - section: goal_edit_form
+        logical_source:
+          - life.life_goal
+
+      - section: milestone_form
+        logical_source:
+          - life.life_milestone
+
+      - section: timeline_event_form
+        logical_source:
+          - life.life_event_timeline
+
+  family_share_setting:
+    main_bindings:
+      - section: shared_member_list
+        logical_source:
+          - life.life_shared_member
+
+      - section: scope_editor
+        logical_source:
+          - life.life_shared_member
+
+  scenario_compare:
+    main_bindings:
+      - section: scenario_list_section
+        logical_source:
+          - life.life_scenario
+
+      - section: decision_section
+        logical_source:
+          - life.life_scenario_decision
+
+      - section: compare_result_section
+        logical_source:
+          - life.life_scenario
+        note:
+          - 比較結果テーブル自体は derived 表現
+
+  reflection_candidate_view:
+    main_bindings:
+      - section: candidate_list_section
+        logical_source:
+          - life.life_reflection_candidate
+
+      - section: decision_section
+        logical_source:
+          - life.life_reflection_candidate
+          - life.life_review_log
+          - life.life_plan
+          - life.life_goal
+          - life.life_event_timeline
+        note:
+          - apply時は候補本体 + review_log + 対象entity更新が連動する
+
+binding_rule_summary:
+  - life_plan が親集約
+  - goal, event, review, reflection, share, scenario は親集約配下
+  - milestone は goal 配下
+  - derived 表示項目は保持せず算出する

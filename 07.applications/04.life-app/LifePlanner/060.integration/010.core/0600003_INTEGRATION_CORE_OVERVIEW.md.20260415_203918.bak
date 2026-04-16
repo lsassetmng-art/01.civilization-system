@@ -1,0 +1,17 @@
+# ============================================================
+# INTEGRATION CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - LifePlanner の 連携 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する

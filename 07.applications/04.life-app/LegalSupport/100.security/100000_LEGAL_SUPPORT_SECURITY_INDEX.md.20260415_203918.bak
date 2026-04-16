@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT SECURITY INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: SECURITY
+
+purpose:
+  - アクセス制御、共有制御、情報保護を定義する

@@ -1,0 +1,485 @@
+
+
+# ============================================================
+# QUICK FORECAST OVERVIEW
+# ============================================================
+
+status: canonical
+layer: application
+application: QuickForecast
+owner: Boss
+prepared_by: Zero
+
+purpose:
+QuickForecast is a field-ready business application
+that starts from demand forecasting and rapidly connects
+forecast results to action ideas, proposal drafts,
+and profit-image previews.
+
+product_tiers:
+- QuickForecast Basic
+- QuickForecast Pro
+
+canonical_value_chain:
+Forecast
+-> Action
+-> Proposal
+-> Profit
+
+summary:
+QuickForecast is not only a forecasting tool.
+Its primary value is to transform forecast thinking
+into business-ready proposal output.
+
+The application supports short-cycle usage in:
+- meetings
+- sales visits
+- field work
+- transit / movement
+- quick internal review situations
+
+QuickForecast Basic:
+Provides lightweight forecasting and proposal drafting
+based on public/general information and manual assumptions.
+
+QuickForecast Pro:
+Extends Basic with ERP-linked reference usage,
+sharing, approval handling, synchronization,
+history visibility, and governed enterprise handoff.
+
+erp_relation:
+ERP retains equivalent forecasting capability.
+QuickForecast does not replace ERP.
+QuickForecast exists as a fast, mobile,
+high-immediacy companion application that helps users
+build draft business opportunities quickly.
+
+main_value:
+- quickly build forecast drafts
+- derive business actions from forecast meaning
+- generate proposal drafts
+- preview revenue and profit image
+- support mobile and interrupted work
+- connect field thinking to governed enterprise operation
+
+design_identity:
+QuickForecast is a demand-forecast-originated
+proposal drafting workbench.
+
+current_scope_note:
+The current body is implementation-ready design,
+but active work remains within the design-only boundary.
+
+
+# ============================================================
+# QUICK FORECAST CURRENT STATUS
+# ============================================================
+
+status: canonical
+layer: application
+application: QuickForecast
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a one-page current status summary.
+
+current_phase:
+design-complete
+implementation-deferred
+
+current_state_summary:
+QuickForecast is now treated as:
+- design-closed
+- handoff-ready
+- implementation-later by explicit decision
+
+design_completed_areas:
+- constitution
+- architecture
+- model
+- runtime
+- flow
+- integration
+- operations
+- policy
+- interface
+- security
+- infrastructure
+- implementation-boundary design
+- development-phase design
+- review and closure meta design
+
+fixed_meanings:
+- forecast-centered product identity
+- ERP boundary
+- cross-application boundary
+- multilingual meaning
+- multicurrency meaning
+- multi-device meaning
+- pricing and positioning meaning
+- Phase 1 / Phase 2 separation
+
+not_done:
+- source implementation
+- runtime validation
+- build verification
+
+rule:
+Treat QuickForecast as a completed design set,
+not as an implemented application.
+
+
+# ============================================================
+# QUICK FORECAST INDEX
+# ============================================================
+
+status: canonical
+layer: application
+application: QuickForecast
+owner: Boss
+prepared_by: Zero
+
+root_files:
+- 000_QUICK_FORECAST_OVERVIEW.md
+- 000_QUICK_FORECAST_CURRENT_STATUS.md
+- 000_QUICK_FORECAST_INDEX.md
+- 00_QUICK_FORECAST_INTEGRATED.md
+- 00_QUICK_FORECAST_INTEGRATED_REBUILT.md
+- 9999_QUICK_FORECAST_DESIGN_COMPLETION_REPORT.md
+
+layer_directories:
+- 010.constitution
+- 020.architecture
+- 030.model
+- 040.runtime
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 090.interface
+- 100.security
+- 110.infrastructure
+- 120.implementation
+- 130.development
+- 900.meta
+
+current_status:
+- design_complete
+- handoff_ready
+- implementation_deferred
+
+
+# ============================================================
+# QUICK FORECAST INTEGRATED
+# ============================================================
+
+status: canonical
+layer: integrated
+application: QuickForecast
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Integrated canonical book for QuickForecast.
+
+summary:
+QuickForecast Basic / Pro is a demand-forecast-originated,
+field-ready proposal drafting application.
+
+It is designed not only to estimate demand,
+but to connect forecast thinking to action ideas,
+proposal drafts, and profit-image previews.
+
+canonical_value_chain:
+Forecast
+-> Action
+-> Proposal
+-> Profit
+
+extended_pro_chain:
+Forecast
+-> Action
+-> Proposal
+-> Profit
+-> Share / Approval / Handoff
+
+product_tiers:
+- QuickForecast Basic
+- QuickForecast Pro
+
+positioning:
+QuickForecast coexists with ERP forecasting capability.
+ERP retains equivalent forecasting capability
+and remains suited for denser and more formal enterprise operation.
+
+QuickForecast is optimized for:
+- mobile immediacy
+- meeting-time use
+- sales-time use
+- interrupted work
+- rapid business draft generation
+
+design_identity:
+QuickForecast is a demand-forecast-originated
+proposal drafting workbench.
+
+integrated_scope:
+- overview
+- constitution
+- architecture
+- model
+- runtime
+- flow
+- integration
+- operations
+- policy
+- interface
+- security
+- infrastructure
+- implementation
+- development
+- meta
+
+current_scope_note:
+This integrated file represents implementation-ready design.
+Actual Android / Java implementation remains outside the current design-only boundary.
+
+# ============================================================
+# ROOT SUMMARY
+# ============================================================
+
+QuickForecast exists to help a user move quickly from
+demand expectation to business opportunity draft.
+
+It must remain useful in short work windows,
+while QuickForecast Pro supports governed enterprise-linked operation.
+
+# ============================================================
+# LAYER SUMMARY
+# ============================================================
+
+010.constitution:
+Defines QuickForecast as a field-ready application that connects
+forecasts to action, proposal, and profit preview,
+while preserving ERP coexistence and explicit authority boundaries.
+
+020.architecture:
+Defines the Forecast -> Action -> Proposal -> Profit workbench structure,
+with mobile-first and local-first design.
+
+030.model:
+Defines forecast, signal, scenario, action, proposal, profit,
+approval, sync, share, handoff, history, validation, error,
+and UI support models.
+
+040.runtime:
+Defines local-first runtime, interruption tolerance,
+and QuickForecast Pro-linked governed runtime behavior.
+
+050.flow:
+Defines the working sequence from forecast drafting
+to proposal, profit preview, sharing, approval, and ERP handoff.
+
+060.integration:
+Defines QuickForecast Basic general-signal usage and
+QuickForecast Pro enterprise-linked contracts,
+including approval, sharing, and ERP handoff boundaries.
+
+070.operations:
+Defines operational continuity, failure visibility,
+runbook guidance, and QuickForecast Pro recoverability.
+
+080.policy:
+Defines tier boundary, explainability, validation threshold,
+approval / submission gating, and UI state policy.
+
+090.interface:
+Defines the mobile-first screen structure, field specs,
+and source-to-output UI continuity.
+
+100.security:
+Defines tier boundary security, ERP reference protection,
+approval integrity, and submission integrity.
+
+110.infrastructure:
+Defines local-first mobile infrastructure
+and QuickForecast Pro enterprise-link assumptions.
+
+120.implementation:
+Defines implementation priorities for the
+Forecast -> Action -> Proposal -> Profit chain.
+
+130.development:
+Defines MVP-first development order
+and later QuickForecast Pro expansion direction.
+
+900.meta:
+Defines review checklists, screen inventory,
+code seed note, and traceability support.
+
+# ============================================================
+# CONCLUSION
+# ============================================================
+
+QuickForecast is not merely a demand forecasting tool.
+
+It is a forecast-originated, proposal-oriented,
+high-immediacy business drafting application
+for turning business hypotheses into actionable opportunities.
+
+
+# ============================================================
+# QUICK FORECAST DESIGN COMPLETION REPORT
+# ============================================================
+
+status: canonical
+layer: application
+application: QuickForecast
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Records formal design completion for QuickForecast.
+
+final_conclusion:
+QuickForecast is design-complete.
+
+completion_meaning:
+The application now has a complete and coherent design set across:
+- identity
+- scope
+- layer structure
+- screen responsibility
+- implementation boundary meaning
+- pricing and positioning
+- multilingual support
+- multicurrency support
+- multi-device support
+- cross-application boundary
+- review / handoff / close judgment
+
+completion_non_meaning:
+This does not mean:
+- implementation has started
+- implementation has completed
+- runtime has been verified
+- build has been verified
+
+formal_status:
+- design_complete: yes
+- handoff_ready: yes
+- close_ready: yes
+- implementation_started: no
+- implementation_deferred: yes
+
+result:
+QuickForecast should now be treated as
+a completed design artifact set
+ready for later implementation restart.
+
+
+# ============================================================
+# META INDEX
+# ============================================================
+
+status: canonical
+application: QuickForecast
+layer: 900.meta
+owner: Boss
+prepared_by: Zero
+
+files:
+- meta_OVERVIEW.md
+- meta_INDEX.md
+- 900100_QUICK_FORECAST_DESIGN_NOTE.md
+- 900110_QUICK_FORECAST_REVIEW_CHECKLIST.md
+- 900120_QUICK_FORECAST_CONSISTENCY_NOTE.md
+- 900130_QUICK_FORECAST_UI_REVIEW_CHECKLIST.md
+- 900140_QUICK_FORECAST_VALIDATION_CHECKLIST.md
+- 900150_QUICK_FORECAST_SCREEN_INVENTORY.md
+- 900160_QUICK_FORECAST_CODE_SEED_NOTE.md
+- 900170_PRO_OPERATION_REVIEW_CHECKLIST.md
+- 900180_SCREEN_TO_MODEL_TRACE_NOTE.md
+- 900190_QUICK_FORECAST_BOOK_BUILD_SCRIPT.sh
+- 900200_QUICK_FORECAST_CONSISTENCY_CHECK_NOTE.md
+- 900210_QUICK_FORECAST_QUICK_CHECK.sh
+- 900220_IMPLEMENTATION_PREP_REVIEW_CHECKLIST.md
+- 900230_ANDROID_PACKAGE_TO_SCREEN_TRACE_NOTE.md
+- 900240_CORE_SCREEN_SKELETON_REVIEW_CHECKLIST.md
+- 900250_PRO_SCREEN_SKELETON_REVIEW_CHECKLIST.md
+- 900260_VIEWMODEL_REPOSITORY_DB_REVIEW_CHECKLIST.md
+- 900270_ENTITY_DAO_REPOSITORY_REVIEW_CHECKLIST.md
+- 900280_VIEWMODEL_STATE_EVENT_EFFECT_REVIEW_CHECKLIST.md
+- 900290_PRO_VIEWMODEL_STATE_EVENT_EFFECT_REVIEW_CHECKLIST.md
+- 900300_REDUCER_AND_REPOSITORY_RESPONSIBILITY_REVIEW_CHECKLIST.md
+- 900310_PRO_REDUCER_AND_REPOSITORY_RESPONSIBILITY_REVIEW_CHECKLIST.md
+- 900320_ANDROID_CLASS_INVENTORY_REVIEW_CHECKLIST.md
+- 900330_ANDROID_FILE_GENERATION_REVIEW_CHECKLIST.md
+- 900340_ANDROID_GENERATION_TARGET_FREEZE_REVIEW_CHECKLIST.md
+- 900350_FINAL_POLISH_NOTE.md
+- 900360_OVERVIEW_ROLE_CLARIFICATION_NOTE.md
+- 900370_DESIGN_ONLY_BOUNDARY_NOTE.md
+- 900380_FINAL_REVIEW_CHECKLIST.md
+- 900390_FINAL_POLISH_SCRIPT.sh
+- 900400_QUICK_FORECAST_HANDOVER_NOTE.md
+- 900410_WORDING_CANONICAL_RULE.md
+- 900420_STYLE_CANONICAL_RULE.md
+- 900430_AMBIGUITY_AND_DUPLICATION_REVIEW_NOTE.md
+- 900440_FINAL_POLISH_REVIEW_CHECKLIST.md
+- 900450_POLISH_EXECUTION_NOTE.md
+- 900460_SHORT_HANDOVER_SOURCE_NOTE.md
+- 900470_WORDING_POLISH_EXECUTION_NOTE.md
+- 900480_CROSS_APPLICATION_WORDING_ALIGNMENT_NOTE.md
+- 900490_APPLICATION_POSITIONING_ALIGNMENT_RULE.md
+- 900500_TIER_ALIGNMENT_RULE.md
+- 900510_DESIGN_MATURITY_ALIGNMENT_RULE.md
+- 900520_CROSS_APPLICATION_REVIEW_CHECKLIST.md
+- 900530_CANONICAL_PHRASE_LIBRARY.md
+- 900540_QUICK_FORECAST_CLOSE_NOTE.md
+- 900550_QUICK_FORECAST_FINAL_VERIFY_REPORT.md
+- 900560_QUICK_FORECAST_CLOSURE_STARTER_PACK.md
+- 900570_QUICK_FORECAST_FINAL_MANIFEST.md
+- 900580_QUICK_FORECAST_CLOSURE_DECLARATION.md
+- 900590_PARENT_CANONICAL_ALIGNMENT_NOTE.md
+- 900600_QUICK_FORECAST_COMMON_COMPONENT_ADOPTION_REGISTRY.md
+- 900610_COMMON_COMPONENT_LEDGER_SYNC_NOTE.md
+- 900620_QUICK_FORECAST_PRICING_DESIGN_NOTE.md
+- 900630_FEATURE_EXPANSION_DESIGN_NOTE.md
+- 900640_EXPANDED_SCREEN_INVENTORY_NOTE.md
+- 900650_SCREEN_ADDITION_DECISION_NOTE.md
+- 900660_VM_REDUCER_REPOSITORY_REFRESH_NOTE.md
+- 900670_ANDROID_PRIORITY_REFRESH_NOTE.md
+- 900680_IMPLEMENTATION_RESTART_ENTRY_NOTE.md
+- 900690_IMPLEMENTATION_START_CHECKLIST.md
+- 900700_MULTILINGUAL_DESIGN_NOTE.md
+- 900710_MULTICURRENCY_DESIGN_NOTE.md
+- 900720_ANDROID_MINIMUM_FILESET_BUNDLE_NOTE.md
+- 900730_DEVELOPMENT_130_COMPLETION_NOTE.md
+- 900740_ANDROID_PHASE1_FILE_GENERATION_NOTE.md
+- 900750_MULTI_DEVICE_SUPPORT_NOTE.md
+- 900760_ANDROID_TEMPLATE_STARTER_NOTE.md
+- 900770_DESIGN_HARDENING_NOTE.md
+- 900780_PRICING_POSITIONING_BOUNDARY_NOTE.md
+- 900790_CROSS_APPLICATION_OVERLAP_NOTE.md
+- 900800_FINAL_REVIEW_HARDENING_CHECKLIST.md
+- 900810_CLOSE_DECISION_GATE_NOTE.md
+- 900820_REVIEWER_FOCUS_NOTE.md
+- 900830_PRE_CLOSE_TOTAL_INSPECTION_CHECKLIST.md
+- 900840_INDEX_AND_REBUILT_ALIGNMENT_NOTE.md
+- 900850_SEMANTIC_DRIFT_FINAL_NOTE.md
+- 900860_PRE_CLOSE_DECISION_SUMMARY_TEMPLATE.md
+- 900870_CLOSE_DECISION_SUMMARY_NOTE.md
+- 900880_REMAINING_RISK_DECISION_NOTE.md
+- 900890_HANDOFF_READY_DECISION_NOTE.md
+- 900900_CLOSE_RECOMMENDATION_TEMPLATE.md
+- 900910_DESIGN_COMPLETION_CANDIDATE_NOTE.md
+- 900920_DESIGN_COMPLETE_VS_IMPLEMENTATION_LATER_NOTE.md
+- 900930_HANDOFF_CLOSE_IMPLEMENTATION_RELATION_NOTE.md
+- 900940_FINAL_DESIGN_JUDGMENT_TEMPLATE.md
+- 900950_FINAL_DESIGN_JUDGMENT_NOTE.md
+- 900960_BLOCKER_STATUS_NOTE.md
+- 900970_CLOSE_RECOMMENDATION_NOTE.md
+- 900980_POST_CLOSE_HANDLING_NOTE.md
+- 900990_DESIGN_CLOSURE_DECLARATION.md
+- 901000_NEXT_PHASE_ENTRY_NOTE.md

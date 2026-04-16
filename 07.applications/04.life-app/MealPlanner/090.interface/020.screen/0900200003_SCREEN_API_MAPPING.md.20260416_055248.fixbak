@@ -1,0 +1,42 @@
+# Screen API Mapping
+
+## dashboard_home
+- GET /api/mealplanner/dashboard
+
+## weekly_meal_planner
+- POST /api/mealplanner/plan/generate
+- GET /api/mealplanner/plan/detail
+- POST /api/mealplanner/plan/slot/update
+
+## daily_meal_detail
+- GET /api/mealplanner/plan/detail
+- POST /api/mealplanner/plan/slot/update
+- POST /api/mealplanner/history/record
+
+## monthly_meal_planner
+- POST /api/mealplanner/plan/generate
+- POST /api/mealplanner/plan/derive-week
+
+## menu_search_and_suggestion
+- POST /api/mealplanner/menu/search
+- POST /api/mealplanner/menu/suggest
+
+## pantry_inventory
+- GET /api/mealplanner/pantry/list
+- POST /api/mealplanner/pantry/upsert
+
+## shopping_list
+- POST /api/mealplanner/shopping/generate
+- POST /api/mealplanner/shopping/item/check
+
+## user_menu_editor
+- POST /api/mealplanner/user-menu/create
+- POST /api/mealplanner/user-menu/update
+
+## user_menu_publish_status
+- POST /api/mealplanner/user-menu/publish-request
+- GET /api/mealplanner/user-menu/publish-status
+
+## settings
+- POST /api/mealplanner/settings/budget-tier
+- POST /api/mealplanner/settings/family-profile

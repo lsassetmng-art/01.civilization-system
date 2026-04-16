@@ -1,0 +1,26129 @@
+# ============================================================
+# CIVILIZATION PORTAL SITE FULLY INTEGRATED ALL FILES v2
+# ============================================================
+
+status: canonical-full-integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 0. PURPOSE
+# ============================================================
+
+This file is a fully integrated edition containing all files
+currently placed under the Civilization Portal Site design folder,
+including portal schema, CX22073JW, scenario, and seed drafts.
+
+source_order_file:
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_v2_ORDER.txt
+
+# ============================================================
+# 1. MERGED CONTENT
+# ============================================================
+
+
+# ------------------------------------------------------------
+# SOURCE 1
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ROOT FILE GUIDE
+# ============================================================
+
+status: canonical-design-support
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site 直下にある
+ルートファイル群の役割と読む順番を
+短く案内する補助文書である。
+
+本書の目的は、
+初回参照時に、
+どの文書から読めばよいかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. ルートファイル一覧
+# ============================================================
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 3. 各ファイルの役割
+# ============================================================
+
+00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md:
+- ルートファイルの読む順番を示す補助文書
+
+0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md:
+- このフォルダ自体が何を意味するかを示す入口文書
+
+000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md:
+- Portal Site の最上位概要を示す文書
+
+000_CIVILIZATION_PORTAL_SITE_INDEX.md:
+- Portal Site 設計全体の索引文書
+
+00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md:
+- Portal Site 設計全体の統合正本本文
+
+# ============================================================
+# 4. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+
+# ============================================================
+# 5. レイヤフォルダ
+# ============================================================
+
+本フォルダ配下のレイヤフォルダは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 解釈原則
+# ============================================================
+
+- 最上位の本文正本は 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md とする。
+- OVERVIEW は最上位概要とする。
+- INDEX は索引とする。
+- FOLDER_OVERVIEW はフォルダ入口説明とする。
+- ROOT_FILE_GUIDE は読む順番を示す補助文書とする。
+
+# ============================================================
+# 7. 現在状態
+# ============================================================
+
+本書は補助文書であり、
+Portal Site の実装前 canonical design を案内するために置く。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 2
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FOLDER OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site フォルダ自体の意味を
+短く説明するための入口文書である。
+
+本書の目的は、
+このフォルダが Civilization 全体において
+どのような位置づけを持つかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. フォルダ定義
+# ============================================================
+
+08.civilization-portal-site は、
+Civilization 全体の公開入口となる
+公式Webポータルの設計書群を格納するトップ階層である。
+
+本フォルダは、
+各OSへの唯一の公式Web導線、
+ログイン案内、
+新規登録案内、
+ログイン済み利用者向けWebランチャー、
+ポータル運営管理に関する設計を保持する。
+
+# ============================================================
+# 3. このフォルダを独立配置する理由
+# ============================================================
+
+本フォルダを独立トップ階層に置く理由は次の通りとする。
+
+- Portal Site は Civilization 全体の公開入口である。
+- Portal Site は単なる docs ではない。
+- Portal Site は applications 配下の単独アプリでもない。
+- Portal Site は各OSへの唯一の公式Web導線を担う。
+- Portal Site は CivilizationOS の認証導線と接続する上位システムである。
+
+# ============================================================
+# 4. ルート正本
+# ============================================================
+
+本フォルダのルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. レイヤ構成
+# ============================================================
+
+本フォルダは次のレイヤ構成を持つ。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 主要原則
+# ============================================================
+
+- 各OSへのリンクは Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 新規登録と認証の正本は CivilizationOS が担う。
+- Portal Site は Web入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- 実装はまだ行わない。
+
+# ============================================================
+# 7. 参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+2. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+4. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+5. 各レイヤ overview / index
+6. 各個別文書
+
+# ============================================================
+# 8. 現在状態
+# ============================================================
+
+本フォルダは、
+Civilization Portal Site の実装前 canonical design を保持する。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 3
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0001_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_ADDENDUM.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SPEC CHANGE ADDENDUM
+# AI HELPDESK ENTRY / DB COPY / DB APP HIERARCHY
+# ============================================================
+
+status: draft-additive
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の仕様変更を
+追補設計として固定する文書である。
+
+今回の変更は次の3点である。
+
+- すべてのアプリのヘルプデスクとして AIチャット入口をトップ画面に設ける
+- ページ文言は DB から取得して表示する
+- アプリ一覧は階層表示とし、DB を使った動的表示にする
+
+# ============================================================
+# 2. 変更要点
+# ============================================================
+
+Portal Site は、
+単なる公開入口に加えて、
+全アプリ共通のヘルプデスク入口を持つ。
+
+トップ画面には、
+AIチャット入口を常設し、
+利用者がアプリ横断で問い合わせ可能な導線を提供する。
+
+また、
+Portal Site の公開文言は固定埋込ではなく、
+DB から取得して表示する方式へ変更する。
+
+さらに、
+アプリ一覧 / OS 一覧 / 関連導線は、
+静的固定表示ではなく、
+DB 管理された階層構造に従って
+動的表示する方式へ変更する。
+
+# ============================================================
+# 3. 変更影響領域
+# ============================================================
+
+- architecture
+- model
+- integration
+- policy
+- implementation-ready
+- development
+
+# ============================================================
+# 4. 追補参照
+# ============================================================
+
+- 020.architecture/020004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DYNAMIC_NAV_ARCHITECTURE.md
+- 030.model/030004_CIVILIZATION_PORTAL_SITE_DYNAMIC_COPY_AND_APP_TREE_MODEL.md
+- 060.integration/060004_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_INTEGRATION.md
+- 080.policy/080004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DB_DISPLAY_POLICY.md
+- 120.implementation-ready/120005_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_EXACT_SPEC.md
+- 130.development/1300008_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 5. 原則
+# ============================================================
+
+- additive only
+- 既存正本を破壊しない
+- 固定文言ではなく DB 配信文言を正とする
+- 固定アプリ一覧ではなく DB 駆動階層を正とする
+- AIチャット入口は全アプリ共通ヘルプデスク入口として扱う
+
+
+# ------------------------------------------------------------
+# SOURCE 4
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INDEX
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site 設計の索引文書である。
+
+本書の目的は、
+Civilization Portal Site 設計に含まれる主要論点、
+参照順、
+正本文書の位置づけを固定し、
+ルート正本、レイヤ別正本、実装前仕様、実装設計を
+階層的に参照できるようにすることにある。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. OVERVIEW
+2. INTEGRATED
+3. architecture
+4. model
+5. flow
+6. integration
+7. operations
+8. policy
+9. implementation-ready
+10. development
+
+# ============================================================
+# 3. ルート正本文書
+# ============================================================
+
+Portal Site 設計のルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+各文書の位置づけは次の通りとする。
+
+- OVERVIEW:
+  最上位概要。
+  システム定義、位置づけ、基本原則、責務境界を短く固定する。
+
+- INDEX:
+  索引文書。
+  参照順、論点一覧、レイヤ別参照を固定する。
+
+- INTEGRATED:
+  本文正本。
+  Portal Site 設計全体を統合本文として保持する。
+
+# ============================================================
+# 4. レイヤ別正本文書
+# ============================================================
+
+## 4.1 architecture
+
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+対象論点:
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+## 4.2 model
+
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+対象論点:
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+## 4.3 flow
+
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+対象論点:
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+## 4.4 integration
+
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+対象論点:
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+## 4.5 operations
+
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+対象論点:
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+## 4.6 policy
+
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+対象論点:
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 5. 実装前仕様文書
+# ============================================================
+
+## 5.1 implementation-ready
+
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+対象論点:
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 6. 実装設計文書
+# ============================================================
+
+## 6.1 development
+
+- 130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+- 130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+- 130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- 130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- 130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- 130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- 130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- 130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- 130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- 130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+対象論点:
+- 開発優先方針
+- フェーズ分解
+- P0 Web基盤
+- P1 公開ページ
+- P2 認証導線
+- P3 入口判定
+- P4 ランチャー
+- ディレクトリ構成
+- ファイル責務境界
+
+# ============================================================
+# 7. 論点一覧
+# ============================================================
+
+A. 定義と境界
+- システム定義
+- CivilizationOS との境界
+- 各OSとの境界
+- 公式入口原則
+
+B. Webページ構成
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+C. 導線と遷移
+- 通常Web導線
+- OS Web入口遷移
+- ログイン要求導線
+- 認証復帰導線
+- アクセス不可導線
+- メンテナンス導線
+
+D. 権限制御
+- 表示可否
+- 遷移可否
+- 主体種別条件
+- 所属条件
+- 契約条件
+- Beta条件
+- 法令・地域条件
+
+E. 運営管理
+- OS掲載管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 監査管理
+
+F. モデルと連携
+- OSカードモデル
+- データモデル
+- CivilizationOS 認証参照
+- 各OS起動連携
+- return context 管理
+
+G. 実装前仕様
+- API exact contract
+- 画面項目表
+- DB論理 schema
+- DB物理方針
+- exact column 定義表
+
+H. 実装設計
+- 開発優先方針
+- 実装フェーズ
+- P0〜P4 実装設計
+- ディレクトリ構成
+- ファイル構成
+
+# ============================================================
+# 8. 解釈原則
+# ============================================================
+
+概要文書と統合文書で記述粒度が異なる場合、
+統合文書を優先する。
+
+統合文書と分割文書で記述粒度が異なる場合、
+統合文書を上位本文正本としつつ、
+各分割文書は対応レイヤの詳細正本として扱う。
+
+development layer は実装設計文書群であり、
+設計と実装の橋渡しとして扱う。
+
+今後、詳細分割文書を追加する場合、
+統合文書との整合を維持しなければならない。
+
+# ============================================================
+# 9. 現在の扱い
+# ============================================================
+
+Civilization Portal Site 設計は、現時点で次として扱う。
+
+- 実装前 canonical design
+- 実装設計文書追加済み
+- 実装未着手
+- DDL未実行
+- 将来実装時の参照正本
+
+
+# ------------------------------------------------------------
+# SOURCE 5
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の最上位概要を定義する文書である。
+
+本書の目的は、
+Civilization Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+基本原則、
+責務境界を短く固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- Civilization 世界観の公開説明
+- 各OSの紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部から最初に到達するWeb情報サイト
+- 各OSへの唯一の公式Webリンク保持主体
+- ログイン済み利用者向けWebランチャー提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるその他OS
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一のWeb導線提供
+- 新規登録案内
+- ログイン案内
+- Webランチャー提供
+- Web遷移前の前段判定
+- お知らせ掲載
+- メンテナンス案内
+- ポータルWeb管理画面提供
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 新規登録正本処理
+- 認証正本処理
+- Civilization ID 発行
+- 各OS内部処理
+- 各OS内部データ管理
+- 各OS内部詳細権限制御
+- OS間直接遷移
+
+# ============================================================
+# 6. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Webページ:
+- ダッシュボード
+- OS掲載管理
+- お知らせ管理
+- メンテ管理
+- 特集管理
+- 文言管理
+- 監査ログ閲覧
+
+# ============================================================
+# 7. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開案内、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+およびポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。
+
+# ============================================================
+# 8. 詳細設計参照
+# ============================================================
+
+本概要文書の詳細設計は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 6
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FULLY INTEGRATED ALL FILES
+# ============================================================
+
+status: canonical-full-integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 0. PURPOSE
+# ============================================================
+
+This file is a fully integrated edition containing all files
+currently placed under the Civilization Portal Site design folder.
+
+integration_scope:
+- root files
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 130.development
+- 900.meta
+
+source_order_file:
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_ORDER.txt
+
+# ============================================================
+# 1. MERGED CONTENT
+# ============================================================
+
+
+# ------------------------------------------------------------
+# SOURCE 1
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ROOT FILE GUIDE
+# ============================================================
+
+status: canonical-design-support
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site 直下にある
+ルートファイル群の役割と読む順番を
+短く案内する補助文書である。
+
+本書の目的は、
+初回参照時に、
+どの文書から読めばよいかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. ルートファイル一覧
+# ============================================================
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 3. 各ファイルの役割
+# ============================================================
+
+00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md:
+- ルートファイルの読む順番を示す補助文書
+
+0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md:
+- このフォルダ自体が何を意味するかを示す入口文書
+
+000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md:
+- Portal Site の最上位概要を示す文書
+
+000_CIVILIZATION_PORTAL_SITE_INDEX.md:
+- Portal Site 設計全体の索引文書
+
+00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md:
+- Portal Site 設計全体の統合正本本文
+
+# ============================================================
+# 4. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+
+# ============================================================
+# 5. レイヤフォルダ
+# ============================================================
+
+本フォルダ配下のレイヤフォルダは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 解釈原則
+# ============================================================
+
+- 最上位の本文正本は 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md とする。
+- OVERVIEW は最上位概要とする。
+- INDEX は索引とする。
+- FOLDER_OVERVIEW はフォルダ入口説明とする。
+- ROOT_FILE_GUIDE は読む順番を示す補助文書とする。
+
+# ============================================================
+# 7. 現在状態
+# ============================================================
+
+本書は補助文書であり、
+Portal Site の実装前 canonical design を案内するために置く。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 2
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FOLDER OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site フォルダ自体の意味を
+短く説明するための入口文書である。
+
+本書の目的は、
+このフォルダが Civilization 全体において
+どのような位置づけを持つかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. フォルダ定義
+# ============================================================
+
+08.civilization-portal-site は、
+Civilization 全体の公開入口となる
+公式Webポータルの設計書群を格納するトップ階層である。
+
+本フォルダは、
+各OSへの唯一の公式Web導線、
+ログイン案内、
+新規登録案内、
+ログイン済み利用者向けWebランチャー、
+ポータル運営管理に関する設計を保持する。
+
+# ============================================================
+# 3. このフォルダを独立配置する理由
+# ============================================================
+
+本フォルダを独立トップ階層に置く理由は次の通りとする。
+
+- Portal Site は Civilization 全体の公開入口である。
+- Portal Site は単なる docs ではない。
+- Portal Site は applications 配下の単独アプリでもない。
+- Portal Site は各OSへの唯一の公式Web導線を担う。
+- Portal Site は CivilizationOS の認証導線と接続する上位システムである。
+
+# ============================================================
+# 4. ルート正本
+# ============================================================
+
+本フォルダのルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. レイヤ構成
+# ============================================================
+
+本フォルダは次のレイヤ構成を持つ。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 主要原則
+# ============================================================
+
+- 各OSへのリンクは Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 新規登録と認証の正本は CivilizationOS が担う。
+- Portal Site は Web入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- 実装はまだ行わない。
+
+# ============================================================
+# 7. 参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+2. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+4. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+5. 各レイヤ overview / index
+6. 各個別文書
+
+# ============================================================
+# 8. 現在状態
+# ============================================================
+
+本フォルダは、
+Civilization Portal Site の実装前 canonical design を保持する。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 3
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INDEX
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site 設計の索引文書である。
+
+本書の目的は、
+Civilization Portal Site 設計に含まれる主要論点、
+参照順、
+正本文書の位置づけを固定し、
+ルート正本、レイヤ別正本、実装前仕様、実装設計を
+階層的に参照できるようにすることにある。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. OVERVIEW
+2. INTEGRATED
+3. architecture
+4. model
+5. flow
+6. integration
+7. operations
+8. policy
+9. implementation-ready
+10. development
+
+# ============================================================
+# 3. ルート正本文書
+# ============================================================
+
+Portal Site 設計のルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+各文書の位置づけは次の通りとする。
+
+- OVERVIEW:
+  最上位概要。
+  システム定義、位置づけ、基本原則、責務境界を短く固定する。
+
+- INDEX:
+  索引文書。
+  参照順、論点一覧、レイヤ別参照を固定する。
+
+- INTEGRATED:
+  本文正本。
+  Portal Site 設計全体を統合本文として保持する。
+
+# ============================================================
+# 4. レイヤ別正本文書
+# ============================================================
+
+## 4.1 architecture
+
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+対象論点:
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+## 4.2 model
+
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+対象論点:
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+## 4.3 flow
+
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+対象論点:
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+## 4.4 integration
+
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+対象論点:
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+## 4.5 operations
+
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+対象論点:
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+## 4.6 policy
+
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+対象論点:
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 5. 実装前仕様文書
+# ============================================================
+
+## 5.1 implementation-ready
+
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+対象論点:
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 6. 実装設計文書
+# ============================================================
+
+## 6.1 development
+
+- 130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+- 130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+- 130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- 130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- 130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- 130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- 130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- 130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- 130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- 130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+対象論点:
+- 開発優先方針
+- フェーズ分解
+- P0 Web基盤
+- P1 公開ページ
+- P2 認証導線
+- P3 入口判定
+- P4 ランチャー
+- ディレクトリ構成
+- ファイル責務境界
+
+# ============================================================
+# 7. 論点一覧
+# ============================================================
+
+A. 定義と境界
+- システム定義
+- CivilizationOS との境界
+- 各OSとの境界
+- 公式入口原則
+
+B. Webページ構成
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+C. 導線と遷移
+- 通常Web導線
+- OS Web入口遷移
+- ログイン要求導線
+- 認証復帰導線
+- アクセス不可導線
+- メンテナンス導線
+
+D. 権限制御
+- 表示可否
+- 遷移可否
+- 主体種別条件
+- 所属条件
+- 契約条件
+- Beta条件
+- 法令・地域条件
+
+E. 運営管理
+- OS掲載管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 監査管理
+
+F. モデルと連携
+- OSカードモデル
+- データモデル
+- CivilizationOS 認証参照
+- 各OS起動連携
+- return context 管理
+
+G. 実装前仕様
+- API exact contract
+- 画面項目表
+- DB論理 schema
+- DB物理方針
+- exact column 定義表
+
+H. 実装設計
+- 開発優先方針
+- 実装フェーズ
+- P0〜P4 実装設計
+- ディレクトリ構成
+- ファイル構成
+
+# ============================================================
+# 8. 解釈原則
+# ============================================================
+
+概要文書と統合文書で記述粒度が異なる場合、
+統合文書を優先する。
+
+統合文書と分割文書で記述粒度が異なる場合、
+統合文書を上位本文正本としつつ、
+各分割文書は対応レイヤの詳細正本として扱う。
+
+development layer は実装設計文書群であり、
+設計と実装の橋渡しとして扱う。
+
+今後、詳細分割文書を追加する場合、
+統合文書との整合を維持しなければならない。
+
+# ============================================================
+# 9. 現在の扱い
+# ============================================================
+
+Civilization Portal Site 設計は、現時点で次として扱う。
+
+- 実装前 canonical design
+- 実装設計文書追加済み
+- 実装未着手
+- DDL未実行
+- 将来実装時の参照正本
+
+
+# ------------------------------------------------------------
+# SOURCE 4
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の最上位概要を定義する文書である。
+
+本書の目的は、
+Civilization Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+基本原則、
+責務境界を短く固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- Civilization 世界観の公開説明
+- 各OSの紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部から最初に到達するWeb情報サイト
+- 各OSへの唯一の公式Webリンク保持主体
+- ログイン済み利用者向けWebランチャー提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるその他OS
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一のWeb導線提供
+- 新規登録案内
+- ログイン案内
+- Webランチャー提供
+- Web遷移前の前段判定
+- お知らせ掲載
+- メンテナンス案内
+- ポータルWeb管理画面提供
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 新規登録正本処理
+- 認証正本処理
+- Civilization ID 発行
+- 各OS内部処理
+- 各OS内部データ管理
+- 各OS内部詳細権限制御
+- OS間直接遷移
+
+# ============================================================
+# 6. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Webページ:
+- ダッシュボード
+- OS掲載管理
+- お知らせ管理
+- メンテ管理
+- 特集管理
+- 文言管理
+- 監査ログ閲覧
+
+# ============================================================
+# 7. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開案内、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+およびポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。
+
+# ============================================================
+# 8. 詳細設計参照
+# ============================================================
+
+本概要文書の詳細設計は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 5
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_ORDER.txt
+
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_ORDER.txt
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT_ORDER.txt
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900004_CIVILIZATION_PORTAL_SITE_HANDOFF_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900005_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_REFLECTION_NOTE.md
+
+
+# ------------------------------------------------------------
+# SOURCE 6
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED DESIGN
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の統合設計を定義する正本本文である。
+
+本書の目的は、
+Civilization Portal Site の定義、責務、境界、Webページ、導線、
+権限制御、管理運用、データモデル、API連携、
+DB設計準備状態を一体の設計として固定することにある。
+
+本書は、今後の実装、レビュー、分割設計、
+DB設計、API設計の参照正本とする。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+Civilization Portal Site は、次を担わない。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行
+- 各OS内部ロジック
+- 各OS内部権限制御
+- 各OS内部データ正本
+
+# ============================================================
+# 3. Civilization 全体構造における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 認証正本保持
+- 新規登録正本保持
+- Civilization ID 発行
+- 各OS内部機能
+- 各OS内部権限
+- 各OS内部業務データ
+- OS間直接遷移管理
+
+# ============================================================
+# 6. 利用者整理
+# ============================================================
+
+想定利用者は次の通りとする。
+
+- 未ログイン訪問者
+- ログイン済み Civilization 参加者
+- organization
+- organization 所属利用者
+- ai_human
+- ai_robot
+- portal administrator
+- portal operator
+- portal editor
+- audit viewer
+
+# ============================================================
+# 7. Webページ構成
+# ============================================================
+
+公開Webページは次の通りとする。
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページは次の通りとする。
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページは次の通りとする。
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面は次の通りとする。
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 8. 公開情報設計
+# ============================================================
+
+トップは、Civilization 全体の第一入口となる公開Webページとする。  
+トップは、世界観要約、注目OS、ログイン導線、新規登録導線、お知らせ要約を提供する。
+
+Civilization紹介は、Civilization とは何か、
+Civilization ID とは何か、
+主体種別、
+CivilizationOS と各OSの関係を説明する公開Webページとする。
+
+OS一覧は、各OSへの唯一の一覧入口となる公開Webページとする。  
+OS一覧は、OSカードを用いた比較および発見の場とする。
+
+OS詳細は、対象OSの目的、想定利用者、利用条件、注意事項を説明し、
+対象OSのWeb入口へ進むかどうかの判断を支援する公開Webページとする。
+
+利用案内は、初回利用者向けに、
+登録、ログイン、OS利用までの流れを説明する公開Webページとする。
+
+お知らせは、更新情報、重要告知、
+メンテナンス情報、キャンペーン情報を案内する公開Webページとする。
+
+# ============================================================
+# 9. マイランチャー
+# ============================================================
+
+マイランチャーは、
+ログイン済み利用者向けの主要OS利用開始入口となるWebページとする。
+
+マイランチャーは情報カタログではなく、
+利用者にとっての実用的なWeb入口とする。
+
+マイランチャーは少なくとも次を表示する。
+
+- 利用可能OS
+- 最近使ったOS
+- おすすめOS
+- 利用不可OSと理由
+- 利用者向けお知らせ
+
+OS一覧が全体紹介を担うのに対し、
+マイランチャーは個別利用者の利用開始中心入口を担う。
+
+# ============================================================
+# 10. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+OSカードの共通要素は次の通りとする。
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+OSカードは次の箇所で共通利用する。
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 11. 遷移原則
+# ============================================================
+
+許可する遷移は次の通りとする。
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+条件付きで許可する遷移は次の通りとする。
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+禁止する遷移は次の通りとする。
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 12. OS Web入口遷移フロー
+# ============================================================
+
+利用者が「このOSへ進む」を押した際、
+Civilization Portal Site は次を順に確認する。
+
+1. 対象OSが公開状態か
+2. 対象OSがメンテナンス中でないか
+3. ログインが必要か
+4. 利用者が現在ログイン済みか
+5. 利用者の主体要約が条件を満たすか
+6. 遷移先URLが有効か
+
+判定結果は次のいずれかとする。
+
+- launchable -> 対象OSのWeb入口へ遷移
+- login_required -> CivilizationOS ログインWebページへ誘導
+- denied -> アクセス不可案内
+- maintenance -> メンテナンス案内
+- error -> エラー案内
+
+# ============================================================
+# 13. 認証復帰原則
+# ============================================================
+
+未ログイン状態で各OS起動要求が発生した場合、
+Civilization Portal Site は CivilizationOS のログインへ誘導する。
+
+Civilization Portal Site は、
+少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+認証成功後、
+Civilization Portal Site は復帰文脈を解決し、
+原則としてログイン前に要求された対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 14. 権限制御原則
+# ============================================================
+
+Civilization Portal Site はWeb入口の権限制御を担う。
+
+主な判定軸は次の通りとする。
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+重要原則は次の通りとする。
+
+- 表示可否と遷移可否は分離する。
+- Civilization Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 15. 管理運用原則
+# ============================================================
+
+Civilization Portal Site 管理Web画面は次を担う。
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+Civilization Portal Site 管理Web画面は次を担わない。
+
+- 各OS内部設定
+- 各OS内部権限管理
+- CivilizationOS 認証正本管理
+
+# ============================================================
+# 16. データモデル概要
+# ============================================================
+
+主要論理テーブルは次の通りとする。
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+責務分離は次の通りとする。
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+Civilization Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 17. API / 連携概要
+# ============================================================
+
+Civilization Portal Site 自前APIは次の通りとする。
+
+- OS一覧
+- OS詳細
+- お知らせ
+- 特集
+- メンテナンス
+- 文言
+- 遷移判定
+- 遷移準備
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+- 管理API
+
+CivilizationOS 参照APIは次の通りとする。
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+各OS連携原則は次の通りとする。
+
+- Civilization Portal Site は許可済みWeb入口URLを用いる。
+- Civilization Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+
+# ============================================================
+# 18. Webサイトマップ概要
+# ============================================================
+
+公開領域は次の通りとする。
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /notices
+- /guide
+- /help
+- /terms
+- /privacy
+- /contact
+
+認証導線領域は次の通りとする。
+
+- /login
+- /signup
+- /auth/return
+- /access-denied
+- /maintenance
+- /error
+
+ログイン後領域は次の通りとする。
+
+- /me/launcher
+- /me/recent
+- /me/recommended
+- /me/notices
+
+管理領域は次の通りとする。
+
+- /admin
+- /admin/os
+- /admin/notices
+- /admin/maintenance
+- /admin/features
+- /admin/assets
+- /admin/copy
+- /admin/audit
+
+# ============================================================
+# 19. 実装アーキテクチャ概要
+# ============================================================
+
+推奨レイヤは次の通りとする。
+
+- Public Web Layer
+- Member Launcher Layer
+- Portal Application Layer
+- Integration Layer
+- Portal Data Layer
+- Admin / Operations Layer
+
+主要モジュールは次の通りとする。
+
+- OS Catalog Service
+- Launcher Service
+- Launch Decision Service
+- Civilization Session Adapter
+- OS Launch Resolver
+- Return Context Manager
+
+# ============================================================
+# 20. DB論理 schema 概要
+# ============================================================
+
+Civilization Portal Site の論理 schema は `portal` を採用する。
+
+重要原則は次の通りとする。
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 21. API exact contract 概要
+# ============================================================
+
+Civilization Portal Site API は次に分かれる。
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 22. 画面項目表概要
+# ============================================================
+
+各Webページは次により定義する。
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+対象は次の通りとする。
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 23. DB物理方針概要
+# ============================================================
+
+物理DB方針は次の通りとする。
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 24. exact column 定義概要
+# ============================================================
+
+exact column 定義は、
+少なくとも次について固定済みとする。
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 25. 現在状態
+# ============================================================
+
+Civilization Portal Site 設計の現在状態は次の通りとする。
+
+- 実装前 canonical design 完了
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+
+本設計は、今後の実装時に参照される正本とする。
+
+# ============================================================
+# 26. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開説明、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+入口制御、ポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。  
+OS間の直接遷移は許可しない。  
+現時点では実装はまだ行わない。
+
+# ============================================================
+# 27. 詳細分割文書参照
+# ============================================================
+
+本統合文書の詳細は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 7
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED REBUILT
+# ============================================================
+
+status: canonical-design-rebuilt
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 0. PURPOSE
+# ============================================================
+
+This file is a non-destructive rebuilt integrated edition
+generated from the current root canonical files and split design files.
+
+source_order_file:
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT_ORDER.txt
+
+# ============================================================
+# 1. MERGED CONTENT
+# ============================================================
+
+
+# ------------------------------------------------------------
+# SOURCE 1
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ROOT FILE GUIDE
+# ============================================================
+
+status: canonical-design-support
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site 直下にある
+ルートファイル群の役割と読む順番を
+短く案内する補助文書である。
+
+本書の目的は、
+初回参照時に、
+どの文書から読めばよいかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. ルートファイル一覧
+# ============================================================
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 3. 各ファイルの役割
+# ============================================================
+
+00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md:
+- ルートファイルの読む順番を示す補助文書
+
+0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md:
+- このフォルダ自体が何を意味するかを示す入口文書
+
+000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md:
+- Portal Site の最上位概要を示す文書
+
+000_CIVILIZATION_PORTAL_SITE_INDEX.md:
+- Portal Site 設計全体の索引文書
+
+00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md:
+- Portal Site 設計全体の統合正本本文
+
+# ============================================================
+# 4. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+
+# ============================================================
+# 5. レイヤフォルダ
+# ============================================================
+
+本フォルダ配下のレイヤフォルダは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 解釈原則
+# ============================================================
+
+- 最上位の本文正本は 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md とする。
+- OVERVIEW は最上位概要とする。
+- INDEX は索引とする。
+- FOLDER_OVERVIEW はフォルダ入口説明とする。
+- ROOT_FILE_GUIDE は読む順番を示す補助文書とする。
+
+# ============================================================
+# 7. 現在状態
+# ============================================================
+
+本書は補助文書であり、
+Portal Site の実装前 canonical design を案内するために置く。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 2
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FOLDER OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site フォルダ自体の意味を
+短く説明するための入口文書である。
+
+本書の目的は、
+このフォルダが Civilization 全体において
+どのような位置づけを持つかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. フォルダ定義
+# ============================================================
+
+08.civilization-portal-site は、
+Civilization 全体の公開入口となる
+公式Webポータルの設計書群を格納するトップ階層である。
+
+本フォルダは、
+各OSへの唯一の公式Web導線、
+ログイン案内、
+新規登録案内、
+ログイン済み利用者向けWebランチャー、
+ポータル運営管理に関する設計を保持する。
+
+# ============================================================
+# 3. このフォルダを独立配置する理由
+# ============================================================
+
+本フォルダを独立トップ階層に置く理由は次の通りとする。
+
+- Portal Site は Civilization 全体の公開入口である。
+- Portal Site は単なる docs ではない。
+- Portal Site は applications 配下の単独アプリでもない。
+- Portal Site は各OSへの唯一の公式Web導線を担う。
+- Portal Site は CivilizationOS の認証導線と接続する上位システムである。
+
+# ============================================================
+# 4. ルート正本
+# ============================================================
+
+本フォルダのルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. レイヤ構成
+# ============================================================
+
+本フォルダは次のレイヤ構成を持つ。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 主要原則
+# ============================================================
+
+- 各OSへのリンクは Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 新規登録と認証の正本は CivilizationOS が担う。
+- Portal Site は Web入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- 実装はまだ行わない。
+
+# ============================================================
+# 7. 参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+2. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+4. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+5. 各レイヤ overview / index
+6. 各個別文書
+
+# ============================================================
+# 8. 現在状態
+# ============================================================
+
+本フォルダは、
+Civilization Portal Site の実装前 canonical design を保持する。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 3
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の最上位概要を定義する文書である。
+
+本書の目的は、
+Civilization Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+基本原則、
+責務境界を短く固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- Civilization 世界観の公開説明
+- 各OSの紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部から最初に到達するWeb情報サイト
+- 各OSへの唯一の公式Webリンク保持主体
+- ログイン済み利用者向けWebランチャー提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるその他OS
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一のWeb導線提供
+- 新規登録案内
+- ログイン案内
+- Webランチャー提供
+- Web遷移前の前段判定
+- お知らせ掲載
+- メンテナンス案内
+- ポータルWeb管理画面提供
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 新規登録正本処理
+- 認証正本処理
+- Civilization ID 発行
+- 各OS内部処理
+- 各OS内部データ管理
+- 各OS内部詳細権限制御
+- OS間直接遷移
+
+# ============================================================
+# 6. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Webページ:
+- ダッシュボード
+- OS掲載管理
+- お知らせ管理
+- メンテ管理
+- 特集管理
+- 文言管理
+- 監査ログ閲覧
+
+# ============================================================
+# 7. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開案内、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+およびポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。
+
+# ============================================================
+# 8. 詳細設計参照
+# ============================================================
+
+本概要文書の詳細設計は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 4
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INDEX
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site 設計の索引文書である。
+
+本書の目的は、
+Civilization Portal Site 設計に含まれる主要論点、
+参照順、
+正本文書の位置づけを固定し、
+ルート正本、レイヤ別正本、実装前仕様を
+階層的に参照できるようにすることにある。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. OVERVIEW
+2. INTEGRATED
+3. architecture
+4. model
+5. flow
+6. integration
+7. operations
+8. policy
+9. implementation-ready
+
+# ============================================================
+# 3. ルート正本文書
+# ============================================================
+
+Portal Site 設計のルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+各文書の位置づけは次の通りとする。
+
+- OVERVIEW:
+  最上位概要。
+  システム定義、位置づけ、基本原則、責務境界を短く固定する。
+
+- INDEX:
+  索引文書。
+  参照順、論点一覧、レイヤ別参照を固定する。
+
+- INTEGRATED:
+  本文正本。
+  Portal Site 設計全体を統合本文として保持する。
+
+# ============================================================
+# 4. レイヤ別正本文書
+# ============================================================
+
+## 4.1 architecture
+
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+対象論点:
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+## 4.2 model
+
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+対象論点:
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+## 4.3 flow
+
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+対象論点:
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+## 4.4 integration
+
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+対象論点:
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+## 4.5 operations
+
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+対象論点:
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+## 4.6 policy
+
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+対象論点:
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 5. 実装前仕様文書
+# ============================================================
+
+## 5.1 implementation-ready
+
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+対象論点:
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 6. 論点一覧
+# ============================================================
+
+A. 定義と境界
+- システム定義
+- CivilizationOS との境界
+- 各OSとの境界
+- 公式入口原則
+
+B. Webページ構成
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+C. 導線と遷移
+- 通常Web導線
+- OS Web入口遷移
+- ログイン要求導線
+- 認証復帰導線
+- アクセス不可導線
+- メンテナンス導線
+
+D. 権限制御
+- 表示可否
+- 遷移可否
+- 主体種別条件
+- 所属条件
+- 契約条件
+- Beta条件
+- 法令・地域条件
+
+E. 運営管理
+- OS掲載管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 監査管理
+
+F. モデルと連携
+- OSカードモデル
+- データモデル
+- CivilizationOS 認証参照
+- 各OS起動連携
+- return context 管理
+
+G. 実装前仕様
+- API exact contract
+- 画面項目表
+- DB論理 schema
+- DB物理方針
+- exact column 定義表
+
+# ============================================================
+# 7. 解釈原則
+# ============================================================
+
+概要文書と統合文書で記述粒度が異なる場合、
+統合文書を優先する。
+
+統合文書と分割文書で記述粒度が異なる場合、
+統合文書を上位本文正本としつつ、
+各分割文書は対応レイヤの詳細正本として扱う。
+
+今後、詳細分割文書を追加する場合、
+統合文書との整合を維持しなければならない。
+
+# ============================================================
+# 8. 現在の扱い
+# ============================================================
+
+Civilization Portal Site 設計は、現時点で次として扱う。
+
+- 実装前 canonical design
+- 実装未着手
+- DDL未実行
+- 将来実装時の参照正本
+
+
+# ------------------------------------------------------------
+# SOURCE 5
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED DESIGN
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の統合設計を定義する正本本文である。
+
+本書の目的は、
+Civilization Portal Site の定義、責務、境界、Webページ、導線、
+権限制御、管理運用、データモデル、API連携、
+DB設計準備状態を一体の設計として固定することにある。
+
+本書は、今後の実装、レビュー、分割設計、
+DB設計、API設計の参照正本とする。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+Civilization Portal Site は、次を担わない。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行
+- 各OS内部ロジック
+- 各OS内部権限制御
+- 各OS内部データ正本
+
+# ============================================================
+# 3. Civilization 全体構造における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 認証正本保持
+- 新規登録正本保持
+- Civilization ID 発行
+- 各OS内部機能
+- 各OS内部権限
+- 各OS内部業務データ
+- OS間直接遷移管理
+
+# ============================================================
+# 6. 利用者整理
+# ============================================================
+
+想定利用者は次の通りとする。
+
+- 未ログイン訪問者
+- ログイン済み Civilization 参加者
+- organization
+- organization 所属利用者
+- ai_human
+- ai_robot
+- portal administrator
+- portal operator
+- portal editor
+- audit viewer
+
+# ============================================================
+# 7. Webページ構成
+# ============================================================
+
+公開Webページは次の通りとする。
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページは次の通りとする。
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページは次の通りとする。
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面は次の通りとする。
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 8. 公開情報設計
+# ============================================================
+
+トップは、Civilization 全体の第一入口となる公開Webページとする。  
+トップは、世界観要約、注目OS、ログイン導線、新規登録導線、お知らせ要約を提供する。
+
+Civilization紹介は、Civilization とは何か、
+Civilization ID とは何か、
+主体種別、
+CivilizationOS と各OSの関係を説明する公開Webページとする。
+
+OS一覧は、各OSへの唯一の一覧入口となる公開Webページとする。  
+OS一覧は、OSカードを用いた比較および発見の場とする。
+
+OS詳細は、対象OSの目的、想定利用者、利用条件、注意事項を説明し、
+対象OSのWeb入口へ進むかどうかの判断を支援する公開Webページとする。
+
+利用案内は、初回利用者向けに、
+登録、ログイン、OS利用までの流れを説明する公開Webページとする。
+
+お知らせは、更新情報、重要告知、
+メンテナンス情報、キャンペーン情報を案内する公開Webページとする。
+
+# ============================================================
+# 9. マイランチャー
+# ============================================================
+
+マイランチャーは、
+ログイン済み利用者向けの主要OS利用開始入口となるWebページとする。
+
+マイランチャーは情報カタログではなく、
+利用者にとっての実用的なWeb入口とする。
+
+マイランチャーは少なくとも次を表示する。
+
+- 利用可能OS
+- 最近使ったOS
+- おすすめOS
+- 利用不可OSと理由
+- 利用者向けお知らせ
+
+OS一覧が全体紹介を担うのに対し、
+マイランチャーは個別利用者の利用開始中心入口を担う。
+
+# ============================================================
+# 10. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+OSカードの共通要素は次の通りとする。
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+OSカードは次の箇所で共通利用する。
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 11. 遷移原則
+# ============================================================
+
+許可する遷移は次の通りとする。
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+条件付きで許可する遷移は次の通りとする。
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+禁止する遷移は次の通りとする。
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 12. OS Web入口遷移フロー
+# ============================================================
+
+利用者が「このOSへ進む」を押した際、
+Civilization Portal Site は次を順に確認する。
+
+1. 対象OSが公開状態か
+2. 対象OSがメンテナンス中でないか
+3. ログインが必要か
+4. 利用者が現在ログイン済みか
+5. 利用者の主体要約が条件を満たすか
+6. 遷移先URLが有効か
+
+判定結果は次のいずれかとする。
+
+- launchable -> 対象OSのWeb入口へ遷移
+- login_required -> CivilizationOS ログインWebページへ誘導
+- denied -> アクセス不可案内
+- maintenance -> メンテナンス案内
+- error -> エラー案内
+
+# ============================================================
+# 13. 認証復帰原則
+# ============================================================
+
+未ログイン状態で各OS起動要求が発生した場合、
+Civilization Portal Site は CivilizationOS のログインへ誘導する。
+
+Civilization Portal Site は、
+少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+認証成功後、
+Civilization Portal Site は復帰文脈を解決し、
+原則としてログイン前に要求された対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 14. 権限制御原則
+# ============================================================
+
+Civilization Portal Site はWeb入口の権限制御を担う。
+
+主な判定軸は次の通りとする。
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+重要原則は次の通りとする。
+
+- 表示可否と遷移可否は分離する。
+- Civilization Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 15. 管理運用原則
+# ============================================================
+
+Civilization Portal Site 管理Web画面は次を担う。
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+Civilization Portal Site 管理Web画面は次を担わない。
+
+- 各OS内部設定
+- 各OS内部権限管理
+- CivilizationOS 認証正本管理
+
+# ============================================================
+# 16. データモデル概要
+# ============================================================
+
+主要論理テーブルは次の通りとする。
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+責務分離は次の通りとする。
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+Civilization Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 17. API / 連携概要
+# ============================================================
+
+Civilization Portal Site 自前APIは次の通りとする。
+
+- OS一覧
+- OS詳細
+- お知らせ
+- 特集
+- メンテナンス
+- 文言
+- 遷移判定
+- 遷移準備
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+- 管理API
+
+CivilizationOS 参照APIは次の通りとする。
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+各OS連携原則は次の通りとする。
+
+- Civilization Portal Site は許可済みWeb入口URLを用いる。
+- Civilization Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+
+# ============================================================
+# 18. Webサイトマップ概要
+# ============================================================
+
+公開領域は次の通りとする。
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /notices
+- /guide
+- /help
+- /terms
+- /privacy
+- /contact
+
+認証導線領域は次の通りとする。
+
+- /login
+- /signup
+- /auth/return
+- /access-denied
+- /maintenance
+- /error
+
+ログイン後領域は次の通りとする。
+
+- /me/launcher
+- /me/recent
+- /me/recommended
+- /me/notices
+
+管理領域は次の通りとする。
+
+- /admin
+- /admin/os
+- /admin/notices
+- /admin/maintenance
+- /admin/features
+- /admin/assets
+- /admin/copy
+- /admin/audit
+
+# ============================================================
+# 19. 実装アーキテクチャ概要
+# ============================================================
+
+推奨レイヤは次の通りとする。
+
+- Public Web Layer
+- Member Launcher Layer
+- Portal Application Layer
+- Integration Layer
+- Portal Data Layer
+- Admin / Operations Layer
+
+主要モジュールは次の通りとする。
+
+- OS Catalog Service
+- Launcher Service
+- Launch Decision Service
+- Civilization Session Adapter
+- OS Launch Resolver
+- Return Context Manager
+
+# ============================================================
+# 20. DB論理 schema 概要
+# ============================================================
+
+Civilization Portal Site の論理 schema は `portal` を採用する。
+
+重要原則は次の通りとする。
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 21. API exact contract 概要
+# ============================================================
+
+Civilization Portal Site API は次に分かれる。
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 22. 画面項目表概要
+# ============================================================
+
+各Webページは次により定義する。
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+対象は次の通りとする。
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 23. DB物理方針概要
+# ============================================================
+
+物理DB方針は次の通りとする。
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 24. exact column 定義概要
+# ============================================================
+
+exact column 定義は、
+少なくとも次について固定済みとする。
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 25. 現在状態
+# ============================================================
+
+Civilization Portal Site 設計の現在状態は次の通りとする。
+
+- 実装前 canonical design 完了
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+
+本設計は、今後の実装時に参照される正本とする。
+
+# ============================================================
+# 26. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開説明、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+入口制御、ポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。  
+OS間の直接遷移は許可しない。  
+現時点では実装はまだ行わない。
+
+# ============================================================
+# 27. 詳細分割文書参照
+# ============================================================
+
+本統合文書の詳細は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 6
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の architecture layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+architecture layer は次を扱う。
+
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS との境界
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 7
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+2. 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+3. 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+4. 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 8
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の全体アーキテクチャを定義する。
+
+本書の目的は、
+Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+CivilizationOS および各OSとの境界、
+主要Webページ群、
+上位構造を固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Portal Site は次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面:
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 5. 上位アーキテクチャ原則
+# ============================================================
+
+- Portal Site は公開Web入口を担う。
+- 認証正本は CivilizationOS とする。
+- 各OSへのリンクは Portal Site のみが保持する。
+- Portal Site は入口前段判定のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 9
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: screen-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site のWebページ構成を定義する。
+
+# ============================================================
+# 2. 公開Webページ
+# ============================================================
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+# ============================================================
+# 3. 認証導線Webページ
+# ============================================================
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+# ============================================================
+# 4. ログイン後Webページ
+# ============================================================
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+# ============================================================
+# 5. 管理Web画面
+# ============================================================
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 10
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NAVIGATION ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: navigation-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site を中心とした導線構造を定義する。
+
+# ============================================================
+# 2. 導線原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- 各OSから Portal Site への戻りは許可する。
+
+# ============================================================
+# 3. 許可する遷移
+# ============================================================
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+# ============================================================
+# 4. 条件付きで許可する遷移
+# ============================================================
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+# ============================================================
+# 5. 禁止する遷移
+# ============================================================
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 11
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATIONOS BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: civilizationos-boundary
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site と CivilizationOS の責務境界を定義する。
+
+# ============================================================
+# 2. Civilization Portal Site が担うもの
+# ============================================================
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+# ============================================================
+# 3. CivilizationOS が担うもの
+# ============================================================
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後の文明シミュレーション世界本体
+
+# ============================================================
+# 4. 境界原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+- CivilizationOS は Portal Site の代替導線とはならない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 12
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の model layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+model layer は次を扱う。
+
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 13
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL INDEX
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+2. 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+3. 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+4. 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ドメイン要素
+- OSカード
+- 権限制御
+- データモデル
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 14
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DOMAIN MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の主要ドメイン要素を定義する。
+
+# ============================================================
+# 2. 主要ドメイン要素
+# ============================================================
+
+- Portal Site
+- OS
+- OS Card
+- Launch Rule
+- Notice
+- Feature Slot
+- Maintenance
+- Copy
+- Asset
+- Personalized Launcher State
+- Admin Audit Log
+
+# ============================================================
+# 3. ドメイン原則
+# ============================================================
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 15
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS CARD MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: os-card
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OSカードのモデルを定義する。
+
+# ============================================================
+# 2. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+# ============================================================
+# 3. 共通要素
+# ============================================================
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+# ============================================================
+# 4. 利用箇所
+# ============================================================
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 16
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: permission
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御モデルを定義する。
+
+# ============================================================
+# 2. 判定軸
+# ============================================================
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+# ============================================================
+# 3. 重要原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 17
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DATA MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: data-model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の主要論理データモデルを定義する。
+
+# ============================================================
+# 2. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 3. 責務分離
+# ============================================================
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+# ============================================================
+# 4. 非保持原則
+# ============================================================
+
+Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 18
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の flow layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+flow layer は次を扱う。
+
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 19
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW INDEX
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+2. 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+3. 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+4. 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+5. 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ログイン導線
+- OS遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 20
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE LOGIN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: login-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site におけるログイン要求フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が対象OSへの遷移を要求する。
+2. Portal Site はログイン要否を確認する。
+3. 未ログインであれば CivilizationOS のWebログインページへ誘導する。
+4. 認証成功後、復帰文脈に基づき対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 21
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: os-launch-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、対象OS Web入口への遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が「このOSへ進む」を押す。
+2. Portal Site は公開状態を確認する。
+3. Portal Site はメンテナンス状態を確認する。
+4. Portal Site はログイン要否を確認する。
+5. Portal Site は主体要約条件を確認する。
+6. Portal Site は遷移先URL有効性を確認する。
+7. 判定結果に応じて対象OS / ログイン / アクセス不可 / メンテナンス / エラーへ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 22
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUTH RETURN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: auth-return-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証後復帰フローを定義する。
+
+# ============================================================
+# 2. 復帰文脈
+# ============================================================
+
+Portal Site は、少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. フロー
+# ============================================================
+
+1. 未ログインでOS遷移要求が発生する。
+2. Portal Site は復帰文脈を保存する。
+3. CivilizationOS ログイン完了後、Portal Site は復帰文脈を解決する。
+4. 原則として要求元の対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 23
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ACCESS DENIED FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: access-denied-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、条件未達時のアクセス拒否フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が主体要約条件を判定する。
+2. 条件未達であればアクセス不可案内へ遷移する。
+3. 利用不可理由と代替導線を提示する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 24
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: maintenance-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、メンテナンス時の遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が対象OSまたはポータル自体のメンテナンス状態を判定する。
+2. メンテナンス中であれば対象OSへの遷移を停止する。
+3. メンテナンス案内へ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 25
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の integration layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+integration layer は次を扱う。
+
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 26
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION INDEX
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+2. 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+3. 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+4. 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 認証参照
+- OS連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 27
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATION AUTH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: civilization-auth
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と CivilizationOS 認証参照の統合原則を定義する。
+
+# ============================================================
+# 2. 参照対象
+# ============================================================
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+# ============================================================
+# 3. 統合原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 28
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: os-launch
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と各OS Web入口との統合原則を定義する。
+
+# ============================================================
+# 2. 統合原則
+# ============================================================
+
+- Portal Site は許可済みWeb入口URLを用いる。
+- Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+- OS間の直接リンクは許可しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 29
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE RETURN CONTEXT INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: return-context
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証復帰文脈の統合原則を定義する。
+
+# ============================================================
+# 2. 保持項目
+# ============================================================
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. 原則
+# ============================================================
+
+- 未ログイン遷移要求時は復帰文脈を保存する。
+- 認証後は復帰文脈を解決する。
+- 原則として元の対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 30
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API CONTRACT SUMMARY
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: api-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site のAPI区分を概要レベルで定義する。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 原則
+# ============================================================
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 31
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の operations layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+operations layer は次を扱う。
+
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 32
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS INDEX
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+2. 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+3. 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+4. 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 管理運用
+- お知らせ
+- メンテ
+- 監査
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 33
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ADMIN OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site 管理Web画面の運用責務を定義する。
+
+# ============================================================
+# 2. 管理対象
+# ============================================================
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 34
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NOTICE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: notice-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、お知らせ運用を定義する。
+
+# ============================================================
+# 2. 運用対象
+# ============================================================
+
+- 更新情報
+- 重要告知
+- メンテナンス情報
+- キャンペーン情報
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 35
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: maintenance-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site および各OSに対するメンテナンス運用を定義する。
+
+# ============================================================
+# 2. 運用原則
+# ============================================================
+
+- メンテナンス中は対象OSへの遷移を停止する。
+- Portal Site はメンテナンス案内を表示する。
+- メンテナンス状態は運営管理で即時反映可能とする。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 36
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUDIT OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: audit-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の監査運用を定義する。
+
+# ============================================================
+# 2. 監査対象
+# ============================================================
+
+- OS掲載変更
+- 特集変更
+- お知らせ変更
+- メンテナンス変更
+- 文言変更
+- 画像変更
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 37
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の policy layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+policy layer は次を扱う。
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 38
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY INDEX
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+2. 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+3. 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+4. 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 39
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ENTRY POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口原則を定義する。
+
+# ============================================================
+# 2. 入口原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- すべてのOS入口は Civilization Portal Site を経由しなければならない。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 40
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LINK POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: os-link-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OS間リンク原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- OS間の直接リンクは禁止する。
+- 各OSから Civilization Portal Site への戻りは許可する。
+- 認証切れ時の CivilizationOS ログインページへの遷移は条件付きで許可する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 41
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: permission-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 42
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PUBLIC INFORMATION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: public-information-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の公開情報原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- Portal Site は Civilization 全体の公開情報を提供する。
+- 公開情報は各OSの公式Web入口判断を支援する。
+- Portal Site は公開案内と入口導線に責務を限定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 43
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の implementation-ready layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+implementation-ready layer は次を扱う。
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 44
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY INDEX
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+2. 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+3. 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+4. 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+5. 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 45
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN FIELD SPEC
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: screen-field-spec
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、各Webページの項目定義の参照入口である。
+
+# ============================================================
+# 2. 定義対象
+# ============================================================
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 3. 画面定義要素
+# ============================================================
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 46
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API EXACT CONTRACT
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: api-exact-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site API の exact contract 参照文書である。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 要件
+# ============================================================
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 47
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB LOGICAL SCHEMA
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-logical-schema
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の論理schema概要を定義する。
+
+# ============================================================
+# 2. 論理schema
+# ============================================================
+
+Portal Site の論理 schema は `portal` を採用する。
+
+# ============================================================
+# 3. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 48
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB PHYSICAL GUIDELINE
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-physical-guideline
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の物理方針を定義する。
+
+# ============================================================
+# 2. 方針
+# ============================================================
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 49
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE EXACT COLUMN DEFINITION
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: exact-column-definition
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の exact column 定義参照文書である。
+
+# ============================================================
+# 2. 対象
+# ============================================================
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+# ============================================================
+# 3. 現在状態
+# ============================================================
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+
+# ------------------------------------------------------------
+# SOURCE 8
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT_ORDER.txt
+
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+# ------------------------------------------------------------
+# SOURCE 9
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+2. 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+3. 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+4. 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 10
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の architecture layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+architecture layer は次を扱う。
+
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS との境界
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 11
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の全体アーキテクチャを定義する。
+
+本書の目的は、
+Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+CivilizationOS および各OSとの境界、
+主要Webページ群、
+上位構造を固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Portal Site は次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面:
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 5. 上位アーキテクチャ原則
+# ============================================================
+
+- Portal Site は公開Web入口を担う。
+- 認証正本は CivilizationOS とする。
+- 各OSへのリンクは Portal Site のみが保持する。
+- Portal Site は入口前段判定のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 12
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: screen-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site のWebページ構成を定義する。
+
+# ============================================================
+# 2. 公開Webページ
+# ============================================================
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+# ============================================================
+# 3. 認証導線Webページ
+# ============================================================
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+# ============================================================
+# 4. ログイン後Webページ
+# ============================================================
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+# ============================================================
+# 5. 管理Web画面
+# ============================================================
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 13
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NAVIGATION ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: navigation-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site を中心とした導線構造を定義する。
+
+# ============================================================
+# 2. 導線原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- 各OSから Portal Site への戻りは許可する。
+
+# ============================================================
+# 3. 許可する遷移
+# ============================================================
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+# ============================================================
+# 4. 条件付きで許可する遷移
+# ============================================================
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+# ============================================================
+# 5. 禁止する遷移
+# ============================================================
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 14
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATIONOS BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: civilizationos-boundary
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site と CivilizationOS の責務境界を定義する。
+
+# ============================================================
+# 2. Civilization Portal Site が担うもの
+# ============================================================
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+# ============================================================
+# 3. CivilizationOS が担うもの
+# ============================================================
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後の文明シミュレーション世界本体
+
+# ============================================================
+# 4. 境界原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+- CivilizationOS は Portal Site の代替導線とはならない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 15
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL INDEX
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+2. 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+3. 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+4. 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ドメイン要素
+- OSカード
+- 権限制御
+- データモデル
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 16
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の model layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+model layer は次を扱う。
+
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 17
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DOMAIN MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の主要ドメイン要素を定義する。
+
+# ============================================================
+# 2. 主要ドメイン要素
+# ============================================================
+
+- Portal Site
+- OS
+- OS Card
+- Launch Rule
+- Notice
+- Feature Slot
+- Maintenance
+- Copy
+- Asset
+- Personalized Launcher State
+- Admin Audit Log
+
+# ============================================================
+# 3. ドメイン原則
+# ============================================================
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 18
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS CARD MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: os-card
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OSカードのモデルを定義する。
+
+# ============================================================
+# 2. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+# ============================================================
+# 3. 共通要素
+# ============================================================
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+# ============================================================
+# 4. 利用箇所
+# ============================================================
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 19
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: permission
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御モデルを定義する。
+
+# ============================================================
+# 2. 判定軸
+# ============================================================
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+# ============================================================
+# 3. 重要原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 20
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DATA MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: data-model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の主要論理データモデルを定義する。
+
+# ============================================================
+# 2. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 3. 責務分離
+# ============================================================
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+# ============================================================
+# 4. 非保持原則
+# ============================================================
+
+Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 21
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW INDEX
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+2. 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+3. 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+4. 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+5. 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ログイン導線
+- OS遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 22
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の flow layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+flow layer は次を扱う。
+
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 23
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE LOGIN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: login-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site におけるログイン要求フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が対象OSへの遷移を要求する。
+2. Portal Site はログイン要否を確認する。
+3. 未ログインであれば CivilizationOS のWebログインページへ誘導する。
+4. 認証成功後、復帰文脈に基づき対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 24
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: os-launch-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、対象OS Web入口への遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が「このOSへ進む」を押す。
+2. Portal Site は公開状態を確認する。
+3. Portal Site はメンテナンス状態を確認する。
+4. Portal Site はログイン要否を確認する。
+5. Portal Site は主体要約条件を確認する。
+6. Portal Site は遷移先URL有効性を確認する。
+7. 判定結果に応じて対象OS / ログイン / アクセス不可 / メンテナンス / エラーへ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 25
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUTH RETURN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: auth-return-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証後復帰フローを定義する。
+
+# ============================================================
+# 2. 復帰文脈
+# ============================================================
+
+Portal Site は、少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. フロー
+# ============================================================
+
+1. 未ログインでOS遷移要求が発生する。
+2. Portal Site は復帰文脈を保存する。
+3. CivilizationOS ログイン完了後、Portal Site は復帰文脈を解決する。
+4. 原則として要求元の対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 26
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ACCESS DENIED FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: access-denied-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、条件未達時のアクセス拒否フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が主体要約条件を判定する。
+2. 条件未達であればアクセス不可案内へ遷移する。
+3. 利用不可理由と代替導線を提示する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 27
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: maintenance-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、メンテナンス時の遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が対象OSまたはポータル自体のメンテナンス状態を判定する。
+2. メンテナンス中であれば対象OSへの遷移を停止する。
+3. メンテナンス案内へ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 28
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION INDEX
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+2. 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+3. 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+4. 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 認証参照
+- OS連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 29
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の integration layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+integration layer は次を扱う。
+
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 30
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATION AUTH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: civilization-auth
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と CivilizationOS 認証参照の統合原則を定義する。
+
+# ============================================================
+# 2. 参照対象
+# ============================================================
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+# ============================================================
+# 3. 統合原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 31
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: os-launch
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と各OS Web入口との統合原則を定義する。
+
+# ============================================================
+# 2. 統合原則
+# ============================================================
+
+- Portal Site は許可済みWeb入口URLを用いる。
+- Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+- OS間の直接リンクは許可しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 32
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE RETURN CONTEXT INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: return-context
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証復帰文脈の統合原則を定義する。
+
+# ============================================================
+# 2. 保持項目
+# ============================================================
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. 原則
+# ============================================================
+
+- 未ログイン遷移要求時は復帰文脈を保存する。
+- 認証後は復帰文脈を解決する。
+- 原則として元の対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 33
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API CONTRACT SUMMARY
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: api-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site のAPI区分を概要レベルで定義する。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 原則
+# ============================================================
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 34
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS INDEX
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+2. 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+3. 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+4. 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 管理運用
+- お知らせ
+- メンテ
+- 監査
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 35
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の operations layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+operations layer は次を扱う。
+
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 36
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ADMIN OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site 管理Web画面の運用責務を定義する。
+
+# ============================================================
+# 2. 管理対象
+# ============================================================
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 37
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NOTICE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: notice-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、お知らせ運用を定義する。
+
+# ============================================================
+# 2. 運用対象
+# ============================================================
+
+- 更新情報
+- 重要告知
+- メンテナンス情報
+- キャンペーン情報
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 38
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: maintenance-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site および各OSに対するメンテナンス運用を定義する。
+
+# ============================================================
+# 2. 運用原則
+# ============================================================
+
+- メンテナンス中は対象OSへの遷移を停止する。
+- Portal Site はメンテナンス案内を表示する。
+- メンテナンス状態は運営管理で即時反映可能とする。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 39
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUDIT OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: audit-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の監査運用を定義する。
+
+# ============================================================
+# 2. 監査対象
+# ============================================================
+
+- OS掲載変更
+- 特集変更
+- お知らせ変更
+- メンテナンス変更
+- 文言変更
+- 画像変更
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 40
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY INDEX
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+2. 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+3. 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+4. 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 41
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の policy layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+policy layer は次を扱う。
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 42
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ENTRY POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口原則を定義する。
+
+# ============================================================
+# 2. 入口原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- すべてのOS入口は Civilization Portal Site を経由しなければならない。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 43
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LINK POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: os-link-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OS間リンク原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- OS間の直接リンクは禁止する。
+- 各OSから Civilization Portal Site への戻りは許可する。
+- 認証切れ時の CivilizationOS ログインページへの遷移は条件付きで許可する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 44
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: permission-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 45
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PUBLIC INFORMATION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: public-information-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の公開情報原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- Portal Site は Civilization 全体の公開情報を提供する。
+- 公開情報は各OSの公式Web入口判断を支援する。
+- Portal Site は公開案内と入口導線に責務を限定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 46
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY INDEX
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+2. 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+3. 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+4. 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+5. 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 47
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の implementation-ready layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+implementation-ready layer は次を扱う。
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 48
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN FIELD SPEC
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: screen-field-spec
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、各Webページの項目定義の参照入口である。
+
+# ============================================================
+# 2. 定義対象
+# ============================================================
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 3. 画面定義要素
+# ============================================================
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 49
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API EXACT CONTRACT
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: api-exact-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site API の exact contract 参照文書である。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 要件
+# ============================================================
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 50
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB LOGICAL SCHEMA
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-logical-schema
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の論理schema概要を定義する。
+
+# ============================================================
+# 2. 論理schema
+# ============================================================
+
+Portal Site の論理 schema は `portal` を採用する。
+
+# ============================================================
+# 3. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 51
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB PHYSICAL GUIDELINE
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-physical-guideline
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の物理方針を定義する。
+
+# ============================================================
+# 2. 方針
+# ============================================================
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 52
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE EXACT COLUMN DEFINITION
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: exact-column-definition
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の exact column 定義参照文書である。
+
+# ============================================================
+# 2. 対象
+# ============================================================
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+# ============================================================
+# 3. 現在状態
+# ============================================================
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 53
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT LAYER OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の development layer 全体像を
+短く定義するための overview 文書である。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+development layer は、
+Portal Site の実装そのものではなく、
+実装前の具体的な開発設計を扱う。
+
+本 layer は次を固定する。
+
+- 開発優先方針
+- 開発フェーズ
+- フェーズ別実装設計
+- ディレクトリ構成
+- ファイル責務境界
+- 実装着手順
+
+# ============================================================
+# 3. 扱う範囲
+# ============================================================
+
+development layer が扱う範囲は次の通りとする。
+
+- P0 Web基盤立ち上げ
+- P1 公開ページ先行実装
+- P2 認証導線実装
+- P3 OS入口制御実装
+- P4 マイランチャー最小実装
+
+P5 以降は後続拡張対象とする。
+
+# ============================================================
+# 4. 主要文書
+# ============================================================
+
+- 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- 1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 5. ルート正本参照
+# ============================================================
+
+本 layer の上位正本は次の通りとする。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+development layer は、
+上位正本に従って実装設計を具体化するための layer とする。
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+本 layer は設計書群であり、
+実コードはまだ作成しない。
+
+
+# ------------------------------------------------------------
+# SOURCE 54
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT LAYER INDEX
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の development layer 索引文書である。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+1. 13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+2. 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+3. 1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+4. 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+5. 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+6. 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+7. 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+8. 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+9. 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 3. 論点
+# ============================================================
+
+- 開発優先方針
+- 開発フェーズ
+- P0 Web基盤
+- P1 公開ページ
+- P2 認証導線
+- P3 入口判定
+- P4 ランチャー
+- ディレクトリ構成
+- ファイル責務境界
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本 layer の上位正本は次の通りとする。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. 現在状態
+# ============================================================
+
+本 layer は実装設計文書群であり、
+実装そのものはまだ開始しない。
+
+
+# ------------------------------------------------------------
+# SOURCE 55
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の実装設計全体像を定義する文書である。
+
+本書の目的は、
+Portal Site の開発優先方針、
+実装対象範囲、
+フェーズ分解、
+実装境界、
+実装順序を固定し、
+以後の実装作業が設計逸脱しないようにすることにある。
+
+# ============================================================
+# 2. 前提
+# ============================================================
+
+Portal Site は、
+Civilization 全体の公開入口となる
+Webサイト / Webアプリとして実装する。
+
+Portal Site は次を担う。
+
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web入口前段判定
+- お知らせ表示
+- ポータル運営管理
+
+新規登録と認証の正本は CivilizationOS とする。  
+OS間の直接リンクは禁止する。
+
+# ============================================================
+# 3. 開発優先方針
+# ============================================================
+
+Portal Site は開発先行対象とする。
+
+先行開発の目的は、
+各OS本体より先に、
+Civilization 全体の入口、
+認証導線、
+OS Web入口制御、
+ログイン後ランチャーを成立させることにある。
+
+# ============================================================
+# 4. 開発フェーズ
+# ============================================================
+
+- P0: Web基盤立ち上げ
+- P1: 公開ページ先行実装
+- P2: 認証導線実装
+- P3: OS入口制御実装
+- P4: マイランチャー最小実装
+- P5: お知らせ / メンテ強化
+- P6: 管理画面最小実装
+- P7: 管理 / 運用完成化
+
+一次完了ラインは P4 完了時点とする。
+
+# ============================================================
+# 5. 実装設計文書
+# ============================================================
+
+本 layer では次の文書を扱う。
+
+- 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- 1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+本 layer は実装設計文書であり、
+実装そのものではない。
+
+現時点では、
+設計書追加のみを行い、
+実コード作成はまだ開始しない。
+
+
+# ------------------------------------------------------------
+# SOURCE 56
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT INDEX
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の実装設計文書群の索引である。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+1. 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+2. 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+3. 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+4. 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+5. 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+6. 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+7. 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 3. 論点一覧
+# ============================================================
+
+- 開発優先方針
+- フェーズ分解
+- ディレクトリ構成
+- ファイル構成
+- 公開ページ実装
+- 認証導線実装
+- 入口判定実装
+- ランチャー実装
+
+# ============================================================
+# 4. 上位参照
+# ============================================================
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+
+# ------------------------------------------------------------
+# SOURCE 57
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P0 WEB FOUNDATION IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P0
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の Web基盤立ち上げ実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P0 の目的は、
+Portal Site を Webアプリとして起動可能な状態にし、
+以後の P1〜P4 を迷わず積める共通土台を作ることにある。
+
+# ============================================================
+# 3. 対象
+# ============================================================
+
+- Webアプリ雛形
+- ルーティング土台
+- 共通レイアウト
+- 共通ヘッダー / フッター
+- 基本異常ページ
+- route constants
+- 基本型
+- mock データ土台
+
+# ============================================================
+# 4. 実装単位
+# ============================================================
+
+P0-1:
+- プロジェクト土台作成
+
+P0-2:
+- 共通レイアウト作成
+
+P0-3:
+- 共通UI最小部品
+
+P0-4:
+- 共通異常ページ土台
+
+P0-5:
+- 共通型と定数
+
+P0-6:
+- mock データ土台
+
+# ============================================================
+# 5. 完了条件
+# ============================================================
+
+- 開発サーバ起動可能
+- 主要URLに到達可能
+- 全ページが共通外枠で描画される
+- header / footer が機能する
+- /error /maintenance /access-denied が存在する
+- route constants が存在する
+- os mock が存在する
+
+
+# ------------------------------------------------------------
+# SOURCE 58
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P1 PUBLIC PAGES IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P1
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の公開ページ先行実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P1 の目的は、
+Portal Site を Civilization 全体の公開入口として
+視認可能かつ案内可能な状態にすることにある。
+
+# ============================================================
+# 3. 対象ページ
+# ============================================================
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /guide
+
+# ============================================================
+# 4. 実装単位
+# ============================================================
+
+P1-1:
+- トップページ
+
+P1-2:
+- Civilization紹介ページ
+
+P1-3:
+- OS一覧ページ
+
+P1-4:
+- OS詳細ページ
+
+P1-5:
+- 利用案内ページ
+
+# ============================================================
+# 5. 各ページ共通要件
+# ============================================================
+
+- Page Title Block を持つ
+- 共通レイアウト上で描画する
+- 公開導線と矛盾しない
+- Portal Site の役割境界と整合する
+- 認証前でも閲覧可能である
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- 公開トップが成立する
+- OS一覧とOS詳細が成立する
+- Civilization紹介が成立する
+- 利用案内が成立する
+- 公開導線がページ間で連結している
+
+
+# ------------------------------------------------------------
+# SOURCE 59
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P2 AUTH ENTRY IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P2
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の認証導線実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P2 の目的は、
+Portal Site から CivilizationOS 認証へ誘導し、
+認証後に元要求先へ戻す導線を成立させることにある。
+
+# ============================================================
+# 3. 対象
+# ============================================================
+
+- /login
+- /signup
+- /auth/return
+- session summary 参照
+- login URL 参照
+- signup URL 参照
+- return context 保存 / 読込 / 解除
+
+# ============================================================
+# 4. return context
+# ============================================================
+
+最低保持項目は次とする。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 5. 実装単位
+# ============================================================
+
+- login 案内ページ
+- signup 案内ページ
+- CivilizationOS 認証参照接続
+- return context 管理
+- auth return ページ
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- 未ログイン遷移要求時に login 導線へ流せる
+- signup 導線が成立する
+- 認証後に return context を解決できる
+- 原則として元要求先へ復帰できる
+
+
+# ------------------------------------------------------------
+# SOURCE 60
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P3 OS ENTRY DECISION IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P3
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の OS入口判定実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P3 の目的は、
+各OSへの唯一の公式Web入口として、
+Portal Site が入口前段判定を行えるようにすることにある。
+
+# ============================================================
+# 3. 判定結果
+# ============================================================
+
+- launchable
+- login_required
+- denied
+- maintenance
+- error
+
+# ============================================================
+# 4. 判定軸
+# ============================================================
+
+- publish status
+- maintenance status
+- login status
+- entity type
+- affiliation summary
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- 遷移先URL有効性
+
+# ============================================================
+# 5. 実装単位
+# ============================================================
+
+- 遷移判定サービス
+- 公開状態判定
+- メンテナンス判定
+- 主体条件判定
+- 遷移先URL解決
+- deny / maintenance / error 画面接続
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- 判定結果5種を返せる
+- OS詳細 / launcher から利用できる
+- 条件未達 / メンテ / エラー時に適切なページへ分岐する
+
+
+# ------------------------------------------------------------
+# SOURCE 61
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P4 LAUNCHER IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P4
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site のマイランチャー最小実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P4 の目的は、
+Portal Site を単なる案内ではなく、
+ログイン後の実用入口として成立させることにある。
+
+# ============================================================
+# 3. 対象ページ
+# ============================================================
+
+- /me/launcher
+
+# ============================================================
+# 4. 表示対象
+# ============================================================
+
+- 利用可能OS
+- 最近使ったOS
+- おすすめOS
+- 利用不可OSと理由
+- 利用者向けお知らせ
+
+# ============================================================
+# 5. 実装単位
+# ============================================================
+
+- launcher ページ土台
+- 利用可能OS表示
+- 利用不可理由表示
+- 最近使ったOS表示
+- おすすめOS表示
+- P3 判定との接続
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- login 後に launcher を開ける
+- 利用可能OSへ進める
+- 利用不可理由が表示される
+- recent / recommended の最小表示が成立する
+- Portal Site の一次完了条件を満たす
+
+
+# ------------------------------------------------------------
+# SOURCE 62
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DIRECTORY AND FILE STRUCTURE IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site 実装のディレクトリ構成と
+ファイル責務境界を定義する。
+
+# ============================================================
+# 2. 基本原則
+# ============================================================
+
+- app は URL入口に責務を限定する
+- features は画面 / 機能責務を保持する
+- components は再利用UIを保持する
+- services は外部参照 / 呼出を保持する
+- types は型正本とする
+- mocks は実装初期の仮データ正本とする
+
+# ============================================================
+# 3. 想定ディレクトリ
+# ============================================================
+
+- app
+- components/common
+- components/layout
+- components/navigation
+- components/feedback
+- features/public-home
+- features/os-catalog
+- features/auth-entry
+- features/launcher
+- services/civilization-auth
+- services/os-launch
+- services/return-context
+- lib/routing
+- types/os
+- types/auth
+- types/decision
+- mocks/os
+- mocks/notices
+- mocks/launcher
+- config
+- styles
+- public
+
+# ============================================================
+# 4. URL入口
+# ============================================================
+
+最低限の対象URLは次とする。
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /guide
+- /login
+- /signup
+- /auth/return
+- /access-denied
+- /maintenance
+- /error
+- /me/launcher
+- /admin
+
+# ============================================================
+# 5. 完了条件
+# ============================================================
+
+- P0〜P4 を迷わず積める構成である
+- route / feature / service / type の責務が混ざらない
+- app が過剰に肥大化しない
+
+
+# ------------------------------------------------------------
+# SOURCE 63
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED TO SPLIT MAPPING
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md の章構成と、
+分割文書群との対応関係を固定するための対応表である。
+
+本書の目的は、
+統合正本と分割正本の対応を明確化し、
+将来の見直し、分解、再統合、
+レビュー、追加設計時に参照しやすくすることにある。
+
+# ============================================================
+# 2. ルート正本
+# ============================================================
+
+統合正本:
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+上位案内:
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# 3. INTEGRATED 章と分割文書の対応
+# ============================================================
+
+## 3.1 文書目的
+INTEGRATED:
+- 1. 文書目的
+
+対応:
+- ルート正本内保持
+- 分割なし
+
+## 3.2 システム定義
+INTEGRATED:
+- 2. システム定義
+
+主対応:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+
+## 3.3 Civilization 全体構造における位置づけ
+INTEGRATED:
+- 3. Civilization 全体構造における位置づけ
+
+主対応:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+## 3.4 基本原則
+INTEGRATED:
+- 4. 基本原則
+
+主対応:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+## 3.5 責務境界
+INTEGRATED:
+- 5. 責務境界
+
+主対応:
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+## 3.6 利用者整理
+INTEGRATED:
+- 6. 利用者整理
+
+主対応:
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+
+## 3.7 Webページ構成
+INTEGRATED:
+- 7. Webページ構成
+
+主対応:
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+
+## 3.8 公開情報設計
+INTEGRATED:
+- 8. 公開情報設計
+
+主対応:
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+## 3.9 マイランチャー
+INTEGRATED:
+- 9. マイランチャー
+
+主対応:
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+## 3.10 OSカード定義
+INTEGRATED:
+- 10. OSカード定義
+
+主対応:
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+
+## 3.11 遷移原則
+INTEGRATED:
+- 11. 遷移原則
+
+主対応:
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+
+## 3.12 OS Web入口遷移フロー
+INTEGRATED:
+- 12. OS Web入口遷移フロー
+
+主対応:
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+
+## 3.13 認証復帰原則
+INTEGRATED:
+- 13. 認証復帰原則
+
+主対応:
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+
+## 3.14 権限制御原則
+INTEGRATED:
+- 14. 権限制御原則
+
+主対応:
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+
+## 3.15 管理運用原則
+INTEGRATED:
+- 15. 管理運用原則
+
+主対応:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+## 3.16 データモデル概要
+INTEGRATED:
+- 16. データモデル概要
+
+主対応:
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+## 3.17 API / 連携概要
+INTEGRATED:
+- 17. API / 連携概要
+
+主対応:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+## 3.18 Webサイトマップ概要
+INTEGRATED:
+- 18. Webサイトマップ概要
+
+主対応:
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+
+## 3.19 実装アーキテクチャ概要
+INTEGRATED:
+- 19. 実装アーキテクチャ概要
+
+主対応:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+## 3.20 DB論理 schema 概要
+INTEGRATED:
+- 20. DB論理 schema 概要
+
+主対応:
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+## 3.21 API exact contract 概要
+INTEGRATED:
+- 21. API exact contract 概要
+
+主対応:
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+## 3.22 画面項目表概要
+INTEGRATED:
+- 22. 画面項目表概要
+
+主対応:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+## 3.23 DB物理方針概要
+INTEGRATED:
+- 23. DB物理方針概要
+
+主対応:
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+
+## 3.24 exact column 定義概要
+INTEGRATED:
+- 24. exact column 定義概要
+
+主対応:
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+## 3.25 現在状態
+INTEGRATED:
+- 25. 現在状態
+
+対応:
+- ルート正本内保持
+- 各 overview / index にも状態記述あり
+
+## 3.26 最終定義
+INTEGRATED:
+- 26. 最終定義
+
+対応:
+- ルート正本内保持
+- overview と整合維持
+
+## 3.27 詳細分割文書参照
+INTEGRATED:
+- 27. 詳細分割文書参照
+
+対応:
+- 本対応表
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# 4. レイヤ別の役割整理
+# ============================================================
+
+020.architecture:
+- 全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+030.model:
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+050.flow:
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+060.integration:
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+070.operations:
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+080.policy:
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+120.implementation-ready:
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 5. 解釈原則
+# ============================================================
+
+- ルート正本の本文基準は 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md とする。
+- 分割文書は対応レイヤの詳細正本として扱う。
+- ルート正本と分割文書に差がある場合、まずルート正本を確認する。
+- 分割文書の修正は、必要に応じてルート正本との整合確認を伴う。
+- 本対応表は、統合正本と分割正本の橋渡し文書として扱う。
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+本対応表は、Portal Site 設計の分割整理後の canonical design support 文書である。  
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 64
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SYSTEM INDEX REFLECTION NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site を Civilization System 全体から
+見つけやすくするための
+上位 index 反映方針を整理する補助文書である。
+
+本書の目的は、
+Portal Site を docs 配下に埋もれさせず、
+Civilization 全体の公開入口システムとして
+独立トップ階層に置いた理由と、
+今後上位 index に反映すべき要点を固定することにある。
+
+# ============================================================
+# 2. 現在の正式配置
+# ============================================================
+
+Civilization Portal Site の正式配置先は次とする。
+
+- /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site
+
+この配置は、
+Portal Site を単なる文書置き場ではなく、
+Civilization 全体の公開入口システムとして扱うためのものである。
+
+# ============================================================
+# 3. docs 配下に置かない理由
+# ============================================================
+
+Portal Site を 90.docs 配下に置かない理由は次の通りとする。
+
+- docs 配下では設計書群に埋もれやすい。
+- Portal Site は Civilization 全体の公開入口であり、単なる資料ではない。
+- Portal Site は各OSへの唯一の公式Web導線を担う。
+- Portal Site は CivilizationOS 認証導線と接続する上位システムである。
+- 将来、設計書だけでなく運用資料や実装前資料が増えても独立配置の方が整理しやすい。
+
+# ============================================================
+# 4. applications 配下に置かない理由
+# ============================================================
+
+Portal Site を 07.applications 配下に置かない理由は次の通りとする。
+
+- Portal Site は単独アプリではない。
+- Portal Site は Civilization 全体の入口システムである。
+- Portal Site は各OSおよび各アプリの上位にある導線システムである。
+- applications 配下に置くと役割境界が曖昧になる。
+
+# ============================================================
+# 5. 独立トップ階層に置く理由
+# ============================================================
+
+Portal Site を独立トップ階層に置く理由は次の通りとする。
+
+- Civilization 全体の公開入口として目立つ。
+- 各OSと同列ではないが、各OSを束ねる上位入口として認識しやすい。
+- docs や applications に埋もれない。
+- 将来、Portal Site 自体の運用・設計・実装前仕様をまとめやすい。
+- Civilization System 全体の構成上、公開入口の存在が明示される。
+
+# ============================================================
+# 6. 上位 index へ反映すべき要点
+# ============================================================
+
+Civilization System 全体の上位 index に反映すべき要点は次の通りとする。
+
+- 08.civilization-portal-site は Civilization 全体の公開入口システムである。
+- Portal Site は Webサイト / Webアプリとして設計される。
+- 各OSへの唯一の公式Web導線は Portal Site が保持する。
+- 新規登録と認証の正本は CivilizationOS が担う。
+- 未ログイン時は CivilizationOS のWebログインへ誘導する。
+- 認証後は原則として要求元の対象OS Web入口へ復帰する。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 7. 上位 index に書くべき短縮説明
+# ============================================================
+
+上位 index に書く短縮説明は次でよい。
+
+08.civilization-portal-site:
+Civilization 全体の公開入口となる公式Webポータル。
+各OSへの唯一の公式Web導線、
+ログイン案内、
+新規登録案内、
+ログイン済み利用者向けWebランチャーを担う。
+
+# ============================================================
+# 8. 参照先
+# ============================================================
+
+Portal Site のルート正本は次の通りとする。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+Portal Site の詳細分割文書は各レイヤ配下を参照する。
+
+- ../020.architecture
+- ../030.model
+- ../050.flow
+- ../060.integration
+- ../070.operations
+- ../080.policy
+- ../120.implementation-ready
+
+# ============================================================
+# 9. 現在状態
+# ============================================================
+
+本書は、
+Civilization Portal Site を Civilization System 全体から
+見つけやすくするための canonical-design-support 文書である。
+
+本書は補助文書であり、
+ルート正本や統合正本を置き換えるものではない。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 65
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DESIGN COMPLETE NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site 設計書群が
+実装前 canonical design として
+完了状態に到達したことを記録する補助文書である。
+
+本書の目的は、
+設計完了時点の状態、
+正本構成、
+参照順、
+今後の扱いを固定することにある。
+
+# ============================================================
+# 2. 設計完了の定義
+# ============================================================
+
+Civilization Portal Site 設計は、
+次の条件を満たしたため、
+実装前 canonical design として完了扱いとする。
+
+- ルート正本が整備されている
+- 統合正本が整備されている
+- レイヤ別分割文書が整備されている
+- 各レイヤの overview / index が整備されている
+- 個別文書に上位参照が付与されている
+- integrated と分割文書の対応表が整備されている
+- 命名・番号・入口順の点検が完了している
+- Webページ前提の設計として統一されている
+
+# ============================================================
+# 3. ルート正本
+# ============================================================
+
+Portal Site 設計のルート正本は次の通りとする。
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+このうち本文正本は次とする。
+
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 4. 分割レイヤ
+# ============================================================
+
+Portal Site 設計の分割レイヤは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 5. Web前提の確定
+# ============================================================
+
+Portal Site は、
+Civilization 全体の公開入口となる
+Webサイト / Webアプリとして設計を固定する。
+
+この前提により、次を確定する。
+
+- 各OSへの導線は Webリンクとする。
+- 各OS利用開始は Web入口への遷移とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証後は原則として要求元の対象OS Web入口へ復帰させる。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+Portal Site 設計の現在状態は次の通りとする。
+
+- 実装前 canonical design 完了
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+
+# ============================================================
+# 7. 今後の扱い
+# ============================================================
+
+今後、Portal Site の実装を検討する場合は、
+本設計書群を正本参照として扱う。
+
+実装、DDL、画面開発、API開発、運用設計の具体化は、
+本設計書群との整合確認を前提とする。
+
+本段階では、
+実装そのものはまだ開始しない。
+
+# ============================================================
+# 8. 推奨参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+8. 900.meta の補助文書
+
+# ============================================================
+# 9. 補助文書
+# ============================================================
+
+Portal Site 設計の補助文書は次の通りとする。
+
+- 900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+- 900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+
+# ============================================================
+# 10. 最終記録
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+Civilization 全体の公開入口システムに対する
+実装前 canonical design として完了した。
+
+本設計書群は、
+今後の実装検討時に参照される正本である。
+
+現時点では、
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 66
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FINAL VERIFICATION NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site 設計書群の最終検証結果を
+記録する補助文書である。
+
+本書の目的は、
+設計完了時点の構成、
+主要正本、
+レイヤ構成、
+確認結果を固定し、
+後から見返した時に
+設計フェーズが閉じていることを
+明確にすることにある。
+
+# ============================================================
+# 2. ルート正本確認
+# ============================================================
+
+確認対象ルート正本:
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+本文正本:
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 3. レイヤ構成確認
+# ============================================================
+
+存在確認対象レイヤ:
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 4. 件数確認
+# ============================================================
+
+root files                 : 5
+020.architecture           : 6
+030.model                  : 6
+050.flow                   : 7
+060.integration            : 6
+070.operations             : 6
+080.policy                 : 6
+120.implementation-ready   : 7
+900.meta                   : 3
+
+# ============================================================
+# 5. 確認結果
+# ============================================================
+
+確認結果は次の通りとする。
+
+- ルート正本は整備済み
+- 各レイヤフォルダは整備済み
+- 各レイヤ overview / index は整備済み
+- 個別文書への上位参照は付与済み
+- integrated と分割文書の対応表は整備済み
+- system index 反映メモは整備済み
+- design complete note は整備済み
+- Webページ前提の設計として統一済み
+- 060.integration の命名衝突は解消済み
+
+# ============================================================
+# 6. 解釈
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+実装前 canonical design として
+完成扱いとしてよい状態にある。
+
+この時点では、
+設計文書群の構造、参照順、レイヤ分割、
+上位参照、補助文書が揃っている。
+
+# ============================================================
+# 7. 今後の扱い
+# ============================================================
+
+今後、Portal Site の実装を行う場合は、
+本設計書群を正本参照として扱う。
+
+本段階では、
+実装、DDL、本番投入はまだ行わない。
+
+# ============================================================
+# 8. 参照文書
+# ============================================================
+
+主要参照文書:
+
+- ../00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- ../0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+補助参照文書:
+
+- 900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+- 900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+- 900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+
+# ============================================================
+# 9. 最終記録
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+Webページ前提の Civilization 全体公開入口システム設計として
+実装前 canonical design 完了状態にある。
+
+現時点では、
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 67
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900004_CIVILIZATION_PORTAL_SITE_HANDOFF_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE HANDOFF NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site 設計を
+別チャットまたは次工程へ引き継ぐための
+短い引き継ぎ文書である。
+
+# ============================================================
+# 2. 現在状態
+# ============================================================
+
+Civilization Portal Site 設計は、
+実装前 canonical design として完了している。
+
+現時点の状態は次の通りとする。
+
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+- Webページ前提で設計固定済み
+- 実装設計文書追加済み
+
+# ============================================================
+# 3. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口となる
+公式Webポータルである。
+
+Portal Site は次を担う。
+
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- 公開情報提供
+- ポータル運営管理
+
+新規登録と認証の正本は CivilizationOS とする。  
+OS間の直接リンクは禁止する。
+
+# ============================================================
+# 4. ルート正本
+# ============================================================
+
+主要ルート文書は次の通りとする。
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+本文正本は次とする。
+
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. 分割レイヤ
+# ============================================================
+
+分割レイヤは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 130.development
+- 900.meta
+
+# ============================================================
+# 6. 重要前提
+# ============================================================
+
+- Portal Site は Webサイト / Webアプリ前提である。
+- 各OS利用開始は Web入口への遷移として扱う。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証後は原則として要求元の対象OS Web入口へ復帰させる。
+- 各OS内部の詳細権限制御は各OSが担う。
+- Portal Site は入口前段判定のみを担う。
+
+# ============================================================
+# 7. 実装設計の位置づけ
+# ============================================================
+
+130.development は、
+実装そのものではなく、
+実装前の具体的な開発設計を扱う layer である。
+
+含む内容は次の通りとする。
+
+- 開発優先方針
+- フェーズ分解
+- P0 Web基盤
+- P1 公開ページ
+- P2 認証導線
+- P3 OS入口制御
+- P4 マイランチャー
+- ディレクトリ構成
+- ファイル責務境界
+
+# ============================================================
+# 8. 推奨参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+8. 130.development
+9. 900.meta 補助文書
+
+# ============================================================
+# 9. 補助文書
+# ============================================================
+
+900.meta の主要補助文書は次の通りとする。
+
+- 900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+- 900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+- 900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+- 900004_CIVILIZATION_PORTAL_SITE_HANDOFF_NOTE.md
+- 900005_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_REFLECTION_NOTE.md
+
+# ============================================================
+# 10. 次工程候補
+# ============================================================
+
+次工程候補は次の通りとする。
+
+- 実装設計レビュー
+- Civilization System 全体 index への反映検討
+- P0 実装着手
+- 実装に進む場合は本設計書群を正本参照とする
+
+# ============================================================
+# 11. 最終記録
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+別チャットへ引き継ぎ可能な状態で整理済みである。
+
+現時点では、
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 68
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900005_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_REFLECTION_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT LAYER REFLECTION NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+130.development layer の追加を
+Portal Site 設計書群全体にどう位置づけるかを
+記録する補助文書である。
+
+# ============================================================
+# 2. development layer の位置づけ
+# ============================================================
+
+130.development は、
+Portal Site の実装そのものではなく、
+実装前の具体的な開発設計を扱う layer とする。
+
+本 layer は次を固定する。
+
+- 開発優先方針
+- 開発フェーズ
+- P0〜P4 実装設計
+- ディレクトリ構成
+- ファイル責務境界
+- 実装着手順
+
+# ============================================================
+# 3. 上位設計との関係
+# ============================================================
+
+development layer は次の上位正本に従う。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+architecture / model / flow / integration / operations / policy /
+implementation-ready の各layerで固定された内容を、
+実装に落とす直前の具体設計へ展開する役割を持つ。
+
+# ============================================================
+# 4. 含む文書
+# ============================================================
+
+- ../130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+- ../130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+- ../130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- ../130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- ../130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 5. 現在状態
+# ============================================================
+
+development layer は追加済みであり、
+Portal Site 設計書群は
+概念設計 / 詳細設計 / 実装前仕様 / 実装設計
+まで揃った状態にある。
+
+現時点では、
+実コード作成、DDL実行、本番投入はまだ行わない。
+
+
+
+# ------------------------------------------------------------
+# SOURCE 7
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_ORDER.txt
+
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_ORDER.txt
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT_ORDER.txt
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900004_CIVILIZATION_PORTAL_SITE_HANDOFF_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900005_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_REFLECTION_NOTE.md
+
+
+# ------------------------------------------------------------
+# SOURCE 8
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_v2_ORDER.txt
+
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0001_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_ADDENDUM.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_ORDER.txt
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_FULLY_INTEGRATED_ALL_FILES_v2_ORDER.txt
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT_ORDER.txt
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DYNAMIC_NAV_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030004_CIVILIZATION_PORTAL_SITE_DYNAMIC_COPY_AND_APP_TREE_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060004_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DB_DISPLAY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120005_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_EXACT_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120006_CX22073JW_KNOWLEDGE_SCHEMA_EXACT_COLUMN_DEFINITION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120007_CX22073JW_KNOWLEDGE_SCHEMA_FULL_TABLE_ADOPTION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120008_CX22073JW_KNOWLEDGE_SCHEMA_FULL_EXACT_COLUMN_DEFINITION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120009_CX22073JW_AND_SCENARIO_SCHEMA_RESPONSIBILITY_AND_TABLE_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120010_CX22073JW_CHARACTER_PROFILE_EXACT_COLUMN_DEFINITION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120011_SCENARIO_CORE_TABLE_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120012_CX22073JW_CORE_AND_CHARACTER_PROFILE_DDL_DRAFT.sql
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120013_SCENARIO_CORE_DDL_DRAFT.sql
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120014_CX22073JW_AND_SCENARIO_INTEGRATED_DDL_DRAFT.sql
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120015_CX22073JW_INITIAL_SEED_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120016_CX22073JW_INITIAL_SEED_TABULAR_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120017_PORTAL_SCHEMA_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120018_PORTAL_SCHEMA_EXACT_COLUMN_DEFINITION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120019_PORTAL_SCHEMA_DDL_DRAFT.sql
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120020_PORTAL_SCHEMA_SEED_DRAFT_DIRECTION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120021_PORTAL_SCENARIO_THREE_SCHEMA_INTEGRATED_SUMMARY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120022_PORTAL_INITIAL_SEED_DRAFT.sql
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120023_CX22073JW_INITIAL_SEED_DRAFT.sql
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120024_THREE_SCHEMA_INITIAL_SEED_ORDER_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300008_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300009_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_SPEC_CHANGE_DIFF_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300010_CIVILIZATION_PORTAL_SITE_P1_COPY_KEYS_AND_APP_TREE_RENDERING_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300011_CX22073JW_KNOWLEDGE_SCHEMA_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300012_CX22073JW_KNOWLEDGE_SCHEMA_FULL_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300013_CX22073JW_AND_SCENARIO_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300014_CX22073JW_INITIAL_SEED_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300015_PORTAL_SCHEMA_IMPLEMENTATION_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300016_THREE_SCHEMA_IMPLEMENTATION_SEQUENCE_DESIGN.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900004_CIVILIZATION_PORTAL_SITE_HANDOFF_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900005_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_REFLECTION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900007_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900008_CIVILIZATION_PORTAL_SITE_P1_SPEC_CHANGE_DIFF_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900009_CX22073JW_KNOWLEDGE_SCHEMA_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900010_CX22073JW_FULL_ADOPTION_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900011_CIVILIZATION_PORTAL_SITE_AND_CX22073JW_DESIGN_FIXED_SUMMARY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900012_CX22073JW_AND_SCENARIO_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900013_CX22073JW_AND_SCENARIO_DDL_DRAFT_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900014_CX22073JW_INITIAL_SEED_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900015_PORTAL_SCHEMA_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900016_PORTAL_SCHEMA_DDL_DRAFT_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900017_THREE_SCHEMA_INTEGRATED_SUMMARY_NOTE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900018_INITIAL_SEED_DRAFT_NOTE.md
+
+
+# ------------------------------------------------------------
+# SOURCE 9
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED DESIGN
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の統合設計を定義する正本本文である。
+
+本書の目的は、
+Civilization Portal Site の定義、責務、境界、Webページ、導線、
+権限制御、管理運用、データモデル、API連携、
+DB設計準備状態を一体の設計として固定することにある。
+
+本書は、今後の実装、レビュー、分割設計、
+DB設計、API設計の参照正本とする。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+Civilization Portal Site は、次を担わない。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行
+- 各OS内部ロジック
+- 各OS内部権限制御
+- 各OS内部データ正本
+
+# ============================================================
+# 3. Civilization 全体構造における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 認証正本保持
+- 新規登録正本保持
+- Civilization ID 発行
+- 各OS内部機能
+- 各OS内部権限
+- 各OS内部業務データ
+- OS間直接遷移管理
+
+# ============================================================
+# 6. 利用者整理
+# ============================================================
+
+想定利用者は次の通りとする。
+
+- 未ログイン訪問者
+- ログイン済み Civilization 参加者
+- organization
+- organization 所属利用者
+- ai_human
+- ai_robot
+- portal administrator
+- portal operator
+- portal editor
+- audit viewer
+
+# ============================================================
+# 7. Webページ構成
+# ============================================================
+
+公開Webページは次の通りとする。
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページは次の通りとする。
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページは次の通りとする。
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面は次の通りとする。
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 8. 公開情報設計
+# ============================================================
+
+トップは、Civilization 全体の第一入口となる公開Webページとする。  
+トップは、世界観要約、注目OS、ログイン導線、新規登録導線、お知らせ要約を提供する。
+
+Civilization紹介は、Civilization とは何か、
+Civilization ID とは何か、
+主体種別、
+CivilizationOS と各OSの関係を説明する公開Webページとする。
+
+OS一覧は、各OSへの唯一の一覧入口となる公開Webページとする。  
+OS一覧は、OSカードを用いた比較および発見の場とする。
+
+OS詳細は、対象OSの目的、想定利用者、利用条件、注意事項を説明し、
+対象OSのWeb入口へ進むかどうかの判断を支援する公開Webページとする。
+
+利用案内は、初回利用者向けに、
+登録、ログイン、OS利用までの流れを説明する公開Webページとする。
+
+お知らせは、更新情報、重要告知、
+メンテナンス情報、キャンペーン情報を案内する公開Webページとする。
+
+# ============================================================
+# 9. マイランチャー
+# ============================================================
+
+マイランチャーは、
+ログイン済み利用者向けの主要OS利用開始入口となるWebページとする。
+
+マイランチャーは情報カタログではなく、
+利用者にとっての実用的なWeb入口とする。
+
+マイランチャーは少なくとも次を表示する。
+
+- 利用可能OS
+- 最近使ったOS
+- おすすめOS
+- 利用不可OSと理由
+- 利用者向けお知らせ
+
+OS一覧が全体紹介を担うのに対し、
+マイランチャーは個別利用者の利用開始中心入口を担う。
+
+# ============================================================
+# 10. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+OSカードの共通要素は次の通りとする。
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+OSカードは次の箇所で共通利用する。
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 11. 遷移原則
+# ============================================================
+
+許可する遷移は次の通りとする。
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+条件付きで許可する遷移は次の通りとする。
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+禁止する遷移は次の通りとする。
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 12. OS Web入口遷移フロー
+# ============================================================
+
+利用者が「このOSへ進む」を押した際、
+Civilization Portal Site は次を順に確認する。
+
+1. 対象OSが公開状態か
+2. 対象OSがメンテナンス中でないか
+3. ログインが必要か
+4. 利用者が現在ログイン済みか
+5. 利用者の主体要約が条件を満たすか
+6. 遷移先URLが有効か
+
+判定結果は次のいずれかとする。
+
+- launchable -> 対象OSのWeb入口へ遷移
+- login_required -> CivilizationOS ログインWebページへ誘導
+- denied -> アクセス不可案内
+- maintenance -> メンテナンス案内
+- error -> エラー案内
+
+# ============================================================
+# 13. 認証復帰原則
+# ============================================================
+
+未ログイン状態で各OS起動要求が発生した場合、
+Civilization Portal Site は CivilizationOS のログインへ誘導する。
+
+Civilization Portal Site は、
+少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+認証成功後、
+Civilization Portal Site は復帰文脈を解決し、
+原則としてログイン前に要求された対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 14. 権限制御原則
+# ============================================================
+
+Civilization Portal Site はWeb入口の権限制御を担う。
+
+主な判定軸は次の通りとする。
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+重要原則は次の通りとする。
+
+- 表示可否と遷移可否は分離する。
+- Civilization Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 15. 管理運用原則
+# ============================================================
+
+Civilization Portal Site 管理Web画面は次を担う。
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+Civilization Portal Site 管理Web画面は次を担わない。
+
+- 各OS内部設定
+- 各OS内部権限管理
+- CivilizationOS 認証正本管理
+
+# ============================================================
+# 16. データモデル概要
+# ============================================================
+
+主要論理テーブルは次の通りとする。
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+責務分離は次の通りとする。
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+Civilization Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 17. API / 連携概要
+# ============================================================
+
+Civilization Portal Site 自前APIは次の通りとする。
+
+- OS一覧
+- OS詳細
+- お知らせ
+- 特集
+- メンテナンス
+- 文言
+- 遷移判定
+- 遷移準備
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+- 管理API
+
+CivilizationOS 参照APIは次の通りとする。
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+各OS連携原則は次の通りとする。
+
+- Civilization Portal Site は許可済みWeb入口URLを用いる。
+- Civilization Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+
+# ============================================================
+# 18. Webサイトマップ概要
+# ============================================================
+
+公開領域は次の通りとする。
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /notices
+- /guide
+- /help
+- /terms
+- /privacy
+- /contact
+
+認証導線領域は次の通りとする。
+
+- /login
+- /signup
+- /auth/return
+- /access-denied
+- /maintenance
+- /error
+
+ログイン後領域は次の通りとする。
+
+- /me/launcher
+- /me/recent
+- /me/recommended
+- /me/notices
+
+管理領域は次の通りとする。
+
+- /admin
+- /admin/os
+- /admin/notices
+- /admin/maintenance
+- /admin/features
+- /admin/assets
+- /admin/copy
+- /admin/audit
+
+# ============================================================
+# 19. 実装アーキテクチャ概要
+# ============================================================
+
+推奨レイヤは次の通りとする。
+
+- Public Web Layer
+- Member Launcher Layer
+- Portal Application Layer
+- Integration Layer
+- Portal Data Layer
+- Admin / Operations Layer
+
+主要モジュールは次の通りとする。
+
+- OS Catalog Service
+- Launcher Service
+- Launch Decision Service
+- Civilization Session Adapter
+- OS Launch Resolver
+- Return Context Manager
+
+# ============================================================
+# 20. DB論理 schema 概要
+# ============================================================
+
+Civilization Portal Site の論理 schema は `portal` を採用する。
+
+重要原則は次の通りとする。
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 21. API exact contract 概要
+# ============================================================
+
+Civilization Portal Site API は次に分かれる。
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 22. 画面項目表概要
+# ============================================================
+
+各Webページは次により定義する。
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+対象は次の通りとする。
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 23. DB物理方針概要
+# ============================================================
+
+物理DB方針は次の通りとする。
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 24. exact column 定義概要
+# ============================================================
+
+exact column 定義は、
+少なくとも次について固定済みとする。
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 25. 現在状態
+# ============================================================
+
+Civilization Portal Site 設計の現在状態は次の通りとする。
+
+- 実装前 canonical design 完了
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+
+本設計は、今後の実装時に参照される正本とする。
+
+# ============================================================
+# 26. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開説明、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+入口制御、ポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。  
+OS間の直接遷移は許可しない。  
+現時点では実装はまだ行わない。
+
+# ============================================================
+# 27. 詳細分割文書参照
+# ============================================================
+
+本統合文書の詳細は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 10
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED REBUILT
+# ============================================================
+
+status: canonical-design-rebuilt
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 0. PURPOSE
+# ============================================================
+
+This file is a non-destructive rebuilt integrated edition
+generated from the current root canonical files and split design files.
+
+source_order_file:
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT_ORDER.txt
+
+# ============================================================
+# 1. MERGED CONTENT
+# ============================================================
+
+
+# ------------------------------------------------------------
+# SOURCE 1
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ROOT FILE GUIDE
+# ============================================================
+
+status: canonical-design-support
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site 直下にある
+ルートファイル群の役割と読む順番を
+短く案内する補助文書である。
+
+本書の目的は、
+初回参照時に、
+どの文書から読めばよいかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. ルートファイル一覧
+# ============================================================
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 3. 各ファイルの役割
+# ============================================================
+
+00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md:
+- ルートファイルの読む順番を示す補助文書
+
+0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md:
+- このフォルダ自体が何を意味するかを示す入口文書
+
+000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md:
+- Portal Site の最上位概要を示す文書
+
+000_CIVILIZATION_PORTAL_SITE_INDEX.md:
+- Portal Site 設計全体の索引文書
+
+00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md:
+- Portal Site 設計全体の統合正本本文
+
+# ============================================================
+# 4. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+
+# ============================================================
+# 5. レイヤフォルダ
+# ============================================================
+
+本フォルダ配下のレイヤフォルダは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 解釈原則
+# ============================================================
+
+- 最上位の本文正本は 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md とする。
+- OVERVIEW は最上位概要とする。
+- INDEX は索引とする。
+- FOLDER_OVERVIEW はフォルダ入口説明とする。
+- ROOT_FILE_GUIDE は読む順番を示す補助文書とする。
+
+# ============================================================
+# 7. 現在状態
+# ============================================================
+
+本書は補助文書であり、
+Portal Site の実装前 canonical design を案内するために置く。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 2
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FOLDER OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+08.civilization-portal-site フォルダ自体の意味を
+短く説明するための入口文書である。
+
+本書の目的は、
+このフォルダが Civilization 全体において
+どのような位置づけを持つかを
+最短で把握できるようにすることにある。
+
+# ============================================================
+# 2. フォルダ定義
+# ============================================================
+
+08.civilization-portal-site は、
+Civilization 全体の公開入口となる
+公式Webポータルの設計書群を格納するトップ階層である。
+
+本フォルダは、
+各OSへの唯一の公式Web導線、
+ログイン案内、
+新規登録案内、
+ログイン済み利用者向けWebランチャー、
+ポータル運営管理に関する設計を保持する。
+
+# ============================================================
+# 3. このフォルダを独立配置する理由
+# ============================================================
+
+本フォルダを独立トップ階層に置く理由は次の通りとする。
+
+- Portal Site は Civilization 全体の公開入口である。
+- Portal Site は単なる docs ではない。
+- Portal Site は applications 配下の単独アプリでもない。
+- Portal Site は各OSへの唯一の公式Web導線を担う。
+- Portal Site は CivilizationOS の認証導線と接続する上位システムである。
+
+# ============================================================
+# 4. ルート正本
+# ============================================================
+
+本フォルダのルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. レイヤ構成
+# ============================================================
+
+本フォルダは次のレイヤ構成を持つ。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 6. 主要原則
+# ============================================================
+
+- 各OSへのリンクは Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 新規登録と認証の正本は CivilizationOS が担う。
+- Portal Site は Web入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- 実装はまだ行わない。
+
+# ============================================================
+# 7. 参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+2. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+4. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+5. 各レイヤ overview / index
+6. 各個別文書
+
+# ============================================================
+# 8. 現在状態
+# ============================================================
+
+本フォルダは、
+Civilization Portal Site の実装前 canonical design を保持する。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 3
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OVERVIEW
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の最上位概要を定義する文書である。
+
+本書の目的は、
+Civilization Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+基本原則、
+責務境界を短く固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- Civilization 世界観の公開説明
+- 各OSの紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部から最初に到達するWeb情報サイト
+- 各OSへの唯一の公式Webリンク保持主体
+- ログイン済み利用者向けWebランチャー提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるその他OS
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一のWeb導線提供
+- 新規登録案内
+- ログイン案内
+- Webランチャー提供
+- Web遷移前の前段判定
+- お知らせ掲載
+- メンテナンス案内
+- ポータルWeb管理画面提供
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 新規登録正本処理
+- 認証正本処理
+- Civilization ID 発行
+- 各OS内部処理
+- 各OS内部データ管理
+- 各OS内部詳細権限制御
+- OS間直接遷移
+
+# ============================================================
+# 6. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Webページ:
+- ダッシュボード
+- OS掲載管理
+- お知らせ管理
+- メンテ管理
+- 特集管理
+- 文言管理
+- 監査ログ閲覧
+
+# ============================================================
+# 7. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開案内、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+およびポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。
+
+# ============================================================
+# 8. 詳細設計参照
+# ============================================================
+
+本概要文書の詳細設計は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 4
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INDEX
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site 設計の索引文書である。
+
+本書の目的は、
+Civilization Portal Site 設計に含まれる主要論点、
+参照順、
+正本文書の位置づけを固定し、
+ルート正本、レイヤ別正本、実装前仕様を
+階層的に参照できるようにすることにある。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+推奨読順は次の通りとする。
+
+1. OVERVIEW
+2. INTEGRATED
+3. architecture
+4. model
+5. flow
+6. integration
+7. operations
+8. policy
+9. implementation-ready
+
+# ============================================================
+# 3. ルート正本文書
+# ============================================================
+
+Portal Site 設計のルート正本は次の通りとする。
+
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+各文書の位置づけは次の通りとする。
+
+- OVERVIEW:
+  最上位概要。
+  システム定義、位置づけ、基本原則、責務境界を短く固定する。
+
+- INDEX:
+  索引文書。
+  参照順、論点一覧、レイヤ別参照を固定する。
+
+- INTEGRATED:
+  本文正本。
+  Portal Site 設計全体を統合本文として保持する。
+
+# ============================================================
+# 4. レイヤ別正本文書
+# ============================================================
+
+## 4.1 architecture
+
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+対象論点:
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+## 4.2 model
+
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+対象論点:
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+## 4.3 flow
+
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+対象論点:
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+## 4.4 integration
+
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+対象論点:
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+## 4.5 operations
+
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+対象論点:
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+## 4.6 policy
+
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+対象論点:
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 5. 実装前仕様文書
+# ============================================================
+
+## 5.1 implementation-ready
+
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+対象論点:
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 6. 論点一覧
+# ============================================================
+
+A. 定義と境界
+- システム定義
+- CivilizationOS との境界
+- 各OSとの境界
+- 公式入口原則
+
+B. Webページ構成
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+C. 導線と遷移
+- 通常Web導線
+- OS Web入口遷移
+- ログイン要求導線
+- 認証復帰導線
+- アクセス不可導線
+- メンテナンス導線
+
+D. 権限制御
+- 表示可否
+- 遷移可否
+- 主体種別条件
+- 所属条件
+- 契約条件
+- Beta条件
+- 法令・地域条件
+
+E. 運営管理
+- OS掲載管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 監査管理
+
+F. モデルと連携
+- OSカードモデル
+- データモデル
+- CivilizationOS 認証参照
+- 各OS起動連携
+- return context 管理
+
+G. 実装前仕様
+- API exact contract
+- 画面項目表
+- DB論理 schema
+- DB物理方針
+- exact column 定義表
+
+# ============================================================
+# 7. 解釈原則
+# ============================================================
+
+概要文書と統合文書で記述粒度が異なる場合、
+統合文書を優先する。
+
+統合文書と分割文書で記述粒度が異なる場合、
+統合文書を上位本文正本としつつ、
+各分割文書は対応レイヤの詳細正本として扱う。
+
+今後、詳細分割文書を追加する場合、
+統合文書との整合を維持しなければならない。
+
+# ============================================================
+# 8. 現在の扱い
+# ============================================================
+
+Civilization Portal Site 設計は、現時点で次として扱う。
+
+- 実装前 canonical design
+- 実装未着手
+- DDL未実行
+- 将来実装時の参照正本
+
+
+# ------------------------------------------------------------
+# SOURCE 5
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED DESIGN
+# ============================================================
+
+status: canonical-design
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の統合設計を定義する正本本文である。
+
+本書の目的は、
+Civilization Portal Site の定義、責務、境界、Webページ、導線、
+権限制御、管理運用、データモデル、API連携、
+DB設計準備状態を一体の設計として固定することにある。
+
+本書は、今後の実装、レビュー、分割設計、
+DB設計、API設計の参照正本とする。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Civilization Portal Site は、次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+Civilization Portal Site は、次を担わない。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行
+- 各OS内部ロジック
+- 各OS内部権限制御
+- 各OS内部データ正本
+
+# ============================================================
+# 3. Civilization 全体構造における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 基本原則
+# ============================================================
+
+- 新規登録は CivilizationOS のみが担う。
+- 認証は CivilizationOS のみが担う。
+- Civilization ID は全OS共通のログイン主体識別子とする。
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 各OS利用には Civilization ID ベースのログインを必須とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- Civilization Portal Site はWeb入口制御のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+
+# ============================================================
+# 5. 責務境界
+# ============================================================
+
+Civilization Portal Site が担う責務は次の通りとする。
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+Civilization Portal Site が担わない責務は次の通りとする。
+
+- 認証正本保持
+- 新規登録正本保持
+- Civilization ID 発行
+- 各OS内部機能
+- 各OS内部権限
+- 各OS内部業務データ
+- OS間直接遷移管理
+
+# ============================================================
+# 6. 利用者整理
+# ============================================================
+
+想定利用者は次の通りとする。
+
+- 未ログイン訪問者
+- ログイン済み Civilization 参加者
+- organization
+- organization 所属利用者
+- ai_human
+- ai_robot
+- portal administrator
+- portal operator
+- portal editor
+- audit viewer
+
+# ============================================================
+# 7. Webページ構成
+# ============================================================
+
+公開Webページは次の通りとする。
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページは次の通りとする。
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページは次の通りとする。
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面は次の通りとする。
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 8. 公開情報設計
+# ============================================================
+
+トップは、Civilization 全体の第一入口となる公開Webページとする。  
+トップは、世界観要約、注目OS、ログイン導線、新規登録導線、お知らせ要約を提供する。
+
+Civilization紹介は、Civilization とは何か、
+Civilization ID とは何か、
+主体種別、
+CivilizationOS と各OSの関係を説明する公開Webページとする。
+
+OS一覧は、各OSへの唯一の一覧入口となる公開Webページとする。  
+OS一覧は、OSカードを用いた比較および発見の場とする。
+
+OS詳細は、対象OSの目的、想定利用者、利用条件、注意事項を説明し、
+対象OSのWeb入口へ進むかどうかの判断を支援する公開Webページとする。
+
+利用案内は、初回利用者向けに、
+登録、ログイン、OS利用までの流れを説明する公開Webページとする。
+
+お知らせは、更新情報、重要告知、
+メンテナンス情報、キャンペーン情報を案内する公開Webページとする。
+
+# ============================================================
+# 9. マイランチャー
+# ============================================================
+
+マイランチャーは、
+ログイン済み利用者向けの主要OS利用開始入口となるWebページとする。
+
+マイランチャーは情報カタログではなく、
+利用者にとっての実用的なWeb入口とする。
+
+マイランチャーは少なくとも次を表示する。
+
+- 利用可能OS
+- 最近使ったOS
+- おすすめOS
+- 利用不可OSと理由
+- 利用者向けお知らせ
+
+OS一覧が全体紹介を担うのに対し、
+マイランチャーは個別利用者の利用開始中心入口を担う。
+
+# ============================================================
+# 10. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+OSカードの共通要素は次の通りとする。
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+OSカードは次の箇所で共通利用する。
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 11. 遷移原則
+# ============================================================
+
+許可する遷移は次の通りとする。
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+条件付きで許可する遷移は次の通りとする。
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+禁止する遷移は次の通りとする。
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 12. OS Web入口遷移フロー
+# ============================================================
+
+利用者が「このOSへ進む」を押した際、
+Civilization Portal Site は次を順に確認する。
+
+1. 対象OSが公開状態か
+2. 対象OSがメンテナンス中でないか
+3. ログインが必要か
+4. 利用者が現在ログイン済みか
+5. 利用者の主体要約が条件を満たすか
+6. 遷移先URLが有効か
+
+判定結果は次のいずれかとする。
+
+- launchable -> 対象OSのWeb入口へ遷移
+- login_required -> CivilizationOS ログインWebページへ誘導
+- denied -> アクセス不可案内
+- maintenance -> メンテナンス案内
+- error -> エラー案内
+
+# ============================================================
+# 13. 認証復帰原則
+# ============================================================
+
+未ログイン状態で各OS起動要求が発生した場合、
+Civilization Portal Site は CivilizationOS のログインへ誘導する。
+
+Civilization Portal Site は、
+少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+認証成功後、
+Civilization Portal Site は復帰文脈を解決し、
+原則としてログイン前に要求された対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 14. 権限制御原則
+# ============================================================
+
+Civilization Portal Site はWeb入口の権限制御を担う。
+
+主な判定軸は次の通りとする。
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+重要原則は次の通りとする。
+
+- 表示可否と遷移可否は分離する。
+- Civilization Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 15. 管理運用原則
+# ============================================================
+
+Civilization Portal Site 管理Web画面は次を担う。
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+Civilization Portal Site 管理Web画面は次を担わない。
+
+- 各OS内部設定
+- 各OS内部権限管理
+- CivilizationOS 認証正本管理
+
+# ============================================================
+# 16. データモデル概要
+# ============================================================
+
+主要論理テーブルは次の通りとする。
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+責務分離は次の通りとする。
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+Civilization Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 17. API / 連携概要
+# ============================================================
+
+Civilization Portal Site 自前APIは次の通りとする。
+
+- OS一覧
+- OS詳細
+- お知らせ
+- 特集
+- メンテナンス
+- 文言
+- 遷移判定
+- 遷移準備
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+- 管理API
+
+CivilizationOS 参照APIは次の通りとする。
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+各OS連携原則は次の通りとする。
+
+- Civilization Portal Site は許可済みWeb入口URLを用いる。
+- Civilization Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+
+# ============================================================
+# 18. Webサイトマップ概要
+# ============================================================
+
+公開領域は次の通りとする。
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /notices
+- /guide
+- /help
+- /terms
+- /privacy
+- /contact
+
+認証導線領域は次の通りとする。
+
+- /login
+- /signup
+- /auth/return
+- /access-denied
+- /maintenance
+- /error
+
+ログイン後領域は次の通りとする。
+
+- /me/launcher
+- /me/recent
+- /me/recommended
+- /me/notices
+
+管理領域は次の通りとする。
+
+- /admin
+- /admin/os
+- /admin/notices
+- /admin/maintenance
+- /admin/features
+- /admin/assets
+- /admin/copy
+- /admin/audit
+
+# ============================================================
+# 19. 実装アーキテクチャ概要
+# ============================================================
+
+推奨レイヤは次の通りとする。
+
+- Public Web Layer
+- Member Launcher Layer
+- Portal Application Layer
+- Integration Layer
+- Portal Data Layer
+- Admin / Operations Layer
+
+主要モジュールは次の通りとする。
+
+- OS Catalog Service
+- Launcher Service
+- Launch Decision Service
+- Civilization Session Adapter
+- OS Launch Resolver
+- Return Context Manager
+
+# ============================================================
+# 20. DB論理 schema 概要
+# ============================================================
+
+Civilization Portal Site の論理 schema は `portal` を採用する。
+
+重要原則は次の通りとする。
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 21. API exact contract 概要
+# ============================================================
+
+Civilization Portal Site API は次に分かれる。
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 22. 画面項目表概要
+# ============================================================
+
+各Webページは次により定義する。
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+対象は次の通りとする。
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 23. DB物理方針概要
+# ============================================================
+
+物理DB方針は次の通りとする。
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 24. exact column 定義概要
+# ============================================================
+
+exact column 定義は、
+少なくとも次について固定済みとする。
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 25. 現在状態
+# ============================================================
+
+Civilization Portal Site 設計の現在状態は次の通りとする。
+
+- 実装前 canonical design 完了
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+
+本設計は、今後の実装時に参照される正本とする。
+
+# ============================================================
+# 26. 最終定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口であり、
+各OSへの唯一の公式Web導線を保持する正規ポータルである。
+
+CivilizationOS は、
+新規登録、認証、Civilization ID 発行の正本である。
+
+Civilization Portal Site は、
+公開説明、OS紹介、公式Web導線、
+ログイン済み利用者向けWeb入口、
+入口制御、ポータル運営管理を担う。
+
+すべてのOS入口は Civilization Portal Site を経由しなければならない。  
+OS間の直接遷移は許可しない。  
+現時点では実装はまだ行わない。
+
+# ============================================================
+# 27. 詳細分割文書参照
+# ============================================================
+
+本統合文書の詳細は、次の分割文書群を参照する。
+
+architecture:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+model:
+- 030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+flow:
+- 050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+integration:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+operations:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+policy:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+implementation-ready:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+
+# ------------------------------------------------------------
+# SOURCE 6
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の architecture layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+architecture layer は次を扱う。
+
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS との境界
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 7
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+2. 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+3. 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+4. 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 8
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の全体アーキテクチャを定義する。
+
+本書の目的は、
+Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+CivilizationOS および各OSとの境界、
+主要Webページ群、
+上位構造を固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Portal Site は次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面:
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 5. 上位アーキテクチャ原則
+# ============================================================
+
+- Portal Site は公開Web入口を担う。
+- 認証正本は CivilizationOS とする。
+- 各OSへのリンクは Portal Site のみが保持する。
+- Portal Site は入口前段判定のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 9
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: screen-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site のWebページ構成を定義する。
+
+# ============================================================
+# 2. 公開Webページ
+# ============================================================
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+# ============================================================
+# 3. 認証導線Webページ
+# ============================================================
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+# ============================================================
+# 4. ログイン後Webページ
+# ============================================================
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+# ============================================================
+# 5. 管理Web画面
+# ============================================================
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 10
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NAVIGATION ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: navigation-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site を中心とした導線構造を定義する。
+
+# ============================================================
+# 2. 導線原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- 各OSから Portal Site への戻りは許可する。
+
+# ============================================================
+# 3. 許可する遷移
+# ============================================================
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+# ============================================================
+# 4. 条件付きで許可する遷移
+# ============================================================
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+# ============================================================
+# 5. 禁止する遷移
+# ============================================================
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 11
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATIONOS BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: civilizationos-boundary
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site と CivilizationOS の責務境界を定義する。
+
+# ============================================================
+# 2. Civilization Portal Site が担うもの
+# ============================================================
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+# ============================================================
+# 3. CivilizationOS が担うもの
+# ============================================================
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後の文明シミュレーション世界本体
+
+# ============================================================
+# 4. 境界原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+- CivilizationOS は Portal Site の代替導線とはならない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 12
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の model layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+model layer は次を扱う。
+
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 13
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL INDEX
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+2. 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+3. 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+4. 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ドメイン要素
+- OSカード
+- 権限制御
+- データモデル
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 14
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DOMAIN MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の主要ドメイン要素を定義する。
+
+# ============================================================
+# 2. 主要ドメイン要素
+# ============================================================
+
+- Portal Site
+- OS
+- OS Card
+- Launch Rule
+- Notice
+- Feature Slot
+- Maintenance
+- Copy
+- Asset
+- Personalized Launcher State
+- Admin Audit Log
+
+# ============================================================
+# 3. ドメイン原則
+# ============================================================
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 15
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS CARD MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: os-card
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OSカードのモデルを定義する。
+
+# ============================================================
+# 2. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+# ============================================================
+# 3. 共通要素
+# ============================================================
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+# ============================================================
+# 4. 利用箇所
+# ============================================================
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 16
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: permission
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御モデルを定義する。
+
+# ============================================================
+# 2. 判定軸
+# ============================================================
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+# ============================================================
+# 3. 重要原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 17
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DATA MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: data-model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の主要論理データモデルを定義する。
+
+# ============================================================
+# 2. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 3. 責務分離
+# ============================================================
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+# ============================================================
+# 4. 非保持原則
+# ============================================================
+
+Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 18
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の flow layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+flow layer は次を扱う。
+
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 19
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW INDEX
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+2. 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+3. 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+4. 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+5. 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ログイン導線
+- OS遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 20
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE LOGIN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: login-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site におけるログイン要求フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が対象OSへの遷移を要求する。
+2. Portal Site はログイン要否を確認する。
+3. 未ログインであれば CivilizationOS のWebログインページへ誘導する。
+4. 認証成功後、復帰文脈に基づき対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 21
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: os-launch-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、対象OS Web入口への遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が「このOSへ進む」を押す。
+2. Portal Site は公開状態を確認する。
+3. Portal Site はメンテナンス状態を確認する。
+4. Portal Site はログイン要否を確認する。
+5. Portal Site は主体要約条件を確認する。
+6. Portal Site は遷移先URL有効性を確認する。
+7. 判定結果に応じて対象OS / ログイン / アクセス不可 / メンテナンス / エラーへ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 22
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUTH RETURN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: auth-return-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証後復帰フローを定義する。
+
+# ============================================================
+# 2. 復帰文脈
+# ============================================================
+
+Portal Site は、少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. フロー
+# ============================================================
+
+1. 未ログインでOS遷移要求が発生する。
+2. Portal Site は復帰文脈を保存する。
+3. CivilizationOS ログイン完了後、Portal Site は復帰文脈を解決する。
+4. 原則として要求元の対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 23
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ACCESS DENIED FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: access-denied-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、条件未達時のアクセス拒否フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が主体要約条件を判定する。
+2. 条件未達であればアクセス不可案内へ遷移する。
+3. 利用不可理由と代替導線を提示する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 24
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: maintenance-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、メンテナンス時の遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が対象OSまたはポータル自体のメンテナンス状態を判定する。
+2. メンテナンス中であれば対象OSへの遷移を停止する。
+3. メンテナンス案内へ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 25
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の integration layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+integration layer は次を扱う。
+
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 26
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION INDEX
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+2. 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+3. 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+4. 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 認証参照
+- OS連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 27
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATION AUTH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: civilization-auth
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と CivilizationOS 認証参照の統合原則を定義する。
+
+# ============================================================
+# 2. 参照対象
+# ============================================================
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+# ============================================================
+# 3. 統合原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 28
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: os-launch
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と各OS Web入口との統合原則を定義する。
+
+# ============================================================
+# 2. 統合原則
+# ============================================================
+
+- Portal Site は許可済みWeb入口URLを用いる。
+- Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+- OS間の直接リンクは許可しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 29
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE RETURN CONTEXT INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: return-context
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証復帰文脈の統合原則を定義する。
+
+# ============================================================
+# 2. 保持項目
+# ============================================================
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. 原則
+# ============================================================
+
+- 未ログイン遷移要求時は復帰文脈を保存する。
+- 認証後は復帰文脈を解決する。
+- 原則として元の対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 30
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API CONTRACT SUMMARY
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: api-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site のAPI区分を概要レベルで定義する。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 原則
+# ============================================================
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 31
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の operations layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+operations layer は次を扱う。
+
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 32
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS INDEX
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+2. 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+3. 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+4. 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 管理運用
+- お知らせ
+- メンテ
+- 監査
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 33
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ADMIN OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site 管理Web画面の運用責務を定義する。
+
+# ============================================================
+# 2. 管理対象
+# ============================================================
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 34
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NOTICE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: notice-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、お知らせ運用を定義する。
+
+# ============================================================
+# 2. 運用対象
+# ============================================================
+
+- 更新情報
+- 重要告知
+- メンテナンス情報
+- キャンペーン情報
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 35
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: maintenance-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site および各OSに対するメンテナンス運用を定義する。
+
+# ============================================================
+# 2. 運用原則
+# ============================================================
+
+- メンテナンス中は対象OSへの遷移を停止する。
+- Portal Site はメンテナンス案内を表示する。
+- メンテナンス状態は運営管理で即時反映可能とする。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 36
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUDIT OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: audit-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の監査運用を定義する。
+
+# ============================================================
+# 2. 監査対象
+# ============================================================
+
+- OS掲載変更
+- 特集変更
+- お知らせ変更
+- メンテナンス変更
+- 文言変更
+- 画像変更
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 37
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の policy layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+policy layer は次を扱う。
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 38
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY INDEX
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+2. 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+3. 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+4. 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 39
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ENTRY POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口原則を定義する。
+
+# ============================================================
+# 2. 入口原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- すべてのOS入口は Civilization Portal Site を経由しなければならない。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 40
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LINK POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: os-link-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OS間リンク原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- OS間の直接リンクは禁止する。
+- 各OSから Civilization Portal Site への戻りは許可する。
+- 認証切れ時の CivilizationOS ログインページへの遷移は条件付きで許可する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 41
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: permission-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 42
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PUBLIC INFORMATION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: public-information-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の公開情報原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- Portal Site は Civilization 全体の公開情報を提供する。
+- 公開情報は各OSの公式Web入口判断を支援する。
+- Portal Site は公開案内と入口導線に責務を限定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 43
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の implementation-ready layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+implementation-ready layer は次を扱う。
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 44
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY INDEX
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+2. 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+3. 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+4. 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+5. 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 45
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN FIELD SPEC
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: screen-field-spec
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、各Webページの項目定義の参照入口である。
+
+# ============================================================
+# 2. 定義対象
+# ============================================================
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 3. 画面定義要素
+# ============================================================
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 46
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API EXACT CONTRACT
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: api-exact-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site API の exact contract 参照文書である。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 要件
+# ============================================================
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 47
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB LOGICAL SCHEMA
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-logical-schema
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の論理schema概要を定義する。
+
+# ============================================================
+# 2. 論理schema
+# ============================================================
+
+Portal Site の論理 schema は `portal` を採用する。
+
+# ============================================================
+# 3. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 48
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB PHYSICAL GUIDELINE
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-physical-guideline
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の物理方針を定義する。
+
+# ============================================================
+# 2. 方針
+# ============================================================
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 49
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE EXACT COLUMN DEFINITION
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: exact-column-definition
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の exact column 定義参照文書である。
+
+# ============================================================
+# 2. 対象
+# ============================================================
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+# ============================================================
+# 3. 現在状態
+# ============================================================
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+
+# ------------------------------------------------------------
+# SOURCE 11
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED_REBUILT_ORDER.txt
+
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/000_CIVILIZATION_PORTAL_SITE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+/data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+
+# ------------------------------------------------------------
+# SOURCE 12
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+2. 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+3. 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+4. 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 13
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/0200000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の architecture layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+architecture layer は次を扱う。
+
+- システム全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS との境界
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 14
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の全体アーキテクチャを定義する。
+
+本書の目的は、
+Portal Site のシステム定義、
+Civilization 全体における位置づけ、
+CivilizationOS および各OSとの境界、
+主要Webページ群、
+上位構造を固定することにある。
+
+# ============================================================
+# 2. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開情報を提供する
+Webサイト / Webアプリであり、
+各OSへの唯一の公式Web入口を担うポータルシステムとする。
+
+Portal Site は次を担う。
+
+- 公開情報提供
+- Civilization 世界観説明
+- 各OS紹介
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web遷移前の前段判定
+- お知らせ表示
+- メンテナンス案内
+- ポータル運営管理
+
+# ============================================================
+# 3. Civilization 全体における位置づけ
+# ============================================================
+
+Civilization Portal Site の位置づけは次の通りとする。
+
+- Civilization 全体の公開入口
+- 外部向けWeb情報サイト
+- 公式ナビゲーション正本
+- ログイン済み利用者向けWeb入口提供主体
+- ポータル運営管理主体
+
+CivilizationOS の位置づけは次の通りとする。
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後に文明シミュレーション世界が開始する中核OS
+
+各OSの位置づけは次の通りとする。
+
+- PersonaOS
+- BusinessOS
+- GameOS
+- StreamingOS
+- LifeOS
+- 将来追加されるOS群
+
+各OSは Civilization Portal Site からWeb遷移によって入る利用先であり、
+OS間の直接リンクは許可しない。
+
+# ============================================================
+# 4. 主要Webページ群
+# ============================================================
+
+公開Webページ:
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+認証導線Webページ:
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+ログイン後Webページ:
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+管理Web画面:
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 5. 上位アーキテクチャ原則
+# ============================================================
+
+- Portal Site は公開Web入口を担う。
+- 認証正本は CivilizationOS とする。
+- 各OSへのリンクは Portal Site のみが保持する。
+- Portal Site は入口前段判定のみを担う。
+- 各OS内部の詳細権限制御は各OSが担う。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 15
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: screen-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site のWebページ構成を定義する。
+
+# ============================================================
+# 2. 公開Webページ
+# ============================================================
+
+- トップ
+- Civilization紹介
+- OS一覧
+- OS詳細
+- お知らせ
+- 利用案内
+- ヘルプ
+- 規約類
+
+# ============================================================
+# 3. 認証導線Webページ
+# ============================================================
+
+- ログイン案内
+- 新規登録案内
+- 認証復帰
+- アクセス不可
+- メンテナンス
+- エラー案内
+
+# ============================================================
+# 4. ログイン後Webページ
+# ============================================================
+
+- マイランチャー
+- 最近使ったOS
+- おすすめOS
+- 利用者向けお知らせ
+
+# ============================================================
+# 5. 管理Web画面
+# ============================================================
+
+- ダッシュボード
+- OS掲載管理
+- OS詳細管理
+- お知らせ管理
+- メンテナンス管理
+- 特集管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 16
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NAVIGATION ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: navigation-architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site を中心とした導線構造を定義する。
+
+# ============================================================
+# 2. 導線原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- OS間の直接リンクは禁止する。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証成功後は原則として要求元の対象OS Web入口へ復帰させる。
+- 各OSから Portal Site への戻りは許可する。
+
+# ============================================================
+# 3. 許可する遷移
+# ============================================================
+
+- ポータル公開Webページから OS詳細
+- ポータル公開Webページから OS Web入口への遷移要求
+- マイランチャーから OS Web入口への遷移要求
+- 各OSから Civilization Portal Site への戻り
+
+# ============================================================
+# 4. 条件付きで許可する遷移
+# ============================================================
+
+- Civilization Portal Site から CivilizationOS ログインWebページ
+- 認証切れ時の各OSから CivilizationOS ログインWebページ
+
+# ============================================================
+# 5. 禁止する遷移
+# ============================================================
+
+- OSから別OSへの直接遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 17
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATIONOS BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical-design
+layer: architecture
+domain: civilizationos-boundary
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site と CivilizationOS の責務境界を定義する。
+
+# ============================================================
+# 2. Civilization Portal Site が担うもの
+# ============================================================
+
+- 公開情報
+- 世界観説明
+- OSカタログ
+- OS詳細説明
+- ログイン導線
+- 新規登録導線
+- Webランチャー
+- Web遷移前判定
+- お知らせ
+- メンテナンス案内
+- 管理Web画面
+- 監査補助
+
+# ============================================================
+# 3. CivilizationOS が担うもの
+# ============================================================
+
+- 新規登録正本
+- 認証正本
+- Civilization ID 発行正本
+- ログイン後の文明シミュレーション世界本体
+
+# ============================================================
+# 4. 境界原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+- CivilizationOS は Portal Site の代替導線とはならない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 18
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/020.architecture/020004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DYNAMIC_NAV_ARCHITECTURE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AI HELPDESK AND DYNAMIC NAV ARCHITECTURE
+# ============================================================
+
+status: draft-additive
+layer: architecture
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+AIヘルプデスク入口と、
+DB 駆動アプリ階層表示の architecture を定義する。
+
+# ============================================================
+# 2. AIヘルプデスク入口
+# ============================================================
+
+Portal Site トップ画面には、
+全アプリ共通ヘルプデスクとして
+AIチャット入口を配置する。
+
+この入口は、
+特定アプリ専用ではなく、
+Civilization 全体のアプリ横断ヘルプデスク入口とする。
+
+役割:
+- アプリ案内
+- 利用導線案内
+- 問い合わせ一次受付
+- 適切なアプリや機能への誘導
+
+# ============================================================
+# 3. 文言表示アーキテクチャ
+# ============================================================
+
+Portal Site のページ文言は、
+静的ソース埋込を正本とせず、
+DB 配信文言を正本とする。
+
+対象:
+- トップ見出し
+- 説明文
+- CTA 文言
+- セクションタイトル
+- ガイド文
+- お知らせ関連文言
+- AIヘルプデスク関連文言
+
+# ============================================================
+# 4. アプリ階層表示アーキテクチャ
+# ============================================================
+
+アプリ / OS / 関連導線は、
+DB 管理された階層構造に基づいて動的表示する。
+
+階層表示の最低要素:
+- node_id
+- parent_node_id
+- display_name
+- node_type
+- sort_order
+- visibility
+- target_kind
+- target_code
+- icon_asset
+- status
+
+node_type の例:
+- group
+- os
+- application
+- external_help_entry
+- system_link
+
+# ============================================================
+# 5. 表示面の原則
+# ============================================================
+
+- トップ画面に AIヘルプデスク入口を表示する
+- 一覧系は DB から取得した階層構造で描画する
+- 表示可否は DB 管理と入口判定の両方を考慮する
+- 固定順ではなく sort_order に従う
+- 文言は locale 対応可能な構造を前提とする
+
+
+# ------------------------------------------------------------
+# SOURCE 19
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL INDEX
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+2. 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+3. 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+4. 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ドメイン要素
+- OSカード
+- 権限制御
+- データモデル
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 20
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/0300000_CIVILIZATION_PORTAL_SITE_MODEL_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MODEL OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の model layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+model layer は次を扱う。
+
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+- 030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+- 030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 21
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030000_CIVILIZATION_PORTAL_SITE_DOMAIN_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DOMAIN MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の主要ドメイン要素を定義する。
+
+# ============================================================
+# 2. 主要ドメイン要素
+# ============================================================
+
+- Portal Site
+- OS
+- OS Card
+- Launch Rule
+- Notice
+- Feature Slot
+- Maintenance
+- Copy
+- Asset
+- Personalized Launcher State
+- Admin Audit Log
+
+# ============================================================
+# 3. ドメイン原則
+# ============================================================
+
+- 固定OS定義と掲載状態を分離する。
+- 表示状態とWeb入口条件を分離する。
+- 管理監査と業務本文を分離する。
+- ランチャー個人化と認証正本を分離する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 22
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS CARD MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: os-card
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OSカードのモデルを定義する。
+
+# ============================================================
+# 2. OSカード定義
+# ============================================================
+
+OSカードは、
+Civilization Portal Site 上で各OSを紹介し、
+状態を示し、
+詳細確認またはWeb入口への遷移へ導く標準表示単位とする。
+
+# ============================================================
+# 3. 共通要素
+# ============================================================
+
+- OS名
+- 見出し
+- 一言説明
+- 主用途要約
+- 利用条件要約
+- 状態バッジ
+- 詳細導線
+- 遷移導線
+
+# ============================================================
+# 4. 利用箇所
+# ============================================================
+
+- OS一覧
+- OS詳細要約部
+- マイランチャー
+- 特集枠
+- 管理画面プレビュー
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 23
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: permission
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御モデルを定義する。
+
+# ============================================================
+# 2. 判定軸
+# ============================================================
+
+- login status
+- entity type
+- affiliation summary
+- account status
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- publish status
+- maintenance status
+
+# ============================================================
+# 3. 重要原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 24
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DATA MODEL
+# ============================================================
+
+status: canonical-design
+layer: model
+domain: data-model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の主要論理データモデルを定義する。
+
+# ============================================================
+# 2. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 3. 責務分離
+# ============================================================
+
+- 固定OS定義
+- ポータル掲載状態
+- Web入口条件
+- お知らせ
+- 文言
+- 画像
+- メンテナンス
+- ランチャー個人化
+- 管理監査
+
+# ============================================================
+# 4. 非保持原則
+# ============================================================
+
+Portal Site は、
+認証正本、所属正本、契約正本、
+各OS内部データを保持しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 25
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/030.model/030004_CIVILIZATION_PORTAL_SITE_DYNAMIC_COPY_AND_APP_TREE_MODEL.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DYNAMIC COPY AND APP TREE MODEL
+# ============================================================
+
+status: draft-additive
+layer: model
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+DB 駆動文言モデルと
+アプリ階層表示モデルを定義する。
+
+# ============================================================
+# 2. copy model
+# ============================================================
+
+文言モデルは、
+ページごとの固定文言ではなく、
+キー駆動で取得可能な構造とする。
+
+最低要素:
+- copy_key
+- locale_code
+- page_code
+- section_code
+- text_value
+- status
+- effective_from
+- effective_to
+
+copy_key の例:
+- top.hero.title
+- top.hero.description
+- top.ai_helpdesk.title
+- top.ai_helpdesk.description
+- os.list.title
+- guide.intro.body
+
+# ============================================================
+# 3. app tree model
+# ============================================================
+
+アプリ階層表示は、
+tree node モデルを正とする。
+
+最低要素:
+- node_id
+- parent_node_id
+- node_code
+- node_type
+- display_name
+- description
+- icon_asset_id
+- sort_order
+- visibility_status
+- publish_status
+- target_kind
+- target_code
+
+target_kind の例:
+- os
+- application
+- page
+- helpdesk
+- external
+
+# ============================================================
+# 4. AI helpdesk model
+# ============================================================
+
+AIヘルプデスク入口は、
+tree node とは別に、
+helpdesk entry として識別可能であることが望ましい。
+
+最低要素:
+- helpdesk_code
+- display_name
+- short_description
+- route_or_target
+- visibility_status
+- support_scope
+
+support_scope の例:
+- all_applications
+- selected_applications
+- os_specific
+
+# ============================================================
+# 5. モデル原則
+# ============================================================
+
+- 文言は copy_key 単位で取得する
+- アプリ表示は tree node 単位で取得する
+- AIヘルプデスク入口は全アプリ共通入口として識別可能にする
+- locale 対応を前提とする
+
+
+# ------------------------------------------------------------
+# SOURCE 26
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW INDEX
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+2. 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+3. 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+4. 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+5. 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- ログイン導線
+- OS遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 27
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/0500000_CIVILIZATION_PORTAL_SITE_FLOW_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FLOW OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の flow layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+flow layer は次を扱う。
+
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+- 050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+- 050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 28
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050000_CIVILIZATION_PORTAL_SITE_LOGIN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE LOGIN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: login-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site におけるログイン要求フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が対象OSへの遷移を要求する。
+2. Portal Site はログイン要否を確認する。
+3. 未ログインであれば CivilizationOS のWebログインページへ誘導する。
+4. 認証成功後、復帰文脈に基づき対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 29
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: os-launch-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、対象OS Web入口への遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. 利用者が「このOSへ進む」を押す。
+2. Portal Site は公開状態を確認する。
+3. Portal Site はメンテナンス状態を確認する。
+4. Portal Site はログイン要否を確認する。
+5. Portal Site は主体要約条件を確認する。
+6. Portal Site は遷移先URL有効性を確認する。
+7. 判定結果に応じて対象OS / ログイン / アクセス不可 / メンテナンス / エラーへ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 30
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUTH RETURN FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: auth-return-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証後復帰フローを定義する。
+
+# ============================================================
+# 2. 復帰文脈
+# ============================================================
+
+Portal Site は、少なくとも次を保持して復帰文脈を維持する。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. フロー
+# ============================================================
+
+1. 未ログインでOS遷移要求が発生する。
+2. Portal Site は復帰文脈を保存する。
+3. CivilizationOS ログイン完了後、Portal Site は復帰文脈を解決する。
+4. 原則として要求元の対象OS Web入口へ復帰させる。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 31
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050003_CIVILIZATION_PORTAL_SITE_ACCESS_DENIED_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ACCESS DENIED FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: access-denied-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、条件未達時のアクセス拒否フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が主体要約条件を判定する。
+2. 条件未達であればアクセス不可案内へ遷移する。
+3. 利用不可理由と代替導線を提示する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 32
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/050.flow/050004_CIVILIZATION_PORTAL_SITE_MAINTENANCE_FLOW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE FLOW
+# ============================================================
+
+status: canonical-design
+layer: flow
+domain: maintenance-flow
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、メンテナンス時の遷移フローを定義する。
+
+# ============================================================
+# 2. フロー
+# ============================================================
+
+1. Portal Site が対象OSまたはポータル自体のメンテナンス状態を判定する。
+2. メンテナンス中であれば対象OSへの遷移を停止する。
+3. メンテナンス案内へ遷移する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 33
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION INDEX
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+2. 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+3. 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+4. 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 認証参照
+- OS連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 34
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/0600000_CIVILIZATION_PORTAL_SITE_INTEGRATION_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の integration layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+integration layer は次を扱う。
+
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 35
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE CIVILIZATION AUTH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: civilization-auth
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と CivilizationOS 認証参照の統合原則を定義する。
+
+# ============================================================
+# 2. 参照対象
+# ============================================================
+
+- session summary
+- profile summary
+- login URL
+- signup URL
+- logout
+
+# ============================================================
+# 3. 統合原則
+# ============================================================
+
+- Portal Site は認証正本を持たない。
+- 認証は CivilizationOS のみが担う。
+- Portal Site は認証結果を参照して入口制御を行う。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 36
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LAUNCH INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: os-launch
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site と各OS Web入口との統合原則を定義する。
+
+# ============================================================
+# 2. 統合原則
+# ============================================================
+
+- Portal Site は許可済みWeb入口URLを用いる。
+- Portal Site は最小限の遷移文脈のみ渡す。
+- 各OSは自OS側でセッション再確認および内部権限確認を行う。
+- OS間の直接リンクは許可しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 37
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE RETURN CONTEXT INTEGRATION
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: return-context
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、認証復帰文脈の統合原則を定義する。
+
+# ============================================================
+# 2. 保持項目
+# ============================================================
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 3. 原則
+# ============================================================
+
+- 未ログイン遷移要求時は復帰文脈を保存する。
+- 認証後は復帰文脈を解決する。
+- 原則として元の対象OS Web入口へ戻す。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 38
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API CONTRACT SUMMARY
+# ============================================================
+
+status: canonical-design
+layer: integration
+domain: api-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site のAPI区分を概要レベルで定義する。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 原則
+# ============================================================
+
+遷移判定API は少なくとも次を返せる必要がある。
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 39
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/060.integration/060004_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_INTEGRATION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB DRIVEN COPY AND APP TREE INTEGRATION
+# ============================================================
+
+status: draft-additive
+layer: integration
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+DB 駆動文言表示と
+DB 駆動アプリ階層表示の integration を定義する。
+
+# ============================================================
+# 2. copy integration
+# ============================================================
+
+Portal Site は、
+ページ表示時に copy service を通じて
+対象 locale / page / section の文言を取得する。
+
+取得対象:
+- title
+- description
+- CTA text
+- help text
+- helpdesk section text
+
+# ============================================================
+# 3. app tree integration
+# ============================================================
+
+Portal Site は、
+navigation service または tree service を通じて
+公開対象 node を取得し、
+階層構造に従って描画する。
+
+取得条件:
+- locale
+- publish_status
+- visibility_status
+- parent_node
+- viewer context
+
+# ============================================================
+# 4. AI helpdesk integration
+# ============================================================
+
+トップ画面の AIヘルプデスク入口は、
+固定埋込ではなく、
+DB から取得した helpdesk entry または copy + target 情報で構成可能とする。
+
+# ============================================================
+# 5. integration 原則
+# ============================================================
+
+- copy は DB 正本取得とする
+- app tree は DB 正本取得とする
+- fallback は限定的に許可するが、固定文言常用は避ける
+- helpdesk 入口も DB 管理可能にする
+
+
+# ------------------------------------------------------------
+# SOURCE 40
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS INDEX
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+2. 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+3. 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+4. 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 管理運用
+- お知らせ
+- メンテ
+- 監査
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 41
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/0700000_CIVILIZATION_PORTAL_SITE_OPERATIONS_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の operations layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+operations layer は次を扱う。
+
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 42
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ADMIN OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site 管理Web画面の運用責務を定義する。
+
+# ============================================================
+# 2. 管理対象
+# ============================================================
+
+- OS掲載状態管理
+- OSカード文言管理
+- 並び順管理
+- 特集管理
+- お知らせ管理
+- メンテナンス管理
+- 文言管理
+- 画像管理
+- 監査ログ閲覧
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 43
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE NOTICE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: notice-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、お知らせ運用を定義する。
+
+# ============================================================
+# 2. 運用対象
+# ============================================================
+
+- 更新情報
+- 重要告知
+- メンテナンス情報
+- キャンペーン情報
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 44
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE MAINTENANCE OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: maintenance-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site および各OSに対するメンテナンス運用を定義する。
+
+# ============================================================
+# 2. 運用原則
+# ============================================================
+
+- メンテナンス中は対象OSへの遷移を停止する。
+- Portal Site はメンテナンス案内を表示する。
+- メンテナンス状態は運営管理で即時反映可能とする。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 45
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AUDIT OPERATIONS
+# ============================================================
+
+status: canonical-design
+layer: operations
+domain: audit-operations
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の監査運用を定義する。
+
+# ============================================================
+# 2. 監査対象
+# ============================================================
+
+- OS掲載変更
+- 特集変更
+- お知らせ変更
+- メンテナンス変更
+- 文言変更
+- 画像変更
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 46
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY INDEX
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+2. 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+3. 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+4. 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 47
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/0800000_CIVILIZATION_PORTAL_SITE_POLICY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE POLICY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の policy layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+policy layer は次を扱う。
+
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 48
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE ENTRY POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口原則を定義する。
+
+# ============================================================
+# 2. 入口原則
+# ============================================================
+
+- 各OSへのリンクは Civilization Portal Site のみが保持する。
+- すべてのOS入口は Civilization Portal Site を経由しなければならない。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 49
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE OS LINK POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: os-link-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、OS間リンク原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- OS間の直接リンクは禁止する。
+- 各OSから Civilization Portal Site への戻りは許可する。
+- 認証切れ時の CivilizationOS ログインページへの遷移は条件付きで許可する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 50
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PERMISSION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: permission-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の入口権限制御原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- 表示可否と遷移可否は分離する。
+- Portal Site は入口前段判定のみを行う。
+- 各OS内部の詳細権限は各OSが別途判定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 51
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PUBLIC INFORMATION POLICY
+# ============================================================
+
+status: canonical-design
+layer: policy
+domain: public-information-policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の公開情報原則を定義する。
+
+# ============================================================
+# 2. 原則
+# ============================================================
+
+- Portal Site は Civilization 全体の公開情報を提供する。
+- 公開情報は各OSの公式Web入口判断を支援する。
+- Portal Site は公開案内と入口導線に責務を限定する。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 52
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/080.policy/080004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DB_DISPLAY_POLICY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AI HELPDESK AND DB DISPLAY POLICY
+# ============================================================
+
+status: draft-additive
+layer: policy
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+AIヘルプデスク入口と
+DB 駆動表示に関する policy を定義する。
+
+# ============================================================
+# 2. AI helpdesk policy
+# ============================================================
+
+- AIチャット入口は全アプリ共通ヘルプデスク入口とする
+- トップ画面に表示する
+- 特定アプリ専用入口として扱わない
+- 誘導先は将来の全体ヘルプ戦略と整合させる
+
+# ============================================================
+# 3. DB copy policy
+# ============================================================
+
+- ページ文言は DB から取得して表示する
+- 固定文言は開発時 fallback に限定する
+- locale ごとの管理を可能にする
+- 表示文言変更はコード修正なしで反映可能であることが望ましい
+
+# ============================================================
+# 4. DB app tree policy
+# ============================================================
+
+- アプリ / OS 一覧は DB 駆動表示を正とする
+- 階層表示を基本とする
+- 表示順・可視性・公開状態は DB 管理を前提とする
+- 動的表示であっても入口判定原則は維持する
+
+
+# ------------------------------------------------------------
+# SOURCE 53
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY INDEX
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 推奨読順
+# ============================================================
+
+1. 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+2. 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+3. 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+4. 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+5. 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 2. 論点
+# ============================================================
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 54
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/1200000_CIVILIZATION_PORTAL_SITE_IMPLEMENTATION_READY_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE IMPLEMENTATION READY OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Civilization Portal Site の implementation-ready layer 概要を定義する。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+implementation-ready layer は次を扱う。
+
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 3. 主要文書
+# ============================================================
+
+- 120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+- 120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+- 120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+- 120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+- 120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本レイヤ文書を読む際の上位正本は次の通りとする。
+
+- ../../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+原則として、
+レイヤ概要を確認した後に必要な個別文書を読み、
+必要に応じて統合正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 55
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SCREEN FIELD SPEC
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: screen-field-spec
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、各Webページの項目定義の参照入口である。
+
+# ============================================================
+# 2. 定義対象
+# ============================================================
+
+- 公開Webページ
+- 認証導線Webページ
+- ログイン後Webページ
+- 管理Web画面
+
+# ============================================================
+# 3. 画面定義要素
+# ============================================================
+
+- 画面目的
+- 表示項目
+- 入力項目
+- 操作項目
+- 状態別表示
+- 利用API
+- 主な遷移
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 56
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE API EXACT CONTRACT
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: api-exact-contract
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site API の exact contract 参照文書である。
+
+# ============================================================
+# 2. API区分
+# ============================================================
+
+- 公開情報API
+- CivilizationOS 認証参照API
+- 遷移判定API
+- ランチャーAPI
+- 管理API
+
+# ============================================================
+# 3. 遷移判定API 要件
+# ============================================================
+
+- 遷移可能か
+- ログインが必要か
+- 拒否理由
+- メンテ理由
+- 次に取るべき行動
+- return context token
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 57
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB LOGICAL SCHEMA
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-logical-schema
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site の論理schema概要を定義する。
+
+# ============================================================
+# 2. 論理schema
+# ============================================================
+
+Portal Site の論理 schema は `portal` を採用する。
+
+# ============================================================
+# 3. 主要論理テーブル
+# ============================================================
+
+- portal.os_category_master
+- portal.segment_master
+- portal.os_master
+- portal.asset
+- portal.os_listing
+- portal.os_launch_rule
+- portal.notice
+- portal.feature_slot
+- portal.copy
+- portal.maintenance
+- portal.personalized_launcher_state
+- portal.admin_audit_log
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 58
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB PHYSICAL GUIDELINE
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: db-physical-guideline
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の物理方針を定義する。
+
+# ============================================================
+# 2. 方針
+# ============================================================
+
+- schema は `portal`
+- 固定コード系は text 主キー
+- 運用レコード系は uuid 主キー
+- 時刻列は timestamptz
+- 状態列は text + check constraint
+- 単純複数コードは text[]
+- 構造付き可変情報は jsonb
+- 主要テーブルに created_at / updated_at を持つ
+- 管理監査を保持する
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 59
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE EXACT COLUMN DEFINITION
+# ============================================================
+
+status: canonical-design
+layer: implementation-ready
+domain: exact-column-definition
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、Portal Site DB の exact column 定義参照文書である。
+
+# ============================================================
+# 2. 対象
+# ============================================================
+
+- category master
+- segment master
+- os master
+- asset
+- os listing
+- os launch rule
+- notice
+- feature slot
+- copy
+- maintenance
+- personalized launcher state
+- admin audit log
+
+# ============================================================
+# 3. 現在状態
+# ============================================================
+
+本設計は schema-definition level では implementation-ready である。  
+ただし、実装自体はまだ開始しない。
+
+# ============================================================
+# 99. 上位参照
+# ============================================================
+
+本個別文書を読む際の上位参照は次の通りとする。
+
+root:
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+layer:
+- 同一レイヤの *_OVERVIEW.md
+- 同一レイヤの *_INDEX.md
+
+原則として、
+個別文書で詳細を確認し、
+必要に応じて同一レイヤの overview / index へ戻り、
+さらに必要に応じてルート正本へ戻る。
+
+
+# ------------------------------------------------------------
+# SOURCE 60
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120005_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_EXACT_SPEC.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DB DRIVEN COPY AND APP TREE EXACT SPEC
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+DB 駆動文言表示と
+DB 駆動アプリ階層表示に関する
+exact spec の入口文書である。
+
+# ============================================================
+# 2. copy exact minimum
+# ============================================================
+
+minimum_fields:
+- copy_key
+- locale_code
+- page_code
+- section_code
+- text_value
+- status
+- effective_from
+- effective_to
+
+# ============================================================
+# 3. app tree exact minimum
+# ============================================================
+
+minimum_fields:
+- node_id
+- parent_node_id
+- node_code
+- node_type
+- display_name
+- description
+- sort_order
+- visibility_status
+- publish_status
+- target_kind
+- target_code
+
+# ============================================================
+# 4. helpdesk exact minimum
+# ============================================================
+
+minimum_fields:
+- helpdesk_code
+- display_name
+- short_description
+- route_or_target
+- visibility_status
+- support_scope
+
+# ============================================================
+# 5. rendering rules
+# ============================================================
+
+- トップ画面は AIヘルプデスク入口を表示する
+- ページ文言は copy_key から取得する
+- 一覧表示は tree node を親子関係で描画する
+- 表示順は sort_order を使う
+
+
+# ------------------------------------------------------------
+# SOURCE 61
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120006_CX22073JW_KNOWLEDGE_SCHEMA_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# CX22073JW KNOWLEDGE SCHEMA EXACT COLUMN DEFINITION
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization 全体の共通知識基盤として扱う
+CX22073JW schema の
+最小中核10テーブルについて、
+exact column 定義を固定する文書である。
+
+本書の対象は次の通りとする。
+
+- domain_master
+- space_master
+- scope_master
+- article
+- chunk
+- faq
+- caller_master
+- caller_scope_binding
+- route_policy
+- disclaimer_master
+
+# ============================================================
+# 2. 共通原則
+# ============================================================
+
+- schema 名は CX22073JW とする
+- master 系の code は text を使う
+- 運用レコード主キーは uuid を使う
+- status / visibility / publish などは text + check 前提とする
+- created_at / updated_at を原則必須とする
+- exact DDL 化は次工程で行う
+
+# ============================================================
+# 3. CX22073JW.domain_master
+# ============================================================
+
+table_name:
+- CX22073JW.domain_master
+
+purpose:
+知識の最上位大分類を定義する。
+
+primary_key:
+- domain_id uuid
+
+columns:
+- domain_id uuid not null
+- domain_code text not null
+- display_name text not null
+- description text null
+- sort_order integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+unique_candidates:
+- domain_code
+
+domain_code examples:
+- application
+- os
+- certification
+- language
+- academic
+- real_history
+- civilization_history
+- legal
+- medical
+- general_support
+
+# ============================================================
+# 4. CX22073JW.space_master
+# ============================================================
+
+table_name:
+- CX22073JW.space_master
+
+purpose:
+検索・回答対象となる知識空間を定義する。
+
+primary_key:
+- space_id uuid
+
+columns:
+- space_id uuid not null
+- domain_id uuid not null
+- space_code text not null
+- display_name text not null
+- description text null
+- locale_code text null
+- default_answer_style_profile_code text null
+- default_safety_policy_profile_code text null
+- publish_status text not null
+- status text not null
+- sort_order integer not null default 0
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- domain_id -> CX22073JW.domain_master.domain_id
+
+unique_candidates:
+- space_code
+
+space_code examples:
+- civilization_portal_support
+- civilization_os_support
+- persona_os_support
+- business_os_support
+- retail_marketing_certification
+- english_learning
+- world_history_real
+- civilization_history_foundation
+- legal_general_support
+- medical_general_support
+
+# ============================================================
+# 5. CX22073JW.scope_master
+# ============================================================
+
+table_name:
+- CX22073JW.scope_master
+
+purpose:
+呼び出し時に指定される知識参照範囲を定義する。
+
+primary_key:
+- scope_id uuid
+
+columns:
+- scope_id uuid not null
+- space_id uuid not null
+- scope_code text not null
+- display_name text not null
+- description text null
+- scope_level text not null
+- query_hint text null
+- is_default boolean not null default false
+- publish_status text not null
+- status text not null
+- sort_order integer not null default 0
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- space_id -> CX22073JW.space_master.space_id
+
+unique_candidates:
+- scope_code
+
+scope_level examples:
+- full
+- summary_only
+- faq_only
+- beginner
+- advanced
+- restricted
+
+scope_code examples:
+- portal_general_support
+- application_directory_support
+- persona_os_basic
+- business_os_billing_only
+- english_beginner
+- world_history_modern
+- civilization_history_origin
+- legal_general_faq_only
+
+# ============================================================
+# 6. CX22073JW.article
+# ============================================================
+
+table_name:
+- CX22073JW.article
+
+purpose:
+知識記事の正本を保持する。
+
+primary_key:
+- article_id uuid
+
+columns:
+- article_id uuid not null
+- space_id uuid not null
+- article_code text not null
+- article_type text not null
+- title text not null
+- summary text null
+- body_markdown text not null
+- locale_code text null
+- source_kind text null
+- trust_level text null
+- publish_status text not null
+- visibility_status text not null
+- effective_from timestamptz null
+- effective_to timestamptz null
+- version_no integer not null default 1
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- space_id -> CX22073JW.space_master.space_id
+
+unique_candidates:
+- article_code
+
+article_type examples:
+- guide
+- concept
+- faq_source
+- troubleshooting
+- glossary
+- legal_explanation
+- medical_guidance
+- historical_article
+- academic_note
+
+trust_level examples:
+- canonical
+- reviewed
+- draft
+- reference_only
+
+# ============================================================
+# 7. CX22073JW.chunk
+# ============================================================
+
+table_name:
+- CX22073JW.chunk
+
+purpose:
+AI検索 / RAG 用の分割本文を保持する。
+
+primary_key:
+- chunk_id uuid
+
+columns:
+- chunk_id uuid not null
+- article_id uuid not null
+- chunk_no integer not null
+- chunk_title text null
+- chunk_text text not null
+- chunk_summary text null
+- token_estimate integer null
+- embedding_status text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- article_id -> CX22073JW.article.article_id
+
+unique_candidates:
+- (article_id, chunk_no)
+
+embedding_status examples:
+- pending
+- ready
+- failed
+- skipped
+
+# ============================================================
+# 8. CX22073JW.faq
+# ============================================================
+
+table_name:
+- CX22073JW.faq
+
+purpose:
+FAQ の質問・短答・優先表示情報を保持する。
+
+primary_key:
+- faq_id uuid
+
+columns:
+- faq_id uuid not null
+- space_id uuid not null
+- faq_code text not null
+- question_text text not null
+- short_answer_text text not null
+- long_answer_article_id uuid null
+- locale_code text null
+- priority_no integer not null default 0
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- space_id -> CX22073JW.space_master.space_id
+- long_answer_article_id -> CX22073JW.article.article_id
+
+unique_candidates:
+- faq_code
+
+# ============================================================
+# 9. CX22073JW.caller_master
+# ============================================================
+
+table_name:
+- CX22073JW.caller_master
+
+purpose:
+知識基盤を呼び出す主体を定義する。
+
+primary_key:
+- caller_id uuid
+
+columns:
+- caller_id uuid not null
+- caller_code text not null
+- caller_type text not null
+- display_name text not null
+- description text null
+- owner_domain_code text null
+- owner_target_code text null
+- default_space_code text null
+- default_scope_code text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+unique_candidates:
+- caller_code
+
+caller_type examples:
+- portal
+- os
+- application
+- consultation_app
+- internal_tool
+
+caller_code examples:
+- portal_site_top
+- civilization_os
+- persona_os
+- business_os
+- legal_consult_app
+- medical_consult_app
+
+# ============================================================
+# 10. CX22073JW.caller_scope_binding
+# ============================================================
+
+table_name:
+- CX22073JW.caller_scope_binding
+
+purpose:
+caller が利用可能な scope を定義する。
+
+primary_key:
+- caller_scope_binding_id uuid
+
+columns:
+- caller_scope_binding_id uuid not null
+- caller_id uuid not null
+- scope_id uuid not null
+- is_default boolean not null default false
+- priority_no integer not null default 0
+- access_mode text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- caller_id -> CX22073JW.caller_master.caller_id
+- scope_id -> CX22073JW.scope_master.scope_id
+
+unique_candidates:
+- (caller_id, scope_id)
+
+access_mode examples:
+- allowed
+- preferred
+- fallback_only
+- blocked
+
+# ============================================================
+# 11. CX22073JW.route_policy
+# ============================================================
+
+table_name:
+- CX22073JW.route_policy
+
+purpose:
+caller ごとの知識振り分け / 回答方針を定義する。
+
+primary_key:
+- route_policy_id uuid
+
+columns:
+- route_policy_id uuid not null
+- route_policy_code text not null
+- caller_id uuid not null
+- primary_scope_id uuid null
+- fallback_scope_id uuid null
+- answer_style_profile_code text null
+- safety_policy_profile_code text null
+- disclaimer_code text null
+- escalation_required boolean not null default false
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- caller_id -> CX22073JW.caller_master.caller_id
+- primary_scope_id -> CX22073JW.scope_master.scope_id
+- fallback_scope_id -> CX22073JW.scope_master.scope_id
+
+unique_candidates:
+- route_policy_code
+- caller_id
+
+# ============================================================
+# 12. CX22073JW.disclaimer_master
+# ============================================================
+
+table_name:
+- CX22073JW.disclaimer_master
+
+purpose:
+法務 / 医療 / 一般サポート等で表示する注意文を定義する。
+
+primary_key:
+- disclaimer_id uuid
+
+columns:
+- disclaimer_id uuid not null
+- disclaimer_code text not null
+- display_name text not null
+- body_text text not null
+- locale_code text null
+- disclaimer_type text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+unique_candidates:
+- disclaimer_code
+
+disclaimer_type examples:
+- legal
+- medical
+- study
+- general_support
+- historical_reference
+
+# ============================================================
+# 13. 初期関係整理
+# ============================================================
+
+relations:
+- domain_master 1 --- n space_master
+- space_master 1 --- n scope_master
+- space_master 1 --- n article
+- article 1 --- n chunk
+- space_master 1 --- n faq
+- caller_master 1 --- n caller_scope_binding
+- scope_master 1 --- n caller_scope_binding
+- caller_master 1 --- 1 route_policy
+- scope_master 1 --- n route_policy
+- disclaimer_master 1 --- n route_policy
+
+# ============================================================
+# 14. 最小初期データ方向
+# ============================================================
+
+minimum_domains:
+- application
+- os
+- certification
+- language
+- academic
+- real_history
+- civilization_history
+- legal
+- medical
+- general_support
+
+minimum_callers:
+- portal_site_top
+- civilization_os
+- persona_os
+- business_os
+
+# ============================================================
+# 15. 次工程
+# ============================================================
+
+次工程候補:
+- DDL exact 化
+- sample seed 設計
+- portal schema との接続設計
+- answer_style_profile / safety_policy_profile の追加設計
+
+
+# ------------------------------------------------------------
+# SOURCE 62
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120007_CX22073JW_KNOWLEDGE_SCHEMA_FULL_TABLE_ADOPTION.md
+
+# ============================================================
+# CX22073JW KNOWLEDGE SCHEMA FULL TABLE ADOPTION
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+CX22073JW schema を Civilization 全体の共通知識基盤として
+フル採用する前提で、
+採用対象テーブル一覧を固定する文書である。
+
+# ============================================================
+# 2. フル採用方針
+# ============================================================
+
+CX22073JW は次を保持する。
+
+- アプリ知識
+- OS知識
+- 資格知識
+- 言語知識
+- 学問知識
+- 現実の歴史
+- Civilization の歴史
+- 法律知識
+- 医療知識
+- FAQ
+- 学習導線
+- 関係知識
+- 出典 / 監修 / 信頼性
+- 回答スタイル
+- 検索戦略
+- 改善ログ
+
+# ============================================================
+# 3. 採用テーブル一覧
+# ============================================================
+
+## 3.1 中核
+- domain_master
+- space_master
+- scope_master
+- article
+- chunk
+- faq
+- caller_master
+- caller_scope_binding
+- route_policy
+- disclaimer_master
+
+## 3.2 関係知識
+- entity_master
+- entity_alias
+- relation_master
+- article_entity_binding
+
+## 3.3 学問分類
+- discipline_master
+- topic_master
+- article_discipline_binding
+- article_topic_binding
+
+## 3.4 難易度 / 対象者
+- difficulty_profile_master
+- audience_profile_master
+- article_profile_binding
+
+## 3.5 要約
+- space_summary
+- scope_summary
+- topic_summary
+
+## 3.6 学習導線
+- prerequisite_relation
+- learning_path
+- learning_path_item
+
+## 3.7 出典 / 監修
+- source_master
+- article_source
+- review_status_master
+- article_review_log
+
+## 3.8 時系列 / 歴史
+- timeline_event
+- event_relation
+- event_entity_binding
+
+## 3.9 検索戦略
+- retrieval_profile
+- scope_retrieval_binding
+
+## 3.10 回答スタイル
+- answer_style_profile
+- response_template
+- scope_style_binding
+
+## 3.11 改善 / 分析
+- session_log
+- answer_source_log
+- question_pattern
+- knowledge_gap_log
+
+# ============================================================
+# 4. Portal との関係
+# ============================================================
+
+portal schema:
+- 入口
+- 文言
+- 階層表示
+- helpdesk 入口
+- ページ構成
+
+CX22073JW schema:
+- 知識本文
+- FAQ
+- chunk
+- scope / routing
+- entity / relation
+- learning / history / academic / legal / medical knowledge
+
+# ============================================================
+# 5. 原則
+# ============================================================
+
+- 呼び出し元は caller_code を持つ
+- 参照範囲は scope 指定で決める
+- Portal は入口と caller / scope 指定を担う
+- CX22073JW は知識本体を担う
+- 法律 / 医療は disclaimer / policy / style を分ける
+
+
+# ------------------------------------------------------------
+# SOURCE 63
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120008_CX22073JW_KNOWLEDGE_SCHEMA_FULL_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# CX22073JW KNOWLEDGE SCHEMA FULL EXACT COLUMN DEFINITION
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+CX22073JW schema のフル採用版テーブル群について、
+exact column 定義を固定する文書である。
+
+# ============================================================
+# 2. 共通原則
+# ============================================================
+
+- 主キーは原則 uuid
+- *_code は原則 text
+- status / publish_status / visibility_status は text
+- sort_order / priority_no は integer
+- created_at / updated_at は timestamptz not null
+- 必要に応じて effective_from / effective_to を使う
+
+# ============================================================
+# 3. 中核テーブル
+# ============================================================
+
+## 3.1 CX22073JW.domain_master
+- domain_id uuid not null
+- domain_code text not null
+- display_name text not null
+- description text null
+- sort_order integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- domain_code
+
+## 3.2 CX22073JW.space_master
+- space_id uuid not null
+- domain_id uuid not null
+- space_code text not null
+- display_name text not null
+- description text null
+- locale_code text null
+- default_answer_style_profile_code text null
+- default_safety_policy_profile_code text null
+- publish_status text not null
+- status text not null
+- sort_order integer not null default 0
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- domain_id -> domain_master.domain_id
+unique:
+- space_code
+
+## 3.3 CX22073JW.scope_master
+- scope_id uuid not null
+- space_id uuid not null
+- scope_code text not null
+- display_name text not null
+- description text null
+- scope_level text not null
+- query_hint text null
+- is_default boolean not null default false
+- publish_status text not null
+- status text not null
+- sort_order integer not null default 0
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- space_id -> space_master.space_id
+unique:
+- scope_code
+
+## 3.4 CX22073JW.article
+- article_id uuid not null
+- space_id uuid not null
+- article_code text not null
+- article_type text not null
+- title text not null
+- summary text null
+- body_markdown text not null
+- locale_code text null
+- source_kind text null
+- trust_level text null
+- publish_status text not null
+- visibility_status text not null
+- effective_from timestamptz null
+- effective_to timestamptz null
+- version_no integer not null default 1
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- space_id -> space_master.space_id
+unique:
+- article_code
+
+## 3.5 CX22073JW.chunk
+- chunk_id uuid not null
+- article_id uuid not null
+- chunk_no integer not null
+- chunk_title text null
+- chunk_text text not null
+- chunk_summary text null
+- token_estimate integer null
+- embedding_status text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- article_id -> article.article_id
+unique:
+- (article_id, chunk_no)
+
+## 3.6 CX22073JW.faq
+- faq_id uuid not null
+- space_id uuid not null
+- faq_code text not null
+- question_text text not null
+- short_answer_text text not null
+- long_answer_article_id uuid null
+- locale_code text null
+- priority_no integer not null default 0
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- space_id -> space_master.space_id
+- long_answer_article_id -> article.article_id
+unique:
+- faq_code
+
+## 3.7 CX22073JW.caller_master
+- caller_id uuid not null
+- caller_code text not null
+- caller_type text not null
+- display_name text not null
+- description text null
+- owner_domain_code text null
+- owner_target_code text null
+- default_space_code text null
+- default_scope_code text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- caller_code
+
+## 3.8 CX22073JW.caller_scope_binding
+- caller_scope_binding_id uuid not null
+- caller_id uuid not null
+- scope_id uuid not null
+- is_default boolean not null default false
+- priority_no integer not null default 0
+- access_mode text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- caller_id -> caller_master.caller_id
+- scope_id -> scope_master.scope_id
+unique:
+- (caller_id, scope_id)
+
+## 3.9 CX22073JW.route_policy
+- route_policy_id uuid not null
+- route_policy_code text not null
+- caller_id uuid not null
+- primary_scope_id uuid null
+- fallback_scope_id uuid null
+- answer_style_profile_code text null
+- safety_policy_profile_code text null
+- disclaimer_code text null
+- escalation_required boolean not null default false
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- caller_id -> caller_master.caller_id
+- primary_scope_id -> scope_master.scope_id
+- fallback_scope_id -> scope_master.scope_id
+unique:
+- route_policy_code
+- caller_id
+
+## 3.10 CX22073JW.disclaimer_master
+- disclaimer_id uuid not null
+- disclaimer_code text not null
+- display_name text not null
+- body_text text not null
+- locale_code text null
+- disclaimer_type text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- disclaimer_code
+
+# ============================================================
+# 4. 関係知識
+# ============================================================
+
+## 4.1 CX22073JW.entity_master
+- entity_id uuid not null
+- entity_code text not null
+- entity_type text not null
+- display_name text not null
+- summary text null
+- canonical_article_id uuid null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- canonical_article_id -> article.article_id
+unique:
+- entity_code
+
+## 4.2 CX22073JW.entity_alias
+- entity_alias_id uuid not null
+- entity_id uuid not null
+- alias_text text not null
+- locale_code text null
+- is_primary boolean not null default false
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- entity_id -> entity_master.entity_id
+
+## 4.3 CX22073JW.relation_master
+- relation_id uuid not null
+- relation_code text not null
+- from_entity_id uuid not null
+- to_entity_id uuid not null
+- relation_type text not null
+- description text null
+- weight numeric null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- from_entity_id -> entity_master.entity_id
+- to_entity_id -> entity_master.entity_id
+unique:
+- relation_code
+
+## 4.4 CX22073JW.article_entity_binding
+- article_entity_binding_id uuid not null
+- article_id uuid not null
+- entity_id uuid not null
+- binding_role text not null
+- sort_order integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- article_id -> article.article_id
+- entity_id -> entity_master.entity_id
+unique:
+- (article_id, entity_id, binding_role)
+
+# ============================================================
+# 5. 学問分類
+# ============================================================
+
+## 5.1 CX22073JW.discipline_master
+- discipline_id uuid not null
+- discipline_code text not null
+- display_name text not null
+- description text null
+- parent_discipline_id uuid null
+- sort_order integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- parent_discipline_id -> discipline_master.discipline_id
+unique:
+- discipline_code
+
+## 5.2 CX22073JW.topic_master
+- topic_id uuid not null
+- discipline_id uuid not null
+- topic_code text not null
+- display_name text not null
+- description text null
+- parent_topic_id uuid null
+- sort_order integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- discipline_id -> discipline_master.discipline_id
+- parent_topic_id -> topic_master.topic_id
+unique:
+- topic_code
+
+## 5.3 CX22073JW.article_discipline_binding
+- article_discipline_binding_id uuid not null
+- article_id uuid not null
+- discipline_id uuid not null
+- binding_role text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- article_id -> article.article_id
+- discipline_id -> discipline_master.discipline_id
+unique:
+- (article_id, discipline_id, binding_role)
+
+## 5.4 CX22073JW.article_topic_binding
+- article_topic_binding_id uuid not null
+- article_id uuid not null
+- topic_id uuid not null
+- binding_role text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- article_id -> article.article_id
+- topic_id -> topic_master.topic_id
+unique:
+- (article_id, topic_id, binding_role)
+
+# ============================================================
+# 6. 難易度 / 対象者
+# ============================================================
+
+## 6.1 CX22073JW.difficulty_profile_master
+- difficulty_profile_id uuid not null
+- difficulty_code text not null
+- display_name text not null
+- description text null
+- level_no integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- difficulty_code
+
+## 6.2 CX22073JW.audience_profile_master
+- audience_profile_id uuid not null
+- audience_code text not null
+- display_name text not null
+- description text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- audience_code
+
+## 6.3 CX22073JW.article_profile_binding
+- article_profile_binding_id uuid not null
+- article_id uuid not null
+- difficulty_profile_id uuid null
+- audience_profile_id uuid null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- article_id -> article.article_id
+- difficulty_profile_id -> difficulty_profile_master.difficulty_profile_id
+- audience_profile_id -> audience_profile_master.audience_profile_id
+
+# ============================================================
+# 7. 要約
+# ============================================================
+
+## 7.1 CX22073JW.space_summary
+- space_summary_id uuid not null
+- space_id uuid not null
+- summary_title text not null
+- summary_text text not null
+- locale_code text null
+- summary_level text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- space_id -> space_master.space_id
+
+## 7.2 CX22073JW.scope_summary
+- scope_summary_id uuid not null
+- scope_id uuid not null
+- summary_title text not null
+- summary_text text not null
+- locale_code text null
+- summary_level text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- scope_id -> scope_master.scope_id
+
+## 7.3 CX22073JW.topic_summary
+- topic_summary_id uuid not null
+- topic_id uuid not null
+- summary_title text not null
+- summary_text text not null
+- locale_code text null
+- summary_level text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- topic_id -> topic_master.topic_id
+
+# ============================================================
+# 8. 学習導線
+# ============================================================
+
+## 8.1 CX22073JW.prerequisite_relation
+- prerequisite_relation_id uuid not null
+- from_topic_id uuid null
+- from_article_id uuid null
+- required_topic_id uuid null
+- required_article_id uuid null
+- relation_strength text not null
+- description text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- from_topic_id -> topic_master.topic_id
+- from_article_id -> article.article_id
+- required_topic_id -> topic_master.topic_id
+- required_article_id -> article.article_id
+
+## 8.2 CX22073JW.learning_path
+- learning_path_id uuid not null
+- learning_path_code text not null
+- display_name text not null
+- description text null
+- scope_id uuid null
+- audience_profile_id uuid null
+- difficulty_profile_id uuid null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- scope_id -> scope_master.scope_id
+- audience_profile_id -> audience_profile_master.audience_profile_id
+- difficulty_profile_id -> difficulty_profile_master.difficulty_profile_id
+unique:
+- learning_path_code
+
+## 8.3 CX22073JW.learning_path_item
+- learning_path_item_id uuid not null
+- learning_path_id uuid not null
+- step_no integer not null
+- item_type text not null
+- article_id uuid null
+- topic_id uuid null
+- note_text text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- learning_path_id -> learning_path.learning_path_id
+- article_id -> article.article_id
+- topic_id -> topic_master.topic_id
+unique:
+- (learning_path_id, step_no)
+
+# ============================================================
+# 9. 出典 / 監修
+# ============================================================
+
+## 9.1 CX22073JW.source_master
+- source_id uuid not null
+- source_code text not null
+- source_name text not null
+- source_type text not null
+- authority_level text null
+- description text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- source_code
+
+## 9.2 CX22073JW.article_source
+- article_source_id uuid not null
+- article_id uuid not null
+- source_id uuid not null
+- citation_text text null
+- source_url text null
+- evidence_level text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- article_id -> article.article_id
+- source_id -> source_master.source_id
+
+## 9.3 CX22073JW.review_status_master
+- review_status_id uuid not null
+- review_status_code text not null
+- display_name text not null
+- description text null
+- sort_order integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- review_status_code
+
+## 9.4 CX22073JW.article_review_log
+- article_review_log_id uuid not null
+- article_id uuid not null
+- review_status_id uuid not null
+- reviewer_name text null
+- review_note text null
+- reviewed_at timestamptz not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- article_id -> article.article_id
+- review_status_id -> review_status_master.review_status_id
+
+# ============================================================
+# 10. 時系列 / 歴史
+# ============================================================
+
+## 10.1 CX22073JW.timeline_event
+- timeline_event_id uuid not null
+- event_code text not null
+- domain_id uuid null
+- display_name text not null
+- summary text null
+- event_start_at timestamptz null
+- event_end_at timestamptz null
+- chronology_label text null
+- locale_code text null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- domain_id -> domain_master.domain_id
+unique:
+- event_code
+
+## 10.2 CX22073JW.event_relation
+- event_relation_id uuid not null
+- from_event_id uuid not null
+- to_event_id uuid not null
+- relation_type text not null
+- description text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- from_event_id -> timeline_event.timeline_event_id
+- to_event_id -> timeline_event.timeline_event_id
+
+## 10.3 CX22073JW.event_entity_binding
+- event_entity_binding_id uuid not null
+- timeline_event_id uuid not null
+- entity_id uuid not null
+- binding_role text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- timeline_event_id -> timeline_event.timeline_event_id
+- entity_id -> entity_master.entity_id
+
+# ============================================================
+# 11. 検索戦略
+# ============================================================
+
+## 11.1 CX22073JW.retrieval_profile
+- retrieval_profile_id uuid not null
+- retrieval_profile_code text not null
+- display_name text not null
+- description text null
+- retrieval_mode text not null
+- config_json jsonb null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- retrieval_profile_code
+
+## 11.2 CX22073JW.scope_retrieval_binding
+- scope_retrieval_binding_id uuid not null
+- scope_id uuid not null
+- retrieval_profile_id uuid not null
+- priority_no integer not null default 0
+- is_default boolean not null default false
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- scope_id -> scope_master.scope_id
+- retrieval_profile_id -> retrieval_profile.retrieval_profile_id
+unique:
+- (scope_id, retrieval_profile_id)
+
+# ============================================================
+# 12. 回答スタイル
+# ============================================================
+
+## 12.1 CX22073JW.answer_style_profile
+- answer_style_profile_id uuid not null
+- answer_style_profile_code text not null
+- display_name text not null
+- description text null
+- style_json jsonb null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+unique:
+- answer_style_profile_code
+
+## 12.2 CX22073JW.response_template
+- response_template_id uuid not null
+- response_template_code text not null
+- answer_style_profile_id uuid null
+- template_title text not null
+- template_body text not null
+- locale_code text null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- answer_style_profile_id -> answer_style_profile.answer_style_profile_id
+unique:
+- response_template_code
+
+## 12.3 CX22073JW.scope_style_binding
+- scope_style_binding_id uuid not null
+- scope_id uuid not null
+- answer_style_profile_id uuid not null
+- priority_no integer not null default 0
+- is_default boolean not null default false
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- scope_id -> scope_master.scope_id
+- answer_style_profile_id -> answer_style_profile.answer_style_profile_id
+unique:
+- (scope_id, answer_style_profile_id)
+
+# ============================================================
+# 13. 改善 / 分析
+# ============================================================
+
+## 13.1 CX22073JW.session_log
+- session_log_id uuid not null
+- caller_id uuid null
+- requested_scope_id uuid null
+- actual_scope_id uuid null
+- locale_code text null
+- started_at timestamptz not null
+- ended_at timestamptz null
+- result_status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- caller_id -> caller_master.caller_id
+- requested_scope_id -> scope_master.scope_id
+- actual_scope_id -> scope_master.scope_id
+
+## 13.2 CX22073JW.answer_source_log
+- answer_source_log_id uuid not null
+- session_log_id uuid not null
+- article_id uuid null
+- chunk_id uuid null
+- faq_id uuid null
+- source_rank integer not null default 0
+- usage_role text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- session_log_id -> session_log.session_log_id
+- article_id -> article.article_id
+- chunk_id -> chunk.chunk_id
+- faq_id -> faq.faq_id
+
+## 13.3 CX22073JW.question_pattern
+- question_pattern_id uuid not null
+- pattern_code text not null
+- display_name text not null
+- canonical_question text not null
+- scope_id uuid null
+- frequency_no integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- scope_id -> scope_master.scope_id
+unique:
+- pattern_code
+
+## 13.4 CX22073JW.knowledge_gap_log
+- knowledge_gap_log_id uuid not null
+- session_log_id uuid null
+- scope_id uuid null
+- gap_type text not null
+- user_question_text text not null
+- gap_note text null
+- resolution_status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+fk:
+- session_log_id -> session_log.session_log_id
+- scope_id -> scope_master.scope_id
+
+# ============================================================
+# 14. 次工程
+# ============================================================
+
+次工程候補:
+- full DDL 化
+- seed 設計
+- portal caller / scope 初期値設計
+- legal / medical / academic / history 初期値設計
+
+
+# ------------------------------------------------------------
+# SOURCE 64
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120009_CX22073JW_AND_SCENARIO_SCHEMA_RESPONSIBILITY_AND_TABLE_DESIGN.md
+
+# ============================================================
+# CX22073JW AND SCENARIO
+# SCHEMA RESPONSIBILITY AND TABLE DESIGN
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+CX22073JW と scenario の責務分割と、
+各 schema の正式テーブル設計対象を定義する文書である。
+
+# ============================================================
+# 2. schema 分割方針
+# ============================================================
+
+CX22073JW:
+- AI が答えるための知識正本
+- 世界観知識
+- 歴史知識
+- 学問知識
+- FAQ
+- 人物情報
+- シナリオ解説知識
+- シナリオ参照メタ
+
+scenario:
+- シナリオ再生正本
+- チャプター
+- シーン
+- 選択肢
+- 分岐
+- 再生順
+- 進行条件
+- トリガー
+- ストーリーモード再生情報
+
+# ============================================================
+# 3. CX22073JW 主要テーブル
+# ============================================================
+
+中核:
+- domain_master
+- space_master
+- scope_master
+- article
+- chunk
+- faq
+- caller_master
+- caller_scope_binding
+- route_policy
+- disclaimer_master
+
+拡張:
+- entity_master
+- entity_alias
+- relation_master
+- article_entity_binding
+- discipline_master
+- topic_master
+- article_discipline_binding
+- article_topic_binding
+- difficulty_profile_master
+- audience_profile_master
+- article_profile_binding
+- space_summary
+- scope_summary
+- topic_summary
+- prerequisite_relation
+- learning_path
+- learning_path_item
+- source_master
+- article_source
+- review_status_master
+- article_review_log
+- timeline_event
+- event_relation
+- event_entity_binding
+- retrieval_profile
+- scope_retrieval_binding
+- answer_style_profile
+- response_template
+- scope_style_binding
+- session_log
+- answer_source_log
+- question_pattern
+- knowledge_gap_log
+- character_profile
+
+# ============================================================
+# 4. scenario 主要テーブル
+# ============================================================
+
+- scenario_master
+- scenario_version
+- scenario_chapter
+- scenario_scene
+- scenario_scene_node
+- scenario_choice
+- scenario_branch_rule
+- scenario_trigger
+- scenario_playback_profile
+- scenario_character_binding
+- scenario_event_binding
+- scenario_asset_binding
+- scenario_progress_rule
+
+# ============================================================
+# 5. schema 間の接続
+# ============================================================
+
+CX22073JW は、
+人物・歴史・概念・シナリオ解説知識を持つ。
+
+scenario は、
+再生構造を持つ。
+
+接続例:
+- scenario_master.canonical_article_id -> CX22073JW.article.article_id
+- scenario_character_binding.character_entity_id -> CX22073JW.entity_master.entity_id
+- scenario_event_binding.timeline_event_id -> CX22073JW.timeline_event.timeline_event_id
+
+# ============================================================
+# 6. 原則
+# ============================================================
+
+- 知識は CX22073JW
+- 再生は scenario
+- 人物は CX22073JW.character_profile を正本とする
+- シナリオは人物情報を複製せず参照する
+
+
+# ------------------------------------------------------------
+# SOURCE 65
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120010_CX22073JW_CHARACTER_PROFILE_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# CX22073JW CHARACTER_PROFILE EXACT COLUMN DEFINITION
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+CX22073JW.character_profile の exact column 定義を固定する。
+
+# ============================================================
+# 2. 役割
+# ============================================================
+
+character_profile は、
+人物情報の正本である。
+
+対象:
+- Civilization人物
+- 現実人物
+- 歴史人物
+- アプリ内人物
+- OS内案内役
+- シナリオ登場人物
+
+# ============================================================
+# 3. テーブル定義
+# ============================================================
+
+table_name:
+- CX22073JW.character_profile
+
+primary_key:
+- character_profile_id uuid
+
+columns:
+- character_profile_id uuid not null
+- entity_id uuid not null
+- character_code text not null
+- display_name text not null
+- official_name text null
+- short_bio text null
+- character_type text not null
+- origin_type text not null
+- gender_code text null
+- species_type text null
+- role_title text null
+- occupation_code text null
+- affiliation_country_code text null
+- affiliation_company_code text null
+- affiliation_org_code text null
+- rank_or_position text null
+- age integer null
+- birth_year integer null
+- birth_year_precision text null
+- death_year integer null
+- death_year_precision text null
+- era_label text null
+- life_status text not null
+- importance_level text null
+- portrait_asset_id uuid null
+- canonical_article_id uuid null
+- public_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+foreign_keys:
+- entity_id -> CX22073JW.entity_master.entity_id
+- canonical_article_id -> CX22073JW.article.article_id
+
+unique_candidates:
+- character_code
+- entity_id
+
+# ============================================================
+# 4. 固定追加項目
+# ============================================================
+
+必須前提として持つ:
+- affiliation_country_code
+- affiliation_company_code
+- age
+- birth_year
+- death_year
+
+# ============================================================
+# 5. 推奨 code 値例
+# ============================================================
+
+character_type examples:
+- human
+- ai_human
+- ai_robot
+- historical_person
+- civilization_character
+- fictional_character
+
+origin_type examples:
+- real_world
+- civilization_world
+- mixed_reference
+
+life_status examples:
+- alive
+- deceased
+- unknown
+
+birth_year_precision / death_year_precision examples:
+- exact
+- approximate
+- century_only
+- unknown
+
+public_status examples:
+- public
+- internal
+- hidden
+
+# ============================================================
+# 6. 原則
+# ============================================================
+
+- 人物情報の正本は character_profile とする
+- シナリオ再生側は人物本文を持たず参照する
+- 所属国家 / 所属企業は code を最初から持つ
+- 年齢は補助表示用であり、生年 / 死亡年も保持する
+
+
+# ------------------------------------------------------------
+# SOURCE 66
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120011_SCENARIO_CORE_TABLE_DESIGN.md
+
+# ============================================================
+# SCENARIO CORE TABLE DESIGN
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: scenario
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+scenario の中核テーブル設計を定義する。
+
+# ============================================================
+# 2. 中核テーブル
+# ============================================================
+
+scenario_master:
+- シナリオ本体
+- scenario_code
+- display_name
+- summary
+- canonical_article_id
+- publish_status
+- status
+
+scenario_version:
+- scenario_version_code
+- scenario_master_id
+- version_no
+- release_status
+
+scenario_chapter:
+- chapter_code
+- scenario_version_id
+- chapter_no
+- display_name
+
+scenario_scene:
+- scene_code
+- scenario_version_id
+- chapter_id
+- scene_no
+- display_name
+- scene_type
+- playback_text
+- next_scene_code
+
+scenario_choice:
+- choice_code
+- scene_id
+- choice_no
+- display_text
+- next_scene_code
+
+scenario_branch_rule:
+- branch_rule_code
+- scene_id
+- condition_type
+- condition_json
+- pass_next_scene_code
+- fail_next_scene_code
+
+scenario_trigger:
+- trigger_code
+- scene_id
+- trigger_type
+- trigger_payload_json
+
+scenario_character_binding:
+- scenario_character_binding_id
+- scene_id
+- character_entity_id
+- role_in_scene
+
+# ============================================================
+# 3. 接続原則
+# ============================================================
+
+- canonical_article_id は CX22073JW.article を参照する
+- character_entity_id は CX22073JW.entity_master を参照する
+- シナリオ再生と知識本文を分離する
+
+
+# ------------------------------------------------------------
+# SOURCE 67
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120012_CX22073JW_CORE_AND_CHARACTER_PROFILE_DDL_DRAFT.sql
+
+-- ============================================================
+-- CX22073JW CORE AND CHARACTER PROFILE DDL DRAFT
+-- draft-additive / not applied
+-- ============================================================
+
+create schema if not exists "CX22073JW";
+
+create extension if not exists pgcrypto;
+
+-- ============================================================
+-- 1. domain_master
+-- ============================================================
+create table if not exists "CX22073JW".domain_master (
+  domain_id uuid primary key default gen_random_uuid(),
+  domain_code text not null unique,
+  display_name text not null,
+  description text null,
+  sort_order integer not null default 0,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 2. space_master
+-- ============================================================
+create table if not exists "CX22073JW".space_master (
+  space_id uuid primary key default gen_random_uuid(),
+  domain_id uuid not null references "CX22073JW".domain_master(domain_id),
+  space_code text not null unique,
+  display_name text not null,
+  description text null,
+  locale_code text null,
+  default_answer_style_profile_code text null,
+  default_safety_policy_profile_code text null,
+  publish_status text not null,
+  status text not null,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 3. scope_master
+-- ============================================================
+create table if not exists "CX22073JW".scope_master (
+  scope_id uuid primary key default gen_random_uuid(),
+  space_id uuid not null references "CX22073JW".space_master(space_id),
+  scope_code text not null unique,
+  display_name text not null,
+  description text null,
+  scope_level text not null,
+  query_hint text null,
+  is_default boolean not null default false,
+  publish_status text not null,
+  status text not null,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 4. article
+-- ============================================================
+create table if not exists "CX22073JW".article (
+  article_id uuid primary key default gen_random_uuid(),
+  space_id uuid not null references "CX22073JW".space_master(space_id),
+  article_code text not null unique,
+  article_type text not null,
+  title text not null,
+  summary text null,
+  body_markdown text not null,
+  locale_code text null,
+  source_kind text null,
+  trust_level text null,
+  publish_status text not null,
+  visibility_status text not null,
+  effective_from timestamptz null,
+  effective_to timestamptz null,
+  version_no integer not null default 1,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 5. chunk
+-- ============================================================
+create table if not exists "CX22073JW".chunk (
+  chunk_id uuid primary key default gen_random_uuid(),
+  article_id uuid not null references "CX22073JW".article(article_id),
+  chunk_no integer not null,
+  chunk_title text null,
+  chunk_text text not null,
+  chunk_summary text null,
+  token_estimate integer null,
+  embedding_status text not null,
+  publish_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (article_id, chunk_no)
+);
+
+-- ============================================================
+-- 6. faq
+-- ============================================================
+create table if not exists "CX22073JW".faq (
+  faq_id uuid primary key default gen_random_uuid(),
+  space_id uuid not null references "CX22073JW".space_master(space_id),
+  faq_code text not null unique,
+  question_text text not null,
+  short_answer_text text not null,
+  long_answer_article_id uuid null references "CX22073JW".article(article_id),
+  locale_code text null,
+  priority_no integer not null default 0,
+  publish_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 7. caller_master
+-- ============================================================
+create table if not exists "CX22073JW".caller_master (
+  caller_id uuid primary key default gen_random_uuid(),
+  caller_code text not null unique,
+  caller_type text not null,
+  display_name text not null,
+  description text null,
+  owner_domain_code text null,
+  owner_target_code text null,
+  default_space_code text null,
+  default_scope_code text null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 8. caller_scope_binding
+-- ============================================================
+create table if not exists "CX22073JW".caller_scope_binding (
+  caller_scope_binding_id uuid primary key default gen_random_uuid(),
+  caller_id uuid not null references "CX22073JW".caller_master(caller_id),
+  scope_id uuid not null references "CX22073JW".scope_master(scope_id),
+  is_default boolean not null default false,
+  priority_no integer not null default 0,
+  access_mode text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (caller_id, scope_id)
+);
+
+-- ============================================================
+-- 9. disclaimer_master
+-- ============================================================
+create table if not exists "CX22073JW".disclaimer_master (
+  disclaimer_id uuid primary key default gen_random_uuid(),
+  disclaimer_code text not null unique,
+  display_name text not null,
+  body_text text not null,
+  locale_code text null,
+  disclaimer_type text not null,
+  publish_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 10. route_policy
+-- ============================================================
+create table if not exists "CX22073JW".route_policy (
+  route_policy_id uuid primary key default gen_random_uuid(),
+  route_policy_code text not null unique,
+  caller_id uuid not null unique references "CX22073JW".caller_master(caller_id),
+  primary_scope_id uuid null references "CX22073JW".scope_master(scope_id),
+  fallback_scope_id uuid null references "CX22073JW".scope_master(scope_id),
+  answer_style_profile_code text null,
+  safety_policy_profile_code text null,
+  disclaimer_code text null,
+  escalation_required boolean not null default false,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 11. entity_master
+-- ============================================================
+create table if not exists "CX22073JW".entity_master (
+  entity_id uuid primary key default gen_random_uuid(),
+  entity_code text not null unique,
+  entity_type text not null,
+  display_name text not null,
+  summary text null,
+  canonical_article_id uuid null references "CX22073JW".article(article_id),
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 12. character_profile
+-- ============================================================
+create table if not exists "CX22073JW".character_profile (
+  character_profile_id uuid primary key default gen_random_uuid(),
+  entity_id uuid not null unique references "CX22073JW".entity_master(entity_id),
+  character_code text not null unique,
+  display_name text not null,
+  official_name text null,
+  short_bio text null,
+  character_type text not null,
+  origin_type text not null,
+  gender_code text null,
+  species_type text null,
+  role_title text null,
+  occupation_code text null,
+  affiliation_country_code text null,
+  affiliation_company_code text null,
+  affiliation_org_code text null,
+  rank_or_position text null,
+  age integer null,
+  birth_year integer null,
+  birth_year_precision text null,
+  death_year integer null,
+  death_year_precision text null,
+  era_label text null,
+  life_status text not null,
+  importance_level text null,
+  portrait_asset_id uuid null,
+  canonical_article_id uuid null references "CX22073JW".article(article_id),
+  public_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- indexes
+-- ============================================================
+create index if not exists idx_cx22073jw_space_master_domain_id
+  on "CX22073JW".space_master(domain_id);
+
+create index if not exists idx_cx22073jw_scope_master_space_id
+  on "CX22073JW".scope_master(space_id);
+
+create index if not exists idx_cx22073jw_article_space_id
+  on "CX22073JW".article(space_id);
+
+create index if not exists idx_cx22073jw_chunk_article_id
+  on "CX22073JW".chunk(article_id);
+
+create index if not exists idx_cx22073jw_faq_space_id
+  on "CX22073JW".faq(space_id);
+
+create index if not exists idx_cx22073jw_caller_scope_binding_caller_id
+  on "CX22073JW".caller_scope_binding(caller_id);
+
+create index if not exists idx_cx22073jw_caller_scope_binding_scope_id
+  on "CX22073JW".caller_scope_binding(scope_id);
+
+create index if not exists idx_cx22073jw_route_policy_primary_scope_id
+  on "CX22073JW".route_policy(primary_scope_id);
+
+create index if not exists idx_cx22073jw_entity_master_canonical_article_id
+  on "CX22073JW".entity_master(canonical_article_id);
+
+create index if not exists idx_cx22073jw_character_profile_canonical_article_id
+  on "CX22073JW".character_profile(canonical_article_id);
+
+
+# ------------------------------------------------------------
+# SOURCE 68
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120013_SCENARIO_CORE_DDL_DRAFT.sql
+
+-- ============================================================
+-- SCENARIO CORE DDL DRAFT
+-- draft-additive / not applied
+-- ============================================================
+
+create schema if not exists "scenario";
+
+create extension if not exists pgcrypto;
+
+-- ============================================================
+-- 1. scenario_master
+-- ============================================================
+create table if not exists "scenario".scenario_master (
+  scenario_master_id uuid primary key default gen_random_uuid(),
+  scenario_code text not null unique,
+  display_name text not null,
+  summary text null,
+  canonical_article_id uuid null,
+  publish_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 2. scenario_version
+-- ============================================================
+create table if not exists "scenario".scenario_version (
+  scenario_version_id uuid primary key default gen_random_uuid(),
+  scenario_master_id uuid not null references "scenario".scenario_master(scenario_master_id),
+  scenario_version_code text not null unique,
+  version_no integer not null,
+  release_status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 3. scenario_chapter
+-- ============================================================
+create table if not exists "scenario".scenario_chapter (
+  scenario_chapter_id uuid primary key default gen_random_uuid(),
+  scenario_version_id uuid not null references "scenario".scenario_version(scenario_version_id),
+  chapter_code text not null unique,
+  chapter_no integer not null,
+  display_name text not null,
+  summary text null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 4. scenario_scene
+-- ============================================================
+create table if not exists "scenario".scenario_scene (
+  scenario_scene_id uuid primary key default gen_random_uuid(),
+  scenario_version_id uuid not null references "scenario".scenario_version(scenario_version_id),
+  scenario_chapter_id uuid null references "scenario".scenario_chapter(scenario_chapter_id),
+  scene_code text not null unique,
+  scene_no integer not null,
+  display_name text not null,
+  scene_type text not null,
+  playback_text text null,
+  next_scene_code text null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 5. scenario_scene_node
+-- ============================================================
+create table if not exists "scenario".scenario_scene_node (
+  scenario_scene_node_id uuid primary key default gen_random_uuid(),
+  scenario_scene_id uuid not null references "scenario".scenario_scene(scenario_scene_id),
+  node_no integer not null,
+  node_type text not null,
+  display_text text null,
+  payload_json jsonb null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (scenario_scene_id, node_no)
+);
+
+-- ============================================================
+-- 6. scenario_choice
+-- ============================================================
+create table if not exists "scenario".scenario_choice (
+  scenario_choice_id uuid primary key default gen_random_uuid(),
+  scenario_scene_id uuid not null references "scenario".scenario_scene(scenario_scene_id),
+  choice_code text not null unique,
+  choice_no integer not null,
+  display_text text not null,
+  next_scene_code text null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 7. scenario_branch_rule
+-- ============================================================
+create table if not exists "scenario".scenario_branch_rule (
+  scenario_branch_rule_id uuid primary key default gen_random_uuid(),
+  branch_rule_code text not null unique,
+  scenario_scene_id uuid not null references "scenario".scenario_scene(scenario_scene_id),
+  condition_type text not null,
+  condition_json jsonb not null,
+  pass_next_scene_code text null,
+  fail_next_scene_code text null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 8. scenario_trigger
+-- ============================================================
+create table if not exists "scenario".scenario_trigger (
+  scenario_trigger_id uuid primary key default gen_random_uuid(),
+  trigger_code text not null unique,
+  scenario_scene_id uuid not null references "scenario".scenario_scene(scenario_scene_id),
+  trigger_type text not null,
+  trigger_payload_json jsonb null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 9. scenario_playback_profile
+-- ============================================================
+create table if not exists "scenario".scenario_playback_profile (
+  scenario_playback_profile_id uuid primary key default gen_random_uuid(),
+  playback_profile_code text not null unique,
+  display_name text not null,
+  description text null,
+  playback_json jsonb null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 10. scenario_character_binding
+-- ============================================================
+create table if not exists "scenario".scenario_character_binding (
+  scenario_character_binding_id uuid primary key default gen_random_uuid(),
+  scenario_scene_id uuid not null references "scenario".scenario_scene(scenario_scene_id),
+  character_entity_id uuid not null,
+  role_in_scene text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 11. scenario_event_binding
+-- ============================================================
+create table if not exists "scenario".scenario_event_binding (
+  scenario_event_binding_id uuid primary key default gen_random_uuid(),
+  scenario_scene_id uuid not null references "scenario".scenario_scene(scenario_scene_id),
+  timeline_event_id uuid not null,
+  binding_role text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 12. scenario_asset_binding
+-- ============================================================
+create table if not exists "scenario".scenario_asset_binding (
+  scenario_asset_binding_id uuid primary key default gen_random_uuid(),
+  scenario_scene_id uuid not null references "scenario".scenario_scene(scenario_scene_id),
+  asset_code text not null,
+  asset_role text not null,
+  sort_order integer not null default 0,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 13. scenario_progress_rule
+-- ============================================================
+create table if not exists "scenario".scenario_progress_rule (
+  scenario_progress_rule_id uuid primary key default gen_random_uuid(),
+  progress_rule_code text not null unique,
+  scenario_version_id uuid not null references "scenario".scenario_version(scenario_version_id),
+  rule_type text not null,
+  rule_json jsonb not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- indexes
+-- ============================================================
+create index if not exists idx_cx22073jw_sinario_scenario_version_master_id
+  on "scenario".scenario_version(scenario_master_id);
+
+create index if not exists idx_cx22073jw_sinario_scenario_chapter_version_id
+  on "scenario".scenario_chapter(scenario_version_id);
+
+create index if not exists idx_cx22073jw_sinario_scenario_scene_version_id
+  on "scenario".scenario_scene(scenario_version_id);
+
+create index if not exists idx_cx22073jw_sinario_scenario_scene_chapter_id
+  on "scenario".scenario_scene(scenario_chapter_id);
+
+create index if not exists idx_cx22073jw_sinario_scenario_choice_scene_id
+  on "scenario".scenario_choice(scenario_scene_id);
+
+create index if not exists idx_cx22073jw_sinario_scenario_character_binding_scene_id
+  on "scenario".scenario_character_binding(scenario_scene_id);
+
+create index if not exists idx_cx22073jw_sinario_scenario_event_binding_scene_id
+  on "scenario".scenario_event_binding(scenario_scene_id);
+
+
+# ------------------------------------------------------------
+# SOURCE 69
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120014_CX22073JW_AND_SCENARIO_INTEGRATED_DDL_DRAFT.sql
+
+-- ============================================================
+-- CX22073JW AND SCENARIO INTEGRATED DDL DRAFT
+-- draft-additive / not applied
+-- ============================================================
+
+-- This file intentionally acts as an integrated handoff shell.
+-- Apply order:
+-- 1. 120012_CX22073JW_CORE_AND_CHARACTER_PROFILE_DDL_DRAFT.sql
+-- 2. 120013_SCENARIO_CORE_DDL_DRAFT.sql
+
+-- Cross-schema reference policy:
+-- scenario side may reference CX22073JW identifiers logically.
+-- physical foreign keys across schemas can be added later after
+-- final DB environment policy is fixed.
+
+-- planned logical references:
+-- scenario.scenario_master.canonical_article_id
+--   -> CX22073JW.article.article_id
+--
+-- scenario.scenario_character_binding.character_entity_id
+--   -> CX22073JW.entity_master.entity_id
+--
+-- scenario.scenario_event_binding.timeline_event_id
+--   -> CX22073JW.timeline_event.timeline_event_id
+
+
+# ------------------------------------------------------------
+# SOURCE 70
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120015_CX22073JW_INITIAL_SEED_DESIGN.md
+
+# ============================================================
+# CX22073JW INITIAL SEED DESIGN
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+CX22073JW の初期 seed 設計を定義する文書である。
+
+対象:
+- domain 初期値
+- space 初期値
+- scope 初期値
+- caller 初期値
+- route_policy 初期値の方向
+- disclaimer 初期値の方向
+
+# ============================================================
+# 2. domain 初期値
+# ============================================================
+
+adoption_domains:
+- application
+- os
+- certification
+- language
+- academic
+- real_history
+- civilization_history
+- legal
+- medical
+- business
+- life
+- general_support
+
+# ============================================================
+# 3. space 初期値
+# ============================================================
+
+general_support:
+- civilization_portal_support
+- application_directory_support
+- os_general_support
+
+application:
+- pocket_secretary_support
+- name_card_manager_support
+- estimate_creator_support
+- shift_manager_support
+- invoice_flow_support
+- quick_forecast_support
+- app_development_studio_support
+- project_flow_support
+
+os:
+- civilization_os_support
+- persona_os_support
+- business_os_support
+- life_os_support
+- game_os_support
+- streaming_os_support
+
+business:
+- business_os_fixed_knowledge
+- erp_fixed_knowledge
+- business_workflow_principles
+- approval_policy_knowledge
+
+certification:
+- retail_marketing_certification
+- business_certification_general
+
+language:
+- english_learning
+- japanese_learning
+- multilingual_expression_support
+
+academic:
+- general_literacy
+- physics_foundation
+- quantum_mechanics
+- mathematics_foundation
+- economics_foundation
+- philosophy_foundation
+- computer_science_foundation
+
+real_history:
+- world_history_real
+- japan_history_real
+- modern_history_real
+
+civilization_history:
+- civilization_history_foundation
+- civilization_history_expansion
+- civilization_history_institutions
+
+legal:
+- legal_general_support
+
+medical:
+- medical_general_support
+
+life:
+- life_planning_support
+- health_general_support
+
+# ============================================================
+# 4. scope 初期値
+# ============================================================
+
+general_support:
+- civilization_portal_support_basic
+- application_directory_support_basic
+- os_general_support_basic
+
+portal_helpdesk:
+- portal_top_helpdesk_default
+- portal_top_helpdesk_faq_first
+
+os:
+- civilization_os_basic
+- persona_os_basic
+- business_os_basic
+- life_os_basic
+- streaming_os_basic
+
+business:
+- business_os_general_fixed
+- business_os_billing_fixed
+- business_os_inventory_fixed
+- business_os_approval_fixed
+- erp_general_fixed
+
+certification:
+- retail_marketing_level_1
+- retail_marketing_general
+- certification_general_faq
+
+language:
+- english_beginner
+- english_intermediate
+- japanese_beginner
+
+academic:
+- general_literacy_basic
+- physics_beginner
+- quantum_mechanics_intro
+- quantum_mechanics_advanced
+- economics_general
+
+real_history:
+- world_history_overview
+- japan_history_overview
+- modern_history_focus
+
+civilization_history:
+- civilization_history_origin
+- civilization_history_major_events
+- civilization_history_figures
+
+legal:
+- legal_general_faq_only
+- legal_general_basic
+
+medical:
+- medical_general_faq_only
+- medical_general_basic
+
+life:
+- life_planning_general
+- health_general_basic
+
+# ============================================================
+# 5. caller 初期値
+# ============================================================
+
+portal:
+- portal_site_top
+- portal_site_os_list
+- portal_site_helpdesk
+
+os:
+- civilization_os
+- persona_os
+- business_os
+- life_os
+- game_os
+- streaming_os
+
+applications:
+- pocket_secretary_app
+- name_card_manager_app
+- estimate_creator_app
+- shift_manager_app
+- invoice_flow_app
+- quick_forecast_app
+- app_development_studio_app
+- project_flow_app
+
+consultation:
+- legal_consult_app
+- medical_consult_app
+
+worker:
+- business_os_ai_worker
+
+learning:
+- certification_study_app
+- language_study_app
+- academic_study_app
+
+# ============================================================
+# 6. caller_scope_binding 初期方向
+# ============================================================
+
+portal_site_top:
+- portal_top_helpdesk_default
+- civilization_portal_support_basic
+- application_directory_support_basic
+- os_general_support_basic
+
+portal_site_os_list:
+- application_directory_support_basic
+- os_general_support_basic
+
+civilization_os:
+- civilization_os_basic
+
+persona_os:
+- persona_os_basic
+
+business_os:
+- business_os_basic
+- business_os_general_fixed
+
+business_os_ai_worker:
+- business_os_general_fixed
+- business_os_billing_fixed
+- business_os_inventory_fixed
+- business_os_approval_fixed
+- erp_general_fixed
+
+legal_consult_app:
+- legal_general_basic
+- legal_general_faq_only
+
+medical_consult_app:
+- medical_general_basic
+- medical_general_faq_only
+
+academic_study_app:
+- general_literacy_basic
+- physics_beginner
+- quantum_mechanics_intro
+- economics_general
+
+# ============================================================
+# 7. route_policy 初期方向
+# ============================================================
+
+portal_site_top:
+- primary: portal_top_helpdesk_default
+- fallback: civilization_portal_support_basic
+
+business_os_ai_worker:
+- primary: business_os_general_fixed
+- fallback: erp_general_fixed
+
+legal_consult_app:
+- primary: legal_general_basic
+- fallback: legal_general_faq_only
+
+medical_consult_app:
+- primary: medical_general_basic
+- fallback: medical_general_faq_only
+
+academic_study_app:
+- primary: general_literacy_basic
+- fallback: physics_beginner
+
+# ============================================================
+# 8. disclaimer 初期方向
+# ============================================================
+
+disclaimer codes:
+- general_support_default
+- legal_general_default
+- medical_general_default
+- study_general_default
+- historical_reference_default
+
+# ============================================================
+# 9. 原則
+# ============================================================
+
+- 初期 seed は最小でも caller / scope / routing が成立すること
+- Portal top helpdesk は最初から caller として定義する
+- BusinessOS AI worker は最初から caller として定義する
+- 学問知識 access も初期 seed に含める
+
+
+# ------------------------------------------------------------
+# SOURCE 71
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120016_CX22073JW_INITIAL_SEED_TABULAR_SPEC.md
+
+# ============================================================
+# CX22073JW INITIAL SEED TABULAR SPEC
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. domain seed
+# ============================================================
+
+- application
+- os
+- certification
+- language
+- academic
+- real_history
+- civilization_history
+- legal
+- medical
+- business
+- life
+- general_support
+
+# ============================================================
+# 2. important space seed
+# ============================================================
+
+- civilization_portal_support
+- application_directory_support
+- os_general_support
+- civilization_os_support
+- persona_os_support
+- business_os_support
+- business_os_fixed_knowledge
+- erp_fixed_knowledge
+- business_workflow_principles
+- retail_marketing_certification
+- english_learning
+- general_literacy
+- quantum_mechanics
+- world_history_real
+- civilization_history_foundation
+- legal_general_support
+- medical_general_support
+- life_planning_support
+
+# ============================================================
+# 3. important scope seed
+# ============================================================
+
+- portal_top_helpdesk_default
+- application_directory_support_basic
+- os_general_support_basic
+- civilization_os_basic
+- persona_os_basic
+- business_os_general_fixed
+- business_os_billing_fixed
+- business_os_inventory_fixed
+- business_os_approval_fixed
+- erp_general_fixed
+- retail_marketing_level_1
+- english_beginner
+- general_literacy_basic
+- quantum_mechanics_intro
+- legal_general_basic
+- medical_general_basic
+- civilization_history_origin
+
+# ============================================================
+# 4. important caller seed
+# ============================================================
+
+- portal_site_top
+- portal_site_os_list
+- portal_site_helpdesk
+- civilization_os
+- persona_os
+- business_os
+- pocket_secretary_app
+- shift_manager_app
+- invoice_flow_app
+- legal_consult_app
+- medical_consult_app
+- business_os_ai_worker
+- academic_study_app
+
+# ============================================================
+# 5. note
+# ============================================================
+
+本書は、
+初期 seed の把握を簡潔にするための補助表である。
+
+
+# ------------------------------------------------------------
+# SOURCE 72
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120017_PORTAL_SCHEMA_OVERVIEW.md
+
+# ============================================================
+# PORTAL SCHEMA OVERVIEW
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: portal
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site における
+portal schema の役割と対象テーブルを定義する文書である。
+
+# ============================================================
+# 2. schema 役割
+# ============================================================
+
+portal schema は、
+Portal Site の入口面 / 表示面 / ナビ面の正本を担う。
+
+責務:
+- ページ文言
+- 階層ナビ
+- 遷移先定義
+- AIヘルプデスク入口
+- ページセクション構成
+
+# ============================================================
+# 3. portal schema の対象テーブル
+# ============================================================
+
+- copy_text
+- nav_node
+- nav_node_target
+- helpdesk_entry
+- page_section
+- page_section_item
+
+# ============================================================
+# 4. 他 schema との分離
+# ============================================================
+
+portal:
+- 入口
+- 文言
+- 表示
+- ナビ
+- helpdesk 入口UI
+
+CX22073JW:
+- 知識正本
+- FAQ
+- article
+- chunk
+- caller / scope / routing
+- 人物 / 歴史 / 学問 / 法律 / 医療知識
+
+scenario:
+- シナリオ再生構造
+- chapter / scene / choice / branch
+
+# ============================================================
+# 5. 原則
+# ============================================================
+
+- portal は知識本文を持たない
+- Portal は caller / scope を指定して CX22073JW を呼ぶ
+- Portal はトップ画面に AIヘルプデスク入口を表示する
+- Portal の文言は DB 取得を正本とする
+- Portal の一覧表示は DB 駆動階層表示を正本とする
+
+
+# ------------------------------------------------------------
+# SOURCE 73
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120018_PORTAL_SCHEMA_EXACT_COLUMN_DEFINITION.md
+
+# ============================================================
+# PORTAL SCHEMA EXACT COLUMN DEFINITION
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: portal
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. copy_text
+# ============================================================
+
+table_name:
+- portal.copy_text
+
+columns:
+- copy_text_id uuid not null
+- copy_key text not null
+- locale_code text not null
+- page_code text null
+- section_code text null
+- text_value text not null
+- status text not null
+- effective_from timestamptz null
+- effective_to timestamptz null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+unique_candidates:
+- (copy_key, locale_code, effective_from)
+
+# ============================================================
+# 2. nav_node
+# ============================================================
+
+table_name:
+- portal.nav_node
+
+columns:
+- nav_node_id uuid not null
+- node_code text not null
+- parent_nav_node_id uuid null
+- node_type text not null
+- display_name text not null
+- description text null
+- icon_asset_id uuid null
+- sort_order integer not null default 0
+- visibility_status text not null
+- publish_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+unique_candidates:
+- node_code
+
+# ============================================================
+# 3. nav_node_target
+# ============================================================
+
+table_name:
+- portal.nav_node_target
+
+columns:
+- nav_node_target_id uuid not null
+- nav_node_id uuid not null
+- target_kind text not null
+- target_code text null
+- internal_route text null
+- external_url text null
+- helpdesk_code text null
+- open_mode text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+# ============================================================
+# 4. helpdesk_entry
+# ============================================================
+
+table_name:
+- portal.helpdesk_entry
+
+columns:
+- helpdesk_entry_id uuid not null
+- helpdesk_code text not null
+- display_name text not null
+- short_description text null
+- route_or_target text not null
+- support_scope text not null
+- visibility_status text not null
+- publish_status text not null
+- sort_order integer not null default 0
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+unique_candidates:
+- helpdesk_code
+
+# ============================================================
+# 5. page_section
+# ============================================================
+
+table_name:
+- portal.page_section
+
+columns:
+- page_section_id uuid not null
+- page_code text not null
+- section_code text not null
+- section_type text not null
+- title_copy_key text null
+- description_copy_key text null
+- sort_order integer not null default 0
+- visibility_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+unique_candidates:
+- (page_code, section_code)
+
+# ============================================================
+# 6. page_section_item
+# ============================================================
+
+table_name:
+- portal.page_section_item
+
+columns:
+- page_section_item_id uuid not null
+- page_section_id uuid not null
+- item_type text not null
+- ref_nav_node_id uuid null
+- ref_helpdesk_entry_id uuid null
+- ref_copy_key text null
+- sort_order integer not null default 0
+- visibility_status text not null
+- status text not null
+- created_at timestamptz not null
+- updated_at timestamptz not null
+
+
+# ------------------------------------------------------------
+# SOURCE 74
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120019_PORTAL_SCHEMA_DDL_DRAFT.sql
+
+-- ============================================================
+-- PORTAL SCHEMA DDL DRAFT
+-- draft-additive / not applied
+-- ============================================================
+
+create schema if not exists portal;
+
+create extension if not exists pgcrypto;
+
+-- ============================================================
+-- 1. copy_text
+-- ============================================================
+create table if not exists portal.copy_text (
+  copy_text_id uuid primary key default gen_random_uuid(),
+  copy_key text not null,
+  locale_code text not null,
+  page_code text null,
+  section_code text null,
+  text_value text not null,
+  status text not null,
+  effective_from timestamptz null,
+  effective_to timestamptz null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (copy_key, locale_code, effective_from)
+);
+
+-- ============================================================
+-- 2. nav_node
+-- ============================================================
+create table if not exists portal.nav_node (
+  nav_node_id uuid primary key default gen_random_uuid(),
+  node_code text not null unique,
+  parent_nav_node_id uuid null references portal.nav_node(nav_node_id),
+  node_type text not null,
+  display_name text not null,
+  description text null,
+  icon_asset_id uuid null,
+  sort_order integer not null default 0,
+  visibility_status text not null,
+  publish_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 3. nav_node_target
+-- ============================================================
+create table if not exists portal.nav_node_target (
+  nav_node_target_id uuid primary key default gen_random_uuid(),
+  nav_node_id uuid not null references portal.nav_node(nav_node_id),
+  target_kind text not null,
+  target_code text null,
+  internal_route text null,
+  external_url text null,
+  helpdesk_code text null,
+  open_mode text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 4. helpdesk_entry
+-- ============================================================
+create table if not exists portal.helpdesk_entry (
+  helpdesk_entry_id uuid primary key default gen_random_uuid(),
+  helpdesk_code text not null unique,
+  display_name text not null,
+  short_description text null,
+  route_or_target text not null,
+  support_scope text not null,
+  visibility_status text not null,
+  publish_status text not null,
+  sort_order integer not null default 0,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- 5. page_section
+-- ============================================================
+create table if not exists portal.page_section (
+  page_section_id uuid primary key default gen_random_uuid(),
+  page_code text not null,
+  section_code text not null,
+  section_type text not null,
+  title_copy_key text null,
+  description_copy_key text null,
+  sort_order integer not null default 0,
+  visibility_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (page_code, section_code)
+);
+
+-- ============================================================
+-- 6. page_section_item
+-- ============================================================
+create table if not exists portal.page_section_item (
+  page_section_item_id uuid primary key default gen_random_uuid(),
+  page_section_id uuid not null references portal.page_section(page_section_id),
+  item_type text not null,
+  ref_nav_node_id uuid null references portal.nav_node(nav_node_id),
+  ref_helpdesk_entry_id uuid null references portal.helpdesk_entry(helpdesk_entry_id),
+  ref_copy_key text null,
+  sort_order integer not null default 0,
+  visibility_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- ============================================================
+-- indexes
+-- ============================================================
+create index if not exists idx_portal_copy_text_copy_key
+  on portal.copy_text(copy_key);
+
+create index if not exists idx_portal_copy_text_page_code
+  on portal.copy_text(page_code);
+
+create index if not exists idx_portal_copy_text_section_code
+  on portal.copy_text(section_code);
+
+create index if not exists idx_portal_nav_node_parent_nav_node_id
+  on portal.nav_node(parent_nav_node_id);
+
+create index if not exists idx_portal_nav_node_node_type
+  on portal.nav_node(node_type);
+
+create index if not exists idx_portal_nav_node_sort_order
+  on portal.nav_node(sort_order);
+
+create index if not exists idx_portal_nav_node_target_nav_node_id
+  on portal.nav_node_target(nav_node_id);
+
+create index if not exists idx_portal_helpdesk_entry_sort_order
+  on portal.helpdesk_entry(sort_order);
+
+create index if not exists idx_portal_page_section_page_code
+  on portal.page_section(page_code);
+
+create index if not exists idx_portal_page_section_sort_order
+  on portal.page_section(sort_order);
+
+create index if not exists idx_portal_page_section_item_page_section_id
+  on portal.page_section_item(page_section_id);
+
+create index if not exists idx_portal_page_section_item_ref_nav_node_id
+  on portal.page_section_item(ref_nav_node_id);
+
+create index if not exists idx_portal_page_section_item_ref_helpdesk_entry_id
+  on portal.page_section_item(ref_helpdesk_entry_id);
+
+
+# ------------------------------------------------------------
+# SOURCE 75
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120020_PORTAL_SCHEMA_SEED_DRAFT_DIRECTION.md
+
+# ============================================================
+# PORTAL SCHEMA SEED DRAFT DIRECTION
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+schema: portal
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+initial_copy_keys:
+- top.hero.title
+- top.hero.description
+- top.ai_helpdesk.title
+- top.ai_helpdesk.description
+- top.ai_helpdesk.cta
+- civilization.page.title
+- civilization.page.description
+- os.list.page.title
+- os.list.page.description
+- guide.page.title
+- guide.page.description
+- login.page.title
+- signup.page.title
+
+initial_helpdesk_entries:
+- portal_top_ai_helpdesk
+
+initial_nav_roots:
+- civilization_root
+- os_root
+- application_root
+- helpdesk_root
+
+initial_page_sections:
+top:
+- hero
+- ai_helpdesk
+- app_tree
+- quick_links
+
+os_list:
+- os_tree
+
+guide:
+- intro
+- steps
+
+
+# ------------------------------------------------------------
+# SOURCE 76
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120021_PORTAL_SCENARIO_THREE_SCHEMA_INTEGRATED_SUMMARY.md
+
+# ============================================================
+# PORTAL / CX22073JW / SCENARIO
+# THREE SCHEMA INTEGRATED SUMMARY
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site で利用する
+3つの主要 schema
+- portal
+- CX22073JW
+- scenario
+の責務分割と接続原則を
+統合的に整理する文書である。
+
+# ============================================================
+# 2. 全体構造
+# ============================================================
+
+portal:
+- 入口面
+- 表示面
+- ナビ面
+- helpdesk 入口UI
+- DB駆動文言
+- DB駆動階層表示
+
+CX22073JW:
+- Civilization 全体の共通知識正本
+- app / os / academic / history / legal / medical / language / certification knowledge
+- FAQ
+- article / chunk
+- caller / scope / route policy
+- 人物情報
+- 学習導線
+- 出典 / 監修
+- 関係知識
+- 回答スタイル
+- 検索戦略
+
+scenario:
+- ストーリーモード再生正本
+- scenario / chapter / scene / choice / branch
+- trigger
+- playback structure
+- progression rules
+
+# ============================================================
+# 3. portal schema の責務
+# ============================================================
+
+portal schema は、
+Portal Site 表示そのものの正本を担う。
+
+対象:
+- copy_text
+- nav_node
+- nav_node_target
+- helpdesk_entry
+- page_section
+- page_section_item
+
+役割:
+- トップ画面文言
+- AI helpdesk 入口表示
+- アプリ / OS / group の階層表示
+- ページの section 構成
+- 遷移先解決
+
+portal は知識本文を持たない。
+
+# ============================================================
+# 4. CX22073JW の責務
+# ============================================================
+
+CX22073JW は、
+Civilization 全体の共通知識基盤である。
+
+対象:
+- アプリ知識
+- OS知識
+- 資格知識
+- 言語知識
+- 学問知識
+- 現実の歴史
+- Civilization の歴史
+- 法律知識
+- 医療知識
+- FAQ
+- 学習導線
+- 出典 / 監修 / 信頼性
+- 関係知識
+- 回答スタイル
+- 検索戦略
+- 改善ログ
+- 人物情報
+
+CX22073JW は、
+Portal / OS / application / worker / consultation app から
+caller_code と requested_scope を受けて
+知識を返す。
+
+# ============================================================
+# 5. scenario の責務
+# ============================================================
+
+scenario は、
+ストーリーモードの再生構造を正本として持つ。
+
+対象:
+- scenario_master
+- scenario_version
+- scenario_chapter
+- scenario_scene
+- scenario_scene_node
+- scenario_choice
+- scenario_branch_rule
+- scenario_trigger
+- scenario_playback_profile
+- scenario_character_binding
+- scenario_event_binding
+- scenario_asset_binding
+- scenario_progress_rule
+
+scenario は、
+知識本文ではなく、
+再生・分岐・進行・演出の構造を担う。
+
+# ============================================================
+# 6. schema 間の接続
+# ============================================================
+
+portal -> CX22073JW:
+- Portal の AI helpdesk 入口から caller / scope 指定で接続する
+
+portal -> scenario:
+- 直接再生UIを持つ場合は scenario entry に接続する
+- ただし lore / 人物 / 歴史説明は CX22073JW を参照する
+
+scenario -> CX22073JW:
+- canonical_article_id を通じた scenario 解説参照
+- character_entity_id を通じた人物情報参照
+- timeline_event_id を通じた歴史イベント参照
+
+# ============================================================
+# 7. 人物情報の正本
+# ============================================================
+
+人物情報の正本は
+CX22073JW.character_profile とする。
+
+人物情報で持つ内容:
+- 人物コード
+- 表示名
+- 正式名
+- short_bio
+- character_type
+- origin_type
+- gender_code
+- species_type
+- role_title
+- occupation_code
+- affiliation_country_code
+- affiliation_company_code
+- affiliation_org_code
+- rank_or_position
+- age
+- birth_year
+- death_year
+- era_label
+- canonical_article_id
+
+scenario は、
+人物情報を複製せず、
+人物参照だけを持つ。
+
+# ============================================================
+# 8. BusinessOS AI worker との関係
+# ============================================================
+
+BusinessOS AI worker も
+CX22073JW を固定知識基盤として使う。
+
+固定知識:
+- 概念
+- 原則
+- 用語
+- 業務ルール
+- 手順
+- 基本説明
+
+変動データ:
+- BusinessOS / ERP 側
+
+つまり、
+固定知識は CX22073JW、
+変動実データは業務DB側とする。
+
+# ============================================================
+# 9. 代表的な利用フロー
+# ============================================================
+
+Portal top helpdesk:
+1. portal.helpdesk_entry を表示
+2. caller_code = portal_site_top
+3. requested_scope = portal_top_helpdesk_default
+4. CX22073JW から FAQ / article / chunk を取得
+5. answer_style / disclaimer を適用して表示
+
+OS helpdesk:
+1. Portal または OS 画面から caller_code を決定
+2. requested_scope = persona_os_basic など
+3. CX22073JW を参照
+
+Story mode:
+1. scenario で scenario を再生
+2. 必要に応じて character / lore / event 解説は CX22073JW を参照
+
+# ============================================================
+# 10. 原則
+# ============================================================
+
+- 入口は portal
+- 知識は CX22073JW
+- 再生は scenario
+- 人物情報は CX22073JW 正本
+- シナリオは人物や lore を複製しない
+- Portal は knowledge body を持たない
+- Worker の固定知識も CX22073JW を使う
+
+
+# ------------------------------------------------------------
+# SOURCE 77
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120022_PORTAL_INITIAL_SEED_DRAFT.sql
+
+-- ============================================================
+-- PORTAL INITIAL SEED DRAFT
+-- draft-additive / not applied
+-- ============================================================
+
+-- ============================================================
+-- 1. copy_text
+-- ============================================================
+insert into portal.copy_text
+(copy_key, locale_code, page_code, section_code, text_value, status, effective_from, effective_to, created_at, updated_at)
+values
+('top.hero.title', 'ja-JP', 'top', 'hero', 'Civilization Portal Site', 'active', now(), null, now(), now()),
+('top.hero.description', 'ja-JP', 'top', 'hero', 'Civilization 全体の公開入口。各OSへの唯一の公式Web導線を提供する。', 'active', now(), null, now(), now()),
+('top.ai_helpdesk.title', 'ja-JP', 'top', 'ai_helpdesk', 'AIヘルプデスク', 'active', now(), null, now(), now()),
+('top.ai_helpdesk.description', 'ja-JP', 'top', 'ai_helpdesk', '全アプリ共通のヘルプデスク入口。困ったことや使い方を案内する。', 'active', now(), null, now(), now()),
+('top.ai_helpdesk.cta', 'ja-JP', 'top', 'ai_helpdesk', 'AIチャットを開く', 'active', now(), null, now(), now()),
+('civilization.page.title', 'ja-JP', 'civilization', 'hero', 'Civilization とは', 'active', now(), null, now(), now()),
+('civilization.page.description', 'ja-JP', 'civilization', 'hero', 'Civilization 全体構造と Civilization ID の役割を説明する。', 'active', now(), null, now(), now()),
+('os.list.page.title', 'ja-JP', 'os_list', 'hero', 'OS 一覧', 'active', now(), null, now(), now()),
+('os.list.page.description', 'ja-JP', 'os_list', 'hero', '各OSへの唯一の一覧入口。', 'active', now(), null, now(), now()),
+('guide.page.title', 'ja-JP', 'guide', 'hero', '利用案内', 'active', now(), null, now(), now()),
+('guide.page.description', 'ja-JP', 'guide', 'hero', 'Portal Site の使い方と利用開始までの流れを示す。', 'active', now(), null, now(), now())
+on conflict do nothing;
+
+-- ============================================================
+-- 2. helpdesk_entry
+-- ============================================================
+insert into portal.helpdesk_entry
+(helpdesk_code, display_name, short_description, route_or_target, support_scope, visibility_status, publish_status, sort_order, status, created_at, updated_at)
+values
+('portal_top_ai_helpdesk', 'AIヘルプデスク', '全アプリ共通のヘルプデスク入口', '/helpdesk', 'all_applications', 'visible', 'published', 10, 'active', now(), now())
+on conflict do nothing;
+
+-- ============================================================
+-- 3. nav_node
+-- ============================================================
+insert into portal.nav_node
+(node_code, parent_nav_node_id, node_type, display_name, description, icon_asset_id, sort_order, visibility_status, publish_status, status, created_at, updated_at)
+values
+('civilization_root', null, 'group', 'Civilization', 'Civilization 全体案内', null, 10, 'visible', 'published', 'active', now(), now()),
+('os_root', null, 'group', 'OS', 'OS 一覧入口', null, 20, 'visible', 'published', 'active', now(), now()),
+('application_root', null, 'group', 'Applications', 'アプリ一覧入口', null, 30, 'visible', 'published', 'active', now(), now()),
+('helpdesk_root', null, 'group', 'Helpdesk', 'ヘルプデスク入口', null, 40, 'visible', 'published', 'active', now(), now())
+on conflict do nothing;
+
+-- ============================================================
+-- 4. nav_node_target
+-- ============================================================
+insert into portal.nav_node_target
+(nav_node_id, target_kind, target_code, internal_route, external_url, helpdesk_code, open_mode, status, created_at, updated_at)
+select n.nav_node_id, 'page', n.node_code, 
+case
+  when n.node_code = 'civilization_root' then '/civilization'
+  when n.node_code = 'os_root' then '/os'
+  when n.node_code = 'application_root' then '/applications'
+  when n.node_code = 'helpdesk_root' then '/helpdesk'
+  else null
+end,
+null,
+case when n.node_code = 'helpdesk_root' then 'portal_top_ai_helpdesk' else null end,
+'same_tab',
+'active',
+now(),
+now()
+from portal.nav_node n
+where n.node_code in ('civilization_root','os_root','application_root','helpdesk_root')
+on conflict do nothing;
+
+-- ============================================================
+-- 5. page_section
+-- ============================================================
+insert into portal.page_section
+(page_code, section_code, section_type, title_copy_key, description_copy_key, sort_order, visibility_status, status, created_at, updated_at)
+values
+('top', 'hero', 'hero', 'top.hero.title', 'top.hero.description', 10, 'visible', 'active', now(), now()),
+('top', 'ai_helpdesk', 'helpdesk', 'top.ai_helpdesk.title', 'top.ai_helpdesk.description', 20, 'visible', 'active', now(), now()),
+('top', 'app_tree', 'app_tree', null, null, 30, 'visible', 'active', now(), now()),
+('civilization', 'hero', 'hero', 'civilization.page.title', 'civilization.page.description', 10, 'visible', 'active', now(), now()),
+('os_list', 'hero', 'hero', 'os.list.page.title', 'os.list.page.description', 10, 'visible', 'active', now(), now()),
+('guide', 'hero', 'hero', 'guide.page.title', 'guide.page.description', 10, 'visible', 'active', now(), now())
+on conflict do nothing;
+
+-- ============================================================
+-- 6. page_section_item
+-- ============================================================
+insert into portal.page_section_item
+(page_section_id, item_type, ref_nav_node_id, ref_helpdesk_entry_id, ref_copy_key, sort_order, visibility_status, status, created_at, updated_at)
+select s.page_section_id, 'helpdesk_entry', null, h.helpdesk_entry_id, null, 10, 'visible', 'active', now(), now()
+from portal.page_section s
+join portal.helpdesk_entry h on h.helpdesk_code = 'portal_top_ai_helpdesk'
+where s.page_code = 'top' and s.section_code = 'ai_helpdesk'
+on conflict do nothing;
+
+insert into portal.page_section_item
+(page_section_id, item_type, ref_nav_node_id, ref_helpdesk_entry_id, ref_copy_key, sort_order, visibility_status, status, created_at, updated_at)
+select s.page_section_id, 'nav_node', n.nav_node_id, null, null, n.sort_order, 'visible', 'active', now(), now()
+from portal.page_section s
+join portal.nav_node n on n.node_code in ('civilization_root','os_root','application_root','helpdesk_root')
+where s.page_code = 'top' and s.section_code = 'app_tree'
+on conflict do nothing;
+
+
+# ------------------------------------------------------------
+# SOURCE 78
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120023_CX22073JW_INITIAL_SEED_DRAFT.sql
+
+-- ============================================================
+-- CX22073JW INITIAL SEED DRAFT
+-- draft-additive / not applied
+-- ============================================================
+
+-- ============================================================
+-- 1. domain_master
+-- ============================================================
+insert into "CX22073JW".domain_master
+(domain_code, display_name, description, sort_order, status, created_at, updated_at)
+values
+('application', 'Application', 'アプリ知識', 10, 'active', now(), now()),
+('os', 'OS', 'OS知識', 20, 'active', now(), now()),
+('certification', 'Certification', '資格知識', 30, 'active', now(), now()),
+('language', 'Language', '言語知識', 40, 'active', now(), now()),
+('academic', 'Academic', '学問知識', 50, 'active', now(), now()),
+('real_history', 'Real History', '現実の歴史知識', 60, 'active', now(), now()),
+('civilization_history', 'Civilization History', 'Civilization の歴史知識', 70, 'active', now(), now()),
+('legal', 'Legal', '法律知識', 80, 'active', now(), now()),
+('medical', 'Medical', '医療知識', 90, 'active', now(), now()),
+('business', 'Business', 'Business 固定知識', 100, 'active', now(), now()),
+('life', 'Life', 'Life 知識', 110, 'active', now(), now()),
+('general_support', 'General Support', '全般ヘルプ知識', 120, 'active', now(), now())
+on conflict do nothing;
+
+-- ============================================================
+-- 2. space_master
+-- ============================================================
+insert into "CX22073JW".space_master
+(domain_id, space_code, display_name, description, locale_code, default_answer_style_profile_code, default_safety_policy_profile_code, publish_status, status, sort_order, created_at, updated_at)
+select d.domain_id, x.space_code, x.display_name, x.description, 'ja-JP', null, null, 'published', 'active', x.sort_order, now(), now()
+from "CX22073JW".domain_master d
+join (
+  values
+  ('general_support','civilization_portal_support','Civilization Portal Support','Portal 全体ヘルプ知識',10),
+  ('general_support','application_directory_support','Application Directory Support','アプリ案内知識',20),
+  ('general_support','os_general_support','OS General Support','OS 全般ヘルプ知識',30),
+  ('os','civilization_os_support','CivilizationOS Support','CivilizationOS 固定知識',40),
+  ('os','persona_os_support','PersonaOS Support','PersonaOS 固定知識',50),
+  ('os','business_os_support','BusinessOS Support','BusinessOS 固定知識',60),
+  ('business','business_os_fixed_knowledge','BusinessOS Fixed Knowledge','BusinessOS の固定知識',70),
+  ('business','erp_fixed_knowledge','ERP Fixed Knowledge','ERP の固定知識',80),
+  ('academic','general_literacy','General Literacy','一般教養知識',90),
+  ('academic','quantum_mechanics','Quantum Mechanics','量子力学知識',100),
+  ('real_history','world_history_real','World History Real','世界史知識',110),
+  ('civilization_history','civilization_history_foundation','Civilization History Foundation','Civilization成立史',120),
+  ('legal','legal_general_support','Legal General Support','法律一般知識',130),
+  ('medical','medical_general_support','Medical General Support','医療一般知識',140)
+) as x(domain_code, space_code, display_name, description, sort_order)
+  on d.domain_code = x.domain_code
+on conflict do nothing;
+
+-- ============================================================
+-- 3. scope_master
+-- ============================================================
+insert into "CX22073JW".scope_master
+(space_id, scope_code, display_name, description, scope_level, query_hint, is_default, publish_status, status, sort_order, created_at, updated_at)
+select s.space_id, x.scope_code, x.display_name, x.description, x.scope_level, null, x.is_default, 'published', 'active', x.sort_order, now(), now()
+from "CX22073JW".space_master s
+join (
+  values
+  ('civilization_portal_support','civilization_portal_support_basic','Civilization Portal Support Basic','Portal 基本ヘルプ','basic',true,10),
+  ('application_directory_support','application_directory_support_basic','Application Directory Support Basic','アプリ一覧基本案内','basic',true,20),
+  ('os_general_support','os_general_support_basic','OS General Support Basic','OS 一般案内','basic',true,30),
+  ('civilization_portal_support','portal_top_helpdesk_default','Portal Top Helpdesk Default','Portal トップ用標準ヘルプ','full',false,40),
+  ('business_os_fixed_knowledge','business_os_general_fixed','BusinessOS General Fixed','BusinessOS 固定知識一般','full',true,50),
+  ('business_os_fixed_knowledge','business_os_billing_fixed','BusinessOS Billing Fixed','BusinessOS 請求固定知識','restricted',false,60),
+  ('business_os_fixed_knowledge','business_os_inventory_fixed','BusinessOS Inventory Fixed','BusinessOS 在庫固定知識','restricted',false,70),
+  ('business_os_fixed_knowledge','business_os_approval_fixed','BusinessOS Approval Fixed','BusinessOS 承認固定知識','restricted',false,80),
+  ('erp_fixed_knowledge','erp_general_fixed','ERP General Fixed','ERP 固定知識一般','full',true,90),
+  ('general_literacy','general_literacy_basic','General Literacy Basic','一般教養基礎','basic',true,100),
+  ('quantum_mechanics','quantum_mechanics_intro','Quantum Mechanics Intro','量子力学入門','basic',true,110),
+  ('quantum_mechanics','quantum_mechanics_advanced','Quantum Mechanics Advanced','量子力学上級','advanced',false,120),
+  ('legal_general_support','legal_general_basic','Legal General Basic','法律一般基礎','basic',true,130),
+  ('medical_general_support','medical_general_basic','Medical General Basic','医療一般基礎','basic',true,140)
+) as x(space_code, scope_code, display_name, description, scope_level, is_default, sort_order)
+  on s.space_code = x.space_code
+on conflict do nothing;
+
+-- ============================================================
+-- 4. disclaimer_master
+-- ============================================================
+insert into "CX22073JW".disclaimer_master
+(disclaimer_code, display_name, body_text, locale_code, disclaimer_type, publish_status, status, created_at, updated_at)
+values
+('general_support_default', 'General Support Default', '一般案内として提供される参考情報です。', 'ja-JP', 'general_support', 'published', 'active', now(), now()),
+('legal_general_default', 'Legal General Default', '法律相談は一般的な情報提供であり、個別案件の正式な法的助言ではありません。', 'ja-JP', 'legal', 'published', 'active', now(), now()),
+('medical_general_default', 'Medical General Default', '医療相談は一般的な情報提供であり、診断や治療の代替ではありません。', 'ja-JP', 'medical', 'published', 'active', now(), now()),
+('study_general_default', 'Study General Default', '学習用途向けの知識提供です。', 'ja-JP', 'study', 'published', 'active', now(), now()),
+('historical_reference_default', 'Historical Reference Default', '歴史知識は参照情報として提供します。', 'ja-JP', 'historical_reference', 'published', 'active', now(), now())
+on conflict do nothing;
+
+-- ============================================================
+-- 5. caller_master
+-- ============================================================
+insert into "CX22073JW".caller_master
+(caller_code, caller_type, display_name, description, owner_domain_code, owner_target_code, default_space_code, default_scope_code, status, created_at, updated_at)
+values
+('portal_site_top', 'portal', 'Portal Site Top', 'Portal トップ画面ヘルプデスク', 'general_support', 'portal_site', 'civilization_portal_support', 'portal_top_helpdesk_default', 'active', now(), now()),
+('portal_site_helpdesk', 'portal', 'Portal Site Helpdesk', 'Portal helpdesk 共通入口', 'general_support', 'portal_site', 'civilization_portal_support', 'civilization_portal_support_basic', 'active', now(), now()),
+('portal_site_os_list', 'portal', 'Portal Site OS List', 'Portal OS 一覧画面', 'general_support', 'portal_site', 'os_general_support', 'os_general_support_basic', 'active', now(), now()),
+('civilization_os', 'os', 'CivilizationOS', 'CivilizationOS からの知識参照', 'os', 'civilization_os', 'civilization_os_support', 'civilization_portal_support_basic', 'active', now(), now()),
+('persona_os', 'os', 'PersonaOS', 'PersonaOS からの知識参照', 'os', 'persona_os', 'persona_os_support', 'civilization_portal_support_basic', 'active', now(), now()),
+('business_os', 'os', 'BusinessOS', 'BusinessOS からの知識参照', 'os', 'business_os', 'business_os_support', 'business_os_general_fixed', 'active', now(), now()),
+('business_os_ai_worker', 'internal_tool', 'BusinessOS AI Worker', 'BusinessOS AI worker 固定知識参照', 'business', 'business_os_ai_worker', 'business_os_fixed_knowledge', 'business_os_general_fixed', 'active', now(), now()),
+('legal_consult_app', 'consultation_app', 'Legal Consult App', '法律相談アプリ', 'legal', 'legal_consult_app', 'legal_general_support', 'legal_general_basic', 'active', now(), now()),
+('medical_consult_app', 'consultation_app', 'Medical Consult App', '医療相談アプリ', 'medical', 'medical_consult_app', 'medical_general_support', 'medical_general_basic', 'active', now(), now()),
+('academic_study_app', 'application', 'Academic Study App', '学問知識アクセス用アプリ', 'academic', 'academic_study_app', 'general_literacy', 'general_literacy_basic', 'active', now(), now())
+on conflict do nothing;
+
+-- ============================================================
+-- 6. caller_scope_binding
+-- ============================================================
+insert into "CX22073JW".caller_scope_binding
+(caller_id, scope_id, is_default, priority_no, access_mode, status, created_at, updated_at)
+select c.caller_id, sc.scope_id, x.is_default, x.priority_no, x.access_mode, 'active', now(), now()
+from "CX22073JW".caller_master c
+join (
+  values
+  ('portal_site_top','portal_top_helpdesk_default',true,10,'preferred'),
+  ('portal_site_top','civilization_portal_support_basic',false,20,'fallback_only'),
+  ('portal_site_top','application_directory_support_basic',false,30,'allowed'),
+  ('portal_site_top','os_general_support_basic',false,40,'allowed'),
+  ('portal_site_os_list','application_directory_support_basic',true,10,'preferred'),
+  ('portal_site_os_list','os_general_support_basic',false,20,'allowed'),
+  ('business_os_ai_worker','business_os_general_fixed',true,10,'preferred'),
+  ('business_os_ai_worker','business_os_billing_fixed',false,20,'allowed'),
+  ('business_os_ai_worker','business_os_inventory_fixed',false,30,'allowed'),
+  ('business_os_ai_worker','business_os_approval_fixed',false,40,'allowed'),
+  ('business_os_ai_worker','erp_general_fixed',false,50,'fallback_only'),
+  ('legal_consult_app','legal_general_basic',true,10,'preferred'),
+  ('medical_consult_app','medical_general_basic',true,10,'preferred'),
+  ('academic_study_app','general_literacy_basic',true,10,'preferred'),
+  ('academic_study_app','quantum_mechanics_intro',false,20,'allowed')
+) as x(caller_code, scope_code, is_default, priority_no, access_mode)
+  on c.caller_code = x.caller_code
+join "CX22073JW".scope_master sc
+  on sc.scope_code = x.scope_code
+on conflict do nothing;
+
+-- ============================================================
+-- 7. route_policy
+-- ============================================================
+insert into "CX22073JW".route_policy
+(route_policy_code, caller_id, primary_scope_id, fallback_scope_id, answer_style_profile_code, safety_policy_profile_code, disclaimer_code, escalation_required, status, created_at, updated_at)
+select
+  x.route_policy_code,
+  c.caller_id,
+  ps.scope_id,
+  fs.scope_id,
+  x.answer_style_profile_code,
+  x.safety_policy_profile_code,
+  x.disclaimer_code,
+  x.escalation_required,
+  'active',
+  now(),
+  now()
+from (
+  values
+  ('portal_site_top_policy','portal_site_top','portal_top_helpdesk_default','civilization_portal_support_basic',null,null,'general_support_default',false),
+  ('business_os_ai_worker_policy','business_os_ai_worker','business_os_general_fixed','erp_general_fixed',null,null,'general_support_default',false),
+  ('legal_consult_app_policy','legal_consult_app','legal_general_basic',null,null,'legal_guarded','legal_general_default',true),
+  ('medical_consult_app_policy','medical_consult_app','medical_general_basic',null,null,'medical_guarded','medical_general_default',true),
+  ('academic_study_app_policy','academic_study_app','general_literacy_basic','quantum_mechanics_intro',null,null,'study_general_default',false)
+) as x(route_policy_code, caller_code, primary_scope_code, fallback_scope_code, answer_style_profile_code, safety_policy_profile_code, disclaimer_code, escalation_required)
+join "CX22073JW".caller_master c on c.caller_code = x.caller_code
+left join "CX22073JW".scope_master ps on ps.scope_code = x.primary_scope_code
+left join "CX22073JW".scope_master fs on fs.scope_code = x.fallback_scope_code
+on conflict do nothing;
+
+
+# ------------------------------------------------------------
+# SOURCE 79
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120024_THREE_SCHEMA_INITIAL_SEED_ORDER_NOTE.md
+
+# ============================================================
+# THREE SCHEMA INITIAL SEED ORDER NOTE
+# ============================================================
+
+status: draft-additive
+layer: implementation-ready
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+seed_order:
+1. portal schema DDL
+2. CX22073JW core DDL
+3. portal initial seed
+4. CX22073JW initial seed
+5. scenario seed later
+
+reason:
+- Portal top helpdesk を先に成立させる
+- caller / scope / route_policy を先に成立させる
+- sinario は再生構造のため後段でよい
+
+
+# ------------------------------------------------------------
+# SOURCE 80
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT LAYER OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の development layer 全体像を
+短く定義するための overview 文書である。
+
+# ============================================================
+# 2. layer 役割
+# ============================================================
+
+development layer は、
+Portal Site の実装そのものではなく、
+実装前の具体的な開発設計を扱う。
+
+本 layer は次を固定する。
+
+- 開発優先方針
+- 開発フェーズ
+- フェーズ別実装設計
+- ディレクトリ構成
+- ファイル責務境界
+- 実装着手順
+
+# ============================================================
+# 3. 扱う範囲
+# ============================================================
+
+development layer が扱う範囲は次の通りとする。
+
+- P0 Web基盤立ち上げ
+- P1 公開ページ先行実装
+- P2 認証導線実装
+- P3 OS入口制御実装
+- P4 マイランチャー最小実装
+
+P5 以降は後続拡張対象とする。
+
+# ============================================================
+# 4. 主要文書
+# ============================================================
+
+- 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- 1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 5. ルート正本参照
+# ============================================================
+
+本 layer の上位正本は次の通りとする。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+development layer は、
+上位正本に従って実装設計を具体化するための layer とする。
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+本 layer は設計書群であり、
+実コードはまだ作成しない。
+
+
+# ------------------------------------------------------------
+# SOURCE 81
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT LAYER INDEX
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の development layer 索引文書である。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+1. 13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+2. 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+3. 1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+4. 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+5. 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+6. 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+7. 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+8. 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+9. 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 3. 論点
+# ============================================================
+
+- 開発優先方針
+- 開発フェーズ
+- P0 Web基盤
+- P1 公開ページ
+- P2 認証導線
+- P3 入口判定
+- P4 ランチャー
+- ディレクトリ構成
+- ファイル責務境界
+
+# ============================================================
+# 4. ルート正本参照
+# ============================================================
+
+本 layer の上位正本は次の通りとする。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. 現在状態
+# ============================================================
+
+本 layer は実装設計文書群であり、
+実装そのものはまだ開始しない。
+
+
+# ------------------------------------------------------------
+# SOURCE 82
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の実装設計全体像を定義する文書である。
+
+本書の目的は、
+Portal Site の開発優先方針、
+実装対象範囲、
+フェーズ分解、
+実装境界、
+実装順序を固定し、
+以後の実装作業が設計逸脱しないようにすることにある。
+
+# ============================================================
+# 2. 前提
+# ============================================================
+
+Portal Site は、
+Civilization 全体の公開入口となる
+Webサイト / Webアプリとして実装する。
+
+Portal Site は次を担う。
+
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- Web入口前段判定
+- お知らせ表示
+- ポータル運営管理
+
+新規登録と認証の正本は CivilizationOS とする。  
+OS間の直接リンクは禁止する。
+
+# ============================================================
+# 3. 開発優先方針
+# ============================================================
+
+Portal Site は開発先行対象とする。
+
+先行開発の目的は、
+各OS本体より先に、
+Civilization 全体の入口、
+認証導線、
+OS Web入口制御、
+ログイン後ランチャーを成立させることにある。
+
+# ============================================================
+# 4. 開発フェーズ
+# ============================================================
+
+- P0: Web基盤立ち上げ
+- P1: 公開ページ先行実装
+- P2: 認証導線実装
+- P3: OS入口制御実装
+- P4: マイランチャー最小実装
+- P5: お知らせ / メンテ強化
+- P6: 管理画面最小実装
+- P7: 管理 / 運用完成化
+
+一次完了ラインは P4 完了時点とする。
+
+# ============================================================
+# 5. 実装設計文書
+# ============================================================
+
+本 layer では次の文書を扱う。
+
+- 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- 1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+本 layer は実装設計文書であり、
+実装そのものではない。
+
+現時点では、
+設計書追加のみを行い、
+実コード作成はまだ開始しない。
+
+
+# ------------------------------------------------------------
+# SOURCE 83
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT INDEX
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site の実装設計文書群の索引である。
+
+# ============================================================
+# 2. 推奨読順
+# ============================================================
+
+1. 1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+2. 1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+3. 1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+4. 1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+5. 1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+6. 1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+7. 1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 3. 論点一覧
+# ============================================================
+
+- 開発優先方針
+- フェーズ分解
+- ディレクトリ構成
+- ファイル構成
+- 公開ページ実装
+- 認証導線実装
+- 入口判定実装
+- ランチャー実装
+
+# ============================================================
+# 4. 上位参照
+# ============================================================
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+
+# ------------------------------------------------------------
+# SOURCE 84
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P0 WEB FOUNDATION IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P0
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の Web基盤立ち上げ実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P0 の目的は、
+Portal Site を Webアプリとして起動可能な状態にし、
+以後の P1〜P4 を迷わず積める共通土台を作ることにある。
+
+# ============================================================
+# 3. 対象
+# ============================================================
+
+- Webアプリ雛形
+- ルーティング土台
+- 共通レイアウト
+- 共通ヘッダー / フッター
+- 基本異常ページ
+- route constants
+- 基本型
+- mock データ土台
+
+# ============================================================
+# 4. 実装単位
+# ============================================================
+
+P0-1:
+- プロジェクト土台作成
+
+P0-2:
+- 共通レイアウト作成
+
+P0-3:
+- 共通UI最小部品
+
+P0-4:
+- 共通異常ページ土台
+
+P0-5:
+- 共通型と定数
+
+P0-6:
+- mock データ土台
+
+# ============================================================
+# 5. 完了条件
+# ============================================================
+
+- 開発サーバ起動可能
+- 主要URLに到達可能
+- 全ページが共通外枠で描画される
+- header / footer が機能する
+- /error /maintenance /access-denied が存在する
+- route constants が存在する
+- os mock が存在する
+
+
+# ------------------------------------------------------------
+# SOURCE 85
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P1 PUBLIC PAGES IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P1
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の公開ページ先行実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P1 の目的は、
+Portal Site を Civilization 全体の公開入口として
+視認可能かつ案内可能な状態にすることにある。
+
+# ============================================================
+# 3. 対象ページ
+# ============================================================
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /guide
+
+# ============================================================
+# 4. 実装単位
+# ============================================================
+
+P1-1:
+- トップページ
+
+P1-2:
+- Civilization紹介ページ
+
+P1-3:
+- OS一覧ページ
+
+P1-4:
+- OS詳細ページ
+
+P1-5:
+- 利用案内ページ
+
+# ============================================================
+# 5. 各ページ共通要件
+# ============================================================
+
+- Page Title Block を持つ
+- 共通レイアウト上で描画する
+- 公開導線と矛盾しない
+- Portal Site の役割境界と整合する
+- 認証前でも閲覧可能である
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- 公開トップが成立する
+- OS一覧とOS詳細が成立する
+- Civilization紹介が成立する
+- 利用案内が成立する
+- 公開導線がページ間で連結している
+
+
+# ------------------------------------------------------------
+# SOURCE 86
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P2 AUTH ENTRY IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P2
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の認証導線実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P2 の目的は、
+Portal Site から CivilizationOS 認証へ誘導し、
+認証後に元要求先へ戻す導線を成立させることにある。
+
+# ============================================================
+# 3. 対象
+# ============================================================
+
+- /login
+- /signup
+- /auth/return
+- session summary 参照
+- login URL 参照
+- signup URL 参照
+- return context 保存 / 読込 / 解除
+
+# ============================================================
+# 4. return context
+# ============================================================
+
+最低保持項目は次とする。
+
+- requested_os_code
+- return_target
+- request_timestamp
+
+# ============================================================
+# 5. 実装単位
+# ============================================================
+
+- login 案内ページ
+- signup 案内ページ
+- CivilizationOS 認証参照接続
+- return context 管理
+- auth return ページ
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- 未ログイン遷移要求時に login 導線へ流せる
+- signup 導線が成立する
+- 認証後に return context を解決できる
+- 原則として元要求先へ復帰できる
+
+
+# ------------------------------------------------------------
+# SOURCE 87
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P3 OS ENTRY DECISION IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P3
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site の OS入口判定実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P3 の目的は、
+各OSへの唯一の公式Web入口として、
+Portal Site が入口前段判定を行えるようにすることにある。
+
+# ============================================================
+# 3. 判定結果
+# ============================================================
+
+- launchable
+- login_required
+- denied
+- maintenance
+- error
+
+# ============================================================
+# 4. 判定軸
+# ============================================================
+
+- publish status
+- maintenance status
+- login status
+- entity type
+- affiliation summary
+- contract tier
+- beta eligibility
+- age / legal / region flags
+- 遷移先URL有効性
+
+# ============================================================
+# 5. 実装単位
+# ============================================================
+
+- 遷移判定サービス
+- 公開状態判定
+- メンテナンス判定
+- 主体条件判定
+- 遷移先URL解決
+- deny / maintenance / error 画面接続
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- 判定結果5種を返せる
+- OS詳細 / launcher から利用できる
+- 条件未達 / メンテ / エラー時に適切なページへ分岐する
+
+
+# ------------------------------------------------------------
+# SOURCE 88
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P4 LAUNCHER IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+phase: P4
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site のマイランチャー最小実装設計を定義する。
+
+# ============================================================
+# 2. 目的
+# ============================================================
+
+P4 の目的は、
+Portal Site を単なる案内ではなく、
+ログイン後の実用入口として成立させることにある。
+
+# ============================================================
+# 3. 対象ページ
+# ============================================================
+
+- /me/launcher
+
+# ============================================================
+# 4. 表示対象
+# ============================================================
+
+- 利用可能OS
+- 最近使ったOS
+- おすすめOS
+- 利用不可OSと理由
+- 利用者向けお知らせ
+
+# ============================================================
+# 5. 実装単位
+# ============================================================
+
+- launcher ページ土台
+- 利用可能OS表示
+- 利用不可理由表示
+- 最近使ったOS表示
+- おすすめOS表示
+- P3 判定との接続
+
+# ============================================================
+# 6. 完了条件
+# ============================================================
+
+- login 後に launcher を開ける
+- 利用可能OSへ進める
+- 利用不可理由が表示される
+- recent / recommended の最小表示が成立する
+- Portal Site の一次完了条件を満たす
+
+
+# ------------------------------------------------------------
+# SOURCE 89
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DIRECTORY AND FILE STRUCTURE IMPLEMENTATION DESIGN
+# ============================================================
+
+status: canonical-design
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Portal Site 実装のディレクトリ構成と
+ファイル責務境界を定義する。
+
+# ============================================================
+# 2. 基本原則
+# ============================================================
+
+- app は URL入口に責務を限定する
+- features は画面 / 機能責務を保持する
+- components は再利用UIを保持する
+- services は外部参照 / 呼出を保持する
+- types は型正本とする
+- mocks は実装初期の仮データ正本とする
+
+# ============================================================
+# 3. 想定ディレクトリ
+# ============================================================
+
+- app
+- components/common
+- components/layout
+- components/navigation
+- components/feedback
+- features/public-home
+- features/os-catalog
+- features/auth-entry
+- features/launcher
+- services/civilization-auth
+- services/os-launch
+- services/return-context
+- lib/routing
+- types/os
+- types/auth
+- types/decision
+- mocks/os
+- mocks/notices
+- mocks/launcher
+- config
+- styles
+- public
+
+# ============================================================
+# 4. URL入口
+# ============================================================
+
+最低限の対象URLは次とする。
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /guide
+- /login
+- /signup
+- /auth/return
+- /access-denied
+- /maintenance
+- /error
+- /me/launcher
+- /admin
+
+# ============================================================
+# 5. 完了条件
+# ============================================================
+
+- P0〜P4 を迷わず積める構成である
+- route / feature / service / type の責務が混ざらない
+- app が過剰に肥大化しない
+
+
+# ------------------------------------------------------------
+# SOURCE 90
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300008_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SPEC CHANGE IMPLEMENTATION DESIGN
+# AI HELPDESK ENTRY / DB COPY / DB APP TREE
+# ============================================================
+
+status: draft-additive
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+今回の仕様変更を
+開発設計へ反映するための文書である。
+
+# ============================================================
+# 2. 開発影響
+# ============================================================
+
+P1 公開ページ:
+- トップ画面に AIヘルプデスク入口を追加する
+- 固定文言ではなく DB 取得文言へ切り替える
+
+P1/P3:
+- OS / application 一覧は DB 駆動階層描画へ切り替える
+
+P2/P3:
+- AIヘルプデスク入口も必要に応じて判定対象へ含める
+
+# ============================================================
+# 3. 追加タスク
+# ============================================================
+
+- copy service 設計
+- app tree service 設計
+- helpdesk entry 描画設計
+- DB fallback 設計
+- locale / page / section 単位取得設計
+
+# ============================================================
+# 4. 最小実装順
+# ============================================================
+
+1. top page に AIヘルプデスク入口追加
+2. copy mock / service 化
+3. app tree mock / service 化
+4. OS一覧の DB 駆動表示化
+5. guide / civilization / login 文言の DB 取得化
+
+# ============================================================
+# 5. 原則
+# ============================================================
+
+- additive only
+- 先に mock で差し替え可能構造を作る
+- 後から DB 接続しても page 構造を崩さない
+
+
+# ------------------------------------------------------------
+# SOURCE 91
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300009_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_SPEC_CHANGE_DIFF_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE PHASE P1 PUBLIC PAGES
+# SPEC CHANGE DIFF IMPLEMENTATION DESIGN
+# ============================================================
+
+status: draft-additive
+layer: development
+phase: P1
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+仕様変更
+- トップ画面に AIチャット入口を設ける
+- ページ文言を DB 取得にする
+- アプリ一覧を DB 駆動階層表示にする
+を前提に、
+P1 公開ページ実装設計の差分を定義する文書である。
+
+# ============================================================
+# 2. 差分対象
+# ============================================================
+
+差分対象ページは次の通りとする。
+
+- /
+- /civilization
+- /os
+- /os/{os_code}
+- /guide
+
+# ============================================================
+# 3. トップページ差分
+# ============================================================
+
+トップページには、
+全アプリ共通ヘルプデスクとして
+AIチャット入口を表示する。
+
+追加対象:
+- AI helpdesk section
+- AI helpdesk CTA
+- AI helpdesk short guidance
+
+トップページ文言は固定埋込ではなく、
+copy service を通じて DB から取得する。
+
+トップページ表示ブロック例:
+- hero
+- featured applications or groups
+- AI helpdesk entry
+- notice summary
+- quick guide links
+
+# ============================================================
+# 4. Civilization紹介ページ差分
+# ============================================================
+
+Civilization紹介ページの説明文は、
+DB copy 取得へ切り替える。
+
+対象:
+- title
+- introductory body
+- Civilization ID explanation
+- Portal / CivilizationOS / 各OS の関係説明
+
+# ============================================================
+# 5. OS一覧ページ差分
+# ============================================================
+
+OS一覧ページは、
+固定 mock 一覧表示ではなく、
+DB 駆動階層表示を前提とする。
+
+最低要件:
+- tree root 取得
+- child node 展開
+- display_name 表示
+- description 表示
+- status 表示
+- target 導線表示
+
+node_type に応じた表示例:
+- group
+- os
+- application
+- helpdesk
+- page
+
+# ============================================================
+# 6. OS詳細ページ差分
+# ============================================================
+
+OS詳細ページ文言は DB copy 取得を前提とする。
+
+対象:
+- page title
+- summary
+- eligibility description
+- caution text
+- CTA text
+
+また、
+関連アプリや関連グループを
+DB tree から参照可能にする余地を持つ。
+
+# ============================================================
+# 7. Guideページ差分
+# ============================================================
+
+Guideページ文言は DB copy 取得を前提とする。
+
+対象:
+- intro text
+- step labels
+- login guidance
+- signup guidance
+- helpdesk guidance
+
+Guide では、
+AI helpdesk へ誘導する導線を設けてもよい。
+
+# ============================================================
+# 8. 追加サービス前提
+# ============================================================
+
+P1 差分を成立させるため、
+少なくとも次の service interface を想定する。
+
+- copy service
+- app tree service
+- helpdesk entry service
+
+最低責務:
+copy service:
+- page_code / section_code / locale_code で文言取得
+
+app tree service:
+- parent node 単位で child node 取得
+- 表示順付き取得
+
+helpdesk entry service:
+- top page 用 helpdesk entry 取得
+
+# ============================================================
+# 9. fallback 方針
+# ============================================================
+
+開発初期は fallback を許可する。
+
+ただし原則は次の通りとする。
+
+- fixed text は暫定 fallback
+- DB copy を正本とする
+- fixed app list は暫定 fallback
+- DB tree を正本とする
+
+# ============================================================
+# 10. P1 差分タスク
+# ============================================================
+
+P1-diff-1:
+- top page に AI helpdesk section を追加
+
+P1-diff-2:
+- top page copy を DB key 駆動へ変更
+
+P1-diff-3:
+- civilization page copy を DB key 駆動へ変更
+
+P1-diff-4:
+- os list を DB tree 駆動描画へ変更
+
+P1-diff-5:
+- os detail copy を DB key 駆動へ変更
+
+P1-diff-6:
+- guide page copy を DB key 駆動へ変更
+
+# ============================================================
+# 11. 差分完了条件
+# ============================================================
+
+- トップ画面に AIチャット入口がある
+- P1 公開ページ文言が DB 取得前提構造になっている
+- OS一覧が DB tree を受け取れる構造になっている
+- fixed 文言 / fixed 一覧が正本扱いされていない
+
+
+# ------------------------------------------------------------
+# SOURCE 92
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300010_CIVILIZATION_PORTAL_SITE_P1_COPY_KEYS_AND_APP_TREE_RENDERING_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE P1 COPY KEYS AND APP TREE RENDERING
+# IMPLEMENTATION DESIGN
+# ============================================================
+
+status: draft-additive
+layer: development
+phase: P1
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+P1 公開ページにおける
+copy key 設計と app tree rendering 設計を定義する。
+
+# ============================================================
+# 2. copy key minimum set
+# ============================================================
+
+top:
+- top.hero.title
+- top.hero.description
+- top.ai_helpdesk.title
+- top.ai_helpdesk.description
+- top.ai_helpdesk.cta
+- top.quick_links.title
+
+civilization:
+- civilization.page.title
+- civilization.page.description
+- civilization.id.title
+- civilization.id.body
+
+os list:
+- os.list.page.title
+- os.list.page.description
+
+os detail:
+- os.detail.title
+- os.detail.description
+- os.detail.eligibility
+- os.detail.cta
+
+guide:
+- guide.page.title
+- guide.page.description
+- guide.step.1
+- guide.step.2
+- guide.step.3
+
+# ============================================================
+# 3. app tree rendering minimum rules
+# ============================================================
+
+- root node から開始する
+- child node は sort_order で並べる
+- visibility_status が visible の node のみ表示する
+- publish_status が published の node を優先する
+- node_type に応じて renderer を分ける
+
+# ============================================================
+# 4. node renderer examples
+# ============================================================
+
+group:
+- セクション見出し
+- 子要素群の container
+
+os:
+- OS card renderer
+
+application:
+- application card renderer
+
+helpdesk:
+- helpdesk entry renderer
+
+page:
+- page link renderer
+
+# ============================================================
+# 5. helpdesk rendering
+# ============================================================
+
+AI helpdesk renderer は少なくとも次を表示する。
+
+- display_name
+- short_description
+- CTA
+- target route
+
+# ============================================================
+# 6. 開発原則
+# ============================================================
+
+- 最初は mock source で renderer を成立させる
+- 後から service を差し替えても page 構造を崩さない
+- copy key 名を page 固有直書きにしすぎない
+
+
+# ------------------------------------------------------------
+# SOURCE 93
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300011_CX22073JW_KNOWLEDGE_SCHEMA_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CX22073JW KNOWLEDGE SCHEMA IMPLEMENTATION DESIGN
+# ============================================================
+
+status: draft-additive
+layer: development
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+CX22073JW schema の実装設計観点を簡潔に整理する。
+
+# ============================================================
+# 2. 実装順
+# ============================================================
+
+推奨順:
+1. domain_master
+2. space_master
+3. scope_master
+4. disclaimer_master
+5. article
+6. chunk
+7. faq
+8. caller_master
+9. caller_scope_binding
+10. route_policy
+
+# ============================================================
+# 3. Portal との接続点
+# ============================================================
+
+portal 側は次を caller として利用する。
+
+- portal_site_top
+- portal helpdesk entry
+- os or application specific entry
+
+Portal 側は caller_code と requested_scope を指定して
+CX22073JW へアクセスする。
+
+# ============================================================
+# 4. 最小利用シナリオ
+# ============================================================
+
+- Portal トップの AIヘルプデスク
+- OS別ヘルプデスク
+- アプリ別ヘルプデスク
+- 資格学習知識アクセス
+- 言語学習知識アクセス
+- Civilization史アクセス
+- 現実史アクセス
+
+# ============================================================
+# 5. 原則
+# ============================================================
+
+- 知識本文は CX22073JW を正本とする
+- Portal は入口と caller 指定を担う
+- 法律 / 医療は disclaimer と policy を分ける
+- 固定文言や固定FAQに閉じない
+
+
+# ------------------------------------------------------------
+# SOURCE 94
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300012_CX22073JW_KNOWLEDGE_SCHEMA_FULL_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CX22073JW KNOWLEDGE SCHEMA FULL IMPLEMENTATION DESIGN
+# ============================================================
+
+status: draft-additive
+layer: development
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+CX22073JW フル採用版の実装設計を整理する。
+
+# ============================================================
+# 2. 実装優先順
+# ============================================================
+
+phase A:
+- domain_master
+- space_master
+- scope_master
+- article
+- chunk
+- faq
+- caller_master
+- caller_scope_binding
+- route_policy
+- disclaimer_master
+
+phase B:
+- entity_master
+- entity_alias
+- relation_master
+- article_entity_binding
+- discipline_master
+- topic_master
+- article_discipline_binding
+- article_topic_binding
+- source_master
+- review_status_master
+
+phase C:
+- difficulty_profile_master
+- audience_profile_master
+- article_profile_binding
+- timeline_event
+- event_relation
+- event_entity_binding
+- retrieval_profile
+- answer_style_profile
+
+phase D:
+- summaries
+- learning_path
+- bindings
+- response_template
+- logs and gap analysis
+
+# ============================================================
+# 3. 利用対象
+# ============================================================
+
+- Portal Site helpdesk
+- OS helpdesk
+- application helpdesk
+- certification learning
+- language learning
+- academic knowledge access
+- real history access
+- Civilization history access
+- legal support
+- medical support
+
+# ============================================================
+# 4. 原則
+# ============================================================
+
+- Portal は caller / scope 指定を担う
+- CX22073JW は知識本体と回答構造を担う
+- 学問知識は discipline / topic / difficulty / audience で出し分ける
+- 法律 / 医療は disclaimer / safety / style を必ず分ける
+
+
+# ------------------------------------------------------------
+# SOURCE 95
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300013_CX22073JW_AND_SCENARIO_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CX22073JW AND SCENARIO IMPLEMENTATION DESIGN
+# ============================================================
+
+status: draft-additive
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 実装方針
+# ============================================================
+
+- CX22073JW は知識正本を先に整備する
+- scenario は再生正本として別実装する
+- Portal / OS / application / BusinessOS AI worker は caller と scope 指定で CX22073JW にアクセスする
+- ストーリーモード再生は scenario を使う
+
+# ============================================================
+# 2. 実装順
+# ============================================================
+
+1. CX22073JW 中核
+2. CX22073JW.character_profile
+3. scenario 中核
+4. schema 間参照
+5. caller / scope 初期値
+
+
+# ------------------------------------------------------------
+# SOURCE 96
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300014_CX22073JW_INITIAL_SEED_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# CX22073JW INITIAL SEED IMPLEMENTATION DESIGN
+# ============================================================
+
+status: draft-additive
+layer: development
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 実装方針
+# ============================================================
+
+初期 seed は次の順で投入する。
+
+1. domain_master
+2. space_master
+3. scope_master
+4. disclaimer_master
+5. caller_master
+6. caller_scope_binding
+7. route_policy
+
+# ============================================================
+# 2. 初期優先 caller
+# ============================================================
+
+- portal_site_top
+- portal_site_helpdesk
+- civilization_os
+- persona_os
+- business_os
+- business_os_ai_worker
+
+# ============================================================
+# 3. 初期優先 scope
+# ============================================================
+
+- portal_top_helpdesk_default
+- civilization_portal_support_basic
+- application_directory_support_basic
+- os_general_support_basic
+- business_os_general_fixed
+- erp_general_fixed
+
+# ============================================================
+# 4. 原則
+# ============================================================
+
+- Portal top helpdesk を最初に成立させる
+- BusinessOS AI worker の固定知識 access を最初に成立させる
+- 法律 / 医療は disclaimer を先に用意する
+
+
+# ------------------------------------------------------------
+# SOURCE 97
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300015_PORTAL_SCHEMA_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# PORTAL SCHEMA IMPLEMENTATION DESIGN
+# ============================================================
+
+status: draft-additive
+layer: development
+schema: portal
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 実装方針
+# ============================================================
+
+portal schema は、
+Portal Site の入口面・表示面の正本として先に整備する。
+
+# ============================================================
+# 2. 実装優先順
+# ============================================================
+
+1. copy_text
+2. helpdesk_entry
+3. nav_node
+4. nav_node_target
+5. page_section
+6. page_section_item
+
+# ============================================================
+# 3. 接続方針
+# ============================================================
+
+- トップ画面の AIヘルプデスク入口は helpdesk_entry を使う
+- 文言は copy_text を使う
+- 一覧表示は nav_node / nav_node_target を使う
+- ページ構成は page_section / page_section_item を使う
+- 知識本文は portal では持たず CX22073JW を参照する
+
+
+# ------------------------------------------------------------
+# SOURCE 98
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/130.development/1300016_THREE_SCHEMA_IMPLEMENTATION_SEQUENCE_DESIGN.md
+
+# ============================================================
+# THREE SCHEMA IMPLEMENTATION SEQUENCE DESIGN
+# portal / CX22073JW / scenario
+# ============================================================
+
+status: draft-additive
+layer: development
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+3 schema 実装の推奨順を定義する。
+
+# ============================================================
+# 2. 推奨実装順
+# ============================================================
+
+phase 1:
+- portal schema
+- CX22073JW 中核
+- Portal top helpdesk caller / scope
+
+phase 2:
+- CX22073JW character_profile
+- CX22073JW academic / history / legal / medical initial spaces
+- BusinessOS AI worker caller / scope
+
+phase 3:
+- scenario 中核
+- scenario と knowledge の参照接続
+
+phase 4:
+- CX22073JW full expansion
+- logs / retrieval / answer style / learning path
+
+# ============================================================
+# 3. 最小成立条件
+# ============================================================
+
+最小で成立させるべきもの:
+- portal helpdesk entry 表示
+- Portal DB driven copy
+- Portal DB driven nav tree
+- CX22073JW caller / scope routing
+- FAQ / article / chunk retrieval
+- character_profile 正本
+
+# ============================================================
+# 4. 原則
+# ============================================================
+
+- portal は最初に整える
+- 知識は CX22073JW を先に整える
+- シナリオ再生はその後に独立実装する
+
+
+# ------------------------------------------------------------
+# SOURCE 99
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE INTEGRATED TO SPLIT MAPPING
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md の章構成と、
+分割文書群との対応関係を固定するための対応表である。
+
+本書の目的は、
+統合正本と分割正本の対応を明確化し、
+将来の見直し、分解、再統合、
+レビュー、追加設計時に参照しやすくすることにある。
+
+# ============================================================
+# 2. ルート正本
+# ============================================================
+
+統合正本:
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+上位案内:
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# 3. INTEGRATED 章と分割文書の対応
+# ============================================================
+
+## 3.1 文書目的
+INTEGRATED:
+- 1. 文書目的
+
+対応:
+- ルート正本内保持
+- 分割なし
+
+## 3.2 システム定義
+INTEGRATED:
+- 2. システム定義
+
+主対応:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+
+## 3.3 Civilization 全体構造における位置づけ
+INTEGRATED:
+- 3. Civilization 全体構造における位置づけ
+
+主対応:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+
+## 3.4 基本原則
+INTEGRATED:
+- 4. 基本原則
+
+主対応:
+- 080.policy/080000_CIVILIZATION_PORTAL_SITE_ENTRY_POLICY.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+
+## 3.5 責務境界
+INTEGRATED:
+- 5. 責務境界
+
+主対応:
+- 020.architecture/020003_CIVILIZATION_PORTAL_SITE_CIVILIZATIONOS_BOUNDARY_ARCHITECTURE.md
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+## 3.6 利用者整理
+INTEGRATED:
+- 6. 利用者整理
+
+主対応:
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+
+## 3.7 Webページ構成
+INTEGRATED:
+- 7. Webページ構成
+
+主対応:
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+
+## 3.8 公開情報設計
+INTEGRATED:
+- 8. 公開情報設計
+
+主対応:
+- 080.policy/080003_CIVILIZATION_PORTAL_SITE_PUBLIC_INFORMATION_POLICY.md
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+## 3.9 マイランチャー
+INTEGRATED:
+- 9. マイランチャー
+
+主対応:
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+## 3.10 OSカード定義
+INTEGRATED:
+- 10. OSカード定義
+
+主対応:
+- 030.model/030001_CIVILIZATION_PORTAL_SITE_OS_CARD_MODEL.md
+
+## 3.11 遷移原則
+INTEGRATED:
+- 11. 遷移原則
+
+主対応:
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+- 080.policy/080001_CIVILIZATION_PORTAL_SITE_OS_LINK_POLICY.md
+
+## 3.12 OS Web入口遷移フロー
+INTEGRATED:
+- 12. OS Web入口遷移フロー
+
+主対応:
+- 050.flow/050001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_FLOW.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+
+## 3.13 認証復帰原則
+INTEGRATED:
+- 13. 認証復帰原則
+
+主対応:
+- 050.flow/050002_CIVILIZATION_PORTAL_SITE_AUTH_RETURN_FLOW.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+
+## 3.14 権限制御原則
+INTEGRATED:
+- 14. 権限制御原則
+
+主対応:
+- 030.model/030002_CIVILIZATION_PORTAL_SITE_PERMISSION_MODEL.md
+- 080.policy/080002_CIVILIZATION_PORTAL_SITE_PERMISSION_POLICY.md
+
+## 3.15 管理運用原則
+INTEGRATED:
+- 15. 管理運用原則
+
+主対応:
+- 070.operations/070000_CIVILIZATION_PORTAL_SITE_ADMIN_OPERATIONS.md
+- 070.operations/070001_CIVILIZATION_PORTAL_SITE_NOTICE_OPERATIONS.md
+- 070.operations/070002_CIVILIZATION_PORTAL_SITE_MAINTENANCE_OPERATIONS.md
+- 070.operations/070003_CIVILIZATION_PORTAL_SITE_AUDIT_OPERATIONS.md
+
+## 3.16 データモデル概要
+INTEGRATED:
+- 16. データモデル概要
+
+主対応:
+- 030.model/030003_CIVILIZATION_PORTAL_SITE_DATA_MODEL.md
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+## 3.17 API / 連携概要
+INTEGRATED:
+- 17. API / 連携概要
+
+主対応:
+- 060.integration/060000_CIVILIZATION_PORTAL_SITE_CIVILIZATION_AUTH_INTEGRATION.md
+- 060.integration/060001_CIVILIZATION_PORTAL_SITE_OS_LAUNCH_INTEGRATION.md
+- 060.integration/060002_CIVILIZATION_PORTAL_SITE_RETURN_CONTEXT_INTEGRATION.md
+- 060.integration/060003_CIVILIZATION_PORTAL_SITE_API_CONTRACT_SUMMARY.md
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+## 3.18 Webサイトマップ概要
+INTEGRATED:
+- 18. Webサイトマップ概要
+
+主対応:
+- 020.architecture/020001_CIVILIZATION_PORTAL_SITE_SCREEN_ARCHITECTURE.md
+- 020.architecture/020002_CIVILIZATION_PORTAL_SITE_NAVIGATION_ARCHITECTURE.md
+
+## 3.19 実装アーキテクチャ概要
+INTEGRATED:
+- 19. 実装アーキテクチャ概要
+
+主対応:
+- 020.architecture/020000_CIVILIZATION_PORTAL_SITE_ARCHITECTURE.md
+
+## 3.20 DB論理 schema 概要
+INTEGRATED:
+- 20. DB論理 schema 概要
+
+主対応:
+- 120.implementation-ready/120002_CIVILIZATION_PORTAL_SITE_DB_LOGICAL_SCHEMA.md
+
+## 3.21 API exact contract 概要
+INTEGRATED:
+- 21. API exact contract 概要
+
+主対応:
+- 120.implementation-ready/120001_CIVILIZATION_PORTAL_SITE_API_EXACT_CONTRACT.md
+
+## 3.22 画面項目表概要
+INTEGRATED:
+- 22. 画面項目表概要
+
+主対応:
+- 120.implementation-ready/120000_CIVILIZATION_PORTAL_SITE_SCREEN_FIELD_SPEC.md
+
+## 3.23 DB物理方針概要
+INTEGRATED:
+- 23. DB物理方針概要
+
+主対応:
+- 120.implementation-ready/120003_CIVILIZATION_PORTAL_SITE_DB_PHYSICAL_GUIDELINE.md
+
+## 3.24 exact column 定義概要
+INTEGRATED:
+- 24. exact column 定義概要
+
+主対応:
+- 120.implementation-ready/120004_CIVILIZATION_PORTAL_SITE_EXACT_COLUMN_DEFINITION.md
+
+## 3.25 現在状態
+INTEGRATED:
+- 25. 現在状態
+
+対応:
+- ルート正本内保持
+- 各 overview / index にも状態記述あり
+
+## 3.26 最終定義
+INTEGRATED:
+- 26. 最終定義
+
+対応:
+- ルート正本内保持
+- overview と整合維持
+
+## 3.27 詳細分割文書参照
+INTEGRATED:
+- 27. 詳細分割文書参照
+
+対応:
+- 本対応表
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+
+# ============================================================
+# 4. レイヤ別の役割整理
+# ============================================================
+
+020.architecture:
+- 全体構造
+- Webページ構成
+- 導線構造
+- CivilizationOS 境界
+
+030.model:
+- ドメイン要素
+- OSカード
+- 入口権限制御
+- データモデル
+
+050.flow:
+- ログイン導線
+- OS Web入口遷移
+- 認証復帰
+- アクセス拒否
+- メンテナンス導線
+
+060.integration:
+- CivilizationOS 認証参照
+- 各OS Web入口連携
+- 復帰文脈
+- API区分
+
+070.operations:
+- 管理運用
+- お知らせ運用
+- メンテ運用
+- 監査運用
+
+080.policy:
+- 入口原則
+- OSリンク原則
+- 権限制御原則
+- 公開情報原則
+
+120.implementation-ready:
+- 画面項目表
+- API exact contract
+- DB論理 schema
+- DB物理方針
+- exact column 定義
+
+# ============================================================
+# 5. 解釈原則
+# ============================================================
+
+- ルート正本の本文基準は 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md とする。
+- 分割文書は対応レイヤの詳細正本として扱う。
+- ルート正本と分割文書に差がある場合、まずルート正本を確認する。
+- 分割文書の修正は、必要に応じてルート正本との整合確認を伴う。
+- 本対応表は、統合正本と分割正本の橋渡し文書として扱う。
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+本対応表は、Portal Site 設計の分割整理後の canonical design support 文書である。  
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 100
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SYSTEM INDEX REFLECTION NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site を Civilization System 全体から
+見つけやすくするための
+上位 index 反映方針を整理する補助文書である。
+
+本書の目的は、
+Portal Site を docs 配下に埋もれさせず、
+Civilization 全体の公開入口システムとして
+独立トップ階層に置いた理由と、
+今後上位 index に反映すべき要点を固定することにある。
+
+# ============================================================
+# 2. 現在の正式配置
+# ============================================================
+
+Civilization Portal Site の正式配置先は次とする。
+
+- /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site
+
+この配置は、
+Portal Site を単なる文書置き場ではなく、
+Civilization 全体の公開入口システムとして扱うためのものである。
+
+# ============================================================
+# 3. docs 配下に置かない理由
+# ============================================================
+
+Portal Site を 90.docs 配下に置かない理由は次の通りとする。
+
+- docs 配下では設計書群に埋もれやすい。
+- Portal Site は Civilization 全体の公開入口であり、単なる資料ではない。
+- Portal Site は各OSへの唯一の公式Web導線を担う。
+- Portal Site は CivilizationOS 認証導線と接続する上位システムである。
+- 将来、設計書だけでなく運用資料や実装前資料が増えても独立配置の方が整理しやすい。
+
+# ============================================================
+# 4. applications 配下に置かない理由
+# ============================================================
+
+Portal Site を 07.applications 配下に置かない理由は次の通りとする。
+
+- Portal Site は単独アプリではない。
+- Portal Site は Civilization 全体の入口システムである。
+- Portal Site は各OSおよび各アプリの上位にある導線システムである。
+- applications 配下に置くと役割境界が曖昧になる。
+
+# ============================================================
+# 5. 独立トップ階層に置く理由
+# ============================================================
+
+Portal Site を独立トップ階層に置く理由は次の通りとする。
+
+- Civilization 全体の公開入口として目立つ。
+- 各OSと同列ではないが、各OSを束ねる上位入口として認識しやすい。
+- docs や applications に埋もれない。
+- 将来、Portal Site 自体の運用・設計・実装前仕様をまとめやすい。
+- Civilization System 全体の構成上、公開入口の存在が明示される。
+
+# ============================================================
+# 6. 上位 index へ反映すべき要点
+# ============================================================
+
+Civilization System 全体の上位 index に反映すべき要点は次の通りとする。
+
+- 08.civilization-portal-site は Civilization 全体の公開入口システムである。
+- Portal Site は Webサイト / Webアプリとして設計される。
+- 各OSへの唯一の公式Web導線は Portal Site が保持する。
+- 新規登録と認証の正本は CivilizationOS が担う。
+- 未ログイン時は CivilizationOS のWebログインへ誘導する。
+- 認証後は原則として要求元の対象OS Web入口へ復帰する。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 7. 上位 index に書くべき短縮説明
+# ============================================================
+
+上位 index に書く短縮説明は次でよい。
+
+08.civilization-portal-site:
+Civilization 全体の公開入口となる公式Webポータル。
+各OSへの唯一の公式Web導線、
+ログイン案内、
+新規登録案内、
+ログイン済み利用者向けWebランチャーを担う。
+
+# ============================================================
+# 8. 参照先
+# ============================================================
+
+Portal Site のルート正本は次の通りとする。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+Portal Site の詳細分割文書は各レイヤ配下を参照する。
+
+- ../020.architecture
+- ../030.model
+- ../050.flow
+- ../060.integration
+- ../070.operations
+- ../080.policy
+- ../120.implementation-ready
+
+# ============================================================
+# 9. 現在状態
+# ============================================================
+
+本書は、
+Civilization Portal Site を Civilization System 全体から
+見つけやすくするための canonical-design-support 文書である。
+
+本書は補助文書であり、
+ルート正本や統合正本を置き換えるものではない。
+
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 101
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DESIGN COMPLETE NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site 設計書群が
+実装前 canonical design として
+完了状態に到達したことを記録する補助文書である。
+
+本書の目的は、
+設計完了時点の状態、
+正本構成、
+参照順、
+今後の扱いを固定することにある。
+
+# ============================================================
+# 2. 設計完了の定義
+# ============================================================
+
+Civilization Portal Site 設計は、
+次の条件を満たしたため、
+実装前 canonical design として完了扱いとする。
+
+- ルート正本が整備されている
+- 統合正本が整備されている
+- レイヤ別分割文書が整備されている
+- 各レイヤの overview / index が整備されている
+- 個別文書に上位参照が付与されている
+- integrated と分割文書の対応表が整備されている
+- 命名・番号・入口順の点検が完了している
+- Webページ前提の設計として統一されている
+
+# ============================================================
+# 3. ルート正本
+# ============================================================
+
+Portal Site 設計のルート正本は次の通りとする。
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+このうち本文正本は次とする。
+
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 4. 分割レイヤ
+# ============================================================
+
+Portal Site 設計の分割レイヤは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 5. Web前提の確定
+# ============================================================
+
+Portal Site は、
+Civilization 全体の公開入口となる
+Webサイト / Webアプリとして設計を固定する。
+
+この前提により、次を確定する。
+
+- 各OSへの導線は Webリンクとする。
+- 各OS利用開始は Web入口への遷移とする。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証後は原則として要求元の対象OS Web入口へ復帰させる。
+- OS間の直接リンクは禁止する。
+
+# ============================================================
+# 6. 現在状態
+# ============================================================
+
+Portal Site 設計の現在状態は次の通りとする。
+
+- 実装前 canonical design 完了
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+
+# ============================================================
+# 7. 今後の扱い
+# ============================================================
+
+今後、Portal Site の実装を検討する場合は、
+本設計書群を正本参照として扱う。
+
+実装、DDL、画面開発、API開発、運用設計の具体化は、
+本設計書群との整合確認を前提とする。
+
+本段階では、
+実装そのものはまだ開始しない。
+
+# ============================================================
+# 8. 推奨参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+8. 900.meta の補助文書
+
+# ============================================================
+# 9. 補助文書
+# ============================================================
+
+Portal Site 設計の補助文書は次の通りとする。
+
+- 900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+- 900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+
+# ============================================================
+# 10. 最終記録
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+Civilization 全体の公開入口システムに対する
+実装前 canonical design として完了した。
+
+本設計書群は、
+今後の実装検討時に参照される正本である。
+
+現時点では、
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 102
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE FINAL VERIFICATION NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site 設計書群の最終検証結果を
+記録する補助文書である。
+
+本書の目的は、
+設計完了時点の構成、
+主要正本、
+レイヤ構成、
+確認結果を固定し、
+後から見返した時に
+設計フェーズが閉じていることを
+明確にすることにある。
+
+# ============================================================
+# 2. ルート正本確認
+# ============================================================
+
+確認対象ルート正本:
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+本文正本:
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 3. レイヤ構成確認
+# ============================================================
+
+存在確認対象レイヤ:
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 900.meta
+
+# ============================================================
+# 4. 件数確認
+# ============================================================
+
+root files                 : 5
+020.architecture           : 6
+030.model                  : 6
+050.flow                   : 7
+060.integration            : 6
+070.operations             : 6
+080.policy                 : 6
+120.implementation-ready   : 7
+900.meta                   : 3
+
+# ============================================================
+# 5. 確認結果
+# ============================================================
+
+確認結果は次の通りとする。
+
+- ルート正本は整備済み
+- 各レイヤフォルダは整備済み
+- 各レイヤ overview / index は整備済み
+- 個別文書への上位参照は付与済み
+- integrated と分割文書の対応表は整備済み
+- system index 反映メモは整備済み
+- design complete note は整備済み
+- Webページ前提の設計として統一済み
+- 060.integration の命名衝突は解消済み
+
+# ============================================================
+# 6. 解釈
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+実装前 canonical design として
+完成扱いとしてよい状態にある。
+
+この時点では、
+設計文書群の構造、参照順、レイヤ分割、
+上位参照、補助文書が揃っている。
+
+# ============================================================
+# 7. 今後の扱い
+# ============================================================
+
+今後、Portal Site の実装を行う場合は、
+本設計書群を正本参照として扱う。
+
+本段階では、
+実装、DDL、本番投入はまだ行わない。
+
+# ============================================================
+# 8. 参照文書
+# ============================================================
+
+主要参照文書:
+
+- ../00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- ../0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+補助参照文書:
+
+- 900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+- 900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+- 900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+
+# ============================================================
+# 9. 最終記録
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+Webページ前提の Civilization 全体公開入口システム設計として
+実装前 canonical design 完了状態にある。
+
+現時点では、
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 103
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900004_CIVILIZATION_PORTAL_SITE_HANDOFF_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE HANDOFF NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+Civilization Portal Site 設計を
+別チャットまたは次工程へ引き継ぐための
+短い引き継ぎ文書である。
+
+# ============================================================
+# 2. 現在状態
+# ============================================================
+
+Civilization Portal Site 設計は、
+実装前 canonical design として完了している。
+
+現時点の状態は次の通りとする。
+
+- 実装未着手
+- DDL未実行
+- 本番投入未実施
+- Webページ前提で設計固定済み
+- 実装設計文書追加済み
+
+# ============================================================
+# 3. システム定義
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口となる
+公式Webポータルである。
+
+Portal Site は次を担う。
+
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- 公開情報提供
+- ポータル運営管理
+
+新規登録と認証の正本は CivilizationOS とする。  
+OS間の直接リンクは禁止する。
+
+# ============================================================
+# 4. ルート正本
+# ============================================================
+
+主要ルート文書は次の通りとする。
+
+- 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+- 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+本文正本は次とする。
+
+- 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+# ============================================================
+# 5. 分割レイヤ
+# ============================================================
+
+分割レイヤは次の通りとする。
+
+- 020.architecture
+- 030.model
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 120.implementation-ready
+- 130.development
+- 900.meta
+
+# ============================================================
+# 6. 重要前提
+# ============================================================
+
+- Portal Site は Webサイト / Webアプリ前提である。
+- 各OS利用開始は Web入口への遷移として扱う。
+- 未ログイン時は CivilizationOS のWebログインページへ誘導する。
+- 認証後は原則として要求元の対象OS Web入口へ復帰させる。
+- 各OS内部の詳細権限制御は各OSが担う。
+- Portal Site は入口前段判定のみを担う。
+
+# ============================================================
+# 7. 実装設計の位置づけ
+# ============================================================
+
+130.development は、
+実装そのものではなく、
+実装前の具体的な開発設計を扱う layer である。
+
+含む内容は次の通りとする。
+
+- 開発優先方針
+- フェーズ分解
+- P0 Web基盤
+- P1 公開ページ
+- P2 認証導線
+- P3 OS入口制御
+- P4 マイランチャー
+- ディレクトリ構成
+- ファイル責務境界
+
+# ============================================================
+# 8. 推奨参照順
+# ============================================================
+
+推奨参照順は次の通りとする。
+
+1. 00000_CIVILIZATION_PORTAL_SITE_ROOT_FILE_GUIDE.md
+2. 0000_CIVILIZATION_PORTAL_SITE_FOLDER_OVERVIEW.md
+3. 000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+4. 000_CIVILIZATION_PORTAL_SITE_INDEX.md
+5. 00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+6. 各レイヤ overview / index
+7. 各個別文書
+8. 130.development
+9. 900.meta 補助文書
+
+# ============================================================
+# 9. 補助文書
+# ============================================================
+
+900.meta の主要補助文書は次の通りとする。
+
+- 900000_CIVILIZATION_PORTAL_SITE_INTEGRATED_TO_SPLIT_MAPPING.md
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+- 900002_CIVILIZATION_PORTAL_SITE_DESIGN_COMPLETE_NOTE.md
+- 900003_CIVILIZATION_PORTAL_SITE_FINAL_VERIFICATION_NOTE.md
+- 900004_CIVILIZATION_PORTAL_SITE_HANDOFF_NOTE.md
+- 900005_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_REFLECTION_NOTE.md
+
+# ============================================================
+# 10. 次工程候補
+# ============================================================
+
+次工程候補は次の通りとする。
+
+- 実装設計レビュー
+- Civilization System 全体 index への反映検討
+- P0 実装着手
+- 実装に進む場合は本設計書群を正本参照とする
+
+# ============================================================
+# 11. 最終記録
+# ============================================================
+
+Civilization Portal Site 設計書群は、
+別チャットへ引き継ぎ可能な状態で整理済みである。
+
+現時点では、
+実装、DDL、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 104
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900005_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_REFLECTION_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE DEVELOPMENT LAYER REFLECTION NOTE
+# ============================================================
+
+status: canonical-design-support
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 文書目的
+# ============================================================
+
+本書は、
+130.development layer の追加を
+Portal Site 設計書群全体にどう位置づけるかを
+記録する補助文書である。
+
+# ============================================================
+# 2. development layer の位置づけ
+# ============================================================
+
+130.development は、
+Portal Site の実装そのものではなく、
+実装前の具体的な開発設計を扱う layer とする。
+
+本 layer は次を固定する。
+
+- 開発優先方針
+- 開発フェーズ
+- P0〜P4 実装設計
+- ディレクトリ構成
+- ファイル責務境界
+- 実装着手順
+
+# ============================================================
+# 3. 上位設計との関係
+# ============================================================
+
+development layer は次の上位正本に従う。
+
+- ../000_CIVILIZATION_PORTAL_SITE_OVERVIEW.md
+- ../000_CIVILIZATION_PORTAL_SITE_INDEX.md
+- ../00_CIVILIZATION_PORTAL_SITE_INTEGRATED.md
+
+architecture / model / flow / integration / operations / policy /
+implementation-ready の各layerで固定された内容を、
+実装に落とす直前の具体設計へ展開する役割を持つ。
+
+# ============================================================
+# 4. 含む文書
+# ============================================================
+
+- ../130.development/13000000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_OVERVIEW.md
+- ../130.development/13000001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_LAYER_INDEX.md
+- ../130.development/1300000_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_OVERVIEW.md
+- ../130.development/1300001_CIVILIZATION_PORTAL_SITE_DEVELOPMENT_INDEX.md
+- ../130.development/1300002_CIVILIZATION_PORTAL_SITE_PHASE_P0_WEB_FOUNDATION_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300003_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300004_CIVILIZATION_PORTAL_SITE_PHASE_P2_AUTH_ENTRY_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300005_CIVILIZATION_PORTAL_SITE_PHASE_P3_OS_ENTRY_DECISION_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300006_CIVILIZATION_PORTAL_SITE_PHASE_P4_LAUNCHER_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300007_CIVILIZATION_PORTAL_SITE_DIRECTORY_AND_FILE_STRUCTURE_IMPLEMENTATION_DESIGN.md
+
+# ============================================================
+# 5. 現在状態
+# ============================================================
+
+development layer は追加済みであり、
+Portal Site 設計書群は
+概念設計 / 詳細設計 / 実装前仕様 / 実装設計
+まで揃った状態にある。
+
+現時点では、
+実コード作成、DDL実行、本番投入はまだ行わない。
+
+
+# ------------------------------------------------------------
+# SOURCE 105
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900007_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE SPEC CHANGE NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 仕様変更記録
+# ============================================================
+
+仕様変更:
+- すべてのアプリのヘルプデスクとして AIチャット入口をトップ画面につくる
+- ページの文言は DB から取得して表示する
+- アプリは階層表示として、DB を使った動的表示にする
+
+# ============================================================
+# 2. 反映文書
+# ============================================================
+
+- ../0001_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_ADDENDUM.md
+- ../020.architecture/020004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DYNAMIC_NAV_ARCHITECTURE.md
+- ../030.model/030004_CIVILIZATION_PORTAL_SITE_DYNAMIC_COPY_AND_APP_TREE_MODEL.md
+- ../060.integration/060004_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_INTEGRATION.md
+- ../080.policy/080004_CIVILIZATION_PORTAL_SITE_AI_HELPDESK_AND_DB_DISPLAY_POLICY.md
+- ../120.implementation-ready/120005_CIVILIZATION_PORTAL_SITE_DB_DRIVEN_COPY_AND_APP_TREE_EXACT_SPEC.md
+- ../130.development/1300008_CIVILIZATION_PORTAL_SITE_SPEC_CHANGE_IMPLEMENTATION_DESIGN.md
+
+
+# ------------------------------------------------------------
+# SOURCE 106
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900008_CIVILIZATION_PORTAL_SITE_P1_SPEC_CHANGE_DIFF_NOTE.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE P1 SPEC CHANGE DIFF NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 目的
+# ============================================================
+
+本書は、
+P1 公開ページに対する仕様変更差分の反映を記録する。
+
+# ============================================================
+# 2. 反映内容
+# ============================================================
+
+- トップ画面に AIチャット入口を追加する前提を固定
+- 公開ページ文言を DB 取得前提へ変更
+- OS一覧 / アプリ一覧を DB 駆動階層表示前提へ変更
+
+# ============================================================
+# 3. 参照文書
+# ============================================================
+
+- ../130.development/1300009_CIVILIZATION_PORTAL_SITE_PHASE_P1_PUBLIC_PAGES_SPEC_CHANGE_DIFF_IMPLEMENTATION_DESIGN.md
+- ../130.development/1300010_CIVILIZATION_PORTAL_SITE_P1_COPY_KEYS_AND_APP_TREE_RENDERING_IMPLEMENTATION_DESIGN.md
+
+
+# ------------------------------------------------------------
+# SOURCE 107
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900009_CX22073JW_KNOWLEDGE_SCHEMA_NOTE.md
+
+# ============================================================
+# CX22073JW KNOWLEDGE SCHEMA NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 固定内容
+# ============================================================
+
+Civilization 全体の共通知識基盤 schema 名は
+CX22073JW とする。
+
+# ============================================================
+# 2. 役割
+# ============================================================
+
+CX22073JW は次の知識を保持する共通知識基盤である。
+
+- アプリ知識
+- OS知識
+- 資格知識
+- 言語知識
+- 学問知識
+- 現実の歴史
+- Civilization の歴史
+- 法律知識
+- 医療知識
+
+# ============================================================
+# 3. 基本原則
+# ============================================================
+
+- 各アプリ / OS / Portal は caller としてアクセスする
+- どの知識を使うかは scope 指定で決める
+- Portal schema は入口面、CX22073JW は知識本体を担う
+
+
+# ------------------------------------------------------------
+# SOURCE 108
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900010_CX22073JW_FULL_ADOPTION_NOTE.md
+
+# ============================================================
+# CX22073JW FULL ADOPTION NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 採用方針
+# ============================================================
+
+CX22073JW はフル拡張版を採用する。
+
+# ============================================================
+# 2. 対象
+# ============================================================
+
+- アプリ知識
+- OS知識
+- 資格知識
+- 言語知識
+- 学問知識
+- 現実の歴史
+- Civilization の歴史
+- 法律知識
+- 医療知識
+- FAQ
+- 学習導線
+- 出典 / 監修
+- 検索戦略
+- 回答スタイル
+- 改善ログ
+
+# ============================================================
+# 3. 方針
+# ============================================================
+
+- 全てを 1 schema に集約する
+- 呼び出し元は caller_code を持つ
+- 参照範囲は scope 指定で決める
+- Portal は入口、CX22073JW は知識正本
+
+
+# ------------------------------------------------------------
+# SOURCE 109
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900011_CIVILIZATION_PORTAL_SITE_AND_CX22073JW_DESIGN_FIXED_SUMMARY.md
+
+# ============================================================
+# CIVILIZATION PORTAL SITE AND CX22073JW DESIGN FIXED SUMMARY
+# ============================================================
+
+status: draft-fixed-summary
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. 全体方針
+# ============================================================
+
+Civilization 全体は、
+設計正本と実装正本を分離する。
+
+設計正本:
+- 01.civilization-system
+
+Portal Site 設計正本:
+- 01.civilization-system/08.civilization-portal-site
+
+実装正本:
+- 03.civilization-development
+
+Portal Site Web 実装正本:
+- 03.civilization-development/civilization-portal-site-web
+
+# ============================================================
+# 2. Portal Site の役割
+# ============================================================
+
+Civilization Portal Site は、
+Civilization 全体の公開入口となる公式Webポータルである。
+
+Portal Site は次を担う。
+
+- 各OSへの唯一の公式Web導線
+- 新規登録案内
+- ログイン案内
+- ログイン済み利用者向けWebランチャー
+- 公開情報提供
+- ポータル運営管理
+- 全アプリ共通ヘルプデスク入口
+
+新規登録と認証の正本は CivilizationOS とする。  
+OS間の直接リンクは禁止する。
+
+# ============================================================
+# 3. Portal Site の仕様変更固定
+# ============================================================
+
+追加仕様は次の通りとする。
+
+- すべてのアプリのヘルプデスクとして、AIチャット入口をトップ画面に設ける
+- ページ文言は DB から取得して表示する
+- アプリ一覧は階層表示とし、DB を使った動的表示にする
+
+# ============================================================
+# 4. Portal Site の DB責務
+# ============================================================
+
+portal schema は、
+入口面と表示面を担う。
+
+portal schema の責務:
+- ページ文言
+- ナビ階層
+- 遷移先定義
+- AIヘルプデスク入口
+- ページセクション構成
+
+Portal 側の基本テーブル:
+- portal.copy_text
+- portal.nav_node
+- portal.nav_node_target
+- portal.helpdesk_entry
+- portal.page_section
+- portal.page_section_item
+
+# ============================================================
+# 5. 共通知識基盤
+# ============================================================
+
+Civilization 全体の共通知識基盤 schema 名は
+CX22073JW とする。
+
+CX22073JW は、
+Portal Site だけでなく、
+各OS・各アプリ・相談系・学習系・BusinessOS AI worker を含む
+共通知識正本である。
+
+# ============================================================
+# 6. CX22073JW の用途
+# ============================================================
+
+CX22073JW には次を格納する。
+
+- アプリ知識
+- OS知識
+- 資格知識
+- 言語知識
+- 学問知識
+- 現実の歴史
+- Civilization の歴史
+- 法律知識
+- 医療知識
+- FAQ
+- 学習導線
+- 出典 / 監修 / 信頼性
+- 関係知識
+- 回答スタイル
+- 検索戦略
+- 改善ログ
+- 人物情報
+
+# ============================================================
+# 7. CX22073JW の利用原則
+# ============================================================
+
+- 各アプリ / 各OS / Portal は caller として CX22073JW にアクセスする
+- どの知識を使うかは scope 指定で決める
+- Portal は入口と caller / scope 指定を担う
+- CX22073JW は知識本文と知識構造の正本を担う
+- 法律 / 医療は disclaimer / safety / style を分ける
+- BusinessOS AI worker も CX22073JW を固定知識正本として利用する
+- BusinessOS / ERP の変動データは CX22073JW に入れない
+
+# ============================================================
+# 8. BusinessOS AI worker の扱い
+# ============================================================
+
+BusinessOS AI worker も
+CX22073JW を固定知識基盤として使う。
+
+用途:
+- 業務概念
+- 用語定義
+- 固定ルール
+- 承認原則
+- ワークフロー原則
+- 帳票意味
+- 基本手順
+- ERP / BusinessOS の固定知識
+
+入れないもの:
+- 実トランザクション
+- 現在の承認状態
+- 現在の売上 / 在庫
+- 現在の案件状態
+
+固定知識は CX22073JW、変動データは BusinessOS / ERP 側とする。
+
+# ============================================================
+# 9. CX22073JW の中核構造
+# ============================================================
+
+最小中核:
+- domain_master
+- space_master
+- scope_master
+- article
+- chunk
+- faq
+- caller_master
+- caller_scope_binding
+- route_policy
+- disclaimer_master
+
+フル採用追加:
+- entity_master
+- entity_alias
+- relation_master
+- article_entity_binding
+- discipline_master
+- topic_master
+- article_discipline_binding
+- article_topic_binding
+- difficulty_profile_master
+- audience_profile_master
+- article_profile_binding
+- space_summary
+- scope_summary
+- topic_summary
+- prerequisite_relation
+- learning_path
+- learning_path_item
+- source_master
+- article_source
+- review_status_master
+- article_review_log
+- timeline_event
+- event_relation
+- event_entity_binding
+- retrieval_profile
+- scope_retrieval_binding
+- answer_style_profile
+- response_template
+- scope_style_binding
+- session_log
+- answer_source_log
+- question_pattern
+- knowledge_gap_log
+
+# ============================================================
+# 10. 学問知識の扱い
+# ============================================================
+
+学問知識も CX22073JW で統一管理する。
+
+大分類例:
+- academic
+
+space 例:
+- general_literacy
+- physics_foundation
+- quantum_mechanics
+- mathematics_foundation
+- economics_foundation
+- philosophy_foundation
+
+scope 例:
+- general_literacy_basic
+- physics_beginner
+- quantum_mechanics_intro
+- quantum_mechanics_advanced
+
+出し分けは次で行う。
+- discipline
+- topic
+- difficulty
+- audience
+- learning_path
+
+# ============================================================
+# 11. 歴史知識の扱い
+# ============================================================
+
+歴史知識は次を分ける。
+
+- real_history
+- civilization_history
+
+両者を混ぜない。
+
+timeline / event / entity binding により、
+時間軸と人物 / 概念の結びつきを保持する。
+
+# ============================================================
+# 12. 人物知識の扱い
+# ============================================================
+
+登場人物知識は、
+CX22073JW 側で「人物情報」として扱う。
+
+人物情報は知識正本側に置き、
+シナリオ内の再生順・分岐・登場制御とは分ける。
+
+人物情報で持つべき内容:
+- 人物コード
+- 表示名
+- 正式名
+- short_bio
+- character_type
+- origin_type
+- gender_code
+- species_type
+- role_title
+- occupation_code
+- affiliation_country_code
+- affiliation_company_code
+- affiliation_org_code
+- rank_or_position
+- age
+- birth_year
+- birth_year_precision
+- death_year
+- death_year_precision
+- era_label
+- life_status
+- importance_level
+- portrait_asset_id
+- canonical_article_id
+- public_status
+- status
+- created_at
+- updated_at
+
+特に固定済み:
+- 所属国家コード
+- 所属企業コード
+- 年齢
+- 生年
+- 死亡年
+
+# ============================================================
+# 13. シナリオ再生基盤
+# ============================================================
+
+シナリオ再生正本は、
+CX22073JW とは別 schema に分ける。
+
+schema 名:
+- scenario
+
+# ============================================================
+# 14. CX22073JW と scenario の責務分割
+# ============================================================
+
+CX22073JW:
+- 世界観知識
+- 歴史知識
+- 学問知識
+- FAQ
+- 人物情報
+- シナリオ解説知識
+- シナリオ参照メタ
+- AI が答えるための知識
+
+scenario:
+- シナリオ本体
+- チャプター
+- シーン
+- 選択肢
+- 分岐
+- 再生順
+- 進行条件
+- トリガー
+- ストーリーモード再生情報
+
+原則:
+- 質問に答えるための知識は CX22073JW
+- 再生・分岐・進行の実行構造は scenario
+
+# ============================================================
+# 15. Portal と知識基盤の接続
+# ============================================================
+
+Portal Site のトップ画面には
+全アプリ共通ヘルプデスクとして
+AIチャット入口を表示する。
+
+Portal は caller と requested_scope を指定し、
+CX22073JW を参照する。
+
+例:
+- portal_site_top
+- civilization_portal_support
+- application_directory_support
+- os_general_support
+
+# ============================================================
+# 16. 設計フェーズ到達状態
+# ============================================================
+
+ここまでで固定されたもの:
+
+- Portal Site 概念設計
+- Portal Site 詳細設計
+- Portal Site 実装前仕様
+- Portal Site 実装設計
+- Portal DB の役割
+- CX22073JW 共通知識基盤方針
+- CX22073JW フル採用方針
+- scenario 分離方針
+- 人物情報方針
+- BusinessOS AI worker 利用方針
+
+# ============================================================
+# 17. 現在状態
+# ============================================================
+
+現時点では、
+ここまでを設計として固定する。
+
+まだ未実施:
+- CX22073JW full DDL
+- scenario DDL
+- seed 設計
+- 実データ投入
+- 本番実装連携
+
+
+# ------------------------------------------------------------
+# SOURCE 110
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900012_CX22073JW_AND_SCENARIO_NOTE.md
+
+# ============================================================
+# CX22073JW AND SCENARIO NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+fixed:
+- 共通知識正本 schema は CX22073JW
+- シナリオ再生正本 schema は scenario
+- 人物情報正本は CX22073JW.character_profile
+- シナリオ側は人物情報を複製せず参照する
+
+
+# ------------------------------------------------------------
+# SOURCE 111
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900013_CX22073JW_AND_SCENARIO_DDL_DRAFT_NOTE.md
+
+# ============================================================
+# CX22073JW AND SCENARIO DDL DRAFT NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+generated_files:
+- ../120.implementation-ready/120012_CX22073JW_CORE_AND_CHARACTER_PROFILE_DDL_DRAFT.sql
+- ../120.implementation-ready/120013_SCENARIO_CORE_DDL_DRAFT.sql
+- ../120.implementation-ready/120014_CX22073JW_AND_SCENARIO_INTEGRATED_DDL_DRAFT.sql
+
+principle:
+- DDL draft only
+- not applied
+- additive only
+- cross-schema references remain logical until final DB execution policy is fixed
+
+
+# ------------------------------------------------------------
+# SOURCE 112
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900014_CX22073JW_INITIAL_SEED_NOTE.md
+
+# ============================================================
+# CX22073JW INITIAL SEED NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+schema: CX22073JW
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+fixed:
+- domain / space / scope / caller の初期 seed 方向を定義した
+- Portal top helpdesk caller を含める
+- BusinessOS AI worker caller を含める
+- academic / history / legal / medical を初期 seed に含める
+
+
+# ------------------------------------------------------------
+# SOURCE 113
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900015_PORTAL_SCHEMA_NOTE.md
+
+# ============================================================
+# PORTAL SCHEMA NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+schema: portal
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+fixed:
+- portal schema は正式設計対象とする
+- portal schema は入口 / 表示 / ナビ / helpdesk入口 を担う
+- 知識本文は CX22073JW 側を正本とする
+
+
+# ------------------------------------------------------------
+# SOURCE 114
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900016_PORTAL_SCHEMA_DDL_DRAFT_NOTE.md
+
+# ============================================================
+# PORTAL SCHEMA DDL DRAFT NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+schema: portal
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+generated_files:
+- ../120.implementation-ready/120019_PORTAL_SCHEMA_DDL_DRAFT.sql
+- ../120.implementation-ready/120020_PORTAL_SCHEMA_SEED_DRAFT_DIRECTION.md
+
+principle:
+- DDL draft only
+- not applied
+- additive only
+- portal schema is for entry/display/navigation/helpdesk-entry
+- knowledge body remains in CX22073JW
+
+
+# ------------------------------------------------------------
+# SOURCE 115
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900017_THREE_SCHEMA_INTEGRATED_SUMMARY_NOTE.md
+
+# ============================================================
+# THREE SCHEMA INTEGRATED SUMMARY NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+fixed:
+- portal は入口 / 表示 / ナビ / helpdesk 入口を担う
+- CX22073JW は共通知識正本を担う
+- scenario は再生正本を担う
+- 人物情報正本は CX22073JW.character_profile
+- Portal / Worker / OS / App は caller / scope 指定で CX22073JW を使う
+
+
+# ------------------------------------------------------------
+# SOURCE 116
+# ------------------------------------------------------------
+# /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/900.meta/900018_INITIAL_SEED_DRAFT_NOTE.md
+
+# ============================================================
+# INITIAL SEED DRAFT NOTE
+# ============================================================
+
+status: draft-additive
+layer: meta
+system: civilization-portal-site
+owner: Boss
+prepared_by: Zero
+
+generated_files:
+- ../120.implementation-ready/120022_PORTAL_INITIAL_SEED_DRAFT.sql
+- ../120.implementation-ready/120023_CX22073JW_INITIAL_SEED_DRAFT.sql
+- ../120.implementation-ready/120024_THREE_SCHEMA_INITIAL_SEED_ORDER_NOTE.md
+
+principle:
+- seed draft only
+- not applied
+- portal top helpdesk and business_os_ai_worker are included from the beginning
+

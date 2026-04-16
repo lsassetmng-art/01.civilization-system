@@ -1,0 +1,16 @@
+# Infrastructure Overview
+
+app: CareerLaunch
+layer: 110.infrastructure
+## Purpose
+ローカル保存、同期、ファイル出力、ジョブ実行前提を定義する。
+
+## Coverage
+- 保存
+- 同期
+- ジョブ
+- ファイル
+- 通知
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。

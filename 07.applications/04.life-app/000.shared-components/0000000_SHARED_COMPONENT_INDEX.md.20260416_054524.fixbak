@@ -1,0 +1,17 @@
+# ============================================================
+# SHARED COMPONENT INDEX
+# Life App Common
+# ============================================================
+
+status: canonical
+phase: design-only
+
+files:
+  - 0000001_SHARED_COMPONENT_OVERVIEW.md
+  - 0000002_COMMON_COMPONENT_CANDIDATE_CANONICAL.md
+  - 0000003_SHARED_COMPONENT_ADOPTION_MATRIX.md
+  - 0000004_SHARED_COMPONENT_NEXT_ACTION.md
+
+purpose:
+  - Life系アプリ横断で再利用する共通部品の正本参照点を固定する
+  - app固有責務と共通責務の境界を明確化する

@@ -2,20 +2,25 @@
 # PERSONA RUNTIME ARCHITECTURE
 # ============================================================
 
-Runtime is responsible for applying events
-to persona state.
+status: implementation-ready-followup
 
-Core runtime operations:
+runtime_boundary:
+- runtime consumes released snapshot or package only
+- runtime session is ephemeral
+- session state never becomes truth state by itself
+- host adapter must resolve release lineage before session activation
 
-event validation
-state mutation
-growth calculation
-memory storage
-snapshot trigger
+runtime_lifecycle:
+create
+active
+suspended
+resumed
+terminating
+terminated
+expired
 
-Runtime must guarantee:
-
-deterministic behavior
-idempotency
-audit traceability
-
+required_controls:
+- heartbeat timeout handling
+- restore/resume contract
+- terminal reason capture
+- audit event emission for every terminal state

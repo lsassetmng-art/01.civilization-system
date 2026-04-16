@@ -1,0 +1,11 @@
+# Interface Index
+
+## purpose
+MealPlanner の画面 / 操作 / 出力境界を定義する
+
+## files
+- 0900001_INTERFACE_OVERVIEW.md
+
+## notes
+- この index は Interface の入口である
+- 詳細は配下ドキュメントを参照する

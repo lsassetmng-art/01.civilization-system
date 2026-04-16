@@ -1,0 +1,47 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# BODYMETRICS SYSTEM OVERVIEW
+# ============================================================
+
+status: draft
+domain:
+  os: LifeOS
+  category: 健康領域
+
+summary:
+  - BodyMetrics は、日々の身体データ記録・可視化・傾向把握に特化した健康支援アプリである。
+  - スマートウォッチや外部アプリ連携を前提とするが、未連携時は手入力で完結できる。
+  - 本アプリは医療診断ではなく、記録・比較・振り返り・生活改善支援を主目的とする。
+  - 個人利用の主要価値は無料で提供し、家族見守り共有のみ Family Care として課金する。
+
+main_capabilities:
+  - 体重、血圧、血中酸素濃度、歩数、心拍、睡眠の記録
+  - 日次/週次/月次グラフ
+  - 7日平均/30日平均との比較
+  - 参考範囲との比較表示
+  - 健康スコア表示
+  - 週次ふりかえり
+  - PDF/CSV出力
+  - 家族共有（Family Care）
+
+boundaries:
+  - 診断しない
+  - 治療方針を決めない
+  - 緊急医療判断をしない
+  - 不安煽り通知をしない
+integrated_reading_start:
+  - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+  - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md

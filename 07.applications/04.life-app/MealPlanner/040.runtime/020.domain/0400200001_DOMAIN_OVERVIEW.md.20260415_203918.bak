@@ -1,0 +1,8 @@
+# Runtime Domain Overview
+
+## role
+MealPlanner の提案 / 共有 / 出力時挙動を定義する
+
+## mealplanner_context
+- MealPlanner の当該レイヤーにおける責務を整理する
+- CivilizationOS系構成に合わせる

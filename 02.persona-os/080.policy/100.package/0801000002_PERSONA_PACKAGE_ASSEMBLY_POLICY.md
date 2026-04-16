@@ -1,15 +1,9 @@
-# ============================================================
 # PERSONA PACKAGE ASSEMBLY POLICY
-# ============================================================
 
-status: canonical
-layer: policy
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
 policy_rules:
-package assembly must only use approved snapshot inputs
-package contents must remain scope-bounded
-package integrity must remain verifiable
+- package uses approved immutable inputs only
+- manifest completeness is mandatory
+- integrity verification is mandatory before use or distribution
+- revoked package must be rejected

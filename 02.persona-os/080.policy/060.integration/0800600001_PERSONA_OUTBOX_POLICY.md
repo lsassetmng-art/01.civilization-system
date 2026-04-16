@@ -1,13 +1,9 @@
 # PERSONA OUTBOX POLICY
 
-status: canonical
-layer: policy
-domain: integration
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-## RULES
-- downstream state must be synchronized through outbox events
-- direct downstream mutation is prohibited
-- sync payloads must contain only mirrorable data
-- dispatch failure must remain observable and retryable
+outbox_rules:
+- outbox is retry-safe only
+- payload must be correlation-traceable
+- delivery attempts must be counted
+- dead-letter transition must be auditable

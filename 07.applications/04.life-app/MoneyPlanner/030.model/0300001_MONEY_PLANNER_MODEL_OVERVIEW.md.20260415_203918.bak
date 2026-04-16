@@ -1,0 +1,21 @@
+# ============================================================
+# MONEY PLANNER MODEL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - モデルレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 資金計画の基本エンティティを定義する
+  - 収入/支出、資産/負債、目的別資金、将来費用、見直し記録の関係を固定する
+  - 家族共有は閲覧中心で扱う

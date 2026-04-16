@@ -1,0 +1,10 @@
+# ============================================================
+# IMPLEMENTATION OVERVIEW
+# ============================================================
+
+layer: 120.implementation
+
+focus:
+  - phased release
+  - initial package
+  - deferred scope

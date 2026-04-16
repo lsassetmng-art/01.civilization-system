@@ -1,0 +1,12 @@
+# 0500000 FLOW INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/0500000_FLOW_INDEX.md
+## Purpose
+CareerLaunch の 050.flow 配下を一覧する。
+
+## Children
+- 0500001_CAREER_LAUNCH_FLOW_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

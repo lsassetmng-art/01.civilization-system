@@ -1,0 +1,17 @@
+# ============================================================
+# INFRASTRUCTURE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+  - 1100004_LIFE_PLANNER_INFRASTRUCTURE_PROFILE.md

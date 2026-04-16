@@ -1,0 +1,32 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# INDICATOR SCORE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 120.indicator-score
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - バッジや注意表示、進捗表示の設計を固定する
+  - score 的な見せ方を使う場合の抑制ルールを定義する
+  - 見やすくしても、過度な断定や煽りにしない
+
+principles:
+  - indicator should support orientation, not judgement
+  - avoid fake precision
+  - use simple labels before complex scores

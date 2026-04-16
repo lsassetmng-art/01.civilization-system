@@ -1,0 +1,23 @@
+# ============================================================
+# COPY STATE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 080.copy-state
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - LifePlannerの主要画面で使う状態文言を固定する
+  - 空状態、エラー、成功、アップグレード導線の言い回しを揃える
+  - 不安を煽らず、整理支援アプリらしいトーンを保つ
+
+tone_policy:
+  - calm
+  - supportive
+  - clear
+  - non-judgmental
+  - not overly cheerful for sensitive topics

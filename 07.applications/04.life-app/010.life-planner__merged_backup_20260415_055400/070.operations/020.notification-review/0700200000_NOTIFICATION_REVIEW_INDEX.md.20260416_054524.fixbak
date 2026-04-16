@@ -1,0 +1,18 @@
+# ============================================================
+# NOTIFICATION REVIEW INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 070.operations
+subfolder: 020.notification-review
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0700200000_NOTIFICATION_REVIEW_INDEX.md
+  - 0700200001_NOTIFICATION_REVIEW_OVERVIEW.md
+  - 0700200002_LIFE_PLANNER_NOTIFICATION_POLICY.md
+  - 0700200003_LIFE_PLANNER_REVIEW_CYCLE_POLICY.md
+  - 0700200004_LIFE_PLANNER_NOTIFICATION_EVENT_CATALOG.md

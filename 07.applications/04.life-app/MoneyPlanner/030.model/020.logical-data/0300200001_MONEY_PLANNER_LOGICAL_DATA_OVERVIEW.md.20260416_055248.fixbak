@@ -1,0 +1,34 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# MONEY PLANNER LOGICAL DATA OVERVIEW
+# ============================================================
+
+logical_groups:
+  - master_like:
+      - scenario
+      - shared_member
+  - transaction_like:
+      - income_item
+      - expense_item
+      - asset_item
+      - liability_item
+      - saving_goal
+      - event_budget
+      - memo_item
+  - snapshot_like:
+      - financial_snapshot
+
+policies:
+  - amount は decimal string 前提
+  - currency_code は全金額項目で必須
+  - deleted_at による論理削除前提

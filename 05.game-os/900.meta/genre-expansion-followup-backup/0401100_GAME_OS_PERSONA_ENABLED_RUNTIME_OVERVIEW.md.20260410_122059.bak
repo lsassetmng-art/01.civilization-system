@@ -1,0 +1,68 @@
+# ============================================================
+# GAME OS PERSONA ENABLED RUNTIME OVERVIEW
+# ============================================================
+
+status: draft-for-canonical-update
+system: game-os
+layer: runtime
+domain: persona-enabled-runtime
+document_type: overview
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+This runtime family covers gameplay where Persona is optionally used by players
+or NPCs.
+
+# ============================================================
+# 2. SUPPORTED USES
+# ============================================================
+
+- player visual expression
+- player conversation expression
+- NPC romance targets
+- NPC battle opponents
+- NPC companions
+- navigators and service characters
+
+# ============================================================
+# 3. RUNTIME PRINCIPLES
+# ============================================================
+
+- player remains the participation subject
+- Persona usage is optional
+- runtime uses game-local Persona state
+- runtime must not treat local state as canonical Persona truth
+- reflection is handled through later model/flow layers
+
+# ============================================================
+# 4. MAJOR RUNTIME INPUTS
+# ============================================================
+
+- player
+- player profile
+- Persona character binding
+- game Persona state
+- game Persona relation
+- memory markers
+- title-specific runtime rules
+
+# ============================================================
+# 5. MAJOR RUNTIME OUTPUTS
+# ============================================================
+
+- gameplay state transitions
+- relation updates
+- memory marker creation
+- impact event extraction inputs
+- reflection flow inputs
+
+# ============================================================
+# 6. CONCLUSION
+# ============================================================
+
+Persona-enabled runtime is the execution layer for optional Persona-based
+gameplay without collapsing the separation between GameOS and PersonaOS.

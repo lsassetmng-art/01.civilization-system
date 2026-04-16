@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT REVIEW CHECKLIST OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 130.development
+subfolder: 020.review-checklist
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - 設計見直し観点を固定する
+  - 実装前レビューの抜け漏れを減らす
+  - 次チャットや次工程へ渡す確認表にする

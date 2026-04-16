@@ -1,0 +1,146 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# LEGAL SUPPORT MASTER CONSOLIDATED OVERVIEW
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: meta
+subdomain: audit
+
+purpose:
+  - LegalSupport 設計全体の統合再読起点
+  - 主要決定事項を1枚で把握できるようにする
+  - 実装前の全体像確認用の上位サマリとして使う
+
+fixed_core_decisions:
+  schema:
+    primary_schema: life
+  pricing:
+    free:
+      monthly_price_jpy: 0
+    plus_family:
+      monthly_price_jpy: 500
+  implementation_status:
+    - 実装はまだ開始しない
+    - 設計正本を先に固める
+  service_boundary:
+    - 法的助言は提供しない
+    - 法的結論は提供しない
+    - 相談準備・記録・整理支援に限定する
+
+app_positioning:
+  - 個人法務の整理入口
+  - 専門家相談の前後をつなぐ整理アプリ
+  - 日本の個人生活文脈に寄せた法務整理導線
+  - LifeOS 他アプリへの振り分け起点
+
+roles:
+  owner:
+    - 全件管理
+    - 記録更新
+    - 共有設定
+    - export / handoff 実行
+  shared_family_viewer:
+    - 共有範囲のみ閲覧
+    - 編集不可
+  professional_share_target_future:
+    - 将来拡張
+
+major_domain_modules:
+  - case_management
+  - fact_timeline_management
+  - stakeholder_management
+  - document_management
+  - question_management
+  - consultation_history_management
+  - action_deadline_management
+  - family_share_export
+  - template_navigation
+  - summary_handoff_support
+
+core_entities:
+  - life.legal_case
+  - life.fact_timeline
+  - life.stakeholder
+  - life.document_item
+  - life.question_list
+  - life.consultation_note
+  - life.action_item
+  - life.deadline_item
+  - life.expense_record
+  - life.export_bundle
+  - life.checklist_progress
+  - life.family_share_membership
+  - life.notification_preference
+
+sharing_model:
+  case_visibility:
+    - private
+    - family_shared
+  family_share:
+    - plus_family only
+    - active membership required
+    - field-level masking applied
+    - preview before share/export encouraged
+  export:
+    - self_pdf_full
+    - family_pdf_compact
+    - consultation_packet_preview
+  masking_baseline:
+    - assumption_text hidden from family by default
+    - private notes hidden
+    - expense hidden from family by default
+    - private confidentiality documents hidden
+
+integration_targets:
+  - InheritanceSupport
+  - BusinessLegalSupport
+  - EndOfLifePlanner
+  - MoneyPlanner_future
+
+exact_design_coverage:
+  completed_domains:
+    - field matrix
+    - nullable/default matrix
+    - create/update/list exact payloads
+    - archive/reopen/duplicate exact
+    - delete/soft delete exact
+    - checklist exact
+    - family share exact
+    - notification preference exact
+    - summary/export/handoff exact
+    - dashboard exact
+    - audit exact
+    - confidentiality/masking exact
+    - document metadata extended exact
+
+design_priorities:
+  first:
+    - 記録
+    - 整理
+    - 時系列
+    - 書類
+    - 質問
+  second:
+    - 期限
+    - 共有
+    - export
+  third:
+    - summary
+    - handoff
+    - family collaboration polish
+
+implementation_readiness_note:
+  - API request / response の主骨格はかなり固まっている
+  - ただし実装開始前に field-to-screen と gap checklist の確認を推奨する

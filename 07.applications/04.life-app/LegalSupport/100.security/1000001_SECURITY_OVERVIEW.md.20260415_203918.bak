@@ -1,0 +1,27 @@
+# ============================================================
+# SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+security_objectives:
+  - 最小共有
+  - 高秘匿情報の誤露出防止
+  - export 派生物の取り扱い分離
+  - 権限変更の追跡可能性
+  - 端末利用を前提にした保護
+
+control_areas:
+  - app access control
+  - case visibility control
+  - document confidentiality control
+  - share audit control
+  - export handling control
+
+core_controls:
+  - app lock
+  - biometric unlock
+  - auto lock
+  - share audit
+  - high confidentiality protection

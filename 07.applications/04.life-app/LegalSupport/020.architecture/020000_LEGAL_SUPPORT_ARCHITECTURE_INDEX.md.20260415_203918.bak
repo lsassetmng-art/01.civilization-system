@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: ARCHITECTURE
+
+purpose:
+  - モジュール構成、責務分離、共通部品候補を定義する

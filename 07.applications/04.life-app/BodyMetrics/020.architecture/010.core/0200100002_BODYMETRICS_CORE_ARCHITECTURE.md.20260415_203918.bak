@@ -1,0 +1,18 @@
+# ============================================================
+# BODYMETRICS CORE ARCHITECTURE
+# ============================================================
+
+status: draft
+
+core_path:
+  - manual または provider から raw record を受け取る
+  - metric_type / unit / measured_at / source を正規化する
+  - raw と normalized を別保持する
+  - 平均、差分、score snapshot を派生生成する
+  - dashboard / graph / weekly review / export に供給する
+  - family sharing は最終表示段階で scope 制御する
+
+separation_rules:
+  - raw payload と normalized record は分ける
+  - reference 知識と user runtime data は分ける
+  - score policy と score snapshot は分ける

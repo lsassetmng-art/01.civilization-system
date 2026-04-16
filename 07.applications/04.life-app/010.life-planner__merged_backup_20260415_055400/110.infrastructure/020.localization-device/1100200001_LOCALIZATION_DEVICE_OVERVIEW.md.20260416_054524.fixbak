@@ -1,0 +1,16 @@
+# ============================================================
+# LOCALIZATION DEVICE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 110.infrastructure
+subfolder: 020.localization-device
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 多言語、多通貨、マルチデバイスの設計ルールを固定する
+  - 保存値と表示値の責務を分離する
+  - 端末差で機能差を作らない前提を明文化する

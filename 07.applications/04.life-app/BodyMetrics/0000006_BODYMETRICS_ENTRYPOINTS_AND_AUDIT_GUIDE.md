@@ -1,0 +1,52 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# BODYMETRICS ENTRYPOINTS AND AUDIT GUIDE
+# ============================================================
+
+status: fixed
+
+purpose:
+  - BodyMetrics 設計束の入口を明確化する
+  - 統合版を最短読順の起点として固定する
+  - 総点検時の確認対象をまとめる
+
+entrypoints:
+  first_read:
+    - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+    - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  second_read:
+    - 0000003_BODYMETRICS_READING_ORDER.md
+  canonical_root:
+    - 0000000_BODYMETRICS_SYSTEM_INDEX.md
+    - 0000001_BODYMETRICS_SYSTEM_OVERVIEW.md
+  fixed_decision_root:
+    - 010.constitution/0100005_FIXED_DECISIONS_CANONICAL.md
+    - 030.model/0300008_FIXED_DATA_ARCHITECTURE_DECISIONS.md
+    - 080.policy/0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md
+    - 120.implementation/1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+    - 120.implementation/1200011_IMPLEMENTATION_PREP_COMPLETION_DECLARATION.md
+
+audit_focus:
+  - integrated canonical が存在するか
+  - implementation ready integrated が存在するか
+  - reading order が統合版を指しているか
+  - meta index が統合版監査ノートを持つか
+  - constitution / model / policy / implementation の fixed canonical が存在するか
+  - 未決事項が再流入していないか
+  - 実装開始扱いの文言が混入していないか
+
+reader_note:
+  - まず統合版2本を読む
+  - 次に reading order に従って詳細文書へ降りる
+  - 変更は change request 方式で扱う

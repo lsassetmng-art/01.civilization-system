@@ -1,0 +1,14 @@
+# ============================================================
+# PRICING INDEX
+# LegalSupport
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0700201_PRICING_AND_PLAN_CANONICAL.md
+  - 0700202_SERVICE_SCOPE_CANONICAL.md
+
+purpose:
+  - LegalSupport の課金設計と提供範囲を固定する

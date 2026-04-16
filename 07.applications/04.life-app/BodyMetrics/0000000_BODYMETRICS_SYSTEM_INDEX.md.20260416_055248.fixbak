@@ -1,0 +1,57 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# BODYMETRICS SYSTEM INDEX
+# ============================================================
+
+status: draft
+system_name:
+  en: BodyMetrics
+  ja: 基礎情報測定アプリ
+
+path:
+  - 01.civilization-system
+  - 07.applications
+  - 04.life-app
+  - BodyMetrics
+
+layer_scope:
+  - 010.constitution
+  - 020.architecture
+  - 030.model
+  - 040.runtime
+  - 050.flow
+  - 060.integration
+  - 070.operations
+  - 080.policy
+  - 090.interface
+  - 100.security
+  - 110.infrastructure
+  - 120.implementation
+  - 130.development
+  - 900.meta
+
+fixed_decisions:
+  - 個人利用コアは無料
+  - Family Care は月額300円
+  - サポートはAIチャットのみ
+  - 診断・治療方針決定は行わない
+  - 平均比較グラフを正式搭載する
+  - 健康スコアを正式搭載する
+  - 参考値は reference として扱う
+  - 共通部品採否は別チャット扱いとする
+integrated_entrypoints:
+  - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+  - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+  - 0000007_BODYMETRICS_FULL_INTEGRATED_CANONICAL.md

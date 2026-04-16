@@ -1,0 +1,13 @@
+# ============================================================
+# MODEL OVERVIEW
+# ============================================================
+
+layer: 030.model
+
+scope:
+  - life_plan
+  - life_goal
+  - milestone
+  - event_timeline
+  - scenario
+  - review_log

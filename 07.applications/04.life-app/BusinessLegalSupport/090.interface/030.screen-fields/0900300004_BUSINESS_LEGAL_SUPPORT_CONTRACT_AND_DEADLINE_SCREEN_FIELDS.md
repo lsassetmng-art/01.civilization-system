@@ -1,0 +1,91 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# BUSINESS LEGAL SUPPORT CONTRACT AND DEADLINE SCREEN FIELDS
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 090.interface
+subfolder: 030.screen-fields
+owner: Boss
+prepared_by: Zero
+
+screen_id:
+  - contract_list
+  - contract_detail
+  - deadline_list
+
+contract_list:
+  filters:
+    - issue_id
+    - status
+    - contract_type
+    - keyword
+  columns_or_cards:
+    - title
+    - contract_type
+    - counterparty_name
+    - effective_from
+    - effective_to
+    - auto_renew_flag
+    - amount_value
+    - currency_code
+    - status
+  source_payload:
+    - create_contract_item_response derived list view
+
+contract_detail:
+  fields:
+    - contract_id
+    - issue_id
+    - title
+    - contract_type
+    - counterparty_id
+    - signed_on
+    - effective_from
+    - effective_to
+    - renewal_rule
+    - auto_renew_flag
+    - amount_value
+    - currency_code
+    - status
+    - created_at
+    - updated_at
+  source_payload:
+    - create_contract_item_response
+
+deadline_list:
+  filters:
+    - issue_id
+    - completed_flag
+    - date_from
+    - date_to
+  columns_or_cards:
+    - deadline_type
+    - due_at
+    - related_type
+    - related_id
+    - completed_flag
+    - completed_at
+  source_payload:
+    - list_deadline_records_request
+    - list_deadline_records_response.items[]
+
+screen_rules:
+  - amount_value は単独表示せず currency_code とセットで表示
+  - effective_to が近い契約は強調表示する
+  - completed_flag true の期限は既定で折りたたみ対象にできる

@@ -1,0 +1,16 @@
+# ============================================================
+# LEGAL SUPPORT OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+operations:
+  - AIチャットによる使い方サポート
+  - 重要期限通知
+  - 未整理書類の確認通知
+  - 家族共有更新通知
+
+support_policy:
+  - 人間の法務相談は含まない
+  - アプリ運用サポートに限定する

@@ -1,0 +1,8 @@
+# ============================================================
+# INFRASTRUCTURE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 1100001_INFRASTRUCTURE_OVERVIEW.md
+  - 1100002_STORAGE_AND_SYNC_INFRASTRUCTURE.md

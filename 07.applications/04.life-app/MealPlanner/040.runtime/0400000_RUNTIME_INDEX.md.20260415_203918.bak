@@ -1,0 +1,11 @@
+# Runtime Index
+
+## purpose
+MealPlanner の稼働時挙動を定義する
+
+## files
+- 0400001_RUNTIME_OVERVIEW.md
+
+## notes
+- この index は Runtime の入口である
+- 詳細は配下ドキュメントを参照する

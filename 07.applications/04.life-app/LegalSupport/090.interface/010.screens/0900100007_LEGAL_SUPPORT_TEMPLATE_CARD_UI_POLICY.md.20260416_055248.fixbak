@@ -1,0 +1,33 @@
+# ============================================================
+# LEGAL SUPPORT TEMPLATE CARD UI POLICY
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: interface
+subdomain: screens
+
+ui_policy:
+  - category 選択後に starter_cards を上から順に提示する
+  - card は 1画面1入力群を基本とする
+  - スキップ可能 card と必須 card を分ける
+  - 完了率を表示して入力負荷を下げる
+
+card_types:
+  required_first_cards:
+    - issue_summary
+    - current_issue_summary
+    - deceased_person_summary
+    - parties_summary
+  optional_cards:
+    - evidence_documents
+    - records_and_receipts
+    - family_share_scope
+    - will_related_notes
+
+plan_gating:
+  free:
+    - simple_cards_only
+  plus_family:
+    - full_card_set
+    - category_specific_checklist

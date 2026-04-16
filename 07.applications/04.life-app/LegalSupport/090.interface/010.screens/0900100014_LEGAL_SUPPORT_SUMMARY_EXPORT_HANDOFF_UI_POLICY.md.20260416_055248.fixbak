@@ -1,0 +1,31 @@
+# ============================================================
+# LEGAL SUPPORT SUMMARY EXPORT HANDOFF UI POLICY
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: interface
+subdomain: screens
+
+ui_principles:
+  - summary / export / handoff は似て見えても導線を分ける
+  - summary は閲覧中心
+  - export は共有資料化
+  - handoff は他アプリ移送であることを明示する
+
+screen_roles:
+  summary_preview_screen:
+    purpose:
+      - AI要約や整理要約の確認
+  export_profile_screen:
+    purpose:
+      - PDF出力プロファイル選択
+  handoff_preview_screen:
+    purpose:
+      - 他アプリへ渡る payload の確認
+
+ui_rules:
+  - profile 名を大きく表示する
+  - 含まれる section と除外される section を両方表示する
+  - handoff では target app を明示する
+  - family export では family 向け制限がかかることを明示する

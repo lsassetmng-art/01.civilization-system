@@ -11,7 +11,7 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Indexes the PersonaOS-to-VisualRuntime reflection-preparation
+Indexes the PersonaOS-internal VisualRuntime reflection-preparation
 documents.
 
 files:

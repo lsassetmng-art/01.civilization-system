@@ -1,0 +1,41 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# MealPlanner Architecture Review Lens
+
+## 1. purpose
+アーキテクチャ観点で、どこを見ればよいかを整理する。
+
+## 2. review_lenses
+
+### lens_01_boundary
+- life schema と CX22073JW の境界は崩れていないか
+- private / household / lifeos_public は分離されているか
+
+### lens_02_replaceability
+- 共通部品未確定でも app 単体で進められるか
+- 後で差し替え可能な構造になっているか
+
+### lens_03_runtime_stability
+- snapshot-first で household 運用が安定するか
+- versioning によって既存 plan が壊れないか
+
+### lens_04_product_fit
+- free / paid の差が構造的に自然か
+- AIチャットのみサポートと整合しているか
+
+### lens_05_design_phase_fit
+- 物理実装詳細に落ちすぎていないか
+- 今の phase に必要な粒度で止まっているか
+
+## 3. review_result_target
+- 大きな構造矛盾がない
+- phase に対して過不足の少ない設計になっている

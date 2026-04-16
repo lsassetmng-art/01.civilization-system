@@ -1,0 +1,11 @@
+# Architecture Integration Index
+
+## purpose
+MealPlanner の連携アーキテクチャを定義する
+
+## files
+- 0200300001_INTEGRATION_OVERVIEW.md
+
+## notes
+- この index は Architecture Integration の入口である
+- 詳細は配下ドキュメントを参照する

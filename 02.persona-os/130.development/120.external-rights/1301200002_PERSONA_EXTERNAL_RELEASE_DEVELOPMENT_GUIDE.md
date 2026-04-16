@@ -1,13 +1,15 @@
-# ============================================================
 # PERSONA EXTERNAL RELEASE DEVELOPMENT GUIDE
-# ============================================================
 
-status: canonical
-layer: development
-domain: external-rights
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-development_rules:
-preserve PersonaOS authority over external-release semantics
+release_rules:
+- no external release without explicit release scope
+- release payload must be derived from approved immutable input
+- target system identifier is required
+- release result must be persisted with retry-safe semantics
+
+required_controls:
+- export allow/deny check
+- release scope check
+- result callback persistence
+- dead-letter for repeated downstream failure

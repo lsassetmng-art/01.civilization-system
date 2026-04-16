@@ -1,0 +1,20 @@
+# ============================================================
+# INDEX
+# ============================================================
+
+status: canonical-draft
+phase: implementation-readiness
+system: TrainingCoach
+layer: 120.implementation/020.sql-draft
+owner: Boss
+prepared_by: Zero
+db_reviewer: 佐藤
+
+purpose:
+  - TrainingCoach の life schema 用 SQL 草案の入口
+  - DDL 草案と補助資料の参照順を固定する
+
+reading_order:
+  - 001_OVERVIEW.md
+  - 1200200002_TRAINING_COACH_DDL_DRAFT_README.md
+  - 1200200001_TRAINING_COACH_LIFE_DDL_DRAFT.sql

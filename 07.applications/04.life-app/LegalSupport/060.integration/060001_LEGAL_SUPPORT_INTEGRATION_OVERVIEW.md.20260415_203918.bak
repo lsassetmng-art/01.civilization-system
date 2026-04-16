@@ -1,0 +1,16 @@
+# ============================================================
+# LEGAL SUPPORT INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+lifeos_linkages:
+  - InheritanceSupportへ相続案件を振り分ける
+  - BusinessLegalSupportへ事業案件を振り分ける
+  - EndOfLifePlannerへ遺言・家族引継ぎ関連を振り分ける
+  - MoneyPlannerへ相談費用連携を将来追加可能とする
+
+integration_rules:
+  - 法的判断結果は連携対象にしない
+  - 振り分けは案件分類ベースで行う

@@ -1,0 +1,14 @@
+# ============================================================
+# DOMAIN ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+domain_split:
+  - record_domain
+  - sleep_domain
+  - blood_pressure_domain
+  - reference_domain
+  - score_domain
+  - sharing_domain
+  - export_domain

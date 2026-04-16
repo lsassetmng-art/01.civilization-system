@@ -1,0 +1,16 @@
+# ============================================================
+# INTEGRATION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0600003_INTEGRATION_CORE_OVERVIEW.md
+  - 0600004_PERSONAL_LEGAL_SUPPORT_INTEGRATION_BOUNDARY.md

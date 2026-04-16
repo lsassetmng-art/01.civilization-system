@@ -1,0 +1,18 @@
+# ============================================================
+# DATA CLASSIFICATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 100.security
+subfolder: 030.data-classification
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000300001_BUSINESS_LEGAL_SUPPORT_DATA_CLASSIFICATION_OVERVIEW.md
+  - 1000300002_BUSINESS_LEGAL_SUPPORT_DATA_SENSITIVITY_MATRIX.md
+  - 1000300003_BUSINESS_LEGAL_SUPPORT_ATTACHMENT_HANDLING_CLASSIFICATION.md

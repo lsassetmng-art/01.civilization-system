@@ -1,65 +1,62 @@
 # ============================================================
 # PERSONA BUILDER IMPLEMENTATION
+# IMPLEMENTATION-READY REFLECTED VERSION
 # ============================================================
 
-status: canonical
-scope: persona.builder.implementation
-system: persona-os
-owner: Boss
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / builder orchestration
 prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
 
+## Builder bounded contexts
 
-# PURPOSE
+- `builder_draft`
+- `builder_section_state`
+- `builder_change_set`
+- `builder_validation_run`
+- `builder_validation_issue`
+- `builder_approval_request`
+- `builder_approval_decision`
+- `builder_publish_candidate`
+- `builder_publish_execution`
+- `builder_audit_record`
 
-Define the implementation structure
-for Persona Builder inside PersonaOS.
+## Orchestration states
 
+```text
+drafting
+  -> validation-running
+  -> validation-failed
+  -> validation-passed
+  -> approval-requested
+  -> approved or rejected
+  -> publish-preparing
+  -> published
+```
 
-# IMPLEMENTATION ROLE
+## Publish preconditions
 
-Implementation must realize:
+All must be true:
+- latest validation status is `passed`
+- approval status is `approved`
+- no unresolved blocking validation issue
+- visual manifest exists
+- release notes exist
+- persona root is not soft-deleted
+- no other publish execution is running for same persona root
 
-- draft storage
-- section editing
-- validation invocation
-- approval request invocation
-- publish preparation invocation
-- audit persistence
+## Builder authority boundary
 
+Builder may:
+- create and edit drafts
+- compute validation
+- request approval
+- prepare publish handoff
 
-# IMPLEMENTATION PRINCIPLE
-
-Implementation must preserve:
-
-- truth boundary separation
-- validation/approval/publish gating
-- fail-closed transitions
-- auditable action trails
-- runtime separation from visual rendering
-
-
-# RECOMMENDED MODULES
-
-- builder-draft-service
-- builder-section-service
-- builder-validation-service
-- builder-approval-service
-- builder-publish-service
-- builder-audit-service
-- builder-access-service
-
-
-# STORAGE RULE
-
-Builder storage must be separate
-from final Persona mutable truth storage.
-
-Builder draft persistence must remain explicitly identifiable.
-
-
-# FINAL DEFINITION
-
-Persona Builder Implementation realizes
-the governed authoring subsystem
-without collapsing Persona truth authority,
-approval authority, or release authority.
+Builder may not:
+- mutate truth pointers directly
+- bypass policy-denied errors
+- publish without approval
+- expose draft ids to external rights records

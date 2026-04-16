@@ -1,0 +1,20 @@
+# ============================================================
+# PRE IMPLEMENTATION PACKAGE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 120.implementation
+subfolder: 060.pre-implementation-package
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 実装前にどこまで設計が揃っているかを整理する
+  - いま着手してはいけない領域を明示する
+  - 実装開始時の最初のスコープを迷わないようにする
+
+package_meaning:
+  - this is not implementation kickoff
+  - this is the design package to be used before kickoff

@@ -1,0 +1,18 @@
+# ============================================================
+# SETTINGS WORKBOOK INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 110.settings-workbook
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0901100000_SETTINGS_WORKBOOK_INDEX.md
+  - 0901100001_SETTINGS_WORKBOOK_OVERVIEW.md
+  - 0901100002_LIFE_PLANNER_SETTINGS_SCREEN_EXACT.md
+  - 0901100003_LIFE_PLANNER_CHECKLIST_RISK_VALUE_SCREEN_EXACT.md
+  - 0901100004_LIFE_PLANNER_WORKBOOK_COPY_GUIDE.md

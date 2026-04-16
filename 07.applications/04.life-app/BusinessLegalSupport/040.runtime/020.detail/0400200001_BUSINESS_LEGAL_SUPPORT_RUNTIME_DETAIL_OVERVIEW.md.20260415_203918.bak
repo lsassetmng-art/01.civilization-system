@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT RUNTIME DETAIL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 040.runtime
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - 実行時のイベント連鎖を詳細化する
+  - 書き込み・通知・サマリー生成の順番を固定する
+  - 実装前に runtime 前提をそろえる

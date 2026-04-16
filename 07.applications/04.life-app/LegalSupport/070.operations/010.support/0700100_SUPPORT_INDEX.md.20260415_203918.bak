@@ -1,0 +1,13 @@
+# ============================================================
+# SUPPORT INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0700101_SUPPORT_OPERATION_OVERVIEW.md
+  - 0700102_OPERATION_RULE_CANONICAL.md
+
+purpose:
+  - LegalSupport の支援運用と利用ルールの入口

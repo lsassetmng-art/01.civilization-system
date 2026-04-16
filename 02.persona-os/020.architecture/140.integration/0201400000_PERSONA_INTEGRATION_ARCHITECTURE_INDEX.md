@@ -1,10 +1,6 @@
-# ============================================================
 # PERSONA INTEGRATION ARCHITECTURE INDEX
-# ============================================================
 
-status: canonical
-layer: architecture
-domain: integration
-system: persona-os
-owner: Boss
-prepared_by: Zero
+- 0201400001_PERSONA_INTEGRATION_ARCHITECTURE_OVERVIEW.md
+- inbound growth apply architecture
+- event outbox architecture
+- downstream sync result architecture

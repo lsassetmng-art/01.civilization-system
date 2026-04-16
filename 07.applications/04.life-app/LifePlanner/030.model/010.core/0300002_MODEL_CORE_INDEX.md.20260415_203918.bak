@@ -1,0 +1,17 @@
+# ============================================================
+# MODEL CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300003_MODEL_CORE_OVERVIEW.md
+  - 0300004_LIFE_PLANNER_DOMAIN_MODEL.md

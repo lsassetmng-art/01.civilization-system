@@ -1,0 +1,135 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# SCREEN FLOW AND ACTION PRIORITY FIXED
+# ============================================================
+
+status: fixed
+
+primary_user_flows:
+
+  flow_dashboard_to_quick_record:
+    steps:
+      - open dashboard_home
+      - tap quick_record
+      - choose metric
+      - enter value
+      - save
+      - review immediate comparison summary
+
+  flow_dashboard_to_trend_analysis:
+    steps:
+      - open dashboard_home
+      - tap target metric card
+      - open metric_detail
+      - switch to trend_analysis
+      - review 7day / 30day averages
+      - review reference band
+
+  flow_dashboard_to_weekly_review:
+    steps:
+      - open dashboard_home
+      - tap weekly_review
+      - compare current week and previous week
+      - read week highlight
+      - inspect note list
+
+  flow_health_score_review:
+    steps:
+      - open health_score_center
+      - read total_score
+      - inspect components
+      - inspect explanation
+      - return to dashboard or trend
+
+  flow_goal_update:
+    steps:
+      - open goal_center
+      - create or edit goal
+      - confirm progress summary
+
+  flow_provider_link:
+    steps:
+      - open provider_link_settings
+      - choose provider
+      - confirm permission scope
+      - complete connect
+      - review last_sync_status
+
+  flow_family_care_setup:
+    steps:
+      - open family_care_settings
+      - choose recipient
+      - choose shared metrics
+      - set note_share_flag
+      - set export_permission_flag
+      - set active period
+      - save
+
+  flow_export:
+    steps:
+      - open export_center
+      - choose format
+      - choose metrics
+      - choose date range
+      - choose include_notes
+      - create export job
+
+action_priority:
+  dashboard_home:
+    primary:
+      - quick_record
+    secondary:
+      - open_weekly_review
+      - open_trend_analysis
+      - open_health_score_center
+
+  quick_record:
+    primary:
+      - save_record
+    secondary:
+      - add_note
+
+  metric_detail:
+    primary:
+      - switch_range
+    secondary:
+      - open_related_notes
+
+  trend_analysis:
+    primary:
+      - change_metric
+      - change_range
+    secondary:
+      - toggle_source_filter
+
+  health_score_center:
+    primary:
+      - inspect_components
+    secondary:
+      - open_weekly_review
+
+  family_care_settings:
+    primary:
+      - save_share_setting
+    secondary:
+      - end_share
+
+  export_center:
+    primary:
+      - create_export_job
+
+ui_priority_rules:
+  - smartphone は入力と主要summary優先
+  - pc_tablet は比較分析優先
+  - Family Care は share scope を超える導線を出さない
+  - export_center は permission check 前提で表示する

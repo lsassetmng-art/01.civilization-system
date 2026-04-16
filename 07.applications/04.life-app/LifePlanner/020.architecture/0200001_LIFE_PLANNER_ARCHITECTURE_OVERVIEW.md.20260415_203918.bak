@@ -1,0 +1,21 @@
+# ============================================================
+# LIFE PLANNER ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - アーキテクチャレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 人生計画、ライフイベント、目標、準備項目、見直し通知、関連導線を中心に構成する
+  - MoneyPlanner、EndOfLifePlanner、健康系アプリとの連携を持つ
+  - 共通部品は外部正本を参照する前提にする

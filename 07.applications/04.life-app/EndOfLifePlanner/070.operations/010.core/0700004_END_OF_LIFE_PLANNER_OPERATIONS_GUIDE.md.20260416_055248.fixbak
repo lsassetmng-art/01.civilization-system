@@ -1,0 +1,29 @@
+# ============================================================
+# END OF LIFE PLANNER OPERATIONS GUIDE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: EndOfLifePlanner
+schema: life
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+operations:
+  monthly:
+    - 終活メモ見直し
+    - 連絡先更新確認
+  quarterly:
+    - 家族共有案件確認
+    - 書類所在確認
+  yearly:
+    - 希望事項見直し
+    - 専門家相談要否確認
+
+ops_rules:
+  - 運用は owner 主体
+  - family は許可範囲閲覧
+  - 現物書類や保管場所の確認を別途促す

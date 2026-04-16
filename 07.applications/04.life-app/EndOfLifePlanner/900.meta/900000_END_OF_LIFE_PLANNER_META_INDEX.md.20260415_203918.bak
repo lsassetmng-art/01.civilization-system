@@ -1,0 +1,10 @@
+# ============================================================
+# END OF LIFE PLANNER META INDEX
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+files:
+  - 900001_END_OF_LIFE_PLANNER_META_OVERVIEW.md
+  - 900010_END_OF_LIFE_PLANNER_DOCUMENT_RULES.md

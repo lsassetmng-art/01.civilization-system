@@ -1,0 +1,16 @@
+# ============================================================
+# RUNTIME CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 040.runtime
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0400003_RUNTIME_CORE_OVERVIEW.md
+  - 0400004_PERSONAL_LEGAL_SUPPORT_RUNTIME_BEHAVIOR.md

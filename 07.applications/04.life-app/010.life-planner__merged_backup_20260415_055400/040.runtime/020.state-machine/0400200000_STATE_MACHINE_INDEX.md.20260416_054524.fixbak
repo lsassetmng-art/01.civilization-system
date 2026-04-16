@@ -1,0 +1,19 @@
+# ============================================================
+# STATE MACHINE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 040.runtime
+subfolder: 020.state-machine
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0400200000_STATE_MACHINE_INDEX.md
+  - 0400200001_STATE_MACHINE_OVERVIEW.md
+  - 0400200002_LIFE_PLANNER_PLAN_STATE_MACHINE.md
+  - 0400200003_LIFE_PLANNER_GOAL_AND_MILESTONE_STATE_MACHINE.md
+  - 0400200004_LIFE_PLANNER_TIMELINE_AND_REVIEW_STATE_MACHINE.md
+  - 0400200005_LIFE_PLANNER_REFLECTION_SHARE_SCENARIO_STATE_MACHINE.md

@@ -1,0 +1,17 @@
+# ============================================================
+# INTERFACE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 090.interface
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0900003_INTERFACE_CORE_OVERVIEW.md
+  - 0900004_MONEY_PLANNER_INTERFACE_SPEC.md

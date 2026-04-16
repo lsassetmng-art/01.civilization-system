@@ -1,0 +1,24 @@
+# ============================================================
+# MASTER DEFINITION OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 040.master-definition
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - LifePlannerで繰り返し使うカテゴリや enum を固定する
+  - UI、payload、logical schema の語彙を揃える
+  - 実装前にラベル揺れと分類ぶれを防ぐ
+
+scope:
+  - plan category master
+  - goal category master
+  - event category master
+  - shared scope category master
+  - enum master
+  - sensitive scope master

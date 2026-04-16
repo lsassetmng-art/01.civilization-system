@@ -1,7 +1,11 @@
 # PERSONA APPLY STATUS INTERFACE
-status: canonical
-layer: interface
-system: persona-os
-scope: persona-apply-status-interface
 
-Defines optional status query interface for prior events.
+status: implementation-ready-followup
+
+status_fields:
+- apply_result_id
+- correlation_id
+- result_status
+- attempt_count
+- dead_lettered
+- updated_at

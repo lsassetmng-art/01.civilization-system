@@ -1,0 +1,4 @@
+# ARCHITECTURE INDEX
+subfolders:
+  - 010.domain
+  - 020.components

@@ -1,0 +1,17 @@
+# ============================================================
+# CONNECTED APP ASSUMPTION INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 060.integration
+subfolder: 040.connected-app-assumption
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0600400000_CONNECTED_APP_ASSUMPTION_INDEX.md
+  - 0600400001_CONNECTED_APP_ASSUMPTION_OVERVIEW.md
+  - 0600400002_LIFE_PLANNER_INBOUND_APP_ASSUMPTION_MATRIX.md
+  - 0600400003_LIFE_PLANNER_REFLECTION_CANDIDATE_SOURCE_MAPPING.md

@@ -1,0 +1,19 @@
+# ============================================================
+# DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: implementation-prep-only
+schema_name: life
+
+development_position:
+  - implementation not started
+  - release slices are prepared
+  - acceptance criteria are prepared
+  - test scenarios are prepared
+  - implementation sequence is prepared
+
+guiding_rule:
+  - start from smallest valuable release slice
+  - keep share/confidentiality safety intact
+  - do not begin with cross-app complexity

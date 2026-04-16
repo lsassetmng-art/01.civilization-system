@@ -1,0 +1,20 @@
+# ============================================================
+# LIFEOS LINK OVERVIEW
+# ============================================================
+
+status: canonical-draft
+receive:
+  inheritance_support:
+    - heir_candidate summary
+    - asset/debt summary
+    - will note summary
+  end_of_life_planner:
+    - intention summary
+    - emergency contact summary
+  money_planner:
+    - asset summary
+    - debt summary
+
+send:
+  - consultation summary
+  - legal follow-up memo

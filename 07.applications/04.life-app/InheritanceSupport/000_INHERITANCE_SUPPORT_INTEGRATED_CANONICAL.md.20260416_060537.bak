@@ -1,0 +1,1780 @@
+# INHERITANCE SUPPORT INTEGRATED CANONICAL
+
+- app: InheritanceSupport
+- domain: 04.life-app
+- status: regenerated-integrated-canonical
+- source_root: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/InheritanceSupport
+- source_count: 68
+
+## SOURCE FILES
+
+- `0000000_INHERITANCE_SUPPORT_INDEX.md`
+- `0000001_INHERITANCE_SUPPORT_OVERVIEW.md`
+- `0000002_INHERITANCE_SUPPORT_CANONICAL.md`
+- `010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md`
+- `010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md`
+- `010.constitution/010.core/0100004_INHERITANCE_SUPPORT_CORE_PRINCIPLES.md`
+- `010.constitution/0100000_CONSTITUTION_INDEX.md`
+- `010.constitution/0100001_INHERITANCE_SUPPORT_CONSTITUTION_OVERVIEW.md`
+- `020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md`
+- `020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md`
+- `020.architecture/010.core/0200004_INHERITANCE_SUPPORT_SYSTEM_ARCHITECTURE.md`
+- `020.architecture/0200000_ARCHITECTURE_INDEX.md`
+- `020.architecture/0200001_INHERITANCE_SUPPORT_ARCHITECTURE_OVERVIEW.md`
+- `030.model/010.core/0300002_MODEL_CORE_INDEX.md`
+- `030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md`
+- `030.model/010.core/0300004_INHERITANCE_SUPPORT_DOMAIN_MODEL.md`
+- `030.model/0300000_MODEL_INDEX.md`
+- `030.model/0300001_INHERITANCE_SUPPORT_MODEL_OVERVIEW.md`
+- `040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md`
+- `040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md`
+- `040.runtime/010.core/0400004_INHERITANCE_SUPPORT_RUNTIME_BEHAVIOR.md`
+- `040.runtime/0400000_RUNTIME_INDEX.md`
+- `040.runtime/0400001_INHERITANCE_SUPPORT_RUNTIME_OVERVIEW.md`
+- `050.flow/010.core/0500002_FLOW_CORE_INDEX.md`
+- `050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md`
+- `050.flow/010.core/0500004_INHERITANCE_SUPPORT_USER_FLOW.md`
+- `050.flow/0500000_FLOW_INDEX.md`
+- `050.flow/0500001_INHERITANCE_SUPPORT_FLOW_OVERVIEW.md`
+- `060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md`
+- `060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md`
+- `060.integration/010.core/0600004_INHERITANCE_SUPPORT_INTEGRATION_BOUNDARY.md`
+- `060.integration/0600000_INTEGRATION_INDEX.md`
+- `060.integration/0600001_INHERITANCE_SUPPORT_INTEGRATION_OVERVIEW.md`
+- `070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md`
+- `070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md`
+- `070.operations/010.core/0700004_INHERITANCE_SUPPORT_OPERATIONS_GUIDE.md`
+- `070.operations/0700000_OPERATIONS_INDEX.md`
+- `070.operations/0700001_INHERITANCE_SUPPORT_OPERATIONS_OVERVIEW.md`
+- `080.policy/010.core/0800002_POLICY_CORE_INDEX.md`
+- `080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md`
+- `080.policy/010.core/0800004_INHERITANCE_SUPPORT_POLICY_SET.md`
+- `080.policy/0800000_POLICY_INDEX.md`
+- `080.policy/0800001_INHERITANCE_SUPPORT_POLICY_OVERVIEW.md`
+- `090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md`
+- `090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md`
+- `090.interface/010.core/0900004_INHERITANCE_SUPPORT_INTERFACE_SPEC.md`
+- `090.interface/0900000_INTERFACE_INDEX.md`
+- `090.interface/0900001_INHERITANCE_SUPPORT_INTERFACE_OVERVIEW.md`
+- `100.security/010.core/1000002_SECURITY_CORE_INDEX.md`
+- `100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md`
+- `100.security/010.core/1000004_INHERITANCE_SUPPORT_SECURITY_MODEL.md`
+- `100.security/1000000_SECURITY_INDEX.md`
+- `100.security/1000001_INHERITANCE_SUPPORT_SECURITY_OVERVIEW.md`
+- `110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md`
+- `110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md`
+- `110.infrastructure/010.core/1100004_INHERITANCE_SUPPORT_INFRASTRUCTURE_PROFILE.md`
+- `110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md`
+- `110.infrastructure/1100001_INHERITANCE_SUPPORT_INFRASTRUCTURE_OVERVIEW.md`
+- `120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md`
+- `120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md`
+- `120.implementation/010.core/1200004_INHERITANCE_SUPPORT_IMPLEMENTATION_PLAN.md`
+- `120.implementation/1200000_IMPLEMENTATION_INDEX.md`
+- `120.implementation/1200001_INHERITANCE_SUPPORT_IMPLEMENTATION_OVERVIEW.md`
+- `130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md`
+- `130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md`
+- `130.development/010.core/1300004_INHERITANCE_SUPPORT_DEVELOPMENT_ROADMAP.md`
+- `130.development/1300000_DEVELOPMENT_INDEX.md`
+- `130.development/1300001_INHERITANCE_SUPPORT_DEVELOPMENT_OVERVIEW.md`
+
+---
+
+## FILE: 0000000_INHERITANCE_SUPPORT_INDEX.md
+
+# ============================================================
+# INHERITANCE SUPPORT INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - InheritanceSupport の正本設計書群の入口
+  - 各レイヤの読み順固定
+  - LifeOS 法律領域における相続・贈与・遺言・引継ぎ準備アプリの位置づけ整理
+
+read_order:
+  - 0000001_INHERITANCE_SUPPORT_OVERVIEW.md
+  - 0000002_INHERITANCE_SUPPORT_CANONICAL.md
+  - 010.constitution/0100000_CONSTITUTION_INDEX.md
+  - 020.architecture/0200000_ARCHITECTURE_INDEX.md
+  - 030.model/0300000_MODEL_INDEX.md
+  - 040.runtime/0400000_RUNTIME_INDEX.md
+  - 050.flow/0500000_FLOW_INDEX.md
+  - 060.integration/0600000_INTEGRATION_INDEX.md
+  - 070.operations/0700000_OPERATIONS_INDEX.md
+  - 080.policy/0800000_POLICY_INDEX.md
+  - 090.interface/0900000_INTERFACE_INDEX.md
+  - 100.security/1000000_SECURITY_INDEX.md
+  - 110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+  - 120.implementation/1200000_IMPLEMENTATION_INDEX.md
+  - 130.development/1300000_DEVELOPMENT_INDEX.md
+
+---
+
+## FILE: 0000001_INHERITANCE_SUPPORT_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+owner: Boss
+prepared_by: Zero
+
+summary:
+  - InheritanceSupport は相続、贈与、遺言、引継ぎ準備を支援する生活法務アプリである
+  - 法的助言の代替ではなく、情報整理・関係者整理・資産/書類整理・相談前準備を支援する
+  - LifeOS の一部として、終活、家計、家族共有と連携しやすい設計を持つ
+  - 争訟対応や正式代理は対象外とし、必要時は専門家相談へつなぐ
+
+main_users:
+  - 個人
+  - 家族
+  - 高齢家族を支える人
+  - 相続準備を始めたい人
+
+core_functions:
+  - 相続案件作成
+  - 相続人候補整理
+  - 資産/負債メモ整理
+  - 遺言/贈与/引継ぎメモ
+  - 必要書類整理
+  - 期限管理
+  - 相談メモ
+  - 文書添付
+
+pricing:
+  free: 0
+  plus: 500
+  family: 800
+
+non_goals:
+  - 法的判断の断定
+  - 相続割合の確定判断
+  - 有資格者の代替
+  - 代理交渉
+  - 正式意見書作成
+
+---
+
+## FILE: 0000002_INHERITANCE_SUPPORT_CANONICAL.md
+
+# ============================================================
+# INHERITANCE SUPPORT CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+owner: Boss
+prepared_by: Zero
+
+positioning:
+  - LifeOS / 法律領域
+  - 相続、贈与、遺言、引継ぎ準備を扱う整理支援アプリ
+  - 相続発生前の準備から発生後の相談整理までの入口を支援する
+
+boundaries:
+  - 法的助言や代理行為は提供しない
+  - 裁判、代理交渉、正式な遺産分割実務の正本にはしない
+  - 共通部品詳細は別チャットで管理される前提とし、本設計はアプリ固有責務を中心に扱う
+  - BusinessOS/ERP の正式業務正本とは分離する
+
+required_cross_cutting:
+  multilingual: true
+  multicurrency: true
+  multi_device:
+    iphone: true
+    android: true
+    pc: true
+    tablet: true
+
+ai_support:
+  enabled: true
+  scope:
+    - 相談前の論点整理
+    - 必要確認事項の提案
+    - 書類不足チェック
+    - メモ要約
+    - 家族共有向け説明の下書き
+  prohibited:
+    - 法的判断の断定
+    - 相続分の確定
+    - 有資格者を装う表現
+    - 代理交渉
+
+---
+
+## FILE: 010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md
+
+# ============================================================
+# CONSTITUTION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 010.constitution
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0100003_CONSTITUTION_CORE_OVERVIEW.md
+  - 0100004_INHERITANCE_SUPPORT_CORE_PRINCIPLES.md
+
+---
+
+## FILE: 010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md
+
+# ============================================================
+# CONSTITUTION CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 010.constitution
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の 憲章 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 010.constitution/010.core/0100004_INHERITANCE_SUPPORT_CORE_PRINCIPLES.md
+
+# ============================================================
+# INHERITANCE SUPPORT CORE PRINCIPLES
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 010.constitution
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+principles:
+  - 相続準備と相談前整理を支援する
+  - 最終判断は本人または有資格専門家が行う
+  - 法的助言ではなく整理支援である
+  - 家族や関係者が確認しやすい状態をつくる
+  - 共有は許可範囲に限定する
+
+boundaries:
+  - 相続割合や法的結論を断定しない
+  - 代理行為を行わない
+  - 訴訟戦略の断定を行わない
+  - 正式相続実務の正本にはしない
+
+---
+
+## FILE: 010.constitution/0100000_CONSTITUTION_INDEX.md
+
+# ============================================================
+# CONSTITUTION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 010.constitution
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0100001_INHERITANCE_SUPPORT_CONSTITUTION_OVERVIEW.md
+  - 010.core/0100002_CONSTITUTION_CORE_INDEX.md
+  - 010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md
+  - 010.core/0100004_INHERITANCE_SUPPORT_CORE_PRINCIPLES.md
+
+---
+
+## FILE: 010.constitution/0100001_INHERITANCE_SUPPORT_CONSTITUTION_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT CONSTITUTION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 010.constitution
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 憲章レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 相続・贈与・遺言・引継ぎ準備アプリとしての存在目的を固定する
+  - 法的助言代替ではないことを最上位で固定する
+  - 家族共有と専門家相談導線の境界を明文化する
+
+---
+
+## FILE: 020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+
+# ============================================================
+# ARCHITECTURE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0200003_ARCHITECTURE_CORE_OVERVIEW.md
+  - 0200004_INHERITANCE_SUPPORT_SYSTEM_ARCHITECTURE.md
+
+---
+
+## FILE: 020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
+
+# ============================================================
+# ARCHITECTURE CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の アーキテクチャ における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 020.architecture/010.core/0200004_INHERITANCE_SUPPORT_SYSTEM_ARCHITECTURE.md
+
+# ============================================================
+# INHERITANCE SUPPORT SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+architecture_blocks:
+  - inheritance_case_workspace
+  - family_and_heir_area
+  - asset_liability_note_area
+  - document_ledger_area
+  - deadline_center
+  - consultation_note_area
+  - family_share_output
+  - ai_support_assist
+  - lifeos_bridge
+
+bridge_rules:
+  - LifeOS 連携は終活、家計、人生計画との接続を優先
+  - 外部専門家相談は明示出力のみ
+  - 共通部品の詳細定義は別正本を参照する
+
+---
+
+## FILE: 020.architecture/0200000_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0200001_INHERITANCE_SUPPORT_ARCHITECTURE_OVERVIEW.md
+  - 010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+  - 010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
+  - 010.core/0200004_INHERITANCE_SUPPORT_SYSTEM_ARCHITECTURE.md
+
+---
+
+## FILE: 020.architecture/0200001_INHERITANCE_SUPPORT_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - アーキテクチャレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 相続案件、関係者、資産/負債、書類、相談メモ、期限管理を中心に構成する
+  - EndOfLifePlanner や MoneyPlanner との連携を持つ
+  - 共通部品は外部正本を参照する前提にする
+
+---
+
+## FILE: 030.model/010.core/0300002_MODEL_CORE_INDEX.md
+
+# ============================================================
+# MODEL CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300003_MODEL_CORE_OVERVIEW.md
+  - 0300004_INHERITANCE_SUPPORT_DOMAIN_MODEL.md
+
+---
+
+## FILE: 030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md
+
+# ============================================================
+# MODEL CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の モデル における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 030.model/010.core/0300004_INHERITANCE_SUPPORT_DOMAIN_MODEL.md
+
+# ============================================================
+# INHERITANCE SUPPORT DOMAIN MODEL
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+entities:
+  - inheritance_case
+  - heir_candidate
+  - family_member
+  - asset_note
+  - liability_note
+  - will_note
+  - gift_record
+  - deadline_record
+  - consultation_record
+  - attached_document
+  - family_share_record
+
+model_rules:
+  - 案件が中心で、関係者・資産・負債・書類・相談メモがぶら下がる
+  - 家族は案件横断で参照できる
+  - 家族共有は正本移譲ではなく共有ビューとして扱う
+
+---
+
+## FILE: 030.model/0300000_MODEL_INDEX.md
+
+# ============================================================
+# MODEL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300001_INHERITANCE_SUPPORT_MODEL_OVERVIEW.md
+  - 010.core/0300002_MODEL_CORE_INDEX.md
+  - 010.core/0300003_MODEL_CORE_OVERVIEW.md
+  - 010.core/0300004_INHERITANCE_SUPPORT_DOMAIN_MODEL.md
+
+---
+
+## FILE: 030.model/0300001_INHERITANCE_SUPPORT_MODEL_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT MODEL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - モデルレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 相続準備案件の基本エンティティを定義する
+  - 相続人候補、資産/負債、書類、期限、相談記録の関係を固定する
+  - 家族共有は閲覧中心で扱う
+
+---
+
+## FILE: 040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md
+
+# ============================================================
+# RUNTIME CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 040.runtime
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0400003_RUNTIME_CORE_OVERVIEW.md
+  - 0400004_INHERITANCE_SUPPORT_RUNTIME_BEHAVIOR.md
+
+---
+
+## FILE: 040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md
+
+# ============================================================
+# RUNTIME CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 040.runtime
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の ランタイム における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 040.runtime/010.core/0400004_INHERITANCE_SUPPORT_RUNTIME_BEHAVIOR.md
+
+# ============================================================
+# INHERITANCE SUPPORT RUNTIME BEHAVIOR
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 040.runtime
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+runtime_events:
+  - create_inheritance_case
+  - register_family_member
+  - add_asset_note
+  - add_liability_note
+  - attach_document
+  - register_deadline
+  - generate_consultation_summary
+  - launch_ai_support
+  - share_family_summary
+
+runtime_rules:
+  - 通知は in_app を基本とする
+  - 相続結論の自動判断はしない
+  - AI は整理支援時のみ動作する
+
+---
+
+## FILE: 040.runtime/0400000_RUNTIME_INDEX.md
+
+# ============================================================
+# RUNTIME INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0400001_INHERITANCE_SUPPORT_RUNTIME_OVERVIEW.md
+  - 010.core/0400002_RUNTIME_CORE_INDEX.md
+  - 010.core/0400003_RUNTIME_CORE_OVERVIEW.md
+  - 010.core/0400004_INHERITANCE_SUPPORT_RUNTIME_BEHAVIOR.md
+
+---
+
+## FILE: 040.runtime/0400001_INHERITANCE_SUPPORT_RUNTIME_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT RUNTIME OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - ランタイムレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 日常利用時の動作原則を定義する
+  - 案件更新、書類整理、共有出力の実行順を整理する
+  - AI 支援の発火点を固定する
+
+---
+
+## FILE: 050.flow/010.core/0500002_FLOW_CORE_INDEX.md
+
+# ============================================================
+# FLOW CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 050.flow
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0500003_FLOW_CORE_OVERVIEW.md
+  - 0500004_INHERITANCE_SUPPORT_USER_FLOW.md
+
+---
+
+## FILE: 050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md
+
+# ============================================================
+# FLOW CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 050.flow
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の フロー における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 050.flow/010.core/0500004_INHERITANCE_SUPPORT_USER_FLOW.md
+
+# ============================================================
+# INHERITANCE SUPPORT USER FLOW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 050.flow
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+primary_flows:
+  - case_intake -> family_input -> asset_liability_memo -> document_attach -> consultation_prep
+  - case_intake -> will_and_gift_note -> deadline_register -> summary_output
+  - inheritance_review -> family_share_judgment -> explicit_summary_share
+
+flow_rules:
+  - 最初に案件単位で受ける
+  - 次に関係者、資産、負債、書類を埋める
+  - 共有や相談出力は最後に明示操作で行う
+
+---
+
+## FILE: 050.flow/0500000_FLOW_INDEX.md
+
+# ============================================================
+# FLOW INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 050.flow
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0500001_INHERITANCE_SUPPORT_FLOW_OVERVIEW.md
+  - 010.core/0500002_FLOW_CORE_INDEX.md
+  - 010.core/0500003_FLOW_CORE_OVERVIEW.md
+  - 010.core/0500004_INHERITANCE_SUPPORT_USER_FLOW.md
+
+---
+
+## FILE: 050.flow/0500001_INHERITANCE_SUPPORT_FLOW_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT FLOW OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 050.flow
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - フローレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 主要利用導線を固定する
+  - 準備開始から相談前整理までの流れを明文化する
+  - 家族共有と専門家相談出力の条件を整理する
+
+---
+
+## FILE: 060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md
+
+# ============================================================
+# INTEGRATION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0600003_INTEGRATION_CORE_OVERVIEW.md
+  - 0600004_INHERITANCE_SUPPORT_INTEGRATION_BOUNDARY.md
+
+---
+
+## FILE: 060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md
+
+# ============================================================
+# INTEGRATION CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の 連携 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 060.integration/010.core/0600004_INHERITANCE_SUPPORT_INTEGRATION_BOUNDARY.md
+
+# ============================================================
+# INHERITANCE SUPPORT INTEGRATION BOUNDARY
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 060.integration
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+integration_targets:
+  - EndOfLifePlanner
+  - MoneyPlanner
+  - LifePlanner
+  - PocketSecretary
+
+boundary_rules:
+  - LifeOS 内は整理補助連携
+  - 外部専門家へは本アプリから自動送信しない
+  - 正式相談は出力資料経由を基本とする
+  - ERP/BusinessOS の正式業務正本とは分離する
+
+---
+
+## FILE: 060.integration/0600000_INTEGRATION_INDEX.md
+
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 060.integration
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0600001_INHERITANCE_SUPPORT_INTEGRATION_OVERVIEW.md
+  - 010.core/0600002_INTEGRATION_CORE_INDEX.md
+  - 010.core/0600003_INTEGRATION_CORE_OVERVIEW.md
+  - 010.core/0600004_INHERITANCE_SUPPORT_INTEGRATION_BOUNDARY.md
+
+---
+
+## FILE: 060.integration/0600001_INHERITANCE_SUPPORT_INTEGRATION_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 060.integration
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 連携レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - LifeOS 内連携と外部境界を定義する
+  - EndOfLifePlanner / MoneyPlanner / LifePlanner との線引きを固定する
+  - 自動送信禁止を明確化する
+
+---
+
+## FILE: 070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md
+
+# ============================================================
+# OPERATIONS CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0700003_OPERATIONS_CORE_OVERVIEW.md
+  - 0700004_INHERITANCE_SUPPORT_OPERATIONS_GUIDE.md
+
+---
+
+## FILE: 070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md
+
+# ============================================================
+# OPERATIONS CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の 運用 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 070.operations/010.core/0700004_INHERITANCE_SUPPORT_OPERATIONS_GUIDE.md
+
+# ============================================================
+# INHERITANCE SUPPORT OPERATIONS GUIDE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+operations:
+  monthly:
+    - 相続準備メモ見直し
+    - 資産/負債メモ更新確認
+  quarterly:
+    - 家族共有案件確認
+    - 重要書類の所在確認
+  yearly:
+    - 遺言/贈与メモ見直し
+    - 専門家相談要否確認
+
+ops_rules:
+  - 運用は owner 主体
+  - family は許可範囲閲覧
+  - 重要書類の現物所在確認を別途促す
+
+---
+
+## FILE: 070.operations/0700000_OPERATIONS_INDEX.md
+
+# ============================================================
+# OPERATIONS INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 070.operations
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0700001_INHERITANCE_SUPPORT_OPERATIONS_OVERVIEW.md
+  - 010.core/0700002_OPERATIONS_CORE_INDEX.md
+  - 010.core/0700003_OPERATIONS_CORE_OVERVIEW.md
+  - 010.core/0700004_INHERITANCE_SUPPORT_OPERATIONS_GUIDE.md
+
+---
+
+## FILE: 070.operations/0700001_INHERITANCE_SUPPORT_OPERATIONS_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 070.operations
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 運用レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 個人/家族での継続運用ルールを定義する
+  - 見直し、共有、更新タイミングを整理する
+  - 高齢家族支援の扱いを含める
+
+---
+
+## FILE: 080.policy/010.core/0800002_POLICY_CORE_INDEX.md
+
+# ============================================================
+# POLICY CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 080.policy
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0800003_POLICY_CORE_OVERVIEW.md
+  - 0800004_INHERITANCE_SUPPORT_POLICY_SET.md
+
+---
+
+## FILE: 080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md
+
+# ============================================================
+# POLICY CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 080.policy
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の ポリシー における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 080.policy/010.core/0800004_INHERITANCE_SUPPORT_POLICY_SET.md
+
+# ============================================================
+# INHERITANCE SUPPORT POLICY SET
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 080.policy
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+policies:
+  legal_boundary:
+    - 法的助言の代替ではない
+    - 最終判断は本人または専門家
+  sharing:
+    - 家族共有は許可ベース
+    - 不要な自動共有をしない
+  ai:
+    - 論点整理のみ
+    - 断定表現を禁止する
+  export:
+    - 正式意見書出力を行わない
+    - 正式相続書面の正本にはしない
+
+---
+
+## FILE: 080.policy/0800000_POLICY_INDEX.md
+
+# ============================================================
+# POLICY INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0800001_INHERITANCE_SUPPORT_POLICY_OVERVIEW.md
+  - 010.core/0800002_POLICY_CORE_INDEX.md
+  - 010.core/0800003_POLICY_CORE_OVERVIEW.md
+  - 010.core/0800004_INHERITANCE_SUPPORT_POLICY_SET.md
+
+---
+
+## FILE: 080.policy/0800001_INHERITANCE_SUPPORT_POLICY_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT POLICY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - ポリシーレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 法的助言非代替、共有制御、書類取扱のポリシーを定義する
+  - AI 利用時の制限を固定する
+  - 家族向けアプリとしての倫理境界を持つ
+
+---
+
+## FILE: 090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md
+
+# ============================================================
+# INTERFACE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 090.interface
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0900003_INTERFACE_CORE_OVERVIEW.md
+  - 0900004_INHERITANCE_SUPPORT_INTERFACE_SPEC.md
+
+---
+
+## FILE: 090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md
+
+# ============================================================
+# INTERFACE CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 090.interface
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の インターフェース における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 090.interface/010.core/0900004_INHERITANCE_SUPPORT_INTERFACE_SPEC.md
+
+# ============================================================
+# INHERITANCE SUPPORT INTERFACE SPEC
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 090.interface
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+screens:
+  - dashboard
+  - inheritance_case_list
+  - inheritance_case_detail
+  - family_member_list
+  - asset_liability_list
+  - document_list
+  - consultation_prep
+  - summary_output
+  - family_share_view
+  - settings
+
+ui_rules:
+  - 案件中心ナビゲーション
+  - 重要書類と期限を強調
+  - リスクは色ではなくラベルでも表現
+  - 法的助言ではない表示を常設
+
+---
+
+## FILE: 090.interface/0900000_INTERFACE_INDEX.md
+
+# ============================================================
+# INTERFACE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0900001_INHERITANCE_SUPPORT_INTERFACE_OVERVIEW.md
+  - 010.core/0900002_INTERFACE_CORE_INDEX.md
+  - 010.core/0900003_INTERFACE_CORE_OVERVIEW.md
+  - 010.core/0900004_INHERITANCE_SUPPORT_INTERFACE_SPEC.md
+
+---
+
+## FILE: 090.interface/0900001_INHERITANCE_SUPPORT_INTERFACE_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT INTERFACE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - インターフェースレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 主要画面と UI 責務を定義する
+  - モバイル優先だが PC/タブレットでも読める設計にする
+  - 家族共有向け簡易ビューを含める
+
+---
+
+## FILE: 100.security/010.core/1000002_SECURITY_CORE_INDEX.md
+
+# ============================================================
+# SECURITY CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000003_SECURITY_CORE_OVERVIEW.md
+  - 1000004_INHERITANCE_SUPPORT_SECURITY_MODEL.md
+
+---
+
+## FILE: 100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md
+
+# ============================================================
+# SECURITY CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の セキュリティ における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 100.security/010.core/1000004_INHERITANCE_SUPPORT_SECURITY_MODEL.md
+
+# ============================================================
+# INHERITANCE SUPPORT SECURITY MODEL
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 100.security
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+security_controls:
+  - owner_only_default
+  - explicit_family_share
+  - attachment_access_control
+  - local_data_protection
+  - export_confirmation
+  - sensitive_document_warning
+
+security_rules:
+  - 初期状態は owner 限定
+  - 共有は案件単位
+  - 高機微データは自動拡散しない
+
+---
+
+## FILE: 100.security/1000000_SECURITY_INDEX.md
+
+# ============================================================
+# SECURITY INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 100.security
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000001_INHERITANCE_SUPPORT_SECURITY_OVERVIEW.md
+  - 010.core/1000002_SECURITY_CORE_INDEX.md
+  - 010.core/1000003_SECURITY_CORE_OVERVIEW.md
+  - 010.core/1000004_INHERITANCE_SUPPORT_SECURITY_MODEL.md
+
+---
+
+## FILE: 100.security/1000001_INHERITANCE_SUPPORT_SECURITY_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 100.security
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - セキュリティレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 家族・資産・相続情報の機微保護を定義する
+  - 添付、共有、出力時の制御を定める
+  - 最小権限を基本とする
+
+---
+
+## FILE: 110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
+
+# ============================================================
+# INFRASTRUCTURE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+  - 1100004_INHERITANCE_SUPPORT_INFRASTRUCTURE_PROFILE.md
+
+---
+
+## FILE: 110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+
+# ============================================================
+# INFRASTRUCTURE CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の インフラ における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 110.infrastructure/010.core/1100004_INHERITANCE_SUPPORT_INFRASTRUCTURE_PROFILE.md
+
+# ============================================================
+# INHERITANCE SUPPORT INFRASTRUCTURE PROFILE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+infrastructure_assumptions:
+  - mobile_first
+  - multi_device_access
+  - document_attachment_storage
+  - notification_scheduler
+  - app_setting_store
+
+infra_rules:
+  - 同期があっても正本境界は崩さない
+  - 通知基盤は期限管理に従属する
+  - 添付保存は案件紐付けを必須とする
+
+---
+
+## FILE: 110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+
+# ============================================================
+# INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 110.infrastructure
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1100001_INHERITANCE_SUPPORT_INFRASTRUCTURE_OVERVIEW.md
+  - 010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
+  - 010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+  - 010.core/1100004_INHERITANCE_SUPPORT_INFRASTRUCTURE_PROFILE.md
+
+---
+
+## FILE: 110.infrastructure/1100001_INHERITANCE_SUPPORT_INFRASTRUCTURE_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 110.infrastructure
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - インフラレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - アプリ運用に必要な基盤前提を定義する
+  - マルチデバイス前提の同期/保存方針を整理する
+  - LifeOS 配下アプリとしての実装前提を置く
+
+---
+
+## FILE: 120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+
+# ============================================================
+# IMPLEMENTATION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 120.implementation
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+  - 1200004_INHERITANCE_SUPPORT_IMPLEMENTATION_PLAN.md
+
+---
+
+## FILE: 120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+
+# ============================================================
+# IMPLEMENTATION CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 120.implementation
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の 実装 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 120.implementation/010.core/1200004_INHERITANCE_SUPPORT_IMPLEMENTATION_PLAN.md
+
+# ============================================================
+# INHERITANCE SUPPORT IMPLEMENTATION PLAN
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 120.implementation
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+implementation_steps:
+  - app_shell
+  - inheritance_case_crud
+  - family_and_heir_management
+  - asset_liability_management
+  - document_linking
+  - consultation_prep
+  - family_share_view
+  - ai_support_entry
+  - lifeos_bridge
+
+notes:
+  - 共通部品詳細は別正本参照
+  - 本アプリでは app-specific extension を実装する
+
+---
+
+## FILE: 120.implementation/1200000_IMPLEMENTATION_INDEX.md
+
+# ============================================================
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 120.implementation
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1200001_INHERITANCE_SUPPORT_IMPLEMENTATION_OVERVIEW.md
+  - 010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+  - 010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+  - 010.core/1200004_INHERITANCE_SUPPORT_IMPLEMENTATION_PLAN.md
+
+---
+
+## FILE: 120.implementation/1200001_INHERITANCE_SUPPORT_IMPLEMENTATION_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 120.implementation
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 実装レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 実装順序と固定対象を定義する
+  - 共通部品参照点とアプリ固有実装点を分ける
+  - payload 固定の前提を整える
+
+---
+
+## FILE: 130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+
+# ============================================================
+# DEVELOPMENT CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1300003_DEVELOPMENT_CORE_OVERVIEW.md
+  - 1300004_INHERITANCE_SUPPORT_DEVELOPMENT_ROADMAP.md
+
+---
+
+## FILE: 130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md
+
+# ============================================================
+# DEVELOPMENT CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - InheritanceSupport の 開発 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
+
+---
+
+## FILE: 130.development/010.core/1300004_INHERITANCE_SUPPORT_DEVELOPMENT_ROADMAP.md
+
+# ============================================================
+# INHERITANCE SUPPORT DEVELOPMENT ROADMAP
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+development_phases:
+  - phase_1_foundation_docs
+  - phase_2_payload_fix
+  - phase_3_screen_contract_fix
+  - phase_4_storage_and_sync_design
+  - phase_5_app_implementation
+
+review_points:
+  - 法務境界が崩れていないか
+  - 相続整理と終活整理が混ざりすぎていないか
+  - 家族共有が過剰になっていないか
+  - 専門家相談前提が維持されているか
+
+---
+
+## FILE: 130.development/1300000_DEVELOPMENT_INDEX.md
+
+# ============================================================
+# DEVELOPMENT INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 130.development
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1300001_INHERITANCE_SUPPORT_DEVELOPMENT_OVERVIEW.md
+  - 010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+  - 010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md
+  - 010.core/1300004_INHERITANCE_SUPPORT_DEVELOPMENT_ROADMAP.md
+
+---
+
+## FILE: 130.development/1300001_INHERITANCE_SUPPORT_DEVELOPMENT_OVERVIEW.md
+
+# ============================================================
+# INHERITANCE SUPPORT DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 130.development
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 開発レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 開発ロードマップと確認観点を整理する
+  - 実装前の固定項目を明文化する
+  - 次段階へ渡す準備資料とする
+
+---
+

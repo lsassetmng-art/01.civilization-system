@@ -1,0 +1,16 @@
+# Api Contract Overview
+
+app: CareerLaunch
+layer: 060.integration
+## Purpose
+求人票貼り付け、出力、共有、将来連携の境界を定義する。
+
+## Coverage
+- 入力
+- 出力
+- 共有
+- 将来連携
+- 非連携
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。

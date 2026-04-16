@@ -1,0 +1,13 @@
+no,folder_name,app_name,pricing,pricing_status,erp_boundary,design_status,source_file
+1,AppDevelopmentStudio,AppDevelopmentStudio,"trial:10days / monthly:1980JPY / yearly:16800JPY",confirmed,"standalone + target selectable",integrated-file-present,00_APP_DEVELOPMENT_STUDIO_INTEGRATED_REBUILT.md
+2,EstimateCreator,EstimateCreator,"Basic:free / Pro:500JPY_month",confirmed,"explicit ERP alignment / estimate draft oriented",integrated-file-present,00_ESTIMATE_CREATOR_INTEGRATED.md
+3,ExpenseSettlement,ExpenseSettlement,unknown,unknown,"expected ERP linkage",integrated-file-present,00_EXPENSE_SETTLEMENT_REGENERATED_FULL_PACK.md
+4,InvoiceFlow,InvoiceFlow,unknown,unknown,"ERP is source of truth side",integrated-file-present,00_INVOICE_FLOW_INTEGRATED.md
+5,Mbo,Mbo,unknown,unknown,"business operation domain",integrated-file-present,00_MBO_FULL_INTEGRATED_CANONICAL.md
+6,NameCardManager,NameCardManager,"monthly:900JPY",confirmed,"BusinessOS save + optional ERP publish/share",integrated-file-present,00_NAME_CARD_MANAGER_INTEGRATED.md
+7,OrderFlow,OrderFlow,unknown,unknown,"business operation / order flow domain",integrated-file-present,00_ORDER_FLOW_INTEGRATED.md
+8,pocket-secretary,PocketSecretary,"Free:free / Pro:300JPY_month / ForBusiness:700JPY_month",confirmed_in_chat,"hybrid app + explicit business linkage",integrated-file-present,00_POCKET_SECRETARY_INTEGRATED_REBUILT.md
+9,ProductPortfolioManager,ProductPortfolioManager,unknown,unknown,"business portfolio domain",integrated-file-present,00_PRODUCT_PORTFOLIO_MANAGER_FULL_INTEGRATED_REGENERATED.md
+10,ProjectFlow,ProjectFlow,"trial:7days / monthly:900JPY",confirmed,"standalone business app",integrated-file-present,00_PROJECT_FLOW_INTEGRATED.md
+11,QuickForecast,QuickForecast,"Basic:free / Pro:500JPY_month",confirmed_in_chat,"standalone + optional ERP data use in Pro",integrated-file-present,00_QUICK_FORECAST_INTEGRATED_REBUILT.md
+12,TalentGrowth,TalentGrowth,unknown,unknown,"business HR/talent domain",integrated-file-present,00_TALENT_GROWTH_INTEGRATED.md

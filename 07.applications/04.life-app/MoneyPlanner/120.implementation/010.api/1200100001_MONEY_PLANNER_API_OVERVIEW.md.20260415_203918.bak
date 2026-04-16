@@ -1,0 +1,22 @@
+# ============================================================
+# MONEY PLANNER API OVERVIEW
+# ============================================================
+
+major_endpoints:
+  - GET /v1/money-planner/dashboard
+  - GET /v1/money-planner/incomes
+  - POST /v1/money-planner/incomes
+  - GET /v1/money-planner/expenses
+  - POST /v1/money-planner/expenses
+  - GET /v1/money-planner/assets
+  - POST /v1/money-planner/assets
+  - GET /v1/money-planner/liabilities
+  - POST /v1/money-planner/liabilities
+  - GET /v1/money-planner/saving-goals
+  - POST /v1/money-planner/saving-goals
+  - GET /v1/money-planner/event-budgets
+  - POST /v1/money-planner/event-budgets
+  - GET /v1/money-planner/projections/monthly
+  - GET /v1/money-planner/projections/yearly
+  - GET /v1/money-planner/scenarios
+  - POST /v1/money-planner/scenarios/compare

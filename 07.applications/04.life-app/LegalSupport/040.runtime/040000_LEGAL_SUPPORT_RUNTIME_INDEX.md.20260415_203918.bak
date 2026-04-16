@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT RUNTIME INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: RUNTIME
+
+purpose:
+  - 主要ユースケースと実行時ふるまいを定義する

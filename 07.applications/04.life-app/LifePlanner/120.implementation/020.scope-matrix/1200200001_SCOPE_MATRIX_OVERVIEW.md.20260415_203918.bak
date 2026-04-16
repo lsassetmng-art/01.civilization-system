@@ -1,0 +1,22 @@
+# ============================================================
+# SCOPE MATRIX OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 120.implementation
+subfolder: 020.scope-matrix
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - フェーズ別とプラン別の機能範囲を固定する
+  - 画面と機能の関係を明確にする
+  - 実装前にスコープ膨張を防ぐ
+
+matrix_axes:
+  - phase
+  - free / family
+  - screen
+  - feature

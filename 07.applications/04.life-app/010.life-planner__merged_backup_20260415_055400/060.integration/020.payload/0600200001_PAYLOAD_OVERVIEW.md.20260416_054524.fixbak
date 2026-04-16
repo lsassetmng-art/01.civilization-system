@@ -1,0 +1,32 @@
+# ============================================================
+# PAYLOAD OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 060.integration
+subfolder: 020.payload
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - LifePlannerの request / response exact payload を固定する
+  - 画面と操作に対して payload 形状を安定化する
+  - 実装前に命名揺れと項目不足を防ぐ
+
+payload_groups:
+  - plan
+  - goal
+  - timeline
+  - review_reflection
+  - family_share
+  - scenario
+  - error
+
+principles:
+  - JSON payload を前提とする
+  - snake_case を標準とする
+  - id は string UUID を前提とする
+  - 金額は amount_minor + currency_code で表現する
+  - 日時は timezone を含む ISO-8601 string を使う
+  - response は status / data / meta の3系統を基本とする

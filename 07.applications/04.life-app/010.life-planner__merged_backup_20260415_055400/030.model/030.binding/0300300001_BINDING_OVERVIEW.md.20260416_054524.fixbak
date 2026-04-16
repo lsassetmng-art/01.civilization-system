@@ -1,0 +1,24 @@
+# ============================================================
+# BINDING OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 030.binding
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 画面項目と論理テーブルの対応を固定する
+  - derived項目と保存項目を分離する
+  - 画面責務と entity 責務のズレを防ぐ
+
+scope:
+  - home
+  - life_plan_detail
+  - plan create / edit
+  - family share
+  - scenario compare
+  - reflection candidate

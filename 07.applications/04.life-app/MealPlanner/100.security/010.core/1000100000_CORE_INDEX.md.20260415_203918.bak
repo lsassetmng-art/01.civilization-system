@@ -1,0 +1,11 @@
+# Security Core Index
+
+## purpose
+MealPlanner のセキュリティ原則を定義する
+
+## files
+- 1000100001_CORE_OVERVIEW.md
+
+## notes
+- この index は Security Core の入口である
+- 詳細は配下ドキュメントを参照する

@@ -10,9 +10,10 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Prepares downstream reflection of PersonaOS normalized authority,
-stage separation, and implementation-facing boundaries into
-adjacent applications and OS-level designs.
+Prepares downstream and foundation-side reflection of PersonaOS
+normalized authority, stage separation, and implementation-facing
+boundaries into adjacent applications, adjacent OS designs,
+and PersonaOS foundation layers.
 
 source_basis:
 - wording cleanup completed
@@ -24,12 +25,17 @@ reflection_targets:
 - PocketSecretary
 - BusinessOS
 - CivilizationOS
-- VisualRuntime-related designs
+- VisualRuntime
 
 reflection_rule:
 Downstream systems may consume, expose, cache, transport,
 visualize, or operationally support PersonaOS truth,
+and PersonaOS foundation layers may execute or render it,
 but they must not silently replace PersonaOS canonical authority.
+
+visualruntime_position:
+VisualRuntime is treated as a PersonaOS foundation-side execution layer,
+not an external authority peer.
 
 next_action:
 Start with PocketSecretary reflection because it is the most direct

@@ -1,0 +1,33 @@
+# ============================================================
+# EXPENSE MINIMUM IMPLEMENTATION START PACKAGE
+# ============================================================
+
+status: canonical
+layer: development
+application: ExpenseSettlement
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the minimum document package that must be read before implementation starts.
+
+minimum_implementation_start_package:
+- 00_EXPENSE_SETTLEMENT_FINAL_INTEGRATED_SUMMARY.md
+- 0600004_EXPENSE_API_EXACT_PAYLOAD_CONTRACT.md
+- 0300006_EXPENSE_PHYSICAL_DATA_MODEL.md
+- 0400005_EXPENSE_STATE_TRANSITION_DESIGN.md
+- 1000004_EXPENSE_AUTHORITY_AND_ACCESS_DESIGN.md
+- 0800007_EXPENSE_APPROVAL_ROUTE_POLICY_DETAIL.md
+- 0800008_EXPENSE_FINANCE_REVIEW_POLICY_DETAIL.md
+- 0800009_EXPENSE_CATEGORY_MASTER_POLICY.md
+- 0800010_EXPENSE_EVIDENCE_REQUIREMENT_MATRIX.md
+- 0800018_EXPENSE_INITIAL_MASTER_CATALOG_BUNDLE.md
+- 9000042_EXPENSE_IMPLEMENTATION_GATE_NOTE.md
+- 1300006_EXPENSE_IMPLEMENTATION_READINESS_CRITERIA.md
+- 1300007_EXPENSE_PRE_IMPLEMENTATION_OPEN_ITEMS_LOCK.md
+- 1300008_EXPENSE_IMPLEMENTATION_START_GATE.md
+- 1300009_EXPENSE_MINIMUM_IMPLEMENTATION_START_PACKAGE.md
+
+package_rule:
+No implementation-start discussion should skip this minimum package.
+

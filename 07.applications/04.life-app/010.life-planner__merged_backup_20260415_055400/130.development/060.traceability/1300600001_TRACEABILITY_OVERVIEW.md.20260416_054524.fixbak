@@ -1,0 +1,16 @@
+# ============================================================
+# TRACEABILITY OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 060.traceability
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - どの要件がどの文書で定義されているかを追跡可能にする
+  - 設計漏れと重複を見つけやすくする
+  - 後の監査や実装計画の参照起点にする

@@ -2,32 +2,17 @@
 # PERSONA INTEGRATION ARCHITECTURE OVERVIEW
 # ============================================================
 
-status: canonical
-layer: architecture
+status: implementation-ready-followup
 domain: integration
-system: persona-os
-owner: Boss
-prepared_by: Zero
 
-purpose:
-Defines the structural overview of PersonaOS integration domain.
+integration_boundary:
+- integration moves requests and results
+- integration does not own truth mutation authority
+- integration must preserve correlation, retry safety, and auditability
 
-summary:
-Integration defines how PersonaOS exchanges approved requests,
-validated contracts,
-and explicit result payloads
-with host apps, BusinessOS, StreamingOS, Civilization-linked systems,
-and approved external consumers.
-
-integration_groups:
-inbound request
-outbound contract
-result contract
-approved source boundary
-operational delivery boundary
-
-boundary:
-Integration carries contracts, not truth authority.
-Approved external systems may request or receive contract-bound data,
-but may not seize PersonaOS truth ownership.
-Outbox and retry delivery state are not the same as integration authority truth.
+required_integration_controls:
+- inbox contract
+- outbox contract
+- downstream callback normalization
+- retry and dead-letter
+- idempotent delivery boundary

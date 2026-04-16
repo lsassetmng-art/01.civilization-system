@@ -17,3 +17,10 @@ scope:
 - document map
 - layer map
 - archive references
+
+implementation_ready_freeze:
+- 925.implementation-ready-freeze
+
+subfolders:
+- 925.implementation-ready-freeze
+- archive.migration-backup

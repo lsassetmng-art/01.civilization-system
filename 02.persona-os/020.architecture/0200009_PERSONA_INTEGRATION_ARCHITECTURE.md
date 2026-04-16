@@ -2,18 +2,23 @@
 # PERSONA INTEGRATION ARCHITECTURE
 # ============================================================
 
-PersonaOS integrates with external systems
-through snapshots.
+status: implementation-ready-followup
 
-Integration model:
+integration_scope:
+- inbound external request intake
+- outbound result feedback
+- outbound external sync outbox
+- downstream callback handling
+- retry and dead-letter operations
 
-PersonaOS
-↓
-snapshot issuance
-↓
-external applications
-↓
-snapshot verification
+integration_rule:
+Transport is not authority.
+Authority remains in validation, canonical apply,
+release gate, and rights contracts.
 
-External systems must not mutate PersonaOS state.
-
+required_paths:
+- request correlation id
+- result feedback persistence
+- retry-safe outbound delivery
+- dead-letter retention
+- downstream result normalization

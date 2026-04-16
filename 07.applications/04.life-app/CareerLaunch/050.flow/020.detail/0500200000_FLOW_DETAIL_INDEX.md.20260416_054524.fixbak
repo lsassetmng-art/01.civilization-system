@@ -1,0 +1,15 @@
+# 0500200000 FLOW DETAIL INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200000_FLOW_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0500200001_CAREER_LAUNCH_FLOW_DETAIL_OVERVIEW.md
+- 0500200002_CAREER_LAUNCH_CORE_USER_JOURNEYS.md
+- 0500200003_CAREER_LAUNCH_ISSUE_INTAKE_FLOW.md
+- 0500200004_CAREER_LAUNCH_BRIDGE_TRIGGER_FLOW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

@@ -1,0 +1,29 @@
+# ============================================================
+# STREAMING OS PLATFORM AND INTERNATIONAL IMPLEMENTATION KICKOFF PREP OFFICIAL RESTART BUNDLE
+# ============================================================
+
+status: canonical-meta
+system: streaming-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the official restart bundle
+for implementation-kickoff preparation
+for the recent platform/device support
+and international support theme.
+
+official_restart_bundle:
+- 9009700_STREAMING_OS_PLATFORM_AND_INTERNATIONAL_IMPLEMENTATION_KICKOFF_PREP_FINAL_ENTRY.md
+- 9009300_STREAMING_OS_PLATFORM_AND_INTERNATIONAL_IMPLEMENTATION_KICKOFF_PREP_TOP_ENTRY.md
+- 9009400_STREAMING_OS_PLATFORM_AND_INTERNATIONAL_IMPLEMENTATION_KICKOFF_PREP_READING_ORDER.md
+- 9009600_STREAMING_OS_PLATFORM_AND_INTERNATIONAL_IMPLEMENTATION_KICKOFF_PREP_OVERALL_SUMMARY.md
+- 9009100_STREAMING_OS_PLATFORM_AND_INTERNATIONAL_IMPLEMENTATION_KICKOFF_PREP_KICKOFF_START_GATE.md
+- 9009000_STREAMING_OS_PLATFORM_AND_INTERNATIONAL_IMPLEMENTATION_KICKOFF_PREP_WORK_TARGET_REGISTRY.md
+- 9009500_STREAMING_OS_PLATFORM_AND_INTERNATIONAL_IMPLEMENTATION_KICKOFF_PREP_FIRST_WORK_TARGETS.md
+
+canonical_note:
+A later chat should restart
+implementation-kickoff preparation
+through this official restart bundle.
+

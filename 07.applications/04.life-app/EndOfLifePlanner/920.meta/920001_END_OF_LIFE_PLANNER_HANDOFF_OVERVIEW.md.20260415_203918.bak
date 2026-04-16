@@ -1,0 +1,18 @@
+# ============================================================
+# END OF LIFE PLANNER HANDOFF OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L13-implementation-preparation-complete
+
+handoff_scope:
+  - 次チャット引継ぎ
+  - 設計完成度の集約
+  - 実装準備完了状態の明示
+  - 実装未着手境界の明示
+  - start-ready package の提示
+
+important_boundary:
+  - design-only until Boss says start
+  - implementation not started
+  - executable SQL not started

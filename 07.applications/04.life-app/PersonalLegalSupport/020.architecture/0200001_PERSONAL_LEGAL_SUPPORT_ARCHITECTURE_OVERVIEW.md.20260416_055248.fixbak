@@ -1,0 +1,20 @@
+# ============================================================
+# PERSONAL LEGAL SUPPORT ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - アーキテクチャレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 案件、契約、期限、添付、相談メモを中心に構成する
+  - LifeOS 側連携と BusinessLegalSupport への明示橋渡しを持つ
+  - 共通部品は外部正本を参照する前提にする

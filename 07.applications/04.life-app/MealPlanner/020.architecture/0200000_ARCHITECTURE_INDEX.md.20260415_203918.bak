@@ -1,0 +1,11 @@
+# Architecture Index
+
+## purpose
+MealPlanner の構造設計、分割、依存、境界を定義する
+
+## files
+- 0200001_ARCHITECTURE_OVERVIEW.md
+
+## notes
+- この index は Architecture の入口である
+- 詳細は配下ドキュメントを参照する

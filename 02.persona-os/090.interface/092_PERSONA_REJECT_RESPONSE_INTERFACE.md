@@ -1,7 +1,10 @@
 # PERSONA REJECT RESPONSE INTERFACE
-status: canonical
-layer: interface
-system: persona-os
-scope: persona-reject-response-interface
 
-Defines reject response interface structure.
+status: implementation-ready-followup
+
+reject_response_fields:
+- correlation_id
+- persona_id
+- reject_code
+- reject_family
+- rejected_at

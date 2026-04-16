@@ -1,0 +1,40 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: implementation-prep-only
+schema_name: life
+
+current_state:
+  - implementation is not started
+  - design is largely fixed
+  - readiness documents are prepared for future handoff
+
+implementation_prep_scope:
+  - feature mapping
+  - API handoff
+  - persistence handoff
+  - permission handoff
+  - edge case handoff
+  - acceptance and test prep
+
+out_of_scope_now:
+  - DDL finalization
+  - SQL execution
+  - psql execution
+  - app code
+  - API code
+  - sync code

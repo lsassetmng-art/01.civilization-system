@@ -1,0 +1,12 @@
+# ============================================================
+# FLOW OVERVIEW
+# ============================================================
+
+layer: 050.flow
+
+core_flows:
+  - create plan
+  - review plan
+  - share with family
+  - compare scenarios
+  - apply reflection candidate

@@ -1,0 +1,8 @@
+# ============================================================
+# LEGAL SUPPORT INFRASTRUCTURE STORAGE OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+
+summary:
+  - 保存前提と将来拡張前提を置く

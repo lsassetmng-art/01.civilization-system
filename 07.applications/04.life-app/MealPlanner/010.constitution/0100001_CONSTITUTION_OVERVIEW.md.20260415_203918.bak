@@ -1,0 +1,8 @@
+# Constitution Overview
+
+## role
+MealPlanner の基本原則、責務、境界、価値を定義する
+
+## mealplanner_context
+- MealPlanner の当該レイヤーにおける責務を整理する
+- CivilizationOS系構成に合わせる

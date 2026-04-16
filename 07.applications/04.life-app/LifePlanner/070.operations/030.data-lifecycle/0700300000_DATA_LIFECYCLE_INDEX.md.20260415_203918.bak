@@ -1,0 +1,18 @@
+# ============================================================
+# DATA LIFECYCLE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 070.operations
+subfolder: 030.data-lifecycle
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0700300000_DATA_LIFECYCLE_INDEX.md
+  - 0700300001_DATA_LIFECYCLE_OVERVIEW.md
+  - 0700300002_LIFE_PLANNER_PLAN_LIFECYCLE_POLICY.md
+  - 0700300003_LIFE_PLANNER_SHARED_MEMBER_LIFECYCLE_POLICY.md
+  - 0700300004_LIFE_PLANNER_LONG_TERM_OPERATION_POLICY.md

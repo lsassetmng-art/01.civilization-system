@@ -1,0 +1,11 @@
+# Model Core Index
+
+## purpose
+MealPlanner の共通モデル原則を定義する
+
+## files
+- 0300100001_CORE_OVERVIEW.md
+
+## notes
+- この index は Model Core の入口である
+- 詳細は配下ドキュメントを参照する

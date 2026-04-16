@@ -1,0 +1,21 @@
+# ============================================================
+# ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical
+application: QuickForecast
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+files:
+- architecture_OVERVIEW.md
+- architecture_INDEX.md
+- 020_QUICK_FORECAST_ARCHITECTURE.md
+- 020110_FORECAST_ACTION_PROPOSAL_PROFIT_ARCHITECTURE.md
+- 020120_MOBILE_IMMEDIACY_ARCHITECTURE.md
+- 020130_FORECAST_TO_PROPOSAL_DIFFERENTIATION_ARCHITECTURE.md
+- 020140_QUICK_FORECAST_POSITIONING_ARCHITECTURE.md
+- 020150_QUICK_FORECAST_ERP_BOUNDARY_ARCHITECTURE.md
+- 020160_CROSS_APPLICATION_BOUNDARY_ARCHITECTURE.md
+- 020170_APP_ROLE_DIFFERENTIATION_ARCHITECTURE.md

@@ -1,0 +1,17 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT PHASE BOUNDARY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 120.implementation
+subfolder: 030.phase-boundary
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - 今回固定した設計範囲と、まだ先送りした範囲を分ける
+  - 次段で SQL や API 実装に入っても迷わないようにする

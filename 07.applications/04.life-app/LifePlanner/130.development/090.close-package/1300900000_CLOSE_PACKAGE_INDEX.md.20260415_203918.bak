@@ -1,0 +1,19 @@
+# ============================================================
+# CLOSE PACKAGE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 090.close-package
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 1300900000_CLOSE_PACKAGE_INDEX.md
+  - 1300900001_CLOSE_PACKAGE_OVERVIEW.md
+  - 1300900002_LIFE_PLANNER_FINAL_CLOSE_PACKAGE.md
+  - 1300900003_LIFE_PLANNER_DOCUMENT_COVERAGE_LEDGER.md
+  - 1300900004_LIFE_PLANNER_FREEZE_RECOMMENDATION_NOTE.md
+  - 1300900005_LIFE_PLANNER_FINAL_READING_SHORTCUT.md

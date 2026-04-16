@@ -1,0 +1,15 @@
+# 1100200000 INFRASTRUCTURE DETAIL INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200000_INFRASTRUCTURE_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 1100200001_CAREER_LAUNCH_INFRASTRUCTURE_DETAIL_OVERVIEW.md
+- 1100200002_CAREER_LAUNCH_STORAGE_AND_FILE_HANDLING_ASSUMPTIONS.md
+- 1100200003_CAREER_LAUNCH_NOTIFICATION_AND_JOB_ASSUMPTIONS.md
+- 1100200004_CAREER_LAUNCH_MULTI_DEVICE_ASSUMPTIONS.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

@@ -2,30 +2,17 @@
 # PERSONA VISUAL ARCHITECTURE OVERVIEW
 # ============================================================
 
-status: canonical
-layer: architecture
+status: implementation-ready-followup
 domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
 
-purpose:
-Defines the structural overview of persona visual domain.
+visual_boundary:
+- released visual profile is authoritative for presentation input
+- runtime visual state is ephemeral
+- assets and expressions must resolve by versioned references
+- background and avatar binding must be deterministic from released input
 
-summary:
-Visual is the canonical domain for visual truth,
-expression mapping, composition rules,
-background semantics, and rendering behavior.
-
-scope:
-visual profile
-expression semantics
-background semantics
-composition structure
-visual runtime relation
-
-boundary:
-Visual truth belongs to PersonaOS.
-Visual runtime executes visual semantics.
-Runtime-hosting consumes runtime behavior,
-but does not redefine visual truth.
+required_visual_controls:
+- asset resolution by immutable lineage
+- missing asset fallback contract
+- expression state contract
+- animation profile resolution contract

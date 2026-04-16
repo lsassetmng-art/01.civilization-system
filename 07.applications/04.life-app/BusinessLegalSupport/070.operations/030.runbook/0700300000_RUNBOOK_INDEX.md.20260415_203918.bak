@@ -1,0 +1,18 @@
+# ============================================================
+# RUNBOOK INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 070.operations
+subfolder: 030.runbook
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0700300001_BUSINESS_LEGAL_SUPPORT_RUNBOOK_OVERVIEW.md
+  - 0700300002_BUSINESS_LEGAL_SUPPORT_DAILY_WEEKLY_MONTHLY_RUNBOOK.md
+  - 0700300003_BUSINESS_LEGAL_SUPPORT_ISSUE_CLEANUP_RUNBOOK.md

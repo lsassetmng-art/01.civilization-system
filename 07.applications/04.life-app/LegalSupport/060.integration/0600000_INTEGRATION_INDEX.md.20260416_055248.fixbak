@@ -1,0 +1,29 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0600001_INTEGRATION_OVERVIEW.md
+  - 010.lifeos-link/0600100_LIFEOS_LINK_INDEX.md
+  - 010.lifeos-link/0600101_LIFEOS_LINK_OVERVIEW.md
+  - 010.lifeos-link/0600102_LIFEOS_INTEGRATION_RESPONSIBILITY_CANONICAL.md
+  - 010.lifeos-link/0600103_MODEL_INTEGRATION_ALIGNMENT_CANONICAL.md
+  - 020.shared-components/0600200_SHARED_COMPONENT_INDEX.md
+  - 020.shared-components/0600201_COMMON_COMPONENT_CANDIDATE_CANONICAL.md
+
+purpose:
+  - LegalSupport の LifeOS 連携責務と共通部品候補を固定する

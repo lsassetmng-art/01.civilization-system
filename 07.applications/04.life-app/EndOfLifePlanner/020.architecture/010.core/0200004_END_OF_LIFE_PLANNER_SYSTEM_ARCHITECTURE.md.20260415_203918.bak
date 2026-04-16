@@ -1,0 +1,28 @@
+# ============================================================
+# END OF LIFE PLANNER SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: EndOfLifePlanner
+schema: life
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+architecture_blocks:
+  - end_of_life_case_workspace
+  - preference_note_area
+  - medical_care_note_area
+  - asset_document_area
+  - contact_area
+  - family_share_output
+  - ai_support_assist
+  - lifeos_bridge
+
+bridge_rules:
+  - LifeOS 連携は相続、資金計画、人生計画との接続を優先
+  - 外部専門家相談は明示出力のみ
+  - 共通部品の詳細定義は別正本を参照する

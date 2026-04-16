@@ -1,0 +1,76 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT DASHBOARD SCREEN FIELDS
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 090.interface
+subfolder: 030.screen-fields
+owner: Boss
+prepared_by: Zero
+
+screen_id:
+  - dashboard
+
+primary_sections:
+
+  urgent_deadlines_card:
+    fields:
+      - deadline_type
+      - due_at
+      - related_issue_title
+      - related_contract_title
+      - completed_flag
+    source_payload:
+      - list_deadline_records_response.items[]
+
+  active_issue_summary_card:
+    fields:
+      - issue_id
+      - title
+      - issue_type
+      - status
+      - priority
+      - next_action
+      - updated_at
+    source_payload:
+      - list_legal_issues_response.items[]
+
+  expiring_contracts_card:
+    fields:
+      - contract_id
+      - title
+      - contract_type
+      - effective_to
+      - auto_renew_flag
+      - status
+      - counterparty_name
+    source_payload:
+      - contract list payload derived view
+
+  consultation_prep_candidates_card:
+    fields:
+      - issue_id
+      - title
+      - priority
+      - unresolved_checklist_count
+      - unresolved_risk_count
+    source_payload:
+      - get_legal_issue_response.child_counts
+      - issue summary derived view
+
+actions:
+  primary:
+    - create_new_issue
+  secondary:
+    - open_issue_list
+    - open_deadline_list
+    - open_contract_list
+
+dashboard_rules:
+  - 期限切れ or 直近期限は最上段
+  - dashboard で長文本文は見せない
+  - share/export ボタンは dashboard には置かない

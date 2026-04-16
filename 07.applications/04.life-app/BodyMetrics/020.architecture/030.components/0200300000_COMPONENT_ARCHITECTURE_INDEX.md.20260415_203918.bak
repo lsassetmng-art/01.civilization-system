@@ -1,0 +1,8 @@
+# ============================================================
+# COMPONENT ARCHITECTURE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0200300001_COMPONENT_ARCHITECTURE_OVERVIEW.md
+  - 0200300002_COMPONENT_INTERACTION_ARCHITECTURE.md

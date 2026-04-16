@@ -1,0 +1,22 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# PRIVACY PRICING INDEX
+# ============================================================
+
+subfolder: 010.privacy-pricing
+
+documents:
+  - 0800100000_PRIVACY_PRICING_INDEX.md
+  - 0800100001_PRIVACY_PRICING_OVERVIEW.md
+  - 0800100002_LIFE_PLANNER_PRIVACY_SHARING_POLICY.md
+  - 0800100003_LIFE_PLANNER_PRICING_POLICY.md

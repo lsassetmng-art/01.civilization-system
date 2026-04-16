@@ -1,0 +1,134 @@
+============================================================
+CAREERLAUNCH FULL INTEGRATED BUILD AUDIT
+============================================================
+BASE=/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch
+OUT=/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000009_CAREER_LAUNCH_FULL_INTEGRATED.md
+FILE_COUNT=186
+
+----- FIRST 20 FILES -----
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000000_CAREER_LAUNCH_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000001_CAREER_LAUNCH_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000002_CAREER_LAUNCH_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100004_CAREER_LAUNCH_CORE_PRINCIPLES.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/0100000_CONSTITUTION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/0100001_CAREER_LAUNCH_CONSTITUTION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200000_CONSTITUTION_DETAIL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200001_CAREER_LAUNCH_CONSTITUTION_DETAIL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200002_CAREER_LAUNCH_PROBLEM_STATEMENT.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200003_CAREER_LAUNCH_NON_GOAL_AND_BOUNDARY_CHARTER.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200004_CAREER_LAUNCH_VALUE_PROPOSITION.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200004_CAREER_LAUNCH_SYSTEM_ARCHITECTURE.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200000_ARCHITECTURE_DETAIL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200001_CAREER_LAUNCH_ARCHITECTURE_DETAIL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200002_CAREER_LAUNCH_COMPONENT_MAP.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200003_CAREER_LAUNCH_READ_WRITE_BOUNDARY.md
+
+----- LAST 20 FILES -----
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200004_CAREER_LAUNCH_RISK_AND_CONSULTATION_PAYLOAD.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200005_CAREER_LAUNCH_SUMMARY_EXPORT_AND_HANDOFF_PAYLOAD.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300000_PHASE_BOUNDARY_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300001_CAREER_LAUNCH_PHASE_BOUNDARY_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300002_CAREER_LAUNCH_WHAT_IS_FIXED_NOW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300003_CAREER_LAUNCH_WHAT_IS_DEFERRED.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/1200001_CAREER_LAUNCH_IMPLEMENTATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300004_CAREER_LAUNCH_DEVELOPMENT_ROADMAP.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200000_REVIEW_CHECKLIST_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200001_CAREER_LAUNCH_REVIEW_CHECKLIST_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200002_CAREER_LAUNCH_ARCHITECTURE_REVIEW_CHECKLIST.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200003_CAREER_LAUNCH_DATA_AND_API_REVIEW_CHECKLIST.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200004_CAREER_LAUNCH_POLICY_AND_SECURITY_REVIEW_CHECKLIST.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/1300000_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/1300001_CAREER_LAUNCH_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000000_CAREER_LAUNCH_COMMON_COMPONENT_CANDIDATES.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000001_CAREER_LAUNCH_CX22073_CANDIDATE_DATA_AREAS.md
+
+----- OUTPUT HEAD -----
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000000_CAREER_LAUNCH_INDEX.md -->
+# CareerLaunch INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+schema: life
+base_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch
+## Purpose
+CareerLaunch 設計フォルダ全体の入口。
+
+## Root files
+- 0000000_CAREER_LAUNCH_INDEX.md
+- 0000001_CAREER_LAUNCH_OVERVIEW.md
+- 0000002_CAREER_LAUNCH_CANONICAL.md
+
+## Main layers
+- 010.constitution
+- 020.architecture
+- 030.model
+- 040.runtime
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 090.interface
+- 100.security
+- 110.infrastructure
+- 120.implementation
+
+----- OUTPUT TAIL -----
+- Status Pipeline Common: 興味あり〜内定 / 見送り / 辞退のステータス管理共通
+- Offline Draft Queue Common: local save / pending sync / conflict visible の共通
+- Export Common: pdf/docx 出力ジョブと frozen snapshot 共通
+- Multilingual Label Common: UIラベルと文書テンプレートの言語切替共通
+- Multicurrency Display Common: amount + currency の表示・比較共通
+- Persona and Background Display Common: ペルソナ表示、背景表示、変更、軽量化の共通
+- Advisor Share Common: viewer / editor 権限共有、コメント導線、revocation 共通
+
+## Why now
+CareerLaunch は文書・応募・面接準備が混ざるため、上記共通部品を先に切り出す価値が高い。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000000_CAREER_LAUNCH_COMMON_COMPONENT_CANDIDATES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000001_CAREER_LAUNCH_CX22073_CANDIDATE_DATA_AREAS.md -->
+# CareerLaunch CX22073 CANDIDATE DATA AREAS
+## Candidate data areas
+- career_profile_area
+- resume_document_area
+- work_history_document_area
+- motivation_statement_area
+- self_promotion_area
+- job_posting_paste_area
+- application_tracking_area
+- interview_preparation_area
+- interview_session_note_area
+- thank_you_message_area
+- document_revision_history_area
+- advisor_share_area
+- persona_display_preference_area
+
+## Placement rationale
+- 応募実行全体を復元可能にするため、文書だけでなく application と interview の文脈も保存対象にする。
+- revision history と share state は後追い検証に有効。
+- persona/background setting も UI continuity として候補に含める。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000001_CAREER_LAUNCH_CX22073_CANDIDATE_DATA_AREAS.md -->
+

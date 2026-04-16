@@ -1,0 +1,139 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LEGAL SUPPORT SCREEN DEFINITIONS
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: interface
+subdomain: screens
+
+screens:
+  dashboard:
+    purpose:
+      - 全体状況を一目で把握する
+    main_blocks:
+      - 進行中案件
+      - 直近期限
+      - 未整理書類
+      - 次回確認事項
+
+  legal_case_list:
+    purpose:
+      - 案件一覧を閲覧する
+    main_blocks:
+      - 分野別フィルタ
+      - 状態別フィルタ
+      - 優先度表示
+      - 共有状態表示
+
+  legal_case_detail:
+    purpose:
+      - 案件の全体像を確認する
+    main_blocks:
+      - 概要
+      - 時系列
+      - 関係者
+      - 書類
+      - 質問
+      - 履歴
+      - アクション
+
+  fact_timeline_screen:
+    purpose:
+      - 事実関係を並べ替える
+    main_blocks:
+      - 日付順表示
+      - 事実表示
+      - 推測表示
+      - 未確認表示
+
+  stakeholder_screen:
+    purpose:
+      - 関係者情報を整理する
+    main_blocks:
+      - 一覧
+      - 関係性
+      - 連絡メモ
+      - 共有可否
+
+  document_screen:
+    purpose:
+      - 書類状態を確認する
+    main_blocks:
+      - 所持中
+      - 未取得
+      - 提出済
+      - 要確認
+
+  question_screen:
+    purpose:
+      - 相談前後の確認事項を管理する
+    main_blocks:
+      - 未確認
+      - 回答済
+      - 保留
+      - 次回確認
+
+  consultation_history_screen:
+    purpose:
+      - 過去相談記録を確認する
+    main_blocks:
+      - 日付
+      - 相手
+      - 要点
+      - 保留事項
+
+  action_deadline_screen:
+    purpose:
+      - 次回行動と期限を確認する
+    main_blocks:
+      - action_item
+      - deadline_item
+      - 優先度
+      - 通知状態
+
+  export_pdf_screen:
+    purpose:
+      - 共有資料を出力する
+    main_blocks:
+      - 出力範囲
+      - 含める項目
+      - 共有対象
+      - 最終確認
+
+plan_gating:
+  free:
+    available:
+      - dashboard
+      - legal_case_list
+      - legal_case_detail
+      - fact_timeline_screen
+      - stakeholder_screen
+      - document_screen
+      - question_screen
+      - consultation_history_screen
+      - action_deadline_screen_basic
+    unavailable:
+      - export_pdf_screen
+      - family_share_advanced
+      - ai_summary
+      - voice_memo
+  plus_family:
+    available:
+      - 全画面
+      - 共有PDF出力
+      - 家族共有
+      - AI要約
+      - 音声メモ
+      - 重要期限管理強化

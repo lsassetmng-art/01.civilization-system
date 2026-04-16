@@ -1,0 +1,18 @@
+# ============================================================
+# END OF LIFE PLANNER INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L9-open-points-closure
+
+infrastructure_scope:
+  - logical schema
+  - pre-implementation db design
+  - physical db design without sql
+  - attachment / permission / active state design closure
+
+important_boundary:
+  - schema is life
+  - design-only
+  - executable SQL not started
+  - unresolved high priority DB points are being closed

@@ -1,0 +1,41 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LIFE PLANNER SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+architecture_blocks:
+  - life_plan_workspace
+  - life_event_area
+  - goal_area
+  - milestone_area
+  - review_center
+  - note_attachment_area
+  - family_share_output
+  - ai_support_assist
+  - lifeos_bridge
+
+bridge_rules:
+  - LifeOS 連携はお金、健康、終活、法律との接続を優先
+  - 外部専門家相談は各専門アプリ側で扱う
+  - 共通部品の詳細定義は別正本を参照する

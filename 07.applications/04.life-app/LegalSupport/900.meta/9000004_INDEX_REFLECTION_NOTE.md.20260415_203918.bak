@@ -1,0 +1,27 @@
+# ============================================================
+# INDEX REFLECTION NOTE
+# LegalSupport
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+reflected_updates:
+  - root app index refreshed
+  - app reading order added
+  - architecture index refreshed
+  - model index refreshed
+  - integration index refreshed
+  - policy index refreshed
+  - interface index refreshed
+  - infrastructure index refreshed
+  - meta index refreshed
+
+intent:
+  - 設計書全体を入口から辿れるようにする
+  - 実装前の読書順を固定する
+  - layer 間の迷子を減らす
+
+note:
+  - 実装はまだ行わない
+  - index は設計責務の目次であり、実装手順書ではない

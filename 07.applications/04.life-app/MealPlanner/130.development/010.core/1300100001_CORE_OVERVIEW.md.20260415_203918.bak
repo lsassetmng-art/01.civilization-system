@@ -1,0 +1,8 @@
+# Development Core Overview
+
+## role
+MealPlanner の開発順序を定義する
+
+## mealplanner_context
+- MealPlanner の当該レイヤーにおける責務を整理する
+- CivilizationOS系構成に合わせる

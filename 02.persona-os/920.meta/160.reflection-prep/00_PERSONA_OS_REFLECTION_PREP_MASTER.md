@@ -11,8 +11,8 @@ prepared_by: Zero
 
 purpose:
 Defines how PersonaOS normalized semantic and implementation-facing
-boundaries must be reflected into downstream applications and
-adjacent OS designs.
+boundaries must be reflected into downstream applications,
+adjacent OS designs, and PersonaOS foundation layers.
 
 # ============================================================
 # 1. REFLECTION BASIS
@@ -48,8 +48,10 @@ global_reflection_rules:
 - downstream systems may cache PersonaOS-derived runtime data
 - downstream systems may transport PersonaOS-related contracts
 - downstream systems may keep support-side logs and delivery traces
+- foundation-side layers may execute PersonaOS-derived runtime behavior
+- foundation-side layers may render PersonaOS-derived visual truth
 
-but_downstream_systems_must_not:
+but_targets_must_not:
 - replace PersonaOS identity authority
 - replace PersonaOS state authority
 - replace PersonaOS growth authority
@@ -57,6 +59,7 @@ but_downstream_systems_must_not:
 - replace PersonaOS security gate truth
 - replace PersonaOS governance decision truth
 - replace PersonaOS canonical mutation truth
+- replace PersonaOS canonical visual truth
 
 # ============================================================
 # 3. TARGET-BY-TARGET REFLECTION DIRECTION
@@ -139,14 +142,13 @@ but it must not silently absorb PersonaOS authority.
 # ------------------------------------------------------------
 
 role:
-Execution/rendering-side visual consumer of PersonaOS visual truth
-and related runtime expression inputs.
+PersonaOS foundation-side visual execution layer.
 
 may_hold:
 - render session state
 - resolved layout/render data
 - runtime visual buffers
-- host-side execution caches
+- host-side or foundation-side execution caches
 
 must_not_hold_as_authority:
 - canonical visual truth ownership
@@ -155,8 +157,8 @@ must_not_hold_as_authority:
 - growth/state/identity authority
 
 core_rule:
-VisualRuntime executes visual consumption,
-but visual truth remains owned by PersonaOS.
+VisualRuntime executes PersonaOS visual consumption internally,
+but canonical visual truth remains owned by PersonaOS.
 
 # ============================================================
 # 4. PRIMARY REFLECTION RISKS
@@ -183,16 +185,18 @@ recommended_order:
 
 why_this_order:
 PocketSecretary is the nearest runtime-facing consumer of PersonaOS,
-so it is the most important first downstream reflection target.
+while VisualRuntime is a PersonaOS-internal foundation execution layer.
 
 # ============================================================
 # 6. FINAL FIXED STATEMENT
 # ============================================================
 
 final_fixed_statement:
-PersonaOS downstream reflection must preserve PersonaOS authority
+PersonaOS reflection must preserve PersonaOS authority
 ownership and stage separation.
-Adjacent systems and applications may consume, present,
-transport, or operationally support PersonaOS-derived data,
+Adjacent systems may consume, present, transport,
+or operationally support PersonaOS-derived data,
+and foundation-side execution layers may render or execute it,
 but they must not silently replace PersonaOS canonical authority,
-decision truth, protection-gate truth, or committed mutation truth.
+decision truth, protection-gate truth, canonical visual truth,
+or committed mutation truth.

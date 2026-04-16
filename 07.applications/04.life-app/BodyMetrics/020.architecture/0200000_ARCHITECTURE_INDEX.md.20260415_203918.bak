@@ -1,0 +1,12 @@
+# ============================================================
+# ARCHITECTURE INDEX
+# ============================================================
+
+status: draft
+subfolders:
+  - 010.core
+  - 020.domain
+  - 030.components
+
+contents:
+  - 0200001_ARCHITECTURE_OVERVIEW.md

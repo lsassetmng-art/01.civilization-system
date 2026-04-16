@@ -1,0 +1,18 @@
+# ============================================================
+# GAME OS PERSONA REFLECTION POLICY
+# ============================================================
+
+status: draft-for-canonical-update
+system: game-os
+layer: policy
+domain: persona-reflection
+document_type: policy
+owner: Boss
+prepared_by: Zero
+
+policy_principles:
+- GameOS never directly overwrites PersonaOS canonical truth
+- only continuous and meaningful changes may become candidates
+- temporary values and title-local convenience flags must not be reflected
+- transformed adoption is allowed
+- auditability is mandatory

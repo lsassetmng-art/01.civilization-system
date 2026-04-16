@@ -2,49 +2,36 @@
 # PERSONA OS ARCHITECTURE
 # ============================================================
 
-status: canonical
-component: persona-os
+status: implementation-ready-followup
+system: PersonaOS
 layer: architecture
+canonical: true
 
-owner: Boss
-prepared_by: Zero
+architectural_goal:
+PersonaOS is organized around authoritative truth mutation,
+controlled authoring, immutable release inputs,
+and auditable external-rights control.
 
-# OVERVIEW
+major_nodes:
+- edge acceptance
+- validation engine
+- canonical apply engine
+- builder authoring subsystem
+- visual resolution subsystem
+- runtime hosting subsystem
+- snapshot issuance subsystem
+- package subsystem
+- external-rights subsystem
+- integration outbox and callback subsystem
+- security and observability subsystem
 
-PersonaOS is the personality operating system
-inside Civilization System.
+authoritative_boundaries:
+- only canonical apply updates truth state
+- builder stores draft state only
+- runtime state is ephemeral and non-authoritative
+- snapshot and package are immutable release-side artifacts
+- external release requires rights authority and release gate satisfaction
 
-PersonaOS is responsible for:
-
-persona lifecycle
-persona state management
-persona growth
-persona memory
-persona snapshot issuance
-persona visual identity
-
-# ARCHITECTURE PRINCIPLES
-
-PersonaOS follows these rules:
-
-event-driven architecture
-single state authority
-snapshot public model
-fail-closed runtime
-cryptographic trust
-
-# SYSTEM LAYERS
-
-PersonaOS
-
-Lifecycle
-Runtime
-Visual
-Security
-Approval
-Asset
-
-Each layer communicates through explicit events.
-
-Direct cross-layer mutation is prohibited.
-
+non_bypass_rule:
+No user interface or batch job may bypass validation, canonical apply,
+release immutability, or rights checks.

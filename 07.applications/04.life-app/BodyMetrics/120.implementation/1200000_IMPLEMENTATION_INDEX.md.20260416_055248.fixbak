@@ -1,0 +1,29 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 1200001_IMPLEMENTATION_OVERVIEW.md
+  - 1200002_PHASE_PLAN_AND_READINESS.md
+  - 1200003_OPEN_DECISIONS_AND_FIXED_RULES.md
+  - 1200004_LIFE_SCHEMA_IMPLEMENTATION_PREP.md
+  - 1200005_DB_EXACT_INVENTORY_AND_SQL_PREP.md
+  - 1200006_DB_COLUMN_TYPE_PREPARATION.md
+  - 1200007_FIXED_DECISIONS_REFLECTION_PACK.md
+  - 1200008_API_REQUEST_RESPONSE_EXACT_PAYLOAD_FIXED_PACK.md
+  - 1200009_UI_EXACT_DISPLAY_REFLECTION_PACK.md
+  - 1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+  - 1200011_IMPLEMENTATION_PREP_COMPLETION_DECLARATION.md

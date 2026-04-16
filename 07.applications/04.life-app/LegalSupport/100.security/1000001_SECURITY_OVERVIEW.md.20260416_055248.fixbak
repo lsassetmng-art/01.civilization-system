@@ -1,0 +1,38 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+security_objectives:
+  - 最小共有
+  - 高秘匿情報の誤露出防止
+  - export 派生物の取り扱い分離
+  - 権限変更の追跡可能性
+  - 端末利用を前提にした保護
+
+control_areas:
+  - app access control
+  - case visibility control
+  - document confidentiality control
+  - share audit control
+  - export handling control
+
+core_controls:
+  - app lock
+  - biometric unlock
+  - auto lock
+  - share audit
+  - high confidentiality protection

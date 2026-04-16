@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT HANDOFF META OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+handoff_purpose:
+  - 次チャットでの継続作業を容易にする
+  - 深掘り対象と未解決論点を明示する

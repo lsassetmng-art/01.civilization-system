@@ -1,0 +1,29 @@
+# ============================================================
+# LEGAL SUPPORT BOUNDARY ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+internal_boundaries:
+  - case boundary
+  - document confidentiality boundary
+  - consultation record boundary
+  - task/deadline operational boundary
+  - share/export boundary
+
+external_boundaries:
+  - InheritanceSupport から相続整理要約を受ける
+  - EndOfLifePlanner から意思情報要約を受ける
+  - MoneyPlanner から資産/負債要約を受ける
+
+boundary_rules:
+  - 他アプリ正本を上書きしない
+  - LegalSupport は相談整理責務に限定する
+  - export artifact は原資料と同一視しない
+  - permissions は計算結果であり正本データではない
+
+non_goals:
+  - 法的結論エンジン化
+  - 自動訴訟判断
+  - 税務/法務の最終断定

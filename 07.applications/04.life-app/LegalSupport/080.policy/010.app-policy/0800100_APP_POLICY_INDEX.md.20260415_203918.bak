@@ -1,0 +1,14 @@
+# ============================================================
+# APP POLICY INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0800101_APP_POLICY_OVERVIEW.md
+  - 0800102_BUSINESS_RULE_CANONICAL.md
+  - 0800103_SHARE_AND_CONFIDENTIALITY_DECISION_CANONICAL.md
+
+purpose:
+  - LegalSupport の業務ルールと共有/秘匿判断の入口

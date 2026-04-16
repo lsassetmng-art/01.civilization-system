@@ -1,0 +1,19 @@
+# ============================================================
+# REVIEW CHECKLIST INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 130.development
+subfolder: 020.review-checklist
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1300200001_BUSINESS_LEGAL_SUPPORT_REVIEW_CHECKLIST_OVERVIEW.md
+  - 1300200002_BUSINESS_LEGAL_SUPPORT_ARCHITECTURE_REVIEW_CHECKLIST.md
+  - 1300200003_BUSINESS_LEGAL_SUPPORT_DATA_AND_API_REVIEW_CHECKLIST.md
+  - 1300200004_BUSINESS_LEGAL_SUPPORT_POLICY_AND_SECURITY_REVIEW_CHECKLIST.md

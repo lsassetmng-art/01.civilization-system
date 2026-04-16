@@ -1,0 +1,69 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# LEGAL SUPPORT CANONICAL CONSOLIDATION INDEX
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: meta
+subdomain: audit
+
+purpose:
+  - LegalSupport の主要正本を再読しやすい順でまとめる
+  - 実装前に参照すべき文書群を固める
+  - 正本の散在による見落としを減らす
+
+recommended_read_order:
+
+  stage_1_root_and_scope:
+    - 000_LEGAL_SUPPORT_ROOT_INDEX.md
+    - 001_LEGAL_SUPPORT_ROOT_OVERVIEW.md
+    - 010.constitution/010.core/0100100001_LEGAL_SUPPORT_CORE_CONSTITUTION.md
+    - 030.model/010.entities/0300100002_LEGAL_SUPPORT_SCHEMA_BINDING_POLICY.md
+
+  stage_2_domain_and_data:
+    - 020.architecture/010.domain/0200100001_LEGAL_SUPPORT_DOMAIN_MODULES.md
+    - 030.model/010.entities/0300100003_LEGAL_SUPPORT_ENTITY_FIELD_MATRIX.md
+    - 030.model/010.entities/0300100014_LEGAL_SUPPORT_APP_WIDE_ENUM_REGISTRY.md
+    - 030.model/010.entities/0300100008_LEGAL_SUPPORT_NULLABLE_DEFAULT_MATRIX.md
+
+  stage_3_core_runtime:
+    - 040.runtime/010.use-cases/0400100002_LEGAL_SUPPORT_REQUEST_RESPONSE_EXACT_PAYLOADS.md
+    - 040.runtime/010.use-cases/0400100007_LEGAL_SUPPORT_SECTION_UPDATE_EXACT.md
+    - 040.runtime/010.use-cases/0400100010_LEGAL_SUPPORT_DELETE_SOFT_DELETE_EXACT.md
+    - 040.runtime/010.use-cases/0400100018_LEGAL_SUPPORT_OWNER_FAMILY_DASHBOARD_QUERY_EXACT.md
+
+  stage_4_share_export_summary:
+    - 100.security/010.access-control/1000100005_LEGAL_SUPPORT_OWNER_FAMILY_ACTION_CAPABILITY_MATRIX.md
+    - 080.policy/010.boundaries/0800100006_LEGAL_SUPPORT_FIELD_LEVEL_MASKING_MATRIX.md
+    - 040.runtime/010.use-cases/0400100019_LEGAL_SUPPORT_SUMMARY_EXPORT_PROFILE_VARIANTS_EXACT.md
+    - 090.interface/010.screens/0900100016_LEGAL_SUPPORT_FAMILY_SHARE_MASKING_PREVIEW_EXACT.md
+    - 080.policy/010.boundaries/0800100008_LEGAL_SUPPORT_SUMMARY_DISCLAIMER_VARIATION_EXACT.md
+
+  stage_5_integration_and_audit:
+    - 060.integration/010.lifeos-linkage/0600100004_LEGAL_SUPPORT_CROSS_APP_HANDOFF_PAYLOAD_EXACT.md
+    - 060.integration/010.lifeos-linkage/0600100005_LEGAL_SUPPORT_CROSS_APP_HANDOFF_TARGET_RULES.md
+    - 900.meta/010.audit/9000100005_LEGAL_SUPPORT_AUDIT_ACTION_MATRIX.md
+    - 900.meta/010.audit/9000100007_LEGAL_SUPPORT_HANDOFF_AUDIT_EXACT.md
+
+  stage_6_ui_and_operations:
+    - 090.interface/010.screens/0900100002_LEGAL_SUPPORT_SCREEN_ACTION_MATRIX.md
+    - 090.interface/010.screens/0900100011_LEGAL_SUPPORT_OWNER_DASHBOARD_EXACT.md
+    - 090.interface/010.screens/0900100012_LEGAL_SUPPORT_FAMILY_DASHBOARD_EXACT.md
+    - 070.operations/010.support/0700100003_LEGAL_SUPPORT_NOTIFICATION_TIMING_MATRIX.md
+    - 070.operations/010.support/0700100006_LEGAL_SUPPORT_NOTIFICATION_OPERATION_GUIDE.md
+
+consolidation_notes:
+  - schema 正本は life 固定
+  - pricing 正本は Free / PlusFamily(月額500円)
+  - 実装前は request/response exact と masking/capability を最重要参照対象とする

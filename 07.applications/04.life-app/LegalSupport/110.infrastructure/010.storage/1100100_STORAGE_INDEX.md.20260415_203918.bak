@@ -1,0 +1,17 @@
+# ============================================================
+# STORAGE INDEX
+# ============================================================
+
+status: canonical-draft
+phase: db-exact-fixed
+files:
+  - 1100101_STORAGE_OVERVIEW.md
+  - 1100102_STORAGE_MAPPING.md
+  - 1100103_ATTACHMENT_AND_EXPORT_STORAGE_POLICY.md
+  - 1100104_PERSISTENCE_SCHEMA_FIXED.md
+  - 1100105_PERSISTENCE_OPERATION_POLICY.md
+
+purpose:
+  - LegalSupport の storage 正本一覧
+  - domain model と storage の対応を固定する
+  - persistence schema と運用方針を固定する

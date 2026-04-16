@@ -1,0 +1,17 @@
+# ============================================================
+# ARCHITECTURE CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0200003_ARCHITECTURE_CORE_OVERVIEW.md
+  - 0200004_LIFE_PLANNER_SYSTEM_ARCHITECTURE.md

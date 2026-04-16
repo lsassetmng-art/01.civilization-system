@@ -1,0 +1,11 @@
+# ============================================================
+# FLOW OVERVIEW
+# ============================================================
+
+status: canonical-draft
+major_flows:
+  - first time flow
+  - create case flow
+  - consultation preparation flow
+  - post consultation flow
+  - family support flow

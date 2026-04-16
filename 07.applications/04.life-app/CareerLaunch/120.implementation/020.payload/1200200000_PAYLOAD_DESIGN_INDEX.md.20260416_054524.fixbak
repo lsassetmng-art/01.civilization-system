@@ -1,0 +1,16 @@
+# 1200200000 PAYLOAD DESIGN INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200000_PAYLOAD_DESIGN_INDEX.md
+## Purpose
+CareerLaunch の 020.payload 配下を一覧する。
+
+## Children
+- 1200200001_CAREER_LAUNCH_PAYLOAD_OVERVIEW.md
+- 1200200002_CAREER_LAUNCH_LEGAL_ISSUE_PAYLOAD.md
+- 1200200003_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_PAYLOAD.md
+- 1200200004_CAREER_LAUNCH_RISK_AND_CONSULTATION_PAYLOAD.md
+- 1200200005_CAREER_LAUNCH_SUMMARY_EXPORT_AND_HANDOFF_PAYLOAD.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

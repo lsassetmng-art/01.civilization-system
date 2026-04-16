@@ -1,0 +1,9 @@
+# ============================================================
+# FLOW INDEX
+# ============================================================
+
+status: canonical-draft
+files:
+  - 0500001_FLOW_OVERVIEW.md
+  - 010.user-flow/0500100_USER_FLOW_INDEX.md
+  - 010.user-flow/0500101_CORE_USER_FLOWS.md

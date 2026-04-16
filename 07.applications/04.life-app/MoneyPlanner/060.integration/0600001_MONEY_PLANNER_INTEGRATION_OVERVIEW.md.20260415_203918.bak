@@ -1,0 +1,21 @@
+# ============================================================
+# MONEY PLANNER INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 060.integration
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 連携レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - LifeOS 内連携と外部境界を定義する
+  - LifePlanner / EndOfLifePlanner / InheritanceSupport との線引きを固定する
+  - 自動送信禁止を明確化する

@@ -1,0 +1,15 @@
+# ============================================================
+# END OF LIFE PLANNER FLOW OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+main_flows:
+  - onboarding
+  - owner_daily_update
+  - family_sharing_setup
+  - handoff_pack_generation
+  - family_viewer_access
+  - delegated_editor_update
+  - inheritance_gateway

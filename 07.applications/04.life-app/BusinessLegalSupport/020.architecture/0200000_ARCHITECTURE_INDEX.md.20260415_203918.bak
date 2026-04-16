@@ -1,0 +1,18 @@
+# ============================================================
+# ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0200001_BUSINESS_LEGAL_SUPPORT_ARCHITECTURE_OVERVIEW.md
+  - 010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+  - 010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
+  - 010.core/0200004_BUSINESS_LEGAL_SUPPORT_SYSTEM_ARCHITECTURE.md
+  - 020.detail/0200200000_ARCHITECTURE_DETAIL_INDEX.md

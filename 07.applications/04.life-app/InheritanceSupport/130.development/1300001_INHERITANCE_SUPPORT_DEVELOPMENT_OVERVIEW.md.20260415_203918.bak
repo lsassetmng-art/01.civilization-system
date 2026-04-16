@@ -1,0 +1,20 @@
+# ============================================================
+# INHERITANCE SUPPORT DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 130.development
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 開発レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 開発ロードマップと確認観点を整理する
+  - 実装前の固定項目を明文化する
+  - 次段階へ渡す準備資料とする

@@ -1,0 +1,12 @@
+# ============================================================
+# END OF LIFE PLANNER META OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+meta_scope:
+  - 文書管理
+  - 命名規則
+  - 改訂方針
+  - index / overview 維持

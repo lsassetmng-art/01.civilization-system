@@ -1,0 +1,21 @@
+# ============================================================
+# DATA LIFECYCLE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 070.operations
+subfolder: 030.data-lifecycle
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - LifePlannerのデータがどう作られ、運用され、整理されるかを定義する
+  - 長期利用を前提に、放置・整理・終了時の扱いを明確にする
+  - archive / restore / delete の意味を混同しない
+
+principles:
+  - delete より archive を基本優先にする
+  - long-term planning data is valuable and should not disappear casually
+  - family共有情報は plan lifecycle と share lifecycle を分けて考える

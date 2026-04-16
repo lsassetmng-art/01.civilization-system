@@ -1,0 +1,48 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT PAYLOAD OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 120.implementation
+subfolder: 020.payload
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - BusinessLegalSupport の request / response exact payload を固定する
+  - UI と保存モデルの間で扱う JSON 形状を明文化する
+  - 実装前に項目名、型、nullable 方針をそろえる
+
+payload_principles:
+  - 正本スキーマは life
+  - payload は JSON object を基本とする
+  - id は uuid string
+  - date は YYYY-MM-DD
+  - datetime は ISO-8601 string with timezone
+  - nullable 項目は明示的に null を許容する
+  - boolean は true / false を省略しない
+  - enum 値は model 定義に従う
+  - 金額は amount_value + currency_code の組で持つ
+  - ERP 直結 payload はこのアプリでは定義しない
+
+common_field_rules:
+  uuid:
+    example: "11111111-2222-3333-4444-555555555555"
+  date:
+    example: "2026-04-14"
+  datetime:
+    example: "2026-04-14T10:30:00+09:00"
+  amount_value:
+    example: "120000.00"
+  currency_code:
+    example: "JPY"
+
+response_principles:
+  - create response は保存済み object を返す
+  - update response も保存後の object を返す
+  - delete は物理削除ではなく soft delete 前提
+  - list response は items 配列を返す

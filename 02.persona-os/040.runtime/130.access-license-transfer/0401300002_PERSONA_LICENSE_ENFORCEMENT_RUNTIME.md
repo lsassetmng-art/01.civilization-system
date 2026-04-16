@@ -1,15 +1,11 @@
-# ============================================================
 # PERSONA LICENSE ENFORCEMENT RUNTIME
-# ============================================================
 
-status: canonical
-layer: runtime
-domain: access-license-transfer
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-runtime_rules:
-license scope must remain explicit
-access grants must follow issued license state
-transfer must remain auditable and policy-controlled
+contract_split:
+- license governs usage conditions
+- access grant governs access scope and duration
+- transfer governs ownership or stewardship lineage
+
+runtime_rule:
+Illegal cross-contract assumptions are rejected.

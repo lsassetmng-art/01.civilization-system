@@ -1,15 +1,15 @@
-# ============================================================
 # PERSONA EXTERNAL RELEASE RUNTIME
-# ============================================================
 
-status: canonical
-layer: runtime
-domain: external-rights
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-runtime_rules:
-external release requires explicit rights eligibility
-platform consumption does not seize authority from PersonaOS
-revocation and restriction must remain enforceable
+release_runtime_boundary:
+- no release without explicit scope
+- no release from mutable draft
+- no release without allow decision
+
+runtime_sequence:
+- resolve immutable release input
+- verify rights and target
+- dispatch payload
+- persist result
+- retry or dead-letter on downstream failure

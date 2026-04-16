@@ -1,0 +1,12 @@
+# ============================================================
+# IMPLEMENTATION INDEX
+# ============================================================
+
+layer: 120.implementation
+
+documents:
+  - 1200000000_IMPLEMENTATION_INDEX.md
+  - 1200000001_IMPLEMENTATION_OVERVIEW.md
+
+subfolders:
+  - 010.release-plan

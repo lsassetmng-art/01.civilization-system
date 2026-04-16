@@ -1,0 +1,50 @@
+
+# Policy Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## role
+MealPlanner のプロダクト運用ポリシーを定義する。
+
+## major_policies
+- free / paid boundary
+- published menu versioning
+- search and suggestion ordering
+- csv free / paid difference
+- history retention
+- AI chat support boundary
+
+## free_paid_summary
+- free:
+  - 基本機能利用可
+  - 制限は保存量 / 履歴範囲 / advanced features
+- paid:
+  - pantry / family share / nutrition / LifeOS integration / AI chat support
+
+## versioning_summary
+- published menu は直接上書きしない
+- 修正は新しい版として扱う
+- favorite / template は snapshot-first
+
+## retention_summary
+- DB短期削除しない
+- free は直近30日
+- paid は長期閲覧可
+
+## csv_summary
+- free / paid とも CSV 出力可
+- free は standard columns
+- paid は optional columns も可
+
+## quality_score_summary
+- quality score は ranking helper
+- 公開可否そのものの決定権は持たない

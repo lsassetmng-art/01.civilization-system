@@ -1,0 +1,19 @@
+# ============================================================
+# CONSTITUTION DETAIL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 010.constitution
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0100200001_BUSINESS_LEGAL_SUPPORT_CONSTITUTION_DETAIL_OVERVIEW.md
+  - 0100200002_BUSINESS_LEGAL_SUPPORT_PROBLEM_STATEMENT.md
+  - 0100200003_BUSINESS_LEGAL_SUPPORT_NON_GOAL_AND_BOUNDARY_CHARTER.md
+  - 0100200004_BUSINESS_LEGAL_SUPPORT_VALUE_PROPOSITION.md

@@ -1,0 +1,11 @@
+# Flow Index
+
+## purpose
+MealPlanner の利用フロー、運用フロー、連携フローを定義する
+
+## files
+- 0500001_FLOW_OVERVIEW.md
+
+## notes
+- この index は Flow の入口である
+- 詳細は配下ドキュメントを参照する

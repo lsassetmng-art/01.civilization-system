@@ -1,14 +1,14 @@
-# ============================================================
 # PERSONA SNAPSHOT DEVELOPMENT GUIDE
-# ============================================================
 
-status: canonical
-layer: development
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-development_rules:
-preserve immutability after issuance
-preserve traceability to source truth
+snapshot_rules:
+- issued from a known draft version
+- content hash fixed at issuance
+- immutable after issuance
+- lineage to source draft and publish request must remain queryable
+
+required_tests:
+- same draft content produces deterministic hash
+- changed draft content produces changed snapshot hash
+- issued snapshot cannot be mutated in place

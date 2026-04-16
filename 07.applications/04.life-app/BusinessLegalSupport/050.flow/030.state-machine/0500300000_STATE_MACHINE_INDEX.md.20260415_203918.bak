@@ -1,0 +1,21 @@
+# ============================================================
+# STATE MACHINE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 050.flow
+subfolder: 030.state-machine
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0500300001_BUSINESS_LEGAL_SUPPORT_STATE_MACHINE_OVERVIEW.md
+  - 0500300002_BUSINESS_LEGAL_SUPPORT_ISSUE_STATE_TRANSITIONS.md
+  - 0500300003_BUSINESS_LEGAL_SUPPORT_CONTRACT_STATUS_TRANSITIONS.md
+  - 0500300004_BUSINESS_LEGAL_SUPPORT_DEADLINE_COMPLETION_TRANSITIONS.md
+  - 0500300005_BUSINESS_LEGAL_SUPPORT_ADVISOR_SHARE_LIFECYCLE.md
+  - 0500300006_BUSINESS_LEGAL_SUPPORT_INVALID_TRANSITION_POLICY.md

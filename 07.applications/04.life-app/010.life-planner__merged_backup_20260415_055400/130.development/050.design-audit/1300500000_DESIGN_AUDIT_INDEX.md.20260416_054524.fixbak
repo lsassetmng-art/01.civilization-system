@@ -1,0 +1,18 @@
+# ============================================================
+# DESIGN AUDIT INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 050.design-audit
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 1300500000_DESIGN_AUDIT_INDEX.md
+  - 1300500001_DESIGN_AUDIT_OVERVIEW.md
+  - 1300500002_LIFE_PLANNER_CONSISTENCY_AUDIT_CHECKLIST.md
+  - 1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md
+  - 1300500004_LIFE_PLANNER_PRE_IMPLEMENTATION_AUDIT_NOTE.md

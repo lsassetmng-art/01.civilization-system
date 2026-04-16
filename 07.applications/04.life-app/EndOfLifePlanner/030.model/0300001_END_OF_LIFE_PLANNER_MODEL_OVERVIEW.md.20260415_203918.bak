@@ -1,0 +1,21 @@
+# ============================================================
+# END OF LIFE PLANNER MODEL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: EndOfLifePlanner
+schema: life
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - モデルレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 終活準備案件の基本エンティティを定義する
+  - 希望事項、医療/介護、資産/書類、連絡先、相談記録の関係を固定する
+  - 家族共有は閲覧中心で扱う

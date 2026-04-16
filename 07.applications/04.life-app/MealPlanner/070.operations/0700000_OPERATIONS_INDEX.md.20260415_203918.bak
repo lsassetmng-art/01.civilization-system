@@ -1,0 +1,11 @@
+# Operations Index
+
+## purpose
+MealPlanner の運用、保守、監視観点を定義する
+
+## files
+- 0700001_OPERATIONS_OVERVIEW.md
+
+## notes
+- この index は Operations の入口である
+- 詳細は配下ドキュメントを参照する

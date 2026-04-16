@@ -1,0 +1,11 @@
+# CareerLaunch UNIQUE KEY AND INDEX POLICY
+## Uniqueness
+- career_profile は user_id ごとに active row 1件。
+- document_revision は document_asset_id + revision_no で unique。
+- application_position は user_id + company_id + job_posting_id + applied_at で重複制御可能。
+
+## Index focus
+- user_id + status
+- user_id + interview_at
+- user_id + updated_at
+- full text search for posting_body / document snapshot

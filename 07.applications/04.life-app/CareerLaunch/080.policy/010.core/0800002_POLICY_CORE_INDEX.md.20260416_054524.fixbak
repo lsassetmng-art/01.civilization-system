@@ -1,0 +1,13 @@
+# 0800002 POLICY CORE INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800002_POLICY_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0800003_POLICY_CORE_OVERVIEW.md
+- 0800004_CAREER_LAUNCH_POLICY_SET.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

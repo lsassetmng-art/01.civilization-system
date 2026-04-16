@@ -1,0 +1,21 @@
+# ============================================================
+# EXPORT SUMMARY OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 070.export-summary
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 人生計画を他者と見やすく共有するための要約ビューを設計する
+  - 印刷や共有前提の見せ方を整理する
+  - 実際のファイル出力実装前に、どの情報をどの粒度で見せるかを決める
+
+principles:
+  - まずは「見せる内容」の設計を固定する
+  - センシティブカテゴリは share scope を守る
+  - 印刷 / 共有モードは通常画面と違って情報を整理して見せる

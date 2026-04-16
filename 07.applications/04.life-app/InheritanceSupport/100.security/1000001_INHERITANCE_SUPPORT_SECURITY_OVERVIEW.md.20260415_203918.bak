@@ -1,0 +1,20 @@
+# ============================================================
+# INHERITANCE SUPPORT SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 100.security
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - セキュリティレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 家族・資産・相続情報の機微保護を定義する
+  - 添付、共有、出力時の制御を定める
+  - 最小権限を基本とする

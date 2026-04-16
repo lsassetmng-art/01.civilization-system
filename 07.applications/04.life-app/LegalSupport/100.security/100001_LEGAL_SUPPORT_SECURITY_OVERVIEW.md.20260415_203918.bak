@@ -1,0 +1,12 @@
+# ============================================================
+# LEGAL SUPPORT SECURITY OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+security_principles:
+  - ロール別アクセス制御
+  - 案件単位共有制御
+  - 書類単位共有制御
+  - 外部共有は限定的に扱う

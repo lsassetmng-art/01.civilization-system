@@ -1,29 +1,20 @@
-# ============================================================
 # PERSONA BUILDER MODEL OVERVIEW
-# ============================================================
 
-status: canonical
-layer: model
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-purpose:
-Defines the overview of builder models.
+builder_model_boundary:
+- draft is mutable
+- published release input is immutable after release cut
+- approval decision is auditable
+- visual binding references are version-aware
+- builder never directly rewrites truth state without canonical apply or publish contract
 
-summary:
-Builder models define authoring-side draft structures,
-section edit state, validation-related state,
-and approval-preparation state.
-
-scope:
-draft record
-section draft linkage
-validation-related state
-approval-preparation state
-publish-preparation linkage
-
-boundary:
-Builder models are not final truth models.
-Builder models are not runtime execution state.
+core_builder_models:
+- draft
+- draft section
+- validation result
+- approval decision
+- publish request
+- publish result
+- asset binding
+- changeset

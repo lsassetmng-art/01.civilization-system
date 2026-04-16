@@ -1,0 +1,12 @@
+# ============================================================
+# END OF LIFE PLANNER ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+architecture_focus:
+  - owner / family_viewer / delegated_editor の責務分離
+  - 終活情報、共有、出力、監査の責務分離
+  - 高機微情報の再認証・マスキング前提
+  - LifeOS 他アプリとの安全導線接続

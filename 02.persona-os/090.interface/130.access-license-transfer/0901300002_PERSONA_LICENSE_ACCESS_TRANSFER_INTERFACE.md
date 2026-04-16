@@ -1,16 +1,13 @@
-# ============================================================
 # PERSONA LICENSE ACCESS TRANSFER INTERFACE
-# ============================================================
 
-status: canonical
-layer: interface
-domain: access-license-transfer
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-interface_examples:
-PersonaLicenseIssueRequest
-PersonaAccessGrantRequest
-PersonaTransferRequest
-PersonaAuthorityResultEvent
+contract_fields:
+- contract_type
+- contract_id
+- persona_id
+- target_party_id
+- lifecycle_status
+- effective_from
+- effective_to
+- reason

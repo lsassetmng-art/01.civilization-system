@@ -1,0 +1,15 @@
+# ============================================================
+# FREEZE KIT OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 920.meta
+subfolder: 030.freeze-kit
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - freeze candidate として見返すときの最短導線を置く
+  - 全文書を読み切らなくても現在地を理解できるようにする

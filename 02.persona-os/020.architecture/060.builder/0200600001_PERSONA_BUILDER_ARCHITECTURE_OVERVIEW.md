@@ -2,29 +2,23 @@
 # PERSONA BUILDER ARCHITECTURE OVERVIEW
 # ============================================================
 
-status: canonical
-layer: architecture
+status: implementation-ready-followup
 domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
 
-purpose:
-Defines the structural overview of Persona Builder.
+builder_role:
+Builder is the controlled authoring plane for persona draft changes.
 
-summary:
-Builder is the canonical authoring subsystem of PersonaOS.
-It manages draft creation, editing, validation,
-approval preparation, and publish preparation.
+builder_boundary:
+- draft is mutable
+- draft is not truth state
+- validation is required before publish
+- approval is required where policy demands it
+- publish creates immutable release-side lineage
+- builder may hand off to apply flow only through approved contracts
 
-scope:
-draft structures
-authoring workflow
-validation flow
-approval preparation
-publish preparation
-
-boundary:
-Builder is not final truth authority.
-Builder is not runtime execution.
-Builder must hand approved outcomes into canonical truth paths.
+required_builder_subpaths:
+- draft create/read/update
+- section-level optimistic concurrency
+- validation result persistence
+- approval request and decision
+- publish request and release cut

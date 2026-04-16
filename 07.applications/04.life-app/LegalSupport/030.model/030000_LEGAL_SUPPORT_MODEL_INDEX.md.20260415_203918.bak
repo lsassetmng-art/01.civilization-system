@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT MODEL INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: MODEL
+
+purpose:
+  - 主要データモデルと関係性を定義する

@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT POLICY INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: POLICY
+
+purpose:
+  - 共有、判断非提供、記録方針を定義する

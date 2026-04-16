@@ -1,0 +1,12 @@
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0600001_INTEGRATION_OVERVIEW.md
+  - 0600002_LIFEOS_INTEGRATION.md
+  - 0600003_EXTERNAL_HEALTH_PROVIDER_INTEGRATION.md
+  - 0600004_KNOWLEDGE_AND_RUNTIME_STORAGE_BOUNDARY.md
+  - 0600005_API_BOUNDARY_AND_ENDPOINT_CANONICAL.md
+  - 0600006_DB_API_UI_CONSISTENCY_MATRIX.md

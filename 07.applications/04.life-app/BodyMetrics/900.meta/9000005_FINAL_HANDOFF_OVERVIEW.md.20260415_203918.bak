@@ -1,0 +1,36 @@
+# ============================================================
+# FINAL HANDOFF OVERVIEW
+# ============================================================
+
+status: fixed
+
+handoff_intent:
+  - BodyMetrics の設計状態を一目で把握できるようにする
+  - 実装前レビュー、引き継ぎ、将来差分管理の基点にする
+
+current_state:
+  design_state: implementation_ready
+  implementation_started: false
+  unresolved_items_remaining: none
+
+what_is_fixed:
+  - scope
+  - billing
+  - schema
+  - data architecture
+  - scoring
+  - reference policy
+  - Family Care policy
+  - API payloads
+  - UI display
+  - privacy and permission
+  - readiness gate
+
+what_is_next:
+  - 実装するなら、この設計を起点に着手用出力を作る
+  - 変更するなら、change request 方式で差分管理する
+
+reader_note:
+  - まず 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md を読む
+  - 次に 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md を読む
+  - その後 0000003_BODYMETRICS_READING_ORDER.md に従う

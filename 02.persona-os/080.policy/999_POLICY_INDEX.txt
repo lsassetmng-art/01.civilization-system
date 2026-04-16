@@ -1,9 +1,16 @@
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400001_PERSONA_EXTERNAL_RELEASE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400002_PERSONA_LICENSE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400003_PERSONA_ACCESS_GRANT_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400004_PERSONA_TRANSFER_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/040.external_rights/0800400005_PERSONA_DISTRIBUTION_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/050.business/0800500001_PERSONA_BUSINESS_INTERFACE_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/060.integration/0800600002_PERSONA_GROWTH_APPLY_POLICY.md
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/999_POLICY_INDEX.txt
+PERSONA OS POLICY INDEX
+
+082_PERSONA_REJECTION_POLICY.md
+083_PERSONA_EXTERNAL_APPLY_RETENTION_POLICY.md
+084_PERSONA_CANONICAL_CHANGE_SCOPE_POLICY.md
+060.integration/0800600001_PERSONA_OUTBOX_POLICY.md
+080.runtime-hosting/0800800002_PERSONA_RUNTIME_SESSION_POLICY.md
+090.snapshot/0800900002_PERSONA_SNAPSHOT_ISSUE_POLICY.md
+100.package/0801000002_PERSONA_PACKAGE_ASSEMBLY_POLICY.md
+120.external-rights/0801200002_PERSONA_EXTERNAL_RELEASE_POLICY.md
+130.access-license-transfer/0801300002_PERSONA_LICENSE_ACCESS_TRANSFER_POLICY.md
+130.builder/0801300001_PERSONA_BUILDER_VALIDATION_CODE_TABLE.md
+130.builder/0801300002_PERSONA_SNAPSHOT_POLICY.md
+130.builder/0801300003_PERSONA_SNAPSHOT_RETENTION_RULE.md
+130.builder/0801300004_PERSONA_BUILDER_APPROVAL_RULE.md
+250.cross-cutting-completion/0802501_PERSONA_RETRY_DEAD_LETTER_POLICY.md

@@ -1,0 +1,29 @@
+# ============================================================
+# LEGAL SUPPORT ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+modules:
+  - case_management
+  - fact_timeline_management
+  - stakeholder_management
+  - document_management
+  - question_management
+  - consultation_history_management
+  - action_deadline_management
+  - family_share_export
+  - template_navigation
+
+common_components_addition_candidates:
+  - 相談ケース管理共通部品
+  - タイムライン整理共通部品
+  - 書類管理共通部品
+  - 期限通知共通部品
+  - 共有エクスポート共通部品
+
+architecture_principles:
+  - 事実と推測を混ぜない
+  - 共有範囲は案件単位で制御する
+  - 専門家判断は外に置き、アプリは整理支援に徹する

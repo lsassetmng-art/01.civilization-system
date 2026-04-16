@@ -1,0 +1,44 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# MONEY PLANNER OVERVIEW
+# ============================================================
+
+status: canonical-updated
+system: MoneyPlanner
+domain: LifeOS
+
+current_state:
+  - MoneyPlanner の設計は統合版まで再生成済み
+  - schema 前提は life
+  - app 専用 schema は使わない
+  - 実装準備完了
+  - 実装はまだ開始していない
+
+core_identity:
+  - 家計簿ではなく中長期資金計画アプリ
+  - 人生設計、終活、相続準備の入口とつながる
+  - 個人/夫婦/家族向け
+  - 多言語/多通貨/マルチデバイス前提
+
+canonical_summary:
+  - 仕様固定済み
+  - 課金固定済み
+  - 画面固定済み
+  - API exact payload 固定済み
+  - life schema logical design 固定済み
+  - sharing / linkage / receive candidate 固定済み
+  - audit / history / review flow 固定済み
+  - implementation readiness 判定済み
+
+primary_reference:
+  - 0000000003_MONEY_PLANNER_INTEGRATED_CANONICAL.md

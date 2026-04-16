@@ -1,0 +1,19 @@
+# ============================================================
+# INTERFACE DETAIL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 090.interface
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0900200001_BUSINESS_LEGAL_SUPPORT_INTERFACE_DETAIL_OVERVIEW.md
+  - 0900200002_BUSINESS_LEGAL_SUPPORT_SCREEN_CATALOG.md
+  - 0900200003_BUSINESS_LEGAL_SUPPORT_SCREEN_TRANSITION_RULES.md
+  - 0900200004_BUSINESS_LEGAL_SUPPORT_LIST_AND_DETAIL_PRESENTATION_RULES.md

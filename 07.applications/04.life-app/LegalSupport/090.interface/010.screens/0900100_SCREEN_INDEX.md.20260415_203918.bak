@@ -1,0 +1,14 @@
+# ============================================================
+# SCREEN INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0900101_SCREEN_OVERVIEW.md
+  - 0900102_SCREEN_DETAIL_CANONICAL.md
+  - 0900103_SCREEN_DECISION_ADJUSTMENT_CANONICAL.md
+
+purpose:
+  - 画面一覧と画面詳細の入口

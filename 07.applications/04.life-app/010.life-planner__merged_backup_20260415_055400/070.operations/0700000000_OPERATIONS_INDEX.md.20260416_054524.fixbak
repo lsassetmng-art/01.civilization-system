@@ -1,0 +1,12 @@
+# ============================================================
+# OPERATIONS INDEX
+# ============================================================
+
+layer: 070.operations
+
+documents:
+  - 0700000000_OPERATIONS_INDEX.md
+  - 0700000001_OPERATIONS_OVERVIEW.md
+
+subfolders:
+  - 010.plan-ops

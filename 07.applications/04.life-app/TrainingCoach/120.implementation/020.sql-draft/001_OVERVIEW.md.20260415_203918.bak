@@ -1,0 +1,21 @@
+# ============================================================
+# OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: implementation-readiness
+system: TrainingCoach
+layer: 120.implementation/020.sql-draft
+owner: Boss
+prepared_by: Zero
+db_reviewer: 佐藤
+
+summary:
+  - 本フォルダは TrainingCoach の life schema 用 DDL 草案を保持する
+  - まだ適用前のドラフトであり、設計確定と DBレビューのために置く
+  - schema は life を正とする
+
+notes:
+  - completion_log は finalized 後の直接更新禁止前提
+  - correction event と audit event は別保存とする
+  - BodyMetrics 由来データは cache として扱う

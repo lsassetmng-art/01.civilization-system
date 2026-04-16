@@ -1,0 +1,7 @@
+# CareerLaunch ARCHITECTURE REVIEW CHECKLIST
+## Checklist
+- aggregate root is explicit
+- offline and sync rules are explicit
+- source of truth is explicit
+- no hidden ERP dependency
+- persona/background presentation is placed

@@ -1,0 +1,17 @@
+# ============================================================
+# TRACEABILITY INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 060.traceability
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 1300600000_TRACEABILITY_INDEX.md
+  - 1300600001_TRACEABILITY_OVERVIEW.md
+  - 1300600002_LIFE_PLANNER_REQUIREMENT_TO_DOCUMENT_MATRIX.md
+  - 1300600003_LIFE_PLANNER_SCREEN_PAYLOAD_MODEL_TRACE_MATRIX.md

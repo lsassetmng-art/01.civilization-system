@@ -1,0 +1,18 @@
+# ============================================================
+# EDGE CASES INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 070.edge-cases
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 1300700000_EDGE_CASES_INDEX.md
+  - 1300700001_EDGE_CASES_OVERVIEW.md
+  - 1300700002_LIFE_PLANNER_PERMISSION_EDGE_CASES.md
+  - 1300700003_LIFE_PLANNER_DATE_CURRENCY_EDGE_CASES.md
+  - 1300700004_LIFE_PLANNER_STATE_AND_INTEGRATION_EDGE_CASES.md

@@ -1,0 +1,9 @@
+# ============================================================
+# SECURITY INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 1000001_SECURITY_OVERVIEW.md
+  - 1000002_HEALTH_DATA_SECURITY_ARCHITECTURE.md
+  - 1000003_PRIVACY_AUDIT_PERMISSION_GATE.md

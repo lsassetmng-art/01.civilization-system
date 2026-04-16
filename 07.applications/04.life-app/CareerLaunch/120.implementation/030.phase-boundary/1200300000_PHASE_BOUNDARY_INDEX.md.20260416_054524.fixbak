@@ -1,0 +1,14 @@
+# 1200300000 PHASE BOUNDARY INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300000_PHASE_BOUNDARY_INDEX.md
+## Purpose
+CareerLaunch の 030.phase-boundary 配下を一覧する。
+
+## Children
+- 1200300001_CAREER_LAUNCH_PHASE_BOUNDARY_OVERVIEW.md
+- 1200300002_CAREER_LAUNCH_WHAT_IS_FIXED_NOW.md
+- 1200300003_CAREER_LAUNCH_WHAT_IS_DEFERRED.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

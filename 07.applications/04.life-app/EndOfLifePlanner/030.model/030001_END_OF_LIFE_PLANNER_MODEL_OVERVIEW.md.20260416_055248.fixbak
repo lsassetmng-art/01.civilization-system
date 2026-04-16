@@ -1,0 +1,37 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# END OF LIFE PLANNER MODEL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L2-db-logical-schema-draft
+
+model_scope:
+  - 緊急連絡先
+  - 家族情報
+  - 医療意思
+  - 介護意思
+  - 葬儀希望
+  - 契約一覧
+  - デジタル資産メモ
+  - 書類一覧
+  - 引継ぎメッセージ
+  - 共有権限
+  - 監査ログ
+
+model_fixed_points:
+  - owner を life_person_id でスコープ固定する
+  - owner / family_viewer / delegated_editor の権限境界を sharing_permission で固定する
+  - 意思系データは version_no を持つ履歴保持前提とする
+  - S3_high は共有・出力・再認証条件を強化する
+  - access_audit_log は append-only 前提とする

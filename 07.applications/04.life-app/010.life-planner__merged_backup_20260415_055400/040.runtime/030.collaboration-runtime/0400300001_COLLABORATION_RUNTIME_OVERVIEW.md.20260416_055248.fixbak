@@ -1,0 +1,34 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# COLLABORATION RUNTIME OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 040.runtime
+subfolder: 030.collaboration-runtime
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - Family共有時の共同編集挙動を設計する
+  - owner / family_editor / family_viewer の変更反映ルールを整理する
+  - 編集衝突や owner確認が必要な場面を明確にする
+
+runtime_principles:
+  - owner is final decision maker
+  - family_editor can help edit within scope
+  - family_viewer is read-only
+  - no silent override for major changes
+  - long-term planning context should be preserved

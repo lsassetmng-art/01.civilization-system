@@ -1,0 +1,16 @@
+# ============================================================
+# EDGE CASES OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 070.edge-cases
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 例外ケースを先に洗って設計抜けを防ぐ
+  - 実装前の危険箇所を可視化する
+  - 特に権限、日付、通貨、状態遷移、外部連携の境界を確認する

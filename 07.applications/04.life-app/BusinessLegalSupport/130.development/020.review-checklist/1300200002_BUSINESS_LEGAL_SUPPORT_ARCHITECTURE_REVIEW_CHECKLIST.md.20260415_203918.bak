@@ -1,0 +1,19 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT ARCHITECTURE REVIEW CHECKLIST
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 130.development
+subfolder: 020.review-checklist
+owner: Boss
+prepared_by: Zero
+
+architecture_review:
+  - BusinessLegalSupport と BusinessOS の境界は明確か
+  - ERP 直結前提が紛れ込んでいないか
+  - issue 中心構造は一貫しているか
+  - share/export が source of truth を奪っていないか

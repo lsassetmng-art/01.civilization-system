@@ -1,0 +1,63 @@
+# ============================================================
+# 03.business-app OVERVIEW
+# ============================================================
+
+status: working-overview
+owner: Boss
+prepared_by: Zero
+updated_at: 2026-04-15 04:58:50
+base_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app
+
+## 0. overview
+
+03.business-app は、
+BusinessOS配下の業務アプリ群を束ねる配置であり、
+各アプリは独立アプリとして整理しつつ、
+必要に応じて BusinessOS / ERP と境界接続する。
+
+## 1. current summary
+
+| item | value |
+|---|---:|
+| total_apps | 13 |
+| pricing_file_confirmed_count | 4 |
+| pricing_chat_confirmed_count | 2 |
+| pricing_unknown_count | 7 |
+| trial_defined_count | 2 |
+| auth_known_count | 8 |
+| offline_known_count | 5 |
+| explicit_send_known_count | 8 |
+| deeplink_yes_count | 1 |
+| source_file_known_count | 12 |
+
+## 2. app map
+
+| no | folder_name | category | pricing_status | erp_integration_level |
+|---:|---|---|---|---|
+| 1 | AppDevelopmentStudio | platform-builder | file-confirmed | target-selectable-no-fixed-erp |
+| 2 | EstimateCreator | estimate-app | file-confirmed | explicit-manual-erp-aligned |
+| 3 | ExpenseSettlement | expense-app | unknown | explicit-erp-publication-only |
+| 4 | InvoiceFlow | invoice-app | unknown | erp-master-side |
+| 5 | Mbo | management-app | unknown | business-domain |
+| 6 | NameCardManager | namecard-app | file-confirmed | businessos-save-plus-optional-erp-publish |
+| 7 | OrderFlow | order-app | unknown | business-domain |
+| 8 | ProductPortfolioManager | product-portfolio-app | unknown | business-domain |
+| 9 | ProjectFlow | project-management-app | file-confirmed | shared-businessos-erp-mediation |
+| 10 | QuickForecast | forecast-app | user-confirmed-in-chat | standalone-plus-optional-erp-data-pro |
+| 11 | ShiftManager | unknown | unknown | unknown |
+| 12 | TalentGrowth | talent-app | unknown | business-hr-domain |
+| 13 | pocket-secretary | hybrid-secretary-app | user-confirmed-in-chat | hybrid-explicit-business-linkage |
+
+## 3. reading rule
+
+見る順番:
+1. 000_BUSINESS_APP_LEDGER.md
+2. 002_OVERVIEW.md
+3. 各 app の integrated source_file
+4. 003_FIELD_DEFINITION.md
+
+## 4. interpretation rule
+
+- pricing_status が file-confirmed のものは、投入済み統合資料で価格確認済み
+- pricing_status が user-confirmed-in-chat のものは、ユーザー確定値を反映
+- unknown は今後の正本反映対象

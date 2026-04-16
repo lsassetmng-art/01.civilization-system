@@ -1,0 +1,24 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# END OF LIFE PLANNER ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+architecture_focus:
+  - owner / family_viewer / delegated_editor の責務分離
+  - 終活情報、共有、出力、監査の責務分離
+  - 高機微情報の再認証・マスキング前提
+  - LifeOS 他アプリとの安全導線接続

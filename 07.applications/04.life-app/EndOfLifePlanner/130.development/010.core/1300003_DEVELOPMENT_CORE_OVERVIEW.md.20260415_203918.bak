@@ -1,0 +1,18 @@
+# ============================================================
+# DEVELOPMENT CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L13-implementation-preparation-complete
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: EndOfLifePlanner
+schema: life
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - EndOfLifePlanner の 開発 における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する

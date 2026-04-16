@@ -1,0 +1,26 @@
+# ============================================================
+# LEGAL SUPPORT DASHBOARD AUDIENCE SPLIT UI POLICY
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: interface
+subdomain: screens
+
+audience_split:
+  owner_dashboard:
+    characteristics:
+      - 管理中心
+      - 横断俯瞰
+      - recent export や checklist 進捗を含む
+  family_dashboard:
+    characteristics:
+      - 閲覧中心
+      - 共有範囲のみ
+      - 次に必要な準備をわかりやすくする
+
+ui_rules:
+  - dashboard 初期表示は role で分岐する
+  - family 側では「共有された内容のみ表示中」を明示する
+  - owner 側では family 向けに見えている範囲との差を意識できる補助表示を置いてよい
+  - family dashboard に destructive action を置かない

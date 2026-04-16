@@ -1,0 +1,19 @@
+# ============================================================
+# OPERATIONS INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+layer: 070.operations
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0700001_BUSINESS_LEGAL_SUPPORT_OPERATIONS_OVERVIEW.md
+  - 010.core/0700002_OPERATIONS_CORE_INDEX.md
+  - 010.core/0700003_OPERATIONS_CORE_OVERVIEW.md
+  - 010.core/0700004_BUSINESS_LEGAL_SUPPORT_OPERATIONS_GUIDE.md
+  - 020.detail/0700200000_OPERATIONS_DETAIL_INDEX.md
+  - 030.runbook/0700300000_RUNBOOK_INDEX.md

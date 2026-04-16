@@ -1,0 +1,71 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# SCREEN DECISION ADJUSTMENT CANONICAL
+# LegalSupport
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+schema_name: life
+
+screen_decisions:
+
+  document_and_evidence_display:
+    decision:
+      - 初期は同一整理画面で扱う
+      - 画面内で「書類」と「証拠」を区分表示する
+    ui_shape:
+      - upper filter tabs:
+          - all
+          - legal_document
+          - evidence_item
+      - shared action area:
+          - add
+          - edit
+          - filter
+    reason:
+      - 初期導線を増やしすぎない
+      - metadata 整理の共通性が高い
+
+  consultation_to_task_deadline_flow:
+    decision:
+      - consultation 保存後に「次対応候補」を表示する
+      - task / deadline は自動作成せず、候補選択式にする
+    ui_shape:
+      - post-save suggestion area:
+          - create_task_candidate
+          - create_deadline_candidate
+          - skip_for_now
+    reason:
+      - 自動派生は誤作成リスクがある
+      - ただし導線は弱くしすぎない
+
+  viewer_screen_behavior:
+    decision:
+      - viewer には閲覧専用 UI を出す
+      - 編集ボタン、共有変更ボタン、コメント UI は出さない
+    reason:
+      - 誤操作防止
+      - 権限を画面で明確にする
+
+  highly_sensitive_screen_behavior:
+    decision:
+      - highly_sensitive は case 共有中でも非表示にできる
+      - 非表示時は存在そのものの見せ方も最小化する
+    reason:
+      - 家族共有文脈の安全性を優先する
+
+screen_consistency_notes:
+  - case_detail を中心ハブにする構造は維持
+  - document/evidence は同一整理画面でも model 上は別 entity のまま
+  - consultation 後導線は suggestion ベースで揃える

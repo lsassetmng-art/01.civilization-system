@@ -1,0 +1,16 @@
+# ============================================================
+# OPEN ISSUES OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 040.open-issues
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 未決事項を明示的に残す
+  - 実装前に最終判断が必要な論点を整理する
+  - 設計完了条件を見える化する

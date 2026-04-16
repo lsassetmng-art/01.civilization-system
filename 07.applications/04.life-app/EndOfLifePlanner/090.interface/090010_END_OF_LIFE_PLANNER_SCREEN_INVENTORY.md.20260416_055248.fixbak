@@ -1,0 +1,30 @@
+# ============================================================
+# END OF LIFE PLANNER SCREEN INVENTORY
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+screens:
+  - eol_home_dashboard
+  - eol_onboarding
+  - eol_owner_profile
+  - eol_emergency_contacts
+  - eol_family_registry
+  - eol_medical_preferences
+  - eol_care_preferences
+  - eol_funeral_preferences
+  - eol_contract_registry
+  - eol_subscription_registry
+  - eol_digital_assets
+  - eol_document_registry
+  - eol_important_locations
+  - eol_family_messages
+  - eol_photo_audio_messages
+  - eol_handoff_pack
+  - eol_checklist
+  - eol_family_guide
+  - eol_inheritance_gateway
+  - eol_sharing_settings
+  - eol_access_audit
+  - eol_settings

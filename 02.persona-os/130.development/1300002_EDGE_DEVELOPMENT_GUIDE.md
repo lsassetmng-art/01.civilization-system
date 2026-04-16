@@ -1,42 +1,22 @@
-# ============================================================
 # PERSONA EDGE DEVELOPMENT GUIDE
-# ============================================================
 
-status: canonical
-component: persona-edge-development
+status: implementation-ready-followup
 
-owner: Boss
-prepared_by: Zero
+scope:
+- request acceptance
+- signature verification
+- dedupe key handling
+- validation dispatch
+- canonical apply dispatch
+- result feedback persistence
 
-# PURPOSE
+required_delivery:
+- exact endpoint contract
+- idempotency handling
+- retry-safe side effect boundary
+- dead-letter handoff
+- structured audit logging
 
-Define standards for developing
-Supabase Edge functions used by PersonaOS.
-
-# EDGE RESPONSIBILITIES
-
-Edge functions may perform:
-
-event ingestion
-signature verification
-persona runtime operations
-snapshot generation
-visual composition
-
-# DEVELOPMENT RULES
-
-Edge functions must be:
-
-stateless
-deterministic
-idempotent where possible
-
-# ERROR HANDLING
-
-Errors must produce structured logs.
-
-Fail-safe rules:
-
-reject invalid events
-never mutate state silently
-
+do_not:
+- do not mutate truth state directly in pre-validation path
+- do not return ambiguous partial-success responses

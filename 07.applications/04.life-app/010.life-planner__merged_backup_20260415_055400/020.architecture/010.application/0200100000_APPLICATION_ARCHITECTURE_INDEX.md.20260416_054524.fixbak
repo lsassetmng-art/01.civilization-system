@@ -1,0 +1,10 @@
+# ============================================================
+# APPLICATION ARCHITECTURE INDEX
+# ============================================================
+
+subfolder: 010.application
+
+documents:
+  - 0200100000_APPLICATION_ARCHITECTURE_INDEX.md
+  - 0200100001_APPLICATION_ARCHITECTURE_OVERVIEW.md
+  - 0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md

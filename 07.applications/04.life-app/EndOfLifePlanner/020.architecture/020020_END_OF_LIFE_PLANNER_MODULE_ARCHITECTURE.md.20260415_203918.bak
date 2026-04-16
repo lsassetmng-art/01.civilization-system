@@ -1,0 +1,33 @@
+# ============================================================
+# END OF LIFE PLANNER MODULE ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+module_groups:
+  profile_and_contacts:
+    - owner_profile
+    - emergency_contact
+    - family_profile
+  preference_management:
+    - medical_preference
+    - care_preference
+    - funeral_preference
+  registry_management:
+    - contract_registry
+    - digital_asset_note
+    - document_registry
+  handoff_and_share:
+    - family_message
+    - handoff_document
+    - sharing_permission
+  governance:
+    - checklist_item
+    - access_audit_log
+
+cross_cutting:
+  - sensitivity_class
+  - masking_policy
+  - disclaimer_policy
+  - warning_response

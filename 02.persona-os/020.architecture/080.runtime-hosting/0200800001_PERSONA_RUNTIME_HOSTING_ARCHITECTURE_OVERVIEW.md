@@ -2,31 +2,17 @@
 # PERSONA RUNTIME HOSTING ARCHITECTURE OVERVIEW
 # ============================================================
 
-status: canonical
-layer: architecture
+status: implementation-ready-followup
 domain: runtime-hosting
-system: persona-os
-owner: Boss
-prepared_by: Zero
 
-purpose:
-Defines the structural overview of runtime-hosting domain.
+runtime_hosting_boundary:
+- session starts from released snapshot or package only
+- host adapter resolves immutable release input before activation
+- session state is renewable and auditable
+- runtime hosting cannot alter truth state without separate apply contract
 
-summary:
-Runtime-hosting is the canonical domain
-for host/runtime boundary, session ownership,
-surface hosting, container binding,
-and lifecycle-controlled runtime consumption.
-
-scope:
-host/runtime contract
-session ownership
-container binding
-surface binding
-session lifecycle
-disposal boundary
-
-boundary:
-Runtime-hosting is not visual truth.
-Runtime-hosting is not builder authoring.
-Host applications are consumers, not truth owners.
+required_runtime_controls:
+- session create/heartbeat/suspend/resume/terminate/expire
+- resource allocation and cleanup
+- terminal reason capture
+- release lineage verification

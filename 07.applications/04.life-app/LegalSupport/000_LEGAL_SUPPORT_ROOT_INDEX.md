@@ -1,0 +1,45 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LEGAL SUPPORT ROOT INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+domain: LifeOS / 法律領域
+owner: Boss
+prepared_by: Zero
+
+root_structure:
+  - 010.constitution
+  - 020.architecture
+  - 030.model
+  - 040.runtime
+  - 050.flow
+  - 060.integration
+  - 070.operations
+  - 080.policy
+  - 090.interface
+  - 100.security
+  - 110.infrastructure
+  - 120.implementation
+  - 130.development
+  - 900.meta
+  - 920.meta
+
+primary_entry_points:
+  - 001_LEGAL_SUPPORT_ROOT_OVERVIEW.md
+  - 010.constitution/010001_LEGAL_SUPPORT_CONSTITUTION_OVERVIEW.md
+  - 020.architecture/020001_LEGAL_SUPPORT_ARCHITECTURE_OVERVIEW.md
+  - 030.model/030001_LEGAL_SUPPORT_MODEL_OVERVIEW.md
+  - 090.interface/090001_LEGAL_SUPPORT_INTERFACE_OVERVIEW.md

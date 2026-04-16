@@ -1,0 +1,8 @@
+# ============================================================
+# LEGAL SUPPORT LIFEOS LINKAGE OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+
+summary:
+  - LifeOS内アプリとの振り分け・連携境界を置く

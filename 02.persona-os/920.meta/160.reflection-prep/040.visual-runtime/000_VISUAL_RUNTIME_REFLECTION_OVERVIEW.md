@@ -12,19 +12,21 @@ prepared_by: Zero
 
 purpose:
 Summarizes how PersonaOS normalized boundaries must be reflected
-into VisualRuntime as a rendering/execution-side visual consumer.
+into VisualRuntime as a PersonaOS-foundation visual execution layer.
 
 summary:
-VisualRuntime may consume PersonaOS-derived visual truth,
-render manifests, layout inputs, and runtime-facing visual data.
-However, VisualRuntime must not silently become the canonical
-authority owner of Persona visual truth, identity truth,
-state truth, growth truth, snapshot truth, governance truth,
-or security gate truth.
+VisualRuntime is not an external truth owner.
+It is a PersonaOS-internal visual execution/runtime layer that
+consumes PersonaOS visual truth and executes rendering/session-side
+visual behavior.
 
-reflection_priority:
-1. preserve PersonaOS visual truth ownership
-2. preserve render/runtime execution separation
-3. prevent render state from becoming canonical truth
-4. keep visual session/cache/buffer data non-authoritative
-5. preserve stage separation across manifest/render/display flows
+non_negotiable_rules:
+- VisualRuntime does not own canonical Persona truth
+- VisualRuntime does not own canonical visual truth
+- VisualRuntime render/session/cache data is non-authoritative
+- render output does not replace canonical visual truth
+- expression/runtime state does not replace Persona state authority
+
+positioning:
+VisualRuntime belongs to the PersonaOS foundation side,
+not to an external OS boundary.

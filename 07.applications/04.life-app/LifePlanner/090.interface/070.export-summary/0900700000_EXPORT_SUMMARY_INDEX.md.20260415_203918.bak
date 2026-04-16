@@ -1,0 +1,18 @@
+# ============================================================
+# EXPORT SUMMARY INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 070.export-summary
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0900700000_EXPORT_SUMMARY_INDEX.md
+  - 0900700001_EXPORT_SUMMARY_OVERVIEW.md
+  - 0900700002_LIFE_PLANNER_SUMMARY_VIEW_DESIGN.md
+  - 0900700003_LIFE_PLANNER_PRINT_AND_SHARE_VIEW_POLICY.md
+  - 0900700004_LIFE_PLANNER_FAMILY_MEETING_SUMMARY_DESIGN.md

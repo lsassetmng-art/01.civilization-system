@@ -1,0 +1,50 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# BUSINESS LEGAL SUPPORT FINAL AUDIT OVERVIEW
+# ============================================================
+
+status: canonical-final-audit
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 130.development
+subfolder: 030.final-audit
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - BusinessLegalSupport の設計完了判定を行う
+  - このチャットで追加された設計群の監査観点を固定する
+  - 実装前に「何が完了で、何が未着手か」を明文化する
+
+audit_scope:
+  - constitution
+  - architecture
+  - model
+  - runtime
+  - flow
+  - integration
+  - operations
+  - policy
+  - interface
+  - security
+  - infrastructure
+  - implementation-readiness
+  - development review
+
+audit_principles:
+  - 実装の有無と設計完了は分けて扱う
+  - 184ファイルの存在よりも、境界整合性を重視する
+  - BusinessOS / ERP 境界逸脱がないことを重視する
+  - life スキーマ固定が崩れていないことを重視する

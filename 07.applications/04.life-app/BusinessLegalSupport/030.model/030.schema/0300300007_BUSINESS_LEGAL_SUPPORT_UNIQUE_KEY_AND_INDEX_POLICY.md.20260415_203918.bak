@@ -1,0 +1,32 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT UNIQUE KEY AND INDEX POLICY
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 030.model
+subfolder: 030.schema
+owner: Boss
+prepared_by: Zero
+
+unique_key_policy:
+  - primary key is uuid per table
+  - business natural key uniqueness is minimized in this app
+  - title uniqueness is not required
+  - counterparty name uniqueness is not required
+
+recommended_lookup_indexes:
+  - business_legal_issue(owner_user_id, status, updated_at)
+  - business_legal_contract_item(issue_id, status, effective_to)
+  - business_legal_deadline_record(issue_id, due_at, completed_flag)
+  - business_legal_counterparty(owner_user_id, name)
+  - business_legal_risk_note(issue_id, severity)
+  - business_legal_consultation_record(issue_id, consulted_at)
+  - business_legal_trouble_timeline(issue_id, occurred_at)
+
+index_policy_note:
+  - これは実装 SQL ではなく論理推奨
+  - exact index statement は実装段階で固定する

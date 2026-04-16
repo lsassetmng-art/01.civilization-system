@@ -1,0 +1,71 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LEGAL SUPPORT ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+architecture_style:
+  - case-centric information architecture
+  - local-first oriented
+  - explicit-share model
+  - document-metadata and attachment separation
+  - LifeOS linked but independently understandable
+
+core_architecture_view:
+  entry_layer:
+    - home_dashboard
+    - case_list
+    - case_create
+
+  workspace_layer:
+    - case_overview_workspace
+    - fact_timeline_workspace
+    - stakeholder_workspace
+    - document_workspace
+    - consultation_workspace
+    - task_workspace
+    - deadline_workspace
+    - sharing_workspace
+
+  policy_layer:
+    - confidentiality_policy
+    - share_policy
+    - redaction_policy
+    - archive_policy
+
+  data_layer:
+    - legal_case
+    - stakeholder
+    - fact_timeline_event
+    - legal_document
+    - evidence_item
+    - consultation_note
+    - legal_task
+    - deadline_event
+    - advisor_contact
+    - case_share_grant
+    - case_share_pack
+
+  integration_layer:
+    - inheritance_support_link
+    - end_of_life_planner_link
+    - money_planner_link
+
+architecture_constraints:
+  - 法的最終判断機能は置かない
+  - 専門家代行機能は置かない
+  - 共有は owner 明示操作のみ
+  - 高秘匿情報は常に共有境界を跨げるとは限らない

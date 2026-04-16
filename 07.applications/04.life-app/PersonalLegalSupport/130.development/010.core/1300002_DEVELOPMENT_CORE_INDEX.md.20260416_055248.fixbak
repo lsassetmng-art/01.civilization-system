@@ -1,0 +1,16 @@
+# ============================================================
+# DEVELOPMENT CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 130.development
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1300003_DEVELOPMENT_CORE_OVERVIEW.md
+  - 1300004_PERSONAL_LEGAL_SUPPORT_DEVELOPMENT_ROADMAP.md

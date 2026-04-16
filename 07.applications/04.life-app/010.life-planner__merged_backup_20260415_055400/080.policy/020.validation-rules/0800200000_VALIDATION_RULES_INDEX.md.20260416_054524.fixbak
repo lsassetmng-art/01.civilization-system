@@ -1,0 +1,19 @@
+# ============================================================
+# VALIDATION RULES INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 080.policy
+subfolder: 020.validation-rules
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0800200000_VALIDATION_RULES_INDEX.md
+  - 0800200001_VALIDATION_RULES_OVERVIEW.md
+  - 0800200002_LIFE_PLANNER_PLAN_AND_GOAL_VALIDATION_RULES.md
+  - 0800200003_LIFE_PLANNER_TIMELINE_AND_REVIEW_VALIDATION_RULES.md
+  - 0800200004_LIFE_PLANNER_SHARE_SCENARIO_REFLECTION_VALIDATION_RULES.md
+  - 0800200005_LIFE_PLANNER_UI_BLOCKING_AND_ERROR_RULES.md

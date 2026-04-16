@@ -1,33 +1,20 @@
-# ============================================================
 # PERSONA EVENT APPLY RUNTIME
-# ============================================================
 
-status: canonical
-component: persona-event-apply-runtime
+status: implementation-ready-followup
 
-owner: Boss
-prepared_by: Zero
+runtime_goal:
+Execute a validated inbound persona event exactly once against truth authority.
 
-# PURPOSE
+runtime_sequence:
+- accept request context
+- resolve correlation id and dedupe key
+- run validation
+- invoke canonical apply
+- persist terminal result
+- emit feedback and optional outbox side effects
 
-Apply verified events to persona state.
-
-# PROCESS
-
-1 Verify event signature
-2 Validate event schema
-3 Confirm persona existence
-4 Apply event logic
-5 Write audit record
-
-# EVENT SOURCES
-
-civilization events
-internal persona events
-approved system operations
-
-# SAFETY RULES
-
-event application must be idempotent
-duplicate events must not corrupt state
-
+runtime_guards:
+- no apply before validation success
+- no duplicate truth mutation
+- no ambiguous partial success
+- no missing audit write on terminal path

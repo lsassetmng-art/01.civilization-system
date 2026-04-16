@@ -1,0 +1,26 @@
+# ============================================================
+# GAME OS CONSTITUTION
+# ============================================================
+
+status: draft-for-canonical-update
+system: game-os
+layer: constitution
+document_type: constitution
+owner: Boss
+prepared_by: Zero
+
+constitutional_principles:
+- player is the participation subject
+- Persona usage is optional
+- NPCs may use Persona
+- game truth, persona truth, and wallet truth must be separated
+- direct overwrite from GameOS to PersonaOS is forbidden
+- gambling with national currency is a high-control domain
+- auditability and safety are mandatory
+- multilingual support is a formal design premise
+- multi-currency support is a formal design premise
+
+constitutional_notes:
+- user-facing text must be managed in a multilingual-capable structure
+- monetary values must be handled as currency-aware structures, not bare amount only
+- display conversions and source monetary truth must remain separated

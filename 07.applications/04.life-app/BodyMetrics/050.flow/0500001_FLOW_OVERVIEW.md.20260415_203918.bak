@@ -1,0 +1,13 @@
+# ============================================================
+# FLOW OVERVIEW
+# ============================================================
+
+status: draft
+
+major_flows:
+  - quick daily recording
+  - provider link and sync
+  - average comparison review
+  - weekly review
+  - Family Care sharing
+  - export flow

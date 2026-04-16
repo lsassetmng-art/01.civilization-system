@@ -1,0 +1,10 @@
+# ============================================================
+# INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+layer: 110.infrastructure
+
+focus:
+  - multi-device assumptions
+  - sync assumptions
+  - platform behavior

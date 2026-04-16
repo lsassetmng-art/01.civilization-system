@@ -1,0 +1,171 @@
+# ============================================================
+# MONEY PLANNER SCREEN TO API COMPLETE BINDING CATALOG
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 120.implementation
+subdomain: api
+
+purpose:
+  - 全画面と API の対応を正本化する
+  - 初期表示 / 作成 / 更新 / 削除 / 補助取得を一元管理する
+  - UI 実装時の迷いを減らす
+
+screens:
+
+  MP-001_dashboard:
+    screen_name: dashboard
+    initial_load:
+      - GET /v1/money-planner/dashboard
+      - GET /v1/money-planner/alerts
+    optional_followups:
+      - GET /v1/money-planner/projections/monthly
+      - GET /v1/money-planner/projections/yearly
+    source_docs:
+      - 1200100006_MONEY_PLANNER_DASHBOARD_EXACT_PAYLOAD_RECONNECTED_TO_LOGICAL_VIEW.md
+      - 1200100013_MONEY_PLANNER_DASHBOARD_ALERT_API_EXACT_PAYLOAD_CANONICAL.md
+
+  MP-002_income_list:
+    screen_name: income_list
+    initial_load:
+      - GET /v1/money-planner/incomes
+    create:
+      - POST /v1/money-planner/incomes
+    update:
+      - PATCH /v1/money-planner/incomes/{income_id}
+    delete:
+      - DELETE /v1/money-planner/incomes/{income_id}
+
+  MP-003_expense_list:
+    screen_name: expense_list
+    initial_load:
+      - GET /v1/money-planner/expenses
+    create:
+      - POST /v1/money-planner/expenses
+    update:
+      - PATCH /v1/money-planner/expenses/{expense_id}
+    delete:
+      - DELETE /v1/money-planner/expenses/{expense_id}
+
+  MP-004_asset_list:
+    screen_name: asset_list
+    initial_load:
+      - GET /v1/money-planner/assets
+    create:
+      - POST /v1/money-planner/assets
+    update:
+      - PATCH /v1/money-planner/assets/{asset_id}
+    delete:
+      - DELETE /v1/money-planner/assets/{asset_id}
+
+  MP-005_liability_list:
+    screen_name: liability_list
+    initial_load:
+      - GET /v1/money-planner/liabilities
+    create:
+      - POST /v1/money-planner/liabilities
+    update:
+      - PATCH /v1/money-planner/liabilities/{liability_id}
+    delete:
+      - DELETE /v1/money-planner/liabilities/{liability_id}
+
+  MP-006_saving_goal_list:
+    screen_name: saving_goal_list
+    initial_load:
+      - GET /v1/money-planner/saving-goals
+    create:
+      - POST /v1/money-planner/saving-goals
+    update:
+      - PATCH /v1/money-planner/saving-goals/{goal_id}
+    delete:
+      - DELETE /v1/money-planner/saving-goals/{goal_id}
+
+  MP-007_event_budget_list:
+    screen_name: event_budget_list
+    initial_load:
+      - GET /v1/money-planner/event-budgets
+    create:
+      - POST /v1/money-planner/event-budgets
+    update:
+      - PATCH /v1/money-planner/event-budgets/{event_budget_id}
+    delete:
+      - DELETE /v1/money-planner/event-budgets/{event_budget_id}
+
+  MP-008_monthly_projection:
+    screen_name: monthly_projection
+    initial_load:
+      - GET /v1/money-planner/projections/monthly
+
+  MP-009_yearly_projection:
+    screen_name: yearly_projection
+    initial_load:
+      - GET /v1/money-planner/projections/yearly
+
+  MP-010_scenario_compare:
+    screen_name: scenario_compare
+    initial_load:
+      - GET /v1/money-planner/scenarios
+    create:
+      - POST /v1/money-planner/scenarios
+    compare:
+      - POST /v1/money-planner/scenarios/compare
+
+  MP-011_family_sharing:
+    screen_name: family_sharing
+    initial_load:
+      - GET /v1/money-planner/sharing/members
+    create:
+      - POST /v1/money-planner/sharing/members
+    update:
+      - PATCH /v1/money-planner/sharing/members/{shared_member_id}
+    delete:
+      - DELETE /v1/money-planner/sharing/members/{shared_member_id}
+    supplementary:
+      - GET /v1/money-planner/sharing/members/{shared_member_id}/visible-summary
+
+  MP-012_memo_list:
+    screen_name: memo_list
+    initial_load:
+      - GET /v1/money-planner/memos
+    create:
+      - POST /v1/money-planner/memos
+    update:
+      - PATCH /v1/money-planner/memos/{memo_id}
+    delete:
+      - DELETE /v1/money-planner/memos/{memo_id}
+
+  MP-013_alerts:
+    screen_name: alerts
+    initial_load:
+      - GET /v1/money-planner/alerts
+    update:
+      - PATCH /v1/money-planner/alerts/{alert_id}/acknowledge
+
+  MP-014_linkage_settings:
+    screen_name: linkage_settings
+    initial_load:
+      - GET /v1/money-planner/linkages
+    update:
+      - PATCH /v1/money-planner/linkages/{target_system}
+    execute:
+      - POST /v1/money-planner/linkages/share
+
+  MP-015_receive_candidate_review:
+    screen_name: receive_candidate_review
+    initial_load:
+      - GET /v1/money-planner/receive-candidates
+    detail:
+      - GET /v1/money-planner/receive-candidates/{candidate_registry_id}
+    update_status:
+      - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/status
+    update_visibility:
+      - PATCH /v1/money-planner/receive-candidates/{candidate_registry_id}/visibility
+    supplementary:
+      - GET /v1/money-planner/receive-candidates/{candidate_registry_id}/duplicate-reference
+
+binding_rules:
+  - 画面初期表示 API は screen open 時の最小集合とする
+  - 補助 summary は supplementary として分離できる
+  - role ごとの制御は API 側だけでなく UI 側でも隠す
+  - free / plus_family の plan 制御は screen 単位でも適用する

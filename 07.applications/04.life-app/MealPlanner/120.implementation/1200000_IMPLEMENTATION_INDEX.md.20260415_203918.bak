@@ -1,0 +1,11 @@
+# Implementation Index
+
+## purpose
+MealPlanner の実装境界、暫定実装方針を定義する
+
+## files
+- 1200001_IMPLEMENTATION_OVERVIEW.md
+
+## notes
+- この index は Implementation の入口である
+- 詳細は配下ドキュメントを参照する

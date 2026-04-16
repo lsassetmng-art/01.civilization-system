@@ -1,0 +1,19 @@
+# ============================================================
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+layer: 120.implementation
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1200001_BUSINESS_LEGAL_SUPPORT_IMPLEMENTATION_OVERVIEW.md
+  - 010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+  - 010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+  - 010.core/1200004_BUSINESS_LEGAL_SUPPORT_IMPLEMENTATION_PLAN.md
+  - 020.payload/1200200000_PAYLOAD_DESIGN_INDEX.md
+  - 030.phase-boundary/1200300000_PHASE_BOUNDARY_INDEX.md

@@ -1,0 +1,16 @@
+# Model Core Overview
+
+app: CareerLaunch
+layer: 030.model
+## Purpose
+life スキーマ前提の論理モデル、テーブル候補、DDL準備要件を定義する。
+
+## Coverage
+- エンティティ
+- 状態
+- 論理テーブル
+- 共有単位
+- 履歴
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。

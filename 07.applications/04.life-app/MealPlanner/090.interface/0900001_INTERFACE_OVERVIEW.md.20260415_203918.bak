@@ -1,0 +1,53 @@
+# Interface Overview
+
+## role
+MealPlanner の画面 / 操作 / 文言 / CSV / component 境界を定義する。
+
+## interface_summary
+- 日 / 週 / 月の3粒度を UI で扱う
+- free / paid の出し分けを行う
+- user_menu 作成と公開申請導線を持つ
+- CSV 出力導線を日 / 週 / 月に置く
+- component 分解済み
+- component props と event payload を固定済み
+
+## key_screens
+- dashboard_home
+- weekly_meal_planner
+- daily_meal_detail
+- monthly_meal_planner
+- menu_search_and_suggestion
+- pantry_inventory
+- shopping_list
+- goal_and_budget_settings
+- family_settings
+- template_library
+- favorite_menu_list
+- meal_history_log
+- user_menu_editor
+- user_menu_publish_status
+- notification_settings
+
+## ui_copy_summary
+- 家庭向け
+- 強すぎない
+- 医療判断を想起させない
+- 課金訴求は押しつけすぎない
+
+## csv_summary
+- UTF-8
+- 1食1行
+- standard columns fixed
+- optional columns fixed
+
+## component_summary
+- shared candidates inside app:
+  - plan_horizon_selector
+  - budget_tier_selector
+  - source_type_badge
+  - publication_status_badge
+  - csv_export_button
+  - free_limit_banner
+  - upgrade_teaser_card
+  - empty_state_card
+  - error_state_card

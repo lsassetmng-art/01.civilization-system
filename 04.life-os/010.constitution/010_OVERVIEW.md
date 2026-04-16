@@ -20,3 +20,7 @@ contents:
 - constitution principles
 - scope definition
 - boundary definition
+additive_core_updates:
+- platform support fixed as iphone / android / pc / tablet
+- multilingual support added as constitutional requirement
+- multi-currency support added for personal-finance-lite as constitutional requirement

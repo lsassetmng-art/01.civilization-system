@@ -1,15 +1,9 @@
-# ============================================================
 # PERSONA RUNTIME SESSION POLICY
-# ============================================================
 
-status: canonical
-layer: policy
-domain: runtime-hosting
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
 policy_rules:
-host applications are runtime consumers, not truth owners
-session disposal must be explicit
-stale session reuse must fail closed
+- runtime starts from released snapshot or package only
+- session state is ephemeral
+- terminal reason is mandatory
+- expired and terminated are distinct terminal states

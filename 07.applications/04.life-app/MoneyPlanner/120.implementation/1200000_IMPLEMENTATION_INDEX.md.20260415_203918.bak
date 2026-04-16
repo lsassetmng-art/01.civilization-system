@@ -1,0 +1,18 @@
+# ============================================================
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 120.implementation
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1200001_MONEY_PLANNER_IMPLEMENTATION_OVERVIEW.md
+  - 010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+  - 010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+  - 010.core/1200004_MONEY_PLANNER_IMPLEMENTATION_PLAN.md

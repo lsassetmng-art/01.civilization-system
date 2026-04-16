@@ -1,0 +1,16 @@
+# CX22073JW Policy Index
+- project: CX22073JW
+- folder: 080.policy
+- type: index
+- status: canonical-draft
+- owner: Boss
+- prepared_by: Zero
+
+## Documents
+- `000_OVERVIEW.md`
+- `001_INDEX.md`
+- `010_CX22073JW_BOUNDARY_AND_DATA_POLICY.md`
+- `020_CAREERLAUNCH_DATA_PLACEMENT_POLICY.md`
+- `030_CX22073JW_RUNTIME_BOUNDARY_MATRIX.md`
+- `040_CX22073JW_TRIPLE_SECRET_ACCESS_POLICY.md`
+- `050_CX22073JW_SECRET_LAYER_ISOLATION_POLICY.md`

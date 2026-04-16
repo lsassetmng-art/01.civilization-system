@@ -1,0 +1,48 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# FINAL HANDOFF OVERVIEW
+# ============================================================
+
+status: fixed
+
+handoff_intent:
+  - BodyMetrics の設計状態を一目で把握できるようにする
+  - 実装前レビュー、引き継ぎ、将来差分管理の基点にする
+
+current_state:
+  design_state: implementation_ready
+  implementation_started: false
+  unresolved_items_remaining: none
+
+what_is_fixed:
+  - scope
+  - billing
+  - schema
+  - data architecture
+  - scoring
+  - reference policy
+  - Family Care policy
+  - API payloads
+  - UI display
+  - privacy and permission
+  - readiness gate
+
+what_is_next:
+  - 実装するなら、この設計を起点に着手用出力を作る
+  - 変更するなら、change request 方式で差分管理する
+
+reader_note:
+  - まず 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md を読む
+  - 次に 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md を読む
+  - その後 0000003_BODYMETRICS_READING_ORDER.md に従う

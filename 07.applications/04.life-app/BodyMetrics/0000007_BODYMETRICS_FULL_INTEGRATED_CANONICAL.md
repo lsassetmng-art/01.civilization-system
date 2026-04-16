@@ -1,0 +1,5559 @@
+# ============================================================
+# BODYMETRICS FULL INTEGRATED CANONICAL
+# ============================================================
+
+status: generated-integrated
+base_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/BodyMetrics
+source_count: 95
+source_ledger: 900.meta/9000007_FULL_INTEGRATED_CANONICAL_SOURCE_LEDGER.md
+
+integration_policy:
+  - BodyMetrics 配下の Markdown を統合した俯瞰用文書である
+  - 既存 source は削除しない
+  - 実装はまだ行っていない
+  - 設計完了 / 実装準備完了状態の統合ビューとして扱う
+
+reading_start:
+  - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+  - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+
+============================================================
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+SOURCE DOCUMENTS
+============================================================
+- 0000000_BODYMETRICS_SYSTEM_INDEX.md
+- 0000001_BODYMETRICS_SYSTEM_OVERVIEW.md
+- 0000002_BODYMETRICS_IMPLEMENTATION_READY_SUMMARY.md
+- 0000003_BODYMETRICS_READING_ORDER.md
+- 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+- 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+- 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+- 010.constitution/0100000_CONSTITUTION_INDEX.md
+- 010.constitution/0100001_CONSTITUTION_OVERVIEW.md
+- 010.constitution/0100002_BODYMETRICS_CONSTITUTION_CANONICAL.md
+- 010.constitution/0100003_BOUNDARY_AND_NON_GOALS.md
+- 010.constitution/0100004_BILLING_AND_SUPPORT_POLICY.md
+- 010.constitution/0100005_FIXED_DECISIONS_CANONICAL.md
+- 020.architecture/010.core/0200100000_CORE_ARCHITECTURE_INDEX.md
+- 020.architecture/010.core/0200100001_CORE_ARCHITECTURE_OVERVIEW.md
+- 020.architecture/010.core/0200100002_BODYMETRICS_CORE_ARCHITECTURE.md
+- 020.architecture/020.domain/0200200000_DOMAIN_ARCHITECTURE_INDEX.md
+- 020.architecture/020.domain/0200200001_DOMAIN_ARCHITECTURE_OVERVIEW.md
+- 020.architecture/020.domain/0200200002_HEALTH_DOMAIN_ARCHITECTURE.md
+- 020.architecture/0200000_ARCHITECTURE_INDEX.md
+- 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md
+- 020.architecture/030.components/0200300000_COMPONENT_ARCHITECTURE_INDEX.md
+- 020.architecture/030.components/0200300001_COMPONENT_ARCHITECTURE_OVERVIEW.md
+- 020.architecture/030.components/0200300002_COMPONENT_INTERACTION_ARCHITECTURE.md
+- 030.model/0300000_MODEL_INDEX.md
+- 030.model/0300001_MODEL_OVERVIEW.md
+- 030.model/0300002_ENTITY_MODEL_CANONICAL.md
+- 030.model/0300003_REFERENCE_RANGE_AND_SCORE_MODEL.md
+- 030.model/0300004_SCHEMA_BOUNDARY_AND_STORAGE_POLICY.md
+- 030.model/0300005_LIFE_SCHEMA_TABLE_INVENTORY.md
+- 030.model/0300006_LIFE_SCHEMA_EXACT_TABLE_INVENTORY.md
+- 030.model/0300007_LIFE_SCHEMA_EXACT_COLUMNS_AND_TYPES.md
+- 030.model/0300008_FIXED_DATA_ARCHITECTURE_DECISIONS.md
+- 030.model/0300009_MASTER_CODE_AND_CONTRACT_CANONICAL.md
+- 040.runtime/0400000_RUNTIME_INDEX.md
+- 040.runtime/0400001_RUNTIME_OVERVIEW.md
+- 040.runtime/0400002_RECORDING_AND_SYNC_RUNTIME.md
+- 040.runtime/0400003_ALERT_AND_SCORING_RUNTIME.md
+- 050.flow/0500000_FLOW_INDEX.md
+- 050.flow/0500001_FLOW_OVERVIEW.md
+- 050.flow/0500002_PRIMARY_USER_FLOWS.md
+- 050.flow/0500003_FAMILY_CARE_AND_EXPORT_FLOWS.md
+- 050.flow/0500004_SCREEN_FLOW_AND_ACTION_PRIORITY_FIXED.md
+- 060.integration/0600000_INTEGRATION_INDEX.md
+- 060.integration/0600001_INTEGRATION_OVERVIEW.md
+- 060.integration/0600002_LIFEOS_INTEGRATION.md
+- 060.integration/0600003_EXTERNAL_HEALTH_PROVIDER_INTEGRATION.md
+- 060.integration/0600004_KNOWLEDGE_AND_RUNTIME_STORAGE_BOUNDARY.md
+- 060.integration/0600005_API_BOUNDARY_AND_ENDPOINT_CANONICAL.md
+- 060.integration/0600006_DB_API_UI_CONSISTENCY_MATRIX.md
+- 070.operations/0700000_OPERATIONS_INDEX.md
+- 070.operations/0700001_OPERATIONS_OVERVIEW.md
+- 070.operations/0700002_SUPPORT_AND_MONITORING_OPERATIONS.md
+- 080.policy/0800000_POLICY_INDEX.md
+- 080.policy/0800001_POLICY_OVERVIEW.md
+- 080.policy/0800002_DATA_AND_SHARING_POLICY.md
+- 080.policy/0800003_REFERENCE_VALUE_AND_HEALTH_SCORE_POLICY.md
+- 080.policy/0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md
+- 090.interface/0900000_INTERFACE_INDEX.md
+- 090.interface/0900001_INTERFACE_OVERVIEW.md
+- 090.interface/0900002_SCREEN_MAP_AND_DASHBOARD_INTERFACE.md
+- 090.interface/0900003_GRAPH_AND_EXPLANATION_INTERFACE.md
+- 090.interface/0900004_FIXED_INTERFACE_AND_ANALYSIS_POLICY.md
+- 090.interface/0900005_API_EXACT_PAYLOAD_AND_SCREEN_MAPPING.md
+- 090.interface/0900006_SCREEN_EXACT_DISPLAY_FIXED_PACK.md
+- 100.security/1000000_SECURITY_INDEX.md
+- 100.security/1000001_SECURITY_OVERVIEW.md
+- 100.security/1000002_HEALTH_DATA_SECURITY_ARCHITECTURE.md
+- 100.security/1000003_PRIVACY_AUDIT_PERMISSION_GATE.md
+- 110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+- 110.infrastructure/1100001_INFRASTRUCTURE_OVERVIEW.md
+- 110.infrastructure/1100002_STORAGE_AND_SYNC_INFRASTRUCTURE.md
+- 120.implementation/1200000_IMPLEMENTATION_INDEX.md
+- 120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
+- 120.implementation/1200002_PHASE_PLAN_AND_READINESS.md
+- 120.implementation/1200003_OPEN_DECISIONS_AND_FIXED_RULES.md
+- 120.implementation/1200004_LIFE_SCHEMA_IMPLEMENTATION_PREP.md
+- 120.implementation/1200005_DB_EXACT_INVENTORY_AND_SQL_PREP.md
+- 120.implementation/1200006_DB_COLUMN_TYPE_PREPARATION.md
+- 120.implementation/1200007_FIXED_DECISIONS_REFLECTION_PACK.md
+- 120.implementation/1200008_API_REQUEST_RESPONSE_EXACT_PAYLOAD_FIXED_PACK.md
+- 120.implementation/1200009_UI_EXACT_DISPLAY_REFLECTION_PACK.md
+- 120.implementation/1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+- 120.implementation/1200011_IMPLEMENTATION_PREP_COMPLETION_DECLARATION.md
+- 130.development/1300000_DEVELOPMENT_INDEX.md
+- 130.development/1300001_DEVELOPMENT_OVERVIEW.md
+- 130.development/1300002_TEST_AND_RELEASE_PREPARATION.md
+- 130.development/1300003_TEST_READINESS_ACCEPTANCE_GATE.md
+- 900.meta/9000000_META_INDEX.md
+- 900.meta/9000001_META_OVERVIEW.md
+- 900.meta/9000002_DOCUMENT_MAP_AND_HANDOFF.md
+- 900.meta/9000003_CHANGE_REQUEST_POLICY.md
+- 900.meta/9000004_FINAL_HANDOFF_CHECKLIST.md
+- 900.meta/9000005_FINAL_HANDOFF_OVERVIEW.md
+- 900.meta/9000006_INTEGRATED_REGENERATION_NOTE.md
+
+============================================================
+INTEGRATED BODY
+============================================================
+
+
+
+---
+
+# SOURCE: 0000000_BODYMETRICS_SYSTEM_INDEX.md
+
+# ============================================================
+# BODYMETRICS SYSTEM INDEX
+# ============================================================
+
+status: draft
+system_name:
+  en: BodyMetrics
+  ja: 基礎情報測定アプリ
+
+path:
+  - 01.civilization-system
+  - 07.applications
+  - 04.life-app
+  - BodyMetrics
+
+layer_scope:
+  - 010.constitution
+  - 020.architecture
+  - 030.model
+  - 040.runtime
+  - 050.flow
+  - 060.integration
+  - 070.operations
+  - 080.policy
+  - 090.interface
+  - 100.security
+  - 110.infrastructure
+  - 120.implementation
+  - 130.development
+  - 900.meta
+
+fixed_decisions:
+  - 個人利用コアは無料
+  - Family Care は月額300円
+  - サポートはAIチャットのみ
+  - 診断・治療方針決定は行わない
+  - 平均比較グラフを正式搭載する
+  - 健康スコアを正式搭載する
+  - 参考値は reference として扱う
+  - 共通部品採否は別チャット扱いとする
+integrated_entrypoints:
+  - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+  - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+
+
+
+
+---
+
+# SOURCE: 0000001_BODYMETRICS_SYSTEM_OVERVIEW.md
+
+# ============================================================
+# BODYMETRICS SYSTEM OVERVIEW
+# ============================================================
+
+status: draft
+domain:
+  os: LifeOS
+  category: 健康領域
+
+summary:
+  - BodyMetrics は、日々の身体データ記録・可視化・傾向把握に特化した健康支援アプリである。
+  - スマートウォッチや外部アプリ連携を前提とするが、未連携時は手入力で完結できる。
+  - 本アプリは医療診断ではなく、記録・比較・振り返り・生活改善支援を主目的とする。
+  - 個人利用の主要価値は無料で提供し、家族見守り共有のみ Family Care として課金する。
+
+main_capabilities:
+  - 体重、血圧、血中酸素濃度、歩数、心拍、睡眠の記録
+  - 日次/週次/月次グラフ
+  - 7日平均/30日平均との比較
+  - 参考範囲との比較表示
+  - 健康スコア表示
+  - 週次ふりかえり
+  - PDF/CSV出力
+  - 家族共有（Family Care）
+
+boundaries:
+  - 診断しない
+  - 治療方針を決めない
+  - 緊急医療判断をしない
+  - 不安煽り通知をしない
+integrated_reading_start:
+  - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+  - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+
+
+
+
+---
+
+# SOURCE: 0000002_BODYMETRICS_IMPLEMENTATION_READY_SUMMARY.md
+
+# ============================================================
+# BODYMETRICS IMPLEMENTATION READY SUMMARY
+# ============================================================
+
+status: fixed
+
+summary:
+  - BodyMetrics は設計上、実装準備完了まで到達している
+  - 実装はまだ開始していない
+  - 未決事項は残っていない
+  - 以後の変更は change request として扱う
+
+fixed_core:
+  - runtime schema = life
+  - fixed knowledge side = CX22073
+  - personal core free
+  - Family Care monthly 300 JPY
+  - support = AI chat only
+  - no diagnosis
+  - no treatment decision
+  - average comparison included
+  - health score included
+  - reference range included
+  - Family Care recipient limit = 5
+
+fixed_design_surface:
+  - DB structure fixed
+  - API request / response exact payload fixed
+  - UI exact display fixed
+  - DB / API / UI consistency fixed
+  - privacy / audit / permission gate fixed
+  - master code contract fixed
+  - test readiness gate fixed
+
+not_started:
+  - SQL writing
+  - API implementation
+  - UI implementation
+  - provider SDK implementation
+  - connector implementation
+
+
+
+
+---
+
+# SOURCE: 0000003_BODYMETRICS_READING_ORDER.md
+
+# ============================================================
+# BODYMETRICS READING ORDER
+# ============================================================
+
+status: fixed
+
+purpose:
+  - BodyMetrics 設計書をどの順で読めばよいかを固定する
+  - 実装前レビュー時の読順を明確化する
+
+recommended_reading_order:
+
+  phase_1_identity_and_scope:
+    - 0000000_BODYMETRICS_SYSTEM_INDEX.md
+    - 0000001_BODYMETRICS_SYSTEM_OVERVIEW.md
+    - 0000002_BODYMETRICS_IMPLEMENTATION_READY_SUMMARY.md
+    - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+    - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+    - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+    - 010.constitution/0100002_BODYMETRICS_CONSTITUTION_CANONICAL.md
+    - 010.constitution/0100005_FIXED_DECISIONS_CANONICAL.md
+
+  phase_2_data_architecture:
+    - 030.model/0300004_SCHEMA_BOUNDARY_AND_STORAGE_POLICY.md
+    - 030.model/0300005_LIFE_SCHEMA_TABLE_INVENTORY.md
+    - 030.model/0300006_LIFE_SCHEMA_EXACT_TABLE_INVENTORY.md
+    - 030.model/0300007_LIFE_SCHEMA_EXACT_COLUMNS_AND_TYPES.md
+    - 030.model/0300008_FIXED_DATA_ARCHITECTURE_DECISIONS.md
+    - 030.model/0300009_MASTER_CODE_AND_CONTRACT_CANONICAL.md
+
+  phase_3_policy_and_boundary:
+    - 080.policy/0800002_DATA_AND_SHARING_POLICY.md
+    - 080.policy/0800003_REFERENCE_VALUE_AND_HEALTH_SCORE_POLICY.md
+    - 080.policy/0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md
+    - 100.security/1000003_PRIVACY_AUDIT_PERMISSION_GATE.md
+
+  phase_4_api_and_ui:
+    - 060.integration/0600005_API_BOUNDARY_AND_ENDPOINT_CANONICAL.md
+    - 060.integration/0600006_DB_API_UI_CONSISTENCY_MATRIX.md
+    - 090.interface/0900005_API_EXACT_PAYLOAD_AND_SCREEN_MAPPING.md
+    - 090.interface/0900006_SCREEN_EXACT_DISPLAY_FIXED_PACK.md
+    - 050.flow/0500004_SCREEN_FLOW_AND_ACTION_PRIORITY_FIXED.md
+
+  phase_5_readiness_and_handoff:
+    - 120.implementation/1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+    - 120.implementation/1200011_IMPLEMENTATION_PREP_COMPLETION_DECLARATION.md
+    - 130.development/1300003_TEST_READINESS_ACCEPTANCE_GATE.md
+    - 900.meta/9000003_CHANGE_REQUEST_POLICY.md
+    - 900.meta/9000004_FINAL_HANDOFF_CHECKLIST.md
+    - 900.meta/9000005_FINAL_HANDOFF_OVERVIEW.md
+    - 900.meta/9000006_INTEGRATED_REGENERATION_NOTE.md
+
+review_shortcut:
+  fastest_path:
+    - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+    - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+    - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+    - 010.constitution/0100005_FIXED_DECISIONS_CANONICAL.md
+    - 030.model/0300008_FIXED_DATA_ARCHITECTURE_DECISIONS.md
+    - 080.policy/0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md
+    - 120.implementation/1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+
+integrated_shortcut_first:
+  - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+  - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+
+
+
+
+---
+
+# SOURCE: 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+
+# ============================================================
+# BODYMETRICS INTEGRATED CANONICAL
+# ============================================================
+
+status: fixed-canonical
+prepared_by: Zero
+owner: Boss
+
+app_identity:
+  app_name:
+    en: BodyMetrics
+    ja: 基礎情報測定アプリ
+  domain:
+    os: LifeOS
+    category: 健康領域
+
+positioning:
+  - 日々の身体データ記録・可視化・比較・振り返りに特化した健康支援アプリ
+  - スマートウォッチ / 外部アプリ連携前提だが、未連携時も手入力で完結できる
+  - 医療診断ではなく、記録・傾向把握・生活改善支援を主目的とする
+  - LifeOS 内の MealPlanner / TrainingCoach / LifePlanner と接続する健康記録ハブ
+
+fixed_boundaries:
+  - 診断しない
+  - 治療方針を決めない
+  - 緊急医療判断をしない
+  - 医療断定表現をしない
+  - 共通部品採否は別チャット扱いとする
+
+pricing_and_support:
+  free:
+    monthly_jpy: 0
+    scope:
+      - 個人利用コア
+      - 記録
+      - グラフ
+      - 平均比較
+      - 健康スコア
+      - 週次ふりかえり
+      - PDF/CSV出力
+  family_care:
+    monthly_jpy: 300
+    scope:
+      - 家族見守り共有
+      - 項目単位共有
+      - 期間単位共有
+      - 共有先別サマリ
+  support_policy:
+    type: ai-chat-only
+    no_human_support: true
+
+runtime_and_knowledge_boundary:
+  runtime_schema:
+    name: life
+  fixed_knowledge_side:
+    name: CX22073
+  runtime_data_examples:
+    - biometric_record
+    - blood_pressure_record
+    - sleep_record
+    - activity_record
+    - manual_note
+    - health_goal
+    - device_link
+    - health_score_snapshot
+    - average_comparison_snapshot
+    - data_share_setting
+    - export_job
+  fixed_knowledge_examples:
+    - health_reference_range_master
+    - health_measurement_condition_master
+    - health_metric_semantics_master
+    - health_reference_source_master
+    - health_score_rule_master
+
+core_features:
+  - 体重記録
+  - 血圧記録
+  - 血中酸素濃度記録
+  - 歩数記録
+  - 睡眠記録
+  - 心拍記録
+  - 日次 / 週次 / 月次グラフ
+  - personal 7day / 30day average 比較
+  - reference range band 表示
+  - 健康スコア表示
+  - 週次ふりかえり
+  - Family Care
+  - PDF / CSV 出力
+
+fixed_data_architecture:
+  biometric_record:
+    role: ユーザー記録の正本
+  biometric_record_raw:
+    role: 外部連携元データ追跡
+  biometric_record_normalized:
+    role: 分析・グラフ用正規化データ
+  average_comparison_snapshot:
+    role: 平均比較結果保持
+    policy: persist_snapshot
+  health_score_snapshot:
+    role: 健康スコア結果保持
+    policy: persist_snapshot
+  health_score_component_snapshot:
+    role: 健康スコア内訳保持
+
+time_series_policy:
+  local_first_vs_cloud_first:
+    fixed: local-first-with-sync
+  sleep_date_attribution:
+    fixed: wake_date_default
+  blood_pressure_timing_code:
+    fixed:
+      - morning
+      - night
+      - other
+  missing_days_policy:
+    fixed: no_imputation
+
+conflict_resolution:
+  fixed: manual_priority_then_source_priority
+  order:
+    - manual
+    - apple_health
+    - health_connect
+    - smartwatch_vendor
+
+reference_and_score_policy:
+  reference_range:
+    initial_release: included
+    wording:
+      - reference range
+      - 参考範囲
+    external_population_average:
+      initial_release: excluded
+  health_score:
+    name:
+      ja: 健康スコア
+      en: Health Score
+    interpretation:
+      ja: 生活傾向スコア
+      en: Lifestyle Tendency Score
+    range: 0_to_100
+    refresh_policy: daily_snapshot_weekly_emphasis
+    components_and_weights:
+      sleep_balance: 0.25
+      activity_balance: 0.20
+      weight_trend_balance: 0.20
+      blood_pressure_stability: 0.20
+      record_continuity: 0.15
+    missing_component_policy: reweight_available_components
+
+family_care_policy:
+  recipient_limit: 5
+  defaults:
+    initial_non_shared: true
+    note_share_flag: false
+    export_permission_flag: false
+    summary_only_flag: false
+  shareable_metrics:
+    - weight
+    - blood_pressure
+    - sleep
+    - steps
+    - summary_only
+  permission_model:
+    export_permission: separated_from_view_permission
+
+api_surface:
+  canonical_endpoints:
+    - POST /life/bodymetrics/records/metric
+    - POST /life/bodymetrics/records/blood-pressure
+    - POST /life/bodymetrics/records/sleep
+    - POST /life/bodymetrics/records/activity
+    - GET  /life/bodymetrics/dashboard
+    - GET  /life/bodymetrics/trends/{metric_type}
+    - GET  /life/bodymetrics/health-score
+    - GET  /life/bodymetrics/reviews/weekly
+    - POST /life/bodymetrics/goals
+    - POST /life/bodymetrics/providers/connect
+    - GET  /life/bodymetrics/family-care/share-settings
+    - POST /life/bodymetrics/family-care/share-settings
+    - POST /life/bodymetrics/exports
+
+ui_surface:
+  main_screens:
+    - dashboard_home
+    - quick_record
+    - metric_detail
+    - trend_analysis
+    - health_score_center
+    - weekly_review
+    - goal_center
+    - provider_link_settings
+    - family_care_settings
+    - export_center
+  pc_tablet_layout:
+    fixed: three_zone_layout
+
+security_and_permission:
+  privacy_posture:
+    - 健康データは高機微情報として扱う
+    - 初期共有状態は非共有
+    - provider credential detail をUI表示しない
+  audit_targets:
+    - data_share_setting change
+    - export_job creation
+    - correction_record creation
+    - provider link state change
+
+design_state:
+  unresolved_items_remaining: none
+  implementation_started: false
+  readiness: implementation_ready
+
+
+
+
+---
+
+# SOURCE: 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+
+# ============================================================
+# BODYMETRICS IMPLEMENTATION READY INTEGRATED
+# ============================================================
+
+status: fixed
+
+purpose:
+  - BodyMetrics の実装準備完了状態を1枚で読めるようにする
+  - DB / API / UI / 権限 / テストの最終整合をまとめる
+
+implementation_readiness_summary:
+  fixed:
+    - app scope fixed
+    - billing fixed
+    - runtime schema fixed
+    - fixed knowledge boundary fixed
+    - unresolved items closed
+    - DB structure fixed
+    - API exact payload fixed
+    - UI exact display fixed
+    - Family Care permission model fixed
+    - privacy / audit gates fixed
+    - code contracts fixed
+    - test readiness gate fixed
+  not_started:
+    - SQL writing
+    - API implementation
+    - UI implementation
+    - provider SDK implementation
+    - connector implementation
+
+db_api_ui_consistency_summary:
+  weight_recording:
+    db:
+      - life.biometric_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/metric
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.latest_weight_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+
+  blood_pressure_recording:
+    db:
+      - life.blood_pressure_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/blood-pressure
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.latest_blood_pressure_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+
+  sleep_recording:
+    db:
+      - life.sleep_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/sleep
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.sleep_last_night_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+      - weekly_review
+
+  activity_recording:
+    db:
+      - life.activity_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/activity
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.steps_today_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+      - weekly_review
+
+  health_score:
+    db:
+      - life.health_score_snapshot
+      - life.health_score_component_snapshot
+    api:
+      - GET /life/bodymetrics/health-score
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/reviews/weekly
+    ui:
+      - dashboard_home.health_score_summary_card
+      - health_score_center
+      - weekly_review
+
+  family_care:
+    db:
+      - life.data_share_setting
+    api:
+      - GET /life/bodymetrics/family-care/share-settings
+      - POST /life/bodymetrics/family-care/share-settings
+    ui:
+      - family_care_settings
+
+  export:
+    db:
+      - life.export_job
+    api:
+      - POST /life/bodymetrics/exports
+    ui:
+      - export_center
+
+code_contract_summary:
+  metric_type:
+    - weight
+    - heart_rate
+    - blood_oxygen
+    - body_temperature
+    - body_fat_percentage
+    - blood_pressure
+    - sleep_duration
+    - steps
+  source_type:
+    - manual
+    - apple_health
+    - health_connect
+    - smartwatch_vendor
+  provider_type:
+    - apple_health
+    - health_connect
+    - fitbit
+    - garmin
+    - samsung
+  goal_type:
+    - target_weight
+    - step_target
+    - sleep_target
+    - blood_pressure_range
+
+permission_summary:
+  owner:
+    - full self data view
+    - edit self data
+    - create export
+    - manage family care
+  recipient:
+    - only shared scope view
+  recipient_denied:
+    - unshared metric view
+    - private note view unless explicitly allowed
+    - export unless export_permission_flag = true
+
+release_blockers:
+  - Family Care scope leak
+  - private note leak
+  - unauthorized export generation
+  - provider credential exposure
+  - medical diagnosis wording
+
+
+
+
+---
+
+# SOURCE: 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+
+# ============================================================
+# BODYMETRICS ENTRYPOINTS AND AUDIT GUIDE
+# ============================================================
+
+status: fixed
+
+purpose:
+  - BodyMetrics 設計束の入口を明確化する
+  - 統合版を最短読順の起点として固定する
+  - 総点検時の確認対象をまとめる
+
+entrypoints:
+  first_read:
+    - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+    - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  second_read:
+    - 0000003_BODYMETRICS_READING_ORDER.md
+  canonical_root:
+    - 0000000_BODYMETRICS_SYSTEM_INDEX.md
+    - 0000001_BODYMETRICS_SYSTEM_OVERVIEW.md
+  fixed_decision_root:
+    - 010.constitution/0100005_FIXED_DECISIONS_CANONICAL.md
+    - 030.model/0300008_FIXED_DATA_ARCHITECTURE_DECISIONS.md
+    - 080.policy/0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md
+    - 120.implementation/1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+    - 120.implementation/1200011_IMPLEMENTATION_PREP_COMPLETION_DECLARATION.md
+
+audit_focus:
+  - integrated canonical が存在するか
+  - implementation ready integrated が存在するか
+  - reading order が統合版を指しているか
+  - meta index が統合版監査ノートを持つか
+  - constitution / model / policy / implementation の fixed canonical が存在するか
+  - 未決事項が再流入していないか
+  - 実装開始扱いの文言が混入していないか
+
+reader_note:
+  - まず統合版2本を読む
+  - 次に reading order に従って詳細文書へ降りる
+  - 変更は change request 方式で扱う
+
+
+
+
+---
+
+# SOURCE: 010.constitution/0100000_CONSTITUTION_INDEX.md
+
+# ============================================================
+# CONSTITUTION INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0100001_CONSTITUTION_OVERVIEW.md
+  - 0100002_BODYMETRICS_CONSTITUTION_CANONICAL.md
+  - 0100003_BOUNDARY_AND_NON_GOALS.md
+  - 0100004_BILLING_AND_SUPPORT_POLICY.md
+  - 0100005_FIXED_DECISIONS_CANONICAL.md
+
+
+
+
+---
+
+# SOURCE: 010.constitution/0100001_CONSTITUTION_OVERVIEW.md
+
+# ============================================================
+# CONSTITUTION OVERVIEW
+# ============================================================
+
+status: draft
+
+constitutional_intent:
+  - 健康記録を継続しやすくする
+  - 数値変化を見える化する
+  - 個人平均との差分を理解しやすくする
+  - 参考範囲を慎重に表示する
+  - 医療判断を越境しない
+  - 個人利用価値を無料で開放する
+
+
+
+
+---
+
+# SOURCE: 010.constitution/0100002_BODYMETRICS_CONSTITUTION_CANONICAL.md
+
+# ============================================================
+# BODYMETRICS CONSTITUTION CANONICAL
+# ============================================================
+
+status: draft-canonical
+
+mission:
+  - BodyMetrics は、日々の身体状態を記録・理解・振り返るための生活支援アプリである。
+
+must_preserve_principles:
+  - 手入力を必ず残す
+  - 平均比較を第一級機能として扱う
+  - 健康スコアは生活傾向スコアとして扱う
+  - reference 値は参考情報として明示する
+  - 家族共有は opt-in とする
+  - 個人利用コアは無料
+  - Family Care のみ有料
+  - サポートはAIチャットのみ
+
+
+
+
+---
+
+# SOURCE: 010.constitution/0100003_BOUNDARY_AND_NON_GOALS.md
+
+# ============================================================
+# BOUNDARY AND NON-GOALS
+# ============================================================
+
+status: draft
+
+in_scope:
+  - 身体指標の記録
+  - 傾向可視化
+  - 平均比較
+  - 参考範囲比較
+  - 健康スコア
+  - 週次ふりかえり
+  - 家族共有
+
+out_of_scope:
+  - 病名推定
+  - 治療提案
+  - 緊急度判定
+  - 医療機器認証前提の精度保証
+
+boundary_statement:
+  - 数値が高低を示しても、本アプリは診断せず、再計測やメモ、専門家相談の検討を促す範囲に留める。
+
+
+
+
+---
+
+# SOURCE: 010.constitution/0100004_BILLING_AND_SUPPORT_POLICY.md
+
+# ============================================================
+# BILLING AND SUPPORT POLICY
+# ============================================================
+
+status: fixed
+
+plans:
+  free:
+    monthly_jpy: 0
+    scope:
+      - 個人記録
+      - 基本グラフ
+      - 平均比較
+      - 参考範囲比較
+      - 健康スコア
+      - 週次ふりかえり
+      - PDF/CSV出力
+  family_care:
+    monthly_jpy: 300
+    scope:
+      - 家族見守り共有
+      - 項目単位共有
+      - 期間単位共有
+      - 共有先別サマリ
+
+support_policy:
+  channel: ai-chat-only
+  included_in_all_plans: true
+  no_human_support: true
+
+support_scope:
+  - 使い方案内
+  - 設定案内
+  - 連携再試行案内
+  - 出力案内
+
+support_out_of_scope:
+  - 医療相談
+  - 診断
+  - 治療方針相談
+
+
+
+
+---
+
+# SOURCE: 010.constitution/0100005_FIXED_DECISIONS_CANONICAL.md
+
+# ============================================================
+# FIXED DECISIONS CANONICAL
+# ============================================================
+
+status: fixed-canonical
+
+fixed_identity:
+  app_name:
+    en: BodyMetrics
+    ja: 基礎情報測定アプリ
+  runtime_schema: life
+  support_policy: ai-chat-only
+
+fixed_billing:
+  free:
+    monthly_jpy: 0
+  family_care:
+    monthly_jpy: 300
+
+fixed_boundaries:
+  - 診断しない
+  - 治療方針を決めない
+  - 緊急医療判断をしない
+  - 医療断定表現をしない
+
+fixed_core_features:
+  - 平均比較グラフあり
+  - 健康スコアあり
+  - Family Care 共有あり
+  - reference range 表示あり
+  - 個人利用コア無料
+  - 家族見守り共有のみ課金
+
+fixed_design_handling:
+  - 共通部品採否は別チャット扱い
+  - 以後の変更は change request 扱いとする
+
+
+
+
+---
+
+# SOURCE: 020.architecture/010.core/0200100000_CORE_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# CORE ARCHITECTURE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0200100001_CORE_ARCHITECTURE_OVERVIEW.md
+  - 0200100002_BODYMETRICS_CORE_ARCHITECTURE.md
+
+
+
+
+---
+
+# SOURCE: 020.architecture/010.core/0200100001_CORE_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# CORE ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+core_modules:
+  - manual_record_capture
+  - provider_import_capture
+  - metric_normalization
+  - trend_analysis
+  - reference_comparison
+  - health_score
+  - sharing_control
+  - export_service
+
+
+
+
+---
+
+# SOURCE: 020.architecture/010.core/0200100002_BODYMETRICS_CORE_ARCHITECTURE.md
+
+# ============================================================
+# BODYMETRICS CORE ARCHITECTURE
+# ============================================================
+
+status: draft
+
+core_path:
+  - manual または provider から raw record を受け取る
+  - metric_type / unit / measured_at / source を正規化する
+  - raw と normalized を別保持する
+  - 平均、差分、score snapshot を派生生成する
+  - dashboard / graph / weekly review / export に供給する
+  - family sharing は最終表示段階で scope 制御する
+
+separation_rules:
+  - raw payload と normalized record は分ける
+  - reference 知識と user runtime data は分ける
+  - score policy と score snapshot は分ける
+
+
+
+
+---
+
+# SOURCE: 020.architecture/020.domain/0200200000_DOMAIN_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# DOMAIN ARCHITECTURE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0200200001_DOMAIN_ARCHITECTURE_OVERVIEW.md
+  - 0200200002_HEALTH_DOMAIN_ARCHITECTURE.md
+
+
+
+
+---
+
+# SOURCE: 020.architecture/020.domain/0200200001_DOMAIN_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# DOMAIN ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+domain_split:
+  - record_domain
+  - sleep_domain
+  - blood_pressure_domain
+  - reference_domain
+  - score_domain
+  - sharing_domain
+  - export_domain
+
+
+
+
+---
+
+# SOURCE: 020.architecture/020.domain/0200200002_HEALTH_DOMAIN_ARCHITECTURE.md
+
+# ============================================================
+# HEALTH DOMAIN ARCHITECTURE
+# ============================================================
+
+status: draft
+
+record_domain:
+  - biometric_record
+  - activity_record
+  - sleep_record
+  - manual_note
+
+interpretation_domain:
+  - personal_average
+  - reference_range
+  - reference_average_optional
+  - health_score
+
+sharing_domain:
+  - family_care_share
+  - recipient_scope
+  - export_permission
+
+
+
+
+---
+
+# SOURCE: 020.architecture/0200000_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# ARCHITECTURE INDEX
+# ============================================================
+
+status: draft
+subfolders:
+  - 010.core
+  - 020.domain
+  - 030.components
+
+contents:
+  - 0200001_ARCHITECTURE_OVERVIEW.md
+
+
+
+
+---
+
+# SOURCE: 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+high_level_architecture:
+  - 記録取得層
+  - 正規化層
+  - 比較・解釈層
+  - 表示層
+  - 共有・出力層
+  - ガバナンス層
+
+key_decisions:
+  - iOS 主要窓口は Apple Health / HealthKit
+  - Android 主要窓口は Health Connect
+  - 生データと正規化データを分離する
+  - 健康スコアは説明可能性を持つ
+
+
+
+
+---
+
+# SOURCE: 020.architecture/030.components/0200300000_COMPONENT_ARCHITECTURE_INDEX.md
+
+# ============================================================
+# COMPONENT ARCHITECTURE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0200300001_COMPONENT_ARCHITECTURE_OVERVIEW.md
+  - 0200300002_COMPONENT_INTERACTION_ARCHITECTURE.md
+
+
+
+
+---
+
+# SOURCE: 020.architecture/030.components/0200300001_COMPONENT_ARCHITECTURE_OVERVIEW.md
+
+# ============================================================
+# COMPONENT ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+major_components:
+  - record_input_component
+  - provider_link_component
+  - trend_graph_component
+  - average_comparison_component
+  - health_score_component
+  - weekly_review_component
+  - sharing_settings_component
+  - export_component
+
+
+
+
+---
+
+# SOURCE: 020.architecture/030.components/0200300002_COMPONENT_INTERACTION_ARCHITECTURE.md
+
+# ============================================================
+# COMPONENT INTERACTION ARCHITECTURE
+# ============================================================
+
+status: draft
+
+interaction_rules:
+  - input component は normalization service を通る
+  - graph component は normalized records と derived snapshots を参照する
+  - score component は score policy と score snapshots を参照する
+  - sharing component は recipient scope を常時適用する
+  - export component は permission context を確認してから生成する
+
+
+
+
+---
+
+# SOURCE: 030.model/0300000_MODEL_INDEX.md
+
+# ============================================================
+# MODEL INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0300001_MODEL_OVERVIEW.md
+  - 0300002_ENTITY_MODEL_CANONICAL.md
+  - 0300003_REFERENCE_RANGE_AND_SCORE_MODEL.md
+  - 0300004_SCHEMA_BOUNDARY_AND_STORAGE_POLICY.md
+  - 0300005_LIFE_SCHEMA_TABLE_INVENTORY.md
+  - 0300006_LIFE_SCHEMA_EXACT_TABLE_INVENTORY.md
+  - 0300007_LIFE_SCHEMA_EXACT_COLUMNS_AND_TYPES.md
+  - 0300008_FIXED_DATA_ARCHITECTURE_DECISIONS.md
+  - 0300009_MASTER_CODE_AND_CONTRACT_CANONICAL.md
+
+
+
+
+---
+
+# SOURCE: 030.model/0300001_MODEL_OVERVIEW.md
+
+# ============================================================
+# MODEL OVERVIEW
+# ============================================================
+
+status: draft
+
+model_groups:
+  - user_runtime_records
+  - provider_link_records
+  - derived_analysis_records
+  - sharing_records
+  - reference_knowledge_records
+
+
+
+
+---
+
+# SOURCE: 030.model/0300002_ENTITY_MODEL_CANONICAL.md
+
+# ============================================================
+# ENTITY MODEL CANONICAL
+# ============================================================
+
+status: draft
+
+main_entities:
+  - biometric_record
+  - biometric_record_raw
+  - biometric_record_normalized
+  - blood_pressure_record
+  - oxygen_record
+  - sleep_record
+  - activity_record
+  - manual_note
+  - health_goal
+  - device_link
+  - data_share_setting
+  - export_job
+  - correction_record
+
+notes:
+  - source_type を全記録に持つ
+  - local_date と measured_at を分ける
+  - correction は履歴型で保持する
+
+
+
+
+---
+
+# SOURCE: 030.model/0300003_REFERENCE_RANGE_AND_SCORE_MODEL.md
+
+# ============================================================
+# REFERENCE RANGE AND SCORE MODEL
+# ============================================================
+
+status: draft
+
+reference_entities:
+  - health_reference_range_master
+  - health_measurement_condition_master
+  - health_metric_semantics_master
+  - health_reference_source_master
+
+score_entities:
+  - health_score_rule_master
+  - health_score_snapshot
+  - health_score_component_snapshot
+  - average_comparison_snapshot
+
+rules:
+  - reference は user runtime data と混在させない
+  - score は rule と snapshot を分ける
+  - 参考範囲は source / version / checked_at を持つ
+
+
+
+
+---
+
+# SOURCE: 030.model/0300004_SCHEMA_BOUNDARY_AND_STORAGE_POLICY.md
+
+# ============================================================
+# SCHEMA BOUNDARY AND STORAGE POLICY
+# ============================================================
+
+status: fixed
+
+runtime_schema:
+  name: life
+
+policy:
+  - BodyMetrics の runtime data は life schema に配置する
+  - 個人実測値は life schema に配置する
+  - 外部連携取込結果は life schema に配置する
+  - 共有設定は life schema に配置する
+  - 健康スコア snapshot は life schema に配置する
+  - 平均比較 snapshot は life schema に配置する
+
+life_schema_scope:
+  - biometric_record
+  - biometric_record_raw
+  - biometric_record_normalized
+  - blood_pressure_record
+  - oxygen_record
+  - sleep_record
+  - activity_record
+  - manual_note
+  - health_goal
+  - device_link
+  - data_share_setting
+  - export_job
+  - correction_record
+  - health_score_snapshot
+  - health_score_component_snapshot
+  - average_comparison_snapshot
+
+not_in_life_schema:
+  - 固定知識マスタの一次正本
+  - 参考範囲の知識正本
+  - 測定条件知識正本
+  - 指標意味知識正本
+  - 出典知識正本
+
+knowledge_boundary:
+  - 固定知識は CX22073 系の知識領域で保持する
+  - BodyMetrics は固定知識を参照して表示・比較に使う
+  - BodyMetrics は個人実測値を知識領域へ保存しない
+
+
+
+
+---
+
+# SOURCE: 030.model/0300005_LIFE_SCHEMA_TABLE_INVENTORY.md
+
+# ============================================================
+# LIFE SCHEMA TABLE INVENTORY
+# ============================================================
+
+status: draft
+runtime_schema:
+  name: life
+
+intent:
+  - BodyMetrics runtime data を life schema に置く前提で論理テーブル責務を固定する
+  - 固定知識と個人実測値を分離する
+  - API / DB / UI の責務ずれを減らす
+
+table_inventory:
+
+  - table_name: life.biometric_record
+    purpose:
+      - 単一指標の共通記録母体
+    stores:
+      - weight
+      - heart_rate
+      - blood_oxygen
+      - body_temperature_optional
+      - body_fat_percentage_optional
+    key_columns:
+      - biometric_record_id
+      - user_id
+      - metric_type
+      - measured_value
+      - unit_code
+      - measured_at
+      - local_date
+      - timezone_code
+      - source_type
+      - source_device_id
+      - is_manual
+      - note_id_optional
+      - created_at
+      - updated_at
+    notes:
+      - 共通単一値指標はここへ寄せる
+      - 血圧のような複合値は専用表で持つ
+
+  - table_name: life.biometric_record_raw
+    purpose:
+      - 外部連携や手入力の元データを保持する
+    key_columns:
+      - biometric_record_raw_id
+      - user_id
+      - metric_type
+      - source_type
+      - raw_payload_json
+      - source_record_key
+      - imported_at
+      - measured_at_optional
+      - dedupe_key
+    notes:
+      - traceability 用
+      - 表示は基本的に normalized 側を使う
+
+  - table_name: life.biometric_record_normalized
+    purpose:
+      - 正規化済みの表示・分析用データを保持する
+    key_columns:
+      - biometric_record_normalized_id
+      - user_id
+      - biometric_record_raw_id_optional
+      - metric_type
+      - normalized_value
+      - unit_code
+      - measured_at
+      - local_date
+      - timezone_code
+      - normalization_version
+      - duplicate_resolved_flag
+    notes:
+      - graph / average / score の主参照元
+
+  - table_name: life.blood_pressure_record
+    purpose:
+      - 血圧の複合値記録
+    key_columns:
+      - blood_pressure_record_id
+      - user_id
+      - systolic_value
+      - diastolic_value
+      - pulse_value_optional
+      - unit_code
+      - measured_at
+      - local_date
+      - timezone_code
+      - posture_code_optional
+      - timing_code_optional
+      - source_type
+      - source_device_id
+      - is_manual
+    notes:
+      - 朝夜タグや測定条件拡張余地を持つ
+
+  - table_name: life.sleep_record
+    purpose:
+      - 睡眠記録
+    key_columns:
+      - sleep_record_id
+      - user_id
+      - sleep_start_at
+      - sleep_end_at
+      - duration_minutes
+      - sleep_score_optional
+      - source_type
+      - source_device_id
+      - local_date_anchor
+      - created_at
+      - updated_at
+    notes:
+      - 起床日基準 / 開始日基準の両対応余地を持つ
+
+  - table_name: life.activity_record
+    purpose:
+      - 歩数や活動量の集計記録
+    key_columns:
+      - activity_record_id
+      - user_id
+      - activity_type
+      - measured_value
+      - unit_code
+      - measured_at_optional
+      - local_date
+      - source_type
+      - source_device_id
+      - aggregation_type
+    notes:
+      - steps を中心に開始し、将来拡張可能
+
+  - table_name: life.manual_note
+    purpose:
+      - 体調メモ、補足メモ
+    key_columns:
+      - manual_note_id
+      - user_id
+      - note_type
+      - note_text
+      - linked_metric_type_optional
+      - linked_record_id_optional
+      - noted_at
+      - visibility_scope
+    notes:
+      - Family Care 共有可否とは分離して扱う
+
+  - table_name: life.health_goal
+    purpose:
+      - 健康目標管理
+    key_columns:
+      - health_goal_id
+      - user_id
+      - goal_type
+      - target_value_optional
+      - target_range_min_optional
+      - target_range_max_optional
+      - unit_code_optional
+      - start_date
+      - end_date_optional
+      - is_active
+      - created_at
+    notes:
+      - 体重、歩数、睡眠、血圧目標を扱う
+
+  - table_name: life.device_link
+    purpose:
+      - 外部連携設定
+    key_columns:
+      - device_link_id
+      - user_id
+      - provider_type
+      - provider_account_ref
+      - device_name_optional
+      - device_model_optional
+      - sync_enabled_flag
+      - permission_scope_json
+      - last_sync_at_optional
+      - link_status
+      - created_at
+      - updated_at
+    notes:
+      - credential 本体の扱いは実装時に別管理余地
+
+  - table_name: life.health_score_snapshot
+    purpose:
+      - 健康スコアの時点結果
+    key_columns:
+      - health_score_snapshot_id
+      - user_id
+      - score_date
+      - total_score
+      - score_version
+      - score_summary_text_optional
+      - created_at
+    notes:
+      - 0-100 の lifestyle tendency score を前提とする
+
+  - table_name: life.health_score_component_snapshot
+    purpose:
+      - 健康スコア内訳
+    key_columns:
+      - health_score_component_snapshot_id
+      - health_score_snapshot_id
+      - component_code
+      - component_score
+      - component_weight
+      - explanation_text_optional
+    notes:
+      - total だけでなく内訳説明を保持する
+
+  - table_name: life.average_comparison_snapshot
+    purpose:
+      - 平均比較の派生結果
+    key_columns:
+      - average_comparison_snapshot_id
+      - user_id
+      - metric_type
+      - comparison_date
+      - current_value
+      - personal_7day_average
+      - personal_30day_average
+      - reference_range_min_optional
+      - reference_range_max_optional
+      - gap_value_optional
+      - gap_rate_optional
+      - comparison_version
+    notes:
+      - reference は表示用補助として保持してよい
+
+  - table_name: life.data_share_setting
+    purpose:
+      - Family Care 等の共有設定
+    key_columns:
+      - data_share_setting_id
+      - owner_user_id
+      - recipient_user_id
+      - shared_metric_scope_json
+      - note_share_flag
+      - export_permission_flag
+      - start_at
+      - end_at_optional
+      - share_status
+      - created_at
+      - updated_at
+    notes:
+      - 初期値は非共有
+
+  - table_name: life.export_job
+    purpose:
+      - PDF / CSV 出力ジョブ
+    key_columns:
+      - export_job_id
+      - user_id
+      - format_type
+      - export_scope_json
+      - date_range_start
+      - date_range_end
+      - job_status
+      - created_at
+      - completed_at_optional
+      - file_ref_optional
+    notes:
+      - 監査対象
+
+  - table_name: life.correction_record
+    purpose:
+      - 修正履歴
+    key_columns:
+      - correction_record_id
+      - user_id
+      - target_table_name
+      - target_record_id
+      - correction_type
+      - before_value_json
+      - after_value_json
+      - corrected_at
+      - correction_reason_optional
+    notes:
+      - 上書きより履歴保持優先
+
+boundary_rules:
+  - user runtime data は life schema に置く
+  - fixed knowledge master は life schema に置かない
+  - reference source / range の正本は別知識領域を参照する
+  - BodyMetrics は知識領域を参照して比較表示に使う
+
+
+
+
+---
+
+# SOURCE: 030.model/0300006_LIFE_SCHEMA_EXACT_TABLE_INVENTORY.md
+
+# ============================================================
+# LIFE SCHEMA EXACT TABLE INVENTORY
+# ============================================================
+
+status: draft
+runtime_schema:
+  name: life
+
+design_intent:
+  - BodyMetrics runtime data を life schema に固定する
+  - SQL 実装直前まで責務を明確化する
+  - PK / UK / index / retention / audit の観点を先に揃える
+
+tables:
+
+  - table_name: life.biometric_record
+    purpose:
+      - 単一値健康指標の正本記録
+    primary_key:
+      - biometric_record_id
+    required_columns:
+      - biometric_record_id
+      - user_id
+      - metric_type
+      - measured_value
+      - unit_code
+      - measured_at
+      - local_date
+      - timezone_code
+      - source_type
+      - is_manual
+      - created_at
+      - updated_at
+    optional_columns:
+      - source_device_id
+      - note_id
+      - confidence_level
+      - status_code
+    unique_candidates:
+      - user_id + metric_type + measured_at + source_type + coalesce(source_device_id,'')
+    index_candidates:
+      - user_id + metric_type + measured_at desc
+      - user_id + local_date
+      - source_type + measured_at
+    retention_policy:
+      - delete ではなく soft invalidation 余地を持つ
+    audit_need:
+      - correction_record 参照
+
+  - table_name: life.biometric_record_raw
+    purpose:
+      - provider 由来 raw payload の保持
+    primary_key:
+      - biometric_record_raw_id
+    required_columns:
+      - biometric_record_raw_id
+      - user_id
+      - metric_type
+      - source_type
+      - raw_payload_json
+      - dedupe_key
+      - imported_at
+      - created_at
+    optional_columns:
+      - source_record_key
+      - measured_at
+      - source_device_id
+      - import_job_id
+    unique_candidates:
+      - source_type + dedupe_key
+    index_candidates:
+      - user_id + metric_type + imported_at desc
+      - source_type + imported_at desc
+      - source_record_key
+    retention_policy:
+      - traceability のため一定期間以上保持する前提
+    audit_need:
+      - import trace 対象
+
+  - table_name: life.biometric_record_normalized
+    purpose:
+      - 分析・表示用の正規化済み指標
+    primary_key:
+      - biometric_record_normalized_id
+    required_columns:
+      - biometric_record_normalized_id
+      - user_id
+      - metric_type
+      - normalized_value
+      - unit_code
+      - measured_at
+      - local_date
+      - timezone_code
+      - normalization_version
+      - created_at
+      - updated_at
+    optional_columns:
+      - biometric_record_raw_id
+      - duplicate_resolved_flag
+      - source_type
+      - source_device_id
+    unique_candidates:
+      - user_id + metric_type + measured_at + normalization_version + coalesce(source_type,'')
+    index_candidates:
+      - user_id + metric_type + measured_at desc
+      - user_id + local_date
+      - biometric_record_raw_id
+    retention_policy:
+      - 最新正規化優先、旧版保持余地あり
+    audit_need:
+      - normalization_version 追跡
+
+  - table_name: life.blood_pressure_record
+    purpose:
+      - 複合値としての血圧記録
+    primary_key:
+      - blood_pressure_record_id
+    required_columns:
+      - blood_pressure_record_id
+      - user_id
+      - systolic_value
+      - diastolic_value
+      - unit_code
+      - measured_at
+      - local_date
+      - timezone_code
+      - source_type
+      - is_manual
+      - created_at
+      - updated_at
+    optional_columns:
+      - pulse_value
+      - posture_code
+      - timing_code
+      - source_device_id
+      - note_id
+    unique_candidates:
+      - user_id + measured_at + source_type + coalesce(source_device_id,'')
+    index_candidates:
+      - user_id + measured_at desc
+      - user_id + local_date
+      - user_id + timing_code + measured_at desc
+    retention_policy:
+      - correction 履歴前提
+    audit_need:
+      - medical-like sensitivity 高
+
+  - table_name: life.sleep_record
+    purpose:
+      - 睡眠実績
+    primary_key:
+      - sleep_record_id
+    required_columns:
+      - sleep_record_id
+      - user_id
+      - sleep_start_at
+      - sleep_end_at
+      - duration_minutes
+      - local_date_anchor
+      - source_type
+      - created_at
+      - updated_at
+    optional_columns:
+      - sleep_score
+      - source_device_id
+      - sleep_stage_summary_json
+      - note_id
+    unique_candidates:
+      - user_id + sleep_start_at + sleep_end_at + source_type
+    index_candidates:
+      - user_id + sleep_start_at desc
+      - user_id + local_date_anchor
+      - source_type + sleep_start_at desc
+    retention_policy:
+      - 長期トレンド対象
+    audit_need:
+      - low
+
+  - table_name: life.activity_record
+    purpose:
+      - 歩数・活動量の記録
+    primary_key:
+      - activity_record_id
+    required_columns:
+      - activity_record_id
+      - user_id
+      - activity_type
+      - measured_value
+      - unit_code
+      - local_date
+      - source_type
+      - aggregation_type
+      - created_at
+      - updated_at
+    optional_columns:
+      - measured_at
+      - source_device_id
+      - duration_minutes
+      - note_id
+    unique_candidates:
+      - user_id + activity_type + local_date + aggregation_type + source_type
+    index_candidates:
+      - user_id + activity_type + local_date desc
+      - user_id + local_date
+      - source_type + local_date desc
+    retention_policy:
+      - 日次集計と raw event を分ける余地
+    audit_need:
+      - low
+
+  - table_name: life.manual_note
+    purpose:
+      - 健康関連メモ
+    primary_key:
+      - manual_note_id
+    required_columns:
+      - manual_note_id
+      - user_id
+      - note_type
+      - note_text
+      - noted_at
+      - visibility_scope
+      - created_at
+      - updated_at
+    optional_columns:
+      - linked_metric_type
+      - linked_record_id
+      - mood_score
+      - fatigue_score
+    unique_candidates: []
+    index_candidates:
+      - user_id + noted_at desc
+      - linked_metric_type + linked_record_id
+      - visibility_scope
+    retention_policy:
+      - ユーザー削除要求時ポリシー別途
+    audit_need:
+      - free text sensitivity 中
+
+  - table_name: life.health_goal
+    purpose:
+      - 健康目標
+    primary_key:
+      - health_goal_id
+    required_columns:
+      - health_goal_id
+      - user_id
+      - goal_type
+      - start_date
+      - is_active
+      - created_at
+      - updated_at
+    optional_columns:
+      - target_value
+      - target_range_min
+      - target_range_max
+      - unit_code
+      - end_date
+      - description_text
+    unique_candidates:
+      - user_id + goal_type + start_date
+    index_candidates:
+      - user_id + is_active + start_date desc
+      - user_id + goal_type + is_active
+    retention_policy:
+      - 終了目標も保持
+    audit_need:
+      - medium
+
+  - table_name: life.device_link
+    purpose:
+      - provider 連携設定
+    primary_key:
+      - device_link_id
+    required_columns:
+      - device_link_id
+      - user_id
+      - provider_type
+      - provider_account_ref
+      - sync_enabled_flag
+      - link_status
+      - created_at
+      - updated_at
+    optional_columns:
+      - device_name
+      - device_model
+      - permission_scope_json
+      - last_sync_at
+      - token_ref
+    unique_candidates:
+      - user_id + provider_type + provider_account_ref
+    index_candidates:
+      - user_id + provider_type
+      - link_status + updated_at desc
+      - last_sync_at
+    retention_policy:
+      - disconnect 後も監査余地
+    audit_need:
+      - credential adjacency 高
+
+  - table_name: life.health_score_snapshot
+    purpose:
+      - 健康スコア結果
+    primary_key:
+      - health_score_snapshot_id
+    required_columns:
+      - health_score_snapshot_id
+      - user_id
+      - score_date
+      - total_score
+      - score_version
+      - created_at
+    optional_columns:
+      - score_summary_text
+      - calculation_basis_json
+    unique_candidates:
+      - user_id + score_date + score_version
+    index_candidates:
+      - user_id + score_date desc
+      - score_version + score_date desc
+    retention_policy:
+      - score version 差替時も履歴保持
+    audit_need:
+      - explanation trace 対象
+
+  - table_name: life.health_score_component_snapshot
+    purpose:
+      - 健康スコア内訳
+    primary_key:
+      - health_score_component_snapshot_id
+    required_columns:
+      - health_score_component_snapshot_id
+      - health_score_snapshot_id
+      - component_code
+      - component_score
+      - component_weight
+      - created_at
+    optional_columns:
+      - explanation_text
+    unique_candidates:
+      - health_score_snapshot_id + component_code
+    index_candidates:
+      - health_score_snapshot_id
+      - component_code + created_at desc
+    retention_policy:
+      - parent snapshot に従う
+    audit_need:
+      - explanation trace 対象
+
+  - table_name: life.average_comparison_snapshot
+    purpose:
+      - 7日平均/30日平均/参考範囲比較結果
+    primary_key:
+      - average_comparison_snapshot_id
+    required_columns:
+      - average_comparison_snapshot_id
+      - user_id
+      - metric_type
+      - comparison_date
+      - current_value
+      - personal_7day_average
+      - personal_30day_average
+      - comparison_version
+      - created_at
+    optional_columns:
+      - reference_range_min
+      - reference_range_max
+      - gap_value
+      - gap_rate
+      - note_text
+    unique_candidates:
+      - user_id + metric_type + comparison_date + comparison_version
+    index_candidates:
+      - user_id + metric_type + comparison_date desc
+      - comparison_date desc
+    retention_policy:
+      - version 差替時も履歴保持余地
+    audit_need:
+      - medium
+
+  - table_name: life.data_share_setting
+    purpose:
+      - Family Care 共有設定
+    primary_key:
+      - data_share_setting_id
+    required_columns:
+      - data_share_setting_id
+      - owner_user_id
+      - recipient_user_id
+      - shared_metric_scope_json
+      - note_share_flag
+      - export_permission_flag
+      - share_status
+      - start_at
+      - created_at
+      - updated_at
+    optional_columns:
+      - end_at
+      - relationship_type
+      - summary_only_flag
+    unique_candidates:
+      - owner_user_id + recipient_user_id + start_at
+    index_candidates:
+      - owner_user_id + share_status + start_at desc
+      - recipient_user_id + share_status + start_at desc
+      - end_at
+    retention_policy:
+      - 終了設定も監査のため保持
+    audit_need:
+      - very high
+
+  - table_name: life.export_job
+    purpose:
+      - PDF / CSV 出力ジョブ
+    primary_key:
+      - export_job_id
+    required_columns:
+      - export_job_id
+      - user_id
+      - format_type
+      - export_scope_json
+      - date_range_start
+      - date_range_end
+      - job_status
+      - created_at
+    optional_columns:
+      - completed_at
+      - file_ref
+      - failure_reason
+      - requested_by_share_recipient_flag
+    unique_candidates: []
+    index_candidates:
+      - user_id + created_at desc
+      - job_status + created_at desc
+      - format_type + created_at desc
+    retention_policy:
+      - 監査のため一定期間保持
+    audit_need:
+      - high
+
+  - table_name: life.correction_record
+    purpose:
+      - 修正履歴
+    primary_key:
+      - correction_record_id
+    required_columns:
+      - correction_record_id
+      - user_id
+      - target_table_name
+      - target_record_id
+      - correction_type
+      - before_value_json
+      - after_value_json
+      - corrected_at
+      - created_at
+    optional_columns:
+      - correction_reason
+      - actor_type
+    unique_candidates: []
+    index_candidates:
+      - user_id + corrected_at desc
+      - target_table_name + target_record_id
+    retention_policy:
+      - 履歴保持を優先
+    audit_need:
+      - very high
+
+cross_table_rules:
+  - biometric_record と biometric_record_normalized は 1:1 固定にしなくてよい
+  - health_score_component_snapshot は health_score_snapshot に従属する
+  - data_share_setting は runtime data の閲覧境界正本とする
+  - export_job は data_share_setting と別に permission check を通す
+  - note_id を持つ表は manual_note 削除時の整合ポリシーが必要
+
+exact_decisions_to_fix_next:
+  - 各 ID を uuid にするか bigint にするか
+  - soft delete 共通列を採用するか
+  - created_by / updated_by をどこまで持つか
+  - biometric_record と biometric_record_normalized を実装上分けるか簡略化するか
+
+
+
+
+---
+
+# SOURCE: 030.model/0300007_LIFE_SCHEMA_EXACT_COLUMNS_AND_TYPES.md
+
+# ============================================================
+# LIFE SCHEMA EXACT COLUMNS AND TYPES
+# ============================================================
+
+status: draft
+runtime_schema:
+  name: life
+
+type_policy:
+  id_type:
+    recommendation: uuid
+    notes:
+      - 分散生成しやすさを優先する
+      - 外部連携や端末側生成余地と相性がよい
+  timestamp_type:
+    recommendation: timestamptz
+    notes:
+      - measured_at / created_at / updated_at は timestamptz を基本とする
+  local_date_type:
+    recommendation: date
+  numeric_policy:
+    recommendation: numeric
+    notes:
+      - 健康値は誤差管理のため float より numeric 優先
+  json_policy:
+    recommendation: jsonb
+  text_policy:
+    recommendation: text
+  bool_policy:
+    recommendation: boolean
+
+tables:
+
+  - table_name: life.biometric_record
+    columns:
+      - { name: biometric_record_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: metric_type, type: text, nullable: false }
+      - { name: measured_value, type: numeric(12,4), nullable: false }
+      - { name: unit_code, type: text, nullable: false }
+      - { name: measured_at, type: timestamptz, nullable: false }
+      - { name: local_date, type: date, nullable: false }
+      - { name: timezone_code, type: text, nullable: false }
+      - { name: source_type, type: text, nullable: false }
+      - { name: source_device_id, type: text, nullable: true }
+      - { name: is_manual, type: boolean, nullable: false, default: false }
+      - { name: note_id, type: uuid, nullable: true }
+      - { name: confidence_level, type: numeric(5,2), nullable: true }
+      - { name: status_code, type: text, nullable: false, default: "'active'" }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.biometric_record_raw
+    columns:
+      - { name: biometric_record_raw_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: metric_type, type: text, nullable: false }
+      - { name: source_type, type: text, nullable: false }
+      - { name: raw_payload_json, type: jsonb, nullable: false }
+      - { name: dedupe_key, type: text, nullable: false }
+      - { name: imported_at, type: timestamptz, nullable: false, default: now() }
+      - { name: source_record_key, type: text, nullable: true }
+      - { name: measured_at, type: timestamptz, nullable: true }
+      - { name: source_device_id, type: text, nullable: true }
+      - { name: import_job_id, type: uuid, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.biometric_record_normalized
+    columns:
+      - { name: biometric_record_normalized_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: biometric_record_raw_id, type: uuid, nullable: true }
+      - { name: metric_type, type: text, nullable: false }
+      - { name: normalized_value, type: numeric(12,4), nullable: false }
+      - { name: unit_code, type: text, nullable: false }
+      - { name: measured_at, type: timestamptz, nullable: false }
+      - { name: local_date, type: date, nullable: false }
+      - { name: timezone_code, type: text, nullable: false }
+      - { name: normalization_version, type: text, nullable: false }
+      - { name: duplicate_resolved_flag, type: boolean, nullable: false, default: false }
+      - { name: source_type, type: text, nullable: true }
+      - { name: source_device_id, type: text, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.blood_pressure_record
+    columns:
+      - { name: blood_pressure_record_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: systolic_value, type: numeric(6,2), nullable: false }
+      - { name: diastolic_value, type: numeric(6,2), nullable: false }
+      - { name: pulse_value, type: numeric(6,2), nullable: true }
+      - { name: unit_code, type: text, nullable: false, default: "'mmHg'" }
+      - { name: measured_at, type: timestamptz, nullable: false }
+      - { name: local_date, type: date, nullable: false }
+      - { name: timezone_code, type: text, nullable: false }
+      - { name: posture_code, type: text, nullable: true }
+      - { name: timing_code, type: text, nullable: true }
+      - { name: source_type, type: text, nullable: false }
+      - { name: source_device_id, type: text, nullable: true }
+      - { name: is_manual, type: boolean, nullable: false, default: false }
+      - { name: note_id, type: uuid, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.sleep_record
+    columns:
+      - { name: sleep_record_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: sleep_start_at, type: timestamptz, nullable: false }
+      - { name: sleep_end_at, type: timestamptz, nullable: false }
+      - { name: duration_minutes, type: integer, nullable: false }
+      - { name: sleep_score, type: numeric(5,2), nullable: true }
+      - { name: source_type, type: text, nullable: false }
+      - { name: source_device_id, type: text, nullable: true }
+      - { name: local_date_anchor, type: date, nullable: false }
+      - { name: sleep_stage_summary_json, type: jsonb, nullable: true }
+      - { name: note_id, type: uuid, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.activity_record
+    columns:
+      - { name: activity_record_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: activity_type, type: text, nullable: false }
+      - { name: measured_value, type: numeric(12,4), nullable: false }
+      - { name: unit_code, type: text, nullable: false }
+      - { name: measured_at, type: timestamptz, nullable: true }
+      - { name: local_date, type: date, nullable: false }
+      - { name: source_type, type: text, nullable: false }
+      - { name: source_device_id, type: text, nullable: true }
+      - { name: aggregation_type, type: text, nullable: false }
+      - { name: duration_minutes, type: integer, nullable: true }
+      - { name: note_id, type: uuid, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.manual_note
+    columns:
+      - { name: manual_note_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: note_type, type: text, nullable: false }
+      - { name: note_text, type: text, nullable: false }
+      - { name: linked_metric_type, type: text, nullable: true }
+      - { name: linked_record_id, type: uuid, nullable: true }
+      - { name: mood_score, type: numeric(5,2), nullable: true }
+      - { name: fatigue_score, type: numeric(5,2), nullable: true }
+      - { name: noted_at, type: timestamptz, nullable: false }
+      - { name: visibility_scope, type: text, nullable: false, default: "'owner_only'" }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.health_goal
+    columns:
+      - { name: health_goal_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: goal_type, type: text, nullable: false }
+      - { name: target_value, type: numeric(12,4), nullable: true }
+      - { name: target_range_min, type: numeric(12,4), nullable: true }
+      - { name: target_range_max, type: numeric(12,4), nullable: true }
+      - { name: unit_code, type: text, nullable: true }
+      - { name: start_date, type: date, nullable: false }
+      - { name: end_date, type: date, nullable: true }
+      - { name: is_active, type: boolean, nullable: false, default: true }
+      - { name: description_text, type: text, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.device_link
+    columns:
+      - { name: device_link_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: provider_type, type: text, nullable: false }
+      - { name: provider_account_ref, type: text, nullable: false }
+      - { name: device_name, type: text, nullable: true }
+      - { name: device_model, type: text, nullable: true }
+      - { name: sync_enabled_flag, type: boolean, nullable: false, default: true }
+      - { name: permission_scope_json, type: jsonb, nullable: true }
+      - { name: last_sync_at, type: timestamptz, nullable: true }
+      - { name: link_status, type: text, nullable: false }
+      - { name: token_ref, type: text, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.health_score_snapshot
+    columns:
+      - { name: health_score_snapshot_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: score_date, type: date, nullable: false }
+      - { name: total_score, type: numeric(5,2), nullable: false }
+      - { name: score_version, type: text, nullable: false }
+      - { name: score_summary_text, type: text, nullable: true }
+      - { name: calculation_basis_json, type: jsonb, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.health_score_component_snapshot
+    columns:
+      - { name: health_score_component_snapshot_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: health_score_snapshot_id, type: uuid, nullable: false }
+      - { name: component_code, type: text, nullable: false }
+      - { name: component_score, type: numeric(5,2), nullable: false }
+      - { name: component_weight, type: numeric(6,4), nullable: false }
+      - { name: explanation_text, type: text, nullable: true }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.average_comparison_snapshot
+    columns:
+      - { name: average_comparison_snapshot_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: metric_type, type: text, nullable: false }
+      - { name: comparison_date, type: date, nullable: false }
+      - { name: current_value, type: numeric(12,4), nullable: false }
+      - { name: personal_7day_average, type: numeric(12,4), nullable: false }
+      - { name: personal_30day_average, type: numeric(12,4), nullable: false }
+      - { name: reference_range_min, type: numeric(12,4), nullable: true }
+      - { name: reference_range_max, type: numeric(12,4), nullable: true }
+      - { name: gap_value, type: numeric(12,4), nullable: true }
+      - { name: gap_rate, type: numeric(12,4), nullable: true }
+      - { name: note_text, type: text, nullable: true }
+      - { name: comparison_version, type: text, nullable: false }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.data_share_setting
+    columns:
+      - { name: data_share_setting_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: owner_user_id, type: uuid, nullable: false }
+      - { name: recipient_user_id, type: uuid, nullable: false }
+      - { name: shared_metric_scope_json, type: jsonb, nullable: false }
+      - { name: note_share_flag, type: boolean, nullable: false, default: false }
+      - { name: export_permission_flag, type: boolean, nullable: false, default: false }
+      - { name: share_status, type: text, nullable: false, default: "'active'" }
+      - { name: start_at, type: timestamptz, nullable: false }
+      - { name: end_at, type: timestamptz, nullable: true }
+      - { name: relationship_type, type: text, nullable: true }
+      - { name: summary_only_flag, type: boolean, nullable: false, default: false }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+      - { name: updated_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.export_job
+    columns:
+      - { name: export_job_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: format_type, type: text, nullable: false }
+      - { name: export_scope_json, type: jsonb, nullable: false }
+      - { name: date_range_start, type: date, nullable: false }
+      - { name: date_range_end, type: date, nullable: false }
+      - { name: job_status, type: text, nullable: false }
+      - { name: completed_at, type: timestamptz, nullable: true }
+      - { name: file_ref, type: text, nullable: true }
+      - { name: failure_reason, type: text, nullable: true }
+      - { name: requested_by_share_recipient_flag, type: boolean, nullable: false, default: false }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+
+  - table_name: life.correction_record
+    columns:
+      - { name: correction_record_id, type: uuid, nullable: false, default: gen_random_uuid(), role: pk }
+      - { name: user_id, type: uuid, nullable: false }
+      - { name: target_table_name, type: text, nullable: false }
+      - { name: target_record_id, type: uuid, nullable: false }
+      - { name: correction_type, type: text, nullable: false }
+      - { name: before_value_json, type: jsonb, nullable: false }
+      - { name: after_value_json, type: jsonb, nullable: false }
+      - { name: corrected_at, type: timestamptz, nullable: false }
+      - { name: correction_reason, type: text, nullable: true }
+      - { name: actor_type, type: text, nullable: true, default: "'owner'" }
+      - { name: created_at, type: timestamptz, nullable: false, default: now() }
+
+column_rules:
+  - metric_type / goal_type / source_type / provider_type / status はまず text で持ち、後で enum / master 化を検討する
+  - created_at / updated_at は主要 runtime table に共通採用する
+  - score / average 系は version を明示保持する
+  - scope 系は jsonb で持ち、API payload と揃えやすくする
+  - reference knowledge の正本は life schema に置かない
+
+exact_decisions_to_fix_next:
+  - text code を enum にする対象の切り分け
+  - FK をどこまで厳格に貼るか
+  - updated_at 自動更新方式
+  - soft delete 列の採否
+
+
+
+
+---
+
+# SOURCE: 030.model/0300008_FIXED_DATA_ARCHITECTURE_DECISIONS.md
+
+# ============================================================
+# FIXED DATA ARCHITECTURE DECISIONS
+# ============================================================
+
+status: fixed
+
+schema_and_boundary:
+  runtime_schema:
+    name: life
+  fixed_knowledge_side:
+    name: CX22073
+
+fixed_data_policy:
+  - 個人の可変データは life schema に置く
+  - 固定知識は CX22073 側を参照する
+  - user runtime data を CX22073 に保存しない
+
+storage_separation:
+  biometric_record:
+    role: ユーザーが記録した実測の正本
+  biometric_record_raw:
+    role: 外部連携元データの追跡用
+  biometric_record_normalized:
+    role: 比較・分析・グラフ用
+  average_comparison_snapshot:
+    role: 比較結果の保持
+  health_score_snapshot:
+    role: 健康スコア結果の保持
+  health_score_component_snapshot:
+    role: 健康スコア内訳の保持
+
+fixed_persistence_rules:
+  average_comparison_snapshot:
+    policy: persist_snapshot
+    reason:
+      - 表示速度
+      - 説明可能性
+      - reference version 追跡
+  health_score_snapshot:
+    policy: persist_snapshot
+    reason:
+      - score version 追跡
+      - weekly review 安定化
+  reference_resolution:
+    policy: snapshot_with_effective_values
+    reason:
+      - 当時の比較根拠を後から再現できる
+
+time_series_rules:
+  local_first_vs_cloud_first:
+    fixed: local-first-with-sync
+  sleep_date_attribution:
+    fixed: wake_date_default
+    note:
+      - 標準帰属日は起床日基準
+      - 分析画面では開始日基準の補助表示を許可する
+  blood_pressure_timing:
+    fixed: standardized_tag
+    allowed_values:
+      - morning
+      - night
+      - other
+  missing_days_policy:
+    fixed: no_imputation
+
+conflict_resolution:
+  fixed: manual_priority_then_source_priority
+  priority_order:
+    - manual
+    - apple_health
+    - health_connect
+    - smartwatch_vendor
+
+code_and_constraint_policy:
+  id_type:
+    fixed: uuid
+  code_storage:
+    fixed: text_plus_master_contract
+    note:
+      - metric_type / goal_type / source_type / provider_type は DB enum にしない
+  foreign_key_policy:
+    fixed: selective_fk
+  soft_delete_policy:
+    fixed: not_global
+  updated_at_policy:
+    fixed: common_updated_at
+
+
+
+
+---
+
+# SOURCE: 030.model/0300009_MASTER_CODE_AND_CONTRACT_CANONICAL.md
+
+# ============================================================
+# MASTER CODE AND CONTRACT CANONICAL
+# ============================================================
+
+status: fixed-canonical
+runtime_schema:
+  name: life
+
+purpose:
+  - DB / API / UI で使う主要 code 値を固定する
+  - DB enum を使わず、text + contract 方式で統一する
+  - 実装時の命名ゆれを防ぐ
+
+code_contracts:
+
+  metric_type:
+    allowed_values:
+      - weight
+      - heart_rate
+      - blood_oxygen
+      - body_temperature
+      - body_fat_percentage
+      - blood_pressure
+      - sleep_duration
+      - steps
+
+  source_type:
+    allowed_values:
+      - manual
+      - apple_health
+      - health_connect
+      - smartwatch_vendor
+
+  provider_type:
+    allowed_values:
+      - apple_health
+      - health_connect
+      - fitbit
+      - garmin
+      - samsung
+
+  goal_type:
+    allowed_values:
+      - target_weight
+      - step_target
+      - sleep_target
+      - blood_pressure_range
+
+  activity_type:
+    allowed_values:
+      - steps
+      - distance
+      - active_minutes
+
+  aggregation_type:
+    allowed_values:
+      - daily_total
+      - session
+
+  posture_code:
+    allowed_values:
+      - sitting
+      - standing
+      - supine
+
+  timing_code:
+    allowed_values:
+      - morning
+      - night
+      - other
+
+  link_status:
+    allowed_values:
+      - connected
+      - pending
+      - failed
+      - disconnected
+
+  share_status:
+    allowed_values:
+      - active
+      - ended
+
+  format_type:
+    allowed_values:
+      - pdf
+      - csv
+
+  trend_direction:
+    allowed_values:
+      - up
+      - flat
+      - down
+
+  component_code:
+    allowed_values:
+      - sleep_balance
+      - activity_balance
+      - weight_trend_balance
+      - blood_pressure_stability
+      - record_continuity
+
+  note_type:
+    allowed_values:
+      - general
+      - condition_note
+      - measurement_context
+      - weekly_reflection
+
+  visibility_scope:
+    allowed_values:
+      - owner_only
+      - shareable_if_allowed
+
+  relationship_type:
+    allowed_values:
+      - parent
+      - child
+      - spouse
+      - family
+      - other
+
+naming_policy:
+  - metric_type は API / DB / UI で同一 code を使う
+  - code 値は snake_case で固定する
+  - human label は多言語辞書で別管理する
+
+
+
+
+---
+
+# SOURCE: 040.runtime/0400000_RUNTIME_INDEX.md
+
+# ============================================================
+# RUNTIME INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0400001_RUNTIME_OVERVIEW.md
+  - 0400002_RECORDING_AND_SYNC_RUNTIME.md
+  - 0400003_ALERT_AND_SCORING_RUNTIME.md
+
+
+
+
+---
+
+# SOURCE: 040.runtime/0400001_RUNTIME_OVERVIEW.md
+
+# ============================================================
+# RUNTIME OVERVIEW
+# ============================================================
+
+status: draft
+
+runtime_sequences:
+  - record_input_runtime
+  - provider_sync_runtime
+  - graph_refresh_runtime
+  - score_refresh_runtime
+  - export_runtime
+
+
+
+
+---
+
+# SOURCE: 040.runtime/0400002_RECORDING_AND_SYNC_RUNTIME.md
+
+# ============================================================
+# RECORDING AND SYNC RUNTIME
+# ============================================================
+
+status: draft
+
+recording_runtime:
+  - 手入力を受け付ける
+  - validation を行う
+  - raw/normalized を保存する
+  - dashboard を更新する
+
+sync_runtime:
+  - provider から取得する
+  - duplicate 判定する
+  - sync log を残す
+  - 失敗時は owner に見える形で通知する
+
+
+
+
+---
+
+# SOURCE: 040.runtime/0400003_ALERT_AND_SCORING_RUNTIME.md
+
+# ============================================================
+# ALERT AND SCORING RUNTIME
+# ============================================================
+
+status: draft
+
+alert_runtime:
+  - 異常断定ではなく再確認を促す
+  - 記録漏れ時にやさしく通知する
+  - 通知疲れを防ぐ
+
+score_runtime:
+  - total score と component score を更新する
+  - score movement explanation を更新する
+  - disease claim を生成しない
+
+
+
+
+---
+
+# SOURCE: 050.flow/0500000_FLOW_INDEX.md
+
+# ============================================================
+# FLOW INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0500001_FLOW_OVERVIEW.md
+  - 0500002_PRIMARY_USER_FLOWS.md
+  - 0500003_FAMILY_CARE_AND_EXPORT_FLOWS.md
+  - 0500004_SCREEN_FLOW_AND_ACTION_PRIORITY_FIXED.md
+
+
+
+
+---
+
+# SOURCE: 050.flow/0500001_FLOW_OVERVIEW.md
+
+# ============================================================
+# FLOW OVERVIEW
+# ============================================================
+
+status: draft
+
+major_flows:
+  - quick daily recording
+  - provider link and sync
+  - average comparison review
+  - weekly review
+  - Family Care sharing
+  - export flow
+
+
+
+
+---
+
+# SOURCE: 050.flow/0500002_PRIMARY_USER_FLOWS.md
+
+# ============================================================
+# PRIMARY USER FLOWS
+# ============================================================
+
+status: draft
+
+flow_1_quick_record:
+  - dashboard から quick record
+  - 値入力
+  - 保存
+  - 当日値と平均との差分確認
+
+flow_2_weekly_review:
+  - 週次レビュー起動
+  - 主要指標の推移確認
+  - health score の変化確認
+  - メモと気づき確認
+
+
+
+
+---
+
+# SOURCE: 050.flow/0500003_FAMILY_CARE_AND_EXPORT_FLOWS.md
+
+# ============================================================
+# FAMILY CARE AND EXPORT FLOWS
+# ============================================================
+
+status: draft
+
+family_care_flow:
+  - owner が Family Care を有効化
+  - 共有相手を指定
+  - 指標単位・期間単位・メモ共有可否を設定
+  - recipient が許可範囲のみ閲覧
+
+export_flow:
+  - owner が対象期間を選択
+  - PDF/CSV を選ぶ
+  - permission check
+  - export job 作成
+
+
+
+
+---
+
+# SOURCE: 050.flow/0500004_SCREEN_FLOW_AND_ACTION_PRIORITY_FIXED.md
+
+# ============================================================
+# SCREEN FLOW AND ACTION PRIORITY FIXED
+# ============================================================
+
+status: fixed
+
+primary_user_flows:
+
+  flow_dashboard_to_quick_record:
+    steps:
+      - open dashboard_home
+      - tap quick_record
+      - choose metric
+      - enter value
+      - save
+      - review immediate comparison summary
+
+  flow_dashboard_to_trend_analysis:
+    steps:
+      - open dashboard_home
+      - tap target metric card
+      - open metric_detail
+      - switch to trend_analysis
+      - review 7day / 30day averages
+      - review reference band
+
+  flow_dashboard_to_weekly_review:
+    steps:
+      - open dashboard_home
+      - tap weekly_review
+      - compare current week and previous week
+      - read week highlight
+      - inspect note list
+
+  flow_health_score_review:
+    steps:
+      - open health_score_center
+      - read total_score
+      - inspect components
+      - inspect explanation
+      - return to dashboard or trend
+
+  flow_goal_update:
+    steps:
+      - open goal_center
+      - create or edit goal
+      - confirm progress summary
+
+  flow_provider_link:
+    steps:
+      - open provider_link_settings
+      - choose provider
+      - confirm permission scope
+      - complete connect
+      - review last_sync_status
+
+  flow_family_care_setup:
+    steps:
+      - open family_care_settings
+      - choose recipient
+      - choose shared metrics
+      - set note_share_flag
+      - set export_permission_flag
+      - set active period
+      - save
+
+  flow_export:
+    steps:
+      - open export_center
+      - choose format
+      - choose metrics
+      - choose date range
+      - choose include_notes
+      - create export job
+
+action_priority:
+  dashboard_home:
+    primary:
+      - quick_record
+    secondary:
+      - open_weekly_review
+      - open_trend_analysis
+      - open_health_score_center
+
+  quick_record:
+    primary:
+      - save_record
+    secondary:
+      - add_note
+
+  metric_detail:
+    primary:
+      - switch_range
+    secondary:
+      - open_related_notes
+
+  trend_analysis:
+    primary:
+      - change_metric
+      - change_range
+    secondary:
+      - toggle_source_filter
+
+  health_score_center:
+    primary:
+      - inspect_components
+    secondary:
+      - open_weekly_review
+
+  family_care_settings:
+    primary:
+      - save_share_setting
+    secondary:
+      - end_share
+
+  export_center:
+    primary:
+      - create_export_job
+
+ui_priority_rules:
+  - smartphone は入力と主要summary優先
+  - pc_tablet は比較分析優先
+  - Family Care は share scope を超える導線を出さない
+  - export_center は permission check 前提で表示する
+
+
+
+
+---
+
+# SOURCE: 060.integration/0600000_INTEGRATION_INDEX.md
+
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0600001_INTEGRATION_OVERVIEW.md
+  - 0600002_LIFEOS_INTEGRATION.md
+  - 0600003_EXTERNAL_HEALTH_PROVIDER_INTEGRATION.md
+  - 0600004_KNOWLEDGE_AND_RUNTIME_STORAGE_BOUNDARY.md
+  - 0600005_API_BOUNDARY_AND_ENDPOINT_CANONICAL.md
+  - 0600006_DB_API_UI_CONSISTENCY_MATRIX.md
+
+
+
+
+---
+
+# SOURCE: 060.integration/0600001_INTEGRATION_OVERVIEW.md
+
+# ============================================================
+# INTEGRATION OVERVIEW
+# ============================================================
+
+status: draft
+
+integration_groups:
+  - LifeOS internal integration
+  - external health provider integration
+  - export integration
+
+
+
+
+---
+
+# SOURCE: 060.integration/0600002_LIFEOS_INTEGRATION.md
+
+# ============================================================
+# LIFEOS INTEGRATION
+# ============================================================
+
+status: draft
+
+inbound:
+  - MealPlanner から栄養傾向
+  - TrainingCoach から運動負荷
+  - LifePlanner から健康目標参照
+
+outbound:
+  - MealPlanner へ体重/睡眠傾向サマリ
+  - TrainingCoach へ活動量/疲労傾向
+  - LifePlanner へ健康目標サマリ
+
+prohibited:
+  - 他アプリへ診断結果を送らない
+
+
+
+
+---
+
+# SOURCE: 060.integration/0600003_EXTERNAL_HEALTH_PROVIDER_INTEGRATION.md
+
+# ============================================================
+# EXTERNAL HEALTH PROVIDER INTEGRATION
+# ============================================================
+
+status: draft
+
+ios:
+  - Apple Health / HealthKit を主要窓口とする
+android:
+  - Health Connect を主要窓口とする
+
+provider_rules:
+  - provider 固有値は normalization を通す
+  - duplicate import を抑止する
+  - token / permission 失効時は再接続導線を持つ
+  - manual operation は sync failure でも継続可能とする
+
+
+
+
+---
+
+# SOURCE: 060.integration/0600004_KNOWLEDGE_AND_RUNTIME_STORAGE_BOUNDARY.md
+
+# ============================================================
+# KNOWLEDGE AND RUNTIME STORAGE BOUNDARY
+# ============================================================
+
+status: fixed
+
+boundary_summary:
+  - runtime user health data は life schema に置く
+  - fixed reference knowledge は CX22073 側に置く
+  - BodyMetrics は両者を混在させない
+
+runtime_side_life:
+  - user measurements
+  - provider import results
+  - notes
+  - goals
+  - score results
+  - comparison results
+  - sharing settings
+  - export jobs
+
+knowledge_side_cx22073:
+  - reference ranges
+  - measurement condition knowledge
+  - metric semantics
+  - score rule definitions
+  - source metadata
+  - explanation text masters
+
+integration_rule:
+  - BodyMetrics runtime は life schema を正本とする
+  - comparison / score 表示時のみ knowledge を参照する
+  - knowledge 更新で user runtime records を直接書き換えない
+
+
+
+
+---
+
+# SOURCE: 060.integration/0600005_API_BOUNDARY_AND_ENDPOINT_CANONICAL.md
+
+# ============================================================
+# API BOUNDARY AND ENDPOINT CANONICAL
+# ============================================================
+
+status: fixed
+
+api_boundary_principles:
+  - API は診断結果を返さない
+  - API は治療方針を返さない
+  - API は reference を reference として返す
+  - API は Family Care の scope を必ず適用した結果だけを返す
+  - API は UI 表示責務に寄せて payload を固定する
+  - API は runtime data と fixed knowledge を混在返却しても、知識正本は返さない
+
+endpoint_groups:
+  - record_write
+  - trend_read
+  - score_read
+  - review_read
+  - goal_write
+  - provider_link
+  - family_care
+  - export
+
+canonical_endpoints:
+  - POST /life/bodymetrics/records/metric
+  - POST /life/bodymetrics/records/blood-pressure
+  - POST /life/bodymetrics/records/sleep
+  - POST /life/bodymetrics/records/activity
+  - GET  /life/bodymetrics/dashboard
+  - GET  /life/bodymetrics/trends/{metric_type}
+  - GET  /life/bodymetrics/health-score
+  - GET  /life/bodymetrics/reviews/weekly
+  - POST /life/bodymetrics/goals
+  - POST /life/bodymetrics/providers/connect
+  - GET  /life/bodymetrics/family-care/share-settings
+  - POST /life/bodymetrics/family-care/share-settings
+  - POST /life/bodymetrics/exports
+
+response_shape_policy:
+  - write API は saved / accepted と resource id を返す
+  - graph API は points / overlays / reference_band を返す
+  - score API は total + components + explanation を返す
+  - dashboard API は card 単位の集約結果を返す
+  - weekly review API は summary 主体で返す
+  - Family Care API は effective scope を中心に返す
+
+error_policy:
+  - validation error
+  - permission denied
+  - scope denied
+  - provider link failed
+  - export rejected
+  - unsupported metric
+
+
+
+
+---
+
+# SOURCE: 060.integration/0600006_DB_API_UI_CONSISTENCY_MATRIX.md
+
+# ============================================================
+# DB API UI CONSISTENCY MATRIX
+# ============================================================
+
+status: fixed
+
+purpose:
+  - DB / API / UI の対応関係を一意化する
+  - 実装着手前の責務ズレを防ぐ
+
+matrix:
+
+  - feature: weight_recording
+    db:
+      - life.biometric_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/metric
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.latest_weight_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+
+  - feature: blood_pressure_recording
+    db:
+      - life.blood_pressure_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/blood-pressure
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.latest_blood_pressure_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+
+  - feature: sleep_recording
+    db:
+      - life.sleep_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/sleep
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.sleep_last_night_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+      - weekly_review
+
+  - feature: activity_recording
+    db:
+      - life.activity_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/activity
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.steps_today_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+      - weekly_review
+
+  - feature: health_score
+    db:
+      - life.health_score_snapshot
+      - life.health_score_component_snapshot
+    api:
+      - GET /life/bodymetrics/health-score
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/reviews/weekly
+    ui:
+      - dashboard_home.health_score_summary_card
+      - health_score_center
+      - weekly_review
+
+  - feature: average_comparison
+    db:
+      - life.average_comparison_snapshot
+    api:
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.average_comparison_summary_card
+      - trend_analysis
+      - metric_detail
+
+  - feature: notes
+    db:
+      - life.manual_note
+    api:
+      - POST /life/bodymetrics/records/metric
+      - POST /life/bodymetrics/records/blood-pressure
+      - POST /life/bodymetrics/records/sleep
+      - GET /life/bodymetrics/reviews/weekly
+    ui:
+      - quick_record
+      - metric_detail.related_notes
+      - weekly_review.weekly_note_list
+
+  - feature: goals
+    db:
+      - life.health_goal
+    api:
+      - POST /life/bodymetrics/goals
+    ui:
+      - goal_center
+
+  - feature: provider_link
+    db:
+      - life.device_link
+      - life.biometric_record_raw
+    api:
+      - POST /life/bodymetrics/providers/connect
+      - GET /life/bodymetrics/dashboard
+    ui:
+      - provider_link_settings
+      - dashboard_home.sync_status_card
+
+  - feature: family_care
+    db:
+      - life.data_share_setting
+    api:
+      - GET /life/bodymetrics/family-care/share-settings
+      - POST /life/bodymetrics/family-care/share-settings
+    ui:
+      - family_care_settings
+
+  - feature: export
+    db:
+      - life.export_job
+    api:
+      - POST /life/bodymetrics/exports
+    ui:
+      - export_center
+
+consistency_rules:
+  - 画面が存在する機能は必ず対応 API を持つ
+  - API が存在する機能は必ず対応 DB 保存先を持つ
+  - Family Care は API / UI / DB すべてで scope 適用を前提とする
+
+
+
+
+---
+
+# SOURCE: 070.operations/0700000_OPERATIONS_INDEX.md
+
+# ============================================================
+# OPERATIONS INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0700001_OPERATIONS_OVERVIEW.md
+  - 0700002_SUPPORT_AND_MONITORING_OPERATIONS.md
+
+
+
+
+---
+
+# SOURCE: 070.operations/0700001_OPERATIONS_OVERVIEW.md
+
+# ============================================================
+# OPERATIONS OVERVIEW
+# ============================================================
+
+status: draft
+
+operation_focus:
+  - AIサポート運用
+  - sync error 可視化
+  - export job 監視
+  - reference 更新点検
+
+
+
+
+---
+
+# SOURCE: 070.operations/0700002_SUPPORT_AND_MONITORING_OPERATIONS.md
+
+# ============================================================
+# SUPPORT AND MONITORING OPERATIONS
+# ============================================================
+
+status: draft
+
+support_rules:
+  - AIチャットのみ
+  - FAQ、設定案内、再接続案内、操作説明を対象
+  - 医療助言は対象外
+
+monitoring_rules:
+  - provider sync failure を監視
+  - export failure を監視
+  - family sharing change を監査対象とする
+
+
+
+
+---
+
+# SOURCE: 080.policy/0800000_POLICY_INDEX.md
+
+# ============================================================
+# POLICY INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0800001_POLICY_OVERVIEW.md
+  - 0800002_DATA_AND_SHARING_POLICY.md
+  - 0800003_REFERENCE_VALUE_AND_HEALTH_SCORE_POLICY.md
+  - 0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md
+
+
+
+
+---
+
+# SOURCE: 080.policy/0800001_POLICY_OVERVIEW.md
+
+# ============================================================
+# POLICY OVERVIEW
+# ============================================================
+
+status: draft
+
+policy_areas:
+  - health data policy
+  - sharing policy
+  - reference value policy
+  - health score policy
+
+
+
+
+---
+
+# SOURCE: 080.policy/0800002_DATA_AND_SHARING_POLICY.md
+
+# ============================================================
+# DATA AND SHARING POLICY
+# ============================================================
+
+status: draft
+
+data_policy:
+  - 健康データは高機微情報として扱う
+  - owner 以外は最小権限
+  - raw provider account detail を共有しない
+
+sharing_policy:
+  - 初期値は非共有
+  - owner 明示操作でのみ共有開始
+  - 項目単位共有
+  - 期間単位共有
+  - メモ共有は別スイッチ
+  - export 権限を閲覧権限と分離する
+
+
+
+
+---
+
+# SOURCE: 080.policy/0800003_REFERENCE_VALUE_AND_HEALTH_SCORE_POLICY.md
+
+# ============================================================
+# REFERENCE VALUE AND HEALTH SCORE POLICY
+# ============================================================
+
+status: draft
+
+reference_policy:
+  - 正常値と断定せず reference range / reference average と表記する
+  - 単一の universal healthy value を前提にしない
+  - age band / sex / condition を考慮可能設計とする
+  - source / version / checked_at を保持する
+
+health_score_policy:
+  - 健康スコアは lifestyle tendency score とする
+  - total と component breakdown を表示する
+  - score movement explanation を持つ
+  - score 由来の disease claim を禁止する
+
+
+
+
+---
+
+# SOURCE: 080.policy/0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md
+
+# ============================================================
+# FIXED SCORING REFERENCE AND FAMILY CARE POLICY
+# ============================================================
+
+status: fixed
+
+reference_policy:
+  initial_release:
+    include_reference_range: true
+    include_external_population_average: false
+  wording:
+    - reference range
+    - 参考範囲
+  prohibited_wording:
+    - normal guarantee
+    - healthy guarantee
+    - disease judgement
+  comparison_standard:
+    primary:
+      - personal_7day_average
+      - personal_30day_average
+    secondary:
+      - reference_range_band
+
+health_score_policy:
+  score_name:
+    ja: 健康スコア
+    en: Health Score
+  interpretation_label:
+    ja: 生活傾向スコア
+    en: Lifestyle Tendency Score
+  score_range:
+    min: 0
+    max: 100
+  refresh_policy:
+    fixed: daily_snapshot_weekly_emphasis
+  components_and_weights:
+    sleep_balance: 0.25
+    activity_balance: 0.20
+    weight_trend_balance: 0.20
+    blood_pressure_stability: 0.20
+    record_continuity: 0.15
+  missing_component_policy:
+    fixed: reweight_available_components
+  initial_release:
+    include_blood_pressure_component: true
+
+family_care_policy:
+  plan_name: Family Care
+  recipient_limit:
+    fixed: 5
+  permission_model:
+    export_permission:
+      fixed: separate_flag
+    note_share_flag:
+      fixed_default: false
+    summary_only_flag:
+      fixed_default: false
+    initial_non_shared:
+      fixed: true
+  shareable_metrics:
+    - weight
+    - blood_pressure
+    - sleep
+    - steps
+    - summary_only
+  summary_only_ui:
+    visible:
+      - latest_status_summary
+      - trend_direction
+      - weekly_summary_cards
+      - health_score_total_optional
+    hidden:
+      - raw_point_list
+      - detailed_note_text
+      - correction_history
+      - provider_detail
+
+export_policy:
+  templates:
+    pdf_personal_summary:
+      includes:
+        - selected_metrics_summary
+        - graphs
+        - average_comparison
+        - health_score_summary
+    pdf_family_share_summary:
+      includes:
+        - shared_scope_only
+        - summary_cards
+        - graphs
+      excludes:
+        - detailed_private_notes
+        - hidden_metrics
+    csv_raw_records:
+      includes:
+        - selected_metrics_raw_rows
+  medical_submission_template:
+    fixed: not_now
+
+
+
+
+---
+
+# SOURCE: 090.interface/0900000_INTERFACE_INDEX.md
+
+# ============================================================
+# INTERFACE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0900001_INTERFACE_OVERVIEW.md
+  - 0900002_SCREEN_MAP_AND_DASHBOARD_INTERFACE.md
+  - 0900003_GRAPH_AND_EXPLANATION_INTERFACE.md
+  - 0900004_FIXED_INTERFACE_AND_ANALYSIS_POLICY.md
+  - 0900005_API_EXACT_PAYLOAD_AND_SCREEN_MAPPING.md
+  - 0900006_SCREEN_EXACT_DISPLAY_FIXED_PACK.md
+
+
+
+
+---
+
+# SOURCE: 090.interface/0900001_INTERFACE_OVERVIEW.md
+
+# ============================================================
+# INTERFACE OVERVIEW
+# ============================================================
+
+status: draft
+
+device_roles:
+  smartphone:
+    - 記録中心
+    - 連携確認中心
+  pc_tablet:
+    - 分析中心
+    - 比較閲覧中心
+    - 出力確認中心
+
+
+
+
+---
+
+# SOURCE: 090.interface/0900002_SCREEN_MAP_AND_DASHBOARD_INTERFACE.md
+
+# ============================================================
+# SCREEN MAP AND DASHBOARD INTERFACE
+# ============================================================
+
+status: draft
+
+main_screens:
+  - dashboard_home
+  - quick_record
+  - metric_detail
+  - trend_analysis
+  - weekly_review
+  - health_score_center
+  - sharing_settings
+  - export_center
+
+dashboard_cards:
+  - latest_weight
+  - latest_blood_pressure
+  - sleep_last_night
+  - steps_today
+  - weekly_trend_summary
+  - health_score_summary
+  - average_comparison_summary
+  - sync_status
+
+
+
+
+---
+
+# SOURCE: 090.interface/0900003_GRAPH_AND_EXPLANATION_INTERFACE.md
+
+# ============================================================
+# GRAPH AND EXPLANATION INTERFACE
+# ============================================================
+
+status: draft
+
+graph_requirements:
+  - daily / weekly / monthly trend
+  - 7-day average overlay
+  - 30-day average overlay
+  - optional reference band display
+  - score trend chart
+
+text_requirements:
+  - 何と比較しているか説明する
+  - score が動いた理由を短文で示す
+  - 異常断定ではなく穏やかな表現を使う
+
+
+
+
+---
+
+# SOURCE: 090.interface/0900004_FIXED_INTERFACE_AND_ANALYSIS_POLICY.md
+
+# ============================================================
+# FIXED INTERFACE AND ANALYSIS POLICY
+# ============================================================
+
+status: fixed
+
+pc_tablet_analysis_layout:
+  fixed: three_zone_layout
+
+layout_definition:
+  top_bar:
+    - metric_tabs
+    - date_range_selector
+    - provider_filter
+  main_area:
+    - large_trend_graph
+    - average_overlay
+    - reference_band
+  side_panel:
+    - latest_value
+    - health_score_summary
+    - weekly_notes
+    - export_shortcuts
+
+default_metric_order:
+  - weight
+  - blood_pressure
+  - sleep
+  - steps
+  - heart_rate
+  - blood_oxygen
+
+graph_display_policy:
+  - daily / weekly / monthly を持つ
+  - 7日平均 / 30日平均を重ねる
+  - reference band を表示する
+  - reference は reference と明記する
+  - 欠損日は補完せず欠損のまま見せる
+
+score_display_policy:
+  - total score と component breakdown を必ず出す
+  - week-over-week を主解釈にする
+  - score 変動理由を短文で出す
+  - 医療スコアのように見せない
+
+family_care_display_policy:
+  - 初期状態は非共有
+  - 項目単位共有
+  - 期間単位共有
+  - note_share_flag を別制御
+  - export_permission_flag を別制御
+  - summary_only は詳細値を隠す
+
+
+
+
+---
+
+# SOURCE: 090.interface/0900005_API_EXACT_PAYLOAD_AND_SCREEN_MAPPING.md
+
+# ============================================================
+# API EXACT PAYLOAD AND SCREEN MAPPING
+# ============================================================
+
+status: fixed
+
+screen_to_api_mapping:
+
+  dashboard_home:
+    reads:
+      - GET /life/bodymetrics/dashboard
+    cards:
+      - latest_weight
+      - latest_blood_pressure
+      - sleep_last_night
+      - steps_today
+      - health_score_summary
+      - average_comparison_summary
+      - sync_status
+
+  quick_record:
+    writes:
+      - POST /life/bodymetrics/records/metric
+      - POST /life/bodymetrics/records/blood-pressure
+      - POST /life/bodymetrics/records/sleep
+      - POST /life/bodymetrics/records/activity
+
+  metric_detail:
+    reads:
+      - GET /life/bodymetrics/trends/{metric_type}
+
+  health_score_center:
+    reads:
+      - GET /life/bodymetrics/health-score
+
+  weekly_review:
+    reads:
+      - GET /life/bodymetrics/reviews/weekly
+
+  goal_center:
+    writes:
+      - POST /life/bodymetrics/goals
+
+  provider_link_settings:
+    writes:
+      - POST /life/bodymetrics/providers/connect
+
+  family_care_settings:
+    reads:
+      - GET /life/bodymetrics/family-care/share-settings
+    writes:
+      - POST /life/bodymetrics/family-care/share-settings
+
+  export_center:
+    writes:
+      - POST /life/bodymetrics/exports
+
+payload_conventions:
+  ids:
+    type: uuid
+  timestamps:
+    type: iso8601
+  dates:
+    type: yyyy-mm-dd
+  scope_json:
+    type: object
+  nullable_convention:
+    - optional field は null を許可する
+  booleans:
+    - false を省略しない
+  metric_codes:
+    - weight
+    - blood_pressure
+    - blood_oxygen
+    - heart_rate
+    - sleep_duration
+    - steps
+
+ui_binding_rules:
+  - dashboard は card 単位で null 許容
+  - trend graph は欠損点を null で表現してよい
+  - health score は total と components を必須表示対象とする
+  - Family Care は shared_metric_scope をそのまま UI 制御に使える形で返す
+
+
+
+
+---
+
+# SOURCE: 090.interface/0900006_SCREEN_EXACT_DISPLAY_FIXED_PACK.md
+
+# ============================================================
+# SCREEN EXACT DISPLAY FIXED PACK
+# ============================================================
+
+status: fixed
+
+global_ui_principles:
+  - 医療診断に見える見せ方をしない
+  - 主要画面は summary first とする
+  - 詳細は drill-down で見せる
+  - 平均比較は first-class 表示
+  - 健康スコアは total と breakdown をセット表示
+  - Family Care は shared scope を超える内容を出さない
+  - 欠損値は補完せず null / no data として扱う
+
+device_policy:
+  smartphone:
+    focus:
+      - 記録
+      - 当日確認
+      - 週次ふりかえり
+      - 共有設定
+  pc_tablet:
+    focus:
+      - 分析
+      - 比較閲覧
+      - 長期傾向確認
+      - 出力確認
+
+screens:
+
+  dashboard_home:
+    purpose:
+      - 当日の健康状態を一目で把握する
+    required_sections:
+      - latest_weight_card
+      - latest_blood_pressure_card
+      - sleep_last_night_card
+      - steps_today_card
+      - health_score_summary_card
+      - average_comparison_summary_card
+      - sync_status_card
+    latest_weight_card:
+      fields:
+        - value
+        - unit_code
+        - measured_at
+        - trend_direction_optional
+    latest_blood_pressure_card:
+      fields:
+        - systolic_value
+        - diastolic_value
+        - measured_at
+        - timing_code_optional
+    sleep_last_night_card:
+      fields:
+        - duration_minutes
+        - local_date_anchor
+        - personal_7day_average_optional
+    steps_today_card:
+      fields:
+        - measured_value
+        - local_date
+        - goal_progress_optional
+    health_score_summary_card:
+      fields:
+        - total_score
+        - trend_direction
+        - summary_text
+    average_comparison_summary_card:
+      fields:
+        - metric_type
+        - current_value
+        - personal_7day_average
+        - gap_value
+        - gap_rate
+    sync_status_card:
+      fields:
+        - has_error
+        - last_sync_at
+    primary_actions:
+      - open_quick_record
+      - open_trend_analysis
+      - open_weekly_review
+      - open_family_care_settings
+
+  quick_record:
+    purpose:
+      - 最短導線で記録する
+    supported_record_types:
+      - weight
+      - blood_pressure
+      - blood_oxygen
+      - heart_rate
+      - sleep
+      - steps_manual
+      - note
+    required_fields_by_type:
+      weight:
+        - measured_value
+        - unit_code
+        - measured_at
+      blood_pressure:
+        - systolic_value
+        - diastolic_value
+        - pulse_value_optional
+        - measured_at
+        - timing_code_optional
+      blood_oxygen:
+        - measured_value
+        - measured_at
+      heart_rate:
+        - measured_value
+        - measured_at
+      sleep:
+        - sleep_start_at
+        - sleep_end_at
+        - duration_minutes
+      steps_manual:
+        - measured_value
+        - local_date
+      note:
+        - note_text
+    after_save_display:
+      - saved_message
+      - latest_value_summary
+      - personal_7day_average_optional
+      - gap_value_optional
+      - gap_rate_optional
+
+  metric_detail:
+    purpose:
+      - 指標別の詳細確認
+    required_sections:
+      - latest_value_panel
+      - trend_graph
+      - 7day_average_overlay
+      - 30day_average_overlay
+      - reference_band_optional
+      - source_type_legend
+      - related_notes
+    latest_value_panel:
+      fields:
+        - metric_type
+        - latest_value
+        - unit_code
+        - measured_at
+        - source_type
+    trend_graph:
+      modes:
+        - daily
+        - weekly
+        - monthly
+      fields:
+        - points
+        - missing_points_as_null
+    related_notes:
+      fields:
+        - noted_at
+        - note_text
+      display_rule:
+        - owner only full text
+        - Family Care は scope に従う
+
+  trend_analysis:
+    purpose:
+      - 平均比較と reference 比較の中心画面
+    required_sections:
+      - large_trend_graph
+      - overlay_selector
+      - reference_band
+      - source_type_filter
+      - date_range_selector
+      - comparison_summary_panel
+    comparison_summary_panel:
+      fields:
+        - current_value
+        - personal_7day_average
+        - personal_30day_average
+        - gap_value
+        - gap_rate
+        - reference_range_min_optional
+        - reference_range_max_optional
+    filters:
+      - metric_type
+      - range_type
+      - source_type
+    display_rules:
+      - external population average は初期表示しない
+      - reference は reference と明示する
+      - 欠損補完はしない
+
+  health_score_center:
+    purpose:
+      - 健康スコアの確認
+    required_sections:
+      - total_score_panel
+      - score_trend_graph
+      - component_breakdown_list
+      - explanation_panel
+    total_score_panel:
+      fields:
+        - total_score
+        - score_date
+        - trend_direction_optional
+    component_breakdown_list:
+      items:
+        - component_code
+        - component_score
+        - component_weight
+        - explanation_text
+    explanation_panel:
+      fields:
+        - summary_text
+      rules:
+        - medical diagnosis wording を使わない
+
+  weekly_review:
+    purpose:
+      - 週次の変化を振り返る
+    required_sections:
+      - weekly_metrics_summary
+      - health_score_weekly_comparison
+      - weekly_note_list
+      - week_highlight_text
+    weekly_metrics_summary:
+      items:
+        - metric_type
+        - latest_value
+        - weekly_average
+        - trend_direction
+    health_score_weekly_comparison:
+      fields:
+        - total_score
+        - previous_week_score
+        - delta
+    weekly_note_list:
+      fields:
+        - noted_at
+        - note_text
+    week_highlight_text:
+      rules:
+        - 責めない表現
+        - 変化を穏やかに伝える
+
+  goal_center:
+    purpose:
+      - 目標設定と進捗確認
+    required_sections:
+      - active_goal_list
+      - progress_summary
+      - related_metric_trend_shortcuts
+    active_goal_list:
+      items:
+        - goal_type
+        - target_value_optional
+        - target_range_min_optional
+        - target_range_max_optional
+        - start_date
+        - end_date_optional
+        - is_active
+    progress_summary:
+      items:
+        - goal_type
+        - progress_status
+        - latest_related_value
+
+  provider_link_settings:
+    purpose:
+      - 外部連携状態の確認と接続管理
+    required_sections:
+      - linked_provider_list
+      - permission_scope_view
+      - last_sync_status
+      - reconnect_actions
+    linked_provider_list:
+      items:
+        - provider_type
+        - link_status
+        - sync_enabled_flag
+        - last_sync_at
+    display_rules:
+      - provider credential detail は直接表示しない
+
+  family_care_settings:
+    purpose:
+      - Family Care 共有設定
+    required_sections:
+      - recipient_list
+      - shared_metric_scope_editor
+      - note_share_flag_toggle
+      - export_permission_flag_toggle
+      - summary_only_toggle
+      - active_period_editor
+    recipient_list:
+      items:
+        - recipient_user_id
+        - relationship_type_optional
+        - share_status
+        - start_at
+        - end_at_optional
+    shared_metric_scope_editor:
+      selectable_metrics:
+        - weight
+        - blood_pressure
+        - sleep
+        - steps
+        - summary_only
+    display_rules:
+      - 初期状態は非共有
+      - note_share_flag default false
+      - export_permission_flag default false
+      - recipient limit = 5
+
+  export_center:
+    purpose:
+      - PDF / CSV 出力
+    required_sections:
+      - format_selector
+      - metric_scope_selector
+      - include_notes_toggle
+      - date_range_selector
+      - export_history
+    format_selector:
+      values:
+        - pdf
+        - csv
+    export_history:
+      items:
+        - export_job_id
+        - format_type
+        - job_status
+        - created_at
+        - completed_at_optional
+
+pc_tablet_analysis_exact_layout:
+  top_bar:
+    - metric_tabs
+    - date_range_selector
+    - provider_filter
+  main_area:
+    - large_trend_graph
+    - average_overlay
+    - reference_band
+  side_panel:
+    - latest_value
+    - health_score_summary
+    - weekly_notes
+    - export_shortcuts
+
+default_metric_order:
+  - weight
+  - blood_pressure
+  - sleep
+  - steps
+  - heart_rate
+  - blood_oxygen
+
+
+
+
+---
+
+# SOURCE: 100.security/1000000_SECURITY_INDEX.md
+
+# ============================================================
+# SECURITY INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 1000001_SECURITY_OVERVIEW.md
+  - 1000002_HEALTH_DATA_SECURITY_ARCHITECTURE.md
+  - 1000003_PRIVACY_AUDIT_PERMISSION_GATE.md
+
+
+
+
+---
+
+# SOURCE: 100.security/1000001_SECURITY_OVERVIEW.md
+
+# ============================================================
+# SECURITY OVERVIEW
+# ============================================================
+
+status: draft
+
+security_focus:
+  - 高機微健康データ保護
+  - recipient scope 強制
+  - provider credential 保護
+  - export / sharing 監査
+
+
+
+
+---
+
+# SOURCE: 100.security/1000002_HEALTH_DATA_SECURITY_ARCHITECTURE.md
+
+# ============================================================
+# HEALTH DATA SECURITY ARCHITECTURE
+# ============================================================
+
+status: draft
+
+security_rules:
+  - least privilege
+  - sharing change audit
+  - export generation audit
+  - sensitive action 再認証余地
+  - recipient に provider account detail を露出しない
+
+
+
+
+---
+
+# SOURCE: 100.security/1000003_PRIVACY_AUDIT_PERMISSION_GATE.md
+
+# ============================================================
+# PRIVACY AUDIT PERMISSION GATE
+# ============================================================
+
+status: fixed
+
+purpose:
+  - 高機微健康データを扱う前提で、実装前の安全条件を固定する
+
+privacy_rules:
+  - 健康データは高機微情報として扱う
+  - 初期共有状態は非共有
+  - note_share_flag の初期値は false
+  - export_permission_flag の初期値は false
+  - provider credential detail をUI表示しない
+  - shared scope を超える値を Family Care に返さない
+
+audit_targets:
+  - data_share_setting change
+  - export_job creation
+  - correction_record creation
+  - provider link state change
+
+permission_rules:
+  owner:
+    allowed:
+      - full self data view
+      - edit self data
+      - create export
+      - manage family care
+  recipient:
+    allowed:
+      - only shared scope view
+    denied:
+      - unshared metric view
+      - private note view unless explicitly allowed
+      - export unless export_permission_flag = true
+
+security_review_items:
+  - scope leak がないか
+  - note leak がないか
+  - export unauthorized generation がないか
+  - provider detail exposure がないか
+  - reference wording が医療断定になっていないか
+
+release_blockers:
+  - Family Care scope を越える表示がある
+  - private notes が recipient に見える
+  - export 権限分離が効かない
+  - provider credential 相当情報が露出する
+
+
+
+
+---
+
+# SOURCE: 110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+
+# ============================================================
+# INFRASTRUCTURE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 1100001_INFRASTRUCTURE_OVERVIEW.md
+  - 1100002_STORAGE_AND_SYNC_INFRASTRUCTURE.md
+
+
+
+
+---
+
+# SOURCE: 110.infrastructure/1100001_INFRASTRUCTURE_OVERVIEW.md
+
+# ============================================================
+# INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+needs:
+  - raw / normalized record storage
+  - reference knowledge storage
+  - sync job execution
+  - export generation
+  - summary cache optional
+
+
+
+
+---
+
+# SOURCE: 110.infrastructure/1100002_STORAGE_AND_SYNC_INFRASTRUCTURE.md
+
+# ============================================================
+# STORAGE AND SYNC INFRASTRUCTURE
+# ============================================================
+
+status: draft
+
+storage_rules:
+  - raw provider payload traceability
+  - normalized record queryability
+  - score snapshot versioning
+  - reference master refreshability
+
+sync_rules:
+  - retryable sync jobs
+  - visible sync errors
+  - manual record continuity even on sync failure
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200000_IMPLEMENTATION_INDEX.md
+
+# ============================================================
+# IMPLEMENTATION INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 1200001_IMPLEMENTATION_OVERVIEW.md
+  - 1200002_PHASE_PLAN_AND_READINESS.md
+  - 1200003_OPEN_DECISIONS_AND_FIXED_RULES.md
+  - 1200004_LIFE_SCHEMA_IMPLEMENTATION_PREP.md
+  - 1200005_DB_EXACT_INVENTORY_AND_SQL_PREP.md
+  - 1200006_DB_COLUMN_TYPE_PREPARATION.md
+  - 1200007_FIXED_DECISIONS_REFLECTION_PACK.md
+  - 1200008_API_REQUEST_RESPONSE_EXACT_PAYLOAD_FIXED_PACK.md
+  - 1200009_UI_EXACT_DISPLAY_REFLECTION_PACK.md
+  - 1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+  - 1200011_IMPLEMENTATION_PREP_COMPLETION_DECLARATION.md
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
+
+# ============================================================
+# IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: draft
+
+implementation_posture:
+  - manual recording を先行
+  - graph / average / score を先行
+  - provider integration を次段階
+  - Family Care を個人コア安定後に載せる
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200002_PHASE_PLAN_AND_READINESS.md
+
+# ============================================================
+# PHASE PLAN AND READINESS
+# ============================================================
+
+status: draft
+
+phase_1:
+  - 手入力
+  - 基本グラフ
+  - 7日/30日平均比較
+  - reference 表示
+  - 健康スコア
+  - 週次ふりかえり
+  - PDF/CSV出力
+
+phase_2:
+  - Apple Health 連携
+  - Health Connect 連携
+  - 健診結果入力
+  - score explanation 強化
+
+phase_3:
+  - Family Care 共有
+  - recipient reporting
+  - LifeOS 横断表示強化
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200003_OPEN_DECISIONS_AND_FIXED_RULES.md
+
+# ============================================================
+# OPEN DECISIONS AND FIXED RULES
+# ============================================================
+
+status: draft
+
+fixed:
+  - 個人利用コア無料
+  - Family Care 月額300円
+  - AIチャットのみ
+  - 非診断
+  - 平均比較あり
+  - 健康スコアあり
+
+open:
+  - local-first と cloud-first の主従
+  - sleep date attribution default
+  - score refresh cadence 詳細
+  - Family Care の共有人数上限
+  - external reference average の投入時期
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200004_LIFE_SCHEMA_IMPLEMENTATION_PREP.md
+
+# ============================================================
+# LIFE SCHEMA IMPLEMENTATION PREP
+# ============================================================
+
+status: draft
+
+implementation_goal:
+  - life schema 前提で DB 実装に移れる粒度まで整理する
+
+recommended_build_order:
+  - biometric_record
+  - blood_pressure_record
+  - sleep_record
+  - activity_record
+  - manual_note
+  - health_goal
+  - device_link
+  - health_score_snapshot
+  - health_score_component_snapshot
+  - average_comparison_snapshot
+  - data_share_setting
+  - export_job
+  - correction_record
+
+phase_alignment:
+  phase_1:
+    - biometric_record
+    - blood_pressure_record
+    - sleep_record
+    - activity_record
+    - manual_note
+    - health_goal
+    - average_comparison_snapshot
+    - health_score_snapshot
+    - health_score_component_snapshot
+    - export_job
+  phase_2:
+    - biometric_record_raw
+    - biometric_record_normalized
+    - device_link
+    - correction_record
+  phase_3:
+    - data_share_setting
+
+db_design_notes:
+  - measured_at と local_date を分離する
+  - metric_type は表示名でなく code で管理する
+  - source_type を全 runtime record に持たせる
+  - Family Care は data_share_setting を起点に制御する
+  - score は rule と snapshot を分離する
+  - reference 値は知識側の更新で差し替え可能にする
+
+next_db_outputs:
+  - life schema table exact inventory
+  - primary key / unique key / index 候補
+  - API request / response exact payload
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200005_DB_EXACT_INVENTORY_AND_SQL_PREP.md
+
+# ============================================================
+# DB EXACT INVENTORY AND SQL PREP
+# ============================================================
+
+status: draft
+
+sql_prep_goal:
+  - psql で直接作表できる粒度の前段整理
+  - life schema の責務ずれ防止
+  - API payload 固定の前提整備
+
+recommended_sql_build_order:
+  - life.biometric_record
+  - life.blood_pressure_record
+  - life.sleep_record
+  - life.activity_record
+  - life.manual_note
+  - life.health_goal
+  - life.health_score_snapshot
+  - life.health_score_component_snapshot
+  - life.average_comparison_snapshot
+  - life.device_link
+  - life.data_share_setting
+  - life.export_job
+  - life.correction_record
+  - life.biometric_record_raw
+  - life.biometric_record_normalized
+
+index_priority:
+  high:
+    - user_id + measured_at desc 系
+    - user_id + local_date 系
+    - owner_user_id / recipient_user_id 系
+  medium:
+    - source_type 系
+    - status 系
+    - version 系
+
+constraint_priority:
+  high:
+    - null 許容の明確化
+    - unique key 候補の採否
+    - foreign key 方針
+  medium:
+    - check constraint の粒度
+    - enum 化対象の切り出し
+
+api_alignment_targets:
+  - quick record request
+  - blood pressure save request
+  - sleep import payload
+  - health score response
+  - average comparison response
+  - Family Care share request
+  - export request
+
+next_outputs:
+  - exact columns with data types
+  - PK / FK / UK definitive list
+  - index definitive list
+  - API request / response exact payload
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200006_DB_COLUMN_TYPE_PREPARATION.md
+
+# ============================================================
+# DB COLUMN TYPE PREPARATION
+# ============================================================
+
+status: draft
+
+pre_sql_alignment:
+  - uuid 前提で列設計をそろえる
+  - timestamptz / date の使い分けを固定する
+  - numeric 精度を先にそろえる
+  - jsonb 採用箇所を固定する
+
+recommended_next_step:
+  - exact PK / FK / UK 一覧を固定する
+  - index definitive list を固定する
+  - psql 実装用 SQL ブロックへ進む前に API payload 名を揃える
+
+high_risk_points:
+  - biometric_record と biometric_record_normalized の役割重複
+  - manual_note の linked_record_id FK を汎用で持つ点
+  - data_share_setting の scope json 粒度
+  - correction_record の対象表汎用化
+
+api_preparation_hint:
+  - quick record は biometric_record 中心
+  - blood pressure save は blood_pressure_record 専用
+  - sleep import は sleep_record と raw trace を分ける
+  - dashboard response は snapshot 系を優先活用する
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200007_FIXED_DECISIONS_REFLECTION_PACK.md
+
+# ============================================================
+# FIXED DECISIONS REFLECTION PACK
+# ============================================================
+
+status: fixed
+
+purpose:
+  - BodyMetrics の未決事項を全て fixed decisions として閉じる
+  - 以後は change request 方式で扱う
+  - 実装前の設計基準を一意化する
+
+fixed_now:
+  - runtime schema = life
+  - fixed knowledge side = CX22073
+  - biometric_record / raw / normalized は分離
+  - average_comparison_snapshot は保存
+  - health_score_snapshot は保存
+  - sleep は起床日基準
+  - blood_pressure timing は標準化
+  - missing day は補完しない
+  - code columns は text + master contract
+  - DB enum は採用しない
+  - selective FK
+  - soft delete 全表採用はしない
+  - health score は日次更新 / 週次重視
+  - initial release に blood pressure component を含む
+  - external population average は初期搭載しない
+  - initial release で reference range を含む
+  - Family Care recipient limit = 5
+  - export permission は閲覧権限と分離
+  - Samsung はまず Health Connect 優先
+  - PC / tablet は three-zone layout
+
+implementation_boundary:
+  - 本反映は設計のみ
+  - SQL 作成はまだしない
+  - API 実装はまだしない
+  - 画面実装はまだしない
+
+future_change_policy:
+  - ここに書かれた内容は未決ではなく固定事項として扱う
+  - 後続変更は差分要求として管理する
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200008_API_REQUEST_RESPONSE_EXACT_PAYLOAD_FIXED_PACK.md
+
+# ============================================================
+# API REQUEST RESPONSE EXACT PAYLOAD FIXED PACK
+# ============================================================
+
+status: fixed
+
+apis:
+
+  - name: quick_record_metric
+    method: POST
+    path: /life/bodymetrics/records/metric
+    request:
+      user_id: uuid
+      metric_type: weight | heart_rate | blood_oxygen | body_temperature | body_fat_percentage
+      measured_value: number
+      unit_code: string
+      measured_at: iso8601
+      timezone_code: string
+      source_type: manual | apple_health | health_connect | smartwatch_vendor
+      source_device_id: string | null
+      note_text: string | null
+    response:
+      biometric_record_id: uuid
+      local_date: yyyy-mm-dd
+      saved: true
+      latest_value:
+        metric_type: string
+        measured_value: number
+        unit_code: string
+        measured_at: iso8601
+      comparison_summary:
+        personal_7day_average: number | null
+        personal_30day_average: number | null
+        gap_value: number | null
+        gap_rate: number | null
+      message:
+        ja: 記録しました
+        en: Saved
+
+  - name: save_blood_pressure
+    method: POST
+    path: /life/bodymetrics/records/blood-pressure
+    request:
+      user_id: uuid
+      systolic_value: number
+      diastolic_value: number
+      pulse_value: number | null
+      unit_code: mmHg
+      measured_at: iso8601
+      timezone_code: string
+      posture_code: sitting | standing | supine | null
+      timing_code: morning | night | other | null
+      source_type: manual | apple_health | health_connect | smartwatch_vendor
+      source_device_id: string | null
+      note_text: string | null
+    response:
+      blood_pressure_record_id: uuid
+      saved: true
+      latest_value:
+        systolic_value: number
+        diastolic_value: number
+        pulse_value: number | null
+        measured_at: iso8601
+      reference_summary:
+        reference_label: reference_range
+        systolic_reference_max: number | null
+        diastolic_reference_max: number | null
+      message:
+        ja: 血圧を記録しました
+
+  - name: save_sleep_record
+    method: POST
+    path: /life/bodymetrics/records/sleep
+    request:
+      user_id: uuid
+      sleep_start_at: iso8601
+      sleep_end_at: iso8601
+      duration_minutes: integer
+      sleep_score: number | null
+      source_type: manual | apple_health | health_connect | smartwatch_vendor
+      source_device_id: string | null
+      note_text: string | null
+    response:
+      sleep_record_id: uuid
+      saved: true
+      local_date_anchor: yyyy-mm-dd
+      comparison_summary:
+        personal_7day_average: number | null
+        personal_30day_average: number | null
+      message:
+        ja: 睡眠を記録しました
+
+  - name: save_activity_record
+    method: POST
+    path: /life/bodymetrics/records/activity
+    request:
+      user_id: uuid
+      activity_type: steps | distance | active_minutes
+      measured_value: number
+      unit_code: string
+      measured_at: iso8601 | null
+      local_date: yyyy-mm-dd
+      aggregation_type: daily_total | session
+      source_type: manual | apple_health | health_connect | smartwatch_vendor
+      source_device_id: string | null
+    response:
+      activity_record_id: uuid
+      saved: true
+      comparison_summary:
+        personal_7day_average: number | null
+        personal_30day_average: number | null
+
+  - name: get_dashboard
+    method: GET
+    path: /life/bodymetrics/dashboard
+    query:
+      user_id: uuid
+      date: yyyy-mm-dd
+    response:
+      user_id: uuid
+      date: yyyy-mm-dd
+      latest_cards:
+        weight:
+          value: number | null
+          unit_code: string | null
+          measured_at: iso8601 | null
+        blood_pressure:
+          systolic_value: number | null
+          diastolic_value: number | null
+          measured_at: iso8601 | null
+        sleep:
+          duration_minutes: integer | null
+          local_date_anchor: yyyy-mm-dd | null
+        steps:
+          measured_value: number | null
+          local_date: yyyy-mm-dd | null
+      health_score:
+        total_score: number | null
+        trend_direction: up | flat | down | null
+        summary_text: string | null
+      average_comparison_highlights:
+        - metric_type: string
+          current_value: number
+          personal_7day_average: number | null
+          gap_value: number | null
+          gap_rate: number | null
+      sync_status:
+        has_error: boolean
+        last_sync_at: iso8601 | null
+
+  - name: get_metric_trend
+    method: GET
+    path: /life/bodymetrics/trends/{metric_type}
+    query:
+      user_id: uuid
+      range_type: daily | weekly | monthly
+      date_from: yyyy-mm-dd
+      date_to: yyyy-mm-dd
+    response:
+      metric_type: string
+      unit_code: string
+      points:
+        - date: yyyy-mm-dd
+          value: number | null
+          source_type: string | null
+      overlays:
+        personal_7day_average:
+          - date: yyyy-mm-dd
+            value: number | null
+        personal_30day_average:
+          - date: yyyy-mm-dd
+            value: number | null
+      reference_band:
+        min: number | null
+        max: number | null
+        label: reference_range | null
+
+  - name: get_health_score
+    method: GET
+    path: /life/bodymetrics/health-score
+    query:
+      user_id: uuid
+      date: yyyy-mm-dd
+    response:
+      score_date: yyyy-mm-dd
+      total_score: number
+      score_version: string
+      summary_text: string | null
+      components:
+        - component_code: sleep_balance
+          component_score: number
+          component_weight: number
+          explanation_text: string | null
+        - component_code: activity_balance
+          component_score: number
+          component_weight: number
+          explanation_text: string | null
+        - component_code: weight_trend_balance
+          component_score: number
+          component_weight: number
+          explanation_text: string | null
+        - component_code: blood_pressure_stability
+          component_score: number
+          component_weight: number
+          explanation_text: string | null
+        - component_code: record_continuity
+          component_score: number
+          component_weight: number
+          explanation_text: string | null
+      warning:
+        medical_diagnosis: false
+
+  - name: get_weekly_review
+    method: GET
+    path: /life/bodymetrics/reviews/weekly
+    query:
+      user_id: uuid
+      week_start: yyyy-mm-dd
+    response:
+      week_start: yyyy-mm-dd
+      week_end: yyyy-mm-dd
+      metrics_summary:
+        - metric_type: weight
+          latest_value: number | null
+          weekly_average: number | null
+          trend_direction: up | flat | down | null
+        - metric_type: sleep_duration
+          latest_value: number | null
+          weekly_average: number | null
+          trend_direction: up | flat | down | null
+        - metric_type: steps
+          latest_value: number | null
+          weekly_average: number | null
+          trend_direction: up | flat | down | null
+      health_score:
+        total_score: number | null
+        previous_week_score: number | null
+        delta: number | null
+      notes:
+        - noted_at: iso8601
+          note_text: string
+
+  - name: upsert_health_goal
+    method: POST
+    path: /life/bodymetrics/goals
+    request:
+      user_id: uuid
+      goal_type: target_weight | step_target | sleep_target | blood_pressure_range
+      target_value: number | null
+      target_range_min: number | null
+      target_range_max: number | null
+      unit_code: string | null
+      start_date: yyyy-mm-dd
+      end_date: yyyy-mm-dd | null
+      description_text: string | null
+    response:
+      health_goal_id: uuid
+      saved: true
+
+  - name: connect_provider
+    method: POST
+    path: /life/bodymetrics/providers/connect
+    request:
+      user_id: uuid
+      provider_type: apple_health | health_connect | fitbit | garmin | samsung
+      provider_account_ref: string
+      permission_scope:
+        metrics:
+          - weight
+          - sleep
+          - steps
+          - blood_pressure
+    response:
+      device_link_id: uuid
+      link_status: connected | pending | failed
+      sync_enabled_flag: boolean
+
+  - name: get_share_settings
+    method: GET
+    path: /life/bodymetrics/family-care/share-settings
+    query:
+      owner_user_id: uuid
+    response:
+      shares:
+        - data_share_setting_id: uuid
+          recipient_user_id: uuid
+          share_status: active | ended
+          shared_metric_scope:
+            metrics:
+              - weight
+              - blood_pressure
+            summary_only: boolean
+          note_share_flag: boolean
+          export_permission_flag: boolean
+          start_at: iso8601
+          end_at: iso8601 | null
+
+  - name: create_or_update_share_setting
+    method: POST
+    path: /life/bodymetrics/family-care/share-settings
+    request:
+      owner_user_id: uuid
+      recipient_user_id: uuid
+      shared_metric_scope:
+        metrics:
+          - weight
+          - blood_pressure
+          - sleep
+          - steps
+        summary_only: boolean
+      note_share_flag: boolean
+      export_permission_flag: boolean
+      relationship_type: parent | child | spouse | family | other | null
+      start_at: iso8601
+      end_at: iso8601 | null
+    response:
+      data_share_setting_id: uuid
+      share_status: active
+      saved: true
+
+  - name: create_export_job
+    method: POST
+    path: /life/bodymetrics/exports
+    request:
+      user_id: uuid
+      format_type: pdf | csv
+      export_scope:
+        metrics:
+          - weight
+          - blood_pressure
+          - sleep
+          - steps
+        include_notes: boolean
+      date_range_start: yyyy-mm-dd
+      date_range_end: yyyy-mm-dd
+    response:
+      export_job_id: uuid
+      job_status: queued
+      accepted: true
+
+error_shapes:
+  validation_error:
+    code: validation_error
+    message: string
+    field_errors:
+      - field: string
+        reason: string
+
+  permission_denied:
+    code: permission_denied
+    message: string
+
+  scope_denied:
+    code: scope_denied
+    message: string
+
+  provider_link_failed:
+    code: provider_link_failed
+    message: string
+    provider_type: string
+
+  export_rejected:
+    code: export_rejected
+    message: string
+
+fixed_notes:
+  - API は実装前提の exact payload 固定用である
+  - medical diagnosis に見える返却はしない
+  - Family Care は effective scope を返却の上限とする
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200009_UI_EXACT_DISPLAY_REFLECTION_PACK.md
+
+# ============================================================
+# UI EXACT DISPLAY REFLECTION PACK
+# ============================================================
+
+status: fixed
+
+purpose:
+  - BodyMetrics の画面別表示項目を exact fixed pack として閉じる
+  - API / DB / UI の読み合わせ前提を揃える
+  - 実装前の UI 設計判断を固定する
+
+fixed_now:
+  - dashboard card 構成固定
+  - quick record の対象固定
+  - metric_detail の required sections 固定
+  - trend_analysis の comparison panel 固定
+  - health_score_center の total + breakdown 固定
+  - weekly_review の summary 構成固定
+  - goal_center の表示項目固定
+  - provider_link_settings の表示責務固定
+  - family_care_settings の共有編集項目固定
+  - export_center の表示責務固定
+  - pc / tablet three-zone layout 固定
+
+implementation_boundary:
+  - 本反映は画面設計のみ
+  - UI 実装はまだ行わない
+  - コンポーネント分割はまだ行わない
+  - 文言細部の微修正は change request 扱いにする
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200010_IMPLEMENTATION_READINESS_GATE_CANONICAL.md
+
+# ============================================================
+# IMPLEMENTATION READINESS GATE CANONICAL
+# ============================================================
+
+status: fixed-canonical
+
+implementation_readiness_definition:
+  - 実装に入る前に必要な設計情報が過不足なく揃っている状態
+  - ただしコード・SQL・画面実装そのものはまだ行わない
+
+ready_items:
+  - app scope fixed
+  - billing fixed
+  - runtime schema fixed
+  - unresolved items closed
+  - DB structure fixed
+  - API request / response fixed
+  - screen display fixed
+  - Family Care permission model fixed
+  - privacy / audit gates fixed
+  - code contracts fixed
+  - test readiness gate fixed
+
+not_started_items:
+  - SQL writing
+  - API server implementation
+  - client implementation
+  - connector implementation
+  - UI component implementation
+
+judgement:
+  bodymetrics_design_state: implementation_ready
+
+
+
+
+---
+
+# SOURCE: 120.implementation/1200011_IMPLEMENTATION_PREP_COMPLETION_DECLARATION.md
+
+# ============================================================
+# IMPLEMENTATION PREP COMPLETION DECLARATION
+# ============================================================
+
+status: fixed
+
+declaration:
+  - BodyMetrics は設計上、実装準備完了まで到達した
+  - 未決事項は残っていない
+  - 今後の変更は change request として扱う
+  - 次段階は実装そのものではなく、必要であれば実装着手用出力作成である
+
+final_fixed_summary:
+  - runtime schema = life
+  - fixed knowledge side = CX22073
+  - personal core free
+  - Family Care monthly 300 JPY
+  - AI chat only support
+  - no diagnosis / no treatment decision
+  - average comparison included
+  - health score included
+  - Family Care recipient limit = 5
+  - API exact payload fixed
+  - UI exact display fixed
+  - DB / API / UI consistency fixed
+  - privacy / audit / permission gate fixed
+
+next_stage_note:
+  - 実装する場合は change request なしでこの設計を起点にしてよい
+
+
+
+
+---
+
+# SOURCE: 130.development/1300000_DEVELOPMENT_INDEX.md
+
+# ============================================================
+# DEVELOPMENT INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 1300001_DEVELOPMENT_OVERVIEW.md
+  - 1300002_TEST_AND_RELEASE_PREPARATION.md
+  - 1300003_TEST_READINESS_ACCEPTANCE_GATE.md
+
+
+
+
+---
+
+# SOURCE: 130.development/1300001_DEVELOPMENT_OVERVIEW.md
+
+# ============================================================
+# DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: draft
+
+development_focus:
+  - metric normalization correctness
+  - graph explanation clarity
+  - privacy-safe sharing
+  - careful health wording
+
+
+
+
+---
+
+# SOURCE: 130.development/1300002_TEST_AND_RELEASE_PREPARATION.md
+
+# ============================================================
+# TEST AND RELEASE PREPARATION
+# ============================================================
+
+status: draft
+
+test_priorities:
+  - duplicate import prevention
+  - unit conversion correctness
+  - average comparison correctness
+  - score snapshot consistency
+  - sharing scope enforcement
+  - export permission separation
+  - AI support boundary compliance
+
+release_checks:
+  - medical-claim wording review
+  - reference source freshness review
+  - privacy / audit verification
+
+
+
+
+---
+
+# SOURCE: 130.development/1300003_TEST_READINESS_ACCEPTANCE_GATE.md
+
+# ============================================================
+# TEST READINESS ACCEPTANCE GATE
+# ============================================================
+
+status: fixed
+
+purpose:
+  - 実装着手前に、何を満たせば設計完了とみなすかを固定する
+
+test_groups:
+
+  db_logic:
+    - measured_at と local_date の整合
+    - sleep の起床日基準
+    - blood pressure timing_code 標準化
+    - duplicate import 抑止
+    - correction_record 保存整合
+
+  comparison_and_score:
+    - personal_7day_average 計算
+    - personal_30day_average 計算
+    - average_comparison_snapshot 保存
+    - health_score_snapshot 保存
+    - missing component 再重み付け
+    - score version 反映
+
+  api_contract:
+    - request field 必須条件
+    - response shape 固定
+    - null 許容位置
+    - error shape 固定
+    - Family Care scope 反映
+
+  ui_contract:
+    - dashboard card 表示項目
+    - trend_analysis comparison panel
+    - health_score_center total + breakdown
+    - weekly_review summary
+    - family_care_settings toggles
+    - export_center selectors
+
+  privacy_and_permission:
+    - initial non-shared
+    - note_share_flag default false
+    - export_permission_flag default false
+    - recipient scope 制限
+    - unauthorized export deny
+
+acceptance_gate:
+  design_ready_for_implementation:
+    requires:
+      - DB responsibility fixed
+      - API payload fixed
+      - UI display fixed
+      - code contracts fixed
+      - privacy / permission gate fixed
+      - unresolved_items_remaining = none
+
+not_in_scope_yet:
+  - SQL 実装
+  - API 実装
+  - UI 実装
+  - provider SDK 実接続
+
+
+
+
+---
+
+# SOURCE: 900.meta/9000000_META_INDEX.md
+
+# ============================================================
+# META INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 9000001_META_OVERVIEW.md
+  - 9000002_DOCUMENT_MAP_AND_HANDOFF.md
+  - 9000003_CHANGE_REQUEST_POLICY.md
+  - 9000004_FINAL_HANDOFF_CHECKLIST.md
+  - 9000005_FINAL_HANDOFF_OVERVIEW.md
+  - 9000006_INTEGRATED_REGENERATION_NOTE.md
+
+
+
+
+---
+
+# SOURCE: 900.meta/9000001_META_OVERVIEW.md
+
+# ============================================================
+# META OVERVIEW
+# ============================================================
+
+status: draft
+
+meta_purpose:
+  - 文書構成を把握しやすくする
+  - 引き継ぎ意図を明確にする
+  - 固定事項と未決事項を分離する
+
+
+
+
+---
+
+# SOURCE: 900.meta/9000002_DOCUMENT_MAP_AND_HANDOFF.md
+
+# ============================================================
+# DOCUMENT MAP AND HANDOFF
+# ============================================================
+
+status: draft
+
+intent:
+  - BodyMetrics の正式設計へ進めるための初期設計書束
+  - 課金・境界・比較・スコアの固定条件を明文化した状態
+  - 実装準備に向けた基礎整理状態
+
+handoff_notes:
+  - 共通部品の採否は別チャット扱い
+  - reference 知識は固定知識として管理する
+  - user の実測値は runtime data として管理する
+
+
+
+
+---
+
+# SOURCE: 900.meta/9000003_CHANGE_REQUEST_POLICY.md
+
+# ============================================================
+# CHANGE REQUEST POLICY
+# ============================================================
+
+status: fixed
+
+purpose:
+  - BodyMetrics の設計固定後の変更取り扱いを明文化する
+
+policy:
+  - 未決事項として戻さない
+  - 以後の変更は change request として扱う
+  - 変更対象は affected documents を列挙して管理する
+  - fixed canonical を直接曖昧化しない
+  - 変更理由、影響範囲、採否判断を分ける
+
+change_request_minimum_fields:
+  - request_title
+  - requester
+  - reason
+  - affected_area
+  - affected_documents
+  - fixed_decision_before
+  - requested_decision_after
+  - impact_on_db
+  - impact_on_api
+  - impact_on_ui
+  - impact_on_pricing_optional
+  - approval_status
+
+prohibited_change_style:
+  - fixed canonical の無断上書き
+  - DB / API / UI の片側だけ変更
+  - medical boundary を曖昧化する変更
+
+
+
+
+---
+
+# SOURCE: 900.meta/9000004_FINAL_HANDOFF_CHECKLIST.md
+
+# ============================================================
+# FINAL HANDOFF CHECKLIST
+# ============================================================
+
+status: fixed
+
+handoff_checklist:
+  scope_and_identity:
+    - [x] app scope fixed
+    - [x] billing fixed
+    - [x] support policy fixed
+    - [x] medical boundary fixed
+
+  data_design:
+    - [x] runtime schema fixed to life
+    - [x] fixed knowledge boundary fixed
+    - [x] table inventory fixed
+    - [x] exact columns and types fixed
+    - [x] code contract fixed
+
+  logic_design:
+    - [x] average comparison policy fixed
+    - [x] reference range policy fixed
+    - [x] health score policy fixed
+    - [x] Family Care permission model fixed
+
+  api_design:
+    - [x] endpoint list fixed
+    - [x] request payload fixed
+    - [x] response payload fixed
+    - [x] error shape fixed
+
+  ui_design:
+    - [x] screen list fixed
+    - [x] screen exact display fixed
+    - [x] action priority fixed
+    - [x] pc/tablet analysis layout fixed
+
+  readiness_and_quality:
+    - [x] DB/API/UI consistency fixed
+    - [x] privacy gate fixed
+    - [x] audit gate fixed
+    - [x] test readiness gate fixed
+    - [x] unresolved items remaining = none
+
+declaration:
+  - BodyMetrics は設計上、実装準備完了まで到達した
+
+
+
+
+---
+
+# SOURCE: 900.meta/9000005_FINAL_HANDOFF_OVERVIEW.md
+
+# ============================================================
+# FINAL HANDOFF OVERVIEW
+# ============================================================
+
+status: fixed
+
+handoff_intent:
+  - BodyMetrics の設計状態を一目で把握できるようにする
+  - 実装前レビュー、引き継ぎ、将来差分管理の基点にする
+
+current_state:
+  design_state: implementation_ready
+  implementation_started: false
+  unresolved_items_remaining: none
+
+what_is_fixed:
+  - scope
+  - billing
+  - schema
+  - data architecture
+  - scoring
+  - reference policy
+  - Family Care policy
+  - API payloads
+  - UI display
+  - privacy and permission
+  - readiness gate
+
+what_is_next:
+  - 実装するなら、この設計を起点に着手用出力を作る
+  - 変更するなら、change request 方式で差分管理する
+
+reader_note:
+  - まず 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md を読む
+  - 次に 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md を読む
+  - その後 0000003_BODYMETRICS_READING_ORDER.md に従う
+
+
+
+
+---
+
+# SOURCE: 900.meta/9000006_INTEGRATED_REGENERATION_NOTE.md
+
+# ============================================================
+# INTEGRATED REGENERATION NOTE
+# ============================================================
+
+status: fixed
+
+purpose:
+  - 統合版再生成を行ったことを記録する
+  - どの文書を統合基準として読めばよいかを示す
+
+integrated_documents:
+  - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+  - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+  - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+
+reader_guidance:
+  first_read:
+    - 0000004_BODYMETRICS_INTEGRATED_CANONICAL.md
+    - 0000005_BODYMETRICS_IMPLEMENTATION_READY_INTEGRATED.md
+    - 0000006_BODYMETRICS_ENTRYPOINTS_AND_AUDIT_GUIDE.md
+  then_follow:
+    - 0000003_BODYMETRICS_READING_ORDER.md
+
+note:
+  - 統合版は既存の詳細文書を置き換えるものではなく、全体を短く把握するための正本要約である
+  - 詳細確認は各下位 canonical / fixed 文書を参照する
+

@@ -3,21 +3,31 @@
 # ============================================================
 
 status: canonical
-layer: 020.architecture
+layer: architecture
+domain: business-ai-worker
 system: business-os
 owner: Boss
 prepared_by: Zero
 
-definition:
-Business AI Worker is the upper concept for company-scoped work-use AI.
+purpose:
+Defines the official architecture of Business AI Worker.
 
-worker types:
-- company_secretary
-- business_consultant
-- ai_employee
+architecture_components:
+- worker template
+- employed worker
+- employment slot
+- reservation queue
+- assignment
+- capability surface
+- company knowledge
+- company terminology
+- usage log
+- app consumption
+- notification routing
+- review and approval boundary
+- subscription and billing
+- rank policy
 
-principles:
-- work-use AI belongs to BusinessOS operation layer
-- work-use AI is company-scoped, not personal-owned
-- worker template and company operation layer remain distinct
-- shared template and company-grown knowledge remain distinct
+official_rule:
+Business AI Worker owns company-scoped work operation truth.
+It does not own persona canonical identity or persona internal state.

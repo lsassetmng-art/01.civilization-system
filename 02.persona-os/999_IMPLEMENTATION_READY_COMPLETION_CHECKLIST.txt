@@ -1,0 +1,24 @@
+PERSONA OS IMPLEMENTATION READY COMPLETION CHECKLIST
+
+[done] root overview aligned
+[done] constitution overview aligned
+[done] architecture aligned
+[done] model aligned
+[done] runtime aligned
+[done] flow aligned
+[done] policy aligned
+[done] interface aligned
+[done] integration aligned
+[done] operations aligned
+[done] implementation exact files aligned
+[done] development guides aligned
+[done] infrastructure aligned
+[done] security aligned
+[done] root index aligned
+[done] integrated canonical rebuild generated
+
+NOTE
+- completion means design-side implementation readiness
+- source code generation is outside this checklist
+- SQL migration generation is outside this checklist
+- OpenAPI/protobuf artifact generation is outside this checklist

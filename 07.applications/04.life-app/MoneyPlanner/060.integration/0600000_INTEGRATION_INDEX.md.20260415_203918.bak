@@ -1,0 +1,18 @@
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 060.integration
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0600001_MONEY_PLANNER_INTEGRATION_OVERVIEW.md
+  - 010.core/0600002_INTEGRATION_CORE_INDEX.md
+  - 010.core/0600003_INTEGRATION_CORE_OVERVIEW.md
+  - 010.core/0600004_MONEY_PLANNER_INTEGRATION_BOUNDARY.md

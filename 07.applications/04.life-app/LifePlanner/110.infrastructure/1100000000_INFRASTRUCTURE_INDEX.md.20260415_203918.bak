@@ -1,0 +1,12 @@
+# ============================================================
+# INFRASTRUCTURE INDEX
+# ============================================================
+
+layer: 110.infrastructure
+
+documents:
+  - 1100000000_INFRASTRUCTURE_INDEX.md
+  - 1100000001_INFRASTRUCTURE_OVERVIEW.md
+
+subfolders:
+  - 010.device-platform

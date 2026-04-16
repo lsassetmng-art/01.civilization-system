@@ -1,16 +1,54 @@
+# ============================================================
 # PERSONA EXTERNAL RELEASE SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
 
-status: canonical
-layer: implementation
-domain: external_rights
-owner: Boss
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / external release
 prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
 
-## PURPOSE
-Specify implementation behavior for external release issuance.
+## Release eligibility
 
-## REQUIREMENTS
-- deterministic release code
-- signature-ready payload
-- revocation support
-- mirrorable metadata export
+Only published releases may be externally released.
+Required:
+- published release id
+- package id
+- effective license or access policy
+- marketplace or platform destination code
+
+## API
+
+### POST /persona/v1/external-releases
+
+Request:
+```json
+{
+  "release_id": "01REL...",
+  "package_id": "01PKG...",
+  "destination_platform_code": "civilization-marketplace",
+  "requested_by_actor_id": "01ACTOR..."
+}
+```
+
+Response `201`:
+```json
+{
+  "ok": true,
+  "data": {
+    "external_release_id": "01EXTREL...",
+    "status": "queued"
+  }
+}
+```
+
+## States
+
+- `queued`
+- `syncing`
+- `released`
+- `failed-retryable`
+- `failed-terminal`
+- `dead-lettered`

@@ -1,0 +1,14 @@
+# ============================================================
+# INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical-draft
+integration_targets:
+  - InheritanceSupport
+  - EndOfLifePlanner
+  - MoneyPlanner
+
+policy:
+  - 明示リンクのみ
+  - 元アプリ正本主義
+  - 参照要約受信を基本とする

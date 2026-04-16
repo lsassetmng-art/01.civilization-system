@@ -1,0 +1,15 @@
+# ============================================================
+# CORE ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+core_modules:
+  - manual_record_capture
+  - provider_import_capture
+  - metric_normalization
+  - trend_analysis
+  - reference_comparison
+  - health_score
+  - sharing_control
+  - export_service

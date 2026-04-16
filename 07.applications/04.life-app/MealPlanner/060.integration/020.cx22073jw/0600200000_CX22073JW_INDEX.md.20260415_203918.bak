@@ -1,0 +1,11 @@
+# Integration CX22073JW Index
+
+## purpose
+MealPlanner と CX22073JW の連携を定義する
+
+## files
+- 0600200001_CX22073JW_OVERVIEW.md
+
+## notes
+- この index は Integration CX22073JW の入口である
+- 詳細は配下ドキュメントを参照する

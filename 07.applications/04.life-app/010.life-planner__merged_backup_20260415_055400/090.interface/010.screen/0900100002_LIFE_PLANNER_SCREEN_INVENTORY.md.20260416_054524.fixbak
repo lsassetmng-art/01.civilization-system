@@ -1,0 +1,21 @@
+# ============================================================
+# LIFE PLANNER SCREEN INVENTORY
+# ============================================================
+
+screens:
+  - home
+  - life_plan_list
+  - life_plan_detail
+  - timeline_view
+  - goal_list
+  - goal_edit
+  - review_log_view
+  - risk_list
+  - scenario_compare
+  - domain_dashboard
+  - age_view
+  - family_share_setting
+  - reflection_candidate_view
+  - notification_center
+  - pricing_guide
+  - settings

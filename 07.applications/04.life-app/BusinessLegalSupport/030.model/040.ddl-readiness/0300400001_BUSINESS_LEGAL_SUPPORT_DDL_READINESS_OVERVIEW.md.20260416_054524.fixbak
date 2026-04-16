@@ -1,0 +1,49 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# BUSINESS LEGAL SUPPORT DDL READINESS OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 030.model
+subfolder: 040.ddl-readiness
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - BusinessLegalSupport の DDL 実装前提を固定する
+  - テーブル作成順、制約方針、監査列方針をそろえる
+  - 実SQLに入る前の判断ぶれをなくす
+
+principles:
+  - 正本スキーマは life
+  - DDL は app 専用の軽量責務に限定する
+  - BusinessOS/ERP の正式統制DDLと競合しない
+  - 論理削除を前提にする
+  - exact SQL はまだ書かない
+
+ddl_scope:
+  in_scope:
+    - table creation order
+    - primary / foreign key policy
+    - nullable policy
+    - timestamp / soft delete policy
+    - recommended index policy
+  out_of_scope:
+    - actual CREATE TABLE SQL
+    - actual CREATE INDEX SQL
+    - actual RLS SQL
+    - trigger implementation

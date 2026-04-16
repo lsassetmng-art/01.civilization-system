@@ -1,0 +1,18 @@
+# ============================================================
+# END OF LIFE PLANNER INTERFACE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L12-minor-values-closure
+
+interface_scope:
+  - formal screen specification
+  - elderly accessibility note
+  - ui wording polish
+  - role based visibility
+  - safety first interface behavior
+
+important_boundary:
+  - design-only
+  - 実装未着手
+  - 画面仕様の微調整固定段階

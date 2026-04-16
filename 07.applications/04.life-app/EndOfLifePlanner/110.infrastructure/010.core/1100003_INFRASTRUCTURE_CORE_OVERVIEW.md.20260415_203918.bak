@@ -1,0 +1,18 @@
+# ============================================================
+# INFRASTRUCTURE CORE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L14-document-consistency-check
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: EndOfLifePlanner
+schema: life
+layer: 110.infrastructure
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+core_scope:
+  - EndOfLifePlanner の インフラ における中核設計を扱う
+  - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する

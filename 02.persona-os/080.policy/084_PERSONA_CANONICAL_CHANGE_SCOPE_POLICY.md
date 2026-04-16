@@ -1,7 +1,11 @@
 # PERSONA CANONICAL CHANGE SCOPE POLICY
-status: canonical
-layer: policy
-system: persona-os
-scope: persona-canonical-change-scope-policy
 
-Defines the allowed canonical change scope for external requests.
+status: implementation-ready-followup
+
+authority_rule:
+Only canonical apply may mutate persona truth state.
+
+forbidden_sources:
+- builder draft write
+- runtime session write
+- downstream callback write

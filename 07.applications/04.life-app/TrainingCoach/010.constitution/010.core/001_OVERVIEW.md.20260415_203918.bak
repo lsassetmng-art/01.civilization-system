@@ -1,0 +1,21 @@
+# ============================================================
+# OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+domain: 01.civilization-system/07.applications/04.life-app
+path: 010.constitution/010.core
+owner: Boss
+prepared_by: Zero
+
+summary:
+  - TrainingCoach は LifeOS 健康領域のトレーニング支援アプリである
+  - ヨガ、ストレッチ、器具運動、日常運動の継続支援を主目的とする
+  - 医療診断・治療は扱わず、生活改善と習慣化支援に限定する
+
+design_policy:
+  - CivilizationOS準拠のレイヤー構造で整理する
+  - 各レイヤーは index / overview を持つ
+  - 共通化可能な責務は application common components へ寄せる余地を残す

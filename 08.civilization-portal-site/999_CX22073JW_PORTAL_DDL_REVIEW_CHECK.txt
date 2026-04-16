@@ -1,0 +1,171 @@
+============================================================
+PORTAL / CX22073JW / scenario DDL REVIEW CHECK
+============================================================
+
+=== 1. TARGET FILES ===
+-rw-------. 1 u0_a402 u0_a402  11K Apr 14 05:03 /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120012_CX22073JW_CORE_AND_CHARACTER_PROFILE_DDL_DRAFT.sql
+-rw-------. 1 u0_a402 u0_a402 9.4K Apr 14 05:03 /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120013_SCENARIO_CORE_DDL_DRAFT.sql
+-rw-------. 1 u0_a402 u0_a402  972 Apr 14 05:03 /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120014_CX22073JW_AND_SCENARIO_INTEGRATED_DDL_DRAFT.sql
+-rw-------. 1 u0_a402 u0_a402 5.7K Apr 14 05:29 /data/data/com.termux/files/home/01.civilization-system/08.civilization-portal-site/120.implementation-ready/120019_PORTAL_SCHEMA_DDL_DRAFT.sql
+
+=== 2. SCHEMA DECLARATIONS ===
+6:create schema if not exists portal;
+6:create schema if not exists "CX22073JW";
+6:create schema if not exists "scenario";
+
+=== 3. TABLE COUNT BY DDL FILE ===
+portal ddl                     : 6
+CX22073JW core ddl            : 12
+scenario core ddl    : 13
+
+=== 4. PORTAL TABLES ===
+create table if not exists portal.copy_text (
+create table if not exists portal.nav_node (
+create table if not exists portal.nav_node_target (
+create table if not exists portal.helpdesk_entry (
+create table if not exists portal.page_section (
+create table if not exists portal.page_section_item (
+
+=== 5. CX22073JW TABLES ===
+create table if not exists "CX22073JW".domain_master (
+create table if not exists "CX22073JW".space_master (
+create table if not exists "CX22073JW".scope_master (
+create table if not exists "CX22073JW".article (
+create table if not exists "CX22073JW".chunk (
+create table if not exists "CX22073JW".faq (
+create table if not exists "CX22073JW".caller_master (
+create table if not exists "CX22073JW".caller_scope_binding (
+create table if not exists "CX22073JW".disclaimer_master (
+create table if not exists "CX22073JW".route_policy (
+create table if not exists "CX22073JW".entity_master (
+create table if not exists "CX22073JW".character_profile (
+
+=== 6. scenario TABLES ===
+create table if not exists "scenario".scenario_master (
+create table if not exists "scenario".scenario_version (
+create table if not exists "scenario".scenario_chapter (
+create table if not exists "scenario".scenario_scene (
+create table if not exists "scenario".scenario_scene_node (
+create table if not exists "scenario".scenario_choice (
+create table if not exists "scenario".scenario_branch_rule (
+create table if not exists "scenario".scenario_trigger (
+create table if not exists "scenario".scenario_playback_profile (
+create table if not exists "scenario".scenario_character_binding (
+create table if not exists "scenario".scenario_event_binding (
+create table if not exists "scenario".scenario_asset_binding (
+create table if not exists "scenario".scenario_progress_rule (
+
+=== 7. CHARACTER PROFILE COLUMN CHECK ===
+create table if not exists "CX22073JW".character_profile (
+  character_profile_id uuid primary key default gen_random_uuid(),
+  entity_id uuid not null unique references "CX22073JW".entity_master(entity_id),
+  character_code text not null unique,
+  display_name text not null,
+  official_name text null,
+  short_bio text null,
+  character_type text not null,
+  origin_type text not null,
+  gender_code text null,
+  species_type text null,
+  role_title text null,
+  occupation_code text null,
+  affiliation_country_code text null,
+  affiliation_company_code text null,
+  affiliation_org_code text null,
+  rank_or_position text null,
+  age integer null,
+  birth_year integer null,
+  birth_year_precision text null,
+  death_year integer null,
+  death_year_precision text null,
+  era_label text null,
+  life_status text not null,
+  importance_level text null,
+  portrait_asset_id uuid null,
+  canonical_article_id uuid null references "CX22073JW".article(article_id),
+  public_status text not null,
+  status text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+=== 8. REQUIRED CHARACTER FIELDS CHECK ===
+222:  affiliation_country_code text null,
+223:  affiliation_company_code text null,
+226:  age integer null,
+227:  birth_year integer null,
+229:  death_year integer null,
+
+=== 9. CROSS-SCHEMA REFERENCE POLICY NOTE ===
+-- ============================================================
+-- CX22073JW AND SCENARIO INTEGRATED DDL DRAFT
+-- draft-additive / not applied
+-- ============================================================
+
+-- This file intentionally acts as an integrated handoff shell.
+-- Apply order:
+-- 1. 120012_CX22073JW_CORE_AND_CHARACTER_PROFILE_DDL_DRAFT.sql
+-- 2. 120013_SCENARIO_CORE_DDL_DRAFT.sql
+
+-- Cross-schema reference policy:
+-- scenario side may reference CX22073JW identifiers logically.
+-- physical foreign keys across schemas can be added later after
+-- final DB environment policy is fixed.
+
+-- planned logical references:
+-- scenario.scenario_master.canonical_article_id
+--   -> CX22073JW.article.article_id
+--
+-- scenario.scenario_character_binding.character_entity_id
+--   -> CX22073JW.entity_master.entity_id
+--
+-- scenario.scenario_event_binding.timeline_event_id
+--   -> CX22073JW.timeline_event.timeline_event_id
+
+=== 10. SEED FILE DEPENDENCY CHECK ===
+--- portal seed requires portal tables ---
+9:insert into portal.copy_text
+28:insert into portal.helpdesk_entry
+37:insert into portal.nav_node
+49:insert into portal.nav_node_target
+72:insert into portal.page_section
+86:insert into portal.page_section_item
+94:insert into portal.page_section_item
+
+--- CX22073JW seed requires CX22073JW tables ---
+9:insert into "CX22073JW".domain_master
+29:insert into "CX22073JW".space_master
+56:insert into "CX22073JW".scope_master
+83:insert into "CX22073JW".disclaimer_master
+96:insert into "CX22073JW".caller_master
+114:insert into "CX22073JW".caller_scope_binding
+144:insert into "CX22073JW".route_policy
+
+=== 11. NOT YET IN CORE DDL BUT ALREADY DESIGNED ===
+Expected later expansion examples:
+entity_alias
+relation_master
+article_entity_binding
+discipline_master
+topic_master
+timeline_event
+answer_style_profile
+character_profile is already included
+scenario_event_binding exists in sinario core but references are still logical
+
+=== 12. REVIEW QUESTIONS ===
+[Q1] Keep cross-schema references logical only for now?
+[Q2] Keep pgcrypto + gen_random_uuid as the UUID strategy?
+[Q3] Split CX22073JW core apply and full expansion apply into separate SQL phases?
+[Q4] Keep portal seed and CX22073JW seed as separate apply units?
+[Q5] Add answer_style_profile / retrieval_profile before first execution, or defer to expansion phase?
+
+=== 13. RECOMMENDED NEXT STEP ===
+1. Freeze review answers for Q1-Q5
+2. Produce APPLY-READY SQL v1 for portal + CX22073JW core + scenario core
+3. Produce SEED-READY SQL v1
+4. Keep full expansion as v2
+
+============================================================
+DDL REVIEW CHECK COMPLETE
+============================================================

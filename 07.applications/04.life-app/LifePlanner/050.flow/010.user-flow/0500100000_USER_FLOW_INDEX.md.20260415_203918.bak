@@ -1,0 +1,10 @@
+# ============================================================
+# USER FLOW INDEX
+# ============================================================
+
+subfolder: 010.user-flow
+
+documents:
+  - 0500100000_USER_FLOW_INDEX.md
+  - 0500100001_USER_FLOW_OVERVIEW.md
+  - 0500100002_LIFE_PLANNER_CORE_USER_FLOWS.md

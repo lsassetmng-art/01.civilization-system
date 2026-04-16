@@ -1,0 +1,16 @@
+# ============================================================
+# DECISION LOG OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 030.decision-log
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - このチャットで固定した設計判断を後から追えるようにする
+  - 未決事項と決定事項を混ぜない
+  - 次チャットや別担当への引き継ぎを容易にする

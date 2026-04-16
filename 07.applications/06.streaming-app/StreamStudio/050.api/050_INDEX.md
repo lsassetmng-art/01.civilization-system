@@ -1,0 +1,23 @@
+# ============================================================
+# 050 API INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 050.api
+owner: Boss
+prepared_by: Zero
+
+files:
+- 050_STREAM_STUDIO_API_SURFACE.md
+- 051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md
+- 052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md
+- 053_STREAM_STUDIO_REVIEW_APPROVAL_API_EXACT.md
+- 054_STREAM_STUDIO_PUBLISH_API_EXACT.md
+- 055_STREAM_STUDIO_MARKETPLACE_LISTING_API_EXACT.md
+- 056_STREAM_STUDIO_MEMBERSHIP_API_EXACT.md
+- 057_STREAM_STUDIO_SPLIT_AND_SETTLEMENT_API_EXACT.md
+- 058_STREAM_STUDIO_ERROR_VALIDATION_IDEMPOTENCY_POLICY.md
+- 059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md

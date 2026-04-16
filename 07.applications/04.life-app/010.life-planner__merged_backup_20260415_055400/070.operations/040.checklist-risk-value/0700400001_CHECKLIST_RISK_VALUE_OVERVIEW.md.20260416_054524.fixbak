@@ -1,0 +1,21 @@
+# ============================================================
+# CHECKLIST RISK VALUE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 070.operations
+subfolder: 040.checklist-risk-value
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 将来チェックリスト、リスク一覧、価値観整理ワークの運用意味を定義する
+  - これらを単なる補助UIではなく、計画見直し支援の一部として位置づける
+  - 長期計画に必要な「抜け漏れ防止」「不確実性整理」「優先基準整理」を扱う
+
+principles:
+  - checklist は不安を煽るためではなく抜け漏れ確認のために使う
+  - risk list は悲観表ではなく備えの整理表として扱う
+  - value work は計画の優先順位づけを助ける

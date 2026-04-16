@@ -1,0 +1,15 @@
+# 0900200000 INTERFACE DETAIL INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200000_INTERFACE_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0900200001_CAREER_LAUNCH_INTERFACE_DETAIL_OVERVIEW.md
+- 0900200002_CAREER_LAUNCH_SCREEN_CATALOG.md
+- 0900200003_CAREER_LAUNCH_SCREEN_TRANSITION_RULES.md
+- 0900200004_CAREER_LAUNCH_LIST_AND_DETAIL_PRESENTATION_RULES.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

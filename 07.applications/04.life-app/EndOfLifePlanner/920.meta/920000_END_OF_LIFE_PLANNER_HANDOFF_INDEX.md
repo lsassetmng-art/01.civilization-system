@@ -1,0 +1,27 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# END OF LIFE PLANNER HANDOFF INDEX
+# ============================================================
+
+status: canonical-draft
+phase: L13-implementation-preparation-complete
+
+files:
+  - 920001_END_OF_LIFE_PLANNER_HANDOFF_OVERVIEW.md
+  - 920010_END_OF_LIFE_PLANNER_NEXT_CHAT_HANDOFF.md
+  - 920020_END_OF_LIFE_PLANNER_COMMON_COMPONENT_OFFICIAL_REVIEW_BLOCK.md
+  - 920030_END_OF_LIFE_PLANNER_FINAL_HANDOFF_CONSOLIDATION.md
+  - 920040_END_OF_LIFE_PLANNER_DESIGN_COMPLETION_SUMMARY.md
+  - 920050_END_OF_LIFE_PLANNER_FINAL_READY_HANDOFF_NOTE.md
+  - 920060_END_OF_LIFE_PLANNER_IMPLEMENTATION_PREPARATION_HANDOFF.md

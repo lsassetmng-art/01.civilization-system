@@ -1,0 +1,15 @@
+# 0400200000 RUNTIME DETAIL INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200000_RUNTIME_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0400200001_CAREER_LAUNCH_RUNTIME_DETAIL_OVERVIEW.md
+- 0400200002_CAREER_LAUNCH_RUNTIME_EVENT_CHAIN.md
+- 0400200003_CAREER_LAUNCH_NOTIFICATION_RUNTIME_RULES.md
+- 0400200004_CAREER_LAUNCH_SUMMARY_GENERATION_RUNTIME.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

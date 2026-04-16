@@ -1,53 +1,16 @@
-# ============================================================
 # PERSONA RETRY DEAD LETTER RUNTIME
-# ============================================================
 
-status: canonical
-layer: 040.runtime
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-purpose:
-Define runtime for retry and dead-letter handling in PersonaOS.
+retry_runtime:
+- retry only retry-safe side effects
+- preserve correlation and attempt count
+- stop at max attempts
+- persist dead-letter evidence
 
-runtime_scope:
-- validate failure target
-- validate retry and terminal basis
-- update retry or dead-letter state
-- preserve failure traceability
-
-trigger_conditions:
-- recoverable failure detected
-- retry scheduled
-- retry exhausted
-- dead letter admitted
-- restoration requested
-
-processing_steps:
-1 resolve failure or dead-letter target
-2 verify retry, cutoff, and terminal basis
-3 apply retry or dead-letter state transition
-4 persist failure result
-5 preserve audit and failure trace
-
-retry_principles:
-- retry only for explicitly recoverable failures
-- backoff must be explicit and bounded
-- retry exhaustion must transition deterministically
-- restoration must remain explicit
-
-dead_letter_conditions:
-- exhausted retry budget
-- incompatible contract version
-- irrecoverable validation failure
-- authority basis unresolved after retry window
-- target missing beyond terminal cutoff
-
-success_condition:
-- persona retry or dead-letter lifecycle updated explicitly
-
-failure_condition:
-- invalid target
-- retry or dead-letter basis unresolved
-- persistence failure
+dead_letter_required_fields:
+- source_path
+- correlation_id
+- failure_code
+- attempt_count
+- dead_lettered_at

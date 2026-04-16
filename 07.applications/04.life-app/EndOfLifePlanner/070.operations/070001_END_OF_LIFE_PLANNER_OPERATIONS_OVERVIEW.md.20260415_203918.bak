@@ -1,0 +1,13 @@
+# ============================================================
+# END OF LIFE PLANNER OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+operations_scope:
+  - 共有設定運用
+  - 高機微出力運用
+  - 定期見直し通知
+  - 監査ログ確認
+  - 家族向け閲覧運用

@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT HANDOFF META INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: HANDOFF_META
+
+purpose:
+  - 引き継ぎと次チャット接続情報を保持する

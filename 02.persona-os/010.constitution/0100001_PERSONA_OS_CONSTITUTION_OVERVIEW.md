@@ -161,3 +161,28 @@ implementation
 development
 
 No lower layer may contradict constitutional rules.
+
+# ============================================================
+# MULTILINGUAL AND MULTICURRENCY SUPPORT
+# ============================================================
+
+PersonaOS shall support multilingual operation.
+
+This means PersonaOS design must allow:
+- multi-language display
+- language-switchable presentation
+- localized wording and labels
+- future expansion to additional supported languages
+
+PersonaOS shall also support multicurrency operation where value,
+price, cost, compensation, reward, exchange, or other monetary
+or quasi-monetary expressions are handled.
+
+This means PersonaOS design must allow:
+- multi-currency representation
+- currency-aware display
+- future expansion to additional supported currencies
+
+These capabilities must be treated as supported design scope
+inside PersonaOS even when detailed implementation is handled later.
+

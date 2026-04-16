@@ -1,0 +1,23 @@
+# ============================================================
+# LIFE PLANNER APPLICATION ARCHITECTURE
+# ============================================================
+
+actors:
+  - owner
+  - family_viewer
+  - family_editor
+
+main_modules:
+  - plan management
+  - timeline management
+  - goal management
+  - review log management
+  - family sharing management
+  - scenario comparison
+  - reflection candidate intake
+
+architecture_rules:
+  - ownerが最終確定権限を持つ
+  - family_editorは編集可能だが自動確定不可
+  - family_viewerは閲覧のみ
+  - 他アプリ情報は反映候補として保持する

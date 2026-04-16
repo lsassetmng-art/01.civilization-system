@@ -1,0 +1,8 @@
+# Constitution Domain Overview
+
+## role
+MealPlanner のドメイン責務と非責務を定義する
+
+## mealplanner_context
+- MealPlanner の当該レイヤーにおける責務を整理する
+- CivilizationOS系構成に合わせる

@@ -1,0 +1,12 @@
+# ============================================================
+# INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+needs:
+  - raw / normalized record storage
+  - reference knowledge storage
+  - sync job execution
+  - export generation
+  - summary cache optional

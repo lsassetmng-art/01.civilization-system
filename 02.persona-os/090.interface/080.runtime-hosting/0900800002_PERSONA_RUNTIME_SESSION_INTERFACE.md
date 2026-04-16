@@ -1,16 +1,12 @@
-# ============================================================
 # PERSONA RUNTIME SESSION INTERFACE
-# ============================================================
 
-status: canonical
-layer: interface
-domain: runtime-hosting
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-interface_examples:
-PersonaRuntimeSessionCreateRequest
-PersonaRuntimeSessionAttachRequest
-PersonaRuntimeSessionDisposeRequest
-PersonaRuntimeSessionEvent
+runtime_session_fields:
+- session_id
+- persona_id
+- snapshot_id_or_package_id
+- session_status
+- started_at
+- last_heartbeat_at
+- terminal_reason

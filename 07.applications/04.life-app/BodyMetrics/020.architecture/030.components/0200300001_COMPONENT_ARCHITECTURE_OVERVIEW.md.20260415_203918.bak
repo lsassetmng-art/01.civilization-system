@@ -1,0 +1,15 @@
+# ============================================================
+# COMPONENT ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: draft
+
+major_components:
+  - record_input_component
+  - provider_link_component
+  - trend_graph_component
+  - average_comparison_component
+  - health_score_component
+  - weekly_review_component
+  - sharing_settings_component
+  - export_component

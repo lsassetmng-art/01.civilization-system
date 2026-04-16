@@ -1,0 +1,17 @@
+# ============================================================
+# INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 110.infrastructure
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1100001_PERSONAL_LEGAL_SUPPORT_INFRASTRUCTURE_OVERVIEW.md
+  - 010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
+  - 010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+  - 010.core/1100004_PERSONAL_LEGAL_SUPPORT_INFRASTRUCTURE_PROFILE.md

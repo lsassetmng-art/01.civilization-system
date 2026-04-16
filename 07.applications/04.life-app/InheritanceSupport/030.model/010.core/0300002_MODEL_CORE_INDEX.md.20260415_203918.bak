@@ -1,0 +1,16 @@
+# ============================================================
+# MODEL CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 030.model
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300003_MODEL_CORE_OVERVIEW.md
+  - 0300004_INHERITANCE_SUPPORT_DOMAIN_MODEL.md

@@ -1,0 +1,16 @@
+# ============================================================
+# 04 LIFE APP OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+layer: 04.life-app
+
+purpose:
+  - LifeOS系アプリの正式設計書配置先
+  - CivilizationOS と整合する層構造で各アプリの正本を保持する
+
+design_rules:
+  - 各アプリは 010〜130 / 900 / 920 の層を基本構造とする
+  - root と各層に index / overview を置く
+  - 主要サブフォルダにも index / overview を置く
+  - 実装前段階でも責務境界を明文化する

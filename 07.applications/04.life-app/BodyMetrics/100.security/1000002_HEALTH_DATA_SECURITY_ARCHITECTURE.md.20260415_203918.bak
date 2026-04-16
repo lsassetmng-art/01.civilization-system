@@ -1,0 +1,12 @@
+# ============================================================
+# HEALTH DATA SECURITY ARCHITECTURE
+# ============================================================
+
+status: draft
+
+security_rules:
+  - least privilege
+  - sharing change audit
+  - export generation audit
+  - sensitive action 再認証余地
+  - recipient に provider account detail を露出しない

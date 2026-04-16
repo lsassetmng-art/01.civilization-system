@@ -1,0 +1,41 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LEGAL SUPPORT ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+modules:
+  - case_management
+  - fact_timeline_management
+  - stakeholder_management
+  - document_management
+  - question_management
+  - consultation_history_management
+  - action_deadline_management
+  - family_share_export
+  - template_navigation
+
+common_components_addition_candidates:
+  - 相談ケース管理共通部品
+  - タイムライン整理共通部品
+  - 書類管理共通部品
+  - 期限通知共通部品
+  - 共有エクスポート共通部品
+
+architecture_principles:
+  - 事実と推測を混ぜない
+  - 共有範囲は案件単位で制御する
+  - 専門家判断は外に置き、アプリは整理支援に徹する

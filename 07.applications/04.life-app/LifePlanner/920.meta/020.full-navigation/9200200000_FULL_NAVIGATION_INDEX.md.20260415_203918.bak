@@ -1,0 +1,17 @@
+# ============================================================
+# FULL NAVIGATION INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 920.meta
+subfolder: 020.full-navigation
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 9000200000_FULL_NAVIGATION_INDEX.md
+  - 9000200001_FULL_NAVIGATION_OVERVIEW.md
+  - 9000200002_LIFE_PLANNER_FULL_DOCUMENT_MAP.md
+  - 9000200003_LIFE_PLANNER_ROLE_BASED_READING_PATHS.md

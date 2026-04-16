@@ -1,0 +1,20 @@
+# CareerLaunch SYSTEM ARCHITECTURE
+
+schema: life
+## Core components
+- profile foundation
+- document workspace
+- job posting parser
+- application tracker
+- interview prep workspace
+- post-interview follow-up
+- export service
+- notification/reminder service
+- persona/background presenter
+- offline draft queue
+
+## Architecture stance
+- client-first drafting + server sync
+- owner-centric data ownership
+- application_position を主軸に文書と面接準備を束ねる
+- render/export は文書正本から派生生成する

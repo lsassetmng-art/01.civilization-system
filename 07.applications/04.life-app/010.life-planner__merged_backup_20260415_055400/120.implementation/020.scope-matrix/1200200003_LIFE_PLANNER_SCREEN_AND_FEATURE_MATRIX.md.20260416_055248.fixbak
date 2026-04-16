@@ -1,0 +1,106 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LIFE PLANNER SCREEN AND FEATURE MATRIX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 120.implementation
+subfolder: 020.scope-matrix
+owner: Boss
+prepared_by: Zero
+schema: life
+
+matrix:
+  - screen: home
+    features:
+      - review summary
+      - event summary
+      - goal progress
+      - reflection candidate summary
+    free: true
+    family: true
+
+  - screen: life_plan_list
+    features:
+      - list plans
+      - open plan
+      - create plan
+    free: true
+    family: true
+
+  - screen: life_plan_detail
+    features:
+      - plan summary
+      - goal summary
+      - event summary
+      - cost summary
+      - review summary
+    free: true
+    family: true
+
+  - screen: goal_list_and_edit
+    features:
+      - create goal
+      - update goal
+      - manage milestone
+    free: true
+    family: true
+
+  - screen: timeline_view_and_edit
+    features:
+      - view timeline
+      - create event
+      - update event
+    free: true
+    family: true
+
+  - screen: review_log_view
+    features:
+      - view review history
+      - append review log
+    free: true
+    family: true
+
+  - screen: reflection_candidate_view
+    features:
+      - list candidates
+      - apply candidate
+      - dismiss candidate
+    free: true
+    family: true
+    note:
+      - final action owner only
+
+  - screen: family_share_setting
+    features:
+      - invite member
+      - update share scope
+      - view invite state
+    free: false
+    family: true
+
+  - screen: scenario_compare
+    features:
+      - create scenario
+      - compare scenario
+      - save decision
+    free: false
+    family: true
+
+  - screen: age_view
+    features:
+      - age band visualization
+      - event and goal grouping
+    free: false
+    family: true

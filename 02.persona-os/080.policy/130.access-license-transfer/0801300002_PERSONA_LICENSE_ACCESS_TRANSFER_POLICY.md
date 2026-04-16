@@ -1,15 +1,14 @@
-# ============================================================
 # PERSONA LICENSE ACCESS TRANSFER POLICY
-# ============================================================
 
-status: canonical
-layer: policy
-domain: access-license-transfer
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-policy_rules:
-license scope must remain explicit
-access grant must derive from valid license state
-transfer is never implicit and must remain auditable
+policy_split:
+- license != access grant
+- access grant != transfer
+- transfer != distribution eligibility
+
+mandatory_controls:
+- separate ids
+- separate lifecycle
+- revoke and expire handling
+- actor and reason audit

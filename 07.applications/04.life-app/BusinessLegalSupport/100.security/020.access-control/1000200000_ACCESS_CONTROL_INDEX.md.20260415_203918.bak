@@ -1,0 +1,21 @@
+# ============================================================
+# ACCESS CONTROL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 100.security
+subfolder: 020.access-control
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 1000200001_BUSINESS_LEGAL_SUPPORT_ACCESS_CONTROL_OVERVIEW.md
+  - 1000200002_BUSINESS_LEGAL_SUPPORT_ROLE_AND_PERMISSION_MATRIX.md
+  - 1000200003_BUSINESS_LEGAL_SUPPORT_OWNER_AND_ADVISOR_SCOPE_RULES.md
+  - 1000200004_BUSINESS_LEGAL_SUPPORT_VISIBILITY_AND_SOFT_DELETE_RULES.md
+  - 1000200005_BUSINESS_LEGAL_SUPPORT_EXPORT_AND_SHARE_ACCESS_POLICY.md
+  - 1000200006_BUSINESS_LEGAL_SUPPORT_RLS_READINESS_NOTES.md

@@ -1,0 +1,17 @@
+# ============================================================
+# RUNTIME INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0400001_INHERITANCE_SUPPORT_RUNTIME_OVERVIEW.md
+  - 010.core/0400002_RUNTIME_CORE_INDEX.md
+  - 010.core/0400003_RUNTIME_CORE_OVERVIEW.md
+  - 010.core/0400004_INHERITANCE_SUPPORT_RUNTIME_BEHAVIOR.md

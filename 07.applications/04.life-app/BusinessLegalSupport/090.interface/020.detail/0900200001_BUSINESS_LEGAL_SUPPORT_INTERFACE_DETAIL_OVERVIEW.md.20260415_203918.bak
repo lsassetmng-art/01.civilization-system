@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT INTERFACE DETAIL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 090.interface
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - 画面群の責務を詳細化する
+  - 一覧、詳細、準備、共有のUI役割を固定する
+  - 画面遷移と表示粒度の基準をそろえる

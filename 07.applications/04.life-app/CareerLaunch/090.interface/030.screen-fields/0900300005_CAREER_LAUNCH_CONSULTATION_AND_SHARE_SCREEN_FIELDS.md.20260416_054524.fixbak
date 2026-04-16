@@ -1,0 +1,11 @@
+# CareerLaunch SHARE AND SETTINGS SCREEN FIELDS
+## share/settings
+- recipient
+- role
+- scope
+- comments
+- language
+- currency
+- persona
+- background
+- lightweight mode

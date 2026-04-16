@@ -1,0 +1,14 @@
+# ============================================================
+# END OF LIFE PLANNER INTERFACE INDEX
+# ============================================================
+
+status: canonical-draft
+phase: L12-minor-values-closure
+
+files:
+  - 090001_END_OF_LIFE_PLANNER_INTERFACE_OVERVIEW.md
+  - 090010_END_OF_LIFE_PLANNER_SCREEN_INVENTORY.md
+  - 090020_END_OF_LIFE_PLANNER_FORM_AND_PAYLOAD_MAPPING.md
+  - 090030_END_OF_LIFE_PLANNER_FORMAL_SCREEN_SPECIFICATION.md
+  - 090040_END_OF_LIFE_PLANNER_ELDERLY_ACCESSIBILITY_UI_NOTE.md
+  - 090050_END_OF_LIFE_PLANNER_UI_WORDING_POLISH_NOTE.md

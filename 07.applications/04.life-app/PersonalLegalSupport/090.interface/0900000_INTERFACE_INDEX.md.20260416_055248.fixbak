@@ -1,0 +1,17 @@
+# ============================================================
+# INTERFACE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0900001_PERSONAL_LEGAL_SUPPORT_INTERFACE_OVERVIEW.md
+  - 010.core/0900002_INTERFACE_CORE_INDEX.md
+  - 010.core/0900003_INTERFACE_CORE_OVERVIEW.md
+  - 010.core/0900004_PERSONAL_LEGAL_SUPPORT_INTERFACE_SPEC.md

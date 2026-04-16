@@ -1,0 +1,69 @@
+# MealPlanner Screen State And Gating
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## 1. plan_state
+- free
+- paid
+
+## 2. paid_support_mode
+- ai_chat_only
+
+## 3. gating_principles
+- 無料でも主導線は成立させる
+- 有料は共有 / 在庫 / 連携 / 高度運用を解放する
+- hard block より teaser / upgrade_modal を優先する
+- 同じセッションで過剰にアップグレードモーダルを連発しない
+
+## 4. free_enabled_core
+- dashboard_home
+- weekly_meal_planner
+- daily_meal_detail
+- monthly_meal_planner
+- menu_search_and_suggestion
+- shopping_list basic
+- goal_and_budget_settings basic
+- family_settings basic
+- template_library limited
+- favorite_menu_list limited
+- meal_history_log limited
+- user_menu_editor
+- user_menu_publish_status
+- notification_settings basic
+- csv_export
+
+## 5. paid_only_or_paid_full
+- pantry_inventory full
+- shopping_list family shared check
+- family sharing controls
+- nutrition summary
+- pantry priority hint
+- lifeos integrations
+- shared notifications
+- ai_chat_support
+
+## 6. free_limits
+- template save count limited
+- favorite count limited
+- history retention limited
+- pantry management hidden or teaser
+- shared family collaboration limited
+- lifeos integration teaser only
+
+## 7. upgrade_modal_triggers
+- pantry open on free
+- family shared check on free
+- nutrition panel tap on free
+- lifeos integration toggle on free
+- template limit reached
+- favorite limit reached
+- history older-than-limit open

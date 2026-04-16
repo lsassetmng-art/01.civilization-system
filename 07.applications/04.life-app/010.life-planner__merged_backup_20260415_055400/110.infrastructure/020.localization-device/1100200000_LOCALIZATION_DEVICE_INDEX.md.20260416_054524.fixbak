@@ -1,0 +1,18 @@
+# ============================================================
+# LOCALIZATION DEVICE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 110.infrastructure
+subfolder: 020.localization-device
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 1100200000_LOCALIZATION_DEVICE_INDEX.md
+  - 1100200001_LOCALIZATION_DEVICE_OVERVIEW.md
+  - 1100200002_LIFE_PLANNER_MULTILINGUAL_POLICY.md
+  - 1100200003_LIFE_PLANNER_MULTICURRENCY_POLICY.md
+  - 1100200004_LIFE_PLANNER_MULTI_DEVICE_DISPLAY_POLICY.md

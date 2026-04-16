@@ -1,0 +1,11 @@
+# Integration Index
+
+## purpose
+MealPlanner の外部連携境界を定義する
+
+## files
+- 0600001_INTEGRATION_OVERVIEW.md
+
+## notes
+- この index は Integration の入口である
+- 詳細は配下ドキュメントを参照する

@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT IMPLEMENTATION INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: IMPLEMENTATION
+
+purpose:
+  - 実装フェーズとMVP優先順位を定義する

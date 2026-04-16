@@ -1,0 +1,15 @@
+# ============================================================
+# SECURITY INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 1000001_SECURITY_OVERVIEW.md
+  - 010.app-security/1000100_APP_SECURITY_INDEX.md
+  - 010.app-security/1000101_APP_SECURITY_OVERVIEW.md
+  - 010.app-security/1000102_SECURITY_RULE_CANONICAL.md
+
+purpose:
+  - LegalSupport の保護方針と事故防止方針を固定する

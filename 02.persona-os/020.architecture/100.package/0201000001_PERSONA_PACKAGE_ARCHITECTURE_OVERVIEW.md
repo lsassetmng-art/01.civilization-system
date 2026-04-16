@@ -2,29 +2,17 @@
 # PERSONA PACKAGE ARCHITECTURE OVERVIEW
 # ============================================================
 
-status: canonical
-layer: architecture
+status: implementation-ready-followup
 domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
 
-purpose:
-Defines the structural overview of persona package domain.
+package_boundary:
+- package is built from approved immutable release inputs only
+- package manifest references immutable snapshot lineage
+- package integrity must be verified before use or distribution
+- package revocation is separate from transfer or access revocation
 
-summary:
-Package is the distributable assembly unit
-built from approved snapshot-based inputs.
-
-scope:
-package structure
-package assembly
-package manifest
-package lineage
-
-boundary:
-Package is not snapshot authority.
-Package is not release authority.
-Package is not distribution channel state.
-Package is not external-rights authority.
-Package is not access/license/transfer control authority.
+required_package_controls:
+- manifest completeness
+- integrity verification
+- revocation registry check
+- distribution eligibility gate

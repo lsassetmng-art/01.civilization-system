@@ -1,0 +1,141 @@
+-- sourced from 1200027_ORDER_FLOW_SQL_CANDIDATE_PHASE_2_EXECUTION.sql
+create table if not exists order_inventory_check_record (
+  order_inventory_check_record_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  inventory_status text not null,
+  freshness_type text not null,
+  inventory_source_type text not null,
+  source_system_name text,
+  source_reference_id text,
+  summary_note text,
+  checked_at timestamptz not null default now(),
+  checked_by uuid not null,
+  constraint chk_inventory_status
+    check (inventory_status in (
+      'not_checked','available','partially_available','unavailable',
+      'replenishment_required','stale'
+    )),
+  constraint chk_freshness_type
+    check (freshness_type in ('fresh','cached','stale','unknown')),
+  constraint chk_inventory_source_type
+    check (inventory_source_type in (
+      'erp','app_local','external_reference','manual_confirmation'
+    ))
+);
+
+create table if not exists order_supply_status_record (
+  order_supply_status_record_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  supply_status_type text not null,
+  expected_replenishment_date date,
+  supply_note text,
+  recorded_at timestamptz not null default now(),
+  recorded_by uuid not null,
+  constraint chk_supply_status_type
+    check (supply_status_type in (
+      'immediately_fulfillable','partially_fulfillable',
+      'waiting_replenishment','uncertain','blocked'
+    ))
+);
+
+create table if not exists order_lead_time_record (
+  order_lead_time_record_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  lead_time_days integer not null,
+  lead_time_basis_type text not null,
+  lead_time_note text,
+  source_inventory_check_record_id uuid references order_inventory_check_record(order_inventory_check_record_id),
+  source_supply_status_record_id uuid references order_supply_status_record(order_supply_status_record_id),
+  calculated_at timestamptz not null default now(),
+  calculated_by uuid not null,
+  constraint chk_lead_time_days
+    check (lead_time_days >= 0),
+  constraint chk_lead_time_basis_type
+    check (lead_time_basis_type in (
+      'stock_available','partial_stock_waiting_supply',
+      'made_to_order','supplier_confirmation','manual_estimation'
+    ))
+);
+
+create table if not exists delivery_schedule_calculation_record (
+  delivery_schedule_calculation_record_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  calculation_basis_summary text not null,
+  source_lead_time_record_id uuid references order_lead_time_record(order_lead_time_record_id),
+  source_inventory_check_record_id uuid references order_inventory_check_record(order_inventory_check_record_id),
+  calculation_note text,
+  calculated_at timestamptz not null default now(),
+  calculated_by uuid not null
+);
+
+create table if not exists delivery_schedule_candidate (
+  delivery_schedule_candidate_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  delivery_schedule_calculation_record_id uuid not null references delivery_schedule_calculation_record(delivery_schedule_calculation_record_id) on delete cascade,
+  candidate_type text not null,
+  candidate_label text not null,
+  candidate_start_date date not null,
+  candidate_end_date date not null,
+  confidence_type text not null,
+  basis_note text,
+  rank_order integer,
+  proposal_ready_flag boolean not null default false,
+  generated_at timestamptz not null default now(),
+  generated_by uuid not null,
+  constraint chk_candidate_type
+    check (candidate_type in ('single_date','date_range')),
+  constraint chk_confidence_type
+    check (confidence_type in ('high','medium','low','manual')),
+  constraint chk_candidate_date_range
+    check (candidate_end_date >= candidate_start_date)
+);
+
+create table if not exists delivery_schedule_confirmed_record (
+  delivery_schedule_confirmed_record_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  source_candidate_id uuid references delivery_schedule_candidate(delivery_schedule_candidate_id),
+  confirmed_date_or_start date not null,
+  confirmed_end_date date not null,
+  confirmation_basis_type text not null,
+  confirmation_note text,
+  confirmed_at timestamptz not null default now(),
+  confirmed_by uuid not null,
+  constraint chk_confirmed_date_range
+    check (confirmed_end_date >= confirmed_date_or_start)
+);
+
+create table if not exists customer_delivery_proposal_record (
+  customer_delivery_proposal_record_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  source_candidate_id uuid references delivery_schedule_candidate(delivery_schedule_candidate_id),
+  proposal_date_or_start date not null,
+  proposal_end_date date not null,
+  proposal_note text,
+  proposal_channel_type text not null,
+  proposal_status text not null,
+  recorded_at timestamptz not null default now(),
+  recorded_by uuid not null,
+  constraint chk_proposal_date_range
+    check (proposal_end_date >= proposal_date_or_start),
+  constraint chk_proposal_channel_type
+    check (proposal_channel_type in (
+      'manual_internal_record','phone_record','email_record','in_person_record'
+    )),
+  constraint chk_proposal_status
+    check (proposal_status in (
+      'not_proposed','proposed','revision_requested','accepted','rejected'
+    ))
+);
+
+create table if not exists customer_delivery_response_record (
+  customer_delivery_response_record_id uuid primary key,
+  order_id uuid not null references order_record(order_id) on delete cascade,
+  customer_delivery_proposal_record_id uuid not null references customer_delivery_proposal_record(customer_delivery_proposal_record_id) on delete cascade,
+  response_type text not null,
+  response_date date not null,
+  operator_note text,
+  recorded_at timestamptz not null default now(),
+  recorded_by uuid not null,
+  constraint chk_response_type
+    check (response_type in ('accepted','rejected','revision_requested'))
+);

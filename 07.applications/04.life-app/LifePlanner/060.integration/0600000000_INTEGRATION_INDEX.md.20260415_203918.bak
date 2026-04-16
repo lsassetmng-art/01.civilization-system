@@ -1,0 +1,12 @@
+# ============================================================
+# INTEGRATION INDEX
+# ============================================================
+
+layer: 060.integration
+
+documents:
+  - 0600000000_INTEGRATION_INDEX.md
+  - 0600000001_INTEGRATION_OVERVIEW.md
+
+subfolders:
+  - 010.lifeos-link

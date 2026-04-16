@@ -1,0 +1,21 @@
+# ============================================================
+# DDL READINESS INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 030.model
+subfolder: 040.ddl-readiness
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300400001_BUSINESS_LEGAL_SUPPORT_DDL_READINESS_OVERVIEW.md
+  - 0300400002_BUSINESS_LEGAL_SUPPORT_TABLE_CREATION_ORDER.md
+  - 0300400003_BUSINESS_LEGAL_SUPPORT_KEY_AND_CONSTRAINT_POLICY.md
+  - 0300400004_BUSINESS_LEGAL_SUPPORT_TIMESTAMP_AND_SOFT_DELETE_POLICY.md
+  - 0300400005_BUSINESS_LEGAL_SUPPORT_INDEX_AND_SEARCH_POLICY.md
+  - 0300400006_BUSINESS_LEGAL_SUPPORT_SQL_IMPLEMENTATION_BOUNDARY.md

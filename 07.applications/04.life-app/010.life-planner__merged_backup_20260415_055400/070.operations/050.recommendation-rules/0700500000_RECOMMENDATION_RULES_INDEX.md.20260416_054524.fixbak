@@ -1,0 +1,18 @@
+# ============================================================
+# RECOMMENDATION RULES INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 070.operations
+subfolder: 050.recommendation-rules
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0700500000_RECOMMENDATION_RULES_INDEX.md
+  - 0700500001_RECOMMENDATION_RULES_OVERVIEW.md
+  - 0700500002_LIFE_PLANNER_REVIEW_NEEDED_RULES.md
+  - 0700500003_LIFE_PLANNER_HOME_RECOMMENDATION_PRIORITY_RULES.md
+  - 0700500004_LIFE_PLANNER_SCENARIO_AND_REFLECTION_RECOMMENDATION_RULES.md

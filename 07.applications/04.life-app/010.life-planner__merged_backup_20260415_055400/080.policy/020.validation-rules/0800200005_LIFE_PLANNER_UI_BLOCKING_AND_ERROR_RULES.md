@@ -1,0 +1,93 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# LIFE PLANNER UI BLOCKING AND ERROR RULES
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 080.policy
+subfolder: 020.validation-rules
+owner: Boss
+prepared_by: Zero
+schema: life
+
+ui_blocking_rules:
+  - rule_id: UI-BLOCK-001
+    condition:
+      - family_viewer attempts edit
+    behavior:
+      - block action
+      - do not show save button where possible
+
+  - rule_id: UI-BLOCK-002
+    condition:
+      - family_editor attempts family_share_setting access
+    behavior:
+      - hide screen entry or return forbidden
+
+  - rule_id: UI-BLOCK-003
+    condition:
+      - free plan attempts scenario_compare
+    behavior:
+      - block compare screen
+      - show pricing_guide
+
+  - rule_id: UI-BLOCK-004
+    condition:
+      - free plan attempts family collaboration actions
+    behavior:
+      - block action
+      - show pricing_guide
+
+  - rule_id: UI-BLOCK-005
+    condition:
+      - hidden sensitive category requested by shared role
+    behavior:
+      - do not render field
+      - do not partially expose summary
+
+  - rule_id: UI-BLOCK-006
+    condition:
+      - archived plan requested for edit
+    behavior:
+      - read only rendering
+
+error_mapping_rules:
+  - validation_error:
+      ui_behavior:
+        - highlight field
+        - show inline error
+
+  - forbidden:
+      ui_behavior:
+        - show top error
+        - keep current screen or fallback safely
+
+  - family_plan_required:
+      ui_behavior:
+        - open pricing_guide CTA
+
+  - share_scope_denied:
+      ui_behavior:
+        - hide sensitive section
+        - show generic access denial if direct access attempted
+
+  - reflection_candidate_invalid_state:
+      ui_behavior:
+        - refresh list
+        - show state changed notice
+
+policy_note:
+  - hidden preferred over disabled for unauthorized sensitive data
+  - disabled preferred over hidden for plan-upgrade feature discovery

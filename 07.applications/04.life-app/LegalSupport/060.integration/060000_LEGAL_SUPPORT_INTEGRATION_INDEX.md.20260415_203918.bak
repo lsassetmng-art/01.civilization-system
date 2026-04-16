@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT INTEGRATION INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: INTEGRATION
+
+purpose:
+  - LifeOS内連携と将来連携境界を定義する

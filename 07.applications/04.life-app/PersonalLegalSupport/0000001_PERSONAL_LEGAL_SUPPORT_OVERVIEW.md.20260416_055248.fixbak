@@ -1,0 +1,44 @@
+# ============================================================
+# PERSONAL LEGAL SUPPORT OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+owner: Boss
+prepared_by: Zero
+
+summary:
+  - PersonalLegalSupport は個人/家族向けの生活法務整理アプリである
+  - 法的助言の代替ではなく、相談前整理・期限管理・契約管理・書類整理を支援する
+  - LifeOS の一部として、生活イベント・家計・終活入口と連携しやすい設計を持つ
+  - BusinessLegalSupport とは境界を持ち、事業法務へは明示導線で橋渡しする
+
+main_users:
+  - 個人
+  - 夫婦
+  - 家族
+  - 高齢家族を支える人
+
+core_functions:
+  - 法律相談案件作成
+  - 契約/書類一覧
+  - 期限管理
+  - 相談メモ
+  - 相手方/関係者整理
+  - リスクメモ
+  - 次回確認事項
+  - 文書添付
+
+pricing:
+  free: 0
+  plus: 500
+  family: 800
+
+non_goals:
+  - 法的判断の断定
+  - 有資格者の代替
+  - 代理交渉
+  - 正式意見書作成
+  - ERP/BusinessOS の正式法務正本化

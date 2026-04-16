@@ -2,31 +2,17 @@
 # PERSONA SNAPSHOT ARCHITECTURE OVERVIEW
 # ============================================================
 
-status: canonical
-layer: architecture
+status: implementation-ready-followup
 domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
 
-purpose:
-Defines the structural overview of persona snapshot domain.
+snapshot_boundary:
+- snapshot is frozen at issuance
+- source draft version and content hash must be preserved
+- runtime and package consume snapshot lineage, not mutable draft lineage
+- re-issuance creates a new snapshot identity
 
-summary:
-Snapshot is the canonical immutable point-in-time unit
-derived from eligible PersonaOS truth.
-
-scope:
-snapshot issuance
-snapshot immutability
-snapshot traceability
-frozen truth record
-release-facing reuse support
-
-boundary:
-Snapshot does not replace live mutable truth.
-Snapshot is not current state truth.
-Snapshot is not memory truth.
-Snapshot is not history itself.
-Snapshot may be used by release/package/distribution workflows,
-but is not identical to those domains.
+required_snapshot_controls:
+- deterministic hashing
+- immutable storage
+- lineage queryability
+- publish linkage

@@ -1,0 +1,16 @@
+# ============================================================
+# DECISION LOG INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 030.decision-log
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 1300300000_DECISION_LOG_INDEX.md
+  - 1300300001_DECISION_LOG_OVERVIEW.md
+  - 1300300002_LIFE_PLANNER_FIXED_DECISIONS_LOG.md

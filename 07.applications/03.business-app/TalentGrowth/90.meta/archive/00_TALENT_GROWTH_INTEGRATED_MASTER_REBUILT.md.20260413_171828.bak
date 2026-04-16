@@ -1,0 +1,246 @@
+# TALENT GROWTH INTEGRATED MASTER REBUILT
+
+status: integrated-master-rebuilt
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+formal_name_en: Talent Growth Support & Evaluation System
+owner: Boss
+prepared_by: Zero
+
+# 1. identity
+TalentGrowth は、
+人材の現在地と次行動を、
+証拠付きで見える化し、
+成長支援と会社評価をつなぐための統合設計である。
+
+# 2. fixed support targets
+- multilingual
+- multi-currency
+- iPhone
+- Android
+- PC
+- tablet
+
+# 3. users
+- employee
+- manager
+- HR
+- executive
+- admin
+
+# 4. fixed design pillars
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+- approval / calibration / audit mandatory
+- AI is assist only
+
+# 5. integrated feature surface
+
+## profile and evidence
+- employee profile
+- academics
+- certifications
+- skills
+- career histories
+- achievements
+- evidence linkage
+
+## evaluation and governance
+- self review
+- manager review
+- HR review
+- send back
+- calibration
+- approve
+- publish
+- reopen
+- audit search
+
+## growth and strategy
+- gap analysis
+- growth plan
+- recommendations
+- MBO linkage
+- role-fit candidates
+- promotion readiness
+- successor candidates
+- career simulation
+
+## analytics and reporting
+- dashboard KPIs
+- distribution analytics
+- evaluator bias analytics
+- 9box
+- training ROI
+- exports
+
+## operations and platform
+- outbox
+- notification
+- batch / snapshot jobs
+- RLS
+- break-glass
+- frontend state / cache / sync
+
+# 6. score system summary
+主要 score:
+- total_evaluation_score
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- promotion_readiness_score
+- successor_readiness_score
+
+rank:
+- S
+- A
+- B
+- C
+- D
+
+rules:
+- formula before calibration
+- gate before rank
+- mandatory missing items can cap score/rank
+- current fit と future readiness は別評価
+
+# 7. screen summary
+主要画面群:
+- employee dashboard
+- self review
+- my evaluation result
+- growth plan
+- manager review input
+- HR dashboard
+- calibration board
+- executive dashboard
+- audit log viewer
+- admin role management
+
+layout stance:
+- employee mobile-first
+- manager tablet-strong
+- HR / executive / admin PC-primary
+
+# 8. API summary
+主要API群:
+- dashboard APIs
+- profile / academics / certifications / skills APIs
+- evaluation cycle / evaluation sheet APIs
+- self review / manager review / HR review APIs
+- growth plan / recommendation APIs
+- role-fit / successor / analytics APIs
+- audit / export APIs
+- AI assist APIs
+
+contract stance:
+- exact payload fixed
+- exact validation matrix fixed
+- error code policy fixed
+- endpoint inventory fixed
+
+# 9. data summary
+主要テーブル群:
+- tg_employee_profile
+- tg_employee_certification
+- tg_employee_skill
+- tg_role_requirement
+- tg_evaluation_cycle
+- tg_evaluation_sheet
+- tg_evaluation_score_detail
+- tg_evaluation_comment
+- tg_evaluation_evidence
+- tg_evaluation_change_audit
+- tg_evaluation_approval
+- tg_calibration_session
+- tg_calibration_log
+- tg_growth_plan
+- tg_growth_action
+- tg_growth_recommendation
+- tg_role_fit_snapshot
+- tg_successor_candidate
+- tg_training_roi_snapshot
+- tg_ai_assist_reference_log
+- tg_audit_export_log
+
+data stance:
+- company scope mandatory
+- audit columns standard
+- text primary keys
+- snapshot append-first where appropriate
+
+# 10. security summary
+- employee_self = self-centered
+- manager = team-centered
+- HR = company governance
+- executive = aggregate-first
+- admin = technical admin, not default raw evaluator
+- break-glass = reason + time bound + audit
+
+# 11. event and job summary
+event flow:
+- state change
+- outbox append
+- notification derive
+- async delivery
+
+batch / job flow:
+- outbox publish
+- notification deliver
+- expiry scan
+- evaluation snapshot
+- role-fit refresh
+- analytics refresh
+- recommendation refresh
+- export generate
+- consistency checks
+
+# 12. frontend summary
+- server truth first
+- selective offline
+- no offline finalization
+- visible sync status
+- explicit conflict handling
+- draft rescue for safe edit flows
+
+# 13. implementation summary
+phase A:
+- core evaluation foundation
+
+phase B:
+- profile and analytics basic
+
+phase C:
+- talent strategy and investment
+
+phase D:
+- AI assist and advanced governance
+
+# 14. QA and release summary
+- phase-based task breakdown fixed
+- test case matrix fixed
+- release checklist fixed
+- governance regressions are release blockers
+
+# 15. intentionally separated
+本 integrated rebuilt に含めないもの:
+- common component formal design
+- external shared ledger ownership design
+
+# 15.5 immediate execution assets
+- phase A concrete SQL execution block fixed
+- API stub response set fixed
+- phase A implementation command block fixed
+
+# 16. recommended next practical move
+- phase A implementation kickoff
+- API mock generation from exact examples
+- DDL concrete migration drafting
+- release blocker tests first
+
+# 17. conclusion
+TalentGrowth は、
+構想、画面、API、データ、権限、運用、数式、実装、QA まで
+一貫して再構成された master design として固定された。

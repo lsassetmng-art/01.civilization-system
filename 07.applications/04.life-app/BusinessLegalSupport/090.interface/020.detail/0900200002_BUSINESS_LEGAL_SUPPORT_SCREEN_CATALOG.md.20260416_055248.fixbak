@@ -1,0 +1,44 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# BUSINESS LEGAL SUPPORT SCREEN CATALOG
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 090.interface
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+screen_catalog:
+  - dashboard
+  - legal_issue_list
+  - legal_issue_detail
+  - contract_list
+  - contract_detail
+  - deadline_list
+  - counterparty_list
+  - counterparty_detail
+  - consultation_prep
+  - summary_output
+  - advisor_share_view
+  - settings
+
+dashboard_focus:
+  - urgent deadlines
+  - high priority issues
+  - expiring contracts
+  - consultation prep candidates

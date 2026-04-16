@@ -1,0 +1,8 @@
+# ============================================================
+# LEGAL SUPPORT SECURITY ACCESS CONTROL OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+
+summary:
+  - ロール別アクセス制御を置く

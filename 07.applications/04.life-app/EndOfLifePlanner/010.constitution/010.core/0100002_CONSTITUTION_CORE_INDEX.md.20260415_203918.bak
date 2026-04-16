@@ -1,0 +1,17 @@
+# ============================================================
+# CONSTITUTION CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: EndOfLifePlanner
+schema: life
+layer: 010.constitution
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0100003_CONSTITUTION_CORE_OVERVIEW.md
+  - 0100004_END_OF_LIFE_PLANNER_CORE_PRINCIPLES.md

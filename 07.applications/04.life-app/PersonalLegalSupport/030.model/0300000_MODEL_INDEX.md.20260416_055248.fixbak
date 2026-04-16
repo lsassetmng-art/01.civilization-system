@@ -1,0 +1,17 @@
+# ============================================================
+# MODEL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300001_PERSONAL_LEGAL_SUPPORT_MODEL_OVERVIEW.md
+  - 010.core/0300002_MODEL_CORE_INDEX.md
+  - 010.core/0300003_MODEL_CORE_OVERVIEW.md
+  - 010.core/0300004_PERSONAL_LEGAL_SUPPORT_DOMAIN_MODEL.md

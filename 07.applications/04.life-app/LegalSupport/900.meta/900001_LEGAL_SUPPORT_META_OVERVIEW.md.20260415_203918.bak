@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT META OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+meta_purpose:
+  - 正本の補助情報を保持する
+  - 監査・確認・棚卸しに使う

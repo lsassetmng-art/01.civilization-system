@@ -1,0 +1,10 @@
+# ============================================================
+# POLICY INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0800001_POLICY_OVERVIEW.md
+  - 0800002_DATA_AND_SHARING_POLICY.md
+  - 0800003_REFERENCE_VALUE_AND_HEALTH_SCORE_POLICY.md
+  - 0800004_FIXED_SCORING_REFERENCE_AND_FAMILY_CARE_POLICY.md

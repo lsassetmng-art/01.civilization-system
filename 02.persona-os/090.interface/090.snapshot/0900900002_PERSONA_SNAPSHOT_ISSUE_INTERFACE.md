@@ -1,15 +1,10 @@
-# ============================================================
 # PERSONA SNAPSHOT ISSUE INTERFACE
-# ============================================================
 
-status: canonical
-layer: interface
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-interface_examples:
-PersonaSnapshotIssueRequest
-PersonaSnapshotIssueResponse
-PersonaSnapshotIssuedEvent
+snapshot_fields:
+- snapshot_id
+- source_draft_id
+- source_draft_version
+- content_hash
+- issued_at

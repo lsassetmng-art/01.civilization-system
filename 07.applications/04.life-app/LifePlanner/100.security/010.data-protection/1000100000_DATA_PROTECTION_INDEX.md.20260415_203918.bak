@@ -1,0 +1,10 @@
+# ============================================================
+# DATA PROTECTION INDEX
+# ============================================================
+
+subfolder: 010.data-protection
+
+documents:
+  - 1000100000_DATA_PROTECTION_INDEX.md
+  - 1000100001_DATA_PROTECTION_OVERVIEW.md
+  - 1000100002_LIFE_PLANNER_SECURITY_AND_DATA_PROTECTION.md

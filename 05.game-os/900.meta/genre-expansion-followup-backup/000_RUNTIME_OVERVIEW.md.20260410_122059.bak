@@ -1,0 +1,18 @@
+# ============================================================
+# GAME OS RUNTIME OVERVIEW
+# ============================================================
+
+status: draft-for-canonical-update
+system: game-os
+layer: runtime
+document_type: overview
+owner: Boss
+prepared_by: Zero
+
+summary:
+The runtime layer covers Persona-enabled gameplay runtime and high-control gambling runtime.
+
+principles:
+- runtime behavior must follow architecture boundaries
+- gambling runtime must remain separated from ordinary runtime
+- runtime must not own canonical Persona truth or wallet truth

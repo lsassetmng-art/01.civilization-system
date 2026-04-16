@@ -1,0 +1,25 @@
+# ============================================================
+# INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+domain: 01.civilization-system/07.applications/04.life-app
+path: 130.development
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - このフォルダ配下の設計資料の入口を提供する
+  - 下位資料の役割と参照順を明確にする
+
+reading_order:
+  - 001_OVERVIEW.md
+  - 下位詳細資料
+  - 下位サブフォルダ
+
+notes:
+  - 本資料は TrainingCoach の初期設計配置である
+  - CivilizationOS準拠のレイヤー構成を採用する
+  - 既存構成を壊さず段階的に詳細化する

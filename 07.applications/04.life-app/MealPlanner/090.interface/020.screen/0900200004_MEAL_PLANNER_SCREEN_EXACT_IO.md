@@ -1,0 +1,874 @@
+# MealPlanner Screen Exact I/O
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## 1. screen_io_common_principles
+- 画面I/Oは API exact payload と整合させる
+- 画面入力は UI入力値 と API request 値 を分けて考える
+- 画面出力は 表示項目 と 内部保持項目 を分ける
+- 無料 / 有料 の違いは screen gating で扱い、I/O定義自体は極力共通にする
+- 日付は YYYY-MM-DD
+- 日時は ISO-8601
+- schema は life を正とする
+- 食材 / 基本献立 / 公開知識の基礎正本は CX22073JW 参照前提とする
+
+## 2. dashboard_home
+
+### purpose
+- 今日の献立確認
+- 週次進行状況確認
+- 買い物状況確認
+- 日 / 週 / 月提案の開始導線
+
+### input_from_user
+- plan_horizon_select
+- open_today_detail
+- open_weekly_planner
+- open_monthly_planner
+- open_shopping_list
+- open_upgrade_modal
+- refresh
+
+### input_payload_like
+- user_id
+- household_id
+- current_date
+- current_plan_state
+
+### output_to_ui
+- today_slots
+- current_week_summary
+- shopping_summary
+- recent_history_summary
+- budget_tier
+- paid_feature_teasers
+- family_share_summary_paid_only
+- pantry_priority_summary_paid_only
+- nutrition_summary_paid_only
+
+### output_fields_exact
+- today_slots[]:
+  - meal_slot_id
+  - meal_date
+  - meal_category
+  - menu_title
+  - source_type
+  - servings
+  - actual_status
+- current_week_summary:
+  - meal_plan_id
+  - week_start_date
+  - week_end_date
+  - filled_slot_count
+  - total_slot_count
+  - budget_tier
+  - derived_budget_amount
+  - currency_code
+- shopping_summary:
+  - shopping_list_id
+  - total_item_count
+  - checked_item_count
+  - estimated_total_cost
+  - currency_code
+
+### api_binding
+- GET /api/mealplanner/dashboard
+
+### state_notes
+- free:
+  - pantry_priority_summary は teaser
+  - nutrition_summary は teaser
+  - family_share_summary は teaser
+- paid:
+  - full 表示
+
+## 3. weekly_meal_planner
+
+### purpose
+- 週間献立の主編集画面
+- 朝 / 昼 / 夜 / 間食の一括確認
+- CSV出力
+- 差し替え
+- テンプレ適用
+
+### input_from_user
+- week_change
+- slot_tap
+- slot_replace
+- slot_clear
+- template_apply
+- template_save
+- favorite_add
+- plan_regenerate
+- csv_export
+- open_daily_detail
+- open_upgrade_modal
+
+### input_payload_like
+- meal_plan_id
+- household_id
+- target_start_date
+- target_end_date
+- budget_tier
+- meal_categories[]
+- dietary_rules[]
+- disliked_ingredients[]
+- preferred_cuisine_tags[]
+- include_user_private_menu
+- include_user_published_menu
+- include_cx22073jw_base_menu
+- pantry_mode
+- goal_hint
+
+### output_to_ui
+- meal_plan_header
+- week_grid
+- generation_summary
+- export_button_state
+- template_limit_state
+- favorite_limit_state
+- paid_teasers
+
+### output_fields_exact
+- meal_plan_header:
+  - meal_plan_id
+  - plan_horizon
+  - target_start_date
+  - target_end_date
+  - budget_tier
+  - derived_budget_amount
+  - currency_code
+- week_grid[]:
+  - meal_slot_id
+  - meal_date
+  - meal_category
+  - menu_master_id_or_reference_id
+  - menu_title
+  - source_type
+  - publication_status
+  - servings
+  - estimated_cost
+  - estimated_kcal
+  - memo
+  - changed_flag
+  - changed_reason
+  - actual_status
+
+### write_actions
+- generate_plan
+- update_plan_slot
+- export_csv
+- save_template
+- add_favorite
+
+### api_binding
+- POST /api/mealplanner/plan/generate
+- GET /api/mealplanner/plan/detail
+- POST /api/mealplanner/plan/slot/update
+- POST /api/mealplanner/export/csv
+
+### validation
+- target_start_date <= target_end_date
+- plan_horizon must be weekly
+- servings >= 1
+- meal_category must be valid enum
+
+## 4. daily_meal_detail
+
+### purpose
+- 単日詳細確認
+- その日の差し替え
+- 実績記録
+- 外食 / 簡易食反映
+- CSV出力
+
+### input_from_user
+- select_slot
+- replace_menu
+- change_servings
+- update_memo
+- record_actual_result
+- export_csv
+- open_suggestion
+- open_upgrade_modal
+
+### input_payload_like
+- meal_plan_id
+- meal_date
+- meal_slot_id
+- actual_result_type
+- actual_menu_name
+- note
+
+### output_to_ui
+- day_header
+- day_slots
+- nutrition_summary_paid_only
+- pantry_hint_paid_only
+- history_preview
+
+### output_fields_exact
+- day_header:
+  - meal_date
+  - weekday_label
+  - budget_tier
+- day_slots[]:
+  - meal_slot_id
+  - meal_category
+  - menu_title
+  - source_type
+  - servings
+  - estimated_cost
+  - estimated_kcal
+  - memo
+  - actual_status
+  - changed_flag
+  - changed_reason
+- history_preview[]:
+  - meal_history_id
+  - actual_result_type
+  - actual_menu_name
+  - note
+  - recorded_at
+
+### write_actions
+- update_plan_slot
+- record_meal_history
+- export_csv
+
+### api_binding
+- GET /api/mealplanner/plan/detail
+- POST /api/mealplanner/plan/slot/update
+- POST /api/mealplanner/history/record
+- POST /api/mealplanner/export/csv
+
+### validation
+- actual_result_type must be valid enum
+- note is optional
+- actual_menu_name is optional when skipped
+
+## 5. monthly_meal_planner
+
+### purpose
+- 月次の大枠計画
+- 週テーマ配置
+- 週次計画への展開
+- CSV出力
+
+### input_from_user
+- target_month_change
+- generate_month_plan
+- derive_week
+- edit_week_theme
+- export_csv
+- open_upgrade_modal
+
+### input_payload_like
+- household_id
+- target_start_date
+- target_end_date
+- budget_tier
+- monthly_budget_reference
+- event_hints[]
+- seasonal_hints[]
+- repeat_pattern_preference
+
+### output_to_ui
+- month_header
+- weekly_blocks[]
+- month_budget_summary
+- event_hint_summary
+- export_button_state
+
+### output_fields_exact
+- month_header:
+  - meal_plan_id
+  - plan_horizon
+  - target_start_date
+  - target_end_date
+  - budget_tier
+  - derived_budget_amount
+  - currency_code
+- weekly_blocks[]:
+  - week_start_date
+  - week_end_date
+  - theme_label
+  - estimated_budget_amount
+  - derived_week_plan_id_nullable
+
+### write_actions
+- generate_plan
+- derive_week
+- export_csv
+
+### api_binding
+- POST /api/mealplanner/plan/generate
+- POST /api/mealplanner/plan/derive-week
+- POST /api/mealplanner/export/csv
+
+### validation
+- plan_horizon must be monthly
+- target range must be month-like range
+
+## 6. menu_search_and_suggestion
+
+### purpose
+- 献立検索
+- 条件付き提案
+- source_type 切替
+- user_private / user_published / cx22073jw_base の併用
+
+### input_from_user
+- keyword_input
+- meal_category_select
+- budget_tier_select
+- dietary_rule_select
+- exclude_ingredient_select
+- source_filter_toggle
+- suggest_execute
+- search_execute
+
+### input_payload_like
+- query
+- meal_category
+- budget_tier
+- source_filters[]
+- dietary_rules[]
+- exclude_ingredients[]
+- pantry_items[]
+- preferred_cuisine_tags[]
+- include_user_private_menu
+
+### output_to_ui
+- search_result_list
+- suggestion_result_list
+- score_summary_paid_or_debug_contextual
+- source_badges
+
+### output_fields_exact
+- search_result_list[]:
+  - menu_master_id_or_reference_id
+  - menu_title
+  - source_type
+  - publication_status
+  - estimated_cost_band
+  - prep_time_band
+  - serving_base
+- suggestion_result_list[]:
+  - rank
+  - menu_master_id_or_reference_id
+  - menu_title
+  - source_type
+  - estimated_cost
+  - estimated_kcal
+  - score_summary
+
+### write_actions
+- search_menu
+- suggest_menu
+
+### api_binding
+- POST /api/mealplanner/menu/search
+- POST /api/mealplanner/menu/suggest
+
+### validation
+- page >= 1
+- page_size reasonable
+- meal_category valid enum
+- budget_tier valid enum
+
+## 7. pantry_inventory
+
+### purpose
+- household在庫管理
+- 期限管理
+- 提案や買い物差分への反映
+
+### input_from_user
+- add_item
+- edit_item
+- delete_item_soft_or_hide
+- update_quantity
+- update_expiry_date
+- update_storage_type
+- refresh
+
+### input_payload_like
+- household_id
+- items[]:
+  - pantry_item_id
+  - ingredient_id_or_reference_id
+  - ingredient_name
+  - quantity
+  - unit_code
+  - expiry_date
+  - storage_type
+  - opened_flag
+  - note
+
+### output_to_ui
+- pantry_items[]
+- expiry_alert_summary
+- pantry_count
+- paid_only_badge_if_needed
+
+### output_fields_exact
+- pantry_items[]:
+  - pantry_item_id
+  - ingredient_reference_id
+  - ingredient_name_snapshot
+  - quantity
+  - unit_code
+  - expiry_date
+  - storage_type
+  - opened_flag
+  - note
+
+### write_actions
+- pantry_upsert
+
+### api_binding
+- GET /api/mealplanner/pantry/list
+- POST /api/mealplanner/pantry/upsert
+
+### state_notes
+- free:
+  - teaser_only or locked entry
+- paid:
+  - full editable
+
+## 8. shopping_list
+
+### purpose
+- 不足食材の確認
+- 共同チェック
+- 店メモ
+- コスト確認
+
+### input_from_user
+- generate_list
+- check_item
+- uncheck_item
+- update_store_memo
+- change_grouping
+- refresh
+
+### input_payload_like
+- meal_plan_id
+- include_pantry_diff
+- group_by
+- currency_code
+- shopping_list_item_id
+- checked_flag
+- checked_by_member_id
+
+### output_to_ui
+- shopping_header
+- shopping_items[]
+- progress_summary
+- cost_summary
+
+### output_fields_exact
+- shopping_header:
+  - shopping_list_id
+  - estimated_total_cost
+  - currency_code
+  - purchase_status
+- shopping_items[]:
+  - shopping_list_item_id
+  - ingredient_reference_id
+  - ingredient_name_snapshot
+  - shopping_category
+  - shortage_quantity
+  - unit_code
+  - estimated_unit_price
+  - estimated_line_cost
+  - checked_flag
+  - checked_by_member_id
+  - checked_at
+  - store_memo
+- progress_summary:
+  - total_item_count
+  - checked_item_count
+
+### write_actions
+- generate_shopping_list
+- check_shopping_item
+
+### api_binding
+- POST /api/mealplanner/shopping/generate
+- POST /api/mealplanner/shopping/item/check
+
+### state_notes
+- free:
+  - 単独チェックのみ
+- paid:
+  - family共同チェック可
+
+## 9. goal_and_budget_settings
+
+### purpose
+- budget_tier 設定
+- household 目標条件設定
+- LifeOS連携設定
+
+### input_from_user
+- budget_tier_change
+- weight_goal_change
+- salt_attention_toggle
+- protein_focus_toggle
+- integration_toggle
+- save
+
+### input_payload_like
+- household_id
+- budget_tier
+- weight_goal_type
+- salt_attention_flag
+- protein_focus_flag
+- activity_hint_level
+
+### output_to_ui
+- budget_profile
+- goal_profile
+- derived_budget_preview
+- integration_status_paid_only
+
+### output_fields_exact
+- budget_profile:
+  - household_id
+  - budget_tier
+  - derived_weekly_budget_amount
+  - derived_monthly_reference_amount
+  - currency_code
+- goal_profile:
+  - weight_goal_type
+  - salt_attention_flag
+  - protein_focus_flag
+  - energy_target_level
+  - activity_hint_level
+
+### write_actions
+- update_budget_tier
+- update_goal_profile_future
+- update_integration_setting_future
+
+### api_binding
+- POST /api/mealplanner/settings/budget-tier
+
+### state_notes
+- free:
+  - budget_tier editable
+  - LifeOS integration teaser
+- paid:
+  - LifeOS integration full
+
+## 10. family_settings
+
+### purpose
+- household名
+- メンバー構成
+- likes / dislikes / allergy
+
+### input_from_user
+- household_name_change
+- add_member
+- edit_member
+- remove_member_soft
+- update_member_preference
+- save
+
+### input_payload_like
+- household_id
+- household_name
+- members[]:
+  - member_id
+  - nickname
+  - age_group
+  - likes[]
+  - dislikes[]
+  - allergy_tags[]
+
+### output_to_ui
+- household_header
+- member_list[]
+- household_size
+- paid_share_controls_paid_only
+
+### output_fields_exact
+- household_header:
+  - household_id
+  - household_name
+  - member_count
+- member_list[]:
+  - member_id
+  - nickname
+  - age_group
+  - likes
+  - dislikes
+  - allergy_tags
+
+### write_actions
+- update_family_profile
+
+### api_binding
+- POST /api/mealplanner/settings/family-profile
+
+### state_notes
+- free:
+  - 個人設定寄り
+- paid:
+  - household共有運用あり
+
+## 11. template_library
+
+### purpose
+- 日 / 週 / 月テンプレート保存
+- 再利用
+- 上限制御
+
+### input_from_user
+- save_template
+- apply_template
+- rename_template
+- archive_template
+
+### input_payload_like
+- meal_template_id
+- household_id
+- template_name
+- plan_horizon
+- pattern_type
+- visibility_scope
+
+### output_to_ui
+- template_list[]
+- template_limit_state
+- upgrade_cta_if_limit
+
+### output_fields_exact
+- template_list[]:
+  - meal_template_id
+  - template_name
+  - plan_horizon
+  - pattern_type
+  - visibility_scope
+  - is_active
+
+### state_notes
+- free:
+  - 保存数制限
+- paid:
+  - 制限緩和または無制限
+
+## 12. favorite_menu_list
+
+### purpose
+- お気に入り再利用
+- 上限制御
+
+### input_from_user
+- add_favorite
+- remove_favorite
+- reorder_favorite
+
+### input_payload_like
+- household_id
+- menu_source_type
+- menu_reference_id
+- menu_title_snapshot
+
+### output_to_ui
+- favorite_list[]
+- favorite_limit_state
+
+### output_fields_exact
+- favorite_list[]:
+  - favorite_menu_id
+  - menu_source_type
+  - menu_reference_id
+  - menu_title_snapshot
+  - ranking
+  - usage_count
+
+### state_notes
+- free:
+  - 件数制限
+- paid:
+  - 制限緩和または無制限
+
+## 13. meal_history_log
+
+### purpose
+- 実績履歴確認
+- changed / skipped / eating_out / convenience_food 確認
+
+### input_from_user
+- filter_change
+- open_history_detail
+- upgrade_modal_open
+
+### input_payload_like
+- household_id
+- range_start
+- range_end
+- actual_result_type_filter
+
+### output_to_ui
+- history_items[]
+- retention_limit_notice_free
+- statistics_summary_paid_optional
+
+### output_fields_exact
+- history_items[]:
+  - meal_history_id
+  - meal_slot_id
+  - actual_result_type
+  - actual_menu_name
+  - note
+  - recorded_at
+
+### state_notes
+- free:
+  - 保持期間制限
+- paid:
+  - 長期保持
+
+## 14. user_menu_editor
+
+### purpose
+- user_private 献立の作成 / 編集
+- household利用
+- 公開申請前の整備
+
+### input_from_user
+- menu_title_input
+- meal_category_tag_select
+- cuisine_tag_select
+- season_tag_select
+- dietary_tag_select
+- serving_base_input
+- prep_time_input
+- estimated_cost_input
+- ingredient_add
+- ingredient_edit
+- memo_input
+- save_private
+- request_publish
+
+### input_payload_like
+- user_id
+- household_id
+- menu_title
+- meal_category_tags[]
+- cuisine_tags[]
+- season_tags[]
+- dietary_tags[]
+- serving_base
+- prep_time_minutes
+- estimated_cost
+- ingredients[]:
+  - ingredient_id_or_reference_id
+  - ingredient_name
+  - quantity
+  - unit_code
+- memo
+- visibility_scope
+
+### output_to_ui
+- editor_form_state
+- ingredient_rows[]
+- source_type_badge
+- publication_status_badge
+- publish_cta
+
+### output_fields_exact
+- editor_form_state:
+  - menu_master_id_or_user_menu_id
+  - menu_title
+  - source_type
+  - publication_status
+  - visibility_scope
+- ingredient_rows[]:
+  - ingredient_id_or_reference_id
+  - ingredient_name
+  - quantity
+  - unit_code
+
+### write_actions
+- create_user_menu
+- update_user_menu
+- submit_publish_request
+
+### api_binding
+- POST /api/mealplanner/user-menu/create
+- POST /api/mealplanner/user-menu/update
+- POST /api/mealplanner/user-menu/publish-request
+
+### validation
+- menu_title required
+- serving_base >= 1
+- ingredient rows >= 1
+
+## 15. user_menu_publish_status
+
+### purpose
+- 公開申請状態の確認
+- review_pending / approved / rejected 確認
+
+### input_from_user
+- refresh
+- open_menu
+- retry_request_when_allowed
+
+### input_payload_like
+- menu_master_id_or_user_menu_id
+
+### output_to_ui
+- publish_status_card
+- review_note
+- requested_visibility_scope
+
+### output_fields_exact
+- publish_status_card:
+  - menu_master_id_or_user_menu_id
+  - submission_status
+  - publication_status
+  - requested_visibility_scope
+  - review_note
+
+### api_binding
+- GET /api/mealplanner/user-menu/publish-status?menu_master_id=...
+
+## 16. notification_settings
+
+### purpose
+- 基本通知
+- 家族共有通知
+- 提案タイミング通知
+
+### input_from_user
+- toggle_daily_notice
+- toggle_weekly_notice
+- toggle_monthly_notice
+- toggle_shared_notice
+- save
+
+### output_to_ui
+- current_notification_prefs
+- paid_only_shared_notice_teaser
+
+### state_notes
+- free:
+  - 個人通知中心
+- paid:
+  - 共有通知あり

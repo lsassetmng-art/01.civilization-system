@@ -1,0 +1,28 @@
+# ============================================================
+# TRAINING COACH RUNTIME OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+runtime_modes:
+  - menu_planning
+  - guided_execution
+  - quick_logging
+  - continuity_review
+
+runtime_behaviors:
+  - 実施開始時にセッションを起票する
+  - 実施中に進行状況を保持する
+  - 完了時に completion_log を確定する
+  - 疲労度入力があれば次回提案へ反映候補とする
+  - 通知はユーザー設定に従う
+
+runtime_constraints:
+  - 医療危険を断定しない
+  - 不調時は休息・受診導線を優先する
+  - オフラインでも最低限の記録継続を可能にする

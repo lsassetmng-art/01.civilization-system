@@ -1,14 +1,14 @@
-# ============================================================
 # PERSONA LICENSE ACCESS TRANSFER DEVELOPMENT GUIDE
-# ============================================================
 
-status: canonical
-layer: development
-domain: access-license-transfer
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-development_rules:
-preserve explicit authority transitions
-preserve auditability of license, grant, and transfer handling
+contract_split:
+- license: usage condition contract
+- access grant: access scope and duration contract
+- transfer: ownership or stewardship lineage contract
+
+required_controls:
+- separate identifiers for each contract type
+- independent revoke / expire handling
+- actor audit and reason mandatory
+- illegal cross-state transitions rejected

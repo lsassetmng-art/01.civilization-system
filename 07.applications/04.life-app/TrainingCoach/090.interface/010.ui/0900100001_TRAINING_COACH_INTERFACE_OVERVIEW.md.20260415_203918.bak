@@ -1,0 +1,26 @@
+# ============================================================
+# TRAINING COACH INTERFACE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+screens:
+  - dashboard
+  - today_plan
+  - plan_editor
+  - session_execution
+  - completion_result
+  - streak_and_progress
+  - guide_viewer
+  - settings
+  - premium_upgrade
+
+ui_principles:
+  - 実施中は迷わせない
+  - 1画面1目的を優先する
+  - スマホ優先だがタブレット / PC閲覧性も担保する

@@ -1,0 +1,3 @@
+# DOMAIN MODEL OVERVIEW
+role:
+  - MoneyPlanner の主要 entity を定義する

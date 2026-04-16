@@ -1,0 +1,11 @@
+# Constitution Domain Index
+
+## purpose
+MealPlanner のドメイン責務と非責務を定義する
+
+## files
+- 0100200001_DOMAIN_OVERVIEW.md
+
+## notes
+- この index は Constitution Domain の入口である
+- 詳細は配下ドキュメントを参照する

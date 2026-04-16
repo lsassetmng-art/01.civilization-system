@@ -1,0 +1,11 @@
+# ============================================================
+# DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: draft
+
+development_focus:
+  - metric normalization correctness
+  - graph explanation clarity
+  - privacy-safe sharing
+  - careful health wording

@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT INFRASTRUCTURE DETAIL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 110.infrastructure
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - アプリ基盤前提を詳細化する
+  - 添付、通知、複数端末利用の前提をそろえる
+  - 実装前に infra の責務境界を固定する

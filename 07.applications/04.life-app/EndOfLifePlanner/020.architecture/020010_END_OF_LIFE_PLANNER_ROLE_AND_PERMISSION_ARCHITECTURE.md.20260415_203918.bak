@@ -1,0 +1,27 @@
+# ============================================================
+# END OF LIFE PLANNER ROLE AND PERMISSION ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+phase: L1-spec-placement
+
+roles:
+  owner:
+    - 全カテゴリ管理
+    - 共有先設定
+    - 出力実行
+    - 監査ログ閲覧
+  family_viewer:
+    - owner許可範囲のみ閲覧
+    - 原則編集不可
+  delegated_editor:
+    - owner許可範囲のみ編集
+    - 共有設定変更不可
+    - handoff_document生成不可
+
+fixed_rules:
+  - ownerのみが共有先追加/削除できる
+  - ownerのみが権限変更できる
+  - family_viewerは編集不可
+  - delegated_editorは共有設定変更不可
+  - access_audit_log は owner 専用

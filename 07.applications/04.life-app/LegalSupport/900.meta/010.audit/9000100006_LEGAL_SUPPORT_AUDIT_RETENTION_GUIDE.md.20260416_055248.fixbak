@@ -1,0 +1,39 @@
+# ============================================================
+# LEGAL SUPPORT AUDIT RETENTION GUIDE
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: meta
+subdomain: audit
+schema: life
+
+retention_guidelines:
+  high_severity_actions:
+    keep:
+      - long_term
+    examples:
+      - archive_legal_case
+      - reopen_legal_case
+      - family share changes
+      - export execution
+
+  medium_severity_actions:
+    keep:
+      - medium_term
+    examples:
+      - legal_case updates
+      - document verification
+      - notification preference changes
+
+  low_severity_actions:
+    keep:
+      - optional_or_aggregated
+    examples:
+      - preview generation
+      - non-destructive helper actions
+
+guidelines:
+  - snapshot volume は action severity に応じて制御する
+  - export 実行ログは included_sections を保持する
+  - private note 全文は audit へ過剰保存しない

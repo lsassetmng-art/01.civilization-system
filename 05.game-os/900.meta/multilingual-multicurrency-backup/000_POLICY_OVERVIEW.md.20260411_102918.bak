@@ -1,0 +1,19 @@
+# ============================================================
+# GAME OS POLICY OVERVIEW
+# ============================================================
+
+status: draft-for-canonical-update
+system: game-os
+layer: policy
+document_type: overview
+owner: Boss
+prepared_by: Zero
+
+summary:
+The policy layer defines what may be reflected into PersonaOS and how
+national-currency gambling must be controlled.
+
+principles:
+- only meaningful continuous changes may become reflection proposals
+- title-local convenience values must not leak into canonical truth
+- national-currency gambling requires safety, audit, and dispute control

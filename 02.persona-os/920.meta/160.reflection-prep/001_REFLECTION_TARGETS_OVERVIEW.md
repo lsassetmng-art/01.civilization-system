@@ -20,14 +20,16 @@ reflection_targets_completed:
 - VisualRuntime
 
 shared_reflection_rule:
-All downstream targets may consume, expose, cache, transport,
+All adjacent targets may consume, expose, cache, transport,
 render, or operationally support PersonaOS-derived data,
+and PersonaOS foundation layers may execute it,
 but they must not silently replace PersonaOS canonical authority,
 governance decision truth, security gate truth,
-snapshot authority, or committed mutation truth.
+snapshot authority, canonical visual truth,
+or committed mutation truth.
 
 shared_stage_rule:
-Downstream targets must preserve stage separation:
+Targets must preserve stage separation:
 - accepted is not verified
 - verified is not approved
 - approved is not committed
@@ -38,7 +40,7 @@ target_roles:
 - PocketSecretary = runtime-facing host consumer
 - BusinessOS = business-scoped workflow/integration consumer
 - CivilizationOS = world/context-side consumer
-- VisualRuntime = rendering/execution-side consumer
+- VisualRuntime = PersonaOS foundation-side visual execution layer
 
 next_after_this_overview:
 Create a single integrated master summary for reflection-prep closure

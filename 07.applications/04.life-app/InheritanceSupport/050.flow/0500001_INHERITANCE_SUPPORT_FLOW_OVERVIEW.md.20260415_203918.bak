@@ -1,0 +1,20 @@
+# ============================================================
+# INHERITANCE SUPPORT FLOW OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 050.flow
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - フローレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 主要利用導線を固定する
+  - 準備開始から相談前整理までの流れを明文化する
+  - 家族共有と専門家相談出力の条件を整理する

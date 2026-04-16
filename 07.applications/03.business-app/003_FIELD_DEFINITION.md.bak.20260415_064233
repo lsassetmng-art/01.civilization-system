@@ -1,0 +1,70 @@
+# ============================================================
+# BUSINESS APP LEDGER FIELD DEFINITION
+# ============================================================
+
+status: field-definition
+owner: Boss
+prepared_by: Zero
+
+## field definitions
+
+| field | meaning |
+|---|---|
+| no | 連番 |
+| app_code | 台帳用の業務アプリコード |
+| folder_exists | 物理フォルダの存在有無 |
+| physical_path | 物理配置パス |
+| folder_name | フォルダ名 |
+| app_name_en | 英語アプリ名 |
+| app_name_ja | 日本語アプリ名 |
+| category | アプリ種別 |
+| positioning | 位置づけ |
+| core_scope | 主スコープ |
+| primary_users | 主利用者 |
+| main_roles | 主ロール |
+| pricing_plan | 価格表現 |
+| pricing_status | 価格根拠状態 |
+| trial_policy | トライアル有無 |
+| support_policy | サポート形態 |
+| erp_integration_level | ERP連携レベル |
+| erp_master_boundary | ERPが正本かどうかの境界 |
+| auth_boundary | 認証境界 |
+| offline_policy | オフライン方針 |
+| sync_policy | 同期方針 |
+| explicit_send_policy | 明示送信方針 |
+| deeplink_support | deeplink対応有無 |
+| share_scope | 共有範囲 |
+| storage_policy | 保存方針 |
+| schema_name | schema名 |
+| implementation_phase | 実装準備段階 |
+| api_readiness | API準備度 |
+| db_readiness | DB準備度 |
+| release_readiness | リリース準備度 |
+| device_policy | 対応端末方針 |
+| i18n_policy | 多言語方針 |
+| multicurrency_policy | 多通貨方針 |
+| source_file | 参照元統合資料 |
+| evidence_status | 根拠状態の簡易分類 |
+| review_owner | レビュー責任者 |
+| release_owner | リリース責任者 |
+| note | 補足 |
+
+## pricing_status values
+
+- file-confirmed
+  - 統合資料内で価格確認済み
+- user-confirmed-in-chat
+  - チャット内でユーザーが価格確定
+- unknown
+  - 未確定
+
+## readiness values
+
+- implementation-ready
+- integrated-design-present
+- partial-known
+- exact-payload-present
+- auth-context-model-present
+- not-assessed
+
+unknown は未確定を意味する。

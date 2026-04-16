@@ -1,0 +1,18 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT CONSTITUTION DETAIL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 010.constitution
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - 事業法務相談アプリとしての存在理由を詳細化する
+  - BusinessOS や ERP と競合しない憲章を固定する
+  - 「何をするか」より先に「何をしないか」を明確化する

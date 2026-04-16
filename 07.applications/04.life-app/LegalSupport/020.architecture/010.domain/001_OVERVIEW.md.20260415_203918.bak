@@ -1,0 +1,8 @@
+# ============================================================
+# LEGAL SUPPORT DOMAIN ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+
+summary:
+  - 主要機能モジュールと責務境界を置く

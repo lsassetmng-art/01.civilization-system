@@ -1,0 +1,16 @@
+# Runtime Detail Overview
+
+app: CareerLaunch
+layer: 040.runtime
+## Purpose
+ドラフト保存、同期、通知、面接前後の実行時挙動を定義する。
+
+## Coverage
+- ドラフト保存
+- 同期
+- 通知
+- 失敗時挙動
+- 端末差分
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。

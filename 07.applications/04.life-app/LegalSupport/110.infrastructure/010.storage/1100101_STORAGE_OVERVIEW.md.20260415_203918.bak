@@ -1,0 +1,10 @@
+# ============================================================
+# STORAGE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+storage_domains:
+  - case records
+  - document metadata
+  - evidence metadata
+  - share/export records

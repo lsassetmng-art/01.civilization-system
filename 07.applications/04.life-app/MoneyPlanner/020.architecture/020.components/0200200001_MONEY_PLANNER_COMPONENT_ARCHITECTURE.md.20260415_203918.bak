@@ -1,0 +1,16 @@
+# ============================================================
+# MONEY PLANNER COMPONENT ARCHITECTURE
+# ============================================================
+
+components:
+  - dashboard_component
+  - income_list_component
+  - expense_list_component
+  - asset_ledger_component
+  - liability_ledger_component
+  - goal_tracker_component
+  - event_budget_component
+  - projection_component
+  - scenario_compare_component
+  - family_sharing_component
+  - linkage_control_component

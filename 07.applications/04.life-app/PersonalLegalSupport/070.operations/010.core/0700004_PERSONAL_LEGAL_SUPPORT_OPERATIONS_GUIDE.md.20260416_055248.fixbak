@@ -1,0 +1,28 @@
+# ============================================================
+# PERSONAL LEGAL SUPPORT OPERATIONS GUIDE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 070.operations
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+operations:
+  daily:
+    - 新規相談メモ確認
+    - 期限近接確認
+  weekly:
+    - リスクメモ見直し
+    - 家族共有案件確認
+  monthly:
+    - 契約更新候補確認
+    - 終活/相続入口メモ確認
+
+ops_rules:
+  - 運用は owner 主体
+  - family は許可範囲閲覧
+  - delegated_helper は将来拡張

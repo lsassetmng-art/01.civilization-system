@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT INFRASTRUCTURE INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: INFRASTRUCTURE
+
+purpose:
+  - 保存前提、デバイス前提、将来接続方針を定義する

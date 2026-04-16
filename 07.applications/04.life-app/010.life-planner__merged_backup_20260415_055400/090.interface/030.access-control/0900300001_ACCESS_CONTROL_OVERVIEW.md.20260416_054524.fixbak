@@ -1,0 +1,31 @@
+# ============================================================
+# ACCESS CONTROL OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 030.access-control
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - owner / family_editor / family_viewer の表示可否と編集可否を固定する
+  - 共有範囲とセンシティブカテゴリの扱いを画面単位で整理する
+  - 実装前に権限ブレを防ぐ
+
+role_summary:
+  owner:
+    - full access
+    - final decision
+    - share control
+
+  family_editor:
+    - edit within shared scope
+    - review proposal
+    - no final share control
+
+  family_viewer:
+    - read within shared scope only
+    - no edit

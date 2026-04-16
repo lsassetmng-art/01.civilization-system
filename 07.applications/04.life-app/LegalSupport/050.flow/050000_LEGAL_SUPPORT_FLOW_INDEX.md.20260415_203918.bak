@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT FLOW INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: FLOW
+
+purpose:
+  - ユーザーフローと操作順序を定義する

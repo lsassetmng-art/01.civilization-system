@@ -1,0 +1,10 @@
+# ============================================================
+# DOMAIN MODEL INDEX
+# ============================================================
+
+subfolder: 010.domain
+
+documents:
+  - 0300100000_DOMAIN_MODEL_INDEX.md
+  - 0300100001_DOMAIN_MODEL_OVERVIEW.md
+  - 0300100002_LIFE_PLANNER_DOMAIN_MODEL.md

@@ -1,0 +1,12 @@
+# 1000000 SECURITY INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/1000000_SECURITY_INDEX.md
+## Purpose
+CareerLaunch の 100.security 配下を一覧する。
+
+## Children
+- 1000001_CAREER_LAUNCH_SECURITY_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

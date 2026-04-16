@@ -1,0 +1,8 @@
+# Integration Core Overview
+
+## role
+MealPlanner の連携原則を定義する
+
+## mealplanner_context
+- MealPlanner の当該レイヤーにおける責務を整理する
+- CivilizationOS系構成に合わせる

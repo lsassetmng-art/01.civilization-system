@@ -1,0 +1,30 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# PRE IMPLEMENTATION PACKAGE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 120.implementation
+subfolder: 060.pre-implementation-package
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 1200600000_PRE_IMPLEMENTATION_PACKAGE_INDEX.md
+  - 1200600001_PRE_IMPLEMENTATION_PACKAGE_OVERVIEW.md
+  - 1200600002_LIFE_PLANNER_IMPLEMENTATION_DEFERRAL_BOUNDARY.md
+  - 1200600003_LIFE_PLANNER_PHASE1_IMPLEMENTATION_PREP_SCOPE.md
+  - 1200600004_LIFE_PLANNER_NON_BLOCKING_LATER_SCOPE.md

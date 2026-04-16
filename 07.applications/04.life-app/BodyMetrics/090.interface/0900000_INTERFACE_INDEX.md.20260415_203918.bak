@@ -1,0 +1,12 @@
+# ============================================================
+# INTERFACE INDEX
+# ============================================================
+
+status: draft
+contents:
+  - 0900001_INTERFACE_OVERVIEW.md
+  - 0900002_SCREEN_MAP_AND_DASHBOARD_INTERFACE.md
+  - 0900003_GRAPH_AND_EXPLANATION_INTERFACE.md
+  - 0900004_FIXED_INTERFACE_AND_ANALYSIS_POLICY.md
+  - 0900005_API_EXACT_PAYLOAD_AND_SCREEN_MAPPING.md
+  - 0900006_SCREEN_EXACT_DISPLAY_FIXED_PACK.md

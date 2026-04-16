@@ -1,0 +1,12 @@
+# ============================================================
+# POLICY INDEX
+# ============================================================
+
+layer: 080.policy
+
+documents:
+  - 0800000000_POLICY_INDEX.md
+  - 0800000001_POLICY_OVERVIEW.md
+
+subfolders:
+  - 010.privacy-pricing

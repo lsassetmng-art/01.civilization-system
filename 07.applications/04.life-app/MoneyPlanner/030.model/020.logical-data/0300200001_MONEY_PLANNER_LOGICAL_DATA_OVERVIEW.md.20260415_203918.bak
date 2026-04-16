@@ -1,0 +1,23 @@
+# ============================================================
+# MONEY PLANNER LOGICAL DATA OVERVIEW
+# ============================================================
+
+logical_groups:
+  - master_like:
+      - scenario
+      - shared_member
+  - transaction_like:
+      - income_item
+      - expense_item
+      - asset_item
+      - liability_item
+      - saving_goal
+      - event_budget
+      - memo_item
+  - snapshot_like:
+      - financial_snapshot
+
+policies:
+  - amount は decimal string 前提
+  - currency_code は全金額項目で必須
+  - deleted_at による論理削除前提

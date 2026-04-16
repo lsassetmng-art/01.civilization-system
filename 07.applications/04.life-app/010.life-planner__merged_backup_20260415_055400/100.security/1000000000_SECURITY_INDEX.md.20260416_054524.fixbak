@@ -1,0 +1,12 @@
+# ============================================================
+# SECURITY INDEX
+# ============================================================
+
+layer: 100.security
+
+documents:
+  - 1000000000_SECURITY_INDEX.md
+  - 1000000001_SECURITY_OVERVIEW.md
+
+subfolders:
+  - 010.data-protection

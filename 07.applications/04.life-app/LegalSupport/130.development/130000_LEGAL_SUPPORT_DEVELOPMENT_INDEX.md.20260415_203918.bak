@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT DEVELOPMENT INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: DEVELOPMENT
+
+purpose:
+  - 開発バックログと設計補強論点を管理する

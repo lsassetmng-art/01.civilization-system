@@ -1,0 +1,43 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT INDEX AND SEARCH POLICY
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 030.model
+subfolder: 040.ddl-readiness
+owner: Boss
+prepared_by: Zero
+
+recommended_indexes:
+  business_legal_issue:
+    - owner_user_id, status, updated_at
+    - owner_user_id, issue_type, priority
+  business_legal_contract_item:
+    - issue_id, status, effective_to
+    - counterparty_id, status
+  business_legal_deadline_record:
+    - issue_id, completed_flag, due_at
+  business_legal_counterparty:
+    - owner_user_id, name
+  business_legal_risk_note:
+    - issue_id, severity, risk_category
+  business_legal_consultation_record:
+    - issue_id, consulted_at
+  business_legal_trouble_timeline:
+    - issue_id, occurred_at
+  business_legal_advisor_share_record:
+    - issue_id, shared_at, revoked_at
+
+search_policy:
+  - keyword search starts from title and summary
+  - long-form full text search is not fixed yet
+  - search is owner-scoped by default
+  - advisor search must stay inside shared scope only
+
+notes:
+  - this is logical index guidance only
+  - actual index statement belongs to SQL phase

@@ -1,7 +1,12 @@
 # PERSONA EXTERNAL APPLY RETENTION POLICY
-status: canonical
-layer: policy
-system: persona-os
-scope: persona-external-apply-retention-policy
 
-Defines retention policy for apply logs, reject logs, and receipts.
+status: implementation-ready-followup
+
+retention_scope:
+- inbound request evidence
+- validation result
+- apply result feedback
+- dead-letter evidence
+
+minimum_rule:
+Retention must preserve auditability and replay investigation.

@@ -1,0 +1,12 @@
+# 1100000 INFRASTRUCTURE INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+## Purpose
+CareerLaunch の 110.infrastructure 配下を一覧する。
+
+## Children
+- 1100001_CAREER_LAUNCH_INFRASTRUCTURE_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

@@ -1,0 +1,107 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# TRAINING COACH SHARE VIEWER UI EXACT DESIGN
+# ============================================================
+
+status: canonical-draft
+phase: design-consolidation
+system: TrainingCoach
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+purpose:
+  - future share viewer UI の exact 画面責務を固定する
+  - summary-only share を UI でも崩さない
+  - 将来実装時の privacy break を防ぐ
+
+design_position:
+  - future feature
+  - v1 実装対象外
+  - ただし画面責務と見せないものを先に固定する
+
+future_screens:
+
+share_settings_owner:
+  primary_responsibility:
+    - 共有先の追加
+    - 共有scopeの変更
+    - 共有解除
+  may_read:
+    - active share relations
+    - pending invitations
+    - share scope labels
+  may_not_show:
+    - raw viewer history details beyond minimal audit summary
+
+share_invitation_review_viewer:
+  primary_responsibility:
+    - 招待内容確認
+    - 承認 / 拒否
+  must_show:
+    - who is sharing
+    - what summary scope is shared
+    - can revoke later note
+  must_not_show:
+    - raw health data preview
+
+shared_progress_summary_viewer:
+  primary_responsibility:
+    - 許可された要約の閲覧
+  may_show:
+    - current_streak_days
+    - weekly_completion_rate
+    - status_badge
+    - active_goal_count if granted
+    - completed_training_minutes_bucket if granted
+  must_not_show:
+    - fatigue_level
+    - body_condition raw
+    - note / memo
+    - full session list
+    - detailed timestamps
+
+share_revocation_notice:
+  primary_responsibility:
+    - 共有解除後の状態説明
+  must_show:
+    - access ended
+    - owner controlled scope
+  must_not_show:
+    - prior raw cached summary details
+
+ui_components_future:
+  - share_scope_badge
+  - summary_card_streak
+  - summary_card_progress
+  - summary_card_status
+  - invitation_status_chip
+  - revoke_confirmation_dialog
+
+ui_guardrails:
+  - compare-with-others UI を作らない
+  - leaderboard UI を作らない
+  - raw health widget を載せない
+  - share scope を常に可視化する
+  - revoke action を隠さない
+
+viewer_messages_needed:
+  - shared_scope_basic_label
+  - access_revoked_message
+  - summary_only_notice
+  - owner_controls_scope_notice
+
+navigation_notes:
+  - owner side settings から share 管理へ
+  - viewer sideは invite deep link or share tab candidate
+  - revoked relation は read screen ではなく ended state screen を出す

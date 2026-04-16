@@ -1,0 +1,10 @@
+# ============================================================
+# RELEASE PLAN INDEX
+# ============================================================
+
+subfolder: 010.release-plan
+
+documents:
+  - 1200100000_RELEASE_PLAN_INDEX.md
+  - 1200100001_RELEASE_PLAN_OVERVIEW.md
+  - 1200100002_LIFE_PLANNER_PHASED_IMPLEMENTATION_PLAN.md

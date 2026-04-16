@@ -1,0 +1,18 @@
+# ============================================================
+# SEARCH FILTER INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 060.search-filter
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0900600000_SEARCH_FILTER_INDEX.md
+  - 0900600001_SEARCH_FILTER_OVERVIEW.md
+  - 0900600002_LIFE_PLANNER_PLAN_SEARCH_FILTER_SORT.md
+  - 0900600003_LIFE_PLANNER_GOAL_SEARCH_FILTER_SORT.md
+  - 0900600004_LIFE_PLANNER_EVENT_SEARCH_FILTER_SORT.md

@@ -1,0 +1,133 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# LEGAL SUPPORT ROOT OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+app_name_ja: 法律相談サポートアプリ
+app_name_en: LegalSupport
+
+positioning:
+  - 法律判断そのものではなく、相談準備・記録・論点整理支援
+  - 個人法務の総合入口
+  - 日本の個人生活文脈に合わせた法務整理アプリ
+  - 専門家相談の前後で情報を整える生活密着型アプリ
+
+core_purpose:
+  - 法律相談内容の整理
+  - 事実関係の時系列化
+  - 必要書類整理
+  - 相談履歴管理
+  - 次回確認事項の明確化
+
+main_users:
+  - 個人
+  - 家族の法務整理をしたい人
+  - 専門家相談前に整理したい人
+
+roles:
+  owner:
+    - 相談作成
+    - 書類整理
+    - メモ更新
+    - 期限管理
+    - 共有設定
+  shared_family_viewer:
+    - 許可範囲閲覧
+  professional_share_target:
+    - 共有された要約閲覧（将来拡張）
+
+must_functions:
+  - 相談テーマ作成
+  - 事実メモ
+  - 時系列整理
+  - 関係者整理
+  - 書類一覧
+  - 質問リスト
+  - 相談履歴
+  - 次回アクション
+
+should_functions:
+  - 分野別テンプレート
+  - 相談前チェックリスト
+  - 重要期限管理
+  - 共有PDF出力
+  - 家族共有
+  - 外部専門家連携導線
+
+nice_to_have:
+  - 会話要約
+  - 契約書メタ情報管理
+  - 音声メモ
+  - 相談スレッド形式記録
+
+data_entities:
+  - legal_case
+  - fact_timeline
+  - stakeholder
+  - document_item
+  - question_list
+  - consultation_note
+  - action_item
+  - deadline_item
+  - expense_record
+  - export_bundle
+
+schema_policy:
+  primary_schema: life
+
+lifeos_boundaries:
+  - InheritanceSupportへ相続案件連携
+  - BusinessLegalSupportへ事業案件振り分け
+  - EndOfLifePlannerへ遺言・医療意思・家族引継ぎ関連連携
+  - 法的結論の確定提供は行わない
+  - 弁護士等の専門家判断を代替しない
+
+pricing_design:
+  policy:
+    - 課金対象は法律判断ではなく整理支援・共有・記録強化
+    - PlusとFamilyは統合し月額500円とする
+    - サポートはAIチャットのみ
+  plans:
+    free:
+      monthly_price_jpy: 0
+      included:
+        - 相談テーマ作成
+        - 事実メモ
+        - 時系列整理
+        - 関係者整理
+        - 書類一覧
+        - 質問リスト
+        - 相談履歴
+        - 次回アクション
+    plus_family:
+      monthly_price_jpy: 500
+      included:
+        - 分野別テンプレート
+        - 相談前チェックリスト
+        - 重要期限管理
+        - 共有PDF出力
+        - 家族共有
+        - 会話要約
+        - 契約書メタ情報管理
+        - 音声メモ
+
+multi_support:
+  multilingual: true
+  multicurrency: true
+  multi_device:
+    iphone: true
+    android: true
+    pc: true
+    tablet: true

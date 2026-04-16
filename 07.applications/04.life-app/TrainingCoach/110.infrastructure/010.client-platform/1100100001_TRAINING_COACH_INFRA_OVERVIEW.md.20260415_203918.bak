@@ -1,0 +1,22 @@
+# ============================================================
+# TRAINING COACH INFRA OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+layer: 110.infrastructure
+owner: Boss
+prepared_by: Zero
+
+platform_targets:
+  - iPhone
+  - Android
+  - PC
+  - Tablet
+
+infra_policy:
+  - モバイルを主軸にする
+  - PC / Tablet は閲覧性と編集性を強める
+  - オフライン記録を許容する
+  - 将来のデバイス連携拡張に備える

@@ -1,0 +1,25 @@
+# ============================================================
+# SCREEN MAP AND DASHBOARD INTERFACE
+# ============================================================
+
+status: draft
+
+main_screens:
+  - dashboard_home
+  - quick_record
+  - metric_detail
+  - trend_analysis
+  - weekly_review
+  - health_score_center
+  - sharing_settings
+  - export_center
+
+dashboard_cards:
+  - latest_weight
+  - latest_blood_pressure
+  - sleep_last_night
+  - steps_today
+  - weekly_trend_summary
+  - health_score_summary
+  - average_comparison_summary
+  - sync_status

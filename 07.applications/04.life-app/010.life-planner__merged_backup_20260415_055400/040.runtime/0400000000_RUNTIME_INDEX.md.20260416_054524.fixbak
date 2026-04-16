@@ -1,0 +1,12 @@
+# ============================================================
+# RUNTIME INDEX
+# ============================================================
+
+layer: 040.runtime
+
+documents:
+  - 0400000000_RUNTIME_INDEX.md
+  - 0400000001_RUNTIME_OVERVIEW.md
+
+subfolders:
+  - 010.lifecycle

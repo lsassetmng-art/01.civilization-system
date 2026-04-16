@@ -10,10 +10,10 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Integrates the initial downstream reflection-prep wave that reflects
+Integrates the initial reflection-prep wave that reflects
 PersonaOS normalized wording, implementation-facing boundaries,
-and cross-domain stage separation into adjacent applications
-and OS-level systems.
+and cross-domain stage separation into adjacent applications,
+adjacent OS-level systems, and PersonaOS foundation layers.
 
 # ============================================================
 # 0. CURRENT POSITION
@@ -25,9 +25,9 @@ PersonaOS has already completed:
 - implementation-facing review
 - cross-domain execution path check
 - implementation prep summary
-- initial downstream reflection-prep set
+- initial reflection-prep set
 
-The initial downstream reflection-prep set now covers:
+The initial reflection-prep set now covers:
 - PocketSecretary
 - BusinessOS
 - CivilizationOS
@@ -37,17 +37,18 @@ This means PersonaOS now has:
 - normalized internal authority boundaries
 - implementation-facing domain separation
 - cross-domain stage separation
-- first-wave downstream reflection guidance
+- first-wave reflection guidance
 
 # ============================================================
 # 1. WHAT THIS REFLECTION SET DOES
 # ============================================================
 
-This reflection-prep set tells downstream systems:
+This reflection-prep set tells targets:
 
 - what they may consume from PersonaOS
 - what they may expose or cache locally
 - what they may operationally support
+- what they may execute at foundation/runtime level
 - what they must never silently treat as authority truth
 - how stage separation must remain visible in runtime,
   workflow, transport, rendering, and support layers
@@ -73,7 +74,7 @@ The following remain owned by PersonaOS:
 - committed mutation truth
 - canonical visual truth
 
-Downstream systems may hold:
+Targets may hold:
 - references
 - projections
 - derived views
@@ -83,8 +84,9 @@ Downstream systems may hold:
 - support/debug records
 - render outputs
 - business/world context records
+- foundation-side execution artifacts
 
-But downstream systems must not silently promote those
+But targets must not silently promote those
 into PersonaOS authority truth.
 
 # ============================================================
@@ -157,7 +159,7 @@ must_not_promote:
 # ------------------------------------------------------------
 
 role:
-Rendering/execution-side visual consumer.
+PersonaOS foundation-side visual execution layer.
 
 may_hold:
 - manifest-derived inputs
@@ -177,7 +179,7 @@ must_not_promote:
 # 4. SHARED STAGE-SEPARATION RULE
 # ============================================================
 
-All downstream reflection targets must preserve:
+All reflection targets must preserve:
 
 1. request accepted
 2. security verified
@@ -225,7 +227,7 @@ major_shared_risks:
 # 6. SHARED IMPLEMENTATION RULES
 # ============================================================
 
-All downstream implementations should follow:
+All target implementations should follow:
 
 rule_1:
 Always label local values as one of:
@@ -236,6 +238,7 @@ Always label local values as one of:
 - support/debug trace
 - render artifact
 - business/world-owned truth
+- foundation execution artifact
 
 rule_2:
 Never serialize convenience state as Persona canonical truth.
@@ -274,7 +277,7 @@ reflection_prep_folder_status:
 
 closure_judgment:
 The first-wave reflection-prep folder is now structurally complete
-for the major downstream targets discussed in this phase.
+for the major reflection targets discussed in this phase.
 
 # ============================================================
 # 8. NATURAL NEXT STEPS
@@ -285,8 +288,9 @@ recommended_next_steps:
 2. reflect these rules into actual PocketSecretary design docs
 3. reflect these rules into actual BusinessOS design docs
 4. reflect these rules into actual CivilizationOS design docs
-5. reflect these rules into actual VisualRuntime design docs
-6. if needed, create app-specific implementation checklists
+5. reflect these rules into actual PersonaOS foundation design docs
+   for VisualRuntime
+6. if needed, create target-specific implementation checklists
 
 most_natural_next_step:
 Create a compact reflection-prep handoff document
@@ -297,7 +301,7 @@ for use in the next chat or next phase.
 # ============================================================
 
 final_fixed_statement:
-The initial PersonaOS downstream reflection-prep wave is now complete.
+The initial PersonaOS reflection-prep wave is now complete.
 PocketSecretary, BusinessOS, CivilizationOS, and VisualRuntime
 have each been given explicit reflection rules that preserve
 PersonaOS authority ownership, stage separation,

@@ -1,0 +1,16 @@
+# ============================================================
+# GLOSSARY OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 920.meta
+subfolder: 010.glossary
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 設計書全体で使う語彙を固定する
+  - 同じ意味に複数名を使うことを防ぐ
+  - 実装前の命名ぶれを減らす

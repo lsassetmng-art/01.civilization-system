@@ -1,0 +1,27 @@
+# ============================================================
+# API FIXED PREP OVERVIEW
+# ============================================================
+
+status: canonical-draft
+
+goal:
+  - UI と API の間でぶれない exact payload を固定する
+  - case-centric 構造を API にもそのまま反映する
+  - 共有、秘匿、出力に必要な権限制御情報を response に含める
+
+api_groups:
+  - case list / detail / create / update / archive
+  - stakeholder list / create / update
+  - timeline list / create / update
+  - document list / create / update
+  - consultation note list / create / update
+  - task list / create / update
+  - share grant / revoke / export
+
+api_design_principles:
+  - envelope を全 API で統一する
+  - list response は pagination を必ず持つ
+  - detail response は permissions と visibility を含む
+  - create / update request は payload を明示ラップする
+  - error structure を全 API で統一する
+  - 法的結論は response に含めない

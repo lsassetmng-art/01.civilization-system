@@ -1,0 +1,19 @@
+# ============================================================
+# END OF LIFE PLANNER DEVELOPMENT OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: L13-implementation-preparation-complete
+
+development_scope:
+  - design final ready
+  - implementation preparation completion
+  - pre-start handoff
+  - execution hold management
+
+important_boundary:
+  - implementation preparation is complete
+  - implementation code is not started
+  - executable SQL is not started
+  - runtime coding is not started
+  - current state is ready-to-start but not started

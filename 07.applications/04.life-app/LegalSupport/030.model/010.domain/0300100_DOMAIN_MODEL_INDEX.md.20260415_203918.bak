@@ -1,0 +1,19 @@
+# ============================================================
+# DOMAIN MODEL INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0300101_DOMAIN_MODEL_OVERVIEW.md
+  - 0300102_ENTITY_CATALOG.md
+  - 0300103_API_TO_ENTITY_MAPPING.md
+  - 0300104_ENTITY_FIELD_DICTIONARY.md
+  - 0300105_DB_TABLE_COLUMN_FIXED.md
+  - 0300106_DB_RELATION_AND_INDEX_POLICY.md
+  - 0300107_DATA_RESPONSIBILITY_CANONICAL.md
+  - 0300108_MODEL_DECISION_ADJUSTMENT_CANONICAL.md
+
+purpose:
+  - LegalSupport の domain model 正本一覧

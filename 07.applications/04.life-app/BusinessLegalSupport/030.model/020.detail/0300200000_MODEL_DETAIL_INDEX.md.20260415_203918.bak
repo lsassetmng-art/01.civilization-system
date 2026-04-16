@@ -1,0 +1,19 @@
+# ============================================================
+# MODEL DETAIL INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+schema: life
+layer: 030.model
+subfolder: 020.detail
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0300200001_BUSINESS_LEGAL_SUPPORT_MODEL_DETAIL_OVERVIEW.md
+  - 0300200002_BUSINESS_LEGAL_SUPPORT_ENTITY_DEFINITIONS.md
+  - 0300200003_BUSINESS_LEGAL_SUPPORT_FIELD_AND_CARDINALITY_MATRIX.md
+  - 0300200004_BUSINESS_LEGAL_SUPPORT_STATUS_AND_ENUM_RULES.md

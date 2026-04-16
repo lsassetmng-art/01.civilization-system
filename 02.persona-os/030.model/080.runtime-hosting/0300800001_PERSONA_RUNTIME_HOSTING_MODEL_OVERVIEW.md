@@ -1,28 +1,9 @@
-# ============================================================
 # PERSONA RUNTIME HOSTING MODEL OVERVIEW
-# ============================================================
 
-status: canonical
-layer: model
-domain: runtime-hosting
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-purpose:
-Defines the overview of runtime-hosting models.
-
-summary:
-Runtime-hosting models define execution-side session state
-used when host applications consume PersonaOS runtime behavior.
-
-scope:
-runtime session
-surface code
-host system code
-container binding state
-runtime error linkage
-
-boundary:
-Runtime session model is not persona truth.
-Runtime session model is disposable execution state.
+runtime_hosting_boundary:
+- runtime session is ephemeral and renewable
+- host adapter binds released snapshot/package only
+- session state must support creation, heartbeat, suspend, resume, terminate, expire
+- runtime session model must be auditable by session id and release input version

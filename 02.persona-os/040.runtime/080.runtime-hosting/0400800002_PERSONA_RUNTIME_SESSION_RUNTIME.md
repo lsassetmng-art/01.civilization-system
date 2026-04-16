@@ -1,15 +1,21 @@
-# ============================================================
 # PERSONA RUNTIME SESSION RUNTIME
-# ============================================================
 
-status: canonical
-layer: runtime
-domain: runtime-hosting
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-runtime_rules:
-one visible host-owned render lifecycle maps to one runtime session
-session disposal must be explicit
-disposed sessions must not resume
+session_lifecycle:
+- create
+- active
+- suspended
+- resumed
+- terminating
+- terminated
+- expired
+
+runtime_rule:
+Session activation requires released snapshot or package lineage verification.
+
+required_controls:
+- heartbeat timeout
+- restore/resume handling
+- terminal reason capture
+- terminal audit event emission

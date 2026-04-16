@@ -1,0 +1,21 @@
+# ============================================================
+# MONEY PLANNER INTERFACE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - インターフェースレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 主要画面と UI 責務を定義する
+  - モバイル優先だが PC/タブレットでも読める設計にする
+  - 中長期の見通しが見やすい構造を持つ

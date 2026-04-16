@@ -1,0 +1,33 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# API FIXED PREP INDEX
+# ============================================================
+
+status: canonical-draft
+system: life-app
+app: LegalSupport
+layer: implementation.api-fixed-prep
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LegalSupport/120.implementation/010.api-fixed-prep
+
+files:
+  - 1200101_API_FIXED_PREP_OVERVIEW.md
+  - 1200102_API_COMMON_RULES.md
+  - 1200103_CASE_API_EXACT_PAYLOAD.md
+  - 1200104_STAKEHOLDER_AND_TIMELINE_API_EXACT_PAYLOAD.md
+  - 1200105_DOCUMENT_AND_CONSULTATION_API_EXACT_PAYLOAD.md
+  - 1200106_TASK_AND_SHARE_API_EXACT_PAYLOAD.md
+
+purpose:
+  - LegalSupport の API request / response exact payload を固定する
+  - 一覧、詳細、作成、更新、共有、出力の共通ルールを先に固定する
+  - 次段の DB 対応と実装を迷わず進められる状態にする

@@ -1,0 +1,32 @@
+# CareerLaunch SYSTEM ARCHITECTURE
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+schema: life
+## Core components
+- profile foundation
+- document workspace
+- job posting parser
+- application tracker
+- interview prep workspace
+- post-interview follow-up
+- export service
+- notification/reminder service
+- persona/background presenter
+- offline draft queue
+
+## Architecture stance
+- client-first drafting + server sync
+- owner-centric data ownership
+- application_position を主軸に文書と面接準備を束ねる
+- render/export は文書正本から派生生成する

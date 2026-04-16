@@ -1,0 +1,17 @@
+# ============================================================
+# LEGAL SUPPORT INFRASTRUCTURE OVERVIEW
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+
+assumptions:
+  - iPhone / Android / PC / Tablet 対応
+  - 初期は設計正本を先行し、詳細実装は後続
+  - 保存方式や外部連携詳細は別フェーズで具体化する
+
+schema_policy:
+  primary_schema: life
+
+notes:
+  - LegalSupport は LifeOS 系個人法務整理アプリとして life スキーマを主保存先とする

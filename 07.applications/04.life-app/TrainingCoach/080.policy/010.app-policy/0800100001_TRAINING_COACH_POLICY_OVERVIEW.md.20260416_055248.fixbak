@@ -1,0 +1,36 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# TRAINING COACH POLICY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+policies:
+  - 医療判断禁止
+  - 過負荷推奨禁止
+  - 体調不良時の休息推奨
+  - 多言語対応必須
+  - 多通貨対応必須
+  - iPhone / Android / PC / Tablet 対応必須
+  - AIサポートのみ
+
+pricing_policy:
+  free:
+    price_jpy: 0
+  premium:
+    price_jpy: 500

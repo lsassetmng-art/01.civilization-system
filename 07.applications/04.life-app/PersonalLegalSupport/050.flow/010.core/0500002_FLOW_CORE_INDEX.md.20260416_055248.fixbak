@@ -1,0 +1,16 @@
+# ============================================================
+# FLOW CORE INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 050.flow
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0500003_FLOW_CORE_OVERVIEW.md
+  - 0500004_PERSONAL_LEGAL_SUPPORT_USER_FLOW.md

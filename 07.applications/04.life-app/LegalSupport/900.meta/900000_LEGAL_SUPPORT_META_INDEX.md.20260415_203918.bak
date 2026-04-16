@@ -1,0 +1,10 @@
+# ============================================================
+# LEGAL SUPPORT META INDEX
+# ============================================================
+
+status: canonical-initialized
+system: LegalSupport
+layer: META
+
+purpose:
+  - 監査用・補助用メタ情報を保持する

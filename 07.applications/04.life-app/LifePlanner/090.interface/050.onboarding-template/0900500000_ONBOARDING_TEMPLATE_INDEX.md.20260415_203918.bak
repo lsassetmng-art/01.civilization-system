@@ -1,0 +1,18 @@
+# ============================================================
+# ONBOARDING TEMPLATE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 050.onboarding-template
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0900500000_ONBOARDING_TEMPLATE_INDEX.md
+  - 0900500001_ONBOARDING_TEMPLATE_OVERVIEW.md
+  - 0900500002_LIFE_PLANNER_FIRST_RUN_FLOW.md
+  - 0900500003_LIFE_PLANNER_INITIAL_SETUP_WIZARD_ITEMS.md
+  - 0900500004_LIFE_PLANNER_TEMPLATE_CATALOG_DRAFT.md

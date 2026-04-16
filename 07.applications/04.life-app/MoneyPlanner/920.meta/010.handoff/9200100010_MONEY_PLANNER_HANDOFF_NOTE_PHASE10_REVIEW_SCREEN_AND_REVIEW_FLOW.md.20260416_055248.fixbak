@@ -1,0 +1,15 @@
+# ============================================================
+# MONEY PLANNER HANDOFF NOTE PHASE10 REVIEW SCREEN AND REVIEW FLOW
+# ============================================================
+
+status:
+  - receive candidate review screen design 追加済み
+  - receive candidate review action rule 追加済み
+  - owner monthly review flow 追加済み
+  - owner yearly review flow 追加済み
+  - monthly / yearly review operation policy 追加済み
+
+next_actions:
+  - dashboard exact payload を logical view に再接続
+  - family sharing screen exact payload 固定
+  - receive candidate API exact payload 固定

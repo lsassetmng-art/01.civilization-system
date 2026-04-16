@@ -1,10 +1,7 @@
-# ============================================================
 # PERSONA SECURITY ARCHITECTURE INDEX
-# ============================================================
 
-status: canonical
-layer: architecture
-domain: security
-system: persona-os
-owner: Boss
-prepared_by: Zero
+- 0201500001_PERSONA_SECURITY_ARCHITECTURE_OVERVIEW.md
+- request verification architecture
+- release gate security architecture
+- package integrity security architecture
+- audit and trace architecture

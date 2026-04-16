@@ -1,0 +1,48 @@
+============================================================
+LIFEPLANNER FREEZE CANDIDATE AUDIT REPORT
+============================================================
+app_root: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner
+generated_at: 2026-04-15 05:51:29 +0900
+============================================================
+A. ROOT EXISTENCE
+============================================================
+[OK] LifePlanner root exists
+[NG] old app root still exists: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/010.life-planner
+============================================================
+B. META LAYER NUMBERING
+============================================================
+[NG] 920.meta missing
+[OK] old 900.meta does not exist
+============================================================
+C. OLD PATH / OLD META REFERENCE CHECK
+============================================================
+[OK] no old app root reference remains
+[OK] no old meta dir reference remains
+============================================================
+D. FILE PREFIX CHECK
+============================================================
+[OK] no meta files with old 900 prefix remain
+============================================================
+E. OVERLONG ZERO NUMBERING CHECK
+============================================================
+[OK] no obvious overlong numbering remains
+============================================================
+F. REQUIRED STATUS DOCS CHECK
+============================================================
+[NG] missing: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000002_LIFE_PLANNER_INTEGRATED_CANONICAL.md
+[NG] missing: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000004_LIFE_PLANNER_FINAL_DESIGN_STATUS.md
+[NG] missing: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000005_LIFE_PLANNER_PRE_IMPLEMENTATION_HANDOFF.md
+[NG] missing: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000006_LIFE_PLANNER_DESIGN_FREEZE_RECOMMENDATION.md
+[NG] missing: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800002_LIFE_PLANNER_DESIGN_COMPLETION_SUMMARY.md
+[NG] missing: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300002_LIFE_PLANNER_DESIGN_FREEZE_CHECKLIST.md
+[NG] missing: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md
+============================================================
+G. DESIGN / IMPLEMENTATION BOUNDARY CHECK
+============================================================
+[OK] no obvious SQL / implementation content found
+============================================================
+H. SUMMARY
+============================================================
+fail_count=9
+final_judgement=FIX_BEFORE_FREEZE
+comment=Please fix remaining NG items before freeze.

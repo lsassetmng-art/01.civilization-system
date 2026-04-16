@@ -1,0 +1,28 @@
+# ============================================================
+# INHERITANCE SUPPORT SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: InheritanceSupport
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+architecture_blocks:
+  - inheritance_case_workspace
+  - family_and_heir_area
+  - asset_liability_note_area
+  - document_ledger_area
+  - deadline_center
+  - consultation_note_area
+  - family_share_output
+  - ai_support_assist
+  - lifeos_bridge
+
+bridge_rules:
+  - LifeOS 連携は終活、家計、人生計画との接続を優先
+  - 外部専門家相談は明示出力のみ
+  - 共通部品の詳細定義は別正本を参照する

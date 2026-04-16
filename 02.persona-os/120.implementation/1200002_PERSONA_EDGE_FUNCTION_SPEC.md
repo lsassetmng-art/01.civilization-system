@@ -1,58 +1,140 @@
 # ============================================================
 # PERSONA EDGE FUNCTION SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
 # ============================================================
 
-status: canonical
-layer: implementation
-component: persona-edge
-
-owner: Boss
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / edge intake / apply entry
 prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
 
-# PURPOSE
+## Goal
 
-Define all Edge Functions used by PersonaOS.
+This file fixes the public apply entry contract for PersonaOS.
+The edge function is the only supported write entry for truth/apply execution.
 
-PersonaOS uses Supabase Edge Functions
-as execution units for runtime operations.
+## Canonical endpoints
 
-# EDGE FUNCTIONS
+### POST /persona/v1/events/apply
 
-Lifecycle
-- persona-create
-- persona-event-log-get
+Auth actor:
+- system actor or authenticated builder publish actor with apply permission
 
-Runtime
-- persona-state-apply
+Request:
+```json
+{
+  "event_id": "01EVT...",
+  "event_type": "persona.release.apply-requested",
+  "persona_root_id": "01PERSROOT...",
+  "source_object_type": "builder_publish_execution",
+  "source_object_id": "01PUBEXEC...",
+  "requested_by_actor_id": "01ACTOR...",
+  "occurred_at": "2026-04-16T11:00:00Z",
+  "payload": {
+    "target_release_id": "01REL...",
+    "target_package_id": null,
+    "apply_mode": "release-truth-reflect"
+  },
+  "signature": {
+    "signature_id": "01SIG...",
+    "algorithm": "ed25519",
+    "key_id": "persona-edge-key-1",
+    "signed_at": "2026-04-16T11:00:00Z",
+    "signature_value": "base64..."
+  }
+}
+```
 
-Visual
-- visual-generation-job-create
-- visual-compose
-- visual-render-result-commit
+Response `202`:
+```json
+{
+  "ok": true,
+  "data": {
+    "apply_result_id": "01APR...",
+    "event_id": "01EVT...",
+    "status": "accepted",
+    "next_state": "queued"
+  }
+}
+```
 
-Security
-- sign-event
-- snapshot-issue
-- snapshot-verify
-- snapshot-revoke
-- snapshot-revocation-list
+### GET /persona/v1/events/{event_id}
 
-Asset
-- ai-part-generate
-- persona-background-get-signed-urls
-- build-character-manifest
+Response `200`:
+```json
+{
+  "ok": true,
+  "data": {
+    "event_id": "01EVT...",
+    "event_type": "persona.release.apply-requested",
+    "ingest_state": "validated",
+    "apply_state": "applied",
+    "last_error_code": null
+  }
+}
+```
 
-Approval
-- approval-create
-- approval-decision
-- approval-effect
+### GET /persona/v1/apply-results/{apply_result_id}
 
-# EXECUTION PRINCIPLES
+Response `200`:
+```json
+{
+  "ok": true,
+  "data": {
+    "apply_result_id": "01APR...",
+    "persona_root_id": "01PERSROOT...",
+    "status": "applied",
+    "truth_release_id": "01REL...",
+    "rejected_reason_code": null,
+    "applied_at": "2026-04-16T11:00:08Z"
+  }
+}
+```
 
-All functions must follow:
+## Mandatory validation
 
-fail-closed execution
-idempotent behavior
-signed events
-explicit audit logging
+- `event_id` must be globally unique
+- `persona_root_id` required
+- `target_release_id` required
+- signature verification required before queueing
+- payload hash must match signature payload
+- duplicate event id returns current result instead of reapplying
 
+## Edge states
+
+Allowed `ingest_state` values:
+- `received`
+- `signature-verified`
+- `validated`
+- `rejected`
+
+Allowed `apply_state` values:
+- `queued`
+- `applying`
+- `applied`
+- `failed-retryable`
+- `failed-terminal`
+- `dead-lettered`
+
+## Error codes
+
+- `persona_edge_invalid_signature`
+- `persona_edge_missing_field`
+- `persona_edge_invalid_payload`
+- `persona_edge_duplicate_event`
+- `persona_edge_apply_not_allowed`
+- `persona_edge_internal_error`
+
+## Observability
+
+Every request records:
+- request id
+- event id
+- actor id
+- persona root id
+- release id
+- signature key id
+- latency ms
+- final error code

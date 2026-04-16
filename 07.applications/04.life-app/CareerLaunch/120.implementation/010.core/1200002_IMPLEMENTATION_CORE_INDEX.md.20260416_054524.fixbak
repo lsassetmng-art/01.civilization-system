@@ -1,0 +1,13 @@
+# 1200002 IMPLEMENTATION CORE INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+- 1200004_CAREER_LAUNCH_IMPLEMENTATION_PLAN.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

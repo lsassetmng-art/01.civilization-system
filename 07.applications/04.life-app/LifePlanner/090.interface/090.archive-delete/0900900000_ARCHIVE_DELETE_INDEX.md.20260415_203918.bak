@@ -1,0 +1,18 @@
+# ============================================================
+# ARCHIVE DELETE INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 090.interface
+subfolder: 090.archive-delete
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0900900000_ARCHIVE_DELETE_INDEX.md
+  - 0900900001_ARCHIVE_DELETE_OVERVIEW.md
+  - 0900900002_LIFE_PLANNER_ARCHIVE_DELETE_UI_FLOW.md
+  - 0900900003_LIFE_PLANNER_RESTORE_UI_FLOW.md
+  - 0900900004_LIFE_PLANNER_RETENTION_COPY_GUIDE.md

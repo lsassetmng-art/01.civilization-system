@@ -1,0 +1,16 @@
+# ============================================================
+# DOMAIN MODEL OVERVIEW
+# ============================================================
+
+status: canonical-draft
+aggregate_root:
+  legal_case:
+    children:
+      - stakeholder
+      - fact_timeline_event
+      - evidence_item
+      - legal_document
+      - consultation_note
+      - legal_task
+      - deadline_event
+      - case_share_pack

@@ -1,0 +1,17 @@
+# ============================================================
+# BINDING INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 030.model
+subfolder: 030.binding
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0300300000_BINDING_INDEX.md
+  - 0300300001_BINDING_OVERVIEW.md
+  - 0300300002_LIFE_PLANNER_SCREEN_ITEM_TO_LOGICAL_TABLE_MATRIX.md
+  - 0300300003_LIFE_PLANNER_ENTITY_SCOPE_AND_DERIVED_POLICY.md

@@ -1,0 +1,18 @@
+# ============================================================
+# LEGAL SUPPORT ARCHITECTURE INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0200101_LEGAL_SUPPORT_ARCHITECTURE_OVERVIEW.md
+  - 0200102_LEGAL_SUPPORT_BOUNDARY_ARCHITECTURE.md
+  - 0200103_SYSTEM_COMPOSITION_CANONICAL.md
+  - 0200104_COMPONENT_RESPONSIBILITY_CANONICAL.md
+  - 0200105_BOUNDARY_AND_HANDOFF_CANONICAL.md
+  - 0200106_INFORMATION_MOVEMENT_CANONICAL.md
+
+purpose:
+  - LegalSupport の全体構成を設計書として固定する
+  - 実装に入らず、責務と境界だけを明確化する

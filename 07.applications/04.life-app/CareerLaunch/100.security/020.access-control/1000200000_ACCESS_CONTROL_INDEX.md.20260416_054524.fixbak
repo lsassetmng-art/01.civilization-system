@@ -1,0 +1,17 @@
+# 1000200000 ACCESS CONTROL INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200000_ACCESS_CONTROL_INDEX.md
+## Purpose
+CareerLaunch の 020.access-control 配下を一覧する。
+
+## Children
+- 1000200001_CAREER_LAUNCH_ACCESS_CONTROL_OVERVIEW.md
+- 1000200002_CAREER_LAUNCH_ROLE_AND_PERMISSION_MATRIX.md
+- 1000200003_CAREER_LAUNCH_OWNER_AND_ADVISOR_SCOPE_RULES.md
+- 1000200004_CAREER_LAUNCH_VISIBILITY_AND_SOFT_DELETE_RULES.md
+- 1000200005_CAREER_LAUNCH_EXPORT_AND_SHARE_ACCESS_POLICY.md
+- 1000200006_CAREER_LAUNCH_RLS_READINESS_NOTES.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

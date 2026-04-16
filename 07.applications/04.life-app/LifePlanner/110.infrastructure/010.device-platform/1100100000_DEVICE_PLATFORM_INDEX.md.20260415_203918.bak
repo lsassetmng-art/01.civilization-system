@@ -1,0 +1,10 @@
+# ============================================================
+# DEVICE PLATFORM INDEX
+# ============================================================
+
+subfolder: 010.device-platform
+
+documents:
+  - 1100100000_DEVICE_PLATFORM_INDEX.md
+  - 1100100001_DEVICE_PLATFORM_OVERVIEW.md
+  - 1100100002_LIFE_PLANNER_DEVICE_PLATFORM_ASSUMPTIONS.md

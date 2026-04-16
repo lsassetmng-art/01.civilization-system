@@ -1,0 +1,60 @@
+# ============================================================
+# END OF LIFE PLANNER INDEX AND ACCESS PATTERN DRAFT
+# ============================================================
+
+status: canonical-draft
+phase: L2-db-logical-schema-draft
+reviewers:
+  - Sato(DB)
+
+main_access_patterns:
+  home_dashboard:
+    - life_person_id 単位の集約
+    - checklist_item, recent updated entity, sharing summary の取得
+  owner_edit:
+    - entity_id 単位の単票取得
+    - life_person_id + record_status で一覧取得
+  family_viewer_access:
+    - sharing_permission 参照後の shared subset 取得
+  handoff_generation:
+    - allowed category を life_person_id 単位で多件収集
+  audit_review:
+    - life_person_id + occurred_at 降順
+
+index_candidates:
+  owner_profile:
+    - (life_person_id, record_status)
+  emergency_contact:
+    - (life_person_id, record_status, priority_order)
+  family_profile:
+    - (life_person_id, record_status)
+  medical_preference:
+    - (life_person_id, record_status, effective_from desc)
+  care_preference:
+    - (life_person_id, record_status, effective_from desc)
+  funeral_preference:
+    - (life_person_id, record_status, effective_from desc)
+  contract_registry:
+    - (life_person_id, record_status, contract_category)
+    - (life_person_id, cancellation_required)
+  digital_asset_note:
+    - (life_person_id, record_status, asset_category)
+  document_registry:
+    - (life_person_id, record_status, document_category)
+  family_message:
+    - (life_person_id, record_status, open_condition)
+  handoff_document:
+    - (life_person_id, generated_at desc)
+  sharing_permission:
+    - (life_person_id, permission_status)
+    - (grantee_family_profile_id, permission_status)
+  checklist_item:
+    - (life_person_id, checklist_category, completion_status)
+  access_audit_log:
+    - (life_person_id, occurred_at desc)
+    - (life_person_id, action_type, occurred_at desc)
+
+performance_notes:
+  - dashboard 用の集約 view / materialized 検討余地あり
+  - access_audit_log は件数増加前提で occurred_at 主導の読みを最適化する
+  - handoff generation は snapshot 生成時の一括取得を想定する

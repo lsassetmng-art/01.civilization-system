@@ -1,15 +1,9 @@
-# ============================================================
 # PERSONA EXTERNAL RELEASE POLICY
-# ============================================================
 
-status: canonical
-layer: policy
-domain: external-rights
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
 policy_rules:
-external release requires explicit rights eligibility
-external consumers do not become authority holders
-revocation and restriction paths must remain available
+- explicit release scope required
+- target system id required
+- export allow decision required
+- release result persistence required

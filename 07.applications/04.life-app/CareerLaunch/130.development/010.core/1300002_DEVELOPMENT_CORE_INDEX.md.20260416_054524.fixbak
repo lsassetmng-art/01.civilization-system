@@ -1,0 +1,13 @@
+# 1300002 DEVELOPMENT CORE INDEX
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 1300003_DEVELOPMENT_CORE_OVERVIEW.md
+- 1300004_CAREER_LAUNCH_DEVELOPMENT_ROADMAP.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

@@ -1,0 +1,480 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# MONEY PLANNER SCREEN INPUT VALIDATION CANONICAL
+# ============================================================
+
+status: canonical-draft
+system: MoneyPlanner
+layer: 090.interface
+subdomain: screen
+
+validation_policy:
+  - UI で先に入力不備を防ぐ
+  - API 側 validation と矛盾しない
+  - 多言語表示できるエラーキー設計を前提とする
+  - 金額は文字列入力でも内部では decimal 前提で正規化する
+  - 通貨コードは ISO 通貨コード前提
+  - required / nullable は API canonical に従う
+
+common_rules:
+  amount_string:
+    rules:
+      - 空文字不可
+      - 数値変換可能であること
+      - 0以上
+      - 小数点以下2桁まで
+    ui_error_keys:
+      - validation.amount.required
+      - validation.amount.invalid_format
+      - validation.amount.nonnegative_only
+      - validation.amount.scale_exceeded
+
+  positive_amount_string:
+    rules:
+      - 数値変換可能であること
+      - 0より大きい
+      - 小数点以下2桁まで
+    ui_error_keys:
+      - validation.amount.invalid_format
+      - validation.amount.positive_only
+      - validation.amount.scale_exceeded
+
+  currency_code:
+    rules:
+      - 3文字
+      - 英大文字推奨
+    ui_error_keys:
+      - validation.currency.required
+      - validation.currency.invalid
+
+  yyyy_mm_dd:
+    rules:
+      - yyyy-mm-dd 形式
+      - 実在日付
+    ui_error_keys:
+      - validation.date.required
+      - validation.date.invalid
+
+  yyyy_mm:
+    rules:
+      - yyyy-mm 形式
+      - 実在年月
+    ui_error_keys:
+      - validation.month.required
+      - validation.month.invalid
+
+screen_validations:
+
+  dashboard:
+    filters:
+      base_currency:
+        required: true
+        validation: currency_code
+      display_currency:
+        required: false
+        nullable: false
+        validation: currency_code
+      scenario_id:
+        required: false
+        nullable: false
+      target_month:
+        required: true
+        validation: yyyy_mm
+      target_year:
+        required: true
+        rules:
+          - integer
+          - 1900以上2100以下
+
+  income_form:
+    fields:
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      category:
+        required: true
+        rules:
+          - 1文字以上
+          - 100文字以内
+      amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      frequency:
+        required: true
+        allowed:
+          - daily
+          - weekly
+          - monthly
+          - yearly
+          - one_time
+      start_date:
+        required: true
+        validation: yyyy_mm_dd
+      end_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+        cross_rule:
+          - start_date 以下にできない
+      active_flag:
+        required: true
+        type: boolean
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  expense_form:
+    fields:
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      category:
+        required: true
+        rules:
+          - 1文字以上
+          - 100文字以内
+      amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      frequency:
+        required: true
+        allowed:
+          - daily
+          - weekly
+          - monthly
+          - yearly
+          - one_time
+      necessity_level:
+        required: true
+        allowed:
+          - essential
+          - normal
+          - optional
+      start_date:
+        required: true
+        validation: yyyy_mm_dd
+      end_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+        cross_rule:
+          - start_date 以下にできない
+      active_flag:
+        required: true
+        type: boolean
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  asset_form:
+    fields:
+      asset_type:
+        required: true
+        allowed:
+          - cash
+          - bank_deposit
+          - securities
+          - insurance
+          - real_estate
+          - other
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      institution_name:
+        required: false
+        nullable: true
+        rules:
+          - 200文字以内
+      valuation_basis:
+        required: true
+        allowed:
+          - input_manual
+          - latest_known
+          - estimate
+      liquidity_level:
+        required: true
+        allowed:
+          - high
+          - medium
+          - low
+      ownership_scope:
+        required: true
+        allowed:
+          - individual
+          - couple
+          - family
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  liability_form:
+    fields:
+      liability_type:
+        required: true
+        allowed:
+          - mortgage
+          - loan
+          - credit_card
+          - other
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      balance_amount:
+        required: true
+        validation: amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      monthly_payment:
+        required: false
+        nullable: true
+        validation: amount_string
+      interest_note:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      due_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+      ownership_scope:
+        required: true
+        allowed:
+          - individual
+          - couple
+          - family
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  saving_goal_form:
+    fields:
+      goal_name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      target_amount:
+        required: true
+        validation: positive_amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      current_saved_amount:
+        required: true
+        validation: amount_string
+      monthly_target_amount:
+        required: false
+        nullable: true
+        validation: amount_string
+      target_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+      linked_event_id:
+        required: false
+        nullable: true
+      status:
+        required: true
+        allowed:
+          - active
+          - paused
+          - completed
+          - archived
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  event_budget_form:
+    fields:
+      event_name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      planned_date:
+        required: false
+        nullable: true
+        validation: yyyy_mm_dd
+      target_amount:
+        required: true
+        validation: positive_amount_string
+      currency_code:
+        required: true
+        validation: currency_code
+      priority:
+        required: true
+        allowed:
+          - high
+          - medium
+          - low
+      related_family_member:
+        required: false
+        nullable: true
+        rules:
+          - 200文字以内
+      funding_source_note:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      memo:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+  scenario_form:
+    fields:
+      name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      description:
+        required: false
+        nullable: true
+        rules:
+          - 5000文字以内
+      scenario_type:
+        required: true
+        allowed:
+          - default
+          - saving
+          - expense_increase
+          - income_decrease
+          - event_forward
+      base_currency:
+        required: true
+        validation: currency_code
+      adjustments:
+        required: true
+        rules:
+          - objectであること
+
+  sharing_invite_form:
+    fields:
+      user_ref:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      display_name:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      role:
+        required: true
+        allowed:
+          - partner_editor
+          - viewer
+      visibility_scope:
+        required: true
+        allowed:
+          - all
+          - shared_only
+          - selected_only
+
+  memo_form:
+    fields:
+      memo_type:
+        required: true
+        allowed:
+          - general
+          - insurance
+          - pension
+          - tax_estimate
+          - handover
+      title:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 200文字以内
+      body:
+        required: true
+        rules:
+          - trim後1文字以上
+          - 20000文字以内
+      visibility_scope:
+        required: true
+        allowed:
+          - private
+          - shared
+
+cross_screen_rules:
+  - private 項目は partner_editor から shared へ直接変更できない
+  - shared 項目を private に戻すのは owner のみ
+  - free plan では scenario compare 導線を非表示にする
+  - free plan では sharing invite 導線を非表示にする

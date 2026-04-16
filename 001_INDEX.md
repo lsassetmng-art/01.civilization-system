@@ -1,0 +1,71 @@
+# CX22073JW Index
+- project: CX22073JW
+- type: index
+- status: canonical-draft
+- owner: Boss
+- prepared_by: Zero
+
+## Root
+- `000_OVERVIEW.md`
+- `001_INDEX.md`
+
+## Architecture
+- `020.architecture/000_OVERVIEW.md`
+- `020.architecture/001_INDEX.md`
+- `020.architecture/010_CX22073JW_POSITIONING_AND_SCOPE.md`
+- `020.architecture/020_CX22073JW_DATA_DOMAIN_LEDGER.md`
+- `020.architecture/030_CX22073JW_ARCHITECTURE_PRINCIPLES.md`
+- `020.architecture/040_CX22073JW_FOUNDATION_VIEW_FUNCTION_POSITIONING.md`
+- `020.architecture/050_CAREERLAUNCH_CANDIDATE_DATA_AREA_POSITIONING.md`
+- `020.architecture/060_CX22073JW_DATA_DOMAIN_ADOPTION_STATUS.md`
+- `020.architecture/070_CX22073JW_FOUNDATION_CAPABILITY_MAP.md`
+- `020.architecture/080_CX22073JW_PHASE2_PHASE3_EXPANSION_MAP.md`
+
+## Model
+- `030.model/000_OVERVIEW.md`
+- `030.model/001_INDEX.md`
+- `030.model/010_CX22073JW_CORE_MODEL_OVERVIEW.md`
+- `030.model/020_CX22073JW_PHASE1_REFERENCE_MODEL.md`
+- `030.model/030_CX22073JW_FOUNDATION_VIEW_FUNCTION_LEDGER.md`
+- `030.model/040_CAREERLAUNCH_CANDIDATE_DATA_AREA_LEDGER.md`
+- `030.model/050_CX22073JW_DATA_DOMAIN_TO_TABLE_MAPPING.md`
+- `030.model/060_CX22073JW_FOUNDATION_FUNCTION_IO_CONTRACT.md`
+
+## Flow
+- `050.flow/000_OVERVIEW.md`
+- `050.flow/001_INDEX.md`
+- `050.flow/010_CX22073JW_BODYMETRICS_MEALPLANNER_FLOW.md`
+
+## Integration
+- `060.integration/000_OVERVIEW.md`
+- `060.integration/001_INDEX.md`
+- `060.integration/010_CX22073JW_CALLER_SCOPE_INTEGRATION.md`
+- `060.integration/020_CX22073JW_APP_TO_DATA_DOMAIN_MAPPING.md`
+- `060.integration/030_CX22073JW_VIEW_FUNCTION_TO_APP_MAPPING.md`
+- `060.integration/040_CX22073JW_APP_INPUT_OUTPUT_BOUNDARY.md`
+
+## Operations
+- `070.operations/000_OVERVIEW.md`
+- `070.operations/001_INDEX.md`
+- `070.operations/010_CX22073JW_SEED_AND_MONITORING_OPERATIONS.md`
+
+## Policy
+- `080.policy/000_OVERVIEW.md`
+- `080.policy/001_INDEX.md`
+- `080.policy/010_CX22073JW_BOUNDARY_AND_DATA_POLICY.md`
+- `080.policy/020_CAREERLAUNCH_DATA_PLACEMENT_POLICY.md`
+- `080.policy/030_CX22073JW_RUNTIME_BOUNDARY_MATRIX.md`
+- `080.policy/040_CX22073JW_TRIPLE_SECRET_ACCESS_POLICY.md`
+
+## Implementation Ready
+- `120.implementation-ready/000_OVERVIEW.md`
+- `120.implementation-ready/001_INDEX.md`
+- `120.implementation-ready/010_CX22073JW_PHASE1_IMPLEMENTATION_READY.md`
+- `120.implementation-ready/020_CX22073JW_PHASE_PRIORITY_LEDGER.md`
+- `120.implementation-ready/030_CX22073JW_PHASE1_SQL_ASSET_LEDGER.md`
+- `120.implementation-ready/040_CX22073JW_FOUNDATION_SQL_BUNDLE_PLAN.md`
+
+## Development
+- `130.development/000_OVERVIEW.md`
+- `130.development/001_INDEX.md`
+- `130.development/010_CX22073JW_WORKLOG_STARTER.md`

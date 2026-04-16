@@ -1,0 +1,11 @@
+# Security Index
+
+## purpose
+MealPlanner のセキュリティ観点を定義する
+
+## files
+- 1000001_SECURITY_OVERVIEW.md
+
+## notes
+- この index は Security の入口である
+- 詳細は配下ドキュメントを参照する

@@ -1,0 +1,16 @@
+# ============================================================
+# CLOSE PACKAGE OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 130.development
+subfolder: 090.close-package
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - LifePlanner 設計を閉じるための最終まとめを置く
+  - どこまで決まっているかを短く把握できるようにする
+  - 次チャットや次工程で再説明コストを減らす

@@ -1,0 +1,20 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT OPERATIONS OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+layer: 070.operations
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - 運用レイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 個人事業/小規模事業の継続運用ルールを定義する
+  - 通知、見直し、共有タイミングを整理する
+  - 顧問相談前整理を含める

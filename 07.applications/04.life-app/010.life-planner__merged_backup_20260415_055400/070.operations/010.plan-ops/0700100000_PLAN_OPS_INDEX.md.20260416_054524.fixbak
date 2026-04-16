@@ -1,0 +1,10 @@
+# ============================================================
+# PLAN OPS INDEX
+# ============================================================
+
+subfolder: 010.plan-ops
+
+documents:
+  - 0700100000_PLAN_OPS_INDEX.md
+  - 0700100001_PLAN_OPS_OVERVIEW.md
+  - 0700100002_LIFE_PLANNER_OPERATION_GUIDE.md

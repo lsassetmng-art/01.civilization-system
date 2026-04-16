@@ -1,0 +1,10 @@
+# ============================================================
+# META INDEX
+# ============================================================
+
+layer: 900.meta
+
+documents:
+  - 9000000000_META_INDEX.md
+  - 9000000001_META_OVERVIEW.md
+  - 9000000002_LIFE_PLANNER_DOCUMENT_NAVIGATION_NOTE.md

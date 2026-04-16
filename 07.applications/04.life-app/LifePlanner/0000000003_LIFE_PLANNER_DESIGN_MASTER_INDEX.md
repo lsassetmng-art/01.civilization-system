@@ -1,0 +1,73 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# LIFE PLANNER DESIGN MASTER INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+owner: Boss
+prepared_by: Zero
+schema: life
+
+reading_order:
+  phase_01_core_definition:
+    - 0000000001_LIFE_PLANNER_ROOT_OVERVIEW.md
+    - 0000000002_LIFE_PLANNER_INTEGRATED_CANONICAL.md
+    - 010.constitution/0100000001_CONSTITUTION_OVERVIEW.md
+    - 010.constitution/010.core/0100100002_LIFE_PLANNER_CORE_PRINCIPLES.md
+    - 010.constitution/010.core/0100100003_LIFE_PLANNER_SCOPE_AND_BOUNDARY.md
+
+  phase_02_architecture_and_model:
+    - 020.architecture/0200000001_ARCHITECTURE_OVERVIEW.md
+    - 020.architecture/010.application/0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md
+    - 030.model/010.domain/0300100002_LIFE_PLANNER_DOMAIN_MODEL.md
+    - 030.model/020.logical-schema/0300200001_LOGICAL_SCHEMA_OVERVIEW.md
+    - 030.model/020.logical-schema/0300200009_LIFE_PLANNER_LOGICAL_RELATIONSHIP_NOTE.md
+
+  phase_03_runtime_and_flow:
+    - 040.runtime/010.lifecycle/0400100002_LIFE_PLANNER_RUNTIME_LIFECYCLE.md
+    - 040.runtime/020.state-machine/0400200001_STATE_MACHINE_OVERVIEW.md
+    - 050.flow/010.user-flow/0500100002_LIFE_PLANNER_CORE_USER_FLOWS.md
+    - 050.flow/010.user-flow/0500100003_LIFE_PLANNER_SCREEN_TRANSITION_MAP.md
+    - 050.flow/010.user-flow/0500100004_LIFE_PLANNER_MAIN_SCENARIO_TRANSITIONS.md
+
+  phase_04_interface_and_access:
+    - 090.interface/010.screen/0900100002_LIFE_PLANNER_SCREEN_INVENTORY.md
+    - 090.interface/020.screen-item/0900200001_SCREEN_ITEM_OVERVIEW.md
+    - 090.interface/030.access-control/0900300001_ACCESS_CONTROL_OVERVIEW.md
+    - 090.interface/040.dashboard-display/0900400001_DASHBOARD_DISPLAY_OVERVIEW.md
+
+  phase_05_contract_and_policy:
+    - 060.integration/020.payload/0600200001_PAYLOAD_OVERVIEW.md
+    - 060.integration/030.contract-binding/0600300001_CONTRACT_BINDING_OVERVIEW.md
+    - 080.policy/010.privacy-pricing/0800100002_LIFE_PLANNER_PRIVACY_SHARING_POLICY.md
+    - 080.policy/010.privacy-pricing/0800100003_LIFE_PLANNER_PRICING_POLICY.md
+    - 080.policy/020.validation-rules/0800200001_VALIDATION_RULES_OVERVIEW.md
+
+  phase_06_operations_and_non_functional:
+    - 070.operations/010.plan-ops/0700100002_LIFE_PLANNER_OPERATION_GUIDE.md
+    - 070.operations/020.notification-review/0700200001_NOTIFICATION_REVIEW_OVERVIEW.md
+    - 110.infrastructure/010.device-platform/1100100002_LIFE_PLANNER_DEVICE_PLATFORM_ASSUMPTIONS.md
+    - 110.infrastructure/020.localization-device/1100200001_LOCALIZATION_DEVICE_OVERVIEW.md
+
+  phase_07_scope_and_governance:
+    - 120.implementation/020.scope-matrix/1200200001_SCOPE_MATRIX_OVERVIEW.md
+    - 130.development/030.decision-log/1300300001_DECISION_LOG_OVERVIEW.md
+    - 130.development/040.open-issues/1300400001_OPEN_ISSUES_OVERVIEW.md
+
+note:
+  - まず integrated canonical を読む
+  - 次に architecture / model / flow で骨格を把握する
+  - その後 interface / payload / policy を読む
+  - 最後に scope matrix と open issues を確認する

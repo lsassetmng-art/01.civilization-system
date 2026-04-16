@@ -1,0 +1,28 @@
+# 1200200000 PAYLOAD DESIGN INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200000_PAYLOAD_DESIGN_INDEX.md
+## Purpose
+CareerLaunch の 020.payload 配下を一覧する。
+
+## Children
+- 1200200001_CAREER_LAUNCH_PAYLOAD_OVERVIEW.md
+- 1200200002_CAREER_LAUNCH_LEGAL_ISSUE_PAYLOAD.md
+- 1200200003_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_PAYLOAD.md
+- 1200200004_CAREER_LAUNCH_RISK_AND_CONSULTATION_PAYLOAD.md
+- 1200200005_CAREER_LAUNCH_SUMMARY_EXPORT_AND_HANDOFF_PAYLOAD.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。

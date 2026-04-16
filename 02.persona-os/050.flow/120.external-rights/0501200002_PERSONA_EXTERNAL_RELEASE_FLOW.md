@@ -1,17 +1,11 @@
-# ============================================================
 # PERSONA EXTERNAL RELEASE FLOW
-# ============================================================
 
-status: canonical
-layer: flow
-domain: external-rights
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
 flow:
-1. external release request is received
-2. rights eligibility is checked
-3. target platform scope is validated
-4. release approval is applied if allowed
-5. external release record becomes active
+1. release request accepted
+2. rights scope verified
+3. immutable release input resolved
+4. payload dispatched to target
+5. result persisted
+6. retry or dead-letter path taken if needed

@@ -1,0 +1,5 @@
+# CareerLaunch INDEX AND SEARCH POLICY
+## Search
+- 企業名、求人名、posting_body は検索対象。
+- document snapshot は文書比較と ATS keyword 提示のため検索対象。
+- interview notes は全文検索より application-position 経由の参照を優先。

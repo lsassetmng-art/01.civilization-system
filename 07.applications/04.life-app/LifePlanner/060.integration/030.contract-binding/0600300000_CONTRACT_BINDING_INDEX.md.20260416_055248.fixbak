@@ -1,0 +1,28 @@
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+# ============================================================
+# CONTRACT BINDING INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 060.integration
+subfolder: 030.contract-binding
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 0600300000_CONTRACT_BINDING_INDEX.md
+  - 0600300001_CONTRACT_BINDING_OVERVIEW.md
+  - 0600300002_LIFE_PLANNER_PAYLOAD_TO_LOGICAL_TABLE_MATRIX.md
+  - 0600300003_LIFE_PLANNER_OPERATION_WRITE_IMPACT_MATRIX.md

@@ -1,0 +1,42 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# TRAINING COACH ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+phase: design-initialization
+system: TrainingCoach
+layer: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+architecture_summary:
+  - Plan Layer: 運動プラン作成とテンプレート管理
+  - Session Layer: 実施中の進行、完了、途中停止
+  - Condition Layer: 疲労度/体調/連携値の参照
+  - Guidance Layer: 動画/画像/説明の表示
+  - Continuity Layer: 連続実施、通知、達成率
+  - Linkage Layer: BodyMetrics / MealPlanner / LifePlanner 連携
+
+module_boundaries:
+  - training_plan は計画責務
+  - training_session は実施責務
+  - guide_content は表示責務
+  - difficulty_rule は提案調整責務
+  - completion_log / streak_summary は継続責務
+
+design_constraints:
+  - アプリ固有の運動定義と共通部品候補を分離する
+  - 課金判定は共通 entitlement に寄せる前提とする
+  - 高リスク判定は安全文言優先で保守的に扱う

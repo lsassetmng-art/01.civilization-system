@@ -1,0 +1,18 @@
+# ============================================================
+# RUNTIME INDEX
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: LifePlanner
+schema: life
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+includes:
+  - 0400001_LIFE_PLANNER_RUNTIME_OVERVIEW.md
+  - 010.core/0400002_RUNTIME_CORE_INDEX.md
+  - 010.core/0400003_RUNTIME_CORE_OVERVIEW.md
+  - 010.core/0400004_LIFE_PLANNER_RUNTIME_BEHAVIOR.md

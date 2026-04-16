@@ -1,0 +1,17 @@
+# ============================================================
+# ARCHITECTURE OVERVIEW
+# ============================================================
+
+status: canonical-draft
+architecture_style:
+  - app-local first
+  - case-centric information architecture
+  - explicit-share model
+  - LifeOS cross-app link ready
+
+major_blocks:
+  - case workspace
+  - document/evidence workspace
+  - consultation workspace
+  - deadline/task workspace
+  - share/export workspace

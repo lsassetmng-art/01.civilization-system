@@ -1,0 +1,158 @@
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# DB API UI CONSISTENCY MATRIX
+# ============================================================
+
+status: fixed
+
+purpose:
+  - DB / API / UI の対応関係を一意化する
+  - 実装着手前の責務ズレを防ぐ
+
+matrix:
+
+  - feature: weight_recording
+    db:
+      - life.biometric_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/metric
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.latest_weight_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+
+  - feature: blood_pressure_recording
+    db:
+      - life.blood_pressure_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/blood-pressure
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.latest_blood_pressure_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+
+  - feature: sleep_recording
+    db:
+      - life.sleep_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/sleep
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.sleep_last_night_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+      - weekly_review
+
+  - feature: activity_recording
+    db:
+      - life.activity_record
+      - life.average_comparison_snapshot
+    api:
+      - POST /life/bodymetrics/records/activity
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.steps_today_card
+      - quick_record
+      - metric_detail
+      - trend_analysis
+      - weekly_review
+
+  - feature: health_score
+    db:
+      - life.health_score_snapshot
+      - life.health_score_component_snapshot
+    api:
+      - GET /life/bodymetrics/health-score
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/reviews/weekly
+    ui:
+      - dashboard_home.health_score_summary_card
+      - health_score_center
+      - weekly_review
+
+  - feature: average_comparison
+    db:
+      - life.average_comparison_snapshot
+    api:
+      - GET /life/bodymetrics/dashboard
+      - GET /life/bodymetrics/trends/{metric_type}
+    ui:
+      - dashboard_home.average_comparison_summary_card
+      - trend_analysis
+      - metric_detail
+
+  - feature: notes
+    db:
+      - life.manual_note
+    api:
+      - POST /life/bodymetrics/records/metric
+      - POST /life/bodymetrics/records/blood-pressure
+      - POST /life/bodymetrics/records/sleep
+      - GET /life/bodymetrics/reviews/weekly
+    ui:
+      - quick_record
+      - metric_detail.related_notes
+      - weekly_review.weekly_note_list
+
+  - feature: goals
+    db:
+      - life.health_goal
+    api:
+      - POST /life/bodymetrics/goals
+    ui:
+      - goal_center
+
+  - feature: provider_link
+    db:
+      - life.device_link
+      - life.biometric_record_raw
+    api:
+      - POST /life/bodymetrics/providers/connect
+      - GET /life/bodymetrics/dashboard
+    ui:
+      - provider_link_settings
+      - dashboard_home.sync_status_card
+
+  - feature: family_care
+    db:
+      - life.data_share_setting
+    api:
+      - GET /life/bodymetrics/family-care/share-settings
+      - POST /life/bodymetrics/family-care/share-settings
+    ui:
+      - family_care_settings
+
+  - feature: export
+    db:
+      - life.export_job
+    api:
+      - POST /life/bodymetrics/exports
+    ui:
+      - export_center
+
+consistency_rules:
+  - 画面が存在する機能は必ず対応 API を持つ
+  - API が存在する機能は必ず対応 DB 保存先を持つ
+  - Family Care は API / UI / DB すべてで scope 適用を前提とする

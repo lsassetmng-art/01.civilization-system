@@ -1,0 +1,13 @@
+# ============================================================
+# SHARED COMPONENT INDEX
+# LegalSupport
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0600201_COMMON_COMPONENT_CANDIDATE_CANONICAL.md
+
+purpose:
+  - LegalSupport から見た共通部品候補を固定する

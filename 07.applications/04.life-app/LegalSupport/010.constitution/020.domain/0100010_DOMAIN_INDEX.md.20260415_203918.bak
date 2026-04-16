@@ -1,0 +1,13 @@
+# ============================================================
+# DOMAIN INDEX
+# ============================================================
+
+status: canonical-draft
+phase: design-only
+
+files:
+  - 0100011_LEGAL_SUPPORT_DOMAIN_CONSTITUTION.md
+  - 0100012_LIFEOS_POSITIONING_CANONICAL.md
+
+purpose:
+  - LegalSupport の業務領域と LifeOS 内位置づけを固定する

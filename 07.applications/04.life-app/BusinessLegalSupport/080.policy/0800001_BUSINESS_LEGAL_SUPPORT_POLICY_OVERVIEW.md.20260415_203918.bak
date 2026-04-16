@@ -1,0 +1,20 @@
+# ============================================================
+# BUSINESS LEGAL SUPPORT POLICY OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: BusinessLegalSupport
+layer: 080.policy
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - ポリシーレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 法的助言非代替、共有制御、通知制御のポリシーを定義する
+  - AI 利用時の制限を固定する
+  - LifeOS寄りアプリとしての倫理境界を持つ

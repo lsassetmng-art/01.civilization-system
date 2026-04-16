@@ -1,0 +1,16 @@
+# ============================================================
+# GLOSSARY INDEX
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 920.meta
+subfolder: 010.glossary
+owner: Boss
+prepared_by: Zero
+schema: life
+
+documents:
+  - 9000100000_GLOSSARY_INDEX.md
+  - 9000100001_GLOSSARY_OVERVIEW.md
+  - 9000100002_LIFE_PLANNER_GLOSSARY_AND_NAMING_FREEZE.md

@@ -1,0 +1,25 @@
+# ============================================================
+# LEGAL SUPPORT FAMILY SHARE AND NOTIFICATION UI POLICY
+# ============================================================
+
+status: draft-formal
+system: LegalSupport
+layer: interface
+subdomain: screens
+
+family_share_ui:
+  - 招待一覧と active member 一覧を分ける
+  - membership_status を色やラベルで明示する
+  - revoke は confirm を必須にする
+  - viewer 権限のみを初期提供する
+
+notification_ui:
+  - notification_type ごとに on/off を置く
+  - timing_profile は minimal / standard / intensive の3段階
+  - quiet hours は詳細設定に入れる
+  - family share 更新通知は plus_family でのみ表示する
+
+consultation_prep_ui:
+  - preview を先、pdf は後ろに置く
+  - include_sections をチェック形式で選べるようにする
+  - disclaimer を preview と pdf の両方に表示する

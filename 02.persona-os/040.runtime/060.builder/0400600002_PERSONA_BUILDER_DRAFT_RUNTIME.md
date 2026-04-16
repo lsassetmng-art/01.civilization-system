@@ -1,20 +1,15 @@
-# ============================================================
 # PERSONA BUILDER DRAFT RUNTIME
-# ============================================================
 
-status: canonical
-layer: runtime
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: implementation-ready-followup
 
-purpose:
-Defines runtime rules for builder draft handling.
+builder_runtime_boundary:
+- draft is mutable authoring state
+- draft is not truth authority
+- draft_version increments on accepted mutation
+- publish handoff requires validation and approval satisfaction
 
-runtime_rules:
-builder may create and edit draft state
-builder draft is not final persona truth
-validation and approval gates must precede final adoption
-builder must not directly mutate growth truth
-builder must not bypass release and distribution policy
+runtime_controls:
+- optimistic concurrency
+- section-level mutation control
+- audit actor capture
+- publish precondition enforcement

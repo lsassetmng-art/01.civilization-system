@@ -2,32 +2,18 @@
 # PERSONA EXTERNAL RIGHTS ARCHITECTURE OVERVIEW
 # ============================================================
 
-status: canonical
-layer: architecture
+status: implementation-ready-followup
 domain: external-rights
-system: persona-os
-owner: Boss
-prepared_by: Zero
 
-purpose:
-Defines the structural overview of external-rights domain.
+external_rights_boundary:
+- external release defines what may leave PersonaOS
+- release scope is explicit
+- export permission is explicit
+- external rights are not transport mechanics
+- external rights are not ownership transfer mechanics
 
-summary:
-External-rights governs authority to release,
-use, restrict, revoke, and control persona-derived outputs
-outside PersonaOS.
-
-scope:
-external release authority
-external use boundary
-platform-facing rights scope
-restriction and revocation
-license/access/transfer authority relation
-
-boundary:
-External platforms do not become authority holders.
-PersonaOS remains source of rights authority.
-External-rights is not identical to package structure.
-External-rights is not identical to distribution mechanics.
-External-rights may govern license/access/transfer authority,
-but does not become transport or delivery state.
+required_external_rights_controls:
+- release target identification
+- release scope verification
+- export allow/deny decision
+- release result persistence

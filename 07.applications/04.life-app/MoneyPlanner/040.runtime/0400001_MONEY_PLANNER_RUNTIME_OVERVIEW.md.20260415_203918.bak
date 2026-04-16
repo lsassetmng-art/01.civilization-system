@@ -1,0 +1,21 @@
+# ============================================================
+# MONEY PLANNER RUNTIME OVERVIEW
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: MoneyPlanner
+schema: life
+layer: 040.runtime
+owner: Boss
+prepared_by: Zero
+
+layer_purpose:
+  - ランタイムレイヤの全体像を定義する
+  - 共通部品詳細は別管理とし、アプリ固有責務の配置を固定する
+
+summary:
+  - 日常利用時の動作原則を定義する
+  - 計画更新、見直し通知、共有出力の実行順を整理する
+  - AI 支援の発火点を固定する

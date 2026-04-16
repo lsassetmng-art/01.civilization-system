@@ -1,0 +1,32 @@
+
+# ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+# INDEX
+# ============================================================
+
+status: canonical-draft
+phase: implementation-readiness
+system: TrainingCoach
+layer: 120.implementation/020.sql-draft
+owner: Boss
+prepared_by: Zero
+db_reviewer: 佐藤
+
+purpose:
+  - TrainingCoach の life schema 用 SQL 草案の入口
+  - DDL 草案と補助資料の参照順を固定する
+
+reading_order:
+  - 001_OVERVIEW.md
+  - 1200200002_TRAINING_COACH_DDL_DRAFT_README.md
+  - 1200200001_TRAINING_COACH_LIFE_DDL_DRAFT.sql

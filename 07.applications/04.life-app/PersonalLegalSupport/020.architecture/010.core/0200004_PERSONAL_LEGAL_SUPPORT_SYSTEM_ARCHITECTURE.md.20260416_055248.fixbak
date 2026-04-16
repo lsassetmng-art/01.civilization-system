@@ -1,0 +1,28 @@
+# ============================================================
+# PERSONAL LEGAL SUPPORT SYSTEM ARCHITECTURE
+# ============================================================
+
+status: canonical-draft
+system: civilization-system
+application_layer: 07.applications/04.life-app
+app: PersonalLegalSupport
+layer: 020.architecture
+subfolder: 010.core
+owner: Boss
+prepared_by: Zero
+
+architecture_blocks:
+  - case_workspace
+  - contract_document_area
+  - deadline_center
+  - consultation_note_area
+  - risk_tracking_area
+  - family_share_output
+  - ai_support_assist
+  - lifeos_bridge
+  - business_legal_bridge
+
+bridge_rules:
+  - LifeOS 連携は予定、家計、終活入口との接続を優先
+  - BusinessLegalSupport 連携は明示操作のみ
+  - 共通部品の詳細定義は別正本を参照する

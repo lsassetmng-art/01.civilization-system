@@ -1,0 +1,16 @@
+# ============================================================
+# FULL NAVIGATION OVERVIEW
+# ============================================================
+
+status: draft
+system: LifePlanner
+layer: 900.meta
+subfolder: 020.full-navigation
+owner: Boss
+prepared_by: Zero
+schema: life
+
+purpose:
+  - 設計書の全体地図を一箇所にまとめる
+  - 誰がどの順に読むかを整理する
+  - 後から見ても迷子にならないようにする
