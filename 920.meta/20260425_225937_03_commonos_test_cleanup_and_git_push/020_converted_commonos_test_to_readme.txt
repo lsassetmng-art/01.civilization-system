@@ -1,0 +1,9 @@
+CONVERTED_TEST_TO_README	01.civilization-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/01.civilization-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	02.persona-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/02.persona-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	03.business-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	04.life-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/04.life-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	05.game-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/05.game-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	06.streaming-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/06.streaming-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	08.civilization-portal-site/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/08.civilization-portal-site/_commonos/test/README.md
+CONVERTED_TEST_TO_README	10.staticart-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/10.staticart-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	11.aiworker-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/_commonos/test/README.md

@@ -1,0 +1,219 @@
+============================================================
+DESIGN ROOT SCAN
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker
+============================================================
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040030_CASUAL_CHAT_WORKER_AIWORKER_SERIES_STYLE_UI_ALIGNMENT.md:57:No ERP posting.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060010_CASUAL_CHAT_WORKER_FREE_TICKET_INTEGRATED_CANONICAL.md:20:- ERP: v1では直接連携なし
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:260:execution_env: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:643:- direct ERP posting in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:769:- no direct ERP
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:782:psql "$PERSONA_DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:786:ERP only:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:788:psql "$DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:815:| DB env | PERSONA_DATABASE_URL |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:816:| ERP env | DATABASE_URL only when ERP linkage is explicitly added |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:826:| ERP direct linkage | not v1 |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:839:- no ERP direct linkage is included in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md:901:- ERP direct linkage is not v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060040_CASUAL_CHAT_WORKER_REAL_API_CONNECTION_PREPARATION_APPEND.md:19:- DB access belongs to BusinessOS backend only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060100_CASUAL_CHAT_WORKER_PHASE_N_TO_P_CURRENT_POSITION_APPEND.md:37:- ERP is not v1 direct linkage
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md:9:CasualChatWorker / WorkerRentalCore DB work targets the Persona-side DB.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md:11:The business schema in this context is the Persona-side business schema.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md:24:- PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md:28:- DATABASE_URL for this DB path
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md:29:- ERP DB apply
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md:30:- ERP DB dry-run
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md:35:Phase N validation checks the Persona-side DB backed WorkerRentalCore path.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070030_CASUAL_CHAT_WORKER_WORKER_RENTAL_REAL_API_CONNECTION_CONTRACT.md:17:- API adapter calls BusinessOS backend endpoint candidates.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070030_CASUAL_CHAT_WORKER_WORKER_RENTAL_REAL_API_CONNECTION_CONTRACT.md:18:- BusinessOS backend owns WorkerRentalCore DB access.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070030_CASUAL_CHAT_WORKER_WORKER_RENTAL_REAL_API_CONNECTION_CONTRACT.md:19:- Runtime frontend must not contain DATABASE_URL or PERSONA_DATABASE_URL.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070040_CASUAL_CHAT_WORKER_WORKER_RENTAL_BACKEND_ENDPOINT_EXACT.md:16:- DB read/write uses PERSONA_DATABASE_URL only on backend.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070040_CASUAL_CHAT_WORKER_WORKER_RENTAL_BACKEND_ENDPOINT_EXACT.md:17:- ERP DATABASE_URL is not used.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070060_CASUAL_CHAT_WORKER_WORKER_RENTAL_POSTGRES_REPOSITORY_EXACT.md:17:- PostgreSQL repository belongs to BusinessOS backend layer.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070060_CASUAL_CHAT_WORKER_WORKER_RENTAL_POSTGRES_REPOSITORY_EXACT.md:21:- ERP DATABASE_URL is not used.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070080_CASUAL_CHAT_WORKER_ENDPOINT_INTEGRATION_TEST_PLAN.md:31:- no ERP DB path
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090010_CASUAL_CHAT_WORKER_FREE_TICKET_DDL_FREEZE.md:8:execution_env: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090060_CASUAL_CHAT_WORKER_NONPROD_DB_DRY_RUN_DESIGN.md:18:- PERSONA_DATABASE_URL is set
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090060_CASUAL_CHAT_WORKER_NONPROD_DB_DRY_RUN_DESIGN.md:22:- connect only through PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090060_CASUAL_CHAT_WORKER_NONPROD_DB_DRY_RUN_DESIGN.md:35:- ERP DB variable is used
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090070_CASUAL_CHAT_WORKER_NONPROD_ROLLBACK_DRY_RUN_EXECUTION_GATE.md:22:- PERSONA_DATABASE_URL is set
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090070_CASUAL_CHAT_WORKER_NONPROD_ROLLBACK_DRY_RUN_EXECUTION_GATE.md:28:- use PERSONA_DATABASE_URL only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090070_CASUAL_CHAT_WORKER_NONPROD_ROLLBACK_DRY_RUN_EXECUTION_GATE.md:31:- never use ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:13:- PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:17:- DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:18:- ERP-side DB apply
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:19:- ERP-side DB dry-run
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:20:- ERP-side direct linkage in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:24:Within this context, the following schemas exist on the Persona-side DB:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:33:The business schema owns factual business events and usage facts.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:64:The aiworker schema owns the AI worker entity canon.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:178:- uses DATABASE_URL for CasualChatWorker / WorkerRentalCore DB work
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md:179:- treats ERP DB as the DB target
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:34:- 使用環境変数 主: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:35:- ERP連携時のみ: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:62:  - ERP売上連携
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:136:- 使用環境変数 主: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:137:- ERP連携時のみ: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:336:- ERP側連携有無:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:337:  - v1では直接ERP連携なし
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:339:  - ERP連携が必要な場合のみ DATABASE_URL を使う
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:527:- BusinessOS / aiworker / cx22073jw 側DB作業: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:528:- ERPへ送る / ERP側DB作業: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:535:psql "$PERSONA_DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:539:ERP連携時のみ:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:540:psql "$DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md:693:- ERP売上連携
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md:31:- ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080030_CASUAL_CHAT_WORKER_SECURE_BACKEND_RUNTIME_CONFIG.md:17:- ERP-side connection is forbidden for this BusinessOS WorkerRentalCore path.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080040_CASUAL_CHAT_WORKER_REAL_MODE_SECURITY_POLICY_APPEND.md:16:- ERP DATABASE_URL for WorkerRentalCore
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080050_CASUAL_CHAT_WORKER_FRONTEND_SECRET_SCAN_POLICY_RESULT.md:18:- DATABASE_URL=
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080050_CASUAL_CHAT_WORKER_FRONTEND_SECRET_SCAN_POLICY_RESULT.md:19:- PERSONA_DATABASE_URL=
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080050_CASUAL_CHAT_WORKER_FRONTEND_SECRET_SCAN_POLICY_RESULT.md:20:- service_role
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080050_CASUAL_CHAT_WORKER_FRONTEND_SECRET_SCAN_POLICY_RESULT.md:21:- supabase_key
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110050_CASUAL_CHAT_WORKER_AIWORKER_SCHEMA_RESPONSIBILITY_BOUNDARY.md:9:The aiworker schema is the canonical owner of AI worker entities and behavior metadata.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/INDEX.md:24:- primary_env: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/INDEX.md:25:- erp_env_only_when_needed: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/OVERVIEW.md:21:- Contract and usage truth: business schema.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/OVERVIEW.md:22:- AI worker catalog and conversation control truth: aiworker schema.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/OVERVIEW.md:78:- ERP sales posting
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:12:- DB target is Persona-side DB.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:13:- PERSONA_DATABASE_URL is required.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:14:- DATABASE_URL / ERP DB path is forbidden for this app DB work.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:178:- 使用環境変数 主: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:179:- ERP連携時のみ: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:206:  - ERP売上連携
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:280:- 使用環境変数 主: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:281:- ERP連携時のみ: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:480:- ERP側連携有無:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:481:  - v1では直接ERP連携なし
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:483:  - ERP連携が必要な場合のみ DATABASE_URL を使う
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:671:- BusinessOS / aiworker / cx22073jw 側DB作業: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:672:- ERPへ送る / ERP側DB作業: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:679:psql "$PERSONA_DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:683:ERP連携時のみ:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:684:psql "$DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:837:- ERP売上連携
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:1288:- Apply WorkerRentalCore to business schema using PERSONA_DATABASE_URL.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:1303:- ERP DATABASE_URL is not used.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:1304:- Direct ERP integration is not v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:1545:- PERSONA_DATABASE_URL only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:1546:- no DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:1713:- PERSONA_DATABASE_URL only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:1714:- no DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:2112:No ERP posting.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:2597:execution_env: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:2980:- direct ERP posting in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3106:- no direct ERP
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3119:psql "$PERSONA_DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3123:ERP only:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3125:psql "$DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3152:| DB env | PERSONA_DATABASE_URL |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3153:| ERP env | DATABASE_URL only when ERP linkage is explicitly added |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3163:| ERP direct linkage | not v1 |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3176:- no ERP direct linkage is included in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3238:- ERP direct linkage is not v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3274:- ERP: v1では直接連携なし
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3380:- DB access belongs to BusinessOS backend only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3642:- ERP is not v1 direct linkage
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3692:CasualChatWorker / WorkerRentalCore DB work targets the Persona-side DB.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3694:The business schema in this context is the Persona-side business schema.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3707:- PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3711:- DATABASE_URL for this DB path
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3712:- ERP DB apply
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3713:- ERP DB dry-run
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3718:Phase N validation checks the Persona-side DB backed WorkerRentalCore path.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3874:- API adapter calls BusinessOS backend endpoint candidates.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3875:- BusinessOS backend owns WorkerRentalCore DB access.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:3876:- Runtime frontend must not contain DATABASE_URL or PERSONA_DATABASE_URL.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4056:- DB read/write uses PERSONA_DATABASE_URL only on backend.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4057:- ERP DATABASE_URL is not used.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4256:- PostgreSQL repository belongs to BusinessOS backend layer.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4260:- ERP DATABASE_URL is not used.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4381:- no ERP DB path
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4582:- ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4617:- ERP-side connection is forbidden for this BusinessOS WorkerRentalCore path.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4671:- ERP DATABASE_URL for WorkerRentalCore
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4705:- DATABASE_URL=
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4706:- PERSONA_DATABASE_URL=
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4707:- service_role
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4708:- supabase_key
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:4820:execution_env: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5044:- PERSONA_DATABASE_URL is set
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5048:- connect only through PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5061:- ERP DB variable is used
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5091:- PERSONA_DATABASE_URL is set
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5097:- use PERSONA_DATABASE_URL only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5100:- never use ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5131:- PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5135:- DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5136:- ERP-side DB apply
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5137:- ERP-side DB dry-run
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5138:- ERP-side direct linkage in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5142:Within this context, the following schemas exist on the Persona-side DB:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5151:The business schema owns factual business events and usage facts.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5182:The aiworker schema owns the AI worker entity canon.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5296:- uses DATABASE_URL for CasualChatWorker / WorkerRentalCore DB work
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5297:- treats ERP DB as the DB target
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:5719:The aiworker schema is the canonical owner of AI worker entities and behavior metadata.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6445:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6553:- direct ERP posting in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6577:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6728:- no direct ERP
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6741:psql "$PERSONA_DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6745:ERP only:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6747:psql "$DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6774:| DB env | PERSONA_DATABASE_URL |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6775:| ERP env | DATABASE_URL only when ERP linkage is explicitly added |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6785:| ERP direct linkage | not v1 |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6798:- no ERP direct linkage is included in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6834:- no ERP direct linkage in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6876:- no ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6899:- no ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:6934:- no ERP DATABASE_URL for BusinessOS WorkerRentalCore
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7009:- no ERP DB path
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7052:- no ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7080:- DATABASE_URL is used
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7187:- DB target when executed: Persona-side DB
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7188:- DB env when executed: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7203:- DATABASE_URL is used
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7204:- ERP DB is targeted
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7232:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7310:- ERP direct linkage is not v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7344:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7399:- primary_env: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7400:- erp_env_only_when_needed: DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7453:- Contract and usage truth: business schema.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7454:- AI worker catalog and conversation control truth: aiworker schema.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md:7510:- ERP sales posting
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/INDEX.md:18:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/INDEX.md:18:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/160010_CASUAL_CHAT_WORKER_FEATURE_ADDITION_PLAN.md:77:- direct ERP posting in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/INDEX.md:18:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md:120:- no direct ERP
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md:133:psql "$PERSONA_DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md:137:ERP only:
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md:139:psql "$DATABASE_URL" <<'SQL'
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md:19:| DB env | PERSONA_DATABASE_URL |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md:20:| ERP env | DATABASE_URL only when ERP linkage is explicitly added |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md:30:| ERP direct linkage | not v1 |
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md:43:- no ERP direct linkage is included in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170030_CASUAL_CHAT_WORKER_REAL_API_CONNECTION_WAITING_GATE.md:21:- no ERP direct linkage in v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170040_CASUAL_CHAT_WORKER_BACKEND_REAL_MODE_WAITING_GATE.md:27:- no ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170050_CASUAL_CHAT_WORKER_BACKEND_TRANSACTION_REAL_MODE_WAITING_GATE.md:16:- no ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170060_CASUAL_CHAT_WORKER_REAL_MODE_FINAL_GATE.md:28:- no ERP DATABASE_URL for BusinessOS WorkerRentalCore
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170080_CASUAL_CHAT_WORKER_REAL_MODE_PREAPPROVAL_GATE.md:21:- no ERP DB path
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170090_CASUAL_CHAT_WORKER_PHASE_N_TO_P_FINAL_GATE.md:19:- no ERP DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170090_CASUAL_CHAT_WORKER_PHASE_N_TO_P_FINAL_GATE.md:47:- DATABASE_URL is used
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170130_CASUAL_CHAT_WORKER_PHASE_N_PERSONA_DB_BOUNDARY_GATE.md:11:- DB target when executed: Persona-side DB
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170130_CASUAL_CHAT_WORKER_PHASE_N_PERSONA_DB_BOUNDARY_GATE.md:12:- DB env when executed: PERSONA_DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170130_CASUAL_CHAT_WORKER_PHASE_N_PERSONA_DB_BOUNDARY_GATE.md:27:- DATABASE_URL is used
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170130_CASUAL_CHAT_WORKER_PHASE_N_PERSONA_DB_BOUNDARY_GATE.md:28:- ERP DB is targeted
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/INDEX.md:18:- ERP direct linkage is not included in v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/180010_CASUAL_CHAT_WORKER_DESIGN_VERIFICATION_GATE.md:47:- ERP direct linkage is not v1
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP.md:132:- Apply WorkerRentalCore to business schema using PERSONA_DATABASE_URL.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP.md:147:- ERP DATABASE_URL is not used.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP.md:148:- Direct ERP integration is not v1.
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP.md:389:- PERSONA_DATABASE_URL only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP.md:390:- no DATABASE_URL
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP_CURRENT.md:117:- PERSONA_DATABASE_URL only
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP_CURRENT.md:118:- no DATABASE_URL

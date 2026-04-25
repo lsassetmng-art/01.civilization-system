@@ -1,0 +1,1098 @@
+============================================================
+03 commonos test cleanup and git push START
+============================================================
+DESIGN_ROOT : /data/data/com.termux/files/home/01.civilization-system
+IMPL_ROOT   : /data/data/com.termux/files/home/03.civilization-development
+MOVE_ROOT   : /data/data/com.termux/files/usr/var/tmp/implementation_large_non_source_20260425_225937
+AUDIT_DIR   : /data/data/com.termux/files/home/01.civilization-system/920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push
+------------------------------------------------------------
+[1] Convert remaining _commonos/test index.md and overview.md to README.md
+CONVERTED_TEST_TO_README	01.civilization-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/01.civilization-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	02.persona-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/02.persona-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	03.business-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	04.life-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/04.life-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	05.game-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/05.game-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	06.streaming-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/06.streaming-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	08.civilization-portal-site/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/08.civilization-portal-site/_commonos/test/README.md
+CONVERTED_TEST_TO_README	10.staticart-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/10.staticart-os/_commonos/test/README.md
+CONVERTED_TEST_TO_README	11.aiworker-os/_commonos/test	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/_commonos/test/README.md
+------------------------------------------------------------
+[2] Verify no _commonos index/overview remain outside 920.meta]
+PASS: no _commonos index/overview remain outside 920.meta
+------------------------------------------------------------
+[3] Ensure 03.civilization-development is git repo]
+BRANCH: main
+user.name : lsassetmng-art
+user.email: lsassetmng@gmail.com
+------------------------------------------------------------
+[4] Move every >100MB file outside repo]
+NO_LARGE_FILES_MOVED
+------------------------------------------------------------
+[5] Update .gitignore]
+GITIGNORE_EXISTS: .gradle/
+GITIGNORE_EXISTS: .tmp/
+GITIGNORE_EXISTS: android-sdk/
+GITIGNORE_EXISTS: *.zip
+GITIGNORE_EXISTS: node_modules/
+GITIGNORE_EXISTS: .next/
+GITIGNORE_EXISTS: dist/
+GITIGNORE_EXISTS: build/
+GITIGNORE_EXISTS: *.log
+------------------------------------------------------------
+[6] Verify no >100MB files remain]
+PASS: no >100MB files remain
+------------------------------------------------------------
+[7] Remote setup]
+REMOTE_ORIGIN_NOT_SET
+Set IMPL_REMOTE_URL to push after local commit.
+------------------------------------------------------------
+[8] git status before add]
+ D 01.civilization-os/_commonos/adapter/index.md
+ D 01.civilization-os/_commonos/adapter/overview.md
+ D 01.civilization-os/_commonos/bridge/index.md
+ D 01.civilization-os/_commonos/bridge/overview.md
+ D 01.civilization-os/_commonos/index.md
+ D 01.civilization-os/_commonos/mapper/index.md
+ D 01.civilization-os/_commonos/mapper/overview.md
+ D 01.civilization-os/_commonos/overview.md
+ D 01.civilization-os/_commonos/presenter/index.md
+ D 01.civilization-os/_commonos/presenter/overview.md
+ D 01.civilization-os/_commonos/sync/index.md
+ D 01.civilization-os/_commonos/sync/overview.md
+ D 01.civilization-os/_commonos/test/index.md
+ D 01.civilization-os/_commonos/test/overview.md
+ D 01.civilization-os/_commonos/theme/index.md
+ D 01.civilization-os/_commonos/theme/overview.md
+ D 02.persona-os/_commonos/adapter/index.md
+ D 02.persona-os/_commonos/adapter/overview.md
+ D 02.persona-os/_commonos/bridge/index.md
+ D 02.persona-os/_commonos/bridge/overview.md
+ D 02.persona-os/_commonos/index.md
+ D 02.persona-os/_commonos/mapper/index.md
+ D 02.persona-os/_commonos/mapper/overview.md
+ D 02.persona-os/_commonos/overview.md
+ D 02.persona-os/_commonos/presenter/index.md
+ D 02.persona-os/_commonos/presenter/overview.md
+ D 02.persona-os/_commonos/sync/index.md
+ D 02.persona-os/_commonos/sync/overview.md
+ D 02.persona-os/_commonos/test/index.md
+ D 02.persona-os/_commonos/test/overview.md
+ D 02.persona-os/_commonos/theme/index.md
+ D 02.persona-os/_commonos/theme/overview.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_072914_070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_072914_080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_072914_090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_073223_070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_073223_080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_073223_090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_080632_070090_CASUAL_CHAT_WORKER_LIVE_PAYLOAD_GAP_CHECK_EXACT.md
+ D 03.business-os/CasualChatWorker/docs/archive/20260425_080632_080040_CASUAL_CHAT_WORKER_REAL_MODE_SECURITY_POLICY_APPEND.md
+ M 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_HANDOFF.md
+ D 03.business-os/_commonos/adapter/index.md
+ D 03.business-os/_commonos/adapter/overview.md
+ D 03.business-os/_commonos/bridge/index.md
+ D 03.business-os/_commonos/bridge/overview.md
+ D 03.business-os/_commonos/index.md
+ D 03.business-os/_commonos/mapper/index.md
+ D 03.business-os/_commonos/mapper/overview.md
+ D 03.business-os/_commonos/overview.md
+ D 03.business-os/_commonos/presenter/index.md
+ D 03.business-os/_commonos/presenter/overview.md
+ D 03.business-os/_commonos/sync/index.md
+ D 03.business-os/_commonos/sync/overview.md
+ D 03.business-os/_commonos/test/index.md
+ D 03.business-os/_commonos/test/overview.md
+ D 03.business-os/_commonos/theme/index.md
+ D 03.business-os/_commonos/theme/overview.md
+ D 03.business-os/_worker-rental/docs/final-pre-apply-gate/20260425_064102_EXACT_APPLY_COMMAND_AFTER_APPROVAL.md
+ D 04.life-os/000000_IMPLEMENTATION_ROOT_CANONICAL.md
+ D 04.life-os/_commonos/adapter/index.md
+ D 04.life-os/_commonos/adapter/overview.md
+ D 04.life-os/_commonos/bridge/index.md
+ D 04.life-os/_commonos/bridge/overview.md
+ D 04.life-os/_commonos/index.md
+ D 04.life-os/_commonos/mapper/index.md
+ D 04.life-os/_commonos/mapper/overview.md
+ D 04.life-os/_commonos/overview.md
+ D 04.life-os/_commonos/presenter/index.md
+ D 04.life-os/_commonos/presenter/overview.md
+ D 04.life-os/_commonos/sync/index.md
+ D 04.life-os/_commonos/sync/overview.md
+ D 04.life-os/_commonos/test/index.md
+ D 04.life-os/_commonos/test/overview.md
+ D 04.life-os/_commonos/theme/index.md
+ D 04.life-os/_commonos/theme/overview.md
+ D 05.game-os/_commonos/adapter/index.md
+ D 05.game-os/_commonos/adapter/overview.md
+ D 05.game-os/_commonos/bridge/index.md
+ D 05.game-os/_commonos/bridge/overview.md
+ D 05.game-os/_commonos/index.md
+ D 05.game-os/_commonos/mapper/index.md
+ D 05.game-os/_commonos/mapper/overview.md
+ D 05.game-os/_commonos/overview.md
+ D 05.game-os/_commonos/presenter/index.md
+ D 05.game-os/_commonos/presenter/overview.md
+ D 05.game-os/_commonos/sync/index.md
+ D 05.game-os/_commonos/sync/overview.md
+ D 05.game-os/_commonos/test/index.md
+ D 05.game-os/_commonos/test/overview.md
+ D 05.game-os/_commonos/theme/index.md
+ D 05.game-os/_commonos/theme/overview.md
+ D 06.streaming-os/_commonos/adapter/index.md
+ D 06.streaming-os/_commonos/adapter/overview.md
+ D 06.streaming-os/_commonos/bridge/index.md
+ D 06.streaming-os/_commonos/bridge/overview.md
+ D 06.streaming-os/_commonos/index.md
+ D 06.streaming-os/_commonos/mapper/index.md
+ D 06.streaming-os/_commonos/mapper/overview.md
+ D 06.streaming-os/_commonos/overview.md
+ D 06.streaming-os/_commonos/presenter/index.md
+ D 06.streaming-os/_commonos/presenter/overview.md
+ D 06.streaming-os/_commonos/sync/index.md
+ D 06.streaming-os/_commonos/sync/overview.md
+ D 06.streaming-os/_commonos/test/index.md
+ D 06.streaming-os/_commonos/test/overview.md
+ D 06.streaming-os/_commonos/theme/index.md
+ D 06.streaming-os/_commonos/theme/overview.md
+ D 08.civilization-portal-site/_commonos/adapter/index.md
+ D 08.civilization-portal-site/_commonos/adapter/overview.md
+ D 08.civilization-portal-site/_commonos/bridge/index.md
+ D 08.civilization-portal-site/_commonos/bridge/overview.md
+ D 08.civilization-portal-site/_commonos/index.md
+ D 08.civilization-portal-site/_commonos/mapper/index.md
+ D 08.civilization-portal-site/_commonos/mapper/overview.md
+ D 08.civilization-portal-site/_commonos/overview.md
+ D 08.civilization-portal-site/_commonos/presenter/index.md
+ D 08.civilization-portal-site/_commonos/presenter/overview.md
+ D 08.civilization-portal-site/_commonos/sync/index.md
+ D 08.civilization-portal-site/_commonos/sync/overview.md
+ D 08.civilization-portal-site/_commonos/test/index.md
+ D 08.civilization-portal-site/_commonos/test/overview.md
+ D 08.civilization-portal-site/_commonos/theme/index.md
+ D 08.civilization-portal-site/_commonos/theme/overview.md
+ D 09.CX22073JW/docs/006_EXACT_CONTRACT_REGISTRY_ADDITIVE_NOTE.md
+ D 09.CX22073JW/docs/007_EXACT_PAYLOAD_CHECK_FUNCTIONS_ADDITIVE_NOTE.md
+ D 10.staticart-os/_commonos/adapter/index.md
+ D 10.staticart-os/_commonos/adapter/overview.md
+ D 10.staticart-os/_commonos/bridge/index.md
+ D 10.staticart-os/_commonos/bridge/overview.md
+ D 10.staticart-os/_commonos/index.md
+ D 10.staticart-os/_commonos/mapper/index.md
+ D 10.staticart-os/_commonos/mapper/overview.md
+ D 10.staticart-os/_commonos/overview.md
+ D 10.staticart-os/_commonos/presenter/index.md
+ D 10.staticart-os/_commonos/presenter/overview.md
+ D 10.staticart-os/_commonos/sync/index.md
+ D 10.staticart-os/_commonos/sync/overview.md
+ D 10.staticart-os/_commonos/test/index.md
+ D 10.staticart-os/_commonos/test/overview.md
+ D 10.staticart-os/_commonos/theme/index.md
+ D 10.staticart-os/_commonos/theme/overview.md
+ D 11.aiworker-os/_commonos/adapter/index.md
+ D 11.aiworker-os/_commonos/adapter/overview.md
+ D 11.aiworker-os/_commonos/bridge/index.md
+ D 11.aiworker-os/_commonos/bridge/overview.md
+ D 11.aiworker-os/_commonos/index.md
+ D 11.aiworker-os/_commonos/mapper/index.md
+ D 11.aiworker-os/_commonos/mapper/overview.md
+ D 11.aiworker-os/_commonos/overview.md
+ D 11.aiworker-os/_commonos/presenter/index.md
+ D 11.aiworker-os/_commonos/presenter/overview.md
+ D 11.aiworker-os/_commonos/sync/index.md
+ D 11.aiworker-os/_commonos/sync/overview.md
+ D 11.aiworker-os/_commonos/test/index.md
+ D 11.aiworker-os/_commonos/test/overview.md
+ D 11.aiworker-os/_commonos/theme/index.md
+ D 11.aiworker-os/_commonos/theme/overview.md
+?? 01.civilization-os/_commonos/README.md
+?? 01.civilization-os/_commonos/adapter/README.md
+?? 01.civilization-os/_commonos/bridge/README.md
+?? 01.civilization-os/_commonos/mapper/README.md
+?? 01.civilization-os/_commonos/presenter/README.md
+?? 01.civilization-os/_commonos/sync/README.md
+?? 01.civilization-os/_commonos/test/README.md
+?? 01.civilization-os/_commonos/theme/README.md
+?? 02.persona-os/_commonos/README.md
+?? 02.persona-os/_commonos/adapter/README.md
+?? 02.persona-os/_commonos/bridge/README.md
+?? 02.persona-os/_commonos/mapper/README.md
+?? 02.persona-os/_commonos/presenter/README.md
+?? 02.persona-os/_commonos/sync/README.md
+?? 02.persona-os/_commonos/test/README.md
+?? 02.persona-os/_commonos/theme/README.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_CURRENT_FINAL_STATE.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_PHASE_N_DECISION_LOCK.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_PHASE_O_STOP_GATE.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_204912_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_STATUS.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_205110_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_BUNDLE.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_214130_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_214235_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_214526_CASUAL_CHAT_WORKER_PHASE_O_START.md
+?? 03.business-os/CasualChatWorker/docs/final/20260425_224836_CASUAL_CHAT_WORKER_PHASE_O_START.md
+?? 03.business-os/CasualChatWorker/docs/handoff/20260425_204352_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/20260425_204912_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/20260425_205110_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/20260425_214130_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/20260425_214235_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/20260425_214526_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/20260425_224836_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+?? 03.business-os/CasualChatWorker/docs/meta/20260425_204352_phase_n_locked_state_report.md
+?? 03.business-os/CasualChatWorker/docs/meta/20260425_204912_persona_db_schema_boundary_report.md
+?? 03.business-os/CasualChatWorker/docs/meta/20260425_205110_persona_db_boundary_audit_report.md
+?? 03.business-os/CasualChatWorker/docs/meta/20260425_214130_persona_db_refined_audit_report.md
+?? 03.business-os/CasualChatWorker/docs/meta/20260425_214235_persona_db_refined_audit_report.md
+?? 03.business-os/CasualChatWorker/docs/meta/20260425_214526_phase_o_start_report.md
+?? 03.business-os/CasualChatWorker/docs/meta/20260425_224836_phase_o_start_report.md
+?? 03.business-os/CasualChatWorker/docs/verification/20260425_204352_phase_n_locked_state_verify.md
+?? 03.business-os/CasualChatWorker/docs/verification/20260425_204912_persona_db_schema_boundary_verify.md
+?? 03.business-os/CasualChatWorker/docs/verification/20260425_205110_persona_db_boundary_audit_verify.md
+?? 03.business-os/CasualChatWorker/docs/verification/20260425_214130_persona_db_refined_audit_verify.md
+?? 03.business-os/CasualChatWorker/docs/verification/20260425_214235_persona_db_refined_audit_verify.md
+?? 03.business-os/CasualChatWorker/docs/verification/20260425_214526_phase_o_start_verify.md
+?? 03.business-os/CasualChatWorker/docs/verification/20260425_224836_phase_o_start_verify.md
+?? 03.business-os/CasualChatWorker/tools/
+?? 03.business-os/_commonos/README.md
+?? 03.business-os/_commonos/adapter/README.md
+?? 03.business-os/_commonos/bridge/README.md
+?? 03.business-os/_commonos/mapper/README.md
+?? 03.business-os/_commonos/presenter/README.md
+?? 03.business-os/_commonos/sync/README.md
+?? 03.business-os/_commonos/test/README.md
+?? 03.business-os/_commonos/theme/README.md
+?? 04.life-os/_commonos/README.md
+?? 04.life-os/_commonos/adapter/README.md
+?? 04.life-os/_commonos/bridge/README.md
+?? 04.life-os/_commonos/mapper/README.md
+?? 04.life-os/_commonos/presenter/README.md
+?? 04.life-os/_commonos/sync/README.md
+?? 04.life-os/_commonos/test/README.md
+?? 04.life-os/_commonos/theme/README.md
+?? 05.game-os/_commonos/README.md
+?? 05.game-os/_commonos/adapter/README.md
+?? 05.game-os/_commonos/bridge/README.md
+?? 05.game-os/_commonos/mapper/README.md
+?? 05.game-os/_commonos/presenter/README.md
+?? 05.game-os/_commonos/sync/README.md
+?? 05.game-os/_commonos/test/README.md
+?? 05.game-os/_commonos/theme/README.md
+?? 06.streaming-os/_commonos/README.md
+?? 06.streaming-os/_commonos/adapter/README.md
+?? 06.streaming-os/_commonos/bridge/README.md
+?? 06.streaming-os/_commonos/mapper/README.md
+?? 06.streaming-os/_commonos/presenter/README.md
+?? 06.streaming-os/_commonos/sync/README.md
+?? 06.streaming-os/_commonos/test/README.md
+?? 06.streaming-os/_commonos/theme/README.md
+?? 08.civilization-portal-site/_commonos/README.md
+?? 08.civilization-portal-site/_commonos/adapter/README.md
+?? 08.civilization-portal-site/_commonos/bridge/README.md
+?? 08.civilization-portal-site/_commonos/mapper/README.md
+?? 08.civilization-portal-site/_commonos/presenter/README.md
+?? 08.civilization-portal-site/_commonos/sync/README.md
+?? 08.civilization-portal-site/_commonos/test/README.md
+?? 08.civilization-portal-site/_commonos/theme/README.md
+?? 10.staticart-os/_commonos/README.md
+?? 10.staticart-os/_commonos/adapter/README.md
+?? 10.staticart-os/_commonos/bridge/README.md
+?? 10.staticart-os/_commonos/mapper/README.md
+?? 10.staticart-os/_commonos/presenter/README.md
+?? 10.staticart-os/_commonos/sync/README.md
+?? 10.staticart-os/_commonos/test/README.md
+?? 10.staticart-os/_commonos/theme/README.md
+?? 11.aiworker-os/_commonos/README.md
+?? 11.aiworker-os/_commonos/adapter/README.md
+?? 11.aiworker-os/_commonos/bridge/README.md
+?? 11.aiworker-os/_commonos/mapper/README.md
+------------------------------------------------------------
+[9] git add all from 03 repo]
+------------------------------------------------------------
+[10] staged files]
+01.civilization-os/_commonos/README.md
+01.civilization-os/_commonos/adapter/README.md
+01.civilization-os/_commonos/bridge/README.md
+01.civilization-os/_commonos/mapper/README.md
+01.civilization-os/_commonos/presenter/README.md
+01.civilization-os/_commonos/sync/README.md
+01.civilization-os/_commonos/test/README.md
+01.civilization-os/_commonos/theme/README.md
+02.persona-os/_commonos/README.md
+02.persona-os/_commonos/adapter/README.md
+02.persona-os/_commonos/bridge/README.md
+02.persona-os/_commonos/mapper/README.md
+02.persona-os/_commonos/presenter/README.md
+02.persona-os/_commonos/sync/README.md
+02.persona-os/_commonos/test/README.md
+02.persona-os/_commonos/theme/README.md
+03.business-os/CasualChatWorker/docs/archive/20260425_072914_070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
+03.business-os/CasualChatWorker/docs/archive/20260425_072914_080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
+03.business-os/CasualChatWorker/docs/archive/20260425_072914_090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
+03.business-os/CasualChatWorker/docs/archive/20260425_073223_070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
+03.business-os/CasualChatWorker/docs/archive/20260425_073223_080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
+03.business-os/CasualChatWorker/docs/archive/20260425_073223_090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
+03.business-os/CasualChatWorker/docs/archive/20260425_080632_070090_CASUAL_CHAT_WORKER_LIVE_PAYLOAD_GAP_CHECK_EXACT.md
+03.business-os/CasualChatWorker/docs/archive/20260425_080632_080040_CASUAL_CHAT_WORKER_REAL_MODE_SECURITY_POLICY_APPEND.md
+03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_CURRENT_FINAL_STATE.md
+03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_PHASE_N_DECISION_LOCK.md
+03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_PHASE_O_STOP_GATE.md
+03.business-os/CasualChatWorker/docs/final/20260425_204912_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_STATUS.md
+03.business-os/CasualChatWorker/docs/final/20260425_205110_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_BUNDLE.md
+03.business-os/CasualChatWorker/docs/final/20260425_214130_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md
+03.business-os/CasualChatWorker/docs/final/20260425_214235_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md
+03.business-os/CasualChatWorker/docs/final/20260425_214526_CASUAL_CHAT_WORKER_PHASE_O_START.md
+03.business-os/CasualChatWorker/docs/final/20260425_224836_CASUAL_CHAT_WORKER_PHASE_O_START.md
+03.business-os/CasualChatWorker/docs/handoff/20260425_204352_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/20260425_204912_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/20260425_205110_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/20260425_214130_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/20260425_214235_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/20260425_214526_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/20260425_224836_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_HANDOFF.md
+03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+03.business-os/CasualChatWorker/docs/meta/20260425_204352_phase_n_locked_state_report.md
+03.business-os/CasualChatWorker/docs/meta/20260425_204912_persona_db_schema_boundary_report.md
+03.business-os/CasualChatWorker/docs/meta/20260425_205110_persona_db_boundary_audit_report.md
+03.business-os/CasualChatWorker/docs/meta/20260425_214130_persona_db_refined_audit_report.md
+03.business-os/CasualChatWorker/docs/meta/20260425_214235_persona_db_refined_audit_report.md
+03.business-os/CasualChatWorker/docs/meta/20260425_214526_phase_o_start_report.md
+03.business-os/CasualChatWorker/docs/meta/20260425_224836_phase_o_start_report.md
+03.business-os/CasualChatWorker/docs/verification/20260425_204352_phase_n_locked_state_verify.md
+03.business-os/CasualChatWorker/docs/verification/20260425_204912_persona_db_schema_boundary_verify.md
+03.business-os/CasualChatWorker/docs/verification/20260425_205110_persona_db_boundary_audit_verify.md
+03.business-os/CasualChatWorker/docs/verification/20260425_214130_persona_db_refined_audit_verify.md
+03.business-os/CasualChatWorker/docs/verification/20260425_214235_persona_db_refined_audit_verify.md
+03.business-os/CasualChatWorker/docs/verification/20260425_214526_phase_o_start_verify.md
+03.business-os/CasualChatWorker/docs/verification/20260425_224836_phase_o_start_verify.md
+03.business-os/CasualChatWorker/tools/phase-o-real-mode-rollback-to-mock.sh
+03.business-os/CasualChatWorker/tools/phase-o-real-mode-switch-gated.sh
+03.business-os/CasualChatWorker/tools/verify-phase-o-real-mode-switch-readiness.sh
+03.business-os/_commonos/README.md
+03.business-os/_commonos/adapter/README.md
+03.business-os/_commonos/bridge/README.md
+03.business-os/_commonos/mapper/README.md
+03.business-os/_commonos/presenter/README.md
+03.business-os/_commonos/sync/README.md
+03.business-os/_commonos/test/README.md
+03.business-os/_commonos/theme/README.md
+03.business-os/_worker-rental/docs/final-pre-apply-gate/20260425_064102_EXACT_APPLY_COMMAND_AFTER_APPROVAL.md
+04.life-os/000000_IMPLEMENTATION_ROOT_CANONICAL.md
+04.life-os/_commonos/README.md
+04.life-os/_commonos/adapter/README.md
+04.life-os/_commonos/bridge/README.md
+04.life-os/_commonos/mapper/README.md
+04.life-os/_commonos/presenter/README.md
+04.life-os/_commonos/sync/README.md
+04.life-os/_commonos/test/README.md
+04.life-os/_commonos/theme/README.md
+05.game-os/_commonos/README.md
+05.game-os/_commonos/adapter/README.md
+05.game-os/_commonos/bridge/README.md
+05.game-os/_commonos/mapper/README.md
+05.game-os/_commonos/presenter/README.md
+05.game-os/_commonos/sync/README.md
+05.game-os/_commonos/test/README.md
+05.game-os/_commonos/theme/README.md
+06.streaming-os/_commonos/README.md
+06.streaming-os/_commonos/adapter/README.md
+06.streaming-os/_commonos/bridge/README.md
+06.streaming-os/_commonos/mapper/README.md
+06.streaming-os/_commonos/presenter/README.md
+06.streaming-os/_commonos/sync/README.md
+06.streaming-os/_commonos/test/README.md
+06.streaming-os/_commonos/theme/README.md
+08.civilization-portal-site/_commonos/README.md
+08.civilization-portal-site/_commonos/adapter/README.md
+08.civilization-portal-site/_commonos/bridge/README.md
+08.civilization-portal-site/_commonos/mapper/README.md
+08.civilization-portal-site/_commonos/presenter/README.md
+08.civilization-portal-site/_commonos/sync/README.md
+08.civilization-portal-site/_commonos/test/README.md
+08.civilization-portal-site/_commonos/theme/README.md
+09.CX22073JW/docs/006_EXACT_CONTRACT_REGISTRY_ADDITIVE_NOTE.md
+09.CX22073JW/docs/007_EXACT_PAYLOAD_CHECK_FUNCTIONS_ADDITIVE_NOTE.md
+10.staticart-os/_commonos/README.md
+10.staticart-os/_commonos/adapter/README.md
+10.staticart-os/_commonos/bridge/README.md
+10.staticart-os/_commonos/mapper/README.md
+10.staticart-os/_commonos/presenter/README.md
+10.staticart-os/_commonos/sync/README.md
+10.staticart-os/_commonos/test/README.md
+10.staticart-os/_commonos/theme/README.md
+11.aiworker-os/_commonos/README.md
+11.aiworker-os/_commonos/adapter/README.md
+11.aiworker-os/_commonos/bridge/README.md
+11.aiworker-os/_commonos/mapper/README.md
+11.aiworker-os/_commonos/presenter/README.md
+11.aiworker-os/_commonos/sync/README.md
+11.aiworker-os/_commonos/test/README.md
+11.aiworker-os/_commonos/theme/README.md
+920.meta/20260425_194422_git_init_03_civilization_development/000_GIT_INIT_03_CIVILIZATION_DEVELOPMENT_REPORT.md
+920.meta/20260425_194422_git_init_03_civilization_development/040_staged_files.txt
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os/_commonos/theme/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/adapter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/adapter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/bridge/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/bridge/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/mapper/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/mapper/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/presenter/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/presenter/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/sync/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/sync/overview.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/theme/index.md
+920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os/_commonos/theme/overview.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/01.civilization-os/_commonos/test/index.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/01.civilization-os/_commonos/test/overview.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/02.persona-os/_commonos/test/index.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/02.persona-os/_commonos/test/overview.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/03.business-os/_commonos/test/index.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/03.business-os/_commonos/test/overview.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/04.life-os/_commonos/test/index.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/04.life-os/_commonos/test/overview.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/05.game-os/_commonos/test/index.md
+920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/05.game-os/_commonos/test/overview.md
+------------------------------------------------------------
+[11] staged diff stat]
+ 01.civilization-os/_commonos/README.md             |   43 +
+ 01.civilization-os/_commonos/adapter/README.md     |   43 +
+ 01.civilization-os/_commonos/bridge/README.md      |   43 +
+ 01.civilization-os/_commonos/mapper/README.md      |   43 +
+ 01.civilization-os/_commonos/presenter/README.md   |   43 +
+ 01.civilization-os/_commonos/sync/README.md        |   43 +
+ 01.civilization-os/_commonos/test/README.md        |   43 +
+ 01.civilization-os/_commonos/theme/README.md       |   43 +
+ 02.persona-os/_commonos/README.md                  |   43 +
+ 02.persona-os/_commonos/adapter/README.md          |   43 +
+ 02.persona-os/_commonos/bridge/README.md           |   43 +
+ 02.persona-os/_commonos/mapper/README.md           |   43 +
+ 02.persona-os/_commonos/presenter/README.md        |   43 +
+ 02.persona-os/_commonos/sync/README.md             |   43 +
+ 02.persona-os/_commonos/test/README.md             |   43 +
+ 02.persona-os/_commonos/theme/README.md            |   43 +
+ ...RKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md |   71 -
+ ...SUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md |   44 -
+ ...AT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md |   51 -
+ ...RKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md |   71 -
+ ...SUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md |   44 -
+ ...AT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md |   51 -
+ ...UAL_CHAT_WORKER_LIVE_PAYLOAD_GAP_CHECK_EXACT.md |   49 -
+ ...CHAT_WORKER_REAL_MODE_SECURITY_POLICY_APPEND.md |   27 -
+ ...04352_CASUAL_CHAT_WORKER_CURRENT_FINAL_STATE.md |   53 +
+ ...352_CASUAL_CHAT_WORKER_PHASE_N_DECISION_LOCK.md |  156 +
+ ..._204352_CASUAL_CHAT_WORKER_PHASE_O_STOP_GATE.md |   49 +
+ ...HAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_STATUS.md |   29 +
+ ...CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_BUNDLE.md |   31 +
+ ..._CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md |   27 +
+ ..._CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md |   27 +
+ ...0425_214526_CASUAL_CHAT_WORKER_PHASE_O_START.md |   77 +
+ ...0425_224836_CASUAL_CHAT_WORKER_PHASE_O_START.md |   77 +
+ ...52_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_HANDOFF.md |   61 +
+ ...AT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md |   86 +
+ ...HAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md |   42 +
+ ...CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md |   45 +
+ ...CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md |   45 +
+ ...526_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md |   55 +
+ ...836_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md |   55 +
+ ...HAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md |   42 +
+ ...CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md |   45 +
+ ...AT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md |   86 +
+ ...ST_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_HANDOFF.md |    8 +-
+ ...EST_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md |   55 +
+ .../20260425_204352_phase_n_locked_state_report.md |   30 +
+ ...425_204912_persona_db_schema_boundary_report.md |   34 +
+ ...0425_205110_persona_db_boundary_audit_report.md |   32 +
+ ...60425_214130_persona_db_refined_audit_report.md |   33 +
+ ...60425_214235_persona_db_refined_audit_report.md |   33 +
+ .../meta/20260425_214526_phase_o_start_report.md   |   31 +
+ .../meta/20260425_224836_phase_o_start_report.md   |   31 +
+ .../20260425_204352_phase_n_locked_state_verify.md |   26 +
+ ...425_204912_persona_db_schema_boundary_verify.md |   29 +
+ ...0425_205110_persona_db_boundary_audit_verify.md |   32 +
+ ...60425_214130_persona_db_refined_audit_verify.md |   31 +
+ ...60425_214235_persona_db_refined_audit_verify.md |   31 +
+ .../20260425_214526_phase_o_start_verify.md        |   20 +
+ .../20260425_224836_phase_o_start_verify.md        |   20 +
+ .../tools/phase-o-real-mode-rollback-to-mock.sh    |   35 +
+ .../tools/phase-o-real-mode-switch-gated.sh        |   68 +
+ .../verify-phase-o-real-mode-switch-readiness.sh   |   76 +
+ 03.business-os/_commonos/README.md                 |   43 +
+ 03.business-os/_commonos/adapter/README.md         |   43 +
+ 03.business-os/_commonos/bridge/README.md          |   43 +
+ 03.business-os/_commonos/mapper/README.md          |   43 +
+ 03.business-os/_commonos/presenter/README.md       |   43 +
+ 03.business-os/_commonos/sync/README.md            |   43 +
+ 03.business-os/_commonos/test/README.md            |   43 +
+ 03.business-os/_commonos/theme/README.md           |   43 +
+ ...25_064102_EXACT_APPLY_COMMAND_AFTER_APPROVAL.md |   41 -
+ 04.life-os/000000_IMPLEMENTATION_ROOT_CANONICAL.md |   24 -
+ 04.life-os/_commonos/README.md                     |   43 +
+ 04.life-os/_commonos/adapter/README.md             |   43 +
+ 04.life-os/_commonos/bridge/README.md              |   43 +
+ 04.life-os/_commonos/mapper/README.md              |   43 +
+ 04.life-os/_commonos/presenter/README.md           |   43 +
+ 04.life-os/_commonos/sync/README.md                |   43 +
+ 04.life-os/_commonos/test/README.md                |   43 +
+ 04.life-os/_commonos/theme/README.md               |   43 +
+ 05.game-os/_commonos/README.md                     |   43 +
+ 05.game-os/_commonos/adapter/README.md             |   43 +
+ 05.game-os/_commonos/bridge/README.md              |   43 +
+ 05.game-os/_commonos/mapper/README.md              |   43 +
+ 05.game-os/_commonos/presenter/README.md           |   43 +
+ 05.game-os/_commonos/sync/README.md                |   43 +
+ 05.game-os/_commonos/test/README.md                |   43 +
+ 05.game-os/_commonos/theme/README.md               |   43 +
+ 06.streaming-os/_commonos/README.md                |   43 +
+ 06.streaming-os/_commonos/adapter/README.md        |   43 +
+ 06.streaming-os/_commonos/bridge/README.md         |   43 +
+ 06.streaming-os/_commonos/mapper/README.md         |   43 +
+ 06.streaming-os/_commonos/presenter/README.md      |   43 +
+ 06.streaming-os/_commonos/sync/README.md           |   43 +
+ 06.streaming-os/_commonos/test/README.md           |   43 +
+ 06.streaming-os/_commonos/theme/README.md          |   43 +
+ 08.civilization-portal-site/_commonos/README.md    |   43 +
+ .../_commonos/adapter/README.md                    |   43 +
+ .../_commonos/bridge/README.md                     |   43 +
+ .../_commonos/mapper/README.md                     |   43 +
+ .../_commonos/presenter/README.md                  |   43 +
+ .../_commonos/sync/README.md                       |   43 +
+ .../_commonos/test/README.md                       |   43 +
+ .../_commonos/theme/README.md                      |   43 +
+ .../006_EXACT_CONTRACT_REGISTRY_ADDITIVE_NOTE.md   |   18 -
+ ..._EXACT_PAYLOAD_CHECK_FUNCTIONS_ADDITIVE_NOTE.md |   17 -
+ 10.staticart-os/_commonos/README.md                |   43 +
+ 10.staticart-os/_commonos/adapter/README.md        |   43 +
+ 10.staticart-os/_commonos/bridge/README.md         |   43 +
+ 10.staticart-os/_commonos/mapper/README.md         |   43 +
+ 10.staticart-os/_commonos/presenter/README.md      |   43 +
+ 10.staticart-os/_commonos/sync/README.md           |   43 +
+ 10.staticart-os/_commonos/test/README.md           |   43 +
+ 10.staticart-os/_commonos/theme/README.md          |   43 +
+ 11.aiworker-os/_commonos/README.md                 |   43 +
+ 11.aiworker-os/_commonos/adapter/README.md         |   43 +
+ 11.aiworker-os/_commonos/bridge/README.md          |   43 +
+ 11.aiworker-os/_commonos/mapper/README.md          |   43 +
+ 11.aiworker-os/_commonos/presenter/README.md       |   43 +
+ 11.aiworker-os/_commonos/sync/README.md            |   43 +
+ 11.aiworker-os/_commonos/test/README.md            |   43 +
+ 11.aiworker-os/_commonos/theme/README.md           |   43 +
+ ..._GIT_INIT_03_CIVILIZATION_DEVELOPMENT_REPORT.md |   46 +
+ .../040_staged_files.txt                           | 6213 ++++++++++++++++++++
+ .../01.civilization-os}/_commonos/adapter/index.md |    0
+ .../_commonos/adapter/overview.md                  |    0
+ .../01.civilization-os}/_commonos/bridge/index.md  |    0
+ .../_commonos/bridge/overview.md                   |    0
+ .../01.civilization-os}/_commonos/index.md         |    0
+ .../01.civilization-os}/_commonos/mapper/index.md  |    0
+ .../_commonos/mapper/overview.md                   |    0
+ .../01.civilization-os}/_commonos/overview.md      |    0
+ .../_commonos/presenter/index.md                   |    0
+ .../_commonos/presenter/overview.md                |    0
+ .../01.civilization-os}/_commonos/sync/index.md    |    0
+ .../01.civilization-os}/_commonos/sync/overview.md |    0
+ .../01.civilization-os}/_commonos/theme/index.md   |    0
+ .../_commonos/theme/overview.md                    |    0
+ .../02.persona-os}/_commonos/adapter/index.md      |    0
+ .../02.persona-os}/_commonos/adapter/overview.md   |    0
+ .../02.persona-os}/_commonos/bridge/index.md       |    0
+ .../02.persona-os}/_commonos/bridge/overview.md    |    0
+ .../02.persona-os}/_commonos/index.md              |    0
+ .../02.persona-os}/_commonos/mapper/index.md       |    0
+ .../02.persona-os}/_commonos/mapper/overview.md    |    0
+ .../02.persona-os}/_commonos/overview.md           |    0
+ .../02.persona-os}/_commonos/presenter/index.md    |    0
+ .../02.persona-os}/_commonos/presenter/overview.md |    0
+ .../02.persona-os}/_commonos/sync/index.md         |    0
+ .../02.persona-os}/_commonos/sync/overview.md      |    0
+ .../02.persona-os}/_commonos/theme/index.md        |    0
+ .../02.persona-os}/_commonos/theme/overview.md     |    0
+ .../03.business-os}/_commonos/adapter/index.md     |    0
+ .../03.business-os}/_commonos/adapter/overview.md  |    0
+ .../03.business-os}/_commonos/bridge/index.md      |    0
+ .../03.business-os}/_commonos/bridge/overview.md   |    0
+ .../03.business-os}/_commonos/index.md             |    0
+ .../03.business-os}/_commonos/mapper/index.md      |    0
+ .../03.business-os}/_commonos/mapper/overview.md   |    0
+ .../03.business-os}/_commonos/overview.md          |    0
+ .../03.business-os}/_commonos/presenter/index.md   |    0
+ .../_commonos/presenter/overview.md                |    0
+ .../03.business-os}/_commonos/sync/index.md        |    0
+ .../03.business-os}/_commonos/sync/overview.md     |    0
+ .../03.business-os}/_commonos/theme/index.md       |    0
+ .../03.business-os}/_commonos/theme/overview.md    |    0
+ .../04.life-os}/_commonos/adapter/index.md         |    0
+ .../04.life-os}/_commonos/adapter/overview.md      |    0
+ .../04.life-os}/_commonos/bridge/index.md          |    0
+ .../04.life-os}/_commonos/bridge/overview.md       |    0
+ .../04.life-os}/_commonos/index.md                 |    0
+ .../04.life-os}/_commonos/mapper/index.md          |    0
+ .../04.life-os}/_commonos/mapper/overview.md       |    0
+ .../04.life-os}/_commonos/overview.md              |    0
+ .../04.life-os}/_commonos/presenter/index.md       |    0
+ .../04.life-os}/_commonos/presenter/overview.md    |    0
+ .../04.life-os}/_commonos/sync/index.md            |    0
+ .../04.life-os}/_commonos/sync/overview.md         |    0
+ .../04.life-os}/_commonos/theme/index.md           |    0
+ .../04.life-os}/_commonos/theme/overview.md        |    0
+ .../05.game-os}/_commonos/adapter/index.md         |    0
+ .../05.game-os}/_commonos/adapter/overview.md      |    0
+ .../05.game-os}/_commonos/bridge/index.md          |    0
+ .../05.game-os}/_commonos/bridge/overview.md       |    0
+ .../05.game-os}/_commonos/index.md                 |    0
+ .../05.game-os}/_commonos/mapper/index.md          |    0
+ .../05.game-os}/_commonos/mapper/overview.md       |    0
+ .../05.game-os}/_commonos/overview.md              |    0
+ .../05.game-os}/_commonos/presenter/index.md       |    0
+ .../05.game-os}/_commonos/presenter/overview.md    |    0
+ .../05.game-os}/_commonos/sync/index.md            |    0
+ .../05.game-os}/_commonos/sync/overview.md         |    0
+ .../05.game-os}/_commonos/theme/index.md           |    0
+ .../05.game-os}/_commonos/theme/overview.md        |    0
+ .../06.streaming-os}/_commonos/adapter/index.md    |    0
+ .../06.streaming-os}/_commonos/adapter/overview.md |    0
+ .../06.streaming-os}/_commonos/bridge/index.md     |    0
+ .../06.streaming-os}/_commonos/bridge/overview.md  |    0
+ .../06.streaming-os}/_commonos/index.md            |    0
+ .../06.streaming-os}/_commonos/mapper/index.md     |    0
+ .../06.streaming-os}/_commonos/mapper/overview.md  |    0
+ .../06.streaming-os}/_commonos/overview.md         |    0
+ .../06.streaming-os}/_commonos/presenter/index.md  |    0
+ .../_commonos/presenter/overview.md                |    0
+ .../06.streaming-os}/_commonos/sync/index.md       |    0
+ .../06.streaming-os}/_commonos/sync/overview.md    |    0
+ .../06.streaming-os}/_commonos/theme/index.md      |    0
+ .../06.streaming-os}/_commonos/theme/overview.md   |    0
+ .../_commonos/adapter/index.md                     |    0
+ .../_commonos/adapter/overview.md                  |    0
+ .../_commonos/bridge/index.md                      |    0
+ .../_commonos/bridge/overview.md                   |    0
+ .../_commonos/index.md                             |    0
+ .../_commonos/mapper/index.md                      |    0
+ .../_commonos/mapper/overview.md                   |    0
+ .../_commonos/overview.md                          |    0
+ .../_commonos/presenter/index.md                   |    0
+ .../_commonos/presenter/overview.md                |    0
+ .../_commonos/sync/index.md                        |    0
+ .../_commonos/sync/overview.md                     |    0
+ .../_commonos/theme/index.md                       |    0
+ .../_commonos/theme/overview.md                    |    0
+ .../10.staticart-os}/_commonos/adapter/index.md    |    0
+ .../10.staticart-os}/_commonos/adapter/overview.md |    0
+ .../10.staticart-os}/_commonos/bridge/index.md     |    0
+ .../10.staticart-os}/_commonos/bridge/overview.md  |    0
+ .../10.staticart-os}/_commonos/index.md            |    0
+ .../10.staticart-os}/_commonos/mapper/index.md     |    0
+ .../10.staticart-os}/_commonos/mapper/overview.md  |    0
+ .../10.staticart-os}/_commonos/overview.md         |    0
+ .../10.staticart-os}/_commonos/presenter/index.md  |    0
+ .../_commonos/presenter/overview.md                |    0
+ .../10.staticart-os}/_commonos/sync/index.md       |    0
+ .../10.staticart-os}/_commonos/sync/overview.md    |    0
+ .../10.staticart-os}/_commonos/theme/index.md      |    0
+ .../10.staticart-os}/_commonos/theme/overview.md   |    0
+ .../11.aiworker-os}/_commonos/adapter/index.md     |    0
+ .../11.aiworker-os}/_commonos/adapter/overview.md  |    0
+ .../11.aiworker-os}/_commonos/bridge/index.md      |    0
+ .../11.aiworker-os}/_commonos/bridge/overview.md   |    0
+[main 5856b05] Push implementation repository after MD cleanup
+ 268 files changed, 11094 insertions(+), 512 deletions(-)
+ create mode 100644 01.civilization-os/_commonos/README.md
+ create mode 100644 01.civilization-os/_commonos/adapter/README.md
+ create mode 100644 01.civilization-os/_commonos/bridge/README.md
+ create mode 100644 01.civilization-os/_commonos/mapper/README.md
+ create mode 100644 01.civilization-os/_commonos/presenter/README.md
+ create mode 100644 01.civilization-os/_commonos/sync/README.md
+ create mode 100644 01.civilization-os/_commonos/test/README.md
+ create mode 100644 01.civilization-os/_commonos/theme/README.md
+ create mode 100644 02.persona-os/_commonos/README.md
+ create mode 100644 02.persona-os/_commonos/adapter/README.md
+ create mode 100644 02.persona-os/_commonos/bridge/README.md
+ create mode 100644 02.persona-os/_commonos/mapper/README.md
+ create mode 100644 02.persona-os/_commonos/presenter/README.md
+ create mode 100644 02.persona-os/_commonos/sync/README.md
+ create mode 100644 02.persona-os/_commonos/test/README.md
+ create mode 100644 02.persona-os/_commonos/theme/README.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_072914_070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_072914_080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_072914_090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_073223_070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_073223_080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_073223_090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_080632_070090_CASUAL_CHAT_WORKER_LIVE_PAYLOAD_GAP_CHECK_EXACT.md
+ delete mode 100644 03.business-os/CasualChatWorker/docs/archive/20260425_080632_080040_CASUAL_CHAT_WORKER_REAL_MODE_SECURITY_POLICY_APPEND.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_CURRENT_FINAL_STATE.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_PHASE_N_DECISION_LOCK.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_204352_CASUAL_CHAT_WORKER_PHASE_O_STOP_GATE.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_204912_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_STATUS.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_205110_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_BUNDLE.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_214130_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_214235_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_BUNDLE.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_214526_CASUAL_CHAT_WORKER_PHASE_O_START.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/final/20260425_224836_CASUAL_CHAT_WORKER_PHASE_O_START.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/20260425_204352_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/20260425_204912_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/20260425_205110_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/20260425_214130_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/20260425_214235_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/20260425_214526_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/20260425_224836_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_AUDIT_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_BOUNDARY_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/handoff/LATEST_CASUAL_CHAT_WORKER_PHASE_O_START_HANDOFF.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/meta/20260425_204352_phase_n_locked_state_report.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/meta/20260425_204912_persona_db_schema_boundary_report.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/meta/20260425_205110_persona_db_boundary_audit_report.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/meta/20260425_214130_persona_db_refined_audit_report.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/meta/20260425_214235_persona_db_refined_audit_report.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/meta/20260425_214526_phase_o_start_report.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/meta/20260425_224836_phase_o_start_report.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/verification/20260425_204352_phase_n_locked_state_verify.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/verification/20260425_204912_persona_db_schema_boundary_verify.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/verification/20260425_205110_persona_db_boundary_audit_verify.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/verification/20260425_214130_persona_db_refined_audit_verify.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/verification/20260425_214235_persona_db_refined_audit_verify.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/verification/20260425_214526_phase_o_start_verify.md
+ create mode 100644 03.business-os/CasualChatWorker/docs/verification/20260425_224836_phase_o_start_verify.md
+ create mode 100755 03.business-os/CasualChatWorker/tools/phase-o-real-mode-rollback-to-mock.sh
+ create mode 100755 03.business-os/CasualChatWorker/tools/phase-o-real-mode-switch-gated.sh
+ create mode 100755 03.business-os/CasualChatWorker/tools/verify-phase-o-real-mode-switch-readiness.sh
+ create mode 100644 03.business-os/_commonos/README.md
+ create mode 100644 03.business-os/_commonos/adapter/README.md
+ create mode 100644 03.business-os/_commonos/bridge/README.md
+ create mode 100644 03.business-os/_commonos/mapper/README.md
+ create mode 100644 03.business-os/_commonos/presenter/README.md
+ create mode 100644 03.business-os/_commonos/sync/README.md
+ create mode 100644 03.business-os/_commonos/test/README.md
+ create mode 100644 03.business-os/_commonos/theme/README.md
+ delete mode 100644 03.business-os/_worker-rental/docs/final-pre-apply-gate/20260425_064102_EXACT_APPLY_COMMAND_AFTER_APPROVAL.md
+ delete mode 100644 04.life-os/000000_IMPLEMENTATION_ROOT_CANONICAL.md
+ create mode 100644 04.life-os/_commonos/README.md
+ create mode 100644 04.life-os/_commonos/adapter/README.md
+ create mode 100644 04.life-os/_commonos/bridge/README.md
+ create mode 100644 04.life-os/_commonos/mapper/README.md
+ create mode 100644 04.life-os/_commonos/presenter/README.md
+ create mode 100644 04.life-os/_commonos/sync/README.md
+ create mode 100644 04.life-os/_commonos/test/README.md
+ create mode 100644 04.life-os/_commonos/theme/README.md
+ create mode 100644 05.game-os/_commonos/README.md
+ create mode 100644 05.game-os/_commonos/adapter/README.md
+ create mode 100644 05.game-os/_commonos/bridge/README.md
+ create mode 100644 05.game-os/_commonos/mapper/README.md
+ create mode 100644 05.game-os/_commonos/presenter/README.md
+ create mode 100644 05.game-os/_commonos/sync/README.md
+ create mode 100644 05.game-os/_commonos/test/README.md
+ create mode 100644 05.game-os/_commonos/theme/README.md
+ create mode 100644 06.streaming-os/_commonos/README.md
+ create mode 100644 06.streaming-os/_commonos/adapter/README.md
+ create mode 100644 06.streaming-os/_commonos/bridge/README.md
+ create mode 100644 06.streaming-os/_commonos/mapper/README.md
+ create mode 100644 06.streaming-os/_commonos/presenter/README.md
+ create mode 100644 06.streaming-os/_commonos/sync/README.md
+ create mode 100644 06.streaming-os/_commonos/test/README.md
+ create mode 100644 06.streaming-os/_commonos/theme/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/adapter/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/bridge/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/mapper/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/presenter/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/sync/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/test/README.md
+ create mode 100644 08.civilization-portal-site/_commonos/theme/README.md
+ delete mode 100644 09.CX22073JW/docs/006_EXACT_CONTRACT_REGISTRY_ADDITIVE_NOTE.md
+ delete mode 100644 09.CX22073JW/docs/007_EXACT_PAYLOAD_CHECK_FUNCTIONS_ADDITIVE_NOTE.md
+ create mode 100644 10.staticart-os/_commonos/README.md
+ create mode 100644 10.staticart-os/_commonos/adapter/README.md
+ create mode 100644 10.staticart-os/_commonos/bridge/README.md
+ create mode 100644 10.staticart-os/_commonos/mapper/README.md
+ create mode 100644 10.staticart-os/_commonos/presenter/README.md
+ create mode 100644 10.staticart-os/_commonos/sync/README.md
+ create mode 100644 10.staticart-os/_commonos/test/README.md
+ create mode 100644 10.staticart-os/_commonos/theme/README.md
+ create mode 100644 11.aiworker-os/_commonos/README.md
+ create mode 100644 11.aiworker-os/_commonos/adapter/README.md
+ create mode 100644 11.aiworker-os/_commonos/bridge/README.md
+ create mode 100644 11.aiworker-os/_commonos/mapper/README.md
+ create mode 100644 11.aiworker-os/_commonos/presenter/README.md
+ create mode 100644 11.aiworker-os/_commonos/sync/README.md
+ create mode 100644 11.aiworker-os/_commonos/test/README.md
+ create mode 100644 11.aiworker-os/_commonos/theme/README.md
+ create mode 100644 920.meta/20260425_194422_git_init_03_civilization_development/000_GIT_INIT_03_CIVILIZATION_DEVELOPMENT_REPORT.md
+ create mode 100644 920.meta/20260425_194422_git_init_03_civilization_development/040_staged_files.txt
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/adapter/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/adapter/overview.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/bridge/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/bridge/overview.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/mapper/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/mapper/overview.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/overview.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/presenter/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/presenter/overview.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/sync/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/sync/overview.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/theme/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/01.civilization-os}/_commonos/theme/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/adapter/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/adapter/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/bridge/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/bridge/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/mapper/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/mapper/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/presenter/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/presenter/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/sync/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/sync/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/theme/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/02.persona-os}/_commonos/theme/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/adapter/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/adapter/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/bridge/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/bridge/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/mapper/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/mapper/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/presenter/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/presenter/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/sync/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/sync/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/theme/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/03.business-os}/_commonos/theme/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/adapter/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/adapter/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/bridge/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/bridge/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/mapper/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/mapper/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/presenter/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/presenter/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/sync/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/sync/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/theme/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/04.life-os}/_commonos/theme/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/adapter/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/adapter/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/bridge/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/bridge/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/mapper/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/mapper/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/presenter/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/presenter/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/sync/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/sync/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/theme/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/05.game-os}/_commonos/theme/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/adapter/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/adapter/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/bridge/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/bridge/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/mapper/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/mapper/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/presenter/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/presenter/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/sync/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/sync/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/theme/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/06.streaming-os}/_commonos/theme/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/adapter/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/adapter/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/bridge/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/bridge/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/mapper/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/mapper/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/presenter/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/presenter/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/sync/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/sync/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/theme/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/08.civilization-portal-site}/_commonos/theme/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/adapter/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/adapter/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/bridge/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/bridge/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/mapper/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/mapper/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/presenter/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/presenter/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/sync/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/sync/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/theme/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/10.staticart-os}/_commonos/theme/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/adapter/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/adapter/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/bridge/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/bridge/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/mapper/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/mapper/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/presenter/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/presenter/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/sync/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/sync/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/theme/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225752_03_md_cleanup_apply/original_commonos_index_overview/11.aiworker-os}/_commonos/theme/overview.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/01.civilization-os}/_commonos/test/index.md (100%)
+ rename {01.civilization-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/01.civilization-os}/_commonos/test/overview.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/02.persona-os}/_commonos/test/index.md (100%)
+ rename {02.persona-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/02.persona-os}/_commonos/test/overview.md (100%)
+ rename {03.business-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/03.business-os}/_commonos/test/index.md (100%)
+ rename {03.business-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/03.business-os}/_commonos/test/overview.md (100%)
+ rename {04.life-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/04.life-os}/_commonos/test/index.md (100%)
+ rename {04.life-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/04.life-os}/_commonos/test/overview.md (100%)
+ rename {05.game-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/05.game-os}/_commonos/test/index.md (100%)
+ rename {05.game-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/05.game-os}/_commonos/test/overview.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/06.streaming-os}/_commonos/test/index.md (100%)
+ rename {06.streaming-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/06.streaming-os}/_commonos/test/overview.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/08.civilization-portal-site}/_commonos/test/index.md (100%)
+ rename {08.civilization-portal-site => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/08.civilization-portal-site}/_commonos/test/overview.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/10.staticart-os}/_commonos/test/index.md (100%)
+ rename {10.staticart-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/10.staticart-os}/_commonos/test/overview.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/11.aiworker-os}/_commonos/test/index.md (100%)
+ rename {11.aiworker-os => 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/original_commonos_test_index_overview/11.aiworker-os}/_commonos/test/overview.md (100%)
+============================================================
+03 commonos test cleanup and git push DONE
+============================================================
+CONVERTED_TEST_README_COUNT          : 9
+REMAINING_COMMONOS_INDEX_COUNT       : 0
+COMMIT_RESULT                        : COMMIT_DONE
+PUSH_RESULT                          : REMOTE_NOT_SET
+REPORT                               : /data/data/com.termux/files/home/01.civilization-system/920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/000_03_COMMONOS_TEST_CLEANUP_AND_GIT_PUSH_REPORT.md
+LOG                                  : /data/data/com.termux/files/home/01.civilization-system/920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/010_run.log
+============================================================
+DB WRITE: NOT EXECUTED
+RLS APPLY: NOT EXECUTED
+LIVE AIWORKEROS CALL: NOT EXECUTED
+============================================================

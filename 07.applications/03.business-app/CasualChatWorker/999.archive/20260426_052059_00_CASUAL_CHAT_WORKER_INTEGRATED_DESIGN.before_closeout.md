@@ -2,19 +2,15 @@
 # CASUAL CHAT WORKER INTEGRATED DESIGN
 # ============================================================
 
-status: final-closeout-regenerated
+status: regenerated
 system: CasualChatWorker
-generated_at: 20260426_052059
+generated_at: 20260425_204912
 source_root: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker
-source_file_count: 128
-
-current_closeout:
-- runtime_state: mock_mode
-- closeout_status: CLOSEOUT_READY_IMPLEMENTATION_PREPARED_REAL_MODE_DISABLED
+source_file_count: 114
 
 important_current_boundary:
 - DB target is Persona-side DB.
-- PERSONA_DATABASE_URL is required for DB-connected validation.
+- PERSONA_DATABASE_URL is required.
 - DATABASE_URL / ERP DB path is forbidden for this app DB work.
 - business owns contract/payment/entitlement/session facts.
 - aiworker owns AI worker entity/series/personality/safety canon.
@@ -27,132 +23,118 @@ important_current_boundary:
 
 -      1	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md
 -      2	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_CURRENT_STATUS_LEDGER.md
--      3	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FINAL_INDEX.md
--      4	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP.md
--      5	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP_CURRENT.md
--      6	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/010010_CASUAL_CHAT_WORKER_FREE_TICKET_INDEX.md
--      7	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/INDEX.md
--      8	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/OVERVIEW.md
--      9	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/020010_CASUAL_CHAT_WORKER_FREE_TICKET_OVERVIEW.md
--     10	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/INDEX.md
--     11	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/OVERVIEW.md
--     12	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/030100_CASUAL_CHAT_WORKER_APP_MODEL.md
--     13	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/INDEX.md
--     14	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/OVERVIEW.md
--     15	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040010_CASUAL_CHAT_WORKER_FREE_TICKET_SCREEN_EXACT.md
--     16	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040030_CASUAL_CHAT_WORKER_AIWORKER_SERIES_STYLE_UI_ALIGNMENT.md
--     17	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040100_CASUAL_CHAT_WORKER_SCREEN_MODEL.md
--     18	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/INDEX.md
--     19	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/OVERVIEW.md
--     20	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050010_CASUAL_CHAT_WORKER_FREE_TICKET_STATEFLOW_EXACT.md
--     21	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050100_CASUAL_CHAT_WORKER_STATEFLOW_MODEL.md
--     22	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/INDEX.md
--     23	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/OVERVIEW.md
--     24	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md
--     25	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060010_CASUAL_CHAT_WORKER_FREE_TICKET_INTEGRATED_CANONICAL.md
--     26	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060020_CASUAL_CHAT_WORKER_AIWORKER_LATEST_ALIGNMENT_APPEND.md
--     27	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060030_CASUAL_CHAT_WORKER_AIWORKER_SERIES_STYLE_UI_INTEGRATED_APPEND.md
--     28	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060040_CASUAL_CHAT_WORKER_REAL_API_CONNECTION_PREPARATION_APPEND.md
--     29	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060050_CASUAL_CHAT_WORKER_BACKEND_ENDPOINT_INTEGRATED_APPEND.md
--     30	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060060_CASUAL_CHAT_WORKER_BACKEND_TRANSACTION_PREPARATION_APPEND.md
--     31	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060070_CASUAL_CHAT_WORKER_POSTGRES_REPOSITORY_AND_WIRING_APPEND.md
--     32	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060080_CASUAL_CHAT_WORKER_SECURE_RUNTIME_REAL_MODE_APPEND.md
--     33	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060090_CASUAL_CHAT_WORKER_NONPROD_DRYRUN_REAL_MODE_PREAPPROVAL_APPEND.md
--     34	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060100_CASUAL_CHAT_WORKER_INTEGRATION_BOUNDARY.md
--     35	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060100_CASUAL_CHAT_WORKER_PHASE_N_TO_P_CURRENT_POSITION_APPEND.md
--     36	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060120_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_STATE_APPEND.md
--     37	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md
--     38	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060140_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_APPEND.md
--     39	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060150_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_REFINED_AUDIT_APPEND.md
--     40	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060160_CASUAL_CHAT_WORKER_PHASE_O_START_APPEND.md
--     41	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060180_CASUAL_CHAT_WORKER_PHASE_P_CLOSEOUT_APPEND.md
--     42	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/INDEX.md
--     43	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/OVERVIEW.md
--     44	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070010_CASUAL_CHAT_WORKER_FREE_TICKET_API_EXACT.md
--     45	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070030_CASUAL_CHAT_WORKER_WORKER_RENTAL_REAL_API_CONNECTION_CONTRACT.md
--     46	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070040_CASUAL_CHAT_WORKER_WORKER_RENTAL_BACKEND_ENDPOINT_EXACT.md
--     47	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
--     48	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070060_CASUAL_CHAT_WORKER_WORKER_RENTAL_POSTGRES_REPOSITORY_EXACT.md
--     49	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070070_CASUAL_CHAT_WORKER_WORKER_RENTAL_HTTP_WIRING_CANDIDATE.md
--     50	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070080_CASUAL_CHAT_WORKER_ENDPOINT_INTEGRATION_TEST_PLAN.md
--     51	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070090_CASUAL_CHAT_WORKER_LIVE_PAYLOAD_GAP_CHECK_EXACT.md
--     52	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070100_CASUAL_CHAT_WORKER_API_SURFACE_DRAFT.md
--     53	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070100_CASUAL_CHAT_WORKER_LOCAL_ENDPOINT_VALIDATION_RESULT.md
--     54	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070110_CASUAL_CHAT_WORKER_PHASE_O_REAL_API_SWITCH_CONTRACT.md
--     55	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/INDEX.md
--     56	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/OVERVIEW.md
--     57	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
--     58	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080030_CASUAL_CHAT_WORKER_SECURE_BACKEND_RUNTIME_CONFIG.md
--     59	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080040_CASUAL_CHAT_WORKER_REAL_MODE_SECURITY_POLICY_APPEND.md
--     60	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080050_CASUAL_CHAT_WORKER_FRONTEND_SECRET_SCAN_POLICY_RESULT.md
--     61	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080060_CASUAL_CHAT_WORKER_PERSONA_DB_ENV_POLICY.md
--     62	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080070_CASUAL_CHAT_WORKER_PERSONA_DB_EXECUTION_POLICY_REFINED.md
--     63	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080080_CASUAL_CHAT_WORKER_PHASE_O_REAL_MODE_POLICY.md
--     64	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080100_CASUAL_CHAT_WORKER_POLICY.md
--     65	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/INDEX.md
--     66	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/OVERVIEW.md
--     67	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090010_CASUAL_CHAT_WORKER_FREE_TICKET_DDL_FREEZE.md
--     68	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
--     69	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090050_CASUAL_CHAT_WORKER_WORKER_RENTAL_PAYLOAD_GAP_CHECKER_EXACT.md
--     70	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090060_CASUAL_CHAT_WORKER_NONPROD_DB_DRY_RUN_DESIGN.md
--     71	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090070_CASUAL_CHAT_WORKER_NONPROD_ROLLBACK_DRY_RUN_EXECUTION_GATE.md
--     72	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md
--     73	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090090_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_SCHEMA_CANON.md
--     74	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090100_CASUAL_CHAT_WORKER_DB_BOUNDARY.md
--     75	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/20260425_052921_CASUAL_CHAT_WORKER_WORKER_RENTAL_CORE_MAPPING.md
--     76	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/INDEX.md
--     77	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/OVERVIEW.md
--     78	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100010_CASUAL_CHAT_WORKER_PRICING_AND_FREE_TICKET_CONTRACT.md
--     79	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100100_CASUAL_CHAT_WORKER_PRICING_CANON.md
--     80	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/INDEX.md
--     81	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/OVERVIEW.md
--     82	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110020_CASUAL_CHAT_WORKER_AIWORKER_SERIES_TENDENCY_AND_STYLE_FEATURE_ALIGNMENT.md
--     83	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110050_CASUAL_CHAT_WORKER_AIWORKER_SCHEMA_RESPONSIBILITY_BOUNDARY.md
--     84	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110100_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE.md
--     85	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110200_CASUAL_CHAT_WORKER_SERIES_TENDENCY_REFERENCE.md
--     86	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110300_CASUAL_CHAT_WORKER_LOVERS_STYLE_FEATURE_REFERENCE.md
--     87	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/INDEX.md
--     88	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/OVERVIEW.md
--     89	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/120100_CASUAL_CHAT_WORKER_CX_REFERENCE.md
--     90	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/INDEX.md
--     91	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/OVERVIEW.md
--     92	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/130020_CASUAL_CHAT_WORKER_COMMONOS_AIWORKER_CARD_VARIANT.md
--     93	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/130100_CASUAL_CHAT_WORKER_COMMONOS_SELECTION.md
--     94	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/INDEX.md
--     95	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/OVERVIEW.md
--     96	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/140020_CASUAL_CHAT_WORKER_LOVERS_STYLE_SAFETY_NOTICE_ALIGNMENT.md
--     97	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/140100_CASUAL_CHAT_WORKER_FRIEND_LOVER_SAFETY.md
--     98	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/INDEX.md
--     99	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/OVERVIEW.md
--    100	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/150010_CASUAL_CHAT_WORKER_RIVAL_ANALYSIS_AND_DIFF.md
--    101	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/INDEX.md
--    102	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/OVERVIEW.md
--    103	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/160010_CASUAL_CHAT_WORKER_FEATURE_ADDITION_PLAN.md
--    104	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/INDEX.md
--    105	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/OVERVIEW.md
--    106	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md
--    107	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md
--    108	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170030_CASUAL_CHAT_WORKER_REAL_API_CONNECTION_WAITING_GATE.md
--    109	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170040_CASUAL_CHAT_WORKER_BACKEND_REAL_MODE_WAITING_GATE.md
--    110	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170050_CASUAL_CHAT_WORKER_BACKEND_TRANSACTION_REAL_MODE_WAITING_GATE.md
--    111	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170060_CASUAL_CHAT_WORKER_REAL_MODE_FINAL_GATE.md
--    112	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170070_CASUAL_CHAT_WORKER_REAL_MODE_SWITCH_BUNDLE.md
--    113	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170080_CASUAL_CHAT_WORKER_REAL_MODE_PREAPPROVAL_GATE.md
--    114	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170090_CASUAL_CHAT_WORKER_PHASE_N_TO_P_FINAL_GATE.md
--    115	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170110_CASUAL_CHAT_WORKER_PHASE_N_LOCAL_VALIDATION_GATE.md
--    116	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170120_CASUAL_CHAT_WORKER_PHASE_O_STOP_GATE.md
--    117	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170130_CASUAL_CHAT_WORKER_PHASE_N_PERSONA_DB_BOUNDARY_GATE.md
--    118	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170140_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_GATE.md
--    119	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170150_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_BOUNDARY_GATE.md
--    120	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170160_CASUAL_CHAT_WORKER_PHASE_O_REAL_MODE_SWITCH_GATE.md
--    121	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170180_CASUAL_CHAT_WORKER_FINAL_CLOSEOUT_GATE.md
--    122	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/INDEX.md
--    123	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/OVERVIEW.md
--    124	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/180010_CASUAL_CHAT_WORKER_DESIGN_VERIFICATION_GATE.md
--    125	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/INDEX.md
--    126	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/OVERVIEW.md
--    127	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/INDEX.md
--    128	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/OVERVIEW.md
+-      3	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP.md
+-      4	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FULL_APP_DEVELOPMENT_ROADMAP_CURRENT.md
+-      5	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/010010_CASUAL_CHAT_WORKER_FREE_TICKET_INDEX.md
+-      6	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/INDEX.md
+-      7	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/OVERVIEW.md
+-      8	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/020010_CASUAL_CHAT_WORKER_FREE_TICKET_OVERVIEW.md
+-      9	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/INDEX.md
+-     10	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/OVERVIEW.md
+-     11	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/030100_CASUAL_CHAT_WORKER_APP_MODEL.md
+-     12	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/INDEX.md
+-     13	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/OVERVIEW.md
+-     14	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040010_CASUAL_CHAT_WORKER_FREE_TICKET_SCREEN_EXACT.md
+-     15	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040030_CASUAL_CHAT_WORKER_AIWORKER_SERIES_STYLE_UI_ALIGNMENT.md
+-     16	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040100_CASUAL_CHAT_WORKER_SCREEN_MODEL.md
+-     17	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/INDEX.md
+-     18	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/OVERVIEW.md
+-     19	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050010_CASUAL_CHAT_WORKER_FREE_TICKET_STATEFLOW_EXACT.md
+-     20	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050100_CASUAL_CHAT_WORKER_STATEFLOW_MODEL.md
+-     21	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/INDEX.md
+-     22	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/OVERVIEW.md
+-     23	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md
+-     24	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060010_CASUAL_CHAT_WORKER_FREE_TICKET_INTEGRATED_CANONICAL.md
+-     25	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060020_CASUAL_CHAT_WORKER_AIWORKER_LATEST_ALIGNMENT_APPEND.md
+-     26	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060030_CASUAL_CHAT_WORKER_AIWORKER_SERIES_STYLE_UI_INTEGRATED_APPEND.md
+-     27	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060040_CASUAL_CHAT_WORKER_REAL_API_CONNECTION_PREPARATION_APPEND.md
+-     28	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060050_CASUAL_CHAT_WORKER_BACKEND_ENDPOINT_INTEGRATED_APPEND.md
+-     29	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060060_CASUAL_CHAT_WORKER_BACKEND_TRANSACTION_PREPARATION_APPEND.md
+-     30	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060070_CASUAL_CHAT_WORKER_POSTGRES_REPOSITORY_AND_WIRING_APPEND.md
+-     31	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060080_CASUAL_CHAT_WORKER_SECURE_RUNTIME_REAL_MODE_APPEND.md
+-     32	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060090_CASUAL_CHAT_WORKER_NONPROD_DRYRUN_REAL_MODE_PREAPPROVAL_APPEND.md
+-     33	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060100_CASUAL_CHAT_WORKER_INTEGRATION_BOUNDARY.md
+-     34	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060100_CASUAL_CHAT_WORKER_PHASE_N_TO_P_CURRENT_POSITION_APPEND.md
+-     35	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060120_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_STATE_APPEND.md
+-     36	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md
+-     37	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/INDEX.md
+-     38	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/OVERVIEW.md
+-     39	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070010_CASUAL_CHAT_WORKER_FREE_TICKET_API_EXACT.md
+-     40	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070030_CASUAL_CHAT_WORKER_WORKER_RENTAL_REAL_API_CONNECTION_CONTRACT.md
+-     41	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070040_CASUAL_CHAT_WORKER_WORKER_RENTAL_BACKEND_ENDPOINT_EXACT.md
+-     42	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070050_CASUAL_CHAT_WORKER_WORKER_RENTAL_CONFIRM_TRANSACTION_EXACT.md
+-     43	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070060_CASUAL_CHAT_WORKER_WORKER_RENTAL_POSTGRES_REPOSITORY_EXACT.md
+-     44	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070070_CASUAL_CHAT_WORKER_WORKER_RENTAL_HTTP_WIRING_CANDIDATE.md
+-     45	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070080_CASUAL_CHAT_WORKER_ENDPOINT_INTEGRATION_TEST_PLAN.md
+-     46	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070090_CASUAL_CHAT_WORKER_LIVE_PAYLOAD_GAP_CHECK_EXACT.md
+-     47	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070100_CASUAL_CHAT_WORKER_API_SURFACE_DRAFT.md
+-     48	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070100_CASUAL_CHAT_WORKER_LOCAL_ENDPOINT_VALIDATION_RESULT.md
+-     49	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/INDEX.md
+-     50	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/OVERVIEW.md
+-     51	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080020_CASUAL_CHAT_WORKER_BACKEND_AUTH_SESSION_POLICY.md
+-     52	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080030_CASUAL_CHAT_WORKER_SECURE_BACKEND_RUNTIME_CONFIG.md
+-     53	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080040_CASUAL_CHAT_WORKER_REAL_MODE_SECURITY_POLICY_APPEND.md
+-     54	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080050_CASUAL_CHAT_WORKER_FRONTEND_SECRET_SCAN_POLICY_RESULT.md
+-     55	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080100_CASUAL_CHAT_WORKER_POLICY.md
+-     56	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/INDEX.md
+-     57	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/OVERVIEW.md
+-     58	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090010_CASUAL_CHAT_WORKER_FREE_TICKET_DDL_FREEZE.md
+-     59	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090040_CASUAL_CHAT_WORKER_MONTHLY_FREE_TICKET_BACKEND_DESIGN.md
+-     60	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090050_CASUAL_CHAT_WORKER_WORKER_RENTAL_PAYLOAD_GAP_CHECKER_EXACT.md
+-     61	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090060_CASUAL_CHAT_WORKER_NONPROD_DB_DRY_RUN_DESIGN.md
+-     62	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090070_CASUAL_CHAT_WORKER_NONPROD_ROLLBACK_DRY_RUN_EXECUTION_GATE.md
+-     63	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md
+-     64	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090100_CASUAL_CHAT_WORKER_DB_BOUNDARY.md
+-     65	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/20260425_052921_CASUAL_CHAT_WORKER_WORKER_RENTAL_CORE_MAPPING.md
+-     66	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/INDEX.md
+-     67	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/OVERVIEW.md
+-     68	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100010_CASUAL_CHAT_WORKER_PRICING_AND_FREE_TICKET_CONTRACT.md
+-     69	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100100_CASUAL_CHAT_WORKER_PRICING_CANON.md
+-     70	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/INDEX.md
+-     71	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/OVERVIEW.md
+-     72	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110020_CASUAL_CHAT_WORKER_AIWORKER_SERIES_TENDENCY_AND_STYLE_FEATURE_ALIGNMENT.md
+-     73	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110050_CASUAL_CHAT_WORKER_AIWORKER_SCHEMA_RESPONSIBILITY_BOUNDARY.md
+-     74	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110100_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE.md
+-     75	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110200_CASUAL_CHAT_WORKER_SERIES_TENDENCY_REFERENCE.md
+-     76	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110300_CASUAL_CHAT_WORKER_LOVERS_STYLE_FEATURE_REFERENCE.md
+-     77	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/INDEX.md
+-     78	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/OVERVIEW.md
+-     79	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/120100_CASUAL_CHAT_WORKER_CX_REFERENCE.md
+-     80	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/INDEX.md
+-     81	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/OVERVIEW.md
+-     82	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/130020_CASUAL_CHAT_WORKER_COMMONOS_AIWORKER_CARD_VARIANT.md
+-     83	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/130100_CASUAL_CHAT_WORKER_COMMONOS_SELECTION.md
+-     84	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/INDEX.md
+-     85	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/OVERVIEW.md
+-     86	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/140020_CASUAL_CHAT_WORKER_LOVERS_STYLE_SAFETY_NOTICE_ALIGNMENT.md
+-     87	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/140100_CASUAL_CHAT_WORKER_FRIEND_LOVER_SAFETY.md
+-     88	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/INDEX.md
+-     89	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/OVERVIEW.md
+-     90	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/150010_CASUAL_CHAT_WORKER_RIVAL_ANALYSIS_AND_DIFF.md
+-     91	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/INDEX.md
+-     92	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/OVERVIEW.md
+-     93	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/160010_CASUAL_CHAT_WORKER_FEATURE_ADDITION_PLAN.md
+-     94	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/INDEX.md
+-     95	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/OVERVIEW.md
+-     96	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md
+-     97	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md
+-     98	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170030_CASUAL_CHAT_WORKER_REAL_API_CONNECTION_WAITING_GATE.md
+-     99	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170040_CASUAL_CHAT_WORKER_BACKEND_REAL_MODE_WAITING_GATE.md
+-    100	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170050_CASUAL_CHAT_WORKER_BACKEND_TRANSACTION_REAL_MODE_WAITING_GATE.md
+-    101	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170060_CASUAL_CHAT_WORKER_REAL_MODE_FINAL_GATE.md
+-    102	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170070_CASUAL_CHAT_WORKER_REAL_MODE_SWITCH_BUNDLE.md
+-    103	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170080_CASUAL_CHAT_WORKER_REAL_MODE_PREAPPROVAL_GATE.md
+-    104	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170090_CASUAL_CHAT_WORKER_PHASE_N_TO_P_FINAL_GATE.md
+-    105	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170110_CASUAL_CHAT_WORKER_PHASE_N_LOCAL_VALIDATION_GATE.md
+-    106	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170120_CASUAL_CHAT_WORKER_PHASE_O_STOP_GATE.md
+-    107	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170130_CASUAL_CHAT_WORKER_PHASE_N_PERSONA_DB_BOUNDARY_GATE.md
+-    108	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/INDEX.md
+-    109	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/OVERVIEW.md
+-    110	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/180010_CASUAL_CHAT_WORKER_DESIGN_VERIFICATION_GATE.md
+-    111	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/INDEX.md
+-    112	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/OVERVIEW.md
+-    113	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/INDEX.md
+-    114	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/OVERVIEW.md
 
 ---
 
@@ -1166,52 +1148,6 @@ display_name: 雑談ワーカー
 - frontend real mode switch
 - end-to-end real mode acceptance
 - final acceptance package after real mode decision
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Final Index
-
-status: active
-generated_at: 20260426_052059
-
-## 1. App
-
-- app_name: CasualChatWorker
-- display_name: 雑談ワーカー
-- category: 03.business-app
-
-## 2. Canon
-
-- app_code: CasualChatWorker
-- service_code: casual_chat_worker
-- min contract: 30 minutes
-- max contract: 120 minutes
-- monthly free tickets: 2
-- one ticket: 30 minutes
-- monthly ticket rule: shortest_contract_duration
-
-## 3. DB Boundary
-
-- DB target: Persona-side DB
-- DB env: PERSONA_DATABASE_URL
-- business: contract/payment/entitlement/session facts
-- aiworker: AI worker entity/series/personality/safety canon
-- cx22073jw: read-only smalltalk/topic material
-- CommonOS/app_common: presentation only
-
-## 4. Current Closeout
-
-- runtime_state: mock_mode
-- closeout_status: CLOSEOUT_READY_IMPLEMENTATION_PREPARED_REAL_MODE_DISABLED
-
-## 5. Key Design Files
-
-- integrated: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md
-- closeout_append: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060180_CASUAL_CHAT_WORKER_PHASE_P_CLOSEOUT_APPEND.md
-- closeout_gate: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170180_CASUAL_CHAT_WORKER_FINAL_CLOSEOUT_GATE.md
 
 
 
@@ -3788,161 +3724,6 @@ Phase O real mode must not begin until this boundary remains intact.
 <!-- ============================================================ -->
 <!-- ============================================================ -->
 
-# CasualChatWorker Persona DB Boundary Audit Append
-
-status: REVIEW_REQUIRED
-generated_at: 20260425_205110
-
-## 1. Decision
-
-The current DB target for CasualChatWorker / WorkerRentalCore is Persona-side DB.
-
-Use:
-
-- PERSONA_DATABASE_URL
-
-Do not use:
-
-- DATABASE_URL
-- ERP DB path
-
-## 2. Responsibility Correction
-
-- business owns contract/payment/entitlement/session facts
-- aiworker owns AI worker entity/series/personality/safety canon
-- cx22073jw owns read-only smalltalk/topic material
-- app_common/CommonOS owns UI presentation metadata only
-
-## 3. Audit
-
-- audit_summary: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/900.meta/persona-db-boundary-audit/20260425_205110_persona_db_boundary_audit/000_PERSONA_DB_BOUNDARY_AUDIT_SUMMARY.md
-- correction_map: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/900.meta/persona-db-boundary-audit/20260425_205110_persona_db_boundary_audit/050_correction_map.md
-
-## 4. Phase N
-
-Phase N remains current.
-
-Phase O remains STOP until boundary audit is acceptable and validation gates pass.
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Persona DB Boundary Refined Audit Append
-
-status: BLOCKED_FOR_PHASE_N_DRYRUN
-generated_at: 20260425_214235
-
-## 1. Refined Decision
-
-Documentation mentions of DATABASE_URL as a forbidden term are not blockers.
-
-Actual executable use of DATABASE_URL is a blocker.
-
-## 2. Audit Result
-
-- exec_blocker_count: 3
-- frontend_secret_count: 0
-- persona_url_count: 117
-- status: BLOCKED_FOR_PHASE_N_DRYRUN
-
-## 3. Boundary
-
-- DB target: Persona-side DB
-- DB env: PERSONA_DATABASE_URL
-- ERP DATABASE_URL: forbidden for this path
-- business: contract/payment/entitlement/session facts
-- aiworker: AI worker entity/series/personality/safety canon
-- cx22073jw: read-only material
-- CommonOS: presentation only
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Phase O Start Append
-
-status: phase-o-started
-generated_at: 20260425_224836
-
-## 1. Integrated Decision
-
-CasualChatWorker enters Phase O.
-
-Phase O starts with gated frontend real mode switch tooling.
-
-## 2. Current Safe State
-
-- real mode switch script generated
-- rollback script generated
-- readiness verify script generated
-- frontend real mode not automatically enabled
-- DB not executed
-
-## 3. Next
-
-Run verify first.
-
-Then run gated switch only with approval and approved backend URL.
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Phase P Closeout Append
-
-status: CLOSEOUT_READY_IMPLEMENTATION_PREPARED_REAL_MODE_DISABLED
-generated_at: 20260426_052059
-
-## 1. Integrated Decision
-
-CasualChatWorker has reached Phase P closeout.
-
-This closeout records the final implementation-prepared state and preserves the Persona-side DB boundary.
-
-## 2. Whole-App Roadmap State
-
-- Phase A: completed
-- Phase B: completed
-- Phase C: completed
-- Phase D: completed
-- Phase E: Persona-side DB apply / verify path completed
-- Phase F: frontend prototype completed
-- Phase G: AIWorker latest alignment completed
-- Phase H: CX22073JW read-only material completed
-- Phase I: API payload alignment completed
-- Phase J: backend endpoint skeleton completed
-- Phase K: backend transaction preparation completed
-- Phase L: PostgreSQL repository / HTTP wiring completed
-- Phase M: secure runtime / real mode preparation completed
-- Phase N: Persona-side DB boundary / pre-real-mode audit completed as baseline
-- Phase O: real mode switch tooling completed
-- Phase P: final acceptance package completed
-- Phase P-Closeout: final integrated regeneration and handoff index completed
-
-## 3. Runtime State
-
-- runtime_state: mock_mode
-- closeout_status: CLOSEOUT_READY_IMPLEMENTATION_PREPARED_REAL_MODE_DISABLED
-
-## 4. Boundary Retained
-
-- DB target: Persona-side DB
-- DB env: PERSONA_DATABASE_URL
-- ERP DATABASE_URL: not used
-- business: contract / pricing / payment / entitlement / session facts
-- aiworker: AI worker entity / series / personality / safety canon
-- cx22073jw: read-only smalltalk / topic material
-- CommonOS / app_common: presentation metadata only
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
 # 060 Integration INDEX
 
 status: generated
@@ -4732,50 +4513,6 @@ It validates:
 <!-- ============================================================ -->
 <!-- ============================================================ -->
 
-# CasualChatWorker Phase O Real API Switch Contract
-
-status: active
-generated_at: 20260425_224836
-
-## 1. Required Runtime Config
-
-Frontend runtime config must expose only safe values:
-
-- apiMode
-- apiBaseUrl
-- appCode
-- serviceCode
-- allowRealApi
-- canUseRealApi()
-
-## 2. Required API Base URL
-
-The API base URL must point to the approved WorkerRentalCore backend.
-
-It must not be:
-
-- a DB URL
-- a Supabase connection string
-- a secret
-- an ERP DB URL
-
-## 3. Expected Endpoints
-
-- GET /api/v1/business/worker-rental/service/catalog
-- GET /api/v1/business/worker-rental/entitlement/balance
-- POST /api/v1/business/worker-rental/quote
-- POST /api/v1/business/worker-rental/confirm
-- GET /api/v1/business/worker-rental/history
-
-## 4. Required Rejection
-
-- 150-minute quote must be rejected.
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
 # 070 API INDEX
 
 status: generated
@@ -4988,123 +4725,6 @@ Frontend must continue to use safe runtime config only:
 - allowRealApi
 
 Frontend must never contain DB secrets.
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Persona DB Environment Policy
-
-status: active
-generated_at: 20260425_205110
-
-## 1. Environment
-
-Required for DB-connected validation:
-
-- PERSONA_DATABASE_URL
-
-Forbidden:
-
-- DATABASE_URL
-- service_role in frontend
-- supabase_key in frontend
-- psql in frontend
-
-## 2. Meaning
-
-BusinessOS is the app/backend responsibility area.
-
-The database target is Persona-side DB.
-
-Therefore, the business schema referenced by WorkerRentalCore is the Persona-side business schema.
-
-## 3. STOP
-
-Stop if any future command:
-
-- uses DATABASE_URL
-- targets ERP DB
-- writes secrets into frontend
-- treats business as owner of AI worker entity canon
-- treats aiworker as owner of contract/payment facts
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Persona DB Execution Policy Refined
-
-status: active
-generated_at: 20260425_214235
-
-## 1. Execution Blockers
-
-Block Phase N DB-connected validation if any are found:
-
-- psql "$DATABASE_URL"
-- required DATABASE_URL env gate
-- PostgreSQL connectionString using DATABASE_URL
-- frontend DB secret assignment
-- frontend psql usage
-
-## 2. Non-Blockers
-
-The following are allowed in documentation:
-
-- DATABASE_URL listed as forbidden
-- ERP DB path listed as forbidden
-- STOP conditions mentioning DATABASE_URL
-
-## 3. Required
-
-- PERSONA_DATABASE_URL
-- Persona-side DB
-- business schema as Persona-side business schema
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Phase O Real Mode Policy
-
-status: active
-generated_at: 20260425_224836
-
-## 1. Policy
-
-Frontend real mode is a presentation/API-mode switch only.
-
-It must not introduce:
-
-- DB connection strings
-- psql
-- service role keys
-- Supabase keys
-- ERP DATABASE_URL
-- direct browser DB access
-
-## 2. Backend Responsibility
-
-The real API backend is responsible for DB access.
-
-DB target remains:
-
-- Persona-side DB
-
-DB env remains:
-
-- PERSONA_DATABASE_URL
-
-## 3. Schema Responsibility
-
-- business: contract/payment/entitlement/session facts
-- aiworker: AI worker entity/series/personality/safety canon
-- cx22073jw: read-only smalltalk/topic material
-- CommonOS: UI presentation only
 
 
 
@@ -5680,48 +5300,6 @@ Stop if any design or implementation does the following:
 - moves pricing/contract truth into CommonOS
 - puts DB secrets in frontend
 - weakens Lover safety boundary
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Persona DB business / aiworker Schema Canon
-
-status: active
-generated_at: 20260425_205110
-
-## 1. business
-
-business owns:
-
-- contract
-- pricing
-- payment
-- entitlement/free-ticket
-- usage
-- session facts
-- rental history
-
-## 2. aiworker
-
-aiworker owns:
-
-- AI worker entity
-- AI worker model
-- series
-- individual identity
-- personality
-- style
-- conversation control
-- safety boundary
-- app eligibility
-
-## 3. Correct Relationship
-
-CasualChatWorker business rows may reference aiworker ids.
-
-CasualChatWorker business rows must not duplicate aiworker canon.
 
 
 
@@ -7628,154 +7206,6 @@ Phase O remains STOP if any are true:
 - AIWorkerOS canon is copied into business
 - CX22073JW material is copied into business as truth
 - CommonOS absorbs pricing/contract truth
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Persona DB Boundary Audit Gate
-
-status: REVIEW_REQUIRED
-generated_at: 20260425_205110
-
-## 1. Current Phase
-
-- current_phase: Phase N
-- Phase O: STOP
-
-## 2. Required Before DB-Connected Dry-Run
-
-- DB target confirmed as Persona-side DB
-- PERSONA_DATABASE_URL available
-- DATABASE_URL not used
-- business/aiworker/cx22073jw responsibilities remain separated
-
-## 3. Required Before Phase O
-
-- this audit PASS or REVIEW_REQUIRED resolved
-- payload gap PASS
-- auth/session PASS
-- no frontend DB secret
-- 150-minute quote rejected
-- Boss approval
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Persona DB Refined Boundary Gate
-
-status: BLOCKED_FOR_PHASE_N_DRYRUN
-generated_at: 20260425_214235
-
-## 1. Phase
-
-- current_phase: Phase N
-- phase_o_status: STOP
-
-## 2. Gate Result
-
-- exec_blocker_count: 3
-- frontend_secret_count: 0
-- persona_url_count: 117
-
-## 3. Meaning
-
-If status is CLEAR_FOR_PHASE_N_DECISION, the next decision may be the Persona-side DB rollback dry-run.
-
-If status is BLOCKED_FOR_PHASE_N_DRYRUN, repair blockers first.
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Phase O Real Mode Switch Gate
-
-status: active
-generated_at: 20260425_224836
-
-## 1. Gate
-
-Phase O is started, but real mode is not automatically enabled.
-
-## 2. Required Switch Conditions
-
-- Boss approval expressed by CCW_APPROVE_PHASE_O_REAL_MODE_SWITCH=1
-- approved backend URL in CCW_REAL_API_BASE_URL
-- frontend secret scan PASS
-- real mode preflight PASS
-- payload contract remains CasualChatWorker / casual_chat_worker
-- 120-minute cap remains
-- shortest_contract_duration remains monthly free ticket rule
-
-## 3. Runtime Values After Approved Switch
-
-- apiMode: real
-- allowRealApi: true
-- apiBaseUrl: approved backend URL
-- appCode: CasualChatWorker
-- serviceCode: casual_chat_worker
-
-## 4. Rollback Values
-
-- apiMode: mock
-- allowRealApi: false
-- apiBaseUrl: empty string
-
-## 5. STOP
-
-Stop if any are true:
-
-- DATABASE_URL is placed in frontend
-- PERSONA_DATABASE_URL is placed in frontend
-- psql appears in frontend
-- service_role appears in frontend
-- supabase_key appears in frontend
-- backend URL is empty
-- Lover safety boundary is weakened
-- CasualChatWorker max exceeds 120 minutes
-
-
-
-<!-- ============================================================ -->
-<!-- ============================================================ -->
-
-# CasualChatWorker Final Closeout Gate
-
-status: CLOSEOUT_READY_IMPLEMENTATION_PREPARED_REAL_MODE_DISABLED
-generated_at: 20260426_052059
-
-## 1. Gate Meaning
-
-This gate marks CasualChatWorker as closed out at implementation-prepared final acceptance state.
-
-## 2. Runtime Interpretation
-
-- runtime_state: mock_mode
-
-If runtime_state is mock_mode:
-
-- app is final-accepted as implementation-prepared.
-- real-mode production acceptance remains a separate later operation.
-
-If runtime_state is real_mode_enabled:
-
-- app is ready for real endpoint acceptance review.
-
-## 3. STOP Conditions After Closeout
-
-Do not proceed if any future change:
-
-- uses ERP DATABASE_URL for WorkerRentalCore
-- puts DB secrets in frontend
-- duplicates aiworker canon into business
-- copies CX22073JW material into business truth
-- changes CasualChatWorker max beyond 120 minutes
-- changes monthly ticket rule away from shortest_contract_duration
-- weakens Lover safety boundary
 
 
 

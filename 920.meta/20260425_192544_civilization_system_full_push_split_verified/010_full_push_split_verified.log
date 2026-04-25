@@ -25,3 +25,40 @@ M	920.meta/20260425_192137_civilization_full_push_move_large_files/010_full_push
 PASS: no working-tree file over 100MB
 ------------------------------------------------------------
 [git add all CivilizationSystem]
+------------------------------------------------------------
+[verify staged files: no >100MB]
+PASS: no staged file over 100MB
+------------------------------------------------------------
+[staged diff stat]
+ ...VILIZATION_FULL_PUSH_MOVE_LARGE_FILES_REPORT.md |    48 +
+ .../010_full_push_move_large_files.log             | 11552 ++++++++++++++++++
+ .../040_staged_files.txt                           | 12066 +++++++++++++++++++
+ .../010_full_push_split_verified.log               |    27 +
+ .../020_large_files_over_100mb.txt                 |     0
+ .../exclude.tmp                                    |     6 +
+ 6 files changed, 23699 insertions(+)
+------------------------------------------------------------
+[git commit]
+[main ad7723c8] Push CivilizationSystem updates after integrated master split
+ 6 files changed, 23699 insertions(+)
+ create mode 100644 920.meta/20260425_192137_civilization_full_push_move_large_files/000_CIVILIZATION_FULL_PUSH_MOVE_LARGE_FILES_REPORT.md
+ create mode 100644 920.meta/20260425_192137_civilization_full_push_move_large_files/040_staged_files.txt
+ create mode 100644 920.meta/20260425_192544_civilization_system_full_push_split_verified/010_full_push_split_verified.log
+ create mode 100644 920.meta/20260425_192544_civilization_system_full_push_split_verified/020_large_files_over_100mb.txt
+ create mode 100644 920.meta/20260425_192544_civilization_system_full_push_split_verified/exclude.tmp
+------------------------------------------------------------
+[git push]
+To github.com:lsassetmng-art/01.civilization-system.git
+   357a83b2..ad7723c8  main -> main
+============================================================
+CivilizationSystem full push after split verification DONE
+============================================================
+RESULT       : PUSH_DONE
+BACKUP_BRANCH: backup/civilization-before-full-push-split-verified-20260425_192544
+REPORT      : /data/data/com.termux/files/home/01.civilization-system/920.meta/20260425_192544_civilization_system_full_push_split_verified/000_CIVILIZATION_SYSTEM_FULL_PUSH_SPLIT_VERIFIED_REPORT.md
+LOG         : /data/data/com.termux/files/home/01.civilization-system/920.meta/20260425_192544_civilization_system_full_push_split_verified/010_full_push_split_verified.log
+============================================================
+DB WRITE: NOT EXECUTED
+RLS APPLY: NOT EXECUTED
+LIVE AIWORKEROS CALL: NOT EXECUTED
+============================================================

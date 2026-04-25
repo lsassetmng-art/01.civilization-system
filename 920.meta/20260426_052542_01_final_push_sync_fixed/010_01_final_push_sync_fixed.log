@@ -1,0 +1,55 @@
+============================================================
+01.civilization-system final push sync FIXED START
+============================================================
+REPO_ROOT: /data/data/com.termux/files/home/01.civilization-system
+BRANCH: main
+------------------------------------------------------------
+[fetch]
+------------------------------------------------------------
+[verify no working-tree file over 100MB]
+PASS: no working-tree file over 100MB
+------------------------------------------------------------
+[status before add]
+ M 07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md
+ M 07.applications/03.business-app/CasualChatWorker/060.integration/060120_CASUAL_CHAT_WORKER_PHASE_N_LOCKED_STATE_APPEND.md
+ M 07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170120_CASUAL_CHAT_WORKER_PHASE_O_STOP_GATE.md
+ M 07.applications/03.business-app/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+ M 920.meta/20260425_192544_civilization_system_full_push_split_verified/010_full_push_split_verified.log
+?? 07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_FINAL_INDEX.md
+?? 07.applications/03.business-app/CasualChatWorker/060.integration/060130_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_BOUNDARY_APPEND.md
+?? 07.applications/03.business-app/CasualChatWorker/060.integration/060140_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_APPEND.md
+?? 07.applications/03.business-app/CasualChatWorker/060.integration/060150_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_REFINED_AUDIT_APPEND.md
+?? 07.applications/03.business-app/CasualChatWorker/060.integration/060160_CASUAL_CHAT_WORKER_PHASE_O_START_APPEND.md
+?? 07.applications/03.business-app/CasualChatWorker/060.integration/060180_CASUAL_CHAT_WORKER_PHASE_P_CLOSEOUT_APPEND.md
+?? 07.applications/03.business-app/CasualChatWorker/070.api/070110_CASUAL_CHAT_WORKER_PHASE_O_REAL_API_SWITCH_CONTRACT.md
+?? 07.applications/03.business-app/CasualChatWorker/080.policy/080060_CASUAL_CHAT_WORKER_PERSONA_DB_ENV_POLICY.md
+?? 07.applications/03.business-app/CasualChatWorker/080.policy/080070_CASUAL_CHAT_WORKER_PERSONA_DB_EXECUTION_POLICY_REFINED.md
+?? 07.applications/03.business-app/CasualChatWorker/080.policy/080080_CASUAL_CHAT_WORKER_PHASE_O_REAL_MODE_POLICY.md
+?? 07.applications/03.business-app/CasualChatWorker/090.db/090080_CASUAL_CHAT_WORKER_PERSONA_DB_SCHEMA_RESPONSIBILITY_BOUNDARY.md
+?? 07.applications/03.business-app/CasualChatWorker/090.db/090090_CASUAL_CHAT_WORKER_PERSONA_DB_BUSINESS_AIWORKER_SCHEMA_CANON.md
+?? 07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110050_CASUAL_CHAT_WORKER_AIWORKER_SCHEMA_RESPONSIBILITY_BOUNDARY.md
+?? 07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170130_CASUAL_CHAT_WORKER_PHASE_N_PERSONA_DB_BOUNDARY_GATE.md
+?? 07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170140_CASUAL_CHAT_WORKER_PERSONA_DB_BOUNDARY_AUDIT_GATE.md
+?? 07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170150_CASUAL_CHAT_WORKER_PERSONA_DB_REFINED_BOUNDARY_GATE.md
+?? 07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170160_CASUAL_CHAT_WORKER_PHASE_O_REAL_MODE_SWITCH_GATE.md
+?? 07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170180_CASUAL_CHAT_WORKER_FINAL_CLOSEOUT_GATE.md
+?? 07.applications/03.business-app/CasualChatWorker/900.meta/20260425_204912_integrated_source_list_after_persona_db_boundary.txt
+?? 07.applications/03.business-app/CasualChatWorker/900.meta/20260426_052059_final_integrated_source_list.txt
+?? 07.applications/03.business-app/CasualChatWorker/900.meta/persona-db-boundary-audit/
+?? 07.applications/03.business-app/CasualChatWorker/900.meta/persona-db-boundary-refined-audit/
+?? 07.applications/03.business-app/CasualChatWorker/999.archive/20260425_204912_00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md
+?? 07.applications/03.business-app/CasualChatWorker/999.archive/20260426_052059_00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.before_closeout.md
+?? 07.applications/03.business-app/NameCardManager/000_INDEX.md
+?? 07.applications/03.business-app/NameCardManager/110.exact/
+?? 07.applications/03.business-app/NameCardManager/900.meta/20260426_052204_namecardmanager_phase4_exact_design_fixed/
+?? 920.meta/20260425_192544_civilization_system_full_push_split_verified/000_CIVILIZATION_SYSTEM_FULL_PUSH_SPLIT_VERIFIED_REPORT.md
+?? 920.meta/20260425_192544_civilization_system_full_push_split_verified/030_staged_files.txt
+?? 920.meta/20260425_224922_03_development_md_design_audit/
+?? 920.meta/20260425_225339_03_development_md_fast_audit/
+?? 920.meta/20260425_225752_03_md_cleanup_apply/
+?? 920.meta/20260425_225937_03_commonos_test_cleanup_and_git_push/
+?? 920.meta/20260426_052343_03_implementation_push_verify/
+?? 920.meta/20260426_052542_01_final_push_sync_fixed/
+?? 920.migration-inbox/
+------------------------------------------------------------
+[git add all 01.civilization-system]
