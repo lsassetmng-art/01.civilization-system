@@ -1,0 +1,4 @@
+1|edge_apply|120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md|status=pending|decision=pending
+2|state_apply|120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md|status=pending|decision=pending
+3|builder_api|120.implementation/1200700002_PERSONA_BUILDER_API_SPEC.md|status=pending|decision=pending
+4|builder_storage|120.implementation/1200700003_PERSONA_BUILDER_STORAGE_MAPPING.md|status=pending|decision=pending

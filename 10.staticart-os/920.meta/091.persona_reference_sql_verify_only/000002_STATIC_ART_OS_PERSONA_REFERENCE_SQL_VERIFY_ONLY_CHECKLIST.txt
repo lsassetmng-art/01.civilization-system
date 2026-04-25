@@ -1,0 +1,38 @@
+OK  | sql file exists
+OK  | assumption note exists
+OK  | BEGIN exists
+OK  | COMMIT exists
+OK  | required table present -> staticart.asset_creator_persona_ref
+OK  | required table present -> staticart.asset_creator_signed_snapshot_ref
+OK  | required table present -> staticart.asset_public_display_snapshot_ref
+OK  | required table present -> staticart.asset_exhibition_display_snapshot_ref
+OK  | required table present -> staticart.asset_persona_applied_snapshot_history
+OK  | required table present -> staticart.asset_local_view_config
+OK  | required table present -> staticart.asset_creator_display_projection
+OK  | forbidden table not created -> staticart.persona_core
+OK  | forbidden table not created -> staticart.persona_profile
+OK  | forbidden table not created -> staticart.persona_state
+OK  | forbidden table not created -> staticart.persona_emotion
+OK  | forbidden table not created -> staticart.persona_growth
+OK  | forbidden table not created -> staticart.persona_memory
+OK  | forbidden table not created -> staticart.persona_signature
+OK  | forbidden table not created -> staticart.persona_revocation
+OK  | forbidden table not created -> staticart.persona_rights
+OK  | forbidden table not created -> staticart.persona_contract
+OK  | internal FK to asset_creator_persona_ref present -> asset_creator_signed_snapshot_ref
+OK  | internal FK to asset_creator_persona_ref present -> asset_public_display_snapshot_ref
+OK  | internal FK to asset_creator_persona_ref present -> asset_exhibition_display_snapshot_ref
+OK  | internal FK to asset_creator_persona_ref present -> asset_persona_applied_snapshot_history
+OK  | internal FK to asset_creator_persona_ref present -> asset_local_view_config
+OK  | internal FK to asset_creator_persona_ref present -> asset_creator_display_projection
+OK  | check constraint present -> ck_asset_creator_persona_ref_relationship_role
+OK  | check constraint present -> ck_asset_creator_signed_snapshot_ref_target_surface
+OK  | check constraint present -> ck_asset_public_display_snapshot_ref_display_mode
+OK  | check constraint present -> ck_asset_exhibition_display_snapshot_ref_display_mode
+OK  | check constraint present -> ck_asset_persona_applied_snapshot_history_target_surface
+OK  | check constraint present -> ck_asset_local_view_config_json_object
+OK  | check constraint present -> ck_asset_creator_display_projection_target_surface
+OK  | index count looks sufficient -> 18
+OK  | table comments present -> 7
+OK  | signed-snapshot-consumption wording present
+OK  | persona boundary wording present

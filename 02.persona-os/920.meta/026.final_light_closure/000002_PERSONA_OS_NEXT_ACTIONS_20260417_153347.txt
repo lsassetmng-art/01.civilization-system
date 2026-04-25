@@ -1,0 +1,4 @@
+1. Replace high-priority provisional stubs with authored domain-specific content.
+2. Convert remaining exact-ready drafts into exact payload / state / storage fixed documents where needed.
+3. Run one final integrated canonical rebuild only after content replacement is sufficiently complete.
+4. Defer any DB-side implementation until Persona-side design freeze is accepted.

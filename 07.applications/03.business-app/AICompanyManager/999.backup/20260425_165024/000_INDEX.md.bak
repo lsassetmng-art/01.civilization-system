@@ -1,0 +1,97 @@
+# ============================================================
+# AICompanyManager INDEX
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase J
+status: offline-queue-ux-created
+owner: Boss
+prepared_by: Zero
+
+## 1. Purpose
+
+AICompanyManager is a business-app for operating an AI company from a human-facing application.
+
+Human gives policy to President.
+President creates business plan.
+Manager breaks it into domains and actions.
+Leader breaks actions into deliverables and tasks.
+Worker executes tasks and creates outputs.
+Leader reviews and integrates.
+Manager reviews.
+President performs final review.
+Human approves and receives delivery.
+
+## 2. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 3. Current Completion
+
+Phase A:
+- app skeleton completed
+
+Phase B:
+- DB / API / State exact design completed
+
+Phase C:
+- DB DDL Design Review Package completed
+
+Phase D:
+- DB apply preparation package completed
+
+Phase E Persona DB:
+- PERSONA_DATABASE_URL apply executed
+- reserved word fix completed
+- current_role_code fixed
+
+Phase F:
+- Persona-side RLS exact policy design completed
+- RLS apply not executed
+
+Phase G-Gate:
+- RLS apply gate created
+- RLS apply not executed
+
+Phase H:
+- BusinessOS implementation skeleton created
+
+Phase I:
+- API client mock wiring completed
+- AIWorkerOS bridge mock wiring completed
+- local queue event wiring completed
+
+Phase J:
+- offline-first queue UX completed
+- retry presentation completed
+- conflict presentation completed
+- CommonOS sync presenter mapping completed
+- smoke check passed
+
+## 4. Latest Phase J Documents
+
+| file | purpose |
+|---|---|
+| 900_PHASE_J_ROADMAP.md | Phase J roadmap |
+| 910_OFFLINE_QUEUE_UX_DESIGN.md | offline queue UX design |
+| 990_PHASE_J_COMPLETION_REPORT.md | Phase J report |
+| 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | integrated design |
+
+## 5. Implementation Root
+
+~/03.civilization-development/03.business-os/AICompanyManager
+
+## 6. Next Phase
+
+Phase K:
+- review board UI completion
+- delivery board UI completion
+- human approval panel
+- return request panel

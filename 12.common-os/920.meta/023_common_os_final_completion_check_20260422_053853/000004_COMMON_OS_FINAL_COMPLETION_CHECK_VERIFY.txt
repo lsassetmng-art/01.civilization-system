@@ -1,0 +1,9 @@
+FINAL_RESULT=PASS
+PASS_COUNT=49
+FAIL_COUNT=0
+WARN_COUNT=0
+REPORT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/023_common_os_final_completion_check_20260422_053853/000001_COMMON_OS_FINAL_COMPLETION_CHECK_REPORT.md
+RESULT_TXT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/023_common_os_final_completion_check_20260422_053853/000002_COMMON_OS_FINAL_COMPLETION_CHECK_RESULT.txt
+MISSING_TXT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/023_common_os_final_completion_check_20260422_053853/000003_COMMON_OS_FINAL_COMPLETION_CHECK_MISSING.txt
+TREE_FILE=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/023_common_os_final_completion_check_20260422_053853/000005_COMMON_OS_TREE_MAXDEPTH2.txt
+VERIFY=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/023_common_os_final_completion_check_20260422_053853/000004_COMMON_OS_FINAL_COMPLETION_CHECK_VERIFY.txt

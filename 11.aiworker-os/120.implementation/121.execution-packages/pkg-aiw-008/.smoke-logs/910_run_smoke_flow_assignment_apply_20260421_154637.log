@@ -1,0 +1,19 @@
+============================================================
+PKG-AIW-008 SMOKE FLOW ASSIGNMENT APPLY
+============================================================
+ fn_prepare_smoke_assignment_reset 
+-----------------------------------
+ 
+(1 row)
+
+ success_flag | result_code | aiworker_status_code | summary_code | state_family_code | old_state_code | new_state_code |          related_entity_id           |               event_id               |          emitted_at           |           lineage_key            
+--------------+-------------+----------------------+--------------+-------------------+----------------+----------------+--------------------------------------+--------------------------------------+-------------------------------+----------------------------------
+ t            | OK_APPLIED  | APPLIED              | SUM_APPLIED  | ASSIGNMENT        | UNASSIGNED     | ASSIGNED       | f73f03a7-bc51-6b5b-930a-01684bc390dc | 90f3fb6e-ed12-8bcc-77c0-5045f5517b15 | 2026-04-21 06:46:39.696776+00 | 6b84e556e615d202384b58d8ed245ddc
+(1 row)
+
+------------------------------------------------------------
+CURRENT ASSIGNMENT STATE FOR SMOKE WORKER
+71000000-0000-0000-0000-000000001001|ASSIGNED|aiworker_smoke_scope
+============================================================
+PKG-AIW-008 SMOKE FLOW ASSIGNMENT APPLY FINISHED
+============================================================

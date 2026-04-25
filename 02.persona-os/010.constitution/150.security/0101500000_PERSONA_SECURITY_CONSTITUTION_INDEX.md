@@ -1,13 +1,9 @@
-# ============================================================
-# PERSONA SECURITY CONSTITUTION INDEX
-# ============================================================
+# 0101500000_PERSONA_SECURITY_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: security
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA SECURITY CONSTITUTION documents.
+directory: 010.constitution/150.security
+
+- 0101500001_PERSONA_SECURITY_CONSTITUTION.md
+- 0101500001_PERSONA_SECURITY_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

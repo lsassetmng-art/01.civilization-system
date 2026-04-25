@@ -1,0 +1,72 @@
+============================================================
+PKG-AIW-008 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 through PKG-AIW-007 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-008
+============================================================
+BEGIN
+DO
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+COMMIT
+BEGIN
+INSERT 0 1
+INSERT 0 1
+UPDATE 0
+INSERT 0 1
+UPDATE 0
+INSERT 0 1
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+UPDATE 0
+INSERT 0 2
+UPDATE 0
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+COMMIT
+BEGIN
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+============================================================
+PKG-AIW-008 APPLY TEMPLATE FINISHED
+============================================================

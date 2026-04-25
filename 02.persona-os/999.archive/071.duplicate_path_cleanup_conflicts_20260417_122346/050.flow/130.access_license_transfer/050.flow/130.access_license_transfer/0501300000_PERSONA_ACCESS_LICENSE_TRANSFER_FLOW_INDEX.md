@@ -1,0 +1,8 @@
+# 0501300000_PERSONA_ACCESS_LICENSE_TRANSFER_FLOW_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 050.flow/130.access_license_transfer/050.flow/130.access_license_transfer
+
+- 0501300001_PERSONA_ACCESS_LICENSE_TRANSFER_FLOW_OVERVIEW.md
+- 0501300002_PERSONA_LICENSE_ACCESS_TRANSFER_FLOW.md

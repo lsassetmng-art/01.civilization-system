@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona authority structures.
+Defines the implementation design for Civilization-side persona authority structures.
 
 # 2. IMPLEMENTATION TARGETS
 

@@ -1,0 +1,283 @@
+# COMMON OS DEVELOPMENT INTEGRATED
+
+status: canonical
+system: CommonOS
+layer: development
+generated_at: 2026-04-21T20:25:49+0900
+source_root: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development
+
+## Integration scope
+This integrated file combines the current development-layer canon of CommonOS, including app_common metadata governance workflow.
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000000_COMMON_OS_DEVELOPMENT_INDEX.md -->
+<!-- ============================================================ -->
+
+# COMMON OS DEVELOPMENT INDEX
+
+status: canonical
+layer: development
+
+## Documents
+- 000000_COMMON_OS_DEVELOPMENT_INDEX.md
+- 000001_COMMON_OS_DEVELOPMENT_OVERVIEW.md
+- 000010_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md
+- 000020_COMMON_OS_ADOPTION_REVIEW_WORKFLOW_CANONICAL.md
+- 000030_COMMON_OS_CHANGE_INTRODUCTION_POLICY_CANONICAL.md
+
+## Application common component development subsystem
+
+### Canonical development reading path
+1. 000040_APPLICATION_COMMON_COMPONENT_ADOPTION_REVIEW_POLICY_CANONICAL.md
+2. 000050_APPLICATION_COMMON_COMPONENT_WAVE_PROMOTION_POLICY_CANONICAL.md
+3. 000060_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_ROLLOUT_ORDER_CANONICAL.md
+4. 000070_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_INTAKE_POLICY_CANONICAL.md
+
+### Notes
+These documents define how CommonOS reviews, promotes, sequences, and operationally absorbs application common component families from origin evidence into active development use.
+
+## app_common metadata governance subsystem
+
+### Canonical development reading path
+1. 000080_APP_COMMON_METADATA_CHANGE_CONTROL_CANONICAL.md
+2. 000090_APP_COMMON_METADATA_REVIEW_AND_PUBLISH_WORKFLOW_CANONICAL.md
+3. 000100_APP_COMMON_VERSIONING_DEPRECATION_AND_EFFECTIVE_WINDOW_CANONICAL.md
+
+### Notes
+These development documents define how app_common metadata changes are proposed, reviewed, published, versioned, and deprecated.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000001_COMMON_OS_DEVELOPMENT_OVERVIEW.md -->
+<!-- ============================================================ -->
+
+# COMMON OS DEVELOPMENT OVERVIEW
+
+status: canonical
+layer: development
+
+## Purpose
+This layer defines how CommonOS changes are proposed, reviewed, adopted, and introduced.
+
+## Scope
+- workflow
+- adoption review
+- change introduction policy
+
+## Application common component development subsystem overview
+
+### Position
+The architecture layer decides what belongs in canon. The implementation layer decides what gets built. The development layer decides how adoption review, wave promotion, rollout order, and origin evidence intake are operationally governed.
+
+### Scope
+- adoption review gate
+- wave promotion conditions
+- rollout sequencing
+- origin evidence intake discipline
+- rejection and hold handling
+
+### Operational meaning
+A component can be canonical without being implemented. Development policy governs when it moves from accepted design to active rollout.
+
+## app_common metadata governance subsystem overview
+
+### Position
+The development layer governs how app_common metadata changes move from draft to reviewed and then to published active usage.
+
+### Scope
+- additive change control
+- review and publish workflow
+- versioning and deprecation discipline
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000010_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS DEVELOPMENT WORKFLOW CANONICAL
+
+status: canonical
+layer: development
+
+## Workflow
+1. Declare roadmap and current phase
+2. Propose CommonOS change
+3. Validate scope against domain-boundary rules
+4. Review for reuse value and boundary safety
+5. Implement additively
+6. Verify against adoption targets
+7. Publish updated canon
+
+## Rule
+CommonOS changes must improve shared reuse without stealing domain ownership.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000020_COMMON_OS_ADOPTION_REVIEW_WORKFLOW_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS ADOPTION REVIEW WORKFLOW CANONICAL
+
+status: canonical
+layer: development
+
+## Adoption review steps
+1. Identify target surface
+2. Check fit against CommonOS scope
+3. Confirm that domain truth remains domain-owned
+4. Confirm that secrets and authority stay server-side
+5. Approve shared adoption or reject with reason
+
+## Review focus
+- reuse value
+- boundary correctness
+- implementation practicality
+- ERP applicability where relevant
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000030_COMMON_OS_CHANGE_INTRODUCTION_POLICY_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS CHANGE INTRODUCTION POLICY CANONICAL
+
+status: canonical
+layer: development
+
+## Policy
+- prefer additive introduction
+- prefer variant extension before branching
+- preserve compatibility where practical
+- document migration when naming changes
+- keep CommonOS names canonical for new assets
+
+## Rule
+Legacy references may remain as historical sources, but new canonical assets must use CommonOS terminology.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000080_APP_COMMON_METADATA_CHANGE_CONTROL_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APP_COMMON METADATA CHANGE CONTROL CANONICAL
+
+status: canonical
+system: CommonOS
+layer: development
+schema: app_common
+
+## Purpose
+This document defines how app_common metadata changes must be introduced.
+
+## Core rule
+Prefer additive change over destructive mutation.
+
+## Change control rules
+- add new rows or new versions before retiring old rows
+- avoid destructive overwrite of historically meaningful reviewed records
+- document meaning-changing updates
+- keep logical code stable where family identity is stable
+- use version_no to express reviewed canonical evolution
+- keep active / effective transitions explicit
+
+## Not allowed without strong reason
+- silent meaning changes on active rows
+- direct destructive replacement without transition plan
+- mixing internal draft content into published active rows
+- using metadata change as a backdoor for domain business canon
+
+## Required notes for significant changes
+- what changed
+- why it changed
+- compatibility impact
+- rollout intent
+- deprecation effect, if any
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000090_APP_COMMON_METADATA_REVIEW_AND_PUBLISH_WORKFLOW_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APP_COMMON METADATA REVIEW AND PUBLISH WORKFLOW CANONICAL
+
+status: canonical
+system: CommonOS
+layer: development
+schema: app_common
+
+## Purpose
+This document defines the operational workflow from draft metadata to reviewed and published metadata.
+
+## Workflow
+1. draft metadata is created
+2. review_pending is assigned when ready for review
+3. reviewer validates boundary, naming, and publication safety
+4. row becomes reviewed when accepted
+5. publisher controls is_active and effective window
+6. published metadata becomes readable by approved client-facing paths
+
+## Review focus
+- CommonOS boundary fit
+- naming quality
+- metadata safety
+- client publication safety
+- compatibility with existing active metadata
+- deprecation / transition need
+
+## Publishing rule
+Publishing is not a separate truth outside the row. Publishing is represented operationally by:
+- review_status reviewed
+- is_active true
+- active effective window
+- inclusion in approved read path
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000100_APP_COMMON_VERSIONING_DEPRECATION_AND_EFFECTIVE_WINDOW_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APP_COMMON VERSIONING DEPRECATION AND EFFECTIVE WINDOW CANONICAL
+
+status: canonical
+system: CommonOS
+layer: development
+schema: app_common
+
+## Purpose
+This document defines versioning, deprecation, and effective-window discipline for app_common metadata.
+
+## Versioning rules
+- preserve logical family identity through code
+- use version_no for reviewed canonical revision
+- prefer new row for meaningfully changed metadata
+- preserve history where it improves auditability and migration clarity
+
+## Deprecation rules
+A row may be deprecated when:
+- a newer reviewed version supersedes it
+- rollout has moved to replacement metadata
+- it should remain visible for historical or migration reference
+
+## Retirement rules
+A row may be retired when:
+- it no longer needs operational visibility
+- migration is complete
+- no supported surface depends on it
+
+## Effective-window rules
+- use effective_from for planned activation
+- use effective_to for planned end of active life
+- do not use effective windows to model domain business validity
+- use them only for metadata publication timing
+
+## Compatibility rule
+Where possible, overlap old and new metadata during transition instead of forcing abrupt destructive replacement.
+

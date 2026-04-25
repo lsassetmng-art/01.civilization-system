@@ -1,0 +1,4 @@
+1|edge_apply|first_wave|event intake and terminal feedback|120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+2|state_apply|first_wave|canonical truth mutation and transition control|120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
+3|builder_api|first_wave|authoring contract and publish gate|120.implementation/1200700002_PERSONA_BUILDER_API_SPEC.md
+4|builder_storage|first_wave|draft or validation persistence mapping|120.implementation/1200700003_PERSONA_BUILDER_STORAGE_MAPPING.md

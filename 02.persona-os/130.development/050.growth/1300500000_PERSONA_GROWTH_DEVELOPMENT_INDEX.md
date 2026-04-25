@@ -1,20 +1,8 @@
-# ============================================================
-# PERSONA GROWTH DEVELOPMENT INDEX
-# ============================================================
+# 1300500000_PERSONA_GROWTH_DEVELOPMENT_INDEX
 
-status: canonical
-layer: development
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH DEVELOPMENT documents.
+directory: 130.development/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-1300500000_PERSONA_GROWTH_DEVELOPMENT_INDEX.md
-1300500001_PERSONA_GROWTH_DEVELOPMENT_OVERVIEW.md
+- 1300500001_PERSONA_GROWTH_DEVELOPMENT_OVERVIEW.md
+- 130.development/

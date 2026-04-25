@@ -1,0 +1,41 @@
+PASS: integrated file exists
+PASS: source count > 0: 105
+PASS: term found: CasualChatWorker
+PASS: term found: 雑談ワーカー
+PASS: term found: Phase N
+PASS: term found: Phase O
+PASS: term found: Phase P
+PASS: term found: WorkerRentalCore
+PASS: term found: 120 minutes
+PASS: term found: shortest_contract_duration
+PASS: term found: rollback dry-run
+PASS: term found: real mode
+PASS: term found: frontend real mode
+PASS: term found: ビジネスヤンデレ
+PASS: term found: CommonOS
+PASS: term found: cx22073jw
+PASS: term found: aiworker
+PASS: term found: 佐藤
+PASS: archive path excluded
+PASS: 900.meta path excluded
+PASS: 920.meta path excluded
+
+# Summary
+
+status: PASS
+generated_at: 20260425_165850
+
+counts:
+- PASS_COUNT: 21
+- FAIL_COUNT: 0
+- WARN_COUNT: 0
+
+integrated_file:
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/00_CASUAL_CHAT_WORKER_INTEGRATED_DESIGN.md
+
+source_list:
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/900.meta/20260425_165850_casual_chat_worker_integrated_source_list.txt
+
+source_file_count:
+- 105
+

@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA SNAPSHOT RUNTIME INDEX
-# ============================================================
+# 0400900000_PERSONA_SNAPSHOT_RUNTIME_INDEX
 
-status: canonical
-layer: runtime
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA SNAPSHOT RUNTIME documents.
+directory: 040.runtime/090.snapshot
 
-# ============================================================
-# FILES
-# ============================================================
-
-0400900000_PERSONA_SNAPSHOT_RUNTIME_INDEX.md
-0400900001_PERSONA_SNAPSHOT_RUNTIME_OVERVIEW.md
-0400900002_PERSONA_SNAPSHOT_ISSUE_RUNTIME.md
+- 0400900001_PERSONA_SNAPSHOT_RUNTIME_OVERVIEW.md
+- 0400900002_PERSONA_SNAPSHOT_ISSUE_RUNTIME.md
+- 040.runtime/

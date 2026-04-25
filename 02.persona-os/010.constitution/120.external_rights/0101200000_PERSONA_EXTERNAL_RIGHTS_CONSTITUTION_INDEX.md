@@ -1,0 +1,8 @@
+# 0101200000_PERSONA_EXTERNAL_RIGHTS_CONSTITUTION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/120.external_rights
+
+- 0101200001_PERSONA_EXTERNAL_RIGHTS_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

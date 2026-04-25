@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA PACKAGE INTERFACE INDEX
-# ============================================================
+# 0901000000_PERSONA_PACKAGE_INTERFACE_INDEX
 
-status: canonical
-layer: interface
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA PACKAGE INTERFACE documents.
+directory: 090.interface/100.package
 
-# ============================================================
-# FILES
-# ============================================================
-
-0901000000_PERSONA_PACKAGE_INTERFACE_INDEX.md
-0901000001_PERSONA_PACKAGE_INTERFACE_OVERVIEW.md
-0901000002_PERSONA_PACKAGE_ASSEMBLY_INTERFACE.md
+- 0901000001_PERSONA_PACKAGE_INTERFACE_OVERVIEW.md
+- 0901000002_PERSONA_PACKAGE_ASSEMBLY_INTERFACE.md
+- 090.interface/

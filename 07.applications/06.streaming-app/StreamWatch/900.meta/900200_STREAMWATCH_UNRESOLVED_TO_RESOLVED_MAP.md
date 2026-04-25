@@ -2,32 +2,38 @@
 # STREAMWATCH UNRESOLVED TO RESOLVED MAP
 # ============================================================
 
-status: draft-canonical
+status: canonical-meta
+layer: meta
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Tracks which formerly open questions were resolved and what final rule replaced each unresolved topic.
+This document maps previously unresolved design points to final resolved rules.
 
-## 2. Fixed Inputs
+## 2. Resolution Map
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+### Navigation density
+Resolved as Library-centered mobile navigation.
 
-## 3. Design Direction
+### Favorites versus watch later storage
+Resolved as protected-playlist interpretation in phase 1.
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+### Continuity subject
+Resolved as viewer_profile.
 
-## 4. Current Status
+### Purchase entry
+Resolved as allowed in both Civilization and StreamWatch.
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+### Membership join location
+Resolved as allowed in both Civilization and StreamWatch.
+
+### Playback unlock model
+Resolved as entitlement grant rather than direct file drop.
+
+### TV behavior
+Resolved as handoff versus same-device large-screen split.

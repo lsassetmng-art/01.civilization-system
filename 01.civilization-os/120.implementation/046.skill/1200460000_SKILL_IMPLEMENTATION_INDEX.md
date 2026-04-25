@@ -17,3 +17,20 @@ files:
 - 1200460005_SKILL_BOUNDARY_IMPLEMENTATION.md
 - 1200460006_SKILL_VALIDATION_IMPLEMENTATION.md
 - 1200460007_SKILL_FAILURE_IMPLEMENTATION.md
+
+## Exact Skill Certification Boundary
+## Exact Skill Certification Boundary
+
+Skill implementation must explicitly distinguish:
+
+- acquisition
+- proficiency
+- progression
+- decay or loss
+
+Skill truth is not identical to certification truth.
+
+## Exact Skill Progress Boundary
+
+Quest, reward, education, or work outcomes may influence skill,
+but skill progression remains its own canonical surface.

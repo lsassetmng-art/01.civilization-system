@@ -1,0 +1,9 @@
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000100_APPLICATION_COMMON_COMPONENT_INDEX.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000101_APPLICATION_COMMON_COMPONENT_OVERVIEW.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000110_APPLICATION_COMMON_COMPONENT_OFFICIAL_REVIEW_CANONICAL.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000120_APPLICATION_COMMON_COMPONENT_STATIC_ART_ORIGIN_REVIEW.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000130_APPLICATION_COMMON_COMPONENT_STATIC_ART_REFLECTION_CANONICAL.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000140_APPLICATION_COMMON_COMPONENT_CURRENT_STATE_SUMMARY.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000150_APPLICATION_COMMON_COMPONENT_CATALOG_CURRENT_WAVE_CANONICAL.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000160_APPLICATION_COMMON_COMPONENT_LATER_WAVE_HOLD_CANONICAL.md
+CREATED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/00_APPLICATION_COMMON_COMPONENT_INTEGRATED.md

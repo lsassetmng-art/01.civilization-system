@@ -1,0 +1,73 @@
+# ============================================================
+# AICompanyManager Phase B Roadmap
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase B
+status: exact-design-started
+owner: Boss
+prepared_by: Zero
+
+## 1. Current Position
+
+Phase A で以下を作成済み。
+
+- アプリ骨格設計
+- 事業フロー正本
+- レビュー・差し戻しフロー正本
+- 納品・承認フロー正本
+- President / Manager / Leader / Worker 操作モデル
+- AIWorkerOS / BusinessOS / CommonOS 境界
+- 初期統合版
+
+Phase B では、実装前に必要な exact design を固定する。
+
+## 2. Phase B Scope
+
+Phase B の対象は以下。
+
+- BusinessOS 側 DB exact design
+- AIWorkerOS bridge API exact payload
+- app-side API exact payload
+- state enum canon
+- local queue exact payload
+- audit / history model
+- error / retry / conflict policy
+- Phase B 統合版再生成
+
+## 3. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 4. Design Boundary
+
+AICompanyManager は business-app である。
+AI 社員実体、AI 社員成長、AI パイプライン内部実行は AIWorkerOS 側に残す。
+
+AICompanyManager 側は以下を正本として持つ。
+
+- 人間方針
+- 事業案件
+- 運用状態
+- レビュー表示
+- 差し戻し履歴
+- 承認履歴
+- 納品履歴
+- 人間操作ログ
+- app-side queue meaning
+
+## 5. Phase B Completion Conditions
+
+- DB exact design が文書化される
+- API request / response payload が固定される
+- pipeline / review / approval / delivery state が固定される
+- local queue payload が固定される
+- audit log model が固定される
+- 実装に進むための Phase C 前提ができる

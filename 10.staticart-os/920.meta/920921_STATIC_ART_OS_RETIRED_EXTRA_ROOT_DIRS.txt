@@ -1,0 +1,11 @@
+000.index -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/000.index
+010.overview -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/010.overview
+060.reference-integration -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/060.reference-integration
+120.exactness -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/120.exactness
+121.db-implementation-prep -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/121.db-implementation-prep
+122.api-implementation-prep -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/122.api-implementation-prep
+123.ui-implementation-prep -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/123.ui-implementation-prep
+124.test-implementation-prep -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/124.test-implementation-prep
+131.implementation-roadmap -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/131.implementation-roadmap
+132.operations -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/132.operations
+999.summary -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/999.archive/root-structure-retired/20260419_180721/999.summary

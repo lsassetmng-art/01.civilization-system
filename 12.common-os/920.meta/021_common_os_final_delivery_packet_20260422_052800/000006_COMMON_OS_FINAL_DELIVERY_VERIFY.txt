@@ -1,0 +1,11 @@
+RUN_DIR=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/021_common_os_final_delivery_packet_20260422_052800
+REPORT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/021_common_os_final_delivery_packet_20260422_052800/000001_COMMON_OS_FINAL_DELIVERY_REPORT.md
+MANIFEST=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/021_common_os_final_delivery_packet_20260422_052800/000002_COMMON_OS_FINAL_DELIVERY_MANIFEST.txt
+POINTERS=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/021_common_os_final_delivery_packet_20260422_052800/000003_COMMON_OS_FINAL_DELIVERY_POINTERS.md
+HASHES=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/021_common_os_final_delivery_packet_20260422_052800/000004_COMMON_OS_FINAL_DELIVERY_SHA256.txt
+TREE_FILE=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/021_common_os_final_delivery_packet_20260422_052800/000005_COMMON_OS_FINAL_DELIVERY_TREE_MAXDEPTH2.txt
+MANIFEST_COUNT=27
+HASH_COUNT=27
+TREE_COUNT=247
+REPORT_LINES=48
+POINTER_LINES=28

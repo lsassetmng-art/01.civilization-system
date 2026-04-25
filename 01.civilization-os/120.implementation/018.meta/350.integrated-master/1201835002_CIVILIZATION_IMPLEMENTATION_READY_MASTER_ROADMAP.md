@@ -395,3 +395,440 @@ CivilizationOS is promoted through seven controlled bundles into
 a full implementation-ready system.
 
 This roadmap is the official master execution route for that promotion.
+
+## Bundle Completion Outputs
+## Bundle Completion Outputs
+
+Bundle completion must flow into the following meta outputs:
+
+- implementation completion ledger
+- implementation freeze manifest
+- integrated implementation-ready declaration
+
+A bundle is not considered fully closed until its outputs can be
+represented in the ledger without unresolved blockers.
+
+## Final Integrated Gate
+
+Final integrated implementation-ready declaration is allowed only when:
+
+- bundle 1 through bundle 7 are complete
+- unresolved blockers are zero
+- unresolved bridge entries are zero
+- cross-domain contradiction is zero
+- reviewed-action bypass is zero
+
+## Post Implementation-Ready DB Preparation Phase
+## Post Implementation-Ready DB Preparation Phase
+
+After implementation-ready documentation reaches audit completeness,
+the next preparation phase is DB registration preparation.
+
+This phase includes:
+
+1. DDL dependency ordering
+2. enum and code master ordering
+3. seed and fixture ordering
+4. verify checklist preparation
+5. rollback and repair preparation
+6. Persona / ERP boundary preparation
+7. Termux execution preparation
+
+No actual DB execution should begin before this preparation phase is complete.
+
+## Persona Integration Canonicalization Phase
+## Persona Integration Canonicalization Phase
+
+Persona integration preparation is considered complete only when all of the following exist:
+
+1. boundary rule
+2. event contract master
+3. purchase / grant / revoke / world_event / life_event contract set
+4. receive-side acceptance outcome contract
+5. receive-side receipt and apply result contract
+6. signed snapshot consumption contract
+7. direct-update abolition rule
+8. local scan report for hard direct-write candidates
+
+This phase must complete before any implementation path attempts Persona integration execution.
+
+## Execution Phase 1 Entry
+## Execution Phase 1 Entry
+
+After preimplementation packs are complete, CivilizationOS enters execution phase 1.
+
+Execution phase 1 consists of:
+
+1. common implementation foundation scope
+2. common-foundation DB preparation subset
+3. phase 1 verify and exit judgment
+
+Only after phase 1 passes should the next execution slice be selected.
+
+## Execution Phase 1 Block Preparation Entry
+## Execution Phase 1 Block Preparation Entry
+
+Before any actual phase 1 execution starts, CivilizationOS must define:
+
+1. block catalog
+2. file-generation block preparation
+3. DB block preparation
+4. verify/report block preparation
+
+Only after these are fixed should actual execution blocks be authored.
+
+## Execution Phase 1 Slot Reservation Entry
+## Execution Phase 1 Slot Reservation Entry
+
+Before actual execution block authoring begins,
+CivilizationOS must first fix:
+
+1. execution block naming convention
+2. output directory rule
+3. report and manifest naming rule
+4. reserved phase 1 block slots
+
+Only after these are fixed should real phase 1 blocks be authored.
+
+## Execution Phase 1 Final Gate Entry
+## Execution Phase 1 Final Gate Entry
+
+After scope, DB subset, verify rules, block categories, naming, and slot controls are fixed,
+CivilizationOS must pass one final entry gate before authoring actual phase 1 blocks.
+
+That gate consists of:
+1. entry checklist
+2. scope lock
+3. environment declaration checklist
+4. go/no-go judgment
+
+## Phase 1 Reserved Slot Entry
+## Phase 1 Reserved Slot Entry
+
+After naming, output, and entry-gate controls are fixed,
+CivilizationOS may reserve the future phase 1 block slots.
+
+Only after reservation and final go/no-go may actual block authoring begin.
+
+## Phase 1 Integrated Status Checkpoint
+## Phase 1 Integrated Status Checkpoint
+
+Before actual phase 1 block authoring starts,
+CivilizationOS should have one integrated status checkpoint
+that summarizes all phase 1 preparation artifacts and gate conditions.
+
+## Phase 1 Final Authoring Roadmap Entry
+## Phase 1 Final Authoring Roadmap Entry
+
+After integrated status is fixed, CivilizationOS should produce one final phase 1 roadmap
+covering:
+1. authoring sequence
+2. stop rule
+3. phase 2 handoff rule
+4. integrated final roadmap
+
+Only after this set is fixed should actual block authoring begin.
+
+## Design Return Roadmap Entry
+## Design Return Roadmap Entry
+
+The current roadmap reorients CivilizationOS from execution continuation
+to design completion.
+
+The next active order is:
+1. VERIFY_001 exact design
+2. REPORT_001 exact design
+3. phase-1 close exact design
+4. phase-2 candidate exact design
+
+## Verify Report Exact Design Entry
+## Verify Report Exact Design Entry
+
+The current roadmap now includes the exact design of:
+
+1. VERIFY_001_FOUNDATION_SCOPE
+2. REPORT_001_FOUNDATION_EXIT
+3. phase-1 exit judgment schema
+
+This is the immediate design priority after design return.
+
+## DBPREP And Phase2 Exact Design Entry
+## DBPREP And Phase2 Exact Design Entry
+
+The current roadmap now includes the exact design of:
+
+1. DBPREP exact structure
+2. phase2 candidate exact shape
+3. phase1-to-phase2 transition condition
+
+These are immediate design priorities after verify/report exact design.
+
+## Phase1 Close Exact Design Entry
+## Phase1 Close Exact Design Entry
+
+The current roadmap now includes the exact design of:
+
+1. phase1 close criteria
+2. phase1 close blocker classification
+3. phase1 close decision report schema
+4. close/resume/transition decision matrix
+
+This is the natural next design step after DBPREP and phase2 exact design.
+
+## Phase1 Close Recommendation And Phase2 Narrowing Entry
+## Phase1 Close Recommendation And Phase2 Narrowing Entry
+
+The current roadmap now includes the exact design of:
+
+1. final phase1 close recommendation posture
+2. phase2 narrowing rule
+3. narrowed phase2 candidate proposal
+4. close/hold/transition recommendation matrix
+
+This is the natural next step after phase1 close exact design.
+
+## Final Close And Transition Recommendation Entry
+## Final Close And Transition Recommendation Entry
+
+The current roadmap now includes the exact design of:
+
+1. final phase1 close recommendation report
+2. explicit transition-readiness recommendation
+3. recommendation field mapping
+4. recommendation matrix
+
+This is the natural next step after phase1 close recommendation and phase2 narrowing.
+
+## Final Close Decision And Phase2 Entry Entry
+## Final Close Decision And Phase2 Entry Entry
+
+The current roadmap now includes the exact design of:
+
+1. final phase1 close decision report
+2. phase2 entry package
+3. phase2 entry gate
+4. phase2 first package output contract
+
+This is the natural next step after final recommendation design.
+
+## Final Decision Pack Entry
+## Final Decision Pack Entry
+
+The current roadmap now includes the canonical decision documents themselves:
+
+1. phase1 final close decision report
+2. phase2 entry decision memo
+3. phase1-to-phase2 decision summary
+
+This is the natural next step after the exact-design packs.
+
+## Decision Revision And Reconsideration Governance Entry
+## Decision Revision And Reconsideration Governance Entry
+
+The current roadmap now includes governance for:
+
+1. decision revision
+2. phase1 reopen
+3. execution resume reconsideration
+4. phase2 entry reconsideration
+5. decision update ledgering
+
+This is the natural next step after the final decision pack.
+
+## Handoff And Future Use Pack Entry
+## Handoff And Future Use Pack Entry
+
+The current roadmap now includes the handoff layer for future use:
+
+1. canonical posture handoff
+2. update and reconsideration templates
+3. future-use navigation
+
+This is the natural next step after the governance pack.
+
+## Baseline Freeze And Successor Pack Entry
+## Baseline Freeze And Successor Pack Entry
+
+The current roadmap now includes the stabilization layer for:
+
+1. baseline freeze
+2. baseline snapshot
+3. successor triggers
+4. future session start protocol
+5. final canonical navigation
+
+## Archive Maintenance And Supersession Pack Entry
+## Archive Maintenance And Supersession Pack Entry
+
+The current roadmap now includes the long-term stabilization layer for:
+
+1. supersession mapping
+2. archive boundary
+3. maintenance protocol
+4. audit trigger catalog
+5. operator quick checklist
+
+## Final Closure And Operator Entry Pack Entry
+## Final Closure And Operator Entry Pack Entry
+
+The current roadmap now includes the final operator-facing layer for:
+
+1. design closure certificate
+2. active canonical surface inventory
+3. operator entrypoint master
+4. minimum change control set
+5. current posture one-page
+
+## Traceability And Integrity Pack Entry
+## Traceability And Integrity Pack Entry
+
+The current roadmap now includes the traceability and integrity layer for:
+
+1. traceability mapping
+2. provenance registration
+3. dependency mapping
+4. integrity audit
+5. correction and errata control
+
+## Steady State And Change Initiation Pack Entry
+## Steady State And Change Initiation Pack Entry
+
+The current roadmap now includes the behavioral operating layer for:
+
+1. steady-state operating mode
+2. valid change initiation scenarios
+3. governed initiation checklist
+4. decision tree from no-change to governed change
+5. no-change default posture
+
+## Cross Session Continuity And Onboarding Pack Entry
+## Cross Session Continuity And Onboarding Pack Entry
+
+The current roadmap now includes the continuity and onboarding layer for:
+
+1. cross-session continuity
+2. new operator onboarding
+3. quick canonical Q&A
+4. escalation and owner decision path
+5. portable reference bundle
+
+## Posture Restoration And Recovery Pack Entry
+## Posture Restoration And Recovery Pack Entry
+
+The current roadmap now includes the recovery layer for:
+
+1. posture restoration
+2. drift detection
+3. recovery decision tree
+4. minimum restoration bundle
+5. wrong-start recovery protocol
+
+## Canonical Usage And Anti Shortcut Pack Entry
+## Canonical Usage And Anti Shortcut Pack Entry
+
+The current roadmap now includes the usage-discipline layer for:
+
+1. canonical usage contract
+2. prohibited shortcut catalog
+3. semantic vs non-semantic action classifier
+4. pre-action gate
+5. safe default refusal
+
+## Conformance And Deviation Control Pack Entry
+## Conformance And Deviation Control Pack Entry
+
+The current roadmap now includes the conformance-control layer for:
+
+1. canonical conformance rule
+2. deviation classification
+3. self-check gate
+4. violation response protocol
+5. exception handling boundary
+
+## Request Intake And Routing Pack Entry
+## Request Intake And Routing Pack Entry
+
+The current roadmap now includes the request-intake layer for:
+
+1. intake rule
+2. classification matrix
+3. routing matrix
+4. insufficient-context handling
+5. outcome contract
+
+## Request Resolution And Closure Pack Entry
+## Request Resolution And Closure Pack Entry
+
+The current roadmap now includes the request-resolution layer for:
+
+1. resolution rule
+2. routed completion matrix
+3. unresolved handling
+4. closure and follow-up contract
+5. post-resolution handoff
+
+## Request Lifecycle And Ledger Pack Entry
+## Request Lifecycle And Ledger Pack Entry
+
+The current roadmap now includes the request-history layer for:
+
+1. lifecycle rule
+2. state transition matrix
+3. ledger schema
+4. replay and history rule
+5. case reference summary rule
+
+## Request Portfolio And Priority Pack Entry
+## Request Portfolio And Priority Pack Entry
+
+The current roadmap now includes the multi-request governance layer for:
+
+1. portfolio governance
+2. queue state model
+3. priority classification
+4. queue admission and deferral
+5. portfolio review and rebalance
+
+## Request Dependency And Overlap Pack Entry
+## Request Dependency And Overlap Pack Entry
+
+The current roadmap now includes the inter-request relation layer for:
+
+1. request dependency rule
+2. duplicate and near-duplicate control
+3. overlap and conflict matrix
+4. merge / split / supersession control
+5. blocked-by dependency handling
+
+## Request Aging And Escalation Pack Entry
+## Request Aging And Escalation Pack Entry
+
+The current roadmap now includes the time-based waiting-control layer for:
+
+1. request aging rule
+2. stale case detection
+3. escalation trigger rule
+4. aging review and refresh
+5. stale response contract
+
+## Portfolio Closure And No New Open Pack Entry
+## Portfolio Closure And No New Open Pack Entry
+
+The current roadmap now includes the late-stage portfolio settlement layer for:
+
+1. portfolio closure rule
+2. no-new-open rule
+3. late-entry exception gate
+4. closure review
+5. closure freeze after settlement
+
+## Final Completion And Stop Pack Entry
+## Final Completion And Stop Pack Entry
+
+The current roadmap now includes the absolute final layer for:
+
+1. final completion certificate
+2. absolute stop rule
+3. final canonical ledger
+4. final reentry gate
+5. final end-state one-page summary

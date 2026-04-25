@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona snapshots.
+Defines the implementation design for Civilization-side persona snapshot consumption structures.
 
 # 2. IMPLEMENTATION TARGETS
 
@@ -48,3 +48,12 @@ Canonical structures:
 - version/hash audit
 - release-state visibility
 
+
+## Exact Snapshot Representation Boundary
+## Exact Snapshot Representation Boundary
+
+Snapshot representation is a derived or signed public surface.
+
+It is not a second mutable canon.
+It is not a cache promoted into canonical mutable authority.
+It is not permission for direct Persona-side mutation from CivilizationOS.

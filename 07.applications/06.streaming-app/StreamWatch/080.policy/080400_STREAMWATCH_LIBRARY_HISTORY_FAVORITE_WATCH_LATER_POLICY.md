@@ -2,32 +2,40 @@
 # STREAMWATCH LIBRARY HISTORY FAVORITE WATCH LATER POLICY
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: policy
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines the semantic separation among history, favorites, watch later, playlists, and queue inside StreamWatch.
+This document defines the semantic distinction among library domains.
 
-## 2. Fixed Inputs
+## 2. Definitions
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+### Favorites
+Strong keep or preference intent.
 
-## 3. Design Direction
+### Watch Later
+Deferred-viewing intent.
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+### History
+Watched fact.
 
-## 4. Current Status
+### Playlist
+Named ordered list.
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+### Queue
+Immediate next-up execution context.
+
+## 3. Policy Rule
+
+These domains must remain distinct even when some phase-1 storage uses shared playlist-based interpretation.
+
+## 4. Final Policy Rule
+
+Library meaning matters more than storage convenience.

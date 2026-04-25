@@ -1,0 +1,9 @@
+103850:- previous Beyond management-count wording
+103906:Do not use public management-count wording as the primary difference.
+103926:Do not use management-count wording as the public differentiation.
+103951:Beyond Series differentiates models by work quality level, not by public management-count claims.
+103997:Do not use management-count wording as the public differentiation.
+105456:Do not use management count as the public differentiation.
+105470:- previous Beyond management-count reference surface wording
+105514:Do not use management count as the public differentiation.
+106186:Do not use management-count wording as the public difference for Beyond Leaders.

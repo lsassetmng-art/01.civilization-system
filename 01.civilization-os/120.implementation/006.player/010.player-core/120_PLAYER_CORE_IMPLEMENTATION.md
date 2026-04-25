@@ -81,3 +81,22 @@ At minimum, the layer should expose:
 - dependency linkage
 - failure and suppression reasons
 
+
+## Exact Player Identity Surface
+## Exact Player Identity Surface
+
+Every player implementation topic must declare:
+
+- player_id
+- principal_id
+- subject_id
+- session_id
+- session_state
+- sanction_state
+- permission_binding_ref
+
+## Exact Player / Persona Separation
+
+Player permission governs external control surface.
+Persona authority governs in-world executable role.
+Neither may silently substitute for the other.

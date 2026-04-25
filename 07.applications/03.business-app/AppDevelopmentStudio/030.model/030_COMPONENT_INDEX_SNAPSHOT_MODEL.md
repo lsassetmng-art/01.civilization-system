@@ -15,3 +15,5 @@ minimum_fields:
 - timestamps
 - relations
 - notes
+
+- 030510_APPDEVELOPMENTSTUDIO_DEVELOPMENT_CONTROL_TIMELINE_MODEL.md

@@ -1,0 +1,971 @@
+openapi: 3.1.0
+
+info:
+  title: StaticArtOS API
+  version: 0.1.0
+  summary: StaticArtOS implementation-ready OpenAPI skeleton
+  description: >
+    Canonical API skeleton for StaticArtOS.
+    This file is the OpenAPI entry point for implementation.
+
+servers:
+  - url: /api/v1/staticart
+    description: StaticArtOS API v1
+
+tags:
+  - name: assets
+  - name: files
+  - name: rights
+  - name: sales
+  - name: subscription
+  - name: review
+  - name: publish
+  - name: entitlement
+  - name: library
+  - name: continuity
+  - name: projection
+  - name: internal
+
+security:
+  - bearerAuth: []
+
+paths:
+  /assets:
+    post:
+      tags: [assets]
+      summary: Create asset draft
+      operationId: createStaticArtAsset
+      parameters:
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetCreateRequest'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetCreateResponse'
+        '400':
+          $ref: '#/components/responses/Error400'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}:
+    get:
+      tags: [assets]
+      summary: Get asset detail
+      operationId: getStaticArtAssetDetail
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+      responses:
+        '200':
+          description: Asset detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetDetailResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '404':
+          $ref: '#/components/responses/Error404'
+
+  /assets/{asset_id}/localizations/{language_code}:
+    put:
+      tags: [assets]
+      summary: Upsert asset localization
+      operationId: upsertStaticArtLocalization
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/LanguageCode'
+        - $ref: '#/components/parameters/XRequestId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LocalizationWriteRequest'
+      responses:
+        '200':
+          description: Localization updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LocalizationWriteResponse'
+        '400':
+          $ref: '#/components/responses/Error400'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}/rights-policy:
+    put:
+      tags: [rights]
+      summary: Update rights policy
+      operationId: updateStaticArtRightsPolicy
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RightsPolicyWriteRequest'
+      responses:
+        '200':
+          description: Rights policy updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RightsPolicyWriteResponse'
+        '400':
+          $ref: '#/components/responses/Error400'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '422':
+          $ref: '#/components/responses/Error422'
+
+  /assets/{asset_id}/sales-offer:
+    put:
+      tags: [sales]
+      summary: Update sales offer
+      operationId: updateStaticArtSalesOffer
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SalesOfferWriteRequest'
+      responses:
+        '200':
+          description: Sales offer updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SalesOfferWriteResponse'
+        '400':
+          $ref: '#/components/responses/Error400'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '422':
+          $ref: '#/components/responses/Error422'
+
+  /assets/{asset_id}/subscription-rule:
+    put:
+      tags: [subscription]
+      summary: Update subscription rule
+      operationId: updateStaticArtSubscriptionRule
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionRuleWriteRequest'
+      responses:
+        '200':
+          description: Subscription rule updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionRuleWriteResponse'
+        '400':
+          $ref: '#/components/responses/Error400'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '422':
+          $ref: '#/components/responses/Error422'
+
+  /assets/{asset_id}:run-self-check:
+    post:
+      tags: [review]
+      summary: Run self check
+      operationId: runStaticArtSelfCheck
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SelfCheckRequest'
+      responses:
+        '200':
+          description: Self check result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SelfCheckResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '422':
+          $ref: '#/components/responses/Error422'
+
+  /assets/{asset_id}/review-requests:
+    post:
+      tags: [review]
+      summary: Create review request
+      operationId: createStaticArtReviewRequest
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReviewRequestCreateRequest'
+      responses:
+        '201':
+          description: Review request created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReviewRequestCreateResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '422':
+          $ref: '#/components/responses/Error422'
+
+  /review-requests/{review_request_id}:decide:
+    post:
+      tags: [review]
+      summary: Decide review request
+      operationId: decideStaticArtReview
+      parameters:
+        - $ref: '#/components/parameters/ReviewRequestId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReviewDecisionRequest'
+      responses:
+        '200':
+          description: Review decision stored
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReviewDecisionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '404':
+          $ref: '#/components/responses/Error404'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}:publish-marketplace:
+    post:
+      tags: [publish]
+      summary: Publish asset to marketplace
+      operationId: publishStaticArtMarketplace
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PublishActionRequest'
+      responses:
+        '200':
+          description: Published to marketplace
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublishActionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '422':
+          $ref: '#/components/responses/Error422'
+
+  /assets/{asset_id}:publish-library-only:
+    post:
+      tags: [publish]
+      summary: Publish asset to library only
+      operationId: publishStaticArtLibraryOnly
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PublishActionRequest'
+      responses:
+        '200':
+          description: Published to library only
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublishActionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '422':
+          $ref: '#/components/responses/Error422'
+
+  /assets/{asset_id}:delist:
+    post:
+      tags: [publish]
+      summary: Delist asset
+      operationId: delistStaticArtAsset
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StateActionRequest'
+      responses:
+        '200':
+          description: Asset delisted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StateActionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}:restrict:
+    post:
+      tags: [publish]
+      summary: Restrict asset
+      operationId: restrictStaticArtAsset
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StateActionRequest'
+      responses:
+        '200':
+          description: Asset restricted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RestrictActionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}:archive:
+    post:
+      tags: [publish]
+      summary: Archive asset
+      operationId: archiveStaticArtAsset
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StateActionRequest'
+      responses:
+        '200':
+          description: Asset archived
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StateActionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}/entitlement:
+    get:
+      tags: [entitlement]
+      summary: Get effective entitlement
+      operationId: getStaticArtEntitlement
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+      responses:
+        '200':
+          description: Entitlement snapshot
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntitlementResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '404':
+          $ref: '#/components/responses/Error404'
+
+  /assets/{asset_id}:create-access-session:
+    post:
+      tags: [entitlement]
+      summary: Create access session
+      operationId: createStaticArtAccessSession
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccessSessionRequest'
+      responses:
+        '200':
+          description: Access session created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessSessionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '404':
+          $ref: '#/components/responses/Error404'
+
+  /library:
+    get:
+      tags: [library]
+      summary: Get library items
+      operationId: getStaticArtLibrary
+      parameters:
+        - $ref: '#/components/parameters/Cursor'
+        - $ref: '#/components/parameters/Limit'
+      responses:
+        '200':
+          description: Library list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LibraryListResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+
+  /library/continue-reading:
+    get:
+      tags: [continuity]
+      summary: Get continue reading list
+      operationId: getStaticArtContinueReading
+      parameters:
+        - $ref: '#/components/parameters/Cursor'
+        - $ref: '#/components/parameters/Limit'
+      responses:
+        '200':
+          description: Continue reading list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LibraryListResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+
+  /library/continue-viewing:
+    get:
+      tags: [continuity]
+      summary: Get continue viewing list
+      operationId: getStaticArtContinueViewing
+      parameters:
+        - $ref: '#/components/parameters/Cursor'
+        - $ref: '#/components/parameters/Limit'
+      responses:
+        '200':
+          description: Continue viewing list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LibraryListResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+
+  /assets/{asset_id}/reader-progress:
+    put:
+      tags: [continuity]
+      summary: Save reader progress
+      operationId: saveStaticArtReaderProgress
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReaderProgressRequest'
+      responses:
+        '200':
+          description: Reader progress saved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReaderProgressResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}/viewer-progress:
+    put:
+      tags: [continuity]
+      summary: Save viewer progress
+      operationId: saveStaticArtViewerProgress
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ViewerProgressRequest'
+      responses:
+        '200':
+          description: Viewer progress saved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ViewerProgressResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+
+  /assets/{asset_id}/favorite:
+    post:
+      tags: [library]
+      summary: Add favorite
+      operationId: addStaticArtFavorite
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      responses:
+        '200':
+          description: Favorite already exists or idempotent replay
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FavoriteResponse'
+        '201':
+          description: Favorite added
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FavoriteResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+    delete:
+      tags: [library]
+      summary: Remove favorite
+      operationId: deleteStaticArtFavorite
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+      responses:
+        '200':
+          description: Favorite removed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FavoriteResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+
+  /assets/{asset_id}/annotations:
+    post:
+      tags: [continuity]
+      summary: Create annotation
+      operationId: createStaticArtAnnotation
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AnnotationCreateRequest'
+      responses:
+        '201':
+          description: Annotation created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnnotationCreateResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+
+  /assets/{asset_id}/exhibition-projection:
+    get:
+      tags: [projection]
+      summary: Get exhibition projection
+      operationId: getStaticArtExhibitionProjection
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+      responses:
+        '200':
+          description: Exhibition projection
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExhibitionProjectionResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '404':
+          $ref: '#/components/responses/Error404'
+
+  /assets/{asset_id}:refresh-projections:
+    post:
+      tags: [projection]
+      summary: Refresh projections
+      operationId: refreshStaticArtProjections
+      parameters:
+        - $ref: '#/components/parameters/AssetId'
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProjectionRefreshRequest'
+      responses:
+        '202':
+          description: Projection refresh queued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectionRefreshResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+
+  /internal/purchases:reflect:
+    post:
+      tags: [internal]
+      summary: Reflect purchase grant
+      operationId: reflectStaticArtPurchase
+      parameters:
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PurchaseReflectRequest'
+      responses:
+        '200':
+          description: Purchase reflected
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PurchaseReflectResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '503':
+          $ref: '#/components/responses/Error503'
+
+  /internal/subscriptions:reflect:
+    post:
+      tags: [internal]
+      summary: Reflect subscription event
+      operationId: reflectStaticArtSubscription
+      parameters:
+        - $ref: '#/components/parameters/XRequestId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionReflectRequest'
+      responses:
+        '200':
+          description: Subscription reflected
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionReflectResponse'
+        '401':
+          $ref: '#/components/responses/Error401'
+        '403':
+          $ref: '#/components/responses/Error403'
+        '409':
+          $ref: '#/components/responses/Error409'
+        '503':
+          $ref: '#/components/responses/Error503'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    XRequestId:
+      name: X-Request-Id
+      in: header
+      required: true
+      schema:
+        type: string
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: true
+      schema:
+        type: string
+    AssetId:
+      name: asset_id
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    ReviewRequestId:
+      name: review_request_id
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    LanguageCode:
+      name: language_code
+      in: path
+      required: true
+      schema:
+        type: string
+    Cursor:
+      name: cursor
+      in: query
+      required: false
+      schema:
+        type: string
+    Limit:
+      name: limit
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 30
+
+  responses:
+    Error400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorEnvelope'
+    Error401:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorEnvelope'
+    Error403:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorEnvelope'
+    Error404:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorEnvelope'
+    Error409:
+      description: Conflict
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorEnvelope'
+    Error422:
+      description: Unprocessable Entity
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorEnvelope'
+    Error503:
+      description: Service Unavailable
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorEnvelope'
+
+  schemas:
+    Meta:
+      $ref: './components/staticart.common.schemas.yaml#/Meta'
+    ErrorEnvelope:
+      $ref: './components/staticart.common.schemas.yaml#/ErrorEnvelope'
+    AssetCreateRequest:
+      $ref: './components/staticart.common.schemas.yaml#/AssetCreateRequest'
+    AssetCreateResponse:
+      $ref: './components/staticart.common.schemas.yaml#/AssetCreateResponse'
+    AssetDetailResponse:
+      $ref: './components/staticart.common.schemas.yaml#/AssetDetailResponse'
+    LocalizationWriteRequest:
+      $ref: './components/staticart.common.schemas.yaml#/LocalizationWriteRequest'
+    LocalizationWriteResponse:
+      $ref: './components/staticart.common.schemas.yaml#/LocalizationWriteResponse'
+    RightsPolicyWriteRequest:
+      $ref: './components/staticart.common.schemas.yaml#/RightsPolicyWriteRequest'
+    RightsPolicyWriteResponse:
+      $ref: './components/staticart.common.schemas.yaml#/RightsPolicyWriteResponse'
+    SalesOfferWriteRequest:
+      $ref: './components/staticart.common.schemas.yaml#/SalesOfferWriteRequest'
+    SalesOfferWriteResponse:
+      $ref: './components/staticart.common.schemas.yaml#/SalesOfferWriteResponse'
+    SubscriptionRuleWriteRequest:
+      $ref: './components/staticart.common.schemas.yaml#/SubscriptionRuleWriteRequest'
+    SubscriptionRuleWriteResponse:
+      $ref: './components/staticart.common.schemas.yaml#/SubscriptionRuleWriteResponse'
+    SelfCheckRequest:
+      $ref: './components/staticart.common.schemas.yaml#/SelfCheckRequest'
+    SelfCheckResponse:
+      $ref: './components/staticart.common.schemas.yaml#/SelfCheckResponse'
+    ReviewRequestCreateRequest:
+      $ref: './components/staticart.common.schemas.yaml#/ReviewRequestCreateRequest'
+    ReviewRequestCreateResponse:
+      $ref: './components/staticart.common.schemas.yaml#/ReviewRequestCreateResponse'
+    ReviewDecisionRequest:
+      $ref: './components/staticart.common.schemas.yaml#/ReviewDecisionRequest'
+    ReviewDecisionResponse:
+      $ref: './components/staticart.common.schemas.yaml#/ReviewDecisionResponse'
+    PublishActionRequest:
+      $ref: './components/staticart.common.schemas.yaml#/PublishActionRequest'
+    PublishActionResponse:
+      $ref: './components/staticart.common.schemas.yaml#/PublishActionResponse'
+    StateActionRequest:
+      $ref: './components/staticart.common.schemas.yaml#/StateActionRequest'
+    StateActionResponse:
+      $ref: './components/staticart.common.schemas.yaml#/StateActionResponse'
+    RestrictActionResponse:
+      $ref: './components/staticart.common.schemas.yaml#/RestrictActionResponse'
+    EntitlementResponse:
+      $ref: './components/staticart.common.schemas.yaml#/EntitlementResponse'
+    AccessSessionRequest:
+      $ref: './components/staticart.common.schemas.yaml#/AccessSessionRequest'
+    AccessSessionResponse:
+      $ref: './components/staticart.common.schemas.yaml#/AccessSessionResponse'
+    LibraryListResponse:
+      $ref: './components/staticart.common.schemas.yaml#/LibraryListResponse'
+    ReaderProgressRequest:
+      $ref: './components/staticart.common.schemas.yaml#/ReaderProgressRequest'
+    ReaderProgressResponse:
+      $ref: './components/staticart.common.schemas.yaml#/ReaderProgressResponse'
+    ViewerProgressRequest:
+      $ref: './components/staticart.common.schemas.yaml#/ViewerProgressRequest'
+    ViewerProgressResponse:
+      $ref: './components/staticart.common.schemas.yaml#/ViewerProgressResponse'
+    FavoriteResponse:
+      $ref: './components/staticart.common.schemas.yaml#/FavoriteResponse'
+    AnnotationCreateRequest:
+      $ref: './components/staticart.common.schemas.yaml#/AnnotationCreateRequest'
+    AnnotationCreateResponse:
+      $ref: './components/staticart.common.schemas.yaml#/AnnotationCreateResponse'
+    ExhibitionProjectionResponse:
+      $ref: './components/staticart.common.schemas.yaml#/ExhibitionProjectionResponse'
+    ProjectionRefreshRequest:
+      $ref: './components/staticart.common.schemas.yaml#/ProjectionRefreshRequest'
+    ProjectionRefreshResponse:
+      $ref: './components/staticart.common.schemas.yaml#/ProjectionRefreshResponse'
+    PurchaseReflectRequest:
+      $ref: './components/staticart.common.schemas.yaml#/PurchaseReflectRequest'
+    PurchaseReflectResponse:
+      $ref: './components/staticart.common.schemas.yaml#/PurchaseReflectResponse'
+    SubscriptionReflectRequest:
+      $ref: './components/staticart.common.schemas.yaml#/SubscriptionReflectRequest'
+    SubscriptionReflectResponse:
+      $ref: './components/staticart.common.schemas.yaml#/SubscriptionReflectResponse'

@@ -45,7 +45,7 @@ plans:
       - 抜け漏れ候補提示は簡易
       - 書類/証拠整理強化は対象外
 
-  family_plus:
+  plus_family:
     plan_name_ja: 家族共有
     price_jpy_month: 500
     target:
@@ -85,3 +85,7 @@ support_policy:
     - 法的最終判断の確定
     - 訴訟方針の保証
     - 書面の正式署名/代理提出
+
+pricing_principle:
+  - Free と PlusFamily統合プランの2段階とする
+  - Plus と Family は統合し月額500円とする

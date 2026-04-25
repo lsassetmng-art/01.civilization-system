@@ -1,0 +1,8 @@
+# 0401200000_PERSONA_EXTERNAL_RIGHTS_RUNTIME_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 040.runtime/120.external_rights/040.runtime/120.external_rights
+
+- 0401200001_PERSONA_EXTERNAL_RIGHTS_RUNTIME_OVERVIEW.md
+- 0401200002_PERSONA_EXTERNAL_RELEASE_RUNTIME.md

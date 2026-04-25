@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER MODEL INDEX
-# ============================================================
+# 0300600000_PERSONA_BUILDER_MODEL_INDEX
 
-status: canonical
-layer: model
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER MODEL documents.
+directory: 030.model/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-0300600000_PERSONA_BUILDER_MODEL_INDEX.md
-0300600001_PERSONA_BUILDER_MODEL_OVERVIEW.md
-0300600002_PERSONA_BUILDER_DRAFT_MODEL.md
+- 0300600001_PERSONA_BUILDER_MODEL_OVERVIEW.md
+- 0300600002_PERSONA_BUILDER_DRAFT_MODEL.md
+- 030.model/

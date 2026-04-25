@@ -2,32 +2,47 @@
 # STREAMWATCH RESTRICTION AND FAMILY PROFILE POLICY
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: policy
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines profile restriction modes, family-profile separation rules, and pre-play restriction behavior.
+This document defines profile restriction behavior and family-profile separation policy.
 
-## 2. Fixed Inputs
+## 2. Restriction Modes
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+The policy may support modes such as:
 
-## 3. Design Direction
+- unrestricted
+- child_safe
+- teen
+- custom_guarded
+- nighttime_limit
+- watch_time_limit
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Family Profile Separation Rule
 
-## 4. Current Status
+The following must remain separated by viewer_profile:
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+- history
+- progress
+- favorites
+- watch later
+- recommendation context
+- restriction context
+- notification preference
+
+## 4. Gating Rule
+
+Restriction decisions must be visible before playback when required by policy.
+
+## 5. Final Policy Rule
+
+Profile separation is not cosmetic.
+It is the basis for safe and correct viewer behavior.

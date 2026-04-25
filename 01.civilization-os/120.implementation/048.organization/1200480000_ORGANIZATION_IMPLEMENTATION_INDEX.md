@@ -17,3 +17,21 @@ files:
 - 1200480005_ORGANIZATION_BOUNDARY_IMPLEMENTATION.md
 - 1200480006_ORGANIZATION_VALIDATION_IMPLEMENTATION.md
 - 1200480007_ORGANIZATION_FAILURE_IMPLEMENTATION.md
+
+## Exact Organization Membership And Employment Split
+## Exact Organization Membership And Employment Split
+
+Organization implementation must explicitly distinguish:
+
+- membership
+- role binding
+- affiliation
+- employment linkage
+
+Organization membership and employment are related
+but not interchangeable.
+
+## Exact Membership History Rule
+
+Leaving an organization must preserve prior trace,
+rather than destructively overwriting membership history.

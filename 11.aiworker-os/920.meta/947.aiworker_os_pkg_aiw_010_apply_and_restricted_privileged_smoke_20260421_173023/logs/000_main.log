@@ -1,0 +1,142 @@
+============================================================
+AIWORKER OS PKG-AIW-010 APPLY AND RESTRICTED / PRIVILEGED SMOKE START
+============================================================
+STAMP      : 20260421_173023
+ROOT       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+PKG10      : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-010
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023
+LOG_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs
+============================================================
+PASS: PERSONA_DATABASE_URL is set.
+PASS: PKG-AIW-010 scripts exist.
+============================================================
+STEP 1: apply PKG-AIW-010
+============================================================
+============================================================
+PKG-AIW-010 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 through PKG-AIW-009 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-010
+============================================================
+BEGIN
+DO
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+COMMIT
+BEGIN
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE VIEW
+COMMIT
+============================================================
+PKG-AIW-010 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+STEP 2: verify restricted / privileged smoke state
+============================================================
+============================================================
+PKG-AIW-010 VERIFY RESTRICTED PRIVILEGED SMOKE STATE
+============================================================
+restricted_privileged_smoke_registry.count=1
+restricted_privileged_smoke_log.count=0
+latest_smoke.count=0
+restricted_policy.smoke_worker=1
+privileged_profile.smoke_worker=1
+exception_control.smoke_worker=1
+============================================================
+PKG-AIW-010 VERIFY RESTRICTED PRIVILEGED SMOKE STATE FINISHED
+============================================================
+============================================================
+STEP 3: run privileged context smoke
+============================================================
+============================================================
+PKG-AIW-010 PRIVILEGED CONTEXT SMOKE
+============================================================
+        flow_code         | result_code | note_text  
+--------------------------+-------------+------------
+ PRIVILEGED_CONTEXT_SMOKE | PASS        | OK_APPLIED
+(1 row)
+
+------------------------------------------------------------
+CURRENT PRIVILEGED PROFILE
+71000000-0000-0000-0000-000000001002|SMOKE_PRIV_CONTEXT|GATE_PRIVILEGED|true
+============================================================
+PKG-AIW-010 PRIVILEGED CONTEXT SMOKE FINISHED
+============================================================
+============================================================
+STEP 4: run restricted boundary smoke
+============================================================
+============================================================
+PKG-AIW-010 RESTRICTED BOUNDARY SMOKE
+============================================================
+         flow_code         | result_code |             note_text             
+---------------------------+-------------+-----------------------------------
+ RESTRICTED_BOUNDARY_SMOKE | PASS        | Restricted boundary checks passed
+(1 row)
+
+------------------------------------------------------------
+LATEST RESTRICTED / PRIVILEGED SMOKE VIEW
+PRIVILEGED_CONTEXT_SMOKE|PASS|OK_APPLIED
+RESTRICTED_BOUNDARY_SMOKE|PASS|Restricted boundary checks passed
+============================================================
+PKG-AIW-010 RESTRICTED BOUNDARY SMOKE FINISHED
+============================================================
+============================================================
+STEP 5: quick DB checks
+============================================================
+restricted_privileged_smoke_registry.count=1
+restricted_privileged_smoke_log.count=2
+latest_smoke.count=2
+privileged_profile.active=true
+latest_smoke.PRIVILEGED_CONTEXT_SMOKE=PASS
+latest_smoke.RESTRICTED_BOUNDARY_SMOKE=PASS
+============================================================
+AIWORKER OS PKG-AIW-010 APPLY AND RESTRICTED / PRIVILEGED SMOKE SUCCESS
+============================================================
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023
+MAIN_LOG   : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs/000_main.log
+SUMMARY    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/000_RESULT_SUMMARY.txt
+LOG FILES:
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs/000_main.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs/010_apply_pkg_aiw_010.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs/020_verify_restricted_privileged_smoke_state.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs/030_privileged_context_smoke.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs/040_restricted_boundary_smoke.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023/logs/050_quick_restricted_privileged_db_checks.log
+============================================================

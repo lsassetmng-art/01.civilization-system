@@ -1,0 +1,8 @@
+# 1301000000_PERSONA_PACKAGE_DEVELOPMENT_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 130.development/100.package/130.development/100.package
+
+- 1301000001_PERSONA_PACKAGE_DEVELOPMENT_OVERVIEW.md
+- 1301000002_PERSONA_PACKAGE_DEVELOPMENT_GUIDE.md

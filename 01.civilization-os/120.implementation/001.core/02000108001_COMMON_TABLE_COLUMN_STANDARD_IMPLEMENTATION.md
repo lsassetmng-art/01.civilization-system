@@ -344,3 +344,43 @@ Every physical table design must include:
 - retention rule
 - source of truth rule
 
+
+## Exact Naming Rules
+## Exact Naming Rules
+
+Primary keys:
+- pk_<table_name>
+
+Foreign keys:
+- fk_<table_name>__<referenced_table_name>
+
+Unique constraints:
+- uq_<table_name>__<semantic_name>
+
+Indexes:
+- ix_<table_name>__<semantic_name>
+
+Check constraints:
+- ck_<table_name>__<semantic_name>
+
+## Exact Value Type Rules
+
+Money:
+- numeric(19,4)
+
+Rate:
+- numeric(9,6)
+
+Quantity:
+- numeric(19,6)
+
+Percentage-like display fields must not replace canonical rate storage.
+
+## JSONB Use Rule
+
+JSONB is allowed only when:
+- structure is auxiliary
+- structure is not canonical lookup identity
+- structure is not required for cross-domain referential integrity
+
+Canonical relationship data must not be hidden in JSONB.

@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/PocketSecretary/120.implementation/120000_PLATFORM_SPLIT_IMPLEMENTATION_POLICY.md

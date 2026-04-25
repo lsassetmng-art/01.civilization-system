@@ -1,0 +1,8 @@
+# 0500500000_PERSONA_GROWTH_FLOW_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 050.flow/050.growth/050.flow/050.growth
+
+- 0500500001_PERSONA_GROWTH_FLOW_OVERVIEW.md
+- 0500500002_PERSONA_GROWTH_APPLY_FLOW.md

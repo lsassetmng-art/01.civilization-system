@@ -1,0 +1,8 @@
+# 0900500000_PERSONA_GROWTH_INTERFACE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 090.interface/050.growth/090.interface/050.growth
+
+- 0900500001_PERSONA_GROWTH_INTERFACE_OVERVIEW.md
+- 0900500002_PERSONA_GROWTH_APPLY_INTERFACE.md

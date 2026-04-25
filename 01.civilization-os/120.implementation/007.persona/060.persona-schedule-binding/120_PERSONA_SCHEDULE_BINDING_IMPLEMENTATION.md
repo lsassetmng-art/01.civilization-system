@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona schedule bindings.
+Defines the implementation design for Civilization-side persona schedule bindings.
 
 # 2. IMPLEMENTATION TARGETS
 

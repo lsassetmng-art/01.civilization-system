@@ -1,0 +1,7 @@
+order_no	target_key	class	current_decision	current_blocker_status	recommended_fill_rule	reviewer	approval_note
+01	edge_apply	implementation_target	pending	pending	decision=pass or pass_with_minor_fix or blocked ; blocker_status=closed or open	pending	pending
+02	state_apply	implementation_target	pending	pending	decision=pass or pass_with_minor_fix or blocked ; blocker_status=closed or open	pending	pending
+03	builder_api	implementation_target	pending	pending	decision=pass or pass_with_minor_fix or blocked ; blocker_status=closed or open	pending	pending
+04	builder_storage	implementation_target	pending	pending	decision=pass or pass_with_minor_fix or blocked ; blocker_status=closed or open	pending	pending
+05	cross_alignment	control_row	pending	pending	decision=pass or blocked ; blocker_status=closed or open	pending	pending
+06	start_gate	control_row	pending	pending	decision=pass or blocked ; blocker_status=closed or open	pending	pending

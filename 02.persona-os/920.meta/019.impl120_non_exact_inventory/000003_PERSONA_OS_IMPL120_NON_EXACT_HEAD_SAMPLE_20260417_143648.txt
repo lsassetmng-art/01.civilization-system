@@ -1,0 +1,1710 @@
+============================================================
+120.implementation/010.core/120010000_PERSONA_CORE_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120010000_PERSONA_CORE_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/010.core
+
+- 120010001_PERSONA_CORE_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/010.core/120010001_PERSONA_CORE_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA CORE IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: core
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA CORE IMPLEMENTATION.
+
+summary:
+Core implementation defines implementation-level support for canonical truth authority and continuity.
+============================================================
+120.implementation/020.engine/1200100001_PERSONA_ENGINE_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA ENGINE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines implementation structure of Persona Engine.
+
+# COMPONENTS
+
+EngineCoordinator
+EventReceiver
+ContextResolver
+ReasoningProcessor
+DecisionProcessor
+BehaviorDispatcher
+MemoryWriter
+StateSynchronizer
+============================================================
+120.implementation/020.identity/120020000_PERSONA_IDENTITY_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120020000_PERSONA_IDENTITY_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/020.identity
+
+- 120020001_PERSONA_IDENTITY_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/020.identity/120020001_PERSONA_IDENTITY_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA IDENTITY IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: identity
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA IDENTITY IMPLEMENTATION.
+
+summary:
+Identity implementation defines implementation-level support for identity-safe behavior.
+============================================================
+120.implementation/030.cognition/1200200001_PERSONA_COGNITION_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA COGNITION IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines cognition module implementation.
+
+# COMPONENTS
+
+PerceptionProcessor
+AttentionResolver
+ReasoningProcessor
+DecisionEvaluator
+PlanningSupport
+============================================================
+120.implementation/030.state/120030000_PERSONA_STATE_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120030000_PERSONA_STATE_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/030.state
+
+- 120030001_PERSONA_STATE_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/030.state/120030001_PERSONA_STATE_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA STATE IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: state
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA STATE IMPLEMENTATION.
+
+summary:
+State implementation defines implementation-level support for explicit state handling.
+============================================================
+120.implementation/040.behavior/1200300001_PERSONA_BEHAVIOR_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA BEHAVIOR IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines behavior execution modules.
+
+# COMPONENTS
+
+BehaviorSelector
+ConstraintChecker
+ActionDispatcher
+TaskExecutor
+BehaviorResultEmitter
+============================================================
+120.implementation/040.memory/120040000_PERSONA_MEMORY_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120040000_PERSONA_MEMORY_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/040.memory
+
+- 120040001_PERSONA_MEMORY_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/040.memory/120040001_PERSONA_MEMORY_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA MEMORY IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: memory
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA MEMORY IMPLEMENTATION.
+
+summary:
+Memory implementation defines implementation-level support for memory-safe handling.
+============================================================
+120.implementation/050.external/1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA EXTERNAL RELEASE SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / external release
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Release eligibility
+
+Only published releases may be externally released.
+Required:
+- published release id
+- package id
+- effective license or access policy
+- marketplace or platform destination code
+============================================================
+120.implementation/050.external/1200400002_PERSONA_LICENSE_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA LICENSE SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / license
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Allowed values
+
+`license_type`:
+- `personal-use`
+- `business-use`
+- `platform-use`
+- `limited-evaluation`
+
+============================================================
+120.implementation/050.external/1200400003_PERSONA_ACCESS_GRANT_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA ACCESS GRANT SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / access grant
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Access grant purpose
+
+Access grants authorize a subject to use a release or package under a valid rights basis.
+
+## Create API
+
+### POST /persona/v1/rights/access-grants
+
+============================================================
+120.implementation/050.external/1200400004_PERSONA_TRANSFER_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA TRANSFER SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / transfer
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Transfer purpose
+
+Transfer reassigns ownership or managed rights of a published release/package between valid subjects.
+
+## Create API
+
+### POST /persona/v1/rights/transfers
+
+============================================================
+120.implementation/050.external/1200400005_PERSONA_PACKAGE_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA PACKAGE SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / package assembly
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Package purpose
+
+A package is a frozen assembly of released persona artifacts for distribution or runtime delivery.
+
+## Canonical package contents
+
+- release manifest
+- truth profile export
+============================================================
+120.implementation/050.growth/1200500000_PERSONA_GROWTH_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1200500000_PERSONA_GROWTH_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/050.growth
+
+- 1200500001_PERSONA_GROWTH_IMPLEMENTATION_OVERVIEW.md
+- 120.implementation/
+============================================================
+120.implementation/050.growth/1200500001_PERSONA_GROWTH_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA GROWTH IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: growth
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of growth implementation guidance.
+
+summary:
+Growth implementation defines handlers,
+adapters,
+and audit-safe apply paths
+for growth-related mutation.
+
+============================================================
+120.implementation/060.builder/1200600000_PERSONA_BUILDER_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1200600000_PERSONA_BUILDER_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/060.builder
+
+- 1200600001_PERSONA_BUILDER_IMPLEMENTATION_OVERVIEW.md
+- 1200600002_PERSONA_BUILDER_DRAFT_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/060.builder/1200600001_PERSONA_BUILDER_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA BUILDER IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: builder
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of builder implementation guidance.
+
+summary:
+Builder implementation defines controller separation,
+draft persistence handling,
+validation handling,
+and safe handoff into truth-apply paths.
+
+============================================================
+120.implementation/060.builder/1200600002_PERSONA_BUILDER_DRAFT_IMPLEMENTATION.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA BUILDER DRAFT IMPLEMENTATION
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / builder draft aggregate
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Draft aggregate
+
+Canonical aggregate:
+`builder_draft`
+
+Fields:
+- `builder_draft_id`
+- `persona_root_id`
+============================================================
+120.implementation/060.memory/1200410001_PERSONA_MEMORY_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA MEMORY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines memory subsystem implementation.
+
+# COMPONENTS
+
+MemoryStore
+MemoryRetriever
+ExperienceRecorder
+MemoryIndexer
+============================================================
+120.implementation/070.communication/1200500001_PERSONA_COMMUNICATION_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA COMMUNICATION IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines communication modules.
+
+# COMPONENTS
+
+MessageReceiver
+IntentResolver
+DialogueManager
+ResponseGenerator
+ResponseDispatcher
+============================================================
+120.implementation/070.visual/1200700000_PERSONA_VISUAL_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1200700000_PERSONA_VISUAL_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/070.visual
+
+- 1200700001_PERSONA_VISUAL_IMPLEMENTATION_OVERVIEW.md
+- 1200700002_PERSONA_VISUAL_RUNTIME_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/070.visual/1200700001_PERSONA_VISUAL_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA VISUAL IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: visual
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of visual implementation guidance.
+
+summary:
+Visual implementation defines render engine structure,
+composition handling,
+background handling,
+and testable fallback behavior.
+
+============================================================
+120.implementation/070.visual/1200700002_PERSONA_VISUAL_RUNTIME_IMPLEMENTATION.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA VISUAL RUNTIME IMPLEMENTATION
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / visual runtime
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Runtime read model
+
+Visual runtime consumes:
+- `persona_release`
+- `persona_visual_manifest`
+- `persona_asset_binding`
+- host surface capability profile
+
+============================================================
+120.implementation/080.runtime_hosting/1200800000_PERSONA_RUNTIME_HOSTING_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1200800000_PERSONA_RUNTIME_HOSTING_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/080.runtime_hosting
+
+- 1200800001_PERSONA_RUNTIME_HOSTING_IMPLEMENTATION_OVERVIEW.md
+- 1200800002_PERSONA_RUNTIME_SESSION_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/080.runtime_hosting/1200800001_PERSONA_RUNTIME_HOSTING_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA RUNTIME HOSTING IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: runtime-hosting
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of runtime-hosting implementation guidance.
+
+summary:
+Runtime-hosting implementation defines adapters,
+binders,
+and explicit cleanup handling
+for host-side runtime consumption.
+
+============================================================
+120.implementation/080.runtime_hosting/1200800002_PERSONA_RUNTIME_SESSION_IMPLEMENTATION.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA RUNTIME SESSION IMPLEMENTATION
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / runtime session
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Session states
+
+Allowed states:
+- `created`
+- `starting`
+- `active`
+- `paused`
+- `snapshotting`
+============================================================
+120.implementation/080.social/1200600001_PERSONA_SOCIAL_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA SOCIAL IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines social interaction modules.
+
+# COMPONENTS
+
+RelationshipManager
+TrustManager
+InteractionRecorder
+GroupManager
+============================================================
+120.implementation/090.learning/1200700001_PERSONA_LEARNING_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA LEARNING IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines learning modules.
+
+# COMPONENTS
+
+FeedbackInterpreter
+KnowledgeUpdater
+CapabilityUpdater
+StrategyUpdater
+LearningStateManager
+============================================================
+120.implementation/090.snapshot/1200900000_PERSONA_SNAPSHOT_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1200900000_PERSONA_SNAPSHOT_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/090.snapshot
+
+- 1200900001_PERSONA_SNAPSHOT_IMPLEMENTATION_OVERVIEW.md
+- 1200900002_PERSONA_SNAPSHOT_ISSUE_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/090.snapshot/1200900001_PERSONA_SNAPSHOT_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA SNAPSHOT IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: snapshot
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of snapshot implementation guidance.
+
+summary:
+Snapshot implementation defines issuance handlers,
+traceability preservation,
+and immutable output generation.
+
+scope:
+============================================================
+120.implementation/090.snapshot/1200900002_PERSONA_SNAPSHOT_ISSUE_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA SNAPSHOT ISSUE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: snapshot
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+implementation_rules:
+snapshot issuance must preserve traceability
+snapshot output must be immutable after issuance
+============================================================
+120.implementation/100.package/1201000000_PERSONA_PACKAGE_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1201000000_PERSONA_PACKAGE_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/100.package
+
+- 1201000001_PERSONA_PACKAGE_IMPLEMENTATION_OVERVIEW.md
+- 1201000002_PERSONA_PACKAGE_ASSEMBLY_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/100.package/1201000001_PERSONA_PACKAGE_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA PACKAGE IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: package
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of package implementation guidance.
+
+summary:
+Package implementation defines deterministic package assembly,
+manifest generation,
+and package-lineage preservation.
+
+scope:
+============================================================
+120.implementation/100.package/1201000002_PERSONA_PACKAGE_ASSEMBLY_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA PACKAGE ASSEMBLY IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: package
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+implementation_rules:
+package builder must use approved snapshot inputs only
+package manifest generation must be deterministic
+============================================================
+120.implementation/110.distribution/1201100000_PERSONA_DISTRIBUTION_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1201100000_PERSONA_DISTRIBUTION_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/110.distribution
+
+- 1201100001_PERSONA_DISTRIBUTION_IMPLEMENTATION_OVERVIEW.md
+- 1201100002_PERSONA_RELEASE_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/110.distribution/1201100001_PERSONA_DISTRIBUTION_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA DISTRIBUTION IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: distribution
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of distribution implementation guidance.
+
+summary:
+Distribution implementation defines release-state handlers,
+withdrawal/suspension handling,
+and channel-facing execution support.
+
+scope:
+============================================================
+120.implementation/110.distribution/1201100002_PERSONA_RELEASE_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA RELEASE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: distribution
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+implementation_rules:
+release activation must follow policy gate outcomes
+withdrawal must remain explicit and reversible by authorized path only
+============================================================
+120.implementation/110.visual/1201100001_VISUAL_RUNTIME_HOST_ADAPTER_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# VISUAL RUNTIME HOST ADAPTER IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: visual-runtime
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+This document defines the implementation pattern
+for host adapters embedding Visual Runtime.
+
+
+# ============================================================
+# 2. HOST ADAPTER ROLE
+============================================================
+120.implementation/110.visual/1201100002_VISUAL_RUNTIME_ANDROID_RENDER_SURFACE_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# VISUAL RUNTIME ANDROID RENDER SURFACE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: visual-runtime
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+This document defines the Android-side
+implementation guidance for render surfaces.
+
+
+# ============================================================
+# 2. IMPLEMENTATION CONSTRAINTS
+============================================================
+120.implementation/110.visual/ANIMATION_RUNTIME_MODEL_CANONICAL.md
+status: canonical
+# ============================================================
+# ANIMATION RUNTIME MODEL
+# ============================================================
+
+status: canonical
+system: Civilization
+component: animation-runtime
+
+owner: Boss
+prepared_by: Zero
+
+
+PURPOSE
+
+Define the animation runtime model used by visual-runtime.
+
+The animation runtime extends static layer composition
+into time-based rendering.
+
+
+============================================================
+120.implementation/110.visual/ASSET_SOURCE_MODEL_CANONICAL.md
+status: canonical
+# ============================================================
+# ASSET SOURCE MODEL
+# ============================================================
+
+status: canonical
+system: Civilization
+component: asset-source
+
+
+PURPOSE
+
+Define asset source abstraction.
+
+
+SOURCE INTERFACE
+
+AssetSource
+ ├ resolve asset
+ ├ fetch asset
+ └ return file
+============================================================
+120.implementation/110.visual/CACHE_MODEL_CANONICAL.md
+status: canonical
+# ============================================================
+# CACHE MODEL
+# ============================================================
+
+status: canonical
+system: Civilization
+component: runtime-cache
+
+
+PURPOSE
+
+Define caching layers.
+
+
+CACHE TYPES
+
+download cache
+decoded bitmap cache
+frame cache
+output cache
+============================================================
+120.implementation/110.visual/LAYER_MODEL_CANONICAL.md
+status: canonical
+# ============================================================
+# LAYER MODEL
+# ============================================================
+
+status: canonical
+system: Civilization
+component: layer-model
+
+
+PURPOSE
+
+Define layer representation.
+
+
+LAYER TYPES
+
+BACKGROUND
+PERSONA_BASE
+PERSONA_PART
+CLOTHING
+============================================================
+120.implementation/110.visual/POCKETSECRETARY_RUNTIME_INTEGRATION_CANONICAL.md
+status: canonical
+# ============================================================
+# POCKETSECRETARY RUNTIME INTEGRATION
+# ============================================================
+
+status: canonical
+system: Civilization
+application: PocketSecretary
+
+
+PURPOSE
+
+Define integration between PocketSecretary
+and visual-runtime.
+
+
+RESPONSIBILITY
+
+PocketSecretary
+
+select persona
+============================================================
+120.implementation/110.visual/SCENE_RUNTIME_MODEL_CANONICAL.md
+status: canonical
+# ============================================================
+# SCENE RUNTIME MODEL
+# ============================================================
+
+status: canonical
+system: Civilization
+component: scene-runtime
+
+
+PURPOSE
+
+Define scene structure used by visual-runtime.
+
+
+SCENE STRUCTURE
+
+scene
+ ├ background
+ ├ persona
+ ├ objects
+============================================================
+120.implementation/110.visual/VISUAL_RUNTIME_ARCHITECTURE_CANONICAL.md
+status: canonical
+# ============================================================
+# VISUAL RUNTIME ARCHITECTURE
+# ============================================================
+
+status: canonical
+system: Civilization
+component: visual-runtime
+
+owner: Boss
+prepared_by: Zero
+
+
+PURPOSE
+
+Define the architecture of the shared
+visual rendering runtime.
+
+
+ROLE
+
+============================================================
+120.implementation/120.external_rights/1201200000_PERSONA_EXTERNAL_RIGHTS_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1201200000_PERSONA_EXTERNAL_RIGHTS_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/120.external_rights
+
+- 1201200001_PERSONA_EXTERNAL_RIGHTS_IMPLEMENTATION_OVERVIEW.md
+- 1201200002_PERSONA_EXTERNAL_RELEASE_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/120.external_rights/1201200001_PERSONA_EXTERNAL_RIGHTS_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA EXTERNAL RIGHTS IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: external-rights
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of external-rights implementation guidance.
+
+summary:
+External-rights implementation defines release/use adapters
+that preserve PersonaOS authority boundaries.
+
+scope:
+external release adapter
+============================================================
+120.implementation/120.external_rights/1201200002_PERSONA_EXTERNAL_RELEASE_IMPLEMENTATION.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA EXTERNAL RELEASE IMPLEMENTATION
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / external release orchestration
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Required tables
+
+- `license_record`
+- `access_grant_record`
+- `transfer_record`
+- `external_release_record`
+- `external_sync_outbox`
+- `external_sync_attempt`
+============================================================
+120.implementation/1200000_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1200000_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation
+
+- 1200000_PERSONA_OS_IMPLEMENTATION_INDEX.md
+- 1200001_IMPLEMENTATION_OVERVIEW.md
+- 1200001_PERSONA_OS_IMPLEMENTATION_OVERVIEW.md
+- 1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+- 1200003_PERSONA_STATE_APPLY_SPEC.md
+- 1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
+- 1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+- 1200006_PERSONA_SIGNATURE_SPEC.md
+- 1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+- 1200008_PERSONA_ASSET_GENERATION_SPEC.md
+- 1200009_PERSONA_CAPABILITY_SPEC.md
+- 1200010_PERSONA_POLICY_SPEC.md
+- 1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md
+- 1200400002_PERSONA_LICENSE_SPEC.md
+============================================================
+120.implementation/1200000_PERSONA_OS_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1200000_PERSONA_OS_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation
+
+- 1200000_IMPLEMENTATION_INDEX.md
+- 1200001_IMPLEMENTATION_OVERVIEW.md
+- 1200001_PERSONA_OS_IMPLEMENTATION_OVERVIEW.md
+- 1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+- 1200003_PERSONA_STATE_APPLY_SPEC.md
+- 1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
+- 1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+- 1200006_PERSONA_SIGNATURE_SPEC.md
+- 1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+- 1200008_PERSONA_ASSET_GENERATION_SPEC.md
+- 1200009_PERSONA_CAPABILITY_SPEC.md
+- 1200010_PERSONA_POLICY_SPEC.md
+- 1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md
+- 1200400002_PERSONA_LICENSE_SPEC.md
+============================================================
+120.implementation/1200001_IMPLEMENTATION_OVERVIEW.md
+status: implementation-ready-followup
+# ============================================================
+# PERSONA OS IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: implementation-ready-followup
+system: PersonaOS
+layer: implementation
+canonical: true
+
+purpose:
+This document aligns the implementation layer with the exact
+implementation-ready contracts already reflected into the core files.
+
+implementation_truth:
+- Exact request/response payloads are defined in implementation specs.
+- State transition authority belongs to truth/apply flow.
+- Builder is non-authoritative until publish is accepted.
+- Runtime serves released or approved snapshots only.
+- External release, package, license, access grant, and transfer are controlled contracts.
+
+============================================================
+120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA EDGE FUNCTION SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / edge intake / apply entry
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Goal
+
+This file fixes the public apply entry contract for PersonaOS.
+The edge function is the only supported write entry for truth/apply execution.
+
+## Canonical endpoints
+
+### POST /persona/v1/events/apply
+============================================================
+120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA STATE APPLY SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / truth apply
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Goal
+
+This file fixes the exact apply state machine, retry rule, storage contract boundary, and terminal outcomes for truth reflection.
+
+## Canonical apply state machine
+
+```text
+received
+============================================================
+120.implementation/1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA VISUAL COMPOSE SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / visual compose contract
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Canonical manifest root
+
+Object name:
+`persona_visual_manifest`
+
+Required fields:
+- `manifest_version`
+- `persona_root_id`
+============================================================
+120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA SNAPSHOT ISSUE SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / snapshot issue api
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Snapshot create endpoint
+
+### POST /persona/v1/runtime-sessions/{runtime_session_id}/snapshots
+
+Request:
+```json
+{
+  "requested_by_actor_id": "01ACTOR...",
+============================================================
+120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md
+status: canonical
+# ============================================================
+# PERSONA SIGNATURE SPEC
+# ============================================================
+
+status: canonical
+component: persona-signature
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Define cryptographic signature rules
+for PersonaOS.
+
+# ALGORITHM
+
+Ed25519
+
+# SIGNED OBJECTS
+============================================================
+120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+status: canonical
+# ============================================================
+# PERSONA EVENT SIGNATURE SPEC
+# ============================================================
+
+status: canonical
+component: persona-event-signature
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Ensure all external events
+entering PersonaOS are signed.
+
+# EVENT FLOW
+
+event created
+↓
+canonical JSON
+============================================================
+120.implementation/1200008_PERSONA_ASSET_GENERATION_SPEC.md
+status: canonical
+# ============================================================
+# PERSONA ASSET GENERATION SPEC
+# ============================================================
+
+status: canonical
+component: persona-asset-generation
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Generate persona visual assets.
+
+# SOURCES
+
+AI generation
+preset parts
+external import
+
+============================================================
+120.implementation/1200009_PERSONA_CAPABILITY_SPEC.md
+status: canonical
+# ============================================================
+# PERSONA CAPABILITY SPECIFICATION
+# ============================================================
+
+status: canonical
+component: persona-os
+document: persona-capability-spec
+
+owner: Boss
+prepared_by: Zero
+
+
+# PURPOSE
+
+Provide implementation specification
+for persona capability management.
+
+
+# CAPABILITY STRUCTURE
+
+============================================================
+120.implementation/1200010_PERSONA_POLICY_SPEC.md
+status: canonical
+# ============================================================
+# PERSONA POLICY SPECIFICATION
+# ============================================================
+
+status: canonical
+component: persona-os
+document: persona-policy-spec
+
+owner: Boss
+prepared_by: Zero
+
+
+# PURPOSE
+
+Provide implementation specification
+for policy enforcement.
+
+
+# POLICY STRUCTURE
+
+============================================================
+120.implementation/120_PERSONA-OS_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120_PERSONA-OS_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation
+
+- 1200000_IMPLEMENTATION_INDEX.md
+- 1200000_PERSONA_OS_IMPLEMENTATION_INDEX.md
+- 1200001_IMPLEMENTATION_OVERVIEW.md
+- 1200001_PERSONA_OS_IMPLEMENTATION_OVERVIEW.md
+- 1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+- 1200003_PERSONA_STATE_APPLY_SPEC.md
+- 1200004_PERSONA_VISUAL_COMPOSE_SPEC.md
+- 1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+- 1200006_PERSONA_SIGNATURE_SPEC.md
+- 1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+- 1200008_PERSONA_ASSET_GENERATION_SPEC.md
+- 1200009_PERSONA_CAPABILITY_SPEC.md
+- 1200010_PERSONA_POLICY_SPEC.md
+- 1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md
+============================================================
+120.implementation/120_PERSONA_APPLY_IMPLEMENTATION.md
+status: canonical
+# PERSONA APPLY IMPLEMENTATION
+status: canonical
+layer: implementation
+system: persona-os
+scope: persona-apply-implementation
+
+Defines apply implementation structure.
+============================================================
+120.implementation/121_PERSONA_EVENT_VALIDATOR_IMPLEMENTATION.md
+status: canonical
+# PERSONA EVENT VALIDATOR IMPLEMENTATION
+status: canonical
+layer: implementation
+system: persona-os
+scope: persona-event-validator-implementation
+
+Defines validator implementation rules.
+============================================================
+120.implementation/122_PERSONA_GROWTH_APPLIER_IMPLEMENTATION.md
+status: canonical
+# PERSONA GROWTH APPLIER IMPLEMENTATION
+status: canonical
+layer: implementation
+system: persona-os
+scope: persona-growth-applier-implementation
+
+Defines growth apply implementation.
+============================================================
+120.implementation/123_PERSONA_REJECT_HANDLER_IMPLEMENTATION.md
+status: canonical
+# PERSONA REJECT HANDLER IMPLEMENTATION
+status: canonical
+layer: implementation
+system: persona-os
+scope: persona-reject-handler-implementation
+
+Defines reject handling implementation.
+============================================================
+120.implementation/124_PERSONA_RESULT_FEEDBACK_IMPLEMENTATION.md
+status: canonical
+# PERSONA RESULT FEEDBACK IMPLEMENTATION
+status: canonical
+layer: implementation
+system: persona-os
+scope: persona-result-feedback-implementation
+
+Defines result response and feedback implementation.
+============================================================
+120.implementation/130.access_license_transfer/1201300000_PERSONA_ACCESS_LICENSE_TRANSFER_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 1201300000_PERSONA_ACCESS_LICENSE_TRANSFER_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/130.access_license_transfer
+
+- 1201300001_PERSONA_ACCESS_LICENSE_TRANSFER_IMPLEMENTATION_OVERVIEW.md
+- 1201300002_PERSONA_LICENSE_ACCESS_TRANSFER_IMPLEMENTATION.md
+- 120.implementation/
+============================================================
+120.implementation/130.access_license_transfer/1201300001_PERSONA_ACCESS_LICENSE_TRANSFER_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA ACCESS LICENSE TRANSFER IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: access-license-transfer
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of access, license, and transfer implementation guidance.
+
+summary:
+This implementation domain defines explicit handlers
+for license issuance,
+grant handling,
+and transfer execution.
+
+============================================================
+120.implementation/130.access_license_transfer/1201300002_PERSONA_LICENSE_ACCESS_TRANSFER_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA LICENSE ACCESS TRANSFER IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: access-license-transfer
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+implementation_rules:
+license, grant, and transfer handlers must remain explicit and auditable
+============================================================
+120.implementation/130.builder/1200700001_PERSONA_BUILDER_IMPLEMENTATION.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA BUILDER IMPLEMENTATION
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / builder orchestration
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Builder bounded contexts
+
+- `builder_draft`
+- `builder_section_state`
+- `builder_change_set`
+- `builder_validation_run`
+- `builder_validation_issue`
+- `builder_approval_request`
+============================================================
+120.implementation/130.builder/1200700002_PERSONA_BUILDER_API_SPEC.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA BUILDER API SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / builder api
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Endpoints
+
+### POST /persona/v1/builder/drafts
+
+Request:
+```json
+{
+  "persona_root_id": "01PERSROOT...",
+============================================================
+120.implementation/130.builder/1200700003_PERSONA_BUILDER_STORAGE_MAPPING.md
+status: implementation-ready-reflected
+# ============================================================
+# PERSONA BUILDER STORAGE MAPPING
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / builder storage
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Canonical tables
+
+### builder_draft
+Primary key: `builder_draft_id`
+Unique keys:
+- `(persona_root_id, draft_code, is_active)`
+
+Indexes:
+============================================================
+120.implementation/140.integration/1201400001_PERSONA_INTEGRATION_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA INTEGRATION IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: integration
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of integration implementation guidance.
+
+summary:
+Integration implementation defines adapters,
+request mappers,
+and result emitters that preserve PersonaOS truth authority.
+============================================================
+120.implementation/140.integration/120140000_PERSONA_INTEGRATION_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120140000_PERSONA_INTEGRATION_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/140.integration
+
+- 1201400001_PERSONA_INTEGRATION_IMPLEMENTATION_OVERVIEW.md
+- 120140001_PERSONA_INTEGRATION_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/140.integration/120140001_PERSONA_INTEGRATION_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA INTEGRATION IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: integration
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA INTEGRATION IMPLEMENTATION.
+
+summary:
+Integration implementation defines implementation-level support for approved cross-system behavior.
+============================================================
+120.implementation/140.lifecycle/1200800001_PERSONA_LIFECYCLE_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA LIFECYCLE IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines persona lifecycle handling.
+
+# COMPONENTS
+
+LifecycleManager
+GoalUpdater
+StateTransitionManager
+============================================================
+120.implementation/150.security/1201500001_PERSONA_SECURITY_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA SECURITY IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: security
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of security implementation guidance.
+
+summary:
+Security implementation defines gate handlers,
+fail-closed handlers,
+and protected execution paths.
+============================================================
+120.implementation/150.security/120150000_PERSONA_SECURITY_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120150000_PERSONA_SECURITY_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/150.security
+
+- 1201500001_PERSONA_SECURITY_IMPLEMENTATION_OVERVIEW.md
+- 120150001_PERSONA_SECURITY_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/150.security/120150001_PERSONA_SECURITY_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA SECURITY IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: security
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA SECURITY IMPLEMENTATION.
+
+summary:
+Security implementation defines implementation-level support for protected and fail-closed behavior.
+============================================================
+120.implementation/160.governance/1201600001_PERSONA_GOVERNANCE_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA GOVERNANCE IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: governance
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of governance implementation guidance.
+
+summary:
+Governance implementation defines approval handlers,
+moderation handlers,
+and eligibility-safe decision execution.
+============================================================
+120.implementation/160.governance/120160000_PERSONA_GOVERNANCE_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120160000_PERSONA_GOVERNANCE_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/160.governance
+
+- 1201600001_PERSONA_GOVERNANCE_IMPLEMENTATION_OVERVIEW.md
+- 120160001_PERSONA_GOVERNANCE_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/160.governance/120160001_PERSONA_GOVERNANCE_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA GOVERNANCE IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: governance
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA GOVERNANCE IMPLEMENTATION.
+
+summary:
+Governance implementation defines implementation-level support for approval and decision-safe behavior.
+============================================================
+120.implementation/170.operations_support/1201700001_PERSONA_OPERATIONS_SUPPORT_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA OPERATIONS SUPPORT IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: operations-support
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of operations-support implementation guidance.
+
+summary:
+Operations-support implementation defines audit emitters,
+rollback-support handlers,
+and diagnostic record generation.
+============================================================
+120.implementation/170.operations_support/120170000_PERSONA_OPERATIONS_SUPPORT_IMPLEMENTATION_INDEX.md
+status: rebuilt-from-live-directory
+# 120170000_PERSONA_OPERATIONS_SUPPORT_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/170.operations_support
+
+- 1201700001_PERSONA_OPERATIONS_SUPPORT_IMPLEMENTATION_OVERVIEW.md
+- 120170001_PERSONA_OPERATIONS_SUPPORT_IMPLEMENTATION_OVERVIEW.md
+============================================================
+120.implementation/170.operations_support/120170001_PERSONA_OPERATIONS_SUPPORT_IMPLEMENTATION_OVERVIEW.md
+status: canonical
+# ============================================================
+# PERSONA OPERATIONS SUPPORT IMPLEMENTATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: implementation
+domain: operations-support
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the overview of PERSONA OPERATIONS SUPPORT IMPLEMENTATION.
+
+summary:
+Operations-support implementation defines implementation-level support for audit, rollback, and diagnostics.
+============================================================
+120.implementation/180.system/1200900001_PERSONA_SYSTEM_IMPLEMENTATION.md
+status: canonical
+# ============================================================
+# PERSONA SYSTEM IMPLEMENTATION
+# ============================================================
+
+status: canonical
+layer: implementation
+
+# PURPOSE
+Defines system level modules.
+
+# COMPONENTS
+
+RuntimeCoordinator
+OperationDispatcher
+SystemLogger

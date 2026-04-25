@@ -1,0 +1,28 @@
+============================================================
+NameCardManager ROOT RECOVERY EXTERNALIZE REPORT
+generated_at=20260425_170147
+APP_ROOT=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager
+CATEGORY_META=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/90.meta
+OUT_DIR=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/90.meta/20260425_170147_NameCardManager_root_recovery_externalized
+============================================================
+============================================================
+1. MOVE root_misplaced_recovery_* OUTSIDE APP ROOT
+============================================================
+MOVED: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/90.meta/root_misplaced_recovery_20260425_165455 -> /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/90.meta/20260425_170147_NameCardManager_root_recovery_externalized/90.meta/root_misplaced_recovery_20260425_165455
+============================================================
+2. REBUILD APP INTEGRATED WITHOUT EXTERNALIZED RECOVERY
+============================================================
+REBUILT: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+============================================================
+3. VERIFY
+============================================================
+PASS: no root_misplaced_recovery directory under app root
+PASS: integrated has no root_misplaced_recovery reference
+PASS: active audit memo is still included in integrated
+============================================================
+SUMMARY
+============================================================
+RESULT: PASS
+REPORT=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/90.meta/20260425_170147_NameCardManager_root_recovery_externalized/000_NameCardManager_RECOVERY_EXTERNALIZE_REPORT.txt
+OUT_DIR=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/90.meta/20260425_170147_NameCardManager_root_recovery_externalized
+INTEGRATED=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md

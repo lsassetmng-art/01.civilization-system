@@ -1,25 +1,392 @@
 # ============================================================
 # LIFE PLANNER INTEGRATED CANONICAL
-# regenerated
 # ============================================================
 
-status: integrated-regenerated
-system: LifePlanner
+status: regenerated
 owner: Boss
 prepared_by: Zero
-schema: life
-generated_at: 2026-04-15 06:06:02 +0900
-source_root: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner
-source_file_count: 381
+generated_at: 2026-04-21
+regeneration_reason: pricing canonical sync
+app_root: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner
+output_file: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000002_LIFE_PLANNER_INTEGRATED_CANONICAL.md
 
-generation_policy:
-  - existing integrated file was excluded from source scan
-  - backup files were excluded
-  - files were merged in lexicographical path order
+source_file_count: 367
 
+source_files:
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000000_LIFE_PLANNER_ROOT_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000001_LIFE_PLANNER_ROOT_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000003_LIFE_PLANNER_DESIGN_MASTER_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000004_LIFE_PLANNER_FINAL_DESIGN_STATUS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000005_LIFE_PLANNER_PRE_IMPLEMENTATION_HANDOFF.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000006_LIFE_PLANNER_DESIGN_FREEZE_RECOMMENDATION.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000_LIFE_PLANNER_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000001_LIFE_PLANNER_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000002_LIFE_PLANNER_CANONICAL.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100004_LIFE_PLANNER_CORE_PRINCIPLES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100000_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100001_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100002_LIFE_PLANNER_CORE_PRINCIPLES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100003_LIFE_PLANNER_SCOPE_AND_BOUNDARY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000000_CONSTITUTION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000001_CONSTITUTION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000_CONSTITUTION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100001_LIFE_PLANNER_CONSTITUTION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100000_APPLICATION_ARCHITECTURE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100001_APPLICATION_ARCHITECTURE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200004_LIFE_PLANNER_SYSTEM_ARCHITECTURE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000000_ARCHITECTURE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000001_ARCHITECTURE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000_ARCHITECTURE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200001_LIFE_PLANNER_ARCHITECTURE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300002_MODEL_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300004_LIFE_PLANNER_DOMAIN_MODEL.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100000_DOMAIN_MODEL_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100001_DOMAIN_MODEL_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100002_LIFE_PLANNER_DOMAIN_MODEL.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200000_LOGICAL_SCHEMA_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200001_LOGICAL_SCHEMA_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200002_LIFE_PLANNER_LOGICAL_SCHEMA_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200003_LIFE_PLANNER_LOGICAL_TABLE_LIFE_PLAN.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200004_LIFE_PLANNER_LOGICAL_TABLE_GOAL_AND_MILESTONE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200005_LIFE_PLANNER_LOGICAL_TABLE_EVENT_TIMELINE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200006_LIFE_PLANNER_LOGICAL_TABLE_REVIEW_AND_REFLECTION.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200007_LIFE_PLANNER_LOGICAL_TABLE_FAMILY_SHARE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200008_LIFE_PLANNER_LOGICAL_TABLE_SCENARIO_AND_DECISION.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200009_LIFE_PLANNER_LOGICAL_RELATIONSHIP_NOTE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300000_BINDING_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300001_BINDING_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300002_LIFE_PLANNER_SCREEN_ITEM_TO_LOGICAL_TABLE_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300003_LIFE_PLANNER_ENTITY_SCOPE_AND_DERIVED_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000000_MODEL_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000001_MODEL_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000_MODEL_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300001_LIFE_PLANNER_MODEL_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400000_MASTER_DEFINITION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400001_MASTER_DEFINITION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400002_LIFE_PLANNER_CATEGORY_MASTER.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400003_LIFE_PLANNER_ENUM_MASTER.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400004_LIFE_PLANNER_SENSITIVE_SCOPE_MASTER.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500000_DERIVED_DEFINITION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500001_DERIVED_DEFINITION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500002_LIFE_PLANNER_DERIVED_METRIC_CATALOG.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500003_LIFE_PLANNER_HOME_AND_PLAN_SUMMARY_DERIVED_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500004_LIFE_PLANNER_DOMAIN_AND_AGE_DERIVED_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400004_LIFE_PLANNER_RUNTIME_BEHAVIOR.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100000_LIFECYCLE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100001_LIFECYCLE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100002_LIFE_PLANNER_RUNTIME_LIFECYCLE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200000_STATE_MACHINE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200001_STATE_MACHINE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200002_LIFE_PLANNER_PLAN_STATE_MACHINE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200003_LIFE_PLANNER_GOAL_AND_MILESTONE_STATE_MACHINE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200004_LIFE_PLANNER_TIMELINE_AND_REVIEW_STATE_MACHINE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200005_LIFE_PLANNER_REFLECTION_SHARE_SCENARIO_STATE_MACHINE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300000_COLLABORATION_RUNTIME_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300001_COLLABORATION_RUNTIME_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300002_LIFE_PLANNER_SHARED_EDIT_RUNTIME_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300003_LIFE_PLANNER_OWNER_CONFIRMATION_RUNTIME.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300004_LIFE_PLANNER_CONFLICT_CASE_RUNTIME.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000000_RUNTIME_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000001_RUNTIME_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000_RUNTIME_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400001_LIFE_PLANNER_RUNTIME_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500002_FLOW_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500004_LIFE_PLANNER_USER_FLOW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100000_USER_FLOW_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100001_USER_FLOW_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100002_LIFE_PLANNER_CORE_USER_FLOWS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100003_LIFE_PLANNER_SCREEN_TRANSITION_MAP.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100004_LIFE_PLANNER_MAIN_SCENARIO_TRANSITIONS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000000_FLOW_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000001_FLOW_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000_FLOW_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500001_LIFE_PLANNER_FLOW_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600004_LIFE_PLANNER_INTEGRATION_BOUNDARY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100000_LIFEOS_LINK_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100001_LIFEOS_LINK_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100002_LIFE_PLANNER_LIFEOS_INTEGRATION_BOUNDARY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200000_PAYLOAD_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200001_PAYLOAD_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200002_LIFE_PLANNER_PAYLOAD_COMMON_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200003_LIFE_PLANNER_PLAN_REQUEST_RESPONSE_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200004_LIFE_PLANNER_GOAL_REQUEST_RESPONSE_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200005_LIFE_PLANNER_TIMELINE_REQUEST_RESPONSE_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200006_LIFE_PLANNER_REVIEW_REFLECTION_REQUEST_RESPONSE_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200007_LIFE_PLANNER_FAMILY_SHARE_REQUEST_RESPONSE_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200008_LIFE_PLANNER_SCENARIO_REQUEST_RESPONSE_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200009_LIFE_PLANNER_ERROR_RESPONSE_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300000_CONTRACT_BINDING_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300001_CONTRACT_BINDING_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300002_LIFE_PLANNER_PAYLOAD_TO_LOGICAL_TABLE_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300003_LIFE_PLANNER_OPERATION_WRITE_IMPACT_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400000_CONNECTED_APP_ASSUMPTION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400001_CONNECTED_APP_ASSUMPTION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400002_LIFE_PLANNER_INBOUND_APP_ASSUMPTION_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400003_LIFE_PLANNER_REFLECTION_CANDIDATE_SOURCE_MAPPING.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000000_INTEGRATION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000001_INTEGRATION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000_INTEGRATION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600001_LIFE_PLANNER_INTEGRATION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700004_LIFE_PLANNER_OPERATIONS_GUIDE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100000_PLAN_OPS_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100001_PLAN_OPS_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100002_LIFE_PLANNER_OPERATION_GUIDE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200000_NOTIFICATION_REVIEW_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200001_NOTIFICATION_REVIEW_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200002_LIFE_PLANNER_NOTIFICATION_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200003_LIFE_PLANNER_REVIEW_CYCLE_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200004_LIFE_PLANNER_NOTIFICATION_EVENT_CATALOG.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300000_DATA_LIFECYCLE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300001_DATA_LIFECYCLE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300002_LIFE_PLANNER_PLAN_LIFECYCLE_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300003_LIFE_PLANNER_SHARED_MEMBER_LIFECYCLE_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300004_LIFE_PLANNER_LONG_TERM_OPERATION_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400000_CHECKLIST_RISK_VALUE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400001_CHECKLIST_RISK_VALUE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400002_LIFE_PLANNER_FUTURE_CHECKLIST_OPERATION_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400003_LIFE_PLANNER_RISK_LIST_OPERATION_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400004_LIFE_PLANNER_VALUE_WORK_OPERATION_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500000_RECOMMENDATION_RULES_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500001_RECOMMENDATION_RULES_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500002_LIFE_PLANNER_REVIEW_NEEDED_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500003_LIFE_PLANNER_HOME_RECOMMENDATION_PRIORITY_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500004_LIFE_PLANNER_SCENARIO_AND_REFLECTION_RECOMMENDATION_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000000_OPERATIONS_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000001_OPERATIONS_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000_OPERATIONS_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700001_LIFE_PLANNER_OPERATIONS_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800002_POLICY_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800004_LIFE_PLANNER_POLICY_SET.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100000_PRIVACY_PRICING_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100001_PRIVACY_PRICING_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100002_LIFE_PLANNER_PRIVACY_SHARING_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100003_LIFE_PLANNER_PRICING_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200000_VALIDATION_RULES_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200001_VALIDATION_RULES_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200002_LIFE_PLANNER_PLAN_AND_GOAL_VALIDATION_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200003_LIFE_PLANNER_TIMELINE_AND_REVIEW_VALIDATION_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200004_LIFE_PLANNER_SHARE_SCENARIO_REFLECTION_VALIDATION_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200005_LIFE_PLANNER_UI_BLOCKING_AND_ERROR_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300000_AI_ASSIST_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300001_AI_ASSIST_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300002_LIFE_PLANNER_AI_ASSIST_SCOPE_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300003_LIFE_PLANNER_AI_ASSIST_INTERACTION_PATTERNS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300004_LIFE_PLANNER_AI_ASSIST_SAFETY_AND_GUARDRAILS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400000_COPY_POLICY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400001_COPY_POLICY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400002_LIFE_PLANNER_COPY_TONE_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400003_LIFE_PLANNER_SENSITIVE_COPY_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500000_RETENTION_DELETION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500001_RETENTION_DELETION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500002_LIFE_PLANNER_RETENTION_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500003_LIFE_PLANNER_ARCHIVE_DELETE_RESTORE_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500004_LIFE_PLANNER_OWNERSHIP_CONTINUITY_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600000_CONFLICT_CHANGE_CONTROL_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600001_CONFLICT_CHANGE_CONTROL_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600002_LIFE_PLANNER_CONFLICT_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600003_LIFE_PLANNER_CHANGE_PROPOSAL_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600004_LIFE_PLANNER_ACTIVITY_HISTORY_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700000_SETTINGS_DEFAULTS_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700001_SETTINGS_DEFAULTS_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700002_LIFE_PLANNER_NOTIFICATION_DEFAULT_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700003_LIFE_PLANNER_DISPLAY_DEFAULT_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700004_LIFE_PLANNER_REVIEW_AND_ASSIST_DEFAULT_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000000_POLICY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000001_POLICY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000_POLICY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800001_LIFE_PLANNER_POLICY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900004_LIFE_PLANNER_INTERFACE_SPEC.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100000_SCREEN_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100001_SCREEN_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100002_LIFE_PLANNER_SCREEN_INVENTORY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100003_LIFE_PLANNER_SCREEN_TRANSITION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100004_LIFE_PLANNER_HOME_AND_PLAN_DETAIL_TRANSITIONS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100005_LIFE_PLANNER_FAMILY_SHARE_TRANSITIONS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100006_LIFE_PLANNER_SCENARIO_COMPARE_TRANSITIONS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100007_LIFE_PLANNER_REFLECTION_CANDIDATE_TRANSITIONS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200000_SCREEN_ITEM_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200001_SCREEN_ITEM_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200002_LIFE_PLANNER_SCREEN_ITEM_COMMON_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200003_LIFE_PLANNER_HOME_SCREEN_ITEM_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200004_LIFE_PLANNER_PLAN_DETAIL_SCREEN_ITEM_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200005_LIFE_PLANNER_PLAN_CREATE_EDIT_SCREEN_ITEM_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200006_LIFE_PLANNER_FAMILY_SHARE_SCREEN_ITEM_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200007_LIFE_PLANNER_SCENARIO_COMPARE_SCREEN_ITEM_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200008_LIFE_PLANNER_REFLECTION_CANDIDATE_SCREEN_ITEM_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200009_LIFE_PLANNER_SCREEN_ITEM_BINDING_NOTE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300000_ACCESS_CONTROL_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300001_ACCESS_CONTROL_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300002_LIFE_PLANNER_ROLE_VISIBILITY_EDITABILITY_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300003_LIFE_PLANNER_SCREEN_ACCESS_RULES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400000_DASHBOARD_DISPLAY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400001_DASHBOARD_DISPLAY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400002_LIFE_PLANNER_HOME_DASHBOARD_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400003_LIFE_PLANNER_DOMAIN_DASHBOARD_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400004_LIFE_PLANNER_AGE_VIEW_AND_SUMMARY_DISPLAY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500000_ONBOARDING_TEMPLATE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500001_ONBOARDING_TEMPLATE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500002_LIFE_PLANNER_FIRST_RUN_FLOW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500003_LIFE_PLANNER_INITIAL_SETUP_WIZARD_ITEMS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500004_LIFE_PLANNER_TEMPLATE_CATALOG_DRAFT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600000_SEARCH_FILTER_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600001_SEARCH_FILTER_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600002_LIFE_PLANNER_PLAN_SEARCH_FILTER_SORT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600003_LIFE_PLANNER_GOAL_SEARCH_FILTER_SORT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600004_LIFE_PLANNER_EVENT_SEARCH_FILTER_SORT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700000_EXPORT_SUMMARY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700001_EXPORT_SUMMARY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700002_LIFE_PLANNER_SUMMARY_VIEW_DESIGN.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700003_LIFE_PLANNER_PRINT_AND_SHARE_VIEW_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700004_LIFE_PLANNER_FAMILY_MEETING_SUMMARY_DESIGN.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800000_COPY_STATE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800001_COPY_STATE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800002_LIFE_PLANNER_EMPTY_STATE_COPY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800003_LIFE_PLANNER_ERROR_STATE_COPY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800004_LIFE_PLANNER_SUCCESS_STATE_COPY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800005_LIFE_PLANNER_UPGRADE_AND_GUIDE_COPY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800006_LIFE_PLANNER_NOTIFICATION_AND_REVIEW_COPY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900000_ARCHIVE_DELETE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900001_ARCHIVE_DELETE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900002_LIFE_PLANNER_ARCHIVE_DELETE_UI_FLOW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900003_LIFE_PLANNER_RESTORE_UI_FLOW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900004_LIFE_PLANNER_RETENTION_COPY_GUIDE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000000_INTERFACE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000001_INTERFACE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000_INTERFACE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900001_LIFE_PLANNER_INTERFACE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000000_CHANGE_REVIEW_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000001_CHANGE_REVIEW_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000002_LIFE_PLANNER_CONFLICT_REVIEW_UI.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000003_LIFE_PLANNER_OWNER_REVIEW_QUEUE_UI.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000004_LIFE_PLANNER_ACTIVITY_HISTORY_UI.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100000_SETTINGS_WORKBOOK_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100001_SETTINGS_WORKBOOK_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100002_LIFE_PLANNER_SETTINGS_SCREEN_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100003_LIFE_PLANNER_CHECKLIST_RISK_VALUE_SCREEN_EXACT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100004_LIFE_PLANNER_WORKBOOK_COPY_GUIDE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200000_INDICATOR_SCORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200001_INDICATOR_SCORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200002_LIFE_PLANNER_BADGE_AND_INDICATOR_DESIGN.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200003_LIFE_PLANNER_REVIEW_AND_PROGRESS_SCORE_DISPLAY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200004_LIFE_PLANNER_HOME_ATTENTION_CARD_DESIGN.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000002_SECURITY_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000004_LIFE_PLANNER_SECURITY_MODEL.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100000_DATA_PROTECTION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100001_DATA_PROTECTION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100002_LIFE_PLANNER_SECURITY_AND_DATA_PROTECTION.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000000_SECURITY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000001_SECURITY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000_SECURITY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000001_LIFE_PLANNER_SECURITY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100004_LIFE_PLANNER_INFRASTRUCTURE_PROFILE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100000_DEVICE_PLATFORM_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100001_DEVICE_PLATFORM_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100002_LIFE_PLANNER_DEVICE_PLATFORM_ASSUMPTIONS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200000_LOCALIZATION_DEVICE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200001_LOCALIZATION_DEVICE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200002_LIFE_PLANNER_MULTILINGUAL_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200003_LIFE_PLANNER_MULTICURRENCY_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200004_LIFE_PLANNER_MULTI_DEVICE_DISPLAY_POLICY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000000_INFRASTRUCTURE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000001_INFRASTRUCTURE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100001_LIFE_PLANNER_INFRASTRUCTURE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200004_LIFE_PLANNER_IMPLEMENTATION_PLAN.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100000_RELEASE_PLAN_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100001_RELEASE_PLAN_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100002_LIFE_PLANNER_PHASED_IMPLEMENTATION_PLAN.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200000_SCOPE_MATRIX_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200001_SCOPE_MATRIX_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200002_LIFE_PLANNER_PHASE_AND_PLAN_SCOPE_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200003_LIFE_PLANNER_SCREEN_AND_FEATURE_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300000_READINESS_GATE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300001_READINESS_GATE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300002_LIFE_PLANNER_DESIGN_FREEZE_CHECKLIST.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300003_LIFE_PLANNER_IMPLEMENTATION_START_GATE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400000_ACCEPTANCE_CRITERIA_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400001_ACCEPTANCE_CRITERIA_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400002_LIFE_PLANNER_CORE_SCENARIO_ACCEPTANCE_CRITERIA.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400003_LIFE_PLANNER_ROLE_AND_PLAN_ACCEPTANCE_CRITERIA.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400004_LIFE_PLANNER_POLICY_AND_DATA_ACCEPTANCE_CRITERIA.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600000_PRE_IMPLEMENTATION_PACKAGE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600001_PRE_IMPLEMENTATION_PACKAGE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600002_LIFE_PLANNER_IMPLEMENTATION_DEFERRAL_BOUNDARY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600003_LIFE_PLANNER_PHASE1_IMPLEMENTATION_PREP_SCOPE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600004_LIFE_PLANNER_NON_BLOCKING_LATER_SCOPE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000000_IMPLEMENTATION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000001_IMPLEMENTATION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200001_LIFE_PLANNER_IMPLEMENTATION_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100000_BACKLOG_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100001_BACKLOG_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100002_LIFE_PLANNER_NEXT_ACTIONS.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300004_LIFE_PLANNER_DEVELOPMENT_ROADMAP.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300000_DECISION_LOG_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300001_DECISION_LOG_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300002_LIFE_PLANNER_FIXED_DECISIONS_LOG.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400000_OPEN_ISSUES_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400001_OPEN_ISSUES_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400002_LIFE_PLANNER_OPEN_ISSUES_LEDGER.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400003_LIFE_PLANNER_RECOMMENDED_NEXT_DESIGN_BATCH.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500000_DESIGN_AUDIT_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500001_DESIGN_AUDIT_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500002_LIFE_PLANNER_CONSISTENCY_AUDIT_CHECKLIST.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500004_LIFE_PLANNER_PRE_IMPLEMENTATION_AUDIT_NOTE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600000_TRACEABILITY_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600001_TRACEABILITY_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600002_LIFE_PLANNER_REQUIREMENT_TO_DOCUMENT_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600003_LIFE_PLANNER_SCREEN_PAYLOAD_MODEL_TRACE_MATRIX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700000_EDGE_CASES_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700001_EDGE_CASES_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700002_LIFE_PLANNER_PERMISSION_EDGE_CASES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700003_LIFE_PLANNER_DATE_CURRENCY_EDGE_CASES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700004_LIFE_PLANNER_STATE_AND_INTEGRATION_EDGE_CASES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800000_FINAL_HANDOFF_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800001_FINAL_HANDOFF_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800002_LIFE_PLANNER_DESIGN_COMPLETION_SUMMARY.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800003_LIFE_PLANNER_BLOCKING_AND_NON_BLOCKING_ISSUES.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800004_LIFE_PLANNER_NEXT_CHAT_HANDOFF_NOTE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900000_CLOSE_PACKAGE_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900001_CLOSE_PACKAGE_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900002_LIFE_PLANNER_FINAL_CLOSE_PACKAGE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900003_LIFE_PLANNER_DOCUMENT_COVERAGE_LEDGER.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900004_LIFE_PLANNER_FREEZE_RECOMMENDATION_NOTE.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900005_LIFE_PLANNER_FINAL_READING_SHORTCUT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000000_DEVELOPMENT_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000001_DEVELOPMENT_OVERVIEW.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000_DEVELOPMENT_INDEX.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300001_LIFE_PLANNER_DEVELOPMENT_OVERVIEW.md
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000000_LIFE_PLANNER_ROOT_INDEX.md -->
 
 
 # ============================================================
+
 <!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
 # ============================================================
 # LIFE COMMON UI REQUIREMENT
@@ -30,10 +397,6 @@ generation_policy:
 - 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
 - 本要件は Life 系全アプリ共通の必須要件として扱う。
 
-# SOURCE FILE: 0000000000_LIFE_PLANNER_ROOT_INDEX.md
-# ============================================================
-
-# ============================================================
 # LIFE PLANNER ROOT INDEX
 # ============================================================
 
@@ -69,11 +432,23 @@ note:
   - 人生計画表、年表、目標、費用概算、見直し履歴を中核とする
 
 
-# ============================================================
-# SOURCE FILE: 0000000001_LIFE_PLANNER_ROOT_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000000_LIFE_PLANNER_ROOT_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000001_LIFE_PLANNER_ROOT_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER ROOT OVERVIEW
 # ============================================================
 
@@ -104,11 +479,23 @@ device_support:
   - Tablet
 
 
-# ============================================================
-# SOURCE FILE: 0000000003_LIFE_PLANNER_DESIGN_MASTER_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000001_LIFE_PLANNER_ROOT_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000003_LIFE_PLANNER_DESIGN_MASTER_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER DESIGN MASTER INDEX
 # ============================================================
 
@@ -171,9 +558,9 @@ note:
   - 最後に scope matrix と open issues を確認する
 
 
-# ============================================================
-# SOURCE FILE: 0000000004_LIFE_PLANNER_FINAL_DESIGN_STATUS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000003_LIFE_PLANNER_DESIGN_MASTER_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000004_LIFE_PLANNER_FINAL_DESIGN_STATUS.md -->
 
 # ============================================================
 # LIFE PLANNER FINAL DESIGN STATUS
@@ -225,9 +612,9 @@ final_design_position:
   - 次にやるべきは実装ではなく、必要なら最終監査と軽微修正である
 
 
-# ============================================================
-# SOURCE FILE: 0000000005_LIFE_PLANNER_PRE_IMPLEMENTATION_HANDOFF.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000004_LIFE_PLANNER_FINAL_DESIGN_STATUS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000005_LIFE_PLANNER_PRE_IMPLEMENTATION_HANDOFF.md -->
 
 # ============================================================
 # LIFE PLANNER PRE IMPLEMENTATION HANDOFF
@@ -265,9 +652,9 @@ do_not_do_yet:
   - connector-specific runtime assumptions beyond current design docs
 
 
-# ============================================================
-# SOURCE FILE: 0000000006_LIFE_PLANNER_DESIGN_FREEZE_RECOMMENDATION.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000005_LIFE_PLANNER_PRE_IMPLEMENTATION_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000006_LIFE_PLANNER_DESIGN_FREEZE_RECOMMENDATION.md -->
 
 # ============================================================
 # LIFE PLANNER DESIGN FREEZE RECOMMENDATION
@@ -302,11 +689,23 @@ non_blocking_after_freeze:
   - export format refinement
 
 
-# ============================================================
-# SOURCE FILE: 0000000_LIFE_PLANNER_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000006_LIFE_PLANNER_DESIGN_FREEZE_RECOMMENDATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000_LIFE_PLANNER_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER INDEX
 # ============================================================
 
@@ -341,11 +740,23 @@ read_order:
   - 130.development/1300000_DEVELOPMENT_INDEX.md
 
 
-# ============================================================
-# SOURCE FILE: 0000001_LIFE_PLANNER_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000000_LIFE_PLANNER_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000001_LIFE_PLANNER_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER OVERVIEW
 # ============================================================
 
@@ -381,8 +792,7 @@ core_functions:
 
 pricing:
   free: 0
-  plus: 500
-  family: 800
+  family: 500
 
 non_goals:
   - 専門家判断の代替
@@ -391,9 +801,9 @@ non_goals:
   - ERP/BusinessOS の正式業務管理正本化
 
 
-# ============================================================
-# SOURCE FILE: 0000002_LIFE_PLANNER_CANONICAL.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000001_LIFE_PLANNER_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000002_LIFE_PLANNER_CANONICAL.md -->
 
 # ============================================================
 # LIFE PLANNER CANONICAL
@@ -447,11 +857,23 @@ ai_support:
     - 有資格者を装う表現
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/0000002_LIFE_PLANNER_CANONICAL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONSTITUTION CORE INDEX
 # ============================================================
 
@@ -470,11 +892,23 @@ includes:
   - 0100004_LIFE_PLANNER_CORE_PRINCIPLES.md
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONSTITUTION CORE OVERVIEW
 # ============================================================
 
@@ -493,9 +927,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/010.core/0100004_LIFE_PLANNER_CORE_PRINCIPLES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100004_LIFE_PLANNER_CORE_PRINCIPLES.md -->
 
 # ============================================================
 # LIFE PLANNER CORE PRINCIPLES
@@ -525,11 +959,23 @@ boundaries:
   - 他アプリ正本を置き換えない
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/010.core/0100100000_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100004_LIFE_PLANNER_CORE_PRINCIPLES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100000_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CORE INDEX
 # ============================================================
 
@@ -543,11 +989,23 @@ documents:
   - 0100100003_LIFE_PLANNER_SCOPE_AND_BOUNDARY.md
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/010.core/0100100001_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100000_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100001_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CORE OVERVIEW
 # ============================================================
 
@@ -560,9 +1018,9 @@ topics:
   - review-first principle
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/010.core/0100100002_LIFE_PLANNER_CORE_PRINCIPLES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100001_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100002_LIFE_PLANNER_CORE_PRINCIPLES.md -->
 
 # ============================================================
 # LIFE PLANNER CORE PRINCIPLES
@@ -578,9 +1036,9 @@ principles:
   - 共有は常に明示設定とする
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/010.core/0100100003_LIFE_PLANNER_SCOPE_AND_BOUNDARY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100002_LIFE_PLANNER_CORE_PRINCIPLES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100003_LIFE_PLANNER_SCOPE_AND_BOUNDARY.md -->
 
 # ============================================================
 # LIFE PLANNER SCOPE AND BOUNDARY
@@ -607,11 +1065,23 @@ boundary:
   - LifePlannerは人生計画の正本を持つ
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/0100000000_CONSTITUTION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/010.core/0100100003_LIFE_PLANNER_SCOPE_AND_BOUNDARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000000_CONSTITUTION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONSTITUTION INDEX
 # ============================================================
 
@@ -625,11 +1095,23 @@ subfolders:
   - 010.core
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/0100000001_CONSTITUTION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000000_CONSTITUTION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000001_CONSTITUTION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONSTITUTION OVERVIEW
 # ============================================================
 
@@ -646,11 +1128,23 @@ core_rules:
   - 家族共有は明示設定のみ
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/0100000_CONSTITUTION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000001_CONSTITUTION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000_CONSTITUTION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONSTITUTION INDEX
 # ============================================================
 
@@ -670,11 +1164,23 @@ includes:
   - 010.core/0100004_LIFE_PLANNER_CORE_PRINCIPLES.md
 
 
-# ============================================================
-# SOURCE FILE: 010.constitution/0100001_LIFE_PLANNER_CONSTITUTION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100000_CONSTITUTION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100001_LIFE_PLANNER_CONSTITUTION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER CONSTITUTION OVERVIEW
 # ============================================================
 
@@ -697,11 +1203,23 @@ summary:
   - 専門領域アプリとの役割分担を明文化する
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/010.application/0200100000_APPLICATION_ARCHITECTURE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/010.constitution/0100001_LIFE_PLANNER_CONSTITUTION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100000_APPLICATION_ARCHITECTURE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # APPLICATION ARCHITECTURE INDEX
 # ============================================================
 
@@ -713,11 +1231,23 @@ documents:
   - 0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/010.application/0200100001_APPLICATION_ARCHITECTURE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100000_APPLICATION_ARCHITECTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100001_APPLICATION_ARCHITECTURE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # APPLICATION ARCHITECTURE OVERVIEW
 # ============================================================
 
@@ -729,11 +1259,23 @@ topics:
   - 見直し候補反映
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/010.application/0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100001_APPLICATION_ARCHITECTURE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER APPLICATION ARCHITECTURE
 # ============================================================
 
@@ -758,11 +1300,23 @@ architecture_rules:
   - 他アプリ情報は反映候補として保持する
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.application/0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ARCHITECTURE CORE INDEX
 # ============================================================
 
@@ -781,11 +1335,23 @@ includes:
   - 0200004_LIFE_PLANNER_SYSTEM_ARCHITECTURE.md
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ARCHITECTURE CORE OVERVIEW
 # ============================================================
 
@@ -804,11 +1370,23 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/010.core/0200004_LIFE_PLANNER_SYSTEM_ARCHITECTURE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200004_LIFE_PLANNER_SYSTEM_ARCHITECTURE.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SYSTEM ARCHITECTURE
 # ============================================================
 
@@ -839,11 +1417,23 @@ bridge_rules:
   - 共通部品の詳細定義は別正本を参照する
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/0200000000_ARCHITECTURE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/010.core/0200004_LIFE_PLANNER_SYSTEM_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000000_ARCHITECTURE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ARCHITECTURE INDEX
 # ============================================================
 
@@ -857,11 +1447,23 @@ subfolders:
   - 010.application
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/0200000001_ARCHITECTURE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000000_ARCHITECTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000001_ARCHITECTURE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ARCHITECTURE OVERVIEW
 # ============================================================
 
@@ -873,11 +1475,23 @@ focus:
   - 受信連携と見直し導線
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/0200000_ARCHITECTURE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000001_ARCHITECTURE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000_ARCHITECTURE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ARCHITECTURE INDEX
 # ============================================================
 
@@ -897,11 +1511,23 @@ includes:
   - 010.core/0200004_LIFE_PLANNER_SYSTEM_ARCHITECTURE.md
 
 
-# ============================================================
-# SOURCE FILE: 020.architecture/0200001_LIFE_PLANNER_ARCHITECTURE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200000_ARCHITECTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200001_LIFE_PLANNER_ARCHITECTURE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER ARCHITECTURE OVERVIEW
 # ============================================================
 
@@ -924,11 +1550,23 @@ summary:
   - 共通部品は外部正本を参照する前提にする
 
 
-# ============================================================
-# SOURCE FILE: 030.model/010.core/0300002_MODEL_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/020.architecture/0200001_LIFE_PLANNER_ARCHITECTURE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300002_MODEL_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # MODEL CORE INDEX
 # ============================================================
 
@@ -947,11 +1585,23 @@ includes:
   - 0300004_LIFE_PLANNER_DOMAIN_MODEL.md
 
 
-# ============================================================
-# SOURCE FILE: 030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300002_MODEL_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # MODEL CORE OVERVIEW
 # ============================================================
 
@@ -970,9 +1620,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 030.model/010.core/0300004_LIFE_PLANNER_DOMAIN_MODEL.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300004_LIFE_PLANNER_DOMAIN_MODEL.md -->
 
 # ============================================================
 # LIFE PLANNER DOMAIN MODEL
@@ -1012,11 +1662,23 @@ model_rules:
   - 家族共有は正本移譲ではなく共有ビューとして扱う
 
 
-# ============================================================
-# SOURCE FILE: 030.model/010.domain/0300100000_DOMAIN_MODEL_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.core/0300004_LIFE_PLANNER_DOMAIN_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100000_DOMAIN_MODEL_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DOMAIN MODEL INDEX
 # ============================================================
 
@@ -1028,11 +1690,23 @@ documents:
   - 0300100002_LIFE_PLANNER_DOMAIN_MODEL.md
 
 
-# ============================================================
-# SOURCE FILE: 030.model/010.domain/0300100001_DOMAIN_MODEL_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100000_DOMAIN_MODEL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100001_DOMAIN_MODEL_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DOMAIN MODEL OVERVIEW
 # ============================================================
 
@@ -1044,9 +1718,9 @@ topics:
   - review history
 
 
-# ============================================================
-# SOURCE FILE: 030.model/010.domain/0300100002_LIFE_PLANNER_DOMAIN_MODEL.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100001_DOMAIN_MODEL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100002_LIFE_PLANNER_DOMAIN_MODEL.md -->
 
 # ============================================================
 # LIFE PLANNER DOMAIN MODEL
@@ -1117,11 +1791,23 @@ relations:
   - review_log belongs to life_plan
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200000_LOGICAL_SCHEMA_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/010.domain/0300100002_LIFE_PLANNER_DOMAIN_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200000_LOGICAL_SCHEMA_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LOGICAL SCHEMA INDEX
 # ============================================================
 
@@ -1146,11 +1832,23 @@ documents:
   - 0300200009_LIFE_PLANNER_LOGICAL_RELATIONSHIP_NOTE.md
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200001_LOGICAL_SCHEMA_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200000_LOGICAL_SCHEMA_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200001_LOGICAL_SCHEMA_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LOGICAL SCHEMA OVERVIEW
 # ============================================================
 
@@ -1184,9 +1882,9 @@ policy:
   - derived項目は原則テーブルに持たない
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200002_LIFE_PLANNER_LOGICAL_SCHEMA_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200001_LOGICAL_SCHEMA_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200002_LIFE_PLANNER_LOGICAL_SCHEMA_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL SCHEMA POLICY
@@ -1231,9 +1929,9 @@ derived_not_stored_examples:
   - review_needed_count
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200003_LIFE_PLANNER_LOGICAL_TABLE_LIFE_PLAN.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200002_LIFE_PLANNER_LOGICAL_SCHEMA_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200003_LIFE_PLANNER_LOGICAL_TABLE_LIFE_PLAN.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL TABLE
@@ -1322,9 +2020,9 @@ related_tables:
   - life.life_scenario_decision
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200004_LIFE_PLANNER_LOGICAL_TABLE_GOAL_AND_MILESTONE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200003_LIFE_PLANNER_LOGICAL_TABLE_LIFE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200004_LIFE_PLANNER_LOGICAL_TABLE_GOAL_AND_MILESTONE.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL TABLE
@@ -1474,9 +2172,9 @@ table_02:
       note: 更新日時
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200005_LIFE_PLANNER_LOGICAL_TABLE_EVENT_TIMELINE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200004_LIFE_PLANNER_LOGICAL_TABLE_GOAL_AND_MILESTONE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200005_LIFE_PLANNER_LOGICAL_TABLE_EVENT_TIMELINE.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL TABLE
@@ -1580,9 +2278,9 @@ logical_constraints:
   - end_date >= start_date
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200006_LIFE_PLANNER_LOGICAL_TABLE_REVIEW_AND_REFLECTION.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200005_LIFE_PLANNER_LOGICAL_TABLE_EVENT_TIMELINE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200006_LIFE_PLANNER_LOGICAL_TABLE_REVIEW_AND_REFLECTION.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL TABLE
@@ -1727,9 +2425,9 @@ table_02:
       note: 更新日時
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200007_LIFE_PLANNER_LOGICAL_TABLE_FAMILY_SHARE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200006_LIFE_PLANNER_LOGICAL_TABLE_REVIEW_AND_REFLECTION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200007_LIFE_PLANNER_LOGICAL_TABLE_FAMILY_SHARE.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL TABLE
@@ -1825,9 +2523,9 @@ logical_constraints:
   - member_user_id は owner_user_id と同一不可
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200008_LIFE_PLANNER_LOGICAL_TABLE_SCENARIO_AND_DECISION.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200007_LIFE_PLANNER_LOGICAL_TABLE_FAMILY_SHARE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200008_LIFE_PLANNER_LOGICAL_TABLE_SCENARIO_AND_DECISION.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL TABLE
@@ -1948,9 +2646,9 @@ table_02:
       note: 判断日時
 
 
-# ============================================================
-# SOURCE FILE: 030.model/020.logical-schema/0300200009_LIFE_PLANNER_LOGICAL_RELATIONSHIP_NOTE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200008_LIFE_PLANNER_LOGICAL_TABLE_SCENARIO_AND_DECISION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200009_LIFE_PLANNER_LOGICAL_RELATIONSHIP_NOTE.md -->
 
 # ============================================================
 # LIFE PLANNER LOGICAL RELATIONSHIP NOTE
@@ -2000,11 +2698,23 @@ implementation_note:
   - まずは論理責務の固定を優先する
 
 
-# ============================================================
-# SOURCE FILE: 030.model/030.binding/0300300000_BINDING_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/020.logical-schema/0300200009_LIFE_PLANNER_LOGICAL_RELATIONSHIP_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300000_BINDING_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # BINDING INDEX
 # ============================================================
 
@@ -2023,11 +2733,23 @@ documents:
   - 0300300003_LIFE_PLANNER_ENTITY_SCOPE_AND_DERIVED_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 030.model/030.binding/0300300001_BINDING_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300000_BINDING_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300001_BINDING_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # BINDING OVERVIEW
 # ============================================================
 
@@ -2053,11 +2775,22 @@ scope:
   - reflection candidate
 
 
-# ============================================================
-# SOURCE FILE: 030.model/030.binding/0300300002_LIFE_PLANNER_SCREEN_ITEM_TO_LOGICAL_TABLE_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300001_BINDING_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300002_LIFE_PLANNER_SCREEN_ITEM_TO_LOGICAL_TABLE_MATRIX.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN ITEM TO LOGICAL TABLE MATRIX
 # ============================================================
 
@@ -2190,9 +2923,9 @@ binding_rule_summary:
   - derived 表示項目は保持せず算出する
 
 
-# ============================================================
-# SOURCE FILE: 030.model/030.binding/0300300003_LIFE_PLANNER_ENTITY_SCOPE_AND_DERIVED_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300002_LIFE_PLANNER_SCREEN_ITEM_TO_LOGICAL_TABLE_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300003_LIFE_PLANNER_ENTITY_SCOPE_AND_DERIVED_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER ENTITY SCOPE AND DERIVED POLICY
@@ -2314,11 +3047,23 @@ derived_policy:
     - 必要なら view / query / application derived として扱う
 
 
-# ============================================================
-# SOURCE FILE: 030.model/0300000000_MODEL_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/030.binding/0300300003_LIFE_PLANNER_ENTITY_SCOPE_AND_DERIVED_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000000_MODEL_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # MODEL INDEX
 # ============================================================
 
@@ -2332,11 +3077,23 @@ subfolders:
   - 010.domain
 
 
-# ============================================================
-# SOURCE FILE: 030.model/0300000001_MODEL_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000000_MODEL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000001_MODEL_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # MODEL OVERVIEW
 # ============================================================
 
@@ -2351,11 +3108,23 @@ scope:
   - review_log
 
 
-# ============================================================
-# SOURCE FILE: 030.model/0300000_MODEL_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000001_MODEL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000_MODEL_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # MODEL INDEX
 # ============================================================
 
@@ -2375,11 +3144,23 @@ includes:
   - 010.core/0300004_LIFE_PLANNER_DOMAIN_MODEL.md
 
 
-# ============================================================
-# SOURCE FILE: 030.model/0300001_LIFE_PLANNER_MODEL_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300000_MODEL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300001_LIFE_PLANNER_MODEL_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER MODEL OVERVIEW
 # ============================================================
 
@@ -2402,11 +3183,23 @@ summary:
   - 家族共有は閲覧中心で扱う
 
 
-# ============================================================
-# SOURCE FILE: 030.model/040.master-definition/0300400000_MASTER_DEFINITION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/0300001_LIFE_PLANNER_MODEL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400000_MASTER_DEFINITION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # MASTER DEFINITION INDEX
 # ============================================================
 
@@ -2426,11 +3219,23 @@ documents:
   - 0300400004_LIFE_PLANNER_SENSITIVE_SCOPE_MASTER.md
 
 
-# ============================================================
-# SOURCE FILE: 030.model/040.master-definition/0300400001_MASTER_DEFINITION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400000_MASTER_DEFINITION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400001_MASTER_DEFINITION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # MASTER DEFINITION OVERVIEW
 # ============================================================
 
@@ -2456,9 +3261,9 @@ scope:
   - sensitive scope master
 
 
-# ============================================================
-# SOURCE FILE: 030.model/040.master-definition/0300400002_LIFE_PLANNER_CATEGORY_MASTER.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400001_MASTER_DEFINITION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400002_LIFE_PLANNER_CATEGORY_MASTER.md -->
 
 # ============================================================
 # LIFE PLANNER CATEGORY MASTER
@@ -2555,9 +3360,9 @@ note:
   - legal は法的助言そのものではなく準備・記録対象の分類である
 
 
-# ============================================================
-# SOURCE FILE: 030.model/040.master-definition/0300400003_LIFE_PLANNER_ENUM_MASTER.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400002_LIFE_PLANNER_CATEGORY_MASTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400003_LIFE_PLANNER_ENUM_MASTER.md -->
 
 # ============================================================
 # LIFE PLANNER ENUM MASTER
@@ -2642,9 +3447,9 @@ enum_policy:
   - payload / schema / runtime で同じ enum を使う
 
 
-# ============================================================
-# SOURCE FILE: 030.model/040.master-definition/0300400004_LIFE_PLANNER_SENSITIVE_SCOPE_MASTER.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400003_LIFE_PLANNER_ENUM_MASTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400004_LIFE_PLANNER_SENSITIVE_SCOPE_MASTER.md -->
 
 # ============================================================
 # LIFE PLANNER SENSITIVE SCOPE MASTER
@@ -2697,11 +3502,23 @@ ui_rule:
   - 部分的なマスキングより非表示優先
 
 
-# ============================================================
-# SOURCE FILE: 030.model/050.derived-definition/0300500000_DERIVED_DEFINITION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/040.master-definition/0300400004_LIFE_PLANNER_SENSITIVE_SCOPE_MASTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500000_DERIVED_DEFINITION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DERIVED DEFINITION INDEX
 # ============================================================
 
@@ -2721,11 +3538,23 @@ documents:
   - 0300500004_LIFE_PLANNER_DOMAIN_AND_AGE_DERIVED_RULES.md
 
 
-# ============================================================
-# SOURCE FILE: 030.model/050.derived-definition/0300500001_DERIVED_DEFINITION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500000_DERIVED_DEFINITION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500001_DERIVED_DEFINITION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DERIVED DEFINITION OVERVIEW
 # ============================================================
 
@@ -2749,9 +3578,9 @@ principles:
   - mixed-currency totals should not pretend to be a single precise sum
 
 
-# ============================================================
-# SOURCE FILE: 030.model/050.derived-definition/0300500002_LIFE_PLANNER_DERIVED_METRIC_CATALOG.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500001_DERIVED_DEFINITION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500002_LIFE_PLANNER_DERIVED_METRIC_CATALOG.md -->
 
 # ============================================================
 # LIFE PLANNER DERIVED METRIC CATALOG
@@ -2859,9 +3688,9 @@ metric_policy_note:
   - metric meaning must not silently change by screen
 
 
-# ============================================================
-# SOURCE FILE: 030.model/050.derived-definition/0300500003_LIFE_PLANNER_HOME_AND_PLAN_SUMMARY_DERIVED_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500002_LIFE_PLANNER_DERIVED_METRIC_CATALOG.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500003_LIFE_PLANNER_HOME_AND_PLAN_SUMMARY_DERIVED_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER HOME AND PLAN SUMMARY DERIVED RULES
@@ -2915,9 +3744,9 @@ plan_detail_summary_rules:
     - mixed currency requires separated display or note
 
 
-# ============================================================
-# SOURCE FILE: 030.model/050.derived-definition/0300500004_LIFE_PLANNER_DOMAIN_AND_AGE_DERIVED_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500003_LIFE_PLANNER_HOME_AND_PLAN_SUMMARY_DERIVED_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500004_LIFE_PLANNER_DOMAIN_AND_AGE_DERIVED_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER DOMAIN AND AGE DERIVED RULES
@@ -2965,11 +3794,23 @@ policy_note:
   - domain and age summaries should never imply a precision beyond available data
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/030.model/050.derived-definition/0300500004_LIFE_PLANNER_DOMAIN_AND_AGE_DERIVED_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RUNTIME CORE INDEX
 # ============================================================
 
@@ -2988,11 +3829,23 @@ includes:
   - 0400004_LIFE_PLANNER_RUNTIME_BEHAVIOR.md
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RUNTIME CORE OVERVIEW
 # ============================================================
 
@@ -3011,9 +3864,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/010.core/0400004_LIFE_PLANNER_RUNTIME_BEHAVIOR.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400004_LIFE_PLANNER_RUNTIME_BEHAVIOR.md -->
 
 # ============================================================
 # LIFE PLANNER RUNTIME BEHAVIOR
@@ -3046,11 +3899,23 @@ runtime_rules:
   - AI は整理支援時のみ動作する
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/010.lifecycle/0400100000_LIFECYCLE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.core/0400004_LIFE_PLANNER_RUNTIME_BEHAVIOR.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100000_LIFECYCLE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFECYCLE INDEX
 # ============================================================
 
@@ -3062,11 +3927,23 @@ documents:
   - 0400100002_LIFE_PLANNER_RUNTIME_LIFECYCLE.md
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/010.lifecycle/0400100001_LIFECYCLE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100000_LIFECYCLE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100001_LIFECYCLE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFECYCLE OVERVIEW
 # ============================================================
 
@@ -3077,9 +3954,9 @@ topics:
   - reflection candidate cycle
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/010.lifecycle/0400100002_LIFE_PLANNER_RUNTIME_LIFECYCLE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100001_LIFECYCLE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100002_LIFE_PLANNER_RUNTIME_LIFECYCLE.md -->
 
 # ============================================================
 # LIFE PLANNER RUNTIME LIFECYCLE
@@ -3106,11 +3983,23 @@ runtime_rules:
   - 共有範囲外の情報は表示しない
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/020.state-machine/0400200000_STATE_MACHINE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/010.lifecycle/0400100002_LIFE_PLANNER_RUNTIME_LIFECYCLE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200000_STATE_MACHINE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # STATE MACHINE INDEX
 # ============================================================
 
@@ -3131,11 +4020,23 @@ documents:
   - 0400200005_LIFE_PLANNER_REFLECTION_SHARE_SCENARIO_STATE_MACHINE.md
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/020.state-machine/0400200001_STATE_MACHINE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200000_STATE_MACHINE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200001_STATE_MACHINE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # STATE MACHINE OVERVIEW
 # ============================================================
 
@@ -3169,9 +4070,9 @@ runtime_principles:
   - family_viewerは状態変更不可
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/020.state-machine/0400200002_LIFE_PLANNER_PLAN_STATE_MACHINE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200001_STATE_MACHINE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200002_LIFE_PLANNER_PLAN_STATE_MACHINE.md -->
 
 # ============================================================
 # LIFE PLANNER PLAN STATE MACHINE
@@ -3237,9 +4138,9 @@ runtime_notes:
   - archivedは参照中心で編集は制限対象
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/020.state-machine/0400200003_LIFE_PLANNER_GOAL_AND_MILESTONE_STATE_MACHINE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200002_LIFE_PLANNER_PLAN_STATE_MACHINE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200003_LIFE_PLANNER_GOAL_AND_MILESTONE_STATE_MACHINE.md -->
 
 # ============================================================
 # LIFE PLANNER GOAL AND MILESTONE STATE MACHINE
@@ -3318,9 +4219,9 @@ role_rules:
     - cannot change any state
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/020.state-machine/0400200004_LIFE_PLANNER_TIMELINE_AND_REVIEW_STATE_MACHINE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200003_LIFE_PLANNER_GOAL_AND_MILESTONE_STATE_MACHINE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200004_LIFE_PLANNER_TIMELINE_AND_REVIEW_STATE_MACHINE.md -->
 
 # ============================================================
 # LIFE PLANNER TIMELINE AND REVIEW STATE MACHINE
@@ -3373,9 +4274,9 @@ runtime_rules:
   - timeline event は parent plan archive 時に実質凍結扱い
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/020.state-machine/0400200005_LIFE_PLANNER_REFLECTION_SHARE_SCENARIO_STATE_MACHINE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200004_LIFE_PLANNER_TIMELINE_AND_REVIEW_STATE_MACHINE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200005_LIFE_PLANNER_REFLECTION_SHARE_SCENARIO_STATE_MACHINE.md -->
 
 # ============================================================
 # LIFE PLANNER REFLECTION / SHARE / SCENARIO STATE MACHINE
@@ -3456,11 +4357,23 @@ cross_entity_rules:
   - accepted shared member still follows share_scope restrictions
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/030.collaboration-runtime/0400300000_COLLABORATION_RUNTIME_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/020.state-machine/0400200005_LIFE_PLANNER_REFLECTION_SHARE_SCENARIO_STATE_MACHINE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300000_COLLABORATION_RUNTIME_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # COLLABORATION RUNTIME INDEX
 # ============================================================
 
@@ -3480,11 +4393,23 @@ documents:
   - 0400300004_LIFE_PLANNER_CONFLICT_CASE_RUNTIME.md
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/030.collaboration-runtime/0400300001_COLLABORATION_RUNTIME_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300000_COLLABORATION_RUNTIME_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300001_COLLABORATION_RUNTIME_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # COLLABORATION RUNTIME OVERVIEW
 # ============================================================
 
@@ -3509,9 +4434,9 @@ runtime_principles:
   - long-term planning context should be preserved
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/030.collaboration-runtime/0400300002_LIFE_PLANNER_SHARED_EDIT_RUNTIME_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300001_COLLABORATION_RUNTIME_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300002_LIFE_PLANNER_SHARED_EDIT_RUNTIME_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER SHARED EDIT RUNTIME POLICY
@@ -3565,9 +4490,9 @@ runtime_note:
   - same entity may contain owner-only and shared-editable fields
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/030.collaboration-runtime/0400300003_LIFE_PLANNER_OWNER_CONFIRMATION_RUNTIME.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300002_LIFE_PLANNER_SHARED_EDIT_RUNTIME_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300003_LIFE_PLANNER_OWNER_CONFIRMATION_RUNTIME.md -->
 
 # ============================================================
 # LIFE PLANNER OWNER CONFIRMATION RUNTIME
@@ -3617,9 +4542,9 @@ guiding_rule:
   - require owner confirmation for structural or sensitive changes
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/030.collaboration-runtime/0400300004_LIFE_PLANNER_CONFLICT_CASE_RUNTIME.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300003_LIFE_PLANNER_OWNER_CONFIRMATION_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300004_LIFE_PLANNER_CONFLICT_CASE_RUNTIME.md -->
 
 # ============================================================
 # LIFE PLANNER CONFLICT CASE RUNTIME
@@ -3675,11 +4600,23 @@ conflict_priority:
   - avoid silent data loss
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/0400000000_RUNTIME_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/030.collaboration-runtime/0400300004_LIFE_PLANNER_CONFLICT_CASE_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000000_RUNTIME_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RUNTIME INDEX
 # ============================================================
 
@@ -3693,11 +4630,23 @@ subfolders:
   - 010.lifecycle
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/0400000001_RUNTIME_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000000_RUNTIME_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000001_RUNTIME_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RUNTIME OVERVIEW
 # ============================================================
 
@@ -3710,11 +4659,23 @@ focus:
   - 他アプリ連携受信時
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/0400000_RUNTIME_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000001_RUNTIME_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000_RUNTIME_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RUNTIME INDEX
 # ============================================================
 
@@ -3734,11 +4695,23 @@ includes:
   - 010.core/0400004_LIFE_PLANNER_RUNTIME_BEHAVIOR.md
 
 
-# ============================================================
-# SOURCE FILE: 040.runtime/0400001_LIFE_PLANNER_RUNTIME_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400000_RUNTIME_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400001_LIFE_PLANNER_RUNTIME_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER RUNTIME OVERVIEW
 # ============================================================
 
@@ -3761,11 +4734,23 @@ summary:
   - AI 支援の発火点を固定する
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.core/0500002_FLOW_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/040.runtime/0400001_LIFE_PLANNER_RUNTIME_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500002_FLOW_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # FLOW CORE INDEX
 # ============================================================
 
@@ -3784,11 +4769,23 @@ includes:
   - 0500004_LIFE_PLANNER_USER_FLOW.md
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500002_FLOW_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # FLOW CORE OVERVIEW
 # ============================================================
 
@@ -3807,9 +4804,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.core/0500004_LIFE_PLANNER_USER_FLOW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500004_LIFE_PLANNER_USER_FLOW.md -->
 
 # ============================================================
 # LIFE PLANNER USER FLOW
@@ -3836,11 +4833,23 @@ flow_rules:
   - 見直しや共有は最後に明示操作で行う
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.user-flow/0500100000_USER_FLOW_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.core/0500004_LIFE_PLANNER_USER_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100000_USER_FLOW_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # USER FLOW INDEX
 # ============================================================
 
@@ -3852,11 +4861,23 @@ documents:
   - 0500100002_LIFE_PLANNER_CORE_USER_FLOWS.md
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.user-flow/0500100001_USER_FLOW_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100000_USER_FLOW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100001_USER_FLOW_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # USER FLOW OVERVIEW
 # ============================================================
 
@@ -3867,9 +4888,9 @@ topics:
   - periodic review
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.user-flow/0500100002_LIFE_PLANNER_CORE_USER_FLOWS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100001_USER_FLOW_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100002_LIFE_PLANNER_CORE_USER_FLOWS.md -->
 
 # ============================================================
 # LIFE PLANNER CORE USER FLOWS
@@ -3901,11 +4922,22 @@ scenario_compare_flow:
   - 採用方針を決める
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.user-flow/0500100003_LIFE_PLANNER_SCREEN_TRANSITION_MAP.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100002_LIFE_PLANNER_CORE_USER_FLOWS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100003_LIFE_PLANNER_SCREEN_TRANSITION_MAP.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN TRANSITION MAP
 # ============================================================
 
@@ -4069,9 +5101,9 @@ transition_principles:
   - 他アプリ反映候補はhomeとlife_plan_detailの両方から入れる
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/010.user-flow/0500100004_LIFE_PLANNER_MAIN_SCENARIO_TRANSITIONS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100003_LIFE_PLANNER_SCREEN_TRANSITION_MAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100004_LIFE_PLANNER_MAIN_SCENARIO_TRANSITIONS.md -->
 
 # ============================================================
 # LIFE PLANNER MAIN SCENARIO TRANSITIONS
@@ -4164,11 +5196,23 @@ blocking_rules:
   - センシティブ共有設定はownerのみ操作可能
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/0500000000_FLOW_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/010.user-flow/0500100004_LIFE_PLANNER_MAIN_SCENARIO_TRANSITIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000000_FLOW_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # FLOW INDEX
 # ============================================================
 
@@ -4182,11 +5226,23 @@ subfolders:
   - 010.user-flow
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/0500000001_FLOW_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000000_FLOW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000001_FLOW_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # FLOW OVERVIEW
 # ============================================================
 
@@ -4200,11 +5256,23 @@ core_flows:
   - apply reflection candidate
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/0500000_FLOW_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000001_FLOW_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000_FLOW_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # FLOW INDEX
 # ============================================================
 
@@ -4224,11 +5292,23 @@ includes:
   - 010.core/0500004_LIFE_PLANNER_USER_FLOW.md
 
 
-# ============================================================
-# SOURCE FILE: 050.flow/0500001_LIFE_PLANNER_FLOW_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500000_FLOW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500001_LIFE_PLANNER_FLOW_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER FLOW OVERVIEW
 # ============================================================
 
@@ -4251,11 +5331,23 @@ summary:
   - 関連アプリ連携条件を整理する
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/050.flow/0500001_LIFE_PLANNER_FLOW_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTEGRATION CORE INDEX
 # ============================================================
 
@@ -4274,11 +5366,23 @@ includes:
   - 0600004_LIFE_PLANNER_INTEGRATION_BOUNDARY.md
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTEGRATION CORE OVERVIEW
 # ============================================================
 
@@ -4297,9 +5401,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/010.core/0600004_LIFE_PLANNER_INTEGRATION_BOUNDARY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600004_LIFE_PLANNER_INTEGRATION_BOUNDARY.md -->
 
 # ============================================================
 # LIFE PLANNER INTEGRATION BOUNDARY
@@ -4332,11 +5436,23 @@ boundary_rules:
   - 本アプリから外部へ自動送信しない
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/010.lifeos-link/0600100000_LIFEOS_LINK_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.core/0600004_LIFE_PLANNER_INTEGRATION_BOUNDARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100000_LIFEOS_LINK_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFEOS LINK INDEX
 # ============================================================
 
@@ -4348,11 +5464,23 @@ documents:
   - 0600100002_LIFE_PLANNER_LIFEOS_INTEGRATION_BOUNDARY.md
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/010.lifeos-link/0600100001_LIFEOS_LINK_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100000_LIFEOS_LINK_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100001_LIFEOS_LINK_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFEOS LINK OVERVIEW
 # ============================================================
 
@@ -4363,9 +5491,9 @@ topics:
   - inbound from legal memo apps
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/010.lifeos-link/0600100002_LIFE_PLANNER_LIFEOS_INTEGRATION_BOUNDARY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100001_LIFEOS_LINK_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100002_LIFE_PLANNER_LIFEOS_INTEGRATION_BOUNDARY.md -->
 
 # ============================================================
 # LIFE PLANNER LIFEOS INTEGRATION BOUNDARY
@@ -4386,11 +5514,23 @@ boundary_rules:
   - 自動確定は禁止
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200000_PAYLOAD_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/010.lifeos-link/0600100002_LIFE_PLANNER_LIFEOS_INTEGRATION_BOUNDARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200000_PAYLOAD_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PAYLOAD INDEX
 # ============================================================
 
@@ -4414,11 +5554,23 @@ documents:
   - 0600200009_LIFE_PLANNER_ERROR_RESPONSE_EXACT.md
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200001_PAYLOAD_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200000_PAYLOAD_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200001_PAYLOAD_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PAYLOAD OVERVIEW
 # ============================================================
 
@@ -4452,9 +5604,9 @@ principles:
   - response は status / data / meta の3系統を基本とする
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200002_LIFE_PLANNER_PAYLOAD_COMMON_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200001_PAYLOAD_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200002_LIFE_PLANNER_PAYLOAD_COMMON_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER PAYLOAD COMMON RULES
@@ -4574,9 +5726,9 @@ null_policy:
   - 空文字での未設定表現は使わない
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200003_LIFE_PLANNER_PLAN_REQUEST_RESPONSE_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200002_LIFE_PLANNER_PAYLOAD_COMMON_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200003_LIFE_PLANNER_PLAN_REQUEST_RESPONSE_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER PLAN REQUEST / RESPONSE EXACT
@@ -4731,9 +5883,9 @@ operations:
         server_time: string
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200004_LIFE_PLANNER_GOAL_REQUEST_RESPONSE_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200003_LIFE_PLANNER_PLAN_REQUEST_RESPONSE_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200004_LIFE_PLANNER_GOAL_REQUEST_RESPONSE_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER GOAL REQUEST / RESPONSE EXACT
@@ -4899,9 +6051,9 @@ operations:
         server_time: string
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200005_LIFE_PLANNER_TIMELINE_REQUEST_RESPONSE_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200004_LIFE_PLANNER_GOAL_REQUEST_RESPONSE_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200005_LIFE_PLANNER_TIMELINE_REQUEST_RESPONSE_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER TIMELINE REQUEST / RESPONSE EXACT
@@ -5023,9 +6175,9 @@ operations:
         server_time: string
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200006_LIFE_PLANNER_REVIEW_REFLECTION_REQUEST_RESPONSE_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200005_LIFE_PLANNER_TIMELINE_REQUEST_RESPONSE_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200006_LIFE_PLANNER_REVIEW_REFLECTION_REQUEST_RESPONSE_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER REVIEW / REFLECTION REQUEST / RESPONSE EXACT
@@ -5160,9 +6312,9 @@ operations:
         server_time: string
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200007_LIFE_PLANNER_FAMILY_SHARE_REQUEST_RESPONSE_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200006_LIFE_PLANNER_REVIEW_REFLECTION_REQUEST_RESPONSE_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200007_LIFE_PLANNER_FAMILY_SHARE_REQUEST_RESPONSE_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER FAMILY SHARE REQUEST / RESPONSE EXACT
@@ -5283,9 +6435,9 @@ operations:
         server_time: string
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200008_LIFE_PLANNER_SCENARIO_REQUEST_RESPONSE_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200007_LIFE_PLANNER_FAMILY_SHARE_REQUEST_RESPONSE_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200008_LIFE_PLANNER_SCENARIO_REQUEST_RESPONSE_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER SCENARIO REQUEST / RESPONSE EXACT
@@ -5382,9 +6534,9 @@ operations:
         server_time: string
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/020.payload/0600200009_LIFE_PLANNER_ERROR_RESPONSE_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200008_LIFE_PLANNER_SCENARIO_REQUEST_RESPONSE_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200009_LIFE_PLANNER_ERROR_RESPONSE_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER ERROR RESPONSE EXACT
@@ -5467,11 +6619,23 @@ ui_mapping_rules:
   - family_plan_required は pricing_guide へ導線を出す
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/030.contract-binding/0600300000_CONTRACT_BINDING_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/020.payload/0600200009_LIFE_PLANNER_ERROR_RESPONSE_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300000_CONTRACT_BINDING_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONTRACT BINDING INDEX
 # ============================================================
 
@@ -5490,11 +6654,23 @@ documents:
   - 0600300003_LIFE_PLANNER_OPERATION_WRITE_IMPACT_MATRIX.md
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/030.contract-binding/0600300001_CONTRACT_BINDING_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300000_CONTRACT_BINDING_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300001_CONTRACT_BINDING_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONTRACT BINDING OVERVIEW
 # ============================================================
 
@@ -5517,9 +6693,9 @@ policy:
   - reflection apply は複数entityへ影響する
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/030.contract-binding/0600300002_LIFE_PLANNER_PAYLOAD_TO_LOGICAL_TABLE_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300001_CONTRACT_BINDING_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300002_LIFE_PLANNER_PAYLOAD_TO_LOGICAL_TABLE_MATRIX.md -->
 
 # ============================================================
 # LIFE PLANNER PAYLOAD TO LOGICAL TABLE MATRIX
@@ -5634,9 +6810,9 @@ matrix:
         - life.life_scenario_decision
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/030.contract-binding/0600300003_LIFE_PLANNER_OPERATION_WRITE_IMPACT_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300002_LIFE_PLANNER_PAYLOAD_TO_LOGICAL_TABLE_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300003_LIFE_PLANNER_OPERATION_WRITE_IMPACT_MATRIX.md -->
 
 # ============================================================
 # LIFE PLANNER OPERATION WRITE IMPACT MATRIX
@@ -5755,11 +6931,23 @@ write_impact_matrix:
       - final compare decision summary changes
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/040.connected-app-assumption/0600400000_CONNECTED_APP_ASSUMPTION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/030.contract-binding/0600300003_LIFE_PLANNER_OPERATION_WRITE_IMPACT_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400000_CONNECTED_APP_ASSUMPTION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONNECTED APP ASSUMPTION INDEX
 # ============================================================
 
@@ -5778,11 +6966,23 @@ documents:
   - 0600400003_LIFE_PLANNER_REFLECTION_CANDIDATE_SOURCE_MAPPING.md
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/040.connected-app-assumption/0600400001_CONNECTED_APP_ASSUMPTION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400000_CONNECTED_APP_ASSUMPTION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400001_CONNECTED_APP_ASSUMPTION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONNECTED APP ASSUMPTION OVERVIEW
 # ============================================================
 
@@ -5807,9 +7007,9 @@ connected_apps:
   - 法律系アプリ群
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/040.connected-app-assumption/0600400002_LIFE_PLANNER_INBOUND_APP_ASSUMPTION_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400001_CONNECTED_APP_ASSUMPTION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400002_LIFE_PLANNER_INBOUND_APP_ASSUMPTION_MATRIX.md -->
 
 # ============================================================
 # LIFE PLANNER INBOUND APP ASSUMPTION MATRIX
@@ -5888,9 +7088,9 @@ common_assumption_rules:
   - exact upstream payload can differ, but semantic mapping should converge
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/040.connected-app-assumption/0600400003_LIFE_PLANNER_REFLECTION_CANDIDATE_SOURCE_MAPPING.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400002_LIFE_PLANNER_INBOUND_APP_ASSUMPTION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400003_LIFE_PLANNER_REFLECTION_CANDIDATE_SOURCE_MAPPING.md -->
 
 # ============================================================
 # LIFE PLANNER REFLECTION CANDIDATE SOURCE MAPPING
@@ -5950,11 +7150,23 @@ mapping_rule:
   - apply target は owner が最終選択する
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/0600000000_INTEGRATION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/040.connected-app-assumption/0600400003_LIFE_PLANNER_REFLECTION_CANDIDATE_SOURCE_MAPPING.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000000_INTEGRATION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTEGRATION INDEX
 # ============================================================
 
@@ -5968,11 +7180,23 @@ subfolders:
   - 010.lifeos-link
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/0600000001_INTEGRATION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000000_INTEGRATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000001_INTEGRATION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTEGRATION OVERVIEW
 # ============================================================
 
@@ -5984,11 +7208,23 @@ focus:
   - 見直し候補化
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/0600000_INTEGRATION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000001_INTEGRATION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000_INTEGRATION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTEGRATION INDEX
 # ============================================================
 
@@ -6008,11 +7244,23 @@ includes:
   - 010.core/0600004_LIFE_PLANNER_INTEGRATION_BOUNDARY.md
 
 
-# ============================================================
-# SOURCE FILE: 060.integration/0600001_LIFE_PLANNER_INTEGRATION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600000_INTEGRATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600001_LIFE_PLANNER_INTEGRATION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER INTEGRATION OVERVIEW
 # ============================================================
 
@@ -6035,11 +7283,23 @@ summary:
   - 自動送信禁止を明確化する
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/060.integration/0600001_LIFE_PLANNER_INTEGRATION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # OPERATIONS CORE INDEX
 # ============================================================
 
@@ -6058,11 +7318,23 @@ includes:
   - 0700004_LIFE_PLANNER_OPERATIONS_GUIDE.md
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # OPERATIONS CORE OVERVIEW
 # ============================================================
 
@@ -6081,11 +7353,22 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/010.core/0700004_LIFE_PLANNER_OPERATIONS_GUIDE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700004_LIFE_PLANNER_OPERATIONS_GUIDE.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER OPERATIONS GUIDE
 # ============================================================
 
@@ -6118,11 +7401,23 @@ ops_rules:
   - 長期変化に合わせて柔軟に修正できる構造にする
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/010.plan-ops/0700100000_PLAN_OPS_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.core/0700004_LIFE_PLANNER_OPERATIONS_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100000_PLAN_OPS_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PLAN OPS INDEX
 # ============================================================
 
@@ -6134,11 +7429,23 @@ documents:
   - 0700100002_LIFE_PLANNER_OPERATION_GUIDE.md
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/010.plan-ops/0700100001_PLAN_OPS_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100000_PLAN_OPS_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100001_PLAN_OPS_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PLAN OPS OVERVIEW
 # ============================================================
 
@@ -6149,11 +7456,22 @@ topics:
   - 家族共有更新
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/010.plan-ops/0700100002_LIFE_PLANNER_OPERATION_GUIDE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100001_PLAN_OPS_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100002_LIFE_PLANNER_OPERATION_GUIDE.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER OPERATION GUIDE
 # ============================================================
 
@@ -6169,11 +7487,23 @@ operation_notes:
   - 他アプリ連携受信時は採用/保留/却下を明示する
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/020.notification-review/0700200000_NOTIFICATION_REVIEW_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/010.plan-ops/0700100002_LIFE_PLANNER_OPERATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200000_NOTIFICATION_REVIEW_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # NOTIFICATION REVIEW INDEX
 # ============================================================
 
@@ -6193,11 +7523,23 @@ documents:
   - 0700200004_LIFE_PLANNER_NOTIFICATION_EVENT_CATALOG.md
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/020.notification-review/0700200001_NOTIFICATION_REVIEW_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200000_NOTIFICATION_REVIEW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200001_NOTIFICATION_REVIEW_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # NOTIFICATION REVIEW OVERVIEW
 # ============================================================
 
@@ -6221,9 +7563,9 @@ operation_principles:
   - 他アプリ起点の変化は自動確定ではなく見直し候補通知に留める
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/020.notification-review/0700200002_LIFE_PLANNER_NOTIFICATION_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200001_NOTIFICATION_REVIEW_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200002_LIFE_PLANNER_NOTIFICATION_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER NOTIFICATION POLICY
@@ -6305,9 +7647,9 @@ delivery_scope:
     - read-only context notifications only
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/020.notification-review/0700200003_LIFE_PLANNER_REVIEW_CYCLE_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200002_LIFE_PLANNER_NOTIFICATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200003_LIFE_PLANNER_REVIEW_CYCLE_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER REVIEW CYCLE POLICY
@@ -6367,9 +7709,9 @@ review_record_rule:
   - 単なる閲覧のみなら review_log 必須ではない
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/020.notification-review/0700200004_LIFE_PLANNER_NOTIFICATION_EVENT_CATALOG.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200003_LIFE_PLANNER_REVIEW_CYCLE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200004_LIFE_PLANNER_NOTIFICATION_EVENT_CATALOG.md -->
 
 # ============================================================
 # LIFE PLANNER NOTIFICATION EVENT CATALOG
@@ -6435,11 +7777,23 @@ events:
       - owner
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/030.data-lifecycle/0700300000_DATA_LIFECYCLE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/020.notification-review/0700200004_LIFE_PLANNER_NOTIFICATION_EVENT_CATALOG.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300000_DATA_LIFECYCLE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DATA LIFECYCLE INDEX
 # ============================================================
 
@@ -6459,11 +7813,23 @@ documents:
   - 0700300004_LIFE_PLANNER_LONG_TERM_OPERATION_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/030.data-lifecycle/0700300001_DATA_LIFECYCLE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300000_DATA_LIFECYCLE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300001_DATA_LIFECYCLE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DATA LIFECYCLE OVERVIEW
 # ============================================================
 
@@ -6486,9 +7852,9 @@ principles:
   - family共有情報は plan lifecycle と share lifecycle を分けて考える
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/030.data-lifecycle/0700300002_LIFE_PLANNER_PLAN_LIFECYCLE_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300001_DATA_LIFECYCLE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300002_LIFE_PLANNER_PLAN_LIFECYCLE_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER PLAN LIFECYCLE POLICY
@@ -6549,9 +7915,9 @@ design_policy:
   - archived plan can be restored to active by owner
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/030.data-lifecycle/0700300003_LIFE_PLANNER_SHARED_MEMBER_LIFECYCLE_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300002_LIFE_PLANNER_PLAN_LIFECYCLE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300003_LIFE_PLANNER_SHARED_MEMBER_LIFECYCLE_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER SHARED MEMBER LIFECYCLE POLICY
@@ -6599,9 +7965,9 @@ shared_member_exit_cases:
   - invite resent later
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/030.data-lifecycle/0700300004_LIFE_PLANNER_LONG_TERM_OPERATION_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300003_LIFE_PLANNER_SHARED_MEMBER_LIFECYCLE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300004_LIFE_PLANNER_LONG_TERM_OPERATION_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER LONG TERM OPERATION POLICY
@@ -6632,11 +7998,23 @@ operational_warning:
   - owner should prefer archive for meaningful plans
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/040.checklist-risk-value/0700400000_CHECKLIST_RISK_VALUE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/030.data-lifecycle/0700300004_LIFE_PLANNER_LONG_TERM_OPERATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400000_CHECKLIST_RISK_VALUE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CHECKLIST RISK VALUE INDEX
 # ============================================================
 
@@ -6656,11 +8034,23 @@ documents:
   - 0700400004_LIFE_PLANNER_VALUE_WORK_OPERATION_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/040.checklist-risk-value/0700400001_CHECKLIST_RISK_VALUE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400000_CHECKLIST_RISK_VALUE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400001_CHECKLIST_RISK_VALUE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CHECKLIST RISK VALUE OVERVIEW
 # ============================================================
 
@@ -6683,9 +8073,9 @@ principles:
   - value work は計画の優先順位づけを助ける
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/040.checklist-risk-value/0700400002_LIFE_PLANNER_FUTURE_CHECKLIST_OPERATION_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400001_CHECKLIST_RISK_VALUE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400002_LIFE_PLANNER_FUTURE_CHECKLIST_OPERATION_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER FUTURE CHECKLIST OPERATION POLICY
@@ -6726,9 +8116,9 @@ conversion_rules:
   - item -> note_only
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/040.checklist-risk-value/0700400003_LIFE_PLANNER_RISK_LIST_OPERATION_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400002_LIFE_PLANNER_FUTURE_CHECKLIST_OPERATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400003_LIFE_PLANNER_RISK_LIST_OPERATION_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER RISK LIST OPERATION POLICY
@@ -6767,9 +8157,9 @@ risk_examples:
   - 重要手続き時期の見落とし
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/040.checklist-risk-value/0700400004_LIFE_PLANNER_VALUE_WORK_OPERATION_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400003_LIFE_PLANNER_RISK_LIST_OPERATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400004_LIFE_PLANNER_VALUE_WORK_OPERATION_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER VALUE WORK OPERATION POLICY
@@ -6803,11 +8193,23 @@ operation_rules:
   - family use では shared discussion prompt に使えるが、最終価値判断は owner中心
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/050.recommendation-rules/0700500000_RECOMMENDATION_RULES_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/040.checklist-risk-value/0700400004_LIFE_PLANNER_VALUE_WORK_OPERATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500000_RECOMMENDATION_RULES_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RECOMMENDATION RULES INDEX
 # ============================================================
 
@@ -6827,11 +8229,23 @@ documents:
   - 0700500004_LIFE_PLANNER_SCENARIO_AND_REFLECTION_RECOMMENDATION_RULES.md
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/050.recommendation-rules/0700500001_RECOMMENDATION_RULES_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500000_RECOMMENDATION_RULES_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500001_RECOMMENDATION_RULES_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RECOMMENDATION RULES OVERVIEW
 # ============================================================
 
@@ -6854,9 +8268,9 @@ principles:
   - owner final judgment remains explicit
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/050.recommendation-rules/0700500002_LIFE_PLANNER_REVIEW_NEEDED_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500001_RECOMMENDATION_RULES_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500002_LIFE_PLANNER_REVIEW_NEEDED_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER REVIEW NEEDED RULES
@@ -6903,9 +8317,9 @@ guidance_rule:
   - avoid flooding with too many reasons at once
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/050.recommendation-rules/0700500003_LIFE_PLANNER_HOME_RECOMMENDATION_PRIORITY_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500002_LIFE_PLANNER_REVIEW_NEEDED_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500003_LIFE_PLANNER_HOME_RECOMMENDATION_PRIORITY_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER HOME RECOMMENDATION PRIORITY RULES
@@ -6948,9 +8362,9 @@ suppression_rules:
   - low-value repetitive items should collapse into summary
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/050.recommendation-rules/0700500004_LIFE_PLANNER_SCENARIO_AND_REFLECTION_RECOMMENDATION_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500003_LIFE_PLANNER_HOME_RECOMMENDATION_PRIORITY_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500004_LIFE_PLANNER_SCENARIO_AND_REFLECTION_RECOMMENDATION_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER SCENARIO AND REFLECTION RECOMMENDATION RULES
@@ -6986,11 +8400,23 @@ note:
   - these are recommendation heuristics, not automatic actions
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/0700000000_OPERATIONS_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/050.recommendation-rules/0700500004_LIFE_PLANNER_SCENARIO_AND_REFLECTION_RECOMMENDATION_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000000_OPERATIONS_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # OPERATIONS INDEX
 # ============================================================
 
@@ -7004,11 +8430,23 @@ subfolders:
   - 010.plan-ops
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/0700000001_OPERATIONS_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000000_OPERATIONS_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000001_OPERATIONS_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # OPERATIONS OVERVIEW
 # ============================================================
 
@@ -7020,11 +8458,23 @@ scope:
   - 通知運用
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/0700000_OPERATIONS_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000001_OPERATIONS_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000_OPERATIONS_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # OPERATIONS INDEX
 # ============================================================
 
@@ -7044,11 +8494,23 @@ includes:
   - 010.core/0700004_LIFE_PLANNER_OPERATIONS_GUIDE.md
 
 
-# ============================================================
-# SOURCE FILE: 070.operations/0700001_LIFE_PLANNER_OPERATIONS_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700000_OPERATIONS_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700001_LIFE_PLANNER_OPERATIONS_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER OPERATIONS OVERVIEW
 # ============================================================
 
@@ -7071,11 +8533,23 @@ summary:
   - 長期運用前提の見直し習慣を含める
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/010.core/0800002_POLICY_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/070.operations/0700001_LIFE_PLANNER_OPERATIONS_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800002_POLICY_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # POLICY CORE INDEX
 # ============================================================
 
@@ -7094,11 +8568,23 @@ includes:
   - 0800004_LIFE_PLANNER_POLICY_SET.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800002_POLICY_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # POLICY CORE OVERVIEW
 # ============================================================
 
@@ -7117,9 +8603,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/010.core/0800004_LIFE_PLANNER_POLICY_SET.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800004_LIFE_PLANNER_POLICY_SET.md -->
 
 # ============================================================
 # LIFE PLANNER POLICY SET
@@ -7151,11 +8637,23 @@ policies:
     - 専門領域の正本にはしない
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/010.privacy-pricing/0800100000_PRIVACY_PRICING_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.core/0800004_LIFE_PLANNER_POLICY_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100000_PRIVACY_PRICING_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PRIVACY PRICING INDEX
 # ============================================================
 
@@ -7168,11 +8666,23 @@ documents:
   - 0800100003_LIFE_PLANNER_PRICING_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/010.privacy-pricing/0800100001_PRIVACY_PRICING_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100000_PRIVACY_PRICING_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100001_PRIVACY_PRICING_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PRIVACY PRICING OVERVIEW
 # ============================================================
 
@@ -7183,9 +8693,9 @@ topics:
   - AI chat only support
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/010.privacy-pricing/0800100002_LIFE_PLANNER_PRIVACY_SHARING_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100001_PRIVACY_PRICING_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100002_LIFE_PLANNER_PRIVACY_SHARING_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER PRIVACY SHARING POLICY
@@ -7199,9 +8709,9 @@ rules:
   - 無断共有は禁止する
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/010.privacy-pricing/0800100003_LIFE_PLANNER_PRICING_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100002_LIFE_PLANNER_PRIVACY_SHARING_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100003_LIFE_PLANNER_PRICING_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER PRICING POLICY
@@ -7226,11 +8736,23 @@ plans:
       - 分野別ダッシュボード
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/020.validation-rules/0800200000_VALIDATION_RULES_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/010.privacy-pricing/0800100003_LIFE_PLANNER_PRICING_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200000_VALIDATION_RULES_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # VALIDATION RULES INDEX
 # ============================================================
 
@@ -7251,11 +8773,23 @@ documents:
   - 0800200005_LIFE_PLANNER_UI_BLOCKING_AND_ERROR_RULES.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/020.validation-rules/0800200001_VALIDATION_RULES_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200000_VALIDATION_RULES_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200001_VALIDATION_RULES_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # VALIDATION RULES OVERVIEW
 # ============================================================
 
@@ -7283,9 +8817,9 @@ priority:
   - 最後に error code と結び付ける
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/020.validation-rules/0800200002_LIFE_PLANNER_PLAN_AND_GOAL_VALIDATION_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200001_VALIDATION_RULES_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200002_LIFE_PLANNER_PLAN_AND_GOAL_VALIDATION_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER PLAN AND GOAL VALIDATION RULES
@@ -7364,9 +8898,9 @@ milestone_rules:
       - milestone_status must be valid enum
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/020.validation-rules/0800200003_LIFE_PLANNER_TIMELINE_AND_REVIEW_VALIDATION_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200002_LIFE_PLANNER_PLAN_AND_GOAL_VALIDATION_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200003_LIFE_PLANNER_TIMELINE_AND_REVIEW_VALIDATION_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER TIMELINE AND REVIEW VALIDATION RULES
@@ -7437,9 +8971,9 @@ review_policy_note:
   - blank reason is not allowed
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/020.validation-rules/0800200004_LIFE_PLANNER_SHARE_SCENARIO_REFLECTION_VALIDATION_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200003_LIFE_PLANNER_TIMELINE_AND_REVIEW_VALIDATION_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200004_LIFE_PLANNER_SHARE_SCENARIO_REFLECTION_VALIDATION_RULES.md -->
 
 # ============================================================
 # LIFE PLANNER SHARE SCENARIO REFLECTION VALIDATION RULES
@@ -7529,11 +9063,22 @@ reflection_rules:
       - review_reason is required when applying
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/020.validation-rules/0800200005_LIFE_PLANNER_UI_BLOCKING_AND_ERROR_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200004_LIFE_PLANNER_SHARE_SCENARIO_REFLECTION_VALIDATION_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200005_LIFE_PLANNER_UI_BLOCKING_AND_ERROR_RULES.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER UI BLOCKING AND ERROR RULES
 # ============================================================
 
@@ -7616,11 +9161,23 @@ policy_note:
   - disabled preferred over hidden for plan-upgrade feature discovery
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/030.ai-assist/0800300000_AI_ASSIST_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/020.validation-rules/0800200005_LIFE_PLANNER_UI_BLOCKING_AND_ERROR_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300000_AI_ASSIST_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # AI ASSIST INDEX
 # ============================================================
 
@@ -7640,11 +9197,23 @@ documents:
   - 0800300004_LIFE_PLANNER_AI_ASSIST_SAFETY_AND_GUARDRAILS.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/030.ai-assist/0800300001_AI_ASSIST_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300000_AI_ASSIST_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300001_AI_ASSIST_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # AI ASSIST OVERVIEW
 # ============================================================
 
@@ -7668,9 +9237,9 @@ ai_principles:
   - 法律、医療、投資の最終判断を代行しない
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/030.ai-assist/0800300002_LIFE_PLANNER_AI_ASSIST_SCOPE_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300001_AI_ASSIST_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300002_LIFE_PLANNER_AI_ASSIST_SCOPE_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER AI ASSIST SCOPE POLICY
@@ -7707,9 +9276,9 @@ data_scope_policy:
   - AI summary respects share scope and allow flags
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/030.ai-assist/0800300003_LIFE_PLANNER_AI_ASSIST_INTERACTION_PATTERNS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300002_LIFE_PLANNER_AI_ASSIST_SCOPE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300003_LIFE_PLANNER_AI_ASSIST_INTERACTION_PATTERNS.md -->
 
 # ============================================================
 # LIFE PLANNER AI ASSIST INTERACTION PATTERNS
@@ -7774,9 +9343,9 @@ interaction_patterns:
       - reminder that apply is explicit decision
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/030.ai-assist/0800300004_LIFE_PLANNER_AI_ASSIST_SAFETY_AND_GUARDRAILS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300003_LIFE_PLANNER_AI_ASSIST_INTERACTION_PATTERNS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300004_LIFE_PLANNER_AI_ASSIST_SAFETY_AND_GUARDRAILS.md -->
 
 # ============================================================
 # LIFE PLANNER AI ASSIST SAFETY AND GUARDRAILS
@@ -7823,11 +9392,23 @@ fallback_behavior:
       - provide generic checklist instead of pretending certainty
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/040.copy-policy/0800400000_COPY_POLICY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/030.ai-assist/0800300004_LIFE_PLANNER_AI_ASSIST_SAFETY_AND_GUARDRAILS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400000_COPY_POLICY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # COPY POLICY INDEX
 # ============================================================
 
@@ -7846,11 +9427,23 @@ documents:
   - 0800400003_LIFE_PLANNER_SENSITIVE_COPY_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/040.copy-policy/0800400001_COPY_POLICY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400000_COPY_POLICY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400001_COPY_POLICY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # COPY POLICY OVERVIEW
 # ============================================================
 
@@ -7868,9 +9461,9 @@ purpose:
   - 通知、空状態、エラー、AI支援文言の基準を揃える
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/040.copy-policy/0800400002_LIFE_PLANNER_COPY_TONE_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400001_COPY_POLICY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400002_LIFE_PLANNER_COPY_TONE_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER COPY TONE POLICY
@@ -7904,9 +9497,9 @@ do_not_use:
   - AIが最適解を決めます
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/040.copy-policy/0800400003_LIFE_PLANNER_SENSITIVE_COPY_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400002_LIFE_PLANNER_COPY_TONE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400003_LIFE_PLANNER_SENSITIVE_COPY_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER SENSITIVE COPY POLICY
@@ -7944,11 +9537,23 @@ family_scope_note:
   - hidden category の存在を過度に匂わせない
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/050.retention-deletion/0800500000_RETENTION_DELETION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/040.copy-policy/0800400003_LIFE_PLANNER_SENSITIVE_COPY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500000_RETENTION_DELETION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RETENTION DELETION INDEX
 # ============================================================
 
@@ -7968,11 +9573,23 @@ documents:
   - 0800500004_LIFE_PLANNER_OWNERSHIP_CONTINUITY_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/050.retention-deletion/0800500001_RETENTION_DELETION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500000_RETENTION_DELETION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500001_RETENTION_DELETION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RETENTION DELETION OVERVIEW
 # ============================================================
 
@@ -7996,9 +9613,9 @@ principles:
   - sensitive shared content should stop being visible when scope is removed, regardless of retention
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/050.retention-deletion/0800500002_LIFE_PLANNER_RETENTION_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500001_RETENTION_DELETION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500002_LIFE_PLANNER_RETENTION_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER RETENTION POLICY
@@ -8061,9 +9678,9 @@ retention_principle_note:
   - retention is about design intent, not storage duration implementation yet
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/050.retention-deletion/0800500003_LIFE_PLANNER_ARCHIVE_DELETE_RESTORE_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500002_LIFE_PLANNER_RETENTION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500003_LIFE_PLANNER_ARCHIVE_DELETE_RESTORE_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER ARCHIVE DELETE RESTORE POLICY
@@ -8114,11 +9731,22 @@ shared_view_policy:
   - deleted plans must not remain accessible to shared roles
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/050.retention-deletion/0800500004_LIFE_PLANNER_OWNERSHIP_CONTINUITY_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500003_LIFE_PLANNER_ARCHIVE_DELETE_RESTORE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500004_LIFE_PLANNER_OWNERSHIP_CONTINUITY_POLICY.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER OWNERSHIP CONTINUITY POLICY
 # ============================================================
 
@@ -8172,11 +9800,23 @@ note:
   - continuity is support-oriented, not legal determination
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/060.conflict-change-control/0800600000_CONFLICT_CHANGE_CONTROL_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/050.retention-deletion/0800500004_LIFE_PLANNER_OWNERSHIP_CONTINUITY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600000_CONFLICT_CHANGE_CONTROL_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONFLICT CHANGE CONTROL INDEX
 # ============================================================
 
@@ -8196,11 +9836,23 @@ documents:
   - 0800600004_LIFE_PLANNER_ACTIVITY_HISTORY_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/060.conflict-change-control/0800600001_CONFLICT_CHANGE_CONTROL_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600000_CONFLICT_CHANGE_CONTROL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600001_CONFLICT_CHANGE_CONTROL_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CONFLICT CHANGE CONTROL OVERVIEW
 # ============================================================
 
@@ -8224,9 +9876,9 @@ principles:
   - keep history understandable for future review
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/060.conflict-change-control/0800600002_LIFE_PLANNER_CONFLICT_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600001_CONFLICT_CHANGE_CONTROL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600002_LIFE_PLANNER_CONFLICT_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER CONFLICT POLICY
@@ -8277,9 +9929,9 @@ policy_note:
   - implementation mechanism is intentionally not fixed yet
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/060.conflict-change-control/0800600003_LIFE_PLANNER_CHANGE_PROPOSAL_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600002_LIFE_PLANNER_CONFLICT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600003_LIFE_PLANNER_CHANGE_PROPOSAL_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER CHANGE PROPOSAL POLICY
@@ -8324,9 +9976,9 @@ policy_note:
   - initial implementation may start with lighter direct edit + notification pattern
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/060.conflict-change-control/0800600004_LIFE_PLANNER_ACTIVITY_HISTORY_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600003_LIFE_PLANNER_CHANGE_PROPOSAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600004_LIFE_PLANNER_ACTIVITY_HISTORY_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER ACTIVITY HISTORY POLICY
@@ -8366,11 +10018,23 @@ family_viewer_view:
   - sees simplified history within shared scope only
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/070.settings-defaults/0800700000_SETTINGS_DEFAULTS_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/060.conflict-change-control/0800600004_LIFE_PLANNER_ACTIVITY_HISTORY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700000_SETTINGS_DEFAULTS_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SETTINGS DEFAULTS INDEX
 # ============================================================
 
@@ -8390,11 +10054,23 @@ documents:
   - 0800700004_LIFE_PLANNER_REVIEW_AND_ASSIST_DEFAULT_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/070.settings-defaults/0800700001_SETTINGS_DEFAULTS_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700000_SETTINGS_DEFAULTS_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700001_SETTINGS_DEFAULTS_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SETTINGS DEFAULTS OVERVIEW
 # ============================================================
 
@@ -8417,9 +10093,9 @@ policy:
   - family-sensitive defaults should stay conservative
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/070.settings-defaults/0800700002_LIFE_PLANNER_NOTIFICATION_DEFAULT_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700001_SETTINGS_DEFAULTS_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700002_LIFE_PLANNER_NOTIFICATION_DEFAULT_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER NOTIFICATION DEFAULT POLICY
@@ -8462,11 +10138,22 @@ shared_role_defaults:
     - within-scope update awareness only
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/070.settings-defaults/0800700003_LIFE_PLANNER_DISPLAY_DEFAULT_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700002_LIFE_PLANNER_NOTIFICATION_DEFAULT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700003_LIFE_PLANNER_DISPLAY_DEFAULT_POLICY.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER DISPLAY DEFAULT POLICY
 # ============================================================
 
@@ -8508,9 +10195,9 @@ privacy_related_defaults:
   - do not show masked pseudo-entries by default
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/070.settings-defaults/0800700004_LIFE_PLANNER_REVIEW_AND_ASSIST_DEFAULT_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700003_LIFE_PLANNER_DISPLAY_DEFAULT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700004_LIFE_PLANNER_REVIEW_AND_ASSIST_DEFAULT_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER REVIEW AND ASSIST DEFAULT POLICY
@@ -8540,11 +10227,23 @@ checklist_defaults:
   - surfaced during annual review and summary contexts
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/0800000000_POLICY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/070.settings-defaults/0800700004_LIFE_PLANNER_REVIEW_AND_ASSIST_DEFAULT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000000_POLICY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # POLICY INDEX
 # ============================================================
 
@@ -8558,11 +10257,23 @@ subfolders:
   - 010.privacy-pricing
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/0800000001_POLICY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000000_POLICY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000001_POLICY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # POLICY OVERVIEW
 # ============================================================
 
@@ -8575,11 +10286,23 @@ focus:
   - support policy
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/0800000_POLICY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000001_POLICY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000_POLICY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # POLICY INDEX
 # ============================================================
 
@@ -8599,11 +10322,23 @@ includes:
   - 010.core/0800004_LIFE_PLANNER_POLICY_SET.md
 
 
-# ============================================================
-# SOURCE FILE: 080.policy/0800001_LIFE_PLANNER_POLICY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800000_POLICY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800001_LIFE_PLANNER_POLICY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER POLICY OVERVIEW
 # ============================================================
 
@@ -8626,11 +10361,23 @@ summary:
   - 本人意思尊重を軸にした倫理境界を持つ
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/080.policy/0800001_LIFE_PLANNER_POLICY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTERFACE CORE INDEX
 # ============================================================
 
@@ -8649,11 +10396,23 @@ includes:
   - 0900004_LIFE_PLANNER_INTERFACE_SPEC.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTERFACE CORE OVERVIEW
 # ============================================================
 
@@ -8672,9 +10431,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.core/0900004_LIFE_PLANNER_INTERFACE_SPEC.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900004_LIFE_PLANNER_INTERFACE_SPEC.md -->
 
 # ============================================================
 # LIFE PLANNER INTERFACE SPEC
@@ -8709,11 +10468,23 @@ ui_rules:
   - 専門判断代替ではない表示を必要箇所に持つ
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100000_SCREEN_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.core/0900004_LIFE_PLANNER_INTERFACE_SPEC.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100000_SCREEN_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SCREEN INDEX
 # ============================================================
 
@@ -8725,11 +10496,23 @@ documents:
   - 0900100002_LIFE_PLANNER_SCREEN_INVENTORY.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100001_SCREEN_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100000_SCREEN_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100001_SCREEN_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SCREEN OVERVIEW
 # ============================================================
 
@@ -8742,11 +10525,22 @@ topics:
   - family sharing
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100002_LIFE_PLANNER_SCREEN_INVENTORY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100001_SCREEN_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100002_LIFE_PLANNER_SCREEN_INVENTORY.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN INVENTORY
 # ============================================================
 
@@ -8769,11 +10563,23 @@ screens:
   - settings
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100003_LIFE_PLANNER_SCREEN_TRANSITION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100002_LIFE_PLANNER_SCREEN_INVENTORY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100003_LIFE_PLANNER_SCREEN_TRANSITION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN TRANSITION OVERVIEW
 # ============================================================
 
@@ -8825,9 +10631,9 @@ screen_design_rules:
   - blocked featureはpricing_guideへ逃がす
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100004_LIFE_PLANNER_HOME_AND_PLAN_DETAIL_TRANSITIONS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100003_LIFE_PLANNER_SCREEN_TRANSITION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100004_LIFE_PLANNER_HOME_AND_PLAN_DETAIL_TRANSITIONS.md -->
 
 # ============================================================
 # LIFE PLANNER HOME AND PLAN DETAIL TRANSITIONS
@@ -8883,9 +10689,9 @@ interface_rules:
   - detail headerからplan switchを可能にする余地を残す
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100005_LIFE_PLANNER_FAMILY_SHARE_TRANSITIONS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100004_LIFE_PLANNER_HOME_AND_PLAN_DETAIL_TRANSITIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100005_LIFE_PLANNER_FAMILY_SHARE_TRANSITIONS.md -->
 
 # ============================================================
 # LIFE PLANNER FAMILY SHARE TRANSITIONS
@@ -8944,9 +10750,9 @@ blocking:
   - owner以外はshare_scope_editに入れない
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100006_LIFE_PLANNER_SCENARIO_COMPARE_TRANSITIONS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100005_LIFE_PLANNER_FAMILY_SHARE_TRANSITIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100006_LIFE_PLANNER_SCENARIO_COMPARE_TRANSITIONS.md -->
 
 # ============================================================
 # LIFE PLANNER SCENARIO COMPARE TRANSITIONS
@@ -8991,9 +10797,9 @@ plan_rules:
   - ownerの採用操作でのみ計画へ反映する
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/010.screen/0900100007_LIFE_PLANNER_REFLECTION_CANDIDATE_TRANSITIONS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100006_LIFE_PLANNER_SCENARIO_COMPARE_TRANSITIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100007_LIFE_PLANNER_REFLECTION_CANDIDATE_TRANSITIONS.md -->
 
 # ============================================================
 # LIFE PLANNER REFLECTION CANDIDATE TRANSITIONS
@@ -9039,11 +10845,23 @@ rules:
   - dismissでも履歴は残す
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200000_SCREEN_ITEM_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/010.screen/0900100007_LIFE_PLANNER_REFLECTION_CANDIDATE_TRANSITIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200000_SCREEN_ITEM_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SCREEN ITEM INDEX
 # ============================================================
 
@@ -9068,11 +10886,23 @@ documents:
   - 0900200009_LIFE_PLANNER_SCREEN_ITEM_BINDING_NOTE.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200001_SCREEN_ITEM_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200000_SCREEN_ITEM_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200001_SCREEN_ITEM_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SCREEN ITEM OVERVIEW
 # ============================================================
 
@@ -9103,11 +10933,22 @@ binding_policy:
   - 画面項目は life スキーマ上の論理エンティティに紐づける
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200002_LIFE_PLANNER_SCREEN_ITEM_COMMON_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200001_SCREEN_ITEM_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200002_LIFE_PLANNER_SCREEN_ITEM_COMMON_RULES.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN ITEM COMMON RULES
 # ============================================================
 
@@ -9168,11 +11009,22 @@ schema_binding_note:
   - 例: life_plan, life_goal, event_timeline, review_log, shared_member, scenario
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200003_LIFE_PLANNER_HOME_SCREEN_ITEM_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200002_LIFE_PLANNER_SCREEN_ITEM_COMMON_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200003_LIFE_PLANNER_HOME_SCREEN_ITEM_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER HOME SCREEN ITEM EXACT
 # ============================================================
 
@@ -9339,11 +11191,22 @@ sections:
         visible_condition: always
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200004_LIFE_PLANNER_PLAN_DETAIL_SCREEN_ITEM_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200003_LIFE_PLANNER_HOME_SCREEN_ITEM_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200004_LIFE_PLANNER_PLAN_DETAIL_SCREEN_ITEM_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER PLAN DETAIL SCREEN ITEM EXACT
 # ============================================================
 
@@ -9554,11 +11417,22 @@ sections:
         visible_condition: family_plan_only
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200005_LIFE_PLANNER_PLAN_CREATE_EDIT_SCREEN_ITEM_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200004_LIFE_PLANNER_PLAN_DETAIL_SCREEN_ITEM_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200005_LIFE_PLANNER_PLAN_CREATE_EDIT_SCREEN_ITEM_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER PLAN CREATE / EDIT SCREEN ITEM EXACT
 # ============================================================
 
@@ -9788,11 +11662,22 @@ save_actions:
       visible_condition: always
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200006_LIFE_PLANNER_FAMILY_SHARE_SCREEN_ITEM_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200005_LIFE_PLANNER_PLAN_CREATE_EDIT_SCREEN_ITEM_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200006_LIFE_PLANNER_FAMILY_SHARE_SCREEN_ITEM_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER FAMILY SHARE SCREEN ITEM EXACT
 # ============================================================
 
@@ -9921,11 +11806,22 @@ actions:
       visible_condition: when_free_plan
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200007_LIFE_PLANNER_SCENARIO_COMPARE_SCREEN_ITEM_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200006_LIFE_PLANNER_FAMILY_SHARE_SCREEN_ITEM_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200007_LIFE_PLANNER_SCENARIO_COMPARE_SCREEN_ITEM_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCENARIO COMPARE SCREEN ITEM EXACT
 # ============================================================
 
@@ -10045,11 +11941,22 @@ decision_section:
       visible_condition: family_plan_only
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200008_LIFE_PLANNER_REFLECTION_CANDIDATE_SCREEN_ITEM_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200007_LIFE_PLANNER_SCENARIO_COMPARE_SCREEN_ITEM_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200008_LIFE_PLANNER_REFLECTION_CANDIDATE_SCREEN_ITEM_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER REFLECTION CANDIDATE SCREEN ITEM EXACT
 # ============================================================
 
@@ -10178,11 +12085,22 @@ actions:
       visible_condition: owner_only_and_when_status_pending
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/020.screen-item/0900200009_LIFE_PLANNER_SCREEN_ITEM_BINDING_NOTE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200008_LIFE_PLANNER_REFLECTION_CANDIDATE_SCREEN_ITEM_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200009_LIFE_PLANNER_SCREEN_ITEM_BINDING_NOTE.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN ITEM BINDING NOTE
 # ============================================================
 
@@ -10231,11 +12149,23 @@ note:
   - derived項目は life schema 内の集計またはアプリ側整形で生成する
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/030.access-control/0900300000_ACCESS_CONTROL_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/020.screen-item/0900200009_LIFE_PLANNER_SCREEN_ITEM_BINDING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300000_ACCESS_CONTROL_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ACCESS CONTROL INDEX
 # ============================================================
 
@@ -10254,11 +12184,23 @@ documents:
   - 0900300003_LIFE_PLANNER_SCREEN_ACCESS_RULES.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/030.access-control/0900300001_ACCESS_CONTROL_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300000_ACCESS_CONTROL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300001_ACCESS_CONTROL_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ACCESS CONTROL OVERVIEW
 # ============================================================
 
@@ -10291,9 +12233,9 @@ role_summary:
     - no edit
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/030.access-control/0900300002_LIFE_PLANNER_ROLE_VISIBILITY_EDITABILITY_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300001_ACCESS_CONTROL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300002_LIFE_PLANNER_ROLE_VISIBILITY_EDITABILITY_MATRIX.md -->
 
 # ============================================================
 # LIFE PLANNER ROLE VISIBILITY EDITABILITY MATRIX
@@ -10429,11 +12371,22 @@ sensitive_rule_note:
   - 上記カテゴリは share_scope allow flag が true のときのみ family roles に表示する
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/030.access-control/0900300003_LIFE_PLANNER_SCREEN_ACCESS_RULES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300002_LIFE_PLANNER_ROLE_VISIBILITY_EDITABILITY_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300003_LIFE_PLANNER_SCREEN_ACCESS_RULES.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN ACCESS RULES
 # ============================================================
 
@@ -10485,11 +12438,23 @@ ui_behavior_note:
   - shared scope 外は partially masked ではなく非表示を基本とする
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/040.dashboard-display/0900400000_DASHBOARD_DISPLAY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/030.access-control/0900300003_LIFE_PLANNER_SCREEN_ACCESS_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400000_DASHBOARD_DISPLAY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DASHBOARD DISPLAY INDEX
 # ============================================================
 
@@ -10509,11 +12474,23 @@ documents:
   - 0900400004_LIFE_PLANNER_AGE_VIEW_AND_SUMMARY_DISPLAY.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/040.dashboard-display/0900400001_DASHBOARD_DISPLAY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400000_DASHBOARD_DISPLAY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400001_DASHBOARD_DISPLAY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DASHBOARD DISPLAY OVERVIEW
 # ============================================================
 
@@ -10537,9 +12514,9 @@ dashboard_principles:
   - 重要イベント、目標進捗、見直し要否を優先する
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/040.dashboard-display/0900400002_LIFE_PLANNER_HOME_DASHBOARD_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400001_DASHBOARD_DISPLAY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400002_LIFE_PLANNER_HOME_DASHBOARD_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER HOME DASHBOARD EXACT
@@ -10612,9 +12589,9 @@ section_06_quick_actions:
     - open_notification_center
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/040.dashboard-display/0900400003_LIFE_PLANNER_DOMAIN_DASHBOARD_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400002_LIFE_PLANNER_HOME_DASHBOARD_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400003_LIFE_PLANNER_DOMAIN_DASHBOARD_EXACT.md -->
 
 # ============================================================
 # LIFE PLANNER DOMAIN DASHBOARD EXACT
@@ -10662,11 +12639,22 @@ family_plan_only_extensions:
   - scenario_pending_summary
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/040.dashboard-display/0900400004_LIFE_PLANNER_AGE_VIEW_AND_SUMMARY_DISPLAY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400003_LIFE_PLANNER_DOMAIN_DASHBOARD_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400004_LIFE_PLANNER_AGE_VIEW_AND_SUMMARY_DISPLAY.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER AGE VIEW AND SUMMARY DISPLAY
 # ============================================================
 
@@ -10700,11 +12688,23 @@ derived_rules:
   - actual stored values are event dates and plan period
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/050.onboarding-template/0900500000_ONBOARDING_TEMPLATE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/040.dashboard-display/0900400004_LIFE_PLANNER_AGE_VIEW_AND_SUMMARY_DISPLAY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500000_ONBOARDING_TEMPLATE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ONBOARDING TEMPLATE INDEX
 # ============================================================
 
@@ -10724,11 +12724,23 @@ documents:
   - 0900500004_LIFE_PLANNER_TEMPLATE_CATALOG_DRAFT.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/050.onboarding-template/0900500001_ONBOARDING_TEMPLATE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500000_ONBOARDING_TEMPLATE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500001_ONBOARDING_TEMPLATE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ONBOARDING TEMPLATE OVERVIEW
 # ============================================================
 
@@ -10751,9 +12763,9 @@ principles:
   - goal / event / family share は後からでも追加できる
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/050.onboarding-template/0900500002_LIFE_PLANNER_FIRST_RUN_FLOW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500001_ONBOARDING_TEMPLATE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500002_LIFE_PLANNER_FIRST_RUN_FLOW.md -->
 
 # ============================================================
 # LIFE PLANNER FIRST RUN FLOW
@@ -10824,9 +12836,9 @@ completion_goal:
   - 初回ホームに遷移できる
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/050.onboarding-template/0900500003_LIFE_PLANNER_INITIAL_SETUP_WIZARD_ITEMS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500002_LIFE_PLANNER_FIRST_RUN_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500003_LIFE_PLANNER_INITIAL_SETUP_WIZARD_ITEMS.md -->
 
 # ============================================================
 # LIFE PLANNER INITIAL SETUP WIZARD ITEMS
@@ -10901,9 +12913,9 @@ wizard_policy:
   - family share invitation is initial stepでは必須にしない
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/050.onboarding-template/0900500004_LIFE_PLANNER_TEMPLATE_CATALOG_DRAFT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500003_LIFE_PLANNER_INITIAL_SETUP_WIZARD_ITEMS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500004_LIFE_PLANNER_TEMPLATE_CATALOG_DRAFT.md -->
 
 # ============================================================
 # LIFE PLANNER TEMPLATE CATALOG DRAFT
@@ -10969,11 +12981,23 @@ template_policy:
   - template は recommendation であり制約ではない
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/060.search-filter/0900600000_SEARCH_FILTER_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/050.onboarding-template/0900500004_LIFE_PLANNER_TEMPLATE_CATALOG_DRAFT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600000_SEARCH_FILTER_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SEARCH FILTER INDEX
 # ============================================================
 
@@ -10993,11 +13017,23 @@ documents:
   - 0900600004_LIFE_PLANNER_EVENT_SEARCH_FILTER_SORT.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/060.search-filter/0900600001_SEARCH_FILTER_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600000_SEARCH_FILTER_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600001_SEARCH_FILTER_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SEARCH FILTER OVERVIEW
 # ============================================================
 
@@ -11021,9 +13057,9 @@ principles:
   - 検索対象は保存値ベース、表示整形値依存にしない
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/060.search-filter/0900600002_LIFE_PLANNER_PLAN_SEARCH_FILTER_SORT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600001_SEARCH_FILTER_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600002_LIFE_PLANNER_PLAN_SEARCH_FILTER_SORT.md -->
 
 # ============================================================
 # LIFE PLANNER PLAN SEARCH FILTER SORT
@@ -11097,9 +13133,9 @@ ui_rules:
   - tablet_pc may show persistent side filter panel
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/060.search-filter/0900600003_LIFE_PLANNER_GOAL_SEARCH_FILTER_SORT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600002_LIFE_PLANNER_PLAN_SEARCH_FILTER_SORT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600003_LIFE_PLANNER_GOAL_SEARCH_FILTER_SORT.md -->
 
 # ============================================================
 # LIFE PLANNER GOAL SEARCH FILTER SORT
@@ -11175,9 +13211,9 @@ scope_rules:
   - hidden sensitive categories do not appear in results or filter counts
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/060.search-filter/0900600004_LIFE_PLANNER_EVENT_SEARCH_FILTER_SORT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600003_LIFE_PLANNER_GOAL_SEARCH_FILTER_SORT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600004_LIFE_PLANNER_EVENT_SEARCH_FILTER_SORT.md -->
 
 # ============================================================
 # LIFE PLANNER EVENT SEARCH FILTER SORT
@@ -11246,11 +13282,23 @@ date_behavior:
   - date_range uses start_date as primary ordering anchor
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/070.export-summary/0900700000_EXPORT_SUMMARY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/060.search-filter/0900600004_LIFE_PLANNER_EVENT_SEARCH_FILTER_SORT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700000_EXPORT_SUMMARY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # EXPORT SUMMARY INDEX
 # ============================================================
 
@@ -11270,11 +13318,23 @@ documents:
   - 0900700004_LIFE_PLANNER_FAMILY_MEETING_SUMMARY_DESIGN.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/070.export-summary/0900700001_EXPORT_SUMMARY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700000_EXPORT_SUMMARY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700001_EXPORT_SUMMARY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # EXPORT SUMMARY OVERVIEW
 # ============================================================
 
@@ -11297,9 +13357,9 @@ principles:
   - 印刷 / 共有モードは通常画面と違って情報を整理して見せる
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/070.export-summary/0900700002_LIFE_PLANNER_SUMMARY_VIEW_DESIGN.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700001_EXPORT_SUMMARY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700002_LIFE_PLANNER_SUMMARY_VIEW_DESIGN.md -->
 
 # ============================================================
 # LIFE PLANNER SUMMARY VIEW DESIGN
@@ -11356,9 +13416,9 @@ display_rules:
   - derived values may be emphasized over raw detail
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/070.export-summary/0900700003_LIFE_PLANNER_PRINT_AND_SHARE_VIEW_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700002_LIFE_PLANNER_SUMMARY_VIEW_DESIGN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700003_LIFE_PLANNER_PRINT_AND_SHARE_VIEW_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER PRINT AND SHARE VIEW POLICY
@@ -11406,9 +13466,9 @@ layout_rules:
   - no edit controls in print/share view
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/070.export-summary/0900700004_LIFE_PLANNER_FAMILY_MEETING_SUMMARY_DESIGN.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700003_LIFE_PLANNER_PRINT_AND_SHARE_VIEW_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700004_LIFE_PLANNER_FAMILY_MEETING_SUMMARY_DESIGN.md -->
 
 # ============================================================
 # LIFE PLANNER FAMILY MEETING SUMMARY DESIGN
@@ -11447,11 +13507,23 @@ scope_rules:
   - default family meeting mode avoids overexposing sensitive details
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/080.copy-state/0900800000_COPY_STATE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/070.export-summary/0900700004_LIFE_PLANNER_FAMILY_MEETING_SUMMARY_DESIGN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800000_COPY_STATE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # COPY STATE INDEX
 # ============================================================
 
@@ -11473,11 +13545,23 @@ documents:
   - 0900800006_LIFE_PLANNER_NOTIFICATION_AND_REVIEW_COPY.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/080.copy-state/0900800001_COPY_STATE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800000_COPY_STATE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800001_COPY_STATE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # COPY STATE OVERVIEW
 # ============================================================
 
@@ -11502,9 +13586,9 @@ tone_policy:
   - not overly cheerful for sensitive topics
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/080.copy-state/0900800002_LIFE_PLANNER_EMPTY_STATE_COPY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800001_COPY_STATE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800002_LIFE_PLANNER_EMPTY_STATE_COPY.md -->
 
 # ============================================================
 # LIFE PLANNER EMPTY STATE COPY
@@ -11563,9 +13647,9 @@ empty_states:
     primary_cta: "条件を見直す"
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/080.copy-state/0900800003_LIFE_PLANNER_ERROR_STATE_COPY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800002_LIFE_PLANNER_EMPTY_STATE_COPY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800003_LIFE_PLANNER_ERROR_STATE_COPY.md -->
 
 # ============================================================
 # LIFE PLANNER ERROR STATE COPY
@@ -11619,9 +13703,9 @@ field_error_copy:
   dismiss_reason_required: "却下理由を入力してください。"
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/080.copy-state/0900800004_LIFE_PLANNER_SUCCESS_STATE_COPY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800003_LIFE_PLANNER_ERROR_STATE_COPY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800004_LIFE_PLANNER_SUCCESS_STATE_COPY.md -->
 
 # ============================================================
 # LIFE PLANNER SUCCESS STATE COPY
@@ -11686,11 +13770,22 @@ success_states:
     body: "判断メモとあわせて記録しました。"
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/080.copy-state/0900800005_LIFE_PLANNER_UPGRADE_AND_GUIDE_COPY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800004_LIFE_PLANNER_SUCCESS_STATE_COPY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800005_LIFE_PLANNER_UPGRADE_AND_GUIDE_COPY.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER UPGRADE AND GUIDE COPY
 # ============================================================
 
@@ -11736,9 +13831,9 @@ guide_copy:
   start_small_body: "まずは気になる分野を1つ決めて、少しずつ計画を育てていけます。"
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/080.copy-state/0900800006_LIFE_PLANNER_NOTIFICATION_AND_REVIEW_COPY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800005_LIFE_PLANNER_UPGRADE_AND_GUIDE_COPY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800006_LIFE_PLANNER_NOTIFICATION_AND_REVIEW_COPY.md -->
 
 # ============================================================
 # LIFE PLANNER NOTIFICATION AND REVIEW COPY
@@ -11783,11 +13878,23 @@ ai_help_entry_copy:
   body: "目標の言い換えや、見直し観点の整理をサポートできます。"
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/090.archive-delete/0900900000_ARCHIVE_DELETE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/080.copy-state/0900800006_LIFE_PLANNER_NOTIFICATION_AND_REVIEW_COPY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900000_ARCHIVE_DELETE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ARCHIVE DELETE INDEX
 # ============================================================
 
@@ -11807,11 +13914,23 @@ documents:
   - 0900900004_LIFE_PLANNER_RETENTION_COPY_GUIDE.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/090.archive-delete/0900900001_ARCHIVE_DELETE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900000_ARCHIVE_DELETE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900001_ARCHIVE_DELETE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ARCHIVE DELETE OVERVIEW
 # ============================================================
 
@@ -11835,11 +13954,22 @@ ui_principles:
   - copy should explain consequences calmly
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/090.archive-delete/0900900002_LIFE_PLANNER_ARCHIVE_DELETE_UI_FLOW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900001_ARCHIVE_DELETE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900002_LIFE_PLANNER_ARCHIVE_DELETE_UI_FLOW.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER ARCHIVE DELETE UI FLOW
 # ============================================================
 
@@ -11891,11 +14021,22 @@ role_rules:
     - may not delete
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/090.archive-delete/0900900003_LIFE_PLANNER_RESTORE_UI_FLOW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900002_LIFE_PLANNER_ARCHIVE_DELETE_UI_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900003_LIFE_PLANNER_RESTORE_UI_FLOW.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER RESTORE UI FLOW
 # ============================================================
 
@@ -11925,11 +14066,22 @@ ui_rules:
   - restore entry is owner-only
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/090.archive-delete/0900900004_LIFE_PLANNER_RETENTION_COPY_GUIDE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900003_LIFE_PLANNER_RESTORE_UI_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900004_LIFE_PLANNER_RETENTION_COPY_GUIDE.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER RETENTION COPY GUIDE
 # ============================================================
 
@@ -11967,11 +14119,23 @@ tone_note:
   - no fear-based coercion
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/0900000000_INTERFACE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/090.archive-delete/0900900004_LIFE_PLANNER_RETENTION_COPY_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000000_INTERFACE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTERFACE INDEX
 # ============================================================
 
@@ -11985,11 +14149,23 @@ subfolders:
   - 010.screen
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/0900000001_INTERFACE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000000_INTERFACE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000001_INTERFACE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTERFACE OVERVIEW
 # ============================================================
 
@@ -12002,11 +14178,23 @@ focus:
   - plan detail
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/0900000_INTERFACE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000001_INTERFACE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000_INTERFACE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INTERFACE INDEX
 # ============================================================
 
@@ -12026,11 +14214,23 @@ includes:
   - 010.core/0900004_LIFE_PLANNER_INTERFACE_SPEC.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/0900001_LIFE_PLANNER_INTERFACE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900000_INTERFACE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900001_LIFE_PLANNER_INTERFACE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER INTERFACE OVERVIEW
 # ============================================================
 
@@ -12053,11 +14253,23 @@ summary:
   - 長期計画が見やすい構造を持つ
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/100.change-review/0901000000_CHANGE_REVIEW_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/0900001_LIFE_PLANNER_INTERFACE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000000_CHANGE_REVIEW_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CHANGE REVIEW INDEX
 # ============================================================
 
@@ -12077,11 +14289,23 @@ documents:
   - 0901000004_LIFE_PLANNER_ACTIVITY_HISTORY_UI.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/100.change-review/0901000001_CHANGE_REVIEW_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000000_CHANGE_REVIEW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000001_CHANGE_REVIEW_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CHANGE REVIEW OVERVIEW
 # ============================================================
 
@@ -12105,11 +14329,22 @@ ui_principles:
   - keep family collaboration understandable
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/100.change-review/0901000002_LIFE_PLANNER_CONFLICT_REVIEW_UI.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000001_CHANGE_REVIEW_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000002_LIFE_PLANNER_CONFLICT_REVIEW_UI.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER CONFLICT REVIEW UI
 # ============================================================
 
@@ -12146,11 +14381,22 @@ ui_rules:
   - owner-only restrictions remain explicit
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/100.change-review/0901000003_LIFE_PLANNER_OWNER_REVIEW_QUEUE_UI.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000002_LIFE_PLANNER_CONFLICT_REVIEW_UI.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000003_LIFE_PLANNER_OWNER_REVIEW_QUEUE_UI.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER OWNER REVIEW QUEUE UI
 # ============================================================
 
@@ -12189,11 +14435,22 @@ ui_note:
   - not every family edit should become queue item
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/100.change-review/0901000004_LIFE_PLANNER_ACTIVITY_HISTORY_UI.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000003_LIFE_PLANNER_OWNER_REVIEW_QUEUE_UI.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000004_LIFE_PLANNER_ACTIVITY_HISTORY_UI.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER ACTIVITY HISTORY UI
 # ============================================================
 
@@ -12230,11 +14487,23 @@ difference_from_review_log:
     - broader operational change trace
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/110.settings-workbook/0901100000_SETTINGS_WORKBOOK_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/100.change-review/0901000004_LIFE_PLANNER_ACTIVITY_HISTORY_UI.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100000_SETTINGS_WORKBOOK_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SETTINGS WORKBOOK INDEX
 # ============================================================
 
@@ -12254,11 +14523,23 @@ documents:
   - 0901100004_LIFE_PLANNER_WORKBOOK_COPY_GUIDE.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/110.settings-workbook/0901100001_SETTINGS_WORKBOOK_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100000_SETTINGS_WORKBOOK_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100001_SETTINGS_WORKBOOK_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SETTINGS WORKBOOK OVERVIEW
 # ============================================================
 
@@ -12282,11 +14563,22 @@ screen_groups:
   - value_work
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/110.settings-workbook/0901100002_LIFE_PLANNER_SETTINGS_SCREEN_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100001_SETTINGS_WORKBOOK_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100002_LIFE_PLANNER_SETTINGS_SCREEN_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SETTINGS SCREEN EXACT
 # ============================================================
 
@@ -12335,11 +14627,22 @@ visibility_notes:
   - owner sees full settings
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/110.settings-workbook/0901100003_LIFE_PLANNER_CHECKLIST_RISK_VALUE_SCREEN_EXACT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100002_LIFE_PLANNER_SETTINGS_SCREEN_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100003_LIFE_PLANNER_CHECKLIST_RISK_VALUE_SCREEN_EXACT.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER CHECKLIST RISK VALUE SCREEN EXACT
 # ============================================================
 
@@ -12396,11 +14699,22 @@ screen_03_value_work:
     - note
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/110.settings-workbook/0901100004_LIFE_PLANNER_WORKBOOK_COPY_GUIDE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100003_LIFE_PLANNER_CHECKLIST_RISK_VALUE_SCREEN_EXACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100004_LIFE_PLANNER_WORKBOOK_COPY_GUIDE.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER WORKBOOK COPY GUIDE
 # ============================================================
 
@@ -12437,11 +14751,23 @@ tone_note:
   - 正解探しではなく整理支援として表現する
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/120.indicator-score/0901200000_INDICATOR_SCORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/110.settings-workbook/0901100004_LIFE_PLANNER_WORKBOOK_COPY_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200000_INDICATOR_SCORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INDICATOR SCORE INDEX
 # ============================================================
 
@@ -12461,11 +14787,23 @@ documents:
   - 0901200004_LIFE_PLANNER_HOME_ATTENTION_CARD_DESIGN.md
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/120.indicator-score/0901200001_INDICATOR_SCORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200000_INDICATOR_SCORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200001_INDICATOR_SCORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INDICATOR SCORE OVERVIEW
 # ============================================================
 
@@ -12488,9 +14826,9 @@ principles:
   - use simple labels before complex scores
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/120.indicator-score/0901200002_LIFE_PLANNER_BADGE_AND_INDICATOR_DESIGN.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200001_INDICATOR_SCORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200002_LIFE_PLANNER_BADGE_AND_INDICATOR_DESIGN.md -->
 
 # ============================================================
 # LIFE PLANNER BADGE AND INDICATOR DESIGN
@@ -12541,11 +14879,22 @@ indicator_rules:
   - hidden scope items must not generate visible badges for unauthorized roles
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/120.indicator-score/0901200003_LIFE_PLANNER_REVIEW_AND_PROGRESS_SCORE_DISPLAY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200002_LIFE_PLANNER_BADGE_AND_INDICATOR_DESIGN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200003_LIFE_PLANNER_REVIEW_AND_PROGRESS_SCORE_DISPLAY.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER REVIEW AND PROGRESS SCORE DISPLAY
 # ============================================================
 
@@ -12587,9 +14936,9 @@ prohibited_forms:
   - certainty score for future outcome
 
 
-# ============================================================
-# SOURCE FILE: 090.interface/120.indicator-score/0901200004_LIFE_PLANNER_HOME_ATTENTION_CARD_DESIGN.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200003_LIFE_PLANNER_REVIEW_AND_PROGRESS_SCORE_DISPLAY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200004_LIFE_PLANNER_HOME_ATTENTION_CARD_DESIGN.md -->
 
 # ============================================================
 # LIFE PLANNER HOME ATTENTION CARD DESIGN
@@ -12627,11 +14976,23 @@ copy_direction:
   - non-alarming
 
 
-# ============================================================
-# SOURCE FILE: 100.security/010.core/1000002_SECURITY_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/090.interface/120.indicator-score/0901200004_LIFE_PLANNER_HOME_ATTENTION_CARD_DESIGN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000002_SECURITY_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SECURITY CORE INDEX
 # ============================================================
 
@@ -12650,11 +15011,23 @@ includes:
   - 1000004_LIFE_PLANNER_SECURITY_MODEL.md
 
 
-# ============================================================
-# SOURCE FILE: 100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000002_SECURITY_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SECURITY CORE OVERVIEW
 # ============================================================
 
@@ -12673,9 +15046,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 100.security/010.core/1000004_LIFE_PLANNER_SECURITY_MODEL.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000004_LIFE_PLANNER_SECURITY_MODEL.md -->
 
 # ============================================================
 # LIFE PLANNER SECURITY MODEL
@@ -12705,11 +15078,23 @@ security_rules:
   - 高機微データは自動拡散しない
 
 
-# ============================================================
-# SOURCE FILE: 100.security/010.data-protection/1000100000_DATA_PROTECTION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.core/1000004_LIFE_PLANNER_SECURITY_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100000_DATA_PROTECTION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DATA PROTECTION INDEX
 # ============================================================
 
@@ -12721,11 +15106,23 @@ documents:
   - 1000100002_LIFE_PLANNER_SECURITY_AND_DATA_PROTECTION.md
 
 
-# ============================================================
-# SOURCE FILE: 100.security/010.data-protection/1000100001_DATA_PROTECTION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100000_DATA_PROTECTION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100001_DATA_PROTECTION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DATA PROTECTION OVERVIEW
 # ============================================================
 
@@ -12735,9 +15132,9 @@ topics:
   - role-based access
 
 
-# ============================================================
-# SOURCE FILE: 100.security/010.data-protection/1000100002_LIFE_PLANNER_SECURITY_AND_DATA_PROTECTION.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100001_DATA_PROTECTION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100002_LIFE_PLANNER_SECURITY_AND_DATA_PROTECTION.md -->
 
 # ============================================================
 # LIFE PLANNER SECURITY AND DATA PROTECTION
@@ -12750,11 +15147,23 @@ security_rules:
   - review_logとshare historyを保持する
 
 
-# ============================================================
-# SOURCE FILE: 100.security/1000000000_SECURITY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/010.data-protection/1000100002_LIFE_PLANNER_SECURITY_AND_DATA_PROTECTION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000000_SECURITY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SECURITY INDEX
 # ============================================================
 
@@ -12768,11 +15177,23 @@ subfolders:
   - 010.data-protection
 
 
-# ============================================================
-# SOURCE FILE: 100.security/1000000001_SECURITY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000000_SECURITY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000001_SECURITY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SECURITY OVERVIEW
 # ============================================================
 
@@ -12784,11 +15205,23 @@ focus:
   - access control
 
 
-# ============================================================
-# SOURCE FILE: 100.security/1000000_SECURITY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000001_SECURITY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000_SECURITY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SECURITY INDEX
 # ============================================================
 
@@ -12808,11 +15241,23 @@ includes:
   - 010.core/1000004_LIFE_PLANNER_SECURITY_MODEL.md
 
 
-# ============================================================
-# SOURCE FILE: 100.security/1000001_LIFE_PLANNER_SECURITY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000000_SECURITY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000001_LIFE_PLANNER_SECURITY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SECURITY OVERVIEW
 # ============================================================
 
@@ -12835,11 +15280,23 @@ summary:
   - 最小権限を基本とする
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/100.security/1000001_LIFE_PLANNER_SECURITY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INFRASTRUCTURE CORE INDEX
 # ============================================================
 
@@ -12858,11 +15315,23 @@ includes:
   - 1100004_LIFE_PLANNER_INFRASTRUCTURE_PROFILE.md
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INFRASTRUCTURE CORE OVERVIEW
 # ============================================================
 
@@ -12881,9 +15350,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/010.core/1100004_LIFE_PLANNER_INFRASTRUCTURE_PROFILE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100004_LIFE_PLANNER_INFRASTRUCTURE_PROFILE.md -->
 
 # ============================================================
 # LIFE PLANNER INFRASTRUCTURE PROFILE
@@ -12912,11 +15381,23 @@ infra_rules:
   - 添付保存は計画紐付けを必須とする
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/010.device-platform/1100100000_DEVICE_PLATFORM_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.core/1100004_LIFE_PLANNER_INFRASTRUCTURE_PROFILE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100000_DEVICE_PLATFORM_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DEVICE PLATFORM INDEX
 # ============================================================
 
@@ -12928,11 +15409,23 @@ documents:
   - 1100100002_LIFE_PLANNER_DEVICE_PLATFORM_ASSUMPTIONS.md
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/010.device-platform/1100100001_DEVICE_PLATFORM_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100000_DEVICE_PLATFORM_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100001_DEVICE_PLATFORM_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DEVICE PLATFORM OVERVIEW
 # ============================================================
 
@@ -12943,9 +15436,9 @@ topics:
   - Tablet
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/010.device-platform/1100100002_LIFE_PLANNER_DEVICE_PLATFORM_ASSUMPTIONS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100001_DEVICE_PLATFORM_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100002_LIFE_PLANNER_DEVICE_PLATFORM_ASSUMPTIONS.md -->
 
 # ============================================================
 # LIFE PLANNER DEVICE PLATFORM ASSUMPTIONS
@@ -12958,11 +15451,23 @@ device_policy:
   - 多言語/多通貨対応を前提とする
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/020.localization-device/1100200000_LOCALIZATION_DEVICE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/010.device-platform/1100100002_LIFE_PLANNER_DEVICE_PLATFORM_ASSUMPTIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200000_LOCALIZATION_DEVICE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LOCALIZATION DEVICE INDEX
 # ============================================================
 
@@ -12982,11 +15487,23 @@ documents:
   - 1100200004_LIFE_PLANNER_MULTI_DEVICE_DISPLAY_POLICY.md
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/020.localization-device/1100200001_LOCALIZATION_DEVICE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200000_LOCALIZATION_DEVICE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200001_LOCALIZATION_DEVICE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LOCALIZATION DEVICE OVERVIEW
 # ============================================================
 
@@ -13004,9 +15521,9 @@ purpose:
   - 端末差で機能差を作らない前提を明文化する
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/020.localization-device/1100200002_LIFE_PLANNER_MULTILINGUAL_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200001_LOCALIZATION_DEVICE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200002_LIFE_PLANNER_MULTILINGUAL_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER MULTILINGUAL POLICY
@@ -13040,9 +15557,9 @@ non_localize_targets:
   - internal ids
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/020.localization-device/1100200003_LIFE_PLANNER_MULTICURRENCY_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200002_LIFE_PLANNER_MULTILINGUAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200003_LIFE_PLANNER_MULTICURRENCY_POLICY.md -->
 
 # ============================================================
 # LIFE PLANNER MULTICURRENCY POLICY
@@ -13074,11 +15591,22 @@ display_rules:
   - currency switch display is UI concern, not storage concern
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/020.localization-device/1100200004_LIFE_PLANNER_MULTI_DEVICE_DISPLAY_POLICY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200003_LIFE_PLANNER_MULTICURRENCY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200004_LIFE_PLANNER_MULTI_DEVICE_DISPLAY_POLICY.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER MULTI DEVICE DISPLAY POLICY
 # ============================================================
 
@@ -13117,11 +15645,23 @@ consistency_rules:
   - only presentation density changes
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/1100000000_INFRASTRUCTURE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/020.localization-device/1100200004_LIFE_PLANNER_MULTI_DEVICE_DISPLAY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000000_INFRASTRUCTURE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INFRASTRUCTURE INDEX
 # ============================================================
 
@@ -13135,11 +15675,23 @@ subfolders:
   - 010.device-platform
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/1100000001_INFRASTRUCTURE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000000_INFRASTRUCTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000001_INFRASTRUCTURE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INFRASTRUCTURE OVERVIEW
 # ============================================================
 
@@ -13151,11 +15703,23 @@ focus:
   - platform behavior
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000001_INFRASTRUCTURE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # INFRASTRUCTURE INDEX
 # ============================================================
 
@@ -13175,11 +15739,23 @@ includes:
   - 010.core/1100004_LIFE_PLANNER_INFRASTRUCTURE_PROFILE.md
 
 
-# ============================================================
-# SOURCE FILE: 110.infrastructure/1100001_LIFE_PLANNER_INFRASTRUCTURE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100001_LIFE_PLANNER_INFRASTRUCTURE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER INFRASTRUCTURE OVERVIEW
 # ============================================================
 
@@ -13202,11 +15778,23 @@ summary:
   - LifeOS 配下アプリとしての実装前提を置く
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/110.infrastructure/1100001_LIFE_PLANNER_INFRASTRUCTURE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # IMPLEMENTATION CORE INDEX
 # ============================================================
 
@@ -13225,11 +15813,23 @@ includes:
   - 1200004_LIFE_PLANNER_IMPLEMENTATION_PLAN.md
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # IMPLEMENTATION CORE OVERVIEW
 # ============================================================
 
@@ -13248,9 +15848,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/010.core/1200004_LIFE_PLANNER_IMPLEMENTATION_PLAN.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200004_LIFE_PLANNER_IMPLEMENTATION_PLAN.md -->
 
 # ============================================================
 # LIFE PLANNER IMPLEMENTATION PLAN
@@ -13282,11 +15882,23 @@ notes:
   - 本アプリでは app-specific extension を実装する
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/010.release-plan/1200100000_RELEASE_PLAN_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.core/1200004_LIFE_PLANNER_IMPLEMENTATION_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100000_RELEASE_PLAN_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RELEASE PLAN INDEX
 # ============================================================
 
@@ -13298,11 +15910,23 @@ documents:
   - 1200100002_LIFE_PLANNER_PHASED_IMPLEMENTATION_PLAN.md
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/010.release-plan/1200100001_RELEASE_PLAN_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100000_RELEASE_PLAN_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100001_RELEASE_PLAN_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # RELEASE PLAN OVERVIEW
 # ============================================================
 
@@ -13313,9 +15937,9 @@ topics:
   - phase 4 scenario expansion
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/010.release-plan/1200100002_LIFE_PLANNER_PHASED_IMPLEMENTATION_PLAN.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100001_RELEASE_PLAN_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100002_LIFE_PLANNER_PHASED_IMPLEMENTATION_PLAN.md -->
 
 # ============================================================
 # LIFE PLANNER PHASED IMPLEMENTATION PLAN
@@ -13345,11 +15969,23 @@ phase_4:
   - 家族会議モード
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/020.scope-matrix/1200200000_SCOPE_MATRIX_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/010.release-plan/1200100002_LIFE_PLANNER_PHASED_IMPLEMENTATION_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200000_SCOPE_MATRIX_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SCOPE MATRIX INDEX
 # ============================================================
 
@@ -13368,11 +16004,23 @@ documents:
   - 1200200003_LIFE_PLANNER_SCREEN_AND_FEATURE_MATRIX.md
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/020.scope-matrix/1200200001_SCOPE_MATRIX_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200000_SCOPE_MATRIX_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200001_SCOPE_MATRIX_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # SCOPE MATRIX OVERVIEW
 # ============================================================
 
@@ -13396,9 +16044,9 @@ matrix_axes:
   - feature
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/020.scope-matrix/1200200002_LIFE_PLANNER_PHASE_AND_PLAN_SCOPE_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200001_SCOPE_MATRIX_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200002_LIFE_PLANNER_PHASE_AND_PLAN_SCOPE_MATRIX.md -->
 
 # ============================================================
 # LIFE PLANNER PHASE AND PLAN SCOPE MATRIX
@@ -13460,11 +16108,22 @@ scope_notes:
   - 高度比較と共同運用はFamilyに寄せる
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/020.scope-matrix/1200200003_LIFE_PLANNER_SCREEN_AND_FEATURE_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200002_LIFE_PLANNER_PHASE_AND_PLAN_SCOPE_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200003_LIFE_PLANNER_SCREEN_AND_FEATURE_MATRIX.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN AND FEATURE MATRIX
 # ============================================================
 
@@ -13561,11 +16220,23 @@ matrix:
     family: true
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/030.readiness-gate/1200300000_READINESS_GATE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/020.scope-matrix/1200200003_LIFE_PLANNER_SCREEN_AND_FEATURE_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300000_READINESS_GATE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # READINESS GATE INDEX
 # ============================================================
 
@@ -13584,11 +16255,23 @@ documents:
   - 1200300003_LIFE_PLANNER_IMPLEMENTATION_START_GATE.md
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/030.readiness-gate/1200300001_READINESS_GATE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300000_READINESS_GATE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300001_READINESS_GATE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # READINESS GATE OVERVIEW
 # ============================================================
 
@@ -13611,9 +16294,9 @@ principles:
   - Free / Family の差分を曖昧にしない
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/030.readiness-gate/1200300002_LIFE_PLANNER_DESIGN_FREEZE_CHECKLIST.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300001_READINESS_GATE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300002_LIFE_PLANNER_DESIGN_FREEZE_CHECKLIST.md -->
 
 # ============================================================
 # LIFE PLANNER DESIGN FREEZE CHECKLIST
@@ -13670,9 +16353,9 @@ freeze_judgement_rule:
   - upstream app exact contract 未固定は provisional freeze 対象にできる
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/030.readiness-gate/1200300003_LIFE_PLANNER_IMPLEMENTATION_START_GATE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300002_LIFE_PLANNER_DESIGN_FREEZE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300003_LIFE_PLANNER_IMPLEMENTATION_START_GATE.md -->
 
 # ============================================================
 # LIFE PLANNER IMPLEMENTATION START GATE
@@ -13709,11 +16392,23 @@ recommended_first_impl_sequence_after_gate:
   - phase 1 policy enforcement
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/040.acceptance-criteria/1200400000_ACCEPTANCE_CRITERIA_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/030.readiness-gate/1200300003_LIFE_PLANNER_IMPLEMENTATION_START_GATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400000_ACCEPTANCE_CRITERIA_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ACCEPTANCE CRITERIA INDEX
 # ============================================================
 
@@ -13733,11 +16428,23 @@ documents:
   - 1200400004_LIFE_PLANNER_POLICY_AND_DATA_ACCEPTANCE_CRITERIA.md
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/040.acceptance-criteria/1200400001_ACCEPTANCE_CRITERIA_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400000_ACCEPTANCE_CRITERIA_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400001_ACCEPTANCE_CRITERIA_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # ACCEPTANCE CRITERIA OVERVIEW
 # ============================================================
 
@@ -13760,9 +16467,9 @@ principles:
   - life スキーマ前提を崩さない
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/040.acceptance-criteria/1200400002_LIFE_PLANNER_CORE_SCENARIO_ACCEPTANCE_CRITERIA.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400001_ACCEPTANCE_CRITERIA_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400002_LIFE_PLANNER_CORE_SCENARIO_ACCEPTANCE_CRITERIA.md -->
 
 # ============================================================
 # LIFE PLANNER CORE SCENARIO ACCEPTANCE CRITERIA
@@ -13825,9 +16532,9 @@ core_scenarios:
       - owner can store final scenario decision
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/040.acceptance-criteria/1200400003_LIFE_PLANNER_ROLE_AND_PLAN_ACCEPTANCE_CRITERIA.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400002_LIFE_PLANNER_CORE_SCENARIO_ACCEPTANCE_CRITERIA.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400003_LIFE_PLANNER_ROLE_AND_PLAN_ACCEPTANCE_CRITERIA.md -->
 
 # ============================================================
 # LIFE PLANNER ROLE AND PLAN ACCEPTANCE CRITERIA
@@ -13873,9 +16580,9 @@ plan_scope_acceptance:
     - age view and broader shared flow are usable
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/040.acceptance-criteria/1200400004_LIFE_PLANNER_POLICY_AND_DATA_ACCEPTANCE_CRITERIA.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400003_LIFE_PLANNER_ROLE_AND_PLAN_ACCEPTANCE_CRITERIA.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400004_LIFE_PLANNER_POLICY_AND_DATA_ACCEPTANCE_CRITERIA.md -->
 
 # ============================================================
 # LIFE PLANNER POLICY AND DATA ACCEPTANCE CRITERIA
@@ -13908,11 +16615,23 @@ non_functional_acceptance:
   - device differences change layout density only, not core capability
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/060.pre-implementation-package/1200600000_PRE_IMPLEMENTATION_PACKAGE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/040.acceptance-criteria/1200400004_LIFE_PLANNER_POLICY_AND_DATA_ACCEPTANCE_CRITERIA.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600000_PRE_IMPLEMENTATION_PACKAGE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PRE IMPLEMENTATION PACKAGE INDEX
 # ============================================================
 
@@ -13932,11 +16651,23 @@ documents:
   - 1200600004_LIFE_PLANNER_NON_BLOCKING_LATER_SCOPE.md
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/060.pre-implementation-package/1200600001_PRE_IMPLEMENTATION_PACKAGE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600000_PRE_IMPLEMENTATION_PACKAGE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600001_PRE_IMPLEMENTATION_PACKAGE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # PRE IMPLEMENTATION PACKAGE OVERVIEW
 # ============================================================
 
@@ -13958,9 +16689,9 @@ package_meaning:
   - this is the design package to be used before kickoff
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/060.pre-implementation-package/1200600002_LIFE_PLANNER_IMPLEMENTATION_DEFERRAL_BOUNDARY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600001_PRE_IMPLEMENTATION_PACKAGE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600002_LIFE_PLANNER_IMPLEMENTATION_DEFERRAL_BOUNDARY.md -->
 
 # ============================================================
 # LIFE PLANNER IMPLEMENTATION DEFERRAL BOUNDARY
@@ -13995,9 +16726,9 @@ boundary_rule:
   - design docs must not be mistaken for ready-to-run implementation
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/060.pre-implementation-package/1200600003_LIFE_PLANNER_PHASE1_IMPLEMENTATION_PREP_SCOPE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600002_LIFE_PLANNER_IMPLEMENTATION_DEFERRAL_BOUNDARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600003_LIFE_PLANNER_PHASE1_IMPLEMENTATION_PREP_SCOPE.md -->
 
 # ============================================================
 # LIFE PLANNER PHASE1 IMPLEMENTATION PREP SCOPE
@@ -14035,9 +16766,9 @@ note:
   - no code or ddl is produced here
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/060.pre-implementation-package/1200600004_LIFE_PLANNER_NON_BLOCKING_LATER_SCOPE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600003_LIFE_PLANNER_PHASE1_IMPLEMENTATION_PREP_SCOPE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600004_LIFE_PLANNER_NON_BLOCKING_LATER_SCOPE.md -->
 
 # ============================================================
 # LIFE PLANNER NON BLOCKING LATER SCOPE
@@ -14066,11 +16797,23 @@ policy:
   - keep them documented but do not let them delay core start later
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/1200000000_IMPLEMENTATION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/060.pre-implementation-package/1200600004_LIFE_PLANNER_NON_BLOCKING_LATER_SCOPE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000000_IMPLEMENTATION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # IMPLEMENTATION INDEX
 # ============================================================
 
@@ -14084,11 +16827,23 @@ subfolders:
   - 010.release-plan
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/1200000001_IMPLEMENTATION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000000_IMPLEMENTATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000001_IMPLEMENTATION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # IMPLEMENTATION OVERVIEW
 # ============================================================
 
@@ -14100,11 +16855,23 @@ focus:
   - deferred scope
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/1200000_IMPLEMENTATION_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000001_IMPLEMENTATION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000_IMPLEMENTATION_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # IMPLEMENTATION INDEX
 # ============================================================
 
@@ -14124,11 +16891,23 @@ includes:
   - 010.core/1200004_LIFE_PLANNER_IMPLEMENTATION_PLAN.md
 
 
-# ============================================================
-# SOURCE FILE: 120.implementation/1200001_LIFE_PLANNER_IMPLEMENTATION_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200000_IMPLEMENTATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200001_LIFE_PLANNER_IMPLEMENTATION_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER IMPLEMENTATION OVERVIEW
 # ============================================================
 
@@ -14151,11 +16930,23 @@ summary:
   - payload 固定の前提を整える
 
 
-# ============================================================
-# SOURCE FILE: 130.development/010.backlog/1300100000_BACKLOG_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/120.implementation/1200001_LIFE_PLANNER_IMPLEMENTATION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100000_BACKLOG_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # BACKLOG INDEX
 # ============================================================
 
@@ -14167,11 +16958,23 @@ documents:
   - 1300100002_LIFE_PLANNER_NEXT_ACTIONS.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/010.backlog/1300100001_BACKLOG_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100000_BACKLOG_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100001_BACKLOG_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # BACKLOG OVERVIEW
 # ============================================================
 
@@ -14181,9 +16984,9 @@ topics:
   - common component review
 
 
-# ============================================================
-# SOURCE FILE: 130.development/010.backlog/1300100002_LIFE_PLANNER_NEXT_ACTIONS.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100001_BACKLOG_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100002_LIFE_PLANNER_NEXT_ACTIONS.md -->
 
 # ============================================================
 # LIFE PLANNER NEXT ACTIONS
@@ -14197,11 +17000,23 @@ next_actions:
   - family share権限定義の詳細化
 
 
-# ============================================================
-# SOURCE FILE: 130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.backlog/1300100002_LIFE_PLANNER_NEXT_ACTIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DEVELOPMENT CORE INDEX
 # ============================================================
 
@@ -14220,11 +17035,23 @@ includes:
   - 1300004_LIFE_PLANNER_DEVELOPMENT_ROADMAP.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DEVELOPMENT CORE OVERVIEW
 # ============================================================
 
@@ -14243,9 +17070,9 @@ core_scope:
   - 他アプリ共通候補そのものではなく、本アプリ責務と接続前提を記述する
 
 
-# ============================================================
-# SOURCE FILE: 130.development/010.core/1300004_LIFE_PLANNER_DEVELOPMENT_ROADMAP.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300004_LIFE_PLANNER_DEVELOPMENT_ROADMAP.md -->
 
 # ============================================================
 # LIFE PLANNER DEVELOPMENT ROADMAP
@@ -14275,11 +17102,23 @@ review_points:
   - 長期運用前提が維持されているか
 
 
-# ============================================================
-# SOURCE FILE: 130.development/030.decision-log/1300300000_DECISION_LOG_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/010.core/1300004_LIFE_PLANNER_DEVELOPMENT_ROADMAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300000_DECISION_LOG_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DECISION LOG INDEX
 # ============================================================
 
@@ -14297,11 +17136,23 @@ documents:
   - 1300300002_LIFE_PLANNER_FIXED_DECISIONS_LOG.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/030.decision-log/1300300001_DECISION_LOG_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300000_DECISION_LOG_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300001_DECISION_LOG_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DECISION LOG OVERVIEW
 # ============================================================
 
@@ -14319,9 +17170,9 @@ purpose:
   - 次チャットや別担当への引き継ぎを容易にする
 
 
-# ============================================================
-# SOURCE FILE: 130.development/030.decision-log/1300300002_LIFE_PLANNER_FIXED_DECISIONS_LOG.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300001_DECISION_LOG_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300002_LIFE_PLANNER_FIXED_DECISIONS_LOG.md -->
 
 # ============================================================
 # LIFE PLANNER FIXED DECISIONS LOG
@@ -14392,11 +17243,23 @@ fixed_decisions:
       - multilingual and multicurrency support are required
 
 
-# ============================================================
-# SOURCE FILE: 130.development/040.open-issues/1300400000_OPEN_ISSUES_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/030.decision-log/1300300002_LIFE_PLANNER_FIXED_DECISIONS_LOG.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400000_OPEN_ISSUES_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # OPEN ISSUES INDEX
 # ============================================================
 
@@ -14415,11 +17278,23 @@ documents:
   - 1300400003_LIFE_PLANNER_RECOMMENDED_NEXT_DESIGN_BATCH.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/040.open-issues/1300400001_OPEN_ISSUES_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400000_OPEN_ISSUES_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400001_OPEN_ISSUES_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # OPEN ISSUES OVERVIEW
 # ============================================================
 
@@ -14437,9 +17312,9 @@ purpose:
   - 設計完了条件を見える化する
 
 
-# ============================================================
-# SOURCE FILE: 130.development/040.open-issues/1300400002_LIFE_PLANNER_OPEN_ISSUES_LEDGER.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400001_OPEN_ISSUES_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400002_LIFE_PLANNER_OPEN_ISSUES_LEDGER.md -->
 
 # ============================================================
 # LIFE PLANNER OPEN ISSUES LEDGER
@@ -14519,9 +17394,9 @@ open_issues:
       - postpone until core design freeze
 
 
-# ============================================================
-# SOURCE FILE: 130.development/040.open-issues/1300400003_LIFE_PLANNER_RECOMMENDED_NEXT_DESIGN_BATCH.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400002_LIFE_PLANNER_OPEN_ISSUES_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400003_LIFE_PLANNER_RECOMMENDED_NEXT_DESIGN_BATCH.md -->
 
 # ============================================================
 # LIFE PLANNER RECOMMENDED NEXT DESIGN BATCH
@@ -14568,11 +17443,23 @@ stop_line_before_implementation:
   - design audit completed
 
 
-# ============================================================
-# SOURCE FILE: 130.development/050.design-audit/1300500000_DESIGN_AUDIT_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/040.open-issues/1300400003_LIFE_PLANNER_RECOMMENDED_NEXT_DESIGN_BATCH.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500000_DESIGN_AUDIT_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DESIGN AUDIT INDEX
 # ============================================================
 
@@ -14592,11 +17479,23 @@ documents:
   - 1300500004_LIFE_PLANNER_PRE_IMPLEMENTATION_AUDIT_NOTE.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/050.design-audit/1300500001_DESIGN_AUDIT_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500000_DESIGN_AUDIT_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500001_DESIGN_AUDIT_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DESIGN AUDIT OVERVIEW
 # ============================================================
 
@@ -14622,9 +17521,9 @@ audit_focus:
   - sensitive data consistency
 
 
-# ============================================================
-# SOURCE FILE: 130.development/050.design-audit/1300500002_LIFE_PLANNER_CONSISTENCY_AUDIT_CHECKLIST.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500001_DESIGN_AUDIT_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500002_LIFE_PLANNER_CONSISTENCY_AUDIT_CHECKLIST.md -->
 
 # ============================================================
 # LIFE PLANNER CONSISTENCY AUDIT CHECKLIST
@@ -14671,9 +17570,9 @@ audit_checklist:
     - [ ] dashboard derived numbers align with source entities
 
 
-# ============================================================
-# SOURCE FILE: 130.development/050.design-audit/1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500002_LIFE_PLANNER_CONSISTENCY_AUDIT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md -->
 
 # ============================================================
 # LIFE PLANNER CROSS DOCUMENT CONTRADICTION MATRIX
@@ -14740,9 +17639,9 @@ audit_result_policy:
   - contradiction resolved -> update affected docs and decision log
 
 
-# ============================================================
-# SOURCE FILE: 130.development/050.design-audit/1300500004_LIFE_PLANNER_PRE_IMPLEMENTATION_AUDIT_NOTE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500004_LIFE_PLANNER_PRE_IMPLEMENTATION_AUDIT_NOTE.md -->
 
 # ============================================================
 # LIFE PLANNER PRE-IMPLEMENTATION AUDIT NOTE
@@ -14770,11 +17669,23 @@ exit_criteria:
   - no stored/derived confusion on major dashboard values
 
 
-# ============================================================
-# SOURCE FILE: 130.development/060.traceability/1300600000_TRACEABILITY_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/050.design-audit/1300500004_LIFE_PLANNER_PRE_IMPLEMENTATION_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600000_TRACEABILITY_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # TRACEABILITY INDEX
 # ============================================================
 
@@ -14793,11 +17704,23 @@ documents:
   - 1300600003_LIFE_PLANNER_SCREEN_PAYLOAD_MODEL_TRACE_MATRIX.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/060.traceability/1300600001_TRACEABILITY_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600000_TRACEABILITY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600001_TRACEABILITY_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # TRACEABILITY OVERVIEW
 # ============================================================
 
@@ -14815,11 +17738,22 @@ purpose:
   - 後の監査や実装計画の参照起点にする
 
 
-# ============================================================
-# SOURCE FILE: 130.development/060.traceability/1300600002_LIFE_PLANNER_REQUIREMENT_TO_DOCUMENT_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600001_TRACEABILITY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600002_LIFE_PLANNER_REQUIREMENT_TO_DOCUMENT_MATRIX.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER REQUIREMENT TO DOCUMENT MATRIX
 # ============================================================
 
@@ -14877,11 +17811,22 @@ matrix:
       - 0900300003_LIFE_PLANNER_SCREEN_ACCESS_RULES.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/060.traceability/1300600003_LIFE_PLANNER_SCREEN_PAYLOAD_MODEL_TRACE_MATRIX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600002_LIFE_PLANNER_REQUIREMENT_TO_DOCUMENT_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600003_LIFE_PLANNER_SCREEN_PAYLOAD_MODEL_TRACE_MATRIX.md -->
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER SCREEN PAYLOAD MODEL TRACE MATRIX
 # ============================================================
 
@@ -14962,11 +17907,23 @@ matrix:
       - life.life_scenario_decision
 
 
-# ============================================================
-# SOURCE FILE: 130.development/070.edge-cases/1300700000_EDGE_CASES_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/060.traceability/1300600003_LIFE_PLANNER_SCREEN_PAYLOAD_MODEL_TRACE_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700000_EDGE_CASES_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # EDGE CASES INDEX
 # ============================================================
 
@@ -14986,11 +17943,23 @@ documents:
   - 1300700004_LIFE_PLANNER_STATE_AND_INTEGRATION_EDGE_CASES.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/070.edge-cases/1300700001_EDGE_CASES_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700000_EDGE_CASES_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700001_EDGE_CASES_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # EDGE CASES OVERVIEW
 # ============================================================
 
@@ -15008,9 +17977,9 @@ purpose:
   - 特に権限、日付、通貨、状態遷移、外部連携の境界を確認する
 
 
-# ============================================================
-# SOURCE FILE: 130.development/070.edge-cases/1300700002_LIFE_PLANNER_PERMISSION_EDGE_CASES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700001_EDGE_CASES_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700002_LIFE_PLANNER_PERMISSION_EDGE_CASES.md -->
 
 # ============================================================
 # LIFE PLANNER PERMISSION EDGE CASES
@@ -15058,9 +18027,9 @@ edge_cases:
       - no normal edit flow
 
 
-# ============================================================
-# SOURCE FILE: 130.development/070.edge-cases/1300700003_LIFE_PLANNER_DATE_CURRENCY_EDGE_CASES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700002_LIFE_PLANNER_PERMISSION_EDGE_CASES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700003_LIFE_PLANNER_DATE_CURRENCY_EDGE_CASES.md -->
 
 # ============================================================
 # LIFE PLANNER DATE CURRENCY EDGE CASES
@@ -15112,9 +18081,9 @@ edge_cases:
       - compare view allows null cost display without false total
 
 
-# ============================================================
-# SOURCE FILE: 130.development/070.edge-cases/1300700004_LIFE_PLANNER_STATE_AND_INTEGRATION_EDGE_CASES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700003_LIFE_PLANNER_DATE_CURRENCY_EDGE_CASES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700004_LIFE_PLANNER_STATE_AND_INTEGRATION_EDGE_CASES.md -->
 
 # ============================================================
 # LIFE PLANNER STATE AND INTEGRATION EDGE CASES
@@ -15173,11 +18142,23 @@ edge_cases:
       - shared roles still cannot see hidden sensitive result outside allowed scope
 
 
-# ============================================================
-# SOURCE FILE: 130.development/080.final-handoff/1300800000_FINAL_HANDOFF_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/070.edge-cases/1300700004_LIFE_PLANNER_STATE_AND_INTEGRATION_EDGE_CASES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800000_FINAL_HANDOFF_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # FINAL HANDOFF INDEX
 # ============================================================
 
@@ -15197,11 +18178,23 @@ documents:
   - 1300800004_LIFE_PLANNER_NEXT_CHAT_HANDOFF_NOTE.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/080.final-handoff/1300800001_FINAL_HANDOFF_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800000_FINAL_HANDOFF_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800001_FINAL_HANDOFF_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # FINAL HANDOFF OVERVIEW
 # ============================================================
 
@@ -15219,9 +18212,9 @@ purpose:
   - 同じ論点を次チャットで最初から掘り直さないようにする
 
 
-# ============================================================
-# SOURCE FILE: 130.development/080.final-handoff/1300800002_LIFE_PLANNER_DESIGN_COMPLETION_SUMMARY.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800001_FINAL_HANDOFF_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800002_LIFE_PLANNER_DESIGN_COMPLETION_SUMMARY.md -->
 
 # ============================================================
 # LIFE PLANNER DESIGN COMPLETION SUMMARY
@@ -15258,9 +18251,9 @@ design_maturity_view:
   - not yet intended for ddl emission or code generation
 
 
-# ============================================================
-# SOURCE FILE: 130.development/080.final-handoff/1300800003_LIFE_PLANNER_BLOCKING_AND_NON_BLOCKING_ISSUES.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800002_LIFE_PLANNER_DESIGN_COMPLETION_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800003_LIFE_PLANNER_BLOCKING_AND_NON_BLOCKING_ISSUES.md -->
 
 # ============================================================
 # LIFE PLANNER BLOCKING AND NON BLOCKING ISSUES
@@ -15293,9 +18286,9 @@ guidance:
   - do not block on every nice-to-have refinement
 
 
-# ============================================================
-# SOURCE FILE: 130.development/080.final-handoff/1300800004_LIFE_PLANNER_NEXT_CHAT_HANDOFF_NOTE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800003_LIFE_PLANNER_BLOCKING_AND_NON_BLOCKING_ISSUES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800004_LIFE_PLANNER_NEXT_CHAT_HANDOFF_NOTE.md -->
 
 # ============================================================
 # LIFE PLANNER NEXT CHAT HANDOFF NOTE
@@ -15321,11 +18314,23 @@ do_first_in_next_chat_candidates:
   - implementation kickoff planning only after explicit approval
 
 
-# ============================================================
-# SOURCE FILE: 130.development/090.close-package/1300900000_CLOSE_PACKAGE_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/080.final-handoff/1300800004_LIFE_PLANNER_NEXT_CHAT_HANDOFF_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900000_CLOSE_PACKAGE_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CLOSE PACKAGE INDEX
 # ============================================================
 
@@ -15346,11 +18351,23 @@ documents:
   - 1300900005_LIFE_PLANNER_FINAL_READING_SHORTCUT.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/090.close-package/1300900001_CLOSE_PACKAGE_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900000_CLOSE_PACKAGE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900001_CLOSE_PACKAGE_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # CLOSE PACKAGE OVERVIEW
 # ============================================================
 
@@ -15368,9 +18385,9 @@ purpose:
   - 次チャットや次工程で再説明コストを減らす
 
 
-# ============================================================
-# SOURCE FILE: 130.development/090.close-package/1300900002_LIFE_PLANNER_FINAL_CLOSE_PACKAGE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900001_CLOSE_PACKAGE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900002_LIFE_PLANNER_FINAL_CLOSE_PACKAGE.md -->
 
 # ============================================================
 # LIFE PLANNER FINAL CLOSE PACKAGE
@@ -15438,9 +18455,9 @@ close_conclusion:
   - 次作業は、監査・微修正・実装準備のいずれかに限定するのが望ましい
 
 
-# ============================================================
-# SOURCE FILE: 130.development/090.close-package/1300900003_LIFE_PLANNER_DOCUMENT_COVERAGE_LEDGER.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900002_LIFE_PLANNER_FINAL_CLOSE_PACKAGE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900003_LIFE_PLANNER_DOCUMENT_COVERAGE_LEDGER.md -->
 
 # ============================================================
 # LIFE PLANNER DOCUMENT COVERAGE LEDGER
@@ -15567,9 +18584,9 @@ not_covered_by_design_on_purpose:
   - runtime implementation mechanics
 
 
-# ============================================================
-# SOURCE FILE: 130.development/090.close-package/1300900004_LIFE_PLANNER_FREEZE_RECOMMENDATION_NOTE.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900003_LIFE_PLANNER_DOCUMENT_COVERAGE_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900004_LIFE_PLANNER_FREEZE_RECOMMENDATION_NOTE.md -->
 
 # ============================================================
 # LIFE PLANNER FREEZE RECOMMENDATION NOTE
@@ -15604,9 +18621,9 @@ important_note:
   - freeze is not equivalent to implementation approval
 
 
-# ============================================================
-# SOURCE FILE: 130.development/090.close-package/1300900005_LIFE_PLANNER_FINAL_READING_SHORTCUT.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900004_LIFE_PLANNER_FREEZE_RECOMMENDATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900005_LIFE_PLANNER_FINAL_READING_SHORTCUT.md -->
 
 # ============================================================
 # LIFE PLANNER FINAL READING SHORTCUT
@@ -15635,11 +18652,23 @@ for_detailed_audit:
   - 1300400002_LIFE_PLANNER_OPEN_ISSUES_LEDGER.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/1300000000_DEVELOPMENT_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/090.close-package/1300900005_LIFE_PLANNER_FINAL_READING_SHORTCUT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000000_DEVELOPMENT_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DEVELOPMENT INDEX
 # ============================================================
 
@@ -15653,11 +18682,23 @@ subfolders:
   - 010.backlog
 
 
-# ============================================================
-# SOURCE FILE: 130.development/1300000001_DEVELOPMENT_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000000_DEVELOPMENT_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000001_DEVELOPMENT_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DEVELOPMENT OVERVIEW
 # ============================================================
 
@@ -15669,11 +18710,23 @@ focus:
   - common component review prep
 
 
-# ============================================================
-# SOURCE FILE: 130.development/1300000_DEVELOPMENT_INDEX.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000001_DEVELOPMENT_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000_DEVELOPMENT_INDEX.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # DEVELOPMENT INDEX
 # ============================================================
 
@@ -15693,11 +18746,23 @@ includes:
   - 010.core/1300004_LIFE_PLANNER_DEVELOPMENT_ROADMAP.md
 
 
-# ============================================================
-# SOURCE FILE: 130.development/1300001_LIFE_PLANNER_DEVELOPMENT_OVERVIEW.md
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300000_DEVELOPMENT_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300001_LIFE_PLANNER_DEVELOPMENT_OVERVIEW.md -->
+
 
 # ============================================================
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
 # LIFE PLANNER DEVELOPMENT OVERVIEW
 # ============================================================
 
@@ -15720,500 +18785,4 @@ summary:
   - 次段階へ渡す準備資料とする
 
 
-# ============================================================
-# SOURCE FILE: 920.meta/010.glossary/9200100000_GLOSSARY_INDEX.md
-# ============================================================
-
-# ============================================================
-# GLOSSARY INDEX
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 010.glossary
-owner: Boss
-prepared_by: Zero
-schema: life
-
-documents:
-  - 9000100000_GLOSSARY_INDEX.md
-  - 9000100001_GLOSSARY_OVERVIEW.md
-  - 9000100002_LIFE_PLANNER_GLOSSARY_AND_NAMING_FREEZE.md
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/010.glossary/9200100001_GLOSSARY_OVERVIEW.md
-# ============================================================
-
-# ============================================================
-# GLOSSARY OVERVIEW
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 010.glossary
-owner: Boss
-prepared_by: Zero
-schema: life
-
-purpose:
-  - 設計書全体で使う語彙を固定する
-  - 同じ意味に複数名を使うことを防ぐ
-  - 実装前の命名ぶれを減らす
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/010.glossary/9200100002_LIFE_PLANNER_GLOSSARY_AND_NAMING_FREEZE.md
-# ============================================================
-
-# ============================================================
-# LIFE PLANNER GLOSSARY AND NAMING FREEZE
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 010.glossary
-owner: Boss
-prepared_by: Zero
-schema: life
-
-glossary:
-  - term: life_plan
-    meaning:
-      - 人生計画表の親集約
-
-  - term: life_goal
-    meaning:
-      - 人生計画に属する目標
-
-  - term: life_milestone
-    meaning:
-      - life_goal に属する中間達成点
-
-  - term: life_event_timeline
-    meaning:
-      - 人生年表上のイベント
-
-  - term: life_review_log
-    meaning:
-      - 見直し履歴の記録
-
-  - term: life_reflection_candidate
-    meaning:
-      - 他アプリ由来の見直し候補
-
-  - term: life_shared_member
-    meaning:
-      - 共有相手とその権限・共有範囲
-
-  - term: life_scenario
-    meaning:
-      - 比較用の将来案
-
-  - term: life_scenario_decision
-    meaning:
-      - シナリオ比較後の意思決定記録
-
-  - term: owner
-    meaning:
-      - 計画所有者であり最終判断者
-
-  - term: family_editor
-    meaning:
-      - 共有範囲内で編集可能な家族ロール
-
-  - term: family_viewer
-    meaning:
-      - 共有範囲内で閲覧のみ可能な家族ロール
-
-  - term: derived
-    meaning:
-      - 保存値ではなく計算・整形・集計により生成される表示値
-
-naming_freeze_rules:
-  - use life_plan not just plan in storage/model documents
-  - use goal_status not mixed status wording in entity context
-  - use reflection_status not candidate_status
-  - use role_type for shared member role field
-  - use visibility_policy for plan visibility field
-
-do_not_mix_examples:
-  - plan_id vs life_plan_id in logical schema context
-  - shared_user vs shared_member
-  - review_history vs review_log
-  - compare_result storage vs derived compare result
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/020.full-navigation/9200200000_FULL_NAVIGATION_INDEX.md
-# ============================================================
-
-# ============================================================
-# FULL NAVIGATION INDEX
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 020.full-navigation
-owner: Boss
-prepared_by: Zero
-schema: life
-
-documents:
-  - 9000200000_FULL_NAVIGATION_INDEX.md
-  - 9000200001_FULL_NAVIGATION_OVERVIEW.md
-  - 9000200002_LIFE_PLANNER_FULL_DOCUMENT_MAP.md
-  - 9000200003_LIFE_PLANNER_ROLE_BASED_READING_PATHS.md
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/020.full-navigation/9200200001_FULL_NAVIGATION_OVERVIEW.md
-# ============================================================
-
-# ============================================================
-# FULL NAVIGATION OVERVIEW
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 020.full-navigation
-owner: Boss
-prepared_by: Zero
-schema: life
-
-purpose:
-  - 設計書の全体地図を一箇所にまとめる
-  - 誰がどの順に読むかを整理する
-  - 後から見ても迷子にならないようにする
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/020.full-navigation/9200200002_LIFE_PLANNER_FULL_DOCUMENT_MAP.md
-# ============================================================
-
-# ============================================================
-# LIFE PLANNER FULL DOCUMENT MAP
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 020.full-navigation
-owner: Boss
-prepared_by: Zero
-schema: life
-
-top_level_map:
-  root:
-    - root overview
-    - integrated canonical
-    - final design status
-    - pre implementation handoff
-
-  constitution:
-    - principles
-    - scope and boundary
-
-  architecture:
-    - application architecture
-
-  model:
-    - domain model
-    - logical schema
-    - binding
-    - master definition
-    - derived definition
-
-  runtime:
-    - lifecycle
-    - state machine
-    - collaboration runtime
-
-  flow:
-    - core flows
-    - screen transitions
-    - scenario flows
-
-  integration:
-    - lifeos integration boundary
-    - payload exact
-    - contract binding
-    - connected app assumptions
-
-  operations:
-    - plan ops
-    - notification/review
-    - data lifecycle
-    - checklist/risk/value
-    - recommendation rules
-
-  policy:
-    - privacy/pricing
-    - validation
-    - ai assist
-    - copy policy
-    - retention/deletion
-    - conflict/change control
-    - settings defaults
-
-  interface:
-    - screen inventory
-    - screen item exact
-    - access control
-    - dashboards
-    - onboarding/template
-    - search/filter
-    - export/summary
-    - copy/state
-    - archive/delete
-    - change review
-    - settings/workbook
-    - indicator/score
-
-  implementation:
-    - phased plan
-    - scope matrix
-    - readiness gate
-    - acceptance criteria
-    - pre implementation package
-
-  development:
-    - backlog
-    - decision log
-    - open issues
-    - design audit
-    - traceability
-    - edge cases
-    - final handoff
-
-  meta:
-    - glossary
-    - full navigation
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/020.full-navigation/9200200003_LIFE_PLANNER_ROLE_BASED_READING_PATHS.md
-# ============================================================
-
-# ============================================================
-# LIFE PLANNER ROLE BASED READING PATHS
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 020.full-navigation
-owner: Boss
-prepared_by: Zero
-schema: life
-
-reading_paths:
-
-  owner_decision_path:
-    - 0000000002_LIFE_PLANNER_INTEGRATED_CANONICAL.md
-    - 0800100003_LIFE_PLANNER_PRICING_POLICY.md
-    - 1200200002_LIFE_PLANNER_PHASE_AND_PLAN_SCOPE_MATRIX.md
-    - 1300800002_LIFE_PLANNER_DESIGN_COMPLETION_SUMMARY.md
-    - 1200300002_LIFE_PLANNER_DESIGN_FREEZE_CHECKLIST.md
-
-  product_design_path:
-    - 0200100002_LIFE_PLANNER_APPLICATION_ARCHITECTURE.md
-    - 0500100003_LIFE_PLANNER_SCREEN_TRANSITION_MAP.md
-    - 0900200001_SCREEN_ITEM_OVERVIEW.md
-    - 0900300002_LIFE_PLANNER_ROLE_VISIBILITY_EDITABILITY_MATRIX.md
-    - 0900400001_DASHBOARD_DISPLAY_OVERVIEW.md
-    - 0901100002_LIFE_PLANNER_SETTINGS_SCREEN_EXACT.md
-
-  model_contract_path:
-    - 0300200001_LOGICAL_SCHEMA_OVERVIEW.md
-    - 0300300002_LIFE_PLANNER_SCREEN_ITEM_TO_LOGICAL_TABLE_MATRIX.md
-    - 0600200001_PAYLOAD_OVERVIEW.md
-    - 0600300002_LIFE_PLANNER_PAYLOAD_TO_LOGICAL_TABLE_MATRIX.md
-    - 0300500002_LIFE_PLANNER_DERIVED_METRIC_CATALOG.md
-
-  audit_path:
-    - 1300500002_LIFE_PLANNER_CONSISTENCY_AUDIT_CHECKLIST.md
-    - 1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md
-    - 1300400002_LIFE_PLANNER_OPEN_ISSUES_LEDGER.md
-    - 1300800003_LIFE_PLANNER_BLOCKING_AND_NON_BLOCKING_ISSUES.md
-
-  later_implementation_planning_path:
-    - 1200300003_LIFE_PLANNER_IMPLEMENTATION_START_GATE.md
-    - 1200600001_PRE_IMPLEMENTATION_PACKAGE_OVERVIEW.md
-    - 1200600003_LIFE_PLANNER_PHASE1_IMPLEMENTATION_PREP_SCOPE.md
-    - 1200400002_LIFE_PLANNER_CORE_SCENARIO_ACCEPTANCE_CRITERIA.md
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/030.freeze-kit/9200300000_FREEZE_KIT_INDEX.md
-# ============================================================
-
-# ============================================================
-# FREEZE KIT INDEX
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 030.freeze-kit
-owner: Boss
-prepared_by: Zero
-schema: life
-
-documents:
-  - 9000300000_FREEZE_KIT_INDEX.md
-  - 9000300001_FREEZE_KIT_OVERVIEW.md
-  - 9000300002_LIFE_PLANNER_FREEZE_KIT_QUICKSTART.md
-  - 9000300003_LIFE_PLANNER_FILESET_CHECK_NOTE.md
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/030.freeze-kit/9200300001_FREEZE_KIT_OVERVIEW.md
-# ============================================================
-
-# ============================================================
-# FREEZE KIT OVERVIEW
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 030.freeze-kit
-owner: Boss
-prepared_by: Zero
-schema: life
-
-purpose:
-  - freeze candidate として見返すときの最短導線を置く
-  - 全文書を読み切らなくても現在地を理解できるようにする
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/030.freeze-kit/9200300002_LIFE_PLANNER_FREEZE_KIT_QUICKSTART.md
-# ============================================================
-
-# ============================================================
-# LIFE PLANNER FREEZE KIT QUICKSTART
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 030.freeze-kit
-owner: Boss
-prepared_by: Zero
-schema: life
-
-quickstart_steps:
-  - step_01:
-      read:
-        - 0000000004_LIFE_PLANNER_FINAL_DESIGN_STATUS.md
-
-  - step_02:
-      read:
-        - 1300900002_LIFE_PLANNER_FINAL_CLOSE_PACKAGE.md
-
-  - step_03:
-      read:
-        - 1200300002_LIFE_PLANNER_DESIGN_FREEZE_CHECKLIST.md
-
-  - step_04:
-      read:
-        - 1300500003_LIFE_PLANNER_CROSS_DOCUMENT_CONTRADICTION_MATRIX.md
-
-  - step_05:
-      read:
-        - 1300800003_LIFE_PLANNER_BLOCKING_AND_NON_BLOCKING_ISSUES.md
-
-goal:
-  - decide whether to freeze as design canonical candidate
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/030.freeze-kit/9200300003_LIFE_PLANNER_FILESET_CHECK_NOTE.md
-# ============================================================
-
-# ============================================================
-# LIFE PLANNER FILESET CHECK NOTE
-# ============================================================
-
-status: draft
-system: LifePlanner
-layer: 920.meta
-subfolder: 030.freeze-kit
-owner: Boss
-prepared_by: Zero
-schema: life
-
-check_note:
-  - confirm root status docs exist
-  - confirm final handoff docs exist
-  - confirm close package docs exist
-  - confirm readiness gate docs exist
-  - confirm audit docs exist
-  - confirm navigation docs exist
-
-expected_outcome:
-  - directory is understandable without reopening earlier design discussions
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/9200000000_META_INDEX.md
-# ============================================================
-
-# ============================================================
-# META INDEX
-# ============================================================
-
-layer: 920.meta
-
-documents:
-  - 9000000000_META_INDEX.md
-  - 9000000001_META_OVERVIEW.md
-  - 9000000002_LIFE_PLANNER_DOCUMENT_NAVIGATION_NOTE.md
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/9200000001_META_OVERVIEW.md
-# ============================================================
-
-# ============================================================
-# META OVERVIEW
-# ============================================================
-
-layer: 920.meta
-
-purpose:
-  - 文書の読み順を固定する
-  - ナビゲーションを明確化する
-
-
-# ============================================================
-# SOURCE FILE: 920.meta/9200000002_LIFE_PLANNER_DOCUMENT_NAVIGATION_NOTE.md
-# ============================================================
-
-# ============================================================
-# LIFE PLANNER DOCUMENT NAVIGATION NOTE
-# ============================================================
-
-recommended_order:
-  - 0000000001_LIFE_PLANNER_ROOT_OVERVIEW.md
-  - 0000000002_LIFE_PLANNER_INTEGRATED_CANONICAL.md
-  - 010.constitution
-  - 020.architecture
-  - 030.model
-  - 050.flow
-  - 060.integration
-  - 090.interface
-  - 120.implementation
-  - 130.development
-
-note:
-  - まずroot overviewとintegrated canonicalを読む
-  - 次にconstitution / architecture / modelで意味を固定する
-  - flow / integration / interfaceで挙動を確認する
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/LifePlanner/130.development/1300001_LIFE_PLANNER_DEVELOPMENT_OVERVIEW.md -->

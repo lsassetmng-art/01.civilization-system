@@ -2,32 +2,68 @@
 # STREAMWATCH CAST AND TV HANDOFF RUNTIME
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: runtime
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines the runtime behavior of cast initiation, route claim, write-back, recovery, and post-handoff resume.
+This document defines runtime behavior for cast initiation, TV-route handoff, claim, interruption, and write-back.
 
-## 2. Fixed Inputs
+## 2. Runtime Split
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+StreamWatch recognizes two different runtime modes:
 
-## 3. Design Direction
+- real route handoff
+- same-device large-screen mode
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+These must never be merged into one opaque runtime state.
 
-## 4. Current Status
+## 3. Real Route Handoff Runtime
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+A real route handoff runtime should include:
+
+- route discovery
+- route selection
+- handoff session creation
+- target claim
+- playback context transfer
+- write-back on stop or interruption
+
+## 4. Required Preserved Context
+
+Where supported, the runtime should preserve:
+
+- target content identity
+- viewer_profile identity
+- last known position
+- subtitle state
+- audio-track state
+- playback mode
+- entitlement-aware watchability state
+
+## 5. Failure Handling
+
+The runtime must tolerate:
+
+- route unavailable after selection
+- claim timeout
+- target playback failure
+- incomplete write-back
+- source-side recovery after failed handoff
+
+## 6. Same-Device Large-Screen Runtime
+
+Same-device large-screen mode does not create a handoff session.
+It changes presentation mode only and should preserve the same local continuity context.
+
+## 7. Final Runtime Rule
+
+Real handoff is a continuity transfer runtime.
+HDMI-style mode change is a presentation runtime.
+They are related but not the same.

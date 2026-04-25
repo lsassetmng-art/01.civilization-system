@@ -1,0 +1,8 @@
+# 0300500000_PERSONA_GROWTH_MODEL_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 030.model/050.growth
+
+- 0300500001_PERSONA_GROWTH_MODEL_OVERVIEW.md
+- 0300500002_PERSONA_GROWTH_MODEL.md

@@ -1,0 +1,14 @@
+============================================================
+PKG-AIW-009 BUSINESS EVENT CONTRACT SMOKE
+============================================================
+ERROR:  column reference "note_text" is ambiguous
+LINE 1: select success_flag, validation_result_code, note_text
+                                                     ^
+DETAIL:  It could refer to either a PL/pgSQL variable or a table column.
+QUERY:  select success_flag, validation_result_code, note_text
+                                                               from aiworker.fn_validate_business_contract_payload_ref(
+      'BIZ_INBOUND_REQUEST_EVENT_V1',
+      'SMOKE_BUSINESS_REQUEST_EVENT_V1',
+      coalesce(p_executed_by, 'SYSTEM')
+    )
+CONTEXT:  PL/pgSQL function aiworker.fn_run_business_event_contract_smoke(text) line 12 at SQL statement

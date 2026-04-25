@@ -1,0 +1,8 @@
+# 0601100000_PERSONA_DISTRIBUTION_INTEGRATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 060.integration/110.distribution/060.integration/110.distribution
+
+- 0601100001_PERSONA_DISTRIBUTION_INTEGRATION_OVERVIEW.md
+- 0601100002_PERSONA_RELEASE_CHANNEL_INTEGRATION.md

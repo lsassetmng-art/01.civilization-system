@@ -1,0 +1,5 @@
+AIWORKER_OS_POST_RESTRICTED_PRIVILEGED_STATUS
+LATEST_RP_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/947.aiworker_os_pkg_aiw_010_apply_and_restricted_privileged_smoke_20260421_173023
+STATUS=SUCCESS
+INTEGRATED=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/000023_AIWORKER_OS_INTEGRATED_POST_RESTRICTED_PRIVILEGED_STATUS.md
+REPORT=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/948.aiworker_os_post_restricted_privileged_status_20260421_173351/000002_AIWORKER_OS_POST_RESTRICTED_PRIVILEGED_STATUS_REPORT.md

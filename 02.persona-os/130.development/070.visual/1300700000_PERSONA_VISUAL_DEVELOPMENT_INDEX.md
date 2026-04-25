@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA VISUAL DEVELOPMENT INDEX
-# ============================================================
+# 1300700000_PERSONA_VISUAL_DEVELOPMENT_INDEX
 
-status: canonical
-layer: development
-domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA VISUAL DEVELOPMENT documents.
+directory: 130.development/070.visual
 
-# ============================================================
-# FILES
-# ============================================================
-
-1300700000_PERSONA_VISUAL_DEVELOPMENT_INDEX.md
-1300700001_PERSONA_VISUAL_DEVELOPMENT_OVERVIEW.md
-1300700002_PERSONA_VISUAL_DEVELOPMENT_GUIDE.md
+- 1300700001_PERSONA_VISUAL_DEVELOPMENT_OVERVIEW.md
+- 1300700002_PERSONA_VISUAL_DEVELOPMENT_GUIDE.md
+- 130.development/

@@ -17,3 +17,18 @@ files:
 - 1200410005_MEMORY_BOUNDARY_IMPLEMENTATION.md
 - 1200410006_MEMORY_VALIDATION_IMPLEMENTATION.md
 - 1200410007_MEMORY_FAILURE_IMPLEMENTATION.md
+
+## Exact Memory And History Split
+## Exact Memory And History Split
+
+Memory is perspective-bound recall surface.
+History is canonical historical artifact surface.
+
+Audit and runtime trace may feed them,
+but must not silently become them.
+
+## Exact Memory Visibility Rule
+
+Memory visibility must be explicit.
+Recall may be filtered or perspective-bound,
+but hidden filtering must not rewrite source memory record truth.

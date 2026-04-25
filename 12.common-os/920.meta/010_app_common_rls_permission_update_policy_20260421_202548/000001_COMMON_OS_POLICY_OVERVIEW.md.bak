@@ -1,0 +1,13 @@
+# COMMON OS POLICY OVERVIEW
+
+status: canonical
+layer: policy
+
+## Purpose
+This layer defines CommonOS behavioral and boundary policies.
+
+## Topics
+- shared UI policy
+- app_common boundary policy
+- offline and queue sync policy
+- token and variant policy

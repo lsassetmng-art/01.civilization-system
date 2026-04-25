@@ -1,0 +1,144 @@
+# ============================================================
+# PERSONA OS DUPLICATE PATH CLEANUP REPORT
+# ============================================================
+
+status: completed
+system: PersonaOS
+generated_at: 20260417_122346
+
+summary:
+- moved_duplicate_path_file_count: 337
+- changed_reference_file_count: 310
+- reference_rewrite_operation_count: 320
+- smart_missing_reference_count_after_cleanup: 3730
+- root_relative_missing_count_after: 2022
+- relative_missing_count_after: 0
+- same_dir_file_missing_count_after: 1708
+- rebuilt_integrated: 000000_PERSONA_OS_INTEGRATED_CANONICAL_REBUILT_20260417_122346.md
+
+cleanup_rules:
+- repeated leading path prefixes were collapsed in live files only
+- PERSONA_OS_CANONICAL_FULL.md now resolves to root alias 000000_PERSONA_OS_CANONICAL_FULL.md
+- PERSONA_OS_INTEGRATED_CANONICAL.md now resolves to the same root alias
+
+remaining_missing_reference_head:
+- 000.rules/020.binding/0000201_PERSONA_OS_ROOT_FILE_RULE.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 000.rules/020.binding/000000_PERSONA_OS_CANONICAL_FULL.md
+- 000.rules/020.binding/PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 000.rules/020.binding/000000_PERSONA_OS_CANONICAL_FULL.md | 000.rules/020.binding/000000_PERSONA_OS_CANONICAL_FULL.md
+- 000.rules/020.binding/PERSONA_OS_CANONICAL_FULL.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 000.rules/020.binding/000000_PERSONA_OS_CANONICAL_FULL.md
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/010.core/010.constitution/ | 010.constitution/010.core/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/020.identity/010.constitution/ | 010.constitution/020.identity/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/030.state/010.constitution/ | 010.constitution/030.state/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/040.memory/010.constitution/ | 010.constitution/040.memory/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/050.growth/010.constitution/ | 010.constitution/050.growth/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/060.builder/010.constitution/ | 010.constitution/060.builder/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/070.visual/010.constitution/ | 010.constitution/070.visual/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/080.runtime_hosting/010.constitution/ | 010.constitution/080.runtime_hosting/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/090.snapshot/010.constitution/ | 010.constitution/090.snapshot/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/100.package/010.constitution/ | 010.constitution/100.package/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/100.security/ | 010.constitution/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/110.distribution/010.constitution/ | 010.constitution/110.distribution/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/120.external_rights/010.constitution/ | 010.constitution/120.external_rights/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/130.access_license_transfer/010.constitution/ | 010.constitution/130.access_license_transfer/010.constitution
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 010.constitution/170.operations-support/ | 010.constitution/170.operations-support
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/050.growth/020.architecture/ | 020.architecture/050.growth/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/060.builder/020.architecture/ | 020.architecture/060.builder/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/070.visual/020.architecture/ | 020.architecture/070.visual/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/080.runtime_hosting/020.architecture/ | 020.architecture/080.runtime_hosting/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/090.snapshot/020.architecture/ | 020.architecture/090.snapshot/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/100.package/020.architecture/ | 020.architecture/100.package/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/100.security/ | 020.architecture/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/110.distribution/020.architecture/ | 020.architecture/110.distribution/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/120.external_rights/020.architecture/ | 020.architecture/120.external_rights/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/130.access_license_transfer/020.architecture/ | 020.architecture/130.access_license_transfer/020.architecture
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 020.architecture/170.operations-support/ | 020.architecture/170.operations-support
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/050.growth/030.model/ | 030.model/050.growth/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/060.builder/030.model/ | 030.model/060.builder/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/080.runtime_hosting/030.model/ | 030.model/080.runtime_hosting/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/090.snapshot/030.model/ | 030.model/090.snapshot/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/100.package/030.model/ | 030.model/100.package/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/110.distribution/030.model/ | 030.model/110.distribution/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/120.external_rights/030.model/ | 030.model/120.external_rights/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 030.model/130.access_license_transfer/030.model/ | 030.model/130.access_license_transfer/030.model
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/050.growth/040.runtime/ | 040.runtime/050.growth/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/060.builder/040.runtime/ | 040.runtime/060.builder/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/070.visual/040.runtime/ | 040.runtime/070.visual/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/080.runtime_hosting/040.runtime/ | 040.runtime/080.runtime_hosting/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/090.snapshot/040.runtime/ | 040.runtime/090.snapshot/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/100.package/040.runtime/ | 040.runtime/100.package/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/110.distribution/040.runtime/ | 040.runtime/110.distribution/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/120.external_rights/040.runtime/ | 040.runtime/120.external_rights/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 040.runtime/130.access_license_transfer/040.runtime/ | 040.runtime/130.access_license_transfer/040.runtime
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/050.growth/050.flow/ | 050.flow/050.growth/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/060.builder/050.flow/ | 050.flow/060.builder/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/070.visual/050.flow/ | 050.flow/070.visual/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/080.runtime_hosting/050.flow/ | 050.flow/080.runtime_hosting/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/090.snapshot/050.flow/ | 050.flow/090.snapshot/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/100.package/050.flow/ | 050.flow/100.package/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/110.distribution/050.flow/ | 050.flow/110.distribution/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/120.external_rights/050.flow/ | 050.flow/120.external_rights/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 050.flow/130.access_license_transfer/050.flow/ | 050.flow/130.access_license_transfer/050.flow
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/050.growth/060.integration/ | 060.integration/050.growth/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/060.builder/060.integration/ | 060.integration/060.builder/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/070.visual/060.integration/ | 060.integration/070.visual/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/080.runtime_hosting/060.integration/ | 060.integration/080.runtime_hosting/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/090.snapshot/060.integration/ | 060.integration/090.snapshot/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/100.package/060.integration/ | 060.integration/100.package/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/110.distribution/060.integration/ | 060.integration/110.distribution/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/120.external_rights/060.integration/ | 060.integration/120.external_rights/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 060.integration/130.access_license_transfer/060.integration/ | 060.integration/130.access_license_transfer/060.integration
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/050.growth/070.operations/ | 070.operations/050.growth/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/060.builder/070.operations/ | 070.operations/060.builder/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/070.visual/070.operations/ | 070.operations/070.visual/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/080.runtime_hosting/070.operations/ | 070.operations/080.runtime_hosting/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/090.snapshot/070.operations/ | 070.operations/090.snapshot/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/100.package/070.operations/ | 070.operations/100.package/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/110.distribution/070.operations/ | 070.operations/110.distribution/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/120.external_rights/070.operations/ | 070.operations/120.external_rights/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 070.operations/130.access_license_transfer/070.operations/ | 070.operations/130.access_license_transfer/070.operations
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/050.growth/080.policy/ | 080.policy/050.growth/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/060.builder/080.policy/ | 080.policy/060.builder/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/070.visual/080.policy/ | 080.policy/070.visual/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/080.runtime_hosting/080.policy/ | 080.policy/080.runtime_hosting/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/090.snapshot/080.policy/ | 080.policy/090.snapshot/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/100.package/080.policy/ | 080.policy/100.package/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/100.security/ | 080.policy/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/110.distribution/080.policy/ | 080.policy/110.distribution/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/120.external_rights/080.policy/ | 080.policy/120.external_rights/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/130.access_license_transfer/080.policy/ | 080.policy/130.access_license_transfer/080.policy
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 080.policy/170.operations-support/ | 080.policy/170.operations-support
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/050.growth/090.interface/ | 090.interface/050.growth/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/060.builder/090.interface/ | 090.interface/060.builder/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/070.visual/090.interface/ | 090.interface/070.visual/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/080.runtime_hosting/090.interface/ | 090.interface/080.runtime_hosting/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/090.snapshot/090.interface/ | 090.interface/090.snapshot/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/100.package/090.interface/ | 090.interface/100.package/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/100.security/ | 090.interface/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/110.distribution/090.interface/ | 090.interface/110.distribution/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/120.external_rights/090.interface/ | 090.interface/120.external_rights/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/130.access_license_transfer/090.interface/ | 090.interface/130.access_license_transfer/090.interface
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 090.interface/170.operations-support/ | 090.interface/170.operations-support
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/050.growth/100.security/ | 100.security/050.growth/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/060.builder/100.security/ | 100.security/060.builder/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/070.visual/100.security/ | 100.security/070.visual/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/080.runtime_hosting/100.security/ | 100.security/080.runtime_hosting/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/090.snapshot/100.security/ | 100.security/090.snapshot/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/100.package/100.security/ | 100.security/100.package/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/110.distribution/100.security/ | 100.security/110.distribution/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/120.external_rights/100.security/ | 100.security/120.external_rights/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 100.security/130.access_license_transfer/100.security/ | 100.security/130.access_license_transfer/100.security
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/050.growth/110.infrastructure/ | 110.infrastructure/050.growth/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/060.builder/110.infrastructure/ | 110.infrastructure/060.builder/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/070.visual/110.infrastructure/ | 110.infrastructure/070.visual/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/080.runtime_hosting/110.infrastructure/ | 110.infrastructure/080.runtime_hosting/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/090.snapshot/110.infrastructure/ | 110.infrastructure/090.snapshot/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/100.package/110.infrastructure/ | 110.infrastructure/100.package/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/110.distribution/110.infrastructure/ | 110.infrastructure/110.distribution/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/120.external_rights/110.infrastructure/ | 110.infrastructure/120.external_rights/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 110.infrastructure/130.access_license_transfer/110.infrastructure/ | 110.infrastructure/130.access_license_transfer/110.infrastructure
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 120.implementation/050.growth/120.implementation/ | 120.implementation/050.growth/120.implementation
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 120.implementation/060.builder/120.implementation/ | 120.implementation/060.builder/120.implementation
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 120.implementation/070.visual/120.implementation/ | 120.implementation/070.visual/120.implementation
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 120.implementation/080.runtime_hosting/120.implementation/ | 120.implementation/080.runtime_hosting/120.implementation
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 120.implementation/090.snapshot/120.implementation/ | 120.implementation/090.snapshot/120.implementation
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 120.implementation/100.package/120.implementation/ | 120.implementation/100.package/120.implementation
+- 000000_PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_dir | 120.implementation/110.distribution/120.implementation/ | 120.implementation/110.distribution/120.implementation

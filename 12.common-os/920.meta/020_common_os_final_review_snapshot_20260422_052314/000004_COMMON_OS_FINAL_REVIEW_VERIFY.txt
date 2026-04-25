@@ -1,0 +1,6 @@
+MANIFEST=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/020_common_os_final_review_snapshot_20260422_052314/000001_COMMON_OS_FINAL_REVIEW_MANIFEST.txt
+HEADS_MD=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/020_common_os_final_review_snapshot_20260422_052314/000002_COMMON_OS_FINAL_REVIEW_HEADS.md
+HASHES=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/020_common_os_final_review_snapshot_20260422_052314/000003_COMMON_OS_FINAL_REVIEW_SHA256.txt
+MANIFEST_COUNT=27
+HEADS_LINE_COUNT=1174
+HASH_COUNT=27

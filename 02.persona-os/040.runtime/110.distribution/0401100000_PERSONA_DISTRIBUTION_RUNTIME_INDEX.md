@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA DISTRIBUTION RUNTIME INDEX
-# ============================================================
+# 0401100000_PERSONA_DISTRIBUTION_RUNTIME_INDEX
 
-status: canonical
-layer: runtime
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA DISTRIBUTION RUNTIME documents.
+directory: 040.runtime/110.distribution
 
-# ============================================================
-# FILES
-# ============================================================
-
-0401100000_PERSONA_DISTRIBUTION_RUNTIME_INDEX.md
-0401100001_PERSONA_DISTRIBUTION_RUNTIME_OVERVIEW.md
-0401100002_PERSONA_RELEASE_RUNTIME.md
+- 0401100001_PERSONA_DISTRIBUTION_RUNTIME_OVERVIEW.md
+- 0401100002_PERSONA_RELEASE_RUNTIME.md
+- 040.runtime/

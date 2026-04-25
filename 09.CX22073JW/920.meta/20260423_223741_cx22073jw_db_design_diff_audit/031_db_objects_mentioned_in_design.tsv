@@ -1,0 +1,17 @@
+table	access_route_master	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	compatibility_rule	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/020_CX22073JW_DATA_DOMAIN_LEDGER.md
+table	entity_master	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/022_CX22073JW_DATA_DOMAIN_LEDGER.md
+table	privilege_tier_master	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	privileged_access_audit_log	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	privileged_policy_profile	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	privileged_route_policy_binding	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	secret_asset	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	secret_asset_category_master	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	secret_route_binding	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	secret_target_master	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	secret_target_selector_master	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/100_CX22073JW_SECRET_LAYER_FIXED_DECISIONS.md
+table	unit_conversion_rule	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/020_CX22073JW_DATA_DOMAIN_LEDGER.md
+table	unit_reference	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/020.architecture/020_CX22073JW_DATA_DOMAIN_LEDGER.md
+view	vw_aiemp_utility_masked_user_context	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/199_CX22073JW_FULL_INTEGRATED_CANONICAL.md
+view	vw_aiemp_utility_summary_context	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/199_CX22073JW_FULL_INTEGRATED_CANONICAL.md
+view	vw_aiemp_utility_writing_context	/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/199_CX22073JW_FULL_INTEGRATED_CANONICAL.md

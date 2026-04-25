@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER SECURITY INDEX
-# ============================================================
+# 1000600000_PERSONA_BUILDER_SECURITY_INDEX
 
-status: canonical
-layer: security
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER SECURITY documents.
+directory: 100.security/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-1000600000_PERSONA_BUILDER_SECURITY_INDEX.md
-1000600001_PERSONA_BUILDER_SECURITY_OVERVIEW.md
-1000600002_PERSONA_BUILDER_DRAFT_SECURITY.md
+- 1000600001_PERSONA_BUILDER_SECURITY_OVERVIEW.md
+- 1000600002_PERSONA_BUILDER_DRAFT_SECURITY.md
+- 100.security/

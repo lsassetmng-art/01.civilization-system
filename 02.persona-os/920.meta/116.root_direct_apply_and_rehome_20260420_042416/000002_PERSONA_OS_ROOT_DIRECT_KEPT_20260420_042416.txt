@@ -1,0 +1,3 @@
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/0000000_PERSONA_OS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/000000_PERSONA_OS_CANONICAL_FULL.md
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/000000_PERSONA_OS_FULL_INTEGRATED_CANONICAL.md

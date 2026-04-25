@@ -1,20 +1,8 @@
-# ============================================================
-# PERSONA GROWTH INTEGRATION INDEX
-# ============================================================
+# 0600500000_PERSONA_GROWTH_INTEGRATION_INDEX
 
-status: canonical
-layer: integration
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH INTEGRATION documents.
+directory: 060.integration/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-0600500000_PERSONA_GROWTH_INTEGRATION_INDEX.md
-0600500001_PERSONA_GROWTH_INTEGRATION_OVERVIEW.md
+- 0600500001_PERSONA_GROWTH_INTEGRATION_OVERVIEW.md
+- 060.integration/

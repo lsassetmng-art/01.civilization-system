@@ -1,0 +1,7 @@
+# 0100600000_PERSONA_BUILDER_CONSTITUTION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/060.builder
+
+- 0100600001_PERSONA_BUILDER_CONSTITUTION_OVERVIEW.md

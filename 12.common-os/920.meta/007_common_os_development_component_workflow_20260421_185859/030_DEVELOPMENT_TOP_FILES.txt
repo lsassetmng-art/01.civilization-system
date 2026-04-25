@@ -1,0 +1,13 @@
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000000_130_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000000_COMMON_OS_DEVELOPMENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000000_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000001_130_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000001_COMMON_OS_DEVELOPMENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000010_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000020_COMMON_OS_ADOPTION_REVIEW_WORKFLOW_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000030_COMMON_OS_CHANGE_INTRODUCTION_POLICY_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000040_APPLICATION_COMMON_COMPONENT_ADOPTION_REVIEW_POLICY_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000050_APPLICATION_COMMON_COMPONENT_WAVE_PROMOTION_POLICY_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000060_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_ROLLOUT_ORDER_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000070_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_INTAKE_POLICY_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/00_COMMON_OS_DEVELOPMENT_INTEGRATED.md

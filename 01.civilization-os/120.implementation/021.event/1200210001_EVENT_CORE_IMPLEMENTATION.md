@@ -72,3 +72,25 @@ boundary meaning,
 validation meaning,
 and failure meaning
 are all explicit and reviewable.
+
+## Exact Event Canonical Rule
+## Exact Event Canonical Rule
+
+Event implementation must distinguish:
+
+- emitted canonical fact
+- delivery trace
+- reflection result
+- notification projection
+
+These are not interchangeable.
+
+## Exact Event Actor And Target Boundary
+
+Event truth must explicitly separate:
+
+- event actor binding
+- target aggregate binding
+- effect linkage
+- validation result
+- failure record

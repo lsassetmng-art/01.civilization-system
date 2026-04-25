@@ -1,0 +1,6 @@
+restricted_privileged_smoke_registry.count=1
+restricted_privileged_smoke_log.count=2
+latest_smoke.count=2
+privileged_profile.active=true
+latest_smoke.PRIVILEGED_CONTEXT_SMOKE=PASS
+latest_smoke.RESTRICTED_BOUNDARY_SMOKE=PASS

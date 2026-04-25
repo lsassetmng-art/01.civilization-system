@@ -1,0 +1,98 @@
+# COMMON OS DEVELOPMENT INDEX
+
+status: canonical
+layer: development
+
+## Documents
+- 000000_COMMON_OS_DEVELOPMENT_INDEX.md
+- 000001_COMMON_OS_DEVELOPMENT_OVERVIEW.md
+- 000010_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md
+- 000020_COMMON_OS_ADOPTION_REVIEW_WORKFLOW_CANONICAL.md
+- 000030_COMMON_OS_CHANGE_INTRODUCTION_POLICY_CANONICAL.md
+
+## Application common component development subsystem
+
+### Canonical development reading path
+1. 000040_APPLICATION_COMMON_COMPONENT_ADOPTION_REVIEW_POLICY_CANONICAL.md
+2. 000050_APPLICATION_COMMON_COMPONENT_WAVE_PROMOTION_POLICY_CANONICAL.md
+3. 000060_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_ROLLOUT_ORDER_CANONICAL.md
+4. 000070_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_INTAKE_POLICY_CANONICAL.md
+
+### Notes
+These documents define how CommonOS reviews, promotes, sequences, and operationally absorbs application common component families from origin evidence into active development use.
+
+## app_common metadata governance subsystem
+
+### Canonical development reading path
+1. 000080_APP_COMMON_METADATA_CHANGE_CONTROL_CANONICAL.md
+2. 000090_APP_COMMON_METADATA_REVIEW_AND_PUBLISH_WORKFLOW_CANONICAL.md
+3. 000100_APP_COMMON_VERSIONING_DEPRECATION_AND_EFFECTIVE_WINDOW_CANONICAL.md
+
+### Notes
+These development documents define how app_common metadata changes are proposed, reviewed, published, versioned, and deprecated.
+
+## app_common rollout batch subsystem
+
+### Canonical reading path
+1. 000110_APP_COMMON_REVIEWED_ROLLOUT_BATCH_CANONICAL.md
+2. 000111_APP_COMMON_MIGRATION_APPLY_SEQUENCE_AND_GATE_CANONICAL.md
+
+### Notes
+These documents define the reviewed rollout batch structure and the gate sequence for applying app_common metadata migrations.
+
+## CommonOS freeze and adoption-apply subsystem
+
+### Canonical reading path
+1. 000112_APP_COMMON_AND_COMMON_OS_FREEZE_CANDIDATE_SUMMARY_CANONICAL.md
+2. 000113_COMMON_OS_ADOPTION_HANDOFF_CANONICAL.md
+3. 000114_COMMON_OS_TARGET_OS_ADOPTION_PLAN_TEMPLATE_CANONICAL.md
+4. 000115_COMMON_OS_TARGET_OS_APPLY_CHECKLIST_CANONICAL.md
+
+### Notes
+These documents summarize the current freeze-candidate state of CommonOS and define how each target OS, app, or ERP surface should adopt CommonOS without violating business-canon boundaries.
+
+## CommonOS common-only freeze subsystem
+
+### Canonical reading path
+1. 000116_COMMON_OS_SCOPE_BOUNDARY_FREEZE_CANONICAL.md
+2. 000117_APP_COMMON_FINAL_STATUS_SUMMARY_CANONICAL.md
+3. 000118_COMMON_OS_COMMON_ONLY_NEXT_CHAT_HANDOFF_CANONICAL.md
+
+### Notes
+These documents freeze the CommonOS-only scope for this chat and prepare the next chat handoff without stepping into OS-specific adoption planning.
+
+## CommonOS final handoff subsystem
+
+### Canonical reading path
+1. 000119_COMMON_OS_FINAL_HANDOFF_BUNDLE_CANONICAL.md
+2. 000120_COMMON_OS_COMMON_ONLY_CLOSING_NOTE_CANONICAL.md
+
+### Notes
+These documents close the CommonOS common-only track in this chat and provide a final handoff bundle for future CommonOS-only continuation.
+
+## CommonOS final chat handoff close subsystem
+
+### Canonical reading path
+1. 000121_COMMON_OS_FINAL_CHAT_HANDOFF_ONE_BLOCK_CANONICAL.md
+2. 000122_COMMON_OS_FINAL_CHAT_CLOSE_STATUS_CANONICAL.md
+
+### Notes
+These documents finalize the CommonOS-only track of this chat and provide a compact closing handoff for future CommonOS-only continuation.
+
+## CommonOS final package manifest subsystem
+
+### Canonical reading path
+1. 000123_COMMON_OS_FINAL_PACKAGE_MANIFEST_CANONICAL.md
+2. 000124_COMMON_OS_FINAL_CLOSEOUT_CHECKLIST_CANONICAL.md
+
+### Notes
+These documents provide the final package-level manifest and closeout checklist for the CommonOS-only track in this chat.
+
+## CommonOS final one-block handoff subsystem
+
+### Canonical reading path
+1. 000125_COMMON_OS_FINAL_PROJECT_HANDOFF_ONE_BLOCK_CANONICAL.md
+2. 000126_COMMON_OS_FINAL_PROJECT_CLOSE_RESULT_CANONICAL.md
+
+### Notes
+These documents are the final one-block handoff closeout for the CommonOS-only track in this chat.

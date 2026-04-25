@@ -1,0 +1,8 @@
+# 0800700000_PERSONA_VISUAL_POLICY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 080.policy/070.visual/080.policy/070.visual
+
+- 0800700001_PERSONA_VISUAL_POLICY_OVERVIEW.md
+- 0800700002_PERSONA_VISUAL_PROFILE_POLICY.md

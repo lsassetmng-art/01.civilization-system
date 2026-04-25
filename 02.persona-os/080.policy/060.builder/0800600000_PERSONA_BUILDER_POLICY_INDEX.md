@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER POLICY INDEX
-# ============================================================
+# 0800600000_PERSONA_BUILDER_POLICY_INDEX
 
-status: canonical
-layer: policy
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER POLICY documents.
+directory: 080.policy/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-0800600000_PERSONA_BUILDER_POLICY_INDEX.md
-0800600001_PERSONA_BUILDER_POLICY_OVERVIEW.md
-0800600002_PERSONA_BUILDER_DRAFT_POLICY.md
+- 0800600001_PERSONA_BUILDER_POLICY_OVERVIEW.md
+- 0800600002_PERSONA_BUILDER_DRAFT_POLICY.md
+- 080.policy/

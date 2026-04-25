@@ -1,0 +1,367 @@
+============================================================
+PKG-AIW-007 ENVIRONMENT PRECHECK
+============================================================
+PASS: PERSONA_DATABASE_URL is set
+PASS: pkg-aiw-001 through pkg-aiw-006 directories exist
+============================================================
+============================================================
+PKG-AIW-007 APPLY ORCHESTRATOR
+============================================================
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Applying packages in fixed order: 001 -> 006
+============================================================
+============================================================
+PKG-AIW-001 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-001
+============================================================
+BEGIN
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+INSERT 0 10
+INSERT 0 60
+COMMIT
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+COMMIT
+BEGIN
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+COMMIT
+============================================================
+PKG-AIW-001 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-002 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependency: PKG-AIW-001 must already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-002
+============================================================
+BEGIN
+CREATE TABLE
+CREATE TABLE
+INSERT 0 100
+INSERT 0 64
+INSERT 0 14
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+============================================================
+PKG-AIW-002 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-003 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependency: PKG-AIW-001 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-003
+============================================================
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 6
+CREATE INDEX
+CREATE INDEX
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+============================================================
+PKG-AIW-003 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-004 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 and PKG-AIW-002 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-004
+============================================================
+BEGIN
+DO
+DO
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+COMMIT
+BEGIN
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+COMMIT
+BEGIN
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+COMMIT
+============================================================
+PKG-AIW-004 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-005 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 and PKG-AIW-002 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-005
+============================================================
+BEGIN
+CREATE TABLE
+CREATE INDEX
+CREATE TABLE
+CREATE INDEX
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+INSERT 0 14
+COMMIT
+============================================================
+PKG-AIW-005 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-006 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-005 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-006
+============================================================
+BEGIN
+DO
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE TABLE
+CREATE INDEX
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+INSERT 0 14
+COMMIT
+============================================================
+PKG-AIW-006 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-007 APPLY ORCHESTRATOR FINISHED
+============================================================

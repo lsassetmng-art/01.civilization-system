@@ -1,0 +1,77 @@
+============================================================
+AIWORKER OS PKG-AIW-009 HOTFIX START
+============================================================
+STAMP      : 20260421_170555
+ROOT       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+PKG9       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-009
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555
+LOG_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs
+============================================================
+============================================================
+STEP 1: re-apply hotfixed function SQL
+============================================================
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+============================================================
+STEP 2: rerun contract smoke
+============================================================
+============================================================
+PKG-AIW-009 BUSINESS EVENT CONTRACT SMOKE
+============================================================
+               flow_code               | result_code |                      note_text                       
+---------------------------------------+-------------+------------------------------------------------------
+ BIZ_INBOUND_REQUEST_EVENT_SMOKE       | PASS        | OK_VALID
+ AIW_OUTBOUND_RESULT_EVENT_SMOKE       | PASS        | OK_VALID
+ BUSINESS_EVENT_CONTRACT_SMOKE_OVERALL | PASS        | Both inbound and outbound contract validation passed
+(3 rows)
+
+------------------------------------------------------------
+LATEST CONTRACT VALIDATION VIEW
+AIW_OUTBOUND_RESULT_EVENT_V1|OK_VALID|SMOKE_AIWORKER_RESULT_EVENT_V1
+BIZ_INBOUND_REQUEST_EVENT_V1|OK_VALID|SMOKE_BUSINESS_REQUEST_EVENT_V1
+------------------------------------------------------------
+LATEST BUSINESS CROSS BOUNDARY SMOKE VIEW
+AIW_OUTBOUND_RESULT_EVENT_SMOKE|PASS|OK_VALID
+BIZ_INBOUND_REQUEST_EVENT_SMOKE|PASS|OK_VALID
+BUSINESS_EVENT_CONTRACT_SMOKE_OVERALL|PASS|Both inbound and outbound contract validation passed
+============================================================
+PKG-AIW-009 BUSINESS EVENT CONTRACT SMOKE FINISHED
+============================================================
+============================================================
+STEP 3: rerun contract state verify
+============================================================
+============================================================
+PKG-AIW-009 VERIFY BUSINESS EVENT CONTRACT STATE
+============================================================
+business_event_contract_registry.count=2
+business_event_validation_log.count=2
+business_cross_boundary_smoke_log.count=3
+active_contracts.count=2
+latest_validation.count=2
+latest_smoke.count=3
+============================================================
+PKG-AIW-009 VERIFY BUSINESS EVENT CONTRACT STATE FINISHED
+============================================================
+============================================================
+STEP 4: quick DB checks
+============================================================
+latest_validation.BIZ_INBOUND_REQUEST_EVENT_V1=OK_VALID
+latest_validation.AIW_OUTBOUND_RESULT_EVENT_V1=OK_VALID
+latest_smoke.BIZ_INBOUND_REQUEST_EVENT_SMOKE=PASS
+latest_smoke.AIW_OUTBOUND_RESULT_EVENT_SMOKE=PASS
+latest_smoke.BUSINESS_EVENT_CONTRACT_SMOKE_OVERALL=PASS
+============================================================
+AIWORKER OS PKG-AIW-009 HOTFIX SUCCESS
+============================================================
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555
+MAIN_LOG   : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs/000_main.log
+SUMMARY    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/000_RESULT_SUMMARY.txt
+LOG FILES:
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs/000_main.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs/010_reapply_hotfixed_sql.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs/020_rerun_contract_smoke.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs/030_rerun_contract_verify.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs/040_quick_hotfix_checks.log
+============================================================

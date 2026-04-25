@@ -1,0 +1,22 @@
+BACKUP|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000000_COMMON_OS_ARCHITECTURE_INDEX.md
+APPENDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000000_COMMON_OS_ARCHITECTURE_INDEX.md|## Application common component subsystem
+BACKUP|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000001_COMMON_OS_ARCHITECTURE_OVERVIEW.md
+APPENDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000001_COMMON_OS_ARCHITECTURE_OVERVIEW.md|## Application common component subsystem overview
+NO_BACKUP_NEEDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/00_COMMON_OS_ARCHITECTURE_INTEGRATED.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000000_COMMON_OS_ARCHITECTURE_INDEX.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000001_COMMON_OS_ARCHITECTURE_OVERVIEW.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000010_COMMON_OS_SHARED_UI_ARCHITECTURE_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000020_COMMON_OS_COMPONENT_LAYER_ARCHITECTURE_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000030_COMMON_OS_APP_COMMON_POSITIONING_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000040_COMMON_OS_ERP_SHARED_UI_APPLICABILITY_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000050_COMMON_OS_OFFLINE_FIRST_ARCHITECTURE_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000100_APPLICATION_COMMON_COMPONENT_INDEX.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000101_APPLICATION_COMMON_COMPONENT_OVERVIEW.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000110_APPLICATION_COMMON_COMPONENT_OFFICIAL_REVIEW_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000120_APPLICATION_COMMON_COMPONENT_STATIC_ART_ORIGIN_REVIEW.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000130_APPLICATION_COMMON_COMPONENT_STATIC_ART_REFLECTION_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000140_APPLICATION_COMMON_COMPONENT_CURRENT_STATE_SUMMARY.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000150_APPLICATION_COMMON_COMPONENT_CATALOG_CURRENT_WAVE_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/000160_APPLICATION_COMMON_COMPONENT_LATER_WAVE_HOLD_CANONICAL.md
+INTEGRATED_SOURCE_INCLUDED|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/00_APPLICATION_COMMON_COMPONENT_INTEGRATED.md
+REBUILT|/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/00_COMMON_OS_ARCHITECTURE_INTEGRATED.md

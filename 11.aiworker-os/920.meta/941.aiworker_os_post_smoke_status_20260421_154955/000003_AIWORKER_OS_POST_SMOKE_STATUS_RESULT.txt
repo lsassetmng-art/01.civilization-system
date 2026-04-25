@@ -1,0 +1,5 @@
+AIWORKER_OS_POST_SMOKE_STATUS
+LATEST_SMOKE_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628
+STATUS=SUCCESS
+INTEGRATED=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/000019_AIWORKER_OS_INTEGRATED_POST_SMOKE_STATUS.md
+REPORT=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/941.aiworker_os_post_smoke_status_20260421_154955/000002_AIWORKER_OS_POST_SMOKE_STATUS_REPORT.md

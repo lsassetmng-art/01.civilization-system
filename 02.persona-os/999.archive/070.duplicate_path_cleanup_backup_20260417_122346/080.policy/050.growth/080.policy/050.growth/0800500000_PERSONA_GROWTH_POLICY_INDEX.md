@@ -1,0 +1,8 @@
+# 0800500000_PERSONA_GROWTH_POLICY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 080.policy/050.growth/080.policy/050.growth
+
+- 0800500001_PERSONA_GROWTH_POLICY_OVERVIEW.md
+- 0800500002_PERSONA_GROWTH_APPLY_POLICY.md

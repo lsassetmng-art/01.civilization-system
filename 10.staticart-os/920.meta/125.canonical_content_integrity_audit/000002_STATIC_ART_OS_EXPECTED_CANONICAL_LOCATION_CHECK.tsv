@@ -1,0 +1,12 @@
+retired_root_dir	target_dir	exists	file_count	dir_count	status
+000.index	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/900.meta/000.index	yes	2	1	ok
+010.overview	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/900.meta/010.overview	yes	2	1	ok
+060.reference-integration	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/060.integration/060.reference-integration	yes	3	1	ok
+120.exactness	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/900.meta/120.exactness	yes	6	1	ok
+121.db-implementation-prep	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/120.implementation/121.db-implementation-prep	yes	31	3	ok
+122.api-implementation-prep	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/120.implementation/122.api-implementation-prep	yes	85	19	ok
+123.ui-implementation-prep	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/120.implementation/123.ui-implementation-prep	yes	41	17	ok
+124.test-implementation-prep	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/120.implementation/124.test-implementation-prep	yes	30	11	ok
+131.implementation-roadmap	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/130.development/131.implementation-roadmap	yes	120	1	ok
+132.operations	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/130.development/132.operations	yes	88	1	ok
+999.summary	/data/data/com.termux/files/home/01.civilization-system/10.staticart-os/900.meta/999.summary	yes	3	1	ok

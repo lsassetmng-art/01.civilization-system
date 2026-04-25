@@ -1,0 +1,8 @@
+# 0300900000_PERSONA_SNAPSHOT_MODEL_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 030.model/090.snapshot/030.model/090.snapshot
+
+- 0300900001_PERSONA_SNAPSHOT_MODEL_OVERVIEW.md
+- 0300900002_PERSONA_SNAPSHOT_MODEL.md

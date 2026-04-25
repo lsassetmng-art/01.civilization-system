@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA GROWTH INTERFACE INDEX
-# ============================================================
+# 0900500000_PERSONA_GROWTH_INTERFACE_INDEX
 
-status: canonical
-layer: interface
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH INTERFACE documents.
+directory: 090.interface/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-0900500000_PERSONA_GROWTH_INTERFACE_INDEX.md
-0900500001_PERSONA_GROWTH_INTERFACE_OVERVIEW.md
-0900500002_PERSONA_GROWTH_APPLY_INTERFACE.md
+- 0900500001_PERSONA_GROWTH_INTERFACE_OVERVIEW.md
+- 0900500002_PERSONA_GROWTH_APPLY_INTERFACE.md
+- 090.interface/

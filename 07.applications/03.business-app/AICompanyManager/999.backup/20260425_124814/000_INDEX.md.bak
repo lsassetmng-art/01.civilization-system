@@ -1,0 +1,76 @@
+# ============================================================
+# AICompanyManager INDEX
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase F
+status: persona-rls-exact-design-completed
+owner: Boss
+prepared_by: Zero
+
+## 1. Purpose
+
+AICompanyManager is a business-app for operating an AI company from a human-facing application.
+
+Human gives policy to President.
+President creates business plan.
+Manager breaks it into domains and actions.
+Leader breaks actions into deliverables and tasks.
+Worker executes tasks and creates outputs.
+Leader reviews and integrates.
+Manager reviews.
+President performs final review.
+Human approves and receives delivery.
+
+## 2. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 3. Current Completion
+
+Phase A:
+- app skeleton completed
+
+Phase B:
+- DB / API / State exact design completed
+
+Phase C:
+- DB DDL Design Review Package completed
+
+Phase D:
+- DB apply preparation package completed
+
+Phase E Persona DB:
+- PERSONA_DATABASE_URL apply executed
+- reserved word fix applied
+- current_role_code fixed
+
+Phase F:
+- Persona-side RLS exact policy design completed
+- RLS apply not executed
+
+## 4. Latest Phase F Documents
+
+| file | purpose |
+|---|---|
+| 500_PHASE_F_ROADMAP.md | Phase F roadmap |
+| 510_PERSONA_RLS_EXACT_POLICY_DESIGN.md | Persona RLS exact policy design |
+| 511_PERSONA_RLS_SQL_CANDIDATE.sql | RLS SQL candidate |
+| 512_PERSONA_RLS_APPLY_GUARDED_DRAFT.sh | guarded RLS apply draft |
+| 513_PERSONA_RLS_VERIFY_SQL_DRAFT.sql | RLS verify SQL draft |
+| 514_PERSONA_ACCESS_CONTROL_MATRIX.md | access control matrix |
+| 590_PHASE_F_COMPLETION_REPORT.md | Phase F report |
+| 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | integrated design |
+
+## 5. Next Phase
+
+Phase G:
+- Persona-side RLS apply execution
+- only after explicit Boss RLS OK / GO

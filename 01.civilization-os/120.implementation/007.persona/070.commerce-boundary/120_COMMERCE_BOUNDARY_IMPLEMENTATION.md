@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona commerce boundaries.
+Defines the implementation design for Civilization-side persona commerce boundaries.
 
 # 2. IMPLEMENTATION TARGETS
 

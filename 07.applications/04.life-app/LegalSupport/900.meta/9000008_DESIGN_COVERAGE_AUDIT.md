@@ -84,7 +84,7 @@ coverage_result:
   pricing:
     status: covered
     notes:
-      - free / family_plus fixed
+      - free / plus_family fixed
       - service scope fixed
 
   infrastructure:

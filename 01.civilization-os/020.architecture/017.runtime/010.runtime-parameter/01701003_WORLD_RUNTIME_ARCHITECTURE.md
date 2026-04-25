@@ -57,3 +57,30 @@ World runtime architecture must remain:
 - state-machine-capable
 - intervention-capable
 - world-reflection-capable
+
+## Exact Runtime Queue Boundary
+## Exact Runtime Queue Boundary
+
+Runtime queue state, scheduler state, and movement state
+are runtime truths.
+
+They may drive canonical mutation,
+but they are not identical to canonical domain state.
+
+## Exact Runtime Surface Split
+
+The following must remain separate:
+
+- world tick execution
+- actor scheduler
+- pathfinding and movement
+- facility usage and queue
+- incident runtime
+- player intervention runtime
+- map reflection runtime
+
+## Exact Runtime To Canonical Rule
+
+Runtime may propose or execute approved change,
+but runtime queue truth must not be confused with
+canonical world, government, market, or persona truth.

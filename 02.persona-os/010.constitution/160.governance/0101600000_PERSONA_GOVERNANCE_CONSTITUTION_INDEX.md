@@ -1,13 +1,9 @@
-# ============================================================
-# PERSONA GOVERNANCE CONSTITUTION INDEX
-# ============================================================
+# 0101600000_PERSONA_GOVERNANCE_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: governance
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GOVERNANCE CONSTITUTION documents.
+directory: 010.constitution/160.governance
+
+- 0101600001_PERSONA_GOVERNANCE_CONSTITUTION.md
+- 0101600001_PERSONA_GOVERNANCE_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

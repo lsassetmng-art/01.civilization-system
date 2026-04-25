@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER INTERFACE INDEX
-# ============================================================
+# 0900600000_PERSONA_BUILDER_INTERFACE_INDEX
 
-status: canonical
-layer: interface
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER INTERFACE documents.
+directory: 090.interface/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-0900600000_PERSONA_BUILDER_INTERFACE_INDEX.md
-0900600001_PERSONA_BUILDER_INTERFACE_OVERVIEW.md
-0900600002_PERSONA_BUILDER_DRAFT_INTERFACE.md
+- 0900600001_PERSONA_BUILDER_INTERFACE_OVERVIEW.md
+- 0900600002_PERSONA_BUILDER_DRAFT_INTERFACE.md
+- 090.interface/

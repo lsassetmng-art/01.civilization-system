@@ -1,10 +1,8 @@
-# ============================================================
-# PERSONA DISTRIBUTION CONSTITUTION INDEX
-# ============================================================
+# 0101100000_PERSONA_DISTRIBUTION_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/110.distribution
+
+- 0101100001_PERSONA_DISTRIBUTION_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

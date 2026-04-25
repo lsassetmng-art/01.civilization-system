@@ -1,0 +1,12 @@
+retired_root_dir	file_count	dir_count	recommended_target_root	recommended_target_subdir
+000.index	2	1	900.meta	000.index
+010.overview	2	1	900.meta	010.overview
+060.reference-integration	3	1	060.integration	060.reference-integration
+120.exactness	6	1	900.meta	120.exactness
+121.db-implementation-prep	31	3	120.implementation	121.db-implementation-prep
+122.api-implementation-prep	85	19	120.implementation	122.api-implementation-prep
+123.ui-implementation-prep	41	17	120.implementation	123.ui-implementation-prep
+124.test-implementation-prep	30	11	120.implementation	124.test-implementation-prep
+131.implementation-roadmap	120	1	130.development	131.implementation-roadmap
+132.operations	88	1	130.development	132.operations
+999.summary	3	1	900.meta	999.summary

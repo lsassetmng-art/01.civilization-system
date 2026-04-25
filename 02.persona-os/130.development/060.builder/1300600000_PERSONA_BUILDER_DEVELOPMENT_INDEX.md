@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER DEVELOPMENT INDEX
-# ============================================================
+# 1300600000_PERSONA_BUILDER_DEVELOPMENT_INDEX
 
-status: canonical
-layer: development
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER DEVELOPMENT documents.
+directory: 130.development/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-1300600000_PERSONA_BUILDER_DEVELOPMENT_INDEX.md
-1300600001_PERSONA_BUILDER_DEVELOPMENT_OVERVIEW.md
-1300600002_PERSONA_BUILDER_DEVELOPMENT_GUIDE.md
+- 1300600001_PERSONA_BUILDER_DEVELOPMENT_OVERVIEW.md
+- 1300600002_PERSONA_BUILDER_DEVELOPMENT_GUIDE.md
+- 130.development/

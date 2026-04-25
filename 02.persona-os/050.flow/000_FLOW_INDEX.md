@@ -1,20 +1,47 @@
-# ============================================================
-# PERSONA OS FLOW INDEX
-# ============================================================
+# 000_FLOW_INDEX
 
-status: draft-for-canonical-update
-system: persona-os
-layer: flow
-document_type: index
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-subdomains:
-- existing canonical flow domains
-- 120.external-reflection
+directory: 050.flow
 
-documents:
-- 120.external-reflection/0501200_EXTERNAL_CANDIDATE_INTAKE_FLOW.md
-- 120.external-reflection/0501201_EXTERNAL_CANDIDATE_EVALUATION_FLOW.md
-- 120.external-reflection/0501202_TRANSFORMED_ADOPTION_FLOW.md
-- 120.external-reflection/0501203_REJECT_DEFER_MERGE_TRANSFORM_FLOW.md
+- 000_FLOW_OVERVIEW.md
+- 0500000_FLOW_INDEX.md
+- 0500000_PERSONA_OS_FLOW_INDEX.md
+- 0500001_PERSONA_OS_FLOW_OVERVIEW.md
+- 050_BUSINESS_EVENT_TO_PERSONA_GROWTH_FLOW.md
+- 050_PERSONA-OS_FLOW_INDEX.md
+- 050_PERSONA-OS_FLOW_OVERVIEW.md
+- 051_BUSINESS_EVENT_TO_PERSONA_STATE_FLOW.md
+- 052_PERSONA_EVENT_REJECT_FLOW.md
+- 053_PERSONA_DUPLICATE_EVENT_FLOW.md
+- 054_PERSONA_APPLY_RESULT_FEEDBACK_FLOW.md
+- 999_FLOW_INDEX.txt
+- 010.core/
+- 020.identity/
+- 030.state/
+- 040.memory/
+- 050.external/
+- 050.growth/
+- 060.builder/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.snapshot/
+- 100.integration/
+- 100.package/
+- 110.distribution/
+- 120.external_reflection/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 130.builder/
+- 140.business_worker_link/
+- 140.integration/
+- 140.visual/
+- 150.security/
+- 160.business/
+- 160.governance/
+- 170.operations_support/
+- 210.persona_core/
+- 220.rights_external/
+- 230.external_sync/
+- 240.expression_composition/
+- 250.cross_cutting_completion/

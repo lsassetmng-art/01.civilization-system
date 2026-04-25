@@ -1,0 +1,11 @@
+RUN_DIR=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/022_common_os_latest_pointer_packet_20260422_053459
+POINTER_TXT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/022_common_os_latest_pointer_packet_20260422_053459/000001_COMMON_OS_LATEST_POINTER_SUMMARY.txt
+REOPEN_SH=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/022_common_os_latest_pointer_packet_20260422_053459/000002_COMMON_OS_LATEST_REOPEN_COMMANDS.sh
+STATUS_TXT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/022_common_os_latest_pointer_packet_20260422_053459/000003_COMMON_OS_LATEST_STATUS_SUMMARY.txt
+LATEST_DELIVERY_PRESENT=YES
+LATEST_SNAPSHOT_PRESENT=YES
+LATEST_AUDIT_PRESENT=YES
+LATEST_FINAL_HANDOFF_PRESENT=YES
+POINTER_LINES=18
+REOPEN_LINES=32
+STATUS_LINES=17

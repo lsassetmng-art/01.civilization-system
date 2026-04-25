@@ -1,0 +1,10 @@
+reference_cleanup_missing_rows=0
+provisional_stub_count=321
+promoted_stub_count=206
+deepened_count=206
+exact_ready_030_120_target_count=0
+exact_ready_030_120_updated_count=0
+impl120_author_reinforced_count=90
+constitution_architecture_reinforced_count=154
+development_root_reinforced_count=58
+remaining_layers_reinforced_count=559

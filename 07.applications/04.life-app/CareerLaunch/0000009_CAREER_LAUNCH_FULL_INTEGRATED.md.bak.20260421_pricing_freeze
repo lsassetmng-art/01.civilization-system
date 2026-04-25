@@ -1,0 +1,4973 @@
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000000_CAREER_LAUNCH_INDEX.md -->
+# CareerLaunch INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+schema: life
+base_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch
+## Purpose
+CareerLaunch 設計フォルダ全体の入口。
+
+## Root files
+- 0000000_CAREER_LAUNCH_INDEX.md
+- 0000001_CAREER_LAUNCH_OVERVIEW.md
+- 0000002_CAREER_LAUNCH_CANONICAL.md
+
+## Main layers
+- 010.constitution
+- 020.architecture
+- 030.model
+- 040.runtime
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 090.interface
+- 100.security
+- 110.infrastructure
+- 120.implementation
+- 130.development
+
+## Read order
+- 0000001 overview
+- 0000002 canonical
+- 010 constitution
+- 020 architecture
+- 030 model
+- 090 interface
+- 120 implementation
+- 130 development
+- 9000000 common component candidates
+- 9000001 cx22073 candidates
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000000_CAREER_LAUNCH_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000001_CAREER_LAUNCH_OVERVIEW.md -->
+# CareerLaunch OVERVIEW
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+schema: life
+## One line
+CareerLaunch は、履歴書作成から面接後のお礼まで、転職活動を抜けもれなく進めるための独立支援アプリである。
+
+## Primary goal
+履歴書から面接後のお礼までの準備を、素早く、抜けもれなく終わらせること。
+
+## Fixed scope
+- 求人票貼り付け方式
+- 基本プロフィール整理と職務経歴整理
+- 履歴書 / 職務経歴書 / 志望動機 / 自己PR / 転職理由
+- 応募先管理と書類バージョン管理
+- 面接準備チェックリスト、想定質問、回答メモ、逆質問
+- 面接後メモ、お礼文、送付確認
+- PDF / DOCX 出力
+- ペルソナ表示 / 背景表示 / 変更
+
+## Platform
+iPhone / Android / PC / Tablet を正式対象とし、PC・タブレットは文書作成、スマホは面接直前確認と即時メモを重視する。
+
+## Schema
+本アプリは life スキーマを正本とする。ERP 連携は必須ではなく、求人サイト API にも依存しない。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000001_CAREER_LAUNCH_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000002_CAREER_LAUNCH_CANONICAL.md -->
+# CareerLaunch CANONICAL
+
+app: CareerLaunch
+schema: life
+status: design-ready-for-implementation
+## Canonical Positioning
+- 独立した個人向け転職応募実行アプリである。
+- 文書生成単体ではなく、応募実務と面接準備の実行支援を主目的とする。
+- 求人媒体や ATS 本体ではない。
+- schema は life を正本とする。
+- ペルソナと背景の表示 / 変更を正式要件とする。
+
+## Included Scope
+- 基本プロフィール整理
+- 職務経歴 / 実績 / 強み / 転職理由整理
+- 履歴書 / 職務経歴書 / 志望動機 / 自己PR / 転職理由の作成
+- 求人票貼り付け
+- 求人別最適化
+- 応募管理
+- 面接準備
+- 面接後メモとお礼
+- PDF / DOCX 出力
+
+## Excluded Scope
+- 求人媒体そのもの
+- 企業との直接メッセージ基盤
+- 採用企業側 ATS 本体
+- 労務管理
+- 在職企業の人事評価システム
+- リアルタイム面接代行
+
+## Main Roles
+- owner: 自分の情報整理、書類作成、応募管理、面接準備、面接後対応
+- advisor_viewer: 閲覧、コメント参照
+- coach_editor: 添削コメント、改善提案、模擬レビュー
+
+## Fixed Design Principles
+- pasted job posting first
+- local draft first on mobile
+- explicit sync state
+- silent loss forbidden
+- revision history by default
+- checklist driven execution
+- language and currency ready
+- multi platform first
+- persona/background visible and configurable
+
+## Core Flow
+1. profile preparation
+2. document preparation
+3. application management
+4. interview preparation
+5. post interview follow up
+
+## Rival-driven Feature Additions
+- job-specific document branching
+- ATS keyword suggestions
+- interview question generation
+- deep-dive follow-up question generation
+- interview just-before mode
+- thank-you message generation
+- application leak-check
+- revision comparison
+- natural Japanese expression assist
+
+## Billing
+- free: 基本文書作成、応募件数制限、基本テンプレート
+- pro: 求人別最適化、応募管理、面接準備、PDF / DOCX 出力
+- business: AI 添削、面接練習、共有/添削導線、優先サポート
+
+## Implementation-readiness definition
+以下が揃った時点を実装準備完了とみなす。
+- ドメインモデル固定
+- life スキーマ論理テーブル固定
+- 主要 payload 固定
+- 主要画面の項目と遷移固定
+- 状態遷移固定
+- ロール / 共有境界固定
+- オフライン / 同期 / 出力ルール固定
+- Phase boundary fixed
+
+## Document types
+- 履歴書
+- 職務経歴書
+- 志望動機
+- 自己PR
+- 転職理由
+- 企業研究メモ
+- 想定質問
+- 回答メモ
+- 逆質問
+- 面接後お礼文
+- 面接振り返りメモ
+
+## Application statuses
+- 興味あり
+- 書類準備中
+- 応募済み
+- 書類選考中
+- 面接予定
+- 面接済み
+- 内定
+- 見送り
+- 辞退
+
+## Common component candidate focus
+- 文書テンプレート共通
+- 改訂履歴共通
+- 出力エクスポート共通
+- チェックリスト実行共通
+- ステータス管理共通
+- オフライン下書きキュー共通
+- 多言語ラベル共通
+- 多通貨表示共通
+- ペルソナ表示 / 背景表示共通
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/0000002_CAREER_LAUNCH_CANONICAL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md -->
+# 0100002 CONSTITUTION CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0100003_CONSTITUTION_CORE_OVERVIEW.md
+- 0100004_CAREER_LAUNCH_CORE_PRINCIPLES.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100002_CONSTITUTION_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md -->
+# Constitution Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 010.constitution
+## Purpose
+本アプリの存在理由、対象、境界、価値仮説を定義する。
+
+## Coverage
+- 存在意義
+- 対象と非対象
+- 成功条件
+- 価値仮説
+- 境界
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100003_CONSTITUTION_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100004_CAREER_LAUNCH_CORE_PRINCIPLES.md -->
+# CareerLaunch CORE PRINCIPLES
+
+app: CareerLaunch
+## Principles
+- 転職応募実行を最短距離で前に進める。
+- 抜けもれ防止を文書生成より優先する。
+- 応募ごとに文書と面接準備を分岐できる。
+- 求人票貼り付けを正規入力とし、API依存を持ち込まない。
+- モバイルではオフライン下書きを最優先する。
+- ペルソナ / 背景表示は全プラットフォームで維持する。
+- ユーザーの実データは owner 正本で扱い、life スキーマに閉じる。
+
+## Owner promise
+このアプリは転職の準備漏れを減らし、応募前・面接前・面接後の行動を checklist と revision で支える。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/010.core/0100004_CAREER_LAUNCH_CORE_PRINCIPLES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/0100000_CONSTITUTION_INDEX.md -->
+# 0100000 CONSTITUTION INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/0100000_CONSTITUTION_INDEX.md
+## Purpose
+CareerLaunch の 010.constitution 配下を一覧する。
+
+## Children
+- 0100001_CAREER_LAUNCH_CONSTITUTION_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/0100000_CONSTITUTION_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/0100001_CAREER_LAUNCH_CONSTITUTION_OVERVIEW.md -->
+# Constitution Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 010.constitution
+## Purpose
+本アプリの存在理由、対象、境界、価値仮説を定義する。
+
+## Coverage
+- 存在意義
+- 対象と非対象
+- 成功条件
+- 価値仮説
+- 境界
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/0100001_CAREER_LAUNCH_CONSTITUTION_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200000_CONSTITUTION_DETAIL_INDEX.md -->
+# 0100200000 CONSTITUTION DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200000_CONSTITUTION_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0100200001_CAREER_LAUNCH_CONSTITUTION_DETAIL_OVERVIEW.md
+- 0100200002_CAREER_LAUNCH_PROBLEM_STATEMENT.md
+- 0100200003_CAREER_LAUNCH_NON_GOAL_AND_BOUNDARY_CHARTER.md
+- 0100200004_CAREER_LAUNCH_VALUE_PROPOSITION.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200000_CONSTITUTION_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200001_CAREER_LAUNCH_CONSTITUTION_DETAIL_OVERVIEW.md -->
+# Constitution Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 010.constitution
+## Purpose
+本アプリの存在理由、対象、境界、価値仮説を定義する。
+
+## Coverage
+- 存在意義
+- 対象と非対象
+- 成功条件
+- 価値仮説
+- 境界
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200001_CAREER_LAUNCH_CONSTITUTION_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200002_CAREER_LAUNCH_PROBLEM_STATEMENT.md -->
+# CareerLaunch PROBLEM STATEMENT
+
+schema: life
+## Problem
+- 履歴書と職務経歴書は作れても、応募企業ごとの微調整が破綻しやすい。
+- 面接質問、回答メモ、逆質問、お礼文が別管理になり抜けもれが起きる。
+- スマホで直前確認したいが、文書と面接メモの接続が弱い。
+- 転職支援ツールは job tracker か resume builder のどちらかに寄りやすい。
+
+## Design answer
+CareerLaunch は書類・応募・面接・お礼を一つの応募単位で束ねる。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200002_CAREER_LAUNCH_PROBLEM_STATEMENT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200003_CAREER_LAUNCH_NON_GOAL_AND_BOUNDARY_CHARTER.md -->
+# CareerLaunch NON GOAL AND BOUNDARY CHARTER
+## Non goals
+- 求人媒体の検索基盤を作らない。
+- 企業とのチャット基盤を持たない。
+- 採用企業向け ATS 本体を作らない。
+- 在職企業の人事評価・労務を扱わない。
+- リアルタイム面接代行や不正支援を目的にしない。
+
+## Boundaries
+- 入力の起点は pasted job posting。
+- 共有は advisor_viewer / coach_editor の限定共有のみ。
+- 給与は比較表示目的で扱い、正式なオファー契約正本は持たない。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200003_CAREER_LAUNCH_NON_GOAL_AND_BOUNDARY_CHARTER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200004_CAREER_LAUNCH_VALUE_PROPOSITION.md -->
+# CareerLaunch VALUE PROPOSITION
+## User value
+- 応募単位で書類・面接準備・お礼を束ねられる。
+- 日本式履歴書と職務経歴書に強い。
+- マルチデバイスで同じ応募状態を追える。
+- 面接直前モードで短時間確認ができる。
+
+## Differentiation
+- resume builder 単体ではなく execution assistant である。
+- job tracker 単体ではなく documents and interview prep を内包する。
+- チェックリスト実行を前面に出す。
+- ペルソナ / 背景により継続利用の心理ハードルを下げる。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/010.constitution/020.detail/0100200004_CAREER_LAUNCH_VALUE_PROPOSITION.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md -->
+# 0200002 ARCHITECTURE CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0200003_ARCHITECTURE_CORE_OVERVIEW.md
+- 0200004_CAREER_LAUNCH_SYSTEM_ARCHITECTURE.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200002_ARCHITECTURE_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md -->
+# Architecture Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 020.architecture
+## Purpose
+主要コンポーネント、責務分離、読み書き境界、正本ポリシーを定義する。
+
+## Coverage
+- 主要コンポーネント
+- 責務分離
+- 読み書き境界
+- 正本
+- オフライン
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200003_ARCHITECTURE_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200004_CAREER_LAUNCH_SYSTEM_ARCHITECTURE.md -->
+# CareerLaunch SYSTEM ARCHITECTURE
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+schema: life
+## Core components
+- profile foundation
+- document workspace
+- job posting parser
+- application tracker
+- interview prep workspace
+- post-interview follow-up
+- export service
+- notification/reminder service
+- persona/background presenter
+- offline draft queue
+
+## Architecture stance
+- client-first drafting + server sync
+- owner-centric data ownership
+- application_position を主軸に文書と面接準備を束ねる
+- render/export は文書正本から派生生成する
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/010.core/0200004_CAREER_LAUNCH_SYSTEM_ARCHITECTURE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200000_ARCHITECTURE_DETAIL_INDEX.md -->
+# 0200200000 ARCHITECTURE DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200000_ARCHITECTURE_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0200200001_CAREER_LAUNCH_ARCHITECTURE_DETAIL_OVERVIEW.md
+- 0200200002_CAREER_LAUNCH_COMPONENT_MAP.md
+- 0200200003_CAREER_LAUNCH_READ_WRITE_BOUNDARY.md
+- 0200200004_CAREER_LAUNCH_SOURCE_OF_TRUTH_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200000_ARCHITECTURE_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200001_CAREER_LAUNCH_ARCHITECTURE_DETAIL_OVERVIEW.md -->
+# Architecture Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 020.architecture
+## Purpose
+主要コンポーネント、責務分離、読み書き境界、正本ポリシーを定義する。
+
+## Coverage
+- 主要コンポーネント
+- 責務分離
+- 読み書き境界
+- 正本
+- オフライン
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200001_CAREER_LAUNCH_ARCHITECTURE_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200002_CAREER_LAUNCH_COMPONENT_MAP.md -->
+# CareerLaunch COMPONENT MAP
+## Map
+- career_profile -> document templates -> document revisions
+- job_posting_paste -> requirement extraction -> application_position
+- application_position -> interview_plan -> interview_session_note -> thank_you_message
+- document_asset -> export_job -> pdf/docx artifact
+- persona_display_preference -> dashboard/editor/interview header
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200002_CAREER_LAUNCH_COMPONENT_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200003_CAREER_LAUNCH_READ_WRITE_BOUNDARY.md -->
+# CareerLaunch READ WRITE BOUNDARY
+## Write paths
+- profile edit writes life.career_profile*
+- job paste writes life.job_posting_paste
+- application creation writes life.application_company / life.application_position
+- document edit writes life.document_asset / life.document_revision
+- interview prep writes life.interview_plan / question / answer note
+- thank-you flow writes life.thank_you_message
+
+## Read paths
+- dashboard aggregates active applications, upcoming interviews, pending thank-you actions
+- export reads only frozen document revision snapshot
+- advisor_viewer reads shared snapshots only
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200003_CAREER_LAUNCH_READ_WRITE_BOUNDARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200004_CAREER_LAUNCH_SOURCE_OF_TRUTH_POLICY.md -->
+# CareerLaunch SOURCE OF TRUTH POLICY
+## Truth policy
+- 求人票原文の正本は pasted text。
+- 文書正本は document_asset + latest revision。
+- 提出済み内容の監査正本は document_revision snapshot。
+- 面接結果の正本は interview_session_note。
+- 送付済み確認の正本は thank_you_message.send_status。
+- 表示中ペルソナ / 背景の正本は persona_display_preference。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/020.detail/0200200004_CAREER_LAUNCH_SOURCE_OF_TRUTH_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/0200000_ARCHITECTURE_INDEX.md -->
+# 0200000 ARCHITECTURE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/0200000_ARCHITECTURE_INDEX.md
+## Purpose
+CareerLaunch の 020.architecture 配下を一覧する。
+
+## Children
+- 0200001_CAREER_LAUNCH_ARCHITECTURE_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/0200000_ARCHITECTURE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/0200001_CAREER_LAUNCH_ARCHITECTURE_OVERVIEW.md -->
+# Architecture Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 020.architecture
+## Purpose
+主要コンポーネント、責務分離、読み書き境界、正本ポリシーを定義する。
+
+## Coverage
+- 主要コンポーネント
+- 責務分離
+- 読み書き境界
+- 正本
+- オフライン
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/020.architecture/0200001_CAREER_LAUNCH_ARCHITECTURE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/010.core/0300002_MODEL_CORE_INDEX.md -->
+# 0300002 MODEL CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/010.core/0300002_MODEL_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0300003_MODEL_CORE_OVERVIEW.md
+- 0300004_CAREER_LAUNCH_DOMAIN_MODEL.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/010.core/0300002_MODEL_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md -->
+# Model Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 030.model
+## Purpose
+life スキーマ前提の論理モデル、テーブル候補、DDL準備要件を定義する。
+
+## Coverage
+- エンティティ
+- 状態
+- 論理テーブル
+- 共有単位
+- 履歴
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/010.core/0300003_MODEL_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/010.core/0300004_CAREER_LAUNCH_DOMAIN_MODEL.md -->
+# CareerLaunch DOMAIN MODEL
+
+schema: life
+## Primary aggregate
+application_position が応募単位の aggregate root であり、job posting、documents、interview prep、thank-you message を束ねる。
+
+## Entities
+- `life.career_profile`: 応募の土台になる基本プロフィール。氏名、連絡先、希望条件、要約を保持する。
+- `life.career_profile_revision`: プロフィール変更履歴。比較や復元に用いる。
+- `life.career_achievement_item`: 成果・実績の箇条書き単位。STARや数値成果を保持する。
+- `life.career_strength_item`: 強み・自己PR素材。根拠エピソードと結び付ける。
+- `life.career_reason_item`: 転職理由・志望理由の素材。ネガティブ理由と前向き変換を分離する。
+- `life.job_posting_paste`: 貼り付けた求人票原文と抽出メタ情報。URL、本文、言語、通貨を保持する。
+- `life.application_company`: 応募先企業の管理単位。企業名、メモ、参照リンクを保持する。
+- `life.application_position`: 求人単位の応募管理本体。ステータス、応募日、選考日程を保持する。
+- `life.application_stage_event`: 選考進行イベント履歴。書類提出、面接実施、結果受領などを保持する。
+- `life.document_bundle`: 1応募に紐づく提出書類セット。履歴書・職務経歴書・志望動機などの組を表す。
+- `life.document_asset`: 文書本体。ドキュメント種別ごとの最新スナップショットを保持する。
+- `life.document_revision`: 文書改訂履歴。差分、バージョン、根拠求人との対応を保持する。
+- `life.interview_plan`: 面接準備パック。企業研究、想定質問、逆質問、当日チェックを保持する。
+- `life.interview_question_item`: 想定質問、深掘り質問、逆質問の単位。
+- `life.interview_answer_note`: 回答下書き、要約、長さ調整、改善メモを保持する。
+- `life.interview_session_note`: 面接後メモ、良かった点、改善点、次回対策を保持する。
+- `life.thank_you_message`: お礼メッセージ案と送付状況を保持する。
+- `life.checklist_instance`: 応募前・面接前・面接後のチェックリスト実行本体。
+- `life.checklist_item_state`: チェック項目ごとの完了状態とメモ。
+- `life.advisor_share`: advisor_viewer / coach_editor 共有設定。
+- `life.export_job`: PDF / DOCX 出力ジョブ履歴。
+- `life.reminder_schedule`: 応募期限、面接予定、送付確認の通知設定。
+- `life.persona_display_preference`: 表示ペルソナ、背景、画面別表示ON/OFFなどを保持する。
+
+## Ownership
+- 全データは owner 起点の personal scope。
+- advisor / coach は share token または permission record 経由の限定アクセス。
+- company-scoped ERP ownership は採用しない。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/010.core/0300004_CAREER_LAUNCH_DOMAIN_MODEL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200000_MODEL_DETAIL_INDEX.md -->
+# 0300200000 MODEL DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200000_MODEL_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0300200001_CAREER_LAUNCH_MODEL_DETAIL_OVERVIEW.md
+- 0300200002_CAREER_LAUNCH_ENTITY_DEFINITIONS.md
+- 0300200003_CAREER_LAUNCH_FIELD_AND_CARDINALITY_MATRIX.md
+- 0300200004_CAREER_LAUNCH_STATUS_AND_ENUM_RULES.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200000_MODEL_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200001_CAREER_LAUNCH_MODEL_DETAIL_OVERVIEW.md -->
+# Model Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 030.model
+## Purpose
+life スキーマ前提の論理モデル、テーブル候補、DDL準備要件を定義する。
+
+## Coverage
+- エンティティ
+- 状態
+- 論理テーブル
+- 共有単位
+- 履歴
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200001_CAREER_LAUNCH_MODEL_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200002_CAREER_LAUNCH_ENTITY_DEFINITIONS.md -->
+# CareerLaunch ENTITY DEFINITIONS
+## career_profile
+応募の土台になる基本プロフィール。氏名、連絡先、希望条件、要約を保持する。
+
+## career_profile_revision
+プロフィール変更履歴。比較や復元に用いる。
+
+## career_achievement_item
+成果・実績の箇条書き単位。STARや数値成果を保持する。
+
+## career_strength_item
+強み・自己PR素材。根拠エピソードと結び付ける。
+
+## career_reason_item
+転職理由・志望理由の素材。ネガティブ理由と前向き変換を分離する。
+
+## job_posting_paste
+貼り付けた求人票原文と抽出メタ情報。URL、本文、言語、通貨を保持する。
+
+## application_company
+応募先企業の管理単位。企業名、メモ、参照リンクを保持する。
+
+## application_position
+求人単位の応募管理本体。ステータス、応募日、選考日程を保持する。
+
+## application_stage_event
+選考進行イベント履歴。書類提出、面接実施、結果受領などを保持する。
+
+## document_bundle
+1応募に紐づく提出書類セット。履歴書・職務経歴書・志望動機などの組を表す。
+
+## document_asset
+文書本体。ドキュメント種別ごとの最新スナップショットを保持する。
+
+## document_revision
+文書改訂履歴。差分、バージョン、根拠求人との対応を保持する。
+
+## interview_plan
+面接準備パック。企業研究、想定質問、逆質問、当日チェックを保持する。
+
+## interview_question_item
+想定質問、深掘り質問、逆質問の単位。
+
+## interview_answer_note
+回答下書き、要約、長さ調整、改善メモを保持する。
+
+## interview_session_note
+面接後メモ、良かった点、改善点、次回対策を保持する。
+
+## thank_you_message
+お礼メッセージ案と送付状況を保持する。
+
+## checklist_instance
+応募前・面接前・面接後のチェックリスト実行本体。
+
+## checklist_item_state
+チェック項目ごとの完了状態とメモ。
+
+## advisor_share
+advisor_viewer / coach_editor 共有設定。
+
+## export_job
+PDF / DOCX 出力ジョブ履歴。
+
+## reminder_schedule
+応募期限、面接予定、送付確認の通知設定。
+
+## persona_display_preference
+表示ペルソナ、背景、画面別表示ON/OFFなどを保持する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200002_CAREER_LAUNCH_ENTITY_DEFINITIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200003_CAREER_LAUNCH_FIELD_AND_CARDINALITY_MATRIX.md -->
+# CareerLaunch FIELD AND CARDINALITY MATRIX
+## Cardinality
+- career_profile 1 - n career_achievement_item
+- career_profile 1 - n career_strength_item
+- career_profile 1 - n career_reason_item
+- job_posting_paste 1 - n application_position
+- application_company 1 - n application_position
+- application_position 1 - 1 active document_bundle
+- document_bundle 1 - n document_asset
+- document_asset 1 - n document_revision
+- application_position 1 - 1 interview_plan
+- interview_plan 1 - n interview_question_item
+- interview_plan 1 - n interview_answer_note
+- application_position 1 - n interview_session_note
+- application_position 1 - n thank_you_message
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200003_CAREER_LAUNCH_FIELD_AND_CARDINALITY_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200004_CAREER_LAUNCH_STATUS_AND_ENUM_RULES.md -->
+# CareerLaunch STATUS AND ENUM RULES
+## Application status enum
+- 興味あり
+- 書類準備中
+- 応募済み
+- 書類選考中
+- 面接予定
+- 面接済み
+- 内定
+- 見送り
+- 辞退
+
+## Document types
+- 履歴書
+- 職務経歴書
+- 志望動機
+- 自己PR
+- 転職理由
+- 企業研究メモ
+- 想定質問
+- 回答メモ
+- 逆質問
+- 面接後お礼文
+- 面接振り返りメモ
+
+## Other enums
+- share_role: advisor_viewer / coach_editor
+- thank_you_status: not_sent / drafted / sent / confirmed
+- export_format: pdf / docx
+- question_type: expected / deep_dive / reverse
+- sync_state: local_only / syncing / synced / conflict / failed
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/020.detail/0300200004_CAREER_LAUNCH_STATUS_AND_ENUM_RULES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300000_SCHEMA_DESIGN_INDEX.md -->
+# 0300300000 SCHEMA DESIGN INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300000_SCHEMA_DESIGN_INDEX.md
+## Purpose
+CareerLaunch の 030.schema 配下を一覧する。
+
+## Children
+- 0300300001_CAREER_LAUNCH_SCHEMA_DESIGN_OVERVIEW.md
+- 0300300002_CAREER_LAUNCH_LOGICAL_TABLE_CATALOG.md
+- 0300300003_CAREER_LAUNCH_LOGICAL_TABLE_DEFINITIONS.md
+- 0300300004_CAREER_LAUNCH_LOGICAL_COLUMN_STANDARD.md
+- 0300300005_CAREER_LAUNCH_LIFE_SCHEMA_BOUNDARY_POLICY.md
+- 0300300006_CAREER_LAUNCH_RETENTION_AND_SOFT_DELETE_POLICY.md
+- 0300300007_CAREER_LAUNCH_UNIQUE_KEY_AND_INDEX_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300000_SCHEMA_DESIGN_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300001_CAREER_LAUNCH_SCHEMA_DESIGN_OVERVIEW.md -->
+# Schema Design Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 030.model
+## Purpose
+life スキーマ前提の論理モデル、テーブル候補、DDL準備要件を定義する。
+
+## Coverage
+- エンティティ
+- 状態
+- 論理テーブル
+- 共有単位
+- 履歴
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300001_CAREER_LAUNCH_SCHEMA_DESIGN_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300002_CAREER_LAUNCH_LOGICAL_TABLE_CATALOG.md -->
+# CareerLaunch LOGICAL TABLE CATALOG
+
+schema: life
+## Catalog
+- `life.career_profile`: 応募の土台になる基本プロフィール。氏名、連絡先、希望条件、要約を保持する。
+- `life.career_profile_revision`: プロフィール変更履歴。比較や復元に用いる。
+- `life.career_achievement_item`: 成果・実績の箇条書き単位。STARや数値成果を保持する。
+- `life.career_strength_item`: 強み・自己PR素材。根拠エピソードと結び付ける。
+- `life.career_reason_item`: 転職理由・志望理由の素材。ネガティブ理由と前向き変換を分離する。
+- `life.job_posting_paste`: 貼り付けた求人票原文と抽出メタ情報。URL、本文、言語、通貨を保持する。
+- `life.application_company`: 応募先企業の管理単位。企業名、メモ、参照リンクを保持する。
+- `life.application_position`: 求人単位の応募管理本体。ステータス、応募日、選考日程を保持する。
+- `life.application_stage_event`: 選考進行イベント履歴。書類提出、面接実施、結果受領などを保持する。
+- `life.document_bundle`: 1応募に紐づく提出書類セット。履歴書・職務経歴書・志望動機などの組を表す。
+- `life.document_asset`: 文書本体。ドキュメント種別ごとの最新スナップショットを保持する。
+- `life.document_revision`: 文書改訂履歴。差分、バージョン、根拠求人との対応を保持する。
+- `life.interview_plan`: 面接準備パック。企業研究、想定質問、逆質問、当日チェックを保持する。
+- `life.interview_question_item`: 想定質問、深掘り質問、逆質問の単位。
+- `life.interview_answer_note`: 回答下書き、要約、長さ調整、改善メモを保持する。
+- `life.interview_session_note`: 面接後メモ、良かった点、改善点、次回対策を保持する。
+- `life.thank_you_message`: お礼メッセージ案と送付状況を保持する。
+- `life.checklist_instance`: 応募前・面接前・面接後のチェックリスト実行本体。
+- `life.checklist_item_state`: チェック項目ごとの完了状態とメモ。
+- `life.advisor_share`: advisor_viewer / coach_editor 共有設定。
+- `life.export_job`: PDF / DOCX 出力ジョブ履歴。
+- `life.reminder_schedule`: 応募期限、面接予定、送付確認の通知設定。
+- `life.persona_display_preference`: 表示ペルソナ、背景、画面別表示ON/OFFなどを保持する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300002_CAREER_LAUNCH_LOGICAL_TABLE_CATALOG.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300003_CAREER_LAUNCH_LOGICAL_TABLE_DEFINITIONS.md -->
+# CareerLaunch LOGICAL TABLE DEFINITIONS
+
+schema: life
+## Logical definitions
+### life.career_profile
+- id uuid pk
+- user_id uuid
+- display_name text
+- primary_locale text
+- target_country text
+- desired_compensation_amount numeric
+- desired_compensation_currency text
+- career_summary text
+- headline text
+- current_status text
+- created_at timestamptz
+- updated_at timestamptz
+
+### life.job_posting_paste
+- id uuid pk
+- user_id uuid
+- source_url text
+- source_label text
+- posting_language text
+- compensation_currency text
+- job_title text
+- company_name text
+- posting_body text
+- must_requirements_json jsonb
+- preferred_requirements_json jsonb
+- ats_keywords_json jsonb
+- created_at timestamptz
+- updated_at timestamptz
+
+### life.application_position
+- id uuid pk
+- user_id uuid
+- company_id uuid
+- job_posting_id uuid
+- status text
+- applied_at timestamptz
+- interview_at timestamptz
+- result_at timestamptz
+- document_bundle_id uuid
+- thank_you_status text
+- interviewer_notes text
+- created_at timestamptz
+- updated_at timestamptz
+
+### life.document_asset
+- id uuid pk
+- user_id uuid
+- bundle_id uuid
+- document_type text
+- language_code text
+- title text
+- body_markdown text
+- render_template_key text
+- latest_revision_no int
+- created_at timestamptz
+- updated_at timestamptz
+
+### life.document_revision
+- id uuid pk
+- document_asset_id uuid
+- revision_no int
+- revision_reason text
+- job_posting_id uuid
+- diff_summary text
+- snapshot_markdown text
+- created_by_role text
+- created_at timestamptz
+
+### life.interview_plan
+- id uuid pk
+- application_position_id uuid
+- company_research_note text
+- pre_interview_summary text
+- day_of_checklist_json jsonb
+- question_count int
+- reverse_question_count int
+- created_at timestamptz
+- updated_at timestamptz
+
+### life.thank_you_message
+- id uuid pk
+- application_position_id uuid
+- channel text
+- message_body text
+- send_status text
+- sent_at timestamptz
+- confirmed_by_user boolean
+- created_at timestamptz
+- updated_at timestamptz
+
+### life.persona_display_preference
+- id uuid pk
+- user_id uuid
+- active_persona_id uuid
+- active_background_id uuid
+- show_on_dashboard boolean
+- show_on_editor boolean
+- show_on_interview boolean
+- lightweight_mode boolean
+- updated_at timestamptz
+
+### Shared column standard
+- 全 user-owned テーブルは user_id または application_position_id 経由で owner を確定する。
+- soft delete は deleted_at / deleted_by_role で統一する。
+- revision を持つ文書は current row overwrite ではなく revision append を原則とする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300003_CAREER_LAUNCH_LOGICAL_TABLE_DEFINITIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300004_CAREER_LAUNCH_LOGICAL_COLUMN_STANDARD.md -->
+# CareerLaunch LOGICAL COLUMN STANDARD
+## Column standard
+- 主キーは uuid。
+- created_at / updated_at を基本列に含む。
+- 通貨は amount + currency のペアで保持する。
+- 多言語文書は language_code を必須化する。
+- 改訂可能文書は latest_revision_no を持つ。
+- 同期対象は sync_state を持つか、queue 側で管理する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300004_CAREER_LAUNCH_LOGICAL_COLUMN_STANDARD.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300005_CAREER_LAUNCH_LIFE_SCHEMA_BOUNDARY_POLICY.md -->
+# CareerLaunch LIFE SCHEMA BOUNDARY POLICY
+## Boundary
+- 本アプリの正本は life.*。
+- business.* や erp.* を前提にしない。
+- 将来 cross-app link は allowed だが ownership は移譲しない。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300005_CAREER_LAUNCH_LIFE_SCHEMA_BOUNDARY_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300006_CAREER_LAUNCH_RETENTION_AND_SOFT_DELETE_POLICY.md -->
+# CareerLaunch RETENTION AND SOFT DELETE POLICY
+## Retention
+- document_revision と interview_session_note は監査・振り返りのため保持優先。
+- soft delete を標準とし、ユーザー削除は restore 可能期間を設ける。
+- export artifact は再生成可能なら短期保持、監査メタは長期保持。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300006_CAREER_LAUNCH_RETENTION_AND_SOFT_DELETE_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300007_CAREER_LAUNCH_UNIQUE_KEY_AND_INDEX_POLICY.md -->
+# CareerLaunch UNIQUE KEY AND INDEX POLICY
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## Uniqueness
+- career_profile は user_id ごとに active row 1件。
+- document_revision は document_asset_id + revision_no で unique。
+- application_position は user_id + company_id + job_posting_id + applied_at で重複制御可能。
+
+## Index focus
+- user_id + status
+- user_id + interview_at
+- user_id + updated_at
+- full text search for posting_body / document snapshot
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/030.schema/0300300007_CAREER_LAUNCH_UNIQUE_KEY_AND_INDEX_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/0300000_MODEL_INDEX.md -->
+# 0300000 MODEL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/0300000_MODEL_INDEX.md
+## Purpose
+CareerLaunch の 030.model 配下を一覧する。
+
+## Children
+- 0300001_CAREER_LAUNCH_MODEL_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/0300000_MODEL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/0300001_CAREER_LAUNCH_MODEL_OVERVIEW.md -->
+# Model Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 030.model
+## Purpose
+life スキーマ前提の論理モデル、テーブル候補、DDL準備要件を定義する。
+
+## Coverage
+- エンティティ
+- 状態
+- 論理テーブル
+- 共有単位
+- 履歴
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/0300001_CAREER_LAUNCH_MODEL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400000_DDL_READINESS_INDEX.md -->
+# 0300400000 DDL READINESS INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400000_DDL_READINESS_INDEX.md
+## Purpose
+CareerLaunch の 040.ddl-readiness 配下を一覧する。
+
+## Children
+- 0300400001_CAREER_LAUNCH_DDL_READINESS_OVERVIEW.md
+- 0300400002_CAREER_LAUNCH_TABLE_CREATION_ORDER.md
+- 0300400003_CAREER_LAUNCH_KEY_AND_CONSTRAINT_POLICY.md
+- 0300400004_CAREER_LAUNCH_TIMESTAMP_AND_SOFT_DELETE_POLICY.md
+- 0300400005_CAREER_LAUNCH_INDEX_AND_SEARCH_POLICY.md
+- 0300400006_CAREER_LAUNCH_SQL_IMPLEMENTATION_BOUNDARY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400000_DDL_READINESS_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400001_CAREER_LAUNCH_DDL_READINESS_OVERVIEW.md -->
+# Ddl Readiness Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 030.model
+## Purpose
+life スキーマ前提の論理モデル、テーブル候補、DDL準備要件を定義する。
+
+## Coverage
+- エンティティ
+- 状態
+- 論理テーブル
+- 共有単位
+- 履歴
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400001_CAREER_LAUNCH_DDL_READINESS_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400002_CAREER_LAUNCH_TABLE_CREATION_ORDER.md -->
+# CareerLaunch TABLE CREATION ORDER
+## Recommended order
+- life.career_profile
+- life.career_achievement_item / career_strength_item / career_reason_item
+- life.job_posting_paste
+- life.application_company
+- life.application_position
+- life.document_bundle / document_asset / document_revision
+- life.interview_plan / interview_question_item / interview_answer_note / interview_session_note
+- life.thank_you_message
+- life.checklist_instance / checklist_item_state
+- life.advisor_share / reminder_schedule / export_job / persona_display_preference
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400002_CAREER_LAUNCH_TABLE_CREATION_ORDER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400003_CAREER_LAUNCH_KEY_AND_CONSTRAINT_POLICY.md -->
+# CareerLaunch KEY AND CONSTRAINT POLICY
+## Constraints
+- FK は application_position を中心に明示する。
+- revision entity は parent delete cascade を避ける。
+- 公開共有 URL ではなく permission row を優先する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400003_CAREER_LAUNCH_KEY_AND_CONSTRAINT_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400004_CAREER_LAUNCH_TIMESTAMP_AND_SOFT_DELETE_POLICY.md -->
+# CareerLaunch TIMESTAMP AND SOFT DELETE POLICY
+## Timestamp
+- created_at / updated_at は timestamptz。
+- 面接・応募・送付時刻はユーザー timezone 表示で扱う。
+- deleted_at は soft delete 管理に使用する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400004_CAREER_LAUNCH_TIMESTAMP_AND_SOFT_DELETE_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400005_CAREER_LAUNCH_INDEX_AND_SEARCH_POLICY.md -->
+# CareerLaunch INDEX AND SEARCH POLICY
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## Search
+- 企業名、求人名、posting_body は検索対象。
+- document snapshot は文書比較と ATS keyword 提示のため検索対象。
+- interview notes は全文検索より application-position 経由の参照を優先。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400005_CAREER_LAUNCH_INDEX_AND_SEARCH_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400006_CAREER_LAUNCH_SQL_IMPLEMENTATION_BOUNDARY.md -->
+# CareerLaunch SQL IMPLEMENTATION BOUNDARY
+## Boundary
+- ここでは論理設計を固定し、実 SQL DDL は後続 phase で行う。
+- 制約名、index 名、RLS 実 SQL はまだ固定しない。
+- ただし payload と logical columns はこの文書群で固定する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/030.model/040.ddl-readiness/0300400006_CAREER_LAUNCH_SQL_IMPLEMENTATION_BOUNDARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md -->
+# 0400002 RUNTIME CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0400003_RUNTIME_CORE_OVERVIEW.md
+- 0400004_CAREER_LAUNCH_RUNTIME_BEHAVIOR.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400002_RUNTIME_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md -->
+# Runtime Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 040.runtime
+## Purpose
+ドラフト保存、同期、通知、面接前後の実行時挙動を定義する。
+
+## Coverage
+- ドラフト保存
+- 同期
+- 通知
+- 失敗時挙動
+- 端末差分
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400003_RUNTIME_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400004_CAREER_LAUNCH_RUNTIME_BEHAVIOR.md -->
+# CareerLaunch RUNTIME BEHAVIOR
+## Runtime rules
+- モバイルは local draft save を即時実行し、同期は後続。
+- sync_state を画面に表示する。
+- conflict 時は silent overwrite 禁止。
+- 面接当日モードはネット不安定でも直前要約とチェックリストを表示可能にする。
+- ペルソナ / 背景設定はオフラインでも保持する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/010.core/0400004_CAREER_LAUNCH_RUNTIME_BEHAVIOR.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200000_RUNTIME_DETAIL_INDEX.md -->
+# 0400200000 RUNTIME DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200000_RUNTIME_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0400200001_CAREER_LAUNCH_RUNTIME_DETAIL_OVERVIEW.md
+- 0400200002_CAREER_LAUNCH_RUNTIME_EVENT_CHAIN.md
+- 0400200003_CAREER_LAUNCH_NOTIFICATION_RUNTIME_RULES.md
+- 0400200004_CAREER_LAUNCH_SUMMARY_GENERATION_RUNTIME.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200000_RUNTIME_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200001_CAREER_LAUNCH_RUNTIME_DETAIL_OVERVIEW.md -->
+# Runtime Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 040.runtime
+## Purpose
+ドラフト保存、同期、通知、面接前後の実行時挙動を定義する。
+
+## Coverage
+- ドラフト保存
+- 同期
+- 通知
+- 失敗時挙動
+- 端末差分
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200001_CAREER_LAUNCH_RUNTIME_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200002_CAREER_LAUNCH_RUNTIME_EVENT_CHAIN.md -->
+# CareerLaunch RUNTIME EVENT CHAIN
+## Event chain
+- job pasted -> requirements extracted -> application draft suggested
+- application created -> checklist seeded -> document bundle linked
+- interview scheduled -> reminder scheduled -> pre interview summary refreshed
+- interview finished -> post interview checklist seeded -> thank-you draft suggested
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200002_CAREER_LAUNCH_RUNTIME_EVENT_CHAIN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200003_CAREER_LAUNCH_NOTIFICATION_RUNTIME_RULES.md -->
+# CareerLaunch NOTIFICATION RUNTIME RULES
+## Notifications
+- 応募期限通知
+- 面接予定通知
+- お礼送付未確認通知
+- sync failed / conflict notification
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200003_CAREER_LAUNCH_NOTIFICATION_RUNTIME_RULES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200004_CAREER_LAUNCH_SUMMARY_GENERATION_RUNTIME.md -->
+# CareerLaunch SUMMARY GENERATION RUNTIME
+## Summary generation
+- 面接直前要約は application_position, latest documents, interview_plan を集約して生成する。
+- 生成物は draft として扱い、user edit を許可する。
+- 自動要約は原文正本を上書きしない。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/020.detail/0400200004_CAREER_LAUNCH_SUMMARY_GENERATION_RUNTIME.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/0400000_RUNTIME_INDEX.md -->
+# 0400000 RUNTIME INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/0400000_RUNTIME_INDEX.md
+## Purpose
+CareerLaunch の 040.runtime 配下を一覧する。
+
+## Children
+- 0400001_CAREER_LAUNCH_RUNTIME_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/0400000_RUNTIME_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/0400001_CAREER_LAUNCH_RUNTIME_OVERVIEW.md -->
+# Runtime Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 040.runtime
+## Purpose
+ドラフト保存、同期、通知、面接前後の実行時挙動を定義する。
+
+## Coverage
+- ドラフト保存
+- 同期
+- 通知
+- 失敗時挙動
+- 端末差分
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/040.runtime/0400001_CAREER_LAUNCH_RUNTIME_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/010.core/0500002_FLOW_CORE_INDEX.md -->
+# 0500002 FLOW CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/010.core/0500002_FLOW_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0500003_FLOW_CORE_OVERVIEW.md
+- 0500004_CAREER_LAUNCH_USER_FLOW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/010.core/0500002_FLOW_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md -->
+# Flow Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 050.flow
+## Purpose
+プロフィール整理から応募、面接、面接後フォローまでの業務フローを定義する。
+
+## Coverage
+- 応募前
+- 応募中
+- 面接前
+- 面接後
+- 抜けもれ防止
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/010.core/0500003_FLOW_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/010.core/0500004_CAREER_LAUNCH_USER_FLOW.md -->
+# CareerLaunch USER FLOW
+## Primary user flow
+- profile preparation
+- document preparation
+- application management
+- interview preparation
+- post interview follow-up
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/010.core/0500004_CAREER_LAUNCH_USER_FLOW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200000_FLOW_DETAIL_INDEX.md -->
+# 0500200000 FLOW DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200000_FLOW_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0500200001_CAREER_LAUNCH_FLOW_DETAIL_OVERVIEW.md
+- 0500200002_CAREER_LAUNCH_CORE_USER_JOURNEYS.md
+- 0500200003_CAREER_LAUNCH_ISSUE_INTAKE_FLOW.md
+- 0500200004_CAREER_LAUNCH_BRIDGE_TRIGGER_FLOW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200000_FLOW_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200001_CAREER_LAUNCH_FLOW_DETAIL_OVERVIEW.md -->
+# Flow Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 050.flow
+## Purpose
+プロフィール整理から応募、面接、面接後フォローまでの業務フローを定義する。
+
+## Coverage
+- 応募前
+- 応募中
+- 面接前
+- 面接後
+- 抜けもれ防止
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200001_CAREER_LAUNCH_FLOW_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200002_CAREER_LAUNCH_CORE_USER_JOURNEYS.md -->
+# CareerLaunch CORE USER JOURNEYS
+## Journeys
+- 初回プロフィール整理
+- 求人別書類調整
+- 応募登録と進捗追跡
+- 面接直前確認
+- 面接後振り返りとお礼送付
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200002_CAREER_LAUNCH_CORE_USER_JOURNEYS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200003_CAREER_LAUNCH_ISSUE_INTAKE_FLOW.md -->
+# CareerLaunch JOB POSTING INTAKE FLOW
+## Job posting intake flow
+- 求人票 paste
+- must / preferred / ATS keyword 抽出
+- 応募ドラフト作成提案
+- document bundle 分岐
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200003_CAREER_LAUNCH_ISSUE_INTAKE_FLOW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200004_CAREER_LAUNCH_BRIDGE_TRIGGER_FLOW.md -->
+# CareerLaunch BRIDGE TRIGGER FLOW
+## Bridge triggers
+- application created -> checklist seeded
+- interview scheduled -> just-before summary refresh
+- interview completed -> thank-you draft seeded
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/020.detail/0500200004_CAREER_LAUNCH_BRIDGE_TRIGGER_FLOW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300000_STATE_MACHINE_INDEX.md -->
+# 0500300000 STATE MACHINE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300000_STATE_MACHINE_INDEX.md
+## Purpose
+CareerLaunch の 030.state-machine 配下を一覧する。
+
+## Children
+- 0500300001_CAREER_LAUNCH_STATE_MACHINE_OVERVIEW.md
+- 0500300002_CAREER_LAUNCH_ISSUE_STATE_TRANSITIONS.md
+- 0500300003_CAREER_LAUNCH_CONTRACT_STATUS_TRANSITIONS.md
+- 0500300004_CAREER_LAUNCH_DEADLINE_COMPLETION_TRANSITIONS.md
+- 0500300005_CAREER_LAUNCH_ADVISOR_SHARE_LIFECYCLE.md
+- 0500300006_CAREER_LAUNCH_INVALID_TRANSITION_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300000_STATE_MACHINE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300001_CAREER_LAUNCH_STATE_MACHINE_OVERVIEW.md -->
+# State Machine Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 050.flow
+## Purpose
+プロフィール整理から応募、面接、面接後フォローまでの業務フローを定義する。
+
+## Coverage
+- 応募前
+- 応募中
+- 面接前
+- 面接後
+- 抜けもれ防止
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300001_CAREER_LAUNCH_STATE_MACHINE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300002_CAREER_LAUNCH_ISSUE_STATE_TRANSITIONS.md -->
+# CareerLaunch APPLICATION STATE TRANSITIONS
+## Application transitions
+- 興味あり -> 書類準備中 -> 応募済み -> 書類選考中 -> 面接予定 -> 面接済み -> 内定/見送り/辞退
+- 内定/見送り/辞退 から active state への戻しは原則 manual only
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300002_CAREER_LAUNCH_ISSUE_STATE_TRANSITIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300003_CAREER_LAUNCH_CONTRACT_STATUS_TRANSITIONS.md -->
+# CareerLaunch DOCUMENT STATUS TRANSITIONS
+## Document bundle transitions
+- draft -> tailored -> frozen_for_submission -> archived
+- frozen_for_submission は revision append のみ許可、直接上書き禁止
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300003_CAREER_LAUNCH_CONTRACT_STATUS_TRANSITIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300004_CAREER_LAUNCH_DEADLINE_COMPLETION_TRANSITIONS.md -->
+# CareerLaunch CHECKLIST COMPLETION TRANSITIONS
+## Checklist completion transitions
+- not_started -> in_progress -> complete
+- overdue は reminder rule で付与
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300004_CAREER_LAUNCH_DEADLINE_COMPLETION_TRANSITIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300005_CAREER_LAUNCH_ADVISOR_SHARE_LIFECYCLE.md -->
+# CareerLaunch ADVISOR SHARE LIFECYCLE
+## Share lifecycle
+- invite -> accepted -> active -> revoked
+- viewer / editor role change は explicit owner action only
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300005_CAREER_LAUNCH_ADVISOR_SHARE_LIFECYCLE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300006_CAREER_LAUNCH_INVALID_TRANSITION_POLICY.md -->
+# CareerLaunch INVALID TRANSITION POLICY
+## Invalid transition policy
+- 面接未実施なのに thank-you sent confirmed へは遷移不可
+- frozen submission を silent overwrite してはならない
+- revoked share からの comment write は不可
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/030.state-machine/0500300006_CAREER_LAUNCH_INVALID_TRANSITION_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/0500000_FLOW_INDEX.md -->
+# 0500000 FLOW INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/0500000_FLOW_INDEX.md
+## Purpose
+CareerLaunch の 050.flow 配下を一覧する。
+
+## Children
+- 0500001_CAREER_LAUNCH_FLOW_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/0500000_FLOW_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/0500001_CAREER_LAUNCH_FLOW_OVERVIEW.md -->
+# Flow Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 050.flow
+## Purpose
+プロフィール整理から応募、面接、面接後フォローまでの業務フローを定義する。
+
+## Coverage
+- 応募前
+- 応募中
+- 面接前
+- 面接後
+- 抜けもれ防止
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/050.flow/0500001_CAREER_LAUNCH_FLOW_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md -->
+# 0600002 INTEGRATION CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0600003_INTEGRATION_CORE_OVERVIEW.md
+- 0600004_CAREER_LAUNCH_INTEGRATION_BOUNDARY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/010.core/0600002_INTEGRATION_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md -->
+# Integration Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 060.integration
+## Purpose
+求人票貼り付け、出力、共有、将来連携の境界を定義する。
+
+## Coverage
+- 入力
+- 出力
+- 共有
+- 将来連携
+- 非連携
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/010.core/0600003_INTEGRATION_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/010.core/0600004_CAREER_LAUNCH_INTEGRATION_BOUNDARY.md -->
+# CareerLaunch INTEGRATION BOUNDARY
+## Boundary
+- input is pasted job posting
+- output is export/share
+- future links are optional
+- no dependency on job-site APIs
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/010.core/0600004_CAREER_LAUNCH_INTEGRATION_BOUNDARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200000_INTEGRATION_DETAIL_INDEX.md -->
+# 0600200000 INTEGRATION DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200000_INTEGRATION_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0600200001_CAREER_LAUNCH_INTEGRATION_DETAIL_OVERVIEW.md
+- 0600200002_CAREER_LAUNCH_BOUNDARY_MATRIX.md
+- 0600200003_CAREER_LAUNCH_HANDOFF_RULES.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200000_INTEGRATION_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200001_CAREER_LAUNCH_INTEGRATION_DETAIL_OVERVIEW.md -->
+# Integration Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 060.integration
+## Purpose
+求人票貼り付け、出力、共有、将来連携の境界を定義する。
+
+## Coverage
+- 入力
+- 出力
+- 共有
+- 将来連携
+- 非連携
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200001_CAREER_LAUNCH_INTEGRATION_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200002_CAREER_LAUNCH_BOUNDARY_MATRIX.md -->
+# CareerLaunch BOUNDARY MATRIX
+## Matrix
+- owner writes source data
+- advisor/coach read/comment only within share scope
+- export workers read frozen revisions only
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200002_CAREER_LAUNCH_BOUNDARY_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200003_CAREER_LAUNCH_HANDOFF_RULES.md -->
+# CareerLaunch HANDOFF RULES
+## Handoff
+- 文書出力は frozen revision を handoff 単位とする。
+- advisor 共有は scope 明示が必要。
+- 面接後メモからお礼文へ handoff する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/020.detail/0600200003_CAREER_LAUNCH_HANDOFF_RULES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300000_API_CONTRACT_INDEX.md -->
+# 0600300000 API CONTRACT INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300000_API_CONTRACT_INDEX.md
+## Purpose
+CareerLaunch の 030.api-contract 配下を一覧する。
+
+## Children
+- 0600300001_CAREER_LAUNCH_API_CONTRACT_OVERVIEW.md
+- 0600300002_CAREER_LAUNCH_ENDPOINT_CATALOG.md
+- 0600300003_CAREER_LAUNCH_WRITE_ENDPOINT_CONTRACT.md
+- 0600300004_CAREER_LAUNCH_READ_AND_LIST_ENDPOINT_CONTRACT.md
+- 0600300005_CAREER_LAUNCH_SUMMARY_SHARE_HANDOFF_ENDPOINT_CONTRACT.md
+- 0600300006_CAREER_LAUNCH_ERROR_AND_RESPONSE_ENVELOPE_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300000_API_CONTRACT_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300001_CAREER_LAUNCH_API_CONTRACT_OVERVIEW.md -->
+# Api Contract Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 060.integration
+## Purpose
+求人票貼り付け、出力、共有、将来連携の境界を定義する。
+
+## Coverage
+- 入力
+- 出力
+- 共有
+- 将来連携
+- 非連携
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300001_CAREER_LAUNCH_API_CONTRACT_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300002_CAREER_LAUNCH_ENDPOINT_CATALOG.md -->
+# CareerLaunch ENDPOINT CATALOG
+## Endpoint catalog
+- GET/PUT /life/career-profile
+- POST /life/job-postings/paste
+- GET/POST/PATCH /life/applications
+- GET/POST /life/document-bundles / document-revisions
+- GET/PUT /life/interview-plans
+- POST /life/thank-you-messages
+- POST /life/export-jobs
+- POST /life/shares
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300002_CAREER_LAUNCH_ENDPOINT_CATALOG.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300003_CAREER_LAUNCH_WRITE_ENDPOINT_CONTRACT.md -->
+# CareerLaunch WRITE ENDPOINT CONTRACT
+## Write endpoints
+- profile update
+- job posting paste
+- application create/status update
+- document revision append
+- interview plan update
+- thank-you draft create/confirm
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300003_CAREER_LAUNCH_WRITE_ENDPOINT_CONTRACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300004_CAREER_LAUNCH_READ_AND_LIST_ENDPOINT_CONTRACT.md -->
+# CareerLaunch READ AND LIST ENDPOINT CONTRACT
+## Read/list endpoints
+- dashboard summary
+- applications list
+- document bundle detail
+- interview plan detail
+- revision comparison read
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300004_CAREER_LAUNCH_READ_AND_LIST_ENDPOINT_CONTRACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300005_CAREER_LAUNCH_SUMMARY_SHARE_HANDOFF_ENDPOINT_CONTRACT.md -->
+# CareerLaunch SUMMARY SHARE HANDOFF ENDPOINT CONTRACT
+## Summary/share/handoff endpoints
+- GET /life/dashboard-summary
+- POST /life/shares
+- POST /life/export-jobs
+- POST /life/thank-you-messages/confirm
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300005_CAREER_LAUNCH_SUMMARY_SHARE_HANDOFF_ENDPOINT_CONTRACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300006_CAREER_LAUNCH_ERROR_AND_RESPONSE_ENVELOPE_POLICY.md -->
+# CareerLaunch ERROR AND RESPONSE ENVELOPE POLICY
+## Envelope
+```json
+{
+  "ok": false,
+  "code": "SYNC_CONFLICT",
+  "message": "document revision conflict",
+  "trace_id": "uuid"
+}
+```
+
+## Rules
+- machine-readable code 必須
+- user-friendly message 必須
+- conflict は silent merge 禁止
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/030.api-contract/0600300006_CAREER_LAUNCH_ERROR_AND_RESPONSE_ENVELOPE_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/0600000_INTEGRATION_INDEX.md -->
+# 0600000 INTEGRATION INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/0600000_INTEGRATION_INDEX.md
+## Purpose
+CareerLaunch の 060.integration 配下を一覧する。
+
+## Children
+- 0600001_CAREER_LAUNCH_INTEGRATION_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/0600000_INTEGRATION_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/0600001_CAREER_LAUNCH_INTEGRATION_OVERVIEW.md -->
+# Integration Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 060.integration
+## Purpose
+求人票貼り付け、出力、共有、将来連携の境界を定義する。
+
+## Coverage
+- 入力
+- 出力
+- 共有
+- 将来連携
+- 非連携
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/060.integration/0600001_CAREER_LAUNCH_INTEGRATION_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md -->
+# 0700002 OPERATIONS CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0700003_OPERATIONS_CORE_OVERVIEW.md
+- 0700004_CAREER_LAUNCH_OPERATIONS_GUIDE.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/010.core/0700002_OPERATIONS_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md -->
+# Operations Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 070.operations
+## Purpose
+運用、通知、サポート、改訂管理、分析観点を定義する。
+
+## Coverage
+- 運用イベント
+- 通知
+- サポート
+- 改訂監査
+- 指標
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/010.core/0700003_OPERATIONS_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/010.core/0700004_CAREER_LAUNCH_OPERATIONS_GUIDE.md -->
+# CareerLaunch OPERATIONS GUIDE
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## Guide
+- 未完了 checklist の確認
+- interview schedule 監視
+- thank-you pending の確認
+- sync failure と export failure の再試行
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/010.core/0700004_CAREER_LAUNCH_OPERATIONS_GUIDE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200000_OPERATIONS_DETAIL_INDEX.md -->
+# 0700200000 OPERATIONS DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200000_OPERATIONS_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0700200001_CAREER_LAUNCH_OPERATIONS_DETAIL_OVERVIEW.md
+- 0700200002_CAREER_LAUNCH_OPERATING_RHYTHM.md
+- 0700200003_CAREER_LAUNCH_NOTIFICATION_AND_REVIEW_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200000_OPERATIONS_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200001_CAREER_LAUNCH_OPERATIONS_DETAIL_OVERVIEW.md -->
+# Operations Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 070.operations
+## Purpose
+運用、通知、サポート、改訂管理、分析観点を定義する。
+
+## Coverage
+- 運用イベント
+- 通知
+- サポート
+- 改訂監査
+- 指標
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200001_CAREER_LAUNCH_OPERATIONS_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200002_CAREER_LAUNCH_OPERATING_RHYTHM.md -->
+# CareerLaunch OPERATING RHYTHM
+## Rhythm
+- daily: upcoming interview / pending thank-you / sync failures
+- weekly: stalled applications / revision cleanup
+- monthly: template review / pricing and localization review
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200002_CAREER_LAUNCH_OPERATING_RHYTHM.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200003_CAREER_LAUNCH_NOTIFICATION_AND_REVIEW_POLICY.md -->
+# CareerLaunch NOTIFICATION AND REVIEW POLICY
+## Policy
+- 面接前通知は user configurable
+- review requests are explicit and revocable
+- coach comment arrival should be visible in app
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/020.detail/0700200003_CAREER_LAUNCH_NOTIFICATION_AND_REVIEW_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300000_RUNBOOK_INDEX.md -->
+# 0700300000 RUNBOOK INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300000_RUNBOOK_INDEX.md
+## Purpose
+CareerLaunch の 030.runbook 配下を一覧する。
+
+## Children
+- 0700300001_CAREER_LAUNCH_RUNBOOK_OVERVIEW.md
+- 0700300002_CAREER_LAUNCH_DAILY_WEEKLY_MONTHLY_RUNBOOK.md
+- 0700300003_CAREER_LAUNCH_ISSUE_CLEANUP_RUNBOOK.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300000_RUNBOOK_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300001_CAREER_LAUNCH_RUNBOOK_OVERVIEW.md -->
+# Runbook Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 070.operations
+## Purpose
+運用、通知、サポート、改訂管理、分析観点を定義する。
+
+## Coverage
+- 運用イベント
+- 通知
+- サポート
+- 改訂監査
+- 指標
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300001_CAREER_LAUNCH_RUNBOOK_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300002_CAREER_LAUNCH_DAILY_WEEKLY_MONTHLY_RUNBOOK.md -->
+# CareerLaunch DAILY WEEKLY MONTHLY RUNBOOK
+## Runbook
+- daily: refresh reminders and failed sync retry review
+- weekly: stale draft and revision review
+- monthly: plan / pricing / localization sanity check
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300002_CAREER_LAUNCH_DAILY_WEEKLY_MONTHLY_RUNBOOK.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300003_CAREER_LAUNCH_ISSUE_CLEANUP_RUNBOOK.md -->
+# CareerLaunch ISSUE CLEANUP RUNBOOK
+## Cleanup
+- orphaned draft cleanup
+- failed export retry cleanup
+- revoked share cleanup
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/030.runbook/0700300003_CAREER_LAUNCH_ISSUE_CLEANUP_RUNBOOK.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/0700000_OPERATIONS_INDEX.md -->
+# 0700000 OPERATIONS INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/0700000_OPERATIONS_INDEX.md
+## Purpose
+CareerLaunch の 070.operations 配下を一覧する。
+
+## Children
+- 0700001_CAREER_LAUNCH_OPERATIONS_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/0700000_OPERATIONS_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/0700001_CAREER_LAUNCH_OPERATIONS_OVERVIEW.md -->
+# Operations Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 070.operations
+## Purpose
+運用、通知、サポート、改訂管理、分析観点を定義する。
+
+## Coverage
+- 運用イベント
+- 通知
+- サポート
+- 改訂監査
+- 指標
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/070.operations/0700001_CAREER_LAUNCH_OPERATIONS_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800002_POLICY_CORE_INDEX.md -->
+# 0800002 POLICY CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800002_POLICY_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0800003_POLICY_CORE_OVERVIEW.md
+- 0800004_CAREER_LAUNCH_POLICY_SET.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800002_POLICY_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md -->
+# Policy Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 080.policy
+## Purpose
+プロダクト方針、多言語、多通貨、AI支援、品質境界を定義する。
+
+## Coverage
+- 品質方針
+- AI補助境界
+- 多言語
+- 多通貨
+- 共有方針
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800003_POLICY_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800004_CAREER_LAUNCH_POLICY_SET.md -->
+# CareerLaunch POLICY SET
+## Policy set
+- product policy
+- AI assist boundary
+- sharing/export policy
+- pricing / feature tier policy
+- disclaimer text policy
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/010.core/0800004_CAREER_LAUNCH_POLICY_SET.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200000_POLICY_DETAIL_INDEX.md -->
+# 0800200000 POLICY DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200000_POLICY_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0800200001_CAREER_LAUNCH_POLICY_DETAIL_OVERVIEW.md
+- 0800200002_CAREER_LAUNCH_AI_LEGAL_BOUNDARY_POLICY.md
+- 0800200003_CAREER_LAUNCH_SHARING_AND_EXPORT_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200000_POLICY_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200001_CAREER_LAUNCH_POLICY_DETAIL_OVERVIEW.md -->
+# Policy Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 080.policy
+## Purpose
+プロダクト方針、多言語、多通貨、AI支援、品質境界を定義する。
+
+## Coverage
+- 品質方針
+- AI補助境界
+- 多言語
+- 多通貨
+- 共有方針
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200001_CAREER_LAUNCH_POLICY_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200002_CAREER_LAUNCH_AI_LEGAL_BOUNDARY_POLICY.md -->
+# CareerLaunch AI ASSIST BOUNDARY POLICY
+## AI boundary
+- assistive drafting allowed
+- fake experience generation not allowed
+- real-time interview stealth assistance is not the product goal
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200002_CAREER_LAUNCH_AI_LEGAL_BOUNDARY_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200003_CAREER_LAUNCH_SHARING_AND_EXPORT_POLICY.md -->
+# CareerLaunch SHARING AND EXPORT POLICY
+## Sharing/export
+- share scope must be explicit
+- export uses frozen revision
+- owner confirms send actions
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/020.detail/0800200003_CAREER_LAUNCH_SHARING_AND_EXPORT_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300000_PRICING_AND_DISCLAIMER_INDEX.md -->
+# 0800300000 PRICING AND DISCLAIMER INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300000_PRICING_AND_DISCLAIMER_INDEX.md
+## Purpose
+CareerLaunch の 030.pricing-and-disclaimer 配下を一覧する。
+
+## Children
+- 0800300001_CAREER_LAUNCH_PRICING_POLICY.md
+- 0800300002_CAREER_LAUNCH_FEATURE_TIER_POLICY.md
+- 0800300003_CAREER_LAUNCH_DISCLAIMER_TEXT_POLICY.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300000_PRICING_AND_DISCLAIMER_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300001_CAREER_LAUNCH_PRICING_POLICY.md -->
+# CareerLaunch PRICING POLICY
+## Billing type
+monthly subscription app
+
+## Plans
+- Free: 0円。基本文書作成、応募件数制限、基本テンプレート、基本チェックリスト
+- Pro: 月額500円。求人別最適化、応募管理、面接準備、PDF/DOCX出力
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300001_CAREER_LAUNCH_PRICING_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300002_CAREER_LAUNCH_FEATURE_TIER_POLICY.md -->
+# CareerLaunch FEATURE TIER POLICY
+## Tier notes
+- owner の基本導線は Free でも成立させる
+- 求人別最適化と出力は Pro の主要価値
+- 価格正本は Free / Pro の2プランとする
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300002_CAREER_LAUNCH_FEATURE_TIER_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300003_CAREER_LAUNCH_DISCLAIMER_TEXT_POLICY.md -->
+# CareerLaunch DISCLAIMER TEXT POLICY
+## Disclaimer stance
+- 本アプリは応募実行支援ツールであり、採用可否を保証しない。
+- AI提案は必ず本人確認・編集を前提とする。
+- 求人票原文と最終提出書類はユーザー確認を前提とする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/030.pricing-and-disclaimer/0800300003_CAREER_LAUNCH_DISCLAIMER_TEXT_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/0800000_POLICY_INDEX.md -->
+# 0800000 POLICY INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/0800000_POLICY_INDEX.md
+## Purpose
+CareerLaunch の 080.policy 配下を一覧する。
+
+## Children
+- 0800001_CAREER_LAUNCH_POLICY_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/0800000_POLICY_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/0800001_CAREER_LAUNCH_POLICY_OVERVIEW.md -->
+# Policy Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 080.policy
+## Purpose
+プロダクト方針、多言語、多通貨、AI支援、品質境界を定義する。
+
+## Coverage
+- 品質方針
+- AI補助境界
+- 多言語
+- 多通貨
+- 共有方針
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/080.policy/0800001_CAREER_LAUNCH_POLICY_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md -->
+# 0900002 INTERFACE CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 0900003_INTERFACE_CORE_OVERVIEW.md
+- 0900004_CAREER_LAUNCH_INTERFACE_SPEC.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/010.core/0900002_INTERFACE_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md -->
+# Interface Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 090.interface
+## Purpose
+画面一覧、遷移、画面項目、マルチプラットフォームUI方針を定義する。
+
+## Coverage
+- 画面一覧
+- 遷移
+- 主要操作
+- プラットフォーム差分
+- ペルソナ表示
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/010.core/0900003_INTERFACE_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/010.core/0900004_CAREER_LAUNCH_INTERFACE_SPEC.md -->
+# CareerLaunch INTERFACE SPEC
+## Spec
+- dashboard, list, detail, editor, interview, post-interview, settings を正式画面とする。
+- desktop/tablet は 2-pane / side panel を許容する。
+- mobile は just-before mode と quick note を重視する。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/010.core/0900004_CAREER_LAUNCH_INTERFACE_SPEC.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200000_INTERFACE_DETAIL_INDEX.md -->
+# 0900200000 INTERFACE DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200000_INTERFACE_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 0900200001_CAREER_LAUNCH_INTERFACE_DETAIL_OVERVIEW.md
+- 0900200002_CAREER_LAUNCH_SCREEN_CATALOG.md
+- 0900200003_CAREER_LAUNCH_SCREEN_TRANSITION_RULES.md
+- 0900200004_CAREER_LAUNCH_LIST_AND_DETAIL_PRESENTATION_RULES.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200000_INTERFACE_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200001_CAREER_LAUNCH_INTERFACE_DETAIL_OVERVIEW.md -->
+# Interface Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 090.interface
+## Purpose
+画面一覧、遷移、画面項目、マルチプラットフォームUI方針を定義する。
+
+## Coverage
+- 画面一覧
+- 遷移
+- 主要操作
+- プラットフォーム差分
+- ペルソナ表示
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200001_CAREER_LAUNCH_INTERFACE_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200002_CAREER_LAUNCH_SCREEN_CATALOG.md -->
+# CareerLaunch SCREEN CATALOG
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## Catalog
+- dashboard
+- applications list
+- application detail
+- document workspace
+- interview prep
+- just-before mode
+- post interview
+- share
+- settings
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200002_CAREER_LAUNCH_SCREEN_CATALOG.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200003_CAREER_LAUNCH_SCREEN_TRANSITION_RULES.md -->
+# CareerLaunch SCREEN TRANSITION RULES
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## Rules
+- application detail is central navigation node
+- document workspace and interview prep are reachable from application detail
+- post interview screen opens from completed interview state
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200003_CAREER_LAUNCH_SCREEN_TRANSITION_RULES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200004_CAREER_LAUNCH_LIST_AND_DETAIL_PRESENTATION_RULES.md -->
+# CareerLaunch LIST AND DETAIL PRESENTATION RULES
+## Presentation rules
+- PC/tablet list-detail split preferred
+- mobile stacked detail preferred
+- status / checklist progress / sync state are always visible
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/020.detail/0900200004_CAREER_LAUNCH_LIST_AND_DETAIL_PRESENTATION_RULES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300000_SCREEN_FIELD_INDEX.md -->
+# 0900300000 SCREEN FIELD INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300000_SCREEN_FIELD_INDEX.md
+## Purpose
+CareerLaunch の 030.screen-fields 配下を一覧する。
+
+## Children
+- 0900300001_CAREER_LAUNCH_SCREEN_FIELD_OVERVIEW.md
+- 0900300002_CAREER_LAUNCH_DASHBOARD_SCREEN_FIELDS.md
+- 0900300003_CAREER_LAUNCH_LEGAL_ISSUE_LIST_AND_DETAIL_FIELDS.md
+- 0900300004_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_SCREEN_FIELDS.md
+- 0900300005_CAREER_LAUNCH_CONSULTATION_AND_SHARE_SCREEN_FIELDS.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300000_SCREEN_FIELD_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300001_CAREER_LAUNCH_SCREEN_FIELD_OVERVIEW.md -->
+# Screen Field Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 090.interface
+## Purpose
+画面一覧、遷移、画面項目、マルチプラットフォームUI方針を定義する。
+
+## Coverage
+- 画面一覧
+- 遷移
+- 主要操作
+- プラットフォーム差分
+- ペルソナ表示
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300001_CAREER_LAUNCH_SCREEN_FIELD_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300002_CAREER_LAUNCH_DASHBOARD_SCREEN_FIELDS.md -->
+# CareerLaunch DASHBOARD SCREEN FIELDS
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## dashboard
+- upcoming interview
+- pending thank-you
+- stalled applications
+- persona
+- background
+- sync state
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300002_CAREER_LAUNCH_DASHBOARD_SCREEN_FIELDS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300003_CAREER_LAUNCH_LEGAL_ISSUE_LIST_AND_DETAIL_FIELDS.md -->
+# CareerLaunch APPLICATION LIST AND DETAIL FIELDS
+## applications list/detail
+- company
+- job title
+- status
+- applied_at
+- interview_at
+- result_at
+- bundle version
+- thank_you_status
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300003_CAREER_LAUNCH_LEGAL_ISSUE_LIST_AND_DETAIL_FIELDS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300004_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_SCREEN_FIELDS.md -->
+# CareerLaunch DOCUMENT AND INTERVIEW SCREEN FIELDS
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## document/interview
+- document type
+- revision
+- requirement highlights
+- expected questions
+- answer notes
+- day-of checklist
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300004_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_SCREEN_FIELDS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300005_CAREER_LAUNCH_CONSULTATION_AND_SHARE_SCREEN_FIELDS.md -->
+# CareerLaunch SHARE AND SETTINGS SCREEN FIELDS
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+## share/settings
+- recipient
+- role
+- scope
+- comments
+- language
+- currency
+- persona
+- background
+- lightweight mode
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/030.screen-fields/0900300005_CAREER_LAUNCH_CONSULTATION_AND_SHARE_SCREEN_FIELDS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/0900000_INTERFACE_INDEX.md -->
+# 0900000 INTERFACE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/0900000_INTERFACE_INDEX.md
+## Purpose
+CareerLaunch の 090.interface 配下を一覧する。
+
+## Children
+- 0900001_CAREER_LAUNCH_INTERFACE_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/0900000_INTERFACE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/0900001_CAREER_LAUNCH_INTERFACE_OVERVIEW.md -->
+# Interface Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 090.interface
+## Purpose
+画面一覧、遷移、画面項目、マルチプラットフォームUI方針を定義する。
+
+## Coverage
+- 画面一覧
+- 遷移
+- 主要操作
+- プラットフォーム差分
+- ペルソナ表示
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/090.interface/0900001_CAREER_LAUNCH_INTERFACE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/010.core/1000002_SECURITY_CORE_INDEX.md -->
+# 1000002 SECURITY CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/010.core/1000002_SECURITY_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 1000003_SECURITY_CORE_OVERVIEW.md
+- 1000004_CAREER_LAUNCH_SECURITY_MODEL.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/010.core/1000002_SECURITY_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md -->
+# Security Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 100.security
+## Purpose
+アクセス制御、共有範囲、データ分類、エクスポート保護を定義する。
+
+## Coverage
+- ロール
+- 共有
+- 保護
+- 分類
+- 監査
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/010.core/1000003_SECURITY_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/010.core/1000004_CAREER_LAUNCH_SECURITY_MODEL.md -->
+# CareerLaunch SECURITY MODEL
+## Core security model
+- owner default private
+- share is explicit and revocable
+- export is permission-checked
+- document revisions remain traceable
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/010.core/1000004_CAREER_LAUNCH_SECURITY_MODEL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200000_ACCESS_CONTROL_INDEX.md -->
+# 1000200000 ACCESS CONTROL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200000_ACCESS_CONTROL_INDEX.md
+## Purpose
+CareerLaunch の 020.access-control 配下を一覧する。
+
+## Children
+- 1000200001_CAREER_LAUNCH_ACCESS_CONTROL_OVERVIEW.md
+- 1000200002_CAREER_LAUNCH_ROLE_AND_PERMISSION_MATRIX.md
+- 1000200003_CAREER_LAUNCH_OWNER_AND_ADVISOR_SCOPE_RULES.md
+- 1000200004_CAREER_LAUNCH_VISIBILITY_AND_SOFT_DELETE_RULES.md
+- 1000200005_CAREER_LAUNCH_EXPORT_AND_SHARE_ACCESS_POLICY.md
+- 1000200006_CAREER_LAUNCH_RLS_READINESS_NOTES.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200000_ACCESS_CONTROL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200001_CAREER_LAUNCH_ACCESS_CONTROL_OVERVIEW.md -->
+# Access Control Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 100.security
+## Purpose
+アクセス制御、共有範囲、データ分類、エクスポート保護を定義する。
+
+## Coverage
+- ロール
+- 共有
+- 保護
+- 分類
+- 監査
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200001_CAREER_LAUNCH_ACCESS_CONTROL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200002_CAREER_LAUNCH_ROLE_AND_PERMISSION_MATRIX.md -->
+# CareerLaunch ROLE AND PERMISSION MATRIX
+## Roles
+- owner: full read/write/export/share/revoke
+- advisor_viewer: read shared scope only
+- coach_editor: read shared scope + comment/propose edits
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200002_CAREER_LAUNCH_ROLE_AND_PERMISSION_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200003_CAREER_LAUNCH_OWNER_AND_ADVISOR_SCOPE_RULES.md -->
+# CareerLaunch OWNER AND ADVISOR SCOPE RULES
+## Rules
+- owner data is private unless shared
+- advisor_viewer cannot modify source documents
+- coach_editor comments do not overwrite owner source of truth
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200003_CAREER_LAUNCH_OWNER_AND_ADVISOR_SCOPE_RULES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200004_CAREER_LAUNCH_VISIBILITY_AND_SOFT_DELETE_RULES.md -->
+# CareerLaunch VISIBILITY AND SOFT DELETE RULES
+## Visibility
+- soft-deleted rows are hidden from normal UI
+- owner can restore within retention window
+- shared viewers never see soft-deleted drafts by default
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200004_CAREER_LAUNCH_VISIBILITY_AND_SOFT_DELETE_RULES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200005_CAREER_LAUNCH_EXPORT_AND_SHARE_ACCESS_POLICY.md -->
+# CareerLaunch EXPORT AND SHARE ACCESS POLICY
+## Policy
+- export requires owner or explicit export permission
+- shared comments cannot trigger automatic external send
+- thank-you send confirmation remains owner-controlled
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200005_CAREER_LAUNCH_EXPORT_AND_SHARE_ACCESS_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200006_CAREER_LAUNCH_RLS_READINESS_NOTES.md -->
+# CareerLaunch RLS READINESS NOTES
+## Readiness notes
+- all tables should be filterable by owner user_id
+- shared resources require join through advisor_share
+- revision history should not leak across users
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/020.access-control/1000200006_CAREER_LAUNCH_RLS_READINESS_NOTES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300000_DATA_CLASSIFICATION_INDEX.md -->
+# 1000300000 DATA CLASSIFICATION INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300000_DATA_CLASSIFICATION_INDEX.md
+## Purpose
+CareerLaunch の 030.data-classification 配下を一覧する。
+
+## Children
+- 1000300001_CAREER_LAUNCH_DATA_CLASSIFICATION_OVERVIEW.md
+- 1000300002_CAREER_LAUNCH_DATA_SENSITIVITY_MATRIX.md
+- 1000300003_CAREER_LAUNCH_ATTACHMENT_HANDLING_CLASSIFICATION.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300000_DATA_CLASSIFICATION_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300001_CAREER_LAUNCH_DATA_CLASSIFICATION_OVERVIEW.md -->
+# Data Classification Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 100.security
+## Purpose
+アクセス制御、共有範囲、データ分類、エクスポート保護を定義する。
+
+## Coverage
+- ロール
+- 共有
+- 保護
+- 分類
+- 監査
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300001_CAREER_LAUNCH_DATA_CLASSIFICATION_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300002_CAREER_LAUNCH_DATA_SENSITIVITY_MATRIX.md -->
+# CareerLaunch DATA SENSITIVITY MATRIX
+## Sensitivity
+- high: personal profile, job history, compensation expectation, interview notes
+- medium: job posting paste, company notes, checklist states
+- lower: template catalogs, localization labels
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300002_CAREER_LAUNCH_DATA_SENSITIVITY_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300003_CAREER_LAUNCH_ATTACHMENT_HANDLING_CLASSIFICATION.md -->
+# CareerLaunch ATTACHMENT HANDLING CLASSIFICATION
+## Attachment policy
+- 履歴書 PDF / DOCX は generated artifact 扱い
+- 画像添付が将来導入されても profile photo 等は高感度扱い
+- 不要な原本保持を避ける
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/030.data-classification/1000300003_CAREER_LAUNCH_ATTACHMENT_HANDLING_CLASSIFICATION.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/1000000_SECURITY_INDEX.md -->
+# 1000000 SECURITY INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/1000000_SECURITY_INDEX.md
+## Purpose
+CareerLaunch の 100.security 配下を一覧する。
+
+## Children
+- 1000001_CAREER_LAUNCH_SECURITY_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/1000000_SECURITY_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/1000001_CAREER_LAUNCH_SECURITY_OVERVIEW.md -->
+# Security Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 100.security
+## Purpose
+アクセス制御、共有範囲、データ分類、エクスポート保護を定義する。
+
+## Coverage
+- ロール
+- 共有
+- 保護
+- 分類
+- 監査
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/100.security/1000001_CAREER_LAUNCH_SECURITY_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md -->
+# 1100002 INFRASTRUCTURE CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 1100003_INFRASTRUCTURE_CORE_OVERVIEW.md
+- 1100004_CAREER_LAUNCH_INFRASTRUCTURE_PROFILE.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/010.core/1100002_INFRASTRUCTURE_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md -->
+# Infrastructure Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 110.infrastructure
+## Purpose
+ローカル保存、同期、ファイル出力、ジョブ実行前提を定義する。
+
+## Coverage
+- 保存
+- 同期
+- ジョブ
+- ファイル
+- 通知
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/010.core/1100003_INFRASTRUCTURE_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/010.core/1100004_CAREER_LAUNCH_INFRASTRUCTURE_PROFILE.md -->
+# CareerLaunch INFRASTRUCTURE PROFILE
+## Profile
+- mobile local storage + sync queue
+- server-side life schema persistence
+- export worker for pdf/docx
+- notification scheduler
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/010.core/1100004_CAREER_LAUNCH_INFRASTRUCTURE_PROFILE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200000_INFRASTRUCTURE_DETAIL_INDEX.md -->
+# 1100200000 INFRASTRUCTURE DETAIL INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200000_INFRASTRUCTURE_DETAIL_INDEX.md
+## Purpose
+CareerLaunch の 020.detail 配下を一覧する。
+
+## Children
+- 1100200001_CAREER_LAUNCH_INFRASTRUCTURE_DETAIL_OVERVIEW.md
+- 1100200002_CAREER_LAUNCH_STORAGE_AND_FILE_HANDLING_ASSUMPTIONS.md
+- 1100200003_CAREER_LAUNCH_NOTIFICATION_AND_JOB_ASSUMPTIONS.md
+- 1100200004_CAREER_LAUNCH_MULTI_DEVICE_ASSUMPTIONS.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200000_INFRASTRUCTURE_DETAIL_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200001_CAREER_LAUNCH_INFRASTRUCTURE_DETAIL_OVERVIEW.md -->
+# Infrastructure Detail Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 110.infrastructure
+## Purpose
+ローカル保存、同期、ファイル出力、ジョブ実行前提を定義する。
+
+## Coverage
+- 保存
+- 同期
+- ジョブ
+- ファイル
+- 通知
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200001_CAREER_LAUNCH_INFRASTRUCTURE_DETAIL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200002_CAREER_LAUNCH_STORAGE_AND_FILE_HANDLING_ASSUMPTIONS.md -->
+# CareerLaunch STORAGE AND FILE HANDLING ASSUMPTIONS
+## Storage assumptions
+- drafts can exist locally before server ids are assigned
+- exports are reproducible from revision snapshot
+- temporary files should be disposable
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200002_CAREER_LAUNCH_STORAGE_AND_FILE_HANDLING_ASSUMPTIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200003_CAREER_LAUNCH_NOTIFICATION_AND_JOB_ASSUMPTIONS.md -->
+# CareerLaunch NOTIFICATION AND JOB ASSUMPTIONS
+## Job assumptions
+- reminder schedule can be recalculated from application state
+- export jobs are asynchronous but user-visible in status
+- failed jobs are retryable and inspectable
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200003_CAREER_LAUNCH_NOTIFICATION_AND_JOB_ASSUMPTIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200004_CAREER_LAUNCH_MULTI_DEVICE_ASSUMPTIONS.md -->
+# CareerLaunch MULTI DEVICE ASSUMPTIONS
+## Multi-device
+- PC / tablet prioritize editor density
+- mobile prioritizes quick capture and just-before mode
+- persona/background settings should roam across devices
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/020.detail/1100200004_CAREER_LAUNCH_MULTI_DEVICE_ASSUMPTIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md -->
+# 1100000 INFRASTRUCTURE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md
+## Purpose
+CareerLaunch の 110.infrastructure 配下を一覧する。
+
+## Children
+- 1100001_CAREER_LAUNCH_INFRASTRUCTURE_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/1100000_INFRASTRUCTURE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/1100001_CAREER_LAUNCH_INFRASTRUCTURE_OVERVIEW.md -->
+# Infrastructure Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 110.infrastructure
+## Purpose
+ローカル保存、同期、ファイル出力、ジョブ実行前提を定義する。
+
+## Coverage
+- 保存
+- 同期
+- ジョブ
+- ファイル
+- 通知
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/110.infrastructure/1100001_CAREER_LAUNCH_INFRASTRUCTURE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md -->
+# 1200002 IMPLEMENTATION CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 1200003_IMPLEMENTATION_CORE_OVERVIEW.md
+- 1200004_CAREER_LAUNCH_IMPLEMENTATION_PLAN.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200002_IMPLEMENTATION_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md -->
+# Implementation Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 120.implementation
+## Purpose
+API payload、固定済み事項、後続実装境界を定義する。
+
+## Coverage
+- API境界
+- payload固定
+- 未実装事項
+- phase境界
+- 受入条件
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200003_IMPLEMENTATION_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200004_CAREER_LAUNCH_IMPLEMENTATION_PLAN.md -->
+# CareerLaunch IMPLEMENTATION PLAN
+## Ready-to-build targets
+- fixed domain entities
+- fixed logical tables
+- fixed payload shapes for profile, job posting, application, interview, export/share
+- fixed UI inventory and fields
+- fixed phase boundary
+
+## Not doing here
+Android / iOS / web actual implementation, SQL DDL execution, API server coding.
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/010.core/1200004_CAREER_LAUNCH_IMPLEMENTATION_PLAN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200000_PAYLOAD_DESIGN_INDEX.md -->
+# 1200200000 PAYLOAD DESIGN INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200000_PAYLOAD_DESIGN_INDEX.md
+## Purpose
+CareerLaunch の 020.payload 配下を一覧する。
+
+## Children
+- 1200200001_CAREER_LAUNCH_PAYLOAD_OVERVIEW.md
+- 1200200002_CAREER_LAUNCH_LEGAL_ISSUE_PAYLOAD.md
+- 1200200003_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_PAYLOAD.md
+- 1200200004_CAREER_LAUNCH_RISK_AND_CONSULTATION_PAYLOAD.md
+- 1200200005_CAREER_LAUNCH_SUMMARY_EXPORT_AND_HANDOFF_PAYLOAD.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200000_PAYLOAD_DESIGN_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200001_CAREER_LAUNCH_PAYLOAD_OVERVIEW.md -->
+# Payload Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 120.implementation
+## Purpose
+API payload、固定済み事項、後続実装境界を定義する。
+
+## Coverage
+- API境界
+- payload固定
+- 未実装事項
+- phase境界
+- 受入条件
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200001_CAREER_LAUNCH_PAYLOAD_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200002_CAREER_LAUNCH_LEGAL_ISSUE_PAYLOAD.md -->
+# CareerLaunch CAREER PROFILE PAYLOAD
+## Career profile payload
+```json
+{
+  "profile_id": "uuid",
+  "headline": "法人営業 8年 / SaaS・無形商材",
+  "career_summary": "営業、提案、既存深耕、マネジメント補佐の経験を要約する。",
+  "desired_compensation": {
+    "amount": 6500000,
+    "currency": "JPY"
+  },
+  "primary_locale": "ja-JP",
+  "strength_items": [
+    {
+      "id": "uuid",
+      "title": "課題発見力",
+      "evidence": "既存顧客売上を前年比135%へ改善"
+    },
+    {
+      "id": "uuid",
+      "title": "提案構成力",
+      "evidence": "大型提案の受注率向上"
+    }
+  ],
+  "reason_items": [
+    {
+      "id": "uuid",
+      "category": "forward-looking",
+      "text": "より上流の提案と事業理解を深めたい"
+    }
+  ]
+}
+```
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200002_CAREER_LAUNCH_LEGAL_ISSUE_PAYLOAD.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200003_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_PAYLOAD.md -->
+# CareerLaunch JOB POSTING AND APPLICATION PAYLOAD
+## Job posting and application payload
+```json
+{
+  "application_id": "uuid",
+  "company": {
+    "id": "uuid",
+    "name": "Example Inc."
+  },
+  "job_posting_id": "uuid",
+  "status": "面接予定",
+  "applied_at": "2026-04-15T09:00:00+09:00",
+  "document_bundle_id": "uuid",
+  "interview_at": "2026-04-20T13:00:00+09:00",
+  "thank_you_status": "not_sent",
+  "checklists": {
+    "pre_application": {
+      "completed": 7,
+      "total": 7
+    },
+    "pre_interview": {
+      "completed": 8,
+      "total": 10
+    },
+    "post_interview": {
+      "completed": 0,
+      "total": 6
+    }
+  }
+}
+```
+
+## Job posting paste payload
+```json
+{
+  "job_posting_id": "uuid",
+  "source_url": "https://example.com/jobs/123",
+  "job_title": "カスタマーサクセス",
+  "company_name": "Example Inc.",
+  "posting_language": "ja",
+  "compensation_currency": "JPY",
+  "posting_body": "求人票全文...",
+  "must_requirements": [
+    "SaaS経験",
+    "法人折衝経験"
+  ],
+  "preferred_requirements": [
+    "英語",
+    "CS Ops経験"
+  ],
+  "ats_keywords": [
+    "オンボーディング",
+    "アップセル",
+    "定着率改善"
+  ]
+}
+```
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200003_CAREER_LAUNCH_CONTRACT_AND_DEADLINE_PAYLOAD.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200004_CAREER_LAUNCH_RISK_AND_CONSULTATION_PAYLOAD.md -->
+# CareerLaunch INTERVIEW AND FOLLOWUP PAYLOAD
+## Interview and follow-up payload
+```json
+{
+  "interview_plan_id": "uuid",
+  "application_id": "uuid",
+  "company_research_note": "SaaSの継続率改善が中核テーマ。",
+  "expected_questions": [
+    {
+      "type": "common",
+      "question": "自己紹介をお願いします"
+    },
+    {
+      "type": "deep-dive",
+      "question": "前職の改善施策で一番苦労した点は何ですか"
+    }
+  ],
+  "answer_notes": [
+    {
+      "question_ref": "1",
+      "summary_30sec": "営業8年、既存深耕と新規提案の経験..."
+    }
+  ],
+  "reverse_questions": [
+    "入社後90日の期待値を教えてください"
+  ],
+  "day_of_checklist": [
+    "URL確認",
+    "服装確認",
+    "要約確認"
+  ]
+}
+```
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200004_CAREER_LAUNCH_RISK_AND_CONSULTATION_PAYLOAD.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200005_CAREER_LAUNCH_SUMMARY_EXPORT_AND_HANDOFF_PAYLOAD.md -->
+# CareerLaunch EXPORT AND SHARE PAYLOAD
+## Export/share payload
+```json
+{
+  "export_job_id": "uuid",
+  "document_asset_id": "uuid",
+  "format": "pdf",
+  "locale": "ja-JP",
+  "template_key": "jp-standard-rirekisho-v2",
+  "status": "queued"
+}
+```
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/020.payload/1200200005_CAREER_LAUNCH_SUMMARY_EXPORT_AND_HANDOFF_PAYLOAD.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300000_PHASE_BOUNDARY_INDEX.md -->
+# 1200300000 PHASE BOUNDARY INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300000_PHASE_BOUNDARY_INDEX.md
+## Purpose
+CareerLaunch の 030.phase-boundary 配下を一覧する。
+
+## Children
+- 1200300001_CAREER_LAUNCH_PHASE_BOUNDARY_OVERVIEW.md
+- 1200300002_CAREER_LAUNCH_WHAT_IS_FIXED_NOW.md
+- 1200300003_CAREER_LAUNCH_WHAT_IS_DEFERRED.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300000_PHASE_BOUNDARY_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300001_CAREER_LAUNCH_PHASE_BOUNDARY_OVERVIEW.md -->
+# Phase Boundary Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 120.implementation
+## Purpose
+API payload、固定済み事項、後続実装境界を定義する。
+
+## Coverage
+- API境界
+- payload固定
+- 未実装事項
+- phase境界
+- 受入条件
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300001_CAREER_LAUNCH_PHASE_BOUNDARY_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300002_CAREER_LAUNCH_WHAT_IS_FIXED_NOW.md -->
+# CareerLaunch WHAT IS FIXED NOW
+## Fixed now
+- scope and non-goals
+- life schema ownership
+- application-centered aggregate
+- statuses and document types
+- payload shapes
+- screen inventory and fields
+- persona/background requirements
+- billing tiers
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300002_CAREER_LAUNCH_WHAT_IS_FIXED_NOW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300003_CAREER_LAUNCH_WHAT_IS_DEFERRED.md -->
+# CareerLaunch WHAT IS DEFERRED
+## Deferred
+- actual SQL DDL
+- actual mobile/web client implementation
+- real export renderer implementation
+- full localization string files
+- actual billing gateway integration
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/030.phase-boundary/1200300003_CAREER_LAUNCH_WHAT_IS_DEFERRED.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/1200000_IMPLEMENTATION_INDEX.md -->
+# 1200000 IMPLEMENTATION INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/1200000_IMPLEMENTATION_INDEX.md
+## Purpose
+CareerLaunch の 120.implementation 配下を一覧する。
+
+## Children
+- 1200001_CAREER_LAUNCH_IMPLEMENTATION_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/1200000_IMPLEMENTATION_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/1200001_CAREER_LAUNCH_IMPLEMENTATION_OVERVIEW.md -->
+# Implementation Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 120.implementation
+## Purpose
+API payload、固定済み事項、後続実装境界を定義する。
+
+## Coverage
+- API境界
+- payload固定
+- 未実装事項
+- phase境界
+- 受入条件
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/120.implementation/1200001_CAREER_LAUNCH_IMPLEMENTATION_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md -->
+# 1300002 DEVELOPMENT CORE INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md
+## Purpose
+CareerLaunch の 010.core 配下を一覧する。
+
+## Children
+- 1300003_DEVELOPMENT_CORE_OVERVIEW.md
+- 1300004_CAREER_LAUNCH_DEVELOPMENT_ROADMAP.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300002_DEVELOPMENT_CORE_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md -->
+# Development Core Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+layer: 130.development
+## Purpose
+実装準備完了までのロードマップとレビュー観点を定義する。
+
+## Coverage
+- ロードマップ
+- レビュー
+- FIX済み
+- 保留
+- 次工程
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300003_DEVELOPMENT_CORE_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300004_CAREER_LAUNCH_DEVELOPMENT_ROADMAP.md -->
+# CareerLaunch DEVELOPMENT ROADMAP
+## Roadmap
+- Phase 1: constitution / architecture fixed
+- Phase 2: model / schema fixed
+- Phase 3: interface / flow fixed
+- Phase 4: payload fixed
+- Phase 5: review and handoff to implementation
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/010.core/1300004_CAREER_LAUNCH_DEVELOPMENT_ROADMAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200000_REVIEW_CHECKLIST_INDEX.md -->
+# 1300200000 REVIEW CHECKLIST INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200000_REVIEW_CHECKLIST_INDEX.md
+## Purpose
+CareerLaunch の 020.review-checklist 配下を一覧する。
+
+## Children
+- 1300200001_CAREER_LAUNCH_REVIEW_CHECKLIST_OVERVIEW.md
+- 1300200002_CAREER_LAUNCH_ARCHITECTURE_REVIEW_CHECKLIST.md
+- 1300200003_CAREER_LAUNCH_DATA_AND_API_REVIEW_CHECKLIST.md
+- 1300200004_CAREER_LAUNCH_POLICY_AND_SECURITY_REVIEW_CHECKLIST.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200000_REVIEW_CHECKLIST_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200001_CAREER_LAUNCH_REVIEW_CHECKLIST_OVERVIEW.md -->
+# Review Checklist Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+app: CareerLaunch
+layer: 130.development
+## Purpose
+実装準備完了までのロードマップとレビュー観点を定義する。
+
+## Coverage
+- ロードマップ
+- レビュー
+- FIX済み
+- 保留
+- 次工程
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200001_CAREER_LAUNCH_REVIEW_CHECKLIST_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200002_CAREER_LAUNCH_ARCHITECTURE_REVIEW_CHECKLIST.md -->
+# CareerLaunch ARCHITECTURE REVIEW CHECKLIST
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+## Checklist
+- aggregate root is explicit
+- offline and sync rules are explicit
+- source of truth is explicit
+- no hidden ERP dependency
+- persona/background presentation is placed
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200002_CAREER_LAUNCH_ARCHITECTURE_REVIEW_CHECKLIST.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200003_CAREER_LAUNCH_DATA_AND_API_REVIEW_CHECKLIST.md -->
+# CareerLaunch DATA AND API REVIEW CHECKLIST
+## Checklist
+- table candidates cover major use cases
+- payloads cover create/read/update flows
+- enum values are fixed
+- revision model is append-only where needed
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200003_CAREER_LAUNCH_DATA_AND_API_REVIEW_CHECKLIST.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200004_CAREER_LAUNCH_POLICY_AND_SECURITY_REVIEW_CHECKLIST.md -->
+# CareerLaunch POLICY AND SECURITY REVIEW CHECKLIST
+## Checklist
+- owner and share scopes are explicit
+- AI assist boundary is explicit
+- export/share control is explicit
+- sensitivity classification is explicit
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/020.review-checklist/1300200004_CAREER_LAUNCH_POLICY_AND_SECURITY_REVIEW_CHECKLIST.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/1300000_DEVELOPMENT_INDEX.md -->
+# 1300000 DEVELOPMENT INDEX
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+app: CareerLaunch
+path: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/1300000_DEVELOPMENT_INDEX.md
+## Purpose
+CareerLaunch の 130.development 配下を一覧する。
+
+## Children
+- 1300001_CAREER_LAUNCH_DEVELOPMENT_OVERVIEW.md
+
+## Notes
+index は構成の入口であり、overview は読順序、detail 文書は固定仕様を表す。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/1300000_DEVELOPMENT_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/1300001_CAREER_LAUNCH_DEVELOPMENT_OVERVIEW.md -->
+# Development Overview
+
+<!-- LIFE_COMMON_PERSONA_BACKGROUND_RULE -->
+# ============================================================
+# LIFE COMMON UI REQUIREMENT
+# ============================================================
+
+- 本アプリは Life 系共通要件として、画面上にペルソナおよび背景を表示する。
+- 表示中のペルソナおよび背景はユーザーが変更可能とする。
+- 仕様・振る舞い・変更導線・表示更新の考え方は PocketSecretary と同等とする。
+- 本要件は Life 系全アプリ共通の必須要件として扱う。
+
+
+app: CareerLaunch
+layer: 130.development
+## Purpose
+実装準備完了までのロードマップとレビュー観点を定義する。
+
+## Coverage
+- ロードマップ
+- レビュー
+- FIX済み
+- 保留
+- 次工程
+
+## Design stance
+CareerLaunch は 転職応募実行アシスタント として、求人票貼り付け方式、life スキーマ、マルチプラットフォーム、オフライン下書き、ペルソナ/背景表示を前提にする。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/130.development/1300001_CAREER_LAUNCH_DEVELOPMENT_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000000_CAREER_LAUNCH_COMMON_COMPONENT_CANDIDATES.md -->
+# CareerLaunch COMMON COMPONENT CANDIDATES
+## Strong candidates
+- Document Template Common: 履歴書 / 職務経歴書 / 志望動機 / 自己PR / お礼文のテンプレート骨格共通
+- Revision History Common: 文書比較、差分要約、提出版固定、復元の共通
+- Checklist Execution Common: pre_application / pre_interview / post_interview の共通実行器
+- Status Pipeline Common: 興味あり〜内定 / 見送り / 辞退のステータス管理共通
+- Offline Draft Queue Common: local save / pending sync / conflict visible の共通
+- Export Common: pdf/docx 出力ジョブと frozen snapshot 共通
+- Multilingual Label Common: UIラベルと文書テンプレートの言語切替共通
+- Multicurrency Display Common: amount + currency の表示・比較共通
+- Persona and Background Display Common: ペルソナ表示、背景表示、変更、軽量化の共通
+- Advisor Share Common: viewer / editor 権限共有、コメント導線、revocation 共通
+
+## Why now
+CareerLaunch は文書・応募・面接準備が混ざるため、上記共通部品を先に切り出す価値が高い。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000000_CAREER_LAUNCH_COMMON_COMPONENT_CANDIDATES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000001_CAREER_LAUNCH_CX22073_CANDIDATE_DATA_AREAS.md -->
+# CareerLaunch CX22073 CANDIDATE DATA AREAS
+## Candidate data areas
+- career_profile_area
+- resume_document_area
+- work_history_document_area
+- motivation_statement_area
+- self_promotion_area
+- job_posting_paste_area
+- application_tracking_area
+- interview_preparation_area
+- interview_session_note_area
+- thank_you_message_area
+- document_revision_history_area
+- advisor_share_area
+- persona_display_preference_area
+
+## Placement rationale
+- 応募実行全体を復元可能にするため、文書だけでなく application と interview の文脈も保存対象にする。
+- revision history と share state は後追い検証に有効。
+- persona/background setting も UI continuity として候補に含める。
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/04.life-app/CareerLaunch/9000001_CAREER_LAUNCH_CX22073_CANDIDATE_DATA_AREAS.md -->
+

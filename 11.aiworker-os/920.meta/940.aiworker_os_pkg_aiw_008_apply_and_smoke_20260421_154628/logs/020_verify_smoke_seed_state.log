@@ -1,0 +1,11 @@
+============================================================
+PKG-AIW-008 VERIFY SMOKE SEED STATE
+============================================================
+worker_master.smoke_count=2
+payload_document.smoke_count=4
+official_intake_request.smoke_count=1
+smoke_seed_registry.count=2
+smoke_flow_execution_log.count=0
+============================================================
+PKG-AIW-008 VERIFY SMOKE SEED STATE FINISHED
+============================================================

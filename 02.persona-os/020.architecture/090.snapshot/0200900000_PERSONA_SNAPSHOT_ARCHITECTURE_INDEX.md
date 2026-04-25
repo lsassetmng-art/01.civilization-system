@@ -1,6 +1,8 @@
-# PERSONA SNAPSHOT ARCHITECTURE INDEX
+# 0200900000_PERSONA_SNAPSHOT_ARCHITECTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 020.architecture/090.snapshot
 
 - 0200900001_PERSONA_SNAPSHOT_ARCHITECTURE_OVERVIEW.md
-- snapshot issuance architecture
-- snapshot immutability architecture
-- snapshot lineage architecture
+- 020.architecture/

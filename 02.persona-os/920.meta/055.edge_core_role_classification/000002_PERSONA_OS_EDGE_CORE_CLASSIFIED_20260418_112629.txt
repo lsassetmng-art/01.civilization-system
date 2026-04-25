@@ -1,0 +1,16 @@
+020.architecture/0200013_PERSONA_EDGE_ARCHITECTURE.md | core_edge | keep_as_family_anchor | edge family anchor document
+020.architecture/120.external_reflection/0201200_EXTERNAL_REFLECTION_INTAKE_ARCHITECTURE.md | external_intake_variant | treat_as_variant_intake_not_primary_truth_owner | external reflection or candidate intake oriented
+050.flow/120.external_reflection/0501200_EXTERNAL_CANDIDATE_INTAKE_FLOW.md | external_intake_variant | treat_as_variant_intake_not_primary_truth_owner | external reflection or candidate intake oriented
+060.integration/090.snapshot/0600900002_PERSONA_SNAPSHOT_RELEASE_INTEGRATION.md | snapshot_issue_boundary | treat_as_release_artifact_boundary | snapshot issue or release integration oriented
+100.security/103_PERSONA_SIGNATURE_VALIDATION_SECURITY.md | signing_trust | treat_as_trust_and_verification_boundary | signature or trust verification oriented
+110.infrastructure/1400002_PERSONA_EDGE_INFRASTRUCTURE.md | core_edge | keep_as_family_anchor | edge family anchor document
+120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md | core_edge | keep_as_family_anchor | edge family anchor document
+120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md | canonical_apply_boundary | treat_as_single_truth_mutation_boundary | explicit canonical apply truth mutation spec
+120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md | snapshot_issue_boundary | treat_as_release_artifact_boundary | snapshot issue or release integration oriented
+120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md | signing_trust | treat_as_trust_and_verification_boundary | signature or trust verification oriented
+120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md | signing_trust | treat_as_trust_and_verification_boundary | signature or trust verification oriented
+120.implementation/1200011_PERSONA_EVENT_INTAKE_TO_SNAPSHOT_PIPELINE_IMPLEMENTATION_RULE.md | dispatcher_orchestrator | treat_as_first_wave_orchestrator_not_truth_owner | intake, orchestration, or pipeline oriented
+120.implementation/1200013_PERSONA_EDGE_APPLY_CONCRETE_IMPLEMENTATION_BLOCK.md | dispatcher_orchestrator | treat_as_first_wave_orchestrator_not_truth_owner | intake, orchestration, or pipeline oriented
+120.implementation/1200014_PERSONA_EDGE_APPLY_BOUNDARY_AND_ERROR_ENFORCEMENT_BLOCK.md | dispatcher_orchestrator | treat_as_first_wave_orchestrator_not_truth_owner | intake, orchestration, or pipeline oriented
+120.implementation/1200015_PERSONA_EDGE_APPLY_IMPLEMENTATION_STARTER_SPEC.md | dispatcher_orchestrator | treat_as_first_wave_orchestrator_not_truth_owner | intake, orchestration, or pipeline oriented
+130.development/1300002_EDGE_DEVELOPMENT_GUIDE.md | core_edge | keep_as_family_anchor | edge family anchor document

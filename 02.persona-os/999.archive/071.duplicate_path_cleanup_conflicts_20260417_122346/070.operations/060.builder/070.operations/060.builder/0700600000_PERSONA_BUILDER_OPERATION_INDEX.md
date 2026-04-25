@@ -1,0 +1,8 @@
+# 0700600000_PERSONA_BUILDER_OPERATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 070.operations/060.builder/070.operations/060.builder
+
+- 0700600001_PERSONA_BUILDER_OPERATION_OVERVIEW.md
+- 0700600002_PERSONA_BUILDER_AUDIT_OPERATION.md

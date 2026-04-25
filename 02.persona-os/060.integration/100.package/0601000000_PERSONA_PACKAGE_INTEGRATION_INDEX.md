@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA PACKAGE INTEGRATION INDEX
-# ============================================================
+# 0601000000_PERSONA_PACKAGE_INTEGRATION_INDEX
 
-status: canonical
-layer: integration
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA PACKAGE INTEGRATION documents.
+directory: 060.integration/100.package
 
-# ============================================================
-# FILES
-# ============================================================
-
-0601000000_PERSONA_PACKAGE_INTEGRATION_INDEX.md
-0601000001_PERSONA_PACKAGE_INTEGRATION_OVERVIEW.md
-0601000002_PERSONA_PACKAGE_DELIVERY_INTEGRATION.md
+- 0601000001_PERSONA_PACKAGE_INTEGRATION_OVERVIEW.md
+- 0601000002_PERSONA_PACKAGE_DELIVERY_INTEGRATION.md
+- 060.integration/

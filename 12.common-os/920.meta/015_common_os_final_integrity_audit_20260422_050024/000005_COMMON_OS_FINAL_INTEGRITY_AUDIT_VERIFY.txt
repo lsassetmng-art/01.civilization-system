@@ -1,0 +1,8 @@
+PASS_COUNT=89
+FAIL_COUNT=0
+WARN_COUNT=0
+REPORT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/015_common_os_final_integrity_audit_20260422_050024/000001_COMMON_OS_FINAL_INTEGRITY_AUDIT_REPORT.md
+RESULT_TXT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/015_common_os_final_integrity_audit_20260422_050024/000002_COMMON_OS_FINAL_INTEGRITY_AUDIT_RESULT.txt
+MISSING_TXT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/015_common_os_final_integrity_audit_20260422_050024/000004_COMMON_OS_MISSING_ITEMS.txt
+TREE_FILE=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/015_common_os_final_integrity_audit_20260422_050024/000003_COMMON_OS_TREE_MAXDEPTH2.txt
+VERIFY=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/015_common_os_final_integrity_audit_20260422_050024/000005_COMMON_OS_FINAL_INTEGRITY_AUDIT_VERIFY.txt

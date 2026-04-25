@@ -1,0 +1,10 @@
+FIRST_WAVE_GATE_1: edge_apply must have fixed payload, code family, transition table, persistence touchpoints, and acceptance gate
+FIRST_WAVE_GATE_2: state_apply must have fixed pre_state, action_code, post_state, reject family, and audit linkage
+FIRST_WAVE_GATE_3: builder_api must have fixed request and response families and publish gate conditions
+FIRST_WAVE_GATE_4: builder_storage must have fixed status columns, linkage rules, and lineage-safe publish mapping
+SECOND_WAVE_GATE_1: runtime_session starts only after release-safe entry conditions are explicit
+SECOND_WAVE_GATE_2: visual_runtime starts only after released visual resolution inputs are explicit
+SECOND_WAVE_GATE_3: external_release starts only after immutable source and policy block rules are explicit
+GLOBAL_GATE_1: no DB or app implementation before exact payload review is accepted
+GLOBAL_GATE_2: no ambiguous status or error family may remain in first-wave docs
+GLOBAL_GATE_3: no hidden persistence write path may remain in implementation docs

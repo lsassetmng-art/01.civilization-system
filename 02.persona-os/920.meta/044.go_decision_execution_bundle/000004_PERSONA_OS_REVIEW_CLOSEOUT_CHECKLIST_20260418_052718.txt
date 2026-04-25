@@ -1,0 +1,7 @@
+CHECK_1=all implementation_target rows must have decision pass or pass_with_minor_fix
+CHECK_2=all control_row items must be reviewed explicitly
+CHECK_3=no blocker_status may remain open
+CHECK_4=edge_apply must be approved before state_apply start
+CHECK_5=state_apply must be approved before builder_api start
+CHECK_6=builder_api alignment with builder_storage must be confirmed
+CHECK_7=start_gate must be explicitly approved by human decision

@@ -1,0 +1,12 @@
+============================================================
+PKG-AIW-010 VERIFY RESTRICTED PRIVILEGED SMOKE STATE
+============================================================
+restricted_privileged_smoke_registry.count=1
+restricted_privileged_smoke_log.count=0
+latest_smoke.count=0
+restricted_policy.smoke_worker=1
+privileged_profile.smoke_worker=1
+exception_control.smoke_worker=1
+============================================================
+PKG-AIW-010 VERIFY RESTRICTED PRIVILEGED SMOKE STATE FINISHED
+============================================================

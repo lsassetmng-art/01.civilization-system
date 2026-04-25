@@ -1,0 +1,12 @@
+# COMMON OS DEVELOPMENT OVERVIEW
+
+status: canonical
+layer: development
+
+## Purpose
+This layer defines how CommonOS changes are proposed, reviewed, adopted, and introduced.
+
+## Scope
+- workflow
+- adoption review
+- change introduction policy

@@ -1,0 +1,9 @@
+edge_apply -> state_apply | validated inbound command must hand off to canonical apply
+builder_api -> builder_storage | authoring contract must map to stable draft persistence
+builder_api -> state_apply | publish or validation actions must use canonical truth transition
+builder_storage -> builder_api | builder persistence fields must satisfy API contract and status family
+state_apply -> runtime_session | runtime entry should consume already-fixed truth-side transitions
+state_apply -> visual_runtime | released or publishable state must precede runtime visual resolution
+state_apply -> external_release | external release must consume immutable or release-safe source state
+runtime_session -> visual_runtime | runtime host may require resolved released visual inputs
+external_release -> audit evidence | release result must preserve correlation and dispatch outcome

@@ -1,117 +1,5 @@
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER FULL INTEGRATED REGENERATED
-# ============================================================
 
-status: canonical-regenerated
-system: applications
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-This file is the regenerated full integrated document for ProductPortfolioManager.
-It concatenates the main design documents in navigation order
-so the whole design can be read from one file.
-
-regeneration_rules:
-- additive only
-- source files are not modified
-- scripts are excluded
-- tmp / generated helper files are excluded
-- this file is a reading bundle, not a new source of truth beyond the underlying files
-
-base_path:
-- /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER OVERVIEW
-# ============================================================
-
-status: canonical
-system: applications
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-ProductPortfolioManager is a lightweight product strategy judgment application.
-It helps organizations evaluate products,
-classify strategic importance,
-prepare actions,
-conduct reviews,
-handle approvals,
-and preserve decision history.
-
-core_definition:
-This application is not a mere product master UI.
-This application is not ERP itself.
-This application is not a heavy merchandise planning platform.
-This application is a product portfolio decision front.
-
-global_requirements:
-- multilingual support is mandatory
-- multi-currency support is mandatory
-- iphone support is mandatory
-- android support is mandatory
-- pc support is mandatory
-- tablet support is mandatory
-
-positioning_against_market:
-- lighter than heavy merchandise planning platforms
-- deeper in strategy judgment than PIM/PXM-centric tools
-- review- and approval-friendly for practical business use
-- suited for subscription-style application delivery
-
-core_capabilities:
-- product portfolio visibility
-- KPI and score-based evaluation
-- strategic classification
-- product action proposals
-- review session management
-- approval-oriented decision handling
-- alert and notification handling
-- audit and history visibility
-- ERP reference usage
-- forecast reference usage
-- multilingual / multi-currency display control
-- saved view presets and operator-facing settings
-
-source_of_truth_boundary:
-ERP owns:
-- product master identity
-- formal sales truth
-- formal cost truth
-- formal inventory truth
-- formal accounting truth
-
-ProductPortfolioManager owns:
-- portfolio scope
-- metric snapshots for judgment reproducibility
-- scoring
-- classification
-- proposals
-- reviews
-- approvals
-- alerts
-- audit/history
-- share scope
-- operator presentation preferences
-
-current_design_focus:
-- architecture-first
-- additive-only
-- no implementation yet
-- explicit business meaning and governance separation
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER INDEX
 # ============================================================
@@ -290,11 +178,144 @@ design_status_summary:
 - governance/policy/security design expanded
 - implementation not started
 
+- 010.constitution/011110_PRODUCTPORTFOLIOMANAGER_COMPETITIVE_POSITIONING_NOTE.md
 
+- 020.architecture/021120_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_SIGNAL_AGGREGATION_ARCHITECTURE.md
+
+- 020.architecture/021130_PRODUCTPORTFOLIOMANAGER_PRIORITIZATION_SCENARIO_EXCEPTION_ARCHITECTURE.md
+
+- 030.model/030510_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_TIMELINE_MODEL.md
+
+- 060.integration/060290_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_PAYLOAD.md
+
+- 060.integration/060300_PRODUCTPORTFOLIOMANAGER_SCENARIO_EXCEPTION_REVIEW_PAYLOAD.md
+
+- 090.interface/090330_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_INTERFACE.md
+
+- 120.implementation/120300_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_IMPLEMENTATION_GUIDE.md
+
+- 900.meta/900410_PRODUCTPORTFOLIOMANAGER_20260416_DIFF_AUDIT_NOTE.md
+
+- 020.architecture/021140_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+- 060.integration/060320_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_STARTER.md
+
+- 060.integration/060330_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+- 120.implementation/120310_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 120.implementation/120320_PRODUCTPORTFOLIOMANAGER_PHASE_A_STUB_FILE_PLAN.md
+
+- 120.implementation/120330_PRODUCTPORTFOLIOMANAGER_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120.implementation/120340_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120.implementation/120350_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120.implementation/120360_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120.implementation/120370_PRODUCTPORTFOLIOMANAGER_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120.implementation/120380_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+- 900.meta/900420_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 900.meta/900430_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 900.meta/900440_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900.meta/900450_PRODUCTPORTFOLIOMANAGER_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900.meta/900460_PRODUCTPORTFOLIOMANAGER_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900.meta/900470_PRODUCTPORTFOLIOMANAGER_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+# PRODUCT PORTFOLIO MANAGER OVERVIEW
 # ============================================================
 
+status: canonical
+system: applications
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+ProductPortfolioManager is a lightweight product strategy judgment application.
+It helps organizations evaluate products,
+classify strategic importance,
+prepare actions,
+conduct reviews,
+handle approvals,
+and preserve decision history.
+
+core_definition:
+This application is not a mere product master UI.
+This application is not ERP itself.
+This application is not a heavy merchandise planning platform.
+This application is a product portfolio decision front.
+
+global_requirements:
+- multilingual support is mandatory
+- multi-currency support is mandatory
+- iphone support is mandatory
+- android support is mandatory
+- pc support is mandatory
+- tablet support is mandatory
+
+positioning_against_market:
+- lighter than heavy merchandise planning platforms
+- deeper in strategy judgment than PIM/PXM-centric tools
+- review- and approval-friendly for practical business use
+- suited for subscription-style application delivery
+
+core_capabilities:
+- product portfolio visibility
+- KPI and score-based evaluation
+- strategic classification
+- product action proposals
+- review session management
+- approval-oriented decision handling
+- alert and notification handling
+- audit and history visibility
+- ERP reference usage
+- forecast reference usage
+- multilingual / multi-currency display control
+- saved view presets and operator-facing settings
+
+source_of_truth_boundary:
+ERP owns:
+- product master identity
+- formal sales truth
+- formal cost truth
+- formal inventory truth
+- formal accounting truth
+
+ProductPortfolioManager owns:
+- portfolio scope
+- metric snapshots for judgment reproducibility
+- scoring
+- classification
+- proposals
+- reviews
+- approvals
+- alerts
+- audit/history
+- share scope
+- operator presentation preferences
+
+current_design_focus:
+- architecture-first
+- additive-only
+- no implementation yet
+- explicit business meaning and governance separation
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER INTEGRATED
 # ============================================================
@@ -411,11 +432,20 @@ next_natural_topics:
 - explicit Phase 1 coding start
 - or stop here until coding phase opens
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100000_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION_INDEX.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/010.constitution/0100000_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION_OVERVIEW.md
+# PRODUCT PORTFOLIO MANAGER CONSTITUTION INDEX
 # ============================================================
 
+files:
+
+- 011110_PRODUCTPORTFOLIOMANAGER_COMPETITIVE_POSITIONING_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100000_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100000_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CONSTITUTION OVERVIEW
 # ============================================================
@@ -446,11 +476,9 @@ constitutional_principles:
 - decision history must be auditable
 - cross-device business meaning must remain equivalent
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100000_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/010.constitution/0100001_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100001_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CONSTITUTION
 # ============================================================
@@ -490,11 +518,9 @@ constitutional_rules:
 5. Important decisions must remain attributable to actors and times.
 6. Multi-language and multi-currency readiness are first-class requirements.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100001_PRODUCT_PORTFOLIO_MANAGER_CONSTITUTION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/010.constitution/0100002_PRODUCT_PORTFOLIO_MANAGER_BOUNDARY_CONSTITUTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100002_PRODUCT_PORTFOLIO_MANAGER_BOUNDARY_CONSTITUTION.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER BOUNDARY CONSTITUTION
 # ============================================================
@@ -528,11 +554,9 @@ application_side_authority:
 integration_rule:
 ERP-affecting actions must traverse an explicit controlled route.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100002_PRODUCT_PORTFOLIO_MANAGER_BOUNDARY_CONSTITUTION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/010.constitution/0100003_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_CONSTITUTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100003_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_CONSTITUTION.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION AND LIFECYCLE CONSTITUTION
 # ============================================================
@@ -616,11 +640,9 @@ as distinct but related meanings,
 with lifecycle describing product phase
 and classification describing portfolio judgment.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100003_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_CONSTITUTION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/010.constitution/0100004_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_CONSTITUTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100004_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_CONSTITUTION.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PROPOSAL CONSTITUTION
 # ============================================================
@@ -669,11 +691,9 @@ ProductPortfolioManager must treat proposals
 as governed action candidates,
 not as silent automation outputs or hidden execution commands.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100004_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_CONSTITUTION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/010.constitution/0100005_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_CONSTITUTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100005_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_CONSTITUTION.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ERP BOUNDARY CONSTITUTION
 # ============================================================
@@ -747,11 +767,9 @@ formal_conclusion:
 ProductPortfolioManager must remain a judgment front over ERP facts,
 not an ambiguous replacement for ERP authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100005_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_CONSTITUTION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/010.constitution/0100006_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_CONSTITUTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100006_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_CONSTITUTION.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FORECAST BOUNDARY CONSTITUTION
 # ============================================================
@@ -817,11 +835,80 @@ ProductPortfolioManager must treat forecast systems
 as advisory reference providers,
 not as hidden final decision engines.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/0100006_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_CONSTITUTION.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/011110_PRODUCTPORTFOLIOMANAGER_COMPETITIVE_POSITIONING_NOTE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200000_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE_OVERVIEW.md
+# PRODUCTPORTFOLIOMANAGER COMPETITIVE POSITIONING NOTE
 # ============================================================
 
+status: canonical
+layer: constitution
+system: applications
+application: ProductPortfolioManager
+directory: 010.constitution
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: competitive-positioning-note
+
+purpose:
+Clarifies the differentiator that should be made explicit in the
+current ProductPortfolioManager design without rewriting its existing core.
+
+positioning_summary:
+- ProductPortfolioManager is not only a product list manager.
+- Its durable value is portfolio control across prioritization,
+  lifecycle balancing, investment visibility, scenario comparison,
+  and management decision routing.
+- The differentiator is not simple catalog maintenance, but portfolio-level
+  control that keeps prioritization and portfolio risk visible.
+
+preserved_core:
+- portfolio and product planning identity
+- existing business operation role
+- existing management support direction
+- existing platform direction
+- existing separation of item detail and management summary
+
+differentiator_to_make_explicit:
+- portfolio lifecycle control
+- prioritization visibility
+- scenario comparison and investment attention routing
+- exception and management review surfacing
+
+competitive_contrast:
+- not merely a product list
+- not merely a roadmap board
+- not merely a spreadsheet view
+- positioned as a portfolio control layer that connects
+  signal aggregation, prioritization review, scenario comparison,
+  and management attention routing
+
+non_goals_of_this_note:
+- no full constitutional rewrite
+- no implementation start
+- no destructive scope replacement
+- no framework decision
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/010.constitution/011110_PRODUCTPORTFOLIOMANAGER_COMPETITIVE_POSITIONING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200000_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE_INDEX.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER ARCHITECTURE INDEX
+# ============================================================
+
+files:
+
+- 021120_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_SIGNAL_AGGREGATION_ARCHITECTURE.md
+
+- 021130_PRODUCTPORTFOLIOMANAGER_PRIORITIZATION_SCENARIO_EXCEPTION_ARCHITECTURE.md
+
+- 021140_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200000_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200000_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ARCHITECTURE OVERVIEW
 # ============================================================
@@ -849,11 +936,9 @@ cross_cutting_architecture_requirements:
 - multi-currency-aware monetary model
 - responsive and adaptive layouts for phone, tablet, and pc
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200000_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200001_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200001_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ARCHITECTURE
 # ============================================================
@@ -903,11 +988,9 @@ review_meeting_management:
 - support comparison and decisions
 - preserve responsibility and due dates
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200001_PRODUCT_PORTFOLIO_MANAGER_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200002_PRODUCT_PORTFOLIO_MANAGER_COMPETITIVE_POSITION_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200002_PRODUCT_PORTFOLIO_MANAGER_COMPETITIVE_POSITION_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER COMPETITIVE POSITION ARCHITECTURE
 # ============================================================
@@ -935,11 +1018,9 @@ differentiation_requirements:
 - review and approval usability must be first-class
 - proposal and classification depth must exceed simple catalog tools
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200002_PRODUCT_PORTFOLIO_MANAGER_COMPETITIVE_POSITION_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200002_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200002_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ERP BOUNDARY ARCHITECTURE
 # ============================================================
@@ -973,11 +1054,9 @@ forbidden_patterns:
 - approval bypass
 - hidden correction of ERP truth inside the app
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200002_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ERP BOUNDARY ARCHITECTURE
 # ============================================================
@@ -1012,11 +1091,9 @@ allowed_patterns:
 - prepare proposals
 - route downstream actions through approved paths
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200003_PRODUCT_PORTFOLIO_MANAGER_FORECAST_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200003_PRODUCT_PORTFOLIO_MANAGER_FORECAST_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FORECAST ARCHITECTURE
 # ============================================================
@@ -1041,11 +1118,9 @@ forecast_design_rule:
 All forecast values must carry source metadata,
 generation timestamp, and confidence semantics.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200003_PRODUCT_PORTFOLIO_MANAGER_FORECAST_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FORECAST ARCHITECTURE
 # ============================================================
@@ -1074,11 +1149,9 @@ required_forecast_metadata:
 - confidence
 - scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SCREEN ARCHITECTURE
 # ============================================================
@@ -1113,11 +1186,9 @@ screen_architecture_rules:
 - phone layouts may reduce simultaneous density but not business capability
 - pc and tablet layouts should strengthen comparison and review efficiency
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200006_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200006_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER KPI AND SCORING ARCHITECTURE
 # ============================================================
@@ -1294,11 +1365,9 @@ KPI and scoring architecture in ProductPortfolioManager
 must support strong comparison and judgment usability
 without blurring the boundary between source facts and application-owned evaluation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200006_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200007_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200007_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION AND LIFECYCLE ARCHITECTURE
 # ============================================================
@@ -1409,11 +1478,9 @@ Lifecycle is an input architecture.
 Classification is a managed decision architecture.
 Both must remain visible, comparable, and historically explainable.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200007_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200008_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200008_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER REVIEW SESSION ARCHITECTURE
 # ============================================================
@@ -1556,11 +1623,9 @@ decision capture,
 follow-up ownership,
 and explicit separation from final approval.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200008_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200009_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200009_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PROPOSAL ARCHITECTURE
 # ============================================================
@@ -1703,11 +1768,9 @@ stateful governance,
 comparison,
 and traceable progression from idea to outcome.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200009_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200010_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200010_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ERP BOUNDARY ARCHITECTURE FORMAL DESIGN
 # ============================================================
@@ -1807,11 +1870,9 @@ must preserve explicit reference,
 explicit judgment ownership,
 and explicit downstream handoff separation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200010_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_ARCHITECTURE_FORMAL_DESIGN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200011_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_ARCHITECTURE_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200011_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_ARCHITECTURE_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FORECAST BOUNDARY ARCHITECTURE FORMAL DESIGN
 # ============================================================
@@ -1910,11 +1971,9 @@ source clarity,
 confidence visibility,
 and explicit separation from fact and final judgment.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200011_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_ARCHITECTURE_FORMAL_DESIGN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200012_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200012_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DASHBOARD LIST COMPARISON ARCHITECTURE
 # ============================================================
@@ -2051,11 +2110,9 @@ must support fast recognition,
 structured triage,
 and explainable multi-target judgment.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200012_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200013_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200013_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PRODUCT DETAIL AND SCORE DETAIL ARCHITECTURE
 # ============================================================
@@ -2189,11 +2246,9 @@ must support single-product judgment,
 evaluation explainability,
 and explicit source-boundary visibility.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200013_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200014_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200014_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION CHANGE AND PROPOSAL DETAIL ARCHITECTURE
 # ============================================================
@@ -2329,11 +2384,9 @@ in ProductPortfolioManager
 must support governed strategy/action judgment
 with explicit state meaning and clear context.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200014_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200015_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200015_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER APPROVAL ALERT AUDIT LIST ARCHITECTURE
 # ============================================================
@@ -2485,11 +2538,9 @@ attention workload,
 and explainability workload
 as distinct but connected operational surfaces.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200015_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_ARCHITECTURE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/020.architecture/0200016_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200016_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_ARCHITECTURE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SETTINGS LOCALE CURRENCY PRESET ARCHITECTURE
 # ============================================================
@@ -2596,11 +2647,256 @@ Settings, locale, currency, and presets in ProductPortfolioManager
 must remain explicit presentation and operator-efficiency architecture,
 not hidden business-state mutation architecture.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/0200016_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_ARCHITECTURE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/021120_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_SIGNAL_AGGREGATION_ARCHITECTURE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300000_PRODUCT_PORTFOLIO_MANAGER_MODEL_OVERVIEW.md
+# PRODUCTPORTFOLIOMANAGER PORTFOLIO SIGNAL AGGREGATION ARCHITECTURE
 # ============================================================
 
+status: canonical
+layer: architecture
+system: applications
+application: ProductPortfolioManager
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: portfolio-signal-aggregation-architecture
+
+purpose:
+Makes portfolio signal aggregation and management control explicit in the
+current ProductPortfolioManager architecture.
+
+architecture_intent:
+- portfolio work must be visible not only as items, but as management movement
+- source signals, prioritization shifts, exceptions, and management attention
+  points must remain explicit
+- portfolio readiness and blocker visibility must be queryable without
+  reconstructing everything from raw product detail only
+
+flow_layers:
+- signal intake:
+  - source signal registration
+  - source freshness evaluation
+  - portfolio baseline construction
+  - prioritization draft creation
+- portfolio control:
+  - prioritization comparison
+  - exception detection
+  - investment threshold evaluation
+  - management attention routing
+- management review:
+  - portfolio cockpit review
+  - prioritization exception visibility
+  - freshness and confidence visibility
+  - decision-support readiness
+- control action:
+  - approve prioritization
+  - hold prioritization
+  - escalate attention
+  - publish portfolio view
+- closure:
+  - active
+  - superseded
+  - archived
+  - replaced_by_new_cycle
+
+key_separations:
+- raw product detail is not the same as portfolio readiness
+- scenario comparison is not the same as approval history
+- exception review is not the same as board rendering
+- cockpit review is not the same as deep item editing screen
+
+recommended_runtime_objects:
+- portfolio_management_signal
+- prioritization_exception_review_item
+- decision_support_readiness_item
+- portfolio_cockpit_summary
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/021120_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_SIGNAL_AGGREGATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/021130_PRODUCTPORTFOLIOMANAGER_PRIORITIZATION_SCENARIO_EXCEPTION_ARCHITECTURE.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PRIORITIZATION SCENARIO EXCEPTION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: ProductPortfolioManager
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: prioritization-scenario-exception-architecture
+
+purpose:
+Defines the relationship between prioritization review, scenario exception
+handling, and management decision-support readiness in ProductPortfolioManager.
+
+core_principle:
+- portfolio slippage often appears first through stale signals,
+  prioritization divergence, unresolved portfolio exception, or attention-routing
+  failure before it appears as final business outcome failure.
+
+architecture_rules:
+- prioritization comparison must be represented explicitly
+- exception items must be reviewable as first-class management objects
+- decision-support blockers must survive beyond one screen or one session
+- unresolved exceptions must be visible in the same review flow as portfolio health
+
+exception_categories:
+- source freshness risk
+- prioritization divergence risk
+- investment threshold breach risk
+- decision-support blocker
+- publication readiness risk
+
+visibility_outputs:
+- portfolio cockpit
+- prioritization exception review screen
+- management attention panel
+- decision-support readiness overview
+
+cross_module_relation:
+- source signal layer feeds normalized portfolio signals
+- prioritization layer captures comparative portfolio states
+- exception layer surfaces management attention points
+- decision-support layer surfaces readiness for executive or manager use
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/021130_PRODUCTPORTFOLIOMANAGER_PRIORITIZATION_SCENARIO_EXCEPTION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/021140_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A PORTFOLIO TIMELINE DDL ADDITIVE PLAN
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: ProductPortfolioManager
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-portfolio-timeline-ddl-additive-plan
+
+purpose:
+Defines the additive-only Phase A DDL planning boundary for
+portfolio timeline visibility, prioritization exception review,
+and portfolio cockpit assembly.
+
+principles:
+- additive only
+- preserve existing ProductPortfolioManager core
+- keep raw product detail handling separate from management readiness rows
+- keep scenario and exception review separate from raw portfolio history
+- no SQL execution in this document
+
+phase_a_target_capabilities:
+- persist portfolio control timeline rows for cockpit and review
+- persist prioritization and decision-support blocker review rows for management visibility
+- support portfolio cockpit query without reconstructing everything from raw product detail
+- support management attention and decision-support review slices
+
+proposed_additive_tables:
+- business.productportfoliomanager_portfolio_control_timeline_item
+- business.productportfoliomanager_prioritization_exception_review_item
+- business.productportfoliomanager_portfolio_cockpit_snapshot
+
+table_business_productportfoliomanager_portfolio_control_timeline_item:
+  role:
+    - stores normalized portfolio control timeline rows
+  recommended_columns:
+    - portfolio_control_timeline_item_id uuid pk
+    - portfolio_id uuid not null
+    - related_scenario_id uuid null
+    - related_exception_id uuid null
+    - related_decision_support_blocker_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - portfolio_state_code text not null
+    - priority_code text null
+    - effective_at timestamptz null
+    - published_at timestamptz null
+    - superseded_at timestamptz null
+    - exception_present boolean not null
+    - owner_user_id uuid null
+    - approval_required boolean not null
+    - source_module_code text not null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_productportfoliomanager_prioritization_exception_review_item:
+  role:
+    - stores reviewable prioritization and decision-support blocker rows
+  recommended_columns:
+    - prioritization_exception_review_item_id uuid pk
+    - portfolio_id uuid not null
+    - related_scenario_id uuid null
+    - related_exception_id uuid null
+    - related_decision_support_blocker_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - portfolio_state_code text not null
+    - exception_present boolean not null
+    - approval_required boolean not null
+    - owner_user_id uuid null
+    - resolved boolean not null
+    - effective_at timestamptz null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_productportfoliomanager_portfolio_cockpit_snapshot:
+  role:
+    - stores generated portfolio cockpit snapshots when caching or auditability is needed
+  recommended_columns:
+    - portfolio_cockpit_snapshot_id uuid pk
+    - portfolio_id uuid not null
+    - health_summary_message text not null
+    - generated_at timestamptz not null
+    - created_at timestamptz not null
+
+recommended_indexes_phase_a:
+- portfolio_control_timeline_item:
+  - idx on portfolio_id, portfolio_state_code, effective_at
+  - idx on portfolio_id, related_scenario_id
+  - idx on portfolio_id, related_exception_id
+- prioritization_exception_review_item:
+  - idx on portfolio_id, approval_required
+  - idx on portfolio_id, exception_present
+  - idx on portfolio_id, resolved
+- portfolio_cockpit_snapshot:
+  - idx on portfolio_id, generated_at desc
+
+explicit_non_scope:
+- no destructive schema rewrite
+- no SQL execution here
+- no optimization engine implementation here
+- no external BI push execution here
+- no client sync policy here
+
+handoff_to_next_step:
+- freeze API starter and DTOs against these row families
+- create implementation skeleton and slice order on top of this plan
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/020.architecture/021140_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300000_PRODUCT_PORTFOLIO_MANAGER_MODEL_INDEX.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER MODEL INDEX
+# ============================================================
+
+files:
+
+- 030510_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_TIMELINE_MODEL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300000_PRODUCT_PORTFOLIO_MANAGER_MODEL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300000_PRODUCT_PORTFOLIO_MANAGER_MODEL_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER MODEL OVERVIEW
 # ============================================================
@@ -2628,11 +2924,9 @@ core_entities:
 - product_approval_request
 - product_audit_event
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300000_PRODUCT_PORTFOLIO_MANAGER_MODEL_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300001_PRODUCT_PORTFOLIO_ITEM_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300001_PRODUCT_PORTFOLIO_ITEM_MODEL.md -->
 # ============================================================
 # PRODUCT PORTFOLIO ITEM MODEL
 # ============================================================
@@ -2674,11 +2968,9 @@ notes:
 - displayed names may be cached for usability
 - strategic classification meaning is application-specific
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300001_PRODUCT_PORTFOLIO_ITEM_MODEL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300002_PRODUCT_METRIC_SNAPSHOT_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300002_PRODUCT_METRIC_SNAPSHOT_MODEL.md -->
 # ============================================================
 # PRODUCT METRIC SNAPSHOT MODEL
 # ============================================================
@@ -2721,11 +3013,9 @@ rules:
 - monetary values require explicit currency semantics
 - snapshot values are not ERP truth ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300002_PRODUCT_METRIC_SNAPSHOT_MODEL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300002_PRODUCT_SCORE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300002_PRODUCT_SCORE_MODEL.md -->
 # ============================================================
 # PRODUCT SCORE MODEL
 # ============================================================
@@ -2763,11 +3053,9 @@ Stores explainable scoring outputs for a portfolio item.
 currency_rule:
 Monetary interpretation must never rely on an implicit single currency assumption.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300002_PRODUCT_SCORE_MODEL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300003_PRODUCT_CLASSIFICATION_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300003_PRODUCT_CLASSIFICATION_MODEL.md -->
 # ============================================================
 # PRODUCT CLASSIFICATION MODEL
 # ============================================================
@@ -2801,11 +3089,9 @@ classification_examples:
 - retire-candidate
 - seasonal
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300003_PRODUCT_CLASSIFICATION_MODEL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300003_PRODUCT_SCORE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300003_PRODUCT_SCORE_MODEL.md -->
 # ============================================================
 # PRODUCT SCORE MODEL
 # ============================================================
@@ -2845,11 +3131,9 @@ rules:
 - explanation metadata must be preserved
 - resource-key-based descriptions are preferred for multilingual support
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300003_PRODUCT_SCORE_MODEL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300004_PRODUCT_ACTION_PROPOSAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300004_PRODUCT_ACTION_PROPOSAL_MODEL.md -->
 # ============================================================
 # PRODUCT ACTION PROPOSAL MODEL
 # ============================================================
@@ -2886,11 +3170,9 @@ proposal_examples:
 - bundle-product
 - retire-product
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300004_PRODUCT_ACTION_PROPOSAL_MODEL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300004_PRODUCT_CLASSIFICATION_MODELS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300004_PRODUCT_CLASSIFICATION_MODELS.md -->
 # ============================================================
 # PRODUCT CLASSIFICATION MODELS
 # ============================================================
@@ -2942,11 +3224,9 @@ rules:
 - draft and final must remain separate
 - approved classification history must not be erased
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300004_PRODUCT_CLASSIFICATION_MODELS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300005_PRODUCT_PROPOSAL_MODELS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300005_PRODUCT_PROPOSAL_MODELS.md -->
 # ============================================================
 # PRODUCT PROPOSAL MODELS
 # ============================================================
@@ -2997,11 +3277,9 @@ proposal_examples:
 - shrink
 - retire
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300005_PRODUCT_PROPOSAL_MODELS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300005_PRODUCT_REVIEW_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300005_PRODUCT_REVIEW_MODEL.md -->
 # ============================================================
 # PRODUCT REVIEW MODEL
 # ============================================================
@@ -3023,11 +3301,9 @@ purpose:
 Defines management review structures,
 decision records, issue tracking, and forecast references.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300005_PRODUCT_REVIEW_MODEL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300006_PRODUCT_REVIEW_APPROVAL_AUDIT_MODELS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300006_PRODUCT_REVIEW_APPROVAL_AUDIT_MODELS.md -->
 # ============================================================
 # PRODUCT REVIEW APPROVAL AUDIT MODELS
 # ============================================================
@@ -3102,11 +3378,9 @@ audit_event_fields:
 - event_at
 - source_channel
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300006_PRODUCT_REVIEW_APPROVAL_AUDIT_MODELS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER EXACT TABLES AND ENUMS
 # ============================================================
@@ -3892,11 +4166,9 @@ phase_2_required_tables:
 - product_audit_event
 - product_sync_state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300008_PRODUCT_PORTFOLIO_MANAGER_ENTITY_RELATION_MATRIX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300008_PRODUCT_PORTFOLIO_MANAGER_ENTITY_RELATION_MATRIX.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ENTITY RELATION MATRIX
 # ============================================================
@@ -3942,11 +4214,9 @@ read_patterns:
 - review detail joins product_review_session + product_review_session_item + product_review_decision + product_portfolio_item
 - approval queue joins product_approval_request + latest target state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300008_PRODUCT_PORTFOLIO_MANAGER_ENTITY_RELATION_MATRIX.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300009_PRODUCT_PORTFOLIO_MANAGER_MODEL_TO_API_MAPPING.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300009_PRODUCT_PORTFOLIO_MANAGER_MODEL_TO_API_MAPPING.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER MODEL TO API MAPPING
 # ============================================================
@@ -4016,11 +4286,9 @@ model_to_api_mapping:
       - product_alert
       - product_portfolio_item
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300009_PRODUCT_PORTFOLIO_MANAGER_MODEL_TO_API_MAPPING.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300010_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORE_MODEL_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300010_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORE_MODEL_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER KPI AND SCORE MODEL FORMAL DESIGN
 # ============================================================
@@ -4173,11 +4441,9 @@ currency clarity,
 version clarity,
 and explanation-ready semantics for product judgment.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300010_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORE_MODEL_FORMAL_DESIGN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300011_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_MODEL_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300011_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_MODEL_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION AND LIFECYCLE MODEL FORMAL DESIGN
 # ============================================================
@@ -4304,11 +4570,9 @@ The model must preserve lifecycle as contextual product phase
 and classification as governed strategy meaning,
 with clear support for draft/final separation and historical traceability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300011_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_MODEL_FORMAL_DESIGN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/030.model/0300012_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_MODEL_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300012_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_MODEL_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SETTINGS LOCALE CURRENCY PRESET MODEL FORMAL DESIGN
 # ============================================================
@@ -4410,11 +4674,70 @@ and view preset model semantics in ProductPortfolioManager
 must preserve presentation control and operator efficiency
 without redefining underlying business truth.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/0300012_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_MODEL_FORMAL_DESIGN.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/030510_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_TIMELINE_MODEL.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/040.runtime/0400000_PRODUCT_PORTFOLIO_MANAGER_RUNTIME_OVERVIEW.md
+# PRODUCTPORTFOLIOMANAGER PORTFOLIO CONTROL TIMELINE MODEL
 # ============================================================
 
+status: canonical
+layer: model
+system: applications
+application: ProductPortfolioManager
+directory: 030.model
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: portfolio-control-timeline-model
+
+purpose:
+Defines the logical model for a unified portfolio control timeline.
+
+core_entity:
+- portfolio_control_timeline_item
+
+recommended_fields:
+- portfolioControlTimelineItemId
+- portfolioId
+- relatedScenarioId
+- relatedExceptionId
+- relatedDecisionSupportBlockerId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- portfolioStateCode
+- priorityCode
+- effectiveAt
+- publishedAt
+- supersededAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+- sourceModuleCode
+- createdAt
+- updatedAt
+
+state_meaning:
+- draft
+- pending_review
+- approved
+- published
+- stale
+- blocked_for_decision_support
+- superseded
+- archived
+
+model_use_cases:
+- portfolio cockpit assembly
+- prioritization exception review
+- approval review
+- decision-support readiness visibility
+- management trend visibility
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/030.model/030510_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_TIMELINE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400000_PRODUCT_PORTFOLIO_MANAGER_RUNTIME_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER RUNTIME OVERVIEW
 # ============================================================
@@ -4440,11 +4763,9 @@ key_runtime_loops:
 - approval lifecycle
 - alert detection and handling
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400000_PRODUCT_PORTFOLIO_MANAGER_RUNTIME_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/040.runtime/0400001_PORTFOLIO_SCORE_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400001_PORTFOLIO_SCORE_RUNTIME.md -->
 # ============================================================
 # PORTFOLIO SCORE RUNTIME
 # ============================================================
@@ -4468,11 +4789,9 @@ runtime_rules:
 - source metrics must be attributable
 - failures must not fabricate values
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400001_PORTFOLIO_SCORE_RUNTIME.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/040.runtime/0400001_SCORE_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400001_SCORE_RUNTIME.md -->
 # ============================================================
 # SCORE RUNTIME
 # ============================================================
@@ -4497,11 +4816,9 @@ runtime_rules:
 - score refresh time must be visible
 - failures must not fabricate values
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400001_SCORE_RUNTIME.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/040.runtime/0400002_CLASSIFICATION_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400002_CLASSIFICATION_RUNTIME.md -->
 # ============================================================
 # CLASSIFICATION RUNTIME
 # ============================================================
@@ -4525,11 +4842,9 @@ rules:
 - approval outcome must preserve before/after visibility
 - current classification pointer must be updated only through valid finalization
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400002_CLASSIFICATION_RUNTIME.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/040.runtime/0400003_REVIEW_AND_APPROVAL_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400003_REVIEW_AND_APPROVAL_RUNTIME.md -->
 # ============================================================
 # REVIEW AND APPROVAL RUNTIME
 # ============================================================
@@ -4555,11 +4870,9 @@ approval_runtime:
 - approve / reject / send back / hold
 - persist decision trail
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400003_REVIEW_AND_APPROVAL_RUNTIME.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/040.runtime/0400003_REVIEW_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400003_REVIEW_RUNTIME.md -->
 # ============================================================
 # REVIEW RUNTIME
 # ============================================================
@@ -4582,11 +4895,9 @@ decision_runtime_rule:
 Decision must preserve before/after state
 and attach ownership and timing.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/040.runtime/0400003_REVIEW_RUNTIME.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500000_PRODUCT_PORTFOLIO_MANAGER_FLOW_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500000_PRODUCT_PORTFOLIO_MANAGER_FLOW_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FLOW OVERVIEW
 # ============================================================
@@ -4607,11 +4918,9 @@ primary_flows:
 - approval flow
 - alert handling flow
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500000_PRODUCT_PORTFOLIO_MANAGER_FLOW_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500001_PORTFOLIO_LIST_AND_DETAIL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500001_PORTFOLIO_LIST_AND_DETAIL_FLOW.md -->
 # ============================================================
 # PORTFOLIO LIST AND DETAIL FLOW
 # ============================================================
@@ -4634,11 +4943,9 @@ flow:
    - review
    - approve
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500001_PORTFOLIO_LIST_AND_DETAIL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500001_PORTFOLIO_REVIEW_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500001_PORTFOLIO_REVIEW_FLOW.md -->
 # ============================================================
 # PORTFOLIO REVIEW FLOW
 # ============================================================
@@ -4659,11 +4966,9 @@ flow:
 7. conduct approval
 8. finalize review result
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500001_PORTFOLIO_REVIEW_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500002_PROPOSAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500002_PROPOSAL_FLOW.md -->
 # ============================================================
 # PROPOSAL FLOW
 # ============================================================
@@ -4683,11 +4988,9 @@ flow:
 6. optionally send integration request
 7. record outcome
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500002_PROPOSAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500002_SCORE_AND_CLASSIFICATION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500002_SCORE_AND_CLASSIFICATION_FLOW.md -->
 # ============================================================
 # SCORE AND CLASSIFICATION FLOW
 # ============================================================
@@ -4707,11 +5010,9 @@ flow:
 6. submit for approval if required
 7. finalize approved classification
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500002_SCORE_AND_CLASSIFICATION_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500003_PROPOSAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500003_PROPOSAL_FLOW.md -->
 # ============================================================
 # PRODUCT ACTION PROPOSAL FLOW
 # ============================================================
@@ -4731,11 +5032,9 @@ flow:
 6. approve / reject / revise
 7. record resulting state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500003_PROPOSAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500004_REVIEW_SESSION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500004_REVIEW_SESSION_FLOW.md -->
 # ============================================================
 # REVIEW SESSION FLOW
 # ============================================================
@@ -4757,11 +5056,9 @@ flow:
 8. submit approvals where required
 9. close review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500004_REVIEW_SESSION_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500005_APPROVAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500005_APPROVAL_FLOW.md -->
 # ============================================================
 # APPROVAL FLOW
 # ============================================================
@@ -4784,11 +5081,9 @@ flow:
 5. persist decision
 6. reflect resulting state in target entity
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500005_APPROVAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500006_PRODUCT_PORTFOLIO_MANAGER_EXACT_FLOW_PAYLOADS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500006_PRODUCT_PORTFOLIO_MANAGER_EXACT_FLOW_PAYLOADS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER EXACT FLOW PAYLOADS
 # ============================================================
@@ -5246,11 +5541,9 @@ response_payload:
     page_size: integer
     total_count: integer
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500006_PRODUCT_PORTFOLIO_MANAGER_EXACT_FLOW_PAYLOADS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500007_PRODUCT_PORTFOLIO_MANAGER_BUSINESS_FLOW_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500007_PRODUCT_PORTFOLIO_MANAGER_BUSINESS_FLOW_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER BUSINESS FLOW FORMAL DESIGN
 # ============================================================
@@ -5756,11 +6049,9 @@ onboarding
 -> approval
 -> audit preservation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500007_PRODUCT_PORTFOLIO_MANAGER_BUSINESS_FLOW_FORMAL_DESIGN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500008_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_FORMAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500008_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_FORMAL_FLOW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER REVIEW SESSION FORMAL FLOW
 # ============================================================
@@ -5890,11 +6181,9 @@ decision capture,
 follow-up ownership,
 and explicit handoff to approval where required.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500008_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_FORMAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500009_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_FORMAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500009_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_FORMAL_FLOW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PROPOSAL FORMAL FLOW
 # ============================================================
@@ -6007,11 +6296,9 @@ review visibility,
 approval linkage,
 and outcome traceability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500009_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_FORMAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500010_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_FORMAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500010_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_FORMAL_FLOW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DASHBOARD LIST COMPARISON FORMAL FLOW
 # ============================================================
@@ -6150,11 +6437,9 @@ progressive narrowing,
 multi-target reasoning,
 and context-preserving navigation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500010_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_FORMAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500011_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_FORMAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500011_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_FORMAL_FLOW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PRODUCT DETAIL AND SCORE DETAIL FORMAL FLOW
 # ============================================================
@@ -6267,11 +6552,9 @@ must support deep single-product understanding,
 clear evaluation explainability,
 and governed transition into action flows.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500011_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_FORMAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500012_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_FORMAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500012_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_FORMAL_FLOW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION CHANGE AND PROPOSAL DETAIL FORMAL FLOW
 # ============================================================
@@ -6381,11 +6664,9 @@ must preserve explicit governed transitions,
 support-context visibility,
 and stable interpretation of current, draft, and approved states.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500012_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_FORMAL_FLOW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/050.flow/0500013_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_FORMAL_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500013_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_FORMAL_FLOW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER APPROVAL ALERT AUDIT LIST FORMAL FLOW
 # ============================================================
@@ -6518,11 +6799,26 @@ with explicit state meaning,
 safe navigation,
 and explainable outcomes.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/050.flow/0500013_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_FORMAL_FLOW.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600000_PRODUCT_PORTFOLIO_MANAGER_INTEGRATION_INDEX.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/060.integration/0600000_PRODUCT_PORTFOLIO_MANAGER_INTEGRATION_OVERVIEW.md
+# PRODUCT PORTFOLIO MANAGER INTEGRATION INDEX
 # ============================================================
 
+files:
+
+- 060290_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_PAYLOAD.md
+
+- 060300_PRODUCTPORTFOLIOMANAGER_SCENARIO_EXCEPTION_REVIEW_PAYLOAD.md
+
+- 060320_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_STARTER.md
+
+- 060330_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600000_PRODUCT_PORTFOLIO_MANAGER_INTEGRATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600000_PRODUCT_PORTFOLIO_MANAGER_INTEGRATION_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER INTEGRATION OVERVIEW
 # ============================================================
@@ -6539,11 +6835,9 @@ The application integrates with:
 - forecast-capable systems for advisory demand values
 - BusinessOS identity and sharing context
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600000_PRODUCT_PORTFOLIO_MANAGER_INTEGRATION_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/060.integration/0600001_ERP_REFERENCE_INTEGRATION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600001_ERP_REFERENCE_INTEGRATION.md -->
 # ============================================================
 # ERP REFERENCE INTEGRATION
 # ============================================================
@@ -6569,11 +6863,9 @@ integration_rules:
 - metric snapshots may be materialized locally for judgment reproducibility
 - source timestamps must be preserved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600001_ERP_REFERENCE_INTEGRATION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/060.integration/0600002_FORECAST_REFERENCE_INTEGRATION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600002_FORECAST_REFERENCE_INTEGRATION.md -->
 # ============================================================
 # FORECAST REFERENCE INTEGRATION
 # ============================================================
@@ -6595,11 +6887,9 @@ required_metadata:
 - confidence
 - fetched_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600002_FORECAST_REFERENCE_INTEGRATION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ERP BOUNDARY INTEGRATION FORMAL DESIGN
 # ============================================================
@@ -6695,11 +6985,9 @@ timestamp-aware,
 source-attributed,
 and governance-safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/060.integration/0600004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FORECAST BOUNDARY INTEGRATION FORMAL DESIGN
 # ============================================================
@@ -6784,11 +7072,312 @@ must remain advisory,
 metadata-rich,
 and explicit in its boundaries.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/0600004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060290_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_PAYLOAD.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700000_PRODUCT_PORTFOLIO_MANAGER_OPERATIONS_OVERVIEW.md
+# PRODUCTPORTFOLIOMANAGER PORTFOLIO_COCKPIT_PAYLOAD
 # ============================================================
 
+status: canonical
+layer: integration
+system: applications
+application: ProductPortfolioManager
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: portfolio-cockpit-payload
+
+purpose:
+Fixes the exact payload family for the portfolio cockpit surface.
+
+endpoint:
+- POST /api/v1/product-portfolio-manager/portfolio-cockpit/query
+
+request_fields:
+- portfolioId: uuid string, required
+- timezone: string, required
+- includePrioritizationExceptions: boolean, required
+- includeManagementAttention: boolean, required
+- includeDecisionSupportReadiness: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- portfolioId: uuid string, required
+- portfolioTitle: string, required
+- healthSummaryMessage: string, required
+- prioritizationExceptionItems: array, required
+- managementAttentionItems: array, required
+- decisionSupportItems: array, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- portfolioControlTimelineItemId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- portfolioStateCode
+- effectiveAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+
+rules:
+- timestamps use ISO-8601 strings
+- nullable values return null, not omission
+- arrays return empty arrays when no data
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060290_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060300_PRODUCTPORTFOLIOMANAGER_SCENARIO_EXCEPTION_REVIEW_PAYLOAD.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER SCENARIO_EXCEPTION_REVIEW_PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: ProductPortfolioManager
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: scenario-exception-review-payload
+
+purpose:
+Fixes the exact payload family for prioritization and exception review.
+
+endpoint:
+- POST /api/v1/product-portfolio-manager/scenario-exception-review/query
+
+request_fields:
+- portfolioId: uuid string, required
+- includeResolved: boolean, required
+- includeThresholdBreaches: boolean, required
+- includeDecisionSupportBlockers: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- portfolioId: uuid string, required
+- reviewItems: array, required
+- summaryMessage: string, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId
+- relatedScenarioId
+- relatedExceptionId
+- relatedDecisionSupportBlockerId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- portfolioStateCode
+- exceptionPresent
+- approvalRequired
+- ownerUserId
+- resolved
+- effectiveAt
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060300_PRODUCTPORTFOLIOMANAGER_SCENARIO_EXCEPTION_REVIEW_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060320_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_STARTER.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A API STARTER
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: ProductPortfolioManager
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-starter
+
+purpose:
+Defines the initial Phase A endpoint set for portfolio management control in ProductPortfolioManager.
+
+phase_a_api_goals:
+- query portfolio cockpit
+- query prioritization exception review
+- prepare later approval and decision-support actions without reopening the contract
+
+phase_a_endpoint_set:
+- POST /api/v1/product-portfolio-manager/portfolio-cockpit/query
+- POST /api/v1/product-portfolio-manager/scenario-exception-review/query
+
+endpoint_portfolio_cockpit_query:
+  purpose:
+    - return prioritization exceptions, management attention, and decision-support readiness in one surface
+  minimum_request:
+    - portfolioId
+    - timezone
+    - includePrioritizationExceptions
+    - includeManagementAttention
+    - includeDecisionSupportReadiness
+    - pageSize
+  minimum_response:
+    - portfolioId
+    - portfolioTitle
+    - healthSummaryMessage
+    - prioritizationExceptionItems
+    - managementAttentionItems
+    - decisionSupportItems
+    - generatedAt
+
+endpoint_scenario_exception_review_query:
+  purpose:
+    - return prioritization and decision-support blocker rows for management review
+  minimum_request:
+    - portfolioId
+    - includeResolved
+    - includeThresholdBreaches
+    - includeDecisionSupportBlockers
+    - pageSize
+  minimum_response:
+    - portfolioId
+    - reviewItems
+    - summaryMessage
+    - generatedAt
+
+response_rules:
+- ids use uuid string form
+- timestamps use ISO-8601 strings
+- arrays return empty arrays, not omission
+- nullable values return null once frozen
+- no binary payloads in these responses
+
+error_family_phase_a:
+- invalid_request
+- unauthorized
+- forbidden
+- not_found
+- conflict
+- validation_failed
+- internal_error
+
+explicit_non_scope:
+- no product write endpoint in this slice
+- no approval action write endpoint in this slice
+- no publication execution endpoint in this slice
+- no bulk import endpoint in this slice
+
+implementation_handoff:
+- use these two query endpoints as the only Phase A vertical-slice entry points first
+- defer write-side approval and publication actions until query-side surfaces stabilize
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060320_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_STARTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060330_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A API DTO FIELD FREEZE
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: ProductPortfolioManager
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-dto-field-freeze
+
+purpose:
+Freezes the Phase A request and response DTO field set for
+portfolio cockpit and prioritization exception review.
+
+freezing_policy:
+- additive only
+- field names become implementation baseline once approved
+- no casual local rename allowed
+- timestamps are ISO-8601 strings
+- ids are uuid strings
+- arrays stay arrays even when empty
+
+endpoint_01_portfolio_cockpit_query:
+  route: POST /api/v1/product-portfolio-manager/portfolio-cockpit/query
+  request_fields:
+    - portfolioId: uuid string, required
+    - timezone: string, required
+    - includePrioritizationExceptions: boolean, required
+    - includeManagementAttention: boolean, required
+    - includeDecisionSupportReadiness: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - portfolioId: uuid string, required
+    - portfolioTitle: string, required
+    - healthSummaryMessage: string, required
+    - prioritizationExceptionItems: array, required
+    - managementAttentionItems: array, required
+    - decisionSupportItems: array, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- portfolioControlTimelineItemId: uuid string, required
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- portfolioStateCode: string, required
+- effectiveAt: ISO-8601 string, nullable
+- exceptionPresent: boolean, required
+- ownerUserId: uuid string, nullable
+- approvalRequired: boolean, required
+
+endpoint_02_scenario_exception_review_query:
+  route: POST /api/v1/product-portfolio-manager/scenario-exception-review/query
+  request_fields:
+    - portfolioId: uuid string, required
+    - includeResolved: boolean, required
+    - includeThresholdBreaches: boolean, required
+    - includeDecisionSupportBlockers: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - portfolioId: uuid string, required
+    - reviewItems: array, required
+    - summaryMessage: string, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId: uuid string, required
+- relatedScenarioId: uuid string, nullable
+- relatedExceptionId: uuid string, nullable
+- relatedDecisionSupportBlockerId: uuid string, nullable
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- portfolioStateCode: string, required
+- exceptionPresent: boolean, required
+- approvalRequired: boolean, required
+- ownerUserId: uuid string, nullable
+- resolved: boolean, required
+- effectiveAt: ISO-8601 string, nullable
+
+shared_error_response_fields:
+- errorCode: string, required
+- errorMessage: string, required
+- requestId: string, required
+- details: object, nullable
+
+field_value_rules:
+- itemTypeCode is a text code, not localized label
+- portfolioStateCode is a text code, not localized label
+- nullable fields return null, not omission
+- unknown response fields must not be silently added in Phase A
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/060.integration/060330_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700000_PRODUCT_PORTFOLIO_MANAGER_OPERATIONS_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER OPERATIONS OVERVIEW
 # ============================================================
@@ -6806,11 +7395,9 @@ operations_focus:
 - alert handling discipline
 - audit readiness
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700000_PRODUCT_PORTFOLIO_MANAGER_OPERATIONS_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700001_PORTFOLIO_REVIEW_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700001_PORTFOLIO_REVIEW_OPERATIONS.md -->
 # ============================================================
 # PORTFOLIO REVIEW OPERATIONS
 # ============================================================
@@ -6831,11 +7418,9 @@ operational_rules:
 - approved reviews must sync centrally
 - expired drafts require explicit reopen
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700001_PORTFOLIO_REVIEW_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700001_REVIEW_AND_REFRESH_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700001_REVIEW_AND_REFRESH_OPERATIONS.md -->
 # ============================================================
 # REVIEW AND REFRESH OPERATIONS
 # ============================================================
@@ -6859,11 +7444,9 @@ refresh_modes:
 operational_rule:
 Visible judgment data must remain attributable to timing and version.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700001_REVIEW_AND_REFRESH_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700002_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700002_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_OPERATIONS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ALERT AND NOTIFICATION OPERATIONS
 # ============================================================
@@ -7004,11 +7587,9 @@ Alerts and notifications in ProductPortfolioManager
 must support timely judgment operations
 without creating hidden automation or bypassing review and approval discipline.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700002_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700002_SCORE_REFRESH_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700002_SCORE_REFRESH_OPERATIONS.md -->
 # ============================================================
 # SCORE REFRESH OPERATIONS
 # ============================================================
@@ -7027,11 +7608,9 @@ refresh_modes:
 rule:
 Any visible score must be attributable to a refresh moment and score version.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700002_SCORE_REFRESH_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700003_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700003_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_OPERATIONS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER AUDIT AND HISTORY OPERATIONS
 # ============================================================
@@ -7165,11 +7744,9 @@ must preserve reconstructability,
 operator understandability,
 and trustworthy traceability of product judgment activity.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700003_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700004_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700004_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_OPERATIONS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER REVIEW SESSION OPERATIONS
 # ============================================================
@@ -7253,11 +7830,9 @@ decision quality,
 follow-up accountability,
 and historical explainability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700004_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700005_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700005_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_OPERATIONS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FRESHNESS BY SURFACE OPERATIONS
 # ============================================================
@@ -7421,11 +7996,9 @@ must be managed by surface purpose,
 with the strongest expectations on decision and review surfaces
 and clearer tolerance on triage and historical surfaces.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700005_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/070.operations/0700006_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700006_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_OPERATIONS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER NOTIFICATION RECIPIENT MATRIX OPERATIONS
 # ============================================================
@@ -7621,11 +8194,9 @@ Notification recipient operations in ProductPortfolioManager
 must remain narrow, explainable, severity-aware,
 and connected to real workflow responsibility.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/070.operations/0700006_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_OPERATIONS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800000_PRODUCT_PORTFOLIO_MANAGER_POLICY_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800000_PRODUCT_PORTFOLIO_MANAGER_POLICY_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER POLICY OVERVIEW
 # ============================================================
@@ -7644,11 +8215,9 @@ policy_domains:
 - currency policy
 - source-of-truth policy
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800000_PRODUCT_PORTFOLIO_MANAGER_POLICY_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800001_CLASSIFICATION_AND_APPROVAL_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800001_CLASSIFICATION_AND_APPROVAL_POLICY.md -->
 # ============================================================
 # CLASSIFICATION AND APPROVAL POLICY
 # ============================================================
@@ -7669,11 +8238,9 @@ approval_policy:
 - pending, approved, rejected, sent_back, and on_hold must be distinguishable
 - decision comments should remain attributable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800001_CLASSIFICATION_AND_APPROVAL_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800001_CLASSIFICATION_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800001_CLASSIFICATION_POLICY.md -->
 # ============================================================
 # CLASSIFICATION POLICY
 # ============================================================
@@ -7690,11 +8257,9 @@ policy_rules:
 - approved changes require reason
 - high-impact changes may require manager approval
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800001_CLASSIFICATION_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800002_LOCALIZATION_CURRENCY_AND_SOURCE_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800002_LOCALIZATION_CURRENCY_AND_SOURCE_POLICY.md -->
 # ============================================================
 # LOCALIZATION CURRENCY AND SOURCE POLICY
 # ============================================================
@@ -7717,11 +8282,9 @@ source_policy:
 - ERP-derived facts must be clearly distinguished from application judgments
 - forecast-derived values must be clearly marked advisory
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800002_LOCALIZATION_CURRENCY_AND_SOURCE_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800002_SHARING_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800002_SHARING_POLICY.md -->
 # ============================================================
 # SHARING POLICY
 # ============================================================
@@ -7738,11 +8301,9 @@ sharing_rules:
 - shared scope must be explicit
 - revocation must be possible where policy allows
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800002_SHARING_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800003_LOCALIZATION_AND_CURRENCY_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800003_LOCALIZATION_AND_CURRENCY_POLICY.md -->
 # ============================================================
 # LOCALIZATION AND CURRENCY POLICY
 # ============================================================
@@ -7768,11 +8329,9 @@ device_policy:
 - business capability parity is mandatory
 - UI layout differences are allowed only when business semantics remain equivalent
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800003_LOCALIZATION_AND_CURRENCY_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800003_PRODUCT_PORTFOLIO_MANAGER_ROLE_AND_APPROVAL_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800003_PRODUCT_PORTFOLIO_MANAGER_ROLE_AND_APPROVAL_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ROLE AND APPROVAL POLICY
 # ============================================================
@@ -7854,11 +8413,9 @@ must preserve explicit responsibility,
 clear final-decision ownership,
 and auditable separation of duties.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800003_PRODUCT_PORTFOLIO_MANAGER_ROLE_AND_APPROVAL_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800004_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800004_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ALERT AND NOTIFICATION POLICY
 # ============================================================
@@ -7964,11 +8521,9 @@ Alert and notification policy in ProductPortfolioManager
 must preserve clarity, explicitness, bounded visibility,
 and separation from final business decision authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800004_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800005_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800005_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SHARE SCOPE POLICY
 # ============================================================
@@ -8112,11 +8667,9 @@ formal_conclusion:
 Sharing in ProductPortfolioManager
 must remain explicit, bounded, revocable, and separate from business authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800005_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800006_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800006_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER AUDIT AND HISTORY POLICY
 # ============================================================
@@ -8231,11 +8784,9 @@ must preserve accountable chronology,
 bounded visibility,
 and clear separation between fact history and judgment history.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800006_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800007_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800007_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER KPI AND SCORING POLICY
 # ============================================================
@@ -8318,11 +8869,9 @@ must preserve explainability,
 version awareness,
 and explicit separation between evaluation support and final business decision authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800007_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800008_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800008_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION AND LIFECYCLE POLICY
 # ============================================================
@@ -8391,11 +8940,9 @@ Lifecycle and classification policy in ProductPortfolioManager
 must preserve clear meaning boundaries
 while still allowing lifecycle context to inform strategic review.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800008_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800009_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800009_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER REVIEW SESSION POLICY
 # ============================================================
@@ -8463,11 +9010,9 @@ Review session policy in ProductPortfolioManager
 must preserve explicit comparison, bounded decision meaning,
 and clear separation from approval authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800009_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800010_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800010_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PROPOSAL POLICY
 # ============================================================
@@ -8537,11 +9082,9 @@ must preserve explicit meaning,
 governed progression,
 and clear separation from approval and execution truth.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800010_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800011_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800011_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ERP BOUNDARY POLICY
 # ============================================================
@@ -8610,11 +9153,9 @@ must preserve source clarity,
 bounded mutation expectations,
 and operator understanding of what is fact versus judgment.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800011_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800012_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800012_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FORECAST BOUNDARY POLICY
 # ============================================================
@@ -8686,11 +9227,9 @@ must preserve advisory meaning,
 confidence awareness,
 and explicit separation from final judgment authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800012_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800013_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800013_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SETTINGS LOCALE CURRENCY PRESET POLICY
 # ============================================================
@@ -8765,11 +9304,9 @@ must preserve explicit presentation control,
 clear money interpretation,
 and bounded operator customization.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800013_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800014_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800014_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FRESHNESS BY SURFACE POLICY
 # ============================================================
@@ -8860,11 +9397,9 @@ must preserve context-aware interpretation,
 clear stale visibility,
 and stronger recency discipline where decision impact is highest.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800014_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_POLICY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/080.policy/0800015_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800015_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_POLICY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER NOTIFICATION RECIPIENT MATRIX POLICY
 # ============================================================
@@ -8956,11 +9491,75 @@ must preserve bounded relevance,
 visibility safety,
 and clear separation from workflow authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/080.policy/0800015_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_POLICY.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/090.interface/0900000_PRODUCT_PORTFOLIO_MANAGER_INTERFACE_INDEX.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000000_PRODUCT_PORTFOLIO_MANAGER_SECURITY_OVERVIEW.md
+# PRODUCT PORTFOLIO MANAGER INTERFACE INDEX
 # ============================================================
 
+files:
+
+- 090330_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_INTERFACE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/090.interface/0900000_PRODUCT_PORTFOLIO_MANAGER_INTERFACE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/090.interface/090330_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_INTERFACE.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PORTFOLIO_COCKPIT_INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: ProductPortfolioManager
+directory: 090.interface
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: portfolio-cockpit-interface
+
+purpose:
+Makes the portfolio cockpit screen hierarchy explicit.
+
+screen_goal:
+- show what threatens portfolio trust or decision-support readiness right now
+- unify prioritization exceptions, management attention, and decision-support readiness
+- provide one management-control review pass before diving into detail screens
+
+screen_sections:
+- portfolio summary header
+- prioritization exception stack
+- management attention stack
+- decision-support readiness panel
+- quick jump to prioritization exception review
+
+item_card_fields:
+- item title
+- short summary
+- state badge
+- effective time
+- owner badge
+- approval badge
+- quick action buttons
+
+primary_actions:
+- open portfolio detail
+- open exception review
+- open approval review
+- approve prioritization
+- hold prioritization
+- open decision-support detail
+
+interface_rules:
+- prioritization exceptions must be separated visually from management attention items
+- decision-support items must stay visible above long detail lists
+- cockpit must be scannable in one vertical pass
+- deep item editing belongs elsewhere; cockpit is a control surface first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/090.interface/090330_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_COCKPIT_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000000_PRODUCT_PORTFOLIO_MANAGER_SECURITY_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SECURITY OVERVIEW
 # ============================================================
@@ -8978,11 +9577,9 @@ security_focus:
 - audit preservation
 - integration authentication
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000000_PRODUCT_PORTFOLIO_MANAGER_SECURITY_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000001_ACCESS_AND_AUDIT_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000001_ACCESS_AND_AUDIT_SECURITY.md -->
 # ============================================================
 # ACCESS AND AUDIT SECURITY
 # ============================================================
@@ -9005,11 +9602,9 @@ security_rules:
 - approvers must remain explicit
 - audit trails must preserve meaningful before/after context
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000001_ACCESS_AND_AUDIT_SECURITY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000001_ACCESS_CONTROL_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000001_ACCESS_CONTROL_SECURITY.md -->
 # ============================================================
 # ACCESS CONTROL SECURITY
 # ============================================================
@@ -9032,11 +9627,9 @@ security_rules:
 - approvers must be explicit
 - integration actions require elevated authority
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000001_ACCESS_CONTROL_SECURITY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000002_AUDIT_AND_APPROVAL_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000002_AUDIT_AND_APPROVAL_SECURITY.md -->
 # ============================================================
 # AUDIT AND APPROVAL SECURITY
 # ============================================================
@@ -9053,11 +9646,9 @@ controls:
 - before/after visibility
 - immutable history orientation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000002_AUDIT_AND_APPROVAL_SECURITY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000002_PRODUCT_PORTFOLIO_MANAGER_AUTHORIZATION_FORMAL_DESIGN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000002_PRODUCT_PORTFOLIO_MANAGER_AUTHORIZATION_FORMAL_DESIGN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER AUTHORIZATION FORMAL DESIGN
 # ============================================================
@@ -9490,11 +10081,9 @@ clear separation between seeing, drafting, managing, approving, and auditing.
 The application must remain safe against
 implicit authority expansion and hidden ERP-boundary erosion.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000002_PRODUCT_PORTFOLIO_MANAGER_AUTHORIZATION_FORMAL_DESIGN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000003_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000003_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_SECURITY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SHARE SCOPE SECURITY
 # ============================================================
@@ -9610,11 +10199,9 @@ Share-scope security in ProductPortfolioManager
 must preserve explicit bounded access
 without granting hidden edit or approval power.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000003_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_SECURITY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000004_PRODUCT_PORTFOLIO_MANAGER_AUDIT_HISTORY_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000004_PRODUCT_PORTFOLIO_MANAGER_AUDIT_HISTORY_SECURITY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER AUDIT HISTORY SECURITY
 # ============================================================
@@ -9698,11 +10285,9 @@ Audit-history security in ProductPortfolioManager
 must preserve trustworthy traceability
 without creating hidden authority escalation or unintended data leakage.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000004_PRODUCT_PORTFOLIO_MANAGER_AUDIT_HISTORY_SECURITY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/100.security/1000005_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000005_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_SECURITY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER NOTIFICATION RECIPIENT SECURITY
 # ============================================================
@@ -9774,11 +10359,9 @@ Notification recipient security in ProductPortfolioManager
 must ensure that relevance and delivery convenience
 never override visibility and authorization boundaries.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/100.security/1000005_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_SECURITY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/110.infrastructure/1100000_PRODUCT_PORTFOLIO_MANAGER_INFRASTRUCTURE_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/110.infrastructure/1100000_PRODUCT_PORTFOLIO_MANAGER_INFRASTRUCTURE_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER INFRASTRUCTURE OVERVIEW
 # ============================================================
@@ -9795,11 +10378,9 @@ infrastructure_shape:
 - integration gateways for ERP and forecast references
 - local draft / sync support where applicable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/110.infrastructure/1100000_PRODUCT_PORTFOLIO_MANAGER_INFRASTRUCTURE_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/110.infrastructure/1100001_PERSISTENCE_INFRASTRUCTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/110.infrastructure/1100001_PERSISTENCE_INFRASTRUCTURE.md -->
 # ============================================================
 # PERSISTENCE INFRASTRUCTURE
 # ============================================================
@@ -9820,11 +10401,36 @@ storage_domains:
 - review decisions
 - alerts
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/110.infrastructure/1100001_PERSISTENCE_INFRASTRUCTURE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200000_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_INDEX.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200000_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_OVERVIEW.md
+# PRODUCT PORTFOLIO MANAGER IMPLEMENTATION INDEX
 # ============================================================
 
+files:
+
+- 120300_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_IMPLEMENTATION_GUIDE.md
+
+- 120310_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 120320_PRODUCTPORTFOLIOMANAGER_PHASE_A_STUB_FILE_PLAN.md
+
+- 120330_PRODUCTPORTFOLIOMANAGER_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120340_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120350_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120360_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120370_PRODUCTPORTFOLIOMANAGER_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120380_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200000_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200000_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER IMPLEMENTATION OVERVIEW
 # ============================================================
@@ -9845,11 +10451,9 @@ first_class_requirements:
 - multi-currency support from first monetary view
 - iphone / android / pc / tablet capability parity
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200000_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200001_FUNCTIONAL_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200001_FUNCTIONAL_REQUIREMENTS.md -->
 # ============================================================
 # FUNCTIONAL REQUIREMENTS
 # ============================================================
@@ -9872,11 +10476,9 @@ functional_core:
 - comparison board
 - settings for language and currency
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200001_FUNCTIONAL_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200001_UI_IMPLEMENTATION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200001_UI_IMPLEMENTATION.md -->
 # ============================================================
 # UI IMPLEMENTATION
 # ============================================================
@@ -9912,11 +10514,9 @@ ui_currency_requirements:
 - every monetary view must expose currency clearly
 - mixed-currency reporting views must show conversion context where applicable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200001_UI_IMPLEMENTATION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200002_DATA_AND_API_IMPLEMENTATION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200002_DATA_AND_API_IMPLEMENTATION.md -->
 # ============================================================
 # DATA AND API IMPLEMENTATION
 # ============================================================
@@ -9935,11 +10535,9 @@ implementation_order:
 5. review endpoints
 6. integration reference endpoints
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200002_DATA_AND_API_IMPLEMENTATION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200002_SCREEN_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200002_SCREEN_REQUIREMENTS.md -->
 # ============================================================
 # SCREEN REQUIREMENTS
 # ============================================================
@@ -9972,11 +10570,9 @@ screen_rules:
 - tablet layouts may support split-view review
 - pc layouts should maximize comparison density
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200002_SCREEN_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200003_DATA_MODEL_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200003_DATA_MODEL_REQUIREMENTS.md -->
 # ============================================================
 # DATA MODEL REQUIREMENTS
 # ============================================================
@@ -10009,11 +10605,9 @@ required_models:
 - product_view_preset
 - product_sync_state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200003_DATA_MODEL_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER API CONTRACT EXACT
 # ============================================================
@@ -10164,11 +10758,9 @@ phase_2_required_routes:
 - /api/product-portfolio/approval-decision/save
 - /api/product-portfolio/alerts/list
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_TO_API_MAPPING.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_TO_API_MAPPING.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SCREEN TO API MAPPING
 # ============================================================
@@ -10233,11 +10825,9 @@ screen_to_api_mapping:
     primary_routes:
       - /api/product-portfolio/alerts/list
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_TO_API_MAPPING.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200006_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200006_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ALERT AND NOTIFICATION REQUIREMENTS
 # ============================================================
@@ -10334,11 +10924,9 @@ formal_conclusion:
 ProductPortfolioManager must treat alerts as structured operational signals
 and notifications as controlled delivery surfaces for those signals and related workflow events.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200006_PRODUCT_PORTFOLIO_MANAGER_ALERT_AND_NOTIFICATION_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200007_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200007_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SHARE SCOPE REQUIREMENTS
 # ============================================================
@@ -10442,11 +11030,9 @@ ProductPortfolioManager must handle share scope
 as an explicit visibility-control layer,
 not as a shortcut for authority transfer.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200007_PRODUCT_PORTFOLIO_MANAGER_SHARE_SCOPE_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200008_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200008_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER AUDIT AND HISTORY REQUIREMENTS
 # ============================================================
@@ -10555,11 +11141,9 @@ ProductPortfolioManager must expose audit and history
 as a first-class explainability and accountability surface
 for product judgment operations.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200008_PRODUCT_PORTFOLIO_MANAGER_AUDIT_AND_HISTORY_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200009_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200009_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER KPI AND SCORING REQUIREMENTS
 # ============================================================
@@ -10661,11 +11245,9 @@ formal_conclusion:
 ProductPortfolioManager must implement KPI and scoring
 as visible, explainable, period-aware, and version-aware judgment support surfaces.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200009_PRODUCT_PORTFOLIO_MANAGER_KPI_AND_SCORING_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200010_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200010_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION AND LIFECYCLE REQUIREMENTS
 # ============================================================
@@ -10742,11 +11324,9 @@ ProductPortfolioManager must present lifecycle and classification
 as distinct but related judgment surfaces,
 with clear explanation, filtering, and history behavior.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200010_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_AND_LIFECYCLE_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200011_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200011_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER REVIEW SESSION REQUIREMENTS
 # ============================================================
@@ -10829,11 +11409,9 @@ ProductPortfolioManager must implement review sessions
 as structured comparison and decision surfaces
 with explicit follow-up and approval handoff behavior.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200011_PRODUCT_PORTFOLIO_MANAGER_REVIEW_SESSION_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200012_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200012_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PROPOSAL REQUIREMENTS
 # ============================================================
@@ -10919,11 +11497,9 @@ ProductPortfolioManager must implement proposals
 as typed, stateful, traceable business action candidates
 with clear context and governance linkage.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200012_PRODUCT_PORTFOLIO_MANAGER_PROPOSAL_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200013_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200013_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ERP BOUNDARY REQUIREMENTS
 # ============================================================
@@ -10998,11 +11574,9 @@ formal_conclusion:
 ProductPortfolioManager must implement ERP boundary handling
 as explicit reference, explicit attribution, and explicit separation from judgment ownership.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200013_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200014_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200014_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FORECAST BOUNDARY REQUIREMENTS
 # ============================================================
@@ -11079,11 +11653,9 @@ formal_conclusion:
 ProductPortfolioManager must implement forecast-boundary handling
 as explicit advisory context with visible source, confidence, and timing meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200014_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200015_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200015_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DASHBOARD LIST COMPARISON REQUIREMENTS
 # ============================================================
@@ -11225,11 +11797,9 @@ and comparison surfaces
 as first-class judgment-entry and triage surfaces
 for portfolio operations.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200015_PRODUCT_PORTFOLIO_MANAGER_DASHBOARD_LIST_COMPARISON_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200016_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200016_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PRODUCT DETAIL AND SCORE DETAIL REQUIREMENTS
 # ============================================================
@@ -11362,11 +11932,9 @@ ProductPortfolioManager must implement product detail
 and score detail as core single-product judgment and explainability surfaces
 with explicit context, source clarity, and action continuity.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200016_PRODUCT_PORTFOLIO_MANAGER_PRODUCT_DETAIL_AND_SCORE_DETAIL_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200017_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200017_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER CLASSIFICATION CHANGE AND PROPOSAL DETAIL REQUIREMENTS
 # ============================================================
@@ -11494,11 +12062,9 @@ with explicit state meaning,
 supporting context,
 and history visibility.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200017_PRODUCT_PORTFOLIO_MANAGER_CLASSIFICATION_CHANGE_AND_PROPOSAL_DETAIL_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200018_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200018_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER APPROVAL ALERT AUDIT LIST REQUIREMENTS
 # ============================================================
@@ -11645,11 +12211,9 @@ for decisions,
 attention management,
 and explainability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200018_PRODUCT_PORTFOLIO_MANAGER_APPROVAL_ALERT_AUDIT_LIST_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200019_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200019_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SETTINGS LOCALE CURRENCY PRESET REQUIREMENTS
 # ============================================================
@@ -11761,11 +12325,9 @@ display/reporting currency,
 and saved view presets
 as explicit user-facing presentation controls and efficiency tools.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200019_PRODUCT_PORTFOLIO_MANAGER_SETTINGS_LOCALE_CURRENCY_PRESET_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200020_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200020_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FRESHNESS BY SURFACE REQUIREMENTS
 # ============================================================
@@ -11861,11 +12423,9 @@ ProductPortfolioManager must implement freshness-by-surface behavior
 so that operators can judge recency appropriately
 based on the purpose of each surface.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200020_PRODUCT_PORTFOLIO_MANAGER_FRESHNESS_BY_SURFACE_REQUIREMENTS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/120.implementation/1200021_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200021_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_REQUIREMENTS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER NOTIFICATION RECIPIENT MATRIX REQUIREMENTS
 # ============================================================
@@ -11967,11 +12527,538 @@ ProductPortfolioManager must implement notification recipient resolution
 as a bounded, explainable, policy-driven process
 grounded in ownership, assignment, severity, and visibility.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/1200021_PRODUCT_PORTFOLIO_MANAGER_NOTIFICATION_RECIPIENT_MATRIX_REQUIREMENTS.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120300_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/130.development/1300000_PRODUCT_PORTFOLIO_MANAGER_DEVELOPMENT_OVERVIEW.md
+# PRODUCTPORTFOLIOMANAGER PORTFOLIO_CONTROL_IMPLEMENTATION_GUIDE
 # ============================================================
 
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: portfolio-control-implementation-guide
+
+purpose:
+Provides the first implementation-oriented guide for the newly
+clarified differentiator in ProductPortfolioManager.
+
+implementation_priority:
+- Phase A should begin from portfolio cockpit and prioritization visibility,
+  not from generic board expansion.
+- Management control should become visible before deeper automation.
+
+recommended_phase_a_entry:
+- fix row families for portfolio timeline, prioritization exception review,
+  and cockpit outputs
+- freeze cockpit and exception-review DTOs
+- separate raw product detail handling from portfolio readiness aggregation
+- create slice order:
+  - portfolio cockpit query
+  - scenario exception review query
+  - approval action
+  - decision-support readiness review
+
+hard_rules:
+- keep raw product detail separate from portfolio rollup state
+- keep approval and exception review separate from raw history
+- do not collapse threshold breaches into only notes
+- do not bury decision-support blockers inside generic board annotations
+
+implementation_readiness_signal:
+- once DDL, DTO, stub boundaries, and slice order are frozen,
+  ProductPortfolioManager can follow the same bundled Phase A pattern used in
+  the previously completed BusinessOS apps.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120300_PRODUCTPORTFOLIOMANAGER_PORTFOLIO_CONTROL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120310_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A PORTFOLIO TIMELINE IMPLEMENTATION SKELETON
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-portfolio-timeline-implementation-skeleton
+
+purpose:
+Defines the first implementation skeleton for ProductPortfolioManager
+Phase A management control without starting runtime generation.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- keep raw product detail handling separate from portfolio rollup state
+- keep audit append separate from review query repositories
+
+recommended_server_modules:
+- api/controller
+- api/dto
+- application/service
+- application/validator
+- application/mapper
+- domain/model
+- domain/port
+- infrastructure/repository
+- infrastructure/audit
+
+phase_a_skeleton_units:
+- PortfolioCockpitQueryController
+- PortfolioCockpitQueryService
+- PortfolioCockpitQueryValidator
+- PortfolioControlTimelineRepository
+- ScenarioExceptionReviewController
+- ScenarioExceptionReviewService
+- ScenarioExceptionReviewValidator
+- ScenarioExceptionReviewRepository
+- PortfolioCockpitSnapshotRepository
+- ProductPortfolioManagerAuditWriter
+
+responsibility_split:
+- controller:
+  - request parsing
+  - auth context handoff
+  - response serialization
+- service:
+  - cockpit assembly
+  - prioritization review orchestration
+  - summary message assembly
+- validator:
+  - required field checks
+  - page boundary checks
+  - Phase A scope rejection
+- mapper:
+  - dto to domain mapping
+  - domain to response mapping
+- repository:
+  - persistence and query only
+  - no business branching
+- audit:
+  - append events after relevant review operations when needed
+
+phase_a_build_order:
+- step_01_portfolio_cockpit_query_path
+- step_02_scenario_exception_review_query_path
+- step_03_add snapshot and audit path
+- step_04_add test baseline
+
+minimum_test_families:
+- portfolio_cockpit_query_success
+- portfolio_cockpit_query_validation_failure
+- scenario_exception_review_query_success
+- scenario_exception_review_include_resolved_toggle
+- scenario_exception_review_include_decision_support_blockers_toggle
+
+phase_a_exit_ready_definition:
+- DTO names compile against frozen contracts
+- cockpit and exception review boundaries are explicit
+- row-family assumptions align to the DDL additive plan
+- audit append seam is present where needed
+
+explicit_non_scope:
+- no product write automation in this document
+- no portfolio publication workflow here
+- no external BI execution here
+- no Android client work here
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120310_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120320_PRODUCTPORTFOLIOMANAGER_PHASE_A_STUB_FILE_PLAN.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A STUB FILE PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-stub-file-plan
+
+purpose:
+Defines the implementation-ready stub file boundary for
+ProductPortfolioManager Phase A management control.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- no Japanese literals in Java source
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append stays separate
+
+target_package_base:
+- com.lsam.ProductPortfolioManager
+
+target_server_source_root_example:
+- src/main/java/com/lsam/ProductPortfolioManager
+
+target_test_source_root_example:
+- src/test/java/com/lsam/ProductPortfolioManager
+
+phase_a_scope_modules:
+- portfolio cockpit query
+- scenario exception review query
+- cockpit snapshot and audit bridge
+
+recommended_stub_tree:
+- src/main/java/com/lsam/ProductPortfolioManager/api/controller/execution/PortfolioCockpitQueryController.java
+- src/main/java/com/lsam/ProductPortfolioManager/api/controller/execution/ScenarioExceptionReviewQueryController.java
+- src/main/java/com/lsam/ProductPortfolioManager/api/dto/execution/request/PortfolioCockpitQueryRequest.java
+- src/main/java/com/lsam/ProductPortfolioManager/api/dto/execution/request/ScenarioExceptionReviewQueryRequest.java
+- src/main/java/com/lsam/ProductPortfolioManager/api/dto/execution/response/PortfolioCockpitQueryResponse.java
+- src/main/java/com/lsam/ProductPortfolioManager/api/dto/execution/response/ScenarioExceptionReviewQueryResponse.java
+- src/main/java/com/lsam/ProductPortfolioManager/api/dto/common/ErrorResponse.java
+- src/main/java/com/lsam/ProductPortfolioManager/application/service/execution/PortfolioCockpitQueryService.java
+- src/main/java/com/lsam/ProductPortfolioManager/application/service/execution/ScenarioExceptionReviewQueryService.java
+- src/main/java/com/lsam/ProductPortfolioManager/application/validator/execution/PortfolioCockpitQueryValidator.java
+- src/main/java/com/lsam/ProductPortfolioManager/application/validator/execution/ScenarioExceptionReviewQueryValidator.java
+- src/main/java/com/lsam/ProductPortfolioManager/application/mapper/execution/PortfolioCockpitQueryMapper.java
+- src/main/java/com/lsam/ProductPortfolioManager/application/mapper/execution/ScenarioExceptionReviewQueryMapper.java
+- src/main/java/com/lsam/ProductPortfolioManager/domain/model/execution/PortfolioControlTimelineItem.java
+- src/main/java/com/lsam/ProductPortfolioManager/domain/model/execution/PrioritizationExceptionReviewItem.java
+- src/main/java/com/lsam/ProductPortfolioManager/domain/model/execution/PortfolioCockpitSnapshot.java
+- src/main/java/com/lsam/ProductPortfolioManager/domain/port/execution/PortfolioControlTimelineRepository.java
+- src/main/java/com/lsam/ProductPortfolioManager/domain/port/execution/ScenarioExceptionReviewRepository.java
+- src/main/java/com/lsam/ProductPortfolioManager/domain/port/execution/PortfolioCockpitSnapshotRepository.java
+- src/main/java/com/lsam/ProductPortfolioManager/domain/port/execution/ProductPortfolioManagerAuditPort.java
+- src/main/java/com/lsam/ProductPortfolioManager/infrastructure/repository/execution/JdbcPortfolioControlTimelineRepository.java
+- src/main/java/com/lsam/ProductPortfolioManager/infrastructure/repository/execution/JdbcScenarioExceptionReviewRepository.java
+- src/main/java/com/lsam/ProductPortfolioManager/infrastructure/repository/execution/JdbcPortfolioCockpitSnapshotRepository.java
+- src/main/java/com/lsam/ProductPortfolioManager/infrastructure/audit/execution/DatabaseProductPortfolioManagerAuditAdapter.java
+- src/main/java/com/lsam/ProductPortfolioManager/config/execution/ProductPortfolioManagerPhaseAConfig.java
+- src/test/java/com/lsam/ProductPortfolioManager/application/service/execution/PortfolioCockpitQueryServiceTest.java
+- src/test/java/com/lsam/ProductPortfolioManager/application/service/execution/ScenarioExceptionReviewQueryServiceTest.java
+
+alignment_requirements:
+- DTO field names must follow the Phase A API DTO freeze
+- row-family assumptions must follow the DDL additive plan
+- cockpit and exception review responses must remain aligned to their fixed payload families
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120320_PRODUCTPORTFOLIOMANAGER_PHASE_A_STUB_FILE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120330_PRODUCTPORTFOLIOMANAGER_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A MODULE TASK BREAKDOWN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-module-task-breakdown
+
+purpose:
+Breaks the ProductPortfolioManager Phase A stub plan into module-by-module
+execution tasks.
+
+baseline_dependencies:
+- Phase A portfolio timeline DDL additive plan
+- Phase A API starter
+- Phase A API DTO field freeze
+- Phase A implementation skeleton
+
+recommended_execution_order:
+- module_01_request_response_dto
+- module_02_validators
+- module_03_portfolio_cockpit_query
+- module_04_scenario_exception_review_query
+- module_05_snapshot_and_audit_bridge
+- module_06_configuration
+- module_07_tests
+
+module_01_request_response_dto:
+  goal:
+    - create exact request and response DTO classes
+
+module_02_validators:
+  goal:
+    - reject invalid request shapes before service entry
+
+module_03_portfolio_cockpit_query:
+  goal:
+    - assemble prioritization exceptions, management attention, and decision-support visibility
+
+module_04_scenario_exception_review_query:
+  goal:
+    - expose prioritization and decision-support blocker review rows
+
+module_05_snapshot_and_audit_bridge:
+  goal:
+    - define optional snapshot persistence and audit append boundary
+
+module_06_configuration:
+  goal:
+    - provide minimum wiring boundary
+
+module_07_tests:
+  goal:
+    - establish minimum Phase A test safety net
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120330_PRODUCTPORTFOLIOMANAGER_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120340_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A EXACT STUB CONTENT ORDER PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-exact-stub-content-order-plan
+
+purpose:
+Defines the exact file content writing order for ProductPortfolioManager
+Phase A stub generation.
+
+content_order_strategy:
+- start from dependency-light files
+- lock contracts first
+- write ports before adapters
+- write tests after service boundaries are clear
+
+first_slice_recommended_start:
+- ErrorResponse
+- PortfolioCockpitQueryRequest
+- PortfolioCockpitQueryResponse
+- PortfolioCockpitQueryValidator
+- PortfolioControlTimelineItem
+- PortfolioControlTimelineRepository
+- PortfolioCockpitQueryMapper
+- PortfolioCockpitQueryService
+- PortfolioCockpitQueryController
+- JdbcPortfolioControlTimelineRepository
+- DatabaseProductPortfolioManagerAuditAdapter
+- ProductPortfolioManagerPhaseAConfig
+- PortfolioCockpitQueryServiceTest
+
+why_this_order:
+- starts from contract-first
+- keeps the first compile graph shallow
+- enables the cockpit query as the narrowest first vertical slice
+- delays exception review query until cockpit boundaries are stable
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120340_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120350_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_COMMAND_PACKS.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A SLICE COMMAND PACKS
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-command-packs
+
+purpose:
+Fixes the Termux-oriented stub generation packs for the ProductPortfolioManager
+Phase A vertical slices.
+
+execution_policy:
+- design fixation only in this step
+- actual execution is later
+- Termux one-block style
+- mkdir -p plus cat standard
+- package base is com.lsam.ProductPortfolioManager
+- no Japanese literals in Java source
+- additive only
+
+slice_01_portfolio_cockpit_query:
+  default_safe_output_root:
+    - $HOME/.tmp/productportfoliomanager-phase-a-slice01
+
+slice_02_scenario_exception_review_query:
+  default_safe_output_root:
+    - $HOME/.tmp/productportfoliomanager-phase-a-slice02
+
+slice_03_snapshot_and_audit_bridge:
+  default_safe_output_root:
+    - $HOME/.tmp/productportfoliomanager-phase-a-slice03
+
+note:
+- actual stub generation should follow the fixed stub file plan and content order plan
+- command packs remain the only sequence authority during later execution
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120350_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_COMMAND_PACKS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120360_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A SLICE FIELD FILL PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-field-fill-plan
+
+purpose:
+Defines what each Phase A slice should contain once empty stubs move
+into field-filled implementation-ready stubs.
+
+global_rules:
+- exact field names follow the DTO freeze exactly
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append remains separate
+- no Japanese literals in Java source
+
+slice_01_portfolio_cockpit_query:
+  expected_fill:
+    - request, response, validator, mapper, service, controller, repository, audit, config, tests
+
+slice_02_scenario_exception_review_query:
+  expected_fill:
+    - request, response, validator, mapper, service, controller, repository, tests
+
+slice_03_snapshot_and_audit_bridge:
+  expected_fill:
+    - snapshot model, snapshot repository, audit port, snapshot adapter, audit adapter
+
+done_definition:
+- all slice seams are fixed
+- DTO and row-family alignment is explicit
+- tests are named before runtime generation begins
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120360_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120370_PRODUCTPORTFOLIOMANAGER_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A IMPLEMENTATION READY COMPLETION MEMO
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-implementation-ready-completion
+
+purpose:
+Declares that ProductPortfolioManager Phase A planning has reached
+implementation-ready status without starting real runtime generation.
+
+completion_basis:
+- competitive positioning note added
+- portfolio signal aggregation architecture added
+- prioritization scenario exception architecture added
+- portfolio control timeline model added
+- portfolio cockpit and scenario exception exact payloads added
+- portfolio cockpit interface added
+- portfolio control implementation guide added
+- Phase A DDL additive plan added
+- Phase A API starter added
+- Phase A DTO field freeze added
+- Phase A implementation skeleton added
+- stub file plan added
+- module task breakdown added
+- exact stub content order plan added
+- slice command packs added
+- slice field-fill plan added
+
+implementation_ready_definition_met:
+- the design no longer depends on unresolved major architecture questions
+- the remaining work is fill-in and generation, not rediscovery
+- slice-by-slice execution order is fixed
+- DTO and row-family drift is constrained
+- audit separation remains explicit
+
+conclusion:
+- ProductPortfolioManager Phase A is implementation-ready at the design level.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120370_PRODUCTPORTFOLIOMANAGER_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120380_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PHASE A EXECUTION ENTRY PROTOCOL
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProductPortfolioManager
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-execution-entry-protocol
+
+purpose:
+Defines the exact protocol to follow when the project later moves
+from planning artifacts into actual stub generation or SQL execution.
+
+entry_principles:
+- do not begin from slice_03
+- do not generate all files at once without slice order
+- do not execute SQL before review
+- keep additive only
+- keep command packs as the sole sequence authority
+- do not reopen already frozen DTO names casually
+
+execution_start_order:
+- step_01:
+  - execute slice_01 command pack into a safe output root
+- step_02:
+  - fill slice_01 contents according to the field-fill plan
+- step_03:
+  - review compile surface and naming consistency
+- step_04:
+  - execute slice_02 command pack
+- step_05:
+  - fill slice_02 contents according to the field-fill plan
+- step_06:
+  - review cockpit-to-exception-review seam
+- step_07:
+  - execute slice_03 command pack
+- step_08:
+  - fill slice_03 contents according to the field-fill plan
+- step_09:
+  - review snapshot and audit seams
+- step_10:
+  - only after design-to-code review, prepare SQL apply pack
+- step_11:
+  - only after review, execute additive SQL in controlled order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/120.implementation/120380_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/130.development/1300000_PRODUCT_PORTFOLIO_MANAGER_DEVELOPMENT_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DEVELOPMENT OVERVIEW
 # ============================================================
@@ -11986,11 +13073,9 @@ development_rule:
 Architecture-first and additive-only development.
 No implementation may erode the ERP boundary or auditability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/130.development/1300000_PRODUCT_PORTFOLIO_MANAGER_DEVELOPMENT_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/130.development/1300001_PHASE_PLAN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/130.development/1300001_PHASE_PLAN.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PHASE PLAN
 # ============================================================
@@ -12028,11 +13113,9 @@ phase_4:
 - richer reporting
 - stronger automation aids
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/130.development/1300001_PHASE_PLAN.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/130.development/1300002_DEVELOPMENT_GUARDRAILS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/130.development/1300002_DEVELOPMENT_GUARDRAILS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DEVELOPMENT GUARDRAILS
 # ============================================================
@@ -12051,11 +13134,9 @@ guardrails:
 - no phase-less fixes
 - no uncontrolled authority expansion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/130.development/1300002_DEVELOPMENT_GUARDRAILS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000000_PRODUCT_PORTFOLIO_MANAGER_META_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000000_PRODUCT_PORTFOLIO_MANAGER_META_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER META OVERVIEW
 # ============================================================
@@ -12069,11 +13150,9 @@ prepared_by: Zero
 meta_purpose:
 Holds meta-level maintenance notes for the ProductPortfolioManager design set.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000000_PRODUCT_PORTFOLIO_MANAGER_META_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000001_PRODUCT_PORTFOLIO_MANAGER_DESIGN_PROGRESS_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000001_PRODUCT_PORTFOLIO_MANAGER_DESIGN_PROGRESS_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DESIGN PROGRESS NOTE
 # ============================================================
@@ -12098,11 +13177,9 @@ next_recommended_topics:
 - exact score explanation payloads
 - exact API request / response contracts
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000001_PRODUCT_PORTFOLIO_MANAGER_DESIGN_PROGRESS_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000002_PRODUCT_PORTFOLIO_MANAGER_ROOT_REFRESH_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000002_PRODUCT_PORTFOLIO_MANAGER_ROOT_REFRESH_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ROOT REFRESH NOTE
 # ============================================================
@@ -12128,11 +13205,9 @@ refresh_result:
 - integrated summary aligned with current design coverage
 - implementation still not started
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000002_PRODUCT_PORTFOLIO_MANAGER_ROOT_REFRESH_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000003_PRODUCT_PORTFOLIO_MANAGER_DUPLICATION_AND_GAP_REVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000003_PRODUCT_PORTFOLIO_MANAGER_DUPLICATION_AND_GAP_REVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DUPLICATION AND GAP REVIEW
 # ============================================================
@@ -12310,11 +13385,9 @@ formal_conclusion:
 ProductPortfolioManager is past the "missing structure" stage.
 It is now in the "cleanup, standardization, and selective deepening" stage.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000003_PRODUCT_PORTFOLIO_MANAGER_DUPLICATION_AND_GAP_REVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000004_PRODUCT_PORTFOLIO_MANAGER_STANDARDIZATION_PASS_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000004_PRODUCT_PORTFOLIO_MANAGER_STANDARDIZATION_PASS_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER STANDARDIZATION PASS NOTE
 # ============================================================
@@ -12364,11 +13437,9 @@ formal_conclusion:
 The next cleanup pass should improve readability and navigation quality
 without weakening governance meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000004_PRODUCT_PORTFOLIO_MANAGER_STANDARDIZATION_PASS_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000005_PRODUCT_PORTFOLIO_MANAGER_NEXT_DESIGN_BACKLOG.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000005_PRODUCT_PORTFOLIO_MANAGER_NEXT_DESIGN_BACKLOG.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER NEXT DESIGN BACKLOG
 # ============================================================
@@ -12408,11 +13479,9 @@ formal_conclusion:
 No implementation backlog is opened here.
 This backlog remains design-only.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000005_PRODUCT_PORTFOLIO_MANAGER_NEXT_DESIGN_BACKLOG.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000006_PRODUCT_PORTFOLIO_MANAGER_WIDE_INDEX_REFLECTION_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000006_PRODUCT_PORTFOLIO_MANAGER_WIDE_INDEX_REFLECTION_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER WIDE INDEX REFLECTION OVERVIEW
 # ============================================================
@@ -12457,11 +13526,23 @@ Wide index reflection for ProductPortfolioManager
 should improve discoverability and restartability,
 not change design ownership or scope.
 
+- 900410_PRODUCTPORTFOLIOMANAGER_20260416_DIFF_AUDIT_NOTE.md
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000010_PRODUCT_PORTFOLIO_MANAGER_COMPRESSION_PASS_OVERVIEW.md
-# ============================================================
+- 900420_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
 
+- 900430_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 900440_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900450_PRODUCTPORTFOLIOMANAGER_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900460_PRODUCTPORTFOLIOMANAGER_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900470_PRODUCTPORTFOLIOMANAGER_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000006_PRODUCT_PORTFOLIO_MANAGER_WIDE_INDEX_REFLECTION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000010_PRODUCT_PORTFOLIO_MANAGER_COMPRESSION_PASS_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER COMPRESSION PASS OVERVIEW
 # ============================================================
@@ -12495,11 +13576,9 @@ formal_conclusion:
 Compression is a readability pass,
 not a meaning-reduction pass.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000010_PRODUCT_PORTFOLIO_MANAGER_COMPRESSION_PASS_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000019_PRODUCT_PORTFOLIO_MANAGER_DESIGN_CLOSURE_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000019_PRODUCT_PORTFOLIO_MANAGER_DESIGN_CLOSURE_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER DESIGN CLOSURE NOTE
 # ============================================================
@@ -12639,11 +13718,9 @@ formal_conclusion:
 This design phase may be considered closed in principle.
 Further work is refinement-oriented unless a later phase explicitly opens implementation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000019_PRODUCT_PORTFOLIO_MANAGER_DESIGN_CLOSURE_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000023_PRODUCT_PORTFOLIO_MANAGER_FINAL_STATE_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000023_PRODUCT_PORTFOLIO_MANAGER_FINAL_STATE_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FINAL STATE NOTE
 # ============================================================
@@ -12678,11 +13755,9 @@ Open a new phase explicitly:
 formal_conclusion:
 Current design work can stop cleanly here.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000023_PRODUCT_PORTFOLIO_MANAGER_FINAL_STATE_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000027_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_READY_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000027_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_READY_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER BROAD REFLECTION READY NOTE
 # ============================================================
@@ -12712,11 +13787,9 @@ not_done_here:
 formal_conclusion:
 Broad reflection readiness is complete locally.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000027_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_READY_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000035_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_READY_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000035_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_READY_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER WIDE INSERT READY NOTE
 # ============================================================
@@ -12745,11 +13818,9 @@ not_done_here:
 formal_conclusion:
 Local preparation for broad insertion is complete.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000035_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_READY_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000053_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_READY_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000053_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_READY_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED TARGET PATCH READY NOTE
 # ============================================================
@@ -12777,11 +13848,9 @@ formal_conclusion:
 ProductPortfolioManager is now locally ready
 for a separate patch-application phase against uploaded broad canonicals.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000053_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_READY_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000062_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_START_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000062_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_START_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER IMPLEMENTATION PREPARATION START NOTE
 # ============================================================
@@ -12925,11 +13994,9 @@ ProductPortfolioManager is now ready to enter
 implementation preparation as a distinct phase.
 Actual implementation remains unopened until a later explicit start.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000062_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_START_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000063_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_CHECKLIST.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000063_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_CHECKLIST.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER IMPLEMENTATION PREPARATION CHECKLIST
 # ============================================================
@@ -12963,11 +14030,9 @@ formal_conclusion:
 When this checklist is effectively satisfied,
 implementation preparation may be considered complete.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000063_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_CHECKLIST.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000064_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_COMPLETION_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000064_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_COMPLETION_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER IMPLEMENTATION PREPARATION COMPLETION NOTE
 # ============================================================
@@ -13089,11 +14154,9 @@ ProductPortfolioManager may now be treated as
 implementation-preparation-complete.
 A later explicit phase opening is still required before actual implementation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000064_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_COMPLETION_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000065_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_FINAL_CHECK.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000065_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_FINAL_CHECK.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER IMPLEMENTATION PREPARATION FINAL CHECK
 # ============================================================
@@ -13128,11 +14191,9 @@ final_check_result_template:
 formal_conclusion:
 Use this file as the simplest completion gate.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000065_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PREPARATION_FINAL_CHECK.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000066_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PHASE_OPENING_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000066_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PHASE_OPENING_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER IMPLEMENTATION PHASE OPENING NOTE
 # ============================================================
@@ -13234,11 +14295,9 @@ formal_conclusion:
 Implementation phase opening is now document-ready.
 Actual coding should begin only from the exact contracts and first target scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000066_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PHASE_OPENING_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/9000067_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PHASE_1_SCOPE_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000067_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PHASE_1_SCOPE_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER IMPLEMENTATION PHASE 1 SCOPE NOTE
 # ============================================================
@@ -13273,13 +14332,271 @@ without overexpanding the first implementation slice.
 formal_conclusion:
 Phase 1 should stay narrow and useful.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/9000067_PRODUCT_PORTFOLIO_MANAGER_IMPLEMENTATION_PHASE_1_SCOPE_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900410_PRODUCTPORTFOLIOMANAGER_20260416_DIFF_AUDIT_NOTE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/index-reflection/9000007_PRODUCT_PORTFOLIO_MANAGER_APPLICATION_NAVIGATION_REFLECTION_NOTE.md
+# PRODUCTPORTFOLIOMANAGER 20260416 DIFF AUDIT NOTE
 # ============================================================
 
+status: canonical
+layer: meta
+system: applications
+application: ProductPortfolioManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: diff-audit-note
+
+purpose:
+Records the first differential reinforcement bundle applied to the
+existing ProductPortfolioManager design.
+
+preserved_core:
+- portfolio and product planning identity
+- existing business flow role
+- existing architecture layers
+- existing management support direction
+- existing platform direction
+
+added_in_this_bundle:
+- competitive positioning note
+- portfolio signal aggregation architecture
+- prioritization scenario exception architecture
+- portfolio control timeline model
+- portfolio cockpit exact payload
+- scenario exception review exact payload
+- portfolio cockpit interface note
+- portfolio control implementation guide
+
+why_this_bundle:
+- existing ProductPortfolioManager design already had strong portfolio output handling
+- what was less explicit was the management-control layer above raw portfolio presentation
+- this bundle makes the app more implementation-ready without rewriting its base
+
+recommended_next_step:
+- proceed to Phase A entry documents for portfolio timeline, DDL, DTO freeze,
+  and slice-based execution planning
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900410_PRODUCTPORTFOLIOMANAGER_20260416_DIFF_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900420_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
 # ============================================================
-# PRODUCT PORTFOLIO MANAGER APPLICATION NAVIGATION REFLECTION NOTE
+# PRODUCTPORTFOLIOMANAGER 20260416 BUNDLE02 PHASE A AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProductPortfolioManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle02-phase-a-audit
+
+purpose:
+Records the second reinforcement bundle applied to ProductPortfolioManager,
+covering Phase A entry documents and exact implementation-start
+boundaries.
+
+bundle02_contents:
+- 020.architecture/021140_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_DDL_ADDITIVE_PLAN.md
+- 060.integration/060320_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_STARTER.md
+- 060.integration/060330_PRODUCTPORTFOLIOMANAGER_PHASE_A_API_DTO_FIELD_FREEZE.md
+- 120.implementation/120310_PRODUCTPORTFOLIOMANAGER_PHASE_A_PORTFOLIO_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+result:
+- Phase A DDL direction fixed
+- Phase A endpoint set fixed
+- API DTO field set frozen
+- implementation skeleton fixed
+- ProductPortfolioManager now has the same kind of Phase A entry footing
+  that made the previous apps easier to continue in bundled form
+
+recommended_next_step:
+- proceed to bundle_03 for stub file plan, module task breakdown, and content order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900420_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900430_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER 20260416 BUNDLE03 STUB AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProductPortfolioManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle03-stub-audit
+
+purpose:
+Records the third reinforcement bundle applied to ProductPortfolioManager,
+covering the stub planning boundary for Phase A.
+
+bundle03_contents:
+- 120.implementation/120320_PRODUCTPORTFOLIOMANAGER_PHASE_A_STUB_FILE_PLAN.md
+- 120.implementation/120330_PRODUCTPORTFOLIOMANAGER_PHASE_A_MODULE_TASK_BREAKDOWN.md
+- 120.implementation/120340_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+result:
+- stub file boundary fixed
+- module task order fixed
+- exact stub content order fixed
+- ProductPortfolioManager now has a bundled Phase A planning posture
+  similar to the previously completed apps before command-pack generation
+
+recommended_next_step:
+- proceed to bundle_04 for command packs, field-fill plans, and closure
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900430_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900440_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER 20260416 BUNDLE04 CLOSEOUT_AUDIT_NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProductPortfolioManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle04-closeout-audit
+
+purpose:
+Records the fourth reinforcement bundle applied to ProductPortfolioManager,
+closing the Phase A planning layer at an implementation-ready state.
+
+bundle04_contents:
+- 120.implementation/120350_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_COMMAND_PACKS.md
+- 120.implementation/120360_PRODUCTPORTFOLIOMANAGER_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+- 120.implementation/120370_PRODUCTPORTFOLIOMANAGER_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+- 120.implementation/120380_PRODUCTPORTFOLIOMANAGER_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+result:
+- slice command packs fixed
+- field-fill plan fixed
+- implementation-ready completion declared
+- execution entry protocol fixed
+- ProductPortfolioManager planning can stop here cleanly unless execution begins or contradiction appears
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900440_PRODUCTPORTFOLIOMANAGER_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900450_PRODUCTPORTFOLIOMANAGER_NEXT_APP_TRANSITION_HANDOFF.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER NEXT APP TRANSITION HANDOFF
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProductPortfolioManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: next-app-transition-handoff
+
+purpose:
+Closes the current ProductPortfolioManager planning stream cleanly and makes it
+easy to move to the next BusinessOS application without reopening
+already-settled ProductPortfolioManager planning questions.
+
+current_status_summary:
+- differential reinforcement completed
+- bundle_01 completed
+- bundle_02 Phase A entry completed
+- bundle_03 stub planning completed
+- bundle_04 closeout completed
+- implementation-ready completion memo completed
+- execution entry protocol completed
+
+handoff_statement:
+- ProductPortfolioManager can now be treated as planning-closed and
+  next-app-transition-ready.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900450_PRODUCTPORTFOLIOMANAGER_NEXT_APP_TRANSITION_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900460_PRODUCTPORTFOLIOMANAGER_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER REUSABLE PHASEA REINFORCEMENT RECIPE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProductPortfolioManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: reusable-phasea-reinforcement-recipe
+
+purpose:
+Captures the reusable reinforcement recipe proven during the
+ProductPortfolioManager planning work so the next BusinessOS app can be
+advanced faster and with fewer unnecessary micro-iterations.
+
+default_bundle_strategy_for_next_app:
+- bundle_01:
+  - diff reinforcement plus audit
+- bundle_02:
+  - Phase A entry plus DDL plus DTO freeze
+- bundle_03:
+  - stub plan plus module tasks plus content order
+- bundle_04:
+  - command packs plus field-fill plans plus closure
+
+success_definition_for_next_app:
+- the next app reaches implementation-ready planning state
+- the BusinessOS ledger reflects the new status
+- the app can move to execution later without rediscovering core design intent
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900460_PRODUCTPORTFOLIOMANAGER_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900470_PRODUCTPORTFOLIOMANAGER_PLANNING_STOP_RULE_NOTE.md -->
+# ============================================================
+# PRODUCTPORTFOLIOMANAGER PLANNING STOP RULE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProductPortfolioManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: planning-stop-rule-note
+
+purpose:
+Defines the stop rule for the ProductPortfolioManager planning layer so that
+the project does not continue adding design documents without need.
+
+default_stop_rule:
+- stop adding planning artifacts once implementation-ready status,
+  execution entry protocol, and transition handoff are all present
+
+default_action_after_stop_rule:
+- either begin actual generation using the execution entry protocol
+- or move to the next BusinessOS application
+
+closure_statement:
+- ProductPortfolioManager planning should now be considered complete by default.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/900470_PRODUCTPORTFOLIOMANAGER_PLANNING_STOP_RULE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000054_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_GENERATION_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT GENERATION NOTE
 # ============================================================
 
 status: canonical
@@ -13289,71 +14606,22 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Provides a reusable reflection note
-for higher-level application navigation or system navigation documents.
+Records that draft-applied broad reflection files were generated
+from uploaded broad canonicals without overwriting the originals.
 
-reflection_title:
-ProductPortfolioManager
+generation_mode:
+- source files in /mnt/data were read
+- additive reflection blocks were appended into draft copies
+- original uploaded files were not modified
 
-reflection_summary:
-A lightweight product strategy judgment application
-for evaluating products,
-classifying strategic importance,
-managing proposals,
-running review sessions,
-handling approvals,
-and preserving audit/history.
+draft_output_directory:
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts
 
-reflection_keywords:
-- product portfolio
-- product strategy
-- product judgment
-- KPI
-- scoring
-- classification
-- proposal
-- review
-- approval
-- alert
-- audit
-- ERP reference
-- forecast reference
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000054_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_GENERATION_NOTE.md -->
 
-recommended_navigation_label:
-Product Portfolio Manager / Product Strategy Judgment
-
-recommended_navigation_group:
-07.applications / business judgment applications
-
-recommended_primary_links:
-- 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
-- 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
-- 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
-
-recommended_secondary_links:
-- 030.model/0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md
-- 050.flow/0500007_PRODUCT_PORTFOLIO_MANAGER_BUSINESS_FLOW_FORMAL_DESIGN.md
-- 060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
-- 060.integration/0600004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
-- 100.security/1000002_PRODUCT_PORTFOLIO_MANAGER_AUTHORIZATION_FORMAL_DESIGN.md
-- 120.implementation/1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md
-
-restart_hint:
-If a future chat or future maintainer needs to restart quickly,
-begin from:
-1. OVERVIEW
-2. INDEX
-3. INTEGRATED
-4. BUSINESS FLOW
-5. EXACT TABLES AND ENUMS
-
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000055_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_INDEX.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/index-reflection/9000008_PRODUCT_PORTFOLIO_MANAGER_SYSTEM_INDEX_INSERT_TEMPLATE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER SYSTEM INDEX INSERT TEMPLATE
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT REVIEW INDEX
 # ============================================================
 
 status: canonical
@@ -13363,47 +14631,46 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Provides a template block
-that can be inserted into broader CivilizationOS-side or application-side index documents.
+Provides a review index for the generated broad-reflection draft files.
 
-template_block:
+review_principles:
+- original uploaded broad canonicals are unchanged
+- review the generated drafts first
+- confirm wording depth matches target document role
+- confirm ProductPortfolioManager remains described as design-only
+- confirm ERP / forecast / judgment boundaries remain clear
 
-  - application_name: ProductPortfolioManager
-    application_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager
-    category: business-judgment-application
-    role:
-      - product portfolio judgment
-      - KPI/scoring-based product evaluation
-      - strategy classification
-      - proposal/review/approval governance
-      - ERP-reference and forecast-reference consumption
-    canonical_entries:
-      - 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
-      - 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
-      - 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
-    key_design_points:
-      - multilingual-ready
-      - multi-currency-ready
-      - iphone/android/pc/tablet-ready
-      - ERP truth boundary preserved
-      - forecast advisory boundary preserved
-      - judgment artifacts owned by application
-    current_state:
-      - design expanded
-      - implementation not started
-      - cleanup/standardization stage
+draft_directory:
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts
 
-usage_note:
-This block is intentionally additive and copy-ready
-for wider navigation documents.
+generated_drafts_expected:
+- 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
+- 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
+- 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
+- 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
+- ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
+- ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
 
+review_order:
+1. 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
+2. 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
+3. 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
+4. 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
+5. 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
+6. ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
+7. ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
 
+formal_conclusion:
+Review should start from discovery-oriented targets first,
+then move to terse rule/foundation files,
+then to narrower consumer-boundary notes.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000055_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000056_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_CHECKLIST.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/index-reflection/9000009_PRODUCT_PORTFOLIO_MANAGER_MASTER_RESTART_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER MASTER RESTART NOTE
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT REVIEW CHECKLIST
 # ============================================================
 
 status: canonical
@@ -13413,55 +14680,683 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Provides a concise restart note
-for future continuation in another chat or another maintenance pass.
+Provides a checklist for reviewing the generated broad-reflection drafts.
 
-current_state_summary:
-- application meaning fixed
-- competitive positioning fixed
-- functional requirements fixed
-- screen requirements fixed
-- data model fixed
-- exact payloads fixed
-- exact tables/enums fixed
+checklist:
+- ProductPortfolioManager is described as a lightweight product strategy judgment application
+- implementation not started is stated or preserved clearly
+- ERP truth boundary remains explicit
+- forecast advisory boundary remains explicit
+- the draft does not over-insert low-level schema/payload detail
+- the wording depth fits the target file type
+- the inserted block reads naturally after the source file body
+- the inserted block improves discovery or restartability
+- no wording implies ProductPortfolioManager is part of ERP itself
+- no wording implies forecast is final truth
+- no wording implies review equals approval
+- no wording implies proposal completion equals ERP execution truth
+
+target_specific_checks:
+
+  portal_reflection_note:
+    - richer discovery wording is acceptable
+    - app label is clear
+    - references are useful for navigation
+
+  civilization_os_canonical:
+    - medium summary depth is acceptable
+    - application is discoverable without bloating the file
+
+  foundation_or_rules:
+    - wording stays short
+    - system/foundation meaning remains primary
+
+  common_component_ledger:
+    - ProductPortfolioManager appears as consumer, not common-core owner
+
+  erp_side_docs:
+    - ProductPortfolioManager appears only as downstream consumer
+    - ERP remains clearly primary
+
+formal_conclusion:
+A good draft is one that makes ProductPortfolioManager easier to find
+without distorting the target document.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000056_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000057_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_DECISION_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT DECISION NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a simple decision frame after reviewing the generated drafts.
+
+possible_decisions:
+- accept as-is for later manual reflection
+- accept with wording trim
+- accept with placement change
+- hold for later
+- reject target insertion for now
+
+recommended_default_decision:
+- portal reflection draft: likely accept with minor wording review
+- Civilization OS canonical draft: likely accept with minor wording review
+- foundation/system-rules drafts: review for terseness
+- common ledger draft: review for consumer-only framing
+- ERP-side drafts: review for strict downstream-boundary wording
+
+decision_rule:
+Do not apply a draft later
+if it weakens source boundaries
+or makes the target document noticeably worse to read.
+
+formal_conclusion:
+Generated drafts are review artifacts first,
+not auto-approved insertions.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000057_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_DECISION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000058_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_READY_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT REVIEW READY NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Records that the broad-reflection draft review package is now complete.
+
+package_contents:
+- draft generation note
+- review index
+- review checklist
+- decision note
+
+state:
+- original uploaded broad canonicals unchanged
+- draft review package ready
+- later apply phase still optional
+
+formal_conclusion:
+Broad-reflection drafts are now ready for human review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000058_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_READY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000059_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_REVIEW_DECISION_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION REVIEW DECISION NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Records review decisions for generated broad-reflection drafts.
+
+decision_scale:
+- accept_as_is
+- accept_with_trim
+- accept_with_placement_change
+- hold
+- reject_for_now
+
+global_review_rules:
+- original /mnt/data files remain unchanged
+- draft review does not mean implementation start
+- ERP truth boundary must remain explicit
+- forecast advisory boundary must remain explicit
+- ProductPortfolioManager must remain application-side judgment app
+- wording depth must fit the target document role
+
+# ============================================================
+# 1. PORTAL REFLECTION NOTE
+# ============================================================
+
+target_file:
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
+
+review_decision: undecided
+review_comment:
+- good candidate for first acceptance
+- discovery-oriented target
+- richer summary acceptable here
+
+# ============================================================
+# 2. CIVILIZATION OS CANONICAL FULL REBUILT
+# ============================================================
+
+target_file:
+- 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
+
+review_decision: undecided
+review_comment:
+- medium-depth insertion is probably natural
+- confirm wording is not too long for the host document
+
+# ============================================================
+# 3. FOUNDATION CANONICAL
+# ============================================================
+
+target_file:
+- 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
+
+review_decision: undecided
+review_comment:
+- must stay terse
+- foundation meaning must remain primary
+
+# ============================================================
+# 4. SYSTEM RULES INTEGRATED
+# ============================================================
+
+target_file:
+- 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
+
+review_decision: undecided
+review_comment:
+- should remain rules-first
+- app mention must stay compact
+
+# ============================================================
+# 5. APPLICATION COMMON COMPONENT LEDGER
+# ============================================================
+
+target_file:
+- 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
+
+review_decision: undecided
+review_comment:
+- confirm ProductPortfolioManager is shown as consumer only
+- do not make it look like common component owner
+
+# ============================================================
+# 6. ERP DESIGN BIBLE
+# ============================================================
+
+target_file:
+- ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
+
+review_decision: undecided
+review_comment:
+- keep downstream-consumer wording strict
+- ERP must remain clearly primary
+
+# ============================================================
+# 7. ERP ENTERPRISE SCOPE
+# ============================================================
+
+target_file:
+- ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
+
+review_decision: undecided
+review_comment:
+- keep downstream-consumer wording strict
+- do not let scope blur ERP/app boundary
+
+# ============================================================
+# 8. FINAL REVIEW SUMMARY
+# ============================================================
+
+recommended_first_accept_candidates:
+- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
+- 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
+
+recommended_trim_candidates:
+- 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
+- 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
+
+recommended_boundary-check candidates:
+- ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
+- ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
+
+formal_conclusion:
+Use this note to record which draft is acceptable for later manual reflection.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000059_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_REVIEW_DECISION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000060_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_APPLY_SHORTLIST.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION APPLY SHORTLIST
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Extracts the first-pass apply shortlist
+from the generated broad-reflection drafts.
+
+selection_principles:
+- prioritize discovery value
+- prefer low semantic risk
+- keep insertion depth appropriate to target
+- do not open implementation meaning
+- preserve ERP / forecast / judgment boundaries
+
+# ============================================================
+# 1. FIRST-PASS APPLY SHORTLIST
+# ============================================================
+
+first_pass_apply_shortlist:
+
+  - shortlist_rank: 1
+    target_draft:
+      900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
+    target_original:
+      /mnt/data/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+    reason:
+      Highest discovery value.
+      Discovery-oriented note can naturally accept medium-depth ProductPortfolioManager summary.
+
+  - shortlist_rank: 2
+    target_draft:
+      003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
+    target_original:
+      /mnt/data/003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md
+    reason:
+      Broad canonical landscape file.
+      Good place to make ProductPortfolioManager discoverable at system level.
+
+# ============================================================
+# 2. SECOND-PASS CANDIDATES
+# ============================================================
+
+second_pass_candidates:
+
+  - target_draft:
+      000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
+    target_original:
+      /mnt/data/000000_FOUNDATION_CANONICAL.md
+    reason:
+      Useful, but wording must stay very terse.
+
+  - target_draft:
+      9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
+    target_original:
+      /mnt/data/9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED.md
+    reason:
+      Useful, but rules-first character must remain dominant.
+
+# ============================================================
+# 3. BOUNDARY-SENSITIVE CANDIDATES
+# ============================================================
+
+boundary_sensitive_candidates:
+
+  - target_draft:
+      ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
+    target_original:
+      /mnt/data/ERP_DESIGN_BIBLE_FULL.md
+    reason:
+      Must remain strict downstream-consumer note only.
+
+  - target_draft:
+      ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
+    target_original:
+      /mnt/data/ERP_ENTERPRISE_SCOPE_v1.md
+    reason:
+      Must remain strict downstream-consumer note only.
+
+# ============================================================
+# 4. SPECIAL-FRAMING CANDIDATE
+# ============================================================
+
+special_framing_candidate:
+
+  - target_draft:
+      014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
+    target_original:
+      /mnt/data/014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER.md
+    reason:
+      Must frame ProductPortfolioManager as common-capability consumer only.
+
+# ============================================================
+# 5. FIRST-PASS APPLY RULES
+# ============================================================
+
+first_pass_apply_rules:
+- start with portal reflection note
+- then move to Civilization OS canonical full rebuilt
+- do not apply second-pass files before confirming first-pass wording feels natural
+- do not apply boundary-sensitive files before final wording check
+- original /mnt/data files must be backed by review confidence before any manual reflection
+
+# ============================================================
+# 6. FORMAL CONCLUSION
+# ============================================================
+
+formal_conclusion:
+The safest initial apply shortlist is:
+1. portal reflection note
+2. Civilization OS canonical full rebuilt
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000060_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_APPLY_SHORTLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000061_PRODUCT_PORTFOLIO_MANAGER_SHORTLIST_REVIEW_COMMANDS.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER SHORTLIST REVIEW COMMANDS
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides quick shell commands
+for reviewing the shortlisted drafts first.
+
+recommended_commands:
+
+  portal_reflection_note:
+    sed -n '1,260p' /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
+
+  civilization_os_canonical:
+    sed -n '1,280p' /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
+
+  shortlist_note:
+    sed -n '1,240p' /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000060_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_APPLY_SHORTLIST.md
+
+formal_conclusion:
+Review these first before considering any later manual reflection.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000061_PRODUCT_PORTFOLIO_MANAGER_SHORTLIST_REVIEW_COMMANDS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/broad-reflection-plan/9000024_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_EXECUTION_PLAN.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION EXECUTION PLAN
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the execution plan for reflecting ProductPortfolioManager
+into broader CivilizationOS-side canonical navigation documents
+without starting implementation work.
+
+plan_principles:
+- reflection is navigation work, not implementation work
+- ProductPortfolioManager meaning must remain unchanged
+- only canonical entry documents should be used as primary links
+- broad reflection should improve discovery, restartability, and portfolio mapping
+- additive only
+
+# ============================================================
+# 1. REFLECTION TARGET CLASSES
+# ============================================================
+
+reflection_target_classes:
+
+  class_a_master_index:
+    meaning:
+      Highest-level system/application index documents
+      that list applications or major design domains.
+
+  class_b_integrated_navigation:
+    meaning:
+      Integrated canonical documents
+      that summarize major application families or system layers.
+
+  class_c_restart_handoff:
+    meaning:
+      Restart / handoff / reflection notes
+      used to resume design later.
+
+  class_d_portal_or_surface_index:
+    meaning:
+      Navigation-oriented notes or reflection docs
+      that expose application discovery structure.
+
+# ============================================================
+# 2. WHAT SHOULD BE REFLECTED
+# ============================================================
+
+must_reflect:
+- application name
+- application path
+- short identity summary
+- category as business-judgment application
+- canonical entry documents
+- current state as design-expanded / implementation not started
+
+should_reflect:
+- ERP truth boundary preserved
+- forecast advisory boundary preserved
+- multilingual / multi-currency / cross-device readiness
+- portfolio judgment loop summary
+
+should_not_reflect_as_top_level_summary:
+- low-level exact payload details
+- raw table-by-table model detail
+- verbose repeated warnings better left inside the local design set
+
+# ============================================================
+# 3. PRIMARY INSERTION BLOCK
+# ============================================================
+
+primary_insertion_block:
+  application_name: ProductPortfolioManager
+  application_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager
+  category: business-judgment-application
+  summary:
+    Lightweight product strategy judgment application
+    for KPI/scoring-based product evaluation,
+    strategic classification,
+    proposals,
+    review sessions,
+    approvals,
+    alerts,
+    and audit/history,
+    built on top of ERP facts and forecast references.
+  canonical_entries:
+    - 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
+    - 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
+    - 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+  current_state:
+    - design expanded
+    - implementation not started
+
+# ============================================================
+# 4. SECONDARY INSERTION BLOCK
+# ============================================================
+
+secondary_insertion_block:
 - ERP boundary fixed
-- forecast boundary fixed
-- KPI/scoring fixed
-- classification/lifecycle fixed
-- proposal/review/approval fixed
-- alert/share/audit fixed
-- settings/locale/currency/preset fixed
-- root docs refreshed
-- cleanup/gap review added
-- implementation not started
+- forecast advisory boundary fixed
+- exact model contracts fixed
+- exact flow payload contracts fixed
+- review / approval / audit governance fixed
+- closure note and restart bundle prepared
 
-start_here_next_time:
+# ============================================================
+# 5. RECOMMENDED INSERTION ORDER
+# ============================================================
+
+recommended_insertion_order:
+1. highest-level application/system index
+2. integrated navigation / canonical integrated summaries
+3. restart or handoff summaries
+4. portal-side or reflection-side navigation notes
+
+# ============================================================
+# 6. LOCAL SOURCE DOCUMENTS TO USE
+# ============================================================
+
+local_source_documents_to_use:
 - 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
 - 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
 - 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
-
-if_more_design_is_needed:
-- cleanup/compression pass
-- freshness-by-surface formalization
-- notification recipient matrix
-- wider CivilizationOS index reflection
-
-if_implementation_is_later_started:
-Begin from:
-- 0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md
-- 0500006_PRODUCT_PORTFOLIO_MANAGER_EXACT_FLOW_PAYLOADS.md
-- 1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md
-
-restart_warning:
-Do not collapse ERP fact meaning,
-forecast advisory meaning,
-and application judgment meaning into one layer.
-
+- 900.meta/handoff-bundle/9000020_PRODUCT_PORTFOLIO_MANAGER_FINAL_HANDOFF_BUNDLE.md
+- 900.meta/copy-blocks/9000015_PRODUCT_PORTFOLIO_MANAGER_ROOT_INDEX_COPY_BLOCKS.md
+- 900.meta/copy-blocks/9000016_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED_INSERT_BLOCKS.md
+- 900.meta/copy-blocks/9000017_PRODUCT_PORTFOLIO_MANAGER_RESTART_INSERT_BLOCKS.md
 
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/compression-pass/9000011_PRODUCT_PORTFOLIO_MANAGER_LAYER_COMPRESSION_RULES.md
+# 7. SAFE INSERTION RULES
 # ============================================================
 
+safe_insertion_rules:
+- do not rewrite existing external canonical meaning casually
+- do not insert low-level implementation detail into broad navigation
+- do not lose ProductPortfolioManager’s ERP/fact/judgment boundary meaning
+- do not present implementation as started
+- do not duplicate long warnings in every broad document
+
+# ============================================================
+# 8. EXECUTION READINESS
+# ============================================================
+
+execution_readiness:
+- local design set: ready
+- local navigation blocks: ready
+- local restart bundle: ready
+- broad insertion plan: ready
+- broad target editing: not yet executed in this phase
+
+# ============================================================
+# 9. FORMAL CONCLUSION
+# ============================================================
+
+formal_conclusion:
+ProductPortfolioManager is ready for broad navigation reflection work.
+That reflection should be treated as a separate additive documentation phase.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/broad-reflection-plan/9000024_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_EXECUTION_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/broad-reflection-plan/9000025_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_TARGET_MATRIX.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION TARGET MATRIX
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Maps reflection target types
+to recommended insertion depth and source blocks.
+
+target_matrix:
+
+  master_index_documents:
+    insertion_depth: short_to_medium
+    recommended_source_blocks:
+      - 900.meta/copy-blocks/9000015_PRODUCT_PORTFOLIO_MANAGER_ROOT_INDEX_COPY_BLOCKS.md
+    recommended_content:
+      - app name
+      - role
+      - canonical entries
+      - current state
+
+  integrated_canonical_documents:
+    insertion_depth: medium
+    recommended_source_blocks:
+      - 900.meta/copy-blocks/9000016_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED_INSERT_BLOCKS.md
+    recommended_content:
+      - application summary
+      - judgment loop summary
+      - ERP / forecast boundary summary
+      - current state
+
+  restart_handoff_documents:
+    insertion_depth: medium_to_long
+    recommended_source_blocks:
+      - 900.meta/copy-blocks/9000017_PRODUCT_PORTFOLIO_MANAGER_RESTART_INSERT_BLOCKS.md
+      - 900.meta/handoff-bundle/9000020_PRODUCT_PORTFOLIO_MANAGER_FINAL_HANDOFF_BUNDLE.md
+    recommended_content:
+      - restart order
+      - implementation not started
+      - safe continuation warnings
+
+  portal_or_reflection_notes:
+    insertion_depth: short
+    recommended_source_blocks:
+      - 900.meta/index-reflection/9000007_PRODUCT_PORTFOLIO_MANAGER_APPLICATION_NAVIGATION_REFLECTION_NOTE.md
+      - 900.meta/index-reflection/9000008_PRODUCT_PORTFOLIO_MANAGER_SYSTEM_INDEX_INSERT_TEMPLATE.md
+    recommended_content:
+      - discovery summary
+      - category
+      - canonical links
+
+formal_conclusion:
+Different broad targets require different insertion depths.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/broad-reflection-plan/9000025_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_TARGET_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/broad-reflection-plan/9000026_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_PHASE_OPENING.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION PHASE OPENING
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a clean phase-opening note
+for a later documentation pass that actually edits broader canonical files.
+
+phase_name:
+broad-navigation-reflection-phase
+
+phase_objective:
+Reflect ProductPortfolioManager into wider canonical navigation
+using already prepared local copy blocks and handoff bundles.
+
+phase_in_scope:
+- additive navigation insertion
+- additive summary insertion
+- additive restart/handoff insertion
+
+phase_out_of_scope:
+- implementation
+- code generation
+- DDL generation
+- API execution work
+- changing ProductPortfolioManager core meaning
+- weakening existing canonical boundaries
+
+recommended_phase_opening_text:
+We are now opening the broad-navigation-reflection phase for ProductPortfolioManager.
+Use the local copy blocks and final handoff bundle
+to insert ProductPortfolioManager into wider canonical navigation documents.
+Do not start implementation.
+Do not weaken ERP / forecast / judgment boundaries.
+Keep changes additive only.
+
+formal_conclusion:
+If broader canonical files are to be edited later,
+this note should be used to open that phase explicitly.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/broad-reflection-plan/9000026_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_PHASE_OPENING.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000011_PRODUCT_PORTFOLIO_MANAGER_LAYER_COMPRESSION_RULES.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER LAYER COMPRESSION RULES
 # ============================================================
@@ -13578,11 +15473,9 @@ layer_rules:
 formal_conclusion:
 Compression should make each layer sound more like itself.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000011_PRODUCT_PORTFOLIO_MANAGER_LAYER_COMPRESSION_RULES.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/compression-pass/9000012_PRODUCT_PORTFOLIO_MANAGER_REPEATED_PHRASE_NORMALIZATION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000012_PRODUCT_PORTFOLIO_MANAGER_REPEATED_PHRASE_NORMALIZATION.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER REPEATED PHRASE NORMALIZATION
 # ============================================================
@@ -13649,11 +15542,9 @@ formal_conclusion:
 Normalization should reduce reading fatigue
 without weakening safety-critical meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000012_PRODUCT_PORTFOLIO_MANAGER_REPEATED_PHRASE_NORMALIZATION.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/compression-pass/9000013_PRODUCT_PORTFOLIO_MANAGER_COMPRESSION_TARGET_LIST.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000013_PRODUCT_PORTFOLIO_MANAGER_COMPRESSION_TARGET_LIST.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER COMPRESSION TARGET LIST
 # ============================================================
@@ -13696,11 +15587,9 @@ formal_conclusion:
 Compression should start with boundary-heavy files,
 because that is where repetition is currently most likely.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000013_PRODUCT_PORTFOLIO_MANAGER_COMPRESSION_TARGET_LIST.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/compression-pass/9000014_PRODUCT_PORTFOLIO_MANAGER_SAFE_COMPRESSION_CHECKLIST.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000014_PRODUCT_PORTFOLIO_MANAGER_SAFE_COMPRESSION_CHECKLIST.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SAFE COMPRESSION CHECKLIST
 # ============================================================
@@ -13730,11 +15619,9 @@ formal_conclusion:
 Compression is allowed only when clarity improves
 and governance meaning remains intact.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/compression-pass/9000014_PRODUCT_PORTFOLIO_MANAGER_SAFE_COMPRESSION_CHECKLIST.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/copy-blocks/9000015_PRODUCT_PORTFOLIO_MANAGER_ROOT_INDEX_COPY_BLOCKS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000015_PRODUCT_PORTFOLIO_MANAGER_ROOT_INDEX_COPY_BLOCKS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER ROOT INDEX COPY BLOCKS
 # ============================================================
@@ -13853,11 +15740,9 @@ long_index_block:
 formal_conclusion:
 These blocks are copy-ready navigation inserts.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000015_PRODUCT_PORTFOLIO_MANAGER_ROOT_INDEX_COPY_BLOCKS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/copy-blocks/9000016_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED_INSERT_BLOCKS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000016_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED_INSERT_BLOCKS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER INTEGRATED INSERT BLOCKS
 # ============================================================
@@ -13915,11 +15800,9 @@ recommended_deep_links:
 formal_conclusion:
 These blocks are intended for integrated or summary-level design documents.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000016_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED_INSERT_BLOCKS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/copy-blocks/9000017_PRODUCT_PORTFOLIO_MANAGER_RESTART_INSERT_BLOCKS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000017_PRODUCT_PORTFOLIO_MANAGER_RESTART_INSERT_BLOCKS.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER RESTART INSERT BLOCKS
 # ============================================================
@@ -13981,11 +15864,9 @@ and application judgment meaning into one layer.
 formal_conclusion:
 These blocks are intended for restart and handoff materials.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000017_PRODUCT_PORTFOLIO_MANAGER_RESTART_INSERT_BLOCKS.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/copy-blocks/9000018_PRODUCT_PORTFOLIO_MANAGER_WIDE_NAVIGATION_BUNDLE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000018_PRODUCT_PORTFOLIO_MANAGER_WIDE_NAVIGATION_BUNDLE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER WIDE NAVIGATION BUNDLE
 # ============================================================
@@ -14047,11 +15928,9 @@ formal_conclusion:
 Use this bundle when a wider document needs
 index + integrated summary + restart hint together.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/copy-blocks/9000018_PRODUCT_PORTFOLIO_MANAGER_WIDE_NAVIGATION_BUNDLE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/handoff-bundle/9000020_PRODUCT_PORTFOLIO_MANAGER_FINAL_HANDOFF_BUNDLE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/handoff-bundle/9000020_PRODUCT_PORTFOLIO_MANAGER_FINAL_HANDOFF_BUNDLE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER FINAL HANDOFF BUNDLE
 # ============================================================
@@ -14223,11 +16102,9 @@ ProductPortfolioManager is in a stable design-expanded state
 and can be safely paused, handed off, or resumed later
 without rediscovering core meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/handoff-bundle/9000020_PRODUCT_PORTFOLIO_MANAGER_FINAL_HANDOFF_BUNDLE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/handoff-bundle/9000021_PRODUCT_PORTFOLIO_MANAGER_SHORT_HANDOFF_TEMPLATE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/handoff-bundle/9000021_PRODUCT_PORTFOLIO_MANAGER_SHORT_HANDOFF_TEMPLATE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER SHORT HANDOFF TEMPLATE
 # ============================================================
@@ -14247,11 +16124,9 @@ Implementation has not started.
 Restart from:
 OVERVIEW -> INDEX -> INTEGRATED -> BUSINESS FLOW -> EXACT TABLES/ENUMS -> API CONTRACT EXACT.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/handoff-bundle/9000021_PRODUCT_PORTFOLIO_MANAGER_SHORT_HANDOFF_TEMPLATE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/handoff-bundle/9000022_PRODUCT_PORTFOLIO_MANAGER_LONG_HANDOFF_TEMPLATE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/handoff-bundle/9000022_PRODUCT_PORTFOLIO_MANAGER_LONG_HANDOFF_TEMPLATE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER LONG HANDOFF TEMPLATE
 # ============================================================
@@ -14301,13 +16176,11 @@ Warnings:
 - do not collapse review and approval
 - do not treat proposal completion as ERP execution truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/handoff-bundle/9000022_PRODUCT_PORTFOLIO_MANAGER_LONG_HANDOFF_TEMPLATE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/index-reflection/9000007_PRODUCT_PORTFOLIO_MANAGER_APPLICATION_NAVIGATION_REFLECTION_NOTE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/broad-reflection-plan/9000024_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_EXECUTION_PLAN.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION EXECUTION PLAN
+# PRODUCT PORTFOLIO MANAGER APPLICATION NAVIGATION REFLECTION NOTE
 # ============================================================
 
 status: canonical
@@ -14317,164 +16190,69 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Defines the execution plan for reflecting ProductPortfolioManager
-into broader CivilizationOS-side canonical navigation documents
-without starting implementation work.
+Provides a reusable reflection note
+for higher-level application navigation or system navigation documents.
 
-plan_principles:
-- reflection is navigation work, not implementation work
-- ProductPortfolioManager meaning must remain unchanged
-- only canonical entry documents should be used as primary links
-- broad reflection should improve discovery, restartability, and portfolio mapping
-- additive only
+reflection_title:
+ProductPortfolioManager
 
-# ============================================================
-# 1. REFLECTION TARGET CLASSES
-# ============================================================
+reflection_summary:
+A lightweight product strategy judgment application
+for evaluating products,
+classifying strategic importance,
+managing proposals,
+running review sessions,
+handling approvals,
+and preserving audit/history.
 
-reflection_target_classes:
+reflection_keywords:
+- product portfolio
+- product strategy
+- product judgment
+- KPI
+- scoring
+- classification
+- proposal
+- review
+- approval
+- alert
+- audit
+- ERP reference
+- forecast reference
 
-  class_a_master_index:
-    meaning:
-      Highest-level system/application index documents
-      that list applications or major design domains.
+recommended_navigation_label:
+Product Portfolio Manager / Product Strategy Judgment
 
-  class_b_integrated_navigation:
-    meaning:
-      Integrated canonical documents
-      that summarize major application families or system layers.
+recommended_navigation_group:
+07.applications / business judgment applications
 
-  class_c_restart_handoff:
-    meaning:
-      Restart / handoff / reflection notes
-      used to resume design later.
-
-  class_d_portal_or_surface_index:
-    meaning:
-      Navigation-oriented notes or reflection docs
-      that expose application discovery structure.
-
-# ============================================================
-# 2. WHAT SHOULD BE REFLECTED
-# ============================================================
-
-must_reflect:
-- application name
-- application path
-- short identity summary
-- category as business-judgment application
-- canonical entry documents
-- current state as design-expanded / implementation not started
-
-should_reflect:
-- ERP truth boundary preserved
-- forecast advisory boundary preserved
-- multilingual / multi-currency / cross-device readiness
-- portfolio judgment loop summary
-
-should_not_reflect_as_top_level_summary:
-- low-level exact payload details
-- raw table-by-table model detail
-- verbose repeated warnings better left inside the local design set
-
-# ============================================================
-# 3. PRIMARY INSERTION BLOCK
-# ============================================================
-
-primary_insertion_block:
-  application_name: ProductPortfolioManager
-  application_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager
-  category: business-judgment-application
-  summary:
-    Lightweight product strategy judgment application
-    for KPI/scoring-based product evaluation,
-    strategic classification,
-    proposals,
-    review sessions,
-    approvals,
-    alerts,
-    and audit/history,
-    built on top of ERP facts and forecast references.
-  canonical_entries:
-    - 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
-    - 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
-    - 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
-  current_state:
-    - design expanded
-    - implementation not started
-
-# ============================================================
-# 4. SECONDARY INSERTION BLOCK
-# ============================================================
-
-secondary_insertion_block:
-- ERP boundary fixed
-- forecast advisory boundary fixed
-- exact model contracts fixed
-- exact flow payload contracts fixed
-- review / approval / audit governance fixed
-- closure note and restart bundle prepared
-
-# ============================================================
-# 5. RECOMMENDED INSERTION ORDER
-# ============================================================
-
-recommended_insertion_order:
-1. highest-level application/system index
-2. integrated navigation / canonical integrated summaries
-3. restart or handoff summaries
-4. portal-side or reflection-side navigation notes
-
-# ============================================================
-# 6. LOCAL SOURCE DOCUMENTS TO USE
-# ============================================================
-
-local_source_documents_to_use:
+recommended_primary_links:
 - 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
 - 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
 - 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
-- 900.meta/handoff-bundle/9000020_PRODUCT_PORTFOLIO_MANAGER_FINAL_HANDOFF_BUNDLE.md
-- 900.meta/copy-blocks/9000015_PRODUCT_PORTFOLIO_MANAGER_ROOT_INDEX_COPY_BLOCKS.md
-- 900.meta/copy-blocks/9000016_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED_INSERT_BLOCKS.md
-- 900.meta/copy-blocks/9000017_PRODUCT_PORTFOLIO_MANAGER_RESTART_INSERT_BLOCKS.md
 
-# ============================================================
-# 7. SAFE INSERTION RULES
-# ============================================================
+recommended_secondary_links:
+- 030.model/0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md
+- 050.flow/0500007_PRODUCT_PORTFOLIO_MANAGER_BUSINESS_FLOW_FORMAL_DESIGN.md
+- 060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
+- 060.integration/0600004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
+- 100.security/1000002_PRODUCT_PORTFOLIO_MANAGER_AUTHORIZATION_FORMAL_DESIGN.md
+- 120.implementation/1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md
 
-safe_insertion_rules:
-- do not rewrite existing external canonical meaning casually
-- do not insert low-level implementation detail into broad navigation
-- do not lose ProductPortfolioManager’s ERP/fact/judgment boundary meaning
-- do not present implementation as started
-- do not duplicate long warnings in every broad document
+restart_hint:
+If a future chat or future maintainer needs to restart quickly,
+begin from:
+1. OVERVIEW
+2. INDEX
+3. INTEGRATED
+4. BUSINESS FLOW
+5. EXACT TABLES AND ENUMS
 
-# ============================================================
-# 8. EXECUTION READINESS
-# ============================================================
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/index-reflection/9000007_PRODUCT_PORTFOLIO_MANAGER_APPLICATION_NAVIGATION_REFLECTION_NOTE.md -->
 
-execution_readiness:
-- local design set: ready
-- local navigation blocks: ready
-- local restart bundle: ready
-- broad insertion plan: ready
-- broad target editing: not yet executed in this phase
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/index-reflection/9000008_PRODUCT_PORTFOLIO_MANAGER_SYSTEM_INDEX_INSERT_TEMPLATE.md -->
 # ============================================================
-# 9. FORMAL CONCLUSION
-# ============================================================
-
-formal_conclusion:
-ProductPortfolioManager is ready for broad navigation reflection work.
-That reflection should be treated as a separate additive documentation phase.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/broad-reflection-plan/9000025_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_TARGET_MATRIX.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION TARGET MATRIX
+# PRODUCT PORTFOLIO MANAGER SYSTEM INDEX INSERT TEMPLATE
 # ============================================================
 
 status: canonical
@@ -14484,396 +16262,45 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Maps reflection target types
-to recommended insertion depth and source blocks.
+Provides a template block
+that can be inserted into broader CivilizationOS-side or application-side index documents.
 
-target_matrix:
+template_block:
 
-  master_index_documents:
-    insertion_depth: short_to_medium
-    recommended_source_blocks:
-      - 900.meta/copy-blocks/9000015_PRODUCT_PORTFOLIO_MANAGER_ROOT_INDEX_COPY_BLOCKS.md
-    recommended_content:
-      - app name
-      - role
-      - canonical entries
-      - current state
-
-  integrated_canonical_documents:
-    insertion_depth: medium
-    recommended_source_blocks:
-      - 900.meta/copy-blocks/9000016_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED_INSERT_BLOCKS.md
-    recommended_content:
-      - application summary
-      - judgment loop summary
-      - ERP / forecast boundary summary
-      - current state
-
-  restart_handoff_documents:
-    insertion_depth: medium_to_long
-    recommended_source_blocks:
-      - 900.meta/copy-blocks/9000017_PRODUCT_PORTFOLIO_MANAGER_RESTART_INSERT_BLOCKS.md
-      - 900.meta/handoff-bundle/9000020_PRODUCT_PORTFOLIO_MANAGER_FINAL_HANDOFF_BUNDLE.md
-    recommended_content:
-      - restart order
-      - implementation not started
-      - safe continuation warnings
-
-  portal_or_reflection_notes:
-    insertion_depth: short
-    recommended_source_blocks:
-      - 900.meta/index-reflection/9000007_PRODUCT_PORTFOLIO_MANAGER_APPLICATION_NAVIGATION_REFLECTION_NOTE.md
-      - 900.meta/index-reflection/9000008_PRODUCT_PORTFOLIO_MANAGER_SYSTEM_INDEX_INSERT_TEMPLATE.md
-    recommended_content:
-      - discovery summary
-      - category
-      - canonical links
-
-formal_conclusion:
-Different broad targets require different insertion depths.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/broad-reflection-plan/9000026_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_PHASE_OPENING.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION PHASE OPENING
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides a clean phase-opening note
-for a later documentation pass that actually edits broader canonical files.
-
-phase_name:
-broad-navigation-reflection-phase
-
-phase_objective:
-Reflect ProductPortfolioManager into wider canonical navigation
-using already prepared local copy blocks and handoff bundles.
-
-phase_in_scope:
-- additive navigation insertion
-- additive summary insertion
-- additive restart/handoff insertion
-
-phase_out_of_scope:
-- implementation
-- code generation
-- DDL generation
-- API execution work
-- changing ProductPortfolioManager core meaning
-- weakening existing canonical boundaries
-
-recommended_phase_opening_text:
-We are now opening the broad-navigation-reflection phase for ProductPortfolioManager.
-Use the local copy blocks and final handoff bundle
-to insert ProductPortfolioManager into wider canonical navigation documents.
-Do not start implementation.
-Do not weaken ERP / forecast / judgment boundaries.
-Keep changes additive only.
-
-formal_conclusion:
-If broader canonical files are to be edited later,
-this note should be used to open that phase explicitly.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-insert-pack/9000028_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_PACK_OVERVIEW.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER WIDE INSERT PACK OVERVIEW
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides a target-by-target insert pack
-for reflecting ProductPortfolioManager into broader canonical documents.
-
-principles:
-- additive only
-- reflection only
-- no implementation opening
-- no boundary weakening
-- use short/medium/long insert depth depending on target document role
-
-target_families:
-- CivilizationOS canonical full rebuilt
-- foundation / system rules canonicals
-- portal-side index reflection notes
-- application/common ledgers or reflection notes
-- ERP-side reflection notes only where ERP boundary explanation is useful
-
-formal_conclusion:
-This pack is for controlled broad navigation reflection,
-not for changing ProductPortfolioManager meaning.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-insert-pack/9000029_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR CIVILIZATION OS CANONICAL FULL REBUILT
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-target_file_hint:
-/mnt/data/003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md
-
-recommended_insert_depth:
-medium
-
-recommended_insert_location:
-- application catalog area
-- applications landscape area
-- business-side application summary area
-- restart/navigation appendix area
-
-copy_block:
   - application_name: ProductPortfolioManager
-    system_group: 07.applications
+    application_path: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager
     category: business-judgment-application
-    summary:
-      Lightweight product strategy judgment application
-      for KPI/scoring-based product evaluation,
-      strategic classification,
-      proposals,
-      review sessions,
-      approvals,
-      alerts,
-      and audit/history.
-      It sits on top of ERP facts
-      and uses forecast as advisory reference.
-    canonical_entries:
-      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
-      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
-      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
-    current_state:
-      - design expanded
-      - implementation not started
-
-note:
-Use medium depth here because Civilization OS canonical rebuilt
-is broad enough to benefit from identity + boundary summary,
-but does not need low-level payload/schema detail.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-insert-pack/9000030_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_FOUNDATION_AND_SYSTEM_RULES.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR FOUNDATION AND SYSTEM RULES
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-target_file_hints:
-- /mnt/data/000000_FOUNDATION_CANONICAL.md
-- /mnt/data/9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED.md
-
-recommended_insert_depth:
-short
-
-recommended_insert_location:
-- applications overview appendix
-- example application mapping
-- system navigation reflection note section
-
-copy_block:
-  - application_name: ProductPortfolioManager
     role:
       - product portfolio judgment
-      - product strategy classification
+      - KPI/scoring-based product evaluation
+      - strategy classification
       - proposal/review/approval governance
-    boundaries:
-      - ERP facts preserved
-      - forecast advisory preserved
-    state:
+      - ERP-reference and forecast-reference consumption
+    canonical_entries:
+      - 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
+      - 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
+      - 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+    key_design_points:
+      - multilingual-ready
+      - multi-currency-ready
+      - iphone/android/pc/tablet-ready
+      - ERP truth boundary preserved
+      - forecast advisory boundary preserved
+      - judgment artifacts owned by application
+    current_state:
       - design expanded
       - implementation not started
-    entry:
-      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+      - cleanup/standardization stage
 
-note:
-Use short depth here because these files are likely system-level canonicals,
-not app-specific drill-down catalogs.
+usage_note:
+This block is intentionally additive and copy-ready
+for wider navigation documents.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/index-reflection/9000008_PRODUCT_PORTFOLIO_MANAGER_SYSTEM_INDEX_INSERT_TEMPLATE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/index-reflection/9000009_PRODUCT_PORTFOLIO_MANAGER_MASTER_RESTART_NOTE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-insert-pack/9000031_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_PORTAL_REFLECTION.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR PORTAL REFLECTION
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-target_file_hint:
-/mnt/data/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
-
-recommended_insert_depth:
-medium_to_long
-
-recommended_insert_location:
-- app discovery area
-- navigation tiles summary area
-- system-index reflection entry area
-
-copy_block:
-  - application_name: ProductPortfolioManager
-    display_label: Product Portfolio Manager / Product Strategy Judgment
-    category: business-judgment-application
-    summary:
-      Lightweight product strategy judgment application
-      that helps evaluate products,
-      rank and classify them strategically,
-      manage proposals,
-      run review sessions,
-      handle approvals,
-      surface alerts,
-      and preserve audit/history.
-    distinguishing_points:
-      - ERP truth boundary preserved
-      - forecast treated as advisory reference
-      - multilingual / multi-currency / cross-device design fixed
-    primary_entries:
-      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
-      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
-
-note:
-Portal/index reflection can tolerate slightly richer wording
-because it is discovery-oriented.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-insert-pack/9000032_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_COMMON_LEDGER_OR_APP_LEDGER.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR COMMON LEDGER OR APP LEDGER
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-target_file_hint:
-/mnt/data/014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER.md
-
-recommended_insert_depth:
-short_to_medium
-
-recommended_insert_location:
-- application consumers section
-- application references section
-- future reuse/reference appendix
-
-copy_block:
-  - consumer_application: ProductPortfolioManager
-    consumer_role:
-      product strategy judgment application
-    common-needing-areas:
-      - localization
-      - currency context display
-      - score/status display surfaces
-      - alert and approval surfaces
-      - history/audit visibility surfaces
-      - responsive cross-device shell
-    current_state:
-      - common-component candidates already separated out
-      - app-specific design expanded
-      - implementation not started
-
-note:
-This is not for moving ProductPortfolioManager into common components.
-It is only for showing that the app consumes common capabilities.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-insert-pack/9000033_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_ERP_SIDE_REFERENCE_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR ERP SIDE REFERENCE NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-target_file_hints:
-- /mnt/data/ERP_DESIGN_BIBLE_FULL.md
-- /mnt/data/ERP_ENTERPRISE_SCOPE_v1.md
-- /mnt/data/ERP_SYSTEM_FULL_DUMP.txt
-
-recommended_insert_depth:
-short
-
-recommended_insert_location:
-- consuming applications appendix
-- downstream application references
-- business-side judgment consumer note
-
-copy_block:
-  - downstream_application: ProductPortfolioManager
-    relationship_to_erp:
-      Consumes ERP product and operational facts as reference.
-      Does not replace ERP truth.
-      Owns application-side portfolio judgment artifacts only.
-    owned_by_application:
-      - score
-      - classification
-      - proposal
-      - review
-      - approval
-      - alert
-      - audit/history
-    entry:
-      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
-
-note:
-ERP-side documents should receive only a narrow consumer-boundary note,
-not a full application summary.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-insert-pack/9000034_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_EXECUTION_ORDER.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER WIDE INSERT EXECUTION ORDER
+# PRODUCT PORTFOLIO MANAGER MASTER RESTART NOTE
 # ============================================================
 
 status: canonical
@@ -14883,248 +16310,404 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Defines the safest order for later wide insert execution.
+Provides a concise restart note
+for future continuation in another chat or another maintenance pass.
 
-execution_order:
-1. portal/index reflection note
-2. Civilization OS canonical full rebuilt
-3. foundation/system-rules summary docs
-4. common/app ledger note
-5. ERP-side consumer-boundary note only if needed
-
-reasoning:
-- portal/index reflection is lowest risk and highest discovery value
-- Civilization OS canonical full rebuilt is broad and suitable for application reflection
-- system/foundation docs should remain terse
-- ERP-side docs should receive only minimal consumer-boundary reflection
-
-formal_conclusion:
-If broad insertion is executed later,
-this order minimizes semantic disruption.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-reflection-execution/9000036_PRODUCT_PORTFOLIO_MANAGER_WIDE_REFLECTION_EXECUTION_CHECKLIST.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER WIDE REFLECTION EXECUTION CHECKLIST
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the execution checklist
-for a future broad-navigation-reflection pass
-that actually edits wider canonical files.
-
-execution_principles:
-- additive only
-- navigation reflection only
-- no implementation opening
-- no boundary weakening
-- no low-level schema/payload dump into broad canonicals
-
-# ============================================================
-# 1. PRE-EXECUTION CHECKLIST
-# ============================================================
-
-pre_execution_checklist:
-- confirm ProductPortfolioManager local OVERVIEW is current
-- confirm ProductPortfolioManager local INDEX is current
-- confirm ProductPortfolioManager local INTEGRATED is current
-- confirm final handoff bundle exists
-- confirm copy blocks exist
-- confirm broad reflection execution plan exists
-- confirm target-specific insert pack exists
-- confirm implementation is still intentionally unopened
-
-# ============================================================
-# 2. TARGET SELECTION CHECKLIST
-# ============================================================
-
-target_selection_checklist:
-- identify target file class:
-  - master index
-  - integrated canonical
-  - restart/handoff
-  - portal/reflection note
-  - ERP-side consumer note
-- choose insertion depth:
-  - short
-  - medium
-  - long
-- confirm insertion is navigation-appropriate for that target
-- avoid inserting deeper detail than the target document can naturally hold
-
-# ============================================================
-# 3. CONTENT SAFETY CHECKLIST
-# ============================================================
-
-content_safety_checklist:
-- application summary remains short enough for broad navigation
-- ERP truth boundary remains clear
-- forecast advisory boundary remains clear
-- implementation not started remains clear
-- no accidental claim of production readiness
-- no accidental collapse of review and approval meaning
-- no accidental collapse of classification and lifecycle meaning
-
-# ============================================================
-# 4. AFTER-INSERT CHECKLIST
-# ============================================================
-
-after_insert_checklist:
-- ProductPortfolioManager can be found from the target document
-- canonical entry docs are named correctly
-- wording remains additive
-- existing target document meaning still reads naturally
-- no duplicate contradictory summary was introduced
-- restartability improved rather than worsened
-
-# ============================================================
-# 5. STOP CONDITIONS
-# ============================================================
-
-stop_conditions:
-- target file requires heavy restructuring to insert cleanly
-- insertion would force low-level implementation detail into high-level canonical
-- insertion would imply implementation has started
-- insertion would weaken ERP / forecast / judgment boundary wording
-- insertion would create confusion about source-of-truth ownership
-
-# ============================================================
-# 6. FORMAL CONCLUSION
-# ============================================================
-
-formal_conclusion:
-Broad reflection execution should proceed only
-when the insertion improves navigation without degrading meaning clarity.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-reflection-execution/9000037_PRODUCT_PORTFOLIO_MANAGER_POST_INSERT_VERIFICATION_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER POST INSERT VERIFICATION NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines what to verify
-after ProductPortfolioManager is inserted into a broader canonical file.
-
-verification_points:
-- application name is spelled consistently
-- application path is correct
-- category remains business-judgment-application or equivalent
-- canonical entries point to local ProductPortfolioManager root docs
-- implementation state still reads as not started
-- broad document did not accidentally inherit low-level ProductPortfolioManager detail
-- boundaries still read correctly:
-  - ERP truth preserved
-  - forecast advisory preserved
-  - application judgment owned locally
-
-restart_verification:
-- a reader of the broader file can now discover ProductPortfolioManager
-- a reader can jump to OVERVIEW / INDEX / INTEGRATED
-- a restart path is clearer than before insertion
-
-formal_conclusion:
-A successful insertion is one that improves discovery and restartability
-without distorting the wider file.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-reflection-execution/9000038_PRODUCT_PORTFOLIO_MANAGER_MINIMAL_ROLLBACK_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER MINIMAL ROLLBACK NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines a minimal rollback philosophy
-for a future broad reflection insertion pass.
-
-rollback_principles:
-- rollback only if insertion degraded clarity
-- rollback should be local to the broad target file
-- local ProductPortfolioManager design set should remain untouched
-- prefer reverting the inserted navigation block only,
-  not broad rewriting of unrelated target sections
-
-rollback_triggers:
-- inserted block duplicates an existing app entry in a conflicting way
-- inserted block makes the broad file harder to read
-- inserted block accidentally implies implementation work started
-- inserted block weakens source-of-truth boundaries
-- inserted block uses the wrong insertion depth for the target
-
-formal_conclusion:
-Rollback in a broad reflection pass should be small,
-targeted,
-and meaning-preserving.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/wide-reflection-execution/9000039_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_READY_FOR_EXECUTION_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION READY FOR EXECUTION NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Records that the local preparation
-for broad canonical insertion is now complete enough
-to execute in a separate phase later.
-
-ready_assets:
+current_state_summary:
+- application meaning fixed
+- competitive positioning fixed
+- functional requirements fixed
+- screen requirements fixed
+- data model fixed
+- exact payloads fixed
+- exact tables/enums fixed
+- ERP boundary fixed
+- forecast boundary fixed
+- KPI/scoring fixed
+- classification/lifecycle fixed
+- proposal/review/approval fixed
+- alert/share/audit fixed
+- settings/locale/currency/preset fixed
 - root docs refreshed
-- handoff bundle prepared
-- copy blocks prepared
-- reflection plan prepared
-- target matrix prepared
-- target-specific insert packs prepared
-- execution checklist prepared
-- post-insert verification note prepared
-- minimal rollback philosophy prepared
+- cleanup/gap review added
+- implementation not started
 
-not_done_here:
-- no external canonical file has been modified in this local step
+start_here_next_time:
+- 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
+- 000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
+- 00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+
+if_more_design_is_needed:
+- cleanup/compression pass
+- freshness-by-surface formalization
+- notification recipient matrix
+- wider CivilizationOS index reflection
+
+if_implementation_is_later_started:
+Begin from:
+- 0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md
+- 0500006_PRODUCT_PORTFOLIO_MANAGER_EXACT_FLOW_PAYLOADS.md
+- 1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md
+
+restart_warning:
+Do not collapse ERP fact meaning,
+forecast advisory meaning,
+and application judgment meaning into one layer.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/index-reflection/9000009_PRODUCT_PORTFOLIO_MANAGER_MASTER_RESTART_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000068_PRODUCT_PORTFOLIO_MANAGER_PHASE1_IMPLEMENTATION_ENTRY_PACK.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 IMPLEMENTATION ENTRY PACK
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the entry pack for Phase 1 implementation of
+ProductPortfolioManager.
+
+phase_1_identity:
+Phase 1 is the smallest useful product judgment loop.
+
+phase_1_scope:
+- portfolio list
+- product detail
+- score refresh
+- classification draft save
+- proposal save
+
+phase_1_out_of_scope:
+- full review session implementation
+- full approval queue implementation
+- full alert operations implementation
+- full audit/history console implementation
+- full preset/settings implementation
+- broad reflection application to external canonicals
 
 formal_conclusion:
-Local readiness for broad reflection execution is now complete.
+Phase 1 must stay narrow, useful, and source-boundary-safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000068_PRODUCT_PORTFOLIO_MANAGER_PHASE1_IMPLEMENTATION_ENTRY_PACK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000069_PRODUCT_PORTFOLIO_MANAGER_PHASE1_READING_SEQUENCE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 READING SEQUENCE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the recommended reading sequence
+before Phase 1 implementation starts.
+
+reading_sequence:
+1. 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
+2. 050.flow/0500007_PRODUCT_PORTFOLIO_MANAGER_BUSINESS_FLOW_FORMAL_DESIGN.md
+3. 050.flow/0500006_PRODUCT_PORTFOLIO_MANAGER_EXACT_FLOW_PAYLOADS.md
+4. 030.model/0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md
+5. 120.implementation/1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md
+6. 120.implementation/1200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_TO_API_MAPPING.md
+7. 100.security/1000002_PRODUCT_PORTFOLIO_MANAGER_AUTHORIZATION_FORMAL_DESIGN.md
+8. 060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
+9. 060.integration/0600004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
+
+reading_goal:
+After this sequence,
+the implementer should know:
+- what Phase 1 does
+- what data contracts are exact
+- what API contracts are exact
+- what source boundaries must not be broken
+- what authority boundaries must not be broken
+
+formal_conclusion:
+Do not start implementation from broad summaries alone.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000069_PRODUCT_PORTFOLIO_MANAGER_PHASE1_READING_SEQUENCE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000070_PRODUCT_PORTFOLIO_MANAGER_PHASE1_FIRST_WORK_ITEMS.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 FIRST WORK ITEMS
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the first work items for Phase 1 implementation.
+
+first_work_items:
+- fix exact request/response handling for portfolio list
+- fix exact request/response handling for product detail
+- fix exact request/response handling for score refresh
+- fix exact request/response handling for classification draft save
+- fix exact request/response handling for proposal save
+
+then_after_that:
+- wire model exactness against those routes
+- wire screen-to-api mapping against those routes
+- check authorization and boundary rules for those routes only
+
+do_not_jump_first_to:
+- approval queue
+- full review session
+- full audit console
+- full notification routing
+- full settings/preset work
+
+formal_conclusion:
+Phase 1 should begin from exact route handling,
+not from peripheral features.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000070_PRODUCT_PORTFOLIO_MANAGER_PHASE1_FIRST_WORK_ITEMS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000071_PRODUCT_PORTFOLIO_MANAGER_PHASE1_SAFE_START_CHECKLIST.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 SAFE START CHECKLIST
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a safe-start checklist for Phase 1 implementation.
+
+safe_start_checklist:
+- Phase 1 scope is accepted
+- reading sequence is completed
+- exact flow payloads are confirmed
+- exact tables / enums are confirmed
+- api contract exact is confirmed
+- screen-to-api mapping is confirmed
+- authorization rules are confirmed
+- ERP boundary rules are confirmed
+- forecast boundary rules are confirmed
+- out-of-scope items are explicitly not started
+
+safety_warnings:
+- do not collapse ERP fact meaning into application judgment meaning
+- do not collapse forecast advisory meaning into final decision meaning
+- do not collapse lifecycle and classification
+- do not collapse review and approval
+- do not treat proposal completion as ERP execution truth
+
+formal_conclusion:
+If this checklist is effectively satisfied,
+Phase 1 can start safely.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000071_PRODUCT_PORTFOLIO_MANAGER_PHASE1_SAFE_START_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000072_PRODUCT_PORTFOLIO_MANAGER_PHASE1_HANDOFF_MINI_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 HANDOFF MINI NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a short handoff note for whoever starts Phase 1.
+
+handoff_note:
+Phase 1 implementation is limited to
+portfolio list,
+product detail,
+score refresh,
+classification draft save,
+and proposal save.
+Start from exact flow payloads,
+exact tables/enums,
+API contract exact,
+and screen-to-api mapping.
+Do not begin from broad reflection notes.
+Do not expand scope into review/approval/audit consoles yet.
+
+formal_conclusion:
+This mini note is the shortest safe restart point for Phase 1.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000072_PRODUCT_PORTFOLIO_MANAGER_PHASE1_HANDOFF_MINI_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000073_PRODUCT_PORTFOLIO_MANAGER_PHASE1_START_ORDER_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 START ORDER NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes the recommended start order for Phase 1 implementation.
+
+phase_1_scope:
+- portfolio list
+- product detail
+- score refresh
+- classification draft save
+- proposal save
 
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000040_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_BROAD_TARGET_MAP_OVERVIEW.md
+# 1. START ORDER
 # ============================================================
 
+start_order:
+1. portfolio list read route
+2. product detail read route
+3. score refresh route
+4. classification draft save route
+5. proposal save route
+
+# ============================================================
+# 2. WHY THIS ORDER
+# ============================================================
+
+why_this_order:
+- list and detail define the read-side backbone
+- score refresh defines the first judgment update path
+- classification draft save defines the first governed write path
+- proposal save defines the second governed write path
+- this sequence opens the smallest useful judgment loop safely
+
+# ============================================================
+# 3. DO NOT START FROM
+# ============================================================
+
+do_not_start_from:
+- approval queue
+- full review session
+- alert routing
+- audit console
+- settings / preset management
+- broad reflection drafts
+- portal/index reflection notes
+
+# ============================================================
+# 4. REQUIRED CHECK BEFORE EACH STEP
+# ============================================================
+
+required_check_before_each_step:
+- exact flow payload confirmed
+- exact table / enum confirmed
+- api contract confirmed
+- authorization implication confirmed
+- ERP / forecast boundary implication confirmed
+
+# ============================================================
+# 5. FORMAL CONCLUSION
+# ============================================================
+
+formal_conclusion:
+Phase 1 should start from read backbone first,
+then judgment update,
+then governed write routes.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000073_PRODUCT_PORTFOLIO_MANAGER_PHASE1_START_ORDER_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000074_PRODUCT_PORTFOLIO_MANAGER_PHASE1_ROUTE_BY_ROUTE_CHECKLIST.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 ROUTE-BY-ROUTE CHECKLIST
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a route-by-route checklist for Phase 1.
+
+route_checklist:
+
+  portfolio_list:
+    - request contract understood
+    - response contract understood
+    - list fields aligned with model
+    - source boundary not blurred
+
+  product_detail:
+    - request contract understood
+    - response contract understood
+    - detail sections aligned with screen mapping
+    - ERP / score / forecast meanings separated
+
+  score_refresh:
+    - refresh payload understood
+    - score output contract understood
+    - score version / calculated_at preserved
+    - stale vs fresh meaning preserved
+
+  classification_draft_save:
+    - draft payload understood
+    - classification vs lifecycle meaning preserved
+    - draft vs approved meaning preserved
+    - approval boundary not bypassed
+
+  proposal_save:
+    - proposal payload understood
+    - proposal vs execution meaning preserved
+    - proposal vs approval meaning preserved
+    - owner / due / priority context preserved
+
+formal_conclusion:
+Each route should be checked independently before implementation begins.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000074_PRODUCT_PORTFOLIO_MANAGER_PHASE1_ROUTE_BY_ROUTE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000075_PRODUCT_PORTFOLIO_MANAGER_PHASE1_READY_TO_CODE_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER PHASE 1 READY TO CODE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the final pre-coding note for Phase 1.
+
+ready_to_code_when:
+- start order accepted
+- route-by-route checklist accepted
+- first implementation scope not expanded
+- exact documents are the implementation source
+- boundary warnings are accepted
+
+not_ready_to_code_when:
+- broad summaries are being used as implementation source
+- approval/review/audit work is being pulled into Phase 1
+- ERP truth and application judgment are being mixed
+- forecast is being treated as final truth
+
+formal_conclusion:
+When the exact docs and Phase 1 route order are accepted,
+Phase 1 is ready to code.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/phase1-entry-pack/9000075_PRODUCT_PORTFOLIO_MANAGER_PHASE1_READY_TO_CODE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000040_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_BROAD_TARGET_MAP_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED BROAD TARGET MAP OVERVIEW
 # ============================================================
@@ -15157,11 +16740,9 @@ formal_conclusion:
 Uploaded broad canonicals are now concrete reflection candidates,
 not abstract future targets.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000040_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_BROAD_TARGET_MAP_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000041_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_CLASSIFICATION_MATRIX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000041_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_CLASSIFICATION_MATRIX.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED TARGET CLASSIFICATION MATRIX
 # ============================================================
@@ -15276,11 +16857,9 @@ The strongest current reflection targets are:
 - 000000_FOUNDATION_CANONICAL.md
 - 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000041_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_CLASSIFICATION_MATRIX.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000042_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_INSERTION_STRATEGY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000042_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_INSERTION_STRATEGY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED TARGET INSERTION STRATEGY
 # ============================================================
@@ -15346,11 +16925,9 @@ formal_conclusion:
 Different uploaded targets should receive different insertion depth,
 not one universal summary block.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000042_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_INSERTION_STRATEGY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000043_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_EXECUTION_PRIORITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000043_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_EXECUTION_PRIORITY.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED TARGET EXECUTION PRIORITY
 # ============================================================
@@ -15391,11 +16968,9 @@ formal_conclusion:
 If broad edits are later executed,
 start with the highest-discovery, lowest-semantic-risk files first.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000043_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_EXECUTION_PRIORITY.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000044_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_READY_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000044_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_READY_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED TARGET READY NOTE
 # ============================================================
@@ -15422,11 +16997,9 @@ formal_conclusion:
 ProductPortfolioManager local prep is now aligned
 to the actually uploaded broad canonical set.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-broad-target-map/9000044_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_READY_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000045_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_PROPOSALS_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000045_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_PROPOSALS_OVERVIEW.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED TARGET PATCH PROPOSALS OVERVIEW
 # ============================================================
@@ -15459,11 +17032,9 @@ formal_conclusion:
 These are execution-ready patch proposals,
 not yet applied edits.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000045_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_PROPOSALS_OVERVIEW.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000046_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000046_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PATCH PROPOSAL FOR
 # 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md
@@ -15520,11 +17091,9 @@ post_insert_check:
 - no implementation-start implication appears
 - ERP and forecast boundaries stay concise and clear
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000046_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000047_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_900001_PORTAL_REFLECTION_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000047_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_900001_PORTAL_REFLECTION_NOTE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PATCH PROPOSAL FOR
 # 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
@@ -15588,11 +17157,9 @@ post_insert_check:
 - ProductPortfolioManager can be discovered cleanly
 - wording stays additive and short
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000047_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_900001_PORTAL_REFLECTION_NOTE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000048_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_000000_FOUNDATION_CANONICAL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000048_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_000000_FOUNDATION_CANONICAL.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PATCH PROPOSAL FOR
 # 000000_FOUNDATION_CANONICAL.md
@@ -15642,11 +17209,9 @@ post_insert_check:
 - foundation-level meaning remains primary
 - ProductPortfolioManager is mentioned but does not overwhelm the file
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000048_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_000000_FOUNDATION_CANONICAL.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000049_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_9000_SYSTEM_RULES_INTEGRATED.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000049_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_9000_SYSTEM_RULES_INTEGRATED.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PATCH PROPOSAL FOR
 # 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED.md
@@ -15694,11 +17259,9 @@ post_insert_check:
 - rules stay primary
 - ProductPortfolioManager is reflected as a compliant example, not a digression
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000049_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_9000_SYSTEM_RULES_INTEGRATED.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000050_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_COMMON_COMPONENT_LEDGER.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000050_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_COMMON_COMPONENT_LEDGER.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PATCH PROPOSAL FOR
 # 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER.md
@@ -15743,11 +17306,9 @@ post_insert_check:
 - the ledger still reads as common-component-centric
 - ProductPortfolioManager appears as a consumer, not a common-core owner
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000050_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_COMMON_COMPONENT_LEDGER.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000051_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_ERP_DESIGN_BIBLE_AND_SCOPE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000051_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_ERP_DESIGN_BIBLE_AND_SCOPE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER PATCH PROPOSAL FOR
 # ERP_DESIGN_BIBLE_FULL.md / ERP_ENTERPRISE_SCOPE_v1.md
@@ -15794,11 +17355,9 @@ post_insert_check:
 - ProductPortfolioManager remains clearly downstream
 - no ERP/application ownership confusion appears
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000051_PRODUCT_PORTFOLIO_MANAGER_PATCH_PROPOSAL_FOR_ERP_DESIGN_BIBLE_AND_SCOPE.md -->
 
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000052_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_SEQUENCE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000052_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_SEQUENCE.md -->
 # ============================================================
 # PRODUCT PORTFOLIO MANAGER UPLOADED TARGET PATCH SEQUENCE
 # ============================================================
@@ -15832,13 +17391,11 @@ formal_conclusion:
 This sequence reduces semantic risk
 while maximizing navigation value early.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/uploaded-target-patch-proposals/9000052_PRODUCT_PORTFOLIO_MANAGER_UPLOADED_TARGET_PATCH_SEQUENCE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000028_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_PACK_OVERVIEW.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000054_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_GENERATION_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT GENERATION NOTE
+# PRODUCT PORTFOLIO MANAGER WIDE INSERT PACK OVERVIEW
 # ============================================================
 
 status: canonical
@@ -15848,75 +17405,269 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Records that draft-applied broad reflection files were generated
-from uploaded broad canonicals without overwriting the originals.
+Provides a target-by-target insert pack
+for reflecting ProductPortfolioManager into broader canonical documents.
 
-generation_mode:
-- source files in /mnt/data were read
-- additive reflection blocks were appended into draft copies
-- original uploaded files were not modified
+principles:
+- additive only
+- reflection only
+- no implementation opening
+- no boundary weakening
+- use short/medium/long insert depth depending on target document role
 
-draft_output_directory:
-- /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000055_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_INDEX.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT REVIEW INDEX
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides a review index for the generated broad-reflection draft files.
-
-review_principles:
-- original uploaded broad canonicals are unchanged
-- review the generated drafts first
-- confirm wording depth matches target document role
-- confirm ProductPortfolioManager remains described as design-only
-- confirm ERP / forecast / judgment boundaries remain clear
-
-draft_directory:
-- /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts
-
-generated_drafts_expected:
-- 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
-- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
-- 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
-- 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
-- 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
-- ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
-- ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
-
-review_order:
-1. 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
-2. 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
-3. 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
-4. 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
-5. 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
-6. ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
-7. ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
+target_families:
+- CivilizationOS canonical full rebuilt
+- foundation / system rules canonicals
+- portal-side index reflection notes
+- application/common ledgers or reflection notes
+- ERP-side reflection notes only where ERP boundary explanation is useful
 
 formal_conclusion:
-Review should start from discovery-oriented targets first,
-then move to terse rule/foundation files,
-then to narrower consumer-boundary notes.
+This pack is for controlled broad navigation reflection,
+not for changing ProductPortfolioManager meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000028_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_PACK_OVERVIEW.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000029_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000056_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_CHECKLIST.md
+# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR CIVILIZATION OS CANONICAL FULL REBUILT
 # ============================================================
 
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+target_file_hint:
+/mnt/data/003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md
+
+recommended_insert_depth:
+medium
+
+recommended_insert_location:
+- application catalog area
+- applications landscape area
+- business-side application summary area
+- restart/navigation appendix area
+
+copy_block:
+  - application_name: ProductPortfolioManager
+    system_group: 07.applications
+    category: business-judgment-application
+    summary:
+      Lightweight product strategy judgment application
+      for KPI/scoring-based product evaluation,
+      strategic classification,
+      proposals,
+      review sessions,
+      approvals,
+      alerts,
+      and audit/history.
+      It sits on top of ERP facts
+      and uses forecast as advisory reference.
+    canonical_entries:
+      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
+      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_INDEX.md
+      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+    current_state:
+      - design expanded
+      - implementation not started
+
+note:
+Use medium depth here because Civilization OS canonical rebuilt
+is broad enough to benefit from identity + boundary summary,
+but does not need low-level payload/schema detail.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000029_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000030_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_FOUNDATION_AND_SYSTEM_RULES.md -->
 # ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT REVIEW CHECKLIST
+# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR FOUNDATION AND SYSTEM RULES
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+target_file_hints:
+- /mnt/data/000000_FOUNDATION_CANONICAL.md
+- /mnt/data/9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED.md
+
+recommended_insert_depth:
+short
+
+recommended_insert_location:
+- applications overview appendix
+- example application mapping
+- system navigation reflection note section
+
+copy_block:
+  - application_name: ProductPortfolioManager
+    role:
+      - product portfolio judgment
+      - product strategy classification
+      - proposal/review/approval governance
+    boundaries:
+      - ERP facts preserved
+      - forecast advisory preserved
+    state:
+      - design expanded
+      - implementation not started
+    entry:
+      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+
+note:
+Use short depth here because these files are likely system-level canonicals,
+not app-specific drill-down catalogs.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000030_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_FOUNDATION_AND_SYSTEM_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000031_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_PORTAL_REFLECTION.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR PORTAL REFLECTION
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+target_file_hint:
+/mnt/data/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
+
+recommended_insert_depth:
+medium_to_long
+
+recommended_insert_location:
+- app discovery area
+- navigation tiles summary area
+- system-index reflection entry area
+
+copy_block:
+  - application_name: ProductPortfolioManager
+    display_label: Product Portfolio Manager / Product Strategy Judgment
+    category: business-judgment-application
+    summary:
+      Lightweight product strategy judgment application
+      that helps evaluate products,
+      rank and classify them strategically,
+      manage proposals,
+      run review sessions,
+      handle approvals,
+      surface alerts,
+      and preserve audit/history.
+    distinguishing_points:
+      - ERP truth boundary preserved
+      - forecast treated as advisory reference
+      - multilingual / multi-currency / cross-device design fixed
+    primary_entries:
+      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
+      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/00_PRODUCT_PORTFOLIO_MANAGER_INTEGRATED.md
+
+note:
+Portal/index reflection can tolerate slightly richer wording
+because it is discovery-oriented.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000031_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_PORTAL_REFLECTION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000032_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_COMMON_LEDGER_OR_APP_LEDGER.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR COMMON LEDGER OR APP LEDGER
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+target_file_hint:
+/mnt/data/014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER.md
+
+recommended_insert_depth:
+short_to_medium
+
+recommended_insert_location:
+- application consumers section
+- application references section
+- future reuse/reference appendix
+
+copy_block:
+  - consumer_application: ProductPortfolioManager
+    consumer_role:
+      product strategy judgment application
+    common-needing-areas:
+      - localization
+      - currency context display
+      - score/status display surfaces
+      - alert and approval surfaces
+      - history/audit visibility surfaces
+      - responsive cross-device shell
+    current_state:
+      - common-component candidates already separated out
+      - app-specific design expanded
+      - implementation not started
+
+note:
+This is not for moving ProductPortfolioManager into common components.
+It is only for showing that the app consumes common capabilities.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000032_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_COMMON_LEDGER_OR_APP_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000033_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_ERP_SIDE_REFERENCE_NOTE.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER INSERT BLOCK FOR ERP SIDE REFERENCE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+application: ProductPortfolioManager
+owner: Boss
+prepared_by: Zero
+
+target_file_hints:
+- /mnt/data/ERP_DESIGN_BIBLE_FULL.md
+- /mnt/data/ERP_ENTERPRISE_SCOPE_v1.md
+- /mnt/data/ERP_SYSTEM_FULL_DUMP.txt
+
+recommended_insert_depth:
+short
+
+recommended_insert_location:
+- consuming applications appendix
+- downstream application references
+- business-side judgment consumer note
+
+copy_block:
+  - downstream_application: ProductPortfolioManager
+    relationship_to_erp:
+      Consumes ERP product and operational facts as reference.
+      Does not replace ERP truth.
+      Owns application-side portfolio judgment artifacts only.
+    owned_by_application:
+      - score
+      - classification
+      - proposal
+      - review
+      - approval
+      - alert
+      - audit/history
+    entry:
+      - /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
+
+note:
+ERP-side documents should receive only a narrow consumer-boundary note,
+not a full application summary.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000033_PRODUCT_PORTFOLIO_MANAGER_INSERT_BLOCK_FOR_ERP_SIDE_REFERENCE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000034_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_EXECUTION_ORDER.md -->
+# ============================================================
+# PRODUCT PORTFOLIO MANAGER WIDE INSERT EXECUTION ORDER
 # ============================================================
 
 status: canonical
@@ -15926,55 +17677,30 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Provides a checklist for reviewing the generated broad-reflection drafts.
+Defines the safest order for later wide insert execution.
 
-checklist:
-- ProductPortfolioManager is described as a lightweight product strategy judgment application
-- implementation not started is stated or preserved clearly
-- ERP truth boundary remains explicit
-- forecast advisory boundary remains explicit
-- the draft does not over-insert low-level schema/payload detail
-- the wording depth fits the target file type
-- the inserted block reads naturally after the source file body
-- the inserted block improves discovery or restartability
-- no wording implies ProductPortfolioManager is part of ERP itself
-- no wording implies forecast is final truth
-- no wording implies review equals approval
-- no wording implies proposal completion equals ERP execution truth
+execution_order:
+1. portal/index reflection note
+2. Civilization OS canonical full rebuilt
+3. foundation/system-rules summary docs
+4. common/app ledger note
+5. ERP-side consumer-boundary note only if needed
 
-target_specific_checks:
-
-  portal_reflection_note:
-    - richer discovery wording is acceptable
-    - app label is clear
-    - references are useful for navigation
-
-  civilization_os_canonical:
-    - medium summary depth is acceptable
-    - application is discoverable without bloating the file
-
-  foundation_or_rules:
-    - wording stays short
-    - system/foundation meaning remains primary
-
-  common_component_ledger:
-    - ProductPortfolioManager appears as consumer, not common-core owner
-
-  erp_side_docs:
-    - ProductPortfolioManager appears only as downstream consumer
-    - ERP remains clearly primary
+reasoning:
+- portal/index reflection is lowest risk and highest discovery value
+- Civilization OS canonical full rebuilt is broad and suitable for application reflection
+- system/foundation docs should remain terse
+- ERP-side docs should receive only minimal consumer-boundary reflection
 
 formal_conclusion:
-A good draft is one that makes ProductPortfolioManager easier to find
-without distorting the target document.
+If broad insertion is executed later,
+this order minimizes semantic disruption.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-insert-pack/9000034_PRODUCT_PORTFOLIO_MANAGER_WIDE_INSERT_EXECUTION_ORDER.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000036_PRODUCT_PORTFOLIO_MANAGER_WIDE_REFLECTION_EXECUTION_CHECKLIST.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000057_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_DECISION_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT DECISION NOTE
+# PRODUCT PORTFOLIO MANAGER WIDE REFLECTION EXECUTION CHECKLIST
 # ============================================================
 
 status: canonical
@@ -15984,330 +17710,98 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Provides a simple decision frame after reviewing the generated drafts.
+Defines the execution checklist
+for a future broad-navigation-reflection pass
+that actually edits wider canonical files.
 
-possible_decisions:
-- accept as-is for later manual reflection
-- accept with wording trim
-- accept with placement change
-- hold for later
-- reject target insertion for now
-
-recommended_default_decision:
-- portal reflection draft: likely accept with minor wording review
-- Civilization OS canonical draft: likely accept with minor wording review
-- foundation/system-rules drafts: review for terseness
-- common ledger draft: review for consumer-only framing
-- ERP-side drafts: review for strict downstream-boundary wording
-
-decision_rule:
-Do not apply a draft later
-if it weakens source boundaries
-or makes the target document noticeably worse to read.
-
-formal_conclusion:
-Generated drafts are review artifacts first,
-not auto-approved insertions.
-
+execution_principles:
+- additive only
+- navigation reflection only
+- no implementation opening
+- no boundary weakening
+- no low-level schema/payload dump into broad canonicals
 
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000058_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_DRAFT_REVIEW_READY_NOTE.md
+# 1. PRE-EXECUTION CHECKLIST
 # ============================================================
 
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION DRAFT REVIEW READY NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Records that the broad-reflection draft review package is now complete.
-
-package_contents:
-- draft generation note
-- review index
-- review checklist
-- decision note
-
-state:
-- original uploaded broad canonicals unchanged
-- draft review package ready
-- later apply phase still optional
-
-formal_conclusion:
-Broad-reflection drafts are now ready for human review.
-
+pre_execution_checklist:
+- confirm ProductPortfolioManager local OVERVIEW is current
+- confirm ProductPortfolioManager local INDEX is current
+- confirm ProductPortfolioManager local INTEGRATED is current
+- confirm final handoff bundle exists
+- confirm copy blocks exist
+- confirm broad reflection execution plan exists
+- confirm target-specific insert pack exists
+- confirm implementation is still intentionally unopened
 
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000059_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_REVIEW_DECISION_NOTE.md
+# 2. TARGET SELECTION CHECKLIST
 # ============================================================
 
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION REVIEW DECISION NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Records review decisions for generated broad-reflection drafts.
-
-decision_scale:
-- accept_as_is
-- accept_with_trim
-- accept_with_placement_change
-- hold
-- reject_for_now
-
-global_review_rules:
-- original /mnt/data files remain unchanged
-- draft review does not mean implementation start
-- ERP truth boundary must remain explicit
-- forecast advisory boundary must remain explicit
-- ProductPortfolioManager must remain application-side judgment app
-- wording depth must fit the target document role
+target_selection_checklist:
+- identify target file class:
+  - master index
+  - integrated canonical
+  - restart/handoff
+  - portal/reflection note
+  - ERP-side consumer note
+- choose insertion depth:
+  - short
+  - medium
+  - long
+- confirm insertion is navigation-appropriate for that target
+- avoid inserting deeper detail than the target document can naturally hold
 
 # ============================================================
-# 1. PORTAL REFLECTION NOTE
+# 3. CONTENT SAFETY CHECKLIST
 # ============================================================
 
-target_file:
-- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
-
-review_decision: undecided
-review_comment:
-- good candidate for first acceptance
-- discovery-oriented target
-- richer summary acceptable here
-
-# ============================================================
-# 2. CIVILIZATION OS CANONICAL FULL REBUILT
-# ============================================================
-
-target_file:
-- 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
-
-review_decision: undecided
-review_comment:
-- medium-depth insertion is probably natural
-- confirm wording is not too long for the host document
+content_safety_checklist:
+- application summary remains short enough for broad navigation
+- ERP truth boundary remains clear
+- forecast advisory boundary remains clear
+- implementation not started remains clear
+- no accidental claim of production readiness
+- no accidental collapse of review and approval meaning
+- no accidental collapse of classification and lifecycle meaning
 
 # ============================================================
-# 3. FOUNDATION CANONICAL
+# 4. AFTER-INSERT CHECKLIST
 # ============================================================
 
-target_file:
-- 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
-
-review_decision: undecided
-review_comment:
-- must stay terse
-- foundation meaning must remain primary
-
-# ============================================================
-# 4. SYSTEM RULES INTEGRATED
-# ============================================================
-
-target_file:
-- 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
-
-review_decision: undecided
-review_comment:
-- should remain rules-first
-- app mention must stay compact
+after_insert_checklist:
+- ProductPortfolioManager can be found from the target document
+- canonical entry docs are named correctly
+- wording remains additive
+- existing target document meaning still reads naturally
+- no duplicate contradictory summary was introduced
+- restartability improved rather than worsened
 
 # ============================================================
-# 5. APPLICATION COMMON COMPONENT LEDGER
+# 5. STOP CONDITIONS
 # ============================================================
 
-target_file:
-- 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
-
-review_decision: undecided
-review_comment:
-- confirm ProductPortfolioManager is shown as consumer only
-- do not make it look like common component owner
-
-# ============================================================
-# 6. ERP DESIGN BIBLE
-# ============================================================
-
-target_file:
-- ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
-
-review_decision: undecided
-review_comment:
-- keep downstream-consumer wording strict
-- ERP must remain clearly primary
-
-# ============================================================
-# 7. ERP ENTERPRISE SCOPE
-# ============================================================
-
-target_file:
-- ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
-
-review_decision: undecided
-review_comment:
-- keep downstream-consumer wording strict
-- do not let scope blur ERP/app boundary
-
-# ============================================================
-# 8. FINAL REVIEW SUMMARY
-# ============================================================
-
-recommended_first_accept_candidates:
-- 900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
-- 003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
-
-recommended_trim_candidates:
-- 000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
-- 9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
-
-recommended_boundary-check candidates:
-- ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
-- ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
-
-formal_conclusion:
-Use this note to record which draft is acceptable for later manual reflection.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000060_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_APPLY_SHORTLIST.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION APPLY SHORTLIST
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Extracts the first-pass apply shortlist
-from the generated broad-reflection drafts.
-
-selection_principles:
-- prioritize discovery value
-- prefer low semantic risk
-- keep insertion depth appropriate to target
-- do not open implementation meaning
-- preserve ERP / forecast / judgment boundaries
-
-# ============================================================
-# 1. FIRST-PASS APPLY SHORTLIST
-# ============================================================
-
-first_pass_apply_shortlist:
-
-  - shortlist_rank: 1
-    target_draft:
-      900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
-    target_original:
-      /mnt/data/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE.md
-    reason:
-      Highest discovery value.
-      Discovery-oriented note can naturally accept medium-depth ProductPortfolioManager summary.
-
-  - shortlist_rank: 2
-    target_draft:
-      003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
-    target_original:
-      /mnt/data/003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT.md
-    reason:
-      Broad canonical landscape file.
-      Good place to make ProductPortfolioManager discoverable at system level.
-
-# ============================================================
-# 2. SECOND-PASS CANDIDATES
-# ============================================================
-
-second_pass_candidates:
-
-  - target_draft:
-      000000_FOUNDATION_CANONICAL__PPM_REFLECTION_DRAFT.md
-    target_original:
-      /mnt/data/000000_FOUNDATION_CANONICAL.md
-    reason:
-      Useful, but wording must stay very terse.
-
-  - target_draft:
-      9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED__PPM_REFLECTION_DRAFT.md
-    target_original:
-      /mnt/data/9000_CIVILIZATION_SYSTEM_RULES_INTEGRATED.md
-    reason:
-      Useful, but rules-first character must remain dominant.
-
-# ============================================================
-# 3. BOUNDARY-SENSITIVE CANDIDATES
-# ============================================================
-
-boundary_sensitive_candidates:
-
-  - target_draft:
-      ERP_DESIGN_BIBLE_FULL__PPM_REFLECTION_DRAFT.md
-    target_original:
-      /mnt/data/ERP_DESIGN_BIBLE_FULL.md
-    reason:
-      Must remain strict downstream-consumer note only.
-
-  - target_draft:
-      ERP_ENTERPRISE_SCOPE_v1__PPM_REFLECTION_DRAFT.md
-    target_original:
-      /mnt/data/ERP_ENTERPRISE_SCOPE_v1.md
-    reason:
-      Must remain strict downstream-consumer note only.
-
-# ============================================================
-# 4. SPECIAL-FRAMING CANDIDATE
-# ============================================================
-
-special_framing_candidate:
-
-  - target_draft:
-      014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER__PPM_REFLECTION_DRAFT.md
-    target_original:
-      /mnt/data/014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER.md
-    reason:
-      Must frame ProductPortfolioManager as common-capability consumer only.
-
-# ============================================================
-# 5. FIRST-PASS APPLY RULES
-# ============================================================
-
-first_pass_apply_rules:
-- start with portal reflection note
-- then move to Civilization OS canonical full rebuilt
-- do not apply second-pass files before confirming first-pass wording feels natural
-- do not apply boundary-sensitive files before final wording check
-- original /mnt/data files must be backed by review confidence before any manual reflection
+stop_conditions:
+- target file requires heavy restructuring to insert cleanly
+- insertion would force low-level implementation detail into high-level canonical
+- insertion would imply implementation has started
+- insertion would weaken ERP / forecast / judgment boundary wording
+- insertion would create confusion about source-of-truth ownership
 
 # ============================================================
 # 6. FORMAL CONCLUSION
 # ============================================================
 
 formal_conclusion:
-The safest initial apply shortlist is:
-1. portal reflection note
-2. Civilization OS canonical full rebuilt
+Broad reflection execution should proceed only
+when the insertion improves navigation without degrading meaning clarity.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000036_PRODUCT_PORTFOLIO_MANAGER_WIDE_REFLECTION_EXECUTION_CHECKLIST.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000037_PRODUCT_PORTFOLIO_MANAGER_POST_INSERT_VERIFICATION_NOTE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000061_PRODUCT_PORTFOLIO_MANAGER_SHORTLIST_REVIEW_COMMANDS.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER SHORTLIST REVIEW COMMANDS
+# PRODUCT PORTFOLIO MANAGER POST INSERT VERIFICATION NOTE
 # ============================================================
 
 status: canonical
@@ -16317,30 +17811,35 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Provides quick shell commands
-for reviewing the shortlisted drafts first.
+Defines what to verify
+after ProductPortfolioManager is inserted into a broader canonical file.
 
-recommended_commands:
+verification_points:
+- application name is spelled consistently
+- application path is correct
+- category remains business-judgment-application or equivalent
+- canonical entries point to local ProductPortfolioManager root docs
+- implementation state still reads as not started
+- broad document did not accidentally inherit low-level ProductPortfolioManager detail
+- boundaries still read correctly:
+  - ERP truth preserved
+  - forecast advisory preserved
+  - application judgment owned locally
 
-  portal_reflection_note:
-    sed -n '1,260p' /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/900001_CIVILIZATION_PORTAL_SITE_SYSTEM_INDEX_REFLECTION_NOTE__PPM_REFLECTION_DRAFT.md
-
-  civilization_os_canonical:
-    sed -n '1,280p' /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/003_CIVILIZATION_OS_CANONICAL_FULL_REBUILT__PPM_REFLECTION_DRAFT.md
-
-  shortlist_note:
-    sed -n '1,240p' /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/applied-broad-reflection-drafts/9000060_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_APPLY_SHORTLIST.md
+restart_verification:
+- a reader of the broader file can now discover ProductPortfolioManager
+- a reader can jump to OVERVIEW / INDEX / INTEGRATED
+- a restart path is clearer than before insertion
 
 formal_conclusion:
-Review these first before considering any later manual reflection.
+A successful insertion is one that improves discovery and restartability
+without distorting the wider file.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000037_PRODUCT_PORTFOLIO_MANAGER_POST_INSERT_VERIFICATION_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000038_PRODUCT_PORTFOLIO_MANAGER_MINIMAL_ROLLBACK_NOTE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000068_PRODUCT_PORTFOLIO_MANAGER_PHASE1_IMPLEMENTATION_ENTRY_PACK.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 IMPLEMENTATION ENTRY PACK
+# PRODUCT PORTFOLIO MANAGER MINIMAL ROLLBACK NOTE
 # ============================================================
 
 status: canonical
@@ -16350,37 +17849,33 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Provides the entry pack for Phase 1 implementation of
-ProductPortfolioManager.
+Defines a minimal rollback philosophy
+for a future broad reflection insertion pass.
 
-phase_1_identity:
-Phase 1 is the smallest useful product judgment loop.
+rollback_principles:
+- rollback only if insertion degraded clarity
+- rollback should be local to the broad target file
+- local ProductPortfolioManager design set should remain untouched
+- prefer reverting the inserted navigation block only,
+  not broad rewriting of unrelated target sections
 
-phase_1_scope:
-- portfolio list
-- product detail
-- score refresh
-- classification draft save
-- proposal save
-
-phase_1_out_of_scope:
-- full review session implementation
-- full approval queue implementation
-- full alert operations implementation
-- full audit/history console implementation
-- full preset/settings implementation
-- broad reflection application to external canonicals
+rollback_triggers:
+- inserted block duplicates an existing app entry in a conflicting way
+- inserted block makes the broad file harder to read
+- inserted block accidentally implies implementation work started
+- inserted block weakens source-of-truth boundaries
+- inserted block uses the wrong insertion depth for the target
 
 formal_conclusion:
-Phase 1 must stay narrow, useful, and source-boundary-safe.
+Rollback in a broad reflection pass should be small,
+targeted,
+and meaning-preserving.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000038_PRODUCT_PORTFOLIO_MANAGER_MINIMAL_ROLLBACK_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000039_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_READY_FOR_EXECUTION_NOTE.md -->
 # ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000069_PRODUCT_PORTFOLIO_MANAGER_PHASE1_READING_SEQUENCE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 READING SEQUENCE
+# PRODUCT PORTFOLIO MANAGER BROAD REFLECTION READY FOR EXECUTION NOTE
 # ============================================================
 
 status: canonical
@@ -16390,314 +17885,25 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Defines the recommended reading sequence
-before Phase 1 implementation starts.
+Records that the local preparation
+for broad canonical insertion is now complete enough
+to execute in a separate phase later.
 
-reading_sequence:
-1. 000_PRODUCT_PORTFOLIO_MANAGER_OVERVIEW.md
-2. 050.flow/0500007_PRODUCT_PORTFOLIO_MANAGER_BUSINESS_FLOW_FORMAL_DESIGN.md
-3. 050.flow/0500006_PRODUCT_PORTFOLIO_MANAGER_EXACT_FLOW_PAYLOADS.md
-4. 030.model/0300007_PRODUCT_PORTFOLIO_MANAGER_EXACT_TABLES_AND_ENUMS.md
-5. 120.implementation/1200004_PRODUCT_PORTFOLIO_MANAGER_API_CONTRACT_EXACT.md
-6. 120.implementation/1200005_PRODUCT_PORTFOLIO_MANAGER_SCREEN_TO_API_MAPPING.md
-7. 100.security/1000002_PRODUCT_PORTFOLIO_MANAGER_AUTHORIZATION_FORMAL_DESIGN.md
-8. 060.integration/0600003_PRODUCT_PORTFOLIO_MANAGER_ERP_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
-9. 060.integration/0600004_PRODUCT_PORTFOLIO_MANAGER_FORECAST_BOUNDARY_INTEGRATION_FORMAL_DESIGN.md
+ready_assets:
+- root docs refreshed
+- handoff bundle prepared
+- copy blocks prepared
+- reflection plan prepared
+- target matrix prepared
+- target-specific insert packs prepared
+- execution checklist prepared
+- post-insert verification note prepared
+- minimal rollback philosophy prepared
 
-reading_goal:
-After this sequence,
-the implementer should know:
-- what Phase 1 does
-- what data contracts are exact
-- what API contracts are exact
-- what source boundaries must not be broken
-- what authority boundaries must not be broken
+not_done_here:
+- no external canonical file has been modified in this local step
 
 formal_conclusion:
-Do not start implementation from broad summaries alone.
+Local readiness for broad reflection execution is now complete.
 
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000070_PRODUCT_PORTFOLIO_MANAGER_PHASE1_FIRST_WORK_ITEMS.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 FIRST WORK ITEMS
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the first work items for Phase 1 implementation.
-
-first_work_items:
-- fix exact request/response handling for portfolio list
-- fix exact request/response handling for product detail
-- fix exact request/response handling for score refresh
-- fix exact request/response handling for classification draft save
-- fix exact request/response handling for proposal save
-
-then_after_that:
-- wire model exactness against those routes
-- wire screen-to-api mapping against those routes
-- check authorization and boundary rules for those routes only
-
-do_not_jump_first_to:
-- approval queue
-- full review session
-- full audit console
-- full notification routing
-- full settings/preset work
-
-formal_conclusion:
-Phase 1 should begin from exact route handling,
-not from peripheral features.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000071_PRODUCT_PORTFOLIO_MANAGER_PHASE1_SAFE_START_CHECKLIST.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 SAFE START CHECKLIST
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides a safe-start checklist for Phase 1 implementation.
-
-safe_start_checklist:
-- Phase 1 scope is accepted
-- reading sequence is completed
-- exact flow payloads are confirmed
-- exact tables / enums are confirmed
-- api contract exact is confirmed
-- screen-to-api mapping is confirmed
-- authorization rules are confirmed
-- ERP boundary rules are confirmed
-- forecast boundary rules are confirmed
-- out-of-scope items are explicitly not started
-
-safety_warnings:
-- do not collapse ERP fact meaning into application judgment meaning
-- do not collapse forecast advisory meaning into final decision meaning
-- do not collapse lifecycle and classification
-- do not collapse review and approval
-- do not treat proposal completion as ERP execution truth
-
-formal_conclusion:
-If this checklist is effectively satisfied,
-Phase 1 can start safely.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000072_PRODUCT_PORTFOLIO_MANAGER_PHASE1_HANDOFF_MINI_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 HANDOFF MINI NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides a short handoff note for whoever starts Phase 1.
-
-handoff_note:
-Phase 1 implementation is limited to
-portfolio list,
-product detail,
-score refresh,
-classification draft save,
-and proposal save.
-Start from exact flow payloads,
-exact tables/enums,
-API contract exact,
-and screen-to-api mapping.
-Do not begin from broad reflection notes.
-Do not expand scope into review/approval/audit consoles yet.
-
-formal_conclusion:
-This mini note is the shortest safe restart point for Phase 1.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000073_PRODUCT_PORTFOLIO_MANAGER_PHASE1_START_ORDER_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 START ORDER NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Fixes the recommended start order for Phase 1 implementation.
-
-phase_1_scope:
-- portfolio list
-- product detail
-- score refresh
-- classification draft save
-- proposal save
-
-# ============================================================
-# 1. START ORDER
-# ============================================================
-
-start_order:
-1. portfolio list read route
-2. product detail read route
-3. score refresh route
-4. classification draft save route
-5. proposal save route
-
-# ============================================================
-# 2. WHY THIS ORDER
-# ============================================================
-
-why_this_order:
-- list and detail define the read-side backbone
-- score refresh defines the first judgment update path
-- classification draft save defines the first governed write path
-- proposal save defines the second governed write path
-- this sequence opens the smallest useful judgment loop safely
-
-# ============================================================
-# 3. DO NOT START FROM
-# ============================================================
-
-do_not_start_from:
-- approval queue
-- full review session
-- alert routing
-- audit console
-- settings / preset management
-- broad reflection drafts
-- portal/index reflection notes
-
-# ============================================================
-# 4. REQUIRED CHECK BEFORE EACH STEP
-# ============================================================
-
-required_check_before_each_step:
-- exact flow payload confirmed
-- exact table / enum confirmed
-- api contract confirmed
-- authorization implication confirmed
-- ERP / forecast boundary implication confirmed
-
-# ============================================================
-# 5. FORMAL CONCLUSION
-# ============================================================
-
-formal_conclusion:
-Phase 1 should start from read backbone first,
-then judgment update,
-then governed write routes.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000074_PRODUCT_PORTFOLIO_MANAGER_PHASE1_ROUTE_BY_ROUTE_CHECKLIST.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 ROUTE-BY-ROUTE CHECKLIST
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides a route-by-route checklist for Phase 1.
-
-route_checklist:
-
-  portfolio_list:
-    - request contract understood
-    - response contract understood
-    - list fields aligned with model
-    - source boundary not blurred
-
-  product_detail:
-    - request contract understood
-    - response contract understood
-    - detail sections aligned with screen mapping
-    - ERP / score / forecast meanings separated
-
-  score_refresh:
-    - refresh payload understood
-    - score output contract understood
-    - score version / calculated_at preserved
-    - stale vs fresh meaning preserved
-
-  classification_draft_save:
-    - draft payload understood
-    - classification vs lifecycle meaning preserved
-    - draft vs approved meaning preserved
-    - approval boundary not bypassed
-
-  proposal_save:
-    - proposal payload understood
-    - proposal vs execution meaning preserved
-    - proposal vs approval meaning preserved
-    - owner / due / priority context preserved
-
-formal_conclusion:
-Each route should be checked independently before implementation begins.
-
-
-# ============================================================
-# SOURCE FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/ProductPortfolioManager/900.meta/phase1-entry-pack/9000075_PRODUCT_PORTFOLIO_MANAGER_PHASE1_READY_TO_CODE_NOTE.md
-# ============================================================
-
-# ============================================================
-# PRODUCT PORTFOLIO MANAGER PHASE 1 READY TO CODE NOTE
-# ============================================================
-
-status: canonical
-layer: meta
-application: ProductPortfolioManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides the final pre-coding note for Phase 1.
-
-ready_to_code_when:
-- start order accepted
-- route-by-route checklist accepted
-- first implementation scope not expanded
-- exact documents are the implementation source
-- boundary warnings are accepted
-
-not_ready_to_code_when:
-- broad summaries are being used as implementation source
-- approval/review/audit work is being pulled into Phase 1
-- ERP truth and application judgment are being mixed
-- forecast is being treated as final truth
-
-formal_conclusion:
-When the exact docs and Phase 1 route order are accepted,
-Phase 1 is ready to code.
-
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProductPortfolioManager/900.meta/wide-reflection-execution/9000039_PRODUCT_PORTFOLIO_MANAGER_BROAD_REFLECTION_READY_FOR_EXECUTION_NOTE.md -->

@@ -19,14 +19,14 @@ The fixed domain order is:
 050.growth
 060.builder
 070.visual
-080.runtime-hosting
+080.runtime_hosting
 090.snapshot
 100.package
 110.distribution
-120.external-rights
-130.access-license-transfer
+120.external_rights
+130.access_license_transfer
 140.integration
-150.security
+100.security
 160.governance
 170.operations-support
 

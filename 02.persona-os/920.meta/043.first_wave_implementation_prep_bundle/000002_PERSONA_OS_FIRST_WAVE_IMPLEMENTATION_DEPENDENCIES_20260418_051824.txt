@@ -1,0 +1,5 @@
+edge_apply -> state_apply
+state_apply -> builder_api
+builder_api -> builder_storage
+builder_api <-> builder_storage alignment required before start
+GO signoff required before any implementation start

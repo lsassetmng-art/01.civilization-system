@@ -268,3 +268,35 @@ Anti-self-trade and identity implementation must remain:
 - seller-control-aware
 - duplicate-registration-aware
 - resistant to cashout-abuse patterns
+
+## Exact Identity Risk Decision Rule
+## Exact Identity Risk Decision Rule
+
+Identity risk evaluation must explicitly distinguish:
+
+- shared user identity
+- shared controller
+- shared beneficial owner
+- shared payout beneficiary
+- suspicious but unresolved similarity
+
+Each may map to different decision layers.
+
+## Exact Decision Layers
+
+The following decision layers must remain separate:
+
+- HARD_BLOCK
+- REVIEW_HOLD
+- MONITORING_ONLY
+
+## Exact Identity Risk Boundary
+
+Identity risk decision is not equivalent to:
+
+- authentication result
+- authorization result
+- ordinary seller eligibility
+- payment confirmation
+
+Identity risk is its own canonical review surface and must be auditable.

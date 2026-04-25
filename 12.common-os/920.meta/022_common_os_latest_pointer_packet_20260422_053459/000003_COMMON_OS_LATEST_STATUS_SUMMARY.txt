@@ -1,0 +1,17 @@
+COMMON OS LATEST STATUS SUMMARY
+generated_at=2026-04-22T05:34:59+0900
+
+scope=commonos-common-only
+os_specific_adoption_in_this_chat=no
+
+canonical_status:
+- CommonOS shared foundation canon is established
+- app_common metadata-only direction is established
+- root/layer integrated files are the main reading entry points
+- OS-specific adoption planning belongs to each OS chat
+
+meta_presence:
+- latest_delivery_packet_present=YES
+- latest_review_snapshot_present=YES
+- latest_integrity_audit_present=YES
+- latest_final_one_block_handoff_present=YES

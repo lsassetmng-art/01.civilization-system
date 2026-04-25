@@ -1,0 +1,2 @@
+latest_920=
+latest_930=/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/930.root_direct_apply_and_rehome_20260420_042416

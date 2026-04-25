@@ -1,0 +1,6 @@
+4	dispatcher_orchestrator
+4	core_edge
+3	signing_trust
+2	snapshot_issue_boundary
+2	external_intake_variant
+1	canonical_apply_boundary

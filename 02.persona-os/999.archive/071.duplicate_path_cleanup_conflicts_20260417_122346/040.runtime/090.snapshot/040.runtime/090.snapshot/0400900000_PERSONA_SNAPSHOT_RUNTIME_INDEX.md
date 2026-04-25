@@ -1,0 +1,8 @@
+# 0400900000_PERSONA_SNAPSHOT_RUNTIME_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 040.runtime/090.snapshot/040.runtime/090.snapshot
+
+- 0400900001_PERSONA_SNAPSHOT_RUNTIME_OVERVIEW.md
+- 0400900002_PERSONA_SNAPSHOT_ISSUE_RUNTIME.md

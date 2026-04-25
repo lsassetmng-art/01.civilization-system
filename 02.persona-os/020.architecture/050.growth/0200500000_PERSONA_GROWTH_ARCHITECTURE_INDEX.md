@@ -1,20 +1,8 @@
-# ============================================================
-# PERSONA GROWTH ARCHITECTURE INDEX
-# ============================================================
+# 0200500000_PERSONA_GROWTH_ARCHITECTURE_INDEX
 
-status: canonical
-layer: architecture
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH ARCHITECTURE documents.
+directory: 020.architecture/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-0200500000_PERSONA_GROWTH_ARCHITECTURE_INDEX.md
-0200500001_PERSONA_GROWTH_ARCHITECTURE_OVERVIEW.md
+- 0200500001_PERSONA_GROWTH_ARCHITECTURE_OVERVIEW.md
+- 020.architecture/

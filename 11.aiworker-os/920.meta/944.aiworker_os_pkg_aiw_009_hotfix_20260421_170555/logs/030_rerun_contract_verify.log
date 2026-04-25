@@ -1,0 +1,12 @@
+============================================================
+PKG-AIW-009 VERIFY BUSINESS EVENT CONTRACT STATE
+============================================================
+business_event_contract_registry.count=2
+business_event_validation_log.count=2
+business_cross_boundary_smoke_log.count=3
+active_contracts.count=2
+latest_validation.count=2
+latest_smoke.count=3
+============================================================
+PKG-AIW-009 VERIFY BUSINESS EVENT CONTRACT STATE FINISHED
+============================================================

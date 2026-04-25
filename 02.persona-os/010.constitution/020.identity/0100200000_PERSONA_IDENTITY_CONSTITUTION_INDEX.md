@@ -1,10 +1,8 @@
-# ============================================================
-# PERSONA IDENTITY CONSTITUTION INDEX
-# ============================================================
+# 0100200000_PERSONA_IDENTITY_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: identity
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/020.identity
+
+- 0100200001_PERSONA_IDENTITY_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

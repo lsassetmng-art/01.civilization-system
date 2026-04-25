@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona preference structures.
+Defines the implementation design for Civilization-side persona preference structures.
 
 # 2. IMPLEMENTATION TARGETS
 

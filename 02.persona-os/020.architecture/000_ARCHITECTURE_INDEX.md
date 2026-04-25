@@ -1,19 +1,65 @@
-# ============================================================
-# PERSONA OS ARCHITECTURE INDEX
-# ============================================================
+# 000_ARCHITECTURE_INDEX
 
-status: draft-for-canonical-update
-system: persona-os
-layer: architecture
-document_type: index
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-subdomains:
-- existing canonical architecture domains
-- 120.external-reflection
+directory: 020.architecture
 
-documents:
-- 120.external-reflection/0201200_EXTERNAL_REFLECTION_INTAKE_ARCHITECTURE.md
-- 120.external-reflection/0201201_GAME_ORIGIN_REFLECTION_BOUNDARY_ARCHITECTURE.md
-- 120.external-reflection/0201202_TRANSFORMED_CANONICAL_ADOPTION_ARCHITECTURE.md
+- 000_ARCHITECTURE_OVERVIEW.md
+- 0200000_ARCHITECTURE_INDEX.md
+- 0200000_PERSONA_OS_ARCHITECTURE_INDEX.md
+- 0200001_ARCHITECTURE_OVERVIEW.md
+- 0200001_PERSONA_OS_ARCHITECTURE_OVERVIEW.md
+- 0200002_PERSONA_OS_ARCHITECTURE.md
+- 0200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md
+- 0200004_PERSONA_RUNTIME_ARCHITECTURE.md
+- 0200005_PERSONA_VISUAL_ARCHITECTURE.md
+- 0200006_PERSONA_SECURITY_ARCHITECTURE.md
+- 0200007_PERSONA_APPROVAL_ARCHITECTURE.md
+- 0200008_PERSONA_ASSET_ARCHITECTURE.md
+- 0200009_PERSONA_INTEGRATION_ARCHITECTURE.md
+- 0200010_PERSONA_RENDERING_ARCHITECTURE.md
+- 0200011_PERSONA_DATA_ARCHITECTURE.md
+- 0200012_PERSONA_CLASS_ARCHITECTURE.md
+- 0200013_PERSONA_EDGE_ARCHITECTURE.md
+- 0200014_PERSONA_CAPABILITY_ARCHITECTURE.md
+- 0200015_PERSONA_POLICY_ARCHITECTURE.md
+- 020_BUSINESS_EVENT_ACCEPTANCE_ARCHITECTURE.md
+- 020_PERSONA-OS_ARCHITECTURE_INDEX.md
+- 020_PERSONA-OS_ARCHITECTURE_OVERVIEW.md
+- 021_PERSONA_EVENT_VALIDATION_ARCHITECTURE.md
+- 022_PERSONA_CANONICAL_APPLY_ARCHITECTURE.md
+- 023_PERSONA_APPLY_RESULT_FEEDBACK_ARCHITECTURE.md
+- 999_ARCHITECTURE_INDEX.txt
+- 010.core/
+- 020.architecture/
+- 020.engine/
+- 020.identity/
+- 030.dataflow/
+- 030.state/
+- 040.memory/
+- 050.external/
+- 050.growth/
+- 060.builder/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.snapshot/
+- 100.integration/
+- 100.package/
+- 100.security/
+- 110.distribution/
+- 120.external_reflection/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 130.builder/
+- 140.business_worker_link/
+- 140.consultation_common/
+- 140.integration/
+- 140.visual/
+- 150.secretary_interaction_common/
+- 150.security/
+- 160.business/
+- 160.governance/
+- 160.notification_common/
+- 170.background_common/
+- 170.operations-support/
+- 170.operations_support/

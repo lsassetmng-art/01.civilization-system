@@ -1,13 +1,9 @@
-# ============================================================
-# PERSONA GOVERNANCE MODEL INDEX
-# ============================================================
+# 030160000_PERSONA_GOVERNANCE_MODEL_INDEX
 
-status: canonical
-layer: model
-domain: governance
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GOVERNANCE MODEL documents.
+directory: 030.model/160.governance
+
+- 0301600001_PERSONA_GOVERNANCE_MODEL_OVERVIEW.md
+- 0301600002_PERSONA_APPROVAL_MODEL.md
+- 030160001_PERSONA_GOVERNANCE_MODEL_OVERVIEW.md

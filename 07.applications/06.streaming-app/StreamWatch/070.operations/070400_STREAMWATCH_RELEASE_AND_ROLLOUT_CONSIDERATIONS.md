@@ -2,32 +2,39 @@
 # STREAMWATCH RELEASE AND ROLLOUT CONSIDERATIONS
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: operations
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines rollout-phase concerns such as phased enablement, migration safety, and feature gating for StreamWatch.
+This document defines rollout considerations for StreamWatch.
 
-## 2. Fixed Inputs
+## 2. Rollout Strategy
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+Rollout should favor staged enablement of:
 
-## 3. Design Direction
+- profile-based continuity
+- category-tree navigation
+- purchase and entitlement CTA behavior
+- TV handoff behavior
+- live-to-archive transition behavior
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Rollout Risk Areas
 
-## 4. Current Status
+Highest rollout risk exists around:
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+- broken resume migration
+- wrong watchability resolution
+- locked content shown as playable
+- route handoff inconsistency
+- cross-profile continuity leakage
+
+## 4. Rollout Rule
+
+Capability rollout should prefer feature flags or staged activation where a frozen boundary already exists but runtime trust is still being validated.

@@ -1,0 +1,8 @@
+STEP_1=confirm edge_apply target doc path
+STEP_2=confirm exact payload section present
+STEP_3=confirm exact code family section present
+STEP_4=confirm exact state transition section present
+STEP_5=confirm exact persistence and audit section present
+STEP_6=confirm exact acceptance and done gate section present
+STEP_7=confirm no naming contradiction with state_apply
+STEP_8=mark edge_apply ready_to_start

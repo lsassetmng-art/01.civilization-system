@@ -1,0 +1,8 @@
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/000000_APPLICATION_COMMON_COMPONENT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/000000_APPLICATION_COMMON_COMPONENT_INDEX__MIGRATED_20260421_151654.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/000000_COMMON_OS_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/000001_APPLICATION_COMMON_COMPONENT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/000001_APPLICATION_COMMON_COMPONENT_OVERVIEW__MIGRATED_20260421_151654.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/000001_COMMON_OS_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/000010_COMMON_OS_ROOT_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/00_COMMON_OS_FULL_INTEGRATED.md

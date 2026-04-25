@@ -1,0 +1,116 @@
+============================================================
+AIWORKER OS PKG-AIW-011 APPLY AND ACCEPTANCE BATCH START
+============================================================
+STAMP      : 20260421_185924
+ROOT       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+PKG11      : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-011
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924
+LOG_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs
+============================================================
+PASS: PERSONA_DATABASE_URL is set.
+PASS: PKG-AIW-011 scripts exist.
+============================================================
+STEP 1: apply PKG-AIW-011
+============================================================
+============================================================
+PKG-AIW-011 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 through PKG-AIW-010 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-011
+============================================================
+BEGIN
+DO
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+INSERT 0 1
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE VIEW
+CREATE VIEW
+COMMIT
+============================================================
+PKG-AIW-011 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+STEP 2: verify acceptance batch state
+============================================================
+============================================================
+PKG-AIW-011 VERIFY ACCEPTANCE BATCH STATE
+============================================================
+acceptance_batch_runner_registry.count=1
+acceptance_batch_runner_log.count=0
+acceptance_execution_batch.count=0
+acceptance_verification_result.count=0
+latest_batch.count=0
+latest_batch_items.count=0
+============================================================
+PKG-AIW-011 VERIFY ACCEPTANCE BATCH STATE FINISHED
+============================================================
+============================================================
+STEP 3: run formal acceptance batch
+============================================================
+============================================================
+PKG-AIW-011 FORMAL ACCEPTANCE BATCH
+============================================================
+    acceptance_execution_batch_id     | batch_status_code | missing_critical_count | failed_critical_count |         completed_at          
+--------------------------------------+-------------------+------------------------+-----------------------+-------------------------------
+ 5f99776a-9552-6694-8ee8-64a3af83debb | PASSED            |                      0 |                     0 | 2026-04-21 09:59:29.759233+00
+(1 row)
+
+------------------------------------------------------------
+LATEST ACCEPTANCE BATCH SUMMARY
+5f99776a-9552-6694-8ee8-64a3af83debb|AEB-d3ca5b2b6b9a99346c73c8dc0b3ddedf|PASSED|14|14|0
+------------------------------------------------------------
+LATEST ACCEPTANCE ITEM RESULTS
+VERIFY-BOUNDARY-001|PASS|true
+VERIFY-BOUNDARY-002|PASS|true
+VERIFY-CF-001|PASS|true
+VERIFY-CF-002|PASS|true
+VERIFY-EVENT-001|PASS|true
+VERIFY-EVENT-002|PASS|true
+VERIFY-GRANT-001|PASS|true
+VERIFY-GRANT-002|PASS|true
+VERIFY-PAYLOAD-001|PASS|true
+VERIFY-PAYLOAD-002|PASS|true
+VERIFY-RECOVERY-001|PASS|false
+VERIFY-RECOVERY-002|PASS|true
+VERIFY-REPLAY-001|PASS|true
+VERIFY-REPLAY-002|PASS|true
+============================================================
+PKG-AIW-011 FORMAL ACCEPTANCE BATCH FINISHED
+============================================================
+============================================================
+STEP 4: quick acceptance DB checks
+============================================================
+acceptance_batch_runner_registry.count=1
+acceptance_batch_runner_log.count=15
+acceptance_execution_batch.count=1
+acceptance_verification_result.count=14
+latest_batch.batch_status=PASSED
+latest_batch.item_count=14
+latest_batch.pass_count=14
+latest_batch.fail_count=0
+latest_item.VERIFY-BOUNDARY-001=PASS
+latest_item.VERIFY-REPLAY-001=PASS
+latest_item.VERIFY-GRANT-002=PASS
+latest_item.VERIFY-EVENT-002=PASS
+============================================================
+AIWORKER OS PKG-AIW-011 APPLY AND ACCEPTANCE BATCH SUCCESS
+============================================================
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924
+MAIN_LOG   : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs/000_main.log
+SUMMARY    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/000_RESULT_SUMMARY.txt
+LOG FILES:
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs/000_main.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs/010_apply_pkg_aiw_011.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs/020_verify_acceptance_batch_state.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs/030_run_acceptance_batch.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs/040_quick_acceptance_db_checks.log
+============================================================

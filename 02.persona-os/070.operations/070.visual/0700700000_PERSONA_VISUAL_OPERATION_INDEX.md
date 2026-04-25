@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA VISUAL OPERATION INDEX
-# ============================================================
+# 0700700000_PERSONA_VISUAL_OPERATION_INDEX
 
-status: canonical
-layer: operations
-domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA VISUAL OPERATION documents.
+directory: 070.operations/070.visual
 
-# ============================================================
-# FILES
-# ============================================================
-
-0700700000_PERSONA_VISUAL_OPERATION_INDEX.md
-0700700001_PERSONA_VISUAL_OPERATION_OVERVIEW.md
-0700700002_PERSONA_VISUAL_RUNTIME_OPERATION.md
+- 0700700001_PERSONA_VISUAL_OPERATION_OVERVIEW.md
+- 0700700002_PERSONA_VISUAL_RUNTIME_OPERATION.md
+- 070.operations/

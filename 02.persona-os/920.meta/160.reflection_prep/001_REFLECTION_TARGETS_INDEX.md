@@ -1,0 +1,16 @@
+# 001_REFLECTION_TARGETS_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 920.meta/160.reflection_prep
+
+- 000_REFLECTION_PREP_INDEX.md
+- 000_REFLECTION_PREP_OVERVIEW.md
+- 001_REFLECTION_TARGETS_OVERVIEW.md
+- 00_PERSONA_OS_REFLECTION_PREP_HANDOFF.md
+- 00_PERSONA_OS_REFLECTION_PREP_INTEGRATED_SUMMARY.md
+- 00_PERSONA_OS_REFLECTION_PREP_MASTER.md
+- 010.pocket_secretary/
+- 020.business_os/
+- 030.civilization_os/
+- 040.visual_runtime/

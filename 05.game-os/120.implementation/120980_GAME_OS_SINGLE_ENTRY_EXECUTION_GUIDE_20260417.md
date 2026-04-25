@@ -1,0 +1,90 @@
+# ============================================================
+# GAME OS SINGLE ENTRY EXECUTION GUIDE
+# ============================================================
+
+status: active
+system: Civilization System
+os: GameOS
+folder: 120.implementation
+prepared_for: Boss
+prepared_by: Zero
+updated_at: 2026-04-17
+language: English
+
+purpose:
+This file is the single-entry guide for anyone starting, resuming, or reviewing GameOS work.
+It reduces the number of places a person must guess where to begin.
+
+---
+
+## 0. If you only read one file first
+
+Read:
+- 120650_GAME_OS_FINAL_IMPLEMENTATION_EXECUTION_MEMO_20260417.md
+
+Then continue with:
+- 120690_GAME_OS_DEVELOPMENT_EXECUTION_PACK_20260417.md
+- 120720_GAME_OS_BATCH1_DEVELOPMENT_TODO_PACK_20260417.md
+- 120890_GAME_OS_MASTER_EXECUTION_DASHBOARD_20260417.md
+
+---
+
+## 1. If you are starting coding now
+
+Use:
+- 120770_GAME_OS_IMPLEMENTATION_KICKOFF_MEMO_20260417.md
+- 120700_GAME_OS_BATCH1_DEVELOPMENT_START_CHECKLIST_20260417.md
+- 120610_GAME_OS_IMPLEMENTATION_RUNNER_PACK_M01_M04_20260417.md
+- 120660_GAME_OS_M01_BUILDER_FOUNDATION_IMPLEMENTATION_MEMO_20260417.md
+- 120670_GAME_OS_M02_BUILDER_AUTHORING_CORE_IMPLEMENTATION_MEMO_20260417.md
+
+---
+
+## 2. If you are checking current status
+
+Use:
+- 120890_GAME_OS_MASTER_EXECUTION_DASHBOARD_20260417.md
+- 120740_GAME_OS_DEVELOPMENT_STATUS_BOARD_20260417.md
+- 120880_GAME_OS_RELEASE_READINESS_REVIEW_BOARD_20260417.md
+- 120910_GAME_OS_ACCEPTANCE_REVIEW_LEDGER_20260417.md
+
+---
+
+## 3. If you are blocked or something is ambiguous
+
+Use:
+- 120710_GAME_OS_UNRESOLVED_GAP_TRACKING_MEMO_20260417.md
+- 120800_GAME_OS_BATCH1_BLOCKER_TRIAGE_BOARD_20260417.md
+- 120790_GAME_OS_DECISION_REGISTER_TEMPLATE_20260417.md
+- 120870_GAME_OS_CHANGE_CONTROL_AND_ARTIFACT_UPDATE_RULES_20260417.md
+
+---
+
+## 4. If you are preparing review or handoff
+
+Use:
+- 120840_GAME_OS_ACCEPTANCE_EVIDENCE_TEMPLATE_PACK_20260417.md
+- 120900_GAME_OS_BATCH_HANDOFF_SIGNOFF_TEMPLATE_20260417.md
+- 120970_GAME_OS_HANDOFF_AND_REVIEW_CHECKLIST_20260417.md
+- 120940_GAME_OS_REVIEW_MEETING_AGENDA_TEMPLATE_20260417.md
+
+---
+
+## 5. If you need the exact design sources
+
+Use:
+- 030.model/030200_GAME_OS_DB_COLUMN_EXACT_DESIGN_SET.md
+- 050.flow/050300_GAME_OS_STATEFLOW_EXACT_DESIGN_SET.md
+- 090.interface/090100_GAME_OS_SCREEN_EXACT_DESIGN_SET.md
+- 090.interface/090400_GAME_OS_REQUEST_RESPONSE_EXACT_JSON_EXAMPLES.md
+
+---
+
+## 6. Recommended live focus right now
+
+recommended_now:
+- Batch 1
+- M01 first
+- M02 second
+- M03 and M04 after M02 basis stability
+

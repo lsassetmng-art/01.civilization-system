@@ -63,7 +63,7 @@ work_packages:
 
   wp_05_share_and_export:
     goal:
-      - family_plus の中核価値を成立させる
+      - plus_family の中核価値を成立させる
     included:
       - share grant/revoke
       - viewer/delegated_editor visibility

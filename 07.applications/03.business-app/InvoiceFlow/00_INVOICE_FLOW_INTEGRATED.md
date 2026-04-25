@@ -1,31 +1,5 @@
-# ============================================================
-# INVOICE FLOW INTEGRATED
-# ============================================================
 
-status: canonical-integrated
-layer: integrated
-system: applications
-application: InvoiceFlow
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides a single integrated reading entry for InvoiceFlow design.
-
-integration_policy:
-- additive compilation only
-- source files remain canonical
-- this file is a reading bundle, not the only source of truth
-- root assumptions include multilingual support
-- root assumptions include multicurrency support
-- root assumptions include iphone, android, pc, and tablet support
-
-
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/000_INVOICE_FLOW_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/000_INVOICE_FLOW_INDEX.md -->
 # ============================================================
 # INVOICE FLOW INDEX
 # ============================================================
@@ -438,12 +412,61 @@ completion_bundles:
 - 080.policy/080270_FINAL_DISPLAY_RULES_POLICY.md
 - 900.meta/900200_FINAL_DECISION_CLOSURE_NOTE.md
 
+- 010.constitution/011110_INVOICEFLOW_COMPETITIVE_POSITIONING_NOTE.md
 
+- 020.architecture/021120_INVOICEFLOW_BILLING_COLLECTION_CONTROL_ARCHITECTURE.md
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/000_INVOICE_FLOW_OVERVIEW.md
-# ============================================================
+- 020.architecture/021130_INVOICEFLOW_SETTLEMENT_EXCEPTION_RECEIVABLE_ARCHITECTURE.md
 
+- 030.model/030510_INVOICEFLOW_BILLING_EXECUTION_TIMELINE_MODEL.md
+
+- 060.integration/060290_INVOICEFLOW_BILLING_COCKPIT_PAYLOAD.md
+
+- 060.integration/060300_INVOICEFLOW_SETTLEMENT_EXCEPTION_REVIEW_PAYLOAD.md
+
+- 090.interface/090330_INVOICEFLOW_BILLING_COCKPIT_INTERFACE.md
+
+- 120.implementation/120300_INVOICEFLOW_BILLING_CONTROL_IMPLEMENTATION_GUIDE.md
+
+- 900.meta/900410_INVOICEFLOW_20260416_DIFF_AUDIT_NOTE.md
+
+- 020.architecture/021140_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+- 060.integration/060320_INVOICEFLOW_PHASE_A_API_STARTER.md
+
+- 060.integration/060330_INVOICEFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+- 120.implementation/120310_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 120.implementation/120320_INVOICEFLOW_PHASE_A_STUB_FILE_PLAN.md
+
+- 120.implementation/120330_INVOICEFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120.implementation/120340_INVOICEFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120.implementation/120350_INVOICEFLOW_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120.implementation/120360_INVOICEFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120.implementation/120370_INVOICEFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120.implementation/120380_INVOICEFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+- 900.meta/900420_INVOICEFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 900.meta/900430_INVOICEFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 900.meta/900440_INVOICEFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900.meta/900450_INVOICEFLOW_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900.meta/900460_INVOICEFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900.meta/900470_INVOICEFLOW_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/000_INVOICE_FLOW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/000_INVOICE_FLOW_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW OVERVIEW
 # ============================================================
@@ -529,12 +552,9 @@ structure:
 130.development
 900.meta
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/000_INVOICE_FLOW_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION.md -->
 # ============================================================
 # INVOICE FLOW CONSTITUTION
 # ============================================================
@@ -570,12 +590,9 @@ design_root_rules:
 - screen definitions must not be phone-only
 - PDF output must consider multilingual text expansion and currency display rules
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION_INDEX.md -->
 # ============================================================
 # INVOICE FLOW CONSTITUTION INDEX
 # ============================================================
@@ -592,12 +609,11 @@ files:
 - 010_INVOICE_FLOW_CONSTITUTION_INDEX.md
 - 010_INVOICE_FLOW_CONSTITUTION.md
 
+- 011110_INVOICEFLOW_COMPETITIVE_POSITIONING_NOTE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION_INDEX.md -->
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW CONSTITUTION OVERVIEW
 # ============================================================
@@ -620,12 +636,65 @@ receipt issuance,
 and ERP reflection
 without violating invoice authority boundaries.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/010_INVOICE_FLOW_CONSTITUTION_OVERVIEW.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/011110_INVOICEFLOW_COMPETITIVE_POSITIONING_NOTE.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020110_INVOICE_BOUNDARY_ARCHITECTURE.md
+# INVOICEFLOW COMPETITIVE POSITIONING NOTE
 # ============================================================
 
+status: canonical
+layer: constitution
+system: applications
+application: InvoiceFlow
+directory: 010.constitution
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: competitive-positioning-note
+
+purpose:
+Clarifies the differentiator that should be made explicit in the
+current InvoiceFlow design without rewriting its existing core.
+
+positioning_summary:
+- InvoiceFlow is not only an invoice document generator.
+- Its durable value is billing control across invoice issuance,
+  approval, receivable visibility, settlement tracking, exception handling,
+  and downstream finance readiness.
+- The differentiator is not simple invoice formatting, but lifecycle control
+  that keeps billing and collection risk operationally visible.
+
+preserved_core:
+- invoice and billing operation identity
+- existing business operation role
+- existing ERP and financial flow relation
+- existing approval and operational separation direction
+- existing platform direction
+
+differentiator_to_make_explicit:
+- billing lifecycle control
+- receivable and settlement visibility
+- approval and exception traceability
+- downstream finance readiness visibility
+
+competitive_contrast:
+- not merely a PDF invoice generator
+- not merely a print form
+- not merely a receivable list
+- positioned as a billing execution control layer that connects
+  approval, issue readiness, settlement visibility, exception review,
+  and downstream finance movement
+
+non_goals_of_this_note:
+- no full constitutional rewrite
+- no implementation start
+- no destructive scope replacement
+- no framework decision
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/010.constitution/011110_INVOICEFLOW_COMPETITIVE_POSITIONING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020110_INVOICE_BOUNDARY_ARCHITECTURE.md -->
 # ============================================================
 # INVOICE BOUNDARY ARCHITECTURE
 # ============================================================
@@ -648,12 +717,9 @@ boundary_rules:
 - InvoiceFlow may display and operate around ERP_MASTER invoices.
 - ERP reflection eligibility depends on invoice category and policy.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020110_INVOICE_BOUNDARY_ARCHITECTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020120_PAYMENT_CONFIRMATION_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020120_PAYMENT_CONFIRMATION_ARCHITECTURE.md -->
 # ============================================================
 # PAYMENT CONFIRMATION ARCHITECTURE
 # ============================================================
@@ -676,12 +742,9 @@ design_rules:
 - both routes may issue receipts when policy allows
 - simple reconciliation exists before formal ERP-side reconciliation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020120_PAYMENT_CONFIRMATION_ARCHITECTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020130_COLLECTION_MANAGEMENT_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020130_COLLECTION_MANAGEMENT_ARCHITECTURE.md -->
 # ============================================================
 # COLLECTION MANAGEMENT ARCHITECTURE
 # ============================================================
@@ -705,12 +768,9 @@ design_principle:
 Collection management is not a separate application.
 It is an integrated part of InvoiceFlow.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020130_COLLECTION_MANAGEMENT_ARCHITECTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020140_RECEIPT_ISSUANCE_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020140_RECEIPT_ISSUANCE_ARCHITECTURE.md -->
 # ============================================================
 # RECEIPT ISSUANCE ARCHITECTURE
 # ============================================================
@@ -729,12 +789,9 @@ rules:
 - receipt PDF issuance is application-supported
 - receipt authority follows invoice/payment policy scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020140_RECEIPT_ISSUANCE_ARCHITECTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020150_SHARED_ERP_REFLECTION_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020150_SHARED_ERP_REFLECTION_ARCHITECTURE.md -->
 # ============================================================
 # SHARED ERP REFLECTION ARCHITECTURE
 # ============================================================
@@ -753,12 +810,9 @@ rules:
 - ERP-master invoices may receive payment-result reflection
 - reflection result must return to InvoiceFlow for visibility and audit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020150_SHARED_ERP_REFLECTION_ARCHITECTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020160_COMPETITIVE_POSITION_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020160_COMPETITIVE_POSITION_ARCHITECTURE.md -->
 # ============================================================
 # COMPETITIVE POSITION ARCHITECTURE
 # ============================================================
@@ -835,12 +889,9 @@ competitive_rules:
 - architecture must keep receipt issuance close to payment confirmation
 - architecture must support lightweight daily operation on phone, tablet, and PC
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020160_COMPETITIVE_POSITION_ARCHITECTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE.md -->
 # ============================================================
 # INVOICE FLOW ARCHITECTURE
 # ============================================================
@@ -977,12 +1028,9 @@ core_design_rules:
 - fail closed is mandatory when invoice authority, amount identity,
   or reflection eligibility is unclear
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE_INDEX.md -->
 # ============================================================
 # INVOICE FLOW ARCHITECTURE INDEX
 # ============================================================
@@ -1005,12 +1053,15 @@ files:
 - 020150_SHARED_ERP_REFLECTION_ARCHITECTURE.md
 - 020160_COMPETITIVE_POSITION_ARCHITECTURE.md
 
+- 021120_INVOICEFLOW_BILLING_COLLECTION_CONTROL_ARCHITECTURE.md
 
+- 021130_INVOICEFLOW_SETTLEMENT_EXCEPTION_RECEIVABLE_ARCHITECTURE.md
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE_OVERVIEW.md
-# ============================================================
+- 021140_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_DDL_ADDITIVE_PLAN.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW ARCHITECTURE OVERVIEW
 # ============================================================
@@ -1032,12 +1083,249 @@ collection operations,
 receipt issuance,
 and shared ERP reflection capability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/020_INVOICE_FLOW_ARCHITECTURE_OVERVIEW.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/021120_INVOICEFLOW_BILLING_COLLECTION_CONTROL_ARCHITECTURE.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030100_INVOICE_CASE_MODEL.md
+# INVOICEFLOW BILLING COLLECTION CONTROL ARCHITECTURE
 # ============================================================
 
+status: canonical
+layer: architecture
+system: applications
+application: InvoiceFlow
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: billing-collection-control-architecture
+
+purpose:
+Makes billing lifecycle and collection control explicit in the
+current InvoiceFlow architecture.
+
+architecture_intent:
+- billing work must be visible not only as invoices, but as execution movement
+- issuance, approval, receivable tracking, settlement, and downstream finance
+  handoff must remain explicit
+- billing readiness and blocker visibility must be queryable without
+  reconstructing everything from raw invoice detail only
+
+flow_layers:
+- invoice intake:
+  - billing draft creation
+  - line or charge composition
+  - invoice issue preparation
+  - invoice issuance
+- billing control:
+  - approval requirement detection
+  - receivable tracking
+  - settlement confirmation
+  - exception routing
+- operational review:
+  - billing cockpit review
+  - settlement exception visibility
+  - overdue receivable visibility
+  - downstream finance readiness
+- control action:
+  - approve
+  - hold
+  - escalate
+  - confirm settlement
+- closure:
+  - issued
+  - partially settled
+  - settled
+  - cancelled
+  - handed off downstream
+
+key_separations:
+- raw invoice detail is not the same as billing readiness
+- approval history is not the same as active hold state
+- receivable tracking is not the same as downstream finance completion
+- cockpit review is not the same as detailed line editing screen
+
+recommended_runtime_objects:
+- billing_execution_signal
+- settlement_exception_review_item
+- downstream_finance_readiness_item
+- billing_cockpit_summary
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/021120_INVOICEFLOW_BILLING_COLLECTION_CONTROL_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/021130_INVOICEFLOW_SETTLEMENT_EXCEPTION_RECEIVABLE_ARCHITECTURE.md -->
+# ============================================================
+# INVOICEFLOW SETTLEMENT EXCEPTION RECEIVABLE ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: InvoiceFlow
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: settlement-exception-receivable-architecture
+
+purpose:
+Defines the relationship between approval state, receivable visibility,
+settlement readiness, and exception handling in InvoiceFlow.
+
+core_principle:
+- financial slippage often appears first through unresolved approval,
+  overdue receivable, settlement blocker, or downstream finance blocker
+  before it appears as final accounting failure.
+
+architecture_rules:
+- approval requirement must be represented explicitly
+- settlement blockers must be reviewable as first-class financial objects
+- downstream finance blockers must survive beyond one screen or one session
+- unresolved exceptions must be visible in the same review flow as billing health
+
+exception_categories:
+- approval pending
+- overdue receivable
+- settlement blocker
+- downstream finance blocker
+- cancellation risk
+
+visibility_outputs:
+- billing cockpit
+- settlement exception review screen
+- overdue receivable panel
+- finance readiness overview
+
+cross_module_relation:
+- invoice detail editing feeds document and charge detail
+- lifecycle layer summarizes billing checkpoints
+- approval layer captures governance state
+- receivable layer surfaces payment visibility
+- downstream layer surfaces finance or ledger readiness
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/021130_INVOICEFLOW_SETTLEMENT_EXCEPTION_RECEIVABLE_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/021140_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+# ============================================================
+# INVOICEFLOW PHASE A BILLING EXECUTION TIMELINE DDL ADDITIVE PLAN
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: InvoiceFlow
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-billing-execution-timeline-ddl-additive-plan
+
+purpose:
+Defines the additive-only Phase A DDL planning boundary for
+billing execution visibility, settlement exception review,
+and billing cockpit assembly.
+
+principles:
+- additive only
+- preserve existing InvoiceFlow core
+- keep raw invoice editing separate from execution readiness rows
+- keep approval and settlement exception review separate from raw invoice history
+- no SQL execution in this document
+
+phase_a_target_capabilities:
+- persist billing execution timeline rows for cockpit and review
+- persist settlement and finance-blocker review rows for financial visibility
+- support billing cockpit query without reconstructing everything from raw invoice state
+- support approval pending and downstream finance review slices
+
+proposed_additive_tables:
+- business.invoiceflow_billing_execution_timeline_item
+- business.invoiceflow_settlement_exception_review_item
+- business.invoiceflow_billing_cockpit_snapshot
+
+table_business_invoiceflow_billing_execution_timeline_item:
+  role:
+    - stores normalized billing execution timeline rows
+  recommended_columns:
+    - billing_execution_timeline_item_id uuid pk
+    - invoice_id uuid not null
+    - related_approval_id uuid null
+    - related_settlement_blocker_id uuid null
+    - related_finance_blocker_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - execution_state_code text not null
+    - priority_code text null
+    - due_at timestamptz null
+    - approved_at timestamptz null
+    - issued_at timestamptz null
+    - settled_at timestamptz null
+    - handed_off_at timestamptz null
+    - exception_present boolean not null
+    - owner_user_id uuid null
+    - approval_required boolean not null
+    - source_module_code text not null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_invoiceflow_settlement_exception_review_item:
+  role:
+    - stores reviewable settlement and downstream finance blocker rows
+  recommended_columns:
+    - settlement_exception_review_item_id uuid pk
+    - invoice_id uuid not null
+    - related_approval_id uuid null
+    - related_settlement_blocker_id uuid null
+    - related_finance_blocker_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - execution_state_code text not null
+    - exception_present boolean not null
+    - approval_required boolean not null
+    - owner_user_id uuid null
+    - resolved boolean not null
+    - due_at timestamptz null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_invoiceflow_billing_cockpit_snapshot:
+  role:
+    - stores generated billing cockpit snapshots when caching or auditability is needed
+  recommended_columns:
+    - billing_cockpit_snapshot_id uuid pk
+    - invoice_id uuid not null
+    - health_summary_message text not null
+    - generated_at timestamptz not null
+    - created_at timestamptz not null
+
+recommended_indexes_phase_a:
+- billing_execution_timeline_item:
+  - idx on invoice_id, execution_state_code, due_at
+  - idx on invoice_id, related_approval_id
+  - idx on invoice_id, related_settlement_blocker_id
+- settlement_exception_review_item:
+  - idx on invoice_id, approval_required
+  - idx on invoice_id, exception_present
+  - idx on invoice_id, resolved
+- billing_cockpit_snapshot:
+  - idx on invoice_id, generated_at desc
+
+explicit_non_scope:
+- no destructive schema rewrite
+- no SQL execution here
+- no payment gateway implementation here
+- no accounting posting execution here
+- no client sync policy here
+
+handoff_to_next_step:
+- freeze API starter and DTOs against these row families
+- create implementation skeleton and slice order on top of this plan
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/020.architecture/021140_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030100_INVOICE_CASE_MODEL.md -->
 # ============================================================
 # INVOICE CASE MODEL
 # ============================================================
@@ -1077,12 +1365,9 @@ fields:
 - created_at
 - updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030100_INVOICE_CASE_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030110_INVOICE_LINE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030110_INVOICE_LINE_MODEL.md -->
 # ============================================================
 # INVOICE LINE MODEL
 # ============================================================
@@ -1105,12 +1390,9 @@ fields:
 - line_amount
 - remarks
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030110_INVOICE_LINE_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030120_INVOICE_DELIVERY_REQUEST_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030120_INVOICE_DELIVERY_REQUEST_MODEL.md -->
 # ============================================================
 # INVOICE DELIVERY REQUEST MODEL
 # ============================================================
@@ -1132,12 +1414,9 @@ fields:
 - recipient_snapshot
 - delivery_status_code
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030120_INVOICE_DELIVERY_REQUEST_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030130_PAYMENT_SCHEDULE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030130_PAYMENT_SCHEDULE_MODEL.md -->
 # ============================================================
 # PAYMENT SCHEDULE MODEL
 # ============================================================
@@ -1158,12 +1437,9 @@ fields:
 - installment_no
 - memo
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030130_PAYMENT_SCHEDULE_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030140_PAYMENT_CONFIRMATION_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030140_PAYMENT_CONFIRMATION_MODEL.md -->
 # ============================================================
 # PAYMENT CONFIRMATION MODEL
 # ============================================================
@@ -1191,12 +1467,9 @@ fields:
 - confirmed_by
 - confirmed_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030140_PAYMENT_CONFIRMATION_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030150_BANK_TRANSACTION_IMPORT_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030150_BANK_TRANSACTION_IMPORT_MODEL.md -->
 # ============================================================
 # BANK TRANSACTION IMPORT MODEL
 # ============================================================
@@ -1218,12 +1491,9 @@ fields:
 - imported_at
 - match_status_code
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030150_BANK_TRANSACTION_IMPORT_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030160_SIMPLE_RECONCILIATION_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030160_SIMPLE_RECONCILIATION_MODEL.md -->
 # ============================================================
 # SIMPLE RECONCILIATION MODEL
 # ============================================================
@@ -1245,12 +1515,9 @@ fields:
 - reviewed_by
 - reviewed_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030160_SIMPLE_RECONCILIATION_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030170_RECEIPT_ISSUE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030170_RECEIPT_ISSUE_MODEL.md -->
 # ============================================================
 # RECEIPT ISSUE MODEL
 # ============================================================
@@ -1275,12 +1542,9 @@ fields:
 - issued_by
 - issued_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030170_RECEIPT_ISSUE_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030180_COLLECTION_ACTION_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030180_COLLECTION_ACTION_MODEL.md -->
 # ============================================================
 # COLLECTION ACTION MODEL
 # ============================================================
@@ -1305,12 +1569,9 @@ fields:
 - response_summary
 - escalation_required_flag
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030180_COLLECTION_ACTION_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030190_CUSTOMER_OUTSTANDING_SUMMARY_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030190_CUSTOMER_OUTSTANDING_SUMMARY_MODEL.md -->
 # ============================================================
 # CUSTOMER OUTSTANDING SUMMARY MODEL
 # ============================================================
@@ -1332,12 +1593,9 @@ fields:
 - priority_rank_code
 - updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030190_CUSTOMER_OUTSTANDING_SUMMARY_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030200_ERP_REFLECTION_REQUEST_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030200_ERP_REFLECTION_REQUEST_MODEL.md -->
 # ============================================================
 # ERP REFLECTION REQUEST MODEL
 # ============================================================
@@ -1359,12 +1617,9 @@ fields:
 - requested_by
 - requested_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030200_ERP_REFLECTION_REQUEST_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030210_ERP_REFLECTION_RESULT_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030210_ERP_REFLECTION_RESULT_MODEL.md -->
 # ============================================================
 # ERP REFLECTION RESULT MODEL
 # ============================================================
@@ -1385,12 +1640,9 @@ fields:
 - error_message
 - applied_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030210_ERP_REFLECTION_RESULT_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030220_AUDIT_LOG_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030220_AUDIT_LOG_MODEL.md -->
 # ============================================================
 # AUDIT LOG MODEL
 # ============================================================
@@ -1412,12 +1664,9 @@ fields:
 - after_json
 - occurred_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030220_AUDIT_LOG_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030230_STATUS_CODE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030230_STATUS_CODE_MODEL.md -->
 # ============================================================
 # STATUS CODE MODEL
 # ============================================================
@@ -1468,12 +1717,9 @@ erp_reflection_status_codes:
 - ERP_PAYMENT_SYNCED
 - ERP_SYNC_FAILED
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030230_STATUS_CODE_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030240_ERROR_CODE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030240_ERROR_CODE_MODEL.md -->
 # ============================================================
 # ERROR CODE MODEL
 # ============================================================
@@ -1496,12 +1742,9 @@ error_codes:
 - COLLECTION_TARGET_INVALID
 - ERP_REFLECTION_FAILED
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030240_ERROR_CODE_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030250_UI_STATE_CODE_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030250_UI_STATE_CODE_MODEL.md -->
 # ============================================================
 # UI STATE CODE MODEL
 # ============================================================
@@ -1523,12 +1766,9 @@ ui_states:
 - receipt_detail
 - settings
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030250_UI_STATE_CODE_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030260_FIELD_SCHEMA_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030260_FIELD_SCHEMA_MODEL.md -->
 # ============================================================
 # FIELD SCHEMA MODEL
 # ============================================================
@@ -1546,12 +1786,9 @@ key_schema_notes:
 - confirmation_source_type distinguishes BANK_LINKED and MANUAL
 - receipt issuance depends on confirmed payment
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030260_FIELD_SCHEMA_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030270_DB_PHYSICAL_OVERVIEW_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030270_DB_PHYSICAL_OVERVIEW_MODEL.md -->
 # ============================================================
 # DB PHYSICAL OVERVIEW MODEL
 # ============================================================
@@ -1603,12 +1840,9 @@ cross_table_rules:
 - collection_action must link to invoice_case
 - ERP reflection tables must not imply invoice-master creation for FRONT_LOCAL
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030270_DB_PHYSICAL_OVERVIEW_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030280_INVOICE_CASE_PHYSICAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030280_INVOICE_CASE_PHYSICAL_MODEL.md -->
 # ============================================================
 # INVOICE CASE PHYSICAL MODEL
 # ============================================================
@@ -1685,12 +1919,9 @@ indexes:
   - company_id
   - priority_collection_flag
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030280_INVOICE_CASE_PHYSICAL_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030290_PAYMENT_CONFIRMATION_PHYSICAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030290_PAYMENT_CONFIRMATION_PHYSICAL_MODEL.md -->
 # ============================================================
 # PAYMENT CONFIRMATION PHYSICAL MODEL
 # ============================================================
@@ -1744,12 +1975,9 @@ indexes:
   - company_id
   - bank_transaction_id
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030290_PAYMENT_CONFIRMATION_PHYSICAL_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030300_RECEIPT_ISSUE_PHYSICAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030300_RECEIPT_ISSUE_PHYSICAL_MODEL.md -->
 # ============================================================
 # RECEIPT ISSUE PHYSICAL MODEL
 # ============================================================
@@ -1803,12 +2031,9 @@ indexes:
   - company_id
   - receipt_status_code
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030300_RECEIPT_ISSUE_PHYSICAL_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030310_COLLECTION_ACTION_PHYSICAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030310_COLLECTION_ACTION_PHYSICAL_MODEL.md -->
 # ============================================================
 # COLLECTION ACTION PHYSICAL MODEL
 # ============================================================
@@ -1855,12 +2080,9 @@ indexes:
   - company_id
   - next_action_date
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030310_COLLECTION_ACTION_PHYSICAL_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030320_BANK_TRANSACTION_IMPORT_PHYSICAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030320_BANK_TRANSACTION_IMPORT_PHYSICAL_MODEL.md -->
 # ============================================================
 # BANK TRANSACTION IMPORT PHYSICAL MODEL
 # ============================================================
@@ -1913,12 +2135,9 @@ indexes:
   - company_id
   - candidate_invoice_case_id
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030320_BANK_TRANSACTION_IMPORT_PHYSICAL_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030330_ERP_REFLECTION_PHYSICAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030330_ERP_REFLECTION_PHYSICAL_MODEL.md -->
 # ============================================================
 # ERP REFLECTION PHYSICAL MODEL
 # ============================================================
@@ -1979,12 +2198,9 @@ indexes:
   - company_id
   - result_status_code
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030330_ERP_REFLECTION_PHYSICAL_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030340_CUSTOMER_OUTSTANDING_SUMMARY_PHYSICAL_MODEL.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030340_CUSTOMER_OUTSTANDING_SUMMARY_PHYSICAL_MODEL.md -->
 # ============================================================
 # CUSTOMER OUTSTANDING SUMMARY PHYSICAL MODEL
 # ============================================================
@@ -2035,12 +2251,74 @@ indexes:
   - company_id
   - total_outstanding_amount
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030340_CUSTOMER_OUTSTANDING_SUMMARY_PHYSICAL_MODEL.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030510_INVOICEFLOW_BILLING_EXECUTION_TIMELINE_MODEL.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL.md
+# INVOICEFLOW BILLING EXECUTION TIMELINE MODEL
 # ============================================================
 
+status: canonical
+layer: model
+system: applications
+application: InvoiceFlow
+directory: 030.model
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: billing-execution-timeline-model
+
+purpose:
+Defines the logical model for a unified billing execution timeline.
+
+core_entity:
+- billing_execution_timeline_item
+
+recommended_fields:
+- billingExecutionTimelineItemId
+- invoiceId
+- relatedApprovalId
+- relatedSettlementBlockerId
+- relatedFinanceBlockerId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- executionStateCode
+- priorityCode
+- dueAt
+- approvedAt
+- issuedAt
+- settledAt
+- handedOffAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+- sourceModuleCode
+- createdAt
+- updatedAt
+
+state_meaning:
+- draft
+- pending_approval
+- approved
+- issued
+- overdue
+- blocked_for_settlement
+- partially_settled
+- settled
+- handed_off
+- cancelled
+
+model_use_cases:
+- billing cockpit assembly
+- settlement exception review
+- approval review
+- downstream finance readiness visibility
+- billing trend visibility
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030510_INVOICEFLOW_BILLING_EXECUTION_TIMELINE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL.md -->
 # ============================================================
 # INVOICE FLOW MODEL
 # ============================================================
@@ -2212,12 +2490,9 @@ global_model_rules:
 - exchange_rate_snapshot may exist where cross-currency display is needed
 - displayed symbols must not replace explicit currency code handling
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL_INDEX.md -->
 # ============================================================
 # INVOICE FLOW MODEL INDEX
 # ============================================================
@@ -2259,12 +2534,11 @@ files:
 - 030330_ERP_REFLECTION_PHYSICAL_MODEL.md
 - 030340_CUSTOMER_OUTSTANDING_SUMMARY_PHYSICAL_MODEL.md
 
+- 030510_INVOICEFLOW_BILLING_EXECUTION_TIMELINE_MODEL.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL_INDEX.md -->
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW MODEL OVERVIEW
 # ============================================================
@@ -2291,12 +2565,9 @@ customer outstanding summary,
 ERP reflection requests/results,
 and related status/error codes.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/030.model/030_INVOICE_FLOW_MODEL_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040110_FRONT_INVOICE_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040110_FRONT_INVOICE_RUNTIME.md -->
 # ============================================================
 # FRONT INVOICE RUNTIME
 # ============================================================
@@ -2313,12 +2584,9 @@ rules:
 - front invoice cannot transition into ERP invoice master
 - front invoice can still support receipt issuance and collection management
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040110_FRONT_INVOICE_RUNTIME.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040120_ERP_MASTER_INVOICE_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040120_ERP_MASTER_INVOICE_RUNTIME.md -->
 # ============================================================
 # ERP MASTER INVOICE RUNTIME
 # ============================================================
@@ -2335,12 +2603,9 @@ rules:
 - InvoiceFlow may track payment and collection around it
 - payment result reflection to ERP is allowed through shared capability
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040120_ERP_MASTER_INVOICE_RUNTIME.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040130_BANK_MATCHING_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040130_BANK_MATCHING_RUNTIME.md -->
 # ============================================================
 # BANK MATCHING RUNTIME
 # ============================================================
@@ -2357,12 +2622,9 @@ rules:
 - ambiguous matches require review
 - unmatched transactions remain visible for investigation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040130_BANK_MATCHING_RUNTIME.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040140_MANUAL_PAYMENT_CONFIRMATION_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040140_MANUAL_PAYMENT_CONFIRMATION_RUNTIME.md -->
 # ============================================================
 # MANUAL PAYMENT CONFIRMATION RUNTIME
 # ============================================================
@@ -2379,12 +2641,9 @@ rules:
 - actor, date, amount, and evidence note are required
 - manual confirmation may issue receipt when policy allows
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040140_MANUAL_PAYMENT_CONFIRMATION_RUNTIME.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040150_COLLECTION_PRIORITY_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040150_COLLECTION_PRIORITY_RUNTIME.md -->
 # ============================================================
 # COLLECTION PRIORITY RUNTIME
 # ============================================================
@@ -2409,12 +2668,9 @@ priority_levels:
 - MEDIUM
 - LOW
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040150_COLLECTION_PRIORITY_RUNTIME.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040160_RECEIPT_ISSUANCE_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040160_RECEIPT_ISSUANCE_RUNTIME.md -->
 # ============================================================
 # RECEIPT ISSUANCE RUNTIME
 # ============================================================
@@ -2431,12 +2687,9 @@ rules:
 - reissue must keep linkage to original payment confirmation
 - receipt issuance must be audited
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040160_RECEIPT_ISSUANCE_RUNTIME.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME.md -->
 # ============================================================
 # INVOICE FLOW RUNTIME
 # ============================================================
@@ -2456,12 +2709,9 @@ runtime_rules:
 - collection priority updates when overdue or outstanding conditions change
 - receipt issuance requires confirmed payment state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME_INDEX.md -->
 # ============================================================
 # INVOICE FLOW RUNTIME INDEX
 # ============================================================
@@ -2484,12 +2734,9 @@ files:
 - 040150_COLLECTION_PRIORITY_RUNTIME.md
 - 040160_RECEIPT_ISSUANCE_RUNTIME.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME_INDEX.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW RUNTIME OVERVIEW
 # ============================================================
@@ -2509,12 +2756,9 @@ manual confirmation,
 collection priority handling,
 and receipt issuance.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/040.runtime/040_INVOICE_FLOW_RUNTIME_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050110_FRONT_INVOICE_CREATION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050110_FRONT_INVOICE_CREATION_FLOW.md -->
 # ============================================================
 # FRONT INVOICE CREATION FLOW
 # ============================================================
@@ -2535,12 +2779,9 @@ steps:
 6. wait for payment
 7. manage collection if overdue
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050110_FRONT_INVOICE_CREATION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050120_ERP_MASTER_INVOICE_REFERENCE_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050120_ERP_MASTER_INVOICE_REFERENCE_FLOW.md -->
 # ============================================================
 # ERP MASTER INVOICE REFERENCE FLOW
 # ============================================================
@@ -2559,12 +2800,9 @@ steps:
 4. reflect payment result through shared ERP capability
 5. update local visibility and audit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050120_ERP_MASTER_INVOICE_REFERENCE_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050130_BANK_PAYMENT_CONFIRMATION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050130_BANK_PAYMENT_CONFIRMATION_FLOW.md -->
 # ============================================================
 # BANK PAYMENT CONFIRMATION FLOW
 # ============================================================
@@ -2584,12 +2822,9 @@ steps:
 5. run simple reconciliation
 6. issue receipt when allowed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050130_BANK_PAYMENT_CONFIRMATION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050140_MANUAL_PAYMENT_CONFIRMATION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050140_MANUAL_PAYMENT_CONFIRMATION_FLOW.md -->
 # ============================================================
 # MANUAL PAYMENT CONFIRMATION FLOW
 # ============================================================
@@ -2609,12 +2844,9 @@ steps:
 5. confirm payment
 6. issue receipt when allowed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050140_MANUAL_PAYMENT_CONFIRMATION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050150_COLLECTION_FOLLOW_UP_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050150_COLLECTION_FOLLOW_UP_FLOW.md -->
 # ============================================================
 # COLLECTION FOLLOW-UP FLOW
 # ============================================================
@@ -2634,12 +2866,9 @@ steps:
 5. update promise-to-pay or escalation state
 6. close when paid/resolved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050150_COLLECTION_FOLLOW_UP_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050160_RECEIPT_ISSUANCE_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050160_RECEIPT_ISSUANCE_FLOW.md -->
 # ============================================================
 # RECEIPT ISSUANCE FLOW
 # ============================================================
@@ -2658,12 +2887,9 @@ steps:
 4. generate receipt PDF
 5. store audit log
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050160_RECEIPT_ISSUANCE_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050170_INVOICE_STATUS_TRANSITION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050170_INVOICE_STATUS_TRANSITION_FLOW.md -->
 # ============================================================
 # INVOICE STATUS TRANSITION FLOW
 # ============================================================
@@ -2768,12 +2994,9 @@ rules:
 - cancelled state is terminal
 - closed state is terminal
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050170_INVOICE_STATUS_TRANSITION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050180_PAYMENT_CONFIRMATION_STATUS_TRANSITION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050180_PAYMENT_CONFIRMATION_STATUS_TRANSITION_FLOW.md -->
 # ============================================================
 # PAYMENT CONFIRMATION STATUS TRANSITION FLOW
 # ============================================================
@@ -2864,12 +3087,9 @@ rules:
 - receipt issuance requires confirmed payment
 - confirmation source must remain traceable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050180_PAYMENT_CONFIRMATION_STATUS_TRANSITION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050190_COLLECTION_STATUS_TRANSITION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050190_COLLECTION_STATUS_TRANSITION_FLOW.md -->
 # ============================================================
 # COLLECTION STATUS TRANSITION FLOW
 # ============================================================
@@ -2958,12 +3178,9 @@ rules:
 - resolved is terminal
 - priority queue may change without forcing a state change
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050190_COLLECTION_STATUS_TRANSITION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050200_RECEIPT_STATUS_TRANSITION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050200_RECEIPT_STATUS_TRANSITION_FLOW.md -->
 # ============================================================
 # RECEIPT STATUS TRANSITION FLOW
 # ============================================================
@@ -3024,12 +3241,9 @@ rules:
 - reissue must preserve linkage to original payment and prior receipt
 - void is terminal
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050200_RECEIPT_STATUS_TRANSITION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050210_ERP_REFLECTION_STATUS_TRANSITION_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050210_ERP_REFLECTION_STATUS_TRANSITION_FLOW.md -->
 # ============================================================
 # ERP REFLECTION STATUS TRANSITION FLOW
 # ============================================================
@@ -3086,12 +3300,9 @@ rules:
 - reflection must pass shared BusinessOS boundary
 - ERP synced is terminal for the specific request result
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050210_ERP_REFLECTION_STATUS_TRANSITION_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW.md -->
 # ============================================================
 # INVOICE FLOW FLOW
 # ============================================================
@@ -3196,12 +3407,9 @@ flow_rules:
 - collection is triggered by overdue/unpaid conditions
 - ambiguous bank match must stop for review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW_INDEX.md -->
 # ============================================================
 # INVOICE FLOW FLOW INDEX
 # ============================================================
@@ -3229,12 +3437,9 @@ files:
 - 050200_RECEIPT_STATUS_TRANSITION_FLOW.md
 - 050210_ERP_REFLECTION_STATUS_TRANSITION_FLOW.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW_INDEX.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW FLOW OVERVIEW
 # ============================================================
@@ -3253,12 +3458,9 @@ bank/manual payment confirmation,
 collection follow-up,
 and receipt issuance flows.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/050.flow/050_INVOICE_FLOW_FLOW_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060110_BANK_ACCOUNT_LINK_INTEGRATION_CONTRACT.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060110_BANK_ACCOUNT_LINK_INTEGRATION_CONTRACT.md -->
 # ============================================================
 # BANK ACCOUNT LINK INTEGRATION CONTRACT
 # ============================================================
@@ -3276,12 +3478,9 @@ contract_scope:
 - imported transaction identity
 - match candidate generation input
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060110_BANK_ACCOUNT_LINK_INTEGRATION_CONTRACT.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060120_RECEIPT_PDF_INTEGRATION_CONTRACT.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060120_RECEIPT_PDF_INTEGRATION_CONTRACT.md -->
 # ============================================================
 # RECEIPT PDF INTEGRATION CONTRACT
 # ============================================================
@@ -3303,12 +3502,9 @@ document_requirements:
 - multicurrency display support
 - layout stability across variable text lengths
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060120_RECEIPT_PDF_INTEGRATION_CONTRACT.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060130_SHARED_ERP_REFLECTION_INTEGRATION_CONTRACT.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060130_SHARED_ERP_REFLECTION_INTEGRATION_CONTRACT.md -->
 # ============================================================
 # SHARED ERP REFLECTION INTEGRATION CONTRACT
 # ============================================================
@@ -3326,12 +3522,9 @@ contract_scope:
 - result return
 - error return
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060130_SHARED_ERP_REFLECTION_INTEGRATION_CONTRACT.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060140_NOTIFICATION_INTEGRATION_CONTRACT.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060140_NOTIFICATION_INTEGRATION_CONTRACT.md -->
 # ============================================================
 # NOTIFICATION INTEGRATION CONTRACT
 # ============================================================
@@ -3349,12 +3542,9 @@ contract_scope:
 - receipt issuance notification
 - send/delivery result notification
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060140_NOTIFICATION_INTEGRATION_CONTRACT.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060150_API_EXACT_PAYLOAD_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060150_API_EXACT_PAYLOAD_OVERVIEW.md -->
 # ============================================================
 # API EXACT PAYLOAD OVERVIEW
 # ============================================================
@@ -3397,12 +3587,9 @@ standard_error_codes:
 - BANK_MATCH_AMBIGUOUS
 - INTERNAL_ERROR
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060150_API_EXACT_PAYLOAD_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060160_GET_INVOICE_LIST_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060160_GET_INVOICE_LIST_EXACT_PAYLOAD.md -->
 # ============================================================
 # GET INVOICE LIST EXACT PAYLOAD
 # ============================================================
@@ -3472,12 +3659,9 @@ response_json:
   }
 }
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060160_GET_INVOICE_LIST_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060170_GET_INVOICE_DETAIL_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060170_GET_INVOICE_DETAIL_EXACT_PAYLOAD.md -->
 # ============================================================
 # GET INVOICE DETAIL EXACT PAYLOAD
 # ============================================================
@@ -3557,12 +3741,9 @@ response_json:
   }
 }
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060170_GET_INVOICE_DETAIL_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060180_CREATE_FRONT_INVOICE_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060180_CREATE_FRONT_INVOICE_EXACT_PAYLOAD.md -->
 # ============================================================
 # CREATE FRONT INVOICE EXACT PAYLOAD
 # ============================================================
@@ -3626,12 +3807,9 @@ validation_rules:
 - at least one line required
 - payment_due_date must be on or after invoice_date
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060180_CREATE_FRONT_INVOICE_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060190_CONFIRM_MANUAL_PAYMENT_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060190_CONFIRM_MANUAL_PAYMENT_EXACT_PAYLOAD.md -->
 # ============================================================
 # CONFIRM MANUAL PAYMENT EXACT PAYLOAD
 # ============================================================
@@ -3684,12 +3862,9 @@ error_examples:
 - VALIDATION_ERROR
 - FORBIDDEN
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060190_CONFIRM_MANUAL_PAYMENT_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060200_CONFIRM_BANK_MATCH_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060200_CONFIRM_BANK_MATCH_EXACT_PAYLOAD.md -->
 # ============================================================
 # CONFIRM BANK MATCH EXACT PAYLOAD
 # ============================================================
@@ -3742,12 +3917,9 @@ error_examples:
 - PAYMENT_CONFIRMATION_NOT_ALLOWED
 - CONFLICT
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060200_CONFIRM_BANK_MATCH_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060210_ISSUE_RECEIPT_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060210_ISSUE_RECEIPT_EXACT_PAYLOAD.md -->
 # ============================================================
 # ISSUE RECEIPT EXACT PAYLOAD
 # ============================================================
@@ -3795,12 +3967,9 @@ error_examples:
 - NOT_FOUND
 - FORBIDDEN
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060210_ISSUE_RECEIPT_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060220_RECORD_COLLECTION_ACTION_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060220_RECORD_COLLECTION_ACTION_EXACT_PAYLOAD.md -->
 # ============================================================
 # RECORD COLLECTION ACTION EXACT PAYLOAD
 # ============================================================
@@ -3847,12 +4016,9 @@ response_json:
   }
 }
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060220_RECORD_COLLECTION_ACTION_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060230_REQUEST_ERP_PAYMENT_REFLECTION_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060230_REQUEST_ERP_PAYMENT_REFLECTION_EXACT_PAYLOAD.md -->
 # ============================================================
 # REQUEST ERP PAYMENT REFLECTION EXACT PAYLOAD
 # ============================================================
@@ -3909,12 +4075,9 @@ rules:
 - FRONT_LOCAL invoice must fail this request for ERP-master reflection path
 - shared BusinessOS boundary is mandatory
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060230_REQUEST_ERP_PAYMENT_REFLECTION_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060240_GENERATE_INVOICE_PDF_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060240_GENERATE_INVOICE_PDF_EXACT_PAYLOAD.md -->
 # ============================================================
 # GENERATE INVOICE PDF EXACT PAYLOAD
 # ============================================================
@@ -3960,12 +4123,9 @@ error_examples:
 - FORBIDDEN
 - NOT_FOUND
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060240_GENERATE_INVOICE_PDF_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060250_REQUEST_INVOICE_SEND_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060250_REQUEST_INVOICE_SEND_EXACT_PAYLOAD.md -->
 # ============================================================
 # REQUEST INVOICE SEND EXACT PAYLOAD
 # ============================================================
@@ -4013,12 +4173,9 @@ validation_rules:
 - invoice PDF must exist before send request
 - recipient_address required for EMAIL and SHARE_LINK
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060250_REQUEST_INVOICE_SEND_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060260_GET_BANK_MATCH_CANDIDATE_LIST_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060260_GET_BANK_MATCH_CANDIDATE_LIST_EXACT_PAYLOAD.md -->
 # ============================================================
 # GET BANK MATCH CANDIDATE LIST EXACT PAYLOAD
 # ============================================================
@@ -4075,12 +4232,9 @@ response_json:
   }
 }
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060260_GET_BANK_MATCH_CANDIDATE_LIST_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060270_REISSUE_RECEIPT_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060270_REISSUE_RECEIPT_EXACT_PAYLOAD.md -->
 # ============================================================
 # REISSUE RECEIPT EXACT PAYLOAD
 # ============================================================
@@ -4129,12 +4283,9 @@ error_examples:
 - FORBIDDEN
 - NOT_FOUND
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060270_REISSUE_RECEIPT_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060280_GET_ERP_REFLECTION_RESULT_EXACT_PAYLOAD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060280_GET_ERP_REFLECTION_RESULT_EXACT_PAYLOAD.md -->
 # ============================================================
 # GET ERP REFLECTION RESULT EXACT PAYLOAD
 # ============================================================
@@ -4193,12 +4344,67 @@ response_json_failure_case:
   }
 }
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060280_GET_ERP_REFLECTION_RESULT_EXACT_PAYLOAD.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060290_INVOICEFLOW_BILLING_COCKPIT_PAYLOAD.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060290_SAVE_INVOICE_LIST_FILTER_EXACT_PAYLOAD.md
+# INVOICEFLOW BILLING COCKPIT PAYLOAD
 # ============================================================
 
+status: canonical
+layer: integration
+system: applications
+application: InvoiceFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: billing-cockpit-payload
+
+purpose:
+Fixes the exact payload family for the billing cockpit surface.
+
+endpoint:
+- POST /api/v1/invoice-flow/billing-cockpit/query
+
+request_fields:
+- invoiceId: uuid string, required
+- timezone: string, required
+- includePendingApproval: boolean, required
+- includeSettlementBlockers: boolean, required
+- includeDownstreamFinance: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- invoiceId: uuid string, required
+- invoiceTitle: string, required
+- healthSummaryMessage: string, required
+- pendingApprovalItems: array, required
+- settlementBlockerItems: array, required
+- downstreamFinanceItems: array, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- billingExecutionTimelineItemId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- executionStateCode
+- dueAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+
+rules:
+- timestamps use ISO-8601 strings
+- nullable values return null, not omission
+- arrays return empty arrays when no data
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060290_INVOICEFLOW_BILLING_COCKPIT_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060290_SAVE_INVOICE_LIST_FILTER_EXACT_PAYLOAD.md -->
 # ============================================================
 # SAVE INVOICE LIST FILTER EXACT PAYLOAD
 # ============================================================
@@ -4242,12 +4448,9 @@ response_json:
   }
 }
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060290_SAVE_INVOICE_LIST_FILTER_EXACT_PAYLOAD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060300_ERROR_HANDLING_AND_RESPONSE_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060300_ERROR_HANDLING_AND_RESPONSE_POLICY.md -->
 # ============================================================
 # ERROR HANDLING AND RESPONSE POLICY
 # ============================================================
@@ -4279,12 +4482,254 @@ ui_alignment_rules:
 - machine-readable error must map to understandable UI message
 - financial blocking errors should remain visible in detail screens where relevant
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060300_ERROR_HANDLING_AND_RESPONSE_POLICY.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060300_INVOICEFLOW_SETTLEMENT_EXCEPTION_REVIEW_PAYLOAD.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION.md
+# INVOICEFLOW SETTLEMENT EXCEPTION REVIEW PAYLOAD
 # ============================================================
 
+status: canonical
+layer: integration
+system: applications
+application: InvoiceFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: settlement-exception-review-payload
+
+purpose:
+Fixes the exact payload family for settlement and exception review.
+
+endpoint:
+- POST /api/v1/invoice-flow/settlement-exception-review/query
+
+request_fields:
+- invoiceId: uuid string, required
+- includeResolved: boolean, required
+- includeApprovalPending: boolean, required
+- includeDownstreamFinanceBlockers: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- invoiceId: uuid string, required
+- reviewItems: array, required
+- summaryMessage: string, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId
+- relatedApprovalId
+- relatedSettlementBlockerId
+- relatedFinanceBlockerId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- executionStateCode
+- exceptionPresent
+- approvalRequired
+- ownerUserId
+- resolved
+- dueAt
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060300_INVOICEFLOW_SETTLEMENT_EXCEPTION_REVIEW_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060320_INVOICEFLOW_PHASE_A_API_STARTER.md -->
+# ============================================================
+# INVOICEFLOW PHASE A API STARTER
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: InvoiceFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-starter
+
+purpose:
+Defines the initial Phase A endpoint set for financial control in InvoiceFlow.
+
+phase_a_api_goals:
+- query billing cockpit
+- query settlement exception review
+- prepare later approval and downstream finance actions without reopening the contract
+
+phase_a_endpoint_set:
+- POST /api/v1/invoice-flow/billing-cockpit/query
+- POST /api/v1/invoice-flow/settlement-exception-review/query
+
+endpoint_billing_cockpit_query:
+  purpose:
+    - return approval pending items, settlement blockers, and downstream finance visibility in one surface
+  minimum_request:
+    - invoiceId
+    - timezone
+    - includePendingApproval
+    - includeSettlementBlockers
+    - includeDownstreamFinance
+    - pageSize
+  minimum_response:
+    - invoiceId
+    - invoiceTitle
+    - healthSummaryMessage
+    - pendingApprovalItems
+    - settlementBlockerItems
+    - downstreamFinanceItems
+    - generatedAt
+
+endpoint_settlement_exception_review_query:
+  purpose:
+    - return settlement and finance blocker rows for financial review
+  minimum_request:
+    - invoiceId
+    - includeResolved
+    - includeApprovalPending
+    - includeDownstreamFinanceBlockers
+    - pageSize
+  minimum_response:
+    - invoiceId
+    - reviewItems
+    - summaryMessage
+    - generatedAt
+
+response_rules:
+- ids use uuid string form
+- timestamps use ISO-8601 strings
+- arrays return empty arrays, not omission
+- nullable values return null once frozen
+- no binary payloads in these responses
+
+error_family_phase_a:
+- invalid_request
+- unauthorized
+- forbidden
+- not_found
+- conflict
+- validation_failed
+- internal_error
+
+explicit_non_scope:
+- no invoice write endpoint in this slice
+- no approval action write endpoint in this slice
+- no settlement execution endpoint in this slice
+- no bulk import endpoint in this slice
+
+implementation_handoff:
+- use these two query endpoints as the only Phase A vertical-slice entry points first
+- defer write-side approval and settlement actions until query-side surfaces stabilize
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060320_INVOICEFLOW_PHASE_A_API_STARTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060330_INVOICEFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+# ============================================================
+# INVOICEFLOW PHASE A API DTO FIELD FREEZE
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: InvoiceFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-dto-field-freeze
+
+purpose:
+Freezes the Phase A request and response DTO field set for
+billing cockpit and settlement exception review.
+
+freezing_policy:
+- additive only
+- field names become implementation baseline once approved
+- no casual local rename allowed
+- timestamps are ISO-8601 strings
+- ids are uuid strings
+- arrays stay arrays even when empty
+
+endpoint_01_billing_cockpit_query:
+  route: POST /api/v1/invoice-flow/billing-cockpit/query
+  request_fields:
+    - invoiceId: uuid string, required
+    - timezone: string, required
+    - includePendingApproval: boolean, required
+    - includeSettlementBlockers: boolean, required
+    - includeDownstreamFinance: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - invoiceId: uuid string, required
+    - invoiceTitle: string, required
+    - healthSummaryMessage: string, required
+    - pendingApprovalItems: array, required
+    - settlementBlockerItems: array, required
+    - downstreamFinanceItems: array, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- billingExecutionTimelineItemId: uuid string, required
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- executionStateCode: string, required
+- dueAt: ISO-8601 string, nullable
+- exceptionPresent: boolean, required
+- ownerUserId: uuid string, nullable
+- approvalRequired: boolean, required
+
+endpoint_02_settlement_exception_review_query:
+  route: POST /api/v1/invoice-flow/settlement-exception-review/query
+  request_fields:
+    - invoiceId: uuid string, required
+    - includeResolved: boolean, required
+    - includeApprovalPending: boolean, required
+    - includeDownstreamFinanceBlockers: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - invoiceId: uuid string, required
+    - reviewItems: array, required
+    - summaryMessage: string, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId: uuid string, required
+- relatedApprovalId: uuid string, nullable
+- relatedSettlementBlockerId: uuid string, nullable
+- relatedFinanceBlockerId: uuid string, nullable
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- executionStateCode: string, required
+- exceptionPresent: boolean, required
+- approvalRequired: boolean, required
+- ownerUserId: uuid string, nullable
+- resolved: boolean, required
+- dueAt: ISO-8601 string, nullable
+
+shared_error_response_fields:
+- errorCode: string, required
+- errorMessage: string, required
+- requestId: string, required
+- details: object, nullable
+
+field_value_rules:
+- itemTypeCode is a text code, not localized label
+- executionStateCode is a text code, not localized label
+- nullable fields return null, not omission
+- unknown response fields must not be silently added in Phase A
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060330_INVOICEFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION.md -->
 # ============================================================
 # INVOICE FLOW INTEGRATION
 # ============================================================
@@ -4303,12 +4748,9 @@ integration_topics:
 - shared ERP reflection
 - notification and reminder support
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION_INDEX.md -->
 # ============================================================
 # INVOICE FLOW INTEGRATION INDEX
 # ============================================================
@@ -4345,12 +4787,17 @@ files:
 - 060290_SAVE_INVOICE_LIST_FILTER_EXACT_PAYLOAD.md
 - 060300_ERROR_HANDLING_AND_RESPONSE_POLICY.md
 
+- 060290_INVOICEFLOW_BILLING_COCKPIT_PAYLOAD.md
 
+- 060300_INVOICEFLOW_SETTLEMENT_EXCEPTION_REVIEW_PAYLOAD.md
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION_OVERVIEW.md
-# ============================================================
+- 060320_INVOICEFLOW_PHASE_A_API_STARTER.md
 
+- 060330_INVOICEFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW INTEGRATION OVERVIEW
 # ============================================================
@@ -4368,12 +4815,9 @@ PDF generation,
 shared ERP reflection,
 and notification capability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/060.integration/060_INVOICE_FLOW_INTEGRATION_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070110_COLLECTION_OPERATIONS_STANDARD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070110_COLLECTION_OPERATIONS_STANDARD.md -->
 # ============================================================
 # COLLECTION OPERATIONS STANDARD
 # ============================================================
@@ -4390,12 +4834,9 @@ standard:
 - collection due date must be maintained
 - dunning history must be recorded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070110_COLLECTION_OPERATIONS_STANDARD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070120_RECEIPT_REISSUE_OPERATIONS_STANDARD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070120_RECEIPT_REISSUE_OPERATIONS_STANDARD.md -->
 # ============================================================
 # RECEIPT REISSUE OPERATIONS STANDARD
 # ============================================================
@@ -4412,12 +4853,9 @@ standard:
 - reissue reason is mandatory
 - reissue is audited
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070120_RECEIPT_REISSUE_OPERATIONS_STANDARD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070130_BANK_MATCH_EXCEPTION_OPERATIONS_STANDARD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070130_BANK_MATCH_EXCEPTION_OPERATIONS_STANDARD.md -->
 # ============================================================
 # BANK MATCH EXCEPTION OPERATIONS STANDARD
 # ============================================================
@@ -4434,12 +4872,9 @@ standard:
 - forced confirmation requires operator traceability
 - unresolved imports remain visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070130_BANK_MATCH_EXCEPTION_OPERATIONS_STANDARD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070140_BANK_IMPORT_OPERATIONS_STANDARD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070140_BANK_IMPORT_OPERATIONS_STANDARD.md -->
 # ============================================================
 # BANK IMPORT OPERATIONS STANDARD
 # ============================================================
@@ -4478,12 +4913,9 @@ minimum_visibility:
 - confidence score
 - current match status
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070140_BANK_IMPORT_OPERATIONS_STANDARD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070150_NOTIFICATION_OPERATIONS_STANDARD.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070150_NOTIFICATION_OPERATIONS_STANDARD.md -->
 # ============================================================
 # NOTIFICATION OPERATIONS STANDARD
 # ============================================================
@@ -4513,12 +4945,9 @@ notification_rules:
 - notification wording must remain understandable for operators
 - multilingual delivery should follow actor or tenant preference where possible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070150_NOTIFICATION_OPERATIONS_STANDARD.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070160_AUDIT_EVENT_LEDGER.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070160_AUDIT_EVENT_LEDGER.md -->
 # ============================================================
 # AUDIT EVENT LEDGER
 # ============================================================
@@ -4560,12 +4989,9 @@ minimum_event_fields:
 - before_json when applicable
 - after_json when applicable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070160_AUDIT_EVENT_LEDGER.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS.md -->
 # ============================================================
 # INVOICE FLOW OPERATIONS
 # ============================================================
@@ -4584,12 +5010,9 @@ operations_topics:
 - receipt reissue review
 - ERP reflection exception handling
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS_INDEX.md -->
 # ============================================================
 # INVOICE FLOW OPERATIONS INDEX
 # ============================================================
@@ -4612,12 +5035,9 @@ files:
 - 070150_NOTIFICATION_OPERATIONS_STANDARD.md
 - 070160_AUDIT_EVENT_LEDGER.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS_INDEX.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW OPERATIONS OVERVIEW
 # ============================================================
@@ -4635,12 +5055,9 @@ collection follow-up,
 receipt reissue handling,
 and bank match exception handling.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/070.operations/070_INVOICE_FLOW_OPERATIONS_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080110_INVOICE_AUTHORITY_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080110_INVOICE_AUTHORITY_POLICY.md -->
 # ============================================================
 # INVOICE AUTHORITY POLICY
 # ============================================================
@@ -4657,12 +5074,9 @@ rules:
 - front invoice authority belongs only to InvoiceFlow operational scope
 - front invoice must not masquerade as ERP-master invoice
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080110_INVOICE_AUTHORITY_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080120_RECEIPT_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080120_RECEIPT_POLICY.md -->
 # ============================================================
 # RECEIPT POLICY
 # ============================================================
@@ -4679,12 +5093,9 @@ rules:
 - bank-linked or manual confirmation are both acceptable sources
 - reissue must keep auditability
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080120_RECEIPT_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080130_COLLECTION_PRIORITY_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080130_COLLECTION_PRIORITY_POLICY.md -->
 # ============================================================
 # COLLECTION PRIORITY POLICY
 # ============================================================
@@ -4701,12 +5112,9 @@ rules:
 - high risk cases should surface first
 - collection priority logic must be explainable to operators
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080130_COLLECTION_PRIORITY_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080140_FAIL_CLOSED_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080140_FAIL_CLOSED_POLICY.md -->
 # ============================================================
 # FAIL CLOSED POLICY
 # ============================================================
@@ -4723,12 +5131,9 @@ rules:
 - if amount or target mapping is unclear, block confirmation/finalization
 - if receipt precondition is missing, do not issue receipt
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080140_FAIL_CLOSED_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080150_COMPETITIVE_DIFFERENTIATION_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080150_COMPETITIVE_DIFFERENTIATION_POLICY.md -->
 # ============================================================
 # COMPETITIVE DIFFERENTIATION POLICY
 # ============================================================
@@ -4764,12 +5169,9 @@ exclusion_policy:
 - do not over-specialize into accounting-only terminology on every screen
 - do not require ERP adoption for local/front invoice use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080150_COMPETITIVE_DIFFERENTIATION_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080160_DOCUMENT_NUMBERING_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080160_DOCUMENT_NUMBERING_POLICY.md -->
 # ============================================================
 # DOCUMENT NUMBERING POLICY
 # ============================================================
@@ -4801,12 +5203,9 @@ numbering_visibility_rules:
 - invoice detail must show both local and ERP invoice number fields when relevant
 - receipt detail must show prior receipt number on reissue
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080160_DOCUMENT_NUMBERING_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080170_DOCUMENT_TEMPLATE_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080170_DOCUMENT_TEMPLATE_POLICY.md -->
 # ============================================================
 # DOCUMENT TEMPLATE POLICY
 # ============================================================
@@ -4834,12 +5233,9 @@ document_footer_rules:
 - FRONT_LOCAL invoice may include note that ERP master authority is separate when tenant policy requires
 - receipt reissue may include reissue reason or reissue marker when tenant policy requires
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080170_DOCUMENT_TEMPLATE_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080180_SIMPLE_RECONCILIATION_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080180_SIMPLE_RECONCILIATION_POLICY.md -->
 # ============================================================
 # SIMPLE RECONCILIATION POLICY
 # ============================================================
@@ -4869,12 +5265,9 @@ closure_rules:
 - payment may be operationally closed in InvoiceFlow according to policy
 - formal ERP truth remains separate for ERP_MASTER paths
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080180_SIMPLE_RECONCILIATION_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080190_DATA_RETENTION_AND_CORRECTION_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080190_DATA_RETENTION_AND_CORRECTION_POLICY.md -->
 # ============================================================
 # DATA RETENTION AND CORRECTION POLICY
 # ============================================================
@@ -4904,12 +5297,9 @@ deletion_rules:
 - hard delete is discouraged for financial trail records
 - archival or inactive visibility is preferred to destructive deletion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080190_DATA_RETENTION_AND_CORRECTION_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080200_NOTIFICATION_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080200_NOTIFICATION_POLICY.md -->
 # ============================================================
 # NOTIFICATION POLICY
 # ============================================================
@@ -4936,12 +5326,9 @@ delivery_policy:
 - external delivery channels are optional by tenant capability
 - notification content should avoid ambiguous wording about authority boundaries
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080200_NOTIFICATION_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080210_APPROVED_BUSINESS_DECISIONS_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080210_APPROVED_BUSINESS_DECISIONS_POLICY.md -->
 # ============================================================
 # APPROVED BUSINESS DECISIONS POLICY
 # ============================================================
@@ -5025,12 +5412,9 @@ approved_decisions:
   - FRONT_LOCAL receipt issuance is application-led
   - ERP_MASTER receipt interpretation follows ERP-side authority policy where relevant
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080210_APPROVED_BUSINESS_DECISIONS_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080220_DOCUMENT_FOOTER_AND_NUMBERING_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080220_DOCUMENT_FOOTER_AND_NUMBERING_POLICY.md -->
 # ============================================================
 # DOCUMENT FOOTER AND NUMBERING POLICY
 # ============================================================
@@ -5063,12 +5447,9 @@ visibility_rules:
 - reissue detail must show prior receipt number/linkage clearly
 - invoice detail should expose FRONT_LOCAL vs ERP_MASTER clearly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080220_DOCUMENT_FOOTER_AND_NUMBERING_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080230_CUSTOMER_MASTER_AND_SEND_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080230_CUSTOMER_MASTER_AND_SEND_POLICY.md -->
 # ============================================================
 # CUSTOMER MASTER AND SEND POLICY
 # ============================================================
@@ -5095,12 +5476,9 @@ default_send_policy:
 - share link is later optional expansion
 - send-channel enablement may remain tenant-configurable later
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080230_CUSTOMER_MASTER_AND_SEND_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080240_POST_SEND_CORRECTION_AND_REISSUE_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080240_POST_SEND_CORRECTION_AND_REISSUE_POLICY.md -->
 # ============================================================
 # POST SEND CORRECTION AND REISSUE POLICY
 # ============================================================
@@ -5133,12 +5511,9 @@ receipt_reissue_policy:
 - prior linkage is mandatory
 - reissue should remain visibly distinguishable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080240_POST_SEND_CORRECTION_AND_REISSUE_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080250_LANGUAGE_AND_CURRENCY_DISPLAY_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080250_LANGUAGE_AND_CURRENCY_DISPLAY_POLICY.md -->
 # ============================================================
 # LANGUAGE AND CURRENCY DISPLAY POLICY
 # ============================================================
@@ -5165,12 +5540,9 @@ currency_display_policy:
 - customer outstanding summaries remain currency-separated by default
 - UI and PDF output must not replace explicit currency identity with locale-only assumption
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080250_LANGUAGE_AND_CURRENCY_DISPLAY_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080260_FINAL_WORDING_AND_FORMAT_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080260_FINAL_WORDING_AND_FORMAT_POLICY.md -->
 # ============================================================
 # FINAL WORDING AND FORMAT POLICY
 # ============================================================
@@ -5303,12 +5675,9 @@ final_interpretation:
 Wording and formatting decisions are now fixed enough
 that implementation does not need to invent display meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080260_FINAL_WORDING_AND_FORMAT_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080270_FINAL_DISPLAY_RULES_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080270_FINAL_DISPLAY_RULES_POLICY.md -->
 # ============================================================
 # FINAL DISPLAY RULES POLICY
 # ============================================================
@@ -5338,12 +5707,9 @@ phone_layout_rules:
 - authority badge must remain near invoice summary
 - next_action_date must remain visible in collection detail
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080270_FINAL_DISPLAY_RULES_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY.md -->
 # ============================================================
 # INVOICE FLOW POLICY
 # ============================================================
@@ -5365,12 +5731,9 @@ policy_core:
 - multicurrency policy must be enforced
 - multi-device policy must be enforced
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY_INDEX.md -->
 # ============================================================
 # INVOICE FLOW POLICY INDEX
 # ============================================================
@@ -5404,12 +5767,9 @@ files:
 - 080260_FINAL_WORDING_AND_FORMAT_POLICY.md
 - 080270_FINAL_DISPLAY_RULES_POLICY.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY_INDEX.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW POLICY OVERVIEW
 # ============================================================
@@ -5427,12 +5787,9 @@ receipt rules,
 collection priority,
 and fail-closed behavior.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/080.policy/080_INVOICE_FLOW_POLICY_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090110_SCREEN_LIST_INTERFACE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090110_SCREEN_LIST_INTERFACE.md -->
 # ============================================================
 # SCREEN LIST INTERFACE
 # ============================================================
@@ -5539,12 +5896,9 @@ cross_screen_requirements:
 - all screens are available for iphone, android, pc, and tablet form factors
 - invoice authority distinction must remain visible on critical screens
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090110_SCREEN_LIST_INTERFACE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090120_DASHBOARD_INTERFACE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090120_DASHBOARD_INTERFACE.md -->
 # ============================================================
 # DASHBOARD INTERFACE
 # ============================================================
@@ -5629,12 +5983,9 @@ visibility_rules:
 - urgent widgets appear above informational widgets
 - overdue and collection widgets must stay above fold on smartphone where possible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090120_DASHBOARD_INTERFACE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090130_INVOICE_DETAIL_INTERFACE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090130_INVOICE_DETAIL_INTERFACE.md -->
 # ============================================================
 # INVOICE DETAIL INTERFACE
 # ============================================================
@@ -5738,12 +6089,9 @@ blocking_notices:
 - front-created invoice cannot become ERP invoice master
 - ERP reflection eligibility must be checked before reflective action
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090130_INVOICE_DETAIL_INTERFACE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090140_PAYMENT_CONFIRMATION_INTERFACE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090140_PAYMENT_CONFIRMATION_INTERFACE.md -->
 # ============================================================
 # PAYMENT CONFIRMATION INTERFACE
 # ============================================================
@@ -5821,12 +6169,9 @@ warnings:
 - manual confirmation requires actor traceability
 - receipt requires confirmed payment
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090140_PAYMENT_CONFIRMATION_INTERFACE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090150_COLLECTION_DASHBOARD_INTERFACE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090150_COLLECTION_DASHBOARD_INTERFACE.md -->
 # ============================================================
 # COLLECTION DASHBOARD INTERFACE
 # ============================================================
@@ -5924,12 +6269,9 @@ design_rules:
 - priority reason must be understandable by operators
 - overdue facts must be visible before history details
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090150_COLLECTION_DASHBOARD_INTERFACE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090160_RECEIPT_INTERFACE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090160_RECEIPT_INTERFACE.md -->
 # ============================================================
 # RECEIPT INTERFACE
 # ============================================================
@@ -5992,12 +6334,9 @@ design_rules:
 - receipt and linked payment must be understandable on one screen
 - reissue must not hide original linkage
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090160_RECEIPT_INTERFACE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090170_COMPETITIVE_INTERFACE_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090170_COMPETITIVE_INTERFACE_REQUIREMENTS.md -->
 # ============================================================
 # COMPETITIVE INTERFACE REQUIREMENTS
 # ============================================================
@@ -6066,12 +6405,64 @@ document_requirements:
 - multilingual expansion must not collapse key controls
 - multicurrency display must remain unambiguous
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090170_COMPETITIVE_INTERFACE_REQUIREMENTS.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090330_INVOICEFLOW_BILLING_COCKPIT_INTERFACE.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE.md
+# INVOICEFLOW BILLING COCKPIT INTERFACE
 # ============================================================
 
+status: canonical
+layer: interface
+system: applications
+application: InvoiceFlow
+directory: 090.interface
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: billing-cockpit-interface
+
+purpose:
+Makes the billing cockpit screen hierarchy explicit.
+
+screen_goal:
+- show what threatens settlement or downstream finance handoff right now
+- unify pending approvals, settlement blockers, and finance readiness
+- provide one financial-control review pass before diving into detail screens
+
+screen_sections:
+- invoice summary header
+- pending approval stack
+- settlement blocker stack
+- downstream finance panel
+- quick jump to settlement exception review
+
+item_card_fields:
+- item title
+- short summary
+- state badge
+- due time
+- owner badge
+- approval badge
+- quick action buttons
+
+primary_actions:
+- open invoice detail
+- open exception review
+- open approval review
+- approve
+- hold
+- open downstream finance detail
+
+interface_rules:
+- pending approvals must be separated visually from settlement blockers
+- downstream finance items must stay visible above long detail lists
+- cockpit must be scannable in one vertical pass
+- line editing belongs elsewhere; cockpit is a control surface first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090330_INVOICEFLOW_BILLING_COCKPIT_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE.md -->
 # ============================================================
 # INVOICE FLOW INTERFACE
 # ============================================================
@@ -6198,12 +6589,9 @@ interface_root_requirements:
 - invoice authority distinction must be visibly clear
 - ERP non-eligible front invoice must be visibly clear
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE_INDEX.md -->
 # ============================================================
 # INVOICE FLOW INTERFACE INDEX
 # ============================================================
@@ -6227,12 +6615,11 @@ files:
 - 090160_RECEIPT_INTERFACE.md
 - 090170_COMPETITIVE_INTERFACE_REQUIREMENTS.md
 
+- 090330_INVOICEFLOW_BILLING_COCKPIT_INTERFACE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE_INDEX.md -->
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW INTERFACE OVERVIEW
 # ============================================================
@@ -6251,12 +6638,9 @@ payment confirmation,
 collection dashboard,
 and receipt screens.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/090.interface/090_INVOICE_FLOW_INTERFACE_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/100.security/100110_ROLE_DEFINITION_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100110_ROLE_DEFINITION_SECURITY.md -->
 # ============================================================
 # ROLE DEFINITION SECURITY
 # ============================================================
@@ -6326,12 +6710,9 @@ core_rules:
 - receipt reissue rights are narrower than receipt view rights
 - manual payment confirmation rights are narrower than invoice view rights
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100110_ROLE_DEFINITION_SECURITY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/100.security/100120_SCREEN_PERMISSION_MATRIX_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100120_SCREEN_PERMISSION_MATRIX_SECURITY.md -->
 # ============================================================
 # SCREEN PERMISSION MATRIX SECURITY
 # ============================================================
@@ -6473,12 +6854,9 @@ notes:
 - edit_limited means action-limited editing within role scope
 - create_limited means creation without broad override authority
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100120_SCREEN_PERMISSION_MATRIX_SECURITY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/100.security/100130_ACTION_PERMISSION_MATRIX_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100130_ACTION_PERMISSION_MATRIX_SECURITY.md -->
 # ============================================================
 # ACTION PERMISSION MATRIX SECURITY
 # ============================================================
@@ -6629,12 +7007,9 @@ notes:
 - allow_limited means scoped by policy and target state
 - deny means no execution right even if screen is visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100130_ACTION_PERMISSION_MATRIX_SECURITY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/100.security/100140_EXCEPTION_AND_APPROVAL_BOUNDARY_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100140_EXCEPTION_AND_APPROVAL_BOUNDARY_SECURITY.md -->
 # ============================================================
 # EXCEPTION AND APPROVAL BOUNDARY SECURITY
 # ============================================================
@@ -6669,12 +7044,9 @@ audit_requirements:
 - all ERP reflection retries must write audit log
 - all override resolutions must write audit log
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100140_EXCEPTION_AND_APPROVAL_BOUNDARY_SECURITY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY.md -->
 # ============================================================
 # INVOICE FLOW SECURITY
 # ============================================================
@@ -6692,12 +7064,9 @@ security_rules:
 - receipt issuance requires traceable actor
 - ERP reflection requires explicit capability permission
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY_INDEX.md -->
 # ============================================================
 # INVOICE FLOW SECURITY INDEX
 # ============================================================
@@ -6718,12 +7087,9 @@ files:
 - 100130_ACTION_PERMISSION_MATRIX_SECURITY.md
 - 100140_EXCEPTION_AND_APPROVAL_BOUNDARY_SECURITY.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY_INDEX.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW SECURITY OVERVIEW
 # ============================================================
@@ -6741,12 +7107,9 @@ payment confirmation actions,
 receipt issuance,
 and ERP reflection boundaries.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/100.security/100_INVOICE_FLOW_SECURITY_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/110.infrastructure/110110_NON_FUNCTIONAL_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110110_NON_FUNCTIONAL_REQUIREMENTS.md -->
 # ============================================================
 # NON FUNCTIONAL REQUIREMENTS
 # ============================================================
@@ -6789,12 +7152,9 @@ audit_requirements:
 - state-changing financial actions must be traceable
 - reissue and override actions must be traceable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110110_NON_FUNCTIONAL_REQUIREMENTS.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/110.infrastructure/110120_MULTI_DEVICE_LAYOUT_REQUIREMENTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110120_MULTI_DEVICE_LAYOUT_REQUIREMENTS.md -->
 # ============================================================
 # MULTI DEVICE LAYOUT REQUIREMENTS
 # ============================================================
@@ -6822,12 +7182,9 @@ layout_rules:
 - wide-table data should have mobile fallback presentation
 - destructive or elevated actions should remain separated from routine actions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110120_MULTI_DEVICE_LAYOUT_REQUIREMENTS.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE.md -->
 # ============================================================
 # INVOICE FLOW INFRASTRUCTURE
 # ============================================================
@@ -6846,12 +7203,9 @@ dependencies:
 - shared ERP reflection service
 - notification service
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE_INDEX.md -->
 # ============================================================
 # INVOICE FLOW INFRASTRUCTURE INDEX
 # ============================================================
@@ -6870,12 +7224,9 @@ files:
 - 110110_NON_FUNCTIONAL_REQUIREMENTS.md
 - 110120_MULTI_DEVICE_LAYOUT_REQUIREMENTS.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE_INDEX.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW INFRASTRUCTURE OVERVIEW
 # ============================================================
@@ -6893,12 +7244,9 @@ PDF generation dependency,
 bank import dependency,
 and shared ERP reflection dependency.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/110.infrastructure/110_INVOICE_FLOW_INFRASTRUCTURE_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120110_IMPLEMENTATION_ROADMAP.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120110_IMPLEMENTATION_ROADMAP.md -->
 # ============================================================
 # IMPLEMENTATION ROADMAP
 # ============================================================
@@ -6932,12 +7280,9 @@ implementation_order:
 7. ERP payment reflection
 8. advanced refinement and operator optimization
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120110_IMPLEMENTATION_ROADMAP.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120120_PHASE_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120120_PHASE_BREAKDOWN.md -->
 # ============================================================
 # PHASE BREAKDOWN
 # ============================================================
@@ -7024,12 +7369,9 @@ phases:
   - device optimization
   - multilingual and multicurrency edge-case review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120120_PHASE_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120130_MVP_DEFINITION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120130_MVP_DEFINITION.md -->
 # ============================================================
 # MVP DEFINITION
 # ============================================================
@@ -7077,12 +7419,9 @@ This gives standalone value for ERP non-contract users
 and also creates the stable operational front needed
 before bank and ERP-connected phases.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120130_MVP_DEFINITION.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120140_PHASE_EXIT_CRITERIA.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120140_PHASE_EXIT_CRITERIA.md -->
 # ============================================================
 # PHASE EXIT CRITERIA
 # ============================================================
@@ -7152,12 +7491,9 @@ exit_criteria:
   - top operational screens are optimized for iphone, android, tablet, and pc
   - multilingual and multicurrency review issues are closed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120140_PHASE_EXIT_CRITERIA.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120150_RISKS_AND_FRONTLOADED_DECISIONS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120150_RISKS_AND_FRONTLOADED_DECISIONS.md -->
 # ============================================================
 # RISKS AND FRONTLOADED DECISIONS
 # ============================================================
@@ -7197,12 +7533,9 @@ risk_reduction_rules:
 - delay automation when certainty is weak
 - prefer explicit status fields over inferred behavior
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120150_RISKS_AND_FRONTLOADED_DECISIONS.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120160_IMPLEMENTATION_TASK_BREAKDOWN_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120160_IMPLEMENTATION_TASK_BREAKDOWN_OVERVIEW.md -->
 # ============================================================
 # IMPLEMENTATION TASK BREAKDOWN OVERVIEW
 # ============================================================
@@ -7234,12 +7567,9 @@ task_group_types:
 recommended_execution_rule:
 - complete one phase meaningfully before opening many unfinished later-phase branches
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120160_IMPLEMENTATION_TASK_BREAKDOWN_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120170_PHASE_01_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120170_PHASE_01_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 01 TASK BREAKDOWN
 # Authority And Base Model
@@ -7293,12 +7623,9 @@ review_tasks:
 phase_completion_focus:
 - authority boundary is visible and stored correctly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120170_PHASE_01_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120180_PHASE_02_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120180_PHASE_02_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 02 TASK BREAKDOWN
 # Front Invoice Core
@@ -7349,12 +7676,9 @@ review_tasks:
 phase_completion_focus:
 - operator can complete basic FRONT_LOCAL invoice operation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120180_PHASE_02_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120190_PHASE_03_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120190_PHASE_03_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 03 TASK BREAKDOWN
 # Manual Payment Confirmation
@@ -7403,12 +7727,9 @@ review_tasks:
 phase_completion_focus:
 - manual payment confirmation is safe and usable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120190_PHASE_03_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120200_PHASE_04_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120200_PHASE_04_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 04 TASK BREAKDOWN
 # Receipt Issuance
@@ -7457,12 +7778,9 @@ review_tasks:
 phase_completion_focus:
 - receipt issuance is reliable and traceable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120200_PHASE_04_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120210_PHASE_05_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120210_PHASE_05_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 05 TASK BREAKDOWN
 # Collection Management
@@ -7511,12 +7829,9 @@ review_tasks:
 phase_completion_focus:
 - overdue and follow-up work are operationally manageable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120210_PHASE_05_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120220_PHASE_06_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120220_PHASE_06_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 06 TASK BREAKDOWN
 # Bank Match Flow
@@ -7565,12 +7880,9 @@ review_tasks:
 phase_completion_focus:
 - bank-linked confirmation is safe before it is convenient
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120220_PHASE_06_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120230_PHASE_07_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120230_PHASE_07_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 07 TASK BREAKDOWN
 # ERP Reflection
@@ -7619,12 +7931,9 @@ review_tasks:
 phase_completion_focus:
 - ERP coexistence works without authority leakage
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120230_PHASE_07_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120240_PHASE_08_TASK_BREAKDOWN.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120240_PHASE_08_TASK_BREAKDOWN.md -->
 # ============================================================
 # PHASE 08 TASK BREAKDOWN
 # Refinement And Operator Optimization
@@ -7672,12 +7981,9 @@ review_tasks:
 phase_completion_focus:
 - application is practical for sustained operational use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120240_PHASE_08_TASK_BREAKDOWN.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120250_BACKEND_FRONTEND_SPLIT_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120250_BACKEND_FRONTEND_SPLIT_NOTE.md -->
 # ============================================================
 # BACKEND FRONTEND SPLIT NOTE
 # ============================================================
@@ -7714,12 +8020,9 @@ cross_team_alignment_rules:
 - frontend must not infer financial truth beyond API payload
 - backend must not rely on UI to enforce authority rules
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120250_BACKEND_FRONTEND_SPLIT_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120260_TEST_STRATEGY_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120260_TEST_STRATEGY_NOTE.md -->
 # ============================================================
 # TEST STRATEGY NOTE
 # ============================================================
@@ -7755,12 +8058,9 @@ recommended_order:
 3. workflow tests
 4. multi-device UI tests
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120260_TEST_STRATEGY_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120270_PHASE_01_IMPLEMENTATION_INSTRUCTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120270_PHASE_01_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 01 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-01 Authority And Base Model
@@ -7969,12 +8269,9 @@ This phase is complete only when the application can safely represent
 invoice identity and authority without semantic leakage.
 Speed is secondary to boundary correctness in this phase.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120270_PHASE_01_IMPLEMENTATION_INSTRUCTION.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120280_PHASE_02_IMPLEMENTATION_INSTRUCTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120280_PHASE_02_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 02 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-02 Front Invoice Core
@@ -8176,12 +8473,9 @@ This phase is complete only when FRONT_LOCAL invoice handling feels real,
 safe, and operationally usable,
 without creating any semantic confusion with ERP authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120280_PHASE_02_IMPLEMENTATION_INSTRUCTION.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120290_PHASE_03_IMPLEMENTATION_INSTRUCTION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120290_PHASE_03_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 03 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-03 Manual Payment Confirmation
@@ -8414,12 +8708,57 @@ financially explicit,
 and auditable enough that it does not create false confidence
 about payment completion.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120290_PHASE_03_IMPLEMENTATION_INSTRUCTION.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120300_INVOICEFLOW_BILLING_CONTROL_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120300_PHASE_04_IMPLEMENTATION_INSTRUCTION.md
+# INVOICEFLOW BILLING CONTROL IMPLEMENTATION GUIDE
 # ============================================================
 
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: billing-control-implementation-guide
+
+purpose:
+Provides the first implementation-oriented guide for the newly
+clarified differentiator in InvoiceFlow.
+
+implementation_priority:
+- Phase A should begin from billing cockpit and settlement visibility,
+  not from generic invoice editing expansion.
+- Financial control should become visible before deeper automation.
+
+recommended_phase_a_entry:
+- fix row families for execution timeline, settlement exception review,
+  and cockpit outputs
+- freeze cockpit and exception-review DTOs
+- separate raw invoice editing from execution readiness aggregation
+- create slice order:
+  - billing cockpit query
+  - settlement exception review query
+  - approval action
+  - downstream finance readiness review
+
+hard_rules:
+- keep raw invoice detail separate from execution rollup state
+- keep approval and exception review separate from raw history
+- do not collapse overdue or settlement blockers into only notes
+- do not bury downstream finance blockers inside generic invoice text
+
+implementation_readiness_signal:
+- once DDL, DTO, stub boundaries, and slice order are frozen,
+  InvoiceFlow can follow the same bundled Phase A pattern used in
+  the previously completed BusinessOS apps.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120300_INVOICEFLOW_BILLING_CONTROL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120300_PHASE_04_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 04 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-04 Receipt Issuance
@@ -8643,12 +8982,106 @@ This phase is complete only when receipt issuance is not merely possible,
 but traceable, linked, and safe enough
 that operators can rely on it without losing payment history meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120300_PHASE_04_IMPLEMENTATION_INSTRUCTION.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120310_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_IMPLEMENTATION_SKELETON.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120310_PHASE_05_IMPLEMENTATION_INSTRUCTION.md
+# INVOICEFLOW PHASE A BILLING EXECUTION TIMELINE IMPLEMENTATION SKELETON
 # ============================================================
 
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-billing-execution-timeline-implementation-skeleton
+
+purpose:
+Defines the first implementation skeleton for InvoiceFlow
+Phase A financial control without starting runtime generation.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- keep raw invoice editing separate from execution rollup state
+- keep audit append separate from review query repositories
+
+recommended_server_modules:
+- api/controller
+- api/dto
+- application/service
+- application/validator
+- application/mapper
+- domain/model
+- domain/port
+- infrastructure/repository
+- infrastructure/audit
+
+phase_a_skeleton_units:
+- BillingCockpitQueryController
+- BillingCockpitQueryService
+- BillingCockpitQueryValidator
+- BillingExecutionTimelineRepository
+- SettlementExceptionReviewController
+- SettlementExceptionReviewService
+- SettlementExceptionReviewValidator
+- SettlementExceptionReviewRepository
+- BillingCockpitSnapshotRepository
+- InvoiceFlowAuditWriter
+
+responsibility_split:
+- controller:
+  - request parsing
+  - auth context handoff
+  - response serialization
+- service:
+  - cockpit assembly
+  - settlement review orchestration
+  - summary message assembly
+- validator:
+  - required field checks
+  - page boundary checks
+  - Phase A scope rejection
+- mapper:
+  - dto to domain mapping
+  - domain to response mapping
+- repository:
+  - persistence and query only
+  - no business branching
+- audit:
+  - append events after relevant review operations when needed
+
+phase_a_build_order:
+- step_01_billing_cockpit_query_path
+- step_02_settlement_exception_review_query_path
+- step_03_add snapshot and audit path
+- step_04_add test baseline
+
+minimum_test_families:
+- billing_cockpit_query_success
+- billing_cockpit_query_validation_failure
+- settlement_exception_review_query_success
+- settlement_exception_review_include_resolved_toggle
+- settlement_exception_review_include_downstream_finance_blockers_toggle
+
+phase_a_exit_ready_definition:
+- DTO names compile against frozen contracts
+- cockpit and exception review boundaries are explicit
+- row-family assumptions align to the DDL additive plan
+- audit append seam is present where needed
+
+explicit_non_scope:
+- no invoice write automation in this document
+- no settlement workflow here
+- no accounting posting execution here
+- no Android client work here
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120310_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120310_PHASE_05_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 05 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-05 Collection Management
@@ -8884,12 +9317,87 @@ not merely visible,
 and when collection history and next actions are reliable enough
 for daily follow-up use.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120310_PHASE_05_IMPLEMENTATION_INSTRUCTION.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120320_INVOICEFLOW_PHASE_A_STUB_FILE_PLAN.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120320_PHASE_06_IMPLEMENTATION_INSTRUCTION.md
+# INVOICEFLOW PHASE A STUB FILE PLAN
 # ============================================================
 
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-stub-file-plan
+
+purpose:
+Defines the implementation-ready stub file boundary for
+InvoiceFlow Phase A financial control.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- no Japanese literals in Java source
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append stays separate
+
+target_package_base:
+- com.lsam.InvoiceFlow
+
+target_server_source_root_example:
+- src/main/java/com/lsam/InvoiceFlow
+
+target_test_source_root_example:
+- src/test/java/com/lsam/InvoiceFlow
+
+phase_a_scope_modules:
+- billing cockpit query
+- settlement exception review query
+- cockpit snapshot and audit bridge
+
+recommended_stub_tree:
+- src/main/java/com/lsam/InvoiceFlow/api/controller/execution/BillingCockpitQueryController.java
+- src/main/java/com/lsam/InvoiceFlow/api/controller/execution/SettlementExceptionReviewQueryController.java
+- src/main/java/com/lsam/InvoiceFlow/api/dto/execution/request/BillingCockpitQueryRequest.java
+- src/main/java/com/lsam/InvoiceFlow/api/dto/execution/request/SettlementExceptionReviewQueryRequest.java
+- src/main/java/com/lsam/InvoiceFlow/api/dto/execution/response/BillingCockpitQueryResponse.java
+- src/main/java/com/lsam/InvoiceFlow/api/dto/execution/response/SettlementExceptionReviewQueryResponse.java
+- src/main/java/com/lsam/InvoiceFlow/api/dto/common/ErrorResponse.java
+- src/main/java/com/lsam/InvoiceFlow/application/service/execution/BillingCockpitQueryService.java
+- src/main/java/com/lsam/InvoiceFlow/application/service/execution/SettlementExceptionReviewQueryService.java
+- src/main/java/com/lsam/InvoiceFlow/application/validator/execution/BillingCockpitQueryValidator.java
+- src/main/java/com/lsam/InvoiceFlow/application/validator/execution/SettlementExceptionReviewQueryValidator.java
+- src/main/java/com/lsam/InvoiceFlow/application/mapper/execution/BillingCockpitQueryMapper.java
+- src/main/java/com/lsam/InvoiceFlow/application/mapper/execution/SettlementExceptionReviewQueryMapper.java
+- src/main/java/com/lsam/InvoiceFlow/domain/model/execution/BillingExecutionTimelineItem.java
+- src/main/java/com/lsam/InvoiceFlow/domain/model/execution/SettlementExceptionReviewItem.java
+- src/main/java/com/lsam/InvoiceFlow/domain/model/execution/BillingCockpitSnapshot.java
+- src/main/java/com/lsam/InvoiceFlow/domain/port/execution/BillingExecutionTimelineRepository.java
+- src/main/java/com/lsam/InvoiceFlow/domain/port/execution/SettlementExceptionReviewRepository.java
+- src/main/java/com/lsam/InvoiceFlow/domain/port/execution/BillingCockpitSnapshotRepository.java
+- src/main/java/com/lsam/InvoiceFlow/domain/port/execution/InvoiceFlowAuditPort.java
+- src/main/java/com/lsam/InvoiceFlow/infrastructure/repository/execution/JdbcBillingExecutionTimelineRepository.java
+- src/main/java/com/lsam/InvoiceFlow/infrastructure/repository/execution/JdbcSettlementExceptionReviewRepository.java
+- src/main/java/com/lsam/InvoiceFlow/infrastructure/repository/execution/JdbcBillingCockpitSnapshotRepository.java
+- src/main/java/com/lsam/InvoiceFlow/infrastructure/audit/execution/DatabaseInvoiceFlowAuditAdapter.java
+- src/main/java/com/lsam/InvoiceFlow/config/execution/InvoiceFlowPhaseAConfig.java
+- src/test/java/com/lsam/InvoiceFlow/application/service/execution/BillingCockpitQueryServiceTest.java
+- src/test/java/com/lsam/InvoiceFlow/application/service/execution/SettlementExceptionReviewQueryServiceTest.java
+
+alignment_requirements:
+- DTO field names must follow the Phase A API DTO freeze
+- row-family assumptions must follow the DDL additive plan
+- cockpit and exception review responses must remain aligned to their fixed payload families
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120320_INVOICEFLOW_PHASE_A_STUB_FILE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120320_PHASE_06_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 06 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-06 Bank Match Flow
@@ -9126,12 +9634,73 @@ This phase is complete only when bank-linked confirmation is operationally usefu
 without pretending that uncertainty has been resolved.
 Ambiguity must remain visible and block finalization until reviewed.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120320_PHASE_06_IMPLEMENTATION_INSTRUCTION.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120330_INVOICEFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120330_PHASE_07_IMPLEMENTATION_INSTRUCTION.md
+# INVOICEFLOW PHASE A MODULE TASK BREAKDOWN
 # ============================================================
 
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-module-task-breakdown
+
+purpose:
+Breaks the InvoiceFlow Phase A stub plan into module-by-module
+execution tasks.
+
+baseline_dependencies:
+- Phase A billing execution timeline DDL additive plan
+- Phase A API starter
+- Phase A API DTO field freeze
+- Phase A implementation skeleton
+
+recommended_execution_order:
+- module_01_request_response_dto
+- module_02_validators
+- module_03_billing_cockpit_query
+- module_04_settlement_exception_review_query
+- module_05_snapshot_and_audit_bridge
+- module_06_configuration
+- module_07_tests
+
+module_01_request_response_dto:
+  goal:
+    - create exact request and response DTO classes
+
+module_02_validators:
+  goal:
+    - reject invalid request shapes before service entry
+
+module_03_billing_cockpit_query:
+  goal:
+    - assemble pending approvals, settlement blockers, and downstream finance visibility
+
+module_04_settlement_exception_review_query:
+  goal:
+    - expose settlement and downstream blocker review rows
+
+module_05_snapshot_and_audit_bridge:
+  goal:
+    - define optional snapshot persistence and audit append boundary
+
+module_06_configuration:
+  goal:
+    - provide minimum wiring boundary
+
+module_07_tests:
+  goal:
+    - establish minimum Phase A test safety net
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120330_INVOICEFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120330_PHASE_07_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 07 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-07 ERP Reflection
@@ -9353,12 +9922,57 @@ This phase is complete only when ERP coexistence is real,
 safe, and explicit,
 without allowing InvoiceFlow to pretend it owns ERP master authority.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120330_PHASE_07_IMPLEMENTATION_INSTRUCTION.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120340_INVOICEFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120340_PHASE_08_IMPLEMENTATION_INSTRUCTION.md
+# INVOICEFLOW PHASE A EXACT STUB CONTENT ORDER PLAN
 # ============================================================
 
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-exact-stub-content-order-plan
+
+purpose:
+Defines the exact file content writing order for InvoiceFlow
+Phase A stub generation.
+
+content_order_strategy:
+- start from dependency-light files
+- lock contracts first
+- write ports before adapters
+- write tests after service boundaries are clear
+
+first_slice_recommended_start:
+- ErrorResponse
+- BillingCockpitQueryRequest
+- BillingCockpitQueryResponse
+- BillingCockpitQueryValidator
+- BillingExecutionTimelineItem
+- BillingExecutionTimelineRepository
+- BillingCockpitQueryMapper
+- BillingCockpitQueryService
+- BillingCockpitQueryController
+- JdbcBillingExecutionTimelineRepository
+- DatabaseInvoiceFlowAuditAdapter
+- InvoiceFlowPhaseAConfig
+- BillingCockpitQueryServiceTest
+
+why_this_order:
+- starts from contract-first
+- keeps the first compile graph shallow
+- enables the cockpit query as the narrowest first vertical slice
+- delays exception review query until cockpit boundaries are stable
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120340_INVOICEFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120340_PHASE_08_IMPLEMENTATION_INSTRUCTION.md -->
 # ============================================================
 # PHASE 08 IMPLEMENTATION INSTRUCTION
 # IF-PHASE-08 Refinement And Operator Optimization
@@ -9559,12 +10173,203 @@ handoff_statement:
 This phase is complete only when InvoiceFlow feels practical for repeated daily use
 without sacrificing the explicitness and safety established in earlier phases.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120340_PHASE_08_IMPLEMENTATION_INSTRUCTION.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120350_INVOICEFLOW_PHASE_A_SLICE_COMMAND_PACKS.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION.md
+# INVOICEFLOW PHASE A SLICE COMMAND PACKS
 # ============================================================
 
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-command-packs
+
+purpose:
+Fixes the Termux-oriented stub generation packs for the InvoiceFlow
+Phase A vertical slices.
+
+execution_policy:
+- design fixation only in this step
+- actual execution is later
+- Termux one-block style
+- mkdir -p plus cat standard
+- package base is com.lsam.InvoiceFlow
+- no Japanese literals in Java source
+- additive only
+
+slice_01_billing_cockpit_query:
+  default_safe_output_root:
+    - $HOME/.tmp/invoiceflow-phase-a-slice01
+
+slice_02_settlement_exception_review_query:
+  default_safe_output_root:
+    - $HOME/.tmp/invoiceflow-phase-a-slice02
+
+slice_03_snapshot_and_audit_bridge:
+  default_safe_output_root:
+    - $HOME/.tmp/invoiceflow-phase-a-slice03
+
+note:
+- actual stub generation should follow the fixed stub file plan and content order plan
+- command packs remain the only sequence authority during later execution
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120350_INVOICEFLOW_PHASE_A_SLICE_COMMAND_PACKS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120360_INVOICEFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+# ============================================================
+# INVOICEFLOW PHASE A SLICE FIELD FILL PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-field-fill-plan
+
+purpose:
+Defines what each Phase A slice should contain once empty stubs move
+into field-filled implementation-ready stubs.
+
+global_rules:
+- exact field names follow the DTO freeze exactly
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append remains separate
+- no Japanese literals in Java source
+
+slice_01_billing_cockpit_query:
+  expected_fill:
+    - request, response, validator, mapper, service, controller, repository, audit, config, tests
+
+slice_02_settlement_exception_review_query:
+  expected_fill:
+    - request, response, validator, mapper, service, controller, repository, tests
+
+slice_03_snapshot_and_audit_bridge:
+  expected_fill:
+    - snapshot model, snapshot repository, audit port, snapshot adapter, audit adapter
+
+done_definition:
+- all slice seams are fixed
+- DTO and row-family alignment is explicit
+- tests are named before runtime generation begins
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120360_INVOICEFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120370_INVOICEFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+# ============================================================
+# INVOICEFLOW PHASE A IMPLEMENTATION READY COMPLETION MEMO
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-implementation-ready-completion
+
+purpose:
+Declares that InvoiceFlow Phase A planning has reached
+implementation-ready status without starting real runtime generation.
+
+completion_basis:
+- competitive positioning note added
+- billing collection control architecture added
+- settlement exception receivable architecture added
+- billing execution timeline model added
+- billing cockpit and settlement exception exact payloads added
+- billing cockpit interface added
+- billing control implementation guide added
+- Phase A DDL additive plan added
+- Phase A API starter added
+- Phase A DTO field freeze added
+- Phase A implementation skeleton added
+- stub file plan added
+- module task breakdown added
+- exact stub content order plan added
+- slice command packs added
+- slice field-fill plan added
+
+implementation_ready_definition_met:
+- the design no longer depends on unresolved major architecture questions
+- the remaining work is fill-in and generation, not rediscovery
+- slice-by-slice execution order is fixed
+- DTO and row-family drift is constrained
+- audit separation remains explicit
+
+conclusion:
+- InvoiceFlow Phase A is implementation-ready at the design level.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120370_INVOICEFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120380_INVOICEFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+# ============================================================
+# INVOICEFLOW PHASE A EXECUTION ENTRY PROTOCOL
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: InvoiceFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-execution-entry-protocol
+
+purpose:
+Defines the exact protocol to follow when the project later moves
+from planning artifacts into actual stub generation or SQL execution.
+
+entry_principles:
+- do not begin from slice_03
+- do not generate all files at once without slice order
+- do not execute SQL before review
+- keep additive only
+- keep command packs as the sole sequence authority
+- do not reopen already frozen DTO names casually
+
+execution_start_order:
+- step_01:
+  - execute slice_01 command pack into a safe output root
+- step_02:
+  - fill slice_01 contents according to the field-fill plan
+- step_03:
+  - review compile surface and naming consistency
+- step_04:
+  - execute slice_02 command pack
+- step_05:
+  - fill slice_02 contents according to the field-fill plan
+- step_06:
+  - review cockpit-to-exception-review seam
+- step_07:
+  - execute slice_03 command pack
+- step_08:
+  - fill slice_03 contents according to the field-fill plan
+- step_09:
+  - review snapshot and audit seams
+- step_10:
+  - only after design-to-code review, prepare SQL apply pack
+- step_11:
+  - only after review, execute additive SQL in controlled order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120380_INVOICEFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION.md -->
 # ============================================================
 # INVOICE FLOW IMPLEMENTATION
 # ============================================================
@@ -9583,12 +10388,9 @@ implementation_priorities:
 - receipt issuance fourth
 - ERP reflection boundary fifth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION_INDEX.md -->
 # ============================================================
 # INVOICE FLOW IMPLEMENTATION INDEX
 # ============================================================
@@ -9629,12 +10431,27 @@ files:
 - 120330_PHASE_07_IMPLEMENTATION_INSTRUCTION.md
 - 120340_PHASE_08_IMPLEMENTATION_INSTRUCTION.md
 
+- 120300_INVOICEFLOW_BILLING_CONTROL_IMPLEMENTATION_GUIDE.md
 
+- 120310_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_IMPLEMENTATION_SKELETON.md
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION_OVERVIEW.md
-# ============================================================
+- 120320_INVOICEFLOW_PHASE_A_STUB_FILE_PLAN.md
 
+- 120330_INVOICEFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120340_INVOICEFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120350_INVOICEFLOW_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120360_INVOICEFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120370_INVOICEFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120380_INVOICEFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW IMPLEMENTATION OVERVIEW
 # ============================================================
@@ -9652,12 +10469,9 @@ payment confirmation route clarity,
 collection auditability,
 and receipt traceability.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/120.implementation/120_INVOICE_FLOW_IMPLEMENTATION_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT.md -->
 # ============================================================
 # INVOICE FLOW DEVELOPMENT
 # ============================================================
@@ -9677,12 +10491,9 @@ recommended_order:
 5. integration contract fixation
 6. implementation planning
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT_INDEX.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT_INDEX.md -->
 # ============================================================
 # INVOICE FLOW DEVELOPMENT INDEX
 # ============================================================
@@ -9699,12 +10510,9 @@ files:
 - 130_INVOICE_FLOW_DEVELOPMENT_INDEX.md
 - 130_INVOICE_FLOW_DEVELOPMENT.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT_INDEX.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT_OVERVIEW.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW DEVELOPMENT OVERVIEW
 # ============================================================
@@ -9723,12 +10531,9 @@ to interface
 to runtime/flow
 to integration finalization.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/130.development/130_INVOICE_FLOW_DEVELOPMENT_OVERVIEW.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900010_COMPETITOR_COMPARISON_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900010_COMPETITOR_COMPARISON_NOTE.md -->
 # ============================================================
 # COMPETITOR COMPARISON NOTE
 # ============================================================
@@ -9764,12 +10569,9 @@ must_not_lose:
 - ease of receipt issuance after payment confirmation
 - visibility of overdue and priority collection work
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900010_COMPETITOR_COMPARISON_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900020_OPEN_ISSUE_LEDGER.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900020_OPEN_ISSUE_LEDGER.md -->
 # ============================================================
 # OPEN ISSUE LEDGER
 # ============================================================
@@ -9797,12 +10599,9 @@ There are no remaining open issues that block design completion.
 Any later changes should be treated as change requests,
 not unresolved design gaps.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900020_OPEN_ISSUE_LEDGER.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900030_DECISION_REQUIRED_LEDGER.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900030_DECISION_REQUIRED_LEDGER.md -->
 # ============================================================
 # DECISION REQUIRED LEDGER
 # ============================================================
@@ -9824,12 +10623,9 @@ interpretation:
 Core and minor business decisions are fixed.
 Further changes are treated as future revision requests.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900030_DECISION_REQUIRED_LEDGER.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900040_DESIGN_COMPLETION_CHECKLIST.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900040_DESIGN_COMPLETION_CHECKLIST.md -->
 # ============================================================
 # DESIGN COMPLETION CHECKLIST
 # ============================================================
@@ -9911,12 +10707,9 @@ InvoiceFlow design may be treated as substantially complete
 when all major design bundles are fixed and remaining items
 are limited to explicit business decisions rather than missing structure.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900040_DESIGN_COMPLETION_CHECKLIST.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900050_DESIGN_CLOSURE_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900050_DESIGN_CLOSURE_NOTE.md -->
 # ============================================================
 # DESIGN CLOSURE NOTE
 # ============================================================
@@ -9962,12 +10755,9 @@ recommended_next_use:
 - use as approval package
 - use as integrated reading source
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900050_DESIGN_CLOSURE_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900060_REVIEW_REQUEST_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900060_REVIEW_REQUEST_NOTE.md -->
 # ============================================================
 # REVIEW REQUEST NOTE
 # ============================================================
@@ -10000,12 +10790,9 @@ recommended_review_order:
 4. api and db exact consistency
 5. implementation roadmap feasibility
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900060_REVIEW_REQUEST_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900070_IMPLEMENTATION_HANDOFF_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900070_IMPLEMENTATION_HANDOFF_NOTE.md -->
 # ============================================================
 # IMPLEMENTATION HANDOFF NOTE
 # ============================================================
@@ -10047,12 +10834,9 @@ implementation_guardrails:
 - do not hide overdue/priority state in UI
 - do not bypass audit for elevated actions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900070_IMPLEMENTATION_HANDOFF_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900080_OUT_OF_SCOPE_LEDGER.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900080_OUT_OF_SCOPE_LEDGER.md -->
 # ============================================================
 # OUT OF SCOPE LEDGER
 # ============================================================
@@ -10082,12 +10866,9 @@ If a requirement contradicts the current authority boundary,
 it must be treated as a scope review item,
 not as an implementation shortcut.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900080_OUT_OF_SCOPE_LEDGER.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900090_FINAL_REVIEW_CHECKPOINTS.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900090_FINAL_REVIEW_CHECKPOINTS.md -->
 # ============================================================
 # FINAL REVIEW CHECKPOINTS
 # ============================================================
@@ -10120,12 +10901,9 @@ remaining work is decision/approval refinement
 or direct implementation,
 not missing design structure.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900090_FINAL_REVIEW_CHECKPOINTS.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900100_DESIGN_COMPLETION_DECLARATION.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900100_DESIGN_COMPLETION_DECLARATION.md -->
 # ============================================================
 # DESIGN COMPLETION DECLARATION
 # ============================================================
@@ -10159,12 +10937,9 @@ recommended_usage:
 - integrated reading
 - final architecture baseline
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900100_DESIGN_COMPLETION_DECLARATION.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900110_MASTER_RESTART_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900110_MASTER_RESTART_NOTE.md -->
 # ============================================================
 # MASTER RESTART NOTE
 # ============================================================
@@ -10194,12 +10969,9 @@ restart_focus:
 - confirm implementation phase target
 - proceed without reopening settled authority boundaries
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900110_MASTER_RESTART_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900120_FINAL_DESIGN_SUMMARY.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900120_FINAL_DESIGN_SUMMARY.md -->
 # ============================================================
 # FINAL DESIGN SUMMARY
 # ============================================================
@@ -10253,12 +11025,9 @@ Design is substantially complete for implementation handoff.
 Remaining items are explicit business decisions or tenant policy choices,
 not missing structural design.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900120_FINAL_DESIGN_SUMMARY.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900130_READING_ORDER_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900130_READING_ORDER_NOTE.md -->
 # ============================================================
 # READING ORDER NOTE
 # ============================================================
@@ -10310,12 +11079,9 @@ reading_orders:
   order:
   - 00_INVOICE_FLOW_INTEGRATED.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900130_READING_ORDER_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900140_IMPLEMENTATION_START_PACKAGE_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900140_IMPLEMENTATION_START_PACKAGE_NOTE.md -->
 # ============================================================
 # IMPLEMENTATION START PACKAGE NOTE
 # ============================================================
@@ -10352,12 +11118,9 @@ implementation_start_package:
 note:
 This package is enough to begin implementation without reopening major design meaning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900140_IMPLEMENTATION_START_PACKAGE_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900150_FORMAL_COMPLETION_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900150_FORMAL_COMPLETION_NOTE.md -->
 # ============================================================
 # FORMAL COMPLETION NOTE
 # ============================================================
@@ -10392,12 +11155,9 @@ not_included_in_completion_meaning:
 - all tenant-specific policies are finalized
 - implementation has started
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900150_FORMAL_COMPLETION_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900160_NEXT_STAGE_OPTIONS_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900160_NEXT_STAGE_OPTIONS_NOTE.md -->
 # ============================================================
 # NEXT STAGE OPTIONS NOTE
 # ============================================================
@@ -10425,12 +11185,9 @@ recommendation:
 The strongest next step is implementation-oriented task splitting
 based on IF-PHASE-01 through IF-PHASE-08.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900160_NEXT_STAGE_OPTIONS_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900170_IMPLEMENTATION_READY_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900170_IMPLEMENTATION_READY_NOTE.md -->
 # ============================================================
 # IMPLEMENTATION READY NOTE
 # ============================================================
@@ -10463,12 +11220,9 @@ recommended_next_action:
 Begin actual implementation execution from IF-PHASE-01
 and use later phase instruction files as the execution queue.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900170_IMPLEMENTATION_READY_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900180_IMPLEMENTATION_HANDOFF_PACKAGE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900180_IMPLEMENTATION_HANDOFF_PACKAGE.md -->
 # ============================================================
 # IMPLEMENTATION HANDOFF PACKAGE
 # ============================================================
@@ -10627,12 +11381,9 @@ without reopening core design structure.
 Remaining uncertainty is mostly business decision selection,
 not missing architecture.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900180_IMPLEMENTATION_HANDOFF_PACKAGE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900190_APPROVED_DECISION_REFLECTION_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900190_APPROVED_DECISION_REFLECTION_NOTE.md -->
 # ============================================================
 # APPROVED DECISION REFLECTION NOTE
 # ============================================================
@@ -10664,12 +11415,9 @@ interpretation:
 InvoiceFlow now has fewer unresolved business choices.
 The remaining uncertainty level is no longer structural.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900190_APPROVED_DECISION_REFLECTION_NOTE.md -->
 
-
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900200_FINAL_DECISION_CLOSURE_NOTE.md
-# ============================================================
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900200_FINAL_DECISION_CLOSURE_NOTE.md -->
 # ============================================================
 # FINAL DECISION CLOSURE NOTE
 # ============================================================
@@ -10700,12 +11448,269 @@ closure_interpretation:
 InvoiceFlow no longer has meaningful unresolved design decisions.
 It may be treated as fully design-complete for implementation handoff.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900200_FINAL_DECISION_CLOSURE_NOTE.md -->
 
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900410_INVOICEFLOW_20260416_DIFF_AUDIT_NOTE.md -->
 # ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900_INVOICE_FLOW_META_INDEX.md
+# INVOICEFLOW 20260416 DIFF AUDIT NOTE
 # ============================================================
 
+status: canonical
+layer: meta
+system: applications
+application: InvoiceFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: diff-audit-note
+
+purpose:
+Records the first differential reinforcement bundle applied to the
+existing InvoiceFlow design.
+
+preserved_core:
+- invoice and billing operation identity
+- existing business flow role
+- existing architecture layers
+- existing ERP and adjacent financial flow direction
+- existing platform direction
+
+added_in_this_bundle:
+- competitive positioning note
+- billing collection control architecture
+- settlement exception receivable architecture
+- billing execution timeline model
+- billing cockpit exact payload
+- settlement exception review exact payload
+- billing cockpit interface note
+- billing control implementation guide
+
+why_this_bundle:
+- existing InvoiceFlow design already had strong invoice handling
+- what was less explicit was the lifecycle-control layer above raw billing processing
+- this bundle makes the app more implementation-ready without rewriting its base
+
+recommended_next_step:
+- proceed to Phase A entry documents for execution timeline, DDL, DTO freeze,
+  and slice-based execution planning
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900410_INVOICEFLOW_20260416_DIFF_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900420_INVOICEFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+# ============================================================
+# INVOICEFLOW 20260416 BUNDLE02 PHASE A AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: InvoiceFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle02-phase-a-audit
+
+purpose:
+Records the second reinforcement bundle applied to InvoiceFlow,
+covering Phase A entry documents and exact implementation-start
+boundaries.
+
+bundle02_contents:
+- 020.architecture/021140_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_DDL_ADDITIVE_PLAN.md
+- 060.integration/060320_INVOICEFLOW_PHASE_A_API_STARTER.md
+- 060.integration/060330_INVOICEFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md
+- 120.implementation/120310_INVOICEFLOW_PHASE_A_BILLING_EXECUTION_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+result:
+- Phase A DDL direction fixed
+- Phase A endpoint set fixed
+- API DTO field set frozen
+- implementation skeleton fixed
+- InvoiceFlow now has the same kind of Phase A entry footing
+  that made the previous apps easier to continue in bundled form
+
+recommended_next_step:
+- proceed to bundle_03 for stub file plan, module task breakdown, and content order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900420_INVOICEFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900430_INVOICEFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+# ============================================================
+# INVOICEFLOW 20260416 BUNDLE03 STUB AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: InvoiceFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle03-stub-audit
+
+purpose:
+Records the third reinforcement bundle applied to InvoiceFlow,
+covering the stub planning boundary for Phase A.
+
+bundle03_contents:
+- 120.implementation/120320_INVOICEFLOW_PHASE_A_STUB_FILE_PLAN.md
+- 120.implementation/120330_INVOICEFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md
+- 120.implementation/120340_INVOICEFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+result:
+- stub file boundary fixed
+- module task order fixed
+- exact stub content order fixed
+- InvoiceFlow now has a bundled Phase A planning posture
+  similar to the previously completed apps before command-pack generation
+
+recommended_next_step:
+- proceed to bundle_04 for command packs, field-fill plans, and closure
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900430_INVOICEFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900440_INVOICEFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+# ============================================================
+# INVOICEFLOW 20260416 BUNDLE04 CLOSEOUT AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: InvoiceFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle04-closeout-audit
+
+purpose:
+Records the fourth reinforcement bundle applied to InvoiceFlow,
+closing the Phase A planning layer at an implementation-ready state.
+
+bundle04_contents:
+- 120.implementation/120350_INVOICEFLOW_PHASE_A_SLICE_COMMAND_PACKS.md
+- 120.implementation/120360_INVOICEFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+- 120.implementation/120370_INVOICEFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+- 120.implementation/120380_INVOICEFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+result:
+- slice command packs fixed
+- field-fill plan fixed
+- implementation-ready completion declared
+- execution entry protocol fixed
+- InvoiceFlow planning can stop here cleanly unless execution begins or contradiction appears
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900440_INVOICEFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900450_INVOICEFLOW_NEXT_APP_TRANSITION_HANDOFF.md -->
+# ============================================================
+# INVOICEFLOW NEXT APP TRANSITION HANDOFF
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: InvoiceFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: next-app-transition-handoff
+
+purpose:
+Closes the current InvoiceFlow planning stream cleanly and makes it
+easy to move to the next BusinessOS application without reopening
+already-settled InvoiceFlow planning questions.
+
+current_status_summary:
+- differential reinforcement completed
+- bundle_01 completed
+- bundle_02 Phase A entry completed
+- bundle_03 stub planning completed
+- bundle_04 closeout completed
+- implementation-ready completion memo completed
+- execution entry protocol completed
+
+handoff_statement:
+- InvoiceFlow can now be treated as planning-closed and
+  next-app-transition-ready.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900450_INVOICEFLOW_NEXT_APP_TRANSITION_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900460_INVOICEFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+# ============================================================
+# INVOICEFLOW REUSABLE PHASEA REINFORCEMENT RECIPE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: InvoiceFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: reusable-phasea-reinforcement-recipe
+
+purpose:
+Captures the reusable reinforcement recipe proven during the
+InvoiceFlow planning work so the next BusinessOS app can be
+advanced faster and with fewer unnecessary micro-iterations.
+
+default_bundle_strategy_for_next_app:
+- bundle_01:
+  - diff reinforcement plus audit
+- bundle_02:
+  - Phase A entry plus DDL plus DTO freeze
+- bundle_03:
+  - stub plan plus module tasks plus content order
+- bundle_04:
+  - command packs plus field-fill plans plus closure
+
+success_definition_for_next_app:
+- the next app reaches implementation-ready planning state
+- the BusinessOS ledger reflects the new status
+- the app can move to execution later without rediscovering core design intent
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900460_INVOICEFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900470_INVOICEFLOW_PLANNING_STOP_RULE_NOTE.md -->
+# ============================================================
+# INVOICEFLOW PLANNING STOP RULE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: InvoiceFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: planning-stop-rule-note
+
+purpose:
+Defines the stop rule for the InvoiceFlow planning layer so that
+the project does not continue adding design documents without need.
+
+default_stop_rule:
+- stop adding planning artifacts once implementation-ready status,
+  execution entry protocol, and transition handoff are all present
+
+default_action_after_stop_rule:
+- either begin actual generation using the execution entry protocol
+- or move to the next BusinessOS application
+
+closure_statement:
+- InvoiceFlow planning should now be considered complete by default.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900470_INVOICEFLOW_PLANNING_STOP_RULE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900_INVOICE_FLOW_META_INDEX.md -->
 # ============================================================
 # INVOICE FLOW META INDEX
 # ============================================================
@@ -10741,12 +11746,23 @@ files:
 - 900190_APPROVED_DECISION_REFLECTION_NOTE.md
 - 900200_FINAL_DECISION_CLOSURE_NOTE.md
 
+- 900410_INVOICEFLOW_20260416_DIFF_AUDIT_NOTE.md
 
+- 900420_INVOICEFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
 
-# ============================================================
-# SOURCE: /data/data/com.termux/files/home/01.civilization-system/07.applications/InvoiceFlow/900.meta/900_INVOICE_FLOW_META_OVERVIEW.md
-# ============================================================
+- 900430_INVOICEFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
 
+- 900440_INVOICEFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900450_INVOICEFLOW_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900460_INVOICEFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900470_INVOICEFLOW_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900_INVOICE_FLOW_META_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900_INVOICE_FLOW_META_OVERVIEW.md -->
 # ============================================================
 # INVOICE FLOW META OVERVIEW
 # ============================================================
@@ -10763,3 +11779,4 @@ Meta layer stores checks,
 review notes,
 and future validation artifacts for InvoiceFlow.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/InvoiceFlow/900.meta/900_INVOICE_FLOW_META_OVERVIEW.md -->

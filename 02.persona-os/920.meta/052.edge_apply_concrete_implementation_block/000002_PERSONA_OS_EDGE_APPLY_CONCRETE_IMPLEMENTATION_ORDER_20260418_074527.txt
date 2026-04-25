@@ -1,0 +1,8 @@
+STEP_1=confirm edge_apply base doc and exact sections
+STEP_2=lock request field names and response field names
+STEP_3=lock validation order and dedupe order
+STEP_4=lock canonical apply handoff contract
+STEP_5=lock retry and dead-letter decision criteria
+STEP_6=lock audit evidence write order
+STEP_7=lock boundary and error enforcement behavior
+STEP_8=approve concrete implementation block for code generation

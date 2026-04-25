@@ -1,0 +1,15 @@
+============================================================
+PKG-AIW-010 RESTRICTED BOUNDARY SMOKE
+============================================================
+         flow_code         | result_code |             note_text             
+---------------------------+-------------+-----------------------------------
+ RESTRICTED_BOUNDARY_SMOKE | PASS        | Restricted boundary checks passed
+(1 row)
+
+------------------------------------------------------------
+LATEST RESTRICTED / PRIVILEGED SMOKE VIEW
+PRIVILEGED_CONTEXT_SMOKE|PASS|OK_APPLIED
+RESTRICTED_BOUNDARY_SMOKE|PASS|Restricted boundary checks passed
+============================================================
+PKG-AIW-010 RESTRICTED BOUNDARY SMOKE FINISHED
+============================================================

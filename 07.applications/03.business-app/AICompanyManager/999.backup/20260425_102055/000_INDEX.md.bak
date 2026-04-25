@@ -1,0 +1,74 @@
+# ============================================================
+# AICompanyManager INDEX
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase B
+status: exact-design-created
+owner: Boss
+prepared_by: Zero
+
+## 1. Purpose
+
+AICompanyManager is a business-app for operating an AI company from a human-facing application.
+
+Human gives policy to President.
+President creates business plan.
+Manager breaks it into domains and actions.
+Leader breaks actions into deliverables and tasks.
+Worker executes tasks and creates outputs.
+Leader reviews and integrates.
+Manager reviews.
+President performs final review.
+Human approves and receives delivery.
+
+## 2. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 3. Design Documents
+
+| order | file | purpose |
+|---:|---|---|
+| 000 | 000_INDEX.md | index |
+| 001 | 001_OVERVIEW.md | overview |
+| 010 | 010_APP_SKELETON_DESIGN.md | app skeleton |
+| 020 | 020_BUSINESS_FLOW_CANON.md | business flow canon |
+| 030 | 030_REVIEW_RETURN_FLOW_CANON.md | review / return canon |
+| 040 | 040_DELIVERY_APPROVAL_FLOW_CANON.md | delivery / approval canon |
+| 050 | 050_ROLE_OPERATION_MODEL.md | role operation model |
+| 060 | 060_DATA_BOUNDARY_AND_INTEGRATION.md | boundary and integration |
+| 070 | 070_COMMONOS_UI_AND_QUEUE_POLICY.md | CommonOS policy |
+| 080 | 080_PHASE_A_COMPLETION_REPORT.md | Phase A report |
+| 090 | 090_PHASE_B_ROADMAP.md | Phase B roadmap |
+| 100 | 100_DB_EXACT_DESIGN.md | DB exact design |
+| 110 | 110_API_BRIDGE_EXACT_PAYLOAD.md | API / bridge payload |
+| 120 | 120_STATE_ENUM_CANON.md | state enum canon |
+| 130 | 130_LOCAL_QUEUE_EXACT_PAYLOAD.md | local queue payload |
+| 140 | 140_AUDIT_AND_HISTORY_MODEL.md | audit / history model |
+| 150 | 150_ERROR_RETRY_CONFLICT_POLICY.md | error / retry / conflict policy |
+| 160 | 160_PHASE_B_COMPLETION_REPORT.md | Phase B report |
+| 00 | 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | integrated design |
+
+## 4. Current Completion
+
+Phase A:
+- app skeleton completed
+
+Phase B:
+- DB / API / State exact design completed
+
+## 5. Next Phase
+
+Phase C:
+- DB DDL Design Review Package
+- Sato DB review
+- additive-only migration design
+- DB apply only after explicit GO

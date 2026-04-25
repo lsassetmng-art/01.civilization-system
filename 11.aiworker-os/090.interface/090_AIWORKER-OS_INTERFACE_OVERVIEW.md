@@ -1,0 +1,21 @@
+# ============================================================
+# AIWORKER OS INTERFACE OVERVIEW
+# ============================================================
+
+status: overview
+system: AiworkerOS
+layer: 090.interface
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines exact command, draft, staging, intake, event, payload, and replay interfaces.
+
+current_scope:
+- 0900001_AIWORKER_OS_EVENT_AND_COMMAND_INTERFACE.md
+- 0900101_AIWORKER_EVENT_COMMAND_INTERFACE_EXACT_CATALOG.md
+- 0900102_AIWORKER_CONTROLLED_FUNCTION_INPUT_OUTPUT_INTERFACE_EXACT.md
+- 0900103_AIWORKER_COMMAND_AND_DRAFT_PAYLOAD_JSON_CONTRACT_EXACT.md
+- 0900104_AIWORKER_STAGING_AND_OFFICIAL_INTAKE_PAYLOAD_JSON_CONTRACT_EXACT.md
+- 0900105_AIWORKER_RESULT_EVENT_PAYLOAD_JSON_CONTRACT_EXACT.md
+- 0900106_AIWORKER_REPLAY_DECISION_INPUT_OUTPUT_INTERFACE_EXACT.md

@@ -1,0 +1,27 @@
+# COMMON OS DEVELOPMENT OVERVIEW
+
+status: canonical
+layer: development
+
+## Purpose
+This layer defines how CommonOS changes are proposed, reviewed, adopted, and introduced.
+
+## Scope
+- workflow
+- adoption review
+- change introduction policy
+
+## Application common component development subsystem overview
+
+### Position
+The architecture layer decides what belongs in canon. The implementation layer decides what gets built. The development layer decides how adoption review, wave promotion, rollout order, and origin evidence intake are operationally governed.
+
+### Scope
+- adoption review gate
+- wave promotion conditions
+- rollout sequencing
+- origin evidence intake discipline
+- rejection and hold handling
+
+### Operational meaning
+A component can be canonical without being implemented. Development policy governs when it moves from accepted design to active rollout.

@@ -2,32 +2,52 @@
 # STREAMWATCH FOLLOW AND NOTIFICATION RUNTIME
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: runtime
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines runtime behavior around follow toggles, live notifications, and viewer-facing notification refresh.
+This document defines runtime behavior around follow state, follow-driven notification preference, and viewer notification refresh.
 
-## 2. Fixed Inputs
+## 2. Follow Runtime
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+A follow change may target:
 
-## 3. Design Direction
+- channel
+- creator
+- broadcaster
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+Follow and notification preference must remain related but separate.
 
-## 4. Current Status
+## 3. Runtime Fields of Interest
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+The runtime needs to distinguish:
+
+- follow_active_flag
+- notification_enabled_flag
+
+This allows:
+- follow without notification
+- follow with notification
+
+## 4. Notification Runtime
+
+Notification runtime should support:
+
+- waiting-room notify toggle
+- follow-surface quick changes
+- home-surface unread awareness
+- notification list refresh
+- notification read-state transitions
+
+## 5. Final Runtime Rule
+
+Follow is a relationship state.
+Notification is a delivery preference state.
+They should not be collapsed into one flag.

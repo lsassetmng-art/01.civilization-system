@@ -1,0 +1,8 @@
+# 0800600000_PERSONA_BUILDER_POLICY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 080.policy/060.builder/080.policy/060.builder
+
+- 0800600001_PERSONA_BUILDER_POLICY_OVERVIEW.md
+- 0800600002_PERSONA_BUILDER_DRAFT_POLICY.md

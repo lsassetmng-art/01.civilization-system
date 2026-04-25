@@ -1,0 +1,20 @@
+217959:# AIWorkerOS Model Append: MEGAMI NORN Three Sisters Body Profile
+217973:- MG-NORN-001 / ウルズ
+217974:- MG-NORN-002 / ヴェルザンディ
+217975:- MG-NORN-003 / スクルド
+217988:- height_cm >= 185
+217995:### MG-NORN-001 / ウルズ
+218002:### MG-NORN-002 / ヴェルザンディ
+218009:### MG-NORN-003 / スクルド
+218072:### MG-NORN-001 / ウルズ
+218087:### MG-NORN-002 / ヴェルザンディ
+218103:### MG-NORN-003 / スクルド
+219794:# AIWorkerOS Integration Append: MEGAMI NORN Three Sisters Body Profile Reference Surface
+219808:- aiworker.vw_megami_norn_three_sisters_appearance_profile_v1
+219809:- aiworker.vw_app_megami_norn_three_sisters_lineup_with_body_v1
+219815:- aiworker.vw_megami_norn_three_sisters_appearance_profile_v1
+219819:- aiworker.vw_app_megami_norn_three_sisters_lineup_with_body_v1
+220653:# AIWorkerOS Policy Append: MEGAMI NORN Three Sisters Body Profile
+220665:- MG-NORN-001 / ウルズ
+220666:- MG-NORN-002 / ヴェルザンディ
+220667:- MG-NORN-003 / スクルド

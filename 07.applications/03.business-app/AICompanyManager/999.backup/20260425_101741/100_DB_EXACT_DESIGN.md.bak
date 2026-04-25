@@ -1,0 +1,353 @@
+# ============================================================
+# AICompanyManager DB Exact Design
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase B
+status: db-exact-design-fixed
+
+## 1. Purpose
+
+本書は AICompanyManager の BusinessOS 側 DB exact design を定義する。
+
+本書は設計書であり、DB適用はまだ行わない。
+実DDL適用は Phase C 以降で、DB担当レビュー後に行う。
+
+## 2. Schema
+
+canonical_schema: business
+
+理由:
+- AICompanyManager は business-app である
+- 人間の事業運用、承認、納品、履歴を持つ
+- AI社員実体は AIWorkerOS 側に置く
+- AIWorkerOS の内部 pipeline 正本は複製しない
+
+## 3. Table List
+
+| table | purpose |
+|---|---|
+| business.ai_company_manager_company | AI企業の運用単位 |
+| business.ai_company_manager_project | 事業案件 |
+| business.ai_company_manager_policy | 人間が入力した方針 |
+| business.ai_company_manager_pipeline_run | AIWorkerOS pipeline 実行単位の app-side tracking |
+| business.ai_company_manager_role_assignment | President / Manager / Leader / Worker の割当表示 |
+| business.ai_company_manager_stage | pipeline stage tracking |
+| business.ai_company_manager_deliverable | 成果物管理 |
+| business.ai_company_manager_review | レビュー結果 |
+| business.ai_company_manager_return_request | 差し戻し |
+| business.ai_company_manager_approval | 人間承認 |
+| business.ai_company_manager_delivery | 納品 |
+| business.ai_company_manager_queue_item | app-side local queue meaning |
+| business.ai_company_manager_audit_log | 操作・状態変更・承認の監査ログ |
+
+## 4. Table Exact Design
+
+### 4.1 business.ai_company_manager_company
+
+Purpose:
+AI企業運営単位を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| company_id | uuid | yes | primary key |
+| owner_user_id | uuid | yes | app user |
+| company_name | text | yes | AI企業名 |
+| display_name | text | no | 表示名 |
+| description | text | no | 説明 |
+| status | text | yes | active / paused / archived |
+| aiworker_org_ref | text | no | AIWorkerOS 側組織参照 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.2 business.ai_company_manager_project
+
+Purpose:
+人間が依頼する事業案件を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| project_id | uuid | yes | primary key |
+| company_id | uuid | yes | company reference |
+| owner_user_id | uuid | yes | app user |
+| project_title | text | yes | 案件名 |
+| project_summary | text | no | 案件概要 |
+| project_status | text | yes | pipeline status enum |
+| priority | text | yes | low / normal / high / urgent |
+| due_at | timestamptz | no | 希望期限 |
+| delivery_format | text | no | markdown / document / spreadsheet / code / other |
+| human_approval_required | boolean | yes | default true |
+| current_pipeline_run_id | uuid | no | current run |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.3 business.ai_company_manager_policy
+
+Purpose:
+人間が President に渡す方針を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| policy_id | uuid | yes | primary key |
+| project_id | uuid | yes | project reference |
+| policy_title | text | yes | 方針タイトル |
+| business_goal | text | yes | 事業目的 |
+| expected_output | text | yes | 期待成果 |
+| target_audience | text | no | 対象 |
+| constraints_text | text | no | 制約条件 |
+| forbidden_text | text | no | 禁止事項 |
+| quality_standard | text | no | 品質基準 |
+| review_policy | text | no | レビュー方針 |
+| delivery_requirement | text | no | 納品要件 |
+| policy_status | text | yes | draft / submitted / superseded |
+| submitted_at | timestamptz | no | 提出日時 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.4 business.ai_company_manager_pipeline_run
+
+Purpose:
+AIWorkerOS pipeline run を app-side で追跡する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| pipeline_run_id | uuid | yes | primary key |
+| project_id | uuid | yes | project reference |
+| policy_id | uuid | yes | policy reference |
+| aiworker_run_ref | text | no | AIWorkerOS 側 run reference |
+| run_status | text | yes | pipeline status enum |
+| current_role | text | no | president / manager / leader / worker / human |
+| current_stage | text | no | stage code |
+| started_at | timestamptz | no | 開始日時 |
+| completed_at | timestamptz | no | 完了日時 |
+| cancelled_at | timestamptz | no | 中止日時 |
+| last_sync_at | timestamptz | no | AIWorkerOS 同期日時 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.5 business.ai_company_manager_role_assignment
+
+Purpose:
+pipeline run 内の role assignment を app-side 表示用に管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| assignment_id | uuid | yes | primary key |
+| pipeline_run_id | uuid | yes | run reference |
+| role_code | text | yes | president / manager / leader / worker |
+| aiworker_ref | text | yes | AIWorkerOS worker reference |
+| display_name | text | no | app-side display |
+| assigned_domain | text | no | Manager / Leader 用領域 |
+| assignment_status | text | yes | assigned / active / completed / returned / blocked |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.6 business.ai_company_manager_stage
+
+Purpose:
+President / Manager / Leader / Worker / Human の stage tracking を行う。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| stage_id | uuid | yes | primary key |
+| pipeline_run_id | uuid | yes | run reference |
+| stage_code | text | yes | stage enum |
+| role_code | text | yes | role enum |
+| stage_status | text | yes | waiting / running / completed / returned / blocked |
+| input_summary | text | no | 入力概要 |
+| output_summary | text | no | 出力概要 |
+| started_at | timestamptz | no | 開始日時 |
+| completed_at | timestamptz | no | 完了日時 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.7 business.ai_company_manager_deliverable
+
+Purpose:
+Worker / Leader / Manager / President の成果物候補を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| deliverable_id | uuid | yes | primary key |
+| pipeline_run_id | uuid | yes | run reference |
+| parent_deliverable_id | uuid | no | 統合元 |
+| produced_by_role | text | yes | worker / leader / manager / president |
+| produced_by_ref | text | no | AIWorkerOS worker reference |
+| deliverable_title | text | yes | 成果物名 |
+| deliverable_type | text | yes | plan / task_output / integrated_output / final_output |
+| content_ref | text | no | 実体保管先参照 |
+| content_text | text | no | 小規模成果物本文 |
+| deliverable_status | text | yes | draft / submitted / approved / returned / integrated / final_candidate / delivered |
+| version_no | integer | yes | default 1 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.8 business.ai_company_manager_review
+
+Purpose:
+成果物レビュー結果を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| review_id | uuid | yes | primary key |
+| deliverable_id | uuid | yes | deliverable reference |
+| pipeline_run_id | uuid | yes | run reference |
+| reviewer_role | text | yes | leader / manager / president / human |
+| reviewer_ref | text | no | AIWorkerOS or human ref |
+| review_status | text | yes | pending / approved / returned / needs_clarification / blocked |
+| review_comment | text | no | コメント |
+| quality_score | integer | no | 0-100 |
+| reviewed_at | timestamptz | no | レビュー日時 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.9 business.ai_company_manager_return_request
+
+Purpose:
+差し戻しを管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| return_id | uuid | yes | primary key |
+| review_id | uuid | yes | review reference |
+| deliverable_id | uuid | yes | deliverable reference |
+| pipeline_run_id | uuid | yes | run reference |
+| from_role | text | yes | 差し戻し元 |
+| to_role | text | yes | 差し戻し先 |
+| reason | text | yes | 差し戻し理由 |
+| correction_target | text | yes | 修正対象 |
+| correction_instruction | text | yes | 修正指示 |
+| due_at | timestamptz | no | 再提出期限 |
+| return_status | text | yes | open / resubmitted / resolved / escalated / cancelled |
+| return_count | integer | yes | 差し戻し回数 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.10 business.ai_company_manager_approval
+
+Purpose:
+人間承認を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| approval_id | uuid | yes | primary key |
+| project_id | uuid | yes | project reference |
+| pipeline_run_id | uuid | yes | run reference |
+| deliverable_id | uuid | yes | final candidate |
+| approver_user_id | uuid | yes | human approver |
+| approval_status | text | yes | waiting / approved / revision_requested / rejected / cancelled |
+| approval_comment | text | no | 承認コメント |
+| approved_at | timestamptz | no | 承認日時 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.11 business.ai_company_manager_delivery
+
+Purpose:
+人間への納品を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| delivery_id | uuid | yes | primary key |
+| project_id | uuid | yes | project reference |
+| pipeline_run_id | uuid | yes | run reference |
+| approval_id | uuid | yes | approval reference |
+| deliverable_id | uuid | yes | final deliverable |
+| delivery_status | text | yes | prepared / delivered / accepted / revision_requested / archived |
+| delivery_format | text | yes | markdown / document / spreadsheet / code / other |
+| delivery_ref | text | no | 納品物保管先 |
+| delivered_at | timestamptz | no | 納品日時 |
+| accepted_at | timestamptz | no | 受領日時 |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.12 business.ai_company_manager_queue_item
+
+Purpose:
+offline-first local queue の app-side business meaning を管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| queue_item_id | uuid | yes | primary key |
+| owner_user_id | uuid | yes | app user |
+| project_id | uuid | no | project reference |
+| pipeline_run_id | uuid | no | run reference |
+| queue_type | text | yes | queue enum |
+| payload_json | jsonb | yes | queued payload |
+| queue_status | text | yes | pending / syncing / synced / failed / cancelled |
+| retry_count | integer | yes | retry count |
+| last_error_code | text | no | error code |
+| last_error_message | text | no | error message |
+| created_at | timestamptz | yes | 作成日時 |
+| updated_at | timestamptz | yes | 更新日時 |
+
+### 4.13 business.ai_company_manager_audit_log
+
+Purpose:
+操作、状態変更、承認、納品の監査ログを管理する。
+
+Columns:
+
+| column | type | required | note |
+|---|---|---:|---|
+| audit_log_id | uuid | yes | primary key |
+| owner_user_id | uuid | no | app user |
+| project_id | uuid | no | project reference |
+| pipeline_run_id | uuid | no | run reference |
+| actor_type | text | yes | human / aiworker / system |
+| actor_ref | text | no | user id or AIWorker ref |
+| action_code | text | yes | action enum |
+| before_json | jsonb | no | before state |
+| after_json | jsonb | no | after state |
+| reason | text | no | reason |
+| created_at | timestamptz | yes | 作成日時 |
+
+## 5. Index Candidate
+
+Phase C DDL で作成候補。
+
+- company_id
+- owner_user_id
+- project_id
+- pipeline_run_id
+- policy_id
+- deliverable_id
+- review_id
+- approval_id
+- delivery_id
+- project_status
+- run_status
+- queue_status
+- created_at
+
+## 6. Canonical DB Rule
+
+BusinessOS 側 DB は人間向け運用正本を持つ。
+AIWorkerOS 側の AI 実行正本は持たない。
+AICompanyManager は AIWorkerOS 参照IDを保持し、内部データを複製しない。

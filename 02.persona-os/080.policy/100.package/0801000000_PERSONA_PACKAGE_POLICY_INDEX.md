@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA PACKAGE POLICY INDEX
-# ============================================================
+# 0801000000_PERSONA_PACKAGE_POLICY_INDEX
 
-status: canonical
-layer: policy
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA PACKAGE POLICY documents.
+directory: 080.policy/100.package
 
-# ============================================================
-# FILES
-# ============================================================
-
-0801000000_PERSONA_PACKAGE_POLICY_INDEX.md
-0801000001_PERSONA_PACKAGE_POLICY_OVERVIEW.md
-0801000002_PERSONA_PACKAGE_ASSEMBLY_POLICY.md
+- 0801000001_PERSONA_PACKAGE_POLICY_OVERVIEW.md
+- 0801000002_PERSONA_PACKAGE_ASSEMBLY_POLICY.md
+- 080.policy/

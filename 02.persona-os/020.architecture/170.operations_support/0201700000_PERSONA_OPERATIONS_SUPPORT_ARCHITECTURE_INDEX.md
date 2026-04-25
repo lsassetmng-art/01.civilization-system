@@ -1,0 +1,7 @@
+# 0201700000_PERSONA_OPERATIONS_SUPPORT_ARCHITECTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 020.architecture/170.operations_support
+
+- 0201700001_PERSONA_OPERATIONS_SUPPORT_ARCHITECTURE_OVERVIEW.md

@@ -159,3 +159,26 @@ The following are prohibited:
 - created_on / createdAt / inserted_at mixed without rule
 - actor / user / operator used interchangeably without domain definition
 
+
+## Exact Status Dictionary Split
+## Exact Status Dictionary Split
+
+The following status classes must not be merged:
+
+- status
+- workflow_status
+- approval_status
+- lifecycle_status
+- execution_status
+- reconciliation_status
+
+Inline magic string use is prohibited.
+All canonical status values must be governed by enum master.
+
+## Exact ID Code Status Audit Rules
+
+- id is internal canonical identity
+- code is readable business lookup identity where applicable
+- status and workflow_status must remain separate
+- audit_ref_id and trace_id must remain linkable
+- superseded_by and revision_group_id must be used for lineage instead of destructive overwrite

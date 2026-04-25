@@ -1,0 +1,8 @@
+# 0500900000_PERSONA_SNAPSHOT_FLOW_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 050.flow/090.snapshot/050.flow/090.snapshot
+
+- 0500900001_PERSONA_SNAPSHOT_FLOW_OVERVIEW.md
+- 0500900002_PERSONA_SNAPSHOT_ISSUE_FLOW.md

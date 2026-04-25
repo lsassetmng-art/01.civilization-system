@@ -1,0 +1,9 @@
+window.BusinessOSCommonOSAppConfig = {
+  appName: 'NameCardManager',
+  headline: 'BusinessOS consumer entry using _commonos shared connection layer.',
+  sections: [
+    { title: 'Capture Inbox', summary: 'Image staging and intake shell.' },
+    { title: 'Relationships', summary: 'Relationship visibility shell.' },
+    { title: 'Company Timeline', summary: 'Company activity shell.' }
+  ]
+};

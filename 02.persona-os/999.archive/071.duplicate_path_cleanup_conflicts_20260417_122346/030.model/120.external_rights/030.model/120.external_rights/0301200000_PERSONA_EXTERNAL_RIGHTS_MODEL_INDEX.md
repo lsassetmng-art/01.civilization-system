@@ -1,0 +1,8 @@
+# 0301200000_PERSONA_EXTERNAL_RIGHTS_MODEL_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 030.model/120.external_rights/030.model/120.external_rights
+
+- 0301200001_PERSONA_EXTERNAL_RIGHTS_MODEL_OVERVIEW.md
+- 0301200002_PERSONA_EXTERNAL_RELEASE_MODEL.md

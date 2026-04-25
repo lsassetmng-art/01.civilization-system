@@ -1,0 +1,625 @@
+Meta:
+  type: object
+  required: [request_id]
+  properties:
+    request_id:
+      type: string
+
+ErrorEnvelope:
+  type: object
+  required: [ok, error, meta]
+  properties:
+    ok:
+      type: boolean
+      const: false
+    error:
+      type: object
+      required: [code, message, retryable]
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+        retryable:
+          type: boolean
+    meta:
+      $ref: '#/Meta'
+
+AssetCreateRequest:
+  type: object
+  required: [asset_type, creator_id, initial_language_code]
+  properties:
+    asset_type:
+      type: string
+    creator_id:
+      type: string
+      format: uuid
+    publisher_id:
+      type: string
+      format: uuid
+      nullable: true
+    initial_language_code:
+      type: string
+
+AssetCreateResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      properties:
+        asset_id:
+          type: string
+          format: uuid
+        asset_code:
+          type: string
+        asset_type:
+          type: string
+        creator_id:
+          type: string
+          format: uuid
+        publisher_id:
+          type: string
+          format: uuid
+          nullable: true
+        current_version_no:
+          type: integer
+        lifecycle_state:
+          type: string
+        version_token:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+    meta:
+      $ref: '#/Meta'
+
+AssetDetailResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+LocalizationWriteRequest:
+  type: object
+  required: [version_token, title]
+  properties:
+    version_token:
+      type: string
+    title:
+      type: string
+    subtitle:
+      type: string
+      nullable: true
+    short_description:
+      type: string
+      nullable: true
+    long_description:
+      type: string
+      nullable: true
+
+LocalizationWriteResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+RightsPolicyWriteRequest:
+  type: object
+  required:
+    - version_token
+    - version_no
+    - exhibition_allowed
+    - commercial_use_allowed
+    - derivative_allowed
+    - additional_license_required
+    - age_rating
+    - region_mode
+    - region_codes
+  properties:
+    version_token:
+      type: string
+    version_no:
+      type: integer
+    exhibition_allowed:
+      type: boolean
+    commercial_use_allowed:
+      type: boolean
+    derivative_allowed:
+      type: boolean
+    additional_license_required:
+      type: boolean
+    age_rating:
+      type: string
+    region_mode:
+      type: string
+    region_codes:
+      type: array
+      items:
+        type: string
+    rights_summary:
+      type: string
+      nullable: true
+
+RightsPolicyWriteResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+SalesOfferWriteRequest:
+  type: object
+  required: [version_token, sale_type, sales_state]
+  properties:
+    version_token:
+      type: string
+    sale_type:
+      type: string
+    sales_state:
+      type: string
+    base_currency:
+      type: string
+      nullable: true
+    base_price:
+      type: number
+      nullable: true
+    price_label_override:
+      type: string
+      nullable: true
+    sale_start_at:
+      type: string
+      format: date-time
+      nullable: true
+    sale_end_at:
+      type: string
+      format: date-time
+      nullable: true
+    limited_sale_flag:
+      type: boolean
+    inventory_cap:
+      type: integer
+      nullable: true
+
+SalesOfferWriteResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+SubscriptionRuleWriteRequest:
+  type: object
+  required: [version_token, subscription_state, subscription_eligible, creator_opt_in]
+  properties:
+    version_token:
+      type: string
+    subscription_state:
+      type: string
+    subscription_eligible:
+      type: boolean
+    creator_opt_in:
+      type: boolean
+    settlement_group_code:
+      type: string
+      nullable: true
+    subscription_start_at:
+      type: string
+      format: date-time
+      nullable: true
+    subscription_end_at:
+      type: string
+      format: date-time
+      nullable: true
+
+SubscriptionRuleWriteResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+SelfCheckRequest:
+  type: object
+  required: [version_token]
+  properties:
+    version_token:
+      type: string
+
+SelfCheckResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+ReviewRequestCreateRequest:
+  type: object
+  required: [version_token, requested_review_types]
+  properties:
+    version_token:
+      type: string
+    requested_review_types:
+      type: array
+      items:
+        type: string
+
+ReviewRequestCreateResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+ReviewDecisionRequest:
+  type: object
+  required: [decision_status]
+  properties:
+    decision_status:
+      type: string
+    decision_reason_code:
+      type: string
+      nullable: true
+    decision_comment:
+      type: string
+      nullable: true
+
+ReviewDecisionResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+PublishActionRequest:
+  type: object
+  required: [version_token]
+  properties:
+    version_token:
+      type: string
+    publish_at:
+      type: string
+      format: date-time
+      nullable: true
+
+PublishActionResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+StateActionRequest:
+  type: object
+  required: [version_token]
+  properties:
+    version_token:
+      type: string
+    reason_code:
+      type: string
+      nullable: true
+    reason_comment:
+      type: string
+      nullable: true
+
+StateActionResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+RestrictActionResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+EntitlementResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+AccessSessionRequest:
+  type: object
+  required: [access_mode]
+  properties:
+    access_mode:
+      type: string
+      enum: [sample, full]
+
+AccessSessionResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+LibraryListResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+    meta:
+      type: object
+      properties:
+        request_id:
+          type: string
+        next_cursor:
+          type: string
+          nullable: true
+
+ReaderProgressRequest:
+  type: object
+  required: [sync_version, current_locator, progress_percent]
+  properties:
+    sync_version:
+      type: integer
+    current_locator:
+      type: string
+    progress_percent:
+      type: number
+    last_device_type:
+      type: string
+      nullable: true
+
+ReaderProgressResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+ViewerProgressRequest:
+  type: object
+  required: [sync_version]
+  properties:
+    sync_version:
+      type: integer
+    current_frame_ref:
+      type: string
+      nullable: true
+    current_page_no:
+      type: integer
+      nullable: true
+    zoom_ratio:
+      type: number
+      nullable: true
+    last_device_type:
+      type: string
+      nullable: true
+
+ViewerProgressResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+FavoriteResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      properties:
+        asset_id:
+          type: string
+          format: uuid
+        favorite_state:
+          type: boolean
+    meta:
+      $ref: '#/Meta'
+
+AnnotationCreateRequest:
+  type: object
+  required: [annotation_type, locator, payload_json]
+  properties:
+    annotation_type:
+      type: string
+    locator:
+      type: string
+    payload_json:
+      type: object
+      additionalProperties: true
+
+AnnotationCreateResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+ExhibitionProjectionResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+ProjectionRefreshRequest:
+  type: object
+  required: [targets]
+  properties:
+    targets:
+      type: array
+      items:
+        type: string
+
+ProjectionRefreshResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+PurchaseReflectRequest:
+  type: object
+  required: [user_id, asset_id, transaction_id, grant_type, granted_at]
+  properties:
+    user_id:
+      type: string
+      format: uuid
+    asset_id:
+      type: string
+      format: uuid
+    transaction_id:
+      type: string
+    grant_type:
+      type: string
+    granted_at:
+      type: string
+      format: date-time
+
+PurchaseReflectResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'
+
+SubscriptionReflectRequest:
+  type: object
+  required: [user_id, subscription_event_type, effective_at, affected_asset_ids]
+  properties:
+    user_id:
+      type: string
+      format: uuid
+    subscription_event_type:
+      type: string
+    effective_at:
+      type: string
+      format: date-time
+    affected_asset_ids:
+      type: array
+      items:
+        type: string
+        format: uuid
+
+SubscriptionReflectResponse:
+  type: object
+  properties:
+    ok:
+      type: boolean
+      const: true
+    data:
+      type: object
+      additionalProperties: true
+    meta:
+      $ref: '#/Meta'

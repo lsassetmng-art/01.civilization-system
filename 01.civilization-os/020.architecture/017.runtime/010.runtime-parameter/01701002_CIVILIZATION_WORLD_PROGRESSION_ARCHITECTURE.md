@@ -117,3 +117,33 @@ Civilization world progression architecture must remain:
 - environment-compatible
 - disaster-compatible
 - extensible toward cosmic progression
+
+## Exact Progression Proposal Rule
+## Exact Progression Proposal Rule
+
+World progression output must first exist as:
+
+- proposal
+- candidate effect
+- apply result
+
+Progression output must not silently become canonical mutation.
+
+## Exact Progression Surface Split
+
+The following must remain separate:
+
+- progression run
+- progression input snapshot
+- progression proposal
+- apply result
+- failure record
+
+## Exact Large-Scale Change Rule
+
+Massive world updates must preserve:
+
+- trace
+- replay identity
+- apply lineage
+- reviewed action posture where required

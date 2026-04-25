@@ -1,10 +1,8 @@
-# ============================================================
-# PERSONA GROWTH CONSTITUTION INDEX
-# ============================================================
+# 0100500000_PERSONA_GROWTH_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/050.growth
+
+- 0100500001_PERSONA_GROWTH_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

@@ -1,0 +1,45 @@
+206794:- series_name_ja: Beyondシリーズ
+206807:- action_restriction = strict_policy
+207065:- hd_series / HD Series / HDシリーズ
+207094:- lovers_series / LoVerS Series / LoVerSシリーズ
+207323:- strict_policy / 指定規約厳守
+207327:HD Series / HDシリーズ:
+207341:LoVerS Series / LoVerSシリーズ:
+217753:- series_name_ja: Beyondシリーズ
+217766:- action_restriction = strict_policy
+217965:# AIWorkerOS Model Append: MEGAMI NORN Three Sisters Body Profile
+217979:- MG-NORN-001 / ウルズ
+217980:- MG-NORN-002 / ヴェルザンディ
+217981:- MG-NORN-003 / スクルド
+217994:- height_cm >= 185
+218001:### MG-NORN-001 / ウルズ
+218008:### MG-NORN-002 / ヴェルザンディ
+218015:### MG-NORN-003 / スクルド
+218057:- series_name_ja: MEGAMIシリーズ
+218078:### MG-NORN-001 / ウルズ
+218093:### MG-NORN-002 / ヴェルザンディ
+218109:### MG-NORN-003 / スクルド
+218190:- hd_series / HD Series / HDシリーズ
+218219:- lovers_series / LoVerS Series / LoVerSシリーズ
+218398:# AIWorkerOS Model Append: Series Public Directory
+218414:- HD Series / HDシリーズ
+218415:- LoVerS Series / LoVerSシリーズ
+218416:- Beyond Series / Beyondシリーズ
+218417:- MEGAMI Series / MEGAMIシリーズ
+218516:- strict_policy / 指定規約厳守
+218520:HD Series / HDシリーズ:
+218534:LoVerS Series / LoVerSシリーズ:
+219800:# AIWorkerOS Integration Append: MEGAMI NORN Three Sisters Body Profile Reference Surface
+219814:- aiworker.vw_megami_norn_three_sisters_appearance_profile_v1
+219815:- aiworker.vw_app_megami_norn_three_sisters_lineup_with_body_v1
+219821:- aiworker.vw_megami_norn_three_sisters_appearance_profile_v1
+219825:- aiworker.vw_app_megami_norn_three_sisters_lineup_with_body_v1
+219946:# AIWorkerOS Integration Append: Series Public Directory Reference Surface
+219965:- aiworker.vw_app_aiworker_series_selection_directory_v1
+219971:- aiworker.vw_app_aiworker_series_selection_directory_v1
+220659:# AIWorkerOS Policy Append: MEGAMI NORN Three Sisters Body Profile
+220671:- MG-NORN-001 / ウルズ
+220672:- MG-NORN-002 / ヴェルザンディ
+220673:- MG-NORN-003 / スクルド
+220833:# AIWorkerOS Policy Append: Series Public Directory
+220859:For series with action_restriction = minimum_policy, minimum does not mean unsafe.

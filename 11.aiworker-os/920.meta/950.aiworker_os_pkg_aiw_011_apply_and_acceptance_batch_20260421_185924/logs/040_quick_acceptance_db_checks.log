@@ -1,0 +1,12 @@
+acceptance_batch_runner_registry.count=1
+acceptance_batch_runner_log.count=15
+acceptance_execution_batch.count=1
+acceptance_verification_result.count=14
+latest_batch.batch_status=PASSED
+latest_batch.item_count=14
+latest_batch.pass_count=14
+latest_batch.fail_count=0
+latest_item.VERIFY-BOUNDARY-001=PASS
+latest_item.VERIFY-REPLAY-001=PASS
+latest_item.VERIFY-GRANT-002=PASS
+latest_item.VERIFY-EVENT-002=PASS

@@ -1,5 +1,5 @@
 # ============================================================
-# 060 INTEGRATION INDEX
+# 060 INDEX
 # ============================================================
 
 status: canonical
@@ -11,4 +11,5 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 060_OVERVIEW.md
 - 060_STREAM_STUDIO_INTEGRATION.md

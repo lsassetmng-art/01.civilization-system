@@ -1,0 +1,83 @@
+============================================================
+AIWORKER OS PKG-AIW-009 APPLY AND CONTRACT SMOKE START
+============================================================
+STAMP      : 20260421_161531
+ROOT       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+PKG9       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-009
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/943.aiworker_os_pkg_aiw_009_apply_and_contract_smoke_20260421_161531
+LOG_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/943.aiworker_os_pkg_aiw_009_apply_and_contract_smoke_20260421_161531/logs
+============================================================
+PASS: PERSONA_DATABASE_URL is set.
+PASS: PKG-AIW-009 scripts exist.
+============================================================
+STEP 1: apply PKG-AIW-009
+============================================================
+============================================================
+PKG-AIW-009 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 through PKG-AIW-008 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-009
+============================================================
+BEGIN
+DO
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE TABLE
+CREATE INDEX
+INSERT 0 2
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+COMMIT
+============================================================
+PKG-AIW-009 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+STEP 2: verify business event contract state
+============================================================
+============================================================
+PKG-AIW-009 VERIFY BUSINESS EVENT CONTRACT STATE
+============================================================
+business_event_contract_registry.count=2
+business_event_validation_log.count=0
+business_cross_boundary_smoke_log.count=0
+active_contracts.count=2
+latest_validation.count=0
+latest_smoke.count=0
+============================================================
+PKG-AIW-009 VERIFY BUSINESS EVENT CONTRACT STATE FINISHED
+============================================================
+============================================================
+STEP 3: run business event contract smoke
+============================================================
+============================================================
+PKG-AIW-009 BUSINESS EVENT CONTRACT SMOKE
+============================================================
+ERROR:  column reference "note_text" is ambiguous
+LINE 1: select success_flag, validation_result_code, note_text
+                                                     ^
+DETAIL:  It could refer to either a PL/pgSQL variable or a table column.
+QUERY:  select success_flag, validation_result_code, note_text
+                                                               from aiworker.fn_validate_business_contract_payload_ref(
+      'BIZ_INBOUND_REQUEST_EVENT_V1',
+      'SMOKE_BUSINESS_REQUEST_EVENT_V1',
+      coalesce(p_executed_by, 'SYSTEM')
+    )
+CONTEXT:  PL/pgSQL function aiworker.fn_run_business_event_contract_smoke(text) line 12 at SQL statement

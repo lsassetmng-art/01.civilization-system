@@ -77,3 +77,36 @@ Fail closed on:
 - invalid company linkage
 - lifecycle ambiguity
 - ownership or scope inconsistency
+
+## Exact Company Core And Site Separation
+## Exact Company Core And Site Separation
+
+Company core defines organizational existence.
+Company site defines operational location.
+Property ownership defines asset or right posture.
+Occupancy defines usable space posture.
+Opening defines active operation posture.
+
+These must not be collapsed into one canonical record.
+
+## Exact Opening Guard
+
+Opening is allowed only when:
+
+- company core is active
+- required occupancy is valid
+- zoning compatibility passed
+- required government-side approval or notification is satisfied
+
+## Exact Occupancy And Opening Split
+
+The following must remain separate:
+
+- company_site
+- company_site_occupancy
+- opening state
+- closure state
+- map projection
+
+Opening may depend on occupancy,
+but occupancy is not equivalent to open operation state.

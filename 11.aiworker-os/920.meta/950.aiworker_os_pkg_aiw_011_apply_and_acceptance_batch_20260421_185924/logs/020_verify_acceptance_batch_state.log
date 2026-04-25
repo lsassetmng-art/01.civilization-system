@@ -1,0 +1,12 @@
+============================================================
+PKG-AIW-011 VERIFY ACCEPTANCE BATCH STATE
+============================================================
+acceptance_batch_runner_registry.count=1
+acceptance_batch_runner_log.count=0
+acceptance_execution_batch.count=0
+acceptance_verification_result.count=0
+latest_batch.count=0
+latest_batch_items.count=0
+============================================================
+PKG-AIW-011 VERIFY ACCEPTANCE BATCH STATE FINISHED
+============================================================

@@ -1,0 +1,18 @@
+COMMON OS LATEST POINTER SUMMARY
+generated_at=2026-04-22T05:34:59+0900
+root=/data/data/com.termux/files/home/01.civilization-system/12.common-os
+
+[CANONICAL ENTRY POINTS]
+root_full_integrated=/data/data/com.termux/files/home/01.civilization-system/12.common-os/00_COMMON_OS_FULL_INTEGRATED.md
+architecture_integrated=/data/data/com.termux/files/home/01.civilization-system/12.common-os/020.architecture/00_COMMON_OS_ARCHITECTURE_INTEGRATED.md
+model_integrated=/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/00_COMMON_OS_MODEL_INTEGRATED.md
+policy_integrated=/data/data/com.termux/files/home/01.civilization-system/12.common-os/080.policy/00_COMMON_OS_POLICY_INTEGRATED.md
+security_integrated=/data/data/com.termux/files/home/01.civilization-system/12.common-os/100.security/00_COMMON_OS_SECURITY_INTEGRATED.md
+implementation_integrated=/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/00_COMMON_OS_IMPLEMENTATION_INTEGRATED.md
+development_integrated=/data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/00_COMMON_OS_DEVELOPMENT_INTEGRATED.md
+
+[LATEST META PACKETS]
+latest_delivery_packet=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/021_common_os_final_delivery_packet_20260422_052800
+latest_review_snapshot=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/020_common_os_final_review_snapshot_20260422_052314
+latest_integrity_audit=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/015_common_os_final_integrity_audit_20260422_050024
+latest_final_one_block_handoff=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/019_common_os_final_one_block_handoff_20260422_052140

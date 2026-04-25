@@ -1,0 +1,67 @@
+# ============================================================
+# AICompanyManager Deferred Items Ledger
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+phase: Phase P
+status: deferred-items-ledger-created
+
+## 1. Deferred Item: RLS Apply
+
+status:
+- deferred
+
+condition:
+- Boss explicitly says RLS OK / RLS GO / RLS適用OK / RLS実行して
+
+db_target:
+- PERSONA_DATABASE_URL
+
+rule:
+- use Method A
+- psql "$PERSONA_DATABASE_URL" <<'SQL'
+- no destructive SQL
+- 佐藤（DB担当）review route
+
+## 2. Deferred Item: Live AIWorkerOS Bridge
+
+status:
+- deferred
+
+condition:
+- trusted server route is implemented
+- auth / ownership check is implemented
+- no browser-side secret
+- AIWorkerOS internal prompt/reasoning is not exposed
+
+## 3. Deferred Item: Production Auth
+
+status:
+- deferred
+
+required:
+- authenticated user identity
+- owner_user_id mapping
+- project ownership validation
+- service route boundary
+
+## 4. Deferred Item: Deployment
+
+status:
+- deferred
+
+required:
+- app hosting target
+- build packaging
+- route deployment
+- environment secret placement
+- acceptance gate
+
+## 5. Fixed Caution
+
+Do not use:
+- current_role
+
+Use:
+- current_role_code

@@ -1,0 +1,411 @@
+# COMMON OS IMPLEMENTATION INTEGRATED
+
+status: canonical
+system: CommonOS
+layer: implementation
+generated_at: 2026-04-21T18:55:52+0900
+source_root: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation
+
+## Integration scope
+This integrated file combines the current implementation-layer canon of CommonOS, including application common component implementation scope and package-boundary rules.
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000000_COMMON_OS_IMPLEMENTATION_INDEX.md -->
+<!-- ============================================================ -->
+
+# COMMON OS IMPLEMENTATION INDEX
+
+status: canonical
+layer: implementation
+
+## Documents
+- 000000_COMMON_OS_IMPLEMENTATION_INDEX.md
+- 000001_COMMON_OS_IMPLEMENTATION_OVERVIEW.md
+- 000010_COMMON_OS_IMPLEMENTATION_RULES_CANONICAL.md
+- 000020_COMMON_OS_COMPONENT_IMPLEMENTATION_CANONICAL.md
+- 000030_COMMON_OS_QUEUE_UI_IMPLEMENTATION_CANONICAL.md
+- 000040_COMMON_OS_ACCESSIBILITY_IMPLEMENTATION_CANONICAL.md
+
+## Application common component implementation subsystem
+
+### Canonical implementation reading path
+1. 000050_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_SCOPE_CANONICAL.md
+2. 000060_APPLICATION_COMMON_COMPONENT_MINIMUM_SET_CANONICAL.md
+3. 000070_APPLICATION_COMMON_COMPONENT_CURRENT_WAVE_IMPLEMENTATION_MAPPING.md
+4. 000080_APPLICATION_COMMON_COMPONENT_VARIANT_IMPLEMENTATION_POLICY.md
+5. 000090_APPLICATION_COMMON_COMPONENT_SHARED_PACKAGE_BOUNDARY_CANONICAL.md
+
+### Notes
+These implementation documents define what CommonOS should implement first from the current-wave common component canon and what remains outside the shared package boundary.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000001_COMMON_OS_IMPLEMENTATION_OVERVIEW.md -->
+<!-- ============================================================ -->
+
+# COMMON OS IMPLEMENTATION OVERVIEW
+
+status: canonical
+layer: implementation
+
+## Purpose
+This layer defines how CommonOS is implemented as buildable shared UI deliverables.
+
+## Scope
+- implementation rules
+- component implementation
+- queue UI implementation
+- accessibility implementation
+
+## Application common component implementation subsystem overview
+
+### Position
+The architecture layer decides which common component families are canonically accepted. The implementation layer decides which of them become the first buildable shared outputs.
+
+### Scope
+- minimum reusable implementation set
+- current-wave to implementation mapping
+- variant implementation policy
+- shared package boundary
+- client-distributed implementation discipline
+
+### Operational meaning
+Current-wave accepted does not force all families into phase one implementation. CommonOS may implement in waves while keeping the design canon stable.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000010_COMMON_OS_IMPLEMENTATION_RULES_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS IMPLEMENTATION RULES CANONICAL
+
+status: canonical
+layer: implementation
+
+## Implementation roots
+- Design: /data/data/com.termux/files/home/01.civilization-system/12.common-os
+- Buildable outputs: /data/data/com.termux/files/home/03.civilization-development/12.common-os
+
+## Rules
+- Buildable outputs must remain implementation artifacts.
+- Shared UI must follow CommonOS canon.
+- Variants must be used instead of system-specific forks where feasible.
+- No client secret distribution.
+- Domain wrappers must remain thin.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000020_COMMON_OS_COMPONENT_IMPLEMENTATION_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS COMPONENT IMPLEMENTATION CANONICAL
+
+status: canonical
+layer: implementation
+
+## Minimum reusable component set
+- Button
+- IconButton
+- TextField
+- TextArea
+- Select
+- Checkbox
+- Radio
+- Switch
+- Card
+- Table
+- List
+- Dialog
+- Toast
+- Status Chip
+- App Shell
+
+## Rule
+Shared components implement reusable presentation and interaction patterns. Business logic stays outside the component core.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000030_COMMON_OS_QUEUE_UI_IMPLEMENTATION_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS QUEUE UI IMPLEMENTATION CANONICAL
+
+status: canonical
+layer: implementation
+
+## Required queue UI surfaces
+- offline status indicator
+- pending indicator
+- processing indicator
+- retry_wait indicator
+- sent indicator
+- failed indicator
+- conflict indicator
+- retry action entry point
+
+## Rule
+Queue presentation must be reusable across ERP and other domains while leaving queue meaning to the owning domain.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000040_COMMON_OS_ACCESSIBILITY_IMPLEMENTATION_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS ACCESSIBILITY IMPLEMENTATION CANONICAL
+
+status: canonical
+layer: implementation
+
+## Mandatory accessibility themes
+- keyboard operability
+- focus visibility
+- semantic labels
+- readable contrast
+- state announcement support
+- touch-friendly interaction targets where relevant
+
+## Rule
+Accessibility is part of the shared foundation canon and may not be treated as optional polish.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000050_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_SCOPE_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT IMPLEMENTATION SCOPE CANONICAL
+
+status: canonical
+system: CommonOS
+layer: implementation
+
+## Purpose
+This document defines the implementation scope discipline for application common components under CommonOS.
+
+## Canonical rule
+CommonOS implements reusable shared UI outputs and shared-base utilities only when they are inside the CommonOS boundary and are suitable for client-safe distribution or server-safe shared usage.
+
+## Phase-one implementation scope
+Phase one focuses on the smallest set that unlocks multi-app reuse:
+- Button family
+- Text input family
+- Card family
+- Dialog family
+- Table or list family
+- App Shell
+- Offline Queue Status UI
+- Sync Retry UI
+
+## Later implementation scope
+Current-wave accepted families that are not phase one may still be canonically accepted while implementation waits for stronger need, better wrappers, or cleaner package boundaries.
+
+## Never in CommonOS client package
+- domain pricing logic
+- domain entitlement logic
+- domain access logic
+- secrets
+- privileged approval logic
+- authoritative domain transaction logic
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000060_APPLICATION_COMMON_COMPONENT_MINIMUM_SET_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT MINIMUM SET CANONICAL
+
+status: canonical
+system: CommonOS
+layer: implementation
+
+## Minimum reusable implementation set
+
+### Base controls
+- Button
+- IconButton
+- TextField
+- TextArea
+- Select
+- Checkbox
+- Radio
+- Switch
+
+### Data display and shell
+- Card
+- Table
+- List
+- Status Chip
+- App Shell
+- Header
+- Navigation shell hooks
+
+### Feedback and overlays
+- Dialog
+- Modal
+- Toast
+- Confirm UI
+
+### Sync presentation
+- Offline Queue Status UI
+- Sync Retry UI
+- Progress UI
+- Conflict Panel base
+
+## Minimum-set meaning
+This set is the first implementation baseline required before expanding deeper into feature-specific current-wave families.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000070_APPLICATION_COMMON_COMPONENT_CURRENT_WAVE_IMPLEMENTATION_MAPPING.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT CURRENT WAVE IMPLEMENTATION MAPPING
+
+status: canonical
+system: CommonOS
+layer: implementation
+
+## Purpose
+This document maps current-wave accepted component families to implementation priority.
+
+## Priority A: immediate implementation candidates
+- Screen Shell Common -> App Shell and shell primitives
+- State Panel Common -> State panel / empty / error / loading surfaces
+- Action Button Common -> Button family variants
+- Multilingual Label Common -> label rendering hooks and locale-safe wrappers
+- Multicurrency Price Display Common -> price presentation formatter wrapper
+- Review Queue Common -> queue presentation base
+- Asset Upload Common -> attachment entry and upload-pending presentation base
+
+## Priority B: next reusable feature layer
+- Asset Metadata Editor Common
+- Marketplace Listing Common
+- Marketplace Filter Panel Common
+- Product Card Common
+- Library Shelf Common
+- Marketplace Sort Panel Common
+- Product Detail Summary Common
+- Owned Badge Common
+- Subscription Included Badge Common
+- Bookmark Common
+- Favorite Toggle Common
+
+## Priority C: shared-base utilities subject to packaging split
+- canonical response envelope helper
+- canonical error envelope helper
+- permission guard base
+- validator helper set
+- idempotency service base
+- StaticArtError / error-code base pattern
+- lifecycle transition helper base
+
+## Interpretation
+Priority A should be implemented first as CommonOS shared outputs.
+Priority B should follow after the minimum set stabilizes.
+Priority C may require package split between client-safe shared assets and non-client shared libraries.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000080_APPLICATION_COMMON_COMPONENT_VARIANT_IMPLEMENTATION_POLICY.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT VARIANT IMPLEMENTATION POLICY
+
+status: canonical
+system: CommonOS
+layer: implementation
+
+## Purpose
+This document defines how variants should be implemented for CommonOS shared components.
+
+## Core rule
+Prefer variant expansion over app-specific forks.
+
+## Required early variants
+- button.primary
+- button.secondary
+- button.destructive
+- button.ghost
+- input.default
+- input.compact
+- input.erp_dense
+- card.standard
+- card.record
+- panel.sync
+- panel.conflict
+
+## Implementation rule
+A variant may change:
+- tone
+- density
+- emphasis
+- viewport behavior
+- state display
+
+A variant may not change:
+- domain authority
+- pricing decisions
+- entitlement decisions
+- access decisions
+
+## ERP rule
+ERP-specific density must be expressed as shared variants, not as a separate ERP-only UI canon.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000090_APPLICATION_COMMON_COMPONENT_SHARED_PACKAGE_BOUNDARY_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT SHARED PACKAGE BOUNDARY CANONICAL
+
+status: canonical
+system: CommonOS
+layer: implementation
+
+## Purpose
+This document defines what belongs inside the CommonOS shared package boundary.
+
+## Inside shared package boundary
+- shared HTML UI components
+- design tokens
+- layout primitives
+- shell primitives
+- reusable state panels
+- queue and sync presentation components
+- locale-aware display helpers
+- presentation-safe formatting helpers
+- accessibility-safe interaction wrappers
+
+## Conditionally separated shared libraries
+These may exist as separate shared libraries rather than the main client package:
+- canonical response envelope helper
+- canonical error envelope helper
+- permission guard base
+- validator helper set
+- idempotency service base
+- lifecycle transition helper base
+- error-code base pattern
+
+## Outside shared package boundary
+- domain business logic
+- domain pricing engine
+- domain entitlement engine
+- domain access engine
+- secrets
+- service role keys
+- database connection secrets
+- authoritative domain transaction logic
+
+## Distribution rule
+Client-delivered shared packages must remain safe to distribute across multiple apps, OSs, and ERP surfaces.
+

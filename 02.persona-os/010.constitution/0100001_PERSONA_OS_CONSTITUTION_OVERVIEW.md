@@ -76,14 +76,14 @@ The official constitutional domain order is:
 050.growth
 060.builder
 070.visual
-080.runtime-hosting
+080.runtime_hosting
 090.snapshot
 100.package
 110.distribution
-120.external-rights
-130.access-license-transfer
+120.external_rights
+130.access_license_transfer
 140.integration
-150.security
+100.security
 160.governance
 170.operations-support
 
@@ -112,7 +112,7 @@ authoring and draft subsystem
 070.visual:
 visual truth and visual semantics
 
-080.runtime-hosting:
+080.runtime_hosting:
 host/runtime session consumption boundary
 
 090.snapshot:
@@ -124,16 +124,16 @@ distributable assembly unit
 110.distribution:
 release channel and publication state
 
-120.external-rights:
+120.external_rights:
 approved outside-world rights authority
 
-130.access-license-transfer:
+130.access_license_transfer:
 explicit usage permission and authority transition
 
 140.integration:
 approved system-to-system contract boundary
 
-150.security:
+100.security:
 truth protection and fail-closed safety
 
 160.governance:
@@ -186,3 +186,40 @@ This means PersonaOS design must allow:
 These capabilities must be treated as supported design scope
 inside PersonaOS even when detailed implementation is handled later.
 
+
+# EXACT READY CONSTITUTION REINFORCEMENT
+
+status_extension: author-reviewed-with-constitution-reinforcement
+reinforced_at: 20260417_150617
+reinforcement_scope:
+- authority clarification
+- non-bypass clarification
+- audit obligation clarification
+- precedence clarification
+
+domain: generic
+
+minimum_constitution_requirements:
+- name the authority owner for this domain
+- define what decisions require explicit approval
+- define which state mutations are forbidden outside authority
+- define which terminal paths must remain auditable
+- define override or precedence behavior against lower-layer narratives
+
+mandatory_non_bypass_rules:
+- no direct truth mutation outside named authority
+- no silent override through runtime or integration
+- no unaudited reject, release, grant, transfer, or replay decision
+- no hidden fallback that changes constitutional meaning
+
+mandatory_audit_requirements:
+- actor identity
+- decision timestamp
+- subject or object identifier
+- reason or code family
+- terminal outcome
+
+constitution_ready_note:
+This reinforcement does not replace the authored constitutional content above.
+It marks the minimum exact-ready constitutional items that must be explicit
+before implementation or downstream policy binding is considered complete.

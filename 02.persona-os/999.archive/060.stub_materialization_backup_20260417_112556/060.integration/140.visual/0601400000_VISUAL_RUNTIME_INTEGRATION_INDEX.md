@@ -1,0 +1,7 @@
+# 0601400000_VISUAL_RUNTIME_INTEGRATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 060.integration/140.visual
+
+- 0601400001_POCKET_SECRETARY_VISUAL_RUNTIME_INTEGRATION.md

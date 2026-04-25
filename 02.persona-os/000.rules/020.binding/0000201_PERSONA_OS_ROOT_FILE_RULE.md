@@ -13,7 +13,7 @@ rule:
 Only formal integrated outputs may remain at root.
 
 allowed_examples:
-PERSONA_OS_CANONICAL_FULL.md
+000000_PERSONA_OS_CANONICAL_FULL.md
 
 must_not_remain_at_root:
 review outputs
@@ -24,4 +24,4 @@ dump outputs
 
 preferred_destinations:
 920.meta
-999.dump
+999.archive/999.dump

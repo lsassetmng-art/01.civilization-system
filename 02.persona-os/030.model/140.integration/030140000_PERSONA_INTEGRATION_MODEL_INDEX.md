@@ -1,23 +1,13 @@
-# ============================================================
-# PERSONA INTEGRATION MODEL INDEX
-# ============================================================
+# 030140000_PERSONA_INTEGRATION_MODEL_INDEX
 
-status: canonical
-layer: model
-domain: integration
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PersonaOS integration model documents.
+directory: 030.model/140.integration
 
-# ============================================================
-# FILES
-# ============================================================
-
-0301400001_PERSONA_INTEGRATION_MODEL_OVERVIEW.md
-0301400002_PERSONA_INTEGRATION_REQUEST_MODEL.md
-0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md
-0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md
-0301400005_PERSONA_GROWTH_RESULT_CONTRACT_MODEL.md
+- 0301400001_PERSONA_INTEGRATION_MODEL_OVERVIEW.md
+- 0301400002_PERSONA_INTEGRATION_REQUEST_MODEL.md
+- 0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md
+- 0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md
+- 0301400005_PERSONA_GROWTH_RESULT_CONTRACT_MODEL.md
+- 030140001_PERSONA_INTEGRATION_MODEL_OVERVIEW.md
+- 030.model/

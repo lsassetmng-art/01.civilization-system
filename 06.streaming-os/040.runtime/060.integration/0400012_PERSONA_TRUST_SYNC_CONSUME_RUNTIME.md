@@ -9,4 +9,15 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Consume Persona trust-related sync results inside StreamingOS.
+Consume formal Persona trust-related result references inside StreamingOS.
+
+runtime_scope:
+- read result event
+- validate persona_id and reference basis
+- consume signed snapshot or result reference
+- update local non-canonical display/gating projection
+- preserve consume audit trace
+
+forbidden:
+- persisting local trust canonical truth
+- deriving Persona internal mutable truth locally

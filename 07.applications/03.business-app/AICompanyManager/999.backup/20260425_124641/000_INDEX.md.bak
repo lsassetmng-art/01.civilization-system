@@ -1,0 +1,73 @@
+# ============================================================
+# AICompanyManager INDEX
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase E-Gate
+status: db-apply-gate-created
+owner: Boss
+prepared_by: Zero
+
+## 1. Purpose
+
+AICompanyManager is a business-app for operating an AI company from a human-facing application.
+
+Human gives policy to President.
+President creates business plan.
+Manager breaks it into domains and actions.
+Leader breaks actions into deliverables and tasks.
+Worker executes tasks and creates outputs.
+Leader reviews and integrates.
+Manager reviews.
+President performs final review.
+Human approves and receives delivery.
+
+## 2. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 3. Current Completion
+
+Phase A:
+- app skeleton completed
+
+Phase B:
+- DB / API / State exact design completed
+
+Phase C:
+- DB DDL Design Review Package completed
+- DB apply not executed
+
+Phase D:
+- DB apply preparation package completed
+- guarded apply draft created
+- DB apply not executed
+
+Phase E-Gate:
+- final DB apply gate created
+- DB apply blocked safely
+- DB apply not executed
+
+## 4. Latest Phase E-Gate Documents
+
+| file | purpose |
+|---|---|
+| 300_PHASE_E_GATE_ROADMAP.md | Phase E-Gate roadmap |
+| 301_DB_APPLY_FINAL_GATE_CHECKLIST.md | final DB apply checklist |
+| 302_DB_APPLY_GO_CRITERIA.md | explicit GO criteria |
+| 303_DB_APPLY_BLOCKED_STATUS_REPORT.md | blocked status report |
+| 390_PHASE_E_GATE_COMPLETION_REPORT.md | Phase E-Gate completion report |
+| 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | integrated design |
+
+## 5. Next Phase
+
+Phase E:
+- DB apply execution
+- only after explicit Boss DB OK / GO

@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA PACKAGE MODEL INDEX
-# ============================================================
+# 0301000000_PERSONA_PACKAGE_MODEL_INDEX
 
-status: canonical
-layer: model
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA PACKAGE MODEL documents.
+directory: 030.model/100.package
 
-# ============================================================
-# FILES
-# ============================================================
-
-0301000000_PERSONA_PACKAGE_MODEL_INDEX.md
-0301000001_PERSONA_PACKAGE_MODEL_OVERVIEW.md
-0301000002_PERSONA_PACKAGE_MODEL.md
+- 0301000001_PERSONA_PACKAGE_MODEL_OVERVIEW.md
+- 0301000002_PERSONA_PACKAGE_MODEL.md
+- 030.model/

@@ -1,0 +1,8 @@
+# 1300700000_PERSONA_VISUAL_DEVELOPMENT_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 130.development/070.visual/130.development/070.visual
+
+- 1300700001_PERSONA_VISUAL_DEVELOPMENT_OVERVIEW.md
+- 1300700002_PERSONA_VISUAL_DEVELOPMENT_GUIDE.md

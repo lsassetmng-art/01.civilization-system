@@ -1,0 +1,8 @@
+# 1001300000_PERSONA_ACCESS_LICENSE_TRANSFER_SECURITY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 100.security/130.access_license_transfer/100.security/130.access_license_transfer
+
+- 1001300001_PERSONA_ACCESS_LICENSE_TRANSFER_SECURITY_OVERVIEW.md
+- 1001300002_PERSONA_LICENSE_ACCESS_TRANSFER_SECURITY.md

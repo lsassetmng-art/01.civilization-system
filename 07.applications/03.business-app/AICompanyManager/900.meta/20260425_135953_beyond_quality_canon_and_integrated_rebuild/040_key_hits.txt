@@ -1,0 +1,286 @@
+6:system: AICompanyManager
+8:source_root: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager
+22:-      1	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/000_INDEX.md
+23:-      2	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/001_OVERVIEW.md
+24:-      3	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/010_APP_SKELETON_DESIGN.md
+25:-      4	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/020_BUSINESS_FLOW_CANON.md
+26:-      5	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/030_REVIEW_RETURN_FLOW_CANON.md
+27:-      6	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/040_DELIVERY_APPROVAL_FLOW_CANON.md
+28:-      7	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/050_ROLE_OPERATION_MODEL.md
+29:-      8	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/060_DATA_BOUNDARY_AND_INTEGRATION.md
+30:-      9	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/070_COMMONOS_UI_AND_QUEUE_POLICY.md
+31:-     10	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/080_PHASE_A_COMPLETION_REPORT.md
+32:-     11	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/090_PHASE_B_ROADMAP.md
+33:-     12	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/100_DB_EXACT_DESIGN.md
+34:-     13	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/110.aiworker-reference/110200_AI_COMPANY_MANAGER_BEYOND_SERIES_REFERENCE.md
+35:-     14	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/110_API_BRIDGE_EXACT_PAYLOAD.md
+36:-     15	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/120_STATE_ENUM_CANON.md
+37:-     16	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/130_LOCAL_QUEUE_EXACT_PAYLOAD.md
+38:-     17	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/140_AUDIT_AND_HISTORY_MODEL.md
+39:-     18	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/150_ERROR_RETRY_CONFLICT_POLICY.md
+40:-     19	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/160_PHASE_B_COMPLETION_REPORT.md
+41:-     20	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/170_PHASE_C_ROADMAP.md
+42:-     21	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/180_DB_DDL_DESIGN_REVIEW_PACKAGE.md
+43:-     22	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/184_DB_APPLY_PRECHECKLIST.md
+44:-     23	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/185_SATO_DB_REVIEW_MEMO.md
+45:-     24	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/190_PHASE_C_COMPLETION_REPORT.md
+46:-     25	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/200_PHASE_D_ROADMAP.md
+47:-     26	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/210_DB_APPLY_PREPARATION_PACKAGE.md
+48:-     27	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/214_DB_ROLLBACK_AND_RECOVERY_MEMO.md
+49:-     28	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/290_PHASE_D_COMPLETION_REPORT.md
+50:-     29	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/300_PHASE_E_GATE_ROADMAP.md
+51:-     30	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/301_DB_APPLY_FINAL_GATE_CHECKLIST.md
+52:-     31	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/302_DB_APPLY_GO_CRITERIA.md
+53:-     32	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/303_DB_APPLY_BLOCKED_STATUS_REPORT.md
+54:-     33	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/390_PHASE_E_GATE_COMPLETION_REPORT.md
+55:-     34	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/400_PHASE_E_PERSONA_DB_ROADMAP.md
+56:-     35	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/410_PERSONA_DB_APPLY_EXECUTION_REPORT.md
+57:-     36	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/491_PHASE_E_PERSONA_DB_RESERVED_WORD_FIX_REPORT.md
+58:-     37	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/500_PHASE_F_ROADMAP.md
+59:-     38	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/510_PERSONA_RLS_EXACT_POLICY_DESIGN.md
+60:-     39	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/514_PERSONA_ACCESS_CONTROL_MATRIX.md
+61:-     40	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/590_PHASE_F_COMPLETION_REPORT.md
+62:-     41	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/600_PHASE_G_GATE_ROADMAP.md
+63:-     42	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/601_PERSONA_RLS_APPLY_FINAL_GATE_CHECKLIST.md
+64:-     43	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/602_PERSONA_RLS_GO_CRITERIA.md
+65:-     44	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/603_PERSONA_RLS_BLOCKED_STATUS_REPORT.md
+66:-     45	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/604_PERSONA_RLS_SAFE_APPLY_PREVIEW.md
+67:-     46	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/690_PHASE_G_GATE_COMPLETION_REPORT.md
+68:-     47	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/800_PHASE_I_ROADMAP.md
+69:-     48	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/810_API_BRIDGE_QUEUE_WIRING_DESIGN.md
+70:-     49	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/890_PHASE_I_COMPLETION_REPORT.md
+71:-     50	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/891_PHASE_I_COMMONOS_REPAIR_REPORT.md
+83:# AICompanyManager INDEX
+86:app_name: AICompanyManager
+87:display_name: AI企業運営アプリ
+96:AICompanyManager is a business-app for operating an AI company from a human-facing application.
+171:# AICompanyManager OVERVIEW
+174:app_name: AICompanyManager
+175:display_name: AI企業運営アプリ
+182:AICompanyManager は、人間が AI 企業を運営するための business-app である。
+187:AICompanyManager は以下を担当する。
+201:AICompanyManager は、AI 社員の人格、能力、成長差分、内部推論、シリーズ傾向、実行知能を直接保有しない。
+205:AICompanyManager は、AIWorkerOS の内部パイプラインを business-app として人間が操作できるようにする運用アプリであり、AIWorkerOS の正本を複製しない。
+248:# AICompanyManager APP SKELETON DESIGN
+251:app_name: AICompanyManager
+252:display_name: AI企業運営アプリ
+259:本書は AICompanyManager のアプリ骨格を定義する。
+261:AICompanyManager は、人間が AI 企業を作り、方針を渡し、AI 組織に事業を実行させ、成果物をレビューし、納品を受けるための business-app である。
+440:# AICompanyManager BUSINESS FLOW CANON
+443:app_name: AICompanyManager
+444:display_name: AI企業運営アプリ
+450:本書は AICompanyManager における事業フローの正本を定義する。
+585:AICompanyManager は、流れの状態、承認、納品、履歴を管理する。
+596:# AICompanyManager REVIEW RETURN FLOW CANON
+599:app_name: AICompanyManager
+600:display_name: AI企業運営アプリ
+682:AICompanyManager は以下を表示・記録する。
+707:# AICompanyManager DELIVERY APPROVAL FLOW CANON
+710:app_name: AICompanyManager
+711:display_name: AI企業運営アプリ
+841:# AICompanyManager ROLE OPERATION MODEL
+844:app_name: AICompanyManager
+845:display_name: AI企業運営アプリ
+851:本書は AICompanyManager から見た President / Manager / Leader / Worker の操作モデルを定義する。
+881:AICompanyManager では President の以下を表示する。
+981:AICompanyManager はロールの運用状態を表示し、人間の操作を受け付ける。
+992:# AICompanyManager DATA BOUNDARY AND INTEGRATION
+995:app_name: AICompanyManager
+996:display_name: AI企業運営アプリ
+1002:本書は AICompanyManager、BusinessOS、AIWorkerOS、CommonOS の責務境界を定義する。
+1008:| AI企業運営アプリ UI | AICompanyManager | business-app として提供 |
+1009:| 人間方針入力 | AICompanyManager | business-side operation record |
+1010:| 事業案件状態 | AICompanyManager / BusinessOS | 人間向け運用正本 |
+1011:| 承認履歴 | AICompanyManager / BusinessOS | 人間承認の証跡 |
+1012:| 納品履歴 | AICompanyManager / BusinessOS | business delivery record |
+1019:| Queue business meaning | AICompanyManager | 業務状態として解釈 |
+1053:AICompanyManager から AIWorkerOS へ渡す。
+1062:AIWorkerOS から AICompanyManager へ返す。
+1076:AICompanyManager は以下を持たない。
+1088:AICompanyManager は、AIWorkerOS を操作可能にする business-app である。
+1099:# AICompanyManager COMMONOS UI AND QUEUE POLICY
+1102:app_name: AICompanyManager
+1103:display_name: AI企業運営アプリ
+1109:本書は AICompanyManager における CommonOS 利用方針を定義する。
+1113:AICompanyManager は CommonOS の shared UI foundation を優先利用する。
+1133:実装時、AICompanyManager 側には CommonOS consumer 受け口を作る。
+1136:- ~/03.civilization-development/03.business-os/AICompanyManager/_commonos/adapter
+1137:- ~/03.civilization-development/03.business-os/AICompanyManager/_commonos/bridge
+1138:- ~/03.civilization-development/03.business-os/AICompanyManager/_commonos/mapper
+1139:- ~/03.civilization-development/03.business-os/AICompanyManager/_commonos/presenter
+1140:- ~/03.civilization-development/03.business-os/AICompanyManager/_commonos/theme
+1141:- ~/03.civilization-development/03.business-os/AICompanyManager/_commonos/sync
+1142:- ~/03.civilization-development/03.business-os/AICompanyManager/_commonos/test
+1146:AICompanyManager は offline-first + local queue + online sync を前提とする。
+1160:AICompanyManager は queue の業務意味を持つ。
+1171:AICompanyManager は business-app であるため、以下 variant を想定する。
+1182:AICompanyManager の事業状態、承認意味、納品意味は AICompanyManager 側が持つ。
+1192:# AICompanyManager PHASE A COMPLETION REPORT
+1195:app_name: AICompanyManager
+1196:display_name: AI企業運営アプリ
+1203:- AICompanyManager 設計ルート作成
+1219:| AICompanyManager の設計ルートができる | PASS |
+1252:# AICompanyManager Phase B Roadmap
+1255:app_name: AICompanyManager
+1256:display_name: AI企業運営アプリ
+1313:# AICompanyManager DB Exact Design
+1316:app_name: AICompanyManager
+1317:display_name: AI企業運営アプリ
+1324:This document defines the BusinessOS-side DB exact design for AICompanyManager.
+1334:- AICompanyManager is a business-app.
+1562:# AICompanyManager AIWorker Reference: Beyond Series Quality Lineup
+1569:AICompanyManager can use ASIC Beyond Series as proactive Worker and Leader candidates.
+1573:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+1577:This reference is only for Beyond Series.
+1583:Beyond Series:
+1591:- BYD1-001 / ASIC Workers1 / 単純単発作業レベル
+1592:- BYD1-002 / ASIC Workers2 / 単純反復・抜け漏れ補完レベル
+1593:- BYD1-003 / ASIC Workers3 / 複雑作業・高完成度成果物レベル
+1597:- BYD2-001 / ASIC Leader1 / 基本進行・形式チェックレベル
+1598:- BYD2-002 / ASIC Leader2 / 品質レビュー・整合性確認レベル
+1599:- BYD2-003 / ASIC Leader3 / 統合設計・リスク判断・納品品質統括レベル
+1617:- BYD1-001: small one-shot tasks
+1618:- BYD1-002: repeated simple tasks and omission compensation
+1619:- BYD1-003: complex tasks and high-completion deliverables
+1620:- BYD2-001: basic progress and format check
+1621:- BYD2-002: quality review and consistency check
+1622:- BYD2-003: integrated design, risk judgment, and delivery quality governance
+1632:# AICompanyManager API Bridge Exact Payload
+1635:app_name: AICompanyManager
+1636:display_name: AI企業運営アプリ
+1789:  "source_app": "AICompanyManager",
+1852:  "source_app": "AICompanyManager",
+1895:# AICompanyManager State Enum Canon
+1898:app_name: AICompanyManager
+1899:display_name: AI企業運営アプリ
+2015:AIWorkerOS internal status is normalized into these values for AICompanyManager.
+2025:# AICompanyManager Local Queue Exact Payload
+2028:app_name: AICompanyManager
+2029:display_name: AI企業運営アプリ
+2039:AICompanyManager owns queue business meaning.
+2152:AICompanyManager defines queue_type and payload meaning.
+2162:# AICompanyManager Audit and History Model
+2165:app_name: AICompanyManager
+2166:display_name: AI企業運営アプリ
+2242:AIWorkerOS internal reasoning logs are not stored in AICompanyManager audit log.
+2252:# AICompanyManager Error Retry Conflict Policy
+2255:app_name: AICompanyManager
+2256:display_name: AI企業運営アプリ
+2316:# AICompanyManager Phase B Completion Report
+2319:app_name: AICompanyManager
+2320:display_name: AI企業運営アプリ
+2370:# AICompanyManager Phase C Roadmap
+2373:app_name: AICompanyManager
+2374:display_name: AI企業運営アプリ
+2447:# AICompanyManager DB DDL Design Review Package
+2450:app_name: AICompanyManager
+2451:display_name: AI企業運営アプリ
+2459:本書は AICompanyManager の DB DDL Design Review Package である。
+2531:# AICompanyManager DB Apply Prechecklist
+2534:app_name: AICompanyManager
+2535:display_name: AI企業運営アプリ
+2617:# AICompanyManager Sato DB Review Memo
+2620:app_name: AICompanyManager
+2621:display_name: AI企業運営アプリ
+2628:AICompanyManager は BusinessOS の business-app である。
+2691:# AICompanyManager Phase C Completion Report
+2694:app_name: AICompanyManager
+2695:display_name: AI企業運営アプリ
+2745:# AICompanyManager Phase D Roadmap
+2748:app_name: AICompanyManager
+2749:display_name: AI企業運営アプリ
+2826:# AICompanyManager DB Apply Preparation Package
+2829:app_name: AICompanyManager
+2830:display_name: AI企業運営アプリ
+2838:This package prepares DB apply materials for AICompanyManager.
+2892:# AICompanyManager DB Rollback and Recovery Memo
+2895:app_name: AICompanyManager
+2896:display_name: AI企業運営アプリ
+2902:This memo defines the rollback and recovery stance for AICompanyManager DB apply.
+2957:# AICompanyManager Phase D Completion Report
+2960:app_name: AICompanyManager
+2961:display_name: AI企業運営アプリ
+3010:# AICompanyManager Phase E-Gate Roadmap
+3013:app_name: AICompanyManager
+3014:display_name: AI企業運営アプリ
+3078:# AICompanyManager DB Apply Final Gate Checklist
+3081:app_name: AICompanyManager
+3082:display_name: AI企業運営アプリ
+3138:# AICompanyManager DB Apply GO Criteria
+3141:app_name: AICompanyManager
+3142:display_name: AI企業運営アプリ
+3188:# AICompanyManager DB Apply Blocked Status Report
+3191:app_name: AICompanyManager
+3192:display_name: AI企業運営アプリ
+3198:AICompanyManager DB apply is ready in draft form but blocked by safety gate.
+3227:# AICompanyManager Phase E-Gate Completion Report
+3230:app_name: AICompanyManager
+3231:display_name: AI企業運営アプリ
+3274:# AICompanyManager Phase E Persona DB Roadmap
+3277:app_name: AICompanyManager
+3278:display_name: AI企業運営アプリ
+3303:- Keep AIWorkerOS internal canon outside AICompanyManager app-side operation tables.
+3315:- AICompanyManager tables if not exists
+3316:- AICompanyManager indexes if not exists
+3334:# AICompanyManager Persona DB Apply Execution Report
+3337:app_name: AICompanyManager
+3338:display_name: AI企業運営アプリ
+3367:- /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/920.meta/20260425_122905_phase_e_persona_db_apply_execution/010_persona_db_apply.log
+3371:- /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/920.meta/20260425_122905_phase_e_persona_db_apply_execution/020_persona_db_verify.log
+3381:# AICompanyManager Phase E Persona DB Reserved Word Fix Report
+3384:app_name: AICompanyManager
+3385:display_name: AI企業運営アプリ
+3429:| AICompanyManager tables | 13 | 13 | PASS |
+3430:| AICompanyManager indexes | 44 | 44 | PASS |
+3439:- apply_log: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/920.meta/20260425_123029_phase_e_persona_db_apply_reserved_word_fix/010_reserved_word_fix_apply.log
+3440:- verify_log: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/920.meta/20260425_123029_phase_e_persona_db_apply_reserved_word_fix/020_reserved_word_fix_verify.log
+3441:- summary: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/920.meta/20260425_123029_phase_e_persona_db_apply_reserved_word_fix/030_reserved_word_fix_summary.txt
+3451:# AICompanyManager Phase F Roadmap
+3454:app_name: AICompanyManager
+3455:display_name: AI企業運営アプリ
+3480:- AICompanyManager app-side tables and indexes are expected to exist on Persona-side DB.
+3538:# AICompanyManager Persona RLS Exact Policy Design
+3541:app_name: AICompanyManager
+3542:display_name: AI企業運営アプリ
+3551:This document defines the Persona-side RLS exact policy design for AICompanyManager.
+3558:AICompanyManager records are user-facing app operation records.
+3658:# AICompanyManager Persona Access Control Matrix
+3661:app_name: AICompanyManager
+3662:display_name: AI企業運営アプリ
+3728:# AICompanyManager Phase F Completion Report
+3731:app_name: AICompanyManager
+3732:display_name: AI企業運営アプリ
+3781:# AICompanyManager Phase G-Gate Roadmap
+3784:app_name: AICompanyManager
+3785:display_name: AI企業運営アプリ
+3859:# AICompanyManager Persona RLS Apply Final Gate Checklist
+3862:app_name: AICompanyManager
+3863:display_name: AI企業運営アプリ
+3921:# AICompanyManager Persona RLS GO Criteria
+3924:app_name: AICompanyManager
+3925:display_name: AI企業運営アプリ
+3946:3. Enable RLS on AICompanyManager tables.
+3965:# AICompanyManager Persona RLS Blocked Status Report
+3968:app_name: AICompanyManager
+3969:display_name: AI企業運営アプリ
+3975:AICompanyManager Persona-side RLS apply is ready in design/draft form but blocked by safety gate.
+4005:# AICompanyManager Persona RLS Safe Apply Preview
+4008:app_name: AICompanyManager
+4009:display_name: AI企業運営アプリ
+4069:# AICompanyManager Phase G-Gate Completion Report
+4072:app_name: AICompanyManager
+4073:display_name: AI企業運営アプリ
+4118:# AICompanyManager Phase I Roadmap
+4121:app_name: AICompanyManager
+4122:display_name: AI企業運営アプリ
+4244:# AICompanyManager API Bridge Queue Wiring Design
+4247:app_name: AICompanyManager
+4248:display_name: AI企業運営アプリ
+4269:/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager
+4290:AICompanyManager owns app-side operation UI and queue meaning.
+4313:# AICompanyManager Phase I Completion Report
+4316:app_name: AICompanyManager
+4317:display_name: AI企業運営アプリ
+4367:# AICompanyManager Phase I CommonOS Repair Report
+4370:app_name: AICompanyManager
+4371:display_name: AI企業運営アプリ

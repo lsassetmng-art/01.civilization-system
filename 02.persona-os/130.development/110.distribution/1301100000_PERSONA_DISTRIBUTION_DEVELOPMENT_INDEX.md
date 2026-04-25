@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA DISTRIBUTION DEVELOPMENT INDEX
-# ============================================================
+# 1301100000_PERSONA_DISTRIBUTION_DEVELOPMENT_INDEX
 
-status: canonical
-layer: development
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA DISTRIBUTION DEVELOPMENT documents.
+directory: 130.development/110.distribution
 
-# ============================================================
-# FILES
-# ============================================================
-
-1301100000_PERSONA_DISTRIBUTION_DEVELOPMENT_INDEX.md
-1301100001_PERSONA_DISTRIBUTION_DEVELOPMENT_OVERVIEW.md
-1301100002_PERSONA_RELEASE_DEVELOPMENT_GUIDE.md
+- 1301100001_PERSONA_DISTRIBUTION_DEVELOPMENT_OVERVIEW.md
+- 1301100002_PERSONA_RELEASE_DEVELOPMENT_GUIDE.md
+- 130.development/

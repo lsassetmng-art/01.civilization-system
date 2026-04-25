@@ -1,0 +1,7 @@
+# 0100900000_PERSONA_SNAPSHOT_CONSTITUTION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/090.snapshot
+
+- 0100900001_PERSONA_SNAPSHOT_CONSTITUTION_OVERVIEW.md

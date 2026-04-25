@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA DISTRIBUTION INTEGRATION INDEX
-# ============================================================
+# 0601100000_PERSONA_DISTRIBUTION_INTEGRATION_INDEX
 
-status: canonical
-layer: integration
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA DISTRIBUTION INTEGRATION documents.
+directory: 060.integration/110.distribution
 
-# ============================================================
-# FILES
-# ============================================================
-
-0601100000_PERSONA_DISTRIBUTION_INTEGRATION_INDEX.md
-0601100001_PERSONA_DISTRIBUTION_INTEGRATION_OVERVIEW.md
-0601100002_PERSONA_RELEASE_CHANNEL_INTEGRATION.md
+- 0601100001_PERSONA_DISTRIBUTION_INTEGRATION_OVERVIEW.md
+- 0601100002_PERSONA_RELEASE_CHANNEL_INTEGRATION.md
+- 060.integration/

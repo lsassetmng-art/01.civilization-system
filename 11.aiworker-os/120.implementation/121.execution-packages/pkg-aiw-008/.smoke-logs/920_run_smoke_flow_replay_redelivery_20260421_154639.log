@@ -1,0 +1,15 @@
+============================================================
+PKG-AIW-008 SMOKE FLOW REPLAY REDELIVERY
+============================================================
+ replay_decision_code  |       result_code        |          existing_intake_id          |      existing_related_entity_id      |          existing_event_id           | redelivery_allowed_flag | review_required_flag |          decided_at           |         redelivered_event_id         
+-----------------------+--------------------------+--------------------------------------+--------------------------------------+--------------------------------------+-------------------------+----------------------+-------------------------------+--------------------------------------
+ REDELIVER_RESULT_ONLY | OK_REDELIVER_RESULT_ONLY | 71000000-0000-0000-0000-000000003104 | f73f03a7-bc51-6b5b-930a-01684bc390dc | 90f3fb6e-ed12-8bcc-77c0-5045f5517b15 | t                       | f                    | 2026-04-21 06:46:41.107859+00 | 220de7d7-d661-f11f-45a7-a7a3f73adfad
+(1 row)
+
+------------------------------------------------------------
+LATEST EVENT_OUTBOX ROWS FOR SMOKE REQUEST
+220de7d7-d661-f11f-45a7-a7a3f73adfad|AIWORKER_ASSIGNMENT_DECIDED|SUM_APPLIED|2026-04-21 06:46:41.107859+00
+90f3fb6e-ed12-8bcc-77c0-5045f5517b15|AIWORKER_ASSIGNMENT_DECIDED|SUM_APPLIED|2026-04-21 06:46:39.696776+00
+============================================================
+PKG-AIW-008 SMOKE FLOW REPLAY REDELIVERY FINISHED
+============================================================

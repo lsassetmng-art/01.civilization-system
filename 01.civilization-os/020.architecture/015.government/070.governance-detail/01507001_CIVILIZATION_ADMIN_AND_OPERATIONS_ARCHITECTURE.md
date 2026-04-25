@@ -199,3 +199,35 @@ Civilization admin and operations architecture must remain:
 - override-capable
 - audit-capable
 - clearly separated from ordinary user operations
+
+## Exact Operator Mutation Boundary
+## Exact Operator Mutation Boundary
+
+Operator UI may initiate:
+
+- reviewed action
+- repair action
+- reconcile action
+- observation-only action
+
+Operator UI may not create hidden canonical mutation paths.
+
+## Exact Operator Guard Rule
+
+Every operator mutation-capable action must explicitly define:
+
+- action_scope
+- review requirement
+- repair or reconcile classification
+- audit requirement
+- failure visibility
+
+## Exact Admin Surface Split
+
+The following must remain separate:
+
+- observation surface
+- reviewed action surface
+- repair surface
+- reconcile surface
+- privileged override surface

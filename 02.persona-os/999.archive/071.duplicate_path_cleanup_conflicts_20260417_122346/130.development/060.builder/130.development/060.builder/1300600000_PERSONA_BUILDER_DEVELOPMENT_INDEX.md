@@ -1,0 +1,8 @@
+# 1300600000_PERSONA_BUILDER_DEVELOPMENT_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 130.development/060.builder/130.development/060.builder
+
+- 1300600001_PERSONA_BUILDER_DEVELOPMENT_OVERVIEW.md
+- 1300600002_PERSONA_BUILDER_DEVELOPMENT_GUIDE.md

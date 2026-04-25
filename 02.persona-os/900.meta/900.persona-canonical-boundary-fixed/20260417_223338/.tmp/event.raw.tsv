@@ -1,0 +1,2290 @@
+PERSONA_EVENTS	1	# 0301300001_persona_event_outbox:
+PERSONA_EVENTS	1	# 0301300003_persona_growth_request_inbox:
+PERSONA_EVENTS	10	- outbound external sync outbox:
+PERSONA_EVENTS	10	- read pending outbox events:
+PERSONA_EVENTS	10	1. inbox model:
+PERSONA_EVENTS	10	1. outbox model:
+PERSONA_EVENTS	1000	- `external_sync_outbox`:
+PERSONA_EVENTS	100669	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	100675	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	100678	- inbox_scope:
+PERSONA_EVENTS	100679	- inbox_ref:
+PERSONA_EVENTS	100683	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	100684	- inbox_scope:
+PERSONA_EVENTS	100685	- inbox_ref:
+PERSONA_EVENTS	100687	- inbox_status:
+PERSONA_EVENTS	100695	inbox_status_enum:
+PERSONA_EVENTS	100703	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	100706	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	100713	model_name: persona_event_outbox
+PERSONA_EVENTS	100716	Defines the canonical outbox model:
+PERSONA_EVENTS	100720	persona_event_outbox_id:
+PERSONA_EVENTS	100725	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	100731	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	100734	- outbox_scope:
+PERSONA_EVENTS	100734	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	100735	- outbox_ref:
+PERSONA_EVENTS	100739	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	100740	- outbox_scope:
+PERSONA_EVENTS	100741	- outbox_ref:
+PERSONA_EVENTS	100743	- outbox_status:
+PERSONA_EVENTS	100751	outbox_status_enum:
+PERSONA_EVENTS	100759	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	100762	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	100953	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	101597	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	101603	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	101606	- inbox_scope:
+PERSONA_EVENTS	101607	- inbox_ref:
+PERSONA_EVENTS	101611	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	101612	- inbox_scope:
+PERSONA_EVENTS	101613	- inbox_ref:
+PERSONA_EVENTS	101615	- inbox_status:
+PERSONA_EVENTS	101623	inbox_status_enum:
+PERSONA_EVENTS	101631	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	101634	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	101653	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	101659	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	101662	- outbox_scope:
+PERSONA_EVENTS	101663	- outbox_ref:
+PERSONA_EVENTS	101667	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	101668	- outbox_scope:
+PERSONA_EVENTS	101669	- outbox_ref:
+PERSONA_EVENTS	101671	- outbox_status:
+PERSONA_EVENTS	101679	outbox_status_enum:
+PERSONA_EVENTS	101687	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	101690	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	10177	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	10208	- BusinessOS approved outbox events:
+PERSONA_EVENTS	102654	canonical result event must be emitted after apply:
+PERSONA_EVENTS	102769	- read pending inbox requests:
+PERSONA_EVENTS	102780	1 select pending inbox request:
+PERSONA_EVENTS	102791	- inbox state persisted with audit trace:
+PERSONA_EVENTS	102831	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	102849	5 enqueue outbox event:
+PERSONA_EVENTS	102854	- outbox event created once idempotently:
+PERSONA_EVENTS	102859	- outbox enqueue failure:
+PERSONA_EVENTS	102863	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	102887	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	102906	5 enqueue outbox event:
+PERSONA_EVENTS	102911	- outbox event created with target traceability:
+PERSONA_EVENTS	102916	- outbox enqueue failure:
+PERSONA_EVENTS	102920	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	102946	- select pending outbox rows:
+PERSONA_EVENTS	102956	1 select pending or retryable outbox event:
+PERSONA_EVENTS	102965	- outbox row marked dispatched:
+PERSONA_EVENTS	103	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	103004	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	103029	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	103090	1 detect pending inbox request:
+PERSONA_EVENTS	103128	1 select pending outbox event:
+PERSONA_EVENTS	103135	- outbox event marked dispatched:
+PERSONA_EVENTS	103206	- read pending outbox events:
+PERSONA_EVENTS	103231	- write result event to outbox:
+PERSONA_EVENTS	103582	canonical result event must be emitted after apply:
+PERSONA_EVENTS	103697	- read pending inbox requests:
+PERSONA_EVENTS	103708	1 select pending inbox request:
+PERSONA_EVENTS	103719	- inbox state persisted with audit trace:
+PERSONA_EVENTS	103759	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	103777	5 enqueue outbox event:
+PERSONA_EVENTS	103782	- outbox event created once idempotently:
+PERSONA_EVENTS	103787	- outbox enqueue failure:
+PERSONA_EVENTS	103791	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	103815	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	103834	5 enqueue outbox event:
+PERSONA_EVENTS	103839	- outbox event created with target traceability:
+PERSONA_EVENTS	103844	- outbox enqueue failure:
+PERSONA_EVENTS	103848	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	103874	- select pending outbox rows:
+PERSONA_EVENTS	103884	1 select pending or retryable outbox event:
+PERSONA_EVENTS	103893	- outbox row marked dispatched:
+PERSONA_EVENTS	103932	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	103957	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	104288	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	104297	- inbox event received:
+PERSONA_EVENTS	104298	- outbox event queued:
+PERSONA_EVENTS	104304	1 resolve inbox or outbox target:
+PERSONA_EVENTS	104681	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	104718	- BusinessOS approved outbox events:
+PERSONA_EVENTS	104988	6. canonical result event is emitted:
+PERSONA_EVENTS	105050	- external growth requests must enter inbox first:
+PERSONA_EVENTS	105179	2 Persona inbox receives request:
+PERSONA_EVENTS	1052	- `external_sync_outbox`:
+PERSONA_EVENTS	105216	2 Persona inbox receives request:
+PERSONA_EVENTS	105216	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	105225	- inbox event received:
+PERSONA_EVENTS	105226	- outbox event queued:
+PERSONA_EVENTS	105232	1 resolve inbox or outbox target:
+PERSONA_EVENTS	105248	2 Persona inbox receives request:
+PERSONA_EVENTS	105282	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	105283	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	105284	5 external OS receives result through inbox path:
+PERSONA_EVENTS	105316	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	105317	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	105318	5 external OS receives result through inbox path:
+PERSONA_EVENTS	105423	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	105447	- result synchronization must occur through outbox:
+PERSONA_EVENTS	105916	6. canonical result event is emitted:
+PERSONA_EVENTS	106107	2 Persona inbox receives request:
+PERSONA_EVENTS	106144	2 Persona inbox receives request:
+PERSONA_EVENTS	106165	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	106176	2 Persona inbox receives request:
+PERSONA_EVENTS	106210	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	106211	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	106212	5 external OS receives result through inbox path:
+PERSONA_EVENTS	106244	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	106245	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	106246	5 external OS receives result through inbox path:
+PERSONA_EVENTS	107093	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	107946	1 detect pending inbox request:
+PERSONA_EVENTS	107983	1 select pending outbox event:
+PERSONA_EVENTS	107990	- outbox event marked dispatched:
+PERSONA_EVENTS	108059	- read pending outbox events:
+PERSONA_EVENTS	108080	result event,:
+PERSONA_EVENTS	108083	- write result event to outbox:
+PERSONA_EVENTS	108088	result event:
+PERSONA_EVENTS	108265	and render event contracts.:
+PERSONA_EVENTS	108874	1 detect pending inbox request:
+PERSONA_EVENTS	108911	1 select pending outbox event:
+PERSONA_EVENTS	108918	- outbox event marked dispatched:
+PERSONA_EVENTS	10894	- inbox_request_id:
+PERSONA_EVENTS	108987	- read pending outbox events:
+PERSONA_EVENTS	10901	- inbox_request_id:
+PERSONA_EVENTS	109011	- write result event to outbox:
+PERSONA_EVENTS	109048	authority result event:
+PERSONA_EVENTS	109149	- external growth requests must enter inbox first:
+PERSONA_EVENTS	109314	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	109337	- result synchronization must occur through outbox:
+PERSONA_EVENTS	10958	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	11	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	11	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	11	2. event contract:
+PERSONA_EVENTS	110077	- external growth requests must enter inbox first:
+PERSONA_EVENTS	11009	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	11011	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	110242	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	110265	- result synchronization must occur through outbox:
+PERSONA_EVENTS	110355	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	11174	- outbox_event_id:
+PERSONA_EVENTS	11180	- outbox_event_id:
+PERSONA_EVENTS	112036	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	112096	- inbox_request_id:
+PERSONA_EVENTS	112103	- inbox_request_id:
+PERSONA_EVENTS	112160	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	112379	- outbox_event_id:
+PERSONA_EVENTS	112385	- outbox_event_id:
+PERSONA_EVENTS	11239	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	11246	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	11258	- inbox_request_id:
+PERSONA_EVENTS	11259	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	11265	- inbox_request_id:
+PERSONA_EVENTS	11266	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	11276	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	11283	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	11283	persona_growth_request_inbox_id:
+PERSONA_EVENTS	11290	persona_growth_request_inbox_id:
+PERSONA_EVENTS	112964	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	11322	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	114236	1. outbox model:
+PERSONA_EVENTS	114237	2. event contract:
+PERSONA_EVENTS	114258	1. inbox model:
+PERSONA_EVENTS	114264	7. outbox verification:
+PERSONA_EVENTS	114399	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	114419	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	114439	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	114446	persona_growth_request_inbox_id:
+PERSONA_EVENTS	114985	1. outbox model:
+PERSONA_EVENTS	114986	2. event contract:
+PERSONA_EVENTS	115006	1. inbox model:
+PERSONA_EVENTS	115012	7. outbox verification:
+PERSONA_EVENTS	11538	- outbox_event_id:
+PERSONA_EVENTS	11544	- outbox_event_id:
+PERSONA_EVENTS	115594	model_name: persona_event_outbox
+PERSONA_EVENTS	115597	Defines the canonical outbox model:
+PERSONA_EVENTS	115601	persona_event_outbox_id:
+PERSONA_EVENTS	115615	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	115913	1. outbox model:
+PERSONA_EVENTS	115914	2. event contract:
+PERSONA_EVENTS	115934	1. inbox model:
+PERSONA_EVENTS	115940	7. outbox verification:
+PERSONA_EVENTS	115983	defines explicit request/response/event contracts:
+PERSONA_EVENTS	116026	defines explicit request/response/event contracts:
+PERSONA_EVENTS	116515	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	116521	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	116524	- inbox_scope:
+PERSONA_EVENTS	116525	- inbox_ref:
+PERSONA_EVENTS	116529	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	116530	- inbox_scope:
+PERSONA_EVENTS	116531	- inbox_ref:
+PERSONA_EVENTS	116533	- inbox_status:
+PERSONA_EVENTS	116541	inbox_status_enum:
+PERSONA_EVENTS	116549	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	116552	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	116572	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	116578	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	116581	- outbox_scope:
+PERSONA_EVENTS	116582	- outbox_ref:
+PERSONA_EVENTS	116586	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	116587	- outbox_scope:
+PERSONA_EVENTS	116588	- outbox_ref:
+PERSONA_EVENTS	116590	- outbox_status:
+PERSONA_EVENTS	116598	outbox_status_enum:
+PERSONA_EVENTS	116606	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	116609	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	116911	defines explicit request/response/event contracts:
+PERSONA_EVENTS	116954	defines explicit request/response/event contracts:
+PERSONA_EVENTS	117098	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	117100	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	117464	persona_event_outbox:
+PERSONA_EVENTS	117472	persona_growth_request_inbox:
+PERSONA_EVENTS	11757	model_name: persona_event_outbox
+PERSONA_EVENTS	11760	Defines the canonical outbox model:
+PERSONA_EVENTS	11764	model_name: persona_event_outbox
+PERSONA_EVENTS	11764	persona_event_outbox_id:
+PERSONA_EVENTS	11767	Defines the canonical outbox model:
+PERSONA_EVENTS	117679	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	117681	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	11771	persona_event_outbox_id:
+PERSONA_EVENTS	11778	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	11785	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	117860	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	117862	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	118026	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	118028	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	118392	persona_event_outbox:
+PERSONA_EVENTS	118400	persona_growth_request_inbox:
+PERSONA_EVENTS	118607	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	118609	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	118788	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	118790	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	118856	canonical result event must be emitted after apply:
+PERSONA_EVENTS	118877	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	118879	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	118888	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	118890	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	118899	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	118901	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	118938	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations_support/030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	118939	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	118940	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	119120	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations_support/030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	119122	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	119189	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	119191	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	119242	- read pending inbox requests:
+PERSONA_EVENTS	119253	1 select pending inbox request:
+PERSONA_EVENTS	119264	- inbox state persisted with audit trace:
+PERSONA_EVENTS	119305	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	119323	5 enqueue outbox event:
+PERSONA_EVENTS	119328	- outbox event created once idempotently:
+PERSONA_EVENTS	119333	- outbox enqueue failure:
+PERSONA_EVENTS	119337	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	119362	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	119381	5 enqueue outbox event:
+PERSONA_EVENTS	119386	- outbox event created with target traceability:
+PERSONA_EVENTS	119391	- outbox enqueue failure:
+PERSONA_EVENTS	119395	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	119422	- select pending outbox rows:
+PERSONA_EVENTS	119432	1 select pending or retryable outbox event:
+PERSONA_EVENTS	119441	- outbox row marked dispatched:
+PERSONA_EVENTS	119481	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	119507	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	119805	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	119807	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	119816	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	119818	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	119827	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	119829	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	119866	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations_support/030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	119867	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	119868	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	12	- outbox_id:
+PERSONA_EVENTS	12	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	12	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	12	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	12	model_name: persona_event_outbox
+PERSONA_EVENTS	12	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	120048	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations_support/030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	120050	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	120117	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	120119	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	12095	canonical result event must be emitted after apply:
+PERSONA_EVENTS	12102	canonical result event must be emitted after apply:
+PERSONA_EVENTS	12124	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	12126	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	121407	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	121416	- inbox event received:
+PERSONA_EVENTS	121417	- outbox event queued:
+PERSONA_EVENTS	121423	1 resolve inbox or outbox target:
+PERSONA_EVENTS	121548	and render event contracts.:
+PERSONA_EVENTS	121753	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	121909	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	121929	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	121942	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	121949	persona_growth_request_inbox_id:
+PERSONA_EVENTS	122	model_name: persona_event_outbox
+PERSONA_EVENTS	122053	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	122098	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	122327	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	122327	result event flow:
+PERSONA_EVENTS	122357	6. canonical result event is emitted:
+PERSONA_EVENTS	122364	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	122476	and render event contracts.:
+PERSONA_EVENTS	122681	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	122731	response, and result event contracts:
+PERSONA_EVENTS	122737	result event:
+PERSONA_EVENTS	122837	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	122857	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	122870	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	122877	persona_growth_request_inbox_id:
+PERSONA_EVENTS	122891	2 Persona inbox receives request:
+PERSONA_EVENTS	122929	2 Persona inbox receives request:
+PERSONA_EVENTS	122962	2 Persona inbox receives request:
+PERSONA_EVENTS	122981	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	122997	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	122998	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	122999	5 external OS receives result through inbox path:
+PERSONA_EVENTS	123026	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	123032	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	123033	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	123034	5 external OS receives result through inbox path:
+PERSONA_EVENTS	123255	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	123292	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	123659	response, and result event contracts:
+PERSONA_EVENTS	123665	result event:
+PERSONA_EVENTS	12407	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	12409	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	124325	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	124821	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	124969	model_name: persona_event_outbox
+PERSONA_EVENTS	124972	Defines the canonical outbox model:
+PERSONA_EVENTS	124976	persona_event_outbox_id:
+PERSONA_EVENTS	124990	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	125	Defines the canonical outbox model:
+PERSONA_EVENTS	125046	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	125091	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	125108	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	125191	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	125203	- outbox vs contract authority clarification:
+PERSONA_EVENTS	125749	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	125897	model_name: persona_event_outbox
+PERSONA_EVENTS	125900	Defines the canonical outbox model:
+PERSONA_EVENTS	125904	persona_event_outbox_id:
+PERSONA_EVENTS	125918	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	125943	authority result event:
+PERSONA_EVENTS	125974	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	126019	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	126036	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	126119	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	126131	- outbox vs contract authority clarification:
+PERSONA_EVENTS	12629	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	126462	1 detect pending inbox request:
+PERSONA_EVENTS	12649	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	126500	1 select pending outbox event:
+PERSONA_EVENTS	126507	- outbox event marked dispatched:
+PERSONA_EVENTS	126578	- read pending outbox events:
+PERSONA_EVENTS	126603	- write result event to outbox:
+PERSONA_EVENTS	12668	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	12675	persona_growth_request_inbox_id:
+PERSONA_EVENTS	126871	authority result event:
+PERSONA_EVENTS	12714	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_dir | integration/outbox/:
+PERSONA_EVENTS	12743	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_dir | outbox/:
+PERSONA_EVENTS	12762	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+PERSONA_EVENTS	12765	# persona_event_outbox:
+PERSONA_EVENTS	12777	- persona_event_outbox_id:
+PERSONA_EVENTS	12802	Define canonical outbound sync event contract types from PersonaOS.:
+PERSONA_EVENTS	12816	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+PERSONA_EVENTS	12819	# persona_growth_request_inbox:
+PERSONA_EVENTS	128193	- outbox/support state:
+PERSONA_EVENTS	12831	- persona_growth_request_inbox_id:
+PERSONA_EVENTS	128422	- external growth requests must enter inbox first:
+PERSONA_EVENTS	128795	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	128819	- result synchronization must occur through outbox:
+PERSONA_EVENTS	129	persona_event_outbox_id:
+PERSONA_EVENTS	129121	- outbox/support state:
+PERSONA_EVENTS	13	- result synchronization must occur through outbox:
+PERSONA_EVENTS	13	- write result event to outbox:
+PERSONA_EVENTS	130	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	13087	- inbox contract:
+PERSONA_EVENTS	13088	- outbox contract:
+PERSONA_EVENTS	131452	result event,:
+PERSONA_EVENTS	131460	result event:
+PERSONA_EVENTS	131637	and render event contracts.:
+PERSONA_EVENTS	13207	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	13226	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	13227	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	13228	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	132420	authority result event:
+PERSONA_EVENTS	13246	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	13246	result event flow:
+PERSONA_EVENTS	13253	persona_growth_request_inbox_id:
+PERSONA_EVENTS	13253	result event flow:
+PERSONA_EVENTS	13273	6. canonical result event is emitted:
+PERSONA_EVENTS	13280	6. canonical result event is emitted:
+PERSONA_EVENTS	133727	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	13641	model_name: persona_event_outbox
+PERSONA_EVENTS	13644	Defines the canonical outbox model:
+PERSONA_EVENTS	13648	persona_event_outbox_id:
+PERSONA_EVENTS	13662	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	1367	999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	1369	999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	137	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	137608	1. outbox model:
+PERSONA_EVENTS	137609	2. event contract:
+PERSONA_EVENTS	137630	1. inbox model:
+PERSONA_EVENTS	137636	7. outbox verification:
+PERSONA_EVENTS	139	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | status: exact-ready-draft
+PERSONA_EVENTS	139	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	14	- emit feedback and optional outbox side effects:
+PERSONA_EVENTS	14	- inbox contract:
+PERSONA_EVENTS	14	1. apply inbox / validation / canonical apply / feedback:
+PERSONA_EVENTS	14	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	140	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	14015	- inbox contract:
+PERSONA_EVENTS	14016	- outbox contract:
+PERSONA_EVENTS	141	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | status: exact-ready-draft
+PERSONA_EVENTS	142	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	14219	model_name: persona_event_outbox
+PERSONA_EVENTS	14222	Defines the canonical outbox model:
+PERSONA_EVENTS	142225	growth result event:
+PERSONA_EVENTS	14226	persona_event_outbox_id:
+PERSONA_EVENTS	14240	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	142532	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	142856	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	143	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	14309	event contracts,:
+PERSONA_EVENTS	143153	growth result event:
+PERSONA_EVENTS	143460	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	143784	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	14522	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	14524	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	14525	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	14531	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	14534	- inbox_scope:
+PERSONA_EVENTS	14535	- inbox_ref:
+PERSONA_EVENTS	14539	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	14540	- inbox_scope:
+PERSONA_EVENTS	14541	- inbox_ref:
+PERSONA_EVENTS	14543	- inbox_status:
+PERSONA_EVENTS	14551	inbox_status_enum:
+PERSONA_EVENTS	14559	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	14562	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	14581	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	145851	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	14587	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	145888	- BusinessOS approved outbox events:
+PERSONA_EVENTS	14590	- outbox_scope:
+PERSONA_EVENTS	14591	- outbox_ref:
+PERSONA_EVENTS	14595	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	14596	- outbox_scope:
+PERSONA_EVENTS	14597	- outbox_ref:
+PERSONA_EVENTS	14599	- outbox_status:
+PERSONA_EVENTS	14607	outbox_status_enum:
+PERSONA_EVENTS	14615	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	14618	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	147	defines explicit request/response/event contracts:
+PERSONA_EVENTS	14862	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	14864	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	14910	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	14912	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	15	- external growth requests must enter inbox first:
+PERSONA_EVENTS	15	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	15	- outbox contract:
+PERSONA_EVENTS	15	- read pending inbox requests:
+PERSONA_EVENTS	15	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	15	8. downstream outbox enqueue when needed:
+PERSONA_EVENTS	15	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	15	Defines the canonical outbox model:
+PERSONA_EVENTS	15	domain: outbox
+PERSONA_EVENTS	150	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	15016	- inbox_request_id:
+PERSONA_EVENTS	15023	- inbox_request_id:
+PERSONA_EVENTS	15080	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	15103	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	15109	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	15112	- inbox_scope:
+PERSONA_EVENTS	15113	- inbox_ref:
+PERSONA_EVENTS	15117	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	15118	- inbox_scope:
+PERSONA_EVENTS	15119	- inbox_ref:
+PERSONA_EVENTS	15121	- inbox_status:
+PERSONA_EVENTS	151280	- integration outbox / downstream callback / observability / security gate:
+PERSONA_EVENTS	15129	inbox_status_enum:
+PERSONA_EVENTS	151352	- integration outbox and callback subsystem:
+PERSONA_EVENTS	15137	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	151381	8. downstream outbox enqueue when needed:
+PERSONA_EVENTS	15140	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	151518	- outbound external sync outbox:
+PERSONA_EVENTS	15159	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	15165	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	15168	- outbox_scope:
+PERSONA_EVENTS	15169	- outbox_ref:
+PERSONA_EVENTS	15173	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	15174	- outbox_scope:
+PERSONA_EVENTS	15175	- outbox_ref:
+PERSONA_EVENTS	15177	- outbox_status:
+PERSONA_EVENTS	15185	outbox_status_enum:
+PERSONA_EVENTS	15193	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	15196	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	15293	- outbox_event_id:
+PERSONA_EVENTS	15299	- outbox_event_id:
+PERSONA_EVENTS	1532	999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	153384	- inbox_request_id:
+PERSONA_EVENTS	153391	- inbox_request_id:
+PERSONA_EVENTS	1534	999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	153448	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	153667	- outbox_event_id:
+PERSONA_EVENTS	153673	- outbox_event_id:
+PERSONA_EVENTS	154151	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	154182	- BusinessOS approved outbox events:
+PERSONA_EVENTS	155687	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	155707	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	155727	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	155734	persona_growth_request_inbox_id:
+PERSONA_EVENTS	156882	model_name: persona_event_outbox
+PERSONA_EVENTS	156885	Defines the canonical outbox model:
+PERSONA_EVENTS	156889	persona_event_outbox_id:
+PERSONA_EVENTS	156903	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	15755	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_dir | integration/outbox/:
+PERSONA_EVENTS	157803	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	157809	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	157812	- inbox_scope:
+PERSONA_EVENTS	157813	- inbox_ref:
+PERSONA_EVENTS	157817	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	157818	- inbox_scope:
+PERSONA_EVENTS	157819	- inbox_ref:
+PERSONA_EVENTS	157821	- inbox_status:
+PERSONA_EVENTS	157829	inbox_status_enum:
+PERSONA_EVENTS	157837	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	15784	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_dir | outbox/:
+PERSONA_EVENTS	157840	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	157860	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	157866	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	157869	- outbox_scope:
+PERSONA_EVENTS	157870	- outbox_ref:
+PERSONA_EVENTS	157874	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	157875	- outbox_scope:
+PERSONA_EVENTS	157876	- outbox_ref:
+PERSONA_EVENTS	157878	- outbox_status:
+PERSONA_EVENTS	157886	outbox_status_enum:
+PERSONA_EVENTS	157894	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	157897	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	157989	- inbox contract:
+PERSONA_EVENTS	157990	- outbox contract:
+PERSONA_EVENTS	158	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	16	1 detect pending inbox request:
+PERSONA_EVENTS	16	1 select pending outbox event:
+PERSONA_EVENTS	16	2 Persona inbox receives request:
+PERSONA_EVENTS	16	7. outbox verification:
+PERSONA_EVENTS	160	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	160	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	160144	canonical result event must be emitted after apply:
+PERSONA_EVENTS	160530	- read pending inbox requests:
+PERSONA_EVENTS	160541	1 select pending inbox request:
+PERSONA_EVENTS	160552	- inbox state persisted with audit trace:
+PERSONA_EVENTS	160593	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	160611	5 enqueue outbox event:
+PERSONA_EVENTS	160616	- outbox event created once idempotently:
+PERSONA_EVENTS	160621	- outbox enqueue failure:
+PERSONA_EVENTS	160625	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	160650	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	160669	5 enqueue outbox event:
+PERSONA_EVENTS	160674	- outbox event created with target traceability:
+PERSONA_EVENTS	160679	- outbox enqueue failure:
+PERSONA_EVENTS	160683	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	160710	- select pending outbox rows:
+PERSONA_EVENTS	160720	1 select pending or retryable outbox event:
+PERSONA_EVENTS	160729	- outbox row marked dispatched:
+PERSONA_EVENTS	160769	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	160795	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	162	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	162	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	162695	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	162704	- inbox event received:
+PERSONA_EVENTS	162705	- outbox event queued:
+PERSONA_EVENTS	16271	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	162711	1 resolve inbox or outbox target:
+PERSONA_EVENTS	16273	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	163	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	163727	result event flow:
+PERSONA_EVENTS	163757	6. canonical result event is emitted:
+PERSONA_EVENTS	164	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	164291	2 Persona inbox receives request:
+PERSONA_EVENTS	164329	2 Persona inbox receives request:
+PERSONA_EVENTS	164362	2 Persona inbox receives request:
+PERSONA_EVENTS	164397	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	164398	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	164399	5 external OS receives result through inbox path:
+PERSONA_EVENTS	164432	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	164433	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	164434	5 external OS receives result through inbox path:
+PERSONA_EVENTS	164602	# 0301300001_persona_event_outbox:
+PERSONA_EVENTS	164607	path: 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+PERSONA_EVENTS	164617	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	164668	# 0301300003_persona_growth_request_inbox:
+PERSONA_EVENTS	164673	path: 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+PERSONA_EVENTS	164683	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	16510	canonical result event must be emitted after apply:
+PERSONA_EVENTS	165725	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	166011	- integration inbox / outbox / result feedback:
+PERSONA_EVENTS	16625	- read pending inbox requests:
+PERSONA_EVENTS	16636	1 select pending inbox request:
+PERSONA_EVENTS	16647	- inbox state persisted with audit trace:
+PERSONA_EVENTS	16687	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	16705	5 enqueue outbox event:
+PERSONA_EVENTS	16710	- outbox event created once idempotently:
+PERSONA_EVENTS	16715	- outbox enqueue failure:
+PERSONA_EVENTS	16719	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	16743	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	16762	5 enqueue outbox event:
+PERSONA_EVENTS	16767	- outbox event created with target traceability:
+PERSONA_EVENTS	16772	- outbox enqueue failure:
+PERSONA_EVENTS	16776	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	167862	1 detect pending inbox request:
+PERSONA_EVENTS	167900	1 select pending outbox event:
+PERSONA_EVENTS	167907	- outbox event marked dispatched:
+PERSONA_EVENTS	167978	- read pending outbox events:
+PERSONA_EVENTS	168003	- write result event to outbox:
+PERSONA_EVENTS	16802	- select pending outbox rows:
+PERSONA_EVENTS	16812	1 select pending or retryable outbox event:
+PERSONA_EVENTS	16821	- outbox row marked dispatched:
+PERSONA_EVENTS	168264	- inbox_request_id:
+PERSONA_EVENTS	168271	- inbox_request_id:
+PERSONA_EVENTS	168328	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	168529	- outbox_event_id:
+PERSONA_EVENTS	168535	- outbox_event_id:
+PERSONA_EVENTS	16860	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	16885	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	169	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	169938	- external growth requests must enter inbox first:
+PERSONA_EVENTS	17	- BusinessOS approved outbox events:
+PERSONA_EVENTS	17	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	170	persona_growth_request_inbox_id:
+PERSONA_EVENTS	170311	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	170335	- result synchronization must occur through outbox:
+PERSONA_EVENTS	170831	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	170851	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	170865	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	170872	persona_growth_request_inbox_id:
+PERSONA_EVENTS	17088	canonical result event must be emitted after apply:
+PERSONA_EVENTS	17097	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	171	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	17103	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	17106	- inbox_scope:
+PERSONA_EVENTS	17107	- inbox_ref:
+PERSONA_EVENTS	17111	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	17112	- inbox_scope:
+PERSONA_EVENTS	17113	- inbox_ref:
+PERSONA_EVENTS	17115	- inbox_status:
+PERSONA_EVENTS	17123	inbox_status_enum:
+PERSONA_EVENTS	17131	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	17134	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	17152	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	17158	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	17161	- outbox_scope:
+PERSONA_EVENTS	17162	- outbox_ref:
+PERSONA_EVENTS	17166	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	17167	- outbox_scope:
+PERSONA_EVENTS	17168	- outbox_ref:
+PERSONA_EVENTS	17170	- outbox_status:
+PERSONA_EVENTS	17178	outbox_status_enum:
+PERSONA_EVENTS	17186	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	17189	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	17203	- read pending inbox requests:
+PERSONA_EVENTS	17214	1 select pending inbox request:
+PERSONA_EVENTS	172190	model_name: persona_event_outbox
+PERSONA_EVENTS	172193	Defines the canonical outbox model:
+PERSONA_EVENTS	172197	persona_event_outbox_id:
+PERSONA_EVENTS	172211	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	17225	- inbox state persisted with audit trace:
+PERSONA_EVENTS	17265	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	17283	5 enqueue outbox event:
+PERSONA_EVENTS	17288	- outbox event created once idempotently:
+PERSONA_EVENTS	17293	- outbox enqueue failure:
+PERSONA_EVENTS	172968	result event,:
+PERSONA_EVENTS	17297	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	172976	result event:
+PERSONA_EVENTS	173005	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	173011	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	173014	- inbox_scope:
+PERSONA_EVENTS	173015	- inbox_ref:
+PERSONA_EVENTS	173019	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	173020	- inbox_scope:
+PERSONA_EVENTS	173021	- inbox_ref:
+PERSONA_EVENTS	173023	- inbox_status:
+PERSONA_EVENTS	173031	inbox_status_enum:
+PERSONA_EVENTS	173039	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	173042	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	173056	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	173062	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	173065	- outbox_scope:
+PERSONA_EVENTS	173066	- outbox_ref:
+PERSONA_EVENTS	173070	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	173071	- outbox_scope:
+PERSONA_EVENTS	173072	- outbox_ref:
+PERSONA_EVENTS	173074	- outbox_status:
+PERSONA_EVENTS	173082	outbox_status_enum:
+PERSONA_EVENTS	173090	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	173093	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	173153	and render event contracts.:
+PERSONA_EVENTS	17321	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	17340	5 enqueue outbox event:
+PERSONA_EVENTS	17345	- outbox event created with target traceability:
+PERSONA_EVENTS	17350	- outbox enqueue failure:
+PERSONA_EVENTS	17354	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	17380	- select pending outbox rows:
+PERSONA_EVENTS	17390	1 select pending or retryable outbox event:
+PERSONA_EVENTS	173936	authority result event:
+PERSONA_EVENTS	17399	- outbox row marked dispatched:
+PERSONA_EVENTS	17438	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	17463	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	175219	- emit feedback and optional outbox side effects:
+PERSONA_EVENTS	175243	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	17567	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	17569	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	175965	canonical result event must be emitted after apply:
+PERSONA_EVENTS	176528	- read pending inbox requests:
+PERSONA_EVENTS	176539	1 select pending inbox request:
+PERSONA_EVENTS	176550	- inbox state persisted with audit trace:
+PERSONA_EVENTS	176585	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	176603	5 enqueue outbox event:
+PERSONA_EVENTS	176608	- outbox event created once idempotently:
+PERSONA_EVENTS	176613	- outbox enqueue failure:
+PERSONA_EVENTS	176617	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	176636	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	176655	5 enqueue outbox event:
+PERSONA_EVENTS	176660	- outbox event created with target traceability:
+PERSONA_EVENTS	176665	- outbox enqueue failure:
+PERSONA_EVENTS	176669	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	176679	outbox_runtime_role:
+PERSONA_EVENTS	176700	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	176720	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	178717	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	178726	- inbox event received:
+PERSONA_EVENTS	178727	- outbox event queued:
+PERSONA_EVENTS	178733	1 resolve inbox or outbox target:
+PERSONA_EVENTS	17905	result event,:
+PERSONA_EVENTS	17907	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	17909	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	17912	result event,:
+PERSONA_EVENTS	179124	1. outbox model:
+PERSONA_EVENTS	179125	2. event contract:
+PERSONA_EVENTS	17913	result event:
+PERSONA_EVENTS	179146	1. inbox model:
+PERSONA_EVENTS	179152	7. outbox verification:
+PERSONA_EVENTS	17920	result event:
+PERSONA_EVENTS	179697	result event flow:
+PERSONA_EVENTS	179721	6. canonical result event is emitted:
+PERSONA_EVENTS	18	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	18	- outbox_event_id:
+PERSONA_EVENTS	18	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	18	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	18	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	18	5. outbox / retry / dead-letter / monitoring / acceptance:
+PERSONA_EVENTS	18	6. canonical result event is emitted:
+PERSONA_EVENTS	18	and render event contracts.:
+PERSONA_EVENTS	180	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | same_dir_file | missing_file | PERSONA_OS_INTEGRATED_CANONICAL.md | 030.model/010.canonical/130.integration/PERSONA_OS_INTEGRATED_CANONICAL.md:
+PERSONA_EVENTS	180542	2 Persona inbox receives request:
+PERSONA_EVENTS	180574	2 Persona inbox receives request:
+PERSONA_EVENTS	180601	2 Persona inbox receives request:
+PERSONA_EVENTS	180630	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	180631	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	180632	5 external OS receives result through inbox path:
+PERSONA_EVENTS	180659	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	180660	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	180661	5 external OS receives result through inbox path:
+PERSONA_EVENTS	18072	and render event contracts.:
+PERSONA_EVENTS	18079	and render event contracts.:
+PERSONA_EVENTS	18144	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	18153	- inbox event received:
+PERSONA_EVENTS	18154	- outbox event queued:
+PERSONA_EVENTS	18160	1 resolve inbox or outbox target:
+PERSONA_EVENTS	181879	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	182	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | same_dir_file | missing_file | PERSONA_OS_INTEGRATED_CANONICAL.md | 030.model/010.canonical/130.integration/PERSONA_OS_INTEGRATED_CANONICAL.md:
+PERSONA_EVENTS	1823	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	1825	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	183527	- external sync outbox:
+PERSONA_EVENTS	183573	outbox_contract:
+PERSONA_EVENTS	183580	- outbox_id:
+PERSONA_EVENTS	18565	authority result event:
+PERSONA_EVENTS	18572	authority result event:
+PERSONA_EVENTS	186377	1 detect pending inbox request:
+PERSONA_EVENTS	186409	1 select pending outbox event:
+PERSONA_EVENTS	186416	- outbox event marked dispatched:
+PERSONA_EVENTS	186475	- read pending outbox events:
+PERSONA_EVENTS	186494	- write result event to outbox:
+PERSONA_EVENTS	18722	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	18731	- inbox event received:
+PERSONA_EVENTS	18732	- outbox event queued:
+PERSONA_EVENTS	18738	1 resolve inbox or outbox target:
+PERSONA_EVENTS	18800	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_dir | integration/outbox/:
+PERSONA_EVENTS	18829	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_dir | outbox/:
+PERSONA_EVENTS	18844	6. canonical result event is emitted:
+PERSONA_EVENTS	188508	- external growth requests must enter inbox first:
+PERSONA_EVENTS	188924	outbox_rules:
+PERSONA_EVENTS	188925	- outbox is retry-safe only:
+PERSONA_EVENTS	188943	- result synchronization must occur through outbox:
+PERSONA_EVENTS	18993	- read pending inbox requests:
+PERSONA_EVENTS	19	- `external_sync_outbox`:
+PERSONA_EVENTS	19	- inbox_request_id:
+PERSONA_EVENTS	19	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	19	domain: outbox
+PERSONA_EVENTS	19	persona_event_outbox_id:
+PERSONA_EVENTS	19	persona_growth_request_inbox_id:
+PERSONA_EVENTS	19	result event,:
+PERSONA_EVENTS	190	defines explicit request/response/event contracts:
+PERSONA_EVENTS	19004	1 select pending inbox request:
+PERSONA_EVENTS	19015	- inbox state persisted with audit trace:
+PERSONA_EVENTS	19035	2 Persona inbox receives request:
+PERSONA_EVENTS	19054	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	19072	2 Persona inbox receives request:
+PERSONA_EVENTS	19072	5 enqueue outbox event:
+PERSONA_EVENTS	19077	- outbox event created once idempotently:
+PERSONA_EVENTS	19082	- outbox enqueue failure:
+PERSONA_EVENTS	19086	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	19104	2 Persona inbox receives request:
+PERSONA_EVENTS	19109	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	19128	5 enqueue outbox event:
+PERSONA_EVENTS	19133	- outbox event created with target traceability:
+PERSONA_EVENTS	19138	- outbox enqueue failure:
+PERSONA_EVENTS	19138	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	19139	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	19140	5 external OS receives result through inbox path:
+PERSONA_EVENTS	19142	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	191643	result event,:
+PERSONA_EVENTS	191651	result event:
+PERSONA_EVENTS	19167	- select pending outbox rows:
+PERSONA_EVENTS	19172	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	19173	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	19174	5 external OS receives result through inbox path:
+PERSONA_EVENTS	19177	1 select pending or retryable outbox event:
+PERSONA_EVENTS	19186	- outbox row marked dispatched:
+PERSONA_EVENTS	191916	and render event contracts.:
+PERSONA_EVENTS	19224	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	19248	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	193108	authority result event:
+PERSONA_EVENTS	19322	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	19324	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	193848	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	194	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	19422	6. canonical result event is emitted:
+PERSONA_EVENTS	196	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	19613	2 Persona inbox receives request:
+PERSONA_EVENTS	19650	2 Persona inbox receives request:
+PERSONA_EVENTS	19682	2 Persona inbox receives request:
+PERSONA_EVENTS	19700	# 0301300001_persona_event_outbox:
+PERSONA_EVENTS	19705	path: 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+PERSONA_EVENTS	19715	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	19716	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	19717	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	19718	5 external OS receives result through inbox path:
+PERSONA_EVENTS	19750	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	19751	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	19752	5 external OS receives result through inbox path:
+PERSONA_EVENTS	19766	# 0301300003_persona_growth_request_inbox:
+PERSONA_EVENTS	19771	path: 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+PERSONA_EVENTS	19781	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	19786	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	19795	- inbox event received:
+PERSONA_EVENTS	19796	- outbox event queued:
+PERSONA_EVENTS	197992	- outbox and dead-letter durable storage:
+PERSONA_EVENTS	19802	1 resolve inbox or outbox target:
+PERSONA_EVENTS	199	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	19915	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	20	5 external OS receives result through inbox path:
+PERSONA_EVENTS	20	domain: outbox
+PERSONA_EVENTS	200690	- `external_sync_outbox`:
+PERSONA_EVENTS	200697	- one outbox row per external sync action:
+PERSONA_EVENTS	200915	- apply inbox, validation, canonical apply, apply result feedback:
+PERSONA_EVENTS	200919	- outbox, retry, dead-letter, observability, acceptance:
+PERSONA_EVENTS	201222	- `persona_apply_inbox`:
+PERSONA_EVENTS	2020	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	2022	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	203548	1. outbox model:
+PERSONA_EVENTS	203549	2. event contract:
+PERSONA_EVENTS	203564	1. inbox model:
+PERSONA_EVENTS	203570	7. outbox verification:
+PERSONA_EVENTS	20400	2 Persona inbox receives request:
+PERSONA_EVENTS	20436	2 Persona inbox receives request:
+PERSONA_EVENTS	20467	2 Persona inbox receives request:
+PERSONA_EVENTS	204684	1. apply inbox / validation / canonical apply / feedback:
+PERSONA_EVENTS	204688	5. outbox / retry / dead-letter / monitoring / acceptance:
+PERSONA_EVENTS	20500	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	20501	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	20502	5 external OS receives result through inbox path:
+PERSONA_EVENTS	20533	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	20534	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	20535	5 external OS receives result through inbox path:
+PERSONA_EVENTS	20599	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	206	060.integration/1000004_PERSONA_EXTERNAL_SYNC_OUTBOX_INTEGRATION.md | integration | outbox:
+PERSONA_EVENTS	2060	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	2062	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	20628	# 0301300001_persona_event_outbox:
+PERSONA_EVENTS	20631	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	20633	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	20633	path: 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+PERSONA_EVENTS	20643	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	20694	# 0301300003_persona_growth_request_inbox:
+PERSONA_EVENTS	20699	path: 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+PERSONA_EVENTS	20709	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	20977	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	20979	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	21	- actor-originated request or domain event:
+PERSONA_EVENTS	21	- inbox event received:
+PERSONA_EVENTS	21	- inbox_scope:
+PERSONA_EVENTS	21	- outbox_scope:
+PERSONA_EVENTS	21	canonical result event must be emitted after apply:
+PERSONA_EVENTS	21008	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	211	response, and result event contracts:
+PERSONA_EVENTS	21109	- integration inbox / outbox / result feedback:
+PERSONA_EVENTS	212	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	213	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	214	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	215	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	21570	1 detect pending inbox request:
+PERSONA_EVENTS	21607	1 select pending outbox event:
+PERSONA_EVENTS	21614	- outbox event marked dispatched:
+PERSONA_EVENTS	21683	- read pending outbox events:
+PERSONA_EVENTS	217	result event:
+PERSONA_EVENTS	21707	- write result event to outbox:
+PERSONA_EVENTS	218348	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	218368	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	218385	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	218392	persona_growth_request_inbox_id:
+PERSONA_EVENTS	2185	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	218866	model_name: persona_event_outbox
+PERSONA_EVENTS	218869	Defines the canonical outbox model:
+PERSONA_EVENTS	218873	persona_event_outbox_id:
+PERSONA_EVENTS	218887	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	2189	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	21898	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_dir | integration/outbox/:
+PERSONA_EVENTS	219	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	219204	canonical result event must be emitted after apply:
+PERSONA_EVENTS	21927	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_dir | outbox/:
+PERSONA_EVENTS	22	- apply inbox, validation, canonical apply, apply result feedback:
+PERSONA_EVENTS	22	- inbox_ref:
+PERSONA_EVENTS	22	- outbox event queued:
+PERSONA_EVENTS	22	- outbox_ref:
+PERSONA_EVENTS	22	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	220355	result event flow:
+PERSONA_EVENTS	22037	- integration inbox / outbox / result feedback:
+PERSONA_EVENTS	220382	6. canonical result event is emitted:
+PERSONA_EVENTS	22094	920.meta/review/040.file_map/9200400001_PERSONA_OS_PRIORITY_CLUSTER_FILE_MAP.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	221	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	22177	1 detect pending inbox request:
+PERSONA_EVENTS	22213	1 select pending outbox event:
+PERSONA_EVENTS	22220	- outbox event marked dispatched:
+PERSONA_EVENTS	22287	- read pending outbox events:
+PERSONA_EVENTS	22310	- write result event to outbox:
+PERSONA_EVENTS	22380	1 detect pending inbox request:
+PERSONA_EVENTS	22417	1 select pending outbox event:
+PERSONA_EVENTS	22424	- outbox event marked dispatched:
+PERSONA_EVENTS	22493	- read pending outbox events:
+PERSONA_EVENTS	225014	result event,:
+PERSONA_EVENTS	225022	result event:
+PERSONA_EVENTS	22517	- write result event to outbox:
+PERSONA_EVENTS	225181	and render event contracts.:
+PERSONA_EVENTS	225674	authority result event:
+PERSONA_EVENTS	22773	- external growth requests must enter inbox first:
+PERSONA_EVENTS	228	- persona_outbox:
+PERSONA_EVENTS	22938	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	22961	- result synchronization must occur through outbox:
+PERSONA_EVENTS	23	- external sync outbox:
+PERSONA_EVENTS	23	- outbox event marked dispatched:
+PERSONA_EVENTS	23	- outbox, retry, dead-letter, replay:
+PERSONA_EVENTS	23	000000_PERSONA_OS_CANONICAL_FULL.md | no_match | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	23	domain: outbox
+PERSONA_EVENTS	23	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	23086	- external growth requests must enter inbox first:
+PERSONA_EVENTS	231	growth result event:
+PERSONA_EVENTS	23178	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	23200	- result synchronization must occur through outbox:
+PERSONA_EVENTS	23362	- inbox_request_id:
+PERSONA_EVENTS	23369	- inbox_request_id:
+PERSONA_EVENTS	23426	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	23583	- external growth requests must enter inbox first:
+PERSONA_EVENTS	236106	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	236142	- BusinessOS approved outbox events:
+PERSONA_EVENTS	23627	- outbox_event_id:
+PERSONA_EVENTS	23633	- outbox_event_id:
+PERSONA_EVENTS	23748	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	23771	- result synchronization must occur through outbox:
+PERSONA_EVENTS	24	- outbox_event_id:
+PERSONA_EVENTS	24	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	241726	- inbox_request_id:
+PERSONA_EVENTS	241733	- inbox_request_id:
+PERSONA_EVENTS	24175	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	24177	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	241790	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	242006	- outbox_event_id:
+PERSONA_EVENTS	242012	- outbox_event_id:
+PERSONA_EVENTS	24290	- inbox_request_id:
+PERSONA_EVENTS	24297	- inbox_request_id:
+PERSONA_EVENTS	24354	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	243675	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	243695	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	243714	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	243721	persona_growth_request_inbox_id:
+PERSONA_EVENTS	244687	model_name: persona_event_outbox
+PERSONA_EVENTS	244690	Defines the canonical outbox model:
+PERSONA_EVENTS	244694	persona_event_outbox_id:
+PERSONA_EVENTS	244708	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	245	authority result event:
+PERSONA_EVENTS	24555	- outbox_event_id:
+PERSONA_EVENTS	245571	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	245577	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	245580	- inbox_scope:
+PERSONA_EVENTS	245581	- inbox_ref:
+PERSONA_EVENTS	245585	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	245586	- inbox_scope:
+PERSONA_EVENTS	245587	- inbox_ref:
+PERSONA_EVENTS	245589	- inbox_status:
+PERSONA_EVENTS	245597	inbox_status_enum:
+PERSONA_EVENTS	245605	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	245608	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	24561	- outbox_event_id:
+PERSONA_EVENTS	245627	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	245633	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	245636	- outbox_scope:
+PERSONA_EVENTS	245637	- outbox_ref:
+PERSONA_EVENTS	245641	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	245642	- outbox_scope:
+PERSONA_EVENTS	245643	- outbox_ref:
+PERSONA_EVENTS	245645	- outbox_status:
+PERSONA_EVENTS	245653	outbox_status_enum:
+PERSONA_EVENTS	245661	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	245664	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	24610	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	247556	canonical result event must be emitted after apply:
+PERSONA_EVENTS	247671	- read pending inbox requests:
+PERSONA_EVENTS	247682	1 select pending inbox request:
+PERSONA_EVENTS	247693	- inbox state persisted with audit trace:
+PERSONA_EVENTS	247733	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	247751	5 enqueue outbox event:
+PERSONA_EVENTS	247756	- outbox event created once idempotently:
+PERSONA_EVENTS	247761	- outbox enqueue failure:
+PERSONA_EVENTS	247765	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	247789	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	247808	5 enqueue outbox event:
+PERSONA_EVENTS	247813	- outbox event created with target traceability:
+PERSONA_EVENTS	247818	- outbox enqueue failure:
+PERSONA_EVENTS	247822	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	247848	- select pending outbox rows:
+PERSONA_EVENTS	247858	1 select pending or retryable outbox event:
+PERSONA_EVENTS	247867	- outbox row marked dispatched:
+PERSONA_EVENTS	247906	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	247931	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	249190	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	249199	- inbox event received:
+PERSONA_EVENTS	249200	- outbox event queued:
+PERSONA_EVENTS	249206	1 resolve inbox or outbox target:
+PERSONA_EVENTS	249890	6. canonical result event is emitted:
+PERSONA_EVENTS	25	- integration outbox and callback subsystem:
+PERSONA_EVENTS	25	000000_PERSONA_OS_CANONICAL_FULL.md | no_match | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	250081	2 Persona inbox receives request:
+PERSONA_EVENTS	250118	2 Persona inbox receives request:
+PERSONA_EVENTS	250150	2 Persona inbox receives request:
+PERSONA_EVENTS	250184	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	250185	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	250186	5 external OS receives result through inbox path:
+PERSONA_EVENTS	250218	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	250219	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	250220	5 external OS receives result through inbox path:
+PERSONA_EVENTS	251067	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	252848	1 detect pending inbox request:
+PERSONA_EVENTS	252885	1 select pending outbox event:
+PERSONA_EVENTS	252892	- outbox event marked dispatched:
+PERSONA_EVENTS	252961	- read pending outbox events:
+PERSONA_EVENTS	252985	- write result event to outbox:
+PERSONA_EVENTS	25368	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	25370	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	25380	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	254051	- external growth requests must enter inbox first:
+PERSONA_EVENTS	254216	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	254239	- result synchronization must occur through outbox:
+PERSONA_EVENTS	25596	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	25598	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	256938	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	25869	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_dir | integration/outbox/:
+PERSONA_EVENTS	25902	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_dir | outbox/:
+PERSONA_EVENTS	25929	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	25949	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	25963	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	25970	persona_growth_request_inbox_id:
+PERSONA_EVENTS	259887	1. outbox model:
+PERSONA_EVENTS	259888	2. event contract:
+PERSONA_EVENTS	259908	1. inbox model:
+PERSONA_EVENTS	259914	7. outbox verification:
+PERSONA_EVENTS	26	- inbox_request_id:
+PERSONA_EVENTS	26	- one outbox row per external sync action:
+PERSONA_EVENTS	26	- outbox, retry, dead-letter, observability, acceptance:
+PERSONA_EVENTS	26	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	26	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	26	1 select pending inbox request:
+PERSONA_EVENTS	260885	defines explicit request/response/event contracts:
+PERSONA_EVENTS	260928	defines explicit request/response/event contracts:
+PERSONA_EVENTS	262000	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	262002	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	262366	persona_event_outbox:
+PERSONA_EVENTS	262374	persona_growth_request_inbox:
+PERSONA_EVENTS	262581	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	262583	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	262762	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	262764	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	263779	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	263781	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	263790	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	263792	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	263801	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	263803	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	263840	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations_support/030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	263841	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	263842	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	264022	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations_support/030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	264024	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	264091	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	264093	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	26470	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	26486	1. outbox model:
+PERSONA_EVENTS	26487	2. event contract:
+PERSONA_EVENTS	26506	1. inbox model:
+PERSONA_EVENTS	26512	7. outbox verification:
+PERSONA_EVENTS	266450	and render event contracts.:
+PERSONA_EVENTS	266655	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	266811	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	266831	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	266844	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	266851	persona_growth_request_inbox_id:
+PERSONA_EVENTS	266955	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	267000	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	267229	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	267266	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	267633	response, and result event contracts:
+PERSONA_EVENTS	267639	result event:
+PERSONA_EVENTS	26857	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	26877	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	26891	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	26898	persona_growth_request_inbox_id:
+PERSONA_EVENTS	269723	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	269871	model_name: persona_event_outbox
+PERSONA_EVENTS	269874	Defines the canonical outbox model:
+PERSONA_EVENTS	269878	persona_event_outbox_id:
+PERSONA_EVENTS	269892	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	269948	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	269993	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	27	- inbox_scope:
+PERSONA_EVENTS	27	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	27	- outbox_scope:
+PERSONA_EVENTS	27	authority result event:
+PERSONA_EVENTS	27	result event:
+PERSONA_EVENTS	270010	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	270093	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	270105	- outbox vs contract authority clarification:
+PERSONA_EVENTS	270845	authority result event:
+PERSONA_EVENTS	27288	model_name: persona_event_outbox
+PERSONA_EVENTS	27291	Defines the canonical outbox model:
+PERSONA_EVENTS	27295	persona_event_outbox_id:
+PERSONA_EVENTS	27309	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	273095	- outbox/support state:
+PERSONA_EVENTS	274	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	277	070.operations/100.integration/0700610001_PERSONA_OUTBOX_DISPATCH_OPERATION.md | operations | outbox:
+PERSONA_EVENTS	28	- inbox_ref:
+PERSONA_EVENTS	28	- integration outbox / downstream callback / observability / security gate:
+PERSONA_EVENTS	28	- outbox_ref:
+PERSONA_EVENTS	28	1 resolve inbox or outbox target:
+PERSONA_EVENTS	28103	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	28109	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	28112	- inbox_scope:
+PERSONA_EVENTS	28113	- inbox_ref:
+PERSONA_EVENTS	28117	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	28118	- inbox_scope:
+PERSONA_EVENTS	28119	- inbox_ref:
+PERSONA_EVENTS	28121	- inbox_status:
+PERSONA_EVENTS	28129	inbox_status_enum:
+PERSONA_EVENTS	28137	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	28140	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	28154	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	28160	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	28163	- outbox_scope:
+PERSONA_EVENTS	28164	- outbox_ref:
+PERSONA_EVENTS	28168	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	28169	- outbox_scope:
+PERSONA_EVENTS	28170	- outbox_ref:
+PERSONA_EVENTS	28172	- outbox_status:
+PERSONA_EVENTS	28180	outbox_status_enum:
+PERSONA_EVENTS	28188	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	28191	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	28204	1. outbox model:
+PERSONA_EVENTS	28205	2. event contract:
+PERSONA_EVENTS	28216	model_name: persona_event_outbox
+PERSONA_EVENTS	28219	Defines the canonical outbox model:
+PERSONA_EVENTS	28223	persona_event_outbox_id:
+PERSONA_EVENTS	28225	1. inbox model:
+PERSONA_EVENTS	28231	7. outbox verification:
+PERSONA_EVENTS	28237	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	287127	growth result event:
+PERSONA_EVENTS	287434	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	287758	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	28824	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	28860	- BusinessOS approved outbox events:
+PERSONA_EVENTS	29	- integration inbox / outbox / result feedback:
+PERSONA_EVENTS	29	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	29	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	29	result event flow:
+PERSONA_EVENTS	29031	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	29037	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	29040	- inbox_scope:
+PERSONA_EVENTS	29041	- inbox_ref:
+PERSONA_EVENTS	29045	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	29046	- inbox_scope:
+PERSONA_EVENTS	29047	- inbox_ref:
+PERSONA_EVENTS	29049	- inbox_status:
+PERSONA_EVENTS	29057	inbox_status_enum:
+PERSONA_EVENTS	29065	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	29068	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	29082	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	29088	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	29091	- outbox_scope:
+PERSONA_EVENTS	29092	- outbox_ref:
+PERSONA_EVENTS	29096	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	29097	- outbox_scope:
+PERSONA_EVENTS	29098	- outbox_ref:
+PERSONA_EVENTS	29100	- outbox_status:
+PERSONA_EVENTS	29108	outbox_status_enum:
+PERSONA_EVENTS	29116	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	29119	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	29202	defines explicit request/response/event contracts:
+PERSONA_EVENTS	29245	defines explicit request/response/event contracts:
+PERSONA_EVENTS	293420	- integration outbox / downstream callback / observability / security gate:
+PERSONA_EVENTS	293492	- integration outbox and callback subsystem:
+PERSONA_EVENTS	293521	8. downstream outbox enqueue when needed:
+PERSONA_EVENTS	293658	- outbound external sync outbox:
+PERSONA_EVENTS	29419	1. outbox model:
+PERSONA_EVENTS	29420	2. event contract:
+PERSONA_EVENTS	29440	1. inbox model:
+PERSONA_EVENTS	29446	7. outbox verification:
+PERSONA_EVENTS	296081	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	296112	- BusinessOS approved outbox events:
+PERSONA_EVENTS	299751	- inbox contract:
+PERSONA_EVENTS	299752	- outbox contract:
+PERSONA_EVENTS	30	- inbox_status:
+PERSONA_EVENTS	30	- outbox_status:
+PERSONA_EVENTS	3015	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/130.integration/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_EVENTS	3017	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/130.integration/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_EVENTS	30317	- emit feedback and optional outbox side effects:
+PERSONA_EVENTS	30317	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	30319	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	30417	defines explicit request/response/event contracts:
+PERSONA_EVENTS	30460	defines explicit request/response/event contracts:
+PERSONA_EVENTS	3055	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/130.integration/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_EVENTS	3057	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/130.integration/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_EVENTS	306100	# 0301300001_persona_event_outbox:
+PERSONA_EVENTS	306105	path: 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+PERSONA_EVENTS	306115	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	306166	# 0301300003_persona_growth_request_inbox:
+PERSONA_EVENTS	306171	path: 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+PERSONA_EVENTS	306181	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	30683	persona_event_outbox:
+PERSONA_EVENTS	30691	persona_growth_request_inbox:
+PERSONA_EVENTS	307377	- integration inbox / outbox / result feedback:
+PERSONA_EVENTS	308930	- inbox_request_id:
+PERSONA_EVENTS	308937	- inbox_request_id:
+PERSONA_EVENTS	30898	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	308994	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	30900	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	309195	- outbox_event_id:
+PERSONA_EVENTS	309201	- outbox_event_id:
+PERSONA_EVENTS	31	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	31063	canonical result event must be emitted after apply:
+PERSONA_EVENTS	31079	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	31081	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	310960	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	310980	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	310994	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	311001	persona_growth_request_inbox_id:
+PERSONA_EVENTS	312055	model_name: persona_event_outbox
+PERSONA_EVENTS	312058	Defines the canonical outbox model:
+PERSONA_EVENTS	312062	persona_event_outbox_id:
+PERSONA_EVENTS	312076	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	31245	- emit feedback and optional outbox side effects:
+PERSONA_EVENTS	312870	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	312876	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	312879	- inbox_scope:
+PERSONA_EVENTS	312880	- inbox_ref:
+PERSONA_EVENTS	312884	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	312885	- inbox_scope:
+PERSONA_EVENTS	312886	- inbox_ref:
+PERSONA_EVENTS	312888	- inbox_status:
+PERSONA_EVENTS	312896	inbox_status_enum:
+PERSONA_EVENTS	312904	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	312907	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	312921	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	312927	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	312930	- outbox_scope:
+PERSONA_EVENTS	312931	- outbox_ref:
+PERSONA_EVENTS	312935	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	312936	- outbox_scope:
+PERSONA_EVENTS	312937	- outbox_ref:
+PERSONA_EVENTS	312939	- outbox_status:
+PERSONA_EVENTS	312947	outbox_status_enum:
+PERSONA_EVENTS	312955	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	312958	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	314886	- emit feedback and optional outbox side effects:
+PERSONA_EVENTS	31532	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	31534	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	315556	canonical result event must be emitted after apply:
+PERSONA_EVENTS	315815	- read pending inbox requests:
+PERSONA_EVENTS	315826	1 select pending inbox request:
+PERSONA_EVENTS	315837	- inbox state persisted with audit trace:
+PERSONA_EVENTS	315872	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	315890	5 enqueue outbox event:
+PERSONA_EVENTS	315895	- outbox event created once idempotently:
+PERSONA_EVENTS	315900	- outbox enqueue failure:
+PERSONA_EVENTS	315904	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	315923	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	315942	5 enqueue outbox event:
+PERSONA_EVENTS	315947	- outbox event created with target traceability:
+PERSONA_EVENTS	315952	- outbox enqueue failure:
+PERSONA_EVENTS	315956	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	315966	outbox_runtime_role:
+PERSONA_EVENTS	315987	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	316007	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	31626	- read pending inbox requests:
+PERSONA_EVENTS	31637	1 select pending inbox request:
+PERSONA_EVENTS	31648	- inbox state persisted with audit trace:
+PERSONA_EVENTS	31683	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	31701	5 enqueue outbox event:
+PERSONA_EVENTS	31706	- outbox event created once idempotently:
+PERSONA_EVENTS	31711	- outbox enqueue failure:
+PERSONA_EVENTS	31715	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	31734	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	31753	5 enqueue outbox event:
+PERSONA_EVENTS	317535	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	317544	- inbox event received:
+PERSONA_EVENTS	317545	- outbox event queued:
+PERSONA_EVENTS	317551	1 resolve inbox or outbox target:
+PERSONA_EVENTS	31758	- outbox event created with target traceability:
+PERSONA_EVENTS	31763	- outbox enqueue failure:
+PERSONA_EVENTS	31767	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	31777	outbox_runtime_role:
+PERSONA_EVENTS	31798	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	3181	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	31818	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	3183	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	318406	result event flow:
+PERSONA_EVENTS	318430	6. canonical result event is emitted:
+PERSONA_EVENTS	318947	2 Persona inbox receives request:
+PERSONA_EVENTS	318979	2 Persona inbox receives request:
+PERSONA_EVENTS	31898	persona_event_outbox:
+PERSONA_EVENTS	319006	2 Persona inbox receives request:
+PERSONA_EVENTS	319035	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	319036	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	319037	5 external OS receives result through inbox path:
+PERSONA_EVENTS	31906	persona_growth_request_inbox:
+PERSONA_EVENTS	319064	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	319065	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	319066	5 external OS receives result through inbox path:
+PERSONA_EVENTS	31991	canonical result event must be emitted after apply:
+PERSONA_EVENTS	319914	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	32096	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	32098	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	32107	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	32109	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	321107	- external sync outbox:
+PERSONA_EVENTS	32113	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	32115	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	321153	outbox_contract:
+PERSONA_EVENTS	321160	- outbox_id:
+PERSONA_EVENTS	32118	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	32120	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	32157	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	32158	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	32159	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	32294	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	32296	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	323218	1 detect pending inbox request:
+PERSONA_EVENTS	323250	1 select pending outbox event:
+PERSONA_EVENTS	323257	- outbox event marked dispatched:
+PERSONA_EVENTS	323316	- read pending outbox events:
+PERSONA_EVENTS	323335	- write result event to outbox:
+PERSONA_EVENTS	32339	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	32341	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	32408	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	32410	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	324979	- external growth requests must enter inbox first:
+PERSONA_EVENTS	325243	outbox_rules:
+PERSONA_EVENTS	325244	- outbox is retry-safe only:
+PERSONA_EVENTS	325262	- result synchronization must occur through outbox:
+PERSONA_EVENTS	32554	- read pending inbox requests:
+PERSONA_EVENTS	32565	1 select pending inbox request:
+PERSONA_EVENTS	32576	- inbox state persisted with audit trace:
+PERSONA_EVENTS	32611	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	32629	5 enqueue outbox event:
+PERSONA_EVENTS	32634	- outbox event created once idempotently:
+PERSONA_EVENTS	32639	- outbox enqueue failure:
+PERSONA_EVENTS	32643	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	32662	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	32681	5 enqueue outbox event:
+PERSONA_EVENTS	32686	- outbox event created with target traceability:
+PERSONA_EVENTS	32691	- outbox enqueue failure:
+PERSONA_EVENTS	32695	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	32705	outbox_runtime_role:
+PERSONA_EVENTS	32726	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	327288	result event,:
+PERSONA_EVENTS	327296	result event:
+PERSONA_EVENTS	327409	and render event contracts.:
+PERSONA_EVENTS	32746	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	328013	authority result event:
+PERSONA_EVENTS	328720	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	33	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	331366	- outbox and dead-letter durable storage:
+PERSONA_EVENTS	33311	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	33313	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	33322	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	33324	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	33333	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	33335	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	333391	- `external_sync_outbox`:
+PERSONA_EVENTS	333398	- one outbox row per external sync action:
+PERSONA_EVENTS	333583	- apply inbox, validation, canonical apply, apply result feedback:
+PERSONA_EVENTS	333587	- outbox, retry, dead-letter, observability, acceptance:
+PERSONA_EVENTS	33372	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	33373	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	33374	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	333890	- `persona_apply_inbox`:
+PERSONA_EVENTS	33554	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	33556	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	335946	1. outbox model:
+PERSONA_EVENTS	335947	2. event contract:
+PERSONA_EVENTS	335962	1. inbox model:
+PERSONA_EVENTS	335968	7. outbox verification:
+PERSONA_EVENTS	33623	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	33625	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	336626	1. apply inbox / validation / canonical apply / feedback:
+PERSONA_EVENTS	336630	5. outbox / retry / dead-letter / monitoring / acceptance:
+PERSONA_EVENTS	33815	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	33824	- inbox event received:
+PERSONA_EVENTS	33825	- outbox event queued:
+PERSONA_EVENTS	33831	1 resolve inbox or outbox target:
+PERSONA_EVENTS	34266	- inbox_request_id:
+PERSONA_EVENTS	34273	- inbox_request_id:
+PERSONA_EVENTS	34330	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	34546	- outbox_event_id:
+PERSONA_EVENTS	34552	- outbox_event_id:
+PERSONA_EVENTS	346	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	34618	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	34638	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	34655	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	34662	persona_growth_request_inbox_id:
+PERSONA_EVENTS	34743	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	34752	- inbox event received:
+PERSONA_EVENTS	34753	- outbox event queued:
+PERSONA_EVENTS	34759	1 resolve inbox or outbox target:
+PERSONA_EVENTS	34767	and render event contracts.:
+PERSONA_EVENTS	34795	result event flow:
+PERSONA_EVENTS	348	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	348	080.policy/060.integration/0800600001_PERSONA_OUTBOX_POLICY.md | policy | outbox:
+PERSONA_EVENTS	34819	6. canonical result event is emitted:
+PERSONA_EVENTS	34972	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	35	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	350257	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	350277	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	350294	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	350301	persona_growth_request_inbox_id:
+PERSONA_EVENTS	350775	model_name: persona_event_outbox
+PERSONA_EVENTS	350778	Defines the canonical outbox model:
+PERSONA_EVENTS	350782	persona_event_outbox_id:
+PERSONA_EVENTS	350796	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	351113	canonical result event must be emitted after apply:
+PERSONA_EVENTS	35128	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	35136	model_name: persona_event_outbox
+PERSONA_EVENTS	35139	Defines the canonical outbox model:
+PERSONA_EVENTS	35143	persona_event_outbox_id:
+PERSONA_EVENTS	35148	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	35157	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	35161	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	35168	persona_growth_request_inbox_id:
+PERSONA_EVENTS	352	- persona_event_inbox:
+PERSONA_EVENTS	352264	result event flow:
+PERSONA_EVENTS	352291	6. canonical result event is emitted:
+PERSONA_EVENTS	35272	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	35317	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	35474	canonical result event must be emitted after apply:
+PERSONA_EVENTS	35546	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	35583	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	35640	2 Persona inbox receives request:
+PERSONA_EVENTS	35672	2 Persona inbox receives request:
+PERSONA_EVENTS	356923	result event,:
+PERSONA_EVENTS	356931	result event:
+PERSONA_EVENTS	35699	2 Persona inbox receives request:
+PERSONA_EVENTS	357090	and render event contracts.:
+PERSONA_EVENTS	35723	result event flow:
+PERSONA_EVENTS	35728	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	35729	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	35730	5 external OS receives result through inbox path:
+PERSONA_EVENTS	35747	6. canonical result event is emitted:
+PERSONA_EVENTS	35757	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	35758	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	357583	authority result event:
+PERSONA_EVENTS	35759	5 external OS receives result through inbox path:
+PERSONA_EVENTS	35950	response, and result event contracts:
+PERSONA_EVENTS	35956	result event:
+PERSONA_EVENTS	35982	and render event contracts.:
+PERSONA_EVENTS	36	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	36	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	36	5 enqueue outbox event:
+PERSONA_EVENTS	36001	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	36021	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	36040	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	36047	persona_growth_request_inbox_id:
+PERSONA_EVENTS	36187	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	36343	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	36363	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	36376	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	36383	persona_growth_request_inbox_id:
+PERSONA_EVENTS	36487	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	36532	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	36568	2 Persona inbox receives request:
+PERSONA_EVENTS	36600	2 Persona inbox receives request:
+PERSONA_EVENTS	36625	result event flow:
+PERSONA_EVENTS	36627	2 Persona inbox receives request:
+PERSONA_EVENTS	36652	6. canonical result event is emitted:
+PERSONA_EVENTS	36656	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	36657	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	36658	5 external OS receives result through inbox path:
+PERSONA_EVENTS	36685	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	36686	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	36687	5 external OS receives result through inbox path:
+PERSONA_EVENTS	36761	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	36798	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	368015	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	368051	- BusinessOS approved outbox events:
+PERSONA_EVENTS	369	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	36977	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	37	- inbox state persisted with audit trace:
+PERSONA_EVENTS	37013	model_name: persona_event_outbox
+PERSONA_EVENTS	37016	Defines the canonical outbox model:
+PERSONA_EVENTS	37020	persona_event_outbox_id:
+PERSONA_EVENTS	37034	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	37165	response, and result event contracts:
+PERSONA_EVENTS	37171	result event:
+PERSONA_EVENTS	373635	- inbox_request_id:
+PERSONA_EVENTS	373642	- inbox_request_id:
+PERSONA_EVENTS	373699	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	373915	- outbox_event_id:
+PERSONA_EVENTS	373921	- outbox_event_id:
+PERSONA_EVENTS	375584	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	375604	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	375623	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	375630	persona_growth_request_inbox_id:
+PERSONA_EVENTS	376	and render event contracts.:
+PERSONA_EVENTS	376596	model_name: persona_event_outbox
+PERSONA_EVENTS	376599	Defines the canonical outbox model:
+PERSONA_EVENTS	376603	persona_event_outbox_id:
+PERSONA_EVENTS	376617	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	377480	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	377486	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	377489	- inbox_scope:
+PERSONA_EVENTS	377490	- inbox_ref:
+PERSONA_EVENTS	377494	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	377495	- inbox_scope:
+PERSONA_EVENTS	377496	- inbox_ref:
+PERSONA_EVENTS	377498	- inbox_status:
+PERSONA_EVENTS	377506	inbox_status_enum:
+PERSONA_EVENTS	377514	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	377517	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	377536	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	377542	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	377545	- outbox_scope:
+PERSONA_EVENTS	377546	- outbox_ref:
+PERSONA_EVENTS	377550	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	377551	- outbox_scope:
+PERSONA_EVENTS	377552	- outbox_ref:
+PERSONA_EVENTS	377554	- outbox_status:
+PERSONA_EVENTS	377562	outbox_status_enum:
+PERSONA_EVENTS	377570	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	377573	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	37897	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	37903	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	37905	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	37906	- inbox_scope:
+PERSONA_EVENTS	37907	- inbox_ref:
+PERSONA_EVENTS	37911	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	37912	- inbox_scope:
+PERSONA_EVENTS	37913	- inbox_ref:
+PERSONA_EVENTS	37915	- inbox_status:
+PERSONA_EVENTS	37923	inbox_status_enum:
+PERSONA_EVENTS	37931	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	37934	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	379465	canonical result event must be emitted after apply:
+PERSONA_EVENTS	37953	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	379580	- read pending inbox requests:
+PERSONA_EVENTS	37959	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	379591	1 select pending inbox request:
+PERSONA_EVENTS	379602	- inbox state persisted with audit trace:
+PERSONA_EVENTS	37962	- outbox_scope:
+PERSONA_EVENTS	37963	- outbox_ref:
+PERSONA_EVENTS	379642	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	379660	5 enqueue outbox event:
+PERSONA_EVENTS	379665	- outbox event created once idempotently:
+PERSONA_EVENTS	37967	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	379670	- outbox enqueue failure:
+PERSONA_EVENTS	379674	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	37968	- outbox_scope:
+PERSONA_EVENTS	37969	- outbox_ref:
+PERSONA_EVENTS	379698	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	37971	- outbox_status:
+PERSONA_EVENTS	379717	5 enqueue outbox event:
+PERSONA_EVENTS	379722	- outbox event created with target traceability:
+PERSONA_EVENTS	379727	- outbox enqueue failure:
+PERSONA_EVENTS	379731	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	379757	- select pending outbox rows:
+PERSONA_EVENTS	379767	1 select pending or retryable outbox event:
+PERSONA_EVENTS	379776	- outbox row marked dispatched:
+PERSONA_EVENTS	37979	outbox_status_enum:
+PERSONA_EVENTS	379815	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	379840	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	37987	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	37990	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	38	inbox_status_enum:
+PERSONA_EVENTS	38	outbox_status_enum:
+PERSONA_EVENTS	38040	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	381099	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	381108	- inbox event received:
+PERSONA_EVENTS	381109	- outbox event queued:
+PERSONA_EVENTS	381115	1 resolve inbox or outbox target:
+PERSONA_EVENTS	381799	6. canonical result event is emitted:
+PERSONA_EVENTS	38188	model_name: persona_event_outbox
+PERSONA_EVENTS	38191	Defines the canonical outbox model:
+PERSONA_EVENTS	38195	persona_event_outbox_id:
+PERSONA_EVENTS	381990	2 Persona inbox receives request:
+PERSONA_EVENTS	382027	2 Persona inbox receives request:
+PERSONA_EVENTS	382059	2 Persona inbox receives request:
+PERSONA_EVENTS	38209	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	382093	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	382094	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	382095	5 external OS receives result through inbox path:
+PERSONA_EVENTS	382127	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	382128	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	382129	5 external OS receives result through inbox path:
+PERSONA_EVENTS	38265	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	382976	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	38310	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	38327	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	38410	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	38422	- outbox vs contract authority clarification:
+PERSONA_EVENTS	384757	1 detect pending inbox request:
+PERSONA_EVENTS	384794	1 select pending outbox event:
+PERSONA_EVENTS	384801	- outbox event marked dispatched:
+PERSONA_EVENTS	384870	- read pending outbox events:
+PERSONA_EVENTS	384894	- write result event to outbox:
+PERSONA_EVENTS	385960	- external growth requests must enter inbox first:
+PERSONA_EVENTS	386	999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	386125	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	386148	- result synchronization must occur through outbox:
+PERSONA_EVENTS	38625	- external sync outbox:
+PERSONA_EVENTS	38671	outbox_contract:
+PERSONA_EVENTS	38678	- outbox_id:
+PERSONA_EVENTS	388	999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	388847	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	3892	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	3894	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	39162	authority result event:
+PERSONA_EVENTS	391796	1. outbox model:
+PERSONA_EVENTS	391797	2. event contract:
+PERSONA_EVENTS	391817	1. inbox model:
+PERSONA_EVENTS	391823	7. outbox verification:
+PERSONA_EVENTS	39255	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	392794	defines explicit request/response/event contracts:
+PERSONA_EVENTS	392837	defines explicit request/response/event contracts:
+PERSONA_EVENTS	393909	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	393911	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	39403	model_name: persona_event_outbox
+PERSONA_EVENTS	39406	Defines the canonical outbox model:
+PERSONA_EVENTS	39410	persona_event_outbox_id:
+PERSONA_EVENTS	39424	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	394275	persona_event_outbox:
+PERSONA_EVENTS	394283	persona_growth_request_inbox:
+PERSONA_EVENTS	394490	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	394492	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	394671	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	394673	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	39480	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	39525	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	39542	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	39553	- external sync outbox:
+PERSONA_EVENTS	395688	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	395690	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	395699	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	395701	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	395710	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	395712	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	395749	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	395750	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	395751	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	395931	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations_support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	395933	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	39599	outbox_contract:
+PERSONA_EVENTS	396000	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	396002	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	39606	- outbox_id:
+PERSONA_EVENTS	39625	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	39637	- outbox vs contract authority clarification:
+PERSONA_EVENTS	398	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	398359	and render event contracts.:
+PERSONA_EVENTS	398564	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	398720	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	398740	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	398753	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	398760	persona_growth_request_inbox_id:
+PERSONA_EVENTS	39882	canonical result event must be emitted after apply:
+PERSONA_EVENTS	398864	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	398909	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	399138	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	399175	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	399542	response, and result event contracts:
+PERSONA_EVENTS	399548	result event:
+PERSONA_EVENTS	39997	- read pending inbox requests:
+PERSONA_EVENTS	40	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	400	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	40008	1 select pending inbox request:
+PERSONA_EVENTS	40019	- inbox state persisted with audit trace:
+PERSONA_EVENTS	40059	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	40077	5 enqueue outbox event:
+PERSONA_EVENTS	40082	- outbox event created once idempotently:
+PERSONA_EVENTS	40087	- outbox enqueue failure:
+PERSONA_EVENTS	40091	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	40115	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	40134	5 enqueue outbox event:
+PERSONA_EVENTS	40139	- outbox event created with target traceability:
+PERSONA_EVENTS	40144	- outbox enqueue failure:
+PERSONA_EVENTS	40148	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	401632	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	40174	- select pending outbox rows:
+PERSONA_EVENTS	401780	model_name: persona_event_outbox
+PERSONA_EVENTS	401783	Defines the canonical outbox model:
+PERSONA_EVENTS	401787	persona_event_outbox_id:
+PERSONA_EVENTS	401801	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	40184	1 select pending or retryable outbox event:
+PERSONA_EVENTS	401857	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	401902	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	401919	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	40193	- outbox row marked dispatched:
+PERSONA_EVENTS	402002	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	402014	- outbox vs contract authority clarification:
+PERSONA_EVENTS	40232	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	40257	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	402754	authority result event:
+PERSONA_EVENTS	40377	authority result event:
+PERSONA_EVENTS	405004	- outbox/support state:
+PERSONA_EVENTS	41	- outbox event created once idempotently:
+PERSONA_EVENTS	41	- outbox event created with target traceability:
+PERSONA_EVENTS	41284	result event,:
+PERSONA_EVENTS	41292	result event:
+PERSONA_EVENTS	41412	- outbox/support state:
+PERSONA_EVENTS	41451	and render event contracts.:
+PERSONA_EVENTS	41475	1 detect pending inbox request:
+PERSONA_EVENTS	41507	1 select pending outbox event:
+PERSONA_EVENTS	41514	- outbox event marked dispatched:
+PERSONA_EVENTS	41516	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	41525	- inbox event received:
+PERSONA_EVENTS	41526	- outbox event queued:
+PERSONA_EVENTS	41532	1 resolve inbox or outbox target:
+PERSONA_EVENTS	41573	- read pending outbox events:
+PERSONA_EVENTS	41592	- write result event to outbox:
+PERSONA_EVENTS	419036	growth result event:
+PERSONA_EVENTS	419343	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	41944	authority result event:
+PERSONA_EVENTS	419667	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	42	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	42216	6. canonical result event is emitted:
+PERSONA_EVENTS	42403	1 detect pending inbox request:
+PERSONA_EVENTS	42407	2 Persona inbox receives request:
+PERSONA_EVENTS	42435	1 select pending outbox event:
+PERSONA_EVENTS	42442	- outbox event marked dispatched:
+PERSONA_EVENTS	42444	2 Persona inbox receives request:
+PERSONA_EVENTS	42476	2 Persona inbox receives request:
+PERSONA_EVENTS	42501	- read pending outbox events:
+PERSONA_EVENTS	42510	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	42511	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	42512	5 external OS receives result through inbox path:
+PERSONA_EVENTS	42520	- write result event to outbox:
+PERSONA_EVENTS	42544	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	42545	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	42546	5 external OS receives result through inbox path:
+PERSONA_EVENTS	42627	- outbox/support state:
+PERSONA_EVENTS	43287	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	43606	- external growth requests must enter inbox first:
+PERSONA_EVENTS	44	- add exact outbox or callback objects:
+PERSONA_EVENTS	44022	outbox_rules:
+PERSONA_EVENTS	44023	- outbox is retry-safe only:
+PERSONA_EVENTS	44041	- result synchronization must occur through outbox:
+PERSONA_EVENTS	442	- outbox/support state:
+PERSONA_EVENTS	44534	- external growth requests must enter inbox first:
+PERSONA_EVENTS	44942	1 detect pending inbox request:
+PERSONA_EVENTS	44950	outbox_rules:
+PERSONA_EVENTS	44951	- outbox is retry-safe only:
+PERSONA_EVENTS	44969	- result synchronization must occur through outbox:
+PERSONA_EVENTS	44979	1 select pending outbox event:
+PERSONA_EVENTS	44986	- outbox event marked dispatched:
+PERSONA_EVENTS	45	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	45	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	45055	- read pending outbox events:
+PERSONA_EVENTS	45079	- write result event to outbox:
+PERSONA_EVENTS	46	- outbox enqueue failure:
+PERSONA_EVENTS	46	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	46	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	46145	- external growth requests must enter inbox first:
+PERSONA_EVENTS	46310	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	46333	- result synchronization must occur through outbox:
+PERSONA_EVENTS	4635	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	4637	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	46741	result event,:
+PERSONA_EVENTS	46749	result event:
+PERSONA_EVENTS	47	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	47014	and render event contracts.:
+PERSONA_EVENTS	47669	result event,:
+PERSONA_EVENTS	47677	result event:
+PERSONA_EVENTS	47942	and render event contracts.:
+PERSONA_EVENTS	48206	authority result event:
+PERSONA_EVENTS	48752	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	48946	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	49	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	49	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	49134	authority result event:
+PERSONA_EVENTS	49649	growth result event:
+PERSONA_EVENTS	49874	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	49956	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	5	outbox_contract:
+PERSONA_EVENTS	5	outbox_rules:
+PERSONA_EVENTS	5	outbox_runtime_role:
+PERSONA_EVENTS	50	040.runtime/100.integration/0400013_PERSONA_EXTERNAL_SYNC_OUTBOX_RUNTIME.md | runtime | outbox:
+PERSONA_EVENTS	50	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	50280	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	51	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	51	040.runtime/100.integration/0400600001_PERSONA_EVENT_OUTBOX_RUNTIME.md | runtime | outbox:
+PERSONA_EVENTS	5155	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	51576	1. outbox model:
+PERSONA_EVENTS	51577	2. event contract:
+PERSONA_EVENTS	51597	1. inbox model:
+PERSONA_EVENTS	51603	7. outbox verification:
+PERSONA_EVENTS	5172	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	5174	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	5190	- BusinessOS approved outbox events:
+PERSONA_EVENTS	52	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	52	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	52196	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	52232	- BusinessOS approved outbox events:
+PERSONA_EVENTS	52574	defines explicit request/response/event contracts:
+PERSONA_EVENTS	52617	defines explicit request/response/event contracts:
+PERSONA_EVENTS	528	persona_event_outbox:
+PERSONA_EVENTS	53	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	53	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	53090	- outbox and dead-letter durable storage:
+PERSONA_EVENTS	536	persona_growth_request_inbox:
+PERSONA_EVENTS	53689	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	53691	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	54	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	54018	- outbox and dead-letter durable storage:
+PERSONA_EVENTS	54055	persona_event_outbox:
+PERSONA_EVENTS	54063	persona_growth_request_inbox:
+PERSONA_EVENTS	54270	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	54272	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	54451	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	54453	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	5452	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	5488	- BusinessOS approved outbox events:
+PERSONA_EVENTS	55468	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	55470	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	55479	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	55481	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	55490	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	55492	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	55529	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	55530	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	55531	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	55711	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	55713	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	55780	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	55782	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	55788	- `external_sync_outbox`:
+PERSONA_EVENTS	55795	- one outbox row per external sync action:
+PERSONA_EVENTS	56013	- apply inbox, validation, canonical apply, apply result feedback:
+PERSONA_EVENTS	56017	- outbox, retry, dead-letter, observability, acceptance:
+PERSONA_EVENTS	56320	- `persona_apply_inbox`:
+PERSONA_EVENTS	5638	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	56659	growth result event:
+PERSONA_EVENTS	56716	- `external_sync_outbox`:
+PERSONA_EVENTS	56723	- one outbox row per external sync action:
+PERSONA_EVENTS	5674	- BusinessOS approved outbox events:
+PERSONA_EVENTS	56941	- apply inbox, validation, canonical apply, apply result feedback:
+PERSONA_EVENTS	56945	- outbox, retry, dead-letter, observability, acceptance:
+PERSONA_EVENTS	56966	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	5724	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	57248	- `persona_apply_inbox`:
+PERSONA_EVENTS	5726	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	57290	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	57638	- inbox_request_id:
+PERSONA_EVENTS	57645	- inbox_request_id:
+PERSONA_EVENTS	57702	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	57918	- outbox_event_id:
+PERSONA_EVENTS	57924	- outbox_event_id:
+PERSONA_EVENTS	58139	and render event contracts.:
+PERSONA_EVENTS	58344	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	58500	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	58520	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	58533	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	58540	persona_growth_request_inbox_id:
+PERSONA_EVENTS	58644	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	58646	1. outbox model:
+PERSONA_EVENTS	58647	2. event contract:
+PERSONA_EVENTS	58662	1. inbox model:
+PERSONA_EVENTS	58668	7. outbox verification:
+PERSONA_EVENTS	58689	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	58918	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	58955	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	593	030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	59322	response, and result event contracts:
+PERSONA_EVENTS	59328	result event:
+PERSONA_EVENTS	59373	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	59393	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	594	920.meta/000.root_files/999_CANONICAL_FILE_SET.txt | missing_file | 999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	59412	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	59419	persona_growth_request_inbox_id:
+PERSONA_EVENTS	595	030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	59574	1. outbox model:
+PERSONA_EVENTS	59575	2. event contract:
+PERSONA_EVENTS	59590	1. inbox model:
+PERSONA_EVENTS	59596	7. outbox verification:
+PERSONA_EVENTS	596	920.meta/000.root_files/999_CANONICAL_FILE_SET.txt | missing_file | 999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	59782	1. apply inbox / validation / canonical apply / feedback:
+PERSONA_EVENTS	59786	5. outbox / retry / dead-letter / monitoring / acceptance:
+PERSONA_EVENTS	6	- outbox is retry-safe only:
+PERSONA_EVENTS	60385	model_name: persona_event_outbox
+PERSONA_EVENTS	60388	Defines the canonical outbox model:
+PERSONA_EVENTS	60392	persona_event_outbox_id:
+PERSONA_EVENTS	60406	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	607	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	60710	1. apply inbox / validation / canonical apply / feedback:
+PERSONA_EVENTS	60714	5. outbox / retry / dead-letter / monitoring / acceptance:
+PERSONA_EVENTS	609	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	61269	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	61275	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	61278	- inbox_scope:
+PERSONA_EVENTS	61279	- inbox_ref:
+PERSONA_EVENTS	61283	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	61284	- inbox_scope:
+PERSONA_EVENTS	61285	- inbox_ref:
+PERSONA_EVENTS	61287	- inbox_status:
+PERSONA_EVENTS	61295	inbox_status_enum:
+PERSONA_EVENTS	61303	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	61306	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	61325	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	61331	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	61334	- outbox_scope:
+PERSONA_EVENTS	61335	- outbox_ref:
+PERSONA_EVENTS	61339	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	61340	- outbox_scope:
+PERSONA_EVENTS	61341	- outbox_ref:
+PERSONA_EVENTS	61343	- outbox_status:
+PERSONA_EVENTS	61351	outbox_status_enum:
+PERSONA_EVENTS	61359	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	61362	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	61412	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	61560	model_name: persona_event_outbox
+PERSONA_EVENTS	61563	Defines the canonical outbox model:
+PERSONA_EVENTS	61567	persona_event_outbox_id:
+PERSONA_EVENTS	61581	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	61637	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	61682	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	61699	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	61782	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	61794	- outbox vs contract authority clarification:
+PERSONA_EVENTS	62534	authority result event:
+PERSONA_EVENTS	6298	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	6300	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	63254	canonical result event must be emitted after apply:
+PERSONA_EVENTS	63369	- read pending inbox requests:
+PERSONA_EVENTS	63380	1 select pending inbox request:
+PERSONA_EVENTS	63391	- inbox state persisted with audit trace:
+PERSONA_EVENTS	63431	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	63449	5 enqueue outbox event:
+PERSONA_EVENTS	63454	- outbox event created once idempotently:
+PERSONA_EVENTS	63459	- outbox enqueue failure:
+PERSONA_EVENTS	63463	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	63487	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	63506	5 enqueue outbox event:
+PERSONA_EVENTS	63511	- outbox event created with target traceability:
+PERSONA_EVENTS	63516	- outbox enqueue failure:
+PERSONA_EVENTS	63520	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	63546	- select pending outbox rows:
+PERSONA_EVENTS	63556	1 select pending or retryable outbox event:
+PERSONA_EVENTS	63565	- outbox row marked dispatched:
+PERSONA_EVENTS	63604	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	63629	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	6378	- integration outbox / downstream callback / observability / security gate:
+PERSONA_EVENTS	64	- outbox vs contract authority clarification:
+PERSONA_EVENTS	6450	- integration outbox and callback subsystem:
+PERSONA_EVENTS	64784	- outbox/support state:
+PERSONA_EVENTS	6479	8. downstream outbox enqueue when needed:
+PERSONA_EVENTS	64888	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	64897	- inbox event received:
+PERSONA_EVENTS	64898	- outbox event queued:
+PERSONA_EVENTS	64904	1 resolve inbox or outbox target:
+PERSONA_EVENTS	65588	6. canonical result event is emitted:
+PERSONA_EVENTS	65779	2 Persona inbox receives request:
+PERSONA_EVENTS	65816	2 Persona inbox receives request:
+PERSONA_EVENTS	65848	2 Persona inbox receives request:
+PERSONA_EVENTS	65882	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	65883	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	65884	5 external OS receives result through inbox path:
+PERSONA_EVENTS	65916	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	65917	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	65918	5 external OS receives result through inbox path:
+PERSONA_EVENTS	66	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	6616	- outbound external sync outbox:
+PERSONA_EVENTS	66659	2. PersonaOS emits growth result event:
+PERSONA_EVENTS	68314	1 detect pending inbox request:
+PERSONA_EVENTS	68351	1 select pending outbox event:
+PERSONA_EVENTS	68358	- outbox event marked dispatched:
+PERSONA_EVENTS	68427	- read pending outbox events:
+PERSONA_EVENTS	68451	- write result event to outbox:
+PERSONA_EVENTS	6850	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	6852	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	69517	- external growth requests must enter inbox first:
+PERSONA_EVENTS	69682	- downstream state must be synchronized through outbox events:
+PERSONA_EVENTS	69705	- result synchronization must occur through outbox:
+PERSONA_EVENTS	70	- 040.runtime/100.integration/0400013_PERSONA_EXTERNAL_SYNC_OUTBOX_RUNTIME.md | runtime | outbox:
+PERSONA_EVENTS	71	- 040.runtime/100.integration/0400600001_PERSONA_EVENT_OUTBOX_RUNTIME.md | runtime | outbox:
+PERSONA_EVENTS	72124	- inbox_ref or outbox_ref:
+PERSONA_EVENTS	73021	growth result event:
+PERSONA_EVENTS	7306	- integration outbox / downstream callback / observability / security gate:
+PERSONA_EVENTS	73328	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	73446	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	73466	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	73483	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	73490	persona_growth_request_inbox_id:
+PERSONA_EVENTS	73652	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	7378	- integration outbox and callback subsystem:
+PERSONA_EVENTS	73964	model_name: persona_event_outbox
+PERSONA_EVENTS	73967	Defines the canonical outbox model:
+PERSONA_EVENTS	73971	persona_event_outbox_id:
+PERSONA_EVENTS	73985	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	7407	8. downstream outbox enqueue when needed:
+PERSONA_EVENTS	74302	canonical result event must be emitted after apply:
+PERSONA_EVENTS	74374	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	74394	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	74411	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	74418	persona_growth_request_inbox_id:
+PERSONA_EVENTS	74892	model_name: persona_event_outbox
+PERSONA_EVENTS	74895	Defines the canonical outbox model:
+PERSONA_EVENTS	74899	persona_event_outbox_id:
+PERSONA_EVENTS	749	000000_PERSONA_OS_CANONICAL_FULL.md | same_dir_file | missing_file | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	74913	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	74948	1. outbox model:
+PERSONA_EVENTS	74949	2. event contract:
+PERSONA_EVENTS	74969	1. inbox model:
+PERSONA_EVENTS	74975	7. outbox verification:
+PERSONA_EVENTS	75230	canonical result event must be emitted after apply:
+PERSONA_EVENTS	753	000000_PERSONA_OS_CANONICAL_FULL.md | same_dir_file | missing_file | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	7544	- outbound external sync outbox:
+PERSONA_EVENTS	75453	result event flow:
+PERSONA_EVENTS	75480	6. canonical result event is emitted:
+PERSONA_EVENTS	75946	defines explicit request/response/event contracts:
+PERSONA_EVENTS	75989	defines explicit request/response/event contracts:
+PERSONA_EVENTS	76381	result event flow:
+PERSONA_EVENTS	76408	6. canonical result event is emitted:
+PERSONA_EVENTS	77061	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	77063	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	7736	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	7738	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	77427	persona_event_outbox:
+PERSONA_EVENTS	77435	persona_growth_request_inbox:
+PERSONA_EVENTS	77642	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	77644	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_to_new_domain_candidate | 030.model/140.integration | integration_family_should_be_absorbed_into_integration_domain |:
+PERSONA_EVENTS	77823	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	77825	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/140.integration | merge_or_split | transport_queue_model_needs_review_against_event_contract_and_ops_support |:
+PERSONA_EVENTS	779	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	781	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	78840	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	78842	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	78851	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | merge_or_split | 030.model/140.integration or 030.model/170.operations-support | queue/transport concept may cross integration and ops support |:
+PERSONA_EVENTS	78853	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | merge_or_split | 030.model/140.integration or 030.model/050.growth | request inbox crosses integration and growth intake meaning |:
+PERSONA_EVENTS	78862	- 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	78864	- 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	78901	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | reassign_to_operations_support_domain | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md | queue/retry/dispatch tracking is operational delivery state |:
+PERSONA_EVENTS	78902	| 030.model/010.canonical/130.integration/0301300002_persona_sync_event_contract.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400003_PERSONA_SYNC_EVENT_CONTRACT_MODEL.md | explicit sync event contract belongs directly to integration domain |:
+PERSONA_EVENTS	78903	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | add_as_new_canonical_submodel | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md | inbound request intake is integration-side contract state |:
+PERSONA_EVENTS	79083	| 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | retire_candidate | 030.model/170.operations-support/0301700003_PERSONA_EVENT_OUTBOX_MODEL.md |:
+PERSONA_EVENTS	79085	| 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | retire_candidate | 030.model/140.integration/0301400004_PERSONA_GROWTH_REQUEST_INBOX_MODEL.md |:
+PERSONA_EVENTS	79152	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/9
+PERSONA_EVENTS	79154	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md -> /data/data/com.termux/files/home/01.civilization-system/02.pers
+PERSONA_EVENTS	8	path: 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md
+PERSONA_EVENTS	8	path: 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md
+PERSONA_EVENTS	80112	result event,:
+PERSONA_EVENTS	80120	result event:
+PERSONA_EVENTS	80279	and render event contracts.:
+PERSONA_EVENTS	8040	920.meta/110.model_review/9201100002_PERSONA_OS_010_CANONICAL_REASSIGNMENT_SHEET.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8042	920.meta/110.model_review/9201100002_PERSONA_OS_010_CANONICAL_REASSIGNMENT_SHEET.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	80772	authority result event:
+PERSONA_EVENTS	8088	920.meta/110.model_review/9201100005_PERSONA_OS_PRIORITY1_MODEL_TARGET_MAPPING.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8090	920.meta/110.model_review/9201100005_PERSONA_OS_PRIORITY1_MODEL_TARGET_MAPPING.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	81040	result event,:
+PERSONA_EVENTS	81048	result event:
+PERSONA_EVENTS	81207	and render event contracts.:
+PERSONA_EVENTS	81309	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	81346	- BusinessOS approved outbox events:
+PERSONA_EVENTS	81511	and render event contracts.:
+PERSONA_EVENTS	81700	authority result event:
+PERSONA_EVENTS	81716	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	81872	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	81892	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	81905	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	81912	persona_growth_request_inbox_id:
+PERSONA_EVENTS	82016	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	82061	- outbox / delivery state is kept outside integration authority truth where needed:
+PERSONA_EVENTS	82290	Interacts with integration/outbox/audit behavior:
+PERSONA_EVENTS	82327	- clarify audit vs outbox vs diagnostic records:
+PERSONA_EVENTS	8245	920.meta/110.model_review/9201100016_PERSONA_OS_130_INTEGRATION_TO_140_INTEGRATION_WORK_SHEET.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8247	920.meta/110.model_review/9201100016_PERSONA_OS_130_INTEGRATION_TO_140_INTEGRATION_WORK_SHEET.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	8255	920.meta/110.model_review/9201100016_PERSONA_OS_130_INTEGRATION_TO_140_INTEGRATION_WORK_SHEET.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8257	920.meta/110.model_review/9201100016_PERSONA_OS_130_INTEGRATION_TO_140_INTEGRATION_WORK_SHEET.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	8261	920.meta/110.model_review/9201100017_PERSONA_OS_130_INTEGRATION_DISPOSITION.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8263	920.meta/110.model_review/9201100017_PERSONA_OS_130_INTEGRATION_DISPOSITION.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	82694	response, and result event contracts:
+PERSONA_EVENTS	82700	result event:
+PERSONA_EVENTS	829	000000_PERSONA_OS_CANONICAL_FULL.md | same_dir_file | missing_file | 0301300001_persona_event_outbox.md | 0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	83	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	831	000000_PERSONA_OS_CANONICAL_FULL.md | same_dir_file | missing_file | 0301300003_persona_growth_request_inbox.md | 0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	8311	920.meta/110.model_review/9201100020_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RETIRE_CANDIDATES.md | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8313	920.meta/110.model_review/9201100020_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RETIRE_CANDIDATES.md | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	84784	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	8479	920.meta/110.model_review/9201100021_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RELOCATION_LOG.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8481	920.meta/110.model_review/9201100021_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RELOCATION_LOG.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	84932	model_name: persona_event_outbox
+PERSONA_EVENTS	84935	Defines the canonical outbox model:
+PERSONA_EVENTS	84939	persona_event_outbox_id:
+PERSONA_EVENTS	84953	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	85009	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	85054	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	85071	- clarify outbox vs integration contract authority distinction:
+PERSONA_EVENTS	8513	920.meta/110.model_review/9201100021_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RELOCATION_LOG.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	8515	920.meta/110.model_review/9201100021_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RELOCATION_LOG.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	85154	- outbox/delivery state is separated from integration contract authority:
+PERSONA_EVENTS	85166	- outbox vs contract authority clarification:
+PERSONA_EVENTS	853	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md | 030.model/010.canonical/130.integration/0301300001_persona_event_outbox.md:
+PERSONA_EVENTS	855	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md | 030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	85906	authority result event:
+PERSONA_EVENTS	88156	- outbox/support state:
+PERSONA_EVENTS	8865	920.meta/140.semantic_review/9201400013_PERSONA_OS_INTEGRATION_SEMANTIC_REVIEW_START.md | missing_dir | outbox/:
+PERSONA_EVENTS	8866	920.meta/140.semantic_review/9201400014_PERSONA_OS_INTEGRATION_CORE_COMPARISON.md | missing_dir | outbox/:
+PERSONA_EVENTS	8872	920.meta/140.semantic_review/9201400017_PERSONA_OS_SEMANTIC_REVIEW_PHASE2_ROADMAP.md | missing_dir | integration/outbox/:
+PERSONA_EVENTS	88724	- inbox_request_id:
+PERSONA_EVENTS	88731	- inbox_request_id:
+PERSONA_EVENTS	88788	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	89007	- outbox_event_id:
+PERSONA_EVENTS	89013	- outbox_event_id:
+PERSONA_EVENTS	9	- outbox and dead-letter durable storage:
+PERSONA_EVENTS	91027	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	91047	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	91067	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	91074	persona_growth_request_inbox_id:
+PERSONA_EVENTS	91204	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	91240	- BusinessOS approved outbox events:
+PERSONA_EVENTS	92132	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	92168	- BusinessOS approved outbox events:
+PERSONA_EVENTS	92222	model_name: persona_event_outbox
+PERSONA_EVENTS	92225	Defines the canonical outbox model:
+PERSONA_EVENTS	92229	persona_event_outbox_id:
+PERSONA_EVENTS	92243	Outbox does not replace the canonical event contract itself.:
+PERSONA_EVENTS	9249	PersonaOS publishes state changes through an event outbox.:
+PERSONA_EVENTS	9259	920.meta/140.semantic_review/9201400034_PERSONA_OS_OPERATIONS_SUPPORT_SEMANTIC_REVIEW_START.md | missing_dir | outbox/:
+PERSONA_EVENTS	9262	920.meta/140.semantic_review/9201400035_PERSONA_OS_OPERATIONS_SUPPORT_CORE_COMPARISON.md | missing_dir | outbox/:
+PERSONA_EVENTS	9264	920.meta/140.semantic_review/9201400036_PERSONA_OS_OPERATIONS_SUPPORT_SEMANTIC_REVIEW_DISPOSITION.md | missing_dir | outbox/:
+PERSONA_EVENTS	9267	920.meta/140.semantic_review/9201400037_PERSONA_OS_SEMANTIC_REVIEW_PHASE2_MID_COMPLETED.md | missing_dir | outbox/:
+PERSONA_EVENTS	9280	- BusinessOS approved outbox events:
+PERSONA_EVENTS	93143	Define the canonical external sync inbox model.:
+PERSONA_EVENTS	93149	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	93152	- inbox_scope:
+PERSONA_EVENTS	93153	- inbox_ref:
+PERSONA_EVENTS	93157	- persona_external_sync_inbox_id:
+PERSONA_EVENTS	93158	- inbox_scope:
+PERSONA_EVENTS	93159	- inbox_ref:
+PERSONA_EVENTS	93161	- inbox_status:
+PERSONA_EVENTS	93169	inbox_status_enum:
+PERSONA_EVENTS	93177	inbox_scope + inbox_ref must suppress duplicate effective sync consumption.:
+PERSONA_EVENTS	93180	External sync inbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	93200	Define the canonical external sync outbox model.:
+PERSONA_EVENTS	93206	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	93209	- outbox_scope:
+PERSONA_EVENTS	93210	- outbox_ref:
+PERSONA_EVENTS	93214	- persona_external_sync_outbox_id:
+PERSONA_EVENTS	93215	- outbox_scope:
+PERSONA_EVENTS	93216	- outbox_ref:
+PERSONA_EVENTS	93218	- outbox_status:
+PERSONA_EVENTS	93226	outbox_status_enum:
+PERSONA_EVENTS	93234	outbox_scope + outbox_ref must suppress duplicate effective sync dispatch.:
+PERSONA_EVENTS	93237	External sync outbox truth belongs to PersonaOS external-sync domain.:
+PERSONA_EVENTS	95	- `persona_apply_inbox`:
+PERSONA_EVENTS	9545	920.meta/150.implementation_prep/00_PERSONA_OS_WORDING_CLEANUP_AND_IMPLEMENTATION_PREP_SUMMARY.md | missing_dir | outbox/:
+PERSONA_EVENTS	95484	canonical result event must be emitted after apply:
+PERSONA_EVENTS	95870	- read pending inbox requests:
+PERSONA_EVENTS	95881	1 select pending inbox request:
+PERSONA_EVENTS	95892	- inbox state persisted with audit trace:
+PERSONA_EVENTS	95933	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	95951	5 enqueue outbox event:
+PERSONA_EVENTS	95956	- outbox event created once idempotently:
+PERSONA_EVENTS	95961	- outbox enqueue failure:
+PERSONA_EVENTS	95965	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	95990	- enqueue Persona external sync outbox event:
+PERSONA_EVENTS	96	3. Is outbox/delivery state clearly separated from integration contract authority?:
+PERSONA_EVENTS	96009	5 enqueue outbox event:
+PERSONA_EVENTS	96014	- outbox event created with target traceability:
+PERSONA_EVENTS	96019	- outbox enqueue failure:
+PERSONA_EVENTS	96023	must not create duplicate effective outbox events.:
+PERSONA_EVENTS	96050	- select pending outbox rows:
+PERSONA_EVENTS	96060	1 select pending or retryable outbox event:
+PERSONA_EVENTS	96069	- outbox row marked dispatched:
+PERSONA_EVENTS	96109	2. corresponding sync event is written to outbox:
+PERSONA_EVENTS	96135	6. canonical result sync event is written to outbox:
+PERSONA_EVENTS	96393	growth result event:
+PERSONA_EVENTS	96700	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	96824	- inbox_request_id:
+PERSONA_EVENTS	96831	- inbox_request_id:
+PERSONA_EVENTS	96888	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	97024	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/130.integration/0301300003_persona_growth_request_inbox.md:
+PERSONA_EVENTS	97104	- outbox_event_id:
+PERSONA_EVENTS	97110	- outbox_event_id:
+PERSONA_EVENTS	97752	- inbox_request_id:
+PERSONA_EVENTS	97759	- inbox_request_id:
+PERSONA_EVENTS	97816	Persona truth must never be overwritten directly from inbox payload.:
+PERSONA_EVENTS	98	3. Is outbox/ops delivery state kept out of integration authority where needed?:
+PERSONA_EVENTS	98032	- outbox_event_id:
+PERSONA_EVENTS	98035	Define runtime for external sync inbox and outbox handling.:
+PERSONA_EVENTS	98038	- outbox_event_id:
+PERSONA_EVENTS	98044	- inbox event received:
+PERSONA_EVENTS	98045	- outbox event queued:
+PERSONA_EVENTS	98051	1 resolve inbox or outbox target:
+PERSONA_EVENTS	98773	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	98793	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	98812	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	98819	persona_growth_request_inbox_id:
+PERSONA_EVENTS	98955	result event flow:
+PERSONA_EVENTS	98985	6. canonical result event is emitted:
+PERSONA_EVENTS	99519	2 Persona inbox receives request:
+PERSONA_EVENTS	99557	2 Persona inbox receives request:
+PERSONA_EVENTS	99590	2 Persona inbox receives request:
+PERSONA_EVENTS	99625	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	99626	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	99627	5 external OS receives result through inbox path:
+PERSONA_EVENTS	99660	3 Persona external sync outbox row is created:
+PERSONA_EVENTS	99661	4 outbox runtime dispatches contract to target OS:
+PERSONA_EVENTS	99662	5 external OS receives result through inbox path:
+PERSONA_EVENTS	99701	Defines the canonical outbound sync event contract:
+PERSONA_EVENTS	99721	Sync event contracts must remain deterministic and mirrorable.:
+PERSONA_EVENTS	99740	model_name: persona_growth_request_inbox
+PERSONA_EVENTS	99747	persona_growth_request_inbox_id:
+PERSONA_EVENTS	99785	model_name: persona_event_outbox
+PERSONA_EVENTS	99788	Defines the canonical outbox model:
+PERSONA_EVENTS	99792	persona_event_outbox_id:
+PERSONA_EVENTS	99806	Outbox does not replace the canonical event contract itself.:

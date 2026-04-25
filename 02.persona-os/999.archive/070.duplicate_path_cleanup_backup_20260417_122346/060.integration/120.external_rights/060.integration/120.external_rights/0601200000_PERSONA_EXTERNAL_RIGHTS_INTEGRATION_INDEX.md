@@ -1,0 +1,8 @@
+# 0601200000_PERSONA_EXTERNAL_RIGHTS_INTEGRATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 060.integration/120.external_rights/060.integration/120.external_rights
+
+- 0601200001_PERSONA_EXTERNAL_RIGHTS_INTEGRATION_OVERVIEW.md
+- 0601200002_PERSONA_EXTERNAL_PLATFORM_INTEGRATION.md

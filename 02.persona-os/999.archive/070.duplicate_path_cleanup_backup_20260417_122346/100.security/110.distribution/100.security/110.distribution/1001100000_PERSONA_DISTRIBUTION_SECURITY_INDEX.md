@@ -1,0 +1,8 @@
+# 1001100000_PERSONA_DISTRIBUTION_SECURITY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 100.security/110.distribution/100.security/110.distribution
+
+- 1001100001_PERSONA_DISTRIBUTION_SECURITY_OVERVIEW.md
+- 1001100002_PERSONA_RELEASE_CHANNEL_SECURITY.md

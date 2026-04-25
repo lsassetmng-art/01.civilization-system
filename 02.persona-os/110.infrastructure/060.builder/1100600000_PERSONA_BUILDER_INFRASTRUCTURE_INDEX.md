@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER INFRASTRUCTURE INDEX
-# ============================================================
+# 1100600000_PERSONA_BUILDER_INFRASTRUCTURE_INDEX
 
-status: canonical
-layer: infrastructure
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER INFRASTRUCTURE documents.
+directory: 110.infrastructure/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-1100600000_PERSONA_BUILDER_INFRASTRUCTURE_INDEX.md
-1100600001_PERSONA_BUILDER_INFRASTRUCTURE_OVERVIEW.md
-1100600002_PERSONA_BUILDER_DRAFT_STORAGE_INFRASTRUCTURE.md
+- 1100600001_PERSONA_BUILDER_INFRASTRUCTURE_OVERVIEW.md
+- 1100600002_PERSONA_BUILDER_DRAFT_STORAGE_INFRASTRUCTURE.md
+- 110.infrastructure/

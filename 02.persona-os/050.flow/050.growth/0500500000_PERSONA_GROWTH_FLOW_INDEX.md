@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA GROWTH FLOW INDEX
-# ============================================================
+# 0500500000_PERSONA_GROWTH_FLOW_INDEX
 
-status: canonical
-layer: flow
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH FLOW documents.
+directory: 050.flow/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-0500500000_PERSONA_GROWTH_FLOW_INDEX.md
-0500500001_PERSONA_GROWTH_FLOW_OVERVIEW.md
-0500500002_PERSONA_GROWTH_APPLY_FLOW.md
+- 0500500001_PERSONA_GROWTH_FLOW_OVERVIEW.md
+- 0500500002_PERSONA_GROWTH_APPLY_FLOW.md
+- 050.flow/

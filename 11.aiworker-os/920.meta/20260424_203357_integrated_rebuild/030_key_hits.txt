@@ -1,0 +1,59 @@
+561:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+1006:- destructive action unlock
+2435:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+3047:- destructive action unlock
+5651:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+5893:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+6533:- destructive action unlock
+10180:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+10876:- destructive action unlock
+15203:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+15953:- destructive action unlock
+21042:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+21847:- destructive action unlock
+27530:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+28388:- destructive action unlock
+34684:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+35591:- destructive action unlock
+42309:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+43257:- destructive action unlock
+52524:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+52969:- destructive action unlock
+54349:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+54961:- destructive action unlock
+57714:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+58354:- destructive action unlock
+61962:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+62658:- destructive action unlock
+66982:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+67732:- destructive action unlock
+72762:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+73567:- destructive action unlock
+79192:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+80050:- destructive action unlock
+86287:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+87194:- destructive action unlock
+93805:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+94753:- destructive action unlock
+103592:- destructive action unlock
+104109:# AIWorkerOS Model Append: President / Manager / Leader / Worker Internal Pipeline
+104117:- HD-R5P / President / プレジデント
+104122:## President
+104124:President is the top executive authority of an AI company.
+104126:President can operate in:
+104134:- President model_no: HD-R5P
+104135:- President authority: ACTIVE
+104136:- President runtime: READY
+104141:Manager receives President internal distribution and converts it into:
+104164:- PG apply
+104165:- destructive action
+105240:# AIWorkerOS Integration Append: President to Manager to W/L/M Internal Pipeline
+105248:1. President HD-R5P creates or holds Manager distribution candidates.
+105250:3. Manager accepts acceptable President instructions.
+105259:8. Manager final gate marks plan as DELIVERY_READY_INTERNAL.
+105670:# AIWorkerOS Policy Append: President W/L/M Internal Pipeline Safety
+105680:- President internal Manager distribution
+105686:- DELIVERY_READY_INTERNAL status
+105695:- PG apply
+105718:DELIVERY_READY_INTERNAL means internal output is ready for review or later app presentation.
+111201:- destructive action

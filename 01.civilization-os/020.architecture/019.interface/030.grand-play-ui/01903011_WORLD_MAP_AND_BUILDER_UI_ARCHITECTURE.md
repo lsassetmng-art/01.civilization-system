@@ -932,3 +932,34 @@ not against the image alone.
 Visual assets support interpretation.
 They do not define truth.
 
+
+## Exact UI Projection Rule
+## Exact UI Projection Rule
+
+World UI must explicitly distinguish:
+
+- canonical truth
+- projection read model
+- UI-local state
+- cached state
+
+These are not interchangeable.
+
+## Exact Builder And Operation Routing
+
+Builder routing targets staged builder sessions.
+Operation routing targets active runtime-owned entities.
+A single ambiguous route must not serve both.
+
+## Exact World Map Boundary
+
+The following must remain separate:
+
+- world map visual projection
+- map focus state
+- builder entry route
+- active operation route
+- notification projection
+
+World UI may display them together,
+but may not collapse them into one mutation surface.

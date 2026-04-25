@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona behavior binding.
+Defines the implementation design for Civilization-side persona behavior binding.
 
 # 2. IMPLEMENTATION TARGETS
 

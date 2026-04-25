@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/930.root_direct_apply_and_rehome_20260420_042416/070.manual_review_needed/0301500002_PERSONA_SECURITY_STATE_MODEL.md	left_in_manual_review	manual file differs from exact-basename candidates or needs explicit human choice

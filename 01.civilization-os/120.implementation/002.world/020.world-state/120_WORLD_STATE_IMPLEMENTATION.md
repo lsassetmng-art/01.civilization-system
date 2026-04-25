@@ -100,3 +100,26 @@ At minimum, the layer should expose:
 - dependency linkage
 - failure and suppression reasons
 
+
+## Exact World State Ownership
+## Exact World State Ownership
+
+World state implementation must explicitly distinguish:
+
+- canonical world state
+- derived world projection
+- progression proposal
+- progression apply result
+- archive and supersede lineage
+
+These must not collapse into one ambiguous state surface.
+
+## Exact World State Guard Rule
+
+World-wide state mutation is allowed only when:
+
+- mutation path is approved
+- authority is resolved
+- target revision is valid
+- required guard passes
+- audit linkage is present

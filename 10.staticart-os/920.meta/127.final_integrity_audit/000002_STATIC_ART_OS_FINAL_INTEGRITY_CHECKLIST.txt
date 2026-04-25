@@ -1,0 +1,31 @@
+NG  | root direct dirs missing count -> 6
+OK  | root direct dirs extra count = 0
+OK  | old extra root dir removed -> 000.index
+OK  | old extra root dir removed -> 010.overview
+OK  | old extra root dir removed -> 060.reference-integration
+OK  | old extra root dir removed -> 120.exactness
+OK  | old extra root dir removed -> 121.db-implementation-prep
+OK  | old extra root dir removed -> 122.api-implementation-prep
+OK  | old extra root dir removed -> 123.ui-implementation-prep
+OK  | old extra root dir removed -> 124.test-implementation-prep
+OK  | old extra root dir removed -> 131.implementation-roadmap
+OK  | old extra root dir removed -> 132.operations
+OK  | old extra root dir removed -> 999.summary
+OK  | canonical target dir exists -> 060.integration/060.reference-integration (files=3)
+OK  | canonical target dir exists -> 120.implementation/121.db-implementation-prep (files=31)
+OK  | canonical target dir exists -> 120.implementation/122.api-implementation-prep (files=85)
+OK  | canonical target dir exists -> 120.implementation/123.ui-implementation-prep (files=41)
+OK  | canonical target dir exists -> 120.implementation/124.test-implementation-prep (files=30)
+OK  | canonical target dir exists -> 130.development/131.implementation-roadmap (files=120)
+OK  | canonical target dir exists -> 130.development/132.operations (files=88)
+OK  | canonical target dir exists -> 900.meta/000.index (files=2)
+OK  | canonical target dir exists -> 900.meta/010.overview (files=2)
+OK  | canonical target dir exists -> 900.meta/120.exactness (files=6)
+OK  | canonical target dir exists -> 900.meta/999.summary (files=3)
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/000_STATIC_ART_OS_INDEX.md
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/000_STATIC_ART_OS_OVERVIEW.md
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/000_STATIC_ART_OS_ROADMAP.md
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/00_STATIC_ART_OS_INTEGRATED.md
+OK  | root integrated status marker present
+OK  | integrated source list exists (count=467)
+OK  | retired root-structure archive has no remaining files

@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA PACKAGE OPERATION INDEX
-# ============================================================
+# 0701000000_PERSONA_PACKAGE_OPERATION_INDEX
 
-status: canonical
-layer: operations
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA PACKAGE OPERATION documents.
+directory: 070.operations/100.package
 
-# ============================================================
-# FILES
-# ============================================================
-
-0701000000_PERSONA_PACKAGE_OPERATION_INDEX.md
-0701000001_PERSONA_PACKAGE_OPERATION_OVERVIEW.md
-0701000002_PERSONA_PACKAGE_ASSEMBLY_OPERATION.md
+- 0701000001_PERSONA_PACKAGE_OPERATION_OVERVIEW.md
+- 0701000002_PERSONA_PACKAGE_ASSEMBLY_OPERATION.md
+- 070.operations/

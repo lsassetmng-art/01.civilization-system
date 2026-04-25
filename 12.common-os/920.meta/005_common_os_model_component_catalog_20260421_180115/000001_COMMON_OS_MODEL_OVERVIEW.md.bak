@@ -1,0 +1,14 @@
+# COMMON OS MODEL OVERVIEW
+
+status: canonical
+layer: model
+
+## Purpose
+This layer defines the metadata model and schema direction for CommonOS.
+
+## Topics
+- app_common schema direction
+- metadata identity and versioning
+- component variants
+- token and theme model
+- locale and template model

@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona life expectancy.
+Defines the implementation design for Civilization-side persona life expectancy.
 
 # 2. IMPLEMENTATION TARGETS
 

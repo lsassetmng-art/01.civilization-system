@@ -1,0 +1,20 @@
+OK  | shared root direct dirs missing count = 0
+OK  | shared root direct dirs extra count = 0
+OK  | old extra root dir removed -> 000.index
+OK  | old extra root dir removed -> 010.overview
+OK  | old extra root dir removed -> 060.reference-integration
+OK  | old extra root dir removed -> 120.exactness
+OK  | old extra root dir removed -> 121.db-implementation-prep
+OK  | old extra root dir removed -> 122.api-implementation-prep
+OK  | old extra root dir removed -> 123.ui-implementation-prep
+OK  | old extra root dir removed -> 124.test-implementation-prep
+OK  | old extra root dir removed -> 131.implementation-roadmap
+OK  | old extra root dir removed -> 132.operations
+OK  | old extra root dir removed -> 999.summary
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/000_STATIC_ART_OS_INDEX.md
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/000_STATIC_ART_OS_OVERVIEW.md
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/000_STATIC_ART_OS_ROADMAP.md
+OK  | root canonical file exists -> /data/data/com.termux/files/home/01.civilization-system/10.staticart-os/00_STATIC_ART_OS_INTEGRATED.md
+OK  | root integrated status marker present
+OK  | integrated source list exists (count=467)
+OK  | retired root-structure archive has no remaining files

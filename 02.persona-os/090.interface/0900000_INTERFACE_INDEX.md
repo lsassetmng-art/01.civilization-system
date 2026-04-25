@@ -1,21 +1,46 @@
-090.interface/0900000_INTERFACE_INDEX.md
-090.interface/130.builder/0900700001_PERSONA_BUILDER_INTERFACE.md
-090.interface/130.builder/0901300002_PERSONA_BUILDER_UI_ITEM_TABLE.md
-090.interface/160.business/0900500001_PERSONA_BUSINESS_DISTRIBUTION_INTERFACE.md
-090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
-090.interface/220.rights-external/0900400001_PERSONA_RELEASE_ADMIN_INTERFACE.md
-090.interface/220.rights-external/0900400002_PERSONA_LICENSE_ADMIN_INTERFACE.md
-090.interface/220.rights-external/0900400003_PERSONA_ACCESS_GRANT_ADMIN_INTERFACE.md
-090.interface/220.rights-external/0900400004_PERSONA_TRANSFER_ADMIN_INTERFACE.md
-090.interface/220.rights-external/0900400005_PERSONA_PACKAGE_ADMIN_INTERFACE.md
-090.interface/220.rights-external/0900400006_PERSONA_DISTRIBUTION_ADMIN_INTERFACE.md
-090.interface/220.rights-external/0902200_PERSONA_RIGHTS_INTERFACE_DETAIL.md
-090.interface/230.external-sync/0902300_PERSONA_EXTERNAL_CONTRACT_INTERFACE_DETAIL.md
-090.interface/230.external-sync/0902301_PERSONA_EXTERNAL_SYNC_INTERFACE_DETAIL.md
-090.interface/230.external-sync/0902302_PERSONA_SYNC_FAILURE_INTERFACE_DETAIL.md
-090.interface/240.expression-composition/0902400_PERSONA_PROFILE_COMPOSITION_INTERFACE_DETAIL.md
-090.interface/240.expression-composition/0902401_PERSONA_PACKAGE_COMPOSITION_INTERFACE_DETAIL.md
-090.interface/240.expression-composition/0902402_PERSONA_MANIFEST_DELIVERY_INTERFACE_DETAIL.md
-090.interface/250.cross-cutting-completion/0902500_PERSONA_LIFECYCLE_INTERFACE_DETAIL.md
-090.interface/250.cross-cutting-completion/0902501_PERSONA_RETRY_DEAD_LETTER_INTERFACE_DETAIL.md
-090.interface/250.cross-cutting-completion/0902502_PERSONA_AUTHORITY_EVIDENCE_INTERFACE_DETAIL.md
+# 0900000_INTERFACE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 090.interface
+
+- 0900000_PERSONA_OS_INTERFACE_INDEX.md
+- 0900001_PERSONA_OS_INTERFACE_OVERVIEW.md
+- 090_PERSONA-OS_INTERFACE_INDEX.md
+- 090_PERSONA-OS_INTERFACE_OVERVIEW.md
+- 090_PERSONA_APPLY_REQUEST_INTERFACE.md
+- 091_PERSONA_APPLY_RESPONSE_INTERFACE.md
+- 092_PERSONA_REJECT_RESPONSE_INTERFACE.md
+- 093_PERSONA_APPLY_STATUS_INTERFACE.md
+- 999_INTERFACE_INDEX.txt
+- 010.core/
+- 020.identity/
+- 030.state/
+- 040.memory/
+- 050.growth/
+- 060.builder/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.interface/
+- 090.snapshot/
+- 100.package/
+- 100.security/
+- 110.distribution/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 130.builder/
+- 140.integration/
+- 140.visual/
+- 150.secretary_interaction_common/
+- 150.security/
+- 160.business/
+- 160.governance/
+- 160.notification_common/
+- 170.background_common/
+- 170.operations-support/
+- 170.operations_support/
+- 210.persona_core/
+- 220.rights_external/
+- 230.external_sync/
+- 240.expression_composition/
+- 250.cross_cutting_completion/

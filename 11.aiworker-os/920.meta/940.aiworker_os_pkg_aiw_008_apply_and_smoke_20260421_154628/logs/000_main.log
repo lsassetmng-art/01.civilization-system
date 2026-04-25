@@ -1,0 +1,163 @@
+============================================================
+AIWORKER OS PKG-AIW-008 APPLY AND SMOKE START
+============================================================
+STAMP      : 20260421_154628
+ROOT       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+PKG8       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-008
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628
+LOG_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs
+============================================================
+PASS: PERSONA_DATABASE_URL is set.
+PASS: PKG-AIW-008 scripts exist.
+============================================================
+STEP 1: apply PKG-AIW-008
+============================================================
+============================================================
+PKG-AIW-008 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 through PKG-AIW-007 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-008
+============================================================
+BEGIN
+DO
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+COMMIT
+BEGIN
+INSERT 0 1
+INSERT 0 1
+UPDATE 0
+INSERT 0 1
+UPDATE 0
+INSERT 0 1
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+UPDATE 0
+INSERT 0 2
+UPDATE 0
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+COMMIT
+BEGIN
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+ fn_store_payload_document 
+---------------------------
+ 
+(1 row)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+============================================================
+PKG-AIW-008 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+STEP 2: verify smoke seed state
+============================================================
+============================================================
+PKG-AIW-008 VERIFY SMOKE SEED STATE
+============================================================
+worker_master.smoke_count=2
+payload_document.smoke_count=4
+official_intake_request.smoke_count=1
+smoke_seed_registry.count=2
+smoke_flow_execution_log.count=0
+============================================================
+PKG-AIW-008 VERIFY SMOKE SEED STATE FINISHED
+============================================================
+============================================================
+STEP 3: run smoke assignment apply
+============================================================
+============================================================
+PKG-AIW-008 SMOKE FLOW ASSIGNMENT APPLY
+============================================================
+ fn_prepare_smoke_assignment_reset 
+-----------------------------------
+ 
+(1 row)
+
+ success_flag | result_code | aiworker_status_code | summary_code | state_family_code | old_state_code | new_state_code |          related_entity_id           |               event_id               |          emitted_at           |           lineage_key            
+--------------+-------------+----------------------+--------------+-------------------+----------------+----------------+--------------------------------------+--------------------------------------+-------------------------------+----------------------------------
+ t            | OK_APPLIED  | APPLIED              | SUM_APPLIED  | ASSIGNMENT        | UNASSIGNED     | ASSIGNED       | f73f03a7-bc51-6b5b-930a-01684bc390dc | 90f3fb6e-ed12-8bcc-77c0-5045f5517b15 | 2026-04-21 06:46:39.696776+00 | 6b84e556e615d202384b58d8ed245ddc
+(1 row)
+
+------------------------------------------------------------
+CURRENT ASSIGNMENT STATE FOR SMOKE WORKER
+71000000-0000-0000-0000-000000001001|ASSIGNED|aiworker_smoke_scope
+============================================================
+PKG-AIW-008 SMOKE FLOW ASSIGNMENT APPLY FINISHED
+============================================================
+============================================================
+STEP 4: run smoke replay / redelivery
+============================================================
+============================================================
+PKG-AIW-008 SMOKE FLOW REPLAY REDELIVERY
+============================================================
+ replay_decision_code  |       result_code        |          existing_intake_id          |      existing_related_entity_id      |          existing_event_id           | redelivery_allowed_flag | review_required_flag |          decided_at           |         redelivered_event_id         
+-----------------------+--------------------------+--------------------------------------+--------------------------------------+--------------------------------------+-------------------------+----------------------+-------------------------------+--------------------------------------
+ REDELIVER_RESULT_ONLY | OK_REDELIVER_RESULT_ONLY | 71000000-0000-0000-0000-000000003104 | f73f03a7-bc51-6b5b-930a-01684bc390dc | 90f3fb6e-ed12-8bcc-77c0-5045f5517b15 | t                       | f                    | 2026-04-21 06:46:41.107859+00 | 220de7d7-d661-f11f-45a7-a7a3f73adfad
+(1 row)
+
+------------------------------------------------------------
+LATEST EVENT_OUTBOX ROWS FOR SMOKE REQUEST
+220de7d7-d661-f11f-45a7-a7a3f73adfad|AIWORKER_ASSIGNMENT_DECIDED|SUM_APPLIED|2026-04-21 06:46:41.107859+00
+90f3fb6e-ed12-8bcc-77c0-5045f5517b15|AIWORKER_ASSIGNMENT_DECIDED|SUM_APPLIED|2026-04-21 06:46:39.696776+00
+============================================================
+PKG-AIW-008 SMOKE FLOW REPLAY REDELIVERY FINISHED
+============================================================
+============================================================
+STEP 5: quick smoke DB checks
+============================================================
+smoke_seed_registry.count=2
+smoke_flow_execution_log.count=0
+smoke_worker.current_assignment=ASSIGNED
+smoke_request.lineage.count=1
+smoke_request.event_outbox.count=2
+smoke_request.latest_replay_decision=REDELIVER_RESULT_ONLY
+============================================================
+AIWORKER OS PKG-AIW-008 APPLY AND SMOKE SUCCESS
+============================================================
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628
+MAIN_LOG   : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs/000_main.log
+SUMMARY    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/000_RESULT_SUMMARY.txt
+LOG FILES:
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs/000_main.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs/010_apply_pkg_aiw_008.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs/020_verify_smoke_seed_state.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs/030_smoke_assignment_apply.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs/040_smoke_replay_redelivery.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/940.aiworker_os_pkg_aiw_008_apply_and_smoke_20260421_154628/logs/050_quick_smoke_db_checks.log
+============================================================

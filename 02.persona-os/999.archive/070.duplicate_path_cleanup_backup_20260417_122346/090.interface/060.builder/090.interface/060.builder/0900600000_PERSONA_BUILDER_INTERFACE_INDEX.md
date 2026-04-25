@@ -1,0 +1,8 @@
+# 0900600000_PERSONA_BUILDER_INTERFACE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 090.interface/060.builder/090.interface/060.builder
+
+- 0900600001_PERSONA_BUILDER_INTERFACE_OVERVIEW.md
+- 0900600002_PERSONA_BUILDER_DRAFT_INTERFACE.md

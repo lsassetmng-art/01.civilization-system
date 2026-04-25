@@ -2,32 +2,33 @@
 # STREAMWATCH ENTITLEMENT CHECK SECURITY
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: security
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines security assumptions around entitlement verification, watchability checks, and stale-state avoidance.
+This document defines security assumptions around watchability and entitlement checks.
 
-## 2. Fixed Inputs
+## 2. Core Rule
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+Playback must depend on authoritative entitlement-aware watchability checks rather than stale UI assumption.
 
-## 3. Design Direction
+## 3. Security Risks
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+Primary risks include:
 
-## 4. Current Status
+- stale playable state
+- cached buy-state mistaken for entitlement
+- wrong viewer_profile context
+- route/device restrictions ignored
+- archive availability assumed without recheck
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+## 4. Final Security Rule
+
+Commercial success and playback authorization are related but not identical security decisions.

@@ -1,0 +1,24 @@
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_CASUAL_CHAT_WORKER_ROOT_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/001_CASUAL_CHAT_WORKER_ROOT_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/030010_CASUAL_CHAT_WORKER_APP_CONTRACT_MODEL.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040020_CASUAL_CHAT_WORKER_SCREEN_EXACT_CORE.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050020_CASUAL_CHAT_WORKER_STATEFLOW_EXACT_CORE.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070020_CASUAL_CHAT_WORKER_API_EXACT_CORE.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080010_CASUAL_CHAT_WORKER_POLICY_EXACT.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090020_CASUAL_CHAT_WORKER_DB_DDL_FREEZE_CORE.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100020_CASUAL_CHAT_WORKER_PRICING_FREEZE_MASTER.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110010_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE_SELECTION.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/120010_CASUAL_CHAT_WORKER_CX_REFERENCE_SELECTION.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/130010_CASUAL_CHAT_WORKER_COMMONOS_COMPONENT_SELECTION.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/140010_CASUAL_CHAT_WORKER_FRIEND_LOVER_SAFETY_EXACT.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/150010_CASUAL_CHAT_WORKER_RIVAL_ANALYSIS_AND_DIFF.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/160010_CASUAL_CHAT_WORKER_FEATURE_ADDITION_PLAN.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md
+/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/180010_CASUAL_CHAT_WORKER_DESIGN_VERIFICATION_GATE.md
+APPEND SOURCE MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/150010_CASUAL_CHAT_WORKER_RIVAL_ANALYSIS_AND_DIFF.md
+APPEND SOURCE MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/160010_CASUAL_CHAT_WORKER_FEATURE_ADDITION_PLAN.md
+APPEND SOURCE MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md
+APPEND SOURCE MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md
+APPEND SOURCE MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/180010_CASUAL_CHAT_WORKER_DESIGN_VERIFICATION_GATE.md

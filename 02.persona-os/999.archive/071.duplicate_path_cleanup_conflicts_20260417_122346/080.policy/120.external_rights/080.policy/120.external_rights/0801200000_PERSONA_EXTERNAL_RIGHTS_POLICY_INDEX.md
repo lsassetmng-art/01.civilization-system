@@ -1,0 +1,8 @@
+# 0801200000_PERSONA_EXTERNAL_RIGHTS_POLICY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 080.policy/120.external_rights/080.policy/120.external_rights
+
+- 0801200001_PERSONA_EXTERNAL_RIGHTS_POLICY_OVERVIEW.md
+- 0801200002_PERSONA_EXTERNAL_RELEASE_POLICY.md

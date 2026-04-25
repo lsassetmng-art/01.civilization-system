@@ -1,0 +1,8 @@
+1317	- persona trust sync may update current projections but must preserve prior trust rows	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1363	- direct mutation of generated payload_json in outbox or inbox history	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+17	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+22	- persona raw-state overwrite	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+3866	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+4161	- persona raw-state overwrite	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+4514	- persona trust sync may update current projections but must preserve prior trust rows	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+4560	- direct mutation of generated payload_json in outbox or inbox history	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	

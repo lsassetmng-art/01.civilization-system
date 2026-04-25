@@ -1,0 +1,8 @@
+# 0900700000_PERSONA_VISUAL_INTERFACE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 090.interface/070.visual/090.interface/070.visual
+
+- 0900700001_PERSONA_VISUAL_INTERFACE_OVERVIEW.md
+- 0900700002_PERSONA_VISUAL_RENDER_INTERFACE.md

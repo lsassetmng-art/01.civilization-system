@@ -1,0 +1,8 @@
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/bridge/commonos_provider_bridge.js
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/mapper/business_commonos_view_mapper.js
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/presenter/business_commonos_shell.css
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/presenter/business_commonos_shell.js
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/theme/business_commonos_theme_tokens.js
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/sync/business_commonos_sync_registry.js
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/adapter/namecardmanager_consumer_adapter.js
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/_commonos/adapter/pocketsecretary_consumer_adapter.js

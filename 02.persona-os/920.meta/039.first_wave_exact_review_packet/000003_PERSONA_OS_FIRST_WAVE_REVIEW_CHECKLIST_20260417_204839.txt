@@ -1,0 +1,8 @@
+CHECK_1: all four first-wave docs must have payload/code/state/persistence/gate sections present
+CHECK_2: no target path may be missing
+CHECK_3: edge_apply and state_apply terminology must not conflict
+CHECK_4: builder_api and builder_storage status families must align
+CHECK_5: publish gate conditions must be explicit before implementation
+CHECK_6: no ambiguous result_code or reject_code families remain in first-wave docs
+CHECK_7: no hidden persistence write path remains in first-wave docs
+CHECK_8: review result must be marked per packet before coding starts

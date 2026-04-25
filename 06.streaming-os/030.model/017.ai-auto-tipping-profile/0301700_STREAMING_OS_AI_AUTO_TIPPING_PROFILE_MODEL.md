@@ -26,13 +26,22 @@ Primary records:
 Recommended meanings:
 - ai_auto_tipping_profile_id
 - ai_human_civilization_id
-- persona_profile_reference
+- persona_signed_snapshot_ref
+  nullable
+- persona_result_event_ref
   nullable
 - affiliated_company_civilization_id
   nullable
 - auto_tipping_enabled_flag
 - created_at
 - updated_at
+
+rule:
+Profile-level persona linkage must remain reference-only.
+
+not_allowed:
+- local persona profile canonical
+- local persona mutable mirror
 
 # ============================================================
 # 3. AI_AUTO_TIPPING_EMOTION_STATE
@@ -57,6 +66,10 @@ Recommended meanings:
   - falling
 - updated_at
 
+rule:
+These are Streaming-local derived reaction states,
+not Persona canonical emotional truth.
+
 # ============================================================
 # 4. AI_AUTO_TIPPING_LIMIT_STATE
 # ============================================================
@@ -70,8 +83,7 @@ Recommended meanings:
 - current_auto_tipping_total_amount
 - current_auto_tipping_stream_amount
 - current_auto_tipping_day_amount
-- system_safety_cap_note
-  nullable
+- available_national_currency_balance
 - updated_at
 
 # ============================================================
@@ -81,12 +93,9 @@ Recommended meanings:
 Recommended meanings:
 - ai_auto_tipping_restriction_state_id
 - ai_auto_tipping_profile_id
-- available_national_currency_balance
 - minor_equivalent_flag
-- company_policy_restriction_flag
-- governance_restriction_flag
-- session_restriction_flag
-- restriction_note
+- company_affiliation_flag
+- restriction_reason_code
   nullable
 - updated_at
 
@@ -100,22 +109,4 @@ Recommended meanings:
 - auto_tipping_stop_flag
 - stop_reason_code
   nullable
-- stop_reason_note
-  nullable
-- resumable_flag
 - updated_at
-
-# ============================================================
-# 7. CANONICAL FIXED STATEMENT
-# ============================================================
-
-This model shall preserve:
-- Ai(human) auto tipping profile
-- emotional reaction state
-- limit state
-- restriction state
-- stop state
-
-Emotional auto tipping behavior
-shall remain explainable and stateful.
-

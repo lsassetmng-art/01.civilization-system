@@ -1,20 +1,8 @@
-# ============================================================
-# PERSONA GROWTH INFRASTRUCTURE INDEX
-# ============================================================
+# 1100500000_PERSONA_GROWTH_INFRASTRUCTURE_INDEX
 
-status: canonical
-layer: infrastructure
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH INFRASTRUCTURE documents.
+directory: 110.infrastructure/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-1100500000_PERSONA_GROWTH_INFRASTRUCTURE_INDEX.md
-1100500001_PERSONA_GROWTH_INFRASTRUCTURE_OVERVIEW.md
+- 1100500001_PERSONA_GROWTH_INFRASTRUCTURE_OVERVIEW.md
+- 110.infrastructure/

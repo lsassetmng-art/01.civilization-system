@@ -9,10 +9,11 @@ owner: Boss
 prepared_by: Zero
 
 purpose:
-Define the canonical streaming persona performer binding model.
+Define the canonical StreamingOS performer-assignment reference model
+for persona-linked participation.
 
 model_type:
-- persona binding truth model
+- performer assignment reference model
 
 primary_key:
 - streaming_persona_performer_binding_id
@@ -29,7 +30,10 @@ fields:
 - binding_version
 - binding_status
 - performer_scope
+- performer_civilization_id
 - persona_id
+- snapshot_id
+- applied_snapshot_id
 - binding_summary
 - effective_from
 - effective_until
@@ -45,7 +49,12 @@ binding_status_enum:
 - archived
 
 contract_version_rule:
-Streaming persona performer bindings must expose explicit version semantics.
+Streaming performer assignment bindings must expose explicit version semantics.
 
 truth_boundary:
-Streaming persona performer binding truth belongs to StreamingOS participation-safety domain.
+- StreamingOS owns performer-assignment and participation-safety truth
+- PersonaOS owns persona internal mutable truth
+
+forbidden:
+- treating performer binding as persona internal truth model
+- storing persona mutable internal state in this model

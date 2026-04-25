@@ -1,5 +1,5 @@
 # ============================================================
-# 020 ARCHITECTURE INDEX
+# 020 INDEX
 # ============================================================
 
 status: canonical
@@ -11,4 +11,5 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 020_OVERVIEW.md
 - 020_STREAM_STUDIO_ARCHITECTURE.md

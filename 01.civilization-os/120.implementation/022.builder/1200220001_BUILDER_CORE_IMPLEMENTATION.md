@@ -72,3 +72,27 @@ boundary meaning,
 validation meaning,
 and failure meaning
 are all explicit and reviewable.
+
+## Exact Builder Core Rule
+## Exact Builder Core Rule
+
+Builder implementation must explicitly separate:
+
+- session
+- draft
+- validation result
+- review state
+- publish artifact
+- active runtime entity
+
+## Exact Publish Guard
+
+Publish is allowed only when:
+
+- draft exists
+- validation passed
+- required review completed
+- authorization passed
+- no conflicting active successor exists
+
+Direct staged overwrite of active runtime truth is prohibited.

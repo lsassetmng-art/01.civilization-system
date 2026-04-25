@@ -1,0 +1,172 @@
+3258:- initiative_preference
+3270:- initiative_preference
+4451:  - initiative_preference_code
+4469:  - initiative_preference_code
+4781:- initiative_preference_code
+4797:- initiative_preference_code
+6741:- initiative_preference
+6753:- initiative_preference
+7934:  - initiative_preference_code
+7952:  - initiative_preference_code
+8264:- initiative_preference_code
+8280:- initiative_preference_code
+8511:  initiative_preference_code text not null,
+8529:  initiative_preference_code text not null,
+11082:- initiative_preference
+11094:- initiative_preference
+12539:  - initiative_preference_code
+12557:  - initiative_preference_code
+12869:- initiative_preference_code
+12885:- initiative_preference_code
+13116:  initiative_preference_code text not null,
+13134:  initiative_preference_code text not null,
+16158:- initiative_preference
+16170:- initiative_preference
+18027:  - initiative_preference_code
+18045:  - initiative_preference_code
+18357:- initiative_preference_code
+18373:- initiative_preference_code
+18604:  initiative_preference_code text not null,
+18622:  initiative_preference_code text not null,
+22050:- initiative_preference
+22062:- initiative_preference
+24089:  - initiative_preference_code
+24107:  - initiative_preference_code
+24419:- initiative_preference_code
+24435:- initiative_preference_code
+24666:  initiative_preference_code text not null,
+24684:  initiative_preference_code text not null,
+28589:- initiative_preference
+28601:- initiative_preference
+30936:  - initiative_preference_code
+30954:  - initiative_preference_code
+31266:- initiative_preference_code
+31282:- initiative_preference_code
+31513:  initiative_preference_code text not null,
+31531:  initiative_preference_code text not null,
+35790:- initiative_preference
+35802:- initiative_preference
+38177:  - initiative_preference_code
+38195:  - initiative_preference_code
+38507:- initiative_preference_code
+38523:- initiative_preference_code
+38754:  initiative_preference_code text not null,
+38772:  initiative_preference_code text not null,
+43453:- initiative_preference
+43465:- initiative_preference
+45881:  - initiative_preference_code
+45899:  - initiative_preference_code
+46211:- initiative_preference_code
+46227:- initiative_preference_code
+46458:  initiative_preference_code text not null,
+46476:  initiative_preference_code text not null,
+55121:- initiative_preference
+55133:- initiative_preference
+56314:  - initiative_preference_code
+56332:  - initiative_preference_code
+56644:- initiative_preference_code
+56660:- initiative_preference_code
+58514:- initiative_preference
+58526:- initiative_preference
+59707:  - initiative_preference_code
+59725:  - initiative_preference_code
+60037:- initiative_preference_code
+60053:- initiative_preference_code
+60284:  initiative_preference_code text not null,
+60302:  initiative_preference_code text not null,
+62818:- initiative_preference
+62830:- initiative_preference
+64275:  - initiative_preference_code
+64293:  - initiative_preference_code
+64605:- initiative_preference_code
+64621:- initiative_preference_code
+64852:  initiative_preference_code text not null,
+64870:  initiative_preference_code text not null,
+67892:- initiative_preference
+67904:- initiative_preference
+69761:  - initiative_preference_code
+69779:  - initiative_preference_code
+70091:- initiative_preference_code
+70107:- initiative_preference_code
+70338:  initiative_preference_code text not null,
+70356:  initiative_preference_code text not null,
+73727:- initiative_preference
+73739:- initiative_preference
+75766:  - initiative_preference_code
+75784:  - initiative_preference_code
+76096:- initiative_preference_code
+76112:- initiative_preference_code
+76343:  initiative_preference_code text not null,
+76361:  initiative_preference_code text not null,
+80210:- initiative_preference
+80222:- initiative_preference
+82557:  - initiative_preference_code
+82575:  - initiative_preference_code
+82887:- initiative_preference_code
+82903:- initiative_preference_code
+83134:  initiative_preference_code text not null,
+83152:  initiative_preference_code text not null,
+87354:- initiative_preference
+87366:- initiative_preference
+89741:  - initiative_preference_code
+89759:  - initiative_preference_code
+90071:- initiative_preference_code
+90087:- initiative_preference_code
+90318:  initiative_preference_code text not null,
+90336:  initiative_preference_code text not null,
+94913:- initiative_preference
+94925:- initiative_preference
+97341:  - initiative_preference_code
+97359:  - initiative_preference_code
+97671:- initiative_preference_code
+97687:- initiative_preference_code
+97918:  initiative_preference_code text not null,
+97936:  initiative_preference_code text not null,
+103746:- initiative_preference
+103758:- initiative_preference
+103839:# AIWorkerOS Model Append: LoVerS Style Feature Profile
+103861:- 12 ビジネスヤンデレ
+103879:- initiative / 会話主導性
+103955:- aiworker.worker_series_tendency
+104054:12 ビジネスヤンデレ
+104183:# AIWorkerOS Model Append: Series Tendency Axis and Profile
+104207:- ビジネスヤンデレ
+104213:### initiative / 積極性
+104217:### user_influence / ユーザー影響度
+104223:### action_restriction / 行動制限
+104230:- per_model / 各個体による
+104232:- soft / やや変化
+104233:- strict_policy / 指定規約厳守
+104259:LoVerS initiative differs by style number, model, gender form, and assigned interaction profile.
+104260:LoVerS may softly adapt wording, distance, reaction tendency, and preference reflection through continued interaction.
+105357:# AIWorkerOS Integration Append: LoVerS Style Feature Reference Surface
+105366:- aiworker.style_feature_axis_catalog
+105367:- aiworker.style_feature_value_catalog
+105368:- aiworker.style_feature_profile
+105369:- aiworker.style_feature_assignment
+105373:- aiworker.vw_lovers_style_feature_profile_v1
+105374:- aiworker.vw_lovers_style_feature_assignment_v1
+105375:- aiworker.vw_app_lovers_style_selection_card_v1
+105381:- aiworker.vw_app_lovers_style_selection_card_v1
+105459:# AIWorkerOS Integration Append: Series Tendency Reference Surface
+105472:- aiworker.series_tendency_axis_catalog
+105473:- aiworker.series_tendency_value_catalog
+105474:- aiworker.series_tendency_profile
+105478:- aiworker.vw_series_tendency_profile_v1
+105479:- aiworker.vw_series_tendency_summary_v1
+105480:- aiworker.vw_hd_lovers_series_tendency_compare_v1
+105486:- aiworker.vw_series_tendency_summary_v1
+105490:- aiworker.vw_series_tendency_profile_v1
+105494:- aiworker.vw_hd_lovers_series_tendency_compare_v1
+105922:- ビジネスヤンデレ
+105984:# AIWorkerOS Policy Append: LoVerS Style Feature Safety
+106091:# AIWorkerOS Policy Append: Series Tendency Safety
+106114:HD Series has user_influence = none.
+106120:LoVerS has user_influence = soft.
+106122:LoVerS may adapt tone, distance, and preference reflection softly.
+107405:  - initiative_preference_code
+107423:  - initiative_preference_code
+107739:- initiative_preference_code
+107755:- initiative_preference_code
+107990:  initiative_preference_code text not null,
+108008:  initiative_preference_code text not null,

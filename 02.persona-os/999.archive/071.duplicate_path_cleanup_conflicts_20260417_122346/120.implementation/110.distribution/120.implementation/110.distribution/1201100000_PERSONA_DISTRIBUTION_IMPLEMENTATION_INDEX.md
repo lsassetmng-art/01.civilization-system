@@ -1,0 +1,8 @@
+# 1201100000_PERSONA_DISTRIBUTION_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/110.distribution/120.implementation/110.distribution
+
+- 1201100001_PERSONA_DISTRIBUTION_IMPLEMENTATION_OVERVIEW.md
+- 1201100002_PERSONA_RELEASE_IMPLEMENTATION.md

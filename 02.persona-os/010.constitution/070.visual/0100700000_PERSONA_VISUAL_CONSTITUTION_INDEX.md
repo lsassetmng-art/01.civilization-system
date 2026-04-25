@@ -1,10 +1,8 @@
-# ============================================================
-# PERSONA VISUAL CONSTITUTION INDEX
-# ============================================================
+# 0100700000_PERSONA_VISUAL_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/070.visual
+
+- 0100700001_PERSONA_VISUAL_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

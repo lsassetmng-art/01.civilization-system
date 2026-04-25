@@ -1,13 +1,9 @@
-# ============================================================
-# PERSONA INTEGRATION CONSTITUTION INDEX
-# ============================================================
+# 0101400000_PERSONA_INTEGRATION_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: integration
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA INTEGRATION CONSTITUTION documents.
+directory: 010.constitution/140.integration
+
+- 0101400001_PERSONA_INTEGRATION_CONSTITUTION.md
+- 0101400001_PERSONA_INTEGRATION_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA PACKAGE SECURITY INDEX
-# ============================================================
+# 1001000000_PERSONA_PACKAGE_SECURITY_INDEX
 
-status: canonical
-layer: security
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA PACKAGE SECURITY documents.
+directory: 100.security/100.package
 
-# ============================================================
-# FILES
-# ============================================================
-
-1001000000_PERSONA_PACKAGE_SECURITY_INDEX.md
-1001000001_PERSONA_PACKAGE_SECURITY_OVERVIEW.md
-1001000002_PERSONA_PACKAGE_INTEGRITY_SECURITY.md
+- 1001000001_PERSONA_PACKAGE_SECURITY_OVERVIEW.md
+- 1001000002_PERSONA_PACKAGE_INTEGRITY_SECURITY.md
+- 100.security/

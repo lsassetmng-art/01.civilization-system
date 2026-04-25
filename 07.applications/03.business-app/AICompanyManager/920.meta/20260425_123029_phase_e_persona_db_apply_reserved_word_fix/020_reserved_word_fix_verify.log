@@ -1,0 +1,72 @@
+AICompanyManager Persona-side reserved word fix verification start
+ table_schema |             table_name             
+--------------+------------------------------------
+ business     | ai_company_manager_approval
+ business     | ai_company_manager_audit_log
+ business     | ai_company_manager_company
+ business     | ai_company_manager_deliverable
+ business     | ai_company_manager_delivery
+ business     | ai_company_manager_pipeline_run
+ business     | ai_company_manager_policy
+ business     | ai_company_manager_project
+ business     | ai_company_manager_queue_item
+ business     | ai_company_manager_return_request
+ business     | ai_company_manager_review
+ business     | ai_company_manager_role_assignment
+ business     | ai_company_manager_stage
+(13 rows)
+
+ table_schema |           table_name            |    column_name    | data_type 
+--------------+---------------------------------+-------------------+-----------
+ business     | ai_company_manager_pipeline_run | current_role_code | text
+(1 row)
+
+ schemaname |             tablename              |             indexname              
+------------+------------------------------------+------------------------------------
+ business   | ai_company_manager_approval        | idx_aicm_approval_deliverable_id
+ business   | ai_company_manager_approval        | idx_aicm_approval_project_id
+ business   | ai_company_manager_approval        | idx_aicm_approval_run_id
+ business   | ai_company_manager_approval        | idx_aicm_approval_status
+ business   | ai_company_manager_audit_log       | idx_aicm_audit_action_code
+ business   | ai_company_manager_audit_log       | idx_aicm_audit_created_at
+ business   | ai_company_manager_audit_log       | idx_aicm_audit_owner_user_id
+ business   | ai_company_manager_audit_log       | idx_aicm_audit_project_id
+ business   | ai_company_manager_audit_log       | idx_aicm_audit_run_id
+ business   | ai_company_manager_company         | idx_aicm_company_owner_user_id
+ business   | ai_company_manager_company         | idx_aicm_company_status
+ business   | ai_company_manager_deliverable     | idx_aicm_deliverable_parent_id
+ business   | ai_company_manager_deliverable     | idx_aicm_deliverable_run_id
+ business   | ai_company_manager_deliverable     | idx_aicm_deliverable_status
+ business   | ai_company_manager_delivery        | idx_aicm_delivery_approval_id
+ business   | ai_company_manager_delivery        | idx_aicm_delivery_project_id
+ business   | ai_company_manager_delivery        | idx_aicm_delivery_run_id
+ business   | ai_company_manager_delivery        | idx_aicm_delivery_status
+ business   | ai_company_manager_pipeline_run    | idx_aicm_pipeline_aiworker_run_ref
+ business   | ai_company_manager_pipeline_run    | idx_aicm_pipeline_policy_id
+ business   | ai_company_manager_pipeline_run    | idx_aicm_pipeline_project_id
+ business   | ai_company_manager_pipeline_run    | idx_aicm_pipeline_status
+ business   | ai_company_manager_policy          | idx_aicm_policy_project_id
+ business   | ai_company_manager_policy          | idx_aicm_policy_status
+ business   | ai_company_manager_project         | idx_aicm_project_company_id
+ business   | ai_company_manager_project         | idx_aicm_project_created_at
+ business   | ai_company_manager_project         | idx_aicm_project_owner_user_id
+ business   | ai_company_manager_project         | idx_aicm_project_status
+ business   | ai_company_manager_queue_item      | idx_aicm_queue_owner_user_id
+ business   | ai_company_manager_queue_item      | idx_aicm_queue_project_id
+ business   | ai_company_manager_queue_item      | idx_aicm_queue_status
+ business   | ai_company_manager_queue_item      | idx_aicm_queue_type
+ business   | ai_company_manager_return_request  | idx_aicm_return_deliverable_id
+ business   | ai_company_manager_return_request  | idx_aicm_return_review_id
+ business   | ai_company_manager_return_request  | idx_aicm_return_run_id
+ business   | ai_company_manager_return_request  | idx_aicm_return_status
+ business   | ai_company_manager_review          | idx_aicm_review_deliverable_id
+ business   | ai_company_manager_review          | idx_aicm_review_run_id
+ business   | ai_company_manager_review          | idx_aicm_review_status
+ business   | ai_company_manager_role_assignment | idx_aicm_role_assignment_role_code
+ business   | ai_company_manager_role_assignment | idx_aicm_role_assignment_run_id
+ business   | ai_company_manager_stage           | idx_aicm_stage_run_id
+ business   | ai_company_manager_stage           | idx_aicm_stage_stage_code
+ business   | ai_company_manager_stage           | idx_aicm_stage_status
+(44 rows)
+
+AICompanyManager Persona-side reserved word fix verification done

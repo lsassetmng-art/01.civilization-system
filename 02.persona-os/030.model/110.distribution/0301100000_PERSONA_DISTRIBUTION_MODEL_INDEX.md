@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA DISTRIBUTION MODEL INDEX
-# ============================================================
+# 0301100000_PERSONA_DISTRIBUTION_MODEL_INDEX
 
-status: canonical
-layer: model
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA DISTRIBUTION MODEL documents.
+directory: 030.model/110.distribution
 
-# ============================================================
-# FILES
-# ============================================================
-
-0301100000_PERSONA_DISTRIBUTION_MODEL_INDEX.md
-0301100001_PERSONA_DISTRIBUTION_MODEL_OVERVIEW.md
-0301100002_PERSONA_DISTRIBUTION_RECORD_MODEL.md
+- 0301100001_PERSONA_DISTRIBUTION_MODEL_OVERVIEW.md
+- 0301100002_PERSONA_DISTRIBUTION_RECORD_MODEL.md
+- 030.model/

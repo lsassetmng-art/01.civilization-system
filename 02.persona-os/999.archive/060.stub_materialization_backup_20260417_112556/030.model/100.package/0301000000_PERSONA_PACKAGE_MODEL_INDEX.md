@@ -1,0 +1,8 @@
+# 0301000000_PERSONA_PACKAGE_MODEL_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 030.model/100.package
+
+- 0301000001_PERSONA_PACKAGE_MODEL_OVERVIEW.md
+- 0301000002_PERSONA_PACKAGE_MODEL.md

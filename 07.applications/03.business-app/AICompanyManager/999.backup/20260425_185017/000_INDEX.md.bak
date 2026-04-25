@@ -1,0 +1,125 @@
+# ============================================================
+# AICompanyManager INDEX
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase Q
+status: repository-push-precheck-created
+final_completion_state: final-completion-packaged
+owner: Boss
+prepared_by: Zero
+
+## 1. Purpose
+
+AICompanyManager is a business-app for operating an AI company from a human-facing application.
+
+Human gives policy to President.
+President creates business plan.
+Manager breaks it into domains and actions.
+Leader breaks actions into deliverables and tasks.
+Worker executes tasks and creates outputs.
+Leader reviews and integrates.
+Manager reviews.
+President performs final review.
+Human approves and receives delivery.
+
+## 2. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 3. Current Completion
+
+Phase A:
+- app skeleton completed
+
+Phase B:
+- DB / API / State exact design completed
+
+Phase C:
+- DB DDL Design Review Package completed
+
+Phase D:
+- DB apply preparation package completed
+
+Phase E Persona DB:
+- PERSONA_DATABASE_URL apply executed
+- reserved word fix completed
+- current_role_code fixed
+
+Phase F:
+- Persona-side RLS exact policy design completed
+- RLS apply not executed
+
+Phase G-Gate:
+- RLS apply gate created
+- RLS apply not executed
+
+Phase H:
+- BusinessOS implementation skeleton created
+
+Phase I:
+- API client mock wiring completed
+
+Phase J:
+- offline-first queue UX completed
+
+Phase K:
+- review / delivery UI completed
+
+Phase L:
+- server route placeholder completed
+
+Phase N:
+- acceptance and final handoff completed
+
+Phase O:
+- final completion seal completed
+
+Phase P:
+- push-ready manifest completed
+
+Phase Q:
+- repository push precheck completed
+- git push not executed
+
+## 4. Latest Phase Q Documents
+
+| file | purpose |
+|---|---|
+| 1500_PHASE_Q_ROADMAP.md | Phase Q roadmap |
+| 1510_REPOSITORY_PUSH_PRECHECK_REPORT.md | repository push precheck report |
+| 1520_PUSH_COMMAND_MEMO.md | push command memo |
+| 1590_PHASE_Q_COMPLETION_REPORT.md | Phase Q report |
+| 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | integrated design |
+
+## 5. Implementation Root
+
+~/03.civilization-development/03.business-os/AICompanyManager
+
+## 6. Deferred
+
+RLS apply:
+- RLS APPLY: DEFERRED
+- deferred until explicit Boss RLS OK / GO
+
+Live AIWorkerOS bridge:
+- LIVE AIWORKEROS CALL: NOT EXECUTED
+- deferred until trusted server route is implemented and approved
+
+## 7. Git
+
+git_detected:
+- yes
+
+repo_root:
+- /data/data/com.termux/files/home/01.civilization-system
+
+git_push:
+- NOT EXECUTED

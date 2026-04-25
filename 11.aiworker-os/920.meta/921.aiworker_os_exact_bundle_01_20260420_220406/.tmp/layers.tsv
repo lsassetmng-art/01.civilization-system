@@ -1,0 +1,18 @@
+000.rules|000_AIWORKER-OS_RULES_INDEX.md|000_AIWORKER-OS_RULES_OVERVIEW.md|rules|Defines root rules and structural layer policy for AiworkerOS.
+010.constitution|010_AIWORKER-OS_CONSTITUTION_INDEX.md|010_AIWORKER-OS_CONSTITUTION_OVERVIEW.md|constitution|Defines constitutional identity and non-negotiable boundaries.
+020.architecture|020_AIWORKER-OS_ARCHITECTURE_INDEX.md|020_AIWORKER-OS_ARCHITECTURE_OVERVIEW.md|architecture|Defines exact architecture, truth split, and runtime surface structure.
+030.model|030_AIWORKER-OS_MODEL_INDEX.md|030_AIWORKER-OS_MODEL_OVERVIEW.md|model|Defines exact worker classification, tendency, assignment, and fit models.
+040.runtime|040_AIWORKER-OS_RUNTIME_INDEX.md|040_AIWORKER-OS_RUNTIME_OVERVIEW.md|runtime|Defines runtime evaluation order and gate behavior.
+050.flow|050_AIWORKER-OS_FLOW_INDEX.md|050_AIWORKER-OS_FLOW_OVERVIEW.md|flow|Defines canonical flows for write surfaces, dispatch, repair, and rebuild.
+060.integration|060_AIWORKER-OS_INTEGRATION_INDEX.md|060_AIWORKER-OS_INTEGRATION_OVERVIEW.md|integration|Defines BusinessOS and cx22073jw integration boundaries and contracts.
+070.operations|070_AIWORKER-OS_OPERATIONS_INDEX.md|070_AIWORKER-OS_OPERATIONS_OVERVIEW.md|operations|Defines operational governance for worker lifecycle and review.
+080.policy|080_AIWORKER-OS_POLICY_INDEX.md|080_AIWORKER-OS_POLICY_OVERVIEW.md|policy|Defines policy constraints for style, rank, access, and review.
+090.interface|090_AIWORKER-OS_INTERFACE_INDEX.md|090_AIWORKER-OS_INTERFACE_OVERVIEW.md|interface|Defines exact command, draft, staging, intake, and event interfaces.
+100.security|100_AIWORKER-OS_SECURITY_INDEX.md|100_AIWORKER-OS_SECURITY_OVERVIEW.md|security|Defines gating, least-read access, and write-surface control.
+110.infrastructure|110_AIWORKER-OS_INFRASTRUCTURE_INDEX.md|110_AIWORKER-OS_INFRASTRUCTURE_OVERVIEW.md|infrastructure|Defines schema, tables, enums, views, and controlled functions.
+120.implementation|120_AIWORKER-OS_IMPLEMENTATION_INDEX.md|120_AIWORKER-OS_IMPLEMENTATION_OVERVIEW.md|implementation|Defines implementation phases and acceptance gates.
+130.development|130_AIWORKER-OS_DEVELOPMENT_INDEX.md|130_AIWORKER-OS_DEVELOPMENT_OVERVIEW.md|development|Defines next workblocks and implementation priorities.
+900.society|900_AIWORKER-OS_SOCIETY_INDEX.md|900_AIWORKER-OS_SOCIETY_OVERVIEW.md|society|Defines AiworkerOS position in worker society design.
+910.civilization|910_AIWORKER-OS_CIVILIZATION_INDEX.md|910_AIWORKER-OS_CIVILIZATION_OVERVIEW.md|civilization|Defines AiworkerOS position in the wider Civilization System.
+920.meta|920_AIWORKER-OS_META_INDEX.md|920_AIWORKER-OS_META_OVERVIEW.md|meta|Stores manifests and generated metadata for AiworkerOS.
+999.archive|999_AIWORKER-OS_ARCHIVE_INDEX.md|999_AIWORKER-OS_ARCHIVE_OVERVIEW.md|archive|Stores archived or superseded documents only.

@@ -1,0 +1,28 @@
+# CasualChatWorker Phase F Freeze Completion Verify
+
+status: FAIL
+generated_at: 20260424_223440
+
+app_name: CasualChatWorker
+display_name: 雑談ワーカー
+
+counts:
+- PASS_COUNT: 68
+- FAIL_COUNT: 13
+- WARN_COUNT: 0
+
+outputs:
+- missing_required_files: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/900.meta/20260424_223440_phase_f_missing_required_files.txt
+- missing_folder_index_overview: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/900.meta/20260424_223440_phase_f_missing_folder_index_overview.txt
+- key_term_hits: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/900.meta/20260424_223440_phase_f_key_term_hits.txt
+
+integrated_file:
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md
+
+notes:
+- No DB apply was executed.
+- No destructive action was executed.
+- ERP direct linkage remains non-v1.
+- Lover remains pseudo-romantic rental boyfriend/girlfriend style AI worker.
+- Monthly free tickets remain 2 tickets, 30 minutes each.
+

@@ -272,3 +272,29 @@ The following actions must be idempotent by request key or event id:
 
 This domain is implementation-ready at structural level and
 can be translated into DB schema, service handlers, and UI/API contracts.
+
+## Exact Dispute Truth Boundary
+## Exact Dispute Truth Boundary
+
+Dispute implementation must explicitly distinguish:
+
+- dispute filing
+- party binding
+- claim content
+- evidence posture
+- mediation posture
+- judgment or resolution
+- enforcement linkage
+
+These are related but not interchangeable.
+
+## Exact Dispute Binding Rule
+
+Dispute results may bind to:
+
+- marketplace cases
+- government detail cases
+- career disputes
+- organizational disputes
+
+But dispute truth must not collapse into those domain truths.

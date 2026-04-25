@@ -62,7 +62,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/220.rights-external
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/230.external-sync
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/240.expression-composition
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/250.cross-cutting-completion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/250.cross_cutting_completion
 
 ## SECOND-LEVEL DIRECTORIES
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/010.identity
@@ -95,7 +95,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/220.rights-external
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/230.external-sync
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/240.expression-composition
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/250.cross-cutting-completion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/250.cross_cutting_completion
 
 ## SECOND-LEVEL DIRECTORIES
 
@@ -112,7 +112,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/220.rights-external
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/230.external-sync
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/240.expression-composition
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/250.cross-cutting-completion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/250.cross_cutting_completion
 
 ## SECOND-LEVEL DIRECTORIES
 
@@ -136,7 +136,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/220.rights-external
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/230.external-sync
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/240.expression-composition
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/250.cross-cutting-completion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/250.cross_cutting_completion
 
 ## SECOND-LEVEL DIRECTORIES
 
@@ -153,7 +153,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/220.rights-external
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/230.external-sync
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/240.expression-composition
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/250.cross-cutting-completion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/250.cross_cutting_completion
 
 ## SECOND-LEVEL DIRECTORIES
 
@@ -169,7 +169,7 @@ base: /data/data/com.termux/files/home/01.civilization-system/02.persona-os
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/220.rights-external
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/230.external-sync
 /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/240.expression-composition
-/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/250.cross-cutting-completion
+/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/250.cross_cutting_completion
 
 ## SECOND-LEVEL DIRECTORIES
 

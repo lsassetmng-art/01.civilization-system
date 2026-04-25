@@ -1,0 +1,1738 @@
+PERSONA_CORE	100019	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	100024	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	100038	Define the canonical persona snapshot model.:
+PERSONA_CORE	100071	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	100090	Define the canonical persona license model.:
+PERSONA_CORE	100149	Define the canonical persona access grant model.:
+PERSONA_CORE	100208	Define the canonical persona transfer record model.:
+PERSONA_CORE	100266	Define the canonical persona external release model.:
+PERSONA_CORE	100324	Define the canonical persona package model.:
+PERSONA_CORE	100361	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	10044	- persona identity:
+PERSONA_CORE	10050	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	10057	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	10058	Defines the root canonical persona record.:
+PERSONA_CORE	100739	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	100756	- persona identity truth model:
+PERSONA_CORE	100759	- persona_core_identity_id:
+PERSONA_CORE	100767	- persona_core_identity_id:
+PERSONA_CORE	100790	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	100795	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	100809	Define the canonical persona state model.:
+PERSONA_CORE	100843	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	100848	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	100862	Define the canonical persona growth model.:
+PERSONA_CORE	100895	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	1009	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	100900	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	100914	Define the canonical persona trust model.:
+PERSONA_CORE	100947	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	100952	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	100966	Define the canonical persona snapshot model.:
+PERSONA_CORE	100999	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	101018	Define the canonical persona license model.:
+PERSONA_CORE	101077	Define the canonical persona access grant model.:
+PERSONA_CORE	1011	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	101106	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	101120	Define the canonical persona core flow.:
+PERSONA_CORE	101136	Define the canonical persona transfer record model.:
+PERSONA_CORE	101147	Define the canonical persona rights flow.:
+PERSONA_CORE	101173	Define the canonical persona package item model.:
+PERSONA_CORE	101194	Define the canonical persona external release model.:
+PERSONA_CORE	101228	Define the canonical persona package composition model.:
+PERSONA_CORE	101252	Define the canonical persona package model.:
+PERSONA_CORE	101286	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	101342	Define the canonical persona manifest projection model.:
+PERSONA_CORE	101395	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	101451	Define the canonical persona composition validation record model.:
+PERSONA_CORE	101669	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	101993	persona profile changes:
+PERSONA_CORE	102101	Define the canonical persona package item model.:
+PERSONA_CORE	102156	Define the canonical persona package composition model.:
+PERSONA_CORE	102197	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	10221	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	102214	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	102221	persona profile change:
+PERSONA_CORE	102270	Define the canonical persona manifest projection model.:
+PERSONA_CORE	102323	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	102379	Define the canonical persona composition validation record model.:
+PERSONA_CORE	1024	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	103	- 040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md | runtime | runtime:
+PERSONA_CORE	103149	persona profile change:
+PERSONA_CORE	10390	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	104106	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	104152	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	10422	Defines the root canonical persona record.:
+PERSONA_CORE	10479	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	105034	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	105260	- persona identity truth:
+PERSONA_CORE	1055	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	1055	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	10585	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	106173	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	106187	Define the canonical persona core flow.:
+PERSONA_CORE	106213	Define the canonical persona rights flow.:
+PERSONA_CORE	107101	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	107115	Define the canonical persona core flow.:
+PERSONA_CORE	107141	Define the canonical persona rights flow.:
+PERSONA_CORE	107338	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	107355	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	10754	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	10787	- persona identity truth:
+PERSONA_CORE	10843	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	108444	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	108487	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	1086	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	109372	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	109395	persona profile default:
+PERSONA_CORE	109994	- persona identity:
+PERSONA_CORE	110106	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	110135	- incompatible persona-core handling:
+PERSONA_CORE	110301	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	110318	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	1104	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	110674	Defines the root canonical persona record.:
+PERSONA_CORE	110715	Defines the reading entry for persona identity models.:
+PERSONA_CORE	110736	Defines the overview of persona identity models.:
+PERSONA_CORE	110944	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	111	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	111229	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	111246	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	111246	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	111337	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	11165	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	11166	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	11167	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	11168	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	11169	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	111796	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	111825	- incompatible persona-core handling:
+PERSONA_CORE	112632	persona identity:
+PERSONA_CORE	112724	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	112753	- incompatible persona-core handling:
+PERSONA_CORE	11292	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	1132	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	11372	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	1139	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	1141	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	114127	persona identity:
+PERSONA_CORE	1149	persona identity:
+PERSONA_CORE	115	PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	115055	persona identity:
+PERSONA_CORE	11534	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	115642	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	115659	- persona identity truth model:
+PERSONA_CORE	115662	- persona_core_identity_id:
+PERSONA_CORE	115670	- persona_core_identity_id:
+PERSONA_CORE	115693	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	115699	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	115713	Define the canonical persona state model.:
+PERSONA_CORE	115747	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	115753	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	115767	Define the canonical persona growth model.:
+PERSONA_CORE	115800	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	115806	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	115820	Define the canonical persona trust model.:
+PERSONA_CORE	115853	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	115859	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	115873	Define the canonical persona snapshot model.:
+PERSONA_CORE	115906	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	115926	Define the canonical persona license model.:
+PERSONA_CORE	115986	Define the canonical persona access grant model.:
+PERSONA_CORE	116	- PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	116046	Define the canonical persona transfer record model.:
+PERSONA_CORE	116105	Define the canonical persona external release model.:
+PERSONA_CORE	116164	Define the canonical persona package model.:
+PERSONA_CORE	11620	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	11684	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	117028	Define the canonical persona package item model.:
+PERSONA_CORE	117084	Define the canonical persona package composition model.:
+PERSONA_CORE	117143	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	117200	Define the canonical persona manifest projection model.:
+PERSONA_CORE	117227	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	117228	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	117229	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	117230	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	117231	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	117254	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	117311	Define the canonical persona composition validation record model.:
+PERSONA_CORE	117656	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	117657	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	117658	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	117659	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	117660	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	117820	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	11814	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	118155	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	118156	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	118157	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	118158	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	118159	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	11821	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	118334	persona profile change:
+PERSONA_CORE	118584	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	118585	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	118586	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	118587	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	118588	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	119403	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	119455	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	119811	Defines the constitutional role of persona identity.:
+PERSONA_CORE	119839	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	119857	Defines the overview of persona identity models.:
+PERSONA_CORE	12	Define the canonical persona access grant model.:
+PERSONA_CORE	12	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	12	Define the canonical persona composition validation record model.:
+PERSONA_CORE	12	Define the canonical persona core flow.:
+PERSONA_CORE	12	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	12	Define the canonical persona external release model.:
+PERSONA_CORE	12	Define the canonical persona growth model.:
+PERSONA_CORE	12	Define the canonical persona license model.:
+PERSONA_CORE	12	Define the canonical persona manifest projection model.:
+PERSONA_CORE	12	Define the canonical persona package composition model.:
+PERSONA_CORE	12	Define the canonical persona package item model.:
+PERSONA_CORE	12	Define the canonical persona package model.:
+PERSONA_CORE	12	Define the canonical persona rights flow.:
+PERSONA_CORE	12	Define the canonical persona snapshot model.:
+PERSONA_CORE	12	Define the canonical persona state model.:
+PERSONA_CORE	12	Define the canonical persona transfer record model.:
+PERSONA_CORE	12	Define the canonical persona trust model.:
+PERSONA_CORE	120331	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	120339	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	120383	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	120739	Defines the constitutional role of persona identity.:
+PERSONA_CORE	120767	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	120785	Defines the overview of persona identity models.:
+PERSONA_CORE	120796	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	120873	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	1211	persona profile changes:
+PERSONA_CORE	121222	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	121267	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	121724	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	121801	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	122387	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	123262	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	1240	persona identity:
+PERSONA_CORE	124190	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	124478	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	124492	Define the canonical persona core flow.:
+PERSONA_CORE	124519	Define the canonical persona rights flow.:
+PERSONA_CORE	125569	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	127524	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	128773	- canonical persona self-definition:
+PERSONA_CORE	129161	- UI state -> canonical persona state:
+PERSONA_CORE	129296	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	129701	- canonical persona self-definition:
+PERSONA_CORE	13	Defines the constitutional role of persona identity.:
+PERSONA_CORE	13	Defines the overview of persona identity models.:
+PERSONA_CORE	13	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	130089	- UI state -> canonical persona state:
+PERSONA_CORE	130224	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	1307	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	130710	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	130727	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	131859	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	132	- canonical persona self-definition:
+PERSONA_CORE	133478	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	1335	persona identity:
+PERSONA_CORE	133507	- incompatible persona-core handling:
+PERSONA_CORE	13389	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	13390	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	13391	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	13392	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	13393	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	135	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	135	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	13532	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	136	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	136004	persona identity:
+PERSONA_CORE	13633	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	13667	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	13684	- persona identity truth model:
+PERSONA_CORE	13687	- persona_core_identity_id:
+PERSONA_CORE	13695	- persona_core_identity_id:
+PERSONA_CORE	137	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	13718	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	13723	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	13737	Define the canonical persona state model.:
+PERSONA_CORE	13771	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	13776	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	13790	Define the canonical persona growth model.:
+PERSONA_CORE	138	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	13823	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	13827	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	13828	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	13842	Define the canonical persona trust model.:
+PERSONA_CORE	13875	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	13880	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	13894	Define the canonical persona snapshot model.:
+PERSONA_CORE	139	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	13927	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	13935	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	13946	Define the canonical persona license model.:
+PERSONA_CORE	139721	truth authority and canonical persona continuity:
+PERSONA_CORE	139889	persona identity:
+PERSONA_CORE	140	- PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	1400	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	14005	Define the canonical persona access grant model.:
+PERSONA_CORE	14013	persona profile default:
+PERSONA_CORE	14015	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	14064	Define the canonical persona transfer record model.:
+PERSONA_CORE	140663	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	1407	persona profile changes:
+PERSONA_CORE	140717	Defines the constitutional role of persona identity.:
+PERSONA_CORE	141003	persona profile updates:
+PERSONA_CORE	141105	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	141138	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	141155	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	141179	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	141196	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	141212	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	14122	Define the canonical persona external release model.:
+PERSONA_CORE	1414	persona profile changes:
+PERSONA_CORE	141421	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	14180	Define the canonical persona package model.:
+PERSONA_CORE	141904	persona identity structure and authority:
+PERSONA_CORE	141931	persona profile updates:
+PERSONA_CORE	142	PERSONA_OS_CANONICAL_FULL.md | root_relative | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md | 070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	142033	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	142066	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	142083	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	142107	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	142124	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	142140	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	14245	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	142538	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	14262	- persona identity truth model:
+PERSONA_CORE	14265	- persona_core_identity_id:
+PERSONA_CORE	14273	- persona_core_identity_id:
+PERSONA_CORE	142832	persona identity structure and authority:
+PERSONA_CORE	142839	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	14296	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	14301	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	14315	Define the canonical persona state model.:
+PERSONA_CORE	143163	persona profile changes:
+PERSONA_CORE	143466	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	14349	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	14354	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	14368	Define the canonical persona growth model.:
+PERSONA_CORE	14401	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	14406	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	14420	Define the canonical persona trust model.:
+PERSONA_CORE	14453	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	14458	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	14472	Define the canonical persona snapshot model.:
+PERSONA_CORE	14505	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	14524	Define the canonical persona license model.:
+PERSONA_CORE	14552	- persona identity:
+PERSONA_CORE	14583	Define the canonical persona access grant model.:
+PERSONA_CORE	1464	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	14642	Define the canonical persona transfer record model.:
+PERSONA_CORE	146430	- persona identity truth:
+PERSONA_CORE	14700	Define the canonical persona external release model.:
+PERSONA_CORE	147379	truth authority and canonical persona continuity:
+PERSONA_CORE	147574	persona identity:
+PERSONA_CORE	14758	Define the canonical persona package model.:
+PERSONA_CORE	148384	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	148460	Defines the constitutional role of persona identity.:
+PERSONA_CORE	149	persona profile updates:
+PERSONA_CORE	14941	persona profile default:
+PERSONA_CORE	149510	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	14954	030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	14955	030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	14956	030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	14957	030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	14958	030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	15	- persona identity truth model:
+PERSONA_CORE	15	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	15	Defines the root canonical persona record.:
+PERSONA_CORE	15029	Define the canonical persona package item model.:
+PERSONA_CORE	15036	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	150565	persona profile default:
+PERSONA_CORE	15084	Define the canonical persona package composition model.:
+PERSONA_CORE	151079	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	15112	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	151164	- persona identity:
+PERSONA_CORE	15142	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	151484	persona profile changes:
+PERSONA_CORE	15181	- 210.persona_core/:
+PERSONA_CORE	151962	Defines the root canonical persona record.:
+PERSONA_CORE	15198	Define the canonical persona manifest projection model.:
+PERSONA_CORE	152	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	152003	Defines the reading entry for persona identity models.:
+PERSONA_CORE	152024	Defines the overview of persona identity models.:
+PERSONA_CORE	152232	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	15234	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	15251	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	152534	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	152625	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	15307	Define the canonical persona composition validation record model.:
+PERSONA_CORE	15322	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	15393	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	154761	- persona identity truth:
+PERSONA_CORE	15480	- persona identity:
+PERSONA_CORE	15607	Define the canonical persona package item model.:
+PERSONA_CORE	15662	Define the canonical persona package composition model.:
+PERSONA_CORE	156930	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	156947	- persona identity truth model:
+PERSONA_CORE	156950	- persona_core_identity_id:
+PERSONA_CORE	156958	- persona_core_identity_id:
+PERSONA_CORE	156981	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	156987	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	157001	Define the canonical persona state model.:
+PERSONA_CORE	157035	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	157041	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	157055	Define the canonical persona growth model.:
+PERSONA_CORE	157088	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	157094	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	157108	Define the canonical persona trust model.:
+PERSONA_CORE	157141	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	157147	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	157161	Define the canonical persona snapshot model.:
+PERSONA_CORE	157194	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	15720	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	157214	Define the canonical persona license model.:
+PERSONA_CORE	157274	Define the canonical persona access grant model.:
+PERSONA_CORE	157334	Define the canonical persona transfer record model.:
+PERSONA_CORE	157393	Define the canonical persona external release model.:
+PERSONA_CORE	157452	Define the canonical persona package model.:
+PERSONA_CORE	15776	Define the canonical persona manifest projection model.:
+PERSONA_CORE	15829	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	158316	Define the canonical persona package item model.:
+PERSONA_CORE	158372	Define the canonical persona package composition model.:
+PERSONA_CORE	158431	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	158488	Define the canonical persona manifest projection model.:
+PERSONA_CORE	158542	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	158599	Define the canonical persona composition validation record model.:
+PERSONA_CORE	15885	Define the canonical persona composition validation record model.:
+PERSONA_CORE	158915	persona profile default:
+PERSONA_CORE	159108	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	159454	- persona identity:
+PERSONA_CORE	159622	persona profile change:
+PERSONA_CORE	16	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	160083	- 210.persona_core/:
+PERSONA_CORE	16077	persona profile change:
+PERSONA_CORE	16109	- 210.persona_core/:
+PERSONA_CORE	162	PERSONA_OS_CANONICAL_FULL.md | root_relative | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md | 080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	162510	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	16254	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	16271	- persona identity truth model:
+PERSONA_CORE	16274	- persona_core_identity_id:
+PERSONA_CORE	16282	- persona_core_identity_id:
+PERSONA_CORE	16305	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	16309	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	16323	Define the canonical persona state model.:
+PERSONA_CORE	16357	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	16361	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	16375	Define the canonical persona growth model.:
+PERSONA_CORE	163787	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	164	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md | flow | flow:
+PERSONA_CORE	164	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	16408	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	16412	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	16426	Define the canonical persona trust model.:
+PERSONA_CORE	16434	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	16435	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	16436	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	16437	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	16438	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	16459	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	16463	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	16477	Define the canonical persona snapshot model.:
+PERSONA_CORE	165	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	16510	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	165272	Defines the root canonical persona record.:
+PERSONA_CORE	16528	Define the canonical persona license model.:
+PERSONA_CORE	165461	Defines the overview of persona identity models.:
+PERSONA_CORE	16577	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	165793	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	16586	Define the canonical persona access grant model.:
+PERSONA_CORE	165878	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	165892	Define the canonical persona core flow.:
+PERSONA_CORE	165903	- 210.persona_core/:
+PERSONA_CORE	165919	Define the canonical persona rights flow.:
+PERSONA_CORE	165976	- 210.persona_core/:
+PERSONA_CORE	16644	Define the canonical persona transfer record model.:
+PERSONA_CORE	166493	- 210.persona_core/:
+PERSONA_CORE	16655	persona profile change:
+PERSONA_CORE	16678	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	166969	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	167	PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	16701	Define the canonical persona external release model.:
+PERSONA_CORE	167143	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	167222	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	16758	Define the canonical persona package model.:
+PERSONA_CORE	168	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	168	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	16872	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	168924	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	16980	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	17060	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	172226	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	172239	- persona identity truth model:
+PERSONA_CORE	172242	- persona_core_identity_id:
+PERSONA_CORE	172243	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	172250	- persona_core_identity_id:
+PERSONA_CORE	172273	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	172287	Define the canonical persona state model.:
+PERSONA_CORE	172321	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	172335	Define the canonical persona growth model.:
+PERSONA_CORE	172368	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	172382	Define the canonical persona trust model.:
+PERSONA_CORE	172415	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	172429	Define the canonical persona snapshot model.:
+PERSONA_CORE	172462	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	172476	Define the canonical persona license model.:
+PERSONA_CORE	172530	Define the canonical persona access grant model.:
+PERSONA_CORE	172584	Define the canonical persona transfer record model.:
+PERSONA_CORE	172637	Define the canonical persona external release model.:
+PERSONA_CORE	172690	Define the canonical persona package model.:
+PERSONA_CORE	173375	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	173563	Define the canonical persona package item model.:
+PERSONA_CORE	173613	Define the canonical persona package composition model.:
+PERSONA_CORE	173666	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	173717	Define the canonical persona manifest projection model.:
+PERSONA_CORE	173765	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	173816	Define the canonical persona composition validation record model.:
+PERSONA_CORE	174300	210.persona_core/:
+PERSONA_CORE	174728	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	174994	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	175023	- incompatible persona-core handling:
+PERSONA_CORE	175045	- 210.persona_core/:
+PERSONA_CORE	175112	- 210.persona_core/:
+PERSONA_CORE	175381	persona profile change:
+PERSONA_CORE	175619	- 210.persona_core/:
+PERSONA_CORE	17592	Define the canonical persona package item model.:
+PERSONA_CORE	176	PERSONA_OS_CANONICAL_FULL.md | root_relative | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md | 090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	17646	Define the canonical persona package composition model.:
+PERSONA_CORE	17703	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	177520	persona identity:
+PERSONA_CORE	17758	Define the canonical persona manifest projection model.:
+PERSONA_CORE	17810	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	17865	Define the canonical persona composition validation record model.:
+PERSONA_CORE	179172	210.persona_core/:
+PERSONA_CORE	179287	- 210.persona_core/:
+PERSONA_CORE	17962	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	179766	- 210.persona_core/:
+PERSONA_CORE	179815	- 210.persona_core/:
+PERSONA_CORE	179906	- 210.persona_core/:
+PERSONA_CORE	18	- persona_core_identity_id:
+PERSONA_CORE	18081	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	18157	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	181994	Define the canonical persona core flow.:
+PERSONA_CORE	182015	Define the canonical persona rights flow.:
+PERSONA_CORE	182277	210.persona_core/:
+PERSONA_CORE	18279	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	18353	040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	18367	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	18438	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	185293	- 210.persona_core/:
+PERSONA_CORE	185362	- 210.persona_core/:
+PERSONA_CORE	18540	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	185769	- 210.persona_core/:
+PERSONA_CORE	18651	persona profile change:
+PERSONA_CORE	188106	210.persona_core/:
+PERSONA_CORE	188228	- 210.persona_core/:
+PERSONA_CORE	189274	- 210.persona_core/:
+PERSONA_CORE	189330	- 210.persona_core/:
+PERSONA_CORE	189419	- 210.persona_core/:
+PERSONA_CORE	190892	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	191221	210.persona_core/:
+PERSONA_CORE	1916	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	192	PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	192378	- 210.persona_core/:
+PERSONA_CORE	192426	- 210.persona_core/:
+PERSONA_CORE	192493	- 210.persona_core/:
+PERSONA_CORE	193682	- incompatible persona-core handling:
+PERSONA_CORE	194106	210.persona_core/:
+PERSONA_CORE	19487	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	19488	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	19489	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	19490	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	19491	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	19607	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	19630	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	19735	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	199	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	19923	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	19929	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	19937	Define the canonical persona core flow.:
+PERSONA_CORE	19963	Define the canonical persona rights flow.:
+PERSONA_CORE	200	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	20041	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	201	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	20121	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	202	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	203	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	2031	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	20368	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	20370	Defines the root canonical persona record.:
+PERSONA_CORE	20559	Defines the overview of persona identity models.:
+PERSONA_CORE	20607	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	20621	Define the canonical persona core flow.:
+PERSONA_CORE	20647	Define the canonical persona rights flow.:
+PERSONA_CORE	207348	truth authority and canonical persona continuity:
+PERSONA_CORE	207488	persona identity:
+PERSONA_CORE	208241	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	208516	persona profile changes:
+PERSONA_CORE	20891	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	209	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	209	PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	209703	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	21	persona profile changes:
+PERSONA_CORE	210	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	21001	- 210.persona_core/:
+PERSONA_CORE	210109	persona profile change:
+PERSONA_CORE	21015	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	2102	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	21029	Define the canonical persona core flow.:
+PERSONA_CORE	210420	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	21054	Define the canonical persona rights flow.:
+PERSONA_CORE	21074	- 210.persona_core/:
+PERSONA_CORE	210932	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	211	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	21153	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	211649	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	211825	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	212	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	21233	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	212788	persona identity:
+PERSONA_CORE	21298	Defines the root canonical persona record.:
+PERSONA_CORE	213	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	21355	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	21447	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	214484	Defines the constitutional role of persona identity.:
+PERSONA_CORE	21487	Defines the overview of persona identity models.:
+PERSONA_CORE	21518	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	215358	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	21591	- 210.persona_core/:
+PERSONA_CORE	21610	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	21611	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	216416	- persona identity:
+PERSONA_CORE	216640	Defines the root canonical persona record.:
+PERSONA_CORE	216678	Defines the reading entry for persona identity models.:
+PERSONA_CORE	216696	Defines the overview of persona identity models.:
+PERSONA_CORE	216889	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	217074	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	217159	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	21819	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	218923	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	21929	- 210.persona_core/:
+PERSONA_CORE	22002	- 210.persona_core/:
+PERSONA_CORE	22068	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	22136	920.meta/review/040.file_map/9200400001_PERSONA_OS_PRIORITY_CLUSTER_FILE_MAP.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	2217	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	222	persona identity:
+PERSONA_CORE	22241	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	22320	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	22502	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	22519	- 210.persona_core/:
+PERSONA_CORE	22878	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	230677	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	230678	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	230679	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	230680	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	230681	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	230771	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	230827	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	230912	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	230975	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	231011	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	23169	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	231803	persona identity:
+PERSONA_CORE	23223	080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	23248	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	232570	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	232685	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	233952	persona profile changes:
+PERSONA_CORE	23470	PERSONA_OS_CANONICAL_FULL.md | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	23511	PERSONA_OS_CANONICAL_FULL.md | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	23568	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	23571	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	23572	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	23573	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	23574	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	23575	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	23578	PERSONA_OS_CANONICAL_FULL.md | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	23585	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	23618	truth authority and canonical persona continuity:
+PERSONA_CORE	23619	PERSONA_OS_CANONICAL_FULL.md | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	236405	- persona identity truth:
+PERSONA_CORE	23654	PERSONA_OS_CANONICAL_FULL.md | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	23665	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	23717	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	23758	persona identity:
+PERSONA_CORE	23767	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	23784	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	23802	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	23860	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	23896	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	239	truth authority and canonical persona continuity:
+PERSONA_CORE	23906	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	240117	persona profile default:
+PERSONA_CORE	240512	- persona identity:
+PERSONA_CORE	240890	Defines the root canonical persona record.:
+PERSONA_CORE	241053	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	241222	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	241311	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	242	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	24337	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	24338	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	24339	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	24340	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	24341	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	24379	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	24408	- incompatible persona-core handling:
+PERSONA_CORE	24464	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	244713	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	244730	- persona identity truth model:
+PERSONA_CORE	244733	- persona_core_identity_id:
+PERSONA_CORE	244741	- persona_core_identity_id:
+PERSONA_CORE	244764	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	244769	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	244783	Define the canonical persona state model.:
+PERSONA_CORE	244817	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	244822	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	244836	Define the canonical persona growth model.:
+PERSONA_CORE	244869	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	244874	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	244888	Define the canonical persona trust model.:
+PERSONA_CORE	244921	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	244926	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	244940	Define the canonical persona snapshot model.:
+PERSONA_CORE	244973	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	244992	Define the canonical persona license model.:
+PERSONA_CORE	245051	Define the canonical persona access grant model.:
+PERSONA_CORE	24511	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	245110	Define the canonical persona transfer record model.:
+PERSONA_CORE	245168	Define the canonical persona external release model.:
+PERSONA_CORE	24521	persona identity:
+PERSONA_CORE	245226	Define the canonical persona package model.:
+PERSONA_CORE	24548	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	246	truth authority and canonical persona continuity:
+PERSONA_CORE	246075	Define the canonical persona package item model.:
+PERSONA_CORE	246130	Define the canonical persona package composition model.:
+PERSONA_CORE	246188	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	246244	Define the canonical persona manifest projection model.:
+PERSONA_CORE	246297	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	246353	Define the canonical persona composition validation record model.:
+PERSONA_CORE	24710	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	247123	persona profile change:
+PERSONA_CORE	24735	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	24752	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	2477	truth authority and canonical persona continuity:
+PERSONA_CORE	24786	persona profile changes:
+PERSONA_CORE	24801	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	24867	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	249008	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	251075	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	251089	Define the canonical persona core flow.:
+PERSONA_CORE	251115	Define the canonical persona rights flow.:
+PERSONA_CORE	25140	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	25169	- incompatible persona-core handling:
+PERSONA_CORE	252	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	25288	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	253	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	253346	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	254	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	25403	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	255	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	255203	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	255220	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	256	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	256698	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	256727	- incompatible persona-core handling:
+PERSONA_CORE	25813	persona identity:
+PERSONA_CORE	259029	persona identity:
+PERSONA_CORE	2594	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	2596	persona profile change:
+PERSONA_CORE	25973	040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	26	- persona_core_identity_id:
+PERSONA_CORE	2601	040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	262129	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	262130	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	262131	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	262132	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	262133	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	26230	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	262558	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	262559	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	262560	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	262561	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	262562	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	26259	- incompatible persona-core handling:
+PERSONA_CORE	263	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	26379	persona profile change:
+PERSONA_CORE	264	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	264305	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	264357	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	264713	Defines the constitutional role of persona identity.:
+PERSONA_CORE	264741	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	264759	Defines the overview of persona identity models.:
+PERSONA_CORE	265	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	265241	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	2654	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	2655	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	2656	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	265698	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	2657	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	265775	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	2658	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	266	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	26670	persona profile changes:
+PERSONA_CORE	26690	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	267	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	2672	persona identity:
+PERSONA_CORE	268164	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	27	- incompatible persona-core handling:
+PERSONA_CORE	27	- persona identity:
+PERSONA_CORE	27202	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	27337	- persona identity truth model:
+PERSONA_CORE	27340	- persona_core_identity_id:
+PERSONA_CORE	27346	persona identity:
+PERSONA_CORE	27348	- persona_core_identity_id:
+PERSONA_CORE	273675	- canonical persona self-definition:
+PERSONA_CORE	27371	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	27385	Define the canonical persona state model.:
+PERSONA_CORE	274063	- UI state -> canonical persona state:
+PERSONA_CORE	27419	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	274198	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	27433	Define the canonical persona growth model.:
+PERSONA_CORE	27466	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	27480	Define the canonical persona trust model.:
+PERSONA_CORE	27513	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	27527	Define the canonical persona snapshot model.:
+PERSONA_CORE	27560	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	27574	Define the canonical persona license model.:
+PERSONA_CORE	27628	Define the canonical persona access grant model.:
+PERSONA_CORE	27682	Define the canonical persona transfer record model.:
+PERSONA_CORE	27735	Define the canonical persona external release model.:
+PERSONA_CORE	27788	Define the canonical persona package model.:
+PERSONA_CORE	2791	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	27919	080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	28	persona profile change:
+PERSONA_CORE	28095	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	28152	persona profile updates:
+PERSONA_CORE	28265	- persona identity truth model:
+PERSONA_CORE	28268	- persona_core_identity_id:
+PERSONA_CORE	28276	- persona_core_identity_id:
+PERSONA_CORE	28299	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	28313	Define the canonical persona state model.:
+PERSONA_CORE	28347	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	28361	Define the canonical persona growth model.:
+PERSONA_CORE	28394	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	28408	Define the canonical persona trust model.:
+PERSONA_CORE	28441	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	28455	Define the canonical persona snapshot model.:
+PERSONA_CORE	28488	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	28502	Define the canonical persona license model.:
+PERSONA_CORE	28556	Define the canonical persona access grant model.:
+PERSONA_CORE	28561	persona identity:
+PERSONA_CORE	285905	persona profile updates:
+PERSONA_CORE	286007	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	286040	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	286057	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	286081	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	286098	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	28610	Define the canonical persona transfer record model.:
+PERSONA_CORE	286114	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	28661	Define the canonical persona package item model.:
+PERSONA_CORE	28663	Define the canonical persona external release model.:
+PERSONA_CORE	286806	persona identity structure and authority:
+PERSONA_CORE	28711	Define the canonical persona package composition model.:
+PERSONA_CORE	28716	Define the canonical persona package model.:
+PERSONA_CORE	287440	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	28764	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	28815	Define the canonical persona manifest projection model.:
+PERSONA_CORE	28863	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	2890	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	28914	Define the canonical persona composition validation record model.:
+PERSONA_CORE	28945	- persona identity truth:
+PERSONA_CORE	290287	truth authority and canonical persona continuity:
+PERSONA_CORE	290482	persona identity:
+PERSONA_CORE	29058	persona identity:
+PERSONA_CORE	291	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	291292	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	291326	Defines the constitutional role of persona identity.:
+PERSONA_CORE	291848	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	292	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	293	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	293	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	293219	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	293624	persona profile changes:
+PERSONA_CORE	29398	210.persona_core/:
+PERSONA_CORE	294	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	295	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	29589	Define the canonical persona package item model.:
+PERSONA_CORE	29639	Define the canonical persona package composition model.:
+PERSONA_CORE	296523	- persona identity truth:
+PERSONA_CORE	29692	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	29743	Define the canonical persona manifest projection model.:
+PERSONA_CORE	29791	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	29826	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	29842	Define the canonical persona composition validation record model.:
+PERSONA_CORE	3000	persona profile change:
+PERSONA_CORE	300413	persona profile default:
+PERSONA_CORE	3007	persona profile change:
+PERSONA_CORE	300952	- persona identity:
+PERSONA_CORE	30143	- 210.persona_core/:
+PERSONA_CORE	301581	- 210.persona_core/:
+PERSONA_CORE	30210	- 210.persona_core/:
+PERSONA_CORE	303	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	30326	210.persona_core/:
+PERSONA_CORE	30446	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	30447	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	30448	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	30449	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	30450	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	30479	persona profile change:
+PERSONA_CORE	306770	Defines the root canonical persona record.:
+PERSONA_CORE	306959	Defines the overview of persona identity models.:
+PERSONA_CORE	307	030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	3070	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	307159	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	30717	- 210.persona_core/:
+PERSONA_CORE	307269	- 210.persona_core/:
+PERSONA_CORE	307342	- 210.persona_core/:
+PERSONA_CORE	30754	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	30754	Defines the constitutional role of persona identity.:
+PERSONA_CORE	307859	- 210.persona_core/:
+PERSONA_CORE	308	030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	308344	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	308423	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	30875	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	30876	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	30877	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	30878	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	30879	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	309	030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	310	030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	310	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md | operations | generic:
+PERSONA_CORE	310	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	31071	- 210.persona_core/:
+PERSONA_CORE	311	- UI state -> canonical persona state:
+PERSONA_CORE	311	030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	31138	- 210.persona_core/:
+PERSONA_CORE	312104	- persona identity truth model:
+PERSONA_CORE	312107	- persona_core_identity_id:
+PERSONA_CORE	312115	- persona_core_identity_id:
+PERSONA_CORE	312138	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	312152	Define the canonical persona state model.:
+PERSONA_CORE	312186	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	312200	Define the canonical persona growth model.:
+PERSONA_CORE	312233	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	312247	Define the canonical persona trust model.:
+PERSONA_CORE	312280	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	312294	Define the canonical persona snapshot model.:
+PERSONA_CORE	312327	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	312341	Define the canonical persona license model.:
+PERSONA_CORE	312395	Define the canonical persona access grant model.:
+PERSONA_CORE	312449	Define the canonical persona transfer record model.:
+PERSONA_CORE	312502	Define the canonical persona external release model.:
+PERSONA_CORE	312555	Define the canonical persona package model.:
+PERSONA_CORE	313329	Define the canonical persona package item model.:
+PERSONA_CORE	313379	Define the canonical persona package composition model.:
+PERSONA_CORE	313432	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	313483	Define the canonical persona manifest projection model.:
+PERSONA_CORE	313531	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	313582	Define the canonical persona composition validation record model.:
+PERSONA_CORE	314066	210.persona_core/:
+PERSONA_CORE	31407	persona profile change:
+PERSONA_CORE	314494	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	314712	- 210.persona_core/:
+PERSONA_CORE	314779	- 210.persona_core/:
+PERSONA_CORE	315	030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md | status: canonical
+PERSONA_CORE	315048	persona profile change:
+PERSONA_CORE	315286	- 210.persona_core/:
+PERSONA_CORE	316	030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md | status: canonical
+PERSONA_CORE	31628	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	31645	- 210.persona_core/:
+PERSONA_CORE	31661	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	31662	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	31663	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	31664	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	31665	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	3169	persona profile changes:
+PERSONA_CORE	317	030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md | status: canonical
+PERSONA_CORE	3176	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	317957	210.persona_core/:
+PERSONA_CORE	318	030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md | status: canonical
+PERSONA_CORE	318072	- 210.persona_core/:
+PERSONA_CORE	318475	- 210.persona_core/:
+PERSONA_CORE	318524	- 210.persona_core/:
+PERSONA_CORE	318615	- 210.persona_core/:
+PERSONA_CORE	319	030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md | status: canonical
+PERSONA_CORE	32	Defines the constitutional role of persona identity.:
+PERSONA_CORE	320	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	320029	Define the canonical persona core flow.:
+PERSONA_CORE	320050	Define the canonical persona rights flow.:
+PERSONA_CORE	320279	210.persona_core/:
+PERSONA_CORE	32090	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	32091	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	32092	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	32093	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	32094	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	322286	- 210.persona_core/:
+PERSONA_CORE	322355	- 210.persona_core/:
+PERSONA_CORE	322762	- 210.persona_core/:
+PERSONA_CORE	324577	210.persona_core/:
+PERSONA_CORE	324699	- 210.persona_core/:
+PERSONA_CORE	3252	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	325441	- 210.persona_core/:
+PERSONA_CORE	325497	- 210.persona_core/:
+PERSONA_CORE	325586	- 210.persona_core/:
+PERSONA_CORE	32622	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	32657	persona profile default:
+PERSONA_CORE	326646	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	32674	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	32686	- persona identity:
+PERSONA_CORE	326942	210.persona_core/:
+PERSONA_CORE	327587	- 210.persona_core/:
+PERSONA_CORE	327635	- 210.persona_core/:
+PERSONA_CORE	327702	- 210.persona_core/:
+PERSONA_CORE	328554	- incompatible persona-core handling:
+PERSONA_CORE	328945	210.persona_core/:
+PERSONA_CORE	32910	Defines the root canonical persona record.:
+PERSONA_CORE	32948	Defines the reading entry for persona identity models.:
+PERSONA_CORE	32966	Defines the overview of persona identity models.:
+PERSONA_CORE	3298	persona profile changes:
+PERSONA_CORE	33030	Defines the constitutional role of persona identity.:
+PERSONA_CORE	33052	- persona identity:
+PERSONA_CORE	33058	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	33076	Defines the overview of persona identity models.:
+PERSONA_CORE	331	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	3311	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	33159	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	3318	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	33344	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	33429	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	33430	Defines the root canonical persona record.:
+PERSONA_CORE	33558	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	33593	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	33762	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	33837	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	33851	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	33889	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	339257	truth authority and canonical persona continuity:
+PERSONA_CORE	339397	persona identity:
+PERSONA_CORE	34015	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	340150	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	340425	persona profile changes:
+PERSONA_CORE	3405	truth authority and canonical persona continuity:
+PERSONA_CORE	34092	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	341612	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	342018	persona profile change:
+PERSONA_CORE	342329	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	34245	Defines the constitutional role of persona identity.:
+PERSONA_CORE	34270	210.persona_core/:
+PERSONA_CORE	34273	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	342841	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	34291	Defines the overview of persona identity models.:
+PERSONA_CORE	343558	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	343734	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	34385	- 210.persona_core/:
+PERSONA_CORE	344697	persona identity:
+PERSONA_CORE	345	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	346393	Defines the constitutional role of persona identity.:
+PERSONA_CORE	347267	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	34773	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	3482	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	348325	- persona identity:
+PERSONA_CORE	3484	persona profile changes:
+PERSONA_CORE	348549	Defines the root canonical persona record.:
+PERSONA_CORE	348587	Defines the reading entry for persona identity models.:
+PERSONA_CORE	348605	Defines the overview of persona identity models.:
+PERSONA_CORE	34864	- 210.persona_core/:
+PERSONA_CORE	348798	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	348983	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	349068	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	34913	- 210.persona_core/:
+PERSONA_CORE	35	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	35004	- 210.persona_core/:
+PERSONA_CORE	350832	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	351	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	35193	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	35198	210.persona_core/:
+PERSONA_CORE	35230	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	35307	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	35313	- 210.persona_core/:
+PERSONA_CORE	3558	Defines the constitutional role of persona identity.:
+PERSONA_CORE	35792	- 210.persona_core/:
+PERSONA_CORE	35841	- 210.persona_core/:
+PERSONA_CORE	359	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	35932	- 210.persona_core/:
+PERSONA_CORE	360	030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	3600	persona identity:
+PERSONA_CORE	361	030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	362	030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	362586	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	362587	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	362588	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	362589	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	362590	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	362680	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	362736	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	362821	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	362884	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	362920	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	363	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	363	030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	363712	persona identity:
+PERSONA_CORE	364	030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	364479	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	364594	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	36481	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	365861	persona profile changes:
+PERSONA_CORE	366	030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	367	030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	368	030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	368314	- persona identity truth:
+PERSONA_CORE	369	030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	37	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	370	030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	37039	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	37056	- persona identity truth model:
+PERSONA_CORE	37059	- persona_core_identity_id:
+PERSONA_CORE	37067	- persona_core_identity_id:
+PERSONA_CORE	37090	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	37092	Define the canonical persona core flow.:
+PERSONA_CORE	37095	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	37109	Define the canonical persona state model.:
+PERSONA_CORE	37113	Define the canonical persona rights flow.:
+PERSONA_CORE	37143	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	37148	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	37162	Define the canonical persona growth model.:
+PERSONA_CORE	37195	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	37200	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	372026	persona profile default:
+PERSONA_CORE	37214	Define the canonical persona trust model.:
+PERSONA_CORE	372421	- persona identity:
+PERSONA_CORE	37247	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	37252	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	37266	Define the canonical persona snapshot model.:
+PERSONA_CORE	372799	Defines the root canonical persona record.:
+PERSONA_CORE	372962	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	37299	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	373131	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	37318	Define the canonical persona license model.:
+PERSONA_CORE	373220	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	37375	210.persona_core/:
+PERSONA_CORE	37377	Define the canonical persona access grant model.:
+PERSONA_CORE	37436	Define the canonical persona transfer record model.:
+PERSONA_CORE	37494	Define the canonical persona external release model.:
+PERSONA_CORE	37552	Define the canonical persona package model.:
+PERSONA_CORE	376622	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	376639	- persona identity truth model:
+PERSONA_CORE	376642	- persona_core_identity_id:
+PERSONA_CORE	376650	- persona_core_identity_id:
+PERSONA_CORE	376673	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	376678	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	376692	Define the canonical persona state model.:
+PERSONA_CORE	376726	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	376731	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	376745	Define the canonical persona growth model.:
+PERSONA_CORE	376778	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	376783	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	376797	Define the canonical persona trust model.:
+PERSONA_CORE	376830	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	376835	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	376849	Define the canonical persona snapshot model.:
+PERSONA_CORE	376882	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	376901	Define the canonical persona license model.:
+PERSONA_CORE	37696	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	376960	Define the canonical persona access grant model.:
+PERSONA_CORE	377019	Define the canonical persona transfer record model.:
+PERSONA_CORE	377077	Define the canonical persona external release model.:
+PERSONA_CORE	377135	Define the canonical persona package model.:
+PERSONA_CORE	377984	Define the canonical persona package item model.:
+PERSONA_CORE	378039	Define the canonical persona package composition model.:
+PERSONA_CORE	378097	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	378153	Define the canonical persona manifest projection model.:
+PERSONA_CORE	378206	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	378262	Define the canonical persona composition validation record model.:
+PERSONA_CORE	379	persona identity:
+PERSONA_CORE	379032	persona profile change:
+PERSONA_CORE	38	210.persona_core/:
+PERSONA_CORE	38020	Define the canonical persona core flow.:
+PERSONA_CORE	38041	Define the canonical persona rights flow.:
+PERSONA_CORE	380917	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	3823	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	382984	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	382998	Define the canonical persona core flow.:
+PERSONA_CORE	3830	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	383024	Define the canonical persona rights flow.:
+PERSONA_CORE	38303	210.persona_core/:
+PERSONA_CORE	3839	persona identity:
+PERSONA_CORE	38401	Define the canonical persona package item model.:
+PERSONA_CORE	38456	Define the canonical persona package composition model.:
+PERSONA_CORE	38514	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	385255	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	38570	Define the canonical persona manifest projection model.:
+PERSONA_CORE	386	persona identity:
+PERSONA_CORE	38623	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	38679	Define the canonical persona composition validation record model.:
+PERSONA_CORE	387112	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	387129	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	388607	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	388636	- incompatible persona-core handling:
+PERSONA_CORE	39	210.persona_core/:
+PERSONA_CORE	39	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	39	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	390938	persona identity:
+PERSONA_CORE	394038	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	394039	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	394040	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	394041	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	394042	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	394467	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	394468	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	394469	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	394470	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	394471	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	39449	persona profile change:
+PERSONA_CORE	396214	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	396266	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	396622	Defines the constitutional role of persona identity.:
+PERSONA_CORE	396650	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	396668	Defines the overview of persona identity models.:
+PERSONA_CORE	397150	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	397607	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	397684	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	398	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md | policy | policy:
+PERSONA_CORE	398	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	400073	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	403	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	40391	- 210.persona_core/:
+PERSONA_CORE	40460	- 210.persona_core/:
+PERSONA_CORE	405584	- canonical persona self-definition:
+PERSONA_CORE	405972	- UI state -> canonical persona state:
+PERSONA_CORE	406107	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	40867	- 210.persona_core/:
+PERSONA_CORE	41	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	41319	- 210.persona_core/:
+PERSONA_CORE	41334	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	41388	- 210.persona_core/:
+PERSONA_CORE	416	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	417814	persona profile updates:
+PERSONA_CORE	417916	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	417949	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	41795	- 210.persona_core/:
+PERSONA_CORE	417966	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	417990	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	418007	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	418023	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	418715	persona identity structure and authority:
+PERSONA_CORE	419349	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	41992	- canonical persona self-definition:
+PERSONA_CORE	42	- 210.persona_core/:
+PERSONA_CORE	42380	- UI state -> canonical persona state:
+PERSONA_CORE	42515	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	43	- 210.persona_core/:
+PERSONA_CORE	430	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	432	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	43204	210.persona_core/:
+PERSONA_CORE	43207	- canonical persona self-definition:
+PERSONA_CORE	43295	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	43309	Define the canonical persona core flow.:
+PERSONA_CORE	43326	- 210.persona_core/:
+PERSONA_CORE	43335	Define the canonical persona rights flow.:
+PERSONA_CORE	434	040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	43595	- UI state -> canonical persona state:
+PERSONA_CORE	43730	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	4410	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	44132	210.persona_core/:
+PERSONA_CORE	44254	- 210.persona_core/:
+PERSONA_CORE	44372	- 210.persona_core/:
+PERSONA_CORE	444	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	44428	- 210.persona_core/:
+PERSONA_CORE	44517	- 210.persona_core/:
+PERSONA_CORE	446	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	4486	Defines the constitutional role of persona identity.:
+PERSONA_CORE	449	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	45	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	45	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	45	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	45300	- 210.persona_core/:
+PERSONA_CORE	45356	- 210.persona_core/:
+PERSONA_CORE	4540	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	45440	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	45445	- 210.persona_core/:
+PERSONA_CORE	4547	080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	456	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md | interface | interface:
+PERSONA_CORE	456	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	45990	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	46	210.persona_core/:
+PERSONA_CORE	46	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	4608	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	46319	210.persona_core/:
+PERSONA_CORE	464	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	4674	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	4675	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	4676	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	4677	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	4678	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	46918	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	46943	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	46944	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	46945	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	46946	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	46947	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	47037	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	47089	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	47139	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	47156	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	4716	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	47174	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	4723	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	47232	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	47247	210.persona_core/:
+PERSONA_CORE	47268	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	4742	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	47476	- 210.persona_core/:
+PERSONA_CORE	47524	- 210.persona_core/:
+PERSONA_CORE	47591	- 210.persona_core/:
+PERSONA_CORE	4773	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	47893	persona identity:
+PERSONA_CORE	4825	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	48404	- 210.persona_core/:
+PERSONA_CORE	48452	- 210.persona_core/:
+PERSONA_CORE	48512	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	48519	- 210.persona_core/:
+PERSONA_CORE	4854	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	48541	- incompatible persona-core handling:
+PERSONA_CORE	48602	persona profile updates:
+PERSONA_CORE	48660	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	4868	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	48704	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	48737	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	48754	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	48775	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	48778	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	48780	- incompatible persona-core handling:
+PERSONA_CORE	48795	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	488	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	48811	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	49	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	4910	persona profile updates:
+PERSONA_CORE	49204	210.persona_core/:
+PERSONA_CORE	49328	persona identity structure and authority:
+PERSONA_CORE	497	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	49708	- incompatible persona-core handling:
+PERSONA_CORE	49962	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	50	- 210.persona_core/:
+PERSONA_CORE	50042	persona profile changes:
+PERSONA_CORE	50132	210.persona_core/:
+PERSONA_CORE	503	040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	507	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	50718	persona identity:
+PERSONA_CORE	51	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	51	persona profile default:
+PERSONA_CORE	520	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	5216	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	5217	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	5218	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	5219	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	5220	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	52317	- persona identity truth:
+PERSONA_CORE	524	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	5274	- persona identity truth:
+PERSONA_CORE	5284	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	5316	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	5369	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	53818	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	53819	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	53820	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	53821	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	53822	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	5402	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	5417	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	54247	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	54248	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	54249	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	54250	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	54251	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	543	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	5536	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	55437	persona profile updates:
+PERSONA_CORE	55539	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	55572	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	55589	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	55613	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	55630	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	55646	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	5573	- persona identity truth:
+PERSONA_CORE	55994	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	56029	persona profile default:
+PERSONA_CORE	56046	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	56338	persona identity structure and authority:
+PERSONA_CORE	56402	Defines the constitutional role of persona identity.:
+PERSONA_CORE	56424	- persona identity:
+PERSONA_CORE	56430	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	56448	Defines the overview of persona identity models.:
+PERSONA_CORE	5679	persona identity:
+PERSONA_CORE	56802	Defines the root canonical persona record.:
+PERSONA_CORE	5686	persona identity:
+PERSONA_CORE	56930	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	56965	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	56972	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	57	210.persona_core/:
+PERSONA_CORE	57134	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	57223	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	57387	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	57464	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	5768	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	5769	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	5770	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	5771	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	5772	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	5839	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	5871	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	59	210.persona_core/:
+PERSONA_CORE	5924	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	5937	- persona identity truth:
+PERSONA_CORE	5957	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	596	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	5972	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	59853	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	60	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	602	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	60411	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	60428	- persona identity truth model:
+PERSONA_CORE	60431	- persona_core_identity_id:
+PERSONA_CORE	60439	- persona_core_identity_id:
+PERSONA_CORE	60462	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	60467	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	60481	Define the canonical persona state model.:
+PERSONA_CORE	60515	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	60520	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	60534	Define the canonical persona growth model.:
+PERSONA_CORE	60567	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	60572	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	60586	Define the canonical persona trust model.:
+PERSONA_CORE	60619	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	60624	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	60638	Define the canonical persona snapshot model.:
+PERSONA_CORE	60671	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	60690	Define the canonical persona license model.:
+PERSONA_CORE	60749	Define the canonical persona access grant model.:
+PERSONA_CORE	60808	Define the canonical persona transfer record model.:
+PERSONA_CORE	60866	Define the canonical persona external release model.:
+PERSONA_CORE	60924	Define the canonical persona package model.:
+PERSONA_CORE	61	- 210.persona_core/:
+PERSONA_CORE	61	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	6177	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	61773	Define the canonical persona package item model.:
+PERSONA_CORE	61828	Define the canonical persona package composition model.:
+PERSONA_CORE	61886	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	61942	Define the canonical persona manifest projection model.:
+PERSONA_CORE	61995	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	62051	Define the canonical persona composition validation record model.:
+PERSONA_CORE	62446	truth authority and canonical persona continuity:
+PERSONA_CORE	62586	persona identity:
+PERSONA_CORE	62821	persona profile change:
+PERSONA_CORE	63	- 210.persona_core/:
+PERSONA_CORE	63	210.persona_core/:
+PERSONA_CORE	63339	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	63374	truth authority and canonical persona continuity:
+PERSONA_CORE	6342	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	6343	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	6344	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	6345	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	6346	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	63514	persona identity:
+PERSONA_CORE	63614	persona profile changes:
+PERSONA_CORE	64	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	6410	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	64267	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	6442	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	64542	persona profile changes:
+PERSONA_CORE	64706	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	64801	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	6495	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	65207	persona profile change:
+PERSONA_CORE	6528	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	65364	- canonical persona self-definition:
+PERSONA_CORE	6543	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	65518	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	65729	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	65752	- UI state -> canonical persona state:
+PERSONA_CORE	6582	persona profile changes:
+PERSONA_CORE	65887	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	66	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	66030	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	66135	persona profile change:
+PERSONA_CORE	66446	050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	66667	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md
+PERSONA_CORE	66681	Define the canonical persona core flow.:
+PERSONA_CORE	66707	Define the canonical persona rights flow.:
+PERSONA_CORE	66747	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	66923	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	66958	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	67	- 210.persona_core/:
+PERSONA_CORE	67	persona identity:
+PERSONA_CORE	67675	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	67851	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	67886	persona identity:
+PERSONA_CORE	68	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	685	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	685	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md | 030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	686	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md | 030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	687	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md | 030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	688	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md | 030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	68812	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md
+PERSONA_CORE	68814	persona identity:
+PERSONA_CORE	689	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md | 030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	6894	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	6895	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	6896	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	6897	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	6898	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	69582	Defines the constitutional role of persona identity.:
+PERSONA_CORE	6965	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	6997	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	7	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	70456	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	7050	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	70510	Defines the constitutional role of persona identity.:
+PERSONA_CORE	70511	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md
+PERSONA_CORE	70528	- persona identity, state, growth, trust, and snapshot basis must remain explicit:
+PERSONA_CORE	7083	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	7098	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	7105	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	71384	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	71514	- persona identity:
+PERSONA_CORE	71738	Defines the root canonical persona record.:
+PERSONA_CORE	71776	Defines the reading entry for persona identity models.:
+PERSONA_CORE	71794	Defines the overview of persona identity models.:
+PERSONA_CORE	71884	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md
+PERSONA_CORE	71913	- incompatible persona-core handling:
+PERSONA_CORE	71974	persona profile updates:
+PERSONA_CORE	71987	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	72076	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	72109	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	72126	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	72150	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	72167	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	72172	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	72183	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	72257	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	72442	- persona identity:
+PERSONA_CORE	72666	Defines the root canonical persona record.:
+PERSONA_CORE	72700	persona identity structure and authority:
+PERSONA_CORE	72704	Defines the reading entry for persona identity models.:
+PERSONA_CORE	72722	Defines the overview of persona identity models.:
+PERSONA_CORE	72915	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	73100	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	73185	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	73334	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	734	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md | 040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	7375	Defines the constitutional role of persona identity.:
+PERSONA_CORE	7382	Defines the constitutional role of persona identity.:
+PERSONA_CORE	74	persona identity structure and authority:
+PERSONA_CORE	74021	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	74090	persona identity:
+PERSONA_CORE	74949	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	7510	persona profile changes:
+PERSONA_CORE	75289	truth authority and canonical persona continuity:
+PERSONA_CORE	75457	persona identity:
+PERSONA_CORE	758	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md | 050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	76231	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	76285	Defines the constitutional role of persona identity.:
+PERSONA_CORE	768	070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	76989	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	77190	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	77191	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	77192	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	77193	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	77194	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	776	070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	77619	| 030.model/010.canonical/100.finance/0301000001_finance_account.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	77620	| 030.model/010.canonical/100.finance/0301000002_transaction.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	77621	| 030.model/010.canonical/100.finance/0301000003_budget.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	77622	| 030.model/010.canonical/100.finance/0301000004_financial_activity.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	77623	| 030.model/010.canonical/100.finance/0301000005_resource_allocation.md | move_to_meta_or_legacy_candidate | 999.archive/999.archive/930.legacy or separate business-aligned domain review | finance_family_looks_out_of_scope_for_current_persona_core_model_map |:
+PERSONA_CORE	778	080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	78	- persona identity truth:
+PERSONA_CORE	78	Defines the overview of persona identity models.:
+PERSONA_CORE	78297	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	78621	persona profile changes:
+PERSONA_CORE	7865	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	7866	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	7867	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	7868	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	7869	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	79366	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	79418	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	79774	Defines the constitutional role of persona identity.:
+PERSONA_CORE	79802	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	79820	Defines the overview of persona identity models.:
+PERSONA_CORE	80	PERSONA_OS_CANONICAL_FULL.md | root_relative | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md | 040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	801	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md | 070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	80302	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	80759	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	80836	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	81888	- persona identity truth:
+PERSONA_CORE	823	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	824	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	8249	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	825	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	8256	Defines the structural overview of persona identity boundaries.:
+PERSONA_CORE	826	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	827	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	83	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md | runtime | runtime:
+PERSONA_CORE	83	040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	832	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md | 080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	83225	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_CORE	842	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	850	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | 090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md | 090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	8526	- persona identity:
+PERSONA_CORE	85775	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	85776	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	85777	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	85778	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	85779	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	85869	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	85925	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	86010	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	86023	persona profile default:
+PERSONA_CORE	86073	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	86109	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	86622	- persona identity:
+PERSONA_CORE	86703	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	86704	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	86705	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	86706	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	86707	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	86797	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona_core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	86853	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	86901	persona identity:
+PERSONA_CORE	86938	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona_core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	87001	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	87037	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	87302	Defines the root canonical persona record.:
+PERSONA_CORE	87343	Defines the reading entry for persona identity models.:
+PERSONA_CORE	87364	Defines the overview of persona identity models.:
+PERSONA_CORE	874	080.policy/210.persona-core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	87572	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	87668	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	87783	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	87829	persona identity:
+PERSONA_CORE	87874	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	87965	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	882	080.policy/210.persona_core/0802100_PERSONA_CORE_POLICY.md:
+PERSONA_CORE	88596	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	88711	for persona profile, visual profile, or background profile.:
+PERSONA_CORE	88736	- canonical persona self-definition:
+PERSONA_CORE	89050	persona profile changes:
+PERSONA_CORE	891	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	89124	- UI state -> canonical persona state:
+PERSONA_CORE	89259	BusinessOS persona identity usage is reference/projection,:
+PERSONA_CORE	89978	persona profile changes:
+PERSONA_CORE	91	PERSONA_OS_CANONICAL_FULL.md | root_relative | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	91503	- persona identity truth:
+PERSONA_CORE	92270	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	92287	- persona identity truth model:
+PERSONA_CORE	92290	- persona_core_identity_id:
+PERSONA_CORE	92298	- persona_core_identity_id:
+PERSONA_CORE	923	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	92321	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	92327	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	92341	Define the canonical persona state model.:
+PERSONA_CORE	92375	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	92381	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	92395	Define the canonical persona growth model.:
+PERSONA_CORE	92428	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	92431	- persona identity truth:
+PERSONA_CORE	92434	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	92448	Define the canonical persona trust model.:
+PERSONA_CORE	92481	Persona trust truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	92487	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md
+PERSONA_CORE	92501	Define the canonical persona snapshot model.:
+PERSONA_CORE	92534	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	92554	Define the canonical persona license model.:
+PERSONA_CORE	92614	Define the canonical persona access grant model.:
+PERSONA_CORE	92674	Define the canonical persona transfer record model.:
+PERSONA_CORE	92733	Define the canonical persona external release model.:
+PERSONA_CORE	92792	Define the canonical persona package model.:
+PERSONA_CORE	928	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	9285	persona profile default:
+PERSONA_CORE	929	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	930	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	9307	- persona identity:
+PERSONA_CORE	931	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	9314	- persona identity:
+PERSONA_CORE	932	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	935	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md | 030.model/210.persona-core/0302100_PERSONA_CORE_IDENTITY_MODEL.md:
+PERSONA_CORE	936	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md | 030.model/210.persona-core/0302101_PERSONA_STATE_MODEL.md:
+PERSONA_CORE	93656	Define the canonical persona package item model.:
+PERSONA_CORE	937	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md | 030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	93712	Define the canonical persona package composition model.:
+PERSONA_CORE	93771	Define the canonical persona delivery manifest model.:
+PERSONA_CORE	938	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md | 030.model/210.persona-core/0302103_PERSONA_TRUST_MODEL.md:
+PERSONA_CORE	93828	Define the canonical persona manifest projection model.:
+PERSONA_CORE	93882	Define the canonical persona bundle delivery record model.:
+PERSONA_CORE	939	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md | 030.model/210.persona-core/0302104_PERSONA_SNAPSHOT_MODEL.md:
+PERSONA_CORE	93939	Define the canonical persona composition validation record model.:
+PERSONA_CORE	94	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	94448	Core runtime governs canonical persona truth access,:
+PERSONA_CORE	94962	persona profile change:
+PERSONA_CORE	95	truth authority and canonical persona continuity:
+PERSONA_CORE	950	090.interface/210.persona-core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	95215	persona profile default:
+PERSONA_CORE	9531	Defines the root canonical persona record.:
+PERSONA_CORE	95346	persona profile updates:
+PERSONA_CORE	9538	Defines the root canonical persona record.:
+PERSONA_CORE	95448	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core:
+PERSONA_CORE	95481	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core:
+PERSONA_CORE	95498	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/050.flow/210.persona-core:
+PERSONA_CORE	95522	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core:
+PERSONA_CORE	95539	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/080.policy/210.persona-core:
+PERSONA_CORE	95555	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/090.interface/210.persona-core:
+PERSONA_CORE	95610	- persona identity:
+PERSONA_CORE	9569	Defines the reading entry for persona identity models.:
+PERSONA_CORE	9576	Defines the reading entry for persona identity models.:
+PERSONA_CORE	958	090.interface/210.persona_core/0902100_PERSONA_CORE_INTERFACE_DETAIL.md:
+PERSONA_CORE	9587	Defines the overview of persona identity models.:
+PERSONA_CORE	9594	Defines the overview of persona identity models.:
+PERSONA_CORE	95988	Defines the root canonical persona record.:
+PERSONA_CORE	96072	persona identity structure and authority:
+PERSONA_CORE	96143	persona profile default:
+PERSONA_CORE	96151	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	96320	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	96409	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	9649	persona profile default:
+PERSONA_CORE	96538	- persona identity:
+PERSONA_CORE	96706	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona-core/0302102_PERSONA_GROWTH_MODEL.md:
+PERSONA_CORE	9680	- persona identity:
+PERSONA_CORE	96916	Defines the root canonical persona record.:
+PERSONA_CORE	97079	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	97248	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	97337	Persona experience is derived from canonical persona memory.:
+PERSONA_CORE	976	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/070.operations/210.persona-core/0702100_PERSONA_CORE_OPERATION.md:
+PERSONA_CORE	9780	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	97850	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md
+PERSONA_CORE	9787	Persona event must remain traceable to canonical persona state context.:
+PERSONA_CORE	9859	- persona identity truth:
+PERSONA_CORE	98661	truth authority and canonical persona continuity:
+PERSONA_CORE	987	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md | 040.runtime/210.persona-core/0402100_PERSONA_STATE_RUNTIME.md:
+PERSONA_CORE	98829	persona identity:
+PERSONA_CORE	989	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	99	PERSONA_OS_CANONICAL_FULL.md | root_relative | 050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md | 050.flow/210.persona_core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	99015	050.flow/210.persona-core/0502100_PERSONA_CORE_FLOW.md:
+PERSONA_CORE	99603	PersonaOS owns persona canonical state and apply authority.:
+PERSONA_CORE	9965	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	99657	Defines the constitutional role of persona identity.:
+PERSONA_CORE	9972	Retrieved memory must remain traceable to canonical persona memory.:
+PERSONA_CORE	99811	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302100_PERSONA_CORE_IDENTITY_MODEL.md
+PERSONA_CORE	99828	- persona identity truth model:
+PERSONA_CORE	99831	- persona_core_identity_id:
+PERSONA_CORE	99839	- persona_core_identity_id:
+PERSONA_CORE	99862	Persona core identity truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	99867	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302101_PERSONA_STATE_MODEL.md
+PERSONA_CORE	99881	Define the canonical persona state model.:
+PERSONA_CORE	99915	Persona state truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	99920	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302102_PERSONA_GROWTH_MODEL.md
+PERSONA_CORE	99934	Define the canonical persona growth model.:
+PERSONA_CORE	99967	Persona growth truth belongs to PersonaOS persona-core domain.:
+PERSONA_CORE	99972	# FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/210.persona_core/0302103_PERSONA_TRUST_MODEL.md
+PERSONA_CORE	99986	Define the canonical persona trust model.:

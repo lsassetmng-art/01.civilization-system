@@ -47,7 +47,7 @@ recommended_sequence:
     focus:
       - share and export
     deliverables:
-      - family_plus value
+      - plus_family value
     reason:
       - safety-sensitive layer added after base stabilizes
 

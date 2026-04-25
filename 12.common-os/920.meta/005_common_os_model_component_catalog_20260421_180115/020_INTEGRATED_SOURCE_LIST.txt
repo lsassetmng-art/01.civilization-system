@@ -1,0 +1,11 @@
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000000_COMMON_OS_MODEL_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000001_COMMON_OS_MODEL_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000010_APP_COMMON_SCHEMA_DDL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000020_APP_COMMON_METADATA_MODEL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000030_SHARED_COMPONENT_VARIANT_MODEL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000040_SHARED_TOKEN_AND_THEME_MODEL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000050_SHARED_LOCALE_TEMPLATE_MODEL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000060_APPLICATION_COMMON_COMPONENT_CATALOG_MODEL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000070_APPLICATION_COMMON_COMPONENT_VARIANT_CATALOG_MODEL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000080_APPLICATION_COMMON_COMPONENT_STATUS_MODEL_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/030.model/000090_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_MODEL_CANONICAL.md

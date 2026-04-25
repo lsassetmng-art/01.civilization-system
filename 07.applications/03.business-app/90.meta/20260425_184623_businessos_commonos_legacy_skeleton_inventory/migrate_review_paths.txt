@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/NameCardManager/iphone/NameCardManager/BusinessOSCommonOSLaunch
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/NameCardManager/iphone/NameCardManager/BusinessOSCommonOSWrapper
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/PocketSecretary/iphone/PocketSecretary/BusinessOSCommonOSLaunch
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/PocketSecretary/iphone/PocketSecretary/BusinessOSCommonOSWrapper

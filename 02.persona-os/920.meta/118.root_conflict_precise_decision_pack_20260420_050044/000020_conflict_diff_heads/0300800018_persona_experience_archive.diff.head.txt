@@ -1,0 +1,46 @@
+============================================================
+TARGET: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800018_persona_experience_archive.md
+ARCHIVED: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/930.root_direct_apply_and_rehome_20260420_042416/050.rehome_conflicts/0300800018_persona_experience_archive.md
+============================================================
+--- /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800018_persona_experience_archive.md	2026-04-17 13:48:46.187189374 +0900
++++ /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/930.root_direct_apply_and_rehome_20260420_042416/050.rehome_conflicts/0300800018_persona_experience_archive.md	2026-04-17 16:26:10.440000082 +0900
+@@ -1,24 +1,25 @@
+ # 0300800018_persona_experience_archive
+ 
+-status: exact-ready-draft
++status: canonical-draft-deepened
+ system: PersonaOS
+-layer: model
++layer: root_governance
+ domain: generic
+ canonical: candidate
+-path: 030.model/010.canonical/080.knowledge/0300800018_persona_experience_archive.md
+-exact_ready_at: 20260417_134829
++path: 0300800018_persona_experience_archive.md
++deepened_at: 20260417_162606
+ 
+ purpose:
+-Defines the exact-ready model boundary for this PersonaOS model area.
++Defines root-level governance, reading order, precedence, or completion
++interpretation for PersonaOS.
+ 
+-minimum_exact_sections:
+-- primary entities
+-- identifiers
+-- required fields
+-- lifecycle states where applicable
+-- constraints
+-- query paths
++minimum_sections:
++- reading order
++- canonical precedence
++- completion boundary
++- archive or legacy isolation
++- handoff to implementation-ready contracts
+ 
+ review_targets:
+-- replace generic sections with exact domain entities
+-- add exact field names and lifecycle enums
++- add exact root governance terms
++- add exact completion definition
++- add exact precedence language

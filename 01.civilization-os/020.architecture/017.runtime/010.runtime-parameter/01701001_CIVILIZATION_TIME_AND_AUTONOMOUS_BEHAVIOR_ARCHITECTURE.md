@@ -236,3 +236,29 @@ Civilization time and autonomous behavior architecture must remain:
 - direct-control-compatible
 - autonomous-actor-compatible
 - simulation-ready
+
+## Exact Direct Control Vs Autonomous Control
+## Exact Direct Control Vs Autonomous Control
+
+Direct control:
+- explicit user or player triggered action
+
+Autonomous control:
+- schedule, tick, or runtime triggered action
+
+Both must remain distinguishable in audit and runtime trace.
+
+## Exact Schedule And Activity Split
+
+The following must remain separate:
+
+- schedule intention
+- activity planning
+- runtime execution
+- interruption
+- recovery
+
+## Exact Time Control Rule
+
+Pause, resume, acceleration, and replay posture must be explicit.
+Silent drift between displayed time and effective execution time is prohibited.

@@ -2,32 +2,32 @@
 # STREAMWATCH PROFILE ACCESS CONTROL SECURITY
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: security
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines security assumptions around profile selection, profile switching, and continuity partition safety.
+This document defines security assumptions around viewer_profile selection and switching.
 
-## 2. Fixed Inputs
+## 2. Security Goal
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+Prevent continuity leakage and wrong-profile operation.
 
-## 3. Design Direction
+## 3. Protected Outcomes
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+Security behavior must protect against:
 
-## 4. Current Status
+- cross-profile history leakage
+- cross-profile resume leakage
+- wrong-profile favorites or watch later mutation
+- wrong-profile restriction bypass through stale context
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+## 4. Final Security Rule
+
+Profile selection is part of continuity security, not merely visual personalization.

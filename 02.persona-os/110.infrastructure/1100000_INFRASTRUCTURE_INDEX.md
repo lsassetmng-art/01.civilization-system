@@ -1,9 +1,41 @@
-# ============================================================
-# INFRASTRUCTURE INDEX
-# ============================================================
+# 1100000_INFRASTRUCTURE_INDEX
 
-status: canonical
-layer: infrastructure
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 110.infrastructure
+
+- 1100000_PERSONA_OS_INFRASTRUCTURE_INDEX.md
+- 1100001_INFRASTRUCTURE_OVERVIEW.md
+- 1100001_PERSONA_OS_INFRASTRUCTURE_OVERVIEW.md
+- 110_PERSONA-OS_INFRASTRUCTURE_INDEX.md
+- 110_PERSONA-OS_INFRASTRUCTURE_OVERVIEW.md
+- 110_PERSONA_APPLY_INFRASTRUCTURE.md
+- 111_PERSONA_APPLY_WORKER_INFRASTRUCTURE.md
+- 112_PERSONA_EVENT_RECEIPT_LOG_INFRASTRUCTURE.md
+- 113_PERSONA_IDEMPOTENCY_STORE_INFRASTRUCTURE.md
+- 114_PERSONA_REJECT_LOG_INFRASTRUCTURE.md
+- 1400001_INFRASTRUCTURE_OVERVIEW.md
+- 1400002_PERSONA_EDGE_INFRASTRUCTURE.md
+- 1400003_PERSONA_STORAGE_INFRASTRUCTURE.md
+- 1400004_PERSONA_QUEUE_INFRASTRUCTURE.md
+- 1400005_PERSONA_RUNTIME_HOSTING_INFRASTRUCTURE.md
+- 1400006_PERSONA_PACKAGE_DISTRIBUTION_INFRASTRUCTURE.md
+- 1400007_PERSONA_OBSERVABILITY_INFRASTRUCTURE.md
+- 999_INFRASTRUCTURE_INDEX.txt
+- 010.core/
+- 020.identity/
+- 030.state/
+- 040.memory/
+- 050.growth/
+- 060.builder/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.snapshot/
+- 100.package/
+- 110.distribution/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 140.integration/
+- 150.security/
+- 160.governance/
+- 170.operations_support/

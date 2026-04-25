@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER OPERATION INDEX
-# ============================================================
+# 0700600000_PERSONA_BUILDER_OPERATION_INDEX
 
-status: canonical
-layer: operations
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER OPERATION documents.
+directory: 070.operations/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-0700600000_PERSONA_BUILDER_OPERATION_INDEX.md
-0700600001_PERSONA_BUILDER_OPERATION_OVERVIEW.md
-0700600002_PERSONA_BUILDER_AUDIT_OPERATION.md
+- 0700600001_PERSONA_BUILDER_OPERATION_OVERVIEW.md
+- 0700600002_PERSONA_BUILDER_AUDIT_OPERATION.md
+- 070.operations/

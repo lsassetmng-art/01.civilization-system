@@ -1,0 +1,6 @@
+PASS_COUNT=51
+FAIL_COUNT=0
+RESULT=PASS
+REPORT=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AIOperationDesk/900.meta/900070.design_verification_20260422_120312/000_REPORT.md
+CHECKLIST=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AIOperationDesk/900.meta/900070.design_verification_20260422_120312/000_CHECKLIST.txt
+RESULT_FILE=/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AIOperationDesk/900.meta/900070.design_verification_20260422_120312/000_RESULT.txt

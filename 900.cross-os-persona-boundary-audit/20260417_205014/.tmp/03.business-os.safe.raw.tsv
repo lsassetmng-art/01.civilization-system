@@ -1,0 +1,14 @@
+22	- public_profile_source_link	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	 company_public_profile_id nullable, company_officer_profile_id nullable, source_id, company_snapshot_id nullable, officer_snapshot_id nullable, linked_fields, winner_flag
+24958	  (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+24962	  (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+25653	- public_profile_source_link	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	 company_public_profile_id nullable, company_officer_profile_id nullable, source_id, company_snapshot_id nullable, officer_snapshot_id nullable, linked_fields, winner_flag
+26175	- (company_public_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+26223	- (company_officer_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+26761	    UNIQUE (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+26786	    UNIQUE (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+68783	  (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+68787	  (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+70000	- (company_public_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+70048	- (company_officer_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+70586	    UNIQUE (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+70611	    UNIQUE (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	

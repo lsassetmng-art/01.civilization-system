@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA VISUAL FLOW INDEX
-# ============================================================
+# 0500700000_PERSONA_VISUAL_FLOW_INDEX
 
-status: canonical
-layer: flow
-domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA VISUAL FLOW documents.
+directory: 050.flow/070.visual
 
-# ============================================================
-# FILES
-# ============================================================
-
-0500700000_PERSONA_VISUAL_FLOW_INDEX.md
-0500700001_PERSONA_VISUAL_FLOW_OVERVIEW.md
-0500700002_PERSONA_VISUAL_RENDER_FLOW.md
+- 0500700001_PERSONA_VISUAL_FLOW_OVERVIEW.md
+- 0500700002_PERSONA_VISUAL_RENDER_FLOW.md
+- 050.flow/

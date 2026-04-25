@@ -1,0 +1,8 @@
+# 0901100000_PERSONA_DISTRIBUTION_INTERFACE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 090.interface/110.distribution/090.interface/110.distribution
+
+- 0901100001_PERSONA_DISTRIBUTION_INTERFACE_OVERVIEW.md
+- 0901100002_PERSONA_RELEASE_INTERFACE.md

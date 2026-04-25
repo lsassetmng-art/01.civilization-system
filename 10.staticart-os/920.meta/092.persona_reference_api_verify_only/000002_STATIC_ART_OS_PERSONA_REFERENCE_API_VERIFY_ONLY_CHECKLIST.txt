@@ -1,0 +1,40 @@
+OK  | api exact payload file exists
+OK  | boundary wording present -> read/reference/reflection only
+OK  | boundary wording present -> no direct Persona canonical mutation endpoint
+OK  | boundary wording present -> no Persona core write DTO
+OK  | required endpoint present -> GET /assets/{asset_id}
+OK  | required endpoint present -> PATCH /assets/{asset_id}/persona-local-view-config
+OK  | required endpoint present -> POST /internal/events/persona-snapshot-applied-result
+OK  | required endpoint present -> POST /internal/events/persona-display-projection-refreshed-result
+OK  | required endpoint present -> POST /internal/events/persona-display-rights-verified-result
+OK  | required section present -> creator_persona_reference:
+OK  | required section present -> creator_signed_snapshot_reference:
+OK  | required section present -> public_display_persona_projection:
+OK  | required section present -> exhibition_display_persona_projection:
+OK  | required section present -> local_view_config:
+OK  | required section present -> validation_rule:
+OK  | required section present -> error_422_example:
+OK  | required section present -> response_202_example:
+OK  | forbidden response field declared -> mutable_emotion
+OK  | forbidden response field declared -> mutable_growth
+OK  | forbidden response field declared -> mutable_memory
+OK  | forbidden response field declared -> signature_truth
+OK  | forbidden response field declared -> rights_truth
+OK  | forbidden response field declared -> internal_parameter_truth
+OK  | forbidden endpoint declared -> POST /persona/core
+OK  | forbidden endpoint declared -> PATCH /persona/state
+OK  | forbidden endpoint declared -> PATCH /persona/growth
+OK  | forbidden endpoint declared -> PATCH /persona/memory
+OK  | forbidden endpoint declared -> POST /persona/signature/issue
+OK  | forbidden endpoint declared -> POST /persona/signature/revoke
+OK  | forbidden endpoint declared -> PATCH /persona/rights
+OK  | local_view_config validation present -> request may only change presentation-only fields
+OK  | local_view_config validation present -> request must be rejected if payload attempts Persona mutable truth fields
+OK  | local_view_config validation present -> PERSONA_LOCAL_VIEW_CONFIG_INVALID
+OK  | reflection wording present -> applied_or_ignored_idempotent
+OK  | reflection wording present -> projection_updated_or_ignored_idempotent
+OK  | reflection wording present -> rights_digest_updated_or_ignored_idempotent
+OK  | reflection wording present -> official result events for reflection only
+OK  | endpoint section count looks sufficient -> 5
+OK  | 202 response example count looks sufficient -> 3
+OK  | forbidden endpoint section present

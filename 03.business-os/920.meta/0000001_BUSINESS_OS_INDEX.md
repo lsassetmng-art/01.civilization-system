@@ -1,3 +1,4 @@
+status: canonical-meta
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/0000001_BUSINESS_OS_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100001_INDEX.md
 /data/data/com.termux/files/home/01.civilization-system/03.business-os/010.constitution/0100002_OVERVIEW.md

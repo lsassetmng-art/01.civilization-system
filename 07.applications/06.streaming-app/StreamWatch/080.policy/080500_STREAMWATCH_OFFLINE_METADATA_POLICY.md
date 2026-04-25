@@ -2,32 +2,38 @@
 # STREAMWATCH OFFLINE METADATA POLICY
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: policy
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines the phase-1 offline policy where metadata and continuity caches exist without full downloadable video ownership.
+This document defines the phase-1 offline policy for StreamWatch.
 
-## 2. Fixed Inputs
+## 2. Allowed Offline Scope
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+Phase 1 may support offline-friendly handling of:
 
-## 3. Design Direction
+- history preview cache
+- library preview cache
+- category tree cache
+- recent search cache
+- subtitle and audio preference cache
+- continue watching shell cache
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Excluded Offline Scope
 
-## 4. Current Status
+Phase 1 does not include:
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+- full downloadable video ownership
+- DRM offline package ownership
+- offline binary distribution truth
+
+## 4. Final Policy Rule
+
+Offline support in phase 1 is metadata-oriented, not content-binary-oriented.

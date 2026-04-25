@@ -1,3 +1,5 @@
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/000_STREAM_STUDIO_INDEX.md -->
 # ============================================================
 # STREAM STUDIO INDEX
 # ============================================================
@@ -15,11 +17,19 @@ root_files:
 - 00_STREAM_STUDIO_INTEGRATED.md
 
 main_documents:
+- 010.constitution/010_INDEX.md
+- 010.constitution/010_OVERVIEW.md
 - 010.constitution/010_STREAM_STUDIO_CONSTITUTION.md
 - 010.constitution/011_STREAM_STUDIO_DEFINITION.md
+- 020.architecture/020_INDEX.md
+- 020.architecture/020_OVERVIEW.md
 - 020.architecture/020_STREAM_STUDIO_ARCHITECTURE.md
+- 030.model/030_INDEX.md
+- 030.model/030_OVERVIEW.md
 - 030.model/030_STREAM_STUDIO_MODEL_OVERVIEW.md
 - 030.model/031_STREAM_STUDIO_COMMERCE_AND_MEMBERSHIP_MODEL_EXTENSION.md
+- 040.screen-and-stateflow/040_INDEX.md
+- 040.screen-and-stateflow/040_OVERVIEW.md
 - 040.screen-and-stateflow/040_STREAM_STUDIO_SCREEN_AND_STATEFLOW.md
 - 040.screen-and-stateflow/041_STREAM_STUDIO_HOME_DASHBOARD_EXACT.md
 - 040.screen-and-stateflow/042_STREAM_STUDIO_PROJECT_DETAIL_EXACT.md
@@ -32,6 +42,8 @@ main_documents:
 - 040.screen-and-stateflow/049_STREAM_STUDIO_MARKETPLACE_LISTING_EXACT.md
 - 040.screen-and-stateflow/050_STREAM_STUDIO_MEMBERSHIP_MANAGER_EXACT.md
 - 040.screen-and-stateflow/051_STREAM_STUDIO_SCREEN_STATE_TRANSITION_EXACT_TABLE.md
+- 050.api/050_INDEX.md
+- 050.api/050_OVERVIEW.md
 - 050.api/050_STREAM_STUDIO_API_SURFACE.md
 - 050.api/051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md
 - 050.api/052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md
@@ -42,11 +54,19 @@ main_documents:
 - 050.api/057_STREAM_STUDIO_SPLIT_AND_SETTLEMENT_API_EXACT.md
 - 050.api/058_STREAM_STUDIO_ERROR_VALIDATION_IDEMPOTENCY_POLICY.md
 - 050.api/059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md
+- 060.integration/060_INDEX.md
+- 060.integration/060_OVERVIEW.md
 - 060.integration/060_STREAM_STUDIO_INTEGRATION.md
+- 070.operations/070_INDEX.md
+- 070.operations/070_OVERVIEW.md
 - 070.operations/070_STREAM_STUDIO_OPERATIONS.md
 - 070.operations/071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md
+- 080.policy/080_INDEX.md
+- 080.policy/080_OVERVIEW.md
 - 080.policy/080_STREAM_STUDIO_POLICY.md
 - 080.policy/081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md
+- 120.implementation/120_INDEX.md
+- 120.implementation/120_OVERVIEW.md
 - 120.implementation/120_STREAM_STUDIO_IMPLEMENTATION_READINESS.md
 - 120.implementation/121_STREAM_STUDIO_IMPLEMENTATION_READINESS_FINAL_FREEZE_MEMO.md
 - 120.implementation/122_STREAM_STUDIO_ENUM_LEDGER.md
@@ -58,9 +78,172 @@ main_documents:
 - 120.implementation/128_STREAM_STUDIO_IMPLEMENTATION_DEPENDENCY_MEMO.md
 - 120.implementation/129_STREAM_STUDIO_IMPLEMENTATION_HANDOFF_CHECKLIST.md
 - 120.implementation/130_STREAM_STUDIO_DESIGN_COMPLETENESS_AUDIT_MEMO.md
+- 120.implementation/131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md
+- 120.implementation/132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md
+- 120.implementation/133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md
+- 120.implementation/134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md
+- 120.implementation/135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md
+- 120.implementation/136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md
+- 120.implementation/137_STREAM_STUDIO_PHASE1_BACKEND_ENDPOINT_IMPLEMENTATION_MAP.md
+- 120.implementation/138_STREAM_STUDIO_PHASE1_UI_COMPONENT_IMPLEMENTATION_MAP.md
+- 120.implementation/139_STREAM_STUDIO_PHASE1_DB_TABLE_IMPLEMENTATION_MAP.md
+- 120.implementation/140_STREAM_STUDIO_PHASE1_TESTCASE_MATRIX.md
+- 120.implementation/141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md
+- 120.implementation/142_STREAM_STUDIO_PHASE1_BACKEND_FILE_SCAFFOLD_LEDGER.md
+- 120.implementation/143_STREAM_STUDIO_PHASE1_UI_FILE_SCAFFOLD_LEDGER.md
+- 120.implementation/144_STREAM_STUDIO_PHASE1_ROUTER_SERVICE_VALIDATOR_BINDING_MAP.md
+- 120.implementation/145_STREAM_STUDIO_PHASE1_TEST_FILE_SCAFFOLD_LEDGER.md
+- 120.implementation/146_STREAM_STUDIO_PHASE1_REAL_BUILD_FILESET_DECISION_MEMO.md
+- 120.implementation/147_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_BATCH_PACK.md
+- 120.implementation/148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md
+- 120.implementation/149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md
+- 120.implementation/150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md
+- 120.implementation/151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md
+- 120.implementation/152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md
+- 120.implementation/153.phase1-sql/153000_STREAM_STUDIO_PHASE1_SQL_REAL_MIGRATION_BUNDLE.md
+- 120.implementation/153.phase1-sql/153100_PHASE1_01_creator_project_and_member.sql
+- 120.implementation/153.phase1-sql/153110_PHASE1_02_upload_job.sql
+- 120.implementation/153.phase1-sql/153120_PHASE1_03_video_draft_marker_subtitle.sql
+- 120.implementation/153.phase1-sql/153130_PHASE1_04_publish_setting_and_request.sql
+- 120.implementation/153.phase1-sql/153140_PHASE1_05_runtime_and_dead_letter.sql
+- 120.implementation/153.phase1-sql/153150_PHASE1_06_audit_event.sql
+- 120.implementation/153.phase1-sql/153160_PHASE1_07_indexes_and_constraints.sql
+- 120.implementation/153.phase1-sql/153170_PHASE1_APPLY_REVIEW_RUNNER.sh
+- 120.implementation/153.phase1-sql/153180_PHASE1_PRE_APPLY_CHECKLIST.md
+- 120.implementation/153.phase1-sql/153190_PHASE1_SQL_BUNDLE_VERIFY.sh
+- 120.implementation/153.phase1-sql/153199_PHASE1_SQL_BUNDLE_SUMMARY.md
+- 120.implementation/153.phase1-sql/153200_PHASE1_POST_APPLY_VERIFY_BUNDLE.md
+- 120.implementation/153.phase1-sql/153210_PHASE1_VERIFY_TABLE_PRESENCE.sql
+- 120.implementation/153.phase1-sql/153220_PHASE1_VERIFY_COLUMN_SHAPE.sql
+- 120.implementation/153.phase1-sql/153230_PHASE1_VERIFY_INDEX_AND_FK.sql
+- 120.implementation/153.phase1-sql/153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql
+- 120.implementation/153.phase1-sql/153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh
+- 120.implementation/153.phase1-sql/153260_PHASE1_POST_APPLY_VERIFY_CHECKLIST.md
+- 120.implementation/153.phase1-sql/153299_PHASE1_POST_APPLY_VERIFY_SUMMARY.md
+- 120.implementation/153.phase1-sql/153_INDEX.md
+- 120.implementation/153.phase1-sql/153_OVERVIEW.md
+- 120.implementation/154.phase1-final-handoff/154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md
+- 120.implementation/154.phase1-final-handoff/154010_STREAM_STUDIO_PHASE1_HANDOFF_READING_ORDER.md
+- 120.implementation/154.phase1-final-handoff/154020_STREAM_STUDIO_PHASE1_SCOPE_BOUNDARY_FINAL_MEMO.md
+- 120.implementation/154.phase1-final-handoff/154030_STREAM_STUDIO_PHASE1_GO_STOP_GATE_FINAL.md
+- 120.implementation/154.phase1-final-handoff/154040_STREAM_STUDIO_PHASE1_NON_BLOCKING_REMAINING_ITEMS_LEDGER.md
+- 120.implementation/154.phase1-final-handoff/154099_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_SUMMARY.md
+- 120.implementation/154.phase1-final-handoff/154190_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_VERIFY.sh
+- 120.implementation/154.phase1-final-handoff/154_INDEX.md
+- 120.implementation/154.phase1-final-handoff/154_OVERVIEW.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155000_STREAM_STUDIO_PHASE2_TO_PHASE6_IMPLEMENTATION_ROADMAP.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155090_STREAM_STUDIO_CROSS_PHASE_DEPENDENCY_AND_RELEASE_ORDER.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155099_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_SUMMARY.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155190_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_VERIFY.sh
+- 120.implementation/155.phase2-to-phase6-roadmap/155_INDEX.md
+- 120.implementation/155.phase2-to-phase6-roadmap/155_OVERVIEW.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156000_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_ATLAS.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156010_STREAM_STUDIO_PHASE_COMPARISON_MATRIX.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156020_STREAM_STUDIO_DEPENDENCY_HEATMAP_AND_CHAIN.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156030_STREAM_STUDIO_MILESTONE_AND_GATE_ATLAS.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156040_STREAM_STUDIO_RELEASE_SLICE_AND_DELIVERY_ATLAS.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156099_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_SUMMARY.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156190_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_VERIFY.sh
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156_INDEX.md
+- 120.implementation/156.phase1-to-phase6-master-roadmap/156_OVERVIEW.md
+- 120.implementation/157.final-master-summary/157000_STREAM_STUDIO_TOTAL_DESIGN_MASTER_SUMMARY.md
+- 120.implementation/157.final-master-summary/157010_STREAM_STUDIO_DOCUMENT_SYSTEM_MAP.md
+- 120.implementation/157.final-master-summary/157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md
+- 120.implementation/157.final-master-summary/157030_STREAM_STUDIO_CANONICAL_REFERENCE_ORDER_FINAL.md
+- 120.implementation/157.final-master-summary/157040_STREAM_STUDIO_NEXT_ACTION_POLICY_DESIGN_ONLY.md
+- 120.implementation/157.final-master-summary/157099_STREAM_STUDIO_FINAL_MASTER_SUMMARY_PACKET_SUMMARY.md
+- 120.implementation/157.final-master-summary/157190_STREAM_STUDIO_FINAL_MASTER_SUMMARY_VERIFY.sh
+- 120.implementation/157.final-master-summary/157_INDEX.md
+- 120.implementation/157.final-master-summary/157_OVERVIEW.md
+- 120.implementation/158.final-app-specific-audit/158000_STREAM_STUDIO_APP_SPECIFIC_FINAL_AUDIT_MASTER.md
+- 120.implementation/158.final-app-specific-audit/158010_STREAM_STUDIO_SCREEN_API_RUNTIME_POLICY_CONSISTENCY_AUDIT.md
+- 120.implementation/158.final-app-specific-audit/158020_STREAM_STUDIO_PHASE_BOUNDARY_LEAKAGE_AUDIT.md
+- 120.implementation/158.final-app-specific-audit/158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md
+- 120.implementation/158.final-app-specific-audit/158040_STREAM_STUDIO_REMAINING_GAPS_AND_OPTIONAL_ITEMS_LEDGER.md
+- 120.implementation/158.final-app-specific-audit/158099_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_SUMMARY.md
+- 120.implementation/158.final-app-specific-audit/158190_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_VERIFY.sh
+- 120.implementation/158.final-app-specific-audit/158_INDEX.md
+- 120.implementation/158.final-app-specific-audit/158_OVERVIEW.md
+- 120.implementation/159.final-closeout/159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md
+- 120.implementation/159.final-closeout/159010_STREAM_STUDIO_DELIVERABLE_LEDGER_FINAL.md
+- 120.implementation/159.final-closeout/159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md
+- 120.implementation/159.final-closeout/159030_STREAM_STUDIO_NEXT_CHAT_HANDOFF_NOTE.md
+- 120.implementation/159.final-closeout/159099_STREAM_STUDIO_FINAL_CLOSEOUT_PACKET_SUMMARY.md
+- 120.implementation/159.final-closeout/159190_STREAM_STUDIO_FINAL_CLOSEOUT_VERIFY.sh
+- 120.implementation/159.final-closeout/159_INDEX.md
+- 120.implementation/159.final-closeout/159_OVERVIEW.md
+- 120.implementation/160.next-chat-starter-kit/160000_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT.md
+- 120.implementation/160.next-chat-starter-kit/160010_STREAM_STUDIO_DESIGN_ONLY_CHAT_START_PROMPT.md
+- 120.implementation/160.next-chat-starter-kit/160020_STREAM_STUDIO_PHASE1_IMPLEMENTATION_PLANNING_CHAT_START_PROMPT.md
+- 120.implementation/160.next-chat-starter-kit/160030_STREAM_STUDIO_PHASE1_SQL_REVIEW_CHAT_START_PROMPT.md
+- 120.implementation/160.next-chat-starter-kit/160040_STREAM_STUDIO_REFERENCE_MINIMUM_SET_FOR_NEXT_CHAT.md
+- 120.implementation/160.next-chat-starter-kit/160099_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_SUMMARY.md
+- 120.implementation/160.next-chat-starter-kit/160190_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_VERIFY.sh
+- 120.implementation/160.next-chat-starter-kit/160_INDEX.md
+- 120.implementation/160.next-chat-starter-kit/160_OVERVIEW.md
+- 120.implementation/161.quick-lookup-navigation/161000_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_ATLAS.md
+- 120.implementation/161.quick-lookup-navigation/161010_STREAM_STUDIO_TASK_TO_DOCUMENT_ROUTING_MAP.md
+- 120.implementation/161.quick-lookup-navigation/161020_STREAM_STUDIO_PHASE_TO_DOCUMENT_ENTRYPOINT_MAP.md
+- 120.implementation/161.quick-lookup-navigation/161030_STREAM_STUDIO_WHERE_TO_READ_FIRST_GUIDE.md
+- 120.implementation/161.quick-lookup-navigation/161099_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_SUMMARY.md
+- 120.implementation/161.quick-lookup-navigation/161190_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_VERIFY.sh
+- 120.implementation/161.quick-lookup-navigation/161_INDEX.md
+- 120.implementation/161.quick-lookup-navigation/161_OVERVIEW.md
+- 120.implementation/162.frozen-decision-register/162000_STREAM_STUDIO_FROZEN_DECISION_MASTER_REGISTER.md
+- 120.implementation/162.frozen-decision-register/162010_STREAM_STUDIO_PHASE1_FROZEN_DECISION_REGISTER.md
+- 120.implementation/162.frozen-decision-register/162020_STREAM_STUDIO_POST_PHASE1_FROZEN_DECISION_REGISTER.md
+- 120.implementation/162.frozen-decision-register/162030_STREAM_STUDIO_PROHIBITED_DRIFT_REGISTER.md
+- 120.implementation/162.frozen-decision-register/162099_STREAM_STUDIO_FROZEN_DECISION_REGISTER_SUMMARY.md
+- 120.implementation/162.frozen-decision-register/162190_STREAM_STUDIO_FROZEN_DECISION_REGISTER_VERIFY.sh
+- 120.implementation/162.frozen-decision-register/162_INDEX.md
+- 120.implementation/162.frozen-decision-register/162_OVERVIEW.md
 - 900.meta/900110_STREAM_STUDIO_COMMON_COMPONENT_CANDIDATES.md
+- 900.meta/900111_STREAM_STUDIO_COMMON_COMPONENT_REVIEW_MATRIX.md
+- 900.meta/900112_STREAM_STUDIO_COMMON_COMPONENT_OFFICIAL_SELECTION.md
+- 900.meta/900113_STREAM_STUDIO_COMMON_COMPONENT_PROMOTION_DESIGN_PLAN.md
+- 900.meta/900114_UPLOAD_INTAKE_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900115_METADATA_EDITING_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900116_APPROVAL_FLOW_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900117_PUBLISH_SETTINGS_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900118_MARKETPLACE_LISTING_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900119_MEMBERSHIP_PROGRAM_MANAGER_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900120_PROJECT_MEMBER_AUTHORITY_MATRIX_COMMON_PROMOTION_DESIGN.md
 - 900.meta/900120_STREAM_STUDIO_CX22073_CANDIDATE_AREAS.md
+- 900.meta/900121_FIXED_FEE_AND_PERCENTAGE_ALLOCATION_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900122_REVENUE_SPLIT_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900123_MULTI_CURRENCY_MONETARY_CORE_PROMOTION_DESIGN.md
+- 900.meta/900124_RETRY_AND_DEAD_LETTER_VISIBILITY_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900125_EXTERNAL_PUSH_CONNECTOR_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900126_AUDIT_RECONSTRUCTION_BUNDLE_COMMON_PROMOTION_DESIGN.md
+- 900.meta/900127_STREAM_STUDIO_PROMOTION_DESIGN_BATCH1_SUMMARY.md
+- 900.meta/900128_STREAM_STUDIO_PROMOTION_RELATION_REVIEW.md
+- 900.meta/900129_STREAM_STUDIO_PROMOTION_READINESS_SUMMARY.md
 - 900.meta/900130_STREAM_STUDIO_RELEASE_SLICE.md
+- 900.meta/900130_STREAM_STUDIO_SHARED_ADOPTION_REVIEW_INPUT.md
+- 900.meta/900131_ALLOCATION_SPLIT_RELATION_MEMO.md
+- 900.meta/900140_STREAM_STUDIO_VERIFY_AND_AUDIT_RUNNER.sh
+- 900.meta/900150_STREAM_STUDIO_REPAIR_FROM_VERIFY_RUNNER.sh
+- 900.meta/900160_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER_DESIGN.md
+- 900.meta/900161_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER.sh
+- 900.meta/900162_STREAM_STUDIO_PHASE1_BUNDLE_SUMMARY.md
+- 900.meta/900163_STREAM_STUDIO_PHASE1_STARTER_PACKET_SUMMARY.md
+- 900.meta/900164_STREAM_STUDIO_PHASE1_STARTER_PACKET_VERIFY.sh
+- 900.meta/900165_STREAM_STUDIO_PHASE1_FILESET_PACKET_SUMMARY.md
+- 900.meta/900166_STREAM_STUDIO_PHASE1_FILESET_PACKET_VERIFY.sh
+- 900.meta/900167_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_SUMMARY.md
+- 900.meta/900168_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_VERIFY.sh
+- 900.meta/900_INDEX.md
+- 900.meta/900_OVERVIEW.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/000_STREAM_STUDIO_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/000_STREAM_STUDIO_OVERVIEW.md -->
 # ============================================================
 # STREAM STUDIO OVERVIEW
 # ============================================================
@@ -131,8 +314,13 @@ structure:
 - 080.policy
 - 120.implementation
 - 900.meta
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/000_STREAM_STUDIO_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/010_INDEX.md -->
 # ============================================================
-# 010 CONSTITUTION INDEX
+# 010 INDEX
 # ============================================================
 
 status: canonical
@@ -144,8 +332,14 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 010_OVERVIEW.md
 - 010_STREAM_STUDIO_CONSTITUTION.md
 - 011_STREAM_STUDIO_DEFINITION.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/010_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/010_OVERVIEW.md -->
 # ============================================================
 # 010 CONSTITUTION OVERVIEW
 # ============================================================
@@ -163,6 +357,11 @@ Defines the constitutional principles of StreamStudio,
 including StreamingOS-first truth, creator-side operation,
 review and approval separation, external push boundary,
 and split governance.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/010_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/010_STREAM_STUDIO_CONSTITUTION.md -->
 # ============================================================
 # STREAM STUDIO CONSTITUTION
 # ============================================================
@@ -243,6 +442,11 @@ They are never treated as:
 - Review, approval, publish, and split changes must be traceable.
 - Policy override must remain explicit.
 - Failure and retry states must remain visible.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/010_STREAM_STUDIO_CONSTITUTION.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/011_STREAM_STUDIO_DEFINITION.md -->
 # ============================================================
 # STREAM STUDIO DEFINITION
 # ============================================================
@@ -326,8 +530,13 @@ Out of scope:
 - final legal contract enforceability
 - full accounting ledger
 - advanced NLE-grade editing engine
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/010.constitution/011_STREAM_STUDIO_DEFINITION.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/020.architecture/020_INDEX.md -->
 # ============================================================
-# 020 ARCHITECTURE INDEX
+# 020 INDEX
 # ============================================================
 
 status: canonical
@@ -339,7 +548,13 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 020_OVERVIEW.md
 - 020_STREAM_STUDIO_ARCHITECTURE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/020.architecture/020_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/020.architecture/020_OVERVIEW.md -->
 # ============================================================
 # 020 ARCHITECTURE OVERVIEW
 # ============================================================
@@ -358,6 +573,11 @@ including creator workspace, upload intake,
 draft asset handling, review and approval,
 publish orchestration, external push,
 collaboration, and revenue split governance.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/020.architecture/020_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/020.architecture/020_STREAM_STUDIO_ARCHITECTURE.md -->
 # ============================================================
 # STREAM STUDIO ARCHITECTURE
 # ============================================================
@@ -528,8 +748,13 @@ marketplace listing separation,
 membership rule governance,
 approval traceability,
 and external push separation.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/020.architecture/020_STREAM_STUDIO_ARCHITECTURE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/030_INDEX.md -->
 # ============================================================
-# 030 MODEL INDEX
+# 030 INDEX
 # ============================================================
 
 status: canonical
@@ -541,8 +766,14 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 030_OVERVIEW.md
 - 030_STREAM_STUDIO_MODEL_OVERVIEW.md
 - 031_STREAM_STUDIO_COMMERCE_AND_MEMBERSHIP_MODEL_EXTENSION.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/030_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/030_OVERVIEW.md -->
 # ============================================================
 # 030 MODEL OVERVIEW
 # ============================================================
@@ -558,6 +789,11 @@ prepared_by: Zero
 summary:
 Defines the creator-side working records used by StreamStudio,
 while preserving StreamingOS as canonical truth holder.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/030_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/030_STREAM_STUDIO_MODEL_OVERVIEW.md -->
 # ============================================================
 # STREAM STUDIO MODEL OVERVIEW
 # ============================================================
@@ -798,6 +1034,11 @@ These records are creator-side operational records.
 Canonical ownership, publication truth,
 and final monetization truth remain aligned
 to StreamingOS-side canonical models.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/030_STREAM_STUDIO_MODEL_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/031_STREAM_STUDIO_COMMERCE_AND_MEMBERSHIP_MODEL_EXTENSION.md -->
 # ============================================================
 # STREAM STUDIO COMMERCE AND MEMBERSHIP MODEL EXTENSION
 # ============================================================
@@ -938,8 +1179,13 @@ and entitlement fulfillment may live in downstream
 commerce systems or marketplace systems,
 but StreamStudio must remain able to configure
 and audit the creator-side intent and rules.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/030.model/031_STREAM_STUDIO_COMMERCE_AND_MEMBERSHIP_MODEL_EXTENSION.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/040_INDEX.md -->
 # ============================================================
-# 040 SCREEN AND STATEFLOW INDEX
+# 040 INDEX
 # ============================================================
 
 status: canonical
@@ -951,6 +1197,7 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 040_OVERVIEW.md
 - 040_STREAM_STUDIO_SCREEN_AND_STATEFLOW.md
 - 041_STREAM_STUDIO_HOME_DASHBOARD_EXACT.md
 - 042_STREAM_STUDIO_PROJECT_DETAIL_EXACT.md
@@ -963,6 +1210,11 @@ files:
 - 049_STREAM_STUDIO_MARKETPLACE_LISTING_EXACT.md
 - 050_STREAM_STUDIO_MEMBERSHIP_MANAGER_EXACT.md
 - 051_STREAM_STUDIO_SCREEN_STATE_TRANSITION_EXACT_TABLE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/040_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/040_OVERVIEW.md -->
 # ============================================================
 # 040 SCREEN AND STATEFLOW OVERVIEW
 # ============================================================
@@ -978,6 +1230,11 @@ prepared_by: Zero
 summary:
 Defines the primary screens, navigation model,
 and end-to-end stateflow of StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/040_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/040_STREAM_STUDIO_SCREEN_AND_STATEFLOW.md -->
 # ============================================================
 # STREAM STUDIO SCREEN AND STATEFLOW
 # ============================================================
@@ -1062,6 +1319,11 @@ stateflow_principle:
 - no state transition may hide split conflict
 - no state transition may hide pricing conflict
 - no state transition may hide entitlement rule conflict
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/040_STREAM_STUDIO_SCREEN_AND_STATEFLOW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/041_STREAM_STUDIO_HOME_DASHBOARD_EXACT.md -->
 # ============================================================
 # STREAM STUDIO HOME DASHBOARD EXACT
 # ============================================================
@@ -1178,6 +1440,11 @@ success_feedback:
 - upload_created_toast
 - publish_request_created_toast
 - split_draft_created_toast
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/041_STREAM_STUDIO_HOME_DASHBOARD_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/042_STREAM_STUDIO_PROJECT_DETAIL_EXACT.md -->
 # ============================================================
 # STREAM STUDIO PROJECT DETAIL EXACT
 # ============================================================
@@ -1341,6 +1608,11 @@ mobile_behavior:
 - tab list becomes segmented stacked navigation
 - audit tab becomes summary-first
 - heavy asset actions may deep-link to tablet_or_pc_recommended_notice
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/042_STREAM_STUDIO_PROJECT_DETAIL_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/043_STREAM_STUDIO_UPLOAD_QUEUE_EXACT.md -->
 # ============================================================
 # STREAM STUDIO UPLOAD QUEUE EXACT
 # ============================================================
@@ -1444,6 +1716,11 @@ error_codes_to_surface:
 - file_format_rejected
 - ingest_processing_failed
 - permission_denied
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/043_STREAM_STUDIO_UPLOAD_QUEUE_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/044_STREAM_STUDIO_REVIEW_WORKSPACE_EXACT.md -->
 # ============================================================
 # STREAM STUDIO REVIEW WORKSPACE EXACT
 # ============================================================
@@ -1546,6 +1823,11 @@ empty_states:
 - no_review_items
 - no_overdue_items
 - no_blocked_items
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/044_STREAM_STUDIO_REVIEW_WORKSPACE_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/045_STREAM_STUDIO_PUBLISH_SETTINGS_EXACT.md -->
 # ============================================================
 # STREAM STUDIO PUBLISH SETTINGS EXACT
 # ============================================================
@@ -1649,6 +1931,11 @@ user_feedback:
 - publish_success_toast
 - schedule_saved_toast
 - external_push_failed_banner
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/045_STREAM_STUDIO_PUBLISH_SETTINGS_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/046_STREAM_STUDIO_REVENUE_SPLIT_EDITOR_EXACT.md -->
 # ============================================================
 # STREAM STUDIO REVENUE SPLIT EDITOR EXACT
 # ============================================================
@@ -1755,6 +2042,11 @@ mobile_policy:
 - line editing becomes step form
 - bulk comparison hidden by default
 - negotiation log prioritized over table density
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/046_STREAM_STUDIO_REVENUE_SPLIT_EDITOR_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/047_STREAM_STUDIO_COLLABORATOR_MANAGER_EXACT.md -->
 # ============================================================
 # STREAM STUDIO COLLABORATOR MANAGER EXACT
 # ============================================================
@@ -1847,6 +2139,11 @@ mobile_policy:
 - member list simplified
 - exception editing discouraged on mobile
 - invite and approve actions remain available
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/047_STREAM_STUDIO_COLLABORATOR_MANAGER_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/048_STREAM_STUDIO_NOTIFICATION_AND_MOBILE_EXACT.md -->
 # ============================================================
 # STREAM STUDIO NOTIFICATION AND MOBILE EXACT
 # ============================================================
@@ -1920,6 +2217,11 @@ mobile_state_rules:
 - dangerous actions require confirmation sheet
 - long-form tables are replaced by stacked cards
 - approval note entry must remain possible before decision submit
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/048_STREAM_STUDIO_NOTIFICATION_AND_MOBILE_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/049_STREAM_STUDIO_MARKETPLACE_LISTING_EXACT.md -->
 # ============================================================
 # STREAM STUDIO MARKETPLACE LISTING EXACT
 # ============================================================
@@ -2038,6 +2340,11 @@ hard_blocks:
 - invalid_membership_binding
 - missing_required_split_configuration
 - policy_rejected_category
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/049_STREAM_STUDIO_MARKETPLACE_LISTING_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/050_STREAM_STUDIO_MEMBERSHIP_MANAGER_EXACT.md -->
 # ============================================================
 # STREAM STUDIO MEMBERSHIP MANAGER EXACT
 # ============================================================
@@ -2151,6 +2458,11 @@ hard_blocks:
 - conflicting_content_rule
 - missing_benefit_or_empty_program_if_policy_blocks_activation
 - unresolved_rights_for_member_only_asset
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/050_STREAM_STUDIO_MEMBERSHIP_MANAGER_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/051_STREAM_STUDIO_SCREEN_STATE_TRANSITION_EXACT_TABLE.md -->
 # ============================================================
 # STREAM STUDIO SCREEN STATE TRANSITION EXACT TABLE
 # ============================================================
@@ -2751,8 +3063,13 @@ fixed_statement:
 - screen transitions in StreamStudio are explicit, blocker-aware, and domain-separated
 - publish, listing, membership, split, and approval transitions must remain independently observable
 - no ui shortcut may bypass approval, rights, pricing, membership, or split validation rules
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/040.screen-and-stateflow/051_STREAM_STUDIO_SCREEN_STATE_TRANSITION_EXACT_TABLE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/050_INDEX.md -->
 # ============================================================
-# 050 API INDEX
+# 050 INDEX
 # ============================================================
 
 status: canonical
@@ -2764,6 +3081,7 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 050_OVERVIEW.md
 - 050_STREAM_STUDIO_API_SURFACE.md
 - 051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md
 - 052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md
@@ -2774,6 +3092,11 @@ files:
 - 057_STREAM_STUDIO_SPLIT_AND_SETTLEMENT_API_EXACT.md
 - 058_STREAM_STUDIO_ERROR_VALIDATION_IDEMPOTENCY_POLICY.md
 - 059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/050_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/050_OVERVIEW.md -->
 # ============================================================
 # 050 API OVERVIEW
 # ============================================================
@@ -2788,6 +3111,11 @@ prepared_by: Zero
 
 summary:
 Defines the implementation-facing API surface groups of StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/050_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/050_STREAM_STUDIO_API_SURFACE.md -->
 # ============================================================
 # STREAM STUDIO API SURFACE
 # ============================================================
@@ -2818,6 +3146,11 @@ fixed_contract_policy:
 - idempotent mutation endpoints require idempotency_key
 - canonical publish and external push results are separated
 - commerce listing and membership errors are separated from creator draft errors
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/050_STREAM_STUDIO_API_SURFACE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md -->
 # ============================================================
 # STREAM STUDIO PROJECT AND UPLOAD API EXACT
 # ============================================================
@@ -3129,6 +3462,11 @@ business_rule_errors:
 - upload_not_retryable
 - upload_permission_denied
 - upload_session_terminal_failed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md -->
 # ============================================================
 # STREAM STUDIO DRAFT ASSET API EXACT
 # ============================================================
@@ -3337,6 +3675,11 @@ business_rule_errors:
 - draft_not_found
 - draft_locked_by_publish_flow
 - draft_locked_by_approval_flow
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/053_STREAM_STUDIO_REVIEW_APPROVAL_API_EXACT.md -->
 # ============================================================
 # STREAM STUDIO REVIEW APPROVAL API EXACT
 # ============================================================
@@ -3553,6 +3896,11 @@ response_body:
       limit: integer
   meta:
     request_id: string
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/053_STREAM_STUDIO_REVIEW_APPROVAL_API_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/054_STREAM_STUDIO_PUBLISH_API_EXACT.md -->
 # ============================================================
 # STREAM STUDIO PUBLISH API EXACT
 # ============================================================
@@ -3751,6 +4099,11 @@ response_body:
       updated_at: iso8601
   meta:
     request_id: string
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/054_STREAM_STUDIO_PUBLISH_API_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/055_STREAM_STUDIO_MARKETPLACE_LISTING_API_EXACT.md -->
 # ============================================================
 # STREAM STUDIO MARKETPLACE LISTING API EXACT
 # ============================================================
@@ -3978,6 +4331,11 @@ response_body:
       updated_at: iso8601
   meta:
     request_id: string
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/055_STREAM_STUDIO_MARKETPLACE_LISTING_API_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/056_STREAM_STUDIO_MEMBERSHIP_API_EXACT.md -->
 # ============================================================
 # STREAM STUDIO MEMBERSHIP API EXACT
 # ============================================================
@@ -4233,6 +4591,11 @@ response_body:
       limit: integer
   meta:
     request_id: string
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/056_STREAM_STUDIO_MEMBERSHIP_API_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/057_STREAM_STUDIO_SPLIT_AND_SETTLEMENT_API_EXACT.md -->
 # ============================================================
 # STREAM STUDIO SPLIT AND SETTLEMENT API EXACT
 # ============================================================
@@ -4428,6 +4791,11 @@ response_body:
       limit: integer
   meta:
     request_id: string
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/057_STREAM_STUDIO_SPLIT_AND_SETTLEMENT_API_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/058_STREAM_STUDIO_ERROR_VALIDATION_IDEMPOTENCY_POLICY.md -->
 # ============================================================
 # STREAM STUDIO ERROR VALIDATION IDEMPOTENCY POLICY
 # ============================================================
@@ -4538,6 +4906,11 @@ timestamp_policy:
 number_policy:
 - monetary values use decimal-compatible number string at implementation layer if precision requires
 - percentage values preserve fractional precision policy separately
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/058_STREAM_STUDIO_ERROR_VALIDATION_IDEMPOTENCY_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md -->
 # ============================================================
 # STREAM STUDIO VALIDATION AND ERROR CODE EXACT TABLE
 # ============================================================
@@ -5017,8 +5390,13 @@ fixed_statement:
 - permission and state conflicts must remain distinguishable
 - marketplace, membership, publish, and split failures must remain separable
 - exact error codes are part of the implementation contract
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/050.api/059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/060.integration/060_INDEX.md -->
 # ============================================================
-# 060 INTEGRATION INDEX
+# 060 INDEX
 # ============================================================
 
 status: canonical
@@ -5030,7 +5408,13 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 060_OVERVIEW.md
 - 060_STREAM_STUDIO_INTEGRATION.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/060.integration/060_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/060.integration/060_OVERVIEW.md -->
 # ============================================================
 # 060 INTEGRATION OVERVIEW
 # ============================================================
@@ -5046,6 +5430,11 @@ prepared_by: Zero
 summary:
 Defines how StreamStudio connects to StreamingOS canonical
 publication truth and to external push extensions.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/060.integration/060_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/060.integration/060_STREAM_STUDIO_INTEGRATION.md -->
 # ============================================================
 # STREAM STUDIO INTEGRATION
 # ============================================================
@@ -5121,8 +5510,13 @@ while clearly preserving canonical StreamingOS truth,
 marketplace commerce separation,
 membership rule governance,
 and connector-isolated external push behavior.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/060.integration/060_STREAM_STUDIO_INTEGRATION.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/070_INDEX.md -->
 # ============================================================
-# 070 OPERATIONS INDEX
+# 070 INDEX
 # ============================================================
 
 status: canonical
@@ -5134,8 +5528,14 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 070_OVERVIEW.md
 - 070_STREAM_STUDIO_OPERATIONS.md
 - 071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/070_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/070_OVERVIEW.md -->
 # ============================================================
 # 070 OPERATIONS OVERVIEW
 # ============================================================
@@ -5152,6 +5552,11 @@ summary:
 Defines operational handling of uploads, retries,
 review queues, scheduled publishing, connector failures,
 and audit reconstruction.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/070_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/070_STREAM_STUDIO_OPERATIONS.md -->
 # ============================================================
 # STREAM STUDIO OPERATIONS
 # ============================================================
@@ -5233,6 +5638,11 @@ A sellable or member-gated asset must reconstruct from:
 - membership rule conflict
 - split confirmation required
 - external push failed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/070_STREAM_STUDIO_OPERATIONS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md -->
 # ============================================================
 # STREAM STUDIO RUNTIME JOB RETRY AND DEAD-LETTER EXACT
 # ============================================================
@@ -5729,8 +6139,13 @@ fixed_statement:
 - dead-letter is an explicit visible terminal state
 - publish, listing, membership, connector, and settlement failures remain separated
 - idempotency and reconciliation are mandatory for irreversible async actions
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/070.operations/071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/080_INDEX.md -->
 # ============================================================
-# 080 POLICY INDEX
+# 080 INDEX
 # ============================================================
 
 status: canonical
@@ -5742,8 +6157,14 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 080_OVERVIEW.md
 - 080_STREAM_STUDIO_POLICY.md
 - 081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/080_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/080_OVERVIEW.md -->
 # ============================================================
 # 080 POLICY OVERVIEW
 # ============================================================
@@ -5760,6 +6181,11 @@ summary:
 Defines policy requirements for rights checks,
 approval requirements, publication safety,
 split governance, and privacy.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/080_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/080_STREAM_STUDIO_POLICY.md -->
 # ============================================================
 # STREAM STUDIO POLICY
 # ============================================================
@@ -5838,6 +6264,11 @@ explicit approval boundaries,
 auditable pricing and membership governance,
 and auditable split governance
 before and after publication or sale actions.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/080_STREAM_STUDIO_POLICY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md -->
 # ============================================================
 # STREAM STUDIO PERMISSION MATRIX EXACT
 # ============================================================
@@ -6308,6 +6739,11 @@ fixed_statement:
 - High-risk actions require both role allow and scope allow.
 - Commerce, membership, publish, and split actions remain separately governable.
 - Audit reconstruction is mandatory for all approval, release, commerce, and override actions.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/080.policy/081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/120_INDEX.md -->
 # ============================================================
 # 120 IMPLEMENTATION INDEX
 # ============================================================
@@ -6321,6 +6757,7 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 120_OVERVIEW.md
 - 120_STREAM_STUDIO_IMPLEMENTATION_READINESS.md
 - 121_STREAM_STUDIO_IMPLEMENTATION_READINESS_FINAL_FREEZE_MEMO.md
 - 122_STREAM_STUDIO_ENUM_LEDGER.md
@@ -6332,6 +6769,135 @@ files:
 - 128_STREAM_STUDIO_IMPLEMENTATION_DEPENDENCY_MEMO.md
 - 129_STREAM_STUDIO_IMPLEMENTATION_HANDOFF_CHECKLIST.md
 - 130_STREAM_STUDIO_DESIGN_COMPLETENESS_AUDIT_MEMO.md
+- 131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md
+- 132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md
+- 133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md
+- 134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md
+- 135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md
+- 136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md
+- 137_STREAM_STUDIO_PHASE1_BACKEND_ENDPOINT_IMPLEMENTATION_MAP.md
+- 138_STREAM_STUDIO_PHASE1_UI_COMPONENT_IMPLEMENTATION_MAP.md
+- 139_STREAM_STUDIO_PHASE1_DB_TABLE_IMPLEMENTATION_MAP.md
+- 140_STREAM_STUDIO_PHASE1_TESTCASE_MATRIX.md
+- 141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md
+- 142_STREAM_STUDIO_PHASE1_BACKEND_FILE_SCAFFOLD_LEDGER.md
+- 143_STREAM_STUDIO_PHASE1_UI_FILE_SCAFFOLD_LEDGER.md
+- 144_STREAM_STUDIO_PHASE1_ROUTER_SERVICE_VALIDATOR_BINDING_MAP.md
+- 145_STREAM_STUDIO_PHASE1_TEST_FILE_SCAFFOLD_LEDGER.md
+- 146_STREAM_STUDIO_PHASE1_REAL_BUILD_FILESET_DECISION_MEMO.md
+- 147_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_BATCH_PACK.md
+- 148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md
+- 149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md
+- 150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md
+- 151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md
+- 152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md
+- 153.phase1-sql/153000_STREAM_STUDIO_PHASE1_SQL_REAL_MIGRATION_BUNDLE.md
+- 153.phase1-sql/153100_PHASE1_01_creator_project_and_member.sql
+- 153.phase1-sql/153110_PHASE1_02_upload_job.sql
+- 153.phase1-sql/153120_PHASE1_03_video_draft_marker_subtitle.sql
+- 153.phase1-sql/153130_PHASE1_04_publish_setting_and_request.sql
+- 153.phase1-sql/153140_PHASE1_05_runtime_and_dead_letter.sql
+- 153.phase1-sql/153150_PHASE1_06_audit_event.sql
+- 153.phase1-sql/153160_PHASE1_07_indexes_and_constraints.sql
+- 153.phase1-sql/153170_PHASE1_APPLY_REVIEW_RUNNER.sh
+- 153.phase1-sql/153180_PHASE1_PRE_APPLY_CHECKLIST.md
+- 153.phase1-sql/153190_PHASE1_SQL_BUNDLE_VERIFY.sh
+- 153.phase1-sql/153199_PHASE1_SQL_BUNDLE_SUMMARY.md
+- 153.phase1-sql/153200_PHASE1_POST_APPLY_VERIFY_BUNDLE.md
+- 153.phase1-sql/153210_PHASE1_VERIFY_TABLE_PRESENCE.sql
+- 153.phase1-sql/153220_PHASE1_VERIFY_COLUMN_SHAPE.sql
+- 153.phase1-sql/153230_PHASE1_VERIFY_INDEX_AND_FK.sql
+- 153.phase1-sql/153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql
+- 153.phase1-sql/153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh
+- 153.phase1-sql/153260_PHASE1_POST_APPLY_VERIFY_CHECKLIST.md
+- 153.phase1-sql/153299_PHASE1_POST_APPLY_VERIFY_SUMMARY.md
+- 153.phase1-sql/153_INDEX.md
+- 153.phase1-sql/153_OVERVIEW.md
+- 154.phase1-final-handoff/154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md
+- 154.phase1-final-handoff/154010_STREAM_STUDIO_PHASE1_HANDOFF_READING_ORDER.md
+- 154.phase1-final-handoff/154020_STREAM_STUDIO_PHASE1_SCOPE_BOUNDARY_FINAL_MEMO.md
+- 154.phase1-final-handoff/154030_STREAM_STUDIO_PHASE1_GO_STOP_GATE_FINAL.md
+- 154.phase1-final-handoff/154040_STREAM_STUDIO_PHASE1_NON_BLOCKING_REMAINING_ITEMS_LEDGER.md
+- 154.phase1-final-handoff/154099_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_SUMMARY.md
+- 154.phase1-final-handoff/154190_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_VERIFY.sh
+- 154.phase1-final-handoff/154_INDEX.md
+- 154.phase1-final-handoff/154_OVERVIEW.md
+- 155.phase2-to-phase6-roadmap/155000_STREAM_STUDIO_PHASE2_TO_PHASE6_IMPLEMENTATION_ROADMAP.md
+- 155.phase2-to-phase6-roadmap/155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md
+- 155.phase2-to-phase6-roadmap/155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md
+- 155.phase2-to-phase6-roadmap/155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md
+- 155.phase2-to-phase6-roadmap/155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md
+- 155.phase2-to-phase6-roadmap/155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md
+- 155.phase2-to-phase6-roadmap/155090_STREAM_STUDIO_CROSS_PHASE_DEPENDENCY_AND_RELEASE_ORDER.md
+- 155.phase2-to-phase6-roadmap/155099_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_SUMMARY.md
+- 155.phase2-to-phase6-roadmap/155190_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_VERIFY.sh
+- 155.phase2-to-phase6-roadmap/155_INDEX.md
+- 155.phase2-to-phase6-roadmap/155_OVERVIEW.md
+- 156.phase1-to-phase6-master-roadmap/156000_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_ATLAS.md
+- 156.phase1-to-phase6-master-roadmap/156010_STREAM_STUDIO_PHASE_COMPARISON_MATRIX.md
+- 156.phase1-to-phase6-master-roadmap/156020_STREAM_STUDIO_DEPENDENCY_HEATMAP_AND_CHAIN.md
+- 156.phase1-to-phase6-master-roadmap/156030_STREAM_STUDIO_MILESTONE_AND_GATE_ATLAS.md
+- 156.phase1-to-phase6-master-roadmap/156040_STREAM_STUDIO_RELEASE_SLICE_AND_DELIVERY_ATLAS.md
+- 156.phase1-to-phase6-master-roadmap/156099_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_SUMMARY.md
+- 156.phase1-to-phase6-master-roadmap/156190_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_VERIFY.sh
+- 156.phase1-to-phase6-master-roadmap/156_INDEX.md
+- 156.phase1-to-phase6-master-roadmap/156_OVERVIEW.md
+- 157.final-master-summary/157000_STREAM_STUDIO_TOTAL_DESIGN_MASTER_SUMMARY.md
+- 157.final-master-summary/157010_STREAM_STUDIO_DOCUMENT_SYSTEM_MAP.md
+- 157.final-master-summary/157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md
+- 157.final-master-summary/157030_STREAM_STUDIO_CANONICAL_REFERENCE_ORDER_FINAL.md
+- 157.final-master-summary/157040_STREAM_STUDIO_NEXT_ACTION_POLICY_DESIGN_ONLY.md
+- 157.final-master-summary/157099_STREAM_STUDIO_FINAL_MASTER_SUMMARY_PACKET_SUMMARY.md
+- 157.final-master-summary/157190_STREAM_STUDIO_FINAL_MASTER_SUMMARY_VERIFY.sh
+- 157.final-master-summary/157_INDEX.md
+- 157.final-master-summary/157_OVERVIEW.md
+- 158.final-app-specific-audit/158000_STREAM_STUDIO_APP_SPECIFIC_FINAL_AUDIT_MASTER.md
+- 158.final-app-specific-audit/158010_STREAM_STUDIO_SCREEN_API_RUNTIME_POLICY_CONSISTENCY_AUDIT.md
+- 158.final-app-specific-audit/158020_STREAM_STUDIO_PHASE_BOUNDARY_LEAKAGE_AUDIT.md
+- 158.final-app-specific-audit/158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md
+- 158.final-app-specific-audit/158040_STREAM_STUDIO_REMAINING_GAPS_AND_OPTIONAL_ITEMS_LEDGER.md
+- 158.final-app-specific-audit/158099_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_SUMMARY.md
+- 158.final-app-specific-audit/158190_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_VERIFY.sh
+- 158.final-app-specific-audit/158_INDEX.md
+- 158.final-app-specific-audit/158_OVERVIEW.md
+- 159.final-closeout/159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md
+- 159.final-closeout/159010_STREAM_STUDIO_DELIVERABLE_LEDGER_FINAL.md
+- 159.final-closeout/159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md
+- 159.final-closeout/159030_STREAM_STUDIO_NEXT_CHAT_HANDOFF_NOTE.md
+- 159.final-closeout/159099_STREAM_STUDIO_FINAL_CLOSEOUT_PACKET_SUMMARY.md
+- 159.final-closeout/159190_STREAM_STUDIO_FINAL_CLOSEOUT_VERIFY.sh
+- 159.final-closeout/159_INDEX.md
+- 159.final-closeout/159_OVERVIEW.md
+- 160.next-chat-starter-kit/160000_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT.md
+- 160.next-chat-starter-kit/160010_STREAM_STUDIO_DESIGN_ONLY_CHAT_START_PROMPT.md
+- 160.next-chat-starter-kit/160020_STREAM_STUDIO_PHASE1_IMPLEMENTATION_PLANNING_CHAT_START_PROMPT.md
+- 160.next-chat-starter-kit/160030_STREAM_STUDIO_PHASE1_SQL_REVIEW_CHAT_START_PROMPT.md
+- 160.next-chat-starter-kit/160040_STREAM_STUDIO_REFERENCE_MINIMUM_SET_FOR_NEXT_CHAT.md
+- 160.next-chat-starter-kit/160099_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_SUMMARY.md
+- 160.next-chat-starter-kit/160190_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_VERIFY.sh
+- 160.next-chat-starter-kit/160_INDEX.md
+- 160.next-chat-starter-kit/160_OVERVIEW.md
+- 161.quick-lookup-navigation/161000_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_ATLAS.md
+- 161.quick-lookup-navigation/161010_STREAM_STUDIO_TASK_TO_DOCUMENT_ROUTING_MAP.md
+- 161.quick-lookup-navigation/161020_STREAM_STUDIO_PHASE_TO_DOCUMENT_ENTRYPOINT_MAP.md
+- 161.quick-lookup-navigation/161030_STREAM_STUDIO_WHERE_TO_READ_FIRST_GUIDE.md
+- 161.quick-lookup-navigation/161099_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_SUMMARY.md
+- 161.quick-lookup-navigation/161190_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_VERIFY.sh
+- 161.quick-lookup-navigation/161_INDEX.md
+- 161.quick-lookup-navigation/161_OVERVIEW.md
+- 162.frozen-decision-register/162000_STREAM_STUDIO_FROZEN_DECISION_MASTER_REGISTER.md
+- 162.frozen-decision-register/162010_STREAM_STUDIO_PHASE1_FROZEN_DECISION_REGISTER.md
+- 162.frozen-decision-register/162020_STREAM_STUDIO_POST_PHASE1_FROZEN_DECISION_REGISTER.md
+- 162.frozen-decision-register/162030_STREAM_STUDIO_PROHIBITED_DRIFT_REGISTER.md
+- 162.frozen-decision-register/162099_STREAM_STUDIO_FROZEN_DECISION_REGISTER_SUMMARY.md
+- 162.frozen-decision-register/162190_STREAM_STUDIO_FROZEN_DECISION_REGISTER_VERIFY.sh
+- 162.frozen-decision-register/162_INDEX.md
+- 162.frozen-decision-register/162_OVERVIEW.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/120_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/120_OVERVIEW.md -->
 # ============================================================
 # 120 IMPLEMENTATION OVERVIEW
 # ============================================================
@@ -6347,6 +6913,11 @@ prepared_by: Zero
 summary:
 Defines the implementation-readiness boundary,
 release sequence, and next concrete design targets.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/120_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/120_STREAM_STUDIO_IMPLEMENTATION_READINESS.md -->
 # ============================================================
 # STREAM STUDIO IMPLEMENTATION READINESS
 # ============================================================
@@ -6441,6 +7012,11 @@ Implementation-start-ready is achieved when:
 - permission matrix is frozen
 - connector boundary is frozen
 - pricing and membership rule tables are frozen
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/120_STREAM_STUDIO_IMPLEMENTATION_READINESS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/121_STREAM_STUDIO_IMPLEMENTATION_READINESS_FINAL_FREEZE_MEMO.md -->
 # ============================================================
 # STREAM STUDIO IMPLEMENTATION READINESS FINAL FREEZE MEMO
 # ============================================================
@@ -6770,6 +7346,11 @@ StreamStudio is frozen as a multi-platform creator production,
 publishing, commerce, membership, and split-governance application
 under StreamingOS, with Civilization Marketplace listing support,
 auditable operational rules, and implementation-ready domain separation.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/121_STREAM_STUDIO_IMPLEMENTATION_READINESS_FINAL_FREEZE_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/122_STREAM_STUDIO_ENUM_LEDGER.md -->
 # ============================================================
 # STREAM STUDIO ENUM LEDGER
 # ============================================================
@@ -7091,6 +7672,11 @@ fixed_statement:
 - enum values above are frozen for implementation-level design
 - UI display text must not be used as canonical enum value
 - new enum introduction should be additive and ledger-updated
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/122_STREAM_STUDIO_ENUM_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/123_STREAM_STUDIO_FIELD_DICTIONARY.md -->
 # ============================================================
 # STREAM STUDIO FIELD DICTIONARY
 # ============================================================
@@ -7603,6 +8189,11 @@ fixed_statement:
 - field names above are frozen for implementation-level exactness
 - later DB naming may differ only through mapped translation, not meaning drift
 - new fields should be additive and dictionary-updated
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/123_STREAM_STUDIO_FIELD_DICTIONARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/124_STREAM_STUDIO_AUDIT_EVENT_CODE_LEDGER.md -->
 # ============================================================
 # STREAM STUDIO AUDIT EVENT CODE LEDGER
 # ============================================================
@@ -7865,6 +8456,11 @@ fixed_statement:
 - audit event codes above are frozen as implementation-level stable identifiers
 - result_code must remain separate from action_code
 - future additions must be additive and ledger-updated
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/124_STREAM_STUDIO_AUDIT_EVENT_CODE_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/125_STREAM_STUDIO_DB_SIDE_MAPPING_DECISION_MEMO.md -->
 # ============================================================
 # STREAM STUDIO DB-SIDE MAPPING DECISION MEMO
 # ============================================================
@@ -8352,6 +8948,11 @@ StreamStudio DB-side mapping is frozen at the semantic level.
 Physical SQL may still be chosen later, but it must preserve
 domain separation, auditable state transitions, explicit money
 storage, first-class runtime visibility, and additive-safe growth.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/125_STREAM_STUDIO_DB_SIDE_MAPPING_DECISION_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/126_STREAM_STUDIO_EVENT_NAMING_LEDGER.md -->
 # ============================================================
 # STREAM STUDIO EVENT NAMING LEDGER
 # ============================================================
@@ -8557,6 +9158,11 @@ fixed_statement:
 - event names above are frozen as implementation-level canonical names
 - future additions must be additive and ledger-updated
 - UI labels must not be used as event names
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/126_STREAM_STUDIO_EVENT_NAMING_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/127_STREAM_STUDIO_UI_COPY_KEY_LEDGER.md -->
 # ============================================================
 # STREAM STUDIO UI COPY KEY LEDGER
 # ============================================================
@@ -8855,6 +9461,11 @@ fixed_statement:
 - copy keys above are frozen as implementation-level stable keys
 - display text must be managed outside this ledger
 - future additions must be additive and ledger-updated
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/127_STREAM_STUDIO_UI_COPY_KEY_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/128_STREAM_STUDIO_IMPLEMENTATION_DEPENDENCY_MEMO.md -->
 # ============================================================
 # STREAM STUDIO IMPLEMENTATION DEPENDENCY MEMO
 # ============================================================
@@ -9126,6 +9737,11 @@ fixed_statement:
 StreamStudio implementation shall proceed by foundation first,
 publish before commerce, commerce before membership refinement,
 and audit/runtime hardening no later than connector or monetization expansion.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/128_STREAM_STUDIO_IMPLEMENTATION_DEPENDENCY_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/129_STREAM_STUDIO_IMPLEMENTATION_HANDOFF_CHECKLIST.md -->
 # ============================================================
 # STREAM STUDIO IMPLEMENTATION HANDOFF CHECKLIST
 # ============================================================
@@ -9357,6 +9973,11 @@ StreamStudio implementation handoff is accepted only when
 all frozen design ledgers are treated as canonical
 and the phased work proceeds without reopening
 core architecture boundaries.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/129_STREAM_STUDIO_IMPLEMENTATION_HANDOFF_CHECKLIST.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/130_STREAM_STUDIO_DESIGN_COMPLETENESS_AUDIT_MEMO.md -->
 # ============================================================
 # STREAM STUDIO DESIGN COMPLETENESS AUDIT MEMO
 # ============================================================
@@ -9597,6 +10218,8418 @@ fixed_statement:
 StreamStudio design is complete enough to begin
 real implementation planning and phased build work
 without further large-scale design expansion.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/130_STREAM_STUDIO_DESIGN_COMPLETENESS_AUDIT_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 IMPLEMENTATION BATCH PACK
+# ============================================================
+
+status: handoff-batch
+layer: implementation-batch
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the bundled implementation-transition pack for StreamStudio Phase 1.
+
+phase_1_scope:
+- project base
+- upload session
+- upload queue
+- video draft
+- metadata editing
+- thumbnail assignment
+- subtitle base
+- trim / cut marker base
+- publish setting base
+- publish readiness base
+- publish request base
+- scheduled publish base
+
+phase_1_out_of_scope:
+- marketplace listing activation
+- paid video offer
+- membership program
+- split activation
+- external push connector full execution
+- settlement sync
+- advanced monetization governance
+
+required_input_ledgers:
+- enum ledger
+- field dictionary
+- audit event code ledger
+- api exact docs
+- screen transition exact table
+- permission matrix exact
+- db-side mapping decision memo
+- runtime retry / dead-letter exact
+
+phase_1_output_goal:
+A build-ready implementation package for creator asset preparation
+and StreamingOS publish base without reopening architecture.
+
+batch_documents:
+- 132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md
+- 133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md
+- 134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md
+- 135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md
+- 136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 BACKEND WORKPACKAGE
+# ============================================================
+
+status: workpackage
+layer: implementation-backend
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines backend implementation work for Phase 1.
+
+phase_1_backend_modules:
+- project service
+- upload session service
+- upload status service
+- video draft service
+- metadata update service
+- thumbnail assignment service
+- subtitle track service
+- edit marker service
+- publish setting service
+- publish readiness service
+- publish request service
+- scheduled publish registration service
+
+required_api_contracts:
+- POST /api/stream-studio/projects
+- GET /api/stream-studio/projects
+- GET /api/stream-studio/projects/{creator_project_id}
+- PATCH /api/stream-studio/projects/{creator_project_id}
+- POST /api/stream-studio/uploads/sessions
+- POST /api/stream-studio/uploads/{creator_upload_job_id}/complete
+- GET /api/stream-studio/uploads/{creator_upload_job_id}
+- POST /api/stream-studio/uploads/{creator_upload_job_id}/retry
+- POST /api/stream-studio/video-drafts
+- PATCH /api/stream-studio/video-drafts/{creator_video_draft_id}/metadata
+- PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/thumbnail
+- POST /api/stream-studio/video-drafts/{creator_video_draft_id}/subtitle-tracks
+- PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/edit-markers/{client_marker_key}
+- PUT /api/stream-studio/publish-settings/{publish_ref}
+- POST /api/stream-studio/publish-settings/{publish_ref}/validate
+- POST /api/stream-studio/publish-requests
+- POST /api/stream-studio/publish-requests/schedule
+- GET /api/stream-studio/publish-history
+
+backend_rules_to_enforce:
+- optimistic locking for mutable draft and project records
+- validation and business-rule error separation
+- publish readiness cannot silently skip approval or rights checks
+- scheduled publish must create explicit future execution record
+- publish and external push results remain separated
+- phase 1 does not activate marketplace or membership logic
+
+audit_events_minimum:
+- PROJECT_CREATED
+- PROJECT_UPDATED
+- UPLOAD_SESSION_CREATED
+- UPLOAD_COMPLETED
+- UPLOAD_RETRIED
+- VIDEO_DRAFT_CREATED
+- DRAFT_METADATA_UPDATED
+- THUMBNAIL_ASSIGNED
+- SUBTITLE_TRACK_ADDED
+- EDIT_MARKER_UPSERTED
+- PUBLISH_SETTING_SAVED
+- PUBLISH_READINESS_VALIDATED
+- PUBLISH_REQUEST_CREATED
+- PUBLISH_SCHEDULED
+
+backend_done_definition:
+- all listed endpoints return standardized envelope
+- all listed validation codes are wired
+- all listed audit events are emitted
+- scheduled publish request persistence works
+- readiness blockers are surfaced distinctly
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 UI WORKPACKAGE
+# ============================================================
+
+status: workpackage
+layer: implementation-ui
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines UI implementation work for Phase 1.
+
+phase_1_primary_screens:
+- Home Dashboard
+- Project Detail
+- Upload Queue
+- Publish Settings
+- Notification and Mobile Quick Actions
+
+required_project_detail_tabs_for_phase_1:
+- overview
+- assets
+- metadata
+- subtitle
+- publish
+
+phase_1_ui_capabilities:
+- create project
+- create upload session entry
+- monitor upload queue states
+- create video draft
+- edit metadata
+- assign thumbnail
+- add subtitle track
+- add trim / cut markers
+- save publish setting
+- validate publish readiness
+- create publish request
+- schedule publish
+- see publish blockers
+- see operation success / failure states
+
+screen_transition_rules_to_keep:
+- upload queue completed -> project detail assets context
+- project detail publish tab -> publish settings context
+- publish settings validation failure -> blocker-visible state
+- publish ready -> publish now or schedule path only
+- no hidden navigation may bypass readiness validation
+
+required_ui_copy_namespaces:
+- common.*
+- streamstudio.home.*
+- streamstudio.project.*
+- streamstudio.upload_queue.*
+- streamstudio.publish.*
+- streamstudio.notification.*
+- streamstudio.mobile.quick_action.*
+
+phase_1_ui_excluded:
+- marketplace listing screen execution
+- membership manager execution
+- split editor execution
+- collaborator authority advanced exception editing
+- connector audit browsing
+
+ui_done_definition:
+- phase 1 screens render with frozen state families
+- required actions call exact API contracts
+- validation and blocker messages appear distinctly
+- confirmation sheet exists for publish_now and schedule_publish
+- mobile quick metadata / publish confirmation does not bypass permission rules
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 DB WORKPACKAGE
+# ============================================================
+
+status: workpackage
+layer: implementation-db
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines DB-side work for Phase 1.
+
+phase_1_required_tables:
+- creator_project
+- creator_project_member
+- creator_upload_job
+- creator_video_draft
+- creator_edit_marker
+- creator_subtitle_track
+- creator_publish_setting
+- creator_publish_request
+- creator_audit_event
+- creator_runtime_job
+
+phase_1_optional_but_recommended:
+- creator_dead_letter_entry
+
+required_column_groups:
+  creator_project:
+    - creator_project_id
+    - project_code
+    - project_title
+    - project_summary
+    - project_status
+    - owner_creator_ref
+    - default_language
+    - version
+    - created_at
+    - updated_at
+
+  creator_upload_job:
+    - creator_upload_job_id
+    - creator_project_id
+    - source_file_name
+    - file_size_bytes
+    - mime_type
+    - ingest_status
+    - resumable_session_ref
+    - failure_summary
+    - created_at
+    - updated_at
+
+  creator_video_draft:
+    - creator_video_draft_id
+    - creator_project_id
+    - asset_ref
+    - draft_status
+    - title
+    - description
+    - default_language
+    - tag_summary_json
+    - thumbnail_asset_ref
+    - subtitle_package_ref
+    - draft_version
+    - version
+    - created_at
+    - updated_at
+
+  creator_publish_setting:
+    - creator_publish_setting_id
+    - publish_ref
+    - visibility_code
+    - scheduled_publish_at
+    - publish_destination_summary
+    - rights_check_status
+    - readiness_status
+    - created_at
+    - updated_at
+
+  creator_publish_request:
+    - creator_publish_request_id
+    - publish_ref
+    - request_status
+    - requested_by
+    - request_channel
+    - execute_after
+    - created_at
+    - updated_at
+
+phase_1_db_constraints_direction:
+- direct foreign keys for project-owned records
+- text-compatible enum storage
+- version column on mutable records
+- created_at / updated_at on all mutable tables
+- audit is append-only
+- runtime job is first-class table
+
+phase_1_db_non_goals:
+- commerce tables
+- membership tables
+- split tables
+- settlement tables
+- external push tables beyond placeholder-compatible mapping
+
+db_done_definition:
+- required tables exist
+- required indexes for project / upload / draft / publish flows exist
+- optimistic locking columns exist where required
+- audit event write path works
+- scheduled publish can persist runtime job intent
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 TEST AND VERIFY WORKPACKAGE
+# ============================================================
+
+status: workpackage
+layer: implementation-test
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the minimum test and verification work for Phase 1.
+
+minimum_backend_tests:
+- create_project_success
+- create_project_validation_failure
+- upload_session_create_success
+- upload_status_read_success
+- upload_retry_non_retryable_failure
+- create_video_draft_success
+- metadata_update_version_conflict
+- thumbnail_assignment_success
+- subtitle_add_success
+- edit_marker_validation_failure
+- publish_setting_save_success
+- publish_readiness_blocked_by_rights
+- publish_readiness_blocked_by_approval
+- publish_request_create_success
+- schedule_publish_future_datetime_required
+
+minimum_ui_tests:
+- home_dashboard_summary_load
+- upload_queue_state_render
+- project_detail_metadata_edit
+- publish_settings_blocker_render
+- schedule_publish_confirmation_flow
+- publish_now_confirmation_flow
+
+minimum_permission_tests:
+- project_view_denied
+- asset_upload_denied
+- publish_denied
+
+minimum_audit_tests:
+- audit_event_emitted_for_project_create
+- audit_event_emitted_for_metadata_update
+- audit_event_emitted_for_publish_request_create
+- audit_event_emitted_for_publish_schedule
+
+minimum_runtime_tests:
+- scheduled_publish_job_registered
+- runtime_job_retry_wait_set_when_retryable
+- dead_letter_entry_created_when_terminal
+
+verify_outputs:
+- api_response_snapshot_set
+- ui_state_capture_summary
+- audit_event_capture_summary
+- runtime_job_state_capture_summary
+
+done_definition:
+- all minimum tests pass
+- no blocker is collapsed into generic unknown error
+- phase 1 verify report is generated and archived
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 EXECUTION ORDER AND CHECKPOINTS
+# ============================================================
+
+status: execution-plan
+layer: implementation-order
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the concrete work order and checkpoints for Phase 1.
+
+execution_order:
+  step_1_foundation_bind:
+    - bind enum ledger
+    - bind field dictionary
+    - bind validation / error code table
+    - bind permission matrix minimum roles
+    checkpoint:
+      - frozen ledgers mapped without renaming drift
+
+  step_2_db_base:
+    - create required phase 1 tables
+    - create required indexes
+    - create audit and runtime base tables
+    checkpoint:
+      - project / upload / draft / publish records persist correctly
+
+  step_3_backend_base:
+    - implement project endpoints
+    - implement upload endpoints
+    - implement draft endpoints
+    - implement publish endpoints
+    checkpoint:
+      - exact API contracts return standardized envelopes
+
+  step_4_ui_base:
+    - implement home dashboard shell
+    - implement upload queue
+    - implement project detail minimal tabs
+    - implement publish settings
+    checkpoint:
+      - phase 1 screens execute exact actions end-to-end
+
+  step_5_runtime_base:
+    - implement scheduled publish job registration
+    - implement retry classification base
+    - implement dead-letter base
+    checkpoint:
+      - scheduled publish intent is auditable and visible
+
+  step_6_verify:
+    - run minimum tests
+    - capture audit outputs
+    - capture runtime outputs
+    checkpoint:
+      - phase 1 verify pack passes
+
+hard_gates:
+- do not start step_3 before step_2 succeeds
+- do not start step_4 before exact backend contracts are callable
+- do not mark phase 1 done before step_6 succeeds
+
+phase_1_exit_conditions:
+- project / upload / draft / publish base works end-to-end
+- blockers are distinct
+- audit exists
+- runtime visibility exists
+- no architecture reopening is needed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/137_STREAM_STUDIO_PHASE1_BACKEND_ENDPOINT_IMPLEMENTATION_MAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 BACKEND ENDPOINT IMPLEMENTATION MAP
+# ============================================================
+
+status: starter-map
+layer: implementation-backend-map
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Maps Phase 1 backend endpoints to services, validators,
+audit events, and runtime dependencies.
+
+# ============================================================
+# 1. ENDPOINT IMPLEMENTATION TABLE
+# ============================================================
+
+endpoint_map:
+
+  create_project:
+    endpoint: POST /api/stream-studio/projects
+    handler: create_project_handler
+    service: project_create_service
+    validator: create_project_validator
+    writes:
+      - creator_project
+      - creator_audit_event
+    audit_events:
+      - PROJECT_CREATED
+    runtime_jobs: []
+    notes:
+      - project_code generation required
+      - default project_status = draft
+
+  list_projects:
+    endpoint: GET /api/stream-studio/projects
+    handler: list_projects_handler
+    service: project_list_service
+    validator: list_projects_query_validator
+    writes: []
+    audit_events: []
+    runtime_jobs: []
+    notes:
+      - workspace_scope filter required
+
+  get_project_detail:
+    endpoint: GET /api/stream-studio/projects/{creator_project_id}
+    handler: get_project_detail_handler
+    service: project_detail_service
+    validator: project_detail_path_validator
+    writes: []
+    audit_events: []
+    runtime_jobs: []
+    notes:
+      - readiness summary may be derived
+
+  update_project:
+    endpoint: PATCH /api/stream-studio/projects/{creator_project_id}
+    handler: update_project_handler
+    service: project_update_service
+    validator: update_project_validator
+    writes:
+      - creator_project
+      - creator_audit_event
+    audit_events:
+      - PROJECT_UPDATED
+    runtime_jobs: []
+    notes:
+      - optimistic lock required
+
+  create_upload_session:
+    endpoint: POST /api/stream-studio/uploads/sessions
+    handler: create_upload_session_handler
+    service: upload_session_create_service
+    validator: create_upload_session_validator
+    writes:
+      - creator_upload_job
+      - creator_audit_event
+    audit_events:
+      - UPLOAD_SESSION_CREATED
+    runtime_jobs: []
+    notes:
+      - resumable_session_ref required
+
+  complete_upload:
+    endpoint: POST /api/stream-studio/uploads/{creator_upload_job_id}/complete
+    handler: complete_upload_handler
+    service: upload_complete_service
+    validator: upload_complete_validator
+    writes:
+      - creator_upload_job
+      - creator_audit_event
+      - creator_runtime_job
+    audit_events:
+      - UPLOAD_COMPLETED
+    runtime_jobs:
+      - UPLOAD_INGEST_FINALIZER
+    notes:
+      - state transition uploading -> processing
+
+  get_upload_status:
+    endpoint: GET /api/stream-studio/uploads/{creator_upload_job_id}
+    handler: get_upload_status_handler
+    service: upload_status_service
+    validator: upload_status_path_validator
+    writes: []
+    audit_events: []
+    runtime_jobs: []
+    notes:
+      - progress_percent and failure_code visibility
+
+  retry_upload:
+    endpoint: POST /api/stream-studio/uploads/{creator_upload_job_id}/retry
+    handler: retry_upload_handler
+    service: upload_retry_service
+    validator: retry_upload_validator
+    writes:
+      - creator_upload_job
+      - creator_audit_event
+    audit_events:
+      - UPLOAD_RETRIED
+    runtime_jobs: []
+    notes:
+      - retry_mode restart_or_resume enforced
+
+  create_video_draft:
+    endpoint: POST /api/stream-studio/video-drafts
+    handler: create_video_draft_handler
+    service: video_draft_create_service
+    validator: create_video_draft_validator
+    writes:
+      - creator_video_draft
+      - creator_audit_event
+    audit_events:
+      - VIDEO_DRAFT_CREATED
+    runtime_jobs: []
+    notes:
+      - asset_ref must already exist
+
+  update_metadata:
+    endpoint: PATCH /api/stream-studio/video-drafts/{creator_video_draft_id}/metadata
+    handler: update_metadata_handler
+    service: video_draft_metadata_update_service
+    validator: update_metadata_validator
+    writes:
+      - creator_video_draft
+      - creator_audit_event
+    audit_events:
+      - DRAFT_METADATA_UPDATED
+    runtime_jobs: []
+    notes:
+      - optimistic lock required
+
+  assign_thumbnail:
+    endpoint: PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/thumbnail
+    handler: assign_thumbnail_handler
+    service: thumbnail_assignment_service
+    validator: assign_thumbnail_validator
+    writes:
+      - creator_video_draft
+      - creator_audit_event
+    audit_events:
+      - THUMBNAIL_ASSIGNED
+    runtime_jobs:
+      - THUMBNAIL_DERIVATIVE_JOB
+    notes:
+      - thumbnail rights check placeholder allowed
+
+  add_subtitle_track:
+    endpoint: POST /api/stream-studio/video-drafts/{creator_video_draft_id}/subtitle-tracks
+    handler: add_subtitle_track_handler
+    service: subtitle_track_create_service
+    validator: add_subtitle_track_validator
+    writes:
+      - creator_subtitle_track
+      - creator_audit_event
+      - creator_runtime_job
+    audit_events:
+      - SUBTITLE_TRACK_ADDED
+    runtime_jobs:
+      - SUBTITLE_PACKAGING_JOB
+    notes:
+      - source_type uploaded_or_generated
+
+  upsert_edit_marker:
+    endpoint: PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/edit-markers/{client_marker_key}
+    handler: upsert_edit_marker_handler
+    service: edit_marker_upsert_service
+    validator: upsert_edit_marker_validator
+    writes:
+      - creator_edit_marker
+      - creator_audit_event
+    audit_events:
+      - EDIT_MARKER_UPSERTED
+    runtime_jobs: []
+    notes:
+      - idempotent by client_marker_key
+
+  upsert_publish_setting:
+    endpoint: PUT /api/stream-studio/publish-settings/{publish_ref}
+    handler: upsert_publish_setting_handler
+    service: publish_setting_upsert_service
+    validator: upsert_publish_setting_validator
+    writes:
+      - creator_publish_setting
+      - creator_audit_event
+    audit_events:
+      - PUBLISH_SETTING_SAVED
+    runtime_jobs: []
+    notes:
+      - phase 1 only internal publication required
+
+  validate_publish_readiness:
+    endpoint: POST /api/stream-studio/publish-settings/{publish_ref}/validate
+    handler: validate_publish_readiness_handler
+    service: publish_readiness_service
+    validator: validate_publish_readiness_validator
+    writes:
+      - creator_audit_event
+    audit_events:
+      - PUBLISH_READINESS_VALIDATED
+    runtime_jobs: []
+    notes:
+      - approval and rights blocker must stay distinct
+
+  create_publish_request:
+    endpoint: POST /api/stream-studio/publish-requests
+    handler: create_publish_request_handler
+    service: publish_request_create_service
+    validator: create_publish_request_validator
+    writes:
+      - creator_publish_request
+      - creator_audit_event
+    audit_events:
+      - PUBLISH_REQUEST_CREATED
+    runtime_jobs: []
+    notes:
+      - immediate publish request only registers request in phase 1 unless executor exists
+
+  schedule_publish:
+    endpoint: POST /api/stream-studio/publish-requests/schedule
+    handler: schedule_publish_handler
+    service: publish_schedule_service
+    validator: schedule_publish_validator
+    writes:
+      - creator_publish_request
+      - creator_runtime_job
+      - creator_audit_event
+    audit_events:
+      - PUBLISH_SCHEDULED
+    runtime_jobs:
+      - SCHEDULED_PUBLISH_EXECUTOR
+    notes:
+      - explicit execute_after required
+
+  list_publish_history:
+    endpoint: GET /api/stream-studio/publish-history
+    handler: list_publish_history_handler
+    service: publish_history_service
+    validator: list_publish_history_query_validator
+    writes: []
+    audit_events: []
+    runtime_jobs: []
+    notes:
+      - canonical_publish_status and external_push_status remain separated
+
+# ============================================================
+# 2. PHASE 1 BACKEND MODULE ORDER
+# ============================================================
+
+backend_build_order:
+- validation_core
+- envelope_core
+- permission_gate_core
+- project_service
+- upload_service
+- draft_service
+- publish_setting_service
+- publish_request_service
+- runtime_job_registration
+- audit_event_writer
+
+# ============================================================
+# 3. PHASE 1 BACKEND DONE STATEMENT
+# ============================================================
+
+done_statement:
+Phase 1 backend is complete when all listed endpoints,
+validators, audit events, and runtime registrations are implemented
+without semantic drift from exact docs.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/137_STREAM_STUDIO_PHASE1_BACKEND_ENDPOINT_IMPLEMENTATION_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/138_STREAM_STUDIO_PHASE1_UI_COMPONENT_IMPLEMENTATION_MAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 UI COMPONENT IMPLEMENTATION MAP
+# ============================================================
+
+status: starter-map
+layer: implementation-ui-map
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Maps Phase 1 screens to concrete UI areas, API calls,
+state families, and confirmation requirements.
+
+# ============================================================
+# 1. HOME DASHBOARD
+# ============================================================
+
+screen: home_dashboard
+
+required_components:
+- home_page_shell
+- workspace_header
+- quick_create_bar
+- summary_card_grid
+- upload_queue_widget
+- review_summary_widget
+- scheduled_publish_widget
+- failed_action_widget
+- recent_activity_widget
+
+required_api_reads:
+- GET /api/stream-studio/projects
+- GET /api/stream-studio/publish-history
+
+state_families:
+- loading_summary
+- ready_summary
+- empty_summary
+- failed_summary_load
+
+actions:
+- new_project
+- new_upload
+- open_project_list_filtered
+- open_upload_queue
+- open_publish_filtered
+
+# ============================================================
+# 2. PROJECT DETAIL
+# ============================================================
+
+screen: project_detail
+
+required_components:
+- project_detail_shell
+- project_header
+- project_tab_bar
+- assets_tab_panel
+- metadata_form
+- subtitle_panel
+- publish_summary_panel
+- blocker_banner_stack
+
+required_tabs_phase_1:
+- overview
+- assets
+- metadata
+- subtitle
+- publish
+
+required_api_reads:
+- GET /api/stream-studio/projects/{creator_project_id}
+- GET /api/stream-studio/uploads/{creator_upload_job_id}_optional
+- GET /api/stream-studio/publish-history
+
+required_api_mutations:
+- PATCH /api/stream-studio/projects/{creator_project_id}
+- POST /api/stream-studio/video-drafts
+- PATCH /api/stream-studio/video-drafts/{creator_video_draft_id}/metadata
+- PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/thumbnail
+- POST /api/stream-studio/video-drafts/{creator_video_draft_id}/subtitle-tracks
+- PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/edit-markers/{client_marker_key}
+
+state_families:
+- loading
+- ready
+- blocked
+- action_pending
+- action_succeeded
+- action_failed
+- stale
+
+# ============================================================
+# 3. UPLOAD QUEUE
+# ============================================================
+
+screen: upload_queue
+
+required_components:
+- upload_queue_shell
+- queue_filter_bar
+- queue_state_tabs
+- upload_row_card
+- upload_detail_panel
+- retry_action_bar
+
+required_api_reads:
+- GET /api/stream-studio/uploads/{creator_upload_job_id}
+- GET /api/stream-studio/projects
+
+required_api_mutations:
+- POST /api/stream-studio/uploads/sessions
+- POST /api/stream-studio/uploads/{creator_upload_job_id}/complete
+- POST /api/stream-studio/uploads/{creator_upload_job_id}/retry
+
+state_families:
+- queued
+- uploading
+- processing
+- completed
+- failed
+- cancelled
+
+# ============================================================
+# 4. PUBLISH SETTINGS
+# ============================================================
+
+screen: publish_settings
+
+required_components:
+- publish_settings_shell
+- visibility_selector
+- schedule_selector
+- destination_panel
+- readiness_check_panel
+- publish_action_bar
+- publish_history_panel
+- blocker_banner_stack
+- confirmation_sheet_publish_now
+- confirmation_sheet_schedule_publish
+
+required_api_reads:
+- GET /api/stream-studio/publish-history
+
+required_api_mutations:
+- PUT /api/stream-studio/publish-settings/{publish_ref}
+- POST /api/stream-studio/publish-settings/{publish_ref}/validate
+- POST /api/stream-studio/publish-requests
+- POST /api/stream-studio/publish-requests/schedule
+
+state_families:
+- draft_publish_setting
+- readiness_checked
+- approval_blocked
+- rights_blocked
+- publish_ready
+- scheduled
+- published
+- failed
+
+confirmation_required:
+- publish_now
+- schedule_publish
+
+# ============================================================
+# 5. NOTIFICATION AND MOBILE QUICK ACTIONS
+# ============================================================
+
+screen: notification_and_mobile
+
+required_components:
+- notification_inbox
+- notification_row
+- mobile_quick_action_sheet
+- quick_metadata_edit_sheet
+- quick_publish_confirm_sheet
+
+required_api_reads:
+- GET /api/stream-studio/projects
+- GET /api/stream-studio/publish-history
+
+required_api_mutations_phase_1:
+- PATCH /api/stream-studio/video-drafts/{creator_video_draft_id}/metadata
+- POST /api/stream-studio/publish-requests
+
+state_families:
+- loading
+- ready
+- empty
+- failed
+- action_pending
+- action_succeeded
+- action_failed
+
+# ============================================================
+# 6. UI COPY GROUPS FOR PHASE 1
+# ============================================================
+
+required_copy_groups:
+- common.*
+- streamstudio.home.*
+- streamstudio.project.*
+- streamstudio.upload_queue.*
+- streamstudio.publish.*
+- streamstudio.notification.*
+- streamstudio.mobile.quick_action.*
+
+# ============================================================
+# 7. PHASE 1 UI DONE STATEMENT
+# ============================================================
+
+done_statement:
+Phase 1 UI is complete when required components render frozen states,
+call exact contracts, show blockers distinctly, and enforce confirmation
+for irreversible publish actions.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/138_STREAM_STUDIO_PHASE1_UI_COMPONENT_IMPLEMENTATION_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/139_STREAM_STUDIO_PHASE1_DB_TABLE_IMPLEMENTATION_MAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 DB TABLE IMPLEMENTATION MAP
+# ============================================================
+
+status: starter-map
+layer: implementation-db-map
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Maps Phase 1 tables, column groups, constraints,
+and minimum indexes for real implementation start.
+
+phase_1_required_tables:
+
+  creator_project:
+    purpose:
+      - project container for creator-side work
+    minimum_columns:
+      - creator_project_id
+      - project_code
+      - project_title
+      - project_summary
+      - project_status
+      - owner_creator_ref
+      - default_language
+      - version
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - owner_creator_ref, project_status, updated_at desc
+
+  creator_project_member:
+    purpose:
+      - scoped member participation
+    minimum_columns:
+      - creator_project_member_id
+      - creator_project_id
+      - member_ref
+      - role_code
+      - permission_profile_ref
+      - assignment_scope_summary
+      - due_at
+      - joined_at
+      - updated_at
+    minimum_indexes:
+      - creator_project_id
+      - member_ref, updated_at desc
+
+  creator_upload_job:
+    purpose:
+      - upload and ingest working state
+    minimum_columns:
+      - creator_upload_job_id
+      - creator_project_id
+      - source_file_name
+      - file_size_bytes
+      - mime_type
+      - ingest_status
+      - resumable_session_ref
+      - failure_summary
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - creator_project_id, ingest_status, updated_at desc
+
+  creator_video_draft:
+    purpose:
+      - draft asset working state
+    minimum_columns:
+      - creator_video_draft_id
+      - creator_project_id
+      - asset_ref
+      - draft_status
+      - title
+      - description
+      - default_language
+      - tag_summary_json
+      - thumbnail_asset_ref
+      - subtitle_package_ref
+      - draft_version
+      - version
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - creator_project_id, draft_status, updated_at desc
+
+  creator_edit_marker:
+    purpose:
+      - trim and cut marker state
+    minimum_columns:
+      - creator_edit_marker_id
+      - creator_video_draft_id
+      - marker_type
+      - start_ms
+      - end_ms
+      - marker_summary
+      - created_by
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - creator_video_draft_id
+
+  creator_subtitle_track:
+    purpose:
+      - subtitle base support
+    minimum_columns:
+      - creator_subtitle_track_id
+      - creator_video_draft_id
+      - language_code
+      - source_type
+      - subtitle_status
+      - file_asset_ref
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - creator_video_draft_id
+      - language_code
+
+  creator_publish_setting:
+    purpose:
+      - visibility, schedule, readiness state
+    minimum_columns:
+      - creator_publish_setting_id
+      - publish_ref
+      - visibility_code
+      - scheduled_publish_at
+      - publish_destination_summary
+      - rights_check_status
+      - readiness_status
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - publish_ref
+      - readiness_status
+
+  creator_publish_request:
+    purpose:
+      - publish execution or scheduling intent
+    minimum_columns:
+      - creator_publish_request_id
+      - publish_ref
+      - request_status
+      - requested_by
+      - request_channel
+      - execute_after
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - publish_ref, request_status, created_at desc
+      - execute_after
+
+  creator_runtime_job:
+    purpose:
+      - scheduled publish and async visibility
+    minimum_columns:
+      - creator_runtime_job_id
+      - job_type
+      - target_ref
+      - target_scope
+      - state
+      - attempt_count
+      - max_attempts
+      - idempotency_key
+      - priority_code
+      - scheduled_at
+      - started_at
+      - finished_at
+      - next_retry_at
+      - last_error_code
+      - last_error_summary
+      - created_at
+      - updated_at
+    minimum_indexes:
+      - job_type, state, next_retry_at
+      - target_ref
+
+  creator_audit_event:
+    purpose:
+      - append-only audit trail
+    minimum_columns:
+      - creator_audit_event_id
+      - actor_ref
+      - role_code
+      - action_code
+      - result_code
+      - scope_ref
+      - target_ref
+      - request_id
+      - reason_note
+      - payload_summary_json
+      - created_at
+    minimum_indexes:
+      - target_ref, created_at desc
+      - actor_ref, created_at desc
+      - action_code, created_at desc
+
+optional_phase_1_table:
+  creator_dead_letter_entry:
+    purpose:
+      - visible terminal async failures
+    minimum_columns:
+      - creator_dead_letter_entry_id
+      - original_job_id
+      - job_type
+      - target_ref
+      - target_scope
+      - terminal_reason_code
+      - terminal_reason_summary
+      - final_attempt_count
+      - last_error_code
+      - recommended_operator_action
+      - created_at
+      - updated_at
+
+phase_1_fk_direction:
+- creator_project_member.creator_project_id -> creator_project.creator_project_id
+- creator_upload_job.creator_project_id -> creator_project.creator_project_id
+- creator_video_draft.creator_project_id -> creator_project.creator_project_id
+- creator_edit_marker.creator_video_draft_id -> creator_video_draft.creator_video_draft_id
+- creator_subtitle_track.creator_video_draft_id -> creator_video_draft.creator_video_draft_id
+
+phase_1_done_statement:
+Phase 1 DB mapping is complete when required tables, minimum indexes,
+version columns, runtime table, and audit table exist with stable meaning.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/139_STREAM_STUDIO_PHASE1_DB_TABLE_IMPLEMENTATION_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/140_STREAM_STUDIO_PHASE1_TESTCASE_MATRIX.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 TESTCASE MATRIX
+# ============================================================
+
+status: starter-map
+layer: implementation-test-map
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the concrete testcase matrix for Phase 1.
+
+backend_contract_tests:
+- create_project_success
+- create_project_missing_title_validation
+- list_projects_scope_filter_success
+- get_project_detail_success
+- update_project_version_conflict
+- create_upload_session_success
+- complete_upload_success_processing_state
+- get_upload_status_success
+- retry_upload_non_retryable_failure
+- create_video_draft_success
+- update_metadata_success
+- update_metadata_expected_version_required
+- assign_thumbnail_success
+- add_subtitle_track_success
+- add_subtitle_track_uploaded_missing_file_asset_ref_validation
+- upsert_edit_marker_success
+- upsert_edit_marker_invalid_range_validation
+- save_publish_setting_success
+- validate_publish_readiness_rights_block
+- validate_publish_readiness_approval_block
+- create_publish_request_success
+- schedule_publish_future_required
+- list_publish_history_success
+
+permission_tests:
+- project_view_denied
+- asset_upload_denied
+- publish_denied
+- schedule_publish_denied
+
+audit_tests:
+- PROJECT_CREATED_emitted
+- PROJECT_UPDATED_emitted
+- UPLOAD_SESSION_CREATED_emitted
+- UPLOAD_COMPLETED_emitted
+- VIDEO_DRAFT_CREATED_emitted
+- DRAFT_METADATA_UPDATED_emitted
+- THUMBNAIL_ASSIGNED_emitted
+- SUBTITLE_TRACK_ADDED_emitted
+- EDIT_MARKER_UPSERTED_emitted
+- PUBLISH_SETTING_SAVED_emitted
+- PUBLISH_READINESS_VALIDATED_emitted
+- PUBLISH_REQUEST_CREATED_emitted
+- PUBLISH_SCHEDULED_emitted
+
+runtime_tests:
+- scheduled_publish_job_created
+- retryable_runtime_job_moves_to_retry_wait
+- terminal_runtime_job_moves_to_dead_letter_optional_if_table_enabled
+
+ui_render_tests:
+- home_dashboard_loading_to_ready
+- upload_queue_state_rows_render
+- project_detail_metadata_tab_render
+- subtitle_panel_render
+- publish_settings_blocker_banner_render
+- publish_confirmation_sheet_render
+- schedule_confirmation_sheet_render
+
+mobile_tests:
+- quick_metadata_edit_success
+- quick_publish_confirm_respects_permission
+- offline_publish_execution_blocked
+
+minimum_phase_1_exit_testset:
+- create_project_success
+- create_upload_session_success
+- create_video_draft_success
+- update_metadata_success
+- assign_thumbnail_success
+- add_subtitle_track_success
+- save_publish_setting_success
+- validate_publish_readiness_approval_block
+- create_publish_request_success
+- schedule_publish_future_required
+- PROJECT_CREATED_emitted
+- PUBLISH_SCHEDULED_emitted
+- scheduled_publish_job_created
+
+done_statement:
+Phase 1 verification is complete when the minimum exit testset passes
+and blocker types remain distinct in response and UI surfaces.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/140_STREAM_STUDIO_PHASE1_TESTCASE_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 REAL BUILD START GUARDRAIL
+# ============================================================
+
+status: guardrail
+layer: implementation-guardrail
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines non-negotiable guardrails before real Phase 1 build starts.
+
+guardrails:
+- do not rename frozen enum values during implementation
+- do not merge publish and listing logic in Phase 1
+- do not silently skip audit event writing
+- do not bypass optimistic locking on mutable records
+- do not hide approval and rights blockers under one generic error
+- do not postpone runtime job visibility until later phase
+- do not introduce marketplace or membership logic into Phase 1 endpoints
+- do not collapse asset and publish state into one table without mapping discipline
+- do not use localized UI text as canonical backend values
+
+required_before_build:
+- exact docs read
+- ledgers read
+- permission matrix read
+- db mapping memo read
+- runtime exact doc read
+- test matrix accepted
+
+stop_conditions:
+- API contract drift detected
+- enum drift detected
+- blocker collapse detected
+- audit omission detected
+- runtime job omission detected
+
+fixed_statement:
+Phase 1 build may begin only under frozen-contract discipline.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/142_STREAM_STUDIO_PHASE1_BACKEND_FILE_SCAFFOLD_LEDGER.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 BACKEND FILE SCAFFOLD LEDGER
+# ============================================================
+
+status: starter-ledger
+layer: implementation-fileset
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the logical backend file scaffold for Phase 1.
+
+policy:
+- this ledger fixes logical file names and responsibilities
+- physical language extension remains unresolved at this stage
+- use the same logical names regardless of implementation language
+- one file should have one main responsibility
+
+recommended_backend_root:
+- backend/stream_studio/
+
+# ============================================================
+# 1. PROJECT DOMAIN
+# ============================================================
+
+project_files:
+- backend/stream_studio/project/create_project_handler
+- backend/stream_studio/project/list_projects_handler
+- backend/stream_studio/project/get_project_detail_handler
+- backend/stream_studio/project/update_project_handler
+- backend/stream_studio/project/project_service
+- backend/stream_studio/project/project_repository
+- backend/stream_studio/project/project_validator
+- backend/stream_studio/project/project_mapper
+
+responsibility_notes:
+  create_project_handler:
+    - receive POST create project request
+    - return standardized response envelope
+  project_service:
+    - project create / update / read orchestration
+  project_repository:
+    - DB read / write operations only
+  project_validator:
+    - request validation and expected_version checks
+  project_mapper:
+    - convert persistence models to contract payloads
+
+# ============================================================
+# 2. UPLOAD DOMAIN
+# ============================================================
+
+upload_files:
+- backend/stream_studio/upload/create_upload_session_handler
+- backend/stream_studio/upload/complete_upload_handler
+- backend/stream_studio/upload/get_upload_status_handler
+- backend/stream_studio/upload/retry_upload_handler
+- backend/stream_studio/upload/upload_service
+- backend/stream_studio/upload/upload_repository
+- backend/stream_studio/upload/upload_validator
+- backend/stream_studio/upload/upload_status_mapper
+
+responsibility_notes:
+  upload_service:
+    - resumable session create
+    - ingest status transition
+    - retry classification bridge
+  upload_repository:
+    - creator_upload_job persistence
+  upload_validator:
+    - upload request shape validation
+    - retry_mode validation
+
+# ============================================================
+# 3. VIDEO DRAFT DOMAIN
+# ============================================================
+
+draft_files:
+- backend/stream_studio/draft/create_video_draft_handler
+- backend/stream_studio/draft/update_metadata_handler
+- backend/stream_studio/draft/assign_thumbnail_handler
+- backend/stream_studio/draft/add_subtitle_track_handler
+- backend/stream_studio/draft/upsert_edit_marker_handler
+- backend/stream_studio/draft/draft_service
+- backend/stream_studio/draft/draft_repository
+- backend/stream_studio/draft/draft_validator
+- backend/stream_studio/draft/draft_mapper
+
+responsibility_notes:
+  draft_service:
+    - draft mutation orchestration
+    - optimistic lock enforcement coordination
+  draft_repository:
+    - creator_video_draft / creator_edit_marker / creator_subtitle_track persistence
+  draft_validator:
+    - metadata length rules
+    - marker range rules
+    - subtitle source rules
+
+# ============================================================
+# 4. PUBLISH DOMAIN
+# ============================================================
+
+publish_files:
+- backend/stream_studio/publish/upsert_publish_setting_handler
+- backend/stream_studio/publish/validate_publish_readiness_handler
+- backend/stream_studio/publish/create_publish_request_handler
+- backend/stream_studio/publish/schedule_publish_handler
+- backend/stream_studio/publish/list_publish_history_handler
+- backend/stream_studio/publish/publish_service
+- backend/stream_studio/publish/publish_repository
+- backend/stream_studio/publish/publish_validator
+- backend/stream_studio/publish/publish_mapper
+
+responsibility_notes:
+  publish_service:
+    - publish setting save
+    - readiness evaluation
+    - publish request registration
+    - scheduled publish registration
+  publish_repository:
+    - creator_publish_setting / creator_publish_request persistence
+  publish_validator:
+    - schedule rules
+    - publish_ref rules
+    - visibility rules
+
+# ============================================================
+# 5. SHARED PHASE 1 CORE
+# ============================================================
+
+shared_core_files:
+- backend/stream_studio/core/response_envelope
+- backend/stream_studio/core/error_factory
+- backend/stream_studio/core/validation_code_registry
+- backend/stream_studio/core/business_rule_code_registry
+- backend/stream_studio/core/permission_gate
+- backend/stream_studio/core/request_context
+- backend/stream_studio/core/idempotency_guard
+- backend/stream_studio/core/version_guard
+
+audit_runtime_files:
+- backend/stream_studio/audit/audit_event_writer
+- backend/stream_studio/audit/audit_event_repository
+- backend/stream_studio/runtime/runtime_job_repository
+- backend/stream_studio/runtime/runtime_job_registration_service
+- backend/stream_studio/runtime/runtime_job_state_mapper
+
+# ============================================================
+# 6. PHASE 1 BACKEND FILESET DONE STATEMENT
+# ============================================================
+
+fixed_statement:
+The logical backend files above are frozen as the Phase 1 starter scaffold.
+Physical extension and framework binding may vary,
+but file responsibility separation should remain stable.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/142_STREAM_STUDIO_PHASE1_BACKEND_FILE_SCAFFOLD_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/143_STREAM_STUDIO_PHASE1_UI_FILE_SCAFFOLD_LEDGER.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 UI FILE SCAFFOLD LEDGER
+# ============================================================
+
+status: starter-ledger
+layer: implementation-fileset
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the logical UI file scaffold for Phase 1.
+
+policy:
+- logical file names are fixed
+- actual framework syntax is unresolved here
+- one screen shell per main screen
+- reusable panel / form / banner blocks stay separated
+
+recommended_ui_root:
+- ui/stream_studio/
+
+# ============================================================
+# 1. APP SHELL
+# ============================================================
+
+app_shell_files:
+- ui/stream_studio/app/stream_studio_app_shell
+- ui/stream_studio/app/stream_studio_navigation_shell
+- ui/stream_studio/app/stream_studio_route_registry
+- ui/stream_studio/app/stream_studio_permission_guard
+- ui/stream_studio/app/stream_studio_copy_key_resolver
+
+# ============================================================
+# 2. HOME DASHBOARD
+# ============================================================
+
+home_files:
+- ui/stream_studio/screens/home_dashboard_screen
+- ui/stream_studio/screens/home_dashboard_state
+- ui/stream_studio/components/home/quick_create_bar
+- ui/stream_studio/components/home/summary_card_grid
+- ui/stream_studio/components/home/upload_queue_widget
+- ui/stream_studio/components/home/review_summary_widget
+- ui/stream_studio/components/home/scheduled_publish_widget
+- ui/stream_studio/components/home/failed_action_widget
+- ui/stream_studio/components/home/recent_activity_widget
+
+# ============================================================
+# 3. PROJECT DETAIL
+# ============================================================
+
+project_files:
+- ui/stream_studio/screens/project_detail_screen
+- ui/stream_studio/screens/project_detail_state
+- ui/stream_studio/components/project/project_header
+- ui/stream_studio/components/project/project_tab_bar
+- ui/stream_studio/components/project/overview_tab_panel
+- ui/stream_studio/components/project/assets_tab_panel
+- ui/stream_studio/components/project/metadata_form
+- ui/stream_studio/components/project/subtitle_panel
+- ui/stream_studio/components/project/publish_summary_panel
+- ui/stream_studio/components/project/blocker_banner_stack
+
+# ============================================================
+# 4. UPLOAD QUEUE
+# ============================================================
+
+upload_queue_files:
+- ui/stream_studio/screens/upload_queue_screen
+- ui/stream_studio/screens/upload_queue_state
+- ui/stream_studio/components/upload/queue_filter_bar
+- ui/stream_studio/components/upload/queue_state_tabs
+- ui/stream_studio/components/upload/upload_row_card
+- ui/stream_studio/components/upload/upload_detail_panel
+- ui/stream_studio/components/upload/retry_action_bar
+
+# ============================================================
+# 5. PUBLISH SETTINGS
+# ============================================================
+
+publish_files:
+- ui/stream_studio/screens/publish_settings_screen
+- ui/stream_studio/screens/publish_settings_state
+- ui/stream_studio/components/publish/visibility_selector
+- ui/stream_studio/components/publish/schedule_selector
+- ui/stream_studio/components/publish/destination_panel
+- ui/stream_studio/components/publish/readiness_check_panel
+- ui/stream_studio/components/publish/publish_action_bar
+- ui/stream_studio/components/publish/publish_history_panel
+- ui/stream_studio/components/publish/confirmation_sheet_publish_now
+- ui/stream_studio/components/publish/confirmation_sheet_schedule_publish
+
+# ============================================================
+# 6. NOTIFICATION / MOBILE QUICK ACTIONS
+# ============================================================
+
+notification_mobile_files:
+- ui/stream_studio/screens/notification_inbox_screen
+- ui/stream_studio/screens/notification_inbox_state
+- ui/stream_studio/components/notification/notification_row
+- ui/stream_studio/components/mobile/mobile_quick_action_sheet
+- ui/stream_studio/components/mobile/quick_metadata_edit_sheet
+- ui/stream_studio/components/mobile/quick_publish_confirm_sheet
+
+# ============================================================
+# 7. SHARED UI CORE
+# ============================================================
+
+shared_ui_core_files:
+- ui/stream_studio/components/common/state_loading_view
+- ui/stream_studio/components/common/state_empty_view
+- ui/stream_studio/components/common/state_blocked_banner
+- ui/stream_studio/components/common/state_error_banner
+- ui/stream_studio/components/common/confirmation_sheet_base
+- ui/stream_studio/components/common/toast_dispatcher
+- ui/stream_studio/components/common/form_error_summary
+
+# ============================================================
+# 8. PHASE 1 UI FILESET DONE STATEMENT
+# ============================================================
+
+fixed_statement:
+The logical UI files above are frozen as the Phase 1 starter scaffold.
+Framework-specific composition may vary,
+but screen and component responsibility boundaries should remain stable.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/143_STREAM_STUDIO_PHASE1_UI_FILE_SCAFFOLD_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/144_STREAM_STUDIO_PHASE1_ROUTER_SERVICE_VALIDATOR_BINDING_MAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 ROUTER SERVICE VALIDATOR BINDING MAP
+# ============================================================
+
+status: starter-map
+layer: implementation-binding
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Binds handlers, services, validators, repositories,
+audit writers, and runtime registration for Phase 1.
+
+binding_table:
+
+- route: POST /api/stream-studio/projects
+  handler: create_project_handler
+  validator: project_validator.create_project
+  service: project_service.create_project
+  repository: project_repository
+  audit: audit_event_writer.PROJECT_CREATED
+  runtime: none
+
+- route: GET /api/stream-studio/projects
+  handler: list_projects_handler
+  validator: project_validator.list_projects
+  service: project_service.list_projects
+  repository: project_repository
+  audit: none
+  runtime: none
+
+- route: GET /api/stream-studio/projects/{creator_project_id}
+  handler: get_project_detail_handler
+  validator: project_validator.get_project_detail
+  service: project_service.get_project_detail
+  repository: project_repository
+  audit: none
+  runtime: none
+
+- route: PATCH /api/stream-studio/projects/{creator_project_id}
+  handler: update_project_handler
+  validator: project_validator.update_project
+  service: project_service.update_project
+  repository: project_repository
+  audit: audit_event_writer.PROJECT_UPDATED
+  runtime: none
+
+- route: POST /api/stream-studio/uploads/sessions
+  handler: create_upload_session_handler
+  validator: upload_validator.create_upload_session
+  service: upload_service.create_upload_session
+  repository: upload_repository
+  audit: audit_event_writer.UPLOAD_SESSION_CREATED
+  runtime: none
+
+- route: POST /api/stream-studio/uploads/{creator_upload_job_id}/complete
+  handler: complete_upload_handler
+  validator: upload_validator.complete_upload
+  service: upload_service.complete_upload
+  repository: upload_repository
+  audit: audit_event_writer.UPLOAD_COMPLETED
+  runtime: runtime_job_registration_service.register_upload_ingest_finalizer
+
+- route: GET /api/stream-studio/uploads/{creator_upload_job_id}
+  handler: get_upload_status_handler
+  validator: upload_validator.get_upload_status
+  service: upload_service.get_upload_status
+  repository: upload_repository
+  audit: none
+  runtime: none
+
+- route: POST /api/stream-studio/uploads/{creator_upload_job_id}/retry
+  handler: retry_upload_handler
+  validator: upload_validator.retry_upload
+  service: upload_service.retry_upload
+  repository: upload_repository
+  audit: audit_event_writer.UPLOAD_RETRIED
+  runtime: none
+
+- route: POST /api/stream-studio/video-drafts
+  handler: create_video_draft_handler
+  validator: draft_validator.create_video_draft
+  service: draft_service.create_video_draft
+  repository: draft_repository
+  audit: audit_event_writer.VIDEO_DRAFT_CREATED
+  runtime: none
+
+- route: PATCH /api/stream-studio/video-drafts/{creator_video_draft_id}/metadata
+  handler: update_metadata_handler
+  validator: draft_validator.update_metadata
+  service: draft_service.update_metadata
+  repository: draft_repository
+  audit: audit_event_writer.DRAFT_METADATA_UPDATED
+  runtime: none
+
+- route: PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/thumbnail
+  handler: assign_thumbnail_handler
+  validator: draft_validator.assign_thumbnail
+  service: draft_service.assign_thumbnail
+  repository: draft_repository
+  audit: audit_event_writer.THUMBNAIL_ASSIGNED
+  runtime: runtime_job_registration_service.register_thumbnail_derivative_job
+
+- route: POST /api/stream-studio/video-drafts/{creator_video_draft_id}/subtitle-tracks
+  handler: add_subtitle_track_handler
+  validator: draft_validator.add_subtitle_track
+  service: draft_service.add_subtitle_track
+  repository: draft_repository
+  audit: audit_event_writer.SUBTITLE_TRACK_ADDED
+  runtime: runtime_job_registration_service.register_subtitle_packaging_job
+
+- route: PUT /api/stream-studio/video-drafts/{creator_video_draft_id}/edit-markers/{client_marker_key}
+  handler: upsert_edit_marker_handler
+  validator: draft_validator.upsert_edit_marker
+  service: draft_service.upsert_edit_marker
+  repository: draft_repository
+  audit: audit_event_writer.EDIT_MARKER_UPSERTED
+  runtime: none
+
+- route: PUT /api/stream-studio/publish-settings/{publish_ref}
+  handler: upsert_publish_setting_handler
+  validator: publish_validator.upsert_publish_setting
+  service: publish_service.upsert_publish_setting
+  repository: publish_repository
+  audit: audit_event_writer.PUBLISH_SETTING_SAVED
+  runtime: none
+
+- route: POST /api/stream-studio/publish-settings/{publish_ref}/validate
+  handler: validate_publish_readiness_handler
+  validator: publish_validator.validate_publish_readiness
+  service: publish_service.validate_publish_readiness
+  repository: publish_repository
+  audit: audit_event_writer.PUBLISH_READINESS_VALIDATED
+  runtime: none
+
+- route: POST /api/stream-studio/publish-requests
+  handler: create_publish_request_handler
+  validator: publish_validator.create_publish_request
+  service: publish_service.create_publish_request
+  repository: publish_repository
+  audit: audit_event_writer.PUBLISH_REQUEST_CREATED
+  runtime: none
+
+- route: POST /api/stream-studio/publish-requests/schedule
+  handler: schedule_publish_handler
+  validator: publish_validator.schedule_publish
+  service: publish_service.schedule_publish
+  repository: publish_repository
+  audit: audit_event_writer.PUBLISH_SCHEDULED
+  runtime: runtime_job_registration_service.register_scheduled_publish_executor
+
+- route: GET /api/stream-studio/publish-history
+  handler: list_publish_history_handler
+  validator: publish_validator.list_publish_history
+  service: publish_service.list_publish_history
+  repository: publish_repository
+  audit: none
+  runtime: none
+
+fixed_statement:
+Phase 1 binding must preserve exact contract boundaries:
+handler -> validator -> service -> repository -> audit/runtime.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/144_STREAM_STUDIO_PHASE1_ROUTER_SERVICE_VALIDATOR_BINDING_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/145_STREAM_STUDIO_PHASE1_TEST_FILE_SCAFFOLD_LEDGER.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 TEST FILE SCAFFOLD LEDGER
+# ============================================================
+
+status: starter-ledger
+layer: implementation-fileset
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the logical test file scaffold for Phase 1.
+
+recommended_test_root:
+- tests/stream_studio/
+
+backend_test_files:
+- tests/stream_studio/backend/project/create_project_test
+- tests/stream_studio/backend/project/update_project_test
+- tests/stream_studio/backend/upload/create_upload_session_test
+- tests/stream_studio/backend/upload/complete_upload_test
+- tests/stream_studio/backend/upload/retry_upload_test
+- tests/stream_studio/backend/draft/create_video_draft_test
+- tests/stream_studio/backend/draft/update_metadata_test
+- tests/stream_studio/backend/draft/assign_thumbnail_test
+- tests/stream_studio/backend/draft/add_subtitle_track_test
+- tests/stream_studio/backend/draft/upsert_edit_marker_test
+- tests/stream_studio/backend/publish/upsert_publish_setting_test
+- tests/stream_studio/backend/publish/validate_publish_readiness_test
+- tests/stream_studio/backend/publish/create_publish_request_test
+- tests/stream_studio/backend/publish/schedule_publish_test
+
+permission_test_files:
+- tests/stream_studio/permission/project_view_denied_test
+- tests/stream_studio/permission/asset_upload_denied_test
+- tests/stream_studio/permission/publish_denied_test
+- tests/stream_studio/permission/schedule_publish_denied_test
+
+audit_test_files:
+- tests/stream_studio/audit/project_audit_event_test
+- tests/stream_studio/audit/upload_audit_event_test
+- tests/stream_studio/audit/draft_audit_event_test
+- tests/stream_studio/audit/publish_audit_event_test
+
+runtime_test_files:
+- tests/stream_studio/runtime/scheduled_publish_job_registration_test
+- tests/stream_studio/runtime/retry_wait_transition_test
+- tests/stream_studio/runtime/dead_letter_transition_test
+
+ui_test_files:
+- tests/stream_studio/ui/home_dashboard_render_test
+- tests/stream_studio/ui/upload_queue_render_test
+- tests/stream_studio/ui/project_detail_metadata_tab_test
+- tests/stream_studio/ui/subtitle_panel_render_test
+- tests/stream_studio/ui/publish_settings_blocker_render_test
+- tests/stream_studio/ui/publish_confirmation_sheet_test
+- tests/stream_studio/ui/schedule_confirmation_sheet_test
+
+mobile_test_files:
+- tests/stream_studio/mobile/quick_metadata_edit_test
+- tests/stream_studio/mobile/quick_publish_confirm_test
+- tests/stream_studio/mobile/offline_publish_block_test
+
+fixed_statement:
+The logical test files above are frozen as the Phase 1 starter scaffold.
+Physical test framework syntax may vary,
+but the scenario split should remain stable.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/145_STREAM_STUDIO_PHASE1_TEST_FILE_SCAFFOLD_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/146_STREAM_STUDIO_PHASE1_REAL_BUILD_FILESET_DECISION_MEMO.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 REAL BUILD FILESET DECISION MEMO
+# ============================================================
+
+status: decision-memo
+layer: implementation-fileset-decision
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes the practical file-set decision for real Phase 1 build start.
+
+decisions:
+- logical file names are fixed before framework extension binding
+- backend separates handler / validator / service / repository / mapper
+- UI separates screen shell / state / component blocks
+- tests separate backend / permission / audit / runtime / UI / mobile
+- audit and runtime support are not deferred out of Phase 1
+- no commerce or membership files enter the Phase 1 real build file set
+
+non_decisions:
+- concrete backend language
+- concrete UI framework
+- concrete test framework
+- concrete build tool
+- concrete directory prefix outside logical root families
+
+reasoning:
+The stack is not the thing being frozen here.
+The responsibility boundaries and file intent are.
+
+fixed_statement:
+Phase 1 real build should begin from the frozen logical fileset above,
+then bind extensions and framework syntax without changing responsibility boundaries.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/146_STREAM_STUDIO_PHASE1_REAL_BUILD_FILESET_DECISION_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/147_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_BATCH_PACK.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 SQL PRE-DDL BATCH PACK
+# ============================================================
+
+status: sql-pre-ddl-batch
+layer: implementation-db-batch
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the bundled SQL-pre-DDL design pack for StreamStudio Phase 1.
+
+phase_1_sql_target:
+- creator_project
+- creator_project_member
+- creator_upload_job
+- creator_video_draft
+- creator_edit_marker
+- creator_subtitle_track
+- creator_publish_setting
+- creator_publish_request
+- creator_runtime_job
+- creator_audit_event
+- creator_dead_letter_entry_optional
+
+batch_documents:
+- 148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md
+- 149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md
+- 150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md
+- 151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md
+- 152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md
+
+phase_1_sql_non_goals:
+- marketplace listing tables
+- paid offer tables
+- membership tables
+- split tables
+- settlement tables
+- external push full connector tables
+
+fixed_statement:
+This pack freezes Phase 1 DB design direction immediately before real SQL writing.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/147_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_BATCH_PACK.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 TABLE DDL EXACT DESIGN
+# ============================================================
+
+status: sql-pre-ddl
+layer: implementation-db-exact
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the exact Phase 1 table-level DDL intent before physical SQL writing.
+
+ddl_policy:
+- ids are opaque at contract level
+- physical DB may use uuid
+- enum values are stored as text-compatible values
+- created_at and updated_at are mandatory on mutable records
+- version is required on optimistic-lock targets
+- append-only tables do not need updated_at unless explicitly useful
+
+# ============================================================
+# 1. CREATOR PROJECT
+# ============================================================
+
+table: creator_project
+
+purpose:
+- root creator-side work container
+
+columns:
+- creator_project_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- project_code
+  type_direction: text
+  nullability: not_null
+  role: stable_human_readable_identifier
+
+- project_title
+  type_direction: text
+  nullability: not_null
+  role: mutable_title
+
+- project_summary
+  type_direction: text
+  nullability: nullable
+  role: mutable_summary
+
+- project_status
+  type_direction: text_enum(project_status)
+  nullability: not_null
+  role: lifecycle_state
+
+- owner_creator_ref
+  type_direction: text
+  nullability: not_null
+  role: owner_reference
+
+- default_language
+  type_direction: text
+  nullability: not_null
+  role: primary_language_code
+
+- version
+  type_direction: integer
+  nullability: not_null
+  role: optimistic_lock_version
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- project_status default draft
+- version default 1
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 2. CREATOR PROJECT MEMBER
+# ============================================================
+
+table: creator_project_member
+
+purpose:
+- scoped member participation per project
+
+columns:
+- creator_project_member_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- creator_project_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: fk_to_creator_project
+
+- member_ref
+  type_direction: text
+  nullability: not_null
+  role: actor_reference
+
+- role_code
+  type_direction: text_enum(role_code)
+  nullability: not_null
+  role: member_role
+
+- permission_profile_ref
+  type_direction: text
+  nullability: nullable
+  role: permission_profile_reference
+
+- assignment_scope_summary
+  type_direction: bounded_json
+  nullability: nullable
+  role: scope_snapshot_summary
+
+- due_at
+  type_direction: timestamp
+  nullability: nullable
+  role: assignment_due_timestamp
+
+- joined_at
+  type_direction: timestamp
+  nullability: not_null
+  role: membership_start_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- joined_at server_now
+- updated_at server_now
+
+# ============================================================
+# 3. CREATOR UPLOAD JOB
+# ============================================================
+
+table: creator_upload_job
+
+purpose:
+- upload / ingest state visibility
+
+columns:
+- creator_upload_job_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- creator_project_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: fk_to_creator_project
+
+- source_file_name
+  type_direction: text
+  nullability: not_null
+  role: source_file_name
+
+- file_size_bytes
+  type_direction: bigint_or_integer
+  nullability: not_null
+  role: file_size
+
+- mime_type
+  type_direction: text
+  nullability: not_null
+  role: media_type
+
+- ingest_status
+  type_direction: text_enum(ingest_status)
+  nullability: not_null
+  role: upload_lifecycle_state
+
+- resumable_session_ref
+  type_direction: text
+  nullability: not_null
+  role: resumable_session_reference
+
+- failure_summary
+  type_direction: text
+  nullability: nullable
+  role: last_failure_summary
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- ingest_status default queued
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 4. CREATOR VIDEO DRAFT
+# ============================================================
+
+table: creator_video_draft
+
+purpose:
+- creator-side editable draft state
+
+columns:
+- creator_video_draft_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- creator_project_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: fk_to_creator_project
+
+- asset_ref
+  type_direction: text
+  nullability: not_null
+  role: canonical_or_creator_asset_reference
+
+- draft_status
+  type_direction: text_enum(draft_status)
+  nullability: not_null
+  role: draft_lifecycle_state
+
+- title
+  type_direction: text
+  nullability: nullable
+  role: content_title
+
+- description
+  type_direction: text
+  nullability: nullable
+  role: content_description
+
+- default_language
+  type_direction: text
+  nullability: not_null
+  role: primary_language_code
+
+- tag_summary_json
+  type_direction: bounded_json
+  nullability: nullable
+  role: tag_collection_summary
+
+- thumbnail_asset_ref
+  type_direction: text
+  nullability: nullable
+  role: thumbnail_reference
+
+- subtitle_package_ref
+  type_direction: text
+  nullability: nullable
+  role: subtitle_package_reference
+
+- draft_version
+  type_direction: integer
+  nullability: not_null
+  role: user_visible_version_counter
+
+- version
+  type_direction: integer
+  nullability: not_null
+  role: optimistic_lock_version
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- draft_status default draft
+- draft_version default 1
+- version default 1
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 5. CREATOR EDIT MARKER
+# ============================================================
+
+table: creator_edit_marker
+
+purpose:
+- trim / cut markers attached to draft
+
+columns:
+- creator_edit_marker_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- creator_video_draft_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: fk_to_creator_video_draft
+
+- marker_type
+  type_direction: text
+  nullability: not_null
+  role: trim_or_cut
+
+- start_ms
+  type_direction: integer
+  nullability: not_null
+  role: start_offset_ms
+
+- end_ms
+  type_direction: integer
+  nullability: not_null
+  role: end_offset_ms
+
+- marker_summary
+  type_direction: text
+  nullability: nullable
+  role: optional_summary
+
+- created_by
+  type_direction: text
+  nullability: not_null
+  role: actor_reference
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 6. CREATOR SUBTITLE TRACK
+# ============================================================
+
+table: creator_subtitle_track
+
+purpose:
+- subtitle track base support
+
+columns:
+- creator_subtitle_track_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- creator_video_draft_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: fk_to_creator_video_draft
+
+- language_code
+  type_direction: text
+  nullability: not_null
+  role: subtitle_language
+
+- source_type
+  type_direction: text
+  nullability: not_null
+  role: uploaded_or_generated
+
+- subtitle_status
+  type_direction: text
+  nullability: not_null
+  role: subtitle_lifecycle_state
+
+- file_asset_ref
+  type_direction: text
+  nullability: nullable
+  role: source_file_reference
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- subtitle_status default draft
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 7. CREATOR PUBLISH SETTING
+# ============================================================
+
+table: creator_publish_setting
+
+purpose:
+- publish visibility, schedule, destination summary, readiness state
+
+columns:
+- creator_publish_setting_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- publish_ref
+  type_direction: text
+  nullability: not_null
+  role: publish_target_reference
+
+- visibility_code
+  type_direction: text_enum(visibility_code)
+  nullability: not_null
+  role: visibility_state
+
+- scheduled_publish_at
+  type_direction: timestamp
+  nullability: nullable
+  role: schedule_time
+
+- publish_destination_summary
+  type_direction: bounded_json
+  nullability: not_null
+  role: destination_toggle_summary
+
+- rights_check_status
+  type_direction: text_enum(rights_check_status)
+  nullability: not_null
+  role: rights_check_state
+
+- readiness_status
+  type_direction: text_enum(readiness_status)
+  nullability: not_null
+  role: readiness_state
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- rights_check_status default pending
+- readiness_status default pending
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 8. CREATOR PUBLISH REQUEST
+# ============================================================
+
+table: creator_publish_request
+
+purpose:
+- explicit publish execution or schedule intent
+
+columns:
+- creator_publish_request_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- publish_ref
+  type_direction: text
+  nullability: not_null
+  role: publish_target_reference
+
+- request_status
+  type_direction: text
+  nullability: not_null
+  role: publish_request_state
+
+- requested_by
+  type_direction: text
+  nullability: not_null
+  role: actor_reference
+
+- request_channel
+  type_direction: text_enum(request_channel)
+  nullability: not_null
+  role: manual_or_scheduler
+
+- execute_after
+  type_direction: timestamp
+  nullability: nullable
+  role: deferred_execution_time
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- request_status default requested
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 9. CREATOR RUNTIME JOB
+# ============================================================
+
+table: creator_runtime_job
+
+purpose:
+- first-class async runtime visibility
+
+columns:
+- creator_runtime_job_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- job_type
+  type_direction: text
+  nullability: not_null
+  role: runtime_job_type
+
+- target_ref
+  type_direction: text
+  nullability: not_null
+  role: target_reference
+
+- target_scope
+  type_direction: text
+  nullability: not_null
+  role: target_scope_code
+
+- state
+  type_direction: text_enum(job_state)
+  nullability: not_null
+  role: runtime_state
+
+- attempt_count
+  type_direction: integer
+  nullability: not_null
+  role: execution_attempts
+
+- max_attempts
+  type_direction: integer
+  nullability: not_null
+  role: attempt_limit
+
+- idempotency_key
+  type_direction: text
+  nullability: nullable
+  role: deduplication_key
+
+- priority_code
+  type_direction: text_enum(priority_code)
+  nullability: not_null
+  role: priority_state
+
+- scheduled_at
+  type_direction: timestamp
+  nullability: not_null
+  role: planned_execution_time
+
+- started_at
+  type_direction: timestamp
+  nullability: nullable
+  role: actual_start_time
+
+- finished_at
+  type_direction: timestamp
+  nullability: nullable
+  role: actual_finish_time
+
+- next_retry_at
+  type_direction: timestamp
+  nullability: nullable
+  role: retry_plan_time
+
+- last_error_code
+  type_direction: text
+  nullability: nullable
+  role: latest_exact_error_code
+
+- last_error_summary
+  type_direction: text
+  nullability: nullable
+  role: latest_error_summary
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- state default queued
+- attempt_count default 0
+- priority_code default normal
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 10. CREATOR AUDIT EVENT
+# ============================================================
+
+table: creator_audit_event
+
+purpose:
+- append-only audit event trail for high-risk and notable actions
+
+columns:
+- creator_audit_event_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- actor_ref
+  type_direction: text
+  nullability: not_null
+  role: actor_reference
+
+- role_code
+  type_direction: text_enum(role_code)
+  nullability: not_null
+  role: actor_role
+
+- action_code
+  type_direction: text
+  nullability: not_null
+  role: stable_audit_action_code
+
+- result_code
+  type_direction: text
+  nullability: not_null
+  role: succeeded_failed_blocked_cancelled_expired
+
+- scope_ref
+  type_direction: text
+  nullability: not_null
+  role: scope_reference
+
+- target_ref
+  type_direction: text
+  nullability: not_null
+  role: acted_target_reference
+
+- request_id
+  type_direction: text
+  nullability: nullable
+  role: request_trace_id
+
+- reason_note
+  type_direction: text
+  nullability: nullable
+  role: optional_reason
+
+- payload_summary_json
+  type_direction: bounded_json
+  nullability: nullable
+  role: bounded_structured_context
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: append_only_timestamp
+
+defaults_direction:
+- created_at server_now
+
+# ============================================================
+# 11. CREATOR DEAD LETTER ENTRY
+# ============================================================
+
+table: creator_dead_letter_entry
+
+purpose:
+- visible terminal async failures
+
+columns:
+- creator_dead_letter_entry_id
+  type_direction: opaque_id
+  nullability: not_null
+  role: primary_key
+
+- original_job_id
+  type_direction: opaque_id_or_text
+  nullability: not_null
+  role: source_runtime_job_reference
+
+- job_type
+  type_direction: text
+  nullability: not_null
+  role: runtime_job_type
+
+- target_ref
+  type_direction: text
+  nullability: not_null
+  role: target_reference
+
+- target_scope
+  type_direction: text
+  nullability: not_null
+  role: target_scope_code
+
+- terminal_reason_code
+  type_direction: text
+  nullability: not_null
+  role: terminal_reason
+
+- terminal_reason_summary
+  type_direction: text
+  nullability: not_null
+  role: human_summary
+
+- final_attempt_count
+  type_direction: integer
+  nullability: not_null
+  role: attempts_before_terminal
+
+- last_error_code
+  type_direction: text
+  nullability: nullable
+  role: last_exact_error_code
+
+- recommended_operator_action
+  type_direction: text
+  nullability: not_null
+  role: inspect_or_retry_as_new_or_override_or_cancel
+
+- created_at
+  type_direction: timestamp
+  nullability: not_null
+  role: creation_timestamp
+
+- updated_at
+  type_direction: timestamp
+  nullability: not_null
+  role: mutation_timestamp
+
+defaults_direction:
+- created_at server_now
+- updated_at server_now
+
+# ============================================================
+# 12. FIXED TABLE DDL STATEMENT
+# ============================================================
+
+fixed_statement:
+Phase 1 table meaning, nullability direction, default direction,
+and append-only vs mutable split are frozen here before real SQL writing.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 INDEX FK CONSTRAINT EXACT DESIGN
+# ============================================================
+
+status: sql-pre-ddl
+layer: implementation-db-exact
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines exact index, FK, unique constraint, and check direction for Phase 1.
+
+# ============================================================
+# 1. FOREIGN KEY DIRECTION
+# ============================================================
+
+direct_foreign_keys:
+- creator_project_member.creator_project_id -> creator_project.creator_project_id
+- creator_upload_job.creator_project_id -> creator_project.creator_project_id
+- creator_video_draft.creator_project_id -> creator_project.creator_project_id
+- creator_edit_marker.creator_video_draft_id -> creator_video_draft.creator_video_draft_id
+- creator_subtitle_track.creator_video_draft_id -> creator_video_draft.creator_video_draft_id
+
+fk_delete_direction:
+- project child records should not silently orphan
+- hard-delete cascade is not preferred for business-critical records
+- archival / status transition is preferred over destructive cascade
+- implementation may use restrict or equivalent safe behavior
+
+# ============================================================
+# 2. UNIQUE CONSTRAINT DIRECTION
+# ============================================================
+
+recommended_uniques:
+- creator_project.project_code unique within chosen root scope
+- creator_runtime_job idempotent tuple uniqueness when job_type + target_ref + idempotency_key applies
+- creator_edit_marker optional uniqueness when client_marker_key is introduced physically later
+
+non_phase1_uniques_not_required_yet:
+- listing / membership / split partial uniqueness
+
+# ============================================================
+# 3. CHECK CONSTRAINT DIRECTION
+# ============================================================
+
+recommended_checks:
+
+  creator_project:
+    - version >= 1
+
+  creator_upload_job:
+    - file_size_bytes > 0
+
+  creator_video_draft:
+    - draft_version >= 1
+    - version >= 1
+
+  creator_edit_marker:
+    - start_ms >= 0
+    - end_ms > start_ms
+
+  creator_runtime_job:
+    - attempt_count >= 0
+    - max_attempts >= 1
+
+  creator_dead_letter_entry:
+    - final_attempt_count >= 0
+
+notes:
+- enum value enforcement may be application-first and DB-constraint-second
+- numeric checks should be present where safe and stable
+
+# ============================================================
+# 4. INDEX FAMILY DIRECTION
+# ============================================================
+
+project_indexes:
+- creator_project(owner_creator_ref, project_status, updated_at desc)
+- creator_project_member(creator_project_id)
+- creator_project_member(member_ref, updated_at desc)
+
+upload_indexes:
+- creator_upload_job(creator_project_id, ingest_status, updated_at desc)
+- creator_upload_job(resumable_session_ref)
+
+draft_indexes:
+- creator_video_draft(creator_project_id, draft_status, updated_at desc)
+- creator_video_draft(asset_ref)
+- creator_edit_marker(creator_video_draft_id)
+- creator_subtitle_track(creator_video_draft_id)
+- creator_subtitle_track(language_code)
+
+publish_indexes:
+- creator_publish_setting(publish_ref)
+- creator_publish_setting(readiness_status)
+- creator_publish_request(publish_ref, request_status, created_at desc)
+- creator_publish_request(execute_after)
+
+runtime_indexes:
+- creator_runtime_job(job_type, state, next_retry_at)
+- creator_runtime_job(target_ref)
+- creator_dead_letter_entry(job_type, created_at desc)
+- creator_dead_letter_entry(target_ref)
+
+audit_indexes:
+- creator_audit_event(target_ref, created_at desc)
+- creator_audit_event(actor_ref, created_at desc)
+- creator_audit_event(action_code, created_at desc)
+
+# ============================================================
+# 5. OPTIMISTIC LOCK TARGETS
+# ============================================================
+
+optimistic_lock_targets:
+- creator_project.version
+- creator_video_draft.version
+
+optional_later_extension:
+- publish setting version not required in phase 1 if single-writer pattern is assumed
+- may be added later if concurrent mutation risk rises
+
+# ============================================================
+# 6. SOFT-REF VS FK DIRECTION
+# ============================================================
+
+soft_refs_kept_as_text:
+- asset_ref
+- publish_ref
+- request_id
+- actor_ref
+- member_ref
+- owner_creator_ref
+- scope_ref
+- target_ref
+
+reason:
+These often point to cross-domain or heterogeneous targets.
+
+# ============================================================
+# 7. FIXED INDEX / FK STATEMENT
+# ============================================================
+
+fixed_statement:
+Phase 1 FK direction, index families, and core constraint directions
+are frozen here before physical SQL writing.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 AUDIT AND RUNTIME DDL EXACT DESIGN
+# ============================================================
+
+status: sql-pre-ddl
+layer: implementation-db-exact
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the DDL intent for audit, runtime job, and dead-letter records in Phase 1.
+
+# ============================================================
+# 1. AUDIT TABLE DESIGN PRINCIPLES
+# ============================================================
+
+audit_principles:
+- append-only
+- no destructive update in normal flow
+- target_ref searchable
+- actor_ref searchable
+- action_code searchable
+- payload_summary_json bounded and non-canonical
+- result_code separate from action_code
+
+required_phase1_action_codes:
+- PROJECT_CREATED
+- PROJECT_UPDATED
+- UPLOAD_SESSION_CREATED
+- UPLOAD_COMPLETED
+- UPLOAD_RETRIED
+- VIDEO_DRAFT_CREATED
+- DRAFT_METADATA_UPDATED
+- THUMBNAIL_ASSIGNED
+- SUBTITLE_TRACK_ADDED
+- EDIT_MARKER_UPSERTED
+- PUBLISH_SETTING_SAVED
+- PUBLISH_READINESS_VALIDATED
+- PUBLISH_REQUEST_CREATED
+- PUBLISH_SCHEDULED
+
+# ============================================================
+# 2. RUNTIME JOB DESIGN PRINCIPLES
+# ============================================================
+
+runtime_principles:
+- first-class table, not hidden queue metadata
+- state is explicit
+- retry planning is explicit
+- idempotency key may be nullable but supported
+- target_ref + target_scope model heterogeneous target support
+- scheduled publish is the minimum required phase 1 runtime use case
+
+required_phase1_job_types:
+- UPLOAD_INGEST_FINALIZER
+- THUMBNAIL_DERIVATIVE_JOB
+- SUBTITLE_PACKAGING_JOB
+- SCHEDULED_PUBLISH_EXECUTOR
+
+required_phase1_job_states:
+- queued
+- running
+- succeeded
+- retry_wait
+- dead_letter
+- cancelled
+
+required_phase1_priority_codes:
+- normal
+- high
+- critical_optional
+
+# ============================================================
+# 3. DEAD LETTER DESIGN PRINCIPLES
+# ============================================================
+
+dead_letter_principles:
+- visible terminal state
+- tied back to original job
+- stores terminal reason and operator recommendation
+- no silent discard of terminal scheduled publish failures
+
+minimum_terminal_reason_examples:
+- TEMPORARY_UNAVAILABLE_EXHAUSTED
+- INVALID_REQUEST_SHAPE
+- POLICY_BLOCKED
+- RIGHTS_BLOCKED
+- INVALID_SCHEDULE_WINDOW
+- DOWNSTREAM_TIMEOUT_EXHAUSTED
+
+# ============================================================
+# 4. PHASE 1 AUDIT / RUNTIME WRITE ORDER
+# ============================================================
+
+write_order_direction:
+
+  create_project:
+    - write business row
+    - write audit row
+
+  complete_upload:
+    - update upload row
+    - write runtime job when needed
+    - write audit row
+
+  assign_thumbnail:
+    - update draft row
+    - write runtime job when derivative required
+    - write audit row
+
+  add_subtitle_track:
+    - write subtitle row
+    - write runtime job
+    - write audit row
+
+  schedule_publish:
+    - write publish request
+    - write scheduled publish runtime job
+    - write audit row
+
+principle:
+Audit and runtime visibility are phase 1 responsibilities,
+not later hardening leftovers.
+
+# ============================================================
+# 5. PHASE 1 RUNTIME RETRY MINIMUMS
+# ============================================================
+
+phase1_retry_minimums:
+  UPLOAD_INGEST_FINALIZER:
+    max_attempts: 5
+
+  THUMBNAIL_DERIVATIVE_JOB:
+    max_attempts: 5
+
+  SUBTITLE_PACKAGING_JOB:
+    max_attempts: 5
+
+  SCHEDULED_PUBLISH_EXECUTOR:
+    max_attempts: 5
+
+minimum_retry_fields_required:
+- attempt_count
+- max_attempts
+- next_retry_at
+- last_error_code
+- last_error_summary
+
+# ============================================================
+# 6. FIXED AUDIT / RUNTIME STATEMENT
+# ============================================================
+
+fixed_statement:
+Audit trail, runtime job visibility, and dead-letter design
+are part of Phase 1 DDL scope and must not be deferred.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 MIGRATION UNIT SPLIT PLAN
+# ============================================================
+
+status: sql-pre-ddl
+layer: implementation-db-plan
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the recommended migration split order for Phase 1.
+
+migration_unit_order:
+
+  unit_01_project_base:
+    creates:
+      - creator_project
+      - creator_project_member
+    reason:
+      - root ownership and member structure first
+
+  unit_02_upload_base:
+    creates:
+      - creator_upload_job
+    reason:
+      - upload needs project base first
+
+  unit_03_draft_base:
+    creates:
+      - creator_video_draft
+      - creator_edit_marker
+      - creator_subtitle_track
+    reason:
+      - draft records depend on project base
+
+  unit_04_publish_base:
+    creates:
+      - creator_publish_setting
+      - creator_publish_request
+    reason:
+      - publish base is phase 1 completion target
+
+  unit_05_runtime_base:
+    creates:
+      - creator_runtime_job
+      - creator_dead_letter_entry_optional
+    reason:
+      - scheduled publish and async visibility
+
+  unit_06_audit_base:
+    creates:
+      - creator_audit_event
+    reason:
+      - append-only audit can be created independently but should exist before app integration
+
+  unit_07_indexes_and_constraints:
+    creates:
+      - secondary indexes
+      - unique constraints
+      - checks
+      - foreign keys
+    reason:
+      - easier staged rollout and rollback safety
+
+recommended_apply_order:
+- unit_01_project_base
+- unit_02_upload_base
+- unit_03_draft_base
+- unit_04_publish_base
+- unit_05_runtime_base
+- unit_06_audit_base
+- unit_07_indexes_and_constraints
+
+rollback_direction:
+- rollback should be reverse-order and safety-checked
+- destructive rollback of audit table is discouraged outside dev
+- hard-delete rollback is not preferred on populated environments
+
+fixed_statement:
+Phase 1 SQL should be written and applied in migration units,
+not as one opaque mega-file.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 PSQL APPLY PREFLIGHT MEMO
+# ============================================================
+
+status: sql-preflight
+layer: implementation-db-preflight
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the preflight discipline before real SQL writing and psql apply.
+
+db_environment_rule:
+- Persona-side DB work uses PERSONA_DATABASE_URL
+- ERP-side DB work uses DATABASE_URL
+- StreamStudio Phase 1 DB work should follow Persona-side rule unless explicitly redirected
+
+psql_execution_rule:
+- use Method A only
+- psql "$PERSONA_DATABASE_URL" <<'SQL'
+- ...
+- SQL
+
+termux_rule:
+- use one-block execution style
+- avoid cd-dependent relative assumptions
+- create needed temp files under $HOME/.tmp if required
+
+preflight_checklist:
+- PERSONA_DATABASE_URL is exported
+- target environment is confirmed as non-ERP for StreamStudio phase 1
+- migration unit order is fixed
+- table list is fixed
+- FK direction is fixed
+- audit and runtime tables are included
+- destructive rollback is not assumed
+- review by 佐藤（DB担当） is included per project rule
+
+sql_writing_non_goals:
+- no marketplace / membership / split tables in phase 1 sql batch
+- no connector execution tables beyond phase 1 runtime minimum
+- no physical precision drift from money policy when later phases add money tables
+
+ready_condition:
+Phase 1 real SQL may be written once this preflight memo,
+the DDL exact docs, and migration split plan are all accepted.
+
+fixed_statement:
+This memo freezes the operational discipline for real Phase 1 SQL writing in Termux.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153000_STREAM_STUDIO_PHASE1_SQL_REAL_MIGRATION_BUNDLE.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 SQL REAL MIGRATION BUNDLE
+# ============================================================
+
+status: sql-real-bundle
+layer: implementation-sql-bundle
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the real SQL migration-unit bundle for StreamStudio Phase 1.
+
+sql_policy:
+- schema name is templated as __STREAM_STUDIO_SCHEMA__
+- Persona-side DB work uses PERSONA_DATABASE_URL
+- SQL apply is not automatic in this bundle
+- apply must go through explicit review and explicit runner execution
+- 佐藤（DB担当） review is required before real apply
+
+migration_units:
+- 153100_PHASE1_01_creator_project_and_member.sql
+- 153110_PHASE1_02_upload_job.sql
+- 153120_PHASE1_03_video_draft_marker_subtitle.sql
+- 153130_PHASE1_04_publish_setting_and_request.sql
+- 153140_PHASE1_05_runtime_and_dead_letter.sql
+- 153150_PHASE1_06_audit_event.sql
+- 153160_PHASE1_07_indexes_and_constraints.sql
+
+notes:
+- IDs are stored as text in Phase 1 SQL to preserve opaque-ID flexibility
+- enum values are stored as text with check constraints where stable enough
+- audit and runtime tables are included in Phase 1 and not deferred
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153000_STREAM_STUDIO_PHASE1_SQL_REAL_MIGRATION_BUNDLE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153100_PHASE1_01_creator_project_and_member.sql -->
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS __STREAM_STUDIO_SCHEMA__;
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_project (
+  creator_project_id text PRIMARY KEY,
+  project_code text NOT NULL,
+  project_title text NOT NULL,
+  project_summary text NULL,
+  project_status text NOT NULL DEFAULT 'draft',
+  owner_creator_ref text NOT NULL,
+  default_language text NOT NULL,
+  version integer NOT NULL DEFAULT 1,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_project_project_status_chk
+    CHECK (project_status IN (
+      'draft',
+      'in_review',
+      'approval_pending',
+      'publish_ready',
+      'scheduled',
+      'published',
+      'failed',
+      'archived'
+    )),
+  CONSTRAINT creator_project_version_chk
+    CHECK (version >= 1)
+);
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_project_member (
+  creator_project_member_id text PRIMARY KEY,
+  creator_project_id text NOT NULL,
+  member_ref text NOT NULL,
+  role_code text NOT NULL,
+  permission_profile_ref text NULL,
+  assignment_scope_summary jsonb NULL,
+  due_at timestamptz NULL,
+  joined_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_project_member_role_code_chk
+    CHECK (role_code IN (
+      'creator',
+      'collaborator',
+      'producer',
+      'admin',
+      'membership_operator'
+    ))
+);
+
+COMMIT;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153100_PHASE1_01_creator_project_and_member.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153110_PHASE1_02_upload_job.sql -->
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS __STREAM_STUDIO_SCHEMA__;
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_upload_job (
+  creator_upload_job_id text PRIMARY KEY,
+  creator_project_id text NOT NULL,
+  source_file_name text NOT NULL,
+  file_size_bytes bigint NOT NULL,
+  mime_type text NOT NULL,
+  ingest_status text NOT NULL DEFAULT 'queued',
+  resumable_session_ref text NOT NULL,
+  failure_summary text NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_upload_job_file_size_chk
+    CHECK (file_size_bytes > 0),
+  CONSTRAINT creator_upload_job_ingest_status_chk
+    CHECK (ingest_status IN (
+      'queued',
+      'uploading',
+      'processing',
+      'completed',
+      'failed',
+      'cancelled'
+    ))
+);
+
+COMMIT;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153110_PHASE1_02_upload_job.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153120_PHASE1_03_video_draft_marker_subtitle.sql -->
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS __STREAM_STUDIO_SCHEMA__;
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_video_draft (
+  creator_video_draft_id text PRIMARY KEY,
+  creator_project_id text NOT NULL,
+  asset_ref text NOT NULL,
+  draft_status text NOT NULL DEFAULT 'draft',
+  title text NULL,
+  description text NULL,
+  default_language text NOT NULL,
+  tag_summary_json jsonb NULL,
+  thumbnail_asset_ref text NULL,
+  subtitle_package_ref text NULL,
+  draft_version integer NOT NULL DEFAULT 1,
+  version integer NOT NULL DEFAULT 1,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_video_draft_draft_status_chk
+    CHECK (draft_status IN (
+      'draft',
+      'metadata_ready',
+      'review_required',
+      'in_review',
+      'approval_pending',
+      'publish_ready',
+      'scheduled',
+      'published',
+      'failed',
+      'archived'
+    )),
+  CONSTRAINT creator_video_draft_draft_version_chk
+    CHECK (draft_version >= 1),
+  CONSTRAINT creator_video_draft_version_chk
+    CHECK (version >= 1)
+);
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_edit_marker (
+  creator_edit_marker_id text PRIMARY KEY,
+  creator_video_draft_id text NOT NULL,
+  marker_type text NOT NULL,
+  start_ms integer NOT NULL,
+  end_ms integer NOT NULL,
+  marker_summary text NULL,
+  created_by text NOT NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_edit_marker_marker_type_chk
+    CHECK (marker_type IN ('trim', 'cut')),
+  CONSTRAINT creator_edit_marker_start_ms_chk
+    CHECK (start_ms >= 0),
+  CONSTRAINT creator_edit_marker_end_ms_chk
+    CHECK (end_ms > start_ms)
+);
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_subtitle_track (
+  creator_subtitle_track_id text PRIMARY KEY,
+  creator_video_draft_id text NOT NULL,
+  language_code text NOT NULL,
+  source_type text NOT NULL,
+  subtitle_status text NOT NULL DEFAULT 'draft',
+  file_asset_ref text NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_subtitle_track_source_type_chk
+    CHECK (source_type IN ('uploaded', 'generated'))
+);
+
+COMMIT;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153120_PHASE1_03_video_draft_marker_subtitle.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153130_PHASE1_04_publish_setting_and_request.sql -->
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS __STREAM_STUDIO_SCHEMA__;
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_publish_setting (
+  creator_publish_setting_id text PRIMARY KEY,
+  publish_ref text NOT NULL,
+  visibility_code text NOT NULL,
+  scheduled_publish_at timestamptz NULL,
+  publish_destination_summary jsonb NOT NULL,
+  rights_check_status text NOT NULL DEFAULT 'pending',
+  readiness_status text NOT NULL DEFAULT 'pending',
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_publish_setting_visibility_code_chk
+    CHECK (visibility_code IN (
+      'private',
+      'limited',
+      'public',
+      'scheduled_public'
+    )),
+  CONSTRAINT creator_publish_setting_rights_check_status_chk
+    CHECK (rights_check_status IN (
+      'pending',
+      'passed',
+      'failed'
+    )),
+  CONSTRAINT creator_publish_setting_readiness_status_chk
+    CHECK (readiness_status IN (
+      'pending',
+      'ready',
+      'blocked'
+    ))
+);
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_publish_request (
+  creator_publish_request_id text PRIMARY KEY,
+  publish_ref text NOT NULL,
+  request_status text NOT NULL DEFAULT 'requested',
+  requested_by text NOT NULL,
+  request_channel text NOT NULL,
+  execute_after timestamptz NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_publish_request_request_channel_chk
+    CHECK (request_channel IN ('manual', 'scheduler')),
+  CONSTRAINT creator_publish_request_request_status_chk
+    CHECK (request_status IN (
+      'requested',
+      'scheduled',
+      'processing',
+      'published',
+      'failed',
+      'cancelled'
+    ))
+);
+
+COMMIT;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153130_PHASE1_04_publish_setting_and_request.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153140_PHASE1_05_runtime_and_dead_letter.sql -->
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS __STREAM_STUDIO_SCHEMA__;
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_runtime_job (
+  creator_runtime_job_id text PRIMARY KEY,
+  job_type text NOT NULL,
+  target_ref text NOT NULL,
+  target_scope text NOT NULL,
+  state text NOT NULL DEFAULT 'queued',
+  attempt_count integer NOT NULL DEFAULT 0,
+  max_attempts integer NOT NULL,
+  idempotency_key text NULL,
+  priority_code text NOT NULL DEFAULT 'normal',
+  scheduled_at timestamptz NOT NULL,
+  started_at timestamptz NULL,
+  finished_at timestamptz NULL,
+  next_retry_at timestamptz NULL,
+  last_error_code text NULL,
+  last_error_summary text NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_runtime_job_state_chk
+    CHECK (state IN (
+      'queued',
+      'running',
+      'succeeded',
+      'retry_wait',
+      'dead_letter',
+      'cancelled'
+    )),
+  CONSTRAINT creator_runtime_job_priority_code_chk
+    CHECK (priority_code IN (
+      'low',
+      'normal',
+      'high',
+      'critical'
+    )),
+  CONSTRAINT creator_runtime_job_attempt_count_chk
+    CHECK (attempt_count >= 0),
+  CONSTRAINT creator_runtime_job_max_attempts_chk
+    CHECK (max_attempts >= 1)
+);
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_dead_letter_entry (
+  creator_dead_letter_entry_id text PRIMARY KEY,
+  original_job_id text NOT NULL,
+  job_type text NOT NULL,
+  target_ref text NOT NULL,
+  target_scope text NOT NULL,
+  terminal_reason_code text NOT NULL,
+  terminal_reason_summary text NOT NULL,
+  final_attempt_count integer NOT NULL,
+  last_error_code text NULL,
+  recommended_operator_action text NOT NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_dead_letter_entry_attempt_count_chk
+    CHECK (final_attempt_count >= 0),
+  CONSTRAINT creator_dead_letter_entry_operator_action_chk
+    CHECK (recommended_operator_action IN (
+      'inspect',
+      'retry_as_new',
+      'override',
+      'cancel'
+    ))
+);
+
+COMMIT;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153140_PHASE1_05_runtime_and_dead_letter.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153150_PHASE1_06_audit_event.sql -->
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS __STREAM_STUDIO_SCHEMA__;
+
+CREATE TABLE IF NOT EXISTS __STREAM_STUDIO_SCHEMA__.creator_audit_event (
+  creator_audit_event_id text PRIMARY KEY,
+  actor_ref text NOT NULL,
+  role_code text NOT NULL,
+  action_code text NOT NULL,
+  result_code text NOT NULL,
+  scope_ref text NOT NULL,
+  target_ref text NOT NULL,
+  request_id text NULL,
+  reason_note text NULL,
+  payload_summary_json jsonb NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT creator_audit_event_role_code_chk
+    CHECK (role_code IN (
+      'creator',
+      'collaborator',
+      'producer',
+      'admin',
+      'membership_operator'
+    )),
+  CONSTRAINT creator_audit_event_result_code_chk
+    CHECK (result_code IN (
+      'succeeded',
+      'failed',
+      'blocked',
+      'cancelled',
+      'expired'
+    ))
+);
+
+COMMIT;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153150_PHASE1_06_audit_event.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153160_PHASE1_07_indexes_and_constraints.sql -->
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS __STREAM_STUDIO_SCHEMA__;
+
+CREATE UNIQUE INDEX IF NOT EXISTS uq_creator_project_project_code
+  ON __STREAM_STUDIO_SCHEMA__.creator_project (project_code);
+
+CREATE INDEX IF NOT EXISTS idx_creator_project_owner_status_updated
+  ON __STREAM_STUDIO_SCHEMA__.creator_project (owner_creator_ref, project_status, updated_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_project_member_project
+  ON __STREAM_STUDIO_SCHEMA__.creator_project_member (creator_project_id);
+
+CREATE INDEX IF NOT EXISTS idx_creator_project_member_member_updated
+  ON __STREAM_STUDIO_SCHEMA__.creator_project_member (member_ref, updated_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_upload_job_project_status_updated
+  ON __STREAM_STUDIO_SCHEMA__.creator_upload_job (creator_project_id, ingest_status, updated_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_upload_job_resumable_session_ref
+  ON __STREAM_STUDIO_SCHEMA__.creator_upload_job (resumable_session_ref);
+
+CREATE INDEX IF NOT EXISTS idx_creator_video_draft_project_status_updated
+  ON __STREAM_STUDIO_SCHEMA__.creator_video_draft (creator_project_id, draft_status, updated_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_video_draft_asset_ref
+  ON __STREAM_STUDIO_SCHEMA__.creator_video_draft (asset_ref);
+
+CREATE INDEX IF NOT EXISTS idx_creator_edit_marker_draft
+  ON __STREAM_STUDIO_SCHEMA__.creator_edit_marker (creator_video_draft_id);
+
+CREATE INDEX IF NOT EXISTS idx_creator_subtitle_track_draft
+  ON __STREAM_STUDIO_SCHEMA__.creator_subtitle_track (creator_video_draft_id);
+
+CREATE INDEX IF NOT EXISTS idx_creator_subtitle_track_language
+  ON __STREAM_STUDIO_SCHEMA__.creator_subtitle_track (language_code);
+
+CREATE INDEX IF NOT EXISTS idx_creator_publish_setting_publish_ref
+  ON __STREAM_STUDIO_SCHEMA__.creator_publish_setting (publish_ref);
+
+CREATE INDEX IF NOT EXISTS idx_creator_publish_setting_readiness_status
+  ON __STREAM_STUDIO_SCHEMA__.creator_publish_setting (readiness_status);
+
+CREATE INDEX IF NOT EXISTS idx_creator_publish_request_publish_ref_status_created
+  ON __STREAM_STUDIO_SCHEMA__.creator_publish_request (publish_ref, request_status, created_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_publish_request_execute_after
+  ON __STREAM_STUDIO_SCHEMA__.creator_publish_request (execute_after);
+
+CREATE INDEX IF NOT EXISTS idx_creator_runtime_job_type_state_next_retry
+  ON __STREAM_STUDIO_SCHEMA__.creator_runtime_job (job_type, state, next_retry_at);
+
+CREATE INDEX IF NOT EXISTS idx_creator_runtime_job_target_ref
+  ON __STREAM_STUDIO_SCHEMA__.creator_runtime_job (target_ref);
+
+CREATE UNIQUE INDEX IF NOT EXISTS uq_creator_runtime_job_idempotency
+  ON __STREAM_STUDIO_SCHEMA__.creator_runtime_job (job_type, target_ref, idempotency_key)
+  WHERE idempotency_key IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_creator_dead_letter_job_type_created
+  ON __STREAM_STUDIO_SCHEMA__.creator_dead_letter_entry (job_type, created_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_dead_letter_target_ref
+  ON __STREAM_STUDIO_SCHEMA__.creator_dead_letter_entry (target_ref);
+
+CREATE INDEX IF NOT EXISTS idx_creator_audit_event_target_ref_created
+  ON __STREAM_STUDIO_SCHEMA__.creator_audit_event (target_ref, created_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_audit_event_actor_ref_created
+  ON __STREAM_STUDIO_SCHEMA__.creator_audit_event (actor_ref, created_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_creator_audit_event_action_code_created
+  ON __STREAM_STUDIO_SCHEMA__.creator_audit_event (action_code, created_at DESC);
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_constraint
+    WHERE conname = 'fk_creator_project_member_project'
+  ) THEN
+    ALTER TABLE __STREAM_STUDIO_SCHEMA__.creator_project_member
+      ADD CONSTRAINT fk_creator_project_member_project
+      FOREIGN KEY (creator_project_id)
+      REFERENCES __STREAM_STUDIO_SCHEMA__.creator_project (creator_project_id);
+  END IF;
+END
+$$;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_constraint
+    WHERE conname = 'fk_creator_upload_job_project'
+  ) THEN
+    ALTER TABLE __STREAM_STUDIO_SCHEMA__.creator_upload_job
+      ADD CONSTRAINT fk_creator_upload_job_project
+      FOREIGN KEY (creator_project_id)
+      REFERENCES __STREAM_STUDIO_SCHEMA__.creator_project (creator_project_id);
+  END IF;
+END
+$$;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_constraint
+    WHERE conname = 'fk_creator_video_draft_project'
+  ) THEN
+    ALTER TABLE __STREAM_STUDIO_SCHEMA__.creator_video_draft
+      ADD CONSTRAINT fk_creator_video_draft_project
+      FOREIGN KEY (creator_project_id)
+      REFERENCES __STREAM_STUDIO_SCHEMA__.creator_project (creator_project_id);
+  END IF;
+END
+$$;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_constraint
+    WHERE conname = 'fk_creator_edit_marker_draft'
+  ) THEN
+    ALTER TABLE __STREAM_STUDIO_SCHEMA__.creator_edit_marker
+      ADD CONSTRAINT fk_creator_edit_marker_draft
+      FOREIGN KEY (creator_video_draft_id)
+      REFERENCES __STREAM_STUDIO_SCHEMA__.creator_video_draft (creator_video_draft_id);
+  END IF;
+END
+$$;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_constraint
+    WHERE conname = 'fk_creator_subtitle_track_draft'
+  ) THEN
+    ALTER TABLE __STREAM_STUDIO_SCHEMA__.creator_subtitle_track
+      ADD CONSTRAINT fk_creator_subtitle_track_draft
+      FOREIGN KEY (creator_video_draft_id)
+      REFERENCES __STREAM_STUDIO_SCHEMA__.creator_video_draft (creator_video_draft_id);
+  END IF;
+END
+$$;
+
+COMMIT;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153160_PHASE1_07_indexes_and_constraints.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153170_PHASE1_APPLY_REVIEW_RUNNER.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+# ============================================================
+# STREAM STUDIO PHASE 1 APPLY REVIEW RUNNER
+# ============================================================
+# Persona-side DB work uses PERSONA_DATABASE_URL
+# Review by 佐藤（DB担当） is required before real apply.
+# This runner renders __STREAM_STUDIO_SCHEMA__ placeholders
+# into temp files under $HOME/.tmp and then applies them by Method A.
+# Default schema is stream_studio, but you may override:
+#   export STREAM_STUDIO_SCHEMA=your_schema_name
+# ============================================================
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql"
+WORK="$HOME/.tmp/stream_studio_phase1_sql_apply"
+SCHEMA_NAME="${STREAM_STUDIO_SCHEMA:-stream_studio}"
+
+mkdir -p "$WORK"
+
+if [ -z "${PERSONA_DATABASE_URL:-}" ]; then
+  echo "ERROR: PERSONA_DATABASE_URL is not exported"
+  exit 1
+fi
+
+render_sql() {
+  src="$1"
+  dst="$2"
+  sed "s/__STREAM_STUDIO_SCHEMA__/$SCHEMA_NAME/g" "$src" > "$dst"
+}
+
+render_sql "$ROOT/153100_PHASE1_01_creator_project_and_member.sql" "$WORK/153100.sql"
+render_sql "$ROOT/153110_PHASE1_02_upload_job.sql" "$WORK/153110.sql"
+render_sql "$ROOT/153120_PHASE1_03_video_draft_marker_subtitle.sql" "$WORK/153120.sql"
+render_sql "$ROOT/153130_PHASE1_04_publish_setting_and_request.sql" "$WORK/153130.sql"
+render_sql "$ROOT/153140_PHASE1_05_runtime_and_dead_letter.sql" "$WORK/153140.sql"
+render_sql "$ROOT/153150_PHASE1_06_audit_event.sql" "$WORK/153150.sql"
+render_sql "$ROOT/153160_PHASE1_07_indexes_and_constraints.sql" "$WORK/153160.sql"
+
+echo "============================================================"
+echo "STREAM STUDIO PHASE 1 APPLY REVIEW RUNNER"
+echo "============================================================"
+echo "SCHEMA_NAME : $SCHEMA_NAME"
+echo "ROOT        : $ROOT"
+echo "WORK        : $WORK"
+echo "DB TARGET   : PERSONA_DATABASE_URL"
+echo "------------------------------------------------------------"
+echo "REVIEW REQUIRED: 佐藤（DB担当）"
+echo "------------------------------------------------------------"
+echo "[RENDERED FILES]"
+find "$WORK" -maxdepth 1 -type f | sort
+
+echo "------------------------------------------------------------"
+echo "[APPLY COMMAND PREVIEW]"
+cat <<SQLPREVIEW
+psql "\$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 <<'SQL'
+\\i $WORK/153100.sql
+\\i $WORK/153110.sql
+\\i $WORK/153120.sql
+\\i $WORK/153130.sql
+\\i $WORK/153140.sql
+\\i $WORK/153150.sql
+\\i $WORK/153160.sql
+SQL
+SQLPREVIEW
+
+# Uncomment only after review:
+# psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 <<SQL
+# \i $WORK/153100.sql
+# \i $WORK/153110.sql
+# \i $WORK/153120.sql
+# \i $WORK/153130.sql
+# \i $WORK/153140.sql
+# \i $WORK/153150.sql
+# \i $WORK/153160.sql
+# SQL
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153170_PHASE1_APPLY_REVIEW_RUNNER.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153180_PHASE1_PRE_APPLY_CHECKLIST.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 PRE-APPLY CHECKLIST
+# ============================================================
+
+status: sql-pre-apply
+layer: implementation-sql-checklist
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the final checklist immediately before real SQL apply.
+
+required_checks:
+- PERSONA_DATABASE_URL exported
+- target is Persona-side DB
+- STREAM_STUDIO_SCHEMA reviewed
+- 佐藤（DB担当） review completed
+- migration unit order accepted
+- no marketplace / membership / split sql mixed into phase 1 apply
+- audit table included
+- runtime table included
+- dead-letter table decision accepted
+- apply runner renders schema correctly into $HOME/.tmp
+- ON_ERROR_STOP enabled
+- rollback approach discussed for dev environment
+
+apply_order:
+- 153100
+- 153110
+- 153120
+- 153130
+- 153140
+- 153150
+- 153160
+
+fixed_statement:
+No real apply should start until all checks above are satisfied.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153180_PHASE1_PRE_APPLY_CHECKLIST.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153190_PHASE1_SQL_BUNDLE_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql"
+REPORT="$HOME/.tmp/stream_studio_phase1_sql_bundle_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE 1 SQL BUNDLE VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/153_OVERVIEW.md"
+require_file "$ROOT/153_INDEX.md"
+require_file "$ROOT/153000_STREAM_STUDIO_PHASE1_SQL_REAL_MIGRATION_BUNDLE.md"
+require_file "$ROOT/153100_PHASE1_01_creator_project_and_member.sql"
+require_file "$ROOT/153110_PHASE1_02_upload_job.sql"
+require_file "$ROOT/153120_PHASE1_03_video_draft_marker_subtitle.sql"
+require_file "$ROOT/153130_PHASE1_04_publish_setting_and_request.sql"
+require_file "$ROOT/153140_PHASE1_05_runtime_and_dead_letter.sql"
+require_file "$ROOT/153150_PHASE1_06_audit_event.sql"
+require_file "$ROOT/153160_PHASE1_07_indexes_and_constraints.sql"
+require_file "$ROOT/153170_PHASE1_APPLY_REVIEW_RUNNER.sh"
+require_file "$ROOT/153180_PHASE1_PRE_APPLY_CHECKLIST.md"
+require_file "$ROOT/153190_PHASE1_SQL_BUNDLE_VERIFY.sh"
+require_file "$ROOT/153199_PHASE1_SQL_BUNDLE_SUMMARY.md"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153190_PHASE1_SQL_BUNDLE_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153199_PHASE1_SQL_BUNDLE_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 SQL BUNDLE SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-sql-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the real SQL bundle for StreamStudio Phase 1.
+
+bundle_files:
+- 153100_PHASE1_01_creator_project_and_member.sql
+- 153110_PHASE1_02_upload_job.sql
+- 153120_PHASE1_03_video_draft_marker_subtitle.sql
+- 153130_PHASE1_04_publish_setting_and_request.sql
+- 153140_PHASE1_05_runtime_and_dead_letter.sql
+- 153150_PHASE1_06_audit_event.sql
+- 153160_PHASE1_07_indexes_and_constraints.sql
+- 153170_PHASE1_APPLY_REVIEW_RUNNER.sh
+- 153180_PHASE1_PRE_APPLY_CHECKLIST.md
+- 153190_PHASE1_SQL_BUNDLE_VERIFY.sh
+
+recommended_use_order:
+- read 153000
+- review 153100 to 153160
+- review 153180
+- run 153190
+- run 153170 for render/apply preview
+- apply only after review completion
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153199_PHASE1_SQL_BUNDLE_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153200_PHASE1_POST_APPLY_VERIFY_BUNDLE.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 POST-APPLY VERIFY BUNDLE
+# ============================================================
+
+status: sql-post-apply-verify-batch
+layer: implementation-db-verify
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the bundled read-only verification pack for StreamStudio Phase 1
+after real SQL apply.
+
+verify_scope:
+- schema existence
+- table existence
+- required column shape
+- required indexes
+- required foreign keys
+- audit table presence
+- runtime / dead-letter table presence
+
+verify_policy:
+- read-only verification only
+- uses PERSONA_DATABASE_URL
+- schema name is templated as __STREAM_STUDIO_SCHEMA__
+- no data mutation in this bundle
+- safe to run repeatedly
+
+bundle_files:
+- 153210_PHASE1_VERIFY_TABLE_PRESENCE.sql
+- 153220_PHASE1_VERIFY_COLUMN_SHAPE.sql
+- 153230_PHASE1_VERIFY_INDEX_AND_FK.sql
+- 153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql
+- 153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh
+- 153260_PHASE1_POST_APPLY_VERIFY_CHECKLIST.md
+- 153299_PHASE1_POST_APPLY_VERIFY_SUMMARY.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153200_PHASE1_POST_APPLY_VERIFY_BUNDLE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153210_PHASE1_VERIFY_TABLE_PRESENCE.sql -->
+-- ============================================================
+-- STREAM STUDIO PHASE 1 VERIFY TABLE PRESENCE
+-- ============================================================
+
+WITH expected(table_name) AS (
+  VALUES
+    ('creator_project'),
+    ('creator_project_member'),
+    ('creator_upload_job'),
+    ('creator_video_draft'),
+    ('creator_edit_marker'),
+    ('creator_subtitle_track'),
+    ('creator_publish_setting'),
+    ('creator_publish_request'),
+    ('creator_runtime_job'),
+    ('creator_dead_letter_entry'),
+    ('creator_audit_event')
+)
+SELECT
+  e.table_name,
+  CASE WHEN t.table_name IS NOT NULL THEN 'present' ELSE 'missing' END AS status
+FROM expected e
+LEFT JOIN information_schema.tables t
+  ON t.table_schema = '__STREAM_STUDIO_SCHEMA__'
+ AND t.table_name = e.table_name
+ORDER BY e.table_name;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153210_PHASE1_VERIFY_TABLE_PRESENCE.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153220_PHASE1_VERIFY_COLUMN_SHAPE.sql -->
+-- ============================================================
+-- STREAM STUDIO PHASE 1 VERIFY COLUMN SHAPE
+-- ============================================================
+
+WITH expected(table_name, column_name) AS (
+  VALUES
+    ('creator_project', 'creator_project_id'),
+    ('creator_project', 'project_code'),
+    ('creator_project', 'project_title'),
+    ('creator_project', 'project_status'),
+    ('creator_project', 'owner_creator_ref'),
+    ('creator_project', 'default_language'),
+    ('creator_project', 'version'),
+    ('creator_project', 'created_at'),
+    ('creator_project', 'updated_at'),
+
+    ('creator_project_member', 'creator_project_member_id'),
+    ('creator_project_member', 'creator_project_id'),
+    ('creator_project_member', 'member_ref'),
+    ('creator_project_member', 'role_code'),
+    ('creator_project_member', 'assignment_scope_summary'),
+    ('creator_project_member', 'joined_at'),
+    ('creator_project_member', 'updated_at'),
+
+    ('creator_upload_job', 'creator_upload_job_id'),
+    ('creator_upload_job', 'creator_project_id'),
+    ('creator_upload_job', 'source_file_name'),
+    ('creator_upload_job', 'file_size_bytes'),
+    ('creator_upload_job', 'mime_type'),
+    ('creator_upload_job', 'ingest_status'),
+    ('creator_upload_job', 'resumable_session_ref'),
+    ('creator_upload_job', 'created_at'),
+    ('creator_upload_job', 'updated_at'),
+
+    ('creator_video_draft', 'creator_video_draft_id'),
+    ('creator_video_draft', 'creator_project_id'),
+    ('creator_video_draft', 'asset_ref'),
+    ('creator_video_draft', 'draft_status'),
+    ('creator_video_draft', 'title'),
+    ('creator_video_draft', 'description'),
+    ('creator_video_draft', 'default_language'),
+    ('creator_video_draft', 'draft_version'),
+    ('creator_video_draft', 'version'),
+    ('creator_video_draft', 'created_at'),
+    ('creator_video_draft', 'updated_at'),
+
+    ('creator_edit_marker', 'creator_edit_marker_id'),
+    ('creator_edit_marker', 'creator_video_draft_id'),
+    ('creator_edit_marker', 'marker_type'),
+    ('creator_edit_marker', 'start_ms'),
+    ('creator_edit_marker', 'end_ms'),
+    ('creator_edit_marker', 'created_by'),
+    ('creator_edit_marker', 'created_at'),
+    ('creator_edit_marker', 'updated_at'),
+
+    ('creator_subtitle_track', 'creator_subtitle_track_id'),
+    ('creator_subtitle_track', 'creator_video_draft_id'),
+    ('creator_subtitle_track', 'language_code'),
+    ('creator_subtitle_track', 'source_type'),
+    ('creator_subtitle_track', 'subtitle_status'),
+    ('creator_subtitle_track', 'created_at'),
+    ('creator_subtitle_track', 'updated_at'),
+
+    ('creator_publish_setting', 'creator_publish_setting_id'),
+    ('creator_publish_setting', 'publish_ref'),
+    ('creator_publish_setting', 'visibility_code'),
+    ('creator_publish_setting', 'scheduled_publish_at'),
+    ('creator_publish_setting', 'publish_destination_summary'),
+    ('creator_publish_setting', 'rights_check_status'),
+    ('creator_publish_setting', 'readiness_status'),
+    ('creator_publish_setting', 'created_at'),
+    ('creator_publish_setting', 'updated_at'),
+
+    ('creator_publish_request', 'creator_publish_request_id'),
+    ('creator_publish_request', 'publish_ref'),
+    ('creator_publish_request', 'request_status'),
+    ('creator_publish_request', 'requested_by'),
+    ('creator_publish_request', 'request_channel'),
+    ('creator_publish_request', 'execute_after'),
+    ('creator_publish_request', 'created_at'),
+    ('creator_publish_request', 'updated_at'),
+
+    ('creator_runtime_job', 'creator_runtime_job_id'),
+    ('creator_runtime_job', 'job_type'),
+    ('creator_runtime_job', 'target_ref'),
+    ('creator_runtime_job', 'target_scope'),
+    ('creator_runtime_job', 'state'),
+    ('creator_runtime_job', 'attempt_count'),
+    ('creator_runtime_job', 'max_attempts'),
+    ('creator_runtime_job', 'priority_code'),
+    ('creator_runtime_job', 'scheduled_at'),
+    ('creator_runtime_job', 'next_retry_at'),
+    ('creator_runtime_job', 'created_at'),
+    ('creator_runtime_job', 'updated_at'),
+
+    ('creator_dead_letter_entry', 'creator_dead_letter_entry_id'),
+    ('creator_dead_letter_entry', 'original_job_id'),
+    ('creator_dead_letter_entry', 'job_type'),
+    ('creator_dead_letter_entry', 'target_ref'),
+    ('creator_dead_letter_entry', 'terminal_reason_code'),
+    ('creator_dead_letter_entry', 'recommended_operator_action'),
+    ('creator_dead_letter_entry', 'created_at'),
+    ('creator_dead_letter_entry', 'updated_at'),
+
+    ('creator_audit_event', 'creator_audit_event_id'),
+    ('creator_audit_event', 'actor_ref'),
+    ('creator_audit_event', 'role_code'),
+    ('creator_audit_event', 'action_code'),
+    ('creator_audit_event', 'result_code'),
+    ('creator_audit_event', 'scope_ref'),
+    ('creator_audit_event', 'target_ref'),
+    ('creator_audit_event', 'created_at')
+)
+SELECT
+  e.table_name,
+  e.column_name,
+  CASE WHEN c.column_name IS NOT NULL THEN 'present' ELSE 'missing' END AS status
+FROM expected e
+LEFT JOIN information_schema.columns c
+  ON c.table_schema = '__STREAM_STUDIO_SCHEMA__'
+ AND c.table_name = e.table_name
+ AND c.column_name = e.column_name
+ORDER BY e.table_name, e.column_name;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153220_PHASE1_VERIFY_COLUMN_SHAPE.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153230_PHASE1_VERIFY_INDEX_AND_FK.sql -->
+-- ============================================================
+-- STREAM STUDIO PHASE 1 VERIFY INDEX AND FK
+-- ============================================================
+
+WITH expected_indexes(index_name) AS (
+  VALUES
+    ('uq_creator_project_project_code'),
+    ('idx_creator_project_owner_status_updated'),
+    ('idx_creator_project_member_project'),
+    ('idx_creator_project_member_member_updated'),
+    ('idx_creator_upload_job_project_status_updated'),
+    ('idx_creator_upload_job_resumable_session_ref'),
+    ('idx_creator_video_draft_project_status_updated'),
+    ('idx_creator_video_draft_asset_ref'),
+    ('idx_creator_edit_marker_draft'),
+    ('idx_creator_subtitle_track_draft'),
+    ('idx_creator_subtitle_track_language'),
+    ('idx_creator_publish_setting_publish_ref'),
+    ('idx_creator_publish_setting_readiness_status'),
+    ('idx_creator_publish_request_publish_ref_status_created'),
+    ('idx_creator_publish_request_execute_after'),
+    ('idx_creator_runtime_job_type_state_next_retry'),
+    ('idx_creator_runtime_job_target_ref'),
+    ('uq_creator_runtime_job_idempotency'),
+    ('idx_creator_dead_letter_job_type_created'),
+    ('idx_creator_dead_letter_target_ref'),
+    ('idx_creator_audit_event_target_ref_created'),
+    ('idx_creator_audit_event_actor_ref_created'),
+    ('idx_creator_audit_event_action_code_created')
+),
+expected_constraints(conname) AS (
+  VALUES
+    ('fk_creator_project_member_project'),
+    ('fk_creator_upload_job_project'),
+    ('fk_creator_video_draft_project'),
+    ('fk_creator_edit_marker_draft'),
+    ('fk_creator_subtitle_track_draft')
+)
+SELECT
+  'index' AS item_type,
+  e.index_name AS item_name,
+  CASE WHEN i.indexname IS NOT NULL THEN 'present' ELSE 'missing' END AS status
+FROM expected_indexes e
+LEFT JOIN pg_indexes i
+  ON i.schemaname = '__STREAM_STUDIO_SCHEMA__'
+ AND i.indexname = e.index_name
+
+UNION ALL
+
+SELECT
+  'constraint' AS item_type,
+  e.conname AS item_name,
+  CASE WHEN c.conname IS NOT NULL THEN 'present' ELSE 'missing' END AS status
+FROM expected_constraints e
+LEFT JOIN pg_constraint c
+  ON c.conname = e.conname
+
+ORDER BY item_type, item_name;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153230_PHASE1_VERIFY_INDEX_AND_FK.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql -->
+-- ============================================================
+-- STREAM STUDIO PHASE 1 VERIFY AUDIT RUNTIME SHAPE
+-- ============================================================
+
+SELECT
+  'creator_runtime_job' AS table_name,
+  COUNT(*)::text AS row_count
+FROM __STREAM_STUDIO_SCHEMA__.creator_runtime_job
+
+UNION ALL
+
+SELECT
+  'creator_dead_letter_entry' AS table_name,
+  COUNT(*)::text AS row_count
+FROM __STREAM_STUDIO_SCHEMA__.creator_dead_letter_entry
+
+UNION ALL
+
+SELECT
+  'creator_audit_event' AS table_name,
+  COUNT(*)::text AS row_count
+FROM __STREAM_STUDIO_SCHEMA__.creator_audit_event
+
+ORDER BY table_name;
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+RUN_DB_VERIFY="${RUN_DB_VERIFY:-0}"
+SCHEMA_NAME="${STREAM_STUDIO_SCHEMA:-stream_studio}"
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql"
+WORK="$HOME/.tmp/stream_studio_phase1_post_apply_verify"
+REPORT="$HOME/.tmp/stream_studio_phase1_post_apply_verify_report.txt"
+
+mkdir -p "$WORK" "$HOME/.tmp"
+: > "$REPORT"
+
+render_sql() {
+  src="$1"
+  dst="$2"
+  sed "s/__STREAM_STUDIO_SCHEMA__/$SCHEMA_NAME/g" "$src" > "$dst"
+}
+
+need_file() {
+  if [ ! -f "$1" ]; then
+    echo "FAIL: missing file -> $1" | tee -a "$REPORT"
+    exit 1
+  fi
+}
+
+echo "============================================================" | tee -a "$REPORT"
+echo "STREAM STUDIO PHASE 1 POST-APPLY VERIFY RUNNER" | tee -a "$REPORT"
+echo "============================================================" | tee -a "$REPORT"
+echo "ROOT         : $ROOT" | tee -a "$REPORT"
+echo "WORK         : $WORK" | tee -a "$REPORT"
+echo "SCHEMA_NAME  : $SCHEMA_NAME" | tee -a "$REPORT"
+echo "RUN_DB_VERIFY: $RUN_DB_VERIFY" | tee -a "$REPORT"
+echo "DB TARGET    : PERSONA_DATABASE_URL" | tee -a "$REPORT"
+echo "------------------------------------------------------------" | tee -a "$REPORT"
+
+need_file "$ROOT/153210_PHASE1_VERIFY_TABLE_PRESENCE.sql"
+need_file "$ROOT/153220_PHASE1_VERIFY_COLUMN_SHAPE.sql"
+need_file "$ROOT/153230_PHASE1_VERIFY_INDEX_AND_FK.sql"
+need_file "$ROOT/153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql"
+
+render_sql "$ROOT/153210_PHASE1_VERIFY_TABLE_PRESENCE.sql" "$WORK/153210.sql"
+render_sql "$ROOT/153220_PHASE1_VERIFY_COLUMN_SHAPE.sql" "$WORK/153220.sql"
+render_sql "$ROOT/153230_PHASE1_VERIFY_INDEX_AND_FK.sql" "$WORK/153230.sql"
+render_sql "$ROOT/153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql" "$WORK/153240.sql"
+
+echo "[RENDERED FILES]" | tee -a "$REPORT"
+find "$WORK" -maxdepth 1 -type f | sort | tee -a "$REPORT"
+
+if [ "$RUN_DB_VERIFY" = "1" ]; then
+  if [ -z "${PERSONA_DATABASE_URL:-}" ]; then
+    echo "FAIL: PERSONA_DATABASE_URL is not exported" | tee -a "$REPORT"
+    exit 1
+  fi
+
+  echo "------------------------------------------------------------" | tee -a "$REPORT"
+  echo "[TABLE PRESENCE]" | tee -a "$REPORT"
+  psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 -f "$WORK/153210.sql" | tee -a "$REPORT"
+
+  echo "------------------------------------------------------------" | tee -a "$REPORT"
+  echo "[COLUMN SHAPE]" | tee -a "$REPORT"
+  psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 -f "$WORK/153220.sql" | tee -a "$REPORT"
+
+  echo "------------------------------------------------------------" | tee -a "$REPORT"
+  echo "[INDEX AND FK]" | tee -a "$REPORT"
+  psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 -f "$WORK/153230.sql" | tee -a "$REPORT"
+
+  echo "------------------------------------------------------------" | tee -a "$REPORT"
+  echo "[AUDIT AND RUNTIME COUNTS]" | tee -a "$REPORT"
+  psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 -f "$WORK/153240.sql" | tee -a "$REPORT"
+else
+  echo "------------------------------------------------------------" | tee -a "$REPORT"
+  echo "[REVIEW MODE ONLY]" | tee -a "$REPORT"
+  echo "Set RUN_DB_VERIFY=1 after real SQL apply." | tee -a "$REPORT"
+fi
+
+echo "------------------------------------------------------------" | tee -a "$REPORT"
+echo "REPORT: $REPORT" | tee -a "$REPORT"
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153260_PHASE1_POST_APPLY_VERIFY_CHECKLIST.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 POST-APPLY VERIFY CHECKLIST
+# ============================================================
+
+status: sql-post-apply-checklist
+layer: implementation-db-checklist
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the checklist immediately after real SQL apply.
+
+required_checks:
+- PERSONA_DATABASE_URL exported
+- STREAM_STUDIO_SCHEMA matches applied schema
+- table presence verify passed
+- column shape verify passed
+- index and FK verify passed
+- runtime and audit queries executed
+- no missing required table
+- no missing required column
+- no missing required index
+- no missing required FK
+
+review_notes:
+- this bundle is read-only
+- safe to rerun
+- capture report under ~/.tmp for handoff evidence
+
+fixed_statement:
+Post-apply verification is complete only when all structural checks pass.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153260_PHASE1_POST_APPLY_VERIFY_CHECKLIST.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153299_PHASE1_POST_APPLY_VERIFY_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 POST-APPLY VERIFY SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-db-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the post-apply verify bundle.
+
+bundle_files:
+- 153210_PHASE1_VERIFY_TABLE_PRESENCE.sql
+- 153220_PHASE1_VERIFY_COLUMN_SHAPE.sql
+- 153230_PHASE1_VERIFY_INDEX_AND_FK.sql
+- 153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql
+- 153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh
+- 153260_PHASE1_POST_APPLY_VERIFY_CHECKLIST.md
+
+recommended_use_order:
+- apply Phase 1 SQL
+- set STREAM_STUDIO_SCHEMA if needed
+- run 153250 with RUN_DB_VERIFY=1
+- archive report from ~/.tmp
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153299_PHASE1_POST_APPLY_VERIFY_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153_INDEX.md -->
+# ============================================================
+# 153 PHASE1 SQL INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 153.phase1-sql
+owner: Boss
+prepared_by: Zero
+
+files:
+- 153000_STREAM_STUDIO_PHASE1_SQL_REAL_MIGRATION_BUNDLE.md
+- 153100_PHASE1_01_creator_project_and_member.sql
+- 153110_PHASE1_02_upload_job.sql
+- 153120_PHASE1_03_video_draft_marker_subtitle.sql
+- 153130_PHASE1_04_publish_setting_and_request.sql
+- 153140_PHASE1_05_runtime_and_dead_letter.sql
+- 153150_PHASE1_06_audit_event.sql
+- 153160_PHASE1_07_indexes_and_constraints.sql
+- 153170_PHASE1_APPLY_REVIEW_RUNNER.sh
+- 153180_PHASE1_PRE_APPLY_CHECKLIST.md
+- 153190_PHASE1_SQL_BUNDLE_VERIFY.sh
+- 153199_PHASE1_SQL_BUNDLE_SUMMARY.md
+- 153200_PHASE1_POST_APPLY_VERIFY_BUNDLE.md
+- 153210_PHASE1_VERIFY_TABLE_PRESENCE.sql
+- 153220_PHASE1_VERIFY_COLUMN_SHAPE.sql
+- 153230_PHASE1_VERIFY_INDEX_AND_FK.sql
+- 153240_PHASE1_VERIFY_AUDIT_RUNTIME.sql
+- 153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh
+- 153260_PHASE1_POST_APPLY_VERIFY_CHECKLIST.md
+- 153299_PHASE1_POST_APPLY_VERIFY_SUMMARY.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153_OVERVIEW.md -->
+# ============================================================
+# 153 PHASE1 SQL OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 153.phase1-sql
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the real-SQL migration unit bundle for StreamStudio Phase 1.
+The SQL is schema-templated using __STREAM_STUDIO_SCHEMA__ and is intended
+for review first, then explicit apply through the provided runner.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/153.phase1-sql/153_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 PRE-IMPLEMENTATION FINAL DESIGN FREEZE
+# ============================================================
+
+status: final-freeze
+layer: implementation-freeze
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes the final design position immediately before Phase 1 real implementation discussion.
+
+# ============================================================
+# 1. FINAL PHASE 1 POSITION
+# ============================================================
+
+phase_1_is_fixed_as:
+- creator project base
+- upload queue base
+- video draft base
+- metadata editing base
+- thumbnail assignment base
+- subtitle base
+- edit marker base
+- publish setting base
+- publish readiness base
+- publish request base
+- scheduled publish base
+- audit event base
+- runtime job base
+- dead-letter visibility base
+
+phase_1_is_not:
+- marketplace implementation phase
+- paid video implementation phase
+- membership implementation phase
+- split implementation phase
+- external connector full implementation phase
+- settlement implementation phase
+
+# ============================================================
+# 2. FROZEN CONTRACT SET
+# ============================================================
+
+frozen_contract_set:
+- screen transition exact table
+- project / upload / draft / publish api exact docs
+- validation and error code exact table
+- permission matrix exact
+- runtime retry and dead-letter exact
+- enum ledger
+- field dictionary
+- audit event code ledger
+- db-side mapping decision memo
+- event naming ledger
+- ui copy key ledger
+- implementation dependency memo
+- phase 1 backend / ui / db / test workpackages
+- phase 1 real sql migration bundle
+- phase 1 post-apply verify bundle
+
+freeze_rule:
+No new Phase 1 domain should be inserted after this point
+unless it is clearly additive and non-disruptive.
+
+# ============================================================
+# 3. FINAL PHASE 1 OUTPUT TARGET
+# ============================================================
+
+phase_1_output_target:
+- a creator-side preparation and publish-base implementation slice
+- auditable and scope-governed
+- runtime-visible
+- sql-ready by migration unit
+- not monetization-complete
+- not membership-complete
+- not collaboration-complete beyond minimum needed structure
+
+# ============================================================
+# 4. NON-REOPEN RULE
+# ============================================================
+
+non_reopen_rules:
+- do not reopen architecture family boundaries casually
+- do not move marketplace into phase 1
+- do not move membership into phase 1
+- do not merge publish and listing flows
+- do not defer audit and runtime visibility out of phase 1
+- do not rename frozen enum values
+
+# ============================================================
+# 5. FINAL FREEZE STATEMENT
+# ============================================================
+
+fixed_statement:
+StreamStudio Phase 1 design is frozen as a creator asset preparation
+and publish-base slice with explicit audit and runtime visibility,
+and without marketplace, membership, split, or settlement execution scope.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154010_STREAM_STUDIO_PHASE1_HANDOFF_READING_ORDER.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 HANDOFF READING ORDER
+# ============================================================
+
+status: reading-order
+layer: implementation-handoff
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the recommended reading order before any real implementation planning begins.
+
+reading_order:
+
+  block_1_final_position:
+    - 121_STREAM_STUDIO_IMPLEMENTATION_READINESS_FINAL_FREEZE_MEMO.md
+    - 154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md
+
+  block_2_exact_contracts:
+    - 051_STREAM_STUDIO_SCREEN_STATE_TRANSITION_EXACT_TABLE.md
+    - 051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md
+    - 052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md
+    - 054_STREAM_STUDIO_PUBLISH_API_EXACT.md
+    - 059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md
+    - 081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md
+    - 071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md
+
+  block_3_ledgers:
+    - 122_STREAM_STUDIO_ENUM_LEDGER.md
+    - 123_STREAM_STUDIO_FIELD_DICTIONARY.md
+    - 124_STREAM_STUDIO_AUDIT_EVENT_CODE_LEDGER.md
+    - 126_STREAM_STUDIO_EVENT_NAMING_LEDGER.md
+    - 127_STREAM_STUDIO_UI_COPY_KEY_LEDGER.md
+    - 125_STREAM_STUDIO_DB_SIDE_MAPPING_DECISION_MEMO.md
+
+  block_4_phase1_workpackages:
+    - 131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md
+    - 132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md
+    - 133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md
+    - 134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md
+    - 135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md
+    - 136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md
+    - 141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md
+
+  block_5_sql_and_verify:
+    - 147_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_BATCH_PACK.md
+    - 148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md
+    - 149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md
+    - 150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md
+    - 151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md
+    - 152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md
+    - 153000_STREAM_STUDIO_PHASE1_SQL_REAL_MIGRATION_BUNDLE.md
+    - 153200_PHASE1_POST_APPLY_VERIFY_BUNDLE.md
+
+reading_intent:
+- first understand the frozen position
+- then understand exact contracts
+- then understand ledgers
+- then understand phase 1 work split
+- finally understand sql and verification discipline
+
+fixed_statement:
+The reading order above is the canonical handoff order before real implementation planning.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154010_STREAM_STUDIO_PHASE1_HANDOFF_READING_ORDER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154020_STREAM_STUDIO_PHASE1_SCOPE_BOUNDARY_FINAL_MEMO.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 SCOPE BOUNDARY FINAL MEMO
+# ============================================================
+
+status: boundary-memo
+layer: implementation-boundary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the final Phase 1 in-scope / out-of-scope boundary.
+
+phase_1_in_scope:
+- project create / update / detail
+- upload session create
+- upload status read
+- upload complete
+- upload retry
+- video draft create
+- metadata update
+- thumbnail assignment
+- subtitle track create
+- trim / cut marker upsert
+- publish setting upsert
+- publish readiness validation
+- publish request create
+- publish schedule create
+- publish history read
+- runtime job registration for phase 1 job types
+- dead-letter visibility base
+- audit event persistence
+
+phase_1_out_of_scope:
+- marketplace listing draft execution
+- paid offer execution
+- membership program execution
+- tier / benefit / membership rule execution
+- split draft / negotiation / activation execution
+- settlement reference execution
+- external push dispatch execution
+- connector audit browsing surface
+- advanced review workflow execution beyond minimum already designed
+
+boundary_rules:
+- out-of-scope domains may remain referenced in design only
+- out-of-scope domains may not enter phase 1 sql
+- out-of-scope domains may not enter phase 1 endpoint implementation list
+- out-of-scope domains may not appear in phase 1 done definition
+
+fixed_statement:
+Phase 1 boundary is frozen and excludes commerce, membership,
+split, settlement, and full connector execution scope.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154020_STREAM_STUDIO_PHASE1_SCOPE_BOUNDARY_FINAL_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154030_STREAM_STUDIO_PHASE1_GO_STOP_GATE_FINAL.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 GO STOP GATE FINAL
+# ============================================================
+
+status: gate-memo
+layer: implementation-gate
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines explicit GO / STOP gates for moving from design-only into real implementation planning.
+
+go_conditions:
+- phase 1 frozen scope accepted
+- exact api docs accepted
+- screen transition exact accepted
+- permission matrix accepted
+- runtime and dead-letter exact accepted
+- enum ledger accepted
+- field dictionary accepted
+- audit event code ledger accepted
+- db-side mapping direction accepted
+- phase 1 sql-pre-ddl pack accepted
+- phase 1 real sql bundle accepted
+- phase 1 post-apply verify bundle accepted
+
+stop_conditions:
+- request to add marketplace execution into phase 1
+- request to add membership execution into phase 1
+- request to merge publish and listing state
+- request to remove audit from phase 1
+- request to remove runtime job visibility from phase 1
+- enum drift detected
+- api contract drift detected
+- sql table scope drift detected
+
+gate_judgment:
+- if all go_conditions are true and no stop_conditions are triggered, implementation planning may start
+- if any stop_condition is triggered, design must be explicitly revised first
+
+fixed_statement:
+GO/STOP judgment for Phase 1 is contract-based and scope-based, not intuition-based.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154030_STREAM_STUDIO_PHASE1_GO_STOP_GATE_FINAL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154040_STREAM_STUDIO_PHASE1_NON_BLOCKING_REMAINING_ITEMS_LEDGER.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 NON-BLOCKING REMAINING ITEMS LEDGER
+# ============================================================
+
+status: remaining-items-ledger
+layer: implementation-remaining
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Separates true blockers from non-blocking remaining items before real implementation planning.
+
+non_blocking_remaining_items:
+- final concrete backend framework choice
+- final concrete ui framework choice
+- final test framework choice
+- physical id generation mechanism choice
+- physical schema name choice
+- final index naming style
+- final logger / tracing library choice
+- final UI component library binding
+- final exact copy text population in ja / en
+- final metric dashboard technology choice
+
+why_non_blocking:
+- these change execution method, not core design meaning
+- all are downstream implementation choices after design freeze
+
+actual_blockers_if_unresolved:
+- PERSONA_DATABASE_URL missing in real execution environment
+- disagreement on phase 1 scope boundary
+- disagreement on frozen api exact contracts
+- disagreement on db-side mapping direction
+- disagreement on audit and runtime inclusion in phase 1
+
+fixed_statement:
+Items above are not design blockers and should not be mistaken for architecture incompleteness.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154040_STREAM_STUDIO_PHASE1_NON_BLOCKING_REMAINING_ITEMS_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154099_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 FINAL HANDOFF SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-handoff-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the final pre-implementation design handoff pack for Phase 1.
+
+pack_files:
+- 154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md
+- 154010_STREAM_STUDIO_PHASE1_HANDOFF_READING_ORDER.md
+- 154020_STREAM_STUDIO_PHASE1_SCOPE_BOUNDARY_FINAL_MEMO.md
+- 154030_STREAM_STUDIO_PHASE1_GO_STOP_GATE_FINAL.md
+- 154040_STREAM_STUDIO_PHASE1_NON_BLOCKING_REMAINING_ITEMS_LEDGER.md
+- 154190_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_VERIFY.sh
+
+recommended_use_order:
+- read 154000
+- read 154020
+- read 154030
+- read 154040
+- read 154010
+- run 154190
+
+fixed_statement:
+This pack is the final design-only handoff pack before any real implementation planning discussion.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154099_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154190_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff"
+REPORT="$HOME/.tmp/stream_studio_phase1_final_handoff_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE 1 FINAL HANDOFF VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/154_OVERVIEW.md"
+require_file "$ROOT/154_INDEX.md"
+require_file "$ROOT/154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md"
+require_file "$ROOT/154010_STREAM_STUDIO_PHASE1_HANDOFF_READING_ORDER.md"
+require_file "$ROOT/154020_STREAM_STUDIO_PHASE1_SCOPE_BOUNDARY_FINAL_MEMO.md"
+require_file "$ROOT/154030_STREAM_STUDIO_PHASE1_GO_STOP_GATE_FINAL.md"
+require_file "$ROOT/154040_STREAM_STUDIO_PHASE1_NON_BLOCKING_REMAINING_ITEMS_LEDGER.md"
+require_file "$ROOT/154099_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_SUMMARY.md"
+require_file "$ROOT/154190_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154190_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154_INDEX.md -->
+# ============================================================
+# 154 PHASE1 FINAL HANDOFF INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 154.phase1-final-handoff
+owner: Boss
+prepared_by: Zero
+
+files:
+- 154000_STREAM_STUDIO_PHASE1_PRE_IMPLEMENTATION_FINAL_DESIGN_FREEZE.md
+- 154010_STREAM_STUDIO_PHASE1_HANDOFF_READING_ORDER.md
+- 154020_STREAM_STUDIO_PHASE1_SCOPE_BOUNDARY_FINAL_MEMO.md
+- 154030_STREAM_STUDIO_PHASE1_GO_STOP_GATE_FINAL.md
+- 154040_STREAM_STUDIO_PHASE1_NON_BLOCKING_REMAINING_ITEMS_LEDGER.md
+- 154099_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_SUMMARY.md
+- 154190_STREAM_STUDIO_PHASE1_FINAL_HANDOFF_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154_OVERVIEW.md -->
+# ============================================================
+# 154 PHASE1 FINAL HANDOFF OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 154.phase1-final-handoff
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the final pre-implementation design handoff pack for StreamStudio Phase 1.
+This folder freezes reading order, scope boundary, GO/STOP gates,
+and non-blocking remaining items before real implementation begins.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/154.phase1-final-handoff/154_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155000_STREAM_STUDIO_PHASE2_TO_PHASE6_IMPLEMENTATION_ROADMAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE2 TO PHASE6 IMPLEMENTATION ROADMAP
+# ============================================================
+
+status: roadmap-freeze
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the post-phase1 implementation roadmap for StreamStudio as a design-only plan.
+
+roadmap_position:
+- phase 1 remains creator asset preparation and publish base
+- phase 2 extends workflow governance
+- phase 3 extends marketplace and paid video
+- phase 4 extends membership
+- phase 5 extends collaborator authority, split, and settlement visibility
+- phase 6 extends external push and operations hardening
+
+frozen_phase_order:
+- phase_2_review_approval_notification
+- phase_3_marketplace_and_paid_video
+- phase_4_membership
+- phase_5_collaborator_split_settlement
+- phase_6_external_push_and_ops_hardening
+
+phase_order_principle:
+- governance before commerce expansion
+- commerce before membership refinement
+- membership before advanced split/settlement refinement
+- external push hardening after canonical internal flows are stable
+
+fixed_statement:
+Phases 2 through 6 are frozen as the post-phase1 expansion order
+for design planning purposes.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155000_STREAM_STUDIO_PHASE2_TO_PHASE6_IMPLEMENTATION_ROADMAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE2 REVIEW APPROVAL NOTIFICATION ROADMAP
+# ============================================================
+
+status: roadmap-freeze
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the design roadmap for Phase 2.
+
+phase_2_goal:
+Complete the internal workflow loop after Phase 1 by adding
+review, revision, approval, and notification execution.
+
+phase_2_scope:
+- review comment execution
+- revision request execution
+- approval request execution
+- approval decision execution
+- notification inbox execution
+- overdue / blocked workflow visibility
+- stale approval expiration base
+- minimum mobile quick actions for review / approval
+
+phase_2_primary_outputs:
+- review workspace functional slice
+- approval workflow functional slice
+- notification functional slice
+- audit coverage for review and approval events
+- runtime support for reminder / expiration jobs
+
+phase_2_dependencies:
+- phase 1 project / draft / publish base completed
+- permission matrix already fixed
+- runtime job base already present
+- audit event base already present
+
+phase_2_go_conditions:
+- phase 1 blocker visibility works
+- approval type and status enums remain frozen
+- audit emission path is stable
+- notification event fanout direction is accepted
+
+phase_2_non_goals:
+- marketplace execution
+- membership execution
+- split activation
+- external connector dispatch
+
+fixed_statement:
+Phase 2 is the workflow-governance completion phase after Phase 1.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE3 MARKETPLACE AND PAID VIDEO ROADMAP
+# ============================================================
+
+status: roadmap-freeze
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the design roadmap for Phase 3.
+
+phase_3_goal:
+Introduce creator-side marketplace listing and one-time paid video capability.
+
+phase_3_scope:
+- marketplace listing draft execution
+- listing validation execution
+- listing activation / delist execution
+- paid video offer execution
+- access mode binding execution
+- category / price / release rule enforcement
+- listing approval bridge where policy requires
+- listing readiness and failure visibility
+
+phase_3_primary_outputs:
+- marketplace listing functional slice
+- paid access functional slice
+- marketplace audit event coverage
+- listing runtime scheduling base
+
+phase_3_dependencies:
+- phase 2 review / approval execution stable
+- publish base stable
+- money formatting core accepted
+- access_mode and offer_type contracts frozen
+
+phase_3_go_conditions:
+- publish and listing remain distinct states
+- paid listing cannot bypass split dependency policy when required
+- listing validation errors remain distinct from publish errors
+- category and access mode mapping are accepted
+
+phase_3_non_goals:
+- membership program execution
+- split negotiation and activation execution
+- external push execution
+- settlement synchronization
+
+fixed_statement:
+Phase 3 is the creator commerce-entry phase centered on marketplace and paid video.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE4 MEMBERSHIP ROADMAP
+# ============================================================
+
+status: roadmap-freeze
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the design roadmap for Phase 4.
+
+phase_4_goal:
+Introduce creator membership program management and member-only access logic.
+
+phase_4_scope:
+- membership program execution
+- tier execution
+- benefit execution
+- membership content rule execution
+- member early-access then public rule execution
+- membership activation / pause / resume / end execution
+- entitlement reconciliation direction
+
+phase_4_primary_outputs:
+- membership manager functional slice
+- membership program governance slice
+- membership-specific runtime jobs
+- membership audit event coverage
+
+phase_4_dependencies:
+- phase 3 access mode model stable
+- membership-related enums already frozen
+- runtime job framework stable
+- approval flow stable
+
+phase_4_go_conditions:
+- membership-only and paid mode conflict policy accepted
+- early-access expiration direction accepted
+- entitlement ownership direction accepted
+- membership rule conflicts remain distinct from listing conflicts
+
+phase_4_non_goals:
+- split activation completion
+- settlement sync completion
+- external push dispatch
+
+fixed_statement:
+Phase 4 is the membership and entitlement execution phase.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE5 COLLABORATOR SPLIT SETTLEMENT ROADMAP
+# ============================================================
+
+status: roadmap-freeze
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the design roadmap for Phase 5.
+
+phase_5_goal:
+Complete advanced collaborator authority handling,
+revenue split governance, and settlement reference visibility.
+
+phase_5_scope:
+- collaborator manager advanced scope editing
+- split draft execution
+- split party line execution
+- negotiation log execution
+- split approval execution
+- split activation execution
+- settlement reference visibility execution
+- monetized workflow blocking based on split completeness
+
+phase_5_primary_outputs:
+- split editor functional slice
+- negotiation history slice
+- settlement reference visibility slice
+- split audit and approval coverage
+
+phase_5_dependencies:
+- phase 3 paid video model stable
+- phase 4 membership conflicts stable
+- money policy stable
+- approval framework stable
+
+phase_5_go_conditions:
+- required party rules accepted
+- percentage / fixed fee policy accepted
+- overlapping active split protection accepted
+- settlement source mapping accepted
+
+phase_5_non_goals:
+- external push dispatch completion
+- downstream reconciliation beyond minimum internal references
+
+fixed_statement:
+Phase 5 is the monetization governance completion phase for collaborator authority,
+split, and settlement visibility.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE6 EXTERNAL PUSH AND OPS HARDENING ROADMAP
+# ============================================================
+
+status: roadmap-freeze
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the design roadmap for Phase 6.
+
+phase_6_goal:
+Complete external platform push execution and operational hardening.
+
+phase_6_scope:
+- connector binding execution
+- external push dispatcher execution
+- external push callback / reconciliation execution
+- retry and dead-letter operator surfaces
+- observability completion
+- runtime operator visibility expansion
+- audit reconstruction support completion
+
+phase_6_primary_outputs:
+- external push functional slice
+- connector-facing retry / dead-letter slice
+- reconciliation and operator attention slice
+- metrics and observability completion
+
+phase_6_dependencies:
+- internal publish stable
+- runtime job framework stable
+- dead-letter base already present
+- audit reconstruction direction accepted
+
+phase_6_go_conditions:
+- external push must not be merged with canonical publish success
+- retryability classification accepted
+- operator surfaces accepted
+- downstream failure visibility accepted
+
+phase_6_non_goals:
+- reopening earlier phase scope
+- moving core commerce logic into connector logic
+
+fixed_statement:
+Phase 6 is the connector and operations-hardening phase after internal flows are stable.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155090_STREAM_STUDIO_CROSS_PHASE_DEPENDENCY_AND_RELEASE_ORDER.md -->
+# ============================================================
+# STREAM STUDIO CROSS PHASE DEPENDENCY AND RELEASE ORDER
+# ============================================================
+
+status: roadmap-freeze
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines cross-phase dependencies and release order after Phase 1.
+
+cross_phase_dependencies:
+- phase 2 depends on phase 1
+- phase 3 depends on stable phase 2 approval path
+- phase 4 depends on stable phase 3 access mode and commerce model
+- phase 5 depends on stable phase 3 monetization model and phase 4 conflict rules
+- phase 6 depends on stable internal publish and runtime operations from earlier phases
+
+release_order:
+- release_phase_1_internal_creator_base
+- release_phase_2_internal_workflow_governance
+- release_phase_3_marketplace_and_paid_video
+- release_phase_4_membership
+- release_phase_5_split_and_settlement_visibility
+- release_phase_6_external_push_and_ops_hardening
+
+do_not_reverse_rules:
+- do not ship membership before marketplace / paid access model is stable
+- do not ship full external push before internal publish and dead-letter visibility are stable
+- do not ship advanced split execution before monetized source models are stable
+
+fixed_statement:
+The cross-phase dependency and release order above is frozen for roadmap planning.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155090_STREAM_STUDIO_CROSS_PHASE_DEPENDENCY_AND_RELEASE_ORDER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155099_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE2 TO PHASE6 ROADMAP SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-roadmap-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the post-phase1 roadmap pack.
+
+pack_files:
+- 155000_STREAM_STUDIO_PHASE2_TO_PHASE6_IMPLEMENTATION_ROADMAP.md
+- 155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md
+- 155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md
+- 155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md
+- 155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md
+- 155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md
+- 155090_STREAM_STUDIO_CROSS_PHASE_DEPENDENCY_AND_RELEASE_ORDER.md
+- 155190_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_VERIFY.sh
+
+recommended_use_order:
+- read 155000
+- read 155010 to 155050
+- read 155090
+- run 155190
+
+fixed_statement:
+This pack is the canonical post-phase1 roadmap design set.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155099_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155190_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap"
+REPORT="$HOME/.tmp/stream_studio_phase2_to_phase6_roadmap_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE2 TO PHASE6 ROADMAP VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/155_OVERVIEW.md"
+require_file "$ROOT/155_INDEX.md"
+require_file "$ROOT/155000_STREAM_STUDIO_PHASE2_TO_PHASE6_IMPLEMENTATION_ROADMAP.md"
+require_file "$ROOT/155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md"
+require_file "$ROOT/155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md"
+require_file "$ROOT/155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md"
+require_file "$ROOT/155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md"
+require_file "$ROOT/155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md"
+require_file "$ROOT/155090_STREAM_STUDIO_CROSS_PHASE_DEPENDENCY_AND_RELEASE_ORDER.md"
+require_file "$ROOT/155099_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_SUMMARY.md"
+require_file "$ROOT/155190_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155190_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155_INDEX.md -->
+# ============================================================
+# 155 PHASE2 TO PHASE6 ROADMAP INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 155.phase2-to-phase6-roadmap
+owner: Boss
+prepared_by: Zero
+
+files:
+- 155000_STREAM_STUDIO_PHASE2_TO_PHASE6_IMPLEMENTATION_ROADMAP.md
+- 155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md
+- 155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md
+- 155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md
+- 155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md
+- 155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md
+- 155090_STREAM_STUDIO_CROSS_PHASE_DEPENDENCY_AND_RELEASE_ORDER.md
+- 155099_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_SUMMARY.md
+- 155190_STREAM_STUDIO_PHASE2_TO_PHASE6_ROADMAP_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155_OVERVIEW.md -->
+# ============================================================
+# 155 PHASE2 TO PHASE6 ROADMAP OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 155.phase2-to-phase6-roadmap
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the design-only roadmap pack for StreamStudio phases 2 through 6.
+This folder fixes the post-phase1 expansion order, dependencies, and GO gates.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/155.phase2-to-phase6-roadmap/155_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156000_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_ATLAS.md -->
+# ============================================================
+# STREAM STUDIO PHASE1 TO PHASE6 MASTER ROADMAP ATLAS
+# ============================================================
+
+status: roadmap-atlas
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the consolidated master roadmap for StreamStudio phases 1 through 6.
+
+# ============================================================
+# 1. MASTER POSITION
+# ============================================================
+
+master_position:
+- phase 1 establishes creator asset preparation and publish base
+- phase 2 establishes workflow governance and approval execution
+- phase 3 establishes marketplace and paid video execution
+- phase 4 establishes membership and entitlement execution
+- phase 5 establishes collaborator authority refinement, split governance, and settlement visibility
+- phase 6 establishes external push execution and operations hardening
+
+master_order_principle:
+- base before governance
+- governance before commerce
+- commerce before membership refinement
+- membership before advanced split / settlement refinement
+- internal canonical flows before external connector completion
+
+# ============================================================
+# 2. PHASE ATLAS
+# ============================================================
+
+phase_atlas:
+
+  phase_1:
+    title:
+      - creator asset preparation and publish base
+    core_scope:
+      - project
+      - upload
+      - video draft
+      - metadata
+      - thumbnail
+      - subtitle
+      - edit marker
+      - publish setting
+      - publish readiness
+      - publish request
+      - scheduled publish
+      - audit base
+      - runtime base
+    outcome:
+      - creator-side internal production base becomes implementation-ready
+
+  phase_2:
+    title:
+      - review, approval, and notification execution
+    core_scope:
+      - review comment
+      - revision request
+      - approval request
+      - approval decision
+      - notification inbox
+      - reminder / expiration runtime support
+    outcome:
+      - internal workflow governance loop is closed
+
+  phase_3:
+    title:
+      - marketplace and paid video execution
+    core_scope:
+      - marketplace listing
+      - listing validation
+      - listing activation / delist
+      - paid offer
+      - access mode binding
+    outcome:
+      - creator commerce entry becomes executable
+
+  phase_4:
+    title:
+      - membership and entitlement execution
+    core_scope:
+      - membership program
+      - tier
+      - benefit
+      - membership content rule
+      - member early access then public
+    outcome:
+      - recurring access model becomes executable
+
+  phase_5:
+    title:
+      - collaborator authority refinement, split, and settlement visibility
+    core_scope:
+      - collaborator scope refinement
+      - split draft
+      - negotiation log
+      - split approval
+      - split activation
+      - settlement reference visibility
+    outcome:
+      - monetization governance becomes executable
+
+  phase_6:
+    title:
+      - external push and operations hardening
+    core_scope:
+      - connector binding
+      - external push dispatcher
+      - callback reconciliation
+      - retry / dead-letter operator surfaces
+      - observability completion
+    outcome:
+      - downstream platform push and ops hardening become executable
+
+# ============================================================
+# 3. MASTER NON-REOPEN RULE
+# ============================================================
+
+non_reopen_rules:
+- do not pull phase 3 commerce execution into phase 1
+- do not pull phase 4 membership execution into phase 3 prematurely
+- do not pull phase 6 connector hardening ahead of stable internal publish
+- do not merge publish and listing states
+- do not merge listing and membership logic implicitly
+- do not remove audit or runtime visibility from earlier phases
+
+# ============================================================
+# 4. MASTER FIXED STATEMENT
+# ============================================================
+
+fixed_statement:
+This atlas freezes the cross-phase roadmap of StreamStudio
+from phase 1 through phase 6 as a design-only master sequence.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156000_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_ATLAS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156010_STREAM_STUDIO_PHASE_COMPARISON_MATRIX.md -->
+# ============================================================
+# STREAM STUDIO PHASE COMPARISON MATRIX
+# ============================================================
+
+status: roadmap-matrix
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Compares phases 1 through 6 side by side.
+
+comparison_matrix:
+
+  phase_1:
+    primary_theme: creator_base
+    internal_governance_level: base
+    commerce_level: none
+    membership_level: none
+    split_level: none
+    connector_level: none
+    runtime_level: base
+    audit_level: base
+
+  phase_2:
+    primary_theme: workflow_governance
+    internal_governance_level: strong
+    commerce_level: none
+    membership_level: none
+    split_level: none
+    connector_level: none
+    runtime_level: review_reminder_base
+    audit_level: approval_and_review
+
+  phase_3:
+    primary_theme: marketplace_commerce
+    internal_governance_level: inherited
+    commerce_level: strong
+    membership_level: preparatory_only
+    split_level: dependency_gate_only
+    connector_level: none
+    runtime_level: listing_schedule_base
+    audit_level: commerce_and_listing
+
+  phase_4:
+    primary_theme: membership_entitlement
+    internal_governance_level: inherited
+    commerce_level: inherited
+    membership_level: strong
+    split_level: none
+    connector_level: none
+    runtime_level: entitlement_and_early_access
+    audit_level: membership
+
+  phase_5:
+    primary_theme: monetization_governance
+    internal_governance_level: collaborator_refinement
+    commerce_level: inherited
+    membership_level: inherited
+    split_level: strong
+    connector_level: none
+    runtime_level: moderate
+    audit_level: split_and_settlement_visibility
+
+  phase_6:
+    primary_theme: connector_and_ops_hardening
+    internal_governance_level: inherited
+    commerce_level: inherited
+    membership_level: inherited
+    split_level: inherited
+    connector_level: strong
+    runtime_level: strongest
+    audit_level: ops_and_reconciliation
+
+comparison_conclusion:
+- phase 1 builds base
+- phase 2 governs it
+- phase 3 monetizes one-time access
+- phase 4 monetizes recurring access
+- phase 5 governs multi-party revenue
+- phase 6 operationalizes downstream delivery
+
+fixed_statement:
+The comparison matrix above is the canonical side-by-side view of StreamStudio phases.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156010_STREAM_STUDIO_PHASE_COMPARISON_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156020_STREAM_STUDIO_DEPENDENCY_HEATMAP_AND_CHAIN.md -->
+# ============================================================
+# STREAM STUDIO DEPENDENCY HEATMAP AND CHAIN
+# ============================================================
+
+status: roadmap-dependency
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the dependency intensity and chain across phases.
+
+dependency_chain:
+- phase_1 -> phase_2
+- phase_2 -> phase_3
+- phase_3 -> phase_4
+- phase_3 -> phase_5
+- phase_4 -> phase_5
+- phase_1 -> phase_6
+- phase_2 -> phase_6
+- phase_3 -> phase_6
+
+dependency_heatmap:
+
+  phase_2_depends_on_phase_1:
+    intensity: very_high
+    reason:
+      - review and approval need project, draft, and publish base
+
+  phase_3_depends_on_phase_2:
+    intensity: high
+    reason:
+      - listing approval and governance must be stable first
+
+  phase_4_depends_on_phase_3:
+    intensity: high
+    reason:
+      - access mode and commerce concepts must be stable before membership execution
+
+  phase_5_depends_on_phase_3:
+    intensity: high
+    reason:
+      - split rules require monetized source models
+
+  phase_5_depends_on_phase_4:
+    intensity: medium
+    reason:
+      - membership conflict rules can affect monetization governance
+
+  phase_6_depends_on_phase_1:
+    intensity: very_high
+    reason:
+      - canonical publish base is prerequisite for external push
+
+  phase_6_depends_on_phase_2:
+    intensity: medium
+    reason:
+      - workflow and notification hardening benefits ops visibility
+
+  phase_6_depends_on_phase_3:
+    intensity: medium
+    reason:
+      - commerce-facing downstream reconciliation may appear later
+
+forbidden_shortcuts:
+- phase_3 without phase_2 governance stability
+- phase_4 before phase_3 commerce model stability
+- phase_6 before phase_1 canonical publish stability
+
+fixed_statement:
+Dependency intensity and ordering above are frozen for roadmap planning.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156020_STREAM_STUDIO_DEPENDENCY_HEATMAP_AND_CHAIN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156030_STREAM_STUDIO_MILESTONE_AND_GATE_ATLAS.md -->
+# ============================================================
+# STREAM STUDIO MILESTONE AND GATE ATLAS
+# ============================================================
+
+status: roadmap-milestone
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines major milestones and GO gates across all phases.
+
+milestones:
+
+  milestone_1:
+    title: creator base established
+    tied_phase: phase_1
+    gate:
+      - project / upload / draft / publish base complete
+      - audit base complete
+      - runtime base complete
+
+  milestone_2:
+    title: workflow governance established
+    tied_phase: phase_2
+    gate:
+      - review loop complete
+      - approval loop complete
+      - notification base complete
+
+  milestone_3:
+    title: marketplace commerce established
+    tied_phase: phase_3
+    gate:
+      - listing validation complete
+      - paid offer complete
+      - access mode enforcement complete
+
+  milestone_4:
+    title: membership entitlement established
+    tied_phase: phase_4
+    gate:
+      - membership activation complete
+      - early access rule complete
+      - entitlement reconciliation direction stable
+
+  milestone_5:
+    title: monetization governance established
+    tied_phase: phase_5
+    gate:
+      - split activation complete
+      - negotiation log complete
+      - settlement visibility complete
+
+  milestone_6:
+    title: downstream operations hardened
+    tied_phase: phase_6
+    gate:
+      - external push execution complete
+      - dead-letter operator surfaces complete
+      - observability complete
+
+global_go_rule:
+A later milestone should not be treated as complete
+when an earlier dependency milestone remains unstable.
+
+fixed_statement:
+Milestones above are the canonical roadmap gates across phases 1 through 6.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156030_STREAM_STUDIO_MILESTONE_AND_GATE_ATLAS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156040_STREAM_STUDIO_RELEASE_SLICE_AND_DELIVERY_ATLAS.md -->
+# ============================================================
+# STREAM STUDIO RELEASE SLICE AND DELIVERY ATLAS
+# ============================================================
+
+status: roadmap-release
+layer: implementation-roadmap
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the release slice perspective across phases.
+
+release_slices:
+
+  release_slice_1:
+    name: internal_creator_base
+    tied_phase:
+      - phase_1
+    user_value:
+      - creators can prepare assets and manage internal publish base
+
+  release_slice_2:
+    name: workflow_governance
+    tied_phase:
+      - phase_2
+    user_value:
+      - creators and teams can run review and approval loops
+
+  release_slice_3:
+    name: creator_commerce_entry
+    tied_phase:
+      - phase_3
+    user_value:
+      - creators can list and sell one-time paid video
+
+  release_slice_4:
+    name: recurring_creator_access
+    tied_phase:
+      - phase_4
+    user_value:
+      - creators can run membership-based access and early access logic
+
+  release_slice_5:
+    name: monetization_governance
+    tied_phase:
+      - phase_5
+    user_value:
+      - creators can govern revenue allocation and settlement visibility
+
+  release_slice_6:
+    name: downstream_distribution_and_ops
+    tied_phase:
+      - phase_6
+    user_value:
+      - creators can push downstream and operate failures visibly
+
+delivery_rules:
+- each slice must preserve earlier slice semantics
+- later slices must not rewrite earlier canonical truth casually
+- release naming must follow user-visible value, not internal subsystem names only
+
+fixed_statement:
+The release slice view above is the canonical delivery framing across phases.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156040_STREAM_STUDIO_RELEASE_SLICE_AND_DELIVERY_ATLAS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156099_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE1 TO PHASE6 MASTER ROADMAP SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-roadmap-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the all-phase master roadmap pack.
+
+pack_files:
+- 156000_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_ATLAS.md
+- 156010_STREAM_STUDIO_PHASE_COMPARISON_MATRIX.md
+- 156020_STREAM_STUDIO_DEPENDENCY_HEATMAP_AND_CHAIN.md
+- 156030_STREAM_STUDIO_MILESTONE_AND_GATE_ATLAS.md
+- 156040_STREAM_STUDIO_RELEASE_SLICE_AND_DELIVERY_ATLAS.md
+- 156190_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_VERIFY.sh
+
+recommended_use_order:
+- read 156000
+- read 156010
+- read 156020
+- read 156030
+- read 156040
+- run 156190
+
+fixed_statement:
+This pack is the canonical all-phase roadmap overview for StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156099_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156190_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap"
+REPORT="$HOME/.tmp/stream_studio_phase1_to_phase6_master_roadmap_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE1 TO PHASE6 MASTER ROADMAP VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/156_OVERVIEW.md"
+require_file "$ROOT/156_INDEX.md"
+require_file "$ROOT/156000_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_ATLAS.md"
+require_file "$ROOT/156010_STREAM_STUDIO_PHASE_COMPARISON_MATRIX.md"
+require_file "$ROOT/156020_STREAM_STUDIO_DEPENDENCY_HEATMAP_AND_CHAIN.md"
+require_file "$ROOT/156030_STREAM_STUDIO_MILESTONE_AND_GATE_ATLAS.md"
+require_file "$ROOT/156040_STREAM_STUDIO_RELEASE_SLICE_AND_DELIVERY_ATLAS.md"
+require_file "$ROOT/156099_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_SUMMARY.md"
+require_file "$ROOT/156190_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156190_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156_INDEX.md -->
+# ============================================================
+# 156 PHASE1 TO PHASE6 MASTER ROADMAP INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 156.phase1-to-phase6-master-roadmap
+owner: Boss
+prepared_by: Zero
+
+files:
+- 156000_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_ATLAS.md
+- 156010_STREAM_STUDIO_PHASE_COMPARISON_MATRIX.md
+- 156020_STREAM_STUDIO_DEPENDENCY_HEATMAP_AND_CHAIN.md
+- 156030_STREAM_STUDIO_MILESTONE_AND_GATE_ATLAS.md
+- 156040_STREAM_STUDIO_RELEASE_SLICE_AND_DELIVERY_ATLAS.md
+- 156099_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_SUMMARY.md
+- 156190_STREAM_STUDIO_PHASE1_TO_PHASE6_MASTER_ROADMAP_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156_OVERVIEW.md -->
+# ============================================================
+# 156 PHASE1 TO PHASE6 MASTER ROADMAP OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 156.phase1-to-phase6-master-roadmap
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the all-phase master roadmap atlas for StreamStudio.
+This folder consolidates phase scope, comparison, dependencies,
+milestones, and release sequencing into one design-only pack.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/156.phase1-to-phase6-master-roadmap/156_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157000_STREAM_STUDIO_TOTAL_DESIGN_MASTER_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO TOTAL DESIGN MASTER SUMMARY
+# ============================================================
+
+status: master-summary
+layer: implementation-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the total design-only summary of StreamStudio at the current freeze point.
+
+# ============================================================
+# 1. FINAL DESIGN POSITION
+# ============================================================
+
+StreamStudio is fixed as:
+- the creator production application of StreamingOS
+- the creator publishing base application of StreamingOS
+- the creator commerce-entry application for Civilization Marketplace
+- the creator membership management application
+- the creator-side split and monetization governance application
+- the creator-side external push and operations hardening application in later phases
+
+This is not only an uploader.
+This is a creator operations platform.
+
+# ============================================================
+# 2. TOTAL DESIGN LAYERS COMPLETED
+# ============================================================
+
+completed_design_layers:
+- constitution and definition
+- architecture
+- model
+- screen and stateflow
+- api exact docs
+- policy and permission exact docs
+- runtime exact docs
+- implementation readiness and ledgers
+- phase 1 workpackages
+- phase 1 sql-pre-ddl
+- phase 1 real sql bundle
+- phase 1 post-apply verify bundle
+- final phase 1 handoff pack
+- phase 2 to phase 6 roadmap pack
+- phase 1 to phase 6 master roadmap pack
+
+# ============================================================
+# 3. PHASE POSITION SUMMARY
+# ============================================================
+
+phase_position_summary:
+  phase_1:
+    - creator asset preparation and publish base
+  phase_2:
+    - review, approval, notification execution
+  phase_3:
+    - marketplace and paid video execution
+  phase_4:
+    - membership and entitlement execution
+  phase_5:
+    - collaborator authority refinement, split, settlement visibility
+  phase_6:
+    - external push and operations hardening
+
+# ============================================================
+# 4. CURRENT TRUTH
+# ============================================================
+
+current_truth:
+- design is highly structured and frozen
+- implementation has not started
+- real sql apply has not started
+- real api code has not started
+- real ui code has not started
+- real automated test execution has not started
+
+# ============================================================
+# 5. MASTER CONCLUSION
+# ============================================================
+
+master_conclusion:
+StreamStudio design has reached a state where
+future work can proceed by design pack and phase pack
+without reopening the architecture casually.
+
+fixed_statement:
+This file is the top-level design-only master summary of StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157000_STREAM_STUDIO_TOTAL_DESIGN_MASTER_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157010_STREAM_STUDIO_DOCUMENT_SYSTEM_MAP.md -->
+# ============================================================
+# STREAM STUDIO DOCUMENT SYSTEM MAP
+# ============================================================
+
+status: master-map
+layer: implementation-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Shows how the major StreamStudio document families are organized.
+
+document_system_map:
+
+  root:
+    role:
+      - entry point
+      - overview
+      - integrated canonical bundle
+
+  010_constitution:
+    role:
+      - app identity
+      - definition baseline
+
+  020_architecture:
+    role:
+      - core architecture and domain separation
+
+  030_model:
+    role:
+      - entities and domain model extension
+
+  040_screen_and_stateflow:
+    role:
+      - screens
+      - state transitions
+      - blocker-aware navigation
+
+  050_api:
+    role:
+      - exact request / response families
+      - error and validation contract
+
+  060_integration:
+    role:
+      - integration-facing design boundary
+
+  070_operations:
+    role:
+      - runtime jobs
+      - retry
+      - dead-letter
+      - reconciliation
+
+  080_policy:
+    role:
+      - policy
+      - permission matrix
+      - governance rules
+
+  120_implementation:
+    role:
+      - readiness freeze
+      - ledgers
+      - phase packages
+      - sql bundles
+      - roadmap and handoff packs
+
+  900_meta:
+    role:
+      - common component candidates
+      - candidate data areas
+      - review / verify / repair runners
+      - batch summaries
+
+reading_flow:
+- understand identity and architecture first
+- then screen / api / runtime / policy
+- then ledgers and phase packs
+- then roadmap and master summary
+
+fixed_statement:
+This is the canonical high-level map of StreamStudio document families.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157010_STREAM_STUDIO_DOCUMENT_SYSTEM_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md -->
+# ============================================================
+# STREAM STUDIO CURRENT STATUS AND NOT IMPLEMENTED LEDGER
+# ============================================================
+
+status: status-ledger
+layer: implementation-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Separates completed design work from not-yet-started implementation work.
+
+completed_now:
+- total design skeleton
+- exact screen documentation
+- exact api documentation
+- exact validation and error rules
+- exact permission and runtime rules
+- implementation ledgers
+- phase 1 design packs
+- phase 1 sql bundle design
+- phase 1 post-apply verify design
+- phase 2 to phase 6 roadmap design
+- phase 1 to phase 6 master roadmap design
+
+not_implemented_yet:
+- real database apply
+- real table creation in Persona DB
+- real backend endpoint code
+- real service / repository code
+- real ui screen code
+- real notification execution
+- real marketplace execution
+- real membership execution
+- real split execution
+- real connector execution
+- real automated tests
+- real production metrics wiring
+
+important_clarification:
+Prepared runners and apply-ready blocks are design-time preparation artifacts.
+They are not evidence that real implementation has started.
+
+fixed_statement:
+StreamStudio is design-complete at a high level,
+but implementation itself has not started.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157030_STREAM_STUDIO_CANONICAL_REFERENCE_ORDER_FINAL.md -->
+# ============================================================
+# STREAM STUDIO CANONICAL REFERENCE ORDER FINAL
+# ============================================================
+
+status: reference-order
+layer: implementation-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the final canonical reference order across the total StreamStudio design set.
+
+canonical_reference_order:
+
+  order_1:
+    - 121 implementation readiness final freeze memo
+    - 157 total design master summary
+
+  order_2:
+    - architecture
+    - model
+    - screen state transition exact
+    - api exact docs
+    - runtime exact
+    - permission matrix exact
+
+  order_3:
+    - enum ledger
+    - field dictionary
+    - audit event code ledger
+    - event naming ledger
+    - ui copy key ledger
+    - db-side mapping decision memo
+
+  order_4:
+    - phase 1 workpackages
+    - phase 1 fileset packs
+    - phase 1 sql-pre-ddl
+    - phase 1 sql bundle
+    - phase 1 post-apply verify bundle
+    - phase 1 final handoff pack
+
+  order_5:
+    - phase 2 to phase 6 roadmap pack
+    - phase 1 to phase 6 master roadmap pack
+
+reference_rule:
+When documents seem to overlap,
+prefer the later freeze / exact / ledger / master-summary documents
+over earlier broad descriptions.
+
+fixed_statement:
+This is the final canonical reference order for StreamStudio design reading.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157030_STREAM_STUDIO_CANONICAL_REFERENCE_ORDER_FINAL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157040_STREAM_STUDIO_NEXT_ACTION_POLICY_DESIGN_ONLY.md -->
+# ============================================================
+# STREAM STUDIO NEXT ACTION POLICY DESIGN ONLY
+# ============================================================
+
+status: next-action-policy
+layer: implementation-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the policy for what kind of work should come next.
+
+next_action_policy:
+- prioritize design bundles over fragmented additions
+- do not confuse prepared apply blocks with real implementation
+- keep real implementation separate from design consolidation
+- preserve the user's preference for grouped outputs
+- treat phase 1 as the first real implementation target when implementation actually begins
+- keep later phases in roadmap form until phase 1 is truly started
+
+natural_next_design_topics:
+- cross-app common component promotion summary
+- cx22073jw cross-area master summary
+- StreamStudio to StreamingOS / Marketplace integration handoff pack
+- total app family comparison against related creator tools in the same system
+
+not_next_if_design_only_mode_continues:
+- real sql apply
+- real backend code
+- real ui code
+- real test execution
+
+fixed_statement:
+As long as the mode remains design-only,
+next work should continue as bundled design packs rather than real implementation.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157040_STREAM_STUDIO_NEXT_ACTION_POLICY_DESIGN_ONLY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157099_STREAM_STUDIO_FINAL_MASTER_SUMMARY_PACKET_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO FINAL MASTER SUMMARY PACKET SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the final master summary packet.
+
+packet_files:
+- 157000_STREAM_STUDIO_TOTAL_DESIGN_MASTER_SUMMARY.md
+- 157010_STREAM_STUDIO_DOCUMENT_SYSTEM_MAP.md
+- 157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md
+- 157030_STREAM_STUDIO_CANONICAL_REFERENCE_ORDER_FINAL.md
+- 157040_STREAM_STUDIO_NEXT_ACTION_POLICY_DESIGN_ONLY.md
+- 157190_STREAM_STUDIO_FINAL_MASTER_SUMMARY_VERIFY.sh
+
+recommended_use_order:
+- read 157000
+- read 157020
+- read 157030
+- read 157010
+- read 157040
+- run 157190
+
+fixed_statement:
+This packet is the canonical final design-only summary of StreamStudio at the current freeze point.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157099_STREAM_STUDIO_FINAL_MASTER_SUMMARY_PACKET_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157190_STREAM_STUDIO_FINAL_MASTER_SUMMARY_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary"
+REPORT="$HOME/.tmp/stream_studio_final_master_summary_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO FINAL MASTER SUMMARY VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/157_OVERVIEW.md"
+require_file "$ROOT/157_INDEX.md"
+require_file "$ROOT/157000_STREAM_STUDIO_TOTAL_DESIGN_MASTER_SUMMARY.md"
+require_file "$ROOT/157010_STREAM_STUDIO_DOCUMENT_SYSTEM_MAP.md"
+require_file "$ROOT/157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md"
+require_file "$ROOT/157030_STREAM_STUDIO_CANONICAL_REFERENCE_ORDER_FINAL.md"
+require_file "$ROOT/157040_STREAM_STUDIO_NEXT_ACTION_POLICY_DESIGN_ONLY.md"
+require_file "$ROOT/157099_STREAM_STUDIO_FINAL_MASTER_SUMMARY_PACKET_SUMMARY.md"
+require_file "$ROOT/157190_STREAM_STUDIO_FINAL_MASTER_SUMMARY_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157190_STREAM_STUDIO_FINAL_MASTER_SUMMARY_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157_INDEX.md -->
+# ============================================================
+# 157 FINAL MASTER SUMMARY INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 157.final-master-summary
+owner: Boss
+prepared_by: Zero
+
+files:
+- 157000_STREAM_STUDIO_TOTAL_DESIGN_MASTER_SUMMARY.md
+- 157010_STREAM_STUDIO_DOCUMENT_SYSTEM_MAP.md
+- 157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md
+- 157030_STREAM_STUDIO_CANONICAL_REFERENCE_ORDER_FINAL.md
+- 157040_STREAM_STUDIO_NEXT_ACTION_POLICY_DESIGN_ONLY.md
+- 157099_STREAM_STUDIO_FINAL_MASTER_SUMMARY_PACKET_SUMMARY.md
+- 157190_STREAM_STUDIO_FINAL_MASTER_SUMMARY_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157_OVERVIEW.md -->
+# ============================================================
+# 157 FINAL MASTER SUMMARY OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 157.final-master-summary
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the final design-only master summary pack for StreamStudio.
+This folder consolidates the total design position, document map,
+not-implemented ledger, canonical reference order, and next-action policy.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/157.final-master-summary/157_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158000_STREAM_STUDIO_APP_SPECIFIC_FINAL_AUDIT_MASTER.md -->
+# ============================================================
+# STREAM STUDIO APP SPECIFIC FINAL AUDIT MASTER
+# ============================================================
+
+status: final-audit
+layer: implementation-audit
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the final StreamStudio-only audit result at the current design freeze point.
+
+# ============================================================
+# 1. AUDIT TARGET
+# ============================================================
+
+audit_target:
+- StreamStudio app-specific design only
+- exclude cross-app common-component promotion work
+- exclude unrelated OS-level design work
+- exclude real implementation status claims
+
+# ============================================================
+# 2. FINAL AUDIT RESULT
+# ============================================================
+
+overall_result: app_specific_design_consistent
+
+summary_statement:
+The StreamStudio app-specific design set is internally consistent enough
+to be treated as a stable single-app design package.
+
+# ============================================================
+# 3. WHAT IS CONFIRMED
+# ============================================================
+
+confirmed_now:
+- app identity is fixed
+- architecture family boundaries are fixed
+- screen families are fixed
+- api family boundaries are fixed
+- runtime and dead-letter direction are fixed
+- policy and permission direction are fixed
+- phase ordering is fixed
+- StreamStudio-only roadmap framing is fixed
+
+# ============================================================
+# 4. WHAT IS NOT CLAIMED
+# ============================================================
+
+not_claimed:
+- real DB apply done
+- real backend implementation done
+- real UI implementation done
+- real tests executed
+- common-component promotion finalized in this chat
+
+# ============================================================
+# 5. AUDIT CONCLUSION
+# ============================================================
+
+fixed_statement:
+As an app-specific design package, StreamStudio is stable and internally aligned.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158000_STREAM_STUDIO_APP_SPECIFIC_FINAL_AUDIT_MASTER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158010_STREAM_STUDIO_SCREEN_API_RUNTIME_POLICY_CONSISTENCY_AUDIT.md -->
+# ============================================================
+# STREAM STUDIO SCREEN API RUNTIME POLICY CONSISTENCY AUDIT
+# ============================================================
+
+status: final-audit
+layer: implementation-audit
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Checks consistency between screen, API, runtime, and policy layers.
+
+screen_to_api_consistency:
+- project screens align with project endpoints
+- upload queue screens align with upload endpoints
+- draft editing screens align with draft endpoints
+- publish settings screen aligns with publish endpoints
+- notification and mobile quick actions align with allowed phase-1 actions
+
+api_to_runtime_consistency:
+- upload completion may register ingest runtime work
+- thumbnail assignment may register derivative runtime work
+- subtitle creation may register packaging runtime work
+- scheduled publish request may register scheduled publish runtime work
+- runtime jobs remain explicit and first-class
+
+api_to_policy_consistency:
+- permission matrix guards upload and publish actions
+- blocker categories remain distinct
+- approval and rights blockers are not collapsed
+- phase 1 does not pretend marketplace or membership execution exists
+
+runtime_to_policy_consistency:
+- retry and dead-letter remain visible
+- irreversible actions require audit support
+- scheduled publish remains auditable
+- dead-letter is not hidden queue state
+
+audit_result:
+- no major screen/api/runtime/policy contradiction detected
+- current design appears internally consistent at the app-specific level
+
+fixed_statement:
+Screen, API, runtime, and policy layers are aligned enough for stable design handoff.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158010_STREAM_STUDIO_SCREEN_API_RUNTIME_POLICY_CONSISTENCY_AUDIT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158020_STREAM_STUDIO_PHASE_BOUNDARY_LEAKAGE_AUDIT.md -->
+# ============================================================
+# STREAM STUDIO PHASE BOUNDARY LEAKAGE AUDIT
+# ============================================================
+
+status: final-audit
+layer: implementation-audit
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Checks whether later-phase concerns are improperly leaking into earlier phases.
+
+phase_1_boundary_check:
+- project / upload / draft / publish base only
+- no marketplace execution required
+- no membership execution required
+- no split execution required
+- no external push execution required
+result: clean_enough
+
+phase_2_boundary_check:
+- review / approval / notification centered
+- does not require marketplace execution
+result: clean_enough
+
+phase_3_boundary_check:
+- marketplace and paid video centered
+- depends on governance stability
+result: clean_enough
+
+phase_4_boundary_check:
+- membership centered
+- not incorrectly pulled into phase 3
+result: clean_enough
+
+phase_5_boundary_check:
+- split and settlement visibility centered
+- not incorrectly pulled into phase 1
+result: clean_enough
+
+phase_6_boundary_check:
+- external push and ops hardening centered
+- not incorrectly treated as internal publish success
+result: clean_enough
+
+leakage_risk_notes:
+- design documents may reference later domains for roadmap continuity
+- references do not automatically imply implementation scope leakage
+
+fixed_statement:
+No serious phase-boundary leakage is currently detected in the StreamStudio app-specific design set.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158020_STREAM_STUDIO_PHASE_BOUNDARY_LEAKAGE_AUDIT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md -->
+# ============================================================
+# STREAM STUDIO APP SPECIFIC SCOPE PURITY MEMO
+# ============================================================
+
+status: final-audit
+layer: implementation-audit
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Confirms that this chat's StreamStudio design can remain app-specific
+without depending on separate common-component discussion.
+
+scope_purity_rules:
+- treat StreamStudio as a standalone application design package
+- common-component promotion decisions are external to this chat
+- app-specific documents should remain readable without the separate common-component chat
+- roadmap, audit, and phase packs must stay meaningful on their own
+
+what_remains_inside_this_chat:
+- StreamStudio-specific screens
+- StreamStudio-specific API families
+- StreamStudio-specific runtime rules
+- StreamStudio-specific phase boundaries
+- StreamStudio-specific handoff and audit packs
+
+what_is_explicitly_outside_this_chat:
+- common-component promotion final decisions
+- cross-app shared library rollout
+- system-wide common UI / API module adoption work
+
+fixed_statement:
+This StreamStudio design set is intentionally app-specific and remains valid without common-component work being included here.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158040_STREAM_STUDIO_REMAINING_GAPS_AND_OPTIONAL_ITEMS_LEDGER.md -->
+# ============================================================
+# STREAM STUDIO REMAINING GAPS AND OPTIONAL ITEMS LEDGER
+# ============================================================
+
+status: final-audit
+layer: implementation-audit
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Separates true remaining gaps from optional future refinement items.
+
+remaining_true_gaps:
+- none_large_at_design_level_for_app_specific_package
+
+remaining_optional_items:
+- richer screen example payload snapshots
+- more UI copy variants in ja / en
+- more detailed notification sample scenarios
+- more detailed failure-case walkthroughs for later phases
+- more release-note style summaries by phase
+- more app-specific glossary entries
+
+important_note:
+These are refinement items, not blockers for design completeness.
+
+fixed_statement:
+There are no major unresolved gaps left in the StreamStudio app-specific design package;
+remaining items are optional refinements.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158040_STREAM_STUDIO_REMAINING_GAPS_AND_OPTIONAL_ITEMS_LEDGER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158099_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO FINAL APP SPECIFIC AUDIT SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-audit-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the final StreamStudio-only audit pack.
+
+packet_files:
+- 158000_STREAM_STUDIO_APP_SPECIFIC_FINAL_AUDIT_MASTER.md
+- 158010_STREAM_STUDIO_SCREEN_API_RUNTIME_POLICY_CONSISTENCY_AUDIT.md
+- 158020_STREAM_STUDIO_PHASE_BOUNDARY_LEAKAGE_AUDIT.md
+- 158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md
+- 158040_STREAM_STUDIO_REMAINING_GAPS_AND_OPTIONAL_ITEMS_LEDGER.md
+- 158190_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_VERIFY.sh
+
+recommended_use_order:
+- read 158000
+- read 158010
+- read 158020
+- read 158030
+- read 158040
+- run 158190
+
+fixed_statement:
+This packet is the final StreamStudio-only audit bundle for the current design freeze point.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158099_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158190_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit"
+REPORT="$HOME/.tmp/stream_studio_final_app_specific_audit_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO FINAL APP SPECIFIC AUDIT VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/158_OVERVIEW.md"
+require_file "$ROOT/158_INDEX.md"
+require_file "$ROOT/158000_STREAM_STUDIO_APP_SPECIFIC_FINAL_AUDIT_MASTER.md"
+require_file "$ROOT/158010_STREAM_STUDIO_SCREEN_API_RUNTIME_POLICY_CONSISTENCY_AUDIT.md"
+require_file "$ROOT/158020_STREAM_STUDIO_PHASE_BOUNDARY_LEAKAGE_AUDIT.md"
+require_file "$ROOT/158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md"
+require_file "$ROOT/158040_STREAM_STUDIO_REMAINING_GAPS_AND_OPTIONAL_ITEMS_LEDGER.md"
+require_file "$ROOT/158099_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_SUMMARY.md"
+require_file "$ROOT/158190_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158190_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158_INDEX.md -->
+# ============================================================
+# 158 FINAL APP SPECIFIC AUDIT INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 158.final-app-specific-audit
+owner: Boss
+prepared_by: Zero
+
+files:
+- 158000_STREAM_STUDIO_APP_SPECIFIC_FINAL_AUDIT_MASTER.md
+- 158010_STREAM_STUDIO_SCREEN_API_RUNTIME_POLICY_CONSISTENCY_AUDIT.md
+- 158020_STREAM_STUDIO_PHASE_BOUNDARY_LEAKAGE_AUDIT.md
+- 158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md
+- 158040_STREAM_STUDIO_REMAINING_GAPS_AND_OPTIONAL_ITEMS_LEDGER.md
+- 158099_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_SUMMARY.md
+- 158190_STREAM_STUDIO_FINAL_APP_SPECIFIC_AUDIT_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158_OVERVIEW.md -->
+# ============================================================
+# 158 FINAL APP SPECIFIC AUDIT OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 158.final-app-specific-audit
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the final StreamStudio-only audit pack.
+This folder checks app-specific design consistency, phase leakage,
+scope purity, and remaining optional gaps without mixing common-component work.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/158.final-app-specific-audit/158_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md -->
+# ============================================================
+# STREAM STUDIO FINAL CLOSEOUT MEMO
+# ============================================================
+
+status: closeout
+layer: implementation-closeout
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Closes the current StreamStudio design chat as an app-specific design package.
+
+# ============================================================
+# 1. CLOSEOUT POSITION
+# ============================================================
+
+closeout_position:
+- StreamStudio app-specific design has been consolidated
+- design packs have been grouped by phase, roadmap, audit, and summary
+- real implementation has not started
+- real SQL apply has not started
+- common-component promotion work is intentionally outside this chat
+
+# ============================================================
+# 2. WHAT THIS CHAT COMPLETED
+# ============================================================
+
+this_chat_completed:
+- app identity and architecture freeze
+- screen and stateflow freeze
+- API and validation freeze
+- policy and runtime freeze
+- implementation readiness ledgers
+- phase 1 design packs
+- phase 1 SQL design packs
+- post-apply verification design packs
+- phase 2 to phase 6 roadmap packs
+- all-phase master roadmap pack
+- app-specific audit and master summary packs
+
+# ============================================================
+# 3. WHAT THIS CHAT DID NOT DO
+# ============================================================
+
+this_chat_did_not_do:
+- real backend code implementation
+- real UI code implementation
+- real database apply
+- real test execution
+- common-component promotion finalization
+
+# ============================================================
+# 4. CLOSEOUT JUDGMENT
+# ============================================================
+
+closeout_judgment:
+- StreamStudio is closed here as a stable design-only package
+- future work may continue in a new chat without reopening the whole architecture
+- design reading can proceed from the final summary and handoff packs
+
+# ============================================================
+# 5. FINAL CLOSEOUT STATEMENT
+# ============================================================
+
+fixed_statement:
+This chat closes with StreamStudio established as a design-only,
+app-specific, phase-structured package ready for future handoff or implementation planning.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159010_STREAM_STUDIO_DELIVERABLE_LEDGER_FINAL.md -->
+# ============================================================
+# STREAM STUDIO DELIVERABLE LEDGER FINAL
+# ============================================================
+
+status: deliverable-ledger
+layer: implementation-closeout
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Lists the major StreamStudio deliverable families completed in this chat.
+
+deliverable_families:
+- root overview / root index / integrated canonical bundle
+- constitution and definition set
+- architecture set
+- model set
+- screen and stateflow set
+- API exact set
+- integration boundary set
+- runtime and operations set
+- policy and permission set
+- implementation readiness and ledgers
+- phase 1 workpackage set
+- phase 1 fileset set
+- phase 1 SQL-pre-DDL set
+- phase 1 real SQL bundle set
+- phase 1 post-apply verify set
+- phase 1 final handoff set
+- phase 2 to phase 6 roadmap set
+- phase 1 to phase 6 master roadmap set
+- total design master summary set
+- app-specific audit set
+- final closeout set
+
+deliverable_reading_shortcut:
+- for total overview: start from 157.final-master-summary
+- for app-only audit: read 158.final-app-specific-audit
+- for phase 1 start point: read 154.phase1-final-handoff
+- for post-phase roadmap: read 156.phase1-to-phase6-master-roadmap
+
+fixed_statement:
+The ledger above is the final deliverable family inventory for this StreamStudio design chat.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159010_STREAM_STUDIO_DELIVERABLE_LEDGER_FINAL.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md -->
+# ============================================================
+# STREAM STUDIO CHAT SCOPE AND EXCLUSION MEMO
+# ============================================================
+
+status: scope-memo
+layer: implementation-closeout
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Freezes what belongs to this chat and what is intentionally excluded.
+
+inside_this_chat:
+- StreamStudio-specific design
+- StreamStudio-specific phase design
+- StreamStudio-specific summaries
+- StreamStudio-specific roadmap and audit packs
+- StreamStudio-specific SQL design bundles
+
+outside_this_chat:
+- common-component promotion final decisions
+- cross-app shared part rollout
+- unrelated app design work
+- unrelated OS-wide cleanup
+- real implementation execution
+
+important_rule:
+Do not re-mix common-component discussion into this StreamStudio app-specific chat.
+That work belongs in a separate chat by explicit user decision.
+
+fixed_statement:
+This chat remains app-specific and excludes common-component finalization by rule.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159030_STREAM_STUDIO_NEXT_CHAT_HANDOFF_NOTE.md -->
+# ============================================================
+# STREAM STUDIO NEXT CHAT HANDOFF NOTE
+# ============================================================
+
+status: handoff-note
+layer: implementation-closeout
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a concise handoff note for the next StreamStudio chat.
+
+handoff_note:
+- StreamStudio design is already grouped and frozen at a high level
+- implementation has not started
+- common components are handled elsewhere
+- phase 1 is the first real implementation target when implementation begins
+- safest entry points are:
+  - 157.final-master-summary
+  - 158.final-app-specific-audit
+  - 154.phase1-final-handoff
+  - 153.phase1-sql
+  - 156.phase1-to-phase6-master-roadmap
+
+recommended_next_chat_entry:
+Open by stating whether the next chat is:
+- still design-only
+- phase 1 implementation planning
+- phase 1 real SQL apply review
+- post-phase roadmap refinement
+
+fixed_statement:
+This note is the recommended bridge from the current design chat to any future StreamStudio chat.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159030_STREAM_STUDIO_NEXT_CHAT_HANDOFF_NOTE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159099_STREAM_STUDIO_FINAL_CLOSEOUT_PACKET_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO FINAL CLOSEOUT PACKET SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-closeout-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the final closeout packet for this chat.
+
+packet_files:
+- 159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md
+- 159010_STREAM_STUDIO_DELIVERABLE_LEDGER_FINAL.md
+- 159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md
+- 159030_STREAM_STUDIO_NEXT_CHAT_HANDOFF_NOTE.md
+- 159190_STREAM_STUDIO_FINAL_CLOSEOUT_VERIFY.sh
+
+recommended_use_order:
+- read 159000
+- read 159010
+- read 159020
+- read 159030
+- run 159190
+
+fixed_statement:
+This packet is the final closeout bundle for the current StreamStudio design chat.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159099_STREAM_STUDIO_FINAL_CLOSEOUT_PACKET_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159190_STREAM_STUDIO_FINAL_CLOSEOUT_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout"
+REPORT="$HOME/.tmp/stream_studio_final_closeout_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO FINAL CLOSEOUT VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/159_OVERVIEW.md"
+require_file "$ROOT/159_INDEX.md"
+require_file "$ROOT/159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md"
+require_file "$ROOT/159010_STREAM_STUDIO_DELIVERABLE_LEDGER_FINAL.md"
+require_file "$ROOT/159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md"
+require_file "$ROOT/159030_STREAM_STUDIO_NEXT_CHAT_HANDOFF_NOTE.md"
+require_file "$ROOT/159099_STREAM_STUDIO_FINAL_CLOSEOUT_PACKET_SUMMARY.md"
+require_file "$ROOT/159190_STREAM_STUDIO_FINAL_CLOSEOUT_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159190_STREAM_STUDIO_FINAL_CLOSEOUT_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159_INDEX.md -->
+# ============================================================
+# 159 FINAL CLOSEOUT INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 159.final-closeout
+owner: Boss
+prepared_by: Zero
+
+files:
+- 159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md
+- 159010_STREAM_STUDIO_DELIVERABLE_LEDGER_FINAL.md
+- 159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md
+- 159030_STREAM_STUDIO_NEXT_CHAT_HANDOFF_NOTE.md
+- 159099_STREAM_STUDIO_FINAL_CLOSEOUT_PACKET_SUMMARY.md
+- 159190_STREAM_STUDIO_FINAL_CLOSEOUT_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159_OVERVIEW.md -->
+# ============================================================
+# 159 FINAL CLOSEOUT OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 159.final-closeout
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the closeout pack for this StreamStudio design chat.
+This folder consolidates final closure, deliverable ledger,
+scope exclusion rules, and next-chat handoff notes.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/159.final-closeout/159_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160000_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT.md -->
+# ============================================================
+# STREAM STUDIO NEXT CHAT STARTER KIT
+# ============================================================
+
+status: starter-kit
+layer: implementation-handoff
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides the minimum start kit for any future StreamStudio chat.
+
+starter_kit_modes:
+- design_only_continuation
+- phase1_implementation_planning
+- phase1_sql_review
+
+starter_kit_rules:
+- do not restate the whole architecture manually in future chats
+- begin from the final summary and app-specific audit packs
+- declare the next chat mode at the start
+- keep common-component discussion outside unless explicitly reopened elsewhere
+- keep StreamStudio app-specific scope clear
+
+recommended_first_reads:
+- 157.final-master-summary
+- 158.final-app-specific-audit
+- 159.final-closeout
+
+fixed_statement:
+This starter kit is the canonical bridge from the current StreamStudio chat
+to any next StreamStudio chat.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160000_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160010_STREAM_STUDIO_DESIGN_ONLY_CHAT_START_PROMPT.md -->
+# ============================================================
+# STREAM STUDIO DESIGN ONLY CHAT START PROMPT
+# ============================================================
+
+status: starter-template
+layer: implementation-handoff
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a copy-ready opening template for the next design-only chat.
+
+copy_template:
+I want to continue StreamStudio in design-only mode.
+
+Rules:
+- Show roadmap first
+- Keep outputs bundled as much as possible
+- Do not start real implementation
+- Do not mix in common-component discussion
+- Treat StreamStudio as app-specific scope only
+
+Reference position:
+- Start from 157.final-master-summary
+- Respect 158.final-app-specific-audit
+- Respect 159.final-closeout
+- Phase 1 is still not implemented
+
+Current request:
+[write the next design-only task here]
+
+fixed_statement:
+Use this template when the next chat should remain design-only.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160010_STREAM_STUDIO_DESIGN_ONLY_CHAT_START_PROMPT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160020_STREAM_STUDIO_PHASE1_IMPLEMENTATION_PLANNING_CHAT_START_PROMPT.md -->
+# ============================================================
+# STREAM STUDIO PHASE1 IMPLEMENTATION PLANNING CHAT START PROMPT
+# ============================================================
+
+status: starter-template
+layer: implementation-handoff
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a copy-ready opening template for a future chat
+that starts implementation planning but not real implementation yet.
+
+copy_template:
+I want to continue StreamStudio with Phase 1 implementation planning only.
+
+Rules:
+- Show roadmap first
+- Keep outputs bundled as much as possible
+- Do not claim implementation is already done
+- Do not run real DB apply or real code generation yet
+- Keep common-component work outside this chat
+- Respect the frozen Phase 1 boundary
+
+Reference position:
+- Start from 154.phase1-final-handoff
+- Use 153.phase1-sql only as planning reference
+- Respect 157.final-master-summary
+- Respect 158.final-app-specific-audit
+
+Current request:
+[write the phase 1 planning task here]
+
+fixed_statement:
+Use this template when the next chat should plan Phase 1 work without starting real implementation.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160020_STREAM_STUDIO_PHASE1_IMPLEMENTATION_PLANNING_CHAT_START_PROMPT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160030_STREAM_STUDIO_PHASE1_SQL_REVIEW_CHAT_START_PROMPT.md -->
+# ============================================================
+# STREAM STUDIO PHASE1 SQL REVIEW CHAT START PROMPT
+# ============================================================
+
+status: starter-template
+layer: implementation-handoff
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a copy-ready opening template for a future chat
+focused on SQL review before real apply.
+
+copy_template:
+I want to continue StreamStudio with Phase 1 SQL review only.
+
+Rules:
+- Show roadmap first
+- Keep outputs bundled as much as possible
+- Do not say SQL has already been applied
+- Persona-side DB work uses PERSONA_DATABASE_URL
+- Use Method A format if SQL blocks are generated
+- Keep this as review / prep unless I explicitly say to apply
+- Respect 佐藤（DB担当） review rule
+
+Reference position:
+- Start from 147 to 153 bundles
+- Respect 152 psql apply preflight memo
+- Respect 157 final master summary
+- Real apply has not started yet
+
+Current request:
+[write the SQL review task here]
+
+fixed_statement:
+Use this template when the next chat should focus on Phase 1 SQL review or pre-apply preparation.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160030_STREAM_STUDIO_PHASE1_SQL_REVIEW_CHAT_START_PROMPT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160040_STREAM_STUDIO_REFERENCE_MINIMUM_SET_FOR_NEXT_CHAT.md -->
+# ============================================================
+# STREAM STUDIO REFERENCE MINIMUM SET FOR NEXT CHAT
+# ============================================================
+
+status: starter-reference
+layer: implementation-handoff
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the minimum reference set to mention at the start of the next chat.
+
+minimum_reference_set:
+- 157.final-master-summary
+- 158.final-app-specific-audit
+- 159.final-closeout
+
+when_phase1_planning_is_needed_add:
+- 154.phase1-final-handoff
+- 153.phase1-sql
+
+when_post_phase_roadmap_is_needed_add:
+- 156.phase1-to-phase6-master-roadmap
+
+reference_policy:
+- mention only the minimum needed set
+- do not dump every file name unless the task needs it
+- use later freeze and summary packs first
+
+fixed_statement:
+This is the minimum reference set for efficient next-chat startup.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160040_STREAM_STUDIO_REFERENCE_MINIMUM_SET_FOR_NEXT_CHAT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160099_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO NEXT CHAT STARTER KIT SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-handoff-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the next-chat starter kit.
+
+packet_files:
+- 160000_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT.md
+- 160010_STREAM_STUDIO_DESIGN_ONLY_CHAT_START_PROMPT.md
+- 160020_STREAM_STUDIO_PHASE1_IMPLEMENTATION_PLANNING_CHAT_START_PROMPT.md
+- 160030_STREAM_STUDIO_PHASE1_SQL_REVIEW_CHAT_START_PROMPT.md
+- 160040_STREAM_STUDIO_REFERENCE_MINIMUM_SET_FOR_NEXT_CHAT.md
+- 160190_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_VERIFY.sh
+
+recommended_use_order:
+- read 160000
+- choose 160010 or 160020 or 160030
+- read 160040
+- run 160190
+
+fixed_statement:
+This packet is the canonical next-chat startup bundle for StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160099_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160190_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit"
+REPORT="$HOME/.tmp/stream_studio_next_chat_starter_kit_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO NEXT CHAT STARTER KIT VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/160_OVERVIEW.md"
+require_file "$ROOT/160_INDEX.md"
+require_file "$ROOT/160000_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT.md"
+require_file "$ROOT/160010_STREAM_STUDIO_DESIGN_ONLY_CHAT_START_PROMPT.md"
+require_file "$ROOT/160020_STREAM_STUDIO_PHASE1_IMPLEMENTATION_PLANNING_CHAT_START_PROMPT.md"
+require_file "$ROOT/160030_STREAM_STUDIO_PHASE1_SQL_REVIEW_CHAT_START_PROMPT.md"
+require_file "$ROOT/160040_STREAM_STUDIO_REFERENCE_MINIMUM_SET_FOR_NEXT_CHAT.md"
+require_file "$ROOT/160099_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_SUMMARY.md"
+require_file "$ROOT/160190_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160190_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160_INDEX.md -->
+# ============================================================
+# 160 NEXT CHAT STARTER KIT INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 160.next-chat-starter-kit
+owner: Boss
+prepared_by: Zero
+
+files:
+- 160000_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT.md
+- 160010_STREAM_STUDIO_DESIGN_ONLY_CHAT_START_PROMPT.md
+- 160020_STREAM_STUDIO_PHASE1_IMPLEMENTATION_PLANNING_CHAT_START_PROMPT.md
+- 160030_STREAM_STUDIO_PHASE1_SQL_REVIEW_CHAT_START_PROMPT.md
+- 160040_STREAM_STUDIO_REFERENCE_MINIMUM_SET_FOR_NEXT_CHAT.md
+- 160099_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_SUMMARY.md
+- 160190_STREAM_STUDIO_NEXT_CHAT_STARTER_KIT_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160_OVERVIEW.md -->
+# ============================================================
+# 160 NEXT CHAT STARTER KIT OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 160.next-chat-starter-kit
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the next-chat starter kit for StreamStudio.
+This folder provides copy-ready opening templates and minimum references
+for future design-only, implementation-planning, or SQL-review chats.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/160.next-chat-starter-kit/160_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161000_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_ATLAS.md -->
+# ============================================================
+# STREAM STUDIO QUICK LOOKUP NAVIGATION ATLAS
+# ============================================================
+
+status: navigation-atlas
+layer: implementation-navigation
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a fast navigation atlas for the StreamStudio design set.
+
+navigation_goal:
+- reduce re-reading cost
+- help find the right document family first
+- keep StreamStudio reading app-specific
+- avoid mixing common-component work into this chat scope
+
+top_entry_points:
+- total summary -> 157.final-master-summary
+- app-only audit -> 158.final-app-specific-audit
+- final closeout -> 159.final-closeout
+- next chat start -> 160.next-chat-starter-kit
+- phase 1 final handoff -> 154.phase1-final-handoff
+- phase 1 sql bundle -> 153.phase1-sql
+- phase 2 to 6 roadmap -> 156.phase1-to-phase6-master-roadmap
+
+best_use_cases:
+- "I forgot where to start" -> 157
+- "I want app-only truth" -> 158
+- "I want phase 1 starting set" -> 154
+- "I want SQL review set" -> 153
+- "I want future roadmap" -> 156
+- "I want next-chat opening text" -> 160
+
+fixed_statement:
+This atlas is the fastest high-level navigation layer over the StreamStudio design set.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161000_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_ATLAS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161010_STREAM_STUDIO_TASK_TO_DOCUMENT_ROUTING_MAP.md -->
+# ============================================================
+# STREAM STUDIO TASK TO DOCUMENT ROUTING MAP
+# ============================================================
+
+status: navigation-map
+layer: implementation-navigation
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Maps common tasks to the best starting documents.
+
+task_to_document_routing:
+
+  understand_the_whole_app:
+    first_read:
+      - 157.final-master-summary
+    then:
+      - 156.phase1-to-phase6-master-roadmap
+      - 158.final-app-specific-audit
+
+  check_whether_implementation_started:
+    first_read:
+      - 157020_STREAM_STUDIO_CURRENT_STATUS_AND_NOT_IMPLEMENTED_LEDGER.md
+    then:
+      - 159000_STREAM_STUDIO_FINAL_CLOSEOUT_MEMO.md
+
+  start_phase1_design_review:
+    first_read:
+      - 154.phase1-final-handoff
+    then:
+      - 131 to 146 under 120.implementation
+
+  review_phase1_sql_design:
+    first_read:
+      - 147 to 152 under 120.implementation
+    then:
+      - 153.phase1-sql
+
+  review_post_apply_verification_flow:
+    first_read:
+      - 153200_PHASE1_POST_APPLY_VERIFY_BUNDLE.md
+    then:
+      - 153250_PHASE1_POST_APPLY_VERIFY_RUNNER.sh
+
+  review_later_phase_sequence:
+    first_read:
+      - 155.phase2-to-phase6-roadmap
+    then:
+      - 156.phase1-to-phase6-master-roadmap
+
+  continue_in_a_new_chat:
+    first_read:
+      - 160.next-chat-starter-kit
+    then:
+      - 157.final-master-summary
+      - 159.final-closeout
+
+  confirm_app_only_scope:
+    first_read:
+      - 158030_STREAM_STUDIO_APP_SPECIFIC_SCOPE_PURITY_MEMO.md
+    then:
+      - 159020_STREAM_STUDIO_CHAT_SCOPE_AND_EXCLUSION_MEMO.md
+
+fixed_statement:
+This routing map is the canonical task-to-document shortcut map for StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161010_STREAM_STUDIO_TASK_TO_DOCUMENT_ROUTING_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161020_STREAM_STUDIO_PHASE_TO_DOCUMENT_ENTRYPOINT_MAP.md -->
+# ============================================================
+# STREAM STUDIO PHASE TO DOCUMENT ENTRYPOINT MAP
+# ============================================================
+
+status: navigation-map
+layer: implementation-navigation
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Maps each phase to the best entrypoint documents.
+
+phase_entrypoints:
+
+  phase_1:
+    first_read:
+      - 154.phase1-final-handoff
+    second_read:
+      - 131 to 146 under 120.implementation
+    sql_read:
+      - 147 to 153 under 120.implementation
+    verify_read:
+      - 153200 post-apply verify bundle
+
+  phase_2:
+    first_read:
+      - 155010_STREAM_STUDIO_PHASE2_REVIEW_APPROVAL_NOTIFICATION_ROADMAP.md
+    second_read:
+      - 156000 master roadmap atlas
+
+  phase_3:
+    first_read:
+      - 155020_STREAM_STUDIO_PHASE3_MARKETPLACE_AND_PAID_VIDEO_ROADMAP.md
+    second_read:
+      - 156010 phase comparison matrix
+
+  phase_4:
+    first_read:
+      - 155030_STREAM_STUDIO_PHASE4_MEMBERSHIP_ROADMAP.md
+    second_read:
+      - 156020 dependency heatmap and chain
+
+  phase_5:
+    first_read:
+      - 155040_STREAM_STUDIO_PHASE5_COLLABORATOR_SPLIT_SETTLEMENT_ROADMAP.md
+    second_read:
+      - 156030 milestone and gate atlas
+
+  phase_6:
+    first_read:
+      - 155050_STREAM_STUDIO_PHASE6_EXTERNAL_PUSH_AND_OPS_HARDENING_ROADMAP.md
+    second_read:
+      - 156040 release slice and delivery atlas
+
+fixed_statement:
+This is the canonical phase-to-entrypoint navigation map for StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161020_STREAM_STUDIO_PHASE_TO_DOCUMENT_ENTRYPOINT_MAP.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161030_STREAM_STUDIO_WHERE_TO_READ_FIRST_GUIDE.md -->
+# ============================================================
+# STREAM STUDIO WHERE TO READ FIRST GUIDE
+# ============================================================
+
+status: navigation-guide
+layer: implementation-navigation
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides a quick decision guide for what to read first.
+
+where_to_read_first:
+
+  if_you_need_total_truth:
+    read:
+      - 157000 total design master summary
+
+  if_you_need_app_only_consistency_check:
+    read:
+      - 158000 app specific final audit master
+
+  if_you_need_chat_closure_context:
+    read:
+      - 159000 final closeout memo
+
+  if_you_need_next_chat_opening:
+    read:
+      - 160000 next chat starter kit
+
+  if_you_need_phase1_only:
+    read:
+      - 154000 phase1 pre-implementation final design freeze
+
+  if_you_need_sql_only:
+    read:
+      - 153000 phase1 sql real migration bundle
+
+  if_you_need_future_roadmap_only:
+    read:
+      - 156000 phase1 to phase6 master roadmap atlas
+
+reading_rule:
+Choose the smallest entrypoint that matches the task first,
+then widen only if needed.
+
+fixed_statement:
+This guide is the fastest decision aid for choosing the first StreamStudio document to read.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161030_STREAM_STUDIO_WHERE_TO_READ_FIRST_GUIDE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161099_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO QUICK LOOKUP NAVIGATION SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-navigation-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the quick lookup navigation pack.
+
+packet_files:
+- 161000_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_ATLAS.md
+- 161010_STREAM_STUDIO_TASK_TO_DOCUMENT_ROUTING_MAP.md
+- 161020_STREAM_STUDIO_PHASE_TO_DOCUMENT_ENTRYPOINT_MAP.md
+- 161030_STREAM_STUDIO_WHERE_TO_READ_FIRST_GUIDE.md
+- 161190_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_VERIFY.sh
+
+recommended_use_order:
+- read 161000
+- read 161010
+- read 161020
+- read 161030
+- run 161190
+
+fixed_statement:
+This packet is the canonical quick-lookup navigation bundle for StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161099_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161190_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation"
+REPORT="$HOME/.tmp/stream_studio_quick_lookup_navigation_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO QUICK LOOKUP NAVIGATION VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/161_OVERVIEW.md"
+require_file "$ROOT/161_INDEX.md"
+require_file "$ROOT/161000_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_ATLAS.md"
+require_file "$ROOT/161010_STREAM_STUDIO_TASK_TO_DOCUMENT_ROUTING_MAP.md"
+require_file "$ROOT/161020_STREAM_STUDIO_PHASE_TO_DOCUMENT_ENTRYPOINT_MAP.md"
+require_file "$ROOT/161030_STREAM_STUDIO_WHERE_TO_READ_FIRST_GUIDE.md"
+require_file "$ROOT/161099_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_SUMMARY.md"
+require_file "$ROOT/161190_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161190_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161_INDEX.md -->
+# ============================================================
+# 161 QUICK LOOKUP NAVIGATION INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 161.quick-lookup-navigation
+owner: Boss
+prepared_by: Zero
+
+files:
+- 161000_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_ATLAS.md
+- 161010_STREAM_STUDIO_TASK_TO_DOCUMENT_ROUTING_MAP.md
+- 161020_STREAM_STUDIO_PHASE_TO_DOCUMENT_ENTRYPOINT_MAP.md
+- 161030_STREAM_STUDIO_WHERE_TO_READ_FIRST_GUIDE.md
+- 161099_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_SUMMARY.md
+- 161190_STREAM_STUDIO_QUICK_LOOKUP_NAVIGATION_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161_OVERVIEW.md -->
+# ============================================================
+# 161 QUICK LOOKUP NAVIGATION OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 161.quick-lookup-navigation
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the quick-lookup navigation pack for StreamStudio.
+This folder helps future chats and future reading by mapping tasks,
+phases, and decision points to the right documents first.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/161.quick-lookup-navigation/161_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162000_STREAM_STUDIO_FROZEN_DECISION_MASTER_REGISTER.md -->
+# ============================================================
+# STREAM STUDIO FROZEN DECISION MASTER REGISTER
+# ============================================================
+
+status: decision-register
+layer: implementation-decision
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Collects the highest-level StreamStudio decisions that are already frozen.
+
+# ============================================================
+# 1. APP IDENTITY DECISIONS
+# ============================================================
+
+identity_decisions:
+- StreamStudio is the creator production and publishing app of StreamingOS
+- StreamStudio is not only an uploader
+- StreamStudio includes creator-side publish, commerce-entry, membership, and later connector operations scope by phase
+- StreamStudio remains app-specific in this chat
+
+# ============================================================
+# 2. ARCHITECTURE DECISIONS
+# ============================================================
+
+architecture_decisions:
+- publish and listing are distinct state families
+- membership is distinct from one-time paid offer
+- split and settlement visibility are distinct from marketplace execution
+- runtime jobs are first-class records
+- audit events are first-class append-only records
+- permission and blocker visibility are explicit
+
+# ============================================================
+# 3. PHASE ORDER DECISIONS
+# ============================================================
+
+phase_order_decisions:
+- phase 1 = creator asset preparation and publish base
+- phase 2 = review, approval, notification execution
+- phase 3 = marketplace and paid video execution
+- phase 4 = membership and entitlement execution
+- phase 5 = collaborator authority refinement, split, settlement visibility
+- phase 6 = external push and operations hardening
+
+# ============================================================
+# 4. IMPLEMENTATION-STATUS DECISIONS
+# ============================================================
+
+implementation_status_decisions:
+- implementation has not started
+- real SQL apply has not started
+- design bundles may be apply-ready but are not evidence of real execution
+- this chat remains design-only
+
+# ============================================================
+# 5. CHAT-SCOPE DECISIONS
+# ============================================================
+
+chat_scope_decisions:
+- common-component finalization is outside this chat
+- StreamStudio-only scope is the rule here
+- future chats should start from summary and handoff packs, not from scratch
+
+# ============================================================
+# 6. MASTER FIXED STATEMENT
+# ============================================================
+
+fixed_statement:
+The decisions above are frozen and should be treated as the master truth
+for StreamStudio in this chat context.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162000_STREAM_STUDIO_FROZEN_DECISION_MASTER_REGISTER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162010_STREAM_STUDIO_PHASE1_FROZEN_DECISION_REGISTER.md -->
+# ============================================================
+# STREAM STUDIO PHASE1 FROZEN DECISION REGISTER
+# ============================================================
+
+status: decision-register
+layer: implementation-decision
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Collects the frozen decisions specific to Phase 1.
+
+phase1_scope_decisions:
+- project base is included
+- upload base is included
+- video draft base is included
+- metadata editing base is included
+- thumbnail assignment base is included
+- subtitle base is included
+- edit marker base is included
+- publish setting base is included
+- publish readiness base is included
+- publish request base is included
+- scheduled publish base is included
+- audit and runtime base are included
+
+phase1_exclusion_decisions:
+- marketplace execution is excluded
+- membership execution is excluded
+- split execution is excluded
+- settlement execution is excluded
+- external push execution is excluded
+
+phase1_sql_decisions:
+- migration-unit split is required
+- audit and runtime tables are included in phase 1 SQL design
+- PERSONA_DATABASE_URL is the intended DB target for StreamStudio-side DB work
+- Method A is the required SQL output style when real SQL is produced later
+
+phase1_gate_decisions:
+- blocker categories must stay distinct
+- optimistic locking is required where already frozen
+- audit omission is not allowed
+- runtime invisibility is not allowed
+
+fixed_statement:
+These are the frozen Phase 1 decisions and should be treated as non-negotiable
+unless Phase 1 itself is explicitly redesigned.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162010_STREAM_STUDIO_PHASE1_FROZEN_DECISION_REGISTER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162020_STREAM_STUDIO_POST_PHASE1_FROZEN_DECISION_REGISTER.md -->
+# ============================================================
+# STREAM STUDIO POST PHASE1 FROZEN DECISION REGISTER
+# ============================================================
+
+status: decision-register
+layer: implementation-decision
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Collects the frozen post-phase1 decisions.
+
+phase2_decisions:
+- workflow governance comes before commerce expansion
+- review / approval / notification belong here
+
+phase3_decisions:
+- marketplace and paid video belong here
+- listing does not replace publish
+- commerce entry begins here, not earlier
+
+phase4_decisions:
+- membership and entitlement belong here
+- membership follows stabilized access-mode and commerce concepts
+
+phase5_decisions:
+- collaborator authority refinement, split, and settlement visibility belong here
+- monetization governance follows monetized source models
+
+phase6_decisions:
+- external push and operations hardening belong here
+- internal canonical publish must stabilize first
+
+cross_phase_decisions:
+- later phases must not rewrite earlier canonical truth casually
+- phase order is dependency-driven, not arbitrary
+- release slices follow user-visible value, not subsystem naming alone
+
+fixed_statement:
+These post-phase1 decisions are frozen for roadmap and future planning.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162020_STREAM_STUDIO_POST_PHASE1_FROZEN_DECISION_REGISTER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162030_STREAM_STUDIO_PROHIBITED_DRIFT_REGISTER.md -->
+# ============================================================
+# STREAM STUDIO PROHIBITED DRIFT REGISTER
+# ============================================================
+
+status: decision-register
+layer: implementation-decision
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Lists the major drifts that are explicitly prohibited.
+
+prohibited_drifts:
+- saying implementation already started when it did not
+- treating prepared SQL blocks as proof of apply
+- merging publish and listing state families
+- merging membership and one-time paid logic implicitly
+- moving marketplace execution into phase 1
+- moving membership execution into phase 1
+- removing audit from phase 1
+- removing runtime visibility from phase 1
+- re-mixing common-component work into this chat
+- replacing frozen enum values with UI labels
+- collapsing blocker categories into generic unknown error
+- treating external push success as identical to canonical internal publish success
+
+drift_response_rule:
+If any prohibited drift appears,
+the correct response is to stop and return to the frozen decision packs.
+
+fixed_statement:
+The items above are prohibited drifts for StreamStudio in this chat context.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162030_STREAM_STUDIO_PROHIBITED_DRIFT_REGISTER.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162099_STREAM_STUDIO_FROZEN_DECISION_REGISTER_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO FROZEN DECISION REGISTER SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: implementation-decision-summary
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the frozen decision register pack.
+
+packet_files:
+- 162000_STREAM_STUDIO_FROZEN_DECISION_MASTER_REGISTER.md
+- 162010_STREAM_STUDIO_PHASE1_FROZEN_DECISION_REGISTER.md
+- 162020_STREAM_STUDIO_POST_PHASE1_FROZEN_DECISION_REGISTER.md
+- 162030_STREAM_STUDIO_PROHIBITED_DRIFT_REGISTER.md
+- 162190_STREAM_STUDIO_FROZEN_DECISION_REGISTER_VERIFY.sh
+
+recommended_use_order:
+- read 162000
+- read 162010
+- read 162020
+- read 162030
+- run 162190
+
+fixed_statement:
+This packet is the canonical frozen-decision lookup pack for StreamStudio.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162099_STREAM_STUDIO_FROZEN_DECISION_REGISTER_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162190_STREAM_STUDIO_FROZEN_DECISION_REGISTER_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register"
+REPORT="$HOME/.tmp/stream_studio_frozen_decision_register_verify_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO FROZEN DECISION REGISTER VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/162_OVERVIEW.md"
+require_file "$ROOT/162_INDEX.md"
+require_file "$ROOT/162000_STREAM_STUDIO_FROZEN_DECISION_MASTER_REGISTER.md"
+require_file "$ROOT/162010_STREAM_STUDIO_PHASE1_FROZEN_DECISION_REGISTER.md"
+require_file "$ROOT/162020_STREAM_STUDIO_POST_PHASE1_FROZEN_DECISION_REGISTER.md"
+require_file "$ROOT/162030_STREAM_STUDIO_PROHIBITED_DRIFT_REGISTER.md"
+require_file "$ROOT/162099_STREAM_STUDIO_FROZEN_DECISION_REGISTER_SUMMARY.md"
+require_file "$ROOT/162190_STREAM_STUDIO_FROZEN_DECISION_REGISTER_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162190_STREAM_STUDIO_FROZEN_DECISION_REGISTER_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162_INDEX.md -->
+# ============================================================
+# 162 FROZEN DECISION REGISTER INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: StreamStudio
+directory: 162.frozen-decision-register
+owner: Boss
+prepared_by: Zero
+
+files:
+- 162000_STREAM_STUDIO_FROZEN_DECISION_MASTER_REGISTER.md
+- 162010_STREAM_STUDIO_PHASE1_FROZEN_DECISION_REGISTER.md
+- 162020_STREAM_STUDIO_POST_PHASE1_FROZEN_DECISION_REGISTER.md
+- 162030_STREAM_STUDIO_PROHIBITED_DRIFT_REGISTER.md
+- 162099_STREAM_STUDIO_FROZEN_DECISION_REGISTER_SUMMARY.md
+- 162190_STREAM_STUDIO_FROZEN_DECISION_REGISTER_VERIFY.sh
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162_OVERVIEW.md -->
+# ============================================================
+# 162 FROZEN DECISION REGISTER OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: StreamStudio
+directory: 162.frozen-decision-register
+owner: Boss
+prepared_by: Zero
+
+summary:
+Contains the frozen decision register for StreamStudio.
+This folder collects the major decisions that are already fixed,
+especially the ones that should not drift in later chats.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/120.implementation/162.frozen-decision-register/162_OVERVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900110_STREAM_STUDIO_COMMON_COMPONENT_CANDIDATES.md -->
 # ============================================================
 # STREAM STUDIO COMMON COMPONENT CANDIDATES
 # ============================================================
@@ -9638,6 +18671,11 @@ recommended_common_components:
 note:
 These are candidate promotions only.
 This file does not modify shared component official ledgers.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900110_STREAM_STUDIO_COMMON_COMPONENT_CANDIDATES.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900111_STREAM_STUDIO_COMMON_COMPONENT_REVIEW_MATRIX.md -->
 # ============================================================
 # STREAM STUDIO COMMON COMPONENT REVIEW MATRIX
 # ============================================================
@@ -9913,6 +18951,11 @@ hold_for_later:
 final_note:
 This matrix is a review layer only.
 No candidate is officially promoted yet.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900111_STREAM_STUDIO_COMMON_COMPONENT_REVIEW_MATRIX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900112_STREAM_STUDIO_COMMON_COMPONENT_OFFICIAL_SELECTION.md -->
 # ============================================================
 # STREAM STUDIO COMMON COMPONENT OFFICIAL SELECTION
 # ============================================================
@@ -10096,6 +19139,11 @@ for StreamStudio-origin promotion candidates.
 
 No candidate is promoted yet,
 but the selected set is now fixed for promotion-design work.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900112_STREAM_STUDIO_COMMON_COMPONENT_OFFICIAL_SELECTION.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900113_STREAM_STUDIO_COMMON_COMPONENT_PROMOTION_DESIGN_PLAN.md -->
 # ============================================================
 # STREAM STUDIO COMMON COMPONENT PROMOTION DESIGN PLAN
 # ============================================================
@@ -10232,6 +19280,11 @@ final_note:
 This file is the official planning bridge
 between candidate selection
 and per-component promotion design work.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900113_STREAM_STUDIO_COMMON_COMPONENT_PROMOTION_DESIGN_PLAN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900114_UPLOAD_INTAKE_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # UPLOAD INTAKE COMMON PROMOTION DESIGN
 # ============================================================
@@ -10472,6 +19525,11 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900114_UPLOAD_INTAKE_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900115_METADATA_EDITING_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # METADATA EDITING COMMON PROMOTION DESIGN
 # ============================================================
@@ -10735,6 +19793,11 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900115_METADATA_EDITING_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900116_APPROVAL_FLOW_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # APPROVAL FLOW COMMON PROMOTION DESIGN
 # ============================================================
@@ -11002,6 +20065,11 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900116_APPROVAL_FLOW_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900117_PUBLISH_SETTINGS_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # PUBLISH SETTINGS COMMON PROMOTION DESIGN
 # ============================================================
@@ -11267,6 +20335,11 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900117_PUBLISH_SETTINGS_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900118_MARKETPLACE_LISTING_EDITOR_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # MARKETPLACE LISTING EDITOR COMMON PROMOTION DESIGN
 # ============================================================
@@ -11540,6 +20613,11 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900118_MARKETPLACE_LISTING_EDITOR_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900119_MEMBERSHIP_PROGRAM_MANAGER_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # MEMBERSHIP PROGRAM MANAGER COMMON PROMOTION DESIGN
 # ============================================================
@@ -11826,6 +20904,11 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900119_MEMBERSHIP_PROGRAM_MANAGER_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900120_PROJECT_MEMBER_AUTHORITY_MATRIX_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # PROJECT MEMBER AUTHORITY MATRIX COMMON PROMOTION DESIGN
 # ============================================================
@@ -12096,6 +21179,11 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900120_PROJECT_MEMBER_AUTHORITY_MATRIX_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900120_STREAM_STUDIO_CX22073_CANDIDATE_AREAS.md -->
 # ============================================================
 # STREAM STUDIO CX22073 CANDIDATE AREAS
 # ============================================================
@@ -12130,6 +21218,11 @@ recommended_candidate_data_areas:
 note:
 These are candidate additions only.
 This file does not directly modify CX22073 official ledgers.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900120_STREAM_STUDIO_CX22073_CANDIDATE_AREAS.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900121_FIXED_FEE_AND_PERCENTAGE_ALLOCATION_COMMON_PROMOTION_DESIGN.md -->
 # ============================================================
 # FIXED FEE AND PERCENTAGE ALLOCATION COMMON PROMOTION DESIGN
 # ============================================================
@@ -12401,6 +21494,1689 @@ as a reusable contract-first common component candidate.
 It is ready to be treated
 as an official promotion-design unit
 for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900121_FIXED_FEE_AND_PERCENTAGE_ALLOCATION_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900122_REVENUE_SPLIT_EDITOR_COMMON_PROMOTION_DESIGN.md -->
+# ============================================================
+# REVENUE SPLIT EDITOR COMMON PROMOTION DESIGN
+# ============================================================
+
+status: promotion-design
+layer: meta
+system: applications
+application_origin: StreamStudio
+component_name: Revenue Split Editor Common
+owner: Boss
+prepared_by: Zero
+language: English
+
+## 1. Purpose
+
+This document defines the promotion design
+for Revenue Split Editor Common.
+
+The purpose of this common component is to provide
+a reusable revenue-split editing contract and editing surface
+for monetized collaborative applications,
+creator revenue-sharing applications,
+and other systems that expose participant-facing split configuration.
+
+This component should not remain permanently StreamStudio-local
+because revenue split editing is a repeated structure
+across collaborative monetization products.
+
+---
+
+## 2. Canonical Responsibility
+
+Revenue Split Editor Common is responsible for:
+
+- revenue split structure editing
+- participant share editing
+- split validation exposure
+- split summary exposure
+- draft-safe split editing support
+- split-state normalization for app consumers
+- explicit split save and change handling
+
+It is not responsible for:
+
+- payout execution
+- settlement execution
+- tax calculation
+- accounting engine behavior
+- contract/legal enforcement logic
+- backend payout processor implementation
+
+---
+
+## 3. Reuse Scope
+
+reuse_scope:
+- collaborative monetization applications
+- creator revenue-sharing systems
+- payout-preparation surfaces
+- project-based monetization tools
+- monetized media and asset applications
+
+likely_future_consumers:
+- StreamStudio
+- creator monetization tools
+- collaborative publishing systems
+- future payout-preparation apps
+- revenue-sharing asset platforms
+
+---
+
+## 4. Core Responsibilities
+
+- define split participants
+- define participant share entries
+- support split adjustment
+- expose split validation state
+- expose total-share consistency summary
+- expose split preview summary
+- support draft-safe editing before save
+- support explicit split change visibility
+- support reusable split-rule grouping without StreamStudio-only layout dependence
+
+---
+
+## 5. Required Input Contract
+
+required_inputs:
+- split_context_id
+- split_profile
+- participant_list
+- current_split_payload
+- current_split_state
+- currency_context_or_null
+- validation_policy_profile
+- split_constraints
+- permission_context
+
+input_notes:
+- split_profile determines the allowed split model
+- participant_list must remain normalized and reference-driven
+- currency_context_or_null may be needed when split summaries show money projections
+- split_constraints must remain explicit and structured
+- this component may reference allocation rules without redefining lower-level allocation foundations
+
+---
+
+## 6. Output / Event Contract
+
+emitted_events:
+- split_editor_opened
+- split_entry_added
+- split_entry_removed
+- split_entry_changed
+- split_validation_failed
+- split_validation_passed
+- split_save_requested
+- split_saved
+- split_save_failed
+- split_preview_requested
+- split_action_denied
+- split_editor_closed
+
+output_notes:
+- split_save_requested and split_saved must remain separate
+- validation failure must remain explicit
+- preview_requested should remain explicit where app consumers need it
+- denied actions must remain visible and structured
+
+---
+
+## 7. State Model
+
+normalized_state_model:
+- split_not_started
+- split_editing
+- split_dirty
+- split_validation_failed
+- split_ready_to_save
+- split_saving
+- split_saved
+- split_save_failed
+- split_blocked
+
+state_model_notes:
+- split_saved does not imply payout-ready
+- split_blocked is distinct from action_denied
+- validation failure must remain distinct from save failure
+- a split may be structurally present without being validation-passed
+
+---
+
+## 8. Permission Assumptions
+
+permission_assumptions:
+- caller must already be allowed to view split state
+- caller must already be allowed to edit split entries where applicable
+- split edit permission is not equivalent to settlement execution permission
+- split edit permission is not equivalent to project ownership
+- split edit permission is not equivalent to accounting close authority
+
+permission_boundary_note:
+This component assumes a validated permission context,
+but it should not become the canonical global permission engine.
+
+---
+
+## 9. Revenue Split Boundary
+
+minimum_split_concepts:
+- participant_id
+- split_value
+- split_type
+- split_state
+- validation_result
+- split_constraints
+- save_allowed_flag
+
+optional_split_concepts_by_profile:
+- recommended_split_hint
+- locked_split_entry
+- priority_recoup_marker
+- bonus_share_marker
+- capped_share_marker
+
+split_boundary_note:
+Optional split concepts may vary by app profile,
+but the common contract should remain revenue-split-editor oriented
+instead of app-screen oriented.
+
+---
+
+## 10. UI / Behavior Boundary
+
+allowed_common_surface_behavior:
+- split summary strip
+- participant split table
+- split edit controls
+- validation summary
+- preview action area
+- save action area
+- blocker summary
+
+must_not_be_baked_in:
+- StreamStudio-specific wording
+- StreamStudio-specific collaborator revenue copy
+- payout execution detail
+- settlement engine detail
+- tax engine detail
+- app-specific negotiation copy
+
+---
+
+## 11. Failure / Recovery Design Notes
+
+failure_and_recovery_notes:
+- validation failure must remain explicit
+- save failure must not destroy current editing state
+- over-split and under-split states should remain reviewable before save
+- preview failure must remain distinguishable from save failure
+- participant removal failure must not corrupt confirmed split state
+
+---
+
+## 12. Relationship to Other Common Candidates
+
+related_common_candidates:
+- Fixed Fee and Percentage Allocation Common
+- Project Member Authority Matrix Common
+- Multi-Currency Monetary Core
+- Audit Reconstruction Bundle Common
+
+relationship_notes:
+- Fixed Fee and Percentage Allocation Common may provide lower-level allocation-rule structure beneath or beside revenue split editing
+- Project Member Authority Matrix Common may provide stable participant-role references and authority scope for split editing
+- Multi-Currency Monetary Core provides shared monetary rules that split summaries should reference rather than redefine
+- Audit Reconstruction Bundle Common may preserve split change traceability outside the split-editor core
+
+---
+
+## 13. Promotion Caution
+
+promotion_caution:
+- do not merge revenue split editing with payout execution
+- do not merge revenue split editing with tax or accounting logic
+- do not hard-code StreamStudio-specific revenue language
+- do not embed negotiation policy in the common contract
+- do not assume one fixed payout backend implementation
+
+---
+
+## 14. Initial Promotion Judgment
+
+initial_promotion_judgment:
+- promotion_design_ready: yes
+- official_promotion_recommended: yes
+- recommended_next_relation_review:
+  - Fixed Fee and Percentage Allocation Common
+  - Project Member Authority Matrix Common
+  - Multi-Currency Monetary Core
+  - Audit Reconstruction Bundle Common
+
+---
+
+## 15. Final Note
+
+This design defines Revenue Split Editor Common
+as a reusable contract-first common component candidate.
+
+It is ready to be treated
+as an official promotion-design unit
+for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900122_REVENUE_SPLIT_EDITOR_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900123_MULTI_CURRENCY_MONETARY_CORE_PROMOTION_DESIGN.md -->
+# ============================================================
+# MULTI-CURRENCY MONETARY CORE PROMOTION DESIGN
+# ============================================================
+
+status: promotion-design
+layer: meta
+system: applications
+application_origin: StreamStudio
+component_name: Multi-Currency Monetary Core
+owner: Boss
+prepared_by: Zero
+language: English
+
+## 1. Purpose
+
+This document defines the promotion design
+for Multi-Currency Monetary Core.
+
+The purpose of this common component is to provide
+a reusable monetary-rule contract and display-safe money handling core
+for commerce-enabled applications, settlement-preparation surfaces,
+pricing editors, and revenue-sharing applications.
+
+This component should not remain permanently StreamStudio-local
+because currency-safe money handling is a foundational cross-app concern.
+
+---
+
+## 2. Canonical Responsibility
+
+Multi-Currency Monetary Core is responsible for:
+
+- currency-aware money structure definition
+- base currency and display currency separation
+- amount precision handling
+- rounding rule handling
+- monetary state normalization
+- historical amount labeling support
+- conversion-context display support
+- currency-safe summary contract exposure
+
+It is not responsible for:
+
+- payment execution
+- settlement execution
+- exchange-rate provider implementation
+- tax calculation engine logic
+- accounting close logic
+- app-specific pricing strategy
+- backend financial ledger implementation
+
+---
+
+## 3. Reuse Scope
+
+reuse_scope:
+- commerce-enabled applications
+- payout-preparation applications
+- revenue-sharing applications
+- pricing editor applications
+- marketplace-connected applications
+- reporting and summary surfaces that expose money values
+
+likely_future_consumers:
+- StreamStudio
+- StaticArtOS commerce flows
+- marketplace listing tools
+- membership management tools
+- payout-preparation tools
+- future creator monetization applications
+
+---
+
+## 4. Core Responsibilities
+
+- define money value with explicit currency identity
+- distinguish base currency from display currency
+- distinguish stored amount from displayed converted amount
+- support precision and rounding policy exposure
+- support monetary summary normalization
+- expose historical amount labeling where needed
+- support app-consumable conversion context
+- support additive currency-rule extensions without rewriting the base contract
+
+---
+
+## 5. Required Input Contract
+
+required_inputs:
+- money_context_id
+- base_amount
+- base_currency_code
+- display_currency_code_or_null
+- precision_policy
+- rounding_policy
+- historical_amount_label_or_null
+- conversion_reference_or_null
+- monetary_profile
+
+input_notes:
+- base_amount and base_currency_code are mandatory
+- display_currency_code_or_null may equal base currency or may be omitted
+- conversion_reference_or_null should be explicit when display conversion is shown
+- monetary_profile allows app-specific rule combinations while preserving the common contract
+
+---
+
+## 6. Output / Event Contract
+
+emitted_events:
+- monetary_value_render_requested
+- display_currency_changed
+- rounding_policy_applied
+- historical_amount_label_rendered
+- conversion_context_rendered
+- invalid_monetary_input_detected
+- monetary_state_normalized
+
+output_notes:
+- this core is mostly contract and normalization oriented,
+  but emitted events remain useful for consumer orchestration
+- invalid monetary input should remain explicit
+- conversion context should remain explicit when a displayed converted amount is shown
+
+---
+
+## 7. State Model
+
+normalized_state_model:
+- monetary_pristine
+- monetary_normalized
+- monetary_display_ready
+- monetary_conversion_applied
+- monetary_invalid
+- monetary_rounding_applied
+
+state_model_notes:
+- monetary_display_ready does not imply payment-ready
+- monetary_conversion_applied is distinct from monetary_normalized
+- monetary_invalid must remain explicit
+- historical labeling may exist without active conversion
+
+---
+
+## 8. Permission Assumptions
+
+permission_assumptions:
+- caller must already be allowed to view or edit monetary fields as applicable
+- monetary display permission is not equivalent to settlement execution permission
+- monetary edit permission is not equivalent to accounting close authority
+- this component assumes financial visibility is already authorized by the consumer app
+
+permission_boundary_note:
+This component assumes a validated permission context,
+but it should not become the canonical global permission engine.
+
+---
+
+## 9. Monetary Boundary
+
+minimum_monetary_concepts:
+- base_amount
+- base_currency_code
+- display_currency_code_or_null
+- precision_policy
+- rounding_policy
+- normalized_display_value
+- historical_amount_label_or_null
+- conversion_reference_or_null
+
+optional_monetary_concepts_by_profile:
+- display-only approximate marker
+- rate timestamp label
+- source-vs-display currency badge
+- legacy amount badge
+- estimated amount badge
+
+monetary_boundary_note:
+Optional concepts may vary by app profile,
+but the common contract should remain monetary-core oriented
+instead of app-screen oriented.
+
+---
+
+## 10. UI / Behavior Boundary
+
+allowed_common_surface_behavior:
+- monetary summary strip
+- base/display currency label rendering
+- rounded value rendering
+- historical label rendering
+- conversion context rendering
+- invalid-state exposure
+
+must_not_be_baked_in:
+- StreamStudio-specific pricing wording
+- payment checkout behavior
+- exchange-rate provider implementation detail
+- accounting engine detail
+- tax engine detail
+- app-specific pricing strategy text
+
+---
+
+## 11. Failure / Recovery Design Notes
+
+failure_and_recovery_notes:
+- invalid currency input must remain explicit
+- display conversion absence must not corrupt base amount display
+- rounding application should remain reviewable
+- historical amount labels should remain stable even when display currency changes
+- approximate display should remain distinguishable from exact base amount
+
+---
+
+## 12. Relationship to Other Common Candidates
+
+related_common_candidates:
+- Marketplace Listing Editor Common
+- Membership Program Manager Common
+- Revenue Split Editor Common
+- Fixed Fee and Percentage Allocation Common
+
+relationship_notes:
+- Marketplace Listing Editor Common uses this core for listing-facing monetary structure
+- Membership Program Manager Common may use this core for tier-facing money representation
+- Revenue Split Editor Common may use this core for projected or summary monetary values
+- Fixed Fee and Percentage Allocation Common uses this core for fixed-fee currency-safe handling
+
+---
+
+## 13. Promotion Caution
+
+promotion_caution:
+- do not merge monetary core with payment execution
+- do not merge monetary core with settlement execution
+- do not hard-code one exchange-rate source
+- do not embed app-specific pricing strategy in the common contract
+- do not treat display conversion as source-of-truth overwrite
+
+---
+
+## 14. Initial Promotion Judgment
+
+initial_promotion_judgment:
+- promotion_design_ready: yes
+- official_promotion_recommended: yes
+- recommended_next_relation_review:
+  - Marketplace Listing Editor Common
+  - Membership Program Manager Common
+  - Revenue Split Editor Common
+  - Fixed Fee and Percentage Allocation Common
+
+---
+
+## 15. Final Note
+
+This design defines Multi-Currency Monetary Core
+as a reusable contract-first common component candidate.
+
+It is ready to be treated
+as an official promotion-design unit
+for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900123_MULTI_CURRENCY_MONETARY_CORE_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900124_RETRY_AND_DEAD_LETTER_VISIBILITY_COMMON_PROMOTION_DESIGN.md -->
+# ============================================================
+# RETRY AND DEAD-LETTER VISIBILITY COMMON PROMOTION DESIGN
+# ============================================================
+
+status: promotion-design
+layer: meta
+system: applications
+application_origin: StreamStudio
+component_name: Retry and Dead-Letter Visibility Common
+owner: Boss
+prepared_by: Zero
+language: English
+
+## 1. Purpose
+
+This document defines the promotion design
+for Retry and Dead-Letter Visibility Common.
+
+The purpose of this common component is to provide
+a reusable visibility contract and operator-facing surface
+for retryable failures, dead-letter states, recovery attempts,
+and async job failure review across connector-driven
+and queue-driven applications.
+
+This component should not remain permanently StreamStudio-local
+because retry and dead-letter visibility
+is a reusable operational concern across multiple systems.
+
+---
+
+## 2. Canonical Responsibility
+
+Retry and Dead-Letter Visibility Common is responsible for:
+
+- retryable failure visibility
+- dead-letter state visibility
+- retry eligibility summary exposure
+- failure classification summary exposure
+- retry attempt history visibility
+- dead-letter review entry points
+- operator-facing recovery-state normalization
+
+It is not responsible for:
+
+- queue engine implementation
+- connector engine implementation
+- background worker implementation
+- business-specific recovery policy
+- permanent audit storage engine
+- auto-retry scheduler implementation
+
+---
+
+## 3. Reuse Scope
+
+reuse_scope:
+- connector-driven applications
+- async job surfaces
+- queue-driven applications
+- recovery-oriented operational tools
+- governance and reliability dashboards
+
+likely_future_consumers:
+- StreamStudio
+- external publish/push applications
+- marketplace connector tools
+- async asset-processing systems
+- future reliability and ops surfaces
+
+---
+
+## 4. Core Responsibilities
+
+- expose retryable vs non-retryable failure state
+- expose dead-letter summary and count
+- expose retry attempt history
+- expose latest failure reason summary
+- expose recovery entry points where allowed
+- support operator-facing failure filtering
+- normalize retry and dead-letter state for consumer apps
+- support additive recovery-state extensions without rewriting the base contract
+
+---
+
+## 5. Required Input Contract
+
+required_inputs:
+- operation_context_id
+- operation_type
+- current_failure_state
+- retry_attempt_count
+- retry_limit_or_null
+- dead_letter_flag
+- retry_eligibility_result
+- failure_reason_summary
+- failure_timestamp
+- permission_context
+
+input_notes:
+- operation_context_id should remain stable across retries
+- current_failure_state must remain explicit and normalized
+- retry_limit_or_null may be profile-specific
+- retry_eligibility_result should remain structured, not only inferred from attempt count
+
+---
+
+## 6. Output / Event Contract
+
+emitted_events:
+- retry_visibility_opened
+- retry_requested
+- retry_started
+- retry_succeeded
+- retry_failed
+- dead_letter_open_requested
+- dead_letter_marked
+- dead_letter_cleared
+- recovery_action_denied
+- retry_history_view_requested
+- retry_visibility_closed
+
+output_notes:
+- retry_requested and retry_started must remain separate
+- retry_succeeded and retry_failed must remain explicit
+- dead-letter entry and clearance actions should remain structured
+- denied recovery actions must remain visible
+
+---
+
+## 7. State Model
+
+normalized_state_model:
+- operation_ok
+- operation_retryable_failed
+- operation_retry_in_progress
+- operation_retry_succeeded
+- operation_retry_failed
+- operation_dead_lettered
+- operation_recovery_blocked
+- operation_recovery_closed
+
+state_model_notes:
+- operation_dead_lettered is distinct from operation_retry_failed
+- operation_recovery_blocked is distinct from retry_ineligible
+- retry_succeeded should not erase prior history visibility
+- dead-letter clearance should remain explicit and auditable
+
+---
+
+## 8. Permission Assumptions
+
+permission_assumptions:
+- caller must already be allowed to view retry/dead-letter state
+- caller must already be allowed to trigger retry or recovery where applicable
+- recovery permission is not equivalent to connector configuration permission
+- recovery permission is not equivalent to business approval permission
+
+permission_boundary_note:
+This component assumes a validated operational permission context,
+but it should not become the canonical global permission engine.
+
+---
+
+## 9. Retry / Dead-Letter Boundary
+
+minimum_operational_concepts:
+- operation_context_id
+- operation_type
+- failure_state
+- retry_attempt_count
+- retry_limit_or_null
+- retry_eligibility_result
+- dead_letter_flag
+- latest_failure_reason
+- latest_failure_timestamp
+
+optional_operational_concepts_by_profile:
+- next_retry_eta
+- manual_retry_only_marker
+- auto_retry_disabled_marker
+- dead_letter_bucket_label
+- operator_note_summary
+
+boundary_note:
+Optional recovery concepts may vary by app profile,
+but the common contract should remain retry/dead-letter visibility oriented
+instead of app-screen oriented.
+
+---
+
+## 10. UI / Behavior Boundary
+
+allowed_common_surface_behavior:
+- retry status summary strip
+- latest failure reason summary
+- retry action area
+- retry history summary
+- dead-letter indicator
+- recovery blocker summary
+- operator-facing filter controls
+
+must_not_be_baked_in:
+- StreamStudio-specific wording
+- StreamStudio-specific connector names
+- queue-engine implementation detail
+- worker-runtime implementation detail
+- app-specific operational copy
+- auto-retry scheduler logic detail
+
+---
+
+## 11. Failure / Recovery Design Notes
+
+failure_and_recovery_notes:
+- retry failure must remain distinguishable from dead-letter transition
+- retry history must remain visible after later success
+- dead-letter state must remain explicit and not inferred from retry exhaustion only
+- manual recovery denial must remain explicit
+- failure summaries should degrade safely when low-level error detail is unavailable
+
+---
+
+## 12. Relationship to Other Common Candidates
+
+related_common_candidates:
+- External Push Connector Common
+- Upload Intake Common
+- Audit Reconstruction Bundle Common
+
+relationship_notes:
+- External Push Connector Common handles outbound connector boundary and push behavior
+- Upload Intake Common may surface retryable upload failures, but should not own broader dead-letter visibility
+- Audit Reconstruction Bundle Common may preserve deeper traceability beyond the visibility layer handled here
+
+---
+
+## 13. Promotion Caution
+
+promotion_caution:
+- do not merge visibility with queue-engine ownership
+- do not merge dead-letter visibility with business recovery policy logic
+- do not hard-code StreamStudio-specific connector semantics
+- do not assume one retry scheduler implementation
+- do not collapse retryable failure and dead-letter state into one state
+
+---
+
+## 14. Initial Promotion Judgment
+
+initial_promotion_judgment:
+- promotion_design_ready: yes
+- official_promotion_recommended: yes
+- recommended_next_relation_review:
+  - External Push Connector Common
+  - Audit Reconstruction Bundle Common
+  - Upload Intake Common
+
+---
+
+## 15. Final Note
+
+This design defines Retry and Dead-Letter Visibility Common
+as a reusable contract-first common component candidate.
+
+It is ready to be treated
+as an official promotion-design unit
+for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900124_RETRY_AND_DEAD_LETTER_VISIBILITY_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900125_EXTERNAL_PUSH_CONNECTOR_COMMON_PROMOTION_DESIGN.md -->
+# ============================================================
+# EXTERNAL PUSH CONNECTOR COMMON PROMOTION DESIGN
+# ============================================================
+
+status: promotion-design
+layer: meta
+system: applications
+application_origin: StreamStudio
+component_name: External Push Connector Common
+owner: Boss
+prepared_by: Zero
+language: English
+
+## 1. Purpose
+
+This document defines the promotion design
+for External Push Connector Common.
+
+The purpose of this common component is to provide
+a reusable outbound push / publish connector contract
+for applications that send content, state, or release events
+to external platforms or external destination systems.
+
+This component should not remain permanently StreamStudio-local
+because outbound connector behavior is reusable
+across multiple applications with external publish needs.
+
+---
+
+## 2. Canonical Responsibility
+
+External Push Connector Common is responsible for:
+
+- external push request structure
+- target-destination selection structure
+- outbound payload boundary exposure
+- connector execution state normalization
+- connector result visibility
+- connector failure summary exposure
+- connector retry handoff support
+
+It is not responsible for:
+
+- app-specific publish approval logic
+- app-specific metadata editing
+- queue engine implementation
+- retry engine implementation
+- external platform SDK ownership
+- external settlement or billing logic
+
+---
+
+## 3. Reuse Scope
+
+reuse_scope:
+- publishing applications
+- outbound connector-driven applications
+- creator-side push tools
+- marketplace-connected applications
+- release-capable applications
+
+likely_future_consumers:
+- StreamStudio
+- creator push tools
+- external publication applications
+- marketplace export tools
+- future cross-platform publishing apps
+
+---
+
+## 4. Core Responsibilities
+
+- define outbound push target
+- define outbound push payload boundary
+- expose connector-ready / blocked state
+- expose push request entry points
+- expose connector result summary
+- expose connector failure summary
+- support additive connector target expansion
+- normalize push state for consumer apps
+
+---
+
+## 5. Required Input Contract
+
+required_inputs:
+- connector_context_id
+- connector_profile
+- target_destination
+- payload_reference
+- payload_summary
+- connector_readiness_result
+- connector_blockers
+- permission_context
+- retry_context_or_null
+
+input_notes:
+- payload_reference should remain explicit
+- connector_readiness_result must remain structured
+- retry_context_or_null may be supplied from external reliability layers
+- connector_profile determines supported destination families
+
+---
+
+## 6. Output / Event Contract
+
+emitted_events:
+- push_connector_opened
+- push_requested
+- push_started
+- push_succeeded
+- push_failed
+- push_block_detected
+- destination_changed
+- push_action_denied
+- retry_handoff_requested
+- push_connector_closed
+
+---
+
+## 7. State Model
+
+normalized_state_model:
+- push_not_started
+- push_ready
+- push_blocked
+- push_in_progress
+- push_succeeded
+- push_failed
+- push_retry_handoff_ready
+- push_closed
+
+state_model_notes:
+- push_failed is distinct from push_blocked
+- push_succeeded does not imply downstream platform success permanence
+- retry handoff should remain explicit rather than inferred
+
+---
+
+## 8. Permission Assumptions
+
+permission_assumptions:
+- caller must already be allowed to initiate outbound push
+- push permission is not equivalent to publish approval permission
+- push permission is not equivalent to metadata edit permission
+- push permission is not equivalent to external account admin permission
+
+---
+
+## 9. UI / Behavior Boundary
+
+allowed_common_surface_behavior:
+- destination summary
+- readiness summary
+- blocker summary
+- push action area
+- result summary
+- failure summary
+- retry handoff entry
+
+must_not_be_baked_in:
+- StreamStudio-specific wording
+- StreamStudio-specific platform naming
+- queue-engine internals
+- external SDK implementation detail
+- app-specific marketing copy
+
+---
+
+## 10. Relationship to Other Common Candidates
+
+related_common_candidates:
+- Publish Settings Common
+- Retry and Dead-Letter Visibility Common
+- Audit Reconstruction Bundle Common
+
+relationship_notes:
+- Publish Settings Common handles publish-state and readiness before outbound push
+- Retry and Dead-Letter Visibility Common handles broader retry/dead-letter visibility
+- Audit Reconstruction Bundle Common handles deeper reconstruction trace beyond connector surface result
+
+---
+
+## 11. Promotion Caution
+
+promotion_caution:
+- do not merge connector boundary with queue-runtime ownership
+- do not hard-code one destination platform
+- do not merge connector contract with app-specific publish workflow
+- do not embed retry engine semantics into the connector contract
+
+---
+
+## 12. Initial Promotion Judgment
+
+initial_promotion_judgment:
+- promotion_design_ready: yes
+- official_promotion_recommended: yes
+- recommended_next_relation_review:
+  - Retry and Dead-Letter Visibility Common
+  - Publish Settings Common
+  - Audit Reconstruction Bundle Common
+
+---
+
+## 13. Final Note
+
+This design defines External Push Connector Common
+as a reusable contract-first common component candidate.
+
+It is ready to be treated
+as an official promotion-design unit
+for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900125_EXTERNAL_PUSH_CONNECTOR_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900126_AUDIT_RECONSTRUCTION_BUNDLE_COMMON_PROMOTION_DESIGN.md -->
+# ============================================================
+# AUDIT RECONSTRUCTION BUNDLE COMMON PROMOTION DESIGN
+# ============================================================
+
+status: promotion-design
+layer: meta
+system: applications
+application_origin: StreamStudio
+component_name: Audit Reconstruction Bundle Common
+owner: Boss
+prepared_by: Zero
+language: English
+
+## 1. Purpose
+
+This document defines the promotion design
+for Audit Reconstruction Bundle Common.
+
+The purpose of this common component is to provide
+a reusable reconstruction bundle contract
+for rebuilding what happened across edits, approvals,
+connector actions, retries, and asset-related state changes.
+
+This component should not remain permanently StreamStudio-local
+because reconstruction-grade audit traceability
+is reusable across governance-heavy applications.
+
+---
+
+## 2. Canonical Responsibility
+
+Audit Reconstruction Bundle Common is responsible for:
+
+- audit reconstruction bundle structure
+- event sequence packaging
+- actor / action / timestamp bundling
+- related artifact reference bundling
+- before / after reference exposure where available
+- reconstruction summary exposure
+- consumer-facing trace package normalization
+
+It is not responsible for:
+
+- permanent audit ledger engine implementation
+- low-level log ingestion implementation
+- app-specific approval logic
+- app-specific settlement logic
+- analytics warehouse implementation
+- security incident engine implementation
+
+---
+
+## 3. Reuse Scope
+
+reuse_scope:
+- governance-heavy applications
+- review-driven applications
+- approval-capable applications
+- connector-driven applications
+- asset and artifact traceability systems
+
+likely_future_consumers:
+- StreamStudio
+- creator governance tools
+- moderation/review apps
+- outbound connector apps
+- future audit-heavy business surfaces
+
+---
+
+## 4. Core Responsibilities
+
+- define reconstruction bundle identity
+- group related audit events into one reconstruction package
+- expose actor/action/timestamp sequence
+- expose related target record references
+- expose related artifact references
+- expose before/after references where available
+- expose reconstruction completeness summary
+- normalize reconstruction package for consumer apps
+
+---
+
+## 5. Required Input Contract
+
+required_inputs:
+- reconstruction_context_id
+- reconstruction_profile
+- related_record_references
+- event_sequence
+- actor_references
+- artifact_references_or_null
+- before_after_references_or_null
+- completeness_result
+- permission_context
+
+input_notes:
+- event_sequence must remain ordered
+- completeness_result should remain explicit
+- artifact references should remain reference-safe, not raw engine-bound blobs
+- reconstruction_profile determines which trace families are in scope
+
+---
+
+## 6. Output / Event Contract
+
+emitted_events:
+- reconstruction_bundle_opened
+- reconstruction_bundle_requested
+- reconstruction_bundle_generated
+- reconstruction_bundle_generation_failed
+- reconstruction_event_selected
+- reconstruction_artifact_open_requested
+- reconstruction_completeness_view_requested
+- reconstruction_bundle_closed
+
+---
+
+## 7. State Model
+
+normalized_state_model:
+- reconstruction_not_started
+- reconstruction_requested
+- reconstruction_generating
+- reconstruction_generated
+- reconstruction_generation_failed
+- reconstruction_partial
+- reconstruction_complete
+- reconstruction_closed
+
+state_model_notes:
+- reconstruction_generated is distinct from reconstruction_complete
+- reconstruction_partial must remain explicit
+- generation failure must remain distinct from completeness failure
+
+---
+
+## 8. Permission Assumptions
+
+permission_assumptions:
+- caller must already be allowed to view reconstruction-grade trace data
+- artifact visibility must already be validated externally
+- reconstruction visibility is not equivalent to edit permission
+- reconstruction visibility is not equivalent to connector execution permission
+
+---
+
+## 9. UI / Behavior Boundary
+
+allowed_common_surface_behavior:
+- reconstruction summary strip
+- event sequence summary
+- completeness summary
+- related artifact summary
+- before/after reference summary
+- reconstruction request entry
+
+must_not_be_baked_in:
+- StreamStudio-specific wording
+- one fixed audit storage backend
+- raw log engine assumptions
+- app-specific governance copy
+
+---
+
+## 10. Relationship to Other Common Candidates
+
+related_common_candidates:
+- Approval Flow Common
+- Retry and Dead-Letter Visibility Common
+- External Push Connector Common
+- Upload Intake Common
+- Revenue Split Editor Common
+
+relationship_notes:
+- Approval Flow Common contributes approval-state trace
+- Retry and Dead-Letter Visibility Common contributes operational failure/recovery trace
+- External Push Connector Common contributes outbound connector trace
+- Upload Intake Common contributes intake/upload-state trace
+- Revenue Split Editor Common may contribute monetization edit trace
+
+---
+
+## 11. Promotion Caution
+
+promotion_caution:
+- do not merge reconstruction bundle with raw audit engine ownership
+- do not assume all apps can provide full before/after detail
+- do not overfit the contract to StreamStudio moderation or publish wording
+- do not collapse partial and complete reconstruction states
+
+---
+
+## 12. Initial Promotion Judgment
+
+initial_promotion_judgment:
+- promotion_design_ready: yes
+- official_promotion_recommended: yes
+- recommended_next_relation_review:
+  - Approval Flow Common
+  - Retry and Dead-Letter Visibility Common
+  - External Push Connector Common
+  - Upload Intake Common
+
+---
+
+## 13. Final Note
+
+This design defines Audit Reconstruction Bundle Common
+as a reusable contract-first common component candidate.
+
+It is ready to be treated
+as an official promotion-design unit
+for later shared-component adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900126_AUDIT_RECONSTRUCTION_BUNDLE_COMMON_PROMOTION_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900127_STREAM_STUDIO_PROMOTION_DESIGN_BATCH1_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PROMOTION DESIGN BATCH 1 SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the first promotion-design batch
+completed from the StreamStudio official selection set.
+
+completed_promotion_design_files:
+- 900114_UPLOAD_INTAKE_COMMON_PROMOTION_DESIGN.md
+- 900115_METADATA_EDITING_COMMON_PROMOTION_DESIGN.md
+- 900116_APPROVAL_FLOW_COMMON_PROMOTION_DESIGN.md
+- 900117_PUBLISH_SETTINGS_COMMON_PROMOTION_DESIGN.md
+- 900118_MARKETPLACE_LISTING_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900119_MEMBERSHIP_PROGRAM_MANAGER_COMMON_PROMOTION_DESIGN.md
+- 900120_PROJECT_MEMBER_AUTHORITY_MATRIX_COMMON_PROMOTION_DESIGN.md
+- 900121_FIXED_FEE_AND_PERCENTAGE_ALLOCATION_COMMON_PROMOTION_DESIGN.md
+- 900122_REVENUE_SPLIT_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900123_MULTI_CURRENCY_MONETARY_CORE_PROMOTION_DESIGN.md
+- 900124_RETRY_AND_DEAD_LETTER_VISIBILITY_COMMON_PROMOTION_DESIGN.md
+- 900125_EXTERNAL_PUSH_CONNECTOR_COMMON_PROMOTION_DESIGN.md
+- 900126_AUDIT_RECONSTRUCTION_BUNDLE_COMMON_PROMOTION_DESIGN.md
+
+completed_design_groups:
+  foundation_and_ingest:
+    - Upload Intake Common
+    - Metadata Editing Common
+    - Multi-Currency Monetary Core
+
+  workflow_and_publish:
+    - Approval Flow Common
+    - Publish Settings Common
+    - Marketplace Listing Editor Common
+
+  membership_and_allocation:
+    - Membership Program Manager Common
+    - Project Member Authority Matrix Common
+    - Fixed Fee and Percentage Allocation Common
+    - Revenue Split Editor Common
+
+  connector_and_recovery:
+    - Retry and Dead-Letter Visibility Common
+    - External Push Connector Common
+    - Audit Reconstruction Bundle Common
+
+current_judgment:
+- batch 1 promotion design set is broadly complete
+- the next natural step is relation review / merge review / official promotion readiness summary
+- deferred items remain outside this batch
+
+recommended_next_outputs:
+- 900128_STREAM_STUDIO_PROMOTION_RELATION_REVIEW.md
+- 900129_STREAM_STUDIO_PROMOTION_READINESS_SUMMARY.md
+- optional merge-review notes for deferred candidates
+
+final_note:
+This file is the batch-level handoff summary
+after the first major StreamStudio promotion-design wave.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900127_STREAM_STUDIO_PROMOTION_DESIGN_BATCH1_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900128_STREAM_STUDIO_PROMOTION_RELATION_REVIEW.md -->
+# ============================================================
+# STREAM STUDIO PROMOTION RELATION REVIEW
+# ============================================================
+
+status: relation-review
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Reviews the relationships among the completed StreamStudio promotion-design targets,
+clarifies dependency and adjacency patterns,
+and identifies where merge-review or layered ownership should be applied.
+
+review_scope:
+- 900114_UPLOAD_INTAKE_COMMON_PROMOTION_DESIGN.md
+- 900115_METADATA_EDITING_COMMON_PROMOTION_DESIGN.md
+- 900116_APPROVAL_FLOW_COMMON_PROMOTION_DESIGN.md
+- 900117_PUBLISH_SETTINGS_COMMON_PROMOTION_DESIGN.md
+- 900118_MARKETPLACE_LISTING_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900119_MEMBERSHIP_PROGRAM_MANAGER_COMMON_PROMOTION_DESIGN.md
+- 900120_PROJECT_MEMBER_AUTHORITY_MATRIX_COMMON_PROMOTION_DESIGN.md
+- 900121_FIXED_FEE_AND_PERCENTAGE_ALLOCATION_COMMON_PROMOTION_DESIGN.md
+- 900122_REVENUE_SPLIT_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900123_MULTI_CURRENCY_MONETARY_CORE_PROMOTION_DESIGN.md
+- 900124_RETRY_AND_DEAD_LETTER_VISIBILITY_COMMON_PROMOTION_DESIGN.md
+- 900125_EXTERNAL_PUSH_CONNECTOR_COMMON_PROMOTION_DESIGN.md
+- 900126_AUDIT_RECONSTRUCTION_BUNDLE_COMMON_PROMOTION_DESIGN.md
+
+relationship_groups:
+
+  ingest_to_edit_to_publish_chain:
+    sequence:
+      - Upload Intake Common
+      - Metadata Editing Common
+      - Approval Flow Common
+      - Publish Settings Common
+      - External Push Connector Common
+    interpretation:
+      - upload establishes intake boundary
+      - metadata editing structures the editable record
+      - approval flow governs decision progression
+      - publish settings governs release configuration
+      - external push handles outbound publication after intent is fixed
+    anti_merge_rule:
+      - keep each stage as a separate common
+      - do not collapse ingest, edit, approval, publish, and push into one super-component
+
+  marketplace_and_membership_commerce_family:
+    sequence:
+      - Marketplace Listing Editor Common
+      - Membership Program Manager Common
+      - Multi-Currency Monetary Core
+    interpretation:
+      - listing editor owns listing-facing commerce configuration
+      - membership manager owns recurring/tiered access structure
+      - monetary core provides currency-safe shared rules
+    anti_merge_rule:
+      - listing behavior and membership structure stay separate
+      - monetary core stays foundational and should not be absorbed into listing or membership editors
+
+  collaboration_and_allocation_family:
+    sequence:
+      - Project Member Authority Matrix Common
+      - Fixed Fee and Percentage Allocation Common
+      - Revenue Split Editor Common
+    interpretation:
+      - authority matrix defines who can act and at what scope
+      - fixed fee / percentage allocation provides lower-level allocation rule structure
+      - revenue split editor provides domain-facing split editing on top of or beside allocation structure
+    anti_merge_rule:
+      - authority remains separate from financial allocation
+      - allocation rule foundation remains separate from split-facing editor surface
+
+  reliability_and_traceability_family:
+    sequence:
+      - Retry and Dead-Letter Visibility Common
+      - External Push Connector Common
+      - Audit Reconstruction Bundle Common
+    interpretation:
+      - retry/dead-letter visibility exposes operational failure and recovery state
+      - external push connector owns outbound connector boundary
+      - audit reconstruction bundle assembles higher-level trace packages across systems
+    anti_merge_rule:
+      - reliability visibility is not connector ownership
+      - audit reconstruction is not retry engine ownership
+      - connector boundary is not audit storage ownership
+
+key_relation_notes:
+
+  upload_intake_common:
+    strongest_relations:
+      - Metadata Editing Common
+      - Retry and Dead-Letter Visibility Common
+      - Audit Reconstruction Bundle Common
+    relation_note:
+      intake is earliest boundary, but later failure visibility and reconstruction may reference it
+
+  metadata_editing_common:
+    strongest_relations:
+      - Upload Intake Common
+      - Publish Settings Common
+      - Marketplace Listing Editor Common
+      - Multi-Currency Monetary Core
+    relation_note:
+      metadata editing is structurally upstream of publish and listing editing,
+      but does not absorb their decision domains
+
+  approval_flow_common:
+    strongest_relations:
+      - Publish Settings Common
+      - Audit Reconstruction Bundle Common
+    relation_note:
+      approval state progression often gates publish readiness and contributes reconstruction trace
+
+  publish_settings_common:
+    strongest_relations:
+      - Approval Flow Common
+      - Marketplace Listing Editor Common
+      - External Push Connector Common
+    relation_note:
+      publish settings sits between approval and outbound execution,
+      but does not absorb listing editor or push connector
+
+  marketplace_listing_editor_common:
+    strongest_relations:
+      - Publish Settings Common
+      - Membership Program Manager Common
+      - Multi-Currency Monetary Core
+    relation_note:
+      listing editor is commerce-facing but not equivalent to full program management or monetary core
+
+  membership_program_manager_common:
+    strongest_relations:
+      - Marketplace Listing Editor Common
+      - Multi-Currency Monetary Core
+    relation_note:
+      membership program structure is adjacent to listing but should stay separately owned
+
+  project_member_authority_matrix_common:
+    strongest_relations:
+      - Revenue Split Editor Common
+      - Fixed Fee and Percentage Allocation Common
+    relation_note:
+      authority scope may constrain monetization editing, but authority logic remains independent
+
+  fixed_fee_and_percentage_allocation_common:
+    strongest_relations:
+      - Revenue Split Editor Common
+      - Multi-Currency Monetary Core
+    relation_note:
+      allocation is the lower-level rule family, while split editor is the more domain-facing editor family
+
+  revenue_split_editor_common:
+    strongest_relations:
+      - Fixed Fee and Percentage Allocation Common
+      - Project Member Authority Matrix Common
+      - Multi-Currency Monetary Core
+    relation_note:
+      split editor should likely consume allocation-rule foundations and participant authority scope
+
+  retry_and_dead_letter_visibility_common:
+    strongest_relations:
+      - External Push Connector Common
+      - Upload Intake Common
+      - Audit Reconstruction Bundle Common
+    relation_note:
+      retry/dead-letter visibility stays operational and cross-cutting
+
+  external_push_connector_common:
+    strongest_relations:
+      - Publish Settings Common
+      - Retry and Dead-Letter Visibility Common
+      - Audit Reconstruction Bundle Common
+    relation_note:
+      push connector sits at outbound execution boundary and should hand off reliability concerns cleanly
+
+  audit_reconstruction_bundle_common:
+    strongest_relations:
+      - Approval Flow Common
+      - Retry and Dead-Letter Visibility Common
+      - External Push Connector Common
+      - Upload Intake Common
+      - Revenue Split Editor Common
+    relation_note:
+      reconstruction bundle is the broadest cross-trace package,
+      but must remain package-oriented rather than engine-oriented
+
+merge_review_candidates:
+- Revenue Split Editor Common <-> Fixed Fee and Percentage Allocation Common
+- Marketplace Listing Editor Common <-> Membership Program Manager Common
+- Upload Intake Common <-> Resumable Upload Queue Common
+- Approval Flow Common <-> Revision Request Common
+- Retry and Dead-Letter Visibility Common <-> External Push Connector Common
+
+merge_review_judgment:
+  - none of the completed promotion-design targets should be merged immediately
+  - merge-review should remain a later architectural check, not an automatic merge action
+  - current separation is structurally healthier than premature consolidation
+
+final_relation_judgment:
+  - the batch is internally coherent
+  - dependencies are understandable
+  - no completed target currently needs forced redesign before readiness review
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900128_STREAM_STUDIO_PROMOTION_RELATION_REVIEW.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900129_STREAM_STUDIO_PROMOTION_READINESS_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PROMOTION READINESS SUMMARY
+# ============================================================
+
+status: readiness-summary
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes promotion readiness
+for the StreamStudio common component promotion-design batch.
+
+This document does not itself promote the components.
+It states which components are ready for later shared adoption review,
+which need relation review follow-up,
+and which still depend on deferred candidate clarification.
+
+readiness_groups:
+
+  ready_for_shared_adoption_review:
+    - Upload Intake Common
+    - Metadata Editing Common
+    - Approval Flow Common
+    - Publish Settings Common
+    - Marketplace Listing Editor Common
+    - Membership Program Manager Common
+    - Project Member Authority Matrix Common
+    - Multi-Currency Monetary Core
+    - Retry and Dead-Letter Visibility Common
+    - External Push Connector Common
+    - Audit Reconstruction Bundle Common
+
+  ready_but_relation_sensitive:
+    - Fixed Fee and Percentage Allocation Common
+    - Revenue Split Editor Common
+
+  dependent_on_deferred_followup:
+    - none directly blocked
+    - but some relation quality would improve after merge-review of deferred candidates
+
+readiness_notes:
+
+  Upload_Intake_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      clear boundary, strong reuse, stable relation pattern
+
+  Metadata_Editing_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      structurally mature and broadly reusable
+
+  Approval_Flow_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      stable workflow family with understandable scope boundaries
+
+  Publish_Settings_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      stable release-configuration family with explicit blockers and scheduling structure
+
+  Marketplace_Listing_Editor_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      reusable commerce-facing editor with clear separation from publish and payment execution
+
+  Membership_Program_Manager_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      reusable recurring-access structure with stable tier/benefit boundary
+
+  Project_Member_Authority_Matrix_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      strong cross-app authority family with clear scope separation
+
+  Multi_Currency_Monetary_Core:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      foundational monetary rule family with high reuse and clear non-ownership of payment execution
+
+  Retry_and_Dead_Letter_Visibility_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      reusable operational visibility family with strong cross-system value
+
+  External_Push_Connector_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      reusable outbound execution boundary with explicit connector scope
+
+  Audit_Reconstruction_Bundle_Common:
+    readiness: ready_for_shared_adoption_review
+    reason:
+      broad governance and reconstruction value with acceptable package-oriented boundary
+
+  Fixed_Fee_and_Percentage_Allocation_Common:
+    readiness: ready_but_relation_sensitive
+    reason:
+      structurally strong, but should stay relation-reviewed against Revenue Split Editor Common before final shared adoption
+
+  Revenue_Split_Editor_Common:
+    readiness: ready_but_relation_sensitive
+    reason:
+      structurally strong, but should stay relation-reviewed against Fixed Fee and Percentage Allocation Common before final shared adoption
+
+promotion_readiness_summary:
+  immediate_candidates_for_next_shared_review:
+    - Upload Intake Common
+    - Metadata Editing Common
+    - Approval Flow Common
+    - Publish Settings Common
+    - Marketplace Listing Editor Common
+    - Membership Program Manager Common
+    - Project Member Authority Matrix Common
+    - Multi-Currency Monetary Core
+    - Retry and Dead-Letter Visibility Common
+    - External Push Connector Common
+    - Audit Reconstruction Bundle Common
+
+  relation_sensitive_candidates:
+    - Fixed Fee and Percentage Allocation Common
+    - Revenue Split Editor Common
+
+recommended_next_outputs:
+- 900130_STREAM_STUDIO_SHARED_ADOPTION_REVIEW_INPUT.md
+- optional focused relation memo:
+  - Fixed Fee and Percentage Allocation Common vs Revenue Split Editor Common
+
+final_judgment:
+  - batch 1 is largely ready for shared adoption review
+  - only the allocation/split pair should remain flagged as relation-sensitive
+  - the StreamStudio promotion-design wave can now move from design completion
+    into shared-adoption review preparation
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900129_STREAM_STUDIO_PROMOTION_READINESS_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900130_STREAM_STUDIO_RELEASE_SLICE.md -->
 # ============================================================
 # STREAM STUDIO RELEASE SLICE
 # ============================================================
@@ -12451,6 +23227,1125 @@ phase_6_external_connector_extension:
 - YouTube push
 - retry and dead-letter surfaces
 - connector audit visibility
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900130_STREAM_STUDIO_RELEASE_SLICE.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900130_STREAM_STUDIO_SHARED_ADOPTION_REVIEW_INPUT.md -->
+# ============================================================
+# STREAM STUDIO SHARED ADOPTION REVIEW INPUT
+# ============================================================
+
+status: adoption-review-input
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Packages the StreamStudio promotion-design results
+into a review-ready input bundle
+for later shared adoption review.
+
+This document is the bridge
+between promotion-design completion
+and shared-component adoption judgment.
+
+source_documents:
+- 900110_STREAM_STUDIO_COMMON_COMPONENT_CANDIDATES.md
+- 900111_STREAM_STUDIO_COMMON_COMPONENT_REVIEW_MATRIX.md
+- 900112_STREAM_STUDIO_COMMON_COMPONENT_OFFICIAL_SELECTION.md
+- 900113_STREAM_STUDIO_COMMON_COMPONENT_PROMOTION_DESIGN_PLAN.md
+- 900114_UPLOAD_INTAKE_COMMON_PROMOTION_DESIGN.md
+- 900115_METADATA_EDITING_COMMON_PROMOTION_DESIGN.md
+- 900116_APPROVAL_FLOW_COMMON_PROMOTION_DESIGN.md
+- 900117_PUBLISH_SETTINGS_COMMON_PROMOTION_DESIGN.md
+- 900118_MARKETPLACE_LISTING_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900119_MEMBERSHIP_PROGRAM_MANAGER_COMMON_PROMOTION_DESIGN.md
+- 900120_PROJECT_MEMBER_AUTHORITY_MATRIX_COMMON_PROMOTION_DESIGN.md
+- 900121_FIXED_FEE_AND_PERCENTAGE_ALLOCATION_COMMON_PROMOTION_DESIGN.md
+- 900122_REVENUE_SPLIT_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900123_MULTI_CURRENCY_MONETARY_CORE_PROMOTION_DESIGN.md
+- 900124_RETRY_AND_DEAD_LETTER_VISIBILITY_COMMON_PROMOTION_DESIGN.md
+- 900125_EXTERNAL_PUSH_CONNECTOR_COMMON_PROMOTION_DESIGN.md
+- 900126_AUDIT_RECONSTRUCTION_BUNDLE_COMMON_PROMOTION_DESIGN.md
+- 900127_STREAM_STUDIO_PROMOTION_DESIGN_BATCH1_SUMMARY.md
+- 900128_STREAM_STUDIO_PROMOTION_RELATION_REVIEW.md
+- 900129_STREAM_STUDIO_PROMOTION_READINESS_SUMMARY.md
+
+immediate_shared_adoption_review_candidates:
+- Upload Intake Common
+- Metadata Editing Common
+- Approval Flow Common
+- Publish Settings Common
+- Marketplace Listing Editor Common
+- Membership Program Manager Common
+- Project Member Authority Matrix Common
+- Multi-Currency Monetary Core
+- Retry and Dead-Letter Visibility Common
+- External Push Connector Common
+- Audit Reconstruction Bundle Common
+
+relation_sensitive_candidates:
+- Fixed Fee and Percentage Allocation Common
+- Revenue Split Editor Common
+
+review_intent_by_group:
+
+  ingest_and_edit_group:
+    - Upload Intake Common
+    - Metadata Editing Common
+    review_focus:
+      - intake/edit separation clarity
+      - reusable metadata contract strength
+      - upload-to-edit orchestration clarity
+
+  workflow_and_release_group:
+    - Approval Flow Common
+    - Publish Settings Common
+    - External Push Connector Common
+    review_focus:
+      - approval/publish/push separation clarity
+      - readiness and blocker model quality
+      - execution boundary cleanliness
+
+  commerce_and_membership_group:
+    - Marketplace Listing Editor Common
+    - Membership Program Manager Common
+    - Multi-Currency Monetary Core
+    review_focus:
+      - listing/membership separation clarity
+      - monetary foundation ownership clarity
+      - commerce boundary reuse strength
+
+  collaboration_and_governance_group:
+    - Project Member Authority Matrix Common
+    - Retry and Dead-Letter Visibility Common
+    - Audit Reconstruction Bundle Common
+    review_focus:
+      - authority scope reuse strength
+      - operational visibility reuse strength
+      - audit reconstruction package strength
+
+  relation_sensitive_group:
+    - Fixed Fee and Percentage Allocation Common
+    - Revenue Split Editor Common
+    review_focus:
+      - layered ownership clarity
+      - lower-level allocation vs domain-facing split editor separation
+      - no premature merge
+
+review_questions:
+- is the responsibility stable?
+- is the contract stable?
+- is the ownership boundary clear?
+- is the component reusable outside StreamStudio?
+- should the candidate move into shared adoption now?
+- should the candidate remain relation-sensitive or merge-reviewed longer?
+
+shared_adoption_recommendation:
+  recommend_move_forward_now:
+    - Upload Intake Common
+    - Metadata Editing Common
+    - Approval Flow Common
+    - Publish Settings Common
+    - Marketplace Listing Editor Common
+    - Membership Program Manager Common
+    - Project Member Authority Matrix Common
+    - Multi-Currency Monetary Core
+    - Retry and Dead-Letter Visibility Common
+    - External Push Connector Common
+    - Audit Reconstruction Bundle Common
+
+  recommend_relation_sensitive_hold:
+    - Fixed Fee and Percentage Allocation Common
+    - Revenue Split Editor Common
+
+final_note:
+This file should be treated
+as the official StreamStudio-side input bundle
+for shared adoption review.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900130_STREAM_STUDIO_SHARED_ADOPTION_REVIEW_INPUT.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900131_ALLOCATION_SPLIT_RELATION_MEMO.md -->
+# ============================================================
+# ALLOCATION SPLIT RELATION MEMO
+# ============================================================
+
+status: relation-memo
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Clarifies the relation between:
+- Fixed Fee and Percentage Allocation Common
+- Revenue Split Editor Common
+
+This memo exists because both candidates are strong,
+but they should not be prematurely merged or promoted
+without a clear layered ownership model.
+
+relation_subjects:
+- Fixed Fee and Percentage Allocation Common
+- Revenue Split Editor Common
+
+core_judgment:
+- Fixed Fee and Percentage Allocation Common is the lower-level allocation-rule foundation
+- Revenue Split Editor Common is the higher-level domain-facing split editor
+- they are related, but not identical
+- they should remain separate unless future evidence proves one is redundant
+
+layered_ownership_model:
+
+  Fixed_Fee_and_Percentage_Allocation_Common:
+    owns:
+      - allocation entry structure
+      - fixed-fee definition
+      - percentage definition
+      - mixed allocation validation
+      - allocation constraints
+      - allocation preview summary
+    should_not_own:
+      - domain-facing revenue split workflow wording
+      - collaborator-specific revenue-editing framing
+      - broader monetization editor narrative
+
+  Revenue_Split_Editor_Common:
+    owns:
+      - participant-facing split editing surface
+      - split summary exposure
+      - split workflow framing
+      - split-state normalization
+      - domain-facing split save and preview behavior
+    should_not_own:
+      - lower-level generic allocation-rule foundation
+      - generalized fixed-fee/percentage rule semantics beyond split editing
+      - accounting or payout execution
+
+recommended_relation:
+  - Revenue Split Editor Common may consume or depend on Fixed Fee and Percentage Allocation Common
+  - Fixed Fee and Percentage Allocation Common should remain reusable outside revenue-split-only scenarios
+  - the lower layer should not inherit domain-specific wording from the upper layer
+
+anti_merge_rules:
+- do not merge them only because both mention percentages
+- do not let the split editor absorb generic allocation foundations
+- do not let the allocation foundation become overfit to creator revenue-sharing language
+- do not decide shared adoption for one by automatically forcing the same result on the other
+
+shared_adoption_interpretation:
+- both are strong candidates
+- both are still relation-sensitive
+- both can proceed later,
+  but only after reviewers confirm the layered ownership split is acceptable
+
+final_note:
+Use this memo whenever the review asks:
+"why are these two common candidates separate?"
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900131_ALLOCATION_SPLIT_RELATION_MEMO.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900140_STREAM_STUDIO_VERIFY_AND_AUDIT_RUNNER.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio"
+TMP_DIR="$HOME/.tmp"
+REPORT="$TMP_DIR/stream_studio_verify_audit_report.txt"
+INDEX_TMP="$TMP_DIR/stream_studio_index_paths.txt"
+MISSING_TMP="$TMP_DIR/stream_studio_missing_paths.txt"
+MARKER_MISSING_TMP="$TMP_DIR/stream_studio_integrated_marker_missing.txt"
+
+pass_count=0
+warn_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+warn() {
+  warn_count=$((warn_count + 1))
+  printf 'WARN: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+: > "$REPORT"
+: > "$INDEX_TMP"
+: > "$MISSING_TMP"
+: > "$MARKER_MISSING_TMP"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO VERIFY / AUDIT REPORT\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'ROOT=%s\n' "$ROOT" >> "$REPORT"
+printf '\n' >> "$REPORT"
+
+if [ ! -d "$ROOT" ]; then
+  fail "root directory missing -> $ROOT"
+  printf '\n============================================================\n' >> "$REPORT"
+  printf 'SUMMARY\n' >> "$REPORT"
+  printf '============================================================\n' >> "$REPORT"
+  printf 'PASS=%s WARN=%s FAIL=%s\n' "$pass_count" "$warn_count" "$fail_count" >> "$REPORT"
+  cat "$REPORT"
+  exit 1
+fi
+
+pass "root directory exists -> $ROOT"
+
+ROOT_INDEX="$ROOT/000_STREAM_STUDIO_INDEX.md"
+ROOT_OVERVIEW="$ROOT/000_STREAM_STUDIO_OVERVIEW.md"
+INTEGRATED="$ROOT/00_STREAM_STUDIO_INTEGRATED.md"
+
+require_file "$ROOT_INDEX"
+require_file "$ROOT_OVERVIEW"
+require_file "$INTEGRATED"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'STEP 1: EXTRACT INDEX PATHS\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+awk '
+  /^[[:space:]]*-[[:space:]]+/ {
+    line=$0
+    sub(/^[[:space:]]*-[[:space:]]+/, "", line)
+    if (line ~ /\.md$/ || line ~ /\.sh$/) print line
+  }
+' "$ROOT_INDEX" | while IFS= read -r rel; do
+  [ -n "$rel" ] || continue
+  printf '%s/%s\n' "$ROOT" "$rel" >> "$INDEX_TMP"
+done
+
+if [ -s "$INDEX_TMP" ]; then
+  pass "root index path extraction succeeded"
+else
+  fail "root index path extraction returned empty"
+fi
+
+printf '\n[ROOT INDEX PATH COUNT]\n' >> "$REPORT"
+wc -l "$INDEX_TMP" >> "$REPORT" || true
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'STEP 2: VERIFY ROOT INDEX TARGET FILES\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+while IFS= read -r path; do
+  [ -n "$path" ] || continue
+  if [ -f "$path" ]; then
+    pass "indexed file exists -> $path"
+  else
+    fail "indexed file missing -> $path"
+    printf '%s\n' "$path" >> "$MISSING_TMP"
+  fi
+done < "$INDEX_TMP"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'STEP 3: VERIFY SUB INDEX FILES\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+find "$ROOT" -type f \( -name '*_INDEX.md' -o -name '[0-9][0-9][0-9]_INDEX.md' \) | sort | while IFS= read -r idx; do
+  pass "sub index found -> $idx"
+
+  IDX_DIR="$(dirname "$idx")"
+  awk '
+    /^[[:space:]]*-[[:space:]]+/ {
+      line=$0
+      sub(/^[[:space:]]*-[[:space:]]+/, "", line)
+      if (line ~ /\.md$/ || line ~ /\.sh$/) print line
+    }
+  ' "$idx" | while IFS= read -r rel; do
+    [ -n "$rel" ] || continue
+    target="$IDX_DIR/$rel"
+    if [ -f "$target" ]; then
+      pass "sub-indexed file exists -> $target"
+    else
+      fail "sub-indexed file missing -> $target"
+      printf '%s\n' "$target" >> "$MISSING_TMP"
+    fi
+  done
+done
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'STEP 4: VERIFY REQUIRED EXACT DOCS\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/040.screen-and-stateflow/051_STREAM_STUDIO_SCREEN_STATE_TRANSITION_EXACT_TABLE.md"
+require_file "$ROOT/050.api/059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md"
+require_file "$ROOT/070.operations/071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md"
+require_file "$ROOT/080.policy/081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md"
+require_file "$ROOT/120.implementation/121_STREAM_STUDIO_IMPLEMENTATION_READINESS_FINAL_FREEZE_MEMO.md"
+require_file "$ROOT/120.implementation/122_STREAM_STUDIO_ENUM_LEDGER.md"
+require_file "$ROOT/120.implementation/123_STREAM_STUDIO_FIELD_DICTIONARY.md"
+require_file "$ROOT/120.implementation/124_STREAM_STUDIO_AUDIT_EVENT_CODE_LEDGER.md"
+require_file "$ROOT/120.implementation/125_STREAM_STUDIO_DB_SIDE_MAPPING_DECISION_MEMO.md"
+require_file "$ROOT/120.implementation/126_STREAM_STUDIO_EVENT_NAMING_LEDGER.md"
+require_file "$ROOT/120.implementation/127_STREAM_STUDIO_UI_COPY_KEY_LEDGER.md"
+require_file "$ROOT/120.implementation/128_STREAM_STUDIO_IMPLEMENTATION_DEPENDENCY_MEMO.md"
+require_file "$ROOT/120.implementation/129_STREAM_STUDIO_IMPLEMENTATION_HANDOFF_CHECKLIST.md"
+require_file "$ROOT/120.implementation/130_STREAM_STUDIO_DESIGN_COMPLETENESS_AUDIT_MEMO.md"
+require_file "$ROOT/900.meta/900110_STREAM_STUDIO_COMMON_COMPONENT_CANDIDATES.md"
+require_file "$ROOT/900.meta/900120_STREAM_STUDIO_CX22073_CANDIDATE_AREAS.md"
+require_file "$ROOT/900.meta/900130_STREAM_STUDIO_RELEASE_SLICE.md"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'STEP 5: VERIFY INTEGRATED MARKERS\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+if [ -f "$INTEGRATED" ]; then
+  find "$ROOT" -type f ! -name "00_STREAM_STUDIO_INTEGRATED.md" | sort | while IFS= read -r f; do
+    marker="<!-- BEGIN FILE: $f -->"
+    if grep -Fq "$marker" "$INTEGRATED"; then
+      pass "integrated marker found -> $f"
+    else
+      fail "integrated marker missing -> $f"
+      printf '%s\n' "$f" >> "$MARKER_MISSING_TMP"
+    fi
+  done
+else
+  fail "integrated file missing, marker verification skipped"
+fi
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'STEP 6: VERIFY DIRECTORY OVERVIEW / INDEX PRESENCE\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+for dir in \
+  "$ROOT/010.constitution" \
+  "$ROOT/020.architecture" \
+  "$ROOT/030.model" \
+  "$ROOT/040.screen-and-stateflow" \
+  "$ROOT/050.api" \
+  "$ROOT/060.integration" \
+  "$ROOT/070.operations" \
+  "$ROOT/080.policy" \
+  "$ROOT/120.implementation" \
+  "$ROOT/900.meta"
+do
+  base="$(basename "$dir" | cut -d'.' -f1)"
+  overview="$dir/${base}_OVERVIEW.md"
+  index="$dir/${base}_INDEX.md"
+
+  if [ -f "$overview" ]; then
+    pass "directory overview exists -> $overview"
+  else
+    fail "directory overview missing -> $overview"
+  fi
+
+  if [ -f "$index" ]; then
+    pass "directory index exists -> $index"
+  else
+    fail "directory index missing -> $index"
+  fi
+done
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'STEP 7: WARNINGS\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+if [ ! -s "$MISSING_TMP" ]; then
+  pass "no indexed missing files detected"
+else
+  warn "indexed missing files detected"
+fi
+
+if [ ! -s "$MARKER_MISSING_TMP" ]; then
+  pass "integrated markers complete"
+else
+  warn "integrated markers incomplete"
+fi
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s WARN=%s FAIL=%s\n' "$pass_count" "$warn_count" "$fail_count" >> "$REPORT"
+
+if [ -s "$MISSING_TMP" ]; then
+  printf '\n[MISSING FILES]\n' >> "$REPORT"
+  sort -u "$MISSING_TMP" >> "$REPORT"
+fi
+
+if [ -s "$MARKER_MISSING_TMP" ]; then
+  printf '\n[INTEGRATED MARKER MISSING]\n' >> "$REPORT"
+  sort -u "$MARKER_MISSING_TMP" >> "$REPORT"
+fi
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900140_STREAM_STUDIO_VERIFY_AND_AUDIT_RUNNER.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900150_STREAM_STUDIO_REPAIR_FROM_VERIFY_RUNNER.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio"
+TMP_DIR="$HOME/.tmp"
+REPORT="$TMP_DIR/stream_studio_verify_audit_report.txt"
+LIST_FILE="$TMP_DIR/stream_studio_file_list.txt"
+INTEGRATED="$ROOT/00_STREAM_STUDIO_INTEGRATED.md"
+
+DIRS="
+$ROOT/010.constitution
+$ROOT/020.architecture
+$ROOT/030.model
+$ROOT/040.screen-and-stateflow
+$ROOT/050.api
+$ROOT/060.integration
+$ROOT/070.operations
+$ROOT/080.policy
+$ROOT/120.implementation
+$ROOT/900.meta
+"
+
+mkdir -p "$TMP_DIR"
+
+make_dir_overview_if_missing() {
+  dir="$1"
+  base="$(basename "$dir" | cut -d'.' -f1)"
+  overview="$dir/${base}_OVERVIEW.md"
+
+  [ -d "$dir" ] || mkdir -p "$dir"
+
+  if [ ! -f "$overview" ]; then
+    cat > "$overview" <<EOT
+# ============================================================
+# ${base} OVERVIEW
+# ============================================================
+
+status: repair-generated
+layer: overview
+system: applications
+application: StreamStudio
+directory: $(basename "$dir")
+owner: Boss
+prepared_by: Zero
+
+summary:
+Repair-generated overview placeholder for $(basename "$dir").
+This file was auto-created by repair runner because it was missing.
+EOT
+    echo "REPAIRED OVERVIEW -> $overview"
+  fi
+}
+
+make_dir_index_if_missing() {
+  dir="$1"
+  base="$(basename "$dir" | cut -d'.' -f1)"
+  index="$dir/${base}_INDEX.md"
+
+  [ -d "$dir" ] || mkdir -p "$dir"
+
+  if [ ! -f "$index" ]; then
+    {
+      echo "# ============================================================"
+      echo "# ${base} INDEX"
+      echo "# ============================================================"
+      echo
+      echo "status: repair-generated"
+      echo "layer: index"
+      echo "system: applications"
+      echo "application: StreamStudio"
+      echo "directory: $(basename "$dir")"
+      echo "owner: Boss"
+      echo "prepared_by: Zero"
+      echo
+      echo "files:"
+      find "$dir" -maxdepth 1 -type f ! -name "$(basename "$index")" ! -name "$(basename "$overview")" | sort | while IFS= read -r f; do
+        echo "- $(basename "$f")"
+      done
+    } > "$index"
+    echo "REPAIRED INDEX -> $index"
+  fi
+}
+
+repair_root_overview_if_missing() {
+  file="$ROOT/000_STREAM_STUDIO_OVERVIEW.md"
+  if [ ! -f "$file" ]; then
+    cat > "$file" <<'EOT'
+# ============================================================
+# STREAM STUDIO OVERVIEW
+# ============================================================
+
+status: repair-generated
+layer: overview
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+summary:
+Repair-generated root overview placeholder for StreamStudio.
+This file was auto-created by repair runner because it was missing.
+EOT
+    echo "REPAIRED ROOT OVERVIEW -> $file"
+  fi
+}
+
+repair_root_index() {
+  file="$ROOT/000_STREAM_STUDIO_INDEX.md"
+  {
+    echo "# ============================================================"
+    echo "# STREAM STUDIO INDEX"
+    echo "# ============================================================"
+    echo
+    echo "status: canonical"
+    echo "layer: index"
+    echo "system: applications"
+    echo "application: StreamStudio"
+    echo "owner: Boss"
+    echo "prepared_by: Zero"
+    echo
+    echo "root_files:"
+    echo "- 000_STREAM_STUDIO_OVERVIEW.md"
+    echo "- 000_STREAM_STUDIO_INDEX.md"
+    echo "- 00_STREAM_STUDIO_INTEGRATED.md"
+    echo
+    echo "main_documents:"
+    find "$ROOT" -type f ! -name "000_STREAM_STUDIO_INDEX.md" ! -name "000_STREAM_STUDIO_OVERVIEW.md" ! -name "00_STREAM_STUDIO_INTEGRATED.md" | sort | while IFS= read -r f; do
+      rel="${f#$ROOT/}"
+      echo "- $rel"
+    done
+  } > "$file"
+  echo "REBUILT ROOT INDEX -> $file"
+}
+
+rebuild_dir_indexes() {
+  for dir in $DIRS; do
+    [ -d "$dir" ] || mkdir -p "$dir"
+    base="$(basename "$dir" | cut -d'.' -f1)"
+    overview="$dir/${base}_OVERVIEW.md"
+    index="$dir/${base}_INDEX.md"
+
+    make_dir_overview_if_missing "$dir"
+
+    {
+      echo "# ============================================================"
+      echo "# ${base} INDEX"
+      echo "# ============================================================"
+      echo
+      echo "status: canonical"
+      echo "layer: index"
+      echo "system: applications"
+      echo "application: StreamStudio"
+      echo "directory: $(basename "$dir")"
+      echo "owner: Boss"
+      echo "prepared_by: Zero"
+      echo
+      echo "files:"
+      find "$dir" -maxdepth 1 -type f ! -name "$(basename "$index")" | sort | while IFS= read -r f; do
+        echo "- $(basename "$f")"
+      done
+    } > "$index"
+
+    echo "REBUILT DIR INDEX -> $index"
+  done
+}
+
+rebuild_integrated() {
+  find "$ROOT" -type f ! -name "00_STREAM_STUDIO_INTEGRATED.md" | sort > "$LIST_FILE"
+
+  : > "$INTEGRATED"
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    printf "\n<!-- BEGIN FILE: %s -->\n" "$f" >> "$INTEGRATED"
+    cat "$f" >> "$INTEGRATED"
+    printf "\n<!-- END FILE: %s -->\n\n" "$f" >> "$INTEGRATED"
+  done < "$LIST_FILE"
+
+  echo "REBUILT INTEGRATED -> $INTEGRATED"
+}
+
+echo "============================================================"
+echo "STREAM STUDIO REPAIR START"
+echo "============================================================"
+
+repair_root_overview_if_missing
+rebuild_dir_indexes
+repair_root_index
+rebuild_integrated
+
+echo "============================================================"
+echo "STREAM STUDIO REPAIR DONE"
+echo "============================================================"
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900150_STREAM_STUDIO_REPAIR_FROM_VERIFY_RUNNER.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900160_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER_DESIGN.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 PREP AND VERIFY RUNNER DESIGN
+# ============================================================
+
+status: runner-design
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the design of the Phase 1 prep and verify runner.
+
+runner_goal:
+- preflight-check Phase 1 prerequisites
+- verify required docs exist
+- verify root index and integrated stay aligned
+- emit a compact phase 1 readiness report
+
+runner_steps:
+- verify root exists
+- verify required phase 1 docs exist
+- verify required ledgers exist
+- verify required exact API docs exist
+- verify required exact screen docs exist
+- verify required policy / runtime docs exist
+- emit PASS / WARN / FAIL summary
+- write report to ~/.tmp
+
+required_phase_1_docs:
+- 131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md
+- 132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md
+- 133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md
+- 134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md
+- 135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md
+- 136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md
+
+runner_output_files:
+- ~/.tmp/stream_studio_phase1_prep_verify_report.txt
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900160_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER_DESIGN.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900161_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio"
+TMP_DIR="$HOME/.tmp"
+REPORT="$TMP_DIR/stream_studio_phase1_prep_verify_report.txt"
+
+pass_count=0
+warn_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+warn() {
+  warn_count=$((warn_count + 1))
+  printf 'WARN: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$TMP_DIR"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE 1 PREP / VERIFY REPORT\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'ROOT=%s\n\n' "$ROOT" >> "$REPORT"
+
+if [ ! -d "$ROOT" ]; then
+  fail "root directory missing -> $ROOT"
+  cat "$REPORT"
+  exit 1
+fi
+
+pass "root directory exists -> $ROOT"
+
+require_file "$ROOT/120.implementation/131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md"
+require_file "$ROOT/120.implementation/132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md"
+
+require_file "$ROOT/120.implementation/122_STREAM_STUDIO_ENUM_LEDGER.md"
+require_file "$ROOT/120.implementation/123_STREAM_STUDIO_FIELD_DICTIONARY.md"
+require_file "$ROOT/120.implementation/124_STREAM_STUDIO_AUDIT_EVENT_CODE_LEDGER.md"
+require_file "$ROOT/120.implementation/125_STREAM_STUDIO_DB_SIDE_MAPPING_DECISION_MEMO.md"
+
+require_file "$ROOT/050.api/051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md"
+require_file "$ROOT/050.api/052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md"
+require_file "$ROOT/050.api/054_STREAM_STUDIO_PUBLISH_API_EXACT.md"
+require_file "$ROOT/050.api/059_STREAM_STUDIO_VALIDATION_AND_ERROR_CODE_EXACT_TABLE.md"
+
+require_file "$ROOT/040.screen-and-stateflow/041_STREAM_STUDIO_HOME_DASHBOARD_EXACT.md"
+require_file "$ROOT/040.screen-and-stateflow/042_STREAM_STUDIO_PROJECT_DETAIL_EXACT.md"
+require_file "$ROOT/040.screen-and-stateflow/043_STREAM_STUDIO_UPLOAD_QUEUE_EXACT.md"
+require_file "$ROOT/040.screen-and-stateflow/045_STREAM_STUDIO_PUBLISH_SETTINGS_EXACT.md"
+require_file "$ROOT/040.screen-and-stateflow/051_STREAM_STUDIO_SCREEN_STATE_TRANSITION_EXACT_TABLE.md"
+
+require_file "$ROOT/080.policy/081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md"
+require_file "$ROOT/070.operations/071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s WARN=%s FAIL=%s\n' "$pass_count" "$warn_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900161_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900162_STREAM_STUDIO_PHASE1_BUNDLE_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 BUNDLE SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the bundled Phase 1 implementation-transition pack.
+
+bundle_contents:
+- phase 1 batch pack
+- backend workpackage
+- ui workpackage
+- db workpackage
+- test and verify workpackage
+- execution order and checkpoints
+- phase 1 prep and verify runner design
+- phase 1 prep and verify runner shell
+
+use_order:
+- read 131
+- read 136
+- execute 900161
+- then move into real implementation batching
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900162_STREAM_STUDIO_PHASE1_BUNDLE_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900163_STREAM_STUDIO_PHASE1_STARTER_PACKET_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 STARTER PACKET SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the Phase 1 starter packet.
+
+starter_packet_docs:
+- 137_STREAM_STUDIO_PHASE1_BACKEND_ENDPOINT_IMPLEMENTATION_MAP.md
+- 138_STREAM_STUDIO_PHASE1_UI_COMPONENT_IMPLEMENTATION_MAP.md
+- 139_STREAM_STUDIO_PHASE1_DB_TABLE_IMPLEMENTATION_MAP.md
+- 140_STREAM_STUDIO_PHASE1_TESTCASE_MATRIX.md
+- 141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md
+- 900164_STREAM_STUDIO_PHASE1_STARTER_PACKET_VERIFY.sh
+
+recommended_use_order:
+- read 131
+- read 136
+- read 137 to 141
+- run 900164
+- then begin real phase 1 implementation batching
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900163_STREAM_STUDIO_PHASE1_STARTER_PACKET_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900164_STREAM_STUDIO_PHASE1_STARTER_PACKET_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio"
+REPORT="$HOME/.tmp/stream_studio_phase1_starter_packet_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE 1 STARTER PACKET VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/120.implementation/131_STREAM_STUDIO_PHASE1_IMPLEMENTATION_BATCH_PACK.md"
+require_file "$ROOT/120.implementation/132_STREAM_STUDIO_PHASE1_BACKEND_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/133_STREAM_STUDIO_PHASE1_UI_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/134_STREAM_STUDIO_PHASE1_DB_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/135_STREAM_STUDIO_PHASE1_TEST_AND_VERIFY_WORKPACKAGE.md"
+require_file "$ROOT/120.implementation/136_STREAM_STUDIO_PHASE1_EXECUTION_ORDER_AND_CHECKPOINTS.md"
+require_file "$ROOT/120.implementation/137_STREAM_STUDIO_PHASE1_BACKEND_ENDPOINT_IMPLEMENTATION_MAP.md"
+require_file "$ROOT/120.implementation/138_STREAM_STUDIO_PHASE1_UI_COMPONENT_IMPLEMENTATION_MAP.md"
+require_file "$ROOT/120.implementation/139_STREAM_STUDIO_PHASE1_DB_TABLE_IMPLEMENTATION_MAP.md"
+require_file "$ROOT/120.implementation/140_STREAM_STUDIO_PHASE1_TESTCASE_MATRIX.md"
+require_file "$ROOT/120.implementation/141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md"
+require_file "$ROOT/900.meta/900163_STREAM_STUDIO_PHASE1_STARTER_PACKET_SUMMARY.md"
+require_file "$ROOT/900.meta/900164_STREAM_STUDIO_PHASE1_STARTER_PACKET_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900164_STREAM_STUDIO_PHASE1_STARTER_PACKET_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900165_STREAM_STUDIO_PHASE1_FILESET_PACKET_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 FILESET PACKET SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the Phase 1 fileset packet.
+
+fileset_packet_docs:
+- 142_STREAM_STUDIO_PHASE1_BACKEND_FILE_SCAFFOLD_LEDGER.md
+- 143_STREAM_STUDIO_PHASE1_UI_FILE_SCAFFOLD_LEDGER.md
+- 144_STREAM_STUDIO_PHASE1_ROUTER_SERVICE_VALIDATOR_BINDING_MAP.md
+- 145_STREAM_STUDIO_PHASE1_TEST_FILE_SCAFFOLD_LEDGER.md
+- 146_STREAM_STUDIO_PHASE1_REAL_BUILD_FILESET_DECISION_MEMO.md
+- 900166_STREAM_STUDIO_PHASE1_FILESET_PACKET_VERIFY.sh
+
+recommended_use_order:
+- read 137 to 146
+- run 900166
+- then freeze concrete stack binding
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900165_STREAM_STUDIO_PHASE1_FILESET_PACKET_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900166_STREAM_STUDIO_PHASE1_FILESET_PACKET_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio"
+REPORT="$HOME/.tmp/stream_studio_phase1_fileset_packet_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE 1 FILESET PACKET VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/120.implementation/137_STREAM_STUDIO_PHASE1_BACKEND_ENDPOINT_IMPLEMENTATION_MAP.md"
+require_file "$ROOT/120.implementation/138_STREAM_STUDIO_PHASE1_UI_COMPONENT_IMPLEMENTATION_MAP.md"
+require_file "$ROOT/120.implementation/139_STREAM_STUDIO_PHASE1_DB_TABLE_IMPLEMENTATION_MAP.md"
+require_file "$ROOT/120.implementation/140_STREAM_STUDIO_PHASE1_TESTCASE_MATRIX.md"
+require_file "$ROOT/120.implementation/141_STREAM_STUDIO_PHASE1_REAL_BUILD_START_GUARDRAIL.md"
+require_file "$ROOT/120.implementation/142_STREAM_STUDIO_PHASE1_BACKEND_FILE_SCAFFOLD_LEDGER.md"
+require_file "$ROOT/120.implementation/143_STREAM_STUDIO_PHASE1_UI_FILE_SCAFFOLD_LEDGER.md"
+require_file "$ROOT/120.implementation/144_STREAM_STUDIO_PHASE1_ROUTER_SERVICE_VALIDATOR_BINDING_MAP.md"
+require_file "$ROOT/120.implementation/145_STREAM_STUDIO_PHASE1_TEST_FILE_SCAFFOLD_LEDGER.md"
+require_file "$ROOT/120.implementation/146_STREAM_STUDIO_PHASE1_REAL_BUILD_FILESET_DECISION_MEMO.md"
+require_file "$ROOT/900.meta/900165_STREAM_STUDIO_PHASE1_FILESET_PACKET_SUMMARY.md"
+require_file "$ROOT/900.meta/900166_STREAM_STUDIO_PHASE1_FILESET_PACKET_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900166_STREAM_STUDIO_PHASE1_FILESET_PACKET_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900167_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_SUMMARY.md -->
+# ============================================================
+# STREAM STUDIO PHASE 1 SQL PRE-DDL PACKET SUMMARY
+# ============================================================
+
+status: batch-summary
+layer: meta
+system: applications
+application: StreamStudio
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Summarizes the Phase 1 SQL-pre-DDL packet.
+
+packet_docs:
+- 147_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_BATCH_PACK.md
+- 148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md
+- 149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md
+- 150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md
+- 151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md
+- 152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md
+- 900168_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_VERIFY.sh
+
+recommended_use_order:
+- read 147
+- read 148 to 152
+- run 900168
+- then write real SQL by migration unit
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900167_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_SUMMARY.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900168_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_VERIFY.sh -->
+#!/data/data/com.termux/files/usr/bin/bash
+set -eu
+
+ROOT="$HOME/01.civilization-system/07.applications/06.streaming-app/StreamStudio"
+REPORT="$HOME/.tmp/stream_studio_phase1_sql_pre_ddl_packet_report.txt"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+  printf 'PASS: %s\n' "$1" >> "$REPORT"
+}
+
+fail() {
+  fail_count=$((fail_count + 1))
+  printf 'FAIL: %s\n' "$1" >> "$REPORT"
+}
+
+require_file() {
+  if [ -f "$1" ]; then
+    pass "file exists -> $1"
+  else
+    fail "file missing -> $1"
+  fi
+}
+
+mkdir -p "$HOME/.tmp"
+: > "$REPORT"
+
+printf '============================================================\n' >> "$REPORT"
+printf 'STREAM STUDIO PHASE 1 SQL PRE-DDL PACKET VERIFY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+
+require_file "$ROOT/120.implementation/147_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_BATCH_PACK.md"
+require_file "$ROOT/120.implementation/148_STREAM_STUDIO_PHASE1_TABLE_DDL_EXACT_DESIGN.md"
+require_file "$ROOT/120.implementation/149_STREAM_STUDIO_PHASE1_INDEX_FK_CONSTRAINT_EXACT_DESIGN.md"
+require_file "$ROOT/120.implementation/150_STREAM_STUDIO_PHASE1_AUDIT_AND_RUNTIME_DDL_EXACT_DESIGN.md"
+require_file "$ROOT/120.implementation/151_STREAM_STUDIO_PHASE1_MIGRATION_UNIT_SPLIT_PLAN.md"
+require_file "$ROOT/120.implementation/152_STREAM_STUDIO_PHASE1_PSQL_APPLY_PREFLIGHT_MEMO.md"
+require_file "$ROOT/900.meta/900167_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_SUMMARY.md"
+require_file "$ROOT/900.meta/900168_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_VERIFY.sh"
+
+printf '\n============================================================\n' >> "$REPORT"
+printf 'SUMMARY\n' >> "$REPORT"
+printf '============================================================\n' >> "$REPORT"
+printf 'PASS=%s FAIL=%s\n' "$pass_count" "$fail_count" >> "$REPORT"
+
+cat "$REPORT"
+
+if [ "$fail_count" -gt 0 ]; then
+  exit 1
+fi
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900168_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_VERIFY.sh -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900_INDEX.md -->
 # ============================================================
 # 900 META INDEX
 # ============================================================
@@ -12465,8 +24360,46 @@ prepared_by: Zero
 
 files:
 - 900110_STREAM_STUDIO_COMMON_COMPONENT_CANDIDATES.md
+- 900111_STREAM_STUDIO_COMMON_COMPONENT_REVIEW_MATRIX.md
+- 900112_STREAM_STUDIO_COMMON_COMPONENT_OFFICIAL_SELECTION.md
+- 900113_STREAM_STUDIO_COMMON_COMPONENT_PROMOTION_DESIGN_PLAN.md
+- 900114_UPLOAD_INTAKE_COMMON_PROMOTION_DESIGN.md
+- 900115_METADATA_EDITING_COMMON_PROMOTION_DESIGN.md
+- 900116_APPROVAL_FLOW_COMMON_PROMOTION_DESIGN.md
+- 900117_PUBLISH_SETTINGS_COMMON_PROMOTION_DESIGN.md
+- 900118_MARKETPLACE_LISTING_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900119_MEMBERSHIP_PROGRAM_MANAGER_COMMON_PROMOTION_DESIGN.md
+- 900120_PROJECT_MEMBER_AUTHORITY_MATRIX_COMMON_PROMOTION_DESIGN.md
 - 900120_STREAM_STUDIO_CX22073_CANDIDATE_AREAS.md
+- 900121_FIXED_FEE_AND_PERCENTAGE_ALLOCATION_COMMON_PROMOTION_DESIGN.md
+- 900122_REVENUE_SPLIT_EDITOR_COMMON_PROMOTION_DESIGN.md
+- 900123_MULTI_CURRENCY_MONETARY_CORE_PROMOTION_DESIGN.md
+- 900124_RETRY_AND_DEAD_LETTER_VISIBILITY_COMMON_PROMOTION_DESIGN.md
+- 900125_EXTERNAL_PUSH_CONNECTOR_COMMON_PROMOTION_DESIGN.md
+- 900126_AUDIT_RECONSTRUCTION_BUNDLE_COMMON_PROMOTION_DESIGN.md
+- 900127_STREAM_STUDIO_PROMOTION_DESIGN_BATCH1_SUMMARY.md
+- 900128_STREAM_STUDIO_PROMOTION_RELATION_REVIEW.md
+- 900129_STREAM_STUDIO_PROMOTION_READINESS_SUMMARY.md
 - 900130_STREAM_STUDIO_RELEASE_SLICE.md
+- 900130_STREAM_STUDIO_SHARED_ADOPTION_REVIEW_INPUT.md
+- 900131_ALLOCATION_SPLIT_RELATION_MEMO.md
+- 900140_STREAM_STUDIO_VERIFY_AND_AUDIT_RUNNER.sh
+- 900150_STREAM_STUDIO_REPAIR_FROM_VERIFY_RUNNER.sh
+- 900160_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER_DESIGN.md
+- 900161_STREAM_STUDIO_PHASE1_PREP_AND_VERIFY_RUNNER.sh
+- 900162_STREAM_STUDIO_PHASE1_BUNDLE_SUMMARY.md
+- 900163_STREAM_STUDIO_PHASE1_STARTER_PACKET_SUMMARY.md
+- 900164_STREAM_STUDIO_PHASE1_STARTER_PACKET_VERIFY.sh
+- 900165_STREAM_STUDIO_PHASE1_FILESET_PACKET_SUMMARY.md
+- 900166_STREAM_STUDIO_PHASE1_FILESET_PACKET_VERIFY.sh
+- 900167_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_SUMMARY.md
+- 900168_STREAM_STUDIO_PHASE1_SQL_PRE_DDL_PACKET_VERIFY.sh
+- 900_OVERVIEW.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900_INDEX.md -->
+
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900_OVERVIEW.md -->
 # ============================================================
 # 900 META OVERVIEW
 # ============================================================
@@ -12483,5 +24416,5 @@ summary:
 Stores design freeze notes, common component promotion candidates,
 CX22073 candidate data areas, and release slicing notes.
 
-<- END FILE:  -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/06.streaming-app/StreamStudio/900.meta/900_OVERVIEW.md -->
 

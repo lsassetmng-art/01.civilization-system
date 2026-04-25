@@ -1,6 +1,8 @@
-# PERSONA PACKAGE ARCHITECTURE INDEX
+# 0201000000_PERSONA_PACKAGE_ARCHITECTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 020.architecture/100.package
 
 - 0201000001_PERSONA_PACKAGE_ARCHITECTURE_OVERVIEW.md
-- package manifest architecture
-- package integrity architecture
-- package revocation architecture
+- 020.architecture/

@@ -17,3 +17,21 @@ files:
 - 1200420005_HISTORY_BOUNDARY_IMPLEMENTATION.md
 - 1200420006_HISTORY_VALIDATION_IMPLEMENTATION.md
 - 1200420007_HISTORY_FAILURE_IMPLEMENTATION.md
+
+## Exact History Artifact Boundary
+## Exact History Artifact Boundary
+
+History implementation must explicitly distinguish:
+
+- historical artifact
+- event linkage
+- timeline ordering
+- revision note
+
+Revision note may annotate history,
+but may not erase earlier recorded historical trace.
+
+## Exact Timeline Reproducibility Rule
+
+Timeline ordering and artifact identity must be reproducible
+from canonical historical records.

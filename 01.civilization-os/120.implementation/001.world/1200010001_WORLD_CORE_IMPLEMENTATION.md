@@ -72,3 +72,29 @@ boundary meaning,
 validation meaning,
 and failure meaning
 are all explicit and reviewable.
+
+## Exact World Source Of Truth
+## Exact World Source Of Truth
+
+The following must be explicitly declared:
+
+- world core table set
+- world state table set
+- global state table set
+- map projection table set
+- seed import artifact
+- revision linkage
+
+Projection must never replace canonical world truth.
+
+## Exact World Mutation Classes
+
+Allowed mutation classes:
+
+- seed initialization
+- approved progression application
+- approved recovery application
+- reviewed repair
+- supersede and archive
+
+World-wide mutation must remain traceable and fail closed on ambiguity.

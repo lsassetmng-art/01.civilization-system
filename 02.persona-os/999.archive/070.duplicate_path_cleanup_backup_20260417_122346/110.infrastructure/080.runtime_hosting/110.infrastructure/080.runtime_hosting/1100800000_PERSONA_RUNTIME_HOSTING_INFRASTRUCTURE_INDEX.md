@@ -1,0 +1,8 @@
+# 1100800000_PERSONA_RUNTIME_HOSTING_INFRASTRUCTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 110.infrastructure/080.runtime_hosting/110.infrastructure/080.runtime_hosting
+
+- 1100800001_PERSONA_RUNTIME_HOSTING_INFRASTRUCTURE_OVERVIEW.md
+- 1100800002_PERSONA_RUNTIME_SESSION_INFRASTRUCTURE.md

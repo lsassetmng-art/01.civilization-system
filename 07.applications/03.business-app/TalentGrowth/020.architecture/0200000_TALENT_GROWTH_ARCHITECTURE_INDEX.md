@@ -1,0 +1,11 @@
+# ============================================================
+# TALENT GROWTH ARCHITECTURE INDEX
+# ============================================================
+
+files:
+
+- 021120_TALENTGROWTH_GROWTH_SIGNAL_AGGREGATION_ARCHITECTURE.md
+
+- 021130_TALENTGROWTH_READINESS_EXCEPTION_REVIEW_ARCHITECTURE.md
+
+- 021140_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_DDL_ADDITIVE_PLAN.md

@@ -81,3 +81,20 @@ At minimum, the layer should expose:
 - dependency linkage
 - failure and suppression reasons
 
+
+## Exact Event Ingress Order
+## Exact Event Ingress Order
+
+1. receive ingress envelope
+2. validate transport shape
+3. validate canonical mapping eligibility
+4. check duplicate ingress
+5. quarantine if mapping unresolved
+6. convert to approved internal command or reject
+7. audit ingress result
+
+## Exact Intake Rule
+
+- direct canonical mutation from raw ingress is prohibited
+- unresolved mapping must quarantine, not silently drop
+- duplicate ingress must be traceable

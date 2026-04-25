@@ -1,0 +1,8 @@
+# 0500700000_PERSONA_VISUAL_FLOW_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 050.flow/070.visual
+
+- 0500700001_PERSONA_VISUAL_FLOW_OVERVIEW.md
+- 0500700002_PERSONA_VISUAL_RENDER_FLOW.md

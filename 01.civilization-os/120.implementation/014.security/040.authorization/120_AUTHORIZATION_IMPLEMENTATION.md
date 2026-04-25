@@ -94,3 +94,45 @@ At minimum, the layer should expose:
 - dependency linkage
 - failure and suppression reasons
 
+
+## Exact Authorization Decision Model
+## Exact Authorization Decision Model
+
+authorization_decision minimum:
+- decision_id
+- subject_id
+- action_scope
+- resource_scope
+- rule_id
+- decision_state
+- decided_at
+- expires_at
+- reviewed_flag
+
+Allowed decision_state:
+- allow
+- deny
+- blocked
+- superseded
+
+## Exact Fail-Closed Matrix
+
+Must deny when:
+- subject unresolved
+- action_scope unregistered
+- resource ownership unresolved
+- required policy rule unavailable
+- privileged review missing
+- session freshness insufficient
+
+## Exact Privileged Action Rule
+
+The following classes require privileged handling:
+- publish
+- approve
+- override
+- repair
+- reconcile-finalize
+- delete-like destructive action if allowed
+
+Privileged actions must be auditable and reviewable.

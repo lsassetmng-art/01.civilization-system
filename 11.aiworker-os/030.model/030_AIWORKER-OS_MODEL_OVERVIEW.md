@@ -1,0 +1,20 @@
+# ============================================================
+# AIWORKER OS MODEL OVERVIEW
+# ============================================================
+
+status: overview
+system: AiworkerOS
+layer: 030.model
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines exact worker classification, tendency, assignment, and fit models.
+
+current_scope:
+- 011103000000001_AIWORKER_ENTITY_AND_SCOPE_MODEL.md
+- 011103000000002_AIWORKER_TENDENCY_AND_GROWTH_MODEL.md
+- 011103000000003_AIWORKER_ASSIGNMENT_AND_RESTRICTION_MODEL.md
+- 011103000000010_AIWORKER_CLASSIFICATION_AND_EFFECTIVE_BEHAVIOR_MODEL.md
+- 011103000000011_AIWORKER_TENANCY_ASSIGNMENT_AND_AVAILABILITY_MODEL.md
+- 011103000000012_AIWORKER_GROWTH_TENDENCY_AND_FIT_EXACT_MODEL.md

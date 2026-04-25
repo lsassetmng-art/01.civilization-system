@@ -1,0 +1,45 @@
+# COMMON OS MODEL INDEX
+
+status: canonical
+layer: model
+
+## Documents
+- 000000_COMMON_OS_MODEL_INDEX.md
+- 000001_COMMON_OS_MODEL_OVERVIEW.md
+- 000010_APP_COMMON_SCHEMA_DDL_CANONICAL.md
+- 000020_APP_COMMON_METADATA_MODEL_CANONICAL.md
+- 000030_SHARED_COMPONENT_VARIANT_MODEL_CANONICAL.md
+- 000040_SHARED_TOKEN_AND_THEME_MODEL_CANONICAL.md
+- 000050_SHARED_LOCALE_TEMPLATE_MODEL_CANONICAL.md
+
+## Application common component model subsystem
+
+### Canonical model reading path
+1. 000060_APPLICATION_COMMON_COMPONENT_CATALOG_MODEL_CANONICAL.md
+2. 000070_APPLICATION_COMMON_COMPONENT_VARIANT_CATALOG_MODEL_CANONICAL.md
+3. 000080_APPLICATION_COMMON_COMPONENT_STATUS_MODEL_CANONICAL.md
+4. 000090_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_MODEL_CANONICAL.md
+
+### Notes
+These model documents formalize how CommonOS stores and reasons about common component families, variants, promotion status, and origin evidence in app_common-aligned metadata terms.
+
+## app_common reviewed canonical DDL subsystem
+
+### Canonical DDL reading path
+1. 000100_APP_COMMON_REVIEWED_CANONICAL_DDL_TIER1.sql
+2. 000101_APP_COMMON_REVIEWED_CANONICAL_DDL_TIER1_NOTES.md
+3. 000102_APP_COMMON_REVIEWED_CANONICAL_DDL_TIER2_TIER3_PLAN.md
+
+### Notes
+These files define the first reviewed canonical DDL wave for app_common as shared mutable metadata only. They do not introduce domain business truth.
+
+## app_common RLS and published-read SQL draft subsystem
+
+### Canonical SQL draft reading path
+1. 000103_APP_COMMON_RLS_SQL_DRAFT_TIER1.sql
+2. 000104_APP_COMMON_PUBLISHED_READ_VIEW_SQL_DRAFT_TIER1.sql
+3. 000105_APP_COMMON_RLS_SQL_DRAFT_TIER1_NOTES.md
+4. 000106_APP_COMMON_ROLE_MAPPING_DRAFT.md
+
+### Notes
+These files describe the first actual SQL draft for protecting app_common base tables and exposing only published metadata through controlled read views.

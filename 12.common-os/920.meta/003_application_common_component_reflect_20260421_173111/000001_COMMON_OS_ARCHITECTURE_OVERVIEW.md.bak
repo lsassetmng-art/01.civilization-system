@@ -1,0 +1,14 @@
+# COMMON OS ARCHITECTURE OVERVIEW
+
+status: canonical
+layer: architecture
+
+## Purpose
+This layer describes how CommonOS is structurally composed and how it is applied across systems.
+
+## Core topics
+- Shared UI layer stack
+- Component layering
+- app_common positioning
+- ERP applicability
+- Offline-first architecture

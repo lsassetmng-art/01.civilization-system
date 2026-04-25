@@ -1,0 +1,78 @@
+99:-     79	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/030.model/030_AIWORKER_PRESIDENT_WLM_INTERNAL_PIPELINE_APPEND.md
+123:-    103	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/060_AIWORKER_PRESIDENT_MANAGER_WLM_INTERNAL_PIPELINE_APPEND.md
+134:-    114	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/080.policy/080_AIWORKER_PRESIDENT_WLM_INTERNAL_PIPELINE_SAFETY_APPEND.md
+561:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+1006:- destructive action unlock
+2433:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+3045:- destructive action unlock
+5648:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+5888:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+6528:- destructive action unlock
+10173:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+10869:- destructive action unlock
+15195:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+15945:- destructive action unlock
+21032:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+21837:- destructive action unlock
+27518:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+28376:- destructive action unlock
+34670:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+35577:- destructive action unlock
+42292:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+43240:- destructive action unlock
+52471:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+52916:- destructive action unlock
+54296:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+54908:- destructive action unlock
+57661:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+58301:- destructive action unlock
+61909:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+62605:- destructive action unlock
+66929:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+67679:- destructive action unlock
+72709:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+73514:- destructive action unlock
+79139:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+79997:- destructive action unlock
+86234:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+87141:- destructive action unlock
+93752:- rank does not bypass gate, approval, audit, or destructive action restrictions.
+94700:- destructive action unlock
+103525:- destructive action unlock
+104032:# SOURCE: 030.model/030_AIWORKER_PRESIDENT_WLM_INTERNAL_PIPELINE_APPEND.md
+104034:# AIWorkerOS Model Append: President / Manager / Leader / Worker Internal Pipeline
+104042:- HD-R5P / President / プレジデント
+104047:## President
+104049:President is the top executive authority of an AI company.
+104051:President can operate in:
+104059:- President model_no: HD-R5P
+104060:- President authority: ACTIVE
+104061:- President runtime: READY
+104066:Manager receives President internal distribution and converts it into:
+104088:- external execution
+104089:- PG apply
+104090:- destructive action
+105040:President HD-R5P
+105045:-> DELIVERY_READY_INTERNAL
+105055:The app does not mutate President, Manager, Worker, Leader, gate, or delivery state through this read surface.
+105182:# SOURCE: 060.integration/060_AIWORKER_PRESIDENT_MANAGER_WLM_INTERNAL_PIPELINE_APPEND.md
+105184:# AIWorkerOS Integration Append: President to Manager to W/L/M Internal Pipeline
+105192:1. President HD-R5P creates or holds Manager distribution candidates.
+105194:3. Manager accepts acceptable President instructions.
+105203:8. Manager final gate marks plan as DELIVERY_READY_INTERNAL.
+105246:Expose the accepted President / Manager / Worker / Leader internal pipeline to an application as a read-only payload.
+105252:- APP_READ_PRESIDENT_WLM_INTERNAL_PIPELINE_V1
+105281:- display DELIVERY_READY_INTERNAL plans
+105289:- external execution
+105290:- PG apply
+105291:- destructive action
+105564:DELIVERY_READY_INTERNAL means:
+105704:# SOURCE: 080.policy/080_AIWORKER_PRESIDENT_WLM_INTERNAL_PIPELINE_SAFETY_APPEND.md
+105706:# AIWorkerOS Policy Append: President W/L/M Internal Pipeline Safety
+105716:- President internal Manager distribution
+105722:- DELIVERY_READY_INTERNAL status
+105728:- external execution
+105731:- PG apply
+105754:DELIVERY_READY_INTERNAL means internal output is ready for review or later app presentation.
+111110:- read_only_flag: true
+111160:- destructive action

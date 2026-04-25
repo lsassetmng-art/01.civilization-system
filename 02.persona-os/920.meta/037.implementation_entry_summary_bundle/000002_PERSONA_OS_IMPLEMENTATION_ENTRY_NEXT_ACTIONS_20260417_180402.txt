@@ -1,0 +1,5 @@
+1. Review the seven implementation-entry core docs for exact payload naming consistency.
+2. Freeze request fields, response fields, status families, and error families before DB work.
+3. Freeze transition tables and persistence touchpoints before API or app implementation.
+4. Start implementation from edge_apply, state_apply, builder_api, and builder_storage first.
+5. Keep runtime_session, visual_runtime, and external_release as second-wave implementation targets.

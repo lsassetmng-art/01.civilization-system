@@ -1,21 +1,10 @@
-# ============================================================
-# PERSONA VISUAL POLICY INDEX
-# ============================================================
+# 0800700000_PERSONA_VISUAL_POLICY_INDEX
 
-status: canonical
-layer: policy
-domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA VISUAL POLICY documents.
+directory: 080.policy/070.visual
 
-# ============================================================
-# FILES
-# ============================================================
-
-0800700000_PERSONA_VISUAL_POLICY_INDEX.md
-0800700001_PERSONA_VISUAL_POLICY_OVERVIEW.md
-0800700002_PERSONA_VISUAL_PROFILE_POLICY.md
+- 0800700001_PERSONA_VISUAL_POLICY_OVERVIEW.md
+- 0800700002_PERSONA_VISUAL_PROFILE_POLICY.md
+- 0800700002_PERSONA_VISUAL_TRUTH_POLICY.md
+- 080.policy/

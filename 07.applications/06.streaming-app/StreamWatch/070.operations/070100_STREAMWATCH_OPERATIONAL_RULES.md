@@ -2,32 +2,45 @@
 # STREAMWATCH OPERATIONAL RULES
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: operations
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines the operational rules that should remain stable when StreamWatch moves from design into implementation and rollout.
+This document defines the core operational rules that should remain stable as StreamWatch moves toward implementation and rollout.
 
-## 2. Fixed Inputs
+## 2. Core Rules
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+The following rules are operationally mandatory:
 
-## 3. Design Direction
+- additive change only for phase-1 scope
+- no blurring of viewer-side and creator-side responsibility
+- no reassignment of commerce truth into StreamWatch
+- no reassignment of entitlement truth away from StreamingOS
+- no collapsing of history and progress into one operational write path
+- no collapsing of route handoff and same-device large-screen mode
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Viewer-Safety Rules
 
-## 4. Current Status
+Operations must preserve:
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+- viewer_profile separation
+- restriction-aware playback gating
+- entitlement-aware CTA accuracy
+- resume correctness after interruption
+
+## 4. Incident Priority Areas
+
+Operational priority should be highest when issues affect:
+
+- incorrect watchability state
+- broken resume behavior
+- cross-profile leakage
+- failed handoff recovery
+- post-purchase entitlement refresh mismatch

@@ -1,0 +1,41 @@
+# COMMON OS DEVELOPMENT INDEX
+
+status: canonical
+layer: development
+
+## Documents
+- 000000_COMMON_OS_DEVELOPMENT_INDEX.md
+- 000001_COMMON_OS_DEVELOPMENT_OVERVIEW.md
+- 000010_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md
+- 000020_COMMON_OS_ADOPTION_REVIEW_WORKFLOW_CANONICAL.md
+- 000030_COMMON_OS_CHANGE_INTRODUCTION_POLICY_CANONICAL.md
+
+## Application common component development subsystem
+
+### Canonical development reading path
+1. 000040_APPLICATION_COMMON_COMPONENT_ADOPTION_REVIEW_POLICY_CANONICAL.md
+2. 000050_APPLICATION_COMMON_COMPONENT_WAVE_PROMOTION_POLICY_CANONICAL.md
+3. 000060_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_ROLLOUT_ORDER_CANONICAL.md
+4. 000070_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_INTAKE_POLICY_CANONICAL.md
+
+### Notes
+These documents define how CommonOS reviews, promotes, sequences, and operationally absorbs application common component families from origin evidence into active development use.
+
+## app_common metadata governance subsystem
+
+### Canonical development reading path
+1. 000080_APP_COMMON_METADATA_CHANGE_CONTROL_CANONICAL.md
+2. 000090_APP_COMMON_METADATA_REVIEW_AND_PUBLISH_WORKFLOW_CANONICAL.md
+3. 000100_APP_COMMON_VERSIONING_DEPRECATION_AND_EFFECTIVE_WINDOW_CANONICAL.md
+
+### Notes
+These development documents define how app_common metadata changes are proposed, reviewed, published, versioned, and deprecated.
+
+## app_common rollout batch subsystem
+
+### Canonical reading path
+1. 000110_APP_COMMON_REVIEWED_ROLLOUT_BATCH_CANONICAL.md
+2. 000111_APP_COMMON_MIGRATION_APPLY_SEQUENCE_AND_GATE_CANONICAL.md
+
+### Notes
+These documents define the reviewed rollout batch structure and the gate sequence for applying app_common metadata migrations.

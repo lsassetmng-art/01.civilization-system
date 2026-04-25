@@ -1,0 +1,17 @@
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000000_120_IMPLEMENTATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000000_COMMON_OS_IMPLEMENTATION_INDEX.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000000_COMMON_OS_IMPLEMENTATION_RULES_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000001_120_IMPLEMENTATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000001_COMMON_OS_IMPLEMENTATION_OVERVIEW.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000010_COMMON_OS_IMPLEMENTATION_RULES_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000020_COMMON_OS_COMPONENT_IMPLEMENTATION_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000030_COMMON_OS_QUEUE_UI_IMPLEMENTATION_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000040_COMMON_OS_ACCESSIBILITY_IMPLEMENTATION_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000050_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_SCOPE_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000060_APPLICATION_COMMON_COMPONENT_MINIMUM_SET_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000070_APPLICATION_COMMON_COMPONENT_CURRENT_WAVE_IMPLEMENTATION_MAPPING.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000080_APPLICATION_COMMON_COMPONENT_VARIANT_IMPLEMENTATION_POLICY.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000090_APPLICATION_COMMON_COMPONENT_SHARED_PACKAGE_BOUNDARY_CANONICAL.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000160_APP_COMMON_SCHEMA_SQL_DRAFT.sql
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/000161_APP_COMMON_SCHEMA_SQL_DRAFT_NOTES.md
+/data/data/com.termux/files/home/01.civilization-system/12.common-os/120.implementation/00_COMMON_OS_IMPLEMENTATION_INTEGRATED.md

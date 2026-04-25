@@ -109,3 +109,5 @@ document guide:
 cross_cutting_technical_domain:
 - 140.visual-runtime
   Host request/event contract used by PocketSecretary to host Persona Visual Runtime.
+
+- 090330_POCKETSECRETARY_DAILY_BRIEFING_INTERFACE.md

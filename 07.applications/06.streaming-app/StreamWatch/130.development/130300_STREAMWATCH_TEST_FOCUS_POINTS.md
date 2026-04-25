@@ -2,32 +2,32 @@
 # STREAMWATCH TEST FOCUS POINTS
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: development
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines the most important areas to test first including continuity correctness, entitlement correctness, and TV handoff correctness.
+This document defines the most important testing targets for early StreamWatch implementation.
 
-## 2. Fixed Inputs
+## 2. Highest Priority Tests
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+Priority testing should cover:
 
-## 3. Design Direction
+- profile separation correctness
+- history versus progress correctness
+- continue-watching correctness
+- entitlement and CTA correctness
+- purchase-to-entitlement refresh correctness
+- route handoff correctness
+- live-to-archive correctness
+- category-tree traversal correctness
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Test Rule
 
-## 4. Current Status
-
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+Tests should focus first on correctness of viewer state, not only screen rendering.

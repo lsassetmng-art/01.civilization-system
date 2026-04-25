@@ -1,0 +1,8 @@
+CHECK_1=edge_apply target path exists
+CHECK_2=payload fields are explicit and implementation-usable
+CHECK_3=result and reject families are explicit
+CHECK_4=duplicate_noop remains non-mutating
+CHECK_5=retry_wait and dead_lettered remain distinguishable
+CHECK_6=persistence touchpoints are explicit
+CHECK_7=audit evidence fields are explicit
+CHECK_8=acceptance gate is explicit

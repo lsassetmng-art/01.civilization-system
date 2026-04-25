@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA DISTRIBUTION POLICY INDEX
-# ============================================================
+# 0801100000_PERSONA_DISTRIBUTION_POLICY_INDEX
 
-status: canonical
-layer: policy
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA DISTRIBUTION POLICY documents.
+directory: 080.policy/110.distribution
 
-# ============================================================
-# FILES
-# ============================================================
-
-0801100000_PERSONA_DISTRIBUTION_POLICY_INDEX.md
-0801100001_PERSONA_DISTRIBUTION_POLICY_OVERVIEW.md
-0801100002_PERSONA_RELEASE_POLICY.md
+- 0801100001_PERSONA_DISTRIBUTION_POLICY_OVERVIEW.md
+- 0801100002_PERSONA_RELEASE_POLICY.md
+- 080.policy/

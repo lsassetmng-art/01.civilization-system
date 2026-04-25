@@ -1,5 +1,5 @@
 # ============================================================
-# 030 MODEL INDEX
+# 030 INDEX
 # ============================================================
 
 status: canonical
@@ -11,5 +11,6 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 030_OVERVIEW.md
 - 030_STREAM_STUDIO_MODEL_OVERVIEW.md
 - 031_STREAM_STUDIO_COMMERCE_AND_MEMBERSHIP_MODEL_EXTENSION.md

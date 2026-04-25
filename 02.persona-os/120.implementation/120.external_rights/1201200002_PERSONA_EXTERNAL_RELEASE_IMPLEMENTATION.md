@@ -1,0 +1,274 @@
+# ============================================================
+# PERSONA EXTERNAL RELEASE IMPLEMENTATION
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / external release orchestration
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Required tables
+
+- `license_record`
+- `access_grant_record`
+- `transfer_record`
+- `external_release_record`
+- `external_sync_outbox`
+- `external_sync_attempt`
+- `release_gate_result`
+- `operations_incident_record`
+
+## Outbox rules
+
+- one outbox row per external sync action
+- statuses: `queued`, `sending`, `succeeded`, `failed-retryable`, `failed-terminal`, `dead-lettered`
+- retry schedule: `30, 120, 600, 1800, 7200`
+- dead-letter after 5 retryable failures
+
+## Release gate
+
+External release may proceed only when:
+- release status is `published`
+- package status is `built`
+- integrity hash verified
+- rights record exists for destination
+- no blocking security incident open
+
+## Ops signals
+
+Emit metrics for:
+- external release success rate
+- retry count
+- dead-letter count
+- package build duration
+- approval-to-release latency
+
+# EXACT READY REINFORCEMENT
+
+status_extension: author-reviewed-with-exact-ready-reinforcement
+reinforced_at: 20260417_150009
+reinforcement_scope:
+- implementation contract clarification
+- persistence touchpoint clarification
+- error family clarification
+- acceptance target clarification
+
+domain: external_rights
+
+minimum_exact_contract:
+- define authoritative operation names
+- define request-side required identifiers
+- define response-side success and reject families
+- define validation gates
+- define state transition or resolution boundaries
+- define persistence touchpoints
+- define retry and dead-letter behavior where applicable
+
+minimum_error_families:
+- invalid_request
+- authority_blocked
+- lifecycle_blocked
+- conflict_or_duplicate where applicable
+- internal_retryable where applicable
+- internal_terminal
+
+minimum_acceptance_targets:
+- success path
+- reject or blocked path
+- audit persistence proof
+- retry-safe path where applicable
+
+implementation_ready_note:
+This reinforcement does not replace the authored content above.
+It marks the minimum exact-ready items that must be made explicit
+before implementation is considered complete for this document.
+
+# EXACT PAYLOAD FIXATION
+
+exact_payload_domain: external_release
+fixed_at: 20260417_164735
+
+release_request:
+  required_fields:
+    - release_request_id
+    - correlation_id
+    - persona_id
+    - target_system_id
+    - release_scope
+    - source_snapshot_id_or_package_id
+    - actor_id
+
+release_response:
+  required_fields:
+    - release_request_id
+    - correlation_id
+    - release_status
+    - result_code
+    - completed_at
+
+fixed_release_status_family:
+- released
+- blocked_scope
+- blocked_export
+- retrying
+- dead_lettered
+
+mandatory_controls:
+- explicit release_scope required
+- explicit target_system_id required
+- immutable source required
+- export allow decision must remain separable from transport result
+
+# EXACT CODE FAMILY FIXATION
+
+exact_code_family_domain: external_release
+fixed_at: 20260417_164945
+
+fixed_release_status_family:
+- released
+- blocked_scope
+- blocked_export
+- retrying
+- dead_lettered
+
+fixed_result_code_family:
+- RELEASE_SUCCESS
+- RELEASE_BLOCKED_SCOPE
+- RELEASE_BLOCKED_EXPORT
+- RELEASE_RETRY_SCHEDULED
+- RELEASE_DEAD_LETTERED
+
+fixed_error_code_family:
+- ERR_TARGET_UNAVAILABLE
+- ERR_CALLBACK_FAILURE
+- ERR_INTERNAL_RETRYABLE
+- ERR_INTERNAL_TERMINAL
+
+rules:
+- blocked_scope and blocked_export must remain separate
+- retrying and dead_lettered must remain separate
+- transport errors must not overwrite policy block results
+
+# EXACT STATE ENUM AND TRANSITION FIXATION
+
+exact_state_transition_domain: external_release
+fixed_at: 20260417_165940
+
+release_status_enum:
+- requested
+- scope_checked
+- export_checked
+- dispatching
+- released
+- blocked_scope
+- blocked_export
+- retry_wait
+- dead_lettered
+- terminal_failed
+
+release_transition_table:
+- requested -> scope_checked : validate_release_scope
+- scope_checked -> blocked_scope : block_on_invalid_scope
+- scope_checked -> export_checked : pass_scope_check
+- export_checked -> blocked_export : block_on_export_decision
+- export_checked -> dispatching : pass_export_check
+- dispatching -> released : dispatch_success
+- dispatching -> retry_wait : retryable_transport_failure
+- retry_wait -> dispatching : retry_dispatch
+- retry_wait -> dead_lettered : retry_exhausted
+- dispatching -> terminal_failed : internal_terminal_failure
+
+rules:
+- blocked_scope and blocked_export are terminal and distinct
+- released is the only success terminal
+- retry_wait may transition only to dispatching or dead_lettered
+
+# EXACT REQUEST RESPONSE EXAMPLES
+
+exact_example_domain: external_release
+fixed_at: 20260417_174222
+
+release_request_example:
+  release_request_id: relreq_001
+  correlation_id: corr_003
+  persona_id: persona_001
+  target_system_id: target_system_a
+  release_scope: packaged_runtime_use
+  source_snapshot_id_or_package_id: pkg_001
+  actor_id: actor_001
+
+release_response_example:
+  release_request_id: relreq_001
+  correlation_id: corr_003
+  release_status: released
+  result_code: RELEASE_SUCCESS
+  completed_at: 2026-01-01T00:00:03Z
+
+# EXACT PERSISTENCE AND AUDIT FIXATION
+
+exact_persistence_audit_domain: external_release
+fixed_at: 20260417_174751
+
+persistence_touchpoints:
+- release_request_record
+- export_allow_decision_record
+- outbound_dispatch_record
+- callback_or_result_record
+- retry_schedule_record where applicable
+- dead_letter_record where applicable
+- release_audit_trace
+
+storage_objects:
+- persona_external_release_request
+- persona_external_release_result
+- persona_export_allow_decision
+- persona_outbox
+- persona_retry_queue
+- persona_dead_letter_queue
+- persona_audit_trace
+
+audit_evidence_required_fields:
+- release_request_id
+- correlation_id
+- persona_id
+- target_system_id
+- release_scope
+- release_status
+- result_code
+- actor_id
+- recorded_at
+
+audit_rules:
+- policy block and transport failure must remain separable
+- release success must remain linked to target system and source object
+- dead-letter paths must preserve retry history evidence
+
+# EXACT ACCEPTANCE AND DONE GATE FIXATION
+
+exact_acceptance_domain: external_release
+fixed_at: 20260417_175108
+
+acceptance_checklist:
+- valid scope and export decision reach released
+- invalid scope reaches blocked_scope
+- export-denied path reaches blocked_export
+- retryable transport failure reaches retry_wait
+- exhausted retry reaches dead_lettered
+- terminal failure remains distinct from policy block
+- release success remains linked to target system and source object
+
+done_definition:
+- request payload is fixed
+- release status family is fixed
+- result and error code families are fixed
+- transition table is fixed
+- persistence and audit linkage are fixed
+- request and response examples are present
+
+implementation_gate:
+- no implementation may collapse blocked_scope and blocked_export
+- no implementation may overwrite policy block with transport failure result
+- no implementation may dispatch from mutable source input

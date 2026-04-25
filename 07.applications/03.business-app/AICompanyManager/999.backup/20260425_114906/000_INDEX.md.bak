@@ -1,0 +1,70 @@
+# ============================================================
+# AICompanyManager INDEX
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase D
+status: db-apply-preparation-created
+owner: Boss
+prepared_by: Zero
+
+## 1. Purpose
+
+AICompanyManager is a business-app for operating an AI company from a human-facing application.
+
+Human gives policy to President.
+President creates business plan.
+Manager breaks it into domains and actions.
+Leader breaks actions into deliverables and tasks.
+Worker executes tasks and creates outputs.
+Leader reviews and integrates.
+Manager reviews.
+President performs final review.
+Human approves and receives delivery.
+
+## 2. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 3. Current Completion
+
+Phase A:
+- app skeleton completed
+
+Phase B:
+- DB / API / State exact design completed
+
+Phase C:
+- DB DDL Design Review Package completed
+- DB apply not executed
+
+Phase D:
+- DB apply preparation package completed
+- guarded apply draft created
+- DB apply not executed
+
+## 4. Latest Phase D Documents
+
+| file | purpose |
+|---|---|
+| 200_PHASE_D_ROADMAP.md | Phase D roadmap |
+| 210_DB_APPLY_PREPARATION_PACKAGE.md | DB apply preparation package |
+| 211_DB_APPLY_DRAFT_BUSINESS_AI_COMPANY_MANAGER.sql | SQL apply draft |
+| 212_DB_APPLY_METHOD_A_GUARDED_ONEBLOCK_DRAFT.sh | guarded Method A apply draft |
+| 213_DB_POST_APPLY_VERIFY_SQL_DRAFT.sql | post-apply verify SQL draft |
+| 214_DB_ROLLBACK_AND_RECOVERY_MEMO.md | rollback / recovery memo |
+| 290_PHASE_D_COMPLETION_REPORT.md | Phase D report |
+| 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | integrated design |
+
+## 5. Next Phase
+
+Phase E:
+- DB apply execution
+- only after explicit Boss DB OK / GO

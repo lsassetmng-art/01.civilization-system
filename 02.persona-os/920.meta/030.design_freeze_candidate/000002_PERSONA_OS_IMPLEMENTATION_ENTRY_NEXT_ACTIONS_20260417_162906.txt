@@ -1,0 +1,4 @@
+1. Freeze PersonaOS design-side structure and treat current files as implementation-entry baseline.
+2. Start exact payload fixation for high-priority implementation documents under 120.implementation.
+3. Fix exact request, response, status, and error families before any DB or app implementation.
+4. Keep heavy integrated rebuild and full audit deferred until pre-implementation freeze review.

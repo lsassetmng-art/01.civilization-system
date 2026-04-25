@@ -1,0 +1,538 @@
+============================================================
+AIWORKER OS FULL APPLY AND VERIFY START
+============================================================
+STAMP      : 20260421_133604
+ROOT       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+BASE       : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604
+LOG_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs
+============================================================
+PASS: PERSONA_DATABASE_URL is set.
+============================================================
+PASS: required package directories and scripts exist.
+============================================================
+STEP 1: PKG-AIW-007 environment precheck
+============================================================
+============================================================
+PKG-AIW-007 ENVIRONMENT PRECHECK
+============================================================
+PASS: PERSONA_DATABASE_URL is set
+PASS: pkg-aiw-001 through pkg-aiw-006 directories exist
+============================================================
+============================================================
+STEP 2: ordered apply PKG-AIW-001..006
+============================================================
+============================================================
+PKG-AIW-007 ENVIRONMENT PRECHECK
+============================================================
+PASS: PERSONA_DATABASE_URL is set
+PASS: pkg-aiw-001 through pkg-aiw-006 directories exist
+============================================================
+============================================================
+PKG-AIW-007 APPLY ORCHESTRATOR
+============================================================
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Applying packages in fixed order: 001 -> 006
+============================================================
+============================================================
+PKG-AIW-001 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-001
+============================================================
+BEGIN
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+INSERT 0 10
+INSERT 0 60
+COMMIT
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+COMMIT
+BEGIN
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+COMMIT
+============================================================
+PKG-AIW-001 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-002 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependency: PKG-AIW-001 must already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-002
+============================================================
+BEGIN
+CREATE TABLE
+CREATE TABLE
+INSERT 0 100
+INSERT 0 64
+INSERT 0 14
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+============================================================
+PKG-AIW-002 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-003 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependency: PKG-AIW-001 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-003
+============================================================
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 6
+CREATE INDEX
+CREATE INDEX
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+============================================================
+PKG-AIW-003 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-004 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 and PKG-AIW-002 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-004
+============================================================
+BEGIN
+DO
+DO
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+COMMIT
+BEGIN
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+COMMIT
+BEGIN
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+COMMIT
+============================================================
+PKG-AIW-004 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-005 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-001 and PKG-AIW-002 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-005
+============================================================
+BEGIN
+CREATE TABLE
+CREATE INDEX
+CREATE TABLE
+CREATE INDEX
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+INSERT 0 14
+COMMIT
+============================================================
+PKG-AIW-005 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-006 APPLY TEMPLATE (CANONICAL)
+============================================================
+Environment variable: PERSONA_DATABASE_URL
+Dependencies: PKG-AIW-005 should already be applied.
+Review requirement: 佐藤(DB担当) review is required before DB apply.
+Package dir: /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-006
+============================================================
+BEGIN
+DO
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE TABLE
+CREATE INDEX
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+COMMIT
+BEGIN
+INSERT 0 14
+COMMIT
+============================================================
+PKG-AIW-006 APPLY TEMPLATE FINISHED
+============================================================
+============================================================
+PKG-AIW-007 APPLY ORCHESTRATOR FINISHED
+============================================================
+============================================================
+STEP 3: full verification suite
+============================================================
+============================================================
+PKG-AIW-007 ENVIRONMENT PRECHECK
+============================================================
+PASS: PERSONA_DATABASE_URL is set
+PASS: pkg-aiw-001 through pkg-aiw-006 directories exist
+============================================================
+============================================================
+PKG-AIW-007 FULL VERIFICATION SUITE
+============================================================
+============================================================
+PKG-AIW-001 FOUNDATION VERIFY
+============================================================
+PASS: table aiworker.code_family
+PASS: table aiworker.code_value
+PASS: table aiworker.worker_master
+PASS: table aiworker.official_intake_request
+PASS: table aiworker.event_outbox
+PASS: index ux_worker_master_worker_code
+PASS: index ux_worker_assignment_state_current
+PASS: index ux_worker_availability_state_current
+PASS: code_family count >= 5
+------------------------------------------------------------
+PASS_COUNT=9
+FAIL_COUNT=0
+------------------------------------------------------------
+============================================================
+PKG-AIW-002 FUNCTIONS VERIFY
+============================================================
+PASS: table aiworker.state_transition_rule
+PASS: table aiworker.result_correlation
+PASS: function aiworker.fn_apply_worker_assignment_state
+PASS: function aiworker.fn_apply_worker_availability_state
+PASS: function aiworker.fn_apply_worker_repair_transition
+PASS: function aiworker.fn_apply_worker_rebuild_transition
+PASS: function aiworker.fn_apply_worker_growth_event
+PASS: function aiworker.fn_apply_worker_privileged_context_change
+PASS: function aiworker.fn_apply_worker_tendency_update
+PASS: function aiworker.fn_record_business_result_correlation
+PASS: state_transition_rule count >= 10
+------------------------------------------------------------
+PASS_COUNT=11
+FAIL_COUNT=0
+------------------------------------------------------------
+============================================================
+PKG-AIW-003 PAYLOAD VERIFY
+============================================================
+PASS: table aiworker.payload_schema_catalog
+PASS: table aiworker.payload_document
+PASS: table aiworker.payload_validation_log
+PASS: function aiworker.fn_validate_payload_by_schema_name
+PASS: function aiworker.fn_store_payload_document
+PASS: function aiworker.fn_default_summary_code_from_result_code
+PASS: function aiworker.fn_default_summary_band_from_result_code
+PASS: payload schema catalog count >= 6
+------------------------------------------------------------
+PASS_COUNT=8
+FAIL_COUNT=0
+------------------------------------------------------------
+============================================================
+PKG-AIW-004 SECURITY VERIFY
+============================================================
+PASS: role role_aiw_official_intake_writer
+PASS: role role_aiw_controlled_function_executor
+PASS: role role_aiw_audit_reader
+PASS: role role_aiw_operations_reviewer
+PASS: role role_aiw_event_delivery
+PASS: role role_aiw_restricted_reviewer
+PASS: role role_aiw_privileged_reviewer
+PASS: role role_aiw_no_rawtable_aiworker
+PASS: policy pol_aiw_official_intake_writer_insert_self
+PASS: policy pol_aiw_event_delivery_select_undelivered
+PASS: policy pol_aiw_privileged_profile_privileged_reviewer
+PASS: policy pol_aiw_restricted_policy_restricted_reviewer
+PASS: role_aiw_no_rawtable_aiworker worker_master select = NO
+------------------------------------------------------------
+PASS_COUNT=13
+FAIL_COUNT=0
+------------------------------------------------------------
+============================================================
+PKG-AIW-005 REPLAY RECOVERY VERIFY
+============================================================
+PASS: table aiworker.request_lineage_registry
+PASS: table aiworker.replay_decision_log
+PASS: table aiworker.recovery_incident
+PASS: table aiworker.recovery_execution_log
+PASS: table aiworker.acceptance_test_case
+PASS: table aiworker.acceptance_test_execution
+PASS: function aiworker.fn_decide_replay_request
+PASS: function aiworker.fn_redeliver_result_for_request_hash
+PASS: function aiworker.fn_open_recovery_incident
+PASS: function aiworker.fn_log_recovery_execution
+PASS: acceptance test case count >= 10
+------------------------------------------------------------
+PASS_COUNT=11
+FAIL_COUNT=0
+------------------------------------------------------------
+============================================================
+PKG-AIW-006 ACCEPTANCE VERIFY
+============================================================
+PASS: table aiworker.acceptance_execution_batch
+PASS: table aiworker.acceptance_verification_item
+PASS: table aiworker.acceptance_verification_result
+PASS: table aiworker.acceptance_verification_runbook_log
+PASS: function aiworker.fn_open_acceptance_execution_batch
+PASS: function aiworker.fn_record_acceptance_verification_result
+PASS: function aiworker.fn_record_acceptance_case_execution_and_verify
+PASS: function aiworker.fn_finalize_acceptance_execution_batch
+PASS: acceptance verification item count >= 10
+------------------------------------------------------------
+PASS_COUNT=9
+FAIL_COUNT=0
+------------------------------------------------------------
+============================================================
+PKG-AIW-007 FULL VERIFICATION SUITE FINISHED
+============================================================
+============================================================
+STEP 4: quick DB spot checks
+============================================================
+schema.aiworker=1
+table.worker_master=1
+table.official_intake_request=1
+table.event_outbox=1
+table.payload_document=1
+table.request_lineage_registry=1
+table.acceptance_execution_batch=1
+function.fn_apply_worker_assignment_state=1
+function.fn_validate_payload_by_schema_name=1
+function.fn_decide_replay_request=1
+function.fn_finalize_acceptance_execution_batch=1
+role.role_aiw_controlled_function_executor=1
+role.role_aiw_no_rawtable_aiworker=1
+============================================================
+AIWORKER OS FULL APPLY AND VERIFY SUCCESS
+============================================================
+RUN_DIR    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604
+MAIN_LOG   : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs/000_main.log
+SUMMARY    : /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/000_RESULT_SUMMARY.txt
+LOG FILES:
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs/000_main.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs/010_environment_precheck.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs/020_apply_pkg_aiw_001_to_006.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs/030_full_verification_suite.log
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs/040_quick_db_spot_checks.log
+============================================================

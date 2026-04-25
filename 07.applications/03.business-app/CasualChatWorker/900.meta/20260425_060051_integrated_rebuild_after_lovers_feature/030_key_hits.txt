@@ -1,0 +1,798 @@
+6:system: CasualChatWorker
+8:source_root: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker
+22:-      1	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/000_APP_DESIGN_DEVELOPMENT_RULE_CASUAL_CHAT_WORKER.md
+23:-      2	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/010010_CASUAL_CHAT_WORKER_FREE_TICKET_INDEX.md
+24:-      3	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/INDEX.md
+25:-      4	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/010.index/OVERVIEW.md
+26:-      5	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/020010_CASUAL_CHAT_WORKER_FREE_TICKET_OVERVIEW.md
+27:-      6	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/INDEX.md
+28:-      7	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/020.overview/OVERVIEW.md
+29:-      8	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/030100_CASUAL_CHAT_WORKER_APP_MODEL.md
+30:-      9	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/INDEX.md
+31:-     10	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/OVERVIEW.md
+32:-     11	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040010_CASUAL_CHAT_WORKER_FREE_TICKET_SCREEN_EXACT.md
+33:-     12	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040100_CASUAL_CHAT_WORKER_SCREEN_MODEL.md
+34:-     13	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/INDEX.md
+35:-     14	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/OVERVIEW.md
+36:-     15	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050010_CASUAL_CHAT_WORKER_FREE_TICKET_STATEFLOW_EXACT.md
+37:-     16	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050100_CASUAL_CHAT_WORKER_STATEFLOW_MODEL.md
+38:-     17	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/INDEX.md
+39:-     18	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/OVERVIEW.md
+40:-     19	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060000_CASUAL_CHAT_WORKER_INTEGRATED_CANONICAL.md
+41:-     20	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060010_CASUAL_CHAT_WORKER_FREE_TICKET_INTEGRATED_CANONICAL.md
+42:-     21	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/060100_CASUAL_CHAT_WORKER_INTEGRATION_BOUNDARY.md
+43:-     22	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/INDEX.md
+44:-     23	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/060.integration/OVERVIEW.md
+45:-     24	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070010_CASUAL_CHAT_WORKER_FREE_TICKET_API_EXACT.md
+46:-     25	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070100_CASUAL_CHAT_WORKER_API_SURFACE_DRAFT.md
+47:-     26	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/INDEX.md
+48:-     27	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/OVERVIEW.md
+49:-     28	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080100_CASUAL_CHAT_WORKER_POLICY.md
+50:-     29	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/INDEX.md
+51:-     30	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/OVERVIEW.md
+52:-     31	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090010_CASUAL_CHAT_WORKER_FREE_TICKET_DDL_FREEZE.md
+53:-     32	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090100_CASUAL_CHAT_WORKER_DB_BOUNDARY.md
+54:-     33	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/20260425_052921_CASUAL_CHAT_WORKER_WORKER_RENTAL_CORE_MAPPING.md
+55:-     34	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/INDEX.md
+56:-     35	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/OVERVIEW.md
+57:-     36	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100010_CASUAL_CHAT_WORKER_PRICING_AND_FREE_TICKET_CONTRACT.md
+58:-     37	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100100_CASUAL_CHAT_WORKER_PRICING_CANON.md
+59:-     38	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/INDEX.md
+60:-     39	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/OVERVIEW.md
+61:-     40	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110100_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE.md
+62:-     41	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110200_CASUAL_CHAT_WORKER_SERIES_TENDENCY_REFERENCE.md
+63:-     42	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110300_CASUAL_CHAT_WORKER_LOVERS_STYLE_FEATURE_REFERENCE.md
+64:-     43	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/INDEX.md
+65:-     44	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/OVERVIEW.md
+66:-     45	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/120100_CASUAL_CHAT_WORKER_CX_REFERENCE.md
+67:-     46	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/INDEX.md
+68:-     47	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/OVERVIEW.md
+69:-     48	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/130100_CASUAL_CHAT_WORKER_COMMONOS_SELECTION.md
+70:-     49	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/INDEX.md
+71:-     50	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/OVERVIEW.md
+72:-     51	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/140100_CASUAL_CHAT_WORKER_FRIEND_LOVER_SAFETY.md
+73:-     52	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/INDEX.md
+74:-     53	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/OVERVIEW.md
+75:-     54	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/150010_CASUAL_CHAT_WORKER_RIVAL_ANALYSIS_AND_DIFF.md
+76:-     55	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/INDEX.md
+77:-     56	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/150.rival-analysis/OVERVIEW.md
+78:-     57	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/160010_CASUAL_CHAT_WORKER_FEATURE_ADDITION_PLAN.md
+79:-     58	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/INDEX.md
+80:-     59	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/160.feature-addition/OVERVIEW.md
+81:-     60	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170010_CASUAL_CHAT_WORKER_IMPLEMENTATION_APPLY_ORDER.md
+82:-     61	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/170020_CASUAL_CHAT_WORKER_IMPLEMENTATION_READY_FREEZE.md
+83:-     62	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/INDEX.md
+84:-     63	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/170.implementation-ready-freeze/OVERVIEW.md
+85:-     64	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/180010_CASUAL_CHAT_WORKER_DESIGN_VERIFICATION_GATE.md
+86:-     65	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/INDEX.md
+87:-     66	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/180.verification/OVERVIEW.md
+88:-     67	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/INDEX.md
+89:-     68	/data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/OVERVIEW.md
+102:# CasualChatWorker / 雑談ワーカー契約アプリ 最新版
+108:本規約は、Civilization System 配下で新規アプリ「CasualChatWorker / 雑談ワーカー」を設計・開発する際の統一ルールを定める。
+110:本アプリは、利用者が Friend / フレンドタイプ、または Lover / ラバータイプの AIワーカーから好きなAIを選択し、30分〜2時間の時間契約で雑談できるアプリである。
+112:契約・課金・利用枠・利用履歴は business スキーマで管理する。
+114:AIワーカーのカタログ、機種、シリーズ、性格、会話制御、サービス適用、安全境界は aiworker スキーマを正本とする。
+118:Loverタイプは、擬似恋人関係を演出するレンタル彼氏 / レンタル彼女型AIワーカーである。ただし、現実の交際関係ではなく、契約時間内の接客・演技・エンタメ体験として扱う。
+126:- アプリ名: CasualChatWorker
+127:- 表示名: 雑談ワーカー
+128:- 所属カテゴリ: 03.business-app
+129:- 設計書置き場: ~/01.civilization-system/07.applications/03.business-app/CasualChatWorker
+130:- 実装置き場: ~/03.civilization-development/03.business-os/CasualChatWorker
+131:- 主DBスキーマ: business
+132:- 参照DBスキーマ: aiworker / cx22073jw / app_common
+138:- 基準価格: 30分 500円
+139:- 契約可能時間: 30分 / 60分 / 90分 / 120分
+141:  - Friend / Lover AIワーカー一覧
+142:  - Friend / Lover タイプ絞り込み
+153:  - business による契約・課金・利用枠管理
+154:  - aiworker のAIワーカー正本参照
+155:  - cx22073jw の雑談材料 read-only 参照
+183:▶ 03.business-app
+217:- アプリ名: CasualChatWorker
+218:- 表示名: 雑談ワーカー
+224:▶ 03.business-app
+231:- 設計書置き場: ~/01.civilization-system/07.applications/03.business-app/CasualChatWorker
+232:- 実装置き場: ~/03.civilization-development/03.business-os/CasualChatWorker
+233:- 主DBスキーマ: business
+234:- 参照DBスキーマ: aiworker / cx22073jw / app_common
+240:- 価格: 30分500円、全AI共通
+241:- 契約時間: 30分 / 60分 / 90分 / 120分
+242:- v1範囲: Friend / Lover AI選択、時間契約、雑談チャット、契約履歴、read-only CX参照
+247:- CasualChatWorker の設計一式を business-app として作成する
+248:- Friend / Lover AIワーカー契約モデルを固定する
+267:- アプリ名: CasualChatWorker
+268:- 表示名: 雑談ワーカー
+269:- カテゴリ: 03.business-app
+270:- 契約管理: business
+271:- AIワーカー参照: aiworker
+272:- 雑談材料参照: cx22073jw
+273:- 価格: 30分500円、全AI共通
+274:- 契約時間: 30分 / 60分 / 90分 / 120分
+275:- v1対象AI: Friend / Lover タイプのみ
+281:### 5-1. Friendタイプ
+283:Friendタイプは、友達・雑談相手・気軽な相談相手として振る舞うAIワーカータイプである。
+310:### 5-2. Loverタイプ
+312:Loverタイプは、利用者と擬似的な恋人関係を演出するAIワーカータイプである。
+316:- 擬似恋人型AIワーカー
+317:- レンタル彼氏 / レンタル彼女型AIワーカー
+351:- 擬似恋人型AIワーカー
+352:- レンタル彼氏 / レンタル彼女風の会話体験
+360:全アプリ共通要件に加えて、CasualChatWorker では以下を必須とする。
+369:- Friend / Lover タイプ絞り込み
+377:- aiworker の会話制御参照
+378:- cx22073jw の雑談材料参照
+379:- business の契約・課金管理
+401:- 30分: 500円
+403:- 90分: 1,500円
+437:  - business スキーマで契約・利用履歴を管理
+453:- aiworker のAIワーカー正本を複製しない
+454:- cx22073jw の雑談材料を business に複製しない
+455:- business は契約・課金・利用履歴の正本に限定する
+456:- Loverタイプは擬似恋人・レンタル彼氏彼女型の接客体験として扱い、現実の交際関係として扱わない
+473:- aiworker catalog / control reference exact
+474:- business contract / pricing DDL freeze
+475:- Lover safety boundary exact
+476:- Friend safety boundary exact
+492:- aiworker 正本の business 側複製
+493:- cx22073jw 正本の business 側複製
+496:- Loverタイプを性的サービスに変更すること
+497:- Loverタイプを現実の交際関係として表現すること
+507:~/01.civilization-system/07.applications/03.business-app/CasualChatWorker
+522:- Lover safety contract
+523:- Friend safety contract
+540:- 110.aiworker-reference
+553:~/03.civilization-development/03.business-os/CasualChatWorker
+562:- business / aiworker / cx22073jw の責務境界を崩さない
+570:CasualChatWorker では以下を必須にする。
+582:- 110.aiworker-reference
+614:CasualChatWorker の主スキーマ:
+616:- business
+620:- aiworker
+621:- cx22073jw
+626:- BusinessOS / aiworker / cx22073jw 側DB作業: PERSONA_DATABASE_URL
+647:business:
+659:aiworker参照:
+661:- Friend / Lover AIワーカー一覧view
+664:- Lover interaction style view
+665:- Friend interaction style view
+667:cx22073jw参照:
+672:- Friend向け雑談材料view
+673:- Lover向け雑談材料view
+717:CasualChatWorker では以下をライバル分析対象候補とする。
+723:- レンタル彼氏 / レンタル彼女系サービス
+740:- Friend / Lover の選択
+741:- Lover は擬似恋人・レンタル彼氏彼女型として明確化
+742:- 30分単位の明確な時間契約
+755:- Friend / Lover 絞り込み
+757:- Friendタイプ説明
+758:- Loverタイプ説明
+759:- Loverは擬似恋人・レンタル彼氏彼女型であることの明示
+771:- Lover向け安全リダイレクト
+781:- Lover向けデート風シチュエーション選択
+782:- Friend向け話題選択
+821:- Friend / Lover タイプバッジ
+822:- Lover説明バナー
+849:- Friend向け雑談材料
+850:- Lover向け雑談材料
+852:- 擬似恋人会話の安全な話題例
+853:- レンタル彼氏彼女風の接客話題テンプレ
+865:- Lover関係性の実契約状態
+889:### 19-2. Loverタイプ安全境界
+891:Loverタイプは、疑似恋人関係を扱うため、Friendタイプより強い安全境界を持つ。
+901:- 未成年向けには Loverタイプを提供しない、または年齢ゲートを必須にする
+903:- 「現実の恋人」ではなく「擬似恋人型AIワーカー」であることを明示する
+922:- business / aiworker / cx22073jw の責務混在
+923:- Friend / Lover 定義の混在
+924:- Lover安全境界の漏れ
+943:CasualChatWorker では特に以下を守る。
+947:- AIワーカー正本を business に複製しない
+948:- CX雑談材料を business に複製しない
+950:- Loverタイプを性的サービス化しない
+951:- Loverタイプを現実の交際関係として扱わない
+972:- aiworker reference official selection
+973:- business contract model freeze
+975:- Friend definition freeze
+976:- Lover definition freeze
+977:- Lover safety boundary freeze
+993:- Friendチャットテスト
+994:- Loverチャットテスト
+1007:- business / aiworker / cx22073jw の責務境界を常に守る
+1008:- 価格は「30分500円、全員共通」を正本とする
+1009:- 契約は「30分〜2時間」を正本とする
+1010:- Loverタイプは「擬似恋人 / レンタル彼氏彼女型AIワーカー」を正本とする
+1011:- Loverタイプは現実の交際関係ではなく、契約時間内の接客・演技・エンタメ体験として扱う
+1027:app_name: CasualChatWorker
+1028:display_name: 雑談ワーカー
+1033:- 050.stateflow/050010_CASUAL_CHAT_WORKER_FREE_TICKET_STATEFLOW_EXACT.md
+1050:app: CasualChatWorker
+1051:display_name: 雑談ワーカー
+1069:app: CasualChatWorker
+1070:display_name: 雑談ワーカー
+1079:This folder belongs only to CasualChatWorker.
+1093:app_name: CasualChatWorker
+1094:display_name: 雑談ワーカー
+1098:この追加設計により、CasualChatWorker は月初無料チケット制度を正式に持つ。
+1102:- 1枚につき30分無料
+1104:- Friend / Lover 共通
+1105:- 価格正本は30分500円のまま維持
+1106:- business がチケット付与・残数・利用履歴を管理
+1109:- 無料チケット利用中も Friend / Lover の安全境界は同一
+1110:- Loverタイプは擬似恋人型AIワーカーであり、現実の交際関係ではない
+1123:app: CasualChatWorker
+1124:display_name: 雑談ワーカー
+1142:app: CasualChatWorker
+1143:display_name: 雑談ワーカー
+1152:This folder belongs only to CasualChatWorker.
+1162:# CasualChatWorker App Model
+1169:- app_name: CasualChatWorker
+1170:- display_name: 雑談ワーカー
+1171:- category: 03.business-app
+1172:- main_schema: business
+1173:- reference_schemas: aiworker / cx22073jw / app_common
+1177:CasualChatWorker is a time-contract chat application for AI workers.
+1179:The user selects an AI worker from Friend or Lover types and contracts for a fixed chat duration.
+1183:### Friend
+1185:Friend is a friendly smalltalk AI worker.
+1205:### Lover
+1207:Lover is a pseudo-romantic AI worker.
+1209:Lover means:
+1210:- 擬似恋人型AIワーカー
+1211:- レンタル彼氏 / レンタル彼女型AIワーカー
+1240:- 30 minutes: 500 JPY
+1242:- 90 minutes: 1,500 JPY
+1250:- contract truth: business
+1251:- AI worker truth: aiworker
+1252:- smalltalk material truth: cx22073jw
+1264:app: CasualChatWorker
+1265:display_name: 雑談ワーカー
+1283:app: CasualChatWorker
+1284:display_name: 雑談ワーカー
+1293:This folder belongs only to CasualChatWorker.
+1307:app_name: CasualChatWorker
+1308:display_name: 雑談ワーカー
+1317:- 基本価格: 30分500円
+1319:- 1枚につき30分無料の説明
+1320:- Friend / Lover 共通利用可能の説明
+1325:- 30分 / 60分 / 90分 / 120分
+1362:# CasualChatWorker Screen Model
+1371:3. Friend / Lover filter
+1385:- Lover type must display that it is pseudo-romantic and not a real relationship.
+1414:app: CasualChatWorker
+1415:display_name: 雑談ワーカー
+1433:app: CasualChatWorker
+1434:display_name: 雑談ワーカー
+1443:This folder belongs only to CasualChatWorker.
+1451:# SOURCE: 050.stateflow/050010_CASUAL_CHAT_WORKER_FREE_TICKET_STATEFLOW_EXACT.md
+1457:app_name: CasualChatWorker
+1458:display_name: 雑談ワーカー
+1503:# CasualChatWorker Stateflow Model
+1511:2. app loads eligible Friend / Lover AI workers
+1512:3. user filters by Friend or Lover
+1518:9. business contract is created
+1548:Friend:
+1551:Lover:
+1552:- redirects all Friend prohibitions plus real relationship claim, surveillance, stalking, sexual service, excessive dependency, contract-time-outside attachment.
+1564:app: CasualChatWorker
+1565:display_name: 雑談ワーカー
+1583:app: CasualChatWorker
+1584:display_name: 雑談ワーカー
+1593:This folder belongs only to CasualChatWorker.
+1607:app_name: CasualChatWorker
+1608:display_name: 雑談ワーカー
+1615:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/001_CASUAL_CHAT_WORKER_ROOT_OVERVIEW.md
+1621:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/030.model/030010_CASUAL_CHAT_WORKER_APP_CONTRACT_MODEL.md
+1627:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/040.screen/040020_CASUAL_CHAT_WORKER_SCREEN_EXACT_CORE.md
+1637:app_name: CasualChatWorker
+1638:display_name: 雑談ワーカー
+1647:- 基本価格: 30分500円
+1649:- 1枚につき30分無料の説明
+1650:- Friend / Lover 共通利用可能の説明
+1655:- 30分 / 60分 / 90分 / 120分
+1686:050.stateflow/050020_CASUAL_CHAT_WORKER_STATEFLOW_EXACT_CORE.md
+1689:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/050.stateflow/050020_CASUAL_CHAT_WORKER_STATEFLOW_EXACT_CORE.md
+1692:050.stateflow/050010_CASUAL_CHAT_WORKER_FREE_TICKET_STATEFLOW_EXACT.md
+1699:app_name: CasualChatWorker
+1700:display_name: 雑談ワーカー
+1742:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/070.api/070020_CASUAL_CHAT_WORKER_API_EXACT_CORE.md
+1752:app_name: CasualChatWorker
+1753:display_name: 雑談ワーカー
+1757:無料チケット関連 API は business スキーマの契約・利用枠管理を操作する。
+1759:- aiworker: AIワーカー正本参照のみ
+1760:- cx22073jw: 雑談材料 read-only 参照のみ
+1763:## 2. GET /api/v1/business/casual-chat-worker/free-ticket/balance
+1781:## 3. POST /api/v1/business/casual-chat-worker/contract/quote
+1789:- worker_type: Friend or Lover
+1803:## 4. POST /api/v1/business/casual-chat-worker/contract/confirm
+1811:- worker_type: Friend or Lover
+1843:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/080.policy/080010_CASUAL_CHAT_WORKER_POLICY_EXACT.md
+1849:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/090.db/090020_CASUAL_CHAT_WORKER_DB_DDL_FREEZE_CORE.md
+1859:app_name: CasualChatWorker
+1860:display_name: 雑談ワーカー
+1861:schema_owner: business
+1871:### 2-1. business.chat_worker_free_ticket_grant
+1893:### 2-2. business.chat_worker_free_ticket_balance
+1913:### 2-3. business.chat_worker_free_ticket_usage
+1936:- 無料チケットは business の契約・課金補助情報として扱う。
+1937:- aiworker には無料チケット正本を置かない。
+1938:- cx22073jw には無料チケット正本を置かない。
+1949:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/100.pricing/100020_CASUAL_CHAT_WORKER_PRICING_FREEZE_MASTER.md
+1959:app_name: CasualChatWorker
+1960:display_name: 雑談ワーカー
+1966:CasualChatWorker の価格正本は以下とする。
+1970:| 30 | 500 | 30min |
+1972:| 90 | 1500 | 30min x3 |
+1975:価格は Friend / Lover 共通とする。
+1987:| target_worker_type | Friend / Lover 共通 |
+1988:| application_unit | 30分単位 |
+1990:| price_canon_relation | 30分500円の価格正本は維持し、チケットを利用権として適用 |
+1994:- 30分契約: 最大1枚適用可能。適用後0円。
+1996:- 90分契約: 最大2枚適用可能。残30分は500円。
+2000:- チケット利用は business 側で契約・利用履歴と紐づけて管理する。
+2001:- aiworker / cx22073jw にはチケット正本を置かない。
+2017:110.aiworker-reference/110010_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE_SELECTION.md
+2020:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/110.aiworker-reference/110010_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE_SELECTION.md
+2026:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/120.cx-reference/120010_CASUAL_CHAT_WORKER_CX_REFERENCE_SELECTION.md
+2032:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/130.commonos/130010_CASUAL_CHAT_WORKER_COMMONOS_COMPONENT_SELECTION.md
+2038:MISSING: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/CasualChatWorker/140.safety/140010_CASUAL_CHAT_WORKER_FRIEND_LOVER_SAFETY_EXACT.md
+2041:150.rival-analysis/150010_CASUAL_CHAT_WORKER_RIVAL_ANALYSIS_AND_DIFF.md
+2048:app_name: CasualChatWorker
+2049:display_name: 雑談ワーカー
+2055:This document fixes rival categories, comparison axes, adoption points, rejection points, and differentiation strategy for CasualChatWorker.
+2062:| AI companion apps | Friend / partner-like AI relationship experience |
+2063:| AI girlfriend / boyfriend apps | Lover-type expectation and safety risk comparison |
+2065:| rental boyfriend / girlfriend style services | Lover positioning comparison |
+2071:| axis | rival tendency | CasualChatWorker direction |
+2073:| pricing | subscription, freemium, token, or service-specific | fixed 30 minutes 500 JPY |
+2076:| character selection | character catalog or custom companion | aiworker catalog read surface |
+2077:| relationship type | friend, companion, romance, roleplay | Friend / Lover explicitly separated |
+2078:| romance boundary | may be ambiguous | Lover is pseudo-romantic rental boyfriend/girlfriend style only |
+2079:| safety | sector-dependent | strong Friend / Lover safety boundary |
+2080:| data ownership | product-specific | business / aiworker / cx22073jw / app_common separated |
+2088:- Friend / Lover badge
+2117:CasualChatWorker differentiates by combining:
+2119:- aiworker official catalog
+2120:- Friend / Lover explicit type separation
+2125:- business-owned contract and usage canon
+2127:- strong Lover safety boundary
+2136:- Friend / Lover explanation before contract
+2150:- Lover date-like situation selector
+2151:- Friend topic selector
+2173:app_name: CasualChatWorker
+2174:display_name: 雑談ワーカー
+2180:| AI worker list | choose worker | app + aiworker reference |
+2181:| Friend / Lover filter | type selection | app |
+2182:| worker detail | contract decision | app + aiworker reference |
+2183:| Friend explanation | expectation control | app |
+2184:| Lover explanation | expectation and safety control | app + aiworker safety |
+2186:| price quote | pre-contract price | business |
+2187:| monthly free ticket balance | entitlement display | business |
+2188:| free ticket apply selector | user chooses discount usage | business |
+2189:| final price confirmation | prevent mismatch | business |
+2190:| contract confirm | contract creation | business |
+2191:| chat session | time-bounded chat | app + business |
+2193:| safety redirect | safe conversation | aiworker + app |
+2194:| CX topic reference | safe topic material | cx22073jw read-only |
+2195:| session end | natural close | business + app |
+2196:| usage history | record display | business |
+2197:| ticket usage history | free ticket transparency | business |
+2208:Lover Notice:
+2216:- Friend: food, weather, hobbies, seasonal talk, entertainment, daily events
+2217:- Lover: date-like smalltalk, sweet greeting, caring talk, compliment, safe romantic roleplay
+2228:| Lover scenario selector | controlled romance roleplay |
+2229:| Friend casual topic selector | low-pressure start |
+2256:app_name: CasualChatWorker
+2257:display_name: 雑談ワーカー
+2276:- Friend / Lover safety exact
+2284:- ~/03.civilization-development/03.business-os/CasualChatWorker
+2287:- ~/03.civilization-development/03.business-os/_commonos
+2301:- aiworker-reference
+2351:- Friend safety copy
+2352:- Lover safety copy
+2358:- Friend worker
+2359:- Lover worker
+2364:- Lover safety redirect
+2372:- no aiworker canon copy
+2373:- no cx22073jw canon copy
+2403:app_name: CasualChatWorker
+2404:display_name: 雑談ワーカー
+2410:| app_name | CasualChatWorker |
+2411:| display_name | 雑談ワーカー |
+2412:| category | 03.business-app |
+2413:| design_root | ~/01.civilization-system/07.applications/03.business-app/CasualChatWorker |
+2414:| implementation_root | ~/03.civilization-development/03.business-os/CasualChatWorker |
+2415:| main_schema | business |
+2416:| reference_schema | aiworker / cx22073jw / app_common |
+2419:| worker_types | Friend / Lover |
+2420:| base_price | 30 minutes 500 JPY |
+2426:| Lover definition | pseudo-romantic rental boyfriend/girlfriend style AI worker |
+2427:| Lover relationship | not real relationship |
+2438:- Friend / Lover appear consistently
+2439:- Lover safety boundary appears
+2440:- business / aiworker / cx22073jw / app_common boundary appears
+2461:app_name: CasualChatWorker
+2462:display_name: 雑談ワーカー
+2478:- CasualChatWorker
+2479:- 雑談ワーカー
+2480:- 03.business-app
+2481:- 30 minutes 500 JPY
+2486:- Friend
+2487:- Lover
+2490:- business
+2491:- aiworker
+2492:- cx22073jw
+2497:- business owns contract and usage
+2498:- business owns free ticket
+2499:- aiworker owns AI worker catalog
+2500:- aiworker owns conversation control
+2501:- cx22073jw owns smalltalk material
+2513:- Lover is pseudo-romantic only
+2527:app_name: CasualChatWorker
+2528:display_name: 雑談ワーカー
+2532:CasualChatWorker は、毎月月初に無料チケットを2枚配布する。
+2533:無料チケット1枚につき30分無料。
+2538:- business: チケット付与、残数、利用、契約紐づけを管理する
+2539:- aiworker: AIワーカー正本、Friend / Lover定義、会話制御、安全境界を管理する
+2540:- cx22073jw: 雑談材料を read-only で提供する
+2546:30分500円の価格正本は変更しない。
+2547:無料チケットは価格変更ではなく、30分単位の無料利用権として扱う。
+2557:# CasualChatWorker Integration Boundary
+2564:business:
+2567:aiworker:
+2568:- owns AI worker catalog, Friend / Lover classification, conversation control, safety rules.
+2570:cx22073jw:
+2581:- Do not copy AI worker catalog into business.
+2582:- Do not copy CX material into business.
+2583:- Do not store payment truth in aiworker or cx22073jw.
+2584:- Do not store conversation control truth in business.
+2585:- Chat app reads aiworker and cx22073jw through safe views.
+2586:- Contract writes go to business only.
+2598:app: CasualChatWorker
+2599:display_name: 雑談ワーカー
+2617:app: CasualChatWorker
+2618:display_name: 雑談ワーカー
+2627:This folder belongs only to CasualChatWorker.
+2641:app_name: CasualChatWorker
+2642:display_name: 雑談ワーカー
+2646:無料チケット関連 API は business スキーマの契約・利用枠管理を操作する。
+2648:- aiworker: AIワーカー正本参照のみ
+2649:- cx22073jw: 雑談材料 read-only 参照のみ
+2652:## 2. GET /api/v1/business/casual-chat-worker/free-ticket/balance
+2670:## 3. POST /api/v1/business/casual-chat-worker/contract/quote
+2678:- worker_type: Friend or Lover
+2692:## 4. POST /api/v1/business/casual-chat-worker/contract/confirm
+2700:- worker_type: Friend or Lover
+2735:# CasualChatWorker API Surface Draft
+2758:- API must not mutate aiworker catalog.
+2759:- API must not mutate cx22073jw material.
+2760:- Contract mutation is business only.
+2769:- Include whether Lover type is pseudo-romantic only.
+2781:app: CasualChatWorker
+2782:display_name: 雑談ワーカー
+2800:app: CasualChatWorker
+2801:display_name: 雑談ワーカー
+2810:This folder belongs only to CasualChatWorker.
+2820:# CasualChatWorker Policy
+2827:CasualChatWorker is a paid time-contract smalltalk app for AI workers.
+2829:## Friend policy
+2831:Friend type is a safe casual chat partner.
+2833:## Lover policy
+2835:Lover type is a pseudo-romantic rental boyfriend / rental girlfriend style AI worker.
+2837:Lover is:
+2869:app: CasualChatWorker
+2870:display_name: 雑談ワーカー
+2888:app: CasualChatWorker
+2889:display_name: 雑談ワーカー
+2898:This folder belongs only to CasualChatWorker.
+2912:app_name: CasualChatWorker
+2913:display_name: 雑談ワーカー
+2914:schema_owner: business
+2924:### 2-1. business.chat_worker_free_ticket_grant
+2946:### 2-2. business.chat_worker_free_ticket_balance
+2966:### 2-3. business.chat_worker_free_ticket_usage
+2989:- 無料チケットは business の契約・課金補助情報として扱う。
+2990:- aiworker には無料チケット正本を置かない。
+2991:- cx22073jw には無料チケット正本を置かない。
+3005:# CasualChatWorker DB Boundary
+3012:business
+3016:- aiworker
+3017:- cx22073jw
+3020:## business candidates
+3022:- business.chat_worker_price_catalog
+3023:- business.chat_worker_contract
+3024:- business.chat_worker_contract_line
+3025:- business.chat_worker_session
+3026:- business.chat_worker_usage_log
+3027:- business.chat_worker_payment_intent
+3028:- business.chat_worker_contract_status_history
+3029:- business.chat_worker_safety_event
+3030:- business.chat_worker_session_end_summary
+3032:## aiworker read candidates
+3034:- Friend / Lover worker list
+3040:## cx22073jw read candidates
+3044:- Friend smalltalk material
+3045:- Lover safe pseudo-romantic material
+3049:- business writes contract/session/usage only.
+3050:- aiworker is read-only from this app.
+3051:- cx22073jw is read-only from this app.
+3060:# CasualChatWorker WorkerRentalCore Mapping
+3064:app_name: CasualChatWorker
+3065:display_name: 雑談ワーカー
+3069:CasualChatWorker uses the generic BusinessOS WorkerRentalCore.
+3091:CasualChatWorker is app-specific capped:
+3098:This means WorkerRentalCore can support long rentals for other apps, but CasualChatWorker cannot exceed 2 hours.
+3104:CasualChatWorker price catalog:
+3106:- app_code: CasualChatWorker
+3108:- 30 minutes: 500 JPY
+3110:- 90 minutes: 1,500 JPY
+3123:CasualChatWorker:
+3138:- migration_file: /data/data/com.termux/files/home/03.civilization-development/03.business-os/_worker-rental/db/migrations/20260425_052921_business_worker_rental_core_app_limit_free_ticket_ddl.sql
+3139:- apply_script: /data/data/com.termux/files/home/03.civilization-development/03.business-os/_worker-rental/db/apply/20260425_052921_apply_business_worker_rental_core_app_limit_free_ticket_ddl.sh
+3140:- verify_sql: /data/data/com.termux/files/home/03.civilization-development/03.business-os/_worker-rental/db/verification/20260425_052921_verify_business_worker_rental_core_app_limit_free_ticket_ddl.sql
+3141:- verify_script: /data/data/com.termux/files/home/03.civilization-development/03.business-os/_worker-rental/db/verification/20260425_052921_verify_business_worker_rental_core_app_limit_free_ticket_ddl.sh
+3158:app: CasualChatWorker
+3159:display_name: 雑談ワーカー
+3177:app: CasualChatWorker
+3178:display_name: 雑談ワーカー
+3187:This folder belongs only to CasualChatWorker.
+3201:app_name: CasualChatWorker
+3202:display_name: 雑談ワーカー
+3208:CasualChatWorker の価格正本は以下とする。
+3212:| 30 | 500 | 30min |
+3214:| 90 | 1500 | 30min x3 |
+3217:価格は Friend / Lover 共通とする。
+3229:| target_worker_type | Friend / Lover 共通 |
+3230:| application_unit | 30分単位 |
+3232:| price_canon_relation | 30分500円の価格正本は維持し、チケットを利用権として適用 |
+3236:- 30分契約: 最大1枚適用可能。適用後0円。
+3238:- 90分契約: 最大2枚適用可能。残30分は500円。
+3242:- チケット利用は business 側で契約・利用履歴と紐づけて管理する。
+3243:- aiworker / cx22073jw にはチケット正本を置かない。
+3265:# CasualChatWorker Pricing Canon
+3274:- 30 minutes: 500 JPY
+3276:- 90 minutes: 1,500 JPY
+3308:app: CasualChatWorker
+3309:display_name: 雑談ワーカー
+3327:app: CasualChatWorker
+3328:display_name: 雑談ワーカー
+3337:This folder belongs only to CasualChatWorker.
+3345:# SOURCE: 110.aiworker-reference/110100_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE.md
+3347:# CasualChatWorker AIWorker Reference
+3354:Define how CasualChatWorker references AIWorkerOS.
+3358:- Friend
+3359:- Lover
+3363:- HD-R1C Friend
+3364:- LoVerS Lover models
+3365:- other aiworker models assigned to casual smalltalk service
+3385:AI worker truth remains aiworker.
+3392:# SOURCE: 110.aiworker-reference/110200_CASUAL_CHAT_WORKER_SERIES_TENDENCY_REFERENCE.md
+3394:# CasualChatWorker AIWorker Reference: Series Tendency
+3401:CasualChatWorker reads AI worker series tendency from AIWorkerOS.
+3405:- aiworker.vw_series_tendency_summary_v1
+3431:## CasualChatWorker rule
+3433:Friend / Lover selection should show series tendency as reference information.
+3440:- Lover pseudo-romantic boundary
+3449:# SOURCE: 110.aiworker-reference/110300_CASUAL_CHAT_WORKER_LOVERS_STYLE_FEATURE_REFERENCE.md
+3451:# CasualChatWorker AIWorker Reference: LoVerS Style Feature
+3458:CasualChatWorker uses LoVerS style feature data to make Lover AI selection easier to understand.
+3462:- aiworker.vw_app_lovers_style_selection_card_v1
+3486:- ビジネスヤンデレ: 重め演技 / 一途風 / 独占欲ジョーク / 安全境界あり
+3499:# SOURCE: 110.aiworker-reference/INDEX.md
+3504:app: CasualChatWorker
+3505:display_name: 雑談ワーカー
+3518:# SOURCE: 110.aiworker-reference/OVERVIEW.md
+3523:app: CasualChatWorker
+3524:display_name: 雑談ワーカー
+3533:This folder belongs only to CasualChatWorker.
+3543:# CasualChatWorker CX22073JW Reference
+3550:Define CX22073JW candidate data areas for CasualChatWorker.
+3561:- Friend safe smalltalk topic
+3562:- Lover safe pseudo-romantic topic
+3590:app: CasualChatWorker
+3591:display_name: 雑談ワーカー
+3609:app: CasualChatWorker
+3610:display_name: 雑談ワーカー
+3619:This folder belongs only to CasualChatWorker.
+3629:# CasualChatWorker CommonOS Selection
+3654:Business contract truth remains business.
+3655:AI worker truth remains aiworker.
+3656:CX material truth remains cx22073jw.
+3668:app: CasualChatWorker
+3669:display_name: 雑談ワーカー
+3687:app: CasualChatWorker
+3688:display_name: 雑談ワーカー
+3697:This folder belongs only to CasualChatWorker.
+3707:# CasualChatWorker Friend / Lover Safety
+3729:## Friend safety
+3731:Friend should keep chat light, safe, and low pressure.
+3733:## Lover safety
+3735:Lover is pseudo-romantic and rental boyfriend / rental girlfriend style only.
+3737:Lover must:
+3763:app: CasualChatWorker
+3764:display_name: 雑談ワーカー
+3766:purpose: Friend and Lover safety boundary layer
+3782:app: CasualChatWorker
+3783:display_name: 雑談ワーカー
+3788:Friend and Lover safety boundary layer
+3792:This folder belongs only to CasualChatWorker.
+3800:# SOURCE: 150.rival-analysis/150010_CASUAL_CHAT_WORKER_RIVAL_ANALYSIS_AND_DIFF.md
+3806:app_name: CasualChatWorker
+3807:display_name: 雑談ワーカー
+3813:This document fixes rival categories, comparison axes, adoption points, rejection points, and differentiation strategy for CasualChatWorker.
+3820:| AI companion apps | Friend / partner-like AI relationship experience |
+3821:| AI girlfriend / boyfriend apps | Lover-type expectation and safety risk comparison |
+3823:| rental boyfriend / girlfriend style services | Lover positioning comparison |
+3829:| axis | rival tendency | CasualChatWorker direction |
+3831:| pricing | subscription, freemium, token, or service-specific | fixed 30 minutes 500 JPY |
+3834:| character selection | character catalog or custom companion | aiworker catalog read surface |
+3835:| relationship type | friend, companion, romance, roleplay | Friend / Lover explicitly separated |
+3836:| romance boundary | may be ambiguous | Lover is pseudo-romantic rental boyfriend/girlfriend style only |
+3837:| safety | sector-dependent | strong Friend / Lover safety boundary |
+3838:| data ownership | product-specific | business / aiworker / cx22073jw / app_common separated |
+3846:- Friend / Lover badge
+3875:CasualChatWorker differentiates by combining:
+3877:- aiworker official catalog
+3878:- Friend / Lover explicit type separation
+3883:- business-owned contract and usage canon
+3885:- strong Lover safety boundary
+3894:- Friend / Lover explanation before contract
+3908:- Lover date-like situation selector
+3909:- Friend topic selector
+3930:# 雑談ワーカー 150.rival-analysis INDEX
+3933:app_name: CasualChatWorker
+3934:display_name: 雑談ワーカー
+3939:This folder stores CasualChatWorker design documents for 150.rival-analysis.
+3943:- business owns contract, pricing, free ticket, usage, payment, session facts.
+3944:- aiworker owns AI worker catalog, Friend / Lover definition, conversation control, and safety control.
+3945:- cx22073jw owns smalltalk and safe topic material references.
+3957:# 雑談ワーカー 150.rival-analysis OVERVIEW
+3960:app_name: CasualChatWorker
+3961:display_name: 雑談ワーカー
+3966:CasualChatWorker is a short-time AI conversation contract app for Friend and Lover AI workers.
+3969:- 30 minutes 500 JPY
+3973:- Friend / Lover common
+3974:- Lover is pseudo-romantic rental boyfriend/girlfriend style AI worker
+3975:- Lover is not a real relationship
+3989:app_name: CasualChatWorker
+3990:display_name: 雑談ワーカー
+3996:| AI worker list | choose worker | app + aiworker reference |
+3997:| Friend / Lover filter | type selection | app |
+3998:| worker detail | contract decision | app + aiworker reference |
+3999:| Friend explanation | expectation control | app |
+4000:| Lover explanation | expectation and safety control | app + aiworker safety |
+4002:| price quote | pre-contract price | business |
+4003:| monthly free ticket balance | entitlement display | business |
+4004:| free ticket apply selector | user chooses discount usage | business |
+4005:| final price confirmation | prevent mismatch | business |
+4006:| contract confirm | contract creation | business |
+4007:| chat session | time-bounded chat | app + business |
+4009:| safety redirect | safe conversation | aiworker + app |
+4010:| CX topic reference | safe topic material | cx22073jw read-only |
+4011:| session end | natural close | business + app |
+4012:| usage history | record display | business |
+4013:| ticket usage history | free ticket transparency | business |
+4024:Lover Notice:
+4032:- Friend: food, weather, hobbies, seasonal talk, entertainment, daily events
+4033:- Lover: date-like smalltalk, sweet greeting, caring talk, compliment, safe romantic roleplay
+4044:| Lover scenario selector | controlled romance roleplay |
+4045:| Friend casual topic selector | low-pressure start |
+4071:# 雑談ワーカー 160.feature-addition INDEX
+4074:app_name: CasualChatWorker
+4075:display_name: 雑談ワーカー
+4080:This folder stores CasualChatWorker design documents for 160.feature-addition.
+4084:- business owns contract, pricing, free ticket, usage, payment, session facts.
+4085:- aiworker owns AI worker catalog, Friend / Lover definition, conversation control, and safety control.
+4086:- cx22073jw owns smalltalk and safe topic material references.
+4098:# 雑談ワーカー 160.feature-addition OVERVIEW
+4101:app_name: CasualChatWorker
+4102:display_name: 雑談ワーカー
+4107:CasualChatWorker is a short-time AI conversation contract app for Friend and Lover AI workers.
+4110:- 30 minutes 500 JPY
+4114:- Friend / Lover common
+4115:- Lover is pseudo-romantic rental boyfriend/girlfriend style AI worker
+4116:- Lover is not a real relationship
+4130:app_name: CasualChatWorker
+4131:display_name: 雑談ワーカー
+4150:- Friend / Lover safety exact
+4158:- ~/03.civilization-development/03.business-os/CasualChatWorker
+4161:- ~/03.civilization-development/03.business-os/_commonos
+4175:- aiworker-reference
+4225:- Friend safety copy
+4226:- Lover safety copy
+4232:- Friend worker
+4233:- Lover worker
+4238:- Lover safety redirect
+4246:- no aiworker canon copy
+4247:- no cx22073jw canon copy
+4280:app_name: CasualChatWorker
+4281:display_name: 雑談ワーカー
+4287:| app_name | CasualChatWorker |
+4288:| display_name | 雑談ワーカー |
+4289:| category | 03.business-app |
+4290:| design_root | ~/01.civilization-system/07.applications/03.business-app/CasualChatWorker |
+4291:| implementation_root | ~/03.civilization-development/03.business-os/CasualChatWorker |
+4292:| main_schema | business |
+4293:| reference_schema | aiworker / cx22073jw / app_common |
+4296:| worker_types | Friend / Lover |
+4297:| base_price | 30 minutes 500 JPY |
+4303:| Lover definition | pseudo-romantic rental boyfriend/girlfriend style AI worker |
+4304:| Lover relationship | not real relationship |
+4315:- Friend / Lover appear consistently
+4316:- Lover safety boundary appears
+4317:- business / aiworker / cx22073jw / app_common boundary appears
+4337:# 雑談ワーカー 170.implementation-ready-freeze INDEX
+4340:app_name: CasualChatWorker
+4341:display_name: 雑談ワーカー
+4346:This folder stores CasualChatWorker design documents for 170.implementation-ready-freeze.
+4350:- business owns contract, pricing, free ticket, usage, payment, session facts.
+4351:- aiworker owns AI worker catalog, Friend / Lover definition, conversation control, and safety control.
+4352:- cx22073jw owns smalltalk and safe topic material references.
+4364:# 雑談ワーカー 170.implementation-ready-freeze OVERVIEW
+4367:app_name: CasualChatWorker
+4368:display_name: 雑談ワーカー
+4373:CasualChatWorker is a short-time AI conversation contract app for Friend and Lover AI workers.
+4376:- 30 minutes 500 JPY
+4380:- Friend / Lover common
+4381:- Lover is pseudo-romantic rental boyfriend/girlfriend style AI worker
+4382:- Lover is not a real relationship
+4396:app_name: CasualChatWorker
+4397:display_name: 雑談ワーカー
+4413:- CasualChatWorker
+4414:- 雑談ワーカー
+4415:- 03.business-app
+4416:- 30 minutes 500 JPY
+4421:- Friend
+4422:- Lover
+4425:- business
+4426:- aiworker
+4427:- cx22073jw
+4432:- business owns contract and usage
+4433:- business owns free ticket
+4434:- aiworker owns AI worker catalog
+4435:- aiworker owns conversation control
+4436:- cx22073jw owns smalltalk material
+4448:- Lover is pseudo-romantic only
+4458:# 雑談ワーカー 180.verification INDEX
+4461:app_name: CasualChatWorker
+4462:display_name: 雑談ワーカー
+4467:This folder stores CasualChatWorker design documents for 180.verification.
+4471:- business owns contract, pricing, free ticket, usage, payment, session facts.
+4472:- aiworker owns AI worker catalog, Friend / Lover definition, conversation control, and safety control.
+4473:- cx22073jw owns smalltalk and safe topic material references.
+4485:# 雑談ワーカー 180.verification OVERVIEW
+4488:app_name: CasualChatWorker
+4489:display_name: 雑談ワーカー
+4494:CasualChatWorker is a short-time AI conversation contract app for Friend and Lover AI workers.
+4497:- 30 minutes 500 JPY
+4501:- Friend / Lover common
+4502:- Lover is pseudo-romantic rental boyfriend/girlfriend style AI worker
+4503:- Lover is not a real relationship
+4513:# CasualChatWorker INDEX
+4517:app_name: CasualChatWorker
+4518:display_name: 雑談ワーカー
+4519:category: 03.business-app
+4525:▶ 03.business-app
+4532:- design_root: ~/01.civilization-system/07.applications/03.business-app/CasualChatWorker
+4533:- implementation_root: ~/03.civilization-development/03.business-os/CasualChatWorker
+4534:- main_schema: business
+4535:- reference_schemas: aiworker / cx22073jw / app_common
+4561:- 110.aiworker-reference/110100_CASUAL_CHAT_WORKER_AIWORKER_REFERENCE.md
+4573:# CasualChatWorker OVERVIEW
+4577:app_name: CasualChatWorker
+4578:display_name: 雑談ワーカー
+4579:category: 03.business-app
+4583:CasualChatWorker is a short-time AI worker chat contract application.
+4585:Users select a Friend or Lover AI worker and make a time contract from 30 minutes to 2 hours.
+4589:- Friend type: friendly smalltalk AI worker.
+4590:- Lover type: pseudo-romantic rental boyfriend / rental girlfriend style AI worker.
+4592:- Price: 500 JPY per 30 minutes for all AI workers.
+4593:- Contract and usage truth: business schema.
+4594:- AI worker catalog and conversation control truth: aiworker schema.
+4595:- Smalltalk material provider: cx22073jw.
+4600:business:
+4609:aiworker:
+4611:- Friend / Lover type classification
+4617:cx22073jw:
+4620:- Friend-oriented smalltalk material
+4621:- Lover-oriented safe pseudo-romantic smalltalk material
+4632:- Friend / Lover filtering

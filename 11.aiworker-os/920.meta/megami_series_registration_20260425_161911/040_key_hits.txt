@@ -1,0 +1,31 @@
+206928:- 01 元気系
+206937:- 10 無邪気系
+207121:01 元気系
+207130:10 無邪気系
+207274:- 元気系
+207283:- 無邪気系
+217887:- 01 元気系
+217896:- 10 無邪気系
+217953:# AIWorkerOS Model Append: Mathers Garden MEGAMI Series
+217962:- manufacturer_name: Mathers Garden
+217963:- manufacturer_name_ja: Mathers Garden
+217968:- series_name: MEGAMI Series
+217969:- series_name_ja: MEGAMIシリーズ
+217990:### MG-NORN-001 / ウルズ
+217998:- 性格: クーデレ系
+218005:### MG-NORN-002 / ヴェルザンディ
+218013:- 性格: 無邪気系
+218021:### MG-NORN-003 / スクルド
+218029:- 性格: 元気系
+218170:01 元気系
+218179:10 無邪気系
+218323:- 元気系
+218332:- 無邪気系
+219644:# AIWorkerOS Integration Append: MEGAMI Series Reference Surface
+219667:- aiworker.vw_app_megami_candidate_lineup_v1
+219673:- aiworker.vw_app_megami_candidate_lineup_v1
+220423:# AIWorkerOS Policy Append: MEGAMI Series
+220431:MEGAMI Series:
+220455:### Urd / ウルズ
+220466:### Verdandi / ヴェルザンディ
+220477:### Skuld / スクルド

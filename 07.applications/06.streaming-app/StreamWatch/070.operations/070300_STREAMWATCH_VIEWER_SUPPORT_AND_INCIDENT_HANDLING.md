@@ -2,32 +2,48 @@
 # STREAMWATCH VIEWER SUPPORT AND INCIDENT HANDLING
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: operations
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines support-facing handling assumptions for common viewer incidents such as missing entitlement, route failure, or resume mismatch.
+This document defines support-facing handling assumptions for common viewer incidents.
 
-## 2. Fixed Inputs
+## 2. Common Incident Classes
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+Typical incidents include:
 
-## 3. Design Direction
+- purchased but not watchable
+- membership joined but still locked
+- live available but cannot enter
+- archive expected but not available
+- resume position wrong
+- wrong profile context
+- TV handoff fails
+- comments or reports cannot submit
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Support Diagnosis Order
 
-## 4. Current Status
+Support should inspect in this order:
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+1. publication and availability state
+2. entitlement state
+3. viewer_profile context
+4. restriction mode
+5. route or device state
+6. cache staleness
+7. progress / history mismatch
+
+## 4. Support Rule
+
+Support language must distinguish clearly between:
+- purchase success
+- entitlement refresh
+- actual watchability
+because these are not the same stage.

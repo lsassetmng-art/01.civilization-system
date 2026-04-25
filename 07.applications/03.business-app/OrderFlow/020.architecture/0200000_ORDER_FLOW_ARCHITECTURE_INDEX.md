@@ -1,0 +1,11 @@
+# ============================================================
+# ORDER FLOW ARCHITECTURE INDEX
+# ============================================================
+
+files:
+
+- 021120_ORDERFLOW_ORDER_LIFECYCLE_FULFILLMENT_CONTROL_ARCHITECTURE.md
+
+- 021130_ORDERFLOW_APPROVAL_FULFILLMENT_EXCEPTION_ARCHITECTURE.md
+
+- 021140_ORDERFLOW_PHASE_A_EXECUTION_TIMELINE_DDL_ADDITIVE_PLAN.md

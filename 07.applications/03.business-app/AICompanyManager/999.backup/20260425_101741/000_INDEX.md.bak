@@ -1,0 +1,51 @@
+# ============================================================
+# AICompanyManager INDEX
+# ============================================================
+
+app_name: AICompanyManager
+display_name: AI企業運営アプリ
+category: 03.business-app
+phase: Phase A
+status: initial-design-created
+owner: Boss
+prepared_by: Zero
+
+## 1. Purpose
+
+AICompanyManager は、人間が方針を入力し、AIWorkerOS 側の President / Manager / Leader / Worker 内部パイプラインを business-app から運用するためのアプリである。
+
+本アプリは AI 社員そのものの実体を持たない。
+AIWorkerOS 側に存在する AI 社員・内部パイプライン・成長差分・実行知能を利用し、人間向けの事業運営 UI、承認、レビュー、納品、履歴管理を担当する。
+
+## 2. Category Selection
+
+- 01.civilization-app
+- 02.persona-app
+▶ 03.business-app
+- 04.life-app
+- 05.game-app
+- 06.streaming-app
+
+## 3. Main Documents
+
+| order | file | purpose |
+|---:|---|---|
+| 000 | 000_INDEX.md | 本アプリ設計ルートの入口 |
+| 001 | 001_OVERVIEW.md | アプリ概要 |
+| 010 | 010_APP_SKELETON_DESIGN.md | アプリ骨格設計 |
+| 020 | 020_BUSINESS_FLOW_CANON.md | 事業フロー正本 |
+| 030 | 030_REVIEW_RETURN_FLOW_CANON.md | レビュー・差し戻しフロー正本 |
+| 040 | 040_DELIVERY_APPROVAL_FLOW_CANON.md | 納品・承認フロー正本 |
+| 050 | 050_ROLE_OPERATION_MODEL.md | President / Manager / Leader / Worker 操作モデル |
+| 060 | 060_DATA_BOUNDARY_AND_INTEGRATION.md | AIWorkerOS / BusinessOS / CommonOS 境界 |
+| 070 | 070_COMMONOS_UI_AND_QUEUE_POLICY.md | CommonOS UI / queue 利用方針 |
+| 080 | 080_PHASE_A_COMPLETION_REPORT.md | Phase A 完了報告 |
+| 00 | 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | 初期統合版 |
+
+## 4. Phase A Completion Conditions
+
+- AICompanyManager の設計ルートが作成されている
+- President → Manager → Leader → Worker の業務流れが文書化されている
+- レビュー差し戻し、統合、承認、人間納品まで定義されている
+- AIWorkerOS との責務境界が明示されている
+- CommonOS 利用前提が明示されている

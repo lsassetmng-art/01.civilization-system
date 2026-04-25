@@ -1,0 +1,4 @@
+01|edge_apply|started_at=not_started|completed_at=not_started|owner=Boss|evidence_note=edge_apply_start_prepared
+02|state_apply|started_at=pending|completed_at=pending|owner=pending|evidence_note=pending
+03|builder_api|started_at=pending|completed_at=pending|owner=pending|evidence_note=pending
+04|builder_storage|started_at=pending|completed_at=pending|owner=pending|evidence_note=pending

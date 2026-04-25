@@ -1,0 +1,6 @@
+01|edge_apply|implement inbound event intake, validation, dedupe, and terminal feedback|class=implementation_target|decision=pending|owner=pending|blocker_status=pending|note=pending
+02|state_apply|implement canonical truth mutation, transition checks, and audit linkage|class=implementation_target|decision=pending|owner=pending|blocker_status=pending|note=pending
+03|builder_api|implement authoring request contracts and publish gate|class=implementation_target|decision=pending|owner=pending|blocker_status=pending|note=pending
+04|builder_storage|implement draft, validation, approval, and publish persistence mapping|class=implementation_target|decision=pending|owner=pending|blocker_status=pending|note=pending
+05|cross_alignment|confirm builder_api and builder_storage status alignment|class=control_row|decision=pending|owner=pending|blocker_status=pending|note=pending
+06|start_gate|approve first-wave implementation start|class=control_row|decision=pending|owner=pending|blocker_status=pending|note=pending

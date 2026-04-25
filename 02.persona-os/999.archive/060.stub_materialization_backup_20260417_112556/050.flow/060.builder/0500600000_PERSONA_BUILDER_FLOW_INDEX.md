@@ -1,0 +1,8 @@
+# 0500600000_PERSONA_BUILDER_FLOW_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 050.flow/060.builder
+
+- 0500600001_PERSONA_BUILDER_FLOW_OVERVIEW.md
+- 0500600002_PERSONA_BUILDER_DRAFT_FLOW.md

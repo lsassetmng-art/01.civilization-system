@@ -1,0 +1,10 @@
+implementation_target_count=4
+control_row_count=2
+total_row_count=6
+pass_count=0
+pending_count=6
+blocked_count=0
+open_blocker_count=6
+final_decision=HOLD
+start_allowed=no
+rationale=one or more blocker statuses are open or pending

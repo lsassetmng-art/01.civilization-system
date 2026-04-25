@@ -1,0 +1,7 @@
+STEP_1=review edge_apply result form
+STEP_2=review state_apply result form
+STEP_3=review builder_api result form
+STEP_4=review builder_storage result form
+STEP_5=resolve blockers and minor fixes
+STEP_6=update signoff ledger decisions
+STEP_7=approve first-wave implementation start gate

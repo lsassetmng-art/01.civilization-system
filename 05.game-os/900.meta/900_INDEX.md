@@ -11,22 +11,26 @@ prepared_by: Zero
 updated_at: 2026-04-17
 language: English
 
-folders:
-- implementation-ready
+purpose:
+- Canonical meta entry for GameOS meta-only documents
+- Holds migration notes and meta-level records
 
 files:
-- implementation-ready/900_INDEX.md
-- implementation-ready/900_OVERVIEW.md
-- implementation-ready/900500_GAME_OS_IMPLEMENTATION_READY_PACKAGE_ROUND2_20260416.md
-- screen-exact-design
-- screen-exact-design/900_INDEX.md
-- screen-exact-design/900_OVERVIEW.md
-- screen-exact-design/900100_GAME_OS_SCREEN_EXACT_DESIGN_SET.md
-- db-column-exact-design
-- db-column-exact-design/900_INDEX.md
-- db-column-exact-design/900_OVERVIEW.md
-- db-column-exact-design/900200_GAME_OS_DB_COLUMN_EXACT_DESIGN_SET.md
-- stateflow-exact-design
-- stateflow-exact-design/900_INDEX.md
-- stateflow-exact-design/900_OVERVIEW.md
-- stateflow-exact-design/900300_GAME_OS_STATEFLOW_EXACT_DESIGN_SET.md
+- 900530_GAME_OS_FOLDER_STRUCTURE_ALIGNMENT_MEMO_20260417.md
+
+rules:
+- 900.meta should hold meta-only documents
+- Implementation-facing documents should live in their canonical responsibility folders
+- 900540_GAME_OS_STRUCTURE_AUDIT_MEMO_20260417.md
+- 900550_GAME_OS_ROOT_CANONICAL_NAME_FIX_MEMO_20260417.md
+- 900560_GAME_OS_TOP_LEVEL_FOLDER_CLASSIFICATION_MEMO_20260417.md
+- 900570_GAME_OS_TOP_LEVEL_FOLDER_DISPOSITION_DECISION_MEMO_20260417.md
+- 900580_GAME_OS_SAFE_DISPOSITION_APPLY_MEMO_20260417.md
+- 900590_GAME_OS_MANUAL_REVIEW_DISPOSITION_SHEET_20260417.md
+- 900600_GAME_OS_STRUCTURE_NORMALIZATION_STATUS_20260417.md
+- 900610_GAME_OS_STRUCTURE_NORMALIZATION_REVIEW_PENDING_MEMO_20260417.md
+- 900620_GAME_OS_DESIGN_COMPLETION_STATUS_MEMO_20260417.md
+- 900630_GAME_OS_DESIGN_TO_IMPLEMENTATION_FINAL_CLOSURE_MEMO_20260417.md
+- 900640_GAME_OS_IMPLEMENTATION_OPERATIONS_READINESS_MEMO_20260417.md
+- 900650_GAME_OS_TRACEABILITY_READINESS_MEMO_20260417.md
+- 900660_GAME_OS_DOCUMENTATION_SATURATION_MEMO_20260417.md

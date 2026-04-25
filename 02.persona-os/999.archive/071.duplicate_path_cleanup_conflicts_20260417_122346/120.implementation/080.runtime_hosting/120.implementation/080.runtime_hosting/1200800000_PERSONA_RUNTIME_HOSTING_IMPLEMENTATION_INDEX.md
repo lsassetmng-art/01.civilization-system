@@ -1,0 +1,8 @@
+# 1200800000_PERSONA_RUNTIME_HOSTING_IMPLEMENTATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 120.implementation/080.runtime_hosting/120.implementation/080.runtime_hosting
+
+- 1200800001_PERSONA_RUNTIME_HOSTING_IMPLEMENTATION_OVERVIEW.md
+- 1200800002_PERSONA_RUNTIME_SESSION_IMPLEMENTATION.md

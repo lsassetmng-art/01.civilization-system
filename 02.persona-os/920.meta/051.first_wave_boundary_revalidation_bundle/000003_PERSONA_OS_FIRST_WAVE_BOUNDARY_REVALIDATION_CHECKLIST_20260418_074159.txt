@@ -1,0 +1,10 @@
+CHECK_1=edge_apply must remain intake-only, not external mutable truth exposure
+CHECK_2=state_apply must remain the only canonical truth mutation boundary
+CHECK_3=builder_api must converge on snapshot issue for release-facing behavior
+CHECK_4=builder_storage must preserve mutable work-state vs immutable release artifact separation
+CHECK_5=no first-wave target may treat mirror tables as canonical truth
+CHECK_6=no first-wave target may treat cache or work tables as canonical truth
+CHECK_7=no first-wave target may reintroduce growth_core_state vs persona_growth_state dual-canonical behavior
+CHECK_8=no first-wave target may reintroduce entitlements vs user_entitlement dual-canonical behavior
+CHECK_9=external consumption must remain signed snapshot and event contract only
+CHECK_10=if any contradiction appears, implementation-entry work must stop and return to PersonaOS design

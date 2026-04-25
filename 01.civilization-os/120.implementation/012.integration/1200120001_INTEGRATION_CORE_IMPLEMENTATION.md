@@ -84,3 +84,25 @@ failure_codes:
 example_scenarios:
 - A public export validates contract_ref, routes to read-only projection, filters restricted fields, and emits export trace.
 - A proposal payload is isolated in proposal_only_handler and never reaches canonical_write_guard.
+
+## Exact Integration Boundary Classes
+## Exact Integration Boundary Classes
+
+- proposal_only_intake
+- canonical_mutation_request
+- projection_export
+- replay_export
+- reconciliation_input
+- repair_control_input
+
+No inbound integration path may mutate canonical state without approved mutation route.
+
+## Exact Authority Boundary Rule
+
+Authority required for mutation must be resolved before:
+- canonical write
+- repair write
+- approval write
+- override write
+
+Integration source identity alone is insufficient for canonical authority.

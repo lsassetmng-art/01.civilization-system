@@ -1,3 +1,153 @@
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000.rules/0000000_PROJECT_FLOW_RULES_INDEX.md -->
+# ============================================================
+# PROJECT FLOW RULES INDEX
+# ============================================================
+
+status: canonical
+layer: rules
+application: ProjectFlow
+owner: Boss
+prepared_by: Zero
+
+files:
+- 0000000_PROJECT_FLOW_RULES_INDEX.md
+- 0000001_PROJECT_FLOW_RULES_OVERVIEW.md
+- 0000002_PROJECT_FLOW_DOCUMENT_RULE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000.rules/0000000_PROJECT_FLOW_RULES_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000.rules/0000001_PROJECT_FLOW_RULES_OVERVIEW.md -->
+# ============================================================
+# PROJECT FLOW RULES OVERVIEW
+# ============================================================
+
+status: canonical
+layer: rules
+application: ProjectFlow
+owner: Boss
+prepared_by: Zero
+
+rules:
+- design is architecture-first
+- source of truth must be explicit
+- ERP integration must be shared-BusinessOS-based
+- protected ERP fields must not be locally overwritten
+- index and overview files must exist at layer level
+- destructive delete should be avoided
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000.rules/0000001_PROJECT_FLOW_RULES_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000.rules/0000002_PROJECT_FLOW_DOCUMENT_RULE.md -->
+# ============================================================
+# PROJECT FLOW DOCUMENT RULE
+# ============================================================
+
+status: canonical
+layer: rules
+application: ProjectFlow
+owner: Boss
+prepared_by: Zero
+
+document_rules:
+- use canonical wording
+- keep role boundaries explicit
+- separate ERP truth from local truth
+- define editability and auditability
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000.rules/0000002_PROJECT_FLOW_DOCUMENT_RULE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000_PROJECT_FLOW_INDEX.md -->
+# ============================================================
+# PROJECT FLOW INDEX
+# ============================================================
+
+status: canonical
+application: ProjectFlow
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the full file map of the ProjectFlow application design.
+
+root_files:
+- 000_PROJECT_FLOW_INDEX.md
+- 000_PROJECT_FLOW_OVERVIEW.md
+- 00_PROJECT_FLOW_INTEGRATED.md
+- 00_BUILD_PROJECT_FLOW_INTEGRATED.sh
+
+layers:
+- 000.rules
+- 010.constitution
+- 020.architecture
+- 030.model
+- 040.runtime
+- 050.flow
+- 060.integration
+- 070.operations
+- 080.policy
+- 090.meta
+- 100.security
+- 110.infrastructure
+- 120.implementation
+- 130.development
+- 090.interface
+
+- 010.constitution/011110_PROJECTFLOW_COMPETITIVE_POSITIONING_NOTE.md
+
+- 020.architecture/021120_PROJECTFLOW_PROJECT_DELIVERY_ORCHESTRATION_ARCHITECTURE.md
+
+- 020.architecture/021130_PROJECTFLOW_MILESTONE_DEPENDENCY_RISK_ARCHITECTURE.md
+
+- 030.model/030510_PROJECTFLOW_DELIVERY_TIMELINE_MODEL.md
+
+- 060.integration/060290_PROJECTFLOW_PROJECT_COCKPIT_PAYLOAD.md
+
+- 060.integration/060300_PROJECTFLOW_RISK_DEPENDENCY_REVIEW_PAYLOAD.md
+
+- 090.interface/090330_PROJECTFLOW_PROJECT_COCKPIT_INTERFACE.md
+
+- 120.implementation/120300_PROJECTFLOW_DELIVERY_CONTROL_IMPLEMENTATION_GUIDE.md
+
+- 900.meta/900410_PROJECTFLOW_20260416_DIFF_AUDIT_NOTE.md
+
+- 020.architecture/021140_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+- 060.integration/060320_PROJECTFLOW_PHASE_A_API_STARTER.md
+
+- 060.integration/060330_PROJECTFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+- 120.implementation/120310_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 900.meta/900420_PROJECTFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 120.implementation/120320_PROJECTFLOW_PHASE_A_STUB_FILE_PLAN.md
+
+- 120.implementation/120330_PROJECTFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120.implementation/120340_PROJECTFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 900.meta/900430_PROJECTFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 120.implementation/120350_PROJECTFLOW_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120.implementation/120360_PROJECTFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120.implementation/120370_PROJECTFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120.implementation/120380_PROJECTFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+- 900.meta/900440_PROJECTFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900.meta/900450_PROJECTFLOW_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900.meta/900460_PROJECTFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900.meta/900470_PROJECTFLOW_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000_PROJECT_FLOW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000_PROJECT_FLOW_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW OVERVIEW
 # ============================================================
@@ -59,57 +209,9 @@ ProjectFlow owns:
 - operational comments
 - daily progress visibility
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/000_PROJECT_FLOW_OVERVIEW.md -->
 
-# ============================================================
-# PROJECT FLOW RULES INDEX
-# ============================================================
-
-status: canonical
-layer: rules
-application: ProjectFlow
-owner: Boss
-prepared_by: Zero
-
-files:
-- 0000000_PROJECT_FLOW_RULES_INDEX.md
-- 0000001_PROJECT_FLOW_RULES_OVERVIEW.md
-- 0000002_PROJECT_FLOW_DOCUMENT_RULE.md
-
-# ============================================================
-# PROJECT FLOW RULES OVERVIEW
-# ============================================================
-
-status: canonical
-layer: rules
-application: ProjectFlow
-owner: Boss
-prepared_by: Zero
-
-rules:
-- design is architecture-first
-- source of truth must be explicit
-- ERP integration must be shared-BusinessOS-based
-- protected ERP fields must not be locally overwritten
-- index and overview files must exist at layer level
-- destructive delete should be avoided
-
-# ============================================================
-# PROJECT FLOW DOCUMENT RULE
-# ============================================================
-
-status: canonical
-layer: rules
-application: ProjectFlow
-owner: Boss
-prepared_by: Zero
-
-document_rules:
-- use canonical wording
-- keep role boundaries explicit
-- separate ERP truth from local truth
-- define editability and auditability
-
-
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100000_PROJECT_FLOW_CONSTITUTION_INDEX.md -->
 # ============================================================
 # PROJECT FLOW CONSTITUTION INDEX
 # ============================================================
@@ -133,6 +235,11 @@ files:
 - 0100009_PROJECT_FLOW_DEVICE_SUPPORT_DEFINITION.md
 - 0100010_PROJECT_FLOW_IMPLEMENTATION_DIRECTION_FINAL_DECISION.md
 
+- 011110_PROJECTFLOW_COMPETITIVE_POSITIONING_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100000_PROJECT_FLOW_CONSTITUTION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100001_PROJECT_FLOW_CONSTITUTION_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW CONSTITUTION OVERVIEW
 # ============================================================
@@ -155,6 +262,9 @@ constitutional_principles:
 - sync must be auditable
 - silent corruption is forbidden
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100001_PROJECT_FLOW_CONSTITUTION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100002_PROJECT_FLOW_APPLICATION_DEFINITION.md -->
 # ============================================================
 # PROJECT FLOW APPLICATION DEFINITION
 # ============================================================
@@ -191,6 +301,9 @@ excluded_capabilities:
 - billing authority
 - payroll authority
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100002_PROJECT_FLOW_APPLICATION_DEFINITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100003_PROJECT_FLOW_SCOPE_CONSTITUTION.md -->
 # ============================================================
 # PROJECT FLOW SCOPE CONSTITUTION
 # ============================================================
@@ -215,6 +328,9 @@ out_of_scope:
 - billing ownership
 - accounting close
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100003_PROJECT_FLOW_SCOPE_CONSTITUTION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100004_PROJECT_FLOW_PROVISION_AND_SUBSCRIPTION_DEFINITION.md -->
 # ============================================================
 # PROJECT FLOW PROVISION AND SUBSCRIPTION DEFINITION
 # ============================================================
@@ -277,6 +393,9 @@ read_only_mode_blocks:
 - report draft generation
 - report draft update
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100004_PROJECT_FLOW_PROVISION_AND_SUBSCRIPTION_DEFINITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100005_PROJECT_FLOW_COMPETITIVE_FEATURE_ADDITION_DEFINITION.md -->
 # ============================================================
 # PROJECT FLOW COMPETITIVE FEATURE ADDITION DEFINITION
 # ============================================================
@@ -309,6 +428,9 @@ principles:
 - additions must preserve low-support monthly-use positioning
 - additions must remain editable after proposal generation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100005_PROJECT_FLOW_COMPETITIVE_FEATURE_ADDITION_DEFINITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100006_PROJECT_FLOW_CUSTOMER_PROVISION_DEFINITION.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER PROVISION DEFINITION
 # ============================================================
@@ -345,6 +467,9 @@ commercial_summary:
 - initial_trial_period_days: 7
 - unpaid_state: read_only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100006_PROJECT_FLOW_CUSTOMER_PROVISION_DEFINITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100007_PROJECT_FLOW_MULTILINGUAL_DEFINITION.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL DEFINITION
 # ============================================================
@@ -378,6 +503,9 @@ principles:
 - customer-facing output must be language-aware
 - fallback behavior must be explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100007_PROJECT_FLOW_MULTILINGUAL_DEFINITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100008_PROJECT_FLOW_INITIAL_LANGUAGE_SCOPE_DEFINITION.md -->
 # ============================================================
 # PROJECT FLOW INITIAL LANGUAGE SCOPE DEFINITION
 # ============================================================
@@ -409,6 +537,9 @@ initial_scope_rules:
   and export headers should support both
 - smartphone and pc must support the same initial language scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100008_PROJECT_FLOW_INITIAL_LANGUAGE_SCOPE_DEFINITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100009_PROJECT_FLOW_DEVICE_SUPPORT_DEFINITION.md -->
 # ============================================================
 # PROJECT FLOW DEVICE SUPPORT DEFINITION
 # ============================================================
@@ -449,6 +580,9 @@ forbidden_difference:
 - report generation available on only one device type
 - ERP-related request available on only one device type
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100009_PROJECT_FLOW_DEVICE_SUPPORT_DEFINITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100010_PROJECT_FLOW_IMPLEMENTATION_DIRECTION_FINAL_DECISION.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION DIRECTION FINAL DECISION
 # ============================================================
@@ -473,7 +607,63 @@ important_boundary:
 DB-owner review items remain separate
 and are not auto-finalized by this decision.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/0100010_PROJECT_FLOW_IMPLEMENTATION_DIRECTION_FINAL_DECISION.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/011110_PROJECTFLOW_COMPETITIVE_POSITIONING_NOTE.md -->
+# ============================================================
+# PROJECTFLOW COMPETITIVE POSITIONING NOTE
+# ============================================================
+
+status: canonical
+layer: constitution
+system: applications
+application: ProjectFlow
+directory: 010.constitution
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: competitive-positioning-note
+
+purpose:
+Clarifies the differentiator that should be made explicit in the
+current ProjectFlow design without rewriting its existing core.
+
+positioning_summary:
+- ProjectFlow is not only a generic project tracker.
+- Its durable value is delivery control across milestone movement,
+  dependency visibility, execution ownership, and risk surfacing.
+- The differentiator is not simple ticket listing, but project-level
+  coordination that makes delivery health operationally visible.
+
+preserved_core:
+- project and task management identity
+- workflow and progress handling
+- existing business operation context
+- existing platform and app role
+- existing approval and operational separation direction
+
+differentiator_to_make_explicit:
+- project-delivery orchestration
+- milestone, dependency, and risk visibility
+- cross-role execution alignment
+- project cockpit as a management surface, not just a task grid
+
+competitive_contrast:
+- not merely a kanban clone
+- not merely a gantt viewer
+- not merely a ticket registry
+- positioned as a project delivery control layer that connects
+  milestone movement, dependency exposure, and actionability
+
+non_goals_of_this_note:
+- no full constitutional rewrite
+- no implementation start
+- no destructive scope replacement
+- no framework decision
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/010.constitution/011110_PROJECTFLOW_COMPETITIVE_POSITIONING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200000_PROJECT_FLOW_ARCHITECTURE_INDEX.md -->
 # ============================================================
 # PROJECT FLOW ARCHITECTURE INDEX
 # ============================================================
@@ -543,6 +733,15 @@ files:
 - 0200056_PROJECT_FLOW_RC_HANDOFF_UNIT_ARCHITECTURE.md
 - 0200057_PROJECT_FLOW_FINAL_CLOSURE_ENTRY_ARCHITECTURE.md
 
+- 021120_PROJECTFLOW_PROJECT_DELIVERY_ORCHESTRATION_ARCHITECTURE.md
+
+- 021130_PROJECTFLOW_MILESTONE_DEPENDENCY_RISK_ARCHITECTURE.md
+
+- 021140_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200000_PROJECT_FLOW_ARCHITECTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200001_PROJECT_FLOW_ARCHITECTURE_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW ARCHITECTURE OVERVIEW
 # ============================================================
@@ -565,6 +764,9 @@ major_components:
 - permission guard
 - shared BusinessOS integration boundary
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200001_PROJECT_FLOW_ARCHITECTURE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200002_PROJECT_FLOW_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW ARCHITECTURE
 # ============================================================
@@ -597,6 +799,9 @@ design_rules:
 - export must only use mapped outbound fields
 - conflict state must be explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200002_PROJECT_FLOW_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200003_PROJECT_FLOW_ERP_BOUNDARY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW ERP BOUNDARY ARCHITECTURE
 # ============================================================
@@ -637,6 +842,9 @@ projectflow_responsibility:
 - error display
 - retry action
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200003_PROJECT_FLOW_ERP_BOUNDARY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200004_PROJECT_FLOW_SYNC_CONFLICT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW SYNC CONFLICT ARCHITECTURE
 # ============================================================
@@ -660,6 +868,9 @@ principles:
 - destructive overwrite is forbidden without rule
 - unresolved conflict must surface in UI
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200004_PROJECT_FLOW_SYNC_CONFLICT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200005_PROJECT_FLOW_PERMISSION_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW PERMISSION ARCHITECTURE
 # ============================================================
@@ -701,6 +912,9 @@ project_member:
 project_viewer:
 - read only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200005_PROJECT_FLOW_PERMISSION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200006_PROJECT_FLOW_SCREEN_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW SCREEN ARCHITECTURE
 # ============================================================
@@ -726,6 +940,9 @@ screens:
 - sync error review
 - settings
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200006_PROJECT_FLOW_SCREEN_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200007_PROJECT_FLOW_EXPORT_AND_REPORT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW EXPORT AND REPORT ARCHITECTURE
 # ============================================================
@@ -784,6 +1001,9 @@ design_rules:
 - auto-generated report is draft only
 - human review and editing are mandatory before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200007_PROJECT_FLOW_EXPORT_AND_REPORT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200008_PROJECT_FLOW_IMPLEMENTATION_ALIGNMENT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION ALIGNMENT ARCHITECTURE
 # ============================================================
@@ -810,6 +1030,9 @@ architectural_constraints:
 - integration-boundary must not own screen state
 - report generation must remain editable after draft creation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200008_PROJECT_FLOW_IMPLEMENTATION_ALIGNMENT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200009_PROJECT_FLOW_INTERFACE_ARCHITECTURE_ALIGNMENT.md -->
 # ============================================================
 # PROJECT FLOW INTERFACE ARCHITECTURE ALIGNMENT
 # ============================================================
@@ -835,6 +1058,9 @@ rules:
 - report draft editing must remain human-centered
 - export actions must stay permission-aware
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200009_PROJECT_FLOW_INTERFACE_ARCHITECTURE_ALIGNMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200010_PROJECT_FLOW_MULTI_DEVICE_PARITY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW MULTI DEVICE PARITY ARCHITECTURE
 # ============================================================
@@ -873,6 +1099,9 @@ design_intent:
 Device difference is presentation-only,
 not business capability difference.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200010_PROJECT_FLOW_MULTI_DEVICE_PARITY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200011_PROJECT_FLOW_COMMON_COMPONENT_CANDIDATE_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT CANDIDATE ARCHITECTURE
 # ============================================================
@@ -957,6 +1186,9 @@ multi_device_parity_layout_policy_component:
 Reusable policy and UI pattern set
 for smartphone/PC same capability with layout-only differences.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200011_PROJECT_FLOW_COMMON_COMPONENT_CANDIDATE_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200012_PROJECT_FLOW_ADDITIVE_FEATURE_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW ADDITIVE FEATURE ARCHITECTURE
 # ============================================================
@@ -1030,6 +1262,9 @@ boundary_rules:
 - human review and adjustment are mandatory before confirmation
 - project-specific semantics remain editable after generation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200012_PROJECT_FLOW_ADDITIVE_FEATURE_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200013_PROJECT_FLOW_TIMELINE_GANTT_DASHBOARD_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW TIMELINE GANTT DASHBOARD ARCHITECTURE
 # ============================================================
@@ -1084,6 +1319,9 @@ boundary_rules:
 - dependency rendering must not redefine dependency ownership
 - dashboard values are aggregated views of underlying records
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200013_PROJECT_FLOW_TIMELINE_GANTT_DASHBOARD_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200014_PROJECT_FLOW_FORM_MEMO_COMMENT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW FORM MEMO COMMENT ARCHITECTURE
 # ============================================================
@@ -1130,6 +1368,9 @@ boundary_rules:
 - comments remain lightweight and should not become heavy chat replacement
 - comment and memo ownership remains tied to project context
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200014_PROJECT_FLOW_FORM_MEMO_COMMENT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200015_PROJECT_FLOW_LIGHT_AUTOMATION_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW LIGHT AUTOMATION ARCHITECTURE
 # ============================================================
@@ -1175,6 +1416,9 @@ boundary_rules:
 - automation should prefer notification and visibility actions
 - heavy multi-step workflow orchestration is out of scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200015_PROJECT_FLOW_LIGHT_AUTOMATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200016_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE AND WBS PROPOSAL ARCHITECTURE
 # ============================================================
@@ -1230,6 +1474,9 @@ boundary_rules:
 - proposal must remain human-editable
 - confirmed schedule becomes normal project/task operational data
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200016_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200017_PROJECT_FLOW_CROSS_FEATURE_ALIGNMENT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW CROSS FEATURE ALIGNMENT ARCHITECTURE
 # ============================================================
@@ -1269,6 +1516,9 @@ consistency_focus:
 - avoid duplicate notification logic across features
 - keep read-only entitlement behavior consistent across all screens
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200017_PROJECT_FLOW_CROSS_FEATURE_ALIGNMENT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200018_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER FACING SCHEDULE ARCHITECTURE
 # ============================================================
@@ -1305,6 +1555,9 @@ separation_rules:
 - customer-facing schedule must preserve milestone visibility
 - customer-facing schedule must remain editable before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200018_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200019_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER EXPLANATION MATERIAL ARCHITECTURE
 # ============================================================
@@ -1357,6 +1610,9 @@ architecture_rules:
 - they may share underlying source data
 - they must remain separable by output type
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200019_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200020_PROJECT_FLOW_IMPLEMENTATION_PREP_ALIGNMENT.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION PREP ALIGNMENT
 # ============================================================
@@ -1377,6 +1633,9 @@ alignment_rules:
 - migration split must preserve additive introduction path
 - implementation detail must not bypass shared BusinessOS architecture
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200020_PROJECT_FLOW_IMPLEMENTATION_PREP_ALIGNMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200021_PROJECT_FLOW_MULTILINGUAL_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL ARCHITECTURE
 # ============================================================
@@ -1425,6 +1684,9 @@ boundary_rules:
 - customer-facing wording may use material-specific localized templates
 - localized output must remain reviewable before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200021_PROJECT_FLOW_MULTILINGUAL_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200022_PROJECT_FLOW_MULTILINGUAL_ALIGNMENT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL ALIGNMENT ARCHITECTURE
 # ============================================================
@@ -1457,6 +1719,9 @@ alignment_rules:
 - multilingual handling must not change business truth
 - smartphone and pc must keep the same multilingual capability
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200022_PROJECT_FLOW_MULTILINGUAL_ALIGNMENT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200023_PROJECT_FLOW_MULTI_DEVICE_ARCHITECTURE_EXTENSION.md -->
 # ============================================================
 # PROJECT FLOW MULTI DEVICE ARCHITECTURE EXTENSION
 # ============================================================
@@ -1486,6 +1751,9 @@ architecture_rules:
 - tablet may use split or hybrid layout,
   but must not gain exclusive business capability
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200023_PROJECT_FLOW_MULTI_DEVICE_ARCHITECTURE_EXTENSION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200024_PROJECT_FLOW_DEVICE_PARITY_ALIGNMENT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW DEVICE PARITY ALIGNMENT ARCHITECTURE
 # ============================================================
@@ -1520,6 +1788,9 @@ alignment_rules:
 - read-only and blocked-action behavior must be consistent on all supported device types
 - device-specific differences must remain presentation-only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200024_PROJECT_FLOW_DEVICE_PARITY_ALIGNMENT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200025_PROJECT_FLOW_FOUNDATION_AND_COMMON_COMPONENT_ALIGNMENT.md -->
 # ============================================================
 # PROJECT FLOW FOUNDATION AND COMMON COMPONENT ALIGNMENT
 # ============================================================
@@ -1561,6 +1832,9 @@ non_projectflow_owned_scope_examples:
 - common component canonical ownership
 - ERP formal enterprise truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200025_PROJECT_FLOW_FOUNDATION_AND_COMMON_COMPONENT_ALIGNMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200026_PROJECT_FLOW_CANONICAL_PRIORITY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW CANONICAL PRIORITY ARCHITECTURE
 # ============================================================
@@ -1587,6 +1861,9 @@ priority_rules:
 - when conflict is found, ProjectFlow should defer upward rather than fork silently
 - app-local UX optimization is allowed if ownership and truth boundaries are preserved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200026_PROJECT_FLOW_CANONICAL_PRIORITY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200027_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW BUSINESSOS DEPENDENCY ARCHITECTURE
 # ============================================================
@@ -1630,6 +1907,9 @@ architecture_rules:
   even when mediated sync paths are unavailable where allowed
 - local app scope and mediated external scope must remain separable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200027_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200028_PROJECT_FLOW_ERP_DEPENDENCY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW ERP DEPENDENCY ARCHITECTURE
 # ============================================================
@@ -1673,6 +1953,9 @@ architecture_rules:
 - ERP dependency must remain mediated by BusinessOS
 - ERP absence must not erase ProjectFlow local UX ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200028_PROJECT_FLOW_ERP_DEPENDENCY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200029_PROJECT_FLOW_COMMON_COMPONENT_DEPENDENCY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT DEPENDENCY ARCHITECTURE
 # ============================================================
@@ -1712,6 +1995,9 @@ architecture_rules:
 - app-local behavior should remain app-local unless promoted later
 - local UX composition may combine common shells with app-specific data
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200029_PROJECT_FLOW_COMMON_COMPONENT_DEPENDENCY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200030_PROJECT_FLOW_LOCAL_OWNERSHIP_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW LOCAL OWNERSHIP ARCHITECTURE
 # ============================================================
@@ -1748,6 +2034,9 @@ local_ownership_rules:
 - ProjectFlow may consume common shells but keeps app semantics local
 - ProjectFlow local ownership should remain additive and app-scoped
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200030_PROJECT_FLOW_LOCAL_OWNERSHIP_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200031_PROJECT_FLOW_DATA_OWNERSHIP_MATRIX_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW DATA OWNERSHIP MATRIX ARCHITECTURE
 # ============================================================
@@ -1778,6 +2067,9 @@ architecture_rules:
 - localized labels are display-only,
   not business-truth data
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200031_PROJECT_FLOW_DATA_OWNERSHIP_MATRIX_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200032_PROJECT_FLOW_EDITABILITY_BOUNDARY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW EDITABILITY BOUNDARY ARCHITECTURE
 # ============================================================
@@ -1809,6 +2101,9 @@ architecture_rules:
   not editable business truth
 - localized_display_only fields are presentation artifacts only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200032_PROJECT_FLOW_EDITABILITY_BOUNDARY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200033_PROJECT_FLOW_ACTION_AUTHORITY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW ACTION AUTHORITY ARCHITECTURE
 # ============================================================
@@ -1837,6 +2132,9 @@ architecture_rules:
 - external-use outputs require explicit review awareness
 - device type must not change action authority
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200033_PROJECT_FLOW_ACTION_AUTHORITY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200034_PROJECT_FLOW_STATE_TRANSITION_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW STATE TRANSITION ARCHITECTURE
 # ============================================================
@@ -1867,6 +2165,9 @@ architecture_rules:
 - entitlement state must remain distinct from business item state
 - export completion must not imply review completion automatically
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200034_PROJECT_FLOW_STATE_TRANSITION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200035_PROJECT_FLOW_AUDITABILITY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW AUDITABILITY ARCHITECTURE
 # ============================================================
@@ -1899,6 +2200,9 @@ architecture_rules:
 - sync boundary history should remain inspectable
 - audit visibility should support customer-facing explanation accountability where needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200035_PROJECT_FLOW_AUDITABILITY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200036_PROJECT_FLOW_UPLOADED_CANONICAL_REFERENCE_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED CANONICAL REFERENCE ARCHITECTURE
 # ============================================================
@@ -1940,6 +2244,9 @@ reference_priority_examples:
 - ERP design bible and ERP enterprise scope guide ERP-side truth interpretation
 - schema summaries guide implementation-prep understanding only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200036_PROJECT_FLOW_UPLOADED_CANONICAL_REFERENCE_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200037_PROJECT_FLOW_REFERENCE_UPDATE_GOVERNANCE_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE UPDATE GOVERNANCE ARCHITECTURE
 # ============================================================
@@ -1968,6 +2275,9 @@ governance_rules:
   but their role as reference aids remains unchanged
 - ProjectFlow should record new reference filenames rather than silently overwriting interpretation assumptions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200037_PROJECT_FLOW_REFERENCE_UPDATE_GOVERNANCE_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200038_PROJECT_FLOW_REFERENCE_CONFLICT_RESOLUTION_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT RESOLUTION ARCHITECTURE
 # ============================================================
@@ -2006,6 +2316,9 @@ ProjectFlow should record:
 - which source has priority
 - whether local notes need adjustment
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200038_PROJECT_FLOW_REFERENCE_CONFLICT_RESOLUTION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200039_PROJECT_FLOW_IMPLEMENTATION_PREP_SCOPE_SPLIT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION PREP SCOPE SPLIT ARCHITECTURE
 # ============================================================
@@ -2043,6 +2356,9 @@ architecture_rules:
 - blocked areas remain blocked until ownership and boundary conflicts are resolved
 - local additive refinement may continue where it does not rewrite higher ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200039_PROJECT_FLOW_IMPLEMENTATION_PREP_SCOPE_SPLIT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200040_PROJECT_FLOW_NEXT_PHASE_PRIORITY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE PRIORITY ARCHITECTURE
 # ============================================================
@@ -2068,6 +2384,9 @@ architecture_rules:
 - unresolved external ownership conflict areas remain blocked
 - no direct ERP assumption enters earlier priority groups
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200040_PROJECT_FLOW_NEXT_PHASE_PRIORITY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200041_PROJECT_FLOW_FINAL_MODULE_AND_RUNTIME_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW FINAL MODULE AND RUNTIME ARCHITECTURE
 # ============================================================
@@ -2194,6 +2513,9 @@ non_goal:
 - hidden autonomous workflow execution
 - hidden ERP-direct retry behavior
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200041_PROJECT_FLOW_FINAL_MODULE_AND_RUNTIME_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200042_PROJECT_FLOW_DB_OWNER_REVIEW_ENTRY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW ENTRY ARCHITECTURE
 # ============================================================
@@ -2223,6 +2545,9 @@ architecture_rules:
 - DB-owner review focuses on execution-readiness and DB hardening only
 - DB-owner review outputs should remain separable from later application coding work
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200042_PROJECT_FLOW_DB_OWNER_REVIEW_ENTRY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200043_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START ENTRY ARCHITECTURE
 # ============================================================
@@ -2252,6 +2577,9 @@ architecture_rules:
   - DB-phase dependent work
   - still-blocked work
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200043_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200044_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_ALIGNMENT.md -->
 # ============================================================
 # PROJECT FLOW OFFICIAL COMMON COMPONENT LEDGER ALIGNMENT
 # ============================================================
@@ -2282,6 +2610,9 @@ important_boundary:
 Official shared component ownership and ProjectFlow local additive behavior
 must remain distinct.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200044_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_ALIGNMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200045_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW SHARED COMPONENT ADAPTER ARCHITECTURE
 # ============================================================
@@ -2318,6 +2649,9 @@ important_boundary:
 Shared component ownership remains external.
 ProjectFlow owns only local mapping and composition around it.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200045_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200046_PROJECT_FLOW_LOCAL_ORCHESTRATION_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW LOCAL ORCHESTRATION ARCHITECTURE
 # ============================================================
@@ -2355,6 +2689,9 @@ screen_orchestration_targets:
 - customer material screens
 - sync visibility screens
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200046_PROJECT_FLOW_LOCAL_ORCHESTRATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200047_PROJECT_FLOW_CODING_START_ENTRY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW CODING START ENTRY ARCHITECTURE
 # ============================================================
@@ -2382,6 +2719,9 @@ architecture_rules:
 - coding-start scope must be narrower than broad feature scope
 - blocked or boundary-sensitive unresolved areas must not leak into initial coding-start scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200047_PROJECT_FLOW_CODING_START_ENTRY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200048_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_ENTRY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK ENTRY ARCHITECTURE
 # ============================================================
@@ -2409,6 +2749,9 @@ architecture_rules:
 - actual implementation task scope must be narrower than coding-start package scope
 - blocked or unresolved boundary-aware areas must not leak into initial coding tasks
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200048_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_ENTRY_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200049_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK ARCHITECTURE
 # ============================================================
@@ -2438,6 +2781,9 @@ architecture_rules:
 - blocked or unresolved boundary-sensitive scope must remain excluded
 - task grouping should preserve module ownership explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200049_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200050_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT ARCHITECTURE
 # ============================================================
@@ -2468,6 +2814,9 @@ architecture_rules:
 - boundary-aware units must stay separated from purely local units
 - blocked boundary scope must remain excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200050_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200051_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP ARCHITECTURE
 # ============================================================
@@ -2503,6 +2852,9 @@ architecture_rules:
 - local work groups should come before most boundary-aware work groups
 - blocked boundary scope must remain excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200051_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200052_PROJECT_FLOW_CONCRETE_FILE_UNIT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT ARCHITECTURE
 # ============================================================
@@ -2536,6 +2888,9 @@ architecture_rules:
 - local file units should come before most boundary-aware file units
 - blocked boundary scope must remain excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200052_PROJECT_FLOW_CONCRETE_FILE_UNIT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200053_PROJECT_FLOW_PATCH_TASK_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK ARCHITECTURE
 # ============================================================
@@ -2571,6 +2926,9 @@ architecture_rules:
 - blocked boundary scope must remain excluded
 - one patch task should target one small explicit change area
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200053_PROJECT_FLOW_PATCH_TASK_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200054_PROJECT_FLOW_COMMIT_PR_UNIT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT ARCHITECTURE
 # ============================================================
@@ -2604,6 +2962,9 @@ architecture_rules:
 - blocked boundary scope must remain excluded
 - commit / PR scope must stay review-friendly and additive
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200054_PROJECT_FLOW_COMMIT_PR_UNIT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200055_PROJECT_FLOW_MERGE_RELEASE_UNIT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT ARCHITECTURE
 # ============================================================
@@ -2640,6 +3001,9 @@ architecture_rules:
 - blocked boundary scope must remain excluded
 - release-prep units must not silently merge blocked scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200055_PROJECT_FLOW_MERGE_RELEASE_UNIT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200056_PROJECT_FLOW_RC_HANDOFF_UNIT_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF UNIT ARCHITECTURE
 # ============================================================
@@ -2668,6 +3032,9 @@ architecture_rules:
 - handoff units must summarize approved reality,
   not aspirational future scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200056_PROJECT_FLOW_RC_HANDOFF_UNIT_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200057_PROJECT_FLOW_FINAL_CLOSURE_ENTRY_ARCHITECTURE.md -->
 # ============================================================
 # PROJECT FLOW FINAL CLOSURE ENTRY ARCHITECTURE
 # ============================================================
@@ -2699,7 +3066,243 @@ architecture_rules:
   - blocked
   - future sophistication
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/0200057_PROJECT_FLOW_FINAL_CLOSURE_ENTRY_ARCHITECTURE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/021120_PROJECTFLOW_PROJECT_DELIVERY_ORCHESTRATION_ARCHITECTURE.md -->
+# ============================================================
+# PROJECTFLOW PROJECT DELIVERY ORCHESTRATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: ProjectFlow
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: project-delivery-orchestration-architecture
+
+purpose:
+Makes project delivery orchestration explicit in the current
+ProjectFlow architecture.
+
+architecture_intent:
+- project work must be visible not only as tasks, but as delivery movement
+- milestones, owners, blockers, and decision points must be reviewable together
+- execution health must be queryable without reconstructing it from raw ticket state only
+
+flow_layers:
+- planning intake:
+  - project setup
+  - milestone definition
+  - dependency registration
+  - role assignment
+- execution movement:
+  - task progress change
+  - milestone progress change
+  - blocker detection
+  - owner escalation
+- delivery review:
+  - status rollup
+  - risk surfacing
+  - dependency review
+  - due-date pressure view
+- control action:
+  - reprioritize
+  - reschedule
+  - assign escalation
+  - request decision
+- closure:
+  - delivery completion
+  - retrospective or audit trace
+  - project archive preparation
+
+key_separations:
+- raw task state is not the same as delivery health
+- dependency registry is not the same as milestone plan
+- risk surfacing is not the same as approval history
+- project cockpit is not the same as detailed task editing screen
+
+recommended_runtime_objects:
+- project_delivery_signal
+- milestone_dependency_link
+- delivery_risk_review_item
+- project_cockpit_summary
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/021120_PROJECTFLOW_PROJECT_DELIVERY_ORCHESTRATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/021130_PROJECTFLOW_MILESTONE_DEPENDENCY_RISK_ARCHITECTURE.md -->
+# ============================================================
+# PROJECTFLOW MILESTONE DEPENDENCY RISK ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: ProjectFlow
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: milestone-dependency-risk-architecture
+
+purpose:
+Defines the relationship between milestone tracking, dependency
+exposure, and risk review in ProjectFlow.
+
+core_principle:
+- delivery slippage is usually visible first through milestones,
+  dependency breakage, or unresolved decisions, not only through task lists.
+
+architecture_rules:
+- milestones must be queryable as delivery checkpoints
+- dependency links must be represented explicitly
+- risk review items must survive beyond one meeting or one screen
+- unresolved blockers must be visible in the same review flow as milestone health
+
+risk_categories:
+- schedule risk
+- dependency risk
+- staffing or owner risk
+- decision pending risk
+- scope drift risk
+
+visibility_outputs:
+- project cockpit
+- risk review screen
+- dependency review panel
+- milestone health overview
+
+cross-module relation:
+- task module feeds detailed execution state
+- milestone layer summarizes delivery checkpoints
+- dependency layer captures cross-item blockage
+- risk layer surfaces management attention points
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/021130_PROJECTFLOW_MILESTONE_DEPENDENCY_RISK_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/021140_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+# ============================================================
+# PROJECTFLOW PHASE A DELIVERY TIMELINE DDL ADDITIVE PLAN
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: ProjectFlow
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-delivery-timeline-ddl-additive-plan
+
+purpose:
+Defines the additive-only Phase A DDL planning boundary for
+delivery timeline visibility, milestone dependency exposure,
+and project cockpit assembly.
+
+principles:
+- additive only
+- preserve existing ProjectFlow core
+- keep raw task mutation separate from delivery health rows
+- keep risk review separate from raw history or comments
+- no SQL execution in this document
+
+phase_a_target_capabilities:
+- persist delivery timeline rows for cockpit and review
+- persist dependency review rows for management visibility
+- support project cockpit query without reconstructing everything from raw task state
+- support risk and escalation review slices
+
+proposed_additive_tables:
+- business.projectflow_delivery_timeline_item
+- business.projectflow_dependency_review_item
+- business.projectflow_project_cockpit_snapshot
+
+table_business_projectflow_delivery_timeline_item:
+  role:
+    - stores normalized delivery-oriented timeline rows
+  recommended_columns:
+    - project_delivery_timeline_item_id uuid pk
+    - project_id uuid not null
+    - related_task_id uuid null
+    - related_milestone_id uuid null
+    - related_dependency_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - delivery_state_code text not null
+    - priority_code text null
+    - due_at timestamptz null
+    - scheduled_start_at timestamptz null
+    - scheduled_end_at timestamptz null
+    - risk_level_code text null
+    - blocker_present boolean not null
+    - owner_user_id uuid null
+    - escalation_required boolean not null
+    - source_module_code text not null
+    - completed_at timestamptz null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_projectflow_dependency_review_item:
+  role:
+    - stores reviewable dependency and risk review rows
+  recommended_columns:
+    - dependency_review_item_id uuid pk
+    - project_id uuid not null
+    - related_milestone_id uuid null
+    - related_dependency_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - delivery_state_code text not null
+    - risk_level_code text null
+    - blocker_present boolean not null
+    - owner_user_id uuid null
+    - decision_pending boolean not null
+    - resolved boolean not null
+    - due_at timestamptz null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_projectflow_project_cockpit_snapshot:
+  role:
+    - stores generated project cockpit snapshots when caching or auditability is needed
+  recommended_columns:
+    - project_cockpit_snapshot_id uuid pk
+    - project_id uuid not null
+    - health_summary_message text not null
+    - generated_at timestamptz not null
+    - created_at timestamptz not null
+
+recommended_indexes_phase_a:
+- delivery_timeline_item:
+  - idx on project_id, delivery_state_code, due_at
+  - idx on project_id, scheduled_start_at
+  - idx on project_id, related_milestone_id
+- dependency_review_item:
+  - idx on project_id, risk_level_code
+  - idx on project_id, decision_pending
+  - idx on project_id, resolved
+- project_cockpit_snapshot:
+  - idx on project_id, generated_at desc
+
+explicit_non_scope:
+- no destructive schema rewrite
+- no SQL execution here
+- no workflow engine implementation here
+- no gantt renderer implementation here
+- no client sync policy here
+
+handoff_to_next_step:
+- freeze API starter and DTOs against these row families
+- create implementation skeleton and slice order on top of this plan
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/020.architecture/021140_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300000_PROJECT_FLOW_MODEL_INDEX.md -->
 # ============================================================
 # PROJECT FLOW MODEL INDEX
 # ============================================================
@@ -2738,6 +3341,11 @@ files:
 - 0300024_PROJECT_FLOW_STATE_TRANSITION_MATRIX_NOTE.md
 - 0300025_PROJECT_FLOW_AUDIT_EVENT_MODEL_NOTE.md
 
+- 030510_PROJECTFLOW_DELIVERY_TIMELINE_MODEL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300000_PROJECT_FLOW_MODEL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300001_PROJECT_FLOW_MODEL_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW MODEL OVERVIEW
 # ============================================================
@@ -2758,6 +3366,9 @@ models:
 - project_sync_request
 - project_sync_log
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300001_PROJECT_FLOW_MODEL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300002_PROJECT_MODEL.md -->
 # ============================================================
 # PROJECT MODEL
 # ============================================================
@@ -2798,6 +3409,9 @@ ownership_notes:
 - budget_amount_view is ERP-owned
 - progress_percent may be mapped outbound by policy
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300002_PROJECT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300003_PROJECT_TASK_MODEL.md -->
 # ============================================================
 # PROJECT TASK MODEL
 # ============================================================
@@ -2829,6 +3443,9 @@ fields:
 - created_at
 - updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300003_PROJECT_TASK_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300004_PROJECT_MILESTONE_MODEL.md -->
 # ============================================================
 # PROJECT MILESTONE MODEL
 # ============================================================
@@ -2851,6 +3468,9 @@ fields:
 - created_at
 - updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300004_PROJECT_MILESTONE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300005_PROJECT_ISSUE_MODEL.md -->
 # ============================================================
 # PROJECT ISSUE MODEL
 # ============================================================
@@ -2875,6 +3495,9 @@ fields:
 - created_at
 - updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300005_PROJECT_ISSUE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300006_PROJECT_RISK_MODEL.md -->
 # ============================================================
 # PROJECT RISK MODEL
 # ============================================================
@@ -2899,6 +3522,9 @@ fields:
 - created_at
 - updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300006_PROJECT_RISK_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300007_PROJECT_TIME_ENTRY_MODEL.md -->
 # ============================================================
 # PROJECT TIME ENTRY MODEL
 # ============================================================
@@ -2923,6 +3549,9 @@ fields:
 - created_at
 - updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300007_PROJECT_TIME_ENTRY_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300008_PROJECT_SYNC_REQUEST_MODEL.md -->
 # ============================================================
 # PROJECT SYNC REQUEST MODEL
 # ============================================================
@@ -2946,6 +3575,9 @@ fields:
 - error_code
 - error_message
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300008_PROJECT_SYNC_REQUEST_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300009_PROJECT_SYNC_LOG_MODEL.md -->
 # ============================================================
 # PROJECT SYNC LOG MODEL
 # ============================================================
@@ -2967,6 +3599,9 @@ fields:
 - result_status
 - created_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300009_PROJECT_SYNC_LOG_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300010_PROJECT_EXPORT_JOB_MODEL.md -->
 # ============================================================
 # PROJECT EXPORT JOB MODEL
 # ============================================================
@@ -2997,6 +3632,9 @@ notes:
 export_format supports xlsx and csv.
 target_scope identifies which operational view was exported.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300010_PROJECT_EXPORT_JOB_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300011_PROJECT_PROGRESS_REPORT_DRAFT_MODEL.md -->
 # ============================================================
 # PROJECT PROGRESS REPORT DRAFT MODEL
 # ============================================================
@@ -3033,6 +3671,9 @@ notes:
 This model stores draft content only.
 Final external use requires human editing and approval.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300011_PROJECT_PROGRESS_REPORT_DRAFT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300012_PROJECT_FLOW_PHYSICAL_MODEL_BINDING_NOTE.md -->
 # ============================================================
 # PROJECT FLOW PHYSICAL MODEL BINDING NOTE
 # ============================================================
@@ -3058,6 +3699,9 @@ bindings:
 - project_export_job -> pf_export_job
 - project_progress_report_draft -> pf_progress_report_draft
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300012_PROJECT_FLOW_PHYSICAL_MODEL_BINDING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300013_PROJECT_FORM_REQUEST_MODEL.md -->
 # ============================================================
 # PROJECT FORM REQUEST MODEL
 # ============================================================
@@ -3086,6 +3730,9 @@ form_type_candidates:
 - issue_register
 - progress_report_request
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300013_PROJECT_FORM_REQUEST_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300014_PROJECT_AUTOMATION_RULE_MODEL.md -->
 # ============================================================
 # PROJECT AUTOMATION RULE MODEL
 # ============================================================
@@ -3114,6 +3761,9 @@ trigger_type_candidates:
 - sync_failed
 - milestone_delayed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300014_PROJECT_AUTOMATION_RULE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300015_PROJECT_MEMO_MODEL.md -->
 # ============================================================
 # PROJECT MEMO MODEL
 # ============================================================
@@ -3140,6 +3790,9 @@ memo_type_candidates:
 - meeting_note
 - decision_note
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300015_PROJECT_MEMO_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300016_PROJECT_COMMENT_THREAD_MODEL.md -->
 # ============================================================
 # PROJECT COMMENT THREAD MODEL
 # ============================================================
@@ -3169,6 +3822,9 @@ target_entity_type_candidates:
 - risk
 - milestone
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300016_PROJECT_COMMENT_THREAD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300017_PROJECT_TEMPLATE_MODEL.md -->
 # ============================================================
 # PROJECT TEMPLATE MODEL
 # ============================================================
@@ -3194,6 +3850,9 @@ notes:
 Project template is a reusable pattern source
 for project creation and WBS scheduling proposal.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300017_PROJECT_TEMPLATE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300018_PROJECT_TEMPLATE_TASK_MODEL.md -->
 # ============================================================
 # PROJECT TEMPLATE TASK MODEL
 # ============================================================
@@ -3219,6 +3878,9 @@ fields:
 notes:
 Offsets are relative and used for scheduling proposal generation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300018_PROJECT_TEMPLATE_TASK_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300019_PROJECT_SCHEDULE_PROPOSAL_MODEL.md -->
 # ============================================================
 # PROJECT SCHEDULE PROPOSAL MODEL
 # ============================================================
@@ -3251,6 +3913,9 @@ status_candidates:
 notes:
 Generated schedule remains proposal-only until confirmed by a human.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300019_PROJECT_SCHEDULE_PROPOSAL_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300020_PROJECT_FLOW_LOCAL_OWNERSHIP_MODEL_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LOCAL OWNERSHIP MODEL NOTE
 # ============================================================
@@ -3287,6 +3952,9 @@ notes:
 Mixed-boundary models may contain ERP-linked or mediated status context,
 but ProjectFlow still owns their app-local usage and presentation layer.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300020_PROJECT_FLOW_LOCAL_OWNERSHIP_MODEL_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300021_PROJECT_FLOW_DATA_OWNERSHIP_MATRIX_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DATA OWNERSHIP MATRIX NOTE
 # ============================================================
@@ -3453,6 +4121,9 @@ localized_label_key:
 - note: display-layer artifact,
         not business truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300021_PROJECT_FLOW_DATA_OWNERSHIP_MATRIX_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300022_PROJECT_FLOW_EDITABILITY_MATRIX_NOTE.md -->
 # ============================================================
 # PROJECT FLOW EDITABILITY MATRIX NOTE
 # ============================================================
@@ -3618,6 +4289,9 @@ proposal_payload_json:
 localized_label_key:
 - category: localized_display_only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300022_PROJECT_FLOW_EDITABILITY_MATRIX_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300023_PROJECT_FLOW_ACTION_AUTHORITY_MATRIX_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ACTION AUTHORITY MATRIX NOTE
 # ============================================================
@@ -3753,6 +4427,9 @@ edit_automation_rule:
 view_notification_center:
 - category: always_viewable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300023_PROJECT_FLOW_ACTION_AUTHORITY_MATRIX_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300024_PROJECT_FLOW_STATE_TRANSITION_MATRIX_NOTE.md -->
 # ============================================================
 # PROJECT FLOW STATE TRANSITION MATRIX NOTE
 # ============================================================
@@ -3881,6 +4558,9 @@ typical_transitions:
 - subscribed_active -> unpaid_read_only
 - unpaid_read_only -> subscribed_active
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300024_PROJECT_FLOW_STATE_TRANSITION_MATRIX_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300025_PROJECT_FLOW_AUDIT_EVENT_MODEL_NOTE.md -->
 # ============================================================
 # PROJECT FLOW AUDIT EVENT MODEL NOTE
 # ============================================================
@@ -3930,7 +4610,71 @@ action_type_candidates:
 - export
 - retry_request
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/0300025_PROJECT_FLOW_AUDIT_EVENT_MODEL_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/030510_PROJECTFLOW_DELIVERY_TIMELINE_MODEL.md -->
+# ============================================================
+# PROJECTFLOW DELIVERY TIMELINE MODEL
+# ============================================================
+
+status: canonical
+layer: model
+system: applications
+application: ProjectFlow
+directory: 030.model
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: delivery-timeline-model
+
+purpose:
+Defines the logical model for a unified delivery-oriented timeline.
+
+core_entity:
+- project_delivery_timeline_item
+
+recommended_fields:
+- projectDeliveryTimelineItemId
+- projectId
+- relatedTaskId
+- relatedMilestoneId
+- relatedDependencyId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- deliveryStateCode
+- priorityCode
+- dueAt
+- scheduledStartAt
+- scheduledEndAt
+- riskLevelCode
+- blockerPresent
+- ownerUserId
+- escalationRequired
+- sourceModuleCode
+- createdAt
+- updatedAt
+- completedAt
+
+state_meaning:
+- planned
+- in_progress
+- blocked
+- at_risk
+- awaiting_decision
+- completed
+- cancelled
+
+model_use_cases:
+- project cockpit assembly
+- milestone review
+- dependency exposure
+- risk review
+- delivery trend visibility
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/030.model/030510_PROJECTFLOW_DELIVERY_TIMELINE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400000_PROJECT_FLOW_RUNTIME_INDEX.md -->
 # ============================================================
 # PROJECT FLOW RUNTIME INDEX
 # ============================================================
@@ -3960,6 +4704,9 @@ files:
 - 0400015_PROJECT_FLOW_MULTILINGUAL_RUNTIME.md
 - 0400016_PROJECT_FLOW_LANGUAGE_SELECTION_RUNTIME.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400000_PROJECT_FLOW_RUNTIME_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400001_PROJECT_FLOW_RUNTIME_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW RUNTIME OVERVIEW
 # ============================================================
@@ -3978,6 +4725,9 @@ runtime_focus:
 - sync execution
 - retry behavior
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400001_PROJECT_FLOW_RUNTIME_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400002_PROJECT_LIFECYCLE_RUNTIME.md -->
 # ============================================================
 # PROJECT LIFECYCLE RUNTIME
 # ============================================================
@@ -4001,6 +4751,9 @@ rules:
 - completed requires milestone closure or approved override
 - archived is read-mostly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400002_PROJECT_LIFECYCLE_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400003_TASK_RUNTIME.md -->
 # ============================================================
 # TASK RUNTIME
 # ============================================================
@@ -4023,6 +4776,9 @@ rules:
 - blocked task must expose blocking reason
 - done requires completion timestamp
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400003_TASK_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400004_PROGRESS_RUNTIME.md -->
 # ============================================================
 # PROGRESS RUNTIME
 # ============================================================
@@ -4038,6 +4794,9 @@ rules:
 - project progress may be manual or task-derived by policy
 - delay_days is derived from schedule and completion state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400004_PROGRESS_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400005_SYNC_RUNTIME.md -->
 # ============================================================
 # SYNC RUNTIME
 # ============================================================
@@ -4060,6 +4819,9 @@ rules:
 - each mutation must create sync logs
 - silent discard is forbidden
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400005_SYNC_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400006_IMPORT_EXPORT_RUNTIME.md -->
 # ============================================================
 # IMPORT EXPORT RUNTIME
 # ============================================================
@@ -4078,6 +4840,9 @@ export_rules:
 - only mapped outbound fields are publishable
 - rejected export must remain reviewable and retryable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400006_IMPORT_EXPORT_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400007_EXPORT_AND_REPORT_RUNTIME.md -->
 # ============================================================
 # EXPORT AND REPORT RUNTIME
 # ============================================================
@@ -4103,6 +4868,9 @@ report_generation_rules:
 approval_rules:
 - project_manager or higher must confirm final external report usage
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400007_EXPORT_AND_REPORT_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400008_PROJECT_FLOW_SUBSCRIPTION_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW SUBSCRIPTION RUNTIME
 # ============================================================
@@ -4182,6 +4950,9 @@ ui_runtime_rules:
 - blocked actions must show entitlement reason
 - read-only state must be shown in screen chrome or banner
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400008_PROJECT_FLOW_SUBSCRIPTION_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400009_PROJECT_FLOW_TEMPLATE_AND_AUTOMATION_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE AND AUTOMATION RUNTIME
 # ============================================================
@@ -4206,6 +4977,9 @@ rules:
 - schedule proposal must remain editable after generation
 - business-day rules may adjust suggested dates
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400009_PROJECT_FLOW_TEMPLATE_AND_AUTOMATION_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400010_PROJECT_FLOW_TIMELINE_GANTT_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW TIMELINE GANTT RUNTIME
 # ============================================================
@@ -4238,6 +5012,9 @@ proposal_runtime_rules:
 - schedule proposal preview may render as gantt or timeline
 - proposal state must remain distinct from confirmed schedule state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400010_PROJECT_FLOW_TIMELINE_GANTT_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400011_PROJECT_FLOW_FORM_MEMO_COMMENT_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW FORM MEMO COMMENT RUNTIME
 # ============================================================
@@ -4264,6 +5041,9 @@ comment_runtime_rules:
 - comment threads must remain attached to their target entity
 - deleted comment behavior should prefer hidden/archived semantics over destructive erase
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400011_PROJECT_FLOW_FORM_MEMO_COMMENT_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400012_PROJECT_FLOW_LIGHT_AUTOMATION_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW LIGHT AUTOMATION RUNTIME
 # ============================================================
@@ -4295,6 +5075,9 @@ review_rules:
   action result,
   and execution time should remain reviewable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400012_PROJECT_FLOW_LIGHT_AUTOMATION_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400013_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE AND WBS PROPOSAL RUNTIME
 # ============================================================
@@ -4322,6 +5105,9 @@ adjustment_runtime_rules:
 - adjusted proposal remains traceable as adjusted state
 - confirmation converts proposal into project/task/milestone operational schedule
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400013_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400014_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER FACING SCHEDULE RUNTIME
 # ============================================================
@@ -4343,6 +5129,9 @@ state_rules:
 - proposal-derived customer-facing schedule remains draft until reviewed
 - confirmed operational schedule may generate customer-facing schedule snapshots
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400014_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400015_PROJECT_FLOW_MULTILINGUAL_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL RUNTIME
 # ============================================================
@@ -4369,6 +5158,9 @@ consistency_rules:
 - smartphone and pc must resolve the same locale behavior
 - report and customer material generation must not mix multiple locales unintentionally
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400015_PROJECT_FLOW_MULTILINGUAL_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400016_PROJECT_FLOW_LANGUAGE_SELECTION_RUNTIME.md -->
 # ============================================================
 # PROJECT FLOW LANGUAGE SELECTION RUNTIME
 # ============================================================
@@ -4399,7 +5191,9 @@ safety_rules:
   task truth,
   or schedule truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/040.runtime/0400016_PROJECT_FLOW_LANGUAGE_SELECTION_RUNTIME.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500000_PROJECT_FLOW_FLOW_INDEX.md -->
 # ============================================================
 # PROJECT FLOW FLOW INDEX
 # ============================================================
@@ -4441,6 +5235,9 @@ files:
 - 0500027_PROJECT_FLOW_REVIEW_AND_CONFIRMATION_FLOW.md
 - 0500028_PROJECT_FLOW_AUDIT_TRACE_FLOW.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500000_PROJECT_FLOW_FLOW_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500001_PROJECT_FLOW_FLOW_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW FLOW OVERVIEW
 # ============================================================
@@ -4460,6 +5257,9 @@ major_flows:
 - outbound publication
 - retry and audit review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500001_PROJECT_FLOW_FLOW_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500002_PROJECT_CREATION_FLOW.md -->
 # ============================================================
 # PROJECT CREATION FLOW
 # ============================================================
@@ -4477,6 +5277,9 @@ flow:
 4. project is stored as local draft or active
 5. optional ERP linkage is attached later
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500002_PROJECT_CREATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500003_PROJECT_IMPORT_FROM_ERP_FLOW.md -->
 # ============================================================
 # PROJECT IMPORT FROM ERP FLOW
 # ============================================================
@@ -4496,6 +5299,9 @@ flow:
 6. sync logs are recorded
 7. result is shown in UI
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500003_PROJECT_IMPORT_FROM_ERP_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500004_PROGRESS_UPDATE_FLOW.md -->
 # ============================================================
 # PROGRESS UPDATE FLOW
 # ============================================================
@@ -4512,6 +5318,9 @@ flow:
 3. project progress is recalculated or confirmed
 4. outbound publication eligibility is evaluated
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500004_PROGRESS_UPDATE_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500005_TIME_ENTRY_FLOW.md -->
 # ============================================================
 # TIME ENTRY FLOW
 # ============================================================
@@ -4529,6 +5338,9 @@ flow:
 4. entry is saved
 5. outbound pending state is set if mapping exists
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500005_TIME_ENTRY_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500006_ISSUE_AND_RISK_FLOW.md -->
 # ============================================================
 # ISSUE AND RISK FLOW
 # ============================================================
@@ -4546,6 +5358,9 @@ flow:
 4. status changes are tracked
 5. dashboard reflects counts and severity
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500006_ISSUE_AND_RISK_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500007_PROJECT_EXPORT_TO_ERP_FLOW.md -->
 # ============================================================
 # PROJECT EXPORT TO ERP FLOW
 # ============================================================
@@ -4563,6 +5378,9 @@ flow:
 4. success or failure is returned
 5. logs remain reviewable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500007_PROJECT_EXPORT_TO_ERP_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500008_SYNC_RETRY_FLOW.md -->
 # ============================================================
 # SYNC RETRY FLOW
 # ============================================================
@@ -4580,6 +5398,9 @@ flow:
 4. retry executes new sync request
 5. previous failure remains preserved in history
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500008_SYNC_RETRY_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500009_SPREADSHEET_EXPORT_FLOW.md -->
 # ============================================================
 # SPREADSHEET EXPORT FLOW
 # ============================================================
@@ -4600,6 +5421,9 @@ flow:
 7. export history is recorded
 8. user downloads the generated file
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500009_SPREADSHEET_EXPORT_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500010_PROGRESS_REPORT_GENERATION_FLOW.md -->
 # ============================================================
 # PROGRESS REPORT GENERATION FLOW
 # ============================================================
@@ -4620,6 +5444,9 @@ flow:
 7. reviewer confirms content if external use is intended
 8. final edited report is exported or copied for use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500010_PROGRESS_REPORT_GENERATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500011_PROJECT_FLOW_SCREEN_NAVIGATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW SCREEN NAVIGATION FLOW
 # ============================================================
@@ -4727,6 +5554,9 @@ settings_flow:
 - settings -> report_editor
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500011_PROJECT_FLOW_SCREEN_NAVIGATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500012_PROJECT_FLOW_PRIMARY_USER_JOURNEYS.md -->
 # ============================================================
 # PROJECT FLOW PRIMARY USER JOURNEYS
 # ============================================================
@@ -4775,6 +5605,9 @@ journey_5_unpaid_read_only_user:
 3. see disabled actions for blocked operations
 4. remain in view-only mode until entitlement changes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500012_PROJECT_FLOW_PRIMARY_USER_JOURNEYS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500013_PROJECT_FLOW_SUBSCRIPTION_STATE_FLOW.md -->
 # ============================================================
 # PROJECT FLOW SUBSCRIPTION STATE FLOW
 # ============================================================
@@ -4814,6 +5647,9 @@ blocked_action_flow:
 3. system shows read-only reason and subscription guidance
 4. user returns without data mutation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500013_PROJECT_FLOW_SUBSCRIPTION_STATE_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500014_PROJECT_FLOW_TRIAL_AND_READ_ONLY_USER_JOURNEY.md -->
 # ============================================================
 # PROJECT FLOW TRIAL AND READ ONLY USER JOURNEY
 # ============================================================
@@ -4847,6 +5683,9 @@ journey_reactivated_user:
 3. full capability becomes available again
 4. previous data remains viewable and editable according to role
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500014_PROJECT_FLOW_TRIAL_AND_READ_ONLY_USER_JOURNEY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500015_PROJECT_FLOW_FORM_INTAKE_FLOW.md -->
 # ============================================================
 # PROJECT FLOW FORM INTAKE FLOW
 # ============================================================
@@ -4866,6 +5705,9 @@ flow:
 6. target entity is created or routed for follow-up
 7. result is shown to user
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500015_PROJECT_FLOW_FORM_INTAKE_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500016_PROJECT_FLOW_LIGHT_AUTOMATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW LIGHT AUTOMATION FLOW
 # ============================================================
@@ -4889,6 +5731,9 @@ example_triggers:
 - sync failed
 - delayed milestone
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500016_PROJECT_FLOW_LIGHT_AUTOMATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500017_PROJECT_FLOW_TEMPLATE_BASED_PROJECT_CREATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE BASED PROJECT CREATION FLOW
 # ============================================================
@@ -4908,6 +5753,9 @@ flow:
 6. user reviews and edits generated result
 7. project is confirmed and created
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500017_PROJECT_FLOW_TEMPLATE_BASED_PROJECT_CREATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500018_PROJECT_FLOW_WBS_SCHEDULING_PROPOSAL_FLOW.md -->
 # ============================================================
 # PROJECT FLOW WBS SCHEDULING PROPOSAL FLOW
 # ============================================================
@@ -4933,6 +5781,9 @@ important_rule:
 Generated schedules are proposals only.
 Human review and adjustment remain possible before confirmation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500018_PROJECT_FLOW_WBS_SCHEDULING_PROPOSAL_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500019_PROJECT_FLOW_AUTOMATION_NOTIFICATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW AUTOMATION NOTIFICATION FLOW
 # ============================================================
@@ -4952,6 +5803,9 @@ flow:
 6. user sees notification or highlighted state
 7. user may open source detail screen from the notification
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500019_PROJECT_FLOW_AUTOMATION_NOTIFICATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500020_PROJECT_FLOW_AUTOMATION_REVIEW_FLOW.md -->
 # ============================================================
 # PROJECT FLOW AUTOMATION REVIEW FLOW
 # ============================================================
@@ -4969,6 +5823,9 @@ flow:
 4. operator resolves or leaves the underlying business item
 5. subsequent trigger behavior follows current rule state and current data state
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500020_PROJECT_FLOW_AUTOMATION_REVIEW_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500021_PROJECT_FLOW_TEMPLATE_MANAGEMENT_FLOW.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE MANAGEMENT FLOW
 # ============================================================
@@ -4989,6 +5846,9 @@ flow:
 7. user saves template
 8. template becomes reusable when activated
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500021_PROJECT_FLOW_TEMPLATE_MANAGEMENT_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500022_PROJECT_FLOW_WBS_PROPOSAL_GENERATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW WBS PROPOSAL GENERATION FLOW
 # ============================================================
@@ -5011,6 +5871,9 @@ flow:
 9. user adjusts proposal if needed
 10. user confirms proposal to create the operational schedule
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500022_PROJECT_FLOW_WBS_PROPOSAL_GENERATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500023_PROJECT_FLOW_PROPOSAL_ADJUSTMENT_AND_CONFIRMATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW PROPOSAL ADJUSTMENT AND CONFIRMATION FLOW
 # ============================================================
@@ -5034,6 +5897,9 @@ important_rules:
 - unconfirmed proposal must not overwrite confirmed operational schedule
 - confirmed proposal must remain traceable to source template
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500023_PROJECT_FLOW_PROPOSAL_ADJUSTMENT_AND_CONFIRMATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500024_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_GENERATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER FACING SCHEDULE GENERATION FLOW
 # ============================================================
@@ -5057,6 +5923,9 @@ important_rules:
 - milestone and phase visibility must remain clear
 - external-use review remains mandatory
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500024_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_GENERATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500025_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_FLOW.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER EXPLANATION MATERIAL FLOW
 # ============================================================
@@ -5083,6 +5952,9 @@ standard_output_set:
 - decision note
 - follow-up action list
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500025_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500026_PROJECT_FLOW_CUSTOMER_MATERIAL_GENERATION_SUBFLOW.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER MATERIAL GENERATION SUBFLOW
 # ============================================================
@@ -5108,6 +5980,9 @@ supported_materials:
 - decision_note
 - follow_up_action_list
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500026_PROJECT_FLOW_CUSTOMER_MATERIAL_GENERATION_SUBFLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500027_PROJECT_FLOW_REVIEW_AND_CONFIRMATION_FLOW.md -->
 # ============================================================
 # PROJECT FLOW REVIEW AND CONFIRMATION FLOW
 # ============================================================
@@ -5146,6 +6021,9 @@ important_rules:
 - confirmation is not the same as export
 - review state must remain visible before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500027_PROJECT_FLOW_REVIEW_AND_CONFIRMATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500028_PROJECT_FLOW_AUDIT_TRACE_FLOW.md -->
 # ============================================================
 # PROJECT FLOW AUDIT TRACE FLOW
 # ============================================================
@@ -5172,7 +6050,9 @@ important_rules:
 - sync retry should remain traceable as a new retry action,
   not hidden overwrite
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/050.flow/0500028_PROJECT_FLOW_AUDIT_TRACE_FLOW.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600000_PROJECT_FLOW_INTEGRATION_INDEX.md -->
 # ============================================================
 # PROJECT FLOW INTEGRATION INDEX
 # ============================================================
@@ -5201,6 +6081,17 @@ files:
 - 0600014_PROJECT_FLOW_BUSINESSOS_EXACT_PAYLOAD_AND_FIELD_MAPPING.md
 - 0600015_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_REFERENCE_NOTE.md
 
+- 060290_PROJECTFLOW_PROJECT_COCKPIT_PAYLOAD.md
+
+- 060300_PROJECTFLOW_RISK_DEPENDENCY_REVIEW_PAYLOAD.md
+
+- 060320_PROJECTFLOW_PHASE_A_API_STARTER.md
+
+- 060330_PROJECTFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600000_PROJECT_FLOW_INTEGRATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600001_PROJECT_FLOW_INTEGRATION_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW INTEGRATION OVERVIEW
 # ============================================================
@@ -5227,6 +6118,9 @@ outbound_targets:
 - selected time actual
 - completion status
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600001_PROJECT_FLOW_INTEGRATION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600002_PROJECT_FLOW_API_CONTRACT.md -->
 # ============================================================
 # PROJECT FLOW API CONTRACT
 # ============================================================
@@ -5259,6 +6153,9 @@ rules:
 - reject reason must be machine-readable
 - partial failure must identify row-level failure
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600002_PROJECT_FLOW_API_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600003_PROJECT_FLOW_ERP_MAPPING.md -->
 # ============================================================
 # PROJECT FLOW ERP MAPPING
 # ============================================================
@@ -5286,6 +6183,9 @@ protected_rules:
 - ERP budget is read-only locally by default
 - issue and risk are local-owned by default
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600003_PROJECT_FLOW_ERP_MAPPING.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600004_PROJECT_FLOW_REFERENCE_MASTER_SYNC.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE MASTER SYNC
 # ============================================================
@@ -5307,6 +6207,9 @@ rules:
 - reference sync should run before project intake when needed
 - invalid reference must produce reviewable error
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600004_PROJECT_FLOW_REFERENCE_MASTER_SYNC.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600005_PROJECT_FLOW_SPREADSHEET_EXPORT_CONTRACT.md -->
 # ============================================================
 # PROJECT FLOW SPREADSHEET EXPORT CONTRACT
 # ============================================================
@@ -5352,6 +6255,9 @@ rules:
 - export output is snapshot-based
 - file generation failure must be reviewable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600005_PROJECT_FLOW_SPREADSHEET_EXPORT_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600006_PROJECT_FLOW_PROGRESS_REPORT_TEMPLATE_CONTRACT.md -->
 # ============================================================
 # PROJECT FLOW PROGRESS REPORT TEMPLATE CONTRACT
 # ============================================================
@@ -5390,6 +6296,9 @@ rules:
 - human editing remains mandatory
 - template selection may differ by customer/internal audience
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600006_PROJECT_FLOW_PROGRESS_REPORT_TEMPLATE_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600007_PROJECT_FLOW_SHARED_BUSINESSOS_API_EXACT_CONTRACT.md -->
 # ============================================================
 # PROJECT FLOW SHARED BUSINESSOS API EXACT CONTRACT
 # ============================================================
@@ -5412,6 +6321,9 @@ boundary_rules:
 - shared BusinessOS is the formal ERP integration executor
 - request and response payload must match the fixed set
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600007_PROJECT_FLOW_SHARED_BUSINESSOS_API_EXACT_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600008_PROJECT_FLOW_EXTERNAL_REFERENCE_BOUNDARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW EXTERNAL REFERENCE BOUNDARY NOTE
 # ============================================================
@@ -5442,6 +6354,9 @@ boundary_rules:
   ProjectFlow should defer to higher canonical ownership
 - local additive detail should stay within ProjectFlow application scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600008_PROJECT_FLOW_EXTERNAL_REFERENCE_BOUNDARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600009_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_LIST.md -->
 # ============================================================
 # PROJECT FLOW BUSINESSOS DEPENDENCY LIST
 # ============================================================
@@ -5500,6 +6415,9 @@ non_dependency_examples:
 - local template management
 - local schedule proposal generation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600009_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_LIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600010_PROJECT_FLOW_ERP_DEPENDENCY_LIST.md -->
 # ============================================================
 # PROJECT FLOW ERP DEPENDENCY LIST
 # ============================================================
@@ -5561,6 +6479,9 @@ non_dependency_examples:
 - multilingual label resolution
 - local read-only entitlement behavior
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600010_PROJECT_FLOW_ERP_DEPENDENCY_LIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600011_PROJECT_FLOW_COMMON_COMPONENT_USAGE_LIST.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT USAGE LIST
 # ============================================================
@@ -5617,6 +6538,9 @@ non_common_component_examples:
 - ProjectFlow customer-facing schedule grouping rules
 - ProjectFlow progress report narrative composition rules
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600011_PROJECT_FLOW_COMMON_COMPONENT_USAGE_LIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600012_PROJECT_FLOW_UPLOADED_REFERENCE_MAPPING_NOTE.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED REFERENCE MAPPING NOTE
 # ============================================================
@@ -5704,6 +6628,9 @@ persona_schema_table_column_full.txt:
 - concern: Persona schema full detail
 - usage: low-priority reference unless persona-linked scope grows
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600012_PROJECT_FLOW_UPLOADED_REFERENCE_MAPPING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600013_PROJECT_FLOW_REFERENCE_PRIORITY_BY_CONCERN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE PRIORITY BY CONCERN NOTE
 # ============================================================
@@ -5777,6 +6704,9 @@ note:
 Not every concern requires every reference.
 This table is a first-check priority guide.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600013_PROJECT_FLOW_REFERENCE_PRIORITY_BY_CONCERN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600014_PROJECT_FLOW_BUSINESSOS_EXACT_PAYLOAD_AND_FIELD_MAPPING.md -->
 # ============================================================
 # PROJECT FLOW BUSINESSOS EXACT PAYLOAD AND FIELD MAPPING
 # ============================================================
@@ -5994,6 +6924,9 @@ important_rule:
 Snapshots are display convenience only.
 They do not replace formal truth ownership.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600014_PROJECT_FLOW_BUSINESSOS_EXACT_PAYLOAD_AND_FIELD_MAPPING.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600015_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_REFERENCE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW OFFICIAL COMMON COMPONENT REFERENCE NOTE
 # ============================================================
@@ -6025,7 +6958,324 @@ usage_rules:
   keep it app-local and additive
 - candidate registration still belongs to separate canonical flow outside ProjectFlow
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/0600015_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_REFERENCE_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060290_PROJECTFLOW_PROJECT_COCKPIT_PAYLOAD.md -->
+# ============================================================
+# PROJECTFLOW PROJECT COCKPIT PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: ProjectFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: project-cockpit-payload
+
+purpose:
+Fixes the exact payload family for the project cockpit surface.
+
+endpoint:
+- POST /api/v1/project-flow/project-cockpit/query
+
+request_fields:
+- projectId: uuid string, required
+- timezone: string, required
+- includeBlockedItems: boolean, required
+- includeAtRiskItems: boolean, required
+- includeUpcomingMilestones: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- projectId: uuid string, required
+- projectTitle: string, required
+- healthSummaryMessage: string, required
+- blockedItems: array, required
+- atRiskItems: array, required
+- upcomingMilestones: array, required
+- ownerEscalationItems: array, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- projectDeliveryTimelineItemId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- deliveryStateCode
+- dueAt
+- scheduledStartAt
+- scheduledEndAt
+- riskLevelCode
+- blockerPresent
+- ownerUserId
+- escalationRequired
+
+rules:
+- timestamps use ISO-8601 strings
+- nullable values return null, not omission
+- arrays return empty arrays when no data
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060290_PROJECTFLOW_PROJECT_COCKPIT_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060300_PROJECTFLOW_RISK_DEPENDENCY_REVIEW_PAYLOAD.md -->
+# ============================================================
+# PROJECTFLOW RISK DEPENDENCY REVIEW PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: ProjectFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: risk-dependency-review-payload
+
+purpose:
+Fixes the exact payload family for reviewing dependency and risk status.
+
+endpoint:
+- POST /api/v1/project-flow/risk-dependency-review/query
+
+request_fields:
+- projectId: uuid string, required
+- riskLevelFilter: string array, optional
+- includeResolved: boolean, required
+- includeDependencies: boolean, required
+- includeDecisionPending: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- projectId: uuid string, required
+- reviewItems: array, required
+- summaryMessage: string, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId
+- relatedMilestoneId
+- relatedDependencyId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- deliveryStateCode
+- riskLevelCode
+- blockerPresent
+- ownerUserId
+- decisionPending
+- resolved
+- dueAt
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060300_PROJECTFLOW_RISK_DEPENDENCY_REVIEW_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060320_PROJECTFLOW_PHASE_A_API_STARTER.md -->
+# ============================================================
+# PROJECTFLOW PHASE A API STARTER
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: ProjectFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-starter
+
+purpose:
+Defines the initial Phase A endpoint set for delivery control in ProjectFlow.
+
+phase_a_api_goals:
+- query project cockpit
+- query dependency and risk review
+- prepare later escalation or review actions without reopening the contract
+
+phase_a_endpoint_set:
+- POST /api/v1/project-flow/project-cockpit/query
+- POST /api/v1/project-flow/risk-dependency-review/query
+
+endpoint_project_cockpit_query:
+  purpose:
+    - return blocked, at-risk, and upcoming milestone visibility in one surface
+  minimum_request:
+    - projectId
+    - timezone
+    - includeBlockedItems
+    - includeAtRiskItems
+    - includeUpcomingMilestones
+    - pageSize
+  minimum_response:
+    - projectId
+    - projectTitle
+    - healthSummaryMessage
+    - blockedItems
+    - atRiskItems
+    - upcomingMilestones
+    - ownerEscalationItems
+    - generatedAt
+
+endpoint_risk_dependency_review_query:
+  purpose:
+    - return dependency and risk review rows for management review
+  minimum_request:
+    - projectId
+    - includeResolved
+    - includeDependencies
+    - includeDecisionPending
+    - pageSize
+  minimum_response:
+    - projectId
+    - reviewItems
+    - summaryMessage
+    - generatedAt
+
+response_rules:
+- ids use uuid string form
+- timestamps use ISO-8601 strings
+- arrays return empty arrays, not omission
+- nullable values return null once frozen
+- no binary payloads in these responses
+
+error_family_phase_a:
+- invalid_request
+- unauthorized
+- forbidden
+- not_found
+- conflict
+- validation_failed
+- internal_error
+
+explicit_non_scope:
+- no task mutation endpoint in this slice
+- no milestone write endpoint in this slice
+- no workflow transition endpoint in this slice
+- no bulk import endpoint in this slice
+
+implementation_handoff:
+- use these two query endpoints as the only Phase A vertical-slice entry points first
+- defer write-side escalation actions until query-side surfaces stabilize
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060320_PROJECTFLOW_PHASE_A_API_STARTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060330_PROJECTFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+# ============================================================
+# PROJECTFLOW PHASE A API DTO FIELD FREEZE
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: ProjectFlow
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-dto-field-freeze
+
+purpose:
+Freezes the Phase A request and response DTO field set for
+project cockpit and risk dependency review.
+
+freezing_policy:
+- additive only
+- field names become implementation baseline once approved
+- no casual local rename allowed
+- timestamps are ISO-8601 strings
+- ids are uuid strings
+- arrays stay arrays even when empty
+
+endpoint_01_project_cockpit_query:
+  route: POST /api/v1/project-flow/project-cockpit/query
+  request_fields:
+    - projectId: uuid string, required
+    - timezone: string, required
+    - includeBlockedItems: boolean, required
+    - includeAtRiskItems: boolean, required
+    - includeUpcomingMilestones: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - projectId: uuid string, required
+    - projectTitle: string, required
+    - healthSummaryMessage: string, required
+    - blockedItems: array, required
+    - atRiskItems: array, required
+    - upcomingMilestones: array, required
+    - ownerEscalationItems: array, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- projectDeliveryTimelineItemId: uuid string, required
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- deliveryStateCode: string, required
+- dueAt: ISO-8601 string, nullable
+- scheduledStartAt: ISO-8601 string, nullable
+- scheduledEndAt: ISO-8601 string, nullable
+- riskLevelCode: string, nullable
+- blockerPresent: boolean, required
+- ownerUserId: uuid string, nullable
+- escalationRequired: boolean, required
+
+endpoint_02_risk_dependency_review_query:
+  route: POST /api/v1/project-flow/risk-dependency-review/query
+  request_fields:
+    - projectId: uuid string, required
+    - riskLevelFilter: string array, optional
+    - includeResolved: boolean, required
+    - includeDependencies: boolean, required
+    - includeDecisionPending: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - projectId: uuid string, required
+    - reviewItems: array, required
+    - summaryMessage: string, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId: uuid string, required
+- relatedMilestoneId: uuid string, nullable
+- relatedDependencyId: uuid string, nullable
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- deliveryStateCode: string, required
+- riskLevelCode: string, nullable
+- blockerPresent: boolean, required
+- ownerUserId: uuid string, nullable
+- decisionPending: boolean, required
+- resolved: boolean, required
+- dueAt: ISO-8601 string, nullable
+
+shared_error_response_fields:
+- errorCode: string, required
+- errorMessage: string, required
+- requestId: string, required
+- details: object, nullable
+
+field_value_rules:
+- itemTypeCode is a text code, not localized label
+- deliveryStateCode is a text code, not localized label
+- riskLevelCode is a text code, not localized label
+- nullable fields return null, not omission
+- unknown response fields must not be silently added in Phase A
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/060.integration/060330_PROJECTFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700000_PROJECT_FLOW_OPERATIONS_INDEX.md -->
 # ============================================================
 # PROJECT FLOW OPERATIONS INDEX
 # ============================================================
@@ -6043,6 +7293,9 @@ files:
 - 0700003_PROJECT_FLOW_ERROR_HANDLING.md
 - 0700004_PROJECT_FLOW_MONITORING.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700000_PROJECT_FLOW_OPERATIONS_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700001_PROJECT_FLOW_OPERATIONS_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW OPERATIONS OVERVIEW
 # ============================================================
@@ -6060,6 +7313,9 @@ operation_targets:
 - error review
 - user support
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700001_PROJECT_FLOW_OPERATIONS_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700002_PROJECT_FLOW_OPERATION_POLICY.md -->
 # ============================================================
 # PROJECT FLOW OPERATION POLICY
 # ============================================================
@@ -6076,6 +7332,9 @@ policies:
 - sync scheduling must be documented
 - failed sync backlog must be visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700002_PROJECT_FLOW_OPERATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700003_PROJECT_FLOW_ERROR_HANDLING.md -->
 # ============================================================
 # PROJECT FLOW ERROR HANDLING
 # ============================================================
@@ -6099,6 +7358,9 @@ rules:
 - retryability must be explicit
 - operator message and system detail should be separable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700003_PROJECT_FLOW_ERROR_HANDLING.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700004_PROJECT_FLOW_MONITORING.md -->
 # ============================================================
 # PROJECT FLOW MONITORING
 # ============================================================
@@ -6118,7 +7380,9 @@ monitoring_targets:
 - open issue count
 - high risk count
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/070.operations/0700004_PROJECT_FLOW_MONITORING.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800000_PROJECT_FLOW_POLICY_INDEX.md -->
 # ============================================================
 # PROJECT FLOW POLICY INDEX
 # ============================================================
@@ -6163,6 +7427,9 @@ files:
 - 0800030_PROJECT_FLOW_REMAINING_ITEM_STOPLINE_POLICY.md
 - 0800031_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_POLICY.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800000_PROJECT_FLOW_POLICY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800001_PROJECT_FLOW_POLICY_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW POLICY OVERVIEW
 # ============================================================
@@ -6179,6 +7446,9 @@ policy_domains:
 - retention
 - conflict resolution
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800001_PROJECT_FLOW_POLICY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800002_PROJECT_FLOW_SOURCE_OF_TRUTH_POLICY.md -->
 # ============================================================
 # PROJECT FLOW SOURCE OF TRUTH POLICY
 # ============================================================
@@ -6205,6 +7475,9 @@ local_truth:
 - operational milestone progress
 - workload understanding
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800002_PROJECT_FLOW_SOURCE_OF_TRUTH_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800003_PROJECT_FLOW_EDIT_POLICY.md -->
 # ============================================================
 # PROJECT FLOW EDIT POLICY
 # ============================================================
@@ -6220,6 +7493,9 @@ edit_rules:
 - local-owned fields are editable by role
 - protected manual override requires audit trail
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800003_PROJECT_FLOW_EDIT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800004_PROJECT_FLOW_DATA_RETENTION_POLICY.md -->
 # ============================================================
 # PROJECT FLOW DATA RETENTION POLICY
 # ============================================================
@@ -6241,6 +7517,9 @@ retention_targets:
 rules:
 - archival is preferred over destructive delete
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800004_PROJECT_FLOW_DATA_RETENTION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800005_PROJECT_FLOW_EXTERNAL_EXPORT_POLICY.md -->
 # ============================================================
 # PROJECT FLOW EXTERNAL EXPORT POLICY
 # ============================================================
@@ -6263,6 +7542,9 @@ policy_rules:
 - export history must remain reviewable
 - external use must follow company sharing rules
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800005_PROJECT_FLOW_EXTERNAL_EXPORT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800006_PROJECT_FLOW_REPORT_APPROVAL_POLICY.md -->
 # ============================================================
 # PROJECT FLOW REPORT APPROVAL POLICY
 # ============================================================
@@ -6283,6 +7565,9 @@ approval_rules:
 - external customer-facing use requires project_manager or higher review
 - unreviewed draft must not be treated as final report
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800006_PROJECT_FLOW_REPORT_APPROVAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800007_PROJECT_FLOW_SUBSCRIPTION_AND_READ_ONLY_POLICY.md -->
 # ============================================================
 # PROJECT FLOW SUBSCRIPTION AND READ ONLY POLICY
 # ============================================================
@@ -6325,6 +7610,9 @@ suspended:
 audit_rule:
 Entitlement state changes should remain reviewable.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800007_PROJECT_FLOW_SUBSCRIPTION_AND_READ_ONLY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800008_PROJECT_FLOW_DEVICE_PARITY_POLICY.md -->
 # ============================================================
 # PROJECT FLOW DEVICE PARITY POLICY
 # ============================================================
@@ -6346,6 +7634,9 @@ policy_rules:
 - unpaid read-only mode must apply equally across devices
 - export/report/integration capabilities must follow the same entitlement rules across devices
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800008_PROJECT_FLOW_DEVICE_PARITY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800009_PROJECT_FLOW_TRIAL_POLICY_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW TRIAL POLICY DETAIL
 # ============================================================
@@ -6368,6 +7659,9 @@ policy_rules:
 - trial expiration timing must be deterministic
 - trial user data remains visible after entitlement downgrade
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800009_PROJECT_FLOW_TRIAL_POLICY_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800010_PROJECT_FLOW_BLOCKED_ACTION_POLICY.md -->
 # ============================================================
 # PROJECT FLOW BLOCKED ACTION POLICY
 # ============================================================
@@ -6403,6 +7697,9 @@ major_blocked_actions:
 - generate report draft
 - update report draft
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800010_PROJECT_FLOW_BLOCKED_ACTION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800011_PROJECT_FLOW_ADDITIVE_FEATURE_POLICY.md -->
 # ============================================================
 # PROJECT FLOW ADDITIVE FEATURE POLICY
 # ============================================================
@@ -6433,6 +7730,9 @@ policy_rules:
 - additions must remain customer-usable
 - additions must remain editable after generation where proposals are involved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800011_PROJECT_FLOW_ADDITIVE_FEATURE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800012_PROJECT_FLOW_TEMPLATE_AND_SCHEDULING_POLICY.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE AND SCHEDULING POLICY
 # ============================================================
@@ -6472,6 +7772,9 @@ final_rules:
 - generated schedules are proposals only
 - human review and adjustment must remain possible before confirmation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800012_PROJECT_FLOW_TEMPLATE_AND_SCHEDULING_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800013_PROJECT_FLOW_LIGHT_AUTOMATION_POLICY.md -->
 # ============================================================
 # PROJECT FLOW LIGHT AUTOMATION POLICY
 # ============================================================
@@ -6505,6 +7808,9 @@ policy_rules:
 - automation must stay customer-usable
 - automation result should remain reviewable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800013_PROJECT_FLOW_LIGHT_AUTOMATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800014_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_POLICY.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER FACING SCHEDULE POLICY
 # ============================================================
@@ -6525,6 +7831,9 @@ policy_rules:
 - milestone visibility must remain strong
 - external-use schedule output must remain human-reviewable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800014_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800015_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_POLICY.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER EXPLANATION MATERIAL POLICY
 # ============================================================
@@ -6552,6 +7861,9 @@ policy_rules:
 - human review remains mandatory before external use
 - explanation-friendly wording should be preserved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800015_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800016_PROJECT_FLOW_CUSTOMER_PROVISION_POLICY.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER PROVISION POLICY
 # ============================================================
@@ -6583,6 +7895,9 @@ service_boundaries:
 - customer-specific workflow redesign is not assumed as standard monthly scope
 - bespoke development is not assumed as standard monthly scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800016_PROJECT_FLOW_CUSTOMER_PROVISION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800017_PROJECT_FLOW_MINIMUM_SUPPORT_SCOPE_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MINIMUM SUPPORT SCOPE POLICY
 # ============================================================
@@ -6620,6 +7935,9 @@ the product should prioritize:
 - visible blocked-action reasons
 - explanation-friendly outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800017_PROJECT_FLOW_MINIMUM_SUPPORT_SCOPE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800018_PROJECT_FLOW_MULTILINGUAL_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL POLICY
 # ============================================================
@@ -6646,6 +7964,9 @@ policy_rules:
 - fallback behavior must be explicit
 - localized wording should remain concise and explanation-friendly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800018_PROJECT_FLOW_MULTILINGUAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800019_PROJECT_FLOW_MULTILINGUAL_FALLBACK_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL FALLBACK POLICY
 # ============================================================
@@ -6668,6 +7989,9 @@ review_rules:
 - missing keys should remain detectable in review/testing
 - customer-facing output should be checked for fallback leakage before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800019_PROJECT_FLOW_MULTILINGUAL_FALLBACK_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800020_PROJECT_FLOW_INITIAL_LANGUAGE_POLICY.md -->
 # ============================================================
 # PROJECT FLOW INITIAL LANGUAGE POLICY
 # ============================================================
@@ -6692,6 +8016,9 @@ policy_rules:
 - later languages may be added without breaking the initial key model
 - mixed-language output should be avoided unless explicitly reviewed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800020_PROJECT_FLOW_INITIAL_LANGUAGE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800021_PROJECT_FLOW_LANGUAGE_OUTPUT_CONSISTENCY_POLICY.md -->
 # ============================================================
 # PROJECT FLOW LANGUAGE OUTPUT CONSISTENCY POLICY
 # ============================================================
@@ -6711,6 +8038,9 @@ consistency_rules:
 - fallback wording should be minimized in customer-facing outputs
 - customer-facing review should check language consistency before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800021_PROJECT_FLOW_LANGUAGE_OUTPUT_CONSISTENCY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800022_PROJECT_FLOW_MULTILINGUAL_CUSTOMER_MATERIAL_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL CUSTOMER MATERIAL POLICY
 # ============================================================
@@ -6741,6 +8071,9 @@ policy_rules:
 - wording overrides remain possible after localized generation
 - external-use review remains mandatory
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800022_PROJECT_FLOW_MULTILINGUAL_CUSTOMER_MATERIAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800023_PROJECT_FLOW_MULTILINGUAL_EXPORT_HEADER_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL EXPORT HEADER POLICY
 # ============================================================
@@ -6774,6 +8107,9 @@ header_scope_examples:
 - time entry columns
 - customer material section headers where applicable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800023_PROJECT_FLOW_MULTILINGUAL_EXPORT_HEADER_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800024_PROJECT_FLOW_MULTILINGUAL_TERMINOLOGY_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL TERMINOLOGY POLICY
 # ============================================================
@@ -6812,6 +8148,9 @@ policy_rules:
 - proposal and confirmed states must not collapse into the same wording
 - read-only and blocked-action wording must remain easy to understand
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800024_PROJECT_FLOW_MULTILINGUAL_TERMINOLOGY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800025_PROJECT_FLOW_DEVICE_SUPPORT_POLICY.md -->
 # ============================================================
 # PROJECT FLOW DEVICE SUPPORT POLICY
 # ============================================================
@@ -6834,6 +8173,9 @@ policy_rules:
 - customer-facing outputs must be accessible from all supported device types
 - unpaid read-only behavior must be consistent across all supported device types
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800025_PROJECT_FLOW_DEVICE_SUPPORT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800026_PROJECT_FLOW_CANONICAL_PRIORITY_POLICY.md -->
 # ============================================================
 # PROJECT FLOW CANONICAL PRIORITY POLICY
 # ============================================================
@@ -6855,6 +8197,9 @@ policy_rules:
 - common component ownership stays outside ProjectFlow unless promoted separately
 - ProjectFlow retains ownership only for application-local additive behavior
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800026_PROJECT_FLOW_CANONICAL_PRIORITY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800027_PROJECT_FLOW_REFERENCE_CONFLICT_STOP_POLICY.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT STOP POLICY
 # ============================================================
@@ -6893,6 +8238,9 @@ non_stop_examples:
 - local meta summary cleanup
 - explicit conflict logging
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800027_PROJECT_FLOW_REFERENCE_CONFLICT_STOP_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800028_PROJECT_FLOW_EXACT_OPEN_ITEM_RESOLUTION_POLICY.md -->
 # ============================================================
 # PROJECT FLOW EXACT OPEN ITEM RESOLUTION POLICY
 # ============================================================
@@ -6920,6 +8268,9 @@ still_explicitly_open_but_non_blocking:
 - RLS final execution design
 - holiday-calendar sophistication beyond weekday_only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800028_PROJECT_FLOW_EXACT_OPEN_ITEM_RESOLUTION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800029_PROJECT_FLOW_POST_EXACT_OPEN_ITEM_POLICY.md -->
 # ============================================================
 # PROJECT FLOW POST EXACT OPEN ITEM POLICY
 # ============================================================
@@ -6940,6 +8291,9 @@ policy_rules:
 - later sophistication items must not block ordinary implementation planning
 - open-item handling should remain explicit and phase-aware
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800029_PROJECT_FLOW_POST_EXACT_OPEN_ITEM_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800030_PROJECT_FLOW_REMAINING_ITEM_STOPLINE_POLICY.md -->
 # ============================================================
 # PROJECT FLOW REMAINING ITEM STOPLINE POLICY
 # ============================================================
@@ -6961,6 +8315,9 @@ policy_rules:
 - ordinary implementation planning may proceed using current fixed design
   as long as DB-owner-review items are treated as explicit boundary items
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800030_PROJECT_FLOW_REMAINING_ITEM_STOPLINE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800031_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_POLICY.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW UNLOCK POLICY
 # ============================================================
@@ -7004,7 +8361,9 @@ hold:
   clarification prep,
   and re-review preparation may continue
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/080.policy/0800031_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_POLICY.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900000_PROJECT_FLOW_INTERFACE_INDEX.md -->
 # ============================================================
 # PROJECT FLOW INTERFACE INDEX
 # ============================================================
@@ -7081,6 +8440,11 @@ files:
 - 0900063_PROJECT_FLOW_MULTILINGUAL_EXPORT_HEADER_NOTE.md
 - 0900064_PROJECT_FLOW_DEVICE_FORM_FACTOR_NOTE.md
 
+- 090330_PROJECTFLOW_PROJECT_COCKPIT_INTERFACE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900000_PROJECT_FLOW_INTERFACE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900001_PROJECT_FLOW_INTERFACE_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW INTERFACE OVERVIEW
 # ============================================================
@@ -7110,6 +8474,9 @@ global_ui_rules:
 - ERP-owned read-only fields must be visually distinguishable
 - draft report state must be visually distinguishable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900001_PROJECT_FLOW_INTERFACE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900002_PROJECT_FLOW_SCREEN_LIST.md -->
 # ============================================================
 # PROJECT FLOW SCREEN LIST
 # ============================================================
@@ -7135,6 +8502,9 @@ screen_list:
 - report_editor
 - settings
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900002_PROJECT_FLOW_SCREEN_LIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900003_PROJECT_FLOW_DASHBOARD_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW DASHBOARD SCREEN DETAIL
 # ============================================================
@@ -7187,6 +8557,9 @@ navigation_targets:
 - sync_status
 - report_editor
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900003_PROJECT_FLOW_DASHBOARD_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900004_PROJECT_FLOW_PROJECT_LIST_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW PROJECT LIST SCREEN DETAIL
 # ============================================================
@@ -7239,6 +8612,9 @@ row_actions:
 - open tasks
 - open sync status
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900004_PROJECT_FLOW_PROJECT_LIST_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900005_PROJECT_FLOW_PROJECT_DETAIL_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW PROJECT DETAIL SCREEN DETAIL
 # ============================================================
@@ -7295,6 +8671,9 @@ header_actions:
 - request export to ERP path
 - open sync detail
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900005_PROJECT_FLOW_PROJECT_DETAIL_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900006_PROJECT_FLOW_TASK_LIST_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW TASK LIST SCREEN DETAIL
 # ============================================================
@@ -7348,6 +8727,9 @@ row_actions:
 - quick progress update
 - quick status update
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900006_PROJECT_FLOW_TASK_LIST_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900007_PROJECT_FLOW_TASK_DETAIL_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW TASK DETAIL SCREEN DETAIL
 # ============================================================
@@ -7398,6 +8780,9 @@ actions:
 - register issue
 - open related project
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900007_PROJECT_FLOW_TASK_DETAIL_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900008_PROJECT_FLOW_MILESTONE_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW MILESTONE SCREEN DETAIL
 # ============================================================
@@ -7435,6 +8820,9 @@ actions:
 - complete milestone
 - export milestone view
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900008_PROJECT_FLOW_MILESTONE_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900009_PROJECT_FLOW_ISSUE_RISK_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW ISSUE RISK SCREEN DETAIL
 # ============================================================
@@ -7481,6 +8869,9 @@ actions:
 visual_rules:
 - high severity and high risk must be visually prominent
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900009_PROJECT_FLOW_ISSUE_RISK_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900010_PROJECT_FLOW_TIME_ENTRY_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW TIME ENTRY SCREEN DETAIL
 # ============================================================
@@ -7519,6 +8910,9 @@ actions:
 - edit entry
 - export time entry list
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900010_PROJECT_FLOW_TIME_ENTRY_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900011_PROJECT_FLOW_WORKLOAD_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW WORKLOAD SCREEN DETAIL
 # ============================================================
@@ -7552,6 +8946,9 @@ actions:
 - open member task view
 - export workload view
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900011_PROJECT_FLOW_WORKLOAD_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900012_PROJECT_FLOW_SYNC_STATUS_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW SYNC STATUS SCREEN DETAIL
 # ============================================================
@@ -7595,6 +8992,9 @@ visual_rules:
 - failed and partially_failed must be visually prominent
 - retryable state must be obvious
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900012_PROJECT_FLOW_SYNC_STATUS_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900013_PROJECT_FLOW_EXPORT_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW EXPORT SCREEN DETAIL
 # ============================================================
@@ -7635,6 +9035,9 @@ rules:
 - unavailable columns must be disabled
 - masked export must be clearly indicated
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900013_PROJECT_FLOW_EXPORT_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900014_PROJECT_FLOW_REPORT_EDITOR_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW REPORT EDITOR SCREEN DETAIL
 # ============================================================
@@ -7677,6 +9080,9 @@ rules:
 - approval status must be visible
 - external-use warning must appear before unapproved export
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900014_PROJECT_FLOW_REPORT_EDITOR_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900015_PROJECT_FLOW_SETTINGS_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW SETTINGS SCREEN DETAIL
 # ============================================================
@@ -7708,6 +9114,9 @@ settings_examples:
 - default report template
 - sync list refresh interval
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900015_PROJECT_FLOW_SETTINGS_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900016_PROJECT_FLOW_MULTI_DEVICE_INTERFACE_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTI DEVICE INTERFACE POLICY
 # ============================================================
@@ -7742,6 +9151,9 @@ pc:
 - side-by-side detail area where useful
 - same actions visible with wider layout
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900016_PROJECT_FLOW_MULTI_DEVICE_INTERFACE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900017_PROJECT_FLOW_COMMON_UI_COMPONENT_CANDIDATES.md -->
 # ============================================================
 # PROJECT FLOW COMMON UI COMPONENT CANDIDATES
 # ============================================================
@@ -7814,6 +9226,9 @@ Reusable for monthly-use application subscription control.
 device_parity_action_bar:
 Reusable for smartphone/PC same capability layout adaptation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900017_PROJECT_FLOW_COMMON_UI_COMPONENT_CANDIDATES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900018_PROJECT_FLOW_NAVIGATION_DESIGN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NAVIGATION DESIGN NOTE
 # ============================================================
@@ -7853,6 +9268,9 @@ global_action_policy:
 - sync status should be reachable globally
 - read-only mode should not hide blocked actions silently
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900018_PROJECT_FLOW_NAVIGATION_DESIGN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900019_PROJECT_FLOW_SCREEN_ACTION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW SCREEN ACTION MATRIX
 # ============================================================
@@ -7962,6 +9380,9 @@ settings:
 - update report defaults
 - update refresh preferences
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900019_PROJECT_FLOW_SCREEN_ACTION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900020_PROJECT_FLOW_TEMPLATE_AND_AUTOMATION_SCREEN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE AND AUTOMATION SCREEN NOTE
 # ============================================================
@@ -8006,6 +9427,9 @@ and decision records.
 comment_history:
 Shows short communication thread on project-linked items.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900020_PROJECT_FLOW_TEMPLATE_AND_AUTOMATION_SCREEN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900021_PROJECT_FLOW_TIMELINE_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW TIMELINE SCREEN DETAIL
 # ============================================================
@@ -8049,6 +9473,9 @@ visual_rules:
 - completed items must remain visible but less dominant
 - dependency relation should be understandable at a glance
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900021_PROJECT_FLOW_TIMELINE_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900022_PROJECT_FLOW_GANTT_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW GANTT SCREEN DETAIL
 # ============================================================
@@ -8102,6 +9529,9 @@ ui_rules:
 - pc may use denser side-by-side hierarchy and bar view
 - same actions must remain available across devices
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900022_PROJECT_FLOW_GANTT_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900023_PROJECT_FLOW_LIVE_DASHBOARD_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW LIVE DASHBOARD DETAIL
 # ============================================================
@@ -8161,6 +9591,9 @@ actions:
 - open report editor
 - open export
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900023_PROJECT_FLOW_LIVE_DASHBOARD_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900024_PROJECT_FLOW_SCHEDULE_PROPOSAL_PREVIEW_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW SCHEDULE PROPOSAL PREVIEW SCREEN DETAIL
 # ============================================================
@@ -8196,6 +9629,9 @@ rules:
 - proposal state must be visually distinct from confirmed state
 - edited proposal must remain traceable as adjusted proposal
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900024_PROJECT_FLOW_SCHEDULE_PROPOSAL_PREVIEW_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900025_PROJECT_FLOW_FORM_INTAKE_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW FORM INTAKE SCREEN DETAIL
 # ============================================================
@@ -8251,6 +9687,9 @@ ui_rules:
 - form should remain compact and easy for field use
 - success result should show created target when applicable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900025_PROJECT_FLOW_FORM_INTAKE_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900026_PROJECT_FLOW_MEMO_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW MEMO SCREEN DETAIL
 # ============================================================
@@ -8298,6 +9737,9 @@ ui_rules:
 - recent updates should be easy to find
 - memo access should stay close to project detail context
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900026_PROJECT_FLOW_MEMO_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900027_PROJECT_FLOW_COMMENT_HISTORY_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW COMMENT HISTORY SCREEN DETAIL
 # ============================================================
@@ -8344,6 +9786,9 @@ ui_rules:
 - thread depth should remain simple
 - this screen is not a full chat replacement
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900027_PROJECT_FLOW_COMMENT_HISTORY_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900028_PROJECT_FLOW_AUTOMATION_RULE_SETTINGS_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW AUTOMATION RULE SETTINGS SCREEN DETAIL
 # ============================================================
@@ -8388,6 +9833,9 @@ ui_rules:
 - only lightweight actions should be selectable
 - enabled/disabled state must be obvious
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900028_PROJECT_FLOW_AUTOMATION_RULE_SETTINGS_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900029_PROJECT_FLOW_NOTIFICATION_CENTER_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW NOTIFICATION CENTER SCREEN DETAIL
 # ============================================================
@@ -8436,6 +9884,9 @@ ui_rules:
 - high urgency items must be visually stronger
 - source detail opening must be one step away
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900029_PROJECT_FLOW_NOTIFICATION_CENTER_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900030_PROJECT_FLOW_TEMPLATE_MANAGEMENT_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE MANAGEMENT SCREEN DETAIL
 # ============================================================
@@ -8483,6 +9934,9 @@ actions:
 - deactivate template
 - duplicate template
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900030_PROJECT_FLOW_TEMPLATE_MANAGEMENT_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900031_PROJECT_FLOW_WBS_PROPOSAL_WIZARD_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW WBS PROPOSAL WIZARD SCREEN DETAIL
 # ============================================================
@@ -8522,6 +9976,9 @@ ui_rules:
 - wizard should remain short and understandable
 - only proposal-driving inputs should be required
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900031_PROJECT_FLOW_WBS_PROPOSAL_WIZARD_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900032_PROJECT_FLOW_TEMPLATE_TASK_EDITOR_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE TASK EDITOR SCREEN DETAIL
 # ============================================================
@@ -8555,6 +10012,9 @@ ui_rules:
 - dependency relation should be easy to understand
 - relative offset and duration should be clearly distinguished
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900032_PROJECT_FLOW_TEMPLATE_TASK_EDITOR_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900033_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER FACING SCHEDULE SCREEN DETAIL
 # ============================================================
@@ -8595,6 +10055,9 @@ ui_rules:
 - milestone and phase headings should be visually prominent
 - customer explanation use should be obvious from the screen context
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900033_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900034_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_SCREEN_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER EXPLANATION MATERIAL SCREEN DETAIL
 # ============================================================
@@ -8639,6 +10102,9 @@ ui_rules:
 - external-use context should be visually clear
 - material type switching should be easy
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900034_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900035_PROJECT_FLOW_CUSTOMER_SCHEDULE_MATERIAL_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER SCHEDULE MATERIAL DETAIL
 # ============================================================
@@ -8679,6 +10145,9 @@ export_targets:
 - csv
 - explanation material output
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900035_PROJECT_FLOW_CUSTOMER_SCHEDULE_MATERIAL_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900036_PROJECT_FLOW_PROGRESS_REPORT_MATERIAL_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW PROGRESS REPORT MATERIAL DETAIL
 # ============================================================
@@ -8716,6 +10185,9 @@ editing_points:
 - next actions
 - customer-facing phrasing
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900036_PROJECT_FLOW_PROGRESS_REPORT_MATERIAL_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900037_PROJECT_FLOW_ISSUE_LIST_MATERIAL_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW ISSUE LIST MATERIAL DETAIL
 # ============================================================
@@ -8752,6 +10224,9 @@ editing_points:
 - explanatory notes
 - customer-facing wording for issue title or note
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900037_PROJECT_FLOW_ISSUE_LIST_MATERIAL_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900038_PROJECT_FLOW_RISK_LIST_MATERIAL_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW RISK LIST MATERIAL DETAIL
 # ============================================================
@@ -8789,6 +10264,9 @@ editing_points:
 - mitigation wording
 - customer-facing explanation level
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900038_PROJECT_FLOW_RISK_LIST_MATERIAL_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900039_PROJECT_FLOW_DECISION_NOTE_MATERIAL_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW DECISION NOTE MATERIAL DETAIL
 # ============================================================
@@ -8826,6 +10304,9 @@ editing_points:
 - wording cleanup
 - ordering
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900039_PROJECT_FLOW_DECISION_NOTE_MATERIAL_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900040_PROJECT_FLOW_FOLLOW_UP_ACTION_LIST_MATERIAL_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW FOLLOW UP ACTION LIST MATERIAL DETAIL
 # ============================================================
@@ -8866,6 +10347,9 @@ editing_points:
 - customer wording
 - grouping by owner or date
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900040_PROJECT_FLOW_FOLLOW_UP_ACTION_LIST_MATERIAL_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900041_PROJECT_FLOW_WIREFRAME_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW WIREFRAME OVERVIEW
 # ============================================================
@@ -8893,6 +10377,9 @@ layout_rules:
 - action groups stay consistent across devices
 - ERP-owned fields stay visually read-only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900041_PROJECT_FLOW_WIREFRAME_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900042_PROJECT_FLOW_DASHBOARD_WIREFRAME.md -->
 # ============================================================
 # PROJECT FLOW DASHBOARD WIREFRAME
 # ============================================================
@@ -8943,6 +10430,9 @@ pc_layout:
    - sync summary
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900042_PROJECT_FLOW_DASHBOARD_WIREFRAME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900043_PROJECT_FLOW_PROJECT_LIST_WIREFRAME.md -->
 # ============================================================
 # PROJECT FLOW PROJECT LIST WIREFRAME
 # ============================================================
@@ -8992,6 +10482,9 @@ pc_layout:
    - sync state
 4. bulk action row
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900043_PROJECT_FLOW_PROJECT_LIST_WIREFRAME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900044_PROJECT_FLOW_PROJECT_DETAIL_WIREFRAME.md -->
 # ============================================================
 # PROJECT FLOW PROJECT DETAIL WIREFRAME
 # ============================================================
@@ -9044,6 +10537,9 @@ pc_layout:
    - selected tab content
    - optional right side quick summary panel
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900044_PROJECT_FLOW_PROJECT_DETAIL_WIREFRAME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900045_PROJECT_FLOW_TASK_WIREFRAME.md -->
 # ============================================================
 # PROJECT FLOW TASK WIREFRAME
 # ============================================================
@@ -9088,6 +10584,9 @@ task_detail_pc_layout:
 2. right side summary column
 3. action row at top
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900045_PROJECT_FLOW_TASK_WIREFRAME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900046_PROJECT_FLOW_TIMELINE_GANTT_WIREFRAME.md -->
 # ============================================================
 # PROJECT FLOW TIMELINE GANTT WIREFRAME
 # ============================================================
@@ -9133,6 +10632,9 @@ proposal_preview_layout:
 - editable adjustment area
 - confirm/discard actions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900046_PROJECT_FLOW_TIMELINE_GANTT_WIREFRAME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900047_PROJECT_FLOW_EXPORT_REPORT_WIREFRAME.md -->
 # ============================================================
 # PROJECT FLOW EXPORT REPORT WIREFRAME
 # ============================================================
@@ -9174,6 +10676,9 @@ customer_material_layout:
 3. wording adjustment area
 4. export actions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900047_PROJECT_FLOW_EXPORT_REPORT_WIREFRAME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900048_PROJECT_FLOW_FORM_MEMO_COMMENT_WIREFRAME.md -->
 # ============================================================
 # PROJECT FLOW FORM MEMO COMMENT WIREFRAME
 # ============================================================
@@ -9225,6 +10730,9 @@ notification_center_layout:
 3. acknowledgment action
 4. source detail link
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900048_PROJECT_FLOW_FORM_MEMO_COMMENT_WIREFRAME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900049_PROJECT_FLOW_CUSTOMER_MATERIAL_LAYOUT_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER MATERIAL LAYOUT OVERVIEW
 # ============================================================
@@ -9261,6 +10769,9 @@ common_header_fields:
 - review_state
 - last_updated_at
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900049_PROJECT_FLOW_CUSTOMER_MATERIAL_LAYOUT_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900050_PROJECT_FLOW_CUSTOMER_SCHEDULE_LAYOUT_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER SCHEDULE LAYOUT DETAIL
 # ============================================================
@@ -9304,6 +10815,9 @@ May show schedule preview and wording editor side by side.
 smartphone_note:
 Uses stacked blocks with milestone summary above preview.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900050_PROJECT_FLOW_CUSTOMER_SCHEDULE_LAYOUT_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900051_PROJECT_FLOW_PROGRESS_REPORT_LAYOUT_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW PROGRESS REPORT LAYOUT DETAIL
 # ============================================================
@@ -9343,6 +10857,9 @@ Quantitative summary may sit beside narrative block.
 smartphone_note:
 Quantitative summary appears before narrative block.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900051_PROJECT_FLOW_PROGRESS_REPORT_LAYOUT_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900052_PROJECT_FLOW_ISSUE_LIST_LAYOUT_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW ISSUE LIST LAYOUT DETAIL
 # ============================================================
@@ -9381,6 +10898,9 @@ Uses wider issue table.
 smartphone_note:
 Uses stacked issue cards with severity emphasis.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900052_PROJECT_FLOW_ISSUE_LIST_LAYOUT_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900053_PROJECT_FLOW_RISK_LIST_LAYOUT_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW RISK LIST LAYOUT DETAIL
 # ============================================================
@@ -9420,6 +10940,9 @@ Uses dense risk table with mitigation column.
 smartphone_note:
 Uses stacked risk cards with score emphasis.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900053_PROJECT_FLOW_RISK_LIST_LAYOUT_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900054_PROJECT_FLOW_DECISION_NOTE_LAYOUT_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW DECISION NOTE LAYOUT DETAIL
 # ============================================================
@@ -9454,6 +10977,9 @@ May show selected decision detail beside decision list.
 smartphone_note:
 Uses stacked decision cards with expandable body.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900054_PROJECT_FLOW_DECISION_NOTE_LAYOUT_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900055_PROJECT_FLOW_FOLLOW_UP_ACTION_LAYOUT_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW FOLLOW UP ACTION LAYOUT DETAIL
 # ============================================================
@@ -9490,6 +11016,9 @@ Supports grouping controls and wider table.
 smartphone_note:
 Uses grouped stacked cards.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900055_PROJECT_FLOW_FOLLOW_UP_ACTION_LAYOUT_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900056_PROJECT_FLOW_CUSTOMER_PROVISION_SCREEN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER PROVISION SCREEN NOTE
 # ============================================================
@@ -9522,6 +11051,9 @@ ui_rules:
 - support expectation should remain realistic
 - no misleading heavy-support impression should be created
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900056_PROJECT_FLOW_CUSTOMER_PROVISION_SCREEN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900058_PROJECT_FLOW_MULTILINGUAL_INTERFACE_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL INTERFACE POLICY
 # ============================================================
@@ -9554,6 +11086,9 @@ device_rules:
 - smartphone and pc must expose the same language capability
 - only layout differs by device, not language support
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900058_PROJECT_FLOW_MULTILINGUAL_INTERFACE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900059_PROJECT_FLOW_MULTILINGUAL_CUSTOMER_OUTPUT_POLICY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL CUSTOMER OUTPUT POLICY
 # ============================================================
@@ -9583,6 +11118,9 @@ output_rules:
 - wording overrides should remain possible after localized generation
 - review before external use remains mandatory
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900059_PROJECT_FLOW_MULTILINGUAL_CUSTOMER_OUTPUT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900060_PROJECT_FLOW_LANGUAGE_SETTINGS_SCREEN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LANGUAGE SETTINGS SCREEN NOTE
 # ============================================================
@@ -9614,6 +11152,9 @@ ui_rules:
 - language selection should be easy to find
 - changing language should not imply business data conversion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900060_PROJECT_FLOW_LANGUAGE_SETTINGS_SCREEN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900061_PROJECT_FLOW_MULTILINGUAL_EXPORT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL EXPORT NOTE
 # ============================================================
@@ -9639,6 +11180,9 @@ screen_targets:
 - customer_explanation_material
 - one_page_summary
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900061_PROJECT_FLOW_MULTILINGUAL_EXPORT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900062_PROJECT_FLOW_MULTILINGUAL_CUSTOMER_MATERIAL_LAYOUT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL CUSTOMER MATERIAL LAYOUT NOTE
 # ============================================================
@@ -9673,6 +11217,9 @@ May show preview and wording editor side by side.
 smartphone_note:
 Uses stacked preview and wording editor blocks.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900062_PROJECT_FLOW_MULTILINGUAL_CUSTOMER_MATERIAL_LAYOUT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900063_PROJECT_FLOW_MULTILINGUAL_EXPORT_HEADER_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL EXPORT HEADER NOTE
 # ============================================================
@@ -9698,6 +11245,9 @@ ui_rules:
 - export header wording should stay concise and readable
 - source data field names are not shown to end users unless explicitly needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900063_PROJECT_FLOW_MULTILINGUAL_EXPORT_HEADER_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900064_PROJECT_FLOW_DEVICE_FORM_FACTOR_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DEVICE FORM FACTOR NOTE
 # ============================================================
@@ -9742,7 +11292,65 @@ Same action set,
 same business capability,
 different presentation only.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/0900064_PROJECT_FLOW_DEVICE_FORM_FACTOR_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/090330_PROJECTFLOW_PROJECT_COCKPIT_INTERFACE.md -->
+# ============================================================
+# PROJECTFLOW PROJECT COCKPIT INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: ProjectFlow
+directory: 090.interface
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: project-cockpit-interface
+
+purpose:
+Makes the project cockpit screen hierarchy explicit.
+
+screen_goal:
+- show what threatens delivery right now
+- unify blocked items, at-risk items, upcoming milestones, and escalation needs
+- provide one management-oriented review pass before diving into detail screens
+
+screen_sections:
+- project summary header
+- blocked items stack
+- at-risk items stack
+- upcoming milestones panel
+- owner escalation panel
+- quick jump to dependency or risk review
+
+item_card_fields:
+- item title
+- short summary
+- state badge
+- due or milestone time
+- owner badge
+- risk badge
+- quick action buttons
+
+primary_actions:
+- open item detail
+- open milestone detail
+- open dependency review
+- escalate owner
+- mark reviewed
+- open full project board
+
+interface_rules:
+- blocked items must be separated visually from at-risk items
+- upcoming milestones must stay visible above long detail lists
+- the cockpit must be scannable in one vertical pass
+- detail editing belongs elsewhere; cockpit is a control surface first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.interface/090330_PROJECTFLOW_PROJECT_COCKPIT_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900000_PROJECT_FLOW_META_INDEX.md -->
 # ============================================================
 # PROJECT FLOW META INDEX
 # ============================================================
@@ -10024,6 +11632,9 @@ files:
 - 0900270_PROJECT_FLOW_NEXT_CHAT_ULTRA_SHORT_NOTE.md
 - 0900271_PROJECT_FLOW_SCOPE_BOUNDARY_AFTER_COMPLETION_NOTE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900000_PROJECT_FLOW_META_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900001_PROJECT_FLOW_META_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW META OVERVIEW
 # ============================================================
@@ -10037,6 +11648,9 @@ prepared_by: Zero
 purpose:
 Implementation readiness and review notes.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900001_PROJECT_FLOW_META_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900002_PROJECT_FLOW_IMPLEMENTATION_READINESS_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION READINESS CHECKLIST
 # ============================================================
@@ -10060,6 +11674,9 @@ checklist:
 - implementation module split pending
 - test design pending
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900002_PROJECT_FLOW_IMPLEMENTATION_READINESS_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900003_PROJECT_FLOW_HANDOFF_NOTE.md -->
 # ============================================================
 # PROJECT FLOW HANDOFF NOTE
 # ============================================================
@@ -10350,6 +11967,9 @@ such as:
 - sync/error UI wire detail
 - export/report template detail
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900003_PROJECT_FLOW_HANDOFF_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900004_PROJECT_FLOW_DESIGN_ALIGNMENT_REVIEW_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DESIGN ALIGNMENT REVIEW NOTE
 # ============================================================
@@ -10380,6 +12000,9 @@ remaining_review_points:
 - whether automation notification history needs a dedicated logical model later
 - whether gantt and timeline require separate export semantics later
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900004_PROJECT_FLOW_DESIGN_ALIGNMENT_REVIEW_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900005_PROJECT_FLOW_OPEN_DECISION_LOG.md -->
 # ============================================================
 # PROJECT FLOW OPEN DECISION LOG
 # ============================================================
@@ -10407,6 +12030,9 @@ note:
 These are open design decisions only.
 They are not implementation start signals.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900005_PROJECT_FLOW_OPEN_DECISION_LOG.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900006_PROJECT_FLOW_FINAL_REVIEW_SHEET.md -->
 # ============================================================
 # PROJECT FLOW FINAL REVIEW SHEET
 # ============================================================
@@ -10562,6 +12188,9 @@ review_result_fields:
 - contradiction_summary
 - optional_next_design_focus
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900006_PROJECT_FLOW_FINAL_REVIEW_SHEET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900007_PROJECT_FLOW_FIXED_AND_OPEN_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW FIXED AND OPEN SUMMARY
 # ============================================================
@@ -10673,6 +12302,9 @@ important_distinctions:
 - form input != separate truth domain
 - automation != hidden workflow engine
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900007_PROJECT_FLOW_FIXED_AND_OPEN_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900008_PROJECT_FLOW_PHASE_BOUNDARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW PHASE BOUNDARY NOTE
 # ============================================================
@@ -10709,6 +12341,9 @@ not_yet_started:
 - production integration
 - operational rollout
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900008_PROJECT_FLOW_PHASE_BOUNDARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900009_PROJECT_FLOW_CUSTOMER_PROVISION_SUMMARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER PROVISION SUMMARY NOTE
 # ============================================================
@@ -10731,6 +12366,9 @@ summary:
 - support is minimal by design
 - customer explanation materials are part of core value
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900009_PROJECT_FLOW_CUSTOMER_PROVISION_SUMMARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900011_PROJECT_FLOW_MULTILINGUAL_SCOPE_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL SCOPE SUMMARY
 # ============================================================
@@ -10751,6 +12389,9 @@ summary:
   and one-page summary are in multilingual scope
 - fallback behavior is defined
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900011_PROJECT_FLOW_MULTILINGUAL_SCOPE_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900012_PROJECT_FLOW_MULTILINGUAL_OUTPUT_SCOPE_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL OUTPUT SCOPE SUMMARY
 # ============================================================
@@ -10771,6 +12412,9 @@ summary:
 - export headers are localized from language-neutral field ids
 - one output should remain one locale consistently
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900012_PROJECT_FLOW_MULTILINGUAL_OUTPUT_SCOPE_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900013_PROJECT_FLOW_MULTILINGUAL_TERM_DICTIONARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL TERM DICTIONARY NOTE
 # ============================================================
@@ -10842,6 +12486,9 @@ confirmed:
 - ja: 確定
 - en: Confirmed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900013_PROJECT_FLOW_MULTILINGUAL_TERM_DICTIONARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900014_PROJECT_FLOW_BILINGUAL_LABEL_CATALOG_NOTE.md -->
 # ============================================================
 # PROJECT FLOW BILINGUAL LABEL CATALOG NOTE
 # ============================================================
@@ -11196,6 +12843,9 @@ differentiation_summary:
 - ja: 特徴
 - en: Differentiation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900014_PROJECT_FLOW_BILINGUAL_LABEL_CATALOG_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900015_PROJECT_FLOW_MULTILINGUAL_FINAL_SUMMARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL FINAL SUMMARY NOTE
 # ============================================================
@@ -11226,6 +12876,9 @@ important_distinctions:
 - reviewed and approved stay distinct in both languages
 - read-only wording stays understandable in both languages
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900015_PROJECT_FLOW_MULTILINGUAL_FINAL_SUMMARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900016_PROJECT_FLOW_FINAL_HANDOFF_INTEGRATED_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW FINAL HANDOFF INTEGRATED SUMMARY
 # ============================================================
@@ -11448,6 +13101,9 @@ then continue with either:
 or
 - implementation-start planning in a separate phase
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900016_PROJECT_FLOW_FINAL_HANDOFF_INTEGRATED_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900017_PROJECT_FLOW_PRE_CLOSURE_REVIEW_NOTE.md -->
 # ============================================================
 # PROJECT FLOW PRE CLOSURE REVIEW NOTE
 # ============================================================
@@ -11485,6 +13141,9 @@ ProjectFlow design should become easier to hand off,
 review,
 and continue in a later phase.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900017_PROJECT_FLOW_PRE_CLOSURE_REVIEW_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900018_PROJECT_FLOW_CANONICAL_CLOSURE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CANONICAL CLOSURE CHECKLIST
 # ============================================================
@@ -11538,6 +13197,9 @@ meta_and_handoff:
 - [ ] phase boundary note exists
 - [ ] final review sheet exists
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900018_PROJECT_FLOW_CANONICAL_CLOSURE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900019_PROJECT_FLOW_CLOSURE_SUMMARY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE SUMMARY TEMPLATE
 # ============================================================
@@ -11566,6 +13228,9 @@ note:
 This is a template only.
 It does not declare closure by itself.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900019_PROJECT_FLOW_CLOSURE_SUMMARY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900020_PROJECT_FLOW_NEXT_PHASE_DECISION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE DECISION NOTE
 # ============================================================
@@ -11594,6 +13259,9 @@ Use current design set as stable input for either:
 or
 - separately governed implementation-start planning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900020_PROJECT_FLOW_NEXT_PHASE_DECISION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900021_PROJECT_FLOW_DEVICE_SUPPORT_SUMMARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DEVICE SUPPORT SUMMARY NOTE
 # ============================================================
@@ -11612,6 +13280,9 @@ summary:
 - all supported device types keep the same functional capability
 - only layout and interaction optimization differ by device type
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900021_PROJECT_FLOW_DEVICE_SUPPORT_SUMMARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900022_PROJECT_FLOW_DEVICE_PARITY_FINAL_SUMMARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DEVICE PARITY FINAL SUMMARY NOTE
 # ============================================================
@@ -11638,6 +13309,9 @@ fixed_summary:
 - read-only behavior applies across all supported device types
 - customer-facing materials are accessible across all supported device types
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900022_PROJECT_FLOW_DEVICE_PARITY_FINAL_SUMMARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900023_PROJECT_FLOW_CROSS_REFERENCE_MATRIX_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CROSS REFERENCE MATRIX NOTE
 # ============================================================
@@ -11830,6 +13504,9 @@ review_required_scope_applies_to:
 - follow_up_action_list
 - one-page summary when externally used
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900023_PROJECT_FLOW_CROSS_REFERENCE_MATRIX_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900024_PROJECT_FLOW_DESIGN_STABILIZATION_REPORT.md -->
 # ============================================================
 # PROJECT FLOW DESIGN STABILIZATION REPORT
 # ============================================================
@@ -11887,6 +13564,9 @@ This design set is suitable as:
 - implementation-start planning input in a separate phase
 - customer/internal explanation reference
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900024_PROJECT_FLOW_DESIGN_STABILIZATION_REPORT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900025_PROJECT_FLOW_PHASE_GATE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW PHASE GATE NOTE
 # ============================================================
@@ -11916,6 +13596,9 @@ next_gate_options:
 - implementation_start_planning_gate
 - common_component_registration_gate in separate chat
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900025_PROJECT_FLOW_PHASE_GATE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900026_PROJECT_FLOW_READY_FOR_NEXT_CHAT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW READY FOR NEXT CHAT NOTE
 # ============================================================
@@ -11954,6 +13637,9 @@ next_chat_may_focus_on:
 - DB-owner review alignment
 - common component registration in separate chat
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900026_PROJECT_FLOW_READY_FOR_NEXT_CHAT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900027_PROJECT_FLOW_FINAL_CANONICAL_STATUS_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL CANONICAL STATUS NOTE
 # ============================================================
@@ -11977,6 +13663,9 @@ canonical_status_summary:
 important_boundary:
 Design stability does not mean implementation start.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900027_PROJECT_FLOW_FINAL_CANONICAL_STATUS_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900028_PROJECT_FLOW_PRE_CLOSURE_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW PRE CLOSURE SUMMARY
 # ============================================================
@@ -12018,6 +13707,9 @@ still_open_but_intentional:
 - advanced business-day rule sophistication
 - DB hardening detail review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900028_PROJECT_FLOW_PRE_CLOSURE_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900029_PROJECT_FLOW_CLOSURE_DECISION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE DECISION TEMPLATE
 # ============================================================
@@ -12051,6 +13743,9 @@ hold_condition_examples:
 - major missing areas remain
 - key boundary wording is still unstable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900029_PROJECT_FLOW_CLOSURE_DECISION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900030_PROJECT_FLOW_MINIMAL_NEXT_PHASE_OPTIONS.md -->
 # ============================================================
 # PROJECT FLOW MINIMAL NEXT PHASE OPTIONS
 # ============================================================
@@ -12076,6 +13771,9 @@ guidance:
 Do not mix implementation execution
 into the current design-only phase without an explicit phase change.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900030_PROJECT_FLOW_MINIMAL_NEXT_PHASE_OPTIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900031_PROJECT_FLOW_CLOSURE_REVIEW_EXECUTION_SHEET.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE REVIEW EXECUTION SHEET
 # ============================================================
@@ -12180,6 +13878,9 @@ final_decision_fields:
 - remaining_gaps
 - next_phase_option
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900031_PROJECT_FLOW_CLOSURE_REVIEW_EXECUTION_SHEET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900032_PROJECT_FLOW_CLOSURE_READY_SNAPSHOT.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE READY SNAPSHOT
 # ============================================================
@@ -12207,6 +13908,9 @@ interpretation:
 ProjectFlow is broadly ready for closure review,
 but closure is not declared automatically by this note.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900032_PROJECT_FLOW_CLOSURE_READY_SNAPSHOT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900033_PROJECT_FLOW_CLOSURE_RESULT_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE RESULT RECORD TEMPLATE
 # ============================================================
@@ -12246,6 +13950,9 @@ hold_example_meaning:
 ProjectFlow still needs additional design stabilization
 before closure is declared.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900033_PROJECT_FLOW_CLOSURE_RESULT_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900034_PROJECT_FLOW_CLOSURE_RESULT_SUMMARY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE RESULT SUMMARY TEMPLATE
 # ============================================================
@@ -12267,6 +13974,9 @@ summary_fields:
 - key_open_points
 - recommended_next_phase
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900034_PROJECT_FLOW_CLOSURE_RESULT_SUMMARY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900035_PROJECT_FLOW_HOLD_REASON_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW HOLD REASON TEMPLATE
 # ============================================================
@@ -12288,6 +13998,9 @@ hold_reason_fields:
 - recommended_fix_focus
 - re_review_condition
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900035_PROJECT_FLOW_HOLD_REASON_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900036_PROJECT_FLOW_CLOSURE_PASS_GUIDE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE PASS GUIDE NOTE
 # ============================================================
@@ -12322,6 +14035,9 @@ recommended_pass_summary_shape:
 - handoff-capable
 - suitable for later implementation-planning phase
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900036_PROJECT_FLOW_CLOSURE_PASS_GUIDE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900037_PROJECT_FLOW_CLOSURE_HOLD_GUIDE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE HOLD GUIDE NOTE
 # ============================================================
@@ -12350,6 +14066,9 @@ recommended_hold_focus:
 - restabilize wording third
 - rerun closure review after fixes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900037_PROJECT_FLOW_CLOSURE_HOLD_GUIDE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900038_PROJECT_FLOW_CLOSURE_DECISION_QUICK_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE DECISION QUICK NOTE
 # ============================================================
@@ -12378,6 +14097,9 @@ If ProjectFlow still:
 - or has major missing areas,
 then HOLD is reasonable.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900038_PROJECT_FLOW_CLOSURE_DECISION_QUICK_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900039_PROJECT_FLOW_CURRENT_CLOSURE_CANDIDATE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CURRENT CLOSURE CANDIDATE NOTE
 # ============================================================
@@ -12417,6 +14139,9 @@ remaining_open_items_that_do_not_block_candidate_status:
 - advanced business-day rule sophistication
 - DB hardening detail review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900039_PROJECT_FLOW_CURRENT_CLOSURE_CANDIDATE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900040_PROJECT_FLOW_PASS_CANDIDATE_SUMMARY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW PASS CANDIDATE SUMMARY TEMPLATE
 # ============================================================
@@ -12437,6 +14162,9 @@ template_fields:
 - non_blocking_open_items
 - final_review_needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900040_PROJECT_FLOW_PASS_CANDIDATE_SUMMARY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900041_PROJECT_FLOW_CLOSURE_DECISION.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE DECISION
 # ============================================================
@@ -12534,6 +14262,9 @@ final_note:
 ProjectFlow is closed as a design-phase canonical set,
 not as an implementation-complete product.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900041_PROJECT_FLOW_CLOSURE_DECISION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900042_PROJECT_FLOW_NEXT_PHASE_START_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE START NOTE
 # ============================================================
@@ -12583,6 +14314,9 @@ entry_documents:
 - 0900007_PROJECT_FLOW_FIXED_AND_OPEN_SUMMARY.md
 - 1200031_PROJECT_FLOW_IMPLEMENTATION_READINESS_MATRIX.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900042_PROJECT_FLOW_NEXT_PHASE_START_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900043_PROJECT_FLOW_RESTART_HANDOFF_NOTE.md -->
 # ============================================================
 # PROJECT FLOW RESTART HANDOFF NOTE
 # ============================================================
@@ -12643,6 +14377,9 @@ Continue from stable design assumptions first.
 Do not reopen core identity or boundary items
 unless a clear reason is found.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900043_PROJECT_FLOW_RESTART_HANDOFF_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900044_PROJECT_FLOW_RESTART_SHORT_REFERENCE.md -->
 # ============================================================
 # PROJECT FLOW RESTART SHORT REFERENCE
 # ============================================================
@@ -12667,6 +14404,9 @@ short_reference:
 - initial_languages: Japanese / English
 - customer_materials: 6 standard outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900044_PROJECT_FLOW_RESTART_SHORT_REFERENCE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900045_PROJECT_FLOW_CANONICAL_REFERENCE_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW CANONICAL REFERENCE SUMMARY
 # ============================================================
@@ -12693,6 +14433,9 @@ important_local_rule:
 ProjectFlow may reference these sources for alignment,
 but should not silently duplicate or replace their ownership.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900045_PROJECT_FLOW_CANONICAL_REFERENCE_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900046_PROJECT_FLOW_CANONICAL_PRIORITY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW CANONICAL PRIORITY SUMMARY
 # ============================================================
@@ -12710,6 +14453,9 @@ summary:
 - ProjectFlow does not own application common component canon by itself
 - ProjectFlow owns only its application-local additive scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900046_PROJECT_FLOW_CANONICAL_PRIORITY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900047_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW BUSINESSOS DEPENDENCY SUMMARY
 # ============================================================
@@ -12726,6 +14472,9 @@ summary:
 - sync boundary and ERP mediation are the main BusinessOS dependency points
 - local operational features remain application-owned
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900047_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900048_PROJECT_FLOW_ERP_DEPENDENCY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW ERP DEPENDENCY SUMMARY
 # ============================================================
@@ -12742,6 +14491,9 @@ summary:
 - ERP access is always mediated through BusinessOS
 - local customer-facing outputs remain ProjectFlow-owned composition
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900048_PROJECT_FLOW_ERP_DEPENDENCY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900049_PROJECT_FLOW_COMMON_COMPONENT_DEPENDENCY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT DEPENDENCY SUMMARY
 # ============================================================
@@ -12758,6 +14510,9 @@ summary:
 - ProjectFlow should not locally claim ownership of shared component canon
 - local additive behavior remains application-scoped until separately promoted
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900049_PROJECT_FLOW_COMMON_COMPONENT_DEPENDENCY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900050_PROJECT_FLOW_LOCAL_OWNERSHIP_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW LOCAL OWNERSHIP SUMMARY
 # ============================================================
@@ -12777,6 +14532,9 @@ summary:
 - ProjectFlow does not own shared common component canon
 - ProjectFlow does not own BusinessOS mediation behavior
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900050_PROJECT_FLOW_LOCAL_OWNERSHIP_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900051_PROJECT_FLOW_DATA_OWNERSHIP_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW DATA OWNERSHIP SUMMARY
 # ============================================================
@@ -12795,6 +14553,9 @@ summary:
 - common components do not own business fields
 - localization artifacts do not own business fields
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900051_PROJECT_FLOW_DATA_OWNERSHIP_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900052_PROJECT_FLOW_EDITABILITY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW EDITABILITY SUMMARY
 # ============================================================
@@ -12812,6 +14573,9 @@ summary:
 - mediated sync fields are status-only
 - generated drafts and proposals become editable through controlled adjustment flows
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900052_PROJECT_FLOW_EDITABILITY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900053_PROJECT_FLOW_ACTION_AUTHORITY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW ACTION AUTHORITY SUMMARY
 # ============================================================
@@ -12829,6 +14593,9 @@ summary:
 - customer-facing exports remain review-aware
 - device type does not change action authority
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900053_PROJECT_FLOW_ACTION_AUTHORITY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900054_PROJECT_FLOW_STATE_TRANSITION_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW STATE TRANSITION SUMMARY
 # ============================================================
@@ -12846,6 +14613,9 @@ summary:
 - entitlement state is distinct from business item state
 - external-use export does not replace review or approval semantics
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900054_PROJECT_FLOW_STATE_TRANSITION_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900055_PROJECT_FLOW_AUDITABILITY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW AUDITABILITY SUMMARY
 # ============================================================
@@ -12862,6 +14632,9 @@ summary:
 - review progression and export execution should remain distinguishable
 - sync retry and sync failure context should remain inspectable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900055_PROJECT_FLOW_AUDITABILITY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900056_PROJECT_FLOW_UPLOADED_REFERENCE_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED REFERENCE SUMMARY
 # ============================================================
@@ -12899,6 +14672,9 @@ low_priority_for_current_scope:
 - persona_schema_table_column_summary.txt
 - persona_schema_table_column_full.txt
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900056_PROJECT_FLOW_UPLOADED_REFERENCE_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900057_PROJECT_FLOW_REFERENCE_PRIORITY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE PRIORITY SUMMARY
 # ============================================================
@@ -12916,6 +14692,9 @@ summary:
 - schema confirmation should start from schema summaries before full dumps
 - ProjectFlow-local behavior questions should start from ProjectFlow local ownership notes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900057_PROJECT_FLOW_REFERENCE_PRIORITY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900058_PROJECT_FLOW_QUESTION_TO_REFERENCE_INDEX.md -->
 # ============================================================
 # PROJECT FLOW QUESTION TO REFERENCE INDEX
 # ============================================================
@@ -12997,6 +14776,9 @@ is_projectflow_closed_as_design:
 - 0900024_PROJECT_FLOW_DESIGN_STABILIZATION_REPORT.md
 - 0900027_PROJECT_FLOW_FINAL_CANONICAL_STATUS_NOTE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900058_PROJECT_FLOW_QUESTION_TO_REFERENCE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900059_PROJECT_FLOW_UPLOADED_FILE_REGISTER_NOTE.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED FILE REGISTER NOTE
 # ============================================================
@@ -13041,6 +14823,9 @@ This register records filenames only.
 Ownership and priority interpretation remain defined
 in the reference priority and canonical priority notes.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900059_PROJECT_FLOW_UPLOADED_FILE_REGISTER_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900060_PROJECT_FLOW_FILE_TO_CONCERN_INDEX.md -->
 # ============================================================
 # PROJECT FLOW FILE TO CONCERN INDEX
 # ============================================================
@@ -13117,6 +14902,9 @@ persona_schema_table_column_summary.txt:
 persona_schema_table_column_full.txt:
 - persona schema deep check only if scope expands
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900060_PROJECT_FLOW_FILE_TO_CONCERN_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900061_PROJECT_FLOW_REFERENCE_UPDATE_RULES.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE UPDATE RULES
 # ============================================================
@@ -13149,6 +14937,9 @@ review_triggers:
 - foundation canonical replaced
 - schema summary replaced
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900061_PROJECT_FLOW_REFERENCE_UPDATE_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900062_PROJECT_FLOW_REFERENCE_CHANGE_LOG_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CHANGE LOG TEMPLATE
 # ============================================================
@@ -13170,6 +14961,9 @@ template_fields:
 - priority_impact: none_low_medium_high
 - followup_needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900062_PROJECT_FLOW_REFERENCE_CHANGE_LOG_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900063_PROJECT_FLOW_REFERENCE_CONFLICT_RULES.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT RULES
 # ============================================================
@@ -13201,6 +14995,9 @@ local_followup_when_conflict_found:
 - keep local app-owned behavior only where ownership allows
 - avoid silent reinterpretation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900063_PROJECT_FLOW_REFERENCE_CONFLICT_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900064_PROJECT_FLOW_REFERENCE_CONFLICT_LOG_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT LOG TEMPLATE
 # ============================================================
@@ -13223,6 +15020,9 @@ template_fields:
 - local_note_update_needed: yes_no
 - followup_action
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900064_PROJECT_FLOW_REFERENCE_CONFLICT_LOG_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900065_PROJECT_FLOW_REFERENCE_CONFLICT_STOP_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT STOP SUMMARY
 # ============================================================
@@ -13239,6 +15039,9 @@ summary:
 - unresolved BusinessOS mediation conflict should block integration planning
 - conflict logging and summary cleanup may continue
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900065_PROJECT_FLOW_REFERENCE_CONFLICT_STOP_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900066_PROJECT_FLOW_IMPLEMENTATION_PREP_SCOPE_SPLIT_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION PREP SCOPE SPLIT SUMMARY
 # ============================================================
@@ -13267,6 +15070,9 @@ not_safe_to_continue_without_resolution:
 - unresolved field-level mapping conflicts
 - any direct ERP integration assumption
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900066_PROJECT_FLOW_IMPLEMENTATION_PREP_SCOPE_SPLIT_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900067_PROJECT_FLOW_NEXT_PHASE_PRIORITY_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE PRIORITY SUMMARY
 # ============================================================
@@ -13296,6 +15102,9 @@ not_recommended_early:
 - local reinterpretation of ERP-owned truth
 - local takeover of shared common component ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900067_PROJECT_FLOW_NEXT_PHASE_PRIORITY_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900068_PROJECT_FLOW_NEXT_PHASE_EXECUTION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE EXECUTION TEMPLATE
 # ============================================================
@@ -13345,6 +15154,9 @@ blocked_items_must_not_be_pulled_forward:
 - unresolved mediation conflict work
 - shared common component reownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900068_PROJECT_FLOW_NEXT_PHASE_EXECUTION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900069_PROJECT_FLOW_NEXT_PHASE_WORK_PACKAGE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE WORK PACKAGE TEMPLATE
 # ============================================================
@@ -13381,6 +15193,9 @@ recommended_package_order:
 7. erp_field_mapping_finalization
 8. db_hardening_finalization
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900069_PROJECT_FLOW_NEXT_PHASE_WORK_PACKAGE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900070_PROJECT_FLOW_SAFE_WORK_PACKAGE_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW SAFE WORK PACKAGE STARTER SET
 # ============================================================
@@ -13437,6 +15252,9 @@ PF-WP-005:
   - 0200035_PROJECT_FLOW_AUDITABILITY_ARCHITECTURE.md
   - 1200056_PROJECT_FLOW_AUDITABILITY_IMPLEMENTATION_NOTE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900070_PROJECT_FLOW_SAFE_WORK_PACKAGE_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900071_PROJECT_FLOW_BOUNDARY_SENSITIVE_WORK_PACKAGE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW BOUNDARY-SENSITIVE WORK PACKAGE TEMPLATE
 # ============================================================
@@ -13470,6 +15288,9 @@ required_rules:
 - do not guess ownership when external canon is unclear
 - record which higher reference was used
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900071_PROJECT_FLOW_BOUNDARY_SENSITIVE_WORK_PACKAGE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900072_PROJECT_FLOW_BLOCKED_WORK_PACKAGE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW BLOCKED WORK PACKAGE TEMPLATE
 # ============================================================
@@ -13501,6 +15322,9 @@ required_rules:
 - only conflict logging and summary cleanup may continue
 - reopen condition must be explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900072_PROJECT_FLOW_BLOCKED_WORK_PACKAGE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900073_PROJECT_FLOW_BOUNDARY_AND_BLOCKED_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW BOUNDARY AND BLOCKED STARTER SET
 # ============================================================
@@ -13573,6 +15397,9 @@ PF-WP-X002:
 - reopen_condition:
   - separate common component promotion path completed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900073_PROJECT_FLOW_BOUNDARY_AND_BLOCKED_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900074_PROJECT_FLOW_WORK_PACKAGE_GATE_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE GATE REVIEW TEMPLATE
 # ============================================================
@@ -13603,6 +15430,9 @@ gate_rules:
 - boundary_sensitive package may start only when no relevant conflict remains
 - blocked package may not start as active work
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900074_PROJECT_FLOW_WORK_PACKAGE_GATE_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900075_PROJECT_FLOW_GATE_REVIEW_STARTER_RULES.md -->
 # ============================================================
 # PROJECT FLOW GATE REVIEW STARTER RULES
 # ============================================================
@@ -13635,6 +15465,9 @@ for_blocked_packages:
   summary cleanup,
   or reopen-condition maintenance
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900075_PROJECT_FLOW_GATE_REVIEW_STARTER_RULES.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900076_PROJECT_FLOW_WORK_PACKAGE_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -13668,6 +15501,9 @@ recording_rules:
 - paused packages should record pause reason explicitly
 - completed packages should record produced documents explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900076_PROJECT_FLOW_WORK_PACKAGE_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900077_PROJECT_FLOW_WORK_PACKAGE_STATUS_SUMMARY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE STATUS SUMMARY TEMPLATE
 # ============================================================
@@ -13692,6 +15528,9 @@ summary_fields:
 - major_pause_reasons
 - next_recommended_package
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900077_PROJECT_FLOW_WORK_PACKAGE_STATUS_SUMMARY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900078_PROJECT_FLOW_WORK_PACKAGE_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE REOPEN TEMPLATE
 # ============================================================
@@ -13722,6 +15561,9 @@ reopen_rules:
 - paused packages may reopen only after pause reason is re-evaluated
 - reopened work must not skip gate review when conflict-sensitive
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900078_PROJECT_FLOW_WORK_PACKAGE_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900079_PROJECT_FLOW_BLOCKED_TO_REOPEN_FLOW_NOTE.md -->
 # ============================================================
 # PROJECT FLOW BLOCKED TO REOPEN FLOW NOTE
 # ============================================================
@@ -13748,6 +15590,9 @@ important_rules:
 - conflict-sensitive areas require explicit re-check
 - unresolved ownership or mediation conflict keeps package blocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900079_PROJECT_FLOW_BLOCKED_TO_REOPEN_FLOW_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900080_PROJECT_FLOW_EXACT_RESOLUTION_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW EXACT RESOLUTION SUMMARY
 # ============================================================
@@ -13766,6 +15611,9 @@ summary:
 - some implementation-choice items remain open by design,
   but they no longer block broad design understanding
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900080_PROJECT_FLOW_EXACT_RESOLUTION_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900081_PROJECT_FLOW_POST_EXACT_OPEN_ITEMS_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW POST EXACT OPEN ITEMS SUMMARY
 # ============================================================
@@ -13808,6 +15656,9 @@ important_note:
 These items remain open intentionally.
 They are no longer broad design blockers.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900081_PROJECT_FLOW_POST_EXACT_OPEN_ITEMS_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900082_PROJECT_FLOW_POST_EXACT_DECISION_SPLIT.md -->
 # ============================================================
 # PROJECT FLOW POST EXACT DECISION SPLIT
 # ============================================================
@@ -13841,6 +15692,9 @@ should_be_deferred_to_later_sophistication_phase:
 - advanced urgency/scale tuning
 - broader common-component promotion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900082_PROJECT_FLOW_POST_EXACT_DECISION_SPLIT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900085_PROJECT_FLOW_OPEN_ITEMS_CLOSED_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW OPEN ITEMS CLOSED SUMMARY
 # ============================================================
@@ -13874,6 +15728,9 @@ deferred_later_sophistication:
 summary_interpretation:
 Ordinary implementation-planning blockers are now substantially reduced.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900085_PROJECT_FLOW_OPEN_ITEMS_CLOSED_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900086_PROJECT_FLOW_REMAINING_ITEM_FINAL_CLASSIFICATION.md -->
 # ============================================================
 # PROJECT FLOW REMAINING ITEM FINAL CLASSIFICATION
 # ============================================================
@@ -13944,6 +15801,9 @@ or
 or
 - non-blocking cleanup items
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900086_PROJECT_FLOW_REMAINING_ITEM_FINAL_CLASSIFICATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900087_PROJECT_FLOW_DB_OWNER_REVIEW_START_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW START NOTE
 # ============================================================
@@ -13981,6 +15841,9 @@ recommended_entry_documents:
 - 0300022_PROJECT_FLOW_EDITABILITY_MATRIX_NOTE.md
 - 0600014_PROJECT_FLOW_BUSINESSOS_EXACT_PAYLOAD_AND_FIELD_MAPPING.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900087_PROJECT_FLOW_DB_OWNER_REVIEW_START_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900088_PROJECT_FLOW_DB_OWNER_REVIEW_CHECK_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW CHECK TEMPLATE
 # ============================================================
@@ -14012,6 +15875,9 @@ important_rule:
 This template is for DB execution-readiness review,
 not for reopening broad application design.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900088_PROJECT_FLOW_DB_OWNER_REVIEW_CHECK_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900089_PROJECT_FLOW_DB_OWNER_REVIEW_EXECUTION_SHEET.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW EXECUTION SHEET
 # ============================================================
@@ -14066,6 +15932,9 @@ final_fields:
 - next_review_needed: yes_no
 - summary_comment
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900089_PROJECT_FLOW_DB_OWNER_REVIEW_EXECUTION_SHEET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900090_PROJECT_FLOW_DB_OWNER_REVIEW_RESULT_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW RESULT TEMPLATE
 # ============================================================
@@ -14093,6 +15962,9 @@ result_fields:
 - remaining_blockers
 - next_actions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900090_PROJECT_FLOW_DB_OWNER_REVIEW_RESULT_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900091_PROJECT_FLOW_DB_OWNER_REVIEW_HOLD_REASON_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW HOLD REASON TEMPLATE
 # ============================================================
@@ -14116,6 +15988,9 @@ hold_reason_fields:
 - required_followup
 - re_review_condition
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900091_PROJECT_FLOW_DB_OWNER_REVIEW_HOLD_REASON_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900092_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW UNLOCK MATRIX
 # ============================================================
@@ -14156,6 +16031,9 @@ rls_direction:
 important_rule:
 Partial result never unlocks unspecified DB areas automatically.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900092_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900093_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW POST RESULT TEMPLATE
 # ============================================================
@@ -14185,6 +16063,9 @@ result_handling_rules:
 - partial should open only explicitly confirmed areas
 - hold should keep unresolved DB areas blocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900093_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900094_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW POST RESULT STARTER SET
 # ============================================================
@@ -14218,6 +16099,9 @@ hold_case_actions:
 - prepare clarification or follow-up package
 - rerun DB-owner review only after blockers are addressed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900094_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900095_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW REFLECTION TEMPLATE
 # ============================================================
@@ -14251,6 +16135,9 @@ reflection_rules:
 - reflection should update local notes,
   not silently replace external ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900095_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900096_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW REFLECTION STARTER SET
 # ============================================================
@@ -14285,6 +16172,9 @@ rule_of_thumb:
 Only DB-phase interpretation notes should normally change.
 Broad application design should not be reopened.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900096_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900097_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START ENTRY NOTE
 # ============================================================
@@ -14320,6 +16210,9 @@ BusinessOS mediation,
 device scope,
 or multilingual initial scope without explicit reason.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900097_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900098_PROJECT_FLOW_IMPLEMENTATION_START_CHECK_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START CHECK TEMPLATE
 # ============================================================
@@ -14343,6 +16236,9 @@ check_fields:
 - safe_to_begin_implementation_planning: yes_no
 - notes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900098_PROJECT_FLOW_IMPLEMENTATION_START_CHECK_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900099_PROJECT_FLOW_IMPLEMENTATION_START_WORK_PACKAGE_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START WORK PACKAGE STARTER SET
 # ============================================================
@@ -14402,6 +16298,9 @@ PF-IMP-005:
   - 0200027_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_ARCHITECTURE.md
   - 1200048_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_IMPLEMENTATION_NOTE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900099_PROJECT_FLOW_IMPLEMENTATION_START_WORK_PACKAGE_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900100_PROJECT_FLOW_IMPLEMENTATION_START_SEQUENCE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START SEQUENCE TEMPLATE
 # ============================================================
@@ -14429,6 +16328,9 @@ important_rules:
 - do not reopen stable design assumptions
 - keep local and boundary-aware packages distinct
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900100_PROJECT_FLOW_IMPLEMENTATION_START_SEQUENCE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900101_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START DELIVERABLE TEMPLATE
 # ============================================================
@@ -14464,6 +16366,9 @@ deliverable_type_candidates:
 - cache_sync_plan
 - review_note
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900101_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900102_PROJECT_FLOW_IMPLEMENTATION_START_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START COMPLETION MATRIX
 # ============================================================
@@ -14525,6 +16430,9 @@ PF-IMP-005:
   - local-first cache scope is explicit
   - mediated sync visibility behavior is explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900102_PROJECT_FLOW_IMPLEMENTATION_START_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900103_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START DELIVERABLE REVIEW TEMPLATE
 # ============================================================
@@ -14557,6 +16465,9 @@ review_rules:
 - partial means only part of the deliverable is usable
 - hold means the deliverable must not be used as next-step input yet
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900103_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900104_PROJECT_FLOW_IMPLEMENTATION_START_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START APPROVAL TEMPLATE
 # ============================================================
@@ -14586,6 +16497,9 @@ approval_rules:
 - approval does not automatically mean coding start
 - blocked scope must remain explicit after approval review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900104_PROJECT_FLOW_IMPLEMENTATION_START_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900105_PROJECT_FLOW_IMPLEMENTATION_START_REVIEW_AND_APPROVAL_FLOW.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START REVIEW AND APPROVAL FLOW
 # ============================================================
@@ -14613,6 +16527,9 @@ important_rules:
 - partial approval must not be mistaken for full package completion
 - blocked scope must remain explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900105_PROJECT_FLOW_IMPLEMENTATION_START_REVIEW_AND_APPROVAL_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900106_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START EXECUTION LEDGER
 # ============================================================
@@ -14679,6 +16596,9 @@ Boundary-aware packages may appear early in the ledger,
 but they still require conflict-free boundary assumptions
 and any necessary DB-owner review result.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900106_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900107_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_SEQUENCE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START EXECUTION SEQUENCE NOTE
 # ============================================================
@@ -14705,6 +16625,9 @@ not an absolute ban on iterative overlap.
 However,
 overlap should not hide blocked boundary questions.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900107_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_SEQUENCE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900108_PROJECT_FLOW_IMPLEMENTATION_START_DEPENDENCY_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START DEPENDENCY MATRIX
 # ============================================================
@@ -14767,6 +16690,9 @@ PF-IMP-005:
 important_rule:
 A package may start only when its dependency conditions are satisfied.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900108_PROJECT_FLOW_IMPLEMENTATION_START_DEPENDENCY_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900109_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_CONDITION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START ENTRY CONDITION NOTE
 # ============================================================
@@ -14809,6 +16735,9 @@ important_note:
 Conflict-free enough does not mean all DB items are closed.
 It means the package can proceed without violating blocked-area rules.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900109_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_CONDITION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900110_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW OFFICIAL COMMON COMPONENT LEDGER SUMMARY
 # ============================================================
@@ -14825,6 +16754,9 @@ summary:
 - ProjectFlow should consult it before assuming a component is still only local
 - ProjectFlow local additive behavior remains local until separately promoted
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900110_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900111_PROJECT_FLOW_COMMON_COMPONENT_REFERENCE_PRIORITY_UPDATE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT REFERENCE PRIORITY UPDATE
 # ============================================================
@@ -14847,6 +16779,9 @@ implication:
 ProjectFlow should no longer treat unofficial candidate notes
 as primary when the official ledger answers the ownership question.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900111_PROJECT_FLOW_COMMON_COMPONENT_REFERENCE_PRIORITY_UPDATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900112_PROJECT_FLOW_COMMON_COMPONENT_DECISION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT DECISION TEMPLATE
 # ============================================================
@@ -14882,6 +16817,9 @@ decision_rules:
   app-local handling may continue
 - app-local handling does not imply future shared ownership automatically
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900112_PROJECT_FLOW_COMMON_COMPONENT_DECISION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900113_PROJECT_FLOW_COMMON_COMPONENT_DECISION_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT DECISION STARTER SET
 # ============================================================
@@ -14910,6 +16848,9 @@ These decision areas should check
 014_APPLICATION_COMMON_COMPONENT_OFFICIAL_LEDGER.md
 before being treated as purely ProjectFlow-local.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900113_PROJECT_FLOW_COMMON_COMPONENT_DECISION_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900114_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW SHARED COMPONENT ADAPTER TEMPLATE
 # ============================================================
@@ -14940,6 +16881,9 @@ rules:
 - adapter does not rewrite official shared ownership
 - adapter may hide or reshape ProjectFlow-local semantics for shared consumption
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900114_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900115_PROJECT_FLOW_LOCAL_ORCHESTRATION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW LOCAL ORCHESTRATION TEMPLATE
 # ============================================================
@@ -14970,6 +16914,9 @@ rules:
 - local sections are listed explicitly
 - local action routing remains explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900115_PROJECT_FLOW_LOCAL_ORCHESTRATION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900116_PROJECT_FLOW_LOCAL_ORCHESTRATION_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW LOCAL ORCHESTRATION STARTER SET
 # ============================================================
@@ -15053,6 +17000,9 @@ export_report_screen:
   - local edit area placement
   - review-aware export routing
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900116_PROJECT_FLOW_LOCAL_ORCHESTRATION_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900117_PROJECT_FLOW_SCREEN_ORCHESTRATION_DECISION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW SCREEN ORCHESTRATION DECISION TEMPLATE
 # ============================================================
@@ -15083,6 +17033,9 @@ decision_rules:
 - missing shared components should not block local orchestration planning
 - local action routes should remain explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900117_PROJECT_FLOW_SCREEN_ORCHESTRATION_DECISION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900118_PROJECT_FLOW_SCREEN_TO_PACKAGE_MAPPING_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW SCREEN TO PACKAGE MAPPING LEDGER
 # ============================================================
@@ -15147,6 +17100,9 @@ important_rule:
 One screen may depend on multiple planning packages.
 Primary packages define the earliest planning owner.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900118_PROJECT_FLOW_SCREEN_TO_PACKAGE_MAPPING_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900119_PROJECT_FLOW_SCREEN_TO_ORCHESTRATION_PROGRESS_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW SCREEN TO ORCHESTRATION PROGRESS TEMPLATE
 # ============================================================
@@ -15178,6 +17134,9 @@ rules:
 - ready_for_next_package_step requires local structure clarity
 - blocked boundary questions should be recorded explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900119_PROJECT_FLOW_SCREEN_TO_ORCHESTRATION_PROGRESS_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900120_PROJECT_FLOW_DELIVERABLE_DEPENDENCY_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW DELIVERABLE DEPENDENCY LEDGER
 # ============================================================
@@ -15267,6 +17226,9 @@ important_rule:
 A deliverable should not be treated as unlocked
 before its upstream deliverables exist in usable reviewed form.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900120_PROJECT_FLOW_DELIVERABLE_DEPENDENCY_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900121_PROJECT_FLOW_DELIVERABLE_PROGRESS_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW DELIVERABLE PROGRESS TEMPLATE
 # ============================================================
@@ -15295,6 +17257,9 @@ rules:
 - partial review may unlock only explicitly usable next deliverables
 - hold does not unlock downstream deliverables
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900121_PROJECT_FLOW_DELIVERABLE_PROGRESS_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900122_PROJECT_FLOW_DELIVERABLE_TO_FEATURE_SLICE_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW DELIVERABLE TO FEATURE SLICE LEDGER
 # ============================================================
@@ -15385,6 +17350,9 @@ important_rule:
 Feature-slice planning should start from unlocked deliverables,
 not from raw assumptions.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900122_PROJECT_FLOW_DELIVERABLE_TO_FEATURE_SLICE_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900123_PROJECT_FLOW_FEATURE_SLICE_PLANNING_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE PLANNING TEMPLATE
 # ============================================================
@@ -15417,6 +17385,9 @@ rules:
 - blocked_by must remain explicit
 - boundary-aware slice should preserve boundary conditions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900123_PROJECT_FLOW_FEATURE_SLICE_PLANNING_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900124_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE EXECUTION LEDGER
 # ============================================================
@@ -15497,6 +17468,9 @@ important_rule:
 Boundary-aware slices remain later than core local slices
 unless their prerequisites are explicitly confirmed.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900124_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900125_PROJECT_FLOW_FEATURE_SLICE_SEQUENCE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE SEQUENCE NOTE
 # ============================================================
@@ -15522,6 +17496,9 @@ important_rule:
 This sequence optimizes for stable local progress first
 and boundary-sensitive work second.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900125_PROJECT_FLOW_FEATURE_SLICE_SEQUENCE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900126_PROJECT_FLOW_FEATURE_SLICE_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE DELIVERABLE TEMPLATE
 # ============================================================
@@ -15557,6 +17534,9 @@ deliverable_type_candidates:
 - material_slice_note
 - cache_sync_slice_note
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900126_PROJECT_FLOW_FEATURE_SLICE_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900127_PROJECT_FLOW_FEATURE_SLICE_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE COMPLETION MATRIX
 # ============================================================
@@ -15629,6 +17609,9 @@ businessos_gateway_slice:
   - mediated payload entry points remain explicit
   - blocked boundary assumptions are not silently bypassed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900127_PROJECT_FLOW_FEATURE_SLICE_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900128_PROJECT_FLOW_FEATURE_SLICE_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE REVIEW TEMPLATE
 # ============================================================
@@ -15659,6 +17642,9 @@ review_rules:
 - partial means only explicitly usable parts may continue
 - hold means the slice must not unlock downstream planning yet
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900128_PROJECT_FLOW_FEATURE_SLICE_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900129_PROJECT_FLOW_FEATURE_SLICE_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE APPROVAL TEMPLATE
 # ============================================================
@@ -15686,6 +17672,9 @@ approval_rules:
 - partial approval must keep blocked scope explicit
 - no downstream slice should start from unapproved blocked scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900129_PROJECT_FLOW_FEATURE_SLICE_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900130_PROJECT_FLOW_FEATURE_SLICE_REVIEW_AND_APPROVAL_FLOW.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE REVIEW AND APPROVAL FLOW
 # ============================================================
@@ -15712,6 +17701,9 @@ important_rules:
 - partial approval does not unlock full downstream scope
 - blocked boundary-sensitive scope remains visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900130_PROJECT_FLOW_FEATURE_SLICE_REVIEW_AND_APPROVAL_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900131_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -15745,6 +17737,9 @@ recording_rules:
 - boundary-aware slices must keep blocked conditions visible
 - done status should list produced planning outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900131_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900132_PROJECT_FLOW_FEATURE_SLICE_PROGRESS_SUMMARY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE PROGRESS SUMMARY TEMPLATE
 # ============================================================
@@ -15770,6 +17765,9 @@ summary_fields:
 - major_pause_or_block_reasons
 - next_recommended_slice
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900132_PROJECT_FLOW_FEATURE_SLICE_PROGRESS_SUMMARY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900133_PROJECT_FLOW_FEATURE_SLICE_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE REOPEN TEMPLATE
 # ============================================================
@@ -15799,6 +17797,9 @@ reopen_rules:
 - paused slices may reopen only after pause reason is re-evaluated
 - boundary-aware slices require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900133_PROJECT_FLOW_FEATURE_SLICE_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900134_PROJECT_FLOW_FEATURE_SLICE_BLOCKED_TO_REOPEN_FLOW.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE BLOCKED TO REOPEN FLOW
 # ============================================================
@@ -15826,6 +17827,9 @@ important_rules:
 - blocked boundary-aware slices require explicit recheck
 - unresolved blocked conditions keep the slice blocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900134_PROJECT_FLOW_FEATURE_SLICE_BLOCKED_TO_REOPEN_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900135_PROJECT_FLOW_CODING_START_ENTRY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START ENTRY NOTE
 # ============================================================
@@ -15859,6 +17863,9 @@ important_rule:
 Coding-start planning should not reopen
 stable design assumptions or blocked boundary areas without explicit reason.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900135_PROJECT_FLOW_CODING_START_ENTRY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900136_PROJECT_FLOW_CODING_START_CHECK_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START CHECK TEMPLATE
 # ============================================================
@@ -15882,6 +17889,9 @@ check_fields:
 - safe_to_begin_coding_start_planning: yes_no
 - notes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900136_PROJECT_FLOW_CODING_START_CHECK_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900137_PROJECT_FLOW_CODING_START_WORK_PACKAGE_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW CODING START WORK PACKAGE STARTER SET
 # ============================================================
@@ -15940,6 +17950,9 @@ PF-CODE-005:
   - approved cache_sync_plan
   - approved sync_visibility_note
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900137_PROJECT_FLOW_CODING_START_WORK_PACKAGE_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900138_PROJECT_FLOW_CODING_START_SEQUENCE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START SEQUENCE TEMPLATE
 # ============================================================
@@ -15968,6 +17981,9 @@ important_rules:
 - do not include blocked scope
 - keep local and boundary-aware coding-start packages distinct
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900138_PROJECT_FLOW_CODING_START_SEQUENCE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900139_PROJECT_FLOW_CODING_START_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START DELIVERABLE TEMPLATE
 # ============================================================
@@ -16003,6 +18019,9 @@ deliverable_type_candidates:
 - material_flow_breakdown
 - cache_sync_surface_breakdown
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900139_PROJECT_FLOW_CODING_START_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900140_PROJECT_FLOW_CODING_START_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW CODING START COMPLETION MATRIX
 # ============================================================
@@ -16066,6 +18085,9 @@ PF-CODE-005:
   - retry and sync-state visibility remain separate from business truth
   - blocked boundary-sensitive concerns remain excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900140_PROJECT_FLOW_CODING_START_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900141_PROJECT_FLOW_CODING_START_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START REVIEW TEMPLATE
 # ============================================================
@@ -16098,6 +18120,9 @@ review_rules:
 - partial means only explicitly usable parts may continue
 - hold means the deliverable must not unlock downstream coding-scope planning yet
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900141_PROJECT_FLOW_CODING_START_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900142_PROJECT_FLOW_CODING_START_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START APPROVAL TEMPLATE
 # ============================================================
@@ -16126,6 +18151,9 @@ approval_rules:
 - partial approval must keep blocked scope explicit
 - no downstream coding unit should start from unapproved blocked scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900142_PROJECT_FLOW_CODING_START_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900143_PROJECT_FLOW_CODING_START_REVIEW_AND_APPROVAL_FLOW.md -->
 # ============================================================
 # PROJECT FLOW CODING START REVIEW AND APPROVAL FLOW
 # ============================================================
@@ -16152,6 +18180,9 @@ important_rules:
 - partial approval does not unlock full downstream scope
 - blocked boundary-sensitive scope remains visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900143_PROJECT_FLOW_CODING_START_REVIEW_AND_APPROVAL_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900144_PROJECT_FLOW_CODING_START_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -16186,6 +18217,9 @@ recording_rules:
 - boundary-aware packages must keep blocked conditions visible
 - done status should list produced planning outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900144_PROJECT_FLOW_CODING_START_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900145_PROJECT_FLOW_CODING_START_PROGRESS_SUMMARY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START PROGRESS SUMMARY TEMPLATE
 # ============================================================
@@ -16211,6 +18245,9 @@ summary_fields:
 - major_pause_or_block_reasons
 - next_recommended_package
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900145_PROJECT_FLOW_CODING_START_PROGRESS_SUMMARY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900146_PROJECT_FLOW_CODING_START_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START REOPEN TEMPLATE
 # ============================================================
@@ -16241,6 +18278,9 @@ reopen_rules:
 - paused packages may reopen only after pause reason is re-evaluated
 - boundary-aware packages require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900146_PROJECT_FLOW_CODING_START_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900147_PROJECT_FLOW_CODING_START_BLOCKED_TO_REOPEN_FLOW.md -->
 # ============================================================
 # PROJECT FLOW CODING START BLOCKED TO REOPEN FLOW
 # ============================================================
@@ -16268,6 +18308,9 @@ important_rules:
 - blocked boundary-aware packages require explicit recheck
 - unresolved blocked conditions keep the package blocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900147_PROJECT_FLOW_CODING_START_BLOCKED_TO_REOPEN_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900148_PROJECT_FLOW_CODING_START_DEPENDENCY_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW CODING START DEPENDENCY MATRIX
 # ============================================================
@@ -16331,6 +18374,9 @@ PF-CODE-005:
 important_rule:
 A coding-start package may start only when its upstream approved outputs are available.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900148_PROJECT_FLOW_CODING_START_DEPENDENCY_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900149_PROJECT_FLOW_CODING_START_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW CODING START EXECUTION LEDGER
 # ============================================================
@@ -16392,6 +18438,9 @@ important_rule:
 Boundary-aware coding-start packages remain later than core local packages
 unless prerequisites are explicitly confirmed.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900149_PROJECT_FLOW_CODING_START_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900150_PROJECT_FLOW_CODING_START_POST_REVIEW_BRANCH_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CODING START POST REVIEW BRANCH TEMPLATE
 # ============================================================
@@ -16422,6 +18471,9 @@ rules:
 - partial approval unlocks only explicitly approved scope
 - hold or not-approved unlocks nothing downstream
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900150_PROJECT_FLOW_CODING_START_POST_REVIEW_BRANCH_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900151_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_ENTRY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK ENTRY NOTE
 # ============================================================
@@ -16456,6 +18508,9 @@ stable design assumptions,
 blocked scope,
 or unresolved boundary concerns without explicit reason.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900151_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_ENTRY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900152_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_CHECK_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK CHECK TEMPLATE
 # ============================================================
@@ -16479,6 +18534,9 @@ check_fields:
 - safe_to_begin_actual_implementation_task_breakdown: yes_no
 - notes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900152_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_CHECK_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900153_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK STARTER SET
 # ============================================================
@@ -16555,6 +18613,9 @@ PF-TASK-008:
   - approved cache_sync_surface_breakdown
   - blocked scope excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900153_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900154_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK EXECUTION LEDGER
 # ============================================================
@@ -16623,6 +18684,9 @@ important_rule:
 Boundary-aware tasks remain later than core local tasks
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900154_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900155_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK DELIVERABLE TEMPLATE
 # ============================================================
@@ -16658,6 +18722,9 @@ deliverable_type_candidates:
 - material_flow_stub
 - cache_sync_stub
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900155_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900156_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK REVIEW TEMPLATE
 # ============================================================
@@ -16688,6 +18755,9 @@ review_rules:
 - partial means only explicitly usable outputs may continue
 - hold means downstream dependent tasks should not unlock yet
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900156_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900157_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK COMPLETION MATRIX
 # ============================================================
@@ -16770,6 +18840,9 @@ PF-TASK-008:
   - cache and sync entry surfaces exist
   - sync visibility remains separate from business truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900157_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900158_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK APPROVAL TEMPLATE
 # ============================================================
@@ -16798,6 +18871,9 @@ approval_rules:
 - partial approval must keep blocked scope explicit
 - blocked scope must not unlock dependent tasks
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900158_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900159_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -16832,6 +18908,9 @@ recording_rules:
 - boundary-aware tasks must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900159_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900160_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK REOPEN TEMPLATE
 # ============================================================
@@ -16862,6 +18941,9 @@ reopen_rules:
 - paused tasks may reopen only after pause reason is re-evaluated
 - boundary-aware tasks require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900160_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900161_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_TO_NEXT_UNIT_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK TO NEXT UNIT LEDGER
 # ============================================================
@@ -16922,6 +19004,9 @@ important_rule:
 No next unit is unlocked until task outputs are reviewed
 and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900161_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_TO_NEXT_UNIT_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900162_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT STARTER SET
 # ============================================================
@@ -17037,6 +19122,9 @@ PF-UNIT-012:
   - approved cache_sync_stub
   - blocked scope excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900162_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900163_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT EXECUTION LEDGER
 # ============================================================
@@ -17129,6 +19217,9 @@ important_rule:
 Boundary-aware implementation units remain later than core local units
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900163_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900164_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT DELIVERABLE TEMPLATE
 # ============================================================
@@ -17167,6 +19258,9 @@ deliverable_type_candidates:
 - sync_visibility_unit
 - cache_refresh_unit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900164_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900165_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT REVIEW TEMPLATE
 # ============================================================
@@ -17197,6 +19291,9 @@ review_rules:
 - partial means only explicitly usable outputs may continue
 - hold means downstream dependent units should not unlock yet
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900165_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900166_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT COMPLETION MATRIX
 # ============================================================
@@ -17309,6 +19406,9 @@ PF-UNIT-012:
   - cache refresh behavior is explicit
   - mediated refresh assumptions remain explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900166_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900167_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT APPROVAL TEMPLATE
 # ============================================================
@@ -17337,6 +19437,9 @@ approval_rules:
 - partial approval must keep blocked scope explicit
 - blocked scope must not unlock dependent units
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900167_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900168_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -17371,6 +19474,9 @@ recording_rules:
 - boundary-aware units must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900168_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900169_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT REOPEN TEMPLATE
 # ============================================================
@@ -17401,6 +19507,9 @@ reopen_rules:
 - paused units may reopen only after pause reason is re-evaluated
 - boundary-aware units require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900169_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900170_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_TO_CONCRETE_CODING_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT TO CONCRETE CODING LEDGER
 # ============================================================
@@ -17481,6 +19590,9 @@ important_rule:
 No concrete coding work group is unlocked
 until unit outputs are reviewed and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900170_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_TO_CONCRETE_CODING_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900171_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP STARTER SET
 # ============================================================
@@ -17596,6 +19708,9 @@ PF-CWG-012:
   - approved cache_refresh_unit
   - blocked scope excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900171_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900172_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP EXECUTION LEDGER
 # ============================================================
@@ -17688,6 +19803,9 @@ important_rule:
 Boundary-aware concrete coding groups remain later than core local groups
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900172_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900173_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP DELIVERABLE TEMPLATE
 # ============================================================
@@ -17726,6 +19844,9 @@ deliverable_type_candidates:
 - sync_ui_group
 - cache_trigger_group
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900173_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900174_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE_CODING_WORK_GROUP_REVIEW_TEMPLATE
 # ============================================================
@@ -17756,6 +19877,9 @@ review_rules:
 - partial means only explicitly usable outputs may continue
 - hold means downstream dependent work groups should not unlock yet
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900174_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900175_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP COMPLETION MATRIX
 # ============================================================
@@ -17868,6 +19992,9 @@ PF-CWG-012:
   - cache refresh trigger scope is explicit
   - mediated refresh assumptions remain explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900175_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900176_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP APPROVAL TEMPLATE
 # ============================================================
@@ -17896,6 +20023,9 @@ approval_rules:
 - partial approval must keep blocked scope explicit
 - blocked scope must not unlock dependent work groups
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900176_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900177_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -17930,6 +20060,9 @@ recording_rules:
 - boundary-aware work groups must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900177_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900178_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP REOPEN TEMPLATE
 # ============================================================
@@ -17960,6 +20093,9 @@ reopen_rules:
 - paused work groups may reopen only after pause reason is re-evaluated
 - boundary-aware work groups require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900178_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900179_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_TO_FILE_TASK_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP TO FILE TASK LEDGER
 # ============================================================
@@ -18040,6 +20176,9 @@ important_rule:
 No concrete file/task unit is unlocked
 until work-group outputs are reviewed and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900179_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_TO_FILE_TASK_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900180_PROJECT_FLOW_CONCRETE_FILE_UNIT_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT STARTER SET
 # ============================================================
@@ -18163,6 +20302,9 @@ PF-FILE-013:
   - approved cache_trigger_group
   - blocked scope excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900180_PROJECT_FLOW_CONCRETE_FILE_UNIT_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900181_PROJECT_FLOW_CONCRETE_FILE_UNIT_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT EXECUTION LEDGER
 # ============================================================
@@ -18261,6 +20403,9 @@ important_rule:
 Boundary-aware file units remain later than core local file units
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900181_PROJECT_FLOW_CONCRETE_FILE_UNIT_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900182_PROJECT_FLOW_CONCRETE_FILE_UNIT_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT DELIVERABLE TEMPLATE
 # ============================================================
@@ -18300,6 +20445,9 @@ deliverable_type_candidates:
 - sync_ui_file
 - cache_trigger_file
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900182_PROJECT_FLOW_CONCRETE_FILE_UNIT_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900183_PROJECT_FLOW_CONCRETE_FILE_UNIT_REVIEW_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT REVIEW TEMPLATE
 # ============================================================
@@ -18330,6 +20478,9 @@ review_rules:
 - partial means only explicitly usable outputs may continue
 - hold means downstream dependent units should not unlock yet
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900183_PROJECT_FLOW_CONCRETE_FILE_UNIT_REVIEW_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900184_PROJECT_FLOW_CONCRETE_FILE_UNIT_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT COMPLETION MATRIX
 # ============================================================
@@ -18450,6 +20601,9 @@ PF-FILE-013:
   - cache refresh trigger responsibility is explicit
   - mediated refresh assumption remains explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900184_PROJECT_FLOW_CONCRETE_FILE_UNIT_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900185_PROJECT_FLOW_CONCRETE_FILE_UNIT_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT APPROVAL TEMPLATE
 # ============================================================
@@ -18478,6 +20632,9 @@ approval_rules:
 - partial approval must keep blocked scope explicit
 - blocked scope must not unlock dependent file units
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900185_PROJECT_FLOW_CONCRETE_FILE_UNIT_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900186_PROJECT_FLOW_CONCRETE_FILE_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -18512,6 +20669,9 @@ recording_rules:
 - boundary-aware file units must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900186_PROJECT_FLOW_CONCRETE_FILE_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900187_PROJECT_FLOW_CONCRETE_FILE_UNIT_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT REOPEN TEMPLATE
 # ============================================================
@@ -18542,6 +20702,9 @@ reopen_rules:
 - paused file units may reopen only after pause reason is re-evaluated
 - boundary-aware file units require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900187_PROJECT_FLOW_CONCRETE_FILE_UNIT_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900188_PROJECT_FLOW_CONCRETE_FILE_UNIT_TO_PATCH_TASK_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT TO PATCH TASK LEDGER
 # ============================================================
@@ -18627,6 +20790,9 @@ important_rule:
 No patch-level task is unlocked
 until file-unit outputs are reviewed and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900188_PROJECT_FLOW_CONCRETE_FILE_UNIT_TO_PATCH_TASK_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900189_PROJECT_FLOW_PATCH_TASK_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK STARTER SET
 # ============================================================
@@ -18750,6 +20916,9 @@ PF-PATCH-013:
   - approved cache_trigger_file
   - blocked scope excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900189_PROJECT_FLOW_PATCH_TASK_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900190_PROJECT_FLOW_PATCH_TASK_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK EXECUTION LEDGER
 # ============================================================
@@ -18848,6 +21017,9 @@ important_rule:
 Boundary-aware patch tasks remain later than core local patch tasks
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900190_PROJECT_FLOW_PATCH_TASK_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900191_PROJECT_FLOW_PATCH_TASK_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK DELIVERABLE TEMPLATE
 # ============================================================
@@ -18887,6 +21059,9 @@ deliverable_type_candidates:
 - sync_ui_patch
 - refresh_patch
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900191_PROJECT_FLOW_PATCH_TASK_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900192_PROJECT_FLOW_PATCH_TASK_REVIEW_AND_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK REVIEW AND APPROVAL TEMPLATE
 # ============================================================
@@ -18925,6 +21100,9 @@ rules:
 - partial approval unlocks only explicitly approved scope
 - hold or not-approved unlocks nothing downstream
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900192_PROJECT_FLOW_PATCH_TASK_REVIEW_AND_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900193_PROJECT_FLOW_PATCH_TASK_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK COMPLETION MATRIX
 # ============================================================
@@ -19045,6 +21223,9 @@ PF-PATCH-013:
   - refresh trigger patch scope is explicit
   - mediated refresh assumption remains explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900193_PROJECT_FLOW_PATCH_TASK_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900194_PROJECT_FLOW_PATCH_TASK_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -19079,6 +21260,9 @@ recording_rules:
 - boundary-aware patch tasks must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900194_PROJECT_FLOW_PATCH_TASK_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900195_PROJECT_FLOW_PATCH_TASK_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK REOPEN TEMPLATE
 # ============================================================
@@ -19109,6 +21293,9 @@ reopen_rules:
 - paused patch tasks may reopen only after pause reason is re-evaluated
 - boundary-aware patch tasks require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900195_PROJECT_FLOW_PATCH_TASK_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900196_PROJECT_FLOW_PATCH_TASK_TO_COMMIT_PR_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK TO COMMIT PR LEDGER
 # ============================================================
@@ -19181,6 +21368,9 @@ important_rule:
 No commit or PR-sized unit is unlocked
 until patch-task outputs are reviewed and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900196_PROJECT_FLOW_PATCH_TASK_TO_COMMIT_PR_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900197_PROJECT_FLOW_COMMIT_PR_UNIT_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT STARTER SET
 # ============================================================
@@ -19304,6 +21494,9 @@ PF-CPR-013:
   - approved refresh_patch
   - blocked scope excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900197_PROJECT_FLOW_COMMIT_PR_UNIT_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900198_PROJECT_FLOW_COMMIT_PR_UNIT_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT EXECUTION LEDGER
 # ============================================================
@@ -19402,6 +21595,9 @@ important_rule:
 Boundary-aware commit / PR units remain later than core local units
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900198_PROJECT_FLOW_COMMIT_PR_UNIT_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900199_PROJECT_FLOW_COMMIT_PR_UNIT_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT DELIVERABLE TEMPLATE
 # ============================================================
@@ -19433,6 +21629,9 @@ deliverable_type_candidates:
 - reviewed_change_set
 - scoped_diff_set
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900199_PROJECT_FLOW_COMMIT_PR_UNIT_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900200_PROJECT_FLOW_COMMIT_PR_UNIT_REVIEW_AND_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT REVIEW AND APPROVAL TEMPLATE
 # ============================================================
@@ -19471,6 +21670,9 @@ rules:
 - partial approval unlocks only explicitly approved scope
 - hold or not-approved unlocks nothing downstream
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900200_PROJECT_FLOW_COMMIT_PR_UNIT_REVIEW_AND_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900201_PROJECT_FLOW_COMMIT_PR_UNIT_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT COMPLETION MATRIX
 # ============================================================
@@ -19591,6 +21793,9 @@ PF-CPR-013:
   - refresh trigger change set is explicit
   - mediated refresh assumption remains explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900201_PROJECT_FLOW_COMMIT_PR_UNIT_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900202_PROJECT_FLOW_COMMIT_PR_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -19625,6 +21830,9 @@ recording_rules:
 - boundary-aware units must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900202_PROJECT_FLOW_COMMIT_PR_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900203_PROJECT_FLOW_COMMIT_PR_UNIT_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT REOPEN TEMPLATE
 # ============================================================
@@ -19655,6 +21863,9 @@ reopen_rules:
 - paused units may reopen only after pause reason is re-evaluated
 - boundary-aware units require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900203_PROJECT_FLOW_COMMIT_PR_UNIT_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900204_PROJECT_FLOW_COMMIT_PR_UNIT_TO_MERGE_RELEASE_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT TO MERGE RELEASE LEDGER
 # ============================================================
@@ -19727,6 +21938,9 @@ important_rule:
 No merge or release-prep unit is unlocked
 until commit / PR-sized outputs are reviewed and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900204_PROJECT_FLOW_COMMIT_PR_UNIT_TO_MERGE_RELEASE_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900205_PROJECT_FLOW_MERGE_RELEASE_UNIT_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT STARTER SET
 # ============================================================
@@ -19849,6 +22063,9 @@ PF-MRG-012:
   - approved merge candidate units
   - blocked scope excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900205_PROJECT_FLOW_MERGE_RELEASE_UNIT_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900206_PROJECT_FLOW_MERGE_RELEASE_UNIT_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT EXECUTION LEDGER
 # ============================================================
@@ -19941,6 +22158,9 @@ important_rule:
 Boundary-aware merge units remain later than core local merge units
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900206_PROJECT_FLOW_MERGE_RELEASE_UNIT_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900207_PROJECT_FLOW_MERGE_RELEASE_UNIT_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT DELIVERABLE TEMPLATE
 # ============================================================
@@ -19972,6 +22192,9 @@ deliverable_type_candidates:
 - release_prep_bundle
 - scoped_merge_summary
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900207_PROJECT_FLOW_MERGE_RELEASE_UNIT_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900208_PROJECT_FLOW_MERGE_RELEASE_UNIT_REVIEW_AND_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT REVIEW AND APPROVAL TEMPLATE
 # ============================================================
@@ -20010,6 +22233,9 @@ rules:
 - partial approval unlocks only explicitly approved scope
 - hold or not-approved unlocks nothing downstream
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900208_PROJECT_FLOW_MERGE_RELEASE_UNIT_REVIEW_AND_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900209_PROJECT_FLOW_MERGE_RELEASE_UNIT_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT COMPLETION MATRIX
 # ============================================================
@@ -20123,6 +22349,9 @@ PF-MRG-012:
   - only approved local merge scope is included
   - blocked scope remains excluded
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900209_PROJECT_FLOW_MERGE_RELEASE_UNIT_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900210_PROJECT_FLOW_MERGE_RELEASE_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -20157,6 +22386,9 @@ recording_rules:
 - boundary-aware units must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900210_PROJECT_FLOW_MERGE_RELEASE_UNIT_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900211_PROJECT_FLOW_MERGE_RELEASE_UNIT_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT REOPEN TEMPLATE
 # ============================================================
@@ -20187,6 +22419,9 @@ reopen_rules:
 - paused units may reopen only after pause reason is re-evaluated
 - boundary-aware units require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900211_PROJECT_FLOW_MERGE_RELEASE_UNIT_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900212_PROJECT_FLOW_MERGE_RELEASE_UNIT_TO_RC_HANDOFF_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT TO RC HANDOFF LEDGER
 # ============================================================
@@ -20256,6 +22491,9 @@ important_rule:
 No release-candidate or handoff unit is unlocked
 until merge / release-prep outputs are reviewed and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900212_PROJECT_FLOW_MERGE_RELEASE_UNIT_TO_RC_HANDOFF_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900213_PROJECT_FLOW_RC_HANDOFF_UNIT_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF UNIT STARTER SET
 # ============================================================
@@ -20381,6 +22619,9 @@ PF-RC-013:
   - approved release_prep_bundle
   - approved-scope summary available
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900213_PROJECT_FLOW_RC_HANDOFF_UNIT_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900214_PROJECT_FLOW_RC_HANDOFF_UNIT_EXECUTION_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF UNIT EXECUTION LEDGER
 # ============================================================
@@ -20479,6 +22720,9 @@ important_rule:
 Boundary-aware RC units remain later than core local RC units
 unless explicitly confirmed safe.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900214_PROJECT_FLOW_RC_HANDOFF_UNIT_EXECUTION_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900215_PROJECT_FLOW_RC_HANDOFF_UNIT_DELIVERABLE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF UNIT DELIVERABLE TEMPLATE
 # ============================================================
@@ -20510,6 +22754,9 @@ deliverable_type_candidates:
 - handoff_summary_bundle
 - readiness_summary
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900215_PROJECT_FLOW_RC_HANDOFF_UNIT_DELIVERABLE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900216_PROJECT_FLOW_RC_HANDOFF_UNIT_REVIEW_AND_APPROVAL_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF UNIT REVIEW AND APPROVAL TEMPLATE
 # ============================================================
@@ -20548,6 +22795,9 @@ rules:
 - partial approval unlocks only explicitly approved scope
 - hold or not-approved unlocks nothing downstream
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900216_PROJECT_FLOW_RC_HANDOFF_UNIT_REVIEW_AND_APPROVAL_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900217_PROJECT_FLOW_RC_HANDOFF_COMPLETION_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF COMPLETION MATRIX
 # ============================================================
@@ -20670,6 +22920,9 @@ PF-RC-013:
   - handoff summary reflects approved reality only
   - done / deferred / blocked / future sophistication are separated explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900217_PROJECT_FLOW_RC_HANDOFF_COMPLETION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900218_PROJECT_FLOW_RC_HANDOFF_EXECUTION_RECORD_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF EXECUTION RECORD TEMPLATE
 # ============================================================
@@ -20704,6 +22957,9 @@ recording_rules:
 - boundary-aware units must keep blocked conditions visible
 - done status should list produced outputs explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900218_PROJECT_FLOW_RC_HANDOFF_EXECUTION_RECORD_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900219_PROJECT_FLOW_RC_HANDOFF_REOPEN_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF REOPEN TEMPLATE
 # ============================================================
@@ -20734,6 +22990,9 @@ reopen_rules:
 - paused units may reopen only after pause reason is re-evaluated
 - boundary-aware units require boundary recheck when needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900219_PROJECT_FLOW_RC_HANDOFF_REOPEN_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900220_PROJECT_FLOW_RC_HANDOFF_TO_FINAL_CLOSURE_LEDGER.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF TO FINAL CLOSURE LEDGER
 # ============================================================
@@ -20808,6 +23067,9 @@ important_rule:
 No final closure unit is unlocked
 until RC / handoff outputs are reviewed and approved in usable scope.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900220_PROJECT_FLOW_RC_HANDOFF_TO_FINAL_CLOSURE_LEDGER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900221_PROJECT_FLOW_FINAL_CLOSURE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FINAL CLOSURE TEMPLATE
 # ============================================================
@@ -20837,6 +23099,9 @@ rules:
 - deferred scope must not be mislabeled as done
 - future sophistication must remain distinct from blocked scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900221_PROJECT_FLOW_FINAL_CLOSURE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900222_PROJECT_FLOW_MASTER_RESTART_ENTRY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW MASTER RESTART ENTRY TEMPLATE
 # ============================================================
@@ -20864,6 +23129,9 @@ rules:
 - restart should begin from confirmed scope
 - blocked scope should remain explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900222_PROJECT_FLOW_MASTER_RESTART_ENTRY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900223_PROJECT_FLOW_CLOSURE_DECISION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE DECISION TEMPLATE
 # ============================================================
@@ -20895,6 +23163,9 @@ decision_rules:
 - deferred scope must not be mislabeled as done
 - future sophistication must remain distinct from blocked scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900223_PROJECT_FLOW_CLOSURE_DECISION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900224_PROJECT_FLOW_FINAL_HANDOFF_SUMMARY_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FINAL_HANDOFF_SUMMARY_TEMPLATE
 # ============================================================
@@ -20928,6 +23199,9 @@ handoff_rules:
   blocked,
   and future scope explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900224_PROJECT_FLOW_FINAL_HANDOFF_SUMMARY_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900225_PROJECT_FLOW_MASTER_RESTART_NOTE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW MASTER_RESTART_NOTE_TEMPLATE
 # ============================================================
@@ -20958,6 +23232,9 @@ restart_rules:
 - blocked scope should remain explicit
 - warning points should highlight where silent reopening is forbidden
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900225_PROJECT_FLOW_MASTER_RESTART_NOTE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900226_PROJECT_FLOW_FINAL_NAVIGATION_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW FINAL_NAVIGATION_TEMPLATE
 # ============================================================
@@ -20986,6 +23263,9 @@ navigation_rules:
 - deeper docs should be referenced only as needed
 - restart entry and closure decision should remain easy to find
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900226_PROJECT_FLOW_FINAL_NAVIGATION_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900227_PROJECT_FLOW_CLOSURE_AND_RESTART_STARTER_SET.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE AND RESTART STARTER SET
 # ============================================================
@@ -21014,6 +23294,9 @@ important_note:
 This starter set is intended to reduce restart friction
 and keep closure documents easy to locate.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900227_PROJECT_FLOW_CLOSURE_AND_RESTART_STARTER_SET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900228_PROJECT_FLOW_CURRENT_CLOSURE_STATUS.md -->
 # ============================================================
 # PROJECT FLOW CURRENT CLOSURE STATUS
 # ============================================================
@@ -21069,6 +23352,9 @@ ProjectFlow is now in a state
 where restart and further continuation should begin from the closure and restart entry docs,
 not from reopening broad design.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900228_PROJECT_FLOW_CURRENT_CLOSURE_STATUS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900229_PROJECT_FLOW_FINAL_HANDOFF_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW FINAL HANDOFF SUMMARY
 # ============================================================
@@ -21122,6 +23408,9 @@ notes:
 This handoff summary is intended
 to minimize restart friction in the next chat.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900229_PROJECT_FLOW_FINAL_HANDOFF_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900230_PROJECT_FLOW_MASTER_RESTART_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MASTER RESTART NOTE
 # ============================================================
@@ -21174,6 +23463,9 @@ restart_warning_points:
 - do not treat blocked DB scope as approved
 - do not treat future sophistication as required immediate scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900230_PROJECT_FLOW_MASTER_RESTART_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900231_PROJECT_FLOW_FINAL_NAVIGATION.md -->
 # ============================================================
 # PROJECT FLOW FINAL NAVIGATION
 # ============================================================
@@ -21220,6 +23512,9 @@ important_rule:
 Use concise entry docs first.
 Go deeper only when the entry docs indicate it is necessary.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900231_PROJECT_FLOW_FINAL_NAVIGATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900232_PROJECT_FLOW_CLOSURE_DECISION.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE DECISION
 # ============================================================
@@ -21265,6 +23560,9 @@ ProjectFlow is considered closed
 for the current broad design and decomposition cycle,
 with explicit deferred and blocked scope preserved.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900232_PROJECT_FLOW_CLOSURE_DECISION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900233_PROJECT_FLOW_DESIGN_FREEZE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DESIGN FREEZE NOTE
 # ============================================================
@@ -21298,6 +23596,9 @@ important_rule:
 Future work should begin from the frozen confirmed scope
 unless an explicit reason exists to reopen it.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900233_PROJECT_FLOW_DESIGN_FREEZE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900234_PROJECT_FLOW_NEXT_CHAT_START_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NEXT CHAT START NOTE
 # ============================================================
@@ -21331,6 +23632,9 @@ warning_points:
 - do not treat blocked DB scope as approved
 - do not mix future sophistication with current required scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900234_PROJECT_FLOW_NEXT_CHAT_START_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900235_PROJECT_FLOW_FINAL_INDEX_PATCH_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL INDEX PATCH NOTE
 # ============================================================
@@ -21359,6 +23663,9 @@ usage_rule:
 These files should be used first
 before reopening deeper decomposition layers.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900235_PROJECT_FLOW_FINAL_INDEX_PATCH_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900236_PROJECT_FLOW_TOP_PRIORITY_NAVIGATION.md -->
 # ============================================================
 # PROJECT FLOW TOP PRIORITY NAVIGATION
 # ============================================================
@@ -21388,6 +23695,9 @@ quick_usage:
 - deep doc routing -> 0900231
 - closure basis -> 0900232
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900236_PROJECT_FLOW_TOP_PRIORITY_NAVIGATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900237_PROJECT_FLOW_CURRENT_CLOSURE_CANDIDATE_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW CURRENT CLOSURE CANDIDATE SUMMARY
 # ============================================================
@@ -21419,6 +23729,9 @@ conclusion:
 ProjectFlow is a strong closure candidate
 for the current broad design and decomposition cycle.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900237_PROJECT_FLOW_CURRENT_CLOSURE_CANDIDATE_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900238_PROJECT_FLOW_RESTART_SHORTCUT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW RESTART SHORTCUT NOTE
 # ============================================================
@@ -21445,6 +23758,9 @@ warning:
 Do not restart from deep decomposition docs first
 unless the shortcut docs point you there.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900238_PROJECT_FLOW_RESTART_SHORTCUT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900239_PROJECT_FLOW_MASTER_CLOSURE_SUMMARY.md -->
 # ============================================================
 # PROJECT FLOW MASTER CLOSURE SUMMARY
 # ============================================================
@@ -21476,6 +23792,9 @@ current_operational_conclusion:
 Use the final entry docs first.
 Do not restart from deep decomposition docs by default.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900239_PROJECT_FLOW_MASTER_CLOSURE_SUMMARY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900240_PROJECT_FLOW_ENTRY_DOCUMENT_MAP.md -->
 # ============================================================
 # PROJECT FLOW ENTRY DOCUMENT MAP
 # ============================================================
@@ -21521,6 +23840,9 @@ want_db_owner_review_entry:
 want_implementation_restart:
 - 0900097_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_NOTE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900240_PROJECT_FLOW_ENTRY_DOCUMENT_MAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900241_PROJECT_FLOW_CLOSURE_STATE_MAP.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE STATE MAP
 # ============================================================
@@ -21560,6 +23882,9 @@ Deferred,
 blocked,
 and future scopes must remain distinct.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900241_PROJECT_FLOW_CLOSURE_STATE_MAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900242_PROJECT_FLOW_FINAL_END_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL END NOTE
 # ============================================================
@@ -21591,6 +23916,9 @@ end_rule:
 Further continuation should start from the final entry docs,
 not by reopening broad design from scratch.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900242_PROJECT_FLOW_FINAL_END_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900243_PROJECT_FLOW_ONE_PAGE_RESTART.md -->
 # ============================================================
 # PROJECT FLOW ONE PAGE RESTART
 # ============================================================
@@ -21626,6 +23954,9 @@ do_not_do:
 - treat blocked DB scope as approved
 - mix future sophistication with immediate required scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900243_PROJECT_FLOW_ONE_PAGE_RESTART.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900244_PROJECT_FLOW_CLOSURE_NAVIGATION_SHORTCUT.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE NAVIGATION SHORTCUT
 # ============================================================
@@ -21657,6 +23988,9 @@ shortcut_rule:
 Use this shortcut first
 before scanning deeper meta or implementation layers.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900244_PROJECT_FLOW_CLOSURE_NAVIGATION_SHORTCUT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900245_PROJECT_FLOW_CURRENT_RECOMMENDED_NEXT_ACTIONS.md -->
 # ============================================================
 # PROJECT FLOW CURRENT RECOMMENDED NEXT ACTIONS
 # ============================================================
@@ -21688,6 +24022,9 @@ Read:
 - 0900230_PROJECT_FLOW_MASTER_RESTART_NOTE.md
 Then choose one continuation path explicitly.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900245_PROJECT_FLOW_CURRENT_RECOMMENDED_NEXT_ACTIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900246_PROJECT_FLOW_CLOSURE_DECLARATION.md -->
 # ============================================================
 # PROJECT FLOW CLOSURE DECLARATION
 # ============================================================
@@ -21727,6 +24064,9 @@ important_rule:
 Future continuation should start from closure-entry materials,
 not from reopening the broad design baseline.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900246_PROJECT_FLOW_CLOSURE_DECLARATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900247_PROJECT_FLOW_RESTART_PACK.md -->
 # ============================================================
 # PROJECT FLOW RESTART PACK
 # ============================================================
@@ -21757,6 +24097,9 @@ pack_usage:
 3. choose one continuation path
 4. open deeper navigation only if needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900247_PROJECT_FLOW_RESTART_PACK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900248_PROJECT_FLOW_FINAL_QUICK_MAP.md -->
 # ============================================================
 # PROJECT FLOW FINAL QUICK MAP
 # ============================================================
@@ -21800,6 +24143,9 @@ want_db_review:
 want_common_component_reference:
 - 0900110_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_SUMMARY.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900248_PROJECT_FLOW_FINAL_QUICK_MAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900249_PROJECT_FLOW_LAST_RECOMMENDED_PATH_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LAST RECOMMENDED PATH NOTE
 # ============================================================
@@ -21827,6 +24173,9 @@ important_warning:
 Do not combine all paths at once.
 Choose one path explicitly.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900249_PROJECT_FLOW_LAST_RECOMMENDED_PATH_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900250_PROJECT_FLOW_TERMINAL_MASTER_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL MASTER NOTE
 # ============================================================
@@ -21859,6 +24208,9 @@ terminal_entry_docs:
 - 0900231_PROJECT_FLOW_FINAL_NAVIGATION.md
 - 0900243_PROJECT_FLOW_ONE_PAGE_RESTART.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900250_PROJECT_FLOW_TERMINAL_MASTER_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900251_PROJECT_FLOW_SINGLE_PAGE_HUB.md -->
 # ============================================================
 # PROJECT FLOW SINGLE PAGE HUB
 # ============================================================
@@ -21907,6 +24259,9 @@ separated_paths:
 - common component entry:
   - 0900110_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_SUMMARY.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900251_PROJECT_FLOW_SINGLE_PAGE_HUB.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900252_PROJECT_FLOW_COMPLETION_DECLARATION.md -->
 # ============================================================
 # PROJECT FLOW COMPLETION DECLARATION
 # ============================================================
@@ -21948,6 +24303,9 @@ completion_rule:
 This declaration means practical completion for restartability,
 not universal finality for all future work.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900252_PROJECT_FLOW_COMPLETION_DECLARATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900253_PROJECT_FLOW_FINAL_CONTINUATION_CHOOSER.md -->
 # ============================================================
 # PROJECT FLOW FINAL CONTINUATION CHOOSER
 # ============================================================
@@ -21977,6 +24335,9 @@ decision_help:
 warning:
 Do not start from multiple paths at once.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900253_PROJECT_FLOW_FINAL_CONTINUATION_CHOOSER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900254_PROJECT_FLOW_TERMINAL_SHORTCUT.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL SHORTCUT
 # ============================================================
@@ -22006,6 +24367,9 @@ warning:
 Do not restart from deep decomposition layers first
 unless the shortcut docs direct you there.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900254_PROJECT_FLOW_TERMINAL_SHORTCUT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900255_PROJECT_FLOW_COMPLETION_MAP.md -->
 # ============================================================
 # PROJECT FLOW COMPLETION MAP
 # ============================================================
@@ -22038,6 +24402,9 @@ important_rule:
 Outside-current-completion does not mean forgotten.
 It means intentionally separated.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900255_PROJECT_FLOW_COMPLETION_MAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900256_PROJECT_FLOW_END_STATE_NAVIGATION.md -->
 # ============================================================
 # PROJECT FLOW END STATE NAVIGATION
 # ============================================================
@@ -22073,6 +24440,9 @@ important_rule:
 Use end-state docs for terminal understanding,
 and restart-state docs for practical continuation.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900256_PROJECT_FLOW_END_STATE_NAVIGATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900257_PROJECT_FLOW_LAST_MILE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LAST MILE NOTE
 # ============================================================
@@ -22097,6 +24467,9 @@ recommended_default:
 Stop broad design work here.
 Restart only from explicit entry docs when needed.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900257_PROJECT_FLOW_LAST_MILE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900258_PROJECT_FLOW_STOP_HERE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW STOP HERE NOTE
 # ============================================================
@@ -22127,6 +24500,9 @@ important_rule:
 Stopping here does not lose structure,
 because restart entry docs and closure docs already exist.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900258_PROJECT_FLOW_STOP_HERE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900259_PROJECT_FLOW_RESUME_PATH_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW RESUME PATH MATRIX
 # ============================================================
@@ -22168,6 +24544,9 @@ important_rule:
 Choose one path first.
 Do not mix resume paths at the start.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900259_PROJECT_FLOW_RESUME_PATH_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900260_PROJECT_FLOW_FINAL_TINY_HUB.md -->
 # ============================================================
 # PROJECT FLOW FINAL TINY HUB
 # ============================================================
@@ -22196,6 +24575,9 @@ then_choose_one:
 - future sophistication:
   - 0900245_PROJECT_FLOW_CURRENT_RECOMMENDED_NEXT_ACTIONS.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900260_PROJECT_FLOW_FINAL_TINY_HUB.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900261_PROJECT_FLOW_MASTER_TERMINAL_INDEX.md -->
 # ============================================================
 # PROJECT FLOW MASTER TERMINAL INDEX
 # ============================================================
@@ -22276,6 +24658,9 @@ important_rule:
 Use this master terminal index
 before opening deep decomposition docs.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900261_PROJECT_FLOW_MASTER_TERMINAL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900262_PROJECT_FLOW_MASTER_TERMINAL_INDEX_SHORTCUT.md -->
 # ============================================================
 # PROJECT FLOW MASTER TERMINAL INDEX SHORTCUT
 # ============================================================
@@ -22303,6 +24688,9 @@ important_note:
 This shortcut exists
 to avoid scanning many terminal docs manually.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900262_PROJECT_FLOW_MASTER_TERMINAL_INDEX_SHORTCUT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900263_PROJECT_FLOW_FINAL_COMPLETION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL COMPLETION NOTE
 # ============================================================
@@ -22344,6 +24732,9 @@ explicitly_separated_not_completed_here:
 terminal_rule:
 No further broad design expansion is required in this chat.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900263_PROJECT_FLOW_FINAL_COMPLETION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900264_PROJECT_FLOW_FINAL_STOP_DECLARATION.md -->
 # ============================================================
 # PROJECT FLOW FINAL STOP DECLARATION
 # ============================================================
@@ -22374,6 +24765,9 @@ resume_only_if_needed:
 - closure cleanup is needed
 - future sophistication is intentionally started later
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900264_PROJECT_FLOW_FINAL_STOP_DECLARATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900265_PROJECT_FLOW_FINAL_ONE_PAGE_HANDOFF.md -->
 # ============================================================
 # PROJECT FLOW FINAL ONE PAGE HANDOFF
 # ============================================================
@@ -22413,6 +24807,9 @@ then_choose_one:
 important_warning:
 Do not restart from deep decomposition docs first.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900265_PROJECT_FLOW_FINAL_ONE_PAGE_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900266_PROJECT_FLOW_NEXT_CHAT_MESSAGE_TEMPLATE.md -->
 # ============================================================
 # PROJECT FLOW NEXT CHAT MESSAGE TEMPLATE
 # ============================================================
@@ -22439,6 +24836,9 @@ Then continue with exactly one path:
 - closure cleanup only
 - future sophistication as separate later work
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900266_PROJECT_FLOW_NEXT_CHAT_MESSAGE_TEMPLATE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900267_PROJECT_FLOW_FINAL_DONE_MAP.md -->
 # ============================================================
 # PROJECT FLOW FINAL DONE MAP
 # ============================================================
@@ -22468,6 +24868,9 @@ not_done_here_but_explicitly_separated:
 rule:
 Not-done-here must not be mistaken for missing structure.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900267_PROJECT_FLOW_FINAL_DONE_MAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900268_PROJECT_FLOW_FINAL_PROGRESS_SNAPSHOT.md -->
 # ============================================================
 # PROJECT FLOW FINAL PROGRESS SNAPSHOT
 # ============================================================
@@ -22495,6 +24898,9 @@ separated_remaining_areas:
 - future sophistication outside current initial scope
 - optional later polish
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900268_PROJECT_FLOW_FINAL_PROGRESS_SNAPSHOT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900269_PROJECT_FLOW_TERMINAL_DOC_LIST.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL DOC LIST
 # ============================================================
@@ -22524,6 +24930,9 @@ terminal_docs:
 - 0900263_PROJECT_FLOW_FINAL_COMPLETION_NOTE.md
 - 0900265_PROJECT_FLOW_FINAL_ONE_PAGE_HANDOFF.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900269_PROJECT_FLOW_TERMINAL_DOC_LIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900270_PROJECT_FLOW_NEXT_CHAT_ULTRA_SHORT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NEXT CHAT ULTRA SHORT NOTE
 # ============================================================
@@ -22549,6 +24958,9 @@ Then choose one:
 - closure cleanup
 - future sophistication
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900270_PROJECT_FLOW_NEXT_CHAT_ULTRA_SHORT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900271_PROJECT_FLOW_SCOPE_BOUNDARY_AFTER_COMPLETION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW SCOPE BOUNDARY AFTER COMPLETION NOTE
 # ============================================================
@@ -22572,7 +24984,9 @@ rule:
 These should be treated as next-stage work,
 not as unfinished broad design inside the current closure.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/090.meta/0900271_PROJECT_FLOW_SCOPE_BOUNDARY_AFTER_COMPLETION_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/100.security/1000000_PROJECT_FLOW_SECURITY_INDEX.md -->
 # ============================================================
 # PROJECT FLOW SECURITY INDEX
 # ============================================================
@@ -22588,6 +25002,9 @@ files:
 - 1000001_PROJECT_FLOW_SECURITY_OVERVIEW.md
 - 1000002_PROJECT_FLOW_ACCESS_CONTROL_SECURITY.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/100.security/1000000_PROJECT_FLOW_SECURITY_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/100.security/1000001_PROJECT_FLOW_SECURITY_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW SECURITY OVERVIEW
 # ============================================================
@@ -22604,6 +25021,9 @@ security_targets:
 - auditability
 - safe retry
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/100.security/1000001_PROJECT_FLOW_SECURITY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/100.security/1000002_PROJECT_FLOW_ACCESS_CONTROL_SECURITY.md -->
 # ============================================================
 # PROJECT FLOW ACCESS CONTROL SECURITY
 # ============================================================
@@ -22619,7 +25039,9 @@ rules:
 - protected fields cannot be updated by standard members
 - sync operator rights must be scoped
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/100.security/1000002_PROJECT_FLOW_ACCESS_CONTROL_SECURITY.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100000_PROJECT_FLOW_INFRASTRUCTURE_INDEX.md -->
 # ============================================================
 # PROJECT FLOW INFRASTRUCTURE INDEX
 # ============================================================
@@ -22636,6 +25058,9 @@ files:
 - 1100002_PROJECT_FLOW_DEPENDENCY_OVERVIEW.md
 - 1100003_PROJECT_FLOW_RUNTIME_DEPLOYMENT_DEPENDENCY_NOTE.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100000_PROJECT_FLOW_INFRASTRUCTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100001_PROJECT_FLOW_INFRASTRUCTURE_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW INFRASTRUCTURE OVERVIEW
 # ============================================================
@@ -22652,6 +25077,9 @@ infrastructure_notes:
 - shared BusinessOS integration dependency
 - notification dependency
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100001_PROJECT_FLOW_INFRASTRUCTURE_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100002_PROJECT_FLOW_DEPENDENCY_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW DEPENDENCY OVERVIEW
 # ============================================================
@@ -22667,6 +25095,9 @@ dependencies:
 - ERP reference master availability
 - member reference availability
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100002_PROJECT_FLOW_DEPENDENCY_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100003_PROJECT_FLOW_RUNTIME_DEPLOYMENT_DEPENDENCY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW RUNTIME DEPLOYMENT DEPENDENCY NOTE
 # ============================================================
@@ -22689,7 +25120,9 @@ dependency_rules:
 - local domain operations should remain operable even when sync path is unavailable
 - export/report generation may use local data snapshot when allowed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/110.infrastructure/1100003_PROJECT_FLOW_RUNTIME_DEPLOYMENT_DEPENDENCY_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200000_PROJECT_FLOW_IMPLEMENTATION_INDEX.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION INDEX
 # ============================================================
@@ -22839,6 +25272,27 @@ files:
 - 1200137_PROJECT_FLOW_FINAL_COMPLETION_USAGE_NOTE.md
 - 1200138_PROJECT_FLOW_OPTIONAL_FINAL_VISIBILITY_NOTE.md
 
+- 120300_PROJECTFLOW_DELIVERY_CONTROL_IMPLEMENTATION_GUIDE.md
+
+- 120310_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 120320_PROJECTFLOW_PHASE_A_STUB_FILE_PLAN.md
+
+- 120330_PROJECTFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120340_PROJECTFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120350_PROJECTFLOW_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120360_PROJECTFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120370_PROJECTFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120380_PROJECTFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200000_PROJECT_FLOW_IMPLEMENTATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200001_PROJECT_FLOW_IMPLEMENTATION_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION OVERVIEW
 # ============================================================
@@ -22856,6 +25310,9 @@ implementation_targets:
 - log view
 - mapping-aware import/export
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200001_PROJECT_FLOW_IMPLEMENTATION_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200002_PROJECT_FLOW_DB_PHYSICAL_DESIGN_DRAFT.md -->
 # ============================================================
 # PROJECT FLOW DB PHYSICAL DESIGN DRAFT
 # ============================================================
@@ -22879,6 +25336,9 @@ candidate_tables:
 note:
 Physical schema must be finalized in review with DB owner.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200002_PROJECT_FLOW_DB_PHYSICAL_DESIGN_DRAFT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200003_PROJECT_FLOW_API_EXACT_CONTRACT_DRAFT.md -->
 # ============================================================
 # PROJECT FLOW API EXACT CONTRACT DRAFT
 # ============================================================
@@ -22895,6 +25355,9 @@ pending_exact_contract:
 - get_sync_status response
 - get_sync_error_detail response
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200003_PROJECT_FLOW_API_EXACT_CONTRACT_DRAFT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200004_PROJECT_FLOW_XLSX_EXPORT_DRAFT.md -->
 # ============================================================
 # PROJECT FLOW XLSX EXPORT DRAFT
 # ============================================================
@@ -22915,6 +25378,9 @@ implementation_targets:
 notes:
 Primary use case is customer explanation and offline sharing.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200004_PROJECT_FLOW_XLSX_EXPORT_DRAFT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200005_PROJECT_FLOW_PROGRESS_REPORT_TEMPLATE_DRAFT.md -->
 # ============================================================
 # PROJECT FLOW PROGRESS REPORT TEMPLATE DRAFT
 # ============================================================
@@ -22941,6 +25407,9 @@ draft_sections:
 - support requests
 - customer confirmation items
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200005_PROJECT_FLOW_PROGRESS_REPORT_TEMPLATE_DRAFT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200006_PROJECT_FLOW_API_EXACT_PAYLOAD_FIXED.md -->
 # ============================================================
 # PROJECT FLOW API EXACT PAYLOAD FIXED
 # ============================================================
@@ -23354,6 +25823,9 @@ final_rules:
 - auto-generated report is draft only
 - human review is mandatory before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200006_PROJECT_FLOW_API_EXACT_PAYLOAD_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200007_PROJECT_FLOW_DB_PHYSICAL_SCHEMA_FIXED.md -->
 # ============================================================
 # PROJECT FLOW DB PHYSICAL SCHEMA FIXED
 # ============================================================
@@ -23919,6 +26391,9 @@ open_items:
 - trigger design for updated_at
 - materialized summary need 여부 review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200007_PROJECT_FLOW_DB_PHYSICAL_SCHEMA_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200008_PROJECT_FLOW_IMPLEMENTATION_MODULE_SPLIT_FIXED.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION MODULE SPLIT FIXED
 # ============================================================
@@ -24291,6 +26766,9 @@ open_items:
 - background job scheduling style
 - report text generation engine detail
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200008_PROJECT_FLOW_IMPLEMENTATION_MODULE_SPLIT_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200009_PROJECT_FLOW_SUBSCRIPTION_ENTITLEMENT_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW SUBSCRIPTION ENTITLEMENT IMPLEMENTATION NOTE
 # ============================================================
@@ -24323,6 +26801,9 @@ ui_rule:
 Blocked actions in unpaid_read_only mode should be visible but disabled or redirected to subscription explanation,
 instead of disappearing silently.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200009_PROJECT_FLOW_SUBSCRIPTION_ENTITLEMENT_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200010_PROJECT_FLOW_COMMON_COMPONENT_EXTRACTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT EXTRACTION NOTE
 # ============================================================
@@ -24359,6 +26840,9 @@ non_extraction_examples:
 - project-specific lifecycle wording
 - project-specific report template semantics
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200010_PROJECT_FLOW_COMMON_COMPONENT_EXTRACTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200011_PROJECT_FLOW_ENTITLEMENT_STATE_MODEL_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ENTITLEMENT STATE MODEL NOTE
 # ============================================================
@@ -24391,6 +26875,9 @@ implementation_rules:
 - screen-level guards must rely on the same resolved state
 - action-level guards must not duplicate inconsistent rules
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200011_PROJECT_FLOW_ENTITLEMENT_STATE_MODEL_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200012_PROJECT_FLOW_READ_ONLY_MODE_UI_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW READ ONLY MODE UI IMPLEMENTATION NOTE
 # ============================================================
@@ -24416,6 +26903,9 @@ behavior_rules:
 - read-only state should be visible on major screens
 - blocked-action explanation should be concise and consistent
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200012_PROJECT_FLOW_READ_ONLY_MODE_UI_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200013_PROJECT_FLOW_DB_DDL_PREPARED.md -->
 # ============================================================
 # PROJECT FLOW DB DDL PREPARED
 # ============================================================
@@ -24894,6 +27384,9 @@ implementation_notes:
 - final execution order should be reviewed by Sato(DB)
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200013_PROJECT_FLOW_DB_DDL_PREPARED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200014_PROJECT_FLOW_ADDITIVE_FEATURE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ADDITIVE FEATURE IMPLEMENTATION NOTE
 # ============================================================
@@ -24920,6 +27413,9 @@ implementation_rules:
 - keep project-specific semantics outside shared generic layers
 - keep customer-facing usability primary
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200014_PROJECT_FLOW_ADDITIVE_FEATURE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200015_PROJECT_FLOW_TIMELINE_GANTT_DASHBOARD_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TIMELINE GANTT DASHBOARD IMPLEMENTATION NOTE
 # ============================================================
@@ -24943,6 +27439,9 @@ implementation_rules:
 - allow device-specific presentation optimization only
 - preserve drilldown from aggregated views to source detail
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200015_PROJECT_FLOW_TIMELINE_GANTT_DASHBOARD_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200016_PROJECT_FLOW_FORM_MEMO_COMMENT_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FORM MEMO COMMENT IMPLEMENTATION NOTE
 # ============================================================
@@ -24965,6 +27464,9 @@ implementation_rules:
 - keep comments lightweight and entity-scoped
 - avoid turning comments into full realtime chat requirements
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200016_PROJECT_FLOW_FORM_MEMO_COMMENT_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200017_PROJECT_FLOW_LIGHT_AUTOMATION_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LIGHT AUTOMATION IMPLEMENTATION NOTE
 # ============================================================
@@ -24988,6 +27490,9 @@ implementation_rules:
 - persist enough execution result for review
 - preserve easy disablement of rules
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200017_PROJECT_FLOW_LIGHT_AUTOMATION_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200018_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE AND WBS PROPOSAL IMPLEMENTATION NOTE
 # ============================================================
@@ -25012,6 +27517,9 @@ implementation_rules:
 - preserve traceability from confirmed schedule to source template
 - allow later extension for additional business-day rule sophistication
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200018_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200019_PROJECT_FLOW_FEATURE_BOUNDARY_MATRIX_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE BOUNDARY MATRIX NOTE
 # ============================================================
@@ -25065,6 +27573,9 @@ integration_boundary:
 - owns shared BusinessOS request/response boundary
 - does not own ERP business truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200019_PROJECT_FLOW_FEATURE_BOUNDARY_MATRIX_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200020_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER FACING SCHEDULE IMPLEMENTATION NOTE
 # ============================================================
@@ -25087,6 +27598,9 @@ implementation_rules:
 - generation should reuse existing WBS and milestone data where possible
 - editable wording and visible item selection should be supported
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200020_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200021_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER EXPLANATION MATERIAL IMPLEMENTATION NOTE
 # ============================================================
@@ -25108,6 +27622,9 @@ implementation_rules:
 - each output type must remain independently exportable
 - standard material set should be easily accessible from project context
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200021_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200022_PROJECT_FLOW_CUSTOMER_MATERIAL_ADAPTER_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER MATERIAL ADAPTER NOTE
 # ============================================================
@@ -25134,6 +27651,9 @@ rules:
 - each adapter must remain independently exportable
 - customer-facing wording adjustments must remain supported where applicable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200022_PROJECT_FLOW_CUSTOMER_MATERIAL_ADAPTER_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200023_PROJECT_FLOW_IMPLEMENTATION_DETAIL_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION DETAIL OVERVIEW
 # ============================================================
@@ -25164,6 +27684,9 @@ principles:
 - preserve smartphone and PC functional parity
 - keep read-model views separate from source-of-truth ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200023_PROJECT_FLOW_IMPLEMENTATION_DETAIL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200024_PROJECT_FLOW_SCREEN_STATE_EVENT_DESIGN.md -->
 # ============================================================
 # PROJECT FLOW SCREEN STATE EVENT DESIGN
 # ============================================================
@@ -25319,6 +27842,9 @@ events:
 - wording_updated
 - export_requested
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200024_PROJECT_FLOW_SCREEN_STATE_EVENT_DESIGN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200025_PROJECT_FLOW_USE_CASE_GROUPING_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW USE CASE GROUPING DETAIL
 # ============================================================
@@ -25424,6 +27950,9 @@ entitlement_use_cases:
 - guard_mutating_action
 - guard_generation_action
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200025_PROJECT_FLOW_USE_CASE_GROUPING_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200026_PROJECT_FLOW_REPOSITORY_AND_GATEWAY_INTERFACE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REPOSITORY AND GATEWAY INTERFACE NOTE
 # ============================================================
@@ -25482,6 +28011,9 @@ methods should clearly distinguish:
 - mutation with side effects
 - output generation requests
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200026_PROJECT_FLOW_REPOSITORY_AND_GATEWAY_INTERFACE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200027_PROJECT_FLOW_VALIDATION_AND_ERROR_HANDLING_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW VALIDATION AND ERROR HANDLING DETAIL
 # ============================================================
@@ -25523,6 +28055,9 @@ error_handling_rules:
 - retryability should be explicit for boundary and sync failures
 - same error policy should apply on smartphone and pc
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200027_PROJECT_FLOW_VALIDATION_AND_ERROR_HANDLING_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200028_PROJECT_FLOW_MIGRATION_SPLIT_PLAN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MIGRATION SPLIT PLAN NOTE
 # ============================================================
@@ -25556,6 +28091,9 @@ split_rules:
 - keep trigger introduction separate from base table creation where useful
 - review enum/check constraint hardening with DB owner
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200028_PROJECT_FLOW_MIGRATION_SPLIT_PLAN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200029_PROJECT_FLOW_WIREFRAME_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW WIREFRAME IMPLEMENTATION NOTE
 # ============================================================
@@ -25576,6 +28114,9 @@ implementation_points:
 - read-only banner placement should be stable across screen families
 - export and report actions should stay in predictable top-level positions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200029_PROJECT_FLOW_WIREFRAME_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200030_PROJECT_FLOW_CUSTOMER_MATERIAL_LAYOUT_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER MATERIAL LAYOUT IMPLEMENTATION NOTE
 # ============================================================
@@ -25597,6 +28138,9 @@ implementation_points:
 - keep smartphone stacked layout readable
 - keep export-ready table structure stable
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200030_PROJECT_FLOW_CUSTOMER_MATERIAL_LAYOUT_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200031_PROJECT_FLOW_IMPLEMENTATION_READINESS_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION READINESS MATRIX
 # ============================================================
@@ -25653,6 +28197,9 @@ notes:
 ready_as_design_input means sufficient for future implementation planning,
 not that development has started.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200031_PROJECT_FLOW_IMPLEMENTATION_READINESS_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200032_PROJECT_FLOW_SUPPORT_REDUCTION_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW SUPPORT REDUCTION IMPLEMENTATION NOTE
 # ============================================================
@@ -25680,6 +28227,9 @@ implementation_rules:
 - read-only mode should be obvious
 - customer-facing materials should be easy to locate
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200032_PROJECT_FLOW_SUPPORT_REDUCTION_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200034_PROJECT_FLOW_MULTILINGUAL_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL IMPLEMENTATION NOTE
 # ============================================================
@@ -25707,6 +28257,9 @@ implementation_rules:
 - separate export header localization from source column names
 - keep customer-facing wording templates overridable after generation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200034_PROJECT_FLOW_MULTILINGUAL_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200035_PROJECT_FLOW_LOCALIZATION_KEY_SCOPE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LOCALIZATION KEY SCOPE NOTE
 # ============================================================
@@ -25747,6 +28300,9 @@ customer_material_domain:
 - customer_material.decision_note.title
 - customer_material.follow_up.title
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200035_PROJECT_FLOW_LOCALIZATION_KEY_SCOPE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200036_PROJECT_FLOW_LANGUAGE_RESOLUTION_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LANGUAGE RESOLUTION IMPLEMENTATION NOTE
 # ============================================================
@@ -25772,6 +28328,9 @@ implementation_rules:
 - allow customer-facing output locale to be explicitly chosen when needed
 - keep localization keys stable when later languages are added
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200036_PROJECT_FLOW_LANGUAGE_RESOLUTION_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200037_PROJECT_FLOW_LOCALIZED_CUSTOMER_MATERIAL_TEMPLATE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LOCALIZED CUSTOMER MATERIAL TEMPLATE NOTE
 # ============================================================
@@ -25798,6 +28357,9 @@ implementation_rules:
 - allow post-generation wording override
 - avoid mixing multiple locales in one generated material
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200037_PROJECT_FLOW_LOCALIZED_CUSTOMER_MATERIAL_TEMPLATE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200038_PROJECT_FLOW_LOCALIZED_EXPORT_HEADER_MAP_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LOCALIZED EXPORT HEADER MAP NOTE
 # ============================================================
@@ -25827,6 +28389,9 @@ implementation_rules:
 - export generation should use the selected output locale
 - missing localized header should fall back through defined fallback chain
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200038_PROJECT_FLOW_LOCALIZED_EXPORT_HEADER_MAP_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200039_PROJECT_FLOW_LANGUAGE_PACK_SCOPE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LANGUAGE PACK SCOPE NOTE
 # ============================================================
@@ -25879,6 +28444,9 @@ implementation_rules:
 - packs should be extensible for future languages
 - packs should not store business truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200039_PROJECT_FLOW_LANGUAGE_PACK_SCOPE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200040_PROJECT_FLOW_BILINGUAL_OUTPUT_PRESET_NOTE.md -->
 # ============================================================
 # PROJECT FLOW BILINGUAL_OUTPUT_PRESET_NOTE
 # ============================================================
@@ -25911,6 +28479,9 @@ rules:
 - presets may include wording-style differences by language
 - presets do not replace review and wording override
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200040_PROJECT_FLOW_BILINGUAL_OUTPUT_PRESET_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200041_PROJECT_FLOW_BILINGUAL_LABEL_RESOLUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW BILINGUAL LABEL RESOLUTION NOTE
 # ============================================================
@@ -25946,6 +28517,9 @@ rules:
 - visible labels should not depend on raw field ids
 - fallback should remain reviewable in testing
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200041_PROJECT_FLOW_BILINGUAL_LABEL_RESOLUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200042_PROJECT_FLOW_CUSTOMER_OUTPUT_BILINGUAL_PRESET_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER OUTPUT BILINGUAL PRESET NOTE
 # ============================================================
@@ -25973,6 +28547,9 @@ preset_rules:
 - wording override remains possible after preset application
 - one generated output should use one preset consistently
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200042_PROJECT_FLOW_CUSTOMER_OUTPUT_BILINGUAL_PRESET_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200043_PROJECT_FLOW_MULTILINGUAL_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL OPERATION NOTE
 # ============================================================
@@ -25999,6 +28576,9 @@ maintenance_points:
 - later language addition should not break initial packs
 - terminology changes should update label catalog and presets together
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200043_PROJECT_FLOW_MULTILINGUAL_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200044_PROJECT_FLOW_DEVICE_SUPPORT_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DEVICE SUPPORT IMPLEMENTATION NOTE
 # ============================================================
@@ -26024,6 +28604,9 @@ implementation_rules:
 - keep state and event behavior device-neutral
 - keep only presentation logic device-aware
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200044_PROJECT_FLOW_DEVICE_SUPPORT_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200045_PROJECT_FLOW_DEVICE_PARITY_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DEVICE_PARITY_OPERATION_NOTE
 # ============================================================
@@ -26051,6 +28634,9 @@ warning_points:
 - do not place customer-facing generation only on PC
 - do not place ERP-related request actions only on non-phone layouts
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200045_PROJECT_FLOW_DEVICE_PARITY_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200046_PROJECT_FLOW_FEATURE_SCREEN_OUTPUT_MAPPING_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SCREEN OUTPUT MAPPING NOTE
 # ============================================================
@@ -26078,6 +28664,9 @@ important_mappings:
 - task and open action data may map to follow-up action list
 - issue/risk data map to issue/risk material outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200046_PROJECT_FLOW_FEATURE_SCREEN_OUTPUT_MAPPING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200047_PROJECT_FLOW_REFERENCE_AWARE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE AWARE IMPLEMENTATION NOTE
 # ============================================================
@@ -26097,6 +28686,9 @@ implementation_prep_rules:
 - ProjectFlow-specific implementation should not fork shared ownership concepts without reason
 - promoted common-component candidates should be treated via separate canonical registration flow
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200047_PROJECT_FLOW_REFERENCE_AWARE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200048_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW BUSINESSOS DEPENDENCY IMPLEMENTATION NOTE
 # ============================================================
@@ -26117,6 +28709,9 @@ implementation_rules:
 - failure in BusinessOS-mediated paths should surface as sync/integration state,
   not as ownership confusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200048_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200049_PROJECT_FLOW_ERP_DEPENDENCY_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ERP DEPENDENCY IMPLEMENTATION NOTE
 # ============================================================
@@ -26137,6 +28732,9 @@ implementation_rules:
 - distinguish ERP truth fields from locally editable fields in state mapping
 - preserve local UX even when ERP-mediated paths are unavailable where allowed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200049_PROJECT_FLOW_ERP_DEPENDENCY_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200050_PROJECT_FLOW_COMMON_COMPONENT_AWARE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT AWARE IMPLEMENTATION NOTE
 # ============================================================
@@ -26156,6 +28754,9 @@ implementation_rules:
 - do not move local business semantics into shared layers without separate promotion
 - keep adapter boundaries clear between shared shell and local data mapping
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200050_PROJECT_FLOW_COMMON_COMPONENT_AWARE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200051_PROJECT_FLOW_LOCAL_OWNERSHIP_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LOCAL OWNERSHIP IMPLEMENTATION NOTE
 # ============================================================
@@ -26176,6 +28777,9 @@ implementation_rules:
 - keep shared component use behind adapters where needed
 - keep WBS proposal, material composition, and local narrative logic app-local
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200051_PROJECT_FLOW_LOCAL_OWNERSHIP_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200052_PROJECT_FLOW_FIELD_OWNERSHIP_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FIELD OWNERSHIP IMPLEMENTATION NOTE
 # ============================================================
@@ -26195,6 +28799,9 @@ implementation_rules:
 - sync and boundary status fields should not be mistaken for business truth ownership
 - localized display keys and localized labels should stay outside core business models where possible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200052_PROJECT_FLOW_FIELD_OWNERSHIP_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200053_PROJECT_FLOW_EDITABILITY_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW EDITABILITY IMPLEMENTATION NOTE
 # ============================================================
@@ -26216,6 +28823,9 @@ implementation_rules:
   not editable form input
 - localized display artifacts should stay outside business-edit forms where possible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200053_PROJECT_FLOW_EDITABILITY_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200054_PROJECT_FLOW_ACTION_AUTHORITY_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ACTION AUTHORITY IMPLEMENTATION NOTE
 # ============================================================
@@ -26236,6 +28846,9 @@ implementation_rules:
 - review-required exports should present review state before execution
 - device-specific layouts must not fork action authority
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200054_PROJECT_FLOW_ACTION_AUTHORITY_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200055_PROJECT_FLOW_STATE_TRANSITION_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW STATE TRANSITION IMPLEMENTATION NOTE
 # ============================================================
@@ -26256,6 +28869,9 @@ implementation_rules:
 - UI should surface current state and next valid actions
 - draft/proposal status should be visually distinct from confirmed/approved status
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200055_PROJECT_FLOW_STATE_TRANSITION_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200056_PROJECT_FLOW_AUDITABILITY_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW AUDITABILITY IMPLEMENTATION NOTE
 # ============================================================
@@ -26276,6 +28892,9 @@ implementation_rules:
 - export execution should capture output-type context
 - sync-related audit visibility may reuse sync request and sync log where appropriate
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200056_PROJECT_FLOW_AUDITABILITY_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200057_PROJECT_FLOW_UPLOADED_REFERENCE_AWARE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED REFERENCE AWARE IMPLEMENTATION NOTE
 # ============================================================
@@ -26296,6 +28915,9 @@ implementation_prep_rules:
 - do not use dumps as ownership replacement for higher canonical docs
 - keep ProjectFlow-local implementation planning scoped to app-local behavior
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200057_PROJECT_FLOW_UPLOADED_REFERENCE_AWARE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200058_PROJECT_FLOW_REFERENCE_FIRST_CHECK_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE FIRST CHECK IMPLEMENTATION NOTE
 # ============================================================
@@ -26315,6 +28937,9 @@ implementation_prep_rules:
 - use ProjectFlow local notes first for app-local ownership and editability questions
 - escalate to higher canonical references when local notes overlap external ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200058_PROJECT_FLOW_REFERENCE_FIRST_CHECK_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200059_PROJECT_FLOW_REFERENCE_LOOKUP_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE LOOKUP IMPLEMENTATION NOTE
 # ============================================================
@@ -26334,6 +28959,9 @@ lookup_rules:
 - escalate to architecture/model/integration docs when summary docs are insufficient
 - escalate to uploaded external canonicals only when local ProjectFlow docs defer ownership upward
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200059_PROJECT_FLOW_REFERENCE_LOOKUP_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200060_PROJECT_FLOW_UPLOADED_FILE_LOOKUP_NOTE.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED FILE LOOKUP NOTE
 # ============================================================
@@ -26355,6 +28983,9 @@ lookup_guidance:
 - use schema summary before schema full text where possible
 - use dumps only when higher-level canonical or summary references are insufficient
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200060_PROJECT_FLOW_UPLOADED_FILE_LOOKUP_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200061_PROJECT_FLOW_REFERENCE_UPDATE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE UPDATE IMPLEMENTATION NOTE
 # ============================================================
@@ -26374,6 +29005,9 @@ implementation_rules:
 - do not hardcode assumptions that a file version never changes
 - prefer explicit review of local alignment notes after major external reference replacement
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200061_PROJECT_FLOW_REFERENCE_UPDATE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200062_PROJECT_FLOW_REFERENCE_CONFLICT_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT IMPLEMENTATION NOTE
 # ============================================================
@@ -26395,6 +29029,9 @@ implementation_rules:
 - update ProjectFlow local notes after conflict resolution,
   not before
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200062_PROJECT_FLOW_REFERENCE_CONFLICT_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200063_PROJECT_FLOW_CONFLICT_STOP_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CONFLICT STOP IMPLEMENTATION NOTE
 # ============================================================
@@ -26414,6 +29051,9 @@ implementation_rules:
 - do not finalize editable versus reference-only UI behavior while editability conflicts remain open
 - record blocked planning areas explicitly when stop conditions are hit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200063_PROJECT_FLOW_CONFLICT_STOP_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200064_PROJECT_FLOW_SAFE_PREP_AND_BLOCKED_AREA_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW SAFE PREP AND BLOCKED AREA MATRIX
 # ============================================================
@@ -26473,6 +29113,9 @@ shared_common_component_reownership:
 - status: blocked
 - reason: violates external canonical ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200064_PROJECT_FLOW_SAFE_PREP_AND_BLOCKED_AREA_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200065_PROJECT_FLOW_NEXT_PHASE_PRIORITY_MATRIX.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE PRIORITY MATRIX
 # ============================================================
@@ -26532,6 +29175,9 @@ shared_common_component_reownership:
 - priority: blocked
 - readiness: not_allowed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200065_PROJECT_FLOW_NEXT_PHASE_PRIORITY_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200066_PROJECT_FLOW_NEXT_PHASE_EXECUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE EXECUTION NOTE
 # ============================================================
@@ -26552,6 +29198,9 @@ execution_rules:
 - record blocked items explicitly instead of silently skipping them
 - keep local refinement separate from external-boundary reinterpretation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200066_PROJECT_FLOW_NEXT_PHASE_EXECUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200067_PROJECT_FLOW_WORK_PACKAGE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE IMPLEMENTATION NOTE
 # ============================================================
@@ -26572,6 +29221,9 @@ implementation_rules:
 - each package should name its prerequisite documents explicitly
 - completion checkpoints should be document-oriented in current phase
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200067_PROJECT_FLOW_WORK_PACKAGE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200068_PROJECT_FLOW_BOUNDARY_WORK_PACKAGE_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW BOUNDARY WORK PACKAGE IMPLEMENTATION NOTE
 # ============================================================
@@ -26594,6 +29246,9 @@ implementation_rules:
   summaries,
   or reopen-condition notes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200068_PROJECT_FLOW_BOUNDARY_WORK_PACKAGE_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200069_PROJECT_FLOW_GATE_REVIEW_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW GATE REVIEW IMPLEMENTATION NOTE
 # ============================================================
@@ -26614,6 +29269,9 @@ implementation_rules:
 - blocked packages should record non-start result explicitly
 - boundary-sensitive packages should record conflict-clear status explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200069_PROJECT_FLOW_GATE_REVIEW_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200070_PROJECT_FLOW_WORK_PACKAGE_EXECUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE EXECUTION NOTE
 # ============================================================
@@ -26635,6 +29293,9 @@ implementation_rules:
 - package completion should be document-oriented in current phase
 - pause reasons should remain explicit rather than implicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200070_PROJECT_FLOW_WORK_PACKAGE_EXECUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200071_PROJECT_FLOW_REOPEN_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REOPEN IMPLEMENTATION NOTE
 # ============================================================
@@ -26657,6 +29318,9 @@ implementation_rules:
   boundary_sensitive,
   or blocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200071_PROJECT_FLOW_REOPEN_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200072_PROJECT_FLOW_DB_HARDENING_FINAL_REVIEW_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB HARDENING FINAL REVIEW NOTE
 # ============================================================
@@ -26780,6 +29444,9 @@ stop_conditions:
 - unresolved ERP reference interpretation blocks mixed-field hardening
 - unresolved mediation conflict blocks sync-related hardening assumptions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200072_PROJECT_FLOW_DB_HARDENING_FINAL_REVIEW_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200073_PROJECT_FLOW_WBS_PROPOSAL_EXACT_RULES_NOTE.md -->
 # ============================================================
 # PROJECT FLOW WBS PROPOSAL EXACT RULES NOTE
 # ============================================================
@@ -26923,6 +29590,9 @@ proposal_outputs:
 - dependency-aware order
 - proposal_payload_json
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200073_PROJECT_FLOW_WBS_PROPOSAL_EXACT_RULES_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200074_PROJECT_FLOW_POST_EXACT_IMPLEMENTATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW POST EXACT IMPLEMENTATION NOTE
 # ============================================================
@@ -26942,6 +29612,9 @@ implementation_guidance:
 - escalate DB execution-phase items to DB-owner review path
 - do not reopen resolved broad design unless a real conflict is found
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200074_PROJECT_FLOW_POST_EXACT_IMPLEMENTATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200076_PROJECT_FLOW_FINAL_IMPLEMENTATION_CHOICE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL IMPLEMENTATION CHOICE NOTE
 # ============================================================
@@ -26996,6 +29669,9 @@ background_job_choice:
 implementation_effect:
 These items are no longer open for ordinary planning.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200076_PROJECT_FLOW_FINAL_IMPLEMENTATION_CHOICE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200077_PROJECT_FLOW_DB_OWNER_REVIEW_BOUNDARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW BOUNDARY NOTE
 # ============================================================
@@ -27024,6 +29700,9 @@ These items remain intentionally outside ordinary app-local finalization.
 They should be resolved in DB-owner review flow,
 not by silent local closure.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200077_PROJECT_FLOW_DB_OWNER_REVIEW_BOUNDARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200078_PROJECT_FLOW_REMAINING_ITEM_EXECUTION_BOUNDARY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW REMAINING ITEM EXECUTION BOUNDARY NOTE
 # ============================================================
@@ -27044,6 +29723,9 @@ execution_boundary_rules:
 - non-blocking cleanup items are optional polish tasks
 - no remaining item should be mistaken for broad design incompleteness
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200078_PROJECT_FLOW_REMAINING_ITEM_EXECUTION_BOUNDARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200079_PROJECT_FLOW_DB_OWNER_REVIEW_EXECUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW EXECUTION NOTE
 # ============================================================
@@ -27067,6 +29749,9 @@ execution_rules:
 - review RLS execution design after ownership and hardening direction are stable
 - record explicit non-start or hold reasons for any unresolved DB item
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200079_PROJECT_FLOW_DB_OWNER_REVIEW_EXECUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200080_PROJECT_FLOW_DB_OWNER_REVIEW_RESULT_HANDLING_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW RESULT HANDLING NOTE
 # ============================================================
@@ -27089,6 +29774,9 @@ handling_rules:
 - confirmed DB review outputs should be reflected into local notes explicitly
 - unresolved items must remain visible and not be silently assumed resolved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200080_PROJECT_FLOW_DB_OWNER_REVIEW_RESULT_HANDLING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200081_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW UNLOCK NOTE
 # ============================================================
@@ -27111,6 +29799,9 @@ implementation_rules:
 - unlocked DB areas may proceed into deeper planning only after result recording
 - blocked DB areas must remain visible in implementation-prep notes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200081_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200082_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW POST RESULT NOTE
 # ============================================================
@@ -27134,6 +29825,9 @@ implementation_rules:
 - partial confirmation requires area-by-area planning split
 - hold result should preserve explicit stop conditions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200082_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200083_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW REFLECTION NOTE
 # ============================================================
@@ -27157,6 +29851,9 @@ implementation_rules:
 - update execution-boundary notes when DB items move from blocked to confirmed
 - keep reflection history explicit rather than silent
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200083_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200084_PROJECT_FLOW_IMPLEMENTATION_START_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START NOTE
 # ============================================================
@@ -27181,6 +29878,9 @@ implementation_rules:
 - treat DB-confirmed areas as confirmed inputs only where review recorded them
 - keep still-blocked areas out of active implementation-start planning
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200084_PROJECT_FLOW_IMPLEMENTATION_START_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200085_PROJECT_FLOW_IMPLEMENTATION_START_WORK_PACKAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START WORK PACKAGE NOTE
 # ============================================================
@@ -27206,6 +29906,9 @@ implementation_rules:
   - local cache and sync slice map
 - do not treat planning package completion as coding start automatically
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200085_PROJECT_FLOW_IMPLEMENTATION_START_WORK_PACKAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200086_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START DELIVERABLE NOTE
 # ============================================================
@@ -27229,6 +29932,9 @@ implementation_rules:
   not by executable code existence
 - boundary-aware deliverables should stay conditional on confirmed boundary assumptions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200086_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200087_PROJECT_FLOW_IMPLEMENTATION_START_REVIEW_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START REVIEW NOTE
 # ============================================================
@@ -27251,6 +29957,9 @@ implementation_rules:
 - partial review outcomes should narrow next-step scope explicitly
 - no planning deliverable should silently move forward without review result
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200087_PROJECT_FLOW_IMPLEMENTATION_START_REVIEW_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200088_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START EXECUTION NOTE
 # ============================================================
@@ -27271,6 +29980,9 @@ implementation_rules:
 - keep execution outputs document-oriented in this phase
 - update package execution record after each ledger step starts or completes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200088_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200089_PROJECT_FLOW_IMPLEMENTATION_START_DEPENDENCY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START DEPENDENCY NOTE
 # ============================================================
@@ -27291,6 +30003,9 @@ implementation_rules:
 - boundary-aware packages must additionally respect conflict and DB-review conditions
 - package dependency state should be visible in execution records where practical
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200089_PROJECT_FLOW_IMPLEMENTATION_START_DEPENDENCY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200090_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_NOTE.md -->
 # ============================================================
 # PROJECT FLOW OFFICIAL COMMON COMPONENT LEDGER NOTE
 # ============================================================
@@ -27310,6 +30025,9 @@ implementation_rules:
 - do not re-canonicalize already-official components inside ProjectFlow docs
 - only unresolved or not-yet-promoted candidates remain in app-local scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200090_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200091_PROJECT_FLOW_COMMON_COMPONENT_DECISION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT DECISION NOTE
 # ============================================================
@@ -27331,6 +30049,9 @@ implementation_rules:
 - keep app-local adapters explicit around shared components
 - record decisions so the same concern is not re-decided inconsistently later
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200091_PROJECT_FLOW_COMMON_COMPONENT_DECISION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200092_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_NOTE.md -->
 # ============================================================
 # PROJECT FLOW SHARED COMPONENT ADAPTER NOTE
 # ============================================================
@@ -27352,6 +30073,9 @@ implementation_rules:
 - avoid leaking ProjectFlow-only business meaning into shared contracts
 - record wrapper usage when UI composition needs extra local orchestration
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200092_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200093_PROJECT_FLOW_LOCAL_ORCHESTRATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LOCAL ORCHESTRATION NOTE
 # ============================================================
@@ -27375,6 +30099,9 @@ implementation_rules:
   and local visibility behavior
 - final screen behavior remains ProjectFlow-owned
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200093_PROJECT_FLOW_LOCAL_ORCHESTRATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200094_PROJECT_FLOW_SCREEN_ORCHESTRATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW SCREEN ORCHESTRATION NOTE
 # ============================================================
@@ -27399,6 +30126,9 @@ implementation_rules:
 - reuse official shared components when available
 - keep ProjectFlow-specific composition and action routing local
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200094_PROJECT_FLOW_SCREEN_ORCHESTRATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200095_PROJECT_FLOW_SCREEN_PACKAGE_CONNECTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW SCREEN PACKAGE CONNECTION NOTE
 # ============================================================
@@ -27421,6 +30151,9 @@ implementation_rules:
   before deeper package breakdown
 - boundary-aware screens should keep blocked dependency notes visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200095_PROJECT_FLOW_SCREEN_PACKAGE_CONNECTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200096_PROJECT_FLOW_DELIVERABLE_DEPENDENCY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DELIVERABLE DEPENDENCY NOTE
 # ============================================================
@@ -27441,6 +30174,9 @@ implementation_rules:
 - partial approval of an upstream deliverable should narrow downstream scope explicitly
 - hold status should block dependent deliverables until resolved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200096_PROJECT_FLOW_DELIVERABLE_DEPENDENCY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200097_PROJECT_FLOW_FEATURE_SLICE_ENTRY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE ENTRY NOTE
 # ============================================================
@@ -27463,6 +30199,9 @@ implementation_rules:
 - use reviewed deliverables only
 - keep blocked downstream slices explicitly blocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200097_PROJECT_FLOW_FEATURE_SLICE_ENTRY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200098_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE EXECUTION NOTE
 # ============================================================
@@ -27484,6 +30223,9 @@ implementation_rules:
 - do not merge multiple slices into one vague planning block
 - record blocked boundary-aware slices explicitly when prerequisites are incomplete
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200098_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200099_PROJECT_FLOW_FEATURE_SLICE_DELIVERABLE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE DELIVERABLE NOTE
 # ============================================================
@@ -27506,6 +30248,9 @@ implementation_rules:
 - boundary-aware slices must preserve boundary assumptions explicitly
 - completion does not imply coding start automatically
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200099_PROJECT_FLOW_FEATURE_SLICE_DELIVERABLE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200100_PROJECT_FLOW_FEATURE_SLICE_REVIEW_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE REVIEW NOTE
 # ============================================================
@@ -27527,6 +30272,9 @@ implementation_rules:
 - partial outcomes should narrow next-step slices explicitly
 - blocked scope should remain visible after review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200100_PROJECT_FLOW_FEATURE_SLICE_REVIEW_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200101_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE EXECUTION NOTE
 # ============================================================
@@ -27547,6 +30295,9 @@ implementation_rules:
 - paused and blocked reasons should remain explicit
 - progress summaries should distinguish local slices from boundary-aware slices
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200101_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200102_PROJECT_FLOW_FEATURE_SLICE_REOPEN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE REOPEN NOTE
 # ============================================================
@@ -27567,6 +30318,9 @@ implementation_rules:
 - blocked-to-reopen transitions should record what changed
 - boundary-aware reopen should preserve boundary and blocked-condition checks
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200102_PROJECT_FLOW_FEATURE_SLICE_REOPEN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200103_PROJECT_FLOW_CODING_START_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START NOTE
 # ============================================================
@@ -27589,6 +30343,9 @@ implementation_rules:
 - treat coding-start planning as a new narrowing step,
   not automatic full implementation start
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200103_PROJECT_FLOW_CODING_START_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200104_PROJECT_FLOW_CODING_START_WORK_PACKAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START WORK PACKAGE NOTE
 # ============================================================
@@ -27611,6 +30368,9 @@ implementation_rules:
 - package outputs should be code-start-oriented,
   but still planning-scoped at this stage
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200104_PROJECT_FLOW_CODING_START_WORK_PACKAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200105_PROJECT_FLOW_CODING_START_DELIVERABLE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START DELIVERABLE NOTE
 # ============================================================
@@ -27633,6 +30393,9 @@ implementation_rules:
 - boundary-aware deliverables must preserve blocked conditions explicitly
 - completion does not imply full coding execution automatically
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200105_PROJECT_FLOW_CODING_START_DELIVERABLE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200106_PROJECT_FLOW_CODING_START_REVIEW_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START REVIEW NOTE
 # ============================================================
@@ -27655,6 +30418,9 @@ implementation_rules:
 - partial outcomes should narrow next-step coding scope explicitly
 - blocked scope should remain visible after review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200106_PROJECT_FLOW_CODING_START_REVIEW_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200107_PROJECT_FLOW_CODING_START_EXECUTION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START EXECUTION NOTE
 # ============================================================
@@ -27675,6 +30441,9 @@ implementation_rules:
 - paused and blocked reasons should remain explicit
 - progress summaries should distinguish local packages from boundary-aware packages
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200107_PROJECT_FLOW_CODING_START_EXECUTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200108_PROJECT_FLOW_CODING_START_REOPEN_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START REOPEN NOTE
 # ============================================================
@@ -27695,6 +30464,9 @@ implementation_rules:
 - blocked-to-reopen transitions should record what changed
 - boundary-aware reopen should preserve boundary and blocked-condition checks
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200108_PROJECT_FLOW_CODING_START_REOPEN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200109_PROJECT_FLOW_CODING_START_DEPENDENCY_AND_TASK_ENTRY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CODING START DEPENDENCY AND TASK ENTRY NOTE
 # ============================================================
@@ -27717,6 +30489,9 @@ implementation_rules:
 - actual task breakdown should be unit-oriented and explicit,
   not one large undifferentiated implementation block
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200109_PROJECT_FLOW_CODING_START_DEPENDENCY_AND_TASK_ENTRY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200110_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK NOTE
 # ============================================================
@@ -27738,6 +30513,9 @@ implementation_rules:
 - boundary-aware tasks must preserve blocked-scope exclusion explicitly
 - task review should happen before dependent tasks are unlocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200110_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200111_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK OPERATION NOTE
 # ============================================================
@@ -27760,6 +30538,9 @@ implementation_rules:
 - boundary-aware tasks must preserve blocked-scope exclusion explicitly
 - next implementation units should start only from approved task outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200111_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200112_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT NOTE
 # ============================================================
@@ -27781,6 +30562,9 @@ implementation_rules:
 - boundary-aware units must preserve blocked-scope exclusion explicitly
 - unit review should happen before dependent units are unlocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200112_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200113_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT OPERATION NOTE
 # ============================================================
@@ -27803,6 +30587,9 @@ implementation_rules:
 - boundary-aware units must preserve blocked-scope exclusion explicitly
 - concrete coding work groups should start only from approved unit outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200113_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200114_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP NOTE
 # ============================================================
@@ -27824,6 +30611,9 @@ implementation_rules:
 - boundary-aware work groups must preserve blocked-scope exclusion explicitly
 - work-group review should happen before dependent work groups are unlocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200114_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200115_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP OPERATION NOTE
 # ============================================================
@@ -27846,6 +30636,9 @@ implementation_rules:
 - boundary-aware work groups must preserve blocked-scope exclusion explicitly
 - concrete file/task units should start only from approved work-group outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200115_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200116_PROJECT_FLOW_CONCRETE_FILE_UNIT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT NOTE
 # ============================================================
@@ -27867,6 +30660,9 @@ implementation_rules:
 - boundary-aware file units must preserve blocked-scope exclusion explicitly
 - file-unit review should happen before dependent units are unlocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200116_PROJECT_FLOW_CONCRETE_FILE_UNIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200117_PROJECT_FLOW_CONCRETE_FILE_UNIT_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT OPERATION NOTE
 # ============================================================
@@ -27889,6 +30685,9 @@ implementation_rules:
 - boundary-aware file units must preserve blocked-scope exclusion explicitly
 - patch-level tasks should start only from approved file-unit outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200117_PROJECT_FLOW_CONCRETE_FILE_UNIT_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200118_PROJECT_FLOW_PATCH_TASK_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK OPERATION NOTE
 # ============================================================
@@ -27910,6 +30709,9 @@ implementation_rules:
 - boundary-aware patch tasks must preserve blocked-scope exclusion explicitly
 - patch review and approval should happen before dependent patch tasks are unlocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200118_PROJECT_FLOW_PATCH_TASK_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200119_PROJECT_FLOW_PATCH_TASK_COMPLETION_AND_COMMIT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK COMPLETION AND COMMIT NOTE
 # ============================================================
@@ -27931,6 +30733,9 @@ implementation_rules:
 - boundary-aware patch tasks must preserve blocked-scope exclusion explicitly
 - commit or PR-sized units should start only from approved patch-task outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200119_PROJECT_FLOW_PATCH_TASK_COMPLETION_AND_COMMIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200120_PROJECT_FLOW_COMMIT_PR_UNIT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT NOTE
 # ============================================================
@@ -27954,6 +30759,9 @@ implementation_rules:
 - boundary-aware units must preserve blocked-scope exclusion explicitly
 - review and approval should happen before dependent commit / PR units are unlocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200120_PROJECT_FLOW_COMMIT_PR_UNIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200121_PROJECT_FLOW_COMMIT_PR_UNIT_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT OPERATION NOTE
 # ============================================================
@@ -27976,6 +30784,9 @@ implementation_rules:
 - merge or release-prep units should start only from approved commit / PR outputs
 - change sets should remain review-friendly and explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200121_PROJECT_FLOW_COMMIT_PR_UNIT_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200122_PROJECT_FLOW_MERGE_RELEASE_UNIT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT NOTE
 # ============================================================
@@ -27999,6 +30810,9 @@ implementation_rules:
 - boundary-aware units must preserve blocked-scope exclusion explicitly
 - review and approval should happen before dependent merge or release-prep units are unlocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200122_PROJECT_FLOW_MERGE_RELEASE_UNIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200123_PROJECT_FLOW_MERGE_RELEASE_UNIT_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT OPERATION NOTE
 # ============================================================
@@ -28023,6 +30837,9 @@ implementation_rules:
   additive,
   and review-friendly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200123_PROJECT_FLOW_MERGE_RELEASE_UNIT_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200124_PROJECT_FLOW_RC_HANDOFF_UNIT_NOTE.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF UNIT NOTE
 # ============================================================
@@ -28047,6 +30864,9 @@ implementation_rules:
 - review and approval should happen before dependent RC or handoff units are unlocked
 - handoff summaries should reflect approved reality only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200124_PROJECT_FLOW_RC_HANDOFF_UNIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200125_PROJECT_FLOW_RC_HANDOFF_AND_CLOSURE_OPERATION_NOTE.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF AND CLOSURE OPERATION NOTE
 # ============================================================
@@ -28071,6 +30891,9 @@ implementation_rules:
   factual,
   and restart-friendly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200125_PROJECT_FLOW_RC_HANDOFF_AND_CLOSURE_OPERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200126_PROJECT_FLOW_FINAL_CLOSURE_AND_RESTART_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL CLOSURE AND RESTART NOTE
 # ============================================================
@@ -28092,6 +30915,9 @@ implementation_rules:
 - final navigation should stay concise and operational
 - restart materials should not reopen blocked scope silently
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200126_PROJECT_FLOW_FINAL_CLOSURE_AND_RESTART_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200127_PROJECT_FLOW_FINAL_ENTRY_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL ENTRY USAGE NOTE
 # ============================================================
@@ -28112,6 +30938,9 @@ usage_rules:
 - use final navigation for locating deeper reference materials
 - do not bypass these entry docs by reopening deep structure directly unless necessary
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200127_PROJECT_FLOW_FINAL_ENTRY_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200128_PROJECT_FLOW_FINAL_LOCK_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL LOCK NOTE
 # ============================================================
@@ -28132,6 +30961,9 @@ usage_rules:
 - preserve blocked and deferred scope explicitly
 - reopen broad design only with explicit reason
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200128_PROJECT_FLOW_FINAL_LOCK_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200129_PROJECT_FLOW_FINAL_NAVIGATION_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL NAVIGATION USAGE NOTE
 # ============================================================
@@ -28151,6 +30983,9 @@ usage_rules:
 - use closure candidate summary when deciding whether to keep closing or move on
 - keep DB-owner review, implementation continuation, and closure cleanup as separate paths
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200129_PROJECT_FLOW_FINAL_NAVIGATION_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200130_PROJECT_FLOW_MASTER_CLOSURE_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MASTER CLOSURE USAGE NOTE
 # ============================================================
@@ -28174,6 +31009,9 @@ usage_rules:
   and future scope
 - prefer entry docs before deep structure docs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200130_PROJECT_FLOW_MASTER_CLOSURE_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200131_PROJECT_FLOW_TERMINAL_CLOSURE_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL CLOSURE USAGE NOTE
 # ============================================================
@@ -28195,6 +31033,9 @@ usage_rules:
   implementation continuation,
   and future sophistication as separate decisions
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200131_PROJECT_FLOW_TERMINAL_CLOSURE_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200132_PROJECT_FLOW_PRACTICAL_END_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW PRACTICAL END USAGE NOTE
 # ============================================================
@@ -28218,6 +31059,9 @@ usage_rules:
   closure cleanup,
   and future sophistication separate
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200132_PROJECT_FLOW_PRACTICAL_END_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200133_PROJECT_FLOW_TERMINAL_MASTER_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL MASTER USAGE NOTE
 # ============================================================
@@ -28238,6 +31082,9 @@ usage_rules:
 - use final continuation chooser before starting any new branch of work
 - keep continuation modes separated explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200133_PROJECT_FLOW_TERMINAL_MASTER_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200134_PROJECT_FLOW_TERMINAL_SHORTCUT_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL SHORTCUT USAGE NOTE
 # ============================================================
@@ -28257,6 +31104,9 @@ usage_rules:
 - use end-state navigation for terminal understanding
 - use last-mile note before deciding whether to continue or stop
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200134_PROJECT_FLOW_TERMINAL_SHORTCUT_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200135_PROJECT_FLOW_STOP_AND_RESUME_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW STOP AND RESUME USAGE NOTE
 # ============================================================
@@ -28276,6 +31126,9 @@ usage_rules:
 - use final tiny hub for the smallest restart flow
 - avoid reopening deep structure before selecting a resume path
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200135_PROJECT_FLOW_STOP_AND_RESUME_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200136_PROJECT_FLOW_MASTER_TERMINAL_INDEX_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW MASTER TERMINAL INDEX USAGE NOTE
 # ============================================================
@@ -28298,6 +31151,9 @@ usage_rules:
   closure cleanup,
   and future sophistication separate
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200136_PROJECT_FLOW_MASTER_TERMINAL_INDEX_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200137_PROJECT_FLOW_FINAL_COMPLETION_USAGE_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FINAL COMPLETION USAGE NOTE
 # ============================================================
@@ -28321,6 +31177,9 @@ usage_rules:
   closure cleanup,
   and future sophistication separate
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200137_PROJECT_FLOW_FINAL_COMPLETION_USAGE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200138_PROJECT_FLOW_OPTIONAL_FINAL_VISIBILITY_NOTE.md -->
 # ============================================================
 # PROJECT FLOW OPTIONAL FINAL VISIBILITY NOTE
 # ============================================================
@@ -28340,7 +31199,1196 @@ usage_rules:
 - use ultra short note for next-chat restart
 - use scope-boundary-after-completion note to avoid mixing next-stage work into current closure
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/1200138_PROJECT_FLOW_OPTIONAL_FINAL_VISIBILITY_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120300_PROJECTFLOW_DELIVERY_CONTROL_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# PROJECTFLOW DELIVERY CONTROL IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: delivery-control-implementation-guide
+
+purpose:
+Provides the first implementation-oriented guide for the newly
+clarified differentiator in ProjectFlow.
+
+implementation_priority:
+- Phase A should begin from project cockpit and risk visibility,
+  not from generic task CRUD expansion.
+- Delivery control should become visible before deeper automation.
+
+recommended_phase_a_entry:
+- fix row families for delivery timeline, dependency exposure, and cockpit outputs
+- freeze cockpit and risk-review DTOs
+- separate raw task mutation from delivery health aggregation
+- create slice order:
+  - project cockpit query
+  - risk dependency review query
+  - owner escalation action
+  - milestone health review
+
+hard_rules:
+- keep task state separate from delivery rollup state
+- keep risk review separate from raw history
+- do not collapse dependency exposure into only task comments
+- do not bury escalation state inside generic task notes
+
+implementation_readiness_signal:
+- once DDL, DTO, stub boundaries, and slice order are frozen,
+  ProjectFlow can follow the same bundled Phase A pattern used in
+  NameCardManager and PocketSecretary.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120300_PROJECTFLOW_DELIVERY_CONTROL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120310_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+# ============================================================
+# PROJECTFLOW PHASE A DELIVERY TIMELINE IMPLEMENTATION SKELETON
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-delivery-timeline-implementation-skeleton
+
+purpose:
+Defines the first implementation skeleton for ProjectFlow
+Phase A delivery control without starting runtime generation.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- keep raw task mutation separate from delivery rollup state
+- keep audit append separate from review query repositories
+
+recommended_server_modules:
+- api/controller
+- api/dto
+- application/service
+- application/validator
+- application/mapper
+- domain/model
+- domain/port
+- infrastructure/repository
+- infrastructure/audit
+
+phase_a_skeleton_units:
+- ProjectCockpitQueryController
+- ProjectCockpitQueryService
+- ProjectCockpitQueryValidator
+- DeliveryTimelineRepository
+- RiskDependencyReviewController
+- RiskDependencyReviewService
+- RiskDependencyReviewValidator
+- DependencyReviewRepository
+- ProjectCockpitSnapshotRepository
+- ProjectFlowAuditWriter
+
+responsibility_split:
+- controller:
+  - request parsing
+  - auth context handoff
+  - response serialization
+- service:
+  - cockpit assembly
+  - delivery review orchestration
+  - summary message assembly
+- validator:
+  - required field checks
+  - page and filter boundary checks
+  - Phase A scope rejection
+- mapper:
+  - dto to domain mapping
+  - domain to response mapping
+- repository:
+  - persistence and query only
+  - no business branching
+- audit:
+  - append events after relevant review operations when needed
+
+phase_a_build_order:
+- step_01_project_cockpit_query_path
+- step_02_risk_dependency_review_query_path
+- step_03_add snapshot and audit path
+- step_04_add test baseline
+
+minimum_test_families:
+- project_cockpit_query_success
+- project_cockpit_query_validation_failure
+- risk_dependency_review_query_success
+- risk_dependency_review_filter_by_risk
+- risk_dependency_review_include_resolved_toggle
+
+phase_a_exit_ready_definition:
+- DTO names compile against frozen contracts
+- cockpit and risk review boundaries are explicit
+- row-family assumptions align to the DDL additive plan
+- audit append seam is present where needed
+
+explicit_non_scope:
+- no task write automation in this document
+- no milestone write workflow here
+- no gantt UI implementation here
+- no Android client work here
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120310_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120320_PROJECTFLOW_PHASE_A_STUB_FILE_PLAN.md -->
+# ============================================================
+# PROJECTFLOW PHASE A STUB FILE PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-stub-file-plan
+
+purpose:
+Defines the implementation-ready stub file boundary for
+ProjectFlow Phase A delivery control.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- no Japanese literals in Java source
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append stays separate
+
+target_package_base:
+- com.lsam.ProjectFlow
+
+target_server_source_root_example:
+- src/main/java/com/lsam/ProjectFlow
+
+target_test_source_root_example:
+- src/test/java/com/lsam/ProjectFlow
+
+phase_a_scope_modules:
+- project cockpit query
+- risk dependency review query
+- cockpit snapshot and audit bridge
+
+recommended_stub_tree:
+- src/main/java/com/lsam/ProjectFlow/api/controller/delivery/ProjectCockpitQueryController.java
+- src/main/java/com/lsam/ProjectFlow/api/controller/delivery/RiskDependencyReviewQueryController.java
+
+- src/main/java/com/lsam/ProjectFlow/api/dto/delivery/request/ProjectCockpitQueryRequest.java
+- src/main/java/com/lsam/ProjectFlow/api/dto/delivery/request/RiskDependencyReviewQueryRequest.java
+
+- src/main/java/com/lsam/ProjectFlow/api/dto/delivery/response/ProjectCockpitQueryResponse.java
+- src/main/java/com/lsam/ProjectFlow/api/dto/delivery/response/RiskDependencyReviewQueryResponse.java
+- src/main/java/com/lsam/ProjectFlow/api/dto/common/ErrorResponse.java
+
+- src/main/java/com/lsam/ProjectFlow/application/service/delivery/ProjectCockpitQueryService.java
+- src/main/java/com/lsam/ProjectFlow/application/service/delivery/RiskDependencyReviewQueryService.java
+
+- src/main/java/com/lsam/ProjectFlow/application/validator/delivery/ProjectCockpitQueryValidator.java
+- src/main/java/com/lsam/ProjectFlow/application/validator/delivery/RiskDependencyReviewQueryValidator.java
+
+- src/main/java/com/lsam/ProjectFlow/application/mapper/delivery/ProjectCockpitQueryMapper.java
+- src/main/java/com/lsam/ProjectFlow/application/mapper/delivery/RiskDependencyReviewQueryMapper.java
+
+- src/main/java/com/lsam/ProjectFlow/domain/model/delivery/ProjectDeliveryTimelineItem.java
+- src/main/java/com/lsam/ProjectFlow/domain/model/delivery/DependencyReviewItem.java
+- src/main/java/com/lsam/ProjectFlow/domain/model/delivery/ProjectCockpitSnapshot.java
+
+- src/main/java/com/lsam/ProjectFlow/domain/port/delivery/DeliveryTimelineRepository.java
+- src/main/java/com/lsam/ProjectFlow/domain/port/delivery/DependencyReviewRepository.java
+- src/main/java/com/lsam/ProjectFlow/domain/port/delivery/ProjectCockpitSnapshotRepository.java
+- src/main/java/com/lsam/ProjectFlow/domain/port/delivery/ProjectFlowAuditPort.java
+
+- src/main/java/com/lsam/ProjectFlow/infrastructure/repository/delivery/JdbcDeliveryTimelineRepository.java
+- src/main/java/com/lsam/ProjectFlow/infrastructure/repository/delivery/JdbcDependencyReviewRepository.java
+- src/main/java/com/lsam/ProjectFlow/infrastructure/repository/delivery/JdbcProjectCockpitSnapshotRepository.java
+- src/main/java/com/lsam/ProjectFlow/infrastructure/audit/delivery/DatabaseProjectFlowAuditAdapter.java
+
+- src/main/java/com/lsam/ProjectFlow/config/delivery/ProjectFlowPhaseAConfig.java
+
+- src/test/java/com/lsam/ProjectFlow/application/service/delivery/ProjectCockpitQueryServiceTest.java
+- src/test/java/com/lsam/ProjectFlow/application/service/delivery/RiskDependencyReviewQueryServiceTest.java
+
+file_role_notes:
+- controller:
+  - request entry
+  - auth context handoff
+  - response return only
+- dto:
+  - exact API contract
+- validator:
+  - required field and boundary checks
+- mapper:
+  - dto to domain and domain to response conversion
+- service:
+  - use case orchestration and summary assembly
+- domain model:
+  - runtime meaning carrier
+- port:
+  - stable repository and audit boundary
+- jdbc repository:
+  - SQL-backed adapter
+- audit adapter:
+  - append-only audit bridge
+- config:
+  - bean wiring and module isolation
+
+minimum_stub_creation_order:
+- 01 common error dto
+- 02 request and response dto
+- 03 validators
+- 04 domain models
+- 05 domain ports
+- 06 mappers
+- 07 services
+- 08 controllers
+- 09 jdbc repositories
+- 10 audit adapter
+- 11 config
+- 12 service tests
+
+alignment_requirements:
+- DTO field names must follow the Phase A API DTO freeze
+- row-family assumptions must follow the DDL additive plan
+- cockpit and risk review responses must remain aligned to their fixed payload families
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120320_PROJECTFLOW_PHASE_A_STUB_FILE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120330_PROJECTFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+# ============================================================
+# PROJECTFLOW PHASE A MODULE TASK BREAKDOWN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-module-task-breakdown
+
+purpose:
+Breaks the ProjectFlow Phase A stub plan into module-by-module
+execution tasks.
+
+baseline_dependencies:
+- Phase A delivery timeline DDL additive plan
+- Phase A API starter
+- Phase A API DTO field freeze
+- Phase A implementation skeleton
+
+global_rules:
+- additive only
+- exact DTO names must not drift
+- no destructive schema rewrite
+- no task or milestone write automation in Phase A
+- audit append remains separate from query repositories
+
+module_01_request_response_dto:
+  goal:
+    - create exact request and response DTO classes
+  target_files:
+    - ProjectCockpitQueryRequest.java
+    - RiskDependencyReviewQueryRequest.java
+    - ProjectCockpitQueryResponse.java
+    - RiskDependencyReviewQueryResponse.java
+    - ErrorResponse.java
+  done_definition:
+    - all DTO classes compile
+    - field names match the DTO freeze exactly
+
+module_02_validators:
+  goal:
+    - reject invalid request shapes before service entry
+  target_files:
+    - ProjectCockpitQueryValidator.java
+    - RiskDependencyReviewQueryValidator.java
+  tasks:
+    - required field validation
+    - page boundary validation
+    - filter boundary validation
+  done_definition:
+    - each endpoint has one dedicated validator
+
+module_03_project_cockpit_query:
+  goal:
+    - assemble blocked, at-risk, and upcoming milestone visibility
+  target_files:
+    - ProjectCockpitQueryController.java
+    - ProjectCockpitQueryService.java
+    - ProjectDeliveryTimelineItem.java
+    - DeliveryTimelineRepository.java
+    - JdbcDeliveryTimelineRepository.java
+    - ProjectCockpitQueryMapper.java
+  tasks:
+    - wire controller to validator and service
+    - query delivery timeline rows
+    - assemble cockpit summary message
+    - emit audit append when needed
+  done_definition:
+    - cockpit query path is structurally stable
+
+module_04_risk_dependency_review_query:
+  goal:
+    - expose dependency and risk review rows
+  target_files:
+    - RiskDependencyReviewQueryController.java
+    - RiskDependencyReviewQueryService.java
+    - DependencyReviewItem.java
+    - DependencyReviewRepository.java
+    - JdbcDependencyReviewRepository.java
+    - RiskDependencyReviewQueryMapper.java
+  tasks:
+    - apply risk filters
+    - apply includeResolved toggle
+    - apply includeDecisionPending toggle
+    - emit audit append when needed
+  done_definition:
+    - risk review query path is structurally stable
+
+module_05_snapshot_and_audit_bridge:
+  goal:
+    - define optional snapshot persistence and audit append boundary
+  target_files:
+    - ProjectCockpitSnapshot.java
+    - ProjectCockpitSnapshotRepository.java
+    - JdbcProjectCockpitSnapshotRepository.java
+    - ProjectFlowAuditPort.java
+    - DatabaseProjectFlowAuditAdapter.java
+  tasks:
+    - define snapshot seam
+    - define audit append seams
+    - keep audit append separate from review repositories
+  done_definition:
+    - snapshot and audit boundary is explicit
+
+module_06_configuration:
+  goal:
+    - provide minimum wiring boundary
+  target_files:
+    - ProjectFlowPhaseAConfig.java
+  tasks:
+    - wire controllers to services
+    - wire services to repositories and audit port
+  done_definition:
+    - dependency graph is representable
+
+module_07_tests:
+  goal:
+    - establish minimum Phase A test safety net
+  target_files:
+    - ProjectCockpitQueryServiceTest.java
+    - RiskDependencyReviewQueryServiceTest.java
+  tasks:
+    - success path test
+    - validation failure test
+    - filter variation test
+  done_definition:
+    - each core query service has baseline tests
+
+recommended_execution_order:
+- module_01_request_response_dto
+- module_02_validators
+- module_03_project_cockpit_query
+- module_04_risk_dependency_review_query
+- module_05_snapshot_and_audit_bridge
+- module_06_configuration
+- module_07_tests
+
+phase_a_ready_to_code_gate:
+- DTO names frozen
+- validators fixed
+- repository boundaries explicit
+- service responsibilities explicit
+- cockpit and risk review payload compatibility preserved
+- audit append boundary explicit
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120330_PROJECTFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120340_PROJECTFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+# ============================================================
+# PROJECTFLOW PHASE A EXACT STUB CONTENT ORDER PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-exact-stub-content-order-plan
+
+purpose:
+Defines the exact file content writing order for ProjectFlow
+Phase A stub generation.
+
+baseline_documents:
+- Phase A DDL additive plan
+- Phase A API starter
+- Phase A API DTO field freeze
+- Phase A stub file plan
+- Phase A module task breakdown
+
+global_rules:
+- additive only
+- DTO field names match the freeze document exactly
+- controller stays thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append stays separate
+
+content_order_strategy:
+- start from dependency-light files
+- lock contracts first
+- write ports before adapters
+- write tests after service boundaries are clear
+
+phase_01_common_error_contract:
+  files:
+    - api/dto/common/ErrorResponse.java
+
+phase_02_request_dto_contracts:
+  files:
+    - api/dto/delivery/request/ProjectCockpitQueryRequest.java
+    - api/dto/delivery/request/RiskDependencyReviewQueryRequest.java
+
+phase_03_response_dto_contracts:
+  files:
+    - api/dto/delivery/response/ProjectCockpitQueryResponse.java
+    - api/dto/delivery/response/RiskDependencyReviewQueryResponse.java
+
+phase_04_validators:
+  files:
+    - application/validator/delivery/ProjectCockpitQueryValidator.java
+    - application/validator/delivery/RiskDependencyReviewQueryValidator.java
+
+phase_05_domain_models:
+  files:
+    - domain/model/delivery/ProjectDeliveryTimelineItem.java
+    - domain/model/delivery/DependencyReviewItem.java
+    - domain/model/delivery/ProjectCockpitSnapshot.java
+
+phase_06_domain_ports:
+  files:
+    - domain/port/delivery/DeliveryTimelineRepository.java
+    - domain/port/delivery/DependencyReviewRepository.java
+    - domain/port/delivery/ProjectCockpitSnapshotRepository.java
+    - domain/port/delivery/ProjectFlowAuditPort.java
+
+phase_07_mappers:
+  files:
+    - application/mapper/delivery/ProjectCockpitQueryMapper.java
+    - application/mapper/delivery/RiskDependencyReviewQueryMapper.java
+
+phase_08_services:
+  files:
+    - application/service/delivery/ProjectCockpitQueryService.java
+    - application/service/delivery/RiskDependencyReviewQueryService.java
+
+phase_09_controllers:
+  files:
+    - api/controller/delivery/ProjectCockpitQueryController.java
+    - api/controller/delivery/RiskDependencyReviewQueryController.java
+
+phase_10_repository_adapters:
+  files:
+    - infrastructure/repository/delivery/JdbcDeliveryTimelineRepository.java
+    - infrastructure/repository/delivery/JdbcDependencyReviewRepository.java
+    - infrastructure/repository/delivery/JdbcProjectCockpitSnapshotRepository.java
+
+phase_11_audit_adapter:
+  files:
+    - infrastructure/audit/delivery/DatabaseProjectFlowAuditAdapter.java
+
+phase_12_configuration:
+  files:
+    - config/delivery/ProjectFlowPhaseAConfig.java
+
+phase_13_tests:
+  files:
+    - src/test/java/com/lsam/ProjectFlow/application/service/delivery/ProjectCockpitQueryServiceTest.java
+    - src/test/java/com/lsam/ProjectFlow/application/service/delivery/RiskDependencyReviewQueryServiceTest.java
+
+first_slice_recommended_start:
+- ErrorResponse
+- ProjectCockpitQueryRequest
+- ProjectCockpitQueryResponse
+- ProjectCockpitQueryValidator
+- ProjectDeliveryTimelineItem
+- DeliveryTimelineRepository
+- ProjectCockpitQueryMapper
+- ProjectCockpitQueryService
+- ProjectCockpitQueryController
+- JdbcDeliveryTimelineRepository
+- DatabaseProjectFlowAuditAdapter
+- ProjectFlowPhaseAConfig
+- ProjectCockpitQueryServiceTest
+
+why_this_order:
+- starts from contract-first
+- keeps the first compile graph shallow
+- enables the cockpit query as the narrowest first vertical slice
+- delays risk-review query until cockpit boundaries are stable
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120340_PROJECTFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120350_PROJECTFLOW_PHASE_A_SLICE_COMMAND_PACKS.md -->
+# ============================================================
+# PROJECTFLOW PHASE A SLICE COMMAND PACKS
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-command-packs
+
+purpose:
+Fixes the Termux-oriented stub generation packs for the ProjectFlow
+Phase A vertical slices.
+
+execution_policy:
+- design fixation only in this step
+- actual execution is later
+- Termux one-block style
+- mkdir -p plus cat standard
+- package base is com.lsam.ProjectFlow
+- no Japanese literals in Java source
+- additive only
+
+slice_01_project_cockpit_query:
+  goal:
+    - create the first vertical slice for project cockpit visibility
+  target_files:
+    - api/dto/common/ErrorResponse.java
+    - api/dto/delivery/request/ProjectCockpitQueryRequest.java
+    - api/dto/delivery/response/ProjectCockpitQueryResponse.java
+    - application/validator/delivery/ProjectCockpitQueryValidator.java
+    - domain/model/delivery/ProjectDeliveryTimelineItem.java
+    - domain/port/delivery/DeliveryTimelineRepository.java
+    - application/mapper/delivery/ProjectCockpitQueryMapper.java
+    - application/service/delivery/ProjectCockpitQueryService.java
+    - api/controller/delivery/ProjectCockpitQueryController.java
+    - infrastructure/repository/delivery/JdbcDeliveryTimelineRepository.java
+    - infrastructure/audit/delivery/DatabaseProjectFlowAuditAdapter.java
+    - config/delivery/ProjectFlowPhaseAConfig.java
+    - src/test/java/com/lsam/ProjectFlow/application/service/delivery/ProjectCockpitQueryServiceTest.java
+  default_safe_output_root:
+    - $HOME/.tmp/projectflow-phase-a-slice01
+  exact_termux_command_pack:
+      TARGET_ROOT="${TARGET_ROOT:-$HOME/.tmp/projectflow-phase-a-slice01}"
+      SRC_MAIN="$TARGET_ROOT/src/main/java/com/lsam/ProjectFlow"
+      SRC_TEST="$TARGET_ROOT/src/test/java/com/lsam/ProjectFlow"
+
+      mkdir -p \
+        "$SRC_MAIN/api/dto/common" \
+        "$SRC_MAIN/api/dto/delivery/request" \
+        "$SRC_MAIN/api/dto/delivery/response" \
+        "$SRC_MAIN/application/validator/delivery" \
+        "$SRC_MAIN/domain/model/delivery" \
+        "$SRC_MAIN/domain/port/delivery" \
+        "$SRC_MAIN/application/mapper/delivery" \
+        "$SRC_MAIN/application/service/delivery" \
+        "$SRC_MAIN/api/controller/delivery" \
+        "$SRC_MAIN/infrastructure/repository/delivery" \
+        "$SRC_MAIN/infrastructure/audit/delivery" \
+        "$SRC_MAIN/config/delivery" \
+        "$SRC_TEST/application/service/delivery"
+
+      cat > "$SRC_MAIN/api/dto/common/ErrorResponse.java" <<'EOF'
+      package com.lsam.ProjectFlow.api.dto.common;
+
+      public class ErrorResponse {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/dto/delivery/request/ProjectCockpitQueryRequest.java" <<'EOF'
+      package com.lsam.ProjectFlow.api.dto.delivery.request;
+
+      public class ProjectCockpitQueryRequest {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/dto/delivery/response/ProjectCockpitQueryResponse.java" <<'EOF'
+      package com.lsam.ProjectFlow.api.dto.delivery.response;
+
+      public class ProjectCockpitQueryResponse {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/validator/delivery/ProjectCockpitQueryValidator.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.validator.delivery;
+
+      public class ProjectCockpitQueryValidator {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/model/delivery/ProjectDeliveryTimelineItem.java" <<'EOF'
+      package com.lsam.ProjectFlow.domain.model.delivery;
+
+      public class ProjectDeliveryTimelineItem {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/delivery/DeliveryTimelineRepository.java" <<'EOF'
+      package com.lsam.ProjectFlow.domain.port.delivery;
+
+      public interface DeliveryTimelineRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/mapper/delivery/ProjectCockpitQueryMapper.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.mapper.delivery;
+
+      public class ProjectCockpitQueryMapper {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/service/delivery/ProjectCockpitQueryService.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.service.delivery;
+
+      public class ProjectCockpitQueryService {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/controller/delivery/ProjectCockpitQueryController.java" <<'EOF'
+      package com.lsam.ProjectFlow.api.controller.delivery;
+
+      public class ProjectCockpitQueryController {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/repository/delivery/JdbcDeliveryTimelineRepository.java" <<'EOF'
+      package com.lsam.ProjectFlow.infrastructure.repository.delivery;
+
+      public class JdbcDeliveryTimelineRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/audit/delivery/DatabaseProjectFlowAuditAdapter.java" <<'EOF'
+      package com.lsam.ProjectFlow.infrastructure.audit.delivery;
+
+      public class DatabaseProjectFlowAuditAdapter {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/config/delivery/ProjectFlowPhaseAConfig.java" <<'EOF'
+      package com.lsam.ProjectFlow.config.delivery;
+
+      public class ProjectFlowPhaseAConfig {
+      }
+      EOF
+
+      cat > "$SRC_TEST/application/service/delivery/ProjectCockpitQueryServiceTest.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.service.delivery;
+
+      public class ProjectCockpitQueryServiceTest {
+      }
+      EOF
+
+slice_02_risk_dependency_review_query:
+  goal:
+    - expose dependency and risk review rows
+  target_files:
+    - api/dto/delivery/request/RiskDependencyReviewQueryRequest.java
+    - api/dto/delivery/response/RiskDependencyReviewQueryResponse.java
+    - application/validator/delivery/RiskDependencyReviewQueryValidator.java
+    - domain/model/delivery/DependencyReviewItem.java
+    - domain/port/delivery/DependencyReviewRepository.java
+    - application/mapper/delivery/RiskDependencyReviewQueryMapper.java
+    - application/service/delivery/RiskDependencyReviewQueryService.java
+    - api/controller/delivery/RiskDependencyReviewQueryController.java
+    - infrastructure/repository/delivery/JdbcDependencyReviewRepository.java
+    - src/test/java/com/lsam/ProjectFlow/application/service/delivery/RiskDependencyReviewQueryServiceTest.java
+  default_safe_output_root:
+    - $HOME/.tmp/projectflow-phase-a-slice02
+  exact_termux_command_pack:
+      TARGET_ROOT="${TARGET_ROOT:-$HOME/.tmp/projectflow-phase-a-slice02}"
+      SRC_MAIN="$TARGET_ROOT/src/main/java/com/lsam/ProjectFlow"
+      SRC_TEST="$TARGET_ROOT/src/test/java/com/lsam/ProjectFlow"
+
+      mkdir -p \
+        "$SRC_MAIN/api/dto/delivery/request" \
+        "$SRC_MAIN/api/dto/delivery/response" \
+        "$SRC_MAIN/application/validator/delivery" \
+        "$SRC_MAIN/domain/model/delivery" \
+        "$SRC_MAIN/domain/port/delivery" \
+        "$SRC_MAIN/application/mapper/delivery" \
+        "$SRC_MAIN/application/service/delivery" \
+        "$SRC_MAIN/api/controller/delivery" \
+        "$SRC_MAIN/infrastructure/repository/delivery" \
+        "$SRC_TEST/application/service/delivery"
+
+      cat > "$SRC_MAIN/api/dto/delivery/request/RiskDependencyReviewQueryRequest.java" <<'EOF'
+      package com.lsam.ProjectFlow.api.dto.delivery.request;
+
+      public class RiskDependencyReviewQueryRequest {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/dto/delivery/response/RiskDependencyReviewQueryResponse.java" <<'EOF'
+      package com.lsam.ProjectFlow.api.dto.delivery.response;
+
+      public class RiskDependencyReviewQueryResponse {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/validator/delivery/RiskDependencyReviewQueryValidator.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.validator.delivery;
+
+      public class RiskDependencyReviewQueryValidator {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/model/delivery/DependencyReviewItem.java" <<'EOF'
+      package com.lsam.ProjectFlow.domain.model.delivery;
+
+      public class DependencyReviewItem {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/delivery/DependencyReviewRepository.java" <<'EOF'
+      package com.lsam.ProjectFlow.domain.port.delivery;
+
+      public interface DependencyReviewRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/mapper/delivery/RiskDependencyReviewQueryMapper.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.mapper.delivery;
+
+      public class RiskDependencyReviewQueryMapper {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/service/delivery/RiskDependencyReviewQueryService.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.service.delivery;
+
+      public class RiskDependencyReviewQueryService {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/controller/delivery/RiskDependencyReviewQueryController.java" <<'EOF'
+      package com.lsam.ProjectFlow.api.controller.delivery;
+
+      public class RiskDependencyReviewQueryController {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/repository/delivery/JdbcDependencyReviewRepository.java" <<'EOF'
+      package com.lsam.ProjectFlow.infrastructure.repository.delivery;
+
+      public class JdbcDependencyReviewRepository {
+      }
+      EOF
+
+      cat > "$SRC_TEST/application/service/delivery/RiskDependencyReviewQueryServiceTest.java" <<'EOF'
+      package com.lsam.ProjectFlow.application.service.delivery;
+
+      public class RiskDependencyReviewQueryServiceTest {
+      }
+      EOF
+
+slice_03_snapshot_and_audit_bridge:
+  goal:
+    - expose optional cockpit snapshot persistence and explicit audit seams
+  target_files:
+    - domain/model/delivery/ProjectCockpitSnapshot.java
+    - domain/port/delivery/ProjectCockpitSnapshotRepository.java
+    - domain/port/delivery/ProjectFlowAuditPort.java
+    - infrastructure/repository/delivery/JdbcProjectCockpitSnapshotRepository.java
+    - infrastructure/audit/delivery/DatabaseProjectFlowAuditAdapter.java
+  default_safe_output_root:
+    - $HOME/.tmp/projectflow-phase-a-slice03
+  exact_termux_command_pack:
+      TARGET_ROOT="${TARGET_ROOT:-$HOME/.tmp/projectflow-phase-a-slice03}"
+      SRC_MAIN="$TARGET_ROOT/src/main/java/com/lsam/ProjectFlow"
+
+      mkdir -p \
+        "$SRC_MAIN/domain/model/delivery" \
+        "$SRC_MAIN/domain/port/delivery" \
+        "$SRC_MAIN/infrastructure/repository/delivery" \
+        "$SRC_MAIN/infrastructure/audit/delivery"
+
+      cat > "$SRC_MAIN/domain/model/delivery/ProjectCockpitSnapshot.java" <<'EOF'
+      package com.lsam.ProjectFlow.domain.model.delivery;
+
+      public class ProjectCockpitSnapshot {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/delivery/ProjectCockpitSnapshotRepository.java" <<'EOF'
+      package com.lsam.ProjectFlow.domain.port.delivery;
+
+      public interface ProjectCockpitSnapshotRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/delivery/ProjectFlowAuditPort.java" <<'EOF'
+      package com.lsam.ProjectFlow.domain.port.delivery;
+
+      public interface ProjectFlowAuditPort {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/repository/delivery/JdbcProjectCockpitSnapshotRepository.java" <<'EOF'
+      package com.lsam.ProjectFlow.infrastructure.repository.delivery;
+
+      public class JdbcProjectCockpitSnapshotRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/audit/delivery/DatabaseProjectFlowAuditAdapter.java" <<'EOF'
+      package com.lsam.ProjectFlow.infrastructure.audit.delivery;
+
+      public class DatabaseProjectFlowAuditAdapter {
+      }
+      EOF
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120350_PROJECTFLOW_PHASE_A_SLICE_COMMAND_PACKS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120360_PROJECTFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+# ============================================================
+# PROJECTFLOW PHASE A SLICE FIELD FILL PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-field-fill-plan
+
+purpose:
+Defines what each Phase A slice should contain once empty stubs move
+into field-filled implementation-ready stubs.
+
+global_rules:
+- exact field names follow the DTO freeze exactly
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append remains separate
+- no Japanese literals in Java source
+
+slice_01_project_cockpit_query:
+  target_files:
+    - ErrorResponse.java
+    - ProjectCockpitQueryRequest.java
+    - ProjectCockpitQueryResponse.java
+    - ProjectCockpitQueryValidator.java
+    - ProjectDeliveryTimelineItem.java
+    - DeliveryTimelineRepository.java
+    - ProjectCockpitQueryMapper.java
+    - ProjectCockpitQueryService.java
+    - ProjectCockpitQueryController.java
+    - JdbcDeliveryTimelineRepository.java
+    - DatabaseProjectFlowAuditAdapter.java
+    - ProjectFlowPhaseAConfig.java
+    - ProjectCockpitQueryServiceTest.java
+  expected_fill:
+    - ErrorResponse:
+      - errorCode
+      - errorMessage
+      - requestId
+      - details
+    - ProjectCockpitQueryRequest:
+      - projectId
+      - timezone
+      - includeBlockedItems
+      - includeAtRiskItems
+      - includeUpcomingMilestones
+      - pageSize
+      - pageToken
+    - ProjectCockpitQueryResponse:
+      - projectId
+      - projectTitle
+      - healthSummaryMessage
+      - blockedItems
+      - atRiskItems
+      - upcomingMilestones
+      - ownerEscalationItems
+      - nextPageToken
+      - generatedAt
+    - ProjectCockpitQueryValidator:
+      - validate(ProjectCockpitQueryRequest request)
+      - required checks for projectId, timezone, pageSize
+    - ProjectDeliveryTimelineItem:
+      - fields aligned to delivery_timeline_item row family
+    - DeliveryTimelineRepository:
+      - queryCockpitItems(...)
+      - findUpcomingMilestones(...)
+    - ProjectCockpitQueryMapper:
+      - toCockpitResponse(...)
+    - ProjectCockpitQueryService:
+      - queryProjectCockpit(...)
+    - ProjectCockpitQueryController:
+      - queryProjectCockpit(ProjectCockpitQueryRequest request)
+    - JdbcDeliveryTimelineRepository:
+      - sql placeholders aligned to delivery timeline table
+    - DatabaseProjectFlowAuditAdapter:
+      - appendProjectCockpitQueryAudit(...)
+    - ProjectFlowPhaseAConfig:
+      - first-slice bean wiring placeholders
+    - ProjectCockpitQueryServiceTest:
+      - project_cockpit_query_success
+      - project_cockpit_query_validation_failure
+
+slice_02_risk_dependency_review_query:
+  target_files:
+    - RiskDependencyReviewQueryRequest.java
+    - RiskDependencyReviewQueryResponse.java
+    - RiskDependencyReviewQueryValidator.java
+    - DependencyReviewItem.java
+    - DependencyReviewRepository.java
+    - RiskDependencyReviewQueryMapper.java
+    - RiskDependencyReviewQueryService.java
+    - RiskDependencyReviewQueryController.java
+    - JdbcDependencyReviewRepository.java
+    - RiskDependencyReviewQueryServiceTest.java
+  expected_fill:
+    - RiskDependencyReviewQueryRequest:
+      - projectId
+      - riskLevelFilter
+      - includeResolved
+      - includeDependencies
+      - includeDecisionPending
+      - pageSize
+      - pageToken
+    - RiskDependencyReviewQueryResponse:
+      - projectId
+      - reviewItems
+      - summaryMessage
+      - nextPageToken
+      - generatedAt
+    - RiskDependencyReviewQueryValidator:
+      - validate(RiskDependencyReviewQueryRequest request)
+      - required checks for projectId and pageSize
+    - DependencyReviewItem:
+      - fields aligned to dependency_review_item row family
+    - DependencyReviewRepository:
+      - queryReviewItems(...)
+    - RiskDependencyReviewQueryMapper:
+      - toRiskReviewResponse(...)
+    - RiskDependencyReviewQueryService:
+      - queryRiskDependencyReview(...)
+    - RiskDependencyReviewQueryController:
+      - queryRiskDependencyReview(RiskDependencyReviewQueryRequest request)
+    - JdbcDependencyReviewRepository:
+      - sql placeholders aligned to dependency review table
+    - RiskDependencyReviewQueryServiceTest:
+      - risk_dependency_review_query_success
+      - risk_dependency_review_filter_by_risk
+      - risk_dependency_review_include_resolved_toggle
+
+slice_03_snapshot_and_audit_bridge:
+  target_files:
+    - ProjectCockpitSnapshot.java
+    - ProjectCockpitSnapshotRepository.java
+    - ProjectFlowAuditPort.java
+    - JdbcProjectCockpitSnapshotRepository.java
+    - DatabaseProjectFlowAuditAdapter.java
+  expected_fill:
+    - ProjectCockpitSnapshot:
+      - fields aligned to project_cockpit_snapshot row family
+    - ProjectCockpitSnapshotRepository:
+      - insertSnapshot(...)
+      - findLatestSnapshot(...)
+    - ProjectFlowAuditPort:
+      - appendProjectCockpitQueryAudit(...)
+      - appendRiskDependencyReviewQueryAudit(...)
+    - JdbcProjectCockpitSnapshotRepository:
+      - sql placeholders aligned to cockpit snapshot table
+    - DatabaseProjectFlowAuditAdapter:
+      - explicit append-only audit method seams
+
+done_definition:
+- all slice seams are fixed
+- DTO and row-family alignment is explicit
+- tests are named before runtime generation begins
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120360_PROJECTFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120370_PROJECTFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+# ============================================================
+# PROJECTFLOW PHASE A IMPLEMENTATION READY COMPLETION MEMO
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-implementation-ready-completion
+
+purpose:
+Declares that ProjectFlow Phase A planning has reached
+implementation-ready status without starting real runtime generation.
+
+completion_basis:
+- competitive positioning note added
+- project delivery orchestration architecture added
+- milestone dependency risk architecture added
+- delivery timeline model added
+- project cockpit and risk review exact payloads added
+- project cockpit interface added
+- delivery control implementation guide added
+- Phase A DDL additive plan added
+- Phase A API starter added
+- Phase A DTO field freeze added
+- Phase A implementation skeleton added
+- stub file plan added
+- module task breakdown added
+- exact stub content order plan added
+- slice command packs added
+- slice field-fill plan added
+
+what_is_now_fixed:
+- delivery control differentiator
+- Phase A row-family direction
+- Phase A endpoint contracts
+- repository, service, validator, mapper, and controller boundaries
+- slice-based execution order
+- command-pack-driven stub generation order
+- field-fill expectations for each slice
+
+what_is_not_started_yet:
+- no real Java file generation in app source tree
+- no SQL execution against business schema
+- no runtime framework lock in live codebase
+- no client implementation
+- no task or milestone write automation
+
+implementation_ready_definition_met:
+- the design no longer depends on unresolved major architecture questions
+- the remaining work is fill-in and generation, not rediscovery
+- slice-by-slice execution order is fixed
+- DTO and row-family drift is constrained
+- audit separation remains explicit
+
+recommended_start_when_execution_begins:
+- start from slice_01 project cockpit query only
+- fill first-slice DTOs and seams before moving to slice_02
+- move to slice_03 only after slice_01 and slice_02 compile boundaries are stable
+- preserve review discipline before any SQL apply step
+
+conclusion:
+- ProjectFlow Phase A is implementation-ready at the design level.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120370_PROJECTFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120380_PROJECTFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+# ============================================================
+# PROJECTFLOW PHASE A EXECUTION ENTRY PROTOCOL
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: ProjectFlow
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-execution-entry-protocol
+
+purpose:
+Defines the exact protocol to follow when the project later moves
+from planning artifacts into actual stub generation or SQL execution.
+
+entry_principles:
+- do not begin from slice_03
+- do not generate all files at once without slice order
+- do not execute SQL before review
+- keep additive only
+- keep command packs as the sole sequence authority
+- do not reopen already frozen DTO names casually
+
+execution_start_order:
+- step_01:
+  - execute slice_01 command pack into a safe output root
+- step_02:
+  - fill slice_01 contents according to the field-fill plan
+- step_03:
+  - review compile surface and naming consistency
+- step_04:
+  - execute slice_02 command pack
+- step_05:
+  - fill slice_02 contents according to the field-fill plan
+- step_06:
+  - review cockpit-to-risk-review seam
+- step_07:
+  - execute slice_03 command pack
+- step_08:
+  - fill slice_03 contents according to the field-fill plan
+- step_09:
+  - review snapshot and audit seams
+- step_10:
+  - only after design-to-code review, prepare SQL apply pack
+- step_11:
+  - only after review, execute additive SQL in controlled order
+
+safe_output_policy:
+- initial file generation should use .tmp or another isolated root
+- do not inject generated stubs into a production source tree as the first action
+- compare generated files against design documents before relocation
+
+review_gates:
+- gate_01_contract_review:
+  - DTO names match the freeze document exactly
+- gate_02_boundary_review:
+  - repository and service responsibilities remain separated
+- gate_03_schema_review:
+  - DDL aligns with the planned row families
+- gate_04_query_review:
+  - cockpit and risk review responses remain bound to the fixed payload families
+- gate_05_audit_review:
+  - audit append seams remain separate from query repositories
+
+abort_conditions:
+- a command pack requires reopening DTO names
+- a field-fill plan conflicts with earlier freeze documents
+- existing physical schema core names differ from assumptions materially
+- SQL needs destructive change
+- slice order is being bypassed
+
+handoff_statement:
+- this protocol is the bridge between the planning layer and the later execution layer.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/120.implementation/120380_PROJECTFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300000_PROJECT_FLOW_DEVELOPMENT_INDEX.md -->
 # ============================================================
 # PROJECT FLOW DEVELOPMENT INDEX
 # ============================================================
@@ -28475,6 +32523,9 @@ files:
 - 1300123_PROJECT_FLOW_FINAL_COMPLETION_CHECKLIST.md
 - 1300124_PROJECT_FLOW_OPTIONAL_FINAL_VISIBILITY_CHECKLIST.md
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300000_PROJECT_FLOW_DEVELOPMENT_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300001_PROJECT_FLOW_DEVELOPMENT_OVERVIEW.md -->
 # ============================================================
 # PROJECT FLOW DEVELOPMENT OVERVIEW
 # ============================================================
@@ -28491,6 +32542,9 @@ development_focus:
 - role-aware behavior
 - visibility of delays and risks
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300001_PROJECT_FLOW_DEVELOPMENT_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300002_PROJECT_FLOW_TEST_POINT_DRAFT.md -->
 # ============================================================
 # PROJECT FLOW TEST POINT DRAFT
 # ============================================================
@@ -28509,6 +32563,9 @@ test_points:
 - export request and retry
 - sync error visibility
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300002_PROJECT_FLOW_TEST_POINT_DRAFT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300003_PROJECT_FLOW_MODULE_TEST_STRATEGY.md -->
 # ============================================================
 # PROJECT FLOW MODULE TEST STRATEGY
 # ============================================================
@@ -28535,6 +32592,9 @@ focus_points:
 - report draft remains editable
 - partial failure remains visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300003_PROJECT_FLOW_MODULE_TEST_STRATEGY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300004_PROJECT_FLOW_UI_TEST_POINT_DETAIL.md -->
 # ============================================================
 # PROJECT FLOW UI TEST POINT DETAIL
 # ============================================================
@@ -28554,6 +32614,9 @@ ui_test_points:
 - report editor keeps generated text editable
 - sync status clearly distinguishes retryable failures
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300004_PROJECT_FLOW_UI_TEST_POINT_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300005_PROJECT_FLOW_COMMON_COMPONENT_REUSE_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT REUSE TEST NOTE
 # ============================================================
@@ -28575,6 +32638,9 @@ reuse_test_points:
 - read-only banner and guards work across multiple feature screens
 - report draft editor can accept different template types without project-specific coupling
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300005_PROJECT_FLOW_COMMON_COMPONENT_REUSE_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300006_PROJECT_FLOW_NAVIGATION_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW NAVIGATION TEST NOTE
 # ============================================================
@@ -28598,6 +32664,9 @@ navigation_test_points:
 - smartphone and PC keep same action availability
 - unpaid_read_only keeps actions visible but blocked
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300006_PROJECT_FLOW_NAVIGATION_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300007_PROJECT_FLOW_SUBSCRIPTION_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW SUBSCRIPTION TEST NOTE
 # ============================================================
@@ -28622,6 +32691,9 @@ test_points:
 - read-only banner appears consistently
 - no data is deleted on trial expiry
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300007_PROJECT_FLOW_SUBSCRIPTION_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300008_PROJECT_FLOW_DDL_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DDL REVIEW CHECKLIST
 # ============================================================
@@ -28655,6 +32727,9 @@ review_notes:
 - no destructive migration in initial pass
 - review with DB owner before execution
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300008_PROJECT_FLOW_DDL_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300009_PROJECT_FLOW_ADDITIVE_FEATURE_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW ADDITIVE FEATURE TEST NOTE
 # ============================================================
@@ -28676,6 +32751,9 @@ test_points:
 - schedule proposal remains editable after generation
 - business-day rules affect proposed dates correctly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300009_PROJECT_FLOW_ADDITIVE_FEATURE_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300010_PROJECT_FLOW_TIMELINE_GANTT_DASHBOARD_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TIMELINE GANTT DASHBOARD TEST NOTE
 # ============================================================
@@ -28695,6 +32773,9 @@ test_points:
 - smartphone and pc keep same action availability
 - drilldown from dashboard, timeline, and gantt reaches source screens correctly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300010_PROJECT_FLOW_TIMELINE_GANTT_DASHBOARD_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300011_PROJECT_FLOW_FORM_MEMO_COMMENT_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW FORM MEMO COMMENT TEST NOTE
 # ============================================================
@@ -28715,6 +32796,9 @@ test_points:
 - reply relation remains correct
 - smartphone and pc expose the same form, memo, and comment capabilities
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300011_PROJECT_FLOW_FORM_MEMO_COMMENT_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300012_PROJECT_FLOW_LIGHT_AUTOMATION_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW LIGHT AUTOMATION TEST NOTE
 # ============================================================
@@ -28735,6 +32819,9 @@ test_points:
 - notification opens correct source detail
 - smartphone and pc expose the same rule and notification capability
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300012_PROJECT_FLOW_LIGHT_AUTOMATION_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300013_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW TEMPLATE AND WBS PROPOSAL TEST NOTE
 # ============================================================
@@ -28755,6 +32842,9 @@ test_points:
 - confirmed proposal remains traceable to source template
 - smartphone and pc keep the same proposal capability
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300013_PROJECT_FLOW_TEMPLATE_AND_WBS_PROPOSAL_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300014_PROJECT_FLOW_DESIGN_CONSISTENCY_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW DESIGN CONSISTENCY TEST NOTE
 # ============================================================
@@ -28778,6 +32868,9 @@ consistency_test_points:
 - automation stays lightweight and does not silently mutate business truth
 - form intake remains simplified entry and not duplicate source ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300014_PROJECT_FLOW_DESIGN_CONSISTENCY_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300015_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER FACING SCHEDULE TEST NOTE
 # ============================================================
@@ -28796,6 +32889,9 @@ test_points:
 - wording remains editable before external use
 - export output reflects simplified customer-facing structure
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300015_PROJECT_FLOW_CUSTOMER_FACING_SCHEDULE_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300016_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER EXPLANATION MATERIAL TEST NOTE
 # ============================================================
@@ -28813,6 +32909,9 @@ test_points:
 - materials can be exported separately
 - customer explanation material screen is reachable from project context
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300016_PROJECT_FLOW_CUSTOMER_EXPLANATION_MATERIAL_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300017_PROJECT_FLOW_CUSTOMER_MATERIAL_DETAIL_TEST_NOTE.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER MATERIAL DETAIL TEST NOTE
 # ============================================================
@@ -28833,6 +32932,9 @@ test_points:
 - each material can be exported independently
 - each material remains reviewable before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300017_PROJECT_FLOW_CUSTOMER_MATERIAL_DETAIL_TEST_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300018_PROJECT_FLOW_IMPLEMENTATION_PREP_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION PREP CHECKLIST
 # ============================================================
@@ -28856,6 +32958,9 @@ checklist:
 - no implementation-start-only content mixed into architecture
 - shared BusinessOS boundary remains preserved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300018_PROJECT_FLOW_IMPLEMENTATION_PREP_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300019_PROJECT_FLOW_WIREFRAME_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW WIREFRAME REVIEW CHECKLIST
 # ============================================================
@@ -28875,6 +32980,9 @@ checklist:
 - sync/error visibility is not buried
 - proposal/draft states are visually distinct from confirmed/final states
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300019_PROJECT_FLOW_WIREFRAME_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300020_PROJECT_FLOW_CUSTOMER_MATERIAL_LAYOUT_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER MATERIAL LAYOUT REVIEW CHECKLIST
 # ============================================================
@@ -28895,6 +33003,9 @@ checklist:
 - smartphone and pc remain functionally equivalent
 - export actions are easy to reach on all materials
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300020_PROJECT_FLOW_CUSTOMER_MATERIAL_LAYOUT_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300021_PROJECT_FLOW_FINAL_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FINAL REVIEW CHECKLIST
 # ============================================================
@@ -28930,6 +33041,9 @@ exit_condition:
 Design may be considered well-prepared
 when major gaps and contradictions are resolved or explicitly logged.
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300021_PROJECT_FLOW_FINAL_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300022_PROJECT_FLOW_CUSTOMER_PROVISION_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CUSTOMER PROVISION REVIEW CHECKLIST
 # ============================================================
@@ -28950,6 +33064,9 @@ checklist:
 - no document implies heavy bespoke support by default
 - customer explanation outputs are treated as core product value
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300022_PROJECT_FLOW_CUSTOMER_PROVISION_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300024_PROJECT_FLOW_MULTILINGUAL_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL REVIEW CHECKLIST
 # ============================================================
@@ -28969,6 +33086,9 @@ checklist:
 - unresolved localization keys remain detectable
 - localized customer-facing outputs remain reviewable before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300024_PROJECT_FLOW_MULTILINGUAL_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300025_PROJECT_FLOW_INITIAL_LANGUAGE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW INITIAL LANGUAGE REVIEW CHECKLIST
 # ============================================================
@@ -28987,6 +33107,9 @@ checklist:
 - language switching does not alter business truth
 - one output keeps one locale consistently
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300025_PROJECT_FLOW_INITIAL_LANGUAGE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300026_PROJECT_FLOW_MULTILINGUAL_OUTPUT_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL OUTPUT REVIEW CHECKLIST
 # ============================================================
@@ -29005,6 +33128,9 @@ checklist:
 - wording overrides remain possible after localized generation
 - fallback leakage is detectable before external use
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300026_PROJECT_FLOW_MULTILINGUAL_OUTPUT_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300027_PROJECT_FLOW_MULTILINGUAL_TERMINOLOGY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL TERMINOLOGY REVIEW CHECKLIST
 # ============================================================
@@ -29024,6 +33150,9 @@ checklist:
 - export headers align with preferred terminology
 - one-page summary aligns with preferred terminology
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300027_PROJECT_FLOW_MULTILINGUAL_TERMINOLOGY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300028_PROJECT_FLOW_LANGUAGE_PACK_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW LANGUAGE PACK REVIEW CHECKLIST
 # ============================================================
@@ -29042,6 +33171,9 @@ checklist:
 - future language extension does not break current key model
 - language packs do not contain business truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300028_PROJECT_FLOW_LANGUAGE_PACK_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300029_PROJECT_FLOW_BILINGUAL_LABEL_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW BILINGUAL LABEL REVIEW CHECKLIST
 # ============================================================
@@ -29062,6 +33194,9 @@ checklist:
 - proposal and confirmed remain distinct in both languages
 - read-only wording is understandable in both languages
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300029_PROJECT_FLOW_BILINGUAL_LABEL_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300030_PROJECT_FLOW_MULTILINGUAL_FINAL_REVIEW_SHEET.md -->
 # ============================================================
 # PROJECT FLOW MULTILINGUAL FINAL REVIEW SHEET
 # ============================================================
@@ -29108,6 +33243,9 @@ operation_review:
 - [ ] presets are scoped
 - [ ] future language addition does not break current key model
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300030_PROJECT_FLOW_MULTILINGUAL_FINAL_REVIEW_SHEET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300031_PROJECT_FLOW_DEVICE_SUPPORT_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DEVICE SUPPORT REVIEW CHECKLIST
 # ============================================================
@@ -29127,6 +33265,9 @@ checklist:
 - no device-exclusive major feature remains in wording
 - layout-only difference rule is preserved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300031_PROJECT_FLOW_DEVICE_SUPPORT_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300032_PROJECT_FLOW_DEVICE_PARITY_FINAL_REVIEW_SHEET.md -->
 # ============================================================
 # PROJECT FLOW DEVICE PARITY FINAL REVIEW SHEET
 # ============================================================
@@ -29164,6 +33305,9 @@ consistency_review:
 - [ ] blocked-action visibility is consistent on all supported device types
 - [ ] layout-only difference rule is preserved
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300032_PROJECT_FLOW_DEVICE_PARITY_FINAL_REVIEW_SHEET.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300033_PROJECT_FLOW_CROSS_REFERENCE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CROSS REFERENCE REVIEW CHECKLIST
 # ============================================================
@@ -29182,6 +33326,9 @@ checklist:
 - multilingual scope is not contradicted by output mapping
 - no major feature is left without screen or output context where needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300033_PROJECT_FLOW_CROSS_REFERENCE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300034_PROJECT_FLOW_REFERENCE_ALIGNMENT_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE ALIGNMENT REVIEW CHECKLIST
 # ============================================================
@@ -29199,6 +33346,9 @@ checklist:
 - ProjectFlow does not locally canonicalize common components that belong to separate canonical sets
 - ProjectFlow additive details remain application-scoped
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300034_PROJECT_FLOW_REFERENCE_ALIGNMENT_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300035_PROJECT_FLOW_CANONICAL_PRIORITY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CANONICAL PRIORITY REVIEW CHECKLIST
 # ============================================================
@@ -29216,6 +33366,9 @@ checklist:
 - no ProjectFlow file locally canonicalizes shared common components without separate promotion
 - ProjectFlow-local additive rules stay application-scoped
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300035_PROJECT_FLOW_CANONICAL_PRIORITY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300036_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW BUSINESSOS DEPENDENCY REVIEW CHECKLIST
 # ============================================================
@@ -29235,6 +33388,9 @@ checklist:
 - local multilingual UI handling does not depend on BusinessOS
 - boundary leakage into local screen logic is avoided
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300036_PROJECT_FLOW_BUSINESSOS_DEPENDENCY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300037_PROJECT_FLOW_ERP_DEPENDENCY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW ERP DEPENDENCY REVIEW CHECKLIST
 # ============================================================
@@ -29253,6 +33409,9 @@ checklist:
 - local template/WBS proposal does not require ERP direct dependency
 - local UX remains separable from ERP-mediated boundary failures
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300037_PROJECT_FLOW_ERP_DEPENDENCY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300038_PROJECT_FLOW_COMMON_COMPONENT_DEPENDENCY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT DEPENDENCY REVIEW CHECKLIST
 # ============================================================
@@ -29270,6 +33429,9 @@ checklist:
 - WBS proposal and material composition remain app-local unless separately promoted
 - local/shared boundary is explicit enough for later phase planning
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300038_PROJECT_FLOW_COMMON_COMPONENT_DEPENDENCY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300039_PROJECT_FLOW_LOCAL_OWNERSHIP_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW LOCAL OWNERSHIP REVIEW CHECKLIST
 # ============================================================
@@ -29288,6 +33450,9 @@ checklist:
 - customer-facing material composition is clearly local
 - template and WBS proposal behavior is clearly local
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300039_PROJECT_FLOW_LOCAL_OWNERSHIP_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300040_PROJECT_FLOW_DATA_OWNERSHIP_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DATA OWNERSHIP REVIEW CHECKLIST
 # ============================================================
@@ -29306,6 +33471,9 @@ checklist:
 - localization keys are not confused with business truth
 - common component display usage is not confused with field ownership
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300040_PROJECT_FLOW_DATA_OWNERSHIP_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300041_PROJECT_FLOW_EDITABILITY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW EDITABILITY REVIEW CHECKLIST
 # ============================================================
@@ -29324,6 +33492,9 @@ checklist:
 - draft and proposal adjustment flows remain explicit
 - UI can distinguish editable and reference-only states clearly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300041_PROJECT_FLOW_EDITABILITY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300042_PROJECT_FLOW_ACTION_AUTHORITY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW ACTION AUTHORITY REVIEW CHECKLIST
 # ============================================================
@@ -29342,6 +33513,9 @@ checklist:
 - device type does not change action authority
 - permission-aware local actions remain local where intended
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300042_PROJECT_FLOW_ACTION_AUTHORITY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300043_PROJECT_FLOW_STATE_TRANSITION_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW STATE TRANSITION REVIEW CHECKLIST
 # ============================================================
@@ -29360,6 +33534,9 @@ checklist:
 - entitlement state is not confused with business item state
 - invalid transitions are clearly identifiable for later implementation
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300043_PROJECT_FLOW_STATE_TRANSITION_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300044_PROJECT_FLOW_AUDITABILITY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW AUDITABILITY REVIEW CHECKLIST
 # ============================================================
@@ -29377,6 +33554,9 @@ checklist:
 - sync retry is distinguishable from ordinary sync flow
 - audit visibility does not confuse boundary status with business truth
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300044_PROJECT_FLOW_AUDITABILITY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300045_PROJECT_FLOW_UPLOADED_REFERENCE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED REFERENCE REVIEW CHECKLIST
 # ============================================================
@@ -29394,6 +33574,9 @@ checklist:
 - schema summaries are treated as implementation-prep aids only
 - unrelated uploaded canonicals are not overused in current ProjectFlow scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300045_PROJECT_FLOW_UPLOADED_REFERENCE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300046_PROJECT_FLOW_REFERENCE_PRIORITY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE PRIORITY REVIEW CHECKLIST
 # ============================================================
@@ -29411,6 +33594,9 @@ checklist:
 - schema questions use schema summaries before full dumps where possible
 - app-local behavior questions use ProjectFlow-local notes first
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300046_PROJECT_FLOW_REFERENCE_PRIORITY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300047_PROJECT_FLOW_REFERENCE_LOOKUP_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE LOOKUP REVIEW CHECKLIST
 # ============================================================
@@ -29427,6 +33613,9 @@ checklist:
 - external canonicals are only used when ownership is external
 - lookup order reduces unnecessary document scanning
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300047_PROJECT_FLOW_REFERENCE_LOOKUP_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300048_PROJECT_FLOW_UPLOADED_FILE_REGISTER_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW UPLOADED FILE REGISTER REVIEW CHECKLIST
 # ============================================================
@@ -29444,6 +33633,9 @@ checklist:
 - file-to-concern mapping is explicit
 - schema summaries are preferred before full schema dumps
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300048_PROJECT_FLOW_UPLOADED_FILE_REGISTER_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300049_PROJECT_FLOW_REFERENCE_UPDATE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE UPDATE REVIEW CHECKLIST
 # ============================================================
@@ -29461,6 +33653,9 @@ checklist:
 - schema summary refresh does not automatically rewrite local ownership assumptions
 - dumps are still treated as reference aids only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300049_PROJECT_FLOW_REFERENCE_UPDATE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300050_PROJECT_FLOW_REFERENCE_CONFLICT_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT REVIEW CHECKLIST
 # ============================================================
@@ -29478,6 +33673,9 @@ checklist:
 - dumps are not used as ownership replacement
 - unresolved conflicts block deeper interpretation where necessary
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300050_PROJECT_FLOW_REFERENCE_CONFLICT_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300051_PROJECT_FLOW_REFERENCE_CONFLICT_STOP_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REFERENCE CONFLICT STOP REVIEW CHECKLIST
 # ============================================================
@@ -29495,6 +33693,9 @@ checklist:
 - stop conditions are distinguished from harmless wording cleanup
 - blocked planning areas are recorded explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300051_PROJECT_FLOW_REFERENCE_CONFLICT_STOP_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300052_PROJECT_FLOW_SAFE_PREP_SCOPE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW SAFE PREP SCOPE REVIEW CHECKLIST
 # ============================================================
@@ -29512,6 +33713,9 @@ checklist:
 - ERP and BusinessOS conflict areas remain blocked when unresolved
 - no direct ERP assumption slips into safe-prep scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300052_PROJECT_FLOW_SAFE_PREP_SCOPE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300053_PROJECT_FLOW_NEXT_PHASE_PRIORITY_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE PRIORITY REVIEW CHECKLIST
 # ============================================================
@@ -29529,6 +33733,9 @@ checklist:
 - no direct ERP assumption appears in early priority stages
 - priority order favors local stable refinement first
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300053_PROJECT_FLOW_NEXT_PHASE_PRIORITY_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300054_PROJECT_FLOW_NEXT_PHASE_EXECUTION_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW NEXT PHASE EXECUTION REVIEW CHECKLIST
 # ============================================================
@@ -29546,6 +33753,9 @@ checklist:
 - conflict areas are escalated instead of guessed
 - execution order remains consistent with the priority matrix
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300054_PROJECT_FLOW_NEXT_PHASE_EXECUTION_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300055_PROJECT_FLOW_WORK_PACKAGE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE REVIEW CHECKLIST
 # ============================================================
@@ -29563,6 +33773,9 @@ checklist:
 - completion checkpoints are explicit
 - package order remains aligned with next-phase priority rules
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300055_PROJECT_FLOW_WORK_PACKAGE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300056_PROJECT_FLOW_BOUNDARY_WORK_PACKAGE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW BOUNDARY WORK PACKAGE REVIEW CHECKLIST
 # ============================================================
@@ -29580,6 +33793,9 @@ checklist:
 - blocked packages do not leak into active planning
 - higher canonical references are named explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300056_PROJECT_FLOW_BOUNDARY_WORK_PACKAGE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300057_PROJECT_FLOW_GATE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW GATE REVIEW CHECKLIST
 # ============================================================
@@ -29597,6 +33813,9 @@ checklist:
 - blocked packages are explicitly denied active start
 - gate review happens before active progression
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300057_PROJECT_FLOW_GATE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300058_PROJECT_FLOW_WORK_PACKAGE_EXECUTION_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW WORK PACKAGE EXECUTION REVIEW CHECKLIST
 # ============================================================
@@ -29614,6 +33833,9 @@ checklist:
 - completion can reference produced documents
 - summary template can roll up multiple package states
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300058_PROJECT_FLOW_WORK_PACKAGE_EXECUTION_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300059_PROJECT_FLOW_REOPEN_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REOPEN REVIEW CHECKLIST
 # ============================================================
@@ -29631,6 +33853,9 @@ checklist:
 - unresolved conflict does not silently reopen blocked work
 - reopened work records new status explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300059_PROJECT_FLOW_REOPEN_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300060_PROJECT_FLOW_EXACT_RESOLUTION_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW EXACT RESOLUTION REVIEW CHECKLIST
 # ============================================================
@@ -29649,6 +33874,9 @@ checklist:
 - remaining open items are implementation-choice items,
   not broad design blockers
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300060_PROJECT_FLOW_EXACT_RESOLUTION_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300061_PROJECT_FLOW_POST_EXACT_OPEN_ITEM_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW POST EXACT OPEN ITEM REVIEW CHECKLIST
 # ============================================================
@@ -29666,6 +33894,9 @@ checklist:
 - DB-phase items are separated from ordinary implementation-choice items
 - later sophistication items are separated from immediate planning items
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300061_PROJECT_FLOW_POST_EXACT_OPEN_ITEM_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300063_PROJECT_FLOW_FINAL_OPEN_ITEM_CLOSURE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FINAL OPEN ITEM CLOSURE REVIEW CHECKLIST
 # ============================================================
@@ -29685,6 +33916,9 @@ checklist:
 - DB-owner review items remain explicitly separated
 - later sophistication items remain explicitly deferred
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300063_PROJECT_FLOW_FINAL_OPEN_ITEM_CLOSURE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300064_PROJECT_FLOW_REMAINING_ITEM_FINAL_CLASSIFICATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW REMAINING ITEM FINAL CLASSIFICATION CHECKLIST
 # ============================================================
@@ -29702,6 +33936,9 @@ checklist:
 - non-blocking cleanup items are separated from blockers
 - no major ordinary design blocker remains mislabeled as open
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300064_PROJECT_FLOW_REMAINING_ITEM_FINAL_CLASSIFICATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300065_PROJECT_FLOW_DB_OWNER_REVIEW_ENTRY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW ENTRY CHECKLIST
 # ============================================================
@@ -29721,6 +33958,9 @@ checklist:
 - schema confirmation and hardening order are first-class review targets
 - unresolved DB items can be recorded explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300065_PROJECT_FLOW_DB_OWNER_REVIEW_ENTRY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300066_PROJECT_FLOW_DB_OWNER_REVIEW_RESULT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW RESULT CHECKLIST
 # ============================================================
@@ -29740,6 +33980,9 @@ checklist:
 - partial confirmation can be recorded explicitly
 - unresolved DB items remain visible after review
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300066_PROJECT_FLOW_DB_OWNER_REVIEW_RESULT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300067_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW UNLOCK CHECKLIST
 # ============================================================
@@ -29759,6 +34002,9 @@ checklist:
 - blocked DB areas remain visible after review
 - no silent transition from hold to active planning occurs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300067_PROJECT_FLOW_DB_OWNER_REVIEW_UNLOCK_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300068_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW POST RESULT CHECKLIST
 # ============================================================
@@ -29778,6 +34024,9 @@ checklist:
 - planning proceeds only from recorded result
 - hold keeps DB-phase work blocked where required
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300068_PROJECT_FLOW_DB_OWNER_REVIEW_POST_RESULT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300069_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DB OWNER REVIEW REFLECTION CHECKLIST
 # ============================================================
@@ -29797,6 +34046,9 @@ checklist:
 - broad application design notes are not reopened unnecessarily
 - reflection scope follows recorded DB-owner review result only
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300069_PROJECT_FLOW_DB_OWNER_REVIEW_REFLECTION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300070_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START ENTRY CHECKLIST
 # ============================================================
@@ -29814,6 +34066,9 @@ checklist:
 - stable design assumptions are not reopened unnecessarily
 - DB-confirmed and still-blocked areas are separated
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300070_PROJECT_FLOW_IMPLEMENTATION_START_ENTRY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300071_PROJECT_FLOW_IMPLEMENTATION_START_WORK_PACKAGE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START WORK PACKAGE CHECKLIST
 # ============================================================
@@ -29831,6 +34086,9 @@ checklist:
 - blocked DB areas are not silently included
 - package outputs are explicit and planning-oriented
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300071_PROJECT_FLOW_IMPLEMENTATION_START_WORK_PACKAGE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300072_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START DELIVERABLE CHECKLIST
 # ============================================================
@@ -29848,6 +34106,9 @@ checklist:
 - completion is planning-oriented rather than coding-oriented
 - boundary-aware completion remains conditional where needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300072_PROJECT_FLOW_IMPLEMENTATION_START_DELIVERABLE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300073_PROJECT_FLOW_IMPLEMENTATION_START_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START REVIEW CHECKLIST
 # ============================================================
@@ -29866,6 +34127,9 @@ checklist:
 - partial approval keeps blocked scope explicit
 - next allowed action is recorded after approval
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300073_PROJECT_FLOW_IMPLEMENTATION_START_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300074_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_LEDGER_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START EXECUTION LEDGER CHECKLIST
 # ============================================================
@@ -29883,6 +34147,9 @@ checklist:
 - expected outputs are explicit per ledger item
 - boundary-aware items still preserve conflict checks
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300074_PROJECT_FLOW_IMPLEMENTATION_START_EXECUTION_LEDGER_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300075_PROJECT_FLOW_IMPLEMENTATION_START_DEPENDENCY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW IMPLEMENTATION START DEPENDENCY CHECKLIST
 # ============================================================
@@ -29900,6 +34167,9 @@ checklist:
 - boundary-aware packages retain extra conflict checks
 - dependency interpretation stays aligned with the execution ledger
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300075_PROJECT_FLOW_IMPLEMENTATION_START_DEPENDENCY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300076_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW OFFICIAL COMMON COMPONENT LEDGER CHECKLIST
 # ============================================================
@@ -29916,6 +34186,9 @@ checklist:
 - ProjectFlow keeps local additive behavior separate from official shared ownership
 - common component questions check the official ledger before local candidate notes
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300076_PROJECT_FLOW_OFFICIAL_COMMON_COMPONENT_LEDGER_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300077_PROJECT_FLOW_COMMON_COMPONENT_DECISION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW COMMON COMPONENT DECISION CHECKLIST
 # ============================================================
@@ -29933,6 +34206,9 @@ checklist:
 - shared use and app-local use are recorded explicitly
 - adapter need is recorded explicitly when shared component is used
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300077_PROJECT_FLOW_COMMON_COMPONENT_DECISION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300078_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW SHARED COMPONENT ADAPTER CHECKLIST
 # ============================================================
@@ -29950,6 +34226,9 @@ checklist:
 - shared contracts are not silently extended by ProjectFlow-local assumptions
 - wrapper usage is explicit when local orchestration is needed
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300078_PROJECT_FLOW_SHARED_COMPONENT_ADAPTER_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300079_PROJECT_FLOW_LOCAL_ORCHESTRATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW LOCAL ORCHESTRATION CHECKLIST
 # ============================================================
@@ -29967,6 +34246,9 @@ checklist:
 - adapter and orchestration responsibilities are not conflated
 - local action routing remains explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300079_PROJECT_FLOW_LOCAL_ORCHESTRATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300080_PROJECT_FLOW_SCREEN_ORCHESTRATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW SCREEN ORCHESTRATION CHECKLIST
 # ============================================================
@@ -29984,6 +34266,9 @@ checklist:
 - local action routes remain explicit
 - shared-component absence does not block local orchestration planning
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300080_PROJECT_FLOW_SCREEN_ORCHESTRATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300081_PROJECT_FLOW_SCREEN_TO_PACKAGE_MAPPING_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW SCREEN TO PACKAGE MAPPING CHECKLIST
 # ============================================================
@@ -30001,6 +34286,9 @@ checklist:
 - ready-for-next-step condition is explicit
 - blocked boundary questions remain visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300081_PROJECT_FLOW_SCREEN_TO_PACKAGE_MAPPING_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300082_PROJECT_FLOW_DELIVERABLE_DEPENDENCY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW DELIVERABLE DEPENDENCY CHECKLIST
 # ============================================================
@@ -30018,6 +34306,9 @@ checklist:
 - reviewed usable form is required before unlocking downstream work
 - partial and hold outcomes do not silently over-unlock downstream deliverables
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300082_PROJECT_FLOW_DELIVERABLE_DEPENDENCY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300083_PROJECT_FLOW_FEATURE_SLICE_ENTRY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE ENTRY CHECKLIST
 # ============================================================
@@ -30035,6 +34326,9 @@ checklist:
 - local and boundary-aware slices remain separated
 - blocked downstream slices remain explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300083_PROJECT_FLOW_FEATURE_SLICE_ENTRY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300084_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE EXECUTION CHECKLIST
 # ============================================================
@@ -30052,6 +34346,9 @@ checklist:
 - boundary-aware slice prerequisites remain explicit
 - blocked slices are not silently advanced
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300084_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300085_PROJECT_FLOW_FEATURE_SLICE_DELIVERABLE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE DELIVERABLE CHECKLIST
 # ============================================================
@@ -30069,6 +34366,9 @@ checklist:
 - completion remains planning-oriented
 - slice completion does not silently imply coding start
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300085_PROJECT_FLOW_FEATURE_SLICE_DELIVERABLE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300086_PROJECT_FLOW_FEATURE_SLICE_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE REVIEW CHECKLIST
 # ============================================================
@@ -30087,6 +34387,9 @@ checklist:
 - partial approval keeps blocked scope explicit
 - next allowed slices are recorded after approval
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300086_PROJECT_FLOW_FEATURE_SLICE_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300087_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE EXECUTION CHECKLIST
 # ============================================================
@@ -30104,6 +34407,9 @@ checklist:
 - paused reasons are recorded explicitly
 - boundary-aware blocked conditions remain visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300087_PROJECT_FLOW_FEATURE_SLICE_EXECUTION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300088_PROJECT_FLOW_FEATURE_SLICE_REOPEN_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FEATURE SLICE REOPEN CHECKLIST
 # ============================================================
@@ -30121,6 +34427,9 @@ checklist:
 - unresolved blocked conditions do not silently reopen slices
 - reopened slice updates execution record explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300088_PROJECT_FLOW_FEATURE_SLICE_REOPEN_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300089_PROJECT_FLOW_CODING_START_ENTRY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CODING START ENTRY CHECKLIST
 # ============================================================
@@ -30138,6 +34447,9 @@ checklist:
 - approved slice outputs are required before coding-start planning
 - blocked scope remains excluded explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300089_PROJECT_FLOW_CODING_START_ENTRY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300090_PROJECT_FLOW_CODING_START_WORK_PACKAGE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CODING START WORK PACKAGE CHECKLIST
 # ============================================================
@@ -30155,6 +34467,9 @@ checklist:
 - blocked scope is not silently included
 - sequence template exists
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300090_PROJECT_FLOW_CODING_START_WORK_PACKAGE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300091_PROJECT_FLOW_CODING_START_DELIVERABLE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CODING START DELIVERABLE CHECKLIST
 # ============================================================
@@ -30172,6 +34487,9 @@ checklist:
 - completion remains code-start-planning oriented
 - boundary-aware completion keeps blocked conditions explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300091_PROJECT_FLOW_CODING_START_DELIVERABLE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300092_PROJECT_FLOW_CODING_START_REVIEW_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CODING START REVIEW CHECKLIST
 # ============================================================
@@ -30190,6 +34508,9 @@ checklist:
 - partial approval keeps blocked scope explicit
 - next allowed coding units are recorded after approval
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300092_PROJECT_FLOW_CODING_START_REVIEW_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300093_PROJECT_FLOW_CODING_START_EXECUTION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CODING START EXECUTION CHECKLIST
 # ============================================================
@@ -30207,6 +34528,9 @@ checklist:
 - paused reasons are recorded explicitly
 - boundary-aware blocked conditions remain visible
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300093_PROJECT_FLOW_CODING_START_EXECUTION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300094_PROJECT_FLOW_CODING_START_REOPEN_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CODING START REOPEN CHECKLIST
 # ============================================================
@@ -30224,6 +34548,9 @@ checklist:
 - unresolved blocked conditions do not silently reopen packages
 - reopened package updates execution record explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300094_PROJECT_FLOW_CODING_START_REOPEN_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300095_PROJECT_FLOW_CODING_START_BULK_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CODING START BULK CHECKLIST
 # ============================================================
@@ -30243,6 +34570,9 @@ checklist:
 - actual implementation task check template exists
 - blocked scope remains explicit through the transition
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300095_PROJECT_FLOW_CODING_START_BULK_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300096_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK CHECKLIST
 # ============================================================
@@ -30261,6 +34591,9 @@ checklist:
 - task review template exists
 - boundary-aware tasks preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300096_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300097_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_OPERATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW ACTUAL IMPLEMENTATION TASK OPERATION CHECKLIST
 # ============================================================
@@ -30279,6 +34612,9 @@ checklist:
 - task-to-next-unit ledger exists
 - blocked boundary-aware scope remains explicit through the flow
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300097_PROJECT_FLOW_ACTUAL_IMPLEMENTATION_TASK_OPERATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300098_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT CHECKLIST
 # ============================================================
@@ -30297,6 +34633,9 @@ checklist:
 - unit review template exists
 - boundary-aware units preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300098_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300099_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_OPERATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW NEXT IMPLEMENTATION UNIT OPERATION CHECKLIST
 # ============================================================
@@ -30315,6 +34654,9 @@ checklist:
 - unit-to-concrete-coding ledger exists
 - blocked boundary-aware scope remains explicit through the flow
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300099_PROJECT_FLOW_NEXT_IMPLEMENTATION_UNIT_OPERATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300100_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP CHECKLIST
 # ============================================================
@@ -30333,6 +34675,9 @@ checklist:
 - work-group review template exists
 - boundary-aware work groups preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300100_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300101_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_OPERATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE CODING WORK GROUP OPERATION CHECKLIST
 # ============================================================
@@ -30351,6 +34696,9 @@ checklist:
 - work-group-to-file-task ledger exists
 - blocked boundary-aware scope remains explicit through the flow
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300101_PROJECT_FLOW_CONCRETE_CODING_WORK_GROUP_OPERATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300102_PROJECT_FLOW_CONCRETE_FILE_UNIT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT CHECKLIST
 # ============================================================
@@ -30369,6 +34717,9 @@ checklist:
 - file-unit review template exists
 - boundary-aware file units preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300102_PROJECT_FLOW_CONCRETE_FILE_UNIT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300103_PROJECT_FLOW_CONCRETE_FILE_UNIT_OPERATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW CONCRETE FILE UNIT OPERATION CHECKLIST
 # ============================================================
@@ -30387,6 +34738,9 @@ checklist:
 - file-unit-to-patch-task ledger exists
 - blocked boundary-aware scope remains explicit through the flow
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300103_PROJECT_FLOW_CONCRETE_FILE_UNIT_OPERATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300104_PROJECT_FLOW_PATCH_TASK_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK CHECKLIST
 # ============================================================
@@ -30405,6 +34759,9 @@ checklist:
 - patch task review and approval template exists
 - boundary-aware patch tasks preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300104_PROJECT_FLOW_PATCH_TASK_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300105_PROJECT_FLOW_PATCH_TASK_OPERATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW PATCH TASK OPERATION CHECKLIST
 # ============================================================
@@ -30423,6 +34780,9 @@ checklist:
 - blocked boundary-aware scope remains explicit through the flow
 - commit or PR-sized units start only from approved patch outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300105_PROJECT_FLOW_PATCH_TASK_OPERATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300106_PROJECT_FLOW_COMMIT_PR_UNIT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT CHECKLIST
 # ============================================================
@@ -30441,6 +34801,9 @@ checklist:
 - unit review and approval template exists
 - boundary-aware units preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300106_PROJECT_FLOW_COMMIT_PR_UNIT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300107_PROJECT_FLOW_COMMIT_PR_UNIT_OPERATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW COMMIT PR UNIT OPERATION CHECKLIST
 # ============================================================
@@ -30459,6 +34822,9 @@ checklist:
 - blocked boundary-aware scope remains explicit through the flow
 - merge or release-prep units start only from approved commit / PR outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300107_PROJECT_FLOW_COMMIT_PR_UNIT_OPERATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300108_PROJECT_FLOW_MERGE_RELEASE_UNIT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT CHECKLIST
 # ============================================================
@@ -30477,6 +34843,9 @@ checklist:
 - unit review and approval template exists
 - boundary-aware units preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300108_PROJECT_FLOW_MERGE_RELEASE_UNIT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300109_PROJECT_FLOW_MERGE_RELEASE_UNIT_OPERATION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW MERGE RELEASE UNIT OPERATION CHECKLIST
 # ============================================================
@@ -30495,6 +34864,9 @@ checklist:
 - blocked boundary-aware scope remains explicit through the flow
 - release-candidate or handoff units start only from approved merge / release-prep outputs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300109_PROJECT_FLOW_MERGE_RELEASE_UNIT_OPERATION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300110_PROJECT_FLOW_RC_HANDOFF_UNIT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF UNIT CHECKLIST
 # ============================================================
@@ -30513,6 +34885,9 @@ checklist:
 - unit review and approval template exists
 - boundary-aware units preserve blocked-scope exclusion
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300110_PROJECT_FLOW_RC_HANDOFF_UNIT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300111_PROJECT_FLOW_RC_HANDOFF_AND_CLOSURE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW RC HANDOFF AND CLOSURE CHECKLIST
 # ============================================================
@@ -30533,6 +34908,9 @@ checklist:
 - master restart entry template exists
 - blocked boundary-aware scope remains explicit through closure
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300111_PROJECT_FLOW_RC_HANDOFF_AND_CLOSURE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300112_PROJECT_FLOW_FINAL_CLOSURE_AND_RESTART_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FINAL CLOSURE AND RESTART CHECKLIST
 # ============================================================
@@ -30552,6 +34930,9 @@ checklist:
 - closure materials stay restart-friendly
 - blocked scope remains explicit through closure and restart
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300112_PROJECT_FLOW_FINAL_CLOSURE_AND_RESTART_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300113_PROJECT_FLOW_FINAL_ENTRY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FINAL ENTRY CHECKLIST
 # ============================================================
@@ -30570,6 +34951,9 @@ checklist:
 - entry docs are concise and operational
 - blocked scope remains explicit in entry docs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300113_PROJECT_FLOW_FINAL_ENTRY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300114_PROJECT_FLOW_FINAL_LOCK_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FINAL LOCK CHECKLIST
 # ============================================================
@@ -30588,6 +34972,9 @@ checklist:
 - final lock usage note exists
 - confirmed scope remains distinct from deferred and blocked scope
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300114_PROJECT_FLOW_FINAL_LOCK_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300115_PROJECT_FLOW_FINAL_FINISH_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FINAL FINISH CHECKLIST
 # ============================================================
@@ -30606,6 +34993,9 @@ checklist:
 - top-priority restart path is shorter than deep-doc restart
 - closure candidate rationale is explicit
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300115_PROJECT_FLOW_FINAL_FINISH_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300116_PROJECT_FLOW_MASTER_CLOSURE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW MASTER CLOSURE CHECKLIST
 # ============================================================
@@ -30624,6 +35014,9 @@ checklist:
 - restart can begin from entry docs without deep-doc scanning
 - done / deferred / blocked / future scopes are clearly separated
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300116_PROJECT_FLOW_MASTER_CLOSURE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300117_PROJECT_FLOW_TERMINAL_CLOSURE_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL CLOSURE CHECKLIST
 # ============================================================
@@ -30642,6 +35035,9 @@ checklist:
 - terminal closure usage note exists
 - continuation paths are separated explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300117_PROJECT_FLOW_TERMINAL_CLOSURE_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300118_PROJECT_FLOW_PRACTICAL_END_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW PRACTICAL END CHECKLIST
 # ============================================================
@@ -30660,6 +35056,9 @@ checklist:
 - practical end usage note exists
 - continuation modes remain separated explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300118_PROJECT_FLOW_PRACTICAL_END_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300119_PROJECT_FLOW_TERMINAL_MASTER_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL MASTER CHECKLIST
 # ============================================================
@@ -30678,6 +35077,9 @@ checklist:
 - terminal master usage note exists
 - continuation modes remain separated explicitly
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300119_PROJECT_FLOW_TERMINAL_MASTER_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300120_PROJECT_FLOW_TERMINAL_SHORTCUT_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW TERMINAL SHORTCUT CHECKLIST
 # ============================================================
@@ -30696,6 +35098,9 @@ checklist:
 - terminal shortcut usage note exists
 - separated scopes remain explicitly separated
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300120_PROJECT_FLOW_TERMINAL_SHORTCUT_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300121_PROJECT_FLOW_STOP_AND_RESUME_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW STOP AND RESUME CHECKLIST
 # ============================================================
@@ -30713,6 +35118,9 @@ checklist:
 - stop and resume usage note exists
 - restart can begin from tiny hub without scanning deep docs
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300121_PROJECT_FLOW_STOP_AND_RESUME_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300122_PROJECT_FLOW_MASTER_TERMINAL_INDEX_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW MASTER TERMINAL INDEX CHECKLIST
 # ============================================================
@@ -30730,6 +35138,9 @@ checklist:
 - terminal navigation can start from one master index
 - continuation modes remain explicitly separated
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300122_PROJECT_FLOW_MASTER_TERMINAL_INDEX_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300123_PROJECT_FLOW_FINAL_COMPLETION_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW FINAL COMPLETION CHECKLIST
 # ============================================================
@@ -30749,6 +35160,9 @@ checklist:
 - final completion usage note exists
 - practical completion and separated not-done scope remain distinct
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300123_PROJECT_FLOW_FINAL_COMPLETION_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300124_PROJECT_FLOW_OPTIONAL_FINAL_VISIBILITY_CHECKLIST.md -->
 # ============================================================
 # PROJECT FLOW OPTIONAL FINAL VISIBILITY CHECKLIST
 # ============================================================
@@ -30765,3 +35179,383 @@ checklist:
 - next chat ultra short note exists
 - scope boundary after completion note exists
 - optional final visibility usage note exists
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/130.development/1300124_PROJECT_FLOW_OPTIONAL_FINAL_VISIBILITY_CHECKLIST.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/9000000_PROJECT_FLOW_META_INDEX.md -->
+# ============================================================
+# PROJECT FLOW META INDEX
+# ============================================================
+
+files:
+
+- 900410_PROJECTFLOW_20260416_DIFF_AUDIT_NOTE.md
+
+- 900420_PROJECTFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 900430_PROJECTFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 900440_PROJECTFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900450_PROJECTFLOW_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900460_PROJECTFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900470_PROJECTFLOW_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/9000000_PROJECT_FLOW_META_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900410_PROJECTFLOW_20260416_DIFF_AUDIT_NOTE.md -->
+# ============================================================
+# PROJECTFLOW 20260416 DIFF AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProjectFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: diff-audit-note
+
+purpose:
+Records the first differential reinforcement bundle applied to the
+existing ProjectFlow design.
+
+preserved_core:
+- project and task management identity
+- workflow and progress handling
+- existing business operation role
+- existing architecture layers
+- existing platform direction
+
+added_in_this_bundle:
+- competitive positioning note
+- project delivery orchestration architecture
+- milestone dependency risk architecture
+- delivery timeline model
+- project cockpit exact payload
+- risk dependency review exact payload
+- project cockpit interface note
+- delivery control implementation guide
+
+why_this_bundle:
+- existing ProjectFlow design already had strong execution handling
+- what was less explicit was the delivery-control layer above raw task movement
+- this bundle makes the app more implementation-ready without rewriting its base
+
+recommended_next_step:
+- proceed to Phase A entry documents for delivery timeline, DDL, DTO freeze,
+  and slice-based execution planning
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900410_PROJECTFLOW_20260416_DIFF_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900420_PROJECTFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+# ============================================================
+# PROJECTFLOW 20260416 BUNDLE02 PHASE A AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProjectFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle02-phase-a-audit
+
+purpose:
+Records the second reinforcement bundle applied to ProjectFlow,
+covering Phase A entry documents and exact implementation-start
+boundaries.
+
+bundle02_contents:
+- 020.architecture/021140_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_DDL_ADDITIVE_PLAN.md
+- 060.integration/060320_PROJECTFLOW_PHASE_A_API_STARTER.md
+- 060.integration/060330_PROJECTFLOW_PHASE_A_API_DTO_FIELD_FREEZE.md
+- 120.implementation/120310_PROJECTFLOW_PHASE_A_DELIVERY_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+result:
+- Phase A DDL direction fixed
+- Phase A endpoint set fixed
+- API DTO field set frozen
+- implementation skeleton fixed
+- ProjectFlow now has the same kind of Phase A entry footing
+  that made NameCardManager and PocketSecretary easier to continue in bundled form
+
+recommended_next_step:
+- proceed to bundle_03 for stub file plan, module task breakdown, and content order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900420_PROJECTFLOW_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900430_PROJECTFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+# ============================================================
+# PROJECTFLOW 20260416 BUNDLE03 STUB AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProjectFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle03-stub-audit
+
+purpose:
+Records the third reinforcement bundle applied to ProjectFlow,
+covering the stub planning boundary for Phase A.
+
+bundle03_contents:
+- 120.implementation/120320_PROJECTFLOW_PHASE_A_STUB_FILE_PLAN.md
+- 120.implementation/120330_PROJECTFLOW_PHASE_A_MODULE_TASK_BREAKDOWN.md
+- 120.implementation/120340_PROJECTFLOW_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+result:
+- stub file boundary fixed
+- module task order fixed
+- exact stub content order fixed
+- ProjectFlow now has a bundled Phase A planning posture
+  similar to NameCardManager and PocketSecretary before command-pack generation
+
+recommended_next_step:
+- proceed to bundle_04 for command packs, field-fill plans, and closure
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900430_PROJECTFLOW_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900440_PROJECTFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+# ============================================================
+# PROJECTFLOW 20260416 BUNDLE04 CLOSEOUT AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProjectFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle04-closeout-audit
+
+purpose:
+Records the fourth reinforcement bundle applied to ProjectFlow,
+closing the Phase A planning layer at an implementation-ready state.
+
+bundle04_contents:
+- 120.implementation/120350_PROJECTFLOW_PHASE_A_SLICE_COMMAND_PACKS.md
+- 120.implementation/120360_PROJECTFLOW_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+- 120.implementation/120370_PROJECTFLOW_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+- 120.implementation/120380_PROJECTFLOW_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+result:
+- slice command packs fixed
+- field-fill plan fixed
+- implementation-ready completion declared
+- execution entry protocol fixed
+- ProjectFlow planning can stop here cleanly unless execution begins or contradiction appears
+
+readiness_statement:
+- differential reinforcement completed
+- Phase A entry completed
+- stub planning completed
+- command-pack and field-fill planning completed
+- implementation-ready design status achieved
+
+recommended_default_after_closure:
+- do not add more micro design memos unless a contradiction is found
+- if work resumes, start from the execution entry protocol
+- later execution should follow slice order only
+
+final_assessment:
+- ProjectFlow moved from reinforcement into implementation-ready
+  Phase A design closure successfully.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900440_PROJECTFLOW_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900450_PROJECTFLOW_NEXT_APP_TRANSITION_HANDOFF.md -->
+# ============================================================
+# PROJECTFLOW NEXT APP TRANSITION HANDOFF
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProjectFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: next-app-transition-handoff
+
+purpose:
+Closes the current ProjectFlow planning stream cleanly and makes it
+easy to move to the next BusinessOS application without reopening
+already-settled ProjectFlow planning questions.
+
+current_status_summary:
+- differential reinforcement completed
+- bundle_01 completed
+- bundle_02 Phase A entry completed
+- bundle_03 stub planning completed
+- bundle_04 closeout completed
+- implementation-ready completion memo completed
+- execution entry protocol completed
+
+what_should_not_be_reopened_by_default:
+- project-delivery orchestration direction
+- milestone, dependency, and risk visibility direction
+- project cockpit as a control surface
+- separation of raw task state and delivery health rollup
+- exact payload freeze direction
+- slice-based execution order
+- additive-only Phase A direction
+
+what_is_safe_to_defer:
+- actual Java stub generation
+- actual SQL apply
+- runtime framework detail lock
+- client implementation
+- workflow write automation
+- operational rollout planning
+
+recommended_default_next_move:
+- move to the next BusinessOS application using the same bundled
+  differential reinforcement pattern
+- do not continue creating micro-memos for ProjectFlow unless
+  contradiction, failure recovery, or explicit execution start appears
+
+if_execution_is_later_requested:
+- start from the Phase A execution entry protocol
+- do not skip directly to later slices
+- do not execute SQL before review
+- use slice command packs as the only sequence authority
+
+handoff_statement:
+- ProjectFlow can now be treated as planning-closed and
+  next-app-transition-ready.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900450_PROJECTFLOW_NEXT_APP_TRANSITION_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900460_PROJECTFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+# ============================================================
+# PROJECTFLOW REUSABLE PHASEA REINFORCEMENT RECIPE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProjectFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: reusable-phasea-reinforcement-recipe
+
+purpose:
+Captures the reusable reinforcement recipe proven during the
+ProjectFlow planning work so the next BusinessOS app can be
+advanced faster and with fewer unnecessary micro-iterations.
+
+recommended_reuse_sequence:
+- step_01:
+  - preserve the app core idea instead of rewriting by default
+- step_02:
+  - identify the real differentiator and make it explicit
+- step_03:
+  - add missing architecture notes only for that differentiator
+- step_04:
+  - add exact payload or model documents only where ambiguity blocks implementation
+- step_05:
+  - add interface notes only where the new behavior becomes visible
+- step_06:
+  - add implementation guide and diff audit memo
+- step_07:
+  - reflect the result in 000_BUSINESS_APP_LEDGER.md
+- step_08:
+  - move to Phase A entry documents only after the diff layer is coherent
+- step_09:
+  - freeze DDL, DTO, stub boundaries, and slice order
+- step_10:
+  - close with implementation-ready and transition-ready memos
+
+what_worked_well_here:
+- additive-only reinforcement
+- differentiator-first architecture completion
+- freezing DDL and DTO before generation
+- using slice order instead of all-at-once generation
+- closing planning once implementation-ready status was reached
+
+what_to_avoid_next_time:
+- reopening stable core text too early
+- jumping to implementation before exact payload and row-family clarity
+- continuing micro-memos after bundled planning is already stable
+- mixing audit concerns into mutation planning
+- mixing delivery rollup state with raw task detail state
+
+default_bundle_strategy_for_next_app:
+- bundle_01:
+  - diff reinforcement plus audit
+- bundle_02:
+  - Phase A entry plus DDL plus DTO freeze
+- bundle_03:
+  - stub plan plus module tasks plus content order
+- bundle_04:
+  - command packs plus field-fill plans plus closure
+
+success_definition_for_next_app:
+- the next app reaches implementation-ready planning state
+- the BusinessOS ledger reflects the new status
+- the app can move to execution later without rediscovering core design intent
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900460_PROJECTFLOW_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900470_PROJECTFLOW_PLANNING_STOP_RULE_NOTE.md -->
+# ============================================================
+# PROJECTFLOW PLANNING STOP RULE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: ProjectFlow
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: planning-stop-rule-note
+
+purpose:
+Defines the stop rule for the ProjectFlow planning layer so that
+the project does not continue adding design documents without need.
+
+default_stop_rule:
+- stop adding planning artifacts once implementation-ready status,
+  execution entry protocol, and transition handoff are all present
+
+allowed_reopen_cases:
+- contradiction between frozen DTOs and row-family direction
+- contradiction between slice command packs and field-fill plans
+- material mismatch with existing physical schema core
+- explicit request to start runtime generation
+- explicit request to execute SQL after review
+- failure recovery after a broken or invalid generated artifact
+
+not_enough_reason_to_reopen:
+- preference for more wording
+- preference for additional micro-notes
+- desire to restate already frozen boundaries
+- desire to re-explain the same slice order
+
+default_action_after_stop_rule:
+- either begin actual generation using the execution entry protocol
+- or move to the next BusinessOS application
+
+closure_statement:
+- ProjectFlow planning should now be considered complete by default.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/ProjectFlow/900.meta/900470_PROJECTFLOW_PLANNING_STOP_RULE_NOTE.md -->

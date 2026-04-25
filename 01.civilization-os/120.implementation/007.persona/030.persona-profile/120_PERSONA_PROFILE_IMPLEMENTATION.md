@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona profile structures.
+Defines the implementation design for Civilization-side persona profile structures.
 
 # 2. IMPLEMENTATION TARGETS
 

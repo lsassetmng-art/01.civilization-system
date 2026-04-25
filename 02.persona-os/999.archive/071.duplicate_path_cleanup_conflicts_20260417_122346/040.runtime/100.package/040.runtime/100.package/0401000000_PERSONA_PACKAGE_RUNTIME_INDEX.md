@@ -1,0 +1,8 @@
+# 0401000000_PERSONA_PACKAGE_RUNTIME_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 040.runtime/100.package/040.runtime/100.package
+
+- 0401000001_PERSONA_PACKAGE_RUNTIME_OVERVIEW.md
+- 0401000002_PERSONA_PACKAGE_ASSEMBLY_RUNTIME.md

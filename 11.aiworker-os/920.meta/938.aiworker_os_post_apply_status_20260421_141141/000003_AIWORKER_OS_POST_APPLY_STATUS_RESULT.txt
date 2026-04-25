@@ -1,0 +1,5 @@
+AIWORKER_OS_POST_APPLY_STATUS
+LATEST_APPLY_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604
+STATUS=SUCCESS
+INTEGRATED=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/000017_AIWORKER_OS_INTEGRATED_POST_APPLY_STATUS.md
+REPORT=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/938.aiworker_os_post_apply_status_20260421_141141/000002_AIWORKER_OS_POST_APPLY_STATUS_REPORT.md

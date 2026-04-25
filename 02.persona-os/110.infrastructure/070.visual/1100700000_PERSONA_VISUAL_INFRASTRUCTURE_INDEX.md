@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA VISUAL INFRASTRUCTURE INDEX
-# ============================================================
+# 1100700000_PERSONA_VISUAL_INFRASTRUCTURE_INDEX
 
-status: canonical
-layer: infrastructure
-domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA VISUAL INFRASTRUCTURE documents.
+directory: 110.infrastructure/070.visual
 
-# ============================================================
-# FILES
-# ============================================================
-
-1100700000_PERSONA_VISUAL_INFRASTRUCTURE_INDEX.md
-1100700001_PERSONA_VISUAL_INFRASTRUCTURE_OVERVIEW.md
-1100700002_PERSONA_VISUAL_ASSET_INFRASTRUCTURE.md
+- 1100700001_PERSONA_VISUAL_INFRASTRUCTURE_OVERVIEW.md
+- 1100700002_PERSONA_VISUAL_ASSET_INFRASTRUCTURE.md
+- 110.infrastructure/

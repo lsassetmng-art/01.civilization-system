@@ -1,0 +1,38 @@
+99:-     78	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/030.model/030_AIWORKER_BEYOND_SERIES_ASIC_APPEND.md
+103843:# SOURCE: 030.model/030_AIWORKER_BEYOND_SERIES_ASIC_APPEND.md
+103845:# AIWorkerOS Model Append: ASIC Beyond Series
+103864:- manufacturer_name: ASIC
+103865:- manufacturer_name_ja: ASIC
+103870:- series_name: Beyond Series
+103871:- series_name_ja: Beyondシリーズ
+103904:Beyond Series differentiates models by work quality level.
+103910:- BYD1-001 / ASIC Workers1 / 単純単発作業レベル
+103911:- BYD1-002 / ASIC Workers2 / 単純反復・抜け漏れ補完レベル
+103912:- BYD1-003 / ASIC Workers3 / 複雑作業・高完成度成果物レベル
+103916:- BYD2-001 / ASIC Leader1 / 基本進行・形式チェックレベル
+103917:- BYD2-002 / ASIC Leader2 / 品質レビュー・整合性確認レベル
+103918:- BYD2-003 / ASIC Leader3 / 統合設計・リスク判断・納品品質統括レベル
+103924:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+103935:# AIWorkerOS Model Append: Beyond Series Quality Level Update
+103951:Beyond Series differentiates models by work quality level, not by public management-count claims.
+103957:Beyond Series:
+103981:- BYD1-001 / ASIC Workers1 / 単純単発作業レベル
+103982:- BYD1-002 / ASIC Workers2 / 単純反復・抜け漏れ補完レベル
+103983:- BYD1-003 / ASIC Workers3 / 複雑作業・高完成度成果物レベル
+103987:- BYD2-001 / ASIC Leader1 / 基本進行・形式チェックレベル
+103988:- BYD2-002 / ASIC Leader2 / 品質レビュー・整合性確認レベル
+103989:- BYD2-003 / ASIC Leader3 / 統合設計・リスク判断・納品品質統括レベル
+103995:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+105412:# AIWorkerOS Integration Append: Beyond Series Quality Reference Surface
+105419:Beyond Series only.
+105436:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+105442:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+105465:# AIWorkerOS Integration Append: Beyond Series Reference Surface
+105474:Beyond Series only.
+105496:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+105502:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+106141:# AIWorkerOS Policy Append: Beyond Series
+106148:Beyond Series only.
+106154:Beyond Series is proactive and corrective.
+106201:# AIWorkerOS Policy Append: Beyond Series Quality Differentiation
+106208:Beyond Series may propose strongly and compensate for operational weakness.

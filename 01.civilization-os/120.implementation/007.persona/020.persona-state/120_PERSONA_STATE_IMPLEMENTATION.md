@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona state structures.
+Defines the implementation design for Civilization-side world-facing persona state structures.
 
 # 2. IMPLEMENTATION TARGETS
 
@@ -48,3 +48,21 @@ Canonical structures:
 - condition/mood visibility
 - state-status visibility
 
+
+## Exact Civilization Persona State Interpretation Rule
+## Exact Civilization Persona State Interpretation Rule
+
+Any state defined in this CivilizationOS document must be interpreted as
+world-facing participation state, sanction state, placement state,
+or event-visible state.
+
+It must not be interpreted as PersonaOS internal mutable-state authority.
+
+CivilizationOS may record world-side state such as:
+- placed
+- active in world
+- restricted by world rule
+- suspended by world-side sanction
+- deceased in world truth
+
+PersonaOS owns internal mutable-state interpretation.

@@ -1,0 +1,8 @@
+# 0501000000_PERSONA_PACKAGE_FLOW_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 050.flow/100.package/050.flow/100.package
+
+- 0501000001_PERSONA_PACKAGE_FLOW_OVERVIEW.md
+- 0501000002_PERSONA_PACKAGE_ASSEMBLY_FLOW.md

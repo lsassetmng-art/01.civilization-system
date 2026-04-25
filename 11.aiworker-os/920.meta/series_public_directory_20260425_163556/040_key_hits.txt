@@ -1,0 +1,72 @@
+206785:- series_name_ja: Beyondシリーズ
+206789:- 積極性: 高
+206790:- ユーザー影響度: ユーザーの悪特性を補完する
+206791:- 行動制限: 指定規約厳守
+206873:- 積極性: 高
+206874:- ユーザー影響度: ユーザーの悪特性を補完する
+206875:- 行動制限: 指定規約厳守
+207056:- hd_series / HD Series / HDシリーズ
+207085:- lovers_series / LoVerS Series / LoVerSシリーズ
+207294:### initiative / 積極性
+207298:### user_influence / ユーザー影響度
+207304:### action_restriction / 行動制限
+207318:HD Series / HDシリーズ:
+207320:- 積極性: 中
+207321:- ユーザー影響度: 変化しない
+207322:- 行動制限: 指定規約厳守
+207332:LoVerS Series / LoVerSシリーズ:
+207334:- 積極性: 各個体による
+207335:- ユーザー影響度: やや変化
+207336:- 行動制限: 指定規約厳守
+217744:- series_name_ja: Beyondシリーズ
+217748:- 積極性: 高
+217749:- ユーザー影響度: ユーザーの悪特性を補完する
+217750:- 行動制限: 指定規約厳守
+217832:- 積極性: 高
+217833:- ユーザー影響度: ユーザーの悪特性を補完する
+217834:- 行動制限: 指定規約厳守
+217972:- series_name_ja: MEGAMIシリーズ
+217976:- 積極性: 低
+217977:- ユーザー影響度: 変化なし
+217978:- 行動制限: 最低限
+218105:- hd_series / HD Series / HDシリーズ
+218134:- lovers_series / LoVerS Series / LoVerSシリーズ
+218313:# AIWorkerOS Model Append: Series Public Directory
+218329:- HD Series / HDシリーズ
+218330:- LoVerS Series / LoVerSシリーズ
+218331:- Beyond Series / Beyondシリーズ
+218332:- MEGAMI Series / MEGAMIシリーズ
+218338:- initiative / 積極性
+218339:- user_influence / ユーザー影響度
+218340:- action_restriction / 行動制限
+218346:- 積極性: 中
+218347:- ユーザー影響度: 変化なし
+218348:- 行動制限: 指定規約厳守
+218352:- 積極性: 各個体による
+218353:- ユーザー影響度: やや変化
+218354:- 行動制限: 指定規約厳守
+218358:- 積極性: 高
+218359:- ユーザー影響度: ユーザーの悪特性を補完する
+218360:- 行動制限: 指定規約厳守
+218364:- 積極性: 低
+218365:- ユーザー影響度: 変化なし
+218366:- 行動制限: 最低限
+218411:### initiative / 積極性
+218415:### user_influence / ユーザー影響度
+218421:### action_restriction / 行動制限
+218435:HD Series / HDシリーズ:
+218437:- 積極性: 中
+218438:- ユーザー影響度: 変化しない
+218439:- 行動制限: 指定規約厳守
+218449:LoVerS Series / LoVerSシリーズ:
+218451:- 積極性: 各個体による
+218452:- ユーザー影響度: やや変化
+218453:- 行動制限: 指定規約厳守
+219821:# AIWorkerOS Integration Append: Series Public Directory Reference Surface
+219831:- aiworker.series_public_registry
+219840:- aiworker.vw_app_aiworker_series_selection_directory_v1
+219846:- aiworker.vw_app_aiworker_series_selection_directory_v1
+220544:- 積極性: 低
+220545:- ユーザー影響度: 変化なし
+220546:- 行動制限: 最低限
+220666:# AIWorkerOS Policy Append: Series Public Directory

@@ -1,0 +1,3 @@
+5|runtime_session|second_wave|runtime lifecycle hosting|120.implementation/080.runtime_hosting/1200800002_PERSONA_RUNTIME_SESSION_IMPLEMENTATION.md
+6|visual_runtime|second_wave|released visual resolution|120.implementation/070.visual/1200700002_PERSONA_VISUAL_RUNTIME_IMPLEMENTATION.md
+7|external_release|second_wave|external release dispatch and result handling|120.implementation/120.external_rights/1201200002_PERSONA_EXTERNAL_RELEASE_IMPLEMENTATION.md

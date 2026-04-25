@@ -1,0 +1,8 @@
+# 0801000000_PERSONA_PACKAGE_POLICY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 080.policy/100.package/080.policy/100.package
+
+- 0801000001_PERSONA_PACKAGE_POLICY_OVERVIEW.md
+- 0801000002_PERSONA_PACKAGE_ASSEMBLY_POLICY.md

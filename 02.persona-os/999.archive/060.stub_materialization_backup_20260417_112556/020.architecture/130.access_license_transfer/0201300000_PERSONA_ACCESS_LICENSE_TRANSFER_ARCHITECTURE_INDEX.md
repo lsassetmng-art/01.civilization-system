@@ -1,0 +1,7 @@
+# 0201300000_PERSONA_ACCESS_LICENSE_TRANSFER_ARCHITECTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 020.architecture/130.access_license_transfer
+
+- 0201300001_PERSONA_ACCESS_LICENSE_TRANSFER_ARCHITECTURE_OVERVIEW.md

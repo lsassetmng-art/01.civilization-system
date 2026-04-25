@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA BUILDER RUNTIME INDEX
-# ============================================================
+# 0400600000_PERSONA_BUILDER_RUNTIME_INDEX
 
-status: canonical
-layer: runtime
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA BUILDER RUNTIME documents.
+directory: 040.runtime/060.builder
 
-# ============================================================
-# FILES
-# ============================================================
-
-0400600000_PERSONA_BUILDER_RUNTIME_INDEX.md
-0400600001_PERSONA_BUILDER_RUNTIME_OVERVIEW.md
-0400600002_PERSONA_BUILDER_DRAFT_RUNTIME.md
+- 0400600001_PERSONA_BUILDER_RUNTIME_OVERVIEW.md
+- 0400600002_PERSONA_BUILDER_DRAFT_RUNTIME.md
+- 040.runtime/

@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona skill growth.
+Defines the implementation design for Civilization-side persona skill growth.
 
 # 2. IMPLEMENTATION TARGETS
 

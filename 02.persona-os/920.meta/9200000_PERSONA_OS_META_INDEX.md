@@ -1,12 +1,47 @@
-# ============================================================
-# PERSONA OS META INDEX
-# ============================================================
+# 9200000_PERSONA_OS_META_INDEX
 
-status: canonical
-layer: meta
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PersonaOS meta documents.
+directory: 920.meta
+
+- 9200000_META_INDEX.md
+- 9200001_META_OVERVIEW.md
+- 9200001_PERSONA_OS_META_OVERVIEW.md
+- 9200002_PERSONA_OS_DEPENDENCY_MAP.md
+- 9200003_PERSONA_OS_EVENT_CATALOG.md
+- 9200004_PERSONA_OS_CHANGELOG.md
+- 9200005_PERSONA_OS_DESIGN_HISTORY.md
+- 9200006_PERSONA_OS_FULL_ARCHITECTURE_MAP.md
+- 9200090_PERSONA_OS_RENUMBERING_SOURCE_DUMP.txt
+- 9201491_PERSONA_REAL_DB_DIFF_CHECK_FIXED.md
+- 999_META_INDEX.txt
+- 000.root_files/
+- 000.structure_normalization/
+- 001.path_reference_fix/
+- 002.index_reconciliation/
+- 003.deep_index_rebuild/
+- 010.design_map/
+- 020.binding_rule/
+- 030.binding_script/
+- 030.final_structure/
+- 040.legacy_reassignment/
+- 050.top_structure/
+- 060.root_file_review/
+- 070.root_relocated/
+- 080.final_check/
+- 090.gap_check/
+- 100.full_review/
+- 110.model_review/
+- 120.duplicate_review/
+- 130.completion/
+- 140.semantic_review/
+- 150.implementation_prep/
+- 160.reflection_prep/
+- 170.foundation_reflection/
+- external-reflection/
+- external-reflection-backup/
+- external-reflection-structure-backup/
+- final-review/
+- integrated-rebuild/
+- integrated-rebuild-backup/
+- review/

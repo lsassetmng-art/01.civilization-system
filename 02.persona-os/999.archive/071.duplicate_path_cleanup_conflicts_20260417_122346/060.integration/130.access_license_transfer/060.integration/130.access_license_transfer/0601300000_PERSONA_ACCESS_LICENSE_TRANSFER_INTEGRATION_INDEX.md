@@ -1,0 +1,8 @@
+# 0601300000_PERSONA_ACCESS_LICENSE_TRANSFER_INTEGRATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 060.integration/130.access_license_transfer/060.integration/130.access_license_transfer
+
+- 0601300001_PERSONA_ACCESS_LICENSE_TRANSFER_INTEGRATION_OVERVIEW.md
+- 0601300002_PERSONA_LICENSE_CONSUMER_INTEGRATION.md

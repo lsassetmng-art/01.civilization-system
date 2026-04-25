@@ -1,0 +1,366 @@
+[
+  {
+    "method": "GET",
+    "path": "/streamwatch/profile/list",
+    "name": "profile_list",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id"
+    ],
+    "response": [
+      "profiles[]"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/profile/select",
+    "name": "profile_select",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "device_mode?"
+    ],
+    "response": [
+      "active_profile",
+      "restriction_context"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/home-feed/read",
+    "name": "home_feed_read",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "feed_scope",
+      "limit",
+      "offset",
+      "device_mode"
+    ],
+    "response": [
+      "feed_scope",
+      "feed_items[]"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/category-tree/read",
+    "name": "category_tree_read",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "root_scope",
+      "include_personal_library_branch?",
+      "depth_limit?"
+    ],
+    "response": [
+      "root_scope",
+      "nodes[]"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/search",
+    "name": "search",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "keyword",
+      "limit",
+      "offset",
+      "device_mode?"
+    ],
+    "response": [
+      "items[]",
+      "page"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/series/detail/read",
+    "name": "series_detail_read",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "series_id"
+    ],
+    "response": [
+      "series",
+      "season_groups[]",
+      "next_up"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/library/read",
+    "name": "library_read",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "section",
+      "limit",
+      "offset",
+      "device_mode?"
+    ],
+    "response": [
+      "section",
+      "items[]",
+      "summary"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/follow/upsert",
+    "name": "follow_upsert",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "follow_flag"
+    ],
+    "response": [
+      "result",
+      "follow_state"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/saved-list/mutate",
+    "name": "saved_list_mutate",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "list_type",
+      "target_type",
+      "target_id",
+      "mutation"
+    ],
+    "response": [
+      "result",
+      "list_type",
+      "mutation"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/watch-queue/mutate",
+    "name": "watch_queue_mutate",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "mutation"
+    ],
+    "response": [
+      "result",
+      "queue_state"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/progress/upsert",
+    "name": "progress_upsert",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "position_seconds",
+      "duration_seconds",
+      "completion_ratio",
+      "device_mode?",
+      "route_context?"
+    ],
+    "response": [
+      "result",
+      "continuity_state"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/comment/submit",
+    "name": "comment_submit",
+    "phase": "deferred_stub",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "comment_body"
+    ],
+    "response": [
+      "result",
+      "comment_id"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/report/submit",
+    "name": "report_submit",
+    "phase": "deferred_stub",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "reason_code",
+      "detail?"
+    ],
+    "response": [
+      "result",
+      "report_id"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/tv-handoff/start",
+    "name": "tv_handoff_start",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "route_family",
+      "route_target_ref"
+    ],
+    "response": [
+      "result",
+      "handoff_session"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/tv-handoff/claim",
+    "name": "tv_handoff_claim",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "handoff_session_id",
+      "claim_device_ref"
+    ],
+    "response": [
+      "result",
+      "claim_state"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/notifications/read",
+    "name": "notifications_read",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "cursor?",
+      "limit?"
+    ],
+    "response": [
+      "items[]",
+      "page"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/entitlement/read",
+    "name": "entitlement_read",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id"
+    ],
+    "response": [
+      "target_type",
+      "target_id",
+      "entitlement_state",
+      "playback_cta",
+      "archive_access_flag"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/purchase/quote",
+    "name": "purchase_quote",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id"
+    ],
+    "response": [
+      "price_quote"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/purchase/execute",
+    "name": "purchase_execute",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "quote_id",
+      "payment_method_ref"
+    ],
+    "response": [
+      "result",
+      "transaction_state",
+      "entitlement_refresh_required"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/rental/execute",
+    "name": "rental_execute",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "rental_option_id",
+      "payment_method_ref"
+    ],
+    "response": [
+      "result",
+      "transaction_state",
+      "entitlement_refresh_required"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/streamwatch/membership/join/execute",
+    "name": "membership_join_execute",
+    "phase": "phase1",
+    "request": [
+      "actor_civilization_id",
+      "viewer_profile_id",
+      "target_type",
+      "target_id",
+      "membership_plan_id"
+    ],
+    "response": [
+      "result",
+      "transaction_state",
+      "entitlement_refresh_required"
+    ]
+  }
+]

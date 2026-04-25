@@ -1,10 +1,8 @@
-# ============================================================
-# PERSONA SNAPSHOT CONSTITUTION INDEX
-# ============================================================
+# 0100900000_PERSONA_SNAPSHOT_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/090.snapshot
+
+- 0100900001_PERSONA_SNAPSHOT_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

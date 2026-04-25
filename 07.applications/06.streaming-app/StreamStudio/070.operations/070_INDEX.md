@@ -1,5 +1,5 @@
 # ============================================================
-# 070 OPERATIONS INDEX
+# 070 INDEX
 # ============================================================
 
 status: canonical
@@ -11,5 +11,6 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 070_OVERVIEW.md
 - 070_STREAM_STUDIO_OPERATIONS.md
 - 071_STREAM_STUDIO_RUNTIME_JOB_RETRY_AND_DEADLETTER_EXACT.md

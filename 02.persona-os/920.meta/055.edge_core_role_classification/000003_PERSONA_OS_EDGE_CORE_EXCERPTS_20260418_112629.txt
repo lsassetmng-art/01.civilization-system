@@ -1,0 +1,1032 @@
+============================================================
+020.architecture/0200013_PERSONA_EDGE_ARCHITECTURE.md
+role=core_edge
+handling=keep_as_family_anchor
+reason=edge family anchor document
+# ============================================================
+# PERSONA EDGE ARCHITECTURE
+# ============================================================
+
+PersonaOS uses Supabase Edge Functions
+as runtime execution units.
+
+Major functions:
+
+persona-create
+persona-state-apply
+visual-generation-job-create
+visual-compose
+visual-render-result-commit
+snapshot-issue
+snapshot-verify
+snapshot-revoke
+sign-event
+
+All Edge functions must follow:
+
+fail-closed design
+idempotent execution
+signed event handling
+
+
+# EXACT READY ARCHITECTURE REINFORCEMENT
+
+status_extension: author-reviewed-with-architecture-reinforcement
+reinforced_at: 20260417_150617
+reinforcement_scope:
+- component boundary clarification
+- flow boundary clarification
+- persistence edge clarification
+- failure path clarification
+
+domain: generic
+
+minimum_architecture_requirements:
+- define entry component
+- define coordination or orchestration component
+- define persistence or state boundary
+- define outbound interface or integration boundary
+- define reject, retry, and terminal failure path where applicable
+
+mandatory_flow_requirements:
+- happy path
+- reject or block path
+- retry or recovery path where applicable
+- dead-letter or terminal failure path where applicable
+
+mandatory_boundary_requirements:
+- no hidden write path
+- no shortcut around validation or policy
+- no silent external effect
+- no terminal action without observable evidence
+
+architecture_ready_note:
+This reinforcement does not replace the authored architectural content above.
+It marks the minimum exact-ready architectural items that must be explicit
+before implementation contract fixation is considered complete.
+============================================================
+020.architecture/120.external_reflection/0201200_EXTERNAL_REFLECTION_INTAKE_ARCHITECTURE.md
+role=external_intake_variant
+handling=treat_as_variant_intake_not_primary_truth_owner
+reason=external reflection or candidate intake oriented
+# ============================================================
+# EXTERNAL REFLECTION INTAKE ARCHITECTURE
+# ============================================================
+
+status: draft-for-canonical-update
+system: persona-os
+layer: architecture
+domain: external-reflection
+document_type: architecture
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# 1. PURPOSE
+# ============================================================
+
+This architecture defines how PersonaOS formally receives external reflection
+candidates from GameOS and future external domains.
+
+# ============================================================
+# 2. CORE RESPONSIBILITY
+# ============================================================
+
+PersonaOS must receive external semantic proposals through a controlled intake
+boundary instead of direct canonical overwrite.
+
+# ============================================================
+# 3. INTAKE RESPONSIBILITIES
+# ============================================================
+
+- validate source system identity
+- validate target Persona linkage
+- normalize incoming candidate shape
+- create intake identity
+- create intake timestamp
+- preserve source lineage
+- route candidate to review, hold, reject, or queue
+
+# ============================================================
+# 4. BOUNDARY RULES
+# ============================================================
+
+- intake is not canonical adoption
+- intake is not review result
+- intake is not sync success
+- intake must not directly write canonical truth
+
+# ============================================================
+# 5. CONCLUSION
+# ============================================================
+
+PersonaOS external reflection intake is the formal boundary for receiving
+semantic proposals while preserving canonical safety.
+
+# EXACT READY ARCHITECTURE REINFORCEMENT
+
+status_extension: author-reviewed-with-architecture-reinforcement
+reinforced_at: 20260417_150617
+reinforcement_scope:
+- component boundary clarification
+- flow boundary clarification
+- persistence edge clarification
+- failure path clarification
+
+domain: generic
+
+minimum_architecture_requirements:
+- define entry component
+- define coordination or orchestration component
+- define persistence or state boundary
+- define outbound interface or integration boundary
+- define reject, retry, and terminal failure path where applicable
+
+mandatory_flow_requirements:
+- happy path
+- reject or block path
+- retry or recovery path where applicable
+- dead-letter or terminal failure path where applicable
+
+mandatory_boundary_requirements:
+============================================================
+050.flow/120.external_reflection/0501200_EXTERNAL_CANDIDATE_INTAKE_FLOW.md
+role=external_intake_variant
+handling=treat_as_variant_intake_not_primary_truth_owner
+reason=external reflection or candidate intake oriented
+# ============================================================
+# EXTERNAL CANDIDATE INTAKE FLOW
+# ============================================================
+
+status: draft-for-canonical-update
+system: persona-os
+layer: flow
+domain: external-reflection
+document_type: flow
+owner: Boss
+prepared_by: Zero
+
+flow:
+1. external candidate arrives
+2. source identity is validated
+3. intake record is created
+4. duplicate and malformed checks run
+5. candidate is routed to review or hold
+
+# EXACT READY FLOW REINFORCEMENT
+
+status_extension: author-reviewed-with-flow-reinforcement
+reinforced_at: 20260417_152041
+domain: flow
+
+minimum_flow_requirements:
+- define actor or trigger
+- define ordered steps
+- define reject or block branch
+- define retry or failure branch where applicable
+- define terminal output
+
+mandatory_flow_controls:
+- no skipped validation or policy step
+- no hidden side-effect branch
+- no unaudited terminal transition
+
+minimum_flow_acceptance_targets:
+- happy path proof
+- reject path proof
+- retry or terminal failure proof where applicable
+============================================================
+060.integration/090.snapshot/0600900002_PERSONA_SNAPSHOT_RELEASE_INTEGRATION.md
+role=snapshot_issue_boundary
+handling=treat_as_release_artifact_boundary
+reason=snapshot issue or release integration oriented
+# ============================================================
+# PERSONA SNAPSHOT RELEASE INTEGRATION
+# ============================================================
+
+status: canonical
+layer: integration
+domain: snapshot
+system: persona-os
+owner: Boss
+prepared_by: Zero
+
+integration_rules:
+snapshot outputs may feed package and release flows through explicit contracts
+
+# EXACT READY INTEGRATION REINFORCEMENT
+
+status_extension: author-reviewed-with-integration-reinforcement
+reinforced_at: 20260417_152041
+domain: snapshot
+
+minimum_integration_requirements:
+- define inbound or outbound contract role
+- define correlation or idempotency handling
+- define retry-safe semantics
+- define callback or downstream normalization where applicable
+- define dead-letter behavior where applicable
+
+mandatory_integration_controls:
+- transport must not become authority
+- no silent downstream side effect
+- no retry without stop condition
+- no missing evidence for callback or outbound result
+
+minimum_integration_acceptance_targets:
+- contract success path
+- downstream failure path
+- retry and dead-letter proof where applicable
+============================================================
+100.security/103_PERSONA_SIGNATURE_VALIDATION_SECURITY.md
+role=signing_trust
+handling=treat_as_trust_and_verification_boundary
+reason=signature or trust verification oriented
+# PERSONA SIGNATURE VALIDATION SECURITY
+status: canonical
+layer: security
+system: persona-os
+scope: persona-signature-validation-security
+
+Defines signature or trusted-dispatch validation requirements.
+
+# ============================================================
+# SIGNATURE VALIDATION VS LOCAL EXECUTION ACCEPTANCE
+# ============================================================
+
+Signature validation truth remains upstream
+from VisualRuntime execution behavior.
+
+VisualRuntime may accept inputs for local execution,
+but local asset or input usability must not be interpreted as
+signature verification truth.
+
+The following equivalences are prohibited:
+
+- local input accepted = signature verified
+- asset usable = signature valid
+- renderer-ready = signed-trust confirmed
+- local fallback accepted = signature success
+
+Render-local acceptance is execution readiness only.
+It does not replace canonical signature validation truth.
+
+
+# EXACT READY SECURITY REINFORCEMENT
+
+status_extension: author-reviewed-with-security-reinforcement
+reinforced_at: 20260417_152041
+domain: security
+
+minimum_security_requirements:
+- define security gate
+- define block condition
+- define evidence required for failure
+- define audit trace requirement
+- define separation of authority where applicable
+
+mandatory_security_controls:
+- no unverifiable privileged action
+- no silent security bypass
+- no missing block reason
+- no missing trace linkage
+
+minimum_security_acceptance_targets:
+- valid pass case
+- blocked case
+- audit and trace proof
+============================================================
+110.infrastructure/1400002_PERSONA_EDGE_INFRASTRUCTURE.md
+role=core_edge
+handling=keep_as_family_anchor
+reason=edge family anchor document
+# PERSONA EDGE INFRASTRUCTURE
+
+status: implementation-ready-followup
+
+edge_requirements:
+- authenticated request entry
+- signature verification support
+- correlation id propagation
+- rate and abuse protection
+- deterministic timeout behavior
+
+rule:
+Edge must reject unverifiable requests before downstream mutation paths are reached.
+
+# EXACT READY INFRASTRUCTURE REINFORCEMENT
+
+status_extension: author-reviewed-with-infrastructure-reinforcement
+reinforced_at: 20260417_152041
+domain: edge
+
+minimum_infrastructure_requirements:
+- define execution or storage role
+- define durability or routing expectation
+- define observability expectation
+- define recovery boundary where applicable
+- define what infrastructure must not decide
+
+mandatory_infrastructure_controls:
+- infrastructure must not become business authority
+- no hidden persistence boundary
+- no missing retry or delivery evidence where applicable
+- no missing traceability
+
+minimum_infrastructure_acceptance_targets:
+- normal operation case
+- degraded or failure case
+- recovery or routing proof where applicable
+============================================================
+120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+role=core_edge
+handling=keep_as_family_anchor
+reason=edge family anchor document
+# ============================================================
+# PERSONA EDGE FUNCTION SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / edge intake / apply entry
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Goal
+
+This file fixes the public apply entry contract for PersonaOS.
+The edge function is the only supported write entry for truth/apply execution.
+
+## Canonical endpoints
+
+### POST /persona/v1/events/apply
+
+Auth actor:
+- system actor or authenticated builder publish actor with apply permission
+
+Request:
+```json
+{
+  "event_id": "01EVT...",
+  "event_type": "persona.release.apply-requested",
+  "persona_root_id": "01PERSROOT...",
+  "source_object_type": "builder_publish_execution",
+  "source_object_id": "01PUBEXEC...",
+  "requested_by_actor_id": "01ACTOR...",
+  "occurred_at": "2026-04-16T11:00:00Z",
+  "payload": {
+    "target_release_id": "01REL...",
+    "target_package_id": null,
+    "apply_mode": "release-truth-reflect"
+  },
+  "signature": {
+    "signature_id": "01SIG...",
+    "algorithm": "ed25519",
+    "key_id": "persona-edge-key-1",
+    "signed_at": "2026-04-16T11:00:00Z",
+    "signature_value": "base64..."
+  }
+}
+```
+
+Response `202`:
+```json
+{
+  "ok": true,
+  "data": {
+    "apply_result_id": "01APR...",
+    "event_id": "01EVT...",
+    "status": "accepted",
+    "next_state": "queued"
+  }
+}
+```
+
+### GET /persona/v1/events/{event_id}
+
+Response `200`:
+```json
+{
+  "ok": true,
+  "data": {
+    "event_id": "01EVT...",
+    "event_type": "persona.release.apply-requested",
+    "ingest_state": "validated",
+    "apply_state": "applied",
+    "last_error_code": null
+  }
+}
+```
+
+### GET /persona/v1/apply-results/{apply_result_id}
+
+============================================================
+120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
+role=canonical_apply_boundary
+handling=treat_as_single_truth_mutation_boundary
+reason=explicit canonical apply truth mutation spec
+# ============================================================
+# PERSONA STATE APPLY SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / truth apply
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Goal
+
+This file fixes the exact apply state machine, retry rule, storage contract boundary, and terminal outcomes for truth reflection.
+
+## Canonical apply state machine
+
+```text
+received
+  -> signature-verified
+  -> validated
+  -> queued
+  -> applying
+  -> applied
+
+validated
+  -> rejected-terminal
+
+applying
+  -> failed-retryable
+  -> failed-terminal
+  -> dead-lettered
+```
+
+## Retry policy
+
+- retry only when failure class is transient
+- maximum attempts: `5`
+- backoff seconds: `15, 60, 300, 900, 3600`
+- after final retry failure -> `dead-lettered`
+
+Retryable classes:
+- storage transient failure
+- queue timeout
+- downstream lock timeout
+
+Terminal classes:
+- validation denied
+- policy denied
+- missing release
+- foreign key integrity failure caused by invalid input
+
+## Canonical truth objects mutated by apply
+
+- `persona_truth_release_pointer`
+- `persona_truth_profile`
+- `persona_truth_behavior_rules`
+- `persona_truth_capability_binding`
+- `persona_truth_visual_binding`
+- `persona_truth_guardrail_binding`
+
+Rules:
+- apply is atomic per `persona_root_id`
+- all truth pointers switch to same `release_id`
+- partial truth mutation is forbidden
+- audit append is mandatory on every attempt
+
+## Result contract
+
+Successful apply result:
+```json
+{
+  "apply_result_id": "01APR...",
+  "status": "applied",
+  "truth_release_id": "01REL...",
+  "attempt_count": 1,
+  "error_code": null
+}
+```
+============================================================
+120.implementation/1200005_PERSONA_SNAPSHOT_ISSUE_SPEC.md
+role=snapshot_issue_boundary
+handling=treat_as_release_artifact_boundary
+reason=snapshot issue or release integration oriented
+# ============================================================
+# PERSONA SNAPSHOT ISSUE SPEC
+# IMPLEMENTATION-READY REFLECTED VERSION
+# ============================================================
+
+status: implementation-ready-reflected
+canonical: true
+scope: PersonaOS / snapshot issue api
+prepared_by: Zero
+prepared_for: Boss
+date: 2026-04-16
+
+## Snapshot create endpoint
+
+### POST /persona/v1/runtime-sessions/{runtime_session_id}/snapshots
+
+Request:
+```json
+{
+  "requested_by_actor_id": "01ACTOR...",
+  "reason_code": "manual-save"
+}
+```
+
+Response `201`:
+```json
+{
+  "ok": true,
+  "data": {
+    "snapshot_id": "01SNP...",
+    "runtime_session_id": "01RTS...",
+    "status": "created",
+    "created_at": "2026-04-16T11:00:00Z"
+  }
+}
+```
+
+## Snapshot restore endpoint
+
+### POST /persona/v1/snapshots/{snapshot_id}/restore
+
+Request:
+```json
+{
+  "requested_by_actor_id": "01ACTOR..."
+}
+```
+
+Response `202`:
+```json
+{
+  "ok": true,
+  "data": {
+    "restore_job_id": "01RST...",
+    "status": "queued"
+  }
+}
+```
+
+## Snapshot rules
+
+- snapshot payload is immutable after creation
+- only session owner or privileged actor may restore
+- snapshot references released persona artifacts only
+- draft-only objects are forbidden in snapshot payload
+
+# EXACT READY REINFORCEMENT
+
+status_extension: author-reviewed-with-exact-ready-reinforcement
+reinforced_at: 20260417_150009
+reinforcement_scope:
+- implementation contract clarification
+- persistence touchpoint clarification
+- error family clarification
+- acceptance target clarification
+
+domain: snapshot
+
+minimum_exact_contract:
+- define authoritative operation names
+============================================================
+120.implementation/1200006_PERSONA_SIGNATURE_SPEC.md
+role=signing_trust
+handling=treat_as_trust_and_verification_boundary
+reason=signature or trust verification oriented
+# ============================================================
+# PERSONA SIGNATURE SPEC
+# ============================================================
+
+status: canonical
+component: persona-signature
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Define cryptographic signature rules
+for PersonaOS.
+
+# ALGORITHM
+
+Ed25519
+
+# SIGNED OBJECTS
+
+events
+snapshots
+
+# PROCESS
+
+canonical JSON generation
+hash calculation
+signature generation
+signature verification
+
+# SECURITY PRINCIPLES
+
+keys must be controlled
+verification must be deterministic
+invalid signatures must fail execution
+
+
+# EXACT READY REINFORCEMENT
+
+status_extension: author-reviewed-with-exact-ready-reinforcement
+reinforced_at: 20260417_150009
+reinforcement_scope:
+- implementation contract clarification
+- persistence touchpoint clarification
+- error family clarification
+- acceptance target clarification
+
+domain: generic
+
+minimum_exact_contract:
+- define authoritative operation names
+- define request-side required identifiers
+- define response-side success and reject families
+- define validation gates
+- define state transition or resolution boundaries
+- define persistence touchpoints
+- define retry and dead-letter behavior where applicable
+
+minimum_error_families:
+- invalid_request
+- authority_blocked
+- lifecycle_blocked
+- conflict_or_duplicate where applicable
+- internal_retryable where applicable
+- internal_terminal
+
+minimum_acceptance_targets:
+- success path
+- reject or blocked path
+- audit persistence proof
+- retry-safe path where applicable
+
+implementation_ready_note:
+This reinforcement does not replace the authored content above.
+It marks the minimum exact-ready items that must be made explicit
+before implementation is considered complete for this document.
+============================================================
+120.implementation/1200007_PERSONA_EVENT_SIGNATURE_SPEC.md
+role=signing_trust
+handling=treat_as_trust_and_verification_boundary
+reason=signature or trust verification oriented
+# ============================================================
+# PERSONA EVENT SIGNATURE SPEC
+# ============================================================
+
+status: canonical
+component: persona-event-signature
+
+owner: Boss
+prepared_by: Zero
+
+# PURPOSE
+
+Ensure all external events
+entering PersonaOS are signed.
+
+# EVENT FLOW
+
+event created
+↓
+canonical JSON
+↓
+Ed25519 signature
+↓
+verification before runtime apply
+
+# FAILURE POLICY
+
+invalid signature
+→ reject event
+
+
+# EXACT READY REINFORCEMENT
+
+status_extension: author-reviewed-with-exact-ready-reinforcement
+reinforced_at: 20260417_150009
+reinforcement_scope:
+- implementation contract clarification
+- persistence touchpoint clarification
+- error family clarification
+- acceptance target clarification
+
+domain: generic
+
+minimum_exact_contract:
+- define authoritative operation names
+- define request-side required identifiers
+- define response-side success and reject families
+- define validation gates
+- define state transition or resolution boundaries
+- define persistence touchpoints
+- define retry and dead-letter behavior where applicable
+
+minimum_error_families:
+- invalid_request
+- authority_blocked
+- lifecycle_blocked
+- conflict_or_duplicate where applicable
+- internal_retryable where applicable
+- internal_terminal
+
+minimum_acceptance_targets:
+- success path
+- reject or blocked path
+- audit persistence proof
+- retry-safe path where applicable
+
+implementation_ready_note:
+This reinforcement does not replace the authored content above.
+It marks the minimum exact-ready items that must be made explicit
+before implementation is considered complete for this document.
+============================================================
+120.implementation/1200011_PERSONA_EVENT_INTAKE_TO_SNAPSHOT_PIPELINE_IMPLEMENTATION_RULE.md
+role=dispatcher_orchestrator
+handling=treat_as_first_wave_orchestrator_not_truth_owner
+reason=intake, orchestration, or pipeline oriented
+# PERSONA EVENT INTAKE TO SNAPSHOT PIPELINE IMPLEMENTATION RULE
+
+status: confirmed
+system: PersonaOS
+layer: implementation
+confirmed_at: 20260418_072945
+
+purpose:
+Fixes the primary implementation route for PersonaOS.
+
+primary_pipeline:
+1. event intake
+2. validation
+3. apply
+4. snapshot issue
+5. signature issue
+6. external consumption
+
+implementation_rules:
+- event intake is the only allowed mutable entry path
+- validation must enforce contract, authority, and lifecycle checks
+- apply must mutate canonical truth only inside PersonaOS
+- snapshot issue must create immutable external consumption artifact
+- signature and revocation must govern external trust
+- external OS consumption must attach to signed snapshot, not mutable truth
+
+anti_patterns:
+- external direct update
+- external direct read of mutable truth
+- dual-write to mutable truth and external release surface
+- release without signed snapshot lineage
+- direct commerce mutation inside PersonaOS without canonical boundary declaration
+============================================================
+120.implementation/1200013_PERSONA_EDGE_APPLY_CONCRETE_IMPLEMENTATION_BLOCK.md
+role=dispatcher_orchestrator
+handling=treat_as_first_wave_orchestrator_not_truth_owner
+reason=intake, orchestration, or pipeline oriented
+# PERSONA EDGE APPLY CONCRETE IMPLEMENTATION BLOCK
+
+status: implementation-block-ready
+system: PersonaOS
+layer: implementation
+confirmed_at: 20260418_074527
+
+target:
+- edge_apply
+- base_doc: 120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+
+purpose:
+Defines the concrete implementation-entry block for edge_apply before any DB or app code is written.
+
+implementation_scope:
+- inbound event intake handling
+- request field validation
+- correlation and dedupe handling
+- canonical apply handoff contract
+- terminal result shaping
+- retry and dead-letter branching
+- audit evidence emission
+
+explicit_non_scope:
+- runtime_session implementation
+- visual_runtime implementation
+- external_release implementation
+- direct external mutable truth read
+- direct external mutable truth write
+- full cross-wave implementation
+
+required_fixed_inputs:
+- exact payload fixation
+- exact code family fixation
+- exact state transition fixation
+- exact persistence and audit fixation
+- exact acceptance and done gate fixation
+- first-wave boundary enforcement rule
+
+concrete_implementation_units:
+1. input contract parser
+2. validation pipeline
+3. dedupe and replay guard
+4. canonical apply handoff
+5. terminal result mapper
+6. retry scheduler hook
+7. dead-letter hook
+8. audit evidence writer
+
+required_output_contract:
+- success result
+- reject result
+- duplicate_noop result
+- retry_wait scheduling result
+- dead_lettered result
+- terminal_failed result
+
+hard_rules:
+- duplicate_noop must not mutate truth
+- validation_rejected must not mutate truth
+- external callers must not receive direct mutable truth access
+- every terminal path must emit audit evidence
+- retry and dead-letter must remain distinguishable
+
+exit_condition:
+This block is complete when edge_apply can be turned into code work items
+without ambiguity in payload, code family, transitions, storage, or boundary rules.
+
+============================================================
+120.implementation/1200014_PERSONA_EDGE_APPLY_BOUNDARY_AND_ERROR_ENFORCEMENT_BLOCK.md
+role=dispatcher_orchestrator
+handling=treat_as_first_wave_orchestrator_not_truth_owner
+reason=intake, orchestration, or pipeline oriented
+# PERSONA EDGE APPLY BOUNDARY AND ERROR ENFORCEMENT BLOCK
+
+status: implementation-block-ready
+system: PersonaOS
+layer: implementation
+confirmed_at: 20260418_074527
+
+target:
+- edge_apply
+
+purpose:
+Fixes the error handling and boundary enforcement behavior for edge_apply.
+
+boundary_enforcement:
+- edge_apply is intake-only
+- edge_apply may accept contract-governed events only
+- edge_apply must hand off to PersonaOS-controlled canonical apply
+- edge_apply must not expose personas or persona_state directly
+- edge_apply must not enable direct mutable truth updates by external OS
+
+error_family_enforcement:
+- schema_invalid
+- semantic_invalid
+- authority_blocked
+- duplicate_event
+- internal_retryable
+- internal_terminal
+
+result_status_enforcement:
+- applied
+- rejected
+- duplicate_noop
+- retrying
+- dead_lettered
+
+error_handling_rules:
+- schema_invalid must terminate as rejected
+- semantic_invalid must terminate as rejected
+- authority_blocked must terminate as rejected
+- duplicate_event must terminate as duplicate_noop
+- internal_retryable must transition to retry_wait or retry scheduling path
+- internal_terminal must transition to terminal_failed or dead_lettered according to policy
+
+forbidden_behavior:
+- uncategorized reject codes
+- uncategorized error codes
+- truth mutation on duplicate_noop
+- direct external mutable truth return payload
+- retry without stop condition
+
+============================================================
+120.implementation/1200015_PERSONA_EDGE_APPLY_IMPLEMENTATION_STARTER_SPEC.md
+role=dispatcher_orchestrator
+handling=treat_as_first_wave_orchestrator_not_truth_owner
+reason=intake, orchestration, or pipeline oriented
+# PERSONA EDGE APPLY IMPLEMENTATION STARTER SPEC
+
+status: implementation-starter-ready
+system: PersonaOS
+layer: implementation
+confirmed_at: 20260418_074527
+
+target:
+- edge_apply
+
+starter_sequence:
+1. confirm request contract fields
+2. confirm validation order
+3. confirm dedupe key evaluation order
+4. confirm canonical apply handoff payload
+5. confirm terminal response mapping
+6. confirm audit evidence write order
+7. confirm retry and dead-letter criteria
+
+starter_inputs:
+- event_id
+- correlation_id
+- persona_id
+- event_type
+- schema_version
+- actor_id
+- event_payload
+- dedupe_key
+
+starter_outputs:
+- apply_result_id on success path
+- reject_code and reject_family on reject path
+- duplicate_noop result on duplicate path
+- retry scheduling evidence on retry path
+- dead-letter evidence on exhausted retry path
+
+starter_ready_definition:
+- no missing field names
+- no ambiguous status families
+- no ambiguous reject or error family
+- no missing audit evidence fields
+- no boundary contradiction against PersonaOS truth rules
+
+next_after_this_doc:
+Generate the concrete edge_apply implementation code block only after this starter spec is accepted.
+
+============================================================
+130.development/1300002_EDGE_DEVELOPMENT_GUIDE.md
+role=core_edge
+handling=keep_as_family_anchor
+reason=edge family anchor document
+# PERSONA EDGE DEVELOPMENT GUIDE
+
+status: implementation-ready-followup
+
+scope:
+- request acceptance
+- signature verification
+- dedupe key handling
+- validation dispatch
+- canonical apply dispatch
+- result feedback persistence
+
+required_delivery:
+- exact endpoint contract
+- idempotency handling
+- retry-safe side effect boundary
+- dead-letter handoff
+- structured audit logging
+
+do_not:
+- do not mutate truth state directly in pre-validation path
+- do not return ambiguous partial-success responses
+
+# EXACT READY DEVELOPMENT REINFORCEMENT
+
+status_extension: author-reviewed-with-development-reinforcement
+reinforced_at: 20260417_150811
+reinforcement_scope:
+- implementation order clarification
+- acceptance target clarification
+- guardrail clarification
+- rollback or recovery clarification where applicable
+
+domain: edge
+
+minimum_development_requirements:
+- define recommended implementation sequence
+- define dependencies that must be fixed before coding
+- define minimum acceptance checks
+- define regression-sensitive areas
+- define audit and observability checks where applicable
+
+mandatory_guardrails:
+- no coding before contract boundary is explicit
+- no mutable side-effect without audit evidence
+- no retry path without stop condition
+- no release-sensitive path without gate verification
+- no test completion claim without reject-path checks
+
+minimum_acceptance_targets:
+- success path proof
+- reject or block path proof
+- persistence effect proof where applicable
+- audit evidence proof
+- retry or recovery proof where applicable
+
+development_ready_note:
+This reinforcement does not replace the authored development content above.
+It marks the minimum exact-ready development items that must be explicit
+before implementation planning is considered complete.

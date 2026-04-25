@@ -28,44 +28,22 @@ Recommended meanings:
 - session_id
 - channel_id
 - program_id
-  nullable
 - stream_principal_civilization_id
 - primary_revenue_beneficiary_civilization_id
 - tip_origin_type
-  - manual
-  - ai_emotional_auto
 - tip_actor_civilization_id
-  nullable
 - target_performer_participation_id
-  nullable
 - target_performer_civilization_id
-  nullable
 - target_persona_id
-  nullable
 - tip_amount_source
 - tip_currency_source_id
 - source_nation_id
 - tip_message
-  nullable
 - tip_status
-  - initiated
-  - authorized
-  - captured
-  - failed
-  - refunded
-  - partially_refunded
-  - held
-  - released
-  - reversed
-  - blocked
 - fee_amount_source
 - net_amount_source
 - hold_reason
-  nullable
 - fraud_state
-  - none
-  - suspected
-  - confirmed
 - created_at
 - updated_at
 
@@ -76,21 +54,10 @@ Recommended meanings:
 Recommended meanings:
 - tip_beneficiary_resolution_id
 - tip_event_id
+- resolution_status
 - beneficiary_civilization_id
-- beneficiary_type
-  - individual
-  - group
-  - company
-  - ai_human
-- beneficiary_nation_id
-- beneficiary_currency_id
-- beneficiary_amount_converted
-- display_currency_id
-- display_amount
-- conversion_rule_reference
-  nullable
-- conversion_timestamp
-  nullable
+- beneficiary_scope
+- resolution_reason
 - resolved_at
 - updated_at
 
@@ -128,7 +95,9 @@ Recommended meanings:
 - auto_tip_emotional_context_id
 - tip_event_id
 - auto_tipping_subject_civilization_id
-- persona_profile_reference
+- persona_signed_snapshot_ref
+  nullable
+- persona_result_event_ref
   nullable
 - video_impression_intensity
 - video_empathy_intensity
@@ -150,34 +119,26 @@ Recommended meanings:
 - created_at
 - updated_at
 
+rule:
+Persona-facing input here must be:
+- signed snapshot reference
+- or formal Persona result reference
+
+not_allowed:
+- local persona profile canonical
+- local persona internal emotional truth
+
 # ============================================================
 # 6. BUSINESSOS_LINKAGE_REFERENCE
 # ============================================================
 
 Recommended meanings:
-- businessos_linkage_reference_id
+- businessos_linkage_ref_id
 - tip_event_id
 - businessos_linkage_flag
 - linkage_status
-  - none
-  - pending
-  - linked
-  - failed
 - businessos_reference_id
   nullable
 - linkage_note
   nullable
 - updated_at
-
-# ============================================================
-# 7. CANONICAL FIXED STATEMENT
-# ============================================================
-
-This model shall preserve:
-- formal tip event meaning
-- source currency meaning
-- beneficiary-side conversion meaning
-- display currency meaning
-- optional auto tipping emotional context
-- optional BusinessOS linkage reference
-

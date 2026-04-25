@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA SNAPSHOT INTEGRATION INDEX
-# ============================================================
+# 0600900000_PERSONA_SNAPSHOT_INTEGRATION_INDEX
 
-status: canonical
-layer: integration
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA SNAPSHOT INTEGRATION documents.
+directory: 060.integration/090.snapshot
 
-# ============================================================
-# FILES
-# ============================================================
-
-0600900000_PERSONA_SNAPSHOT_INTEGRATION_INDEX.md
-0600900001_PERSONA_SNAPSHOT_INTEGRATION_OVERVIEW.md
-0600900002_PERSONA_SNAPSHOT_RELEASE_INTEGRATION.md
+- 0600900001_PERSONA_SNAPSHOT_INTEGRATION_OVERVIEW.md
+- 0600900002_PERSONA_SNAPSHOT_RELEASE_INTEGRATION.md
+- 060.integration/

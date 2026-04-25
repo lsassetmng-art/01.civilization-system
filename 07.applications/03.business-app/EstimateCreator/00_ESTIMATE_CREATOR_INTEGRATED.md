@@ -1,3 +1,5 @@
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/000_ESTIMATE_CREATOR_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR INDEX
 # ============================================================
@@ -100,6 +102,62 @@ EstimateCreator formally defines:
 - 900420_ESTIMATE_REVISION_DELIVERY_META_NOTE.md
 - 900430_ESTIMATE_DELIVERY_STATE_META_NOTE.md
 
+
+- 010.constitution/011110_ESTIMATECREATOR_COMPETITIVE_POSITIONING_NOTE.md
+
+- 020.architecture/021120_ESTIMATECREATOR_ESTIMATE_LIFECYCLE_PRICING_CONTROL_ARCHITECTURE.md
+
+- 020.architecture/021130_ESTIMATECREATOR_REVISION_APPROVAL_CONVERSION_ARCHITECTURE.md
+
+- 030.model/030510_ESTIMATECREATOR_COMMERCIAL_DECISION_TIMELINE_MODEL.md
+
+- 060.integration/060290_ESTIMATECREATOR_ESTIMATE_COCKPIT_PAYLOAD.md
+
+- 060.integration/060300_ESTIMATECREATOR_REVISION_APPROVAL_REVIEW_PAYLOAD.md
+
+- 090.interface/090330_ESTIMATECREATOR_ESTIMATE_COCKPIT_INTERFACE.md
+
+- 120.implementation/120300_ESTIMATECREATOR_PRICING_GOVERNANCE_IMPLEMENTATION_GUIDE.md
+
+- 900.meta/900410_ESTIMATECREATOR_20260416_DIFF_AUDIT_NOTE.md
+
+- 020.architecture/021140_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+- 060.integration/060320_ESTIMATECREATOR_PHASE_A_API_STARTER.md
+
+- 060.integration/060330_ESTIMATECREATOR_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+- 120.implementation/120310_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 900.meta/900420_ESTIMATECREATOR_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 120.implementation/120320_ESTIMATECREATOR_PHASE_A_STUB_FILE_PLAN.md
+
+- 120.implementation/120330_ESTIMATECREATOR_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120.implementation/120340_ESTIMATECREATOR_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 900.meta/900430_ESTIMATECREATOR_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 120.implementation/120350_ESTIMATECREATOR_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120.implementation/120360_ESTIMATECREATOR_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120.implementation/120370_ESTIMATECREATOR_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120.implementation/120380_ESTIMATECREATOR_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+- 900.meta/900440_ESTIMATECREATOR_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900.meta/900450_ESTIMATECREATOR_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900.meta/900460_ESTIMATECREATOR_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900.meta/900470_ESTIMATECREATOR_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/000_ESTIMATE_CREATOR_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/000_ESTIMATE_CREATOR_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR OVERVIEW
 # ============================================================
@@ -360,6 +418,10 @@ EstimateCreator is additionally strengthened by:
 - resend-safe delivery audit history
 - phone / tablet platform support discipline
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/000_ESTIMATE_CREATOR_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/010_ESTIMATE_CREATOR_CONSTITUTION.md -->
 # ============================================================
 # ESTIMATE CREATOR CONSTITUTION
 # ============================================================
@@ -541,6 +603,10 @@ If shared session context is missing, expired, or invalid,
 the application must safely fall back to login
 or fail closed according to policy.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/010_ESTIMATE_CREATOR_CONSTITUTION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/010_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR CONSTITUTION INDEX
 # ============================================================
@@ -553,6 +619,12 @@ prepared_by: Zero
 - 010_INDEX.md
 - 010_ESTIMATE_CREATOR_CONSTITUTION.md
 
+
+- 011110_ESTIMATECREATOR_COMPETITIVE_POSITIONING_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/010_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/010_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR CONSTITUTION OVERVIEW
 # ============================================================
@@ -572,6 +644,64 @@ These principles control:
 - what must remain under ERP authority
 - how offline, sharing, and ERP publication are bounded
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/010_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/011110_ESTIMATECREATOR_COMPETITIVE_POSITIONING_NOTE.md -->
+# ============================================================
+# ESTIMATECREATOR COMPETITIVE POSITIONING NOTE
+# ============================================================
+
+status: canonical
+layer: constitution
+system: applications
+application: EstimateCreator
+directory: 010.constitution
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: competitive-positioning-note
+
+purpose:
+Clarifies the differentiator that should be made explicit in the
+current EstimateCreator design without rewriting its existing core.
+
+positioning_summary:
+- EstimateCreator is not only a quote form editor.
+- Its durable value is commercial control across estimate creation,
+  revision, approval, negotiation readiness, and order conversion.
+- The differentiator is not simple document generation, but estimate-level
+  governance that keeps pricing, approval, and conversion risk visible.
+
+preserved_core:
+- estimate and quotation creation identity
+- sales support and commercial document role
+- existing business operation context
+- existing ERP bridge orientation
+- existing approval and operational separation direction
+
+differentiator_to_make_explicit:
+- estimate lifecycle control
+- revision and approval visibility
+- pricing governance and change traceability
+- conversion readiness from estimate to order
+
+competitive_contrast:
+- not merely a PDF generator
+- not merely a template editor
+- not merely a print-ready form builder
+- positioned as a commercial control layer that connects pricing,
+  revision governance, approval, and conversion movement
+
+non_goals_of_this_note:
+- no full constitutional rewrite
+- no implementation start
+- no destructive scope replacement
+- no framework decision
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/010.constitution/011110_ESTIMATECREATOR_COMPETITIVE_POSITIONING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md -->
 # ============================================================
 # ESTIMATE CREATOR SHARED ERP PUBLICATION ARCHITECTURE
 # ============================================================
@@ -648,6 +778,10 @@ Typical result states include:
 Offline mode may prepare publication intent,
 but must not mark ERP publication as completed.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020_ESTIMATE_CREATOR_ARCHITECTURE.md -->
 # ============================================================
 # ESTIMATE CREATOR ARCHITECTURE
 # ============================================================
@@ -836,6 +970,10 @@ business meaning, payload contract, or state model.
 
 Phone and tablet must share the same canonical business logic.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020_ESTIMATE_CREATOR_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR ARCHITECTURE INDEX
 # ============================================================
@@ -849,6 +987,16 @@ prepared_by: Zero
 - 020_ESTIMATE_CREATOR_ARCHITECTURE.md
 - 020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
 
+
+- 021120_ESTIMATECREATOR_ESTIMATE_LIFECYCLE_PRICING_CONTROL_ARCHITECTURE.md
+
+- 021130_ESTIMATECREATOR_REVISION_APPROVAL_CONVERSION_ARCHITECTURE.md
+
+- 021140_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR ARCHITECTURE OVERVIEW
 # ============================================================
@@ -868,6 +1016,248 @@ It clarifies:
 - offline and sync boundaries
 - premium feature gate placement
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/020_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/021120_ESTIMATECREATOR_ESTIMATE_LIFECYCLE_PRICING_CONTROL_ARCHITECTURE.md -->
+# ============================================================
+# ESTIMATECREATOR ESTIMATE LIFECYCLE PRICING CONTROL ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: EstimateCreator
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: estimate-lifecycle-pricing-control-architecture
+
+purpose:
+Makes estimate lifecycle and pricing control explicit in the
+current EstimateCreator architecture.
+
+architecture_intent:
+- estimate work must be visible not only as a document draft,
+  but as a governed commercial lifecycle
+- revisions, approval checkpoints, and pricing changes must remain explicit
+- order conversion readiness must be queryable without reconstructing
+  everything from raw document history only
+
+flow_layers:
+- estimate drafting:
+  - customer scope capture
+  - line composition
+  - pricing proposal
+  - revision draft save
+- pricing control:
+  - discount application
+  - margin check
+  - approval requirement detection
+  - exception routing
+- commercial review:
+  - revision comparison
+  - approval review
+  - negotiation readiness view
+  - order conversion readiness
+- control action:
+  - revise
+  - request approval
+  - approve or reject
+  - convert to order when eligible
+- closure:
+  - estimate accepted
+  - estimate rejected
+  - estimate expired
+  - estimate archived
+
+key_separations:
+- raw draft content is not the same as commercial readiness
+- revision history is not the same as active approval state
+- pricing exception detection is not the same as approval history
+- cockpit review is not the same as line-item editing screen
+
+recommended_runtime_objects:
+- estimate_lifecycle_signal
+- estimate_revision_review_item
+- estimate_conversion_readiness_item
+- estimate_cockpit_summary
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/021120_ESTIMATECREATOR_ESTIMATE_LIFECYCLE_PRICING_CONTROL_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/021130_ESTIMATECREATOR_REVISION_APPROVAL_CONVERSION_ARCHITECTURE.md -->
+# ============================================================
+# ESTIMATECREATOR REVISION APPROVAL CONVERSION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: EstimateCreator
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: revision-approval-conversion-architecture
+
+purpose:
+Defines the relationship between revision control, approval handling,
+and order conversion readiness in EstimateCreator.
+
+core_principle:
+- commercial slippage often appears through uncontrolled revision,
+  unresolved approval, or conversion blockers before it appears
+  through final order failure.
+
+architecture_rules:
+- revisions must be queryable as commercial checkpoints
+- approval requirement must be represented explicitly
+- conversion blockers must survive beyond one screen or one session
+- unresolved pricing exceptions must be visible in the same review flow
+  as order conversion readiness
+
+risk_categories:
+- pricing exception risk
+- approval pending risk
+- revision drift risk
+- conversion blocker risk
+- expiry risk
+
+visibility_outputs:
+- estimate cockpit
+- revision review screen
+- approval review panel
+- conversion readiness overview
+
+cross-module relation:
+- document editing feeds estimate draft content
+- lifecycle layer summarizes commercial checkpoints
+- approval layer captures governance state
+- conversion layer surfaces order-ready or blocked status
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/021130_ESTIMATECREATOR_REVISION_APPROVAL_CONVERSION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/021140_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A COMMERCIAL TIMELINE DDL ADDITIVE PLAN
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: EstimateCreator
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-commercial-timeline-ddl-additive-plan
+
+purpose:
+Defines the additive-only Phase A DDL planning boundary for
+commercial timeline visibility, revision and approval review,
+and estimate cockpit assembly.
+
+principles:
+- additive only
+- preserve existing EstimateCreator core
+- keep raw estimate editing separate from commercial readiness rows
+- keep revision and approval review separate from raw document history
+- no SQL execution in this document
+
+phase_a_target_capabilities:
+- persist commercial timeline rows for cockpit and review
+- persist revision and approval review rows for governance visibility
+- support estimate cockpit query without reconstructing everything from raw estimate history
+- support pricing exception and conversion blocker review slices
+
+proposed_additive_tables:
+- business.estimatecreator_commercial_timeline_item
+- business.estimatecreator_revision_approval_review_item
+- business.estimatecreator_estimate_cockpit_snapshot
+
+table_business_estimatecreator_commercial_timeline_item:
+  role:
+    - stores normalized commercial-decision timeline rows
+  recommended_columns:
+    - estimate_commercial_timeline_item_id uuid pk
+    - estimate_id uuid not null
+    - related_revision_id uuid null
+    - related_approval_id uuid null
+    - related_conversion_blocker_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - commercial_state_code text not null
+    - priority_code text null
+    - valid_until_at timestamptz null
+    - reviewed_at timestamptz null
+    - approved_at timestamptz null
+    - rejected_at timestamptz null
+    - converted_at timestamptz null
+    - exception_present boolean not null
+    - owner_user_id uuid null
+    - approval_required boolean not null
+    - source_module_code text not null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_estimatecreator_revision_approval_review_item:
+  role:
+    - stores reviewable revision and approval rows
+  recommended_columns:
+    - revision_approval_review_item_id uuid pk
+    - estimate_id uuid not null
+    - related_revision_id uuid null
+    - related_approval_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - commercial_state_code text not null
+    - exception_present boolean not null
+    - approval_required boolean not null
+    - owner_user_id uuid null
+    - resolved boolean not null
+    - valid_until_at timestamptz null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_estimatecreator_estimate_cockpit_snapshot:
+  role:
+    - stores generated estimate cockpit snapshots when caching or auditability is needed
+  recommended_columns:
+    - estimate_cockpit_snapshot_id uuid pk
+    - estimate_id uuid not null
+    - health_summary_message text not null
+    - generated_at timestamptz not null
+    - created_at timestamptz not null
+
+recommended_indexes_phase_a:
+- commercial_timeline_item:
+  - idx on estimate_id, commercial_state_code, valid_until_at
+  - idx on estimate_id, related_revision_id
+  - idx on estimate_id, related_approval_id
+- revision_approval_review_item:
+  - idx on estimate_id, approval_required
+  - idx on estimate_id, exception_present
+  - idx on estimate_id, resolved
+- estimate_cockpit_snapshot:
+  - idx on estimate_id, generated_at desc
+
+explicit_non_scope:
+- no destructive schema rewrite
+- no SQL execution here
+- no PDF renderer implementation here
+- no ERP order conversion execution here
+- no client sync policy here
+
+handoff_to_next_step:
+- freeze API starter and DTOs against these row families
+- create implementation skeleton and slice order on top of this plan
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/020.architecture/021140_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030100_ESTIMATE_RECORD_MODEL.md -->
 # ============================================================
 # ESTIMATE RECORD MODEL
 # ============================================================
@@ -1071,6 +1461,10 @@ Hard deletion should be avoided where audit preservation is required.
 Use is_deleted for safe removal semantics
 unless stronger archival policy is defined elsewhere.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030100_ESTIMATE_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030110_ESTIMATE_LINE_ITEM_MODEL.md -->
 # ============================================================
 # ESTIMATE LINE ITEM MODEL
 # ============================================================
@@ -1194,6 +1588,10 @@ sort_order controls visual ordering.
 line_no is the semantic line identity within a revision,
 while sort_order may support UI rearrangement.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030110_ESTIMATE_LINE_ITEM_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030120_ESTIMATE_OPPORTUNITY_MEMO_MODEL.md -->
 # ============================================================
 # ESTIMATE OPPORTUNITY MEMO MODEL
 # ============================================================
@@ -1275,6 +1673,10 @@ Representative sync_state values:
 - conflict
 - failed
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030120_ESTIMATE_OPPORTUNITY_MEMO_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030130_ESTIMATE_SHARE_TARGET_MODEL.md -->
 # ============================================================
 # ESTIMATE SHARE TARGET MODEL
 # ============================================================
@@ -1327,6 +1729,10 @@ Only enabled targets may be selected in share actions.
 Disabled targets remain historically meaningful
 but should not be offered for new share requests.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030130_ESTIMATE_SHARE_TARGET_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030140_ESTIMATE_ERP_PUBLISH_SETTING_MODEL.md -->
 # ============================================================
 # ESTIMATE ERP PUBLISH SETTING MODEL
 # ============================================================
@@ -1377,6 +1783,10 @@ or publication profile expected by the app.
 EstimateCreator must not treat this model
 as a private direct ERP credential source.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030140_ESTIMATE_ERP_PUBLISH_SETTING_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030150_ESTIMATE_SYNC_STATE_MODEL.md -->
 # ============================================================
 # ESTIMATE SYNC STATE MODEL
 # ============================================================
@@ -1445,6 +1855,10 @@ Representative conflict_state values:
 - publication_overlap
 - share_overlap
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030150_ESTIMATE_SYNC_STATE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030160_ESTIMATE_PENDING_OPERATION_MODEL.md -->
 # ============================================================
 # ESTIMATE PENDING OPERATION MODEL
 # ============================================================
@@ -1515,6 +1929,10 @@ needed for later execution or review.
 It should be sufficient for deterministic retry behavior
 within policy bounds.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030160_ESTIMATE_PENDING_OPERATION_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030170_ESTIMATE_RELATIONSHIP_MODEL.md -->
 # ============================================================
 # ESTIMATE RELATIONSHIP MODEL
 # ============================================================
@@ -1523,6 +1941,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030170_ESTIMATE_RELATIONSHIP_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030180_ESTIMATE_RELATIONSHIP_VISIBILITY_MODEL.md -->
 # ============================================================
 # ESTIMATE RELATIONSHIP VISIBILITY MODEL
 # ============================================================
@@ -1531,6 +1953,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030180_ESTIMATE_RELATIONSHIP_VISIBILITY_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030190_ESTIMATE_API_REQUEST_RESPONSE_MODEL.md -->
 # ============================================================
 # ESTIMATE API REQUEST RESPONSE MODEL
 # ============================================================
@@ -1539,6 +1965,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030190_ESTIMATE_API_REQUEST_RESPONSE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030200_ESTIMATE_ERP_PUBLICATION_REQUEST_MODEL.md -->
 # ============================================================
 # ESTIMATE ERP PUBLICATION REQUEST MODEL
 # ============================================================
@@ -1547,6 +1977,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030200_ESTIMATE_ERP_PUBLICATION_REQUEST_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030210_ESTIMATE_ERP_PUBLICATION_RESULT_MODEL.md -->
 # ============================================================
 # ESTIMATE ERP PUBLICATION RESULT MODEL
 # ============================================================
@@ -1555,6 +1989,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030210_ESTIMATE_ERP_PUBLICATION_RESULT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030220_ESTIMATE_AUDIT_LOG_MODEL.md -->
 # ============================================================
 # ESTIMATE AUDIT LOG MODEL
 # ============================================================
@@ -1563,6 +2001,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030220_ESTIMATE_AUDIT_LOG_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030230_ESTIMATE_HISTORY_ENTRY_MODEL.md -->
 # ============================================================
 # ESTIMATE HISTORY ENTRY MODEL
 # ============================================================
@@ -1571,6 +2013,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030230_ESTIMATE_HISTORY_ENTRY_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030240_ESTIMATE_APPROVAL_EVENT_MODEL.md -->
 # ============================================================
 # ESTIMATE APPROVAL EVENT MODEL
 # ============================================================
@@ -1579,6 +2025,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030240_ESTIMATE_APPROVAL_EVENT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030250_ESTIMATE_APPROVAL_STATE_TRANSITION_MODEL.md -->
 # ============================================================
 # ESTIMATE APPROVAL STATE TRANSITION MODEL
 # ============================================================
@@ -1587,6 +2037,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030250_ESTIMATE_APPROVAL_STATE_TRANSITION_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030260_ESTIMATE_AUDIT_ACTION_CODE_MODEL.md -->
 # ============================================================
 # ESTIMATE AUDIT ACTION CODE MODEL
 # ============================================================
@@ -1595,6 +2049,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030260_ESTIMATE_AUDIT_ACTION_CODE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030270_ESTIMATE_ERROR_CODE_MODEL.md -->
 # ============================================================
 # ESTIMATE ERROR CODE MODEL
 # ============================================================
@@ -1603,6 +2061,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030270_ESTIMATE_ERROR_CODE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030280_ESTIMATE_UI_STATE_CODE_MODEL.md -->
 # ============================================================
 # ESTIMATE UI STATE CODE MODEL
 # ============================================================
@@ -1611,6 +2073,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030280_ESTIMATE_UI_STATE_CODE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030290_ESTIMATE_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md -->
 # ============================================================
 # ESTIMATE ERP PUBLICATION PAYLOAD FIELD MAP MODEL
 # ============================================================
@@ -1619,6 +2085,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030290_ESTIMATE_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030300_ESTIMATE_API_FIELD_SCHEMA_MODEL.md -->
 # ============================================================
 # ESTIMATE API FIELD SCHEMA MODEL
 # ============================================================
@@ -1627,6 +2097,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030300_ESTIMATE_API_FIELD_SCHEMA_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030310_ESTIMATE_VALIDATION_CODE_MODEL.md -->
 # ============================================================
 # ESTIMATE VALIDATION CODE MODEL
 # ============================================================
@@ -1635,6 +2109,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030310_ESTIMATE_VALIDATION_CODE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030320_ESTIMATE_UI_LABEL_CODE_MODEL.md -->
 # ============================================================
 # ESTIMATE UI LABEL CODE MODEL
 # ============================================================
@@ -1643,6 +2121,10 @@ status: draft
 owner: Boss
 prepared_by: Zero
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030320_ESTIMATE_UI_LABEL_CODE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030330_ESTIMATE_MEETING_MEMO_MODEL.md -->
 # ============================================================
 # ESTIMATE MEETING MEMO MODEL
 # ============================================================
@@ -1708,6 +2190,10 @@ It may be null for free_form mode.
 Meeting memo is shareable through app-internal sharing
 and synchronizable like other business objects.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030330_ESTIMATE_MEETING_MEMO_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030340_ESTIMATE_INVENTORY_CHECK_MODEL.md -->
 # ============================================================
 # ESTIMATE INVENTORY CHECK MODEL
 # ============================================================
@@ -1769,6 +2255,10 @@ or in some UI cases to estimate-level exploratory lookup.
 
 line_item_id may therefore be nullable if policy allows.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030340_ESTIMATE_INVENTORY_CHECK_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030350_ESTIMATE_TEMPLATE_MODEL.md -->
 # ============================================================
 # ESTIMATE TEMPLATE MODEL
 # ============================================================
@@ -1830,6 +2320,10 @@ Representative owner_scope_type values:
 Disabled templates remain historically meaningful
 but should not be available for new application actions.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030350_ESTIMATE_TEMPLATE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030360_ESTIMATE_TEMPLATE_LINE_MODEL.md -->
 # ============================================================
 # ESTIMATE TEMPLATE LINE MODEL
 # ============================================================
@@ -1869,6 +2363,10 @@ These lines do not directly become authoritative estimate lines.
 They are source material for draft generation
 when a user applies a template.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030360_ESTIMATE_TEMPLATE_LINE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030370_ESTIMATE_QA_RECORD_MODEL.md -->
 # ============================================================
 # ESTIMATE QA RECORD MODEL
 # ============================================================
@@ -1922,6 +2420,10 @@ QA records support:
 - proposal open issue tracking
 - approval preparation issue tracking
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030370_ESTIMATE_QA_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030380_ESTIMATE_PREMIUM_FEATURE_STATE_MODEL.md -->
 # ============================================================
 # ESTIMATE PREMIUM FEATURE STATE MODEL
 # ============================================================
@@ -2013,6 +2515,10 @@ Representative premium entitlement states:
 unknown must fail closed for premium-only write operations.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030380_ESTIMATE_PREMIUM_FEATURE_STATE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030390_ESTIMATE_LAUNCH_CONTEXT_MODEL.md -->
+
 # ============================================================
 # ESTIMATE LAUNCH CONTEXT MODEL
 # ============================================================
@@ -2063,6 +2569,10 @@ This model stores invocation context only.
 It must not be treated as an authorization bypass mechanism.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030390_ESTIMATE_LAUNCH_CONTEXT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030400_ESTIMATE_DEEPLINK_CONTEXT_MODEL.md -->
+
 # ============================================================
 # ESTIMATE DEEPLINK CONTEXT MODEL
 # ============================================================
@@ -2097,6 +2607,10 @@ Representative validation_state values:
 Raw credentials must not be stored as deeplink business parameters.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030400_ESTIMATE_DEEPLINK_CONTEXT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030410_ESTIMATE_SOURCE_APP_RECORD_MODEL.md -->
+
 # ============================================================
 # ESTIMATE SOURCE APP RECORD MODEL
 # ============================================================
@@ -2117,6 +2631,10 @@ Representative fields:
 - linked_launch_context_id
 - created_at
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030410_ESTIMATE_SOURCE_APP_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030420_ESTIMATE_DELIVERY_RECORD_MODEL.md -->
 
 # ============================================================
 # ESTIMATE DELIVERY RECORD MODEL
@@ -2157,6 +2675,10 @@ Representative delivery_state values:
 - expired
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030420_ESTIMATE_DELIVERY_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030430_ESTIMATE_SHARE_LINK_RECORD_MODEL.md -->
+
 # ============================================================
 # ESTIMATE SHARE LINK RECORD MODEL
 # ============================================================
@@ -2185,6 +2707,10 @@ Representative link_state values:
 - revoked
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030430_ESTIMATE_SHARE_LINK_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030440_ESTIMATE_OPEN_LOG_RECORD_MODEL.md -->
+
 # ============================================================
 # ESTIMATE OPEN LOG RECORD MODEL
 # ============================================================
@@ -2206,6 +2732,10 @@ Required fields:
 - ip_hint_if_allowed
 - created_at
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030440_ESTIMATE_OPEN_LOG_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030450_ESTIMATE_CUSTOMER_RESPONSE_RECORD_MODEL.md -->
 
 # ============================================================
 # ESTIMATE CUSTOMER RESPONSE RECORD MODEL
@@ -2234,6 +2764,10 @@ Representative customer_response_state values:
 - rejected
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030450_ESTIMATE_CUSTOMER_RESPONSE_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030460_ESTIMATE_TEMPLATE_LOCALE_VARIANT_MODEL.md -->
+
 # ============================================================
 # ESTIMATE TEMPLATE LOCALE VARIANT MODEL
 # ============================================================
@@ -2254,6 +2788,10 @@ Required fields:
 - created_at
 - updated_at
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030460_ESTIMATE_TEMPLATE_LOCALE_VARIANT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030470_ESTIMATE_TEMPLATE_INDUSTRY_CATEGORY_MODEL.md -->
 
 # ============================================================
 # ESTIMATE TEMPLATE INDUSTRY CATEGORY MODEL
@@ -2282,6 +2820,10 @@ Representative industry_category_code values:
 - manufacturing
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030470_ESTIMATE_TEMPLATE_INDUSTRY_CATEGORY_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030480_ESTIMATE_PROPOSAL_SUMMARY_TEMPLATE_MODEL.md -->
+
 # ============================================================
 # ESTIMATE PROPOSAL SUMMARY TEMPLATE MODEL
 # ============================================================
@@ -2304,6 +2846,10 @@ Required fields:
 - updated_at
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030480_ESTIMATE_PROPOSAL_SUMMARY_TEMPLATE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030490_CUSTOMER_PREFERRED_LOCALE_RECORD_MODEL.md -->
+
 # ============================================================
 # CUSTOMER PREFERRED LOCALE RECORD MODEL
 # ============================================================
@@ -2322,6 +2868,10 @@ Required fields:
 - updated_at
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030490_CUSTOMER_PREFERRED_LOCALE_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030500_CUSTOMER_PREFERRED_CURRENCY_RECORD_MODEL.md -->
+
 # ============================================================
 # CUSTOMER PREFERRED CURRENCY RECORD MODEL
 # ============================================================
@@ -2339,6 +2889,74 @@ Required fields:
 - created_at
 - updated_at
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030500_CUSTOMER_PREFERRED_CURRENCY_RECORD_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030510_ESTIMATECREATOR_COMMERCIAL_DECISION_TIMELINE_MODEL.md -->
+# ============================================================
+# ESTIMATECREATOR COMMERCIAL DECISION TIMELINE MODEL
+# ============================================================
+
+status: canonical
+layer: model
+system: applications
+application: EstimateCreator
+directory: 030.model
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: commercial-decision-timeline-model
+
+purpose:
+Defines the logical model for a unified commercial decision timeline.
+
+core_entity:
+- estimate_commercial_timeline_item
+
+recommended_fields:
+- estimateCommercialTimelineItemId
+- estimateId
+- relatedRevisionId
+- relatedApprovalId
+- relatedConversionBlockerId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- commercialStateCode
+- priorityCode
+- validUntilAt
+- reviewedAt
+- approvedAt
+- rejectedAt
+- convertedAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+- sourceModuleCode
+- createdAt
+- updatedAt
+
+state_meaning:
+- draft
+- pending_review
+- pending_approval
+- approved
+- rejected
+- ready_for_conversion
+- blocked_for_conversion
+- converted
+- expired
+
+model_use_cases:
+- estimate cockpit assembly
+- revision review
+- approval review
+- conversion readiness visibility
+- commercial trend visibility
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030510_ESTIMATECREATOR_COMMERCIAL_DECISION_TIMELINE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030510_ESTIMATE_PERMISSION_SCOPE_MODEL.md -->
 
 # ============================================================
 # ESTIMATE PERMISSION SCOPE MODEL
@@ -2434,6 +3052,10 @@ Readonly customer delivery access must map to:
 This role must never grant write actions.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030510_ESTIMATE_PERMISSION_SCOPE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030520_ESTIMATE_REVISION_SNAPSHOT_MODEL.md -->
+
 # ============================================================
 # ESTIMATE REVISION SNAPSHOT MODEL
 # ============================================================
@@ -2490,6 +3112,10 @@ It preserves the exact estimate state
 that later delivery, publication, or customer response may reference.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030520_ESTIMATE_REVISION_SNAPSHOT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030530_ESTIMATE_DELIVERY_ARTIFACT_MODEL.md -->
+
 # ============================================================
 # ESTIMATE DELIVERY ARTIFACT MODEL
 # ============================================================
@@ -2526,6 +3152,10 @@ Representative artifact_state values:
 - revoked
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030530_ESTIMATE_DELIVERY_ARTIFACT_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030540_ESTIMATE_DELIVERY_STATE_TRANSITION_MODEL.md -->
+
 # ============================================================
 # ESTIMATE DELIVERY STATE TRANSITION MODEL
 # ============================================================
@@ -2557,6 +3187,10 @@ Representative from_state / to_state values:
 This model supports explicit auditability for customer-facing delivery.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030540_ESTIMATE_DELIVERY_STATE_TRANSITION_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030550_ESTIMATE_CUSTOMER_RESPONSE_BASIS_MODEL.md -->
+
 # ============================================================
 # ESTIMATE CUSTOMER RESPONSE BASIS MODEL
 # ============================================================
@@ -2580,6 +3214,10 @@ Required fields:
 This prevents ambiguity about
 which estimate version the customer responded to.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030550_ESTIMATE_CUSTOMER_RESPONSE_BASIS_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030_ESTIMATE_CREATOR_MODEL_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR MODEL OVERVIEW
 # ============================================================
@@ -2680,6 +3318,10 @@ Representative objects include:
 - customer_preferred_locale_record
 - customer_preferred_currency_record
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030_ESTIMATE_CREATOR_MODEL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR MODEL INDEX
 # ============================================================
@@ -2705,6 +3347,12 @@ prepared_by: Zero
 - 030370_ESTIMATE_QA_RECORD_MODEL.md
 - 030380_ESTIMATE_PREMIUM_FEATURE_STATE_MODEL.md
 
+
+- 030510_ESTIMATECREATOR_COMMERCIAL_DECISION_TIMELINE_MODEL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR MODEL OVERVIEW
 # ============================================================
@@ -2728,6 +3376,10 @@ The model includes:
 - inventory reference objects
 - premium feature objects
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/030.model/030_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040110_ESTIMATE_SYNC_CONFLICT_RUNTIME.md -->
 # ============================================================
 # ESTIMATE SYNC CONFLICT RUNTIME
 # ============================================================
@@ -2776,6 +3428,10 @@ The application must never silently discard:
 - retry_required
 - blocked_until_review
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040110_ESTIMATE_SYNC_CONFLICT_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040120_ESTIMATE_RELATIONSHIP_VISIBILITY_RUNTIME.md -->
 # ============================================================
 # ESTIMATE RELATIONSHIP VISIBILITY RUNTIME
 # ============================================================
@@ -2793,6 +3449,10 @@ Estimate-related visibility must be controlled by:
 
 Runtime visibility must not broaden access implicitly.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040120_ESTIMATE_RELATIONSHIP_VISIBILITY_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040130_ESTIMATE_OFFLINE_RUNTIME.md -->
 # ============================================================
 # ESTIMATE OFFLINE RUNTIME
 # ============================================================
@@ -2853,6 +3513,10 @@ The UI must clearly indicate:
 - cached inventory state
 - freshness warnings
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040130_ESTIMATE_OFFLINE_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040140_ESTIMATE_INVENTORY_REFERENCE_RUNTIME.md -->
 # ============================================================
 # ESTIMATE INVENTORY REFERENCE RUNTIME
 # ============================================================
@@ -2902,6 +3566,10 @@ Inventory reference visual states may include:
 The runtime must never represent inventory reference
 as final reservable guarantee unless provided by authoritative external policy.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040140_ESTIMATE_INVENTORY_REFERENCE_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040150_ESTIMATE_PREMIUM_FEATURE_GATE_RUNTIME.md -->
 # ============================================================
 # ESTIMATE PREMIUM FEATURE GATE RUNTIME
 # ============================================================
@@ -2959,6 +3627,10 @@ to already existing premium-created data where policy permits,
 while denying new premium-only writes and edits.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040150_ESTIMATE_PREMIUM_FEATURE_GATE_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040160_ESTIMATE_ENTRY_RUNTIME.md -->
+
 # ============================================================
 # ESTIMATE ENTRY RUNTIME
 # ============================================================
@@ -2984,6 +3656,10 @@ Deeplink:
 
 Both entry paths must converge into the same canonical workspace rules.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040160_ESTIMATE_ENTRY_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040170_ESTIMATE_PERMISSION_RUNTIME.md -->
 
 # ============================================================
 # ESTIMATE PERMISSION RUNTIME
@@ -3011,6 +3687,10 @@ Representative runtime outputs:
 - can_use_premium_write
 - is_customer_readonly_view
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040170_ESTIMATE_PERMISSION_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040_ESTIMATE_CREATOR_RUNTIME.md -->
 # ============================================================
 # ESTIMATE CREATOR RUNTIME
 # ============================================================
@@ -3227,6 +3907,10 @@ EstimateCreator runtime must support:
 
 Readonly delivery link runtime must never expose write actions.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040_ESTIMATE_CREATOR_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR RUNTIME INDEX
 # ============================================================
@@ -3244,6 +3928,10 @@ prepared_by: Zero
 - 040140_ESTIMATE_INVENTORY_REFERENCE_RUNTIME.md
 - 040150_ESTIMATE_PREMIUM_FEATURE_GATE_RUNTIME.md
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR RUNTIME OVERVIEW
 # ============================================================
@@ -3265,6 +3953,10 @@ Runtime covers:
 - inventory reference behavior
 - premium feature gating behavior
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/040.runtime/040_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md -->
 # ============================================================
 # ESTIMATE ERP WIDE SHARE APPROVAL FLOW
 # ============================================================
@@ -3285,6 +3977,10 @@ High-level flow:
 5. receive result
 6. update local publication state
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050120_ESTIMATE_SYNC_CONFLICT_RESOLUTION_FLOW.md -->
 # ============================================================
 # ESTIMATE SYNC CONFLICT RESOLUTION FLOW
 # ============================================================
@@ -3303,6 +3999,10 @@ Conflict resolution flow:
 6. record decision in audit/history
 7. requeue sync if necessary
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050120_ESTIMATE_SYNC_CONFLICT_RESOLUTION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050130_ESTIMATE_APPROVAL_STATE_TRANSITION_FLOW.md -->
 # ============================================================
 # ESTIMATE APPROVAL STATE TRANSITION FLOW
 # ============================================================
@@ -3324,6 +4024,10 @@ Typical approval-related states:
 Approval state and publication state must not be collapsed
 into one ambiguous state.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050130_ESTIMATE_APPROVAL_STATE_TRANSITION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050140_ESTIMATE_OFFLINE_TO_ONLINE_SYNC_FLOW.md -->
 # ============================================================
 # ESTIMATE OFFLINE TO ONLINE SYNC FLOW
 # ============================================================
@@ -3370,6 +4074,10 @@ Objects typically included:
 - QA records
 - template usage records
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050140_ESTIMATE_OFFLINE_TO_ONLINE_SYNC_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050150_ESTIMATE_INVENTORY_REFERENCE_FLOW.md -->
 # ============================================================
 # ESTIMATE INVENTORY REFERENCE FLOW
 # ============================================================
@@ -3388,6 +4096,10 @@ Inventory reference flow:
 6. UI updates freshness and stock state
 7. if offline, cached value may be shown with warning
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050150_ESTIMATE_INVENTORY_REFERENCE_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050160_ESTIMATE_TEMPLATE_APPLICATION_FLOW.md -->
 # ============================================================
 # ESTIMATE TEMPLATE APPLICATION FLOW
 # ============================================================
@@ -3406,6 +4118,10 @@ Template application flow:
 6. local recalculation occurs
 7. audit/history entry is recorded where policy requires
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050160_ESTIMATE_TEMPLATE_APPLICATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050170_ESTIMATE_QA_MANAGEMENT_FLOW.md -->
 # ============================================================
 # ESTIMATE QA MANAGEMENT FLOW
 # ============================================================
@@ -3423,6 +4139,10 @@ QA management flow:
 5. sync persists changes
 6. estimate detail view reflects open/pending/closed QA states
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050170_ESTIMATE_QA_MANAGEMENT_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050180_ESTIMATE_DEEPLINK_LAUNCH_FLOW.md -->
 
 # ============================================================
 # ESTIMATE DEEPLINK LAUNCH FLOW
@@ -3454,6 +4174,10 @@ Representative deeplink modes:
 - inventory_check
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050180_ESTIMATE_DEEPLINK_LAUNCH_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050190_ESTIMATE_CUSTOMER_DELIVERY_FLOW.md -->
+
 # ============================================================
 # ESTIMATE CUSTOMER DELIVERY FLOW
 # ============================================================
@@ -3474,6 +4198,10 @@ Additional follow-up:
 - customer response recording
 - expiring-soon awareness
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050190_ESTIMATE_CUSTOMER_DELIVERY_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050220_ESTIMATE_PERMISSION_EVALUATION_FLOW.md -->
 
 # ============================================================
 # ESTIMATE PERMISSION EVALUATION FLOW
@@ -3496,6 +4224,10 @@ Permission evaluation flow:
 Permission must be evaluated before sensitive action execution.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050220_ESTIMATE_PERMISSION_EVALUATION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050230_ESTIMATE_REVISION_DELIVERY_AUDIT_FLOW.md -->
+
 # ============================================================
 # ESTIMATE REVISION DELIVERY AUDIT FLOW
 # ============================================================
@@ -3517,6 +4249,10 @@ Revision / delivery audit flow:
 
 This flow preserves customer-facing traceability.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050230_ESTIMATE_REVISION_DELIVERY_AUDIT_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050_ESTIMATE_CREATOR_FLOW.md -->
 # ============================================================
 # ESTIMATE CREATOR FLOW
 # ============================================================
@@ -3614,6 +4350,10 @@ Estimate customer delivery flow:
 7. opened state tracked if available
 8. customer response recorded manually when received
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050_ESTIMATE_CREATOR_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR FLOW INDEX
 # ============================================================
@@ -3633,6 +4373,10 @@ prepared_by: Zero
 - 050160_ESTIMATE_TEMPLATE_APPLICATION_FLOW.md
 - 050170_ESTIMATE_QA_MANAGEMENT_FLOW.md
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR FLOW OVERVIEW
 # ============================================================
@@ -3654,6 +4398,10 @@ It covers:
 - premium feature flows
 - conflict resolution
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/050.flow/050_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060110_ESTIMATE_API_INTEGRATION_CONTRACT.md -->
 # ============================================================
 # ESTIMATE API INTEGRATION CONTRACT
 # ============================================================
@@ -3675,6 +4423,10 @@ The contract must support explicit object identifiers,
 versions,
 and sync-related metadata.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060110_ESTIMATE_API_INTEGRATION_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060120_ESTIMATE_SYNC_API_CONTRACT.md -->
 # ============================================================
 # ESTIMATE SYNC API CONTRACT
 # ============================================================
@@ -3698,6 +4450,10 @@ Required sync response qualities:
 - explicit conflict
 - no silent overwrite
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060120_ESTIMATE_SYNC_API_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060130_ESTIMATE_SHARE_API_CONTRACT.md -->
 # ============================================================
 # ESTIMATE SHARE API CONTRACT
 # ============================================================
@@ -3726,6 +4482,10 @@ Required response qualities:
 - revoke_completed
 - revoke_failed
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060130_ESTIMATE_SHARE_API_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060140_ESTIMATE_ERP_PUBLISH_API_CONTRACT.md -->
 # ============================================================
 # ESTIMATE ERP PUBLISH API CONTRACT
 # ============================================================
@@ -3757,6 +4517,10 @@ Response must distinguish:
 - completed
 - failed
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060140_ESTIMATE_ERP_PUBLISH_API_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060150_ESTIMATE_SHARED_ERP_PUBLICATION_INTEGRATION.md -->
 # ============================================================
 # ESTIMATE SHARED ERP PUBLICATION INTEGRATION
 # ============================================================
@@ -3774,6 +4538,10 @@ Integration rule:
 - EstimateCreator consumes result
 - final external authority remains outside local app runtime
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060150_ESTIMATE_SHARED_ERP_PUBLICATION_INTEGRATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060160_ESTIMATE_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md -->
 # ============================================================
 # ESTIMATE ERP PUBLICATION PAYLOAD FIELD MAP
 # ============================================================
@@ -3803,6 +4571,10 @@ Typical publication payload fields include:
 - source_system
 - source_app
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060160_ESTIMATE_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060170_ESTIMATE_API_FIELD_SCHEMA.md -->
 # ============================================================
 # ESTIMATE API FIELD SCHEMA
 # ============================================================
@@ -3822,6 +4594,10 @@ Schema design must avoid ambiguous fields that mix:
 - publication state
 - authority state
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060170_ESTIMATE_API_FIELD_SCHEMA.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060180_ESTIMATE_INVENTORY_REFERENCE_INTEGRATION.md -->
 # ============================================================
 # ESTIMATE INVENTORY REFERENCE INTEGRATION
 # ============================================================
@@ -3851,6 +4627,10 @@ Required response characteristics:
 
 Inventory response is reference-only unless authoritative policy states otherwise.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060180_ESTIMATE_INVENTORY_REFERENCE_INTEGRATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060190_ESTIMATE_PREMIUM_FEATURE_LICENSE_INTEGRATION.md -->
 # ============================================================
 # ESTIMATE PREMIUM FEATURE LICENSE INTEGRATION
 # ============================================================
@@ -3869,6 +4649,10 @@ Required integration qualities:
 - safe cached fallback
 - fail closed on unknown entitlement for premium-only write operations
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060190_ESTIMATE_PREMIUM_FEATURE_LICENSE_INTEGRATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060200_ESTIMATE_DEEPLINK_PARAMETER_CONTRACT.md -->
 
 # ============================================================
 # ESTIMATE DEEPLINK PARAMETER CONTRACT
@@ -3894,6 +4678,10 @@ These parameters provide launch context only.
 They must not be treated as proof of authority,
 and must not include raw credentials.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060200_ESTIMATE_DEEPLINK_PARAMETER_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060210_ESTIMATE_EXACT_PAYLOAD_CONTRACT.md -->
 # ============================================================
 # ESTIMATE EXACT PAYLOAD CONTRACT
 # ============================================================
@@ -4447,6 +5235,10 @@ response_failure:
     field: estimate_id
     detail: QA management is premium-gated
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060210_ESTIMATE_EXACT_PAYLOAD_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060220_ESTIMATE_SCREEN_EXACT_PAYLOAD_CONTRACT.md -->
 # ============================================================
 # ESTIMATE SCREEN EXACT PAYLOAD CONTRACT
 # ============================================================
@@ -4935,6 +5727,10 @@ response_failure:
     field: template_id
     detail: template is premium-only or editing requires premium
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060220_ESTIMATE_SCREEN_EXACT_PAYLOAD_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060230_ESTIMATE_LOCAL_STORE_EXACT_CONTRACT.md -->
 # ============================================================
 # ESTIMATE LOCAL STORE EXACT CONTRACT
 # ============================================================
@@ -5186,6 +5982,10 @@ Local persistence must not:
 - replace publication state with sync state
 - replace entitlement state with generic boolean only
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060230_ESTIMATE_LOCAL_STORE_EXACT_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060240_ESTIMATE_SYNC_QUEUE_EXACT_CONTRACT.md -->
 # ============================================================
 # ESTIMATE SYNC QUEUE EXACT CONTRACT
 # ============================================================
@@ -5336,6 +6136,10 @@ response_success:
     sync_status: pending_push|synced|blocked
     conflict_state: none|local_remote_diverged|remote_deleted|publication_overlap|share_overlap
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060240_ESTIMATE_SYNC_QUEUE_EXACT_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060250_ESTIMATE_API_ENDPOINT_CATALOG.md -->
 # ============================================================
 # ESTIMATE API ENDPOINT CATALOG
 # ============================================================
@@ -5511,6 +6315,10 @@ Do not collapse:
 
 into one ambiguous action surface.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060250_ESTIMATE_API_ENDPOINT_CATALOG.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060260_ESTIMATE_SCREEN_ACTION_TO_ENDPOINT_MAPPING.md -->
 # ============================================================
 # ESTIMATE SCREEN ACTION TO ENDPOINT MAPPING
 # ============================================================
@@ -5685,6 +6493,10 @@ endpoint:
 - POST /estimatecreator/sync/conflict/resolve
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060260_ESTIMATE_SCREEN_ACTION_TO_ENDPOINT_MAPPING.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060270_ESTIMATE_LOCALE_MULTICURRENCY_CONTRACT.md -->
+
 # ============================================================
 # ESTIMATE LOCALE MULTICURRENCY CONTRACT
 # ============================================================
@@ -5709,6 +6521,10 @@ Rules:
 - currency affects display/output formatting
 - free text is not automatically translated
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060270_ESTIMATE_LOCALE_MULTICURRENCY_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060280_ESTIMATE_CUSTOMER_DELIVERY_CONTRACT.md -->
 
 # ============================================================
 # ESTIMATE CUSTOMER DELIVERY CONTRACT
@@ -5735,6 +6551,68 @@ Representative delivery-support fields:
 - delivery_state
 - presented_at
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060280_ESTIMATE_CUSTOMER_DELIVERY_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060290_ESTIMATECREATOR_ESTIMATE_COCKPIT_PAYLOAD.md -->
+# ============================================================
+# ESTIMATECREATOR ESTIMATE COCKPIT PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: EstimateCreator
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: estimate-cockpit-payload
+
+purpose:
+Fixes the exact payload family for the estimate cockpit surface.
+
+endpoint:
+- POST /api/v1/estimate-creator/estimate-cockpit/query
+
+request_fields:
+- estimateId: uuid string, required
+- timezone: string, required
+- includePendingApproval: boolean, required
+- includeConversionBlockers: boolean, required
+- includeRecentRevisions: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- estimateId: uuid string, required
+- estimateTitle: string, required
+- healthSummaryMessage: string, required
+- pendingApprovalItems: array, required
+- conversionBlockerItems: array, required
+- recentRevisionItems: array, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- estimateCommercialTimelineItemId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- commercialStateCode
+- validUntilAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+
+rules:
+- timestamps use ISO-8601 strings
+- nullable values return null, not omission
+- arrays return empty arrays when no data
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060290_ESTIMATECREATOR_ESTIMATE_COCKPIT_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060290_ESTIMATE_DELIVERY_LOCALE_EXACT_PAYLOAD_CONTRACT.md -->
 # ============================================================
 # ESTIMATE DELIVERY LOCALE EXACT PAYLOAD CONTRACT
 # ============================================================
@@ -6083,6 +6961,62 @@ response_success:
     sync_state: local_only|pending_push
     updated_at: string
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060290_ESTIMATE_DELIVERY_LOCALE_EXACT_PAYLOAD_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060300_ESTIMATECREATOR_REVISION_APPROVAL_REVIEW_PAYLOAD.md -->
+# ============================================================
+# ESTIMATECREATOR REVISION APPROVAL REVIEW PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: EstimateCreator
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: revision-approval-review-payload
+
+purpose:
+Fixes the exact payload family for revision and approval review.
+
+endpoint:
+- POST /api/v1/estimate-creator/revision-approval-review/query
+
+request_fields:
+- estimateId: uuid string, required
+- includeResolved: boolean, required
+- includePricingExceptions: boolean, required
+- includeApprovalPending: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- estimateId: uuid string, required
+- reviewItems: array, required
+- summaryMessage: string, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId
+- relatedRevisionId
+- relatedApprovalId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- commercialStateCode
+- exceptionPresent
+- approvalRequired
+- ownerUserId
+- resolved
+- validUntilAt
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060300_ESTIMATECREATOR_REVISION_APPROVAL_REVIEW_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060300_ESTIMATE_DELIVERY_STATE_EXACT_CONTRACT.md -->
 # ============================================================
 # ESTIMATE DELIVERY STATE EXACT CONTRACT
 # ============================================================
@@ -6381,6 +7315,201 @@ response_success:
     latest_delivery_state: string|null
     latest_customer_response_state: string|null
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060300_ESTIMATE_DELIVERY_STATE_EXACT_CONTRACT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060320_ESTIMATECREATOR_PHASE_A_API_STARTER.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A API STARTER
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: EstimateCreator
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-starter
+
+purpose:
+Defines the initial Phase A endpoint set for commercial control in EstimateCreator.
+
+phase_a_api_goals:
+- query estimate cockpit
+- query revision and approval review
+- prepare later approval request or conversion actions without reopening the contract
+
+phase_a_endpoint_set:
+- POST /api/v1/estimate-creator/estimate-cockpit/query
+- POST /api/v1/estimate-creator/revision-approval-review/query
+
+endpoint_estimate_cockpit_query:
+  purpose:
+    - return approval pending items, conversion blockers, and recent revisions in one surface
+  minimum_request:
+    - estimateId
+    - timezone
+    - includePendingApproval
+    - includeConversionBlockers
+    - includeRecentRevisions
+    - pageSize
+  minimum_response:
+    - estimateId
+    - estimateTitle
+    - healthSummaryMessage
+    - pendingApprovalItems
+    - conversionBlockerItems
+    - recentRevisionItems
+    - generatedAt
+
+endpoint_revision_approval_review_query:
+  purpose:
+    - return revision and approval review rows for governance review
+  minimum_request:
+    - estimateId
+    - includeResolved
+    - includePricingExceptions
+    - includeApprovalPending
+    - pageSize
+  minimum_response:
+    - estimateId
+    - reviewItems
+    - summaryMessage
+    - generatedAt
+
+response_rules:
+- ids use uuid string form
+- timestamps use ISO-8601 strings
+- arrays return empty arrays, not omission
+- nullable values return null once frozen
+- no binary payloads in these responses
+
+error_family_phase_a:
+- invalid_request
+- unauthorized
+- forbidden
+- not_found
+- conflict
+- validation_failed
+- internal_error
+
+explicit_non_scope:
+- no estimate draft write endpoint in this slice
+- no approval request write endpoint in this slice
+- no conversion execution endpoint in this slice
+- no bulk import endpoint in this slice
+
+implementation_handoff:
+- use these two query endpoints as the only Phase A vertical-slice entry points first
+- defer write-side approval and conversion actions until query-side surfaces stabilize
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060320_ESTIMATECREATOR_PHASE_A_API_STARTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060330_ESTIMATECREATOR_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A API DTO FIELD FREEZE
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: EstimateCreator
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-dto-field-freeze
+
+purpose:
+Freezes the Phase A request and response DTO field set for
+estimate cockpit and revision approval review.
+
+freezing_policy:
+- additive only
+- field names become implementation baseline once approved
+- no casual local rename allowed
+- timestamps are ISO-8601 strings
+- ids are uuid strings
+- arrays stay arrays even when empty
+
+endpoint_01_estimate_cockpit_query:
+  route: POST /api/v1/estimate-creator/estimate-cockpit/query
+  request_fields:
+    - estimateId: uuid string, required
+    - timezone: string, required
+    - includePendingApproval: boolean, required
+    - includeConversionBlockers: boolean, required
+    - includeRecentRevisions: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - estimateId: uuid string, required
+    - estimateTitle: string, required
+    - healthSummaryMessage: string, required
+    - pendingApprovalItems: array, required
+    - conversionBlockerItems: array, required
+    - recentRevisionItems: array, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- estimateCommercialTimelineItemId: uuid string, required
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- commercialStateCode: string, required
+- validUntilAt: ISO-8601 string, nullable
+- exceptionPresent: boolean, required
+- ownerUserId: uuid string, nullable
+- approvalRequired: boolean, required
+
+endpoint_02_revision_approval_review_query:
+  route: POST /api/v1/estimate-creator/revision-approval-review/query
+  request_fields:
+    - estimateId: uuid string, required
+    - includeResolved: boolean, required
+    - includePricingExceptions: boolean, required
+    - includeApprovalPending: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - estimateId: uuid string, required
+    - reviewItems: array, required
+    - summaryMessage: string, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId: uuid string, required
+- relatedRevisionId: uuid string, nullable
+- relatedApprovalId: uuid string, nullable
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- commercialStateCode: string, required
+- exceptionPresent: boolean, required
+- approvalRequired: boolean, required
+- ownerUserId: uuid string, nullable
+- resolved: boolean, required
+- validUntilAt: ISO-8601 string, nullable
+
+shared_error_response_fields:
+- errorCode: string, required
+- errorMessage: string, required
+- requestId: string, required
+- details: object, nullable
+
+field_value_rules:
+- itemTypeCode is a text code, not localized label
+- commercialStateCode is a text code, not localized label
+- nullable fields return null, not omission
+- unknown response fields must not be silently added in Phase A
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060330_ESTIMATECREATOR_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060_ESTIMATE_CREATOR_INTEGRATION.md -->
 # ============================================================
 # ESTIMATE CREATOR INTEGRATION
 # ============================================================
@@ -6455,6 +7584,10 @@ EstimateCreator integrates with delivery/output surfaces for:
 These integrations remain customer-delivery support,
 not ERP publication replacement.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060_ESTIMATE_CREATOR_INTEGRATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR INTEGRATION INDEX
 # ============================================================
@@ -6476,6 +7609,18 @@ prepared_by: Zero
 - 060180_ESTIMATE_INVENTORY_REFERENCE_INTEGRATION.md
 - 060190_ESTIMATE_PREMIUM_FEATURE_LICENSE_INTEGRATION.md
 
+
+- 060290_ESTIMATECREATOR_ESTIMATE_COCKPIT_PAYLOAD.md
+
+- 060300_ESTIMATECREATOR_REVISION_APPROVAL_REVIEW_PAYLOAD.md
+
+- 060320_ESTIMATECREATOR_PHASE_A_API_STARTER.md
+
+- 060330_ESTIMATECREATOR_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR INTEGRATION OVERVIEW
 # ============================================================
@@ -6496,6 +7641,10 @@ It covers:
 - inventory reference integration
 - premium feature license state integration
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/060.integration/060_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070110_ESTIMATE_AUDIT_AND_HISTORY_OPERATIONS.md -->
 # ============================================================
 # ESTIMATE AUDIT AND HISTORY OPERATIONS
 # ============================================================
@@ -6523,6 +7672,10 @@ Audit and history operations must record at least:
 History must remain readable as business activity,
 not only as low-level technical logs.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070110_ESTIMATE_AUDIT_AND_HISTORY_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070120_ESTIMATE_AUDIT_ACTION_CODE_OPERATIONS.md -->
 # ============================================================
 # ESTIMATE AUDIT ACTION CODE OPERATIONS
 # ============================================================
@@ -6556,6 +7709,10 @@ Typical audit action codes include:
 
 Action code design must remain explicit and stable.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070120_ESTIMATE_AUDIT_ACTION_CODE_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070130_ESTIMATE_ERROR_CODE_OPERATIONS.md -->
 # ============================================================
 # ESTIMATE ERROR CODE OPERATIONS
 # ============================================================
@@ -6586,6 +7743,10 @@ Representative categories:
 
 Operational handling must support retryability judgment where relevant.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070130_ESTIMATE_ERROR_CODE_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070140_ESTIMATE_VALIDATION_CODE_OPERATIONS.md -->
 # ============================================================
 # ESTIMATE VALIDATION CODE OPERATIONS
 # ============================================================
@@ -6607,6 +7768,10 @@ Representative validation domains:
 
 Validation outcomes must be deterministic and reviewable.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070140_ESTIMATE_VALIDATION_CODE_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070_ESTIMATE_CREATOR_OPERATIONS.md -->
 # ============================================================
 # ESTIMATE CREATOR OPERATIONS
 # ============================================================
@@ -6676,6 +7841,10 @@ At minimum, operations should allow review of:
 - recent share actions
 - offline backlog state
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070_ESTIMATE_CREATOR_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR OPERATIONS INDEX
 # ============================================================
@@ -6692,6 +7861,10 @@ prepared_by: Zero
 - 070130_ESTIMATE_ERROR_CODE_OPERATIONS.md
 - 070140_ESTIMATE_VALIDATION_CODE_OPERATIONS.md
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR OPERATIONS OVERVIEW
 # ============================================================
@@ -6712,6 +7885,10 @@ traceable,
 reviewable,
 and safe under normal and degraded conditions.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/070.operations/070_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md -->
 # ============================================================
 # ESTIMATE ERP WIDE SHARE APPROVAL POLICY
 # ============================================================
@@ -6727,6 +7904,10 @@ defined outside the local app.
 The local app must reflect result states,
 not invent them.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080120_ESTIMATE_SYNC_CONFLICT_POLICY.md -->
 # ============================================================
 # ESTIMATE SYNC CONFLICT POLICY
 # ============================================================
@@ -6742,6 +7923,10 @@ Silent overwrite of meaningful local or remote business data is prohibited.
 When conflict exists,
 automatic completion must pause until allowed resolution path is chosen.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080120_ESTIMATE_SYNC_CONFLICT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080130_ESTIMATE_DATA_PROTECTION_POLICY.md -->
 # ============================================================
 # ESTIMATE DATA PROTECTION POLICY
 # ============================================================
@@ -6760,6 +7945,10 @@ At minimum:
 - sensitive business content must not be exposed implicitly
 - cached data must follow policy-controlled lifetime
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080130_ESTIMATE_DATA_PROTECTION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080140_ESTIMATE_RELATIONSHIP_VISIBILITY_POLICY.md -->
 # ============================================================
 # ESTIMATE RELATIONSHIP VISIBILITY POLICY
 # ============================================================
@@ -6778,6 +7967,10 @@ Access may come from:
 
 Visibility expansion by inference is prohibited.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080140_ESTIMATE_RELATIONSHIP_VISIBILITY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080150_ESTIMATE_AUDIT_AND_APPROVAL_POLICY.md -->
 # ============================================================
 # ESTIMATE AUDIT AND APPROVAL POLICY
 # ============================================================
@@ -6793,6 +7986,10 @@ sync-only or local-edit-only activity.
 
 Approval visibility must remain explicit in history and state displays.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080150_ESTIMATE_AUDIT_AND_APPROVAL_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080160_ESTIMATE_APPROVAL_AND_AUDIT_CODE_POLICY.md -->
 # ============================================================
 # ESTIMATE APPROVAL AND AUDIT CODE POLICY
 # ============================================================
@@ -6808,6 +8005,10 @@ and semantically meaningful.
 Codes must not collapse distinct business outcomes
 into generic ambiguous results.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080160_ESTIMATE_APPROVAL_AND_AUDIT_CODE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080170_ESTIMATE_ERROR_CODE_POLICY.md -->
 # ============================================================
 # ESTIMATE ERROR CODE POLICY
 # ============================================================
@@ -6825,6 +8026,10 @@ Error codes must be:
 
 Generic undifferentiated failure signaling is discouraged.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080170_ESTIMATE_ERROR_CODE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080180_ESTIMATE_VALIDATION_CODE_POLICY.md -->
 # ============================================================
 # ESTIMATE VALIDATION CODE POLICY
 # ============================================================
@@ -6844,6 +8049,10 @@ Validation must cover at least:
 - premium gate eligibility
 - inventory reference prerequisites
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080180_ESTIMATE_VALIDATION_CODE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080190_ESTIMATE_OFFLINE_USAGE_POLICY.md -->
 # ============================================================
 # ESTIMATE OFFLINE USAGE POLICY
 # ============================================================
@@ -6869,6 +8078,10 @@ Disallowed offline completion:
 - live authoritative inventory confirmation
 - entitlement refresh completion
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080190_ESTIMATE_OFFLINE_USAGE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080200_ESTIMATE_INVENTORY_REFERENCE_POLICY.md -->
 # ============================================================
 # ESTIMATE INVENTORY REFERENCE POLICY
 # ============================================================
@@ -6882,6 +8095,10 @@ Inventory reference is advisory unless authoritative policy states otherwise.
 The app must preserve freshness indicators
 and clearly distinguish cached values from fresh online values.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080200_ESTIMATE_INVENTORY_REFERENCE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080210_ESTIMATE_PREMIUM_FEATURE_POLICY.md -->
 # ============================================================
 # ESTIMATE PREMIUM FEATURE POLICY
 # ============================================================
@@ -6952,6 +8169,10 @@ If entitlement freshness cannot be trusted beyond policy bounds,
 premium-only write operations must fail closed.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080210_ESTIMATE_PREMIUM_FEATURE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080220_ESTIMATE_CUSTOMER_DELIVERY_POLICY.md -->
+
 # ============================================================
 # ESTIMATE CUSTOMER DELIVERY POLICY
 # ============================================================
@@ -6971,6 +8192,10 @@ Customer delivery policy:
 - delivery/open states are audit-relevant
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080220_ESTIMATE_CUSTOMER_DELIVERY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080230_ESTIMATE_LOCALE_POLICY.md -->
+
 # ============================================================
 # ESTIMATE LOCALE POLICY
 # ============================================================
@@ -6987,6 +8212,10 @@ Locale policy:
 - template locale variants are allowed
 - free text remains user-authored and untranslated
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080230_ESTIMATE_LOCALE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080240_ESTIMATE_PERMISSION_POLICY.md -->
 
 # ============================================================
 # ESTIMATE PERMISSION POLICY
@@ -7076,6 +8305,10 @@ It is a distinct permission route
 with stricter capability limits.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080240_ESTIMATE_PERMISSION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080250_ESTIMATE_REVISION_AUDIT_POLICY.md -->
+
 # ============================================================
 # ESTIMATE REVISION AUDIT POLICY
 # ============================================================
@@ -7092,6 +8325,10 @@ Revision audit policy:
 - publication revision and customer-delivery revision must remain distinguishable
 - revision snapshots are immutable in meaning once captured
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080250_ESTIMATE_REVISION_AUDIT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080260_ESTIMATE_DELIVERY_STATE_POLICY.md -->
 
 # ============================================================
 # ESTIMATE DELIVERY STATE POLICY
@@ -7110,6 +8347,10 @@ Delivery state policy:
 - revoked must remain explicit where readonly link access is disabled
 - resend must create traceable delivery history rather than overwrite prior delivery meaning
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080260_ESTIMATE_DELIVERY_STATE_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080_ESTIMATE_CREATOR_POLICY.md -->
 # ============================================================
 # ESTIMATE CREATOR POLICY
 # ============================================================
@@ -7293,6 +8534,10 @@ Policy rules:
 - phone and tablet may differ in layout only
 - readonly / premium / publication / sync semantics must remain identical across devices
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080_ESTIMATE_CREATOR_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR POLICY INDEX
 # ============================================================
@@ -7316,6 +8561,10 @@ prepared_by: Zero
 - 080200_ESTIMATE_INVENTORY_REFERENCE_POLICY.md
 - 080210_ESTIMATE_PREMIUM_FEATURE_POLICY.md
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR POLICY OVERVIEW
 # ============================================================
@@ -7337,6 +8586,10 @@ It covers:
 - premium feature rules
 - data protection and audit rules
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/080.policy/080_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090100_LOGIN_SCREEN_INTERFACE.md -->
 # ============================================================
 # LOGIN SCREEN INTERFACE
 # ============================================================
@@ -7401,6 +8654,10 @@ When offline cached access is allowed,
 the screen must explicitly state that the user is entering
 in offline mode rather than normal online mode.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090100_LOGIN_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090110_ESTIMATE_LIST_SCREEN_INTERFACE.md -->
 # ============================================================
 # ESTIMATE LIST SCREEN INTERFACE
 # ============================================================
@@ -7480,6 +8737,10 @@ Phone adaptation:
 - keep filter and list flow compact
 - prefer single-column navigation
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090110_ESTIMATE_LIST_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090120_ESTIMATE_DETAIL_SCREEN_INTERFACE.md -->
 # ============================================================
 # ESTIMATE DETAIL SCREEN INTERFACE
 # ============================================================
@@ -7597,6 +8858,10 @@ Permission-aware detail behavior:
 - publication button must appear only when permission allows
 - premium actions must still respect entitlement in addition to permission
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090120_ESTIMATE_DETAIL_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md -->
 # ============================================================
 # SETTINGS SCREEN INTERFACE
 # ============================================================
@@ -7675,6 +8940,10 @@ Additional settings should include:
 - default export locale
 - default currency display locale
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md -->
 # ============================================================
 # SHARE TARGET SETTING SCREEN INTERFACE
 # ============================================================
@@ -7718,6 +8987,10 @@ Each target row should show:
 This screen should reuse the same common UI approach
 as NameCardManager.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md -->
 # ============================================================
 # ERP SETTING SCREEN INTERFACE
 # ============================================================
@@ -7753,6 +9026,10 @@ used by EstimateCreator.
 - Inventory Online
 - Inventory Unavailable
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090160_ESTIMATE_RELATIONSHIP_INTERFACE.md -->
 # ============================================================
 # ESTIMATE RELATIONSHIP INTERFACE
 # ============================================================
@@ -7769,6 +9046,10 @@ Relationship interface covers visible associations between:
 - estimate and QA
 - estimate and inventory reference result
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090160_ESTIMATE_RELATIONSHIP_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090170_ESTIMATE_UI_STATE_INTERFACE.md -->
 # ============================================================
 # ESTIMATE UI STATE INTERFACE
 # ============================================================
@@ -7816,6 +9097,10 @@ Additional billing-oriented UI states include:
 
 These states must remain distinct from sync/publication states.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090170_ESTIMATE_UI_STATE_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090180_ESTIMATE_BADGE_LABEL_INTERFACE.md -->
 # ============================================================
 # ESTIMATE BADGE LABEL INTERFACE
 # ============================================================
@@ -7851,6 +9136,10 @@ Additional billing-related badges:
 These badges must be used only for entitlement-related meaning,
 not for sync or publication meaning.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090180_ESTIMATE_BADGE_LABEL_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090190_ESTIMATE_UI_MESSAGE_INTERFACE.md -->
 # ============================================================
 # ESTIMATE UI MESSAGE INTERFACE
 # ============================================================
@@ -7903,6 +9192,10 @@ These messages must distinguish:
 - write denied
 - entitlement unknown
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090190_ESTIMATE_UI_MESSAGE_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090200_ESTIMATE_EDITOR_SCREEN_INTERFACE.md -->
 # ============================================================
 # ESTIMATE EDITOR SCREEN INTERFACE
 # ============================================================
@@ -7985,6 +9278,10 @@ Phone editor adaptation:
 - keep editor linear and touch-first
 - avoid dense multi-panel editing
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090200_ESTIMATE_EDITOR_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090210_OPPORTUNITY_MEMO_SCREEN_INTERFACE.md -->
 # ============================================================
 # OPPORTUNITY MEMO SCREEN INTERFACE
 # ============================================================
@@ -8017,6 +9314,10 @@ Opportunity memo screen manages free-form sales notes.
 The UI should remain simple and fast.
 No structured format is required in standard use.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090210_OPPORTUNITY_MEMO_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090220_MEETING_MEMO_SCREEN_INTERFACE.md -->
 # ============================================================
 # MEETING MEMO SCREEN INTERFACE
 # ============================================================
@@ -8099,6 +9400,10 @@ If premium expired,
 existing structured content may remain viewable where policy permits,
 but structured editing must be blocked clearly.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090220_MEETING_MEMO_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090230_INVENTORY_REFERENCE_SCREEN_INTERFACE.md -->
 # ============================================================
 # INVENTORY REFERENCE SCREEN INTERFACE
 # ============================================================
@@ -8144,6 +9449,10 @@ for selected items or estimate lines.
 The screen must visually communicate
 that the displayed numbers are reference values.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090230_INVENTORY_REFERENCE_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090240_TEMPLATE_SCREEN_INTERFACE.md -->
 # ============================================================
 # TEMPLATE SCREEN INTERFACE
 # ============================================================
@@ -8232,6 +9541,10 @@ Additional template controls should include:
 - industry category filter
 - proposal summary template section
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090240_TEMPLATE_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090250_QA_MANAGEMENT_SCREEN_INTERFACE.md -->
 # ============================================================
 # QA MANAGEMENT SCREEN INTERFACE
 # ============================================================
@@ -8318,6 +9631,10 @@ When Premium is unavailable:
 - the screen should not imply that QA write is part of the free plan
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090250_QA_MANAGEMENT_SCREEN_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090260_ESTIMATE_DEEPLINK_ENTRY_INTERFACE.md -->
+
 # ============================================================
 # ESTIMATE DEEPLINK ENTRY INTERFACE
 # ============================================================
@@ -8365,6 +9682,10 @@ Permission-aware deeplink behavior:
 - missing permission must produce safe locked or denied UI
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090260_ESTIMATE_DEEPLINK_ENTRY_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090280_ESTIMATE_CUSTOMER_DELIVERY_INTERFACE.md -->
+
 # ============================================================
 # ESTIMATE CUSTOMER DELIVERY INTERFACE
 # ============================================================
@@ -8393,6 +9714,10 @@ Representative badges:
 - Inventory Fresh
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090280_ESTIMATE_CUSTOMER_DELIVERY_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090290_ESTIMATE_LOCALE_INTERFACE.md -->
+
 # ============================================================
 # ESTIMATE LOCALE INTERFACE
 # ============================================================
@@ -8410,6 +9735,10 @@ Locale-aware UI should support:
 - customer preferred locale output override
 - customer preferred currency display hint
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090290_ESTIMATE_LOCALE_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090300_ESTIMATE_PERMISSION_INTERFACE.md -->
 
 # ============================================================
 # ESTIMATE PERMISSION INTERFACE
@@ -8478,6 +9807,10 @@ The interface must not imply owner-level authority
 when the permission is shared-limited.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090300_ESTIMATE_PERMISSION_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090310_ESTIMATE_REVISION_HISTORY_INTERFACE.md -->
+
 # ============================================================
 # ESTIMATE REVISION HISTORY INTERFACE
 # ============================================================
@@ -8501,6 +9834,10 @@ Revision history interface should show:
 The screen must help users understand
 which version was delivered or responded to.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090310_ESTIMATE_REVISION_HISTORY_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090320_ESTIMATE_DELIVERY_HISTORY_DETAIL_INTERFACE.md -->
 
 # ============================================================
 # ESTIMATE DELIVERY HISTORY DETAIL INTERFACE
@@ -8530,6 +9867,65 @@ The interface must distinguish:
 - revision_requested
 - rejected
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090320_ESTIMATE_DELIVERY_HISTORY_DETAIL_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090330_ESTIMATECREATOR_ESTIMATE_COCKPIT_INTERFACE.md -->
+# ============================================================
+# ESTIMATECREATOR ESTIMATE COCKPIT INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: EstimateCreator
+directory: 090.interface
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: estimate-cockpit-interface
+
+purpose:
+Makes the estimate cockpit screen hierarchy explicit.
+
+screen_goal:
+- show what threatens estimate conversion right now
+- unify approval pending items, conversion blockers, and recent revisions
+- provide one commercial-control review pass before diving into edit detail
+
+screen_sections:
+- estimate summary header
+- pending approval stack
+- conversion blocker stack
+- recent revisions panel
+- quick jump to revision and approval review
+
+item_card_fields:
+- item title
+- short summary
+- state badge
+- validity or review time
+- owner badge
+- approval badge
+- quick action buttons
+
+primary_actions:
+- open estimate detail
+- open revision review
+- open approval review
+- request approval
+- mark reviewed
+- open conversion readiness detail
+
+interface_rules:
+- pending approval items must be separated visually from conversion blockers
+- recent revisions must stay visible above long detail lists
+- cockpit must be scannable in one vertical pass
+- line-item editing belongs elsewhere; cockpit is a control surface first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090330_ESTIMATECREATOR_ESTIMATE_COCKPIT_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090_ESTIMATE_CREATOR_INTERFACE.md -->
 # ============================================================
 # ESTIMATE CREATOR INTERFACE
 # ============================================================
@@ -8685,6 +10081,10 @@ Tablet UI should support:
 UI layout may differ by device class,
 but meaning and action rules must remain identical.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090_ESTIMATE_CREATOR_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR INTERFACE INDEX
 # ============================================================
@@ -8713,6 +10113,12 @@ prepared_by: Zero
 - 090240_TEMPLATE_SCREEN_INTERFACE.md
 - 090250_QA_MANAGEMENT_SCREEN_INTERFACE.md
 
+
+- 090330_ESTIMATECREATOR_ESTIMATE_COCKPIT_INTERFACE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR INTERFACE OVERVIEW
 # ============================================================
@@ -8733,6 +10139,10 @@ The interface must make the following explicit:
 - inventory freshness state
 - premium feature availability state
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/090.interface/090_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100110_ESTIMATE_DATA_ENCRYPTION_SECURITY.md -->
 # ============================================================
 # ESTIMATE DATA ENCRYPTION SECURITY
 # ============================================================
@@ -8753,6 +10163,10 @@ At minimum, the design expects protection for:
 - pending operations
 - premium entitlement cache
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100110_ESTIMATE_DATA_ENCRYPTION_SECURITY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100_ESTIMATE_CREATOR_SECURITY.md -->
 # ============================================================
 # ESTIMATE CREATOR SECURITY
 # ============================================================
@@ -8806,6 +10220,10 @@ Offline security requires:
 - no silent authority escalation
 - no false completion signaling
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100_ESTIMATE_CREATOR_SECURITY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR SECURITY INDEX
 # ============================================================
@@ -8819,6 +10237,10 @@ prepared_by: Zero
 - 100_ESTIMATE_CREATOR_SECURITY.md
 - 100110_ESTIMATE_DATA_ENCRYPTION_SECURITY.md
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR SECURITY OVERVIEW
 # ============================================================
@@ -8836,6 +10258,10 @@ EstimateCreator Security defines the protection rules for:
 - premium entitlement state
 - offline cached data
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/100.security/100_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110110_ESTIMATE_PROTECTED_STORAGE_INFRASTRUCTURE.md -->
 # ============================================================
 # ESTIMATE PROTECTED STORAGE INFRASTRUCTURE
 # ============================================================
@@ -8856,6 +10282,10 @@ Protected storage infrastructure should support:
 The storage layer must allow safe recovery after app restart
 without losing pending work unexpectedly.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110110_ESTIMATE_PROTECTED_STORAGE_INFRASTRUCTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110_ESTIMATE_CREATOR_INFRASTRUCTURE.md -->
 # ============================================================
 # ESTIMATE CREATOR INFRASTRUCTURE
 # ============================================================
@@ -8894,6 +10324,10 @@ EstimateCreator infrastructure supports local application execution,
 but shared BusinessOS capability infrastructure remains external
 to the local app-owned domain.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110_ESTIMATE_CREATOR_INFRASTRUCTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR INFRASTRUCTURE INDEX
 # ============================================================
@@ -8907,6 +10341,10 @@ prepared_by: Zero
 - 110_ESTIMATE_CREATOR_INFRASTRUCTURE.md
 - 110110_ESTIMATE_PROTECTED_STORAGE_INFRASTRUCTURE.md
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR INFRASTRUCTURE OVERVIEW
 # ============================================================
@@ -8926,6 +10364,10 @@ It includes:
 - inventory reference support
 - premium gate support
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/110.infrastructure/110_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120110_ESTIMATE_API_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE API IMPLEMENTATION GUIDE
 # ============================================================
@@ -9003,6 +10445,10 @@ Examples:
 - create_qa
 - apply_template
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120110_ESTIMATE_API_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120120_ESTIMATE_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE AUDIT APPROVAL IMPLEMENTATION GUIDE
 # ============================================================
@@ -9018,6 +10464,10 @@ Implementation must preserve visible distinction between:
 - publication-related actions
 - sync-related actions
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120120_ESTIMATE_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120130_ESTIMATE_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE APPROVAL AUDIT CODE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9030,6 +10480,10 @@ Approval and audit codes should be centralized,
 stable,
 and mapped to both operations and UI-safe explanations.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120130_ESTIMATE_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120140_ESTIMATE_ERROR_CODE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE ERROR CODE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9042,6 +10496,10 @@ Implementation should avoid opaque generic failures.
 
 Errors should be mapped by explicit category and retryability.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120140_ESTIMATE_ERROR_CODE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120150_ESTIMATE_UI_STATE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE UI STATE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9055,6 +10513,10 @@ UI state implementation must align with canonical runtime states.
 The UI must not present local save as sync completion,
 nor sync completion as ERP publication completion.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120150_ESTIMATE_UI_STATE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120160_ESTIMATE_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE PAYLOAD FIELD MAP IMPLEMENTATION GUIDE
 # ============================================================
@@ -9067,6 +10529,10 @@ Field mapping for ERP publication must remain explicit,
 reviewable,
 and versionable.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120160_ESTIMATE_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120170_ESTIMATE_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE API FIELD SCHEMA IMPLEMENTATION GUIDE
 # ============================================================
@@ -9079,6 +10545,10 @@ Field schema implementation should keep
 required/optional boundaries explicit
 and avoid ambiguous mixed-purpose fields.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120170_ESTIMATE_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120180_ESTIMATE_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE VALIDATION CODE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9096,6 +10566,10 @@ Validation code implementation should cover at least:
 - premium feature eligibility
 - inventory lookup prerequisites
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120180_ESTIMATE_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120190_ESTIMATE_UI_LABEL_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE UI LABEL IMPLEMENTATION GUIDE
 # ============================================================
@@ -9108,6 +10582,10 @@ UI labels should remain short,
 stable,
 and aligned with canonical state meanings.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120190_ESTIMATE_UI_LABEL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120200_ESTIMATE_OFFLINE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE OFFLINE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9170,6 +10648,10 @@ Offline implementation must not mark as completed:
 Replay should process queued operations deterministically
 and preserve explicit result state for each replayed operation.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120200_ESTIMATE_OFFLINE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120210_ESTIMATE_INVENTORY_REFERENCE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE INVENTORY REFERENCE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9218,6 +10700,10 @@ UI and implementation must preserve distinction between:
 Inventory implementation must remain advisory-only
 unless external authoritative policy explicitly states otherwise.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120210_ESTIMATE_INVENTORY_REFERENCE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120220_ESTIMATE_PREMIUM_FEATURE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE PREMIUM FEATURE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9276,6 +10762,10 @@ After downgrade or expiry:
 
 Offline premium behavior must rely on cached verified entitlement state.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120220_ESTIMATE_PREMIUM_FEATURE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120230_ESTIMATE_DEEPLINK_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE DEEPLINK IMPLEMENTATION GUIDE
 # ============================================================
@@ -9331,6 +10821,10 @@ Raw credentials must not be passed in deeplink business parameters.
 Validated deeplink context should route into the same canonical workspace logic
 used after standalone entry.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120230_ESTIMATE_DEEPLINK_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120240_ESTIMATE_SHARED_SESSION_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE SHARED SESSION IMPLEMENTATION GUIDE
 # ============================================================
@@ -9367,6 +10861,10 @@ Shared session reuse must not become:
 - deeplink credential transport
 - implicit premium entitlement bypass
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120240_ESTIMATE_SHARED_SESSION_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120250_ESTIMATE_PUBLICATION_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE PUBLICATION IMPLEMENTATION GUIDE
 # ============================================================
@@ -9415,6 +10913,10 @@ Representative fields:
 Implementation must not create a private authoritative ERP issuance path
 inside the app.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120250_ESTIMATE_PUBLICATION_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120260_ESTIMATE_SHARE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE SHARE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9458,6 +10960,10 @@ Implementation should support:
 Implementation must not create unbounded public sharing
 or bypass target validation.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120260_ESTIMATE_SHARE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120270_ESTIMATE_EXACT_PAYLOAD_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE EXACT PAYLOAD IMPLEMENTATION GUIDE
 # ============================================================
@@ -9574,6 +11080,10 @@ version at the operation or contract layer explicitly.
 
 Do not silently change field meaning in-place.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120270_ESTIMATE_EXACT_PAYLOAD_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120280_ESTIMATE_SCREEN_EXACT_PAYLOAD_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE SCREEN EXACT PAYLOAD IMPLEMENTATION GUIDE
 # ============================================================
@@ -9668,6 +11178,10 @@ Examples:
 - success_cached must not render as fresh
 - premium_unknown must not render as inactive
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120280_ESTIMATE_SCREEN_EXACT_PAYLOAD_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120290_ESTIMATE_LOCAL_STORE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE LOCAL STORE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9737,6 +11251,57 @@ Persist:
 
 exactly as-is when those are the true local states.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120290_ESTIMATE_LOCAL_STORE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120300_ESTIMATECREATOR_PRICING_GOVERNANCE_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# ESTIMATECREATOR PRICING GOVERNANCE IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: pricing-governance-implementation-guide
+
+purpose:
+Provides the first implementation-oriented guide for the newly
+clarified differentiator in EstimateCreator.
+
+implementation_priority:
+- Phase A should begin from estimate cockpit and approval visibility,
+  not from generic document editing expansion.
+- Commercial control should become visible before deeper automation.
+
+recommended_phase_a_entry:
+- fix row families for commercial timeline, revision review, and cockpit outputs
+- freeze cockpit and revision-review DTOs
+- separate raw estimate editing from commercial readiness aggregation
+- create slice order:
+  - estimate cockpit query
+  - revision approval review query
+  - approval request action
+  - conversion readiness review
+
+hard_rules:
+- keep draft content separate from commercial rollup state
+- keep revision and approval review separate from raw history
+- do not collapse pricing exception exposure into only revision text
+- do not bury conversion blockers inside generic document notes
+
+implementation_readiness_signal:
+- once DDL, DTO, stub boundaries, and slice order are frozen,
+  EstimateCreator can follow the same bundled Phase A pattern used in
+  NameCardManager, PocketSecretary, and ProjectFlow.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120300_ESTIMATECREATOR_PRICING_GOVERNANCE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120300_ESTIMATE_SYNC_QUEUE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE SYNC QUEUE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9798,6 +11363,107 @@ for UI to show:
 - blocked replay
 - conflict detected
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120300_ESTIMATE_SYNC_QUEUE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120310_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A COMMERCIAL TIMELINE IMPLEMENTATION SKELETON
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-commercial-timeline-implementation-skeleton
+
+purpose:
+Defines the first implementation skeleton for EstimateCreator
+Phase A commercial control without starting runtime generation.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- keep raw estimate editing separate from commercial rollup state
+- keep audit append separate from review query repositories
+
+recommended_server_modules:
+- api/controller
+- api/dto
+- application/service
+- application/validator
+- application/mapper
+- domain/model
+- domain/port
+- infrastructure/repository
+- infrastructure/audit
+
+phase_a_skeleton_units:
+- EstimateCockpitQueryController
+- EstimateCockpitQueryService
+- EstimateCockpitQueryValidator
+- CommercialTimelineRepository
+- RevisionApprovalReviewController
+- RevisionApprovalReviewService
+- RevisionApprovalReviewValidator
+- RevisionApprovalReviewRepository
+- EstimateCockpitSnapshotRepository
+- EstimateCreatorAuditWriter
+
+responsibility_split:
+- controller:
+  - request parsing
+  - auth context handoff
+  - response serialization
+- service:
+  - cockpit assembly
+  - commercial review orchestration
+  - summary message assembly
+- validator:
+  - required field checks
+  - page boundary checks
+  - Phase A scope rejection
+- mapper:
+  - dto to domain mapping
+  - domain to response mapping
+- repository:
+  - persistence and query only
+  - no business branching
+- audit:
+  - append events after relevant review operations when needed
+
+phase_a_build_order:
+- step_01_estimate_cockpit_query_path
+- step_02_revision_approval_review_query_path
+- step_03_add snapshot and audit path
+- step_04_add test baseline
+
+minimum_test_families:
+- estimate_cockpit_query_success
+- estimate_cockpit_query_validation_failure
+- revision_approval_review_query_success
+- revision_approval_review_include_resolved_toggle
+- revision_approval_review_include_pricing_exceptions_toggle
+
+phase_a_exit_ready_definition:
+- DTO names compile against frozen contracts
+- cockpit and revision review boundaries are explicit
+- row-family assumptions align to the DDL additive plan
+- audit append seam is present where needed
+
+explicit_non_scope:
+- no estimate draft write automation in this document
+- no approval request workflow here
+- no order conversion execution here
+- no Android client work here
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120310_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120310_ESTIMATE_ENDPOINT_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE ENDPOINT IMPLEMENTATION GUIDE
 # ============================================================
@@ -9865,6 +11531,136 @@ Offline/sync support endpoints should remain clearly separated
 from core business mutation endpoints.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120310_ESTIMATE_ENDPOINT_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120320_ESTIMATECREATOR_PHASE_A_STUB_FILE_PLAN.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A STUB FILE PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-stub-file-plan
+
+purpose:
+Defines the implementation-ready stub file boundary for
+EstimateCreator Phase A commercial control.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- no Japanese literals in Java source
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append stays separate
+
+target_package_base:
+- com.lsam.EstimateCreator
+
+target_server_source_root_example:
+- src/main/java/com/lsam/EstimateCreator
+
+target_test_source_root_example:
+- src/test/java/com/lsam/EstimateCreator
+
+phase_a_scope_modules:
+- estimate cockpit query
+- revision approval review query
+- cockpit snapshot and audit bridge
+
+recommended_stub_tree:
+- src/main/java/com/lsam/EstimateCreator/api/controller/commercial/EstimateCockpitQueryController.java
+- src/main/java/com/lsam/EstimateCreator/api/controller/commercial/RevisionApprovalReviewQueryController.java
+
+- src/main/java/com/lsam/EstimateCreator/api/dto/commercial/request/EstimateCockpitQueryRequest.java
+- src/main/java/com/lsam/EstimateCreator/api/dto/commercial/request/RevisionApprovalReviewQueryRequest.java
+
+- src/main/java/com/lsam/EstimateCreator/api/dto/commercial/response/EstimateCockpitQueryResponse.java
+- src/main/java/com/lsam/EstimateCreator/api/dto/commercial/response/RevisionApprovalReviewQueryResponse.java
+- src/main/java/com/lsam/EstimateCreator/api/dto/common/ErrorResponse.java
+
+- src/main/java/com/lsam/EstimateCreator/application/service/commercial/EstimateCockpitQueryService.java
+- src/main/java/com/lsam/EstimateCreator/application/service/commercial/RevisionApprovalReviewQueryService.java
+
+- src/main/java/com/lsam/EstimateCreator/application/validator/commercial/EstimateCockpitQueryValidator.java
+- src/main/java/com/lsam/EstimateCreator/application/validator/commercial/RevisionApprovalReviewQueryValidator.java
+
+- src/main/java/com/lsam/EstimateCreator/application/mapper/commercial/EstimateCockpitQueryMapper.java
+- src/main/java/com/lsam/EstimateCreator/application/mapper/commercial/RevisionApprovalReviewQueryMapper.java
+
+- src/main/java/com/lsam/EstimateCreator/domain/model/commercial/EstimateCommercialTimelineItem.java
+- src/main/java/com/lsam/EstimateCreator/domain/model/commercial/RevisionApprovalReviewItem.java
+- src/main/java/com/lsam/EstimateCreator/domain/model/commercial/EstimateCockpitSnapshot.java
+
+- src/main/java/com/lsam/EstimateCreator/domain/port/commercial/CommercialTimelineRepository.java
+- src/main/java/com/lsam/EstimateCreator/domain/port/commercial/RevisionApprovalReviewRepository.java
+- src/main/java/com/lsam/EstimateCreator/domain/port/commercial/EstimateCockpitSnapshotRepository.java
+- src/main/java/com/lsam/EstimateCreator/domain/port/commercial/EstimateCreatorAuditPort.java
+
+- src/main/java/com/lsam/EstimateCreator/infrastructure/repository/commercial/JdbcCommercialTimelineRepository.java
+- src/main/java/com/lsam/EstimateCreator/infrastructure/repository/commercial/JdbcRevisionApprovalReviewRepository.java
+- src/main/java/com/lsam/EstimateCreator/infrastructure/repository/commercial/JdbcEstimateCockpitSnapshotRepository.java
+- src/main/java/com/lsam/EstimateCreator/infrastructure/audit/commercial/DatabaseEstimateCreatorAuditAdapter.java
+
+- src/main/java/com/lsam/EstimateCreator/config/commercial/EstimateCreatorPhaseAConfig.java
+
+- src/test/java/com/lsam/EstimateCreator/application/service/commercial/EstimateCockpitQueryServiceTest.java
+- src/test/java/com/lsam/EstimateCreator/application/service/commercial/RevisionApprovalReviewQueryServiceTest.java
+
+file_role_notes:
+- controller:
+  - request entry
+  - auth context handoff
+  - response return only
+- dto:
+  - exact API contract
+- validator:
+  - required field and boundary checks
+- mapper:
+  - dto to domain and domain to response conversion
+- service:
+  - use case orchestration and summary assembly
+- domain model:
+  - runtime meaning carrier
+- port:
+  - stable repository and audit boundary
+- jdbc repository:
+  - SQL-backed adapter
+- audit adapter:
+  - append-only audit bridge
+- config:
+  - bean wiring and module isolation
+
+minimum_stub_creation_order:
+- 01 common error dto
+- 02 request and response dto
+- 03 validators
+- 04 domain models
+- 05 domain ports
+- 06 mappers
+- 07 services
+- 08 controllers
+- 09 jdbc repositories
+- 10 audit adapter
+- 11 config
+- 12 service tests
+
+alignment_requirements:
+- DTO field names must follow the Phase A API DTO freeze
+- row-family assumptions must follow the DDL additive plan
+- cockpit and revision review responses must remain aligned to their fixed payload families
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120320_ESTIMATECREATOR_PHASE_A_STUB_FILE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120320_ESTIMATE_LOCALE_IMPLEMENTATION_GUIDE.md -->
+
 # ============================================================
 # ESTIMATE LOCALE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9883,6 +11679,163 @@ Implementation rules:
 - do not auto-translate free text
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120320_ESTIMATE_LOCALE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120330_ESTIMATECREATOR_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A MODULE TASK BREAKDOWN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-module-task-breakdown
+
+purpose:
+Breaks the EstimateCreator Phase A stub plan into module-by-module
+execution tasks.
+
+baseline_dependencies:
+- Phase A commercial timeline DDL additive plan
+- Phase A API starter
+- Phase A API DTO field freeze
+- Phase A implementation skeleton
+
+global_rules:
+- additive only
+- exact DTO names must not drift
+- no destructive schema rewrite
+- no estimate draft or conversion write automation in Phase A
+- audit append remains separate from query repositories
+
+module_01_request_response_dto:
+  goal:
+    - create exact request and response DTO classes
+  target_files:
+    - EstimateCockpitQueryRequest.java
+    - RevisionApprovalReviewQueryRequest.java
+    - EstimateCockpitQueryResponse.java
+    - RevisionApprovalReviewQueryResponse.java
+    - ErrorResponse.java
+  done_definition:
+    - all DTO classes compile
+    - field names match the DTO freeze exactly
+
+module_02_validators:
+  goal:
+    - reject invalid request shapes before service entry
+  target_files:
+    - EstimateCockpitQueryValidator.java
+    - RevisionApprovalReviewQueryValidator.java
+  tasks:
+    - required field validation
+    - page boundary validation
+    - filter boundary validation
+  done_definition:
+    - each endpoint has one dedicated validator
+
+module_03_estimate_cockpit_query:
+  goal:
+    - assemble approval pending items, conversion blockers, and recent revisions
+  target_files:
+    - EstimateCockpitQueryController.java
+    - EstimateCockpitQueryService.java
+    - EstimateCommercialTimelineItem.java
+    - CommercialTimelineRepository.java
+    - JdbcCommercialTimelineRepository.java
+    - EstimateCockpitQueryMapper.java
+  tasks:
+    - wire controller to validator and service
+    - query commercial timeline rows
+    - assemble cockpit summary message
+    - emit audit append when needed
+  done_definition:
+    - cockpit query path is structurally stable
+
+module_04_revision_approval_review_query:
+  goal:
+    - expose revision and approval review rows
+  target_files:
+    - RevisionApprovalReviewQueryController.java
+    - RevisionApprovalReviewQueryService.java
+    - RevisionApprovalReviewItem.java
+    - RevisionApprovalReviewRepository.java
+    - JdbcRevisionApprovalReviewRepository.java
+    - RevisionApprovalReviewQueryMapper.java
+  tasks:
+    - apply includeResolved toggle
+    - apply pricing exception visibility toggle
+    - apply approval pending toggle
+    - emit audit append when needed
+  done_definition:
+    - revision review query path is structurally stable
+
+module_05_snapshot_and_audit_bridge:
+  goal:
+    - define optional snapshot persistence and audit append boundary
+  target_files:
+    - EstimateCockpitSnapshot.java
+    - EstimateCockpitSnapshotRepository.java
+    - JdbcEstimateCockpitSnapshotRepository.java
+    - EstimateCreatorAuditPort.java
+    - DatabaseEstimateCreatorAuditAdapter.java
+  tasks:
+    - define snapshot seam
+    - define audit append seams
+    - keep audit append separate from review repositories
+  done_definition:
+    - snapshot and audit boundary is explicit
+
+module_06_configuration:
+  goal:
+    - provide minimum wiring boundary
+  target_files:
+    - EstimateCreatorPhaseAConfig.java
+  tasks:
+    - wire controllers to services
+    - wire services to repositories and audit port
+  done_definition:
+    - dependency graph is representable
+
+module_07_tests:
+  goal:
+    - establish minimum Phase A test safety net
+  target_files:
+    - EstimateCockpitQueryServiceTest.java
+    - RevisionApprovalReviewQueryServiceTest.java
+  tasks:
+    - success path test
+    - validation failure test
+    - filter variation test
+  done_definition:
+    - each core query service has baseline tests
+
+recommended_execution_order:
+- module_01_request_response_dto
+- module_02_validators
+- module_03_estimate_cockpit_query
+- module_04_revision_approval_review_query
+- module_05_snapshot_and_audit_bridge
+- module_06_configuration
+- module_07_tests
+
+phase_a_ready_to_code_gate:
+- DTO names frozen
+- validators fixed
+- repository boundaries explicit
+- service responsibilities explicit
+- cockpit and revision review payload compatibility preserved
+- audit append boundary explicit
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120330_ESTIMATECREATOR_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120330_ESTIMATE_CUSTOMER_DELIVERY_IMPLEMENTATION_GUIDE.md -->
+
 # ============================================================
 # ESTIMATE CUSTOMER DELIVERY IMPLEMENTATION GUIDE
 # ============================================================
@@ -9900,6 +11853,139 @@ Implementation rules:
 - support manual customer response recording
 - render sent/opened/expiring badges from explicit state
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120330_ESTIMATE_CUSTOMER_DELIVERY_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120340_ESTIMATECREATOR_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A EXACT STUB CONTENT ORDER PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-exact-stub-content-order-plan
+
+purpose:
+Defines the exact file content writing order for EstimateCreator
+Phase A stub generation.
+
+baseline_documents:
+- Phase A DDL additive plan
+- Phase A API starter
+- Phase A API DTO field freeze
+- Phase A stub file plan
+- Phase A module task breakdown
+
+global_rules:
+- additive only
+- DTO field names match the freeze document exactly
+- controller stays thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append stays separate
+
+content_order_strategy:
+- start from dependency-light files
+- lock contracts first
+- write ports before adapters
+- write tests after service boundaries are clear
+
+phase_01_common_error_contract:
+  files:
+    - api/dto/common/ErrorResponse.java
+
+phase_02_request_dto_contracts:
+  files:
+    - api/dto/commercial/request/EstimateCockpitQueryRequest.java
+    - api/dto/commercial/request/RevisionApprovalReviewQueryRequest.java
+
+phase_03_response_dto_contracts:
+  files:
+    - api/dto/commercial/response/EstimateCockpitQueryResponse.java
+    - api/dto/commercial/response/RevisionApprovalReviewQueryResponse.java
+
+phase_04_validators:
+  files:
+    - application/validator/commercial/EstimateCockpitQueryValidator.java
+    - application/validator/commercial/RevisionApprovalReviewQueryValidator.java
+
+phase_05_domain_models:
+  files:
+    - domain/model/commercial/EstimateCommercialTimelineItem.java
+    - domain/model/commercial/RevisionApprovalReviewItem.java
+    - domain/model/commercial/EstimateCockpitSnapshot.java
+
+phase_06_domain_ports:
+  files:
+    - domain/port/commercial/CommercialTimelineRepository.java
+    - domain/port/commercial/RevisionApprovalReviewRepository.java
+    - domain/port/commercial/EstimateCockpitSnapshotRepository.java
+    - domain/port/commercial/EstimateCreatorAuditPort.java
+
+phase_07_mappers:
+  files:
+    - application/mapper/commercial/EstimateCockpitQueryMapper.java
+    - application/mapper/commercial/RevisionApprovalReviewQueryMapper.java
+
+phase_08_services:
+  files:
+    - application/service/commercial/EstimateCockpitQueryService.java
+    - application/service/commercial/RevisionApprovalReviewQueryService.java
+
+phase_09_controllers:
+  files:
+    - api/controller/commercial/EstimateCockpitQueryController.java
+    - api/controller/commercial/RevisionApprovalReviewQueryController.java
+
+phase_10_repository_adapters:
+  files:
+    - infrastructure/repository/commercial/JdbcCommercialTimelineRepository.java
+    - infrastructure/repository/commercial/JdbcRevisionApprovalReviewRepository.java
+    - infrastructure/repository/commercial/JdbcEstimateCockpitSnapshotRepository.java
+
+phase_11_audit_adapter:
+  files:
+    - infrastructure/audit/commercial/DatabaseEstimateCreatorAuditAdapter.java
+
+phase_12_configuration:
+  files:
+    - config/commercial/EstimateCreatorPhaseAConfig.java
+
+phase_13_tests:
+  files:
+    - src/test/java/com/lsam/EstimateCreator/application/service/commercial/EstimateCockpitQueryServiceTest.java
+    - src/test/java/com/lsam/EstimateCreator/application/service/commercial/RevisionApprovalReviewQueryServiceTest.java
+
+first_slice_recommended_start:
+- ErrorResponse
+- EstimateCockpitQueryRequest
+- EstimateCockpitQueryResponse
+- EstimateCockpitQueryValidator
+- EstimateCommercialTimelineItem
+- CommercialTimelineRepository
+- EstimateCockpitQueryMapper
+- EstimateCockpitQueryService
+- EstimateCockpitQueryController
+- JdbcCommercialTimelineRepository
+- DatabaseEstimateCreatorAuditAdapter
+- EstimateCreatorPhaseAConfig
+- EstimateCockpitQueryServiceTest
+
+why_this_order:
+- starts from contract-first
+- keeps the first compile graph shallow
+- enables the cockpit query as the narrowest first vertical slice
+- delays revision review query until cockpit boundaries are stable
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120340_ESTIMATECREATOR_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120340_ESTIMATE_DELIVERY_LOCALE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE DELIVERY LOCALE IMPLEMENTATION GUIDE
 # ============================================================
@@ -9985,6 +12071,492 @@ Implementation should make this explicit in UI and state handling,
 rather than implying external automated approval capture.
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120340_ESTIMATE_DELIVERY_LOCALE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120350_ESTIMATECREATOR_PHASE_A_SLICE_COMMAND_PACKS.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A SLICE COMMAND PACKS
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-command-packs
+
+purpose:
+Fixes the Termux-oriented stub generation packs for the EstimateCreator
+Phase A vertical slices.
+
+execution_policy:
+- design fixation only in this step
+- actual execution is later
+- Termux one-block style
+- mkdir -p plus cat standard
+- package base is com.lsam.EstimateCreator
+- no Japanese literals in Java source
+- additive only
+
+slice_01_estimate_cockpit_query:
+  goal:
+    - create the first vertical slice for estimate cockpit visibility
+  target_files:
+    - api/dto/common/ErrorResponse.java
+    - api/dto/commercial/request/EstimateCockpitQueryRequest.java
+    - api/dto/commercial/response/EstimateCockpitQueryResponse.java
+    - application/validator/commercial/EstimateCockpitQueryValidator.java
+    - domain/model/commercial/EstimateCommercialTimelineItem.java
+    - domain/port/commercial/CommercialTimelineRepository.java
+    - application/mapper/commercial/EstimateCockpitQueryMapper.java
+    - application/service/commercial/EstimateCockpitQueryService.java
+    - api/controller/commercial/EstimateCockpitQueryController.java
+    - infrastructure/repository/commercial/JdbcCommercialTimelineRepository.java
+    - infrastructure/audit/commercial/DatabaseEstimateCreatorAuditAdapter.java
+    - config/commercial/EstimateCreatorPhaseAConfig.java
+    - src/test/java/com/lsam/EstimateCreator/application/service/commercial/EstimateCockpitQueryServiceTest.java
+  default_safe_output_root:
+    - $HOME/.tmp/estimatecreator-phase-a-slice01
+  exact_termux_command_pack:
+      TARGET_ROOT="${TARGET_ROOT:-$HOME/.tmp/estimatecreator-phase-a-slice01}"
+      SRC_MAIN="$TARGET_ROOT/src/main/java/com/lsam/EstimateCreator"
+      SRC_TEST="$TARGET_ROOT/src/test/java/com/lsam/EstimateCreator"
+
+      mkdir -p \
+        "$SRC_MAIN/api/dto/common" \
+        "$SRC_MAIN/api/dto/commercial/request" \
+        "$SRC_MAIN/api/dto/commercial/response" \
+        "$SRC_MAIN/application/validator/commercial" \
+        "$SRC_MAIN/domain/model/commercial" \
+        "$SRC_MAIN/domain/port/commercial" \
+        "$SRC_MAIN/application/mapper/commercial" \
+        "$SRC_MAIN/application/service/commercial" \
+        "$SRC_MAIN/api/controller/commercial" \
+        "$SRC_MAIN/infrastructure/repository/commercial" \
+        "$SRC_MAIN/infrastructure/audit/commercial" \
+        "$SRC_MAIN/config/commercial" \
+        "$SRC_TEST/application/service/commercial"
+
+      cat > "$SRC_MAIN/api/dto/common/ErrorResponse.java" <<'EOF'
+      package com.lsam.EstimateCreator.api.dto.common;
+
+      public class ErrorResponse {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/dto/commercial/request/EstimateCockpitQueryRequest.java" <<'EOF'
+      package com.lsam.EstimateCreator.api.dto.commercial.request;
+
+      public class EstimateCockpitQueryRequest {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/dto/commercial/response/EstimateCockpitQueryResponse.java" <<'EOF'
+      package com.lsam.EstimateCreator.api.dto.commercial.response;
+
+      public class EstimateCockpitQueryResponse {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/validator/commercial/EstimateCockpitQueryValidator.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.validator.commercial;
+
+      public class EstimateCockpitQueryValidator {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/model/commercial/EstimateCommercialTimelineItem.java" <<'EOF'
+      package com.lsam.EstimateCreator.domain.model.commercial;
+
+      public class EstimateCommercialTimelineItem {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/commercial/CommercialTimelineRepository.java" <<'EOF'
+      package com.lsam.EstimateCreator.domain.port.commercial;
+
+      public interface CommercialTimelineRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/mapper/commercial/EstimateCockpitQueryMapper.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.mapper.commercial;
+
+      public class EstimateCockpitQueryMapper {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/service/commercial/EstimateCockpitQueryService.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.service.commercial;
+
+      public class EstimateCockpitQueryService {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/controller/commercial/EstimateCockpitQueryController.java" <<'EOF'
+      package com.lsam.EstimateCreator.api.controller.commercial;
+
+      public class EstimateCockpitQueryController {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/repository/commercial/JdbcCommercialTimelineRepository.java" <<'EOF'
+      package com.lsam.EstimateCreator.infrastructure.repository.commercial;
+
+      public class JdbcCommercialTimelineRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/audit/commercial/DatabaseEstimateCreatorAuditAdapter.java" <<'EOF'
+      package com.lsam.EstimateCreator.infrastructure.audit.commercial;
+
+      public class DatabaseEstimateCreatorAuditAdapter {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/config/commercial/EstimateCreatorPhaseAConfig.java" <<'EOF'
+      package com.lsam.EstimateCreator.config.commercial;
+
+      public class EstimateCreatorPhaseAConfig {
+      }
+      EOF
+
+      cat > "$SRC_TEST/application/service/commercial/EstimateCockpitQueryServiceTest.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.service.commercial;
+
+      public class EstimateCockpitQueryServiceTest {
+      }
+      EOF
+
+slice_02_revision_approval_review_query:
+  goal:
+    - expose revision and approval review rows
+  target_files:
+    - api/dto/commercial/request/RevisionApprovalReviewQueryRequest.java
+    - api/dto/commercial/response/RevisionApprovalReviewQueryResponse.java
+    - application/validator/commercial/RevisionApprovalReviewQueryValidator.java
+    - domain/model/commercial/RevisionApprovalReviewItem.java
+    - domain/port/commercial/RevisionApprovalReviewRepository.java
+    - application/mapper/commercial/RevisionApprovalReviewQueryMapper.java
+    - application/service/commercial/RevisionApprovalReviewQueryService.java
+    - api/controller/commercial/RevisionApprovalReviewQueryController.java
+    - infrastructure/repository/commercial/JdbcRevisionApprovalReviewRepository.java
+    - src/test/java/com/lsam/EstimateCreator/application/service/commercial/RevisionApprovalReviewQueryServiceTest.java
+  default_safe_output_root:
+    - $HOME/.tmp/estimatecreator-phase-a-slice02
+  exact_termux_command_pack:
+      TARGET_ROOT="${TARGET_ROOT:-$HOME/.tmp/estimatecreator-phase-a-slice02}"
+      SRC_MAIN="$TARGET_ROOT/src/main/java/com/lsam/EstimateCreator"
+      SRC_TEST="$TARGET_ROOT/src/test/java/com/lsam/EstimateCreator"
+
+      mkdir -p \
+        "$SRC_MAIN/api/dto/commercial/request" \
+        "$SRC_MAIN/api/dto/commercial/response" \
+        "$SRC_MAIN/application/validator/commercial" \
+        "$SRC_MAIN/domain/model/commercial" \
+        "$SRC_MAIN/domain/port/commercial" \
+        "$SRC_MAIN/application/mapper/commercial" \
+        "$SRC_MAIN/application/service/commercial" \
+        "$SRC_MAIN/api/controller/commercial" \
+        "$SRC_MAIN/infrastructure/repository/commercial" \
+        "$SRC_TEST/application/service/commercial"
+
+      cat > "$SRC_MAIN/api/dto/commercial/request/RevisionApprovalReviewQueryRequest.java" <<'EOF'
+      package com.lsam.EstimateCreator.api.dto.commercial.request;
+
+      public class RevisionApprovalReviewQueryRequest {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/dto/commercial/response/RevisionApprovalReviewQueryResponse.java" <<'EOF'
+      package com.lsam.EstimateCreator.api.dto.commercial.response;
+
+      public class RevisionApprovalReviewQueryResponse {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/validator/commercial/RevisionApprovalReviewQueryValidator.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.validator.commercial;
+
+      public class RevisionApprovalReviewQueryValidator {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/model/commercial/RevisionApprovalReviewItem.java" <<'EOF'
+      package com.lsam.EstimateCreator.domain.model.commercial;
+
+      public class RevisionApprovalReviewItem {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/commercial/RevisionApprovalReviewRepository.java" <<'EOF'
+      package com.lsam.EstimateCreator.domain.port.commercial;
+
+      public interface RevisionApprovalReviewRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/mapper/commercial/RevisionApprovalReviewQueryMapper.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.mapper.commercial;
+
+      public class RevisionApprovalReviewQueryMapper {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/application/service/commercial/RevisionApprovalReviewQueryService.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.service.commercial;
+
+      public class RevisionApprovalReviewQueryService {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/api/controller/commercial/RevisionApprovalReviewQueryController.java" <<'EOF'
+      package com.lsam.EstimateCreator.api.controller.commercial;
+
+      public class RevisionApprovalReviewQueryController {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/repository/commercial/JdbcRevisionApprovalReviewRepository.java" <<'EOF'
+      package com.lsam.EstimateCreator.infrastructure.repository.commercial;
+
+      public class JdbcRevisionApprovalReviewRepository {
+      }
+      EOF
+
+      cat > "$SRC_TEST/application/service/commercial/RevisionApprovalReviewQueryServiceTest.java" <<'EOF'
+      package com.lsam.EstimateCreator.application.service.commercial;
+
+      public class RevisionApprovalReviewQueryServiceTest {
+      }
+      EOF
+
+slice_03_snapshot_and_audit_bridge:
+  goal:
+    - expose optional cockpit snapshot persistence and explicit audit seams
+  target_files:
+    - domain/model/commercial/EstimateCockpitSnapshot.java
+    - domain/port/commercial/EstimateCockpitSnapshotRepository.java
+    - domain/port/commercial/EstimateCreatorAuditPort.java
+    - infrastructure/repository/commercial/JdbcEstimateCockpitSnapshotRepository.java
+    - infrastructure/audit/commercial/DatabaseEstimateCreatorAuditAdapter.java
+  default_safe_output_root:
+    - $HOME/.tmp/estimatecreator-phase-a-slice03
+  exact_termux_command_pack:
+      TARGET_ROOT="${TARGET_ROOT:-$HOME/.tmp/estimatecreator-phase-a-slice03}"
+      SRC_MAIN="$TARGET_ROOT/src/main/java/com/lsam/EstimateCreator"
+
+      mkdir -p \
+        "$SRC_MAIN/domain/model/commercial" \
+        "$SRC_MAIN/domain/port/commercial" \
+        "$SRC_MAIN/infrastructure/repository/commercial" \
+        "$SRC_MAIN/infrastructure/audit/commercial"
+
+      cat > "$SRC_MAIN/domain/model/commercial/EstimateCockpitSnapshot.java" <<'EOF'
+      package com.lsam.EstimateCreator.domain.model.commercial;
+
+      public class EstimateCockpitSnapshot {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/commercial/EstimateCockpitSnapshotRepository.java" <<'EOF'
+      package com.lsam.EstimateCreator.domain.port.commercial;
+
+      public interface EstimateCockpitSnapshotRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/domain/port/commercial/EstimateCreatorAuditPort.java" <<'EOF'
+      package com.lsam.EstimateCreator.domain.port.commercial;
+
+      public interface EstimateCreatorAuditPort {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/repository/commercial/JdbcEstimateCockpitSnapshotRepository.java" <<'EOF'
+      package com.lsam.EstimateCreator.infrastructure.repository.commercial;
+
+      public class JdbcEstimateCockpitSnapshotRepository {
+      }
+      EOF
+
+      cat > "$SRC_MAIN/infrastructure/audit/commercial/DatabaseEstimateCreatorAuditAdapter.java" <<'EOF'
+      package com.lsam.EstimateCreator.infrastructure.audit.commercial;
+
+      public class DatabaseEstimateCreatorAuditAdapter {
+      }
+      EOF
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120350_ESTIMATECREATOR_PHASE_A_SLICE_COMMAND_PACKS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120360_ESTIMATECREATOR_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A SLICE FIELD FILL PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-field-fill-plan
+
+purpose:
+Defines what each Phase A slice should contain once empty stubs move
+into field-filled implementation-ready stubs.
+
+global_rules:
+- exact field names follow the DTO freeze exactly
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append remains separate
+- no Japanese literals in Java source
+
+slice_01_estimate_cockpit_query:
+  target_files:
+    - ErrorResponse.java
+    - EstimateCockpitQueryRequest.java
+    - EstimateCockpitQueryResponse.java
+    - EstimateCockpitQueryValidator.java
+    - EstimateCommercialTimelineItem.java
+    - CommercialTimelineRepository.java
+    - EstimateCockpitQueryMapper.java
+    - EstimateCockpitQueryService.java
+    - EstimateCockpitQueryController.java
+    - JdbcCommercialTimelineRepository.java
+    - DatabaseEstimateCreatorAuditAdapter.java
+    - EstimateCreatorPhaseAConfig.java
+    - EstimateCockpitQueryServiceTest.java
+  expected_fill:
+    - ErrorResponse:
+      - errorCode
+      - errorMessage
+      - requestId
+      - details
+    - EstimateCockpitQueryRequest:
+      - estimateId
+      - timezone
+      - includePendingApproval
+      - includeConversionBlockers
+      - includeRecentRevisions
+      - pageSize
+      - pageToken
+    - EstimateCockpitQueryResponse:
+      - estimateId
+      - estimateTitle
+      - healthSummaryMessage
+      - pendingApprovalItems
+      - conversionBlockerItems
+      - recentRevisionItems
+      - nextPageToken
+      - generatedAt
+    - EstimateCockpitQueryValidator:
+      - validate(EstimateCockpitQueryRequest request)
+      - required checks for estimateId, timezone, pageSize
+    - EstimateCommercialTimelineItem:
+      - fields aligned to commercial_timeline_item row family
+    - CommercialTimelineRepository:
+      - queryCockpitItems(...)
+      - findRecentRevisions(...)
+    - EstimateCockpitQueryMapper:
+      - toCockpitResponse(...)
+    - EstimateCockpitQueryService:
+      - queryEstimateCockpit(...)
+    - EstimateCockpitQueryController:
+      - queryEstimateCockpit(EstimateCockpitQueryRequest request)
+    - JdbcCommercialTimelineRepository:
+      - sql placeholders aligned to commercial timeline table
+    - DatabaseEstimateCreatorAuditAdapter:
+      - appendEstimateCockpitQueryAudit(...)
+    - EstimateCreatorPhaseAConfig:
+      - first-slice bean wiring placeholders
+    - EstimateCockpitQueryServiceTest:
+      - estimate_cockpit_query_success
+      - estimate_cockpit_query_validation_failure
+
+slice_02_revision_approval_review_query:
+  target_files:
+    - RevisionApprovalReviewQueryRequest.java
+    - RevisionApprovalReviewQueryResponse.java
+    - RevisionApprovalReviewQueryValidator.java
+    - RevisionApprovalReviewItem.java
+    - RevisionApprovalReviewRepository.java
+    - RevisionApprovalReviewQueryMapper.java
+    - RevisionApprovalReviewQueryService.java
+    - RevisionApprovalReviewQueryController.java
+    - JdbcRevisionApprovalReviewRepository.java
+    - RevisionApprovalReviewQueryServiceTest.java
+  expected_fill:
+    - RevisionApprovalReviewQueryRequest:
+      - estimateId
+      - includeResolved
+      - includePricingExceptions
+      - includeApprovalPending
+      - pageSize
+      - pageToken
+    - RevisionApprovalReviewQueryResponse:
+      - estimateId
+      - reviewItems
+      - summaryMessage
+      - nextPageToken
+      - generatedAt
+    - RevisionApprovalReviewQueryValidator:
+      - validate(RevisionApprovalReviewQueryRequest request)
+      - required checks for estimateId and pageSize
+    - RevisionApprovalReviewItem:
+      - fields aligned to revision_approval_review_item row family
+    - RevisionApprovalReviewRepository:
+      - queryReviewItems(...)
+    - RevisionApprovalReviewQueryMapper:
+      - toRevisionApprovalReviewResponse(...)
+    - RevisionApprovalReviewQueryService:
+      - queryRevisionApprovalReview(...)
+    - RevisionApprovalReviewQueryController:
+      - queryRevisionApprovalReview(RevisionApprovalReviewQueryRequest request)
+    - JdbcRevisionApprovalReviewRepository:
+      - sql placeholders aligned to review table
+    - RevisionApprovalReviewQueryServiceTest:
+      - revision_approval_review_query_success
+      - revision_approval_review_include_resolved_toggle
+      - revision_approval_review_include_pricing_exceptions_toggle
+
+slice_03_snapshot_and_audit_bridge:
+  target_files:
+    - EstimateCockpitSnapshot.java
+    - EstimateCockpitSnapshotRepository.java
+    - EstimateCreatorAuditPort.java
+    - JdbcEstimateCockpitSnapshotRepository.java
+    - DatabaseEstimateCreatorAuditAdapter.java
+  expected_fill:
+    - EstimateCockpitSnapshot:
+      - fields aligned to estimate_cockpit_snapshot row family
+    - EstimateCockpitSnapshotRepository:
+      - insertSnapshot(...)
+      - findLatestSnapshot(...)
+    - EstimateCreatorAuditPort:
+      - appendEstimateCockpitQueryAudit(...)
+      - appendRevisionApprovalReviewQueryAudit(...)
+    - JdbcEstimateCockpitSnapshotRepository:
+      - sql placeholders aligned to cockpit snapshot table
+    - DatabaseEstimateCreatorAuditAdapter:
+      - explicit append-only audit method seams
+
+done_definition:
+- all slice seams are fixed
+- DTO and row-family alignment is explicit
+- tests are named before runtime generation begins
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120360_ESTIMATECREATOR_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120360_ESTIMATE_PERMISSION_IMPLEMENTATION_GUIDE.md -->
+
 # ============================================================
 # ESTIMATE PERMISSION IMPLEMENTATION GUIDE
 # ============================================================
@@ -10050,6 +12622,161 @@ Examples:
 - premium write
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120360_ESTIMATE_PERMISSION_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120370_ESTIMATECREATOR_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A IMPLEMENTATION READY COMPLETION MEMO
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-implementation-ready-completion
+
+purpose:
+Declares that EstimateCreator Phase A planning has reached
+implementation-ready status without starting real runtime generation.
+
+completion_basis:
+- competitive positioning note added
+- estimate lifecycle pricing control architecture added
+- revision approval conversion architecture added
+- commercial decision timeline model added
+- estimate cockpit and revision review exact payloads added
+- estimate cockpit interface added
+- pricing governance implementation guide added
+- Phase A DDL additive plan added
+- Phase A API starter added
+- Phase A DTO field freeze added
+- Phase A implementation skeleton added
+- stub file plan added
+- module task breakdown added
+- exact stub content order plan added
+- slice command packs added
+- slice field-fill plan added
+
+what_is_now_fixed:
+- commercial control differentiator
+- Phase A row-family direction
+- Phase A endpoint contracts
+- repository, service, validator, mapper, and controller boundaries
+- slice-based execution order
+- command-pack-driven stub generation order
+- field-fill expectations for each slice
+
+what_is_not_started_yet:
+- no real Java file generation in app source tree
+- no SQL execution against business schema
+- no runtime framework lock in live codebase
+- no client implementation
+- no estimate draft or conversion write automation
+
+implementation_ready_definition_met:
+- the design no longer depends on unresolved major architecture questions
+- the remaining work is fill-in and generation, not rediscovery
+- slice-by-slice execution order is fixed
+- DTO and row-family drift is constrained
+- audit separation remains explicit
+
+recommended_start_when_execution_begins:
+- start from slice_01 estimate cockpit query only
+- fill first-slice DTOs and seams before moving to slice_02
+- move to slice_03 only after slice_01 and slice_02 compile boundaries are stable
+- preserve review discipline before any SQL apply step
+
+conclusion:
+- EstimateCreator Phase A is implementation-ready at the design level.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120370_ESTIMATECREATOR_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120380_ESTIMATECREATOR_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+# ============================================================
+# ESTIMATECREATOR PHASE A EXECUTION ENTRY PROTOCOL
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: EstimateCreator
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-execution-entry-protocol
+
+purpose:
+Defines the exact protocol to follow when the project later moves
+from planning artifacts into actual stub generation or SQL execution.
+
+entry_principles:
+- do not begin from slice_03
+- do not generate all files at once without slice order
+- do not execute SQL before review
+- keep additive only
+- keep command packs as the sole sequence authority
+- do not reopen already frozen DTO names casually
+
+execution_start_order:
+- step_01:
+  - execute slice_01 command pack into a safe output root
+- step_02:
+  - fill slice_01 contents according to the field-fill plan
+- step_03:
+  - review compile surface and naming consistency
+- step_04:
+  - execute slice_02 command pack
+- step_05:
+  - fill slice_02 contents according to the field-fill plan
+- step_06:
+  - review cockpit-to-revision-review seam
+- step_07:
+  - execute slice_03 command pack
+- step_08:
+  - fill slice_03 contents according to the field-fill plan
+- step_09:
+  - review snapshot and audit seams
+- step_10:
+  - only after design-to-code review, prepare SQL apply pack
+- step_11:
+  - only after review, execute additive SQL in controlled order
+
+safe_output_policy:
+- initial file generation should use .tmp or another isolated root
+- do not inject generated stubs into a production source tree as the first action
+- compare generated files against design documents before relocation
+
+review_gates:
+- gate_01_contract_review:
+  - DTO names match the freeze document exactly
+- gate_02_boundary_review:
+  - repository and service responsibilities remain separated
+- gate_03_schema_review:
+  - DDL aligns with the planned row families
+- gate_04_query_review:
+  - cockpit and revision review responses remain bound to the fixed payload families
+- gate_05_audit_review:
+  - audit append seams remain separate from query repositories
+
+abort_conditions:
+- a command pack requires reopening DTO names
+- a field-fill plan conflicts with earlier freeze documents
+- existing physical schema core names differ from assumptions materially
+- SQL needs destructive change
+- slice order is being bypassed
+
+handoff_statement:
+- this protocol is the bridge between the planning layer and the later execution layer.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120380_ESTIMATECREATOR_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120380_ESTIMATE_REVISION_SNAPSHOT_IMPLEMENTATION_GUIDE.md -->
+
 # ============================================================
 # ESTIMATE REVISION SNAPSHOT IMPLEMENTATION GUIDE
 # ============================================================
@@ -10067,6 +12794,10 @@ Implementation rules:
 - preserve locale/currency as part of delivered revision meaning
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120380_ESTIMATE_REVISION_SNAPSHOT_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120390_ESTIMATE_DELIVERY_AUDIT_IMPLEMENTATION_GUIDE.md -->
+
 # ============================================================
 # ESTIMATE DELIVERY AUDIT IMPLEMENTATION GUIDE
 # ============================================================
@@ -10083,6 +12814,10 @@ Implementation rules:
 - response recording should bind to delivery basis explicitly
 - expired/revoked states should remain queryable for audit and UI
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120390_ESTIMATE_DELIVERY_AUDIT_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120400_ESTIMATE_DELIVERY_STATE_IMPLEMENTATION_GUIDE.md -->
 # ============================================================
 # ESTIMATE DELIVERY STATE IMPLEMENTATION GUIDE
 # ============================================================
@@ -10153,6 +12888,10 @@ Readonly link state transitions such as:
 
 must remain explicit and queryable.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120400_ESTIMATE_DELIVERY_STATE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120_ESTIMATE_CREATOR_IMPLEMENTATION.md -->
 # ============================================================
 # ESTIMATE CREATOR IMPLEMENTATION
 # ============================================================
@@ -10249,6 +12988,10 @@ Additional implementation block:
 - delivery/open history persistence
 - customer response persistence
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120_ESTIMATE_CREATOR_IMPLEMENTATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR IMPLEMENTATION INDEX
 # ============================================================
@@ -10273,6 +13016,28 @@ prepared_by: Zero
 - 120210_ESTIMATE_INVENTORY_REFERENCE_IMPLEMENTATION_GUIDE.md
 - 120220_ESTIMATE_PREMIUM_FEATURE_IMPLEMENTATION_GUIDE.md
 
+
+- 120300_ESTIMATECREATOR_PRICING_GOVERNANCE_IMPLEMENTATION_GUIDE.md
+
+- 120310_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 120320_ESTIMATECREATOR_PHASE_A_STUB_FILE_PLAN.md
+
+- 120330_ESTIMATECREATOR_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120340_ESTIMATECREATOR_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120350_ESTIMATECREATOR_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120360_ESTIMATECREATOR_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120370_ESTIMATECREATOR_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120380_ESTIMATECREATOR_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR IMPLEMENTATION OVERVIEW
 # ============================================================
@@ -10287,6 +13052,10 @@ derived from constitution, architecture, runtime, and policy.
 It guides how the application should be built
 without violating canonical boundaries.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/120.implementation/120_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130110_ESTIMATE_CREATOR_PHASE_PLAN.md -->
 # ============================================================
 # ESTIMATE CREATOR PHASE PLAN
 # ============================================================
@@ -10429,6 +13198,10 @@ Exit condition:
 - customer delivery actions work
 - delivery/open/response visibility is explicit
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130110_ESTIMATE_CREATOR_PHASE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130120_ESTIMATE_CREATOR_DEVELOPMENT_GUARDRAILS.md -->
 # ============================================================
 # ESTIMATE CREATOR DEVELOPMENT GUARDRAILS
 # ============================================================
@@ -10475,6 +13248,10 @@ UI must not misrepresent:
 - deeplink entry as authority grant
 - premium visibility as premium entitlement success
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130120_ESTIMATE_CREATOR_DEVELOPMENT_GUARDRAILS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130130_ESTIMATE_CREATOR_IMPLEMENTATION_ENTRY_ORDER.md -->
 # ============================================================
 # ESTIMATE CREATOR IMPLEMENTATION ENTRY ORDER
 # ============================================================
@@ -10506,6 +13283,10 @@ Reason:
 This order minimizes breakage from dependent capability being built
 before foundational state handling is stable.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130130_ESTIMATE_CREATOR_IMPLEMENTATION_ENTRY_ORDER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130140_ESTIMATE_CREATOR_INTEGRATION_READINESS_DEVELOPMENT.md -->
 # ============================================================
 # ESTIMATE CREATOR INTEGRATION READINESS DEVELOPMENT
 # ============================================================
@@ -10527,6 +13308,10 @@ Integration readiness should be reviewed in this order:
 A later integration should not be treated as ready
 only because the UI entry exists.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130140_ESTIMATE_CREATOR_INTEGRATION_READINESS_DEVELOPMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130150_ESTIMATE_CREATOR_RELEASE_READINESS_DEVELOPMENT.md -->
 # ============================================================
 # ESTIMATE CREATOR RELEASE READINESS DEVELOPMENT
 # ============================================================
@@ -10551,6 +13336,10 @@ Release readiness checklist should confirm:
 - no raw credential travels through deeplink parameters
 - user-facing status wording is not misleading
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130150_ESTIMATE_CREATOR_RELEASE_READINESS_DEVELOPMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130_ESTIMATE_CREATOR_DEVELOPMENT.md -->
 # ============================================================
 # ESTIMATE CREATOR DEVELOPMENT
 # ============================================================
@@ -10612,6 +13401,10 @@ only when the application preserves:
 - dual-entry consistency
 - shared common-component reuse
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130_ESTIMATE_CREATOR_DEVELOPMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR DEVELOPMENT INDEX
 # ============================================================
@@ -10629,6 +13422,10 @@ prepared_by: Zero
 - 130140_ESTIMATE_CREATOR_INTEGRATION_READINESS_DEVELOPMENT.md
 - 130150_ESTIMATE_CREATOR_RELEASE_READINESS_DEVELOPMENT.md
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR DEVELOPMENT OVERVIEW
 # ============================================================
@@ -10652,6 +13449,10 @@ Its role is to provide:
 - integration-safe rollout strategy
 - implementation entry discipline
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/130.development/130_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900110_ESTIMATE_SYNC_CONFLICT_META_NOTE.md -->
 # ============================================================
 # ESTIMATE SYNC CONFLICT META NOTE
 # ============================================================
@@ -10682,6 +13483,10 @@ Sync conflict review must verify:
 - interface exposes conflict clearly
 - operations can track conflict events
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900110_ESTIMATE_SYNC_CONFLICT_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900120_ESTIMATE_RELATIONSHIP_META_NOTE.md -->
 # ============================================================
 # ESTIMATE RELATIONSHIP META NOTE
 # ============================================================
@@ -10713,6 +13518,10 @@ Relationship review must verify consistency between:
 - memo/share/publication/sync remain separate concerns
 - inventory is linked as reference only
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900120_ESTIMATE_RELATIONSHIP_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900130_ESTIMATE_API_META_NOTE.md -->
 # ============================================================
 # ESTIMATE API META NOTE
 # ============================================================
@@ -10729,6 +13538,10 @@ API review must verify:
 - explicit payload ownership
 - no ambiguous field mixing local/sync/publication meaning
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900130_ESTIMATE_API_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900140_ESTIMATE_AUDIT_APPROVAL_META_NOTE.md -->
 # ============================================================
 # ESTIMATE AUDIT APPROVAL META NOTE
 # ============================================================
@@ -10744,6 +13557,10 @@ Review must verify:
 - local edit history remains distinguishable from approval activity
 - publication activity remains distinguishable from approval activity
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900140_ESTIMATE_AUDIT_APPROVAL_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900150_ESTIMATE_APPROVAL_AUDIT_CODE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE APPROVAL AUDIT CODE META NOTE
 # ============================================================
@@ -10759,6 +13576,10 @@ Review must verify:
 - code naming is stable and human-reviewable
 - UI-safe mapping is possible
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900150_ESTIMATE_APPROVAL_AUDIT_CODE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900160_ESTIMATE_ERROR_CODE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE ERROR CODE META NOTE
 # ============================================================
@@ -10774,6 +13595,10 @@ Review must verify:
 - premium inactive is distinct from premium unknown
 - sync conflict is distinct from generic sync failure
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900160_ESTIMATE_ERROR_CODE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900170_ESTIMATE_UI_STATE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE UI STATE META NOTE
 # ============================================================
@@ -10793,6 +13618,10 @@ Review must verify UI distinction between:
 - fresh inventory
 - premium locked
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900170_ESTIMATE_UI_STATE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900180_ESTIMATE_PAYLOAD_FIELD_MAP_META_NOTE.md -->
 # ============================================================
 # ESTIMATE PAYLOAD FIELD MAP META NOTE
 # ============================================================
@@ -10809,6 +13638,10 @@ Review must verify:
 - company context is preserved
 - revision context is preserved where required
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900180_ESTIMATE_PAYLOAD_FIELD_MAP_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900190_ESTIMATE_API_FIELD_SCHEMA_META_NOTE.md -->
 # ============================================================
 # ESTIMATE API FIELD SCHEMA META NOTE
 # ============================================================
@@ -10824,6 +13657,10 @@ Review must verify:
 - fields do not overload multiple meanings
 - child objects preserve linkage identity
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900190_ESTIMATE_API_FIELD_SCHEMA_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900200_ESTIMATE_VALIDATION_CODE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE VALIDATION CODE META NOTE
 # ============================================================
@@ -10843,6 +13680,10 @@ Review must verify validation coverage for:
 - inventory request eligibility
 - local formal use eligibility
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900200_ESTIMATE_VALIDATION_CODE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900210_ESTIMATE_UI_LABEL_META_NOTE.md -->
 # ============================================================
 # ESTIMATE UI LABEL META NOTE
 # ============================================================
@@ -10859,6 +13700,10 @@ Review must verify labels are:
 - aligned with runtime meaning
 - non-misleading for authority-sensitive states
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900210_ESTIMATE_UI_LABEL_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900220_ESTIMATE_CONSISTENCY_CHECK_META.md -->
 # ============================================================
 # ESTIMATE CONSISTENCY CHECK META
 # ============================================================
@@ -10890,6 +13735,10 @@ prepared_by: Zero
 14. deeplink parameter safety
 15. standalone/deeplink parity
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900220_ESTIMATE_CONSISTENCY_CHECK_META.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900230_ESTIMATE_REVIEW_CHECKLIST_META.md -->
 # ============================================================
 # ESTIMATE REVIEW CHECKLIST META
 # ============================================================
@@ -10916,6 +13765,10 @@ prepared_by: Zero
 - model states remain separated
 - auditability is preserved
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900230_ESTIMATE_REVIEW_CHECKLIST_META.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900240_ESTIMATE_OFFLINE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE OFFLINE META NOTE
 # ============================================================
@@ -10932,6 +13785,10 @@ Review must verify:
 - sync recovery flow exists
 - UI shows offline and pending states clearly
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900240_ESTIMATE_OFFLINE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900250_ESTIMATE_INVENTORY_REFERENCE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE INVENTORY REFERENCE META NOTE
 # ============================================================
@@ -10948,6 +13805,10 @@ Review must verify:
 - policy forbids authority overclaim
 - integration defines source timestamp/result state
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900250_ESTIMATE_INVENTORY_REFERENCE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900260_ESTIMATE_PREMIUM_FEATURE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE PREMIUM FEATURE META NOTE
 # ============================================================
@@ -10965,6 +13826,10 @@ Review must verify:
 - premium state model exists
 - unknown entitlement fails closed for write actions
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900260_ESTIMATE_PREMIUM_FEATURE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900270_ESTIMATE_FINAL_CONSISTENCY_REPORT.md -->
 # ============================================================
 # ESTIMATE CREATOR FINAL CONSISTENCY REPORT
 # ============================================================
@@ -11064,6 +13929,10 @@ Use this section for manual review result marking:
 - final_result:
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900270_ESTIMATE_FINAL_CONSISTENCY_REPORT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900280_ESTIMATE_ENTRY_AND_SESSION_META_NOTE.md -->
+
 # ============================================================
 # ESTIMATE ENTRY AND SESSION META NOTE
 # ============================================================
@@ -11080,6 +13949,10 @@ Review focus:
 - raw credentials are not carried in deeplink business parameters
 - invalid shared session falls back safely or fails closed
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900280_ESTIMATE_ENTRY_AND_SESSION_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900290_ESTIMATE_FINAL_MANUAL_CHECK.md -->
 # ============================================================
 # ESTIMATE CREATOR FINAL MANUAL CHECK
 # ============================================================
@@ -11202,6 +14075,10 @@ ui_result:
 applications_root_result:
 final_result:
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900290_ESTIMATE_FINAL_MANUAL_CHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900291_ESTIMATE_FINAL_MANUAL_CHECK_BASH_ONLY.md -->
 # ============================================================
 # ESTIMATE CREATOR FINAL MANUAL CHECK (BASH ONLY)
 # ============================================================
@@ -11305,6 +14182,10 @@ business_result: OK
 applications_root_result: PARTIAL_OK
 final_result: OK
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900291_ESTIMATE_FINAL_MANUAL_CHECK_BASH_ONLY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900300_ESTIMATE_COMMON_COMPONENT_ADOPTION_NOTE.md -->
 # ============================================================
 # ESTIMATE CREATOR COMMON COMPONENT ADOPTION NOTE
 # ============================================================
@@ -11663,6 +14544,10 @@ high-value shared patterns around:
 - inventory reference state
 - template application
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900300_ESTIMATE_COMMON_COMPONENT_ADOPTION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900310_ESTIMATE_BILLING_DESIGN_NOTE.md -->
 # ============================================================
 # ESTIMATE CREATOR BILLING DESIGN NOTE
 # ============================================================
@@ -11971,6 +14856,10 @@ This achieves a clean balance between usability,
 commercial value,
 and architectural consistency.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900310_ESTIMATE_BILLING_DESIGN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900320_ESTIMATE_IMPLEMENTATION_DEVELOPMENT_BOUNDARY_NOTE.md -->
 # ============================================================
 # ESTIMATE IMPLEMENTATION / DEVELOPMENT BOUNDARY NOTE
 # ============================================================
@@ -12121,6 +15010,10 @@ Their roles are different:
 
 This separation is appropriate for EstimateCreator.
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900320_ESTIMATE_IMPLEMENTATION_DEVELOPMENT_BOUNDARY_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900330_ESTIMATE_EXACT_PAYLOAD_META_NOTE.md -->
 # ============================================================
 # ESTIMATE EXACT PAYLOAD META NOTE
 # ============================================================
@@ -12137,6 +15030,10 @@ Review focus:
 - premium failures are explicit
 - inventory reference stays advisory-only
 - publication request/result remain distinct
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900330_ESTIMATE_EXACT_PAYLOAD_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900340_ESTIMATE_SCREEN_EXACT_PAYLOAD_META_NOTE.md -->
 # ============================================================
 # ESTIMATE SCREEN EXACT PAYLOAD META NOTE
 # ============================================================
@@ -12153,6 +15050,10 @@ Review focus:
 - premium failures are explicit
 - offline saves do not claim external completion
 - UI rendering matches exact state values
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900340_ESTIMATE_SCREEN_EXACT_PAYLOAD_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900350_ESTIMATE_LOCAL_STORE_SYNC_META_NOTE.md -->
 # ============================================================
 # ESTIMATE LOCAL STORE SYNC META NOTE
 # ============================================================
@@ -12168,6 +15069,10 @@ Review focus:
 - replay result states are explicit
 - conflict is not silently overwritten
 - local persistence does not fake external completion
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900350_ESTIMATE_LOCAL_STORE_SYNC_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900360_ESTIMATE_ENDPOINT_META_NOTE.md -->
 # ============================================================
 # ESTIMATE ENDPOINT META NOTE
 # ============================================================
@@ -12183,6 +15088,10 @@ Review focus:
 - create/update distinctions are explicit
 - deeplink/session endpoints are separated from business endpoints
 - sync support endpoints are separated from core mutation endpoints
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900360_ESTIMATE_ENDPOINT_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900370_ESTIMATE_MULTILINGUAL_DELIVERY_META_NOTE.md -->
 
 # ============================================================
 # ESTIMATE MULTILINGUAL DELIVERY META NOTE
@@ -12201,6 +15110,10 @@ Review focus:
 - readonly links remain readonly
 - delivery/open/response states are explicit
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900370_ESTIMATE_MULTILINGUAL_DELIVERY_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900380_ESTIMATE_DELIVERY_LOCALE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE DELIVERY LOCALE META NOTE
 # ============================================================
@@ -12217,6 +15130,10 @@ Review focus:
 - readonly links stay readonly
 - open logs are explicit and non-ambiguous
 - customer response remains manual-record based
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900380_ESTIMATE_DELIVERY_LOCALE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900392_ESTIMATE_FINAL_MANUAL_CHECK_EXPANDED.md -->
 # ============================================================
 # ESTIMATE CREATOR FINAL MANUAL CHECK EXPANDED
 # ============================================================
@@ -12374,6 +15291,57 @@ Recommended result interpretation:
   OK when the above are acceptable and no blocking semantic contradiction remains
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900392_ESTIMATE_FINAL_MANUAL_CHECK_EXPANDED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900410_ESTIMATECREATOR_20260416_DIFF_AUDIT_NOTE.md -->
+# ============================================================
+# ESTIMATECREATOR 20260416 DIFF AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: EstimateCreator
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: diff-audit-note
+
+purpose:
+Records the first differential reinforcement bundle applied to the
+existing EstimateCreator design.
+
+preserved_core:
+- estimate and quotation creation identity
+- sales support and commercial document role
+- existing business operation role
+- existing architecture layers
+- existing ERP bridge direction
+
+added_in_this_bundle:
+- competitive positioning note
+- estimate lifecycle pricing control architecture
+- revision approval conversion architecture
+- commercial decision timeline model
+- estimate cockpit exact payload
+- revision approval review exact payload
+- estimate cockpit interface note
+- pricing governance implementation guide
+
+why_this_bundle:
+- existing EstimateCreator design already had strong document creation handling
+- what was less explicit was the commercial-control layer above raw estimate editing
+- this bundle makes the app more implementation-ready without rewriting its base
+
+recommended_next_step:
+- proceed to Phase A entry documents for commercial timeline, DDL, DTO freeze,
+  and slice-based execution planning
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900410_ESTIMATECREATOR_20260416_DIFF_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900410_ESTIMATE_PERMISSION_META_NOTE.md -->
+
 # ============================================================
 # ESTIMATE PERMISSION META NOTE
 # ============================================================
@@ -12391,6 +15359,49 @@ Review focus:
 - sensitive actions are individually gated
 
 
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900410_ESTIMATE_PERMISSION_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900420_ESTIMATECREATOR_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+# ============================================================
+# ESTIMATECREATOR 20260416 BUNDLE02 PHASE A AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: EstimateCreator
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle02-phase-a-audit
+
+purpose:
+Records the second reinforcement bundle applied to EstimateCreator,
+covering Phase A entry documents and exact implementation-start
+boundaries.
+
+bundle02_contents:
+- 020.architecture/021140_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_DDL_ADDITIVE_PLAN.md
+- 060.integration/060320_ESTIMATECREATOR_PHASE_A_API_STARTER.md
+- 060.integration/060330_ESTIMATECREATOR_PHASE_A_API_DTO_FIELD_FREEZE.md
+- 120.implementation/120310_ESTIMATECREATOR_PHASE_A_COMMERCIAL_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+result:
+- Phase A DDL direction fixed
+- Phase A endpoint set fixed
+- API DTO field set frozen
+- implementation skeleton fixed
+- EstimateCreator now has the same kind of Phase A entry footing
+  that made NameCardManager, PocketSecretary, and ProjectFlow easier to continue in bundled form
+
+recommended_next_step:
+- proceed to bundle_03 for stub file plan, module task breakdown, and content order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900420_ESTIMATECREATOR_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900420_ESTIMATE_REVISION_DELIVERY_META_NOTE.md -->
+
 # ============================================================
 # ESTIMATE REVISION DELIVERY META NOTE
 # ============================================================
@@ -12407,6 +15418,46 @@ Review focus:
 - delivery state remains separate from publication state
 - locale/currency of delivered artifact remain auditable
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900420_ESTIMATE_REVISION_DELIVERY_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900430_ESTIMATECREATOR_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+# ============================================================
+# ESTIMATECREATOR 20260416 BUNDLE03 STUB AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: EstimateCreator
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle03-stub-audit
+
+purpose:
+Records the third reinforcement bundle applied to EstimateCreator,
+covering the stub planning boundary for Phase A.
+
+bundle03_contents:
+- 120.implementation/120320_ESTIMATECREATOR_PHASE_A_STUB_FILE_PLAN.md
+- 120.implementation/120330_ESTIMATECREATOR_PHASE_A_MODULE_TASK_BREAKDOWN.md
+- 120.implementation/120340_ESTIMATECREATOR_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+result:
+- stub file boundary fixed
+- module task order fixed
+- exact stub content order fixed
+- EstimateCreator now has a bundled Phase A planning posture
+  similar to NameCardManager, PocketSecretary, and ProjectFlow before command-pack generation
+
+recommended_next_step:
+- proceed to bundle_04 for command packs, field-fill plans, and closure
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900430_ESTIMATECREATOR_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900430_ESTIMATE_DELIVERY_STATE_META_NOTE.md -->
 # ============================================================
 # ESTIMATE DELIVERY STATE META NOTE
 # ============================================================
@@ -12422,6 +15473,244 @@ Review focus:
 - opened is distinct from accepted
 - expired/revoked are explicit
 - response basis points to delivered revision basis
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900430_ESTIMATE_DELIVERY_STATE_META_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900440_ESTIMATECREATOR_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+# ============================================================
+# ESTIMATECREATOR 20260416 BUNDLE04 CLOSEOUT AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: EstimateCreator
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle04-closeout-audit
+
+purpose:
+Records the fourth reinforcement bundle applied to EstimateCreator,
+closing the Phase A planning layer at an implementation-ready state.
+
+bundle04_contents:
+- 120.implementation/120350_ESTIMATECREATOR_PHASE_A_SLICE_COMMAND_PACKS.md
+- 120.implementation/120360_ESTIMATECREATOR_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+- 120.implementation/120370_ESTIMATECREATOR_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+- 120.implementation/120380_ESTIMATECREATOR_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+result:
+- slice command packs fixed
+- field-fill plan fixed
+- implementation-ready completion declared
+- execution entry protocol fixed
+- EstimateCreator planning can stop here cleanly unless execution begins or contradiction appears
+
+readiness_statement:
+- differential reinforcement completed
+- Phase A entry completed
+- stub planning completed
+- command-pack and field-fill planning completed
+- implementation-ready design status achieved
+
+recommended_default_after_closure:
+- do not add more micro design memos unless a contradiction is found
+- if work resumes, start from the execution entry protocol
+- later execution should follow slice order only
+
+final_assessment:
+- EstimateCreator moved from reinforcement into implementation-ready
+  Phase A design closure successfully.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900440_ESTIMATECREATOR_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900450_ESTIMATECREATOR_NEXT_APP_TRANSITION_HANDOFF.md -->
+# ============================================================
+# ESTIMATECREATOR NEXT APP TRANSITION HANDOFF
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: EstimateCreator
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: next-app-transition-handoff
+
+purpose:
+Closes the current EstimateCreator planning stream cleanly and makes it
+easy to move to the next BusinessOS application without reopening
+already-settled EstimateCreator planning questions.
+
+current_status_summary:
+- differential reinforcement completed
+- bundle_01 completed
+- bundle_02 Phase A entry completed
+- bundle_03 stub planning completed
+- bundle_04 closeout completed
+- implementation-ready completion memo completed
+- execution entry protocol completed
+
+what_should_not_be_reopened_by_default:
+- estimate lifecycle and pricing control direction
+- revision, approval, and conversion visibility direction
+- estimate cockpit as a commercial control surface
+- separation of raw estimate editing and commercial readiness rollup
+- exact payload freeze direction
+- slice-based execution order
+- additive-only Phase A direction
+
+what_is_safe_to_defer:
+- actual Java stub generation
+- actual SQL apply
+- runtime framework detail lock
+- client implementation
+- approval request execution
+- order conversion execution
+- operational rollout planning
+
+recommended_default_next_move:
+- move to the next BusinessOS application using the same bundled
+  differential reinforcement pattern
+- do not continue creating micro-memos for EstimateCreator unless
+  contradiction, failure recovery, or explicit execution start appears
+
+if_execution_is_later_requested:
+- start from the Phase A execution entry protocol
+- do not skip directly to later slices
+- do not execute SQL before review
+- use slice command packs as the only sequence authority
+
+handoff_statement:
+- EstimateCreator can now be treated as planning-closed and
+  next-app-transition-ready.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900450_ESTIMATECREATOR_NEXT_APP_TRANSITION_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900460_ESTIMATECREATOR_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+# ============================================================
+# ESTIMATECREATOR REUSABLE PHASEA REINFORCEMENT RECIPE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: EstimateCreator
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: reusable-phasea-reinforcement-recipe
+
+purpose:
+Captures the reusable reinforcement recipe proven during the
+EstimateCreator planning work so the next BusinessOS app can be
+advanced faster and with fewer unnecessary micro-iterations.
+
+recommended_reuse_sequence:
+- step_01:
+  - preserve the app core idea instead of rewriting by default
+- step_02:
+  - identify the real differentiator and make it explicit
+- step_03:
+  - add missing architecture notes only for that differentiator
+- step_04:
+  - add exact payload or model documents only where ambiguity blocks implementation
+- step_05:
+  - add interface notes only where the new behavior becomes visible
+- step_06:
+  - add implementation guide and diff audit memo
+- step_07:
+  - reflect the result in 000_BUSINESS_APP_LEDGER.md
+- step_08:
+  - move to Phase A entry documents only after the diff layer is coherent
+- step_09:
+  - freeze DDL, DTO, stub boundaries, and slice order
+- step_10:
+  - close with implementation-ready and transition-ready memos
+
+what_worked_well_here:
+- additive-only reinforcement
+- differentiator-first architecture completion
+- freezing DDL and DTO before generation
+- using slice order instead of all-at-once generation
+- closing planning once implementation-ready status was reached
+
+what_to_avoid_next_time:
+- reopening stable core text too early
+- jumping to implementation before exact payload and row-family clarity
+- continuing micro-memos after bundled planning is already stable
+- mixing audit concerns into mutation planning
+- mixing commercial control rollup state with raw estimate draft state
+
+default_bundle_strategy_for_next_app:
+- bundle_01:
+  - diff reinforcement plus audit
+- bundle_02:
+  - Phase A entry plus DDL plus DTO freeze
+- bundle_03:
+  - stub plan plus module tasks plus content order
+- bundle_04:
+  - command packs plus field-fill plans plus closure
+
+success_definition_for_next_app:
+- the next app reaches implementation-ready planning state
+- the BusinessOS ledger reflects the new status
+- the app can move to execution later without rediscovering core design intent
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900460_ESTIMATECREATOR_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900470_ESTIMATECREATOR_PLANNING_STOP_RULE_NOTE.md -->
+# ============================================================
+# ESTIMATECREATOR PLANNING STOP RULE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: EstimateCreator
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: planning-stop-rule-note
+
+purpose:
+Defines the stop rule for the EstimateCreator planning layer so that
+the project does not continue adding design documents without need.
+
+default_stop_rule:
+- stop adding planning artifacts once implementation-ready status,
+  execution entry protocol, and transition handoff are all present
+
+allowed_reopen_cases:
+- contradiction between frozen DTOs and row-family direction
+- contradiction between slice command packs and field-fill plans
+- material mismatch with existing physical schema core
+- explicit request to start runtime generation
+- explicit request to execute SQL after review
+- failure recovery after a broken or invalid generated artifact
+
+not_enough_reason_to_reopen:
+- preference for more wording
+- preference for additional micro-notes
+- desire to restate already frozen boundaries
+- desire to re-explain the same slice order
+
+default_action_after_stop_rule:
+- either begin actual generation using the execution entry protocol
+- or move to the next BusinessOS application
+
+closure_statement:
+- EstimateCreator planning should now be considered complete by default.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900470_ESTIMATECREATOR_PLANNING_STOP_RULE_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900_ESTIMATE_CREATOR_META.md -->
 # ============================================================
 # ESTIMATE CREATOR META
 # ============================================================
@@ -12442,6 +15731,10 @@ Primary meta themes:
 - inventory reference notes
 - premium feature notes
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900_ESTIMATE_CREATOR_META.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900_INDEX.md -->
 # ============================================================
 # ESTIMATE CREATOR META INDEX
 # ============================================================
@@ -12470,6 +15763,24 @@ prepared_by: Zero
 - 900250_ESTIMATE_INVENTORY_REFERENCE_META_NOTE.md
 - 900260_ESTIMATE_PREMIUM_FEATURE_META_NOTE.md
 
+
+- 900410_ESTIMATECREATOR_20260416_DIFF_AUDIT_NOTE.md
+
+- 900420_ESTIMATECREATOR_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 900430_ESTIMATECREATOR_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 900440_ESTIMATECREATOR_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900450_ESTIMATECREATOR_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900460_ESTIMATECREATOR_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900470_ESTIMATECREATOR_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900_OVERVIEW.md -->
 # ============================================================
 # ESTIMATE CREATOR META OVERVIEW
 # ============================================================
@@ -12483,6 +15794,4 @@ consistency checks,
 and implementation-support metadata.
 
 
-
-<- headquarters snapshot/analytics = headquarters/operator summary visibility END FILE:  -->
-
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/EstimateCreator/900.meta/900_OVERVIEW.md -->

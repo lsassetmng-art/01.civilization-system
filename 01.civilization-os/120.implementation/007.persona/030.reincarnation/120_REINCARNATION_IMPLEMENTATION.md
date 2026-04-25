@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona reincarnation.
+Defines the implementation design for Civilization-side persona reincarnation.
 
 # 2. IMPLEMENTATION TARGETS
 

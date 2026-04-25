@@ -71,7 +71,7 @@ PersonaOS should use the following top-level structure:
 Supplementary utility folders may remain:
 
 999.archive
-999.dump
+999.archive/999.archive/999.dump
 
 
 # ============================================================
@@ -130,8 +130,8 @@ must eventually live in their own top-level layers.
 The following existing architecture subtrees
 are likely reassignment candidates:
 
-020.architecture/100.integration
-020.architecture/150.security
+020.architecture/060.integration
+020.architecture/100.security
 
 These must be reviewed file-by-file
 before any physical move.

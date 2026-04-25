@@ -1,0 +1,6 @@
+smoke_seed_registry.count=2
+smoke_flow_execution_log.count=0
+smoke_worker.current_assignment=ASSIGNED
+smoke_request.lineage.count=1
+smoke_request.event_outbox.count=2
+smoke_request.latest_replay_decision=REDELIVER_RESULT_ONLY

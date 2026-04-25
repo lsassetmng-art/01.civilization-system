@@ -17,3 +17,14 @@ files:
 - 1200380005_TIME_BOUNDARY_IMPLEMENTATION.md
 - 1200380006_TIME_VALIDATION_IMPLEMENTATION.md
 - 1200380007_TIME_FAILURE_IMPLEMENTATION.md
+
+## Exact Calendar And Simulation Split
+## Exact Calendar And Simulation Split
+
+Calendar and time-reference truth
+must remain separate from simulation-clock execution truth.
+
+## Exact Time Reference Bridge Rule
+
+Display time, calendar rule, and simulation time
+must remain bridgeable but not collapsed into one execution surface.

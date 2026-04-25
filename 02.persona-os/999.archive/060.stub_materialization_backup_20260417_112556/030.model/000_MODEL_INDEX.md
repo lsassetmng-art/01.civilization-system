@@ -1,0 +1,41 @@
+# 000_MODEL_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 030.model
+
+- 000_MODEL_OVERVIEW.md
+- 0300001_PERSONA_OS_MODEL_OVERVIEW.md
+- 0301500002_PERSONA_SECURITY_STATE_MODEL.md
+- 999_MODEL_INDEX.txt
+- 010.core/
+- 020.identity/
+- 030.state/
+- 040.memory/
+- 050.growth/
+- 060.builder/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.snapshot/
+- 100.integration/
+- 100.package/
+- 110.distribution/
+- 120.external_reflection/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 130.builder/
+- 140.business_worker_link/
+- 140.consultation_common/
+- 140.integration/
+- 140.visual/
+- 150.secretary_interaction_common/
+- 150.security/
+- 160.governance/
+- 160.notification_common/
+- 170.background_common/
+- 170.operations_support/
+- 210.persona_core/
+- 220.rights_external/
+- 230.external_sync/
+- 240.expression_composition/
+- 250.cross_cutting_completion/

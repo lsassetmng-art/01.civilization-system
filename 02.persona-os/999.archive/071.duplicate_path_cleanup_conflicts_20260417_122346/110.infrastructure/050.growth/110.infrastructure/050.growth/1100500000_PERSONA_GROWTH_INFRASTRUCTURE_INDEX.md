@@ -1,0 +1,7 @@
+# 1100500000_PERSONA_GROWTH_INFRASTRUCTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 110.infrastructure/050.growth/110.infrastructure/050.growth
+
+- 1100500001_PERSONA_GROWTH_INFRASTRUCTURE_OVERVIEW.md

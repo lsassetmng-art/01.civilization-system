@@ -1,0 +1,8 @@
+# 1100700000_PERSONA_VISUAL_INFRASTRUCTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 110.infrastructure/070.visual/110.infrastructure/070.visual
+
+- 1100700001_PERSONA_VISUAL_INFRASTRUCTURE_OVERVIEW.md
+- 1100700002_PERSONA_VISUAL_ASSET_INFRASTRUCTURE.md

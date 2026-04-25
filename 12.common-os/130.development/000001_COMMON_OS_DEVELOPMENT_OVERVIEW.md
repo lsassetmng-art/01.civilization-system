@@ -1,0 +1,124 @@
+# COMMON OS DEVELOPMENT OVERVIEW
+
+status: canonical
+layer: development
+
+## Purpose
+This layer defines how CommonOS changes are proposed, reviewed, adopted, and introduced.
+
+## Scope
+- workflow
+- adoption review
+- change introduction policy
+
+## Application common component development subsystem overview
+
+### Position
+The architecture layer decides what belongs in canon. The implementation layer decides what gets built. The development layer decides how adoption review, wave promotion, rollout order, and origin evidence intake are operationally governed.
+
+### Scope
+- adoption review gate
+- wave promotion conditions
+- rollout sequencing
+- origin evidence intake discipline
+- rejection and hold handling
+
+### Operational meaning
+A component can be canonical without being implemented. Development policy governs when it moves from accepted design to active rollout.
+
+## app_common metadata governance subsystem overview
+
+### Position
+The development layer governs how app_common metadata changes move from draft to reviewed and then to published active usage.
+
+### Scope
+- additive change control
+- review and publish workflow
+- versioning and deprecation discipline
+
+## app_common rollout batch subsystem overview
+
+### Position
+The development layer governs how the migration bundle is introduced in batches, how gates are checked, and when rollout can proceed.
+
+### Scope
+- rollout batches
+- apply sequence
+- go / no-go gates
+- rollback trigger interpretation
+
+## CommonOS freeze and adoption-apply subsystem overview
+
+### Position
+The development layer now includes freeze-candidate summary and adoption-apply guidance so that target OS or app work can begin with CommonOS already folded into the plan.
+
+### Scope
+- current freeze-candidate summary
+- next-chat handoff
+- target adoption plan template
+- target apply checklist
+
+### Operational meaning
+CommonOS canon is treated as a design-level shared-foundation baseline. Each target OS or app must decide how much of the UI, metadata, runtime pattern, and offline-first behavior it adopts without moving business canon out of its own domain.
+
+## CommonOS common-only freeze subsystem overview
+
+### Position
+This subsystem closes the shared-foundation-only work of this chat.
+
+### Scope
+- CommonOS scope freeze
+- app_common current status summary
+- next-chat handoff limited to CommonOS / app_common / shared-foundation work
+
+### Boundary
+Do not use this subsystem to design OS-specific adoption plans. Those belong in each OS chat.
+
+## CommonOS final handoff subsystem overview
+
+### Position
+This subsystem is the closing bundle for the CommonOS-only track.
+
+### Scope
+- final handoff bundle
+- common-only closing note
+- no OS-specific adoption design
+
+### Boundary
+This subsystem does not create target OS plans. It only hands off shared-foundation canon and current status.
+
+## CommonOS final chat handoff close subsystem overview
+
+### Position
+This subsystem is the last closeout layer for the current CommonOS-only chat.
+
+### Scope
+- final chat handoff
+- final close status
+- no OS-specific adoption planning
+
+### Boundary
+This closeout remains limited to CommonOS / app_common / shared-foundation canon only.
+
+## CommonOS final package manifest subsystem overview
+
+### Position
+This subsystem makes the CommonOS-only output easier to hand off and verify as a package.
+
+### Scope
+- final package manifest
+- closeout checklist
+- no OS-specific adoption planning
+
+## CommonOS final one-block handoff subsystem overview
+
+### Position
+This subsystem is the final closeout of the CommonOS-only design track handled in this chat.
+
+### Scope
+- final one-block handoff
+- final close result
+- no OS-specific adoption planning
+
+### Boundary
+This closeout remains limited to CommonOS, app_common, and shared-foundation canon only.

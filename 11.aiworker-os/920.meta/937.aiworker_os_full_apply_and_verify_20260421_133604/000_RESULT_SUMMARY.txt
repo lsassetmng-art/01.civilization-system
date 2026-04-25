@@ -1,0 +1,8 @@
+AIWORKER OS FULL APPLY AND VERIFY RESULT
+STAMP=20260421_133604
+ROOT=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+BASE=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages
+RUN_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604
+LOG_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs
+MAIN_LOG=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/937.aiworker_os_full_apply_and_verify_20260421_133604/logs/000_main.log
+STATUS=SUCCESS

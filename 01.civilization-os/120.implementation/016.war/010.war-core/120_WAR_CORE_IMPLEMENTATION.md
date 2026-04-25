@@ -102,3 +102,26 @@ At minimum, the layer should expose:
 - dependency linkage
 - failure and suppression reasons
 
+
+## Exact War Truth Boundary
+## Exact War Truth Boundary
+
+War implementation must explicitly distinguish:
+
+- declaration truth
+- operation truth
+- deployment truth
+- logistics truth
+- ceasefire truth
+- resolution truth
+
+## Exact Postwar Effect Rule
+
+Postwar effect on territory, society, economy, or law
+must pass through explicit binding and audited application.
+
+## Exact Readiness And Active War Split
+
+Defense readiness, preparation posture, and active war posture
+must remain separate.
+Preparedness is not identical to declared or active war state.

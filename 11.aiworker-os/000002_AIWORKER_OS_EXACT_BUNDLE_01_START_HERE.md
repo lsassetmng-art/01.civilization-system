@@ -1,0 +1,40 @@
+# ============================================================
+# AIWORKER OS EXACT BUNDLE 01 START HERE
+# ============================================================
+
+status: exact-bundle-entry
+system: AiworkerOS
+owner: Boss
+prepared_by: Zero
+
+purpose:
+This file is the entry point for Exact Bundle 01.
+It freezes the first implementation-ready boundary for AiworkerOS.
+
+recommended_read_order:
+- 020.architecture/0200101_AIWORKER_TRUTH_SPLIT_ARCHITECTURE_EXACT.md
+- 020.architecture/0200102_AIWORKER_RUNTIME_SURFACE_AND_LANE_ARCHITECTURE_EXACT.md
+- 030.model/011103000000010_AIWORKER_CLASSIFICATION_AND_EFFECTIVE_BEHAVIOR_MODEL.md
+- 030.model/011103000000011_AIWORKER_TENANCY_ASSIGNMENT_AND_AVAILABILITY_MODEL.md
+- 030.model/011103000000012_AIWORKER_GROWTH_TENDENCY_AND_FIT_EXACT_MODEL.md
+- 040.runtime/0400101_AIWORKER_EFFECTIVE_BEHAVIOR_AND_GATE_RUNTIME_EXACT_MODEL.md
+- 050.flow/0500101_AIWORKER_COMMAND_DRAFT_STAGING_OFFICIAL_WRITE_FLOW_EXACT.md
+- 050.flow/0500102_AIWORKER_DISPATCH_ASSIGNMENT_REPAIR_REBUILD_FLOW_EXACT.md
+- 060.integration/0600101_AIWORKER_BUSINESSOS_INTERFACE_EXACT_DESIGN.md
+- 060.integration/0600102_AIWORKER_CX22073JW_READ_VIEW_FAMILY_EXACT_DESIGN.md
+- 090.interface/0900101_AIWORKER_EVENT_COMMAND_INTERFACE_EXACT_CATALOG.md
+- 100.security/1000101_AIWORKER_ALLOWED_VIEW_GATE_AND_WRITE_SURFACE_SECURITY_MODEL.md
+- 110.infrastructure/1100101_AIWORKER_SCHEMA_TABLE_LEDGER_EXACT.md
+- 110.infrastructure/1100102_AIWORKER_ENUM_CODE_AND_ID_POLICY_EXACT.md
+- 110.infrastructure/1100103_AIWORKER_CX22073JW_VIEW_FAMILY_COLUMN_SHAPE_EXACT.md
+- 110.infrastructure/1100104_AIWORKER_CONTROLLED_FUNCTION_AND_OFFICIAL_INTAKE_EXACT.md
+- 120.implementation/1200101_AIWORKER_IMPLEMENTATION_PHASE_PLAN_EXACT.md
+- 120.implementation/1200102_AIWORKER_ACCEPTANCE_GATE_EXACT.md
+
+frozen_conclusions:
+- aiworker is the canonical worker-truth schema
+- business owns commercial and ERP-side truth only
+- cx22073jw is AI-worker-only read-view surface
+- raw table direct read by AI workers is prohibited
+- style changes behavior tendency only
+- rank never bypasses gate or approval

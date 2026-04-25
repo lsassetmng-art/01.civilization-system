@@ -1,21 +1,54 @@
-# ============================================================
-# PERSONA OS POLICY INDEX
-# ============================================================
+# 000_POLICY_INDEX
 
-status: draft-for-canonical-update
-system: persona-os
-layer: policy
-document_type: index
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-subdomains:
-- existing canonical policy domains
-- 120.external-reflection
+directory: 080.policy
 
-documents:
-- 120.external-reflection/0801200_EXTERNAL_REFLECTION_EVALUATION_POLICY.md
-- 120.external-reflection/0801201_GAME_ORIGIN_MEMORY_ADOPTION_POLICY.md
-- 120.external-reflection/0801202_GAME_ORIGIN_RELATION_ADOPTION_POLICY.md
-- 120.external-reflection/0801203_TRANSFORMED_ADOPTION_POLICY.md
-- 120.external-reflection/0801204_EXTERNAL_REFLECTION_AUDIT_POLICY.md
+- 000_POLICY_OVERVIEW.md
+- 0800000_PERSONA_OS_POLICY_INDEX.md
+- 0800000_POLICY_INDEX.md
+- 0800001_PERSONA_OS_POLICY_OVERVIEW.md
+- 080_PERSONA-OS_POLICY_INDEX.md
+- 080_PERSONA-OS_POLICY_OVERVIEW.md
+- 080_PERSONA_GROWTH_ACCEPTANCE_POLICY.md
+- 081_PERSONA_STATE_TRANSITION_ACCEPTANCE_POLICY.md
+- 082_PERSONA_REJECTION_POLICY.md
+- 083_PERSONA_EXTERNAL_APPLY_RETENTION_POLICY.md
+- 084_PERSONA_CANONICAL_CHANGE_SCOPE_POLICY.md
+- 999_POLICY_INDEX.txt
+- 010.core/
+- 020.identity/
+- 030.state/
+- 040.external_rights/
+- 040.integration/
+- 040.memory/
+- 050.business/
+- 050.growth/
+- 060.builder/
+- 060.integration/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.snapshot/
+- 100.package/
+- 100.security/
+- 110.distribution/
+- 120.external_reflection/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 130.builder/
+- 140.business_worker_link/
+- 140.consultation_common/
+- 140.integration/
+- 140.visual/
+- 150.secretary_interaction_common/
+- 150.security/
+- 160.governance/
+- 160.notification_common/
+- 170.background_common/
+- 170.operations-support/
+- 170.operations_support/
+- 210.persona_core/
+- 220.rights_external/
+- 230.external_sync/
+- 240.expression_composition/
+- 250.cross_cutting_completion/

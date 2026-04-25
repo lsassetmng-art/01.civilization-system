@@ -766,3 +766,34 @@ intervention-capable
 
 No facility UI may be designed
 as a disconnected exception.
+
+## Exact Facility Shell Rule
+## Exact Facility Shell Rule
+
+Every facility UI must inherit:
+
+- common shell
+- common tabs where applicable
+- extension slot declaration
+- source-of-truth binding declaration
+
+## Exact Facility Family Extension Rule
+
+Facility-family-specific UI may add:
+
+- family panel
+- family dashboard detail
+- family operation shortcut
+
+Facility-family-specific UI may not replace:
+
+- common shell truth
+- common route truth
+- common audit/history access posture
+
+## Exact Builder And Operation Split
+
+Facility builder UI and facility operation UI must remain separate.
+
+- builder UI targets staged configuration
+- operation UI targets active runtime-owned facility state

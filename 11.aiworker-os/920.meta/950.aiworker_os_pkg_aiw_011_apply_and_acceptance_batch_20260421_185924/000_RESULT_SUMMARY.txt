@@ -1,0 +1,8 @@
+AIWORKER OS PKG-AIW-011 APPLY AND ACCEPTANCE BATCH RESULT
+STAMP=20260421_185924
+ROOT=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+PKG11=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-011
+RUN_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924
+LOG_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs
+MAIN_LOG=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/950.aiworker_os_pkg_aiw_011_apply_and_acceptance_batch_20260421_185924/logs/000_main.log
+STATUS=SUCCESS

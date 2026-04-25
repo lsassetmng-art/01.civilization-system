@@ -154,3 +154,41 @@ Physical-goods fulfillment implementation must remain:
 - state-explicit
 - event-compatible
 - shared across Marketplace contexts
+
+## Exact Fulfillment Core Rule
+## Exact Fulfillment Core Rule
+
+Fulfillment truth must explicitly define:
+
+- fulfillment job
+- shipment posture
+- pickup posture
+- receipt handoff linkage
+- failure state
+- return posture
+
+Payment posture must not substitute for fulfillment truth.
+
+## Exact Listing Order Fulfillment Split
+
+The following must remain separate:
+
+- listing publication truth
+- order truth
+- payment truth
+- fulfillment truth
+- receipt posture
+
+A published listing does not automatically imply orderable state,
+and payment confirmation does not imply shipment or delivery.
+
+## Exact Inventory Lock Rule
+
+Inventory allocation must define:
+
+- lock point
+- allocation state
+- oversell prevention result
+- release path
+
+Shipment, receipt, and settlement flows must not silently mutate stock truth.

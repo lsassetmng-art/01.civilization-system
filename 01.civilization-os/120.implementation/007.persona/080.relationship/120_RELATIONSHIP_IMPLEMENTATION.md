@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona relationships.
+Defines the implementation design for Civilization-side persona relationships.
 
 # 2. IMPLEMENTATION TARGETS
 

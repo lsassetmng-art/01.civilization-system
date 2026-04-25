@@ -1,0 +1,4 @@
+01|edge_apply|first_wave|start_now|owner=pending|evidence_status=pending
+02|state_apply|first_wave|after_edge_apply_contract_check|owner=pending|evidence_status=pending
+03|builder_api|first_wave|after_state_apply_contract_check|owner=pending|evidence_status=pending
+04|builder_storage|first_wave|after_builder_api_alignment_check|owner=pending|evidence_status=pending

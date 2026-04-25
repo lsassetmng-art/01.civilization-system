@@ -1,3 +1,1204 @@
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/000_TALENT_GROWTH_DESIGN_INDEX.md -->
+# TALENT GROWTH DESIGN INDEX
+
+status: refreshed-master-index
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+formal_name_en: Talent Growth Support & Evaluation System
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本 index は、
+TalentGrowth の設計束全体を
+root 起点で辿れるようにするための正式入口である。
+
+# 1. root files
+- 000_TALENT_GROWTH_DESIGN_INDEX.md
+- 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+- 003_TALENT_GROWTH_ADDITIONAL_DESIGN_SET_INDEX.md
+- 004_TALENT_GROWTH_MASTER_REBUILD_INDEX.md
+- 005_TALENT_GROWTH_MASTER_REBUILD_OVERVIEW_REFRESH.md
+- 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+- 00_TALENT_GROWTH_INTEGRATED.md
+- 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+
+# 2. common policy
+- multilingual support
+- multi-currency support
+- iPhone support
+- Android support
+- PC support
+- tablet support
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+- AI is assist only
+- approval / calibration / audit required
+- common components are not designed in this chat
+
+# 3. design folders
+
+## 00.application-common-components
+note:
+- 本チャットでは正式設計対象外
+- 別チャット切り出し前提
+
+## 10.spec/00.foundation
+- 0001_TALENT_GROWTH_FOUNDATION.md
+- 0002_TALENT_GROWTH_SCOPE.md
+
+## 10.spec/01.product-definition
+- 0101_TALENT_GROWTH_PRODUCT_DEFINITION.md
+- 0102_TALENT_GROWTH_PERSONAS_AND_USERS.md
+- 0103_TALENT_GROWTH_RIVAL_COMPARISON.md
+- 0104_TALENT_GROWTH_FULL_SCOPE_FEATURE_ADDITION.md
+
+## 10.spec/02.business-rules
+- 0201_TALENT_GROWTH_BUSINESS_RULES.md
+
+## 10.spec/03.domain-model
+- 0301_TALENT_GROWTH_DOMAIN_MODEL.md
+
+## 10.spec/04.scoring-ranking
+- 0401_TALENT_GROWTH_SCORING_MODEL.md
+- 0402_TALENT_GROWTH_RANKING_MODEL.md
+- 0403_TALENT_GROWTH_SCORING_FORMULA_EXACT_FIXED.md
+
+## 10.spec/05.growth-support
+- 0501_TALENT_GROWTH_GAP_ANALYSIS.md
+- 0502_TALENT_GROWTH_GROWTH_PLAN.md
+
+## 10.spec/06.roles-permissions
+- 0601_TALENT_GROWTH_ROLE_PERMISSION_MODEL.md
+
+## 10.spec/07.ui-ux
+- 0701_TALENT_GROWTH_SCREEN_STRUCTURE.md
+- 0702_TALENT_GROWTH_SCREEN_DETAIL.md
+- 0703_TALENT_GROWTH_SCREEN_FLOW_AND_NAVIGATION.md
+- 0704_TALENT_GROWTH_SCREEN_PRIORITY_AND_DEVICE_ASSIGNMENT.md
+- 0705_TALENT_GROWTH_SCREEN_BY_SCREEN_API_MAPPING_FIXED.md
+- 0706_TALENT_GROWTH_SCREEN_LOADING_REFRESH_SYNC_RULE_FIXED.md
+- 0707_TALENT_GROWTH_SCREEN_BY_SCREEN_FIELD_DEFINITION_FIXED.md
+- 0708_TALENT_GROWTH_EXACT_SCREEN_WIREFRAME_BLOCK_FIXED.md
+- 0709_TALENT_GROWTH_LAYOUT_VARIANT_BY_DEVICE_FIXED.md
+
+## 10.spec/08.integration
+- 0801_TALENT_GROWTH_INTEGRATION_ARCHITECTURE.md
+- 0802_TALENT_GROWTH_API_REQUEST_RESPONSE_EXACT_PAYLOAD.md
+- 0803_TALENT_GROWTH_APPROVAL_AND_REVIEW_STATE_MACHINE.md
+- 0804_TALENT_GROWTH_SEARCH_FILTER_PARAMETER_EXACT_POLICY.md
+- 0805_TALENT_GROWTH_FULL_API_ENDPOINT_INVENTORY_FIXED.md
+- 0806_TALENT_GROWTH_VALIDATION_AND_ERROR_CODE_POLICY_FIXED.md
+- 0807_TALENT_GROWTH_DB_TABLE_TO_ENDPOINT_MAPPING_FIXED.md
+- 0808_TALENT_GROWTH_BUSINESS_EVENT_OUTBOX_NOTIFICATION_FIXED.md
+- 0809_TALENT_GROWTH_EXACT_VALIDATION_MATRIX_PER_ENDPOINT_FIXED.md
+- 0810_TALENT_GROWTH_REQUEST_RESPONSE_EXAMPLE_SET_EXPANDED.md
+
+## 10.spec/09.data-model
+- 0901_TALENT_GROWTH_DATA_MODEL.md
+- 0902_TALENT_GROWTH_MASTER_DATA_MODEL.md
+- 0903_TALENT_GROWTH_API_ENTITY_ID_AND_KEY_POLICY.md
+- 0904_TALENT_GROWTH_EXACT_TABLE_COLUMN_FIXED.md
+- 0905_TALENT_GROWTH_DDL_SKELETON_FIXED.md
+
+## 10.spec/10.analytics-reporting
+- 1001_TALENT_GROWTH_ANALYTICS_AND_REPORTING.md
+- 1002_TALENT_GROWTH_REPORTING_AND_EXPORT_FORMAT_FIXED.md
+- 1003_TALENT_GROWTH_KPI_AND_ANALYTICS_FORMULA_FIXED.md
+
+## 10.spec/11.localization-currency-device
+- 1101_TALENT_GROWTH_LOCALIZATION_CURRENCY_DEVICE.md
+
+## 10.spec/12.security-audit-compliance
+- 1201_TALENT_GROWTH_SECURITY_AUDIT_COMPLIANCE.md
+- 1202_TALENT_GROWTH_RLS_ACCESS_POLICY_FIXED.md
+- 1203_TALENT_GROWTH_BREAK_GLASS_AND_SENSITIVE_ACCESS_POLICY.md
+
+## 10.spec/13.operations
+- 1301_TALENT_GROWTH_OPERATION_MODEL.md
+- 1302_TALENT_GROWTH_BATCH_CRON_SNAPSHOT_JOB_DESIGN_FIXED.md
+- 1303_TALENT_GROWTH_NOTIFICATION_DELIVERY_AND_RETRY_POLICY_FIXED.md
+- 1304_TALENT_GROWTH_CLIENT_SYNC_CONFLICT_AND_RECOVERY_POLICY_FIXED.md
+- 1305_TALENT_GROWTH_NOTIFICATION_MESSAGE_TEMPLATE_FIXED.md
+
+# 4. implementation / development
+## 120.implementation
+- 1200003_TALENT_GROWTH_IMPLEMENTATION_PHASE_PACKAGE_SPLIT_FIXED.md
+- 1200004_TALENT_GROWTH_FRONTEND_STATE_CACHE_OFFLINE_POLICY_FIXED.md
+- 1200005_TALENT_GROWTH_IMPLEMENTATION_TASK_BREAKDOWN_FIXED.md
+
+## 130.development
+- 1303_TALENT_GROWTH_TEST_CASE_MATRIX_FIXED.md
+- 1304_TALENT_GROWTH_RELEASE_CHECKLIST_FIXED.md
+
+# 5. meta
+90.meta 配下は
+decision note,
+change log,
+open issues,
+handoff note を保持する。
+
+# 6. recommended reading order
+1. 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+2. 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+3. 0702 / 0703 / 0707 / 0708
+4. 0802 / 0803 / 0805 / 0809
+5. 0904 / 0905 / 1202
+6. 1200005 / 1303 / 1304
+
+# 7. conclusion
+TalentGrowth の root entry は、
+この index を最上位入口とし、
+詳細は integrated rebuilt と各 spec 群へ辿る構成で固定する。
+
+- 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+
+- 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+
+- 0907_TALENT_GROWTH_PHASE_A_CONCRETE_SQL_EXECUTION_BLOCK_FIXED.md
+
+- 0813_TALENT_GROWTH_PHASE_A_API_ROUTE_FILE_SKELETON_FIXED.md
+
+- 1200008_TALENT_GROWTH_PHASE_A_ACTUAL_EXECUTION_ONE_BLOCK_FIXED.md
+
+- 1200009_TALENT_GROWTH_PHASE_A_SCREEN_IMPLEMENTATION_ORDER_FIXED.md
+
+- 1200010_TALENT_GROWTH_PHASE_A_ACTUAL_ROUTE_FILE_ONE_BLOCK_FIXED.md
+
+- 1200011_TALENT_GROWTH_PHASE_A_SEED_INSERT_ONE_BLOCK_FIXED.md
+
+- 1200012_TALENT_GROWTH_PHASE_A_SMOKE_TEST_COMMAND_BLOCK_FIXED.md
+
+- 0814_TALENT_GROWTH_PHASE_A_WRITE_ROUTE_SKELETON_FIXED.md
+
+- 1200013_TALENT_GROWTH_PHASE_A_SERVICE_LAYER_SKELETON_FIXED.md
+
+- 1200014_TALENT_GROWTH_PHASE_A_REPOSITORY_QUERY_SKELETON_FIXED.md
+
+- 1200015_TALENT_GROWTH_PHASE_A_VALIDATION_FUNCTION_SKELETON_FIXED.md
+
+- 1306_TALENT_GROWTH_PHASE_A_OUTBOX_PUBLISHER_JOB_SKELETON_FIXED.md
+
+- 1200016_TALENT_GROWTH_PHASE_A_NOTIFICATION_READ_WRITE_IMPLEMENTATION_BLOCK_FIXED.md
+
+- 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+
+- 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+
+- 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+
+- 009_TALENT_GROWTH_OFFICIAL_ENTRYPOINTS_FIXED.md
+
+- 1200017_TALENT_GROWTH_PHASE_A_ROUTE_SERVICE_REPOSITORY_ONE_BLOCK_KICKOFF_FIXED.md
+
+- 1200018_TALENT_GROWTH_PHASE_A_FOLDER_AND_FILE_BOOTSTRAP_ONE_BLOCK_FIXED.md
+
+- 1200019_TALENT_GROWTH_PHASE_A_AUTH_CONTEXT_HELPER_SKELETON_FIXED.md
+
+- 1200020_TALENT_GROWTH_PHASE_A_RESPONSE_ERROR_HELPER_ACTUAL_BLOCK_FIXED.md
+
+- 1200021_TALENT_GROWTH_PHASE_A_ROUTE_ACTUAL_FILE_ONE_BLOCK_KICKOFF_FIXED.md
+
+- 1200022_TALENT_GROWTH_PHASE_A_WRITE_ROUTE_ACTUAL_FILE_ONE_BLOCK_FIXED.md
+
+- 1307_TALENT_GROWTH_PHASE_A_AUDIT_OUTBOX_TRANSACTION_WRAPPER_FIXED.md
+
+- 1204_TALENT_GROWTH_PHASE_A_RLS_HELPER_FUNCTION_SKELETON_FIXED.md
+
+- 1200023_TALENT_GROWTH_PHASE_A_SERVICE_ACTUAL_FILE_ONE_BLOCK_FIXED.md
+
+- 1200024_TALENT_GROWTH_PHASE_A_REPOSITORY_ACTUAL_FILE_ONE_BLOCK_FIXED.md
+
+- 1200025_TALENT_GROWTH_PHASE_A_VALIDATION_ACTUAL_FILE_ONE_BLOCK_FIXED.md
+
+- 1200026_TALENT_GROWTH_PHASE_A_DB_CLIENT_HELPER_BLOCK_FIXED.md
+
+- 1200027_TALENT_GROWTH_PHASE_A_TRANSACTION_AWARE_REPOSITORY_ACTUAL_BLOCK_FIXED.md
+
+- 1200028_TALENT_GROWTH_PHASE_A_COMPILE_RUN_SMOKE_COMMAND_BLOCK_FIXED.md
+
+- 1200029_TALENT_GROWTH_PHASE_A_END_TO_END_KICKOFF_ONE_BLOCK_FIXED.md
+
+- 0815_TALENT_GROWTH_PHASE_A_REQUEST_FIXTURE_AND_CURL_BLOCK_FIXED.md
+
+- 1205_TALENT_GROWTH_PHASE_A_SQL_RLS_SEED_VERIFY_ALL_IN_ONE_BLOCK_FIXED.md
+
+- 1200030_TALENT_GROWTH_PHASE_A_COMPILE_RUN_SMOKE_AND_TRIAGE_FIXED.md
+
+- 1200031_TALENT_GROWTH_IMPLEMENTATION_READINESS_CHECKLIST_AND_DECLARATION_FIXED.md
+
+- 1200029_TALENT_GROWTH_PHASE_A_END_TO_END_KICKOFF_ONE_BLOCK_FIXED.md
+
+- 0815_TALENT_GROWTH_PHASE_A_REQUEST_FIXTURE_AND_CURL_BLOCK_FIXED.md
+
+- 1205_TALENT_GROWTH_PHASE_A_SQL_RLS_SEED_VERIFY_ALL_IN_ONE_BLOCK_FIXED.md
+
+- 1200030_TALENT_GROWTH_PHASE_A_COMPILE_RUN_SMOKE_AND_TRIAGE_FIXED.md
+
+- 1200031_TALENT_GROWTH_IMPLEMENTATION_READINESS_CHECKLIST_AND_DECLARATION_FIXED.md
+
+- 010.constitution/011110_TALENTGROWTH_COMPETITIVE_POSITIONING_NOTE.md
+
+- 020.architecture/021120_TALENTGROWTH_GROWTH_SIGNAL_AGGREGATION_ARCHITECTURE.md
+
+- 020.architecture/021130_TALENTGROWTH_READINESS_EXCEPTION_REVIEW_ARCHITECTURE.md
+
+- 030.model/030510_TALENTGROWTH_GROWTH_CONTROL_TIMELINE_MODEL.md
+
+- 060.integration/060290_TALENTGROWTH_GROWTH_COCKPIT_PAYLOAD.md
+
+- 060.integration/060300_TALENTGROWTH_GROWTH_EXCEPTION_REVIEW_PAYLOAD.md
+
+- 090.interface/090330_TALENTGROWTH_GROWTH_COCKPIT_INTERFACE.md
+
+- 120.implementation/120300_TALENTGROWTH_GROWTH_CONTROL_IMPLEMENTATION_GUIDE.md
+
+- 900.meta/900410_TALENTGROWTH_20260416_DIFF_AUDIT_NOTE.md
+
+- 020.architecture/021140_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+- 060.integration/060320_TALENTGROWTH_PHASE_A_API_STARTER.md
+
+- 060.integration/060330_TALENTGROWTH_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+- 120.implementation/120310_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 120.implementation/120320_TALENTGROWTH_PHASE_A_STUB_FILE_PLAN.md
+
+- 120.implementation/120330_TALENTGROWTH_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120.implementation/120340_TALENTGROWTH_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120.implementation/120350_TALENTGROWTH_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120.implementation/120360_TALENTGROWTH_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120.implementation/120370_TALENTGROWTH_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120.implementation/120380_TALENTGROWTH_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+- 900.meta/900420_TALENTGROWTH_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 900.meta/900430_TALENTGROWTH_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 900.meta/900440_TALENTGROWTH_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900.meta/900450_TALENTGROWTH_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900.meta/900460_TALENTGROWTH_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900.meta/900470_TALENTGROWTH_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/000_TALENT_GROWTH_DESIGN_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/001_TALENT_GROWTH_DESIGN_OVERVIEW.md -->
+# TALENT GROWTH DESIGN OVERVIEW
+
+status: refreshed-master-overview
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+formal_name_en: Talent Growth Support & Evaluation System
+owner: Boss
+prepared_by: Zero
+
+# 0. system intent
+TalentGrowth は、
+人材の学歴、資格、スキル、経験年数、実績、行動、成長推移を
+証拠付きで可視化し、
+成長支援と会社評価につなげるシステムである。
+
+# 1. fixed first principles
+- multilingual support
+- multi-currency support
+- iPhone support
+- Android support
+- PC support
+- tablet support
+
+# 2. core stance
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+- AI is assist only
+- human approval required
+- calibration required where configured
+- auditability mandatory
+
+# 3. business value
+- 本人が現在地と次行動を理解できる
+- 上長が育成判断できる
+- 人事が評価運用と校正を回せる
+- 経営が後継者と投資対効果を把握できる
+- 多言語 / 多通貨 / 多端末で運用できる
+
+# 4. user layers
+- employee
+- manager
+- HR
+- executive
+- admin
+
+# 5. major capability areas
+- employee profile / academics / certifications / skills / career / achievements
+- role requirements and templates
+- scoring / ranking / role-fit
+- self review / manager review / HR review / calibration / approval
+- growth plan / recommendation / MBO linkage
+- successor / role-fit / promotion support
+- analytics / KPI / export
+- event / notification / batch / snapshot
+- security / RLS / break-glass / audit
+- frontend state / sync / conflict recovery
+
+# 6. architecture summary
+TalentGrowth は、
+screen,
+API,
+validation,
+data model,
+DDL,
+RLS,
+outbox,
+notification,
+batch job,
+frontend state
+までを一貫設計で固定する。
+
+# 7. implementation shape
+phase A:
+- core evaluation foundation
+
+phase B:
+- profile evidence and analytics basic
+
+phase C:
+- talent strategy and investment
+
+phase D:
+- AI assist and advanced governance
+
+# 8. governance summary
+- publish without approval is prohibited
+- invalid state transition is prohibited
+- raw evaluation visibility is role-restricted
+- admin is technical admin, not default full raw evaluator
+- break-glass requires reason, time limit, audit
+
+# 9. current design status
+現時点で、
+TalentGrowth は以下まで設計固定済みである。
+
+- screen map
+- API inventory
+- exact payload
+- exact validation matrix
+- exact columns
+- DDL skeleton
+- RLS / sensitive access
+- KPI / analytics formula
+- scoring formula
+- notification templates
+- implementation tasks
+- test matrix
+- release checklist
+
+# 10. conclusion
+TalentGrowth は、
+単なる人事評価画面群ではなく、
+評価、育成、候補抽出、監査、運用までを
+一体で成立させる設計として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/001_TALENT_GROWTH_DESIGN_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/003_TALENT_GROWTH_ADDITIONAL_DESIGN_SET_INDEX.md -->
+# TALENT GROWTH ADDITIONAL DESIGN SET INDEX
+
+status: draft-additive-index
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+## purpose
+本追加束は、
+ライバル比較、フル機能追加、画面一覧詳細、
+および本チャットにおける共通部品境界の決定を
+TalentGrowth 設計に追加反映するための設計束である。
+
+## files
+- 003_TALENT_GROWTH_ADDITIONAL_DESIGN_SET_INDEX.md
+- 10.spec/01.product-definition/0103_TALENT_GROWTH_RIVAL_COMPARISON.md
+- 10.spec/01.product-definition/0104_TALENT_GROWTH_FULL_SCOPE_FEATURE_ADDITION.md
+- 10.spec/07.ui-ux/0702_TALENT_GROWTH_SCREEN_DETAIL.md
+- 90.meta/9003_TALENT_GROWTH_DESIGN_DECISION_NOTE_NO_COMMON_COMPONENTS_IN_THIS_CHAT.md
+
+## note
+- 本追加束では共通部品を設計しない
+- 共通部品は別チャットで扱う
+- TalentGrowth 本体責務に集中する
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/003_TALENT_GROWTH_ADDITIONAL_DESIGN_SET_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/004_TALENT_GROWTH_MASTER_REBUILD_INDEX.md -->
+# TALENT GROWTH MASTER REBUILD INDEX
+
+status: master-rebuild-index
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+今回積み上げた設計束を
+master rebuild 観点で整理した補助 index である。
+
+# 1. rebuild target files
+- 000_TALENT_GROWTH_DESIGN_INDEX.md
+- 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+- 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+- 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+
+# 2. rebuild coverage
+- product definition rebuild
+- UI / screen rebuild
+- API / validation rebuild
+- data / DDL / RLS rebuild
+- event / batch / notification rebuild
+- frontend state rebuild
+- formula / template rebuild
+- implementation / test / release rebuild
+
+# 3. use
+- root 入口確認
+- 別チャット引き継ぎ
+- 実装開始前の再確認
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/004_TALENT_GROWTH_MASTER_REBUILD_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/005_TALENT_GROWTH_MASTER_REBUILD_OVERVIEW_REFRESH.md -->
+# TALENT GROWTH MASTER REBUILD OVERVIEW REFRESH
+
+status: master-rebuild-overview-refresh
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. rebuild summary
+TalentGrowth は、
+初期のアプリ構想から始まり、
+機能拡張、画面、API、データ、権限、イベント、同期、数式、
+実装、テスト、release gate まで
+一貫設計として再構成された。
+
+# 1. what is now fixed
+- system scope
+- rival response scope
+- full feature scope
+- screen hierarchy
+- screen flow
+- screen field definition
+- wireframe block
+- API payload
+- endpoint inventory
+- validation matrix
+- exact columns
+- DDL skeleton
+- RLS and sensitive access
+- outbox / notification / batch
+- frontend state and sync
+- KPI and scoring formulas
+- notification templates
+- implementation tasks
+- test matrix
+- release checklist
+
+# 2. what is intentionally separated
+- common component formal design
+- external shared component ledger
+- non-TalentGrowth shared UI ownership
+
+# 3. practical reading route
+- overview
+- integrated rebuilt
+- implementation handoff
+- phase A tasks
+- release checklist
+
+# 4. conclusion
+この refresh により、
+TalentGrowth は
+別チャットでも再開しやすい master-design 状態になった。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/005_TALENT_GROWTH_MASTER_REBUILD_OVERVIEW_REFRESH.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md -->
+# TALENT GROWTH IMPLEMENTATION HANDOFF FIXED
+
+status: implementation-handoff-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth 実装着手時の handoff 用に、
+開始順、最重要非機能、止めてはいけないガードを
+固定するための資料である。
+
+# 1. first start package
+最初に着手する正式束:
+- phase A core evaluation foundation
+
+# 2. first start order
+1. session / home / role context
+2. employee dashboard
+3. certification management
+4. skill inventory
+5. self review draft / submit
+6. manager review queue / input
+7. role requirement management
+8. growth plan
+9. approval / calibration baseline
+10. audit search
+11. outbox / notification baseline
+12. RLS baseline
+
+# 3. non-negotiables
+- no publish without approval
+- no raw full-evaluation access by default admin
+- no offline final submit
+- no missing audit on score-changing action
+- no hidden invalid transition
+- no duplicate finalization on repeated submit
+- no notification direct send bypassing outbox
+- no silent cache-based overwrite of latest review state
+
+# 4. minimal phase A done definition
+phase A 完了条件:
+- employee が自己評価を保存 / 提出できる
+- manager がレビュー保存 / 提出 / 差戻しできる
+- HR が要件管理、校正保存、承認できる
+- employee に結果と成長計画が見える
+- 主要変更の audit が検索できる
+- review / send back / result ready / cert expiry の通知が出る
+- RLS で self / manager / HR の境界が守られる
+
+# 5. immediate implementation risks
+- evaluation state machine の抜け
+- lock_version conflict 未実装
+- audit_trace_id の欠落
+- score formula と UI 表示の不一致
+- analytics generated_at 未表示
+- role scope 漏れ
+- export 権限過大
+- mobile draft 消失
+
+# 6. required review lenses
+- UI / UX review
+- API contract review
+- DB / DDL review
+- RLS review
+- event / job review
+- release blocker review
+
+# 7. next execution candidates after phase A
+- phase B profile / evidence / analytics basic
+- phase C talent strategy and investment
+- phase D AI assist and advanced governance
+
+# 8. conclusion
+TalentGrowth の実装開始は、
+phase A を end-to-end で成立させることを第一目的とし、
+governance と audit を後回しにしない。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md -->
+# TALENT GROWTH CANONICAL HANDOFF REFRESH
+
+status: canonical-handoff-refresh
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+formal_name_en: Talent Growth Support & Evaluation System
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth の現時点正式設計を、
+別チャットや次工程へ引き継ぐための
+最新 handoff 正本である。
+
+# 1. identity
+TalentGrowth は、
+人材の学歴、資格、スキル、経験、実績、評価推移を
+証拠付きで可視化し、
+成長支援、役割適合、会社評価、候補抽出へ接続するシステムである。
+
+# 2. fixed global requirements
+- 多言語対応
+- 多通貨対応
+- iPhone 対応
+- Android 対応
+- PC 対応
+- タブレット対応
+
+# 3. current official stance
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+- AI is assist only
+- approval / calibration / audit required
+- common components are not formally designed in this chat
+
+# 4. current official design coverage
+以下はすでに設計固定済みである。
+
+- product / scope / rival comparison
+- screen structure / screen detail / screen flow
+- screen field exact definition
+- wireframe block / device layout variant
+- API exact payload
+- approval state machine
+- endpoint inventory
+- validation / error code policy
+- validation matrix per endpoint
+- search / filter exact policy
+- exact table columns
+- DDL skeleton
+- concrete phase A SQL execution block
+- RLS / sensitive access / break-glass
+- business event / outbox / notification
+- batch / cron / snapshot jobs
+- frontend state / cache / offline / sync
+- KPI / analytics formula
+- scoring formula / rank / gate
+- notification template
+- implementation task breakdown
+- test case matrix
+- release checklist
+- integrated master rebuild
+- implementation kickoff handoff
+
+# 5. current official root entry
+正式入口は以下とする。
+
+- 000_TALENT_GROWTH_DESIGN_INDEX.md
+- 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+- 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+- 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+- 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+
+# 6. current official data stance
+正式テーブル系は tg_* を正とする。
+
+代表:
+- tg_employee_profile
+- tg_employee_certification
+- tg_employee_skill
+- tg_role_requirement
+- tg_evaluation_cycle
+- tg_evaluation_sheet
+- tg_evaluation_score_detail
+- tg_evaluation_comment
+- tg_evaluation_evidence
+- tg_evaluation_change_audit
+- tg_evaluation_approval
+- tg_calibration_session
+- tg_calibration_log
+- tg_growth_plan
+- tg_growth_action
+- tg_growth_recommendation
+- tg_role_fit_snapshot
+- tg_successor_candidate
+- tg_training_roi_snapshot
+- tg_outbox_event
+- tg_notification
+- tg_notification_delivery
+- tg_ai_assist_reference_log
+- tg_audit_export_log
+
+# 7. current official workflow stance
+旧状態名ではなく、以下を正式状態系とする。
+
+evaluation statuses:
+- SELF_REVIEW_DRAFT
+- SELF_REVIEW_SUBMITTED
+- MANAGER_REVIEW_DRAFT
+- MANAGER_REVIEW_SUBMITTED
+- HR_REVIEW_IN_PROGRESS
+- CALIBRATION_IN_PROGRESS
+- APPROVED
+- PUBLISHED
+- SENT_BACK
+- REOPENED
+- ARCHIVED
+
+growth plan statuses:
+- DRAFT
+- ACTIVE
+- IN_PROGRESS
+- COMPLETED
+- CLOSED
+- CANCELLED
+
+# 8. current official notification boundary
+通知基盤の共通連携可能性は維持するが、
+TalentGrowth 側では以下を正式に持つ。
+
+- business event definition
+- outbox append responsibility
+- notification type definition
+- deep link definition
+- delivery / retry / dead letter policy
+
+つまり、
+「通知インフラ完全共通」ではなく、
+「通知意味設計は TalentGrowth 側で持つ」が正式である。
+
+# 9. current implementation start point
+実装開始点は phase A core evaluation foundation とする。
+
+phase A 主要対象:
+- DDL baseline
+- seed / mock
+- employee dashboard
+- certification
+- skill
+- self review
+- manager review
+- role requirement
+- growth plan
+- audit
+- outbox / notification
+- RLS
+
+# 10. non-negotiables
+- no publish without approval
+- no offline final submit
+- no direct notification send bypassing outbox
+- no score-changing write without audit
+- no admin blanket raw evaluation access
+- no hidden invalid transition
+- no duplicate finalization
+- no common component formalization in this app chat
+
+# 11. recommended next use
+別チャット再開時は以下順で読む。
+1. 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+2. 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+3. 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+4. 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+
+# 12. conclusion
+旧 handoff の「次はテーブル台帳から」は古い。
+現時点の TalentGrowth は master rebuild 済みであり、
+再開時の正式入口は root index / overview / integrated rebuilt / kickoff handoff である。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md -->
+# TALENT GROWTH SINGLE FILE CANONICAL HANDOFF
+
+status: single-file-canonical-handoff
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+formal_name_en: Talent Growth Support & Evaluation System
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth の現時点正式設計を、
+1ファイルだけ読めば再開できるように圧縮した
+single-file handoff 正本である。
+
+# 1. system identity
+TalentGrowth は、
+人材の学歴、資格、スキル、経験、実績、評価推移を
+証拠付きで可視化し、
+成長支援、役割適合、会社評価、候補抽出へ接続するシステムである。
+
+# 2. fixed global requirements
+- 多言語対応
+- 多通貨対応
+- iPhone 対応
+- Android 対応
+- PC 対応
+- タブレット対応
+
+# 3. fixed core stance
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+- AI is assist only
+- approval / calibration / audit required
+- common components are not formally designed in this chat
+
+# 4. current official scope
+TalentGrowth で正式固定済みの範囲は以下である。
+
+- product / scope / rival comparison
+- screen structure / screen detail / screen flow
+- screen field exact definition
+- wireframe block / device layout variant
+- API exact payload
+- approval state machine
+- endpoint inventory
+- validation / error code policy
+- validation matrix per endpoint
+- search / filter exact policy
+- exact table columns
+- DDL skeleton
+- concrete phase A SQL execution block
+- RLS / sensitive access / break-glass
+- business event / outbox / notification
+- batch / cron / snapshot jobs
+- frontend state / cache / offline / sync
+- KPI / analytics formula
+- scoring formula / rank / gate
+- notification template
+- implementation task breakdown
+- test case matrix
+- release checklist
+- integrated master rebuild
+- implementation kickoff handoff
+
+# 5. official root entry
+正式入口は以下とする。
+
+- 000_TALENT_GROWTH_DESIGN_INDEX.md
+- 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+- 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+- 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+- 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+- 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+
+# 6. official workflow stance
+旧状態名ではなく、以下を正式状態系とする。
+
+evaluation statuses:
+- SELF_REVIEW_DRAFT
+- SELF_REVIEW_SUBMITTED
+- MANAGER_REVIEW_DRAFT
+- MANAGER_REVIEW_SUBMITTED
+- HR_REVIEW_IN_PROGRESS
+- CALIBRATION_IN_PROGRESS
+- APPROVED
+- PUBLISHED
+- SENT_BACK
+- REOPENED
+- ARCHIVED
+
+growth plan statuses:
+- DRAFT
+- ACTIVE
+- IN_PROGRESS
+- COMPLETED
+- CLOSED
+- CANCELLED
+
+# 7. official data stance
+正式テーブル系は tg_* を正とする。
+
+main tables:
+- tg_employee_profile
+- tg_employee_certification
+- tg_employee_certification_renewal
+- tg_employee_skill
+- tg_employee_skill_evidence
+- tg_role_requirement
+- tg_role_requirement_skill
+- tg_role_requirement_certification
+- tg_evaluation_cycle
+- tg_evaluation_sheet
+- tg_evaluation_score_detail
+- tg_evaluation_comment
+- tg_evaluation_evidence
+- tg_evaluation_change_audit
+- tg_evaluation_approval
+- tg_calibration_session
+- tg_calibration_log
+- tg_growth_plan
+- tg_growth_action
+- tg_growth_recommendation
+- tg_role_fit_snapshot
+- tg_successor_candidate
+- tg_training_roi_snapshot
+- tg_outbox_event
+- tg_notification
+- tg_notification_delivery
+- tg_ai_assist_reference_log
+- tg_audit_export_log
+
+# 8. official screen stance
+主要画面群:
+- employee dashboard
+- self review
+- my evaluation result
+- growth plan
+- manager review input
+- HR dashboard
+- calibration board
+- executive dashboard
+- audit log viewer
+- admin role management
+
+device stance:
+- employee mobile-first
+- manager tablet-strong
+- HR / executive / admin PC-primary
+
+# 9. official API stance
+主要API群:
+- dashboard APIs
+- profile / academics / certifications / skills APIs
+- evaluation cycle / evaluation sheet APIs
+- self review / manager review / HR review APIs
+- growth plan / recommendation APIs
+- role-fit / successor / analytics APIs
+- audit / export APIs
+- AI assist APIs
+
+contract stance:
+- exact payload fixed
+- endpoint inventory fixed
+- validation matrix fixed
+- error code policy fixed
+- strict parameter policy fixed
+
+# 10. official governance stance
+- no publish without approval
+- no offline final submit
+- no direct notification send bypassing outbox
+- no score-changing write without audit
+- no admin blanket raw evaluation access
+- no hidden invalid transition
+- no duplicate finalization
+- break-glass requires reason + time bound + audit
+
+# 11. official notification / operation stance
+TalentGrowth 側では以下を正式に持つ。
+
+- business event definition
+- outbox append responsibility
+- notification type definition
+- deep link definition
+- delivery / retry / dead letter policy
+- batch / cron / snapshot / consistency jobs
+
+つまり、
+通知や非同期処理は
+「基盤完全丸投げ」ではなく、
+TalentGrowth 側の意味設計を持ったうえで扱う。
+
+# 12. official formula stance
+主要 score:
+- total_evaluation_score
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- promotion_readiness_score
+- successor_readiness_score
+
+rank:
+- S
+- A
+- B
+- C
+- D
+
+rules:
+- formula before calibration
+- gate before rank
+- mandatory missing items can cap score/rank
+- current fit and future fit are different scores
+- KPI / analytics formula fixed
+
+# 13. official frontend stance
+- server truth first
+- selective offline
+- no offline finalization
+- visible sync status
+- explicit conflict handling
+- draft rescue for safe edit flows
+
+# 14. implementation stance
+implementation phases:
+- phase A: core evaluation foundation
+- phase B: profile and analytics basic
+- phase C: talent strategy and investment
+- phase D: AI assist and advanced governance
+
+phase A start targets:
+- DDL baseline
+- seed / mock
+- employee dashboard
+- certification
+- skill
+- self review
+- manager review
+- role requirement
+- growth plan
+- audit
+- outbox / notification
+- RLS
+
+# 15. phase A must-pass
+- self review save / submit works
+- manager review save / submit works
+- send back works
+- role requirement CRUD baseline works
+- growth progress works
+- audit trail searchable
+- in-app notification visible
+- RLS boundary holds
+
+# 16. old design handling
+以下は旧系として扱い、正本から外す。
+
+deprecated:
+- system name: talent-growth-and-evaluation
+- folder root: TalentGrowthEvaluation
+- 020.design/workflow/0201001_TALENT_GROWTH_EVALUATION_WORKFLOW_DESIGN.md
+- 020.design/screen/0201002_TALENT_GROWTH_EVALUATION_SCREEN_LIST_DESIGN.md
+- 020.design/screen/0201003_TALENT_GROWTH_EVALUATION_SCREEN_FIELDS_EXACT.md
+
+reason:
+- current official root is TalentGrowth
+- current design progressed far beyond workflow / screen / fields exact only
+- old progress note is outdated
+
+# 17. restart reading order
+別チャット再開時は以下順で読めばよい。
+
+1. 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+2. 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+3. 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+4. 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+
+# 18. restart prompt
+次チャット冒頭では以下で十分である。
+
+TalentGrowth の続きです。
+正式入口は 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md を正としてください。
+共通部品はこのチャットでは扱いません。
+phase A core evaluation foundation から実装または設計継続を進めてください。
+
+# 19. conclusion
+TalentGrowth の再開正本は、
+この single-file handoff を最短入口とし、
+必要に応じて overview / integrated rebuilt / implementation handoff へ辿る構成で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/009_TALENT_GROWTH_OFFICIAL_ENTRYPOINTS_FIXED.md -->
+# TALENT GROWTH OFFICIAL ENTRYPOINTS FIXED
+
+status: official-entrypoints-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+formal_name_en: Talent Growth Support & Evaluation System
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth の root 直下にある入口群のうち、
+どれを正式入口として扱うかを固定するための資料である。
+
+# 1. official root entrypoints
+正式入口は以下とする。
+
+1. 000_TALENT_GROWTH_DESIGN_INDEX.md
+2. 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+3. 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+4. 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+5. 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+6. 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+7. 009_TALENT_GROWTH_OFFICIAL_ENTRYPOINTS_FIXED.md
+
+# 2. role of each file
+
+## 000_TALENT_GROWTH_DESIGN_INDEX.md
+- 全体索引
+- root から各設計束へ辿るための最上位 index
+
+## 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+- システムの全体像
+- 設計意図、範囲、価値、原則の把握
+
+## 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+- ここまで積み上げた設計の統合版
+- screen / API / data / RLS / ops / formula / implementation を横断把握する入口
+
+## 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+- 実装開始順
+- phase A の着手順
+- non-negotiables
+
+## 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+- 旧 handoff を整理した最新 handoff 正本
+- 旧設計との差分整理
+
+## 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+- 1ファイルだけで再開するための最短入口
+- 別チャット再開時の第一候補
+
+## 009_TALENT_GROWTH_OFFICIAL_ENTRYPOINTS_FIXED.md
+- 正式入口そのものの固定
+- 読む順番と役割の確認
+
+# 3. recommended reading order
+
+## 3-1. shortest restart path
+最短再開順:
+1. 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+2. 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+
+## 3-2. full design understanding path
+全体把握順:
+1. 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+2. 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+3. 000_TALENT_GROWTH_DESIGN_INDEX.md
+
+## 3-3. implementation kickoff path
+実装着手順:
+1. 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+2. 1200008_TALENT_GROWTH_PHASE_A_ACTUAL_EXECUTION_ONE_BLOCK_FIXED.md
+3. 1200007_TALENT_GROWTH_PHASE_A_IMPLEMENTATION_COMMAND_BLOCK_FIXED.md
+4. 1200010_TALENT_GROWTH_PHASE_A_ACTUAL_ROUTE_FILE_ONE_BLOCK_FIXED.md
+5. 1200011_TALENT_GROWTH_PHASE_A_SEED_INSERT_ONE_BLOCK_FIXED.md
+6. 1200012_TALENT_GROWTH_PHASE_A_SMOKE_TEST_COMMAND_BLOCK_FIXED.md
+
+# 4. deprecated handling
+以下は正式入口ではない。
+
+- 旧 TalentGrowthEvaluation 系
+- 旧 handoff の途中段階メモ
+- 90.meta 配下の decision note 単体
+- duplicate-check 作業ファイル単体
+
+これらは補助・履歴・整理用であり、
+restart first read の対象ではない。
+
+# 5. conclusion
+TalentGrowth の root 直下では、
+000 / 001 / 00 / 006 / 007 / 008 / 009 を正式入口群として扱い、
+再開最短入口は 008 とする。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/009_TALENT_GROWTH_OFFICIAL_ENTRYPOINTS_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md -->
 # TALENT GROWTH INTEGRATED MASTER REBUILT
 
 status: regenerated-integrated-master
@@ -25544,3 +26745,26992 @@ snapshot,
 RLS
 を release gate の中核として固定する。
 
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/010.constitution/0100000_TALENT_GROWTH_CONSTITUTION_INDEX.md -->
+# ============================================================
+# TALENT GROWTH CONSTITUTION INDEX
+# ============================================================
+
+files:
+
+- 011110_TALENTGROWTH_COMPETITIVE_POSITIONING_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/010.constitution/0100000_TALENT_GROWTH_CONSTITUTION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/010.constitution/011110_TALENTGROWTH_COMPETITIVE_POSITIONING_NOTE.md -->
+# ============================================================
+# TALENTGROWTH COMPETITIVE POSITIONING NOTE
+# ============================================================
+
+status: canonical
+layer: constitution
+system: applications
+application: TalentGrowth
+directory: 010.constitution
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: competitive-positioning-note
+
+purpose:
+Clarifies the differentiator that should be made explicit in the
+current TalentGrowth design without rewriting its existing core.
+
+positioning_summary:
+- TalentGrowth is not only a training record manager.
+- Its durable value is workforce growth control across capability signals,
+  development path visibility, readiness review, exception handling,
+  and management decision routing.
+- The differentiator is not simple learning history, but growth-level
+  control that keeps readiness and capability risk visible.
+
+preserved_core:
+- talent growth and capability planning identity
+- existing business operation role
+- existing management support direction
+- existing platform direction
+- existing separation of personal detail and management summary
+
+differentiator_to_make_explicit:
+- growth lifecycle control
+- readiness visibility
+- development-path exception handling
+- management review and decision-support surfacing
+
+competitive_contrast:
+- not merely a training list
+- not merely a skills sheet
+- not merely a review tracker
+- positioned as a workforce growth control layer that connects
+  growth signals, readiness review, exception handling,
+  and management attention routing
+
+non_goals_of_this_note:
+- no full constitutional rewrite
+- no implementation start
+- no destructive scope replacement
+- no framework decision
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/010.constitution/011110_TALENTGROWTH_COMPETITIVE_POSITIONING_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/0200000_TALENT_GROWTH_ARCHITECTURE_INDEX.md -->
+# ============================================================
+# TALENT GROWTH ARCHITECTURE INDEX
+# ============================================================
+
+files:
+
+- 021120_TALENTGROWTH_GROWTH_SIGNAL_AGGREGATION_ARCHITECTURE.md
+
+- 021130_TALENTGROWTH_READINESS_EXCEPTION_REVIEW_ARCHITECTURE.md
+
+- 021140_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_DDL_ADDITIVE_PLAN.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/0200000_TALENT_GROWTH_ARCHITECTURE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/021120_TALENTGROWTH_GROWTH_SIGNAL_AGGREGATION_ARCHITECTURE.md -->
+# ============================================================
+# TALENTGROWTH GROWTH SIGNAL AGGREGATION ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: TalentGrowth
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: growth-signal-aggregation-architecture
+
+purpose:
+Makes growth signal aggregation and workforce readiness control explicit in the
+current TalentGrowth architecture.
+
+architecture_intent:
+- growth work must be visible not only as records, but as management movement
+- source signals, readiness shifts, exceptions, and management attention
+  points must remain explicit
+- growth readiness and blocker visibility must be queryable without
+  reconstructing everything from raw talent detail only
+
+flow_layers:
+- signal intake:
+  - capability signal registration
+  - growth freshness evaluation
+  - readiness baseline construction
+  - development path draft creation
+- growth control:
+  - readiness comparison
+  - exception detection
+  - capability threshold evaluation
+  - management attention routing
+- management review:
+  - growth cockpit review
+  - readiness exception visibility
+  - freshness and confidence visibility
+  - decision-support readiness
+- control action:
+  - approve growth path
+  - hold growth path
+  - escalate attention
+  - publish readiness view
+- closure:
+  - active
+  - superseded
+  - archived
+  - replaced_by_new_cycle
+
+key_separations:
+- raw talent detail is not the same as workforce readiness
+- path comparison is not the same as approval history
+- exception review is not the same as screen presentation
+- cockpit review is not the same as deep person editing screen
+
+recommended_runtime_objects:
+- growth_management_signal
+- readiness_exception_review_item
+- decision_support_readiness_item
+- growth_cockpit_summary
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/021120_TALENTGROWTH_GROWTH_SIGNAL_AGGREGATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/021130_TALENTGROWTH_READINESS_EXCEPTION_REVIEW_ARCHITECTURE.md -->
+# ============================================================
+# TALENTGROWTH READINESS EXCEPTION REVIEW ARCHITECTURE
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: TalentGrowth
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: readiness-exception-review-architecture
+
+purpose:
+Defines the relationship between growth-path review, readiness exception
+handling, and management decision-support readiness in TalentGrowth.
+
+core_principle:
+- workforce slippage often appears first through stale signals,
+  readiness divergence, unresolved growth exception, or attention-routing
+  failure before it appears as final operational outcome failure.
+
+architecture_rules:
+- readiness comparison must be represented explicitly
+- exception items must be reviewable as first-class management objects
+- decision-support blockers must survive beyond one screen or one session
+- unresolved exceptions must be visible in the same review flow as growth health
+
+exception_categories:
+- source freshness risk
+- readiness divergence risk
+- capability threshold breach risk
+- decision-support blocker
+- publication readiness risk
+
+visibility_outputs:
+- growth cockpit
+- readiness exception review screen
+- management attention panel
+- decision-support readiness overview
+
+cross_module_relation:
+- source signal layer feeds normalized growth signals
+- readiness layer captures comparative growth states
+- exception layer surfaces management attention points
+- decision-support layer surfaces readiness for executive or manager use
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/021130_TALENTGROWTH_READINESS_EXCEPTION_REVIEW_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/021140_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+# ============================================================
+# TALENTGROWTH PHASE A GROWTH TIMELINE DDL ADDITIVE PLAN
+# ============================================================
+
+status: canonical
+layer: architecture
+system: applications
+application: TalentGrowth
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-growth-timeline-ddl-additive-plan
+
+purpose:
+Defines the additive-only Phase A DDL planning boundary for
+growth timeline visibility, readiness exception review,
+and growth cockpit assembly.
+
+principles:
+- additive only
+- preserve existing TalentGrowth core
+- keep raw talent detail handling separate from growth readiness rows
+- keep readiness and exception review separate from raw growth history
+- no SQL execution in this document
+
+phase_a_target_capabilities:
+- persist growth control timeline rows for cockpit and review
+- persist readiness and decision-support blocker review rows for management visibility
+- support growth cockpit query without reconstructing everything from raw talent detail
+- support management attention and decision-support review slices
+
+proposed_additive_tables:
+- business.talentgrowth_growth_control_timeline_item
+- business.talentgrowth_readiness_exception_review_item
+- business.talentgrowth_growth_cockpit_snapshot
+
+table_business_talentgrowth_growth_control_timeline_item:
+  role:
+    - stores normalized growth control timeline rows
+  recommended_columns:
+    - growth_control_timeline_item_id uuid pk
+    - growth_plan_id uuid not null
+    - related_path_id uuid null
+    - related_exception_id uuid null
+    - related_decision_support_blocker_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - growth_state_code text not null
+    - priority_code text null
+    - effective_at timestamptz null
+    - published_at timestamptz null
+    - superseded_at timestamptz null
+    - exception_present boolean not null
+    - owner_user_id uuid null
+    - approval_required boolean not null
+    - source_module_code text not null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_talentgrowth_readiness_exception_review_item:
+  role:
+    - stores reviewable readiness and decision-support blocker rows
+  recommended_columns:
+    - readiness_exception_review_item_id uuid pk
+    - growth_plan_id uuid not null
+    - related_path_id uuid null
+    - related_exception_id uuid null
+    - related_decision_support_blocker_id uuid null
+    - item_type_code text not null
+    - item_title text not null
+    - item_summary text null
+    - growth_state_code text not null
+    - exception_present boolean not null
+    - approval_required boolean not null
+    - owner_user_id uuid null
+    - resolved boolean not null
+    - effective_at timestamptz null
+    - created_at timestamptz not null
+    - updated_at timestamptz not null
+
+table_business_talentgrowth_growth_cockpit_snapshot:
+  role:
+    - stores generated growth cockpit snapshots when caching or auditability is needed
+  recommended_columns:
+    - growth_cockpit_snapshot_id uuid pk
+    - growth_plan_id uuid not null
+    - health_summary_message text not null
+    - generated_at timestamptz not null
+    - created_at timestamptz not null
+
+recommended_indexes_phase_a:
+- growth_control_timeline_item:
+  - idx on growth_plan_id, growth_state_code, effective_at
+  - idx on growth_plan_id, related_path_id
+  - idx on growth_plan_id, related_exception_id
+- readiness_exception_review_item:
+  - idx on growth_plan_id, approval_required
+  - idx on growth_plan_id, exception_present
+  - idx on growth_plan_id, resolved
+- growth_cockpit_snapshot:
+  - idx on growth_plan_id, generated_at desc
+
+explicit_non_scope:
+- no destructive schema rewrite
+- no SQL execution here
+- no recommendation engine implementation here
+- no external BI push execution here
+- no client sync policy here
+
+handoff_to_next_step:
+- freeze API starter and DTOs against these row families
+- create implementation skeleton and slice order on top of this plan
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/020.architecture/021140_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_DDL_ADDITIVE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/030.model/0300000_TALENT_GROWTH_MODEL_INDEX.md -->
+# ============================================================
+# TALENT GROWTH MODEL INDEX
+# ============================================================
+
+files:
+
+- 030510_TALENTGROWTH_GROWTH_CONTROL_TIMELINE_MODEL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/030.model/0300000_TALENT_GROWTH_MODEL_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/030.model/030510_TALENTGROWTH_GROWTH_CONTROL_TIMELINE_MODEL.md -->
+# ============================================================
+# TALENTGROWTH GROWTH CONTROL TIMELINE MODEL
+# ============================================================
+
+status: canonical
+layer: model
+system: applications
+application: TalentGrowth
+directory: 030.model
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: growth-control-timeline-model
+
+purpose:
+Defines the logical model for a unified growth control timeline.
+
+core_entity:
+- growth_control_timeline_item
+
+recommended_fields:
+- growthControlTimelineItemId
+- growthPlanId
+- relatedPathId
+- relatedExceptionId
+- relatedDecisionSupportBlockerId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- growthStateCode
+- priorityCode
+- effectiveAt
+- publishedAt
+- supersededAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+- sourceModuleCode
+- createdAt
+- updatedAt
+
+state_meaning:
+- draft
+- pending_review
+- approved
+- published
+- stale
+- blocked_for_decision_support
+- superseded
+- archived
+
+model_use_cases:
+- growth cockpit assembly
+- readiness exception review
+- approval review
+- decision-support readiness visibility
+- management trend visibility
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/030.model/030510_TALENTGROWTH_GROWTH_CONTROL_TIMELINE_MODEL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/0600000_TALENT_GROWTH_INTEGRATION_INDEX.md -->
+# ============================================================
+# TALENT GROWTH INTEGRATION INDEX
+# ============================================================
+
+files:
+
+- 060290_TALENTGROWTH_GROWTH_COCKPIT_PAYLOAD.md
+
+- 060300_TALENTGROWTH_GROWTH_EXCEPTION_REVIEW_PAYLOAD.md
+
+- 060320_TALENTGROWTH_PHASE_A_API_STARTER.md
+
+- 060330_TALENTGROWTH_PHASE_A_API_DTO_FIELD_FREEZE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/0600000_TALENT_GROWTH_INTEGRATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060290_TALENTGROWTH_GROWTH_COCKPIT_PAYLOAD.md -->
+# ============================================================
+# TALENTGROWTH GROWTH_COCKPIT_PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: TalentGrowth
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: growth-cockpit-payload
+
+purpose:
+Fixes the exact payload family for the growth cockpit surface.
+
+endpoint:
+- POST /api/v1/talent-growth/growth-cockpit/query
+
+request_fields:
+- growthPlanId: uuid string, required
+- timezone: string, required
+- includeReadinessExceptions: boolean, required
+- includeManagementAttention: boolean, required
+- includeDecisionSupportReadiness: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- growthPlanId: uuid string, required
+- growthTitle: string, required
+- healthSummaryMessage: string, required
+- readinessExceptionItems: array, required
+- managementAttentionItems: array, required
+- decisionSupportItems: array, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- growthControlTimelineItemId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- growthStateCode
+- effectiveAt
+- exceptionPresent
+- ownerUserId
+- approvalRequired
+
+rules:
+- timestamps use ISO-8601 strings
+- nullable values return null, not omission
+- arrays return empty arrays when no data
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060290_TALENTGROWTH_GROWTH_COCKPIT_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060300_TALENTGROWTH_GROWTH_EXCEPTION_REVIEW_PAYLOAD.md -->
+# ============================================================
+# TALENTGROWTH GROWTH_EXCEPTION_REVIEW_PAYLOAD
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: TalentGrowth
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: growth-exception-review-payload
+
+purpose:
+Fixes the exact payload family for growth and readiness exception review.
+
+endpoint:
+- POST /api/v1/talent-growth/growth-exception-review/query
+
+request_fields:
+- growthPlanId: uuid string, required
+- includeResolved: boolean, required
+- includeThresholdBreaches: boolean, required
+- includeDecisionSupportBlockers: boolean, required
+- pageSize: integer, required
+- pageToken: string, optional
+
+response_fields:
+- growthPlanId: uuid string, required
+- reviewItems: array, required
+- summaryMessage: string, required
+- nextPageToken: string, nullable
+- generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId
+- relatedPathId
+- relatedExceptionId
+- relatedDecisionSupportBlockerId
+- itemTypeCode
+- itemTitle
+- itemSummary
+- growthStateCode
+- exceptionPresent
+- approvalRequired
+- ownerUserId
+- resolved
+- effectiveAt
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060300_TALENTGROWTH_GROWTH_EXCEPTION_REVIEW_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060320_TALENTGROWTH_PHASE_A_API_STARTER.md -->
+# ============================================================
+# TALENTGROWTH PHASE A API STARTER
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: TalentGrowth
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-starter
+
+purpose:
+Defines the initial Phase A endpoint set for growth management control in TalentGrowth.
+
+phase_a_api_goals:
+- query growth cockpit
+- query growth exception review
+- prepare later approval and decision-support actions without reopening the contract
+
+phase_a_endpoint_set:
+- POST /api/v1/talent-growth/growth-cockpit/query
+- POST /api/v1/talent-growth/growth-exception-review/query
+
+endpoint_growth_cockpit_query:
+  purpose:
+    - return readiness exceptions, management attention, and decision-support readiness in one surface
+  minimum_request:
+    - growthPlanId
+    - timezone
+    - includeReadinessExceptions
+    - includeManagementAttention
+    - includeDecisionSupportReadiness
+    - pageSize
+  minimum_response:
+    - growthPlanId
+    - growthTitle
+    - healthSummaryMessage
+    - readinessExceptionItems
+    - managementAttentionItems
+    - decisionSupportItems
+    - generatedAt
+
+endpoint_growth_exception_review_query:
+  purpose:
+    - return growth and decision-support blocker rows for management review
+  minimum_request:
+    - growthPlanId
+    - includeResolved
+    - includeThresholdBreaches
+    - includeDecisionSupportBlockers
+    - pageSize
+  minimum_response:
+    - growthPlanId
+    - reviewItems
+    - summaryMessage
+    - generatedAt
+
+response_rules:
+- ids use uuid string form
+- timestamps use ISO-8601 strings
+- arrays return empty arrays, not omission
+- nullable values return null once frozen
+- no binary payloads in these responses
+
+error_family_phase_a:
+- invalid_request
+- unauthorized
+- forbidden
+- not_found
+- conflict
+- validation_failed
+- internal_error
+
+explicit_non_scope:
+- no talent write endpoint in this slice
+- no approval action write endpoint in this slice
+- no publication execution endpoint in this slice
+- no bulk import endpoint in this slice
+
+implementation_handoff:
+- use these two query endpoints as the only Phase A vertical-slice entry points first
+- defer write-side approval and publication actions until query-side surfaces stabilize
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060320_TALENTGROWTH_PHASE_A_API_STARTER.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060330_TALENTGROWTH_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+# ============================================================
+# TALENTGROWTH PHASE A API DTO FIELD FREEZE
+# ============================================================
+
+status: canonical
+layer: integration
+system: applications
+application: TalentGrowth
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-api-dto-field-freeze
+
+purpose:
+Freezes the Phase A request and response DTO field set for
+growth cockpit and growth exception review.
+
+freezing_policy:
+- additive only
+- field names become implementation baseline once approved
+- no casual local rename allowed
+- timestamps are ISO-8601 strings
+- ids are uuid strings
+- arrays stay arrays even when empty
+
+endpoint_01_growth_cockpit_query:
+  route: POST /api/v1/talent-growth/growth-cockpit/query
+  request_fields:
+    - growthPlanId: uuid string, required
+    - timezone: string, required
+    - includeReadinessExceptions: boolean, required
+    - includeManagementAttention: boolean, required
+    - includeDecisionSupportReadiness: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - growthPlanId: uuid string, required
+    - growthTitle: string, required
+    - healthSummaryMessage: string, required
+    - readinessExceptionItems: array, required
+    - managementAttentionItems: array, required
+    - decisionSupportItems: array, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+cockpitItem_fields:
+- growthControlTimelineItemId: uuid string, required
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- growthStateCode: string, required
+- effectiveAt: ISO-8601 string, nullable
+- exceptionPresent: boolean, required
+- ownerUserId: uuid string, nullable
+- approvalRequired: boolean, required
+
+endpoint_02_growth_exception_review_query:
+  route: POST /api/v1/talent-growth/growth-exception-review/query
+  request_fields:
+    - growthPlanId: uuid string, required
+    - includeResolved: boolean, required
+    - includeThresholdBreaches: boolean, required
+    - includeDecisionSupportBlockers: boolean, required
+    - pageSize: integer, required
+    - pageToken: string, optional
+  response_fields:
+    - growthPlanId: uuid string, required
+    - reviewItems: array, required
+    - summaryMessage: string, required
+    - nextPageToken: string, nullable
+    - generatedAt: ISO-8601 string, required
+
+reviewItem_fields:
+- reviewItemId: uuid string, required
+- relatedPathId: uuid string, nullable
+- relatedExceptionId: uuid string, nullable
+- relatedDecisionSupportBlockerId: uuid string, nullable
+- itemTypeCode: string, required
+- itemTitle: string, required
+- itemSummary: string, nullable
+- growthStateCode: string, required
+- exceptionPresent: boolean, required
+- approvalRequired: boolean, required
+- ownerUserId: uuid string, nullable
+- resolved: boolean, required
+- effectiveAt: ISO-8601 string, nullable
+
+shared_error_response_fields:
+- errorCode: string, required
+- errorMessage: string, required
+- requestId: string, required
+- details: object, nullable
+
+field_value_rules:
+- itemTypeCode is a text code, not localized label
+- growthStateCode is a text code, not localized label
+- nullable fields return null, not omission
+- unknown response fields must not be silently added in Phase A
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/060.integration/060330_TALENTGROWTH_PHASE_A_API_DTO_FIELD_FREEZE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/090.interface/0900000_TALENT_GROWTH_INTERFACE_INDEX.md -->
+# ============================================================
+# TALENT GROWTH INTERFACE INDEX
+# ============================================================
+
+files:
+
+- 090330_TALENTGROWTH_GROWTH_COCKPIT_INTERFACE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/090.interface/0900000_TALENT_GROWTH_INTERFACE_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/090.interface/090330_TALENTGROWTH_GROWTH_COCKPIT_INTERFACE.md -->
+# ============================================================
+# TALENTGROWTH GROWTH_COCKPIT_INTERFACE
+# ============================================================
+
+status: canonical
+layer: interface
+system: applications
+application: TalentGrowth
+directory: 090.interface
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: growth-cockpit-interface
+
+purpose:
+Makes the growth cockpit screen hierarchy explicit.
+
+screen_goal:
+- show what threatens readiness or decision-support readiness right now
+- unify readiness exceptions, management attention, and decision-support readiness
+- provide one management-control review pass before diving into detail screens
+
+screen_sections:
+- growth summary header
+- readiness exception stack
+- management attention stack
+- decision-support readiness panel
+- quick jump to readiness exception review
+
+item_card_fields:
+- item title
+- short summary
+- state badge
+- effective time
+- owner badge
+- approval badge
+- quick action buttons
+
+primary_actions:
+- open growth detail
+- open exception review
+- open approval review
+- approve growth path
+- hold growth path
+- open decision-support detail
+
+interface_rules:
+- readiness exceptions must be separated visually from management attention items
+- decision-support items must stay visible above long detail lists
+- cockpit must be scannable in one vertical pass
+- deep person editing belongs elsewhere; cockpit is a control surface first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/090.interface/090330_TALENTGROWTH_GROWTH_COCKPIT_INTERFACE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/01.product-definition/0103_TALENT_GROWTH_RIVAL_COMPARISON.md -->
+# TALENT GROWTH RIVAL COMPARISON
+
+status: draft-competitive-analysis
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の設計優先順位を定めるために、
+主要競合の訴求軸と差別化余地を整理する資料である。
+
+# 1. 比較の見方
+比較観点:
+- 人材情報の一元化
+- 学歴 / 資格 / スキル / 経験年数の扱い
+- 評価運用
+- 成長支援
+- 配置 / 後継者 / 役割適合
+- 分析 / 可視化
+- AI活用
+- 公平性 / 監査性
+- 多言語 / 多通貨 / 多デバイス
+
+# 2. 国内直接競合
+
+## 2-1. カオナビ
+### 強み
+- スキル情報や資格情報の集約
+- スキルマップや分布グラフによる見える化
+- テンプレートを使った導入のしやすさ
+- 資格期限アラート
+- eラーニング推薦までつながる育成導線
+
+### TalentGrowth から見た脅威
+- 導入初期の立ち上がりが速い
+- スキル管理の見える化が強い
+- 管理者にもわかりやすい
+
+### TalentGrowth が勝てる余地
+- 学歴 / 資格 / スキル / 経験年数を
+  単純一覧ではなく職種別要件に接続する
+- 証拠付き評価を中核に置く
+- 評価から成長計画まで一貫させる
+- 監査性と説明責任をより強く持つ
+
+## 2-2. SmartHR タレントマネジメント
+### 強み
+- 従業員データベースを土台に広くつながる
+- 人事評価、サーベイ、配置、学習管理が一体
+- スマホ / 多言語対応との相性がよい
+- 人事労務データとの接続が強い
+
+### TalentGrowth から見た脅威
+- 人事DB起点の総合力が高い
+- 導入済み顧客に食い込みやすい
+- 運用接続が強い
+
+### TalentGrowth が勝てる余地
+- 評価を制度運用だけでなく成長支援へ寄せる
+- 職種別要件と証拠主義を強く前面に出す
+- 評価後に次の行動を固定出力する
+
+## 2-3. HRBrain
+### 強み
+- 人事評価、人材育成、配置、人材DB、組織分析
+- ダッシュボードや分析導線がわかりやすい
+- 現場定着を意識した運用訴求が強い
+
+### TalentGrowth から見た脅威
+- 評価運用と分析のバランスが良い
+- 管理者向けの見やすさで競合しやすい
+
+### TalentGrowth が勝てる余地
+- 分析の前段である評価根拠の質を強くする
+- 証拠、コメント、補正履歴、承認履歴を中核に置く
+- 配置や昇格候補にも根拠追跡を持たせる
+
+## 2-4. One人事[タレントマネジメント]
+### 強み
+- スキルツリー / 階層型スキルシート
+- 継続的な評価スコア蓄積
+- 日本企業向けの運用適合
+- スキルマップ、分布図、研修支援
+
+### TalentGrowth から見た脅威
+- TalentGrowth にかなり近い構造を持つ
+- スキル管理と育成導線のつながりが強い
+
+### TalentGrowth が勝てる余地
+- 学歴 / 資格 / 経験年数まで含めて
+  職種適合に統合する
+- スキルだけでなく role-fit / target-fit を出す
+- 成長支援を 3か月 / 6か月 / 12か月で具体化する
+
+## 2-5. COMPANY Talent Management
+### 強み
+- 大企業の複雑な人事制度への最適化
+- 人材情報、分析、配置、育成を統合的に扱う
+- 9box や人材分析など戦略人事文脈が強い
+
+### TalentGrowth から見た脅威
+- 制度適合力が高い
+- 配置や後継者候補抽出まで視野が広い
+
+### TalentGrowth が勝てる余地
+- 大規模制度適合より、
+  成長支援と証拠付き評価に中心を置く
+- 実際に育成と評価が回るUXを強くする
+
+# 3. 海外拡張競合
+
+## 3-1. Workday
+### 強み
+- AI を軸に採用から育成まで一体
+- talent mobility / growth / leadership development の広さ
+
+### TalentGrowth への示唆
+- 将来的に異動やキャリアまで拡張余地がある
+- ただし初期から全部入りにはしない
+
+## 3-2. SAP SuccessFactors
+### 強み
+- 継続的フィードバック
+- 目標管理連携
+- 公平性 / bias 低減の訴求
+- skills-based decision の文脈
+
+### TalentGrowth への示唆
+- 公平性、説明責任、継続レビューは必須
+- 目標管理連携を早期に入れる価値が高い
+
+## 3-3. Oracle Fusion Cloud HCM
+### 強み
+- end-to-end talent lifecycle
+- career / succession まで含む広い面積
+
+### TalentGrowth への示唆
+- 将来的には後継者計画やキャリア設計まで拡張可能
+- 初期は評価・成長支援・役割適合に集中する
+
+# 4. TalentGrowth の差別化戦略
+TalentGrowth は、
+統合HCM全部入りではなく、
+次の4本で勝つ。
+
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+
+# 5. 必須対抗機能
+- 職種別スキルテンプレート
+- スキルマップ
+- 分布図
+- 資格期限アラート
+- role-fit 可視化
+- 成長アクション推薦
+- MBO / 目標連携
+- 校正ログ
+- 監査ログ
+- 承認履歴
+
+# 6. 結論
+TalentGrowth のライバルは、
+国内ではスキル管理・人事評価・配置・育成型の
+タレントマネジメント群であり、
+海外では統合HCM・AI・継続成長型の製品群である。
+
+TalentGrowth は、
+- 証拠付き評価
+- 職種別役割適合
+- 成長行動の固定出力
+- 公平性 / 監査性
+で明確に差別化する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/01.product-definition/0103_TALENT_GROWTH_RIVAL_COMPARISON.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/01.product-definition/0104_TALENT_GROWTH_FULL_SCOPE_FEATURE_ADDITION.md -->
+# TALENT GROWTH FULL SCOPE FEATURE ADDITION
+
+status: draft-additive-full-scope
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. この追加束の位置づけ
+本資料は、
+ライバル比較で抽出した競争対抗機能を
+保留なくすべて TalentGrowth の正式機能対象へ加えるための追加設計である。
+
+方針:
+- 追加候補は全採用とする
+- 共通部品設計とは切り分ける
+- TalentGrowth 固有責務として保持する
+- 実装順は分けるが、設計上は全て in-scope とする
+
+# 1. 追加対象の最終確定
+TalentGrowth は、以下の機能を正式機能として持つ。
+
+- 職種別スキルテンプレート
+- 資格 / 免許の期限管理
+- スキルマップ / 分布図 / ヒートマップ
+- 継続評価スナップショット
+- 成長アクション推薦
+- MBO / 目標連携
+- 校正 / 監査 / 承認ログ
+- 9box / HRポートフォリオ
+- 配置シミュレーション
+- 学習 / 研修連携
+- 後継者パイプライン
+- 人材投資ROI分析
+- AIレビュー補助
+- キャリアシミュレーション
+
+# 2. TalentGrowth の正式機能構成
+
+## 2-1. 人材基礎情報管理
+- 人材基本情報
+- 学歴履歴
+- 職歴 / 配属履歴
+- 経験年数
+- 保有資格 / 免許
+- 受講履歴
+- 実績履歴
+- 行動評価履歴
+
+## 2-2. 職種別評価基準管理
+- job_family 単位要件
+- job_role 単位要件
+- grade 単位要件
+- role requirement version 管理
+- スキル要件
+- 資格要件
+- 経験要件
+- 行動要件
+- 実績要件
+- テンプレート複製
+- テンプレート改版履歴
+- テンプレート配布
+
+## 2-3. スコアリング / ランク付け
+- academic score
+- certification score
+- skill score
+- experience score
+- performance score
+- behavior score
+- growth trajectory score
+- current role fit score
+- target role fit score
+- promotion readiness score
+- successor readiness score
+- total evaluation score
+- current state rank
+- future readiness rank
+
+## 2-4. 証拠付き評価
+- 証拠添付
+- 根拠リンク
+- 証拠種類分類
+- 証拠信頼度管理
+- 評価コメントと証拠のひも付け
+- 評価変更理由記録
+- 承認前後の証拠凍結
+
+## 2-5. 資格 / 免許管理
+- 資格登録
+- 資格分類
+- 発行団体管理
+- 有効期限管理
+- 更新期限アラート
+- 失効状態表示
+- 更新履歴
+- 更新費用記録
+- 業務必須資格との突合
+- 失効見込み一覧
+
+## 2-6. スキル管理
+- スキル辞書
+- 熟練度管理
+- 最終使用日
+- 利用頻度
+- 実務証拠数
+- スキルごとの重み
+- 職種別要求水準
+- スキルツリー
+- スキルマトリクス
+- スキルヒートマップ
+- スキル不足抽出
+
+## 2-7. 継続評価 / 推移管理
+- サイクルごとの評価保存
+- スコア推移
+- ランク推移
+- スキル推移
+- 資格推移
+- コメント差分
+- 証拠差分
+- 成長速度可視化
+- 低下検知
+- 停滞検知
+
+## 2-8. 成長支援
+- ギャップ分析
+- 推奨研修
+- 推奨資格
+- 推奨OJT
+- 推奨案件 / 配属
+- 推奨ロール
+- 3か月計画
+- 6か月計画
+- 12か月計画
+- 実施状況追跡
+- 上長レビュー
+- 本人確認
+- 次回見直し日
+
+## 2-9. MBO / 目標連携
+- 目標取込
+- 目標一覧連携
+- 目標達成度参照
+- 目標証拠参照
+- 評価とのひも付け
+- 成長計画とのひも付け
+- 目標差分表示
+- 未達原因メモ
+- 能力成長との相関表示
+
+## 2-10. 校正 / 承認 / 監査
+- 自己評価提出
+- 上長レビュー
+- 人事レビュー
+- 校正会議
+- 差戻し
+- 再提出
+- 承認
+- 公開
+- 評価変更履歴
+- コメント変更履歴
+- 承認履歴
+- 校正会議ログ
+- AI提案参照履歴
+- 監査出力
+- エクスポート履歴
+
+## 2-11. 分析 / 可視化
+- 個人レーダーチャート
+- チームスキルマトリクス
+- 部署別ヒートマップ
+- 資格保有率分布
+- ランク分布
+- role-fit 分布
+- growth potential 分布
+- 9box
+- HRポートフォリオ
+- 評価者偏り分析
+- 組織比較
+- 拠点比較
+- 雇用区分比較
+
+## 2-12. 配置 / 後継者 / キャリア
+- role-fit 候補抽出
+- 配置候補比較
+- 異動候補抽出
+- 昇格候補抽出
+- successor pool
+- successor readiness
+- critical role coverage
+- キャリアパス候補
+- 次職種候補
+- 次等級候補
+- 到達条件一覧
+- キャリアシミュレーション
+
+## 2-13. 学習 / 研修 / 投資分析
+- 研修カタログ連携
+- 外部講座リンク
+- 社内研修連携
+- 推奨受講提示
+- 受講完了反映
+- 資格取得費管理
+- 研修費管理
+- 人材投資集計
+- training ROI
+- certification ROI
+- 部門別投資対効果
+- 海外拠点比較
+
+## 2-14. AI補助
+- 評価コメント下書き
+- 不足スキル要約
+- 成長提案下書き
+- 役割適合の補助説明
+- 監査観点サジェスト
+- 面談観点サジェスト
+- 校正時の偏り警告
+- 最終決定は禁止
+
+# 3. 追加が必要なデータモデル
+
+## 3-1. マスタ系
+- job_family_master
+- job_role_master
+- grade_master
+- skill_master
+- skill_tree_master
+- certification_master
+- competency_master
+- training_master
+- career_path_master
+- critical_role_master
+- evaluation_template_master
+
+## 3-2. 要件 / テンプレート系
+- role_requirement
+- role_requirement_skill
+- role_requirement_certification
+- role_requirement_experience
+- role_requirement_behavior
+- role_requirement_performance
+- role_requirement_template
+- role_requirement_template_skill
+- role_requirement_template_certification
+- role_requirement_template_behavior
+- role_requirement_template_version
+
+## 3-3. 人材情報系
+- employee_profile
+- employee_academic_history
+- employee_certification
+- employee_certification_renewal
+- employee_skill
+- employee_skill_evidence
+- employee_career_history
+- employee_training_history
+- employee_achievement
+- employee_goal_link
+- employee_role_preference
+
+## 3-4. 評価運用系
+- evaluation_cycle
+- evaluation_sheet
+- evaluation_score
+- evaluation_score_detail
+- evaluation_comment
+- evaluation_evidence
+- evaluation_snapshot
+- evaluation_change_audit
+- evaluation_approval
+- evaluation_reopen_log
+- calibration_session
+- calibration_log
+- reviewer_bias_snapshot
+
+## 3-5. 成長支援系
+- growth_gap
+- growth_goal
+- growth_plan
+- growth_action
+- growth_action_progress
+- growth_recommendation
+- training_recommendation
+- certification_recommendation
+- assignment_recommendation
+
+## 3-6. 配置 / 後継者 / キャリア系
+- role_fit_snapshot
+- placement_candidate
+- promotion_candidate
+- successor_candidate
+- successor_pool
+- career_simulation
+- career_simulation_result
+
+## 3-7. 分析 / 投資系
+- skill_heatmap_snapshot
+- talent_distribution_snapshot
+- hr_portfolio_snapshot
+- training_roi_snapshot
+- certification_roi_snapshot
+- org_talent_summary_snapshot
+
+## 3-8. AI / 監査系
+- ai_assist_reference_log
+- ai_draft_comment
+- ai_growth_suggestion
+- ai_bias_alert_log
+- audit_export_log
+
+# 4. 共通主要列候補
+- effective_from
+- effective_to
+- version_no
+- evidence_count
+- evidence_confidence
+- last_used_at
+- usage_frequency
+- expiry_date
+- renewal_required
+- renewal_cost_amount
+- renewal_cost_currency
+- source_currency
+- reporting_currency
+- fx_rate
+- recommendation_reason
+- fit_score
+- readiness_score
+- bias_flag
+- approval_status
+- reviewed_at
+- published_at
+- next_review_due_at
+- audit_trace_id
+
+# 5. 追加が必要な連携
+- ERP employee / organization / grade / position master 連携
+- MBO 目標 / 達成度 / 証拠連携
+- 研修 / 学習連携
+- 経費 / 投資連携
+
+# 6. ポリシー
+- AIは提案のみ
+- 最終評価確定禁止
+- 最終昇格確定禁止
+- 最終配置決定禁止
+- スコア根拠保存必須
+- ランク根拠保存必須
+- 推奨理由保存必須
+- 変更履歴保存必須
+- 校正会議ログ必須
+- 評価者偏り検知必須
+
+# 7. 実装順
+## phase A
+- 人材基本情報
+- 学歴 / 資格 / スキル / 経験年数
+- 職種別要件
+- スコアリング
+- ランク
+- 証拠付き評価
+- 承認 / 差戻し / 監査ログ
+- ギャップ分析
+- 成長計画
+
+## phase B
+- 資格期限管理
+- スキルマップ / 分布図 / ヒートマップ
+- 継続評価スナップショット
+- MBO連携
+- 推奨研修 / 資格 / OJT
+
+## phase C
+- 9box
+- 配置候補抽出
+- 昇格候補抽出
+- 後継者候補抽出
+- キャリアシミュレーション
+- 投資分析
+
+## phase D
+- AIレビュー補助
+- 偏り警告
+- 高度分析
+- 海外拠点比較
+- 高度なROI分析
+
+# 8. 結論
+TalentGrowth は、
+競合対抗上必要な機能を限定追加するのではなく、
+見える化、継続評価、成長支援、配置 / 後継者 / キャリア、
+投資分析、監査 / 校正 / 承認、AI補助を
+すべて正式機能として保持する。
+
+ただし中心価値は最後まで変えない。
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/01.product-definition/0104_TALENT_GROWTH_FULL_SCOPE_FEATURE_ADDITION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/04.scoring-ranking/0403_TALENT_GROWTH_SCORING_FORMULA_EXACT_FIXED.md -->
+# TALENT GROWTH SCORING FORMULA EXACT FIXED
+
+status: draft-scoring-formula-exact-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要スコアとランクについて、
+exact formula,
+gate,
+threshold,
+normalization rule を固定するための資料である。
+
+前提:
+- score range is 0..100
+- company / role requirement ごとに重みは保持できる
+- formula は role_requirement の weight を参照する
+- AI は score を直接確定しない
+- mandatory gate を重み計算より優先する場合がある
+
+# 1. 共通記号
+- ws = overall_weight_skill
+- wc = overall_weight_certification
+- we = overall_weight_experience
+- wp = overall_weight_performance
+- wb = overall_weight_behavior
+- wg = overall_weight_growth
+
+- skill_component = 0..100
+- certification_component = 0..100
+- experience_component = 0..100
+- performance_component = 0..100
+- behavior_component = 0..100
+- growth_component = 0..100
+
+- weighted_sum = ws*skill_component + wc*certification_component + we*experience_component + wp*performance_component + wb*behavior_component + wg*growth_component
+- weight_total = ws + wc + we + wp + wb + wg
+- normalized_score = round2(weighted_sum / nullif(weight_total, 0))
+
+# 2. component formula
+
+## 2-1. skill_component
+目的:
+- role requirement skill 適合度
+
+per skill formula:
+- skill_match_ratio = min(actual_level / required_level, 1.0)
+- if mandatory skill missing then skill_match_ratio = 0
+
+weighted formula:
+- skill_component = round2(
+    100 * (
+      sum(skill_match_ratio * weight_score for each required skill)
+      / nullif(sum(weight_score for each required skill), 0)
+    )
+  )
+
+recency penalty:
+- if recency_required_months exceeded then
+  adjusted_skill_match_ratio = skill_match_ratio * 0.8
+- if skill_freshness_score available then final can multiply by (skill_freshness_score / 100)
+
+## 2-2. certification_component
+per certification formula:
+- mandatory obtained and active = 1.0
+- mandatory missing or expired = 0
+- preferred obtained = 1.0
+- preferred missing = 0
+
+weighted formula:
+- certification_component = round2(
+    100 * (
+      sum(cert_match_ratio * weight_score)
+      / nullif(sum(weight_score), 0)
+    )
+  )
+
+## 2-3. experience_component
+definition:
+- required_months from requirement
+- actual_months from career history aggregation
+
+formula:
+- experience_component = round2(100 * min(actual_months / required_months, 1.0))
+
+special rule:
+- if no requirement defined, experience_component excluded from denominator via weight config
+
+## 2-4. performance_component
+definition:
+- use normalized performance metrics or latest performance score input
+
+formula:
+- performance_component = round2(performance_score_input)
+
+## 2-5. behavior_component
+definition:
+- competency ratings normalized to 0..100
+
+formula:
+- behavior_component = round2(
+    100 * (
+      sum(manager_rating_normalized * competency_weight)
+      / nullif(sum(competency_weight), 0)
+    )
+  )
+
+## 2-6. growth_component
+definition:
+- growth uses trend, learning action execution, improvement evidence
+
+subfactors:
+- score_trend_subscore
+- learning_completion_subscore
+- evidence_growth_subscore
+
+formula:
+- growth_component = round2(
+    score_trend_subscore * 0.5
+    + learning_completion_subscore * 0.3
+    + evidence_growth_subscore * 0.2
+  )
+
+# 3. current_role_fit_score
+formula:
+- current_role_fit_score = normalized_score using current role requirement weights and current role requirement items
+
+gate:
+- if mandatory current role certification missing and company policy says hard gate
+  then current_role_fit_score = min(current_role_fit_score, 59.99)
+
+# 4. target_role_fit_score
+formula:
+- target_role_fit_score = normalized_score using target role requirement weights and target role requirement items
+
+gate:
+- if mandatory target role skill or certification missing
+  target_role_fit_score may be capped by readiness gate
+
+recommended cap:
+- if mandatory target requirement missing then cap to 69.99
+
+# 5. total_evaluation_score
+definition:
+- total evaluation mixes current role reality and future-oriented growth
+
+recommended formula:
+- total_evaluation_score = round2(
+    current_role_fit_score * 0.45
+    + performance_component * 0.20
+    + behavior_component * 0.15
+    + growth_component * 0.20
+  )
+
+notes:
+- company may change weights but formula family is fixed
+
+# 6. growth_potential_score
+definition:
+- potential is not current performance clone
+- emphasize learning velocity and evidence-backed improvement
+
+recommended formula:
+- growth_potential_score = round2(
+    growth_component * 0.45
+    + behavior_component * 0.20
+    + skill_component * 0.15
+    + performance_component * 0.10
+    + manager_potential_adjustment * 0.10
+  )
+
+manager_potential_adjustment:
+- normalized 0..100 bounded input
+- HR calibration may adjust
+
+# 7. promotion_readiness_score
+recommended formula:
+- promotion_readiness_score = round2(
+    current_role_fit_score * 0.25
+    + target_role_fit_score * 0.35
+    + performance_component * 0.15
+    + behavior_component * 0.15
+    + growth_potential_score * 0.10
+  )
+
+promotion gates:
+- if mandatory target certification missing -> max 69.99
+- if disciplinary / policy block exists -> policy gate outside formula
+- if current cycle status not published -> not eligible for final promotion readiness publication
+
+# 8. successor_readiness_score
+recommended formula:
+- successor_readiness_score = round2(
+    promotion_readiness_score * 0.45
+    + target_role_fit_score * 0.25
+    + behavior_component * 0.15
+    + growth_potential_score * 0.15
+  )
+
+additional gate:
+- if critical_role_specific mandatory gap exists -> cap 74.99
+
+# 9. rank mapping
+
+## 9-1. current_state_rank
+- S: score >= 90 and no hard gate violation
+- A: 80 <= score < 90 and no hard gate violation
+- B: 70 <= score < 80
+- C: 60 <= score < 70
+- D: score < 60
+
+## 9-2. future_readiness_rank
+- S: target or readiness score >= 90 and mandatory target gaps none
+- A: 80 <= score < 90 and mandatory target gaps manageable
+- B: 70 <= score < 80
+- C: 60 <= score < 70
+- D: score < 60
+
+# 10. mandatory gate hierarchy
+hard gate priority:
+1. forbidden state or policy block
+2. mandatory certification missing / expired
+3. mandatory critical skill missing
+4. formula score
+
+notes:
+- gate may cap score
+- gate may cap rank
+- gate reason must be stored separately
+
+# 11. calibration rule
+pre_calibration_score:
+- formula output before HR adjustment
+
+post_calibration_score:
+- HR approved adjusted score
+
+calibration delta rule:
+- abs(post - pre) above configured threshold requires reason_text mandatory
+- rank change via calibration requires meeting_note mandatory
+
+# 12. rounding rule
+- internal calculation precision: at least 4 decimals
+- persisted display score precision: 2 decimals
+- UI display: typically 1 or 2 decimals
+- rank threshold compares against persisted 2-decimal value
+
+# 13. missing data rule
+- missing optional component with zero weight: excluded naturally
+- missing mandatory evidence for required component may produce validation or gate
+- missing performance input:
+  - if current cycle not finalized, use available latest valid score
+  - else component may be null and weight handling policy applies
+
+# 14. example formula
+
+example weights:
+- ws=30
+- wc=15
+- we=10
+- wp=15
+- wb=10
+- wg=20
+
+example components:
+- skill=82
+- certification=100
+- experience=75
+- performance=78
+- behavior=72
+- growth=84
+
+formula:
+- current_role_fit_score = round2((30*82 + 15*100 + 10*75 + 15*78 + 10*72 + 20*84) / 100)
+- current_role_fit_score = round2(8280 / 100)
+- current_role_fit_score = 82.80
+
+# 15. 結論
+TalentGrowth の scoring formula は、
+component,
+weight,
+gate,
+threshold,
+calibration
+を分けて固定する。
+
+中核原則は以下である。
+- formula before calibration
+- gate before rank
+- current fit and future fit are different scores
+- potential is not identical to performance
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/04.scoring-ranking/0403_TALENT_GROWTH_SCORING_FORMULA_EXACT_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0702_TALENT_GROWTH_SCREEN_DETAIL.md -->
+# TALENT GROWTH SCREEN DETAIL
+
+status: draft-screen-detail
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の全体画面構成を固定し、
+役割別に何を見て、何を操作し、何を判断するかを明確化するための画面設計資料である。
+
+前提:
+- 共通部品設計は対象外
+- TalentGrowth 固有画面責務に集中する
+- 多言語対応
+- 多通貨対応
+- iPhone対応
+- Android対応
+- PC対応
+- タブレット対応
+
+# 1. 画面設計の基本方針
+- 役割別最適化
+- 証拠起点
+- 現在地と次行動の同時表示
+- 評価と育成を分断しない
+
+# 2. 役割
+- employee
+- manager
+- HR
+- executive
+- admin
+
+# 3. グローバル画面
+## TG-GLOBAL-001 ログイン / 認証画面
+目的:
+- 利用者を正しい権限で認証する
+項目:
+- メールアドレス / ID
+- パスワード
+- MFA入力
+- 言語切替
+操作:
+- ログイン
+- パスワード再設定
+- MFA確認
+- 言語変更
+
+## TG-GLOBAL-002 ホーム / ナビゲーションハブ
+目的:
+- 権限に応じて利用可能機能へ遷移させる
+項目:
+- 未処理件数
+- 進行中サイクル
+- 重要アラート
+- 最近見た画面
+- 役割別ショートカット
+操作:
+- 機能遷移
+- 通知確認
+- クイック検索
+
+## TG-GLOBAL-003 通知センター
+目的:
+- 評価、資格期限、差戻し、承認依頼を一元表示する
+項目:
+- 通知種別
+- 発生日
+- 対象
+- 緊急度
+- 未読 / 既読
+操作:
+- 詳細表示
+- 一括既読
+- 対象画面遷移
+
+## TG-GLOBAL-004 検索画面
+目的:
+- 社員、評価、資格、スキル、計画を横断検索する
+項目:
+- キーワード
+- 対象
+- 組織絞込
+- 状態絞込
+操作:
+- 条件検索
+- 保存検索
+- 詳細遷移
+
+# 4. employee 画面群
+## TG-EMP-001 employee dashboard
+目的:
+- 本人が自分の現在地と次行動を把握する
+項目:
+- 現職適合スコア
+- 目標職位適合スコア
+- growth potential
+- 現在ランク
+- 次回レビュー日
+- 未提出項目
+- 資格期限アラート
+- 成長アクション上位3件
+- 最近の評価推移
+操作:
+- 自己評価開始
+- スキル更新
+- 資格追加
+- 成長計画確認
+- 推奨研修確認
+
+## TG-EMP-002 my profile
+目的:
+- 本人基本情報を確認 / 補完する
+項目:
+- 氏名
+- 所属
+- 役職
+- 雇用区分
+- 勤務地
+- 現職種 / 現等級
+- 希望職種
+- 希望キャリア方向
+操作:
+- 編集申請
+- 一部自己更新
+- 希望キャリア更新
+
+## TG-EMP-003 academic history
+目的:
+- 学歴情報を記録し、評価根拠へ接続する
+項目:
+- 学校名
+- 学位
+- 専攻
+- 卒業年月
+- 職務関連度
+- 根拠書類有無
+操作:
+- 学歴追加
+- 修正申請
+- 証拠添付
+
+## TG-EMP-004 certification management
+目的:
+- 保有資格 / 免許の登録と期限管理を行う
+項目:
+- 資格名
+- 発行団体
+- 取得日
+- 有効期限
+- 更新要否
+- 失効リスク
+- 業務必須との一致状態
+操作:
+- 資格追加
+- 更新記録
+- 証書添付
+- 更新計画登録
+
+## TG-EMP-005 skill inventory
+目的:
+- 本人のスキルを登録し、熟練度と根拠を持たせる
+項目:
+- スキルカテゴリ
+- スキル名
+- 熟練度
+- 最終使用日
+- 使用頻度
+- 根拠件数
+- 要件との差分
+操作:
+- スキル追加
+- 熟練度更新
+- 証拠追加
+- 自己コメント入力
+
+## TG-EMP-006 career history
+目的:
+- 職務経験と経験年数を整理する
+項目:
+- 配属履歴
+- 担当業務
+- 期間
+- 管理経験有無
+- 業界経験
+- 主な成果
+操作:
+- 経歴追加
+- 実績追加
+- 添付追加
+
+## TG-EMP-007 achievement input
+目的:
+- 実績を評価根拠として登録する
+項目:
+- 実績区分
+- 実績内容
+- 定量値
+- 期間
+- 目標との関係
+- 根拠資料
+操作:
+- 実績登録
+- 修正
+- 目標紐付け
+- 証拠添付
+
+## TG-EMP-008 self review
+目的:
+- 自己評価を提出する
+項目:
+- 評価サイクル
+- 自己評価対象軸
+- 前回との差分
+- 未入力項目
+- 根拠不足警告
+操作:
+- 入力
+- 一時保存
+- 提出
+- 差戻し修正
+
+## TG-EMP-009 my evaluation result
+目的:
+- 確定した評価結果を確認する
+項目:
+- 総合スコア
+- 現職適合
+- 目標職位適合
+- growth potential
+- ランク
+- コメント
+- 根拠一覧
+- 前回比較
+- 校正後変更点
+操作:
+- 詳細確認
+- 根拠表示
+- 成長計画へ遷移
+
+## TG-EMP-010 gap analysis
+目的:
+- 目標職位や目標等級との差分を確認する
+項目:
+- 不足スキル
+- 不足資格
+- 不足経験
+- 行動面差分
+- 優先改善順
+操作:
+- 目標変更
+- 差分確認
+- 成長計画へ反映
+- 推奨研修表示
+
+## TG-EMP-011 growth plan
+目的:
+- 成長計画を確認 / 実行する
+項目:
+- 3か月計画
+- 6か月計画
+- 12か月計画
+- 期限
+- 進捗率
+- 担当者
+- 上長コメント
+操作:
+- 進捗更新
+- 完了報告
+- 再計画申請
+- メモ追加
+
+## TG-EMP-012 recommendation center
+目的:
+- 推奨研修、資格、OJT、配属候補を確認する
+項目:
+- 推奨種別
+- 推奨理由
+- 対象差分
+- 想定効果
+- 優先度
+操作:
+- 詳細確認
+- 計画へ追加
+- 辞退理由記録
+- 研修申請
+
+## TG-EMP-013 mbo linked view
+目的:
+- 目標と評価、成長計画の関係を確認する
+項目:
+- 目標一覧
+- 達成度
+- 評価反映項目
+- 未達原因
+- 成長計画連携状態
+操作:
+- 目標詳細確認
+- 実績根拠表示
+- 成長計画へ反映
+
+## TG-EMP-014 career simulation
+目的:
+- 次の職種 / 等級 / ロール候補を見る
+項目:
+- 候補職種
+- 候補等級
+- 現在到達率
+- 必要差分
+- 想定期間
+操作:
+- 候補比較
+- 必要条件確認
+- 目標設定へ反映
+
+# 5. manager 画面群
+## TG-MGR-001 manager dashboard
+目的:
+- 部下の評価進行、リスク、育成優先事項を把握する
+項目:
+- 未レビュー件数
+- 差戻し件数
+- 要更新資格件数
+- 高成長候補
+- 停滞者
+- リスク人材
+- チーム平均スコア
+- チーム不足スキル
+操作:
+- レビュー一覧へ遷移
+- チーム比較へ遷移
+- 1on1準備
+
+## TG-MGR-002 team member list
+目的:
+- 部下一覧を評価 / 成長視点で見る
+項目:
+- 氏名
+- 所属
+- 現ランク
+- 現職適合
+- 資格期限リスク
+- 成長計画進捗
+- 要対応状態
+操作:
+- 並び替え
+- 絞込
+- 詳細表示
+- 一括レビュー起点
+
+## TG-MGR-003 employee comparison
+目的:
+- 複数人の現在地と差分を比較する
+項目:
+- スコア比較
+- スキル比較
+- 資格比較
+- 実績比較
+- 目標達成比較
+- 成長推移比較
+操作:
+- 比較対象追加
+- 比較軸切替
+- CSV出力
+
+## TG-MGR-004 team skill heatmap
+目的:
+- チーム全体のスキル偏在と不足を把握する
+項目:
+- スキル×メンバーのマトリクス
+- 重要スキルの充足率
+- 欠員リスク
+- 代替可能性
+操作:
+- スキル絞込
+- 重要度切替
+- 不足人材抽出
+
+## TG-MGR-005 review input
+目的:
+- 上長評価を入力する
+項目:
+- 自己評価内容
+- 根拠一覧
+- 上長評価項目
+- コメント欄
+- 差分警告
+- 根拠不足警告
+操作:
+- 上長評価入力
+- コメント入力
+- 一時保存
+- 差戻し
+- 承認送信
+
+## TG-MGR-006 one-on-one support
+目的:
+- 面談で必要な情報を一画面で扱う
+項目:
+- 現在地
+- 前回面談からの変化
+- 目標
+- 不足項目
+- 推奨アクション
+- 面談メモ履歴
+操作:
+- 面談メモ入力
+- 次回アクション設定
+- 成長計画更新
+
+## TG-MGR-007 growth plan review
+目的:
+- 部下の成長計画を確認 / 修正する
+項目:
+- 計画一覧
+- 優先度
+- 期限
+- 実行状況
+- 成果見込み
+- リスク
+操作:
+- 承認
+- 修正提案
+- 優先度変更
+- 期限変更
+- 追加アクション設定
+
+## TG-MGR-008 role-fit candidate view
+目的:
+- 部下の配置 / 昇格候補性を確認する
+項目:
+- 現職適合
+- 他ロール適合
+- 不足差分
+- 到達見込み
+- リスク要因
+操作:
+- 候補比較
+- 人事共有
+- 成長計画反映
+- 配置候補推薦
+
+# 6. HR 画面群
+## TG-HR-001 HR dashboard
+目的:
+- 全社評価運用と人材状況を俯瞰する
+項目:
+- サイクル進捗
+- 未承認件数
+- 校正待ち件数
+- 期限切れ資格件数
+- 組織別分布
+- 評価偏り警告
+- 重要職種不足
+操作:
+- サイクル管理へ遷移
+- 校正ボードへ遷移
+- 監査ログ確認
+
+## TG-HR-002 cycle control
+目的:
+- 評価サイクルを開始 / 締結する
+項目:
+- サイクル名
+- 対象範囲
+- 期間
+- 状態
+- 締切
+- 公開日
+- 差戻し件数
+操作:
+- 開始
+- 締切変更
+- 再開
+- 公開
+- 締結
+
+## TG-HR-003 role requirement management
+目的:
+- 職種別 / 等級別要件を管理する
+項目:
+- job family
+- job role
+- grade
+- 必須スキル
+- 推奨資格
+- 必須経験
+- 行動要件
+- version
+操作:
+- 新規作成
+- 複製
+- 改版
+- 無効化
+- 差分比較
+
+## TG-HR-004 template management
+目的:
+- 評価テンプレートと職種別テンプレートを管理する
+項目:
+- テンプレート名
+- 対象職種
+- 対象等級
+- 評価項目数
+- version
+- 利用中状態
+操作:
+- 作成
+- 複製
+- 改版
+- 有効化
+- 配布
+
+## TG-HR-005 skill dictionary management
+目的:
+- スキル辞書と階層構造を管理する
+項目:
+- スキルカテゴリ
+- スキル名
+- 説明
+- 上位 / 下位関係
+- 有効状態
+- 多言語ラベル
+操作:
+- 登録
+- 編集
+- 階層変更
+- 廃止
+- 多言語更新
+
+## TG-HR-006 certification master management
+目的:
+- 資格 / 免許マスタを管理する
+項目:
+- 資格名
+- 発行団体
+- 更新要否
+- 標準有効期間
+- 関連職種
+- 必須区分
+操作:
+- 登録
+- 編集
+- 有効期限ルール更新
+- 職種要件反映
+
+## TG-HR-007 calibration board
+目的:
+- 評価の甘辛差や偏りを補正する
+項目:
+- 対象社員一覧
+- 事前評価
+- コメント
+- 根拠数
+- 組織平均
+- 評価者平均との差
+- 変更候補
+操作:
+- 校正メモ入力
+- 補正案登録
+- 補正確定
+- 差戻し
+- 会議ログ保存
+
+## TG-HR-008 evaluator bias analysis
+目的:
+- 評価者ごとの偏りを検知する
+項目:
+- 評価者別平均
+- 組織平均との差
+- 極端値率
+- 部門別差
+- 雇用区分差
+- 変動傾向
+操作:
+- 期間切替
+- 組織切替
+- 詳細ドリルダウン
+
+## TG-HR-009 distribution analytics
+目的:
+- 全社分布を分析する
+項目:
+- ランク分布
+- role-fit 分布
+- growth potential 分布
+- 資格保有率
+- スキル不足領域
+- 組織比較
+- 拠点比較
+操作:
+- 条件絞込
+- 比較表示
+- エクスポート
+
+## TG-HR-010 9box / HR portfolio
+目的:
+- 人材ポートフォリオを確認する
+項目:
+- performance proxy
+- growth potential
+- 9box配置
+- リスク人材
+- 高潜在人材
+- 後継候補マーク
+操作:
+- 軸切替
+- フィルタ
+- 候補抽出
+
+## TG-HR-011 successor management
+目的:
+- 後継者候補を管理する
+項目:
+- critical role
+- successor pool
+- readiness
+- 欠員リスク
+- 不足条件
+- 想定到達時期
+操作:
+- 候補追加
+- 候補比較
+- 計画反映
+
+## TG-HR-012 training / investment analysis
+目的:
+- 研修投資と成長効果を分析する
+項目:
+- 研修費
+- 資格費
+- 通貨
+- reporting amount
+- ROI
+- 成長改善量
+- 部門別比較
+- 海外拠点比較
+操作:
+- 期間切替
+- 通貨表示切替
+- 比較
+- 出力
+
+## TG-HR-013 audit log viewer
+目的:
+- 評価 / 校正 / 承認 / AI参照の履歴を監査する
+項目:
+- 操作日時
+- 操作者
+- 対象
+- 変更前後
+- 理由
+- AI参照有無
+- export履歴
+操作:
+- 検索
+- フィルタ
+- 詳細表示
+- 監査出力
+
+# 7. executive 画面群
+## TG-EXE-001 executive dashboard
+目的:
+- 経営視点で人材状況を把握する
+項目:
+- 重要職種充足率
+- 後継者カバー率
+- 高潜在人材数
+- リスク人材数
+- 投資対効果
+- 組織別比較
+操作:
+- 各分析画面へ遷移
+- 期間変更
+- 比較対象変更
+
+## TG-EXE-002 org talent summary
+目的:
+- 組織単位での人材力を見る
+項目:
+- 組織別平均スコア
+- ランク分布
+- 不足スキル
+- 必須資格不足
+- 昇格候補数
+- 離脱リスク参考指標
+操作:
+- 組織比較
+- 深掘り表示
+- レポート出力
+
+## TG-EXE-003 successor pipeline
+目的:
+- 重要ポジションの後継者状況を確認する
+項目:
+- critical role 一覧
+- ready now / ready later
+- 欠員リスク
+- 候補不足理由
+- 育成状況
+操作:
+- ロール絞込
+- 候補確認
+- 人事への確認依頼
+
+## TG-EXE-004 investment and growth view
+目的:
+- 人材投資と成長成果の相関を見る
+項目:
+- 投資額
+- 通貨 / 換算額
+- 成長スコア改善量
+- 部門差
+- 研修別効果
+- 資格別効果
+操作:
+- 期間切替
+- 部門切替
+- 通貨表示切替
+- 出力
+
+# 8. admin 画面群
+## TG-ADM-001 user / role management
+目的:
+- 利用者と権限を管理する
+項目:
+- 利用者一覧
+- 付与ロール
+- 組織範囲
+- 有効状態
+- 最終利用日
+操作:
+- ロール付与
+- ロール変更
+- 停止
+- 再有効化
+
+## TG-ADM-002 organization / scope control
+目的:
+- 組織範囲と閲覧範囲を管理する
+項目:
+- 組織階層
+- 権限範囲
+- 例外設定
+- 共有範囲
+操作:
+- 範囲設定
+- 例外追加
+- 閲覧制御更新
+
+## TG-ADM-003 localization settings
+目的:
+- 多言語表示設定を管理する
+項目:
+- 対応言語
+- 既定言語
+- 翻訳未完了項目
+- ラベル差分
+操作:
+- 言語追加
+- 表示順変更
+- 翻訳更新
+
+## TG-ADM-004 currency / reporting settings
+目的:
+- 多通貨表示と換算表示ルールを管理する
+項目:
+- reporting currency
+- 表示通貨
+- 丸め規則
+- 換算基準日
+- 比較表示設定
+操作:
+- 通貨設定変更
+- 表示桁数変更
+- 換算表示切替
+
+## TG-ADM-005 integration settings
+目的:
+- 外部連携設定を管理する
+項目:
+- ERP連携状態
+- MBO連携状態
+- 研修連携状態
+- 同期最終時刻
+- エラー件数
+操作:
+- 接続確認
+- 同期実行
+- エラー再試行
+- 設定更新
+
+## TG-ADM-006 AI assist settings
+目的:
+- AI補助機能の利用範囲を制御する
+項目:
+- 利用対象画面
+- 利用対象ロール
+- 利用ログ保持期間
+- 禁止範囲
+- 注意文言設定
+操作:
+- 有効化 / 無効化
+- 対象変更
+- 出力制限更新
+- ログ確認
+
+# 9. 端末別最適化方針
+## smartphone
+主利用画面:
+- employee dashboard
+- certification management
+- skill inventory
+- self review
+- growth plan
+- notification center
+方針:
+- 入力優先
+- 1画面1目的
+- 縦スクロール中心
+
+## tablet
+主利用画面:
+- one-on-one support
+- review input
+- employee comparison
+- growth plan review
+- calibration board 簡易版
+方針:
+- 面談 / 会議利用
+- 2カラム前提
+- 比較表示強化
+
+## PC
+主利用画面:
+- HR dashboard
+- role requirement management
+- template management
+- distribution analytics
+- 9box
+- audit log viewer
+- investment analysis
+方針:
+- 一覧 / 比較 / 分析重視
+- 横長表と複数フィルタ対応
+- エクスポート前提
+
+# 10. 中核導線
+## employee主要導線
+dashboard
+-> self review
+-> my evaluation result
+-> gap analysis
+-> growth plan
+-> recommendation center
+
+## manager主要導線
+manager dashboard
+-> team member list
+-> review input
+-> one-on-one support
+-> growth plan review
+-> role-fit candidate view
+
+## HR主要導線
+HR dashboard
+-> cycle control
+-> role requirement management
+-> calibration board
+-> distribution analytics
+-> audit log viewer
+
+## executive主要導線
+executive dashboard
+-> org talent summary
+-> successor pipeline
+-> investment and growth view
+
+# 11. 結論
+TalentGrowth の画面設計は、
+単なる人事評価画面群ではなく、
+- 本人が現在地と次行動を理解できる
+- 上長が育成判断できる
+- 人事が制度運用と校正を回せる
+- 経営が人材投資と後継者状況を見られる
+- 管理者が権限、多言語、多通貨、連携を維持できる
+という5層構造で固定する。
+
+また、
+どの主要画面でも
+- evidence-first
+- role-fit first
+- growth-action first
+- explainability first
+を崩さない。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0702_TALENT_GROWTH_SCREEN_DETAIL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0703_TALENT_GROWTH_SCREEN_FLOW_AND_NAVIGATION.md -->
+# TALENT GROWTH SCREEN FLOW AND NAVIGATION
+
+status: draft-screen-flow
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要画面遷移と、
+役割別の中核導線を固定するための資料である。
+
+前提:
+- 共通部品設計は対象外
+- TalentGrowth 本体画面責務のみを扱う
+- 多言語対応
+- 多通貨対応
+- iPhone / Android / PC / タブレット対応
+
+# 1. ナビゲーション設計原則
+- 役割別に入口を分ける
+- どの主要導線でも current state -> evidence -> action に戻れる
+- 評価と成長計画を分断しない
+- 重要アラートから直接対象画面へ遷移できる
+- 承認 / 差戻し / 校正は一覧と個票を往復できる
+
+# 2. グローバル導線
+
+## 2-1. ログイン後の初期遷移
+- login
+  -> home / navigation hub
+  -> role-based dashboard
+
+## 2-2. 通知起点導線
+- notification center
+  -> self review
+  -> review input
+  -> certification management
+  -> calibration board
+  -> audit log viewer
+  -> growth plan review
+
+## 2-3. 検索起点導線
+- global search
+  -> employee detail context
+  -> evaluation result
+  -> certification detail
+  -> skill detail
+  -> growth plan
+  -> audit detail
+
+# 3. employee 導線
+
+## 3-1. employee 基本導線
+- employee dashboard
+  -> my profile
+  -> academic history
+  -> certification management
+  -> skill inventory
+  -> career history
+  -> achievement input
+
+## 3-2. employee 評価導線
+- employee dashboard
+  -> self review
+  -> submit self review
+  -> waiting status
+  -> my evaluation result
+  -> gap analysis
+  -> growth plan
+  -> recommendation center
+
+## 3-3. employee 目標 / キャリア導線
+- employee dashboard
+  -> mbo linked view
+  -> gap analysis
+  -> growth plan
+  -> career simulation
+  -> target role / target grade update
+
+## 3-4. employee 資格期限導線
+- employee dashboard
+  -> certification management
+  -> expiring certifications
+  -> renewal record
+  -> renewal plan
+  -> growth plan
+
+# 4. manager 導線
+
+## 4-1. manager 基本導線
+- manager dashboard
+  -> team member list
+  -> employee comparison
+  -> team skill heatmap
+
+## 4-2. manager 評価導線
+- manager dashboard
+  -> review queue
+  -> review input
+  -> evidence confirmation
+  -> approve or send back
+  -> growth plan review
+
+## 4-3. manager 面談導線
+- manager dashboard
+  -> team member list
+  -> one-on-one support
+  -> growth plan review
+  -> next action setting
+  -> follow-up reminder
+
+## 4-4. manager 配置 / 昇格導線
+- manager dashboard
+  -> role-fit candidate view
+  -> candidate comparison
+  -> HR share
+  -> growth plan adjustment
+
+# 5. HR 導線
+
+## 5-1. HR 運用導線
+- HR dashboard
+  -> cycle control
+  -> reminder / deadline operation
+  -> cycle publication
+  -> cycle closure
+
+## 5-2. HR 要件 / テンプレート導線
+- HR dashboard
+  -> role requirement management
+  -> template management
+  -> skill dictionary management
+  -> certification master management
+
+## 5-3. HR 校正導線
+- HR dashboard
+  -> calibration board
+  -> evaluator bias analysis
+  -> adjustment registration
+  -> approval / publication
+
+## 5-4. HR 分析導線
+- HR dashboard
+  -> distribution analytics
+  -> 9box / HR portfolio
+  -> successor management
+  -> training / investment analysis
+
+## 5-5. HR 監査導線
+- HR dashboard
+  -> audit log viewer
+  -> filter / trace
+  -> export
+  -> audit follow-up
+
+# 6. executive 導線
+
+## 6-1. executive 基本導線
+- executive dashboard
+  -> org talent summary
+  -> successor pipeline
+  -> investment and growth view
+
+## 6-2. executive 意思決定補助導線
+- executive dashboard
+  -> org talent summary
+  -> critical role shortage detail
+  -> successor pipeline
+  -> HR follow-up request
+
+# 7. admin 導線
+
+## 7-1. admin 運用導線
+- admin dashboard equivalent
+  -> user / role management
+  -> organization / scope control
+  -> localization settings
+  -> currency / reporting settings
+  -> integration settings
+  -> AI assist settings
+
+# 8. 代表画面遷移
+
+## 8-1. 自己評価提出まで
+- employee dashboard
+  -> self review
+  -> evidence attach
+  -> submit
+  -> waiting status
+
+## 8-2. 上長レビュー確定まで
+- manager dashboard
+  -> review input
+  -> evidence confirmation
+  -> manager comment
+  -> approve or send back
+
+## 8-3. 校正から公開まで
+- HR dashboard
+  -> calibration board
+  -> adjustment registration
+  -> publication approval
+  -> published evaluation result
+
+## 8-4. 結果から成長計画まで
+- my evaluation result
+  -> gap analysis
+  -> recommendation center
+  -> growth plan
+  -> progress update
+
+## 8-5. 資格期限アラートから更新まで
+- notification center
+  -> certification management
+  -> renewal record
+  -> renewal plan
+  -> cost linkage if needed
+
+## 8-6. 後継者候補抽出まで
+- HR dashboard
+  -> 9box / HR portfolio
+  -> successor management
+  -> candidate detail
+  -> growth plan linkage
+
+# 9. 遷移制御ルール
+- 未権限画面には直接遷移不可
+- 未提出状態では確定結果画面の一部を制限可能
+- 差戻し中は submit before state に戻す
+- 校正中は edit scope を制限する
+- 公開後の修正は reopen flow を通す
+- AI提案は reference panel 経由のみ閲覧可能にする
+
+# 10. 画面間の必須相互リンク
+- employee dashboard <-> self review
+- my evaluation result <-> gap analysis
+- gap analysis <-> growth plan
+- growth plan <-> recommendation center
+- review input <-> evidence confirmation
+- calibration board <-> evaluator bias analysis
+- distribution analytics <-> 9box / HR portfolio
+- successor management <-> role-fit candidate view
+- audit log viewer <-> evaluation result context
+
+# 11. 端末別遷移密度方針
+
+## smartphone
+- 直線導線を優先
+- 深い比較画面は簡略版
+- 行動起点のショートカットを前面表示
+
+## tablet
+- 面談 / レビュー / 比較の往復導線を強化
+- 2画面比較を許容する
+
+## PC
+- 一覧 -> 詳細 -> 比較 -> 出力 の往復導線を強化
+- HR / executive / admin の複数操作を並列で処理できる構成にする
+
+# 12. 結論
+TalentGrowth の画面遷移は、
+単なるメニュー遷移ではなく、
+評価、証拠、成長、校正、分析が
+相互に往復できる構造として固定する。
+
+中核導線は常に次である。
+- current state
+- evidence
+- decision
+- growth action
+- follow-up
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0703_TALENT_GROWTH_SCREEN_FLOW_AND_NAVIGATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0704_TALENT_GROWTH_SCREEN_PRIORITY_AND_DEVICE_ASSIGNMENT.md -->
+# TALENT GROWTH SCREEN PRIORITY AND DEVICE ASSIGNMENT
+
+status: draft-screen-priority
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の画面群について、
+優先順位、実装段階、主利用端末、重さを固定するための資料である。
+
+# 1. 優先順位の見方
+- priority A: 初期価値に直結し、最優先で必要
+- priority B: 初期運用の完成度を上げる
+- priority C: 高度化・分析強化
+- priority D: 拡張・最適化
+
+# 2. employee 画面優先順位
+
+## priority A
+- TG-EMP-001 employee dashboard
+- TG-EMP-004 certification management
+- TG-EMP-005 skill inventory
+- TG-EMP-008 self review
+- TG-EMP-009 my evaluation result
+- TG-EMP-010 gap analysis
+- TG-EMP-011 growth plan
+
+## priority B
+- TG-EMP-002 my profile
+- TG-EMP-003 academic history
+- TG-EMP-006 career history
+- TG-EMP-007 achievement input
+- TG-EMP-012 recommendation center
+- TG-EMP-013 mbo linked view
+
+## priority C
+- TG-EMP-014 career simulation
+
+# 3. manager 画面優先順位
+
+## priority A
+- TG-MGR-001 manager dashboard
+- TG-MGR-002 team member list
+- TG-MGR-005 review input
+- TG-MGR-006 one-on-one support
+- TG-MGR-007 growth plan review
+
+## priority B
+- TG-MGR-003 employee comparison
+- TG-MGR-004 team skill heatmap
+- TG-MGR-008 role-fit candidate view
+
+# 4. HR 画面優先順位
+
+## priority A
+- TG-HR-001 HR dashboard
+- TG-HR-002 cycle control
+- TG-HR-003 role requirement management
+- TG-HR-004 template management
+- TG-HR-007 calibration board
+- TG-HR-013 audit log viewer
+
+## priority B
+- TG-HR-005 skill dictionary management
+- TG-HR-006 certification master management
+- TG-HR-008 evaluator bias analysis
+- TG-HR-009 distribution analytics
+
+## priority C
+- TG-HR-010 9box / HR portfolio
+- TG-HR-011 successor management
+- TG-HR-012 training / investment analysis
+
+# 5. executive 画面優先順位
+
+## priority B
+- TG-EXE-001 executive dashboard
+- TG-EXE-002 org talent summary
+
+## priority C
+- TG-EXE-003 successor pipeline
+- TG-EXE-004 investment and growth view
+
+# 6. admin 画面優先順位
+
+## priority A
+- TG-ADM-001 user / role management
+- TG-ADM-002 organization / scope control
+
+## priority B
+- TG-ADM-005 integration settings
+
+## priority C
+- TG-ADM-003 localization settings
+- TG-ADM-004 currency / reporting settings
+- TG-ADM-006 AI assist settings
+
+# 7. 端末割当
+
+## smartphone primary
+- TG-GLOBAL-002 home / navigation hub
+- TG-GLOBAL-003 notification center
+- TG-EMP-001 employee dashboard
+- TG-EMP-004 certification management
+- TG-EMP-005 skill inventory
+- TG-EMP-008 self review
+- TG-EMP-011 growth plan
+- TG-EMP-012 recommendation center
+
+## tablet primary
+- TG-MGR-005 review input
+- TG-MGR-006 one-on-one support
+- TG-MGR-007 growth plan review
+- TG-MGR-003 employee comparison
+- TG-HR-007 calibration board simple mode
+
+## PC primary
+- TG-HR-001 HR dashboard
+- TG-HR-002 cycle control
+- TG-HR-003 role requirement management
+- TG-HR-004 template management
+- TG-HR-008 evaluator bias analysis
+- TG-HR-009 distribution analytics
+- TG-HR-010 9box / HR portfolio
+- TG-HR-011 successor management
+- TG-HR-012 training / investment analysis
+- TG-HR-013 audit log viewer
+- TG-EXE-001 executive dashboard
+- TG-EXE-002 org talent summary
+- TG-EXE-003 successor pipeline
+- TG-EXE-004 investment and growth view
+
+# 8. 実装段階
+
+## phase A
+- login / home / notification
+- employee dashboard
+- certification management
+- skill inventory
+- self review
+- my evaluation result
+- gap analysis
+- growth plan
+- manager dashboard
+- team member list
+- review input
+- one-on-one support
+- growth plan review
+- HR dashboard
+- cycle control
+- role requirement management
+- template management
+- calibration board
+- audit log viewer
+- user / role management
+- organization / scope control
+
+## phase B
+- my profile
+- academic history
+- career history
+- achievement input
+- recommendation center
+- mbo linked view
+- employee comparison
+- team skill heatmap
+- skill dictionary management
+- certification master management
+- evaluator bias analysis
+- distribution analytics
+- executive dashboard
+- org talent summary
+- integration settings
+
+## phase C
+- role-fit candidate view
+- 9box / HR portfolio
+- successor management
+- training / investment analysis
+- successor pipeline
+- investment and growth view
+- localization settings
+- currency / reporting settings
+- career simulation
+
+## phase D
+- AI assist settings
+- advanced comparative modes
+- advanced exports
+- optimization for overseas operation
+
+# 9. 重さ区分
+
+## light
+- login
+- notification center
+- my profile
+- certification management
+- skill inventory
+
+## medium
+- self review
+- my evaluation result
+- gap analysis
+- growth plan
+- team member list
+- review input
+
+## heavy
+- employee comparison
+- team skill heatmap
+- calibration board
+- evaluator bias analysis
+- distribution analytics
+- 9box / HR portfolio
+- successor management
+- training / investment analysis
+- executive analytics views
+
+# 10. 設計判断
+- smartphone first は employee flow に置く
+- tablet strong は manager review / 1on1 に置く
+- PC heavy は HR / executive / admin analysis に置く
+- 高負荷分析画面は phase A に入れない
+- ただし監査ログと校正ボードは初期から必須とする
+
+# 11. 結論
+TalentGrowth の画面優先順位は、
+employee self-update / manager review / HR governance を
+最初の中核に置く。
+
+その上で、
+比較、分析、後継者、投資、AI補助を
+段階的に拡張する構成で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0704_TALENT_GROWTH_SCREEN_PRIORITY_AND_DEVICE_ASSIGNMENT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0705_TALENT_GROWTH_SCREEN_BY_SCREEN_API_MAPPING_FIXED.md -->
+# TALENT GROWTH SCREEN BY SCREEN API MAPPING FIXED
+
+status: draft-screen-api-mapping-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の各画面ごとに、
+利用API、主操作、書込責務、参照責務を固定するための資料である。
+
+前提:
+- 画面一覧詳細
+- 画面遷移設計
+- full API endpoint inventory
+- exact payload / exact column / DDL / RLS
+を受けた対応表である。
+
+# 1. 共通原則
+- 1画面1責務を崩さない
+- 画面表示APIと更新APIを分ける
+- 一覧画面と個票画面でAPIを分ける
+- 重い分析画面は集約APIを使う
+- direct table write は行わず、API / procedure 経由に固定する
+- AI補助は通常APIと分離する
+
+# 2. global screens
+
+## TG-GLOBAL-001 ログイン / 認証画面
+read APIs:
+- external auth / SSO handled outside TalentGrowth core
+post-login APIs:
+- GET /api/v1/me
+- GET /api/v1/home
+
+## TG-GLOBAL-002 ホーム / ナビゲーションハブ
+read APIs:
+- GET /api/v1/home
+- GET /api/v1/notifications
+main actions:
+- 通知画面遷移
+- role-based dashboard 遷移
+
+## TG-GLOBAL-003 通知センター
+read APIs:
+- GET /api/v1/notifications
+write APIs:
+- POST /api/v1/notifications/read
+
+## TG-GLOBAL-004 検索画面
+read APIs:
+- GET /api/v1/search
+
+# 3. employee screens
+
+## TG-EMP-001 employee dashboard
+read APIs:
+- GET /api/v1/employee/dashboard
+- GET /api/v1/notifications
+derived links:
+- self review
+- certifications
+- growth plan
+- recommendation center
+
+## TG-EMP-002 my profile
+read APIs:
+- GET /api/v1/employees/{employee_id}
+write APIs:
+- PATCH /api/v1/employees/{employee_id}
+
+## TG-EMP-003 academic history
+read APIs:
+- GET /api/v1/employees/{employee_id}/academics
+write APIs:
+- POST /api/v1/employees/{employee_id}/academics
+- PATCH /api/v1/academics/{employee_academic_history_id}
+
+## TG-EMP-004 certification management
+read APIs:
+- GET /api/v1/employee-certifications
+- GET /api/v1/employee-certifications/expiring
+- GET /api/v1/certification-masters
+write APIs:
+- POST /api/v1/employee-certifications
+- PATCH /api/v1/employee-certifications/{employee_certification_id}
+- POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+
+## TG-EMP-005 skill inventory
+read APIs:
+- GET /api/v1/employee-skills
+- GET /api/v1/skill-masters
+write APIs:
+- POST /api/v1/employee-skills
+- PATCH /api/v1/employee-skills/{employee_skill_id}
+- POST /api/v1/employee-skills/{employee_skill_id}/evidences
+
+## TG-EMP-006 career history
+read APIs:
+- GET /api/v1/employees/{employee_id}/career-histories
+write APIs:
+- POST /api/v1/employees/{employee_id}/career-histories
+- PATCH /api/v1/career-histories/{employee_career_history_id}
+
+## TG-EMP-007 achievement input
+read APIs:
+- GET /api/v1/employees/{employee_id}/achievements
+write APIs:
+- POST /api/v1/employees/{employee_id}/achievements
+- PATCH /api/v1/achievements/{employee_achievement_id}
+
+## TG-EMP-008 self review
+read APIs:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+write APIs:
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+optional actions:
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/withdraw
+
+## TG-EMP-009 my evaluation result
+read APIs:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- GET /api/v1/growth-recommendations
+- GET /api/v1/growth-plans
+
+## TG-EMP-010 gap analysis
+read APIs:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- GET /api/v1/growth-recommendations
+- GET /api/v1/mbo/linked-goals
+main actions:
+- growth plan 作成遷移
+- recommendation accept / reject
+
+## TG-EMP-011 growth plan
+read APIs:
+- GET /api/v1/growth-plans
+- GET /api/v1/growth-plans/{growth_plan_id}
+write APIs:
+- POST /api/v1/growth-plans
+- PATCH /api/v1/growth-plans/{growth_plan_id}
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+
+## TG-EMP-012 recommendation center
+read APIs:
+- GET /api/v1/growth-recommendations
+write APIs:
+- POST /api/v1/growth-recommendations/{growth_recommendation_id}/accept
+- POST /api/v1/growth-recommendations/{growth_recommendation_id}/reject
+
+## TG-EMP-013 mbo linked view
+read APIs:
+- GET /api/v1/mbo/linked-goals
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+
+## TG-EMP-014 career simulation
+read APIs:
+- GET /api/v1/career-simulations
+write APIs:
+- POST /api/v1/career-simulations
+
+# 4. manager screens
+
+## TG-MGR-001 manager dashboard
+read APIs:
+- GET /api/v1/manager/dashboard
+- GET /api/v1/manager/review-queue
+- GET /api/v1/analytics/skill-heatmap
+
+## TG-MGR-002 team member list
+read APIs:
+- GET /api/v1/employees
+- GET /api/v1/employee-certifications
+- GET /api/v1/growth-plans
+
+## TG-MGR-003 employee comparison
+read APIs:
+- GET /api/v1/employees
+- GET /api/v1/evaluation-sheets
+- GET /api/v1/employee-skills
+- GET /api/v1/employee-certifications
+notes:
+- comparison は複数 read API の集約表示でよい
+
+## TG-MGR-004 team skill heatmap
+read APIs:
+- GET /api/v1/analytics/skill-heatmap
+
+## TG-MGR-005 review input
+read APIs:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+write APIs:
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back
+optional AI:
+- POST /api/v1/ai-assist/review-comment-draft
+
+## TG-MGR-006 one-on-one support
+read APIs:
+- GET /api/v1/employees/{employee_id}
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- GET /api/v1/growth-plans
+- GET /api/v1/mbo/linked-goals
+write APIs:
+- PATCH /api/v1/growth-plans/{growth_plan_id}
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+
+## TG-MGR-007 growth plan review
+read APIs:
+- GET /api/v1/growth-plans
+- GET /api/v1/growth-plans/{growth_plan_id}
+write APIs:
+- PATCH /api/v1/growth-plans/{growth_plan_id}
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+
+## TG-MGR-008 role-fit candidate view
+read APIs:
+- GET /api/v1/role-fit/candidates
+- GET /api/v1/promotion-candidates
+main actions:
+- HR共有
+- growth plan 修正
+
+# 5. HR screens
+
+## TG-HR-001 HR dashboard
+read APIs:
+- GET /api/v1/hr/dashboard
+- GET /api/v1/hr/review-queue
+- GET /api/v1/analytics/distribution
+- GET /api/v1/analytics/evaluator-bias
+
+## TG-HR-002 cycle control
+read APIs:
+- GET /api/v1/evaluation-cycles
+write APIs:
+- POST /api/v1/evaluation-cycles
+- PATCH /api/v1/evaluation-cycles/{evaluation_cycle_id}
+- POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/open
+- POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/publish
+- POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/close
+
+## TG-HR-003 role requirement management
+read APIs:
+- GET /api/v1/role-requirements
+write APIs:
+- POST /api/v1/role-requirements
+- PATCH /api/v1/role-requirements/{role_requirement_id}
+- POST /api/v1/role-requirements/{role_requirement_id}/clone
+support APIs:
+- GET /api/v1/role-requirements/{role_requirement_id}/diff
+
+## TG-HR-004 template management
+read APIs:
+- GET /api/v1/templates/evaluations
+write APIs:
+- POST /api/v1/templates/evaluations
+
+## TG-HR-005 skill dictionary management
+read APIs:
+- GET /api/v1/skill-masters
+write APIs:
+- POST /api/v1/skill-masters
+- PATCH /api/v1/skill-masters/{skill_id}
+
+## TG-HR-006 certification master management
+read APIs:
+- GET /api/v1/certification-masters
+write APIs:
+- POST /api/v1/certification-masters
+- PATCH /api/v1/certification-masters/{certification_id}
+
+## TG-HR-007 calibration board
+read APIs:
+- GET /api/v1/calibration-sessions/{calibration_session_id}
+- GET /api/v1/evaluation-sheets
+- GET /api/v1/analytics/evaluator-bias
+write APIs:
+- POST /api/v1/calibration-sessions
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/calibration/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/approve
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/publish
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/reopen
+optional AI:
+- POST /api/v1/ai-assist/bias-check
+
+## TG-HR-008 evaluator bias analysis
+read APIs:
+- GET /api/v1/analytics/evaluator-bias
+
+## TG-HR-009 distribution analytics
+read APIs:
+- GET /api/v1/analytics/distribution
+
+## TG-HR-010 9box / HR portfolio
+read APIs:
+- GET /api/v1/analytics/9box
+
+## TG-HR-011 successor management
+read APIs:
+- GET /api/v1/successor-candidates
+- GET /api/v1/role-fit/candidates
+write APIs:
+- POST /api/v1/successor-candidates
+- PATCH /api/v1/successor-candidates/{successor_candidate_id}
+
+## TG-HR-012 training / investment analysis
+read APIs:
+- GET /api/v1/analytics/training-roi
+
+## TG-HR-013 audit log viewer
+read APIs:
+- POST /api/v1/audit-logs/search
+write / export APIs:
+- POST /api/v1/exports/evaluations
+- POST /api/v1/exports/analytics
+- GET /api/v1/exports/{export_job_id}
+- GET /api/v1/ai-assist/references
+
+# 6. executive screens
+
+## TG-EXE-001 executive dashboard
+read APIs:
+- GET /api/v1/executive/dashboard
+- GET /api/v1/analytics/org-talent-summary
+- GET /api/v1/analytics/training-roi
+
+## TG-EXE-002 org talent summary
+read APIs:
+- GET /api/v1/analytics/org-talent-summary
+- GET /api/v1/analytics/distribution
+
+## TG-EXE-003 successor pipeline
+read APIs:
+- GET /api/v1/successor-candidates
+- GET /api/v1/analytics/9box
+
+## TG-EXE-004 investment and growth view
+read APIs:
+- GET /api/v1/analytics/training-roi
+- GET /api/v1/analytics/org-talent-summary
+export APIs:
+- POST /api/v1/exports/analytics
+- GET /api/v1/exports/{export_job_id}
+
+# 7. admin screens
+
+## TG-ADM-001 user / role management
+read APIs:
+- GET /api/v1/admin/users
+write APIs:
+- PATCH /api/v1/admin/users/{employee_id}/roles
+
+## TG-ADM-002 organization / scope control
+read APIs:
+- GET /api/v1/admin/users
+support source:
+- organization scope source handled by existing master / admin domain
+notes:
+- TalentGrowth側では role / scope reflection を扱う
+
+## TG-ADM-003 localization settings
+read APIs:
+- GET /api/v1/admin/localization
+write APIs:
+- PATCH /api/v1/admin/localization
+
+## TG-ADM-004 currency / reporting settings
+read APIs:
+- GET /api/v1/admin/currency-settings
+write APIs:
+- PATCH /api/v1/admin/currency-settings
+
+## TG-ADM-005 integration settings
+read APIs:
+- GET /api/v1/admin/integrations
+write APIs:
+- PATCH /api/v1/admin/integrations/{integration_code}
+
+## TG-ADM-006 AI assist settings
+read APIs:
+- GET /api/v1/admin/integrations
+- GET /api/v1/ai-assist/references
+notes:
+- AI設定反映は admin integration / feature flag 管理と連携
+
+# 8. 画面別 read / write 比率の考え方
+- employee dashboard 系: read heavy
+- input / review 系: read + controlled write
+- analytics 系: aggregated read only
+- audit 系: read + export job trigger
+- settings 系: limited write
+
+# 9. phase優先度との接続
+
+## phase A screens
+- employee dashboard
+- certifications
+- skills
+- self review
+- evaluation result
+- growth plan
+- manager dashboard
+- review input
+- HR dashboard
+- cycle control
+- role requirement management
+- calibration board
+- audit log viewer
+
+## phase B screens
+- academics
+- career history
+- achievements
+- recommendation center
+- mbo linked view
+- team skill heatmap
+- evaluator bias analysis
+- distribution analytics
+
+## phase C screens
+- career simulation
+- role-fit candidate view
+- 9box
+- successor management
+- investment analysis
+- executive analytics
+- admin settings
+
+# 10. 結論
+TalentGrowth の screen-by-screen API mapping は、
+画面責務と API責務を1対多で結線する形で固定する。
+
+特に初期中核画面では、
+- 1 read 集約API
+- 1〜3 write API
+の構成を基本とする。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0705_TALENT_GROWTH_SCREEN_BY_SCREEN_API_MAPPING_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0706_TALENT_GROWTH_SCREEN_LOADING_REFRESH_SYNC_RULE_FIXED.md -->
+# TALENT GROWTH SCREEN LOADING REFRESH SYNC RULE FIXED
+
+status: draft-screen-refresh-sync-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要画面ごとに、
+loading,
+refresh,
+prefetch,
+sync,
+offline availability
+を固定するための資料である。
+
+# 1. screen rule notation
+- loading_mode
+- refresh_mode
+- prefetch_mode
+- offline_read
+- offline_edit
+- submit_rule
+
+# 2. global screens
+
+## TG-GLOBAL-002 ホーム / ナビゲーションハブ
+loading_mode:
+- skeleton
+refresh_mode:
+- auto on open
+- manual pull-to-refresh on mobile
+prefetch_mode:
+- notifications count
+- role dashboard summary
+offline_read:
+- limited cached last state allowed
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-GLOBAL-003 通知センター
+loading_mode:
+- list skeleton
+refresh_mode:
+- auto periodic light refresh
+- explicit refresh available
+prefetch_mode:
+- none
+offline_read:
+- cached notifications allowed
+offline_edit:
+- mark read queue locally allowed
+submit_rule:
+- read sync on reconnect
+
+# 3. employee screens
+
+## TG-EMP-001 employee dashboard
+loading_mode:
+- card skeleton
+refresh_mode:
+- auto on open
+- refetch after major mutations
+prefetch_mode:
+- growth plan summary
+- expiring certification summary
+offline_read:
+- cached last snapshot allowed
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-EMP-002 my profile
+loading_mode:
+- basic detail skeleton
+refresh_mode:
+- manual refresh available
+prefetch_mode:
+- none
+offline_read:
+- cached read allowed
+offline_edit:
+- draft allowed
+submit_rule:
+- online required for save
+
+## TG-EMP-003 academic history
+loading_mode:
+- list + form lazy load
+refresh_mode:
+- manual
+prefetch_mode:
+- none
+offline_read:
+- cached read allowed
+offline_edit:
+- draft allowed
+submit_rule:
+- online required
+
+## TG-EMP-004 certification management
+loading_mode:
+- list skeleton
+refresh_mode:
+- auto after renewal
+- manual otherwise
+prefetch_mode:
+- certification masters
+offline_read:
+- cached read allowed
+offline_edit:
+- draft allowed
+submit_rule:
+- renewal record online required
+
+## TG-EMP-005 skill inventory
+loading_mode:
+- list skeleton
+refresh_mode:
+- auto after evidence add
+prefetch_mode:
+- skill masters
+offline_read:
+- cached read allowed
+offline_edit:
+- draft allowed
+submit_rule:
+- online required for server save
+
+## TG-EMP-008 self review
+loading_mode:
+- detail load with section placeholders
+refresh_mode:
+- refetch on focus if stale
+prefetch_mode:
+- evaluation sheet summary
+- linked evidence summary
+offline_read:
+- cached last draft allowed
+offline_edit:
+- yes, local draft strong
+submit_rule:
+- final submit online only
+
+## TG-EMP-009 my evaluation result
+loading_mode:
+- result summary skeleton
+refresh_mode:
+- refetch on open
+prefetch_mode:
+- linked gap analysis summary
+offline_read:
+- last published result cache allowed if policy permits
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-EMP-010 gap analysis
+loading_mode:
+- summary skeleton
+refresh_mode:
+- refetch after publish or target change
+prefetch_mode:
+- recommendations
+offline_read:
+- cached read allowed
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-EMP-011 growth plan
+loading_mode:
+- plan summary then action list
+refresh_mode:
+- auto after progress update
+prefetch_mode:
+- linked recommendations
+offline_read:
+- cached read allowed
+offline_edit:
+- progress memo draft allowed
+submit_rule:
+- progress sync online required
+
+## TG-EMP-012 recommendation center
+loading_mode:
+- list skeleton
+refresh_mode:
+- auto after accept/reject
+prefetch_mode:
+- none
+offline_read:
+- cached read allowed
+offline_edit:
+- accept/reject intent may queue locally? no
+submit_rule:
+- online required
+
+## TG-EMP-014 career simulation
+loading_mode:
+- action-triggered calculation loading
+refresh_mode:
+- rerun on explicit trigger
+prefetch_mode:
+- none
+offline_read:
+- cached previous simulation allowed
+offline_edit:
+- scenario draft allowed
+submit_rule:
+- simulation execution online required
+
+# 4. manager screens
+
+## TG-MGR-001 manager dashboard
+loading_mode:
+- summary skeleton
+refresh_mode:
+- auto on open
+- periodic light refresh
+prefetch_mode:
+- review queue first page
+offline_read:
+- limited cached summary allowed
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-MGR-002 team member list
+loading_mode:
+- paginated list skeleton
+refresh_mode:
+- manual and filter-triggered
+prefetch_mode:
+- top visible member summaries
+offline_read:
+- cached read allowed
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-MGR-005 review input
+loading_mode:
+- blocking fetch of latest state before edit if stale
+refresh_mode:
+- refetch on enter / resume
+prefetch_mode:
+- evidence summaries
+- latest comments
+offline_read:
+- last read cache only
+offline_edit:
+- draft allowed cautiously
+submit_rule:
+- online required
+notes:
+- stale write must be blocked by lock_version
+
+## TG-MGR-006 one-on-one support
+loading_mode:
+- summary first, sections progressive
+refresh_mode:
+- manual prominent
+prefetch_mode:
+- growth plan
+- latest evaluation result
+- linked mbo goals
+offline_read:
+- cached summary allowed
+offline_edit:
+- memo draft allowed
+submit_rule:
+- growth update online required
+
+## TG-MGR-007 growth plan review
+loading_mode:
+- plan summary + action list
+refresh_mode:
+- auto after plan mutation
+prefetch_mode:
+- linked recommendations
+offline_read:
+- cached read allowed
+offline_edit:
+- manager note draft allowed
+submit_rule:
+- online required
+
+# 5. HR screens
+
+## TG-HR-001 HR dashboard
+loading_mode:
+- summary cards skeleton
+refresh_mode:
+- auto on open
+- manual refresh visible
+prefetch_mode:
+- review queue count
+- calibration queue count
+offline_read:
+- no guaranteed offline
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-HR-002 cycle control
+loading_mode:
+- list/detail skeleton
+refresh_mode:
+- explicit after action
+prefetch_mode:
+- active cycle summary
+offline_read:
+- cached read optional
+offline_edit:
+- none
+submit_rule:
+- online required
+
+## TG-HR-003 role requirement management
+loading_mode:
+- list + detail split load
+refresh_mode:
+- manual / after save
+prefetch_mode:
+- family/role/grade masters
+offline_read:
+- cached read allowed
+offline_edit:
+- draft allowed
+submit_rule:
+- online required
+
+## TG-HR-007 calibration board
+loading_mode:
+- latest server fetch required
+refresh_mode:
+- refetch on enter and after each save
+prefetch_mode:
+- evaluation summaries only
+offline_read:
+- no
+offline_edit:
+- no
+submit_rule:
+- online required strictly
+
+## TG-HR-008 evaluator bias analysis
+loading_mode:
+- heavy analytics loading
+refresh_mode:
+- manual prominent
+prefetch_mode:
+- current cycle baseline only
+offline_read:
+- cached analytics allowed if generated_at shown
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-HR-009 distribution analytics
+loading_mode:
+- heavy analytics loading
+refresh_mode:
+- manual
+prefetch_mode:
+- last used filter set
+offline_read:
+- cached analytics allowed if generated_at shown
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-HR-013 audit log viewer
+loading_mode:
+- query-based loading, no blind preload
+refresh_mode:
+- user-triggered
+prefetch_mode:
+- none
+offline_read:
+- no
+offline_edit:
+- no
+submit_rule:
+- export request online required
+
+# 6. executive screens
+
+## TG-EXE-001 executive dashboard
+loading_mode:
+- summary skeleton
+refresh_mode:
+- manual visible
+prefetch_mode:
+- org talent summary
+offline_read:
+- cached last summary allowed if timestamp shown
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-EXE-003 successor pipeline
+loading_mode:
+- heavy summary load
+refresh_mode:
+- manual prominent
+prefetch_mode:
+- none
+offline_read:
+- cached summary allowed if timestamp shown
+offline_edit:
+- none
+submit_rule:
+- not applicable
+
+## TG-EXE-004 investment and growth view
+loading_mode:
+- heavy analytics loading
+refresh_mode:
+- manual
+prefetch_mode:
+- last used filter bundle
+offline_read:
+- cached analytics allowed if timestamp shown
+offline_edit:
+- none
+submit_rule:
+- export online required
+
+# 7. admin screens
+
+## TG-ADM-001 user / role management
+loading_mode:
+- paginated list skeleton
+refresh_mode:
+- manual after write
+prefetch_mode:
+- none
+offline_read:
+- no
+offline_edit:
+- no
+submit_rule:
+- online required
+
+## TG-ADM-005 integration settings
+loading_mode:
+- settings detail load
+refresh_mode:
+- explicit only
+prefetch_mode:
+- none
+offline_read:
+- no
+offline_edit:
+- no
+submit_rule:
+- online required
+
+# 8. sync indicator policy
+以下の画面では visible sync status を表示する。
+
+- self review
+- certification management
+- skill inventory
+- growth plan
+- manager review input
+
+sync labels:
+- saved locally
+- syncing
+- synced
+- sync failed
+- conflict detected
+
+# 9. stale data indicator policy
+以下の画面では generated_at / last_refreshed_at を表示する。
+
+- distribution analytics
+- 9box
+- training ROI
+- executive dashboard
+- successor pipeline
+
+# 10. logout / role change rule
+- logout clears sensitive draft cache
+- company switch clears incompatible cache
+- role downgrade clears restricted cached data
+- token refresh failure disables sync and shows reconnect state
+
+# 11. 結論
+TalentGrowth の画面ごとの loading / refresh / sync rule は、
+画面の機微性と更新頻度に応じて分けて固定する。
+
+中核原則は以下である。
+- employee draft-friendly
+- manager review freshness-heavy
+- HR governance online-strict
+- executive analytics timestamp-visible
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0706_TALENT_GROWTH_SCREEN_LOADING_REFRESH_SYNC_RULE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0707_TALENT_GROWTH_SCREEN_BY_SCREEN_FIELD_DEFINITION_FIXED.md -->
+# TALENT GROWTH SCREEN BY SCREEN FIELD DEFINITION FIXED
+
+status: draft-screen-field-definition-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要画面について、
+表示項目、入力項目、編集可否、必須性、データ型、由来元を固定するための資料である。
+
+前提:
+- 画面一覧詳細
+- screen-by-screen API mapping
+- exact table column fixed
+- exact payload fixed
+を受けた field 定義資料である。
+
+# 1. field定義ルール
+各fieldは以下を持つ。
+- field_code
+- label
+- ui_type
+- data_type
+- required
+- editable_by
+- visible_to
+- source
+- notes
+
+editable_by candidates:
+- employee_self
+- manager
+- HR
+- admin
+- none
+
+visible_to candidates:
+- employee_self
+- manager
+- HR
+- executive
+- admin
+
+source candidates:
+- server
+- local_draft
+- derived
+- mixed
+
+# 2. TG-EMP-001 employee dashboard
+
+## score summary section
+- field_code: current_role_fit_score
+  label: 現職適合スコア
+  ui_type: metric_card
+  data_type: decimal
+  required: yes
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+- field_code: target_role_fit_score
+  label: 目標職位適合スコア
+  ui_type: metric_card
+  data_type: decimal
+  required: yes
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+- field_code: growth_potential_score
+  label: 成長ポテンシャル
+  ui_type: metric_card
+  data_type: decimal
+  required: yes
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+- field_code: current_state_rank
+  label: 現在ランク
+  ui_type: badge
+  data_type: enum
+  required: yes
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+## action / alert section
+- field_code: next_review_due_at
+  label: 次回レビュー日
+  ui_type: date_text
+  data_type: date
+  required: no
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+- field_code: pending_items
+  label: 未対応項目
+  ui_type: list_summary
+  data_type: array
+  required: yes
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+- field_code: expiring_certifications
+  label: 期限近い資格
+  ui_type: alert_list
+  data_type: array
+  required: yes
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+- field_code: top_growth_actions
+  label: 優先成長アクション
+  ui_type: action_list
+  data_type: array
+  required: yes
+  editable_by: none
+  visible_to: employee_self
+  source: server
+
+# 3. TG-EMP-002 my profile
+
+## identity section
+- field_code: full_name
+  label: 氏名
+  ui_type: text
+  data_type: string
+  required: yes
+  editable_by: HR
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: display_name
+  label: 表示名
+  ui_type: text
+  data_type: string
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: email
+  label: メールアドレス
+  ui_type: email
+  data_type: string
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,HR
+  source: mixed
+
+- field_code: phone
+  label: 電話番号
+  ui_type: tel
+  data_type: string
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,HR
+  source: mixed
+
+## organization section
+- field_code: organization_id
+  label: 所属
+  ui_type: select_readonly
+  data_type: id
+  required: yes
+  editable_by: HR
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: position_title
+  label: 役職
+  ui_type: text_readonly
+  data_type: string
+  required: no
+  editable_by: HR
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: current_job_role_id
+  label: 現職種
+  ui_type: select_readonly
+  data_type: id
+  required: yes
+  editable_by: HR
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: current_grade_id
+  label: 現等級
+  ui_type: select_readonly
+  data_type: id
+  required: no
+  editable_by: HR
+  visible_to: employee_self,manager,HR
+  source: server
+
+## preference section
+- field_code: career_preference_text
+  label: 希望キャリア
+  ui_type: textarea
+  data_type: string
+  required: no
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+# 4. TG-EMP-003 academic history
+
+## grid/list fields
+- field_code: school_name
+  label: 学校名
+  ui_type: text
+  data_type: string
+  required: yes
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: faculty_name
+  label: 学部
+  ui_type: text
+  data_type: string
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: department_name
+  label: 学科
+  ui_type: text
+  data_type: string
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: degree_code
+  label: 学位
+  ui_type: select
+  data_type: enum
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: major_name
+  label: 専攻
+  ui_type: text
+  data_type: string
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: graduation_status_code
+  label: 卒業状態
+  ui_type: select
+  data_type: enum
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: graduation_date
+  label: 卒業年月
+  ui_type: month_picker
+  data_type: date
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: academic_relevance_score
+  label: 職務関連度
+  ui_type: readonly_score
+  data_type: decimal
+  required: no
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: derived
+
+- field_code: evidence_file_id
+  label: 根拠ファイル
+  ui_type: file_ref
+  data_type: id
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,HR
+  source: mixed
+
+# 5. TG-EMP-004 certification management
+
+- field_code: certification_id
+  label: 資格名
+  ui_type: searchable_select
+  data_type: id
+  required: yes
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: certification_name_snapshot
+  label: 資格名スナップショット
+  ui_type: text_readonly
+  data_type: string
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: issuer_name_snapshot
+  label: 発行団体
+  ui_type: text_readonly
+  data_type: string
+  required: no
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: license_number
+  label: 資格番号
+  ui_type: text
+  data_type: string
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,HR
+  source: mixed
+
+- field_code: acquired_date
+  label: 取得日
+  ui_type: date_picker
+  data_type: date
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: expiry_date
+  label: 有効期限
+  ui_type: date_picker
+  data_type: date
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: renewal_required
+  label: 更新要否
+  ui_type: readonly_boolean
+  data_type: boolean
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: certification_status_code
+  label: 状態
+  ui_type: status_badge
+  data_type: enum
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: derived
+
+- field_code: evidence_file_id
+  label: 証書ファイル
+  ui_type: file_upload
+  data_type: id
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,HR
+  source: mixed
+
+# 6. TG-EMP-005 skill inventory
+
+- field_code: skill_id
+  label: スキル
+  ui_type: searchable_select
+  data_type: id
+  required: yes
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: proficiency_level
+  label: 熟練度
+  ui_type: level_select
+  data_type: integer
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+  notes:
+  - employee_self は self input
+  - manager は manager comment / manager rating 文脈で編集可否分離可
+
+- field_code: self_rating
+  label: 自己評価
+  ui_type: rating
+  data_type: decimal
+  required: no
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: manager_rating
+  label: 上長評価
+  ui_type: rating
+  data_type: decimal
+  required: no
+  editable_by: manager,HR
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: last_used_at
+  label: 最終使用日
+  ui_type: date_picker
+  data_type: date
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: usage_frequency_code
+  label: 使用頻度
+  ui_type: select
+  data_type: enum
+  required: no
+  editable_by: employee_self,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: evidence_count
+  label: 根拠件数
+  ui_type: readonly_number
+  data_type: integer
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: derived
+
+- field_code: evidence_confidence
+  label: 根拠信頼度
+  ui_type: readonly_score
+  data_type: decimal
+  required: no
+  editable_by: none
+  visible_to: manager,HR
+  source: derived
+
+- field_code: employee_comment
+  label: 自己コメント
+  ui_type: textarea
+  data_type: string
+  required: no
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: manager_comment
+  label: 上長コメント
+  ui_type: textarea
+  data_type: string
+  required: no
+  editable_by: manager,HR
+  visible_to: manager,HR
+  source: mixed
+
+# 7. TG-EMP-008 self review
+
+## header fields
+- field_code: evaluation_sheet_id
+  label: 評価シートID
+  ui_type: hidden
+  data_type: id
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: evaluation_status_code
+  label: 状態
+  ui_type: status_badge
+  data_type: enum
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: server
+
+## editable fields
+- field_code: self_review_comment
+  label: 自己評価コメント
+  ui_type: textarea
+  data_type: string
+  required: conditional
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: local_draft
+
+- field_code: skill_items[].employee_skill_id
+  label: スキルID
+  ui_type: hidden
+  data_type: id
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: skill_items[].proficiency_level
+  label: 自己評価熟練度
+  ui_type: level_select
+  data_type: integer
+  required: conditional
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: local_draft
+
+- field_code: skill_items[].self_comment
+  label: スキル自己コメント
+  ui_type: textarea
+  data_type: string
+  required: no
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: local_draft
+
+- field_code: skill_items[].evidence_ids
+  label: 根拠ID群
+  ui_type: evidence_picker
+  data_type: array
+  required: conditional
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: local_draft
+
+- field_code: achievement_items[].employee_achievement_id
+  label: 実績ID
+  ui_type: hidden
+  data_type: id
+  required: yes
+  editable_by: none
+  visible_to: employee_self,manager,HR
+  source: server
+
+- field_code: achievement_items[].self_comment
+  label: 実績自己コメント
+  ui_type: textarea
+  data_type: string
+  required: no
+  editable_by: employee_self
+  visible_to: employee_self,manager,HR
+  source: local_draft
+
+# 8. TG-MGR-005 review input
+
+- field_code: manager_review_comment
+  label: 上長評価コメント
+  ui_type: textarea
+  data_type: string
+  required: conditional
+  editable_by: manager
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: score_inputs.behavior_score
+  label: 行動評価
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: manager,HR
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: score_inputs.performance_score
+  label: 実績評価
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: manager,HR
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: score_inputs.current_role_fit_score
+  label: 現職適合
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: manager,HR
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: score_inputs.target_role_fit_score
+  label: 目標職位適合
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: manager,HR
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: score_inputs.growth_potential_score
+  label: 成長ポテンシャル
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: manager,HR
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: competency_items[].competency_code
+  label: コンピテンシー
+  ui_type: readonly_label
+  data_type: code
+  required: yes
+  editable_by: none
+  visible_to: manager,HR
+  source: server
+
+- field_code: competency_items[].manager_rating
+  label: コンピテンシー評価
+  ui_type: level_select
+  data_type: integer
+  required: yes
+  editable_by: manager
+  visible_to: manager,HR
+  source: mixed
+
+- field_code: competency_items[].comment
+  label: コンピテンシーコメント
+  ui_type: textarea
+  data_type: string
+  required: no
+  editable_by: manager
+  visible_to: manager,HR
+  source: mixed
+
+# 9. TG-HR-003 role requirement management
+
+- field_code: job_family_id
+  label: 職群
+  ui_type: searchable_select
+  data_type: id
+  required: no
+  editable_by: HR
+  visible_to: HR,executive
+  source: mixed
+
+- field_code: job_role_id
+  label: 職種
+  ui_type: searchable_select
+  data_type: id
+  required: yes
+  editable_by: HR
+  visible_to: HR,executive
+  source: mixed
+
+- field_code: grade_id
+  label: 等級
+  ui_type: searchable_select
+  data_type: id
+  required: no
+  editable_by: HR
+  visible_to: HR,executive
+  source: mixed
+
+- field_code: requirement_version
+  label: 要件バージョン
+  ui_type: text
+  data_type: string
+  required: yes
+  editable_by: HR
+  visible_to: HR,executive
+  source: mixed
+
+- field_code: effective_from
+  label: 適用開始日
+  ui_type: date_picker
+  data_type: date
+  required: yes
+  editable_by: HR
+  visible_to: HR,executive
+  source: mixed
+
+- field_code: effective_to
+  label: 適用終了日
+  ui_type: date_picker
+  data_type: date
+  required: no
+  editable_by: HR
+  visible_to: HR,executive
+  source: mixed
+
+- field_code: overall_weight_skill
+  label: スキル重み
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: overall_weight_certification
+  label: 資格重み
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: overall_weight_experience
+  label: 経験重み
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: overall_weight_performance
+  label: 実績重み
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: overall_weight_behavior
+  label: 行動重み
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: overall_weight_growth
+  label: 成長重み
+  ui_type: numeric_input
+  data_type: decimal
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+# 10. TG-HR-007 calibration board
+
+- field_code: pre_calibration_rank
+  label: 校正前ランク
+  ui_type: readonly_badge
+  data_type: enum
+  required: yes
+  editable_by: none
+  visible_to: HR
+  source: server
+
+- field_code: post_calibration_rank
+  label: 校正後ランク
+  ui_type: rank_select
+  data_type: enum
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: adjusted_scores.current_role_fit_score
+  label: 校正後現職適合
+  ui_type: numeric_input
+  data_type: decimal
+  required: no
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: adjusted_scores.growth_potential_score
+  label: 校正後成長ポテンシャル
+  ui_type: numeric_input
+  data_type: decimal
+  required: no
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: calibration_reason
+  label: 校正理由
+  ui_type: textarea
+  data_type: string
+  required: yes
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+- field_code: meeting_note
+  label: 会議メモ
+  ui_type: textarea
+  data_type: string
+  required: no
+  editable_by: HR
+  visible_to: HR
+  source: mixed
+
+# 11. TG-EMP-011 / TG-MGR-007 growth plan
+
+- field_code: plan_title
+  label: 計画名
+  ui_type: text
+  data_type: string
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: target_job_role_id
+  label: 目標職種
+  ui_type: searchable_select
+  data_type: id
+  required: no
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: target_grade_id
+  label: 目標等級
+  ui_type: searchable_select
+  data_type: id
+  required: no
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: plan_period_start
+  label: 計画開始日
+  ui_type: date_picker
+  data_type: date
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: plan_period_end
+  label: 計画終了日
+  ui_type: date_picker
+  data_type: date
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: next_review_due_at
+  label: 次回見直し日
+  ui_type: date_picker
+  data_type: date
+  required: no
+  editable_by: manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: actions[].action_type_code
+  label: アクション種別
+  ui_type: select
+  data_type: enum
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: actions[].action_title
+  label: アクション名
+  ui_type: text
+  data_type: string
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: actions[].priority_code
+  label: 優先度
+  ui_type: select
+  data_type: enum
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: actions[].due_date
+  label: 期限
+  ui_type: date_picker
+  data_type: date
+  required: no
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+- field_code: actions[].completion_percent
+  label: 進捗率
+  ui_type: progress_input
+  data_type: integer
+  required: yes
+  editable_by: employee_self,manager,HR
+  visible_to: employee_self,manager,HR
+  source: mixed
+
+# 12. TG-HR-013 audit log viewer
+
+- field_code: occurred_at
+  label: 発生日時
+  ui_type: datetime_text
+  data_type: datetime
+  required: yes
+  editable_by: none
+  visible_to: HR,admin
+  source: server
+
+- field_code: actor_employee_id
+  label: 操作者
+  ui_type: reference_text
+  data_type: id
+  required: yes
+  editable_by: none
+  visible_to: HR,admin
+  source: server
+
+- field_code: entity_type
+  label: 対象種別
+  ui_type: badge
+  data_type: enum
+  required: yes
+  editable_by: none
+  visible_to: HR,admin
+  source: server
+
+- field_code: entity_id
+  label: 対象ID
+  ui_type: text
+  data_type: id
+  required: yes
+  editable_by: none
+  visible_to: HR,admin
+  source: server
+
+- field_code: action_type
+  label: 操作種別
+  ui_type: badge
+  data_type: enum
+  required: yes
+  editable_by: none
+  visible_to: HR,admin
+  source: server
+
+- field_code: audit_trace_id
+  label: 監査トレースID
+  ui_type: text
+  data_type: id
+  required: no
+  editable_by: none
+  visible_to: HR,admin
+  source: server
+
+# 13. field visibility principle summary
+- employee_self には自分の評価詳細と成長計画を見せる
+- manager には配下の評価・根拠・計画を見せる
+- HR には制度運用に必要な raw detail を見せる
+- executive には aggregate-first とする
+- admin は技術運用に必要な範囲を基本とし raw評価内容の全面可視を既定にしない
+
+# 14. 結論
+TalentGrowth の screen-by-screen field definition は、
+UI項目を列レベルまで固定し、
+editable / visible / source を明示することで
+画面実装と権限制御のずれを防ぐ。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0707_TALENT_GROWTH_SCREEN_BY_SCREEN_FIELD_DEFINITION_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0708_TALENT_GROWTH_EXACT_SCREEN_WIREFRAME_BLOCK_FIXED.md -->
+# TALENT GROWTH EXACT SCREEN WIREFRAME BLOCK FIXED
+
+status: draft-wireframe-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要画面について、
+wireframe を block 単位で固定するための資料である。
+
+前提:
+- ここで扱うのは visual component の正式共通部品設計ではない
+- ここでは画面責務としての block 配置を固定する
+- employee / manager / HR / executive / admin の役割差を前提とする
+- iPhone / Android / PC / tablet 対応を前提とする
+
+# 1. wireframe 表記ルール
+各画面は以下の block で表記する。
+
+- block_id
+- block_name
+- purpose
+- priority
+- content
+- action
+- visibility
+- device_layout
+
+priority:
+- core
+- high
+- medium
+- low
+
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+# 2. TG-GLOBAL-002 ホーム / ナビゲーションハブ
+
+## fixed blocks
+### block_id: HUB-001
+block_name: top header
+purpose:
+- 画面タイトル、会社、現在ロール、言語を示す
+priority:
+- core
+content:
+- app title
+- company name
+- role badge
+- locale switch entry
+action:
+- notification center
+- profile / settings entry
+visibility:
+- all authenticated users
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: HUB-002
+block_name: alert summary strip
+purpose:
+- 未対応件数、期限警告を即時可視化
+priority:
+- core
+content:
+- pending review count
+- expiring certification count
+- action required count
+action:
+- tap to filtered list
+visibility:
+- role-based
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: HUB-003
+block_name: role shortcut grid
+purpose:
+- 役割別主要導線への最短移動
+priority:
+- core
+content:
+- employee dashboard
+- manager dashboard
+- HR dashboard
+- executive dashboard
+- admin entry
+action:
+- direct navigation
+visibility:
+- role-based
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: HUB-004
+block_name: recent activity list
+purpose:
+- 最近見た評価、計画、通知対象へ戻す
+priority:
+- medium
+content:
+- recent evaluation sheets
+- recent growth plans
+- recent exports
+action:
+- reopen recent target
+visibility:
+- authenticated user
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+# 3. TG-EMP-001 employee dashboard
+
+## overall layout
+smartphone:
+- header
+- score cards
+- alert block
+- growth action block
+- trend block
+- quick actions
+tablet/pc:
+- left main summary
+- right alerts / next actions
+- lower trend and linked panels
+
+## fixed blocks
+### block_id: EMP-DASH-001
+block_name: identity summary
+purpose:
+- 本人の所属と現在ポジションを明示
+priority:
+- core
+content:
+- display_name
+- organization
+- current_job_role
+- current_grade
+action:
+- go to my profile
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EMP-DASH-002
+block_name: score card row
+purpose:
+- 現在地を最短把握
+priority:
+- core
+content:
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- current_state_rank
+action:
+- open evaluation result
+- open gap analysis
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EMP-DASH-003
+block_name: alert panel
+purpose:
+- 期限・未対応の警告表示
+priority:
+- core
+content:
+- expiring_certifications
+- pending_items
+- next_review_due_at
+action:
+- open certification management
+- open self review
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EMP-DASH-004
+block_name: growth action top list
+purpose:
+- 今やるべきことを固定で見せる
+priority:
+- core
+content:
+- top_growth_actions
+- priority badge
+- due date
+action:
+- open growth plan
+- open recommendation center
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EMP-DASH-005
+block_name: score trend chart
+purpose:
+- 直近推移可視化
+priority:
+- high
+content:
+- previous_total_score
+- current_total_score
+- delta
+- mini trend
+action:
+- open my evaluation result
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EMP-DASH-006
+block_name: quick action footer
+purpose:
+- 主要操作への即時導線
+priority:
+- core
+content:
+- start self review
+- add certification
+- update skill
+- view growth plan
+action:
+- direct navigation
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+# 4. TG-EMP-008 self review
+
+## overall layout
+smartphone:
+- sticky header
+- progress / status block
+- comment block
+- skill item accordion list
+- achievement section
+- fixed bottom save / submit bar
+
+tablet/pc:
+- left editable form
+- right evidence / summary / warnings
+
+## fixed blocks
+### block_id: SELF-REV-001
+block_name: review header
+purpose:
+- 対象サイクルと状態を明示
+priority:
+- core
+content:
+- cycle name
+- evaluation_status_code
+- autosave / sync status
+action:
+- back
+- help
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: SELF-REV-002
+block_name: completion and warning strip
+purpose:
+- 未入力 / 根拠不足 / 差戻し状態を示す
+priority:
+- core
+content:
+- completion percent
+- missing required count
+- evidence shortage warning
+- sent back reason summary
+action:
+- jump to missing section
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: SELF-REV-003
+block_name: self review comment card
+purpose:
+- 総括自己評価入力
+priority:
+- core
+content:
+- self_review_comment
+action:
+- local save
+- server save
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: SELF-REV-004
+block_name: skill review list
+purpose:
+- スキル別自己評価入力
+priority:
+- core
+content:
+- skill label
+- current proficiency
+- self input proficiency
+- self comment
+- linked evidence ids
+action:
+- edit
+- add evidence
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: SELF-REV-005
+block_name: achievement commentary list
+purpose:
+- 実績ごとの自己コメント入力
+priority:
+- high
+content:
+- achievement title
+- period
+- metric summary
+- self comment
+action:
+- edit
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: SELF-REV-006
+block_name: evidence side panel
+purpose:
+- 参照中の根拠を右側に並べる
+priority:
+- high
+content:
+- selected evidence summary
+- missing evidence warning
+action:
+- open linked evidence
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column collapsed
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: SELF-REV-007
+block_name: bottom action bar
+purpose:
+- save / submit を固定する
+priority:
+- core
+content:
+- save draft
+- submit review
+- sync status
+action:
+- save
+- submit
+visibility:
+- employee_self
+device_layout:
+- smartphone_single_column sticky
+- tablet_two_column sticky
+- pc_multi_panel sticky
+
+# 5. TG-MGR-005 review input
+
+## overall layout
+smartphone/tablet:
+- summary header
+- employee summary card
+- self review summary
+- score input block
+- competency block
+- manager comment
+- action bar
+
+pc:
+- left employee/evidence pane
+- center scoring pane
+- right summary/risk pane
+
+## fixed blocks
+### block_id: MGR-REV-001
+block_name: target employee header
+purpose:
+- 誰の評価かを誤認しない
+priority:
+- core
+content:
+- employee name
+- organization
+- current role
+- cycle
+- status
+action:
+- open employee detail
+visibility:
+- manager,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: MGR-REV-002
+block_name: self review summary card
+purpose:
+- 本人申告の要点を短く把握
+priority:
+- core
+content:
+- self review comment summary
+- top strengths
+- top gaps
+- evidence count
+action:
+- expand full self review
+visibility:
+- manager,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: MGR-REV-003
+block_name: score input form
+purpose:
+- 上長評価点入力
+priority:
+- core
+content:
+- behavior_score
+- performance_score
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+action:
+- edit numeric values
+visibility:
+- manager,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: MGR-REV-004
+block_name: competency block list
+purpose:
+- コンピテンシー別評価入力
+priority:
+- high
+content:
+- competency label
+- manager_rating
+- competency comment
+action:
+- edit
+visibility:
+- manager,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: MGR-REV-005
+block_name: evidence inspection panel
+purpose:
+- 根拠確認を隣接表示
+priority:
+- core
+content:
+- selected evidence summary
+- verification state
+- linked score item
+action:
+- open evidence
+visibility:
+- manager,HR
+device_layout:
+- smartphone_single_column collapsed
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: MGR-REV-006
+block_name: manager comment card
+purpose:
+- 総括コメント記入
+priority:
+- core
+content:
+- manager_review_comment
+action:
+- edit
+- generate AI draft optional
+visibility:
+- manager,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: MGR-REV-007
+block_name: decision bar
+purpose:
+- save / submit / send back を固定配置
+priority:
+- core
+content:
+- save draft
+- submit review
+- send back
+- latest lock_version info
+action:
+- save
+- submit
+- send back
+visibility:
+- manager,HR
+device_layout:
+- smartphone_single_column sticky
+- tablet_two_column sticky
+- pc_multi_panel sticky
+
+# 6. TG-HR-001 HR dashboard
+
+## overall layout
+pc first:
+- top KPI row
+- left queue / alerts column
+- center operation blocks
+- right governance / analytics blocks
+tablet:
+- two-column summary
+smartphone:
+- simplified summary only
+
+## fixed blocks
+### block_id: HR-DASH-001
+block_name: KPI top row
+purpose:
+- 人事が最重要数値を冒頭で把握
+priority:
+- core
+content:
+- pending_hr_review_count
+- pending_calibration_count
+- certification_expiring_soon_rate
+- evaluator_bias_alert_count
+- successor_coverage_rate
+action:
+- jump to target screen
+visibility:
+- HR
+device_layout:
+- smartphone_single_column simplified
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: HR-DASH-002
+block_name: cycle control summary
+purpose:
+- 進行中サイクルの状態把握
+priority:
+- core
+content:
+- active_cycle_count
+- due dates
+- publish status
+action:
+- open cycle control
+visibility:
+- HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: HR-DASH-003
+block_name: review queue summary
+purpose:
+- 滞留可視化
+priority:
+- core
+content:
+- pending_hr_review_count
+- overdue review count
+- sent back count
+action:
+- open HR review queue
+visibility:
+- HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: HR-DASH-004
+block_name: governance alert panel
+purpose:
+- 偏り、監査、期限逸脱を警告
+priority:
+- core
+content:
+- evaluator bias alerts
+- missing audit flags
+- stale calibration issues
+action:
+- open analytics / audit
+visibility:
+- HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: HR-DASH-005
+block_name: analytics preview panel
+purpose:
+- 分布・後継者・投資の縮約表示
+priority:
+- high
+content:
+- distribution preview
+- successor preview
+- ROI preview
+action:
+- open analytics pages
+visibility:
+- HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+# 7. TG-HR-007 calibration board
+
+## overall layout
+pc mandatory strong:
+- top session summary
+- left target list
+- center selected sheet before/after comparison
+- right adjustment form and meeting note
+tablet:
+- two-column workable
+smartphone:
+- unsupported or view-only recommended
+
+## fixed blocks
+### block_id: CAL-001
+block_name: session header
+purpose:
+- 校正セッションの文脈固定
+priority:
+- core
+content:
+- session name
+- cycle
+- date
+- session status
+action:
+- switch session
+visibility:
+- HR
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: CAL-002
+block_name: candidate list pane
+purpose:
+- 校正対象一覧表示
+priority:
+- core
+content:
+- employee name
+- pre rank
+- pre score
+- bias flag
+- changed marker
+action:
+- select target
+visibility:
+- HR
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: CAL-003
+block_name: pre/post comparison pane
+purpose:
+- 校正前後差分を見せる
+priority:
+- core
+content:
+- pre score summary
+- proposed adjusted score
+- pre rank
+- post rank
+- evidence count
+- comparison note
+action:
+- inspect detail
+visibility:
+- HR
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: CAL-004
+block_name: adjustment form pane
+purpose:
+- 校正値と理由入力
+priority:
+- core
+content:
+- post_calibration_rank
+- adjusted score fields
+- calibration_reason
+- meeting_note
+action:
+- save calibration
+- approve
+- reopen later
+visibility:
+- HR
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: CAL-005
+block_name: governance warning strip
+purpose:
+- 大きすぎる補正の警告
+priority:
+- high
+content:
+- delta threshold warning
+- missing reason warning
+- missing meeting note warning
+action:
+- jump to invalid field
+visibility:
+- HR
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+# 8. TG-EXE-001 executive dashboard
+
+## overall layout
+pc first:
+- top strategic KPI
+- organization comparison
+- successor coverage
+- investment summary
+tablet:
+- two-column reduced
+smartphone:
+- summary only
+
+## fixed blocks
+### block_id: EXE-DASH-001
+block_name: strategy KPI row
+purpose:
+- 経営が一目で状態把握
+priority:
+- core
+content:
+- critical_role_coverage_rate
+- ready_now_successor_rate
+- org_average_growth_potential_score
+- training_investment_total
+- training_roi_ratio
+action:
+- open deeper analytics
+visibility:
+- executive,HR
+device_layout:
+- smartphone_single_column simplified
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EXE-DASH-002
+block_name: organization comparison panel
+purpose:
+- 組織横断比較
+priority:
+- core
+content:
+- org average scores
+- shortage flags
+- top risk orgs
+action:
+- open org talent summary
+visibility:
+- executive,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EXE-DASH-003
+block_name: successor pipeline preview
+purpose:
+- critical role カバー状況
+priority:
+- core
+content:
+- role count
+- covered roles
+- uncovered roles
+- ready-now preview
+action:
+- open successor pipeline
+visibility:
+- executive,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: EXE-DASH-004
+block_name: investment and growth preview
+purpose:
+- 人材投資と成長の関係可視化
+priority:
+- high
+content:
+- investment total
+- ROI ratio
+- trend
+action:
+- open investment and growth view
+visibility:
+- executive,HR
+device_layout:
+- smartphone_single_column
+- tablet_two_column
+- pc_multi_panel
+
+# 9. TG-HR-013 audit log viewer
+
+## overall layout
+pc first:
+- top filter bar
+- left saved filters / quick types
+- center result list
+- right detail pane
+smartphone:
+- not primary
+
+## fixed blocks
+### block_id: AUDIT-001
+block_name: filter bar
+purpose:
+- 検索条件入力
+priority:
+- core
+content:
+- date_from
+- date_to
+- actor
+- entity_type
+- entity_id
+- action_type
+- audit_trace_id
+action:
+- search
+- clear
+visibility:
+- HR,admin
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: AUDIT-002
+block_name: result list pane
+purpose:
+- ヒット結果一覧
+priority:
+- core
+content:
+- occurred_at
+- actor
+- entity_type
+- entity_id
+- action_type
+- summary
+action:
+- select row
+visibility:
+- HR,admin
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: AUDIT-003
+block_name: detail pane
+purpose:
+- 変更内容詳細表示
+priority:
+- core
+content:
+- old/new summary
+- audit_trace_id
+- linked export / AI reference if any
+action:
+- open related entity
+- export current result
+visibility:
+- HR,admin
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+# 10. TG-ADM-001 user / role management
+
+## fixed blocks
+### block_id: ADM-USER-001
+block_name: user filter bar
+purpose:
+- 対象ユーザー絞込
+priority:
+- core
+content:
+- q
+- role filter
+- active filter
+action:
+- search
+visibility:
+- admin
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: ADM-USER-002
+block_name: user list pane
+purpose:
+- 対象ユーザー一覧
+priority:
+- core
+content:
+- employee name
+- current roles
+- organization scope
+- status
+action:
+- select user
+visibility:
+- admin
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+### block_id: ADM-USER-003
+block_name: role assignment pane
+purpose:
+- ロール付与変更
+priority:
+- core
+content:
+- current roles
+- editable role set
+- scope display
+action:
+- update roles
+visibility:
+- admin
+device_layout:
+- tablet_two_column
+- pc_multi_panel
+
+# 11. wireframe固定のまとめ
+- employee flow は single-columnでも成立する block 構成にする
+- manager review は evidence 隣接配置を固定する
+- HR calibration は pc multi-panel を前提にする
+- executive dashboard は KPI + comparison + successor + investment の4面を固定する
+- audit viewer は filter/list/detail の3面構成を固定する
+
+# 12. 結論
+TalentGrowth の wireframe は、
+単なる画面名定義ではなく、
+block 単位で責務を固定することで
+UI実装とAPI結線のぶれを防ぐ。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0708_TALENT_GROWTH_EXACT_SCREEN_WIREFRAME_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0709_TALENT_GROWTH_LAYOUT_VARIANT_BY_DEVICE_FIXED.md -->
+# TALENT GROWTH LAYOUT VARIANT BY DEVICE FIXED
+
+status: draft-layout-variant-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要画面について、
+device 別レイアウト差分を固定するための資料である。
+
+# 1. smartphone 基本ルール
+- single column first
+- sticky bottom action bar allowed
+- summary first, detail collapse later
+- compare / analytics は簡略版
+- full calibration editing は非推奨
+
+# 2. tablet 基本ルール
+- two-column standard
+- left content / right assist panel
+- one-on-one, review, comparison に最適化
+- manager flow を最優先
+
+# 3. PC 基本ルール
+- multi-panel allowed
+- list/detail/assist の3面構成許可
+- HR / executive / admin の高密度画面前提
+- filter bar 常時表示可
+
+# 4. key screen variants
+
+## employee dashboard
+smartphone:
+- score row stacked
+- alerts below
+- actions fixed lower section
+tablet:
+- summary left / alerts right
+pc:
+- summary top / actions right / trend lower
+
+## self review
+smartphone:
+- accordion editing
+- sticky save/submit bar
+tablet:
+- left form / right evidence
+pc:
+- left form / center context / right warnings
+
+## manager review input
+smartphone:
+- simplified but usable
+tablet:
+- recommended primary
+pc:
+- evidence + score + comment 3面
+
+## HR dashboard
+smartphone:
+- summary only
+tablet:
+- limited operational use
+pc:
+- full primary
+
+## calibration board
+smartphone:
+- unsupported recommended
+tablet:
+- reduced mode
+pc:
+- full primary mandatory
+
+## executive dashboard
+smartphone:
+- KPI summary only
+tablet:
+- 2-column summary
+pc:
+- full strategic view
+
+## audit log viewer
+smartphone:
+- unsupported recommended
+tablet:
+- list/detail possible
+pc:
+- full primary
+
+# 5. responsive breakpoint stance
+exact pixel rule is implementation concern,
+but semantic breakpoints are fixed as:
+- phone compact
+- tablet medium
+- desktop wide
+
+# 6. 結論
+TalentGrowth の device variant は、
+employee mobile-first,
+manager tablet-strong,
+HR/executive/admin PC-primary
+で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/07.ui-ux/0709_TALENT_GROWTH_LAYOUT_VARIANT_BY_DEVICE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0802_TALENT_GROWTH_API_REQUEST_RESPONSE_EXACT_PAYLOAD.md -->
+# TALENT GROWTH API REQUEST RESPONSE EXACT PAYLOAD
+
+status: draft-exact-payload
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要APIについて、
+request / response の exact payload を固定するための資料である。
+
+前提:
+- JSON API を前提とする
+- 多言語 / 多通貨 / multi-device を前提とする
+- AI補助は補助APIとして分離する
+- 最終評価確定は人間承認前提とする
+
+# 1. 共通レスポンス原則
+
+## 1-1. success envelope
+~~~json
+{
+  "ok": true,
+  "data": {},
+  "meta": {
+    "request_id": "req_01HXYZ...",
+    "server_time": "2026-04-12T12:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## 1-2. error envelope
+~~~json
+{
+  "ok": false,
+  "error": {
+    "code": "TG_VALIDATION_ERROR",
+    "message": "validation failed",
+    "details": [
+      {
+        "field": "skill_items[0].proficiency_level",
+        "reason": "required"
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "req_01HXYZ...",
+    "server_time": "2026-04-12T12:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 2. 共通ヘッダ / 共通項目
+
+## 2-1. request headers
+- Authorization: Bearer <token>
+- Content-Type: application/json
+- Accept-Language: ja-JP / en-US など
+- X-TG-Company-Id: company scope
+- X-TG-Device-Type: iphone / android / pc / tablet
+
+## 2-2. 共通ID方針
+- company_id
+- employee_id
+- evaluation_cycle_id
+- evaluation_sheet_id
+- growth_plan_id
+- role_requirement_id
+- certification_id
+- skill_id
+- audit_trace_id
+
+# 3. employee dashboard
+
+## 3-1. GET /api/v1/employee/dashboard
+目的:
+- employee dashboard 表示用の集約データ取得
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "employee_id": "emp_01HX001",
+    "employee_name": "山田 太郎",
+    "current_role_fit_score": 78.5,
+    "target_role_fit_score": 66.0,
+    "growth_potential_score": 82.0,
+    "current_state_rank": "B",
+    "next_review_due_at": "2026-06-30",
+    "pending_items": [
+      {
+        "item_code": "CERT_RENEWAL",
+        "label": "資格更新が必要です",
+        "count": 1
+      }
+    ],
+    "expiring_certifications": [
+      {
+        "employee_certification_id": "ecert_01",
+        "certification_name": "第一種衛生管理者",
+        "expiry_date": "2026-05-15",
+        "days_left": 33
+      }
+    ],
+    "top_growth_actions": [
+      {
+        "growth_action_id": "gact_01",
+        "action_type": "TRAINING",
+        "title": "中級マネジメント研修",
+        "priority": "HIGH",
+        "due_date": "2026-05-31"
+      }
+    ],
+    "score_trend": {
+      "previous_total_score": 71.0,
+      "current_total_score": 75.5,
+      "delta": 4.5
+    }
+  },
+  "meta": {
+    "request_id": "req_emp_dash_01",
+    "server_time": "2026-04-12T12:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 4. self review save / submit
+
+## 4-1. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+目的:
+- 自己評価の一時保存
+
+### request
+~~~json
+{
+  "employee_id": "emp_01HX001",
+  "self_review_comment": "現職では店舗運営の再現性は高いが、後輩育成は改善余地がある。",
+  "academic_items": [
+    {
+      "employee_academic_history_id": "acad_01",
+      "is_confirmed": true
+    }
+  ],
+  "certification_items": [
+    {
+      "employee_certification_id": "ecert_01",
+      "is_confirmed": true,
+      "employee_note": "更新申請準備中"
+    }
+  ],
+  "skill_items": [
+    {
+      "employee_skill_id": "eskill_01",
+      "proficiency_level": 4,
+      "self_comment": "クレーム初動対応は単独で実施可能",
+      "evidence_ids": ["evi_01", "evi_02"]
+    }
+  ],
+  "achievement_items": [
+    {
+      "employee_achievement_id": "ach_01",
+      "self_comment": "担当売場の月次粗利改善に寄与"
+    }
+  ]
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "evaluation_sheet_id": "esheet_01",
+    "status": "SELF_REVIEW_DRAFT",
+    "saved_at": "2026-04-12T12:10:00+09:00"
+  },
+  "meta": {
+    "request_id": "req_self_save_01",
+    "server_time": "2026-04-12T12:10:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## 4-2. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+目的:
+- 自己評価を提出する
+
+### request
+~~~json
+{
+  "employee_id": "emp_01HX001",
+  "final_self_review_comment": "今期は店舗運営安定化は達成。次期は育成と数値管理を伸ばしたい。",
+  "submit_confirmed": true
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "evaluation_sheet_id": "esheet_01",
+    "status": "SELF_REVIEW_SUBMITTED",
+    "submitted_at": "2026-04-12T12:20:00+09:00",
+    "next_action": {
+      "action_code": "WAIT_MANAGER_REVIEW",
+      "label": "上長レビュー待ち"
+    }
+  },
+  "meta": {
+    "request_id": "req_self_submit_01",
+    "server_time": "2026-04-12T12:20:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 5. manager review
+
+## 5-1. GET /api/v1/manager/review-queue
+目的:
+- 上長レビュー待ち一覧取得
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "evaluation_sheet_id": "esheet_01",
+        "employee_id": "emp_01HX001",
+        "employee_name": "山田 太郎",
+        "organization_name": "東北営業部",
+        "current_state_rank": "B",
+        "status": "SELF_REVIEW_SUBMITTED",
+        "submitted_at": "2026-04-12T12:20:00+09:00",
+        "expiring_certification_count": 1,
+        "evidence_count": 8
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "req_mgr_queue_01",
+    "server_time": "2026-04-12T12:30:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## 5-2. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+目的:
+- 上長レビューの一時保存
+
+### request
+~~~json
+{
+  "manager_employee_id": "emp_mgr_01",
+  "manager_review_comment": "運営安定性は高い。育成観点は次期強化。",
+  "score_inputs": {
+    "behavior_score": 72.0,
+    "performance_score": 79.0,
+    "current_role_fit_score": 80.0,
+    "target_role_fit_score": 68.0,
+    "growth_potential_score": 83.0
+  },
+  "competency_items": [
+    {
+      "competency_code": "LEADERSHIP",
+      "manager_rating": 3,
+      "comment": "指示待ち傾向が一部残る"
+    }
+  ],
+  "evidence_ids": ["evi_10", "evi_11"]
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "evaluation_sheet_id": "esheet_01",
+    "status": "MANAGER_REVIEW_DRAFT",
+    "saved_at": "2026-04-12T12:45:00+09:00"
+  },
+  "meta": {
+    "request_id": "req_mgr_save_01",
+    "server_time": "2026-04-12T12:45:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## 5-3. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+目的:
+- 上長レビュー提出
+
+### request
+~~~json
+{
+  "manager_employee_id": "emp_mgr_01",
+  "submit_confirmed": true,
+  "recommended_next_step": "HR_REVIEW"
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "evaluation_sheet_id": "esheet_01",
+    "status": "MANAGER_REVIEW_SUBMITTED",
+    "submitted_at": "2026-04-12T13:00:00+09:00",
+    "next_action": {
+      "action_code": "WAIT_HR_REVIEW",
+      "label": "人事レビュー待ち"
+    }
+  },
+  "meta": {
+    "request_id": "req_mgr_submit_01",
+    "server_time": "2026-04-12T13:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 6. HR calibration
+
+## 6-1. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/calibration/save
+目的:
+- 校正内容の一時保存
+
+### request
+~~~json
+{
+  "hr_employee_id": "emp_hr_01",
+  "calibration_session_id": "calsess_01",
+  "pre_calibration_rank": "B",
+  "post_calibration_rank": "B",
+  "adjusted_scores": {
+    "current_role_fit_score": 79.0,
+    "growth_potential_score": 81.0
+  },
+  "calibration_reason": "部門間評価基準差の是正",
+  "meeting_note": "同職種他者比較上、現評価は妥当だが成長性を微調整",
+  "evidence_ids": ["evi_20"]
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "evaluation_sheet_id": "esheet_01",
+    "status": "CALIBRATION_IN_PROGRESS",
+    "saved_at": "2026-04-12T13:20:00+09:00"
+  },
+  "meta": {
+    "request_id": "req_cal_save_01",
+    "server_time": "2026-04-12T13:20:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## 6-2. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/approve
+目的:
+- 評価確定
+
+### request
+~~~json
+{
+  "approver_employee_id": "emp_hr_01",
+  "approval_comment": "校正完了。公開可。",
+  "publish_after_approval": true
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "evaluation_sheet_id": "esheet_01",
+    "status": "APPROVED",
+    "approved_at": "2026-04-12T13:40:00+09:00",
+    "published_at": "2026-04-12T13:41:00+09:00",
+    "result_summary": {
+      "total_evaluation_score": 76.5,
+      "current_role_fit_score": 79.0,
+      "target_role_fit_score": 68.0,
+      "growth_potential_score": 81.0,
+      "current_state_rank": "B",
+      "future_readiness_rank": "A"
+    }
+  },
+  "meta": {
+    "request_id": "req_approve_01",
+    "server_time": "2026-04-12T13:41:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 7. growth plan
+
+## 7-1. POST /api/v1/growth-plans
+目的:
+- 成長計画作成
+
+### request
+~~~json
+{
+  "employee_id": "emp_01HX001",
+  "evaluation_sheet_id": "esheet_01",
+  "plan_title": "2026年上期 成長計画",
+  "target_role_id": "role_store_manager",
+  "plan_period_start": "2026-05-01",
+  "plan_period_end": "2026-10-31",
+  "actions": [
+    {
+      "action_type": "TRAINING",
+      "title": "数値管理基礎研修",
+      "priority": "HIGH",
+      "due_date": "2026-06-15",
+      "reason": "target_role_fit_gap:NUMERIC_MANAGEMENT"
+    },
+    {
+      "action_type": "OJT",
+      "title": "新人育成OJT担当",
+      "priority": "MEDIUM",
+      "due_date": "2026-08-31",
+      "reason": "behavior_gap:PEOPLE_DEVELOPMENT"
+    }
+  ]
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "growth_plan_id": "gplan_01",
+    "status": "ACTIVE",
+    "created_at": "2026-04-12T14:00:00+09:00"
+  },
+  "meta": {
+    "request_id": "req_growth_create_01",
+    "server_time": "2026-04-12T14:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## 7-2. POST /api/v1/growth-plans/{growth_plan_id}/progress
+目的:
+- 成長計画進捗更新
+
+### request
+~~~json
+{
+  "updated_by_employee_id": "emp_01HX001",
+  "progress_items": [
+    {
+      "growth_action_id": "gact_01",
+      "progress_status": "IN_PROGRESS",
+      "progress_percent": 50,
+      "note": "研修前半を受講済み"
+    }
+  ]
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "growth_plan_id": "gplan_01",
+    "updated_at": "2026-04-12T14:10:00+09:00"
+  },
+  "meta": {
+    "request_id": "req_growth_progress_01",
+    "server_time": "2026-04-12T14:10:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 8. certification renewal
+
+## 8-1. POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+目的:
+- 資格更新記録
+
+### request
+~~~json
+{
+  "employee_id": "emp_01HX001",
+  "renewed_at": "2026-05-10",
+  "new_expiry_date": "2029-05-09",
+  "renewal_cost": {
+    "source_amount": 15000,
+    "source_currency": "JPY",
+    "reporting_amount": 15000,
+    "reporting_currency": "JPY",
+    "fx_rate": 1.0
+  },
+  "evidence_ids": ["evi_cert_01"],
+  "note": "更新講習完了"
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "employee_certification_id": "ecert_01",
+    "status": "ACTIVE",
+    "updated_expiry_date": "2029-05-09"
+  },
+  "meta": {
+    "request_id": "req_cert_renew_01",
+    "server_time": "2026-05-10T18:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 9. role-fit candidates
+
+## 9-1. GET /api/v1/role-fit/candidates?organization_id=org_01&target_role_id=role_store_manager
+目的:
+- 配置 / 昇格候補抽出
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "target_role_id": "role_store_manager",
+    "items": [
+      {
+        "employee_id": "emp_01HX001",
+        "employee_name": "山田 太郎",
+        "current_role_fit_score": 79.0,
+        "target_role_fit_score": 68.0,
+        "promotion_readiness_score": 64.0,
+        "successor_readiness_score": 61.0,
+        "top_gaps": [
+          "NUMERIC_MANAGEMENT",
+          "PEOPLE_DEVELOPMENT"
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "req_rolefit_01",
+    "server_time": "2026-04-12T14:20:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 10. AI assist
+
+## 10-1. POST /api/v1/ai-assist/review-comment-draft
+目的:
+- 評価コメント下書き生成
+注意:
+- 最終確定には使わない
+
+### request
+~~~json
+{
+  "requested_by_employee_id": "emp_mgr_01",
+  "evaluation_sheet_id": "esheet_01",
+  "draft_type": "MANAGER_REVIEW_COMMENT",
+  "language": "ja",
+  "input_summary": {
+    "current_role_fit_score": 79.0,
+    "target_role_fit_score": 68.0,
+    "growth_potential_score": 81.0,
+    "top_strengths": ["STORE_OPERATION", "CUSTOMER_RESPONSE"],
+    "top_gaps": ["NUMERIC_MANAGEMENT", "PEOPLE_DEVELOPMENT"]
+  }
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "ai_draft_id": "aidraft_01",
+    "draft_text": "現職の運営安定性は高く、顧客対応力も評価できる。一方で次役割を見据えると数値管理と人材育成の強化が必要である。",
+    "must_review_by_human": true,
+    "reference_logged": true
+  },
+  "meta": {
+    "request_id": "req_ai_draft_01",
+    "server_time": "2026-04-12T14:30:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 11. audit log search
+
+## 11-1. POST /api/v1/audit-logs/search
+目的:
+- 監査ログ検索
+
+### request
+~~~json
+{
+  "company_id": "comp_01",
+  "date_from": "2026-04-01",
+  "date_to": "2026-04-30",
+  "actor_employee_id": "emp_hr_01",
+  "entity_type": "EVALUATION_SHEET",
+  "entity_id": "esheet_01",
+  "action_types": ["APPROVE", "CALIBRATION_SAVE", "AI_REFERENCE"]
+}
+~~~
+
+### response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "audit_log_id": "alog_01",
+        "occurred_at": "2026-04-12T13:20:00+09:00",
+        "actor_employee_id": "emp_hr_01",
+        "entity_type": "EVALUATION_SHEET",
+        "entity_id": "esheet_01",
+        "action_type": "CALIBRATION_SAVE",
+        "audit_trace_id": "atrace_01"
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "req_audit_search_01",
+    "server_time": "2026-04-12T14:40:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 12. 結論
+TalentGrowth の API payload は、
+評価、成長、資格更新、候補抽出、監査、AI補助を
+分離しながら exact payload を固定する。
+
+特に、
+- 評価保存
+- 評価提出
+- 校正
+- 承認
+- 成長計画
+- 監査検索
+の payload は初期から固定対象とする。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0802_TALENT_GROWTH_API_REQUEST_RESPONSE_EXACT_PAYLOAD.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0803_TALENT_GROWTH_APPROVAL_AND_REVIEW_STATE_MACHINE.md -->
+# TALENT GROWTH APPROVAL AND REVIEW STATE MACHINE
+
+status: draft-state-machine
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の評価レビュー、校正、承認、公開までの状態遷移を固定するための資料である。
+
+# 1. evaluation sheet states
+- SELF_REVIEW_DRAFT
+- SELF_REVIEW_SUBMITTED
+- MANAGER_REVIEW_DRAFT
+- MANAGER_REVIEW_SUBMITTED
+- HR_REVIEW_IN_PROGRESS
+- CALIBRATION_IN_PROGRESS
+- APPROVED
+- PUBLISHED
+- SENT_BACK
+- REOPENED
+- ARCHIVED
+
+# 2. 遷移原則
+- employee は SELF_REVIEW_DRAFT まで編集可能
+- submit 後は employee の直接編集を制限する
+- manager review 保存は MANAGER_REVIEW_DRAFT とする
+- manager submit 後は HR review に入る
+- calibration は HR 主導
+- approved 後に publish を行う
+- publish 後の修正は reopen flow 必須
+
+# 3. principal transitions
+- SELF_REVIEW_DRAFT -> SELF_REVIEW_SUBMITTED
+- SELF_REVIEW_SUBMITTED -> MANAGER_REVIEW_DRAFT
+- MANAGER_REVIEW_DRAFT -> MANAGER_REVIEW_SUBMITTED
+- MANAGER_REVIEW_SUBMITTED -> HR_REVIEW_IN_PROGRESS
+- HR_REVIEW_IN_PROGRESS -> CALIBRATION_IN_PROGRESS
+- CALIBRATION_IN_PROGRESS -> APPROVED
+- APPROVED -> PUBLISHED
+- SELF_REVIEW_SUBMITTED -> SENT_BACK
+- MANAGER_REVIEW_SUBMITTED -> SENT_BACK
+- PUBLISHED -> REOPENED
+- REOPENED -> HR_REVIEW_IN_PROGRESS
+- PUBLISHED -> ARCHIVED
+
+# 4. sent back rules
+- SENT_BACK 理由必須
+- 差戻し先ロール必須
+- 差戻し後は previous editable state に戻す
+- 差戻し履歴は audit 必須
+
+# 5. approval rules
+- approval actor は company scope の権限者
+- approval comment 任意だが推奨
+- publish_after_approval true の場合は承認直後公開可能
+- AI は approval actor になれない
+
+# 6. reopen rules
+- reopen reason 必須
+- reopen actor 記録必須
+- reopen 前後差分監査必須
+- published result の履歴は消さない
+
+# 7. growth plan states
+- DRAFT
+- ACTIVE
+- IN_PROGRESS
+- COMPLETED
+- CLOSED
+- CANCELLED
+
+# 8. growth plan transitions
+- DRAFT -> ACTIVE
+- ACTIVE -> IN_PROGRESS
+- IN_PROGRESS -> COMPLETED
+- COMPLETED -> CLOSED
+- ACTIVE -> CANCELLED
+- IN_PROGRESS -> CANCELLED
+
+# 9. certification states
+- ACTIVE
+- EXPIRING_SOON
+- EXPIRED
+- RENEWAL_IN_PROGRESS
+- INACTIVE
+
+# 10. certification transitions
+- ACTIVE -> EXPIRING_SOON
+- EXPIRING_SOON -> RENEWAL_IN_PROGRESS
+- RENEWAL_IN_PROGRESS -> ACTIVE
+- EXPIRING_SOON -> EXPIRED
+- ACTIVE -> INACTIVE
+
+# 11. 結論
+TalentGrowth の状態遷移は、
+評価、成長、資格の3系統で固定する。
+
+特に評価は、
+- submit
+- review
+- calibration
+- approve
+- publish
+- reopen
+を明示し、
+公開後修正を必ず統制下に置く。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0803_TALENT_GROWTH_APPROVAL_AND_REVIEW_STATE_MACHINE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0804_TALENT_GROWTH_SEARCH_FILTER_PARAMETER_EXACT_POLICY.md -->
+# TALENT GROWTH SEARCH FILTER PARAMETER EXACT POLICY
+
+status: draft-search-filter-policy
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の一覧 / 検索 / 分析APIで使う
+search / filter / sort / pagination parameter を固定するための資料である。
+
+# 1. 共通原則
+- filter は exact key で受ける
+- fuzzy search は q に集約する
+- sort は field + direction に分ける
+- pagination は limit + cursor を基本にする
+- 未権限絞込は silently broaden せず error とする
+
+# 2. 共通parameter
+
+## search
+- q
+
+## scope filters
+- company_id
+- organization_id
+- organization_ids[]
+- employee_id
+- employee_ids[]
+
+## date filters
+- date_from
+- date_to
+- created_from
+- created_to
+- updated_from
+- updated_to
+
+## status filters
+- status_code
+- status_codes[]
+
+## sort
+- sort_field
+- sort_direction
+
+## pagination
+- limit
+- cursor
+
+# 3. employee list filters
+想定API:
+- GET /api/v1/employees
+
+filters:
+- q
+- organization_id
+- employment_type_code
+- current_job_family_id
+- current_job_role_id
+- current_grade_id
+- manager_employee_id
+- is_active
+- certification_status_code
+- expiring_within_days
+- growth_plan_status_code
+
+sort_fields:
+- full_name
+- hire_date
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- next_review_due_at
+- updated_at
+
+# 4. review queue filters
+想定API:
+- GET /api/v1/manager/review-queue
+
+filters:
+- q
+- organization_id
+- evaluation_cycle_id
+- status_code
+- submitted_from
+- submitted_to
+- expiring_within_days
+- has_evidence_flag
+
+sort_fields:
+- submitted_at
+- employee_name
+- current_state_rank
+- evidence_count
+- expiring_certification_count
+
+# 5. evaluation sheet filters
+想定API:
+- GET /api/v1/evaluation-sheets
+
+filters:
+- q
+- evaluation_cycle_id
+- employee_id
+- manager_employee_id
+- current_job_role_id
+- target_job_role_id
+- evaluation_status_code
+- current_state_rank
+- future_readiness_rank
+- total_score_from
+- total_score_to
+- role_fit_from
+- role_fit_to
+- growth_potential_from
+- growth_potential_to
+- published_from
+- published_to
+
+sort_fields:
+- updated_at
+- total_evaluation_score
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- published_at
+
+# 6. certification filters
+想定API:
+- GET /api/v1/employee-certifications
+
+filters:
+- q
+- employee_id
+- certification_id
+- certification_status_code
+- renewal_required
+- expiry_from
+- expiry_to
+- expiring_within_days
+- organization_id
+
+sort_fields:
+- expiry_date
+- acquired_date
+- updated_at
+- certification_name_snapshot
+
+# 7. growth plan filters
+想定API:
+- GET /api/v1/growth-plans
+
+filters:
+- q
+- employee_id
+- manager_employee_id
+- target_job_role_id
+- growth_plan_status_code
+- due_from
+- due_to
+- priority_code
+- action_type_code
+
+sort_fields:
+- plan_period_start
+- plan_period_end
+- next_review_due_at
+- updated_at
+
+# 8. audit log filters
+想定API:
+- POST /api/v1/audit-logs/search
+
+filters:
+- actor_employee_id
+- actor_role_code
+- entity_type
+- entity_id
+- action_type
+- action_types[]
+- date_from
+- date_to
+- audit_trace_id
+- has_ai_reference_flag
+
+sort_fields:
+- occurred_at
+- actor_employee_id
+- action_type
+
+# 9. analytics filters
+想定API:
+- GET /api/v1/analytics/distribution
+- GET /api/v1/analytics/9box
+- GET /api/v1/analytics/training-roi
+
+filters:
+- organization_id
+- organization_ids[]
+- current_job_family_id
+- current_job_role_id
+- current_grade_id
+- employment_type_code
+- country_code
+- period_start
+- period_end
+- evaluation_cycle_id
+- reporting_currency
+- compare_dimension_code
+
+sort_fields:
+- organization_name
+- average_total_score
+- average_role_fit_score
+- average_growth_potential
+- roi_ratio
+
+# 10. exact examples
+
+## 10-1. employee list
+~~~text
+GET /api/v1/employees?q=山田&organization_id=org_01&current_job_role_id=role_store_staff&expiring_within_days=60&sort_field=updated_at&sort_direction=desc&limit=20
+~~~
+
+## 10-2. evaluation sheets
+~~~text
+GET /api/v1/evaluation-sheets?evaluation_cycle_id=ecycle_01&evaluation_status_code=MANAGER_REVIEW_SUBMITTED&growth_potential_from=70&sort_field=published_at&sort_direction=desc&limit=50
+~~~
+
+## 10-3. certification list
+~~~text
+GET /api/v1/employee-certifications?renewal_required=true&expiring_within_days=90&organization_id=org_01&sort_field=expiry_date&sort_direction=asc&limit=50
+~~~
+
+## 10-4. growth plans
+~~~text
+GET /api/v1/growth-plans?manager_employee_id=emp_mgr_01&growth_plan_status_code=IN_PROGRESS&priority_code=HIGH&sort_field=next_review_due_at&sort_direction=asc&limit=20
+~~~
+
+## 10-5. audit log search
+~~~json
+{
+  "actor_role_code": "HR",
+  "entity_type": "EVALUATION_SHEET",
+  "date_from": "2026-04-01",
+  "date_to": "2026-04-30",
+  "action_types": ["APPROVE", "REOPEN", "AI_REFERENCE"],
+  "limit": 100
+}
+~~~
+
+# 11. バリデーション原則
+- unknown parameter は error
+- empty string は null 扱いしない
+- array filter は最大件数制限を持つ
+- date_from > date_to は error
+- sort_field は allowlist のみ許可
+- sort_direction は asc / desc のみ
+
+# 12. 結論
+TalentGrowth の検索 / 絞込 / 並び替えは、
+APIごとに曖昧運用せず、
+exact parameter で固定する。
+
+特に、
+- review queue
+- evaluation sheets
+- certifications
+- growth plans
+- audit logs
+- analytics
+は初期から strict parameter policy を持つ。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0804_TALENT_GROWTH_SEARCH_FILTER_PARAMETER_EXACT_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0805_TALENT_GROWTH_FULL_API_ENDPOINT_INVENTORY_FIXED.md -->
+# TALENT GROWTH FULL API ENDPOINT INVENTORY FIXED
+
+status: draft-full-endpoint-inventory
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の API を endpoint 単位で棚卸しし、
+実装漏れなく固定するための inventory 資料である。
+
+前提:
+- REST JSON API 前提
+- version prefix は /api/v1
+- 権限は employee_self / manager / HR_operator / executive_viewer / system_admin / service_role_internal を前提とする
+- 共通部品APIは扱わず、TalentGrowth 本体責務のみを扱う
+
+# 1. endpoint group 一覧
+- global / auth
+- employee profile
+- academics
+- certifications
+- skills
+- career / achievements
+- evaluation cycle
+- self review
+- manager review
+- HR review / calibration / approval
+- growth plan / recommendations
+- role-fit / promotion / successor
+- analytics / dashboards
+- audit / export
+- settings / administration
+- AI assist
+
+# 2. global / auth
+
+## GET /api/v1/me
+permission:
+- authenticated user
+purpose:
+- 自分の基本権限、所属、利用可能メニューを返す
+
+## GET /api/v1/home
+permission:
+- authenticated user
+purpose:
+- role-based home 集約データ
+
+## GET /api/v1/notifications
+permission:
+- authenticated user
+purpose:
+- 通知一覧取得
+
+## POST /api/v1/notifications/read
+permission:
+- authenticated user
+purpose:
+- 通知既読更新
+
+## GET /api/v1/search
+permission:
+- authenticated user
+purpose:
+- 横断検索
+notes:
+- exact parameter policy は別資料準拠
+
+# 3. employee profile
+
+## GET /api/v1/employees
+permission:
+- manager / HR / executive(scope limited) / admin(limited)
+purpose:
+- 社員一覧取得
+
+## GET /api/v1/employees/{employee_id}
+permission:
+- employee_self(self only) / manager(team only) / HR
+purpose:
+- 社員詳細取得
+
+## PATCH /api/v1/employees/{employee_id}
+permission:
+- employee_self(partial self fields only) / HR
+purpose:
+- 社員基本情報更新
+
+## GET /api/v1/employee/dashboard
+permission:
+- employee_self
+purpose:
+- 本人ダッシュボード集約
+
+## GET /api/v1/manager/dashboard
+permission:
+- manager
+purpose:
+- 上長ダッシュボード集約
+
+## GET /api/v1/hr/dashboard
+permission:
+- HR
+purpose:
+- 人事ダッシュボード集約
+
+## GET /api/v1/executive/dashboard
+permission:
+- executive_viewer
+purpose:
+- 経営ダッシュボード集約
+
+# 4. academics
+
+## GET /api/v1/employees/{employee_id}/academics
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 学歴一覧取得
+
+## POST /api/v1/employees/{employee_id}/academics
+permission:
+- employee_self / HR
+purpose:
+- 学歴追加
+
+## PATCH /api/v1/academics/{employee_academic_history_id}
+permission:
+- employee_self(own draft only) / HR
+purpose:
+- 学歴更新
+
+## DELETE /api/v1/academics/{employee_academic_history_id}
+permission:
+- HR
+purpose:
+- 学歴削除または無効化
+
+# 5. certifications
+
+## GET /api/v1/employee-certifications
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 資格一覧取得
+
+## POST /api/v1/employee-certifications
+permission:
+- employee_self / HR
+purpose:
+- 資格追加
+
+## PATCH /api/v1/employee-certifications/{employee_certification_id}
+permission:
+- employee_self(own draft scope) / HR
+purpose:
+- 資格更新
+
+## POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+permission:
+- employee_self / HR
+purpose:
+- 更新記録
+
+## GET /api/v1/employee-certifications/expiring
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 期限切れ / 期限近い資格一覧
+
+## GET /api/v1/certification-masters
+permission:
+- authenticated user
+purpose:
+- 資格マスタ参照
+
+## POST /api/v1/certification-masters
+permission:
+- HR / admin(limited)
+purpose:
+- 資格マスタ作成
+
+## PATCH /api/v1/certification-masters/{certification_id}
+permission:
+- HR / admin(limited)
+purpose:
+- 資格マスタ更新
+
+# 6. skills
+
+## GET /api/v1/employee-skills
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- スキル一覧取得
+
+## POST /api/v1/employee-skills
+permission:
+- employee_self / HR
+purpose:
+- スキル追加
+
+## PATCH /api/v1/employee-skills/{employee_skill_id}
+permission:
+- employee_self / manager(comment scope) / HR
+purpose:
+- スキル状態更新
+
+## POST /api/v1/employee-skills/{employee_skill_id}/evidences
+permission:
+- employee_self / manager / HR
+purpose:
+- スキル根拠追加
+
+## PATCH /api/v1/employee-skills/evidences/{employee_skill_evidence_id}/verify
+permission:
+- HR / designated verifier
+purpose:
+- 根拠検証
+
+## GET /api/v1/skill-masters
+permission:
+- authenticated user
+purpose:
+- スキル辞書取得
+
+## POST /api/v1/skill-masters
+permission:
+- HR / admin(limited)
+purpose:
+- スキル辞書追加
+
+## PATCH /api/v1/skill-masters/{skill_id}
+permission:
+- HR / admin(limited)
+purpose:
+- スキル辞書更新
+
+# 7. career / achievements
+
+## GET /api/v1/employees/{employee_id}/career-histories
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 経歴一覧取得
+
+## POST /api/v1/employees/{employee_id}/career-histories
+permission:
+- employee_self / HR
+purpose:
+- 経歴追加
+
+## PATCH /api/v1/career-histories/{employee_career_history_id}
+permission:
+- employee_self / HR
+purpose:
+- 経歴更新
+
+## GET /api/v1/employees/{employee_id}/achievements
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 実績一覧取得
+
+## POST /api/v1/employees/{employee_id}/achievements
+permission:
+- employee_self / HR
+purpose:
+- 実績追加
+
+## PATCH /api/v1/achievements/{employee_achievement_id}
+permission:
+- employee_self / HR
+purpose:
+- 実績更新
+
+# 8. evaluation cycle
+
+## GET /api/v1/evaluation-cycles
+permission:
+- manager / HR / executive / admin
+purpose:
+- 評価サイクル一覧
+
+## POST /api/v1/evaluation-cycles
+permission:
+- HR
+purpose:
+- サイクル作成
+
+## PATCH /api/v1/evaluation-cycles/{evaluation_cycle_id}
+permission:
+- HR
+purpose:
+- サイクル更新
+
+## POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/open
+permission:
+- HR
+purpose:
+- サイクル開始
+
+## POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/publish
+permission:
+- HR
+purpose:
+- サイクル公開
+
+## POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/close
+permission:
+- HR
+purpose:
+- サイクル締結
+
+# 9. self review
+
+## GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+permission:
+- employee_self(self only) / manager(team) / HR
+purpose:
+- 評価シート詳細
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+permission:
+- employee_self
+purpose:
+- 自己評価一時保存
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+permission:
+- employee_self
+purpose:
+- 自己評価提出
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/withdraw
+permission:
+- employee_self(before manager review only if allowed)
+purpose:
+- 提出引戻し
+
+# 10. manager review
+
+## GET /api/v1/manager/review-queue
+permission:
+- manager
+purpose:
+- 上長レビュー待ち一覧
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+permission:
+- manager
+purpose:
+- 上長レビュー一時保存
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+permission:
+- manager
+purpose:
+- 上長レビュー提出
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back
+permission:
+- manager / HR
+purpose:
+- 差戻し
+notes:
+- 差戻し先ロールと理由必須
+
+# 11. HR review / calibration / approval
+
+## GET /api/v1/hr/review-queue
+permission:
+- HR
+purpose:
+- HRレビュー待ち一覧
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/hr-review/save
+permission:
+- HR
+purpose:
+- HRレビュー保存
+
+## POST /api/v1/calibration-sessions
+permission:
+- HR
+purpose:
+- 校正セッション作成
+
+## GET /api/v1/calibration-sessions/{calibration_session_id}
+permission:
+- HR
+purpose:
+- 校正セッション詳細
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/calibration/save
+permission:
+- HR
+purpose:
+- 校正結果保存
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/approve
+permission:
+- HR approver
+purpose:
+- 評価承認
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/publish
+permission:
+- HR
+purpose:
+- 評価公開
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/reopen
+permission:
+- HR
+purpose:
+- 公開後再開
+notes:
+- reopen reason 必須
+
+# 12. requirements / templates
+
+## GET /api/v1/role-requirements
+permission:
+- manager / HR / executive
+purpose:
+- 要件一覧取得
+
+## POST /api/v1/role-requirements
+permission:
+- HR
+purpose:
+- 要件作成
+
+## PATCH /api/v1/role-requirements/{role_requirement_id}
+permission:
+- HR
+purpose:
+- 要件更新
+
+## POST /api/v1/role-requirements/{role_requirement_id}/clone
+permission:
+- HR
+purpose:
+- 要件複製
+
+## GET /api/v1/role-requirements/{role_requirement_id}/diff
+permission:
+- HR / executive
+purpose:
+- 改版差分表示
+
+## GET /api/v1/templates/evaluations
+permission:
+- HR
+purpose:
+- 評価テンプレート一覧
+
+## POST /api/v1/templates/evaluations
+permission:
+- HR
+purpose:
+- 評価テンプレート作成
+
+# 13. growth plan / recommendations
+
+## GET /api/v1/growth-plans
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 成長計画一覧
+
+## POST /api/v1/growth-plans
+permission:
+- employee_self / manager / HR
+purpose:
+- 成長計画作成
+
+## GET /api/v1/growth-plans/{growth_plan_id}
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 成長計画詳細
+
+## PATCH /api/v1/growth-plans/{growth_plan_id}
+permission:
+- owner / manager / HR
+purpose:
+- 成長計画更新
+
+## POST /api/v1/growth-plans/{growth_plan_id}/progress
+permission:
+- employee_self / manager
+purpose:
+- 進捗更新
+
+## GET /api/v1/growth-recommendations
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 推奨一覧取得
+
+## POST /api/v1/growth-recommendations/{growth_recommendation_id}/accept
+permission:
+- employee_self / manager
+purpose:
+- 推奨受諾
+
+## POST /api/v1/growth-recommendations/{growth_recommendation_id}/reject
+permission:
+- employee_self / manager
+purpose:
+- 推奨却下
+
+# 14. MBO linkage
+
+## GET /api/v1/mbo/linked-goals
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- 目標連携一覧取得
+
+## POST /api/v1/mbo/refresh
+permission:
+- HR / service_role_internal
+purpose:
+- 目標連携再同期
+
+# 15. role-fit / promotion / successor
+
+## GET /api/v1/role-fit/candidates
+permission:
+- manager / HR / executive
+purpose:
+- 配置 / 昇格候補抽出
+
+## GET /api/v1/promotion-candidates
+permission:
+- HR / executive
+purpose:
+- 昇格候補一覧
+
+## GET /api/v1/successor-candidates
+permission:
+- HR / executive
+purpose:
+- 後継者候補一覧
+
+## POST /api/v1/successor-candidates
+permission:
+- HR
+purpose:
+- 後継者候補登録
+
+## PATCH /api/v1/successor-candidates/{successor_candidate_id}
+permission:
+- HR
+purpose:
+- 後継者候補更新
+
+## GET /api/v1/career-simulations
+permission:
+- employee_self / manager(team) / HR
+purpose:
+- キャリア候補一覧
+
+## POST /api/v1/career-simulations
+permission:
+- employee_self / manager / HR
+purpose:
+- キャリアシミュレーション実行
+
+# 16. analytics / dashboards
+
+## GET /api/v1/analytics/distribution
+permission:
+- HR / executive
+purpose:
+- 分布分析
+
+## GET /api/v1/analytics/skill-heatmap
+permission:
+- manager / HR
+purpose:
+- スキルヒートマップ
+
+## GET /api/v1/analytics/9box
+permission:
+- HR / executive
+purpose:
+- 9box 表示
+
+## GET /api/v1/analytics/training-roi
+permission:
+- HR / executive
+purpose:
+- 研修投資分析
+
+## GET /api/v1/analytics/org-talent-summary
+permission:
+- executive / HR
+purpose:
+- 組織別人材力要約
+
+## GET /api/v1/analytics/evaluator-bias
+permission:
+- HR
+purpose:
+- 評価者偏り分析
+
+# 17. audit / export
+
+## POST /api/v1/audit-logs/search
+permission:
+- HR / admin(limited)
+purpose:
+- 監査ログ検索
+
+## POST /api/v1/exports/evaluations
+permission:
+- HR
+purpose:
+- 評価エクスポート作成
+
+## POST /api/v1/exports/analytics
+permission:
+- HR / executive
+purpose:
+- 分析エクスポート作成
+
+## GET /api/v1/exports/{export_job_id}
+permission:
+- requester / HR / executive
+purpose:
+- エクスポートジョブ状態取得
+
+# 18. settings / administration
+
+## GET /api/v1/admin/users
+permission:
+- admin / HR(limited)
+purpose:
+- 利用者一覧
+
+## PATCH /api/v1/admin/users/{employee_id}/roles
+permission:
+- admin
+purpose:
+- ロール更新
+
+## GET /api/v1/admin/localization
+permission:
+- admin / HR(limited)
+purpose:
+- 多言語設定参照
+
+## PATCH /api/v1/admin/localization
+permission:
+- admin
+purpose:
+- 多言語設定更新
+
+## GET /api/v1/admin/currency-settings
+permission:
+- admin / HR(limited)
+purpose:
+- 通貨表示設定参照
+
+## PATCH /api/v1/admin/currency-settings
+permission:
+- admin
+purpose:
+- 通貨設定更新
+
+## GET /api/v1/admin/integrations
+permission:
+- admin
+purpose:
+- 連携設定参照
+
+## PATCH /api/v1/admin/integrations/{integration_code}
+permission:
+- admin
+purpose:
+- 連携設定更新
+
+# 19. AI assist
+
+## POST /api/v1/ai-assist/review-comment-draft
+permission:
+- manager / HR
+purpose:
+- コメント下書き生成
+
+## POST /api/v1/ai-assist/growth-suggestion-draft
+permission:
+- manager / HR
+purpose:
+- 成長提案下書き生成
+
+## POST /api/v1/ai-assist/bias-check
+permission:
+- HR
+purpose:
+- 偏り警告補助
+
+## GET /api/v1/ai-assist/references
+permission:
+- HR / admin(limited)
+purpose:
+- AI参照履歴取得
+
+# 20. 実装優先順位
+
+## phase A endpoint
+- /me
+- /home
+- /notifications
+- /employee/dashboard
+- /employee-certifications
+- /employee-skills
+- /evaluation-sheets/{id}
+- /self-review/save
+- /self-review/submit
+- /manager/review-queue
+- /manager-review/save
+- /manager-review/submit
+- /send-back
+- /evaluation-cycles
+- /growth-plans
+- /growth-plans/{id}/progress
+- /role-requirements
+- /audit-logs/search
+
+## phase B endpoint
+- academics
+- career-histories
+- achievements
+- certification renewal
+- skill evidences
+- hr/review-queue
+- calibration-sessions
+- calibration/save
+- approve
+- publish
+- analytics/distribution
+- analytics/skill-heatmap
+- mbo/linked-goals
+
+## phase C endpoint
+- role-fit/candidates
+- promotion-candidates
+- successor-candidates
+- career-simulations
+- analytics/9box
+- analytics/training-roi
+- analytics/evaluator-bias
+- exports/*
+- admin/*
+
+## phase D endpoint
+- ai-assist/*
+- reopen
+- advanced analytics
+- advanced export variants
+
+# 21. 結論
+TalentGrowth の full endpoint inventory は、
+画面・payload・DDL・RLS と整合する単位で固定する。
+
+特に初期中核は以下である。
+- dashboard
+- self review
+- manager review
+- role requirement
+- growth plan
+- audit
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0805_TALENT_GROWTH_FULL_API_ENDPOINT_INVENTORY_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0806_TALENT_GROWTH_VALIDATION_AND_ERROR_CODE_POLICY_FIXED.md -->
+# TALENT GROWTH VALIDATION AND ERROR CODE POLICY FIXED
+
+status: draft-validation-error-policy
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth API の validation policy と error code policy を固定するための資料である。
+
+# 1. 基本原則
+- validation error は 400 系で返す
+- permission error は 403 を優先する
+- not found を権限不足の隠れ蓑に乱用しない
+- field path を details に返す
+- domain error は code で識別可能にする
+- 同一エラーの message は画面依存で揺らさない
+
+# 2. HTTP status mapping
+- 400: invalid request / validation failed
+- 401: unauthenticated
+- 403: forbidden
+- 404: not found
+- 409: conflict / invalid state transition
+- 422: semantic validation failure
+- 429: rate limited
+- 500: internal error
+- 503: dependency unavailable
+
+# 3. error envelope
+~~~json
+{
+  "ok": false,
+  "error": {
+    "code": "TG_VALIDATION_ERROR",
+    "message": "validation failed",
+    "details": [
+      {
+        "field": "actions[0].due_date",
+        "reason": "required"
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "req_01",
+    "server_time": "2026-04-12T12:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 4. error code naming rule
+prefix:
+- TG_
+
+domains:
+- AUTH
+- ACCESS
+- VALIDATION
+- STATE
+- NOT_FOUND
+- CONFLICT
+- DEPENDENCY
+- RATE_LIMIT
+- INTERNAL
+- EXPORT
+- AI
+
+examples:
+- TG_AUTH_UNAUTHENTICATED
+- TG_ACCESS_FORBIDDEN
+- TG_VALIDATION_ERROR
+- TG_STATE_INVALID_TRANSITION
+- TG_NOT_FOUND_EVALUATION_SHEET
+- TG_CONFLICT_DUPLICATE_SKILL
+- TG_DEPENDENCY_ERP_UNAVAILABLE
+- TG_EXPORT_JOB_NOT_READY
+
+# 5. 代表error codes
+
+## auth / access
+- TG_AUTH_UNAUTHENTICATED
+- TG_AUTH_TOKEN_EXPIRED
+- TG_ACCESS_FORBIDDEN
+- TG_ACCESS_SCOPE_VIOLATION
+- TG_ACCESS_BREAK_GLASS_REQUIRED
+
+## validation
+- TG_VALIDATION_ERROR
+- TG_VALIDATION_REQUIRED
+- TG_VALIDATION_INVALID_ENUM
+- TG_VALIDATION_INVALID_DATE_RANGE
+- TG_VALIDATION_INVALID_SCORE_RANGE
+- TG_VALIDATION_INVALID_CURRENCY
+- TG_VALIDATION_INVALID_LANGUAGE
+- TG_VALIDATION_UNKNOWN_PARAMETER
+
+## not found
+- TG_NOT_FOUND_EMPLOYEE
+- TG_NOT_FOUND_EVALUATION_CYCLE
+- TG_NOT_FOUND_EVALUATION_SHEET
+- TG_NOT_FOUND_GROWTH_PLAN
+- TG_NOT_FOUND_SKILL
+- TG_NOT_FOUND_CERTIFICATION
+- TG_NOT_FOUND_EXPORT_JOB
+
+## state / conflict
+- TG_STATE_INVALID_TRANSITION
+- TG_STATE_ALREADY_SUBMITTED
+- TG_STATE_ALREADY_APPROVED
+- TG_STATE_ALREADY_PUBLISHED
+- TG_CONFLICT_DUPLICATE_EMPLOYEE_SKILL
+- TG_CONFLICT_DUPLICATE_CERTIFICATION
+- TG_CONFLICT_LOCK_VERSION_MISMATCH
+
+## dependency
+- TG_DEPENDENCY_ERP_UNAVAILABLE
+- TG_DEPENDENCY_MBO_UNAVAILABLE
+- TG_DEPENDENCY_FILE_STORE_UNAVAILABLE
+- TG_DEPENDENCY_AI_UNAVAILABLE
+
+## export / AI
+- TG_EXPORT_JOB_NOT_READY
+- TG_EXPORT_TOO_LARGE
+- TG_AI_ASSIST_DISABLED
+- TG_AI_ASSIST_NOT_ALLOWED_FOR_ROLE
+
+# 6. field validation rules
+
+## score fields
+- 0 <= score <= 100
+- decimal precision fixed by schema
+- null allowed only where documented
+
+## level fields
+- proficiency_level must be integer
+- min/max bound must respect skill master
+
+## date fields
+- period_start <= period_end
+- expiry_date >= acquired_date when both exist
+- renewed_at <= new_expiry_date
+
+## currency fields
+- source_amount requires source_currency
+- reporting_amount requires reporting_currency
+- fx_rate required when source_currency != reporting_currency
+
+## arrays
+- array max count is endpoint-specific
+- empty array is allowed only where documented
+- duplicate ids in same array are rejected
+
+# 7. state validation rules
+
+## self review submit
+must fail when:
+- required comment missing where configured
+- required evidence missing
+- sheet status not SELF_REVIEW_DRAFT
+
+## manager review submit
+must fail when:
+- sheet status not MANAGER_REVIEW_DRAFT or SELF_REVIEW_SUBMITTED compatible entry point
+- required manager comment missing where configured
+- score inputs out of allowed range
+
+## approve
+must fail when:
+- sheet not in HR_REVIEW_IN_PROGRESS or CALIBRATION_IN_PROGRESS
+- approver role invalid
+- required calibration step missing where configured
+
+## reopen
+must fail when:
+- sheet not PUBLISHED
+- reopen reason empty
+- actor lacks HR authority
+
+# 8. optimistic locking rule
+- mutable write endpoints accept lock_version where applicable
+- mismatch returns 409 with TG_CONFLICT_LOCK_VERSION_MISMATCH
+
+# 9. unknown parameter rule
+- unknown query parameter returns 422
+- code: TG_VALIDATION_UNKNOWN_PARAMETER
+- details includes offending parameter name
+
+# 10. pagination validation
+- limit has endpoint-specific max
+- invalid cursor returns 422
+- negative limit is invalid
+
+# 11. error message stance
+- message is stable and short
+- UI-specific friendly text is frontend側で変換可
+- code が最優先の機械判定キー
+
+# 12. 結論
+TalentGrowth の validation / error policy は、
+HTTP status, domain code, field details の3層で固定する。
+
+特に固定する原則は以下である。
+- strict parameter policy
+- state transition strictness
+- machine-readable error code first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0806_TALENT_GROWTH_VALIDATION_AND_ERROR_CODE_POLICY_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0807_TALENT_GROWTH_DB_TABLE_TO_ENDPOINT_MAPPING_FIXED.md -->
+# TALENT GROWTH DB TABLE TO ENDPOINT MAPPING FIXED
+
+status: draft-db-endpoint-mapping-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要DBテーブルと API endpoint の対応を固定し、
+実装時の責務混線を防ぐための資料である。
+
+# 1. 原則
+- endpoint は単一テーブル直結にしすぎない
+- write endpoint は主更新テーブルを明示する
+- read endpoint は集約元テーブルを明示する
+- snapshot / analytics テーブルは read 専用寄りにする
+- audit / AI log は append-first とする
+
+# 2. table -> endpoint mapping
+
+## tg_employee_profile
+primary read endpoints:
+- GET /api/v1/me
+- GET /api/v1/employees
+- GET /api/v1/employees/{employee_id}
+- GET /api/v1/employee/dashboard
+- GET /api/v1/manager/dashboard
+primary write endpoints:
+- PATCH /api/v1/employees/{employee_id}
+
+## tg_employee_academic_history
+read:
+- GET /api/v1/employees/{employee_id}/academics
+write:
+- POST /api/v1/employees/{employee_id}/academics
+- PATCH /api/v1/academics/{employee_academic_history_id}
+
+## tg_employee_certification
+read:
+- GET /api/v1/employee-certifications
+- GET /api/v1/employee-certifications/expiring
+- GET /api/v1/employee/dashboard
+write:
+- POST /api/v1/employee-certifications
+- PATCH /api/v1/employee-certifications/{employee_certification_id}
+- POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+
+## tg_employee_certification_renewal
+read:
+- GET /api/v1/employee-certifications
+- GET /api/v1/employee-certifications/expiring
+write:
+- POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+
+## tg_skill_master
+read:
+- GET /api/v1/skill-masters
+- GET /api/v1/employee-skills
+write:
+- POST /api/v1/skill-masters
+- PATCH /api/v1/skill-masters/{skill_id}
+
+## tg_employee_skill
+read:
+- GET /api/v1/employee-skills
+- GET /api/v1/employee/dashboard
+- GET /api/v1/analytics/skill-heatmap
+write:
+- POST /api/v1/employee-skills
+- PATCH /api/v1/employee-skills/{employee_skill_id}
+
+## tg_employee_skill_evidence
+read:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- GET /api/v1/employee-skills
+write:
+- POST /api/v1/employee-skills/{employee_skill_id}/evidences
+- PATCH /api/v1/employee-skills/evidences/{employee_skill_evidence_id}/verify
+
+## tg_employee_career_history
+read:
+- GET /api/v1/employees/{employee_id}/career-histories
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+write:
+- POST /api/v1/employees/{employee_id}/career-histories
+- PATCH /api/v1/career-histories/{employee_career_history_id}
+
+## tg_employee_achievement
+read:
+- GET /api/v1/employees/{employee_id}/achievements
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+write:
+- POST /api/v1/employees/{employee_id}/achievements
+- PATCH /api/v1/achievements/{employee_achievement_id}
+
+## tg_job_family_master / tg_job_role_master / tg_grade_master
+read:
+- GET /api/v1/employees
+- GET /api/v1/role-requirements
+- GET /api/v1/analytics/*
+write:
+- HR master maintenance endpoints handled via requirement/master flows
+
+## tg_certification_master
+read:
+- GET /api/v1/certification-masters
+- GET /api/v1/employee-certifications
+write:
+- POST /api/v1/certification-masters
+- PATCH /api/v1/certification-masters/{certification_id}
+
+## tg_role_requirement
+read:
+- GET /api/v1/role-requirements
+- GET /api/v1/role-requirements/{role_requirement_id}/diff
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+write:
+- POST /api/v1/role-requirements
+- PATCH /api/v1/role-requirements/{role_requirement_id}
+- POST /api/v1/role-requirements/{role_requirement_id}/clone
+
+## tg_role_requirement_skill / tg_role_requirement_certification
+read:
+- GET /api/v1/role-requirements
+- GET /api/v1/role-requirements/{role_requirement_id}/diff
+write:
+- role requirement write endpoints に内包
+
+## tg_evaluation_cycle
+read:
+- GET /api/v1/evaluation-cycles
+- GET /api/v1/home
+- GET /api/v1/hr/dashboard
+write:
+- POST /api/v1/evaluation-cycles
+- PATCH /api/v1/evaluation-cycles/{evaluation_cycle_id}
+- POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/open
+- POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/publish
+- POST /api/v1/evaluation-cycles/{evaluation_cycle_id}/close
+
+## tg_evaluation_sheet
+read:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- GET /api/v1/evaluation-sheets
+- GET /api/v1/manager/review-queue
+- GET /api/v1/hr/review-queue
+- GET /api/v1/employee/dashboard
+write:
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/hr-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/calibration/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/approve
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/publish
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/reopen
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back
+
+## tg_evaluation_score_detail
+read:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- analytics aggregation jobs
+write:
+- manager-review/save
+- hr-review/save
+- calibration/save
+- scoring internal procedures
+
+## tg_evaluation_comment
+read:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+write:
+- self-review/save
+- manager-review/save
+- hr-review/save
+- ai-assist/review-comment-draft reference linkage
+
+## tg_evaluation_evidence
+read:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+write:
+- self-review/save
+- manager-review/save
+- calibration/save
+- evidence upload link flows
+
+## tg_evaluation_snapshot
+read:
+- GET /api/v1/employee/dashboard
+- GET /api/v1/analytics/distribution
+- GET /api/v1/analytics/org-talent-summary
+write:
+- publish
+- nightly snapshot job
+- cycle close job
+
+## tg_evaluation_change_audit
+read:
+- POST /api/v1/audit-logs/search
+write:
+- all evaluation-changing endpoints append
+
+## tg_evaluation_approval
+read:
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- POST /api/v1/audit-logs/search
+write:
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/approve
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/publish
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/reopen
+
+## tg_calibration_session
+read:
+- GET /api/v1/calibration-sessions/{calibration_session_id}
+write:
+- POST /api/v1/calibration-sessions
+
+## tg_calibration_log
+read:
+- GET /api/v1/calibration-sessions/{calibration_session_id}
+- POST /api/v1/audit-logs/search
+- exports
+write:
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/calibration/save
+
+## tg_growth_plan
+read:
+- GET /api/v1/growth-plans
+- GET /api/v1/growth-plans/{growth_plan_id}
+- GET /api/v1/employee/dashboard
+write:
+- POST /api/v1/growth-plans
+- PATCH /api/v1/growth-plans/{growth_plan_id}
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+
+## tg_growth_action
+read:
+- GET /api/v1/growth-plans/{growth_plan_id}
+- GET /api/v1/employee/dashboard
+write:
+- POST /api/v1/growth-plans
+- PATCH /api/v1/growth-plans/{growth_plan_id}
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+
+## tg_growth_recommendation
+read:
+- GET /api/v1/growth-recommendations
+- GET /api/v1/employee/dashboard
+write:
+- POST /api/v1/growth-recommendations/{growth_recommendation_id}/accept
+- POST /api/v1/growth-recommendations/{growth_recommendation_id}/reject
+- recommendation generation jobs
+
+## tg_role_fit_snapshot
+read:
+- GET /api/v1/role-fit/candidates
+- GET /api/v1/promotion-candidates
+- GET /api/v1/successor-candidates
+write:
+- scoring / candidate calculation jobs
+
+## tg_successor_candidate
+read:
+- GET /api/v1/successor-candidates
+- GET /api/v1/executive/dashboard
+write:
+- POST /api/v1/successor-candidates
+- PATCH /api/v1/successor-candidates/{successor_candidate_id}
+
+## tg_training_roi_snapshot
+read:
+- GET /api/v1/analytics/training-roi
+- GET /api/v1/executive/dashboard
+write:
+- investment calculation jobs
+
+## tg_ai_assist_reference_log
+read:
+- GET /api/v1/ai-assist/references
+- POST /api/v1/audit-logs/search
+write:
+- ai-assist/review-comment-draft
+- ai-assist/growth-suggestion-draft
+- ai-assist/bias-check
+
+## tg_audit_export_log
+read:
+- GET /api/v1/exports/{export_job_id}
+- POST /api/v1/audit-logs/search
+write:
+- POST /api/v1/exports/evaluations
+- POST /api/v1/exports/analytics
+
+# 3. 集約read APIの考え方
+
+## dashboard APIs
+主集約元:
+- tg_employee_profile
+- tg_evaluation_sheet
+- tg_employee_certification
+- tg_growth_plan
+- tg_growth_recommendation
+- tg_evaluation_snapshot
+
+## analytics APIs
+主集約元:
+- tg_evaluation_snapshot
+- tg_role_fit_snapshot
+- tg_training_roi_snapshot
+- skill / certification aggregate views
+
+## audit APIs
+主集約元:
+- tg_evaluation_change_audit
+- tg_evaluation_approval
+- tg_calibration_log
+- tg_ai_assist_reference_log
+- tg_audit_export_log
+
+# 4. write ownership rule
+
+## employee-owned writes
+- academics
+- certifications
+- employee skills
+- self review draft
+- growth progress
+- recommendation accept/reject
+
+## manager-owned writes
+- manager review
+- send back
+- growth review adjustments
+
+## HR-owned writes
+- evaluation cycle
+- requirements / templates
+- calibration
+- approve / publish / reopen
+- successor maintenance
+- master maintenance
+
+## system/internal writes
+- snapshots
+- aggregated analytics
+- ROI calculations
+- AI reference logging
+- export job status
+
+# 5. 結論
+TalentGrowth の DB table to endpoint mapping は、
+テーブル単位の ownership と endpoint単位の責務を
+1枚で辿れる形に固定する。
+
+特に中心となる結線は以下である。
+- tg_evaluation_sheet <-> review endpoints
+- tg_growth_plan <-> growth endpoints
+- tg_role_requirement <-> requirement endpoints
+- snapshot tables <-> analytics endpoints
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0807_TALENT_GROWTH_DB_TABLE_TO_ENDPOINT_MAPPING_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0808_TALENT_GROWTH_BUSINESS_EVENT_OUTBOX_NOTIFICATION_FIXED.md -->
+# TALENT GROWTH BUSINESS EVENT OUTBOX NOTIFICATION FIXED
+
+status: draft-business-event-outbox-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の業務イベント、
+outbox、
+通知生成、
+配信連携の骨格を固定するための資料である。
+
+前提:
+- 通知は direct send ではなく event-first で扱う
+- DB更新と event 発行は分離しない
+- notification は outbox から非同期配信する
+- 共通部品設計ではなく、TalentGrowth 本体責務として定義する
+- BusinessOS 側通知基盤へ接続する場合でも、
+  TalentGrowth 側で発行責務を明確に持つ
+
+# 1. 設計原則
+- business state change first
+- outbox append only
+- notification is derived from business event
+- event payload is minimal but traceable
+- retry is infrastructure concern, not screen concern
+- user-facing message text and event payload are分離する
+- audit_trace_id を event / notification に引き継ぐ
+
+# 2. event domain 一覧
+- evaluation
+- certification
+- growth_plan
+- recommendation
+- calibration
+- successor
+- export
+- ai_assist
+- system_job
+
+# 3. event naming rule
+format:
+- tg.<domain>.<entity>.<action>
+
+examples:
+- tg.evaluation.sheet.self_review_submitted
+- tg.evaluation.sheet.manager_review_submitted
+- tg.evaluation.sheet.sent_back
+- tg.evaluation.sheet.approved
+- tg.evaluation.sheet.published
+- tg.certification.item.expiring_soon
+- tg.certification.item.renewed
+- tg.growth_plan.plan.created
+- tg.growth_plan.plan.review_due
+- tg.export.job.completed
+- tg.ai_assist.draft.generated
+
+# 4. 必須business events
+
+## 4-1. evaluation events
+- tg.evaluation.sheet.created
+- tg.evaluation.sheet.self_review_saved
+- tg.evaluation.sheet.self_review_submitted
+- tg.evaluation.sheet.manager_review_saved
+- tg.evaluation.sheet.manager_review_submitted
+- tg.evaluation.sheet.sent_back
+- tg.evaluation.sheet.hr_review_saved
+- tg.evaluation.sheet.calibration_saved
+- tg.evaluation.sheet.approved
+- tg.evaluation.sheet.published
+- tg.evaluation.sheet.reopened
+
+## 4-2. certification events
+- tg.certification.item.created
+- tg.certification.item.updated
+- tg.certification.item.expiring_soon
+- tg.certification.item.expired
+- tg.certification.item.renewal_started
+- tg.certification.item.renewed
+
+## 4-3. growth plan events
+- tg.growth_plan.plan.created
+- tg.growth_plan.plan.updated
+- tg.growth_plan.action.progress_updated
+- tg.growth_plan.plan.review_due
+- tg.growth_plan.plan.completed
+- tg.growth_plan.recommendation.accepted
+- tg.growth_plan.recommendation.rejected
+
+## 4-4. calibration / successor / export / AI events
+- tg.calibration.session.created
+- tg.calibration.session.closed
+- tg.successor.candidate.created
+- tg.successor.candidate.updated
+- tg.export.job.requested
+- tg.export.job.completed
+- tg.export.job.failed
+- tg.ai_assist.draft.generated
+- tg.ai_assist.bias_check.completed
+
+# 5. outbox table 方針
+TalentGrowth 専用 outbox table を持つ。
+
+recommended table:
+- tg_outbox_event
+
+recommended columns:
+- outbox_event_id
+- company_id
+- event_name
+- event_domain
+- entity_type
+- entity_id
+- aggregate_key
+- payload_json
+- status_code
+- occurred_at
+- available_at
+- retry_count
+- last_retry_at
+- last_error_code
+- last_error_message
+- published_at
+- consumed_by_json
+- audit_trace_id
+- created_at
+- created_by
+
+status_code candidates:
+- PENDING
+- READY
+- PUBLISHING
+- PUBLISHED
+- FAILED
+- DEAD_LETTER
+
+# 6. outbox payload 原則
+payload は event ごとに専用だが、
+最低限以下を持つ。
+
+common payload fields:
+- company_id
+- event_name
+- entity_type
+- entity_id
+- actor_employee_id
+- actor_role_code
+- occurred_at
+- audit_trace_id
+
+example:
+~~~json
+{
+  "company_id": "comp_01",
+  "event_name": "tg.evaluation.sheet.self_review_submitted",
+  "entity_type": "EVALUATION_SHEET",
+  "entity_id": "esheet_01",
+  "actor_employee_id": "emp_01HX001",
+  "actor_role_code": "EMPLOYEE",
+  "evaluation_cycle_id": "ecycle_01",
+  "employee_id": "emp_01HX001",
+  "manager_employee_id": "emp_mgr_01",
+  "occurred_at": "2026-04-12T12:20:00+09:00",
+  "audit_trace_id": "atrace_01"
+}
+~~~
+
+# 7. notification model 方針
+通知は event から派生生成する。
+
+recommended tables:
+- tg_notification
+- tg_notification_delivery
+
+## 7-1. tg_notification columns
+- notification_id
+- company_id
+- source_event_id
+- notification_type_code
+- target_employee_id
+- title_key
+- body_key
+- body_params_json
+- deep_link_type
+- deep_link_target_id
+- priority_code
+- unread_flag
+- notification_status_code
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+## 7-2. tg_notification_delivery columns
+- notification_delivery_id
+- company_id
+- notification_id
+- channel_code
+- delivery_status_code
+- attempted_at
+- delivered_at
+- provider_message_id
+- last_error_code
+- last_error_message
+- retry_count
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+channel_code candidates:
+- IN_APP
+- EMAIL
+- PUSH
+- WEBHOOK_INTERNAL
+
+delivery_status_code candidates:
+- PENDING
+- SENT
+- DELIVERED
+- FAILED
+- CANCELLED
+
+# 8. 通知生成ルール
+
+## 8-1. self review submitted
+source event:
+- tg.evaluation.sheet.self_review_submitted
+
+targets:
+- manager_employee_id
+
+notification type:
+- REVIEW_REQUEST
+
+deep link:
+- evaluation_sheet_id -> manager review input
+
+## 8-2. sent back
+source event:
+- tg.evaluation.sheet.sent_back
+
+targets:
+- sent back 先の actor
+
+notification type:
+- ACTION_REQUIRED
+
+deep link:
+- evaluation_sheet_id -> self review or manager review
+
+## 8-3. approved / published
+source events:
+- tg.evaluation.sheet.approved
+- tg.evaluation.sheet.published
+
+targets:
+- employee_id
+- manager_employee_id
+- optionally HR owner
+
+notification type:
+- RESULT_READY
+
+deep link:
+- evaluation_sheet_id -> my evaluation result
+
+## 8-4. certification expiring soon
+source event:
+- tg.certification.item.expiring_soon
+
+targets:
+- employee_id
+- optionally manager_employee_id
+- optionally HR watcher
+
+notification type:
+- CERT_EXPIRY_ALERT
+
+deep link:
+- employee_certification_id -> certification management
+
+## 8-5. growth plan review due
+source event:
+- tg.growth_plan.plan.review_due
+
+targets:
+- employee_id
+- manager_employee_id
+
+notification type:
+- GROWTH_REVIEW_DUE
+
+deep link:
+- growth_plan_id -> growth plan
+
+## 8-6. export completed
+source event:
+- tg.export.job.completed
+
+targets:
+- requested_by_employee_id
+
+notification type:
+- EXPORT_READY
+
+deep link:
+- export_job_id -> export status / download
+
+# 9. user-facing notification type code
+- REVIEW_REQUEST
+- ACTION_REQUIRED
+- RESULT_READY
+- CERT_EXPIRY_ALERT
+- GROWTH_REVIEW_DUE
+- EXPORT_READY
+- EXPORT_FAILED
+- CALIBRATION_NOTICE
+- SUCCESSOR_UPDATE
+- SYSTEM_ALERT
+
+# 10. delivery routing rule
+基本ルール:
+- 全通知は IN_APP を持つ
+- mobile capable user には PUSH 可
+- formal trace が必要な場合は EMAIL 可
+- internal system integration は WEBHOOK_INTERNAL 可
+
+recommended routing:
+- REVIEW_REQUEST -> IN_APP + PUSH
+- ACTION_REQUIRED -> IN_APP + PUSH
+- RESULT_READY -> IN_APP
+- CERT_EXPIRY_ALERT -> IN_APP + EMAIL optional
+- EXPORT_READY -> IN_APP
+- EXPORT_FAILED -> IN_APP + EMAIL optional
+
+# 11. idempotency rule
+- same event_name + entity_id + target_employee_id + channel_code + dedupe window
+  で重複生成を抑制する
+- outbox republish でも user-facing duplicate を避ける
+- notification create と delivery create は idempotent key を持つ
+
+recommended dedupe fields:
+- dedupe_key
+- source_event_id
+- target_employee_id
+- channel_code
+
+# 12. dead letter rule
+以下で DEAD_LETTER 化を許可する。
+- retry_count exceeded
+- invalid payload
+- target missing permanently
+- unsupported channel permanently
+
+DEAD_LETTER でも以下は保持する。
+- payload_json
+- last_error_code
+- last_error_message
+- retry_count
+- audit_trace_id
+
+# 13. audit rule
+すべての event / notification / delivery に
+audit_trace_id を引き継ぐ。
+
+監査可能対象:
+- event 発行
+- notification 生成
+- delivery 実行
+- delivery 失敗
+- retry
+- dead letter 化
+
+# 14. 結論
+TalentGrowth の通知は、
+画面から直接送るのではなく、
+business event -> outbox -> notification -> delivery
+の流れで固定する。
+
+中核原則は以下である。
+- state change first
+- event append first
+- delivery async
+- user message derived
+- full traceable
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0808_TALENT_GROWTH_BUSINESS_EVENT_OUTBOX_NOTIFICATION_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0809_TALENT_GROWTH_EXACT_VALIDATION_MATRIX_PER_ENDPOINT_FIXED.md -->
+# TALENT GROWTH EXACT VALIDATION MATRIX PER ENDPOINT FIXED
+
+status: draft-validation-matrix-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要 endpoint ごとに、
+required field,
+enum,
+range,
+state precondition,
+permission precondition,
+error code を固定するための資料である。
+
+# 1. matrix columns
+- endpoint
+- field
+- required
+- type
+- validation
+- precondition
+- error_code
+
+# 2. employee profile
+
+## PATCH /api/v1/employees/{employee_id}
+- field: display_name
+  required: no
+  type: string
+  validation: max 100 chars
+  precondition: self or HR scope
+  error_code: TG_VALIDATION_ERROR
+
+- field: email
+  required: no
+  type: string
+  validation: valid email format
+  precondition: self or HR scope
+  error_code: TG_VALIDATION_ERROR
+
+- field: phone
+  required: no
+  type: string
+  validation: max 30 chars
+  precondition: self or HR scope
+  error_code: TG_VALIDATION_ERROR
+
+- field: career_preference_text
+  required: no
+  type: string
+  validation: max 2000 chars
+  precondition: self or HR scope
+  error_code: TG_VALIDATION_ERROR
+
+# 3. academics
+
+## POST /api/v1/employees/{employee_id}/academics
+- field: school_name
+  required: yes
+  type: string
+  validation: 1..200 chars
+  precondition: self or HR scope
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: degree_code
+  required: no
+  type: enum
+  validation: allowlist enum
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+- field: graduation_date
+  required: no
+  type: date
+  validation: valid date
+  precondition: none
+  error_code: TG_VALIDATION_ERROR
+
+# 4. certifications
+
+## POST /api/v1/employee-certifications
+- field: employee_id
+  required: yes
+  type: id
+  validation: target must be accessible
+  precondition: self own or HR scope
+  error_code: TG_ACCESS_SCOPE_VIOLATION
+
+- field: certification_id
+  required: yes
+  type: id
+  validation: must exist in certification master
+  precondition: none
+  error_code: TG_NOT_FOUND_CERTIFICATION
+
+- field: acquired_date
+  required: no
+  type: date
+  validation: valid date
+  precondition: none
+  error_code: TG_VALIDATION_ERROR
+
+- field: expiry_date
+  required: no
+  type: date
+  validation: expiry_date >= acquired_date when both present
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_DATE_RANGE
+
+- field: evidence_file_id
+  required: no
+  type: id
+  validation: file must exist and be accessible
+  precondition: none
+  error_code: TG_DEPENDENCY_FILE_STORE_UNAVAILABLE or TG_VALIDATION_ERROR
+
+## POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+- field: renewed_at
+  required: yes
+  type: date
+  validation: valid date
+  precondition: certification accessible
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: new_expiry_date
+  required: yes
+  type: date
+  validation: new_expiry_date >= renewed_at
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_DATE_RANGE
+
+- field: renewal_cost.source_amount
+  required: no
+  type: decimal
+  validation: >= 0
+  precondition: if source_currency provided
+  error_code: TG_VALIDATION_ERROR
+
+- field: renewal_cost.source_currency
+  required: conditional
+  type: currency
+  validation: ISO-like allowlist
+  precondition: if source_amount provided
+  error_code: TG_VALIDATION_INVALID_CURRENCY
+
+# 5. skills
+
+## POST /api/v1/employee-skills
+- field: employee_id
+  required: yes
+  type: id
+  validation: accessible employee
+  precondition: self own or HR scope
+  error_code: TG_ACCESS_SCOPE_VIOLATION
+
+- field: skill_id
+  required: yes
+  type: id
+  validation: must exist
+  precondition: none
+  error_code: TG_NOT_FOUND_SKILL
+
+- field: proficiency_level
+  required: yes
+  type: integer
+  validation: within skill master min/max
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+## PATCH /api/v1/employee-skills/{employee_skill_id}
+- field: self_rating
+  required: no
+  type: decimal
+  validation: 0..100 or configured scale
+  precondition: self edit scope
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: manager_rating
+  required: no
+  type: decimal
+  validation: 0..100 or configured scale
+  precondition: manager/team or HR
+  error_code: TG_ACCESS_FORBIDDEN or TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: employee_comment
+  required: no
+  type: string
+  validation: max 4000 chars
+  precondition: self edit scope
+  error_code: TG_VALIDATION_ERROR
+
+## POST /api/v1/employee-skills/{employee_skill_id}/evidences
+- field: evidence_type_code
+  required: yes
+  type: enum
+  validation: allowlist enum
+  precondition: skill accessible
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+- field: evidence_title
+  required: yes
+  type: string
+  validation: 1..200 chars
+  precondition: none
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: confidence_score
+  required: no
+  type: decimal
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+# 6. self review
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+- field: employee_id
+  required: yes
+  type: id
+  validation: must equal auth employee unless HR proxy flow
+  precondition: self own sheet
+  error_code: TG_ACCESS_SCOPE_VIOLATION
+
+- field: self_review_comment
+  required: conditional
+  type: string
+  validation: max 5000 chars
+  precondition: sheet editable by employee
+  error_code: TG_STATE_INVALID_TRANSITION or TG_VALIDATION_ERROR
+
+- field: skill_items[].employee_skill_id
+  required: yes
+  type: id
+  validation: must belong to employee
+  precondition: sheet editable by employee
+  error_code: TG_VALIDATION_ERROR
+
+- field: skill_items[].proficiency_level
+  required: conditional
+  type: integer
+  validation: valid level range
+  precondition: sheet editable by employee
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: skill_items[].evidence_ids
+  required: conditional
+  type: array
+  validation: no duplicates, max endpoint limit
+  precondition: sheet editable by employee
+  error_code: TG_VALIDATION_ERROR
+
+- field: achievement_items[].employee_achievement_id
+  required: no
+  type: id
+  validation: must belong to employee
+  precondition: none
+  error_code: TG_VALIDATION_ERROR
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+- field: employee_id
+  required: yes
+  type: id
+  validation: must equal auth employee
+  precondition: status must be SELF_REVIEW_DRAFT
+  error_code: TG_STATE_INVALID_TRANSITION
+
+- field: final_self_review_comment
+  required: conditional
+  type: string
+  validation: max 5000 chars
+  precondition: configured mandatory rule if any
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: submit_confirmed
+  required: yes
+  type: boolean
+  validation: must be true
+  precondition: none
+  error_code: TG_VALIDATION_REQUIRED
+
+# 7. manager review
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+- field: manager_employee_id
+  required: yes
+  type: id
+  validation: must equal auth employee in manager role
+  precondition: manager has team scope
+  error_code: TG_ACCESS_FORBIDDEN
+
+- field: manager_review_comment
+  required: conditional
+  type: string
+  validation: max 5000 chars
+  precondition: sheet reviewable by manager
+  error_code: TG_STATE_INVALID_TRANSITION
+
+- field: score_inputs.behavior_score
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: sheet reviewable by manager
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: score_inputs.performance_score
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: sheet reviewable by manager
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: score_inputs.current_role_fit_score
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: sheet reviewable by manager
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: score_inputs.target_role_fit_score
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: sheet reviewable by manager
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: score_inputs.growth_potential_score
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: sheet reviewable by manager
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: competency_items[].manager_rating
+  required: yes
+  type: integer
+  validation: configured level range
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+- field: manager_employee_id
+  required: yes
+  type: id
+  validation: must equal auth employee in manager role
+  precondition: status compatible with manager submit
+  error_code: TG_STATE_INVALID_TRANSITION
+
+- field: submit_confirmed
+  required: yes
+  type: boolean
+  validation: must be true
+  precondition: none
+  error_code: TG_VALIDATION_REQUIRED
+
+# 8. send back
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back
+- field: target_role_code
+  required: yes
+  type: enum
+  validation: EMPLOYEE or MANAGER or allowed role
+  precondition: actor is manager or HR
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+- field: send_back_reason
+  required: yes
+  type: string
+  validation: 1..2000 chars
+  precondition: sheet in returnable state
+  error_code: TG_STATE_INVALID_TRANSITION or TG_VALIDATION_REQUIRED
+
+# 9. role requirement
+
+## POST /api/v1/role-requirements
+- field: job_role_id
+  required: yes
+  type: id
+  validation: must exist
+  precondition: HR only
+  error_code: TG_NOT_FOUND_ROLE or TG_ACCESS_FORBIDDEN
+
+- field: requirement_version
+  required: yes
+  type: string
+  validation: 1..50 chars
+  precondition: HR only
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: effective_from
+  required: yes
+  type: date
+  validation: valid date
+  precondition: HR only
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: effective_to
+  required: no
+  type: date
+  validation: effective_to >= effective_from
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_DATE_RANGE
+
+- field: overall_weight_skill
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: overall_weight_certification
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: overall_weight_experience
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: overall_weight_performance
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: overall_weight_behavior
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: overall_weight_growth
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+- field: total_weight_check
+  required: yes
+  type: derived
+  validation: sum weights = configured rule, usually 100
+  precondition: none
+  error_code: TG_VALIDATION_ERROR
+
+# 10. calibration
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/calibration/save
+- field: hr_employee_id
+  required: yes
+  type: id
+  validation: auth HR
+  precondition: status must be HR_REVIEW_IN_PROGRESS or CALIBRATION_IN_PROGRESS
+  error_code: TG_STATE_INVALID_TRANSITION or TG_ACCESS_FORBIDDEN
+
+- field: calibration_session_id
+  required: yes
+  type: id
+  validation: must exist and be active
+  precondition: HR only
+  error_code: TG_NOT_FOUND_CALIBRATION_SESSION
+
+- field: post_calibration_rank
+  required: yes
+  type: enum
+  validation: allowlist rank
+  precondition: HR only
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+- field: calibration_reason
+  required: yes
+  type: string
+  validation: 1..4000 chars
+  precondition: HR only
+  error_code: TG_VALIDATION_REQUIRED
+
+## POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/approve
+- field: approver_employee_id
+  required: yes
+  type: id
+  validation: auth HR approver
+  precondition: status must be HR_REVIEW_IN_PROGRESS or CALIBRATION_IN_PROGRESS
+  error_code: TG_STATE_INVALID_TRANSITION or TG_ACCESS_FORBIDDEN
+
+- field: approval_comment
+  required: no
+  type: string
+  validation: max 4000 chars
+  precondition: HR only
+  error_code: TG_VALIDATION_ERROR
+
+- field: publish_after_approval
+  required: no
+  type: boolean
+  validation: boolean
+  precondition: HR only
+  error_code: TG_VALIDATION_ERROR
+
+# 11. growth plan
+
+## POST /api/v1/growth-plans
+- field: employee_id
+  required: yes
+  type: id
+  validation: accessible target
+  precondition: employee_self own, or manager/team, or HR
+  error_code: TG_ACCESS_SCOPE_VIOLATION
+
+- field: plan_title
+  required: yes
+  type: string
+  validation: 1..200 chars
+  precondition: none
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: plan_period_start
+  required: yes
+  type: date
+  validation: valid date
+  precondition: none
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: plan_period_end
+  required: yes
+  type: date
+  validation: >= plan_period_start
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_DATE_RANGE
+
+- field: actions
+  required: yes
+  type: array
+  validation: min 1, max endpoint limit
+  precondition: none
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: actions[].action_type
+  required: yes
+  type: enum
+  validation: allowlist enum
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+- field: actions[].title
+  required: yes
+  type: string
+  validation: 1..200 chars
+  precondition: none
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: actions[].priority
+  required: yes
+  type: enum
+  validation: allowlist enum
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+## POST /api/v1/growth-plans/{growth_plan_id}/progress
+- field: updated_by_employee_id
+  required: yes
+  type: id
+  validation: must be owner, manager, or HR scope
+  precondition: plan status active/in progress
+  error_code: TG_ACCESS_FORBIDDEN or TG_STATE_INVALID_TRANSITION
+
+- field: progress_items[].growth_action_id
+  required: yes
+  type: id
+  validation: must belong to plan
+  precondition: none
+  error_code: TG_VALIDATION_ERROR
+
+- field: progress_items[].progress_status
+  required: yes
+  type: enum
+  validation: allowlist enum
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+- field: progress_items[].progress_percent
+  required: yes
+  type: integer
+  validation: 0..100
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+# 12. role-fit / successor
+
+## GET /api/v1/role-fit/candidates
+- field: target_role_id
+  required: yes
+  type: id
+  validation: must exist
+  precondition: manager/team, HR, executive
+  error_code: TG_NOT_FOUND_ROLE or TG_ACCESS_FORBIDDEN
+
+- field: organization_id
+  required: no
+  type: id
+  validation: accessible org scope
+  precondition: none
+  error_code: TG_ACCESS_SCOPE_VIOLATION
+
+## POST /api/v1/successor-candidates
+- field: critical_role_id
+  required: yes
+  type: id
+  validation: must exist
+  precondition: HR only
+  error_code: TG_VALIDATION_REQUIRED
+
+- field: employee_id
+  required: yes
+  type: id
+  validation: accessible and active employee
+  precondition: HR only
+  error_code: TG_NOT_FOUND_EMPLOYEE
+
+- field: readiness_score
+  required: yes
+  type: decimal
+  validation: 0..100
+  precondition: HR only
+  error_code: TG_VALIDATION_INVALID_SCORE_RANGE
+
+# 13. audit / export
+
+## POST /api/v1/audit-logs/search
+- field: date_from
+  required: no
+  type: date
+  validation: valid date
+  precondition: HR or limited admin
+  error_code: TG_ACCESS_FORBIDDEN
+
+- field: date_to
+  required: no
+  type: date
+  validation: >= date_from when both exist
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_DATE_RANGE
+
+- field: action_types
+  required: no
+  type: array
+  validation: allowlist enum, max endpoint limit
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+## POST /api/v1/exports/evaluations
+- field: export_type_code
+  required: yes
+  type: enum
+  validation: allowlist enum
+  precondition: HR
+  error_code: TG_VALIDATION_INVALID_ENUM or TG_ACCESS_FORBIDDEN
+
+- field: locale_code
+  required: no
+  type: locale
+  validation: supported locale
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_LANGUAGE
+
+- field: reporting_currency
+  required: no
+  type: currency
+  validation: supported currency
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_CURRENCY
+
+# 14. AI assist
+
+## POST /api/v1/ai-assist/review-comment-draft
+- field: requested_by_employee_id
+  required: yes
+  type: id
+  validation: auth user and allowed role
+  precondition: AI assist enabled for role and screen
+  error_code: TG_AI_ASSIST_NOT_ALLOWED_FOR_ROLE or TG_AI_ASSIST_DISABLED
+
+- field: evaluation_sheet_id
+  required: yes
+  type: id
+  validation: accessible sheet
+  precondition: manager or HR scope
+  error_code: TG_NOT_FOUND_EVALUATION_SHEET or TG_ACCESS_FORBIDDEN
+
+- field: draft_type
+  required: yes
+  type: enum
+  validation: allowlist enum
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+- field: language
+  required: yes
+  type: locale
+  validation: supported language
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_LANGUAGE
+
+# 15. query parameter strictness examples
+
+## GET /api/v1/employee-certifications
+- field: expiring_within_days
+  required: no
+  type: integer
+  validation: >= 0 and <= configured max
+  precondition: accessible scope
+  error_code: TG_VALIDATION_ERROR
+
+- field: sort_field
+  required: no
+  type: enum
+  validation: allowlist
+  precondition: none
+  error_code: TG_VALIDATION_UNKNOWN_PARAMETER or TG_VALIDATION_INVALID_ENUM
+
+- field: sort_direction
+  required: no
+  type: enum
+  validation: asc/desc only
+  precondition: none
+  error_code: TG_VALIDATION_INVALID_ENUM
+
+# 16. lock / concurrency validations
+applicable endpoints:
+- PATCH /api/v1/employees/{employee_id}
+- PATCH /api/v1/employee-skills/{employee_skill_id}
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/calibration/save
+- PATCH /api/v1/growth-plans/{growth_plan_id}
+
+rule:
+- lock_version required where configured
+- mismatch -> TG_CONFLICT_LOCK_VERSION_MISMATCH
+
+# 17. 결론
+TalentGrowth の validation matrix は、
+endpoint単位で required / type / range / state / permission / error_code を
+固定することで、実装とQAの基準を一本化する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0809_TALENT_GROWTH_EXACT_VALIDATION_MATRIX_PER_ENDPOINT_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0810_TALENT_GROWTH_REQUEST_RESPONSE_EXAMPLE_SET_EXPANDED.md -->
+# TALENT GROWTH REQUEST RESPONSE EXAMPLE SET EXPANDED
+
+status: draft-example-set-expanded
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+主要APIの request / response example を増補し、
+実装・テスト・モック作成に使える例セットを固定するための資料である。
+
+# 1. GET /api/v1/employee-certifications example
+~~~json
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "employee_certification_id": "ecert_01",
+        "employee_id": "emp_01HX001",
+        "certification_id": "cert_01",
+        "certification_name_snapshot": "第一種衛生管理者",
+        "issuer_name_snapshot": "厚生労働省",
+        "acquired_date": "2023-05-01",
+        "expiry_date": "2026-05-15",
+        "renewal_required": true,
+        "certification_status_code": "EXPIRING_SOON",
+        "days_left": 33
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "req_cert_list_01",
+    "server_time": "2026-04-12T15:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 2. PATCH /api/v1/employees/{employee_id} example request
+~~~json
+{
+  "display_name": "山田 太郎",
+  "email": "boss@example.com",
+  "phone": "09012345678",
+  "career_preference_text": "店舗運営の上流管理を経験したい",
+  "lock_version": 3
+}
+~~~
+
+# 3. POST /api/v1/role-requirements example request
+~~~json
+{
+  "job_family_id": "jfam_store",
+  "job_role_id": "jrole_store_manager",
+  "grade_id": "grade_g3",
+  "requirement_version": "2026-H1",
+  "effective_from": "2026-05-01",
+  "effective_to": null,
+  "overall_weight_skill": 30,
+  "overall_weight_certification": 15,
+  "overall_weight_experience": 10,
+  "overall_weight_performance": 15,
+  "overall_weight_behavior": 10,
+  "overall_weight_growth": 20,
+  "skills": [
+    {
+      "skill_id": "skill_numeric_management",
+      "required_level": 4,
+      "preferred_level": 5,
+      "weight_score": 15,
+      "mandatory_flag": true
+    }
+  ],
+  "certifications": [
+    {
+      "certification_id": "cert_hygiene_manager",
+      "mandatory_flag": true,
+      "preferred_flag": false,
+      "weight_score": 15
+    }
+  ]
+}
+~~~
+
+# 4. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back example
+~~~json
+{
+  "target_role_code": "EMPLOYEE",
+  "send_back_reason": "根拠不足のため再提出してください"
+}
+~~~
+
+# 5. POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/reopen example
+~~~json
+{
+  "reopen_reason": "公開後に重大な入力誤りが判明したため",
+  "requested_by_employee_id": "emp_hr_01"
+}
+~~~
+
+# 6. POST /api/v1/exports/evaluations example
+~~~json
+{
+  "export_type_code": "EVALUATION_RESULT_EXPORT",
+  "locale_code": "ja-JP",
+  "reporting_currency": "JPY",
+  "filters": {
+    "evaluation_cycle_id": "ecycle_01",
+    "organization_id": "org_01",
+    "current_state_rank": "B"
+  }
+}
+~~~
+
+# 7. GET /api/v1/exports/{export_job_id} example response
+~~~json
+{
+  "ok": true,
+  "data": {
+    "export_job_id": "expjob_01",
+    "status_code": "COMPLETED",
+    "file_format": "CSV",
+    "row_count": 148,
+    "requested_at": "2026-04-12T15:10:00+09:00",
+    "completed_at": "2026-04-12T15:11:12+09:00",
+    "file_id": "file_export_01"
+  },
+  "meta": {
+    "request_id": "req_export_status_01",
+    "server_time": "2026-04-12T15:11:15+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 8. POST /api/v1/ai-assist/growth-suggestion-draft example
+~~~json
+{
+  "requested_by_employee_id": "emp_mgr_01",
+  "evaluation_sheet_id": "esheet_01",
+  "language": "ja",
+  "input_summary": {
+    "top_gaps": ["NUMERIC_MANAGEMENT", "PEOPLE_DEVELOPMENT"],
+    "current_role_fit_score": 79.0,
+    "target_role_fit_score": 68.0
+  }
+}
+~~~
+
+# 9. 結論
+TalentGrowth の example set は、
+主要 endpoint の request / response を増補し、
+モックと結合試験の土台に使えるように固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0810_TALENT_GROWTH_REQUEST_RESPONSE_EXAMPLE_SET_EXPANDED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0811_TALENT_GROWTH_API_MOCK_DATASET_FIXED.md -->
+# TALENT GROWTH API MOCK DATASET FIXED
+
+status: draft-api-mock-dataset-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要画面 / API / 結合試験で使う
+固定 mock dataset を定義するための資料である。
+
+前提:
+- demo company 1社で固定する
+- phase A / B の代表フローを再現できる
+- employee / manager / HR / executive / admin を含む
+- send back, approval, cert expiry, growth plan, notification を含む
+
+# 1. tenant and actor set
+
+company:
+- company_id: comp_demo_01
+- company_name: Demo Retail Co.
+
+employees:
+- emp_demo_01
+  role: employee_self
+  name: 山田 太郎
+  org: 東北営業部
+  current_role: 店舗担当
+  current_grade: G2
+  manager: emp_demo_mgr_01
+
+- emp_demo_mgr_01
+  role: manager
+  name: 佐藤 花子
+  org: 東北営業部
+  current_role: 店長
+  current_grade: G3
+
+- emp_demo_hr_01
+  role: HR
+  name: 鈴木 健
+  org: 人事部
+
+- emp_demo_exe_01
+  role: executive
+  name: 高橋 誠
+  org: 経営企画室
+
+- emp_demo_admin_01
+  role: admin
+  name: 管理 太一
+  org: 情報システム部
+
+# 2. master mock set
+
+job families:
+- jfam_store: 店舗職群
+
+job roles:
+- jrole_store_staff: 店舗担当
+- jrole_store_manager: 店長
+
+grades:
+- grade_g2: 一般
+- grade_g3: 主任級
+
+skills:
+- skill_customer_response
+- skill_numeric_management
+- skill_people_development
+- skill_store_operation
+
+certifications:
+- cert_hygiene_manager
+- cert_safety_supervisor
+
+# 3. employee profile mock
+
+employee profile baseline:
+- emp_demo_01
+  employee_code: E0001
+  current_job_role_id: jrole_store_staff
+  current_grade_id: grade_g2
+  preferred_language_code: ja
+  reporting_currency_code: JPY
+
+- emp_demo_mgr_01
+  employee_code: M0001
+  current_job_role_id: jrole_store_manager
+  current_grade_id: grade_g3
+
+# 4. certification mock
+
+## active and expiring set
+- ecert_demo_01
+  employee_id: emp_demo_01
+  certification_id: cert_hygiene_manager
+  certification_status_code: EXPIRING_SOON
+  acquired_date: 2023-05-01
+  expiry_date: 2026-05-15
+  renewal_required: true
+
+- ecert_demo_02
+  employee_id: emp_demo_mgr_01
+  certification_id: cert_safety_supervisor
+  certification_status_code: ACTIVE
+  acquired_date: 2025-01-10
+  expiry_date: 2028-01-09
+  renewal_required: true
+
+# 5. skill mock
+
+employee skills:
+- eskill_demo_01
+  employee_id: emp_demo_01
+  skill_id: skill_customer_response
+  proficiency_level: 4
+  self_rating: 82
+  manager_rating: 80
+
+- eskill_demo_02
+  employee_id: emp_demo_01
+  skill_id: skill_store_operation
+  proficiency_level: 4
+  self_rating: 79
+  manager_rating: 78
+
+- eskill_demo_03
+  employee_id: emp_demo_01
+  skill_id: skill_numeric_management
+  proficiency_level: 2
+  self_rating: 55
+  manager_rating: 58
+
+- eskill_demo_04
+  employee_id: emp_demo_01
+  skill_id: skill_people_development
+  proficiency_level: 2
+  self_rating: 50
+  manager_rating: 52
+
+# 6. role requirement mock
+
+role requirement for store manager:
+- role_requirement_id: rr_demo_store_manager_2026h1
+- job_role_id: jrole_store_manager
+- grade_id: grade_g3
+- requirement_version: 2026-H1
+- overall_weight_skill: 30
+- overall_weight_certification: 15
+- overall_weight_experience: 10
+- overall_weight_performance: 15
+- overall_weight_behavior: 10
+- overall_weight_growth: 20
+
+required skills:
+- skill_store_operation required_level 4 mandatory
+- skill_numeric_management required_level 4 mandatory
+- skill_people_development required_level 3 mandatory
+
+required certification:
+- cert_hygiene_manager mandatory
+
+# 7. evaluation mock
+
+evaluation cycle:
+- ecycle_demo_2026h1
+  cycle_code: 2026-H1
+  cycle_name: 2026年上期評価
+  cycle_status_code: OPEN
+
+evaluation sheet:
+- esheet_demo_01
+  employee_id: emp_demo_01
+  manager_employee_id: emp_demo_mgr_01
+  hr_owner_employee_id: emp_demo_hr_01
+  current_job_role_id: jrole_store_staff
+  target_job_role_id: jrole_store_manager
+  evaluation_status_code: SELF_REVIEW_SUBMITTED
+  current_state_rank: B
+  future_readiness_rank: B
+  total_evaluation_score: 75.50
+  current_role_fit_score: 79.00
+  target_role_fit_score: 68.00
+  growth_potential_score: 81.00
+  promotion_readiness_score: 64.00
+  successor_readiness_score: 61.00
+
+# 8. self review mock
+
+self review summary:
+- self_review_comment:
+  現職では店舗運営の再現性は高いが、数値管理と後輩育成に課題がある。
+
+skill self comments:
+- customer_response:
+  クレーム初動対応は単独で実施可能
+- numeric_management:
+  日次管理は実施できるが月次分析は弱い
+- people_development:
+  OJTの体系化経験が不足
+
+# 9. manager review mock
+
+manager review draft:
+- manager_review_comment:
+  運営安定性は高い。次期は数値管理と育成観点を重点強化したい。
+- behavior_score: 72
+- performance_score: 79
+- current_role_fit_score: 80
+- target_role_fit_score: 68
+- growth_potential_score: 83
+
+# 10. calibration mock
+
+calibration session:
+- calsess_demo_01
+  session_name: 2026年上期 校正会議A
+  session_status_code: OPEN
+
+calibration log example:
+- pre_rank_code: B
+- post_rank_code: B
+- pre_total_score: 75.50
+- post_total_score: 76.50
+- change_reason_text: 部門間評価基準差の是正
+
+# 11. growth plan mock
+
+growth plan:
+- gplan_demo_01
+  employee_id: emp_demo_01
+  plan_title: 2026年上期 成長計画
+  target_job_role_id: jrole_store_manager
+  growth_plan_status_code: ACTIVE
+  next_review_due_at: 2026-06-30
+
+growth actions:
+- gact_demo_01
+  action_type_code: TRAINING
+  action_title: 数値管理基礎研修
+  priority_code: HIGH
+  completion_percent: 50
+
+- gact_demo_02
+  action_type_code: OJT
+  action_title: 新人育成OJT担当
+  priority_code: MEDIUM
+  completion_percent: 0
+
+recommendations:
+- grec_demo_01
+  recommendation_type_code: TRAINING
+  recommendation_title: 数値管理基礎研修
+  accepted_flag: true
+
+# 12. notification mock
+
+notifications:
+- notif_demo_01
+  notification_type_code: REVIEW_REQUEST
+  target_employee_id: emp_demo_mgr_01
+  deep_link_type: EVALUATION_SHEET
+  deep_link_target_id: esheet_demo_01
+
+- notif_demo_02
+  notification_type_code: CERT_EXPIRY_ALERT
+  target_employee_id: emp_demo_01
+  deep_link_type: EMPLOYEE_CERTIFICATION
+  deep_link_target_id: ecert_demo_01
+
+# 13. audit mock
+
+audit entries:
+- approve action sample
+- send back action sample
+- calibration save sample
+- ai reference sample
+
+audit_trace sample:
+- atrace_demo_01
+
+# 14. usage
+この dataset は以下に使う。
+- API mock response
+- frontend mock screens
+- integration test
+- regression minimum set
+- demo data seed
+
+# 15. conclusion
+TalentGrowth の API mock dataset は、
+phase A/B の代表フローを再現できる最小固定セットとして扱う。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0811_TALENT_GROWTH_API_MOCK_DATASET_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0812_TALENT_GROWTH_API_STUB_RESPONSE_SET_FIXED.md -->
+# TALENT GROWTH API STUB RESPONSE SET FIXED
+
+status: draft-api-stub-response-set-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth phase A 実装で先に frontend をつなげるための
+API stub response set を固定するための資料である。
+
+前提:
+- mock dataset 固定済み
+- exact payload 固定済み
+- ここでは representative response を phase A 優先で固定する
+
+# 1. stub use rule
+- stub は exact payload shape を崩さない
+- stable ids を使う
+- generated_at / request_id / version を入れる
+- error stub も同時に持つ
+- state transition で response を切り替えられるようにする
+
+# 2. GET /api/v1/me stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "employee_id": "emp_demo_01",
+    "company_id": "comp_demo_01",
+    "full_name": "山田 太郎",
+    "display_name": "山田 太郎",
+    "role_codes": ["EMPLOYEE"],
+    "organization_id": "org_tohoku_sales",
+    "preferred_language_code": "ja",
+    "reporting_currency_code": "JPY"
+  },
+  "meta": {
+    "request_id": "stub_me_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 3. GET /api/v1/employee/dashboard stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "employee_id": "emp_demo_01",
+    "employee_name": "山田 太郎",
+    "current_role_fit_score": 79.0,
+    "target_role_fit_score": 68.0,
+    "growth_potential_score": 81.0,
+    "current_state_rank": "B",
+    "next_review_due_at": "2026-06-30",
+    "pending_items": [
+      {
+        "item_code": "SELF_REVIEW_SUBMITTED",
+        "label": "上長レビュー待ち",
+        "count": 1
+      }
+    ],
+    "expiring_certifications": [
+      {
+        "employee_certification_id": "ecert_demo_01",
+        "certification_name": "第一種衛生管理者",
+        "expiry_date": "2026-05-15",
+        "days_left": 32
+      }
+    ],
+    "top_growth_actions": [
+      {
+        "growth_action_id": "gact_demo_01",
+        "action_type": "TRAINING",
+        "title": "数値管理基礎研修",
+        "priority": "HIGH",
+        "due_date": "2026-06-15"
+      }
+    ],
+    "score_trend": {
+      "previous_total_score": 71.0,
+      "current_total_score": 75.5,
+      "delta": 4.5
+    }
+  },
+  "meta": {
+    "request_id": "stub_emp_dash_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 4. GET /api/v1/employee-certifications stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "employee_certification_id": "ecert_demo_01",
+        "employee_id": "emp_demo_01",
+        "certification_id": "cert_hygiene_manager",
+        "certification_name_snapshot": "第一種衛生管理者",
+        "issuer_name_snapshot": "厚生労働省",
+        "acquired_date": "2023-05-01",
+        "expiry_date": "2026-05-15",
+        "renewal_required": true,
+        "certification_status_code": "EXPIRING_SOON",
+        "days_left": 32
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "stub_cert_list_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 5. GET /api/v1/employee-skills stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "employee_skill_id": "eskill_demo_01",
+        "employee_id": "emp_demo_01",
+        "skill_id": "skill_customer_response",
+        "skill_label": "顧客対応",
+        "proficiency_level": 4,
+        "self_rating": 82,
+        "manager_rating": 80,
+        "evidence_count": 2,
+        "employee_comment": "クレーム初動対応は単独で実施可能"
+      },
+      {
+        "employee_skill_id": "eskill_demo_03",
+        "employee_id": "emp_demo_01",
+        "skill_id": "skill_numeric_management",
+        "skill_label": "数値管理",
+        "proficiency_level": 2,
+        "self_rating": 55,
+        "manager_rating": 58,
+        "evidence_count": 0,
+        "employee_comment": "月次分析は弱い"
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "stub_skill_list_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 6. GET /api/v1/evaluation-sheets/{evaluation_sheet_id} stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "evaluation_sheet_id": "esheet_demo_01",
+    "employee_id": "emp_demo_01",
+    "employee_name": "山田 太郎",
+    "manager_employee_id": "emp_demo_mgr_01",
+    "evaluation_cycle_id": "ecycle_demo_2026h1",
+    "cycle_name": "2026年上期評価",
+    "evaluation_status_code": "SELF_REVIEW_SUBMITTED",
+    "current_state_rank": "B",
+    "future_readiness_rank": "B",
+    "total_evaluation_score": 75.5,
+    "current_role_fit_score": 79.0,
+    "target_role_fit_score": 68.0,
+    "growth_potential_score": 81.0,
+    "promotion_readiness_score": 64.0,
+    "successor_readiness_score": 61.0,
+    "self_review_comment": "現職では店舗運営の再現性は高いが、数値管理と後輩育成に課題がある。",
+    "skill_items": [
+      {
+        "employee_skill_id": "eskill_demo_01",
+        "skill_label": "顧客対応",
+        "proficiency_level": 4,
+        "self_comment": "クレーム初動対応は単独で実施可能",
+        "evidence_ids": ["evi_demo_01"]
+      },
+      {
+        "employee_skill_id": "eskill_demo_03",
+        "skill_label": "数値管理",
+        "proficiency_level": 2,
+        "self_comment": "日次管理は可能だが月次分析は弱い",
+        "evidence_ids": []
+      }
+    ],
+    "achievement_items": [
+      {
+        "employee_achievement_id": "ach_demo_01",
+        "achievement_title": "月次粗利改善",
+        "self_comment": "担当売場の粗利改善に寄与"
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "stub_eval_sheet_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 7. GET /api/v1/manager/review-queue stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "evaluation_sheet_id": "esheet_demo_01",
+        "employee_id": "emp_demo_01",
+        "employee_name": "山田 太郎",
+        "organization_name": "東北営業部",
+        "current_state_rank": "B",
+        "status": "SELF_REVIEW_SUBMITTED",
+        "submitted_at": "2026-04-13T09:30:00+09:00",
+        "expiring_certification_count": 1,
+        "evidence_count": 4
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "stub_mgr_queue_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 8. GET /api/v1/growth-plans stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "growth_plan_id": "gplan_demo_01",
+        "employee_id": "emp_demo_01",
+        "plan_title": "2026年上期 成長計画",
+        "target_job_role_id": "jrole_store_manager",
+        "target_job_role_label": "店長",
+        "plan_period_start": "2026-05-01",
+        "plan_period_end": "2026-10-31",
+        "growth_plan_status_code": "ACTIVE",
+        "next_review_due_at": "2026-06-30",
+        "actions": [
+          {
+            "growth_action_id": "gact_demo_01",
+            "action_type_code": "TRAINING",
+            "action_title": "数値管理基礎研修",
+            "priority_code": "HIGH",
+            "completion_percent": 50
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "stub_growth_list_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 9. GET /api/v1/hr/dashboard stub
+~~~json
+{
+  "ok": true,
+  "data": {
+    "active_cycle_count": 1,
+    "pending_hr_review_count": 3,
+    "pending_calibration_count": 1,
+    "certification_expiring_soon_rate": 12.5,
+    "average_current_role_fit_score": 77.2,
+    "evaluator_bias_alert_count": 2,
+    "successor_coverage_rate": 66.7
+  },
+  "meta": {
+    "request_id": "stub_hr_dash_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 10. representative error stubs
+
+## validation error
+~~~json
+{
+  "ok": false,
+  "error": {
+    "code": "TG_VALIDATION_INVALID_DATE_RANGE",
+    "message": "validation failed",
+    "details": [
+      {
+        "field": "new_expiry_date",
+        "reason": "must be greater than or equal to renewed_at"
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "stub_err_01",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## access forbidden
+~~~json
+{
+  "ok": false,
+  "error": {
+    "code": "TG_ACCESS_FORBIDDEN",
+    "message": "forbidden",
+    "details": []
+  },
+  "meta": {
+    "request_id": "stub_err_02",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+## state invalid transition
+~~~json
+{
+  "ok": false,
+  "error": {
+    "code": "TG_STATE_INVALID_TRANSITION",
+    "message": "invalid state transition",
+    "details": [
+      {
+        "field": "evaluation_status_code",
+        "reason": "current state does not allow submit"
+      }
+    ]
+  },
+  "meta": {
+    "request_id": "stub_err_03",
+    "server_time": "2026-04-13T11:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 11. stub switching recommendation
+state patterns:
+- draft pattern
+- submitted pattern
+- sent back pattern
+- approved pattern
+- published pattern
+
+recommended strategy:
+- one fixture file per state
+- shared actor/master baseline
+- endpoint response switch by scenario id
+
+# 12. conclusion
+TalentGrowth の API stub response set は、
+phase A frontend / integration 実装を進める代表 fixture 群として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0812_TALENT_GROWTH_API_STUB_RESPONSE_SET_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0813_TALENT_GROWTH_PHASE_A_API_ROUTE_FILE_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A API ROUTE FILE SKELETON FIXED
+
+status: draft-phase-a-api-route-file-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A で最初に作る API route file skeleton を固定するための資料である。
+
+# 1. phase A route set
+- GET /api/v1/me
+- GET /api/v1/home
+- GET /api/v1/employee/dashboard
+- GET /api/v1/employee-certifications
+- POST /api/v1/employee-certifications
+- POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+- GET /api/v1/employee-skills
+- POST /api/v1/employee-skills
+- PATCH /api/v1/employee-skills/{employee_skill_id}
+- GET /api/v1/evaluation-sheets/{evaluation_sheet_id}
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+- GET /api/v1/manager/review-queue
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back
+- GET /api/v1/role-requirements
+- POST /api/v1/role-requirements
+- PATCH /api/v1/role-requirements/{role_requirement_id}
+- GET /api/v1/growth-plans
+- POST /api/v1/growth-plans
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+- POST /api/v1/audit-logs/search
+- GET /api/v1/notifications
+- POST /api/v1/notifications/read
+
+# 2. recommended folder split
+example semantic split:
+- api/v1/me
+- api/v1/home
+- api/v1/employee/dashboard
+- api/v1/employee-certifications
+- api/v1/employee-skills
+- api/v1/evaluation-sheets/[evaluation_sheet_id]
+- api/v1/manager/review-queue
+- api/v1/role-requirements
+- api/v1/growth-plans
+- api/v1/audit-logs
+- api/v1/notifications
+
+# 3. per-route skeleton rule
+every route file should have:
+- auth context load
+- scope / role check
+- request parse
+- validation
+- service call
+- audit_trace_id / request_id
+- standard success or error envelope
+
+# 4. representative route skeleton
+~~~typescript
+export async function POST(request: Request, context: { params: { evaluation_sheet_id: string } }) {
+  const requestId = "req_placeholder";
+  const evaluationSheetId = context.params.evaluation_sheet_id;
+
+  // 1. auth context
+  // 2. role / scope guard
+  // 3. parse body
+  // 4. validate payload
+  // 5. call service
+  // 6. append audit / outbox where needed
+
+  return Response.json({
+    ok: true,
+    data: {
+      evaluation_sheet_id: evaluationSheetId,
+      status: "SELF_REVIEW_DRAFT"
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+# 5. route to service ownership
+- dashboard routes -> dashboard service
+- certification routes -> certification service
+- skill routes -> skill service
+- evaluation routes -> evaluation service
+- growth routes -> growth service
+- audit routes -> audit service
+- notification routes -> notification service
+
+# 6. conclusion
+phase A route file skeleton は、
+service split 前提で薄い route 層として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0813_TALENT_GROWTH_PHASE_A_API_ROUTE_FILE_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0814_TALENT_GROWTH_PHASE_A_WRITE_ROUTE_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A WRITE ROUTE SKELETON FIXED
+
+status: draft-phase-a-write-route-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の write route を
+最初に固定するための skeleton 資料である。
+
+# 1. phase A write route set
+- POST /api/v1/employee-certifications
+- POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+- POST /api/v1/employee-skills
+- PATCH /api/v1/employee-skills/{employee_skill_id}
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back
+- POST /api/v1/role-requirements
+- PATCH /api/v1/role-requirements/{role_requirement_id}
+- POST /api/v1/growth-plans
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+- POST /api/v1/notifications/read
+- POST /api/v1/audit-logs/search
+
+# 2. write route common rule
+every write route must do:
+- auth context load
+- role / scope check
+- request parse
+- validation
+- lock_version / state precondition where applicable
+- service call
+- audit append where applicable
+- outbox append where applicable
+- success envelope return
+
+# 3. write route response rule
+success response baseline:
+~~~json
+{
+  "ok": true,
+  "data": {
+    "entity_id": "placeholder",
+    "status": "UPDATED"
+  },
+  "meta": {
+    "request_id": "req_01",
+    "server_time": "2026-04-13T12:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+error response baseline:
+~~~json
+{
+  "ok": false,
+  "error": {
+    "code": "TG_STATE_INVALID_TRANSITION",
+    "message": "invalid state transition",
+    "details": []
+  },
+  "meta": {
+    "request_id": "req_02",
+    "server_time": "2026-04-13T12:00:00+09:00",
+    "version": "v1"
+  }
+}
+~~~
+
+# 4. representative write route skeletons
+
+## 4-1. self review save
+~~~typescript
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const { evaluation_sheet_id } = await context.params;
+  const requestId = "req_self_review_save_stub";
+  const body = await request.json();
+
+  // 1. auth context
+  // 2. scope guard
+  // 3. validation
+  // 4. state check: SELF_REVIEW_DRAFT only
+  // 5. service.saveSelfReviewDraft(...)
+  // 6. append audit if score/comment/evidence changes
+
+  return Response.json({
+    ok: true,
+    data: {
+      evaluation_sheet_id,
+      evaluation_status_code: "SELF_REVIEW_DRAFT",
+      sync_status: "SAVED"
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+## 4-2. self review submit
+~~~typescript
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const { evaluation_sheet_id } = await context.params;
+  const requestId = "req_self_review_submit_stub";
+  const body = await request.json();
+
+  // 1. auth context
+  // 2. scope guard
+  // 3. validation
+  // 4. state check: SELF_REVIEW_DRAFT only
+  // 5. service.submitSelfReview(...)
+  // 6. append audit
+  // 7. append outbox event: tg.evaluation.sheet.self_review_submitted
+
+  return Response.json({
+    ok: true,
+    data: {
+      evaluation_sheet_id,
+      evaluation_status_code: "SELF_REVIEW_SUBMITTED"
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+## 4-3. manager review save
+~~~typescript
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const { evaluation_sheet_id } = await context.params;
+  const requestId = "req_manager_review_save_stub";
+  const body = await request.json();
+
+  // 1. auth context
+  // 2. team scope guard
+  // 3. validation
+  // 4. lock_version check
+  // 5. service.saveManagerReview(...)
+  // 6. append audit
+
+  return Response.json({
+    ok: true,
+    data: {
+      evaluation_sheet_id,
+      evaluation_status_code: "MANAGER_REVIEW_DRAFT",
+      lock_version: 2
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+## 4-4. manager review submit
+~~~typescript
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const { evaluation_sheet_id } = await context.params;
+  const requestId = "req_manager_review_submit_stub";
+  const body = await request.json();
+
+  // 1. auth context
+  // 2. team scope guard
+  // 3. validation
+  // 4. state check
+  // 5. service.submitManagerReview(...)
+  // 6. append audit
+  // 7. append outbox event
+
+  return Response.json({
+    ok: true,
+    data: {
+      evaluation_sheet_id,
+      evaluation_status_code: "MANAGER_REVIEW_SUBMITTED"
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+## 4-5. send back
+~~~typescript
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const { evaluation_sheet_id } = await context.params;
+  const requestId = "req_send_back_stub";
+  const body = await request.json();
+
+  // 1. auth context
+  // 2. manager/HR guard
+  // 3. validation: target_role_code, send_back_reason
+  // 4. state check
+  // 5. service.sendBack(...)
+  // 6. append audit
+  // 7. append outbox event
+
+  return Response.json({
+    ok: true,
+    data: {
+      evaluation_sheet_id,
+      evaluation_status_code: "SENT_BACK"
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+## 4-6. growth progress
+~~~typescript
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ growth_plan_id: string }> }
+) {
+  const { growth_plan_id } = await context.params;
+  const requestId = "req_growth_progress_stub";
+  const body = await request.json();
+
+  // 1. auth context
+  // 2. owner/manager/HR scope guard
+  // 3. validation
+  // 4. service.updateGrowthProgress(...)
+  // 5. append audit if tracked
+  // 6. optional outbox event
+
+  return Response.json({
+    ok: true,
+    data: {
+      growth_plan_id,
+      growth_plan_status_code: "ACTIVE"
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+# 5. write route guardrails
+- no write route directly computes final governance result without service layer
+- no write route bypasses validation matrix
+- no write route mutates score/state without audit append
+- no write route emits user notification directly
+- outbox append only, direct delivery not allowed
+
+# 6. conclusion
+phase A write route は、
+route thin / service thick / audit-outbox mandatory
+の方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0814_TALENT_GROWTH_PHASE_A_WRITE_ROUTE_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0815_TALENT_GROWTH_PHASE_A_REQUEST_FIXTURE_AND_CURL_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A REQUEST FIXTURE AND CURL BLOCK FIXED
+
+status: draft-phase-a-request-fixture-and-curl-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の POST / PATCH 系について、
+fixture JSON と curl block を固定するための資料である。
+
+# 1. fixture policy
+- exact payload shape に寄せる
+- request body はファイル化できる構成にする
+- curl は localhost 呼び出しを前提にする
+- request fixture は smoke / manual test / demo に使う
+
+# 2. recommended fixture files
+- fixtures/tg/self_review_save.json
+- fixtures/tg/self_review_submit.json
+- fixtures/tg/manager_review_save.json
+- fixtures/tg/manager_review_submit.json
+- fixtures/tg/send_back.json
+- fixtures/tg/create_role_requirement.json
+- fixtures/tg/create_growth_plan.json
+- fixtures/tg/notification_read.json
+
+# 3. fixture examples
+
+## self_review_save.json
+~~~json
+{
+  "employee_id": "emp_demo_01",
+  "self_review_comment": "現職では店舗運営の再現性は高いが、数値管理と後輩育成に課題がある。",
+  "skill_items": [
+    {
+      "employee_skill_id": "eskill_demo_01",
+      "proficiency_level": 4,
+      "self_comment": "クレーム初動対応は単独で実施可能"
+    },
+    {
+      "employee_skill_id": "eskill_demo_03",
+      "proficiency_level": 2,
+      "self_comment": "日次管理は可能だが月次分析は弱い"
+    }
+  ]
+}
+~~~
+
+## self_review_submit.json
+~~~json
+{
+  "employee_id": "emp_demo_01",
+  "submit_confirmed": true
+}
+~~~
+
+## manager_review_save.json
+~~~json
+{
+  "manager_employee_id": "emp_demo_mgr_01",
+  "manager_review_comment": "運営安定性は高い。次期は数値管理と育成観点を重点強化したい。",
+  "score_inputs": {
+    "behavior_score": 72,
+    "performance_score": 79,
+    "current_role_fit_score": 80,
+    "target_role_fit_score": 68,
+    "growth_potential_score": 83
+  }
+}
+~~~
+
+## manager_review_submit.json
+~~~json
+{
+  "manager_employee_id": "emp_demo_mgr_01",
+  "submit_confirmed": true
+}
+~~~
+
+## send_back.json
+~~~json
+{
+  "target_role_code": "EMPLOYEE",
+  "send_back_reason": "根拠不足のため再提出してください"
+}
+~~~
+
+## create_role_requirement.json
+~~~json
+{
+  "job_role_id": "jrole_store_manager",
+  "requirement_version": "2026-H1",
+  "overall_weight_skill": 30,
+  "overall_weight_certification": 15,
+  "overall_weight_experience": 10,
+  "overall_weight_performance": 15,
+  "overall_weight_behavior": 10,
+  "overall_weight_growth": 20
+}
+~~~
+
+## create_growth_plan.json
+~~~json
+{
+  "employee_id": "emp_demo_01",
+  "plan_title": "2026年上期 成長計画",
+  "actions": [
+    {
+      "action_type": "TRAINING",
+      "title": "数値管理基礎研修",
+      "priority": "HIGH"
+    }
+  ]
+}
+~~~
+
+## notification_read.json
+~~~json
+{
+  "notification_ids": ["notif_demo_01"]
+}
+~~~
+
+# 4. curl block
+
+## self review save
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/evaluation-sheets/esheet_demo_01/self-review/save \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/self_review_save.json && echo
+~~~
+
+## self review submit
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/evaluation-sheets/esheet_demo_01/self-review/submit \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/self_review_submit.json && echo
+~~~
+
+## manager review save
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/evaluation-sheets/esheet_demo_01/manager-review/save \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/manager_review_save.json && echo
+~~~
+
+## manager review submit
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/evaluation-sheets/esheet_demo_01/manager-review/submit \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/manager_review_submit.json && echo
+~~~
+
+## send back
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/evaluation-sheets/esheet_demo_01/send-back \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/send_back.json && echo
+~~~
+
+## create role requirement
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/role-requirements \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/create_role_requirement.json && echo
+~~~
+
+## create growth plan
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/growth-plans \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/create_growth_plan.json && echo
+~~~
+
+## notification read
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/notifications/read \
+  -H 'content-type: application/json' \
+  -d @fixtures/tg/notification_read.json && echo
+~~~
+
+# 5. conclusion
+phase A の request fixture と curl は、
+この block を基準に固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/08.integration/0815_TALENT_GROWTH_PHASE_A_REQUEST_FIXTURE_AND_CURL_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0903_TALENT_GROWTH_API_ENTITY_ID_AND_KEY_POLICY.md -->
+# TALENT GROWTH API ENTITY ID AND KEY POLICY
+
+status: draft-id-key-policy
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の API とデータモデルで使う
+entity id / code / key の扱いを固定するための資料である。
+
+# 1. 基本原則
+- 表示名と内部keyを分離する
+- code は意味参照用
+- id は一意識別用
+- 多言語ラベル変更で code を変えない
+- 外部連携先のキーは別保持する
+
+# 2. 推奨ID命名
+- company_id
+- organization_id
+- employee_id
+- job_family_id
+- job_role_id
+- grade_id
+- skill_id
+- certification_id
+- evaluation_cycle_id
+- evaluation_sheet_id
+- evaluation_score_id
+- growth_plan_id
+- growth_action_id
+- calibration_session_id
+- audit_log_id
+- ai_draft_id
+
+# 3. 推奨code命名
+- job_family_code
+- job_role_code
+- grade_code
+- skill_code
+- certification_code
+- competency_code
+- action_type_code
+- status_code
+- rank_code
+
+# 4. 外部連携key
+- external_employee_key
+- external_organization_key
+- external_goal_key
+- external_training_key
+- external_payroll_reference_key
+
+# 5. rank / state / action type codes
+## rank_code
+- S
+- A
+- B
+- C
+- D
+
+## evaluation_status_code
+- SELF_REVIEW_DRAFT
+- SELF_REVIEW_SUBMITTED
+- MANAGER_REVIEW_DRAFT
+- MANAGER_REVIEW_SUBMITTED
+- HR_REVIEW_IN_PROGRESS
+- CALIBRATION_IN_PROGRESS
+- APPROVED
+- PUBLISHED
+- SENT_BACK
+- REOPENED
+- ARCHIVED
+
+## growth_action_type_code
+- TRAINING
+- CERTIFICATION
+- OJT
+- ASSIGNMENT
+- MENTORING
+- SELF_STUDY
+
+# 6. audit keys
+- request_id
+- audit_trace_id
+- actor_employee_id
+- entity_type
+- entity_id
+- action_type
+
+# 7. monetary keys
+- source_amount
+- source_currency
+- reporting_amount
+- reporting_currency
+- fx_rate
+- fx_rate_applied_at
+
+# 8. multilingual keys
+- label_ja
+- label_en
+- label_zh
+- label_ko
+- original_text
+- translated_text
+
+# 9. 結論
+TalentGrowth の key policy は、
+- id = uniqueness
+- code = semantic reference
+- label = display
+で固定する。
+
+また、
+外部連携keyは別保持し、
+社内正本keyと混同しない。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0903_TALENT_GROWTH_API_ENTITY_ID_AND_KEY_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0904_TALENT_GROWTH_EXACT_TABLE_COLUMN_FIXED.md -->
+# TALENT GROWTH EXACT TABLE COLUMN FIXED
+
+status: draft-exact-column-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要テーブルについて、
+exact column を固定するための資料である。
+
+原則:
+- additive first
+- 表示名と内部keyを分離する
+- id / code / label を混同しない
+- 多言語対応
+- 多通貨対応
+- 監査可能性
+- AI補助は別ログで追跡する
+
+# 1. 共通監査列
+以下は主要業務テーブルで共通採用候補とする。
+
+- created_at
+- created_by
+- updated_at
+- updated_by
+- deleted_at
+- deleted_by
+- audit_trace_id
+- version_no
+
+# 2. employee_profile
+目的:
+- 人材基本情報の正本保持
+
+columns:
+- employee_id
+- company_id
+- employee_code
+- external_employee_key
+- full_name
+- full_name_kana
+- display_name
+- email
+- phone
+- employment_type_code
+- organization_id
+- position_title
+- current_job_family_id
+- current_job_role_id
+- current_grade_id
+- manager_employee_id
+- work_location_code
+- country_code
+- preferred_language_code
+- reporting_currency_code
+- hire_date
+- termination_date
+- is_active
+- career_preference_text
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 3. employee_academic_history
+目的:
+- 学歴と関連度の保持
+
+columns:
+- employee_academic_history_id
+- company_id
+- employee_id
+- school_name
+- faculty_name
+- department_name
+- degree_code
+- major_name
+- graduation_status_code
+- graduation_date
+- academic_relevance_score
+- evidence_file_id
+- note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 4. employee_certification
+目的:
+- 資格 / 免許の保有状態管理
+
+columns:
+- employee_certification_id
+- company_id
+- employee_id
+- certification_id
+- certification_name_snapshot
+- issuer_name_snapshot
+- license_number
+- acquired_date
+- expiry_date
+- renewal_required
+- certification_status_code
+- last_renewed_at
+- next_renewal_due_at
+- source_amount
+- source_currency
+- reporting_amount
+- reporting_currency
+- fx_rate
+- fx_rate_applied_at
+- evidence_file_id
+- note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 5. employee_certification_renewal
+目的:
+- 資格更新履歴
+
+columns:
+- employee_certification_renewal_id
+- company_id
+- employee_certification_id
+- employee_id
+- renewed_at
+- old_expiry_date
+- new_expiry_date
+- renewal_cost_source_amount
+- renewal_cost_source_currency
+- renewal_cost_reporting_amount
+- renewal_cost_reporting_currency
+- renewal_fx_rate
+- renewal_fx_rate_applied_at
+- evidence_file_id
+- renewal_note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 6. skill_master
+目的:
+- スキル辞書正本
+
+columns:
+- skill_id
+- company_id
+- skill_code
+- skill_category_code
+- parent_skill_id
+- label_ja
+- label_en
+- label_zh
+- label_ko
+- description_text
+- skill_level_min
+- skill_level_max
+- is_active
+- sort_order
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 7. employee_skill
+目的:
+- 個人スキル状態
+
+columns:
+- employee_skill_id
+- company_id
+- employee_id
+- skill_id
+- proficiency_level
+- self_rating
+- manager_rating
+- last_used_at
+- usage_frequency_code
+- evidence_count
+- evidence_confidence
+- skill_freshness_score
+- is_primary_skill
+- employee_comment
+- manager_comment
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 8. employee_skill_evidence
+目的:
+- スキル根拠管理
+
+columns:
+- employee_skill_evidence_id
+- company_id
+- employee_skill_id
+- employee_id
+- evidence_type_code
+- evidence_title
+- evidence_description
+- evidence_file_id
+- source_system_code
+- source_reference_key
+- occurred_at
+- confidence_score
+- is_verified
+- verified_by
+- verified_at
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 9. employee_career_history
+目的:
+- 経歴、配属、経験年数の基礎
+
+columns:
+- employee_career_history_id
+- company_id
+- employee_id
+- organization_id
+- job_family_id
+- job_role_id
+- title_name
+- start_date
+- end_date
+- years_of_experience_months
+- industry_code
+- is_manager_role
+- summary_text
+- achievement_summary_text
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 10. employee_achievement
+目的:
+- 実績記録
+
+columns:
+- employee_achievement_id
+- company_id
+- employee_id
+- achievement_type_code
+- achievement_title
+- achievement_description
+- period_start
+- period_end
+- metric_name
+- metric_value
+- metric_unit
+- goal_linked_flag
+- external_goal_key
+- evidence_file_id
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 11. job_family_master
+columns:
+- job_family_id
+- company_id
+- job_family_code
+- label_ja
+- label_en
+- label_zh
+- label_ko
+- description_text
+- is_active
+- sort_order
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 12. job_role_master
+columns:
+- job_role_id
+- company_id
+- job_family_id
+- job_role_code
+- label_ja
+- label_en
+- label_zh
+- label_ko
+- description_text
+- is_critical_role
+- is_active
+- sort_order
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 13. grade_master
+columns:
+- grade_id
+- company_id
+- grade_code
+- label_ja
+- label_en
+- label_zh
+- label_ko
+- grade_order
+- description_text
+- is_active
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 14. role_requirement
+目的:
+- 職種 / 等級別の要件正本
+
+columns:
+- role_requirement_id
+- company_id
+- job_family_id
+- job_role_id
+- grade_id
+- requirement_version
+- effective_from
+- effective_to
+- template_name
+- status_code
+- overall_weight_skill
+- overall_weight_certification
+- overall_weight_experience
+- overall_weight_performance
+- overall_weight_behavior
+- overall_weight_growth
+- description_text
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 15. role_requirement_skill
+columns:
+- role_requirement_skill_id
+- company_id
+- role_requirement_id
+- skill_id
+- required_level
+- preferred_level
+- weight_score
+- mandatory_flag
+- recency_required_months
+- note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 16. role_requirement_certification
+columns:
+- role_requirement_certification_id
+- company_id
+- role_requirement_id
+- certification_id
+- mandatory_flag
+- preferred_flag
+- weight_score
+- renewal_required
+- note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 17. evaluation_cycle
+目的:
+- 評価サイクル管理
+
+columns:
+- evaluation_cycle_id
+- company_id
+- cycle_code
+- cycle_name
+- target_scope_code
+- period_start
+- period_end
+- self_review_due_at
+- manager_review_due_at
+- hr_review_due_at
+- publish_at
+- cycle_status_code
+- note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 18. evaluation_sheet
+目的:
+- 評価単位の本体
+
+columns:
+- evaluation_sheet_id
+- company_id
+- evaluation_cycle_id
+- employee_id
+- manager_employee_id
+- hr_owner_employee_id
+- current_job_family_id
+- current_job_role_id
+- current_grade_id
+- target_job_role_id
+- target_grade_id
+- evaluation_status_code
+- current_state_rank
+- future_readiness_rank
+- total_evaluation_score
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- promotion_readiness_score
+- successor_readiness_score
+- self_review_submitted_at
+- manager_review_submitted_at
+- approved_at
+- published_at
+- reopened_at
+- sent_back_at
+- current_step_owner_role_code
+- lock_version
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 19. evaluation_score_detail
+目的:
+- 評価スコア内訳保持
+
+columns:
+- evaluation_score_detail_id
+- company_id
+- evaluation_sheet_id
+- score_category_code
+- score_item_code
+- raw_score
+- adjusted_score
+- weight_score
+- final_score
+- pre_calibration_score
+- post_calibration_score
+- calculation_note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 20. evaluation_comment
+目的:
+- 評価コメント保持
+
+columns:
+- evaluation_comment_id
+- company_id
+- evaluation_sheet_id
+- comment_type_code
+- actor_employee_id
+- actor_role_code
+- original_text
+- translated_text
+- language_code
+- ai_assisted_flag
+- ai_draft_id
+- is_published_to_employee
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 21. evaluation_evidence
+目的:
+- 評価根拠保持
+
+columns:
+- evaluation_evidence_id
+- company_id
+- evaluation_sheet_id
+- evidence_type_code
+- evidence_title
+- evidence_file_id
+- source_system_code
+- source_reference_key
+- linked_score_category_code
+- linked_score_item_code
+- confidence_score
+- verified_flag
+- verified_by
+- verified_at
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 22. evaluation_snapshot
+目的:
+- 継続評価スナップショット
+
+columns:
+- evaluation_snapshot_id
+- company_id
+- evaluation_cycle_id
+- evaluation_sheet_id
+- employee_id
+- total_evaluation_score
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- promotion_readiness_score
+- successor_readiness_score
+- current_state_rank
+- future_readiness_rank
+- snapshot_taken_at
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+# 23. evaluation_change_audit
+目的:
+- 評価変更監査
+
+columns:
+- evaluation_change_audit_id
+- company_id
+- evaluation_sheet_id
+- changed_by_employee_id
+- changed_by_role_code
+- action_type
+- changed_field_name
+- old_value_text
+- new_value_text
+- change_reason_text
+- changed_at
+- audit_trace_id
+- created_at
+- created_by
+- version_no
+
+# 24. evaluation_approval
+目的:
+- 承認履歴
+
+columns:
+- evaluation_approval_id
+- company_id
+- evaluation_sheet_id
+- approval_step_code
+- approver_employee_id
+- approval_action_code
+- approval_comment
+- acted_at
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+# 25. calibration_session
+columns:
+- calibration_session_id
+- company_id
+- evaluation_cycle_id
+- session_name
+- session_date
+- session_status_code
+- chair_employee_id
+- note
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 26. calibration_log
+columns:
+- calibration_log_id
+- company_id
+- calibration_session_id
+- evaluation_sheet_id
+- pre_rank_code
+- post_rank_code
+- pre_total_score
+- post_total_score
+- change_reason_text
+- meeting_note
+- changed_by_employee_id
+- changed_at
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+# 27. growth_plan
+目的:
+- 成長計画本体
+
+columns:
+- growth_plan_id
+- company_id
+- employee_id
+- evaluation_sheet_id
+- plan_title
+- target_job_role_id
+- target_grade_id
+- plan_period_start
+- plan_period_end
+- growth_plan_status_code
+- owner_employee_id
+- manager_employee_id
+- plan_summary_text
+- next_review_due_at
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 28. growth_action
+目的:
+- 成長計画内行動
+
+columns:
+- growth_action_id
+- company_id
+- growth_plan_id
+- employee_id
+- action_type_code
+- action_title
+- action_description
+- priority_code
+- due_date
+- reason_code
+- reason_text
+- linked_skill_id
+- linked_certification_id
+- linked_training_id
+- action_status_code
+- completion_percent
+- completed_at
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 29. growth_recommendation
+目的:
+- 推奨アクション保持
+
+columns:
+- growth_recommendation_id
+- company_id
+- employee_id
+- evaluation_sheet_id
+- recommendation_type_code
+- recommendation_title
+- recommendation_reason
+- linked_gap_code
+- priority_code
+- target_due_date
+- accepted_flag
+- accepted_at
+- rejected_flag
+- rejected_reason_text
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 30. role_fit_snapshot
+目的:
+- role-fit 候補抽出用スナップショット
+
+columns:
+- role_fit_snapshot_id
+- company_id
+- employee_id
+- target_job_role_id
+- target_grade_id
+- current_role_fit_score
+- target_role_fit_score
+- promotion_readiness_score
+- successor_readiness_score
+- top_gap_codes_json
+- calculated_at
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+# 31. successor_candidate
+columns:
+- successor_candidate_id
+- company_id
+- critical_role_id
+- employee_id
+- readiness_score
+- readiness_code
+- risk_note
+- target_ready_date
+- created_at
+- created_by
+- updated_at
+- updated_by
+- audit_trace_id
+- version_no
+
+# 32. training_roi_snapshot
+columns:
+- training_roi_snapshot_id
+- company_id
+- organization_id
+- period_start
+- period_end
+- source_amount
+- source_currency
+- reporting_amount
+- reporting_currency
+- fx_rate
+- score_improvement_value
+- roi_ratio
+- calculated_at
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+# 33. ai_assist_reference_log
+目的:
+- AI補助参照履歴
+
+columns:
+- ai_assist_reference_log_id
+- company_id
+- entity_type
+- entity_id
+- actor_employee_id
+- actor_role_code
+- ai_action_code
+- ai_draft_id
+- prompt_summary_text
+- referenced_at
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+# 34. audit_export_log
+columns:
+- audit_export_log_id
+- company_id
+- exported_by_employee_id
+- export_type_code
+- date_from
+- date_to
+- export_file_id
+- exported_at
+- created_at
+- created_by
+- audit_trace_id
+- version_no
+
+# 35. 結論
+TalentGrowth の exact table column は、
+人材、要件、評価、校正、成長、候補抽出、監査、AI補助までを
+初期段階から列レベルで固定する。
+
+特に、
+- evaluation_sheet
+- evaluation_score_detail
+- evaluation_change_audit
+- growth_plan
+- role_requirement
+は中心正本テーブルとして扱う。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0904_TALENT_GROWTH_EXACT_TABLE_COLUMN_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0905_TALENT_GROWTH_DDL_SKELETON_FIXED.md -->
+# TALENT GROWTH DDL SKELETON FIXED
+
+status: draft-ddl-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要テーブルについて、
+PostgreSQL / Supabase 前提の DDL skeleton を固定するための資料である。
+
+注意:
+- これは final DDL ではなく skeleton fixed である
+- exact column fixed を受けた物理設計の土台である
+- 実装時は index / constraint / RLS を合わせて確定する
+
+# 1. 物理設計原則
+- primary key は text を採用する
+- company scope を全業務テーブルに持つ
+- code と label を分離する
+- 監査列を標準採用する
+- 金額は numeric(18,6)
+- 日時は timestamptz
+- 日付は date
+- 真偽値は boolean
+- 集計用 snapshot は append-first とする
+
+# 2. 共通監査列 skeleton
+~~~sql
+-- common audit columns
+created_at timestamptz not null default now(),
+created_by text not null,
+updated_at timestamptz not null default now(),
+updated_by text not null,
+deleted_at timestamptz null,
+deleted_by text null,
+audit_trace_id text null,
+version_no integer not null default 1
+~~~
+
+# 3. 基礎マスタ
+
+## 3-1. job_family_master
+~~~sql
+create table if not exists tg_job_family_master (
+  job_family_id text primary key,
+  company_id text not null,
+  job_family_code text not null,
+  label_ja text not null,
+  label_en text null,
+  label_zh text null,
+  label_ko text null,
+  description_text text null,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_family_code)
+);
+~~~
+
+## 3-2. job_role_master
+~~~sql
+create table if not exists tg_job_role_master (
+  job_role_id text primary key,
+  company_id text not null,
+  job_family_id text not null references tg_job_family_master(job_family_id),
+  job_role_code text not null,
+  label_ja text not null,
+  label_en text null,
+  label_zh text null,
+  label_ko text null,
+  description_text text null,
+  is_critical_role boolean not null default false,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_role_code)
+);
+~~~
+
+## 3-3. grade_master
+~~~sql
+create table if not exists tg_grade_master (
+  grade_id text primary key,
+  company_id text not null,
+  grade_code text not null,
+  label_ja text not null,
+  label_en text null,
+  label_zh text null,
+  label_ko text null,
+  grade_order integer not null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, grade_code)
+);
+~~~
+
+## 3-4. skill_master
+~~~sql
+create table if not exists tg_skill_master (
+  skill_id text primary key,
+  company_id text not null,
+  skill_code text not null,
+  skill_category_code text not null,
+  parent_skill_id text null references tg_skill_master(skill_id),
+  label_ja text not null,
+  label_en text null,
+  label_zh text null,
+  label_ko text null,
+  description_text text null,
+  skill_level_min integer not null default 1,
+  skill_level_max integer not null default 5,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, skill_code)
+);
+~~~
+
+## 3-5. certification_master
+~~~sql
+create table if not exists tg_certification_master (
+  certification_id text primary key,
+  company_id text not null,
+  certification_code text not null,
+  label_ja text not null,
+  label_en text null,
+  label_zh text null,
+  label_ko text null,
+  issuer_name text null,
+  renewal_required boolean not null default false,
+  standard_valid_months integer null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, certification_code)
+);
+~~~
+
+# 4. 人材基礎情報
+
+## 4-1. employee_profile
+~~~sql
+create table if not exists tg_employee_profile (
+  employee_id text primary key,
+  company_id text not null,
+  employee_code text not null,
+  external_employee_key text null,
+  full_name text not null,
+  full_name_kana text null,
+  display_name text null,
+  email text null,
+  phone text null,
+  employment_type_code text not null,
+  organization_id text not null,
+  position_title text null,
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  manager_employee_id text null,
+  work_location_code text null,
+  country_code text null,
+  preferred_language_code text not null default 'ja',
+  reporting_currency_code text not null default 'JPY',
+  hire_date date null,
+  termination_date date null,
+  is_active boolean not null default true,
+  career_preference_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_code)
+);
+~~~
+
+## 4-2. employee_academic_history
+~~~sql
+create table if not exists tg_employee_academic_history (
+  employee_academic_history_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  school_name text not null,
+  faculty_name text null,
+  department_name text null,
+  degree_code text null,
+  major_name text null,
+  graduation_status_code text null,
+  graduation_date date null,
+  academic_relevance_score numeric(5,2) null,
+  evidence_file_id text null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 4-3. employee_career_history
+~~~sql
+create table if not exists tg_employee_career_history (
+  employee_career_history_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  organization_id text not null,
+  job_family_id text null references tg_job_family_master(job_family_id),
+  job_role_id text null references tg_job_role_master(job_role_id),
+  title_name text null,
+  start_date date not null,
+  end_date date null,
+  years_of_experience_months integer not null default 0,
+  industry_code text null,
+  is_manager_role boolean not null default false,
+  summary_text text null,
+  achievement_summary_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 4-4. employee_achievement
+~~~sql
+create table if not exists tg_employee_achievement (
+  employee_achievement_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  achievement_type_code text not null,
+  achievement_title text not null,
+  achievement_description text null,
+  period_start date null,
+  period_end date null,
+  metric_name text null,
+  metric_value numeric(18,6) null,
+  metric_unit text null,
+  goal_linked_flag boolean not null default false,
+  external_goal_key text null,
+  evidence_file_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+# 5. 資格 / スキル
+
+## 5-1. employee_certification
+~~~sql
+create table if not exists tg_employee_certification (
+  employee_certification_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  certification_name_snapshot text not null,
+  issuer_name_snapshot text null,
+  license_number text null,
+  acquired_date date null,
+  expiry_date date null,
+  renewal_required boolean not null default false,
+  certification_status_code text not null,
+  last_renewed_at date null,
+  next_renewal_due_at date null,
+  source_amount numeric(18,6) null,
+  source_currency text null,
+  reporting_amount numeric(18,6) null,
+  reporting_currency text null,
+  fx_rate numeric(18,6) null,
+  fx_rate_applied_at timestamptz null,
+  evidence_file_id text null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 5-2. employee_certification_renewal
+~~~sql
+create table if not exists tg_employee_certification_renewal (
+  employee_certification_renewal_id text primary key,
+  company_id text not null,
+  employee_certification_id text not null references tg_employee_certification(employee_certification_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  renewed_at date not null,
+  old_expiry_date date null,
+  new_expiry_date date not null,
+  renewal_cost_source_amount numeric(18,6) null,
+  renewal_cost_source_currency text null,
+  renewal_cost_reporting_amount numeric(18,6) null,
+  renewal_cost_reporting_currency text null,
+  renewal_fx_rate numeric(18,6) null,
+  renewal_fx_rate_applied_at timestamptz null,
+  evidence_file_id text null,
+  renewal_note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 5-3. employee_skill
+~~~sql
+create table if not exists tg_employee_skill (
+  employee_skill_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  proficiency_level integer not null,
+  self_rating numeric(5,2) null,
+  manager_rating numeric(5,2) null,
+  last_used_at date null,
+  usage_frequency_code text null,
+  evidence_count integer not null default 0,
+  evidence_confidence numeric(5,2) null,
+  skill_freshness_score numeric(5,2) null,
+  is_primary_skill boolean not null default false,
+  employee_comment text null,
+  manager_comment text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_id, skill_id)
+);
+~~~
+
+## 5-4. employee_skill_evidence
+~~~sql
+create table if not exists tg_employee_skill_evidence (
+  employee_skill_evidence_id text primary key,
+  company_id text not null,
+  employee_skill_id text not null references tg_employee_skill(employee_skill_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_description text null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  occurred_at timestamptz null,
+  confidence_score numeric(5,2) null,
+  is_verified boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+# 6. 要件 / テンプレート
+
+## 6-1. role_requirement
+~~~sql
+create table if not exists tg_role_requirement (
+  role_requirement_id text primary key,
+  company_id text not null,
+  job_family_id text null references tg_job_family_master(job_family_id),
+  job_role_id text not null references tg_job_role_master(job_role_id),
+  grade_id text null references tg_grade_master(grade_id),
+  requirement_version text not null,
+  effective_from date not null,
+  effective_to date null,
+  template_name text null,
+  status_code text not null,
+  overall_weight_skill numeric(5,2) not null default 0,
+  overall_weight_certification numeric(5,2) not null default 0,
+  overall_weight_experience numeric(5,2) not null default 0,
+  overall_weight_performance numeric(5,2) not null default 0,
+  overall_weight_behavior numeric(5,2) not null default 0,
+  overall_weight_growth numeric(5,2) not null default 0,
+  description_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 6-2. role_requirement_skill
+~~~sql
+create table if not exists tg_role_requirement_skill (
+  role_requirement_skill_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  required_level integer not null,
+  preferred_level integer null,
+  weight_score numeric(5,2) not null default 0,
+  mandatory_flag boolean not null default false,
+  recency_required_months integer null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 6-3. role_requirement_certification
+~~~sql
+create table if not exists tg_role_requirement_certification (
+  role_requirement_certification_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  mandatory_flag boolean not null default false,
+  preferred_flag boolean not null default false,
+  weight_score numeric(5,2) not null default 0,
+  renewal_required boolean not null default false,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+# 7. 評価運用
+
+## 7-1. evaluation_cycle
+~~~sql
+create table if not exists tg_evaluation_cycle (
+  evaluation_cycle_id text primary key,
+  company_id text not null,
+  cycle_code text not null,
+  cycle_name text not null,
+  target_scope_code text not null,
+  period_start date not null,
+  period_end date not null,
+  self_review_due_at timestamptz null,
+  manager_review_due_at timestamptz null,
+  hr_review_due_at timestamptz null,
+  publish_at timestamptz null,
+  cycle_status_code text not null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, cycle_code)
+);
+~~~
+
+## 7-2. evaluation_sheet
+~~~sql
+create table if not exists tg_evaluation_sheet (
+  evaluation_sheet_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  hr_owner_employee_id text null references tg_employee_profile(employee_id),
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  evaluation_status_code text not null,
+  current_state_rank text null,
+  future_readiness_rank text null,
+  total_evaluation_score numeric(7,2) null,
+  current_role_fit_score numeric(7,2) null,
+  target_role_fit_score numeric(7,2) null,
+  growth_potential_score numeric(7,2) null,
+  promotion_readiness_score numeric(7,2) null,
+  successor_readiness_score numeric(7,2) null,
+  self_review_submitted_at timestamptz null,
+  manager_review_submitted_at timestamptz null,
+  approved_at timestamptz null,
+  published_at timestamptz null,
+  reopened_at timestamptz null,
+  sent_back_at timestamptz null,
+  current_step_owner_role_code text null,
+  lock_version integer not null default 1,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, evaluation_cycle_id, employee_id)
+);
+~~~
+
+## 7-3. evaluation_score_detail
+~~~sql
+create table if not exists tg_evaluation_score_detail (
+  evaluation_score_detail_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  score_category_code text not null,
+  score_item_code text not null,
+  raw_score numeric(7,2) null,
+  adjusted_score numeric(7,2) null,
+  weight_score numeric(7,2) null,
+  final_score numeric(7,2) null,
+  pre_calibration_score numeric(7,2) null,
+  post_calibration_score numeric(7,2) null,
+  calculation_note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 7-4. evaluation_comment
+~~~sql
+create table if not exists tg_evaluation_comment (
+  evaluation_comment_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  comment_type_code text not null,
+  actor_employee_id text not null references tg_employee_profile(employee_id),
+  actor_role_code text not null,
+  original_text text not null,
+  translated_text text null,
+  language_code text not null,
+  ai_assisted_flag boolean not null default false,
+  ai_draft_id text null,
+  is_published_to_employee boolean not null default false,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 7-5. evaluation_evidence
+~~~sql
+create table if not exists tg_evaluation_evidence (
+  evaluation_evidence_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  linked_score_category_code text null,
+  linked_score_item_code text null,
+  confidence_score numeric(5,2) null,
+  verified_flag boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 7-6. evaluation_snapshot
+~~~sql
+create table if not exists tg_evaluation_snapshot (
+  evaluation_snapshot_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  total_evaluation_score numeric(7,2) null,
+  current_role_fit_score numeric(7,2) null,
+  target_role_fit_score numeric(7,2) null,
+  growth_potential_score numeric(7,2) null,
+  promotion_readiness_score numeric(7,2) null,
+  successor_readiness_score numeric(7,2) null,
+  current_state_rank text null,
+  future_readiness_rank text null,
+  snapshot_taken_at timestamptz not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 7-7. evaluation_change_audit
+~~~sql
+create table if not exists tg_evaluation_change_audit (
+  evaluation_change_audit_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_by_role_code text not null,
+  action_type text not null,
+  changed_field_name text not null,
+  old_value_text text null,
+  new_value_text text null,
+  change_reason_text text null,
+  changed_at timestamptz not null default now(),
+  audit_trace_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  version_no integer not null default 1
+);
+~~~
+
+## 7-8. evaluation_approval
+~~~sql
+create table if not exists tg_evaluation_approval (
+  evaluation_approval_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  approval_step_code text not null,
+  approver_employee_id text not null references tg_employee_profile(employee_id),
+  approval_action_code text not null,
+  approval_comment text null,
+  acted_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 7-9. calibration_session
+~~~sql
+create table if not exists tg_calibration_session (
+  calibration_session_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  session_name text not null,
+  session_date date not null,
+  session_status_code text not null,
+  chair_employee_id text null references tg_employee_profile(employee_id),
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 7-10. calibration_log
+~~~sql
+create table if not exists tg_calibration_log (
+  calibration_log_id text primary key,
+  company_id text not null,
+  calibration_session_id text not null references tg_calibration_session(calibration_session_id),
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  pre_rank_code text null,
+  post_rank_code text null,
+  pre_total_score numeric(7,2) null,
+  post_total_score numeric(7,2) null,
+  change_reason_text text null,
+  meeting_note text null,
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+# 8. 成長支援 / 候補抽出
+
+## 8-1. growth_plan
+~~~sql
+create table if not exists tg_growth_plan (
+  growth_plan_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  plan_title text not null,
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  plan_period_start date not null,
+  plan_period_end date not null,
+  growth_plan_status_code text not null,
+  owner_employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  plan_summary_text text null,
+  next_review_due_at date null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 8-2. growth_action
+~~~sql
+create table if not exists tg_growth_action (
+  growth_action_id text primary key,
+  company_id text not null,
+  growth_plan_id text not null references tg_growth_plan(growth_plan_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  action_type_code text not null,
+  action_title text not null,
+  action_description text null,
+  priority_code text not null,
+  due_date date null,
+  reason_code text null,
+  reason_text text null,
+  linked_skill_id text null references tg_skill_master(skill_id),
+  linked_certification_id text null references tg_certification_master(certification_id),
+  linked_training_id text null,
+  action_status_code text not null,
+  completion_percent integer not null default 0,
+  completed_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 8-3. growth_recommendation
+~~~sql
+create table if not exists tg_growth_recommendation (
+  growth_recommendation_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  recommendation_type_code text not null,
+  recommendation_title text not null,
+  recommendation_reason text not null,
+  linked_gap_code text null,
+  priority_code text not null,
+  target_due_date date null,
+  accepted_flag boolean not null default false,
+  accepted_at timestamptz null,
+  rejected_flag boolean not null default false,
+  rejected_reason_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 8-4. role_fit_snapshot
+~~~sql
+create table if not exists tg_role_fit_snapshot (
+  role_fit_snapshot_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  target_job_role_id text not null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  current_role_fit_score numeric(7,2) null,
+  target_role_fit_score numeric(7,2) null,
+  promotion_readiness_score numeric(7,2) null,
+  successor_readiness_score numeric(7,2) null,
+  top_gap_codes_json jsonb not null default '[]'::jsonb,
+  calculated_at timestamptz not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 8-5. successor_candidate
+~~~sql
+create table if not exists tg_successor_candidate (
+  successor_candidate_id text primary key,
+  company_id text not null,
+  critical_role_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  readiness_score numeric(7,2) not null,
+  readiness_code text not null,
+  risk_note text null,
+  target_ready_date date null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+# 9. 投資 / AI / 監査
+
+## 9-1. training_roi_snapshot
+~~~sql
+create table if not exists tg_training_roi_snapshot (
+  training_roi_snapshot_id text primary key,
+  company_id text not null,
+  organization_id text not null,
+  period_start date not null,
+  period_end date not null,
+  source_amount numeric(18,6) null,
+  source_currency text null,
+  reporting_amount numeric(18,6) null,
+  reporting_currency text null,
+  fx_rate numeric(18,6) null,
+  score_improvement_value numeric(18,6) null,
+  roi_ratio numeric(18,6) null,
+  calculated_at timestamptz not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 9-2. ai_assist_reference_log
+~~~sql
+create table if not exists tg_ai_assist_reference_log (
+  ai_assist_reference_log_id text primary key,
+  company_id text not null,
+  entity_type text not null,
+  entity_id text not null,
+  actor_employee_id text not null references tg_employee_profile(employee_id),
+  actor_role_code text not null,
+  ai_action_code text not null,
+  ai_draft_id text null,
+  prompt_summary_text text null,
+  referenced_at timestamptz not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+## 9-3. audit_export_log
+~~~sql
+create table if not exists tg_audit_export_log (
+  audit_export_log_id text primary key,
+  company_id text not null,
+  exported_by_employee_id text not null references tg_employee_profile(employee_id),
+  export_type_code text not null,
+  date_from date null,
+  date_to date null,
+  export_file_id text null,
+  exported_at timestamptz not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+~~~
+
+# 10. 推奨index skeleton
+~~~sql
+create index if not exists idx_tg_employee_profile_company_org
+  on tg_employee_profile(company_id, organization_id);
+
+create index if not exists idx_tg_employee_certification_company_expiry
+  on tg_employee_certification(company_id, expiry_date);
+
+create index if not exists idx_tg_employee_skill_company_employee
+  on tg_employee_skill(company_id, employee_id);
+
+create index if not exists idx_tg_role_requirement_company_role_grade
+  on tg_role_requirement(company_id, job_role_id, grade_id);
+
+create index if not exists idx_tg_evaluation_sheet_company_cycle_status
+  on tg_evaluation_sheet(company_id, evaluation_cycle_id, evaluation_status_code);
+
+create index if not exists idx_tg_evaluation_sheet_company_employee
+  on tg_evaluation_sheet(company_id, employee_id);
+
+create index if not exists idx_tg_growth_plan_company_employee
+  on tg_growth_plan(company_id, employee_id);
+
+create index if not exists idx_tg_role_fit_snapshot_company_target_role
+  on tg_role_fit_snapshot(company_id, target_job_role_id);
+
+create index if not exists idx_tg_ai_assist_reference_log_company_entity
+  on tg_ai_assist_reference_log(company_id, entity_type, entity_id);
+~~~
+
+# 11. 結論
+TalentGrowth の DDL skeleton は、
+master, human profile, certification, skill, requirement, evaluation,
+growth, candidate, audit, AI reference の各領域で固定する。
+
+特に中心となる物理テーブルは以下である。
+- tg_employee_profile
+- tg_employee_certification
+- tg_employee_skill
+- tg_role_requirement
+- tg_evaluation_sheet
+- tg_evaluation_score_detail
+- tg_growth_plan
+- tg_role_fit_snapshot
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0905_TALENT_GROWTH_DDL_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0906_TALENT_GROWTH_CONCRETE_DDL_MIGRATION_BLOCK_FIXED.md -->
+# TALENT GROWTH CONCRETE DDL MIGRATION BLOCK FIXED
+
+status: draft-concrete-ddl-migration-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の phase A 実装開始に必要な
+concrete DDL migration block を固定するための資料である。
+
+前提:
+- これは execution-ready に近い migration block の設計資料である
+- final production DDL ではなく、phase A kickoff 用の concrete baseline である
+- additive only
+- destructive change はここでは扱わない
+
+# 1. phase A migration scope
+この migration block で作る対象:
+- master baseline
+- employee baseline
+- certification baseline
+- skill baseline
+- role requirement baseline
+- evaluation baseline
+- growth baseline
+- audit baseline
+- outbox / notification baseline
+
+# 2. migration naming recommendation
+recommended file names:
+- 0001_tg_phase_a_foundation.sql
+- 0002_tg_phase_a_indexes.sql
+- 0003_tg_phase_a_rls_baseline.sql
+- 0004_tg_phase_a_seed_minimum.sql
+
+# 3. concrete migration block example
+
+## 3-1. 0001_tg_phase_a_foundation.sql
+~~~sql
+begin;
+
+create table if not exists tg_job_family_master (
+  job_family_id text primary key,
+  company_id text not null,
+  job_family_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_family_code)
+);
+
+create table if not exists tg_job_role_master (
+  job_role_id text primary key,
+  company_id text not null,
+  job_family_id text not null references tg_job_family_master(job_family_id),
+  job_role_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  is_critical_role boolean not null default false,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_role_code)
+);
+
+create table if not exists tg_grade_master (
+  grade_id text primary key,
+  company_id text not null,
+  grade_code text not null,
+  label_ja text not null,
+  label_en text null,
+  grade_order integer not null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, grade_code)
+);
+
+create table if not exists tg_skill_master (
+  skill_id text primary key,
+  company_id text not null,
+  skill_code text not null,
+  skill_category_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  skill_level_min integer not null default 1,
+  skill_level_max integer not null default 5,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, skill_code)
+);
+
+create table if not exists tg_certification_master (
+  certification_id text primary key,
+  company_id text not null,
+  certification_code text not null,
+  label_ja text not null,
+  label_en text null,
+  issuer_name text null,
+  renewal_required boolean not null default false,
+  standard_valid_months integer null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, certification_code)
+);
+
+create table if not exists tg_employee_profile (
+  employee_id text primary key,
+  company_id text not null,
+  employee_code text not null,
+  external_employee_key text null,
+  full_name text not null,
+  display_name text null,
+  email text null,
+  phone text null,
+  employment_type_code text not null,
+  organization_id text not null,
+  position_title text null,
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  manager_employee_id text null,
+  preferred_language_code text not null default 'ja',
+  reporting_currency_code text not null default 'JPY',
+  hire_date date null,
+  termination_date date null,
+  is_active boolean not null default true,
+  career_preference_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_code)
+);
+
+create table if not exists tg_employee_certification (
+  employee_certification_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  certification_name_snapshot text not null,
+  issuer_name_snapshot text null,
+  license_number text null,
+  acquired_date date null,
+  expiry_date date null,
+  renewal_required boolean not null default false,
+  certification_status_code text not null,
+  last_renewed_at date null,
+  next_renewal_due_at date null,
+  source_amount numeric(18,6) null,
+  source_currency text null,
+  reporting_amount numeric(18,6) null,
+  reporting_currency text null,
+  fx_rate numeric(18,6) null,
+  fx_rate_applied_at timestamptz null,
+  evidence_file_id text null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_employee_certification_renewal (
+  employee_certification_renewal_id text primary key,
+  company_id text not null,
+  employee_certification_id text not null references tg_employee_certification(employee_certification_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  renewed_at date not null,
+  old_expiry_date date null,
+  new_expiry_date date not null,
+  renewal_cost_source_amount numeric(18,6) null,
+  renewal_cost_source_currency text null,
+  renewal_cost_reporting_amount numeric(18,6) null,
+  renewal_cost_reporting_currency text null,
+  renewal_fx_rate numeric(18,6) null,
+  renewal_fx_rate_applied_at timestamptz null,
+  evidence_file_id text null,
+  renewal_note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_employee_skill (
+  employee_skill_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  proficiency_level integer not null,
+  self_rating numeric(5,2) null,
+  manager_rating numeric(5,2) null,
+  last_used_at date null,
+  usage_frequency_code text null,
+  evidence_count integer not null default 0,
+  evidence_confidence numeric(5,2) null,
+  skill_freshness_score numeric(5,2) null,
+  is_primary_skill boolean not null default false,
+  employee_comment text null,
+  manager_comment text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_id, skill_id)
+);
+
+create table if not exists tg_employee_skill_evidence (
+  employee_skill_evidence_id text primary key,
+  company_id text not null,
+  employee_skill_id text not null references tg_employee_skill(employee_skill_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_description text null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  occurred_at timestamptz null,
+  confidence_score numeric(5,2) null,
+  is_verified boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement (
+  role_requirement_id text primary key,
+  company_id text not null,
+  job_family_id text null references tg_job_family_master(job_family_id),
+  job_role_id text not null references tg_job_role_master(job_role_id),
+  grade_id text null references tg_grade_master(grade_id),
+  requirement_version text not null,
+  effective_from date not null,
+  effective_to date null,
+  template_name text null,
+  status_code text not null,
+  overall_weight_skill numeric(5,2) not null default 0,
+  overall_weight_certification numeric(5,2) not null default 0,
+  overall_weight_experience numeric(5,2) not null default 0,
+  overall_weight_performance numeric(5,2) not null default 0,
+  overall_weight_behavior numeric(5,2) not null default 0,
+  overall_weight_growth numeric(5,2) not null default 0,
+  description_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement_skill (
+  role_requirement_skill_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  required_level integer not null,
+  preferred_level integer null,
+  weight_score numeric(5,2) not null default 0,
+  mandatory_flag boolean not null default false,
+  recency_required_months integer null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement_certification (
+  role_requirement_certification_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  mandatory_flag boolean not null default false,
+  preferred_flag boolean not null default false,
+  weight_score numeric(5,2) not null default 0,
+  renewal_required boolean not null default false,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_cycle (
+  evaluation_cycle_id text primary key,
+  company_id text not null,
+  cycle_code text not null,
+  cycle_name text not null,
+  target_scope_code text not null,
+  period_start date not null,
+  period_end date not null,
+  self_review_due_at timestamptz null,
+  manager_review_due_at timestamptz null,
+  hr_review_due_at timestamptz null,
+  publish_at timestamptz null,
+  cycle_status_code text not null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, cycle_code)
+);
+
+create table if not exists tg_evaluation_sheet (
+  evaluation_sheet_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  hr_owner_employee_id text null references tg_employee_profile(employee_id),
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  evaluation_status_code text not null,
+  current_state_rank text null,
+  future_readiness_rank text null,
+  total_evaluation_score numeric(7,2) null,
+  current_role_fit_score numeric(7,2) null,
+  target_role_fit_score numeric(7,2) null,
+  growth_potential_score numeric(7,2) null,
+  promotion_readiness_score numeric(7,2) null,
+  successor_readiness_score numeric(7,2) null,
+  self_review_submitted_at timestamptz null,
+  manager_review_submitted_at timestamptz null,
+  approved_at timestamptz null,
+  published_at timestamptz null,
+  reopened_at timestamptz null,
+  sent_back_at timestamptz null,
+  current_step_owner_role_code text null,
+  lock_version integer not null default 1,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, evaluation_cycle_id, employee_id)
+);
+
+create table if not exists tg_evaluation_score_detail (
+  evaluation_score_detail_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  score_category_code text not null,
+  score_item_code text not null,
+  raw_score numeric(7,2) null,
+  adjusted_score numeric(7,2) null,
+  weight_score numeric(7,2) null,
+  final_score numeric(7,2) null,
+  pre_calibration_score numeric(7,2) null,
+  post_calibration_score numeric(7,2) null,
+  calculation_note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_comment (
+  evaluation_comment_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  comment_type_code text not null,
+  actor_employee_id text not null references tg_employee_profile(employee_id),
+  actor_role_code text not null,
+  original_text text not null,
+  translated_text text null,
+  language_code text not null,
+  ai_assisted_flag boolean not null default false,
+  ai_draft_id text null,
+  is_published_to_employee boolean not null default false,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_evidence (
+  evaluation_evidence_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  linked_score_category_code text null,
+  linked_score_item_code text null,
+  confidence_score numeric(5,2) null,
+  verified_flag boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_change_audit (
+  evaluation_change_audit_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_by_role_code text not null,
+  action_type text not null,
+  changed_field_name text not null,
+  old_value_text text null,
+  new_value_text text null,
+  change_reason_text text null,
+  changed_at timestamptz not null default now(),
+  audit_trace_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_approval (
+  evaluation_approval_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  approval_step_code text not null,
+  approver_employee_id text not null references tg_employee_profile(employee_id),
+  approval_action_code text not null,
+  approval_comment text null,
+  acted_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_calibration_session (
+  calibration_session_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  session_name text not null,
+  session_date date not null,
+  session_status_code text not null,
+  chair_employee_id text null references tg_employee_profile(employee_id),
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_calibration_log (
+  calibration_log_id text primary key,
+  company_id text not null,
+  calibration_session_id text not null references tg_calibration_session(calibration_session_id),
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  pre_rank_code text null,
+  post_rank_code text null,
+  pre_total_score numeric(7,2) null,
+  post_total_score numeric(7,2) null,
+  change_reason_text text null,
+  meeting_note text null,
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_plan (
+  growth_plan_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  plan_title text not null,
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  plan_period_start date not null,
+  plan_period_end date not null,
+  growth_plan_status_code text not null,
+  owner_employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  plan_summary_text text null,
+  next_review_due_at date null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_action (
+  growth_action_id text primary key,
+  company_id text not null,
+  growth_plan_id text not null references tg_growth_plan(growth_plan_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  action_type_code text not null,
+  action_title text not null,
+  action_description text null,
+  priority_code text not null,
+  due_date date null,
+  reason_code text null,
+  reason_text text null,
+  linked_skill_id text null references tg_skill_master(skill_id),
+  linked_certification_id text null references tg_certification_master(certification_id),
+  linked_training_id text null,
+  action_status_code text not null,
+  completion_percent integer not null default 0,
+  completed_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_recommendation (
+  growth_recommendation_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  recommendation_type_code text not null,
+  recommendation_title text not null,
+  recommendation_reason text not null,
+  linked_gap_code text null,
+  priority_code text not null,
+  target_due_date date null,
+  accepted_flag boolean not null default false,
+  accepted_at timestamptz null,
+  rejected_flag boolean not null default false,
+  rejected_reason_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_outbox_event (
+  outbox_event_id text primary key,
+  company_id text not null,
+  event_name text not null,
+  event_domain text not null,
+  entity_type text not null,
+  entity_id text not null,
+  aggregate_key text null,
+  payload_json jsonb not null default '{}'::jsonb,
+  status_code text not null,
+  occurred_at timestamptz not null,
+  available_at timestamptz not null default now(),
+  retry_count integer not null default 0,
+  last_retry_at timestamptz null,
+  last_error_code text null,
+  last_error_message text null,
+  published_at timestamptz null,
+  consumed_by_json jsonb not null default '[]'::jsonb,
+  audit_trace_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null
+);
+
+create table if not exists tg_notification (
+  notification_id text primary key,
+  company_id text not null,
+  source_event_id text not null references tg_outbox_event(outbox_event_id),
+  notification_type_code text not null,
+  target_employee_id text not null references tg_employee_profile(employee_id),
+  title_key text not null,
+  body_key text not null,
+  body_params_json jsonb not null default '{}'::jsonb,
+  deep_link_type text null,
+  deep_link_target_id text null,
+  priority_code text not null,
+  unread_flag boolean not null default true,
+  notification_status_code text not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_notification_delivery (
+  notification_delivery_id text primary key,
+  company_id text not null,
+  notification_id text not null references tg_notification(notification_id),
+  channel_code text not null,
+  dedupe_key text null,
+  delivery_status_code text not null,
+  attempted_at timestamptz null,
+  delivered_at timestamptz null,
+  provider_message_id text null,
+  last_error_code text null,
+  last_error_message text null,
+  retry_count integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+commit;
+~~~
+
+## 3-2. 0002_tg_phase_a_indexes.sql
+~~~sql
+begin;
+
+create index if not exists idx_tg_employee_profile_company_org
+  on tg_employee_profile(company_id, organization_id);
+
+create index if not exists idx_tg_employee_certification_company_expiry
+  on tg_employee_certification(company_id, expiry_date);
+
+create index if not exists idx_tg_employee_skill_company_employee
+  on tg_employee_skill(company_id, employee_id);
+
+create index if not exists idx_tg_role_requirement_company_role_grade
+  on tg_role_requirement(company_id, job_role_id, grade_id);
+
+create index if not exists idx_tg_evaluation_cycle_company_status
+  on tg_evaluation_cycle(company_id, cycle_status_code);
+
+create index if not exists idx_tg_evaluation_sheet_company_cycle_status
+  on tg_evaluation_sheet(company_id, evaluation_cycle_id, evaluation_status_code);
+
+create index if not exists idx_tg_evaluation_sheet_company_employee
+  on tg_evaluation_sheet(company_id, employee_id);
+
+create index if not exists idx_tg_growth_plan_company_employee
+  on tg_growth_plan(company_id, employee_id);
+
+create index if not exists idx_tg_outbox_event_status_available
+  on tg_outbox_event(status_code, available_at);
+
+create index if not exists idx_tg_notification_target_unread
+  on tg_notification(company_id, target_employee_id, unread_flag);
+
+create index if not exists idx_tg_notification_delivery_status_channel
+  on tg_notification_delivery(delivery_status_code, channel_code);
+
+commit;
+~~~
+
+## 3-3. 0003_tg_phase_a_rls_baseline.sql
+~~~sql
+begin;
+
+alter table tg_employee_profile enable row level security;
+alter table tg_employee_certification enable row level security;
+alter table tg_employee_skill enable row level security;
+alter table tg_evaluation_sheet enable row level security;
+alter table tg_growth_plan enable row level security;
+alter table tg_notification enable row level security;
+
+-- example skeleton only
+-- employee self own profile
+create policy tg_employee_profile_self_select
+on tg_employee_profile
+for select
+using (
+  company_id = auth_company_id()
+  and employee_id = auth_employee_id()
+);
+
+-- HR all within company
+create policy tg_employee_profile_hr_all
+on tg_employee_profile
+for all
+using (
+  company_id = auth_company_id()
+  and is_hr_operator()
+)
+with check (
+  company_id = auth_company_id()
+  and is_hr_operator()
+);
+
+-- employee self own notifications
+create policy tg_notification_self_select
+on tg_notification
+for select
+using (
+  company_id = auth_company_id()
+  and target_employee_id = auth_employee_id()
+);
+
+commit;
+~~~
+
+## 3-4. 0004_tg_phase_a_seed_minimum.sql
+~~~sql
+begin;
+
+insert into tg_job_family_master (
+  job_family_id, company_id, job_family_code, label_ja, created_by, updated_by
+) values
+  ('jfam_store', 'comp_demo_01', 'STORE', '店舗職群', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_job_role_master (
+  job_role_id, company_id, job_family_id, job_role_code, label_ja, created_by, updated_by
+) values
+  ('jrole_store_staff', 'comp_demo_01', 'jfam_store', 'STORE_STAFF', '店舗担当', 'seed', 'seed'),
+  ('jrole_store_manager', 'comp_demo_01', 'jfam_store', 'STORE_MANAGER', '店長', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_grade_master (
+  grade_id, company_id, grade_code, label_ja, grade_order, created_by, updated_by
+) values
+  ('grade_g2', 'comp_demo_01', 'G2', '一般', 20, 'seed', 'seed'),
+  ('grade_g3', 'comp_demo_01', 'G3', '主任級', 30, 'seed', 'seed')
+on conflict do nothing;
+
+commit;
+~~~
+
+# 4. migration execution order
+1. foundation tables
+2. indexes
+3. baseline RLS
+4. minimum seed
+5. test data seed
+6. API mock / integration tests
+7. batch / outbox activation
+
+# 5. implementation caution
+- helper auth functions must exist before full RLS activation
+- admin bypass policy must not be blanket-open
+- publish / approve を先に実装する前に audit append を通す
+- outbox table は phase A から置く
+- no destructive replace of earlier tables
+
+# 6. conclusion
+TalentGrowth の concrete DDL migration block は、
+phase A を動かす最小骨格として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0906_TALENT_GROWTH_CONCRETE_DDL_MIGRATION_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0907_TALENT_GROWTH_PHASE_A_CONCRETE_SQL_EXECUTION_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A CONCRETE SQL EXECUTION BLOCK FIXED
+
+status: draft-phase-a-sql-execution-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. 目的
+本資料は、
+TalentGrowth phase A の DB 構築を
+Termux からそのまま実行できる SQL execution block として固定するための資料である。
+
+前提:
+- Termux 実行
+- psql は DATABASE_URL を使う
+- 方法Aを採用する
+- additive only
+- 実行前に 佐藤(DB担当) レビュー前提
+
+# 1. execution rule
+- psql "$DATABASE_URL" <<'SQL' ... SQL の形式を唯一の実行形式とする
+- 途中で interactive psql に入らない
+- rollback 可能性を考慮し transaction block を使う
+- destructive change はこの block に含めない
+
+# 2. pre-check
+実行前確認:
+- DATABASE_URL が export 済み
+- 対象 DB が TalentGrowth 用スキーマ追加可能
+- helper auth functions は別途存在 or 後続で追加
+- 既存テーブル名競合がない
+- 佐藤レビュー完了
+
+# 3. concrete phase A execution block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+begin;
+
+create table if not exists tg_job_family_master (
+  job_family_id text primary key,
+  company_id text not null,
+  job_family_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_family_code)
+);
+
+create table if not exists tg_job_role_master (
+  job_role_id text primary key,
+  company_id text not null,
+  job_family_id text not null references tg_job_family_master(job_family_id),
+  job_role_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  is_critical_role boolean not null default false,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_role_code)
+);
+
+create table if not exists tg_grade_master (
+  grade_id text primary key,
+  company_id text not null,
+  grade_code text not null,
+  label_ja text not null,
+  label_en text null,
+  grade_order integer not null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, grade_code)
+);
+
+create table if not exists tg_skill_master (
+  skill_id text primary key,
+  company_id text not null,
+  skill_code text not null,
+  skill_category_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  skill_level_min integer not null default 1,
+  skill_level_max integer not null default 5,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, skill_code)
+);
+
+create table if not exists tg_certification_master (
+  certification_id text primary key,
+  company_id text not null,
+  certification_code text not null,
+  label_ja text not null,
+  label_en text null,
+  issuer_name text null,
+  renewal_required boolean not null default false,
+  standard_valid_months integer null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, certification_code)
+);
+
+create table if not exists tg_employee_profile (
+  employee_id text primary key,
+  company_id text not null,
+  employee_code text not null,
+  external_employee_key text null,
+  full_name text not null,
+  display_name text null,
+  email text null,
+  phone text null,
+  employment_type_code text not null,
+  organization_id text not null,
+  position_title text null,
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  manager_employee_id text null,
+  preferred_language_code text not null default 'ja',
+  reporting_currency_code text not null default 'JPY',
+  hire_date date null,
+  termination_date date null,
+  is_active boolean not null default true,
+  career_preference_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_code)
+);
+
+create table if not exists tg_employee_certification (
+  employee_certification_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  certification_name_snapshot text not null,
+  issuer_name_snapshot text null,
+  license_number text null,
+  acquired_date date null,
+  expiry_date date null,
+  renewal_required boolean not null default false,
+  certification_status_code text not null,
+  last_renewed_at date null,
+  next_renewal_due_at date null,
+  source_amount numeric(18,6) null,
+  source_currency text null,
+  reporting_amount numeric(18,6) null,
+  reporting_currency text null,
+  fx_rate numeric(18,6) null,
+  fx_rate_applied_at timestamptz null,
+  evidence_file_id text null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_employee_certification_renewal (
+  employee_certification_renewal_id text primary key,
+  company_id text not null,
+  employee_certification_id text not null references tg_employee_certification(employee_certification_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  renewed_at date not null,
+  old_expiry_date date null,
+  new_expiry_date date not null,
+  renewal_cost_source_amount numeric(18,6) null,
+  renewal_cost_source_currency text null,
+  renewal_cost_reporting_amount numeric(18,6) null,
+  renewal_cost_reporting_currency text null,
+  renewal_fx_rate numeric(18,6) null,
+  renewal_fx_rate_applied_at timestamptz null,
+  evidence_file_id text null,
+  renewal_note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_employee_skill (
+  employee_skill_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  proficiency_level integer not null,
+  self_rating numeric(5,2) null,
+  manager_rating numeric(5,2) null,
+  last_used_at date null,
+  usage_frequency_code text null,
+  evidence_count integer not null default 0,
+  evidence_confidence numeric(5,2) null,
+  skill_freshness_score numeric(5,2) null,
+  is_primary_skill boolean not null default false,
+  employee_comment text null,
+  manager_comment text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_id, skill_id)
+);
+
+create table if not exists tg_employee_skill_evidence (
+  employee_skill_evidence_id text primary key,
+  company_id text not null,
+  employee_skill_id text not null references tg_employee_skill(employee_skill_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_description text null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  occurred_at timestamptz null,
+  confidence_score numeric(5,2) null,
+  is_verified boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement (
+  role_requirement_id text primary key,
+  company_id text not null,
+  job_family_id text null references tg_job_family_master(job_family_id),
+  job_role_id text not null references tg_job_role_master(job_role_id),
+  grade_id text null references tg_grade_master(grade_id),
+  requirement_version text not null,
+  effective_from date not null,
+  effective_to date null,
+  template_name text null,
+  status_code text not null,
+  overall_weight_skill numeric(5,2) not null default 0,
+  overall_weight_certification numeric(5,2) not null default 0,
+  overall_weight_experience numeric(5,2) not null default 0,
+  overall_weight_performance numeric(5,2) not null default 0,
+  overall_weight_behavior numeric(5,2) not null default 0,
+  overall_weight_growth numeric(5,2) not null default 0,
+  description_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement_skill (
+  role_requirement_skill_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  required_level integer not null,
+  preferred_level integer null,
+  weight_score numeric(5,2) not null default 0,
+  mandatory_flag boolean not null default false,
+  recency_required_months integer null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement_certification (
+  role_requirement_certification_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  mandatory_flag boolean not null default false,
+  preferred_flag boolean not null default false,
+  weight_score numeric(5,2) not null default 0,
+  renewal_required boolean not null default false,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_cycle (
+  evaluation_cycle_id text primary key,
+  company_id text not null,
+  cycle_code text not null,
+  cycle_name text not null,
+  target_scope_code text not null,
+  period_start date not null,
+  period_end date not null,
+  self_review_due_at timestamptz null,
+  manager_review_due_at timestamptz null,
+  hr_review_due_at timestamptz null,
+  publish_at timestamptz null,
+  cycle_status_code text not null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, cycle_code)
+);
+
+create table if not exists tg_evaluation_sheet (
+  evaluation_sheet_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  hr_owner_employee_id text null references tg_employee_profile(employee_id),
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  evaluation_status_code text not null,
+  current_state_rank text null,
+  future_readiness_rank text null,
+  total_evaluation_score numeric(7,2) null,
+  current_role_fit_score numeric(7,2) null,
+  target_role_fit_score numeric(7,2) null,
+  growth_potential_score numeric(7,2) null,
+  promotion_readiness_score numeric(7,2) null,
+  successor_readiness_score numeric(7,2) null,
+  self_review_submitted_at timestamptz null,
+  manager_review_submitted_at timestamptz null,
+  approved_at timestamptz null,
+  published_at timestamptz null,
+  reopened_at timestamptz null,
+  sent_back_at timestamptz null,
+  current_step_owner_role_code text null,
+  lock_version integer not null default 1,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, evaluation_cycle_id, employee_id)
+);
+
+create table if not exists tg_evaluation_score_detail (
+  evaluation_score_detail_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  score_category_code text not null,
+  score_item_code text not null,
+  raw_score numeric(7,2) null,
+  adjusted_score numeric(7,2) null,
+  weight_score numeric(7,2) null,
+  final_score numeric(7,2) null,
+  pre_calibration_score numeric(7,2) null,
+  post_calibration_score numeric(7,2) null,
+  calculation_note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_comment (
+  evaluation_comment_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  comment_type_code text not null,
+  actor_employee_id text not null references tg_employee_profile(employee_id),
+  actor_role_code text not null,
+  original_text text not null,
+  translated_text text null,
+  language_code text not null,
+  ai_assisted_flag boolean not null default false,
+  ai_draft_id text null,
+  is_published_to_employee boolean not null default false,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_evidence (
+  evaluation_evidence_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  linked_score_category_code text null,
+  linked_score_item_code text null,
+  confidence_score numeric(5,2) null,
+  verified_flag boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_change_audit (
+  evaluation_change_audit_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_by_role_code text not null,
+  action_type text not null,
+  changed_field_name text not null,
+  old_value_text text null,
+  new_value_text text null,
+  change_reason_text text null,
+  changed_at timestamptz not null default now(),
+  audit_trace_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_approval (
+  evaluation_approval_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  approval_step_code text not null,
+  approver_employee_id text not null references tg_employee_profile(employee_id),
+  approval_action_code text not null,
+  approval_comment text null,
+  acted_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_calibration_session (
+  calibration_session_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  session_name text not null,
+  session_date date not null,
+  session_status_code text not null,
+  chair_employee_id text null references tg_employee_profile(employee_id),
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_calibration_log (
+  calibration_log_id text primary key,
+  company_id text not null,
+  calibration_session_id text not null references tg_calibration_session(calibration_session_id),
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  pre_rank_code text null,
+  post_rank_code text null,
+  pre_total_score numeric(7,2) null,
+  post_total_score numeric(7,2) null,
+  change_reason_text text null,
+  meeting_note text null,
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_plan (
+  growth_plan_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  plan_title text not null,
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  plan_period_start date not null,
+  plan_period_end date not null,
+  growth_plan_status_code text not null,
+  owner_employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  plan_summary_text text null,
+  next_review_due_at date null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_action (
+  growth_action_id text primary key,
+  company_id text not null,
+  growth_plan_id text not null references tg_growth_plan(growth_plan_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  action_type_code text not null,
+  action_title text not null,
+  action_description text null,
+  priority_code text not null,
+  due_date date null,
+  reason_code text null,
+  reason_text text null,
+  linked_skill_id text null references tg_skill_master(skill_id),
+  linked_certification_id text null references tg_certification_master(certification_id),
+  linked_training_id text null,
+  action_status_code text not null,
+  completion_percent integer not null default 0,
+  completed_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_recommendation (
+  growth_recommendation_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  recommendation_type_code text not null,
+  recommendation_title text not null,
+  recommendation_reason text not null,
+  linked_gap_code text null,
+  priority_code text not null,
+  target_due_date date null,
+  accepted_flag boolean not null default false,
+  accepted_at timestamptz null,
+  rejected_flag boolean not null default false,
+  rejected_reason_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_outbox_event (
+  outbox_event_id text primary key,
+  company_id text not null,
+  event_name text not null,
+  event_domain text not null,
+  entity_type text not null,
+  entity_id text not null,
+  aggregate_key text null,
+  payload_json jsonb not null default '{}'::jsonb,
+  status_code text not null,
+  occurred_at timestamptz not null,
+  available_at timestamptz not null default now(),
+  retry_count integer not null default 0,
+  last_retry_at timestamptz null,
+  last_error_code text null,
+  last_error_message text null,
+  published_at timestamptz null,
+  consumed_by_json jsonb not null default '[]'::jsonb,
+  audit_trace_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null
+);
+
+create table if not exists tg_notification (
+  notification_id text primary key,
+  company_id text not null,
+  source_event_id text not null references tg_outbox_event(outbox_event_id),
+  notification_type_code text not null,
+  target_employee_id text not null references tg_employee_profile(employee_id),
+  title_key text not null,
+  body_key text not null,
+  body_params_json jsonb not null default '{}'::jsonb,
+  deep_link_type text null,
+  deep_link_target_id text null,
+  priority_code text not null,
+  unread_flag boolean not null default true,
+  notification_status_code text not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_notification_delivery (
+  notification_delivery_id text primary key,
+  company_id text not null,
+  notification_id text not null references tg_notification(notification_id),
+  channel_code text not null,
+  dedupe_key text null,
+  delivery_status_code text not null,
+  attempted_at timestamptz null,
+  delivered_at timestamptz null,
+  provider_message_id text null,
+  last_error_code text null,
+  last_error_message text null,
+  retry_count integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create index if not exists idx_tg_employee_profile_company_org
+  on tg_employee_profile(company_id, organization_id);
+
+create index if not exists idx_tg_employee_certification_company_expiry
+  on tg_employee_certification(company_id, expiry_date);
+
+create index if not exists idx_tg_employee_skill_company_employee
+  on tg_employee_skill(company_id, employee_id);
+
+create index if not exists idx_tg_role_requirement_company_role_grade
+  on tg_role_requirement(company_id, job_role_id, grade_id);
+
+create index if not exists idx_tg_evaluation_cycle_company_status
+  on tg_evaluation_cycle(company_id, cycle_status_code);
+
+create index if not exists idx_tg_evaluation_sheet_company_cycle_status
+  on tg_evaluation_sheet(company_id, evaluation_cycle_id, evaluation_status_code);
+
+create index if not exists idx_tg_evaluation_sheet_company_employee
+  on tg_evaluation_sheet(company_id, employee_id);
+
+create index if not exists idx_tg_growth_plan_company_employee
+  on tg_growth_plan(company_id, employee_id);
+
+create index if not exists idx_tg_outbox_event_status_available
+  on tg_outbox_event(status_code, available_at);
+
+create index if not exists idx_tg_notification_target_unread
+  on tg_notification(company_id, target_employee_id, unread_flag);
+
+create index if not exists idx_tg_notification_delivery_status_channel
+  on tg_notification_delivery(delivery_status_code, channel_code);
+
+commit;
+SQL
+~~~
+
+# 4. concrete minimum seed execution block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+begin;
+
+insert into tg_job_family_master (
+  job_family_id, company_id, job_family_code, label_ja, created_by, updated_by
+) values
+  ('jfam_store', 'comp_demo_01', 'STORE', '店舗職群', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_job_role_master (
+  job_role_id, company_id, job_family_id, job_role_code, label_ja, created_by, updated_by
+) values
+  ('jrole_store_staff', 'comp_demo_01', 'jfam_store', 'STORE_STAFF', '店舗担当', 'seed', 'seed'),
+  ('jrole_store_manager', 'comp_demo_01', 'jfam_store', 'STORE_MANAGER', '店長', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_grade_master (
+  grade_id, company_id, grade_code, label_ja, grade_order, created_by, updated_by
+) values
+  ('grade_g2', 'comp_demo_01', 'G2', '一般', 20, 'seed', 'seed'),
+  ('grade_g3', 'comp_demo_01', 'G3', '主任級', 30, 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_skill_master (
+  skill_id, company_id, skill_code, skill_category_code, label_ja, created_by, updated_by
+) values
+  ('skill_customer_response', 'comp_demo_01', 'CUSTOMER_RESPONSE', 'STORE', '顧客対応', 'seed', 'seed'),
+  ('skill_numeric_management', 'comp_demo_01', 'NUMERIC_MANAGEMENT', 'STORE', '数値管理', 'seed', 'seed'),
+  ('skill_people_development', 'comp_demo_01', 'PEOPLE_DEVELOPMENT', 'STORE', '人材育成', 'seed', 'seed'),
+  ('skill_store_operation', 'comp_demo_01', 'STORE_OPERATION', 'STORE', '店舗運営', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_certification_master (
+  certification_id, company_id, certification_code, label_ja, issuer_name, renewal_required, created_by, updated_by
+) values
+  ('cert_hygiene_manager', 'comp_demo_01', 'HYGIENE_MANAGER', '第一種衛生管理者', '厚生労働省', true, 'seed', 'seed'),
+  ('cert_safety_supervisor', 'comp_demo_01', 'SAFETY_SUPERVISOR', '安全衛生推進者', '厚生労働省', true, 'seed', 'seed')
+on conflict do nothing;
+
+commit;
+SQL
+~~~
+
+# 5. recommended run order
+1. foundation execution block
+2. seed execution block
+3. mock dataset insert block
+4. API stub start
+5. phase A regression smoke
+
+# 6. completion check query examples
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select
+  (select count(*) from tg_job_family_master) as job_family_count,
+  (select count(*) from tg_job_role_master) as job_role_count,
+  (select count(*) from tg_grade_master) as grade_count,
+  (select count(*) from tg_skill_master) as skill_count,
+  (select count(*) from tg_certification_master) as certification_count;
+SQL
+~~~
+
+# 7. conclusion
+TalentGrowth phase A の SQL execution block は、
+Termux + DATABASE_URL + 方法A でそのまま実行可能な形に固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/09.data-model/0907_TALENT_GROWTH_PHASE_A_CONCRETE_SQL_EXECUTION_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/10.analytics-reporting/1002_TALENT_GROWTH_REPORTING_AND_EXPORT_FORMAT_FIXED.md -->
+# TALENT GROWTH REPORTING AND EXPORT FORMAT FIXED
+
+status: draft-reporting-export-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth のレポートとエクスポート形式を固定するための資料である。
+
+# 1. export target categories
+- employee list export
+- evaluation result export
+- certification expiry export
+- growth plan export
+- calibration log export
+- audit log export
+- analytics export
+- executive summary report
+
+# 2. export file formats
+- CSV
+- XLSX
+- PDF
+
+原則:
+- raw data export は CSV / XLSX
+- fixed layout report は PDF
+- 高度分析の再利用用は CSV / XLSX を優先する
+
+# 3. encoding / locale rule
+- CSV encoding: UTF-8
+- line break: LF
+- header row required
+- date format: YYYY-MM-DD
+- datetime format: ISO-8601 with timezone
+- decimal separator: dot
+- language of labels depends on requested locale
+- original_text は必要に応じて別列で保持
+
+# 4. common export metadata
+全export jobで以下を保持する。
+
+- export_job_id
+- export_type_code
+- requested_by_employee_id
+- requested_at
+- completed_at
+- file_format
+- locale_code
+- reporting_currency
+- filter_snapshot_json
+- row_count
+- file_id
+
+# 5. employee list export columns
+recommended columns:
+- employee_code
+- full_name
+- organization_name
+- current_job_role_label
+- current_grade_label
+- manager_name
+- is_active
+- preferred_language_code
+- reporting_currency_code
+
+# 6. evaluation result export columns
+recommended columns:
+- cycle_code
+- employee_code
+- employee_name
+- current_job_role_label
+- target_job_role_label
+- total_evaluation_score
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- promotion_readiness_score
+- successor_readiness_score
+- current_state_rank
+- future_readiness_rank
+- evaluation_status_code
+- published_at
+
+# 7. certification expiry export columns
+recommended columns:
+- employee_code
+- employee_name
+- organization_name
+- certification_name
+- acquired_date
+- expiry_date
+- days_left
+- certification_status_code
+- renewal_required
+
+# 8. growth plan export columns
+recommended columns:
+- employee_code
+- employee_name
+- growth_plan_title
+- target_job_role_label
+- plan_period_start
+- plan_period_end
+- growth_plan_status_code
+- next_review_due_at
+- action_count
+- completion_percent_avg
+
+# 9. calibration log export columns
+recommended columns:
+- cycle_code
+- session_name
+- employee_code
+- employee_name
+- pre_rank_code
+- post_rank_code
+- pre_total_score
+- post_total_score
+- changed_by_employee_id
+- changed_at
+- change_reason_text
+
+# 10. audit log export columns
+recommended columns:
+- occurred_at
+- actor_employee_id
+- actor_role_code
+- entity_type
+- entity_id
+- action_type
+- audit_trace_id
+- change_summary_text
+
+# 11. analytics export columns
+analytics exports are type-specific.
+
+## distribution export
+- organization_name
+- average_total_score
+- average_role_fit_score
+- average_growth_potential
+- employee_count
+
+## skill heatmap export
+- organization_name
+- skill_code
+- skill_label
+- employee_count
+- average_proficiency_level
+
+## training roi export
+- organization_name
+- period_start
+- period_end
+- reporting_amount
+- reporting_currency
+- score_improvement_value
+- roi_ratio
+
+# 12. PDF report fixed types
+
+## PDF-001 employee evaluation summary
+内容:
+- employee basic summary
+- final scores
+- ranks
+- top strengths
+- top gaps
+- growth plan summary
+
+## PDF-002 certification risk report
+内容:
+- expiring certifications
+- risk buckets
+- renewal recommendations
+
+## PDF-003 executive talent summary
+内容:
+- organization comparison
+- role shortage summary
+- successor coverage
+- investment summary
+
+# 13. export permission stance
+- employee_self:
+  - own evaluation summary PDF only when allowed
+- manager:
+  - team summary exports
+- HR:
+  - raw exports and audit exports
+- executive:
+  - aggregate exports and summary PDFs
+- admin:
+  - export setting support only by default
+
+# 14. multi-language rule
+- label columns follow requested locale
+- original codes may be exported together when needed
+- comment original text is preserved
+- translated_text is optional extra column
+
+# 15. multi-currency rule
+金額列を含む export では以下を原則表示する。
+
+- source_amount
+- source_currency
+- reporting_amount
+- reporting_currency
+- fx_rate
+
+集計系は reporting currency を主表示とする。
+
+# 16. export async job rule
+- export creation is async
+- create endpoint returns export_job_id
+- polling endpoint returns status
+- completed state returns file_id or signed download reference
+- failed state returns error code
+
+# 17. 結論
+TalentGrowth の reporting / export format は、
+raw export と fixed-layout report を分けて固定する。
+
+特に固定する原則は以下である。
+- CSV / XLSX for analysis
+- PDF for fixed presentation
+- locale-aware labels
+- reporting currency aware monetary output
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/10.analytics-reporting/1002_TALENT_GROWTH_REPORTING_AND_EXPORT_FORMAT_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/10.analytics-reporting/1003_TALENT_GROWTH_KPI_AND_ANALYTICS_FORMULA_FIXED.md -->
+# TALENT GROWTH KPI AND ANALYTICS FORMULA FIXED
+
+status: draft-kpi-analytics-formula-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要 KPI と analytics 指標について、
+算出式、分母、分子、集計単位、表示前提を固定するための資料である。
+
+前提:
+- 指標は company / organization / job_family / job_role / grade / cycle 単位で集計可能とする
+- 指標は raw 値と表示用 percentage を分ける
+- 指標は snapshot / aggregate job で生成する
+- 評価の説明責任を損なわないように、重要KPIは式が追えることを前提とする
+
+# 1. 記号定義
+- eligible_employee_count = 集計対象社員数
+- active_employee_count = 有効社員数
+- target_population_count = 対象母集団数
+- sum_score(x) = 対象xのスコア総和
+- avg_score(x) = sum_score(x) / count(x)
+- pct(a,b) = (a / b) * 100
+- if b = 0 then pct(a,b) = null
+- round2(x) = 小数点第2位四捨五入
+
+# 2. rank distribution
+
+## 2-1. rank_count
+definition:
+- rank_count(rank_code) = 指定rank_codeを持つ対象人数
+
+## 2-2. rank_distribution_pct
+formula:
+- rank_distribution_pct(rank_code) = round2(pct(rank_count(rank_code), target_population_count))
+
+## 2-3. future_readiness_distribution_pct
+formula:
+- future_readiness_distribution_pct(rank_code) = round2(pct(future_readiness_rank_count(rank_code), target_population_count))
+
+# 3. score average
+
+## 3-1. average_total_evaluation_score
+formula:
+- average_total_evaluation_score = round2(avg_score(total_evaluation_score))
+
+## 3-2. average_current_role_fit_score
+formula:
+- average_current_role_fit_score = round2(avg_score(current_role_fit_score))
+
+## 3-3. average_target_role_fit_score
+formula:
+- average_target_role_fit_score = round2(avg_score(target_role_fit_score))
+
+## 3-4. average_growth_potential_score
+formula:
+- average_growth_potential_score = round2(avg_score(growth_potential_score))
+
+## 3-5. average_promotion_readiness_score
+formula:
+- average_promotion_readiness_score = round2(avg_score(promotion_readiness_score))
+
+## 3-6. average_successor_readiness_score
+formula:
+- average_successor_readiness_score = round2(avg_score(successor_readiness_score))
+
+# 4. skill analytics
+
+## 4-1. skill_coverage_rate
+目的:
+- あるスキル要件を満たしている割合
+
+formula:
+- skill_qualified_count = required_level を満たす人数
+- skill_coverage_rate = round2(pct(skill_qualified_count, target_population_count))
+
+## 4-2. skill_gap_rate
+formula:
+- skill_gap_count = required_level 未達人数
+- skill_gap_rate = round2(pct(skill_gap_count, target_population_count))
+
+## 4-3. average_skill_proficiency
+formula:
+- average_skill_proficiency(skill_id) = round2(avg_score(proficiency_level))
+
+## 4-4. skill_freshness_average
+formula:
+- skill_freshness_average(skill_id) = round2(avg_score(skill_freshness_score))
+
+## 4-5. critical_skill_shortage_rate
+definition:
+- critical_skill_shortage_rate = critical skill 群に対する不足率平均
+
+formula:
+- critical_skill_shortage_rate = round2(avg(skill_gap_rate for critical skills))
+
+# 5. certification analytics
+
+## 5-1. certification_holding_rate
+formula:
+- certification_holding_rate(certification_id) = round2(pct(holder_count, target_population_count))
+
+## 5-2. certification_expiring_soon_rate
+definition:
+- expiring_soon threshold = company policy days, default 90
+
+formula:
+- certification_expiring_soon_rate = round2(pct(expiring_soon_count, holder_count))
+
+## 5-3. mandatory_certification_compliance_rate
+formula:
+- mandatory_certification_compliance_rate = round2(pct(mandatory_cert_compliant_count, target_population_count))
+
+## 5-4. certification_expired_rate
+formula:
+- certification_expired_rate = round2(pct(expired_count, holder_count))
+
+# 6. growth analytics
+
+## 6-1. growth_plan_coverage_rate
+formula:
+- growth_plan_coverage_rate = round2(pct(employee_with_active_growth_plan_count, target_population_count))
+
+## 6-2. growth_plan_completion_rate
+definition:
+- completed_action_count = status COMPLETED の action 数
+- all_action_count = 全action数
+
+formula:
+- growth_plan_completion_rate = round2(pct(completed_action_count, all_action_count))
+
+## 6-3. on_time_growth_action_rate
+formula:
+- on_time_growth_action_rate = round2(pct(on_time_completed_action_count, completed_action_count))
+
+## 6-4. recommendation_acceptance_rate
+formula:
+- recommendation_acceptance_rate = round2(pct(accepted_recommendation_count, total_recommendation_count))
+
+## 6-5. average_growth_velocity
+definition:
+- cycle_delta_score = 現サイクル total score - 前サイクル total score
+
+formula:
+- average_growth_velocity = round2(avg(cycle_delta_score))
+
+# 7. evaluator bias analytics
+
+## 7-1. evaluator_average_given_score
+formula:
+- evaluator_average_given_score(evaluator) = round2(avg(final_score by evaluator))
+
+## 7-2. evaluator_bias_delta
+formula:
+- evaluator_bias_delta(evaluator) = round2(evaluator_average_given_score - org_average_given_score_same_scope)
+
+## 7-3. evaluator_extreme_rate
+definition:
+- extreme = S または D, あるいは policy-defined outlier score
+
+formula:
+- evaluator_extreme_rate = round2(pct(extreme_count_by_evaluator, reviewed_count_by_evaluator))
+
+## 7-4. evaluator_bias_index
+目的:
+- 単一値で偏り強度を出す
+
+formula:
+- evaluator_bias_index = round2(
+    abs(evaluator_bias_delta) * 0.5
+    + abs(extreme_rate_delta) * 0.3
+    + abs(calibration_adjustment_rate_delta) * 0.2
+  )
+
+notes:
+- delta 系は scope normalized value を使う
+
+# 8. calibration analytics
+
+## 8-1. calibration_adjustment_rate
+formula:
+- calibration_adjustment_rate = round2(pct(adjusted_sheet_count, calibrated_sheet_count))
+
+## 8-2. average_calibration_delta_score
+formula:
+- average_calibration_delta_score = round2(avg(abs(post_total_score - pre_total_score)))
+
+## 8-3. rank_change_rate_after_calibration
+formula:
+- rank_change_rate_after_calibration = round2(pct(rank_changed_count, calibrated_sheet_count))
+
+# 9. role-fit / promotion / successor analytics
+
+## 9-1. role_fit_ready_rate
+definition:
+- ready threshold default = target_role_fit_score >= 80 and mandatory gap none
+
+formula:
+- role_fit_ready_rate = round2(pct(role_fit_ready_count, target_population_count))
+
+## 9-2. promotion_ready_rate
+formula:
+- promotion_ready_rate = round2(pct(promotion_ready_count, target_population_count))
+
+## 9-3. successor_coverage_rate
+definition:
+- covered_critical_role_count = successor candidate 1名以上の critical role 数
+
+formula:
+- successor_coverage_rate = round2(pct(covered_critical_role_count, critical_role_count))
+
+## 9-4. ready_now_successor_rate
+formula:
+- ready_now_successor_rate = round2(pct(ready_now_successor_count, successor_candidate_count))
+
+# 10. investment / ROI analytics
+
+## 10-1. training_investment_total
+formula:
+- training_investment_total = sum(reporting_amount for training-related cost in period)
+
+## 10-2. certification_investment_total
+formula:
+- certification_investment_total = sum(reporting_amount for certification-related cost in period)
+
+## 10-3. score_improvement_value
+definition:
+- score_improvement_value = Σ(current_cycle_score - previous_cycle_score) for investment-linked population
+
+## 10-4. training_roi_ratio
+formula:
+- training_roi_ratio = round2(score_improvement_value / nullif(training_investment_total, 0))
+
+## 10-5. certification_roi_ratio
+formula:
+- certification_roi_ratio = round2(score_improvement_value / nullif(certification_investment_total, 0))
+
+notes:
+- ROI は monetary return ではなく talent improvement ratio として扱う
+- 金額換算利益ROIと混同しない
+
+# 11. dashboard KPI fixed set
+
+## employee dashboard KPIs
+- current_role_fit_score
+- target_role_fit_score
+- growth_potential_score
+- current_state_rank
+- expiring_certification_count
+- top_growth_action_count
+- score_trend_delta
+
+## manager dashboard KPIs
+- pending_review_count
+- sent_back_count
+- expiring_certification_count
+- high_growth_candidate_count
+- team_average_current_role_fit_score
+- critical_skill_shortage_rate
+
+## HR dashboard KPIs
+- active_cycle_count
+- pending_hr_review_count
+- pending_calibration_count
+- certification_expiring_soon_rate
+- average_current_role_fit_score
+- evaluator_bias_alert_count
+- successor_coverage_rate
+
+## executive dashboard KPIs
+- critical_role_coverage_rate
+- ready_now_successor_rate
+- org_average_growth_potential_score
+- training_investment_total
+- training_roi_ratio
+- high_risk_population_rate
+
+# 12. analytics display rules
+- percentage は 0..100 で表示
+- average score は 0..100 前提
+- count と rate を混在させるときは単位表示必須
+- analytics cache は generated_at を表示する
+- compare view では same denominator を守る
+- null denominator は N/A として表示する
+
+# 13. 結論
+TalentGrowth の KPI / analytics formula は、
+分子・分母・閾値・集計単位を明示して固定する。
+
+特に重要なのは以下である。
+- rank distribution
+- skill coverage
+- certification compliance
+- growth velocity
+- evaluator bias index
+- successor coverage
+- training ROI ratio
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/10.analytics-reporting/1003_TALENT_GROWTH_KPI_AND_ANALYTICS_FORMULA_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1202_TALENT_GROWTH_RLS_ACCESS_POLICY_FIXED.md -->
+# TALENT GROWTH RLS ACCESS POLICY FIXED
+
+status: draft-rls-access-policy-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の row level security と access policy の骨格を固定するための資料である。
+
+前提:
+- company scope は必須
+- employee_self / manager / HR / executive / admin の責務を分ける
+- 評価内容は機微情報として扱う
+- admin は技術運用権限であり、無制限閲覧を既定にしない
+- AI は主体にならず、参照履歴のみ残す
+
+# 1. principal roles
+- employee_self
+- manager
+- HR_operator
+- executive_viewer
+- system_admin
+- service_role_internal
+
+# 2. access design principles
+- least privilege
+- company boundary strict
+- organization scope strict
+- evaluation state aware
+- raw detail と aggregated analytics を分ける
+- direct table write より API 経由を優先する
+- sensitive comments は公開範囲を分離する
+
+# 3. helper predicate ideas
+実装時は以下の helper function / view を使う前提でよい。
+
+- auth_company_id()
+- auth_employee_id()
+- auth_role_codes()
+- can_view_employee(target_employee_id)
+- can_manage_employee(target_employee_id)
+- can_view_org(target_organization_id)
+- is_hr_operator()
+- is_executive_viewer()
+- is_system_admin()
+- is_service_role_internal()
+
+# 4. テーブル群ごとのRLS方針
+
+## 4-1. employee_profile
+select:
+- employee_self は自分のみ可
+- manager は自組織 / 配下のみ可
+- HR_operator は company scope 可
+- executive_viewer は raw detail ではなく要件に応じて限定可
+- system_admin は既定で raw 人事データを全面可としない
+
+insert/update/delete:
+- employee_self は自己編集許可項目のみ API 経由
+- HR_operator は権限範囲内で可
+- system_admin は原則設定 / 運用支援のみ
+
+## 4-2. employee_academic_history / employee_career_history / employee_achievement
+select:
+- employee_self 自分のみ
+- manager 配下のみ
+- HR_operator company scope 可
+
+write:
+- employee_self は自分データを下書き / 申請ベースで更新可
+- manager は本人データを代理更新しない
+- HR_operator は修正権限可
+
+## 4-3. employee_certification / employee_certification_renewal
+select:
+- employee_self 自分のみ
+- manager 配下のみ
+- HR_operator company scope 可
+
+write:
+- employee_self は更新記録申請可
+- manager は閲覧中心
+- HR_operator は確定 / 補正可
+
+## 4-4. employee_skill / employee_skill_evidence
+select:
+- employee_self 自分のみ
+- manager 配下のみ
+- HR_operator company scope 可
+
+write:
+- employee_self は自分の下書き更新可
+- manager は評価時の manager_comment 更新可
+- evidence verification は HR / 指定権限者のみ
+
+## 4-5. masters
+対象:
+- tg_job_family_master
+- tg_job_role_master
+- tg_grade_master
+- tg_skill_master
+- tg_certification_master
+
+select:
+- company scope の認証済ユーザーは read 可
+
+write:
+- HR_operator または system_admin のみ
+- employee_self / manager / executive_viewer は不可
+
+## 4-6. role_requirement / role_requirement_skill / role_requirement_certification
+select:
+- employee_self は自分の現職 / 目標職に必要な範囲のみ可
+- manager は配下対象に必要な範囲可
+- HR_operator は company scope 可
+- executive_viewer は read 可
+
+write:
+- HR_operator のみ
+- system_admin は補助のみ
+- manager / employee_self は不可
+
+## 4-7. evaluation_cycle
+select:
+- 認証済ユーザーは自分に関係あるサイクルを read 可
+- HR_operator は company scope 可
+
+write:
+- HR_operator のみ
+
+## 4-8. evaluation_sheet
+select:
+- employee_self は自分の sheet のみ
+- manager は配下の sheet のみ
+- HR_operator は company scope 可
+- executive_viewer は raw sheet 全面可を既定にしない
+- executive_viewer は集計 / サマリ中心
+
+write:
+- employee_self は SELF_REVIEW_DRAFT 相当で自己入力部分のみ
+- manager は MANAGER_REVIEW_DRAFT 相当でレビュー部分のみ
+- HR_operator は HR review / calibration / approve / reopen を担当
+- direct table update ではなく API / procedure 経由を推奨
+
+## 4-9. evaluation_score_detail
+select:
+- employee_self は公開済 / 許可済範囲のみ
+- manager は配下対象分のみ
+- HR_operator は company scope 可
+- executive_viewer は明細より集計優先
+
+write:
+- scoring engine / HR_operator / service_role_internal
+- employee_self の direct write 不可
+- manager の direct score write は API 経由に限定
+
+## 4-10. evaluation_comment
+select:
+- employee_self は公開対象コメントのみ
+- manager は配下のレビューコメント可
+- HR_operator は全件可
+- executive_viewer は原則 raw comment 不可
+
+write:
+- employee_self は self review comment 可
+- manager は manager review comment 可
+- HR_operator は calibration / HR comment 可
+- sensitive flag がある comment は employee 非公開可
+
+## 4-11. evaluation_evidence
+select:
+- employee_self は自分が添付したもの + 自分の評価根拠
+- manager は配下の評価根拠
+- HR_operator は company scope 可
+- executive_viewer は raw file 既定不可
+
+write:
+- employee_self / manager / HR は役割範囲で可
+- verification は HR / 指定権限者のみ
+
+## 4-12. evaluation_snapshot / role_fit_snapshot / training_roi_snapshot
+select:
+- employee_self は自分分のみ
+- manager は配下のみ
+- HR_operator は company scope 可
+- executive_viewer は集計 / サマリ read 可
+
+write:
+- service_role_internal
+- HR_operator
+- direct end-user write 不可
+
+## 4-13. evaluation_change_audit / evaluation_approval / calibration_log
+select:
+- HR_operator は full 可
+- manager は自分が関与したもの一部可
+- employee_self は必要最小限の change summary のみ
+- executive_viewer は原則不可または強く制限
+
+write:
+- service_role_internal / HR_operator
+- direct user write 不可
+
+## 4-14. growth_plan / growth_action / growth_recommendation
+select:
+- employee_self は自分のみ
+- manager は配下のみ
+- HR_operator は company scope 可
+
+write:
+- employee_self は progress 更新可
+- manager は review / adjustment 可
+- HR_operator は company policy に応じて可
+
+## 4-15. successor_candidate
+select:
+- HR_operator 可
+- executive_viewer 可
+- manager は対象権限範囲内で限定可
+- employee_self 不可
+
+write:
+- HR_operator のみ
+- service_role_internal で算出補助可
+
+## 4-16. ai_assist_reference_log / audit_export_log
+select:
+- HR_operator 可
+- system_admin は運用ログとして限定可
+- employee_self / manager / executive_viewer は原則不可
+
+write:
+- service_role_internal
+- HR_operator
+- system_admin 一部
+
+# 5. state-aware write policy
+
+## SELF_REVIEW_DRAFT
+- employee_self の自己入力可
+- manager / HR は read 中心
+
+## SELF_REVIEW_SUBMITTED
+- employee_self direct edit 不可
+- manager review 開始可
+- sent back により employee editable に戻す
+
+## MANAGER_REVIEW_DRAFT
+- manager write 可
+- employee_self score detail direct edit 不可
+
+## MANAGER_REVIEW_SUBMITTED
+- HR review 可
+- manager 追記は reopen or send back 経由
+
+## CALIBRATION_IN_PROGRESS
+- HR_operator のみ調整可
+- manager / employee_self は read 制限あり
+
+## APPROVED / PUBLISHED
+- raw edit 不可
+- reopen flow 必須
+- 履歴は削除しない
+
+# 6. executive access stance
+- executive_viewer は aggregate first
+- raw personal comments は既定不可
+- successor, shortage, investment view を優先
+- 個人詳細は業務必要時のみ追加権限で開ける
+
+# 7. admin access stance
+- system_admin は technical admin である
+- user / role / integration / settings 管理を主責務とする
+- raw evaluation content 全件閲覧は既定不可
+- 必要なら break-glass policy を別途持つ
+
+# 8. SQL policy skeleton examples
+~~~sql
+-- example only
+alter table tg_employee_profile enable row level security;
+alter table tg_evaluation_sheet enable row level security;
+alter table tg_growth_plan enable row level security;
+
+-- employee self can read own profile
+create policy tg_employee_profile_self_select
+on tg_employee_profile
+for select
+using (
+  company_id = auth_company_id()
+  and employee_id = auth_employee_id()
+);
+
+-- manager can read team evaluation sheets
+create policy tg_evaluation_sheet_manager_select
+on tg_evaluation_sheet
+for select
+using (
+  company_id = auth_company_id()
+  and can_manage_employee(employee_id)
+);
+
+-- HR can read/write evaluation sheets
+create policy tg_evaluation_sheet_hr_all
+on tg_evaluation_sheet
+for all
+using (
+  company_id = auth_company_id()
+  and is_hr_operator()
+)
+with check (
+  company_id = auth_company_id()
+  and is_hr_operator()
+);
+~~~
+
+# 9. break-glass policy
+高機微データへの緊急アクセスは、
+通常RLSとは別に以下を要求する。
+
+- 明示的申請
+- reason 必須
+- 有効期限付き
+- audit trace 必須
+- 事後レビュー必須
+
+# 10. 結論
+TalentGrowth の access policy は、
+employee_self / manager / HR / executive / admin を
+同一権限にせず、
+company scope, organization scope, evaluation state を
+組み合わせて制御する。
+
+特に固定する原則は以下である。
+- employee は自分中心
+- manager は配下中心
+- HR は制度運用中心
+- executive は集計中心
+- admin は技術運用中心
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1202_TALENT_GROWTH_RLS_ACCESS_POLICY_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1203_TALENT_GROWTH_BREAK_GLASS_AND_SENSITIVE_ACCESS_POLICY.md -->
+# TALENT GROWTH BREAK-GLASS AND SENSITIVE ACCESS POLICY
+
+status: draft-sensitive-access-policy
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の高機微データに対する
+break-glass access と sensitive access の統制を固定するための資料である。
+
+# 1. 高機微対象
+- raw evaluation comment
+- calibration note
+- evaluation_change_audit detailed diff
+- successor candidate risk note
+- AI prompt summary
+- audit export raw files
+
+# 2. 原則
+- 通常権限では開けない情報を明確にする
+- break-glass は緊急時のみ
+- reason 必須
+- 時限付き
+- full audit 必須
+- 事後レビュー必須
+
+# 3. break-glass request fields
+- request_id
+- requested_by_employee_id
+- target_entity_type
+- target_entity_id
+- requested_reason
+- requested_at
+- approved_by_employee_id
+- approved_at
+- access_expires_at
+- audit_trace_id
+
+# 4. allowed actors
+- HR senior approver
+- limited security / governance approver
+- system_admin alone is insufficient by default
+
+# 5. denied patterns
+- 漠然とした閲覧要求
+- 理由未記入
+- 期限未設定
+- 事後レビュー不要扱い
+- 継続常設アクセス
+
+# 6. 結論
+TalentGrowth では、
+高機微評価情報への例外アクセスも
+通常のRLS外の無制限特権ではなく、
+統制付きの一時アクセスとして固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1203_TALENT_GROWTH_BREAK_GLASS_AND_SENSITIVE_ACCESS_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1204_TALENT_GROWTH_PHASE_A_RLS_HELPER_FUNCTION_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A RLS HELPER FUNCTION SKELETON FIXED
+
+status: draft-phase-a-rls-helper-function-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の RLS baseline を支える
+helper function skeleton を固定するための資料である。
+
+# 1. helper purpose
+RLS helper は以下を簡潔に表現する。
+- current company id
+- current employee id
+- current role membership
+- HR operator 判定
+- manager operator 判定
+- executive operator 判定
+- admin operator 判定
+
+# 2. helper function candidates
+- auth_company_id()
+- auth_employee_id()
+- auth_role_codes()
+- has_role(role_code text)
+- is_hr_operator()
+- is_manager_operator()
+- is_executive_operator()
+- is_admin_operator()
+
+# 3. skeleton SQL block
+~~~sql
+create or replace function auth_company_id()
+returns text
+language sql
+stable
+as $$
+  select current_setting('request.jwt.claim.company_id', true)::text
+$$;
+
+create or replace function auth_employee_id()
+returns text
+language sql
+stable
+as $$
+  select current_setting('request.jwt.claim.employee_id', true)::text
+$$;
+
+create or replace function auth_role_codes()
+returns text[]
+language sql
+stable
+as $$
+  select coalesce(
+    string_to_array(current_setting('request.jwt.claim.role_codes', true), ','),
+    array[]::text[]
+  )
+$$;
+
+create or replace function has_role(role_code text)
+returns boolean
+language sql
+stable
+as $$
+  select role_code = any(auth_role_codes())
+$$;
+
+create or replace function is_hr_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('HR')
+$$;
+
+create or replace function is_manager_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('MANAGER')
+$$;
+
+create or replace function is_executive_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('EXECUTIVE')
+$$;
+
+create or replace function is_admin_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('ADMIN')
+$$;
+~~~
+
+# 4. representative RLS use examples
+
+## employee self own notification
+~~~sql
+create policy tg_notification_self_select
+on tg_notification
+for select
+using (
+  company_id = auth_company_id()
+  and target_employee_id = auth_employee_id()
+);
+~~~
+
+## HR all in company
+~~~sql
+create policy tg_employee_profile_hr_all
+on tg_employee_profile
+for all
+using (
+  company_id = auth_company_id()
+  and is_hr_operator()
+)
+with check (
+  company_id = auth_company_id()
+  and is_hr_operator()
+);
+~~~
+
+## manager limited read baseline
+notes:
+- full team membership helper may be deferred
+- phase A can keep manager team filtering in service/API layer where RLS helper not yet rich enough
+
+# 5. caution
+- exact JWT claim names may differ by environment
+- current_setting-based helper names are skeleton only
+- blanket admin bypass must not be introduced casually
+- manager team scope may require dedicated membership helper later
+
+# 6. conclusion
+phase A RLS helper は、
+company / employee / role 判定の最小関数群から始める方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1204_TALENT_GROWTH_PHASE_A_RLS_HELPER_FUNCTION_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1205_TALENT_GROWTH_PHASE_A_SQL_RLS_SEED_VERIFY_ALL_IN_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A SQL RLS SEED VERIFY ALL-IN-ONE BLOCK FIXED
+
+status: draft-phase-a-sql-rls-seed-verify-all-in-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の DB 着手を
+DDL / RLS helper / seed / verify まで一括で確認できる
+all-in-one block として固定するための資料である。
+
+# 1. block coverage
+- phase A DDL apply
+- phase A index apply
+- phase A RLS helper apply
+- minimum seed
+- demo seed
+- verify query
+
+# 2. execution stance
+- 方法A
+- DATABASE_URL 使用
+- Termux 直貼り
+- destructive change を含めない
+- 佐藤(DB担当)レビュー前提
+
+# 3. all-in-one block structure
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+begin;
+
+-- 1. helper functions
+create or replace function auth_company_id()
+returns text
+language sql
+stable
+as $$
+  select current_setting('request.jwt.claim.company_id', true)::text
+$$;
+
+create or replace function auth_employee_id()
+returns text
+language sql
+stable
+as $$
+  select current_setting('request.jwt.claim.employee_id', true)::text
+$$;
+
+create or replace function auth_role_codes()
+returns text[]
+language sql
+stable
+as $$
+  select coalesce(
+    string_to_array(current_setting('request.jwt.claim.role_codes', true), ','),
+    array[]::text[]
+  )
+$$;
+
+create or replace function has_role(role_code text)
+returns boolean
+language sql
+stable
+as $$
+  select role_code = any(auth_role_codes())
+$$;
+
+create or replace function is_hr_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('HR')
+$$;
+
+create or replace function is_manager_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('MANAGER')
+$$;
+
+create or replace function is_executive_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('EXECUTIVE')
+$$;
+
+create or replace function is_admin_operator()
+returns boolean
+language sql
+stable
+as $$
+  select has_role('ADMIN')
+$$;
+
+-- 2. tables / indexes
+-- use 1200008 and 1200026 related baseline as source of truth
+
+-- 3. seed
+insert into tg_job_family_master (
+  job_family_id, company_id, job_family_code, label_ja, created_by, updated_by
+) values
+  ('jfam_store', 'comp_demo_01', 'STORE', '店舗職群', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_job_role_master (
+  job_role_id, company_id, job_family_id, job_role_code, label_ja, created_by, updated_by
+) values
+  ('jrole_store_staff', 'comp_demo_01', 'jfam_store', 'STORE_STAFF', '店舗担当', 'seed', 'seed'),
+  ('jrole_store_manager', 'comp_demo_01', 'jfam_store', 'STORE_MANAGER', '店長', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_grade_master (
+  grade_id, company_id, grade_code, label_ja, grade_order, created_by, updated_by
+) values
+  ('grade_g2', 'comp_demo_01', 'G2', '一般', 20, 'seed', 'seed'),
+  ('grade_g3', 'comp_demo_01', 'G3', '主任級', 30, 'seed', 'seed')
+on conflict do nothing;
+
+commit;
+SQL
+~~~
+
+# 4. verify block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select 'tg_job_family_master' as table_name, count(*) as cnt from tg_job_family_master
+union all
+select 'tg_job_role_master', count(*) from tg_job_role_master
+union all
+select 'tg_grade_master', count(*) from tg_grade_master
+union all
+select 'tg_employee_profile', count(*) from tg_employee_profile
+union all
+select 'tg_evaluation_sheet', count(*) from tg_evaluation_sheet
+union all
+select 'tg_notification', count(*) from tg_notification;
+SQL
+~~~
+
+# 5. conclusion
+phase A DB apply は、
+DDL / helper / seed / verify を束ねた block で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/12.security-audit-compliance/1205_TALENT_GROWTH_PHASE_A_SQL_RLS_SEED_VERIFY_ALL_IN_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1302_TALENT_GROWTH_BATCH_CRON_SNAPSHOT_JOB_DESIGN_FIXED.md -->
+# TALENT GROWTH BATCH CRON SNAPSHOT JOB DESIGN FIXED
+
+status: draft-batch-cron-snapshot-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の batch job,
+cron job,
+snapshot job,
+recalculation job を固定するための資料である。
+
+前提:
+- online request で重い再計算を完結させない
+- snapshot は append-first
+- batch は business event と整合させる
+- 通知生成と計算系 job を分ける
+
+# 1. job group 一覧
+- outbox publisher jobs
+- notification delivery jobs
+- expiry detection jobs
+- snapshot generation jobs
+- analytics aggregation jobs
+- recommendation generation jobs
+- export jobs
+- consistency / repair jobs
+
+# 2. 推奨 job registry naming
+format:
+- tg.job.<domain>.<purpose>
+
+examples:
+- tg.job.outbox.publish
+- tg.job.notification.deliver
+- tg.job.certification.expiry_scan
+- tg.job.snapshot.evaluation_daily
+- tg.job.analytics.distribution_refresh
+- tg.job.recommendation.growth_refresh
+- tg.job.export.generate
+- tg.job.consistency.audit_repair_check
+
+# 3. 必須job一覧
+
+## 3-1. outbox publish job
+job_name:
+- tg.job.outbox.publish
+
+purpose:
+- tg_outbox_event の READY/PENDING を publish する
+
+input:
+- batch size
+- company scope optional
+
+frequency:
+- every 1-5 minutes
+
+outputs:
+- published event
+- failed event
+- dead letter escalation
+
+## 3-2. notification delivery job
+job_name:
+- tg.job.notification.deliver
+
+purpose:
+- tg_notification_delivery の PENDING を配信する
+
+frequency:
+- every 1-5 minutes
+
+outputs:
+- SENT / DELIVERED / FAILED update
+
+## 3-3. certification expiry scan job
+job_name:
+- tg.job.certification.expiry_scan
+
+purpose:
+- expiring soon / expired を検知し event 発行する
+
+frequency:
+- daily
+
+scan logic:
+- expiry_date - today <= threshold days -> expiring soon
+- expiry_date < today -> expired
+
+outputs:
+- tg.certification.item.expiring_soon
+- tg.certification.item.expired
+
+## 3-4. evaluation snapshot daily job
+job_name:
+- tg.job.snapshot.evaluation_daily
+
+purpose:
+- evaluation snapshot を daily append する
+
+frequency:
+- daily or cycle milestone based
+
+source:
+- tg_evaluation_sheet
+
+target:
+- tg_evaluation_snapshot
+
+## 3-5. role-fit snapshot refresh job
+job_name:
+- tg.job.snapshot.role_fit_refresh
+
+purpose:
+- role-fit / promotion / successor 候補算出を更新する
+
+frequency:
+- nightly
+- and on approval / publish event trigger
+
+source:
+- tg_employee_profile
+- tg_employee_skill
+- tg_employee_certification
+- tg_role_requirement
+- tg_evaluation_sheet
+
+target:
+- tg_role_fit_snapshot
+
+## 3-6. analytics distribution refresh job
+job_name:
+- tg.job.analytics.distribution_refresh
+
+purpose:
+- 分布分析用集約更新
+
+frequency:
+- nightly
+- optionally on cycle publish
+
+outputs:
+- distribution materialized view or snapshot tables
+
+## 3-7. evaluator bias refresh job
+job_name:
+- tg.job.analytics.evaluator_bias_refresh
+
+purpose:
+- 評価者偏り分析を再集計する
+
+frequency:
+- nightly
+- and after publish batch
+
+## 3-8. growth recommendation refresh job
+job_name:
+- tg.job.recommendation.growth_refresh
+
+purpose:
+- gap / role requirement / recent evaluation をもとに推奨を更新する
+
+frequency:
+- on publish
+- nightly catch-up
+
+target:
+- tg_growth_recommendation
+
+## 3-9. training ROI refresh job
+job_name:
+- tg.job.analytics.training_roi_refresh
+
+purpose:
+- 研修投資対効果を更新する
+
+frequency:
+- monthly
+- on demand by HR
+
+target:
+- tg_training_roi_snapshot
+
+## 3-10. export generation job
+job_name:
+- tg.job.export.generate
+
+purpose:
+- export job を非同期生成する
+
+frequency:
+- event-driven
+
+inputs:
+- export type
+- filter snapshot
+- locale
+- reporting currency
+
+outputs:
+- file
+- status update
+- export completed / failed event
+
+## 3-11. stale review reminder job
+job_name:
+- tg.job.evaluation.review_reminder
+
+purpose:
+- review due を過ぎた対象へ reminder event を発行する
+
+frequency:
+- daily
+
+## 3-12. growth plan review due job
+job_name:
+- tg.job.growth_plan.review_due_scan
+
+purpose:
+- growth plan の next_review_due_at を見て review due event を発行する
+
+frequency:
+- daily
+
+# 4. snapshot rule
+
+## 4-1. evaluation snapshot
+trigger:
+- daily scheduled
+- evaluation publish event
+- cycle close event
+
+append rule:
+- update ではなく append-first
+- same employee + same cycle + same day の重複防止 key を持つ
+
+## 4-2. role-fit snapshot
+trigger:
+- nightly refresh
+- evaluation approved / published
+- major profile or requirement change
+
+append or replace:
+- latest reference table として replace acceptable
+- audit 必要なら history も保持
+
+## 4-3. ROI snapshot
+trigger:
+- monthly close
+- on demand rebuild
+
+# 5. retry / backoff rule
+
+## outbox / notification jobs
+- exponential backoff
+- max retry configurable
+- dead letter after threshold
+
+## aggregation jobs
+- fail fast and rerun allowed
+- partial success must be logged
+
+## export jobs
+- user-facing status required
+- failed job should expose stable error code
+
+# 6. job audit columns
+すべての job log / run log に以下を推奨する。
+
+- job_run_id
+- job_name
+- company_id
+- started_at
+- finished_at
+- status_code
+- processed_count
+- success_count
+- failed_count
+- last_error_code
+- last_error_message
+- audit_trace_id
+- created_at
+- created_by
+
+# 7. consistency check jobs
+
+## 7-1. evaluation consistency check
+checks:
+- published sheet without approval
+- approval without audit
+- score detail mismatch
+
+## 7-2. notification consistency check
+checks:
+- notification without source event
+- delivery without notification
+- repeated duplicate notification
+
+## 7-3. snapshot consistency check
+checks:
+- missing snapshot after publish
+- stale role-fit snapshot after requirement update
+
+# 8. event-driven vs scheduled split
+
+## event-driven
+- self review submitted
+- manager review submitted
+- approve / publish
+- export requested
+- ai assist draft generated
+
+## scheduled
+- expiry detection
+- stale review reminder
+- growth plan due scan
+- nightly snapshot refresh
+- monthly ROI refresh
+
+# 9. operational priority
+
+## phase A
+- outbox publish
+- notification deliver
+- certification expiry scan
+- evaluation snapshot daily
+- stale review reminder
+- growth plan review due scan
+
+## phase B
+- role-fit snapshot refresh
+- distribution refresh
+- evaluator bias refresh
+- growth recommendation refresh
+
+## phase C
+- training ROI refresh
+- export generate
+- consistency checks
+
+## phase D
+- advanced rebuild / repair jobs
+- backfill jobs for analytics history
+
+# 10. 結論
+TalentGrowth の batch / cron / snapshot job は、
+通知、期限検知、評価保存、候補抽出、分析更新を
+分離した job registry で固定する。
+
+中核原則は以下である。
+- request path で重い集計を完結させない
+- snapshot append-first
+- recommendation and analytics are async
+- consistency checks are first-class jobs
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1302_TALENT_GROWTH_BATCH_CRON_SNAPSHOT_JOB_DESIGN_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1303_TALENT_GROWTH_NOTIFICATION_DELIVERY_AND_RETRY_POLICY_FIXED.md -->
+# TALENT GROWTH NOTIFICATION DELIVERY AND RETRY POLICY FIXED
+
+status: draft-notification-retry-policy-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の通知配信、
+再送、
+失敗処理、
+優先度制御を固定するための資料である。
+
+# 1. 通知優先度
+priority_code:
+- CRITICAL
+- HIGH
+- NORMAL
+- LOW
+
+examples:
+- REVIEW_REQUEST -> HIGH
+- ACTION_REQUIRED -> HIGH
+- CERT_EXPIRY_ALERT -> HIGH or NORMAL by days_left
+- RESULT_READY -> NORMAL
+- EXPORT_READY -> LOW
+- EXPORT_FAILED -> HIGH
+
+# 2. channel priority
+default channel order:
+- IN_APP
+- PUSH
+- EMAIL
+- WEBHOOK_INTERNAL
+
+notes:
+- formal trace を要する場合のみ EMAIL を追加
+- sensitive content は notification 本文に書きすぎない
+- 詳細は deep link 先で権限制御する
+
+# 3. retry policy
+## IN_APP
+- no external retry concept
+- create failure only if DB write fails
+
+## PUSH
+- retry with backoff
+- recommended max retry: 5
+
+## EMAIL
+- retry with backoff
+- recommended max retry: 5
+
+## WEBHOOK_INTERNAL
+- retry with stricter timeout control
+- recommended max retry: 8
+
+# 4. retry backoff example
+attempt 1:
+- immediate
+
+attempt 2:
+- +1 minute
+
+attempt 3:
+- +5 minutes
+
+attempt 4:
+- +15 minutes
+
+attempt 5:
+- +60 minutes
+
+# 5. permanent failure examples
+- target employee inactive and no substitute delivery allowed
+- unsupported channel for target
+- malformed deep link target
+- payload template missing permanently
+
+# 6. template policy
+notification text is template-driven.
+
+recommended template fields:
+- title_key
+- body_key
+- locale_code
+- body_params_json
+
+notes:
+- event payload != user message
+- locale rendering happens near notification creation or delivery
+- sensitive detail should not be embedded into push summary
+
+# 7. quiet hours stance
+optional policy:
+- LOW priority push may be delayed in quiet hours
+- CRITICAL / HIGH may bypass if company policy allows
+- IN_APP is always available
+
+# 8. read/unread policy
+- unread_flag is per target user
+- delivery success != read
+- read action is user action or explicit mark-read API
+
+# 9. cancellation policy
+notification may be CANCELLED when:
+- source business state is no longer relevant
+- duplicate detected before delivery
+- target changed before send
+- cycle closed and stale reminder invalidated
+
+# 10. delivery observability
+track at least:
+- attempted_at
+- delivered_at
+- retry_count
+- provider_message_id
+- last_error_code
+- last_error_message
+- dedupe_key
+- audit_trace_id
+
+# 11. escalation policy
+recommend escalation when:
+- REVIEW_REQUEST overdue beyond threshold
+- repeated failed send for HIGH/CRITICAL event
+- certification expiry alert undelivered near expiry
+- export failure repeated for same requester
+
+# 12. 結論
+TalentGrowth の通知配信は、
+priority,
+channel,
+retry,
+failure,
+template
+を分けて制御する。
+
+中核原則は以下である。
+- in-app is baseline
+- push/email are derived channels
+- retry is controlled
+- notification detail is deep-link first
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1303_TALENT_GROWTH_NOTIFICATION_DELIVERY_AND_RETRY_POLICY_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1304_TALENT_GROWTH_CLIENT_SYNC_CONFLICT_AND_RECOVERY_POLICY_FIXED.md -->
+# TALENT GROWTH CLIENT SYNC CONFLICT AND RECOVERY POLICY FIXED
+
+status: draft-client-sync-conflict-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の client sync,
+conflict recovery,
+network failure recovery,
+draft rescue を固定するための資料である。
+
+# 1. 想定 failure categories
+- temporary offline
+- unstable mobile network
+- token expired during edit
+- server validation failure
+- lock_version conflict
+- state transition invalid due to stale screen
+- dependency unavailable
+- duplicate submit attempt
+
+# 2. safe recovery class
+
+## class A: local draft rescue
+対象:
+- self review draft
+- profile draft
+- academic draft
+- certification draft
+- skill draft
+- growth memo draft
+
+対応:
+- local persistence
+- recover banner on reopen
+- compare with server if available
+
+## class B: server retry possible
+対象:
+- draft save
+- notification read sync
+- non-critical progress update
+
+対応:
+- queued retry with backoff
+- explicit retry button
+
+## class C: manual recovery required
+対象:
+- self review final submit
+- manager review submit
+- send back
+- approve
+- publish
+- reopen
+- successor update
+
+対応:
+- user must reopen latest server state
+- no silent retry
+
+# 3. duplicate submit guard
+- submit endpoints send idempotency key
+- repeated tap within same intent must not create duplicate effect
+- UI disables submit button while pending
+- on timeout, client queries latest state before offering retry
+
+# 4. conflict detection fields
+minimum candidates:
+- lock_version
+- updated_at
+- evaluation_status_code
+- current_step_owner_role_code
+
+# 5. conflict UI rule
+conflict screen must show:
+- local unsynced summary
+- server latest summary
+- conflict reason
+- allowed actions
+
+allowed actions examples:
+- discard local
+- replace local draft with server
+- copy local text to clipboard-like staging
+- reopen form with latest server baseline
+
+# 6. token expiry during edit
+- preserve local draft
+- prompt re-authentication
+- resume after token refresh if possible
+- do not discard unsaved text
+
+# 7. validation failure recovery
+- keep draft intact
+- highlight exact fields
+- show stable error code
+- allow retry after correction
+
+# 8. dependency failure recovery
+examples:
+- MBO unavailable
+- file store unavailable
+- AI unavailable
+
+policy:
+- degrade gracefully where possible
+- core evaluation editing should continue if optional dependency fails
+- optional sections show partial unavailable state
+- hard failure only when essential submit dependency is broken
+
+# 9. app restart recovery
+on next launch:
+- restore unresolved local drafts
+- restore pending safe retry queue
+- clear expired volatile UI state
+- rerun stale-sensitive fetch on governance screens
+
+# 10. recovery audit stance
+- server-side retries and failures logged
+- conflict-causing submit failures logged where possible
+- client-local rescue does not overwrite server audit truth
+
+# 11. 結論
+TalentGrowth の sync / conflict / recovery policy は、
+draft rescue を強くしつつ、
+governance actions では自動化しすぎない方針で固定する。
+
+中核原則は以下である。
+- protect user input
+- protect server authority
+- never auto-finalize after offline uncertainty
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1304_TALENT_GROWTH_CLIENT_SYNC_CONFLICT_AND_RECOVERY_POLICY_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1305_TALENT_GROWTH_NOTIFICATION_MESSAGE_TEMPLATE_FIXED.md -->
+# TALENT GROWTH NOTIFICATION MESSAGE TEMPLATE FIXED
+
+status: draft-notification-template-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の通知メッセージについて、
+template key,
+param,
+priority,
+deep link,
+channel stance を固定するための資料である。
+
+前提:
+- 通知は event から生成される
+- user-facing text は template key から解決する
+- push は短く
+- in-app はやや詳細
+- 機微情報は本文に出しすぎない
+
+# 1. template naming rule
+format:
+- tg.notify.<notification_type>.<part>
+
+examples:
+- tg.notify.review_request.title
+- tg.notify.review_request.body
+- tg.notify.result_ready.title
+- tg.notify.result_ready.body
+
+# 2. common params
+- employee_name
+- target_employee_name
+- cycle_name
+- certification_name
+- due_date
+- days_left
+- plan_title
+- export_type_label
+
+# 3. template fixed set
+
+## 3-1. REVIEW_REQUEST
+notification_type_code:
+- REVIEW_REQUEST
+priority_code:
+- HIGH
+deep_link_type:
+- EVALUATION_SHEET
+title_key:
+- tg.notify.review_request.title
+body_key:
+- tg.notify.review_request.body
+
+recommended body params:
+- target_employee_name
+- cycle_name
+
+ja example:
+- title: レビュー依頼があります
+- body: {target_employee_name} さんの評価レビューが必要です（{cycle_name}）。
+
+## 3-2. ACTION_REQUIRED
+notification_type_code:
+- ACTION_REQUIRED
+priority_code:
+- HIGH
+deep_link_type:
+- EVALUATION_SHEET or GROWTH_PLAN
+title_key:
+- tg.notify.action_required.title
+body_key:
+- tg.notify.action_required.body
+
+ja example:
+- title: 対応が必要です
+- body: 差戻しまたは未対応事項があります。内容を確認してください。
+
+## 3-3. RESULT_READY
+notification_type_code:
+- RESULT_READY
+priority_code:
+- NORMAL
+deep_link_type:
+- EVALUATION_RESULT
+title_key:
+- tg.notify.result_ready.title
+body_key:
+- tg.notify.result_ready.body
+
+ja example:
+- title: 評価結果が公開されました
+- body: {cycle_name} の評価結果を確認できます。
+
+## 3-4. CERT_EXPIRY_ALERT
+notification_type_code:
+- CERT_EXPIRY_ALERT
+priority_code:
+- HIGH
+deep_link_type:
+- EMPLOYEE_CERTIFICATION
+title_key:
+- tg.notify.cert_expiry_alert.title
+body_key:
+- tg.notify.cert_expiry_alert.body
+
+recommended body params:
+- certification_name
+- days_left
+
+ja example:
+- title: 資格の期限が近づいています
+- body: {certification_name} の期限まで残り {days_left} 日です。
+
+## 3-5. GROWTH_REVIEW_DUE
+notification_type_code:
+- GROWTH_REVIEW_DUE
+priority_code:
+- NORMAL
+deep_link_type:
+- GROWTH_PLAN
+title_key:
+- tg.notify.growth_review_due.title
+body_key:
+- tg.notify.growth_review_due.body
+
+ja example:
+- title: 成長計画の見直し時期です
+- body: {plan_title} の見直し期限は {due_date} です。
+
+## 3-6. EXPORT_READY
+notification_type_code:
+- EXPORT_READY
+priority_code:
+- LOW
+deep_link_type:
+- EXPORT_JOB
+title_key:
+- tg.notify.export_ready.title
+body_key:
+- tg.notify.export_ready.body
+
+ja example:
+- title: エクスポートの準備が完了しました
+- body: {export_type_label} をダウンロードできます。
+
+## 3-7. EXPORT_FAILED
+notification_type_code:
+- EXPORT_FAILED
+priority_code:
+- HIGH
+deep_link_type:
+- EXPORT_JOB
+title_key:
+- tg.notify.export_failed.title
+body_key:
+- tg.notify.export_failed.body
+
+ja example:
+- title: エクスポートに失敗しました
+- body: {export_type_label} の出力に失敗しました。再実行してください。
+
+# 4. channel-specific shortening rule
+
+## IN_APP
+- title + body 完全表示可
+- deep link 必須
+- unread 管理あり
+
+## PUSH
+- title は短く
+- body は 40〜80字程度推奨
+- 機微詳細は含めすぎない
+- lock screen 表示前提で安全側に寄せる
+
+## EMAIL
+- formal trace が必要な時のみ
+- subject + short summary + system link
+- raw sensitive comment は本文に直書きしない
+
+# 5. localization rule
+- title_key / body_key は locale 切替対応
+- params は locale-aware formatting
+- date / currency / number は locale format
+- certification_name など snapshot label は requested locale 優先
+
+# 6. dedupe rule
+同一通知重複の抑制対象:
+- same notification_type_code
+- same target_employee_id
+- same deep_link_target_id
+- within dedupe window
+
+# 7. template safety rule
+本文に含めない推奨情報:
+- raw calibration note
+- full evaluation comment
+- sensitive risk note
+- detailed AI output
+- break-glass対象情報
+
+# 8. 結論
+TalentGrowth の notification message template は、
+type,
+title_key,
+body_key,
+params,
+deep_link
+を固定して管理する。
+
+中核原則は以下である。
+- event payload != user message
+- short and safe on push
+- detail in deep link target
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1305_TALENT_GROWTH_NOTIFICATION_MESSAGE_TEMPLATE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1306_TALENT_GROWTH_PHASE_A_OUTBOX_PUBLISHER_JOB_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A OUTBOX PUBLISHER JOB SKELETON FIXED
+
+status: draft-phase-a-outbox-publisher-job-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の outbox publisher job を
+最初に固定するための skeleton 資料である。
+
+# 1. job identity
+job_name:
+- tg.job.outbox.publish
+
+purpose:
+- tg_outbox_event の READY / PENDING を拾い、
+  notification creation or downstream publish へ渡す
+
+# 2. phase A scope
+phase A で扱うイベント:
+- tg.evaluation.sheet.self_review_submitted
+- tg.evaluation.sheet.manager_review_submitted
+- tg.evaluation.sheet.sent_back
+- tg.evaluation.sheet.published
+- tg.certification.item.expiring_soon
+- tg.growth_plan.plan.review_due
+
+# 3. state model
+input statuses:
+- PENDING
+- READY
+
+working statuses:
+- PUBLISHING
+
+terminal statuses:
+- PUBLISHED
+- FAILED
+- DEAD_LETTER
+
+# 4. publisher flow
+1. READY / PENDING rows select
+2. status -> PUBLISHING
+3. event_name dispatch
+4. notification creation if needed
+5. consumed_by_json update
+6. status -> PUBLISHED
+7. on error -> retry_count++ and FAILED or DEAD_LETTER
+
+# 5. select query skeleton
+~~~sql
+select
+  outbox_event_id,
+  company_id,
+  event_name,
+  event_domain,
+  entity_type,
+  entity_id,
+  payload_json,
+  retry_count,
+  audit_trace_id
+from tg_outbox_event
+where status_code in ('PENDING', 'READY')
+  and available_at <= now()
+order by occurred_at asc
+limit $1;
+~~~
+
+# 6. publish lock query skeleton
+~~~sql
+update tg_outbox_event
+set
+  status_code = 'PUBLISHING',
+  last_retry_at = now()
+where outbox_event_id = $1
+  and status_code in ('PENDING', 'READY')
+returning outbox_event_id;
+~~~
+
+# 7. success update query skeleton
+~~~sql
+update tg_outbox_event
+set
+  status_code = 'PUBLISHED',
+  published_at = now(),
+  consumed_by_json = coalesce(consumed_by_json, '[]'::jsonb) || to_jsonb($2::text)
+where outbox_event_id = $1;
+~~~
+
+# 8. failure update query skeleton
+~~~sql
+update tg_outbox_event
+set
+  retry_count = retry_count + 1,
+  last_error_code = $2,
+  last_error_message = $3,
+  status_code = case
+    when retry_count + 1 >= $4 then 'DEAD_LETTER'
+    else 'FAILED'
+  end,
+  available_at = case
+    when retry_count + 1 >= $4 then available_at
+    else now() + ($5 || ' seconds')::interval
+  end
+where outbox_event_id = $1;
+~~~
+
+# 9. job function skeleton
+~~~typescript
+export async function publishOutboxBatch(input: {
+  batchSize: number;
+  consumerName: string;
+}) {
+  // 1. select ready rows
+  // 2. for each row:
+  //    a. lock row by moving to PUBLISHING
+  //    b. dispatch by event_name
+  //    c. create notification where needed
+  //    d. mark published
+  //    e. on error mark failed / dead letter
+  // 3. return summary
+  return {
+    processed_count: 0,
+    published_count: 0,
+    failed_count: 0,
+    dead_letter_count: 0
+  };
+}
+~~~
+
+# 10. event dispatch skeleton
+~~~typescript
+export async function dispatchOutboxEvent(event: {
+  event_name: string;
+  payload_json: unknown;
+}) {
+  switch (event.event_name) {
+    case "tg.evaluation.sheet.self_review_submitted":
+      // create manager review request notification
+      return { handled: true };
+
+    case "tg.evaluation.sheet.sent_back":
+      // create action required notification
+      return { handled: true };
+
+    case "tg.certification.item.expiring_soon":
+      // create certification alert notification
+      return { handled: true };
+
+    default:
+      return { handled: false, reason: "unsupported_event" };
+  }
+}
+~~~
+
+# 11. retry policy baseline
+recommended baseline:
+- max retry: 5
+- backoff seconds: 60, 300, 900, 3600
+- DEAD_LETTER after max retry reached
+
+# 12. observability baseline
+job summary should return:
+- processed_count
+- published_count
+- failed_count
+- dead_letter_count
+- last_error_code summary optional
+
+job log fields recommended:
+- job_run_id
+- job_name
+- started_at
+- finished_at
+- status_code
+- processed_count
+- success_count
+- failed_count
+
+# 13. phase A guardrails
+- no direct end-user notification send outside outbox job
+- no status move to PUBLISHED without downstream handling step
+- notification duplicate prevention must consider dedupe_key
+- dead letter must preserve audit_trace_id
+
+# 14. conclusion
+phase A outbox publisher job は、
+READY/PENDING -> PUBLISHING -> PUBLISHED/FAILED/DEAD_LETTER
+の明示状態機械で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1306_TALENT_GROWTH_PHASE_A_OUTBOX_PUBLISHER_JOB_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1307_TALENT_GROWTH_PHASE_A_AUDIT_OUTBOX_TRANSACTION_WRAPPER_FIXED.md -->
+# TALENT GROWTH PHASE A AUDIT OUTBOX TRANSACTION WRAPPER FIXED
+
+status: draft-phase-a-audit-outbox-transaction-wrapper-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の score/state change write に対して、
+audit append と outbox append を同一 transaction で扱う wrapper を固定するための資料である。
+
+# 1. wrapper goal
+以下を1 transactionで扱う。
+- state / score / comment write
+- audit append
+- outbox append
+- commit / rollback
+
+# 2. wrapper use cases
+- self review submit
+- manager review submit
+- send back
+- role requirement update with governance significance
+- growth progress update if eventized
+- future approve / publish path baseline
+
+# 3. wrapper rule
+- write success without audit append is not allowed
+- eventized mutation without outbox append is not allowed
+- partial success is not allowed
+- audit_trace_id is generated once and propagated to all writes
+
+# 4. wrapper skeleton
+~~~typescript
+export async function withAuditOutboxTransaction<T>(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  actorRoleCode: string;
+  actionType: string;
+  run: (ctx: {
+    auditTraceId: string;
+    appendAudit: (row: {
+      evaluationSheetId: string;
+      changedFieldName: string;
+      oldValueText?: string | null;
+      newValueText?: string | null;
+      changeReasonText?: string | null;
+    }) => Promise<void>;
+    appendOutbox: (event: {
+      eventName: string;
+      eventDomain: string;
+      entityType: string;
+      entityId: string;
+      payloadJson: unknown;
+    }) => Promise<void>;
+  }) => Promise<T>;
+}): Promise<T> {
+  const auditTraceId = "atrace_placeholder";
+
+  // begin transaction
+  // provide appendAudit / appendOutbox bound to transaction
+  // run body
+  // commit or rollback
+  return input.run({
+    auditTraceId,
+    appendAudit: async () => {},
+    appendOutbox: async () => {}
+  });
+}
+~~~
+
+# 5. self review submit wrapper example
+~~~typescript
+const result = await withAuditOutboxTransaction({
+  companyId,
+  actorEmployeeId,
+  actorRoleCode: "EMPLOYEE",
+  actionType: "SELF_REVIEW_SUBMIT",
+  run: async ({ auditTraceId, appendAudit, appendOutbox }) => {
+    // 1. update sheet state
+    // 2. append audit
+    await appendAudit({
+      evaluationSheetId,
+      changedFieldName: "evaluation_status_code",
+      oldValueText: "SELF_REVIEW_DRAFT",
+      newValueText: "SELF_REVIEW_SUBMITTED"
+    });
+
+    // 3. append outbox
+    await appendOutbox({
+      eventName: "tg.evaluation.sheet.self_review_submitted",
+      eventDomain: "evaluation",
+      entityType: "EVALUATION_SHEET",
+      entityId: evaluationSheetId,
+      payloadJson: {
+        employee_id: actorEmployeeId,
+        audit_trace_id: auditTraceId
+      }
+    });
+
+    return {
+      evaluation_sheet_id: evaluationSheetId,
+      evaluation_status_code: "SELF_REVIEW_SUBMITTED",
+      audit_trace_id: auditTraceId
+    };
+  }
+});
+~~~
+
+# 6. repository wrapper support
+repositories should expose transaction-aware variants:
+- insertEvaluationAuditTx(...)
+- insertOutboxEventTx(...)
+- updateEvaluationSheetStatusTx(...)
+- updateGrowthActionProgressTx(...)
+
+# 7. SQL baseline
+audit insert:
+~~~sql
+insert into tg_evaluation_change_audit (
+  evaluation_change_audit_id,
+  company_id,
+  evaluation_sheet_id,
+  changed_by_employee_id,
+  changed_by_role_code,
+  action_type,
+  changed_field_name,
+  old_value_text,
+  new_value_text,
+  change_reason_text,
+  changed_at,
+  audit_trace_id,
+  created_by
+) values (
+  $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,now(),$11,$12
+);
+~~~
+
+outbox insert:
+~~~sql
+insert into tg_outbox_event (
+  outbox_event_id,
+  company_id,
+  event_name,
+  event_domain,
+  entity_type,
+  entity_id,
+  payload_json,
+  status_code,
+  occurred_at,
+  audit_trace_id,
+  created_by
+) values (
+  $1,$2,$3,$4,$5,$6,$7,'READY',now(),$8,$9
+);
+~~~
+
+# 8. wrapper guardrails
+- no wrapper for pure read
+- no event append for non-eventized write
+- if action changes evaluation_state, wrapper use is mandatory
+- if action changes final score, wrapper use is mandatory
+
+# 9. conclusion
+phase A write core は、
+audit + outbox を transaction wrapper で束ねる方式で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/10.spec/13.operations/1307_TALENT_GROWTH_PHASE_A_AUDIT_OUTBOX_TRANSACTION_WRAPPER_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200000_TALENT_GROWTH_IMPLEMENTATION_INDEX.md -->
+# ============================================================
+# TALENT GROWTH IMPLEMENTATION INDEX
+# ============================================================
+
+files:
+
+- 120300_TALENTGROWTH_GROWTH_CONTROL_IMPLEMENTATION_GUIDE.md
+
+- 120310_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+- 120320_TALENTGROWTH_PHASE_A_STUB_FILE_PLAN.md
+
+- 120330_TALENTGROWTH_PHASE_A_MODULE_TASK_BREAKDOWN.md
+
+- 120340_TALENTGROWTH_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+- 120350_TALENTGROWTH_PHASE_A_SLICE_COMMAND_PACKS.md
+
+- 120360_TALENTGROWTH_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+
+- 120370_TALENTGROWTH_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+
+- 120380_TALENTGROWTH_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200000_TALENT_GROWTH_IMPLEMENTATION_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200003_TALENT_GROWTH_IMPLEMENTATION_PHASE_PACKAGE_SPLIT_FIXED.md -->
+# TALENT GROWTH IMPLEMENTATION PHASE PACKAGE SPLIT FIXED
+
+status: draft-package-split-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の実装時に、
+どの画面 / API / テーブル / ロジックを
+どの phase package で束ねるかを固定するための資料である。
+
+# 1. split 原則
+- phaseごとに user value が成立する束で切る
+- 画面だけ先行、APIだけ先行にしない
+- screen + endpoint + table + policy を最小束でそろえる
+- 校正 / 監査は後回しにしない
+- AI補助は最後段に寄せる
+
+# 2. phase A core package
+package_name:
+- tg-core-evaluation-foundation
+
+screens:
+- employee dashboard
+- certification management
+- skill inventory
+- self review
+- my evaluation result
+- gap analysis
+- growth plan
+- manager dashboard
+- team member list
+- review input
+- one-on-one support
+- growth plan review
+- HR dashboard
+- cycle control
+- role requirement management
+- calibration board
+- audit log viewer
+
+endpoints:
+- /me
+- /home
+- /notifications
+- /employee/dashboard
+- /employee-certifications
+- /employee-skills
+- /evaluation-cycles
+- /evaluation-sheets/{id}
+- /self-review/save
+- /self-review/submit
+- /manager/review-queue
+- /manager-review/save
+- /manager-review/submit
+- /send-back
+- /role-requirements
+- /growth-plans
+- /growth-plans/{id}/progress
+- /audit-logs/search
+
+tables:
+- tg_employee_profile
+- tg_employee_certification
+- tg_employee_certification_renewal
+- tg_skill_master
+- tg_employee_skill
+- tg_employee_skill_evidence
+- tg_role_requirement
+- tg_role_requirement_skill
+- tg_role_requirement_certification
+- tg_evaluation_cycle
+- tg_evaluation_sheet
+- tg_evaluation_score_detail
+- tg_evaluation_comment
+- tg_evaluation_evidence
+- tg_evaluation_change_audit
+- tg_evaluation_approval
+- tg_calibration_session
+- tg_calibration_log
+- tg_growth_plan
+- tg_growth_action
+- tg_growth_recommendation
+
+policy:
+- exact payload fixed
+- approval state machine fixed
+- RLS fixed
+- audit append mandatory
+
+# 3. phase B profile / evidence / analytics-basic package
+package_name:
+- tg-profile-and-analytics-basic
+
+screens:
+- my profile
+- academic history
+- career history
+- achievement input
+- recommendation center
+- mbo linked view
+- employee comparison
+- team skill heatmap
+- skill dictionary management
+- certification master management
+- evaluator bias analysis
+- distribution analytics
+
+endpoints:
+- academics endpoints
+- career-histories endpoints
+- achievements endpoints
+- certification-masters endpoints
+- skill-masters endpoints
+- hr/review-queue
+- calibration-sessions
+- calibration/save
+- approve
+- publish
+- analytics/distribution
+- analytics/skill-heatmap
+- analytics/evaluator-bias
+- mbo/linked-goals
+
+tables:
+- tg_employee_academic_history
+- tg_employee_career_history
+- tg_employee_achievement
+- tg_job_family_master
+- tg_job_role_master
+- tg_grade_master
+- tg_certification_master
+- tg_evaluation_snapshot
+
+# 4. phase C talent-strategy package
+package_name:
+- tg-talent-strategy-and-investment
+
+screens:
+- role-fit candidate view
+- career simulation
+- 9box / HR portfolio
+- successor management
+- training / investment analysis
+- executive dashboard
+- org talent summary
+- successor pipeline
+- investment and growth view
+- admin settings core
+
+endpoints:
+- role-fit/candidates
+- promotion-candidates
+- successor-candidates
+- career-simulations
+- analytics/9box
+- analytics/training-roi
+- analytics/org-talent-summary
+- exports/evaluations
+- exports/analytics
+- exports/{export_job_id}
+- admin/users
+- admin/localization
+- admin/currency-settings
+- admin/integrations
+
+tables:
+- tg_role_fit_snapshot
+- tg_successor_candidate
+- tg_training_roi_snapshot
+- export job backing tables / logs
+- admin setting backing tables where needed
+
+# 5. phase D AI and advanced governance package
+package_name:
+- tg-ai-assist-and-advanced-governance
+
+screens:
+- AI assist settings
+- advanced export controls
+- advanced bias assist surfaces
+
+endpoints:
+- ai-assist/review-comment-draft
+- ai-assist/growth-suggestion-draft
+- ai-assist/bias-check
+- ai-assist/references
+- reopen
+- advanced export variants
+
+tables:
+- tg_ai_assist_reference_log
+- ai draft backing tables if introduced
+- advanced audit / export support tables
+
+# 6. implementation layer split suggestion
+
+## frontend layer
+- employee module
+- manager module
+- HR module
+- executive module
+- admin module
+
+## api layer
+- dashboard controller
+- employee profile controller
+- certification controller
+- skill controller
+- evaluation controller
+- growth controller
+- analytics controller
+- audit controller
+- admin controller
+- ai assist controller
+
+## domain/service layer
+- employee service
+- certification service
+- skill service
+- requirement service
+- evaluation engine service
+- approval / calibration service
+- growth planning service
+- candidate extraction service
+- analytics service
+- export service
+- ai assist orchestrator
+
+## persistence layer
+- profile repository
+- certification repository
+- skill repository
+- evaluation repository
+- growth repository
+- analytics snapshot repository
+- audit repository
+- admin settings repository
+
+# 7. deployability rule
+- each phase package must be deployable without unfinished hidden dependency on later phase
+- later phase may depend on earlier phase, not reverse
+- phase A alone must already support end-to-end evaluation basic flow
+
+# 8. testing split
+
+## phase A tests
+- self review flow
+- manager review flow
+- send back flow
+- approve flow
+- growth plan basic flow
+- audit append flow
+
+## phase B tests
+- academics / career / achievements CRUD
+- skill evidence verification
+- distribution analytics consistency
+- evaluator bias aggregation consistency
+
+## phase C tests
+- role-fit candidate calculation
+- successor candidate visibility
+- training ROI calculation
+- export permission and format
+
+## phase D tests
+- AI assist logging
+- AI assist permission boundary
+- reopen governance
+- advanced export governance
+
+# 9. 結論
+TalentGrowth の implementation package split は、
+phase A で評価を成立させ、
+phase B で証拠と分析を厚くし、
+phase C で戦略人材機能を広げ、
+phase D でAI補助と高度統制を加える構成で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200003_TALENT_GROWTH_IMPLEMENTATION_PHASE_PACKAGE_SPLIT_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200004_TALENT_GROWTH_FRONTEND_STATE_CACHE_OFFLINE_POLICY_FIXED.md -->
+# TALENT GROWTH FRONTEND STATE CACHE OFFLINE POLICY FIXED
+
+status: draft-frontend-state-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の frontend state,
+cache,
+offline,
+sync,
+optimistic update の方針を固定するための資料である。
+
+前提:
+- iPhone / Android / PC / tablet 対応
+- employee flow は mobile 比重が高い
+- manager / HR / executive は online consistency を強く要求する
+- 評価確定や校正は機微性が高く、offline first を乱用しない
+
+# 1. 基本原則
+- source of truth is server
+- local state is UI convenience
+- cache is read optimization, not authority
+- offline edit is selective
+- approval / calibration / publish は online required
+- audit-impacting write は server-confirmed only
+- optimistic UI は低リスク更新だけに限定する
+
+# 2. state layer 分割
+
+## 2-1. session state
+内容:
+- auth session
+- current user
+- role set
+- company scope
+- locale
+- reporting currency preference
+- current device type
+保存:
+- secure persistent storage
+更新頻度:
+- low
+
+## 2-2. navigation state
+内容:
+- current route
+- selected filters
+- current tab
+- selected employee
+- selected evaluation sheet
+保存:
+- volatile + optional route query
+更新頻度:
+- high
+
+## 2-3. server query cache
+内容:
+- dashboard responses
+- list responses
+- detail responses
+- analytics responses
+保存:
+- memory first
+- optional disk cache for mobile
+更新頻度:
+- medium to high
+
+## 2-4. local draft state
+内容:
+- self review draft
+- profile edit draft
+- academic edit draft
+- certification add/update draft
+- skill edit draft
+- growth progress note draft
+保存:
+- local persistent storage allowed
+更新頻度:
+- high
+
+## 2-5. ephemeral UI state
+内容:
+- dialog open/close
+- loading spinner
+- submit pending
+- toast message
+- inline validation result
+保存:
+- memory only
+
+# 3. cache category rule
+
+## 3-1. short-lived cache
+対象:
+- notifications
+- home
+- employee dashboard
+TTL:
+- 1 to 5 minutes
+
+## 3-2. medium-lived cache
+対象:
+- employee profile
+- academics
+- certifications
+- skills
+- growth plans
+TTL:
+- 5 to 15 minutes
+
+## 3-3. strict no-stale or near-no-stale
+対象:
+- evaluation sheet during active editing
+- manager review input
+- calibration board
+- approval status
+- audit log viewer
+TTL:
+- fetch on open / explicit refresh
+notes:
+- stale cache reuseを避ける
+
+## 3-4. analytics cache
+対象:
+- distribution analytics
+- 9box
+- training ROI
+TTL:
+- 15 to 60 minutes
+notes:
+- generated_at を画面表示する
+
+# 4. offline policy by function
+
+## 4-1. offline allowed
+- self review draft local save
+- profile draft local save
+- academic draft local save
+- certification draft local save
+- skill draft local save
+- growth progress memo draft
+- notification read queue local pending allowed
+
+## 4-2. offline limited
+- employee dashboard cached read
+- profile cached read
+- certification cached read
+- growth plan cached read
+
+## 4-3. offline not allowed
+- self review final submit
+- manager review submit
+- send back
+- calibration save
+- approve
+- publish
+- reopen
+- audit export
+- successor update
+- admin setting change
+
+# 5. device별 stance
+
+## smartphone
+- draft persistence strong
+- cached read useful
+- background sync lightweight
+- network recovery auto retry for draft sync
+
+## tablet
+- manager review cache moderate
+- one-on-one support data prefetch useful
+- approval actions still online required
+
+## PC
+- authoritative read prioritized
+- heavy analytics cached but explicit refresh visible
+- admin / HR actions always online
+
+# 6. draft persistence policy
+
+## draft key concept
+local draft key:
+- company_id
+- employee_id
+- screen_code
+- entity_id or temp_key
+
+examples:
+- comp_01:emp_01:TG-EMP-008:esheet_01
+- comp_01:emp_01:TG-EMP-004:new-cert-001
+
+## draft metadata
+- draft_key
+- draft_version
+- last_local_saved_at
+- last_server_saved_at
+- dirty_flag
+- sync_status_code
+
+sync_status_code:
+- LOCAL_ONLY
+- SAVE_PENDING
+- SYNCED
+- SYNC_FAILED
+- CONFLICT
+
+# 7. sync policy
+
+## 7-1. local save
+- immediate local save for editable forms
+- debounce allowed for frequent typing
+- local save must not require network
+
+## 7-2. server save
+- explicit save button for high-value forms
+- optional background save for low-risk drafts
+- final submit always explicit
+
+## 7-3. reconnect sync
+- only draft-class entities auto-sync candidate
+- approval-class entities never auto-submit
+- conflict requires user-visible resolution
+
+# 8. optimistic update policy
+
+## allowed optimistic update
+- notification read/unread
+- local draft saved marker
+- growth action progress percent display before confirmation, if clearly pending
+- filter / sort / selection UI
+
+## not allowed optimistic finalization
+- evaluation final score
+- review submit result
+- approval / publish status
+- calibration result
+- successor status
+- export completed state
+
+# 9. conflict policy
+
+## likely conflict cases
+- same evaluation sheet edited on two devices
+- manager and HR sequential updates around state boundary
+- reopened sheet while stale client still editing
+- certification renewed on another device
+
+## resolution rule
+- server version wins as base truth
+- client compares lock_version / updated_at
+- conflicting local draft becomes CONFLICT
+- user sees:
+  - server latest summary
+  - local unsynced summary
+  - merge or discard options where safe
+
+## no-merge zones
+- approval actions
+- calibration actions
+- publish / reopen actions
+- audit sensitive fields
+
+# 10. refresh policy
+
+## auto refresh
+- notifications
+- manager review queue
+- HR review queue
+- dashboard counters
+
+## manual refresh prominent
+- calibration board
+- audit log viewer
+- distribution analytics
+- 9box
+- investment analysis
+
+## refetch on focus
+- evaluation sheet detail
+- manager review input
+- growth plan detail during collaboration
+
+# 11. preload / prefetch policy
+
+## employee flow
+prefetch candidates:
+- dashboard -> self review summary
+- dashboard -> expiring certifications
+- dashboard -> current growth plan
+
+## manager flow
+prefetch candidates:
+- review queue -> first evaluation sheet detail
+- team member list -> member summary cards
+- one-on-one -> linked growth plan
+
+## HR flow
+prefetch candidates:
+- HR dashboard -> review queue counts
+- calibration board -> target evaluation sheet summary
+- distribution analytics -> top filters baseline set
+
+# 12. cache invalidation rules
+
+## invalidate on self review submit
+invalidate:
+- employee dashboard
+- evaluation sheet detail
+- manager review queue
+- notifications
+
+## invalidate on manager review submit
+invalidate:
+- manager dashboard
+- HR review queue
+- evaluation sheet detail
+- notifications
+
+## invalidate on approve / publish
+invalidate:
+- employee dashboard
+- my evaluation result
+- growth recommendations
+- role-fit candidates
+- snapshots dependent views
+
+## invalidate on certification renewal
+invalidate:
+- certification list
+- expiring certification list
+- employee dashboard
+- qualification-related alerts
+
+## invalidate on growth progress update
+invalidate:
+- growth plan detail
+- employee dashboard
+- manager dashboard summary
+
+# 13. loading / empty / error states
+
+## loading
+- skeleton preferred for dashboard and lists
+- blocking spinner only for submit / approve / publish
+
+## empty
+- must distinguish "no data yet" from "filtered to zero"
+- offer next action when meaningful
+
+## error
+- inline retry for read failures
+- modal or banner for write failures
+- draft preservation on write failure mandatory where possible
+
+# 14. local storage rule
+persistent local storage allowed for:
+- session essentials
+- safe drafts
+- filter preferences
+- locale / currency preference
+
+persistent local storage not allowed for:
+- full audit export files by default
+- highly sensitive raw comments cache beyond active session
+- break-glass data
+- privileged executive raw datasets
+
+# 15. security stance for cache
+- secure storage for tokens and user identity
+- redact sensitive comment preview in lock screen push
+- clear sensitive draft cache on logout
+- company switch clears incompatible cache
+- role downgrade forces cache purge for restricted data
+
+# 16. recommended frontend modules
+- session-store
+- route-state-store
+- query-cache-layer
+- local-draft-store
+- sync-orchestrator
+- conflict-resolver
+- notification-store
+- analytics-cache-layer
+
+# 17. phase rollout
+
+## phase A
+- session state
+- route state
+- query cache baseline
+- self review local draft
+- certification / skill draft persistence
+- cache invalidation core
+
+## phase B
+- reconnect sync for safe drafts
+- conflict handling baseline
+- team / HR queue refresh tuning
+- analytics cache tuning
+
+## phase C
+- tablet optimized prefetch
+- executive heavy analytics cache
+- export status polling optimization
+
+## phase D
+- advanced offline heuristics
+- intelligent prefetch
+- adaptive cache TTL
+
+# 18. 結論
+TalentGrowth の frontend state / cache / offline policy は、
+read optimization と authority を分離し、
+draft-friendly だが approval-safe な構成で固定する。
+
+中核原則は以下である。
+- server truth
+- selective offline
+- no offline finalization
+- visible sync status
+- explicit conflict handling
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200004_TALENT_GROWTH_FRONTEND_STATE_CACHE_OFFLINE_POLICY_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200005_TALENT_GROWTH_IMPLEMENTATION_TASK_BREAKDOWN_FIXED.md -->
+# TALENT GROWTH IMPLEMENTATION TASK BREAKDOWN FIXED
+
+status: draft-implementation-task-breakdown-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の実装を
+task 単位まで分解し、
+依存順と完了条件を固定するための資料である。
+
+前提:
+- phase package split fixed に従う
+- screen / API / DB / RLS / batch / frontend state を横断で束ねる
+- 共通部品は本資料の対象外
+- additive only
+- task は実装、検証、結線、運用準備まで含む
+
+# 1. task設計原則
+- task は user value 単位で束ねる
+- screen only task を作らない
+- API only task を作らない
+- DB + API + UI + validation + audit を最小束にする
+- approval / calibration / audit を後回しにしない
+- phase A 単体で end-to-end が成立することを必須とする
+
+# 2. phase A task breakdown
+
+## A-001 基礎認証後コンテキスト取得
+scope:
+- GET /api/v1/me
+- GET /api/v1/home
+- session state 基盤
+- role-based home navigation
+done_when:
+- ログイン後に role / company / locale / currency が取得できる
+- ホーム遷移が role-based で固定される
+
+## A-002 employee dashboard 基盤
+scope:
+- employee dashboard read API
+- dashboard query cache
+- score card / alert / action block 表示
+- notification summary 連携
+done_when:
+- employee dashboard が current_role_fit / target_role_fit / growth_potential / alert を表示できる
+
+## A-003 certification management MVP
+scope:
+- tg_employee_certification
+- tg_employee_certification_renewal
+- certification list API
+- certification add/update
+- renewal record API
+- expiry status 表示
+done_when:
+- 資格登録、更新記録、期限表示、期限切れ警告が成立する
+
+## A-004 skill inventory MVP
+scope:
+- tg_skill_master
+- tg_employee_skill
+- tg_employee_skill_evidence
+- skill list API
+- skill add/update
+- evidence add
+done_when:
+- スキル登録、熟練度更新、根拠登録ができる
+
+## A-005 self review draft and submit
+scope:
+- evaluation_sheet read
+- self-review/save
+- self-review/submit
+- local draft persistence
+- sync state 표시
+done_when:
+- 自己評価の下書き保存と提出ができる
+- offline draft rescue が成立する
+- final submit は online only で制御される
+
+## A-006 manager review queue and review input
+scope:
+- manager dashboard
+- review queue
+- manager-review/save
+- manager-review/submit
+- send-back
+- lock_version conflict handling
+done_when:
+- 上長が配下レビューを保存・提出・差戻しできる
+
+## A-007 role requirement management MVP
+scope:
+- tg_role_requirement
+- tg_role_requirement_skill
+- tg_role_requirement_certification
+- role requirement list/create/update/clone
+- diff view baseline
+done_when:
+- HR が職種別要件を登録・改版できる
+
+## A-008 growth plan MVP
+scope:
+- tg_growth_plan
+- tg_growth_action
+- tg_growth_recommendation
+- growth plan create/update/progress
+- employee / manager growth screens
+done_when:
+- 計画作成、進捗更新、画面反映が成立する
+
+## A-009 evaluation state machine and approval baseline
+scope:
+- evaluation_status_code transition enforcement
+- send-back rule
+- approve baseline
+- published / reopened gate baseline
+done_when:
+- invalid transition が防止される
+- approval path が API で固定される
+
+## A-010 audit append baseline
+scope:
+- tg_evaluation_change_audit
+- tg_evaluation_approval
+- audit search API baseline
+- audit_trace_id propagation baseline
+done_when:
+- 主要 write で監査追跡が取れる
+- audit search で主要変更を追える
+
+## A-011 calibration board baseline
+scope:
+- tg_calibration_session
+- tg_calibration_log
+- calibration save
+- calibration board minimum UI
+done_when:
+- HR が校正セッション作成・補正保存できる
+
+## A-012 RLS / access baseline
+scope:
+- employee_self / manager / HR / executive / admin role policy
+- company scope
+- manager team scope
+- state-aware write guard
+done_when:
+- unauthorized read/write が防止される
+- phase A endpoint 群が policy 下で成立する
+
+## A-013 outbox / notification baseline
+scope:
+- tg_outbox_event
+- tg_notification
+- tg_notification_delivery baseline
+- review request / send back / result ready / cert expiry alert
+done_when:
+- 主要イベントで in-app 通知が生成される
+
+## A-014 frontend cache / sync baseline
+scope:
+- query cache baseline
+- self review local draft
+- certification / skill local draft
+- cache invalidation core
+done_when:
+- 再表示で不整合が起きにくい
+- draft rescue が動く
+
+# 3. phase B task breakdown
+
+## B-001 profile extended editing
+scope:
+- my profile edit fields
+- academics CRUD
+- career histories CRUD
+- achievements CRUD
+done_when:
+- 本人とHRがプロファイル詳細を扱える
+
+## B-002 skill evidence verification
+scope:
+- evidence verify API
+- evidence verification UI
+- verified flag / verified_by / verified_at
+done_when:
+- HR または指定権限者が根拠検証できる
+
+## B-003 HR review queue
+scope:
+- HR review queue API
+- HR dashboard queue summary
+- HR review save baseline
+done_when:
+- HR が review 対象を一覧と個票で追える
+
+## B-004 distribution analytics
+scope:
+- evaluation snapshot jobs
+- analytics/distribution
+- analytics/evaluator-bias
+- distribution UI
+done_when:
+- 分布と偏り分析が表示できる
+
+## B-005 team heatmap and comparison
+scope:
+- analytics/skill-heatmap
+- employee comparison UI
+- manager dashboard summary linkage
+done_when:
+- チームのスキル偏在と比較表示ができる
+
+## B-006 certification master / skill master maintenance
+scope:
+- certification masters CRUD
+- skill masters CRUD
+- admin/HR maintenance view
+done_when:
+- マスタ整備を画面経由で運用できる
+
+## B-007 MBO linkage baseline
+scope:
+- mbo/linked-goals
+- mbo refresh
+- mbo linked view UI
+done_when:
+- 目標連携の参照ができる
+- optional dependency failure 時の degrade が成立する
+
+# 4. phase C task breakdown
+
+## C-001 role-fit candidate extraction
+scope:
+- tg_role_fit_snapshot
+- role-fit candidate API
+- manager / HR role-fit UI
+done_when:
+- 配置候補 / 昇格候補の基礎抽出ができる
+
+## C-002 successor management
+scope:
+- tg_successor_candidate
+- successor API
+- successor management UI
+done_when:
+- critical role ごとの候補登録・閲覧ができる
+
+## C-003 9box / HR portfolio
+scope:
+- analytics/9box
+- 9box UI
+- summary and drilldown
+done_when:
+- HR と executive が 9box 表示を使える
+
+## C-004 training ROI analytics
+scope:
+- tg_training_roi_snapshot
+- analytics/training-roi
+- investment and growth view
+done_when:
+- 投資対効果の基礎分析ができる
+
+## C-005 executive dashboard and org summary
+scope:
+- executive dashboard
+- analytics/org-talent-summary
+- successor / ROI preview
+done_when:
+- 経営向け要約画面が成立する
+
+## C-006 export async jobs
+scope:
+- export request API
+- export job status API
+- CSV/XLSX/PDF baseline generation
+- export notifications
+done_when:
+- export job を非同期実行できる
+- status と file 参照が成立する
+
+## C-007 admin setting surfaces
+scope:
+- admin users/roles
+- localization settings
+- currency settings
+- integration settings
+done_when:
+- admin が運用設定を変更できる
+
+# 5. phase D task breakdown
+
+## D-001 AI assist draft generation
+scope:
+- ai-assist/review-comment-draft
+- ai-assist/growth-suggestion-draft
+- reference logging
+done_when:
+- manager / HR が AI 下書きを使える
+- audit trail が残る
+
+## D-002 AI bias check
+scope:
+- ai-assist/bias-check
+- calibration warning UI linkage
+done_when:
+- HR が補助的偏り警告を参照できる
+
+## D-003 advanced governance
+scope:
+- reopen advanced governance
+- break-glass support integration
+- sensitive access audit integration
+done_when:
+- 例外アクセス統制が運用導線とつながる
+
+## D-004 advanced analytics refinement
+scope:
+- analytics tuning
+- cache tuning
+- backfill / rebuild jobs
+done_when:
+- 大規模運用でも応答性と整合性が保たれる
+
+# 6. cross-cutting task bundles
+
+## X-001 validation and error standardization
+scope:
+- all phase endpoints
+done_when:
+- error code / field path / status code が統一される
+
+## X-002 logging and observability
+scope:
+- API log
+- job log
+- delivery log
+- audit trace propagation
+done_when:
+- request_id / audit_trace_id で追跡できる
+
+## X-003 locale and currency baseline
+scope:
+- locale-aware labels
+- reporting currency display
+- export locale/currency
+done_when:
+- 多言語 / 多通貨の主要画面が成立する
+
+## X-004 security hardening
+scope:
+- token handling
+- cache purge
+- sensitive preview suppression
+- role downgrade purge
+done_when:
+- frontend / API の基本保護が成立する
+
+# 7. dependency ordering
+- A-001 before all UI tasks
+- A-007 before scoring-sensitive review tasks
+- A-009 before publish / reopen / calibration deepening
+- A-010 before audit viewer completion
+- A-013 before notification-dependent UX
+- B-004 before executive analytics
+- C-001 before C-002
+- C-004 before executive investment summary
+- D-001 before D-002
+
+# 8. 完了判定の原則
+task 完了には以下を要求する。
+- DB change 完了
+- API 完了
+- UI 完了
+- validation 完了
+- audit / log 完了
+- happy path test 完了
+- representative failure path test 完了
+
+# 9. 結論
+TalentGrowth の implementation task breakdown は、
+phase package をさらに task 単位へ分解し、
+end-to-end 完了条件まで固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200005_TALENT_GROWTH_IMPLEMENTATION_TASK_BREAKDOWN_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200006_TALENT_GROWTH_IMPLEMENTATION_KICKOFF_HANDOFF_BLOCK_FIXED.md -->
+# TALENT GROWTH IMPLEMENTATION KICKOFF HANDOFF BLOCK FIXED
+
+status: kickoff-handoff-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+次チャットまたは次実装フェーズで
+そのまま開始指示に使える kickoff handoff を固定するための資料である。
+
+# 1. start point
+開始対象:
+- phase A core evaluation foundation
+
+# 2. first deliverables
+最初に作るもの:
+- DDL migration baseline
+- phase A seed / mock data
+- API contract stubs
+- employee dashboard read
+- certification CRUD baseline
+- skill CRUD baseline
+- self review save / submit
+- manager review save / submit / send back
+- role requirement CRUD baseline
+- growth plan baseline
+- audit search baseline
+- outbox / in-app notification baseline
+- RLS baseline
+
+# 3. strict guardrails
+- no publish without approval
+- no offline final submit
+- no direct notification send bypassing outbox
+- no missing audit on score-changing write
+- no admin blanket raw access
+- no hidden state transition
+- no duplicated final submit effect
+- no common component design in this implementation kickoff
+
+# 4. recommended execution order
+1. DDL migration baseline
+2. minimum seed / mock dataset
+3. auth context / me / home
+4. employee dashboard
+5. certifications
+6. skills
+7. self review
+8. manager review
+9. role requirement
+10. growth plan
+11. audit search
+12. outbox / notification
+13. RLS hardening
+14. phase A regression set
+
+# 5. must-pass before phase A done
+- self review submit works
+- manager review submit works
+- send back works
+- growth progress works
+- approve path baseline works
+- audit trail searchable
+- in-app notification visible
+- RLS boundary holds
+
+# 6. blockers to watch first
+- lock_version conflict not enforced
+- wrong role seeing raw data
+- score formula mismatch
+- missing outbox event
+- stale review queue not invalidated
+- draft loss on app restart
+- duplicate submit creating duplicate actions
+
+# 7. handoff message block
+implementation opening message:
+TalentGrowth phase A core evaluation foundation を開始する。
+共通部品はこのチャットでは扱わない。
+まず DDL baseline, minimum seed, API stub, employee dashboard,
+certification, skill, self review, manager review, role requirement,
+growth plan, audit, outbox notification, RLS baseline の順で実装する。
+publish without approval, offline final submit, admin blanket raw access は禁止。
+lock_version conflict, audit_trace_id, outbox append, RLS boundary を最初から入れる。
+
+# 8. conclusion
+TalentGrowth の implementation kickoff は、
+phase A を end-to-end で成立させる実装開始ブロックとして固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200006_TALENT_GROWTH_IMPLEMENTATION_KICKOFF_HANDOFF_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200007_TALENT_GROWTH_PHASE_A_IMPLEMENTATION_COMMAND_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A IMPLEMENTATION COMMAND BLOCK FIXED
+
+status: draft-phase-a-implementation-command-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth phase A の実装着手時に、
+次チャットでそのまま開始指示に使える command block / work order を固定するための資料である。
+
+# 1. scope
+phase A core evaluation foundation:
+- DB baseline
+- seed / mock
+- dashboard
+- certification
+- skill
+- self review
+- manager review
+- role requirement
+- growth plan
+- audit
+- outbox / notification
+- RLS
+
+# 2. implementation order block
+~~~text
+【作業開始指示 / TalentGrowth phase A】
+
+対象:
+TalentGrowth phase A core evaluation foundation
+
+今回やること:
+1. phase A concrete DDL を反映
+2. minimum seed / mock dataset を反映
+3. API stub response を仮実装
+4. employee dashboard read を実装
+5. certification CRUD baseline を実装
+6. skill CRUD baseline を実装
+7. self review save / submit を実装
+8. manager review save / submit / send back を実装
+9. role requirement CRUD baseline を実装
+10. growth plan create / progress を実装
+11. audit search baseline を実装
+12. outbox / in-app notification baseline を実装
+13. RLS baseline を反映
+14. release blocking minimum regression を実施
+
+絶対条件:
+- publish without approval 禁止
+- offline final submit 禁止
+- direct notification send bypassing outbox 禁止
+- score-changing write の audit 必須
+- admin blanket raw evaluation access 禁止
+- invalid transition 禁止
+- duplicate finalization 禁止
+- common components はこの着手では扱わない
+
+レビュー観点:
+- UI / UX
+- API contract
+- DB / DDL
+- RLS
+- outbox / notification
+- regression blockers
+~~~
+
+# 3. Termux execution preparation block
+~~~bash
+mkdir -p /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth && \
+echo "TalentGrowth phase A kickoff ready"
+~~~
+
+# 4. DB execution preparation block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select now() as db_now;
+SQL
+~~~
+
+# 5. first verification checklist
+- DDL applied successfully
+- minimum seed inserted
+- GET /api/v1/me stub works
+- GET /api/v1/employee/dashboard stub works
+- self review save works
+- manager review submit works
+- send back works
+- audit search returns representative rows
+- in-app notification created
+- RLS blocks unauthorized access
+
+# 6. early stop conditions
+実装を止めて見直す条件:
+- state machine と API contract がずれた
+- score formula と UI 表示がずれた
+- audit_trace_id が write flow に通っていない
+- notification が outbox を経由していない
+- RLS が未適用のまま UI 実装だけ進んだ
+- lock_version conflict path が未実装
+
+# 7. conclusion
+TalentGrowth phase A の implementation command block は、
+次チャットでそのまま kickoff できる着手文として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200007_TALENT_GROWTH_PHASE_A_IMPLEMENTATION_COMMAND_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200008_TALENT_GROWTH_PHASE_A_ACTUAL_EXECUTION_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A ACTUAL EXECUTION ONE-BLOCK FIXED
+
+status: draft-phase-a-actual-execution-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A を
+Termux でそのまま着手できる actual execution one-block として固定するための資料である。
+
+# 1. target scope
+phase A core evaluation foundation:
+- DDL baseline
+- minimum seed
+- mock actor baseline
+- first verification queries
+
+# 2. execution rule
+- DATABASE_URL を使う
+- 方法Aのみ
+- Termux 直貼り
+- destructive change を含めない
+- 佐藤(DB担当)レビュー前提
+
+# 3. actual execution one-block
+~~~bash
+cat > "$HOME/.tmp/tg_phase_a_apply.sql" <<'SQL'
+begin;
+
+create table if not exists tg_job_family_master (
+  job_family_id text primary key,
+  company_id text not null,
+  job_family_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_family_code)
+);
+
+create table if not exists tg_job_role_master (
+  job_role_id text primary key,
+  company_id text not null,
+  job_family_id text not null references tg_job_family_master(job_family_id),
+  job_role_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  is_critical_role boolean not null default false,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, job_role_code)
+);
+
+create table if not exists tg_grade_master (
+  grade_id text primary key,
+  company_id text not null,
+  grade_code text not null,
+  label_ja text not null,
+  label_en text null,
+  grade_order integer not null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, grade_code)
+);
+
+create table if not exists tg_skill_master (
+  skill_id text primary key,
+  company_id text not null,
+  skill_code text not null,
+  skill_category_code text not null,
+  label_ja text not null,
+  label_en text null,
+  description_text text null,
+  skill_level_min integer not null default 1,
+  skill_level_max integer not null default 5,
+  is_active boolean not null default true,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, skill_code)
+);
+
+create table if not exists tg_certification_master (
+  certification_id text primary key,
+  company_id text not null,
+  certification_code text not null,
+  label_ja text not null,
+  label_en text null,
+  issuer_name text null,
+  renewal_required boolean not null default false,
+  standard_valid_months integer null,
+  description_text text null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, certification_code)
+);
+
+create table if not exists tg_employee_profile (
+  employee_id text primary key,
+  company_id text not null,
+  employee_code text not null,
+  external_employee_key text null,
+  full_name text not null,
+  display_name text null,
+  email text null,
+  phone text null,
+  employment_type_code text not null,
+  organization_id text not null,
+  position_title text null,
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  manager_employee_id text null,
+  preferred_language_code text not null default 'ja',
+  reporting_currency_code text not null default 'JPY',
+  hire_date date null,
+  termination_date date null,
+  is_active boolean not null default true,
+  career_preference_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_code)
+);
+
+create table if not exists tg_employee_certification (
+  employee_certification_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  certification_name_snapshot text not null,
+  issuer_name_snapshot text null,
+  license_number text null,
+  acquired_date date null,
+  expiry_date date null,
+  renewal_required boolean not null default false,
+  certification_status_code text not null,
+  last_renewed_at date null,
+  next_renewal_due_at date null,
+  source_amount numeric(18,6) null,
+  source_currency text null,
+  reporting_amount numeric(18,6) null,
+  reporting_currency text null,
+  fx_rate numeric(18,6) null,
+  fx_rate_applied_at timestamptz null,
+  evidence_file_id text null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_employee_skill (
+  employee_skill_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  proficiency_level integer not null,
+  self_rating numeric(5,2) null,
+  manager_rating numeric(5,2) null,
+  last_used_at date null,
+  usage_frequency_code text null,
+  evidence_count integer not null default 0,
+  evidence_confidence numeric(5,2) null,
+  skill_freshness_score numeric(5,2) null,
+  is_primary_skill boolean not null default false,
+  employee_comment text null,
+  manager_comment text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, employee_id, skill_id)
+);
+
+create table if not exists tg_employee_skill_evidence (
+  employee_skill_evidence_id text primary key,
+  company_id text not null,
+  employee_skill_id text not null references tg_employee_skill(employee_skill_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_description text null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  occurred_at timestamptz null,
+  confidence_score numeric(5,2) null,
+  is_verified boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement (
+  role_requirement_id text primary key,
+  company_id text not null,
+  job_family_id text null references tg_job_family_master(job_family_id),
+  job_role_id text not null references tg_job_role_master(job_role_id),
+  grade_id text null references tg_grade_master(grade_id),
+  requirement_version text not null,
+  effective_from date not null,
+  effective_to date null,
+  template_name text null,
+  status_code text not null,
+  overall_weight_skill numeric(5,2) not null default 0,
+  overall_weight_certification numeric(5,2) not null default 0,
+  overall_weight_experience numeric(5,2) not null default 0,
+  overall_weight_performance numeric(5,2) not null default 0,
+  overall_weight_behavior numeric(5,2) not null default 0,
+  overall_weight_growth numeric(5,2) not null default 0,
+  description_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement_skill (
+  role_requirement_skill_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  skill_id text not null references tg_skill_master(skill_id),
+  required_level integer not null,
+  preferred_level integer null,
+  weight_score numeric(5,2) not null default 0,
+  mandatory_flag boolean not null default false,
+  recency_required_months integer null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_role_requirement_certification (
+  role_requirement_certification_id text primary key,
+  company_id text not null,
+  role_requirement_id text not null references tg_role_requirement(role_requirement_id),
+  certification_id text not null references tg_certification_master(certification_id),
+  mandatory_flag boolean not null default false,
+  preferred_flag boolean not null default false,
+  weight_score numeric(5,2) not null default 0,
+  renewal_required boolean not null default false,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_cycle (
+  evaluation_cycle_id text primary key,
+  company_id text not null,
+  cycle_code text not null,
+  cycle_name text not null,
+  target_scope_code text not null,
+  period_start date not null,
+  period_end date not null,
+  self_review_due_at timestamptz null,
+  manager_review_due_at timestamptz null,
+  hr_review_due_at timestamptz null,
+  publish_at timestamptz null,
+  cycle_status_code text not null,
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, cycle_code)
+);
+
+create table if not exists tg_evaluation_sheet (
+  evaluation_sheet_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  hr_owner_employee_id text null references tg_employee_profile(employee_id),
+  current_job_family_id text null references tg_job_family_master(job_family_id),
+  current_job_role_id text null references tg_job_role_master(job_role_id),
+  current_grade_id text null references tg_grade_master(grade_id),
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  evaluation_status_code text not null,
+  current_state_rank text null,
+  future_readiness_rank text null,
+  total_evaluation_score numeric(7,2) null,
+  current_role_fit_score numeric(7,2) null,
+  target_role_fit_score numeric(7,2) null,
+  growth_potential_score numeric(7,2) null,
+  promotion_readiness_score numeric(7,2) null,
+  successor_readiness_score numeric(7,2) null,
+  self_review_submitted_at timestamptz null,
+  manager_review_submitted_at timestamptz null,
+  approved_at timestamptz null,
+  published_at timestamptz null,
+  reopened_at timestamptz null,
+  sent_back_at timestamptz null,
+  current_step_owner_role_code text null,
+  lock_version integer not null default 1,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1,
+  unique (company_id, evaluation_cycle_id, employee_id)
+);
+
+create table if not exists tg_evaluation_score_detail (
+  evaluation_score_detail_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  score_category_code text not null,
+  score_item_code text not null,
+  raw_score numeric(7,2) null,
+  adjusted_score numeric(7,2) null,
+  weight_score numeric(7,2) null,
+  final_score numeric(7,2) null,
+  pre_calibration_score numeric(7,2) null,
+  post_calibration_score numeric(7,2) null,
+  calculation_note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_comment (
+  evaluation_comment_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  comment_type_code text not null,
+  actor_employee_id text not null references tg_employee_profile(employee_id),
+  actor_role_code text not null,
+  original_text text not null,
+  translated_text text null,
+  language_code text not null,
+  ai_assisted_flag boolean not null default false,
+  ai_draft_id text null,
+  is_published_to_employee boolean not null default false,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_evidence (
+  evaluation_evidence_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  evidence_type_code text not null,
+  evidence_title text not null,
+  evidence_file_id text null,
+  source_system_code text null,
+  source_reference_key text null,
+  linked_score_category_code text null,
+  linked_score_item_code text null,
+  confidence_score numeric(5,2) null,
+  verified_flag boolean not null default false,
+  verified_by text null,
+  verified_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_change_audit (
+  evaluation_change_audit_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_by_role_code text not null,
+  action_type text not null,
+  changed_field_name text not null,
+  old_value_text text null,
+  new_value_text text null,
+  change_reason_text text null,
+  changed_at timestamptz not null default now(),
+  audit_trace_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_evaluation_approval (
+  evaluation_approval_id text primary key,
+  company_id text not null,
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  approval_step_code text not null,
+  approver_employee_id text not null references tg_employee_profile(employee_id),
+  approval_action_code text not null,
+  approval_comment text null,
+  acted_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_calibration_session (
+  calibration_session_id text primary key,
+  company_id text not null,
+  evaluation_cycle_id text not null references tg_evaluation_cycle(evaluation_cycle_id),
+  session_name text not null,
+  session_date date not null,
+  session_status_code text not null,
+  chair_employee_id text null references tg_employee_profile(employee_id),
+  note text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_calibration_log (
+  calibration_log_id text primary key,
+  company_id text not null,
+  calibration_session_id text not null references tg_calibration_session(calibration_session_id),
+  evaluation_sheet_id text not null references tg_evaluation_sheet(evaluation_sheet_id),
+  pre_rank_code text null,
+  post_rank_code text null,
+  pre_total_score numeric(7,2) null,
+  post_total_score numeric(7,2) null,
+  change_reason_text text null,
+  meeting_note text null,
+  changed_by_employee_id text not null references tg_employee_profile(employee_id),
+  changed_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_plan (
+  growth_plan_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  plan_title text not null,
+  target_job_role_id text null references tg_job_role_master(job_role_id),
+  target_grade_id text null references tg_grade_master(grade_id),
+  plan_period_start date not null,
+  plan_period_end date not null,
+  growth_plan_status_code text not null,
+  owner_employee_id text not null references tg_employee_profile(employee_id),
+  manager_employee_id text null references tg_employee_profile(employee_id),
+  plan_summary_text text null,
+  next_review_due_at date null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_action (
+  growth_action_id text primary key,
+  company_id text not null,
+  growth_plan_id text not null references tg_growth_plan(growth_plan_id),
+  employee_id text not null references tg_employee_profile(employee_id),
+  action_type_code text not null,
+  action_title text not null,
+  action_description text null,
+  priority_code text not null,
+  due_date date null,
+  reason_code text null,
+  reason_text text null,
+  linked_skill_id text null references tg_skill_master(skill_id),
+  linked_certification_id text null references tg_certification_master(certification_id),
+  linked_training_id text null,
+  action_status_code text not null,
+  completion_percent integer not null default 0,
+  completed_at timestamptz null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_growth_recommendation (
+  growth_recommendation_id text primary key,
+  company_id text not null,
+  employee_id text not null references tg_employee_profile(employee_id),
+  evaluation_sheet_id text null references tg_evaluation_sheet(evaluation_sheet_id),
+  recommendation_type_code text not null,
+  recommendation_title text not null,
+  recommendation_reason text not null,
+  linked_gap_code text null,
+  priority_code text not null,
+  target_due_date date null,
+  accepted_flag boolean not null default false,
+  accepted_at timestamptz null,
+  rejected_flag boolean not null default false,
+  rejected_reason_text text null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text not null,
+  deleted_at timestamptz null,
+  deleted_by text null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_outbox_event (
+  outbox_event_id text primary key,
+  company_id text not null,
+  event_name text not null,
+  event_domain text not null,
+  entity_type text not null,
+  entity_id text not null,
+  aggregate_key text null,
+  payload_json jsonb not null default '{}'::jsonb,
+  status_code text not null,
+  occurred_at timestamptz not null,
+  available_at timestamptz not null default now(),
+  retry_count integer not null default 0,
+  last_retry_at timestamptz null,
+  last_error_code text null,
+  last_error_message text null,
+  published_at timestamptz null,
+  consumed_by_json jsonb not null default '[]'::jsonb,
+  audit_trace_id text null,
+  created_at timestamptz not null default now(),
+  created_by text not null
+);
+
+create table if not exists tg_notification (
+  notification_id text primary key,
+  company_id text not null,
+  source_event_id text not null references tg_outbox_event(outbox_event_id),
+  notification_type_code text not null,
+  target_employee_id text not null references tg_employee_profile(employee_id),
+  title_key text not null,
+  body_key text not null,
+  body_params_json jsonb not null default '{}'::jsonb,
+  deep_link_type text null,
+  deep_link_target_id text null,
+  priority_code text not null,
+  unread_flag boolean not null default true,
+  notification_status_code text not null,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create table if not exists tg_notification_delivery (
+  notification_delivery_id text primary key,
+  company_id text not null,
+  notification_id text not null references tg_notification(notification_id),
+  channel_code text not null,
+  dedupe_key text null,
+  delivery_status_code text not null,
+  attempted_at timestamptz null,
+  delivered_at timestamptz null,
+  provider_message_id text null,
+  last_error_code text null,
+  last_error_message text null,
+  retry_count integer not null default 0,
+  created_at timestamptz not null default now(),
+  created_by text not null,
+  audit_trace_id text null,
+  version_no integer not null default 1
+);
+
+create index if not exists idx_tg_employee_profile_company_org
+  on tg_employee_profile(company_id, organization_id);
+
+create index if not exists idx_tg_employee_certification_company_expiry
+  on tg_employee_certification(company_id, expiry_date);
+
+create index if not exists idx_tg_employee_skill_company_employee
+  on tg_employee_skill(company_id, employee_id);
+
+create index if not exists idx_tg_role_requirement_company_role_grade
+  on tg_role_requirement(company_id, job_role_id, grade_id);
+
+create index if not exists idx_tg_evaluation_cycle_company_status
+  on tg_evaluation_cycle(company_id, cycle_status_code);
+
+create index if not exists idx_tg_evaluation_sheet_company_cycle_status
+  on tg_evaluation_sheet(company_id, evaluation_cycle_id, evaluation_status_code);
+
+create index if not exists idx_tg_evaluation_sheet_company_employee
+  on tg_evaluation_sheet(company_id, employee_id);
+
+create index if not exists idx_tg_growth_plan_company_employee
+  on tg_growth_plan(company_id, employee_id);
+
+create index if not exists idx_tg_outbox_event_status_available
+  on tg_outbox_event(status_code, available_at);
+
+create index if not exists idx_tg_notification_target_unread
+  on tg_notification(company_id, target_employee_id, unread_flag);
+
+create index if not exists idx_tg_notification_delivery_status_channel
+  on tg_notification_delivery(delivery_status_code, channel_code);
+
+commit;
+SQL
+
+mkdir -p "$HOME/.tmp" && \
+psql "$DATABASE_URL" -f "$HOME/.tmp/tg_phase_a_apply.sql" && \
+rm -f "$HOME/.tmp/tg_phase_a_apply.sql"
+~~~
+
+# 4. minimum seed actual block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+begin;
+
+insert into tg_job_family_master (
+  job_family_id, company_id, job_family_code, label_ja, created_by, updated_by
+) values
+  ('jfam_store', 'comp_demo_01', 'STORE', '店舗職群', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_job_role_master (
+  job_role_id, company_id, job_family_id, job_role_code, label_ja, created_by, updated_by
+) values
+  ('jrole_store_staff', 'comp_demo_01', 'jfam_store', 'STORE_STAFF', '店舗担当', 'seed', 'seed'),
+  ('jrole_store_manager', 'comp_demo_01', 'jfam_store', 'STORE_MANAGER', '店長', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_grade_master (
+  grade_id, company_id, grade_code, label_ja, grade_order, created_by, updated_by
+) values
+  ('grade_g2', 'comp_demo_01', 'G2', '一般', 20, 'seed', 'seed'),
+  ('grade_g3', 'comp_demo_01', 'G3', '主任級', 30, 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_skill_master (
+  skill_id, company_id, skill_code, skill_category_code, label_ja, created_by, updated_by
+) values
+  ('skill_customer_response', 'comp_demo_01', 'CUSTOMER_RESPONSE', 'STORE', '顧客対応', 'seed', 'seed'),
+  ('skill_numeric_management', 'comp_demo_01', 'NUMERIC_MANAGEMENT', 'STORE', '数値管理', 'seed', 'seed'),
+  ('skill_people_development', 'comp_demo_01', 'PEOPLE_DEVELOPMENT', 'STORE', '人材育成', 'seed', 'seed'),
+  ('skill_store_operation', 'comp_demo_01', 'STORE_OPERATION', 'STORE', '店舗運営', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_certification_master (
+  certification_id, company_id, certification_code, label_ja, issuer_name, renewal_required, created_by, updated_by
+) values
+  ('cert_hygiene_manager', 'comp_demo_01', 'HYGIENE_MANAGER', '第一種衛生管理者', '厚生労働省', true, 'seed', 'seed'),
+  ('cert_safety_supervisor', 'comp_demo_01', 'SAFETY_SUPERVISOR', '安全衛生推進者', '厚生労働省', true, 'seed', 'seed')
+on conflict do nothing;
+
+commit;
+SQL
+~~~
+
+# 5. first verification block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select 'tg_job_family_master' as table_name, count(*) as cnt from tg_job_family_master
+union all
+select 'tg_job_role_master', count(*) from tg_job_role_master
+union all
+select 'tg_grade_master', count(*) from tg_grade_master
+union all
+select 'tg_skill_master', count(*) from tg_skill_master
+union all
+select 'tg_certification_master', count(*) from tg_certification_master;
+SQL
+~~~
+
+# 6. conclusion
+phase A の DB 実行は、
+この actual execution one-block を基準に着手する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200008_TALENT_GROWTH_PHASE_A_ACTUAL_EXECUTION_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200009_TALENT_GROWTH_PHASE_A_SCREEN_IMPLEMENTATION_ORDER_FIXED.md -->
+# TALENT GROWTH PHASE A SCREEN IMPLEMENTATION ORDER FIXED
+
+status: draft-phase-a-screen-implementation-order-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の screen 実装順を固定するための資料である。
+
+# 1. rule
+- read-first but workflow-complete
+- dashboard only で止めない
+- submit / send back / audit / notification までつながる順に進める
+
+# 2. implementation order
+1. home / role context
+2. employee dashboard
+3. certification management
+4. skill inventory
+5. self review
+6. manager review queue
+7. manager review input
+8. role requirement management
+9. growth plan
+10. notifications
+11. audit log viewer baseline
+12. HR dashboard baseline
+13. calibration board baseline
+
+# 3. screen done definition
+each screen is done only when:
+- read works
+- write works if applicable
+- validation visible
+- error path visible
+- scope boundary holds
+- cache invalidation works
+- audit/outbox side effects connected where applicable
+
+# 4. critical joins
+- self review submit -> manager review queue
+- manager submit -> HR queue / dashboard
+- send back -> employee screen + notification
+- certification renewal -> dashboard alert refresh
+- growth progress -> dashboard refresh
+- score-changing write -> audit searchable
+
+# 5. conclusion
+phase A は、
+employee start -> manager workflow -> HR baseline -> audit/notification closure
+の順で screen 実装を進める。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200009_TALENT_GROWTH_PHASE_A_SCREEN_IMPLEMENTATION_ORDER_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200010_TALENT_GROWTH_PHASE_A_ACTUAL_ROUTE_FILE_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A ACTUAL ROUTE FILE ONE-BLOCK FIXED
+
+status: draft-phase-a-actual-route-file-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の route file を
+最初にまとめて作るための one-block を固定するための資料である。
+
+# 1. scope
+phase A で最初に作る route:
+- GET /api/v1/me
+- GET /api/v1/home
+- GET /api/v1/employee/dashboard
+- GET /api/v1/employee-certifications
+- GET /api/v1/employee-skills
+- GET /api/v1/evaluation-sheets/[evaluation_sheet_id]
+- GET /api/v1/manager/review-queue
+- GET /api/v1/growth-plans
+- POST /api/v1/audit-logs/search
+- GET /api/v1/notifications
+
+# 2. one-block example
+~~~bash
+mkdir -p src/app/api/v1/me \
+  src/app/api/v1/home \
+  src/app/api/v1/employee/dashboard \
+  src/app/api/v1/employee-certifications \
+  src/app/api/v1/employee-skills \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id] \
+  src/app/api/v1/manager/review-queue \
+  src/app/api/v1/growth-plans \
+  src/app/api/v1/audit-logs/search \
+  src/app/api/v1/notifications
+
+cat > src/app/api/v1/me/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      employee_id: "emp_demo_01",
+      company_id: "comp_demo_01",
+      full_name: "山田 太郎",
+      display_name: "山田 太郎",
+      role_codes: ["EMPLOYEE"],
+      organization_id: "org_tohoku_sales",
+      preferred_language_code: "ja",
+      reporting_currency_code: "JPY"
+    },
+    meta: {
+      request_id: "stub_me_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/home/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      role_shortcuts: ["employee_dashboard"],
+      notification_unread_count: 2
+    },
+    meta: {
+      request_id: "stub_home_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/employee/dashboard/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      employee_id: "emp_demo_01",
+      employee_name: "山田 太郎",
+      current_role_fit_score: 79.0,
+      target_role_fit_score: 68.0,
+      growth_potential_score: 81.0,
+      current_state_rank: "B",
+      next_review_due_at: "2026-06-30",
+      pending_items: [
+        {
+          item_code: "SELF_REVIEW_SUBMITTED",
+          label: "上長レビュー待ち",
+          count: 1
+        }
+      ],
+      expiring_certifications: [
+        {
+          employee_certification_id: "ecert_demo_01",
+          certification_name: "第一種衛生管理者",
+          expiry_date: "2026-05-15",
+          days_left: 32
+        }
+      ],
+      top_growth_actions: [
+        {
+          growth_action_id: "gact_demo_01",
+          action_type: "TRAINING",
+          title: "数値管理基礎研修",
+          priority: "HIGH",
+          due_date: "2026-06-15"
+        }
+      ]
+    },
+    meta: {
+      request_id: "stub_emp_dash_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/employee-certifications/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      items: [
+        {
+          employee_certification_id: "ecert_demo_01",
+          employee_id: "emp_demo_01",
+          certification_id: "cert_hygiene_manager",
+          certification_name_snapshot: "第一種衛生管理者",
+          issuer_name_snapshot: "厚生労働省",
+          acquired_date: "2023-05-01",
+          expiry_date: "2026-05-15",
+          renewal_required: true,
+          certification_status_code: "EXPIRING_SOON",
+          days_left: 32
+        }
+      ]
+    },
+    meta: {
+      request_id: "stub_cert_list_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/employee-skills/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      items: [
+        {
+          employee_skill_id: "eskill_demo_01",
+          employee_id: "emp_demo_01",
+          skill_id: "skill_customer_response",
+          skill_label: "顧客対応",
+          proficiency_level: 4,
+          self_rating: 82,
+          manager_rating: 80,
+          evidence_count: 2,
+          employee_comment: "クレーム初動対応は単独で実施可能"
+        },
+        {
+          employee_skill_id: "eskill_demo_03",
+          employee_id: "emp_demo_01",
+          skill_id: "skill_numeric_management",
+          skill_label: "数値管理",
+          proficiency_level: 2,
+          self_rating: 55,
+          manager_rating: 58,
+          evidence_count: 0,
+          employee_comment: "月次分析は弱い"
+        }
+      ]
+    },
+    meta: {
+      request_id: "stub_skill_list_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/route.ts <<'TS'
+export async function GET(
+  _request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const { evaluation_sheet_id } = await context.params;
+
+  return Response.json({
+    ok: true,
+    data: {
+      evaluation_sheet_id,
+      employee_id: "emp_demo_01",
+      employee_name: "山田 太郎",
+      manager_employee_id: "emp_demo_mgr_01",
+      evaluation_cycle_id: "ecycle_demo_2026h1",
+      cycle_name: "2026年上期評価",
+      evaluation_status_code: "SELF_REVIEW_SUBMITTED",
+      current_state_rank: "B",
+      future_readiness_rank: "B",
+      total_evaluation_score: 75.5,
+      current_role_fit_score: 79.0,
+      target_role_fit_score: 68.0,
+      growth_potential_score: 81.0,
+      promotion_readiness_score: 64.0,
+      successor_readiness_score: 61.0
+    },
+    meta: {
+      request_id: "stub_eval_sheet_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/manager/review-queue/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      items: [
+        {
+          evaluation_sheet_id: "esheet_demo_01",
+          employee_id: "emp_demo_01",
+          employee_name: "山田 太郎",
+          organization_name: "東北営業部",
+          current_state_rank: "B",
+          status: "SELF_REVIEW_SUBMITTED",
+          submitted_at: "2026-04-13T09:30:00+09:00",
+          expiring_certification_count: 1,
+          evidence_count: 4
+        }
+      ]
+    },
+    meta: {
+      request_id: "stub_mgr_queue_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/growth-plans/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      items: [
+        {
+          growth_plan_id: "gplan_demo_01",
+          employee_id: "emp_demo_01",
+          plan_title: "2026年上期 成長計画",
+          target_job_role_id: "jrole_store_manager",
+          target_job_role_label: "店長",
+          plan_period_start: "2026-05-01",
+          plan_period_end: "2026-10-31",
+          growth_plan_status_code: "ACTIVE",
+          next_review_due_at: "2026-06-30"
+        }
+      ]
+    },
+    meta: {
+      request_id: "stub_growth_list_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/audit-logs/search/route.ts <<'TS'
+export async function POST() {
+  return Response.json({
+    ok: true,
+    data: {
+      items: [
+        {
+          occurred_at: "2026-04-13T10:00:00+09:00",
+          actor_employee_id: "emp_demo_mgr_01",
+          actor_role_code: "MANAGER",
+          entity_type: "EVALUATION_SHEET",
+          entity_id: "esheet_demo_01",
+          action_type: "MANAGER_REVIEW_SAVE",
+          audit_trace_id: "atrace_demo_01"
+        }
+      ]
+    },
+    meta: {
+      request_id: "stub_audit_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+
+cat > src/app/api/v1/notifications/route.ts <<'TS'
+export async function GET() {
+  return Response.json({
+    ok: true,
+    data: {
+      items: [
+        {
+          notification_id: "notif_demo_01",
+          notification_type_code: "REVIEW_REQUEST",
+          target_employee_id: "emp_demo_mgr_01",
+          title_key: "tg.notify.review_request.title",
+          body_key: "tg.notify.review_request.body",
+          deep_link_type: "EVALUATION_SHEET",
+          deep_link_target_id: "esheet_demo_01",
+          unread_flag: true
+        }
+      ]
+    },
+    meta: {
+      request_id: "stub_notif_01",
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+TS
+~~~
+
+# 3. route file policy
+- first step is stub correctness
+- exact payload must match design docs
+- request_id / server_time / version are mandatory
+- route layer stays thin
+- service split later is acceptable
+
+# 4. conclusion
+phase A の最初の route file は、
+この one-block で一気に scaffold する方針を正式化する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200010_TALENT_GROWTH_PHASE_A_ACTUAL_ROUTE_FILE_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200011_TALENT_GROWTH_PHASE_A_SEED_INSERT_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A SEED INSERT ONE-BLOCK FIXED
+
+status: draft-phase-a-seed-insert-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の最低 seed / mock actor / mock flow を
+一括投入する one-block を固定するための資料である。
+
+# 1. target
+- master minimum
+- actor baseline
+- evaluation baseline
+- growth baseline
+- notification baseline
+
+# 2. one-block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+begin;
+
+insert into tg_employee_profile (
+  employee_id, company_id, employee_code, full_name, display_name, email, employment_type_code,
+  organization_id, current_job_role_id, current_grade_id, manager_employee_id,
+  preferred_language_code, reporting_currency_code, is_active, created_by, updated_by
+) values
+  ('emp_demo_01', 'comp_demo_01', 'E0001', '山田 太郎', '山田 太郎', 'yamada@example.com', 'FULL_TIME',
+   'org_tohoku_sales', 'jrole_store_staff', 'grade_g2', 'emp_demo_mgr_01',
+   'ja', 'JPY', true, 'seed', 'seed'),
+  ('emp_demo_mgr_01', 'comp_demo_01', 'M0001', '佐藤 花子', '佐藤 花子', 'sato@example.com', 'FULL_TIME',
+   'org_tohoku_sales', 'jrole_store_manager', 'grade_g3', null,
+   'ja', 'JPY', true, 'seed', 'seed'),
+  ('emp_demo_hr_01', 'comp_demo_01', 'H0001', '鈴木 健', '鈴木 健', 'suzuki@example.com', 'FULL_TIME',
+   'org_hr', null, null, null,
+   'ja', 'JPY', true, 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_employee_certification (
+  employee_certification_id, company_id, employee_id, certification_id,
+  certification_name_snapshot, issuer_name_snapshot, acquired_date, expiry_date,
+  renewal_required, certification_status_code, created_by, updated_by
+) values
+  ('ecert_demo_01', 'comp_demo_01', 'emp_demo_01', 'cert_hygiene_manager',
+   '第一種衛生管理者', '厚生労働省', '2023-05-01', '2026-05-15',
+   true, 'EXPIRING_SOON', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_employee_skill (
+  employee_skill_id, company_id, employee_id, skill_id, proficiency_level,
+  self_rating, manager_rating, evidence_count, employee_comment, created_by, updated_by
+) values
+  ('eskill_demo_01', 'comp_demo_01', 'emp_demo_01', 'skill_customer_response', 4,
+   82, 80, 2, 'クレーム初動対応は単独で実施可能', 'seed', 'seed'),
+  ('eskill_demo_03', 'comp_demo_01', 'emp_demo_01', 'skill_numeric_management', 2,
+   55, 58, 0, '月次分析は弱い', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_role_requirement (
+  role_requirement_id, company_id, job_family_id, job_role_id, grade_id,
+  requirement_version, effective_from, status_code,
+  overall_weight_skill, overall_weight_certification, overall_weight_experience,
+  overall_weight_performance, overall_weight_behavior, overall_weight_growth,
+  created_by, updated_by
+) values
+  ('rr_demo_store_manager_2026h1', 'comp_demo_01', 'jfam_store', 'jrole_store_manager', 'grade_g3',
+   '2026-H1', '2026-05-01', 'ACTIVE',
+   30, 15, 10, 15, 10, 20,
+   'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_role_requirement_skill (
+  role_requirement_skill_id, company_id, role_requirement_id, skill_id,
+  required_level, preferred_level, weight_score, mandatory_flag,
+  created_by, updated_by
+) values
+  ('rrs_demo_01', 'comp_demo_01', 'rr_demo_store_manager_2026h1', 'skill_store_operation',
+   4, 5, 10, true, 'seed', 'seed'),
+  ('rrs_demo_02', 'comp_demo_01', 'rr_demo_store_manager_2026h1', 'skill_numeric_management',
+   4, 5, 10, true, 'seed', 'seed'),
+  ('rrs_demo_03', 'comp_demo_01', 'rr_demo_store_manager_2026h1', 'skill_people_development',
+   3, 4, 10, true, 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_role_requirement_certification (
+  role_requirement_certification_id, company_id, role_requirement_id, certification_id,
+  mandatory_flag, preferred_flag, weight_score, renewal_required,
+  created_by, updated_by
+) values
+  ('rrc_demo_01', 'comp_demo_01', 'rr_demo_store_manager_2026h1', 'cert_hygiene_manager',
+   true, false, 15, true, 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_evaluation_cycle (
+  evaluation_cycle_id, company_id, cycle_code, cycle_name, target_scope_code,
+  period_start, period_end, cycle_status_code, created_by, updated_by
+) values
+  ('ecycle_demo_2026h1', 'comp_demo_01', '2026-H1', '2026年上期評価', 'COMPANY',
+   '2026-04-01', '2026-09-30', 'OPEN', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_evaluation_sheet (
+  evaluation_sheet_id, company_id, evaluation_cycle_id, employee_id, manager_employee_id, hr_owner_employee_id,
+  current_job_role_id, current_grade_id, target_job_role_id, target_grade_id,
+  evaluation_status_code, current_state_rank, future_readiness_rank,
+  total_evaluation_score, current_role_fit_score, target_role_fit_score,
+  growth_potential_score, promotion_readiness_score, successor_readiness_score,
+  created_by, updated_by
+) values
+  ('esheet_demo_01', 'comp_demo_01', 'ecycle_demo_2026h1', 'emp_demo_01', 'emp_demo_mgr_01', 'emp_demo_hr_01',
+   'jrole_store_staff', 'grade_g2', 'jrole_store_manager', 'grade_g3',
+   'SELF_REVIEW_SUBMITTED', 'B', 'B',
+   75.50, 79.00, 68.00,
+   81.00, 64.00, 61.00,
+   'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_growth_plan (
+  growth_plan_id, company_id, employee_id, evaluation_sheet_id, plan_title,
+  target_job_role_id, plan_period_start, plan_period_end, growth_plan_status_code,
+  owner_employee_id, manager_employee_id, next_review_due_at, created_by, updated_by
+) values
+  ('gplan_demo_01', 'comp_demo_01', 'emp_demo_01', 'esheet_demo_01', '2026年上期 成長計画',
+   'jrole_store_manager', '2026-05-01', '2026-10-31', 'ACTIVE',
+   'emp_demo_01', 'emp_demo_mgr_01', '2026-06-30', 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_growth_action (
+  growth_action_id, company_id, growth_plan_id, employee_id, action_type_code,
+  action_title, priority_code, action_status_code, completion_percent,
+  created_by, updated_by
+) values
+  ('gact_demo_01', 'comp_demo_01', 'gplan_demo_01', 'emp_demo_01', 'TRAINING',
+   '数値管理基礎研修', 'HIGH', 'IN_PROGRESS', 50,
+   'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_growth_recommendation (
+  growth_recommendation_id, company_id, employee_id, evaluation_sheet_id,
+  recommendation_type_code, recommendation_title, recommendation_reason,
+  priority_code, accepted_flag, accepted_at, created_by, updated_by
+) values
+  ('grec_demo_01', 'comp_demo_01', 'emp_demo_01', 'esheet_demo_01',
+   'TRAINING', '数値管理基礎研修', '店長候補として数値管理の補強が必要',
+   'HIGH', true, now(), 'seed', 'seed')
+on conflict do nothing;
+
+insert into tg_outbox_event (
+  outbox_event_id, company_id, event_name, event_domain, entity_type, entity_id,
+  payload_json, status_code, occurred_at, created_by
+) values
+  ('outevt_demo_01', 'comp_demo_01', 'tg.evaluation.sheet.self_review_submitted', 'evaluation',
+   'EVALUATION_SHEET', 'esheet_demo_01',
+   '{"employee_id":"emp_demo_01","manager_employee_id":"emp_demo_mgr_01"}'::jsonb,
+   'PUBLISHED', now(), 'seed')
+on conflict do nothing;
+
+insert into tg_notification (
+  notification_id, company_id, source_event_id, notification_type_code,
+  target_employee_id, title_key, body_key, body_params_json,
+  deep_link_type, deep_link_target_id, priority_code, notification_status_code, created_by
+) values
+  ('notif_demo_01', 'comp_demo_01', 'outevt_demo_01', 'REVIEW_REQUEST',
+   'emp_demo_mgr_01', 'tg.notify.review_request.title', 'tg.notify.review_request.body',
+   '{"target_employee_name":"山田 太郎","cycle_name":"2026年上期評価"}'::jsonb,
+   'EVALUATION_SHEET', 'esheet_demo_01', 'HIGH', 'ACTIVE', 'seed')
+on conflict do nothing;
+
+commit;
+SQL
+~~~
+
+# 3. quick verification
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select 'employee_profile' as entity, count(*) as cnt from tg_employee_profile
+union all
+select 'employee_certification', count(*) from tg_employee_certification
+union all
+select 'employee_skill', count(*) from tg_employee_skill
+union all
+select 'evaluation_sheet', count(*) from tg_evaluation_sheet
+union all
+select 'growth_plan', count(*) from tg_growth_plan
+union all
+select 'notification', count(*) from tg_notification;
+SQL
+~~~
+
+# 4. conclusion
+phase A の demo baseline は、
+この seed one-block を基準に投入する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200011_TALENT_GROWTH_PHASE_A_SEED_INSERT_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200012_TALENT_GROWTH_PHASE_A_SMOKE_TEST_COMMAND_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A SMOKE TEST COMMAND BLOCK FIXED
+
+status: draft-phase-a-smoke-test-command-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の最初の smoke test を
+Termux から確認する command block として固定するための資料である。
+
+# 1. smoke targets
+- tables exist
+- seed rows exist
+- representative entity joins work
+- notification baseline exists
+- phase A read screens can be stub-connected
+
+# 2. DB smoke block
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select 'tg_employee_profile' as table_name, count(*) as cnt from tg_employee_profile;
+select 'tg_employee_certification' as table_name, count(*) as cnt from tg_employee_certification;
+select 'tg_employee_skill' as table_name, count(*) as cnt from tg_employee_skill;
+select 'tg_evaluation_sheet' as table_name, count(*) as cnt from tg_evaluation_sheet;
+select 'tg_growth_plan' as table_name, count(*) as cnt from tg_growth_plan;
+select 'tg_notification' as table_name, count(*) as cnt from tg_notification;
+SQL
+~~~
+
+# 3. representative join smoke
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select
+  es.evaluation_sheet_id,
+  ep.full_name as employee_name,
+  mgr.full_name as manager_name,
+  es.current_role_fit_score,
+  es.target_role_fit_score,
+  es.growth_potential_score
+from tg_evaluation_sheet es
+join tg_employee_profile ep
+  on ep.employee_id = es.employee_id
+left join tg_employee_profile mgr
+  on mgr.employee_id = es.manager_employee_id
+where es.evaluation_sheet_id = 'esheet_demo_01';
+SQL
+~~~
+
+# 4. role requirement smoke
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select
+  rr.role_requirement_id,
+  jr.label_ja as target_role,
+  rr.requirement_version,
+  rr.overall_weight_skill,
+  rr.overall_weight_certification,
+  rr.overall_weight_experience,
+  rr.overall_weight_performance,
+  rr.overall_weight_behavior,
+  rr.overall_weight_growth
+from tg_role_requirement rr
+join tg_job_role_master jr
+  on jr.job_role_id = rr.job_role_id
+where rr.role_requirement_id = 'rr_demo_store_manager_2026h1';
+SQL
+~~~
+
+# 5. notification smoke
+~~~bash
+psql "$DATABASE_URL" <<'SQL'
+select
+  n.notification_id,
+  n.notification_type_code,
+  n.target_employee_id,
+  n.deep_link_type,
+  n.deep_link_target_id,
+  n.unread_flag
+from tg_notification n
+where n.notification_id = 'notif_demo_01';
+SQL
+~~~
+
+# 6. phase A minimum pass
+- all target tables return count >= 0
+- baseline seed rows exist
+- evaluation sheet joins resolve employee and manager names
+- role requirement rows resolve target role
+- notification row exists
+- no SQL errors in representative queries
+
+# 7. conclusion
+phase A 着手後の最初の確認は、
+この smoke test command block を基準に行う。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200012_TALENT_GROWTH_PHASE_A_SMOKE_TEST_COMMAND_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200013_TALENT_GROWTH_PHASE_A_SERVICE_LAYER_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A SERVICE LAYER SKELETON FIXED
+
+status: draft-phase-a-service-layer-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の service layer 分割と責務を固定するための資料である。
+
+# 1. service split
+phase A services:
+- authContextService
+- dashboardService
+- certificationService
+- skillService
+- evaluationService
+- roleRequirementService
+- growthPlanService
+- auditService
+- notificationService
+- outboxService
+- validationService
+
+# 2. service ownership
+
+## authContextService
+responsibility:
+- auth user resolve
+- role resolve
+- company scope resolve
+- manager team scope resolve
+
+## dashboardService
+responsibility:
+- employee dashboard aggregation
+- manager dashboard aggregation baseline
+- HR dashboard aggregation baseline
+
+## certificationService
+responsibility:
+- list certifications
+- create certification
+- renew certification
+- expiry state update baseline
+
+## skillService
+responsibility:
+- list skills
+- create skill
+- update skill
+- add evidence baseline
+
+## evaluationService
+responsibility:
+- evaluation sheet read
+- self review save / submit
+- manager review save / submit
+- send back
+- state machine enforcement
+- lock_version enforcement baseline
+- score detail write baseline
+
+## roleRequirementService
+responsibility:
+- list requirements
+- create requirement
+- update requirement
+- clone requirement baseline
+- weight validation
+
+## growthPlanService
+responsibility:
+- list growth plans
+- create growth plan
+- update progress
+- recommendation baseline linkage
+
+## auditService
+responsibility:
+- append audit rows
+- search audit rows
+- audit_trace_id propagation support
+
+## outboxService
+responsibility:
+- append outbox events
+- event payload shaping
+- event_name policy alignment
+
+## notificationService
+responsibility:
+- in-app notification read
+- notification list
+- delivery baseline read model support
+
+## validationService
+responsibility:
+- request payload validation
+- field error shaping
+- validation code mapping
+
+# 3. representative service function list
+
+## evaluationService
+- getEvaluationSheetById(...)
+- saveSelfReviewDraft(...)
+- submitSelfReview(...)
+- saveManagerReview(...)
+- submitManagerReview(...)
+- sendBack(...)
+- assertEvaluationState(...)
+- assertWritableByRole(...)
+
+## certificationService
+- listEmployeeCertifications(...)
+- createEmployeeCertification(...)
+- renewEmployeeCertification(...)
+- calculateCertificationStatus(...)
+
+## growthPlanService
+- listGrowthPlans(...)
+- createGrowthPlan(...)
+- updateGrowthProgress(...)
+- validateGrowthPlanActions(...)
+
+## roleRequirementService
+- listRoleRequirements(...)
+- createRoleRequirement(...)
+- updateRoleRequirement(...)
+- validateRoleRequirementWeights(...)
+
+# 4. service transaction rule
+use one business transaction when:
+- score/state changes
+- audit append required
+- outbox append required
+
+example:
+- self review submit:
+  - validate
+  - update evaluation sheet
+  - append evaluation comment/detail if needed
+  - append audit
+  - append outbox
+  - commit once
+
+# 5. service return rule
+service returns structured domain result:
+- success payload
+- state after mutation
+- lock_version after mutation
+- appended outbox_event_id optional
+- audit_trace_id
+
+# 6. service guardrails
+- no SQL in route layer
+- no direct Response shaping in repository layer
+- no notification delivery logic inside business service
+- no admin bypass hidden in service
+- state machine checks centralized
+
+# 7. representative service skeleton
+~~~typescript
+export async function submitSelfReview(input: {
+  actorEmployeeId: string;
+  companyId: string;
+  evaluationSheetId: string;
+  submitConfirmed: boolean;
+}) {
+  // 1. load sheet
+  // 2. assert state = SELF_REVIEW_DRAFT
+  // 3. assert actor scope
+  // 4. update sheet status
+  // 5. append audit
+  // 6. append outbox
+  // 7. return result
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_SUBMITTED",
+    audit_trace_id: "atrace_placeholder"
+  };
+}
+~~~
+
+# 8. conclusion
+phase A の service layer は、
+state machine / audit / outbox を中心に厚く持つ構成で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200013_TALENT_GROWTH_PHASE_A_SERVICE_LAYER_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200014_TALENT_GROWTH_PHASE_A_REPOSITORY_QUERY_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A REPOSITORY QUERY SKELETON FIXED
+
+status: draft-phase-a-repository-query-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の repository query skeleton を固定するための資料である。
+
+# 1. repository split
+phase A repositories:
+- employeeProfileRepository
+- certificationRepository
+- skillRepository
+- evaluationRepository
+- roleRequirementRepository
+- growthPlanRepository
+- auditRepository
+- outboxRepository
+- notificationRepository
+
+# 2. repository rule
+- repository is DB-focused only
+- no Response shaping
+- no role decision hidden here
+- service passes company scope explicitly
+- update queries return changed ids / versions when needed
+
+# 3. representative query skeletons
+
+## 3-1. employee dashboard source query
+~~~sql
+select
+  ep.employee_id,
+  ep.full_name,
+  ep.organization_id,
+  es.current_role_fit_score,
+  es.target_role_fit_score,
+  es.growth_potential_score,
+  es.current_state_rank
+from tg_employee_profile ep
+left join tg_evaluation_sheet es
+  on es.employee_id = ep.employee_id
+ and es.company_id = ep.company_id
+where ep.company_id = $1
+  and ep.employee_id = $2
+  and ep.deleted_at is null;
+~~~
+
+## 3-2. certification list query
+~~~sql
+select
+  ec.employee_certification_id,
+  ec.employee_id,
+  ec.certification_id,
+  ec.certification_name_snapshot,
+  ec.issuer_name_snapshot,
+  ec.acquired_date,
+  ec.expiry_date,
+  ec.renewal_required,
+  ec.certification_status_code
+from tg_employee_certification ec
+where ec.company_id = $1
+  and ec.employee_id = $2
+  and ec.deleted_at is null
+order by ec.expiry_date nulls last, ec.created_at desc;
+~~~
+
+## 3-3. skill list query
+~~~sql
+select
+  es.employee_skill_id,
+  es.employee_id,
+  es.skill_id,
+  sm.label_ja as skill_label,
+  es.proficiency_level,
+  es.self_rating,
+  es.manager_rating,
+  es.evidence_count,
+  es.employee_comment,
+  es.manager_comment
+from tg_employee_skill es
+join tg_skill_master sm
+  on sm.skill_id = es.skill_id
+where es.company_id = $1
+  and es.employee_id = $2
+  and es.deleted_at is null
+order by sm.sort_order, sm.label_ja;
+~~~
+
+## 3-4. evaluation sheet detail query
+~~~sql
+select
+  es.evaluation_sheet_id,
+  es.employee_id,
+  ep.full_name as employee_name,
+  es.manager_employee_id,
+  ec.cycle_name,
+  es.evaluation_status_code,
+  es.current_state_rank,
+  es.future_readiness_rank,
+  es.total_evaluation_score,
+  es.current_role_fit_score,
+  es.target_role_fit_score,
+  es.growth_potential_score,
+  es.promotion_readiness_score,
+  es.successor_readiness_score,
+  es.lock_version
+from tg_evaluation_sheet es
+join tg_employee_profile ep
+  on ep.employee_id = es.employee_id
+join tg_evaluation_cycle ec
+  on ec.evaluation_cycle_id = es.evaluation_cycle_id
+where es.company_id = $1
+  and es.evaluation_sheet_id = $2
+  and es.deleted_at is null;
+~~~
+
+## 3-5. evaluation status update with lock_version
+~~~sql
+update tg_evaluation_sheet
+set
+  evaluation_status_code = $3,
+  updated_at = now(),
+  updated_by = $4,
+  audit_trace_id = $5,
+  lock_version = lock_version + 1,
+  self_review_submitted_at = case
+    when $3 = 'SELF_REVIEW_SUBMITTED' then now()
+    else self_review_submitted_at
+  end
+where company_id = $1
+  and evaluation_sheet_id = $2
+  and lock_version = $6
+returning evaluation_sheet_id, evaluation_status_code, lock_version;
+~~~
+
+## 3-6. manager review queue query
+~~~sql
+select
+  es.evaluation_sheet_id,
+  es.employee_id,
+  ep.full_name as employee_name,
+  ep.organization_id,
+  es.current_state_rank,
+  es.evaluation_status_code,
+  es.self_review_submitted_at
+from tg_evaluation_sheet es
+join tg_employee_profile ep
+  on ep.employee_id = es.employee_id
+where es.company_id = $1
+  and es.manager_employee_id = $2
+  and es.evaluation_status_code in ('SELF_REVIEW_SUBMITTED', 'MANAGER_REVIEW_DRAFT')
+  and es.deleted_at is null
+order by es.self_review_submitted_at asc nulls last, ep.full_name;
+~~~
+
+## 3-7. role requirement insert skeleton
+~~~sql
+insert into tg_role_requirement (
+  role_requirement_id,
+  company_id,
+  job_family_id,
+  job_role_id,
+  grade_id,
+  requirement_version,
+  effective_from,
+  effective_to,
+  status_code,
+  overall_weight_skill,
+  overall_weight_certification,
+  overall_weight_experience,
+  overall_weight_performance,
+  overall_weight_behavior,
+  overall_weight_growth,
+  created_by,
+  updated_by
+) values (
+  $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$16
+)
+returning role_requirement_id;
+~~~
+
+## 3-8. growth plan list query
+~~~sql
+select
+  gp.growth_plan_id,
+  gp.employee_id,
+  gp.plan_title,
+  gp.target_job_role_id,
+  jr.label_ja as target_job_role_label,
+  gp.plan_period_start,
+  gp.plan_period_end,
+  gp.growth_plan_status_code,
+  gp.next_review_due_at
+from tg_growth_plan gp
+left join tg_job_role_master jr
+  on jr.job_role_id = gp.target_job_role_id
+where gp.company_id = $1
+  and gp.employee_id = $2
+  and gp.deleted_at is null
+order by gp.plan_period_start desc, gp.created_at desc;
+~~~
+
+## 3-9. growth progress update skeleton
+~~~sql
+update tg_growth_action
+set
+  completion_percent = $4,
+  action_status_code = $5,
+  updated_at = now(),
+  updated_by = $6,
+  audit_trace_id = $7
+where company_id = $1
+  and growth_plan_id = $2
+  and growth_action_id = $3
+returning growth_action_id, completion_percent, action_status_code;
+~~~
+
+## 3-10. audit append skeleton
+~~~sql
+insert into tg_evaluation_change_audit (
+  evaluation_change_audit_id,
+  company_id,
+  evaluation_sheet_id,
+  changed_by_employee_id,
+  changed_by_role_code,
+  action_type,
+  changed_field_name,
+  old_value_text,
+  new_value_text,
+  change_reason_text,
+  changed_at,
+  audit_trace_id,
+  created_by
+) values (
+  $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,now(),$11,$12
+);
+~~~
+
+## 3-11. outbox append skeleton
+~~~sql
+insert into tg_outbox_event (
+  outbox_event_id,
+  company_id,
+  event_name,
+  event_domain,
+  entity_type,
+  entity_id,
+  payload_json,
+  status_code,
+  occurred_at,
+  audit_trace_id,
+  created_by
+) values (
+  $1,$2,$3,$4,$5,$6,$7,'READY',now(),$8,$9
+)
+returning outbox_event_id;
+~~~
+
+# 4. repository return rule
+repository should return:
+- inserted / updated ids
+- current lock_version if relevant
+- minimal joined fields for caller
+- no user-facing string shaping
+
+# 5. repository guardrails
+- always filter by company_id
+- soft-delete respected where applicable
+- lock_version update must return row count / returning data
+- no hidden admin-scope omission
+- no event payload shaping inside unrelated repositories
+
+# 6. conclusion
+phase A repository query skeleton は、
+company scope strict / lock_version aware / audit-outbox compatible
+の形で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200014_TALENT_GROWTH_PHASE_A_REPOSITORY_QUERY_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200015_TALENT_GROWTH_PHASE_A_VALIDATION_FUNCTION_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A VALIDATION FUNCTION SKELETON FIXED
+
+status: draft-phase-a-validation-function-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の validation function 群を
+最初に固定するための skeleton 資料である。
+
+# 1. validation policy recap
+- field path を返す
+- error code first
+- route では薄く呼び出す
+- business rule validation と payload validation を分ける
+- state transition validation は evaluation service と連携する
+- validation は user-facing message ではなく machine-readable を優先する
+
+# 2. validation layer split
+phase A validation layers:
+- request field validation
+- enum / range validation
+- state precondition validation
+- scope / actor precondition validation
+- lock_version validation
+- aggregate rule validation
+
+# 3. recommended validation module split
+- validateCommon.ts
+- validateCertification.ts
+- validateSkill.ts
+- validateEvaluation.ts
+- validateRoleRequirement.ts
+- validateGrowthPlan.ts
+- validationError.ts
+
+# 4. common validation result shape
+~~~typescript
+export type ValidationIssue = {
+  field: string;
+  reason: string;
+  code: string;
+};
+
+export type ValidationResult =
+  | { ok: true }
+  | { ok: false; issues: ValidationIssue[] };
+~~~
+
+# 5. common helper skeleton
+~~~typescript
+export function okResult(): ValidationResult {
+  return { ok: true };
+}
+
+export function errorResult(issues: ValidationIssue[]): ValidationResult {
+  return { ok: false, issues };
+}
+
+export function requireString(
+  value: unknown,
+  field: string,
+  maxLength?: number
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  if (typeof value !== "string" || value.trim() === "") {
+    issues.push({
+      field,
+      reason: "required",
+      code: "TG_VALIDATION_REQUIRED"
+    });
+    return issues;
+  }
+  if (maxLength && value.length > maxLength) {
+    issues.push({
+      field,
+      reason: "max_length_exceeded",
+      code: "TG_VALIDATION_ERROR"
+    });
+  }
+  return issues;
+}
+
+export function requireBooleanTrue(
+  value: unknown,
+  field: string
+): ValidationIssue[] {
+  if (value !== true) {
+    return [{
+      field,
+      reason: "must_be_true",
+      code: "TG_VALIDATION_REQUIRED"
+    }];
+  }
+  return [];
+}
+
+export function requireNumberRange(
+  value: unknown,
+  field: string,
+  min: number,
+  max: number
+): ValidationIssue[] {
+  if (typeof value !== "number" || Number.isNaN(value)) {
+    return [{
+      field,
+      reason: "invalid_number",
+      code: "TG_VALIDATION_ERROR"
+    }];
+  }
+  if (value < min || value > max) {
+    return [{
+      field,
+      reason: "out_of_range",
+      code: "TG_VALIDATION_INVALID_SCORE_RANGE"
+    }];
+  }
+  return [];
+}
+
+export function requireEnum(
+  value: unknown,
+  field: string,
+  allowed: string[]
+): ValidationIssue[] {
+  if (typeof value !== "string" || !allowed.includes(value)) {
+    return [{
+      field,
+      reason: "invalid_enum",
+      code: "TG_VALIDATION_INVALID_ENUM"
+    }];
+  }
+  return [];
+}
+~~~
+
+# 6. certification validation skeleton
+~~~typescript
+export function validateCreateCertificationPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireString(body.certification_id, "certification_id", 100));
+
+  if (body.license_number != null && typeof body.license_number !== "string") {
+    issues.push({
+      field: "license_number",
+      reason: "invalid_type",
+      code: "TG_VALIDATION_ERROR"
+    });
+  }
+
+  if (body.acquired_date && body.expiry_date && body.expiry_date < body.acquired_date) {
+    issues.push({
+      field: "expiry_date",
+      reason: "must_be_greater_than_or_equal_to_acquired_date",
+      code: "TG_VALIDATION_INVALID_DATE_RANGE"
+    });
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+~~~
+
+# 7. skill validation skeleton
+~~~typescript
+export function validateCreateSkillPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireString(body.skill_id, "skill_id", 100));
+  issues.push(...requireNumberRange(body.proficiency_level, "proficiency_level", 1, 5));
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validatePatchSkillPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  if (body.self_rating != null) {
+    issues.push(...requireNumberRange(body.self_rating, "self_rating", 0, 100));
+  }
+  if (body.manager_rating != null) {
+    issues.push(...requireNumberRange(body.manager_rating, "manager_rating", 0, 100));
+  }
+  if (body.employee_comment != null && typeof body.employee_comment !== "string") {
+    issues.push({
+      field: "employee_comment",
+      reason: "invalid_type",
+      code: "TG_VALIDATION_ERROR"
+    });
+  }
+  return issues.length ? errorResult(issues) : okResult();
+}
+~~~
+
+# 8. self review validation skeleton
+~~~typescript
+export function validateSelfReviewSavePayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+
+  if (body.self_review_comment != null && typeof body.self_review_comment !== "string") {
+    issues.push({
+      field: "self_review_comment",
+      reason: "invalid_type",
+      code: "TG_VALIDATION_ERROR"
+    });
+  }
+
+  if (Array.isArray(body.skill_items)) {
+    body.skill_items.forEach((item: any, index: number) => {
+      issues.push(...requireString(item.employee_skill_id, `skill_items[${index}].employee_skill_id`, 100));
+      if (item.proficiency_level != null) {
+        issues.push(...requireNumberRange(item.proficiency_level, `skill_items[${index}].proficiency_level`, 1, 5));
+      }
+    });
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validateSelfReviewSubmitPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireBooleanTrue(body.submit_confirmed, "submit_confirmed"));
+  return issues.length ? errorResult(issues) : okResult();
+}
+~~~
+
+# 9. manager review validation skeleton
+~~~typescript
+export function validateManagerReviewSavePayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+
+  issues.push(...requireString(body.manager_employee_id, "manager_employee_id", 100));
+
+  if (body.manager_review_comment != null && typeof body.manager_review_comment !== "string") {
+    issues.push({
+      field: "manager_review_comment",
+      reason: "invalid_type",
+      code: "TG_VALIDATION_ERROR"
+    });
+  }
+
+  if (body.score_inputs) {
+    issues.push(...requireNumberRange(body.score_inputs.behavior_score, "score_inputs.behavior_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.performance_score, "score_inputs.performance_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.current_role_fit_score, "score_inputs.current_role_fit_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.target_role_fit_score, "score_inputs.target_role_fit_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.growth_potential_score, "score_inputs.growth_potential_score", 0, 100));
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validateManagerReviewSubmitPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.manager_employee_id, "manager_employee_id", 100));
+  issues.push(...requireBooleanTrue(body.submit_confirmed, "submit_confirmed"));
+  return issues.length ? errorResult(issues) : okResult();
+}
+~~~
+
+# 10. send back validation skeleton
+~~~typescript
+export function validateSendBackPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireEnum(body.target_role_code, "target_role_code", ["EMPLOYEE", "MANAGER", "HR"]));
+  issues.push(...requireString(body.send_back_reason, "send_back_reason", 2000));
+  return issues.length ? errorResult(issues) : okResult();
+}
+~~~
+
+# 11. role requirement validation skeleton
+~~~typescript
+export function validateRoleRequirementPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+
+  issues.push(...requireString(body.job_role_id, "job_role_id", 100));
+  issues.push(...requireString(body.requirement_version, "requirement_version", 50));
+
+  const weightFields = [
+    "overall_weight_skill",
+    "overall_weight_certification",
+    "overall_weight_experience",
+    "overall_weight_performance",
+    "overall_weight_behavior",
+    "overall_weight_growth"
+  ];
+
+  let total = 0;
+  for (const field of weightFields) {
+    const value = body[field];
+    issues.push(...requireNumberRange(value, field, 0, 100));
+    if (typeof value === "number" && !Number.isNaN(value)) total += value;
+  }
+
+  if (total !== 100) {
+    issues.push({
+      field: "total_weight_check",
+      reason: "weight_sum_must_equal_100",
+      code: "TG_VALIDATION_ERROR"
+    });
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+~~~
+
+# 12. growth plan validation skeleton
+~~~typescript
+export function validateGrowthPlanPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireString(body.plan_title, "plan_title", 200));
+
+  if (!Array.isArray(body.actions) || body.actions.length === 0) {
+    issues.push({
+      field: "actions",
+      reason: "must_have_at_least_one_action",
+      code: "TG_VALIDATION_REQUIRED"
+    });
+  }
+
+  if (Array.isArray(body.actions)) {
+    body.actions.forEach((action: any, index: number) => {
+      issues.push(...requireEnum(action.action_type, `actions[${index}].action_type`, ["TRAINING", "OJT", "TASK", "MENTORING"]));
+      issues.push(...requireString(action.title, `actions[${index}].title`, 200));
+      issues.push(...requireEnum(action.priority, `actions[${index}].priority`, ["HIGH", "MEDIUM", "LOW"]));
+    });
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+~~~
+
+# 13. lock / state validation skeleton
+~~~typescript
+export function validateLockVersion(
+  providedLockVersion: unknown,
+  currentLockVersion: number
+): ValidationResult {
+  if (typeof providedLockVersion !== "number") {
+    return errorResult([{
+      field: "lock_version",
+      reason: "required",
+      code: "TG_VALIDATION_REQUIRED"
+    }]);
+  }
+
+  if (providedLockVersion !== currentLockVersion) {
+    return errorResult([{
+      field: "lock_version",
+      reason: "mismatch",
+      code: "TG_CONFLICT_LOCK_VERSION_MISMATCH"
+    }]);
+  }
+
+  return okResult();
+}
+
+export function validateEvaluationState(
+  currentState: string,
+  allowedStates: string[]
+): ValidationResult {
+  if (!allowedStates.includes(currentState)) {
+    return errorResult([{
+      field: "evaluation_status_code",
+      reason: "invalid_transition",
+      code: "TG_STATE_INVALID_TRANSITION"
+    }]);
+  }
+  return okResult();
+}
+~~~
+
+# 14. conclusion
+phase A validation は、
+field validation / state validation / lock validation を分けた関数群として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200015_TALENT_GROWTH_PHASE_A_VALIDATION_FUNCTION_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200016_TALENT_GROWTH_PHASE_A_NOTIFICATION_READ_WRITE_IMPLEMENTATION_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A NOTIFICATION READ WRITE IMPLEMENTATION BLOCK FIXED
+
+status: draft-phase-a-notification-read-write-implementation-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の notification read/write を
+最初に実装する block として固定するための資料である。
+
+# 1. phase A notification scope
+read:
+- GET /api/v1/notifications
+
+write:
+- POST /api/v1/notifications/read
+
+creation side:
+- outbox publisher job から tg_notification を生成
+- phase A は in-app baseline を中心とする
+
+# 2. read query skeleton
+~~~sql
+select
+  notification_id,
+  notification_type_code,
+  target_employee_id,
+  title_key,
+  body_key,
+  body_params_json,
+  deep_link_type,
+  deep_link_target_id,
+  priority_code,
+  unread_flag,
+  notification_status_code,
+  created_at
+from tg_notification
+where company_id = $1
+  and target_employee_id = $2
+order by unread_flag desc, created_at desc
+limit $3;
+~~~
+
+# 3. mark read query skeleton
+~~~sql
+update tg_notification
+set
+  unread_flag = false,
+  notification_status_code = case
+    when notification_status_code = 'ACTIVE' then 'READ'
+    else notification_status_code
+  end
+where company_id = $1
+  and target_employee_id = $2
+  and notification_id = any($3::text[])
+returning notification_id;
+~~~
+
+# 4. notification list route skeleton
+~~~typescript
+export async function GET() {
+  const requestId = "req_notification_list_stub";
+
+  // 1. auth context
+  // 2. list notifications by target_employee_id
+  // 3. return exact payload envelope
+
+  return Response.json({
+    ok: true,
+    data: {
+      items: [
+        {
+          notification_id: "notif_demo_01",
+          notification_type_code: "REVIEW_REQUEST",
+          target_employee_id: "emp_demo_mgr_01",
+          title_key: "tg.notify.review_request.title",
+          body_key: "tg.notify.review_request.body",
+          body_params_json: {
+            target_employee_name: "山田 太郎",
+            cycle_name: "2026年上期評価"
+          },
+          deep_link_type: "EVALUATION_SHEET",
+          deep_link_target_id: "esheet_demo_01",
+          priority_code: "HIGH",
+          unread_flag: true,
+          notification_status_code: "ACTIVE"
+        }
+      ]
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+# 5. notification read route skeleton
+~~~typescript
+export async function POST(request: Request) {
+  const requestId = "req_notification_read_stub";
+  const body = await request.json();
+
+  // 1. auth context
+  // 2. validate body.notification_ids
+  // 3. mark read by target_employee_id
+  // 4. return changed ids
+
+  return Response.json({
+    ok: true,
+    data: {
+      notification_ids: body.notification_ids ?? [],
+      marked_as_read_count: Array.isArray(body.notification_ids) ? body.notification_ids.length : 0
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+~~~
+
+# 6. notification read validation skeleton
+~~~typescript
+export function validateNotificationReadPayload(body: any) {
+  const issues: Array<{ field: string; reason: string; code: string }> = [];
+
+  if (!Array.isArray(body.notification_ids) || body.notification_ids.length === 0) {
+    issues.push({
+      field: "notification_ids",
+      reason: "must_be_non_empty_array",
+      code: "TG_VALIDATION_REQUIRED"
+    });
+  }
+
+  return issues.length ? { ok: false, issues } : { ok: true };
+}
+~~~
+
+# 7. notification creation skeleton
+~~~typescript
+export async function createInAppNotification(input: {
+  companyId: string;
+  sourceEventId: string;
+  notificationTypeCode: string;
+  targetEmployeeId: string;
+  titleKey: string;
+  bodyKey: string;
+  bodyParamsJson: Record<string, unknown>;
+  deepLinkType: string | null;
+  deepLinkTargetId: string | null;
+  priorityCode: string;
+  auditTraceId: string | null;
+}) {
+  // insert tg_notification
+  // insert tg_notification_delivery with channel_code = IN_APP, delivery_status_code = DELIVERED or SENT baseline
+  return {
+    notification_id: "notif_placeholder"
+  };
+}
+~~~
+
+# 8. phase A notification event mapping
+- tg.evaluation.sheet.self_review_submitted
+  -> REVIEW_REQUEST to manager
+
+- tg.evaluation.sheet.sent_back
+  -> ACTION_REQUIRED to employee or manager
+
+- tg.evaluation.sheet.published
+  -> RESULT_READY to employee
+
+- tg.certification.item.expiring_soon
+  -> CERT_EXPIRY_ALERT to employee
+
+- tg.growth_plan.plan.review_due
+  -> GROWTH_REVIEW_DUE to employee and manager
+
+# 9. phase A guardrails
+- notification read must only affect target user's own rows
+- no body text direct render at storage time required yet
+- title_key/body_key must remain template-based
+- no push/email required for phase A completion
+- direct user action must not create notification rows bypassing outbox when event-based
+
+# 10. conclusion
+phase A notification implementation は、
+in-app baseline read/write と event-based creation を中心に固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200016_TALENT_GROWTH_PHASE_A_NOTIFICATION_READ_WRITE_IMPLEMENTATION_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200017_TALENT_GROWTH_PHASE_A_ROUTE_SERVICE_REPOSITORY_ONE_BLOCK_KICKOFF_FIXED.md -->
+# TALENT GROWTH PHASE A ROUTE SERVICE REPOSITORY ONE-BLOCK KICKOFF FIXED
+
+status: draft-phase-a-route-service-repository-one-block-kickoff-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A を
+route / service / repository 単位で
+一気に着手する kickoff one-block を固定するための資料である。
+
+# 1. target scope
+phase A kickoff target:
+- read route baseline
+- write route baseline
+- service skeleton baseline
+- repository skeleton baseline
+- shared validation baseline
+- audit / outbox baseline hooks
+
+# 2. architectural split
+route layer:
+- request parse
+- auth context load
+- validation call
+- service call
+- success/error envelope
+
+service layer:
+- state machine
+- scope decision
+- transaction orchestration
+- audit append
+- outbox append
+
+repository layer:
+- select / insert / update
+- company scope explicit
+- lock_version aware update
+- minimal DB return data
+
+# 3. kickoff one-block example
+~~~bash
+mkdir -p \
+  src/app/api/v1/me \
+  src/app/api/v1/home \
+  src/app/api/v1/employee/dashboard \
+  src/app/api/v1/employee-certifications \
+  src/app/api/v1/employee-skills \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id] \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/send-back \
+  src/app/api/v1/manager/review-queue \
+  src/app/api/v1/role-requirements \
+  src/app/api/v1/growth-plans \
+  src/app/api/v1/growth-plans/[growth_plan_id]/progress \
+  src/app/api/v1/audit-logs/search \
+  src/app/api/v1/notifications \
+  src/app/api/v1/notifications/read \
+  src/server/talent-growth/services \
+  src/server/talent-growth/repositories \
+  src/server/talent-growth/validation \
+  src/server/talent-growth/lib
+
+cat > src/server/talent-growth/lib/response.ts <<'TS'
+export function ok(data: unknown, requestId = "req_placeholder") {
+  return Response.json({
+    ok: true,
+    data,
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+
+export function fail(code: string, message: string, details: unknown[] = [], requestId = "req_placeholder") {
+  return Response.json({
+    ok: false,
+    error: { code, message, details },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  }, { status: 400 });
+}
+TS
+
+cat > src/server/talent-growth/services/evaluationService.ts <<'TS'
+export async function getEvaluationSheetById(input: {
+  companyId: string;
+  evaluationSheetId: string;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_SUBMITTED"
+  };
+}
+
+export async function saveSelfReviewDraft(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: unknown;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_DRAFT",
+    sync_status: "SAVED"
+  };
+}
+
+export async function submitSelfReview(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: unknown;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_SUBMITTED"
+  };
+}
+
+export async function saveManagerReview(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: unknown;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "MANAGER_REVIEW_DRAFT",
+    lock_version: 2
+  };
+}
+
+export async function submitManagerReview(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: unknown;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "MANAGER_REVIEW_SUBMITTED"
+  };
+}
+
+export async function sendBack(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: unknown;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SENT_BACK"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/dashboardService.ts <<'TS'
+export async function getEmployeeDashboard() {
+  return {
+    employee_id: "emp_demo_01",
+    employee_name: "山田 太郎",
+    current_role_fit_score: 79.0,
+    target_role_fit_score: 68.0,
+    growth_potential_score: 81.0,
+    current_state_rank: "B"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/certificationService.ts <<'TS'
+export async function listEmployeeCertifications() {
+  return {
+    items: [
+      {
+        employee_certification_id: "ecert_demo_01",
+        certification_name_snapshot: "第一種衛生管理者",
+        certification_status_code: "EXPIRING_SOON"
+      }
+    ]
+  };
+}
+
+export async function createEmployeeCertification(body: unknown) {
+  return {
+    employee_certification_id: "ecert_new_01",
+    status: "CREATED"
+  };
+}
+
+export async function renewEmployeeCertification(input: {
+  employeeCertificationId: string;
+  body: unknown;
+}) {
+  return {
+    employee_certification_id: input.employeeCertificationId,
+    status: "RENEWED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/skillService.ts <<'TS'
+export async function listEmployeeSkills() {
+  return {
+    items: [
+      {
+        employee_skill_id: "eskill_demo_01",
+        skill_label: "顧客対応",
+        proficiency_level: 4
+      }
+    ]
+  };
+}
+
+export async function createEmployeeSkill(body: unknown) {
+  return {
+    employee_skill_id: "eskill_new_01",
+    status: "CREATED"
+  };
+}
+
+export async function patchEmployeeSkill(input: {
+  employeeSkillId: string;
+  body: unknown;
+}) {
+  return {
+    employee_skill_id: input.employeeSkillId,
+    status: "UPDATED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/roleRequirementService.ts <<'TS'
+export async function listRoleRequirements() {
+  return {
+    items: [
+      {
+        role_requirement_id: "rr_demo_store_manager_2026h1",
+        requirement_version: "2026-H1"
+      }
+    ]
+  };
+}
+
+export async function createRoleRequirement(body: unknown) {
+  return {
+    role_requirement_id: "rr_new_01",
+    status: "CREATED"
+  };
+}
+
+export async function patchRoleRequirement(input: {
+  roleRequirementId: string;
+  body: unknown;
+}) {
+  return {
+    role_requirement_id: input.roleRequirementId,
+    status: "UPDATED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/growthPlanService.ts <<'TS'
+export async function listGrowthPlans() {
+  return {
+    items: [
+      {
+        growth_plan_id: "gplan_demo_01",
+        plan_title: "2026年上期 成長計画"
+      }
+    ]
+  };
+}
+
+export async function createGrowthPlan(body: unknown) {
+  return {
+    growth_plan_id: "gplan_new_01",
+    status: "CREATED"
+  };
+}
+
+export async function updateGrowthProgress(input: {
+  growthPlanId: string;
+  body: unknown;
+}) {
+  return {
+    growth_plan_id: input.growthPlanId,
+    status: "UPDATED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/notificationService.ts <<'TS'
+export async function listNotifications() {
+  return {
+    items: [
+      {
+        notification_id: "notif_demo_01",
+        notification_type_code: "REVIEW_REQUEST",
+        unread_flag: true
+      }
+    ]
+  };
+}
+
+export async function markNotificationsRead(body: { notification_ids?: string[] }) {
+  return {
+    notification_ids: body.notification_ids ?? [],
+    marked_as_read_count: Array.isArray(body.notification_ids) ? body.notification_ids.length : 0
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/auditService.ts <<'TS'
+export async function searchAuditLogs() {
+  return {
+    items: [
+      {
+        entity_id: "esheet_demo_01",
+        action_type: "MANAGER_REVIEW_SAVE",
+        audit_trace_id: "atrace_demo_01"
+      }
+    ]
+  };
+}
+TS
+~~~
+
+# 4. kickoff completion rule
+kickoff one-block is complete when:
+- route files exist
+- service files exist
+- repository placeholders exist
+- common response helper exists
+- app can boot with stub endpoints
+
+# 5. guardrails
+- route layer thin
+- service layer owns orchestration
+- repository layer owns SQL
+- no direct notification send
+- no missing audit/outbox hooks in write planning
+
+# 6. conclusion
+phase A kickoff は、
+まず route / service / repository の空骨格をまとめて置く方式で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200017_TALENT_GROWTH_PHASE_A_ROUTE_SERVICE_REPOSITORY_ONE_BLOCK_KICKOFF_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200018_TALENT_GROWTH_PHASE_A_FOLDER_AND_FILE_BOOTSTRAP_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A FOLDER AND FILE BOOTSTRAP ONE-BLOCK FIXED
+
+status: draft-phase-a-folder-and-file-bootstrap-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の実装に必要な
+folder / file bootstrap を
+一括で作る one-block として固定するための資料である。
+
+# 1. bootstrap target
+app folders:
+- route files
+- service files
+- repository files
+- validation files
+- shared helper files
+
+# 2. bootstrap one-block
+~~~bash
+mkdir -p \
+  src/app/api/v1/me \
+  src/app/api/v1/home \
+  src/app/api/v1/employee/dashboard \
+  src/app/api/v1/employee-certifications \
+  src/app/api/v1/employee-skills \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id] \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/send-back \
+  src/app/api/v1/manager/review-queue \
+  src/app/api/v1/role-requirements \
+  src/app/api/v1/growth-plans \
+  src/app/api/v1/growth-plans/[growth_plan_id]/progress \
+  src/app/api/v1/audit-logs/search \
+  src/app/api/v1/notifications \
+  src/app/api/v1/notifications/read \
+  src/server/talent-growth/lib \
+  src/server/talent-growth/services \
+  src/server/talent-growth/repositories \
+  src/server/talent-growth/validation
+
+touch \
+  src/app/api/v1/me/route.ts \
+  src/app/api/v1/home/route.ts \
+  src/app/api/v1/employee/dashboard/route.ts \
+  src/app/api/v1/employee-certifications/route.ts \
+  src/app/api/v1/employee-skills/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/save/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/submit/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/save/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/submit/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/send-back/route.ts \
+  src/app/api/v1/manager/review-queue/route.ts \
+  src/app/api/v1/role-requirements/route.ts \
+  src/app/api/v1/growth-plans/route.ts \
+  src/app/api/v1/growth-plans/[growth_plan_id]/progress/route.ts \
+  src/app/api/v1/audit-logs/search/route.ts \
+  src/app/api/v1/notifications/route.ts \
+  src/app/api/v1/notifications/read/route.ts \
+  src/server/talent-growth/lib/response.ts \
+  src/server/talent-growth/lib/authContext.ts \
+  src/server/talent-growth/services/dashboardService.ts \
+  src/server/talent-growth/services/certificationService.ts \
+  src/server/talent-growth/services/skillService.ts \
+  src/server/talent-growth/services/evaluationService.ts \
+  src/server/talent-growth/services/roleRequirementService.ts \
+  src/server/talent-growth/services/growthPlanService.ts \
+  src/server/talent-growth/services/auditService.ts \
+  src/server/talent-growth/services/notificationService.ts \
+  src/server/talent-growth/services/outboxService.ts \
+  src/server/talent-growth/services/validationService.ts \
+  src/server/talent-growth/repositories/employeeProfileRepository.ts \
+  src/server/talent-growth/repositories/certificationRepository.ts \
+  src/server/talent-growth/repositories/skillRepository.ts \
+  src/server/talent-growth/repositories/evaluationRepository.ts \
+  src/server/talent-growth/repositories/roleRequirementRepository.ts \
+  src/server/talent-growth/repositories/growthPlanRepository.ts \
+  src/server/talent-growth/repositories/auditRepository.ts \
+  src/server/talent-growth/repositories/outboxRepository.ts \
+  src/server/talent-growth/repositories/notificationRepository.ts \
+  src/server/talent-growth/validation/validateCommon.ts \
+  src/server/talent-growth/validation/validateCertification.ts \
+  src/server/talent-growth/validation/validateSkill.ts \
+  src/server/talent-growth/validation/validateEvaluation.ts \
+  src/server/talent-growth/validation/validateRoleRequirement.ts \
+  src/server/talent-growth/validation/validateGrowthPlan.ts \
+  src/server/talent-growth/validation/validationError.ts
+~~~
+
+# 3. bootstrap done definition
+- target folders exist
+- target files exist
+- build can begin without path confusion
+- route / service / repository / validation split is visible
+
+# 4. conclusion
+phase A bootstrap は、
+手で作らず一括作成で始める方針を正式化する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200018_TALENT_GROWTH_PHASE_A_FOLDER_AND_FILE_BOOTSTRAP_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200019_TALENT_GROWTH_PHASE_A_AUTH_CONTEXT_HELPER_SKELETON_FIXED.md -->
+# TALENT GROWTH PHASE A AUTH CONTEXT HELPER SKELETON FIXED
+
+status: draft-phase-a-auth-context-helper-skeleton-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の auth context helper を
+最初に固定するための skeleton 資料である。
+
+# 1. helper purpose
+auth context helper は以下を担う。
+- current employee resolve
+- current company resolve
+- role set resolve
+- locale / currency preference resolve
+- manager team scope baseline resolve
+- common route guard input shaping
+
+# 2. minimum auth context shape
+~~~typescript
+export type TalentGrowthAuthContext = {
+  employeeId: string;
+  companyId: string;
+  roleCodes: string[];
+  preferredLanguageCode: string;
+  reportingCurrencyCode: string;
+  organizationId: string | null;
+  managerEmployeeId: string | null;
+};
+~~~
+
+# 3. helper function candidates
+- getAuthContext(request: Request)
+- requireAuthenticated(context)
+- requireRole(context, allowedRoles)
+- requireSameEmployeeOrHr(context, targetEmployeeId)
+- requireManagerTeamOrHr(context, targetEmployeeId)
+- requireCompanyScope(context, companyId)
+
+# 4. role constants
+~~~typescript
+export const TG_ROLE = {
+  EMPLOYEE: "EMPLOYEE",
+  MANAGER: "MANAGER",
+  HR: "HR",
+  EXECUTIVE: "EXECUTIVE",
+  ADMIN: "ADMIN"
+} as const;
+~~~
+
+# 5. helper skeleton
+~~~typescript
+export async function getAuthContext(_request: Request): Promise<TalentGrowthAuthContext> {
+  // real implementation later:
+  // 1. session token parse
+  // 2. current user resolve
+  // 3. employee/company lookup
+  // 4. role lookup
+  return {
+    employeeId: "emp_demo_01",
+    companyId: "comp_demo_01",
+    roleCodes: ["EMPLOYEE"],
+    preferredLanguageCode: "ja",
+    reportingCurrencyCode: "JPY",
+    organizationId: "org_tohoku_sales",
+    managerEmployeeId: "emp_demo_mgr_01"
+  };
+}
+
+export function requireAuthenticated(context: TalentGrowthAuthContext | null) {
+  if (!context) {
+    throw new Error("TG_AUTH_REQUIRED");
+  }
+}
+
+export function requireRole(context: TalentGrowthAuthContext, allowedRoles: string[]) {
+  const ok = context.roleCodes.some(role => allowedRoles.includes(role));
+  if (!ok) {
+    throw new Error("TG_ACCESS_FORBIDDEN");
+  }
+}
+
+export function requireSameEmployeeOrHr(
+  context: TalentGrowthAuthContext,
+  targetEmployeeId: string
+) {
+  const self = context.employeeId === targetEmployeeId;
+  const hr = context.roleCodes.includes("HR");
+  if (!self && !hr) {
+    throw new Error("TG_ACCESS_SCOPE_VIOLATION");
+  }
+}
+
+export function requireManagerTeamOrHr(
+  context: TalentGrowthAuthContext,
+  _targetEmployeeId: string
+) {
+  const manager = context.roleCodes.includes("MANAGER");
+  const hr = context.roleCodes.includes("HR");
+  if (!manager && !hr) {
+    throw new Error("TG_ACCESS_SCOPE_VIOLATION");
+  }
+}
+~~~
+
+# 6. helper use examples
+
+## employee self route
+- getAuthContext
+- requireAuthenticated
+- requireSameEmployeeOrHr
+
+## manager review route
+- getAuthContext
+- requireAuthenticated
+- requireRole(MANAGER or HR)
+- requireManagerTeamOrHr
+
+## admin-only route
+- getAuthContext
+- requireAuthenticated
+- requireRole(ADMIN)
+
+# 7. guardrails
+- no hidden admin super bypass
+- no company scope omission
+- route layer must call helper explicitly
+- repository layer must still receive companyId explicitly
+- helper decides actor shape, not DB query itself
+
+# 8. conclusion
+phase A auth context helper は、
+route guard の共通入口として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200019_TALENT_GROWTH_PHASE_A_AUTH_CONTEXT_HELPER_SKELETON_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200020_TALENT_GROWTH_PHASE_A_RESPONSE_ERROR_HELPER_ACTUAL_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A RESPONSE ERROR HELPER ACTUAL BLOCK FIXED
+
+status: draft-phase-a-response-error-helper-actual-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の response / error helper を
+実装開始しやすい actual block として固定するための資料である。
+
+# 1. helper goal
+- success envelope unify
+- error envelope unify
+- request_id / server_time / version を毎回乗せる
+- validation / forbidden / conflict / state errors を整理する
+
+# 2. response helper actual block
+~~~typescript
+export type TalentGrowthErrorDetail = {
+  field?: string;
+  reason?: string;
+  code?: string;
+};
+
+export function tgOk(data: unknown, requestId = "req_placeholder") {
+  return Response.json({
+    ok: true,
+    data,
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+
+export function tgFail(
+  code: string,
+  message: string,
+  details: TalentGrowthErrorDetail[] = [],
+  requestId = "req_placeholder",
+  status = 400
+) {
+  return Response.json({
+    ok: false,
+    error: {
+      code,
+      message,
+      details
+    },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  }, { status });
+}
+~~~
+
+# 3. error mapping helper block
+~~~typescript
+export function tgErrorStatus(code: string): number {
+  switch (code) {
+    case "TG_AUTH_REQUIRED":
+      return 401;
+    case "TG_ACCESS_FORBIDDEN":
+    case "TG_ACCESS_SCOPE_VIOLATION":
+      return 403;
+    case "TG_NOT_FOUND":
+    case "TG_NOT_FOUND_EMPLOYEE":
+    case "TG_NOT_FOUND_ROLE":
+    case "TG_NOT_FOUND_SKILL":
+    case "TG_NOT_FOUND_CERTIFICATION":
+    case "TG_NOT_FOUND_EVALUATION_SHEET":
+      return 404;
+    case "TG_CONFLICT_LOCK_VERSION_MISMATCH":
+      return 409;
+    case "TG_STATE_INVALID_TRANSITION":
+      return 409;
+    default:
+      return 400;
+  }
+}
+~~~
+
+# 4. try/catch helper block
+~~~typescript
+export function tgHandleRouteError(error: unknown, requestId = "req_placeholder") {
+  if (error instanceof Error) {
+    const code = error.message || "TG_UNKNOWN_ERROR";
+    return tgFail(code, "request failed", [], requestId, tgErrorStatus(code));
+  }
+  return tgFail("TG_UNKNOWN_ERROR", "request failed", [], requestId, 500);
+}
+~~~
+
+# 5. validation fail helper block
+~~~typescript
+export function tgFailValidation(
+  issues: Array<{ field: string; reason: string; code: string }>,
+  requestId = "req_placeholder"
+) {
+  const code = issues[0]?.code || "TG_VALIDATION_ERROR";
+  return tgFail(code, "validation failed", issues, requestId, 400);
+}
+~~~
+
+# 6. route usage example
+~~~typescript
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+
+export async function POST(request: Request) {
+  const requestId = "req_example";
+
+  try {
+    const body = await request.json();
+    const validation = { ok: true as const };
+
+    if (!validation.ok) {
+      return tgFailValidation(validation.issues, requestId);
+    }
+
+    return tgOk({ status: "UPDATED" }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+~~~
+
+# 7. guardrails
+- no raw thrown error to user
+- no per-route custom envelope drift
+- no missing meta block
+- error code first, message second
+
+# 8. conclusion
+phase A response/error helper は、
+この actual block を基準に route 共通部品として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200020_TALENT_GROWTH_PHASE_A_RESPONSE_ERROR_HELPER_ACTUAL_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200021_TALENT_GROWTH_PHASE_A_ROUTE_ACTUAL_FILE_ONE_BLOCK_KICKOFF_FIXED.md -->
+# TALENT GROWTH PHASE A ROUTE ACTUAL FILE ONE-BLOCK KICKOFF FIXED
+
+status: draft-phase-a-route-actual-file-one-block-kickoff-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の route actual file を
+最初にまとめて書き出す one-block kickoff を固定するための資料である。
+
+# 1. target
+first actual route files:
+- response helper
+- auth context helper
+- GET /api/v1/me
+- GET /api/v1/home
+- GET /api/v1/employee/dashboard
+- GET /api/v1/employee-certifications
+- GET /api/v1/employee-skills
+- GET /api/v1/evaluation-sheets/[evaluation_sheet_id]
+- GET /api/v1/manager/review-queue
+- GET /api/v1/growth-plans
+- GET /api/v1/notifications
+- POST /api/v1/notifications/read
+
+# 2. one-block kickoff
+~~~bash
+mkdir -p \
+  src/app/api/v1/me \
+  src/app/api/v1/home \
+  src/app/api/v1/employee/dashboard \
+  src/app/api/v1/employee-certifications \
+  src/app/api/v1/employee-skills \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id] \
+  src/app/api/v1/manager/review-queue \
+  src/app/api/v1/growth-plans \
+  src/app/api/v1/notifications \
+  src/app/api/v1/notifications/read \
+  src/server/talent-growth/lib
+
+cat > src/server/talent-growth/lib/response.ts <<'TS'
+export type TalentGrowthErrorDetail = {
+  field?: string;
+  reason?: string;
+  code?: string;
+};
+
+export function tgOk(data: unknown, requestId = "req_placeholder") {
+  return Response.json({
+    ok: true,
+    data,
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  });
+}
+
+export function tgFail(
+  code: string,
+  message: string,
+  details: TalentGrowthErrorDetail[] = [],
+  requestId = "req_placeholder",
+  status = 400
+) {
+  return Response.json({
+    ok: false,
+    error: { code, message, details },
+    meta: {
+      request_id: requestId,
+      server_time: new Date().toISOString(),
+      version: "v1"
+    }
+  }, { status });
+}
+
+export function tgErrorStatus(code: string): number {
+  switch (code) {
+    case "TG_AUTH_REQUIRED":
+      return 401;
+    case "TG_ACCESS_FORBIDDEN":
+    case "TG_ACCESS_SCOPE_VIOLATION":
+      return 403;
+    case "TG_CONFLICT_LOCK_VERSION_MISMATCH":
+    case "TG_STATE_INVALID_TRANSITION":
+      return 409;
+    default:
+      return 400;
+  }
+}
+
+export function tgHandleRouteError(error: unknown, requestId = "req_placeholder") {
+  if (error instanceof Error) {
+    return tgFail(error.message || "TG_UNKNOWN_ERROR", "request failed", [], requestId, tgErrorStatus(error.message || "TG_UNKNOWN_ERROR"));
+  }
+  return tgFail("TG_UNKNOWN_ERROR", "request failed", [], requestId, 500);
+}
+TS
+
+cat > src/server/talent-growth/lib/authContext.ts <<'TS'
+export async function getAuthContext(_request: Request) {
+  return {
+    employeeId: "emp_demo_01",
+    companyId: "comp_demo_01",
+    roleCodes: ["EMPLOYEE"],
+    preferredLanguageCode: "ja",
+    reportingCurrencyCode: "JPY",
+    organizationId: "org_tohoku_sales",
+    managerEmployeeId: "emp_demo_mgr_01"
+  };
+}
+TS
+
+cat > src/app/api/v1/me/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+
+export async function GET(request: Request) {
+  const requestId = "req_me_01";
+  try {
+    const auth = await getAuthContext(request);
+    return tgOk({
+      employee_id: auth.employeeId,
+      company_id: auth.companyId,
+      full_name: "山田 太郎",
+      display_name: "山田 太郎",
+      role_codes: auth.roleCodes,
+      organization_id: auth.organizationId,
+      preferred_language_code: auth.preferredLanguageCode,
+      reporting_currency_code: auth.reportingCurrencyCode
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/home/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET() {
+  const requestId = "req_home_01";
+  try {
+    return tgOk({
+      role_shortcuts: ["employee_dashboard"],
+      notification_unread_count: 2
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/employee/dashboard/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET() {
+  const requestId = "req_employee_dashboard_01";
+  try {
+    return tgOk({
+      employee_id: "emp_demo_01",
+      employee_name: "山田 太郎",
+      current_role_fit_score: 79.0,
+      target_role_fit_score: 68.0,
+      growth_potential_score: 81.0,
+      current_state_rank: "B"
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/employee-certifications/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET() {
+  const requestId = "req_employee_certifications_01";
+  try {
+    return tgOk({
+      items: [
+        {
+          employee_certification_id: "ecert_demo_01",
+          certification_name_snapshot: "第一種衛生管理者",
+          certification_status_code: "EXPIRING_SOON"
+        }
+      ]
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/employee-skills/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET() {
+  const requestId = "req_employee_skills_01";
+  try {
+    return tgOk({
+      items: [
+        {
+          employee_skill_id: "eskill_demo_01",
+          skill_label: "顧客対応",
+          proficiency_level: 4
+        }
+      ]
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET(
+  _request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const requestId = "req_evaluation_sheet_01";
+  try {
+    const { evaluation_sheet_id } = await context.params;
+    return tgOk({
+      evaluation_sheet_id,
+      evaluation_status_code: "SELF_REVIEW_SUBMITTED",
+      current_state_rank: "B",
+      future_readiness_rank: "B",
+      total_evaluation_score: 75.5
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/manager/review-queue/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET() {
+  const requestId = "req_manager_review_queue_01";
+  try {
+    return tgOk({
+      items: [
+        {
+          evaluation_sheet_id: "esheet_demo_01",
+          employee_name: "山田 太郎",
+          status: "SELF_REVIEW_SUBMITTED"
+        }
+      ]
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/growth-plans/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET() {
+  const requestId = "req_growth_plans_01";
+  try {
+    return tgOk({
+      items: [
+        {
+          growth_plan_id: "gplan_demo_01",
+          plan_title: "2026年上期 成長計画"
+        }
+      ]
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/notifications/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function GET() {
+  const requestId = "req_notifications_01";
+  try {
+    return tgOk({
+      items: [
+        {
+          notification_id: "notif_demo_01",
+          notification_type_code: "REVIEW_REQUEST",
+          unread_flag: true
+        }
+      ]
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/notifications/read/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+
+export async function POST(request: Request) {
+  const requestId = "req_notifications_read_01";
+  try {
+    const body = await request.json();
+    const ids = Array.isArray(body.notification_ids) ? body.notification_ids : [];
+    return tgOk({
+      notification_ids: ids,
+      marked_as_read_count: ids.length
+    }, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+~~~
+
+# 3. kickoff done definition
+- common helper files exist
+- representative GET routes exist
+- notification read POST exists
+- app can compile with exact envelope shape baseline
+
+# 4. guardrails
+- keep stub shape aligned with exact payload docs
+- no direct DB calls inside route actual file kickoff
+- auth context helper imported centrally
+- response/error helper imported centrally
+
+# 5. conclusion
+phase A route actual files は、
+まずこの one-block kickoff で足場を作る方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200021_TALENT_GROWTH_PHASE_A_ROUTE_ACTUAL_FILE_ONE_BLOCK_KICKOFF_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200022_TALENT_GROWTH_PHASE_A_WRITE_ROUTE_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A WRITE ROUTE ACTUAL FILE ONE-BLOCK FIXED
+
+status: draft-phase-a-write-route-actual-file-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の write route actual file を
+最初にまとめて書き出す one-block として固定するための資料である。
+
+# 1. target write routes
+- POST /api/v1/employee-certifications
+- POST /api/v1/employee-certifications/{employee_certification_id}/renewal
+- POST /api/v1/employee-skills
+- PATCH /api/v1/employee-skills/{employee_skill_id}
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/self-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/save
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/manager-review/submit
+- POST /api/v1/evaluation-sheets/{evaluation_sheet_id}/send-back
+- POST /api/v1/role-requirements
+- PATCH /api/v1/role-requirements/{role_requirement_id}
+- POST /api/v1/growth-plans
+- POST /api/v1/growth-plans/{growth_plan_id}/progress
+
+# 2. one-block kickoff
+~~~bash
+mkdir -p \
+  src/app/api/v1/employee-certifications \
+  src/app/api/v1/employee-certifications/[employee_certification_id]/renewal \
+  src/app/api/v1/employee-skills \
+  src/app/api/v1/employee-skills/[employee_skill_id] \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/send-back \
+  src/app/api/v1/role-requirements \
+  src/app/api/v1/role-requirements/[role_requirement_id] \
+  src/app/api/v1/growth-plans \
+  src/app/api/v1/growth-plans/[growth_plan_id]/progress
+
+cat > src/app/api/v1/employee-certifications/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateCreateCertificationPayload } from "@/server/talent-growth/validation/validateCertification";
+import { createEmployeeCertification } from "@/server/talent-growth/services/certificationService";
+
+export async function POST(request: Request) {
+  const requestId = "req_create_certification_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+
+    const validation = validateCreateCertificationPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await createEmployeeCertification({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/employee-certifications/[employee_certification_id]/renewal/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { renewEmployeeCertification } from "@/server/talent-growth/services/certificationService";
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ employee_certification_id: string }> }
+) {
+  const requestId = "req_renew_certification_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { employee_certification_id } = await context.params;
+
+    const result = await renewEmployeeCertification({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      employeeCertificationId: employee_certification_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/employee-skills/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateCreateSkillPayload } from "@/server/talent-growth/validation/validateSkill";
+import { createEmployeeSkill } from "@/server/talent-growth/services/skillService";
+
+export async function POST(request: Request) {
+  const requestId = "req_create_skill_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+
+    const validation = validateCreateSkillPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await createEmployeeSkill({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/employee-skills/[employee_skill_id]/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validatePatchSkillPayload } from "@/server/talent-growth/validation/validateSkill";
+import { patchEmployeeSkill } from "@/server/talent-growth/services/skillService";
+
+export async function PATCH(
+  request: Request,
+  context: { params: Promise<{ employee_skill_id: string }> }
+) {
+  const requestId = "req_patch_skill_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { employee_skill_id } = await context.params;
+
+    const validation = validatePatchSkillPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await patchEmployeeSkill({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      employeeSkillId: employee_skill_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/save/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateSelfReviewSavePayload } from "@/server/talent-growth/validation/validateEvaluation";
+import { saveSelfReviewDraft } from "@/server/talent-growth/services/evaluationService";
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const requestId = "req_self_review_save_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { evaluation_sheet_id } = await context.params;
+
+    const validation = validateSelfReviewSavePayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await saveSelfReviewDraft({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      evaluationSheetId: evaluation_sheet_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/submit/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateSelfReviewSubmitPayload } from "@/server/talent-growth/validation/validateEvaluation";
+import { submitSelfReview } from "@/server/talent-growth/services/evaluationService";
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const requestId = "req_self_review_submit_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { evaluation_sheet_id } = await context.params;
+
+    const validation = validateSelfReviewSubmitPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await submitSelfReview({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      evaluationSheetId: evaluation_sheet_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/save/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateManagerReviewSavePayload } from "@/server/talent-growth/validation/validateEvaluation";
+import { saveManagerReview } from "@/server/talent-growth/services/evaluationService";
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const requestId = "req_manager_review_save_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { evaluation_sheet_id } = await context.params;
+
+    const validation = validateManagerReviewSavePayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await saveManagerReview({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      evaluationSheetId: evaluation_sheet_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/submit/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateManagerReviewSubmitPayload } from "@/server/talent-growth/validation/validateEvaluation";
+import { submitManagerReview } from "@/server/talent-growth/services/evaluationService";
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const requestId = "req_manager_review_submit_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { evaluation_sheet_id } = await context.params;
+
+    const validation = validateManagerReviewSubmitPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await submitManagerReview({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      evaluationSheetId: evaluation_sheet_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/send-back/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateSendBackPayload } from "@/server/talent-growth/validation/validateEvaluation";
+import { sendBack } from "@/server/talent-growth/services/evaluationService";
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ evaluation_sheet_id: string }> }
+) {
+  const requestId = "req_send_back_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { evaluation_sheet_id } = await context.params;
+
+    const validation = validateSendBackPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await sendBack({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      evaluationSheetId: evaluation_sheet_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/role-requirements/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateRoleRequirementPayload } from "@/server/talent-growth/validation/validateRoleRequirement";
+import { createRoleRequirement } from "@/server/talent-growth/services/roleRequirementService";
+
+export async function POST(request: Request) {
+  const requestId = "req_create_role_requirement_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+
+    const validation = validateRoleRequirementPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await createRoleRequirement({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/role-requirements/[role_requirement_id]/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateRoleRequirementPayload } from "@/server/talent-growth/validation/validateRoleRequirement";
+import { patchRoleRequirement } from "@/server/talent-growth/services/roleRequirementService";
+
+export async function PATCH(
+  request: Request,
+  context: { params: Promise<{ role_requirement_id: string }> }
+) {
+  const requestId = "req_patch_role_requirement_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { role_requirement_id } = await context.params;
+
+    const validation = validateRoleRequirementPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await patchRoleRequirement({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      roleRequirementId: role_requirement_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/growth-plans/route.ts <<'TS'
+import { tgOk, tgHandleRouteError, tgFailValidation } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { validateGrowthPlanPayload } from "@/server/talent-growth/validation/validateGrowthPlan";
+import { createGrowthPlan } from "@/server/talent-growth/services/growthPlanService";
+
+export async function POST(request: Request) {
+  const requestId = "req_create_growth_plan_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+
+    const validation = validateGrowthPlanPayload(body);
+    if (!validation.ok) return tgFailValidation(validation.issues, requestId);
+
+    const result = await createGrowthPlan({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+
+cat > src/app/api/v1/growth-plans/[growth_plan_id]/progress/route.ts <<'TS'
+import { tgOk, tgHandleRouteError } from "@/server/talent-growth/lib/response";
+import { getAuthContext } from "@/server/talent-growth/lib/authContext";
+import { updateGrowthProgress } from "@/server/talent-growth/services/growthPlanService";
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ growth_plan_id: string }> }
+) {
+  const requestId = "req_growth_progress_01";
+  try {
+    const auth = await getAuthContext(request);
+    const body = await request.json();
+    const { growth_plan_id } = await context.params;
+
+    const result = await updateGrowthProgress({
+      companyId: auth.companyId,
+      actorEmployeeId: auth.employeeId,
+      growthPlanId: growth_plan_id,
+      body
+    });
+
+    return tgOk(result, requestId);
+  } catch (error) {
+    return tgHandleRouteError(error, requestId);
+  }
+}
+TS
+~~~
+
+# 3. actual write route done definition
+- write route files exist
+- shared helper imports are unified
+- validation path is connected
+- service call shape is fixed
+- exact envelope is maintained
+
+# 4. route guardrails
+- no direct repository call from route
+- no direct outbox insert from route
+- no direct audit insert from route
+- route validates and delegates
+- all write routes return exact meta envelope
+
+# 5. conclusion
+phase A write routes は、
+この one-block で first actual files を一括配置する方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200022_TALENT_GROWTH_PHASE_A_WRITE_ROUTE_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200023_TALENT_GROWTH_PHASE_A_SERVICE_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A SERVICE ACTUAL FILE ONE-BLOCK FIXED
+
+status: draft-phase-a-service-actual-file-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の service actual file を
+最初にまとめて書き出す one-block として固定するための資料である。
+
+# 1. target service files
+- dashboardService.ts
+- certificationService.ts
+- skillService.ts
+- evaluationService.ts
+- roleRequirementService.ts
+- growthPlanService.ts
+- notificationService.ts
+- auditService.ts
+- outboxService.ts
+- validationService.ts
+
+# 2. one-block kickoff
+~~~bash
+mkdir -p src/server/talent-growth/services
+
+cat > src/server/talent-growth/services/dashboardService.ts <<'TS'
+export async function getEmployeeDashboard(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return {
+    employee_id: input.employeeId,
+    employee_name: "山田 太郎",
+    current_role_fit_score: 79.0,
+    target_role_fit_score: 68.0,
+    growth_potential_score: 81.0,
+    current_state_rank: "B"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/certificationService.ts <<'TS'
+export async function listEmployeeCertifications(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return {
+    items: [
+      {
+        employee_certification_id: "ecert_demo_01",
+        employee_id: input.employeeId,
+        certification_name_snapshot: "第一種衛生管理者",
+        certification_status_code: "EXPIRING_SOON"
+      }
+    ]
+  };
+}
+
+export async function createEmployeeCertification(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    employee_certification_id: "ecert_new_01",
+    status: "CREATED",
+    company_id: input.companyId
+  };
+}
+
+export async function renewEmployeeCertification(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  employeeCertificationId: string;
+  body: any;
+}) {
+  return {
+    employee_certification_id: input.employeeCertificationId,
+    status: "RENEWED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/skillService.ts <<'TS'
+export async function listEmployeeSkills(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return {
+    items: [
+      {
+        employee_skill_id: "eskill_demo_01",
+        employee_id: input.employeeId,
+        skill_label: "顧客対応",
+        proficiency_level: 4
+      }
+    ]
+  };
+}
+
+export async function createEmployeeSkill(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    employee_skill_id: "eskill_new_01",
+    status: "CREATED"
+  };
+}
+
+export async function patchEmployeeSkill(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  employeeSkillId: string;
+  body: any;
+}) {
+  return {
+    employee_skill_id: input.employeeSkillId,
+    status: "UPDATED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/evaluationService.ts <<'TS'
+export async function getEvaluationSheetById(input: {
+  companyId: string;
+  evaluationSheetId: string;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_SUBMITTED",
+    current_state_rank: "B",
+    future_readiness_rank: "B",
+    total_evaluation_score: 75.5
+  };
+}
+
+export async function saveSelfReviewDraft(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: any;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_DRAFT",
+    sync_status: "SAVED"
+  };
+}
+
+export async function submitSelfReview(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: any;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_SUBMITTED",
+    audit_trace_id: "atrace_placeholder"
+  };
+}
+
+export async function saveManagerReview(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: any;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "MANAGER_REVIEW_DRAFT",
+    lock_version: 2
+  };
+}
+
+export async function submitManagerReview(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: any;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "MANAGER_REVIEW_SUBMITTED",
+    audit_trace_id: "atrace_placeholder"
+  };
+}
+
+export async function sendBack(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+  body: any;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SENT_BACK",
+    audit_trace_id: "atrace_placeholder"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/roleRequirementService.ts <<'TS'
+export async function listRoleRequirements(input: {
+  companyId: string;
+}) {
+  return {
+    items: [
+      {
+        role_requirement_id: "rr_demo_store_manager_2026h1",
+        requirement_version: "2026-H1"
+      }
+    ]
+  };
+}
+
+export async function createRoleRequirement(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    role_requirement_id: "rr_new_01",
+    status: "CREATED"
+  };
+}
+
+export async function patchRoleRequirement(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  roleRequirementId: string;
+  body: any;
+}) {
+  return {
+    role_requirement_id: input.roleRequirementId,
+    status: "UPDATED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/growthPlanService.ts <<'TS'
+export async function listGrowthPlans(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return {
+    items: [
+      {
+        growth_plan_id: "gplan_demo_01",
+        employee_id: input.employeeId,
+        plan_title: "2026年上期 成長計画"
+      }
+    ]
+  };
+}
+
+export async function createGrowthPlan(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    growth_plan_id: "gplan_new_01",
+    status: "CREATED"
+  };
+}
+
+export async function updateGrowthProgress(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  growthPlanId: string;
+  body: any;
+}) {
+  return {
+    growth_plan_id: input.growthPlanId,
+    status: "UPDATED"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/notificationService.ts <<'TS'
+export async function listNotifications(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return {
+    items: [
+      {
+        notification_id: "notif_demo_01",
+        notification_type_code: "REVIEW_REQUEST",
+        unread_flag: true
+      }
+    ]
+  };
+}
+
+export async function markNotificationsRead(input: {
+  companyId: string;
+  employeeId: string;
+  notificationIds: string[];
+}) {
+  return {
+    notification_ids: input.notificationIds,
+    marked_as_read_count: input.notificationIds.length
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/auditService.ts <<'TS'
+export async function searchAuditLogs(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    items: [
+      {
+        entity_id: "esheet_demo_01",
+        action_type: "MANAGER_REVIEW_SAVE",
+        audit_trace_id: "atrace_demo_01"
+      }
+    ]
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/outboxService.ts <<'TS'
+export async function appendOutboxEvent(input: {
+  companyId: string;
+  eventName: string;
+  eventDomain: string;
+  entityType: string;
+  entityId: string;
+  payloadJson: unknown;
+  auditTraceId: string | null;
+  actorEmployeeId: string;
+}) {
+  return {
+    outbox_event_id: "outevt_placeholder",
+    status: "READY"
+  };
+}
+TS
+
+cat > src/server/talent-growth/services/validationService.ts <<'TS'
+export function assertValidationOk(validation: { ok: boolean; issues?: unknown[] }) {
+  if (!validation.ok) {
+    const error = new Error("TG_VALIDATION_ERROR");
+    throw error;
+  }
+}
+TS
+~~~
+
+# 3. service file rule
+- routeから直接DBを触らない
+- serviceが状態遷移とaudit/outbox責務を持つ
+- repository呼び出しの集約点とする
+- user-facing envelopeは返さず domain result を返す
+
+# 4. conclusion
+phase A service actual file は、
+この one-block で first actual services を一括配置する方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200023_TALENT_GROWTH_PHASE_A_SERVICE_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200024_TALENT_GROWTH_PHASE_A_REPOSITORY_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A REPOSITORY ACTUAL FILE ONE-BLOCK FIXED
+
+status: draft-phase-a-repository-actual-file-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の repository actual file を
+最初にまとめて書き出す one-block として固定するための資料である。
+
+# 1. target repository files
+- employeeProfileRepository.ts
+- certificationRepository.ts
+- skillRepository.ts
+- evaluationRepository.ts
+- roleRequirementRepository.ts
+- growthPlanRepository.ts
+- auditRepository.ts
+- outboxRepository.ts
+- notificationRepository.ts
+
+# 2. one-block kickoff
+~~~bash
+mkdir -p src/server/talent-growth/repositories
+
+cat > src/server/talent-growth/repositories/employeeProfileRepository.ts <<'TS'
+export async function findEmployeeProfile(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return {
+    employee_id: input.employeeId,
+    company_id: input.companyId,
+    full_name: "山田 太郎"
+  };
+}
+TS
+
+cat > src/server/talent-growth/repositories/certificationRepository.ts <<'TS'
+export async function listEmployeeCertificationsRepo(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return [];
+}
+
+export async function insertEmployeeCertificationRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    employee_certification_id: "ecert_new_01"
+  };
+}
+
+export async function renewEmployeeCertificationRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  employeeCertificationId: string;
+  body: any;
+}) {
+  return {
+    employee_certification_id: input.employeeCertificationId
+  };
+}
+TS
+
+cat > src/server/talent-growth/repositories/skillRepository.ts <<'TS'
+export async function listEmployeeSkillsRepo(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return [];
+}
+
+export async function insertEmployeeSkillRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    employee_skill_id: "eskill_new_01"
+  };
+}
+
+export async function updateEmployeeSkillRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  employeeSkillId: string;
+  body: any;
+}) {
+  return {
+    employee_skill_id: input.employeeSkillId
+  };
+}
+TS
+
+cat > src/server/talent-growth/repositories/evaluationRepository.ts <<'TS'
+export async function findEvaluationSheetRepo(input: {
+  companyId: string;
+  evaluationSheetId: string;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: "SELF_REVIEW_DRAFT",
+    lock_version: 1
+  };
+}
+
+export async function updateEvaluationSheetStatusRepo(input: {
+  companyId: string;
+  evaluationSheetId: string;
+  nextStatusCode: string;
+  actorEmployeeId: string;
+  auditTraceId: string | null;
+  lockVersion?: number;
+}) {
+  return {
+    evaluation_sheet_id: input.evaluationSheetId,
+    evaluation_status_code: input.nextStatusCode,
+    lock_version: 2
+  };
+}
+TS
+
+cat > src/server/talent-growth/repositories/roleRequirementRepository.ts <<'TS'
+export async function listRoleRequirementsRepo(input: {
+  companyId: string;
+}) {
+  return [];
+}
+
+export async function insertRoleRequirementRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    role_requirement_id: "rr_new_01"
+  };
+}
+
+export async function updateRoleRequirementRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  roleRequirementId: string;
+  body: any;
+}) {
+  return {
+    role_requirement_id: input.roleRequirementId
+  };
+}
+TS
+
+cat > src/server/talent-growth/repositories/growthPlanRepository.ts <<'TS'
+export async function listGrowthPlansRepo(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return [];
+}
+
+export async function insertGrowthPlanRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return {
+    growth_plan_id: "gplan_new_01"
+  };
+}
+
+export async function updateGrowthProgressRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  growthPlanId: string;
+  body: any;
+}) {
+  return {
+    growth_plan_id: input.growthPlanId
+  };
+}
+TS
+
+cat > src/server/talent-growth/repositories/auditRepository.ts <<'TS'
+export async function insertEvaluationAuditRepo(input: {
+  companyId: string;
+  evaluationSheetId: string;
+  changedByEmployeeId: string;
+  changedByRoleCode: string;
+  actionType: string;
+  changedFieldName: string;
+  oldValueText?: string | null;
+  newValueText?: string | null;
+  changeReasonText?: string | null;
+  auditTraceId: string | null;
+}) {
+  return {
+    evaluation_change_audit_id: "eaudit_placeholder"
+  };
+}
+
+export async function searchAuditLogsRepo(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  body: any;
+}) {
+  return [];
+}
+TS
+
+cat > src/server/talent-growth/repositories/outboxRepository.ts <<'TS'
+export async function insertOutboxEventRepo(input: {
+  companyId: string;
+  eventName: string;
+  eventDomain: string;
+  entityType: string;
+  entityId: string;
+  payloadJson: unknown;
+  auditTraceId: string | null;
+  actorEmployeeId: string;
+}) {
+  return {
+    outbox_event_id: "outevt_placeholder"
+  };
+}
+TS
+
+cat > src/server/talent-growth/repositories/notificationRepository.ts <<'TS'
+export async function listNotificationsRepo(input: {
+  companyId: string;
+  employeeId: string;
+}) {
+  return [];
+}
+
+export async function markNotificationsReadRepo(input: {
+  companyId: string;
+  employeeId: string;
+  notificationIds: string[];
+}) {
+  return input.notificationIds;
+}
+TS
+~~~
+
+# 3. repository file rule
+- companyId を必ず受け取る
+- DB-focused only
+- route / response shape を持たない
+- user-facing message を返さない
+- lock_version aware update は repository responsibility
+
+# 4. conclusion
+phase A repository actual file は、
+この one-block で first actual repositories を一括配置する方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200024_TALENT_GROWTH_PHASE_A_REPOSITORY_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200025_TALENT_GROWTH_PHASE_A_VALIDATION_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A VALIDATION ACTUAL FILE ONE-BLOCK FIXED
+
+status: draft-phase-a-validation-actual-file-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の validation actual file を
+最初にまとめて書き出す one-block として固定するための資料である。
+
+# 1. target validation files
+- validationError.ts
+- validateCommon.ts
+- validateCertification.ts
+- validateSkill.ts
+- validateEvaluation.ts
+- validateRoleRequirement.ts
+- validateGrowthPlan.ts
+
+# 2. one-block kickoff
+~~~bash
+mkdir -p src/server/talent-growth/validation
+
+cat > src/server/talent-growth/validation/validationError.ts <<'TS'
+export type ValidationIssue = {
+  field: string;
+  reason: string;
+  code: string;
+};
+
+export type ValidationResult =
+  | { ok: true }
+  | { ok: false; issues: ValidationIssue[] };
+
+export function okResult(): ValidationResult {
+  return { ok: true };
+}
+
+export function errorResult(issues: ValidationIssue[]): ValidationResult {
+  return { ok: false, issues };
+}
+TS
+
+cat > src/server/talent-growth/validation/validateCommon.ts <<'TS'
+import type { ValidationIssue } from "./validationError";
+
+export function requireString(value: unknown, field: string, maxLength?: number): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  if (typeof value !== "string" || value.trim() === "") {
+    issues.push({ field, reason: "required", code: "TG_VALIDATION_REQUIRED" });
+    return issues;
+  }
+  if (maxLength && value.length > maxLength) {
+    issues.push({ field, reason: "max_length_exceeded", code: "TG_VALIDATION_ERROR" });
+  }
+  return issues;
+}
+
+export function requireBooleanTrue(value: unknown, field: string): ValidationIssue[] {
+  if (value !== true) {
+    return [{ field, reason: "must_be_true", code: "TG_VALIDATION_REQUIRED" }];
+  }
+  return [];
+}
+
+export function requireNumberRange(value: unknown, field: string, min: number, max: number): ValidationIssue[] {
+  if (typeof value !== "number" || Number.isNaN(value)) {
+    return [{ field, reason: "invalid_number", code: "TG_VALIDATION_ERROR" }];
+  }
+  if (value < min || value > max) {
+    return [{ field, reason: "out_of_range", code: "TG_VALIDATION_INVALID_SCORE_RANGE" }];
+  }
+  return [];
+}
+
+export function requireEnum(value: unknown, field: string, allowed: string[]): ValidationIssue[] {
+  if (typeof value !== "string" || !allowed.includes(value)) {
+    return [{ field, reason: "invalid_enum", code: "TG_VALIDATION_INVALID_ENUM" }];
+  }
+  return [];
+}
+TS
+
+cat > src/server/talent-growth/validation/validateCertification.ts <<'TS'
+import { errorResult, okResult, type ValidationResult, type ValidationIssue } from "./validationError";
+import { requireString } from "./validateCommon";
+
+export function validateCreateCertificationPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireString(body.certification_id, "certification_id", 100));
+
+  if (body.acquired_date && body.expiry_date && body.expiry_date < body.acquired_date) {
+    issues.push({
+      field: "expiry_date",
+      reason: "must_be_greater_than_or_equal_to_acquired_date",
+      code: "TG_VALIDATION_INVALID_DATE_RANGE"
+    });
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+TS
+
+cat > src/server/talent-growth/validation/validateSkill.ts <<'TS'
+import { errorResult, okResult, type ValidationResult, type ValidationIssue } from "./validationError";
+import { requireString, requireNumberRange } from "./validateCommon";
+
+export function validateCreateSkillPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireString(body.skill_id, "skill_id", 100));
+  issues.push(...requireNumberRange(body.proficiency_level, "proficiency_level", 1, 5));
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validatePatchSkillPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  if (body.self_rating != null) {
+    issues.push(...requireNumberRange(body.self_rating, "self_rating", 0, 100));
+  }
+  if (body.manager_rating != null) {
+    issues.push(...requireNumberRange(body.manager_rating, "manager_rating", 0, 100));
+  }
+  return issues.length ? errorResult(issues) : okResult();
+}
+TS
+
+cat > src/server/talent-growth/validation/validateEvaluation.ts <<'TS'
+import { errorResult, okResult, type ValidationResult, type ValidationIssue } from "./validationError";
+import { requireString, requireBooleanTrue, requireNumberRange, requireEnum } from "./validateCommon";
+
+export function validateSelfReviewSavePayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validateSelfReviewSubmitPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireBooleanTrue(body.submit_confirmed, "submit_confirmed"));
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validateManagerReviewSavePayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.manager_employee_id, "manager_employee_id", 100));
+
+  if (body.score_inputs) {
+    issues.push(...requireNumberRange(body.score_inputs.behavior_score, "score_inputs.behavior_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.performance_score, "score_inputs.performance_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.current_role_fit_score, "score_inputs.current_role_fit_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.target_role_fit_score, "score_inputs.target_role_fit_score", 0, 100));
+    issues.push(...requireNumberRange(body.score_inputs.growth_potential_score, "score_inputs.growth_potential_score", 0, 100));
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validateManagerReviewSubmitPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.manager_employee_id, "manager_employee_id", 100));
+  issues.push(...requireBooleanTrue(body.submit_confirmed, "submit_confirmed"));
+  return issues.length ? errorResult(issues) : okResult();
+}
+
+export function validateSendBackPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireEnum(body.target_role_code, "target_role_code", ["EMPLOYEE", "MANAGER", "HR"]));
+  issues.push(...requireString(body.send_back_reason, "send_back_reason", 2000));
+  return issues.length ? errorResult(issues) : okResult();
+}
+TS
+
+cat > src/server/talent-growth/validation/validateRoleRequirement.ts <<'TS'
+import { errorResult, okResult, type ValidationResult, type ValidationIssue } from "./validationError";
+import { requireString, requireNumberRange } from "./validateCommon";
+
+export function validateRoleRequirementPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.job_role_id, "job_role_id", 100));
+  issues.push(...requireString(body.requirement_version, "requirement_version", 50));
+
+  const fields = [
+    "overall_weight_skill",
+    "overall_weight_certification",
+    "overall_weight_experience",
+    "overall_weight_performance",
+    "overall_weight_behavior",
+    "overall_weight_growth"
+  ];
+
+  let total = 0;
+  for (const field of fields) {
+    issues.push(...requireNumberRange(body[field], field, 0, 100));
+    if (typeof body[field] === "number") total += body[field];
+  }
+
+  if (total !== 100) {
+    issues.push({
+      field: "total_weight_check",
+      reason: "weight_sum_must_equal_100",
+      code: "TG_VALIDATION_ERROR"
+    });
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+TS
+
+cat > src/server/talent-growth/validation/validateGrowthPlan.ts <<'TS'
+import { errorResult, okResult, type ValidationResult, type ValidationIssue } from "./validationError";
+import { requireString, requireEnum } from "./validateCommon";
+
+export function validateGrowthPlanPayload(body: any): ValidationResult {
+  const issues: ValidationIssue[] = [];
+  issues.push(...requireString(body.employee_id, "employee_id", 100));
+  issues.push(...requireString(body.plan_title, "plan_title", 200));
+
+  if (!Array.isArray(body.actions) || body.actions.length === 0) {
+    issues.push({
+      field: "actions",
+      reason: "must_have_at_least_one_action",
+      code: "TG_VALIDATION_REQUIRED"
+    });
+  }
+
+  if (Array.isArray(body.actions)) {
+    body.actions.forEach((action: any, index: number) => {
+      issues.push(...requireEnum(action.action_type, `actions[${index}].action_type`, ["TRAINING", "OJT", "TASK", "MENTORING"]));
+      issues.push(...requireString(action.title, `actions[${index}].title`, 200));
+      issues.push(...requireEnum(action.priority, `actions[${index}].priority`, ["HIGH", "MEDIUM", "LOW"]));
+    });
+  }
+
+  return issues.length ? errorResult(issues) : okResult();
+}
+TS
+~~~
+
+# 3. validation file rule
+- field path を返す
+- code first
+- reusable helper を validateCommon に寄せる
+- route は validation を呼ぶだけに寄せる
+
+# 4. conclusion
+phase A validation actual file は、
+この one-block で first actual validators を一括配置する方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200025_TALENT_GROWTH_PHASE_A_VALIDATION_ACTUAL_FILE_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200026_TALENT_GROWTH_PHASE_A_DB_CLIENT_HELPER_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A DB CLIENT HELPER BLOCK FIXED
+
+status: draft-phase-a-db-client-helper-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の DB access 共通入口を
+最初に固定するための helper block 資料である。
+
+# 1. helper goal
+DB client helper は以下を担う。
+- connection creation の一本化
+- query 実行関数の一本化
+- transaction 実行関数の一本化
+- query logging baseline
+- request_id / audit_trace_id 連携余地の確保
+- route / service / repository 間で DB 初期化を重複させない
+
+# 2. scope
+phase A では以下を最低限扱う。
+- read query
+- write query
+- transaction wrapper
+- rollback
+- typed result placeholder
+- error bubbling
+
+# 3. recommended file
+- src/server/talent-growth/lib/db.ts
+
+# 4. helper actual block
+~~~typescript
+import { Pool, PoolClient, QueryResult } from "pg";
+
+let pool: Pool | null = null;
+
+export function getDbPool() {
+  if (pool) return pool;
+
+  const connectionString = process.env.DATABASE_URL;
+  if (!connectionString) {
+    throw new Error("TG_DATABASE_URL_REQUIRED");
+  }
+
+  pool = new Pool({
+    connectionString
+  });
+
+  return pool;
+}
+
+export async function dbQuery<T = unknown>(
+  text: string,
+  params: unknown[] = []
+): Promise<QueryResult<T>> {
+  const db = getDbPool();
+  return db.query<T>(text, params);
+}
+
+export async function withDbClient<T>(
+  run: (client: PoolClient) => Promise<T>
+): Promise<T> {
+  const db = getDbPool();
+  const client = await db.connect();
+  try {
+    return await run(client);
+  } finally {
+    client.release();
+  }
+}
+
+export async function withDbTransaction<T>(
+  run: (client: PoolClient) => Promise<T>
+): Promise<T> {
+  return withDbClient(async (client) => {
+    await client.query("begin");
+    try {
+      const result = await run(client);
+      await client.query("commit");
+      return result;
+    } catch (error) {
+      await client.query("rollback");
+      throw error;
+    }
+  });
+}
+~~~
+
+# 5. logging extension baseline
+phase A optional expansion:
+- query label
+- request_id
+- audit_trace_id
+- duration_ms
+- row_count
+
+example extension shape:
+~~~typescript
+export async function dbQueryLogged<T = unknown>(input: {
+  text: string;
+  params?: unknown[];
+  label?: string;
+  requestId?: string;
+  auditTraceId?: string | null;
+}) {
+  const startedAt = Date.now();
+  const result = await dbQuery<T>(input.text, input.params ?? []);
+  const durationMs = Date.now() - startedAt;
+
+  console.log(JSON.stringify({
+    scope: "talent-growth-db",
+    label: input.label ?? "query",
+    request_id: input.requestId ?? null,
+    audit_trace_id: input.auditTraceId ?? null,
+    duration_ms: durationMs,
+    row_count: result.rowCount ?? null
+  }));
+
+  return result;
+}
+~~~
+
+# 6. repository usage example
+~~~typescript
+import { dbQuery } from "@/server/talent-growth/lib/db";
+
+export async function findEvaluationSheetRepo(input: {
+  companyId: string;
+  evaluationSheetId: string;
+}) {
+  const result = await dbQuery(
+    `
+      select evaluation_sheet_id, evaluation_status_code, lock_version
+      from tg_evaluation_sheet
+      where company_id = $1
+        and evaluation_sheet_id = $2
+        and deleted_at is null
+    `,
+    [input.companyId, input.evaluationSheetId]
+  );
+
+  return result.rows[0] ?? null;
+}
+~~~
+
+# 7. transaction usage example
+~~~typescript
+import { withDbTransaction } from "@/server/talent-growth/lib/db";
+
+export async function exampleSubmitSelfReview() {
+  return withDbTransaction(async (client) => {
+    await client.query("update tg_evaluation_sheet set evaluation_status_code = $1 where evaluation_sheet_id = $2", [
+      "SELF_REVIEW_SUBMITTED",
+      "esheet_demo_01"
+    ]);
+
+    await client.query("insert into tg_evaluation_change_audit (...) values (...)");
+
+    await client.query("insert into tg_outbox_event (...) values (...)");
+
+    return { ok: true };
+  });
+}
+~~~
+
+# 8. guardrails
+- DATABASE_URL required
+- no per-repository new Pool creation
+- no manual transaction in route layer
+- service/repository only through helper
+- rollback mandatory on error
+
+# 9. conclusion
+phase A DB access は、
+db.ts を共通入口とする helper block で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200026_TALENT_GROWTH_PHASE_A_DB_CLIENT_HELPER_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200027_TALENT_GROWTH_PHASE_A_TRANSACTION_AWARE_REPOSITORY_ACTUAL_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A TRANSACTION-AWARE REPOSITORY ACTUAL BLOCK FIXED
+
+status: draft-phase-a-transaction-aware-repository-actual-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+db_review_required_by: 佐藤
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の transaction-aware repository actual block を
+固定するための資料である。
+
+# 1. goal
+transaction-aware repository は以下を担う。
+- client を受け取る query 関数を用意する
+- transaction wrapper 内で複数repositoryを束ねられるようにする
+- audit / outbox / status update を1 transactionで実行する
+- non-transaction path と transaction path の責務を分ける
+
+# 2. naming rule
+non-tx function:
+- findEvaluationSheetRepo(...)
+- listEmployeeSkillsRepo(...)
+
+tx function:
+- updateEvaluationSheetStatusTx(...)
+- insertEvaluationAuditTx(...)
+- insertOutboxEventTx(...)
+
+# 3. actual block
+~~~typescript
+import type { PoolClient } from "pg";
+import { dbQuery } from "@/server/talent-growth/lib/db";
+
+export async function findEvaluationSheetRepo(input: {
+  companyId: string;
+  evaluationSheetId: string;
+}) {
+  const result = await dbQuery<{
+    evaluation_sheet_id: string;
+    evaluation_status_code: string;
+    lock_version: number;
+  }>(
+    `
+      select evaluation_sheet_id, evaluation_status_code, lock_version
+      from tg_evaluation_sheet
+      where company_id = $1
+        and evaluation_sheet_id = $2
+        and deleted_at is null
+    `,
+    [input.companyId, input.evaluationSheetId]
+  );
+
+  return result.rows[0] ?? null;
+}
+
+export async function updateEvaluationSheetStatusTx(
+  client: PoolClient,
+  input: {
+    companyId: string;
+    evaluationSheetId: string;
+    nextStatusCode: string;
+    actorEmployeeId: string;
+    auditTraceId: string | null;
+    lockVersion?: number;
+  }
+) {
+  const result = await client.query<{
+    evaluation_sheet_id: string;
+    evaluation_status_code: string;
+    lock_version: number;
+  }>(
+    `
+      update tg_evaluation_sheet
+      set
+        evaluation_status_code = $3,
+        updated_at = now(),
+        updated_by = $4,
+        audit_trace_id = $5,
+        lock_version = lock_version + 1
+      where company_id = $1
+        and evaluation_sheet_id = $2
+        and ($6::integer is null or lock_version = $6)
+      returning evaluation_sheet_id, evaluation_status_code, lock_version
+    `,
+    [
+      input.companyId,
+      input.evaluationSheetId,
+      input.nextStatusCode,
+      input.actorEmployeeId,
+      input.auditTraceId,
+      input.lockVersion ?? null
+    ]
+  );
+
+  return result.rows[0] ?? null;
+}
+
+export async function insertEvaluationAuditTx(
+  client: PoolClient,
+  input: {
+    evaluationChangeAuditId: string;
+    companyId: string;
+    evaluationSheetId: string;
+    changedByEmployeeId: string;
+    changedByRoleCode: string;
+    actionType: string;
+    changedFieldName: string;
+    oldValueText?: string | null;
+    newValueText?: string | null;
+    changeReasonText?: string | null;
+    auditTraceId: string | null;
+    createdBy: string;
+  }
+) {
+  await client.query(
+    `
+      insert into tg_evaluation_change_audit (
+        evaluation_change_audit_id,
+        company_id,
+        evaluation_sheet_id,
+        changed_by_employee_id,
+        changed_by_role_code,
+        action_type,
+        changed_field_name,
+        old_value_text,
+        new_value_text,
+        change_reason_text,
+        changed_at,
+        audit_trace_id,
+        created_by
+      ) values (
+        $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,now(),$11,$12
+      )
+    `,
+    [
+      input.evaluationChangeAuditId,
+      input.companyId,
+      input.evaluationSheetId,
+      input.changedByEmployeeId,
+      input.changedByRoleCode,
+      input.actionType,
+      input.changedFieldName,
+      input.oldValueText ?? null,
+      input.newValueText ?? null,
+      input.changeReasonText ?? null,
+      input.auditTraceId,
+      input.createdBy
+    ]
+  );
+}
+
+export async function insertOutboxEventTx(
+  client: PoolClient,
+  input: {
+    outboxEventId: string;
+    companyId: string;
+    eventName: string;
+    eventDomain: string;
+    entityType: string;
+    entityId: string;
+    payloadJson: unknown;
+    auditTraceId: string | null;
+    createdBy: string;
+  }
+) {
+  await client.query(
+    `
+      insert into tg_outbox_event (
+        outbox_event_id,
+        company_id,
+        event_name,
+        event_domain,
+        entity_type,
+        entity_id,
+        payload_json,
+        status_code,
+        occurred_at,
+        audit_trace_id,
+        created_by
+      ) values (
+        $1,$2,$3,$4,$5,$6,$7,'READY',now(),$8,$9
+      )
+    `,
+    [
+      input.outboxEventId,
+      input.companyId,
+      input.eventName,
+      input.eventDomain,
+      input.entityType,
+      input.entityId,
+      input.payloadJson,
+      input.auditTraceId,
+      input.createdBy
+    ]
+  );
+}
+~~~
+
+# 4. service orchestration example
+~~~typescript
+import { withDbTransaction } from "@/server/talent-growth/lib/db";
+import {
+  updateEvaluationSheetStatusTx,
+  insertEvaluationAuditTx,
+  insertOutboxEventTx
+} from "@/server/talent-growth/repositories/evaluationRepository";
+
+export async function submitSelfReviewExample(input: {
+  companyId: string;
+  actorEmployeeId: string;
+  evaluationSheetId: string;
+}) {
+  const auditTraceId = "atrace_placeholder";
+
+  return withDbTransaction(async (client) => {
+    const updated = await updateEvaluationSheetStatusTx(client, {
+      companyId: input.companyId,
+      evaluationSheetId: input.evaluationSheetId,
+      nextStatusCode: "SELF_REVIEW_SUBMITTED",
+      actorEmployeeId: input.actorEmployeeId,
+      auditTraceId
+    });
+
+    await insertEvaluationAuditTx(client, {
+      evaluationChangeAuditId: "eaudit_placeholder",
+      companyId: input.companyId,
+      evaluationSheetId: input.evaluationSheetId,
+      changedByEmployeeId: input.actorEmployeeId,
+      changedByRoleCode: "EMPLOYEE",
+      actionType: "SELF_REVIEW_SUBMIT",
+      changedFieldName: "evaluation_status_code",
+      oldValueText: "SELF_REVIEW_DRAFT",
+      newValueText: "SELF_REVIEW_SUBMITTED",
+      auditTraceId,
+      createdBy: input.actorEmployeeId
+    });
+
+    await insertOutboxEventTx(client, {
+      outboxEventId: "outevt_placeholder",
+      companyId: input.companyId,
+      eventName: "tg.evaluation.sheet.self_review_submitted",
+      eventDomain: "evaluation",
+      entityType: "EVALUATION_SHEET",
+      entityId: input.evaluationSheetId,
+      payloadJson: {
+        employee_id: input.actorEmployeeId,
+        audit_trace_id: auditTraceId
+      },
+      auditTraceId,
+      createdBy: input.actorEmployeeId
+    });
+
+    return updated;
+  });
+}
+~~~
+
+# 5. guardrails
+- tx variants must not create/close transactions themselves
+- service owns transaction boundary
+- repository owns SQL
+- no route-layer tx orchestration
+- lock_version mismatch must be surfaced cleanly
+
+# 6. conclusion
+phase A repository 実装は、
+non-tx / tx-aware を分ける方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200027_TALENT_GROWTH_PHASE_A_TRANSACTION_AWARE_REPOSITORY_ACTUAL_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200028_TALENT_GROWTH_PHASE_A_COMPILE_RUN_SMOKE_COMMAND_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A COMPILE RUN SMOKE COMMAND BLOCK FIXED
+
+status: draft-phase-a-compile-run-smoke-command-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の compile / run / smoke を
+最初に実行する command block として固定するための資料である。
+
+# 1. goal
+- file bootstrap後に path 崩れを早期検出する
+- stub route が返ることを確認する
+- phase A 最低限の build/run 導線を確認する
+- compile break を早期に潰す
+
+# 2. preconditions
+- app project root にいる
+- package manager / scripts は既存プロジェクト方針に従う
+- TypeScript / Next.js 系を想定
+- route actual files は生成済み
+
+# 3. smoke command block
+~~~bash
+pwd && \
+find src/app/api/v1 -type f | sort && \
+find src/server/talent-growth -type f | sort && \
+npm run build
+~~~
+
+# 4. dev run smoke block
+Next.js 系想定:
+~~~bash
+npm run dev -- --hostname 0.0.0.0 --port 3000
+~~~
+
+# 5. endpoint smoke examples
+local curl checks:
+~~~bash
+curl -s http://127.0.0.1:3000/api/v1/me && echo
+curl -s http://127.0.0.1:3000/api/v1/home && echo
+curl -s http://127.0.0.1:3000/api/v1/employee/dashboard && echo
+curl -s http://127.0.0.1:3000/api/v1/employee-certifications && echo
+curl -s http://127.0.0.1:3000/api/v1/employee-skills && echo
+curl -s http://127.0.0.1:3000/api/v1/evaluation-sheets/esheet_demo_01 && echo
+curl -s http://127.0.0.1:3000/api/v1/manager/review-queue && echo
+curl -s http://127.0.0.1:3000/api/v1/growth-plans && echo
+curl -s http://127.0.0.1:3000/api/v1/notifications && echo
+~~~
+
+# 6. POST smoke examples
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/notifications/read \
+  -H 'content-type: application/json' \
+  -d '{"notification_ids":["notif_demo_01"]}' && echo
+~~~
+
+# 7. compile pass definition
+- build command succeeds
+- route import path errors absent
+- response/auth helper import errors absent
+- route actual files compile
+- representative endpoints return JSON envelope
+
+# 8. early failure checklist
+- alias path not resolved
+- route param typing mismatch
+- missing exported function
+- duplicate route files conflict
+- runtime JSON parse crash
+- incorrect Response helper import
+
+# 9. conclusion
+phase A kickoff 後の最初の確認は、
+compile -> run -> curl smoke の順で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200028_TALENT_GROWTH_PHASE_A_COMPILE_RUN_SMOKE_COMMAND_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200029_TALENT_GROWTH_PHASE_A_END_TO_END_KICKOFF_ONE_BLOCK_FIXED.md -->
+# TALENT GROWTH PHASE A END-TO-END KICKOFF ONE-BLOCK FIXED
+
+status: draft-phase-a-end-to-end-kickoff-one-block-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A を
+route / service / repository / validation / helper / build / smoke まで
+一気に着手するための end-to-end kickoff one-block を固定するための資料である。
+
+# 1. target scope
+phase A kickoff target:
+- helper files
+- validation files
+- service files
+- repository files
+- representative read/write route files
+- build / smoke execution baseline
+
+# 2. kickoff rule
+- まず path を作る
+- 次に helper を置く
+- 次に validation / service / repository を置く
+- 次に route を置く
+- 最後に build / curl smoke へ進む
+- route から DB を直接触らない
+- state-changing write は service -> tx-aware repository -> audit/outbox 前提
+
+# 3. end-to-end kickoff one-block
+~~~bash
+mkdir -p \
+  src/app/api/v1/me \
+  src/app/api/v1/home \
+  src/app/api/v1/employee/dashboard \
+  src/app/api/v1/employee-certifications \
+  src/app/api/v1/employee-certifications/[employee_certification_id]/renewal \
+  src/app/api/v1/employee-skills \
+  src/app/api/v1/employee-skills/[employee_skill_id] \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id] \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/save \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/submit \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/send-back \
+  src/app/api/v1/manager/review-queue \
+  src/app/api/v1/role-requirements \
+  src/app/api/v1/role-requirements/[role_requirement_id] \
+  src/app/api/v1/growth-plans \
+  src/app/api/v1/growth-plans/[growth_plan_id]/progress \
+  src/app/api/v1/audit-logs/search \
+  src/app/api/v1/notifications \
+  src/app/api/v1/notifications/read \
+  src/server/talent-growth/lib \
+  src/server/talent-growth/services \
+  src/server/talent-growth/repositories \
+  src/server/talent-growth/validation
+
+touch \
+  src/server/talent-growth/lib/db.ts \
+  src/server/talent-growth/lib/response.ts \
+  src/server/talent-growth/lib/authContext.ts \
+  src/server/talent-growth/services/dashboardService.ts \
+  src/server/talent-growth/services/certificationService.ts \
+  src/server/talent-growth/services/skillService.ts \
+  src/server/talent-growth/services/evaluationService.ts \
+  src/server/talent-growth/services/roleRequirementService.ts \
+  src/server/talent-growth/services/growthPlanService.ts \
+  src/server/talent-growth/services/notificationService.ts \
+  src/server/talent-growth/services/auditService.ts \
+  src/server/talent-growth/services/outboxService.ts \
+  src/server/talent-growth/services/validationService.ts \
+  src/server/talent-growth/repositories/employeeProfileRepository.ts \
+  src/server/talent-growth/repositories/certificationRepository.ts \
+  src/server/talent-growth/repositories/skillRepository.ts \
+  src/server/talent-growth/repositories/evaluationRepository.ts \
+  src/server/talent-growth/repositories/roleRequirementRepository.ts \
+  src/server/talent-growth/repositories/growthPlanRepository.ts \
+  src/server/talent-growth/repositories/auditRepository.ts \
+  src/server/talent-growth/repositories/outboxRepository.ts \
+  src/server/talent-growth/repositories/notificationRepository.ts \
+  src/server/talent-growth/validation/validationError.ts \
+  src/server/talent-growth/validation/validateCommon.ts \
+  src/server/talent-growth/validation/validateCertification.ts \
+  src/server/talent-growth/validation/validateSkill.ts \
+  src/server/talent-growth/validation/validateEvaluation.ts \
+  src/server/talent-growth/validation/validateRoleRequirement.ts \
+  src/server/talent-growth/validation/validateGrowthPlan.ts \
+  src/app/api/v1/me/route.ts \
+  src/app/api/v1/home/route.ts \
+  src/app/api/v1/employee/dashboard/route.ts \
+  src/app/api/v1/employee-certifications/route.ts \
+  src/app/api/v1/employee-certifications/[employee_certification_id]/renewal/route.ts \
+  src/app/api/v1/employee-skills/route.ts \
+  src/app/api/v1/employee-skills/[employee_skill_id]/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/save/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/self-review/submit/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/save/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/manager-review/submit/route.ts \
+  src/app/api/v1/evaluation-sheets/[evaluation_sheet_id]/send-back/route.ts \
+  src/app/api/v1/manager/review-queue/route.ts \
+  src/app/api/v1/role-requirements/route.ts \
+  src/app/api/v1/role-requirements/[role_requirement_id]/route.ts \
+  src/app/api/v1/growth-plans/route.ts \
+  src/app/api/v1/growth-plans/[growth_plan_id]/progress/route.ts \
+  src/app/api/v1/audit-logs/search/route.ts \
+  src/app/api/v1/notifications/route.ts \
+  src/app/api/v1/notifications/read/route.ts
+~~~
+
+# 4. kickoff done definition
+- folder split visible
+- helper files exist
+- validation files exist
+- service files exist
+- repository files exist
+- representative routes exist
+- build and curl smoke can start
+
+# 5. non-negotiables
+- no direct DB access in route
+- no direct notification delivery in route/service
+- no missing audit for score/state change
+- no outbox bypass
+- no offline final submit
+- no blanket admin raw access
+
+# 6. conclusion
+phase A kickoff は、
+この one-block を入口として end-to-end に着手する方針で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200029_TALENT_GROWTH_PHASE_A_END_TO_END_KICKOFF_ONE_BLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200030_TALENT_GROWTH_PHASE_A_COMPILE_RUN_SMOKE_AND_TRIAGE_FIXED.md -->
+# TALENT GROWTH PHASE A COMPILE RUN SMOKE AND TRIAGE FIXED
+
+status: draft-phase-a-compile-run-smoke-and-triage-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth phase A の compile / run / smoke / triage を
+一括で確認するための資料である。
+
+# 1. compile block
+~~~bash
+pwd && \
+find src/app/api/v1 -type f | sort && \
+find src/server/talent-growth -type f | sort && \
+npm run build
+~~~
+
+# 2. run block
+~~~bash
+npm run dev -- --hostname 0.0.0.0 --port 3000
+~~~
+
+# 3. GET smoke block
+~~~bash
+curl -s http://127.0.0.1:3000/api/v1/me && echo
+curl -s http://127.0.0.1:3000/api/v1/home && echo
+curl -s http://127.0.0.1:3000/api/v1/employee/dashboard && echo
+curl -s http://127.0.0.1:3000/api/v1/employee-certifications && echo
+curl -s http://127.0.0.1:3000/api/v1/employee-skills && echo
+curl -s http://127.0.0.1:3000/api/v1/evaluation-sheets/esheet_demo_01 && echo
+curl -s http://127.0.0.1:3000/api/v1/manager/review-queue && echo
+curl -s http://127.0.0.1:3000/api/v1/growth-plans && echo
+curl -s http://127.0.0.1:3000/api/v1/notifications && echo
+~~~
+
+# 4. POST smoke block
+~~~bash
+curl -s -X POST http://127.0.0.1:3000/api/v1/notifications/read \
+  -H 'content-type: application/json' \
+  -d '{"notification_ids":["notif_demo_01"]}' && echo
+~~~
+
+# 5. triage order
+1. build error
+2. import path error
+3. alias resolution error
+4. route param typing error
+5. helper export missing
+6. JSON parse error
+7. env missing
+8. DATABASE_URL missing
+9. route compile conflict
+10. runtime 500 envelope mismatch
+
+# 6. pass gate
+- build succeeds
+- dev server starts
+- representative GET routes return JSON envelope
+- representative POST route returns JSON envelope
+- no import crash at startup
+
+# 7. conclusion
+phase A smoke は、
+compile -> run -> GET -> POST -> triage
+の順で固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200030_TALENT_GROWTH_PHASE_A_COMPILE_RUN_SMOKE_AND_TRIAGE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200031_TALENT_GROWTH_IMPLEMENTATION_READINESS_CHECKLIST_AND_DECLARATION_FIXED.md -->
+# TALENT GROWTH IMPLEMENTATION READINESS CHECKLIST AND DECLARATION FIXED
+
+status: implementation-readiness-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+TalentGrowth が「設計継続」から「実装着手」へ移るための
+最終 readiness checklist と declaration を固定するための資料である。
+
+# 1. readiness checklist
+
+## root / handoff
+- 000 root index exists
+- 001 overview exists
+- 00 integrated rebuilt exists
+- 006 implementation handoff exists
+- 008 single-file handoff exists
+- 009 official entrypoints exists
+
+## DB pack
+- phase A DDL block exists
+- DB helper block exists
+- tx-aware repository block exists
+- RLS helper block exists
+- seed block exists
+- verify block exists
+
+## app pack
+- helper files planned
+- validation files planned
+- service files planned
+- repository files planned
+- read routes planned
+- write routes planned
+
+## request / smoke pack
+- request fixtures defined
+- curl block defined
+- compile/run/smoke block defined
+- triage order defined
+
+## governance pack
+- audit/outbox transaction wrapper defined
+- no publish without approval
+- no outbox bypass
+- no offline final submit
+- no blanket admin raw access
+
+# 2. readiness declaration
+TalentGrowth は、
+phase A core evaluation foundation の実装準備が整った状態にある。
+
+現時点で以下が揃っている。
+- root entry and handoff
+- screen/API/data/RLS/ops/formula/test/release design
+- phase A route/service/repository/validation/helper skeletons
+- DB apply / seed / verify packs
+- request fixture / curl smoke packs
+- compile/run/smoke and triage packs
+
+したがって、
+ここから先は主タスクを
+設計継続ではなく、
+実装投入と compile/run/smoke 解消に移してよい。
+
+# 3. next chat kickoff prompt
+~~~text
+TalentGrowth の続きです。
+正式入口は 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md を正としてください。
+phase A core evaluation foundation の実装へ入ります。
+設計ではなく、実装投入を優先してください。
+まずは
+1. bootstrap
+2. helper
+3. validation
+4. service
+5. repository
+6. route
+7. build
+8. curl smoke
+の順で進めてください。
+共通部品はこのチャットでは扱いません。
+~~~
+
+# 4. conclusion
+TalentGrowth は、
+実装準備完了宣言を出せる状態に到達した。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/1200031_TALENT_GROWTH_IMPLEMENTATION_READINESS_CHECKLIST_AND_DECLARATION_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120300_TALENTGROWTH_GROWTH_CONTROL_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# TALENTGROWTH GROWTH_CONTROL_IMPLEMENTATION_GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: growth-control-implementation-guide
+
+purpose:
+Provides the first implementation-oriented guide for the newly
+clarified differentiator in TalentGrowth.
+
+implementation_priority:
+- Phase A should begin from growth cockpit and readiness visibility,
+  not from generic training list expansion.
+- Management control should become visible before deeper automation.
+
+recommended_phase_a_entry:
+- fix row families for growth timeline, readiness exception review,
+  and cockpit outputs
+- freeze cockpit and exception-review DTOs
+- separate raw person detail handling from growth readiness aggregation
+- create slice order:
+  - growth cockpit query
+  - growth exception review query
+  - approval action
+  - decision-support readiness review
+
+hard_rules:
+- keep raw talent detail separate from growth rollup state
+- keep approval and exception review separate from raw history
+- do not collapse threshold breaches into only notes
+- do not bury decision-support blockers inside generic growth annotations
+
+implementation_readiness_signal:
+- once DDL, DTO, stub boundaries, and slice order are frozen,
+  TalentGrowth can follow the same bundled Phase A pattern used in
+  the previously completed BusinessOS apps.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120300_TALENTGROWTH_GROWTH_CONTROL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120310_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+# ============================================================
+# TALENTGROWTH PHASE A GROWTH TIMELINE IMPLEMENTATION SKELETON
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-growth-timeline-implementation-skeleton
+
+purpose:
+Defines the first implementation skeleton for TalentGrowth
+Phase A management control without starting runtime generation.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- keep raw talent detail handling separate from growth rollup state
+- keep audit append separate from review query repositories
+
+recommended_server_modules:
+- api/controller
+- api/dto
+- application/service
+- application/validator
+- application/mapper
+- domain/model
+- domain/port
+- infrastructure/repository
+- infrastructure/audit
+
+phase_a_skeleton_units:
+- GrowthCockpitQueryController
+- GrowthCockpitQueryService
+- GrowthCockpitQueryValidator
+- GrowthControlTimelineRepository
+- GrowthExceptionReviewController
+- GrowthExceptionReviewService
+- GrowthExceptionReviewValidator
+- GrowthExceptionReviewRepository
+- GrowthCockpitSnapshotRepository
+- TalentGrowthAuditWriter
+
+responsibility_split:
+- controller:
+  - request parsing
+  - auth context handoff
+  - response serialization
+- service:
+  - cockpit assembly
+  - readiness review orchestration
+  - summary message assembly
+- validator:
+  - required field checks
+  - page boundary checks
+  - Phase A scope rejection
+- mapper:
+  - dto to domain mapping
+  - domain to response mapping
+- repository:
+  - persistence and query only
+  - no business branching
+- audit:
+  - append events after relevant review operations when needed
+
+phase_a_build_order:
+- step_01_growth_cockpit_query_path
+- step_02_growth_exception_review_query_path
+- step_03_add snapshot and audit path
+- step_04_add test baseline
+
+minimum_test_families:
+- growth_cockpit_query_success
+- growth_cockpit_query_validation_failure
+- growth_exception_review_query_success
+- growth_exception_review_include_resolved_toggle
+- growth_exception_review_include_decision_support_blockers_toggle
+
+phase_a_exit_ready_definition:
+- DTO names compile against frozen contracts
+- cockpit and exception review boundaries are explicit
+- row-family assumptions align to the DDL additive plan
+- audit append seam is present where needed
+
+explicit_non_scope:
+- no talent write automation in this document
+- no publication workflow here
+- no external BI execution here
+- no Android client work here
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120310_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_IMPLEMENTATION_SKELETON.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120320_TALENTGROWTH_PHASE_A_STUB_FILE_PLAN.md -->
+# ============================================================
+# TALENTGROWTH PHASE A STUB FILE PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-stub-file-plan
+
+purpose:
+Defines the implementation-ready stub file boundary for
+TalentGrowth Phase A management control.
+
+implementation_policy:
+- additive only
+- exact DTOs first
+- no Japanese literals in Java source
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append stays separate
+
+target_package_base:
+- com.lsam.TalentGrowth
+
+target_server_source_root_example:
+- src/main/java/com/lsam/TalentGrowth
+
+target_test_source_root_example:
+- src/test/java/com/lsam/TalentGrowth
+
+phase_a_scope_modules:
+- growth cockpit query
+- growth exception review query
+- cockpit snapshot and audit bridge
+
+recommended_stub_tree:
+- src/main/java/com/lsam/TalentGrowth/api/controller/execution/GrowthCockpitQueryController.java
+- src/main/java/com/lsam/TalentGrowth/api/controller/execution/GrowthExceptionReviewQueryController.java
+- src/main/java/com/lsam/TalentGrowth/api/dto/execution/request/GrowthCockpitQueryRequest.java
+- src/main/java/com/lsam/TalentGrowth/api/dto/execution/request/GrowthExceptionReviewQueryRequest.java
+- src/main/java/com/lsam/TalentGrowth/api/dto/execution/response/GrowthCockpitQueryResponse.java
+- src/main/java/com/lsam/TalentGrowth/api/dto/execution/response/GrowthExceptionReviewQueryResponse.java
+- src/main/java/com/lsam/TalentGrowth/api/dto/common/ErrorResponse.java
+- src/main/java/com/lsam/TalentGrowth/application/service/execution/GrowthCockpitQueryService.java
+- src/main/java/com/lsam/TalentGrowth/application/service/execution/GrowthExceptionReviewQueryService.java
+- src/main/java/com/lsam/TalentGrowth/application/validator/execution/GrowthCockpitQueryValidator.java
+- src/main/java/com/lsam/TalentGrowth/application/validator/execution/GrowthExceptionReviewQueryValidator.java
+- src/main/java/com/lsam/TalentGrowth/application/mapper/execution/GrowthCockpitQueryMapper.java
+- src/main/java/com/lsam/TalentGrowth/application/mapper/execution/GrowthExceptionReviewQueryMapper.java
+- src/main/java/com/lsam/TalentGrowth/domain/model/execution/GrowthControlTimelineItem.java
+- src/main/java/com/lsam/TalentGrowth/domain/model/execution/ReadinessExceptionReviewItem.java
+- src/main/java/com/lsam/TalentGrowth/domain/model/execution/GrowthCockpitSnapshot.java
+- src/main/java/com/lsam/TalentGrowth/domain/port/execution/GrowthControlTimelineRepository.java
+- src/main/java/com/lsam/TalentGrowth/domain/port/execution/GrowthExceptionReviewRepository.java
+- src/main/java/com/lsam/TalentGrowth/domain/port/execution/GrowthCockpitSnapshotRepository.java
+- src/main/java/com/lsam/TalentGrowth/domain/port/execution/TalentGrowthAuditPort.java
+- src/main/java/com/lsam/TalentGrowth/infrastructure/repository/execution/JdbcGrowthControlTimelineRepository.java
+- src/main/java/com/lsam/TalentGrowth/infrastructure/repository/execution/JdbcGrowthExceptionReviewRepository.java
+- src/main/java/com/lsam/TalentGrowth/infrastructure/repository/execution/JdbcGrowthCockpitSnapshotRepository.java
+- src/main/java/com/lsam/TalentGrowth/infrastructure/audit/execution/DatabaseTalentGrowthAuditAdapter.java
+- src/main/java/com/lsam/TalentGrowth/config/execution/TalentGrowthPhaseAConfig.java
+- src/test/java/com/lsam/TalentGrowth/application/service/execution/GrowthCockpitQueryServiceTest.java
+- src/test/java/com/lsam/TalentGrowth/application/service/execution/GrowthExceptionReviewQueryServiceTest.java
+
+alignment_requirements:
+- DTO field names must follow the Phase A API DTO freeze
+- row-family assumptions must follow the DDL additive plan
+- cockpit and exception review responses must remain aligned to their fixed payload families
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120320_TALENTGROWTH_PHASE_A_STUB_FILE_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120330_TALENTGROWTH_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+# ============================================================
+# TALENTGROWTH PHASE A MODULE TASK BREAKDOWN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-module-task-breakdown
+
+purpose:
+Breaks the TalentGrowth Phase A stub plan into module-by-module
+execution tasks.
+
+baseline_dependencies:
+- Phase A growth timeline DDL additive plan
+- Phase A API starter
+- Phase A API DTO field freeze
+- Phase A implementation skeleton
+
+recommended_execution_order:
+- module_01_request_response_dto
+- module_02_validators
+- module_03_growth_cockpit_query
+- module_04_growth_exception_review_query
+- module_05_snapshot_and_audit_bridge
+- module_06_configuration
+- module_07_tests
+
+module_01_request_response_dto:
+  goal:
+    - create exact request and response DTO classes
+
+module_02_validators:
+  goal:
+    - reject invalid request shapes before service entry
+
+module_03_growth_cockpit_query:
+  goal:
+    - assemble readiness exceptions, management attention, and decision-support visibility
+
+module_04_growth_exception_review_query:
+  goal:
+    - expose readiness and decision-support blocker review rows
+
+module_05_snapshot_and_audit_bridge:
+  goal:
+    - define optional snapshot persistence and audit append boundary
+
+module_06_configuration:
+  goal:
+    - provide minimum wiring boundary
+
+module_07_tests:
+  goal:
+    - establish minimum Phase A test safety net
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120330_TALENTGROWTH_PHASE_A_MODULE_TASK_BREAKDOWN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120340_TALENTGROWTH_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+# ============================================================
+# TALENTGROWTH PHASE A EXACT STUB CONTENT ORDER PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-exact-stub-content-order-plan
+
+purpose:
+Defines the exact file content writing order for TalentGrowth
+Phase A stub generation.
+
+content_order_strategy:
+- start from dependency-light files
+- lock contracts first
+- write ports before adapters
+- write tests after service boundaries are clear
+
+first_slice_recommended_start:
+- ErrorResponse
+- GrowthCockpitQueryRequest
+- GrowthCockpitQueryResponse
+- GrowthCockpitQueryValidator
+- GrowthControlTimelineItem
+- GrowthControlTimelineRepository
+- GrowthCockpitQueryMapper
+- GrowthCockpitQueryService
+- GrowthCockpitQueryController
+- JdbcGrowthControlTimelineRepository
+- DatabaseTalentGrowthAuditAdapter
+- TalentGrowthPhaseAConfig
+- GrowthCockpitQueryServiceTest
+
+why_this_order:
+- starts from contract-first
+- keeps the first compile graph shallow
+- enables the cockpit query as the narrowest first vertical slice
+- delays exception review query until cockpit boundaries are stable
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120340_TALENTGROWTH_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120350_TALENTGROWTH_PHASE_A_SLICE_COMMAND_PACKS.md -->
+# ============================================================
+# TALENTGROWTH PHASE A SLICE COMMAND PACKS
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-command-packs
+
+purpose:
+Fixes the Termux-oriented stub generation packs for the TalentGrowth
+Phase A vertical slices.
+
+execution_policy:
+- design fixation only in this step
+- actual execution is later
+- Termux one-block style
+- mkdir -p plus cat standard
+- package base is com.lsam.TalentGrowth
+- no Japanese literals in Java source
+- additive only
+
+slice_01_growth_cockpit_query:
+  default_safe_output_root:
+    - $HOME/.tmp/talentgrowth-phase-a-slice01
+
+slice_02_growth_exception_review_query:
+  default_safe_output_root:
+    - $HOME/.tmp/talentgrowth-phase-a-slice02
+
+slice_03_snapshot_and_audit_bridge:
+  default_safe_output_root:
+    - $HOME/.tmp/talentgrowth-phase-a-slice03
+
+note:
+- actual stub generation should follow the fixed stub file plan and content order plan
+- command packs remain the only sequence authority during later execution
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120350_TALENTGROWTH_PHASE_A_SLICE_COMMAND_PACKS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120360_TALENTGROWTH_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+# ============================================================
+# TALENTGROWTH PHASE A SLICE FIELD FILL PLAN
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-slice-field-fill-plan
+
+purpose:
+Defines what each Phase A slice should contain once empty stubs move
+into field-filled implementation-ready stubs.
+
+global_rules:
+- exact field names follow the DTO freeze exactly
+- controller remains thin
+- service owns orchestration
+- repository owns persistence and query only
+- audit append remains separate
+- no Japanese literals in Java source
+
+slice_01_growth_cockpit_query:
+  expected_fill:
+    - request, response, validator, mapper, service, controller, repository, audit, config, tests
+
+slice_02_growth_exception_review_query:
+  expected_fill:
+    - request, response, validator, mapper, service, controller, repository, tests
+
+slice_03_snapshot_and_audit_bridge:
+  expected_fill:
+    - snapshot model, snapshot repository, audit port, snapshot adapter, audit adapter
+
+done_definition:
+- all slice seams are fixed
+- DTO and row-family alignment is explicit
+- tests are named before runtime generation begins
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120360_TALENTGROWTH_PHASE_A_SLICE_FIELD_FILL_PLAN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120370_TALENTGROWTH_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+# ============================================================
+# TALENTGROWTH PHASE A IMPLEMENTATION READY COMPLETION MEMO
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-implementation-ready-completion
+
+purpose:
+Declares that TalentGrowth Phase A planning has reached
+implementation-ready status without starting real runtime generation.
+
+completion_basis:
+- competitive positioning note added
+- growth signal aggregation architecture added
+- readiness exception review architecture added
+- growth control timeline model added
+- growth cockpit and growth exception exact payloads added
+- growth cockpit interface added
+- growth control implementation guide added
+- Phase A DDL additive plan added
+- Phase A API starter added
+- Phase A DTO field freeze added
+- Phase A implementation skeleton added
+- stub file plan added
+- module task breakdown added
+- exact stub content order plan added
+- slice command packs added
+- slice field-fill plan added
+
+implementation_ready_definition_met:
+- the design no longer depends on unresolved major architecture questions
+- the remaining work is fill-in and generation, not rediscovery
+- slice-by-slice execution order is fixed
+- DTO and row-family drift is constrained
+- audit separation remains explicit
+
+conclusion:
+- TalentGrowth Phase A is implementation-ready at the design level.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120370_TALENTGROWTH_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120380_TALENTGROWTH_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+# ============================================================
+# TALENTGROWTH PHASE A EXECUTION ENTRY PROTOCOL
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: TalentGrowth
+directory: 120.implementation
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: phase-a-execution-entry-protocol
+
+purpose:
+Defines the exact protocol to follow when the project later moves
+from planning artifacts into actual stub generation or SQL execution.
+
+entry_principles:
+- do not begin from slice_03
+- do not generate all files at once without slice order
+- do not execute SQL before review
+- keep additive only
+- keep command packs as the sole sequence authority
+- do not reopen already frozen DTO names casually
+
+execution_start_order:
+- step_01:
+  - execute slice_01 command pack into a safe output root
+- step_02:
+  - fill slice_01 contents according to the field-fill plan
+- step_03:
+  - review compile surface and naming consistency
+- step_04:
+  - execute slice_02 command pack
+- step_05:
+  - fill slice_02 contents according to the field-fill plan
+- step_06:
+  - review cockpit-to-exception-review seam
+- step_07:
+  - execute slice_03 command pack
+- step_08:
+  - fill slice_03 contents according to the field-fill plan
+- step_09:
+  - review snapshot and audit seams
+- step_10:
+  - only after design-to-code review, prepare SQL apply pack
+- step_11:
+  - only after review, execute additive SQL in controlled order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/120.implementation/120380_TALENTGROWTH_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/130.development/1303_TALENT_GROWTH_TEST_CASE_MATRIX_FIXED.md -->
+# TALENT GROWTH TEST CASE MATRIX FIXED
+
+status: draft-test-case-matrix-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の主要機能に対する
+test case matrix を固定し、
+実装・QA・リグレッションの基準を作るための資料である。
+
+# 1. matrix観点
+- happy path
+- validation error
+- permission error
+- invalid state transition
+- concurrency conflict
+- offline / reconnect
+- audit log
+- notification generation
+- export / batch side effect
+
+# 2. phase A core cases
+
+## T-A-001 employee dashboard basic read
+target:
+- GET /api/v1/employee/dashboard
+checks:
+- score fields present
+- alert fields present
+- wrong scope denied
+- cache invalidation after publish works
+
+## T-A-002 certification create / renew
+target:
+- POST /api/v1/employee-certifications
+- POST /api/v1/employee-certifications/{id}/renewal
+checks:
+- create succeeds with valid certification_id
+- invalid date range rejected
+- renewal updates expiry state
+- expiry alert event generated when applicable
+
+## T-A-003 skill create / update / evidence
+target:
+- POST /api/v1/employee-skills
+- PATCH /api/v1/employee-skills/{id}
+- POST /api/v1/employee-skills/{id}/evidences
+checks:
+- duplicate skill conflict rejected
+- proficiency range validated
+- evidence add reflected in count
+- permission scope enforced
+
+## T-A-004 self review save / submit
+target:
+- self-review/save
+- self-review/submit
+checks:
+- local draft rescue possible
+- submit requires correct state
+- submit creates event and notification
+- submit blocks when required fields missing
+
+## T-A-005 manager review save / submit
+target:
+- manager-review/save
+- manager-review/submit
+checks:
+- only team manager can act
+- score range validation works
+- lock_version conflict handled
+- submit updates queue state
+
+## T-A-006 send back
+target:
+- send-back
+checks:
+- send back reason required
+- target_role_code validated
+- employee sees return reason
+- audit append exists
+
+## T-A-007 role requirement create / update
+target:
+- POST/PATCH role-requirements
+checks:
+- weight sum validation works
+- invalid effective range rejected
+- HR only write
+- diff view shows changes
+
+## T-A-008 growth plan create / progress
+target:
+- POST growth-plans
+- POST growth-plans/{id}/progress
+checks:
+- action min 1 validation
+- progress percent 0..100
+- plan visible to employee and manager
+- dashboard invalidation works
+
+## T-A-009 approval / publish baseline
+target:
+- approve
+- publish
+checks:
+- invalid state rejected
+- approved before publish respected
+- publish creates result-ready notification
+- snapshots refresh triggered
+
+## T-A-010 calibration save baseline
+target:
+- calibration/save
+checks:
+- active calibration session required
+- reason mandatory
+- large delta warning path exists
+- calibration log append exists
+
+## T-A-011 audit search
+target:
+- audit-logs/search
+checks:
+- HR allowed
+- admin limited scope only
+- date range validation works
+- major actions searchable
+
+## T-A-012 RLS baseline
+target:
+- representative tables/endpoints
+checks:
+- employee_self sees own data only
+- manager sees team only
+- HR sees company scope
+- executive aggregate-first
+- admin no raw full evaluation by default
+
+# 3. phase B cases
+
+## T-B-001 academics CRUD
+checks:
+- create/update/read scope
+- file linkage optional
+- validation rules enforced
+
+## T-B-002 career / achievement CRUD
+checks:
+- date range valid
+- goal_linked_flag behavior valid
+- HR override path valid
+
+## T-B-003 HR review queue
+checks:
+- queue includes manager-submitted only
+- counts reflected on HR dashboard
+- invalid state hidden or rejected
+
+## T-B-004 skill evidence verification
+checks:
+- only verifier role can verify
+- verified flag persists
+- audit append created
+
+## T-B-005 distribution analytics
+checks:
+- denominator correct
+- generated_at shown
+- zero denominator -> N/A
+- role/cycle filters respected
+
+## T-B-006 evaluator bias analytics
+checks:
+- bias index formula stable
+- scope comparison correct
+- refresh job output consumable
+
+## T-B-007 MBO linkage degraded mode
+checks:
+- MBO available path
+- MBO unavailable partial state
+- core review continues without fatal break
+
+# 4. phase C cases
+
+## T-C-001 role-fit candidate extraction
+checks:
+- target_role filter required
+- inaccessible org rejected
+- candidate scores returned
+- stale snapshot handling clear
+
+## T-C-002 successor candidate management
+checks:
+- HR create/update allowed
+- employee self denied
+- executive read allowed
+- risk note protected
+
+## T-C-003 9box analytics
+checks:
+- axes displayed correctly
+- filter consistency
+- generated_at visible
+
+## T-C-004 training ROI analytics
+checks:
+- reporting currency applied
+- division by zero -> N/A
+- monthly refresh reflects new data
+
+## T-C-005 exports
+checks:
+- async create works
+- status polling works
+- ready notification sent
+- failed export gives stable error
+
+## T-C-006 admin settings
+checks:
+- role update policy valid
+- locale/currency settings persist
+- restricted caches purged on role downgrade
+
+# 5. phase D cases
+
+## T-D-001 AI draft generation
+checks:
+- allowed roles only
+- disabled feature rejected
+- reference log created
+- no final decision auto-change
+
+## T-D-002 AI bias check
+checks:
+- HR only
+- result advisory only
+- calibration board linkage non-authoritative
+
+## T-D-003 reopen governance
+checks:
+- published only
+- reason mandatory
+- audit append mandatory
+- stale client rejected correctly
+
+# 6. offline / sync cases
+
+## T-X-001 draft rescue after app restart
+checks:
+- self review draft restored
+- certification draft restored
+- sync status visible
+
+## T-X-002 token expiry during edit
+checks:
+- local draft preserved
+- re-auth path available
+- no data loss
+
+## T-X-003 conflict handling
+checks:
+- stale lock_version rejected
+- conflict UI shows local vs server
+- no auto-finalization
+
+# 7. notification / batch cases
+
+## T-X-004 outbox publish
+checks:
+- event created on business action
+- published status transitions
+- dead letter path when repeated failure
+
+## T-X-005 notification delivery
+checks:
+- in-app always generated
+- push/email retry path
+- dedupe works
+
+## T-X-006 expiry scan job
+checks:
+- expiring soon threshold respected
+- expired detection respected
+- duplicate alerts suppressed
+
+## T-X-007 snapshot refresh jobs
+checks:
+- publish triggers snapshot
+- nightly job idempotent enough
+- analytics consume latest valid snapshot
+
+# 8. regression minimum set
+release blocking minimum:
+- T-A-002
+- T-A-004
+- T-A-005
+- T-A-006
+- T-A-008
+- T-A-009
+- T-A-011
+- T-A-012
+- T-X-001
+- T-X-003
+- T-X-004
+- T-X-005
+
+# 9. 結論
+TalentGrowth の test case matrix は、
+phase別に happy path と failure path をセットで固定し、
+governance 系の regressions を release blocker として扱う。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/130.development/1303_TALENT_GROWTH_TEST_CASE_MATRIX_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/130.development/1304_TALENT_GROWTH_RELEASE_CHECKLIST_FIXED.md -->
+# TALENT GROWTH RELEASE CHECKLIST FIXED
+
+status: draft-release-checklist-fixed
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. 目的
+本資料は、
+TalentGrowth の release 前確認項目を固定し、
+評価・校正・監査の事故を防ぐための checklist を定義するための資料である。
+
+# 1. release gate 基本原則
+- phase scope が閉じていること
+- DB / API / UI / policy / jobs が整っていること
+- regression minimum set が通ること
+- audit / notification / batch がつながっていること
+- locale / currency / role 別に最低限確認すること
+
+# 2. schema / migration checks
+- required tables created
+- required indexes created
+- migration rollback note exists
+- no destructive unexpected change
+- default values and nullable assumptions verified
+
+# 3. API checks
+- endpoint inventory target completed
+- validation / error code stable
+- auth / scope / RLS verified
+- request_id emitted
+- audit_trace propagation verified
+
+# 4. UI checks
+- target phase screens reachable
+- loading / empty / error states verified
+- sync status visible where required
+- conflict handling UI verified
+- device variants checked for target screens
+
+# 5. workflow checks
+- self review -> manager review -> send back / approve flow works
+- growth plan create / progress works
+- certification renewal works
+- publish -> result visible works
+- reopen governance works if in scope
+
+# 6. analytics / formula checks
+- KPI formulas verified against sample data
+- score formulas verified against reference calculation
+- rank mapping thresholds verified
+- generated_at shown on analytics pages
+- zero denominator handling verified
+
+# 7. notification / batch checks
+- outbox event generated
+- notification created
+- in-app delivery visible
+- retry and failure path logged
+- expiry scan works
+- snapshot refresh works
+- export job completion/failure notification works if in scope
+
+# 8. security / governance checks
+- employee_self scope verified
+- manager team scope verified
+- HR company scope verified
+- executive aggregate-first verified
+- admin raw evaluation overreach not enabled by default
+- sensitive data caching restrictions verified
+- logout clears sensitive drafts
+
+# 9. locale / currency checks
+- ja at minimum verified
+- additional locale target verified if in scope
+- reporting currency display consistent
+- export locale and currency outputs verified
+
+# 10. observability checks
+- API errors logged
+- batch jobs logged
+- notification failures logged
+- audit search can trace representative flows
+- export job status visible
+
+# 11. release blocker list
+release must stop if:
+- approval invalid state possible
+- send back loses reason
+- publish without audit trail
+- RLS leak found
+- duplicate submit produces duplicate finalization
+- notification storm or duplicate dedupe failure
+- snapshot formula materially wrong
+- exported sensitive data scope broken
+
+# 12. rollout checks
+- feature flags set correctly
+- optional modules off by default if unfinished
+- background jobs scheduled
+- retry thresholds configured
+- alert / escalation channels configured
+
+# 13. post-release early watch
+first watch items:
+- review queue stuck count
+- notification failure count
+- outbox dead letter count
+- lock_version conflict spike
+- export failure rate
+- RLS denial anomaly rate
+
+# 14. 結論
+TalentGrowth の release checklist は、
+通常のUI確認だけでなく、
+approval,
+audit,
+notification,
+snapshot,
+RLS
+を release gate の中核として固定する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/130.development/1304_TALENT_GROWTH_RELEASE_CHECKLIST_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9003_TALENT_GROWTH_DESIGN_DECISION_NOTE_NO_COMMON_COMPONENTS_IN_THIS_CHAT.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# NO COMMON COMPONENTS IN THIS CHAT
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+本チャットでは、
+共通部品を設計しない。
+
+# 1. meaning
+- TalentGrowth 本体設計に集中する
+- 共通部品候補は別チャットで扱う
+- 本体責務と共通責務を混同しない
+- 二重正本を作らない
+
+# 2. not handled here
+- 共通部品の正式採用 / 保留 / 却下
+- official ledger への追加判断
+- BusinessOS / application-common-components / ERP の正本配置判断
+
+# 3. handled in this chat
+- ライバル比較
+- 競争対抗のフル機能追加
+- TalentGrowth 画面一覧詳細
+- TalentGrowth 本体設計の深掘り
+
+# 4. next handling
+共通部品は別チャットで、
+既存 official ledger との重複確認を含めて整理する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9003_TALENT_GROWTH_DESIGN_DECISION_NOTE_NO_COMMON_COMPONENTS_IN_THIS_CHAT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9004_TALENT_GROWTH_DESIGN_DECISION_NOTE_SCREEN_FLOW_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# SCREEN FLOW FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+画面一覧詳細に続いて、
+画面遷移と画面優先順位を固定した。
+
+# 1. meaning
+- 役割別導線を固定した
+- 端末別主利用画面を固定した
+- 実装段階ごとの対象画面を固定した
+- HR の校正 / 監査画面を初期必須とした
+
+# 2. core stance
+- employee flow is smartphone-first
+- manager flow is tablet-strong
+- HR / executive / admin flow is PC-primary
+- evidence -> review -> growth action の導線を固定する
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- API request / response exact payload 固定
+- data model exact column 固定
+- approval state machine 固定
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9004_TALENT_GROWTH_DESIGN_DECISION_NOTE_SCREEN_FLOW_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9005_TALENT_GROWTH_DESIGN_DECISION_NOTE_API_PAYLOAD_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# API PAYLOAD FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+画面遷移設計の次に、
+API request / response exact payload、
+approval state machine、
+entity id / key policy を固定した。
+
+# 1. meaning
+- 主要APIの入出力形を固定した
+- 評価承認の状態遷移を固定した
+- id / code / label の役割を固定した
+- audit / AI補助の取り扱いを明示した
+
+# 2. fixed focus
+- self review save / submit
+- manager review save / submit
+- calibration save
+- approval / publish
+- growth plan create / progress
+- certification renewal
+- role-fit candidate search
+- AI assist draft
+- audit log search
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- exact table column fixed
+- API endpoint full inventory
+- search / filter parameter exact policy
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9005_TALENT_GROWTH_DESIGN_DECISION_NOTE_API_PAYLOAD_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9006_TALENT_GROWTH_DESIGN_DECISION_NOTE_EXACT_COLUMNS_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# EXACT COLUMNS FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+API payload 固定の次に、
+exact table column と search / filter parameter policy を固定した。
+
+# 1. meaning
+- 主要テーブルの列を固定した
+- 一覧 / 検索 / 分析APIの parameter を固定した
+- id / code / audit 列の一貫性を高めた
+- 実装時の揺れを減らす基盤を作った
+
+# 2. fixed focus
+- employee_profile
+- employee_certification
+- employee_skill
+- role_requirement
+- evaluation_sheet
+- evaluation_score_detail
+- evaluation_change_audit
+- growth_plan
+- role_fit_snapshot
+- ai_assist_reference_log
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- full API endpoint inventory fixed
+- DDL skeleton fixed
+- RLS / access policy fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9006_TALENT_GROWTH_DESIGN_DECISION_NOTE_EXACT_COLUMNS_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9007_TALENT_GROWTH_DESIGN_DECISION_NOTE_DDL_AND_RLS_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# DDL AND RLS FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+exact table column fixed の次に、
+DDL skeleton と RLS / access policy を固定した。
+
+# 1. meaning
+- 主要テーブルの物理骨格を固定した
+- company scope と audit 列の扱いを強化した
+- role-based access と state-aware write を固定した
+- admin の過剰権限を既定にしない方針を明示した
+
+# 2. fixed focus
+- tg_employee_profile
+- tg_employee_certification
+- tg_employee_skill
+- tg_role_requirement
+- tg_evaluation_sheet
+- tg_evaluation_score_detail
+- tg_growth_plan
+- tg_role_fit_snapshot
+- tg_ai_assist_reference_log
+- tg_audit_export_log
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- full API endpoint inventory fixed
+- exact validation / error code policy fixed
+- reporting / export format fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9007_TALENT_GROWTH_DESIGN_DECISION_NOTE_DDL_AND_RLS_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9008_TALENT_GROWTH_DESIGN_DECISION_NOTE_ENDPOINT_VALIDATION_EXPORT_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# ENDPOINT VALIDATION EXPORT FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+DDL / RLS 固定の次に、
+full API endpoint inventory,
+validation / error code policy,
+reporting / export format を固定した。
+
+# 1. meaning
+- API 全体の棚卸しを固定した
+- validation と domain error code を固定した
+- export format と permission を固定した
+- 実装漏れと運用揺れを減らす基盤を作った
+
+# 2. fixed focus
+- endpoint group inventory
+- strict validation
+- machine-readable error code
+- export job async rule
+- locale / currency aware reporting
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- screen-by-screen API mapping fixed
+- DB table to endpoint mapping fixed
+- implementation phase package split fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9008_TALENT_GROWTH_DESIGN_DECISION_NOTE_ENDPOINT_VALIDATION_EXPORT_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9009_TALENT_GROWTH_DESIGN_DECISION_NOTE_SCREEN_API_DB_PACKAGE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# SCREEN API DB PACKAGE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+endpoint inventory 固定の次に、
+screen-by-screen API mapping,
+DB table to endpoint mapping,
+implementation phase package split を固定した。
+
+# 1. meaning
+- 各画面がどのAPIを叩くか固定した
+- 各テーブルがどのendpoint群に責務を持つか固定した
+- phase単位の実装束を固定した
+- 高機微アクセスの break-glass 統制も別紙で固定した
+
+# 2. fixed focus
+- screen -> API
+- API -> table
+- phase -> package
+- sensitive access control
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- business event / outbox / notification design fixed
+- batch / cron / snapshot job design fixed
+- frontend state / cache / offline policy fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9009_TALENT_GROWTH_DESIGN_DECISION_NOTE_SCREEN_API_DB_PACKAGE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9010_TALENT_GROWTH_DESIGN_DECISION_NOTE_EVENT_OUTBOX_BATCH_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# EVENT OUTBOX BATCH FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+screen/API/DB mapping 固定の次に、
+business event,
+outbox,
+notification,
+batch / cron / snapshot,
+delivery retry policy
+を固定した。
+
+# 1. meaning
+- state change と通知を分離した
+- outbox append-first を固定した
+- batch / cron / snapshot の job registry を固定した
+- retry / dead letter / escalation の考え方を固定した
+
+# 2. fixed focus
+- tg_outbox_event
+- tg_notification
+- tg_notification_delivery
+- expiry detection jobs
+- snapshot refresh jobs
+- recommendation refresh jobs
+- export async jobs
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- frontend state / cache / offline policy fixed
+- screen-by-screen field definition fixed
+- exact validation matrix per endpoint fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9010_TALENT_GROWTH_DESIGN_DECISION_NOTE_EVENT_OUTBOX_BATCH_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9011_TALENT_GROWTH_DESIGN_DECISION_NOTE_FRONTEND_STATE_SYNC_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# FRONTEND STATE SYNC FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+event / outbox / batch 設計の次に、
+frontend state,
+cache,
+offline,
+screen refresh,
+sync conflict recovery
+を固定した。
+
+# 1. meaning
+- frontend state layer を分割した
+- cache TTL と stale policy を固定した
+- offline allowed / not allowed を画面責務に沿って固定した
+- sync / conflict / retry / recovery の境界を固定した
+
+# 2. fixed focus
+- server truth first
+- selective offline
+- no offline finalization
+- visible sync status
+- explicit conflict handling
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- screen-by-screen field definition fixed
+- exact validation matrix per endpoint fixed
+- KPI / analytics formula fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9011_TALENT_GROWTH_DESIGN_DECISION_NOTE_FRONTEND_STATE_SYNC_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9012_TALENT_GROWTH_DESIGN_DECISION_NOTE_FIELD_AND_VALIDATION_MATRIX_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# FIELD AND VALIDATION MATRIX FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+frontend state / sync 設計の次に、
+screen-by-screen field definition と
+exact validation matrix per endpoint を固定した。
+
+# 1. meaning
+- 画面項目を field 単位で固定した
+- editable / visible / source を明示した
+- endpointごとの必須性、範囲、状態前提、権限前提を固定した
+- UI実装、API実装、QAの基準を揃えた
+
+# 2. fixed focus
+- employee dashboard field set
+- profile / academics / certifications / skills fields
+- self review / manager review fields
+- role requirement fields
+- growth plan fields
+- audit viewer fields
+- validation per major endpoint
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- KPI / analytics formula fixed
+- scoring formula exact fixed
+- notification message template fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9012_TALENT_GROWTH_DESIGN_DECISION_NOTE_FIELD_AND_VALIDATION_MATRIX_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9013_TALENT_GROWTH_DESIGN_DECISION_NOTE_FORMULA_AND_TEMPLATE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# FORMULA AND TEMPLATE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+field / validation matrix 固定の次に、
+KPI / analytics formula,
+scoring formula,
+notification message template
+を固定した。
+
+# 1. meaning
+- KPI の分子分母と閾値を固定した
+- score component / gate / rank の関係を固定した
+- notification message を template key ベースで固定した
+- analytics / score / message が別責務で整理された
+
+# 2. fixed focus
+- rank distribution
+- skill coverage
+- certification compliance
+- growth velocity
+- evaluator bias index
+- successor coverage
+- ROI ratio
+- current role fit / target role fit / promotion readiness / successor readiness
+- review / result / certification / growth / export notifications
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- exact screen wireframe block fixed
+- API request/response example set expansion
+- implementation task breakdown fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9013_TALENT_GROWTH_DESIGN_DECISION_NOTE_FORMULA_AND_TEMPLATE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9014_TALENT_GROWTH_DESIGN_DECISION_NOTE_WIREFRAME_EXAMPLE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# WIREFRAME EXAMPLE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+formula / template 固定の次に、
+exact screen wireframe block,
+device layout variant,
+expanded request/response example set
+を固定した。
+
+# 1. meaning
+- 主要画面の block 配置を固定した
+- 端末別のレイアウト差分を固定した
+- API example set を増補した
+- UI実装、APIモック、結合試験の接続がしやすくなった
+
+# 2. fixed focus
+- employee dashboard
+- self review
+- manager review input
+- HR dashboard
+- calibration board
+- executive dashboard
+- audit log viewer
+- device-specific layout
+- example payload expansion
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- implementation task breakdown fixed
+- test case matrix fixed
+- release checklist fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9014_TALENT_GROWTH_DESIGN_DECISION_NOTE_WIREFRAME_EXAMPLE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9015_TALENT_GROWTH_DESIGN_DECISION_NOTE_IMPL_TEST_RELEASE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# IMPLEMENTATION TEST RELEASE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+wireframe / example set 固定の次に、
+implementation task breakdown,
+test case matrix,
+release checklist
+を固定した。
+
+# 1. meaning
+- phase package を task 単位へ分解した
+- QA と regression の基準を固定した
+- release gate を governance 寄りに固定した
+- 実装から出荷までの運用線がつながった
+
+# 2. fixed focus
+- phase A~D task breakdown
+- release blocking regression set
+- release checklist
+- audit / notification / RLS / snapshot を release gate に入れる方針
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- integrated master rebuild
+- master index / overview refresh
+- implementation handoff block fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9015_TALENT_GROWTH_DESIGN_DECISION_NOTE_IMPL_TEST_RELEASE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9016_TALENT_GROWTH_DESIGN_DECISION_NOTE_MASTER_REBUILD_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# MASTER REBUILD FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+implementation / test / release 固定の次に、
+integrated master rebuilt,
+root index refresh,
+root overview refresh,
+implementation handoff fixed
+を実施した。
+
+# 1. meaning
+- root entry が整理された
+- integrated rebuilt が置かれた
+- 別チャット再開の入口が固定された
+- 実装開始順が handoff として固定された
+
+# 2. fixed focus
+- 000 root index refresh
+- 001 root overview refresh
+- 00 integrated master rebuilt
+- 006 implementation handoff fixed
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- concrete DDL migration block fixed
+- API mock dataset fixed
+- implementation kickoff handoff block for next chat
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9016_TALENT_GROWTH_DESIGN_DECISION_NOTE_MASTER_REBUILD_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9017_TALENT_GROWTH_DESIGN_DECISION_NOTE_DDL_MOCK_KICKOFF_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# DDL MOCK KICKOFF FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+master rebuild 固定の次に、
+concrete DDL migration block,
+API mock dataset,
+implementation kickoff handoff
+を固定した。
+
+# 1. meaning
+- 実装開始に近い migration block を置いた
+- mock dataset を固定した
+- 次チャットでそのまま開始できる kickoff handoff を置いた
+
+# 2. fixed focus
+- 0906 concrete DDL migration
+- 0811 API mock dataset
+- 1200006 implementation kickoff handoff
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- concrete SQL execution block for phase A
+- API stub response set fixed
+- phase A implementation command block fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9017_TALENT_GROWTH_DESIGN_DECISION_NOTE_DDL_MOCK_KICKOFF_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9018_TALENT_GROWTH_DESIGN_DECISION_NOTE_SQL_STUB_COMMAND_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# SQL STUB COMMAND FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+DDL mock kickoff 固定の次に、
+phase A concrete SQL execution block,
+API stub response set,
+phase A implementation command block
+を固定した。
+
+# 1. meaning
+- 実行寄りの SQL block を置いた
+- frontend / integration 用 stub response を置いた
+- 次チャット開始指示まで固定した
+
+# 2. fixed focus
+- 0907 phase A concrete SQL execution block
+- 0812 API stub response set
+- 1200007 phase A implementation command block
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A actual execution one-block fixed
+- phase A API route file skeleton fixed
+- phase A screen implementation order fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9018_TALENT_GROWTH_DESIGN_DECISION_NOTE_SQL_STUB_COMMAND_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9019_TALENT_GROWTH_DUPLICATE_AND_DEPRECATED_DESIGN_NOTE.md -->
+# TALENT GROWTH DUPLICATE AND DEPRECATED DESIGN NOTE
+
+status: deprecated-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+本資料は、
+旧 handoff / 旧配置 / 旧進捗表現を
+正式正本から外すための note である。
+
+# 1. deprecated items
+以下は旧系として扱う。
+
+- system name: talent-growth-and-evaluation
+- folder root: TalentGrowthEvaluation
+- 020.design/workflow/0201001_TALENT_GROWTH_EVALUATION_WORKFLOW_DESIGN.md
+- 020.design/screen/0201002_TALENT_GROWTH_EVALUATION_SCREEN_LIST_DESIGN.md
+- 020.design/screen/0201003_TALENT_GROWTH_EVALUATION_SCREEN_FIELDS_EXACT.md
+
+# 2. reason
+- current official root is TalentGrowth
+- current design progressed far beyond workflow / screen / fields exact only
+- current official root entry is 000 / 001 / 00 integrated rebuilt / 006 / 007
+- old progress note says next is tables / payload / permissions / audit ledger, which is outdated
+- old workflow statuses and entity names are no longer canonical
+
+# 3. official replacement
+replace old handoff usage with:
+- 000_TALENT_GROWTH_DESIGN_INDEX.md
+- 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+- 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+- 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+- 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+
+# 4. conclusion
+旧 handoff 群は削除または参照停止対象とし、
+TalentGrowth root 正式入口へ一本化する。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9019_TALENT_GROWTH_DUPLICATE_AND_DEPRECATED_DESIGN_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9020_TALENT_GROWTH_SINGLE_FILE_HANDOFF_NOTE.md -->
+# TALENT GROWTH SINGLE FILE HANDOFF NOTE
+
+status: handoff-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+single-file handoff を追加し、
+別チャット再開時の最短入口を固定するための note である。
+
+# 1. added file
+- 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+
+# 2. meaning
+- root entry は維持する
+- ただし再開最短入口は 008 に寄せる
+- 古い handoff / 旧 root は deprecated 扱いを維持する
+
+# 3. conclusion
+今後の別チャット再開は、
+まず 008 を見ればよい。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9020_TALENT_GROWTH_SINGLE_FILE_HANDOFF_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9021_TALENT_GROWTH_DESIGN_DECISION_NOTE_PHASE_A_EXECUTION_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# PHASE A EXECUTION FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+single-file handoff 固定の次に、
+phase A actual execution one-block,
+phase A API route file skeleton,
+phase A screen implementation order
+を固定した。
+
+# 1. meaning
+- DB着手ブロックを実行寄りに固定した
+- API route の最初の骨格を固定した
+- phase A の UI 実装順を固定した
+
+# 2. fixed focus
+- 0907 / 1200008 execution blocks
+- 0813 API route skeleton
+- 1200009 screen implementation order
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A actual route file one-block fixed
+- phase A seed insert one-block fixed
+- phase A smoke test command block fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9021_TALENT_GROWTH_DESIGN_DECISION_NOTE_PHASE_A_EXECUTION_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9021_TALENT_GROWTH_OLD_FOLDER_REMOVAL_NOTE.md -->
+# TALENT GROWTH OLD FOLDER REMOVAL NOTE
+
+status: cleanup-complete
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+旧フォルダ TalentGrowthEvaluation の削除記録を残すための note である。
+
+# 1. removal target
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowthEvaluation
+
+# 2. removal reason
+- TalentGrowth と TalentGrowthEvaluation が重複して見えていた
+- duplicate-check の結果、
+  - only_in_TalentGrowthEvaluation.txt は 0件
+  - diff_size_only.txt は 0件
+- 旧フォルダ固有ファイルおよびサイズ差分ファイルが確認されなかった
+
+# 3. conclusion
+TalentGrowthEvaluation は旧重複フォルダとして削除し、
+TalentGrowth を正式正本フォルダとして一本化した。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9021_TALENT_GROWTH_OLD_FOLDER_REMOVAL_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9022_TALENT_GROWTH_DESIGN_DECISION_NOTE_ROUTE_SEED_SMOKE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# ROUTE SEED SMOKE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+phase A execution fixed の次に、
+phase A actual route file one-block,
+phase A seed insert one-block,
+phase A smoke test command block
+を固定した。
+
+# 1. meaning
+- route stub の最初の実体束を置いた
+- demo baseline seed を一括投入できるようにした
+- DB と代表フローの smoke 確認手順を固定した
+
+# 2. fixed focus
+- 1200010 phase A actual route file one-block
+- 1200011 phase A seed insert one-block
+- 1200012 phase A smoke test command block
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A write route skeleton fixed
+- phase A service layer skeleton fixed
+- phase A repository query skeleton fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9022_TALENT_GROWTH_DESIGN_DECISION_NOTE_ROUTE_SEED_SMOKE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9022_TALENT_GROWTH_ROOT_ENTRYPOINT_NORMALIZATION_NOTE.md -->
+# TALENT GROWTH ROOT ENTRYPOINT NORMALIZATION NOTE
+
+status: entrypoint-normalization-complete
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+root 直下の正式入口を整理し、
+どれを最初に読むべきかを固定した記録である。
+
+# 1. normalized result
+official entrypoints:
+- 000_TALENT_GROWTH_DESIGN_INDEX.md
+- 001_TALENT_GROWTH_DESIGN_OVERVIEW.md
+- 00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+- 006_TALENT_GROWTH_IMPLEMENTATION_HANDOFF_FIXED.md
+- 007_TALENT_GROWTH_CANONICAL_HANDOFF_REFRESH.md
+- 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+- 009_TALENT_GROWTH_OFFICIAL_ENTRYPOINTS_FIXED.md
+
+# 2. restart first file
+- 008_TALENT_GROWTH_SINGLE_FILE_CANONICAL_HANDOFF.md
+
+# 3. conclusion
+root entry は一本化ではなく、
+役割分担された正式入口群として固定した。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9022_TALENT_GROWTH_ROOT_ENTRYPOINT_NORMALIZATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9023_TALENT_GROWTH_DESIGN_DECISION_NOTE_WRITE_SERVICE_REPO_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# WRITE SERVICE REPO FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+phase A route/seed/smoke 固定の次に、
+phase A write route skeleton,
+phase A service layer skeleton,
+phase A repository query skeleton
+を固定した。
+
+# 1. meaning
+- read stub から write 骨格へ進めた
+- route / service / repository の責務境界を固定した
+- audit / outbox / lock_version を write flow の標準にした
+
+# 2. fixed focus
+- 0814 phase A write route skeleton
+- 1200013 phase A service layer skeleton
+- 1200014 phase A repository query skeleton
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A validation function skeleton fixed
+- phase A outbox publisher job skeleton fixed
+- phase A notification read/write implementation block fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9023_TALENT_GROWTH_DESIGN_DECISION_NOTE_WRITE_SERVICE_REPO_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9024_TALENT_GROWTH_DESIGN_DECISION_NOTE_VALIDATION_OUTBOX_NOTIFICATION_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# VALIDATION OUTBOX NOTIFICATION FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+write/service/repository 固定の次に、
+phase A validation function skeleton,
+phase A outbox publisher job skeleton,
+phase A notification read/write implementation block
+を固定した。
+
+# 1. meaning
+- write 系の validation 下回りを固定した
+- outbox publish の最小 job 骨格を固定した
+- in-app notification read/write の最小実装束を固定した
+
+# 2. fixed focus
+- 1200015 phase A validation function skeleton
+- 1306 phase A outbox publisher job skeleton
+- 1200016 phase A notification read/write implementation block
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A RLS helper function skeleton fixed
+- phase A transaction wrapper and audit append block fixed
+- phase A route/service/repository one-block kickoff fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9024_TALENT_GROWTH_DESIGN_DECISION_NOTE_VALIDATION_OUTBOX_NOTIFICATION_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9025_TALENT_GROWTH_DESIGN_DECISION_NOTE_KICKOFF_ONEBLOCK_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# KICKOFF ONEBLOCK FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+official entrypoints fixed の次に、
+phase A route/service/repository one-block kickoff と
+phase A folder/file bootstrap one-block
+を固定した。
+
+# 1. meaning
+- 実装の最初の骨格を一括で置く前提を固定した
+- path 迷子を防ぐ bootstrap を固定した
+- phase A の kickoff が documents から implementation skeleton に近づいた
+
+# 2. fixed focus
+- 1200017 phase A route/service/repository one-block kickoff
+- 1200018 phase A folder/file bootstrap one-block
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A auth context helper skeleton fixed
+- phase A response/error helper actual block fixed
+- phase A route actual file one-block kickoff fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9025_TALENT_GROWTH_DESIGN_DECISION_NOTE_KICKOFF_ONEBLOCK_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9026_TALENT_GROWTH_DESIGN_DECISION_NOTE_AUTH_RESPONSE_ROUTE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# AUTH RESPONSE ROUTE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+phase A kickoff oneblock fixed の次に、
+phase A auth context helper skeleton,
+phase A response/error helper actual block,
+phase A route actual file one-block kickoff
+を固定した。
+
+# 1. meaning
+- auth context の共通入口を固定した
+- route 共通レスポンス形式を固定した
+- 最初の実ルート雛形を一括生成できるようにした
+
+# 2. fixed focus
+- 1200019 phase A auth context helper skeleton
+- 1200020 phase A response/error helper actual block
+- 1200021 phase A route actual file one-block kickoff
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A write route actual file one-block fixed
+- phase A audit/outbox transaction wrapper fixed
+- phase A RLS helper function skeleton fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9026_TALENT_GROWTH_DESIGN_DECISION_NOTE_AUTH_RESPONSE_ROUTE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9027_TALENT_GROWTH_DESIGN_DECISION_NOTE_WRITE_ACTUAL_AUDIT_RLS_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# WRITE ACTUAL AUDIT RLS FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+auth/response/route fixed の次に、
+phase A write route actual file one-block,
+phase A audit/outbox transaction wrapper,
+phase A RLS helper function skeleton
+を固定した。
+
+# 1. meaning
+- read route 雛形から write route 雛形へ進んだ
+- write core の transaction 束ね方を固定した
+- RLS baseline helper の最小形を固定した
+
+# 2. fixed focus
+- 1200022 phase A write route actual file one-block
+- 1307 phase A audit/outbox transaction wrapper
+- 1204 phase A RLS helper function skeleton
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A service actual file one-block fixed
+- phase A repository actual file one-block fixed
+- phase A validation actual file one-block fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9027_TALENT_GROWTH_DESIGN_DECISION_NOTE_WRITE_ACTUAL_AUDIT_RLS_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9028_TALENT_GROWTH_DESIGN_DECISION_NOTE_SERVICE_REPO_VALIDATION_ACTUAL_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# SERVICE REPO VALIDATION ACTUAL FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+write actual / audit / RLS fixed の次に、
+phase A service actual file one-block,
+phase A repository actual file one-block,
+phase A validation actual file one-block
+を固定した。
+
+# 1. meaning
+- service の first actual files を固定した
+- repository の first actual files を固定した
+- validation の first actual files を固定した
+- route -> validation -> service -> repository の実装線が揃った
+
+# 2. fixed focus
+- 1200023 phase A service actual file one-block
+- 1200024 phase A repository actual file one-block
+- 1200025 phase A validation actual file one-block
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A DB client helper block fixed
+- phase A transaction-aware repository actual block fixed
+- phase A compile/run smoke command block fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9028_TALENT_GROWTH_DESIGN_DECISION_NOTE_SERVICE_REPO_VALIDATION_ACTUAL_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9029_TALENT_GROWTH_DESIGN_DECISION_NOTE_DBCLIENT_TRANSACTION_SMOKE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# DBCLIENT TRANSACTION SMOKE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+service/repo/validation actual fixed の次に、
+phase A DB client helper block,
+phase A transaction-aware repository actual block,
+phase A compile/run smoke command block
+を固定した。
+
+# 1. meaning
+- DB access 共通入口を固定した
+- tx-aware repository の形を固定した
+- compile/run/smoke の最初の実行束を固定した
+
+# 2. fixed focus
+- 1200026 phase A DB client helper block
+- 1200027 phase A transaction-aware repository actual block
+- 1200028 phase A compile/run smoke command block
+
+# 3. next candidate
+次の深掘り候補は以下である。
+- phase A end-to-end kickoff one-block fixed
+- phase A request fixture file block fixed
+- phase A route/service/repository actual integrated block fixed
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9029_TALENT_GROWTH_DESIGN_DECISION_NOTE_DBCLIENT_TRANSACTION_SMOKE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9030_TALENT_GROWTH_DESIGN_DECISION_NOTE_IMPLEMENTATION_READINESS_ALL_IN_ONE_FIXED.md -->
+# TALENT GROWTH DESIGN DECISION NOTE
+# IMPLEMENTATION READINESS ALL-IN-ONE FIXED
+
+status: draft-decision-note
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. decision
+TalentGrowth では、
+DB client / tx-aware repo / smoke fixed の次に、
+implementation readiness all-in-one pack
+を固定した。
+
+# 1. meaning
+- 実装着手パックを一括化した
+- DB着手パックを一括化した
+- compile/run/smoke/triage を一括化した
+- readiness declaration まで到達した
+
+# 2. fixed focus
+- 1200029 phase A end-to-end kickoff one-block
+- 0815 request fixture and curl block
+- 1205 SQL/RLS/seed/verify all-in-one block
+- 1200030 compile/run/smoke and triage
+- 1200031 implementation readiness checklist and declaration
+
+# 3. result
+TalentGrowth は、
+以後「実装準備フェーズ」ではなく
+「phase A 実装着手フェーズ」として扱える。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9030_TALENT_GROWTH_DESIGN_DECISION_NOTE_IMPLEMENTATION_READINESS_ALL_IN_ONE_FIXED.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9031_TALENT_GROWTH_INTEGRATED_REGENERATION_NOTE.md -->
+# TALENT GROWTH INTEGRATED REGENERATION NOTE
+
+status: integrated-regeneration-complete
+system: TalentGrowth
+formal_name_ja: 人材成長支援・人材評価システム
+owner: Boss
+prepared_by: Zero
+
+# 0. purpose
+統合版の再生成記録を残すための note である。
+
+# 1. regenerated targets
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/00_TALENT_GROWTH_INTEGRATED_MASTER_REBUILT.md
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/00_TALENT_GROWTH_INTEGRATED.md
+
+# 2. regeneration source scope
+- official root entry files
+- 10.spec/**/*.md
+- 120.implementation/*.md
+- 130.development/*.md
+
+# 3. excluded from integrated source
+- existing integrated files themselves
+- 90.meta decision notes
+- archive files
+- duplicate-check working files
+
+# 4. result
+- source_file_count: 81
+- integrated_line_count: 25546
+- integrated_byte_count: 664894
+
+# 5. backup
+old integrated files were backed up into:
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/archive
+
+# 6. conclusion
+TalentGrowth の統合版を、現行正本群から再生成した。
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/9031_TALENT_GROWTH_INTEGRATED_REGENERATION_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/duplicate-check/duplicate_check_summary.md -->
+# TalentGrowth Duplicate Check Summary
+
+status: generated
+new_dir: /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth
+old_dir: /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowthEvaluation
+
+## counts
+- TalentGrowth files: 89
+- TalentGrowthEvaluation files: 20
+- common relative paths: 0
+- only in TalentGrowth: 89
+- only in TalentGrowthEvaluation: 20
+- same-name same-size files: 0
+- same-name different-size files: 0
+
+## generated files
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/TalentGrowth_file_list.txt
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/TalentGrowthEvaluation_file_list.txt
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/TalentGrowth_relative_paths.txt
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/TalentGrowthEvaluation_relative_paths.txt
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/common_relative_paths.txt
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/only_in_TalentGrowth.txt
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/only_in_TalentGrowthEvaluation.txt
+- /data/data/com.termux/files/home/01.civilization-system/07.applications/TalentGrowth/90.meta/duplicate-check/common_files_size_check.txt
+
+## meaning
+- only_in_TalentGrowth.txt:
+  TalentGrowth にしかないファイル
+- only_in_TalentGrowthEvaluation.txt:
+  TalentGrowthEvaluation にしかないファイル
+- common_files_size_check.txt:
+  同じ相対パスのファイルサイズ比較
+  [SAME_SIZE] は同サイズ
+  [DIFF_SIZE] はサイズ差あり
+
+## caution
+- この処理は削除を行わない
+- まず only_in_TalentGrowthEvaluation.txt と [DIFF_SIZE] を確認する
+- 旧フォルダ削除は確認後に行う
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/90.meta/duplicate-check/duplicate_check_summary.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/9000000_TALENT_GROWTH_META_INDEX.md -->
+# ============================================================
+# TALENT GROWTH META INDEX
+# ============================================================
+
+files:
+
+- 900410_TALENTGROWTH_20260416_DIFF_AUDIT_NOTE.md
+
+- 900420_TALENTGROWTH_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md
+
+- 900430_TALENTGROWTH_20260416_BUNDLE03_STUB_AUDIT_NOTE.md
+
+- 900440_TALENTGROWTH_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md
+
+- 900450_TALENTGROWTH_NEXT_APP_TRANSITION_HANDOFF.md
+
+- 900460_TALENTGROWTH_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md
+
+- 900470_TALENTGROWTH_PLANNING_STOP_RULE_NOTE.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/9000000_TALENT_GROWTH_META_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900410_TALENTGROWTH_20260416_DIFF_AUDIT_NOTE.md -->
+# ============================================================
+# TALENTGROWTH 20260416 DIFF AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: TalentGrowth
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: diff-audit-note
+
+purpose:
+Records the first differential reinforcement bundle applied to the
+existing TalentGrowth design.
+
+preserved_core:
+- talent growth and capability planning identity
+- existing business flow role
+- existing architecture layers
+- existing management support direction
+- existing platform direction
+
+added_in_this_bundle:
+- competitive positioning note
+- growth signal aggregation architecture
+- readiness exception review architecture
+- growth control timeline model
+- growth cockpit exact payload
+- growth exception review exact payload
+- growth cockpit interface note
+- growth control implementation guide
+
+why_this_bundle:
+- existing TalentGrowth design already had strong growth output handling
+- what was less explicit was the management-control layer above raw growth presentation
+- this bundle makes the app more implementation-ready without rewriting its base
+
+recommended_next_step:
+- proceed to Phase A entry documents for growth timeline, DDL, DTO freeze,
+  and slice-based execution planning
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900410_TALENTGROWTH_20260416_DIFF_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900420_TALENTGROWTH_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+# ============================================================
+# TALENTGROWTH 20260416 BUNDLE02 PHASE A AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: TalentGrowth
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle02-phase-a-audit
+
+purpose:
+Records the second reinforcement bundle applied to TalentGrowth,
+covering Phase A entry documents and exact implementation-start
+boundaries.
+
+bundle02_contents:
+- 020.architecture/021140_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_DDL_ADDITIVE_PLAN.md
+- 060.integration/060320_TALENTGROWTH_PHASE_A_API_STARTER.md
+- 060.integration/060330_TALENTGROWTH_PHASE_A_API_DTO_FIELD_FREEZE.md
+- 120.implementation/120310_TALENTGROWTH_PHASE_A_GROWTH_TIMELINE_IMPLEMENTATION_SKELETON.md
+
+result:
+- Phase A DDL direction fixed
+- Phase A endpoint set fixed
+- API DTO field set frozen
+- implementation skeleton fixed
+- TalentGrowth now has the same kind of Phase A entry footing
+  that made the previous apps easier to continue in bundled form
+
+recommended_next_step:
+- proceed to bundle_03 for stub file plan, module task breakdown, and content order
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900420_TALENTGROWTH_20260416_BUNDLE02_PHASE_A_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900430_TALENTGROWTH_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+# ============================================================
+# TALENTGROWTH 20260416 BUNDLE03 STUB AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: TalentGrowth
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle03-stub-audit
+
+purpose:
+Records the third reinforcement bundle applied to TalentGrowth,
+covering the stub planning boundary for Phase A.
+
+bundle03_contents:
+- 120.implementation/120320_TALENTGROWTH_PHASE_A_STUB_FILE_PLAN.md
+- 120.implementation/120330_TALENTGROWTH_PHASE_A_MODULE_TASK_BREAKDOWN.md
+- 120.implementation/120340_TALENTGROWTH_PHASE_A_EXACT_STUB_CONTENT_ORDER_PLAN.md
+
+result:
+- stub file boundary fixed
+- module task order fixed
+- exact stub content order fixed
+- TalentGrowth now has a bundled Phase A planning posture
+  similar to the previously completed apps before command-pack generation
+
+recommended_next_step:
+- proceed to bundle_04 for command packs, field-fill plans, and closure
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900430_TALENTGROWTH_20260416_BUNDLE03_STUB_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900440_TALENTGROWTH_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+# ============================================================
+# TALENTGROWTH 20260416 BUNDLE04 CLOSEOUT AUDIT NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: TalentGrowth
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: bundle04-closeout-audit
+
+purpose:
+Records the fourth reinforcement bundle applied to TalentGrowth,
+closing the Phase A planning layer at an implementation-ready state.
+
+bundle04_contents:
+- 120.implementation/120350_TALENTGROWTH_PHASE_A_SLICE_COMMAND_PACKS.md
+- 120.implementation/120360_TALENTGROWTH_PHASE_A_SLICE_FIELD_FILL_PLAN.md
+- 120.implementation/120370_TALENTGROWTH_PHASE_A_IMPLEMENTATION_READY_COMPLETION_MEMO.md
+- 120.implementation/120380_TALENTGROWTH_PHASE_A_EXECUTION_ENTRY_PROTOCOL.md
+
+result:
+- slice command packs fixed
+- field-fill plan fixed
+- implementation-ready completion declared
+- execution entry protocol fixed
+- TalentGrowth planning can stop here cleanly unless execution begins or contradiction appears
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900440_TALENTGROWTH_20260416_BUNDLE04_CLOSEOUT_AUDIT_NOTE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900450_TALENTGROWTH_NEXT_APP_TRANSITION_HANDOFF.md -->
+# ============================================================
+# TALENTGROWTH NEXT APP TRANSITION HANDOFF
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: TalentGrowth
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: next-app-transition-handoff
+
+purpose:
+Closes the current TalentGrowth planning stream cleanly and makes it
+easy to move to the next BusinessOS application without reopening
+already-settled TalentGrowth planning questions.
+
+current_status_summary:
+- differential reinforcement completed
+- bundle_01 completed
+- bundle_02 Phase A entry completed
+- bundle_03 stub planning completed
+- bundle_04 closeout completed
+- implementation-ready completion memo completed
+- execution entry protocol completed
+
+handoff_statement:
+- TalentGrowth can now be treated as planning-closed and
+  next-app-transition-ready.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900450_TALENTGROWTH_NEXT_APP_TRANSITION_HANDOFF.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900460_TALENTGROWTH_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+# ============================================================
+# TALENTGROWTH REUSABLE PHASEA REINFORCEMENT RECIPE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: TalentGrowth
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: reusable-phasea-reinforcement-recipe
+
+purpose:
+Captures the reusable reinforcement recipe proven during the
+TalentGrowth planning work so the next BusinessOS app can be
+advanced faster and with fewer unnecessary micro-iterations.
+
+default_bundle_strategy_for_next_app:
+- bundle_01:
+  - diff reinforcement plus audit
+- bundle_02:
+  - Phase A entry plus DDL plus DTO freeze
+- bundle_03:
+  - stub plan plus module tasks plus content order
+- bundle_04:
+  - command packs plus field-fill plans plus closure
+
+success_definition_for_next_app:
+- the next app reaches implementation-ready planning state
+- the BusinessOS ledger reflects the new status
+- the app can move to execution later without rediscovering core design intent
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900460_TALENTGROWTH_REUSABLE_PHASEA_REINFORCEMENT_RECIPE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900470_TALENTGROWTH_PLANNING_STOP_RULE_NOTE.md -->
+# ============================================================
+# TALENTGROWTH PLANNING STOP RULE NOTE
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: TalentGrowth
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-16
+scope: planning-stop-rule-note
+
+purpose:
+Defines the stop rule for the TalentGrowth planning layer so that
+the project does not continue adding design documents without need.
+
+default_stop_rule:
+- stop adding planning artifacts once implementation-ready status,
+  execution entry protocol, and transition handoff are all present
+
+default_action_after_stop_rule:
+- either begin actual generation using the execution entry protocol
+- or move to the next BusinessOS application
+
+closure_statement:
+- TalentGrowth planning should now be considered complete by default.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/TalentGrowth/900.meta/900470_TALENTGROWTH_PLANNING_STOP_RULE_NOTE.md -->

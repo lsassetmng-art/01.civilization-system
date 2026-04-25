@@ -21,3 +21,11 @@ reading order:
 cross_cutting_technical_domain:
 - 140.visual-runtime
   Host-to-runtime integration boundary with Persona Visual Runtime.
+
+- 060290_POCKETSECRETARY_DAILY_BRIEFING_PAYLOAD.md
+
+- 060300_POCKETSECRETARY_ASSISTANT_ACTION_PLAN_PAYLOAD.md
+
+- 060320_POCKETSECRETARY_PHASE_A_API_STARTER.md
+
+- 060330_POCKETSECRETARY_PHASE_A_API_DTO_FIELD_FREEZE.md

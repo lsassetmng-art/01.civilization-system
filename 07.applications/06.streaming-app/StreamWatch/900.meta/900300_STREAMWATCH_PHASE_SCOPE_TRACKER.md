@@ -2,32 +2,42 @@
 # STREAMWATCH PHASE SCOPE TRACKER
 # ============================================================
 
-status: draft-canonical
+status: canonical-meta
+layer: meta
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Tracks which design elements are phase-1 frozen, deferred, or intentionally outside the first implementation scope.
+This document tracks what is frozen into phase 1 and what remains deferred.
 
-## 2. Fixed Inputs
+## 2. Phase-1 Frozen
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+Frozen into phase 1:
 
-## 3. Design Direction
+- viewer_profile continuity
+- category-tree discovery
+- history versus progress separation
+- protected playlist interpretation for favorites and watch later
+- purchase / rental / membership execution surfaces
+- entitlement-aware watchability
+- TV handoff and same-device large-screen split
+- profile picker
+- series detail
+- library home
+- tv connect sheet
+- restriction gate
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Deferred
 
-## 4. Current Status
+Deferred from phase 1:
 
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+- dedicated favorite table family
+- dedicated watch-later table family
+- DRM offline download
+- gifting and party-watch features
+- guardian PIN override system

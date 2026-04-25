@@ -1,0 +1,8 @@
+# 0600700000_PERSONA_VISUAL_INTEGRATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 060.integration/070.visual/060.integration/070.visual
+
+- 0600700001_PERSONA_VISUAL_INTEGRATION_OVERVIEW.md
+- 0600700002_PERSONA_VISUAL_HOST_INTEGRATION.md

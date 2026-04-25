@@ -1,0 +1,8 @@
+# 0901300000_PERSONA_ACCESS_LICENSE_TRANSFER_INTERFACE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 090.interface/130.access_license_transfer/090.interface/130.access_license_transfer
+
+- 0901300001_PERSONA_ACCESS_LICENSE_TRANSFER_INTERFACE_OVERVIEW.md
+- 0901300002_PERSONA_LICENSE_ACCESS_TRANSFER_INTERFACE.md

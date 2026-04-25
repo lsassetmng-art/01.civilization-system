@@ -234,3 +234,64 @@ primary table profile.
 
 Secondary behavior may be noted, but profile ambiguity is prohibited.
 
+
+## Exact Table Profile Classes
+## Exact Table Profile Classes
+
+The following profile classes are canonical:
+
+- canonical_entity_table
+- revision_table
+- workflow_table
+- event_table
+- outbox_table
+- inbox_table
+- projection_table
+- audit_table
+- observability_table
+- reconciliation_table
+- enum_master_table
+
+Each table must belong to exactly one primary profile class.
+Mixed-purpose table design is prohibited unless explicitly reviewed.
+
+## Exact Column Minimum By Profile
+
+canonical_entity_table minimum:
+- id
+- code (optional by domain)
+- status
+- version
+- created_at
+- updated_at
+- created_by
+- updated_by
+
+revision_table minimum:
+- id
+- revision_group_id
+- superseded_by
+- effective_from
+- effective_to
+- status
+- created_at
+
+event_table minimum:
+- event_id
+- event_type
+- aggregate_type
+- aggregate_id
+- request_id
+- causation_id
+- correlation_id
+- occurred_at
+- schema_version
+
+audit_table minimum:
+- audit_id
+- aggregate_type
+- aggregate_id
+- action_code
+- actor_id
+- request_id
+- occurred_at

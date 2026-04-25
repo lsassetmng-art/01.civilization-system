@@ -1,0 +1,139 @@
+# ============================================================
+# PERSONA OS DEEP INDEX REBUILD REPORT
+# ============================================================
+
+status: completed
+system: PersonaOS
+generated_at: 20260417_083712
+
+summary:
+- rebuilt_deep_index_count: 280
+- audited_index_count_after_rebuild: 299
+- missing_reference_count_after_rebuild: 555
+- rebuilt_integrated: 000000_PERSONA_OS_INTEGRATED_CANONICAL_REBUILT_20260417_083712.md
+
+interpretation:
+- if the count dropped sharply, most issues were caused by stale deep index files
+- remaining hits are likely narrative documents or non-index manual references
+
+remaining_missing_reference_head:
+- 000001_PERSONA_OS_MISSING_REFERENCES_AFTER_DEEP_INDEX_REBUILD_20260417_083712
+- 
+- 000002_PERSONA_OS_REBUILT_DEEP_INDEX_FILES_20260417_083712.txt
+- 000.rules/010.core/0000100_PERSONA_OS_CORE_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/020.identity/00002000_PERSONA_OS_IDENTITY_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/030.state/00003000_PERSONA_OS_STATE_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/040.memory/00004000_PERSONA_OS_MEMORY_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/050.growth/00005000_PERSONA_OS_GROWTH_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/060.builder/00006000_PERSONA_OS_BUILDER_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/070.visual/00007000_PERSONA_OS_VISUAL_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/080.runtime_hosting/00008000_PERSONA_OS_RUNTIME_HOSTING_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/090.snapshot/00009000_PERSONA_OS_SNAPSHOT_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/100.package/00010000_PERSONA_OS_PACKAGE_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/110.distribution/00011000_PERSONA_OS_DISTRIBUTION_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/120.external_rights/00012000_PERSONA_OS_EXTERNAL_RIGHTS_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/130.access_license_transfer/00013000_PERSONA_OS_ACCESS_LICENSE_TRANSFER_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/140.integration/00014000_PERSONA_OS_INTEGRATION_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/150.security/00015000_PERSONA_OS_SECURITY_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/160.governance/00016000_PERSONA_OS_GOVERNANCE_RULE_INDEX.md | missing_dir | 000.rules/
+- 000.rules/170.operations_support/00017000_PERSONA_OS_OPERATIONS_SUPPORT_RULE_INDEX.md | missing_dir | 000.rules/
+- 010.constitution/010.core/0100100000_PERSONA_CORE_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/020.identity/0100200000_PERSONA_IDENTITY_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/030.state/0100300000_PERSONA_STATE_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/040.memory/0100400000_PERSONA_MEMORY_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/050.growth/0100500000_PERSONA_GROWTH_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/060.builder/0100600000_PERSONA_BUILDER_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/070.visual/0100700000_PERSONA_VISUAL_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/080.runtime_hosting/0100800000_PERSONA_RUNTIME_HOSTING_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/090.snapshot/0100900000_PERSONA_SNAPSHOT_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/100.package/0101000000_PERSONA_PACKAGE_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/110.distribution/0101100000_PERSONA_DISTRIBUTION_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/120.external_rights/0101200000_PERSONA_EXTERNAL_RIGHTS_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/130.access_license_transfer/0101300000_PERSONA_ACCESS_LICENSE_TRANSFER_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/140.integration/0101400000_PERSONA_INTEGRATION_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/150.security/0101500000_PERSONA_SECURITY_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/160.governance/0101600000_PERSONA_GOVERNANCE_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 010.constitution/170.operations_support/0101700000_PERSONA_OPERATIONS_SUPPORT_CONSTITUTION_INDEX.md | missing_dir | 010.constitution/
+- 020.architecture/010.core/0200100000_PERSONA_CORE_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/020.identity/0200200000_PERSONA_IDENTITY_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/030.state/0200300000_PERSONA_STATE_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/040.memory/0200400000_PERSONA_MEMORY_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/050.growth/0200500000_PERSONA_GROWTH_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/060.builder/0200600000_PERSONA_BUILDER_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/070.visual/0200700000_PERSONA_VISUAL_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/080.runtime_hosting/0200800000_PERSONA_RUNTIME_HOSTING_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/090.snapshot/0200900000_PERSONA_SNAPSHOT_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/100.package/0201000000_PERSONA_PACKAGE_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/110.distribution/0201100000_PERSONA_DISTRIBUTION_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/120.external_reflection/000_EXTERNAL_REFLECTION_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/120.external_rights/0201200000_PERSONA_EXTERNAL_RIGHTS_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/130.access_license_transfer/0201300000_PERSONA_ACCESS_LICENSE_TRANSFER_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/140.integration/0201400000_PERSONA_INTEGRATION_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/140.visual/0201400000_PERSONA_VISUAL_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/150.security/0201500000_PERSONA_SECURITY_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/160.governance/0201600000_PERSONA_GOVERNANCE_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 020.architecture/170.operations_support/0201700000_PERSONA_OPERATIONS_SUPPORT_ARCHITECTURE_INDEX.md | missing_dir | 020.architecture/
+- 030.model/010.core/0300100000_PERSONA_CORE_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/020.identity/0300200000_PERSONA_IDENTITY_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/030.state/0300300000_PERSONA_STATE_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/040.memory/0300400000_PERSONA_MEMORY_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/050.growth/0300500000_PERSONA_GROWTH_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/060.builder/0300600000_PERSONA_BUILDER_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/070.visual/0300700000_PERSONA_VISUAL_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/080.runtime_hosting/0300800000_PERSONA_RUNTIME_HOSTING_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/090.snapshot/0300900000_PERSONA_SNAPSHOT_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/100.package/0301000000_PERSONA_PACKAGE_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/110.distribution/0301100000_PERSONA_DISTRIBUTION_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/120.external_reflection/000_EXTERNAL_REFLECTION_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/120.external_rights/0301200000_PERSONA_EXTERNAL_RIGHTS_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/130.access_license_transfer/0301300000_PERSONA_ACCESS_LICENSE_TRANSFER_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/140.integration/030140000_PERSONA_INTEGRATION_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/150.security/030150000_PERSONA_SECURITY_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/160.governance/030160000_PERSONA_GOVERNANCE_MODEL_INDEX.md | missing_dir | 030.model/
+- 030.model/170.operations_support/030170000_PERSONA_OPERATIONS_SUPPORT_MODEL_INDEX.md | missing_dir | 030.model/
+- 040.runtime/010.core/0400100000_PERSONA_CORE_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/020.identity/0400200000_PERSONA_IDENTITY_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/030.state/0400300000_PERSONA_STATE_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/040.memory/0400400000_PERSONA_MEMORY_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/050.growth/0400500000_PERSONA_GROWTH_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/060.builder/0400600000_PERSONA_BUILDER_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/070.visual/0400700000_PERSONA_VISUAL_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/080.runtime_hosting/0400800000_PERSONA_RUNTIME_HOSTING_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/090.snapshot/0400900000_PERSONA_SNAPSHOT_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/100.package/0401000000_PERSONA_PACKAGE_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/110.distribution/0401100000_PERSONA_DISTRIBUTION_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/120.external_rights/0401200000_PERSONA_EXTERNAL_RIGHTS_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/130.access_license_transfer/0401300000_PERSONA_ACCESS_LICENSE_TRANSFER_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/140.integration/040140000_PERSONA_INTEGRATION_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/140.visual/0401400000_PERSONA_VISUAL_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/150.security/040150000_PERSONA_SECURITY_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/160.governance/040160000_PERSONA_GOVERNANCE_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 040.runtime/170.operations_support/040170000_PERSONA_OPERATIONS_SUPPORT_RUNTIME_INDEX.md | missing_dir | 040.runtime/
+- 050.flow/010.core/0500100000_PERSONA_CORE_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/020.identity/0500200000_PERSONA_IDENTITY_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/030.state/0500300000_PERSONA_STATE_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/040.memory/0500400000_PERSONA_MEMORY_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/050.growth/0500500000_PERSONA_GROWTH_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/060.builder/0500600000_PERSONA_BUILDER_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/070.visual/0500700000_PERSONA_VISUAL_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/080.runtime_hosting/0500800000_PERSONA_RUNTIME_HOSTING_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/090.snapshot/0500900000_PERSONA_SNAPSHOT_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/100.package/0501000000_PERSONA_PACKAGE_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/110.distribution/0501100000_PERSONA_DISTRIBUTION_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/120.external_reflection/000_EXTERNAL_REFLECTION_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/120.external_rights/0501200000_PERSONA_EXTERNAL_RIGHTS_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/130.access_license_transfer/0501300000_PERSONA_ACCESS_LICENSE_TRANSFER_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/140.integration/050140000_PERSONA_INTEGRATION_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/150.security/050150000_PERSONA_SECURITY_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/160.governance/050160000_PERSONA_GOVERNANCE_FLOW_INDEX.md | missing_dir | 050.flow/
+- 050.flow/170.operations_support/050170000_PERSONA_OPERATIONS_SUPPORT_FLOW_INDEX.md | missing_dir | 050.flow/
+- 060.integration/010.core/060010000_PERSONA_CORE_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/020.identity/060020000_PERSONA_IDENTITY_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/030.state/060030000_PERSONA_STATE_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/040.memory/060040000_PERSONA_MEMORY_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/050.growth/0600500000_PERSONA_GROWTH_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/060.builder/0600600000_PERSONA_BUILDER_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/070.visual/0600700000_PERSONA_VISUAL_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/080.runtime_hosting/0600800000_PERSONA_RUNTIME_HOSTING_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/090.snapshot/0600900000_PERSONA_SNAPSHOT_INTEGRATION_INDEX.md | missing_dir | 060.integration/
+- 060.integration/100.package/0601000000_PERSONA_PACKAGE_INTEGRATION_INDEX.md | missing_dir | 060.integration/

@@ -7,4 +7,4 @@
 - payload shapes
 - screen inventory and fields
 - persona/background requirements
-- billing tiers
+- 2-plan billing tiers (Free 0円 / Pro 500円)

@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona release and distribution.
+Defines the implementation design for Civilization-side persona release and distribution.
 
 # 2. IMPLEMENTATION TARGETS
 

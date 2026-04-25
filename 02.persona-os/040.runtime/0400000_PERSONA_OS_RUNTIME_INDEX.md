@@ -1,33 +1,65 @@
-# ============================================================
-# PERSONA OS RUNTIME INDEX
-# ============================================================
+# 0400000_PERSONA_OS_RUNTIME_INDEX
 
-status: canonical
-layer: runtime
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the official reading entry for PersonaOS runtime documents.
+directory: 040.runtime
 
-# ============================================================
-# OFFICIAL DOMAIN ORDER
-# ============================================================
-
-010.core
-030.state
-040.memory
-050.growth
-060.builder
-070.visual
-080.runtime-hosting
-090.snapshot
-100.package
-110.distribution
-120.external-rights
-130.access-license-transfer
-140.integration
-150.security
-160.governance
-170.operations-support
+- 0400000_RUNTIME_INDEX.md
+- 0400001_PERSONA_OS_RUNTIME_OVERVIEW.md
+- 0400001_PERSONA_RUNTIME_OVERVIEW.md
+- 0400002_RUNTIME_OVERVIEW.md
+- 0400003_PERSONA_EVENT_APPLY_RUNTIME.md
+- 0400004_PERSONA_GROWTH_RUNTIME.md
+- 0400005_PERSONA_MEMORY_RUNTIME.md
+- 0400006_PERSONA_VISUAL_RUNTIME.md
+- 0400007_PERSONA_SNAPSHOT_RUNTIME.md
+- 0400008_PERSONA_APPROVAL_RUNTIME.md
+- 0400009_PERSONA_CAPABILITY_RUNTIME.md
+- 0400010_PERSONA_COMMUNICATION_RUNTIME.md
+- 0400011_PERSONA_ENGINE_RUNTIME.md
+- 0400012_PERSONA_EVENT_PIPELINE_RUNTIME.md
+- 0400013_PERSONA_MEMORY_RUNTIME_DUPLICATE.md
+- 0400014_PERSONA_RUNTIME_ARCHITECTURE.md
+- 0400015_PERSONA_RUNTIME_COORDINATION.md
+- 0400016_PERSONA_SOCIAL_RUNTIME.md
+- 0400017_PERSONA_STATE_RUNTIME.md
+- 040_BUSINESS_EVENT_APPLY_RUNTIME.md
+- 040_PERSONA-OS_RUNTIME_INDEX.md
+- 040_PERSONA-OS_RUNTIME_OVERVIEW.md
+- 041_PERSONA_EVENT_VALIDATION_RUNTIME.md
+- 042_PERSONA_IDEMPOTENT_APPLY_RUNTIME.md
+- 043_PERSONA_REJECT_RUNTIME.md
+- 044_PERSONA_RESULT_FEEDBACK_RUNTIME.md
+- 999_RUNTIME_INDEX.txt
+- 010.core/
+- 020.identity/
+- 030.state/
+- 040.memory/
+- 040.runtime/
+- 050.external/
+- 050.growth/
+- 060.builder/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.snapshot/
+- 100.integration/
+- 100.package/
+- 110.distribution/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 130.builder/
+- 140.business_worker_link/
+- 140.consultation_common/
+- 140.integration/
+- 140.visual/
+- 150.secretary_interaction_common/
+- 150.security/
+- 160.governance/
+- 160.notification_common/
+- 170.background_common/
+- 170.operations_support/
+- 210.persona_core/
+- 220.rights_external/
+- 230.external_sync/
+- 240.expression_composition/
+- 250.cross_cutting_completion/

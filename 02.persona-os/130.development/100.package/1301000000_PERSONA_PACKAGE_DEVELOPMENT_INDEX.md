@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA PACKAGE DEVELOPMENT INDEX
-# ============================================================
+# 1301000000_PERSONA_PACKAGE_DEVELOPMENT_INDEX
 
-status: canonical
-layer: development
-domain: package
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA PACKAGE DEVELOPMENT documents.
+directory: 130.development/100.package
 
-# ============================================================
-# FILES
-# ============================================================
-
-1301000000_PERSONA_PACKAGE_DEVELOPMENT_INDEX.md
-1301000001_PERSONA_PACKAGE_DEVELOPMENT_OVERVIEW.md
-1301000002_PERSONA_PACKAGE_DEVELOPMENT_GUIDE.md
+- 1301000001_PERSONA_PACKAGE_DEVELOPMENT_OVERVIEW.md
+- 1301000002_PERSONA_PACKAGE_DEVELOPMENT_GUIDE.md
+- 130.development/

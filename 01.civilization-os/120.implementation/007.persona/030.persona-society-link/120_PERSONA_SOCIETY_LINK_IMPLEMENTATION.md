@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona society links.
+Defines the implementation design for Civilization-side persona society links.
 
 # 2. IMPLEMENTATION TARGETS
 

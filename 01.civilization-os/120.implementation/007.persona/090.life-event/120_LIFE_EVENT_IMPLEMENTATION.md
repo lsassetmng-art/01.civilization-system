@@ -11,7 +11,7 @@ prepared_by: Zero
 
 # 1. PURPOSE
 
-Defines the implementation design for persona life events.
+Defines the implementation design for Civilization-side persona life events.
 
 # 2. IMPLEMENTATION TARGETS
 
@@ -48,3 +48,23 @@ Canonical structures:
 - effect/state audit
 - scope visibility
 
+
+## Exact Life Event Rule
+## Exact Life Event Rule
+
+Major persona life transition must produce:
+
+- immutable life event record
+- persona state transition trace
+- event emission linkage
+
+## Exact Life Event Boundary
+
+Life event is not identical to:
+- memory surface
+- history artifact
+- runtime trace
+- notification projection
+
+These may reference the life event,
+but may not replace life-event truth.

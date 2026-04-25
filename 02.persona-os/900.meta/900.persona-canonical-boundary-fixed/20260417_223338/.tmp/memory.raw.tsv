@@ -1,0 +1,1271 @@
+PERSONA_MEMORY	1	# 0300800008_persona_memory:
+PERSONA_MEMORY	1	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	100	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	100	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	10052	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	10059	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	100972	- persona_memory:
+PERSONA_MEMORY	100980	- persona_memory:
+PERSONA_MEMORY	101273	- persona_memory:
+PERSONA_MEMORY	10162	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	10169	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	102091	component: persona-memory-runtime
+PERSONA_MEMORY	10219	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	103	persona_memory_id:
+PERSONA_MEMORY	103019	component: persona-memory-runtime
+PERSONA_MEMORY	10316	model_name: persona_memory
+PERSONA_MEMORY	10319	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	10322	persona_memory_id:
+PERSONA_MEMORY	103290	- persona_memory:
+PERSONA_MEMORY	103454	- persona_memory:
+PERSONA_MEMORY	10363	model_name: persona_memory_retrieval
+PERSONA_MEMORY	103638	state is not memory truth:
+PERSONA_MEMORY	103684	raw memory truth,:
+PERSONA_MEMORY	103694	raw memory truth:
+PERSONA_MEMORY	10370	persona_memory_retrieval_id:
+PERSONA_MEMORY	103718	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	10388	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	103968	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	10409	model_name: persona_memory_decay
+PERSONA_MEMORY	10416	persona_memory_decay_id:
+PERSONA_MEMORY	104238	Snapshot is not memory truth.:
+PERSONA_MEMORY	10481	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	104897	State policy does not redefine memory truth.:
+PERSONA_MEMORY	105171	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	105263	- persona memory truth:
+PERSONA_MEMORY	105291	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	10532	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	10583	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	106	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	10680	model_name: persona_memory
+PERSONA_MEMORY	10683	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	10686	persona_memory_id:
+PERSONA_MEMORY	10727	model_name: persona_memory_retrieval
+PERSONA_MEMORY	10734	persona_memory_retrieval_id:
+PERSONA_MEMORY	10752	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	10773	model_name: persona_memory_decay
+PERSONA_MEMORY	10780	persona_memory_decay_id:
+PERSONA_MEMORY	10790	- persona memory truth:
+PERSONA_MEMORY	108	- state is not memory truth:
+PERSONA_MEMORY	108	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | status: exact-ready-draft
+PERSONA_MEMORY	10845	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	10896	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	109	 -> persona_memory:
+PERSONA_MEMORY	109	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	10969	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	10978	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	1107	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	110942	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	111171	model_name: persona_memory
+PERSONA_MEMORY	111174	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	111177	persona_memory_id:
+PERSONA_MEMORY	111219	model_name: persona_memory_retrieval
+PERSONA_MEMORY	111226	persona_memory_retrieval_id:
+PERSONA_MEMORY	111244	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	111266	model_name: persona_memory_decay
+PERSONA_MEMORY	111273	persona_memory_decay_id:
+PERSONA_MEMORY	111339	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	111458	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	113716	persona-memory:
+PERSONA_MEMORY	11447	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+PERSONA_MEMORY	11455	model_name: persona_memory
+PERSONA_MEMORY	114753	persona-memory:
+PERSONA_MEMORY	11484	persona_memory:
+PERSONA_MEMORY	11526	 -> persona_memory:
+PERSONA_MEMORY	11568	 -> persona_memory:
+PERSONA_MEMORY	115681	persona-memory:
+PERSONA_MEMORY	11646	 -> persona_memory:
+PERSONA_MEMORY	117	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	117058	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	117067	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	11714	 -> persona_memory:
+PERSONA_MEMORY	11741	 -> persona_memory:
+PERSONA_MEMORY	117479	## persona_memory:
+PERSONA_MEMORY	117480	persona_memory:
+PERSONA_MEMORY	117481	persona_memory_archive:
+PERSONA_MEMORY	117639	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	117648	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	11768	 -> persona_memory:
+PERSONA_MEMORY	11773	FILE: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+PERSONA_MEMORY	11781	model_name: persona_memory
+PERSONA_MEMORY	117844	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	117853	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	117906	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	117910	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	11795	persona_memory:
+PERSONA_MEMORY	117961	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	117986	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	117995	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	118	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	118	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	118013	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	118022	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	118032	| 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	118035	| 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	118060	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	118093	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	118116	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	118174	model_name: persona_memory
+PERSONA_MEMORY	118177	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	118180	persona_memory_id:
+PERSONA_MEMORY	118201	component: persona-memory-runtime
+PERSONA_MEMORY	11823	 -> persona_memory:
+PERSONA_MEMORY	118278	 -> persona_memory:
+PERSONA_MEMORY	118304	 -> persona_memory:
+PERSONA_MEMORY	118311	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	118407	## persona_memory:
+PERSONA_MEMORY	118408	persona_memory:
+PERSONA_MEMORY	118409	persona_memory_archive:
+PERSONA_MEMORY	118434	 -> persona_memory:
+PERSONA_MEMORY	118475	 -> persona_memory:
+PERSONA_MEMORY	118567	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	118576	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	118623	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	118625	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	118654	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	118772	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	118781	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	118834	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	118838	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	118889	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	118941	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	118950	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	118960	| 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	118963	| 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	118988	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	119021	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	119044	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	119092	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	119102	model_name: persona_memory
+PERSONA_MEMORY	119105	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	119108	persona_memory_id:
+PERSONA_MEMORY	119175	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	119206	 -> persona_memory:
+PERSONA_MEMORY	119232	 -> persona_memory:
+PERSONA_MEMORY	119239	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	119295	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	119362	 -> persona_memory:
+PERSONA_MEMORY	119403	 -> persona_memory:
+PERSONA_MEMORY	119551	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	119553	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	119582	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	12	model_name: persona_memory
+PERSONA_MEMORY	12	model_name: persona_memory_decay
+PERSONA_MEMORY	12	model_name: persona_memory_retrieval
+PERSONA_MEMORY	120	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	120020	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	120103	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	120223	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	120337	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	120422	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	120466	- state is separated from memory truth:
+PERSONA_MEMORY	120607	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	120728	model_name: persona_memory
+PERSONA_MEMORY	120731	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	120734	persona_memory_id:
+PERSONA_MEMORY	120769	model_name: persona_memory_retrieval
+PERSONA_MEMORY	120776	persona_memory_retrieval_id:
+PERSONA_MEMORY	120794	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	120809	model_name: persona_memory_decay
+PERSONA_MEMORY	120816	persona_memory_decay_id:
+PERSONA_MEMORY	120875	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	120950	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	120998	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	121018	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	12111	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	121265	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	121350	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	121394	- state is separated from memory truth:
+PERSONA_MEMORY	121535	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	121656	model_name: persona_memory
+PERSONA_MEMORY	121659	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	121662	persona_memory_id:
+PERSONA_MEMORY	121697	model_name: persona_memory_retrieval
+PERSONA_MEMORY	121704	persona_memory_retrieval_id:
+PERSONA_MEMORY	121722	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	121737	model_name: persona_memory_decay
+PERSONA_MEMORY	121744	persona_memory_decay_id:
+PERSONA_MEMORY	121803	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	121878	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	121926	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	121946	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	122	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	122	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	122201	- state is separated from memory truth:
+PERSONA_MEMORY	122493	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	122748	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	123129	- state is separated from memory truth:
+PERSONA_MEMORY	123262	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	123421	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	12367	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	123676	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	12376	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	123923	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	124154	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	124190	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	12474	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_external_reflection_20260411_172429.md | missing_file | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	124851	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	1250	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	125082	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	126	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	127	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	127	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	127859	- state is not memory truth:
+PERSONA_MEMORY	127868	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	128269	State policy does not redefine memory truth.:
+PERSONA_MEMORY	128543	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	128663	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	128787	- state is not memory truth:
+PERSONA_MEMORY	128796	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	129	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	129	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	13	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	13	persona-memory:
+PERSONA_MEMORY	131	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	13186	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	13195	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	133	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	13463	persona_memory:
+PERSONA_MEMORY	13486	persona_memory:
+PERSONA_MEMORY	13514	 └ persona_memory:
+PERSONA_MEMORY	1354	999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	13545	 ├ persona_memory:
+PERSONA_MEMORY	13637	 └ persona_memory:
+PERSONA_MEMORY	137088	persona-memory:
+PERSONA_MEMORY	138	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	138	model_name: persona_memory_retrieval
+PERSONA_MEMORY	13811	0300800008_persona_memory.md:
+PERSONA_MEMORY	13857	persona_memory:
+PERSONA_MEMORY	1388	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0300800017_persona_memory_archive.md | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	1393	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	140	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | same_dir_file | missing_file | PERSONA_OS_INTEGRATED_CANONICAL.md | 030.model/010.canonical/080.knowledge/PERSONA_OS_INTEGRATED_CANONICAL.md:
+PERSONA_MEMORY	14074	0300800008 persona_memory:
+PERSONA_MEMORY	14083	0300800017 persona_memory:
+PERSONA_MEMORY	142142	- persona_memory:
+PERSONA_MEMORY	142150	- persona_memory:
+PERSONA_MEMORY	14232	persona_memory:
+PERSONA_MEMORY	142443	- persona_memory:
+PERSONA_MEMORY	14359	persona_memory:
+PERSONA_MEMORY	14399	# persona_memory:
+PERSONA_MEMORY	144460	- persona_memory:
+PERSONA_MEMORY	144624	- persona_memory:
+PERSONA_MEMORY	14465	persona_memory:
+PERSONA_MEMORY	144808	state is not memory truth:
+PERSONA_MEMORY	144854	raw memory truth,:
+PERSONA_MEMORY	14486	persona_memory update:
+PERSONA_MEMORY	144864	raw memory truth:
+PERSONA_MEMORY	144888	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	145	persona_memory_retrieval_id:
+PERSONA_MEMORY	14509	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	145138	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	145408	Snapshot is not memory truth.:
+PERSONA_MEMORY	145756	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	145866	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	146009	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	146152	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	14618	persona_memory:
+PERSONA_MEMORY	146295	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	146433	- persona memory truth:
+PERSONA_MEMORY	146438	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	147	 -> persona_memory:
+PERSONA_MEMORY	1471	999.archive/999.archive/930.legacy/model-old-tree/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	14822	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	14831	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	14870	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	14879	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	149	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | same_dir_file | missing_file | PERSONA_OS_INTEGRATED_CANONICAL.md | 030.model/010.canonical/080.knowledge/PERSONA_OS_INTEGRATED_CANONICAL.md:
+PERSONA_MEMORY	14960	920.meta/integrated-rebuild-backup/PERSONA_OS_INTEGRATED_CANONICAL_before_v3_external_reflection_20260411_183243.md | missing_file | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	15	000000_PERSONA_OS_CANONICAL_FULL.md | no_match | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	15	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	150421	- persona_memory:
+PERSONA_MEMORY	150429	- persona_memory:
+PERSONA_MEMORY	150710	- persona_memory:
+PERSONA_MEMORY	1519	999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	152230	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	152459	model_name: persona_memory
+PERSONA_MEMORY	152462	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	152465	persona_memory_id:
+PERSONA_MEMORY	152507	model_name: persona_memory_retrieval
+PERSONA_MEMORY	152514	persona_memory_retrieval_id:
+PERSONA_MEMORY	152532	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	152554	model_name: persona_memory_decay
+PERSONA_MEMORY	152561	persona_memory_decay_id:
+PERSONA_MEMORY	152627	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	152746	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	152849	- persona_memory:
+PERSONA_MEMORY	153001	- persona_memory:
+PERSONA_MEMORY	153164	state is not memory truth:
+PERSONA_MEMORY	153195	raw memory truth,:
+PERSONA_MEMORY	153205	raw memory truth:
+PERSONA_MEMORY	153229	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	153461	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	1536	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	154	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	154764	- persona memory truth:
+PERSONA_MEMORY	15947	component: persona-memory-runtime
+PERSONA_MEMORY	159489	component: persona-memory-runtime
+PERSONA_MEMORY	16231	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	16240	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	163	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	163	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	163282	# 0300800008_persona_memory:
+PERSONA_MEMORY	163287	path: 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+PERSONA_MEMORY	163297	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	163579	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	163584	path: 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+PERSONA_MEMORY	163594	- 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	1636	999.archive/999.archive/930.legacy/model-old-tree/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	16407	State policy does not redefine memory truth.:
+PERSONA_MEMORY	16414	State policy does not redefine memory truth.:
+PERSONA_MEMORY	16483	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	16490	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	16525	component: persona-memory-runtime
+PERSONA_MEMORY	16573	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	165791	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	16580	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	166	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	167074	model_name: persona_memory
+PERSONA_MEMORY	167077	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	167080	persona_memory_id:
+PERSONA_MEMORY	167116	model_name: persona_memory_retrieval
+PERSONA_MEMORY	167123	persona_memory_retrieval_id:
+PERSONA_MEMORY	167141	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	167157	model_name: persona_memory_decay
+PERSONA_MEMORY	167164	persona_memory_decay_id:
+PERSONA_MEMORY	167224	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	167389	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	169785	State policy does not redefine memory truth.:
+PERSONA_MEMORY	17	raw memory truth,:
+PERSONA_MEMORY	170059	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	170179	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	173	 -> persona_memory:
+PERSONA_MEMORY	173	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	174538	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	174543	path: 0300800017_persona_memory_archive.md
+PERSONA_MEMORY	174553	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	175266	component: persona-memory-runtime
+PERSONA_MEMORY	17554	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	178	model_name: persona_memory_decay
+PERSONA_MEMORY	1782	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	178604	persona-memory:
+PERSONA_MEMORY	17867	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	17876	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	179	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	18	persona_memory_id:
+PERSONA_MEMORY	180	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	18005	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v2_EXTERNAL_REFLECTION.md | missing_file | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	1815	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	182	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	183	- persona_memory:
+PERSONA_MEMORY	18380	# 0300800008_persona_memory:
+PERSONA_MEMORY	18385	path: 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+PERSONA_MEMORY	18395	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	185	persona_memory_decay_id:
+PERSONA_MEMORY	18524	component: persona-memory-runtime
+PERSONA_MEMORY	18677	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	18682	path: 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+PERSONA_MEMORY	18692	- 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	188	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	188397	State policy does not redefine memory truth.:
+PERSONA_MEMORY	188603	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	188763	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	1892	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	19	persona_memory_decay_id:
+PERSONA_MEMORY	19	persona_memory_retrieval_id:
+PERSONA_MEMORY	19282	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	19291	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	19308	# 0300800008_persona_memory:
+PERSONA_MEMORY	19313	path: 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+PERSONA_MEMORY	19323	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	19605	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	19610	path: 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+PERSONA_MEMORY	19620	- 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	2012	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	202999	persona-memory:
+PERSONA_MEMORY	2035	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	204	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	204	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	2047	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	205	- persona_memory:
+PERSONA_MEMORY	20618	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	207038	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	20889	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	20937	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	20946	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	209985	component: persona-memory-runtime
+PERSONA_MEMORY	21077	920.meta/integrated-rebuild/PERSONA_OS_INTEGRATED_CANONICAL_v3_EXTERNAL_REFLECTION_STRUCTURED.md | missing_file | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	213	- persona_memory:
+PERSONA_MEMORY	215471	state is not memory truth:
+PERSONA_MEMORY	215511	raw memory truth,:
+PERSONA_MEMORY	215521	raw memory truth:
+PERSONA_MEMORY	215545	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	215607	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	215853	Snapshot is not memory truth.:
+PERSONA_MEMORY	2162	000000_PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	2164	920.meta/000.root_files/999_LEGACY_REVIEW_QUEUE.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-tree/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	216887	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	217	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	217002	model_name: persona_memory
+PERSONA_MEMORY	217005	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	217008	persona_memory_id:
+PERSONA_MEMORY	217047	model_name: persona_memory_retrieval
+PERSONA_MEMORY	217054	persona_memory_retrieval_id:
+PERSONA_MEMORY	217072	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	217091	model_name: persona_memory_decay
+PERSONA_MEMORY	217098	persona_memory_decay_id:
+PERSONA_MEMORY	217161	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	217271	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	2178	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	218	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	21817	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	22172	model_name: persona_memory
+PERSONA_MEMORY	22175	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	22178	persona_memory_id:
+PERSONA_MEMORY	22214	model_name: persona_memory_retrieval
+PERSONA_MEMORY	22221	persona_memory_retrieval_id:
+PERSONA_MEMORY	22239	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	22255	model_name: persona_memory_decay
+PERSONA_MEMORY	22262	persona_memory_decay_id:
+PERSONA_MEMORY	2230	- persona_memory:
+PERSONA_MEMORY	22322	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	223516	State policy does not redefine memory truth.:
+PERSONA_MEMORY	223592	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	223682	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	2238	- persona_memory:
+PERSONA_MEMORY	22487	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	228	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	23	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	23	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	23100	model_name: persona_memory
+PERSONA_MEMORY	23103	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	23106	persona_memory_id:
+PERSONA_MEMORY	23142	model_name: persona_memory_retrieval
+PERSONA_MEMORY	23149	persona_memory_retrieval_id:
+PERSONA_MEMORY	23167	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	23183	model_name: persona_memory_decay
+PERSONA_MEMORY	23190	persona_memory_decay_id:
+PERSONA_MEMORY	2321	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	23250	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	233090	- persona_memory:
+PERSONA_MEMORY	233098	- persona_memory:
+PERSONA_MEMORY	233389	- persona_memory:
+PERSONA_MEMORY	23415	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	235235	- persona_memory:
+PERSONA_MEMORY	235397	- persona_memory:
+PERSONA_MEMORY	236408	- persona memory truth:
+PERSONA_MEMORY	24	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	24	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	241051	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	241148	model_name: persona_memory
+PERSONA_MEMORY	241151	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	241154	persona_memory_id:
+PERSONA_MEMORY	241195	model_name: persona_memory_retrieval
+PERSONA_MEMORY	241202	persona_memory_retrieval_id:
+PERSONA_MEMORY	241220	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	241241	model_name: persona_memory_decay
+PERSONA_MEMORY	241248	persona_memory_decay_id:
+PERSONA_MEMORY	241313	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	24135	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	241364	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	24144	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	2436	- persona_memory:
+PERSONA_MEMORY	244	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	2444	- persona_memory:
+PERSONA_MEMORY	2464	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	2466	component: persona-memory-runtime
+PERSONA_MEMORY	246993	component: persona-memory-runtime
+PERSONA_MEMORY	25	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	251	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	2527	- persona_memory:
+PERSONA_MEMORY	25355	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	25556	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	25565	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	25633	PERSONA_OS_INTEGRATED_CANONICAL.md | missing_file | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	25808	- persona_memory:
+PERSONA_MEMORY	25816	- persona_memory:
+PERSONA_MEMORY	259655	persona-memory:
+PERSONA_MEMORY	26107	- persona_memory:
+PERSONA_MEMORY	261960	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	261969	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	2622	- persona_memory:
+PERSONA_MEMORY	262381	## persona_memory:
+PERSONA_MEMORY	262382	persona_memory:
+PERSONA_MEMORY	262383	persona_memory_archive:
+PERSONA_MEMORY	262541	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	26255	component: persona-memory-runtime
+PERSONA_MEMORY	262550	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	262746	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	262755	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	262808	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	262812	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	262863	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	262915	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	262924	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	262934	| 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	262937	| 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	262962	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	262995	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	2630	- persona_memory:
+PERSONA_MEMORY	263018	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	26304	persona-memory:
+PERSONA_MEMORY	263076	model_name: persona_memory
+PERSONA_MEMORY	263079	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	263082	persona_memory_id:
+PERSONA_MEMORY	263180	 -> persona_memory:
+PERSONA_MEMORY	263206	 -> persona_memory:
+PERSONA_MEMORY	263213	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	263336	 -> persona_memory:
+PERSONA_MEMORY	263377	 -> persona_memory:
+PERSONA_MEMORY	263525	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	263527	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	263556	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	263994	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	264077	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	264197	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	265239	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	265324	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	265368	- state is separated from memory truth:
+PERSONA_MEMORY	265509	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	265630	model_name: persona_memory
+PERSONA_MEMORY	265633	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	265636	persona_memory_id:
+PERSONA_MEMORY	265671	model_name: persona_memory_retrieval
+PERSONA_MEMORY	265678	persona_memory_retrieval_id:
+PERSONA_MEMORY	265696	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	265711	model_name: persona_memory_decay
+PERSONA_MEMORY	265718	persona_memory_decay_id:
+PERSONA_MEMORY	265777	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	265852	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	265900	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	265920	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	267103	- state is separated from memory truth:
+PERSONA_MEMORY	267395	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	267650	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	268164	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	268825	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	269056	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	27	raw memory truth:
+PERSONA_MEMORY	27	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	272761	- state is not memory truth:
+PERSONA_MEMORY	272770	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	2735	- persona_memory:
+PERSONA_MEMORY	27953	- persona_memory:
+PERSONA_MEMORY	27972	persona-memory:
+PERSONA_MEMORY	28	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	28115	- persona_memory:
+PERSONA_MEMORY	2876	component: persona-memory-runtime
+PERSONA_MEMORY	2883	component: persona-memory-runtime
+PERSONA_MEMORY	288916	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	289061	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	289206	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	289351	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	28948	- persona memory truth:
+PERSONA_MEMORY	289496	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	29	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	29187	persona-memory:
+PERSONA_MEMORY	2921	- persona_memory:
+PERSONA_MEMORY	292561	- persona_memory:
+PERSONA_MEMORY	292569	- persona_memory:
+PERSONA_MEMORY	292850	- persona_memory:
+PERSONA_MEMORY	294989	- persona_memory:
+PERSONA_MEMORY	295141	- persona_memory:
+PERSONA_MEMORY	295304	state is not memory truth:
+PERSONA_MEMORY	295335	raw memory truth,:
+PERSONA_MEMORY	295345	raw memory truth:
+PERSONA_MEMORY	295369	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	295559	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	29636	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	29641	path: 0300800017_persona_memory_archive.md
+PERSONA_MEMORY	29651	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	296526	- persona memory truth:
+PERSONA_MEMORY	2975	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/080.knowledge/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_MEMORY	2984	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/080.knowledge/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_MEMORY	30	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	3015	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/080.knowledge/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_MEMORY	3024	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | same_dir_file | missing_file | 000000_PERSONA_OS_CANONICAL_FULL.md | 030.model/010.canonical/080.knowledge/000000_PERSONA_OS_CANONICAL_FULL.md:
+PERSONA_MEMORY	30277	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	30286	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	30364	component: persona-memory-runtime
+PERSONA_MEMORY	304780	# 0300800008_persona_memory:
+PERSONA_MEMORY	304785	path: 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+PERSONA_MEMORY	304795	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	305077	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	305082	path: 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+PERSONA_MEMORY	305092	- 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	30564	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	30569	path: 0300800017_persona_memory_archive.md
+PERSONA_MEMORY	30579	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	306	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	30698	## persona_memory:
+PERSONA_MEMORY	30699	persona_memory:
+PERSONA_MEMORY	30700	persona_memory_archive:
+PERSONA_MEMORY	307157	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	308275	model_name: persona_memory
+PERSONA_MEMORY	308278	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	308281	persona_memory_id:
+PERSONA_MEMORY	308317	model_name: persona_memory_retrieval
+PERSONA_MEMORY	308324	persona_memory_retrieval_id:
+PERSONA_MEMORY	308342	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	308358	model_name: persona_memory_decay
+PERSONA_MEMORY	308365	persona_memory_decay_id:
+PERSONA_MEMORY	308425	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	308514	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	30858	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	30867	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	31063	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	31072	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	31125	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	31129	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	31180	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	31232	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	31241	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	31251	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	31254	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	31279	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	31292	component: persona-memory-runtime
+PERSONA_MEMORY	31312	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	31335	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	31393	model_name: persona_memory
+PERSONA_MEMORY	31396	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	31399	persona_memory_id:
+PERSONA_MEMORY	314304	# 0300800017_persona_memory_archive:
+PERSONA_MEMORY	314309	path: 0300800017_persona_memory_archive.md
+PERSONA_MEMORY	314319	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	31492	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	314933	component: persona-memory-runtime
+PERSONA_MEMORY	31497	 -> persona_memory:
+PERSONA_MEMORY	315	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	31501	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	31523	 -> persona_memory:
+PERSONA_MEMORY	31530	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	31653	 -> persona_memory:
+PERSONA_MEMORY	31694	 -> persona_memory:
+PERSONA_MEMORY	3173	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	31741	state is not memory truth:
+PERSONA_MEMORY	31781	raw memory truth,:
+PERSONA_MEMORY	31791	raw memory truth:
+PERSONA_MEMORY	31815	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	31842	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	31844	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	31873	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	31877	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	319	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	31913	## persona_memory:
+PERSONA_MEMORY	31914	persona_memory:
+PERSONA_MEMORY	31915	persona_memory_archive:
+PERSONA_MEMORY	32073	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	32082	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	32123	Snapshot is not memory truth.:
+PERSONA_MEMORY	32278	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	32287	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	32311	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	32340	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	32344	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	32394	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	32395	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	32447	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	32456	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	32466	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	32469	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	324868	State policy does not redefine memory truth.:
+PERSONA_MEMORY	32494	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	325074	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	32514	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	325158	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	32527	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	32550	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	32608	model_name: persona_memory
+PERSONA_MEMORY	32611	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	32614	persona_memory_id:
+PERSONA_MEMORY	32712	 -> persona_memory:
+PERSONA_MEMORY	32738	 -> persona_memory:
+PERSONA_MEMORY	32745	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	32868	 -> persona_memory:
+PERSONA_MEMORY	32909	 -> persona_memory:
+PERSONA_MEMORY	33	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	33057	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	33059	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	33088	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	33157	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	33272	model_name: persona_memory
+PERSONA_MEMORY	33275	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	33278	persona_memory_id:
+PERSONA_MEMORY	33317	model_name: persona_memory_retrieval
+PERSONA_MEMORY	33324	persona_memory_retrieval_id:
+PERSONA_MEMORY	33342	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	33361	model_name: persona_memory_decay
+PERSONA_MEMORY	33368	persona_memory_decay_id:
+PERSONA_MEMORY	33431	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	33526	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	33541	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	33556	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	335591	persona-memory:
+PERSONA_MEMORY	33591	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	33609	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	33641	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	33685	- state is separated from memory truth:
+PERSONA_MEMORY	33688	model_name: persona_memory
+PERSONA_MEMORY	33691	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	33694	persona_memory_id:
+PERSONA_MEMORY	33729	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	33735	model_name: persona_memory_retrieval
+PERSONA_MEMORY	33742	persona_memory_retrieval_id:
+PERSONA_MEMORY	33760	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	33781	model_name: persona_memory_decay
+PERSONA_MEMORY	33788	persona_memory_decay_id:
+PERSONA_MEMORY	33826	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	33853	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	338947	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	33904	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	33947	model_name: persona_memory
+PERSONA_MEMORY	33950	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	33953	persona_memory_id:
+PERSONA_MEMORY	33988	model_name: persona_memory_retrieval
+PERSONA_MEMORY	33995	persona_memory_retrieval_id:
+PERSONA_MEMORY	34	- state is separated from memory truth:
+PERSONA_MEMORY	34	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	34013	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	34028	model_name: persona_memory_decay
+PERSONA_MEMORY	34035	persona_memory_decay_id:
+PERSONA_MEMORY	34094	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	34169	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	341894	component: persona-memory-runtime
+PERSONA_MEMORY	34217	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	34237	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	346	999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	347380	state is not memory truth:
+PERSONA_MEMORY	347420	raw memory truth,:
+PERSONA_MEMORY	347430	raw memory truth:
+PERSONA_MEMORY	347454	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	347516	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	34771	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	347762	Snapshot is not memory truth.:
+PERSONA_MEMORY	34856	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	348796	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	348911	model_name: persona_memory
+PERSONA_MEMORY	348914	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	348917	persona_memory_id:
+PERSONA_MEMORY	348956	model_name: persona_memory_retrieval
+PERSONA_MEMORY	348963	persona_memory_retrieval_id:
+PERSONA_MEMORY	348981	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	34900	- state is separated from memory truth:
+PERSONA_MEMORY	349000	model_name: persona_memory_decay
+PERSONA_MEMORY	349007	persona_memory_decay_id:
+PERSONA_MEMORY	349070	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	349180	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	35	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	35	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	35	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	35041	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	35162	model_name: persona_memory
+PERSONA_MEMORY	35165	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	35168	persona_memory_id:
+PERSONA_MEMORY	35203	model_name: persona_memory_retrieval
+PERSONA_MEMORY	35210	persona_memory_retrieval_id:
+PERSONA_MEMORY	35228	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	35243	model_name: persona_memory_decay
+PERSONA_MEMORY	35250	persona_memory_decay_id:
+PERSONA_MEMORY	35309	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	35384	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	35420	- state is separated from memory truth:
+PERSONA_MEMORY	35432	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	35452	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	355	999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	355425	State policy does not redefine memory truth.:
+PERSONA_MEMORY	355501	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	355591	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	35712	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	35967	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	36	- persona_memory:
+PERSONA_MEMORY	36481	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	364999	- persona_memory:
+PERSONA_MEMORY	365007	- persona_memory:
+PERSONA_MEMORY	365298	- persona_memory:
+PERSONA_MEMORY	36635	- state is separated from memory truth:
+PERSONA_MEMORY	367144	- persona_memory:
+PERSONA_MEMORY	367306	- persona_memory:
+PERSONA_MEMORY	368317	- persona memory truth:
+PERSONA_MEMORY	36927	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	37	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	37	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	37	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	37	State policy does not redefine memory truth.:
+PERSONA_MEMORY	37142	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	37182	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	372960	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	373057	model_name: persona_memory
+PERSONA_MEMORY	373060	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	373063	persona_memory_id:
+PERSONA_MEMORY	373104	model_name: persona_memory_retrieval
+PERSONA_MEMORY	373111	persona_memory_retrieval_id:
+PERSONA_MEMORY	373129	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	373150	model_name: persona_memory_decay
+PERSONA_MEMORY	373157	persona_memory_decay_id:
+PERSONA_MEMORY	373222	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	373273	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	37373	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	37696	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	378902	component: persona-memory-runtime
+PERSONA_MEMORY	38	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	38357	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	38588	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	3879	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	39	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	390	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	391564	persona-memory:
+PERSONA_MEMORY	39319	component: persona-memory-runtime
+PERSONA_MEMORY	393869	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	393878	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	394290	## persona_memory:
+PERSONA_MEMORY	394291	persona_memory:
+PERSONA_MEMORY	394292	persona_memory_archive:
+PERSONA_MEMORY	394450	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	394459	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	394655	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	394664	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	394717	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	394721	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	394772	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	394824	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	394833	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	394843	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	394846	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	394871	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	394904	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	394927	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	394985	model_name: persona_memory
+PERSONA_MEMORY	394988	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	394991	persona_memory_id:
+PERSONA_MEMORY	395089	 -> persona_memory:
+PERSONA_MEMORY	395115	 -> persona_memory:
+PERSONA_MEMORY	395122	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	395245	 -> persona_memory:
+PERSONA_MEMORY	395286	 -> persona_memory:
+PERSONA_MEMORY	395434	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	395436	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	395465	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	395903	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	395986	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	396106	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	397148	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	397233	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	397277	- state is separated from memory truth:
+PERSONA_MEMORY	397418	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	397539	model_name: persona_memory
+PERSONA_MEMORY	397542	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	397545	persona_memory_id:
+PERSONA_MEMORY	397580	model_name: persona_memory_retrieval
+PERSONA_MEMORY	397587	persona_memory_retrieval_id:
+PERSONA_MEMORY	397605	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	397620	model_name: persona_memory_decay
+PERSONA_MEMORY	397627	persona_memory_decay_id:
+PERSONA_MEMORY	397686	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	397761	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	397809	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	397829	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	39786	State policy does not redefine memory truth.:
+PERSONA_MEMORY	39862	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	399012	- state is separated from memory truth:
+PERSONA_MEMORY	399304	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	39952	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	399559	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	3996	920.meta/000.root_files/999_ROOT_FILE_INVENTORY.txt | missing_file | 999.archive/999.archive/930.legacy/model-old-tree/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	40	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	400073	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	400734	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	400965	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	404670	- state is not memory truth:
+PERSONA_MEMORY	404679	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	41078	- state is not memory truth:
+PERSONA_MEMORY	41087	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	42293	- state is not memory truth:
+PERSONA_MEMORY	42302	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	43	model_name: persona_memory
+PERSONA_MEMORY	4301	- persona_memory:
+PERSONA_MEMORY	43495	State policy does not redefine memory truth.:
+PERSONA_MEMORY	43701	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	43861	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	44	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	44	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	44423	State policy does not redefine memory truth.:
+PERSONA_MEMORY	4461	- persona_memory:
+PERSONA_MEMORY	44629	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	44789	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	4581	- persona_memory:
+PERSONA_MEMORY	4595	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	46	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	4604	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_0752.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	464	PERSONA_OS_INTEGRATED_CANONICAL.md | no_match | 0300800017_persona_memory_archive.md | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	47	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	4743	- persona_memory:
+PERSONA_MEMORY	4767	- persona_memory:
+PERSONA_MEMORY	49	persona_memory_id:
+PERSONA_MEMORY	49180	- persona_memory:
+PERSONA_MEMORY	49188	- persona_memory:
+PERSONA_MEMORY	4929	- persona_memory:
+PERSONA_MEMORY	49479	- persona_memory:
+PERSONA_MEMORY	51	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	5132	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	51325	- persona_memory:
+PERSONA_MEMORY	51344	persona-memory:
+PERSONA_MEMORY	5141	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	51487	- persona_memory:
+PERSONA_MEMORY	52	1	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	52320	- persona memory truth:
+PERSONA_MEMORY	5277	- persona memory truth:
+PERSONA_MEMORY	53649	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	53658	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	54	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	54	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	54070	## persona_memory:
+PERSONA_MEMORY	54071	persona_memory:
+PERSONA_MEMORY	54072	persona_memory_archive:
+PERSONA_MEMORY	54230	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	54239	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	543	## persona_memory:
+PERSONA_MEMORY	544	persona_memory:
+PERSONA_MEMORY	54435	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	54444	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	54497	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	545	persona_memory_archive:
+PERSONA_MEMORY	54501	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	54552	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	54604	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	54613	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	54623	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	54626	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	54651	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	54684	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	54707	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	54765	model_name: persona_memory
+PERSONA_MEMORY	54768	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	54771	persona_memory_id:
+PERSONA_MEMORY	54869	 -> persona_memory:
+PERSONA_MEMORY	54895	 -> persona_memory:
+PERSONA_MEMORY	54902	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	55	- state is separated from memory truth:
+PERSONA_MEMORY	55025	 -> persona_memory:
+PERSONA_MEMORY	55066	 -> persona_memory:
+PERSONA_MEMORY	5519	- persona_memory:
+PERSONA_MEMORY	55214	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	55216	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	55245	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	5527	- persona_memory:
+PERSONA_MEMORY	553	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	554	920.meta/000.root_files/999_CANONICAL_FILE_SET.txt | missing_file | 999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	55683	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	5576	- persona memory truth:
+PERSONA_MEMORY	55766	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	55886	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	56	state is not memory truth:
+PERSONA_MEMORY	562	030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	563	920.meta/000.root_files/999_CANONICAL_FILE_SET.txt | missing_file | 999.archive/999.archive/930.legacy/old-index-and-overview/030.model//data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	567	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	5684	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	56928	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	5693	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	56963	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	57	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	57	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	57013	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	57057	- state is separated from memory truth:
+PERSONA_MEMORY	57060	model_name: persona_memory
+PERSONA_MEMORY	57063	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	57066	persona_memory_id:
+PERSONA_MEMORY	57107	model_name: persona_memory_retrieval
+PERSONA_MEMORY	57114	persona_memory_retrieval_id:
+PERSONA_MEMORY	57132	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	57153	model_name: persona_memory_decay
+PERSONA_MEMORY	57160	persona_memory_decay_id:
+PERSONA_MEMORY	57198	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	57225	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	57276	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	57319	model_name: persona_memory
+PERSONA_MEMORY	57322	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	57325	persona_memory_id:
+PERSONA_MEMORY	57360	model_name: persona_memory_retrieval
+PERSONA_MEMORY	57367	persona_memory_retrieval_id:
+PERSONA_MEMORY	57385	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	57400	model_name: persona_memory_decay
+PERSONA_MEMORY	57407	persona_memory_decay_id:
+PERSONA_MEMORY	57466	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	57541	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	57589	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	576	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	57609	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	5808	- persona_memory:
+PERSONA_MEMORY	5808	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1124.md | missing_file | 0300800008_persona_memory.md:
+PERSONA_MEMORY	58097	persona-memory:
+PERSONA_MEMORY	58792	- state is separated from memory truth:
+PERSONA_MEMORY	59025	persona-memory:
+PERSONA_MEMORY	59084	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	59339	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	5940	- persona memory truth:
+PERSONA_MEMORY	59853	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	6	component: persona-memory-runtime
+PERSONA_MEMORY	60514	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	60745	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	62136	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	6258	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	6267	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	62691	component: persona-memory-runtime
+PERSONA_MEMORY	63064	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	64450	- state is not memory truth:
+PERSONA_MEMORY	64459	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	6447	- persona_memory:
+PERSONA_MEMORY	6455	- persona_memory:
+PERSONA_MEMORY	65083	component: persona-memory-runtime
+PERSONA_MEMORY	66	- persona_memory:
+PERSONA_MEMORY	66011	component: persona-memory-runtime
+PERSONA_MEMORY	67	- 1	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	6736	- persona_memory:
+PERSONA_MEMORY	68	 -> persona_memory:
+PERSONA_MEMORY	68	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	6810	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	6819	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	6934	920.meta/070.root_relocated/PERSONA_OS_INTEGRATED_CANONICAL_20260330_1125.md | missing_file | 0300800008_persona_memory.md:
+PERSONA_MEMORY	70569	state is not memory truth:
+PERSONA_MEMORY	70609	raw memory truth,:
+PERSONA_MEMORY	70619	raw memory truth:
+PERSONA_MEMORY	70643	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	70705	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	70951	Snapshot is not memory truth.:
+PERSONA_MEMORY	71497	state is not memory truth:
+PERSONA_MEMORY	71537	raw memory truth,:
+PERSONA_MEMORY	71547	raw memory truth:
+PERSONA_MEMORY	71571	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	71633	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	71879	Snapshot is not memory truth.:
+PERSONA_MEMORY	71985	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	72100	model_name: persona_memory
+PERSONA_MEMORY	72103	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	72106	persona_memory_id:
+PERSONA_MEMORY	72145	model_name: persona_memory_retrieval
+PERSONA_MEMORY	72152	persona_memory_retrieval_id:
+PERSONA_MEMORY	72170	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	72189	model_name: persona_memory_decay
+PERSONA_MEMORY	72196	persona_memory_decay_id:
+PERSONA_MEMORY	72259	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	72369	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	726	000000_PERSONA_OS_CANONICAL_FULL.md | same_dir_file | missing_file | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	72913	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	73028	model_name: persona_memory
+PERSONA_MEMORY	73031	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	73034	persona_memory_id:
+PERSONA_MEMORY	73073	model_name: persona_memory_retrieval
+PERSONA_MEMORY	73080	persona_memory_retrieval_id:
+PERSONA_MEMORY	73098	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	73117	model_name: persona_memory_decay
+PERSONA_MEMORY	73124	persona_memory_decay_id:
+PERSONA_MEMORY	73187	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	73297	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	735	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	739	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	74716	persona-memory:
+PERSONA_MEMORY	748	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	7696	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	77021	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	77030	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	7705	920.meta/110.model_review/9201100001_PERSONA_OS_MODEL_NAME_REVIEW.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	77442	## persona_memory:
+PERSONA_MEMORY	77443	persona_memory:
+PERSONA_MEMORY	77444	persona_memory_archive:
+PERSONA_MEMORY	77600	- persona_memory:
+PERSONA_MEMORY	77602	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	77608	- persona_memory:
+PERSONA_MEMORY	77611	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | merge_to_new_domain_candidate | 030.model/040.memory | knowledge_memory_experience_history_family_overlaps_with_memory_domain |:
+PERSONA_MEMORY	77807	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	77816	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | merge_or_absorb | direct_memory_family_match |:
+PERSONA_MEMORY	77869	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/040.memory | absorb_into_memory_domain |:
+PERSONA_MEMORY	77873	| 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/040.memory | absorb_as_memory_archive_submodel |:
+PERSONA_MEMORY	77901	- persona_memory:
+PERSONA_MEMORY	77924	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	77976	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	77985	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	77995	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | merge_review |:
+PERSONA_MEMORY	77998	| 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | add_archive_submodel_or_merge |:
+PERSONA_MEMORY	78	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	78023	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	78056	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_old_after_absorption | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md | current canonical memory model already covers persona-scoped memory truth |:
+PERSONA_MEMORY	78079	0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	78137	model_name: persona_memory
+PERSONA_MEMORY	78140	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	78143	persona_memory_id:
+PERSONA_MEMORY	78241	 -> persona_memory:
+PERSONA_MEMORY	78267	 -> persona_memory:
+PERSONA_MEMORY	78274	1. Is experience already covered by canonical memory truth?:
+PERSONA_MEMORY	78397	 -> persona_memory:
+PERSONA_MEMORY	78438	 -> persona_memory:
+PERSONA_MEMORY	78586	| 030.model/010.canonical/080.knowledge/0300800009_persona_event.md | reassign_to_state_domain | 030.model/030.state | experienced occurrence is closer to state-transition/event history than memory truth or ops log |:
+PERSONA_MEMORY	78588	| 030.model/010.canonical/080.knowledge/0300800011_persona_history.md | reassign_to_state_domain | 030.model/030.state | chronological record of major transitions belongs closer to state/history than memory truth |:
+PERSONA_MEMORY	78614	State policy does not redefine memory truth.:
+PERSONA_MEMORY	78617	than to memory truth, integration contract, or operations log:
+PERSONA_MEMORY	78690	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	78780	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	79055	| 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | retire_candidate | 030.model/040.memory/0300400002_PERSONA_MEMORY_MODEL.md |:
+PERSONA_MEMORY	79138	- moved: /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md -> /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archi
+PERSONA_MEMORY	79258	/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	7947	- persona_memory:
+PERSONA_MEMORY	79542	State policy does not redefine memory truth.:
+PERSONA_MEMORY	79618	derived experience must remain traceable to memory truth:
+PERSONA_MEMORY	79708	Growth policy does not redefine memory truth.:
+PERSONA_MEMORY	79918	- persona_memory:
+PERSONA_MEMORY	8	path: 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md
+PERSONA_MEMORY	8	path: 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md
+PERSONA_MEMORY	8	path: 0300800017_persona_memory_archive.md
+PERSONA_MEMORY	8000	920.meta/110.model_review/9201100002_PERSONA_OS_010_CANONICAL_REASSIGNMENT_SHEET.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	80082	- persona_memory:
+PERSONA_MEMORY	8009	920.meta/110.model_review/9201100002_PERSONA_OS_010_CANONICAL_REASSIGNMENT_SHEET.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	80266	state is not memory truth:
+PERSONA_MEMORY	80300	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	80312	raw memory truth,:
+PERSONA_MEMORY	80322	raw memory truth:
+PERSONA_MEMORY	80346	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	80385	2. Is state clearly separated from memory truth?:
+PERSONA_MEMORY	80429	- state is separated from memory truth:
+PERSONA_MEMORY	80570	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	80596	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	80691	model_name: persona_memory
+PERSONA_MEMORY	80694	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	80697	persona_memory_id:
+PERSONA_MEMORY	8072	920.meta/110.model_review/9201100005_PERSONA_OS_PRIORITY1_MODEL_TARGET_MAPPING.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	80732	model_name: persona_memory_retrieval
+PERSONA_MEMORY	80739	persona_memory_retrieval_id:
+PERSONA_MEMORY	80757	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	80772	model_name: persona_memory_decay
+PERSONA_MEMORY	80779	persona_memory_decay_id:
+PERSONA_MEMORY	8081	920.meta/110.model_review/9201100005_PERSONA_OS_PRIORITY1_MODEL_TARGET_MAPPING.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	80838	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	80866	Snapshot is not memory truth.:
+PERSONA_MEMORY	80913	1. Is memory defined as memory truth rather than generic history/state?:
+PERSONA_MEMORY	80961	- retrieval is separated from memory truth creation:
+PERSONA_MEMORY	80981	- clarify that snapshot/history/growth are not generic memory truth:
+PERSONA_MEMORY	8099	- persona_memory:
+PERSONA_MEMORY	81	- persona memory truth:
+PERSONA_MEMORY	8107	920.meta/110.model_review/9201100006_PERSONA_OS_080_KNOWLEDGE_TO_040_MEMORY_WORK_SHEET.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	8116	920.meta/110.model_review/9201100006_PERSONA_OS_080_KNOWLEDGE_TO_040_MEMORY_WORK_SHEET.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	8126	920.meta/110.model_review/9201100007_PERSONA_OS_MEMORY_COMPARISON_SHEET.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	813	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	8135	920.meta/110.model_review/9201100007_PERSONA_OS_MEMORY_COMPARISON_SHEET.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	8143	920.meta/110.model_review/9201100007_PERSONA_OS_MEMORY_COMPARISON_SHEET.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	8149	920.meta/110.model_review/9201100007_PERSONA_OS_MEMORY_COMPARISON_SHEET.md | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	8154	920.meta/110.model_review/9201100008_PERSONA_OS_MEMORY_FAMILY_DISPOSITION_SHEET.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	8167	920.meta/110.model_review/9201100008_PERSONA_OS_MEMORY_FAMILY_DISPOSITION_SHEET.md | missing_file | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	81891	- persona memory truth:
+PERSONA_MEMORY	82	- 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	821	000000_PERSONA_OS_CANONICAL_FULL.md | same_dir_file | missing_file | 0300800008_persona_memory.md | 0300800008_persona_memory.md:
+PERSONA_MEMORY	82164	- state is separated from memory truth:
+PERSONA_MEMORY	822	PERSONA_OS_INTEGRATED_CANONICAL.md | root_relative | missing_file | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md | 030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	82456	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	8262	state is not memory truth:
+PERSONA_MEMORY	82711	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	8293	raw memory truth,:
+PERSONA_MEMORY	8298	920.meta/110.model_review/9201100020_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RETIRE_CANDIDATES.md | missing_file | 030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	8303	raw memory truth:
+PERSONA_MEMORY	83225	- builder draft state is separated from persona identity/state/growth/memory truth:
+PERSONA_MEMORY	8327	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	8362	state is not memory truth:
+PERSONA_MEMORY	8369	state is not memory truth:
+PERSONA_MEMORY	83886	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	8402	raw memory truth,:
+PERSONA_MEMORY	8409	raw memory truth,:
+PERSONA_MEMORY	84117	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	8412	raw memory truth:
+PERSONA_MEMORY	8419	raw memory truth:
+PERSONA_MEMORY	8436	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	8439	920.meta/110.model_review/9201100021_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RELOCATION_LOG.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	8443	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	8448	920.meta/110.model_review/9201100021_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RELOCATION_LOG.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/010.canonical/080.knowledge/0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	8498	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	8500	920.meta/110.model_review/9201100021_PERSONA_OS_PRIORITY1_OLD_CANONICAL_RELOCATION_LOG.md | missing_file | /data/data/com.termux/files/home/01.civilization-system/02.persona-os/999.archive/999.archive/930.legacy/model-old-canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	8505	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	854	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	8559	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	856	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	8698	 -> persona_memory:
+PERSONA_MEMORY	87	2. Is growth clearly separated from memory truth and experience derivation?:
+PERSONA_MEMORY	8744	Snapshot is not memory truth.:
+PERSONA_MEMORY	8751	Snapshot is not memory truth.:
+PERSONA_MEMORY	87570	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	87799	model_name: persona_memory
+PERSONA_MEMORY	87802	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	87805	persona_memory_id:
+PERSONA_MEMORY	87822	- state is not memory truth:
+PERSONA_MEMORY	87831	memory truth, visual expression, runtime cache state,:
+PERSONA_MEMORY	87847	model_name: persona_memory_retrieval
+PERSONA_MEMORY	87854	persona_memory_retrieval_id:
+PERSONA_MEMORY	87872	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	87894	model_name: persona_memory_decay
+PERSONA_MEMORY	87901	persona_memory_decay_id:
+PERSONA_MEMORY	87967	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	88086	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	88188	- persona_memory:
+PERSONA_MEMORY	88196	- persona_memory:
+PERSONA_MEMORY	88487	- persona_memory:
+PERSONA_MEMORY	8875	- persona_memory:
+PERSONA_MEMORY	89116	- persona_memory:
+PERSONA_MEMORY	89124	- persona_memory:
+PERSONA_MEMORY	89415	- persona_memory:
+PERSONA_MEMORY	9027	- persona_memory:
+PERSONA_MEMORY	90333	- persona_memory:
+PERSONA_MEMORY	90495	- persona_memory:
+PERSONA_MEMORY	9061	 -> persona_memory:
+PERSONA_MEMORY	91261	- persona_memory:
+PERSONA_MEMORY	91423	- persona_memory:
+PERSONA_MEMORY	91506	- persona memory truth:
+PERSONA_MEMORY	919	PERSONA_OS_INTEGRATED_CANONICAL.md | same_dir_file | missing_file | 0300800017_persona_memory_archive.md | 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	9190	state is not memory truth:
+PERSONA_MEMORY	9221	raw memory truth,:
+PERSONA_MEMORY	9231	raw memory truth:
+PERSONA_MEMORY	92434	- persona memory truth:
+PERSONA_MEMORY	9255	memory retrieval does not create new memory truth by itself:
+PERSONA_MEMORY	93	2. Is snapshot clearly separated from memory truth and history?:
+PERSONA_MEMORY	93	5. Is snapshot/history/growth kept out of core memory truth where needed?:
+PERSONA_MEMORY	94829	component: persona-memory-runtime
+PERSONA_MEMORY	9487	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	96149	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	96246	model_name: persona_memory
+PERSONA_MEMORY	96249	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	96252	persona_memory_id:
+PERSONA_MEMORY	96293	model_name: persona_memory_retrieval
+PERSONA_MEMORY	96300	persona_memory_retrieval_id:
+PERSONA_MEMORY	96318	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	96339	model_name: persona_memory_decay
+PERSONA_MEMORY	96346	persona_memory_decay_id:
+PERSONA_MEMORY	964	- 0300800017_persona_memory_archive.md:
+PERSONA_MEMORY	96411	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	96462	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	97	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md:
+PERSONA_MEMORY	97	model_name: persona_memory
+PERSONA_MEMORY	97077	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	97174	model_name: persona_memory
+PERSONA_MEMORY	97177	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	97180	persona_memory_id:
+PERSONA_MEMORY	97221	model_name: persona_memory_retrieval
+PERSONA_MEMORY	97228	persona_memory_retrieval_id:
+PERSONA_MEMORY	97246	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	97267	model_name: persona_memory_decay
+PERSONA_MEMORY	97274	persona_memory_decay_id:
+PERSONA_MEMORY	97339	Persona experience must remain traceable to memory truth.:
+PERSONA_MEMORY	97390	Growth is not identical to memory truth or interpreted experience.:
+PERSONA_MEMORY	9778	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	9785	Persona event is not raw memory truth itself.:
+PERSONA_MEMORY	9862	- persona memory truth:
+PERSONA_MEMORY	9893	model_name: persona_memory
+PERSONA_MEMORY	9896	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	9899	persona_memory_id:
+PERSONA_MEMORY	99	030.model/010.canonical/080.knowledge/0300800008_persona_memory.md | status: exact-ready-draft
+PERSONA_MEMORY	9900	model_name: persona_memory
+PERSONA_MEMORY	9903	Defines the canonical memory truth record for a persona.:
+PERSONA_MEMORY	9906	persona_memory_id:
+PERSONA_MEMORY	9912	 -> persona_memory:
+PERSONA_MEMORY	9938	model_name: persona_memory_retrieval
+PERSONA_MEMORY	9945	model_name: persona_memory_retrieval
+PERSONA_MEMORY	9945	persona_memory_retrieval_id:
+PERSONA_MEMORY	9952	persona_memory_retrieval_id:
+PERSONA_MEMORY	9963	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	9970	Memory retrieval does not create memory truth by itself.:
+PERSONA_MEMORY	9982	model_name: persona_memory_decay
+PERSONA_MEMORY	9989	model_name: persona_memory_decay
+PERSONA_MEMORY	9989	persona_memory_decay_id:
+PERSONA_MEMORY	9996	persona_memory_decay_id:

@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA SNAPSHOT INTERFACE INDEX
-# ============================================================
+# 0900900000_PERSONA_SNAPSHOT_INTERFACE_INDEX
 
-status: canonical
-layer: interface
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA SNAPSHOT INTERFACE documents.
+directory: 090.interface/090.snapshot
 
-# ============================================================
-# FILES
-# ============================================================
-
-0900900000_PERSONA_SNAPSHOT_INTERFACE_INDEX.md
-0900900001_PERSONA_SNAPSHOT_INTERFACE_OVERVIEW.md
-0900900002_PERSONA_SNAPSHOT_ISSUE_INTERFACE.md
+- 0900900001_PERSONA_SNAPSHOT_INTERFACE_OVERVIEW.md
+- 0900900002_PERSONA_SNAPSHOT_ISSUE_INTERFACE.md
+- 090.interface/

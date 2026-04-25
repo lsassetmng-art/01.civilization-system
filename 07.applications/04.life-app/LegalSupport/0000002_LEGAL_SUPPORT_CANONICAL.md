@@ -9464,7 +9464,7 @@ plans:
       - 抜け漏れ候補提示は簡易
       - 書類/証拠整理強化は対象外
 
-  family_plus:
+  plus_family:
     plan_name_ja: 家族共有
     price_jpy_month: 500
     target:
@@ -15450,7 +15450,7 @@ recommended_sequence:
     focus:
       - share and export
     deliverables:
-      - family_plus value
+      - plus_family value
     reason:
       - safety-sensitive layer added after base stabilizes
 
@@ -15537,7 +15537,7 @@ work_packages:
 
   wp_05_share_and_export:
     goal:
-      - family_plus の中核価値を成立させる
+      - plus_family の中核価値を成立させる
     included:
       - share grant/revoke
       - viewer/delegated_editor visibility
@@ -16319,3 +16319,6 @@ purpose:
 
 ---
 
+
+pricing:
+  - 正本は Free / PlusFamily(月額500円)

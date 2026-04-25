@@ -1,0 +1,8 @@
+# 0701000000_PERSONA_PACKAGE_OPERATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 070.operations/100.package/070.operations/100.package
+
+- 0701000001_PERSONA_PACKAGE_OPERATION_OVERVIEW.md
+- 0701000002_PERSONA_PACKAGE_ASSEMBLY_OPERATION.md

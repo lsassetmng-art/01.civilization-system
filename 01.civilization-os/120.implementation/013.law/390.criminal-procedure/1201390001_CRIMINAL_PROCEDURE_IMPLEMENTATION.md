@@ -79,3 +79,25 @@ storage_boundary:
 - keep evidence objects external if large
 - store evidence chain metadata internally
 - execution state must be append-audit friendly
+
+## Exact Criminal Truth Boundary
+## Exact Criminal Truth Boundary
+
+Criminal procedure must explicitly distinguish:
+
+- accusation
+- charge
+- evidence
+- decision
+- conviction posture
+- enforcement posture
+- custody or restriction linkage
+
+## Exact Enforcement Binding
+
+A criminal decision may produce enforcement binding.
+Enforcement runtime effect must remain linkable
+without replacing criminal decision truth itself.
+
+Runtime restriction may depend on enforcement binding,
+but runtime restriction is not the same truth as criminal judgment.

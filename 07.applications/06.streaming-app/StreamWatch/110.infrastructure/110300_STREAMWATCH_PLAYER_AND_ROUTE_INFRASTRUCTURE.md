@@ -2,32 +2,31 @@
 # STREAMWATCH PLAYER AND ROUTE INFRASTRUCTURE
 # ============================================================
 
-status: draft-canonical
+status: canonical-draft
+layer: infrastructure
 system: StreamingOS
 app: StreamWatch
+schema: streaming
 owner: Boss
 prepared_by: Zero
 language: English
 
 ## 1. Purpose
 
-Defines infrastructure assumptions around playback engines, route adapters, and large-screen support.
+This document defines infrastructure assumptions around playback and route-capable delivery surfaces.
 
-## 2. Fixed Inputs
+## 2. Infrastructure Responsibilities
 
-- StreamWatch is the official viewer-front application of StreamingOS.
-- Viewer continuity is resolved at the viewer_profile unit rather than the raw account unit.
-- Category discovery is treated as a canonical tree rather than a flat tag or chip list.
-- Favorites and Watch Later are phase-1 protected playlist interpretations.
-- Commerce execution may start from both Civilization and StreamingOS surfaces.
-- StreamingOS remains canonical for entitlement, playback eligibility, archive availability, and playback-state truth.
-- TV route handoff is distinct from same-device HDMI large-screen mode.
+The infrastructure layer should support:
 
-## 3. Design Direction
+- live playback surfaces
+- archive playback surfaces
+- clip playback surfaces
+- subtitle and audio track handling
+- route adapters
+- handoff-compatible target negotiation
+- same-device large-screen compatibility
 
-This document belongs to the implementation-ready StreamWatch design set.
-It should be refined additively and remain consistent with the frozen app boundary, continuity model, entitlement model, and interface model.
+## 3. Final Infrastructure Rule
 
-## 4. Current Status
-
-This file is intentionally concise but non-empty so the StreamWatch design set can be expanded in-place without breaking the folder structure, file naming rules, or cross-document references.
+Player infrastructure and route infrastructure must cooperate, but route handoff logic must still remain explicit above the raw playback engine.

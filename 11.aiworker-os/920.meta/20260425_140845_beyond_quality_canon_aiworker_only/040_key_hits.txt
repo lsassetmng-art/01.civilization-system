@@ -1,0 +1,37 @@
+99:-     78	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/030.model/030_AIWORKER_BEYOND_SERIES_ASIC_APPEND.md
+103843:# SOURCE: 030.model/030_AIWORKER_BEYOND_SERIES_ASIC_APPEND.md
+103845:# AIWorkerOS Model Append: ASIC Beyond Series
+103865:- manufacturer_name: ASIC
+103866:- manufacturer_name_ja: ASIC
+103871:- series_name: Beyond Series
+103872:- series_name_ja: Beyondシリーズ
+103905:Beyond Series differentiates models by work quality level.
+103911:- BYD1-001 / ASIC Workers1 / 単純単発作業レベル
+103912:- BYD1-002 / ASIC Workers2 / 単純反復・抜け漏れ補完レベル
+103913:- BYD1-003 / ASIC Workers3 / 複雑作業・高完成度成果物レベル
+103917:- BYD2-001 / ASIC Leader1 / 基本進行・形式チェックレベル
+103918:- BYD2-002 / ASIC Leader2 / 品質レビュー・整合性確認レベル
+103919:- BYD2-003 / ASIC Leader3 / 統合設計・リスク判断・納品品質統括レベル
+103925:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+103936:# AIWorkerOS Model Append: Beyond Series Quality Level Update
+103952:Beyond Series differentiates models by work quality level, not by public management-count claims.
+103958:Beyond Series:
+103982:- BYD1-001 / ASIC Workers1 / 単純単発作業レベル
+103983:- BYD1-002 / ASIC Workers2 / 単純反復・抜け漏れ補完レベル
+103984:- BYD1-003 / ASIC Workers3 / 複雑作業・高完成度成果物レベル
+103988:- BYD2-001 / ASIC Leader1 / 基本進行・形式チェックレベル
+103989:- BYD2-002 / ASIC Leader2 / 品質レビュー・整合性確認レベル
+103990:- BYD2-003 / ASIC Leader3 / 統合設計・リスク判断・納品品質統括レベル
+103996:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+105413:# AIWorkerOS Integration Append: Beyond Series Quality Reference Surface
+105420:Beyond Series only.
+105437:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+105443:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+105466:# AIWorkerOS Integration Append: Beyond Series Reference Surface
+105476:Beyond Series only.
+105498:- aiworker.vw_ai_company_beyond_candidate_quality_lineup_v1
+106137:# AIWorkerOS Policy Append: Beyond Series
+106145:Beyond Series only.
+106151:Beyond Series is proactive and corrective.
+106198:# AIWorkerOS Policy Append: Beyond Series Quality Differentiation
+106205:Beyond Series may propose strongly and compensate for operational weakness.

@@ -1,5 +1,5 @@
 # ============================================================
-# 040 SCREEN AND STATEFLOW INDEX
+# 040 INDEX
 # ============================================================
 
 status: canonical
@@ -11,6 +11,7 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 040_OVERVIEW.md
 - 040_STREAM_STUDIO_SCREEN_AND_STATEFLOW.md
 - 041_STREAM_STUDIO_HOME_DASHBOARD_EXACT.md
 - 042_STREAM_STUDIO_PROJECT_DETAIL_EXACT.md

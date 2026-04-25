@@ -2,7 +2,7 @@
 # BUSINESS AI WORKER FIXED HANDOFF
 # ============================================================
 
-status: canonical-handoff
+status: canonical-meta
 layer: meta
 system: business-os
 owner: Boss

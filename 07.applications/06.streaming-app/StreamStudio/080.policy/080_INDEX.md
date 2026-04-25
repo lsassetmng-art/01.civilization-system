@@ -1,5 +1,5 @@
 # ============================================================
-# 080 POLICY INDEX
+# 080 INDEX
 # ============================================================
 
 status: canonical
@@ -11,5 +11,6 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 080_OVERVIEW.md
 - 080_STREAM_STUDIO_POLICY.md
 - 081_STREAM_STUDIO_PERMISSION_MATRIX_EXACT.md

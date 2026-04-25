@@ -1,0 +1,6 @@
+manual_action=manual_reclassified_to_misnamed_governance_archive
+canonical_winner=/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/150.security/0301500002_PERSONA_SECURITY_STATE_MODEL.md
+alternate_candidate_1=/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/0301500002_PERSONA_SECURITY_STATE_MODEL.md
+alternate_candidate_2=/data/data/com.termux/files/home/01.civilization-system/02.persona-os/030.model/100.security/0301500002_PERSONA_SECURITY_STATE_MODEL.md
+decision_reading=manual_file_is_not_a_model_rehome_target
+decision_reading_2=150_security_version_is_the_best_canonical_model_candidate

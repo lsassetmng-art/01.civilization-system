@@ -1,0 +1,8 @@
+# 0800900000_PERSONA_SNAPSHOT_POLICY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 080.policy/090.snapshot/080.policy/090.snapshot
+
+- 0800900001_PERSONA_SNAPSHOT_POLICY_OVERVIEW.md
+- 0800900002_PERSONA_SNAPSHOT_ISSUE_POLICY.md

@@ -1,0 +1,642 @@
+PERSONA_SNAPSHOT	100038	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	100041	- persona snapshot truth model:
+PERSONA_SNAPSHOT	100044	- persona_snapshot_id:
+PERSONA_SNAPSHOT	100052	- persona_snapshot_id:
+PERSONA_SNAPSHOT	100071	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	100966	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	100969	- persona snapshot truth model:
+PERSONA_SNAPSHOT	100972	- persona_snapshot_id:
+PERSONA_SNAPSHOT	100980	- persona_snapshot_id:
+PERSONA_SNAPSHOT	100999	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	101	    - source_snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	10180	- persona snapshot release issued:
+PERSONA_SNAPSHOT	101810	persona snapshot issuance:
+PERSONA_SNAPSHOT	102167	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	103095	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	1033	persona snapshot issuance:
+PERSONA_SNAPSHOT	103717	memory is not snapshot truth:
+PERSONA_SNAPSHOT	103803	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	104222	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	104684	- persona snapshot release issued:
+PERSONA_SNAPSHOT	105176	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	105265	- persona snapshot truth:
+PERSONA_SNAPSHOT	105387	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	106958	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	10708	persona_snapshot_id:
+PERSONA_SNAPSHOT	10715	persona_snapshot_id:
+PERSONA_SNAPSHOT	10792	- persona snapshot truth:
+PERSONA_SNAPSHOT	10803	snapshot_id:
+PERSONA_SNAPSHOT	10810	snapshot_id:
+PERSONA_SNAPSHOT	10854	persona_snapshot_id:
+PERSONA_SNAPSHOT	10914	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	10984	snapshot_id:
+PERSONA_SNAPSHOT	10991	snapshot_id:
+PERSONA_SNAPSHOT	11076	snapshot_id:
+PERSONA_SNAPSHOT	11083	snapshot_id:
+PERSONA_SNAPSHOT	112055	persona_snapshot_id:
+PERSONA_SNAPSHOT	11218	persona_snapshot_id:
+PERSONA_SNAPSHOT	112528	snapshot_id:
+PERSONA_SNAPSHOT	11257	snapshot_id:
+PERSONA_SNAPSHOT	112627	Create a signed snapshot:
+PERSONA_SNAPSHOT	112947	snapshot_id:
+PERSONA_SNAPSHOT	113048	snapshot_id:
+PERSONA_SNAPSHOT	113204	- snapshot truth tables:
+PERSONA_SNAPSHOT	11325	snapshot_id:
+PERSONA_SNAPSHOT	11358	snapshot_id:
+PERSONA_SNAPSHOT	1139	especially signed snapshots.:
+PERSONA_SNAPSHOT	114122	Create a signed snapshot:
+PERSONA_SNAPSHOT	114620	- snapshot truth tables:
+PERSONA_SNAPSHOT	114887	- snapshot truth:
+PERSONA_SNAPSHOT	115050	Create a signed snapshot:
+PERSONA_SNAPSHOT	115250	- snapshot truth:
+PERSONA_SNAPSHOT	11539	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	1154	persona snapshot truth:
+PERSONA_SNAPSHOT	115548	- snapshot truth tables:
+PERSONA_SNAPSHOT	115873	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	115876	- persona snapshot truth model:
+PERSONA_SNAPSHOT	115879	- persona_snapshot_id:
+PERSONA_SNAPSHOT	115887	- persona_snapshot_id:
+PERSONA_SNAPSHOT	115906	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	116178	- snapshot truth:
+PERSONA_SNAPSHOT	11621	snapshot_id:
+PERSONA_SNAPSHOT	1168	signed snapshot:
+PERSONA_SNAPSHOT	118279	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	11903	snapshot_id:
+PERSONA_SNAPSHOT	11936	snapshot_id:
+PERSONA_SNAPSHOT	12	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	121	persona_snapshot_id:
+PERSONA_SNAPSHOT	123	snapshot_id:
+PERSONA_SNAPSHOT	1230	especially signed snapshots.:
+PERSONA_SNAPSHOT	1239	persona snapshot issuance:
+PERSONA_SNAPSHOT	12392	- snapshot_id:
+PERSONA_SNAPSHOT	124	snapshot_id:
+PERSONA_SNAPSHOT	124009	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	124071	persona_snapshot_id:
+PERSONA_SNAPSHOT	1245	persona snapshot truth:
+PERSONA_SNAPSHOT	1246	persona snapshot issuance:
+PERSONA_SNAPSHOT	12467	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	124937	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	124999	persona_snapshot_id:
+PERSONA_SNAPSHOT	125486	snapshot_id:
+PERSONA_SNAPSHOT	125822	snapshot_id:
+PERSONA_SNAPSHOT	1259	signed snapshot:
+PERSONA_SNAPSHOT	126069	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	126213	snapshot_id:
+PERSONA_SNAPSHOT	126294	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	126414	snapshot_id:
+PERSONA_SNAPSHOT	126750	snapshot_id:
+PERSONA_SNAPSHOT	126997	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	127141	snapshot_id:
+PERSONA_SNAPSHOT	127222	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	128548	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	128884	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	129267	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	129646	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	129812	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	13	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	130027	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	130078	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	130195	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	130574	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	130926	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	130955	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	131006	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	131854	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	1325	especially signed snapshots.:
+PERSONA_SNAPSHOT	1340	persona snapshot truth:
+PERSONA_SNAPSHOT	1354	signed snapshot:
+PERSONA_SNAPSHOT	135999	Create a signed snapshot:
+PERSONA_SNAPSHOT	136576	- snapshot truth tables:
+PERSONA_SNAPSHOT	138259	- snapshot truth:
+PERSONA_SNAPSHOT	13894	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	13897	- persona snapshot truth model:
+PERSONA_SNAPSHOT	139	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	13900	- persona_snapshot_id:
+PERSONA_SNAPSHOT	13908	- persona_snapshot_id:
+PERSONA_SNAPSHOT	13927	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	139879	especially signed snapshots.:
+PERSONA_SNAPSHOT	139894	persona snapshot truth:
+PERSONA_SNAPSHOT	139908	signed snapshot:
+PERSONA_SNAPSHOT	14	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	140234	primarily signed snapshots.:
+PERSONA_SNAPSHOT	142980	persona snapshot issuance:
+PERSONA_SNAPSHOT	14472	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	14475	- persona snapshot truth model:
+PERSONA_SNAPSHOT	14478	- persona_snapshot_id:
+PERSONA_SNAPSHOT	14486	- persona_snapshot_id:
+PERSONA_SNAPSHOT	144887	memory is not snapshot truth:
+PERSONA_SNAPSHOT	144973	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	14505	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	145392	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	145854	- persona snapshot release issued:
+PERSONA_SNAPSHOT	146435	- persona snapshot truth:
+PERSONA_SNAPSHOT	146557	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	147564	especially signed snapshots.:
+PERSONA_SNAPSHOT	147579	persona snapshot truth:
+PERSONA_SNAPSHOT	147593	signed snapshot:
+PERSONA_SNAPSHOT	147907	primarily signed snapshots.:
+PERSONA_SNAPSHOT	148128	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	1492	primarily signed snapshots.:
+PERSONA_SNAPSHOT	15	- persona snapshot truth model:
+PERSONA_SNAPSHOT	15	persona_snapshot_id:
+PERSONA_SNAPSHOT	153228	memory is not snapshot truth:
+PERSONA_SNAPSHOT	153296	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	153343	persona_snapshot_id:
+PERSONA_SNAPSHOT	153816	snapshot_id:
+PERSONA_SNAPSHOT	154154	- persona snapshot release issued:
+PERSONA_SNAPSHOT	154235	snapshot_id:
+PERSONA_SNAPSHOT	154336	snapshot_id:
+PERSONA_SNAPSHOT	154766	- persona snapshot truth:
+PERSONA_SNAPSHOT	154888	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	156441	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	157161	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	157164	- persona snapshot truth model:
+PERSONA_SNAPSHOT	157167	- persona_snapshot_id:
+PERSONA_SNAPSHOT	157175	- persona_snapshot_id:
+PERSONA_SNAPSHOT	157194	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	1581	primarily signed snapshots.:
+PERSONA_SNAPSHOT	159567	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	16	snapshot_id:
+PERSONA_SNAPSHOT	16023	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	16477	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	16480	- persona snapshot truth model:
+PERSONA_SNAPSHOT	16483	- persona_snapshot_id:
+PERSONA_SNAPSHOT	16488	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	16491	- persona_snapshot_id:
+PERSONA_SNAPSHOT	16495	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	16510	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	16601	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	1678	primarily signed snapshots.:
+PERSONA_SNAPSHOT	168229	persona_snapshot_id:
+PERSONA_SNAPSHOT	168724	snapshot_id:
+PERSONA_SNAPSHOT	169287	snapshot_id:
+PERSONA_SNAPSHOT	169483	snapshot_id:
+PERSONA_SNAPSHOT	17	- persona snapshot release issued:
+PERSONA_SNAPSHOT	17	snapshot_id:
+PERSONA_SNAPSHOT	170064	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	172429	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	172432	- persona snapshot truth model:
+PERSONA_SNAPSHOT	172435	- persona_snapshot_id:
+PERSONA_SNAPSHOT	172443	- persona_snapshot_id:
+PERSONA_SNAPSHOT	172462	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	175332	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	177515	Create a signed snapshot:
+PERSONA_SNAPSHOT	178092	- snapshot truth tables:
+PERSONA_SNAPSHOT	179775	- snapshot truth:
+PERSONA_SNAPSHOT	18	- persona_snapshot_id:
+PERSONA_SNAPSHOT	181	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	18598	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	188608	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	192068	- snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	192330	- snapshot_id:
+PERSONA_SNAPSHOT	192989	- source_snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	20	- snapshot_id:
+PERSONA_SNAPSHOT	200	  source_snapshot_id_or_package_id: pkg_001
+PERSONA_SNAPSHOT	201332	    "snapshot_id": "01SNP...",
+PERSONA_SNAPSHOT	201342	### POST /persona/v1/snapshots/{snapshot_id}/restore:
+PERSONA_SNAPSHOT	204464	- snapshot truth:
+PERSONA_SNAPSHOT	205	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	205	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	207478	especially signed snapshots.:
+PERSONA_SNAPSHOT	207493	persona snapshot truth:
+PERSONA_SNAPSHOT	207507	signed snapshot:
+PERSONA_SNAPSHOT	207827	primarily signed snapshots.:
+PERSONA_SNAPSHOT	208348	persona snapshot issuance:
+PERSONA_SNAPSHOT	21	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	210057	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	212	especially signed snapshots.:
+PERSONA_SNAPSHOT	212783	Create a signed snapshot:
+PERSONA_SNAPSHOT	215544	memory is not snapshot truth:
+PERSONA_SNAPSHOT	215837	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	217817	persona_snapshot_id:
+PERSONA_SNAPSHOT	217912	snapshot_id:
+PERSONA_SNAPSHOT	218093	snapshot_id:
+PERSONA_SNAPSHOT	218185	snapshot_id:
+PERSONA_SNAPSHOT	22	- source_snapshot_id:
+PERSONA_SNAPSHOT	223597	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	227	persona snapshot truth:
+PERSONA_SNAPSHOT	231793	especially signed snapshots.:
+PERSONA_SNAPSHOT	231808	persona snapshot truth:
+PERSONA_SNAPSHOT	231822	signed snapshot:
+PERSONA_SNAPSHOT	232146	primarily signed snapshots.:
+PERSONA_SNAPSHOT	23327	persona_snapshot_id:
+PERSONA_SNAPSHOT	233774	persona snapshot issuance:
+PERSONA_SNAPSHOT	235578	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	236109	- persona snapshot release issued:
+PERSONA_SNAPSHOT	236410	- persona snapshot truth:
+PERSONA_SNAPSHOT	236532	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	23748	especially signed snapshots.:
+PERSONA_SNAPSHOT	23763	persona snapshot truth:
+PERSONA_SNAPSHOT	23777	signed snapshot:
+PERSONA_SNAPSHOT	238100	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	23822	snapshot_id:
+PERSONA_SNAPSHOT	24097	primarily signed snapshots.:
+PERSONA_SNAPSHOT	241	signed snapshot:
+PERSONA_SNAPSHOT	241686	persona_snapshot_id:
+PERSONA_SNAPSHOT	242089	snapshot_id:
+PERSONA_SNAPSHOT	242371	snapshot_id:
+PERSONA_SNAPSHOT	242404	snapshot_id:
+PERSONA_SNAPSHOT	24255	persona_snapshot_id:
+PERSONA_SNAPSHOT	24385	snapshot_id:
+PERSONA_SNAPSHOT	244940	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	244943	- persona snapshot truth model:
+PERSONA_SNAPSHOT	244946	- persona_snapshot_id:
+PERSONA_SNAPSHOT	244954	- persona_snapshot_id:
+PERSONA_SNAPSHOT	244973	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	24511	especially signed snapshots.:
+PERSONA_SNAPSHOT	24526	persona snapshot truth:
+PERSONA_SNAPSHOT	24540	signed snapshot:
+PERSONA_SNAPSHOT	24581	snapshot_id:
+PERSONA_SNAPSHOT	24618	persona snapshot issuance:
+PERSONA_SNAPSHOT	247069	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	24750	snapshot_id:
+PERSONA_SNAPSHOT	24864	primarily signed snapshots.:
+PERSONA_SNAPSHOT	25313	snapshot_id:
+PERSONA_SNAPSHOT	2542	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	25509	snapshot_id:
+PERSONA_SNAPSHOT	25808	Create a signed snapshot:
+PERSONA_SNAPSHOT	259024	Create a signed snapshot:
+PERSONA_SNAPSHOT	259522	- snapshot truth tables:
+PERSONA_SNAPSHOT	26	- persona_snapshot_id:
+PERSONA_SNAPSHOT	260152	- snapshot truth:
+PERSONA_SNAPSHOT	26208	- snapshot truth tables:
+PERSONA_SNAPSHOT	26327	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	26492	persona snapshot issuance:
+PERSONA_SNAPSHOT	2662	especially signed snapshots.:
+PERSONA_SNAPSHOT	26623	- snapshot truth:
+PERSONA_SNAPSHOT	2677	persona snapshot truth:
+PERSONA_SNAPSHOT	268911	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	268973	persona_snapshot_id:
+PERSONA_SNAPSHOT	2691	signed snapshot:
+PERSONA_SNAPSHOT	270388	snapshot_id:
+PERSONA_SNAPSHOT	270724	snapshot_id:
+PERSONA_SNAPSHOT	270971	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	271115	snapshot_id:
+PERSONA_SNAPSHOT	271196	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	27341	Create a signed snapshot:
+PERSONA_SNAPSHOT	273786	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	274169	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	274548	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	274929	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	274980	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	27527	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	27530	- persona snapshot truth model:
+PERSONA_SNAPSHOT	27533	- persona_snapshot_id:
+PERSONA_SNAPSHOT	27541	- persona_snapshot_id:
+PERSONA_SNAPSHOT	27560	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	275828	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	27839	- snapshot truth tables:
+PERSONA_SNAPSHOT	28296	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	28455	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	28458	- persona snapshot truth model:
+PERSONA_SNAPSHOT	28461	- persona_snapshot_id:
+PERSONA_SNAPSHOT	28469	- persona_snapshot_id:
+PERSONA_SNAPSHOT	28469	- snapshot truth:
+PERSONA_SNAPSHOT	28488	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	28556	Create a signed snapshot:
+PERSONA_SNAPSHOT	28827	- persona snapshot release issued:
+PERSONA_SNAPSHOT	28950	- persona snapshot truth:
+PERSONA_SNAPSHOT	290472	especially signed snapshots.:
+PERSONA_SNAPSHOT	290487	persona snapshot truth:
+PERSONA_SNAPSHOT	290501	signed snapshot:
+PERSONA_SNAPSHOT	29053	Create a signed snapshot:
+PERSONA_SNAPSHOT	29054	- snapshot truth tables:
+PERSONA_SNAPSHOT	29072	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	290815	primarily signed snapshots.:
+PERSONA_SNAPSHOT	2948	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	295368	memory is not snapshot truth:
+PERSONA_SNAPSHOT	295436	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	2955	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	296084	- persona snapshot release issued:
+PERSONA_SNAPSHOT	296528	- persona snapshot truth:
+PERSONA_SNAPSHOT	296650	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	29684	- snapshot truth:
+PERSONA_SNAPSHOT	298203	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	2996	persona snapshot issuance:
+PERSONA_SNAPSHOT	30	    "snapshot_id": "01SNP...",
+PERSONA_SNAPSHOT	3005	primarily signed snapshots.:
+PERSONA_SNAPSHOT	30430	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	30640	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	308895	persona_snapshot_id:
+PERSONA_SNAPSHOT	309314	snapshot_id:
+PERSONA_SNAPSHOT	309725	snapshot_id:
+PERSONA_SNAPSHOT	309777	snapshot_id:
+PERSONA_SNAPSHOT	3120	persona snapshot issuance:
+PERSONA_SNAPSHOT	312294	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	312297	- persona snapshot truth model:
+PERSONA_SNAPSHOT	312300	- persona_snapshot_id:
+PERSONA_SNAPSHOT	312308	- persona_snapshot_id:
+PERSONA_SNAPSHOT	312327	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	31358	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	314999	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	31814	memory is not snapshot truth:
+PERSONA_SNAPSHOT	32107	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	325079	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	327485	- snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	327539	- snapshot_id:
+PERSONA_SNAPSHOT	327970	- source_snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	3306	persona snapshot issuance:
+PERSONA_SNAPSHOT	334000	    "snapshot_id": "01SNP...",
+PERSONA_SNAPSHOT	334010	### POST /persona/v1/snapshots/{snapshot_id}/restore:
+PERSONA_SNAPSHOT	336406	- snapshot truth:
+PERSONA_SNAPSHOT	339387	especially signed snapshots.:
+PERSONA_SNAPSHOT	339402	persona snapshot truth:
+PERSONA_SNAPSHOT	339416	signed snapshot:
+PERSONA_SNAPSHOT	339736	primarily signed snapshots.:
+PERSONA_SNAPSHOT	34	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	340257	persona snapshot issuance:
+PERSONA_SNAPSHOT	34087	persona_snapshot_id:
+PERSONA_SNAPSHOT	34182	snapshot_id:
+PERSONA_SNAPSHOT	341966	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	34226	persona_snapshot_id:
+PERSONA_SNAPSHOT	34363	snapshot_id:
+PERSONA_SNAPSHOT	34455	snapshot_id:
+PERSONA_SNAPSHOT	344692	Create a signed snapshot:
+PERSONA_SNAPSHOT	34629	snapshot_id:
+PERSONA_SNAPSHOT	34697	snapshot_id:
+PERSONA_SNAPSHOT	34730	snapshot_id:
+PERSONA_SNAPSHOT	347453	memory is not snapshot truth:
+PERSONA_SNAPSHOT	347746	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	349726	persona_snapshot_id:
+PERSONA_SNAPSHOT	349821	snapshot_id:
+PERSONA_SNAPSHOT	35	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	350002	snapshot_id:
+PERSONA_SNAPSHOT	350094	snapshot_id:
+PERSONA_SNAPSHOT	355506	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	3590	especially signed snapshots.:
+PERSONA_SNAPSHOT	36	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	3605	persona snapshot truth:
+PERSONA_SNAPSHOT	3619	signed snapshot:
+PERSONA_SNAPSHOT	363702	especially signed snapshots.:
+PERSONA_SNAPSHOT	363717	persona snapshot truth:
+PERSONA_SNAPSHOT	363731	signed snapshot:
+PERSONA_SNAPSHOT	364055	primarily signed snapshots.:
+PERSONA_SNAPSHOT	365683	persona snapshot issuance:
+PERSONA_SNAPSHOT	367487	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	368018	- persona snapshot release issued:
+PERSONA_SNAPSHOT	368319	- persona snapshot truth:
+PERSONA_SNAPSHOT	368441	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	369	especially signed snapshots.:
+PERSONA_SNAPSHOT	370009	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	37228	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	37266	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	37269	- persona snapshot truth model:
+PERSONA_SNAPSHOT	37272	- persona_snapshot_id:
+PERSONA_SNAPSHOT	37280	- persona_snapshot_id:
+PERSONA_SNAPSHOT	37290	persona_snapshot_id:
+PERSONA_SNAPSHOT	37299	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	373595	persona_snapshot_id:
+PERSONA_SNAPSHOT	373998	snapshot_id:
+PERSONA_SNAPSHOT	374280	snapshot_id:
+PERSONA_SNAPSHOT	374313	snapshot_id:
+PERSONA_SNAPSHOT	376	especially signed snapshots.:
+PERSONA_SNAPSHOT	376849	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	376852	- persona snapshot truth model:
+PERSONA_SNAPSHOT	376855	- persona_snapshot_id:
+PERSONA_SNAPSHOT	376863	- persona_snapshot_id:
+PERSONA_SNAPSHOT	376882	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	378978	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	3834	Create a signed snapshot:
+PERSONA_SNAPSHOT	384	persona snapshot truth:
+PERSONA_SNAPSHOT	38443	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	38505	persona_snapshot_id:
+PERSONA_SNAPSHOT	38705	snapshot_id:
+PERSONA_SNAPSHOT	39	- by snapshot_id:
+PERSONA_SNAPSHOT	39	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	39041	snapshot_id:
+PERSONA_SNAPSHOT	390933	Create a signed snapshot:
+PERSONA_SNAPSHOT	391	persona snapshot truth:
+PERSONA_SNAPSHOT	391431	- snapshot truth tables:
+PERSONA_SNAPSHOT	392061	- snapshot truth:
+PERSONA_SNAPSHOT	39288	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	3933	primarily signed snapshots.:
+PERSONA_SNAPSHOT	39395	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	39432	snapshot_id:
+PERSONA_SNAPSHOT	39513	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	398	signed snapshot:
+PERSONA_SNAPSHOT	39867	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	39920	snapshot_id:
+PERSONA_SNAPSHOT	40	### POST /persona/v1/snapshots/{snapshot_id}/restore:
+PERSONA_SNAPSHOT	400820	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	400882	persona_snapshot_id:
+PERSONA_SNAPSHOT	402297	snapshot_id:
+PERSONA_SNAPSHOT	40256	snapshot_id:
+PERSONA_SNAPSHOT	402633	snapshot_id:
+PERSONA_SNAPSHOT	402880	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	403024	snapshot_id:
+PERSONA_SNAPSHOT	403105	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	405	signed snapshot:
+PERSONA_SNAPSHOT	40503	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	405695	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	406078	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	406457	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	40647	snapshot_id:
+PERSONA_SNAPSHOT	406838	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	406889	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	40728	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	407737	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	41	- by source_snapshot_id:
+PERSONA_SNAPSHOT	42103	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	42486	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	42865	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	43246	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	43297	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	43318	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	43701	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	43706	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	44080	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	44145	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	44461	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	44512	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	44634	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	45	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	45360	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	4638	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	47166	- snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	47428	- snapshot_id:
+PERSONA_SNAPSHOT	47883	especially signed snapshots.:
+PERSONA_SNAPSHOT	47898	persona snapshot truth:
+PERSONA_SNAPSHOT	47912	signed snapshot:
+PERSONA_SNAPSHOT	48087	- source_snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	48094	- snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	48236	primarily signed snapshots.:
+PERSONA_SNAPSHOT	48356	- snapshot_id:
+PERSONA_SNAPSHOT	49015	- source_snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	4924	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	49864	persona snapshot issuance:
+PERSONA_SNAPSHOT	50	memory is not snapshot truth:
+PERSONA_SNAPSHOT	50713	Create a signed snapshot:
+PERSONA_SNAPSHOT	5110	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	51211	- snapshot truth tables:
+PERSONA_SNAPSHOT	5158	- persona snapshot release issued:
+PERSONA_SNAPSHOT	51668	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	51841	- snapshot truth:
+PERSONA_SNAPSHOT	52199	- persona snapshot release issued:
+PERSONA_SNAPSHOT	52322	- persona snapshot truth:
+PERSONA_SNAPSHOT	52444	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	5279	- persona snapshot truth:
+PERSONA_SNAPSHOT	5401	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	54012	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	5455	- persona snapshot release issued:
+PERSONA_SNAPSHOT	5578	- persona snapshot truth:
+PERSONA_SNAPSHOT	5641	- persona snapshot release issued:
+PERSONA_SNAPSHOT	56430	    "snapshot_id": "01SNP...",
+PERSONA_SNAPSHOT	56440	### POST /persona/v1/snapshots/{snapshot_id}/restore:
+PERSONA_SNAPSHOT	565	primarily signed snapshots.:
+PERSONA_SNAPSHOT	5674	Create a signed snapshot:
+PERSONA_SNAPSHOT	5681	Create a signed snapshot:
+PERSONA_SNAPSHOT	57	especially signed snapshots.:
+PERSONA_SNAPSHOT	5700	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	57358	    "snapshot_id": "01SNP...",
+PERSONA_SNAPSHOT	57368	### POST /persona/v1/snapshots/{snapshot_id}/restore:
+PERSONA_SNAPSHOT	57598	persona_snapshot_id:
+PERSONA_SNAPSHOT	58001	snapshot_id:
+PERSONA_SNAPSHOT	58069	snapshot_id:
+PERSONA_SNAPSHOT	58102	snapshot_id:
+PERSONA_SNAPSHOT	59	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	5942	- persona snapshot truth:
+PERSONA_SNAPSHOT	59562	- snapshot truth:
+PERSONA_SNAPSHOT	6	- snapshot_id:
+PERSONA_SNAPSHOT	60490	- snapshot truth:
+PERSONA_SNAPSHOT	60600	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	60638	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	6064	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	60641	- persona snapshot truth model:
+PERSONA_SNAPSHOT	60644	- persona_snapshot_id:
+PERSONA_SNAPSHOT	60652	- persona_snapshot_id:
+PERSONA_SNAPSHOT	60662	persona_snapshot_id:
+PERSONA_SNAPSHOT	60671	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	62077	snapshot_id:
+PERSONA_SNAPSHOT	62413	snapshot_id:
+PERSONA_SNAPSHOT	62576	especially signed snapshots.:
+PERSONA_SNAPSHOT	62591	persona snapshot truth:
+PERSONA_SNAPSHOT	62605	signed snapshot:
+PERSONA_SNAPSHOT	62660	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	62767	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	62804	snapshot_id:
+PERSONA_SNAPSHOT	62885	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	62925	primarily signed snapshots.:
+PERSONA_SNAPSHOT	63446	persona snapshot issuance:
+PERSONA_SNAPSHOT	63504	especially signed snapshots.:
+PERSONA_SNAPSHOT	63519	persona snapshot truth:
+PERSONA_SNAPSHOT	63533	signed snapshot:
+PERSONA_SNAPSHOT	63853	primarily signed snapshots.:
+PERSONA_SNAPSHOT	64374	persona snapshot issuance:
+PERSONA_SNAPSHOT	65155	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	65475	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	65858	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	66083	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	66237	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	66618	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	66669	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	67517	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	67881	Create a signed snapshot:
+PERSONA_SNAPSHOT	68809	Create a signed snapshot:
+PERSONA_SNAPSHOT	6966	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	70642	memory is not snapshot truth:
+PERSONA_SNAPSHOT	70935	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	71570	memory is not snapshot truth:
+PERSONA_SNAPSHOT	718	primarily signed snapshots.:
+PERSONA_SNAPSHOT	71863	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	72	persona snapshot truth:
+PERSONA_SNAPSHOT	725	primarily signed snapshots.:
+PERSONA_SNAPSHOT	7268	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	72915	persona_snapshot_id:
+PERSONA_SNAPSHOT	73010	snapshot_id:
+PERSONA_SNAPSHOT	73191	snapshot_id:
+PERSONA_SNAPSHOT	73283	snapshot_id:
+PERSONA_SNAPSHOT	73843	persona_snapshot_id:
+PERSONA_SNAPSHOT	73938	snapshot_id:
+PERSONA_SNAPSHOT	74085	Create a signed snapshot:
+PERSONA_SNAPSHOT	74119	snapshot_id:
+PERSONA_SNAPSHOT	74211	snapshot_id:
+PERSONA_SNAPSHOT	74583	- snapshot truth tables:
+PERSONA_SNAPSHOT	75213	- snapshot truth:
+PERSONA_SNAPSHOT	75447	especially signed snapshots.:
+PERSONA_SNAPSHOT	75462	persona snapshot truth:
+PERSONA_SNAPSHOT	75476	signed snapshot:
+PERSONA_SNAPSHOT	75802	primarily signed snapshots.:
+PERSONA_SNAPSHOT	7632	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	78438	persona snapshot issuance:
+PERSONA_SNAPSHOT	78695	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	79623	Memory policy does not redefine snapshot truth.:
+PERSONA_SNAPSHOT	8	- snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	80345	memory is not snapshot truth:
+PERSONA_SNAPSHOT	80431	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	80850	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	81312	- persona snapshot release issued:
+PERSONA_SNAPSHOT	81893	- persona snapshot truth:
+PERSONA_SNAPSHOT	82015	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	83	- persona snapshot truth:
+PERSONA_SNAPSHOT	83	- snapshot truth:
+PERSONA_SNAPSHOT	8326	memory is not snapshot truth:
+PERSONA_SNAPSHOT	83586	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	8394	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	83972	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	84	primarily signed snapshots.:
+PERSONA_SNAPSHOT	84034	persona_snapshot_id:
+PERSONA_SNAPSHOT	8435	memory is not snapshot truth:
+PERSONA_SNAPSHOT	8442	memory is not snapshot truth:
+PERSONA_SNAPSHOT	85449	snapshot_id:
+PERSONA_SNAPSHOT	85785	snapshot_id:
+PERSONA_SNAPSHOT	86	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	86	signed snapshot:
+PERSONA_SNAPSHOT	86032	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	86176	snapshot_id:
+PERSONA_SNAPSHOT	86257	2. Is package clearly separated from snapshot truth and release authority?:
+PERSONA_SNAPSHOT	86891	especially signed snapshots.:
+PERSONA_SNAPSHOT	86906	persona snapshot truth:
+PERSONA_SNAPSHOT	86920	signed snapshot:
+PERSONA_SNAPSHOT	87244	primarily signed snapshots.:
+PERSONA_SNAPSHOT	8728	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	8735	Defines the structural overview of persona snapshot domain.:
+PERSONA_SNAPSHOT	87819	especially signed snapshots.:
+PERSONA_SNAPSHOT	87834	persona snapshot truth:
+PERSONA_SNAPSHOT	87848	signed snapshot:
+PERSONA_SNAPSHOT	88172	primarily signed snapshots.:
+PERSONA_SNAPSHOT	88683	persona_snapshot_id:
+PERSONA_SNAPSHOT	88847	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	88872	persona snapshot issuance:
+PERSONA_SNAPSHOT	89156	snapshot_id:
+PERSONA_SNAPSHOT	89230	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	89575	snapshot_id:
+PERSONA_SNAPSHOT	89609	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	89676	snapshot_id:
+PERSONA_SNAPSHOT	89800	persona snapshot issuance:
+PERSONA_SNAPSHOT	89990	- the authority owner of Persona snapshot truth:
+PERSONA_SNAPSHOT	9	- source_snapshot_id_or_package_id:
+PERSONA_SNAPSHOT	90041	but it does not own Persona identity, state, growth, or snapshot truth.:
+PERSONA_SNAPSHOT	90676	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	90889	growth truth, or snapshot truth.:
+PERSONA_SNAPSHOT	91207	- persona snapshot release issued:
+PERSONA_SNAPSHOT	91508	- persona snapshot truth:
+PERSONA_SNAPSHOT	91604	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	91630	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	92135	- persona snapshot release issued:
+PERSONA_SNAPSHOT	92436	- persona snapshot truth:
+PERSONA_SNAPSHOT	92501	Define the canonical persona snapshot model.:
+PERSONA_SNAPSHOT	92504	- persona snapshot truth model:
+PERSONA_SNAPSHOT	92507	- persona_snapshot_id:
+PERSONA_SNAPSHOT	92515	- persona_snapshot_id:
+PERSONA_SNAPSHOT	9252	- persona snapshot release issued:
+PERSONA_SNAPSHOT	92534	Persona snapshot truth belongs to PersonaOS persona-core domain.:
+PERSONA_SNAPSHOT	9254	memory is not snapshot truth:
+PERSONA_SNAPSHOT	92558	from final Persona truth and signed snapshot truth.:
+PERSONA_SNAPSHOT	93198	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	9322	such as a signed snapshot or equivalent approved export form.:
+PERSONA_SNAPSHOT	94126	Builder must not self-sign snapshot truth.:
+PERSONA_SNAPSHOT	94907	Issue cryptographically verifiable persona snapshots.:
+PERSONA_SNAPSHOT	96784	persona_snapshot_id:
+PERSONA_SNAPSHOT	97187	snapshot_id:
+PERSONA_SNAPSHOT	97469	snapshot_id:
+PERSONA_SNAPSHOT	97502	snapshot_id:
+PERSONA_SNAPSHOT	97712	persona_snapshot_id:
+PERSONA_SNAPSHOT	98115	snapshot_id:
+PERSONA_SNAPSHOT	98397	snapshot_id:
+PERSONA_SNAPSHOT	98430	snapshot_id:
+PERSONA_SNAPSHOT	9864	- persona snapshot truth:
+PERSONA_SNAPSHOT	98819	especially signed snapshots.:
+PERSONA_SNAPSHOT	98834	persona snapshot truth:
+PERSONA_SNAPSHOT	98848	signed snapshot:
+PERSONA_SNAPSHOT	99174	primarily signed snapshots.:
+PERSONA_SNAPSHOT	9986	from final Persona truth and signed snapshot truth.:

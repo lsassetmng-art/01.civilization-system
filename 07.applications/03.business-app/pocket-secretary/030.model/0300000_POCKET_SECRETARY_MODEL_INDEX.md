@@ -138,3 +138,5 @@ document guide:
 
 - 0300141_POCKET_SECRETARY_NOTIFICATION_RULE_MODEL.md
   PocketSecretary use of common notification control rules.
+
+- 030510_POCKETSECRETARY_ASSISTANT_ACTION_TIMELINE_MODEL.md

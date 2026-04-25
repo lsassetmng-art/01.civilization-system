@@ -1,0 +1,7 @@
+STEP_1=edge_apply exact review
+STEP_2=state_apply exact review
+STEP_3=builder_api exact review
+STEP_4=builder_storage exact review
+STEP_5=alignment check between state_apply and builder_api
+STEP_6=alignment check between builder_api and builder_storage
+STEP_7=first-wave gate signoff

@@ -1,0 +1,46 @@
+# 090_PERSONA-OS_INTERFACE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 090.interface
+
+- 0900000_INTERFACE_INDEX.md
+- 0900000_PERSONA_OS_INTERFACE_INDEX.md
+- 0900001_PERSONA_OS_INTERFACE_OVERVIEW.md
+- 090_PERSONA-OS_INTERFACE_OVERVIEW.md
+- 090_PERSONA_APPLY_REQUEST_INTERFACE.md
+- 091_PERSONA_APPLY_RESPONSE_INTERFACE.md
+- 092_PERSONA_REJECT_RESPONSE_INTERFACE.md
+- 093_PERSONA_APPLY_STATUS_INTERFACE.md
+- 999_INTERFACE_INDEX.txt
+- 010.core/
+- 020.identity/
+- 030.state/
+- 040.memory/
+- 050.growth/
+- 060.builder/
+- 070.visual/
+- 080.runtime_hosting/
+- 090.interface/
+- 090.snapshot/
+- 100.package/
+- 100.security/
+- 110.distribution/
+- 120.external_rights/
+- 130.access_license_transfer/
+- 130.builder/
+- 140.integration/
+- 140.visual/
+- 150.secretary_interaction_common/
+- 150.security/
+- 160.business/
+- 160.governance/
+- 160.notification_common/
+- 170.background_common/
+- 170.operations-support/
+- 170.operations_support/
+- 210.persona_core/
+- 220.rights_external/
+- 230.external_sync/
+- 240.expression_composition/
+- 250.cross_cutting_completion/

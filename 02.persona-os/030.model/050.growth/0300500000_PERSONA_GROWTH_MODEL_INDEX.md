@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA GROWTH MODEL INDEX
-# ============================================================
+# 0300500000_PERSONA_GROWTH_MODEL_INDEX
 
-status: canonical
-layer: model
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH MODEL documents.
+directory: 030.model/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-0300500000_PERSONA_GROWTH_MODEL_INDEX.md
-0300500001_PERSONA_GROWTH_MODEL_OVERVIEW.md
-0300500002_PERSONA_GROWTH_MODEL.md
+- 0300500001_PERSONA_GROWTH_MODEL_OVERVIEW.md
+- 0300500002_PERSONA_GROWTH_MODEL.md
+- 030.model/

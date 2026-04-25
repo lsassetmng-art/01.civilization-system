@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA DISTRIBUTION OPERATION INDEX
-# ============================================================
+# 0701100000_PERSONA_DISTRIBUTION_OPERATION_INDEX
 
-status: canonical
-layer: operations
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA DISTRIBUTION OPERATION documents.
+directory: 070.operations/110.distribution
 
-# ============================================================
-# FILES
-# ============================================================
-
-0701100000_PERSONA_DISTRIBUTION_OPERATION_INDEX.md
-0701100001_PERSONA_DISTRIBUTION_OPERATION_OVERVIEW.md
-0701100002_PERSONA_RELEASE_OPERATION.md
+- 0701100001_PERSONA_DISTRIBUTION_OPERATION_OVERVIEW.md
+- 0701100002_PERSONA_RELEASE_OPERATION.md
+- 070.operations/

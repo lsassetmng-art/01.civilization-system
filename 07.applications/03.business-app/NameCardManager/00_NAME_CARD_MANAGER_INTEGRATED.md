@@ -1,6 +1,58 @@
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md -->
+# ============================================================
+# NAME CARD MANAGER INDEX
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_OVERVIEW.md -->
+status: canonical
+layer: index
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+# ============================================================
+# ROOT FILES
+# ============================================================
+
+- 000_NAME_CARD_MANAGER_OVERVIEW.md
+- 000_NAME_CARD_MANAGER_INDEX.md
+- 00_NAME_CARD_MANAGER_INTEGRATED.md
+
+# ============================================================
+# MAIN DOCUMENTS
+# ============================================================
+
+- 010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md
+- 010.constitution/011_NAMECARDMANAGER_DEFINITION.md
+- 020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md
+- 020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+- 020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
+- 020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md
+- 020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md
+- 030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
+- 040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
+- 050.flow/050_NAME_CARD_MANAGER_FLOW.md
+- 060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md
+- 070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
+- 080.policy/080_NAME_CARD_MANAGER_POLICY.md
+- 090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
+- 100.security/100_NAME_CARD_MANAGER_SECURITY.md
+- 110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
+- 120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
+- 130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
+- 900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
+- 900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
+- 900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
+- 900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md
+- 900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md
+- 900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
+- 900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md
+- 900.meta/900420_NAMECARDMANAGER_DIFF_SUMMARY_AUDIT_MEMO.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/000_NAME_CARD_MANAGER_OVERVIEW.md -->
 # ============================================================
 # NAME CARD MANAGER OVERVIEW
 # ============================================================
@@ -55,84 +107,9 @@ structure:
 130.development
 900.meta
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/000_NAME_CARD_MANAGER_OVERVIEW.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md -->
-# ============================================================
-# NAME CARD MANAGER INDEX
-# ============================================================
-
-status: canonical
-layer: index
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-# ============================================================
-# ROOT FILES
-# ============================================================
-
-- 000_NAME_CARD_MANAGER_OVERVIEW.md
-- 000_NAME_CARD_MANAGER_INDEX.md
-- 00_NAME_CARD_MANAGER_INTEGRATED.md
-
-# ============================================================
-# MAIN DOCUMENTS
-# ============================================================
-
-- 010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md
-- 010.constitution/011_NAMECARDMANAGER_DEFINITION.md
-- 020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md
-- 020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
-- 020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
-- 020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md
-- 020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md
-- 030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
-- 040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
-- 050.flow/050_NAME_CARD_MANAGER_FLOW.md
-- 060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md
-- 070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
-- 080.policy/080_NAME_CARD_MANAGER_POLICY.md
-- 090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
-- 100.security/100_NAME_CARD_MANAGER_SECURITY.md
-- 110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
-- 120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
-- 130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
-- 900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
-- 900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
-- 900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
-- 900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md
-- 900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md
-- 900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
-- 900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_OVERVIEW.md -->
-# ============================================================
-# 010 CONSTITUTION OVERVIEW
-# ============================================================
-
-status: draft
-layer: overview
-system: applications
-application: NameCardManager
-directory: 010.constitution
-owner: Boss
-prepared_by: Zero
-
-summary:
-Defines the constitutional principles of NameCardManager,
-including truth source, local/offline role, explicit sharing,
-and ERP-wide publication constraints.
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_OVERVIEW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_INDEX.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/010_INDEX.md -->
 # ============================================================
 # 010 CONSTITUTION INDEX
 # ============================================================
@@ -149,10 +126,9 @@ files:
 - 010_NAME_CARD_MANAGER_CONSTITUTION.md
 - 011_NAMECARDMANAGER_DEFINITION.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/010_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md -->
 # ============================================================
 # NAME CARD MANAGER CONSTITUTION
 # ============================================================
@@ -241,10 +217,29 @@ NameCardManager may manage:
 - Sensitive fields must not be exposed without authorization.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/010_OVERVIEW.md -->
+# ============================================================
+# 010 CONSTITUTION OVERVIEW
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md -->
+status: draft
+layer: overview
+system: applications
+application: NameCardManager
+directory: 010.constitution
+owner: Boss
+prepared_by: Zero
+
+summary:
+Defines the constitutional principles of NameCardManager,
+including truth source, local/offline role, explicit sharing,
+and ERP-wide publication constraints.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/010_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md -->
 # ============================================================
 # NAMECARDMANAGER DEFINITION
 # ============================================================
@@ -332,32 +327,69 @@ NameCardManager manages:
 - audit/history/approval traces
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_OVERVIEW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md -->
 # ============================================================
-# 020 ARCHITECTURE OVERVIEW
+# SHARED ERP PUBLICATION ARCHITECTURE
 # ============================================================
 
 status: draft
-layer: overview
+layer: architecture
 system: applications
 application: NameCardManager
-directory: 020.architecture
+architecture_scope: shared_erp_publication
 owner: Boss
 prepared_by: Zero
 
-summary:
-Defines the logical architecture of NameCardManager,
-including local store, sync coordinator, BusinessOS
-persistence, share controller, relationship resolver,
-and shared ERP publication architecture.
+purpose:
+Defines the architecture boundary where NameCardManager uses
+shared BusinessOS ERP publication capability rather than
+direct application-local ERP transmission.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_OVERVIEW.md -->
+# ============================================================
+# 1. ARCHITECTURE GOAL
+# ============================================================
+
+NameCardManager must not own full ERP transmission logic.
+It should issue publication requests and rely on shared
+BusinessOS capability for ERP publication execution.
+
+# ============================================================
+# 2. APPLICATION RESPONSIBILITY
+# ============================================================
+
+NameCardManager is responsible for:
+- selecting target name cards
+- presenting ERP-wide share action
+- collecting publication-relevant context
+- calling shared publication capability
+- showing publication result state
+
+# ============================================================
+# 3. SHARED BUSINESSOS RESPONSIBILITY
+# ============================================================
+
+Shared BusinessOS ERP publication capability is responsible for:
+- eligibility check
+- company context attachment
+- approval boundary handling
+- payload transformation
+- ERP transmission execution
+- transmission result capture
+- audit trail capture
+
+# ============================================================
+# 4. ERP BOUNDARY
+# ============================================================
+
+ERP publication is not direct application-local integration.
+It is a shared BusinessOS-controlled publication path.
 
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020_INDEX.md -->
 # ============================================================
 # 020 ARCHITECTURE INDEX
 # ============================================================
@@ -377,10 +409,9 @@ files:
 - 021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md
 - 021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md -->
 # ============================================================
 # NAME CARD MANAGER ARCHITECTURE
 # ============================================================
@@ -487,71 +518,129 @@ Relationship display is an application concern.
 Canonical relationship storage may be held in BusinessOS.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020_OVERVIEW.md -->
 # ============================================================
-# SHARED ERP PUBLICATION ARCHITECTURE
+# 020 ARCHITECTURE OVERVIEW
 # ============================================================
 
 status: draft
+layer: overview
+system: applications
+application: NameCardManager
+directory: 020.architecture
+owner: Boss
+prepared_by: Zero
+
+summary:
+Defines the logical architecture of NameCardManager,
+including local store, sync coordinator, BusinessOS
+persistence, share controller, relationship resolver,
+and shared ERP publication architecture.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/020_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md -->
+# ============================================================
+# NAMECARDMANAGER PHYSICAL SCHEMA DDL FREEZE
+# ============================================================
+
+status: canonical
 layer: architecture
 system: applications
 application: NameCardManager
-architecture_scope: shared_erp_publication
 owner: Boss
 prepared_by: Zero
 
 purpose:
-Defines the architecture boundary where NameCardManager uses
-shared BusinessOS ERP publication capability rather than
-direct application-local ERP transmission.
+Freezes DDL-adjacent physical schema decisions before execution.
 
-# ============================================================
-# 1. ARCHITECTURE GOAL
-# ============================================================
+main_freeze_points:
+- primary keys are uuid for all primary records
+- namecard_record unique scope is per source record id only, not per full_name
+- namecard_detail_profile is one-to-one with namecard_record
+- namecard_app_share_link unique key is (namecard_id, share_target_id)
+- logical delete uses deleted_at
+- canonical_version increments on every successful record mutation
+- updated_at must be maintained on every mutation
+- company boundary must be preserved for publication-related records
+- audit/history tables are append-oriented
 
-NameCardManager must not own full ERP transmission logic.
-It should issue publication requests and rely on shared
-BusinessOS capability for ERP publication execution.
+image_handling_boundary:
+- image binary is outside relational row payload
+- record stores metadata/path/reference only
+- front/back partial presence is allowed
+- parent record delete does not imply immediate binary purge without lifecycle policy
 
-# ============================================================
-# 2. APPLICATION RESPONSIBILITY
-# ============================================================
+rls_freeze_direction:
+- owner can see own records
+- shared_viewer can see only granted shared records
+- publication-related privileged roles may see request/result records by company authorization
+- audit visibility is narrower than basic record visibility
 
-NameCardManager is responsible for:
-- selecting target name cards
-- presenting ERP-wide share action
-- collecting publication-relevant context
-- calling shared publication capability
-- showing publication result state
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md -->
 # ============================================================
-# 3. SHARED BUSINESSOS RESPONSIBILITY
-# ============================================================
-
-Shared BusinessOS ERP publication capability is responsible for:
-- eligibility check
-- company context attachment
-- approval boundary handling
-- payload transformation
-- ERP transmission execution
-- transmission result capture
-- audit trail capture
-
-# ============================================================
-# 4. ERP BOUNDARY
+# NAMECARDMANAGER PLATFORM SUPPORT ARCHITECTURE
 # ============================================================
 
-ERP publication is not direct application-local integration.
-It is a shared BusinessOS-controlled publication path.
+status: canonical
+layer: architecture
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes target platform support and platform-role architecture.
+
+supported_platforms:
+- iPhone
+- Android
+- tablet
+- PC
+
+platform_strategy:
+- mobile-first
+- tablet-extended
+- PC-management-enhanced
+
+platform_roles:
+- iPhone:
+  - quick capture
+  - quick edit
+  - quick follow-up check
+  - mobile auth use
+- Android:
+  - quick capture
+  - quick edit
+  - quick follow-up check
+  - mobile auth use
+- tablet:
+  - larger list/detail use
+  - meeting prep use
+  - review-oriented use
+  - shared review use
+- PC:
+  - migration/import use
+  - large-volume review
+  - company view
+  - configuration
+  - publication / approval review
+  - management-oriented operation
+
+architecture_rules:
+- platform support does not change canonical business meaning
+- platform-specific UX may differ while preserving shared behavior rules
+- image capture flows are mobile/tablet priority
+- import/review/admin flows are PC-priority capable
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md -->
 # ============================================================
 # NAMECARDMANAGER PHYSICAL SCHEMA DESIGN
 # ============================================================
@@ -670,234 +759,9 @@ Not yet fixed here:
 - exact retention policy
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md -->
-# ============================================================
-# NAMECARDMANAGER PHYSICAL SCHEMA DDL FREEZE
-# ============================================================
-
-status: canonical
-layer: architecture
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Freezes DDL-adjacent physical schema decisions before execution.
-
-main_freeze_points:
-- primary keys are uuid for all primary records
-- namecard_record unique scope is per source record id only, not per full_name
-- namecard_detail_profile is one-to-one with namecard_record
-- namecard_app_share_link unique key is (namecard_id, share_target_id)
-- logical delete uses deleted_at
-- canonical_version increments on every successful record mutation
-- updated_at must be maintained on every mutation
-- company boundary must be preserved for publication-related records
-- audit/history tables are append-oriented
-
-image_handling_boundary:
-- image binary is outside relational row payload
-- record stores metadata/path/reference only
-- front/back partial presence is allowed
-- parent record delete does not imply immediate binary purge without lifecycle policy
-
-rls_freeze_direction:
-- owner can see own records
-- shared_viewer can see only granted shared records
-- publication-related privileged roles may see request/result records by company authorization
-- audit visibility is narrower than basic record visibility
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md -->
-# ============================================================
-# NAMECARDMANAGER PLATFORM SUPPORT ARCHITECTURE
-# ============================================================
-
-status: canonical
-layer: architecture
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Fixes target platform support and platform-role architecture.
-
-supported_platforms:
-- iPhone
-- Android
-- tablet
-- PC
-
-platform_strategy:
-- mobile-first
-- tablet-extended
-- PC-management-enhanced
-
-platform_roles:
-- iPhone:
-  - quick capture
-  - quick edit
-  - quick follow-up check
-  - mobile auth use
-- Android:
-  - quick capture
-  - quick edit
-  - quick follow-up check
-  - mobile auth use
-- tablet:
-  - larger list/detail use
-  - meeting prep use
-  - review-oriented use
-  - shared review use
-- PC:
-  - migration/import use
-  - large-volume review
-  - company view
-  - configuration
-  - publication / approval review
-  - management-oriented operation
-
-architecture_rules:
-- platform support does not change canonical business meaning
-- platform-specific UX may differ while preserving shared behavior rules
-- image capture flows are mobile/tablet priority
-- import/review/admin flows are PC-priority capable
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_OVERVIEW.md -->
-# ============================================================
-# 030 MODEL OVERVIEW
-# ============================================================
-
-status: canonical
-layer: overview
-system: applications
-application: NameCardManager
-directory: 030.model
-owner: Boss
-prepared_by: Zero
-
-summary:
-Defines the model families for name card basic data,
-detail profile, order history, sharing, ERP publication,
-sync state, pending operation queue, relationships,
-relationship visibility, API request/response,
-audit log, history entry, approval event,
-approval state transition, audit action code,
-error code, UI state code, payload field map,
-API field schema, validation code, UI label code,
-search index, company grouping, relationship presentation,
-publication preflight, recent activity, follow-up candidate,
-meeting prep summary, duplicate candidate,
-next action suggestion, migration job,
-import mapping, import diagnostic, import result,
-import image support, migration summary,
-rule-based enrichment, locale model,
-and translation display model.
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_OVERVIEW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_INDEX.md -->
-# ============================================================
-# 030 MODEL INDEX
-# ============================================================
-
-status: canonical
-layer: index
-system: applications
-application: NameCardManager
-directory: 030.model
-owner: Boss
-prepared_by: Zero
-
-files:
-- 030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
-- 030100_NAMECARD_RECORD_MODEL.md
-- 030110_NAMECARD_DETAIL_PROFILE_MODEL.md
-- 030120_NAMECARD_ORDER_HISTORY_MODEL.md
-- 030130_NAMECARD_SHARE_TARGET_MODEL.md
-- 030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md
-- 030150_NAMECARD_SYNC_STATE_MODEL.md
-- 030160_NAMECARD_PENDING_OPERATION_MODEL.md
-- 030170_NAMECARD_RELATIONSHIP_MODEL.md
-- 030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md
-- 030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md
-- 030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md
-- 030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md
-- 030220_NAMECARD_AUDIT_LOG_MODEL.md
-- 030230_NAMECARD_HISTORY_ENTRY_MODEL.md
-- 030240_NAMECARD_APPROVAL_EVENT_MODEL.md
-- 030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md
-- 030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md
-- 030270_NAMECARD_ERROR_CODE_MODEL.md
-- 030280_NAMECARD_UI_STATE_CODE_MODEL.md
-- 030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md
-- 030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md
-- 030310_NAMECARD_VALIDATION_CODE_MODEL.md
-- 030320_NAMECARD_UI_LABEL_CODE_MODEL.md
-- 030330_NAMECARD_SEARCH_INDEX_MODEL.md
-- 030340_NAMECARD_COMPANY_GROUP_MODEL.md
-- 030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md
-- 030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md
-- 030370_NAMECARD_RECENT_ACTIVITY_MODEL.md
-- 030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md
-- 030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md
-- 030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md
-- 030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md
-- 030420_NAMECARD_MIGRATION_JOB_MODEL.md
-- 030430_NAMECARD_IMPORT_MAPPING_MODEL.md
-- 030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md
-- 030450_NAMECARD_IMPORT_RESULT_MODEL.md
-- 030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md
-- 030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md
-- 030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md
-- 030490_NAMECARD_LOCALE_MODEL.md
-- 030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_INDEX.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md -->
-# ============================================================
-# NAME CARD MANAGER MODEL OVERVIEW
-# ============================================================
-
-status: draft
-layer: model
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the core model families for NameCardManager.
-
-model_families:
-- namecard_record
-- namecard_detail_profile
-- namecard_share_rule
-- namecard_share_target
-- namecard_erp_publish_setting
-- namecard_sync_state
-- namecard_pending_operation
-- namecard_relationship
-- namecard_order_history
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030100_NAMECARD_RECORD_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030100_NAMECARD_RECORD_MODEL.md -->
 # ============================================================
 # NAMECARD RECORD MODEL
 # ============================================================
@@ -939,10 +803,9 @@ notes:
 - BusinessOS is canonical.
 - deleted_at is logical delete oriented.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030100_NAMECARD_RECORD_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030100_NAMECARD_RECORD_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md -->
 # ============================================================
 # NAMECARD DETAIL PROFILE MODEL
 # ============================================================
@@ -974,10 +837,9 @@ fields:
 - created_at
 - updated_at
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md -->
 # ============================================================
 # NAMECARD ORDER HISTORY MODEL
 # ============================================================
@@ -1005,10 +867,9 @@ fields:
 - created_at
 - updated_at
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md -->
 # ============================================================
 # NAMECARD SHARE TARGET MODEL
 # ============================================================
@@ -1037,10 +898,9 @@ notes:
 - Used only for app-internal sharing.
 - ERP-wide publication does not use share_target.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md -->
 # ============================================================
 # NAMECARD ERP PUBLISH SETTING MODEL
 # ============================================================
@@ -1066,10 +926,9 @@ fields:
 - created_at
 - updated_at
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030150_NAMECARD_SYNC_STATE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030150_NAMECARD_SYNC_STATE_MODEL.md -->
 # ============================================================
 # NAMECARD SYNC STATE MODEL
 # ============================================================
@@ -1093,10 +952,9 @@ states:
 - sync_failed
 - conflict
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030150_NAMECARD_SYNC_STATE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030150_NAMECARD_SYNC_STATE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md -->
 # ============================================================
 # NAMECARD PENDING OPERATION MODEL
 # ============================================================
@@ -1123,10 +981,9 @@ fields:
 - replayed_at
 - last_error
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md -->
 # ============================================================
 # NAMECARD RELATIONSHIP MODEL
 # ============================================================
@@ -1163,10 +1020,9 @@ examples:
 - decision_maker
 - working_contact
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md -->
 # ============================================================
 # NAMECARD RELATIONSHIP VISIBILITY MODEL
 # ============================================================
@@ -1231,10 +1087,9 @@ evidence_source_examples:
 - same_company_inference
 - imported_link
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md -->
 # ============================================================
 # NAMECARD API REQUEST RESPONSE MODEL
 # ============================================================
@@ -1282,10 +1137,9 @@ common_response_fields:
 - sync_state
 - updated_at
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md -->
 # ============================================================
 # NAMECARD ERP PUBLICATION REQUEST MODEL
 # ============================================================
@@ -1324,10 +1178,9 @@ request_status_examples:
 - rejected
 - failed
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md -->
 # ============================================================
 # NAMECARD ERP PUBLICATION RESULT MODEL
 # ============================================================
@@ -1363,10 +1216,9 @@ publication_state_examples:
 - published
 - publish_failed
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md -->
 # ============================================================
 # NAMECARD AUDIT LOG MODEL
 # ============================================================
@@ -1413,10 +1265,9 @@ action_scope_examples:
 - shared_erp_publication
 - erp
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md -->
 # ============================================================
 # NAMECARD HISTORY ENTRY MODEL
 # ============================================================
@@ -1455,10 +1306,9 @@ history_type_examples:
 - erp_published
 - erp_publish_failed
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md -->
 # ============================================================
 # NAMECARD APPROVAL EVENT MODEL
 # ============================================================
@@ -1502,10 +1352,9 @@ approval_event_type_examples:
 - rejected
 - returned_for_fix
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md -->
 # ============================================================
 # NAMECARD APPROVAL STATE TRANSITION MODEL
 # ============================================================
@@ -1539,10 +1388,9 @@ notes:
 - ordinary user cannot force transition from pending_approval to published
 - ordinary user cannot revoke published state
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md -->
 # ============================================================
 # NAMECARD AUDIT ACTION CODE MODEL
 # ============================================================
@@ -1588,10 +1436,9 @@ notes:
 - action codes should remain stable once adopted
 - approval event and publication result event must remain distinguishable
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030270_NAMECARD_ERROR_CODE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030270_NAMECARD_ERROR_CODE_MODEL.md -->
 # ============================================================
 # NAMECARD ERROR CODE MODEL
 # ============================================================
@@ -1678,10 +1525,9 @@ notes:
 - codes are canonical identifiers, not end-user wording
 - approval-required is distinct from approval-rejected
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030270_NAMECARD_ERROR_CODE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030270_NAMECARD_ERROR_CODE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md -->
 # ============================================================
 # NAMECARD UI STATE CODE MODEL
 # ============================================================
@@ -1756,10 +1602,9 @@ notes:
 - approval and publication must remain distinguishable
 - UI state code is not equal to error code
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md -->
 # ============================================================
 # NAMECARD ERP PUBLICATION PAYLOAD FIELD MAP MODEL
 # ============================================================
@@ -1856,10 +1701,9 @@ notes:
 - shared BusinessOS capability performs normalization and transformation
 - ERP-facing output is publication-oriented, not raw local model dump
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md -->
 # ============================================================
 # NAMECARD API FIELD SCHEMA MODEL
 # ============================================================
@@ -1911,10 +1755,9 @@ notes:
 - schema here is design schema, not language-specific implementation code
 - request/response field meaning must remain canonical across clients
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md -->
 # ============================================================
 # NAMECARD VALIDATION CODE MODEL
 # ============================================================
@@ -1995,10 +1838,9 @@ notes:
 - validation code is distinct from error code
 - a request may fail validation before any deeper error occurs
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md -->
 # ============================================================
 # NAMECARD UI LABEL CODE MODEL
 # ============================================================
@@ -2028,10 +1870,9 @@ notes:
 - label codes are separate from UI state codes
 - one UI state may map to one or more label variants
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030330_NAMECARD_SEARCH_INDEX_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030330_NAMECARD_SEARCH_INDEX_MODEL.md -->
 # ============================================================
 # NAMECARD SEARCH INDEX MODEL
 # ============================================================
@@ -2072,10 +1913,9 @@ result_sort_priorities:
 - shared_or_published_priority_optional
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030330_NAMECARD_SEARCH_INDEX_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030330_NAMECARD_SEARCH_INDEX_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030340_NAMECARD_COMPANY_GROUP_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030340_NAMECARD_COMPANY_GROUP_MODEL.md -->
 # ============================================================
 # NAMECARD COMPANY GROUP MODEL
 # ============================================================
@@ -2107,10 +1947,9 @@ rules:
 - ambiguous grouping should remain reviewable
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030340_NAMECARD_COMPANY_GROUP_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030340_NAMECARD_COMPANY_GROUP_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md -->
 # ============================================================
 # NAMECARD RELATIONSHIP PRESENTATION MODEL
 # ============================================================
@@ -2142,10 +1981,9 @@ priority_rules:
 - weak inference lower
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md -->
 # ============================================================
 # NAMECARD PUBLICATION PREFLIGHT MODEL
 # ============================================================
@@ -2177,10 +2015,9 @@ outputs:
 - publication_preview_payload
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030370_NAMECARD_RECENT_ACTIVITY_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030370_NAMECARD_RECENT_ACTIVITY_MODEL.md -->
 # ============================================================
 # NAMECARD RECENT ACTIVITY MODEL
 # ============================================================
@@ -2205,10 +2042,9 @@ main_fields:
 - recent_activity_summary
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030370_NAMECARD_RECENT_ACTIVITY_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030370_NAMECARD_RECENT_ACTIVITY_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md -->
 # ============================================================
 # NAMECARD FOLLOWUP CANDIDATE MODEL
 # ============================================================
@@ -2237,10 +2073,9 @@ outputs:
 - snooze_supported
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md -->
 # ============================================================
 # NAMECARD MEETING PREP SUMMARY MODEL
 # ============================================================
@@ -2266,10 +2101,9 @@ summary_blocks:
 - next_points_to_confirm
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md -->
 # ============================================================
 # NAMECARD DUPLICATE CANDIDATE MODEL
 # ============================================================
@@ -2297,10 +2131,9 @@ main_fields:
 - auto_merge_not_allowed_by_default
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md -->
 # ============================================================
 # NAMECARD NEXT ACTION SUGGESTION MODEL
 # ============================================================
@@ -2331,10 +2164,9 @@ main_fields:
 - blocking_dependency_optional
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030420_NAMECARD_MIGRATION_JOB_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030420_NAMECARD_MIGRATION_JOB_MODEL.md -->
 # ============================================================
 # NAMECARD MIGRATION JOB MODEL
 # ============================================================
@@ -2368,10 +2200,9 @@ supported_source_types:
 - generic_csv
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030420_NAMECARD_MIGRATION_JOB_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030420_NAMECARD_MIGRATION_JOB_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030430_NAMECARD_IMPORT_MAPPING_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030430_NAMECARD_IMPORT_MAPPING_MODEL.md -->
 # ============================================================
 # NAMECARD IMPORT MAPPING MODEL
 # ============================================================
@@ -2406,10 +2237,9 @@ mapping_support:
 - source_type_template
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030430_NAMECARD_IMPORT_MAPPING_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030430_NAMECARD_IMPORT_MAPPING_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md -->
 # ============================================================
 # NAMECARD IMPORT DIAGNOSTIC MODEL
 # ============================================================
@@ -2441,10 +2271,9 @@ outputs:
 - review_candidates
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030450_NAMECARD_IMPORT_RESULT_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030450_NAMECARD_IMPORT_RESULT_MODEL.md -->
 # ============================================================
 # NAMECARD IMPORT RESULT MODEL
 # ============================================================
@@ -2471,10 +2300,9 @@ result_fields:
 - followup_review_count
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030450_NAMECARD_IMPORT_RESULT_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030450_NAMECARD_IMPORT_RESULT_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md -->
 # ============================================================
 # NAMECARD IMPORT IMAGE SUPPORT MODEL
 # ============================================================
@@ -2511,10 +2339,9 @@ image_pair_states:
 - none
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md -->
 # ============================================================
 # NAMECARD MIGRATION SUMMARY MODEL
 # ============================================================
@@ -2556,10 +2383,9 @@ incomplete_data_summary_fields:
 - missing_image_count
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md -->
 # ============================================================
 # NAMECARD RULE BASED ENRICHMENT MODEL
 # ============================================================
@@ -2589,10 +2415,9 @@ processing_policy:
 - no silent merge by default
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md -->
 # ============================================================
 # NAMECARD LOCALE MODEL
 # ============================================================
@@ -2626,10 +2451,9 @@ rules:
 - user-entered source data must not be silently overwritten by translation
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md -->
 # ============================================================
 # NAMECARD TRANSLATION DISPLAY MODEL
 # ============================================================
@@ -2665,31 +2489,272 @@ target_fields_optional:
 - meeting_prep_summary
 - publication_preview_summary
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_OVERVIEW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030_INDEX.md -->
 # ============================================================
-# 040 RUNTIME OVERVIEW
+# 030 MODEL INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: NameCardManager
+directory: 030.model
+owner: Boss
+prepared_by: Zero
+
+files:
+- 030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
+- 030100_NAMECARD_RECORD_MODEL.md
+- 030110_NAMECARD_DETAIL_PROFILE_MODEL.md
+- 030120_NAMECARD_ORDER_HISTORY_MODEL.md
+- 030130_NAMECARD_SHARE_TARGET_MODEL.md
+- 030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md
+- 030150_NAMECARD_SYNC_STATE_MODEL.md
+- 030160_NAMECARD_PENDING_OPERATION_MODEL.md
+- 030170_NAMECARD_RELATIONSHIP_MODEL.md
+- 030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md
+- 030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md
+- 030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md
+- 030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md
+- 030220_NAMECARD_AUDIT_LOG_MODEL.md
+- 030230_NAMECARD_HISTORY_ENTRY_MODEL.md
+- 030240_NAMECARD_APPROVAL_EVENT_MODEL.md
+- 030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md
+- 030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md
+- 030270_NAMECARD_ERROR_CODE_MODEL.md
+- 030280_NAMECARD_UI_STATE_CODE_MODEL.md
+- 030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md
+- 030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md
+- 030310_NAMECARD_VALIDATION_CODE_MODEL.md
+- 030320_NAMECARD_UI_LABEL_CODE_MODEL.md
+- 030330_NAMECARD_SEARCH_INDEX_MODEL.md
+- 030340_NAMECARD_COMPANY_GROUP_MODEL.md
+- 030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md
+- 030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md
+- 030370_NAMECARD_RECENT_ACTIVITY_MODEL.md
+- 030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md
+- 030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md
+- 030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md
+- 030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md
+- 030420_NAMECARD_MIGRATION_JOB_MODEL.md
+- 030430_NAMECARD_IMPORT_MAPPING_MODEL.md
+- 030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md
+- 030450_NAMECARD_IMPORT_RESULT_MODEL.md
+- 030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md
+- 030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md
+- 030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md
+- 030490_NAMECARD_LOCALE_MODEL.md
+- 030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md -->
+# ============================================================
+# NAME CARD MANAGER MODEL OVERVIEW
 # ============================================================
 
 status: draft
+layer: model
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the core model families for NameCardManager.
+
+model_families:
+- namecard_record
+- namecard_detail_profile
+- namecard_share_rule
+- namecard_share_target
+- namecard_erp_publish_setting
+- namecard_sync_state
+- namecard_pending_operation
+- namecard_relationship
+- namecard_order_history
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030_OVERVIEW.md -->
+# ============================================================
+# 030 MODEL OVERVIEW
+# ============================================================
+
+status: canonical
 layer: overview
 system: applications
 application: NameCardManager
-directory: 040.runtime
+directory: 030.model
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines login, online sync, offline queueing, share execution,
-delete behavior, relationship display runtime, sync conflict runtime,
-and relationship visibility runtime.
+Defines the model families for name card basic data,
+detail profile, order history, sharing, ERP publication,
+sync state, pending operation queue, relationships,
+relationship visibility, API request/response,
+audit log, history entry, approval event,
+approval state transition, audit action code,
+error code, UI state code, payload field map,
+API field schema, validation code, UI label code,
+search index, company grouping, relationship presentation,
+publication preflight, recent activity, follow-up candidate,
+meeting prep summary, duplicate candidate,
+next action suggestion, migration job,
+import mapping, import diagnostic, import result,
+import image support, migration summary,
+rule-based enrichment, locale model,
+and translation display model.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/030.model/030_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md -->
+# ============================================================
+# NAMECARD SYNC CONFLICT RUNTIME
+# ============================================================
+
+status: draft
+layer: runtime
+system: applications
+application: NameCardManager
+runtime: sync_conflict
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines runtime behavior when local offline changes conflict
+with the canonical BusinessOS state.
+
+# ============================================================
+# 1. RUNTIME GOAL
+# ============================================================
+
+Conflict runtime exists to prevent silent overwrite when
+local deferred changes and BusinessOS canonical state differ
+in incompatible ways.
+
+# ============================================================
+# 2. CONFLICT TRIGGERS
+# ============================================================
+
+Conflict may occur when:
+- local offline update targets a card changed in BusinessOS
+- local offline delete targets a card changed in BusinessOS
+- local offline share-related action targets changed share state
+- local offline detail fields differ from newer canonical fields
+- local replay references record state no longer valid
+
+# ============================================================
+# 3. REQUIRED BEHAVIOR
+# ============================================================
+
+When conflict is detected:
+- do not silently discard local change
+- do not silently overwrite canonical BusinessOS state
+- mark sync state as conflict
+- preserve local pending operation visibility
+- preserve canonical record visibility
+- require explicit resolution path
+
+# ============================================================
+# 4. ALLOWED RUNTIME OUTCOMES
+# ============================================================
+
+Allowed outcomes:
+- local change accepted and applied
+- canonical state kept and local operation dropped with visibility
+- manual merge required
+- local record refresh from canonical after explicit resolution
+
+# ============================================================
+# 5. SHARE-RELATED CONFLICTS
+# ============================================================
+
+For app-internal sharing:
+- target changes may require re-evaluation
+- revoke and add operations must not be silently reordered
+
+For ERP-wide sharing:
+- pending or published ERP state must not be overwritten by
+  ordinary offline local replay
 
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md -->
+# ============================================================
+# NAMECARD RELATIONSHIP VISIBILITY RUNTIME
+# ============================================================
+
+status: draft
+layer: runtime
+system: applications
+application: NameCardManager
+runtime: relationship_visibility
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines runtime behavior for surfacing visible relationships.
+
+# ============================================================
+# 1. RUNTIME GOAL
+# ============================================================
+
+When a name card has relevant relationships, the application
+should surface them in a readable and controlled way.
+
+# ============================================================
+# 2. RUNTIME SOURCES
+# ============================================================
+
+Relationship visibility may derive from:
+- explicit manual relationship registration
+- same company grouping
+- same department grouping
+- order history relation
+- project/deal relation
+- introducer relation
+- decision-maker / working-contact distinction
+
+# ============================================================
+# 3. REQUIRED BEHAVIOR
+# ============================================================
+
+The runtime should:
+- load visible related entries for a selected card
+- show readable labels for relationship type
+- prioritize important relationships
+- avoid unreadable clutter
+- respect authorization and visibility constraints
+
+# ============================================================
+# 4. PRIORITY BEHAVIOR
+# ============================================================
+
+Higher display priority may be given to:
+- same-company direct contacts
+- decision makers
+- current working contacts
+- order-related contacts
+- project-related contacts
+
+# ============================================================
+# 5. FAILURE BEHAVIOR
+# ============================================================
+
+If relationship evidence is incomplete:
+- do not invent confirmed relationship
+- allow limited or cautious visibility where policy allows
+- preserve explicit/manual relationships over weak inference
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040_INDEX.md -->
 # ============================================================
 # 040 RUNTIME INDEX
 # ============================================================
@@ -2707,10 +2772,9 @@ files:
 - 040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md
 - 040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md -->
 # ============================================================
 # NAME CARD MANAGER RUNTIME
 # ============================================================
@@ -2791,179 +2855,369 @@ Relationship signals may derive from:
 - business context knowledge
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040_OVERVIEW.md -->
 # ============================================================
-# NAMECARD SYNC CONFLICT RUNTIME
-# ============================================================
-
-status: draft
-layer: runtime
-system: applications
-application: NameCardManager
-runtime: sync_conflict
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines runtime behavior when local offline changes conflict
-with the canonical BusinessOS state.
-
-# ============================================================
-# 1. RUNTIME GOAL
-# ============================================================
-
-Conflict runtime exists to prevent silent overwrite when
-local deferred changes and BusinessOS canonical state differ
-in incompatible ways.
-
-# ============================================================
-# 2. CONFLICT TRIGGERS
-# ============================================================
-
-Conflict may occur when:
-- local offline update targets a card changed in BusinessOS
-- local offline delete targets a card changed in BusinessOS
-- local offline share-related action targets changed share state
-- local offline detail fields differ from newer canonical fields
-- local replay references record state no longer valid
-
-# ============================================================
-# 3. REQUIRED BEHAVIOR
-# ============================================================
-
-When conflict is detected:
-- do not silently discard local change
-- do not silently overwrite canonical BusinessOS state
-- mark sync state as conflict
-- preserve local pending operation visibility
-- preserve canonical record visibility
-- require explicit resolution path
-
-# ============================================================
-# 4. ALLOWED RUNTIME OUTCOMES
-# ============================================================
-
-Allowed outcomes:
-- local change accepted and applied
-- canonical state kept and local operation dropped with visibility
-- manual merge required
-- local record refresh from canonical after explicit resolution
-
-# ============================================================
-# 5. SHARE-RELATED CONFLICTS
-# ============================================================
-
-For app-internal sharing:
-- target changes may require re-evaluation
-- revoke and add operations must not be silently reordered
-
-For ERP-wide sharing:
-- pending or published ERP state must not be overwritten by
-  ordinary offline local replay
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md -->
-# ============================================================
-# NAMECARD RELATIONSHIP VISIBILITY RUNTIME
+# 040 RUNTIME OVERVIEW
 # ============================================================
 
 status: draft
-layer: runtime
-system: applications
-application: NameCardManager
-runtime: relationship_visibility
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines runtime behavior for surfacing visible relationships.
-
-# ============================================================
-# 1. RUNTIME GOAL
-# ============================================================
-
-When a name card has relevant relationships, the application
-should surface them in a readable and controlled way.
-
-# ============================================================
-# 2. RUNTIME SOURCES
-# ============================================================
-
-Relationship visibility may derive from:
-- explicit manual relationship registration
-- same company grouping
-- same department grouping
-- order history relation
-- project/deal relation
-- introducer relation
-- decision-maker / working-contact distinction
-
-# ============================================================
-# 3. REQUIRED BEHAVIOR
-# ============================================================
-
-The runtime should:
-- load visible related entries for a selected card
-- show readable labels for relationship type
-- prioritize important relationships
-- avoid unreadable clutter
-- respect authorization and visibility constraints
-
-# ============================================================
-# 4. PRIORITY BEHAVIOR
-# ============================================================
-
-Higher display priority may be given to:
-- same-company direct contacts
-- decision makers
-- current working contacts
-- order-related contacts
-- project-related contacts
-
-# ============================================================
-# 5. FAILURE BEHAVIOR
-# ============================================================
-
-If relationship evidence is incomplete:
-- do not invent confirmed relationship
-- allow limited or cautious visibility where policy allows
-- preserve explicit/manual relationships over weak inference
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_OVERVIEW.md -->
-# ============================================================
-# 050 FLOW OVERVIEW
-# ============================================================
-
-status: canonical
 layer: overview
 system: applications
 application: NameCardManager
-directory: 050.flow
+directory: 040.runtime
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines login, online boot, offline boot, create, update,
-delete, app-internal share, share revoke, ERP-wide share,
-ERP-wide share approval, relationship view, sync conflict resolution,
-approval state transition, company group view,
-follow-up flow, migration wizard flow,
-and import review flow.
+Defines login, online sync, offline queueing, share execution,
+delete behavior, relationship display runtime, sync conflict runtime,
+and relationship visibility runtime.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/040.runtime/040_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md -->
+# ============================================================
+# ERP WIDE SHARE APPROVAL FLOW
+# ============================================================
+
+status: draft
+layer: flow
+system: applications
+application: NameCardManager
+flow: erp_wide_share_approval
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the approval-oriented flow for ERP-wide sharing.
+
+# ============================================================
+# 1. FLOW GOAL
+# ============================================================
+
+ERP-wide sharing is not a simple share action.
+It is a controlled publication path into ERP and may require
+approval before publication is completed.
+
+# ============================================================
+# 2. PRECONDITIONS
+# ============================================================
+
+Before ERP-wide sharing proceeds, the system must verify:
+
+- target name card exists
+- target name card is not deleted
+- ERP use setting is enabled where required
+- required company context is available
+- publication policy allows submission
+- approval requirement is known
+
+# ============================================================
+# 3. FLOW
+# ============================================================
+
+1. User selects one or more target name cards.
+2. User presses ERP-wide share.
+3. System evaluates ERP publication eligibility.
+4. System determines whether approval is required.
+5. If approval is required:
+   - create publication request
+   - move state to publish_pending
+   - wait for approval result
+6. If approval is not required and policy permits:
+   - submit publication directly
+7. ERP returns publication result.
+8. System updates ERP publication state.
+
+# ============================================================
+# 4. APPROVAL BRANCH
+# ============================================================
+
+Approval required branch:
+
+- request created
+- ordinary user cannot force publish
+- ordinary user cannot revoke published ERP-wide data
+- final publication depends on approval result
+
+Possible approval outcomes:
+- approved
+- rejected
+- returned_for_fix
+
+# ============================================================
+# 5. RESULTING STATES
+# ============================================================
+
+Possible resulting states:
+- not_published
+- publish_pending
+- published
+- publish_failed
+
+# ============================================================
+# 6. FAILURE HANDLING
+# ============================================================
+
+Failures must remain visible.
+
+Examples:
+- missing company context
+- missing ERP usage setting
+- approval rejection
+- ERP publication failure
+- transport or application error
 
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md -->
+# ============================================================
+# NAMECARD SYNC CONFLICT RESOLUTION FLOW
+# ============================================================
+
+status: draft
+layer: flow
+system: applications
+application: NameCardManager
+flow: sync_conflict_resolution
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the operational flow for handling sync conflict.
+
+# ============================================================
+# 1. FLOW GOAL
+# ============================================================
+
+The conflict resolution flow provides a safe path for handling
+differences between deferred local operations and BusinessOS
+canonical state.
+
+# ============================================================
+# 2. ENTRY CONDITIONS
+# ============================================================
+
+This flow begins when:
+- replay starts after offline work
+- system compares pending operations with canonical state
+- conflict is detected
+
+# ============================================================
+# 3. FLOW
+# ============================================================
+
+1. System loads pending local operation.
+2. System loads latest canonical BusinessOS state.
+3. System compares affected fields and operational context.
+4. If no conflict exists:
+   - apply local operation
+   - mark sync as synced
+5. If conflict exists:
+   - mark sync state as conflict
+   - preserve pending operation
+   - expose conflict visibility to user or administrator
+   - wait for explicit resolution
+
+# ============================================================
+# 4. RESOLUTION PATHS
+# ============================================================
+
+Possible resolution paths:
+- keep BusinessOS canonical state
+- apply local version over canonical where policy allows
+- manually merge selected fields
+- cancel local pending operation
+
+# ============================================================
+# 5. POST-RESOLUTION FLOW
+# ============================================================
+
+After resolution:
+- update canonical state where required
+- clear or update pending operation
+- refresh local state from BusinessOS
+- remove conflict state if resolved successfully
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md -->
+# ============================================================
+# NAMECARD APPROVAL STATE TRANSITION FLOW
+# ============================================================
+
+status: draft
+layer: flow
+system: applications
+application: NameCardManager
+flow: approval_state_transition
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the allowed state progression for ERP-wide publication
+requests and results.
+
+# ============================================================
+# 1. FLOW GOAL
+# ============================================================
+
+The flow ensures that approval state and publication state
+do not collapse into one ambiguous path.
+
+# ============================================================
+# 2. MAIN TRANSITIONS
+# ============================================================
+
+Allowed primary transitions:
+
+draft
+ -> submitted
+
+submitted
+ -> pending_approval
+ -> accepted_for_publication
+ -> rejected
+ -> publish_failed
+
+pending_approval
+ -> approved
+ -> rejected
+ -> returned_for_fix
+
+approved
+ -> accepted_for_publication
+
+accepted_for_publication
+ -> published
+ -> publish_failed
+
+returned_for_fix
+ -> submitted
+ -> rejected
+
+# ============================================================
+# 3. IMPORTANT RULES
+# ============================================================
+
+- approved does not mean published
+- published requires shared BusinessOS ERP publication execution
+- rejected must not transition directly to published
+- ordinary user cannot bypass pending_approval
+- ordinary user cannot move published back to not_published
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md -->
+# ============================================================
+# NAMECARD COMPANY GROUP VIEW FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the user flow for company-level grouped viewing.
+
+flow:
+- user opens grouped company view
+- app loads normalized company grouping
+- app shows grouped people under company
+- app highlights decision makers and working contacts
+- app shows recent contact and publication indicators
+- user may open individual related person details
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050150_NAMECARD_FOLLOWUP_FLOW.md -->
+# ============================================================
+# NAMECARD FOLLOWUP FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines follow-up candidate review and action flow.
+
+flow:
+- app identifies follow-up candidates
+- app presents reason and urgency
+- user may snooze, dismiss, or act
+- acted item may open detail, prep mode, share flow, or publication flow
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050150_NAMECARD_FOLLOWUP_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050160_NAMECARD_MIGRATION_WIZARD_FLOW.md -->
+# ============================================================
+# NAMECARD MIGRATION WIZARD FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines the user flow for migration wizard.
+
+flow:
+- user selects source type
+- user uploads import file
+- app auto-detects mapping
+- app runs diagnostics
+- app previews import result
+- user reviews issues and warnings
+- user executes import
+- app shows migration summary and follow-up review entry points
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050160_NAMECARD_MIGRATION_WIZARD_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050170_NAMECARD_IMPORT_REVIEW_FLOW.md -->
+# ============================================================
+# NAMECARD IMPORT REVIEW FLOW
+# ============================================================
+
+status: canonical
+layer: flow
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines review flow after import.
+
+flow:
+- app opens import result summary
+- user reviews duplicate candidates
+- user reviews company grouping candidates
+- user reviews image warnings
+- user reviews incomplete data
+- app suggests next actions and follow-up tasks
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050170_NAMECARD_IMPORT_REVIEW_FLOW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050_INDEX.md -->
 # ============================================================
 # 050 FLOW INDEX
 # ============================================================
@@ -2986,10 +3240,9 @@ files:
 - 050160_NAMECARD_MIGRATION_WIZARD_FLOW.md
 - 050170_NAMECARD_IMPORT_REVIEW_FLOW.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_NAME_CARD_MANAGER_FLOW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050_NAME_CARD_MANAGER_FLOW.md -->
 # ============================================================
 # NAME CARD MANAGER FLOW
 # ============================================================
@@ -3112,507 +3365,32 @@ Defines end-to-end operational flows for NameCardManager.
 3. Related entries are shown visually in the detail view.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_NAME_CARD_MANAGER_FLOW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050_NAME_CARD_MANAGER_FLOW.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050_OVERVIEW.md -->
 # ============================================================
-# ERP WIDE SHARE APPROVAL FLOW
-# ============================================================
-
-status: draft
-layer: flow
-system: applications
-application: NameCardManager
-flow: erp_wide_share_approval
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the approval-oriented flow for ERP-wide sharing.
-
-# ============================================================
-# 1. FLOW GOAL
-# ============================================================
-
-ERP-wide sharing is not a simple share action.
-It is a controlled publication path into ERP and may require
-approval before publication is completed.
-
-# ============================================================
-# 2. PRECONDITIONS
-# ============================================================
-
-Before ERP-wide sharing proceeds, the system must verify:
-
-- target name card exists
-- target name card is not deleted
-- ERP use setting is enabled where required
-- required company context is available
-- publication policy allows submission
-- approval requirement is known
-
-# ============================================================
-# 3. FLOW
-# ============================================================
-
-1. User selects one or more target name cards.
-2. User presses ERP-wide share.
-3. System evaluates ERP publication eligibility.
-4. System determines whether approval is required.
-5. If approval is required:
-   - create publication request
-   - move state to publish_pending
-   - wait for approval result
-6. If approval is not required and policy permits:
-   - submit publication directly
-7. ERP returns publication result.
-8. System updates ERP publication state.
-
-# ============================================================
-# 4. APPROVAL BRANCH
-# ============================================================
-
-Approval required branch:
-
-- request created
-- ordinary user cannot force publish
-- ordinary user cannot revoke published ERP-wide data
-- final publication depends on approval result
-
-Possible approval outcomes:
-- approved
-- rejected
-- returned_for_fix
-
-# ============================================================
-# 5. RESULTING STATES
-# ============================================================
-
-Possible resulting states:
-- not_published
-- publish_pending
-- published
-- publish_failed
-
-# ============================================================
-# 6. FAILURE HANDLING
-# ============================================================
-
-Failures must remain visible.
-
-Examples:
-- missing company context
-- missing ERP usage setting
-- approval rejection
-- ERP publication failure
-- transport or application error
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md -->
-# ============================================================
-# NAMECARD SYNC CONFLICT RESOLUTION FLOW
-# ============================================================
-
-status: draft
-layer: flow
-system: applications
-application: NameCardManager
-flow: sync_conflict_resolution
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the operational flow for handling sync conflict.
-
-# ============================================================
-# 1. FLOW GOAL
-# ============================================================
-
-The conflict resolution flow provides a safe path for handling
-differences between deferred local operations and BusinessOS
-canonical state.
-
-# ============================================================
-# 2. ENTRY CONDITIONS
-# ============================================================
-
-This flow begins when:
-- replay starts after offline work
-- system compares pending operations with canonical state
-- conflict is detected
-
-# ============================================================
-# 3. FLOW
-# ============================================================
-
-1. System loads pending local operation.
-2. System loads latest canonical BusinessOS state.
-3. System compares affected fields and operational context.
-4. If no conflict exists:
-   - apply local operation
-   - mark sync as synced
-5. If conflict exists:
-   - mark sync state as conflict
-   - preserve pending operation
-   - expose conflict visibility to user or administrator
-   - wait for explicit resolution
-
-# ============================================================
-# 4. RESOLUTION PATHS
-# ============================================================
-
-Possible resolution paths:
-- keep BusinessOS canonical state
-- apply local version over canonical where policy allows
-- manually merge selected fields
-- cancel local pending operation
-
-# ============================================================
-# 5. POST-RESOLUTION FLOW
-# ============================================================
-
-After resolution:
-- update canonical state where required
-- clear or update pending operation
-- refresh local state from BusinessOS
-- remove conflict state if resolved successfully
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md -->
-# ============================================================
-# NAMECARD APPROVAL STATE TRANSITION FLOW
-# ============================================================
-
-status: draft
-layer: flow
-system: applications
-application: NameCardManager
-flow: approval_state_transition
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the allowed state progression for ERP-wide publication
-requests and results.
-
-# ============================================================
-# 1. FLOW GOAL
-# ============================================================
-
-The flow ensures that approval state and publication state
-do not collapse into one ambiguous path.
-
-# ============================================================
-# 2. MAIN TRANSITIONS
-# ============================================================
-
-Allowed primary transitions:
-
-draft
- -> submitted
-
-submitted
- -> pending_approval
- -> accepted_for_publication
- -> rejected
- -> publish_failed
-
-pending_approval
- -> approved
- -> rejected
- -> returned_for_fix
-
-approved
- -> accepted_for_publication
-
-accepted_for_publication
- -> published
- -> publish_failed
-
-returned_for_fix
- -> submitted
- -> rejected
-
-# ============================================================
-# 3. IMPORTANT RULES
-# ============================================================
-
-- approved does not mean published
-- published requires shared BusinessOS ERP publication execution
-- rejected must not transition directly to published
-- ordinary user cannot bypass pending_approval
-- ordinary user cannot move published back to not_published
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md -->
-# ============================================================
-# NAMECARD COMPANY GROUP VIEW FLOW
-# ============================================================
-
-status: canonical
-layer: flow
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the user flow for company-level grouped viewing.
-
-flow:
-- user opens grouped company view
-- app loads normalized company grouping
-- app shows grouped people under company
-- app highlights decision makers and working contacts
-- app shows recent contact and publication indicators
-- user may open individual related person details
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050150_NAMECARD_FOLLOWUP_FLOW.md -->
-# ============================================================
-# NAMECARD FOLLOWUP FLOW
-# ============================================================
-
-status: canonical
-layer: flow
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines follow-up candidate review and action flow.
-
-flow:
-- app identifies follow-up candidates
-- app presents reason and urgency
-- user may snooze, dismiss, or act
-- acted item may open detail, prep mode, share flow, or publication flow
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050150_NAMECARD_FOLLOWUP_FLOW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050160_NAMECARD_MIGRATION_WIZARD_FLOW.md -->
-# ============================================================
-# NAMECARD MIGRATION WIZARD FLOW
-# ============================================================
-
-status: canonical
-layer: flow
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines the user flow for migration wizard.
-
-flow:
-- user selects source type
-- user uploads import file
-- app auto-detects mapping
-- app runs diagnostics
-- app previews import result
-- user reviews issues and warnings
-- user executes import
-- app shows migration summary and follow-up review entry points
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050160_NAMECARD_MIGRATION_WIZARD_FLOW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050170_NAMECARD_IMPORT_REVIEW_FLOW.md -->
-# ============================================================
-# NAMECARD IMPORT REVIEW FLOW
-# ============================================================
-
-status: canonical
-layer: flow
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines review flow after import.
-
-flow:
-- app opens import result summary
-- user reviews duplicate candidates
-- user reviews company grouping candidates
-- user reviews image warnings
-- user reviews incomplete data
-- app suggests next actions and follow-up tasks
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050170_NAMECARD_IMPORT_REVIEW_FLOW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_OVERVIEW.md -->
-# ============================================================
-# 060 INTEGRATION OVERVIEW
+# 050 FLOW OVERVIEW
 # ============================================================
 
 status: canonical
 layer: overview
 system: applications
 application: NameCardManager
-directory: 060.integration
+directory: 050.flow
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines integration with local client storage, BusinessOS,
-ERP publication boundary, authentication, relationship sources,
-explicit API contracts, shared BusinessOS ERP publication integration,
-ERP publication payload field mapping, API field schema,
-common component adoption, search contract,
-publication preflight contract, suggestion rule contract,
-import contract, import image contract,
-rule-based enrichment contract, locale contract,
-API exact payload, sync replay/conflict contract,
-auth/authorization contract,
-shared BusinessOS publication connection spec,
-share/visibility/revoke exact contract,
-and search exact contract.
+Defines login, online boot, offline boot, create, update,
+delete, app-internal share, share revoke, ERP-wide share,
+ERP-wide share approval, relationship view, sync conflict resolution,
+approval state transition, company group view,
+follow-up flow, migration wizard flow,
+and import review flow.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/050.flow/050_OVERVIEW.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md -->
-# ============================================================
-# 060 INTEGRATION INDEX
-# ============================================================
-
-status: canonical
-layer: index
-system: applications
-application: NameCardManager
-directory: 060.integration
-owner: Boss
-prepared_by: Zero
-
-files:
-- 060_NAME_CARD_MANAGER_INTEGRATION.md
-- 060110_NAMECARD_API_INTEGRATION_CONTRACT.md
-- 060120_NAMECARD_SYNC_API_CONTRACT.md
-- 060130_NAMECARD_SHARE_API_CONTRACT.md
-- 060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md
-- 060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
-- 060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
-- 060170_NAMECARD_API_FIELD_SCHEMA.md
-- 060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
-- 060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md
-- 060200_NAMECARD_SEARCH_CONTRACT.md
-- 060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md
-- 060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md
-- 060230_NAMECARD_IMPORT_CONTRACT.md
-- 060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
-- 060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
-- 060260_NAMECARD_LOCALE_CONTRACT.md
-- 060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md
-- 060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md
-- 060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md
-- 060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md
-- 060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md
-- 060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md -->
-# ============================================================
-# NAME CARD MANAGER INTEGRATION
-# ============================================================
-
-status: draft
-layer: integration
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines integration boundaries for NameCardManager.
-
-# ============================================================
-# 1. BUSINESSOS INTEGRATION
-# ============================================================
-
-BusinessOS is the canonical persistence and sharing boundary.
-
-Integration responsibilities:
-- canonical persistence
-- synchronization source
-- app-internal share state persistence
-- relationship persistence
-- ERP publication request source
-
-# ============================================================
-# 2. LOCAL CLIENT INTEGRATION
-# ============================================================
-
-Local runtime integrates with:
-- local encrypted store
-- local pending operation queue
-- local authentication/session layer
-- local image storage for card images
-
-# ============================================================
-# 3. ERP INTEGRATION
-# ============================================================
-
-ERP integration is publication-oriented, not general local sync.
-
-ERP integration responsibilities:
-- ERP use eligibility check
-- company context attachment
-- approval-governed publication
-- publication result handling
-
-ERP integration principles:
-- explicit only
-- no automatic ERP publication
-- ordinary users cannot revoke published ERP-wide sharing
-
-# ============================================================
-# 4. AUTHENTICATION INTEGRATION
-# ============================================================
-
-Authentication may integrate with:
-- id/password authentication
-- device biometric authentication
-- session token or application session boundary
-
-# ============================================================
-# 5. RELATIONSHIP INTEGRATION
-# ============================================================
-
-Relationship visibility may integrate with:
-- same company card grouping
-- order history records
-- project/deal context
-- explicit relationship registration
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md -->
 # ============================================================
 # NAMECARD API INTEGRATION CONTRACT
 # ============================================================
@@ -3692,10 +3470,9 @@ Examples:
 - publication_failed
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md -->
 # ============================================================
 # NAMECARD SYNC API CONTRACT
 # ============================================================
@@ -3760,10 +3537,9 @@ If conflict is detected:
 - canonical overwrite must not be implicit
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md -->
 # ============================================================
 # NAMECARD SHARE API CONTRACT
 # ============================================================
@@ -3820,10 +3596,9 @@ Expected response content may include:
 - validation_errors
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md -->
 # ============================================================
 # NAMECARD ERP PUBLISH API CONTRACT
 # ============================================================
@@ -3880,10 +3655,9 @@ Response may include:
 - ordinary user revoke is not part of this contract
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md -->
 # ============================================================
 # NAMECARD SHARED ERP PUBLICATION INTEGRATION
 # ============================================================
@@ -3948,10 +3722,9 @@ Ordinary-user revoke of published ERP-wide sharing is not part
 of this integration boundary.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md -->
 # ============================================================
 # NAMECARD ERP PUBLICATION PAYLOAD FIELD MAP
 # ============================================================
@@ -4028,10 +3801,9 @@ shared_to_erp_map:
 - protected fields must follow authorization and publication policy
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md -->
 # ============================================================
 # NAMECARD API FIELD SCHEMA
 # ============================================================
@@ -4223,10 +3995,9 @@ fields:
 - error_message: string, optional
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md -->
 # ============================================================
 # NAMECARDMANAGER API EXACT CONTRACT FREEZE
 # ============================================================
@@ -4298,10 +4069,9 @@ Implementation may proceed after:
 - shared BusinessOS publication connection spec is frozen
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md -->
 # ============================================================
 # NAMECARDMANAGER COMMON COMPONENT ADOPTION
 # ============================================================
@@ -4462,10 +4232,9 @@ Recommended next commonization targets:
 - Attachment / Evidence Common extension for card capture support
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060200_NAMECARD_SEARCH_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060200_NAMECARD_SEARCH_CONTRACT.md -->
 # ============================================================
 # NAMECARD SEARCH CONTRACT
 # ============================================================
@@ -4493,10 +4262,9 @@ response_direction:
 - recent_activity_indicators_optional
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060200_NAMECARD_SEARCH_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060200_NAMECARD_SEARCH_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md -->
 # ============================================================
 # NAMECARD PUBLICATION PREFLIGHT CONTRACT
 # ============================================================
@@ -4525,10 +4293,9 @@ response_direction:
 - approval_required
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md -->
 # ============================================================
 # NAMECARD SUGGESTION RULE CONTRACT
 # ============================================================
@@ -4557,10 +4324,9 @@ outputs:
 - optional_next_target_flow
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060230_NAMECARD_IMPORT_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060230_NAMECARD_IMPORT_CONTRACT.md -->
 # ============================================================
 # NAMECARD IMPORT CONTRACT
 # ============================================================
@@ -4589,10 +4355,9 @@ response_direction:
 - import_result_optional
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060230_NAMECARD_IMPORT_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060230_NAMECARD_IMPORT_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md -->
 # ============================================================
 # NAMECARD IMPORT IMAGE CONTRACT
 # ============================================================
@@ -4620,10 +4385,9 @@ response_direction:
 - image_warning_items
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md -->
 # ============================================================
 # NAMECARD RULE BASED ENRICHMENT CONTRACT
 # ============================================================
@@ -4652,10 +4416,9 @@ outputs:
 - review_items
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md -->
 # ============================================================
 # NAMECARD LOCALE CONTRACT
 # ============================================================
@@ -4690,10 +4453,9 @@ rules:
 - fallback behavior must be explicit
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md -->
 # ============================================================
 # NAMECARDMANAGER API EXACT PAYLOAD
 # ============================================================
@@ -5092,10 +4854,9 @@ response_payload:
 }
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md -->
 # ============================================================
 # NAMECARDMANAGER SYNC REPLAY AND CONFLICT CONTRACT
 # ============================================================
@@ -5156,10 +4917,9 @@ ui_requirements:
 - retryable item must be visible
 - terminal failure must expose blocking reason
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md -->
 # ============================================================
 # NAMECARDMANAGER AUTH AND AUTHORIZATION CONTRACT
 # ============================================================
@@ -5240,10 +5000,9 @@ initial_navigation_rules:
 - inherited auth success may enter app home
 - forbidden target operation must redirect to safe visible screen with permission message
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md -->
 # ============================================================
 # NAMECARDMANAGER SHARED BUSINESSOS PUBLICATION CONNECTION SPEC
 # ============================================================
@@ -5317,10 +5076,9 @@ duplicate_submission_rules:
 - duplicate request on the same source request payload must be blocked by idempotency control
 - repeated UI taps must not create duplicate publication requests
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md -->
 # ============================================================
 # NAMECARDMANAGER SHARE VISIBILITY REVOKE EXACT CONTRACT
 # ============================================================
@@ -5520,10 +5278,9 @@ audit_events_required:
 - forbidden_re_share_attempt
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md -->
 # ============================================================
 # NAMECARDMANAGER SEARCH EXACT CONTRACT
 # ============================================================
@@ -5687,32 +5444,348 @@ phase_a_strategy:
 - normalized company search support must update when company normalization changes
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_OVERVIEW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060_INDEX.md -->
 # ============================================================
-# 070 OPERATIONS OVERVIEW
+# 060 INTEGRATION INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: NameCardManager
+directory: 060.integration
+owner: Boss
+prepared_by: Zero
+
+files:
+- 060_NAME_CARD_MANAGER_INTEGRATION.md
+- 060110_NAMECARD_API_INTEGRATION_CONTRACT.md
+- 060120_NAMECARD_SYNC_API_CONTRACT.md
+- 060130_NAMECARD_SHARE_API_CONTRACT.md
+- 060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md
+- 060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
+- 060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
+- 060170_NAMECARD_API_FIELD_SCHEMA.md
+- 060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
+- 060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md
+- 060200_NAMECARD_SEARCH_CONTRACT.md
+- 060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md
+- 060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md
+- 060230_NAMECARD_IMPORT_CONTRACT.md
+- 060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
+- 060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
+- 060260_NAMECARD_LOCALE_CONTRACT.md
+- 060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md
+- 060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md
+- 060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md
+- 060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md
+- 060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md
+- 060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md -->
+# ============================================================
+# NAME CARD MANAGER INTEGRATION
 # ============================================================
 
 status: draft
+layer: integration
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines integration boundaries for NameCardManager.
+
+# ============================================================
+# 1. BUSINESSOS INTEGRATION
+# ============================================================
+
+BusinessOS is the canonical persistence and sharing boundary.
+
+Integration responsibilities:
+- canonical persistence
+- synchronization source
+- app-internal share state persistence
+- relationship persistence
+- ERP publication request source
+
+# ============================================================
+# 2. LOCAL CLIENT INTEGRATION
+# ============================================================
+
+Local runtime integrates with:
+- local encrypted store
+- local pending operation queue
+- local authentication/session layer
+- local image storage for card images
+
+# ============================================================
+# 3. ERP INTEGRATION
+# ============================================================
+
+ERP integration is publication-oriented, not general local sync.
+
+ERP integration responsibilities:
+- ERP use eligibility check
+- company context attachment
+- approval-governed publication
+- publication result handling
+
+ERP integration principles:
+- explicit only
+- no automatic ERP publication
+- ordinary users cannot revoke published ERP-wide sharing
+
+# ============================================================
+# 4. AUTHENTICATION INTEGRATION
+# ============================================================
+
+Authentication may integrate with:
+- id/password authentication
+- device biometric authentication
+- session token or application session boundary
+
+# ============================================================
+# 5. RELATIONSHIP INTEGRATION
+# ============================================================
+
+Relationship visibility may integrate with:
+- same company card grouping
+- order history records
+- project/deal context
+- explicit relationship registration
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060_OVERVIEW.md -->
+# ============================================================
+# 060 INTEGRATION OVERVIEW
+# ============================================================
+
+status: canonical
 layer: overview
 system: applications
 application: NameCardManager
-directory: 070.operations
+directory: 060.integration
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines operational states, support actions, failure handling,
-audit-relevant procedures, audit/history/approval operations,
-audit action code operational usage, error code operations,
-and validation code operations.
+Defines integration with local client storage, BusinessOS,
+ERP publication boundary, authentication, relationship sources,
+explicit API contracts, shared BusinessOS ERP publication integration,
+ERP publication payload field mapping, API field schema,
+common component adoption, search contract,
+publication preflight contract, suggestion rule contract,
+import contract, import image contract,
+rule-based enrichment contract, locale contract,
+API exact payload, sync replay/conflict contract,
+auth/authorization contract,
+shared BusinessOS publication connection spec,
+share/visibility/revoke exact contract,
+and search exact contract.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/060.integration/060_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md -->
+# ============================================================
+# NAMECARD AUDIT AND HISTORY OPERATIONS
+# ============================================================
+
+status: draft
+layer: operations
+system: applications
+application: NameCardManager
+operations_scope: audit_and_history
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines operational handling for audit, history, and approval events.
+
+# ============================================================
+# 1. OPERATIONAL GOAL
+# ============================================================
+
+Audit and history records must support traceability for
+user action, sync behavior, sharing, approval, and ERP publication.
+
+# ============================================================
+# 2. REQUIRED OPERATIONAL RECORDS
+# ============================================================
+
+Operationally important records include:
+- audit log
+- user-visible history entry
+- approval event
+- ERP publication result
+- sync conflict event
+
+# ============================================================
+# 3. SUPPORT USAGE
+# ============================================================
+
+Support and operations may use these records to:
+- investigate missing data
+- inspect publication history
+- inspect approval result path
+- inspect who performed which action
+- inspect why a publication failed
 
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md -->
+# ============================================================
+# NAMECARD AUDIT ACTION CODE OPERATIONS
+# ============================================================
+
+status: draft
+layer: operations
+system: applications
+application: NameCardManager
+operations_scope: audit_action_code
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines operational usage guidance for audit action codes.
+
+# ============================================================
+# 1. OPERATIONAL GOAL
+# ============================================================
+
+Audit action codes provide stable operational labels for
+support, review, investigation, and reporting.
+
+# ============================================================
+# 2. OPERATIONAL RULES
+# ============================================================
+
+- Use canonical action codes consistently.
+- Do not collapse approval and publication into one action.
+- Distinguish request, approval, submission, success, and failure.
+- Preserve sync conflict events distinctly.
+
+# ============================================================
+# 3. SUPPORT USAGE EXAMPLES
+# ============================================================
+
+Support may inspect:
+- erp_publish_requested
+- erp_publish_approval_required
+- erp_publish_approved
+- erp_publish_submitted
+- erp_publish_succeeded
+- erp_publish_failed
+- sync_conflict_detected
+- sync_conflict_resolved
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md -->
+# ============================================================
+# NAMECARD ERROR CODE OPERATIONS
+# ============================================================
+
+status: draft
+layer: operations
+system: applications
+application: NameCardManager
+operations_scope: error_code
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines operational handling guidance for canonical error codes.
+
+# ============================================================
+# 1. OPERATIONAL GOAL
+# ============================================================
+
+Error codes provide stable diagnostic meaning across UI,
+API, support, audit, and operations.
+
+# ============================================================
+# 2. OPERATIONAL RULES
+# ============================================================
+
+- Use canonical error codes consistently.
+- Do not replace canonical code meaning with ad hoc text.
+- Support may map codes to human-readable guidance separately.
+- Conflict, approval-required, rejection, and publish-failure
+  must remain distinct.
+
+# ============================================================
+# 3. SUPPORT EXAMPLES
+# ============================================================
+
+Examples:
+- NCM_ERR_SYNC_CONFLICT_DETECTED
+- NCM_ERR_ERP_APPROVAL_REQUIRED
+- NCM_ERR_ERP_APPROVAL_REJECTED
+- NCM_ERR_ERP_PUBLICATION_FAILED
+- NCM_ERR_PROTECTED_ACCESS_DENIED
+- NCM_ERR_FAIL_CLOSED_TRIGGERED
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md -->
+# ============================================================
+# NAMECARD VALIDATION CODE OPERATIONS
+# ============================================================
+
+status: draft
+layer: operations
+system: applications
+application: NameCardManager
+operations_scope: validation_code
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines operational usage guidance for validation codes.
+
+# ============================================================
+# 1. OPERATIONAL GOAL
+# ============================================================
+
+Validation codes allow support and operations to identify
+what prerequisite failed before the request moved into
+deeper processing.
+
+# ============================================================
+# 2. OPERATIONAL RULES
+# ============================================================
+
+- Use validation codes for unmet prerequisites.
+- Use error codes for execution/path failures.
+- Do not collapse validation failure into generic error prematurely.
+- Preserve actionable validation meaning where possible.
+
+# ============================================================
+# 3. SUPPORT EXAMPLES
+# ============================================================
+
+Examples:
+- NCM_VAL_COMPANY_ID_REQUIRED
+- NCM_VAL_ERP_USE_SETTING_REQUIRED
+- NCM_VAL_SHARE_TARGET_DISABLED
+- NCM_VAL_FULL_NAME_REQUIRED
+- NCM_VAL_OPERATION_PAYLOAD_REQUIRED
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070_INDEX.md -->
 # ============================================================
 # 070 OPERATIONS INDEX
 # ============================================================
@@ -5732,10 +5805,9 @@ files:
 - 070130_NAMECARD_ERROR_CODE_OPERATIONS.md
 - 070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md -->
 # ============================================================
 # NAME CARD MANAGER OPERATIONS
 # ============================================================
@@ -5822,350 +5894,30 @@ Operationally important actions:
 - sync replay success/failure
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070_OVERVIEW.md -->
 # ============================================================
-# NAMECARD AUDIT AND HISTORY OPERATIONS
-# ============================================================
-
-status: draft
-layer: operations
-system: applications
-application: NameCardManager
-operations_scope: audit_and_history
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines operational handling for audit, history, and approval events.
-
-# ============================================================
-# 1. OPERATIONAL GOAL
-# ============================================================
-
-Audit and history records must support traceability for
-user action, sync behavior, sharing, approval, and ERP publication.
-
-# ============================================================
-# 2. REQUIRED OPERATIONAL RECORDS
-# ============================================================
-
-Operationally important records include:
-- audit log
-- user-visible history entry
-- approval event
-- ERP publication result
-- sync conflict event
-
-# ============================================================
-# 3. SUPPORT USAGE
-# ============================================================
-
-Support and operations may use these records to:
-- investigate missing data
-- inspect publication history
-- inspect approval result path
-- inspect who performed which action
-- inspect why a publication failed
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md -->
-# ============================================================
-# NAMECARD AUDIT ACTION CODE OPERATIONS
+# 070 OPERATIONS OVERVIEW
 # ============================================================
 
 status: draft
-layer: operations
-system: applications
-application: NameCardManager
-operations_scope: audit_action_code
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines operational usage guidance for audit action codes.
-
-# ============================================================
-# 1. OPERATIONAL GOAL
-# ============================================================
-
-Audit action codes provide stable operational labels for
-support, review, investigation, and reporting.
-
-# ============================================================
-# 2. OPERATIONAL RULES
-# ============================================================
-
-- Use canonical action codes consistently.
-- Do not collapse approval and publication into one action.
-- Distinguish request, approval, submission, success, and failure.
-- Preserve sync conflict events distinctly.
-
-# ============================================================
-# 3. SUPPORT USAGE EXAMPLES
-# ============================================================
-
-Support may inspect:
-- erp_publish_requested
-- erp_publish_approval_required
-- erp_publish_approved
-- erp_publish_submitted
-- erp_publish_succeeded
-- erp_publish_failed
-- sync_conflict_detected
-- sync_conflict_resolved
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md -->
-# ============================================================
-# NAMECARD ERROR CODE OPERATIONS
-# ============================================================
-
-status: draft
-layer: operations
-system: applications
-application: NameCardManager
-operations_scope: error_code
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines operational handling guidance for canonical error codes.
-
-# ============================================================
-# 1. OPERATIONAL GOAL
-# ============================================================
-
-Error codes provide stable diagnostic meaning across UI,
-API, support, audit, and operations.
-
-# ============================================================
-# 2. OPERATIONAL RULES
-# ============================================================
-
-- Use canonical error codes consistently.
-- Do not replace canonical code meaning with ad hoc text.
-- Support may map codes to human-readable guidance separately.
-- Conflict, approval-required, rejection, and publish-failure
-  must remain distinct.
-
-# ============================================================
-# 3. SUPPORT EXAMPLES
-# ============================================================
-
-Examples:
-- NCM_ERR_SYNC_CONFLICT_DETECTED
-- NCM_ERR_ERP_APPROVAL_REQUIRED
-- NCM_ERR_ERP_APPROVAL_REJECTED
-- NCM_ERR_ERP_PUBLICATION_FAILED
-- NCM_ERR_PROTECTED_ACCESS_DENIED
-- NCM_ERR_FAIL_CLOSED_TRIGGERED
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md -->
-# ============================================================
-# NAMECARD VALIDATION CODE OPERATIONS
-# ============================================================
-
-status: draft
-layer: operations
-system: applications
-application: NameCardManager
-operations_scope: validation_code
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines operational usage guidance for validation codes.
-
-# ============================================================
-# 1. OPERATIONAL GOAL
-# ============================================================
-
-Validation codes allow support and operations to identify
-what prerequisite failed before the request moved into
-deeper processing.
-
-# ============================================================
-# 2. OPERATIONAL RULES
-# ============================================================
-
-- Use validation codes for unmet prerequisites.
-- Use error codes for execution/path failures.
-- Do not collapse validation failure into generic error prematurely.
-- Preserve actionable validation meaning where possible.
-
-# ============================================================
-# 3. SUPPORT EXAMPLES
-# ============================================================
-
-Examples:
-- NCM_VAL_COMPANY_ID_REQUIRED
-- NCM_VAL_ERP_USE_SETTING_REQUIRED
-- NCM_VAL_SHARE_TARGET_DISABLED
-- NCM_VAL_FULL_NAME_REQUIRED
-- NCM_VAL_OPERATION_PAYLOAD_REQUIRED
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_OVERVIEW.md -->
-# ============================================================
-# 080 POLICY OVERVIEW
-# ============================================================
-
-status: canonical
 layer: overview
 system: applications
 application: NameCardManager
-directory: 080.policy
+directory: 070.operations
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines source-of-truth policy, offline replay policy,
-share policy, sensitivity policy, publication policy,
-approval policy, sync conflict policy, data protection policy,
-relationship visibility policy, audit/approval policy,
-approval/audit code policy, error code policy,
-validation code policy, publication preview policy,
-duplicate review policy, pricing policy,
-import review policy, import enrichment policy,
-localization policy, and visibility policy.
+Defines operational states, support actions, failure handling,
+audit-relevant procedures, audit/history/approval operations,
+audit action code operational usage, error code operations,
+and validation code operations.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/070.operations/070_OVERVIEW.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_INDEX.md -->
-# ============================================================
-# 080 POLICY INDEX
-# ============================================================
-
-status: canonical
-layer: index
-system: applications
-application: NameCardManager
-directory: 080.policy
-owner: Boss
-prepared_by: Zero
-
-files:
-- 080_NAME_CARD_MANAGER_POLICY.md
-- 080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md
-- 080120_NAMECARD_SYNC_CONFLICT_POLICY.md
-- 080130_NAMECARD_DATA_PROTECTION_POLICY.md
-- 080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md
-- 080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md
-- 080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md
-- 080170_NAMECARD_ERROR_CODE_POLICY.md
-- 080180_NAMECARD_VALIDATION_CODE_POLICY.md
-- 080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md
-- 080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md
-- 080210_NAMECARD_PRICING_POLICY.md
-- 080220_NAMECARD_IMPORT_REVIEW_POLICY.md
-- 080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
-- 080240_NAMECARD_LOCALIZATION_POLICY.md
-- 080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md
-- 080260_NAMECARD_SEARCH_POLICY_FREEZE.md
-- 080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_INDEX.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_NAME_CARD_MANAGER_POLICY.md -->
-# ============================================================
-# NAME CARD MANAGER POLICY
-# ============================================================
-
-status: draft
-layer: policy
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines policy rules governing storage, synchronization,
-sharing, and publication behavior.
-
-# ============================================================
-# 1. SOURCE OF TRUTH POLICY
-# ============================================================
-
-- BusinessOS is the source of truth.
-- Local storage is not canonical truth.
-- Local state must converge to BusinessOS state.
-
-# ============================================================
-# 2. OFFLINE POLICY
-# ============================================================
-
-- Offline local operation is allowed.
-- Offline changes must be queued.
-- Queued changes must be replayed when online resumes.
-- If replay fails, the system must preserve failure visibility.
-
-# ============================================================
-# 3. SHARE POLICY
-# ============================================================
-
-App-internal sharing:
-- explicit only
-- limited to configured shared users
-- revocable
-
-ERP-wide sharing:
-- explicit only
-- ERP setting required
-- approval policy required where applicable
-- not revocable by ordinary user action
-
-# ============================================================
-# 4. DATA SENSITIVITY POLICY
-# ============================================================
-
-The following are sensitive and must be protected:
-- personality note
-- tendency note
-- communication note
-- authority and decision scope note
-- order history and business history note
-- relationship note
-
-# ============================================================
-# 5. PUBLICATION POLICY
-# ============================================================
-
-- ERP-wide publication is treated as controlled publication.
-- Publication may require approval.
-- Publication state change must be auditable.
-- Publication must not be silently reversed by standard user action.
-
-# ============================================================
-# 6. VISIBILITY POLICY
-# ============================================================
-
-- Private data is owner-scoped by default.
-- App-internal shared data is restricted to configured targets.
-- ERP-wide shared data follows ERP-side visibility rules.
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_NAME_CARD_MANAGER_POLICY.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md -->
 # ============================================================
 # ERP WIDE SHARE APPROVAL POLICY
 # ============================================================
@@ -6247,10 +5999,9 @@ Allowed ERP publication states:
 No ordinary-user revoke state is provided for published ERP-wide sharing.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md -->
 # ============================================================
 # NAMECARD SYNC CONFLICT POLICY
 # ============================================================
@@ -6308,10 +6059,9 @@ Default priority:
 - ERP-wide publication conflicts are constrained by ERP publication policy
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md -->
 # ============================================================
 # NAMECARD DATA PROTECTION POLICY
 # ============================================================
@@ -6391,10 +6141,9 @@ Local storage:
 - failure to confirm publication boundary must fail closed
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md -->
 # ============================================================
 # NAMECARD RELATIONSHIP VISIBILITY POLICY
 # ============================================================
@@ -6458,10 +6207,9 @@ Allowed sources include:
 - low-confidence relations may be shown with reduced emphasis or withheld
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md -->
 # ============================================================
 # NAMECARD AUDIT AND APPROVAL POLICY
 # ============================================================
@@ -6521,10 +6269,9 @@ Audit is required for:
   are shared capability concerns
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md -->
 # ============================================================
 # NAMECARD APPROVAL AND AUDIT CODE POLICY
 # ============================================================
@@ -6568,10 +6315,9 @@ audit action code stability.
 - codes should describe meaningful boundary events
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md -->
 # ============================================================
 # NAMECARD ERROR CODE POLICY
 # ============================================================
@@ -6613,10 +6359,9 @@ UI may translate canonical codes into human-readable messages,
 but must preserve their underlying meaning.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md -->
 # ============================================================
 # NAMECARD VALIDATION CODE POLICY
 # ============================================================
@@ -6664,10 +6409,9 @@ App-internal share must validate:
 - requester authority
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md -->
 # ============================================================
 # NAMECARD PUBLICATION PREVIEW POLICY
 # ============================================================
@@ -6689,10 +6433,9 @@ rules:
 - preview should show summary-oriented publication content
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md -->
 # ============================================================
 # NAMECARD DUPLICATE REVIEW POLICY
 # ============================================================
@@ -6714,10 +6457,9 @@ rules:
 - company-level grouping must not silently rewrite person identity
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080210_NAMECARD_PRICING_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080210_NAMECARD_PRICING_POLICY.md -->
 # ============================================================
 # NAMECARD PRICING POLICY
 # ============================================================
@@ -6809,10 +6551,9 @@ The charging boundary is business-use value including:
 - audit-strengthened usage
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080210_NAMECARD_PRICING_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080210_NAMECARD_PRICING_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md -->
 # ============================================================
 # NAMECARD IMPORT REVIEW POLICY
 # ============================================================
@@ -6835,10 +6576,9 @@ rules:
 - migration should preserve source traceability
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md -->
 # ============================================================
 # NAMECARD IMPORT ENRICHMENT POLICY
 # ============================================================
@@ -6861,10 +6601,9 @@ rules:
 - next action suggestions may be generated from rules
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md -->
 # ============================================================
 # NAMECARD LOCALIZATION POLICY
 # ============================================================
@@ -6898,10 +6637,9 @@ future_scope:
 - multilingual publication summary support
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md -->
 # ============================================================
 # NAMECARD SHARE VISIBILITY POLICY FREEZE
 # ============================================================
@@ -6926,10 +6664,9 @@ policy_rules:
 - protected internal notes must not leak through list/search/summary surfaces
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md -->
 # ============================================================
 # NAMECARD SEARCH POLICY FREEZE
 # ============================================================
@@ -6953,10 +6690,9 @@ policy_rules:
 - ranking remains simple and deterministic in Phase A
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md -->
 # ============================================================
 # NAMECARD PLATFORM SUPPORT POLICY
 # ============================================================
@@ -6980,176 +6716,150 @@ policy_rules:
 - device-specific UI adaptation must not create business-rule divergence
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_OVERVIEW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080_INDEX.md -->
 # ============================================================
-# 090 INTERFACE OVERVIEW
-# ============================================================
-
-status: canonical
-layer: overview
-system: applications
-application: NameCardManager
-directory: 090.interface
-owner: Boss
-prepared_by: Zero
-
-summary:
-Defines the interface structure for login, name card list,
-name card detail, settings, share target setting, ERP setting,
-relationship display behavior, UI state rendering behavior,
-badge labels, UI messages, search,
-company view, related person presentation,
-visibility preview, recent activity,
-meeting preparation mode, migration wizard,
-import review, migration summary,
-and language setting.
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_OVERVIEW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_INDEX.md -->
-# ============================================================
-# 090 INTERFACE INDEX
+# 080 POLICY INDEX
 # ============================================================
 
 status: canonical
 layer: index
 system: applications
 application: NameCardManager
-directory: 090.interface
+directory: 080.policy
 owner: Boss
 prepared_by: Zero
 
 files:
-- 090_NAME_CARD_MANAGER_INTERFACE.md
-- 090100_LOGIN_SCREEN_INTERFACE.md
-- 090110_NAMECARD_LIST_SCREEN_INTERFACE.md
-- 090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md
-- 090130_SETTINGS_SCREEN_INTERFACE.md
-- 090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md
-- 090150_ERP_SETTING_SCREEN_INTERFACE.md
-- 090160_NAMECARD_RELATIONSHIP_INTERFACE.md
-- 090170_NAMECARD_UI_STATE_INTERFACE.md
-- 090180_NAMECARD_BADGE_LABEL_INTERFACE.md
-- 090190_NAMECARD_UI_MESSAGE_INTERFACE.md
-- 090200_NAMECARD_SEARCH_INTERFACE.md
-- 090210_NAMECARD_COMPANY_VIEW_INTERFACE.md
-- 090220_NAMECARD_RELATED_PERSON_INTERFACE.md
-- 090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md
-- 090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md
-- 090250_NAMECARD_MEETING_PREP_INTERFACE.md
-- 090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md
-- 090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
-- 090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
-- 090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
-- 090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md
-- 090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md
-- 090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md
+- 080_NAME_CARD_MANAGER_POLICY.md
+- 080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md
+- 080120_NAMECARD_SYNC_CONFLICT_POLICY.md
+- 080130_NAMECARD_DATA_PROTECTION_POLICY.md
+- 080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md
+- 080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md
+- 080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md
+- 080170_NAMECARD_ERROR_CODE_POLICY.md
+- 080180_NAMECARD_VALIDATION_CODE_POLICY.md
+- 080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md
+- 080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md
+- 080210_NAMECARD_PRICING_POLICY.md
+- 080220_NAMECARD_IMPORT_REVIEW_POLICY.md
+- 080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
+- 080240_NAMECARD_LOCALIZATION_POLICY.md
+- 080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md
+- 080260_NAMECARD_SEARCH_POLICY_FREEZE.md
+- 080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_NAME_CARD_MANAGER_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080_NAME_CARD_MANAGER_POLICY.md -->
 # ============================================================
-# NAME CARD MANAGER INTERFACE
+# NAME CARD MANAGER POLICY
 # ============================================================
 
 status: draft
-layer: interface
+layer: policy
 system: applications
 application: NameCardManager
 owner: Boss
 prepared_by: Zero
 
 purpose:
-Defines the primary user interface structure.
+Defines policy rules governing storage, synchronization,
+sharing, and publication behavior.
 
 # ============================================================
-# 1. LOGIN SCREEN
+# 1. SOURCE OF TRUTH POLICY
 # ============================================================
 
-Functions:
-- id input
-- password input
-- fingerprint authentication
-- face authentication
+- BusinessOS is the source of truth.
+- Local storage is not canonical truth.
+- Local state must converge to BusinessOS state.
 
 # ============================================================
-# 2. NAME CARD LIST SCREEN
+# 2. OFFLINE POLICY
 # ============================================================
 
-Visible elements:
-- basic name card list
-- settings button
-- share button
-- ERP-wide share button
-- app share state
-- ERP publication state
-- relationship indicator
-
-Primary navigation:
-- tap basic info -> detail screen
-- tap settings -> settings screen
-- tap share -> app-internal share
-- tap ERP-wide share -> ERP publication flow
+- Offline local operation is allowed.
+- Offline changes must be queued.
+- Queued changes must be replayed when online resumes.
+- If replay fails, the system must preserve failure visibility.
 
 # ============================================================
-# 3. NAME CARD DETAIL SCREEN
+# 3. SHARE POLICY
 # ============================================================
 
-Visible sections:
-- basic information
-- person information
-- responsibility scope
-- order history
-- related entries
-- memo
-- app share state
-- ERP publication state
+App-internal sharing:
+- explicit only
+- limited to configured shared users
+- revocable
 
-Available actions:
-- add detail
-- update detail
-- delete detail
-- revoke app-internal share
+ERP-wide sharing:
+- explicit only
+- ERP setting required
+- approval policy required where applicable
+- not revocable by ordinary user action
 
 # ============================================================
-# 4. SETTINGS SCREEN
+# 4. DATA SENSITIVITY POLICY
 # ============================================================
 
-Visible sections:
-- share target setting
-- ERP setting
-- sync status
-- pending sync count
+The following are sensitive and must be protected:
+- personality note
+- tendency note
+- communication note
+- authority and decision scope note
+- order history and business history note
+- relationship note
 
 # ============================================================
-# 5. SHARE TARGET SETTING SCREEN
+# 5. PUBLICATION POLICY
 # ============================================================
 
-Functions:
-- add share target
-- remove share target
-- enable target
-- disable target
+- ERP-wide publication is treated as controlled publication.
+- Publication may require approval.
+- Publication state change must be auditable.
+- Publication must not be silently reversed by standard user action.
 
 # ============================================================
-# 6. ERP SETTING SCREEN
+# 6. VISIBILITY POLICY
 # ============================================================
 
-Functions:
-- ERP use enable/disable
-- publication eligibility display
-- publication rule display
+- Private data is owner-scoped by default.
+- App-internal shared data is restricted to configured targets.
+- ERP-wide shared data follows ERP-side visibility rules.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_NAME_CARD_MANAGER_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080_NAME_CARD_MANAGER_POLICY.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080_OVERVIEW.md -->
+# ============================================================
+# 080 POLICY OVERVIEW
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090100_LOGIN_SCREEN_INTERFACE.md -->
+status: canonical
+layer: overview
+system: applications
+application: NameCardManager
+directory: 080.policy
+owner: Boss
+prepared_by: Zero
+
+summary:
+Defines source-of-truth policy, offline replay policy,
+share policy, sensitivity policy, publication policy,
+approval policy, sync conflict policy, data protection policy,
+relationship visibility policy, audit/approval policy,
+approval/audit code policy, error code policy,
+validation code policy, publication preview policy,
+duplicate review policy, pricing policy,
+import review policy, import enrichment policy,
+localization policy, and visibility policy.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/080.policy/080_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090100_LOGIN_SCREEN_INTERFACE.md -->
 # ============================================================
 # LOGIN SCREEN INTERFACE
 # ============================================================
@@ -7205,10 +6915,9 @@ On authentication failure:
 - show failure message
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090100_LOGIN_SCREEN_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090100_LOGIN_SCREEN_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md -->
 # ============================================================
 # NAME CARD LIST SCREEN INTERFACE
 # ============================================================
@@ -7285,10 +6994,9 @@ The screen should support:
 - quick transition to detail
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md -->
 # ============================================================
 # NAME CARD DETAIL SCREEN INTERFACE
 # ============================================================
@@ -7395,10 +7103,9 @@ May display:
 - navigate to related entry
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md -->
 # ============================================================
 # SETTINGS SCREEN INTERFACE
 # ============================================================
@@ -7440,10 +7147,9 @@ configuration, as well as synchronization visibility.
 - inspect pending sync count
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md -->
 # ============================================================
 # SHARE TARGET SETTING SCREEN INTERFACE
 # ============================================================
@@ -7493,10 +7199,9 @@ This screen applies only to app-internal sharing.
 It does not govern ERP-wide publication.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md -->
 # ============================================================
 # ERP SETTING SCREEN INTERFACE
 # ============================================================
@@ -7546,10 +7251,9 @@ This screen supports ERP-wide sharing preparation only.
 It does not provide ordinary-user revoke for published ERP-wide data.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md -->
 # ============================================================
 # NAMECARD RELATIONSHIP INTERFACE
 # ============================================================
@@ -7621,10 +7325,9 @@ The interface should remain simple and readable.
 It should not overload the screen with excessive graph complexity.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md -->
 # ============================================================
 # NAMECARD UI STATE INTERFACE
 # ============================================================
@@ -7693,10 +7396,9 @@ Approval pending must not look identical to published.
 Conflict must not look identical to generic failure.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md -->
 # ============================================================
 # NAMECARD BADGE LABEL INTERFACE
 # ============================================================
@@ -7829,10 +7531,9 @@ UI_PROTECTED_HIDDEN:
 - detail: Hidden by protection policy
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md -->
 # ============================================================
 # NAMECARD UI MESSAGE INTERFACE
 # ============================================================
@@ -7899,10 +7600,9 @@ NCM_ERR_FAIL_CLOSED_TRIGGERED:
 - message: Action blocked for safety
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090200_NAMECARD_SEARCH_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090200_NAMECARD_SEARCH_INTERFACE.md -->
 # ============================================================
 # NAMECARD SEARCH INTERFACE
 # ============================================================
@@ -7926,10 +7626,9 @@ ui_requirements:
 - search result grouping optional
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090200_NAMECARD_SEARCH_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090200_NAMECARD_SEARCH_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md -->
 # ============================================================
 # NAMECARD COMPANY VIEW INTERFACE
 # ============================================================
@@ -7953,10 +7652,9 @@ ui_blocks:
 - publication/share indicators
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090220_NAMECARD_RELATED_PERSON_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090220_NAMECARD_RELATED_PERSON_INTERFACE.md -->
 # ============================================================
 # NAMECARD RELATED PERSON INTERFACE
 # ============================================================
@@ -7979,10 +7677,9 @@ ui_requirements:
 - important relation emphasis
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090220_NAMECARD_RELATED_PERSON_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090220_NAMECARD_RELATED_PERSON_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md -->
 # ============================================================
 # NAMECARD VISIBILITY PREVIEW INTERFACE
 # ============================================================
@@ -8005,10 +7702,9 @@ ui_requirements:
 - approval-needed indication
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md -->
 # ============================================================
 # NAMECARD RECENT ACTIVITY INTERFACE
 # ============================================================
@@ -8031,10 +7727,9 @@ ui_requirements:
 - sortable by recentness
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090250_NAMECARD_MEETING_PREP_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090250_NAMECARD_MEETING_PREP_INTERFACE.md -->
 # ============================================================
 # NAMECARD MEETING PREP INTERFACE
 # ============================================================
@@ -8059,10 +7754,9 @@ ui_blocks:
 - next confirmation points
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090250_NAMECARD_MEETING_PREP_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090250_NAMECARD_MEETING_PREP_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md -->
 # ============================================================
 # NAMECARD MIGRATION WIZARD INTERFACE
 # ============================================================
@@ -8086,10 +7780,9 @@ ui_blocks:
 - execute import action
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md -->
 # ============================================================
 # NAMECARD IMPORT REVIEW INTERFACE
 # ============================================================
@@ -8112,10 +7805,9 @@ ui_blocks:
 - next action review
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md -->
 # ============================================================
 # NAMECARD MIGRATION SUMMARY INTERFACE
 # ============================================================
@@ -8139,10 +7831,9 @@ ui_blocks:
 - suggested follow-up actions
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md -->
 # ============================================================
 # NAMECARD LANGUAGE SETTING INTERFACE
 # ============================================================
@@ -8171,10 +7862,9 @@ requirements:
 - translation display should be optional where applicable
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md -->
 # ============================================================
 # NAMECARD SHARE VISIBILITY INTERFACE FREEZE
 # ============================================================
@@ -8198,10 +7888,9 @@ ui_requirements:
 - visibility preview should reflect role-based visible sections
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md -->
 # ============================================================
 # NAMECARD SEARCH INTERFACE FREEZE
 # ============================================================
@@ -8225,10 +7914,9 @@ ui_requirements:
 - recent update default sort must be visible or predictable
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md -->
 # ============================================================
 # NAMECARD PLATFORM ADAPTIVE INTERFACE FREEZE
 # ============================================================
@@ -8278,119 +7966,172 @@ ui_rules:
 - mobile may use step-based flow for dense review paths
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_OVERVIEW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090_INDEX.md -->
 # ============================================================
-# 100 SECURITY OVERVIEW
-# ============================================================
-
-status: draft
-layer: overview
-system: applications
-application: NameCardManager
-directory: 100.security
-owner: Boss
-prepared_by: Zero
-
-summary:
-Defines authentication, storage protection, encryption-oriented
-controls, sharing control, auditability, and failure visibility
-security requirements.
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_OVERVIEW.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_INDEX.md -->
-# ============================================================
-# 100 SECURITY INDEX
+# 090 INTERFACE INDEX
 # ============================================================
 
-status: draft
+status: canonical
 layer: index
 system: applications
 application: NameCardManager
-directory: 100.security
+directory: 090.interface
 owner: Boss
 prepared_by: Zero
 
 files:
-- 100_NAME_CARD_MANAGER_SECURITY.md
-- 100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md
+- 090_NAME_CARD_MANAGER_INTERFACE.md
+- 090100_LOGIN_SCREEN_INTERFACE.md
+- 090110_NAMECARD_LIST_SCREEN_INTERFACE.md
+- 090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md
+- 090130_SETTINGS_SCREEN_INTERFACE.md
+- 090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md
+- 090150_ERP_SETTING_SCREEN_INTERFACE.md
+- 090160_NAMECARD_RELATIONSHIP_INTERFACE.md
+- 090170_NAMECARD_UI_STATE_INTERFACE.md
+- 090180_NAMECARD_BADGE_LABEL_INTERFACE.md
+- 090190_NAMECARD_UI_MESSAGE_INTERFACE.md
+- 090200_NAMECARD_SEARCH_INTERFACE.md
+- 090210_NAMECARD_COMPANY_VIEW_INTERFACE.md
+- 090220_NAMECARD_RELATED_PERSON_INTERFACE.md
+- 090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md
+- 090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md
+- 090250_NAMECARD_MEETING_PREP_INTERFACE.md
+- 090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md
+- 090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
+- 090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
+- 090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
+- 090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md
+- 090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md
+- 090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_NAME_CARD_MANAGER_SECURITY.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090_NAME_CARD_MANAGER_INTERFACE.md -->
 # ============================================================
-# NAME CARD MANAGER SECURITY
+# NAME CARD MANAGER INTERFACE
 # ============================================================
 
 status: draft
-layer: security
+layer: interface
 system: applications
 application: NameCardManager
 owner: Boss
 prepared_by: Zero
 
 purpose:
-Defines security controls for NameCardManager.
+Defines the primary user interface structure.
 
 # ============================================================
-# 1. AUTHENTICATION SECURITY
+# 1. LOGIN SCREEN
 # ============================================================
 
-Supported controls:
-- id/password authentication
+Functions:
+- id input
+- password input
 - fingerprint authentication
 - face authentication
 
-Access is denied unless authentication succeeds.
-
 # ============================================================
-# 2. STORAGE SECURITY
+# 2. NAME CARD LIST SCREEN
 # ============================================================
 
-- BusinessOS-side stored data must be protected.
-- Sensitive fields must not be exposed without authorization.
-- Local storage should use protected storage where possible.
-- Local pending operation data should be protected.
+Visible elements:
+- basic name card list
+- settings button
+- share button
+- ERP-wide share button
+- app share state
+- ERP publication state
+- relationship indicator
+
+Primary navigation:
+- tap basic info -> detail screen
+- tap settings -> settings screen
+- tap share -> app-internal share
+- tap ERP-wide share -> ERP publication flow
 
 # ============================================================
-# 3. SHARE SECURITY
+# 3. NAME CARD DETAIL SCREEN
 # ============================================================
 
-- App-internal sharing must be restricted to configured targets.
-- ERP-wide publication must follow controlled publication rules.
-- Standard users cannot silently revoke ERP-wide publication.
+Visible sections:
+- basic information
+- person information
+- responsibility scope
+- order history
+- related entries
+- memo
+- app share state
+- ERP publication state
+
+Available actions:
+- add detail
+- update detail
+- delete detail
+- revoke app-internal share
 
 # ============================================================
-# 4. AUDIT SECURITY
+# 4. SETTINGS SCREEN
 # ============================================================
 
-The system should preserve auditability for:
-- create
-- update
-- delete
-- app-internal share
-- app-internal share revoke
-- ERP publication request
-- ERP publication result
+Visible sections:
+- share target setting
+- ERP setting
+- sync status
+- pending sync count
 
 # ============================================================
-# 5. FAILURE SECURITY
+# 5. SHARE TARGET SETTING SCREEN
 # ============================================================
 
-- Failed sync must remain visible.
-- Failed publication must remain visible.
-- Failed authentication must not grant access.
+Functions:
+- add share target
+- remove share target
+- enable target
+- disable target
+
+# ============================================================
+# 6. ERP SETTING SCREEN
+# ============================================================
+
+Functions:
+- ERP use enable/disable
+- publication eligibility display
+- publication rule display
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_NAME_CARD_MANAGER_SECURITY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090_NAME_CARD_MANAGER_INTERFACE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090_OVERVIEW.md -->
+# ============================================================
+# 090 INTERFACE OVERVIEW
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md -->
+status: canonical
+layer: overview
+system: applications
+application: NameCardManager
+directory: 090.interface
+owner: Boss
+prepared_by: Zero
+
+summary:
+Defines the interface structure for login, name card list,
+name card detail, settings, share target setting, ERP setting,
+relationship display behavior, UI state rendering behavior,
+badge labels, UI messages, search,
+company view, related person presentation,
+visibility preview, recent activity,
+meeting preparation mode, migration wizard,
+import review, migration summary,
+and language setting.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/090.interface/090_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md -->
 # ============================================================
 # NAMECARD DATA ENCRYPTION SECURITY
 # ============================================================
@@ -8455,30 +8196,176 @@ If required protection cannot be guaranteed:
 - fail closed where authorization or protected access is uncertain
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_OVERVIEW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100_INDEX.md -->
 # ============================================================
-# 110 INFRASTRUCTURE OVERVIEW
+# 100 SECURITY INDEX
+# ============================================================
+
+status: draft
+layer: index
+system: applications
+application: NameCardManager
+directory: 100.security
+owner: Boss
+prepared_by: Zero
+
+files:
+- 100_NAME_CARD_MANAGER_SECURITY.md
+- 100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100_NAME_CARD_MANAGER_SECURITY.md -->
+# ============================================================
+# NAME CARD MANAGER SECURITY
+# ============================================================
+
+status: draft
+layer: security
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines security controls for NameCardManager.
+
+# ============================================================
+# 1. AUTHENTICATION SECURITY
+# ============================================================
+
+Supported controls:
+- id/password authentication
+- fingerprint authentication
+- face authentication
+
+Access is denied unless authentication succeeds.
+
+# ============================================================
+# 2. STORAGE SECURITY
+# ============================================================
+
+- BusinessOS-side stored data must be protected.
+- Sensitive fields must not be exposed without authorization.
+- Local storage should use protected storage where possible.
+- Local pending operation data should be protected.
+
+# ============================================================
+# 3. SHARE SECURITY
+# ============================================================
+
+- App-internal sharing must be restricted to configured targets.
+- ERP-wide publication must follow controlled publication rules.
+- Standard users cannot silently revoke ERP-wide publication.
+
+# ============================================================
+# 4. AUDIT SECURITY
+# ============================================================
+
+The system should preserve auditability for:
+- create
+- update
+- delete
+- app-internal share
+- app-internal share revoke
+- ERP publication request
+- ERP publication result
+
+# ============================================================
+# 5. FAILURE SECURITY
+# ============================================================
+
+- Failed sync must remain visible.
+- Failed publication must remain visible.
+- Failed authentication must not grant access.
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100_NAME_CARD_MANAGER_SECURITY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100_OVERVIEW.md -->
+# ============================================================
+# 100 SECURITY OVERVIEW
 # ============================================================
 
 status: draft
 layer: overview
 system: applications
 application: NameCardManager
-directory: 110.infrastructure
+directory: 100.security
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines local device, BusinessOS, network, ERP, and protected
-storage infrastructure assumptions for NameCardManager.
+Defines authentication, storage protection, encryption-oriented
+controls, sharing control, auditability, and failure visibility
+security requirements.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/100.security/100_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md -->
+# ============================================================
+# NAMECARD PROTECTED STORAGE INFRASTRUCTURE
+# ============================================================
+
+status: draft
+layer: infrastructure
+system: applications
+application: NameCardManager
+infrastructure_scope: protected_storage
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Defines infrastructure assumptions for protected storage used by
+NameCardManager.
+
+# ============================================================
+# 1. LOCAL STORAGE ASSUMPTIONS
+# ============================================================
+
+Local infrastructure should support:
+- protected application storage
+- controlled cache location
+- protected image storage path
+- protected pending operation storage path
+
+# ============================================================
+# 2. BUSINESSOS STORAGE ASSUMPTIONS
+# ============================================================
+
+BusinessOS infrastructure should support:
+- protected canonical record storage
+- protected detail note storage
+- protected relationship note storage
+- protected order history storage
+- protected image reference handling
+- authorized retrieval paths only
+
+# ============================================================
+# 3. TRANSPORT ASSUMPTIONS
+# ============================================================
+
+Transport between local and BusinessOS should support:
+- authorized channel usage
+- integrity-preserving request/response handling
+- safe replay handling for pending operations
+- failure visibility when protected transfer fails
+
+# ============================================================
+# 4. ERP BOUNDARY ASSUMPTIONS
+# ============================================================
+
+ERP-side handling assumes:
+- publication goes only through authorized publication path
+- data is scoped by ERP-side access rules after publication
+- ordinary user local runtime cannot directly undo published ERP state
 
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110_INDEX.md -->
 # ============================================================
 # 110 INFRASTRUCTURE INDEX
 # ============================================================
@@ -8495,10 +8382,9 @@ files:
 - 110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
 - 110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md -->
 # ============================================================
 # NAME CARD MANAGER INFRASTRUCTURE
 # ============================================================
@@ -8569,99 +8455,910 @@ ERP-side infrastructure is assumed to support:
 - publication failure reporting
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110_OVERVIEW.md -->
 # ============================================================
-# NAMECARD PROTECTED STORAGE INFRASTRUCTURE
+# 110 INFRASTRUCTURE OVERVIEW
 # ============================================================
 
 status: draft
-layer: infrastructure
-system: applications
-application: NameCardManager
-infrastructure_scope: protected_storage
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Defines infrastructure assumptions for protected storage used by
-NameCardManager.
-
-# ============================================================
-# 1. LOCAL STORAGE ASSUMPTIONS
-# ============================================================
-
-Local infrastructure should support:
-- protected application storage
-- controlled cache location
-- protected image storage path
-- protected pending operation storage path
-
-# ============================================================
-# 2. BUSINESSOS STORAGE ASSUMPTIONS
-# ============================================================
-
-BusinessOS infrastructure should support:
-- protected canonical record storage
-- protected detail note storage
-- protected relationship note storage
-- protected order history storage
-- protected image reference handling
-- authorized retrieval paths only
-
-# ============================================================
-# 3. TRANSPORT ASSUMPTIONS
-# ============================================================
-
-Transport between local and BusinessOS should support:
-- authorized channel usage
-- integrity-preserving request/response handling
-- safe replay handling for pending operations
-- failure visibility when protected transfer fails
-
-# ============================================================
-# 4. ERP BOUNDARY ASSUMPTIONS
-# ============================================================
-
-ERP-side handling assumes:
-- publication goes only through authorized publication path
-- data is scoped by ERP-side access rules after publication
-- ordinary user local runtime cannot directly undo published ERP state
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_OVERVIEW.md -->
-# ============================================================
-# 120 IMPLEMENTATION OVERVIEW
-# ============================================================
-
-status: canonical
 layer: overview
 system: applications
 application: NameCardManager
-directory: 120.implementation
+directory: 110.infrastructure
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines implementation guidance for local persistence,
-sync coordinator, BusinessOS API client, shared ERP publication usage,
-relationship rendering, UI modules, audit/approval implementation,
-approval/audit code implementation, error code implementation,
-UI state implementation, payload field mapping implementation,
-API field schema implementation, validation code implementation,
-UI label implementation, publication preflight implementation,
-import implementation, rule-based enrichment implementation,
-and localization implementation.
+Defines local device, BusinessOS, network, ERP, and protected
+storage infrastructure assumptions for NameCardManager.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/110.infrastructure/110_OVERVIEW.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120000_PLATFORM_SPLIT_IMPLEMENTATION_POLICY.md -->
+# ============================================================
+# NameCardManager PLATFORM SPLIT IMPLEMENTATION POLICY
+# ============================================================
+
+status: canonical
+app: NameCardManager
+category: 03.business-app
+
+shared_canonical:
+- API exact request payload
+- API exact response payload
+- DB logical design
+- DB migration design
+- screen state flow
+- validation rule
+- business rule
+- strings key design
+- permission / privacy rule
+- sync / retry / offline rule
+
+web_implementation:
+- HTML
+- CSS
+- JavaScript
+
+android_implementation:
+- Java
+- XML
+
+iphone_implementation:
+- Swift
+
+mandatory_common_requirements:
+- persona表示
+- 背景表示
+- 表示中のpersona/backgroundはユーザー変更可能
+- 多言語対応
+- 多通貨対応
+- iPhone対応
+- Android対応
+- PC対応
+- Tablet対応
+
+notes:
+- Web / Android / iPhone で UI 実装は分かれてよい
+- payload と業務仕様は共通正本に従う
+- iPhoneネイティブに Java は使用しない
+- Androidは Java / XML を正とする
+- Webは HTML / CSS / JavaScript を正とする
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120000_PLATFORM_SPLIT_IMPLEMENTATION_POLICY.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD API IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: api_guide
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for NameCardManager API endpoints
+and client integration.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Recommended separation:
+- namecard command endpoints
+- namecard query endpoints
+- sync endpoints
+- app share endpoints
+- ERP publication endpoints
+- relationship query endpoints
+
+# ============================================================
+# 2. VALIDATION DIRECTION
+# ============================================================
+
+Validate:
+- requester authorization
+- required identifiers
+- allowed state transition
+- share target eligibility
+- ERP publication eligibility
+- canonical version context where needed
+
+# ============================================================
+# 3. FAILURE DIRECTION
+# ============================================================
+
+Return explicit failures for:
+- invalid payload
+- unauthorized action
+- state conflict
+- missing ERP setting
+- approval boundary stop
+- protected access violation
+
+# ============================================================
+# 4. CLIENT DIRECTION
+# ============================================================
+
+Client implementation should:
+- keep pending operations explicit
+- treat conflict separately from generic failure
+- treat approval-required separately from published
+- refresh canonical state after successful mutation
+- preserve failure visibility in UI
 
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD AUDIT APPROVAL IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: audit_approval
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for audit logging, history entries,
+approval events, and shared ERP publication integration.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Recommended separation:
+- audit writer
+- history writer
+- approval event adapter
+- shared ERP publication adapter
+
+# ============================================================
+# 2. LOGGING DIRECTION
+# ============================================================
+
+Implementation should separately capture:
+- technical/audit event
+- user-visible history summary
+- approval workflow event
+- ERP publication result event
+
+# ============================================================
+# 3. SHARED PUBLICATION DIRECTION
+# ============================================================
+
+Implementation should:
+- call shared BusinessOS publication capability
+- avoid direct ERP connector logic inside NameCardManager
+- map shared capability result into NameCardManager states
+- preserve approval-required vs published distinction
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD APPROVAL AUDIT CODE IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: approval_audit_code
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for approval state transitions
+and audit action codes.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Implementation should:
+- persist approval state separately from publication state
+- emit stable audit action codes
+- record shared BusinessOS publication routing explicitly
+- keep approval result and publish result separate in UI and logs
+
+# ============================================================
+# 2. VALIDATION DIRECTION
+# ============================================================
+
+Validate:
+- state transition legality
+- non-bypass of approval boundary
+- non-collapse of approved into published
+- stable action code usage
+
+# ============================================================
+# 3. UI DIRECTION
+# ============================================================
+
+UI should show:
+- pending approval
+- approved but not yet published
+- published
+- rejected
+- returned for fix
+- publish failed
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD ERROR CODE IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: error_code
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for canonical error code usage.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Implementation should:
+- emit canonical error codes from API and service boundaries
+- preserve canonical error code through client handling where possible
+- distinguish validation, authorization, conflict, approval,
+  and publication failures
+
+# ============================================================
+# 2. UI DIRECTION
+# ============================================================
+
+UI should:
+- map canonical codes to readable text
+- show actionable guidance where relevant
+- preserve special handling for:
+  - sync conflict
+  - approval required
+  - approval rejected
+  - returned for fix
+  - publication failed
+
+# ============================================================
+# 3. LOGGING DIRECTION
+# ============================================================
+
+Audit and operational logs should store:
+- canonical error code
+- operation context
+- related request or publication id where available
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD UI STATE IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: ui_state
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for canonical UI state rendering.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Implementation should:
+- map backend state into canonical UI state codes
+- avoid duplicating ad hoc state meanings per screen
+- keep approval, publication, conflict, and protection distinct
+
+# ============================================================
+# 2. LIST SCREEN DIRECTION
+# ============================================================
+
+List screen should prefer compact state display:
+- one sync badge
+- one share badge
+- one ERP publication badge
+- one relationship indicator
+
+# ============================================================
+# 3. DETAIL SCREEN DIRECTION
+# ============================================================
+
+Detail screen may show richer state text:
+- exact sync situation
+- exact share status
+- exact approval/publication stage
+- exact relationship importance
+- exact protection limitation
+
+# ============================================================
+# 4. FAILURE DIRECTION
+# ============================================================
+
+Do not collapse:
+- pending approval into published
+- conflict into generic failed
+- protected hidden into missing data
+- rejected into returned for fix
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD PAYLOAD FIELD MAP IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: payload_field_map
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for payload field mapping.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Implementation should:
+- keep application-side field collection separate from ERP output shaping
+- send normalized source data into shared publication capability
+- let shared capability own final ERP payload transformation
+
+# ============================================================
+# 2. VALIDATION DIRECTION
+# ============================================================
+
+Validate before shared publication handoff:
+- requester identity
+- source record existence
+- company context
+- publication policy code
+- required contact fields where applicable
+- protected field eligibility
+
+# ============================================================
+# 3. TRANSFORMATION DIRECTION
+# ============================================================
+
+Transformation should:
+- normalize contact fields
+- summarize long-form business notes where needed
+- avoid raw dump of local-only fields
+- preserve source_record_id traceability
+
+# ============================================================
+# 4. UI / DEBUG DIRECTION
+# ============================================================
+
+Where preview is shown, UI may show:
+- source fields selected for publication
+- publication-safe normalized view
+- omitted or blocked field notice where policy requires
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD API FIELD SCHEMA IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: api_field_schema
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for request/response field schema.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Implementation should:
+- treat canonical field schema as the contract source
+- keep field naming stable
+- distinguish required and optional fields explicitly
+- validate enum and identifier fields early
+
+# ============================================================
+# 2. REQUEST VALIDATION DIRECTION
+# ============================================================
+
+Validate:
+- requester_user_id existence and authority
+- record identifiers
+- array presence where batch operation is used
+- required company_id for ERP publish
+- required publication_policy_code for ERP publish
+- operation_payload presence for sync push
+
+# ============================================================
+# 3. RESPONSE DIRECTION
+# ============================================================
+
+Responses should:
+- always include success
+- include canonical result identifiers where applicable
+- include error_code on failure
+- not blur approval-required with publish success
+- not blur conflict with generic failure
+
+# ============================================================
+# 4. CLIENT DIRECTION
+# ============================================================
+
+Client should:
+- respect required fields before request submission
+- surface missing required fields clearly
+- treat optional fields as absent rather than invented defaults
+- preserve response error_code and state meaning in UI
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD VALIDATION CODE IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: validation_code
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for validation code usage.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Implementation should:
+- validate request prerequisites early
+- return canonical validation code before deeper processing where possible
+- separate validation result from later execution result
+
+# ============================================================
+# 2. UI DIRECTION
+# ============================================================
+
+UI should:
+- surface actionable validation failures clearly
+- distinguish missing prerequisite from processing failure
+- guide user toward correction when validation fails
+
+# ============================================================
+# 3. API DIRECTION
+# ============================================================
+
+API may return:
+- success=false
+- validation_code
+- error_code only when execution path has already failed or progressed
+- field-level hints where useful
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD UI LABEL IMPLEMENTATION GUIDE
+# ============================================================
+
+status: draft
+layer: implementation
+system: applications
+application: NameCardManager
+implementation_scope: ui_label
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for badge labels and short UI messages.
+
+# ============================================================
+# 1. IMPLEMENTATION DIRECTION
+# ============================================================
+
+Implementation should:
+- map UI state codes to canonical badge labels
+- map validation codes to canonical validation messages
+- map error codes to canonical error messages
+- preserve consistent wording across list/detail/settings screens
+
+# ============================================================
+# 2. PRESENTATION DIRECTION
+# ============================================================
+
+Prefer:
+- short badge text on list screen
+- slightly longer detail text on detail screen
+- short corrective wording for validation failures
+- distinct wording for approval, rejection, conflict, and failure
+
+# ============================================================
+# 3. DO NOT COLLAPSE
+# ============================================================
+
+Do not collapse:
+- approval pending into published wording
+- rejected into publish failed wording
+- restricted into hidden wording
+- conflict into generic failure wording
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md -->
+# ============================================================
+# NAMECARD PUBLICATION PREFLIGHT GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for publication preflight.
+
+implementation_rules:
+- run preflight before publication request submission
+- separate blocking validation from warnings
+- preview publishable payload before request handoff
+- preserve approval/publication distinction
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120210_NAMECARD_IMPORT_GUIDE.md -->
+# ============================================================
+# NAMECARD IMPORT GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for migration import support.
+
+implementation_rules:
+- CSV import is first-phase priority
+- source-specific templates may be supported
+- preview before commit is required
+- duplicate and grouping review should remain reviewable
+- import should feed follow-up review and suggestion flows
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120210_NAMECARD_IMPORT_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md -->
+# ============================================================
+# NAMECARD RULE BASED ENRICHMENT GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for rule-based enrichment.
+
+implementation_rules:
+- normalize department, title, and company values using reviewable rules
+- preserve raw imported source values
+- keep enrichment non-destructive by default
+- surface next-action suggestions after enrichment
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md -->
+# ============================================================
+# NAMECARD LOCALIZATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for localization and multilingual support.
+
+implementation_rules:
+- use key-managed UI strings
+- do not hardcode user-facing labels where localization is expected
+- preserve original user-entered values
+- separate canonical data from translated display values
+- keep multilingual search normalization reviewable
+- locale-aware outputs should accept locale as an explicit input
+
+initial_implementation_scope:
+- ja UI
+- en UI
+- original-data preservation
+- localized interface labels
+- localized validation and message wording
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARDMANAGER IMAGE HANDLING IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Fixes exact image lifecycle direction for front/back business card handling.
+
+flow:
+- capture
+- local staging
+- review
+- commit metadata
+- upload / reference finalize
+- cleanup staging
+
+rules:
+- front and back are independently replaceable
+- mime whitelist is required
+- size limit is required
+- staging cleanup is required after commit or terminal cancel
+- failed upload must not silently mark image committed
+- record update and image metadata update must be consistent from UI perspective
+- OCR is out of initial scope
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md -->
+# ============================================================
+# NAMECARDMANAGER ROLE PERMISSION MATRIX
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation-facing role permission summary.
+
+matrix:
+- owner:
+  - list yes
+  - detail yes
+  - create yes
+  - update yes
+  - delete yes
+  - share yes
+  - revoke yes
+  - publication_preflight yes
+  - publication_request yes
+  - import yes
+- editor:
+  - list yes
+  - detail yes
+  - create yes
+  - update yes
+  - delete no
+  - share no
+  - revoke no
+  - publication_preflight no
+  - publication_request no
+  - import yes
+- shared_viewer:
+  - list yes limited
+  - detail yes limited
+  - create no
+  - update no
+  - delete no
+  - share no
+  - revoke no
+  - publication_preflight no
+  - publication_request no
+  - import no
+- publication_operator:
+  - list yes limited
+  - detail yes limited
+  - create no
+  - update no
+  - delete no
+  - share no
+  - revoke no
+  - publication_preflight yes
+  - publication_request yes
+  - import no
+- approver:
+  - list yes company scope
+  - detail yes company scope
+  - approve yes
+  - reject yes
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD SHARE VISIBILITY IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation rules for exact share/visibility/revoke behavior.
+
+implementation_rules:
+- evaluate authorization before composing response fields
+- shared_viewer field suppression must be server-side enforced
+- revoke must remove effective visibility immediately on next evaluation
+- audit share apply/revoke events
+- do not overload ERP publication state with app share state
+- keep share link and publication state separated
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD SEARCH IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation rules for exact Phase A search behavior.
+
+implementation_rules:
+- normalize searchable strings deterministically
+- apply visibility filter before final result emission
+- support only fixed Phase A modes
+- keep multi-token AND behavior consistent across API/UI
+- keep unsupported fuzzy dimensions out of UI and API claims
+- rebuild normalized company search support when normalization changes
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md -->
+# ============================================================
+# NAMECARDMANAGER PHASE A BUILD ORDER GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation-facing build order for Phase A.
+
+build_order:
+- project shell
+- model / dto shell
+- local persistence shell
+- list/detail UI shell
+- CRUD path
+- sync queue shell
+- auth entry shell
+- authorization checks
+- share core
+- publication core
+- image core
+- import minimum
+- audit/history core
+- test pass and freeze
+
+implementation_notes:
+- local-first path should be working before sync replay path
+- authorization checks should be added before share/publication actions are exposed
+- image handling should be added after basic record save path is stable
+- CSV import minimum should target acquisition value, not full enrichment
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md -->
+# ============================================================
+# NAMECARD PLATFORM IMPLEMENTATION GUIDE
+# ============================================================
+
+status: canonical
+layer: implementation
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Provides implementation guidance for platform support.
+
+implementation_rules:
+- preserve shared business rules across iPhone, Android, tablet, and PC
+- implement adaptive layout by screen size / interaction mode
+- keep mobile capture path simple and fast
+- keep PC migration/review path information-dense
+- avoid platform-only business features unless explicitly approved
+- test key paths on mobile, tablet, and PC separately
+
+priority_guidance:
+- Phase A must not assume phone-only support
+- image capture flow should be optimized first for mobile
+- migration/import and management review should be optimized first for PC
+- tablet should support review-oriented and meeting-prep flows well
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120_INDEX.md -->
 # ============================================================
 # 120 IMPLEMENTATION INDEX
 # ============================================================
@@ -8696,10 +9393,9 @@ files:
 - 120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md
 - 120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md -->
 # ============================================================
 # NAME CARD MANAGER IMPLEMENTATION
 # ============================================================
@@ -8782,878 +9478,35 @@ Minimum screens:
 - Relationship rendering should stay readable and simple.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD API IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: api_guide
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for NameCardManager API endpoints
-and client integration.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Recommended separation:
-- namecard command endpoints
-- namecard query endpoints
-- sync endpoints
-- app share endpoints
-- ERP publication endpoints
-- relationship query endpoints
-
-# ============================================================
-# 2. VALIDATION DIRECTION
-# ============================================================
-
-Validate:
-- requester authorization
-- required identifiers
-- allowed state transition
-- share target eligibility
-- ERP publication eligibility
-- canonical version context where needed
-
-# ============================================================
-# 3. FAILURE DIRECTION
-# ============================================================
-
-Return explicit failures for:
-- invalid payload
-- unauthorized action
-- state conflict
-- missing ERP setting
-- approval boundary stop
-- protected access violation
-
-# ============================================================
-# 4. CLIENT DIRECTION
-# ============================================================
-
-Client implementation should:
-- keep pending operations explicit
-- treat conflict separately from generic failure
-- treat approval-required separately from published
-- refresh canonical state after successful mutation
-- preserve failure visibility in UI
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD AUDIT APPROVAL IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: audit_approval
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for audit logging, history entries,
-approval events, and shared ERP publication integration.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Recommended separation:
-- audit writer
-- history writer
-- approval event adapter
-- shared ERP publication adapter
-
-# ============================================================
-# 2. LOGGING DIRECTION
-# ============================================================
-
-Implementation should separately capture:
-- technical/audit event
-- user-visible history summary
-- approval workflow event
-- ERP publication result event
-
-# ============================================================
-# 3. SHARED PUBLICATION DIRECTION
-# ============================================================
-
-Implementation should:
-- call shared BusinessOS publication capability
-- avoid direct ERP connector logic inside NameCardManager
-- map shared capability result into NameCardManager states
-- preserve approval-required vs published distinction
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD APPROVAL AUDIT CODE IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: approval_audit_code
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for approval state transitions
-and audit action codes.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Implementation should:
-- persist approval state separately from publication state
-- emit stable audit action codes
-- record shared BusinessOS publication routing explicitly
-- keep approval result and publish result separate in UI and logs
-
-# ============================================================
-# 2. VALIDATION DIRECTION
-# ============================================================
-
-Validate:
-- state transition legality
-- non-bypass of approval boundary
-- non-collapse of approved into published
-- stable action code usage
-
-# ============================================================
-# 3. UI DIRECTION
-# ============================================================
-
-UI should show:
-- pending approval
-- approved but not yet published
-- published
-- rejected
-- returned for fix
-- publish failed
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD ERROR CODE IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: error_code
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for canonical error code usage.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Implementation should:
-- emit canonical error codes from API and service boundaries
-- preserve canonical error code through client handling where possible
-- distinguish validation, authorization, conflict, approval,
-  and publication failures
-
-# ============================================================
-# 2. UI DIRECTION
-# ============================================================
-
-UI should:
-- map canonical codes to readable text
-- show actionable guidance where relevant
-- preserve special handling for:
-  - sync conflict
-  - approval required
-  - approval rejected
-  - returned for fix
-  - publication failed
-
-# ============================================================
-# 3. LOGGING DIRECTION
-# ============================================================
-
-Audit and operational logs should store:
-- canonical error code
-- operation context
-- related request or publication id where available
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD UI STATE IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: ui_state
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for canonical UI state rendering.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Implementation should:
-- map backend state into canonical UI state codes
-- avoid duplicating ad hoc state meanings per screen
-- keep approval, publication, conflict, and protection distinct
-
-# ============================================================
-# 2. LIST SCREEN DIRECTION
-# ============================================================
-
-List screen should prefer compact state display:
-- one sync badge
-- one share badge
-- one ERP publication badge
-- one relationship indicator
-
-# ============================================================
-# 3. DETAIL SCREEN DIRECTION
-# ============================================================
-
-Detail screen may show richer state text:
-- exact sync situation
-- exact share status
-- exact approval/publication stage
-- exact relationship importance
-- exact protection limitation
-
-# ============================================================
-# 4. FAILURE DIRECTION
-# ============================================================
-
-Do not collapse:
-- pending approval into published
-- conflict into generic failed
-- protected hidden into missing data
-- rejected into returned for fix
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD PAYLOAD FIELD MAP IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: payload_field_map
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for payload field mapping.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Implementation should:
-- keep application-side field collection separate from ERP output shaping
-- send normalized source data into shared publication capability
-- let shared capability own final ERP payload transformation
-
-# ============================================================
-# 2. VALIDATION DIRECTION
-# ============================================================
-
-Validate before shared publication handoff:
-- requester identity
-- source record existence
-- company context
-- publication policy code
-- required contact fields where applicable
-- protected field eligibility
-
-# ============================================================
-# 3. TRANSFORMATION DIRECTION
-# ============================================================
-
-Transformation should:
-- normalize contact fields
-- summarize long-form business notes where needed
-- avoid raw dump of local-only fields
-- preserve source_record_id traceability
-
-# ============================================================
-# 4. UI / DEBUG DIRECTION
-# ============================================================
-
-Where preview is shown, UI may show:
-- source fields selected for publication
-- publication-safe normalized view
-- omitted or blocked field notice where policy requires
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD API FIELD SCHEMA IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: api_field_schema
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for request/response field schema.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Implementation should:
-- treat canonical field schema as the contract source
-- keep field naming stable
-- distinguish required and optional fields explicitly
-- validate enum and identifier fields early
-
-# ============================================================
-# 2. REQUEST VALIDATION DIRECTION
-# ============================================================
-
-Validate:
-- requester_user_id existence and authority
-- record identifiers
-- array presence where batch operation is used
-- required company_id for ERP publish
-- required publication_policy_code for ERP publish
-- operation_payload presence for sync push
-
-# ============================================================
-# 3. RESPONSE DIRECTION
-# ============================================================
-
-Responses should:
-- always include success
-- include canonical result identifiers where applicable
-- include error_code on failure
-- not blur approval-required with publish success
-- not blur conflict with generic failure
-
-# ============================================================
-# 4. CLIENT DIRECTION
-# ============================================================
-
-Client should:
-- respect required fields before request submission
-- surface missing required fields clearly
-- treat optional fields as absent rather than invented defaults
-- preserve response error_code and state meaning in UI
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD VALIDATION CODE IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: validation_code
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for validation code usage.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Implementation should:
-- validate request prerequisites early
-- return canonical validation code before deeper processing where possible
-- separate validation result from later execution result
-
-# ============================================================
-# 2. UI DIRECTION
-# ============================================================
-
-UI should:
-- surface actionable validation failures clearly
-- distinguish missing prerequisite from processing failure
-- guide user toward correction when validation fails
-
-# ============================================================
-# 3. API DIRECTION
-# ============================================================
-
-API may return:
-- success=false
-- validation_code
-- error_code only when execution path has already failed or progressed
-- field-level hints where useful
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD UI LABEL IMPLEMENTATION GUIDE
-# ============================================================
-
-status: draft
-layer: implementation
-system: applications
-application: NameCardManager
-implementation_scope: ui_label
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for badge labels and short UI messages.
-
-# ============================================================
-# 1. IMPLEMENTATION DIRECTION
-# ============================================================
-
-Implementation should:
-- map UI state codes to canonical badge labels
-- map validation codes to canonical validation messages
-- map error codes to canonical error messages
-- preserve consistent wording across list/detail/settings screens
-
-# ============================================================
-# 2. PRESENTATION DIRECTION
-# ============================================================
-
-Prefer:
-- short badge text on list screen
-- slightly longer detail text on detail screen
-- short corrective wording for validation failures
-- distinct wording for approval, rejection, conflict, and failure
-
-# ============================================================
-# 3. DO NOT COLLAPSE
-# ============================================================
-
-Do not collapse:
-- approval pending into published wording
-- rejected into publish failed wording
-- restricted into hidden wording
-- conflict into generic failure wording
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120_OVERVIEW.md -->
 # ============================================================
-# NAMECARD PUBLICATION PREFLIGHT GUIDE
+# 120 IMPLEMENTATION OVERVIEW
 # ============================================================
 
 status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for publication preflight.
-
-implementation_rules:
-- run preflight before publication request submission
-- separate blocking validation from warnings
-- preview publishable payload before request handoff
-- preserve approval/publication distinction
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120210_NAMECARD_IMPORT_GUIDE.md -->
-# ============================================================
-# NAMECARD IMPORT GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for migration import support.
-
-implementation_rules:
-- CSV import is first-phase priority
-- source-specific templates may be supported
-- preview before commit is required
-- duplicate and grouping review should remain reviewable
-- import should feed follow-up review and suggestion flows
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120210_NAMECARD_IMPORT_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md -->
-# ============================================================
-# NAMECARD RULE BASED ENRICHMENT GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for rule-based enrichment.
-
-implementation_rules:
-- normalize department, title, and company values using reviewable rules
-- preserve raw imported source values
-- keep enrichment non-destructive by default
-- surface next-action suggestions after enrichment
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md -->
-# ============================================================
-# NAMECARD LOCALIZATION GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for localization and multilingual support.
-
-implementation_rules:
-- use key-managed UI strings
-- do not hardcode user-facing labels where localization is expected
-- preserve original user-entered values
-- separate canonical data from translated display values
-- keep multilingual search normalization reviewable
-- locale-aware outputs should accept locale as an explicit input
-
-initial_implementation_scope:
-- ja UI
-- en UI
-- original-data preservation
-- localized interface labels
-- localized validation and message wording
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARDMANAGER IMAGE HANDLING IMPLEMENTATION GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Fixes exact image lifecycle direction for front/back business card handling.
-
-flow:
-- capture
-- local staging
-- review
-- commit metadata
-- upload / reference finalize
-- cleanup staging
-
-rules:
-- front and back are independently replaceable
-- mime whitelist is required
-- size limit is required
-- staging cleanup is required after commit or terminal cancel
-- failed upload must not silently mark image committed
-- record update and image metadata update must be consistent from UI perspective
-- OCR is out of initial scope
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md -->
-# ============================================================
-# NAMECARDMANAGER ROLE PERMISSION MATRIX
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation-facing role permission summary.
-
-matrix:
-- owner:
-  - list yes
-  - detail yes
-  - create yes
-  - update yes
-  - delete yes
-  - share yes
-  - revoke yes
-  - publication_preflight yes
-  - publication_request yes
-  - import yes
-- editor:
-  - list yes
-  - detail yes
-  - create yes
-  - update yes
-  - delete no
-  - share no
-  - revoke no
-  - publication_preflight no
-  - publication_request no
-  - import yes
-- shared_viewer:
-  - list yes limited
-  - detail yes limited
-  - create no
-  - update no
-  - delete no
-  - share no
-  - revoke no
-  - publication_preflight no
-  - publication_request no
-  - import no
-- publication_operator:
-  - list yes limited
-  - detail yes limited
-  - create no
-  - update no
-  - delete no
-  - share no
-  - revoke no
-  - publication_preflight yes
-  - publication_request yes
-  - import no
-- approver:
-  - list yes company scope
-  - detail yes company scope
-  - approve yes
-  - reject yes
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD SHARE VISIBILITY IMPLEMENTATION GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation rules for exact share/visibility/revoke behavior.
-
-implementation_rules:
-- evaluate authorization before composing response fields
-- shared_viewer field suppression must be server-side enforced
-- revoke must remove effective visibility immediately on next evaluation
-- audit share apply/revoke events
-- do not overload ERP publication state with app share state
-- keep share link and publication state separated
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD SEARCH IMPLEMENTATION GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation rules for exact Phase A search behavior.
-
-implementation_rules:
-- normalize searchable strings deterministically
-- apply visibility filter before final result emission
-- support only fixed Phase A modes
-- keep multi-token AND behavior consistent across API/UI
-- keep unsupported fuzzy dimensions out of UI and API claims
-- rebuild normalized company search support when normalization changes
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md -->
-# ============================================================
-# NAMECARDMANAGER PHASE A BUILD ORDER GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation-facing build order for Phase A.
-
-build_order:
-- project shell
-- model / dto shell
-- local persistence shell
-- list/detail UI shell
-- CRUD path
-- sync queue shell
-- auth entry shell
-- authorization checks
-- share core
-- publication core
-- image core
-- import minimum
-- audit/history core
-- test pass and freeze
-
-implementation_notes:
-- local-first path should be working before sync replay path
-- authorization checks should be added before share/publication actions are exposed
-- image handling should be added after basic record save path is stable
-- CSV import minimum should target acquisition value, not full enrichment
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120280_NAMECARDMANAGER_PHASE_A_BUILD_ORDER_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md -->
-# ============================================================
-# NAMECARD PLATFORM IMPLEMENTATION GUIDE
-# ============================================================
-
-status: canonical
-layer: implementation
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Provides implementation guidance for platform support.
-
-implementation_rules:
-- preserve shared business rules across iPhone, Android, tablet, and PC
-- implement adaptive layout by screen size / interaction mode
-- keep mobile capture path simple and fast
-- keep PC migration/review path information-dense
-- avoid platform-only business features unless explicitly approved
-- test key paths on mobile, tablet, and PC separately
-
-priority_guidance:
-- Phase A must not assume phone-only support
-- image capture flow should be optimized first for mobile
-- migration/import and management review should be optimized first for PC
-- tablet should support review-oriented and meeting-prep flows well
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_OVERVIEW.md -->
-# ============================================================
-# 130 DEVELOPMENT OVERVIEW
-# ============================================================
-
-status: draft
 layer: overview
 system: applications
 application: NameCardManager
-directory: 130.development
+directory: 120.implementation
 owner: Boss
 prepared_by: Zero
 
 summary:
-Defines development priorities, work packages, test focus,
-and implementation guidance for engineering work.
+Defines implementation guidance for local persistence,
+sync coordinator, BusinessOS API client, shared ERP publication usage,
+relationship rendering, UI modules, audit/approval implementation,
+approval/audit code implementation, error code implementation,
+UI state implementation, payload field mapping implementation,
+API field schema implementation, validation code implementation,
+UI label implementation, publication preflight implementation,
+import implementation, rule-based enrichment implementation,
+and localization implementation.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/120.implementation/120_OVERVIEW.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_INDEX.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/130.development/130_INDEX.md -->
 # ============================================================
 # 130 DEVELOPMENT INDEX
 # ============================================================
@@ -9669,10 +9522,9 @@ prepared_by: Zero
 files:
 - 130_NAME_CARD_MANAGER_DEVELOPMENT.md
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_INDEX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/130.development/130_INDEX.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md -->
 # ============================================================
 # NAME CARD MANAGER DEVELOPMENT
 # ============================================================
@@ -9741,131 +9593,28 @@ Development should preserve:
 - recoverability from local loss via BusinessOS
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_OVERVIEW.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/130.development/130_OVERVIEW.md -->
 # ============================================================
-# 900 META OVERVIEW
+# 130 DEVELOPMENT OVERVIEW
 # ============================================================
 
-status: canonical
+status: draft
 layer: overview
 system: applications
 application: NameCardManager
-directory: 900.meta
+directory: 130.development
 owner: Boss
 prepared_by: Zero
 
 summary:
-Captures current document status, open design areas,
-maintenance rules, sync conflict meta notes,
-relationship visibility meta notes, API contract meta notes,
-audit/approval meta notes, approval/audit code meta notes,
-error code meta notes, UI state meta notes,
-payload field map meta notes, API field schema meta notes,
-validation code meta notes, UI label meta notes,
-consistency check meta, review checklist meta,
-pre-implementation decision sheet, and common component decision note.
+Defines development priorities, work packages, test focus,
+and implementation guidance for engineering work.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_OVERVIEW.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/130.development/130_OVERVIEW.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_INDEX.md -->
-# ============================================================
-# 900 META INDEX
-# ============================================================
-
-status: canonical
-layer: index
-system: applications
-application: NameCardManager
-directory: 900.meta
-owner: Boss
-prepared_by: Zero
-
-files:
-- 900_NAME_CARD_MANAGER_META.md
-- 900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md
-- 900120_NAMECARD_RELATIONSHIP_META_NOTE.md
-- 900130_NAMECARD_API_META_NOTE.md
-- 900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md
-- 900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md
-- 900160_NAMECARD_ERROR_CODE_META_NOTE.md
-- 900170_NAMECARD_UI_STATE_META_NOTE.md
-- 900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md
-- 900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md
-- 900200_NAMECARD_VALIDATION_CODE_META_NOTE.md
-- 900210_NAMECARD_UI_LABEL_META_NOTE.md
-- 900220_NAMECARD_CONSISTENCY_CHECK_META.md
-- 900230_NAMECARD_REVIEW_CHECKLIST_META.md
-- 900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
-- 900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
-- 900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
-- 900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
-- 900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
-- 900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md
-- 900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md
-- 900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
-- 900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_INDEX.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_NAME_CARD_MANAGER_META.md -->
-# ============================================================
-# NAME CARD MANAGER META
-# ============================================================
-
-status: draft
-layer: meta
-system: applications
-application: NameCardManager
-owner: Boss
-prepared_by: Zero
-
-purpose:
-Captures meta-level maintenance notes for NameCardManager.
-
-# ============================================================
-# 1. CURRENT DOCUMENT STATUS
-# ============================================================
-
-Current state:
-- foundational draft established
-- main layers populated
-- sync concept defined
-- sharing model defined
-- ERP publication constraint defined
-
-# ============================================================
-# 2. OPEN AREAS
-# ============================================================
-
-Areas that may be expanded later:
-- conflict resolution detail
-- exact approval handoff detail
-- exact relationship scoring/ranking
-- exact encryption/storage detail
-- exact API contract detail
-- detailed screen widgets and state transitions
-
-# ============================================================
-# 3. MAINTENANCE NOTES
-# ============================================================
-
-When updating this document set:
-- keep BusinessOS as truth source
-- keep local as cache/offline work area
-- do not introduce silent automatic sharing
-- do not allow ordinary ERP publication revoke
-- preserve explicit boundary between app share and ERP publication
-
-
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_NAME_CARD_MANAGER_META.md -->
-
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md -->
 # ============================================================
 # NAMECARD SYNC CONFLICT META NOTE
 # ============================================================
@@ -9902,10 +9651,9 @@ May be detailed later:
 - exact retry thresholds before conflict promotion
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md -->
 # ============================================================
 # NAMECARD RELATIONSHIP META NOTE
 # ============================================================
@@ -9941,10 +9689,9 @@ May be detailed later:
 - exact same-company inference thresholds
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900130_NAMECARD_API_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900130_NAMECARD_API_META_NOTE.md -->
 # ============================================================
 # NAMECARD API META NOTE
 # ============================================================
@@ -9982,10 +9729,9 @@ May be detailed later:
 - exact idempotency behavior
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900130_NAMECARD_API_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900130_NAMECARD_API_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md -->
 # ============================================================
 # NAMECARD AUDIT APPROVAL META NOTE
 # ============================================================
@@ -10022,10 +9768,9 @@ May be detailed later:
 - exact retention rules for audit/history records
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md -->
 # ============================================================
 # NAMECARD APPROVAL AUDIT CODE META NOTE
 # ============================================================
@@ -10060,10 +9805,9 @@ May be detailed later:
 - exact retention policy by action category
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md -->
 # ============================================================
 # NAMECARD ERROR CODE META NOTE
 # ============================================================
@@ -10100,10 +9844,9 @@ May be detailed later:
 - exact retryability flags by code
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md -->
 # ============================================================
 # NAMECARD UI STATE META NOTE
 # ============================================================
@@ -10139,10 +9882,9 @@ May be detailed later:
 - exact compact/mobile rendering rules
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md -->
 # ============================================================
 # NAMECARD PAYLOAD FIELD MAP META NOTE
 # ============================================================
@@ -10178,10 +9920,9 @@ May be detailed later:
 - exact ERP payload type variants
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md -->
 # ============================================================
 # NAMECARD API FIELD SCHEMA META NOTE
 # ============================================================
@@ -10218,10 +9959,9 @@ May be detailed later:
 - exact batch size limits
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md -->
 # ============================================================
 # NAMECARD VALIDATION CODE META NOTE
 # ============================================================
@@ -10256,10 +9996,9 @@ May be detailed later:
 - exact precedence rules when multiple validation issues exist
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md -->
 # ============================================================
 # NAMECARD UI LABEL META NOTE
 # ============================================================
@@ -10294,10 +10033,9 @@ May be detailed later:
 - accessibility wording variants
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md -->
 # ============================================================
 # NAMECARD CONSISTENCY CHECK META
 # ============================================================
@@ -10401,10 +10139,9 @@ review_targets:
 - approval/publication wording consistency
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md -->
 # ============================================================
 # NAMECARD REVIEW CHECKLIST META
 # ============================================================
@@ -10433,10 +10170,430 @@ review_checklist:
 - Does the integrated document reflect all current files?
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900240_NAMECARD_CONSISTENCY_CHECK_RESULT.md -->
+# ============================================================
+# NAMECARD CONSISTENCY CHECK RESULT
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md -->
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. ROOT FILE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+
+# ============================================================
+# 2. LAYER DIRECTORY / INDEX / OVERVIEW CHECK
+# ============================================================
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_OVERVIEW.md
+[PASS] DIR /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_OVERVIEW.md
+
+# ============================================================
+# 3. MAIN DOCUMENT CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030100_NAMECARD_RECORD_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030150_NAMECARD_SYNC_STATE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030270_NAMECARD_ERROR_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_NAME_CARD_MANAGER_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_NAME_CARD_MANAGER_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090100_LOGIN_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_NAME_CARD_MANAGER_SECURITY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_NAME_CARD_MANAGER_META.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900130_NAMECARD_API_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md
+
+# ============================================================
+# 4. INTEGRATED DOCUMENT COVERAGE CHECK
+# ============================================================
+[PASS] Integrated file exists
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030100_NAMECARD_RECORD_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030150_NAMECARD_SYNC_STATE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030270_NAMECARD_ERROR_CODE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_NAME_CARD_MANAGER_FLOW.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_NAME_CARD_MANAGER_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090100_LOGIN_SCREEN_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_NAME_CARD_MANAGER_SECURITY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_NAME_CARD_MANAGER_META.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900130_NAMECARD_API_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md
+[FAIL] Integrated missing /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md
+
+# ============================================================
+# 5. SHARED ERP PUBLICATION WORDING CHECK
+# ============================================================
+[PASS] Shared BusinessOS wording present: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+[PASS] Shared BusinessOS wording present: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
+[PASS] Shared BusinessOS wording present: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md
+
+# ============================================================
+# 6. DIRECT ERP TRANSMISSION PROHIBITION CHECK
+# ============================================================
+[PASS] Direct ERP transmission prohibition wording found
+
+# ============================================================
+# 7. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900240_NAMECARD_CONSISTENCY_CHECK_RESULT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900241_NAMECARD_CONSISTENCY_RECHECK_RESULT.md -->
+# ============================================================
+# NAMECARD CONSISTENCY RECHECK RESULT
+# ============================================================
+
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_NAME_CARD_MANAGER_CONSTITUTION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_NAME_CARD_MANAGER_ARCHITECTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020110_SHARED_ERP_PUBLICATION_ARCHITECTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030_NAME_CARD_MANAGER_MODEL_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030100_NAMECARD_RECORD_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030110_NAMECARD_DETAIL_PROFILE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030120_NAMECARD_ORDER_HISTORY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030130_NAMECARD_SHARE_TARGET_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030140_NAMECARD_ERP_PUBLISH_SETTING_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030150_NAMECARD_SYNC_STATE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030160_NAMECARD_PENDING_OPERATION_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030170_NAMECARD_RELATIONSHIP_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030180_NAMECARD_RELATIONSHIP_VISIBILITY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030190_NAMECARD_API_REQUEST_RESPONSE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030200_NAMECARD_ERP_PUBLICATION_REQUEST_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030210_NAMECARD_ERP_PUBLICATION_RESULT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030220_NAMECARD_AUDIT_LOG_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030230_NAMECARD_HISTORY_ENTRY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030240_NAMECARD_APPROVAL_EVENT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030250_NAMECARD_APPROVAL_STATE_TRANSITION_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030260_NAMECARD_AUDIT_ACTION_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030270_NAMECARD_ERROR_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030280_NAMECARD_UI_STATE_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030290_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030300_NAMECARD_API_FIELD_SCHEMA_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030310_NAMECARD_VALIDATION_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030320_NAMECARD_UI_LABEL_CODE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040_NAME_CARD_MANAGER_RUNTIME.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040110_NAMECARD_SYNC_CONFLICT_RUNTIME.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/040.runtime/040120_NAMECARD_RELATIONSHIP_VISIBILITY_RUNTIME.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050_NAME_CARD_MANAGER_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050110_ERP_WIDE_SHARE_APPROVAL_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050120_NAMECARD_SYNC_CONFLICT_RESOLUTION_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050130_NAMECARD_APPROVAL_STATE_TRANSITION_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_NAME_CARD_MANAGER_INTEGRATION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060110_NAMECARD_API_INTEGRATION_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060120_NAMECARD_SYNC_API_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060130_NAMECARD_SHARE_API_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060140_NAMECARD_ERP_PUBLISH_API_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060150_NAMECARD_SHARED_ERP_PUBLICATION_INTEGRATION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060160_NAMECARD_ERP_PUBLICATION_PAYLOAD_FIELD_MAP.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060170_NAMECARD_API_FIELD_SCHEMA.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070_NAME_CARD_MANAGER_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070110_NAMECARD_AUDIT_AND_HISTORY_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070120_NAMECARD_AUDIT_ACTION_CODE_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070130_NAMECARD_ERROR_CODE_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/070.operations/070140_NAMECARD_VALIDATION_CODE_OPERATIONS.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080_NAME_CARD_MANAGER_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080110_ERP_WIDE_SHARE_APPROVAL_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080120_NAMECARD_SYNC_CONFLICT_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080130_NAMECARD_DATA_PROTECTION_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080140_NAMECARD_RELATIONSHIP_VISIBILITY_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080150_NAMECARD_AUDIT_AND_APPROVAL_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080160_NAMECARD_APPROVAL_AND_AUDIT_CODE_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080170_NAMECARD_ERROR_CODE_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080180_NAMECARD_VALIDATION_CODE_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090_NAME_CARD_MANAGER_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090100_LOGIN_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090110_NAMECARD_LIST_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090120_NAMECARD_DETAIL_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090130_SETTINGS_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090140_SHARE_TARGET_SETTING_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090150_ERP_SETTING_SCREEN_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090160_NAMECARD_RELATIONSHIP_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090170_NAMECARD_UI_STATE_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090180_NAMECARD_BADGE_LABEL_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090190_NAMECARD_UI_MESSAGE_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100_NAME_CARD_MANAGER_SECURITY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/100.security/100110_NAMECARD_DATA_ENCRYPTION_SECURITY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110_NAME_CARD_MANAGER_INFRASTRUCTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/110.infrastructure/110110_NAMECARD_PROTECTED_STORAGE_INFRASTRUCTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120_NAME_CARD_MANAGER_IMPLEMENTATION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120110_NAMECARD_API_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120120_NAMECARD_AUDIT_APPROVAL_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120130_NAMECARD_APPROVAL_AUDIT_CODE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120140_NAMECARD_ERROR_CODE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120150_NAMECARD_UI_STATE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120160_NAMECARD_PAYLOAD_FIELD_MAP_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120170_NAMECARD_API_FIELD_SCHEMA_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120180_NAMECARD_VALIDATION_CODE_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120190_NAMECARD_UI_LABEL_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/130.development/130_NAME_CARD_MANAGER_DEVELOPMENT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_OVERVIEW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_NAME_CARD_MANAGER_META.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900120_NAMECARD_RELATIONSHIP_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900130_NAMECARD_API_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900160_NAMECARD_ERROR_CODE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900170_NAMECARD_UI_STATE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900200_NAMECARD_VALIDATION_CODE_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900210_NAMECARD_UI_LABEL_META_NOTE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900220_NAMECARD_CONSISTENCY_CHECK_META.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900230_NAMECARD_REVIEW_CHECKLIST_META.md
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900241_NAMECARD_CONSISTENCY_RECHECK_RESULT.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md -->
 # ============================================================
 # NAMECARDMANAGER PRE-IMPLEMENTATION DECISION SHEET
 # ============================================================
@@ -10569,10 +10726,74 @@ Current phase is still design finalization.
 - design is being fixed before implementation
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900260_NAMECARD_POST_EXPANSION_RECHECK.md -->
+# ============================================================
+# NAMECARD POST EXPANSION RECHECK
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md -->
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. NEW FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
+
+# ============================================================
+# 2. INDEX UPDATE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/010_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/020_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900_INDEX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/000_NAME_CARD_MANAGER_INDEX.md
+[PASS] 010 INDEX contains 011_NAMECARDMANAGER_DEFINITION.md
+[PASS] 020 INDEX contains 021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
+[PASS] 060 INDEX contains 060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
+[PASS] 900 INDEX contains 900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
+
+# ============================================================
+# 3. ROOT INDEX CHECK
+# ============================================================
+[PASS] Root index contains 010.constitution/011_NAMECARDMANAGER_DEFINITION.md
+[PASS] Root index contains 020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
+[PASS] Root index contains 060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
+[PASS] Root index contains 900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
+
+# ============================================================
+# 4. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/010.constitution/011_NAMECARDMANAGER_DEFINITION.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021_NAMECARDMANAGER_PHYSICAL_SCHEMA_DESIGN.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060180_NAMECARDMANAGER_API_EXACT_CONTRACT_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
+
+# ============================================================
+# 5. CONTENT KEYWORD CHECK
+# ============================================================
+[PASS] Definition contains PersonaOS core wording
+[PASS] Physical schema design stays non-execution
+[PASS] API exact contract keeps shared ERP boundary
+[PASS] Pre-implementation sheet preserves non-implementation phase
+
+# ============================================================
+# 6. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900260_NAMECARD_POST_EXPANSION_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md -->
 # ============================================================
 # NAMECARDMANAGER COMMON COMPONENT DECISION NOTE
 # ============================================================
@@ -10615,10 +10836,258 @@ This note does not force implementation.
 It fixes design-level adoption and commonization direction only.
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900280_NAMECARD_COMMON_COMPONENT_RECHECK.md -->
+# ============================================================
+# NAMECARD COMMON COMPONENT RECHECK
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md -->
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. NEW FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
+
+# ============================================================
+# 2. INDEX CHECK
+# ============================================================
+[PASS] 060 INDEX contains 060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md
+[PASS] 900 INDEX contains 900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
+[PASS] Root index contains 060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md
+[PASS] Root index contains 900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
+
+# ============================================================
+# 3. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060190_NAMECARDMANAGER_COMMON_COMPONENT_ADOPTION.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
+
+# ============================================================
+# 4. CONTENT CHECK
+# ============================================================
+[PASS] Common component adoption doc has adoption section
+[PASS] Common component decision note has current decision section
+
+# ============================================================
+# 5. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900280_NAMECARD_COMMON_COMPONENT_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900290_NAMECARD_FEATURE_AND_PRICING_RECHECK.md -->
+# ============================================================
+# NAMECARD FEATURE AND PRICING RECHECK
+# ============================================================
+
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. NEW FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080210_NAMECARD_PRICING_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030330_NAMECARD_SEARCH_INDEX_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030340_NAMECARD_COMPANY_GROUP_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030370_NAMECARD_RECENT_ACTIVITY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030420_NAMECARD_MIGRATION_JOB_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030430_NAMECARD_IMPORT_MAPPING_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030450_NAMECARD_IMPORT_RESULT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050150_NAMECARD_FOLLOWUP_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050160_NAMECARD_MIGRATION_WIZARD_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050170_NAMECARD_IMPORT_REVIEW_FLOW.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060200_NAMECARD_SEARCH_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060230_NAMECARD_IMPORT_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090200_NAMECARD_SEARCH_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090220_NAMECARD_RELATED_PERSON_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090250_NAMECARD_MEETING_PREP_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120210_NAMECARD_IMPORT_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md
+
+# ============================================================
+# 2. INDEX CHECK
+# ============================================================
+[PASS] 030 INDEX updated
+[PASS] 050 INDEX updated
+[PASS] 060 INDEX updated
+[PASS] 080 INDEX updated
+[PASS] 090 INDEX updated
+[PASS] 120 INDEX updated
+[PASS] Root index contains pricing policy
+[PASS] Root index contains migration model
+[PASS] Root index contains migration wizard interface
+
+# ============================================================
+# 3. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080210_NAMECARD_PRICING_POLICY.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030330_NAMECARD_SEARCH_INDEX_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030340_NAMECARD_COMPANY_GROUP_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030350_NAMECARD_RELATIONSHIP_PRESENTATION_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030360_NAMECARD_PUBLICATION_PREFLIGHT_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030370_NAMECARD_RECENT_ACTIVITY_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030380_NAMECARD_FOLLOWUP_CANDIDATE_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030390_NAMECARD_MEETING_PREP_SUMMARY_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030400_NAMECARD_DUPLICATE_CANDIDATE_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030410_NAMECARD_NEXT_ACTION_SUGGESTION_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030420_NAMECARD_MIGRATION_JOB_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030430_NAMECARD_IMPORT_MAPPING_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030440_NAMECARD_IMPORT_DIAGNOSTIC_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030450_NAMECARD_IMPORT_RESULT_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030460_NAMECARD_IMPORT_IMAGE_SUPPORT_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030470_NAMECARD_MIGRATION_SUMMARY_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030480_NAMECARD_RULE_BASED_ENRICHMENT_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050140_NAMECARD_COMPANY_GROUP_VIEW_FLOW.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050150_NAMECARD_FOLLOWUP_FLOW.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050160_NAMECARD_MIGRATION_WIZARD_FLOW.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/050.flow/050170_NAMECARD_IMPORT_REVIEW_FLOW.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060200_NAMECARD_SEARCH_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060210_NAMECARD_PUBLICATION_PREFLIGHT_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060220_NAMECARD_SUGGESTION_RULE_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060230_NAMECARD_IMPORT_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060240_NAMECARD_IMPORT_IMAGE_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060250_NAMECARD_RULE_BASED_ENRICHMENT_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080190_NAMECARD_PUBLICATION_PREVIEW_POLICY.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080200_NAMECARD_DUPLICATE_REVIEW_POLICY.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080220_NAMECARD_IMPORT_REVIEW_POLICY.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080230_NAMECARD_IMPORT_ENRICHMENT_POLICY.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090200_NAMECARD_SEARCH_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090210_NAMECARD_COMPANY_VIEW_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090220_NAMECARD_RELATED_PERSON_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090230_NAMECARD_VISIBILITY_PREVIEW_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090240_NAMECARD_RECENT_ACTIVITY_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090250_NAMECARD_MEETING_PREP_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090260_NAMECARD_MIGRATION_WIZARD_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090270_NAMECARD_IMPORT_REVIEW_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090280_NAMECARD_MIGRATION_SUMMARY_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120200_NAMECARD_PUBLICATION_PREFLIGHT_GUIDE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120210_NAMECARD_IMPORT_GUIDE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120220_NAMECARD_RULE_BASED_ENRICHMENT_GUIDE.md
+
+# ============================================================
+# 4. CONTENT CHECK
+# ============================================================
+[PASS] Pricing policy contains 900 JPY
+[PASS] Pricing policy contains AI-only support
+[PASS] Import image support model exists with image import scope
+[PASS] Migration summary model contains company summary
+[PASS] Rule-based enrichment model contains normalization targets
+
+# ============================================================
+# 5. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900290_NAMECARD_FEATURE_AND_PRICING_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900300_NAMECARD_LOCALIZATION_RECHECK.md -->
+# ============================================================
+# NAMECARD LOCALIZATION RECHECK
+# ============================================================
+
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. NEW FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md
+
+# ============================================================
+# 2. INDEX CHECK
+# ============================================================
+[PASS] 030 INDEX updated
+[PASS] 060 INDEX updated
+[PASS] 080 INDEX updated
+[PASS] 090 INDEX updated
+[PASS] 120 INDEX updated
+[PASS] Root index contains locale model
+[PASS] Root index contains localization policy
+[PASS] Root index contains language setting interface
+
+# ============================================================
+# 3. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030490_NAMECARD_LOCALE_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/030.model/030500_NAMECARD_TRANSLATION_DISPLAY_MODEL.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060260_NAMECARD_LOCALE_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080240_NAMECARD_LOCALIZATION_POLICY.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090290_NAMECARD_LANGUAGE_SETTING_INTERFACE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120230_NAMECARD_LOCALIZATION_GUIDE.md
+
+# ============================================================
+# 4. CONTENT CHECK
+# ============================================================
+[PASS] Locale model contains supported locales
+[FAIL] Translation display model missing assistive rule
+[PASS] Localization policy contains key-managed UI rule
+[PASS] Language setting interface contains selector
+[PASS] Localization guide preserves original values
+
+# ============================================================
+# 5. SUMMARY
+# ============================================================
+
+FAIL_COUNT=1
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900300_NAMECARD_LOCALIZATION_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900301_NAMECARD_LOCALIZATION_RECHECK_FIX.md -->
+[PASS] Translation display model contains assistive rule
+[PASS] Integrated contains translation display model
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900301_NAMECARD_LOCALIZATION_RECHECK_FIX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md -->
 # ============================================================
 # NAMECARDMANAGER PHASE SCOPE FREEZE
 # ============================================================
@@ -10659,10 +11128,9 @@ phase_c:
 - advanced migration support
 - advanced public company enrichment
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md -->
 # ============================================================
 # NAMECARDMANAGER EVENT TO AUDIT HISTORY UI MATRIX
 # ============================================================
@@ -10734,10 +11202,76 @@ matrix:
   - ui_message yes
   - notification no
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900330_NAMECARD_IMPLEMENTATION_READINESS_RECHECK.md -->
+# ============================================================
+# NAMECARD IMPLEMENTATION READINESS RECHECK
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md -->
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. NEW FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
+
+# ============================================================
+# 2. INDEX CHECK
+# ============================================================
+[PASS] 020 INDEX updated
+[PASS] 060 INDEX updated
+[PASS] 120 INDEX updated
+[PASS] 900 INDEX updated
+[PASS] Root index contains API exact payload
+[PASS] Root index contains image handling guide
+[PASS] Root index contains phase scope freeze
+
+# ============================================================
+# 3. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060270_NAMECARDMANAGER_API_EXACT_PAYLOAD.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060280_NAMECARDMANAGER_SYNC_REPLAY_AND_CONFLICT_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060290_NAMECARDMANAGER_AUTH_AND_AUTHORIZATION_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060300_NAMECARDMANAGER_SHARED_BUSINESSOS_PUBLICATION_CONNECTION_SPEC.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021100_NAMECARDMANAGER_PHYSICAL_SCHEMA_DDL_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120240_NAMECARDMANAGER_IMAGE_HANDLING_IMPLEMENTATION_GUIDE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120250_NAMECARDMANAGER_ROLE_PERMISSION_MATRIX.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
+
+# ============================================================
+# 4. CONTENT CHECK
+# ============================================================
+[PASS] API exact payload contains common failure response
+[PASS] Sync replay contract contains pending states
+[PASS] Auth/authorization contract contains role matrix
+[PASS] Publication connection spec preserves no-direct-ERP rule
+[PASS] Phase scope freeze contains phase_a
+[PASS] Event matrix contains publication_requested mapping
+
+# ============================================================
+# 5. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900330_NAMECARD_IMPLEMENTATION_READINESS_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md -->
 # ============================================================
 # NAMECARD SHARE VISIBILITY SEARCH SCOPE NOTE
 # ============================================================
@@ -10764,10 +11298,78 @@ phase_a_boundary_notes:
 - hidden fields are suppressed before result emission
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900350_NAMECARD_SHARE_VISIBILITY_SEARCH_RECHECK.md -->
+# ============================================================
+# NAMECARD SHARE VISIBILITY SEARCH RECHECK
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md -->
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. NEW FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
+
+# ============================================================
+# 2. INDEX CHECK
+# ============================================================
+[PASS] 060 INDEX updated
+[PASS] 080 INDEX updated
+[PASS] 090 INDEX updated
+[PASS] 120 INDEX updated
+[PASS] 900 INDEX updated
+[PASS] Root index contains share/visibility exact contract
+[PASS] Root index contains share visibility interface freeze
+[PASS] Root index contains share visibility implementation guide
+
+# ============================================================
+# 3. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060310_NAMECARDMANAGER_SHARE_VISIBILITY_REVOKE_EXACT_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/060.integration/060320_NAMECARDMANAGER_SEARCH_EXACT_CONTRACT.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080250_NAMECARD_SHARE_VISIBILITY_POLICY_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080260_NAMECARD_SEARCH_POLICY_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090300_NAMECARD_SHARE_VISIBILITY_INTERFACE_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090310_NAMECARD_SEARCH_INTERFACE_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120260_NAMECARD_SHARE_VISIBILITY_IMPLEMENTATION_GUIDE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120270_NAMECARD_SEARCH_IMPLEMENTATION_GUIDE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
+
+# ============================================================
+# 4. CONTENT CHECK
+# ============================================================
+[PASS] Share visibility contract contains initial share unit
+[PASS] Share visibility contract contains shared viewer visibility
+[PASS] Search exact contract contains supported match modes
+[PASS] Search policy freeze contains lexical-not-semantic rule
+[PASS] Share visibility interface freeze contains badge rule
+[PASS] Search implementation guide contains normalization rule
+[PASS] Scope note contains closed items
+
+# ============================================================
+# 5. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900350_NAMECARD_SHARE_VISIBILITY_SEARCH_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md -->
 # ============================================================
 # NAMECARDMANAGER PHASE A IMPLEMENTATION START ORDER
 # ============================================================
@@ -10806,10 +11408,9 @@ rules:
 - do not start ERP-direct assumptions because publication flows through shared BusinessOS capability only
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md -->
 # ============================================================
 # NAMECARDMANAGER PHASE A BLOCKERS AND EXIT CRITERIA
 # ============================================================
@@ -10843,10 +11444,9 @@ phase_a_exit_criteria:
 - audit/history basic visibility works
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md -->
 
-
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md -->
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md -->
 # ============================================================
 # NAMECARD PLATFORM SCOPE FREEZE
 # ============================================================
@@ -10888,10 +11488,71 @@ initial_platform_priority:
   - publication / approval review
 
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md -->
 
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900390_NAMECARD_PLATFORM_SUPPORT_RECHECK.md -->
+# ============================================================
+# NAMECARD PLATFORM SUPPORT RECHECK
+# ============================================================
 
-<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md -->
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. NEW FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
+
+# ============================================================
+# 2. INDEX CHECK
+# ============================================================
+[PASS] 020 INDEX updated
+[PASS] 080 INDEX updated
+[PASS] 090 INDEX updated
+[PASS] 120 INDEX updated
+[PASS] 900 INDEX updated
+[PASS] Root index contains platform support architecture
+[PASS] Root index contains platform adaptive interface freeze
+[PASS] Root index contains platform scope freeze
+
+# ============================================================
+# 3. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/020.architecture/021110_NAMECARDMANAGER_PLATFORM_SUPPORT_ARCHITECTURE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/080.policy/080270_NAMECARD_PLATFORM_SUPPORT_POLICY.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/090.interface/090320_NAMECARD_PLATFORM_ADAPTIVE_INTERFACE_FREEZE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/120.implementation/120290_NAMECARD_PLATFORM_IMPLEMENTATION_GUIDE.md
+[PASS] Integrated contains /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
+
+# ============================================================
+# 4. CONTENT CHECK
+# ============================================================
+[PASS] Platform support architecture contains supported platforms
+[PASS] Platform support architecture contains iPhone
+[PASS] Platform support architecture contains Android
+[PASS] Platform support architecture contains tablet
+[PASS] Platform support architecture contains PC
+[PASS] Platform adaptive interface freeze contains mobile-first layout
+[PASS] Platform implementation guide preserves shared business rules
+[PASS] Platform scope freeze contains frozen supported platforms
+
+# ============================================================
+# 5. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900390_NAMECARD_PLATFORM_SUPPORT_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md -->
 # ============================================================
 # NAMECARDMANAGER PHASE A TASK BREAKDOWN
 # ============================================================
@@ -11235,4 +11896,260 @@ summary:
 Phase A should proceed in the order:
 CRUD -> sync/auth -> share/publication -> image/import -> history/test.
 
-<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md -->
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900410_NAMECARD_PHASE_A_TASK_BREAKDOWN_RECHECK.md -->
+# ============================================================
+# NAMECARD PHASE A TASK BREAKDOWN RECHECK
+# ============================================================
+
+status: generated
+layer: meta
+system: applications
+application: NameCardManager
+generated_by: Zero
+
+# ============================================================
+# 1. FILE EXISTENCE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/900.meta/900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md
+
+# ============================================================
+# 2. INDEX CHECK
+# ============================================================
+[PASS] 900 INDEX updated
+[PASS] Root index updated
+
+# ============================================================
+# 3. INTEGRATED COVERAGE CHECK
+# ============================================================
+[PASS] /data/data/com.termux/files/home/01.civilization-system/07.applications/NameCardManager/00_NAME_CARD_MANAGER_INTEGRATED.md
+[PASS] Integrated contains phase A task breakdown
+
+# ============================================================
+# 4. CONTENT CHECK
+# ============================================================
+[PASS] Task breakdown contains phase_a_task_order
+[PASS] Task breakdown contains CSV import minimum
+[PASS] Task breakdown contains Phase A test pass
+
+# ============================================================
+# 5. SUMMARY
+# ============================================================
+
+FAIL_COUNT=0
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900410_NAMECARD_PHASE_A_TASK_BREAKDOWN_RECHECK.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900420_NAMECARDMANAGER_DIFF_SUMMARY_AUDIT_MEMO.md -->
+# ============================================================
+# NAMECARDMANAGER DIFF SUMMARY AUDIT MEMO
+# ============================================================
+
+status: canonical
+layer: meta
+system: applications
+application: NameCardManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+date: 2026-04-15
+scope: diff-summary-audit
+
+purpose:
+Summarizes the 2026-04-15 differential additions applied to the
+existing NameCardManager design and clarifies what was preserved,
+what was added, what was intentionally left unchanged, and why
+the change set is ready to support the next phase.
+
+summary:
+- This change set was executed as additive-only reinforcement,
+  not as a full redesign.
+- The existing BusinessOS-centered truth model remains intact.
+- The application is now more explicitly positioned as an
+  organization asset management and relationship visibility app,
+  not an OCR-only utility.
+- The new differentiators are capture and image staging
+  separation, relationship and company timeline visibility,
+  and explicit exact payload coverage for those additions.
+
+preserved_core:
+- BusinessOS source of truth
+- separation of app sharing and ERP publication
+- separation of approval / publication / audit / history
+- existing physical schema core
+- existing platform support stance
+- existing exact payload foundation
+
+added_artifacts:
+- 010.constitution/011110_NAMECARDMANAGER_COMPETITIVE_POSITIONING_NOTE.md
+- 020.architecture/021120_NAMECARDMANAGER_CAPTURE_AND_IMAGE_STAGING_ARCHITECTURE.md
+- 020.architecture/021130_NAMECARDMANAGER_RELATIONSHIP_TIMELINE_ARCHITECTURE.md
+- 030.model/030510_NAMECARD_COMPANY_TIMELINE_MODEL.md
+- 060.integration/060290_NAMECARDMANAGER_RELATIONSHIP_QUERY_PAYLOAD.md
+- 060.integration/060300_NAMECARDMANAGER_COMPANY_TIMELINE_PAYLOAD.md
+- 090.interface/090330_NAMECARD_CAPTURE_SCREEN_INTERFACE.md
+- 090.interface/090340_NAMECARD_COMPANY_TIMELINE_INTERFACE.md
+- 120.implementation/120300_NAMECARDMANAGER_RELATIONSHIP_TIMELINE_IMPLEMENTATION_GUIDE.md
+- 900.meta/900410_NAMECARDMANAGER_20260415_DIFF_AUDIT_NOTE.md
+
+design_intent_clarified:
+- OCR-only differentiation is insufficient for long-term
+  BusinessOS value.
+- The durable value lies in organizational asset retention,
+  relationship memory, company timeline visibility, and
+  ERP-bridge readiness.
+- Capture is separated from later interpretation and use.
+- Image staging is explicit so that retry / review / manual
+  correction / later enrichment remain cleanly manageable.
+
+not_changed_in_this_round:
+- no full rewrite of existing constitutional text
+- no destructive replacement of existing architecture
+- no Phase A implementation start in this memo
+- no DDL execution in this memo
+- no runtime or API code generation in this memo
+
+audit_result:
+- The change set is internally consistent with the existing
+  NameCardManager direction.
+- The additions strengthen differentiation without breaking
+  prior scope boundaries.
+- The design now has clearer support for company timeline and
+  relationship visibility scenarios.
+- The app remains aligned with BusinessOS and ERP bridge
+  separation rules.
+
+ledger_reflection_status:
+- 000_BUSINESS_APP_LEDGER.md reflection completed on 2026-04-15
+- duplicate-safe append handling confirmed
+
+next_recommended_action:
+- Proceed to Phase A exact API / DDL / implementation skeleton
+  using the preserved core and the newly fixed differentiators
+  as the entry baseline.
+
+completion_statement:
+- This memo closes the differential audit-summary layer for the
+  2026-04-15 NameCardManager reinforcement round.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900420_NAMECARDMANAGER_DIFF_SUMMARY_AUDIT_MEMO.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900_INDEX.md -->
+# ============================================================
+# 900 META INDEX
+# ============================================================
+
+status: canonical
+layer: index
+system: applications
+application: NameCardManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+
+files:
+- 900_NAME_CARD_MANAGER_META.md
+- 900110_NAMECARD_SYNC_CONFLICT_META_NOTE.md
+- 900120_NAMECARD_RELATIONSHIP_META_NOTE.md
+- 900130_NAMECARD_API_META_NOTE.md
+- 900140_NAMECARD_AUDIT_APPROVAL_META_NOTE.md
+- 900150_NAMECARD_APPROVAL_AUDIT_CODE_META_NOTE.md
+- 900160_NAMECARD_ERROR_CODE_META_NOTE.md
+- 900170_NAMECARD_UI_STATE_META_NOTE.md
+- 900180_NAMECARD_PAYLOAD_FIELD_MAP_META_NOTE.md
+- 900190_NAMECARD_API_FIELD_SCHEMA_META_NOTE.md
+- 900200_NAMECARD_VALIDATION_CODE_META_NOTE.md
+- 900210_NAMECARD_UI_LABEL_META_NOTE.md
+- 900220_NAMECARD_CONSISTENCY_CHECK_META.md
+- 900230_NAMECARD_REVIEW_CHECKLIST_META.md
+- 900250_NAMECARDMANAGER_PRE_IMPLEMENTATION_DECISION_SHEET.md
+- 900270_NAMECARDMANAGER_COMMON_COMPONENT_DECISION_NOTE.md
+- 900310_NAMECARDMANAGER_PHASE_SCOPE_FREEZE.md
+- 900320_NAMECARDMANAGER_EVENT_TO_AUDIT_HISTORY_UI_MATRIX.md
+- 900340_NAMECARD_SHARE_VISIBILITY_SEARCH_SCOPE_NOTE.md
+- 900360_NAMECARDMANAGER_PHASE_A_IMPLEMENTATION_START_ORDER.md
+- 900370_NAMECARDMANAGER_PHASE_A_BLOCKERS_AND_EXIT_CRITERIA.md
+- 900380_NAMECARD_PLATFORM_SCOPE_FREEZE.md
+- 900400_NAMECARDMANAGER_PHASE_A_TASK_BREAKDOWN.md
+- 900420_NAMECARDMANAGER_DIFF_SUMMARY_AUDIT_MEMO.md
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900_INDEX.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900_NAME_CARD_MANAGER_META.md -->
+# ============================================================
+# NAME CARD MANAGER META
+# ============================================================
+
+status: draft
+layer: meta
+system: applications
+application: NameCardManager
+owner: Boss
+prepared_by: Zero
+
+purpose:
+Captures meta-level maintenance notes for NameCardManager.
+
+# ============================================================
+# 1. CURRENT DOCUMENT STATUS
+# ============================================================
+
+Current state:
+- foundational draft established
+- main layers populated
+- sync concept defined
+- sharing model defined
+- ERP publication constraint defined
+
+# ============================================================
+# 2. OPEN AREAS
+# ============================================================
+
+Areas that may be expanded later:
+- conflict resolution detail
+- exact approval handoff detail
+- exact relationship scoring/ranking
+- exact encryption/storage detail
+- exact API contract detail
+- detailed screen widgets and state transitions
+
+# ============================================================
+# 3. MAINTENANCE NOTES
+# ============================================================
+
+When updating this document set:
+- keep BusinessOS as truth source
+- keep local as cache/offline work area
+- do not introduce silent automatic sharing
+- do not allow ordinary ERP publication revoke
+- preserve explicit boundary between app share and ERP publication
+
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900_NAME_CARD_MANAGER_META.md -->
+
+<!-- BEGIN FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900_OVERVIEW.md -->
+# ============================================================
+# 900 META OVERVIEW
+# ============================================================
+
+status: canonical
+layer: overview
+system: applications
+application: NameCardManager
+directory: 900.meta
+owner: Boss
+prepared_by: Zero
+
+summary:
+Captures current document status, open design areas,
+maintenance rules, sync conflict meta notes,
+relationship visibility meta notes, API contract meta notes,
+audit/approval meta notes, approval/audit code meta notes,
+error code meta notes, UI state meta notes,
+payload field map meta notes, API field schema meta notes,
+validation code meta notes, UI label meta notes,
+consistency check meta, review checklist meta,
+pre-implementation decision sheet, and common component decision note.
+
+<!-- END FILE: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/NameCardManager/900.meta/900_OVERVIEW.md -->

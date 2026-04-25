@@ -1,0 +1,140 @@
+# ============================================================
+# PERSONA OS NARRATIVE REFERENCE FIX REPORT
+# ============================================================
+
+status: completed
+system: PersonaOS
+generated_at: 20260417_084136
+
+summary:
+- narrative_target_count: 1203
+- changed_file_count: 26
+- remaining_narrative_missing_reference_count: 26004
+- rebuilt_integrated: 000000_PERSONA_OS_INTEGRATED_CANONICAL_REBUILT_20260417_084136.md
+
+scope:
+- only non-index files were modified
+- only safe path normalization replacements were applied
+- archive and prior audit output were excluded
+
+remaining_narrative_missing_reference_head:
+- 000.rules/010.core/0000100_PERSONA_OS_DIRECTORY_STRUCTURE_RULE.md | missing_dir | 999.archive/999.archive/
+- 000.rules/020.binding/0000200_PERSONA_OS_BINDING_ORDER_RULE.md | missing_dir | 999.archive/999.archive/
+- 000.rules/020.binding/0000201_PERSONA_OS_ROOT_FILE_RULE.md | missing_dir | 999.archive/999.archive/
+- 000.rules/020.binding/0000201_PERSONA_OS_ROOT_FILE_RULE.md | missing_file | PERSONA_OS_CANONICAL_FULL.md
+- 010.constitution/0100001_PERSONA_OS_CONSTITUTION_OVERVIEW.md | missing_dir | host/
+- 010.constitution/0100001_PERSONA_OS_CONSTITUTION_OVERVIEW.md | missing_dir | license/access/
+- 010.constitution/0100001_PERSONA_OS_CONSTITUTION_OVERVIEW.md | missing_dir | package/
+- 010.constitution/150.security/0101500001_PERSONA_SECURITY_CONSTITUTION.md | missing_dir | release/
+- 020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md | missing_dir | accepted/
+- 020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md | missing_dir | learning/
+- 020.architecture/020.engine/0200200003_PERSONA_EVENT_PIPELINE_ARCHITECTURE.md | missing_dir | safety/
+- 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md | missing_file | 120.implementation/070.visual/1200700002_PERSONA_VISUAL_RUNTIME_IMPLEMENTATION.md
+- 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md | missing_file | 120.implementation/080.runtime_hosting/1200800002_PERSONA_RUNTIME_SESSION_IMPLEMENTATION.md
+- 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md | missing_file | 120.implementation/120.external_rights/1201200002_PERSONA_EXTERNAL_RELEASE_IMPLEMENTATION.md
+- 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md | missing_file | 120.implementation/1200002_PERSONA_EDGE_FUNCTION_SPEC.md
+- 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md | missing_file | 120.implementation/1200003_PERSONA_STATE_APPLY_SPEC.md
+- 020.architecture/0200001_ARCHITECTURE_OVERVIEW.md | missing_file | 120.implementation/130.builder/1200700002_PERSONA_BUILDER_API_SPEC.md
+- 020.architecture/0200004_PERSONA_RUNTIME_ARCHITECTURE.md | missing_dir | restore/
+- 020.architecture/0200010_PERSONA_RENDERING_ARCHITECTURE.md | missing_dir | height/
+- 020.architecture/0200010_PERSONA_RENDERING_ARCHITECTURE.md | missing_dir | width/
+- 020.architecture/040.memory/0200400001_PERSONA_MEMORY_ARCHITECTURE_OVERVIEW.md | missing_dir | state/history/
+- 020.architecture/060.builder/0200600001_PERSONA_BUILDER_ARCHITECTURE_OVERVIEW.md | missing_dir | create/read/
+- 020.architecture/080.runtime_hosting/0200800001_PERSONA_RUNTIME_HOSTING_ARCHITECTURE_OVERVIEW.md | missing_dir | create/heartbeat/suspend/resume/terminate/
+- 020.architecture/120.external_rights/0201200001_PERSONA_EXTERNAL_RIGHTS_ARCHITECTURE_OVERVIEW.md | missing_dir | allow/
+- 020.architecture/130.access_license_transfer/0201300001_PERSONA_ACCESS_LICENSE_TRANSFER_ARCHITECTURE_OVERVIEW.md | missing_dir | revoke/
+- 020.architecture/130.builder/0200700001_PERSONA_BUILDER_ARCHITECTURE.md | missing_dir | anchor/
+- 020.architecture/130.builder/0200700002_PERSONA_BUILDER_VALIDATION_ARCHITECTURE.md | missing_dir | state/
+- 020.architecture/130.builder/0200700003_PERSONA_BUILDER_APPROVAL_ARCHITECTURE.md | missing_dir | expression/
+- 020.architecture/130.builder/0200700004_PERSONA_BUILDER_PUBLISH_ARCHITECTURE.md | missing_dir | draft/
+- 020.architecture/130.builder/0200700004_PERSONA_BUILDER_PUBLISH_ARCHITECTURE.md | missing_dir | voice/
+- 020.architecture/130.builder/0200700005_PERSONA_BUILDER_VISUAL_BINDING_ARCHITECTURE.md | missing_dir | runtime/
+- 020.architecture/130.builder/0200700005_PERSONA_BUILDER_VISUAL_BINDING_ARCHITECTURE.md | missing_dir | state/
+- 020.architecture/130.builder/0200700005_PERSONA_BUILDER_VISUAL_BINDING_ARCHITECTURE.md | missing_dir | view/
+- 020.architecture/140.consultation_common/0201401_CONSULTATION_SCOPE_COMMON.md | missing_dir | Proposal/
+- 020.architecture/140.visual/0201400001_PERSONA_VISUAL_RUNTIME_OVERVIEW.md | missing_dir | release/
+- 020.architecture/140.visual/0201400003_PERSONA_VISUAL_EXPRESSION_MAPPING_RULE.md | missing_dir | public/
+- 020.architecture/140.visual/0201400004_PERSONA_VISUAL_BACKGROUND_RUNTIME_ARCHITECTURE.md | missing_dir | public/
+- 020.architecture/140.visual/0201400004_PERSONA_VISUAL_BACKGROUND_RUNTIME_ARCHITECTURE.md | missing_dir | release/
+- 020.architecture/140.visual/0201400004_PERSONA_VISUAL_BACKGROUND_RUNTIME_ARCHITECTURE.md | missing_dir | runtime/
+- 020.architecture/140.visual/0201400005_PERSONA_BUILDER_TO_VISUAL_RUNTIME_ARCHITECTURE.md | missing_dir | public/
+- 020.architecture/140.visual/0201400009_PERSONA_VISUAL_RUNTIME_HOSTING_OVERVIEW.md | missing_file | 0401400004_PERSONA_VISUAL_RUNTIME_PUBLIC_API_RUNTIME.md
+- 020.architecture/140.visual/0201400009_PERSONA_VISUAL_RUNTIME_HOSTING_OVERVIEW.md | missing_file | 0601400001_POCKET_SECRETARY_VISUAL_RUNTIME_INTEGRATION.md
+- 020.architecture/140.visual/0201400009_PERSONA_VISUAL_RUNTIME_HOSTING_OVERVIEW.md | missing_file | 0901400001_PERSONA_VISUAL_RUNTIME_PUBLIC_INTERFACE.md
+- 020.architecture/150.secretary_interaction_common/0201504_SUMMARY_BUBBLE_COMMON.md | missing_dir | advisory/
+- 020.architecture/160.governance/0201600001_PERSONA_GOVERNANCE_ARCHITECTURE_OVERVIEW.md | missing_dir | package/distribution/
+- 020.architecture/170.background_common/0201700_BACKGROUND_COMMON_OVERVIEW.md | missing_dir | available/
+- 020.architecture/170.operations_support/0201700001_PERSONA_OPERATIONS_SUPPORT_ARCHITECTURE_OVERVIEW.md | missing_dir | Outbox/
+- 030.model/0300001_PERSONA_OS_MODEL_OVERVIEW.md | missing_file | 060.integration/0300500010_PERSONA_EXTERNAL_GROWTH_REQUEST_INBOX_MODEL.md
+- 030.model/0300001_PERSONA_OS_MODEL_OVERVIEW.md | missing_file | 060.integration/0300500011_PERSONA_EXTERNAL_USAGE_RESULT_CONTRACT_MODEL.md
+- 030.model/0300001_PERSONA_OS_MODEL_OVERVIEW.md | missing_file | 060.integration/0300500012_PERSONA_EXTERNAL_TRUST_RESULT_CONTRACT_MODEL.md
+- 030.model/0300001_PERSONA_OS_MODEL_OVERVIEW.md | missing_file | 060.integration/0300500013_PERSONA_EXTERNAL_SYNC_OUTBOX_MODEL.md
+- 030.model/080.runtime_hosting/0300800001_PERSONA_RUNTIME_HOSTING_MODEL_OVERVIEW.md | missing_dir | snapshot/
+- 030.model/110.distribution/0301100001_PERSONA_DISTRIBUTION_MODEL_OVERVIEW.md | missing_dir | withdrawal/
+- 030.model/130.builder/0301300011_PERSONA_SKILL_MASTER_MODEL.md | missing_dir | release/
+- 030.model/140.integration/0301400001_PERSONA_INTEGRATION_MODEL_OVERVIEW.md | missing_dir | request/
+- 040.runtime/060.builder/0400600001_PERSONA_BUILDER_RUNTIME_OVERVIEW.md | missing_dir | create/
+- 040.runtime/080.runtime_hosting/0400800001_PERSONA_RUNTIME_HOSTING_RUNTIME_OVERVIEW.md | missing_dir | host/
+- 040.runtime/080.runtime_hosting/0400800001_PERSONA_RUNTIME_HOSTING_RUNTIME_OVERVIEW.md | missing_dir | pause/
+- 040.runtime/080.runtime_hosting/0400800002_PERSONA_RUNTIME_SESSION_RUNTIME.md | missing_dir | restore/
+- 040.runtime/100.integration/0400010_EXTERNAL_GROWTH_REQUEST_CONSUME_RUNTIME.md | missing_dir | decision/
+- 040.runtime/140.visual/0401400001_PERSONA_VISUAL_ANIMATION_RUNTIME_RULE.md | missing_dir | visual/
+- 040.runtime/140.visual/0401400003_VISUAL_RUNTIME_BACKGROUND_COMPOSE_RULE.md | missing_dir | slot/
+- 050.flow/080.runtime_hosting/0500800002_PERSONA_RUNTIME_SESSION_FLOW.md | missing_dir | suspend/
+- 050.flow/090.snapshot/0500900001_PERSONA_SNAPSHOT_FLOW_OVERVIEW.md | missing_dir | package/
+- 050.flow/100.integration/0500010_LIFE_TO_PERSONA_GROWTH_CONSUME_FLOW.md | missing_dir | decision/
+- 050.flow/100.integration/0500011_GAME_TO_PERSONA_GROWTH_CONSUME_FLOW.md | missing_dir | decision/
+- 050.flow/100.integration/0500012_STREAMING_TO_PERSONA_GROWTH_CONSUME_FLOW.md | missing_dir | decision/
+- 050.flow/120.external_rights/0501200001_PERSONA_EXTERNAL_RIGHTS_FLOW_OVERVIEW.md | missing_dir | use/
+- 050.flow/130.builder/0501300005_PERSONA_BUILDER_STATE_TRANSITION_TABLE.md | missing_dir | public/
+- 060.integration/130.access_license_transfer/0601300001_PERSONA_ACCESS_LICENSE_TRANSFER_INTEGRATION_OVERVIEW.md | missing_dir | access/license/
+- 070.operations/050.growth/0700500001_PERSONA_GROWTH_OPERATION_OVERVIEW.md | missing_dir | history/
+- 070.operations/070.visual/0700700001_PERSONA_VISUAL_OPERATION_OVERVIEW.md | missing_dir | success/
+- 070.operations/071_PERSONA_REJECT_INVESTIGATION_OPERATIONS.md | missing_dir | governance/
+- 070.operations/075_PERSONA_ACCEPTANCE_HEALTHCHECK_OPERATIONS.md | missing_dir | governance/security/
+- 070.operations/080.runtime_hosting/0700800001_PERSONA_RUNTIME_HOSTING_OPERATION_OVERVIEW.md | missing_dir | attach/
+- 070.operations/080.runtime_hosting/0700800001_PERSONA_RUNTIME_HOSTING_OPERATION_OVERVIEW.md | missing_dir | create/
+- 070.operations/080.runtime_hosting/0700800001_PERSONA_RUNTIME_HOSTING_OPERATION_OVERVIEW.md | missing_dir | host/
+- 070.operations/080.runtime_hosting/0700800002_PERSONA_RUNTIME_SESSION_OPERATION.md | missing_dir | attach/
+- 070.operations/090.snapshot/0700900002_PERSONA_SNAPSHOT_ISSUE_OPERATION.md | missing_dir | success/
+- 070.operations/110.distribution/0701100001_PERSONA_DISTRIBUTION_OPERATION_OVERVIEW.md | missing_dir | withdrawal/
+- 070.operations/1100005_PERSONA_RELEASE_GATE_OPERATIONS.md | missing_dir | rights/
+- 070.operations/220.rights_external/0700400006_PERSONA_DISTRIBUTION_SYNC_OPERATION.md | missing_dir | release/
+- 080.policy/120.external_rights/0801200001_PERSONA_EXTERNAL_RIGHTS_POLICY_OVERVIEW.md | missing_dir | license/access/
+- 080.policy/120.external_rights/0801200001_PERSONA_EXTERNAL_RIGHTS_POLICY_OVERVIEW.md | missing_dir | package/
+- 080.policy/120.external_rights/0801200001_PERSONA_EXTERNAL_RIGHTS_POLICY_OVERVIEW.md | missing_dir | release/
+- 080.policy/130.access_license_transfer/0801300001_PERSONA_ACCESS_LICENSE_TRANSFER_POLICY_OVERVIEW.md | missing_dir | entitlement/
+- 080.policy/130.access_license_transfer/0801300001_PERSONA_ACCESS_LICENSE_TRANSFER_POLICY_OVERVIEW.md | missing_dir | package/
+- 080.policy/140.integration/0801400001_PERSONA_INTEGRATION_POLICY_OVERVIEW.md | missing_dir | replay/
+- 080.policy/150.secretary_interaction_common/0801500_SECRETARY_INTERACTION_COMMON_POLICY.md | missing_dir | informational/
+- 080.policy/150.security/0801500001_PERSONA_SECURITY_POLICY_OVERVIEW.md | missing_dir | release/package/
+- 080.policy/160.governance/0801600001_PERSONA_GOVERNANCE_POLICY_OVERVIEW.md | missing_dir | package/distribution/
+- 090.interface/040.memory/0900400001_PERSONA_MEMORY_INTERFACE_OVERVIEW.md | missing_dir | snapshot/history/
+- 090.interface/060.builder/0900600001_PERSONA_BUILDER_INTERFACE_OVERVIEW.md | missing_dir | create/
+- 090.interface/120.external_rights/0901200001_PERSONA_EXTERNAL_RIGHTS_INTERFACE_OVERVIEW.md | missing_dir | package/
+- 090.interface/120.external_rights/0901200001_PERSONA_EXTERNAL_RIGHTS_INTERFACE_OVERVIEW.md | missing_dir | release/
+- 090.interface/130.access_license_transfer/0901300001_PERSONA_ACCESS_LICENSE_TRANSFER_INTERFACE_OVERVIEW.md | missing_dir | entitlement/
+- 090.interface/130.access_license_transfer/0901300001_PERSONA_ACCESS_LICENSE_TRANSFER_INTERFACE_OVERVIEW.md | missing_dir | package/
+- 100.security/080.runtime_hosting/1000800001_PERSONA_RUNTIME_HOSTING_SECURITY_OVERVIEW.md | missing_dir | attach/
+- 100.security/101_PERSONA_TRUSTED_CALLER_SECURITY.md | missing_dir | Render/
+- 100.security/101_PERSONA_TRUSTED_CALLER_SECURITY.md | missing_dir | host/
+- 100.security/101_PERSONA_TRUSTED_CALLER_SECURITY.md | missing_dir | renderer/
+- 100.security/120.external_rights/1001200001_PERSONA_EXTERNAL_RIGHTS_SECURITY_OVERVIEW.md | missing_dir | release/
+- 100.security/120.external_rights/1001200001_PERSONA_EXTERNAL_RIGHTS_SECURITY_OVERVIEW.md | missing_dir | restriction/
+- 100.security/1500003_PERSONA_RELEASE_GATE_SECURITY.md | missing_dir | allow/
+- 110.infrastructure/140.integration/1101400001_PERSONA_INTEGRATION_INFRASTRUCTURE_OVERVIEW.md | missing_dir | request/
+- 110.infrastructure/1400003_PERSONA_STORAGE_INFRASTRUCTURE.md | missing_dir | snapshot/
+- 110.infrastructure/1400004_PERSONA_QUEUE_INFRASTRUCTURE.md | missing_dir | validation/
+- 110.infrastructure/1400005_PERSONA_RUNTIME_HOSTING_INFRASTRUCTURE.md | missing_dir | suspend/
+- 110.infrastructure/1400005_PERSONA_RUNTIME_HOSTING_INFRASTRUCTURE.md | missing_dir | terminate/
+- 110.infrastructure/1400007_PERSONA_OBSERVABILITY_INFRASTRUCTURE.md | missing_dir | retry/
+- 120.implementation/050.external/1200400001_PERSONA_EXTERNAL_RELEASE_SPEC.md | missing_dir | /persona/v1/
+- 120.implementation/050.external/1200400002_PERSONA_LICENSE_SPEC.md | missing_dir | /persona/v1/rights/
+- 120.implementation/050.external/1200400002_PERSONA_LICENSE_SPEC.md | missing_dir | release/
+- 120.implementation/050.external/1200400002_PERSONA_LICENSE_SPEC.md | missing_dir | revoke/
+- 120.implementation/050.external/1200400003_PERSONA_ACCESS_GRANT_SPEC.md | missing_dir | /persona/v1/rights/
+- 120.implementation/050.external/1200400004_PERSONA_TRANSFER_SPEC.md | missing_dir | /persona/v1/rights/
+- 120.implementation/050.external/1200400004_PERSONA_TRANSFER_SPEC.md | missing_dir | release/
+- 120.implementation/050.external/1200400005_PERSONA_PACKAGE_SPEC.md | missing_dir | /persona/v1/
+- 120.implementation/060.builder/1200600001_PERSONA_BUILDER_IMPLEMENTATION_OVERVIEW.md | missing_dir | draft/
+- 120.implementation/070.visual/1200700001_PERSONA_VISUAL_IMPLEMENTATION_OVERVIEW.md | missing_dir | truth/

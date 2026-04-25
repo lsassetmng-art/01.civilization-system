@@ -1,0 +1,238 @@
+1022862	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1030451	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1030614	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1040930	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1063772	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1073869	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1074744	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1075500	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1097586	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1107683	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1109314	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1118732	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128307	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128362	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128368	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128424	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128541	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128650	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128656	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128712	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1128883	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1129000	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1129171	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1129342	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1129459	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1129630	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1129855	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1129972	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1130089	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1130206	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+124	- world-event notification is not a direct persona-state mutation order	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+125371	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+125377	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+125378	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+125384	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+125757	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+125764	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+126399	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+126406	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+14	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+14	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+14	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+154828	- hidden persona-core mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+155096	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1606403	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1684779	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1694876	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+1696507	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+177465	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+177472	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+18	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+18	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+18	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186373	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186380	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186391	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186398	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186474	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186481	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186602	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186609	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186620	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+186627	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+187522	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+187529	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+187829	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+187836	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+20	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+21	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+2152466	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+2175308	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+2185405	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+2187036	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+234130	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+234137	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+241563	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+241570	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+246109	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+26	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+268951	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+27	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+279048	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+28	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+28	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+28	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+280679	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+281606	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+281613	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+289123	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+289130	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+289281	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+289288	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+330943	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+330950	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+339296	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+339303	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+339303	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+339310	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+339602	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+339609	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+34	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+36	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+36	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+37	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+37	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+38	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+389295	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+389302	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+39	Persona state mutation must occur only through approved persona mutation paths.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+396884	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+396891	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+397047	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+397054	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+400398	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+400404	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+400784	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+401426	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+43	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+43	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+45	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+452492	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+461400	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+461418	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+461501	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+461629	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+461647	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+462549	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+462856	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+48	CivilizationOS must not directly hold or directly update persona mutable state.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+485165	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+485172	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494740	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494747	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494795	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494801	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494802	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494808	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494857	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494864	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494867	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494974	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+494981	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495083	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495089	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495090	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495096	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495145	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495152	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495316	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495323	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495433	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495440	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495604	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495611	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495775	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495782	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495892	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+495899	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496063	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496070	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496288	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496295	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496405	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496412	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496522	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496529	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496639	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+496646	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+502293	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+509157	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+516590	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+556633	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+564150	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+564308	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+573243	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+58	- hidden persona-core mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+58	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+583340	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+584971	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+605970	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+607057	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+614323	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+614330	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+614629	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+617154	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+618785	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+692362	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+699951	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+700114	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+75	- reward truth and internal persona mutation are separate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+758938	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+758944	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+759324	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+759966	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+788232	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+797807	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+797862	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+797868	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+797924	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798041	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798150	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798156	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798212	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798383	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798500	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798671	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798842	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+798959	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+799130	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+799355	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+799472	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+799589	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+799706	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+811032	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+819940	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+819958	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+820041	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+820169	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+820187	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+821089	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+821396	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+867697	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+875130	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+915173	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+922690	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+922848	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+964510	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+972863	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+972870	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+973169	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	

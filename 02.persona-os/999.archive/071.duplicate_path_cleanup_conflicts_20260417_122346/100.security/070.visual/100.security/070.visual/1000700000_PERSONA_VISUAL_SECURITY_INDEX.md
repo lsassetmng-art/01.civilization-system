@@ -1,0 +1,8 @@
+# 1000700000_PERSONA_VISUAL_SECURITY_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 100.security/070.visual/100.security/070.visual
+
+- 1000700001_PERSONA_VISUAL_SECURITY_OVERVIEW.md
+- 1000700002_PERSONA_VISUAL_ASSET_SECURITY.md

@@ -54,9 +54,9 @@ Canonical layers:
 Support / non-canonical layers:
 
 920.meta
-930.legacy
+999.archive/999.archive/930.legacy
 999.archive
-999.dump
+999.archive/999.archive/999.dump
 
 # ============================================================
 # 3. MODEL CLEANUP RESULT

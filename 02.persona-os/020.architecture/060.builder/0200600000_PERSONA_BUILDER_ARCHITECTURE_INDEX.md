@@ -1,8 +1,8 @@
-# PERSONA BUILDER ARCHITECTURE INDEX
+# 0200600000_PERSONA_BUILDER_ARCHITECTURE_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 020.architecture/060.builder
 
 - 0200600001_PERSONA_BUILDER_ARCHITECTURE_OVERVIEW.md
-- builder draft persistence architecture
-- builder validation architecture
-- builder approval architecture
-- builder publish architecture
-- builder visual binding architecture
+- 020.architecture/

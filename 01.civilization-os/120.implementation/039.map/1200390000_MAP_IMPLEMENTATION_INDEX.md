@@ -17,3 +17,16 @@ files:
 - 1200390005_MAP_BOUNDARY_IMPLEMENTATION.md
 - 1200390006_MAP_VALIDATION_IMPLEMENTATION.md
 - 1200390007_MAP_FAILURE_IMPLEMENTATION.md
+
+## Exact Map Support And Domain Truth Split
+## Exact Map Support And Domain Truth Split
+
+Map-supporting structure and layer binding
+are visual or runtime support surfaces.
+
+They are not primary domain ownership truth.
+
+## Exact Layer Binding Rule
+
+Layer visibility and support-layer configuration
+must remain separate from canonical world, government, or inventory truth.

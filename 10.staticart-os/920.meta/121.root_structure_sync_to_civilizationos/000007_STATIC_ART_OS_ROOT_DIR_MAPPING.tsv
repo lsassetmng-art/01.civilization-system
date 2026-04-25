@@ -1,0 +1,30 @@
+action	current_name	target_name	note
+KEEP	010.constitution	010.constitution	already matches canonical CivilizationOS root dir
+KEEP	020.architecture	020.architecture	already matches canonical CivilizationOS root dir
+KEEP	040.runtime	040.runtime	already matches canonical CivilizationOS root dir
+KEEP	050.flow	050.flow	already matches canonical CivilizationOS root dir
+KEEP	060.integration	060.integration	already matches canonical CivilizationOS root dir
+KEEP	070.operations	070.operations	already matches canonical CivilizationOS root dir
+KEEP	080.policy	080.policy	already matches canonical CivilizationOS root dir
+KEEP	100.security	100.security	already matches canonical CivilizationOS root dir
+KEEP	110.infrastructure	110.infrastructure	already matches canonical CivilizationOS root dir
+KEEP	120.implementation	120.implementation	already matches canonical CivilizationOS root dir
+KEEP	130.development	130.development	already matches canonical CivilizationOS root dir
+KEEP	920.meta	920.meta	already matches canonical CivilizationOS root dir
+CREATE	-	030.model	missing in StaticArtOS; create this canonical root dir
+CREATE	-	090.interface	missing in StaticArtOS; create this canonical root dir
+CREATE	-	900.bible	missing in StaticArtOS; create this canonical root dir
+CREATE	-	900.meta	missing in StaticArtOS; create this canonical root dir
+CREATE	-	930.quarantine	missing in StaticArtOS; create this canonical root dir
+CREATE	-	999.archive	missing in StaticArtOS; create this canonical root dir
+REVIEW_REQUIRED	000.index	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	010.overview	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	060.reference-integration	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	120.exactness	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	121.db-implementation-prep	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	122.api-implementation-prep	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	123.ui-implementation-prep	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	124.test-implementation-prep	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	131.implementation-roadmap	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	132.operations	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE
+REVIEW_REQUIRED	999.summary	-	extra root dir in StaticArtOS; choose RENAME_TO or RETIRE_TO_ARCHIVE

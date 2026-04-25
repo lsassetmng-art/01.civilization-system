@@ -1,20 +1,8 @@
-# ============================================================
-# PERSONA GROWTH OPERATION INDEX
-# ============================================================
+# 0700500000_PERSONA_GROWTH_OPERATION_INDEX
 
-status: canonical
-layer: operations
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH OPERATION documents.
+directory: 070.operations/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-0700500000_PERSONA_GROWTH_OPERATION_INDEX.md
-0700500001_PERSONA_GROWTH_OPERATION_OVERVIEW.md
+- 0700500001_PERSONA_GROWTH_OPERATION_OVERVIEW.md
+- 070.operations/

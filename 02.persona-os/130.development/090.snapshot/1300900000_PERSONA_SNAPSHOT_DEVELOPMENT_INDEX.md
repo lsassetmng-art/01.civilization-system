@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA SNAPSHOT DEVELOPMENT INDEX
-# ============================================================
+# 1300900000_PERSONA_SNAPSHOT_DEVELOPMENT_INDEX
 
-status: canonical
-layer: development
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA SNAPSHOT DEVELOPMENT documents.
+directory: 130.development/090.snapshot
 
-# ============================================================
-# FILES
-# ============================================================
-
-1300900000_PERSONA_SNAPSHOT_DEVELOPMENT_INDEX.md
-1300900001_PERSONA_SNAPSHOT_DEVELOPMENT_OVERVIEW.md
-1300900002_PERSONA_SNAPSHOT_DEVELOPMENT_GUIDE.md
+- 1300900001_PERSONA_SNAPSHOT_DEVELOPMENT_OVERVIEW.md
+- 1300900002_PERSONA_SNAPSHOT_DEVELOPMENT_GUIDE.md
+- 130.development/

@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA VISUAL SECURITY INDEX
-# ============================================================
+# 1000700000_PERSONA_VISUAL_SECURITY_INDEX
 
-status: canonical
-layer: security
-domain: visual
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA VISUAL SECURITY documents.
+directory: 100.security/070.visual
 
-# ============================================================
-# FILES
-# ============================================================
-
-1000700000_PERSONA_VISUAL_SECURITY_INDEX.md
-1000700001_PERSONA_VISUAL_SECURITY_OVERVIEW.md
-1000700002_PERSONA_VISUAL_ASSET_SECURITY.md
+- 1000700001_PERSONA_VISUAL_SECURITY_OVERVIEW.md
+- 1000700002_PERSONA_VISUAL_ASSET_SECURITY.md
+- 100.security/

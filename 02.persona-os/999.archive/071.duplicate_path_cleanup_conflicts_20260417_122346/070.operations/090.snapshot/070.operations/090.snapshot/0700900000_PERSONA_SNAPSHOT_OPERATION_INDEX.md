@@ -1,0 +1,8 @@
+# 0700900000_PERSONA_SNAPSHOT_OPERATION_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 070.operations/090.snapshot/070.operations/090.snapshot
+
+- 0700900001_PERSONA_SNAPSHOT_OPERATION_OVERVIEW.md
+- 0700900002_PERSONA_SNAPSHOT_ISSUE_OPERATION.md

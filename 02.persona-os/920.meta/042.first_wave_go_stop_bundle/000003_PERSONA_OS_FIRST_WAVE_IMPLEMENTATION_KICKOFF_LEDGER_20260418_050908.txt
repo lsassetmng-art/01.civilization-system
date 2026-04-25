@@ -1,0 +1,6 @@
+01|edge_apply|implement inbound event intake, validation, dedupe, and terminal feedback|dependency=none|exit=review_approved
+02|state_apply|implement canonical truth mutation, transition checks, and audit linkage|dependency=edge_apply_reviewed|exit=review_approved
+03|builder_api|implement authoring request contracts and publish gate|dependency=state_apply_reviewed|exit=review_approved
+04|builder_storage|implement draft, validation, approval, and publish persistence mapping|dependency=builder_api_reviewed|exit=review_approved
+05|cross_alignment|confirm builder_api and builder_storage status alignment|dependency=03_and_04|exit=alignment_approved
+06|start_gate|approve first-wave implementation start|dependency=01_to_05_complete|exit=go_decision

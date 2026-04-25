@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA SNAPSHOT SECURITY INDEX
-# ============================================================
+# 1000900000_PERSONA_SNAPSHOT_SECURITY_INDEX
 
-status: canonical
-layer: security
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA SNAPSHOT SECURITY documents.
+directory: 100.security/090.snapshot
 
-# ============================================================
-# FILES
-# ============================================================
-
-1000900000_PERSONA_SNAPSHOT_SECURITY_INDEX.md
-1000900001_PERSONA_SNAPSHOT_SECURITY_OVERVIEW.md
-1000900002_PERSONA_SNAPSHOT_INTEGRITY_SECURITY.md
+- 1000900001_PERSONA_SNAPSHOT_SECURITY_OVERVIEW.md
+- 1000900002_PERSONA_SNAPSHOT_INTEGRITY_SECURITY.md
+- 100.security/

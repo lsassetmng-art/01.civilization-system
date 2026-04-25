@@ -1,0 +1,12 @@
+CHECK_1=edge_apply base doc path is identified
+CHECK_2=request contract fields are fully explicit
+CHECK_3=validation order is explicit
+CHECK_4=dedupe behavior is explicit
+CHECK_5=canonical apply handoff payload is explicit
+CHECK_6=terminal result mapping is explicit
+CHECK_7=retry path and dead-letter path are explicit
+CHECK_8=audit evidence fields are explicit
+CHECK_9=boundary enforcement forbids direct external mutable truth access
+CHECK_10=duplicate_noop is explicitly non-mutating
+CHECK_11=error families are closed and fixed
+CHECK_12=starter sequence is implementable without ambiguity

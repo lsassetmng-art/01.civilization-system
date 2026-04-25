@@ -1,5 +1,5 @@
 # ============================================================
-# 050 API INDEX
+# 050 INDEX
 # ============================================================
 
 status: canonical
@@ -11,6 +11,7 @@ owner: Boss
 prepared_by: Zero
 
 files:
+- 050_OVERVIEW.md
 - 050_STREAM_STUDIO_API_SURFACE.md
 - 051_STREAM_STUDIO_PROJECT_AND_UPLOAD_API_EXACT.md
 - 052_STREAM_STUDIO_DRAFT_ASSET_API_EXACT.md

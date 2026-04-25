@@ -17,3 +17,19 @@ files:
 - 1200430005_QUEST_BOUNDARY_IMPLEMENTATION.md
 - 1200430006_QUEST_VALIDATION_IMPLEMENTATION.md
 - 1200430007_QUEST_FAILURE_IMPLEMENTATION.md
+
+## Exact Quest Reward Skill Split
+## Exact Quest Reward Skill Split
+
+Quest completion may trigger reward grant.
+Reward grant may unlock asset or entitlement.
+Skill progression may be influenced by quest or reward,
+but remains a separate truth.
+
+## Exact Quest Completion Boundary
+
+Quest completion is not identical to:
+- reward grant
+- skill acquisition
+- achievement persistence
+- entitlement activation

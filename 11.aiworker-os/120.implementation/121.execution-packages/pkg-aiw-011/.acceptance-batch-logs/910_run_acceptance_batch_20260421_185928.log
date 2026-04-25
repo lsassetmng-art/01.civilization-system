@@ -1,0 +1,30 @@
+============================================================
+PKG-AIW-011 FORMAL ACCEPTANCE BATCH
+============================================================
+    acceptance_execution_batch_id     | batch_status_code | missing_critical_count | failed_critical_count |         completed_at          
+--------------------------------------+-------------------+------------------------+-----------------------+-------------------------------
+ 5f99776a-9552-6694-8ee8-64a3af83debb | PASSED            |                      0 |                     0 | 2026-04-21 09:59:29.759233+00
+(1 row)
+
+------------------------------------------------------------
+LATEST ACCEPTANCE BATCH SUMMARY
+5f99776a-9552-6694-8ee8-64a3af83debb|AEB-d3ca5b2b6b9a99346c73c8dc0b3ddedf|PASSED|14|14|0
+------------------------------------------------------------
+LATEST ACCEPTANCE ITEM RESULTS
+VERIFY-BOUNDARY-001|PASS|true
+VERIFY-BOUNDARY-002|PASS|true
+VERIFY-CF-001|PASS|true
+VERIFY-CF-002|PASS|true
+VERIFY-EVENT-001|PASS|true
+VERIFY-EVENT-002|PASS|true
+VERIFY-GRANT-001|PASS|true
+VERIFY-GRANT-002|PASS|true
+VERIFY-PAYLOAD-001|PASS|true
+VERIFY-PAYLOAD-002|PASS|true
+VERIFY-RECOVERY-001|PASS|false
+VERIFY-RECOVERY-002|PASS|true
+VERIFY-REPLAY-001|PASS|true
+VERIFY-REPLAY-002|PASS|true
+============================================================
+PKG-AIW-011 FORMAL ACCEPTANCE BATCH FINISHED
+============================================================

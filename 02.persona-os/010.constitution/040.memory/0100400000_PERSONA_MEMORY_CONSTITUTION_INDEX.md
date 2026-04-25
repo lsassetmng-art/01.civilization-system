@@ -1,10 +1,8 @@
-# ============================================================
-# PERSONA MEMORY CONSTITUTION INDEX
-# ============================================================
+# 0100400000_PERSONA_MEMORY_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: memory
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/040.memory
+
+- 0100400001_PERSONA_MEMORY_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

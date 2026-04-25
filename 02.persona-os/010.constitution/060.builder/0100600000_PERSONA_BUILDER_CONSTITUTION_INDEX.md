@@ -1,10 +1,8 @@
-# ============================================================
-# PERSONA BUILDER CONSTITUTION INDEX
-# ============================================================
+# 0100600000_PERSONA_BUILDER_CONSTITUTION_INDEX
 
-status: canonical
-layer: constitution
-domain: builder
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
+
+directory: 010.constitution/060.builder
+
+- 0100600001_PERSONA_BUILDER_CONSTITUTION_OVERVIEW.md
+- 010.constitution/

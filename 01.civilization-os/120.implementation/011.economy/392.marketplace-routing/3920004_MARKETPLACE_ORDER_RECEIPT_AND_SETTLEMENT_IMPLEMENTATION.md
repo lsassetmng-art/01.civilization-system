@@ -166,3 +166,36 @@ Order / receipt / settlement implementation must remain:
 - refund-capable
 - dispute-capable
 - shared across Marketplace contexts
+
+## Exact Receipt And Settlement Split
+## Exact Receipt And Settlement Split
+
+Receipt posture answers whether handoff is confirmed.
+Settlement posture answers whether financial release is allowed.
+
+These must not be represented as the same status.
+
+## Exact Payout Gate
+
+Payout release requires explicit gate evaluation against:
+
+- receipt posture
+- dispute posture
+- cooldown posture
+- fraud or identity review posture
+
+## Exact Refund And Dispute Boundary
+
+The following must remain separate:
+
+- refund request
+- refund decision
+- refund processing
+- dispute case
+- dispute evidence
+- dispute resolution
+- payout release
+
+Approved refund must write settlement ledger effect.
+Dispute outcome must link to refund or payout release action,
+not silently collapse into closure.

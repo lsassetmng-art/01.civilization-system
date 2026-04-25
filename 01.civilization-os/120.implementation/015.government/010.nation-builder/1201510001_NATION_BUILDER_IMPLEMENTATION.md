@@ -27,3 +27,37 @@ error_codes:
 - NATION_BUILDER_INVALID
 - NATION_TEMPLATE_INCOMPLETE
 - NATION_VALIDATION_FAILED
+
+## Exact Builder To Active State Separation
+## Exact Builder To Active State Separation
+
+Builder records are staged records.
+Active government truth is runtime-owned canonical state.
+Publish bridges the two.
+Direct staged-to-active overwrite is prohibited.
+
+## Exact Nation Builder Core Surface
+
+Nation builder must explicitly separate:
+
+- nation draft
+- territory setup
+- regime bundle
+- zoning bundle
+- market tier bundle
+- public system bundle
+- validation result
+- approval state
+- publish artifact
+- activation link
+
+## Exact Nation Builder Guard Rule
+
+Nation activation is allowed only when:
+
+- required draft sections exist
+- validation passed
+- required approval completed
+- published artifact exists
+- no conflicting active successor exists
+- territory and zoning consistency passed

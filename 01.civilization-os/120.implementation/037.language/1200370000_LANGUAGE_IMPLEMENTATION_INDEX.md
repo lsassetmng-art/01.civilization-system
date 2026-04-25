@@ -17,3 +17,14 @@ files:
 - 1200370005_LANGUAGE_BOUNDARY_IMPLEMENTATION.md
 - 1200370006_LANGUAGE_VALIDATION_IMPLEMENTATION.md
 - 1200370007_LANGUAGE_FAILURE_IMPLEMENTATION.md
+
+## Exact Language Source Translation Split
+## Exact Language Source Translation Split
+
+Display translation is a support surface.
+It must not overwrite source truth.
+
+## Exact Translation Revision Rule
+
+Translation revision, display binding, and source text linkage
+must remain explicit and traceable.

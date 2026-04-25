@@ -1,0 +1,9 @@
+AICompanyManager Persona-side additive DB apply start
+NOTICE:  schema "business" already exists, skipping
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ERROR:  syntax error at or near "current_role"
+LINE 7:   current_role text,
+          ^

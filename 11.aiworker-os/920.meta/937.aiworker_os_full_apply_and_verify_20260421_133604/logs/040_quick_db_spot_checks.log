@@ -1,0 +1,13 @@
+schema.aiworker=1
+table.worker_master=1
+table.official_intake_request=1
+table.event_outbox=1
+table.payload_document=1
+table.request_lineage_registry=1
+table.acceptance_execution_batch=1
+function.fn_apply_worker_assignment_state=1
+function.fn_validate_payload_by_schema_name=1
+function.fn_decide_replay_request=1
+function.fn_finalize_acceptance_execution_batch=1
+role.role_aiw_controlled_function_executor=1
+role.role_aiw_no_rawtable_aiworker=1

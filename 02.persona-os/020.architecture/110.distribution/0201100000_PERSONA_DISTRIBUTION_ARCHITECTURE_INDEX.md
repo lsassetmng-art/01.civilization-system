@@ -1,20 +1,8 @@
-# ============================================================
-# PERSONA DISTRIBUTION ARCHITECTURE INDEX
-# ============================================================
+# 0201100000_PERSONA_DISTRIBUTION_ARCHITECTURE_INDEX
 
-status: canonical
-layer: architecture
-domain: distribution
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA DISTRIBUTION ARCHITECTURE documents.
+directory: 020.architecture/110.distribution
 
-# ============================================================
-# FILES
-# ============================================================
-
-0201100000_PERSONA_DISTRIBUTION_ARCHITECTURE_INDEX.md
-0201100001_PERSONA_DISTRIBUTION_ARCHITECTURE_OVERVIEW.md
+- 0201100001_PERSONA_DISTRIBUTION_ARCHITECTURE_OVERVIEW.md
+- 020.architecture/

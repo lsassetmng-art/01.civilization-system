@@ -1,0 +1,13 @@
+# COMMON OS IMPLEMENTATION OVERVIEW
+
+status: canonical
+layer: implementation
+
+## Purpose
+This layer defines how CommonOS is implemented as buildable shared UI deliverables.
+
+## Scope
+- implementation rules
+- component implementation
+- queue UI implementation
+- accessibility implementation

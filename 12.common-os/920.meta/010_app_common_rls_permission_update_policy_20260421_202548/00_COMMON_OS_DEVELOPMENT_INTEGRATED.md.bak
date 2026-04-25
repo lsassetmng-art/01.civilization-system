@@ -1,0 +1,300 @@
+# COMMON OS DEVELOPMENT INTEGRATED
+
+status: canonical
+system: CommonOS
+layer: development
+generated_at: 2026-04-21T18:58:59+0900
+source_root: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development
+
+## Integration scope
+This integrated file combines the current development-layer canon of CommonOS, including application common component adoption review, wave promotion, rollout ordering, and origin evidence intake policy.
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000000_COMMON_OS_DEVELOPMENT_INDEX.md -->
+<!-- ============================================================ -->
+
+# COMMON OS DEVELOPMENT INDEX
+
+status: canonical
+layer: development
+
+## Documents
+- 000000_COMMON_OS_DEVELOPMENT_INDEX.md
+- 000001_COMMON_OS_DEVELOPMENT_OVERVIEW.md
+- 000010_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md
+- 000020_COMMON_OS_ADOPTION_REVIEW_WORKFLOW_CANONICAL.md
+- 000030_COMMON_OS_CHANGE_INTRODUCTION_POLICY_CANONICAL.md
+
+## Application common component development subsystem
+
+### Canonical development reading path
+1. 000040_APPLICATION_COMMON_COMPONENT_ADOPTION_REVIEW_POLICY_CANONICAL.md
+2. 000050_APPLICATION_COMMON_COMPONENT_WAVE_PROMOTION_POLICY_CANONICAL.md
+3. 000060_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_ROLLOUT_ORDER_CANONICAL.md
+4. 000070_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_INTAKE_POLICY_CANONICAL.md
+
+### Notes
+These documents define how CommonOS reviews, promotes, sequences, and operationally absorbs application common component families from origin evidence into active development use.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000001_COMMON_OS_DEVELOPMENT_OVERVIEW.md -->
+<!-- ============================================================ -->
+
+# COMMON OS DEVELOPMENT OVERVIEW
+
+status: canonical
+layer: development
+
+## Purpose
+This layer defines how CommonOS changes are proposed, reviewed, adopted, and introduced.
+
+## Scope
+- workflow
+- adoption review
+- change introduction policy
+
+## Application common component development subsystem overview
+
+### Position
+The architecture layer decides what belongs in canon. The implementation layer decides what gets built. The development layer decides how adoption review, wave promotion, rollout order, and origin evidence intake are operationally governed.
+
+### Scope
+- adoption review gate
+- wave promotion conditions
+- rollout sequencing
+- origin evidence intake discipline
+- rejection and hold handling
+
+### Operational meaning
+A component can be canonical without being implemented. Development policy governs when it moves from accepted design to active rollout.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000010_COMMON_OS_DEVELOPMENT_WORKFLOW_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS DEVELOPMENT WORKFLOW CANONICAL
+
+status: canonical
+layer: development
+
+## Workflow
+1. Declare roadmap and current phase
+2. Propose CommonOS change
+3. Validate scope against domain-boundary rules
+4. Review for reuse value and boundary safety
+5. Implement additively
+6. Verify against adoption targets
+7. Publish updated canon
+
+## Rule
+CommonOS changes must improve shared reuse without stealing domain ownership.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000020_COMMON_OS_ADOPTION_REVIEW_WORKFLOW_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS ADOPTION REVIEW WORKFLOW CANONICAL
+
+status: canonical
+layer: development
+
+## Adoption review steps
+1. Identify target surface
+2. Check fit against CommonOS scope
+3. Confirm that domain truth remains domain-owned
+4. Confirm that secrets and authority stay server-side
+5. Approve shared adoption or reject with reason
+
+## Review focus
+- reuse value
+- boundary correctness
+- implementation practicality
+- ERP applicability where relevant
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000030_COMMON_OS_CHANGE_INTRODUCTION_POLICY_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# COMMON OS CHANGE INTRODUCTION POLICY CANONICAL
+
+status: canonical
+layer: development
+
+## Policy
+- prefer additive introduction
+- prefer variant extension before branching
+- preserve compatibility where practical
+- document migration when naming changes
+- keep CommonOS names canonical for new assets
+
+## Rule
+Legacy references may remain as historical sources, but new canonical assets must use CommonOS terminology.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000040_APPLICATION_COMMON_COMPONENT_ADOPTION_REVIEW_POLICY_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT ADOPTION REVIEW POLICY CANONICAL
+
+status: canonical
+system: CommonOS
+layer: development
+
+## Purpose
+This document defines the formal adoption review policy for application common component candidates in CommonOS.
+
+## Review checkpoints
+A candidate should be reviewed against all of the following:
+1. CommonOS boundary fit
+2. cross-app or cross-OS reuse value
+3. naming normalization quality
+4. layer clarity
+5. variant-compatibility
+6. absence of domain canon leakage
+7. client-distribution safety where relevant
+8. evidence strength from origin systems
+
+## Review outputs
+- accepted into current wave
+- kept on hold
+- sent back for rename or family merge
+- rejected as domain-specific
+- deferred pending second consumer
+
+## Mandatory review note
+The reviewer must explicitly state whether the candidate belongs to:
+- UI primitive or shell
+- UI composite or feature common
+- presentation utility
+- non-UI shared base
+
+## Prohibition
+Do not accept a candidate merely because it exists in one origin system. Origin existence alone is not enough.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000050_APPLICATION_COMMON_COMPONENT_WAVE_PROMOTION_POLICY_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT WAVE PROMOTION POLICY CANONICAL
+
+status: canonical
+system: CommonOS
+layer: development
+
+## Purpose
+This document defines when a component family may move between hold, current wave, implementation-ready, and later rollout phases.
+
+## Promotion path
+- hold
+- current_wave_accepted
+- implementation_ready
+- implemented
+- adopted
+
+## Minimum conditions to leave hold
+- stronger evidence or clearer reuse value
+- stable family naming
+- clear layer split
+- acceptable CommonOS boundary fit
+- no domain canon leakage
+
+## Minimum conditions to become implementation_ready
+- public shape is understandable
+- variant minimum is known
+- rollout target is identified
+- package boundary is understood
+- implementation owner can proceed without redefining canon
+
+## Demotion triggers
+A component may be moved back to hold if:
+- hidden domain logic is discovered
+- family overlap becomes unresolved
+- client-distribution risk is found
+- boundary confidence weakens
+
+## Current fixed interpretation
+current_wave_accepted means canonically accepted at design level, not automatically implemented.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000060_APPLICATION_COMMON_COMPONENT_IMPLEMENTATION_ROLLOUT_ORDER_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT IMPLEMENTATION ROLLOUT ORDER CANONICAL
+
+status: canonical
+system: CommonOS
+layer: development
+
+## Purpose
+This document defines the recommended rollout order for CommonOS application common component implementation.
+
+## Rollout order
+1. design tokens and theme base
+2. button and input family
+3. card, list, table, and state panel family
+4. dialog, toast, confirm, and overlay family
+5. app shell and navigation primitives
+6. offline queue status and sync retry presentation
+7. locale-safe labels and multicurrency presentation helpers
+8. attachment and upload-pending presentation
+9. feature-level current-wave components
+10. hold-family candidates after promotion
+
+## ERP-specific note
+ERP dense variants should be introduced through the shared rollout, not through a separate ERP-only implementation branch.
+
+## Rollout rule
+Earlier rollout layers must stabilize before deeper feature-level families are broadly adopted.
+
+
+
+<!-- ============================================================ -->
+<!-- SOURCE: /data/data/com.termux/files/home/01.civilization-system/12.common-os/130.development/000070_APPLICATION_COMMON_COMPONENT_ORIGIN_EVIDENCE_INTAKE_POLICY_CANONICAL.md -->
+<!-- ============================================================ -->
+
+# APPLICATION COMMON COMPONENT ORIGIN EVIDENCE INTAKE POLICY CANONICAL
+
+status: canonical
+system: CommonOS
+layer: development
+
+## Purpose
+This document defines how CommonOS should intake and evaluate origin-side evidence for application common component candidates.
+
+## Accepted origin-side inputs
+- extraction ledgers
+- origin-side audits
+- source evidence notes
+- promotion review notes
+- naming conflict reports
+- current-wave and hold recommendations
+
+## Intake steps
+1. register origin evidence
+2. map candidate to a provisional CommonOS family name
+3. check for same-family duplication
+4. confirm layer classification
+5. evaluate second-consumer possibility
+6. route to adoption review
+
+## Fixed origin interpretation
+StaticArtOS is currently an important origin evidence source, but it is not the active canonical home of application common component design.
+
+## Intake rule
+Origin evidence is authoritative for provenance, not for CommonOS canonical ownership.
+

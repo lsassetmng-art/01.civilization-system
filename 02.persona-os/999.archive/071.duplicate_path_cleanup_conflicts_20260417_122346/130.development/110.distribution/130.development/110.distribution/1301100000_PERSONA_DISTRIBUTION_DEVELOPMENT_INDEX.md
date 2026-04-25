@@ -1,0 +1,8 @@
+# 1301100000_PERSONA_DISTRIBUTION_DEVELOPMENT_INDEX
+
+status: rebuilt-from-live-directory
+
+directory: 130.development/110.distribution/130.development/110.distribution
+
+- 1301100001_PERSONA_DISTRIBUTION_DEVELOPMENT_OVERVIEW.md
+- 1301100002_PERSONA_RELEASE_DEVELOPMENT_GUIDE.md

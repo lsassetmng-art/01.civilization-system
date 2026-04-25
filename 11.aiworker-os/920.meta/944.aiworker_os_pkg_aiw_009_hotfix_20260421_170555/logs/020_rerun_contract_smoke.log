@@ -1,0 +1,22 @@
+============================================================
+PKG-AIW-009 BUSINESS EVENT CONTRACT SMOKE
+============================================================
+               flow_code               | result_code |                      note_text                       
+---------------------------------------+-------------+------------------------------------------------------
+ BIZ_INBOUND_REQUEST_EVENT_SMOKE       | PASS        | OK_VALID
+ AIW_OUTBOUND_RESULT_EVENT_SMOKE       | PASS        | OK_VALID
+ BUSINESS_EVENT_CONTRACT_SMOKE_OVERALL | PASS        | Both inbound and outbound contract validation passed
+(3 rows)
+
+------------------------------------------------------------
+LATEST CONTRACT VALIDATION VIEW
+AIW_OUTBOUND_RESULT_EVENT_V1|OK_VALID|SMOKE_AIWORKER_RESULT_EVENT_V1
+BIZ_INBOUND_REQUEST_EVENT_V1|OK_VALID|SMOKE_BUSINESS_REQUEST_EVENT_V1
+------------------------------------------------------------
+LATEST BUSINESS CROSS BOUNDARY SMOKE VIEW
+AIW_OUTBOUND_RESULT_EVENT_SMOKE|PASS|OK_VALID
+BIZ_INBOUND_REQUEST_EVENT_SMOKE|PASS|OK_VALID
+BUSINESS_EVENT_CONTRACT_SMOKE_OVERALL|PASS|Both inbound and outbound contract validation passed
+============================================================
+PKG-AIW-009 BUSINESS EVENT CONTRACT SMOKE FINISHED
+============================================================

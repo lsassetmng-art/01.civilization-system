@@ -1,21 +1,9 @@
-# ============================================================
-# PERSONA SNAPSHOT MODEL INDEX
-# ============================================================
+# 0300900000_PERSONA_SNAPSHOT_MODEL_INDEX
 
-status: canonical
-layer: model
-domain: snapshot
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA SNAPSHOT MODEL documents.
+directory: 030.model/090.snapshot
 
-# ============================================================
-# FILES
-# ============================================================
-
-0300900000_PERSONA_SNAPSHOT_MODEL_INDEX.md
-0300900001_PERSONA_SNAPSHOT_MODEL_OVERVIEW.md
-0300900002_PERSONA_SNAPSHOT_MODEL.md
+- 0300900001_PERSONA_SNAPSHOT_MODEL_OVERVIEW.md
+- 0300900002_PERSONA_SNAPSHOT_MODEL.md
+- 030.model/

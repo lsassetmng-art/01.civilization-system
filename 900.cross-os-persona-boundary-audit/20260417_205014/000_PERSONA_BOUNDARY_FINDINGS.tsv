@@ -1,0 +1,583 @@
+os	category	file	line	recommendation	excerpt
+01.civilization-os	RIGHTS_CANONICAL_RISK	14	Defines the canonical model for persona license and boundary control.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+01.civilization-os	RIGHTS_CANONICAL_RISK	155899	Defines the canonical model for persona license and boundary control.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125371	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125377	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125757	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	126399	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	177465	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186373	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186391	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186474	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186602	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186620	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187522	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187829	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	234130	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	241563	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	281606	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289123	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289281	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	330943	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339296	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339303	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339602	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	389295	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	396884	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	397047	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	485165	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494740	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494795	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494801	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494857	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494974	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495083	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495089	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495145	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495316	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495433	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495604	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495775	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495892	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496063	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496288	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496405	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496522	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496639	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125378	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125384	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125764	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	126406	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	177472	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186380	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186398	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186481	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186609	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186627	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187529	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187836	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	234137	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	241570	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	281613	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289130	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289288	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	330950	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339303	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339310	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339609	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	389302	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	396891	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	397054	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	485172	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494747	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494802	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494808	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494864	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494981	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495090	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495096	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495152	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495323	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495440	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495611	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495782	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495899	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496070	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496295	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496412	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496529	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496646	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	758938	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	758944	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	759324	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	759966	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	811032	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	819940	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	819958	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	820041	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	820169	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	820187	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	821089	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	821396	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	867697	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	875130	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	915173	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	922690	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	922848	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	964510	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	972863	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	972870	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	973169	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1022862	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1030451	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1030614	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1118732	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128307	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128362	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128368	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128424	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128541	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128650	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128656	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128712	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128883	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129000	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129171	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129342	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129459	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129630	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129855	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129972	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1130089	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1130206	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	58	- hidden persona-core mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	58	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	28	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	34	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	28	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	14	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	38	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	18	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	36	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	18	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	36	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	14	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	14	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	26	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	28	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	21	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	20	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	18	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	27	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	39	Persona state mutation must occur only through approved persona mutation paths.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	37	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	43	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	37	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	43	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	45	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	48	CivilizationOS must not directly hold or directly update persona mutable state.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	75	- reward truth and internal persona mutation are separate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	124	- world-event notification is not a direct persona-state mutation order	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	154828	- hidden persona-core mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	155096	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	400398	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	400404	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	400784	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	401426	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	452492	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	461400	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	461418	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	461501	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	461629	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	461647	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	462549	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	462856	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	509157	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	516590	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	556633	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	564150	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	564308	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	605970	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	614323	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	614330	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	614629	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	692362	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	699951	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	700114	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	788232	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	797807	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	797862	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	797868	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	797924	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798041	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798150	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798156	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798212	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798383	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798500	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798671	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798842	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	798959	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	799130	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	799355	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	799472	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	799589	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	799706	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125378	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125384	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125764	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	126406	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	177472	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186380	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186398	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186481	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186609	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186627	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187529	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187836	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	234137	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	241570	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	281613	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289130	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289288	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	330950	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339303	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339310	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339609	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	389302	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	396891	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	397054	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	485172	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494747	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494802	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494808	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494864	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494981	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495090	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495096	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495152	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495323	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495440	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495611	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495782	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495899	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496070	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496295	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496412	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496529	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496646	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125378	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125384	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125764	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	126406	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	177472	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186380	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186398	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186481	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186609	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186627	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187529	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187836	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	234137	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	241570	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	281613	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289130	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289288	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	330950	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339303	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339310	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339609	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	389302	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	396891	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	397054	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	485172	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494747	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494802	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494808	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494864	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494981	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495090	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495096	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495152	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495323	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495440	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495611	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495782	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495899	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496070	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496295	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496412	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496529	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496646	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125378	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125384	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	125764	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	126406	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	177472	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186380	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186398	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186481	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186609	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	186627	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187529	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	187836	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	234137	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	241570	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	281613	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289130	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	289288	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	330950	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339303	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339310	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	339609	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	389302	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	396891	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	397054	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	485172	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494747	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494802	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494808	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494864	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494981	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495090	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495096	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495152	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495323	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495440	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495611	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495782	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	495899	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496070	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496295	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496412	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496529	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	496646	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	758938	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	758944	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	759324	- hidden personality mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	759966	Defines runtime execution for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	811032	- hidden direct mutation attempt -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	819940	- persona creation/update request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	819958	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	820041	4. create or update persona_placement	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	820169	- persona state update	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	820187	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	821089	3. create or update persona_authority_grant	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	821396	Defines the canonical flow for persona life expectancy updates.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	867697	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	875130	- hidden persona-core mutation must not cross boundary	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	915173	- hidden direct mutation suspicion -> fail closed and escalate	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	922690	- hidden persona-core mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	922848	- hidden persona-state mutation -> fail closed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	964510	- hidden direct mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	972863	- hidden persona-state mutation is prohibited	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	972870	- hidden persona-state mutation must reject	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	973169	- personality mutation requires explicit evolution event	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1022862	- hidden direct mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1030451	- hidden persona-core mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1030614	- hidden persona-state mutation must be detectable	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1118732	- reject hidden direct mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128307	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128362	- reject hidden persona-core mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128368	- reject hidden persona-core mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128424	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128541	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128650	- reject hidden persona-state mutation path	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128656	- reject hidden persona-state mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128712	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1128883	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129000	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129171	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129342	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129459	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129630	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129855	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1129972	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1130089	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1130206	- reject invalid persona mutation	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	502293	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	607057	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	617154	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	618785	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1074744	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1097586	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1107683	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1109314	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1606403	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1684779	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1694876	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1696507	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	2152466	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	2175308	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	2185405	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	2187036	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	246109	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	268951	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	279048	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	280679	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	494867	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	573243	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	583340	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	584971	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1040930	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1063772	- direct mutation across domains	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1073869	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	DIRECT_MUTATION_ABOLISH	1075500	No direct mutation from CivilizationOS	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	186381	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	494786	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	186388	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	494793	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	819948	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1128353	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	19	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	32	persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	33	- persona_identity_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	18	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	26	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	26	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	28	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	154789	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	154802	persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	154803	- persona_identity_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	169294	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	169302	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	461408	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	797853	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	186388	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	494793	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	186388	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	494793	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	186388	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	494793	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	819948	2. bind persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1128353	- persona_identity	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	149272	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	149280	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	180855	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	180863	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	431891	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	431899	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	799521	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	799529	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1005550	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1005558	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1292157	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1292165	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1536363	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1536371	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1877243	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	1877251	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	2083272	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	2083280	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	178516	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	178524	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	176915	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	176923	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	180621	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	180629	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	424827	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	424835	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	765707	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	765715	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	971736	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+01.civilization-os	SNAPSHOT_CONSUMER_SAFE_HINT	971744	- cap_table_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	RIGHTS_CANONICAL_RISK	8043	Business persona access entitlement truth belongs to BusinessOS persona-integration domain.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+03.business-os	RIGHTS_CANONICAL_RISK	38713	Business persona access entitlement truth belongs to BusinessOS persona-integration domain.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+03.business-os	RIGHTS_CANONICAL_RISK	51518	Business persona access entitlement truth belongs to BusinessOS persona-integration domain.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+03.business-os	RIGHTS_CANONICAL_RISK	52	Business persona access entitlement truth belongs to BusinessOS persona-integration domain.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+03.business-os	RIGHTS_CANONICAL_RISK	2405	Business persona access entitlement truth belongs to BusinessOS persona-integration domain.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+03.business-os	RIGHTS_CANONICAL_RISK	7693	Business persona access entitlement truth belongs to BusinessOS persona-integration domain.	Remove local rights/signature/revocation canonical truth. Verify through BusinessOS/CivilizationOS/PersonaOS formal event or contract path only.	
+03.business-os	DIRECT_MUTATION_ABOLISH	11193	- business persona binding lifecycle updated explicitly	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	12736	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	14077	POST /persona/growth-effects/apply-request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	14228	POST /persona/growth-effects/apply-response	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	14873	scope	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	 business-persona-apply-response
+03.business-os	DIRECT_MUTATION_ABOLISH	15775	Defines investigation flow for rejected persona apply events.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	29755	- direct mutation from external consumer cache	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	31773	- confirm BusinessOS owns persona-related commercial truth mutation authority	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	34865	- PersonaOS may keep persona-apply eligibility.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	40129	- business persona binding lifecycle updated explicitly	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	40865	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	54773	- business persona binding lifecycle updated explicitly	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	56232	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	57653	POST /persona/growth-effects/apply-request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	57804	POST /persona/growth-effects/apply-response	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	58392	scope	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	 business-persona-apply-response
+03.business-os	DIRECT_MUTATION_ABOLISH	59198	Defines investigation flow for rejected persona apply events.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	42	- business persona binding lifecycle updated explicitly	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	17	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	35	POST /persona/growth-effects/apply-request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	186	POST /persona/growth-effects/apply-response	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	5	scope	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	 business-persona-apply-response
+03.business-os	DIRECT_MUTATION_ABOLISH	7	Defines investigation flow for rejected persona apply events.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	529	- direct mutation from external consumer cache	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	19	- confirm BusinessOS owns persona-related commercial truth mutation authority	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	31	- PersonaOS may keep persona-apply eligibility.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	3821	- business persona binding lifecycle updated explicitly	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	4557	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	10948	- business persona binding lifecycle updated explicitly	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	12407	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	13828	POST /persona/growth-effects/apply-request	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	13979	POST /persona/growth-effects/apply-response	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	DIRECT_MUTATION_ABOLISH	14567	scope	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	 business-persona-apply-response
+03.business-os	DIRECT_MUTATION_ABOLISH	15373	Defines investigation flow for rejected persona apply events.	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	25653	- public_profile_source_link	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	 company_public_profile_id nullable, company_officer_profile_id nullable, source_id, company_snapshot_id nullable, officer_snapshot_id nullable, linked_fields, winner_flag
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	68783	  (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	68787	  (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	70000	- (company_public_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	70048	- (company_officer_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	70586	    UNIQUE (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	70611	    UNIQUE (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	22	- public_profile_source_link	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	 company_public_profile_id nullable, company_officer_profile_id nullable, source_id, company_snapshot_id nullable, officer_snapshot_id nullable, linked_fields, winner_flag
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	24958	  (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	24962	  (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	26175	- (company_public_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	26223	- (company_officer_profile_id, source_snapshot_id, field_name) unique	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	26761	    UNIQUE (company_public_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+03.business-os	SNAPSHOT_CONSUMER_SAFE_HINT	26786	    UNIQUE (company_officer_profile_id, source_snapshot_id, field_name)	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+04.life-os	DIRECT_MUTATION_ABOLISH	4514	- persona trust sync may update current projections but must preserve prior trust rows	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	4560	- direct mutation of generated payload_json in outbox or inbox history	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	17	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	22	- persona raw-state overwrite	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	1317	- persona trust sync may update current projections but must preserve prior trust rows	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	1363	- direct mutation of generated payload_json in outbox or inbox history	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	1317	- persona trust sync may update current projections but must preserve prior trust rows	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	1363	- direct mutation of generated payload_json in outbox or inbox history	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	3866	3 persona-integration runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+04.life-os	DIRECT_MUTATION_ABOLISH	4161	- persona raw-state overwrite	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	14	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	847	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	550	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	10785	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	847	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	847	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	886	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	10785	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DUPLICATE_CANONICAL_CANDIDATE	10785	game_persona_state stores GameOS local truth for Persona or Persona-connected	Replace with snapshot-consumer shape only: persona_id / snapshot_id / applied_snapshot_id / local_view_config / app_local_state. Do not keep persona core canon locally.	
+05.game-os	DIRECT_MUTATION_ABOLISH	830	- persona_overwrite_allowed boolean not null default false	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	17	3 persona-economy runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	532	  "personaOverwriteAllowed"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	 false
+05.game-os	DIRECT_MUTATION_ABOLISH	315	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	387	  personaOverwriteAllowed	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	 false
+05.game-os	DIRECT_MUTATION_ABOLISH	15957	3 persona-economy runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	24383	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	7777	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	18295	3 persona-economy runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	27060	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	7777	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	10364	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	18295	3 persona-economy runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	27060	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	18295	3 persona-economy runtime updates state	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	DIRECT_MUTATION_ABOLISH	27060	      "no_persona_truth_overwrite"	Abolish direct mutation. Convert to request event -> PersonaOS apply -> result event.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	18	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	26	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	10083	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	10091	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	11753	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	11761	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	11753	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	11761	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	11753	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	
+05.game-os	SNAPSHOT_CONSUMER_SAFE_HINT	11761	- game_state_snapshot_id	Likely aligned if this remains dependent-only and canonical source stays PersonaOS.	

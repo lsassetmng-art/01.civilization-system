@@ -1,20 +1,8 @@
-# ============================================================
-# PERSONA GROWTH SECURITY INDEX
-# ============================================================
+# 1000500000_PERSONA_GROWTH_SECURITY_INDEX
 
-status: canonical
-layer: security
-domain: growth
-system: persona-os
-owner: Boss
-prepared_by: Zero
+status: rebuilt-from-live-directory
 
-purpose:
-Defines the reading entry for PERSONA GROWTH SECURITY documents.
+directory: 100.security/050.growth
 
-# ============================================================
-# FILES
-# ============================================================
-
-1000500000_PERSONA_GROWTH_SECURITY_INDEX.md
-1000500001_PERSONA_GROWTH_SECURITY_OVERVIEW.md
+- 1000500001_PERSONA_GROWTH_SECURITY_OVERVIEW.md
+- 100.security/

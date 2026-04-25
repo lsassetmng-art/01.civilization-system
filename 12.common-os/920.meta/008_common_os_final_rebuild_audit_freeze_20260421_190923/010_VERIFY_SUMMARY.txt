@@ -1,0 +1,10 @@
+FULL_INTEGRATED_PRESENT=YES
+FULL_INTEGRATED_LINE_COUNT=53917
+FULL_INTEGRATED_SOURCE_COUNT=76
+PASS_COUNT=64
+FAIL_COUNT=0
+WARN_COUNT=0
+TOP_TREE_FILE_COUNT=211
+AUDIT_REPORT=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/008_common_os_final_rebuild_audit_freeze_20260421_190923/100_COMMON_OS_FINAL_AUDIT_REPORT.md
+FREEZE_SUMMARY=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/008_common_os_final_rebuild_audit_freeze_20260421_190923/110_COMMON_OS_FREEZE_SUMMARY.md
+HANDOFF=/data/data/com.termux/files/home/01.civilization-system/12.common-os/920.meta/008_common_os_final_rebuild_audit_freeze_20260421_190923/120_COMMON_OS_NEXT_CHAT_HANDOFF.md

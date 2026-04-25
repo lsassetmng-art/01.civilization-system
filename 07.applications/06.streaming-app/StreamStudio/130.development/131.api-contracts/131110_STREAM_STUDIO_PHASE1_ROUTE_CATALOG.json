@@ -1,0 +1,291 @@
+[
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/projects",
+    "name": "create_project",
+    "phase": "phase1",
+    "request": [
+      "workspace_id",
+      "project_title",
+      "project_summary?",
+      "owner_creator_ref",
+      "default_language",
+      "initial_visibility_hint?"
+    ],
+    "response": [
+      "project.creator_project_id",
+      "project.project_code",
+      "project.project_title",
+      "project.project_status",
+      "project.owner_creator_ref",
+      "project.default_language",
+      "project.created_at",
+      "project.updated_at"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/stream-studio/projects",
+    "name": "list_projects",
+    "phase": "phase1",
+    "request": [
+      "workspace_id",
+      "status?",
+      "keyword?",
+      "cursor?",
+      "limit?"
+    ],
+    "response": [
+      "items[]",
+      "page.next_cursor",
+      "page.limit"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/stream-studio/projects/{creator_project_id}",
+    "name": "get_project_detail",
+    "phase": "phase1",
+    "request": [
+      "creator_project_id(path)"
+    ],
+    "response": [
+      "project",
+      "members_summary",
+      "readiness_summary"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/stream-studio/projects/{creator_project_id}",
+    "name": "update_project",
+    "phase": "phase1",
+    "request": [
+      "project_title?",
+      "project_summary?",
+      "default_language?",
+      "expected_version"
+    ],
+    "response": [
+      "project.creator_project_id",
+      "project.project_title",
+      "project.project_summary",
+      "project.default_language",
+      "project.updated_at",
+      "project.version"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/uploads/sessions",
+    "name": "create_upload_session",
+    "phase": "phase1",
+    "request": [
+      "creator_project_id",
+      "source_file_name",
+      "file_size_bytes",
+      "mime_type",
+      "target_asset_type",
+      "checksum_sha256?"
+    ],
+    "response": [
+      "upload_session.creator_upload_job_id",
+      "upload_session.resumable_session_ref",
+      "upload_session.ingest_status",
+      "upload_session.upload_url",
+      "upload_session.expires_at",
+      "upload_session.chunk_size_bytes"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/uploads/{creator_upload_job_id}/complete",
+    "name": "complete_upload",
+    "phase": "phase1",
+    "request": [
+      "final_chunk_received",
+      "checksum_sha256?"
+    ],
+    "response": [
+      "upload_job.creator_upload_job_id",
+      "upload_job.ingest_status",
+      "upload_job.updated_at"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/stream-studio/uploads/{creator_upload_job_id}",
+    "name": "get_upload_status",
+    "phase": "phase1",
+    "request": [
+      "creator_upload_job_id(path)"
+    ],
+    "response": [
+      "upload_job.creator_upload_job_id",
+      "upload_job.source_file_name",
+      "upload_job.file_size_bytes",
+      "upload_job.ingest_status",
+      "upload_job.progress_percent",
+      "upload_job.failure_code",
+      "upload_job.failure_summary",
+      "upload_job.resumable_session_ref",
+      "upload_job.created_at",
+      "upload_job.updated_at"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/uploads/{creator_upload_job_id}/retry",
+    "name": "retry_upload",
+    "phase": "phase1",
+    "request": [
+      "retry_mode"
+    ],
+    "response": [
+      "upload_job.creator_upload_job_id",
+      "upload_job.ingest_status",
+      "upload_job.retry_count",
+      "upload_job.updated_at"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/video-drafts",
+    "name": "create_video_draft",
+    "phase": "phase1",
+    "request": [
+      "creator_project_id",
+      "asset_ref",
+      "title?",
+      "description?",
+      "default_language",
+      "tag_summary_json?"
+    ],
+    "response": [
+      "video_draft.creator_video_draft_id",
+      "video_draft.creator_project_id",
+      "video_draft.asset_ref",
+      "video_draft.draft_status",
+      "video_draft.title",
+      "video_draft.description",
+      "video_draft.default_language",
+      "video_draft.tag_summary_json",
+      "video_draft.draft_version",
+      "video_draft.created_at",
+      "video_draft.updated_at"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/stream-studio/video-drafts/{creator_video_draft_id}/metadata",
+    "name": "update_metadata",
+    "phase": "phase1",
+    "request": [
+      "title?",
+      "description?",
+      "default_language?",
+      "tag_summary_json?",
+      "expected_draft_version"
+    ],
+    "response": [
+      "video_draft.creator_video_draft_id",
+      "video_draft.title",
+      "video_draft.description",
+      "video_draft.default_language",
+      "video_draft.tag_summary_json",
+      "video_draft.draft_version",
+      "video_draft.updated_at"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/stream-studio/publish-settings/{publish_ref}",
+    "name": "upsert_publish_setting",
+    "phase": "phase1",
+    "request": [
+      "release_type",
+      "visibility_scope",
+      "scheduled_publish_at?",
+      "age_rating_code?",
+      "territory_rules?",
+      "membership_gate_policy?",
+      "expected_version"
+    ],
+    "response": [
+      "publish_setting.publish_ref",
+      "publish_setting.release_type",
+      "publish_setting.visibility_scope",
+      "publish_setting.scheduled_publish_at",
+      "publish_setting.age_rating_code",
+      "publish_setting.version",
+      "publish_setting.updated_at"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/publish-settings/{publish_ref}/validate",
+    "name": "validate_publish_readiness",
+    "phase": "phase1",
+    "request": [
+      "validation_scope?"
+    ],
+    "response": [
+      "readiness.is_publishable",
+      "readiness.blockers[]",
+      "readiness.warnings[]"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/publish-requests",
+    "name": "create_publish_request",
+    "phase": "phase1",
+    "request": [
+      "creator_project_id",
+      "publish_ref",
+      "request_note?",
+      "requested_by"
+    ],
+    "response": [
+      "publish_request.creator_publish_request_id",
+      "publish_request.creator_project_id",
+      "publish_request.publish_ref",
+      "publish_request.request_status",
+      "publish_request.requested_by",
+      "publish_request.requested_at"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stream-studio/publish-requests/schedule",
+    "name": "schedule_publish",
+    "phase": "phase1",
+    "request": [
+      "creator_publish_request_id",
+      "scheduled_publish_at",
+      "scheduled_by"
+    ],
+    "response": [
+      "schedule.creator_publish_request_id",
+      "schedule.scheduled_publish_at",
+      "schedule.scheduled_by",
+      "schedule.registered_at"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/stream-studio/publish-history",
+    "name": "list_publish_history",
+    "phase": "phase1",
+    "request": [
+      "creator_project_id",
+      "cursor?",
+      "limit?"
+    ],
+    "response": [
+      "items[]",
+      "page.next_cursor",
+      "page.limit"
+    ]
+  }
+]

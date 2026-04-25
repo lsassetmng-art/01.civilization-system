@@ -1,0 +1,8 @@
+AIWORKER OS PKG-AIW-009 HOTFIX RESULT
+STAMP=20260421_170555
+ROOT=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os
+PKG9=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/120.implementation/121.execution-packages/pkg-aiw-009
+RUN_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555
+LOG_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs
+MAIN_LOG=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/920.meta/944.aiworker_os_pkg_aiw_009_hotfix_20260421_170555/logs/000_main.log
+STATUS=SUCCESS
