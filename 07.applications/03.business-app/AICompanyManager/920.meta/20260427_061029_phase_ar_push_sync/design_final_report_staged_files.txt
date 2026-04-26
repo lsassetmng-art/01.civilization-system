@@ -1,0 +1,9 @@
+07.applications/03.business-app/AICompanyManager/4100_PHASE_AR_PUSH_SYNC_REPORT.md
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/000_PHASE_AR_PUSH_SYNC_GENERATION_REPORT.md
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/020_design_push_result.txt
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/030_impl_push_result.txt
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/040_design_final_report_push_result.txt
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/design_staged_files.txt
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/design_staged_large_files.txt
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/implementation_staged_files.txt
+07.applications/03.business-app/AICompanyManager/920.meta/20260427_061029_phase_ar_push_sync/implementation_staged_large_files.txt
