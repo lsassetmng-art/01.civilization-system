@@ -5,121 +5,43 @@
 app_name: AICompanyManager
 display_name: AI企業運営アプリ
 category: 03.business-app
-phase: Phase S
-status: push-wait-finalized
-final_completion_state: final-completion-packaged
+phase: Phase AP
+status: screen-accepted
 owner: Boss
 prepared_by: Zero
 
-## 1. Purpose
+## Current Accepted UI
 
-AICompanyManager is a business-app for operating an AI company from a human-facing application.
+Top-level screens:
 
-Human gives policy to President.
-President creates business plan.
-Manager breaks it into domains and actions.
-Leader breaks actions into deliverables and tasks.
-Worker executes tasks and creates outputs.
-Leader reviews and integrates.
-Manager reviews.
-President performs final review.
-Human approves and receives delivery.
+- AI企業ダッシュボード
+- 部門別タスク台帳
+- レビュー・承認待ち一覧
 
-## 2. Category Selection
+Accepted navigation canon:
 
-- 01.civilization-app
-- 02.persona-app
-▶ 03.business-app
-- 04.life-app
-- 05.game-app
-- 06.streaming-app
+- AI企業設定 is opened from AI企業ダッシュボード
+- AI企業新規追加 is a separate screen
+- 部門詳細 handles select/view/update/delete
+- 部門追加 is a separate screen
+- 組織詳細 handles select/view/update/delete/robot placement
+- 組織追加 is a separate screen
+- 部門別タスク台帳 is Manager intake ledger
+- Manager/Leader/Worker workflow is automatic
 
-## 3. Current Completion
+## Latest Reports
 
-Phase A:
-- app skeleton completed
+- 3900_PHASE_AP_SCREEN_ACCEPTANCE_ROADMAP.md
+- 3910_ACCEPTED_SCREEN_NAVIGATION_CANON.md
+- 3990_PHASE_AP_SCREEN_ACCEPTANCE_COMPLETION_REPORT.md
 
-Phase B:
-- DB / API / State exact design completed
+## Safety
 
-Phase C:
-- DB DDL Design Review Package completed
+DB WRITE:
+- NOT EXECUTED
 
-Phase D:
-- DB apply preparation package completed
+RLS APPLY:
+- NOT EXECUTED
 
-Phase E Persona DB:
-- PERSONA_DATABASE_URL apply executed
-- reserved word fix completed
-- current_role_code fixed
-
-Phase F:
-- Persona-side RLS exact policy design completed
-- RLS apply not executed
-
-Phase G-Gate:
-- RLS apply gate created
-- RLS apply not executed
-
-Phase H:
-- BusinessOS implementation skeleton created
-
-Phase I:
-- API client mock wiring completed
-
-Phase J:
-- offline-first queue UX completed
-
-Phase K:
-- review / delivery UI completed
-
-Phase L:
-- server route placeholder completed
-
-Phase N:
-- acceptance and final handoff completed
-
-Phase O:
-- final completion seal completed
-
-Phase P:
-- push-ready manifest completed
-
-Phase Q:
-- repository push precheck completed
-
-Phase R:
-- guarded git push script created
-
-Phase S:
-- push wait finalized
-- waiting for explicit PUSH OK
-
-## 4. Latest Phase S Documents
-
-| file | purpose |
-|---|---|
-| 1700_PHASE_S_ROADMAP.md | Phase S roadmap |
-| 1710_PUSH_WAIT_FINALIZATION_REPORT.md | push wait finalization report |
-| 1720_PUSH_OK_READINESS_REPORT.md | PUSH OK readiness report |
-| 1730_NEXT_EXPLICIT_COMMAND_MEMO.md | next explicit command memo |
-| 1790_PHASE_S_COMPLETION_REPORT.md | Phase S report |
-| 00_AICOMPANYMANAGER_INTEGRATED_DESIGN.md | integrated design |
-
-## 5. Implementation Root
-
-~/03.civilization-development/03.business-os/AICompanyManager
-
-## 6. Deferred
-
-RLS apply:
-- RLS APPLY: DEFERRED
-- deferred until explicit Boss RLS OK / GO
-
-Live AIWorkerOS bridge:
-- LIVE AIWORKEROS CALL: NOT EXECUTED
-- deferred until trusted server route is implemented and approved
-
-Git push:
-- GIT PUSH: NOT EXECUTED
-- waiting for explicit PUSH OK
+LIVE AIWORKEROS CALL:
+- NOT EXECUTED
