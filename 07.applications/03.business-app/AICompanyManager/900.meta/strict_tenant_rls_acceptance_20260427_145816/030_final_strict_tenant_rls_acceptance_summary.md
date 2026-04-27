@@ -1,0 +1,24 @@
+# AICompanyManager final strict tenant RLS acceptance verify summary
+
+## Result
+- RESULT: PASS
+
+## Read-only verify
+- PSQL_CODE: 0
+- VERIFY_RESULT: PASS
+
+## Counts
+- SMOKE_SAFE_POLICY_COUNT: 0
+- SERVICE_ROLE_POLICY_COUNT: 7
+- STRICT_POLICY_COUNT: 20
+- HELPER_FUNCTION_COUNT: 8
+- SCHEMA_USAGE_AUTHENTICATED: true
+- AUTH_TABLE_SELECT_COUNT: 7
+
+## Not executed
+- DB DDL
+- DB DATA WRITE
+- RLS APPLY
+- POLICY CHANGE
+- curl
+- API CALL

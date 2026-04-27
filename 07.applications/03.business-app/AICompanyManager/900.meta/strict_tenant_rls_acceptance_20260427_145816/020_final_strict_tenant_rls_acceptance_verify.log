@@ -1,0 +1,18 @@
+Output format is unaligned.
+Field separator is "|".
+PHASE|QW-RX_FINAL_STRICT_TENANT_RLS_ACCEPTANCE
+MODE|READ_ONLY_FINAL_VERIFY
+VERIFY_RLS|business.aicm_company|true|false
+VERIFY_RLS|business.aicm_department|true|false
+VERIFY_RLS|business.aicm_department_task_ledger|true|false
+VERIFY_RLS|business.aicm_organization|true|false
+VERIFY_RLS|business.aicm_review_action|true|false
+VERIFY_RLS|business.aicm_review_item|true|false
+VERIFY_RLS|business.aicm_workflow_run|true|false
+VERIFY_SMOKE_SAFE_POLICY_COUNT|0
+VERIFY_SERVICE_ROLE_POLICY_COUNT|7
+VERIFY_STRICT_POLICY_COUNT|20
+VERIFY_HELPER_FUNCTION_COUNT|8
+VERIFY_SCHEMA_USAGE_AUTHENTICATED|true
+VERIFY_AUTH_TABLE_SELECT_COUNT|7
+VERIFY_RESULT|PASS
