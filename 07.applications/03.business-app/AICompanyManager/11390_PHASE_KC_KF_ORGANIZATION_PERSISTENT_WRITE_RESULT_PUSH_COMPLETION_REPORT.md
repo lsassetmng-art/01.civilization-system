@@ -22,9 +22,9 @@ KK-KN recovered the phase by recording Boss-pasted JY-KB PASS evidence and pushi
 - JY marker actual: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/assets/js/aicm-organization-persistent-write-smoke-executed.js
 
 ## Recovery logs
-- DIAG_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121403_phase_kk_kn_static_verify_failed_recovery/010_static_failure_diagnostic.log
-- LOCATE_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121403_phase_kk_kn_static_verify_failed_recovery/020_artifact_locator.log
-- GIT_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121403_phase_kk_kn_static_verify_failed_recovery/030_git_push.log
+- DIAG_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121425_phase_kk_kn_static_verify_failed_recovery/010_static_failure_diagnostic.log
+- LOCATE_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121425_phase_kk_kn_static_verify_failed_recovery/020_artifact_locator.log
+- GIT_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121425_phase_kk_kn_static_verify_failed_recovery/030_git_push.log
 
 ## No-write result
 - DB WRITE: NOT EXECUTED IN KC-KF RECOVERY
