@@ -13,7 +13,7 @@ Recover KG-KJ static verification failure without DB/API/write execution.
 - ORGANIZATION_ID: 00000000-0000-4000-8000-4da5c1a6977e
 
 ## Local artifact locator
-- LOCATE_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121425_phase_kk_kn_static_verify_failed_recovery/020_artifact_locator.log
+- LOCATE_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260429_062714_phase_kk_kn_static_verify_failed_recovery/020_artifact_locator.log
 - JY_REPORT_ACTUAL: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/11290_PHASE_JY_KB_ORGANIZATION_PERSISTENT_WRITE_SMOKE_COMPLETION_REPORT.md
 - JY_TEST_ACTUAL: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/tests/phase_jy_kb_organization_persistent_write_smoke_check.sh
 - JY_SERVER_ACTUAL: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/backend-api/aicm/v1/organization-persistent-write-smoke-server.js
@@ -27,9 +27,9 @@ Recover KG-KJ static verification failure without DB/API/write execution.
 - RECOVERY_REPORT: /data/data/com.termux/files/home/01.civilization-system/07.applications/03.business-app/AICompanyManager/11590_PHASE_KK_KN_STATIC_VERIFY_FAILED_RECOVERY_COMPLETION_REPORT.md
 
 ## Logs
-- DIAG_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121425_phase_kk_kn_static_verify_failed_recovery/010_static_failure_diagnostic.log
-- LOCATE_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121425_phase_kk_kn_static_verify_failed_recovery/020_artifact_locator.log
-- GIT_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260427_121425_phase_kk_kn_static_verify_failed_recovery/030_git_push.log
+- DIAG_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260429_062714_phase_kk_kn_static_verify_failed_recovery/010_static_failure_diagnostic.log
+- LOCATE_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260429_062714_phase_kk_kn_static_verify_failed_recovery/020_artifact_locator.log
+- GIT_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260429_062714_phase_kk_kn_static_verify_failed_recovery/030_git_push.log
 
 ## No-write result
 - DB WRITE: NOT EXECUTED
