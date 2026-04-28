@@ -24,14 +24,14 @@
 - API_CODE: 200
 - API_ROBOT_POOL_COUNT: 44
 - API_ROLE_CATALOG_COUNT: 16
-- API_BODY: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_184807_phase_wn_wq_robot_placement_payload_preview/080_businessos_robot_pool_api_body.json
-- API_META: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_184807_phase_wn_wq_robot_placement_payload_preview/085_businessos_robot_pool_api_meta.log
+- API_BODY: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_195247_phase_wn_wq_robot_placement_payload_preview/080_businessos_robot_pool_api_body.json
+- API_META: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_195247_phase_wn_wq_robot_placement_payload_preview/085_businessos_robot_pool_api_meta.log
 
 ## UI server
-- OPEN_URL: http://127.0.0.1:8794/?v=20260428_184807
+- OPEN_URL: http://127.0.0.1:8794/?v=20260428_195247
 - HTTP_CODE: 200
-- SERVER_PID: 21533
-- SERVER_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_184807_phase_wn_wq_robot_placement_payload_preview/100_local_ui_api_server.log
+- SERVER_PID: 9622
+- SERVER_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_195247_phase_wn_wq_robot_placement_payload_preview/100_local_ui_api_server.log
 
 ## Verification
 - PREVIEW_INCLUDE_COUNT: 1
@@ -52,7 +52,7 @@
 - PREVIEW_JS: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/assets/js/aicm-robot-placement-payload-preview.js
 - POOL_WIRE_JS: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/assets/js/aicm-businessos-db-robot-pool-wire.js
 - SERVER_JS: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/server/aicm-local-ui-api-server.mjs
-- VERIFY_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_184807_phase_wn_wq_robot_placement_payload_preview/090_robot_placement_payload_preview_verify.log
+- VERIFY_LOG: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/docs/verification/20260428_195247_phase_wn_wq_robot_placement_payload_preview/090_robot_placement_payload_preview_verify.log
 - TEST_SH: /data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/tests/phase_wn_wq_robot_placement_payload_preview_check.sh
 
 ## Execution flags
