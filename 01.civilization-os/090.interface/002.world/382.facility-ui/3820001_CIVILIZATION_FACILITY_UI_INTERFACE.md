@@ -81,6 +81,12 @@ Optional:
 - facility_public_view_screen
 
 
+Canonical overview entry route contract:
+
+screen_id: facility_overview_screen
+route_key: facility/overview
+
+
 # ============================================================
 # 4. COMMON TAB SET
 # ============================================================

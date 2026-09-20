@@ -29,6 +29,12 @@ Canonical screens:
 - city_create_complete_screen
 
 
+Canonical start screen route contract:
+
+screen_id: city_builder_start_screen
+route_key: builder/city/start
+
+
 # ============================================================
 # 2. BOUNDARY AREA SELECTION SCREEN
 # ============================================================
