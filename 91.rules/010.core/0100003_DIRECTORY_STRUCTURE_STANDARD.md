@@ -53,7 +53,17 @@ The Civilization System root separates:
 - system-wide documentation
 - shared canonical rules
 
-Applications must not be placed inside OS directories.
+Design-level standalone or cross-OS applications
+must not be placed inside OS design directories.
+
+OS-owned implementation applications are a separate
+physical implementation class and may reside under:
+
+~/03.civilization-development/<OS_ROOT>/020.applications/
+
+Their physical placement is governed by:
+
+91.rules/070.development/0700070_IMPLEMENTATION_PHYSICAL_PATH_STANDARD.md
 
 ERP is not part of Civilization System
 and must remain a separate system.
@@ -176,11 +186,21 @@ Typical OS responsibilities include:
 # APPLICATION RULE
 # ============================================================
 
-07.applications contains real user-facing applications.
+07.applications contains design-level standalone
+or cross-OS user-facing applications.
 
-Applications may consume multiple OS capabilities.
+These applications may consume multiple OS capabilities.
 
 Applications must not redefine shared OS rules.
+
+OS-owned implementation applications are not placed here
+merely because they are user-facing.
+
+Their implementation placement is:
+
+~/03.civilization-development/<OS_ROOT>/020.applications/<ApplicationName>/
+
+as governed by the implementation physical path standard.
 
 
 # ============================================================
