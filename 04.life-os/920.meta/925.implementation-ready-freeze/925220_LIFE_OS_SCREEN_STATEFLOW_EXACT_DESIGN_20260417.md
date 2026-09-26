@@ -33,7 +33,7 @@ design_principles:
 
 route_namespace:
 - /life
-- /life/dashboard
+- /life/home
 - /life/habits
 - /life/habits/log
 - /life/health
@@ -132,7 +132,7 @@ screen_state_rules:
 
 screen:
   screen_code: life_dashboard
-  route: /life/dashboard
+  route: /life/home
   purpose:
   - show current overview of habits, health, goal events, review, and sync alerts
   primary_data_sources:
@@ -288,7 +288,7 @@ habit_log_transitions:
 - validation_error -> editing on user_edit_any_field
 - network_error -> submitting on user_tap_retry
 - success -> /life/habits on user_tap_done
-- success -> /life/dashboard on auto_close_with_toast
+- success -> /life/home on auto_close_with_toast
 
 habit_log_field_validation:
 - habit_id required
@@ -380,7 +380,7 @@ health_log_transitions:
 - validation_error -> editing on user_edit_any_field
 - network_error -> submitting on user_tap_retry
 - success -> /life/health on user_tap_done
-- success -> /life/dashboard on auto_close_with_toast
+- success -> /life/home on auto_close_with_toast
 
 health_log_special_rules:
 - units must align with metric_code allowed unit set

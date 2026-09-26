@@ -12,6 +12,14 @@ prepared_by: Zero
 purpose:
 Defines the main LifeOS dashboard UI.
 
+route_id: /life/home
+
+compatibility_route:
+- route: /life/dashboard
+  status: deprecated
+  behavior: redirect
+  redirect_target: /life/home
+
 layout blocks:
 - today status summary
 - quick input row

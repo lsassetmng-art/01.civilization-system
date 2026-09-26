@@ -164,17 +164,25 @@ remains under:
 implementation-side audit/meta role.
 
 # ============================================================
-# ROUTE NON-SCOPE
+# ROUTE RELATIONSHIP REFERENCE
 # ============================================================
 
-This physical-path delta does not resolve
-the separate LifeOS route contradiction involving:
+This physical-path delta does not define
+LifeOS route behavior.
 
+The separate LifeOS route contradiction
+has been resolved by:
+
+090.interface/300.user-screens/0903014_LIFE_HOME_ROUTE_CANONICALIZATION_CHANGE_NOTE.md
+
+canonical_entry_route:
 /life/home
-/life/dashboard
 
-That issue remains governed
-by the LifeOS interface/design reconciliation process.
+deprecated_compatibility_route:
+/life/dashboard -> /life/home
+
+This route decision does not authorize
+any implementation move.
 
 # ============================================================
 # AUTH NON-SCOPE

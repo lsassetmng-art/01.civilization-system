@@ -135,7 +135,7 @@ exact_meaning:
 # ============================================================
 
 route_map:
-- route: /life/dashboard
+- route: /life/home
   page_module: pages/life-dashboard-page
   primary_widgets:
   - widgets/dashboard-summary-cards
