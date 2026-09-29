@@ -205,3 +205,45 @@ the PersonaOS Web Surface shell exists.
 
 Public traffic switching requires a separate GO gate after
 deployment path routing is proven.
+
+## R3 route migration exact implementation contract
+
+R3 migrates the committed Portal Persona route implementation into
+the PersonaOS-owned Web Surface while preserving the public
+`/persona-menu/**` namespace.
+
+### Migration source baseline
+
+- development source commit: `0dcd80cbd6650e7fb8c062abf167df20ab5bfa95`
+- source mode: committed Git tree snapshot
+- uncommitted Portal worktree content is not migration input
+
+### Route mapping
+
+| Public URL | PersonaOS App Router path |
+|---|---|
+| `/persona-menu` | `app/page.tsx` |
+| `/persona-menu/persona-create` | `app/persona-create/page.tsx` |
+| `/persona-menu/persona-create/image-upload` | `app/persona-create/image-upload/page.tsx` |
+| `/persona-menu/persona-create/ai-generate` | `app/persona-create/ai-generate/page.tsx` |
+| `/persona-menu/persona-create/parts-select` | `app/persona-create/parts-select/page.tsx` |
+| `/persona-menu/persona-create/drafts` | `app/persona-create/drafts/page.tsx` |
+
+Next.js continues to use `basePath=/persona-menu`.
+
+PersonaOS runtime source must not import implementation files from
+the Portal filesystem. Required presentation dependencies become
+PersonaOS-owned implementation files.
+
+Portal remains the launcher boundary and CivilizationOS remains
+the authentication owner.
+
+### Draft continuity
+- preserve browser storage identifier `portal.persona.create.aiGenerateDraft.v1`
+- preserve browser storage identifier `portal.persona.create.imageUploadDraft.v1`
+
+### Switch boundary
+
+This migration implementation does not authorize Portal route
+deletion or public traffic switching. SWITCH/REMOVE require a
+separate post-build acceptance gate.
