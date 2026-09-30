@@ -1,8 +1,0 @@
-# 0300200000_PERSONA_IDENTITY_MODEL_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 030.model/020.identity
-
-- 0300200001_PERSONA_IDENTITY_MODEL_OVERVIEW.md
-- 0300200002_PERSONA_IDENTITY_MODEL.md

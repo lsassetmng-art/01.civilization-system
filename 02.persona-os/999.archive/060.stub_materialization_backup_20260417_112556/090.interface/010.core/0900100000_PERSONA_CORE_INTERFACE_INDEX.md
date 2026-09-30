@@ -1,8 +1,0 @@
-# 0900100000_PERSONA_CORE_INTERFACE_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 090.interface/010.core
-
-- 0900100001_PERSONA_CORE_INTERFACE_OVERVIEW.md
-- 0900100002_PERSONA_ROOT_INTERFACE.md

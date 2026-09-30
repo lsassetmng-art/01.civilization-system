@@ -1,8 +1,0 @@
-# 0400500000_PERSONA_GROWTH_RUNTIME_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 040.runtime/050.growth/040.runtime/050.growth
-
-- 0400500001_PERSONA_GROWTH_RUNTIME_OVERVIEW.md
-- 0400500002_PERSONA_GROWTH_APPLY_RUNTIME.md

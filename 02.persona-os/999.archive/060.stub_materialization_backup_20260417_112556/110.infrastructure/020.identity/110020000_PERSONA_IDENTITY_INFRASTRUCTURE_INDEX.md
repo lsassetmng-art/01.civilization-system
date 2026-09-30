@@ -1,7 +1,0 @@
-# 110020000_PERSONA_IDENTITY_INFRASTRUCTURE_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 110.infrastructure/020.identity
-
-- 110020001_PERSONA_IDENTITY_INFRASTRUCTURE_OVERVIEW.md

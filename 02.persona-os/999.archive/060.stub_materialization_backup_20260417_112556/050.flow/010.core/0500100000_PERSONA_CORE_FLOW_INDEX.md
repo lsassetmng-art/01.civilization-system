@@ -1,8 +1,0 @@
-# 0500100000_PERSONA_CORE_FLOW_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 050.flow/010.core
-
-- 0500100001_PERSONA_CORE_FLOW_OVERVIEW.md
-- 0500100002_PERSONA_ROOT_TRUTH_FLOW.md

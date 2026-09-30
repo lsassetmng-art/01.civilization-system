@@ -1,7 +1,0 @@
-# 0201400000_PERSONA_INTEGRATION_ARCHITECTURE_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 020.architecture/140.integration
-
-- 0201400001_PERSONA_INTEGRATION_ARCHITECTURE_OVERVIEW.md

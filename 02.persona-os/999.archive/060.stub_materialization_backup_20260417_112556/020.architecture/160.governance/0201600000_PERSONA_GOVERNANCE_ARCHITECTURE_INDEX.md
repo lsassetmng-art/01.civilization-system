@@ -1,7 +1,0 @@
-# 0201600000_PERSONA_GOVERNANCE_ARCHITECTURE_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 020.architecture/160.governance
-
-- 0201600001_PERSONA_GOVERNANCE_ARCHITECTURE_OVERVIEW.md

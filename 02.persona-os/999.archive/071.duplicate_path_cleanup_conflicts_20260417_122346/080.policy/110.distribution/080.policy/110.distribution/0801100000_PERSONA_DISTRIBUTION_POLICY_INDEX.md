@@ -1,8 +1,0 @@
-# 0801100000_PERSONA_DISTRIBUTION_POLICY_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 080.policy/110.distribution/080.policy/110.distribution
-
-- 0801100001_PERSONA_DISTRIBUTION_POLICY_OVERVIEW.md
-- 0801100002_PERSONA_RELEASE_POLICY.md

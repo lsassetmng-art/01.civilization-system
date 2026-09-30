@@ -1,7 +1,0 @@
-# 120020000_PERSONA_IDENTITY_IMPLEMENTATION_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 120.implementation/020.identity
-
-- 120020001_PERSONA_IDENTITY_IMPLEMENTATION_OVERVIEW.md

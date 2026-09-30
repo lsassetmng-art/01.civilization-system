@@ -1,7 +1,0 @@
-# 0200200000_PERSONA_IDENTITY_ARCHITECTURE_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 020.architecture/020.identity
-
-- 0200200001_PERSONA_IDENTITY_ARCHITECTURE_OVERVIEW.md

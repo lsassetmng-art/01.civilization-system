@@ -1,8 +1,0 @@
-# 0400100000_PERSONA_CORE_RUNTIME_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 040.runtime/010.core
-
-- 0400100001_PERSONA_CORE_RUNTIME_OVERVIEW.md
-- 0400100002_PERSONA_ROOT_RUNTIME.md

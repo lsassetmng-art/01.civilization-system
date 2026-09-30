@@ -1,8 +1,0 @@
-# 0300100000_PERSONA_CORE_MODEL_INDEX
-
-status: rebuilt-from-live-directory
-
-directory: 030.model/010.core
-
-- 0300100001_PERSONA_CORE_MODEL_OVERVIEW.md
-- 0300100002_PERSONA_ROOT_MODEL.md
