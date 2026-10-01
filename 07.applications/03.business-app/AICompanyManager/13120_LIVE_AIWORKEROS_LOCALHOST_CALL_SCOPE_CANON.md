@@ -1,0 +1,26 @@
+# AICompanyManager live AIWorkerOS localhost call scope canon
+
+## Endpoint
+- TARGET_URL: http://127.0.0.1:8787/aicm/v1/workflow-start/live-aiworkeros-call
+
+## Call count
+- 1 curl POST only
+
+## Idempotency
+- Idempotency-Key: aicm-live-aiworkeros-00000000-0000-4000-8000-f10a00000001
+
+## Not executed
+- DB WRITE
+- PERSISTENT DB WRITE
+- psql
+- RLS APPLY
+- GIT PUSH
+
+## IDs
+- COMPANY_ID: 00000000-0000-4000-8000-1db11893cb24
+- DEPARTMENT_ID: 00000000-0000-4000-8000-f6d6b5b3d38c
+- ORGANIZATION_ID: 00000000-0000-4000-8000-4da5c1a6977e
+- LEDGER_ID: 00000000-0000-4000-8000-c5a1b0000001
+- REVIEW_ITEM_ID: 00000000-0000-4000-8000-1eac7100aa01
+- REVIEW_ACTION_ID: 00000000-0000-4000-8000-1eac71000001
+- WORKFLOW_RUN_ID: 00000000-0000-4000-8000-f10a00000001

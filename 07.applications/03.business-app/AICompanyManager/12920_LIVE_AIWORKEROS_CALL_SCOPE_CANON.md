@@ -1,0 +1,22 @@
+# AICompanyManager live AIWorkerOS call scope canon
+
+## Call count
+- 1 curl call only
+
+## IDs sent in payload
+- COMPANY_ID: 00000000-0000-4000-8000-1db11893cb24
+- DEPARTMENT_ID: 00000000-0000-4000-8000-f6d6b5b3d38c
+- ORGANIZATION_ID: 00000000-0000-4000-8000-4da5c1a6977e
+- LEDGER_ID: 00000000-0000-4000-8000-c5a1b0000001
+- WORKFLOW_RUN_ID: 00000000-0000-4000-8000-f10a00000001
+
+## Not executed
+- DB WRITE
+- PERSISTENT DB WRITE
+- psql
+- RLS APPLY
+- git push
+
+## Endpoint
+- AIWORKEROS_BASE_URL: set by environment
+- AIWORKEROS_CALL_PATH: /aicm/v1/live-smoke
