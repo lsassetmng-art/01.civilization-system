@@ -1,0 +1,71 @@
+line	category	text
+2923	side_effect_candidate	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_END */
+2925	side_effect_candidate	function aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable) {
+2930	side_effect_candidate	const packageMeta = deliverable?.deliverablePackage || aiwB6R95R3D1BuildZipPackageMeta("requester", "deliverables");
+2931	side_effect_candidate	const generatedArtifacts = aiwB6R95R3D1BuildGeneratedArtifacts(aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...arguments, deliverable));
+2933	side_effect_candidate	const zipDir = process.env.AIWORKEROS_DELIVERABLE_ZIP_DIR || path.join(process.cwd(), "runtime-deliverable-zips");
+2934	side_effect_candidate	fs.mkdirSync(zipDir, { recursive: true });
+2936	side_effect_candidate	const fileName = aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip").endsWith(".zip")
+2937	side_effect_candidate	? aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip")
+2938	side_effect_candidate	: `${aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables")}.zip`;
+2939	side_effect_candidate	const zipPath = path.join(zipDir, fileName);
+2941	side_effect_candidate	// AIWORKEROS_B6R95R3F_ZIP_LINK_ACTUAL_FILE_FIX
+2942	side_effect_candidate	// Keep the returned zip link aligned with the actual sanitized filename written to disk.
+2943	side_effect_candidate	const actualZipLink = `aiworkeros://runtime-deliverable-zip/${fileName}`;
+2944	side_effect_candidate	const actualZipRef = Object.assign({}, packageMeta.zip_ref || {}, {
+2946	side_effect_candidate	storage_code: "runtime-deliverable-zip",
+2950	side_effect_candidate	const summaryText = response.deliverable?.summary_text || deliverable?.summaryText || "";
+2953	side_effect_candidate	contract_name: "aiworkeros_common_requester_multi_artifact_zip_contract",
+2954	side_effect_candidate	package_purpose: "bundle_generated_artifacts_for_single_download",
+2957	side_effect_candidate	deliverable_title: response.deliverable?.title || deliverable?.outputTitle || "成果物",
+2958	side_effect_candidate	summary_text: summaryText,
+2959	side_effect_candidate	artifact_count: generatedArtifacts.length,
+2960	side_effect_candidate	generated_artifacts: generatedArtifacts.map((artifact) => ({
+2961	side_effect_candidate	artifact_no: artifact.artifact_no,
+2962	side_effect_candidate	artifact_kind_code: artifact.artifact_kind_code,
+2963	side_effect_candidate	title: artifact.title,
+2964	side_effect_candidate	file_name: artifact.file_name,
+2965	side_effect_candidate	body_format: artifact.body_format
+2967	side_effect_candidate	deliverable_ref: response.deliverable_ref || null,
+2968	side_effect_candidate	robot_context: response.robot_context || deliverable?.robotContext || null,
+2969	side_effect_candidate	generation_basis: response.generation_basis || deliverable?.generationBasis || null,
+2976	side_effect_candidate	...generatedArtifacts.map((artifact) => ({
+2977	side_effect_candidate	name: artifact.file_name,
+2978	side_effect_candidate	content: artifact.body_markdown
+2983	side_effect_candidate	const zipBuffer = aiwB6R95R3D1ZipStored(entries);
+2984	side_effect_candidate	fs.writeFileSync(zipPath, zipBuffer);
+2985	side_effect_candidate	const stat = fs.statSync(zipPath);
+2987	side_effect_candidate	const zipPublic = {
+2989	side_effect_candidate	package_format: "zip",
+2990	side_effect_candidate	mime_type: "application/zip",
+2991	side_effect_candidate	zip_id: packageMeta.zip_id,
+2993	side_effect_candidate	zip_link: actualZipLink,
+2994	side_effect_candidate	zip_ref: actualZipRef,
+2997	side_effect_candidate	artifact_count: generatedArtifacts.length,
+3001	side_effect_candidate	response.generated_artifacts = generatedArtifacts.map((artifact) => ({
+3002	side_effect_candidate	artifact_no: artifact.artifact_no,
+3003	side_effect_candidate	artifact_kind_code: artifact.artifact_kind_code,
+3004	side_effect_candidate	title: artifact.title,
+3005	side_effect_candidate	file_name: artifact.file_name,
+3006	side_effect_candidate	body_format: artifact.body_format
+3008	side_effect_candidate	response.deliverable_package = zipPublic;
+3009	side_effect_candidate	response.deliverable_zip_ref = actualZipRef;
+3010	side_effect_candidate	response.deliverable_link = actualZipLink;
+3013	side_effect_candidate	summary_text: summaryText,
+3014	side_effect_candidate	deliverable_link: actualZipLink,
+3015	side_effect_candidate	deliverable_package: zipPublic,
+3016	side_effect_candidate	deliverable_zip_ref: actualZipRef,
+3017	side_effect_candidate	generated_artifacts: response.generated_artifacts
+3020	side_effect_candidate	response.deliverable = Object.assign({}, response.deliverable || {}, {
+3021	side_effect_candidate	deliverable_package: zipPublic,
+3022	side_effect_candidate	zip_link: actualZipLink,
+3023	side_effect_candidate	generated_artifacts: response.generated_artifacts
+3028	side_effect_candidate	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_END
+3029	side_effect_candidate	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_END
+3053	side_effect_candidate	const deliverable = aiwB6R95R3R3BuildRequesterFacingDeliverable(payload, sourceRouteCode);
+3057	side_effect_candidate	"  select aiworker.fn_runtime_execution_create_request_with_route_v1(",
+3071	side_effect_candidate	"  select aiworker.fn_runtime_execution_submit_worker_output(",
+3077	side_effect_candidate	"    :'artifacts_jsonb'::jsonb",
+3082	side_effect_candidate	"  from aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1 p",
+3097	side_effect_candidate	"  'generation_basis', :'generation_basis_jsonb'::jsonb,",    "  'deliverable', jsonb_build_object(",
+3099	side_effect_candidate	"    'deliverable_kind', 'document',",

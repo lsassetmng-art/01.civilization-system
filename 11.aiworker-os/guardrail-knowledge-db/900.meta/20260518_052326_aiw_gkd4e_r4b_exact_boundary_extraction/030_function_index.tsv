@@ -1,0 +1,158 @@
+line	kind	name	text
+6	function_or_class	-	async function gkd4eR3RunRuntimeGuardrailPreflight(runtimeRequest) {
+24	function_or_class	-	function aiwB6R96R1G2Text(value) {
+28	function_or_class	-	function aiwB6R96R1G2FirstText(values) {
+36	function_or_class	-	function aiwB6R96R1G2Object(value) {
+40	function_or_class	-	function aiwB6R96R1G2Pick(payload, names) {
+49	function_or_class	-	function aiwB6R96R1G2FindAppPayload(payload) {
+62	function_or_class	-	function aiwB6R96R1G2LooksRuntimePayload(payload) {
+91	function_or_class	-	function aiwB6R96R1G2NormalizeRoleCode(payload, appPayload) {
+109	function_or_class	-	function aiwB6R96R1G2CapabilityTier(payload, appPayload) {
+122	function_or_class	-	function aiwB6R1G2PickSafe(payload, names) {
+126	function_or_class	-	function aiwB6R96R1G2ReferenceProfile(tier) {
+174	function_or_class	-	function aiwB6R96R1G2BuildBody(role, title, instruction, referenceProfile) {
+310	function_or_class	-	function aiwB6R96R1G2BuildRequesterDeliveryPayload(payload) {
+359	function_or_class	-	function aiwB6R96R1G2EnsureRequesterDeliveryPayload(payload) {
+375	function_or_class	-	function aiwB6R44fPlainObject(value) {
+379	function_or_class	-	function aiwB6R44fText(value) {
+383	function_or_class	-	function aiwB6R44fExtractSourceRouteMetadata(input) {
+447	function_or_class	-	function aiwB6R44fMergeSourceRouteIntoAppReadPayload(appReadPayload, input) {
+456	function_or_class	-	function aiwB6R44fExposeSourceRouteOnRow(row) {
+482	function_or_class	-	function aiwB6R44fExposeSourceRouteOnRows(value) {
+494	function_or_class	-	function aiwB6R44gR4PlainObject(value) {
+498	function_or_class	-	function aiwB6R44gR4LooksRuntimeRow(row) {
+506	function_or_class	-	function aiwB6R44gR4ExposeSourceRouteRow(row) {
+522	function_or_class	-	function aiwB6R44gR4ExposeSourceRouteRows(rows) {
+527	function_or_class	-	function aiwB6R44gR4ExposeSourceRoutePayload(payload) {
+561	function_or_class	-	function loadDotEnv(filePath) {
+591	function_or_class	-	function sendJson(res, status, payload) {
+607	function_or_class	-	function readBody(req) {
+622	function_or_class	-	function requireAuth(req) {
+627	function_or_class	-	function normalizeLimit(value) {
+641	function_or_class	-	function psqlJson(sql, vars = {}) {
+670	function_or_class	-	  const text = (result.stdout || "").trim();
+680	function_or_class	-	function endpointReady() {
+690	function_or_class	-	function apiContracts() {
+700	function_or_class	-	function persistentSmoke() {
+710	function_or_class	-	function pipelineBoard(query) {
+732	function_or_class	-	function appReadPayload(query) {
+754	function_or_class	-	function deliveryBoard(query) {
+792	function_or_class	-	function aiwB6R95R3R3Text(value) {
+796	function_or_class	-	function aiwB6R95R3R3OneLine(value, fallback) {
+801	function_or_class	-	function aiwB6R95R3R3Clip(value, maxLen) {
+807	function_or_class	-	function aiwB6R95R3R3Lines(items) {
+811	function_or_class	-	function aiwB6R95R3R3BuildRequesterFacingDeliverableBaseB6R95R3Z24(payload, sourceRouteCode) {
+1001	function_or_class	-	function aiwB6R95R3Z24Text(value) {
+1007	function_or_class	-	function aiwB6R95R3Z24SqlLiteral(value) {
+1011	function_or_class	-	function aiwB6R95R3Z24PickFirstText(obj, keys) {
+1019	function_or_class	-	function aiwB6R95R3Z24CollectTextDeep(value, maxLen = 5000, depth = 0) {
+1065	function_or_class	-	function aiwB6R95R3Z24PayloadText(payload, keys) {
+1080	function_or_class	-	function aiwB6R95R3Z24ModelCode(payload) {
+1089	function_or_class	-	function aiwB6R95R3Z24Instruction(payload) {
+1100	function_or_class	-	function aiwB6R95R3Z24TaskTitle(payload) {
+1108	function_or_class	-	function aiwB6R95R3Z24SearchTerms(payload) {
+1129	function_or_class	-	function aiwB6R95R3Z24RunPsqlJson(sql) {
+1167	function_or_class	-	function aiwB6R95R3Z24FetchCxRuntimeMaterials(payload) {
+1200	function_or_class	-	function aiwB6R95R3Z24MaterialTitle(row, index) {
+1213	function_or_class	-	function aiwB6R95R3Z24MaterialBody(row) {
+1231	function_or_class	-	function aiwB6R95R3Z24BuildMaterialMarkdown(payload, rows) {
+1234	function_or_class	-	  function aiwB6R97R58CShortRequestSummary(value) {
+1249	function_or_class	-	  function aiwB6R97R58CSanitizeMaterialMarkdown(markdown) {
+1259	function_or_class	-	  function aiwB6R97R61CollectText(value, depth) {
+1267	function_or_class	-	  function aiwB6R97R61RequiredViewpointTerms(markdown) {
+1311	function_or_class	-	  function aiwB6R97R61EnsureRequiredViewpointsSection(markdown) {
+1376	function_or_class	-	function aiwB6R95R3Z24EnhanceDeliverableWithCxMaterial(deliverable, payload, sourceRouteCode) {
+1434	function_or_class	-	function aiwB6R98R3BSourceText(value) {
+1438	function_or_class	-	function aiwB6R98R3BFlattenPayloadValues(value, out, depth) {
+1475	function_or_class	-	function aiwB6R98R3BMaybeParseJsonText(text) {
+1486	function_or_class	-	function aiwB6R98R3BCollectTextSources(payload) {
+1523	function_or_class	-	function aiwB6R98R3BHomeDir() {
+1527	function_or_class	-	function aiwB6R98R3BNormalizeCandidatePath(candidate) {
+1546	function_or_class	-	function aiwB6R98R3BAllowedRoots() {
+1562	function_or_class	-	function aiwB6R98R3BIsUnderAllowedRoot(absPath) {
+1569	function_or_class	-	function aiwB6R98R3BIsTextLikeFile(absPath) {
+1597	function_or_class	-	function aiwB6R98R3BExtractCandidatePathsFromText(text) {
+1620	function_or_class	-	function aiwB6R98R3BCollectCandidatePaths(payload) {
+1630	function_or_class	-	function aiwB6R97R66DetectSourceMaterialType(filePath) {
+1639	function_or_class	-	function aiwB6R97R66SourceMaterialSummary(text) {
+1645	function_or_class	-	function aiwB6R97R66BuildSourceMaterialAnalysisResults(rows, rejected) {
+1685	function_or_class	-	function aiwB6R97R66RenderSourceMaterialAnalysisMarkdown(sourceFiles) {
+1711	function_or_class	-	function aiwB6R98R3BReadSourceFiles(payload) {
+1819	function_or_class	-	function aiwB6R98R3BSourceFilesMarkdown(sourceFiles) {
+1849	function_or_class	-	function aiwB6R98R3BEnhanceDeliverableWithSourceFiles(deliverable, payload, sourceRouteCode) {
+1851	function_or_class	-	  function aiwB6R97R65BAppendSourceMarkdownToBody(body, sourceMarkdown) {
+1860	function_or_class	-	  function aiwB6R97R65BMainArtifactWithSourceMarkdown(artifact, sourceMarkdown) {
+1978	function_or_class	-	function aiwB6R95R3R3BuildRequesterFacingDeliverable(payload, sourceRouteCode) {
+2003	function_or_class	-	function aiwB6R95R3D1SafeFilePart(value, fallback) {
+2009	function_or_class	-	function aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle) {
+2040	function_or_class	-	function aiwB6R95R3D1NormalizeGeneratedArtifact(item, index) {
+2061	function_or_class	-	function aiwB6R97R36R3SelectStrongMainDeliverableMarkdown(...inputs) {
+2064	function_or_class	-	  function addCandidate(label, value) {
+2118	function_or_class	-	  function dig(value, path, depth) {
+2164	function_or_class	-	function aiwB6R97R40SelectTaskSpecificMainDeliverableMarkdown(...inputs) {
+2168	function_or_class	-	  function isString(value) {
+2172	function_or_class	-	  function addTaskHint(path, value) {
+2179	function_or_class	-	  function collectTaskHints(value, path, depth) {
+2196	function_or_class	-	  function normalizeText(value) {
+2204	function_or_class	-	  function extractTaskTerms(text) {
+2262	function_or_class	-	  function isPreferredSourcePath(path) {
+2266	function_or_class	-	  function isCandidatePath(path) {
+2270	function_or_class	-	  function addCandidate(path, value) {
+2324	function_or_class	-	  function dig(value, path, depth) {
+2372	function_or_class	-	function aiwB6R97R46SelectSection4BodyMarkdown(...sources) {
+2373	function_or_class	-	  function isObject(value) {
+2377	function_or_class	-	  function isString(value) {
+2381	function_or_class	-	  function flatten(value, path, out, depth) {
+2401	function_or_class	-	  function isPreferredBodyPath(path) {
+2409	function_or_class	-	  function isInstructionPath(path) {
+2413	function_or_class	-	  function score(path, value, allInstructionTexts) {
+2548	function_or_class	-	function aiwB6R95R3D1BuildGeneratedArtifacts(deliverable) {
+2550	function_or_class	-	  function aiwB6R97R65BSourceMarkdownFromDeliverable(value) {
+2566	function_or_class	-	  function aiwB6R97R65BAppendSourceMarkdownForMain(body, sourceMarkdown) {
+2643	function_or_class	-	function aiwB6R95R3D1ZipCrc32(buffer) {
+2663	function_or_class	-	function aiwB6R95R3D1ZipDosDateTime(date) {
+2665	function_or_class	-	  const dosTime = (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2);
+2666	function_or_class	-	  const dosDate = ((year - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate();
+2670	function_or_class	-	function aiwB6R95R3D1ZipStored(entries) {
+2735	function_or_class	-	function aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...sources) {
+2736	function_or_class	-	  function isObject(value) {
+2740	function_or_class	-	  function isString(value) {
+2744	function_or_class	-	  function clonePlain(value) {
+2754	function_or_class	-	  function flatten(value, path, out, depth) {
+2774	function_or_class	-	  function isPreferredProvidedBodyPath(path) {
+2780	function_or_class	-	  function isInstructionPath(path) {
+2784	function_or_class	-	  function scoreCandidate(path, value) {
+2857	function_or_class	-	  function selectProvidedBody() {
+2888	function_or_class	-	  function patchArtifactArray(value) {
+2925	function_or_class	-	function aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable) {
+3030	function_or_class	-	function createRuntimeRequest(payload, idempotencyKeyFromHeader) {
+3304	function_or_class	-	function aiwB6R97R14DbUrl() {
+3308	function_or_class	-	function aiwB6R97R14SqlLiteral(value) {
+3312	function_or_class	-	function aiwB6R97R14IsUuid(value) {
+3316	function_or_class	-	function aiwB6R97R14UuidOrNull(value) {
+3321	function_or_class	-	function aiwB6R97R14PsqlText(sql) {
+3344	function_or_class	-	function aiwB6R97R14PsqlJson(sql, fallback) {
+3354	function_or_class	-	function aiwB6R97R14ClaimWorkUnits(limit) {
+3388	function_or_class	-	function aiwB6R97R14BuildPayload(row) {
+3421	function_or_class	-	function aiwB6R97R14RequestId(result) {
+3430	function_or_class	-	function aiwB6R97R14OutputId(result) {
+3439	function_or_class	-	function aiwB6R97R14Summary(result) {
+3448	function_or_class	-	function aiwB6R97R14DeliverableLink(result) {
+3457	function_or_class	-	function aiwB6R97R14MarkFailed(row, error) {
+3488	function_or_class	-	function aiwB6R97R19CAicmArtifactKindCode() {
+3493	function_or_class	-	function aiwB6R97R19CFinalizeGeneratedReviewRows(limit) {
+3624	function_or_class	-	function aiwB6R97R14RecordSuccess(row, result, payload) {
+3750	function_or_class	-	async function aiwB6R97R14ConsumerOnce(reason) {
+3799	function_or_class	-	function aiwB6R97R14StartConsumer() {
+3846	function_or_class	-	function aiwB6R98R4F1CText(value) {
+3850	function_or_class	-	function aiwB6R98R4F1CTmpRootResolved() {
+3854	function_or_class	-	function aiwB6R98R4F1CIsUnderTmpRoot(value) {
+3860	function_or_class	-	function aiwB6R98R4F1CEscapeRegExp(value) {
+3864	function_or_class	-	function aiwB6R98R4F1CExtractTmpPaths(row) {
+3885	function_or_class	-	function aiwB6R98R4F1CRunPsql(sql, timeoutMs) {
+3915	function_or_class	-	function aiwB6R98R4F1CLoadEligibleRows() {
+3959	function_or_class	-	function aiwB6R98R4F1CDeleteTmpPaths(paths) {
+3989	function_or_class	-	function aiwB6R98R4F1CJsonLiteral(value) {
+3993	function_or_class	-	function aiwB6R98R4F1CUpdateCleanupMetadata(row, cleanupResult) {
+4031	function_or_class	-	function aiwB6R98R4F1CRunCleanupOnce() {
+4069	function_or_class	-	function aiwB6R98R4F1CScheduleCleanup() {

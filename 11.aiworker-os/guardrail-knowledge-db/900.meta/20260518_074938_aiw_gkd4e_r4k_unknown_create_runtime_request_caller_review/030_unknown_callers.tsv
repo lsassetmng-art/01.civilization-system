@@ -1,0 +1,2 @@
+caller_line	route_hint	method_hint	path_hint	parent_hint	return_var	first_side_effect_line	response_signal_count	side_effect_signal_count	r4i_status	classification	reason
+3268	3254:if (req.method === "POST" && url.pathname === "/aiworker/v1/runtime-execution/request") {	POST	/aiworker/v1/runtime-execution/request	3171:const server = http.createServer(async (req, res) => {	result	3293	19	28	review_required	review_required	insufficient route/response contract

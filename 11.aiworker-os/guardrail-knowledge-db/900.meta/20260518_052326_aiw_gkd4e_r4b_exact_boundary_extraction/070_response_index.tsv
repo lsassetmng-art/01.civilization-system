@@ -1,0 +1,83 @@
+line	kind	text
+128	response_or_error	    return {
+140	response_or_error	    return {
+152	response_or_error	    return {
+163	response_or_error	  return {
+330	response_or_error	  return {
+488	response_or_error	// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_START
+491	response_or_error	  SendJson boundary wrapper.
+548	response_or_error	// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_END
+591	response_or_error	function sendJson(res, status, payload) {
+592	response_or_error	  // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_START
+595	response_or_error	  } catch (_b6r44gR4Error) {
+596	response_or_error	    // Keep sendJson stable for non-runtime payloads.
+598	response_or_error	  // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_END
+600	response_or_error	  res.writeHead(status, {
+604	response_or_error	  res.end(JSON.stringify(aiwB6R96R1G2EnsureRequesterDeliveryPayload(payload, null, 2)));
+675	response_or_error	  } catch (e) {
+676	response_or_error	    throw new Error(`Failed to parse DB JSON: ${text}`);
+984	response_or_error	  return {
+1481	response_or_error	  } catch (_) {
+1723	response_or_error	      rejected.push({ path: candidate, reason: "max_files_exceeded" });
+1732	response_or_error	        rejected.push({ path: candidate, reason: "outside_allowed_roots" });
+1742	response_or_error	        rejected.push({ path: candidate, reason: "unsupported_source_extension", media_type: aiwB6R97R67MaterialType });
+1748	response_or_error	        rejected.push({ path: candidate, reason: "not_found" });
+1754	response_or_error	        rejected.push({ path: candidate, reason: "not_file" });
+1759	response_or_error	        rejected.push({ path: candidate, reason: "file_too_large", size: stat.size });
+1795	response_or_error	    } catch (error) {
+1798	response_or_error	        reason: "read_error",
+1799	response_or_error	        message: error && error.message ? error.message : String(error)
+1806	response_or_error	  return {
+2025	response_or_error	  return {
+2049	response_or_error	  return {
+2501	response_or_error	    return {
+2667	response_or_error	  return { dosTime, dosDate };
+2844	response_or_error	    return {
+2905	response_or_error	      return {
+3176	response_or_error	      return sendJson(res, 200, {
+3177	response_or_error	        ok: true,
+3187	response_or_error	      return sendJson(res, 401, {
+3190	response_or_error	        message: "Missing or invalid Authorization bearer token."
+3195	response_or_error	      return sendJson(res, 200, { result: "ok", data: endpointReady() });
+3199	response_or_error	      return sendJson(res, 200, { result: "ok", data: apiContracts() });
+3203	response_or_error	      return sendJson(res, 200, { result: "ok", data: persistentSmoke() });
+3207	response_or_error	      return sendJson(res, 200, { result: "ok", data: pipelineBoard(url.searchParams) });
+3211	response_or_error	      return sendJson(res, 200, { result: "ok", data: appReadPayload(url.searchParams) });
+3215	response_or_error	      return sendJson(res, 200, { result: "ok", data: deliveryBoard(url.searchParams) });
+3242	response_or_error	      return sendJson(res, 200, {
+3259	response_or_error	      } catch (e) {
+3260	response_or_error	        return sendJson(res, 400, {
+3263	response_or_error	          message: "Request body must be valid JSON."
+3269	response_or_error	      return sendJson(res, 201, result);
+3272	response_or_error	    return sendJson(res, 404, {
+3277	response_or_error	  } catch (err) {
+3279	response_or_error	    return sendJson(res, status, {
+3282	response_or_error	      message: err.message,
+3324	response_or_error	    throw new Error("PERSONA_DATABASE_URL is not set for AIWorkerOS consumer");
+3349	response_or_error	  } catch (error) {
+3350	response_or_error	    throw new Error("AIWorkerOS consumer failed to parse psql JSON: " + error.message + " raw=" + raw.slice(0, 400));
+3401	response_or_error	  return {
+3627	response_or_error	    throw new Error("invalid work unit id for AIWorkerOS consumer success");
+3754	response_or_error	    lastReason: "",
+3759	response_or_error	  if (state.running) return { skipped: true, reason: "already_running" };
+3775	response_or_error	      return { processed: 0 };
+3787	response_or_error	      } catch (error) {
+3793	response_or_error	    return { processed };
+3812	response_or_error	    aiwB6R97R14ConsumerOnce("startup").catch((error) => {
+3818	response_or_error	    aiwB6R97R14ConsumerOnce("interval").catch((error) => {
+3888	response_or_error	    return {
+3889	response_or_error	      ok: false,
+3907	response_or_error	  return {
+3908	response_or_error	    ok: result.status === 0,
+3952	response_or_error	      } catch (_) {
+3966	response_or_error	      skipped.push({ path: rawPath, reason: "outside_tmp_root" });
+3975	response_or_error	        skipped.push({ path: target, reason: "not_found_or_not_file" });
+3977	response_or_error	    } catch (error) {
+3980	response_or_error	        reason: "delete_error",
+3981	response_or_error	        message: error && error.message ? error.message : String(error)
+3986	response_or_error	  return { deleted, skipped };
+4033	response_or_error	    return { ok: true, disabled: true };
+4060	response_or_error	  return {
+4061	response_or_error	    ok: true,
+4076	response_or_error	    } catch (error) {
+4084	response_or_error	    } catch (error) {

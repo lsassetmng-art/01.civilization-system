@@ -84,3 +84,7 @@ root_directories:
 - 910.civilization
 - 920.meta
 - 999.archive
+
+domain_entrypoints:
+- guardrail-knowledge-db/000_INDEX.md
+- helpdesk-knowledge-db/AIWORKER_HELPDESK_KNOWLEDGE_DB_CANON.md

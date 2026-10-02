@@ -1,0 +1,32 @@
+15:- implementation root: /data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api
+16:- server: /data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/server.js
+17:- fixed: psql stdin execution
+218927:# AIWorkerOS Model Append: Runtime Execution HTTP API Fix
+218935:The previous HTTP API server passed SQL through `psql -c`.
+218947:POST /aiworker/v1/runtime-execution/request can create an internal Runtime Execution request.
+220899:# AIWorkerOS Integration Append: Runtime Execution HTTP API Fix Reference Surface
+220909:- ~/03.civilization-development/11.aiworker-os/runtime-execution-http-api
+220919:Do not use `psql -c` for SQL strings that depend on psql variables.
+220924:- GET /aiworker/v1/runtime-execution/api-contract
+220925:- GET /aiworker/v1/runtime-execution/endpoint-ready
+220926:- GET /aiworker/v1/runtime-execution/persistent-smoke
+220927:- POST /aiworker/v1/runtime-execution/request
+220928:- GET /aiworker/v1/runtime-execution/app-read-payload
+220929:- GET /aiworker/v1/runtime-execution/pipeline-board
+220930:- GET /aiworker/v1/runtime-execution/delivery
+221635:POST /aiworker/v1/runtime-execution/request
+221644:GET /aiworker/v1/runtime-execution/pipeline-board
+221649:GET /aiworker/v1/runtime-execution/app-read-payload
+221654:GET /aiworker/v1/runtime-execution/delivery
+221687:- POST /aiworker/v1/runtime-execution/request/start
+221688:- POST /aiworker/v1/runtime-execution/worker-output
+221689:- POST /aiworker/v1/runtime-execution/leader-review
+221690:- POST /aiworker/v1/runtime-execution/manager-gate
+221691:- POST /aiworker/v1/runtime-execution/president-approval
+221692:- POST /aiworker/v1/runtime-execution/delivery-ready
+221693:- GET  /aiworker/v1/runtime-execution/pipeline-board
+221723:# AIWorkerOS API Append: Runtime Execution HTTP API Fix Contract
+221731:POST /aiworker/v1/runtime-execution/request
+221753:Avoid `psql -c` for variable-substituted SQL.
+221770:POST /aiworker/v1/runtime-execution/request
+222902:# AIWorkerOS Policy Append: Runtime Execution HTTP API Fix

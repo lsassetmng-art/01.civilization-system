@@ -1,0 +1,7 @@
+gap_code	current_state	recommended_action	apply_now
+unified_retrieval_view	Existing views are split by apps, QA, and errors.	Design v_helpdesk_retrieval_document to unify QA, screen, flow, error, runbook, escalation, and template metadata for internal retrieval.	NO
+ranking_logic	No canonical score/rank contract yet.	Define ranking outside DB first: exact app_code > locale > screen/flow/error match > keyword/text match > confidence/priority.	NO
+search_function	No SQL function required yet.	Do not create function first; start with view/read model and application-side retrieval contract.	NO
+guardrail_join	Guardrail result is not joined in Helpdesk views.	Keep guardrail as runtime/reference input, not duplicated Helpdesk decision logic.	NO
+cx_reference_join	CX22073JW is not joined.	Keep CX as optional enrichment path, not direct Helpdesk execution owner.	NO
+api_transport	API design existed but is not core brain.	Defer API until internal retrieval contract is stable.	NO

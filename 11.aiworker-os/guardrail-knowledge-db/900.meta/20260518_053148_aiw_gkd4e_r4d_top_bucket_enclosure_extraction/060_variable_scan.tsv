@@ -1,0 +1,51 @@
+line	category	text
+2923	variable_candidate	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_END */
+2925	variable_candidate	function aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable) {
+2929	variable_candidate	const response = responsePayload && typeof responsePayload === "object" ? responsePayload : {};
+2930	variable_candidate	const packageMeta = deliverable?.deliverablePackage || aiwB6R95R3D1BuildZipPackageMeta("requester", "deliverables");
+2931	variable_candidate	const generatedArtifacts = aiwB6R95R3D1BuildGeneratedArtifacts(aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...arguments, deliverable));
+2945	variable_candidate	source: "aiworkeros",
+2953	variable_candidate	contract_name: "aiworkeros_common_requester_multi_artifact_zip_contract",
+2955	variable_candidate	request_id: response.request_id || null,
+2956	variable_candidate	output_id: response.output_id || null,
+2965	variable_candidate	body_format: artifact.body_format
+2978	variable_candidate	content: artifact.body_markdown
+2991	variable_candidate	zip_id: packageMeta.zip_id,
+3006	variable_candidate	body_format: artifact.body_format
+3012	variable_candidate	response.requester_delivery_payload = Object.assign({}, response.requester_delivery_payload || {}, {
+3030	variable_candidate	function createRuntimeRequest(payload, idempotencyKeyFromHeader) {
+3031	variable_candidate	const idempotencyKey = payload.idempotency_key || idempotencyKeyFromHeader || "";
+3032	variable_candidate	const sourceRouteCode = String(
+3033	variable_candidate	payload.source_route_code ||
+3034	variable_candidate	payload.sourceRouteCode ||
+3035	variable_candidate	payload.source_route ||
+3038	variable_candidate	if (!idempotencyKey) {
+3039	variable_candidate	const e = new Error("Idempotency-Key is required");
+3041	variable_candidate	throw e;
+3044	variable_candidate	const required = ["app_surface_code", "model_code", "task_domain_code", "task_title", "task_instruction_ja"];
+3046	variable_candidate	if (!payload[key] || String(payload[key]).trim() === "") {
+3049	variable_candidate	throw e;
+3053	variable_candidate	const deliverable = aiwB6R95R3R3BuildRequesterFacingDeliverable(payload, sourceRouteCode);
+3057	variable_candidate	"  select aiworker.fn_runtime_execution_create_request_with_route_v1(",
+3060	variable_candidate	"    :'task_domain_code',",
+3061	variable_candidate	"    :'task_title',",
+3062	variable_candidate	"    :'task_instruction_ja',",
+3063	variable_candidate	"    :'source_app_ref',",
+3064	variable_candidate	"    :'source_request_ref',",
+3065	variable_candidate	"    :'requested_by_ref',",
+3066	variable_candidate	"    :'idempotency_key',",
+3067	variable_candidate	"    :'source_route_code'",
+3068	variable_candidate	"  ) as request_id",
+3072	variable_candidate	"    (select request_id from created),",
+3074	variable_candidate	"    :'output_body_ja',",
+3076	variable_candidate	"    :'output_payload_jsonb'::jsonb,",
+3078	variable_candidate	"  ) as output_id",
+3082	variable_candidate	"  from aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1 p",
+3084	variable_candidate	"    on c.request_id = p.request_id",
+3089	variable_candidate	"  'request_id', (select request_id from created),",
+3090	variable_candidate	"  'output_id', (select output_id from worker_output),",
+3091	variable_candidate	"  'idempotency_key', :'idempotency_key',",
+3092	variable_candidate	"  'requester_app_ref', :'source_app_ref',",
+3093	variable_candidate	"  'source_request_ref', :'source_request_ref',",
+3094	variable_candidate	"  'source_route_code', :'source_route_code',",
+3095	variable_candidate	"  'payload', coalesce((select app_read_payload_jsonb from board limit 1), '{}'::jsonb),",

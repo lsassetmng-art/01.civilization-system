@@ -1,0 +1,5 @@
+view_name	status
+v_helpdesk_active_error_pattern	EXISTS
+v_helpdesk_active_qa	EXISTS
+v_helpdesk_active_supported_app	EXISTS
+v_helpdesk_retrieval_document	MISSING

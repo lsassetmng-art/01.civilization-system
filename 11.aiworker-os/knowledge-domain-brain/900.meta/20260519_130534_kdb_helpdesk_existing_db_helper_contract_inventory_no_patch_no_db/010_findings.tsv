@@ -1,0 +1,7 @@
+PASS	APP_ROOT_EXISTS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api
+PASS	PREV_DB_SIGNAL_SCAN_EXISTS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_122041_kdb_helpdesk_pg_resolution_inventory_no_patch_no_db/040_existing_db_query_signal_scan.out
+PASS	HELPER_CANDIDATES_FOUND	HELPER_CANDIDATE_COUNT=33300
+PASS	QUERY_DEPENDENCY_CANDIDATES_FOUND	QUERY_DEP_CANDIDATE_COUNT=30272
+PASS	PG_IMPORT_CONTEXT_FOUND	PG_IMPORT_CONTEXT_COUNT=1
+PASS	CANDIDATE_FILE_LIST_CREATED	CANDIDATE_FILE_COUNT=397
+PASS	SECRET_SCAN_STRONG_COUNT_ZERO	SECRET_STRONG_COUNT=0

@@ -1,0 +1,39 @@
+15:- contract table: aiworker.runtime_execution_app_api_contract
+16:- app read payload: aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1
+17:- api contract view: aiworker.vw_app_aiworker_runtime_execution_api_contract_v1
+18:- endpoint readiness: aiworker.vw_app_aiworker_runtime_execution_endpoint_ready_v1
+19:- persistent smoke board: aiworker.vw_app_aiworker_runtime_execution_persistent_smoke_board_v1
+218817:# AIWorkerOS Model Append: Runtime Execution App API
+218831:- aiworker.runtime_execution_app_api_contract
+218835:- aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1
+218836:- aiworker.vw_app_aiworker_runtime_execution_api_contract_v1
+218837:- aiworker.vw_app_aiworker_runtime_execution_endpoint_ready_v1
+218838:- aiworker.vw_app_aiworker_runtime_execution_persistent_smoke_board_v1
+218844:- idempotency_key: runtime-execution-persistent-smoke-v1
+220773:# AIWorkerOS Integration Append: Runtime Execution App API Reference Surface
+220783:- aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1
+220795:- aiworker.vw_app_aiworker_runtime_execution_api_contract_v1
+220799:- aiworker.vw_app_aiworker_runtime_execution_endpoint_ready_v1
+220803:- aiworker.vw_app_aiworker_runtime_execution_persistent_smoke_board_v1
+221071:- PERSONA_AIWORKEROS_BASE_URL
+221087:{PERSONA_AIWORKEROS_BASE_URL}/aicm/v1/workflow-start/live-aiworkeros-call
+221113:{PERSONA_AIWORKEROS_BASE_URL}/aicm/v1/workflow-start/live-aiworkeros-call
+221389:- PERSONA_AIWORKEROS_BASE_URL
+221441:- PERSONA_AIWORKEROS_BASE_URL
+221546:# AIWorkerOS API Append: Runtime Execution App API Contract
+221554:POST /aiworker/v1/runtime-execution/request
+221563:GET /aiworker/v1/runtime-execution/pipeline-board
+221568:GET /aiworker/v1/runtime-execution/app-read-payload
+221570:- backing: aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1
+221573:GET /aiworker/v1/runtime-execution/delivery
+221582:- PERSONA_AIWORKEROS_BASE_URL
+221606:- POST /aiworker/v1/runtime-execution/request/start
+221607:- POST /aiworker/v1/runtime-execution/worker-output
+221608:- POST /aiworker/v1/runtime-execution/leader-review
+221609:- POST /aiworker/v1/runtime-execution/manager-gate
+221610:- POST /aiworker/v1/runtime-execution/president-approval
+221611:- POST /aiworker/v1/runtime-execution/delivery-ready
+221612:- GET  /aiworker/v1/runtime-execution/pipeline-board
+221650:POST /aiworker/v1/runtime-execution/request
+222689:# AIWorkerOS Policy Append: Runtime Execution App API
+222697:Runtime Execution App API contracts are app-facing surfaces for internal AIWorkerOS runtime execution state.

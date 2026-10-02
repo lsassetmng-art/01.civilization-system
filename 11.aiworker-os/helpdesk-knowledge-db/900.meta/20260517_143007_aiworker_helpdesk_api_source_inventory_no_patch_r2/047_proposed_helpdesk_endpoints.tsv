@@ -1,0 +1,9 @@
+method	path	purpose	db_source	phase
+GET	/api/v1/helpdesk/apps	Portal Helpdesk supported app list	aiworker.v_helpdesk_active_supported_app	phase1_readonly
+GET	/api/v1/helpdesk/apps/:app_code/profile	Single app support profile	aiworker.v_helpdesk_active_supported_app	phase1_readonly
+GET	/api/v1/helpdesk/apps/:app_code/qa	App QA list/search	aiworker.v_helpdesk_active_qa	phase1_readonly
+GET	/api/v1/helpdesk/apps/:app_code/errors	App error pattern list/search	aiworker.v_helpdesk_active_error_pattern	phase1_readonly
+GET	/api/v1/helpdesk/apps/:app_code/screens	App screen knowledge	aiworker.helpdesk_screen_knowledge	phase1_readonly
+GET	/api/v1/helpdesk/apps/:app_code/flows	App operation flow	aiworker.helpdesk_operation_flow	phase1_readonly
+GET	/api/v1/helpdesk/apps/:app_code/escalation-rules	App escalation rules	aiworker.helpdesk_escalation_rule	phase1_readonly
+GET	/api/v1/helpdesk/templates	Answer templates	aiworker.helpdesk_answer_template	phase1_readonly

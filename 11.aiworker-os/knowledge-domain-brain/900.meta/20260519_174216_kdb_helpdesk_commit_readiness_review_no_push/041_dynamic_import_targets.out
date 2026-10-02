@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "providerCode": "helpdesk",
+  "supportedDomainCodes": [
+    "helpdesk",
+    "app_support"
+  ],
+  "providerExportCount": 9,
+  "indexExportCount": 18,
+  "runtimeExportCount": 2
+}

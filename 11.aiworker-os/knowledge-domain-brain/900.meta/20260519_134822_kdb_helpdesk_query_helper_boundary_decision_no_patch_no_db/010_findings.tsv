@@ -1,0 +1,8 @@
+PASS	INPUT_FILE_EXISTS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_133328_kdb_helpdesk_query_helper_exact_review_r1_repaired_no_patch_no_db/030_candidate_static_matrix.tsv
+PASS	INPUT_FILE_EXISTS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_133328_kdb_helpdesk_query_helper_exact_review_r1_repaired_no_patch_no_db/040_candidate_export_and_query_snippets.md
+PASS	INPUT_FILE_EXISTS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_133328_kdb_helpdesk_query_helper_exact_review_r1_repaired_no_patch_no_db/050_query_helper_exact_review_decision.md
+PASS	LOW_RISK_QUERY_LIKE_CANDIDATE_SELECTED	SELECTED_COUNT=1 SELECTED_FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/lib/knowledge-domain-brain/domain-classifier.mjs
+WARN	HELPER_POSSIBLE_REVIEW_REQUIRED	POSSIBLE_HELPER_REQUIRES_MANUAL_SIGNATURE_REVIEW_BEFORE_DB_BACKED_TEST
+PASS	SELECTED_CONTEXT_CREATED	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_134822_kdb_helpdesk_query_helper_boundary_decision_no_patch_no_db/040_selected_candidate_boundary_context.md
+PASS	TARGET_STATUS_STILL_THREE_FILES	GIT_STATUS_TARGET_COUNT=3
+PASS	SECRET_SCAN_STRONG_COUNT_ZERO	SECRET_STRONG_COUNT=0

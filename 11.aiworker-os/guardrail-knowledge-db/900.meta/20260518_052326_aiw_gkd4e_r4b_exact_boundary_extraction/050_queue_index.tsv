@@ -1,0 +1,340 @@
+line	kind	text
+4	queue_or_execution	const guardrailRuntimePreflight = require("./guardrail/guardrail-runtime-preflight.cjs");
+6	queue_or_execution	async function gkd4eR3RunRuntimeGuardrailPreflight(runtimeRequest) {
+7	queue_or_execution	  return guardrailRuntimePreflight.runAndPersistGuardrailPreflight(runtimeRequest);
+11	queue_or_execution	// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_START
+17	queue_or_execution	  - task_ledger_worker
+18	queue_or_execution	  - president_route_worker
+62	queue_or_execution	function aiwB6R96R1G2LooksRuntimePayload(payload) {
+76	queue_or_execution	    payload.runtime_request_id ||
+93	queue_or_execution	    aiwB6R96R1G2Pick(payload, ["role_code", "worker_role_code", "placement_role_code"]),
+94	queue_or_execution	    aiwB6R96R1G2Pick(appPayload, ["role_code", "worker_role_code", "placement_role_code"]),
+95	queue_or_execution	    aiwB6R96R1G2Pick(payload, ["model_code", "aiworker_model_code"]),
+96	queue_or_execution	    aiwB6R96R1G2Pick(appPayload, ["model_code", "aiworker_model_code"])
+102	queue_or_execution	  if (raw.includes("worker") || raw.includes("r3")) return "worker";
+106	queue_or_execution	  return "worker";
+111	queue_or_execution	    aiwB6R96R1G2Pick(payload, ["model_code", "aiworker_model_code"]),
+112	queue_or_execution	    aiwB6R1G2PickSafe(appPayload, ["model_code", "aiworker_model_code"])
+175	queue_or_execution	  const safeTitle = title || "AIWorkerOS成果物";
+268	queue_or_execution	      "## Workerへの引き渡し",
+275	queue_or_execution	      "Workerが成果物本文を作成してください。"
+317	queue_or_execution	    "AIWorkerOS成果物"
+367	queue_or_execution	  if (!aiwB6R96R1G2LooksRuntimePayload(payload)) return payload;
+420	queue_or_execution	    body.runtime_execution_request_id
+432	queue_or_execution	  const reexecuteTargetType = aiwB6R44fText(body.reexecute_target_type || metadata.reexecute_target_type || source.reexecute_target_type);
+433	queue_or_execution	  const reexecuteTargetId = aiwB6R44fText(body.reexecute_target_id || metadata.reexecute_target_id || source.reexecute_target_id);
+439	queue_or_execution	  if (reexecuteTargetType) route.reexecute_target_type = reexecuteTargetType;
+440	queue_or_execution	  if (reexecuteTargetId) route.reexecute_target_id = reexecuteTargetId;
+486	queue_or_execution	// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_END
+488	queue_or_execution	// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_START
+492	queue_or_execution	  Exposes source route metadata only for runtime-shaped rows.
+498	queue_or_execution	function aiwB6R44gR4LooksRuntimeRow(row) {
+500	queue_or_execution	  if (row.request_id || row.runtime_execution_request_id || row.request_code) return true;
+507	queue_or_execution	  if (!aiwB6R44gR4LooksRuntimeRow(row)) return row;
+548	queue_or_execution	// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_END
+552	queue_or_execution	const { buildRuntimeBrainContext, renderPromptBrainContext } = require("./brain-context-bridge.js");
+578	queue_or_execution	const port = Number(process.env.PERSONA_AIWORKEROS_PORT || "8787");
+579	queue_or_execution	const authToken = process.env.PERSONA_AIWORKEROS_AUTH_TOKEN;
+581	queue_or_execution	  console.error("ERROR: PERSONA_AIWORKEROS_AUTH_TOKEN is required");
+592	queue_or_execution	  // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_START
+596	queue_or_execution	    // Keep sendJson stable for non-runtime payloads.
+598	queue_or_execution	  // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_END
+685	queue_or_execution	      from aiworker.vw_app_aiworker_runtime_execution_endpoint_ready_v1
+695	queue_or_execution	      from aiworker.vw_app_aiworker_runtime_execution_api_contract_v1
+705	queue_or_execution	      from aiworker.vw_app_aiworker_runtime_execution_persistent_smoke_board_v1
+715	queue_or_execution	      from aiworker.vw_app_aiworker_runtime_full_pipeline_board_v1 p
+716	queue_or_execution	      left join aiworker.runtime_execution_request rr
+737	queue_or_execution	      from aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1 p
+738	queue_or_execution	      left join aiworker.runtime_execution_request rr
+759	queue_or_execution	      from aiworker.vw_app_aiworker_runtime_delivery_board_v1
+773	queue_or_execution	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_START
+776	queue_or_execution	  Common requester-facing deliverable contract for AIWorkerOS runtime execution.
+780	queue_or_execution	  - AICM is one consumer among multiple requester apps / OSs.
+781	queue_or_execution	  - AIWorkerOS creates the deliverable body and first summary.
+786	queue_or_execution	  - No external execution.
+816	queue_or_execution	  const taskTitle = aiwB6R95R3R3OneLine(payload.task_title, "AIWorkerOS成果物");
+819	queue_or_execution	  const roleLayerCode = aiwB6R95R3R3OneLine(payload.role_layer_code || payload.roleLayerCode, "runtime_resolved_by_aiworker");
+820	queue_or_execution	  const seriesCode = aiwB6R95R3R3OneLine(payload.series_code || payload.seriesCode, "runtime_resolved_by_aiworker");
+821	queue_or_execution	  const capabilityProfileCode = aiwB6R95R3R3OneLine(payload.capability_profile_code || payload.capabilityProfileCode, "runtime_resolved_by_aiworker");
+823	queue_or_execution	  const cxDepthCode = aiwB6R95R3R3OneLine(payload.cx_reference_depth_code || payload.cxReferenceDepthCode, "runtime_policy_resolved");
+824	queue_or_execution	  const cxBreadthCode = aiwB6R95R3R3OneLine(payload.cx_reference_breadth_code || payload.cxReferenceBreadthCode, "runtime_policy_resolved");
+836	queue_or_execution	    generation_owner: "AIWorkerOS",
+840	queue_or_execution	    robot_trait_basis: "model_code / role_layer_code / series_code / capability_profile_code are carried as generation basis; deeper trait resolution belongs to AIWorkerOS robot profile logic.",
+843	queue_or_execution	    cx_reference_boundary: "CX22073JW is robot brain/reference data. Access-control remains AIWorkerOS-side, not requester-app-side.",
+844	queue_or_execution	    safety_boundary: "internal_only_no_external_execution_no_pg_apply_no_destructive_action"
+850	queue_or_execution	    `AIWorkerOSが${modelCode}を成果物生成主体として、${taskTitle}の一次成果物と一次サマリを作成しました。依頼元アプリはこのsummary_textとdeliverable_ref/linkを保存してレビューに利用できます。`,
+855	queue_or_execution	    "AIWorkerOS側で生成した一次成果物です。",
+872	queue_or_execution	    "差し戻し時は追加条件をAIWorkerOSへ再依頼する。"
+882	queue_or_execution	    `- generation_owner: AIWorkerOS`,
+910	queue_or_execution	    "- external_execution_performed_flag=false",
+913	queue_or_execution	    "- CX22073JW brain access control is AIWorkerOS-side responsibility",
+945	queue_or_execution	    contract_name: "aiworkeros_common_requester_deliverable_contract",
+960	queue_or_execution	    external_execution_performed_flag: false,
+1069	queue_or_execution	  for (const nestedKey of ["payload", "request_payload", "input_json", "body", "request", "runtime_request"]) {
+1085	queue_or_execution	    "runtime_model_code"
+1105	queue_or_execution	  ]) || "AIWorkerOS 成果物";
+1167	queue_or_execution	function aiwB6R95R3Z24FetchCxRuntimeMaterials(payload) {
+1176	queue_or_execution	    "aiworker.vw_robot_readable_brain_runtime_material_canon_v1",];
+1233	queue_or_execution	  /* AIWORKEROS_B6R97R58C_MATERIAL_MARKDOWN_RETURN_WRAP_START */
+1256	queue_or_execution	  /* AIWORKEROS_B6R97R58C_MATERIAL_MARKDOWN_RETURN_WRAP_END */
+1258	queue_or_execution	  /* AIWORKEROS_B6R97R61_MATERIAL_MARKDOWN_REQUIRED_VIEWPOINTS_START */
+1330	queue_or_execution	  /* AIWORKEROS_B6R97R61_MATERIAL_MARKDOWN_REQUIRED_VIEWPOINTS_END */
+1341	queue_or_execution	  blocks.push("AIWorkerOSがCX22073JWのruntime materialを参照し、依頼内容に対応する詳細資料として再構成した成果物です。");
+1344	queue_or_execution	  blocks.push("- generation_owner: AIWorkerOS");
+1346	queue_or_execution	  blocks.push("- cx_reference_source: CX22073JW runtime material / selector v2 readable brain material");
+1347	queue_or_execution	  blocks.push("- safety_boundary: internal_only_no_external_execution_no_pg_apply_no_destructive_action");
+1384	queue_or_execution	  const rows = aiwB6R95R3Z24FetchCxRuntimeMaterials(payload);
+1399	queue_or_execution	    safeDeliverable.summaryText = "CX22073JWのruntime materialを参照し、" + aiwB6R95R3Z24TaskTitle(payload) + " の詳細資料を生成しました。";
+1402	queue_or_execution	      "selector/material path: runtime readable brain material v3/v2/v1 fallback",
+1417	queue_or_execution	    source: "CX22073JW runtime readable brain material"
+1515	queue_or_execution	  ["payload", "request_payload", "input_json", "body", "request", "runtime_request", "metadata_jsonb", "metadata"].forEach((key) => {
+1553	queue_or_execution	  const envRoots = aiwB6R98R3BSourceText(process.env.AIWORKEROS_SOURCE_FILE_ALLOWED_ROOTS)
+1629	queue_or_execution	/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_START */
+1691	queue_or_execution	    "AIWorkerOS source material analyzer v1 の結果です。text は本文読込、pdf/image/audio は後続phaseで本格解析します。"
+1710	queue_or_execution	/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_END */
+1713	queue_or_execution	  const maxFiles = Math.max(1, Math.min(10, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_FILES || "5") || 5));
+1714	queue_or_execution	  const maxBytes = Math.max(1024, Math.min(2 * 1024 * 1024, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_BYTES || "2097152") || 2097152));
+1715	queue_or_execution	  const maxTotalChars = Math.max(4000, Math.min(120000, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_TOTAL_CHARS || "60000") || 60000));
+1736	queue_or_execution	      /* AIWORKEROS_B6R97R67_MEDIA_METADATA_HOOKS_START */
+1745	queue_or_execution	      /* AIWORKEROS_B6R97R67_MEDIA_METADATA_HOOKS_END */
+1826	queue_or_execution	    "以下は依頼元から渡されたローカル参照ファイルをAIWorkerOSが読み込んだ内容です。成果物作成では、この内容を入力根拠として扱います。"
+1850	queue_or_execution	  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_START */
+1873	queue_or_execution	  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_END */
+1985	queue_or_execution	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_START
+1991	queue_or_execution	  - AIWorkerOS creates one or more deliverable artifacts from the instruction.
+1992	queue_or_execution	  - AIWorkerOS creates summary_text.
+1993	queue_or_execution	  - AIWorkerOS bundles generated artifacts into one deliverable zip.
+1998	queue_or_execution	  - No external execution.
+2016	queue_or_execution	  // AIWORKEROS_B6R95R3H_PACKAGE_META_ZIP_LINK_BEFORE_DB_FIX
+2023	queue_or_execution	  const zipLink = `aiworkeros://runtime-deliverable-zip/${fileName}`;
+2033	queue_or_execution	      source: "aiworkeros",
+2034	queue_or_execution	      storage_code: "runtime-deliverable-zip",
+2060	queue_or_execution	/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_START */
+2070	queue_or_execution	      "individual request queued",
+2071	queue_or_execution	      "worker_work_unit_id",
+2074	queue_or_execution	      "B6R97R32B individual request queued"
+2139	queue_or_execution	        if (/body|bodyMarkdown|body_markdown|markdown|deliverable|main|artifact|output|payload|summary|content|text|result|response|worker/i.test(key)) {
+2160	queue_or_execution	/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_END */
+2163	queue_or_execution	/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_START */
+2217	queue_or_execution	      "runtime",
+2222	queue_or_execution	      "worker",
+2223	queue_or_execution	      "AIWorkerOS",
+2286	queue_or_execution	      "individual request queued",
+2287	queue_or_execution	      "worker_work_unit_id",
+2290	queue_or_execution	      "B6R97R32B individual request queued"
+2368	queue_or_execution	/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_END */
+2371	queue_or_execution	/* AIWORKEROS_B6R97R46_SECTION4_REJECT_INSTRUCTION_ECHO_START */
+2402	queue_or_execution	    /* AIWORKEROS_B6R97R49C_C_R46_BODY_SELECTOR_FIXED_VERIFY_START */
+2419	queue_or_execution	      "individual request queued",
+2420	queue_or_execution	      "worker_work_unit_id",
+2423	queue_or_execution	      "B6R97R32B individual request queued"
+2470	queue_or_execution	      text.includes("差し戻し時は追加条件をAIWorkerOSへ再依頼する");
+2472	queue_or_execution	    /* AIWORKEROS_B6R97R55_R46_REJECT_NON_MAIN_ARTIFACT_TEXT_START */
+2477	queue_or_execution	      text.includes("AIWorkerOS側で生成した一次成果物です") ||
+2481	queue_or_execution	      text.includes("差し戻し時は追加条件をAIWorkerOSへ再依頼する");
+2483	queue_or_execution	    /* AIWORKEROS_B6R97R55_R46_REJECT_NON_MAIN_ARTIFACT_TEXT_END */
+2535	queue_or_execution	  /* AIWORKEROS_B6R97R49C_C_R46_BODY_SELECTOR_FIXED_VERIFY_END */
+2546	queue_or_execution	/* AIWORKEROS_B6R97R46_SECTION4_REJECT_INSTRUCTION_ECHO_END */
+2549	queue_or_execution	  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_START */
+2576	queue_or_execution	  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_END */
+2608	queue_or_execution	  /* AIWORKEROS_B6R97R52B_BUILD_ARTIFACT_LINE_BASED_FILENAMES_START */
+2639	queue_or_execution	  /* AIWORKEROS_B6R97R52B_BUILD_ARTIFACT_LINE_BASED_FILENAMES_END */
+2734	queue_or_execution	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_START */
+2790	queue_or_execution	      "individual request queued",
+2791	queue_or_execution	      "worker_work_unit_id",
+2794	queue_or_execution	      "B6R97R32B individual request queued"
+2923	queue_or_execution	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_END */
+2933	queue_or_execution	  const zipDir = process.env.AIWORKEROS_DELIVERABLE_ZIP_DIR || path.join(process.cwd(), "runtime-deliverable-zips");
+2941	queue_or_execution	  // AIWORKEROS_B6R95R3F_ZIP_LINK_ACTUAL_FILE_FIX
+2943	queue_or_execution	  const actualZipLink = `aiworkeros://runtime-deliverable-zip/${fileName}`;
+2945	queue_or_execution	    source: "aiworkeros",
+2946	queue_or_execution	    storage_code: "runtime-deliverable-zip",
+2953	queue_or_execution	    contract_name: "aiworkeros_common_requester_multi_artifact_zip_contract",
+3028	queue_or_execution	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_END
+3029	queue_or_execution	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_END
+3030	queue_or_execution	function createRuntimeRequest(payload, idempotencyKeyFromHeader) {
+3057	queue_or_execution	    "  select aiworker.fn_runtime_execution_create_request_with_route_v1(",
+3070	queue_or_execution	    "worker_output as (",
+3071	queue_or_execution	    "  select aiworker.fn_runtime_execution_submit_worker_output(",
+3082	queue_or_execution	    "  from aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1 p",
+3088	queue_or_execution	    "  'status', 'WORKER_OUTPUT_DONE',",
+3090	queue_or_execution	    "  'output_id', (select output_id from worker_output),",
+3109	queue_or_execution	    "    'output_id', (select output_id from worker_output),",
+3113	queue_or_execution	    "    'source', 'aiworkeros',",
+3114	queue_or_execution	    "    'schema', 'aiworker',",
+3115	queue_or_execution	    "    'table', 'runtime_worker_output',",
+3116	queue_or_execution	    "    'id', (select output_id from worker_output)::text",
+3128	queue_or_execution	    "      'source', 'aiworkeros',",
+3129	queue_or_execution	    "      'schema', 'aiworker',",
+3130	queue_or_execution	    "      'table', 'runtime_worker_output',",
+3131	queue_or_execution	    "      'id', (select output_id from worker_output)::text",
+3135	queue_or_execution	    "    'external_execution_performed_flag', false,",
+3178	queue_or_execution	        service: "aiworker-runtime-execution-http-api",
+3180	queue_or_execution	        external_execution: false,
+3194	queue_or_execution	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/endpoint-ready") {
+3198	queue_or_execution	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/api-contract") {
+3202	queue_or_execution	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/persistent-smoke") {
+3206	queue_or_execution	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/pipeline-board") {
+3210	queue_or_execution	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/app-read-payload") {
+3214	queue_or_execution	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/delivery") {
+3220	queue_or_execution	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/brain-context") {
+3235	queue_or_execution	      const brainContext = buildRuntimeBrainContext({
+3244	queue_or_execution	        external_execution_performed_flag: false,
+3254	queue_or_execution	    if (req.method === "POST" && url.pathname === "/aiworker/v1/runtime-execution/request") {
+3268	queue_or_execution	      const result = createRuntimeRequest(payload, idempotencyKey);
+3284	queue_or_execution	        external_execution_performed_flag: false,
+3293	queue_or_execution	  console.log(`AIWorkerOS runtime execution HTTP API listening on http://127.0.0.1:${port}`);
+3297	queue_or_execution	// AIW_B6R97R14_QUEUE_CONSUMER_START
+3298	queue_or_execution	// AIWorkerOS-owned queue consumer.
+3299	queue_or_execution	// AICM does not trigger execution here.
+3300	queue_or_execution	// This consumer scans waiting/retryable work, claims it, calls existing createRuntimeRequest,
+3301	queue_or_execution	// records AIWorkerOS request/output metadata, and creates/updates AICM human review rows.
+3324	queue_or_execution	    throw new Error("PERSONA_DATABASE_URL is not set for AIWorkerOS consumer");
+3350	queue_or_execution	    throw new Error("AIWorkerOS consumer failed to parse psql JSON: " + error.message + " raw=" + raw.slice(0, 400));
+3354	queue_or_execution	function aiwB6R97R14ClaimWorkUnits(limit) {
+3357	queue_or_execution	    "  select u.aicm_worker_work_unit_id",
+3358	queue_or_execution	    "  from business.aicm_worker_work_unit u",
+3360	queue_or_execution	    "    coalesce(u.metadata_jsonb->>'aiworkeros_execution_state','') in ('waiting','waiting_for_artifact_zip')",
+3361	queue_or_execution	    "    or lower(coalesce(u.metadata_jsonb->>'aiworkeros_retryable','false')) in ('true','t','1','yes')",
+3363	queue_or_execution	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_consumer_claim_state','') <> 'processing'",
+3364	queue_or_execution	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_request_id','') = ''",
+3368	queue_or_execution	    "), claimed as (",
+3369	queue_or_execution	    "  update business.aicm_worker_work_unit u",
+3371	queue_or_execution	    "      'aiworkeros_execution_state', 'processing',",
+3372	queue_or_execution	    "      'aiworkeros_retryable', 'false',",
+3373	queue_or_execution	    "      'aiworkeros_consumer_claim_state', 'processing',",
+3374	queue_or_execution	    "      'aiworkeros_claimed_by', 'AIWorkerOS/B6R97R14',",
+3375	queue_or_execution	    "      'aiworkeros_claimed_at', now()::text",
+3379	queue_or_execution	    "  where u.aicm_worker_work_unit_id = p.aicm_worker_work_unit_id",
+3382	queue_or_execution	    "select coalesce(jsonb_agg(row_json), '[]'::jsonb)::text from claimed;"
+3390	queue_or_execution	  const workUnitId = String(row.aicm_worker_work_unit_id || row.worker_work_unit_id || row.work_unit_id || "");
+3391	queue_or_execution	  const sourceRouteCode = String(meta.source_route_code || row.source_route_code || "aicm_worker_work_unit");
+3392	queue_or_execution	  const title = String(row.work_unit_name || row.task_name || row.title || "AICompanyManager Worker作業");
+3397	queue_or_execution	    "AICM worker_work_unit_id: " + workUnitId,
+3409	queue_or_execution	    requested_by_ref: String(meta.requested_by_ref || "AIWorkerOSConsumer"),
+3412	queue_or_execution	      aicm_worker_work_unit_id: workUnitId,
+3416	queue_or_execution	      consumer_code: "B6R97R14"
+3424	queue_or_execution	    (result && result.runtime_request_id) ||
+3458	queue_or_execution	  const id = row && row.aicm_worker_work_unit_id;
+3472	queue_or_execution	    "update business.aicm_worker_work_unit",
+3474	queue_or_execution	    "  'aiworkeros_execution_state', 'waiting',",
+3475	queue_or_execution	    "  'aiworkeros_retryable', 'true',",
+3476	queue_or_execution	    "  'aiworkeros_consumer_claim_state', 'failed',",
+3477	queue_or_execution	    "  'aiworkeros_last_error', " + aiwB6R97R14SqlLiteral(message) + ",",
+3478	queue_or_execution	    "  'aiworkeros_last_failed_at', now()::text",
+3480	queue_or_execution	    "where aicm_worker_work_unit_id = " + aiwB6R97R14UuidOrNull(id) + ";"
+3509	queue_or_execution	    "  from business.aicm_worker_work_unit u",
+3510	queue_or_execution	    "  where coalesce(u.metadata_jsonb->>'aiworkeros_claimed_by','') = 'AIWorkerOS/B6R97R14'",
+3511	queue_or_execution	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_request_id','') <> ''",
+3512	queue_or_execution	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_output_id','') <> ''",
+3513	queue_or_execution	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_deliverable_link','') <> ''",
+3514	queue_or_execution	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_consumer_claim_state','') in ('failed','review_registration_failed')",
+3518	queue_or_execution	    "  update business.aicm_worker_work_unit u",
+3522	queue_or_execution	    "    metadata_jsonb = (coalesce(u.metadata_jsonb, '{}'::jsonb) - 'aiworkeros_last_error') || jsonb_build_object(",
+3523	queue_or_execution	    "      'aiworkeros_execution_state', 'completed',",
+3524	queue_or_execution	    "      'aiworkeros_retryable', 'false',",
+3525	queue_or_execution	    "      'aiworkeros_consumer_claim_state', 'completed',",
+3526	queue_or_execution	    "      'aiworkeros_artifact_kind_code', (select artifact_kind_code from valid_artifact_kind),",
+3527	queue_or_execution	    "      'aiworkeros_review_finalized_by', 'B6R97R19C',",
+3528	queue_or_execution	    "      'aiworkeros_review_finalized_at', now()::text",
+3532	queue_or_execution	    "  where u.aicm_worker_work_unit_id = t.aicm_worker_work_unit_id",
+3536	queue_or_execution	    "  select h.aicm_human_review_item_id, h.related_worker_work_unit_id",
+3538	queue_or_execution	    "  join updated_unit u on h.related_worker_work_unit_id = u.aicm_worker_work_unit_id",
+3539	queue_or_execution	    "  where coalesce(h.human_review_status_code,'') = 'pending'",
+3544	queue_or_execution	    "    review_title = coalesce(nullif(h.review_title,''), '納品サマリー確認: ' || coalesce(u.work_unit_name, 'AIWorkerOS成果物')),",
+3545	queue_or_execution	    "    delivery_summary_text = coalesce(nullif(h.delivery_summary_text,''), 'AIWorkerOS consumer generated deliverable, summary, and delivery package.'),",
+3546	queue_or_execution	    "    main_changes_text = coalesce(nullif(h.main_changes_text,''), 'AIWorkerOS consumer generated deliverable, summary, and zip link.'),",
+3547	queue_or_execution	    "    ai_review_result_text = coalesce(nullif(h.ai_review_result_text,''), 'AIWorkerOS consumer completed deliverable generation.'),",
+3548	queue_or_execution	    "    artifact_link = coalesce(nullif(h.artifact_link,''), u.metadata_jsonb->>'aiworkeros_deliverable_link'),",
+3550	queue_or_execution	    "      'source_route_code', coalesce(u.metadata_jsonb->>'source_route_code', 'aicm_worker_work_unit'),",
+3551	queue_or_execution	    "      'aiworkeros_request_id', u.metadata_jsonb->>'aiworkeros_request_id',",
+3552	queue_or_execution	    "      'aiworkeros_output_id', u.metadata_jsonb->>'aiworkeros_output_id',",
+3554	queue_or_execution	    "      'consumer_code', 'B6R97R19C'",
+3558	queue_or_execution	    "  where h.related_worker_work_unit_id = u.aicm_worker_work_unit_id",
+3568	queue_or_execution	    "    related_worker_work_unit_id,",
+3589	queue_or_execution	    "    u.aicm_worker_work_unit_id,",
+3592	queue_or_execution	    "    '納品サマリー確認: ' || coalesce(u.work_unit_name, 'AIWorkerOS成果物'),",
+3593	queue_or_execution	    "    'AIWorkerOS consumer generated deliverable, summary, and delivery package.',",
+3594	queue_or_execution	    "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+3595	queue_or_execution	    "    'AIWorkerOS consumer completed deliverable generation.',",
+3597	queue_or_execution	    "    u.metadata_jsonb->>'aiworkeros_deliverable_link',",
+3598	queue_or_execution	    "    'AIWorkerOS',",
+3600	queue_or_execution	    "    'pending',",
+3603	queue_or_execution	    "      'source_route_code', coalesce(u.metadata_jsonb->>'source_route_code', 'aicm_worker_work_unit'),",
+3604	queue_or_execution	    "      'aiworkeros_request_id', u.metadata_jsonb->>'aiworkeros_request_id',",
+3605	queue_or_execution	    "      'aiworkeros_output_id', u.metadata_jsonb->>'aiworkeros_output_id',",
+3607	queue_or_execution	    "      'consumer_code', 'B6R97R19C'",
+3613	queue_or_execution	    "    where er.related_worker_work_unit_id = u.aicm_worker_work_unit_id",
+3625	queue_or_execution	  const workUnitId = String(row.aicm_worker_work_unit_id || "");
+3627	queue_or_execution	    throw new Error("invalid work unit id for AIWorkerOS consumer success");
+3635	queue_or_execution	  const sourceRouteCode = String(meta.source_route_code || payload.source_route_code || "aicm_worker_work_unit");
+3636	queue_or_execution	  const title = String(payload.task_title || "AIWorkerOS成果物レビュー");
+3645	queue_or_execution	  // Do not embed the full AIWorkerOS result JSON into psql -c SQL.
+3653	queue_or_execution	    consumer_code: "B6R97R16"
+3657	queue_or_execution	    "update business.aicm_worker_work_unit",
+3661	queue_or_execution	    "      'aiworkeros_execution_state', 'completed',",
+3662	queue_or_execution	    "      'aiworkeros_retryable', 'false',",
+3663	queue_or_execution	    "      'aiworkeros_consumer_claim_state', 'completed',",
+3664	queue_or_execution	    "      'aiworkeros_request_id', " + aiwB6R97R14SqlLiteral(requestId) + ",",
+3665	queue_or_execution	    "      'aiworkeros_output_id', " + aiwB6R97R14SqlLiteral(outputId) + ",",
+3666	queue_or_execution	    "      'aiworkeros_deliverable_link', " + aiwB6R97R14SqlLiteral(link) + ",",
+3667	queue_or_execution	    "      'aiworkeros_completed_at', now()::text",
+3670	queue_or_execution	    "where aicm_worker_work_unit_id = " + aiwB6R97R14UuidOrNull(workUnitId) + ";",
+3675	queue_or_execution	    "  where related_worker_work_unit_id = " + aiwB6R97R14UuidOrNull(workUnitId),
+3676	queue_or_execution	    "    and coalesce(human_review_status_code,'') = 'pending'",
+3683	queue_or_execution	    "      ai_review_result_text = 'AIWorkerOS consumer completed deliverable generation.',",
+3686	queue_or_execution	    "        'aiworkeros_request_id', " + aiwB6R97R14SqlLiteral(requestId) + ",",
+3687	queue_or_execution	    "        'aiworkeros_output_id', " + aiwB6R97R14SqlLiteral(outputId) + ",",
+3688	queue_or_execution	    "        'aiworkeros_result_compact', " + aiwB6R97R14SqlLiteral(compactResultJson) + "::jsonb",
+3700	queue_or_execution	    "    related_worker_work_unit_id,",
+3726	queue_or_execution	    "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+3727	queue_or_execution	    "    'AIWorkerOS consumer completed deliverable generation.',",
+3730	queue_or_execution	    "    'AIWorkerOS',",
+3732	queue_or_execution	    "    'pending',",
+3736	queue_or_execution	    "      'aiworkeros_request_id', " + aiwB6R97R14SqlLiteral(requestId) + ",",
+3737	queue_or_execution	    "      'aiworkeros_output_id', " + aiwB6R97R14SqlLiteral(outputId) + ",",
+3738	queue_or_execution	    "      'aiworkeros_result_compact', " + aiwB6R97R14SqlLiteral(compactResultJson) + "::jsonb,",
+3739	queue_or_execution	    "      'consumer_code', 'B6R97R14'",
+3750	queue_or_execution	async function aiwB6R97R14ConsumerOnce(reason) {
+3751	queue_or_execution	  const state = globalThis.__AIW_B6R97R14_QUEUE_CONSUMER_STATE__ || {
+3752	queue_or_execution	    running: false,
+3757	queue_or_execution	  globalThis.__AIW_B6R97R14_QUEUE_CONSUMER_STATE__ = state;
+3759	queue_or_execution	  if (state.running) return { skipped: true, reason: "already_running" };
+3761	queue_or_execution	  state.running = true;
+3765	queue_or_execution	  const limit = Math.max(1, Number(process.env.AIWORKER_QUEUE_CONSUMER_BATCH_LIMIT || "5") || 5);
+3773	queue_or_execution	    const rows = aiwB6R97R14ClaimWorkUnits(limit);
+3782	queue_or_execution	      const idempotencyKey = "aiworker-consumer-b6r97r14:" + String(row.aicm_worker_work_unit_id || "");
+3784	queue_or_execution	        const result = createRuntimeRequest(payload, idempotencyKey);
+3795	queue_or_execution	    state.running = false;
+3799	queue_or_execution	function aiwB6R97R14StartConsumer() {
+3800	queue_or_execution	  if (process.env.AIWORKER_QUEUE_CONSUMER_ENABLED === "0") {
+3801	queue_or_execution	    console.log("[B6R97R14] AIWorkerOS queue consumer disabled by env");
+3805	queue_or_execution	  const key = "__AIW_B6R97R14_QUEUE_CONSUMER_STARTED__";
+3809	queue_or_execution	  const intervalMs = Math.max(1000, Number(process.env.AIWORKER_QUEUE_CONSUMER_INTERVAL_MS || "5000") || 5000);
+3812	queue_or_execution	    aiwB6R97R14ConsumerOnce("startup").catch((error) => {
+3813	queue_or_execution	      console.error("[B6R97R14] startup consumer failed", String(error && error.message ? error.message : error).replace(/postgres(?:ql)?:\/\/[^\s]+/gi, "[DB_URL_REDACTED]").split("\n").slice(0, 8).join("\n"));
+3818	queue_or_execution	    aiwB6R97R14ConsumerOnce("interval").catch((error) => {
+3819	queue_or_execution	      console.error("[B6R97R14] interval consumer failed", String(error && error.message ? error.message : error).replace(/postgres(?:ql)?:\/\/[^\s]+/gi, "[DB_URL_REDACTED]").split("\n").slice(0, 8).join("\n"));
+3823	queue_or_execution	  globalThis.__AIW_B6R97R14_QUEUE_CONSUMER_TIMER__ = timer;
+3828	queue_or_execution	  console.log("[B6R97R14] AIWorkerOS queue consumer started interval_ms=" + intervalMs);
+3831	queue_or_execution	setTimeout(aiwB6R97R14StartConsumer, 1500);
+3832	queue_or_execution	// AIW_B6R97R14_QUEUE_CONSUMER_END
+3836	queue_or_execution	// Deletes only AICM runtime-source-files/tmp files after worker_unit reaches completed/review_waiting.
+3837	queue_or_execution	// No cleanup for waiting/running/retryable states.
+3844	queue_or_execution	  "/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/storage/runtime-source-files/tmp";
+3918	queue_or_execution	    "  'id', aicm_worker_work_unit_id::text,",
+3923	queue_or_execution	    "  'aiworkeros_execution_state', coalesce(metadata_jsonb->>'aiworkeros_execution_state',''),",
+3924	queue_or_execution	    "  'aiworkeros_consumer_claim_state', coalesce(metadata_jsonb->>'aiworkeros_consumer_claim_state',''),",
+3925	queue_or_execution	    "  'aiworkeros_retryable', coalesce(metadata_jsonb->>'aiworkeros_retryable','false')",
+3927	queue_or_execution	    "from business.aicm_worker_work_unit",
+3928	queue_or_execution	    "where (reference_files_text ilike '%runtime-source-files/tmp%' or metadata_jsonb::text ilike '%runtime-source-files/tmp%')",
+3931	queue_or_execution	    "  and coalesce(metadata_jsonb->>'aiworkeros_execution_state','') = 'completed'",
+3932	queue_or_execution	    "  and coalesce(metadata_jsonb->>'aiworkeros_consumer_claim_state','') = 'completed'",
+3933	queue_or_execution	    "  and coalesce(metadata_jsonb->>'aiworkeros_retryable','false') in ('false','')",
+4011	queue_or_execution	    "update business.aicm_worker_work_unit",
+4014	queue_or_execution	    "where aicm_worker_work_unit_id = '" + id + "'::uuid",
+4017	queue_or_execution	    "  and coalesce(metadata_jsonb->>'aiworkeros_execution_state','') = 'completed'",
+4018	queue_or_execution	    "  and coalesce(metadata_jsonb->>'aiworkeros_consumer_claim_state','') = 'completed'",
+4019	queue_or_execution	    "  and coalesce(metadata_jsonb->>'aiworkeros_retryable','false') in ('false','')",
+4032	queue_or_execution	  if (process.env.AIWORKEROS_SOURCE_MATERIAL_CLEANUP_DISABLED === "1") {
+4087	queue_or_execution	  }, Number(process.env.AIWORKEROS_SOURCE_MATERIAL_CLEANUP_INTERVAL_MS || "60000"));

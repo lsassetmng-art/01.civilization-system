@@ -1,0 +1,18 @@
+218145:# AIWorkerOS Model Append: Model Capability Card
+218153:Connect Robot Capability Profile to app-facing model selection.
+218171:- aiworker.vw_app_aiworker_model_capability_overlay_v1
+218172:- aiworker.vw_app_aiworker_model_selection_capability_card_v1
+218173:- aiworker.vw_app_aiworker_robot_selection_card_v1
+218189:- high_function_business_specialized_flag = true
+218193:- 高機能・実務特化・高精度レビュー・複雑作業対応
+218471:# AIWorkerOS Model Append: Robot Capability Profile
+218479:Robot Capability Profile adds a robot-performance layer separate from role, series tendency, and CX knowledge level.
+220088:# AIWorkerOS Integration Append: Model Capability Card Reference Surface
+220096:- aiworker.vw_app_aiworker_model_capability_overlay_v1
+220097:- aiworker.vw_app_aiworker_model_selection_capability_card_v1
+220098:- aiworker.vw_app_aiworker_robot_selection_card_v1
+220104:- aiworker.vw_app_aiworker_robot_selection_card_v1
+220191:# AIWorkerOS Integration Append: Robot Capability Profile Reference Surface
+221568:# AIWorkerOS Policy Append: Model Capability Card
+221675:# AIWorkerOS Policy Append: Robot Capability Profile
+221683:Robot Capability Profile is a capability and performance metadata layer.

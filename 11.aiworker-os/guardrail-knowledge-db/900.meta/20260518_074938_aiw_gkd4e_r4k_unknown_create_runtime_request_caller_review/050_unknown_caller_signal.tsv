@@ -1,0 +1,165 @@
+caller_line	line	category	text
+3268	3088	signal	"  'status', 'WORKER_OUTPUT_DONE',",
+3268	3089	signal	"  'request_id', (select request_id from created),",
+3268	3090	signal	"  'output_id', (select output_id from worker_output),",
+3268	3091	signal	"  'idempotency_key', :'idempotency_key',",
+3268	3092	signal	"  'requester_app_ref', :'source_app_ref',",
+3268	3093	signal	"  'source_request_ref', :'source_request_ref',",
+3268	3095	signal	"  'payload', coalesce((select app_read_payload_jsonb from board limit 1), '{}'::jsonb),",
+3268	3097	signal	"  'generation_basis', :'generation_basis_jsonb'::jsonb,",    "  'deliverable', jsonb_build_object(",
+3268	3099	signal	"    'deliverable_kind', 'document',",
+3268	3100	signal	"    'title', :'output_title_ja',",
+3268	3101	signal	"    'body_format', 'markdown',",
+3268	3102	signal	"    'deliverable_package', :'deliverable_package_jsonb'::jsonb,",
+3268	3103	signal	"    'generated_artifacts', :'generated_artifacts_jsonb'::jsonb,",
+3268	3104	signal	"    'body_markdown', :'output_body_ja',",
+3268	3105	signal	"    'summary_text', :'output_summary_ja',",
+3268	3109	signal	"    'output_id', (select output_id from worker_output),",
+3268	3110	signal	"    'zip_link', :'deliverable_zip_link'",
+3268	3112	signal	"  'deliverable_ref', jsonb_build_object(",
+3268	3115	signal	"    'table', 'runtime_worker_output',",
+3268	3116	signal	"    'id', (select output_id from worker_output)::text",
+3268	3118	signal	"  'deliverable_link', :'deliverable_zip_link',",    "  'requester_delivery_payload', jsonb_build_object(",
+3268	3119	signal	"    'summary_text', :'output_summary_ja',",
+3268	3120	signal	"    'deliverable_title', :'output_title_ja',",
+3268	3122	signal	"    'deliverable_kind', 'document',",
+3268	3123	signal	"    'body_format', 'markdown',",
+3268	3124	signal	"    'generated_artifacts', :'generated_artifacts_jsonb'::jsonb,",
+3268	3125	signal	"    'deliverable_link', :'deliverable_zip_link',",
+3268	3126	signal	"    'deliverable_package', :'deliverable_package_jsonb'::jsonb,",
+3268	3127	signal	"    'deliverable_ref', jsonb_build_object(",
+3268	3130	signal	"      'table', 'runtime_worker_output',",
+3268	3131	signal	"      'id', (select output_id from worker_output)::text",
+3268	3142	signal	const responsePayload = psqlJson(sql, {
+3268	3143	signal	app_surface_code: payload.app_surface_code,
+3268	3144	signal	model_code: payload.model_code,
+3268	3145	signal	task_domain_code: payload.task_domain_code,
+3268	3146	signal	task_title: payload.task_title,
+3268	3147	signal	task_instruction_ja: payload.task_instruction_ja,
+3268	3148	signal	source_app_ref: payload.source_app_ref || "HTTP_LOCAL",
+3268	3149	signal	source_request_ref: payload.source_request_ref || "",
+3268	3151	signal	requested_by_ref: payload.requested_by_ref || "human",
+3268	3152	signal	idempotency_key: idempotencyKey,
+3268	3153	signal	output_title_ja: deliverable.outputTitle,
+3268	3154	signal	output_body_ja: deliverable.bodyMarkdown,
+3268	3155	signal	output_summary_ja: deliverable.summaryText,
+3268	3156	signal	quality_notes: deliverable.qualityNotes,
+3268	3157	signal	unresolved_issues: deliverable.unresolvedIssues,
+3268	3158	signal	next_steps: deliverable.nextSteps,
+3268	3159	signal	deliverable_package_jsonb: JSON.stringify(deliverable.deliverablePackage),
+3268	3160	signal	deliverable_zip_link: deliverable.deliverablePackage.zip_link,
+3268	3161	signal	generated_artifacts_jsonb: JSON.stringify(deliverable.generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index))),
+3268	3162	signal	robot_context_jsonb: JSON.stringify(deliverable.robotContext),
+3268	3163	signal	generation_basis_jsonb: JSON.stringify(deliverable.generationBasis),
+3268	3164	signal	output_payload_jsonb: JSON.stringify(deliverable.outputPayload),
+3268	3165	signal	artifacts_jsonb: JSON.stringify(deliverable.artifacts)
+3268	3168	signal	return aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable);
+3268	3171	signal	const server = http.createServer(async (req, res) => {
+3268	3172	signal	const url = new URL(req.url, `http://${req.headers.host || "127.0.0.1"}`);
+3268	3174	signal	try {
+3268	3175	signal	if (req.method === "GET" && url.pathname === "/health") {
+3268	3176	signal	return sendJson(res, 200, {
+3268	3178	signal	service: "aiworker-runtime-execution-http-api",
+3268	3179	signal	db: "PERSONA_DATABASE_URL",
+3268	3187	signal	return sendJson(res, 401, {
+3268	3194	signal	if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/endpoint-ready") {
+3268	3195	signal	return sendJson(res, 200, { result: "ok", data: endpointReady() });
+3268	3198	signal	if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/api-contract") {
+3268	3199	signal	return sendJson(res, 200, { result: "ok", data: apiContracts() });
+3268	3202	signal	if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/persistent-smoke") {
+3268	3203	signal	return sendJson(res, 200, { result: "ok", data: persistentSmoke() });
+3268	3206	signal	if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/pipeline-board") {
+3268	3207	signal	return sendJson(res, 200, { result: "ok", data: pipelineBoard(url.searchParams) });
+3268	3210	signal	if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/app-read-payload") {
+3268	3211	signal	return sendJson(res, 200, { result: "ok", data: appReadPayload(url.searchParams) });
+3268	3214	signal	if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/delivery") {
+3268	3215	signal	return sendJson(res, 200, { result: "ok", data: deliveryBoard(url.searchParams) });
+3268	3220	signal	if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/brain-context") {
+3268	3221	signal	const modelCode = url.searchParams.get("model_code") || url.searchParams.get("modelCode") || "";
+3268	3223	signal	url.searchParams.get("use_purpose_code") ||
+3268	3224	signal	url.searchParams.get("purpose_code") ||
+3268	3225	signal	url.searchParams.get("task_domain_code") ||
+3268	3227	signal	const domainsRaw = url.searchParams.get("domains") || "";
+3268	3232	signal	url.searchParams.get("include_missing_sources") === "true" ||
+3268	3233	signal	url.searchParams.get("includeMissingSources") === "true";
+3268	3235	signal	const brainContext = buildRuntimeBrainContext({
+3268	3242	signal	return sendJson(res, 200, {
+3268	3254	signal	if (req.method === "POST" && url.pathname === "/aiworker/v1/runtime-execution/request") {
+3268	3255	signal	const bodyText = await readBody(req);
+3268	3256	signal	let payload;
+3268	3257	signal	try {
+3268	3258	signal	payload = bodyText ? JSON.parse(bodyText) : {};
+3268	3259	signal	} catch (e) {
+3268	3260	signal	return sendJson(res, 400, {
+3268	3263	signal	message: "Request body must be valid JSON."
+3268	3267	signal	const idempotencyKey = req.headers["idempotency-key"] || "";
+3268	3268	signal	const result = createRuntimeRequest(payload, idempotencyKey);
+3268	3269	signal	return sendJson(res, 201, result);
+3268	3272	signal	return sendJson(res, 404, {
+3268	3275	signal	path: url.pathname
+3268	3277	signal	} catch (err) {
+3268	3279	signal	return sendJson(res, status, {
+3268	3281	signal	error_code: status === 400 ? "BAD_REQUEST" : "INTERNAL_ERROR",
+3268	3292	signal	server.listen(port, "127.0.0.1", () => {
+3268	3293	signal	console.log(`AIWorkerOS runtime execution HTTP API listening on http://127.0.0.1:${port}`);
+3268	3297	signal	// AIW_B6R97R14_QUEUE_CONSUMER_START
+3268	3298	signal	// AIWorkerOS-owned queue consumer.
+3268	3300	signal	// This consumer scans waiting/retryable work, claims it, calls existing createRuntimeRequest,
+3268	3301	signal	// records AIWorkerOS request/output metadata, and creates/updates AICM human review rows.
+3268	3304	signal	function aiwB6R97R14DbUrl() {
+3268	3305	signal	return process.env.PERSONA_DATABASE_URL || process.env.DATABASE_URL || "";
+3268	3308	signal	function aiwB6R97R14SqlLiteral(value) {
+3268	3312	signal	function aiwB6R97R14IsUuid(value) {
+3268	3316	signal	function aiwB6R97R14UuidOrNull(value) {
+3268	3321	signal	function aiwB6R97R14PsqlText(sql) {
+3268	3322	signal	const dbUrl = aiwB6R97R14DbUrl();
+3268	3323	signal	if (!dbUrl) {
+3268	3324	signal	throw new Error("PERSONA_DATABASE_URL is not set for AIWorkerOS consumer");
+3268	3330	signal	dbUrl,
+3268	3344	signal	function aiwB6R97R14PsqlJson(sql, fallback) {
+3268	3347	signal	try {
+3268	3349	signal	} catch (error) {
+3268	3350	signal	throw new Error("AIWorkerOS consumer failed to parse psql JSON: " + error.message + " raw=" + raw.slice(0, 400));
+3268	3354	signal	function aiwB6R97R14ClaimWorkUnits(limit) {
+3268	3360	signal	"    coalesce(u.metadata_jsonb->>'aiworkeros_execution_state','') in ('waiting','waiting_for_artifact_zip')",
+3268	3361	signal	"    or lower(coalesce(u.metadata_jsonb->>'aiworkeros_retryable','false')) in ('true','t','1','yes')",
+3268	3363	signal	"    and coalesce(u.metadata_jsonb->>'aiworkeros_consumer_claim_state','') <> 'processing'",
+3268	3364	signal	"    and coalesce(u.metadata_jsonb->>'aiworkeros_request_id','') = ''",
+3268	3368	signal	"), claimed as (",
+3268	3372	signal	"      'aiworkeros_retryable', 'false',",
+3268	3373	signal	"      'aiworkeros_consumer_claim_state', 'processing',",
+3268	3374	signal	"      'aiworkeros_claimed_by', 'AIWorkerOS/B6R97R14',",
+3268	3375	signal	"      'aiworkeros_claimed_at', now()::text",
+3268	3382	signal	"select coalesce(jsonb_agg(row_json), '[]'::jsonb)::text from claimed;"
+3268	3388	signal	function aiwB6R97R14BuildPayload(row) {
+3268	3408	signal	source_request_ref: workUnitId,
+3268	3409	signal	requested_by_ref: String(meta.requested_by_ref || "AIWorkerOSConsumer"),
+3268	3421	signal	function aiwB6R97R14RequestId(result) {
+3268	3423	signal	(result && result.request_id) ||
+3268	3424	signal	(result && result.runtime_request_id) ||
+3268	3425	signal	(result && result.data && result.data.request_id) ||
+3268	3430	signal	function aiwB6R97R14OutputId(result) {
+3268	3432	signal	(result && result.output_id) ||
+3268	3433	signal	(result && result.deliverable_ref && result.deliverable_ref.id) ||
+3268	3434	signal	(result && result.requester_delivery_payload && result.requester_delivery_payload.deliverable_ref && result.requester_delivery_payload.deliverable_ref.id) ||
+3268	3439	signal	function aiwB6R97R14Summary(result) {
+3268	3441	signal	(result && result.requester_delivery_payload && result.requester_delivery_payload.summary_text) ||
+3268	3442	signal	(result && result.deliverable && result.deliverable.summary_text) ||
+3268	3448	signal	function aiwB6R97R14DeliverableLink(result) {
+3268	3450	signal	(result && result.deliverable_link) ||
+3268	3451	signal	(result && result.requester_delivery_payload && result.requester_delivery_payload.deliverable_link) ||
+3268	3452	signal	(result && result.deliverable && result.deliverable.zip_link) ||
+3268	3457	signal	function aiwB6R97R14MarkFailed(row, error) {
+3268	3461	signal	// AIW_B6R97R17_PSQL_STDIN_SAFE_ERROR_PATCH: never store DB URL or full SQL command in metadata.
+3268	3464	signal	.replace(/postgres(?:ql)?:\/\/[^\s]+/gi, "[DB_URL_REDACTED]")
+3268	3475	signal	"  'aiworkeros_retryable', 'true',",
+3268	3476	signal	"  'aiworkeros_consumer_claim_state', 'failed',",
+3268	3488	signal	function aiwB6R97R19CAicmArtifactKindCode() {
+3268	3489	signal	// AIW_B6R97R19C_ARTIFACT_KIND_RESOLVER_FINALIZER_PATCH
+3268	3493	signal	function aiwB6R97R19CFinalizeGeneratedReviewRows(limit) {
+3268	3494	signal	const artifactKind = aiwB6R97R19CAicmArtifactKindCode();
+3268	3498	signal	"with valid_artifact_kind as (",
+3268	3499	signal	"  select " + aiwB6R97R14SqlLiteral(artifactKind) + "::text as artifact_kind_code",
+3268	3504	signal	"      and c.conname = 'chk_aicm_human_review_artifact_kind'",
+3268	3505	signal	"      and pg_get_constraintdef(c.oid) like '%' || " + aiwB6R97R14SqlLiteral(artifactKind) + " || '%'",
+3268	3507	signal	"), target as (",

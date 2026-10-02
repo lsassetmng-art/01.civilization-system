@@ -1,0 +1,31 @@
+16:- execution control view: aiworker.vw_app_aiworker_runtime_control_profile_v1
+17:- prompt fragment view: aiworker.vw_app_aiworker_runtime_control_prompt_fragment_v1
+208350:- external_execution_allowed_flag = false
+208351:- pg_apply_allowed_flag = false
+208352:- destructive_action_allowed_flag = false
+208676:- external_execution_allowed_flag = false
+208677:- pg_apply_allowed_flag = false
+208678:- destructive_action_allowed_flag = false
+218735:# AIWorkerOS Model Append: Runtime Control Profile
+218743:Runtime Control Profile converts robot metadata into actual behavior control.
+218751:- aiworker.vw_app_aiworker_runtime_control_profile_v1
+218755:- aiworker.vw_app_aiworker_runtime_control_prompt_fragment_v1
+218770:- operation_mode_code
+218782:- external_execution_allowed_flag
+218783:- pg_apply_allowed_flag
+218784:- destructive_action_allowed_flag
+219922:- external_execution_allowed_flag = false
+219923:- pg_apply_allowed_flag = false
+219924:- destructive_action_allowed_flag = false
+220452:- external_execution_allowed_flag = false
+220453:- pg_apply_allowed_flag = false
+220454:- destructive_action_allowed_flag = false
+220556:# AIWorkerOS Integration Append: Runtime Control Profile Reference Surface
+220566:- aiworker.vw_app_aiworker_runtime_control_profile_v1
+220570:- aiworker.vw_app_aiworker_runtime_control_prompt_fragment_v1
+220580:- aiworker.vw_app_aiworker_runtime_control_profile_v1
+222173:# AIWorkerOS Policy Append: Runtime Control Profile
+222181:Runtime Control Profile is the execution behavior boundary.
+222197:- external_execution_allowed_flag
+222198:- pg_apply_allowed_flag
+222199:- destructive_action_allowed_flag

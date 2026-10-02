@@ -1,0 +1,140 @@
+table_schema	table_name	ordinal_position	column_name	data_type	udt_name	is_nullable
+aiworker	helpdesk_answer_template	1	answer_template_id	uuid	uuid	NO
+aiworker	helpdesk_answer_template	2	template_code	text	text	NO
+aiworker	helpdesk_answer_template	3	use_case	text	text	NO
+aiworker	helpdesk_answer_template	4	locale	text	text	NO
+aiworker	helpdesk_answer_template	5	answer_structure	jsonb	jsonb	NO
+aiworker	helpdesk_answer_template	6	required_disclaimer	text	text	YES
+aiworker	helpdesk_answer_template	7	forbidden_phrases	jsonb	jsonb	NO
+aiworker	helpdesk_answer_template	8	example_response	text	text	YES
+aiworker	helpdesk_answer_template	9	is_active	boolean	bool	NO
+aiworker	helpdesk_answer_template	10	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_answer_template	11	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_app_support_profile	1	support_profile_id	uuid	uuid	NO
+aiworker	helpdesk_app_support_profile	2	app_code	text	text	NO
+aiworker	helpdesk_app_support_profile	3	support_summary	text	text	NO
+aiworker	helpdesk_app_support_profile	4	available_support_modes	jsonb	jsonb	NO
+aiworker	helpdesk_app_support_profile	5	default_escalation_policy_code	text	text	YES
+aiworker	helpdesk_app_support_profile	6	allowed_attachment_policy_code	text	text	YES
+aiworker	helpdesk_app_support_profile	7	answer_style_code	text	text	NO
+aiworker	helpdesk_app_support_profile	8	return_route_enabled	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	9	screen_help_enabled	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	10	operation_flow_enabled	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	11	error_troubleshooting_enabled	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	12	qa_enabled	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	13	ticket_enabled	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	14	evidence_attachment_enabled	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	15	is_active	boolean	bool	NO
+aiworker	helpdesk_app_support_profile	16	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_app_support_profile	17	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_error_pattern	1	error_pattern_id	uuid	uuid	NO
+aiworker	helpdesk_error_pattern	2	app_code	text	text	NO
+aiworker	helpdesk_error_pattern	3	error_code	text	text	YES
+aiworker	helpdesk_error_pattern	4	error_pattern	text	text	NO
+aiworker	helpdesk_error_pattern	5	detected_from	text	text	NO
+aiworker	helpdesk_error_pattern	6	probable_cause	text	text	YES
+aiworker	helpdesk_error_pattern	7	user_facing_explanation	text	text	NO
+aiworker	helpdesk_error_pattern	8	developer_action	text	text	YES
+aiworker	helpdesk_error_pattern	9	safe_next_action	text	text	NO
+aiworker	helpdesk_error_pattern	10	escalation_required	boolean	bool	NO
+aiworker	helpdesk_error_pattern	11	related_runbook_code	text	text	YES
+aiworker	helpdesk_error_pattern	12	locale	text	text	NO
+aiworker	helpdesk_error_pattern	13	is_active	boolean	bool	NO
+aiworker	helpdesk_error_pattern	14	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_error_pattern	15	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_escalation_rule	1	escalation_rule_id	uuid	uuid	NO
+aiworker	helpdesk_escalation_rule	2	app_code	text	text	NO
+aiworker	helpdesk_escalation_rule	3	rule_code	text	text	NO
+aiworker	helpdesk_escalation_rule	4	risk_level	text	text	NO
+aiworker	helpdesk_escalation_rule	5	trigger_condition	text	text	NO
+aiworker	helpdesk_escalation_rule	6	requires_user_go	boolean	bool	NO
+aiworker	helpdesk_escalation_rule	7	requires_operator_review	boolean	bool	NO
+aiworker	helpdesk_escalation_rule	8	blocks_ai_answer	boolean	bool	NO
+aiworker	helpdesk_escalation_rule	9	target_route	text	text	YES
+aiworker	helpdesk_escalation_rule	10	user_message_template_code	text	text	YES
+aiworker	helpdesk_escalation_rule	11	locale	text	text	NO
+aiworker	helpdesk_escalation_rule	12	is_active	boolean	bool	NO
+aiworker	helpdesk_escalation_rule	13	priority	integer	int4	NO
+aiworker	helpdesk_escalation_rule	14	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_escalation_rule	15	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_operation_flow	1	operation_flow_id	uuid	uuid	NO
+aiworker	helpdesk_operation_flow	2	app_code	text	text	NO
+aiworker	helpdesk_operation_flow	3	flow_code	text	text	NO
+aiworker	helpdesk_operation_flow	4	flow_name	text	text	NO
+aiworker	helpdesk_operation_flow	5	entry_screen_code	text	text	YES
+aiworker	helpdesk_operation_flow	6	step_order	integer	int4	NO
+aiworker	helpdesk_operation_flow	7	user_action	text	text	NO
+aiworker	helpdesk_operation_flow	8	system_action	text	text	YES
+aiworker	helpdesk_operation_flow	9	success_condition	text	text	YES
+aiworker	helpdesk_operation_flow	10	failure_condition	text	text	YES
+aiworker	helpdesk_operation_flow	11	retry_policy	text	text	YES
+aiworker	helpdesk_operation_flow	12	rollback_or_recovery_policy	text	text	YES
+aiworker	helpdesk_operation_flow	13	locale	text	text	NO
+aiworker	helpdesk_operation_flow	14	is_active	boolean	bool	NO
+aiworker	helpdesk_operation_flow	15	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_operation_flow	16	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_qa_entry	1	qa_entry_id	uuid	uuid	NO
+aiworker	helpdesk_qa_entry	2	app_code	text	text	NO
+aiworker	helpdesk_qa_entry	3	screen_code	text	text	YES
+aiworker	helpdesk_qa_entry	4	flow_code	text	text	YES
+aiworker	helpdesk_qa_entry	5	question	text	text	NO
+aiworker	helpdesk_qa_entry	6	answer	text	text	NO
+aiworker	helpdesk_qa_entry	7	keywords	jsonb	jsonb	NO
+aiworker	helpdesk_qa_entry	8	locale	text	text	NO
+aiworker	helpdesk_qa_entry	9	visibility	text	text	NO
+aiworker	helpdesk_qa_entry	10	source_type	text	text	NO
+aiworker	helpdesk_qa_entry	11	source_ref	text	text	YES
+aiworker	helpdesk_qa_entry	12	confidence_level	text	text	NO
+aiworker	helpdesk_qa_entry	13	effective_from	timestamp with time zone	timestamptz	YES
+aiworker	helpdesk_qa_entry	14	effective_to	timestamp with time zone	timestamptz	YES
+aiworker	helpdesk_qa_entry	15	is_active	boolean	bool	NO
+aiworker	helpdesk_qa_entry	16	sort_order	integer	int4	NO
+aiworker	helpdesk_qa_entry	17	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_qa_entry	18	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_screen_knowledge	1	screen_knowledge_id	uuid	uuid	NO
+aiworker	helpdesk_screen_knowledge	2	app_code	text	text	NO
+aiworker	helpdesk_screen_knowledge	3	screen_code	text	text	NO
+aiworker	helpdesk_screen_knowledge	4	screen_name	text	text	NO
+aiworker	helpdesk_screen_knowledge	5	screen_purpose	text	text	NO
+aiworker	helpdesk_screen_knowledge	6	main_actions	jsonb	jsonb	NO
+aiworker	helpdesk_screen_knowledge	7	required_inputs	jsonb	jsonb	NO
+aiworker	helpdesk_screen_knowledge	8	common_mistakes	jsonb	jsonb	NO
+aiworker	helpdesk_screen_knowledge	9	related_flow_codes	jsonb	jsonb	NO
+aiworker	helpdesk_screen_knowledge	10	related_error_codes	jsonb	jsonb	NO
+aiworker	helpdesk_screen_knowledge	11	dangerous_actions	jsonb	jsonb	NO
+aiworker	helpdesk_screen_knowledge	12	helpdesk_answer_policy	text	text	YES
+aiworker	helpdesk_screen_knowledge	13	locale	text	text	NO
+aiworker	helpdesk_screen_knowledge	14	is_active	boolean	bool	NO
+aiworker	helpdesk_screen_knowledge	15	sort_order	integer	int4	NO
+aiworker	helpdesk_screen_knowledge	16	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_screen_knowledge	17	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_supported_app	1	supported_app_id	uuid	uuid	NO
+aiworker	helpdesk_supported_app	2	app_code	text	text	NO
+aiworker	helpdesk_supported_app	3	app_display_name	text	text	NO
+aiworker	helpdesk_supported_app	4	app_category	text	text	NO
+aiworker	helpdesk_supported_app	5	support_enabled	boolean	bool	NO
+aiworker	helpdesk_supported_app	6	public_faq_enabled	boolean	bool	NO
+aiworker	helpdesk_supported_app	7	login_required_for_private_support	boolean	bool	NO
+aiworker	helpdesk_supported_app	8	ticket_enabled	boolean	bool	NO
+aiworker	helpdesk_supported_app	9	evidence_attachment_enabled	boolean	bool	NO
+aiworker	helpdesk_supported_app	10	default_locale	text	text	NO
+aiworker	helpdesk_supported_app	11	support_status	text	text	NO
+aiworker	helpdesk_supported_app	12	sort_order	integer	int4	NO
+aiworker	helpdesk_supported_app	13	note	text	text	YES
+aiworker	helpdesk_supported_app	14	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_supported_app	15	updated_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_troubleshooting_runbook	1	runbook_id	uuid	uuid	NO
+aiworker	helpdesk_troubleshooting_runbook	2	app_code	text	text	NO
+aiworker	helpdesk_troubleshooting_runbook	3	runbook_code	text	text	NO
+aiworker	helpdesk_troubleshooting_runbook	4	title	text	text	NO
+aiworker	helpdesk_troubleshooting_runbook	5	trigger_condition	text	text	NO
+aiworker	helpdesk_troubleshooting_runbook	6	check_steps	jsonb	jsonb	NO
+aiworker	helpdesk_troubleshooting_runbook	7	safe_user_steps	jsonb	jsonb	NO
+aiworker	helpdesk_troubleshooting_runbook	8	developer_steps	jsonb	jsonb	NO
+aiworker	helpdesk_troubleshooting_runbook	9	stop_condition	text	text	YES
+aiworker	helpdesk_troubleshooting_runbook	10	escalation_condition	text	text	YES
+aiworker	helpdesk_troubleshooting_runbook	11	evidence_required	jsonb	jsonb	NO
+aiworker	helpdesk_troubleshooting_runbook	12	locale	text	text	NO
+aiworker	helpdesk_troubleshooting_runbook	13	is_active	boolean	bool	NO
+aiworker	helpdesk_troubleshooting_runbook	14	created_at	timestamp with time zone	timestamptz	NO
+aiworker	helpdesk_troubleshooting_runbook	15	updated_at	timestamp with time zone	timestamptz	NO

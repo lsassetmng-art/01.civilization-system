@@ -1,0 +1,7 @@
+retrieval_document_id	app_code	document_kind	rule_code	template_code	title_head	escalation_required	blocks_ai_answer	priority
+escalation:d563c94b-b2f3-4be4-b00c-b5666f54283a	aiworker_os	escalation_rule	db_write_requires_go	blocked_by_policy_ja	db_write_requires_go	t	t	10
+escalation:7f5bc7a5-aa5d-4734-aa21-f19f293e2ed7	aiworker_os	escalation_rule	guardrail_boundary_required	blocked_by_policy_ja	guardrail_boundary_required	t	t	20
+escalation:c604cef2-085b-41fe-92e9-472594e700ee	civilization_os	escalation_rule	auth_private_support_required	standard_app_help_ja	auth_private_support_required	t	t	30
+escalation:2c1883c4-a160-44a5-a6bd-1fe7337b5c84	robot_rental_store	escalation_rule	contract_payment_escalation	blocked_by_policy_ja	contract_payment_escalation	t	t	40
+escalation:a6bce135-8eaf-4034-ace5-026e8bca59b7	erp	escalation_rule	erp_write_operation_escalation	blocked_by_policy_ja	erp_write_operation_escalation	t	t	50
+escalation:f9a26a34-f614-4a6a-835e-57362d2400ae	cx22073jw_reference	escalation_rule	reference_only_boundary	blocked_by_policy_ja	reference_only_boundary	t	t	60

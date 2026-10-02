@@ -1,0 +1,12 @@
+PASS	HELPER_FALSE_POSITIVE_CLASSIFIED	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_152702_kdb_helpdesk_runtime_query_dependency_contract_harness_no_patch_no_db/020_helper_false_positive_classification.md
+PASS	TARGET_FILE_EXISTS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/lib/knowledge-domain-brain/helpdesk-provider.mjs
+PASS	TARGET_FILE_EXISTS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/lib/knowledge-domain-brain/index.mjs
+PASS	TARGET_FILE_EXISTS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/lib/knowledge-domain-brain/kdb-runtime-context.mjs
+FAIL	HARNESS_EXIT_NONZERO	NODE_STATUS=1 see /data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_152702_kdb_helpdesk_runtime_query_dependency_contract_harness_no_patch_no_db/111_runtime_query_dependency_contract_harness.err
+PASS	RESULT_JSON_CREATED	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_152702_kdb_helpdesk_runtime_query_dependency_contract_harness_no_patch_no_db/120_runtime_query_dependency_contract_result.json
+FAIL	HARNESS_CHECK_FAIL_COUNT_NONZERO	CHECK_FAIL_COUNT=1
+FAIL	QUERY_SPEC_CONTRACT_NOT_CONFIRMED	QUERY_SPEC_READONLY_SHAPE=false QUERY_SPEC_MENTIONS_HELPDESK_VIEW=true
+WARN	QUERY_DEPENDENCY_NOT_CALLED_OR_NOT_CONFIRMED	QUERY_CALL_COUNT=0
+PASS	PROVIDER_HAS_NO_DIRECT_DB_DEPENDENCY	PROVIDER_FORBIDDEN_COUNT=0
+PASS	TARGET_STATUS_STILL_THREE_FILES	GIT_STATUS_TARGET_COUNT=3
+PASS	SECRET_SCAN_STRONG_COUNT_ZERO	SECRET_STRONG_COUNT=0

@@ -1,0 +1,43 @@
+SOURCE_PATH=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/server.js
+RANGE=3000-3039
+============================================================
+  3000	
+  3001	  response.generated_artifacts = generatedArtifacts.map((artifact) => ({
+  3002	    artifact_no: artifact.artifact_no,
+  3003	    artifact_kind_code: artifact.artifact_kind_code,
+  3004	    title: artifact.title,
+  3005	    file_name: artifact.file_name,
+  3006	    body_format: artifact.body_format
+  3007	  }));
+  3008	  response.deliverable_package = zipPublic;
+  3009	  response.deliverable_zip_ref = actualZipRef;
+  3010	  response.deliverable_link = actualZipLink;
+  3011	
+  3012	  response.requester_delivery_payload = Object.assign({}, response.requester_delivery_payload || {}, {
+  3013	    summary_text: summaryText,
+  3014	    deliverable_link: actualZipLink,
+  3015	    deliverable_package: zipPublic,
+  3016	    deliverable_zip_ref: actualZipRef,
+  3017	    generated_artifacts: response.generated_artifacts
+  3018	  });
+  3019	
+  3020	  response.deliverable = Object.assign({}, response.deliverable || {}, {
+  3021	    deliverable_package: zipPublic,
+  3022	    zip_link: actualZipLink,
+  3023	    generated_artifacts: response.generated_artifacts
+  3024	  });
+  3025	
+  3026	  return response;
+  3027	}
+  3028	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_END
+  3029	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_END
+  3030	function createRuntimeRequest(payload, idempotencyKeyFromHeader) {
+  3031	  const idempotencyKey = payload.idempotency_key || idempotencyKeyFromHeader || "";
+  3032	  const sourceRouteCode = String(
+  3033	    payload.source_route_code ||
+  3034	    payload.sourceRouteCode ||
+  3035	    payload.source_route ||
+  3036	    ""
+  3037	  ).trim();
+  3038	  if (!idempotencyKey) {
+  3039	    const e = new Error("Idempotency-Key is required");

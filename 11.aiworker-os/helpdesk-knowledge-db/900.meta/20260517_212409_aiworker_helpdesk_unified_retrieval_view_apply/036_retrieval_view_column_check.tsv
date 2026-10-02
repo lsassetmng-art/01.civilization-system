@@ -1,0 +1,24 @@
+column_name	data_type	ordinal_position
+retrieval_document_id	text	1
+source_table	text	2
+source_id	text	3
+app_code	text	4
+locale	text	5
+document_kind	text	6
+title	text	7
+body	text	8
+keywords	jsonb	9
+searchable_text	text	10
+screen_code	text	11
+flow_code	text	12
+error_code	text	13
+runbook_code	text	14
+rule_code	text	15
+template_code	text	16
+confidence_level	text	17
+priority	integer	18
+visibility	text	19
+escalation_required	boolean	20
+blocks_ai_answer	boolean	21
+is_active	boolean	22
+updated_at	timestamp with time zone	23

@@ -1,0 +1,13 @@
+line	kind	text
+3171	route_or_http	const server = http.createServer(async (req, res) => {
+3172	route_or_http	  const url = new URL(req.url, `http://${req.headers.host || "127.0.0.1"}`);
+3175	route_or_http	    if (req.method === "GET" && url.pathname === "/health") {
+3194	route_or_http	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/endpoint-ready") {
+3198	route_or_http	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/api-contract") {
+3202	route_or_http	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/persistent-smoke") {
+3206	route_or_http	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/pipeline-board") {
+3210	route_or_http	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/app-read-payload") {
+3214	route_or_http	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/delivery") {
+3220	route_or_http	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/brain-context") {
+3254	route_or_http	    if (req.method === "POST" && url.pathname === "/aiworker/v1/runtime-execution/request") {
+3275	route_or_http	      path: url.pathname

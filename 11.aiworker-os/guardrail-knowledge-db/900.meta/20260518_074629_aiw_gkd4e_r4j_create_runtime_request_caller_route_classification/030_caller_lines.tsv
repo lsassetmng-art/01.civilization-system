@@ -1,0 +1,3 @@
+caller_line	async_nearby	return_var	first_side_effect_line	response_signal_count	side_effect_signal_count	status
+3268	-	result	3293	19	28	review_required
+3784	3750:async function aiwB6R97R14ConsumerOnce(reason) {	result	3800	7	11	candidate_possible

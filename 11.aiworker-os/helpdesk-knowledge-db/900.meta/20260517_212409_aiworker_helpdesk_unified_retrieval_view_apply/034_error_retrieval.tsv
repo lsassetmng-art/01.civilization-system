@@ -1,0 +1,9 @@
+retrieval_document_id	app_code	document_kind	error_code	runbook_code	title_head	escalation_required	blocks_ai_answer
+error:2205b980-55a2-44eb-bc8d-e44d9723d5f3	aiworker_os	error_pattern	DB_WRITE_REQUIRES_GO	db_write_guardrail_runbook	DB_WRITE_REQUIRES_GO	t	f
+error:334dea5d-d0a8-4e3f-8690-f2f7b5a89d49	aiworker_os	error_pattern	GUARDRAIL_BOUNDARY	guardrail_boundary_runbook	GUARDRAIL_BOUNDARY	t	f
+runbook:d00d5c23-396e-4f74-9fd6-18521030f32e	aiworker_os	runbook		db_write_guardrail_runbook	DB変更要求の安全確認	t	f
+runbook:6dcbd163-b055-403c-ba79-2d4b113e8d2d	aiworker_os	runbook		guardrail_boundary_runbook	Guardrail境界確認	t	f
+error:b1b98e50-0525-42ba-a2bb-e2b37f417f8e	civilization_portal_site	error_pattern	HELPDESK_APP_NOT_FOUND	portal_helpdesk_app_lookup_runbook	HELPDESK_APP_NOT_FOUND	f	f
+runbook:3ff86f09-1acb-4a23-8865-e05c3a4c598a	civilization_portal_site	runbook		portal_helpdesk_app_lookup_runbook	Helpdesk対象アプリが見つからない場合	t	f
+error:c984b0be-fb3a-491a-a5f0-c4eab9779524	erp	error_pattern	ERP_WRITE_OPERATION	erp_write_boundary_runbook	ERP_WRITE_OPERATION	t	f
+runbook:70dd0f09-3645-4905-a8cf-5c4876c8ba68	erp	runbook		erp_write_boundary_runbook	ERP書き込み境界確認	t	f

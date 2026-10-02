@@ -1,0 +1,60 @@
+19:- HD-R2 = Battler / 戦闘員
+20:- hd_r2_battler is canonical
+21:- hd_r2_butler and hd_r2_fighter were physically deleted from active catalog storage
+113:-     80	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/030.model/030_AIWORKER_HD_R2_BATTLER_MIGRATION_APPEND.md
+149:-    116	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/060_AIWORKER_HD_R2_BATTLER_REFERENCE_SURFACE_APPEND.md
+178:-    145	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/080.policy/080_AIWORKER_HD_R2_BATTLER_SAFETY_APPEND.md
+207101:- HD-R2 / Battler / 戦闘員aiワーカー
+207104:- HD-R2S / Sniper / 狙撃手aiワーカー
+207105:- HD-R2G / General / 軍統制および戦闘員aiワーカー
+207106:- HD-R2T-0 / Origin / 全体統括および全距離型戦闘員aiワーカー
+217911:# SOURCE: 030.model/030_AIWORKER_HD_R2_BATTLER_MIGRATION_APPEND.md
+217913:# AIWorkerOS Model Append: HD-R2 Battler Migration
+217921:HD-R2 is Battler / 戦闘員.
+217925:- model_no: HD-R2
+217926:- model_code: hd_r2_battler
+217927:- model_name: Battler
+217928:- model_name_ja: 戦闘員
+217929:- product_name: Battler AI Worker
+217930:- product_name_ja: 戦闘員AIワーカー
+217931:- role_layer_code: BATTLER
+217932:- role_layer_name_ja: 戦闘員
+217933:- model_category_code: fictional_combat_worker
+217939:- hd_r2_butler
+217940:- hd_r2_fighter
+217946:The intended HD-R2 meaning is Battler / 戦闘員.
+217952:Old bundles should be physically deleted only in a later phase after all references are verified as zero.
+217961:# AIWorkerOS Model Append: HD-R2 Old Bundle Physical Delete
+217964:phase: hd-r2 old bundle physical delete
+217969:The old wrong HD-R2 bundles were physically deleted from active model catalog storage after reference migration.
+217973:- hd_r2_butler
+217974:- hd_r2_fighter
+217978:- hd_r2_battler
+217979:- HD-R2 / Battler / 戦闘員
+217983:HD-R2 is Battler / 戦闘員.
+217987:The temporary Fighter naming was also superseded by the canonical Battler naming.
+217995:- hd_r2_butler
+217996:- hd_r2_fighter
+218378:- HD-R2 / Battler / 戦闘員aiワーカー
+218381:- HD-R2S / Sniper / 狙撃手aiワーカー
+218382:- HD-R2G / General / 軍統制および戦闘員aiワーカー
+218383:- HD-R2T-0 / Origin / 全体統括および全距離型戦闘員aiワーカー
+220050:# SOURCE: 060.integration/060_AIWORKER_HD_R2_BATTLER_REFERENCE_SURFACE_APPEND.md
+220052:# AIWorkerOS Integration Append: HD-R2 Battler Reference Surface
+220062:- hd_r2_battler
+220063:- HD-R2 / Battler / 戦闘員
+220067:- hd_r2_butler
+220068:- hd_r2_fighter
+220082:# AIWorkerOS Integration Append: HD-R2 Old Bundle Physical Delete Reference Surface
+220085:phase: hd-r2 old bundle physical delete
+220092:- hd_r2_battler
+220093:- HD-R2 / Battler / 戦闘員
+220097:- hd_r2_butler
+220098:- hd_r2_fighter
+220106:- HD-R2 appears only as hd_r2_battler.
+221570:# SOURCE: 080.policy/080_AIWORKER_HD_R2_BATTLER_SAFETY_APPEND.md
+221572:# AIWorkerOS Policy Append: HD-R2 Battler Safety
+221580:HD-R2 Battler is a combat-role AI worker in the fictional/system role sense.
+221619:# AIWorkerOS Policy Append: HD-R2 Old Bundle Physical Delete
+221622:phase: hd-r2 old bundle physical delete
+221627:HD-R2 Battler remains a fictional/system combat-role AI worker.

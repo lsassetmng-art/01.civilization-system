@@ -1,0 +1,4 @@
+schemaname	viewname	classification
+aiworker	v_helpdesk_active_error_pattern	PHASE1_EXISTING_READ_MODEL
+aiworker	v_helpdesk_active_qa	PHASE1_EXISTING_READ_MODEL
+aiworker	v_helpdesk_active_supported_app	PHASE1_EXISTING_READ_MODEL

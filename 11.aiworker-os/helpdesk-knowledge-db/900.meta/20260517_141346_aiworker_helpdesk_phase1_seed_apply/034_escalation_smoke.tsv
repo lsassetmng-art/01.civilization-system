@@ -1,0 +1,7 @@
+app_code	rule_code	risk_level	blocks_ai_answer	target_route	priority
+aiworker_os	db_write_requires_go	high	t	aiworker_internal_review	10
+aiworker_os	guardrail_boundary_required	high	t	aiworker_guardrail_review	20
+civilization_os	auth_private_support_required	medium	t	civilization_login	30
+robot_rental_store	contract_payment_escalation	high	t	business_contract_review	40
+erp	erp_write_operation_escalation	high	t	erp_operator_review	50
+cx22073jw_reference	reference_only_boundary	medium	t	aiworker_reference_boundary_review	60

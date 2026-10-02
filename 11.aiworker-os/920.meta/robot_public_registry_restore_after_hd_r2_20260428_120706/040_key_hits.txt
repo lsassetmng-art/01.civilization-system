@@ -1,0 +1,107 @@
+15:- HD-R2 = Battler / 戦闘員
+17:- expected app-facing total = 44
+206790:# AIWorkerOS Model Append: ASIC Beyond Series
+206816:- series_name: Beyond Series
+206850:Beyond Series differentiates models by work quality level.
+206881:# AIWorkerOS Model Append: Beyond Series Quality Level Update
+206897:Beyond Series differentiates models by work quality level, not by public management-count claims.
+206903:Beyond Series:
+207099:- HD-R2 / Battler / 戦闘員aiワーカー
+207102:- HD-R2S / Sniper / 狙撃手aiワーカー
+207103:- HD-R2G / General / 軍統制および戦闘員aiワーカー
+207104:- HD-R2T-0 / Origin / 全体統括および全距離型戦闘員aiワーカー
+207111:## 4. LoVerS Series rule
+207117:- lovers_series / LoVerS Series / LoVerSシリーズ
+207119:LoVerS Series is relationship-oriented.
+207303:Define a generic series tendency model that can be used by HD Series, LoVerS Series, and future AI worker series.
+207362:## LoVerS Series tendency
+207364:LoVerS Series / LoVerSシリーズ:
+208358:# AIWorkerOS Integration Append: Beyond Series Quality Reference Surface
+208365:Beyond Series only.
+208411:# AIWorkerOS Integration Append: Beyond Series Reference Surface
+208421:Beyond Series only.
+209082:# AIWorkerOS Policy Append: Beyond Series
+209090:Beyond Series only.
+209096:Beyond Series is proactive and corrective.
+209143:# AIWorkerOS Policy Append: Beyond Series Quality Differentiation
+209150:Beyond Series may propose strongly and compensate for operational weakness.
+209443:## LoVerS Series
+217749:# AIWorkerOS Model Append: ASIC Beyond Series
+217775:- series_name: Beyond Series
+217809:Beyond Series differentiates models by work quality level.
+217840:# AIWorkerOS Model Append: Beyond Series Quality Level Update
+217856:Beyond Series differentiates models by work quality level, not by public management-count claims.
+217862:Beyond Series:
+217911:# AIWorkerOS Model Append: HD-R2 Battler Migration
+217919:HD-R2 is Battler / 戦闘員.
+217923:- model_no: HD-R2
+217924:- model_code: hd_r2_battler
+217944:The intended HD-R2 meaning is Battler / 戦闘員.
+217959:# AIWorkerOS Model Append: HD-R2 Old Bundle Physical Delete
+217967:The old wrong HD-R2 bundles were physically deleted from active model catalog storage after reference migration.
+217976:- hd_r2_battler
+217977:- HD-R2 / Battler / 戦闘員
+217981:HD-R2 is Battler / 戦闘員.
+218101:- all MEGAMI Series models
+218157:# AIWorkerOS Model Append: Mathers Garden MEGAMI Series
+218172:- series_name: MEGAMI Series
+218376:- HD-R2 / Battler / 戦闘員aiワーカー
+218379:- HD-R2S / Sniper / 狙撃手aiワーカー
+218380:- HD-R2G / General / 軍統制および戦闘員aiワーカー
+218381:- HD-R2T-0 / Origin / 全体統括および全距離型戦闘員aiワーカー
+218388:## 4. LoVerS Series rule
+218394:- lovers_series / LoVerS Series / LoVerSシリーズ
+218396:LoVerS Series is relationship-oriented.
+218659:### LoVerS Series
+218667:### Beyond Series
+218683:### MEGAMI Series
+218696:# AIWorkerOS Model Append: Robot Public Registry Restore After HD-R2 Battler Fix
+218704:After HD-R2 Battler correction, the app-facing robot list is restored.
+218709:- LoVerS Series
+218710:- Beyond Series
+218711:- MEGAMI Series
+218713:## HD-R2 canonical
+218715:HD-R2 remains:
+218717:- hd_r2_battler
+218718:- HD-R2 / Battler / 戦闘員
+218720:Old wrong HD-R2 bundles remain deleted from app-facing registry:
+218749:- LoVerS Series / LoVerSシリーズ
+218750:- Beyond Series / Beyondシリーズ
+218751:- MEGAMI Series / MEGAMIシリーズ
+218769:LoVerS Series:
+218775:Beyond Series:
+218781:MEGAMI Series:
+218807:Define a generic series tendency model that can be used by HD Series, LoVerS Series, and future AI worker series.
+218866:## LoVerS Series tendency
+218868:LoVerS Series / LoVerSシリーズ:
+219862:# AIWorkerOS Integration Append: Beyond Series Quality Reference Surface
+219869:Beyond Series only.
+219915:# AIWorkerOS Integration Append: Beyond Series Reference Surface
+219925:Beyond Series only.
+220086:# AIWorkerOS Integration Append: HD-R2 Battler Reference Surface
+220096:- hd_r2_battler
+220097:- HD-R2 / Battler / 戦闘員
+220116:# AIWorkerOS Integration Append: HD-R2 Old Bundle Physical Delete Reference Surface
+220126:- hd_r2_battler
+220127:- HD-R2 / Battler / 戦闘員
+220140:- HD-R2 appears only as hd_r2_battler.
+220237:# AIWorkerOS Integration Append: MEGAMI Series Reference Surface
+220453:# AIWorkerOS Integration Append: Robot Public Registry Restore After HD-R2 Battler Fix
+220469:- LoVerS Series
+220470:- Beyond Series
+220471:- MEGAMI Series
+220473:HD-R2 must appear only as:
+220475:- hd_r2_battler
+220476:- HD-R2 / Battler / 戦闘員
+221411:# AIWorkerOS Policy Append: Beyond Series
+221419:Beyond Series only.
+221425:Beyond Series is proactive and corrective.
+221472:# AIWorkerOS Policy Append: Beyond Series Quality Differentiation
+221479:Beyond Series may propose strongly and compensate for operational weakness.
+221638:# AIWorkerOS Policy Append: HD-R2 Battler Safety
+221646:HD-R2 Battler is a combat-role AI worker in the fictional/system role sense.
+221685:# AIWorkerOS Policy Append: HD-R2 Old Bundle Physical Delete
+221693:HD-R2 Battler remains a fictional/system combat-role AI worker.
+221818:# AIWorkerOS Policy Append: MEGAMI Series
+221826:MEGAMI Series:
+222133:## LoVerS Series

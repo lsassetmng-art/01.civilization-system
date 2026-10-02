@@ -1,0 +1,59 @@
+# KDB_HELPDESK_RUNTIME_QUERY_DEPENDENCY_CONTRACT_HARNESS_R1_NO_PATCH_NO_DB
+
+## FINAL
+
+FINAL_STATUS=PASS_KDB_HELPDESK_RUNTIME_QUERY_DEPENDENCY_CONTRACT_HARNESS_R1_NO_PATCH_NO_DB
+PASS_COUNT=8
+WARN_COUNT=0
+FAIL_COUNT=0
+
+## FLAGS
+
+PATCH=NO
+DB_CONNECTION=NO
+DB_WRITE=NO
+DDL_APPLY=NO
+API_POST=NO
+GIT_COMMIT=NO
+GIT_PUSH=NO
+SERVER_JS_TOUCH=NO
+AICM_TOUCH=NO
+RAW_DATABASE_URL_OUTPUT=NO
+MODULE_IMPORT=NO
+USE_EXISTING_CONTRACT_DUMP=YES
+
+## COUNTS
+
+NODE_STATUS=0
+CHECK_FAIL_COUNT=0
+READONLY_HELPDESK_VIEW_SPEC_COUNT=7
+RESOLVE_QUERY_DEPENDENCY_SHAPE_COUNT=1
+RESOLVE_SKIPPED_LIKE_COUNT=4
+RESOLVE_ERROR_COUNT=0
+PROVIDER_FORBIDDEN_COUNT=0
+GIT_STATUS_TARGET_COUNT=3
+SECRET_STRONG_COUNT=0
+
+## PATHS
+
+RUN_DIR=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db
+REPORT=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/000_KDB_HELPDESK_RUNTIME_QUERY_DEPENDENCY_CONTRACT_HARNESS_R1_NO_PATCH_NO_DB_REPORT.md
+RESULT_JSON=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/020_contract_harness_r1_result.json
+DECISION=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/030_contract_harness_r1_decision.md
+PARSE_ENV=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/040_parse.env
+PROVIDER_FORBIDDEN=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/050_provider_forbidden_db_scan.out
+GIT_STATUS_TARGETS=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/060_git_status_targets.out
+SECRET_SCAN=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/900_secret_scan.out
+
+## FINDINGS
+
+```tsv
+PASS	CONTRACT_DUMP_EXISTS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_172651_kdb_helpdesk_provider_contract_exact_dump_no_patch_no_db/020_provider_contract_exact_dump.json
+PASS	R1_RESULT_JSON_CREATED	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_173617_kdb_helpdesk_runtime_query_dependency_contract_harness_r1_no_patch_no_db/020_contract_harness_r1_result.json
+PASS	R1_CHECK_FAIL_COUNT_ZERO	CHECK_FAIL_COUNT=0
+PASS	R1_READONLY_HELPDESK_VIEW_SPEC_CONFIRMED	READONLY_HELPDESK_VIEW_SPEC_COUNT=7
+PASS	R1_RESOLVE_QUERY_DEPENDENCY_SHAPE_CONFIRMED	SELECTED_RESOLVE_LABELS=two_args_query_dependency_object
+PASS	PROVIDER_HAS_NO_DIRECT_DB_DEPENDENCY	PROVIDER_FORBIDDEN_COUNT=0
+PASS	TARGET_STATUS_STILL_THREE_FILES	GIT_STATUS_TARGET_COUNT=3
+PASS	SECRET_SCAN_STRONG_COUNT_ZERO	SECRET_STRONG_COUNT=0
+```

@@ -1,0 +1,8 @@
+app_code	question_head	visibility	confidence_level	source_type
+ai_company_manager	AICompanyManagerの成果物レビューはどこで聞けばいいですか？	private	standard	initial_seed
+aiworker_os	ヘルプデスクの回答はどこが作りますか？	public	verified	canon
+civilization_portal_site	ヘルプデスクはどこから使いますか？	public	verified	canon
+common_os	CommonOSはヘルプデスクで何を担当しますか？	public	verified	canon
+cx22073jw_reference	CX22073JWはヘルプデスクを実行しますか？	public	verified	canon
+erp	ERPの書き込み操作をヘルプデスクから実行できますか？	private	standard	initial_seed
+robot_rental_store	ロボットレンタルの契約や支払いはAIが実行できますか？	private	standard	initial_seed

@@ -1,0 +1,367 @@
+
+============================================================
+R85_R2 DEPENDENCY CONTRACT / QUEUE SOURCE FIELD SUMMARY
+============================================================
+PHASE=AIWORKEROS_R85_R2_DEPENDENCY_CONTRACT_AND_QUEUE_SOURCE_FIELD_DUMP_NO_PATCH
+GENERATED_AT=2026-08-06 19:12:19 +0900
+
+HEAD_HASH=395671f9c414def92a93b11bdae32290914b3563
+ORIGIN_MAIN_HASH=3ffe319e6e524f968b83bf35ecc9b1626ae2b1db
+AHEAD_BEHIND=0	1
+
+APP_STATUS_COUNT=29
+STATUS_STABLE=YES
+TARGET_HASHES_STABLE=YES
+
+DESIGN_FILE=/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/020.architecture/runtime-execution-http-api/004_R85_RUNTIME_INTAKE_UNIFICATION_DESIGN_NO_PATCH.md
+DESIGN_FILE_EXISTS=YES
+AICM_ROOT=/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager
+AICM_ROOT_EXISTS=YES
+
+GUARDRAIL_FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/guardrail/guardrail-runtime-preflight.cjs
+GUARDRAIL_FILE_EXISTS=YES
+GUARDRAIL_EXPORT_COUNT=1
+GUARDRAIL_REQUEST_ID_COUNT=3
+GUARDRAIL_DB_SIGNAL_COUNT=4
+GUARDRAIL_PERSIST_FUNCTION_COUNT=1
+
+SOURCE_ADAPTER_FILE_COUNT=8
+
+QUEUE_BUILD_LINE=4699
+QUEUE_BUILD_SOURCE_FIELD_COUNT=0
+QUEUE_LOOP_LINE=5095
+QUEUE_AWAIT_COUNT=0
+QUEUE_SOURCE_MATCH_COUNT=6152
+
+SERVER_JS_SHA256=5c9381d2fd5b65f1a25a83ef155cec9de8e659b5bc7a39e540de9dcc65175d98
+GUARDRAIL_SHA256=42c725de9dc0946ca4c8fc7b3745aa361860f22d33ea19f2fb1a9b400e299475
+SERVER_DIFF_SHA256=f3b209d56aabd49b2c2b9760603f7d328c0add4eb5bebdd99ef02baf976f2f05
+
+FULL_REPORT=/data/data/com.termux/files/usr/tmp/20260806_190601_r85_r2_dependency_contract_queue_source_field_dump_no_patch/000_R85_R2_DEPENDENCY_CONTRACT_QUEUE_SOURCE_FIELD_FULL_EVIDENCE.txt
+SUMMARY_REPORT=/data/data/com.termux/files/usr/tmp/20260806_190601_r85_r2_dependency_contract_queue_source_field_dump_no_patch/001_R85_R2_DEPENDENCY_CONTRACT_QUEUE_SOURCE_FIELD_SUMMARY.txt
+
+SOURCE_PATCH=NO
+DB_CONNECTION=NO
+DB_WRITE=NO
+DDL_APPLY=NO
+SQL_APPLY=NO
+API_POST=NO
+SERVER_START=NO
+GIT_FETCH=NO
+GIT_ADD=NO
+GIT_COMMIT=NO
+GIT_PUSH=NO
+ROLLBACK_REQUIRED=NO
+
+============================================================
+QUEUE SOURCE FIELD TOP MATCHES
+============================================================
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:10141:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:10293:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:10445:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:10855:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11007:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11158:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11309:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11460:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11612:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11778:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11882:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11912:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11935:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11958:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:11981:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12004:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12027:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12050:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12076:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12099:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12126:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12158:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12190:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12222:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12254:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12286:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12318:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12350:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12382:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12414:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12446:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12478:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12510:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12542:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12574:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12606:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12638:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12670:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12702:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12734:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12766:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12798:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12830:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12862:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12894:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12926:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12958:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:12990:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13022:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13054:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13086:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13118:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13150:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13182:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13214:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:13246:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1700:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1734:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1768:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1802:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1833:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1864:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1895:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1926:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1957:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:1988:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2019:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2050:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2084:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2118:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2152:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2186:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2220:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2254:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2288:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2322:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2356:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2390:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2424:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2458:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2492:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2526:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2560:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2594:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2628:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2662:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2696:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2730:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2764:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2798:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2832:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2866:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2900:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2934:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:2968:      "reference_files_text": "",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:3002:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:3036:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:3070:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:3104:      "reference_files_text": "{}",
+/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/900.meta/20260514_050335_q5jr8b_aiworker_auth_aicm_bridge_review_path_dump_no_patch/060_aicm_context.json:3138:      "reference_files_text": "",
+
+============================================================
+GUARDRAIL EXPORT / PERSISTENCE LINES
+============================================================
+58:    request_id: String(body.request_id || body.id || body.runtime_request_id || body.job_id || ''),
+86:async function runGuardrailPreflight(runtimeRequest = {}) {
+166:    `insert into aiworker.guardrail_runtime_check_result
+167:       (request_id, target_os_code, target_app_code, target_work_type_code,
+174:      input.request_id || null,
+193:async function runAndPersistGuardrailPreflight(runtimeRequest = {}) {
+203:module.exports = {
+
+============================================================
+SOURCE ADAPTER EXPORT / ERROR LINES
+============================================================
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/900.meta/20260630_205945_r84_g_r19_r9_r8_r1_remaining_validation_review_no_api_post/005_prev_r5_r2_design.json
+3:  "designClassification": "GLOBAL_VALIDATION_SOURCE_IDENTIFIED_AFTER_RESPONSE_TOKEN_SEARCH",
+4:  "patchStrategy": "PATCH_VALIDATION_SOURCE_OR_INPUT_OBJECT_IDENTIFIED_BY_GLOBAL_SCAN",
+373:      "text": "message: \"source file path is required\","
+871:      "text": "reason: \"MISSING_PATH\","
+875:      "text": "message: \"source file path is required\","
+911:      "text": "reason: \"SOURCE_FILE_VALIDATION_FAILED\","
+915:      "text": "message: \"one or more source files failed validation\","
+919:      "text": "validation_errors: validationErrors,"
+935:      "text": "validation_errors: validationErrors,"
+967:      "text": "reason: adapterResult.reason || \"SOURCE_MATERIAL_VALIDATION_FAILED\","
+971:      "text": "message: adapterResult.message || \"source material validation failed\","
+975:      "text": "validation_errors: adapterResult.validation_errors || [],"
+1087:      "text": "message: \"Missing or invalid Authorization bearer [REDACTED]""
+1169:      "text": "message: \"source file path is required\","
+1325:      "text": "message: \"one or more source files failed validation\","
+1329:      "text": "message: adapterResult.message || \"source material validation failed\","
+1333:      "text": "message: \"Missing or invalid Authorization bearer [REDACTED]""
+1417:      "text": "reason: \"MISSING_PATH\","
+1433:      "text": "reason: \"SOURCE_FILE_VALIDATION_FAILED\","
+1437:      "text": "validation_errors: validationErrors,"
+1441:      "text": "validation_errors: validationErrors,"
+1449:      "text": "reason: adapterResult.reason || \"SOURCE_MATERIAL_VALIDATION_FAILED\","
+1453:      "text": "validation_errors: adapterResult.validation_errors || [],"
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/900.meta/20260630_205945_r84_g_r19_r9_r8_r1_remaining_validation_review_no_api_post/041_remaining_validation_review.json
+3:  "nextRecommendation": "R84_G_R19_R9_R8_R2_ACTIVE_VALIDATION_SOURCE_PATCH_DESIGN_NO_PATCH",
+476:      "text": "message: \"source file path is required\","
+616:      "text": "message: \"one or more source files failed validation\","
+630:      "text": "message: adapterResult.message || \"source material validation failed\","
+651:      "text": "message: \"Missing or invalid Authorization bearer [REDACTED]""
+763:      "text": "reason: \"MISSING_PATH\","
+784:      "text": "reason: \"SOURCE_FILE_VALIDATION_FAILED\","
+791:      "text": "validation_errors: validationErrors,"
+798:      "text": "validation_errors: validationErrors,"
+812:      "text": "reason: adapterResult.reason || \"SOURCE_MATERIAL_VALIDATION_FAILED\","
+819:      "text": "validation_errors: adapterResult.validation_errors || [],"
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/900.meta/20260701_112317_r84_g_r19_r9_r8_r2_active_validation_source_patch_design_no_patch/002_prev_r8_r1_review.json
+3:  "nextRecommendation": "R84_G_R19_R9_R8_R2_ACTIVE_VALIDATION_SOURCE_PATCH_DESIGN_NO_PATCH",
+476:      "text": "message: \"source file path is required\","
+616:      "text": "message: \"one or more source files failed validation\","
+630:      "text": "message: adapterResult.message || \"source material validation failed\","
+651:      "text": "message: \"Missing or invalid Authorization bearer [REDACTED]""
+763:      "text": "reason: \"MISSING_PATH\","
+784:      "text": "reason: \"SOURCE_FILE_VALIDATION_FAILED\","
+791:      "text": "validation_errors: validationErrors,"
+798:      "text": "validation_errors: validationErrors,"
+812:      "text": "reason: adapterResult.reason || \"SOURCE_MATERIAL_VALIDATION_FAILED\","
+819:      "text": "validation_errors: adapterResult.validation_errors || [],"
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/900.meta/20260701_112317_r84_g_r19_r9_r8_r2_active_validation_source_patch_design_no_patch/010_prev_r5_r2_design.json
+3:  "designClassification": "GLOBAL_VALIDATION_SOURCE_IDENTIFIED_AFTER_RESPONSE_TOKEN_SEARCH",
+4:  "patchStrategy": "PATCH_VALIDATION_SOURCE_OR_INPUT_OBJECT_IDENTIFIED_BY_GLOBAL_SCAN",
+373:      "text": "message: \"source file path is required\","
+871:      "text": "reason: \"MISSING_PATH\","
+875:      "text": "message: \"source file path is required\","
+911:      "text": "reason: \"SOURCE_FILE_VALIDATION_FAILED\","
+915:      "text": "message: \"one or more source files failed validation\","
+919:      "text": "validation_errors: validationErrors,"
+935:      "text": "validation_errors: validationErrors,"
+967:      "text": "reason: adapterResult.reason || \"SOURCE_MATERIAL_VALIDATION_FAILED\","
+971:      "text": "message: adapterResult.message || \"source material validation failed\","
+975:      "text": "validation_errors: adapterResult.validation_errors || [],"
+1087:      "text": "message: \"Missing or invalid Authorization bearer [REDACTED]""
+1169:      "text": "message: \"source file path is required\","
+1325:      "text": "message: \"one or more source files failed validation\","
+1329:      "text": "message: adapterResult.message || \"source material validation failed\","
+1333:      "text": "message: \"Missing or invalid Authorization bearer [REDACTED]""
+1417:      "text": "reason: \"MISSING_PATH\","
+1433:      "text": "reason: \"SOURCE_FILE_VALIDATION_FAILED\","
+1437:      "text": "validation_errors: validationErrors,"
+1441:      "text": "validation_errors: validationErrors,"
+1449:      "text": "reason: adapterResult.reason || \"SOURCE_MATERIAL_VALIDATION_FAILED\","
+1453:      "text": "validation_errors: adapterResult.validation_errors || [],"
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/900.meta/20260702_220458_r84_g_r19_r9_r8_r3_r1_patch_apply_failure_classification_no_patch/010_server_before_failed_patch.js
+11:// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_START
+494:// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_END
+496:// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_START
+556:// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_END
+1432:// B6R98R3B_SOURCE_FILE_READER_START
+1561:  const envRoots = aiwB6R98R3BSourceText(process.env.AIWORKEROS_SOURCE_FILE_ALLOWED_ROOTS)
+1637:/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_START */
+1718:/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_END */
+1721:  const maxFiles = Math.max(1, Math.min(10, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_FILES || "5") || 5));
+1722:  const maxBytes = Math.max(1024, Math.min(2 * 1024 * 1024, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_BYTES || "2097152") || 2097152));
+1723:  const maxTotalChars = Math.max(4000, Math.min(120000, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_TOTAL_CHARS || "60000") || 60000));
+1731:      rejected.push({ path: candidate, reason: "max_files_exceeded" });
+1740:        rejected.push({ path: candidate, reason: "outside_allowed_roots" });
+1750:        rejected.push({ path: candidate, reason: "unsupported_source_extension", media_type: aiwB6R97R67MaterialType });
+1756:        rejected.push({ path: candidate, reason: "not_found" });
+1762:        rejected.push({ path: candidate, reason: "not_file" });
+1767:        rejected.push({ path: candidate, reason: "file_too_large", size: stat.size });
+1806:        reason: "read_error",
+1807:        message: error && error.message ? error.message : String(error)
+1858:  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_START */
+1881:  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_END */
+1984:// B6R98R3B_SOURCE_FILE_READER_END
+2068:/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_START */
+2168:/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_END */
+2171:/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_START */
+2376:/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_END */
+2557:  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_START */
+2584:  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_END */
+3164:      ok: false,
+3165:      reason: "MISSING_PATH",
+3166:      message: "source file path is required",
+3167:      retryable: false,
+3174:      ok: false,
+3175:      reason: "INVALID_PATH",
+3176:      message: "source file path contains invalid null byte",
+3177:      retryable: false,
+3186:      ok: false,
+3187:      reason: "PATH_TRAVERSAL_REJECTED",
+3188:      message: "source file path traversal is not allowed",
+3189:      retryable: false,
+3207:      ok: false,
+3208:      reason: "FILE_NOT_FOUND",
+3209:      message: "source file does not exist or cannot be resolved",
+3210:      retryable: false,
+3236:        ok: false,
+3237:        reason: "FILE_OUTSIDE_ALLOWED_ROOT",
+3238:        message: "source file is outside allowed roots",
+3239:        retryable: false,
+3251:      ok: false,
+3252:      reason: "FILE_STAT_FAILED",
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/900.meta/20260806_155830_r84_g_r19_r9_r8_r5_r1_remaining_validation_review_no_patch_no_api_post/041_remaining_validation_review.json
+998:      "text": "        rejected.push({ path: candidate, reason: \"outside_allowed_roots\" });",
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/900.meta/20260806_155830_r84_g_r19_r9_r8_r5_r1_remaining_validation_review_no_patch_no_api_post/042_remaining_validation_review.md
+--- FILE=/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/server.js
+11:// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_START
+503:// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_END
+505:// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_START
+565:// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_END
+1441:// B6R98R3B_SOURCE_FILE_READER_START
+1570:  const envRoots = aiwB6R98R3BSourceText(process.env.AIWORKEROS_SOURCE_FILE_ALLOWED_ROOTS)
+1646:/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_START */
+1727:/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_END */
+1730:  const maxFiles = Math.max(1, Math.min(10, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_FILES || "5") || 5));
+1731:  const maxBytes = Math.max(1024, Math.min(2 * 1024 * 1024, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_BYTES || "2097152") || 2097152));
+1732:  const maxTotalChars = Math.max(4000, Math.min(120000, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_TOTAL_CHARS || "60000") || 60000));
+1740:      rejected.push({ path: candidate, reason: "max_files_exceeded" });
+1749:        rejected.push({ path: candidate, reason: "outside_allowed_roots" });
+1759:        rejected.push({ path: candidate, reason: "unsupported_source_extension", media_type: aiwB6R97R67MaterialType });
+1765:        rejected.push({ path: candidate, reason: "not_found" });
+1771:        rejected.push({ path: candidate, reason: "not_file" });
+1776:        rejected.push({ path: candidate, reason: "file_too_large", size: stat.size });
+1815:        reason: "read_error",
+1816:        message: error && error.message ? error.message : String(error)
+1867:  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_START */
+1890:  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_END */
+1993:// B6R98R3B_SOURCE_FILE_READER_END
+2077:/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_START */
+2177:/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_END */
+2180:/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_START */
+2385:/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_END */
+2566:  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_START */
+2593:  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_END */
+3173:      ok: false,
+3174:      reason: "MISSING_PATH",
+3175:      message: "source file path is required",
+3176:      retryable: false,
+3183:      ok: false,
+3184:      reason: "INVALID_PATH",
+3185:      message: "source file path contains invalid null byte",
+3186:      retryable: false,
+3195:      ok: false,
+3196:      reason: "PATH_TRAVERSAL_REJECTED",
+3197:      message: "source file path traversal is not allowed",
+3198:      retryable: false,
+3216:      ok: false,
+3217:      reason: "FILE_NOT_FOUND",
+3218:      message: "source file does not exist or cannot be resolved",
+3219:      retryable: false,
+3245:        ok: false,
+3246:        reason: "FILE_OUTSIDE_ALLOWED_ROOT",
+3247:        message: "source file is outside allowed roots",
+3248:        retryable: false,
+3260:      ok: false,
+3261:      reason: "FILE_STAT_FAILED",
+
+============================================================
+FINAL
+============================================================
+FINAL_STATUS=PASS_AIWORKEROS_R85_R2_DEPENDENCY_CONTRACT_AND_QUEUE_SOURCE_FIELD_DUMP_NO_PATCH
+PASS_COUNT=20
+WARN_COUNT=0
+FAIL_COUNT=0
+STATUS_STABLE=YES
+TARGET_HASHES_STABLE=YES
+FULL_REPORT=/data/data/com.termux/files/usr/tmp/20260806_190601_r85_r2_dependency_contract_queue_source_field_dump_no_patch/000_R85_R2_DEPENDENCY_CONTRACT_QUEUE_SOURCE_FIELD_FULL_EVIDENCE.txt
+SUMMARY_REPORT=/data/data/com.termux/files/usr/tmp/20260806_190601_r85_r2_dependency_contract_queue_source_field_dump_no_patch/001_R85_R2_DEPENDENCY_CONTRACT_QUEUE_SOURCE_FIELD_SUMMARY.txt
+SOURCE_PATCH=NO
+DB_CONNECTION=NO
+API_POST=NO
+GIT_WRITE=NO
+NEXT_RECOMMENDATION=UPLOAD_R85_R2_SUMMARY_AND_FULL_REPORT_FOR_CONTRACT_CLASSIFICATION

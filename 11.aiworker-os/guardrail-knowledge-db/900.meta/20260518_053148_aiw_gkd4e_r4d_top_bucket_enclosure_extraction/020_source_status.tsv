@@ -1,0 +1,5 @@
+name	path	exists	size_bytes
+SERVER_JS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/server.js	YES	147469
+HELPER_FILE	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/guardrail/guardrail-runtime-preflight.cjs	YES	8373
+R4C_TOP_CONTEXT	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/guardrail-knowledge-db/900.meta/20260518_052734_aiw_gkd4e_r4c_wiring_candidate_exact_narrowing/050_top_candidate_context.md	YES	19040
+R4C_R5_DECISION	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/guardrail-knowledge-db/900.meta/20260518_052734_aiw_gkd4e_r4c_wiring_candidate_exact_narrowing/060_r5_wiring_decision.md	YES	2198

@@ -1,0 +1,6 @@
+read_model_name	purpose	source_tables	phase	apply_now
+v_helpdesk_retrieval_document	Unified retrieval document rows for internal Helpdesk brain lookup.	qa, screen, flow, error, runbook, escalation, templates	phase2_design	NO
+v_helpdesk_app_context_bundle	App profile plus active support modes and defaults.	supported_app, app_support_profile	phase2_design	NO
+v_helpdesk_error_runbook_bundle	Error patterns with related troubleshooting runbooks.	error_pattern, troubleshooting_runbook	phase2_design	NO
+v_helpdesk_screen_flow_bundle	Screen knowledge with related operation flows.	screen_knowledge, operation_flow	phase2_design	NO
+internal_helpdesk_retrieval_contract	Non-SQL contract defining request payload, retrieval result, ranking, and answer context.	views and tables	phase1_design	N/A

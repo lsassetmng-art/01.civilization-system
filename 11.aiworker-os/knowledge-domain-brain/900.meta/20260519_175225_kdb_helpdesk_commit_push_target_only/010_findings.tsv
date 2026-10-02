@@ -1,0 +1,17 @@
+PASS	GIT_REPO_OK	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api
+PASS	READINESS_REPORT_READY	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_174216_kdb_helpdesk_commit_readiness_review_no_push/000_KDB_HELPDESK_COMMIT_READINESS_REVIEW_NO_PUSH_REPORT.md
+PASS	TARGET_FILE_EXISTS	lib/knowledge-domain-brain/helpdesk-provider.mjs
+PASS	TARGET_FILE_EXISTS	lib/knowledge-domain-brain/index.mjs
+PASS	TARGET_FILE_EXISTS	lib/knowledge-domain-brain/kdb-runtime-context.mjs
+PASS	TARGET_CHANGES_PRESENT	BEFORE_TARGET_STATUS_COUNT=3
+PASS	SERVER_JS_NO_DIFF	SERVER_DIFF_COUNT=0
+PASS	NODE_CHECK_PASS	lib/knowledge-domain-brain/helpdesk-provider.mjs
+PASS	NODE_CHECK_PASS	lib/knowledge-domain-brain/index.mjs
+PASS	NODE_CHECK_PASS	lib/knowledge-domain-brain/kdb-runtime-context.mjs
+PASS	DYNAMIC_IMPORT_PASS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_175225_kdb_helpdesk_commit_push_target_only/031_dynamic_import_targets.out
+PASS	PROVIDER_HAS_NO_DIRECT_DB_DEPENDENCY	PROVIDER_FORBIDDEN_COUNT=0
+PASS	INDEX_EXPORT_PRESENT	INDEX_EXPORT_COUNT=1
+PASS	RUNTIME_HELPDESK_SIGNALS_PRESENT	RUNTIME_HELPDESK_SIGNAL_COUNT=28
+PASS	GIT_ADD_TARGETS_OK	ADD_STATUS=0
+PASS	CACHED_CHANGES_PRESENT	CACHED_COUNT=3
+FAIL	CACHED_SCOPE_FORBIDDEN_FILES_PRESENT	CACHED_FORBIDDEN_COUNT=3

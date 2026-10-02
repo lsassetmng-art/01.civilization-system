@@ -1,0 +1,366 @@
+line	kind	text
+23	artifact_or_output	// AIW_B6R96R1G2_MINIMUM_DELIVERABLE_HELPER_START
+331	artifact_or_output	    contract_version: "requester_deliverable_v1",
+332	artifact_or_output	    deliverable_title: title,
+333	artifact_or_output	    deliverable_kind: role === "president" ? "policy_proposal" : role === "manager" ? "major_breakdown" : role === "leader" ? "task_decomposition" : "document",
+336	artifact_or_output	    summary_text: role + " role produced a stable minimum deliverable.",
+339	artifact_or_output	    next_steps_text: "Review the deliverable and provide additional constraints if deeper specialty or originality is required.",
+354	artifact_or_output	      generated_by: "AIW_B6R96R1G2_MINIMUM_DELIVERABLE_HELPER"
+370	artifact_or_output	  payload.deliverable = payload.requester_delivery_payload;
+373	artifact_or_output	// AIW_B6R96R1G2_MINIMUM_DELIVERABLE_HELPER_END
+773	artifact_or_output	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_START
+776	artifact_or_output	  Common requester-facing deliverable contract for AIWorkerOS runtime execution.
+781	artifact_or_output	  - AIWorkerOS creates the deliverable body and first summary.
+782	artifact_or_output	  - Requester apps store summary_text plus deliverable_ref / deliverable_link.
+811	artifact_or_output	function aiwB6R95R3R3BuildRequesterFacingDeliverableBaseB6R95R3Z24(payload, sourceRouteCode) {
+848	artifact_or_output	  const deliverablePackage = aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle);
+850	artifact_or_output	    `AIWorkerOSが${modelCode}を成果物生成主体として、${taskTitle}の一次成果物と一次サマリを作成しました。依頼元アプリはこのsummary_textとdeliverable_ref/linkを保存してレビューに利用できます。`,
+870	artifact_or_output	    "依頼元アプリでsummary_textとdeliverable_ref/linkを保存する。",
+917	artifact_or_output	  const generatedArtifacts = [
+919	artifact_or_output	      kind: "main_deliverable",
+921	artifact_or_output	      file_name: "01_main_deliverable.md",
+945	artifact_or_output	    contract_name: "aiworkeros_common_requester_deliverable_contract",
+946	artifact_or_output	    deliverable_kind: "document",
+948	artifact_or_output	    deliverable_package: deliverablePackage,
+949	artifact_or_output	    deliverable_link: deliverablePackage.zip_link,
+950	artifact_or_output	    generated_artifacts: generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+965	artifact_or_output	  const artifacts = [
+967	artifact_or_output	      artifact_kind_code: "markdown",
+968	artifact_or_output	      artifact_title_ja: outputTitle,
+970	artifact_or_output	      deliverable_package: deliverablePackage,
+971	artifact_or_output	      deliverable_link: deliverablePackage.zip_link,
+972	artifact_or_output	      generated_artifacts: generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+974	artifact_or_output	      summary_text: summaryText,
+993	artifact_or_output	    deliverablePackage,
+994	artifact_or_output	    generatedArtifacts,
+996	artifact_or_output	    artifacts
+1122	artifact_or_output	    if (!terms.includes(v) && !/してください|成果物|summary|generated|artifacts|link|zip/.test(v)) terms.push(v);
+1371	artifact_or_output	  blocks.push("依頼元アプリは summary_text と deliverable_link を保存し、必要に応じて追加条件を指定して再生成できます。");
+1376	artifact_or_output	function aiwB6R95R3Z24EnhanceDeliverableWithCxMaterial(deliverable, payload, sourceRouteCode) {
+1377	artifact_or_output	  const safeDeliverable = deliverable || {};
+1378	artifact_or_output	  const originalBody = aiwB6R95R3Z24Text(safeDeliverable.bodyMarkdown || safeDeliverable.body_markdown || "");
+1387	artifact_or_output	    safeDeliverable.generationBasis = Object.assign({}, safeDeliverable.generationBasis || {}, {
+1392	artifact_or_output	    return safeDeliverable;
+1398	artifact_or_output	    safeDeliverable.bodyMarkdown = enhancedBody;
+1399	artifact_or_output	    safeDeliverable.summaryText = "CX22073JWのruntime materialを参照し、" + aiwB6R95R3Z24TaskTitle(payload) + " の詳細資料を生成しました。";
+1400	artifact_or_output	    safeDeliverable.qualityNotes = [
+1408	artifact_or_output	  safeDeliverable.robotContext = Object.assign({}, safeDeliverable.robotContext || {}, {
+1413	artifact_or_output	  safeDeliverable.generationBasis = Object.assign({}, safeDeliverable.generationBasis || {}, {
+1420	artifact_or_output	  return safeDeliverable;
+1849	artifact_or_output	function aiwB6R98R3BEnhanceDeliverableWithSourceFiles(deliverable, payload, sourceRouteCode) {
+1860	artifact_or_output	  function aiwB6R97R65BMainArtifactWithSourceMarkdown(artifact, sourceMarkdown) {
+1861	artifact_or_output	    if (!artifact || typeof artifact !== "object") return artifact;
+1863	artifact_or_output	      artifact.body_markdown || artifact.bodyMarkdown || artifact.content || "",
+1866	artifact_or_output	    return Object.assign({}, artifact, {
+1875	artifact_or_output	  const safeDeliverable = deliverable || {};
+1878	artifact_or_output	  safeDeliverable.aiw_b6r97r65b_source_files_markdown = markdown;
+1879	artifact_or_output	  safeDeliverable.sourceFilesMarkdown = markdown;
+1880	artifact_or_output	  safeDeliverable.source_files_markdown = markdown;
+1882	artifact_or_output	  safeDeliverable.robotContext = Object.assign({}, safeDeliverable.robotContext || {}, {
+1889	artifact_or_output	  safeDeliverable.generationBasis = Object.assign({}, safeDeliverable.generationBasis || {}, {
+1898	artifact_or_output	  safeDeliverable.sourceMaterialAnalysisResults = sourceFiles.analysis_results || [];
+1899	artifact_or_output	  safeDeliverable.source_material_analysis_results = sourceFiles.analysis_results || [];
+1901	artifact_or_output	  safeDeliverable.outputPayload = Object.assign({}, safeDeliverable.outputPayload || {}, {
+1917	artifact_or_output	    return safeDeliverable;
+1920	artifact_or_output	  const currentBody = aiwB6R98R3BSourceText(safeDeliverable.bodyMarkdown || safeDeliverable.body_markdown || "");
+1927	artifact_or_output	  safeDeliverable.bodyMarkdown = enhancedBody;
+1928	artifact_or_output	  safeDeliverable.body_markdown = enhancedBody;
+1929	artifact_or_output	  safeDeliverable.output_body_ja = enhancedBody;
+1930	artifact_or_output	  safeDeliverable.content = enhancedBody;
+1931	artifact_or_output	  safeDeliverable.aiw_b6r97r65b_source_body_merged = true;
+1933	artifact_or_output	  if (Array.isArray(safeDeliverable.generatedArtifacts)) {
+1934	artifact_or_output	    safeDeliverable.generatedArtifacts = safeDeliverable.generatedArtifacts.map((artifact) => {
+1935	artifact_or_output	      if (artifact && artifact.file_name === "01_main_deliverable.md") {
+1936	artifact_or_output	        return aiwB6R97R65BMainArtifactWithSourceMarkdown(Object.assign({}, artifact, { body_markdown: enhancedBody }), markdown);
+1938	artifact_or_output	      return artifact;
+1942	artifact_or_output	  if (safeDeliverable.outputPayload && Array.isArray(safeDeliverable.outputPayload.generated_artifacts)) {
+1943	artifact_or_output	    safeDeliverable.outputPayload.generated_artifacts = safeDeliverable.outputPayload.generated_artifacts.map((artifact) => {
+1944	artifact_or_output	      if (artifact && artifact.file_name === "01_main_deliverable.md") {
+1945	artifact_or_output	        return aiwB6R97R65BMainArtifactWithSourceMarkdown(Object.assign({}, artifact, { body_markdown: enhancedBody }), markdown);
+1947	artifact_or_output	      return artifact;
+1951	artifact_or_output	  if (Array.isArray(safeDeliverable.artifacts)) {
+1952	artifact_or_output	    safeDeliverable.artifacts = safeDeliverable.artifacts.map((artifact) => {
+1953	artifact_or_output	      if (artifact && artifact.body_markdown) {
+1954	artifact_or_output	        return aiwB6R97R65BMainArtifactWithSourceMarkdown(Object.assign({}, artifact, { body_markdown: enhancedBody }), markdown);
+1956	artifact_or_output	      return artifact;
+1960	artifact_or_output	  const currentQualityNotes = aiwB6R98R3BSourceText(safeDeliverable.qualityNotes || "");
+1961	artifact_or_output	  safeDeliverable.qualityNotes = [
+1968	artifact_or_output	  if (!safeDeliverable.summaryText || !String(safeDeliverable.summaryText).trim()) {
+1969	artifact_or_output	    safeDeliverable.summaryText = "元データ/参照ファイルを読み込み、成果物生成に反映しました。";
+1971	artifact_or_output	    safeDeliverable.summaryText = String(safeDeliverable.summaryText) + " 元データ/参照ファイルも読み込み済みです。";
+1974	artifact_or_output	  return safeDeliverable;
+1978	artifact_or_output	function aiwB6R95R3R3BuildRequesterFacingDeliverable(payload, sourceRouteCode) {
+1979	artifact_or_output	  const baseDeliverable = aiwB6R95R3R3BuildRequesterFacingDeliverableBaseB6R95R3Z24(payload, sourceRouteCode);
+1980	artifact_or_output	  const cxDeliverable = aiwB6R95R3Z24EnhanceDeliverableWithCxMaterial(baseDeliverable, payload, sourceRouteCode);
+1981	artifact_or_output	  return aiwB6R98R3BEnhanceDeliverableWithSourceFiles(cxDeliverable, payload, sourceRouteCode);
+1985	artifact_or_output	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_START
+1988	artifact_or_output	  Multi-artifact deliverable zip package contract.
+1991	artifact_or_output	  - AIWorkerOS creates one or more deliverable artifacts from the instruction.
+1992	artifact_or_output	  - AIWorkerOS creates summary_text.
+1993	artifact_or_output	  - AIWorkerOS bundles generated artifacts into one deliverable zip.
+1994	artifact_or_output	  - Requester apps display summary_text and link to the zip.
+1995	artifact_or_output	  - The zip exists to avoid one-by-one downloads when multiple artifacts are generated.
+2004	artifact_or_output	  const raw = String(value || fallback || "deliverable").trim();
+2006	artifact_or_output	  return safe || String(fallback || "deliverable");
+2009	artifact_or_output	function aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle) {
+2011	artifact_or_output	  const zipId = `${Date.now()}_${crypto.randomUUID()}`;
+2013	artifact_or_output	  const titlePart = aiwB6R95R3D1SafeFilePart(taskTitle, "deliverables");
+2014	artifact_or_output	  const rawFileName = `${requesterPart}_${titlePart}_${zipId}.zip`;
+2016	artifact_or_output	  // AIWORKEROS_B6R95R3H_PACKAGE_META_ZIP_LINK_BEFORE_DB_FIX
+2017	artifact_or_output	  // The package metadata is saved to DB before the zip file is written.
+2018	artifact_or_output	  // Therefore file_name / zip_link must already use the exact sanitized filename
+2019	artifact_or_output	  // that will be written to disk by aiwB6R95R3D1CreateZipAndAttach.
+2020	artifact_or_output	  const fileName = aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables.zip").endsWith(".zip")
+2021	artifact_or_output	    ? aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables.zip")
+2022	artifact_or_output	    : `${aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables")}.zip`;
+2023	artifact_or_output	  const zipLink = `aiworkeros://runtime-deliverable-zip/${fileName}`;
+2026	artifact_or_output	    package_kind: "delivery_package",
+2027	artifact_or_output	    package_format: "zip",
+2028	artifact_or_output	    mime_type: "application/zip",
+2029	artifact_or_output	    zip_id: zipId,
+2031	artifact_or_output	    zip_link: zipLink,
+2032	artifact_or_output	    zip_ref: {
+2034	artifact_or_output	      storage_code: "runtime-deliverable-zip",
+2040	artifact_or_output	function aiwB6R95R3D1NormalizeGeneratedArtifact(item, index) {
+2042	artifact_or_output	  const kind = aiwB6R95R3R3OneLine(item?.artifact_kind_code || item?.kind || "document", "document");
+2043	artifact_or_output	  const title = aiwB6R95R3R3OneLine(item?.title || item?.artifact_title_ja || `成果物${seq}`, `成果物${seq}`);
+2045	artifact_or_output	  const suggestedName = item?.file_name || `${seq}_${aiwB6R95R3D1SafeFilePart(title, `artifact_${seq}`)}.md`;
+2046	artifact_or_output	  const fileName = aiwB6R95R3D1SafeFilePart(suggestedName, `artifact_${seq}.md`).endsWith(".md")
+2047	artifact_or_output	    ? aiwB6R95R3D1SafeFilePart(suggestedName, `artifact_${seq}.md`)
+2048	artifact_or_output	    : `${aiwB6R95R3D1SafeFilePart(suggestedName, `artifact_${seq}`)}.md`;
+2050	artifact_or_output	    artifact_no: index + 1,
+2051	artifact_or_output	    artifact_kind_code: kind,
+2060	artifact_or_output	/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_START */
+2061	artifact_or_output	function aiwB6R97R36R3SelectStrongMainDeliverableMarkdown(...inputs) {
+2123	artifact_or_output	        /body|bodyMarkdown|body_markdown|markdown|deliverable|main|artifact|output|summary|content|text/i.test(path) ||
+2139	artifact_or_output	        if (/body|bodyMarkdown|body_markdown|markdown|deliverable|main|artifact|output|payload|summary|content|text|result|response|worker/i.test(key)) {
+2160	artifact_or_output	/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_END */
+2163	artifact_or_output	/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_START */
+2164	artifact_or_output	function aiwB6R97R40SelectTaskSpecificMainDeliverableMarkdown(...inputs) {
+2219	artifact_or_output	      "deliverable",
+2220	artifact_or_output	      "zip",
+2263	artifact_or_output	    return /deliverable\.bodyMarkdown|deliverable\.body_markdown|output_body_ja|body_markdown|bodyMarkdown|requester_delivery_payload\.deliverable/i.test(path);
+2267	artifact_or_output	    return /body|bodyMarkdown|body_markdown|markdown|deliverable|main|artifact|output|summary|content|text|result|response|payload/i.test(path);
+2366	artifact_or_output	  return aiwB6R97R36R3SelectStrongMainDeliverableMarkdown(...inputs);
+2368	artifact_or_output	/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_END */
+2403	artifact_or_output	    return /requester_delivery_payload\.deliverable\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+2405	artifact_or_output	      /generatedArtifacts\[[0-9]+\]\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+2406	artifact_or_output	      /generated_artifacts\[[0-9]+\]\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path);
+2467	artifact_or_output	    const nextStepLike = /next_steps|nextSteps|next_step|nextStep|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path) ||
+2468	artifact_or_output	      text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+2472	artifact_or_output	    /* AIWORKEROS_B6R97R55_R46_REJECT_NON_MAIN_ARTIFACT_TEXT_START */
+2473	artifact_or_output	    const nonMainArtifactPathLike = /qualityNotes|quality_notes|unresolvedIssues|unresolved_issues|nextSteps|next_steps|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path);
+2474	artifact_or_output	    const nonMainArtifactTextLike =
+2479	artifact_or_output	      text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+2482	artifact_or_output	    const nonMainArtifactLike = nonMainArtifactPathLike || nonMainArtifactTextLike || nextStepLike;
+2483	artifact_or_output	    /* AIWORKEROS_B6R97R55_R46_REJECT_NON_MAIN_ARTIFACT_TEXT_END */
+2490	artifact_or_output	    if (nonMainArtifactLike) point -= 140000;
+2509	artifact_or_output	      nonMainArtifactLike,
+2510	artifact_or_output	      nonMainArtifactPathLike,
+2511	artifact_or_output	      nonMainArtifactTextLike,
+2533	artifact_or_output	    .filter((candidate) => !candidate.nonMainArtifactLike)
+2548	artifact_or_output	function aiwB6R95R3D1BuildGeneratedArtifacts(deliverable) {
+2550	artifact_or_output	  function aiwB6R97R65BSourceMarkdownFromDeliverable(value) {
+2575	artifact_or_output	  const aiwB6R97R65BSourceFilesMarkdown = aiwB6R97R65BSourceMarkdownFromDeliverable(deliverable);
+2578	artifact_or_output	  const provided = Array.isArray(deliverable?.generatedArtifacts) ? deliverable.generatedArtifacts : [];
+2579	artifact_or_output	  const strongMainDeliverableBodyMarkdown = aiwB6R97R40SelectTaskSpecificMainDeliverableMarkdown(deliverable, ...arguments);
+2580	artifact_or_output	  const section4MainDeliverableBodyMarkdown = aiwB6R97R46SelectSection4BodyMarkdown(deliverable, strongMainDeliverableBodyMarkdown, ...arguments);
+2584	artifact_or_output	      const normalized = aiwB6R95R3D1NormalizeGeneratedArtifact(item, index);
+2586	artifact_or_output	        normalized.file_name === "01_main_deliverable.md" ||
+2587	artifact_or_output	        normalized.artifact_kind_code === "main_deliverable" ||
+2588	artifact_or_output	        normalized.kind === "main_deliverable" ||
+2592	artifact_or_output	          body_markdown: aiwB6R97R65BAppendSourceMarkdownForMain(aiwB6R97R46SelectSection4BodyMarkdown(normalized, deliverable, section4MainDeliverableBodyMarkdown, strongMainDeliverableBodyMarkdown, ...arguments) || normalized.body_markdown || normalized.bodyMarkdown || normalized.content || "", aiwB6R97R65BSourceFilesMarkdown)
+2599	artifact_or_output	  const artifacts = [
+2601	artifact_or_output	      kind: "main_deliverable",
+2602	artifact_or_output	      title: deliverable?.outputTitle || "主成果物",
+2603	artifact_or_output	      file_name: "01_main_deliverable.md",
+2604	artifact_or_output	      body_markdown: aiwB6R97R65BAppendSourceMarkdownForMain(section4MainDeliverableBodyMarkdown || deliverable?.bodyMarkdown || deliverable?.body_markdown || deliverable?.output_body_ja || "", aiwB6R97R65BSourceFilesMarkdown)
+2608	artifact_or_output	  /* AIWORKEROS_B6R97R52B_BUILD_ARTIFACT_LINE_BASED_FILENAMES_START */
+2609	artifact_or_output	  if (aiwB6R95R3R3Text(deliverable?.qualityNotes)) {
+2610	artifact_or_output	    artifacts.push({
+2612	artifact_or_output	      artifact_kind_code: "quality_notes",
+2615	artifact_or_output	      body_markdown: deliverable.qualityNotes
+2619	artifact_or_output	  if (aiwB6R95R3R3Text(deliverable?.unresolvedIssues)) {
+2620	artifact_or_output	    artifacts.push({
+2622	artifact_or_output	      artifact_kind_code: "unresolved_issues",
+2625	artifact_or_output	      body_markdown: deliverable.unresolvedIssues
+2629	artifact_or_output	  if (aiwB6R95R3R3Text(deliverable?.nextSteps)) {
+2630	artifact_or_output	    artifacts.push({
+2632	artifact_or_output	      artifact_kind_code: "next_steps",
+2635	artifact_or_output	      body_markdown: deliverable.nextSteps
+2639	artifact_or_output	  /* AIWORKEROS_B6R97R52B_BUILD_ARTIFACT_LINE_BASED_FILENAMES_END */
+2640	artifact_or_output	  return artifacts.map(aiwB6R95R3D1NormalizeGeneratedArtifact);
+2643	artifact_or_output	function aiwB6R95R3D1ZipCrc32(buffer) {
+2644	artifact_or_output	  let table = aiwB6R95R3D1ZipCrc32._table;
+2654	artifact_or_output	    aiwB6R95R3D1ZipCrc32._table = table;
+2663	artifact_or_output	function aiwB6R95R3D1ZipDosDateTime(date) {
+2670	artifact_or_output	function aiwB6R95R3D1ZipStored(entries) {
+2674	artifact_or_output	  const now = aiwB6R95R3D1ZipDosDateTime(new Date());
+2679	artifact_or_output	    const crc = aiwB6R95R3D1ZipCrc32(dataBuffer);
+2734	artifact_or_output	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_START */
+2735	artifact_or_output	function aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...sources) {
+2775	artifact_or_output	    return /requester_delivery_payload\.deliverable\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+2776	artifact_or_output	      /deliverable\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+2860	artifact_or_output	    flatten(deliverable, "deliverable", flattened, 0);
+2880	artifact_or_output	  if (!selected || !selected.text) return deliverable;
+2882	artifact_or_output	  const merged = clonePlain(isObject(deliverable) ? deliverable : {});
+2888	artifact_or_output	  function patchArtifactArray(value) {
+2891	artifact_or_output	    return value.map((artifact) => {
+2892	artifact_or_output	      if (!isObject(artifact)) return artifact;
+2894	artifact_or_output	      const fileName = artifact.file_name || artifact.filename || artifact.name || "";
+2895	artifact_or_output	      const kind = artifact.kind || artifact.artifact_kind_code || "";
+2896	artifact_or_output	      const title = artifact.title || "";
+2899	artifact_or_output	        fileName === "01_main_deliverable.md" ||
+2900	artifact_or_output	        kind === "main_deliverable" ||
+2903	artifact_or_output	      if (!isMain) return artifact;
+2906	artifact_or_output	        ...artifact,
+2907	artifact_or_output	        file_name: fileName || "01_main_deliverable.md",
+2908	artifact_or_output	        kind: artifact.kind || "main_deliverable",
+2909	artifact_or_output	        artifact_kind_code: artifact.artifact_kind_code || "main_deliverable",
+2918	artifact_or_output	  merged.generatedArtifacts = patchArtifactArray(merged.generatedArtifacts);
+2919	artifact_or_output	  merged.generated_artifacts = patchArtifactArray(merged.generated_artifacts);
+2923	artifact_or_output	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_END */
+2925	artifact_or_output	function aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable) {
+2930	artifact_or_output	  const packageMeta = deliverable?.deliverablePackage || aiwB6R95R3D1BuildZipPackageMeta("requester", "deliverables");
+2931	artifact_or_output	  const generatedArtifacts = aiwB6R95R3D1BuildGeneratedArtifacts(aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...arguments, deliverable));
+2933	artifact_or_output	  const zipDir = process.env.AIWORKEROS_DELIVERABLE_ZIP_DIR || path.join(process.cwd(), "runtime-deliverable-zips");
+2934	artifact_or_output	  fs.mkdirSync(zipDir, { recursive: true });
+2936	artifact_or_output	  const fileName = aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip").endsWith(".zip")
+2937	artifact_or_output	    ? aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip")
+2938	artifact_or_output	    : `${aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables")}.zip`;
+2939	artifact_or_output	  const zipPath = path.join(zipDir, fileName);
+2941	artifact_or_output	  // AIWORKEROS_B6R95R3F_ZIP_LINK_ACTUAL_FILE_FIX
+2942	artifact_or_output	  // Keep the returned zip link aligned with the actual sanitized filename written to disk.
+2943	artifact_or_output	  const actualZipLink = `aiworkeros://runtime-deliverable-zip/${fileName}`;
+2944	artifact_or_output	  const actualZipRef = Object.assign({}, packageMeta.zip_ref || {}, {
+2946	artifact_or_output	    storage_code: "runtime-deliverable-zip",
+2950	artifact_or_output	  const summaryText = response.deliverable?.summary_text || deliverable?.summaryText || "";
+2953	artifact_or_output	    contract_name: "aiworkeros_common_requester_multi_artifact_zip_contract",
+2954	artifact_or_output	    package_purpose: "bundle_generated_artifacts_for_single_download",
+2957	artifact_or_output	    deliverable_title: response.deliverable?.title || deliverable?.outputTitle || "成果物",
+2958	artifact_or_output	    summary_text: summaryText,
+2959	artifact_or_output	    artifact_count: generatedArtifacts.length,
+2960	artifact_or_output	    generated_artifacts: generatedArtifacts.map((artifact) => ({
+2961	artifact_or_output	      artifact_no: artifact.artifact_no,
+2962	artifact_or_output	      artifact_kind_code: artifact.artifact_kind_code,
+2963	artifact_or_output	      title: artifact.title,
+2964	artifact_or_output	      file_name: artifact.file_name,
+2965	artifact_or_output	      body_format: artifact.body_format
+2967	artifact_or_output	    deliverable_ref: response.deliverable_ref || null,
+2968	artifact_or_output	    robot_context: response.robot_context || deliverable?.robotContext || null,
+2969	artifact_or_output	    generation_basis: response.generation_basis || deliverable?.generationBasis || null,
+2976	artifact_or_output	    ...generatedArtifacts.map((artifact) => ({
+2977	artifact_or_output	      name: artifact.file_name,
+2978	artifact_or_output	      content: artifact.body_markdown
+2983	artifact_or_output	  const zipBuffer = aiwB6R95R3D1ZipStored(entries);
+2984	artifact_or_output	  fs.writeFileSync(zipPath, zipBuffer);
+2985	artifact_or_output	  const stat = fs.statSync(zipPath);
+2987	artifact_or_output	  const zipPublic = {
+2988	artifact_or_output	    package_kind: "delivery_package",
+2989	artifact_or_output	    package_format: "zip",
+2990	artifact_or_output	    mime_type: "application/zip",
+2991	artifact_or_output	    zip_id: packageMeta.zip_id,
+2993	artifact_or_output	    zip_link: actualZipLink,
+2994	artifact_or_output	    zip_ref: actualZipRef,
+2997	artifact_or_output	    artifact_count: generatedArtifacts.length,
+3001	artifact_or_output	  response.generated_artifacts = generatedArtifacts.map((artifact) => ({
+3002	artifact_or_output	    artifact_no: artifact.artifact_no,
+3003	artifact_or_output	    artifact_kind_code: artifact.artifact_kind_code,
+3004	artifact_or_output	    title: artifact.title,
+3005	artifact_or_output	    file_name: artifact.file_name,
+3006	artifact_or_output	    body_format: artifact.body_format
+3008	artifact_or_output	  response.deliverable_package = zipPublic;
+3009	artifact_or_output	  response.deliverable_zip_ref = actualZipRef;
+3010	artifact_or_output	  response.deliverable_link = actualZipLink;
+3013	artifact_or_output	    summary_text: summaryText,
+3014	artifact_or_output	    deliverable_link: actualZipLink,
+3015	artifact_or_output	    deliverable_package: zipPublic,
+3016	artifact_or_output	    deliverable_zip_ref: actualZipRef,
+3017	artifact_or_output	    generated_artifacts: response.generated_artifacts
+3020	artifact_or_output	  response.deliverable = Object.assign({}, response.deliverable || {}, {
+3021	artifact_or_output	    deliverable_package: zipPublic,
+3022	artifact_or_output	    zip_link: actualZipLink,
+3023	artifact_or_output	    generated_artifacts: response.generated_artifacts
+3028	artifact_or_output	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_END
+3029	artifact_or_output	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_END
+3053	artifact_or_output	  const deliverable = aiwB6R95R3R3BuildRequesterFacingDeliverable(payload, sourceRouteCode);
+3077	artifact_or_output	    "    :'artifacts_jsonb'::jsonb",
+3097	artifact_or_output	    "  'generation_basis', :'generation_basis_jsonb'::jsonb,",    "  'deliverable', jsonb_build_object(",
+3098	artifact_or_output	    "    'package_kind', 'delivery_package',",
+3099	artifact_or_output	    "    'deliverable_kind', 'document',",
+3102	artifact_or_output	    "    'deliverable_package', :'deliverable_package_jsonb'::jsonb,",
+3103	artifact_or_output	    "    'generated_artifacts', :'generated_artifacts_jsonb'::jsonb,",
+3105	artifact_or_output	    "    'summary_text', :'output_summary_ja',",
+3110	artifact_or_output	    "    'zip_link', :'deliverable_zip_link'",
+3112	artifact_or_output	    "  'deliverable_ref', jsonb_build_object(",
+3118	artifact_or_output	    "  'deliverable_link', :'deliverable_zip_link',",    "  'requester_delivery_payload', jsonb_build_object(",
+3119	artifact_or_output	    "    'summary_text', :'output_summary_ja',",
+3120	artifact_or_output	    "    'deliverable_title', :'output_title_ja',",
+3121	artifact_or_output	    "    'package_kind', 'delivery_package',",
+3122	artifact_or_output	    "    'deliverable_kind', 'document',",
+3124	artifact_or_output	    "    'generated_artifacts', :'generated_artifacts_jsonb'::jsonb,",
+3125	artifact_or_output	    "    'deliverable_link', :'deliverable_zip_link',",
+3126	artifact_or_output	    "    'deliverable_package', :'deliverable_package_jsonb'::jsonb,",
+3127	artifact_or_output	    "    'deliverable_ref', jsonb_build_object(",
+3153	artifact_or_output	    output_title_ja: deliverable.outputTitle,
+3154	artifact_or_output	    output_body_ja: deliverable.bodyMarkdown,
+3155	artifact_or_output	    output_summary_ja: deliverable.summaryText,
+3156	artifact_or_output	    quality_notes: deliverable.qualityNotes,
+3157	artifact_or_output	    unresolved_issues: deliverable.unresolvedIssues,
+3158	artifact_or_output	    next_steps: deliverable.nextSteps,
+3159	artifact_or_output	    deliverable_package_jsonb: JSON.stringify(deliverable.deliverablePackage),
+3160	artifact_or_output	    deliverable_zip_link: deliverable.deliverablePackage.zip_link,
+3161	artifact_or_output	    generated_artifacts_jsonb: JSON.stringify(deliverable.generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index))),
+3162	artifact_or_output	    robot_context_jsonb: JSON.stringify(deliverable.robotContext),
+3163	artifact_or_output	    generation_basis_jsonb: JSON.stringify(deliverable.generationBasis),
+3164	artifact_or_output	    output_payload_jsonb: JSON.stringify(deliverable.outputPayload),
+3165	artifact_or_output	    artifacts_jsonb: JSON.stringify(deliverable.artifacts)
+3168	artifact_or_output	  return aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable);
+3360	artifact_or_output	    "    coalesce(u.metadata_jsonb->>'aiworkeros_execution_state','') in ('waiting','waiting_for_artifact_zip')",
+3433	artifact_or_output	    (result && result.deliverable_ref && result.deliverable_ref.id) ||
+3434	artifact_or_output	    (result && result.requester_delivery_payload && result.requester_delivery_payload.deliverable_ref && result.requester_delivery_payload.deliverable_ref.id) ||
+3441	artifact_or_output	    (result && result.requester_delivery_payload && result.requester_delivery_payload.summary_text) ||
+3442	artifact_or_output	    (result && result.deliverable && result.deliverable.summary_text) ||
+3443	artifact_or_output	    (result && result.summary_text) ||
+3448	artifact_or_output	function aiwB6R97R14DeliverableLink(result) {
+3450	artifact_or_output	    (result && result.deliverable_link) ||
+3451	artifact_or_output	    (result && result.requester_delivery_payload && result.requester_delivery_payload.deliverable_link) ||
+3452	artifact_or_output	    (result && result.deliverable && result.deliverable.zip_link) ||
+3488	artifact_or_output	function aiwB6R97R19CAicmArtifactKindCode() {
+3489	artifact_or_output	  // AIW_B6R97R19C_ARTIFACT_KIND_RESOLVER_FINALIZER_PATCH
+3490	artifact_or_output	  return "delivery_package";
+3494	artifact_or_output	  const artifactKind = aiwB6R97R19CAicmArtifactKindCode();
+3498	artifact_or_output	    "with valid_artifact_kind as (",
+3499	artifact_or_output	    "  select " + aiwB6R97R14SqlLiteral(artifactKind) + "::text as artifact_kind_code",
+3504	artifact_or_output	    "      and c.conname = 'chk_aicm_human_review_artifact_kind'",
+3505	artifact_or_output	    "      and pg_get_constraintdef(c.oid) like '%' || " + aiwB6R97R14SqlLiteral(artifactKind) + " || '%'",
+3513	artifact_or_output	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_deliverable_link','') <> ''",
+3526	artifact_or_output	    "      'aiworkeros_artifact_kind_code', (select artifact_kind_code from valid_artifact_kind),",
+3533	artifact_or_output	    "    and exists (select 1 from valid_artifact_kind)",
+3543	artifact_or_output	    "    artifact_kind_code = (select artifact_kind_code from valid_artifact_kind),",
+3545	artifact_or_output	    "    delivery_summary_text = coalesce(nullif(h.delivery_summary_text,''), 'AIWorkerOS consumer generated deliverable, summary, and delivery package.'),",
+3546	artifact_or_output	    "    main_changes_text = coalesce(nullif(h.main_changes_text,''), 'AIWorkerOS consumer generated deliverable, summary, and zip link.'),",
+3547	artifact_or_output	    "    ai_review_result_text = coalesce(nullif(h.ai_review_result_text,''), 'AIWorkerOS consumer completed deliverable generation.'),",
+3548	artifact_or_output	    "    artifact_link = coalesce(nullif(h.artifact_link,''), u.metadata_jsonb->>'aiworkeros_deliverable_link'),",
+3553	artifact_or_output	    "      'artifact_kind_code', (select artifact_kind_code from valid_artifact_kind),",
+3570	artifact_or_output	    "    artifact_kind_code,",
+3572	artifact_or_output	    "    delivery_summary_text,",
+3576	artifact_or_output	    "    artifact_link,",
+3591	artifact_or_output	    "    (select artifact_kind_code from valid_artifact_kind),",
+3593	artifact_or_output	    "    'AIWorkerOS consumer generated deliverable, summary, and delivery package.',",
+3594	artifact_or_output	    "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+3595	artifact_or_output	    "    'AIWorkerOS consumer completed deliverable generation.',",
+3597	artifact_or_output	    "    u.metadata_jsonb->>'aiworkeros_deliverable_link',",
+3606	artifact_or_output	    "      'artifact_kind_code', (select artifact_kind_code from valid_artifact_kind),",
+3634	artifact_or_output	  const link = aiwB6R97R14DeliverableLink(result);
+3652	artifact_or_output	    deliverable_link: link,
+3666	artifact_or_output	    "      'aiworkeros_deliverable_link', " + aiwB6R97R14SqlLiteral(link) + ",",
+3681	artifact_or_output	    "      delivery_summary_text = " + aiwB6R97R14SqlLiteral(summary) + ",",
+3682	artifact_or_output	    "      artifact_link = " + aiwB6R97R14SqlLiteral(link) + ",",
+3683	artifact_or_output	    "      ai_review_result_text = 'AIWorkerOS consumer completed deliverable generation.',",
+3702	artifact_or_output	    "    artifact_kind_code,",
+3704	artifact_or_output	    "    delivery_summary_text,",
+3708	artifact_or_output	    "    artifact_link,",
+3723	artifact_or_output	    "    'delivery_package',",
+3726	artifact_or_output	    "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+3727	artifact_or_output	    "    'AIWorkerOS consumer completed deliverable generation.',",

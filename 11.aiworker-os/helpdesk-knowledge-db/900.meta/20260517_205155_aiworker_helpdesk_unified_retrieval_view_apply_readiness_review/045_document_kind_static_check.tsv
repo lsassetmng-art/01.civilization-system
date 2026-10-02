@@ -1,0 +1,9 @@
+document_kind	status
+app_profile	PRESENT
+qa	PRESENT
+screen	PRESENT
+operation_flow	PRESENT
+error_pattern	PRESENT
+runbook	PRESENT
+escalation_rule	PRESENT
+answer_template	PRESENT

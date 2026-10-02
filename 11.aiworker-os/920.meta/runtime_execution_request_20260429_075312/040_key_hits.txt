@@ -1,0 +1,30 @@
+16:- request table: aiworker.runtime_execution_request
+17:- create function: aiworker.fn_runtime_execution_create_request
+18:- request board: aiworker.vw_app_aiworker_runtime_execution_request_board_v1
+19:- gate board: aiworker.vw_app_aiworker_runtime_execution_gate_board_v1
+20:- handoff board: aiworker.vw_app_aiworker_runtime_handoff_packet_board_v1
+218810:# AIWorkerOS Model Append: Runtime Execution Request
+218818:Runtime Execution Request connects Runtime Control Profile to actual execution intake.
+218824:Runtime Execution Request:
+218826:- aiworker.runtime_execution_request
+218832:- aiworker.runtime_execution_request
+218833:- aiworker.runtime_execution_event_log
+218834:- aiworker.runtime_review_gate_log
+218835:- aiworker.runtime_handoff_packet
+218839:- aiworker.fn_runtime_execution_create_request(...)
+218843:- aiworker.vw_app_aiworker_runtime_execution_request_board_v1
+218844:- aiworker.vw_app_aiworker_runtime_execution_gate_board_v1
+218845:- aiworker.vw_app_aiworker_runtime_handoff_packet_board_v1
+218846:- aiworker.vw_app_aiworker_runtime_execution_intake_payload_v1
+220660:# AIWorkerOS Integration Append: Runtime Execution Request Reference Surface
+220668:- aiworker.fn_runtime_execution_create_request(...)
+220672:- aiworker.vw_app_aiworker_runtime_execution_request_board_v1
+220673:- aiworker.vw_app_aiworker_runtime_execution_gate_board_v1
+220674:- aiworker.vw_app_aiworker_runtime_handoff_packet_board_v1
+220675:- aiworker.vw_app_aiworker_runtime_execution_intake_payload_v1
+220689:- aiworker.fn_runtime_execution_create_request(...)
+220690:- aiworker.runtime_execution_request
+221348:# AIWorkerOS API Append: Runtime Execution Request Contract
+221360:- aiworker.fn_runtime_execution_create_request(...)
+222395:# AIWorkerOS Policy Append: Runtime Execution Request
+222403:Runtime Execution Request is an internal intake layer.

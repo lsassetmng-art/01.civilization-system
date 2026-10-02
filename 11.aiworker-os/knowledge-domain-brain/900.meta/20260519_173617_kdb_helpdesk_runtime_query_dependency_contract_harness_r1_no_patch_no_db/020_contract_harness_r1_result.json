@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "phase": "KDB_HELPDESK_RUNTIME_QUERY_DEPENDENCY_CONTRACT_HARNESS_R1_NO_PATCH_NO_DB",
+  "sourceContractDump": "/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_172651_kdb_helpdesk_provider_contract_exact_dump_no_patch_no_db/020_provider_contract_exact_dump.json",
+  "checks": [
+    {
+      "status": "PASS",
+      "name": "readonly_helpdesk_view_query_spec_confirmed",
+      "detail": {
+        "count": 7
+      }
+    },
+    {
+      "status": "PASS",
+      "name": "resolve_query_dependency_shape_confirmed",
+      "detail": {
+        "count": 1,
+        "labels": [
+          "two_args_query_dependency_object"
+        ]
+      }
+    },
+    {
+      "status": "PASS",
+      "name": "resolve_candidate_errors_zero",
+      "detail": {
+        "count": 0
+      }
+    },
+    {
+      "status": "PASS",
+      "name": "provider_direct_db_dependency_forbidden_count_zero",
+      "detail": {
+        "providerForbidden": 0
+      }
+    }
+  ],
+  "counts": {
+    "buildSpecCount": 7,
+    "readonlyHelpdeskViewSpecCount": 7,
+    "resolveCallCount": 5,
+    "resolveQueryDependencyShapeCount": 1,
+    "resolveSkippedLikeCount": 4,
+    "resolveErrorCount": 0
+  },
+  "selectedResolveLabels": [
+    "two_args_query_dependency_object"
+  ]
+}

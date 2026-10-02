@@ -1,0 +1,256 @@
+3310:- stability_score
+4513:  - stability_score
+4840:- stability_score
+6793:- stability_score
+7996:  - stability_score
+8323:- stability_score
+8575:  stability_score integer not null default 0,
+9108:    stability_score >= 0 and
+11134:- stability_score
+12601:  - stability_score
+12928:- stability_score
+13180:  stability_score integer not null default 0,
+13713:    stability_score >= 0 and
+16210:- stability_score
+18089:  - stability_score
+18416:- stability_score
+18668:  stability_score integer not null default 0,
+19201:    stability_score >= 0 and
+22102:- stability_score
+24151:  - stability_score
+24478:- stability_score
+24730:  stability_score integer not null default 0,
+25263:    stability_score >= 0 and
+27826:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+28641:- stability_score
+30998:  - stability_score
+31325:- stability_score
+31577:  stability_score integer not null default 0,
+32110:    stability_score >= 0 and
+34978:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+35842:- stability_score
+38239:  - stability_score
+38566:- stability_score
+38818:  stability_score integer not null default 0,
+39351:    stability_score >= 0 and
+42071:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+42600:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+42690:- external track coordination note
+42785:- external track coordination
+43505:- stability_score
+44378:Freeze the coordination posture with external tracks after AiworkerOS freeze.
+44384:coordination_notes:
+44398:- external coordination does not change AiworkerOS canonical ownership
+45943:  - stability_score
+46270:- stability_score
+46522:  stability_score integer not null default 0,
+47055:    stability_score >= 0 and
+48990:  - external track coordination checks
+50061:- external track coordination note
+50767:  BusinessOS event contract validation and external-track coordination check
+55175:- stability_score
+56378:  - stability_score
+56705:- stability_score
+58568:- stability_score
+59771:  - stability_score
+60098:- stability_score
+60350:  stability_score integer not null default 0,
+60883:    stability_score >= 0 and
+62872:- stability_score
+64339:  - stability_score
+64666:- stability_score
+64918:  stability_score integer not null default 0,
+65451:    stability_score >= 0 and
+67946:- stability_score
+69825:  - stability_score
+70152:- stability_score
+70404:  stability_score integer not null default 0,
+70937:    stability_score >= 0 and
+73781:- stability_score
+75830:  - stability_score
+76157:- stability_score
+76409:  stability_score integer not null default 0,
+76942:    stability_score >= 0 and
+79449:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+80264:- stability_score
+82621:  - stability_score
+82948:- stability_score
+83200:  stability_score integer not null default 0,
+83733:    stability_score >= 0 and
+86544:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+87408:- stability_score
+89805:  - stability_score
+90132:- stability_score
+90384:  stability_score integer not null default 0,
+90917:    stability_score >= 0 and
+94062:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+94152:- external track coordination note
+94247:- external track coordination
+94967:- stability_score
+95840:Freeze the coordination posture with external tracks after AiworkerOS freeze.
+95846:coordination_notes:
+95860:- external coordination does not change AiworkerOS canonical ownership
+97405:  - stability_score
+97732:- stability_score
+97984:  stability_score integer not null default 0,
+98517:    stability_score >= 0 and
+100452:  - external track coordination checks
+101926:  BusinessOS event contract validation and external-track coordination check
+106217:- stability_score
+107420:  - stability_score
+107747:- stability_score
+109700:- stability_score
+110903:  - stability_score
+111230:- stability_score
+111482:  stability_score integer not null default 0,
+112015:    stability_score >= 0 and
+114041:- stability_score
+115508:  - stability_score
+115835:- stability_score
+116087:  stability_score integer not null default 0,
+116620:    stability_score >= 0 and
+119117:- stability_score
+120996:  - stability_score
+121323:- stability_score
+121575:  stability_score integer not null default 0,
+122108:    stability_score >= 0 and
+125009:- stability_score
+127058:  - stability_score
+127385:- stability_score
+127637:  stability_score integer not null default 0,
+128170:    stability_score >= 0 and
+130733:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+131548:- stability_score
+133905:  - stability_score
+134232:- stability_score
+134484:  stability_score integer not null default 0,
+135017:    stability_score >= 0 and
+137885:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+138749:- stability_score
+141146:  - stability_score
+141473:- stability_score
+141725:  stability_score integer not null default 0,
+142258:    stability_score >= 0 and
+144978:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+145507:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+145597:- external track coordination note
+145692:- external track coordination
+146412:- stability_score
+147285:Freeze the coordination posture with external tracks after AiworkerOS freeze.
+147291:coordination_notes:
+147305:- external coordination does not change AiworkerOS canonical ownership
+148850:  - stability_score
+149177:- stability_score
+149429:  stability_score integer not null default 0,
+149962:    stability_score >= 0 and
+151897:  - external track coordination checks
+152968:- external track coordination note
+153674:  BusinessOS event contract validation and external-track coordination check
+158080:- stability_score
+159283:  - stability_score
+159610:- stability_score
+161473:- stability_score
+162676:  - stability_score
+163003:- stability_score
+163255:  stability_score integer not null default 0,
+163788:    stability_score >= 0 and
+165777:- stability_score
+167244:  - stability_score
+167571:- stability_score
+167823:  stability_score integer not null default 0,
+168356:    stability_score >= 0 and
+170851:- stability_score
+172730:  - stability_score
+173057:- stability_score
+173309:  stability_score integer not null default 0,
+173842:    stability_score >= 0 and
+176686:- stability_score
+178735:  - stability_score
+179062:- stability_score
+179314:  stability_score integer not null default 0,
+179847:    stability_score >= 0 and
+182354:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+183169:- stability_score
+185526:  - stability_score
+185853:- stability_score
+186105:  stability_score integer not null default 0,
+186638:    stability_score >= 0 and
+189449:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+190313:- stability_score
+192710:  - stability_score
+193037:- stability_score
+193289:  stability_score integer not null default 0,
+193822:    stability_score >= 0 and
+196967:- WB06 focuses on AiworkerOS runtime safety, repairability, and testability
+197057:- external track coordination note
+197152:- external track coordination
+197872:- stability_score
+198745:Freeze the coordination posture with external tracks after AiworkerOS freeze.
+198751:coordination_notes:
+198765:- external coordination does not change AiworkerOS canonical ownership
+200310:  - stability_score
+200637:- stability_score
+200889:  stability_score integer not null default 0,
+201422:    stability_score >= 0 and
+203357:  - external track coordination checks
+204831:  BusinessOS event contract validation and external-track coordination check
+206705:- stability_score
+208215:Freeze the coordination posture with external tracks after AiworkerOS freeze.
+208221:coordination_notes:
+208235:- external coordination does not change AiworkerOS canonical ownership
+210748:  - stability_score
+211079:- stability_score
+211335:  stability_score integer not null default 0,
+211872:    stability_score >= 0 and
+213871:  - external track coordination checks
+214010:  BusinessOS event contract validation and external-track coordination check
+217664:- stability_score
+218409:# AIWorkerOS Model Append: Robot Capability Profile
+218417:Robot Capability Profile adds a robot-performance layer separate from role, series tendency, and CX knowledge level.
+218438:   - precision / 精密性
+218439:   - agility / 機動性
+218440:   - coordination / 連携性
+218441:   - continuity / 継続文脈保持
+218442:   - specialization_depth / 専門深度
+218443:   - creativity / 発想力
+218444:   - review_depth / レビュー力
+218445:   - stability / 安定性
+218454:### precision / 精密性
+218458:### agility / 機動性
+218462:### coordination / 連携性
+218466:### continuity / 継続文脈保持
+218470:### specialization_depth / 専門深度
+218474:### creativity / 発想力
+218478:### review_depth / レビュー力
+218482:### stability / 安定性
+218513:- 高機能
+218514:- 実務特化
+218515:- 高精度レビュー
+218516:- 複雑作業対応
+218517:- 補完提案が強い
+219531:Freeze the coordination posture with external tracks after AiworkerOS freeze.
+219537:coordination_notes:
+219551:- external coordination does not change AiworkerOS canonical ownership
+220080:# AIWorkerOS Integration Append: Robot Capability Profile Reference Surface
+220090:- aiworker.robot_capability_axis_catalog
+220092:- aiworker.robot_series_capability_default
+220093:- aiworker.robot_model_capability_profile
+220094:- aiworker.robot_capability_sharing_policy
+220102:- aiworker.vw_robot_capability_sharing_policy_public_v1
+220103:- aiworker.vw_app_robot_capability_profile_directory_v1
+220109:- aiworker.vw_app_robot_capability_profile_directory_v1
+220128:- high-precision review
+221516:# AIWorkerOS Policy Append: Robot Capability Profile
+221524:Robot Capability Profile is a capability and performance metadata layer.
+221538:## Coordination and continuity boundary
+221567:- 高機能
+221568:- 実務特化
+221569:- 高精度レビュー
+221570:- 複雑作業対応
+221571:- 補完提案が強い
+222968:  - stability_score
+223299:- stability_score
+223555:  stability_score integer not null default 0,
+224092:    stability_score >= 0 and
+226091:  - external track coordination checks
+226230:  BusinessOS event contract validation and external-track coordination check

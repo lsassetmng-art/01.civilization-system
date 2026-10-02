@@ -1,0 +1,13 @@
+object_name	row_count
+helpdesk_supported_app	11
+helpdesk_app_support_profile	11
+helpdesk_qa_entry	7
+helpdesk_screen_knowledge	4
+helpdesk_operation_flow	5
+helpdesk_error_pattern	4
+helpdesk_troubleshooting_runbook	4
+helpdesk_escalation_rule	6
+helpdesk_answer_template	4
+v_helpdesk_active_supported_app	11
+v_helpdesk_active_qa	7
+v_helpdesk_active_error_pattern	4

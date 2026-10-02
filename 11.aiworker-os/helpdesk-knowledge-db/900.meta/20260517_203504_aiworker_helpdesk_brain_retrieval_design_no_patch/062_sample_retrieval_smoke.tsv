@@ -1,0 +1,5 @@
+retrieval_case	app_code	title_or_pattern	visibility	confidence_level	source_type
+qa_by_app	ai_company_manager	AICompanyManagerの成果物レビューはどこで聞けばいいですか？	private	standard	initial_seed
+qa_by_app	aiworker_os	ヘルプデスクの回答はどこが作りますか？	public	verified	canon
+qa_by_app	civilization_portal_site	ヘルプデスクはどこから使いますか？	public	verified	canon
+qa_by_app	erp	ERPの書き込み操作をヘルプデスクから実行できますか？	private	standard	initial_seed

@@ -1,0 +1,9 @@
+document_kind	source_table	purpose
+app_profile	helpdesk_supported_app + helpdesk_app_support_profile	App-level support overview and support modes.
+qa	helpdesk_qa_entry	Question and answer retrieval.
+screen	helpdesk_screen_knowledge	Screen-level help retrieval.
+operation_flow	helpdesk_operation_flow	Step-by-step operation guidance retrieval.
+error_pattern	helpdesk_error_pattern	Error explanation and safe next action retrieval.
+runbook	helpdesk_troubleshooting_runbook	Troubleshooting procedure retrieval.
+escalation_rule	helpdesk_escalation_rule	Escalation trigger and route metadata retrieval.
+answer_template	helpdesk_answer_template	Answer structure/template selection.

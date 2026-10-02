@@ -1,0 +1,8 @@
+check_name	status	note
+route_owner_selected	PASS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/brain-context-bridge.js
+route_owner_selection	INFO	FALLBACK_FROM_INTERESTING_FILES
+route_matches_present	WARN	0; fallback selected
+db_matches_present	WARN	0; fallback to route owner
+response_matches_present	WARN	0; fallback to route owner
+patch_apply_now	NO	Design only
+phase1_methods	GET_ONLY	No POST in Phase1

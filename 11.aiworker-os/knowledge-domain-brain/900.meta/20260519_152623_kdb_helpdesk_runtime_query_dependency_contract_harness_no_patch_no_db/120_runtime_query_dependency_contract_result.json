@@ -1,0 +1,196 @@
+{
+  "ok": false,
+  "phase": "KDB_HELPDESK_RUNTIME_QUERY_DEPENDENCY_CONTRACT_HARNESS_NO_PATCH_NO_DB",
+  "patch": "NO",
+  "dbConnection": "NO",
+  "dbWrite": "NO",
+  "apiPost": "NO",
+  "checks": [
+    {
+      "status": "PASS",
+      "name": "provider_export_HELPDESK_PROVIDER_CODE_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_export_HELPDESK_SUPPORTED_DOMAIN_CODES_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_export_normalizeHelpdeskProviderInput_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_export_buildHelpdeskRetrievalQuerySpec_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_export_rankHelpdeskRetrievalDocuments_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_export_mapHelpdeskRetrievalRowToMatch_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_export_createHelpdeskProvider_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_export_resolveHelpdeskKnowledgeContext_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_HELPDESK_PROVIDER_CODE_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_HELPDESK_SUPPORTED_DOMAIN_CODES_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_normalizeHelpdeskProviderInput_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_buildHelpdeskRetrievalQuerySpec_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_rankHelpdeskRetrievalDocuments_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_mapHelpdeskRetrievalRowToMatch_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_createHelpdeskProvider_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "index_reexport_resolveHelpdeskKnowledgeContext_present",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "provider_code_is_helpdesk",
+      "detail": {}
+    },
+    {
+      "status": "PASS",
+      "name": "supported_domain_codes_include_helpdesk_and_app_support",
+      "detail": {
+        "supported": [
+          "helpdesk",
+          "app_support"
+        ]
+      }
+    },
+    {
+      "status": "FAIL",
+      "name": "buildHelpdeskRetrievalQuerySpec_contract_not_confirmed",
+      "detail": {
+        "observed": [
+          "normalizedInput",
+          "readonly",
+          "source",
+          "sql",
+          "values"
+        ],
+        "lastError": null
+      }
+    },
+    {
+      "status": "PASS",
+      "name": "resolveHelpdeskKnowledgeContext_accepts_query_dependency",
+      "detail": {
+        "status": "skipped",
+        "keys": [
+          "guardrailFindings",
+          "helpdeskMatches",
+          "metadata",
+          "ok",
+          "providerCode",
+          "requiresHumanReview",
+          "safetyCautions",
+          "selectedReferences",
+          "status",
+          "statusCode",
+          "supportedDomainCodes",
+          "usageSummary"
+        ],
+        "matchCount": 0
+      }
+    },
+    {
+      "status": "WARN",
+      "name": "mock_query_dependency_not_called",
+      "detail": {
+        "queryCallCount": 0
+      }
+    }
+  ],
+  "counts": {
+    "queryCallCount": 0,
+    "queryCallsReadonlyShapeCount": 0,
+    "queryCallsHelpdeskViewCount": 0
+  },
+  "observed": {
+    "querySpecShape": [
+      "normalizedInput",
+      "readonly",
+      "source",
+      "sql",
+      "values"
+    ],
+    "querySpecReadonlyShape": false,
+    "querySpecMentionsHelpdeskView": true,
+    "resolveStatus": "skipped",
+    "resolveKeys": [
+      "guardrailFindings",
+      "helpdeskMatches",
+      "metadata",
+      "ok",
+      "providerCode",
+      "requiresHumanReview",
+      "safetyCautions",
+      "selectedReferences",
+      "status",
+      "statusCode",
+      "supportedDomainCodes",
+      "usageSummary"
+    ],
+    "resolveMatchCount": 0,
+    "queryCalls": []
+  },
+  "errors": [
+    {
+      "name": "buildHelpdeskRetrievalQuerySpec_contract_not_confirmed",
+      "detail": {
+        "observed": [
+          "normalizedInput",
+          "readonly",
+          "source",
+          "sql",
+          "values"
+        ],
+        "lastError": null
+      }
+    }
+  ]
+}

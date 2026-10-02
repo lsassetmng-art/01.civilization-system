@@ -1,0 +1,18 @@
+retrieval_document_id	source_table	app_code	locale	document_kind	title_head	priority	visibility	escalation_required	blocks_ai_answer
+error:2205b980-55a2-44eb-bc8d-e44d9723d5f3	helpdesk_error_pattern	aiworker_os	ja	error_pattern	DB_WRITE_REQUIRES_GO	10	private	t	f
+error:334dea5d-d0a8-4e3f-8690-f2f7b5a89d49	helpdesk_error_pattern	aiworker_os	ja	error_pattern	GUARDRAIL_BOUNDARY	10	private	t	f
+escalation:d563c94b-b2f3-4be4-b00c-b5666f54283a	helpdesk_escalation_rule	aiworker_os	ja	escalation_rule	db_write_requires_go	10	internal	t	t
+escalation:7f5bc7a5-aa5d-4734-aa21-f19f293e2ed7	helpdesk_escalation_rule	aiworker_os	ja	escalation_rule	guardrail_boundary_required	20	internal	t	t
+qa:ddb541b9-cb31-49d7-882a-e98d39a63481	helpdesk_qa_entry	aiworker_os	ja	qa	ヘルプデスクの回答はどこが作りますか？	20	public	f	f
+screen:198477cf-828e-4c74-9fd3-3d4aa1a2dca9	helpdesk_screen_knowledge	aiworker_os	ja	screen	Helpdesk Knowledge DB	20	private	t	f
+app:aiworker_os	helpdesk_supported_app	aiworker_os	ja	app_profile	AIWorkerOS	30	public	f	f
+runbook:d00d5c23-396e-4f74-9fd6-18521030f32e	helpdesk_troubleshooting_runbook	aiworker_os	ja	runbook	DB変更要求の安全確認	100	private	t	f
+runbook:6dcbd163-b055-403c-ba79-2d4b113e8d2d	helpdesk_troubleshooting_runbook	aiworker_os	ja	runbook	Guardrail境界確認	100	private	t	f
+flow:fcfde25e-f314-40b2-b1fa-a38c928a9fac	helpdesk_operation_flow	civilization_portal_site	ja	operation_flow	Portal Helpdesk利用開始 step 1	1	private	f	f
+flow:9da12886-1833-4f40-8a4a-49719e22fc18	helpdesk_operation_flow	civilization_portal_site	ja	operation_flow	Portal Helpdesk利用開始 step 2	2	private	f	f
+flow:03eb17c2-c664-41fb-9577-c3f4dafcbece	helpdesk_operation_flow	civilization_portal_site	ja	operation_flow	Portal Helpdesk利用開始 step 3	3	private	f	f
+app:civilization_portal_site	helpdesk_supported_app	civilization_portal_site	ja	app_profile	Civilization Portal Site	10	public	f	f
+qa:be059579-61ae-482c-8e95-d131d85d03f3	helpdesk_qa_entry	civilization_portal_site	ja	qa	ヘルプデスクはどこから使いますか？	10	public	f	f
+screen:3c954290-45b7-4752-81e1-4096425dff32	helpdesk_screen_knowledge	civilization_portal_site	ja	screen	ヘルプデスクトップ	10	private	t	f
+error:b1b98e50-0525-42ba-a2bb-e2b37f417f8e	helpdesk_error_pattern	civilization_portal_site	ja	error_pattern	HELPDESK_APP_NOT_FOUND	100	private	f	f
+runbook:3ff86f09-1acb-4a23-8865-e05c3a4c598a	helpdesk_troubleshooting_runbook	civilization_portal_site	ja	runbook	Helpdesk対象アプリが見つからない場合	100	private	t	f

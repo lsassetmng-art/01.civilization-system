@@ -1,0 +1,10 @@
+table_name	status
+helpdesk_answer_template	EXISTS
+helpdesk_app_support_profile	EXISTS
+helpdesk_error_pattern	EXISTS
+helpdesk_escalation_rule	EXISTS
+helpdesk_operation_flow	EXISTS
+helpdesk_qa_entry	EXISTS
+helpdesk_screen_knowledge	EXISTS
+helpdesk_supported_app	EXISTS
+helpdesk_troubleshooting_runbook	EXISTS

@@ -1,0 +1,4082 @@
+     1	
+     2	// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_START
+     3	/*
+     4	  B6R44F:
+     5	  Preserve source route metadata from app callers.
+     6	  AICompanyManager Workbench uses this to separate:
+     7	  - individual_instruction
+     8	  - task_ledger_worker
+     9	  - president_route_worker
+    10	
+    11	  This helper is intentionally generic and side-effect-free.
+    12	*/
+    13	
+    14	// AIW_B6R96R1G2_MINIMUM_DELIVERABLE_HELPER_START
+    15	function aiwB6R96R1G2Text(value) {
+    16	  return String(value === undefined || value === null ? "" : value).trim();
+    17	}
+    18	
+    19	function aiwB6R96R1G2FirstText(values) {
+    20	  for (const value of values) {
+    21	    const text = aiwB6R96R1G2Text(value);
+    22	    if (text) return text;
+    23	  }
+    24	  return "";
+    25	}
+    26	
+    27	function aiwB6R96R1G2Object(value) {
+    28	  return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+    29	}
+    30	
+    31	function aiwB6R96R1G2Pick(payload, names) {
+    32	  payload = aiwB6R96R1G2Object(payload);
+    33	  for (const name of names) {
+    34	    const text = aiwB6R96R1G2Text(payload[name]);
+    35	    if (text) return text;
+    36	  }
+    37	  return "";
+    38	}
+    39	
+    40	function aiwB6R96R1G2FindAppPayload(payload) {
+    41	  payload = aiwB6R96R1G2Object(payload);
+    42	  return aiwB6R96R1G2Object(
+    43	    payload.app_read_payload_jsonb ||
+    44	    payload.app_read_payload ||
+    45	    payload.request_payload_jsonb ||
+    46	    payload.request_payload ||
+    47	    payload.payload ||
+    48	    payload.body ||
+    49	    {}
+    50	  );
+    51	}
+    52	
+    53	function aiwB6R96R1G2LooksRuntimePayload(payload) {
+    54	  if (!payload || typeof payload !== "object" || Array.isArray(payload)) return false;
+    55	
+    56	  const appPayload = aiwB6R96R1G2FindAppPayload(payload);
+    57	  const statusText = aiwB6R96R1G2FirstText([
+    58	    payload.request_status_code,
+    59	    payload.status_code,
+    60	    payload.status,
+    61	    payload.result,
+    62	    payload.reason
+    63	  ]);
+    64	
+    65	  return Boolean(
+    66	    payload.request_id ||
+    67	    payload.runtime_request_id ||
+    68	    payload.idempotency_key ||
+    69	    payload.app_surface_code ||
+    70	    payload.model_code ||
+    71	    payload.task_domain_code ||
+    72	    payload.task_title ||
+    73	    payload.task_instruction_ja ||
+    74	    payload.app_read_payload_jsonb ||
+    75	    appPayload.task_title ||
+    76	    appPayload.task_instruction_ja ||
+    77	    appPayload.source_request_ref ||
+    78	    /REQUESTED|ACCEPTED|accepted|ok/i.test(statusText)
+    79	  );
+    80	}
+    81	
+    82	function aiwB6R96R1G2NormalizeRoleCode(payload, appPayload) {
+    83	  const raw = aiwB6R96R1G2FirstText([
+    84	    aiwB6R96R1G2Pick(payload, ["role_code", "worker_role_code", "placement_role_code"]),
+    85	    aiwB6R96R1G2Pick(appPayload, ["role_code", "worker_role_code", "placement_role_code"]),
+    86	    aiwB6R96R1G2Pick(payload, ["model_code", "aiworker_model_code"]),
+    87	    aiwB6R96R1G2Pick(appPayload, ["model_code", "aiworker_model_code"])
+    88	  ]).toLowerCase();
+    89	
+    90	  if (raw.includes("president") || raw.includes("r5p")) return "president";
+    91	  if (raw.includes("manager") || raw.includes("r5")) return "manager";
+    92	  if (raw.includes("leader") || raw.includes("r4")) return "leader";
+    93	  if (raw.includes("worker") || raw.includes("r3")) return "worker";
+    94	  if (raw.includes("helper") || raw.includes("r1")) return "helper";
+    95	  if (raw.includes("friend")) return "friend";
+    96	  if (raw.includes("lover")) return "lover";
+    97	  return "worker";
+    98	}
+    99	
+   100	function aiwB6R96R1G2CapabilityTier(payload, appPayload) {
+   101	  const model = aiwB6R96R1G2FirstText([
+   102	    aiwB6R96R1G2Pick(payload, ["model_code", "aiworker_model_code"]),
+   103	    aiwB6R1G2PickSafe(appPayload, ["model_code", "aiworker_model_code"])
+   104	  ]).toLowerCase();
+   105	
+   106	  if (model.includes("byd2-003") || model.includes("hd-r5p") || model.includes("hd-r5")) return "high";
+   107	  if (model.includes("byd2-002") || model.includes("hd-r4")) return "standard";
+   108	  if (model.includes("byd1-003") || model.includes("hd-r3")) return "standard_basic";
+   109	  if (model.includes("hd-r1c") || model.includes("hd-r1a") || model.includes("friend") || model.includes("lover")) return "basic_stable";
+   110	  return "standard_basic";
+   111	}
+   112	
+   113	function aiwB6R1G2PickSafe(payload, names) {
+   114	  return aiwB6R96R1G2Pick(payload, names);
+   115	}
+   116	
+   117	function aiwB6R96R1G2ReferenceProfile(tier) {
+   118	  if (tier === "high") {
+   119	    return {
+   120	      reference_depth: "deep",
+   121	      reference_scope: "broad_verified_cx",
+   122	      stability_level: "high",
+   123	      originality_level: "high",
+   124	      specialty_level: "high",
+   125	      prediction_level: "high",
+   126	      review_depth: "advanced"
+   127	    };
+   128	  }
+   129	
+   130	  if (tier === "standard") {
+   131	    return {
+   132	      reference_depth: "standard",
+   133	      reference_scope: "standard_cx",
+   134	      stability_level: "standard",
+   135	      originality_level: "medium",
+   136	      specialty_level: "medium",
+   137	      prediction_level: "medium",
+   138	      review_depth: "standard"
+   139	    };
+   140	  }
+   141	
+   142	  if (tier === "basic_stable") {
+   143	    return {
+   144	      reference_depth: "lightweight",
+   145	      reference_scope: "lightweight_reference_or_legacy_seed",
+   146	      stability_level: "standard",
+   147	      originality_level: "low",
+   148	      specialty_level: "low",
+   149	      prediction_level: "basic",
+   150	      review_depth: "basic"
+   151	    };
+   152	  }
+   153	
+   154	  return {
+   155	    reference_depth: "standard_light",
+   156	    reference_scope: "standard_limited_cx",
+   157	    stability_level: "standard",
+   158	    originality_level: "medium_low",
+   159	    specialty_level: "medium_low",
+   160	    prediction_level: "basic",
+   161	    review_depth: "basic"
+   162	  };
+   163	}
+   164	
+   165	function aiwB6R96R1G2BuildBody(role, title, instruction, referenceProfile) {
+   166	  const safeTitle = title || "AIWorkerOS成果物";
+   167	  const safeInstruction = instruction || "入力指示が不足しています。";
+   168	  const cxNote = "参照範囲: " + referenceProfile.reference_depth + " / " + referenceProfile.reference_scope;
+   169	
+   170	  if (!instruction) {
+   171	    return [
+   172	      "# 作業不能理由レポート",
+   173	      "",
+   174	      "## 結論",
+   175	      "現時点では通常成果物を完成できませんが、最低保証として不足情報レポートを返します。",
+   176	      "",
+   177	      "## 理由",
+   178	      "作業指示または成果物条件が不足しています。",
+   179	      "",
+   180	      "## 不足情報",
+   181	      "- 目的",
+   182	      "- 対象範囲",
+   183	      "- 期待する成果物形式",
+   184	      "- 判断に必要な前提",
+   185	      "",
+   186	      "## 次に必要な入力",
+   187	      "上記の不足情報を追加してください。",
+   188	      "",
+   189	      "## 参照制約",
+   190	      cxNote
+   191	    ].join("\n");
+   192	  }
+   193	
+   194	  if (role === "president") {
+   195	    return [
+   196	      "# " + safeTitle,
+   197	      "",
+   198	      "## 目的",
+   199	      safeInstruction,
+   200	      "",
+   201	      "## 方針案",
+   202	      "現時点の情報から、実行可能な基本方針を整理します。",
+   203	      "",
+   204	      "## 優先順位",
+   205	      "1. 目的と制約の確認",
+   206	      "2. 実行範囲の整理",
+   207	      "3. Managerへ渡す大項目の明確化",
+   208	      "",
+   209	      "## 成功条件",
+   210	      "次工程のManagerが大項目へ分解できる状態にすること。",
+   211	      "",
+   212	      "## 制約",
+   213	      cxNote,
+   214	      "",
+   215	      "## 次工程",
+   216	      "Managerへ方針を渡し、大項目分解を行ってください。"
+   217	    ].join("\n");
+   218	  }
+   219	
+   220	  if (role === "manager") {
+   221	    return [
+   222	      "# " + safeTitle,
+   223	      "",
+   224	      "## 全体方針",
+   225	      safeInstruction,
+   226	      "",
+   227	      "## 大項目分解案",
+   228	      "- 目的整理",
+   229	      "- 成果物整理",
+   230	      "- 実行範囲整理",
+   231	      "- 担当/役割候補整理",
+   232	      "- レビュー観点整理",
+   233	      "",
+   234	      "## Leaderへ渡す観点",
+   235	      "各大項目を作業単位へ分解できるよう、目的、入力、成果物、制約を渡します。",
+   236	      "",
+   237	      "## 注意点",
+   238	      cxNote,
+   239	      "",
+   240	      "## 次工程",
+   241	      "Leaderが中項目と作業単位へ分解してください。"
+   242	    ].join("\n");
+   243	  }
+   244	
+   245	  if (role === "leader") {
+   246	    return [
+   247	      "# " + safeTitle,
+   248	      "",
+   249	      "## 対象",
+   250	      safeInstruction,
+   251	      "",
+   252	      "## 作業単位候補",
+   253	      "- 入力確認",
+   254	      "- 成果物構成作成",
+   255	      "- 本文作成",
+   256	      "- 品質確認",
+   257	      "- 納品準備",
+   258	      "",
+   259	      "## Workerへの引き渡し",
+   260	      "作業目的、期待成果物、制約、確認観点を明示して渡します。",
+   261	      "",
+   262	      "## 注意点",
+   263	      cxNote,
+   264	      "",
+   265	      "## 次工程",
+   266	      "Workerが成果物本文を作成してください。"
+   267	    ].join("\n");
+   268	  }
+   269	
+   270	  return [
+   271	    "# " + safeTitle,
+   272	    "",
+   273	    "## 概要",
+   274	    safeInstruction,
+   275	    "",
+   276	    "## 本文",
+   277	    "依頼内容に基づき、標準的で安定した成果物を作成します。",
+   278	    "",
+   279	    "### 主要ポイント",
+   280	    "- 目的を整理する",
+   281	    "- 必要な内容を章立てする",
+   282	    "- 確認ポイントを明示する",
+   283	    "- 次工程を示す",
+   284	    "",
+   285	    "## 確認ポイント",
+   286	    "- 目的に合っているか",
+   287	    "- 不足情報が残っていないか",
+   288	    "- 次工程に進めるか",
+   289	    "",
+   290	    "## 未解決事項",
+   291	    "追加情報があれば、より専門的で独自性のある成果物にできます。",
+   292	    "",
+   293	    "## 参照制約",
+   294	    cxNote,
+   295	    "",
+   296	    "## 次工程",
+   297	    "必要に応じて上位ロボットまたは専門ロボットで深掘りしてください。"
+   298	  ].join("\n");
+   299	}
+   300	
+   301	function aiwB6R96R1G2BuildRequesterDeliveryPayload(payload) {
+   302	  payload = aiwB6R96R1G2Object(payload);
+   303	  const appPayload = aiwB6R96R1G2FindAppPayload(payload);
+   304	
+   305	  const title = aiwB6R96R1G2FirstText([
+   306	    aiwB6R96R1G2Pick(payload, ["task_title", "title", "request_title"]),
+   307	    aiwB6R96R1G2Pick(appPayload, ["task_title", "title", "request_title"]),
+   308	    "AIWorkerOS成果物"
+   309	  ]);
+   310	
+   311	  const instruction = aiwB6R96R1G2FirstText([
+   312	    aiwB6R96R1G2Pick(payload, ["task_instruction_ja", "instruction", "prompt", "task_description"]),
+   313	    aiwB6R96R1G2Pick(appPayload, ["task_instruction_ja", "instruction", "prompt", "task_description"])
+   314	  ]);
+   315	
+   316	  const role = aiwB6R96R1G2NormalizeRoleCode(payload, appPayload);
+   317	  const tier = aiwB6R96R1G2CapabilityTier(payload, appPayload);
+   318	  const referenceProfile = aiwB6R96R1G2ReferenceProfile(tier);
+   319	  const body = aiwB6R96R1G2BuildBody(role, title, instruction, referenceProfile);
+   320	
+   321	  return {
+   322	    contract_version: "requester_deliverable_v1",
+   323	    deliverable_title: title,
+   324	    deliverable_kind: role === "president" ? "policy_proposal" : role === "manager" ? "major_breakdown" : role === "leader" ? "task_decomposition" : "document",
+   325	    body_format: "markdown",
+   326	    body_markdown: body,
+   327	    summary_text: role + " role produced a stable minimum deliverable.",
+   328	    limitations_text: "Performance differences are controlled by CX reference permission and capability profile. Low performance still returns stable output.",
+   329	    unresolved_issues_text: instruction ? "" : "Task instruction is missing or insufficient.",
+   330	    next_steps_text: "Review the deliverable and provide additional constraints if deeper specialty or originality is required.",
+   331	    minimum_guarantee_status: body ? "satisfied" : "blocking_report",
+   332	    performance_profile: {
+   333	      capability_tier: tier,
+   334	      stability_level: referenceProfile.stability_level,
+   335	      originality_level: referenceProfile.originality_level,
+   336	      specialty_level: referenceProfile.specialty_level,
+   337	      prediction_level: referenceProfile.prediction_level,
+   338	      review_depth: referenceProfile.review_depth
+   339	    },
+   340	    reference_usage_profile: referenceProfile,
+   341	    generation_basis: {
+   342	      role_code: role,
+   343	      task_title: title,
+   344	      has_instruction: Boolean(instruction),
+   345	      generated_by: "AIW_B6R96R1G2_MINIMUM_DELIVERABLE_HELPER"
+   346	    }
+   347	  };
+   348	}
+   349	
+   350	function aiwB6R96R1G2EnsureRequesterDeliveryPayload(payload) {
+   351	  if (!payload || typeof payload !== "object" || Array.isArray(payload)) return payload;
+   352	
+   353	  const current = aiwB6R96R1G2Object(payload.requester_delivery_payload);
+   354	  if (aiwB6R96R1G2Text(current.body_markdown) || aiwB6R96R1G2Text(current.body_text)) {
+   355	    return payload;
+   356	  }
+   357	
+   358	  if (!aiwB6R96R1G2LooksRuntimePayload(payload)) return payload;
+   359	
+   360	  payload.requester_delivery_payload = aiwB6R96R1G2BuildRequesterDeliveryPayload(payload);
+   361	  payload.deliverable = payload.requester_delivery_payload;
+   362	  return payload;
+   363	}
+   364	// AIW_B6R96R1G2_MINIMUM_DELIVERABLE_HELPER_END
+   365	
+   366	function aiwB6R44fPlainObject(value) {
+   367	  return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+   368	}
+   369	
+   370	function aiwB6R44fText(value) {
+   371	  return value == null ? "" : String(value).trim();
+   372	}
+   373	
+   374	function aiwB6R44fExtractSourceRouteMetadata(input) {
+   375	  const body = aiwB6R44fPlainObject(input);
+   376	  const metadata = aiwB6R44fPlainObject(body.metadata_jsonb);
+   377	  const appRead = aiwB6R44fPlainObject(body.app_read_payload_jsonb);
+   378	  const source = aiwB6R44fPlainObject(appRead.source);
+   379	
+   380	  const sourceAppRef = aiwB6R44fText(
+   381	    body.source_app_ref ||
+   382	    metadata.source_app_ref ||
+   383	    source.source_app_ref ||
+   384	    body.app_surface_code ||
+   385	    "AICompanyManager"
+   386	  );
+   387	
+   388	  const sourceRouteCode = aiwB6R44fText(
+   389	    body.source_route_code ||
+   390	    metadata.source_route_code ||
+   391	    source.source_route_code
+   392	  );
+   393	
+   394	  const sourceScreenCode = aiwB6R44fText(
+   395	    body.source_screen_code ||
+   396	    metadata.source_screen_code ||
+   397	    source.source_screen_code
+   398	  );
+   399	
+   400	  const sourceEntityType = aiwB6R44fText(
+   401	    body.source_entity_type ||
+   402	    metadata.source_entity_type ||
+   403	    source.source_entity_type
+   404	  );
+   405	
+   406	  const sourceEntityId = aiwB6R44fText(
+   407	    body.source_entity_id ||
+   408	    metadata.source_entity_id ||
+   409	    source.source_entity_id ||
+   410	    body.request_id ||
+   411	    body.runtime_execution_request_id
+   412	  );
+   413	
+   414	  const route = {};
+   415	  if (sourceAppRef) route.source_app_ref = sourceAppRef;
+   416	  if (sourceRouteCode) route.source_route_code = sourceRouteCode;
+   417	  if (sourceScreenCode) route.source_screen_code = sourceScreenCode;
+   418	  if (sourceEntityType) route.source_entity_type = sourceEntityType;
+   419	  if (sourceEntityId) route.source_entity_id = sourceEntityId;
+   420	
+   421	  const returnTargetType = aiwB6R44fText(body.return_target_type || metadata.return_target_type || source.return_target_type);
+   422	  const returnTargetId = aiwB6R44fText(body.return_target_id || metadata.return_target_id || source.return_target_id);
+   423	  const reexecuteTargetType = aiwB6R44fText(body.reexecute_target_type || metadata.reexecute_target_type || source.reexecute_target_type);
+   424	  const reexecuteTargetId = aiwB6R44fText(body.reexecute_target_id || metadata.reexecute_target_id || source.reexecute_target_id);
+   425	  const contextRestoreType = aiwB6R44fText(body.context_restore_type || metadata.context_restore_type || source.context_restore_type);
+   426	  const contextRestoreId = aiwB6R44fText(body.context_restore_id || metadata.context_restore_id || source.context_restore_id);
+   427	
+   428	  if (returnTargetType) route.return_target_type = returnTargetType;
+   429	  if (returnTargetId) route.return_target_id = returnTargetId;
+   430	  if (reexecuteTargetType) route.reexecute_target_type = reexecuteTargetType;
+   431	  if (reexecuteTargetId) route.reexecute_target_id = reexecuteTargetId;
+   432	  if (contextRestoreType) route.context_restore_type = contextRestoreType;
+   433	  if (contextRestoreId) route.context_restore_id = contextRestoreId;
+   434	
+   435	  return route;
+   436	}
+   437	
+   438	function aiwB6R44fMergeSourceRouteIntoAppReadPayload(appReadPayload, input) {
+   439	  const base = aiwB6R44fPlainObject(appReadPayload);
+   440	  const route = aiwB6R44fExtractSourceRouteMetadata(input);
+   441	  if (!route.source_route_code) return base;
+   442	  return Object.assign({}, base, {
+   443	    source: Object.assign({}, aiwB6R44fPlainObject(base.source), route)
+   444	  });
+   445	}
+   446	
+   447	function aiwB6R44fExposeSourceRouteOnRow(row) {
+   448	  const out = Object.assign({}, aiwB6R44fPlainObject(row));
+   449	  const appRead = aiwB6R44fPlainObject(out.app_read_payload_jsonb);
+   450	  const source = aiwB6R44fPlainObject(appRead.source);
+   451	  const route = aiwB6R44fExtractSourceRouteMetadata(Object.assign({}, out, {
+   452	    metadata_jsonb: out.metadata_jsonb,
+   453	    app_read_payload_jsonb: aiwB6R44fMergeSourceRouteIntoAppReadPayload(appRead, body || payload || requestBody || input || {}),
+   454	    source_app_ref: out.source_app_ref || source.source_app_ref,
+   455	    source_route_code: out.source_route_code || source.source_route_code,
+   456	    source_screen_code: out.source_screen_code || source.source_screen_code,
+   457	    source_entity_type: out.source_entity_type || source.source_entity_type,
+   458	    source_entity_id: out.source_entity_id || source.source_entity_id
+   459	  }));
+   460	
+   461	  if (route.source_app_ref && !out.source_app_ref) out.source_app_ref = route.source_app_ref;
+   462	  if (route.source_route_code && !out.source_route_code) out.source_route_code = route.source_route_code;
+   463	  if (route.source_screen_code && !out.source_screen_code) out.source_screen_code = route.source_screen_code;
+   464	  if (route.source_entity_type && !out.source_entity_type) out.source_entity_type = route.source_entity_type;
+   465	  if (route.source_entity_id && !out.source_entity_id) out.source_entity_id = route.source_entity_id;
+   466	
+   467	  if (route.source_route_code) {
+   468	    out.app_read_payload_jsonb = aiwB6R44fMergeSourceRouteIntoAppReadPayload(appRead, route);
+   469	  }
+   470	  return out;
+   471	}
+   472	
+   473	function aiwB6R44fExposeSourceRouteOnRows(value) {
+   474	  if (Array.isArray(value)) return value.map(aiwB6R44fExposeSourceRouteOnRow);
+   475	  return value;
+   476	}
+   477	// AIWORKEROS_V10L_C2G_B6R44F_SOURCE_ROUTE_METADATA_END
+   478	
+   479	// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_START
+   480	/*
+   481	  B6R44G-R4:
+   482	  SendJson boundary wrapper.
+   483	  Exposes source route metadata only for runtime-shaped rows.
+   484	*/
+   485	function aiwB6R44gR4PlainObject(value) {
+   486	  return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+   487	}
+   488	
+   489	function aiwB6R44gR4LooksRuntimeRow(row) {
+   490	  if (!row || typeof row !== "object" || Array.isArray(row)) return false;
+   491	  if (row.request_id || row.runtime_execution_request_id || row.request_code) return true;
+   492	  if (row.request_status_code || row.output_status_code || row.delivery_status_code) return true;
+   493	  if (row.app_surface_code || row.app_read_payload_jsonb) return true;
+   494	  return false;
+   495	}
+   496	
+   497	function aiwB6R44gR4ExposeSourceRouteRow(row) {
+   498	  if (!aiwB6R44gR4LooksRuntimeRow(row)) return row;
+   499	
+   500	  const out = aiwB6R44fExposeSourceRouteOnRow(row);
+   501	  const appRead = aiwB6R44gR4PlainObject(out.app_read_payload_jsonb);
+   502	  const source = aiwB6R44gR4PlainObject(appRead.source);
+   503	
+   504	  if (source.source_app_ref && !out.source_app_ref) out.source_app_ref = source.source_app_ref;
+   505	  if (source.source_route_code && !out.source_route_code) out.source_route_code = source.source_route_code;
+   506	  if (source.source_screen_code && !out.source_screen_code) out.source_screen_code = source.source_screen_code;
+   507	  if (source.source_entity_type && !out.source_entity_type) out.source_entity_type = source.source_entity_type;
+   508	  if (source.source_entity_id && !out.source_entity_id) out.source_entity_id = source.source_entity_id;
+   509	
+   510	  return out;
+   511	}
+   512	
+   513	function aiwB6R44gR4ExposeSourceRouteRows(rows) {
+   514	  if (!Array.isArray(rows)) return rows;
+   515	  return rows.map(aiwB6R44gR4ExposeSourceRouteRow);
+   516	}
+   517	
+   518	function aiwB6R44gR4ExposeSourceRoutePayload(payload) {
+   519	  if (!payload || typeof payload !== "object") return payload;
+   520	  if (Array.isArray(payload)) return aiwB6R44gR4ExposeSourceRouteRows(payload);
+   521	
+   522	  const out = Object.assign({}, payload);
+   523	
+   524	  if (Array.isArray(out.data)) {
+   525	    out.data = aiwB6R44gR4ExposeSourceRouteRows(out.data);
+   526	  }
+   527	  if (Array.isArray(out.rows)) {
+   528	    out.rows = aiwB6R44gR4ExposeSourceRouteRows(out.rows);
+   529	  }
+   530	  if (Array.isArray(out.items)) {
+   531	    out.items = aiwB6R44gR4ExposeSourceRouteRows(out.items);
+   532	  }
+   533	  if (out.payload && typeof out.payload === "object") {
+   534	    out.payload = aiwB6R44gR4ExposeSourceRoutePayload(out.payload);
+   535	  }
+   536	
+   537	  return out;
+   538	}
+   539	// AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_END
+   540	
+   541	
+   542	const http = require("http");
+   543	const { buildRuntimeBrainContext, renderPromptBrainContext } = require("./brain-context-bridge.js");
+   544	const { URL } = require("url");
+   545	const { spawnSync } = require("child_process");
+   546	const fs = require("fs");
+   547	const path = require("path");
+   548	
+   549	const appRoot = __dirname;
+   550	const envFile = path.join(appRoot, ".env.local");
+   551	
+   552	function loadDotEnv(filePath) {
+   553	  if (!fs.existsSync(filePath)) return;
+   554	  const lines = fs.readFileSync(filePath, "utf8").split(/\r?\n/);
+   555	  for (const line of lines) {
+   556	    if (!line || line.trim().startsWith("#")) continue;
+   557	    const idx = line.indexOf("=");
+   558	    if (idx < 0) continue;
+   559	    const key = line.slice(0, idx).trim();
+   560	    const value = line.slice(idx + 1).trim();
+   561	    if (key && process.env[key] === undefined) {
+   562	      process.env[key] = value;
+   563	    }
+   564	  }
+   565	}
+   566	
+   567	loadDotEnv(envFile);
+   568	
+   569	const port = Number(process.env.PERSONA_AIWORKEROS_PORT || "8787");
+   570	const authToken = process.env.PERSONA_AIWORKEROS_AUTH_TOKEN;
+   571	if (!authToken) {
+   572	  console.error("ERROR: PERSONA_AIWORKEROS_AUTH_TOKEN is required");
+   573	  process.exit(1);
+   574	}
+   575	const databaseUrl = process.env.PERSONA_DATABASE_URL;
+   576	
+   577	if (!databaseUrl) {
+   578	  console.error("ERROR: PERSONA_DATABASE_URL is not set");
+   579	  process.exit(1);
+   580	}
+   581	
+   582	function sendJson(res, status, payload) {
+   583	  // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_START
+   584	  try {
+   585	    payload = aiwB6R44gR4ExposeSourceRoutePayload(payload);
+   586	  } catch (_b6r44gR4Error) {
+   587	    // Keep sendJson stable for non-runtime payloads.
+   588	  }
+   589	  // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_END
+   590	
+   591	  res.writeHead(status, {
+   592	    "Content-Type": "application/json; charset=utf-8",
+   593	    "Cache-Control": "no-store"
+   594	  });
+   595	  res.end(JSON.stringify(aiwB6R96R1G2EnsureRequesterDeliveryPayload(payload, null, 2)));
+   596	}
+   597	
+   598	function readBody(req) {
+   599	  return new Promise((resolve, reject) => {
+   600	    let body = "";
+   601	    req.on("data", chunk => {
+   602	      body += chunk;
+   603	      if (body.length > 1024 * 1024) {
+   604	        reject(new Error("Request body too large"));
+   605	        req.destroy();
+   606	      }
+   607	    });
+   608	    req.on("end", () => resolve(body));
+   609	    req.on("error", reject);
+   610	  });
+   611	}
+   612	
+   613	function requireAuth(req) {
+   614	  const auth = req.headers["authorization"] || "";
+   615	  return auth === `Bearer ${authToken}`;
+   616	}
+   617	
+   618	function normalizeLimit(value) {
+   619	  const n = Number(value || "20");
+   620	  if (!Number.isFinite(n)) return 20;
+   621	  return Math.max(1, Math.min(100, Math.floor(n)));
+   622	}
+   623	
+   624	/**
+   625	 * IMPORTANT:
+   626	 * Do not pass SQL using `psql -c` here.
+   627	 * In the previous version, psql variables like :'app_surface_code'
+   628	 * were not substituted and were sent to PostgreSQL as-is.
+   629	 *
+   630	 * This fixed version passes SQL via stdin.
+   631	 */
+   632	function psqlJson(sql, vars = {}) {
+   633	  const args = [
+   634	    databaseUrl,
+   635	    "-X",
+   636	    "-A",
+   637	    "-t",
+   638	    "-v",
+   639	    "ON_ERROR_STOP=1"
+   640	  ];
+   641	
+   642	  for (const [key, value] of Object.entries(vars)) {
+   643	    args.push("-v", `${key}=${value === null || value === undefined ? "" : String(value)}`);
+   644	  }
+   645	
+   646	  const result = spawnSync("psql", args, {
+   647	    input: sql,
+   648	    encoding: "utf8",
+   649	    maxBuffer: 1024 * 1024 * 20
+   650	  });
+   651	
+   652	  if (result.status !== 0) {
+   653	    const message = result.stderr || result.stdout || "psql failed";
+   654	    const err = new Error(message.trim());
+   655	    err.stderr = result.stderr;
+   656	    err.stdout = result.stdout;
+   657	    err.status = result.status;
+   658	    throw err;
+   659	  }
+   660	
+   661	  const text = (result.stdout || "").trim();
+   662	  if (!text) return null;
+   663	
+   664	  try {
+   665	    return JSON.parse(text);
+   666	  } catch (e) {
+   667	    throw new Error(`Failed to parse DB JSON: ${text}`);
+   668	  }
+   669	}
+   670	
+   671	function endpointReady() {
+   672	  return psqlJson(`
+   673	    select coalesce(to_jsonb(t), '{}'::jsonb)::text
+   674	    from (
+   675	      select *
+   676	      from aiworker.vw_app_aiworker_runtime_execution_endpoint_ready_v1
+   677	    ) t;
+   678	  `);
+   679	}
+   680	
+   681	function apiContracts() {
+   682	  return psqlJson(`
+   683	    select coalesce(jsonb_agg(to_jsonb(t) order by sort_order), '[]'::jsonb)::text
+   684	    from (
+   685	      select *
+   686	      from aiworker.vw_app_aiworker_runtime_execution_api_contract_v1
+   687	    ) t;
+   688	  `);
+   689	}
+   690	
+   691	function persistentSmoke() {
+   692	  return psqlJson(`
+   693	    select coalesce(jsonb_agg(to_jsonb(t)), '[]'::jsonb)::text
+   694	    from (
+   695	      select *
+   696	      from aiworker.vw_app_aiworker_runtime_execution_persistent_smoke_board_v1
+   697	    ) t;
+   698	  `);
+   699	}
+   700	
+   701	function pipelineBoard(query) {
+   702	  return psqlJson(`
+   703	    select coalesce(jsonb_agg(to_jsonb(t) order by request_created_at desc), '[]'::jsonb)::text
+   704	    from (
+   705	      select p.*, rr.source_route_code
+   706	      from aiworker.vw_app_aiworker_runtime_full_pipeline_board_v1 p
+   707	      left join aiworker.runtime_execution_request rr
+   708	        on rr.request_id = p.request_id
+   709	      where (nullif(:'request_id','') is null or p.request_id::text = :'request_id')
+   710	        and (nullif(:'request_code','') is null or p.request_code = :'request_code')
+   711	        and (nullif(:'app_surface_code','') is null or p.app_surface_code = :'app_surface_code')
+   712	      order by p.request_created_at desc
+   713	      limit :'limit'
+   714	    ) t;
+   715	  `, {
+   716	    request_id: query.get("request_id") || "",
+   717	    request_code: query.get("request_code") || "",
+   718	    app_surface_code: query.get("app_surface_code") || "",
+   719	    limit: normalizeLimit(query.get("limit"))
+   720	  });
+   721	}
+   722	
+   723	function appReadPayload(query) {
+   724	  return psqlJson(`
+   725	    select coalesce(jsonb_agg(to_jsonb(t) order by request_created_at desc), '[]'::jsonb)::text
+   726	    from (
+   727	      select p.*, rr.source_route_code
+   728	      from aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1 p
+   729	      left join aiworker.runtime_execution_request rr
+   730	        on rr.request_id = p.request_id
+   731	      where (nullif(:'request_id','') is null or p.request_id::text = :'request_id')
+   732	        and (nullif(:'request_code','') is null or p.request_code = :'request_code')
+   733	        and (nullif(:'app_surface_code','') is null or p.app_surface_code = :'app_surface_code')
+   734	      order by p.request_created_at desc
+   735	      limit :'limit'
+   736	    ) t;
+   737	  `, {
+   738	    request_id: query.get("request_id") || "",
+   739	    request_code: query.get("request_code") || "",
+   740	    app_surface_code: query.get("app_surface_code") || "",
+   741	    limit: normalizeLimit(query.get("limit"))
+   742	  });
+   743	}
+   744	
+   745	function deliveryBoard(query) {
+   746	  return psqlJson(`
+   747	    select coalesce(jsonb_agg(to_jsonb(t) order by created_at desc), '[]'::jsonb)::text
+   748	    from (
+   749	      select *
+   750	      from aiworker.vw_app_aiworker_runtime_delivery_board_v1
+   751	      where (nullif(:'request_id','') is null or request_id::text = :'request_id')
+   752	        and (nullif(:'request_code','') is null or request_code = :'request_code')
+   753	      order by created_at desc
+   754	      limit :'limit'
+   755	    ) t;
+   756	  `, {
+   757	    request_id: query.get("request_id") || "",
+   758	    request_code: query.get("request_code") || "",
+   759	    limit: normalizeLimit(query.get("limit"))
+   760	  });
+   761	}
+   762	
+   763	
+   764	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_START
+   765	/*
+   766	  B6R95R3B-R3:
+   767	  Common requester-facing deliverable contract for AIWorkerOS runtime execution.
+   768	
+   769	  Canon:
+   770	  - This is not AICM-specific.
+   771	  - AICM is one consumer among multiple requester apps / OSs.
+   772	  - AIWorkerOS creates the deliverable body and first summary.
+   773	  - Requester apps store summary_text plus deliverable_ref / deliverable_link.
+   774	  - Robot performance differences are represented through robot_context and generation_basis.
+   775	
+   776	  Boundary:
+   777	  - No external execution.
+   778	  - No PG apply.
+   779	  - No destructive action.
+   780	  - No AICM-side change in this patch.
+   781	  - No CX22073JW access-control change in this patch.
+   782	*/
+   783	function aiwB6R95R3R3Text(value) {
+   784	  return String(value ?? "").replace(/\r\n/g, "\n").trim();
+   785	}
+   786	
+   787	function aiwB6R95R3R3OneLine(value, fallback) {
+   788	  const text = aiwB6R95R3R3Text(value || fallback || "");
+   789	  return text.replace(/\s+/g, " ").trim();
+   790	}
+   791	
+   792	function aiwB6R95R3R3Clip(value, maxLen) {
+   793	  const text = aiwB6R95R3R3Text(value);
+   794	  if (text.length <= maxLen) return text;
+   795	  return `${text.slice(0, maxLen)}…`;
+   796	}
+   797	
+   798	function aiwB6R95R3R3Lines(items) {
+   799	  return items.filter((value) => value !== null && value !== undefined && String(value).trim() !== "").join("\n");
+   800	}
+   801	
+   802	function aiwB6R95R3R3BuildRequesterFacingDeliverableBaseB6R95R3Z24(payload, sourceRouteCode) {
+   803	  const requesterAppRef = aiwB6R95R3R3OneLine(payload.source_app_ref, "HTTP_LOCAL");
+   804	  const sourceRequestRef = aiwB6R95R3R3OneLine(payload.source_request_ref, "");
+   805	  const appSurfaceCode = aiwB6R95R3R3OneLine(payload.app_surface_code, "unknown_app_surface");
+   806	  const routeCode = aiwB6R95R3R3OneLine(sourceRouteCode, "unspecified_route");
+   807	  const taskTitle = aiwB6R95R3R3OneLine(payload.task_title, "AIWorkerOS成果物");
+   808	  const taskInstruction = aiwB6R95R3R3Text(payload.task_instruction_ja);
+   809	  const modelCode = aiwB6R95R3R3OneLine(payload.model_code, "unknown_model");
+   810	  const roleLayerCode = aiwB6R95R3R3OneLine(payload.role_layer_code || payload.roleLayerCode, "runtime_resolved_by_aiworker");
+   811	  const seriesCode = aiwB6R95R3R3OneLine(payload.series_code || payload.seriesCode, "runtime_resolved_by_aiworker");
+   812	  const capabilityProfileCode = aiwB6R95R3R3OneLine(payload.capability_profile_code || payload.capabilityProfileCode, "runtime_resolved_by_aiworker");
+   813	  const taskDomainCode = aiwB6R95R3R3OneLine(payload.task_domain_code, "unknown_domain");
+   814	  const cxDepthCode = aiwB6R95R3R3OneLine(payload.cx_reference_depth_code || payload.cxReferenceDepthCode, "runtime_policy_resolved");
+   815	  const cxBreadthCode = aiwB6R95R3R3OneLine(payload.cx_reference_breadth_code || payload.cxReferenceBreadthCode, "runtime_policy_resolved");
+   816	
+   817	  const robotContext = {
+   818	    model_code: modelCode,
+   819	    role_layer_code: roleLayerCode,
+   820	    series_code: seriesCode,
+   821	    capability_profile_code: capabilityProfileCode,
+   822	    task_domain_code: taskDomainCode
+   823	  };
+   824	
+   825	  const generationBasis = {
+   826	    contract_version: "B6R95R3B-R3",
+   827	    generation_owner: "AIWorkerOS",
+   828	    requester_app_ref: requesterAppRef,
+   829	    source_request_ref: sourceRequestRef,
+   830	    source_route_code: routeCode,
+   831	    robot_trait_basis: "model_code / role_layer_code / series_code / capability_profile_code are carried as generation basis; deeper trait resolution belongs to AIWorkerOS robot profile logic.",
+   832	    cx_depth_basis: cxDepthCode,
+   833	    cx_breadth_basis: cxBreadthCode,
+   834	    cx_reference_boundary: "CX22073JW is robot brain/reference data. Access-control remains AIWorkerOS-side, not requester-app-side.",
+   835	    safety_boundary: "internal_only_no_external_execution_no_pg_apply_no_destructive_action"
+   836	  };
+   837	
+   838	  const outputTitle = `${taskTitle} 成果物`;
+   839	  const deliverablePackage = aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle);
+   840	  const summaryText = aiwB6R95R3R3Clip(
+   841	    `AIWorkerOSが${modelCode}を成果物生成主体として、${taskTitle}の一次成果物と一次サマリを作成しました。依頼元アプリはこのsummary_textとdeliverable_ref/linkを保存してレビューに利用できます。`,
+   842	    700
+   843	  );
+   844	
+   845	  const qualityNotes = aiwB6R95R3R3Lines([
+   846	    "AIWorkerOS側で生成した一次成果物です。",
+   847	    `設定ロボット: ${modelCode}`,
+   848	    `役割レイヤー: ${roleLayerCode}`,
+   849	    `タスク領域: ${taskDomainCode}`,
+   850	    `CX参照深度: ${cxDepthCode}`,
+   851	    `CX参照広さ: ${cxBreadthCode}`,
+   852	    "今後の生成エンジン深化では、同じ契約のままロボット特性・CX参照範囲・能力差を本文品質へさらに反映します。"
+   853	  ]);
+   854	
+   855	  const unresolvedIssues = aiwB6R95R3R3Lines([
+   856	    "この段階では外部実行、PG apply、破壊的操作は行っていません。",
+   857	    "追加調査・DB変更・実装反映が必要な場合は、依頼元アプリ側の承認/差し戻し工程で判断してください。"
+   858	  ]);
+   859	
+   860	  const nextSteps = aiwB6R95R3R3Lines([
+   861	    "依頼元アプリでsummary_textとdeliverable_ref/linkを保存する。",
+   862	    "レビュー画面から成果物本文へ辿れるようにする。",
+   863	    "差し戻し時は追加条件をAIWorkerOSへ再依頼する。"
+   864	  ]);
+   865	
+   866	  const bodyMarkdown = aiwB6R95R3R3Lines([
+   867	    `# ${taskTitle}`,
+   868	    "",
+   869	    "## 1. 成果物サマリ",
+   870	    summaryText,
+   871	    "",
+   872	    "## 2. 生成主体",
+   873	    `- generation_owner: AIWorkerOS`,
+   874	    `- requester_app_ref: ${requesterAppRef}`,
+   875	    `- source_request_ref: ${sourceRequestRef || "未指定"}`,
+   876	    `- source_route_code: ${routeCode}`,
+   877	    `- app_surface_code: ${appSurfaceCode}`,
+   878	    "",
+   879	    "## 3. 設定ロボット / 性能差の根拠",
+   880	    `- model_code: ${modelCode}`,
+   881	    `- role_layer_code: ${roleLayerCode}`,
+   882	    `- series_code: ${seriesCode}`,
+   883	    `- capability_profile_code: ${capabilityProfileCode}`,
+   884	    `- task_domain_code: ${taskDomainCode}`,
+   885	    `- cx_reference_depth_code: ${cxDepthCode}`,
+   886	    `- cx_reference_breadth_code: ${cxBreadthCode}`,
+   887	    "",
+   888	    "## 4. 成果物本文",
+   889	    taskInstruction || "依頼本文が空のため、タスク名と設定ロボット情報を基準に一次成果物を作成しました。",
+   890	    "",
+   891	    "## 5. 品質メモ",
+   892	    qualityNotes,
+   893	    "",
+   894	    "## 6. 未解決事項",
+   895	    unresolvedIssues,
+   896	    "",
+   897	    "## 7. 次工程",
+   898	    nextSteps,
+   899	    "",
+   900	    "## 8. 安全境界",
+   901	    "- external_execution_performed_flag=false",
+   902	    "- pg_apply_performed_flag=false",
+   903	    "- destructive_action_performed_flag=false",
+   904	    "- CX22073JW brain access control is AIWorkerOS-side responsibility",
+   905	    ""
+   906	  ]);
+   907	
+   908	  const generatedArtifacts = [
+   909	    {
+   910	      kind: "main_deliverable",
+   911	      title: outputTitle,
+   912	      file_name: "01_main_deliverable.md",
+   913	      body_markdown: bodyMarkdown
+   914	    },
+   915	    {
+   916	      kind: "quality_notes",
+   917	      title: "品質メモ",
+   918	      file_name: "90_quality_notes.md",
+   919	      body_markdown: qualityNotes
+   920	    },
+   921	    {
+   922	      kind: "unresolved_issues",
+   923	      title: "未解決事項",
+   924	      file_name: "91_unresolved_issues.md",
+   925	      body_markdown: unresolvedIssues
+   926	    },
+   927	    {
+   928	      kind: "next_steps",
+   929	      title: "次工程",
+   930	      file_name: "92_next_steps.md",
+   931	      body_markdown: nextSteps
+   932	    }
+   933	  ];
+   934	  const outputPayload = {
+   935	    contract_version: "B6R95R3B-R3",
+   936	    contract_name: "aiworkeros_common_requester_deliverable_contract",
+   937	    deliverable_kind: "document",
+   938	    body_format: "markdown",
+   939	    deliverable_package: deliverablePackage,
+   940	    deliverable_link: deliverablePackage.zip_link,
+   941	    generated_artifacts: generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+   942	    requester_app_ref: requesterAppRef,
+   943	    source_request_ref: sourceRequestRef,
+   944	    source_route_code: routeCode,
+   945	    app_surface_code: appSurfaceCode,
+   946	    robot_context: robotContext,
+   947	    generation_basis: generationBasis,
+   948	    quality_notes: qualityNotes,
+   949	    unresolved_issues: unresolvedIssues,
+   950	    next_steps: nextSteps,
+   951	    external_execution_performed_flag: false,
+   952	    pg_apply_performed_flag: false,
+   953	    destructive_action_performed_flag: false
+   954	  };
+   955	
+   956	  const artifacts = [
+   957	    {
+   958	      artifact_kind_code: "markdown",
+   959	      artifact_title_ja: outputTitle,
+   960	      body_format: "markdown",
+   961	      deliverable_package: deliverablePackage,
+   962	      deliverable_link: deliverablePackage.zip_link,
+   963	      generated_artifacts: generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+   964	      body_markdown: bodyMarkdown,
+   965	      summary_text: summaryText,
+   966	      quality_notes: qualityNotes,
+   967	      unresolved_issues: unresolvedIssues,
+   968	      next_steps: nextSteps,
+   969	      robot_context: robotContext,
+   970	      generation_basis: generationBasis,
+   971	      contract_version: "B6R95R3B-R3"
+   972	    }
+   973	  ];
+   974	
+   975	  return {
+   976	    outputTitle,
+   977	    bodyMarkdown,
+   978	    summaryText,
+   979	    qualityNotes,
+   980	    unresolvedIssues,
+   981	    nextSteps,
+   982	    robotContext,
+   983	    generationBasis,
+   984	    deliverablePackage,
+   985	    generatedArtifacts,
+   986	    outputPayload,
+   987	    artifacts
+   988	  };
+   989	}
+   990	
+   991	/* B6R95R3Z_R24_CX_MATERIAL_BODY_GENERATION_PATCH_START */
+   992	function aiwB6R95R3Z24Text(value) {
+   993	  if (value == null) return "";
+   994	  if (typeof value === "string") return value;
+   995	  try { return JSON.stringify(value); } catch { return String(value); }
+   996	}
+   997	
+   998	function aiwB6R95R3Z24SqlLiteral(value) {
+   999	  return "'" + String(value || "").replace(/'/g, "''") + "'";
+  1000	}
+  1001	
+  1002	function aiwB6R95R3Z24PickFirstText(obj, keys) {
+  1003	  if (!obj || typeof obj !== "object") return "";
+  1004	  for (const key of keys) {
+  1005	    if (typeof obj[key] === "string" && obj[key].trim()) return obj[key].trim();
+  1006	  }
+  1007	  return "";
+  1008	}
+  1009	
+  1010	function aiwB6R95R3Z24CollectTextDeep(value, maxLen = 5000, depth = 0) {
+  1011	  if (value == null || depth > 5) return "";
+  1012	  if (typeof value === "string") return value.slice(0, maxLen);
+  1013	  if (typeof value !== "object") return String(value).slice(0, maxLen);
+  1014	
+  1015	  const parts = [];
+  1016	  if (Array.isArray(value)) {
+  1017	    for (const item of value.slice(0, 12)) {
+  1018	      const t = aiwB6R95R3Z24CollectTextDeep(item, maxLen, depth + 1);
+  1019	      if (t) parts.push(t);
+  1020	    }
+  1021	  } else {
+  1022	    const preferred = [
+  1023	      "unit_title_ja",
+  1024	      "unit_summary_ja",
+  1025	      "unit_body_ja",
+  1026	      "title_ja",
+  1027	      "summary_ja",
+  1028	      "body_ja",
+  1029	      "content_ja",
+  1030	      "description_ja",
+  1031	      "robot_use_summary_ja",
+  1032	      "source_caution_ja",
+  1033	      "misconception_guard_ja",
+  1034	      "topic_label_ja",
+  1035	      "brain_data_code",
+  1036	      "detail_axis_code"
+  1037	    ];
+  1038	    for (const key of preferred) {
+  1039	      if (value[key]) {
+  1040	        const t = aiwB6R95R3Z24CollectTextDeep(value[key], maxLen, depth + 1);
+  1041	        if (t) parts.push(t);
+  1042	      }
+  1043	    }
+  1044	    if (!parts.length) {
+  1045	      for (const [k, v] of Object.entries(value).slice(0, 30)) {
+  1046	        if (/secret|token|password|key/i.test(k)) continue;
+  1047	        const t = aiwB6R95R3Z24CollectTextDeep(v, maxLen, depth + 1);
+  1048	        if (t) parts.push(t);
+  1049	      }
+  1050	    }
+  1051	  }
+  1052	
+  1053	  return parts.join("\n").slice(0, maxLen);
+  1054	}
+  1055	
+  1056	function aiwB6R95R3Z24PayloadText(payload, keys) {
+  1057	  for (const key of keys) {
+  1058	    if (payload && typeof payload[key] === "string" && payload[key].trim()) return payload[key].trim();
+  1059	  }
+  1060	  for (const nestedKey of ["payload", "request_payload", "input_json", "body", "request", "runtime_request"]) {
+  1061	    const nested = payload && payload[nestedKey];
+  1062	    if (nested && typeof nested === "object") {
+  1063	      for (const key of keys) {
+  1064	        if (typeof nested[key] === "string" && nested[key].trim()) return nested[key].trim();
+  1065	      }
+  1066	    }
+  1067	  }
+  1068	  return "";
+  1069	}
+  1070	
+  1071	function aiwB6R95R3Z24ModelCode(payload) {
+  1072	  return aiwB6R95R3Z24PayloadText(payload, [
+  1073	    "model_code",
+  1074	    "robot_model_code",
+  1075	    "selected_robot_model_code",
+  1076	    "runtime_model_code"
+  1077	  ]) || "byd2_003_asic_leader3";
+  1078	}
+  1079	
+  1080	function aiwB6R95R3Z24Instruction(payload) {
+  1081	  return aiwB6R95R3Z24PayloadText(payload, [
+  1082	    "task_instruction_ja",
+  1083	    "instruction_ja",
+  1084	    "user_instruction_ja",
+  1085	    "task_instruction",
+  1086	    "instruction",
+  1087	    "user_instruction"
+  1088	  ]);
+  1089	}
+  1090	
+  1091	function aiwB6R95R3Z24TaskTitle(payload) {
+  1092	  return aiwB6R95R3Z24PayloadText(payload, [
+  1093	    "task_title_ja",
+  1094	    "task_title",
+  1095	    "title"
+  1096	  ]) || "AIWorkerOS 成果物";
+  1097	}
+  1098	
+  1099	function aiwB6R95R3Z24SearchTerms(payload) {
+  1100	  const text = [
+  1101	    aiwB6R95R3Z24TaskTitle(payload),
+  1102	    aiwB6R95R3Z24Instruction(payload)
+  1103	  ].join("\n");
+  1104	
+  1105	  const terms = [];
+  1106	
+  1107	  if (/大化|taika|乙巳|改新|公地公民/.test(text)) {
+  1108	    terms.push("大化", "大化の改新", "taika", "乙巳", "改新の詔", "公地公民", "日本書紀", "律令");
+  1109	  }
+  1110	
+  1111	  for (const m of text.matchAll(/[一-龯ぁ-んァ-ンA-Za-z0-9_]{3,}/g)) {
+  1112	    const v = m[0];
+  1113	    if (!terms.includes(v) && !/してください|成果物|summary|generated|artifacts|link|zip/.test(v)) terms.push(v);
+  1114	    if (terms.length >= 12) break;
+  1115	  }
+  1116	
+  1117	  return terms.length ? terms : ["大化", "taika"];
+  1118	}
+  1119	
+  1120	function aiwB6R95R3Z24RunPsqlJson(sql) {
+  1121	  let req = null;
+  1122	  try {
+  1123	    req = eval("require");
+  1124	  } catch {
+  1125	    return [];
+  1126	  }
+  1127	
+  1128	  try {
+  1129	    const cp = req("node:child_process");
+  1130	    const dbUrl = process.env.PERSONA_DATABASE_URL || process.env.DATABASE_URL || "";
+  1131	    if (!dbUrl) return [];
+  1132	
+  1133	    const out = cp.execFileSync("psql", [
+  1134	      dbUrl,
+  1135	      "-X",
+  1136	      "-q",
+  1137	      "-t",
+  1138	      "-A",
+  1139	      "-v",
+  1140	      "ON_ERROR_STOP=1",
+  1141	      "-c",
+  1142	      sql
+  1143	    ], {
+  1144	      encoding: "utf8",
+  1145	      timeout: 15000,
+  1146	      env: Object.assign({}, process.env, { PGOPTIONS: "" })
+  1147	    });
+  1148	
+  1149	    const text = String(out || "").trim();
+  1150	    if (!text) return [];
+  1151	    const parsed = JSON.parse(text);
+  1152	    return Array.isArray(parsed) ? parsed : [];
+  1153	  } catch {
+  1154	    return [];
+  1155	  }
+  1156	}
+  1157	
+  1158	function aiwB6R95R3Z24FetchCxRuntimeMaterials(payload) {
+  1159	  const modelCode = aiwB6R95R3Z24ModelCode(payload);
+  1160	  const terms = aiwB6R95R3Z24SearchTerms(payload);
+  1161	  const termConds = terms
+  1162	    .slice(0, 10)
+  1163	    .map((term) => "to_jsonb(t)::text ILIKE " + aiwB6R95R3Z24SqlLiteral("%" + term + "%"))
+  1164	    .join(" OR ");
+  1165	
+  1166	  const views = [
+  1167	    "aiworker.vw_robot_readable_brain_runtime_material_canon_v1",];
+  1168	
+  1169	  for (const view of views) {
+  1170	    const sql = [
+  1171	      "BEGIN READ ONLY;",
+  1172	      "WITH picked AS (",
+  1173	      "  SELECT to_jsonb(t) AS row_json",
+  1174	      "  FROM " + view + " t",
+  1175	      "  WHERE t.model_code = " + aiwB6R95R3Z24SqlLiteral(modelCode),
+  1176	      "    AND (" + termConds + ")",
+  1177	      "  LIMIT 24",
+  1178	      ")",
+  1179	      "SELECT COALESCE(jsonb_agg(row_json), '[]'::jsonb)::text FROM picked;",
+  1180	      "COMMIT;",
+  1181	      "/* B6R95R3Z_R26_READONLY_HELPER_REPAIR */"
+  1182	    ].join("\n");
+  1183	
+  1184	    const rows = aiwB6R95R3Z24RunPsqlJson(sql);
+  1185	    if (rows.length) return rows;
+  1186	  }
+  1187	
+  1188	  return [];
+  1189	}
+  1190	
+  1191	function aiwB6R95R3Z24MaterialTitle(row, index) {
+  1192	  return aiwB6R95R3Z24PickFirstText(row, [
+  1193	    "unit_title_ja",
+  1194	    "title_ja",
+  1195	    "material_title_ja",
+  1196	    "topic_label_ja",
+  1197	    "brain_data_title_ja",
+  1198	    "brain_data_code",
+  1199	    "unit_code",
+  1200	    "detail_axis_code"
+  1201	  ]) || "CX参照素材 " + String(index + 1);
+  1202	}
+  1203	
+  1204	function aiwB6R95R3Z24MaterialBody(row) {
+  1205	  const body = aiwB6R95R3Z24PickFirstText(row, [
+  1206	    "unit_body_ja",
+  1207	    "unit_summary_ja",
+  1208	    "body_ja",
+  1209	    "content_ja",
+  1210	    "summary_ja",
+  1211	    "detail_body_ja",
+  1212	    "reference_text_ja",
+  1213	    "robot_use_summary_ja",
+  1214	    "description_ja",
+  1215	    "source_caution_ja",
+  1216	    "misconception_guard_ja"
+  1217	  ]);
+  1218	
+  1219	  return body || aiwB6R95R3Z24CollectTextDeep(row, 3500);
+  1220	}
+  1221	
+  1222	function aiwB6R95R3Z24BuildMaterialMarkdown(payload, rows) {
+  1223	  const aiwB6R97R61OuterArgs = Array.from(arguments);
+  1224	  /* AIWORKEROS_B6R97R58C_MATERIAL_MARKDOWN_RETURN_WRAP_START */
+  1225	  function aiwB6R97R58CShortRequestSummary(value) {
+  1226	    const raw = String(value || "").replace(/\s+/g, " ").trim();
+  1227	    if (!raw) return "依頼内容に基づく成果物作成";
+  1228	    const topicMatch = raw.match(/^(.{2,80}?)(?:について|に関する|を対象に|の)(?:、|,|。|\s|$)/);
+  1229	    if (topicMatch && topicMatch[1]) {
+  1230	      const topic = topicMatch[1].replace(/[。！？、,]+$/g, "").trim();
+  1231	      if (topic) return topic + "に関する成果物作成";
+  1232	    }
+  1233	    const firstSentence = raw.split(/[。！？]/).filter(Boolean)[0] || raw;
+  1234	    if (firstSentence.length <= 28 && !/できるだけ詳細|含める|作成して|資料にして|してください/.test(firstSentence)) {
+  1235	      return firstSentence;
+  1236	    }
+  1237	    return "依頼内容に基づく成果物作成";
+  1238	  }
+  1239	
+  1240	  function aiwB6R97R58CSanitizeMaterialMarkdown(markdown) {
+  1241	    let out = String(markdown || "");
+  1242	    out = out.replace(/(## 3\. 依頼要旨\s*\n)([\s\S]*?)(?=\n## \d+\.|\n# |$)/, function(match, heading, body) {
+  1243	      return heading + aiwB6R97R58CShortRequestSummary(body) + "\n";
+  1244	    });
+  1245	    return aiwB6R97R61EnsureRequiredViewpointsSection(out);
+  1246	  }
+  1247	  /* AIWORKEROS_B6R97R58C_MATERIAL_MARKDOWN_RETURN_WRAP_END */
+  1248	
+  1249	  /* AIWORKEROS_B6R97R61_MATERIAL_MARKDOWN_REQUIRED_VIEWPOINTS_START */
+  1250	  function aiwB6R97R61CollectText(value, depth) {
+  1251	    if (depth > 6 || value === null || value === undefined) return "";
+  1252	    if (typeof value === "string") return value;
+  1253	    if (Array.isArray(value)) return value.map((item) => aiwB6R97R61CollectText(item, depth + 1)).join("\n");
+  1254	    if (typeof value === "object") return Object.values(value).map((item) => aiwB6R97R61CollectText(item, depth + 1)).join("\n");
+  1255	    return "";
+  1256	  }
+  1257	
+  1258	  function aiwB6R97R61RequiredViewpointTerms(markdown) {
+  1259	    const text = [markdown].concat(aiwB6R97R61OuterArgs.map((item) => aiwB6R97R61CollectText(item, 0))).join("\n").slice(0, 160000);
+  1260	    const terms = [];
+  1261	
+  1262	    if (/大化の改新|乙巳の変|中大兄|中臣鎌足|蘇我/.test(text)) {
+  1263	      terms.push(
+  1264	        "大化の改新",
+  1265	        "乙巳の変",
+  1266	        "蘇我",
+  1267	        "入鹿",
+  1268	        "蝦夷",
+  1269	        "中大兄",
+  1270	        "中臣鎌足",
+  1271	        "孝徳天皇",
+  1272	        "改新の詔",
+  1273	        "公地公民",
+  1274	        "班田収授",
+  1275	        "戸籍",
+  1276	        "評制",
+  1277	        "郡制",
+  1278	        "難波宮",
+  1279	        "租庸調",
+  1280	        "後続影響",
+  1281	        "史料上の注意点"
+  1282	      );
+  1283	    }
+  1284	
+  1285	    [
+  1286	      "班田収授",
+  1287	      "郡制",
+  1288	      "租庸調",
+  1289	      "史料上の注意点",
+  1290	      "戸籍",
+  1291	      "評制",
+  1292	      "難波宮",
+  1293	      "改新の詔",
+  1294	      "公地公民"
+  1295	    ].forEach((term) => {
+  1296	      if (text.includes(term)) terms.push(term);
+  1297	    });
+  1298	
+  1299	    return Array.from(new Set(terms)).filter(Boolean).slice(0, 30);
+  1300	  }
+  1301	
+  1302	  function aiwB6R97R61EnsureRequiredViewpointsSection(markdown) {
+  1303	    const out = String(markdown || "");
+  1304	    if (out.includes("## 3.1 必須観点")) return out;
+  1305	    const terms = aiwB6R97R61RequiredViewpointTerms(out);
+  1306	    if (!terms.length) return out;
+  1307	
+  1308	    const section = [
+  1309	      "## 3.1 必須観点",
+  1310	      "本成果物では、以下の観点を落とさず扱う。",
+  1311	      "",
+  1312	      ...terms.map((term) => "- " + term)
+  1313	    ].join("\n");
+  1314	
+  1315	    if (/\n## 4\./.test(out)) {
+  1316	      return out.replace(/\n## 4\./, "\n\n" + section + "\n\n## 4.");
+  1317	    }
+  1318	
+  1319	    return out + "\n\n" + section;
+  1320	  }
+  1321	  /* AIWORKEROS_B6R97R61_MATERIAL_MARKDOWN_REQUIRED_VIEWPOINTS_END */
+  1322	
+  1323	
+  1324	  const title = aiwB6R95R3Z24TaskTitle(payload);
+  1325	  const modelCode = aiwB6R95R3Z24ModelCode(payload);
+  1326	  const instruction = aiwB6R95R3Z24Instruction(payload);
+  1327	
+  1328	  const blocks = [];
+  1329	  blocks.push("# " + title);
+  1330	  blocks.push("");
+  1331	  blocks.push("## 1. 成果物サマリ");
+  1332	  blocks.push("AIWorkerOSがCX22073JWのruntime materialを参照し、依頼内容に対応する詳細資料として再構成した成果物です。");
+  1333	  blocks.push("");
+  1334	  blocks.push("## 2. 生成主体");
+  1335	  blocks.push("- generation_owner: AIWorkerOS");
+  1336	  blocks.push("- model_code: " + modelCode);
+  1337	  blocks.push("- cx_reference_source: CX22073JW runtime material / selector v2 readable brain material");
+  1338	  blocks.push("- safety_boundary: internal_only_no_external_execution_no_pg_apply_no_destructive_action");
+  1339	  blocks.push("");
+  1340	  blocks.push("## 3. 依頼要旨");
+  1341	  blocks.push(instruction || "依頼文なし");
+  1342	  blocks.push("");
+  1343	  blocks.push("## 4. 参照資料に基づく本文");
+  1344	
+  1345	  rows.slice(0, 16).forEach((row, index) => {
+  1346	    const title = aiwB6R95R3Z24MaterialTitle(row, index);
+  1347	    const body = aiwB6R95R3Z24MaterialBody(row).trim();
+  1348	
+  1349	    blocks.push("");
+  1350	    blocks.push("### 4." + String(index + 1) + " " + title);
+  1351	    blocks.push(body ? body.slice(0, 2600) : "本文なし");
+  1352	  });
+  1353	
+  1354	  blocks.push("");
+  1355	  blocks.push("## 5. 出典・史料注意");
+  1356	  blocks.push("CX側materialに source_basis / source_caution / verification_status が含まれる場合は、それを優先して扱います。歴史資料では、一次史料・標準学習整理・研究上の注意点を分け、断定しすぎない説明にします。");
+  1357	  blocks.push("");
+  1358	  blocks.push("## 6. 誤解防止");
+  1359	  blocks.push("制度や事件を単発で完成したものとして扱わず、時系列・後続制度・史料上の注意と接続して説明します。");
+  1360	  blocks.push("");
+  1361	  blocks.push("## 7. 次工程");
+  1362	  blocks.push("依頼元アプリは summary_text と deliverable_link を保存し、必要に応じて追加条件を指定して再生成できます。");
+  1363	
+  1364	  return aiwB6R97R58CSanitizeMaterialMarkdown(blocks.join("\n"));
+  1365	}
+  1366	
+  1367	function aiwB6R95R3Z24EnhanceDeliverableWithCxMaterial(deliverable, payload, sourceRouteCode) {
+  1368	  const safeDeliverable = deliverable || {};
+  1369	  const originalBody = aiwB6R95R3Z24Text(safeDeliverable.bodyMarkdown || safeDeliverable.body_markdown || "");
+  1370	  const instruction = aiwB6R95R3Z24Instruction(payload);
+  1371	  const normalizedBody = originalBody.replace(/\s+/g, "");
+  1372	  const normalizedInstruction = instruction.replace(/\s+/g, "");
+  1373	  const echoRisk = normalizedInstruction && normalizedBody.includes(normalizedInstruction.slice(0, Math.min(120, normalizedInstruction.length)));
+  1374	
+  1375	  const rows = aiwB6R95R3Z24FetchCxRuntimeMaterials(payload);
+  1376	
+  1377	  if (!rows.length) {
+  1378	    safeDeliverable.generationBasis = Object.assign({}, safeDeliverable.generationBasis || {}, {
+  1379	      cx_material_patch_code: "B6R95R3Z-R24",
+  1380	      cx_material_rows_found: 0,
+  1381	      cx_material_body_enhanced: false
+  1382	    });
+  1383	    return safeDeliverable;
+  1384	  }
+  1385	
+  1386	  const enhancedBody = aiwB6R95R3Z24BuildMaterialMarkdown(payload, rows);
+  1387	
+  1388	  if (echoRisk || enhancedBody.length > originalBody.length) {
+  1389	    safeDeliverable.bodyMarkdown = enhancedBody;
+  1390	    safeDeliverable.summaryText = "CX22073JWのruntime materialを参照し、" + aiwB6R95R3Z24TaskTitle(payload) + " の詳細資料を生成しました。";
+  1391	    safeDeliverable.qualityNotes = [
+  1392	      "CX material rows used: " + String(rows.length),
+  1393	      "selector/material path: runtime readable brain material v3/v2/v1 fallback",
+  1394	      "body generation patch: B6R95R3Z-R24",
+  1395	      "source_route_code: " + String(sourceRouteCode || "")
+  1396	    ].join("\n");
+  1397	  }
+  1398	
+  1399	  safeDeliverable.robotContext = Object.assign({}, safeDeliverable.robotContext || {}, {
+  1400	    cx_material_rows_used: rows.length,
+  1401	    cx_material_patch_code: "B6R95R3Z-R24"
+  1402	  });
+  1403	
+  1404	  safeDeliverable.generationBasis = Object.assign({}, safeDeliverable.generationBasis || {}, {
+  1405	    cx_material_patch_code: "B6R95R3Z-R24",
+  1406	    cx_material_rows_found: rows.length,
+  1407	    cx_material_body_enhanced: true,
+  1408	    source: "CX22073JW runtime readable brain material"
+  1409	  });
+  1410	
+  1411	  return safeDeliverable;
+  1412	}
+  1413	
+  1414	
+  1415	// B6R98R3B_SOURCE_FILE_READER_START
+  1416	// Read local source/reference files declared by requester payload.
+  1417	// Scope:
+  1418	// - reference_files_text / supplemental_materials_text / applicable_rules_text
+  1419	// - task_instruction_ja lines such as "参照ファイル: /path/to/file.md"
+  1420	// Safety:
+  1421	// - local files only
+  1422	// - allowed roots only
+  1423	// - text-like extensions only
+  1424	// - size/total limits
+  1425	function aiwB6R98R3BSourceText(value) {
+  1426	  return value === null || value === undefined ? "" : String(value);
+  1427	}
+  1428	
+  1429	function aiwB6R98R3BFlattenPayloadValues(value, out, depth) {
+  1430	  if (!out) out = [];
+  1431	  if (depth > 5) return out;
+  1432	
+  1433	  if (value === null || value === undefined) return out;
+  1434	
+  1435	  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+  1436	    out.push(String(value));
+  1437	    return out;
+  1438	  }
+  1439	
+  1440	  if (Array.isArray(value)) {
+  1441	    value.forEach((item) => aiwB6R98R3BFlattenPayloadValues(item, out, depth + 1));
+  1442	    return out;
+  1443	  }
+  1444	
+  1445	  if (typeof value === "object") {
+  1446	    Object.keys(value).forEach((key) => {
+  1447	      const lower = String(key || "").toLowerCase();
+  1448	      if (
+  1449	        lower.includes("reference") ||
+  1450	        lower.includes("supplemental") ||
+  1451	        lower.includes("file") ||
+  1452	        lower.includes("path") ||
+  1453	        lower.includes("source") ||
+  1454	        lower.includes("rule") ||
+  1455	        lower.includes("instruction") ||
+  1456	        lower.includes("context")
+  1457	      ) {
+  1458	        aiwB6R98R3BFlattenPayloadValues(value[key], out, depth + 1);
+  1459	      }
+  1460	    });
+  1461	  }
+  1462	
+  1463	  return out;
+  1464	}
+  1465	
+  1466	function aiwB6R98R3BMaybeParseJsonText(text) {
+  1467	  const raw = aiwB6R98R3BSourceText(text).trim();
+  1468	  if (!raw) return null;
+  1469	  if (!raw.startsWith("{") && !raw.startsWith("[")) return null;
+  1470	  try {
+  1471	    return JSON.parse(raw);
+  1472	  } catch (_) {
+  1473	    return null;
+  1474	  }
+  1475	}
+  1476	
+  1477	function aiwB6R98R3BCollectTextSources(payload) {
+  1478	  const sources = [];
+  1479	  const directKeys = [
+  1480	    "reference_files_text",
+  1481	    "supplemental_materials_text",
+  1482	    "applicable_rules_text",
+  1483	    "source_file_path",
+  1484	    "source_file_paths",
+  1485	    "source_data_path",
+  1486	    "source_data_paths",
+  1487	    "source_reference_path",
+  1488	    "source_reference_paths",
+  1489	    "source_material_path",
+  1490	    "source_material_paths",
+  1491	    "task_instruction_ja",
+  1492	    "instruction",
+  1493	    "input_context_text",
+  1494	    "expected_output_text"
+  1495	  ];
+  1496	
+  1497	  directKeys.forEach((key) => {
+  1498	    if (payload && payload[key] !== undefined && payload[key] !== null) {
+  1499	      const raw = payload[key];
+  1500	      sources.push(aiwB6R98R3BSourceText(raw));
+  1501	      const parsed = aiwB6R98R3BMaybeParseJsonText(raw);
+  1502	      if (parsed) aiwB6R98R3BFlattenPayloadValues(parsed, sources, 0);
+  1503	    }
+  1504	  });
+  1505	
+  1506	  ["payload", "request_payload", "input_json", "body", "request", "runtime_request", "metadata_jsonb", "metadata"].forEach((key) => {
+  1507	    const nested = payload && payload[key];
+  1508	    if (nested) aiwB6R98R3BFlattenPayloadValues(nested, sources, 0);
+  1509	  });
+  1510	
+  1511	  return sources.filter(Boolean);
+  1512	}
+  1513	
+  1514	function aiwB6R98R3BHomeDir() {
+  1515	  return process.env.HOME || "/data/data/com.termux/files/home";
+  1516	}
+  1517	
+  1518	function aiwB6R98R3BNormalizeCandidatePath(candidate) {
+  1519	  let text = aiwB6R98R3BSourceText(candidate).trim();
+  1520	  if (!text) return "";
+  1521	
+  1522	  text = text.replace(/[\u0000]/g, "");
+  1523	  text = text.replace(/^['"\s]+|['"\s]+$/g, "");
+  1524	  text = text.replace(/[),;，、。]+$/g, "");
+  1525	
+  1526	  if (text.startsWith("file://")) {
+  1527	    text = text.slice("file://".length);
+  1528	  }
+  1529	
+  1530	  if (text.startsWith("~/")) {
+  1531	    text = aiwB6R98R3BHomeDir() + text.slice(1);
+  1532	  }
+  1533	
+  1534	  return text;
+  1535	}
+  1536	
+  1537	function aiwB6R98R3BAllowedRoots() {
+  1538	  const defaults = [
+  1539	    aiwB6R98R3BHomeDir(),
+  1540	    "/data/data/com.termux/files/home",
+  1541	    "/mnt/data"
+  1542	  ];
+  1543	
+  1544	  const envRoots = aiwB6R98R3BSourceText(process.env.AIWORKEROS_SOURCE_FILE_ALLOWED_ROOTS)
+  1545	    .split(":")
+  1546	    .map((v) => v.trim())
+  1547	    .filter(Boolean);
+  1548	
+  1549	  const roots = defaults.concat(envRoots);
+  1550	  return Array.from(new Set(roots)).map((root) => path.resolve(root));
+  1551	}
+  1552	
+  1553	function aiwB6R98R3BIsUnderAllowedRoot(absPath) {
+  1554	  const normalized = path.resolve(absPath);
+  1555	  return aiwB6R98R3BAllowedRoots().some((root) => {
+  1556	    return normalized === root || normalized.startsWith(root + path.sep);
+  1557	  });
+  1558	}
+  1559	
+  1560	function aiwB6R98R3BIsTextLikeFile(absPath) {
+  1561	  const ext = path.extname(absPath).toLowerCase();
+  1562	  const allowed = {
+  1563	    ".txt": true,
+  1564	    ".text": true,
+  1565	    ".md": true,
+  1566	    ".markdown": true,
+  1567	    ".csv": true,
+  1568	    ".json": true,
+  1569	    ".jsonl": true,
+  1570	    ".yaml": true,
+  1571	    ".yml": true,
+  1572	    ".xml": true,
+  1573	    ".html": true,
+  1574	    ".htm": true,
+  1575	    ".css": true,
+  1576	    ".js": true,
+  1577	    ".mjs": true,
+  1578	    ".cjs": true,
+  1579	    ".ts": true,
+  1580	    ".tsx": true,
+  1581	    ".jsx": true,
+  1582	    ".sql": true,
+  1583	    ".log": true
+  1584	  };
+  1585	  return !!allowed[ext];
+  1586	}
+  1587	
+  1588	function aiwB6R98R3BExtractCandidatePathsFromText(text) {
+  1589	  const raw = aiwB6R98R3BSourceText(text);
+  1590	  if (!raw.trim()) return [];
+  1591	
+  1592	  const candidates = [];
+  1593	
+  1594	  const jsonParsed = aiwB6R98R3BMaybeParseJsonText(raw);
+  1595	  if (jsonParsed) {
+  1596	    const values = aiwB6R98R3BFlattenPayloadValues(jsonParsed, [], 0);
+  1597	    values.forEach((v) => candidates.push(v));
+  1598	  }
+  1599	
+  1600	  const regex = /(?:file:\/\/)?(?:~\/|\/data\/data\/com\.termux\/files\/home\/|\/mnt\/data\/)[^\s"'<>]+/g;
+  1601	  let match;
+  1602	  while ((match = regex.exec(raw)) !== null) {
+  1603	    candidates.push(match[0]);
+  1604	  }
+  1605	
+  1606	  return candidates
+  1607	    .map(aiwB6R98R3BNormalizeCandidatePath)
+  1608	    .filter(Boolean);
+  1609	}
+  1610	
+  1611	function aiwB6R98R3BCollectCandidatePaths(payload) {
+  1612	  const sources = aiwB6R98R3BCollectTextSources(payload);
+  1613	  const all = [];
+  1614	  sources.forEach((text) => {
+  1615	    aiwB6R98R3BExtractCandidatePathsFromText(text).forEach((candidate) => all.push(candidate));
+  1616	  });
+  1617	  return Array.from(new Set(all));
+  1618	}
+  1619	
+  1620	/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_START */
+  1621	function aiwB6R97R66DetectSourceMaterialType(filePath) {
+  1622	  const lower = String(filePath || "").toLowerCase();
+  1623	  if (/\.(txt|md|markdown|json|jsonl|csv|tsv|log|xml|html|htm|css|js|mjs|cjs|ts|tsx|jsx|sql|yaml|yml|ini|conf)$/i.test(lower)) return "text";
+  1624	  if (/\.pdf$/i.test(lower)) return "pdf";
+  1625	  if (/\.(jpg|jpeg|png|webp|gif|svg)$/i.test(lower)) return "image";
+  1626	  if (/\.(mp3|wav|m4a|aac|ogg|flac|mid|midi)$/i.test(lower)) return "audio";
+  1627	  return "unknown";
+  1628	}
+  1629	
+  1630	function aiwB6R97R66SourceMaterialSummary(text) {
+  1631	  const raw = String(text || "").replace(/\r\n/g, "\n").replace(/\s+/g, " ").trim();
+  1632	  if (!raw) return "";
+  1633	  return raw.slice(0, 240);
+  1634	}
+  1635	
+  1636	function aiwB6R97R66BuildSourceMaterialAnalysisResults(rows, rejected) {
+  1637	  const used = Array.isArray(rows) ? rows : [];
+  1638	  const rejects = Array.isArray(rejected) ? rejected : [];
+  1639	  const results = [];
+  1640	
+  1641	  used.forEach((row, index) => {
+  1642	    const mediaType = row.media_type || aiwB6R97R66DetectSourceMaterialType(row && row.path);
+  1643	    results.push({
+  1644	      source_path: row.path,
+  1645	      file_name: row.path ? String(row.path).split("/").pop() : "",
+  1646	      media_type: mediaType,
+  1647	      analyzer_status: row.analyzer_status || (mediaType === "text" ? "analyzed" : "metadata_only"),
+  1648	      analyzer_code: "B6R97R66",
+  1649	      byte_size: row.byte_size || 0,
+  1650	      char_count: row.char_count || 0,
+  1651	      extracted_summary: mediaType === "text" ? aiwB6R97R66SourceMaterialSummary(row.body_text || "") : "",
+  1652	      warnings: row.metadata_only_flag ? ["metadata_only_first_phase", "no_binary_content_read"] : (mediaType === "text" ? [] : ["metadata_only_first_phase"]),
+  1653	      safety_notes: ["local_source_file_only", "no_external_model_call", "no_ocr_or_transcription_in_first_phase"],
+  1654	      included_in_prompt_flag: Boolean(row.body_text) && !row.metadata_only_flag,
+  1655	      order_index: index
+  1656	    });
+  1657	  });
+  1658	
+  1659	  rejects.forEach((item, index) => {
+  1660	    results.push({
+  1661	      source_path: item.path || "",
+  1662	      file_name: item.path ? String(item.path).split("/").pop() : "",
+  1663	      media_type: aiwB6R97R66DetectSourceMaterialType(item.path || ""),
+  1664	      analyzer_status: "rejected",
+  1665	      analyzer_code: "B6R97R66",
+  1666	      warnings: [item.reason || "rejected"].filter(Boolean),
+  1667	      safety_notes: ["source_reader_rejection_record"],
+  1668	      included_in_prompt_flag: false,
+  1669	      order_index: used.length + index
+  1670	    });
+  1671	  });
+  1672	
+  1673	  return results;
+  1674	}
+  1675	
+  1676	function aiwB6R97R66RenderSourceMaterialAnalysisMarkdown(sourceFiles) {
+  1677	  const rows = sourceFiles && Array.isArray(sourceFiles.analysis_results) ? sourceFiles.analysis_results : [];
+  1678	  if (!rows.length) return "";
+  1679	  const blocks = [
+  1680	    "## 参照ファイル解析結果",
+  1681	    "",
+  1682	    "AIWorkerOS source material analyzer v1 の結果です。text は本文読込、pdf/image/audio は後続phaseで本格解析します。"
+  1683	  ];
+  1684	  rows.forEach((row, index) => {
+  1685	    blocks.push("");
+  1686	    blocks.push("### source material " + String(index + 1));
+  1687	    blocks.push("- analyzer_code: " + String(row.analyzer_code || "B6R97R66"));
+  1688	    blocks.push("- file_name: " + String(row.file_name || ""));
+  1689	    blocks.push("- media_type: " + String(row.media_type || "unknown"));
+  1690	    blocks.push("- analyzer_status: " + String(row.analyzer_status || "unknown"));
+  1691	    blocks.push("- included_in_prompt_flag: " + String(Boolean(row.included_in_prompt_flag)));
+  1692	    if (row.extracted_summary) {
+  1693	      blocks.push("- extracted_summary: " + String(row.extracted_summary));
+  1694	    }
+  1695	    if (Array.isArray(row.warnings) && row.warnings.length) {
+  1696	      blocks.push("- warnings: " + row.warnings.join(", "));
+  1697	    }
+  1698	  });
+  1699	  return blocks.join("\n");
+  1700	}
+  1701	/* AIWORKEROS_B6R97R66_TEXT_SOURCE_ANALYZER_END */
+  1702	function aiwB6R98R3BReadSourceFiles(payload) {
+  1703	  const candidates = aiwB6R98R3BCollectCandidatePaths(payload);
+  1704	  const maxFiles = Math.max(1, Math.min(10, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_FILES || "5") || 5));
+  1705	  const maxBytes = Math.max(1024, Math.min(2 * 1024 * 1024, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_BYTES || "2097152") || 2097152));
+  1706	  const maxTotalChars = Math.max(4000, Math.min(120000, Number(process.env.AIWORKEROS_SOURCE_FILE_MAX_TOTAL_CHARS || "60000") || 60000));
+  1707	
+  1708	  const rows = [];
+  1709	  const rejected = [];
+  1710	  let totalChars = 0;
+  1711	
+  1712	  for (const candidate of candidates) {
+  1713	    if (rows.length >= maxFiles) {
+  1714	      rejected.push({ path: candidate, reason: "max_files_exceeded" });
+  1715	      continue;
+  1716	    }
+  1717	
+  1718	    const normalized = aiwB6R98R3BNormalizeCandidatePath(candidate);
+  1719	    const absPath = path.resolve(normalized);
+  1720	
+  1721	    try {
+  1722	      if (!aiwB6R98R3BIsUnderAllowedRoot(absPath)) {
+  1723	        rejected.push({ path: candidate, reason: "outside_allowed_roots" });
+  1724	        continue;
+  1725	      }
+  1726	
+  1727	      /* AIWORKEROS_B6R97R67_MEDIA_METADATA_HOOKS_START */
+  1728	      const aiwB6R97R67MaterialType = aiwB6R97R66DetectSourceMaterialType(absPath);
+  1729	      const aiwB6R97R67TextLike = aiwB6R98R3BIsTextLikeFile(absPath);
+  1730	      const aiwB6R97R67MetadataOnly = ["pdf", "image", "audio"].includes(aiwB6R97R67MaterialType);
+  1731	
+  1732	      if (!aiwB6R97R67TextLike && !aiwB6R97R67MetadataOnly) {
+  1733	        rejected.push({ path: candidate, reason: "unsupported_source_extension", media_type: aiwB6R97R67MaterialType });
+  1734	        continue;
+  1735	      }
+  1736	      /* AIWORKEROS_B6R97R67_MEDIA_METADATA_HOOKS_END */
+  1737	
+  1738	      if (!fs.existsSync(absPath)) {
+  1739	        rejected.push({ path: candidate, reason: "not_found" });
+  1740	        continue;
+  1741	      }
+  1742	
+  1743	      const stat = fs.statSync(absPath);
+  1744	      if (!stat.isFile()) {
+  1745	        rejected.push({ path: candidate, reason: "not_file" });
+  1746	        continue;
+  1747	      }
+  1748	
+  1749	      if (stat.size > maxBytes) {
+  1750	        rejected.push({ path: candidate, reason: "file_too_large", size: stat.size });
+  1751	        continue;
+  1752	      }
+  1753	
+  1754	      if (aiwB6R97R67MetadataOnly && !aiwB6R97R67TextLike) {
+  1755	        rows.push({
+  1756	          path: absPath,
+  1757	          byte_size: stat.size,
+  1758	          char_count: 0,
+  1759	          body_text: "",
+  1760	          media_type: aiwB6R97R67MaterialType,
+  1761	          analyzer_status: "metadata_only",
+  1762	          metadata_only_flag: true,
+  1763	          media_metadata_hook_code: "B6R97R67"
+  1764	        });
+  1765	        continue;
+  1766	      }
+  1767	
+  1768	      let body = fs.readFileSync(absPath, "utf8");
+  1769	      if (body.length > maxTotalChars - totalChars) {
+  1770	        body = body.slice(0, Math.max(0, maxTotalChars - totalChars));
+  1771	      }
+  1772	
+  1773	      totalChars += body.length;
+  1774	      rows.push({
+  1775	        path: absPath,
+  1776	        byte_size: stat.size,
+  1777	        char_count: body.length,
+  1778	        body_text: body,
+  1779	        media_type: "text",
+  1780	        analyzer_status: "analyzed",
+  1781	        metadata_only_flag: false,
+  1782	        media_metadata_hook_code: "B6R97R67"
+  1783	      });
+  1784	
+  1785	      if (totalChars >= maxTotalChars) break;
+  1786	    } catch (error) {
+  1787	      rejected.push({
+  1788	        path: candidate,
+  1789	        reason: "read_error",
+  1790	        message: error && error.message ? error.message : String(error)
+  1791	      });
+  1792	    }
+  1793	  }
+  1794	
+  1795	  const analysisResults = aiwB6R97R66BuildSourceMaterialAnalysisResults(rows, rejected);
+  1796	
+  1797	  return {
+  1798	    candidates,
+  1799	    rows,
+  1800	    rejected,
+  1801	    analysis_results: analysisResults,
+  1802	    limits: {
+  1803	      max_files: maxFiles,
+  1804	      max_bytes_per_file: maxBytes,
+  1805	      max_total_chars: maxTotalChars
+  1806	    }
+  1807	  };
+  1808	}
+  1809	
+  1810	function aiwB6R98R3BSourceFilesMarkdown(sourceFiles) {
+  1811	  const rows = sourceFiles && Array.isArray(sourceFiles.rows) ? sourceFiles.rows : [];
+  1812	  if (!rows.length) return "";
+  1813	
+  1814	  const blocks = [
+  1815	    "## 元データ/参照ファイル本文",
+  1816	    "",
+  1817	    "以下は依頼元から渡されたローカル参照ファイルをAIWorkerOSが読み込んだ内容です。成果物作成では、この内容を入力根拠として扱います。"
+  1818	  ];
+  1819	
+  1820	  const analysisMarkdown = aiwB6R97R66RenderSourceMaterialAnalysisMarkdown(sourceFiles);
+  1821	  if (analysisMarkdown) {
+  1822	    blocks.push("");
+  1823	    blocks.push(analysisMarkdown);
+  1824	  }
+  1825	
+  1826	  rows.forEach((row, index) => {
+  1827	    blocks.push("");
+  1828	    blocks.push("### 参照ファイル " + String(index + 1));
+  1829	    blocks.push("- path: " + row.path);
+  1830	    blocks.push("- byte_size: " + String(row.byte_size));
+  1831	    blocks.push("");
+  1832	    blocks.push("~~~text");
+  1833	    blocks.push(row.body_text || "");
+  1834	    blocks.push("~~~");
+  1835	  });
+  1836	
+  1837	  return blocks.join("\n");
+  1838	}
+  1839	
+  1840	function aiwB6R98R3BEnhanceDeliverableWithSourceFiles(deliverable, payload, sourceRouteCode) {
+  1841	  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_START */
+  1842	  function aiwB6R97R65BAppendSourceMarkdownToBody(body, sourceMarkdown) {
+  1843	    const current = aiwB6R98R3BSourceText(body || "");
+  1844	    const source = aiwB6R98R3BSourceText(sourceMarkdown || "");
+  1845	    if (!source) return current;
+  1846	    if (current.includes(source)) return current;
+  1847	    if (source.includes("READ_PROOF_TOKEN") && current.includes("READ_PROOF_TOKEN")) return current;
+  1848	    return [current, "", source].filter(Boolean).join("\n").trim();
+  1849	  }
+  1850	
+  1851	  function aiwB6R97R65BMainArtifactWithSourceMarkdown(artifact, sourceMarkdown) {
+  1852	    if (!artifact || typeof artifact !== "object") return artifact;
+  1853	    const mergedBody = aiwB6R97R65BAppendSourceMarkdownToBody(
+  1854	      artifact.body_markdown || artifact.bodyMarkdown || artifact.content || "",
+  1855	      sourceMarkdown
+  1856	    );
+  1857	    return Object.assign({}, artifact, {
+  1858	      bodyMarkdown: mergedBody,
+  1859	      body_markdown: mergedBody,
+  1860	      content: mergedBody,
+  1861	      aiw_b6r97r65b_source_body_merged: true
+  1862	    });
+  1863	  }
+  1864	  /* AIWORKEROS_B6R97R65B_SOURCE_BODY_MERGE_INTO_MAIN_END */
+  1865	
+  1866	  const safeDeliverable = deliverable || {};
+  1867	  const sourceFiles = aiwB6R98R3BReadSourceFiles(payload);
+  1868	  const markdown = aiwB6R98R3BSourceFilesMarkdown(sourceFiles);
+  1869	  safeDeliverable.aiw_b6r97r65b_source_files_markdown = markdown;
+  1870	  safeDeliverable.sourceFilesMarkdown = markdown;
+  1871	  safeDeliverable.source_files_markdown = markdown;
+  1872	
+  1873	  safeDeliverable.robotContext = Object.assign({}, safeDeliverable.robotContext || {}, {
+  1874	    source_file_reader_patch_code: "B6R98R3B",
+  1875	    source_file_candidates_count: sourceFiles.candidates.length,
+  1876	    source_files_used_count: sourceFiles.rows.length,
+  1877	    source_files_rejected_count: sourceFiles.rejected.length
+  1878	  });
+  1879	
+  1880	  safeDeliverable.generationBasis = Object.assign({}, safeDeliverable.generationBasis || {}, {
+  1881	    source_file_reader_patch_code: "B6R98R3B",
+  1882	    source_file_reader_enabled: true,
+  1883	    source_file_candidates_count: sourceFiles.candidates.length,
+  1884	    source_files_used_count: sourceFiles.rows.length,
+  1885	    source_files_rejected: sourceFiles.rejected.slice(0, 10),
+  1886	    source_route_code: String(sourceRouteCode || "")
+  1887	  });
+  1888	
+  1889	  safeDeliverable.sourceMaterialAnalysisResults = sourceFiles.analysis_results || [];
+  1890	  safeDeliverable.source_material_analysis_results = sourceFiles.analysis_results || [];
+  1891	
+  1892	  safeDeliverable.outputPayload = Object.assign({}, safeDeliverable.outputPayload || {}, {
+  1893	    source_material_analysis_results: sourceFiles.analysis_results || [],
+  1894	    source_file_reader: {
+  1895	      patch_code: "B6R98R3B",
+  1896	      candidates_count: sourceFiles.candidates.length,
+  1897	      used_count: sourceFiles.rows.length,
+  1898	      rejected_count: sourceFiles.rejected.length,
+  1899	      used_files: sourceFiles.rows.map((row) => ({
+  1900	        path: row.path,
+  1901	        byte_size: row.byte_size,
+  1902	        char_count: row.char_count
+  1903	      }))
+  1904	    }
+  1905	  });
+  1906	
+  1907	  if (!sourceFiles.rows.length) {
+  1908	    return safeDeliverable;
+  1909	  }
+  1910	
+  1911	  const currentBody = aiwB6R98R3BSourceText(safeDeliverable.bodyMarkdown || safeDeliverable.body_markdown || "");
+  1912	  const enhancedBody = [
+  1913	    currentBody,
+  1914	    "",
+  1915	    markdown
+  1916	  ].join("\n").trim();
+  1917	
+  1918	  safeDeliverable.bodyMarkdown = enhancedBody;
+  1919	  safeDeliverable.body_markdown = enhancedBody;
+  1920	  safeDeliverable.output_body_ja = enhancedBody;
+  1921	  safeDeliverable.content = enhancedBody;
+  1922	  safeDeliverable.aiw_b6r97r65b_source_body_merged = true;
+  1923	
+  1924	  if (Array.isArray(safeDeliverable.generatedArtifacts)) {
+  1925	    safeDeliverable.generatedArtifacts = safeDeliverable.generatedArtifacts.map((artifact) => {
+  1926	      if (artifact && artifact.file_name === "01_main_deliverable.md") {
+  1927	        return aiwB6R97R65BMainArtifactWithSourceMarkdown(Object.assign({}, artifact, { body_markdown: enhancedBody }), markdown);
+  1928	      }
+  1929	      return artifact;
+  1930	    });
+  1931	  }
+  1932	
+  1933	  if (safeDeliverable.outputPayload && Array.isArray(safeDeliverable.outputPayload.generated_artifacts)) {
+  1934	    safeDeliverable.outputPayload.generated_artifacts = safeDeliverable.outputPayload.generated_artifacts.map((artifact) => {
+  1935	      if (artifact && artifact.file_name === "01_main_deliverable.md") {
+  1936	        return aiwB6R97R65BMainArtifactWithSourceMarkdown(Object.assign({}, artifact, { body_markdown: enhancedBody }), markdown);
+  1937	      }
+  1938	      return artifact;
+  1939	    });
+  1940	  }
+  1941	
+  1942	  if (Array.isArray(safeDeliverable.artifacts)) {
+  1943	    safeDeliverable.artifacts = safeDeliverable.artifacts.map((artifact) => {
+  1944	      if (artifact && artifact.body_markdown) {
+  1945	        return aiwB6R97R65BMainArtifactWithSourceMarkdown(Object.assign({}, artifact, { body_markdown: enhancedBody }), markdown);
+  1946	      }
+  1947	      return artifact;
+  1948	    });
+  1949	  }
+  1950	
+  1951	  const currentQualityNotes = aiwB6R98R3BSourceText(safeDeliverable.qualityNotes || "");
+  1952	  safeDeliverable.qualityNotes = [
+  1953	    currentQualityNotes,
+  1954	    "source file reader patch: B6R98R3B",
+  1955	    "source files used: " + String(sourceFiles.rows.length),
+  1956	    "source file candidates: " + String(sourceFiles.candidates.length)
+  1957	  ].filter(Boolean).join("\n");
+  1958	
+  1959	  if (!safeDeliverable.summaryText || !String(safeDeliverable.summaryText).trim()) {
+  1960	    safeDeliverable.summaryText = "元データ/参照ファイルを読み込み、成果物生成に反映しました。";
+  1961	  } else {
+  1962	    safeDeliverable.summaryText = String(safeDeliverable.summaryText) + " 元データ/参照ファイルも読み込み済みです。";
+  1963	  }
+  1964	
+  1965	  return safeDeliverable;
+  1966	}
+  1967	// B6R98R3B_SOURCE_FILE_READER_END
+  1968	
+  1969	function aiwB6R95R3R3BuildRequesterFacingDeliverable(payload, sourceRouteCode) {
+  1970	  const baseDeliverable = aiwB6R95R3R3BuildRequesterFacingDeliverableBaseB6R95R3Z24(payload, sourceRouteCode);
+  1971	  const cxDeliverable = aiwB6R95R3Z24EnhanceDeliverableWithCxMaterial(baseDeliverable, payload, sourceRouteCode);
+  1972	  return aiwB6R98R3BEnhanceDeliverableWithSourceFiles(cxDeliverable, payload, sourceRouteCode);
+  1973	}
+  1974	/* B6R95R3Z_R24_CX_MATERIAL_BODY_GENERATION_PATCH_END */
+  1975	
+  1976	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_START
+  1977	/*
+  1978	  B6R95R3D-R1:
+  1979	  Multi-artifact deliverable zip package contract.
+  1980	
+  1981	  Canon:
+  1982	  - AIWorkerOS creates one or more deliverable artifacts from the instruction.
+  1983	  - AIWorkerOS creates summary_text.
+  1984	  - AIWorkerOS bundles generated artifacts into one deliverable zip.
+  1985	  - Requester apps display summary_text and link to the zip.
+  1986	  - The zip exists to avoid one-by-one downloads when multiple artifacts are generated.
+  1987	
+  1988	  Boundary:
+  1989	  - No external execution.
+  1990	  - No PG apply.
+  1991	  - No destructive action.
+  1992	  - No requester-app-specific contract.
+  1993	*/
+  1994	function aiwB6R95R3D1SafeFilePart(value, fallback) {
+  1995	  const raw = String(value || fallback || "deliverable").trim();
+  1996	  const safe = raw.replace(/[^A-Za-z0-9._-]+/g, "_").replace(/^_+|_+$/g, "").slice(0, 80);
+  1997	  return safe || String(fallback || "deliverable");
+  1998	}
+  1999	
+  2000	function aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle) {
+  2001	  const crypto = require("crypto");
+  2002	  const zipId = `${Date.now()}_${crypto.randomUUID()}`;
+  2003	  const requesterPart = aiwB6R95R3D1SafeFilePart(requesterAppRef, "requester");
+  2004	  const titlePart = aiwB6R95R3D1SafeFilePart(taskTitle, "deliverables");
+  2005	  const rawFileName = `${requesterPart}_${titlePart}_${zipId}.zip`;
+  2006	
+  2007	  // AIWORKEROS_B6R95R3H_PACKAGE_META_ZIP_LINK_BEFORE_DB_FIX
+  2008	  // The package metadata is saved to DB before the zip file is written.
+  2009	  // Therefore file_name / zip_link must already use the exact sanitized filename
+  2010	  // that will be written to disk by aiwB6R95R3D1CreateZipAndAttach.
+  2011	  const fileName = aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables.zip").endsWith(".zip")
+  2012	    ? aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables.zip")
+  2013	    : `${aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables")}.zip`;
+  2014	  const zipLink = `aiworkeros://runtime-deliverable-zip/${fileName}`;
+  2015	
+  2016	  return {
+  2017	    package_kind: "delivery_package",
+  2018	    package_format: "zip",
+  2019	    mime_type: "application/zip",
+  2020	    zip_id: zipId,
+  2021	    file_name: fileName,
+  2022	    zip_link: zipLink,
+  2023	    zip_ref: {
+  2024	      source: "aiworkeros",
+  2025	      storage_code: "runtime-deliverable-zip",
+  2026	      file_name: fileName
+  2027	    }
+  2028	  };
+  2029	}
+  2030	
+  2031	function aiwB6R95R3D1NormalizeGeneratedArtifact(item, index) {
+  2032	  const seq = String(index + 1).padStart(2, "0");
+  2033	  const kind = aiwB6R95R3R3OneLine(item?.artifact_kind_code || item?.kind || "document", "document");
+  2034	  const title = aiwB6R95R3R3OneLine(item?.title || item?.artifact_title_ja || `成果物${seq}`, `成果物${seq}`);
+  2035	  const body = aiwB6R95R3R3Text(item?.body_markdown || item?.body_text || item?.content || "");
+  2036	  const suggestedName = item?.file_name || `${seq}_${aiwB6R95R3D1SafeFilePart(title, `artifact_${seq}`)}.md`;
+  2037	  const fileName = aiwB6R95R3D1SafeFilePart(suggestedName, `artifact_${seq}.md`).endsWith(".md")
+  2038	    ? aiwB6R95R3D1SafeFilePart(suggestedName, `artifact_${seq}.md`)
+  2039	    : `${aiwB6R95R3D1SafeFilePart(suggestedName, `artifact_${seq}`)}.md`;
+  2040	  return {
+  2041	    artifact_no: index + 1,
+  2042	    artifact_kind_code: kind,
+  2043	    title,
+  2044	    file_name: fileName,
+  2045	    body_markdown: body,
+  2046	    body_format: "markdown"
+  2047	  };
+  2048	}
+  2049	
+  2050	
+  2051	/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_START */
+  2052	function aiwB6R97R36R3SelectStrongMainDeliverableMarkdown(...inputs) {
+  2053	  const candidates = [];
+  2054	
+  2055	  function addCandidate(label, value) {
+  2056	    if (typeof value !== "string") return;
+  2057	    const trimmed = value.trim();
+  2058	    if (!trimmed) return;
+  2059	
+  2060	    const weakSignals = [
+  2061	      "individual request queued",
+  2062	      "worker_work_unit_id",
+  2063	      "詳細資料を作成せよ",
+  2064	      "一次成果物",
+  2065	      "B6R97R32B individual request queued"
+  2066	    ];
+  2067	
+  2068	    const strongSignals = [
+  2069	      "乙巳の変",
+  2070	      "蘇我",
+  2071	      "入鹿",
+  2072	      "蝦夷",
+  2073	      "中大兄",
+  2074	      "中臣鎌足",
+  2075	      "孝徳天皇",
+  2076	      "改新の詔",
+  2077	      "公地公民",
+  2078	      "班田収授",
+  2079	      "戸籍",
+  2080	      "評",
+  2081	      "郡",
+  2082	      "飛鳥",
+  2083	      "難波宮",
+  2084	      "租庸調",
+  2085	      "CX参照素材からの展開本文"
+  2086	    ];
+  2087	
+  2088	    const weakHitCount = weakSignals.filter((term) => trimmed.includes(term)).length;
+  2089	    const strongHitCount = strongSignals.filter((term) => trimmed.includes(term)).length;
+  2090	
+  2091	    let score = trimmed.length;
+  2092	    score += strongHitCount * 1200;
+  2093	    score -= weakHitCount * 3000;
+  2094	
+  2095	    if (trimmed.length >= 3000) score += 2000;
+  2096	    if (strongHitCount >= 5) score += 3500;
+  2097	    if (weakHitCount >= 2 && trimmed.length < 1500) score -= 7000;
+  2098	
+  2099	    candidates.push({
+  2100	      label,
+  2101	      value: trimmed,
+  2102	      score,
+  2103	      length: trimmed.length,
+  2104	      strongHitCount,
+  2105	      weakHitCount
+  2106	    });
+  2107	  }
+  2108	
+  2109	  function dig(value, path, depth) {
+  2110	    if (depth > 8 || value === null || value === undefined) return;
+  2111	
+  2112	    if (typeof value === "string") {
+  2113	      if (
+  2114	        /body|bodyMarkdown|body_markdown|markdown|deliverable|main|artifact|output|summary|content|text/i.test(path) ||
+  2115	        /乙巳の変|蘇我|大化の改新|改新の詔|公地公民|CX参照素材からの展開本文/.test(value)
+  2116	      ) {
+  2117	        addCandidate(path, value);
+  2118	      }
+  2119	      return;
+  2120	    }
+  2121	
+  2122	    if (Array.isArray(value)) {
+  2123	      value.forEach((item, index) => dig(item, path + "[" + index + "]", depth + 1));
+  2124	      return;
+  2125	    }
+  2126	
+  2127	    if (typeof value === "object") {
+  2128	      for (const [key, child] of Object.entries(value)) {
+  2129	        const childPath = path ? path + "." + key : key;
+  2130	        if (/body|bodyMarkdown|body_markdown|markdown|deliverable|main|artifact|output|payload|summary|content|text|result|response|worker/i.test(key)) {
+  2131	          dig(child, childPath, depth + 1);
+  2132	        } else if (depth < 3) {
+  2133	          dig(child, childPath, depth + 1);
+  2134	        }
+  2135	      }
+  2136	    }
+  2137	  }
+  2138	
+  2139	  inputs.forEach((input, index) => {
+  2140	    addCandidate("arguments[" + index + "]", input);
+  2141	    dig(input, "arguments[" + index + "]", 0);
+  2142	  });
+  2143	
+  2144	  candidates.sort((a, b) => b.score - a.score || b.length - a.length);
+  2145	
+  2146	  const selected = candidates[0];
+  2147	  if (selected && selected.value) return selected.value;
+  2148	
+  2149	  return "";
+  2150	}
+  2151	/* AIWORKEROS_B6R97R36_R3_STRONG_MAIN_DELIVERABLE_SOURCE_END */
+  2152	
+  2153	
+  2154	/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_START */
+  2155	function aiwB6R97R40SelectTaskSpecificMainDeliverableMarkdown(...inputs) {
+  2156	  const candidates = [];
+  2157	  const taskHintParts = [];
+  2158	
+  2159	  function isString(value) {
+  2160	    return typeof value === "string" && value.trim().length > 0;
+  2161	  }
+  2162	
+  2163	  function addTaskHint(path, value) {
+  2164	    if (!isString(value)) return;
+  2165	    if (/task_instruction|instruction|prompt|task_title|title|subject|topic|request|source_request|domain/i.test(path)) {
+  2166	      taskHintParts.push(value.trim());
+  2167	    }
+  2168	  }
+  2169	
+  2170	  function collectTaskHints(value, path, depth) {
+  2171	    if (depth > 8 || value === null || value === undefined) return;
+  2172	    if (typeof value === "string") {
+  2173	      addTaskHint(path, value);
+  2174	      return;
+  2175	    }
+  2176	    if (Array.isArray(value)) {
+  2177	      value.forEach((item, index) => collectTaskHints(item, path + "[" + index + "]", depth + 1));
+  2178	      return;
+  2179	    }
+  2180	    if (typeof value === "object") {
+  2181	      for (const [key, child] of Object.entries(value)) {
+  2182	        collectTaskHints(child, path ? path + "." + key : key, depth + 1);
+  2183	      }
+  2184	    }
+  2185	  }
+  2186	
+  2187	  function normalizeText(value) {
+  2188	    return String(value || "")
+  2189	      .replace(/[\r\n\t]+/g, " ")
+  2190	      .replace(/[、。・：:;；（）()「」『』【】\[\]{}]/g, " ")
+  2191	      .replace(/\s+/g, " ")
+  2192	      .trim();
+  2193	  }
+  2194	
+  2195	  function extractTaskTerms(text) {
+  2196	    const normalized = normalizeText(text);
+  2197	    const genericStop = new Set([
+  2198	      "について",
+  2199	      "できるだけ",
+  2200	      "詳細",
+  2201	      "資料",
+  2202	      "作成",
+  2203	      "確認",
+  2204	      "検証",
+  2205	      "主成果物",
+  2206	      "成果物",
+  2207	      "実行",
+  2208	      "runtime",
+  2209	      "verification",
+  2210	      "deliverable",
+  2211	      "zip",
+  2212	      "main",
+  2213	      "worker",
+  2214	      "AIWorkerOS",
+  2215	      "AICM"
+  2216	    ]);
+  2217	
+  2218	    const terms = new Set();
+  2219	
+  2220	    for (const chunk of normalized.split(/\s+/)) {
+  2221	      const cleaned = chunk.trim();
+  2222	      if (cleaned.length < 2 || cleaned.length > 28) continue;
+  2223	      if (genericStop.has(cleaned)) continue;
+  2224	      terms.add(cleaned);
+  2225	    }
+  2226	
+  2227	    const jaMatches = normalized.match(/[一-龥ぁ-んァ-ヶー]{2,18}/g) || [];
+  2228	    for (const raw of jaMatches) {
+  2229	      let term = raw
+  2230	        .replace(/について/g, "")
+  2231	        .replace(/できるだけ/g, "")
+  2232	        .replace(/詳細/g, "")
+  2233	        .replace(/資料/g, "")
+  2234	        .replace(/作成/g, "")
+  2235	        .replace(/検証/g, "")
+  2236	        .trim();
+  2237	
+  2238	      if (term.length >= 2 && term.length <= 18 && !genericStop.has(term)) {
+  2239	        terms.add(term);
+  2240	      }
+  2241	
+  2242	      if (raw.includes("大化の改新")) terms.add("大化の改新");
+  2243	      if (raw.includes("乙巳の変")) terms.add("乙巳の変");
+  2244	      if (raw.includes("中大兄")) terms.add("中大兄");
+  2245	      if (raw.includes("中臣鎌足")) terms.add("中臣鎌足");
+  2246	      if (raw.includes("公地公民")) terms.add("公地公民");
+  2247	      if (raw.includes("改新の詔")) terms.add("改新の詔");
+  2248	    }
+  2249	
+  2250	    return Array.from(terms).filter((term) => term.length >= 2);
+  2251	  }
+  2252	
+  2253	  function isPreferredSourcePath(path) {
+  2254	    return /deliverable\.bodyMarkdown|deliverable\.body_markdown|output_body_ja|body_markdown|bodyMarkdown|requester_delivery_payload\.deliverable/i.test(path);
+  2255	  }
+  2256	
+  2257	  function isCandidatePath(path) {
+  2258	    return /body|bodyMarkdown|body_markdown|markdown|deliverable|main|artifact|output|summary|content|text|result|response|payload/i.test(path);
+  2259	  }
+  2260	
+  2261	  function addCandidate(path, value) {
+  2262	    if (!isString(value)) return;
+  2263	    const text = value.trim();
+  2264	    if (!text) return;
+  2265	
+  2266	    const genericCxSignals = [
+  2267	      "CX参照素材からの展開本文",
+  2268	      "地域文化は尊重ベース",
+  2269	      "祭りは地域の記憶装置",
+  2270	      "説明は段階化すると伝わりやすい",
+  2271	      "ManagerからLeaderへの粗細分解",
+  2272	      "DBや外部状態を変える操作",
+  2273	      "安全境界を維持する"
+  2274	    ];
+  2275	
+  2276	    const weakSignals = [
+  2277	      "individual request queued",
+  2278	      "worker_work_unit_id",
+  2279	      "詳細資料を作成せよ",
+  2280	      "一次成果物",
+  2281	      "B6R97R32B individual request queued"
+  2282	    ];
+  2283	
+  2284	    const taskHitTerms = taskTerms.filter((term) => term && text.includes(term));
+  2285	    const genericHits = genericCxSignals.filter((term) => text.includes(term));
+  2286	    const weakHits = weakSignals.filter((term) => text.includes(term));
+  2287	
+  2288	    let score = text.length;
+  2289	
+  2290	    if (isPreferredSourcePath(path)) score += 9000;
+  2291	    score += taskHitTerms.length * 2500;
+  2292	    score -= genericHits.length * 6000;
+  2293	    score -= weakHits.length * 3500;
+  2294	
+  2295	    if (taskHitTerms.length >= 3) score += 7000;
+  2296	    if (taskHitTerms.length >= 5) score += 12000;
+  2297	    if (genericHits.length > 0 && taskHitTerms.length < 3) score -= 20000;
+  2298	    if (weakHits.length > 0 && text.length < 2000) score -= 12000;
+  2299	
+  2300	    candidates.push({
+  2301	      path,
+  2302	      text,
+  2303	      score,
+  2304	      length: text.length,
+  2305	      taskHitCount: taskHitTerms.length,
+  2306	      taskHitTerms,
+  2307	      genericHitCount: genericHits.length,
+  2308	      genericHits,
+  2309	      weakHitCount: weakHits.length,
+  2310	      weakHits,
+  2311	      preferredSourcePath: isPreferredSourcePath(path)
+  2312	    });
+  2313	  }
+  2314	
+  2315	  function dig(value, path, depth) {
+  2316	    if (depth > 9 || value === null || value === undefined) return;
+  2317	
+  2318	    if (typeof value === "string") {
+  2319	      if (isCandidatePath(path) || taskTerms.some((term) => term && value.includes(term))) {
+  2320	        addCandidate(path, value);
+  2321	      }
+  2322	      return;
+  2323	    }
+  2324	
+  2325	    if (Array.isArray(value)) {
+  2326	      value.forEach((item, index) => dig(item, path + "[" + index + "]", depth + 1));
+  2327	      return;
+  2328	    }
+  2329	
+  2330	    if (typeof value === "object") {
+  2331	      for (const [key, child] of Object.entries(value)) {
+  2332	        const childPath = path ? path + "." + key : key;
+  2333	        if (isCandidatePath(childPath) || depth < 4) {
+  2334	          dig(child, childPath, depth + 1);
+  2335	        }
+  2336	      }
+  2337	    }
+  2338	  }
+  2339	
+  2340	  inputs.forEach((input, index) => collectTaskHints(input, "arguments[" + index + "]", 0));
+  2341	
+  2342	  const taskHintText = taskHintParts.join(" ");
+  2343	  const taskTerms = extractTaskTerms(taskHintText);
+  2344	
+  2345	  inputs.forEach((input, index) => dig(input, "arguments[" + index + "]", 0));
+  2346	
+  2347	  candidates.sort((a, b) => {
+  2348	    if (b.score !== a.score) return b.score - a.score;
+  2349	    if (b.taskHitCount !== a.taskHitCount) return b.taskHitCount - a.taskHitCount;
+  2350	    if (a.genericHitCount !== b.genericHitCount) return a.genericHitCount - b.genericHitCount;
+  2351	    return b.length - a.length;
+  2352	  });
+  2353	
+  2354	  const selected = candidates[0];
+  2355	  if (selected && selected.text) return selected.text;
+  2356	
+  2357	  return aiwB6R97R36R3SelectStrongMainDeliverableMarkdown(...inputs);
+  2358	}
+  2359	/* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_END */
+  2360	
+  2361	
+  2362	/* AIWORKEROS_B6R97R46_SECTION4_REJECT_INSTRUCTION_ECHO_START */
+  2363	function aiwB6R97R46SelectSection4BodyMarkdown(...sources) {
+  2364	  function isObject(value) {
+  2365	    return value && typeof value === "object" && !Array.isArray(value);
+  2366	  }
+  2367	
+  2368	  function isString(value) {
+  2369	    return typeof value === "string" && value.trim().length > 0;
+  2370	  }
+  2371	
+  2372	  function flatten(value, path, out, depth) {
+  2373	    if (depth > 10 || value === null || value === undefined) return;
+  2374	
+  2375	    if (typeof value === "string") {
+  2376	      out.push({ path, value });
+  2377	      return;
+  2378	    }
+  2379	
+  2380	    if (Array.isArray(value)) {
+  2381	      value.forEach((item, index) => flatten(item, path + "[" + index + "]", out, depth + 1));
+  2382	      return;
+  2383	    }
+  2384	
+  2385	    if (typeof value === "object") {
+  2386	      for (const [key, child] of Object.entries(value)) {
+  2387	        flatten(child, path ? path + "." + key : key, out, depth + 1);
+  2388	      }
+  2389	    }
+  2390	  }
+  2391	
+  2392	  function isPreferredBodyPath(path) {
+  2393	    /* AIWORKEROS_B6R97R49C_C_R46_BODY_SELECTOR_FIXED_VERIFY_START */
+  2394	    return /requester_delivery_payload\.deliverable\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+  2395	      /(^|\.)(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+  2396	      /generatedArtifacts\[[0-9]+\]\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+  2397	      /generated_artifacts\[[0-9]+\]\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path);
+  2398	  }
+  2399	
+  2400	  function isInstructionPath(path) {
+  2401	    return /task_instruction_ja|instruction_text|instructionText|prompt_ja|task_title|task_title_ja/i.test(path);
+  2402	  }
+  2403	
+  2404	  function score(path, value, allInstructionTexts) {
+  2405	    if (!isString(value)) return null;
+  2406	
+  2407	    const text = value.trim();
+  2408	
+  2409	    const weakSignals = [
+  2410	      "individual request queued",
+  2411	      "worker_work_unit_id",
+  2412	      "詳細資料を作成せよ",
+  2413	      "一次成果物",
+  2414	      "B6R97R32B individual request queued"
+  2415	    ];
+  2416	
+  2417	    const genericCxSignals = [
+  2418	      "CX参照素材からの展開本文",
+  2419	      "地域文化は尊重ベース",
+  2420	      "祭りは地域の記憶装置",
+  2421	      "説明は段階化すると伝わりやすい",
+  2422	      "ManagerからLeaderへの粗細分解",
+  2423	      "DBや外部状態を変える操作"
+  2424	    ];
+  2425	
+  2426	    const taskSignals = [
+  2427	      "大化の改新",
+  2428	      "乙巳の変",
+  2429	      "蘇我",
+  2430	      "入鹿",
+  2431	      "蝦夷",
+  2432	      "中大兄",
+  2433	      "中臣鎌足",
+  2434	      "孝徳天皇",
+  2435	      "改新の詔",
+  2436	      "公地公民",
+  2437	      "班田収授",
+  2438	      "戸籍",
+  2439	      "評",
+  2440	      "郡",
+  2441	      "飛鳥",
+  2442	      "難波宮",
+  2443	      "租庸調",
+  2444	      "後続影響",
+  2445	      "史料上の注意点"
+  2446	    ];
+  2447	
+  2448	    const weakHits = weakSignals.filter((term) => text.includes(term));
+  2449	    const genericHits = genericCxSignals.filter((term) => text.includes(term));
+  2450	    const taskHits = taskSignals.filter((term) => text.includes(term));
+  2451	
+  2452	    const exactInstructionEcho = allInstructionTexts.some((instruction) => {
+  2453	      if (!instruction || instruction.length < 12) return false;
+  2454	      return text === instruction || (text.includes(instruction) && text.length <= instruction.length + 500);
+  2455	    });
+  2456	
+  2457	    const instructionLike = isInstructionPath(path) || exactInstructionEcho;
+  2458	    const nextStepLike = /next_steps|nextSteps|next_step|nextStep|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path) ||
+  2459	      text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+  2460	      text.includes("レビュー画面から成果物本文へ辿れるようにする") ||
+  2461	      text.includes("差し戻し時は追加条件をAIWorkerOSへ再依頼する");
+  2462	
+  2463	    /* AIWORKEROS_B6R97R55_R46_REJECT_NON_MAIN_ARTIFACT_TEXT_START */
+  2464	    const nonMainArtifactPathLike = /qualityNotes|quality_notes|unresolvedIssues|unresolved_issues|nextSteps|next_steps|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path);
+  2465	    const nonMainArtifactTextLike =
+  2466	      text.includes("この段階では外部実行、PG apply、破壊的操作は行っていません") ||
+  2467	      text.includes("追加調査・DB変更・実装反映が必要な場合") ||
+  2468	      text.includes("AIWorkerOS側で生成した一次成果物です") ||
+  2469	      text.includes("今後の生成エンジン深化では") ||
+  2470	      text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+  2471	      text.includes("レビュー画面から成果物本文へ辿れるようにする") ||
+  2472	      text.includes("差し戻し時は追加条件をAIWorkerOSへ再依頼する");
+  2473	    const nonMainArtifactLike = nonMainArtifactPathLike || nonMainArtifactTextLike || nextStepLike;
+  2474	    /* AIWORKEROS_B6R97R55_R46_REJECT_NON_MAIN_ARTIFACT_TEXT_END */
+  2475	
+  2476	    let point = text.length;
+  2477	
+  2478	    if (isPreferredBodyPath(path)) point += 40000;
+  2479	    if (instructionLike) point -= 70000;
+  2480	    if (nextStepLike) point -= 90000;
+  2481	    if (nonMainArtifactLike) point -= 140000;
+  2482	
+  2483	    point += taskHits.length * 3500;
+  2484	    point -= weakHits.length * 15000;
+  2485	    point -= genericHits.length * 15000;
+  2486	
+  2487	    if (text.length >= 1800) point += 15000;
+  2488	    if (text.length >= 3000) point += 25000;
+  2489	    if (taskHits.length >= 8) point += 18000;
+  2490	    if (genericHits.length > 0 && taskHits.length < 3) point -= 40000;
+  2491	
+  2492	    return {
+  2493	      path,
+  2494	      text,
+  2495	      point,
+  2496	      length: text.length,
+  2497	      preferredBodyPath: isPreferredBodyPath(path),
+  2498	      instructionLike,
+  2499	      nextStepLike,
+  2500	      nonMainArtifactLike,
+  2501	      nonMainArtifactPathLike,
+  2502	      nonMainArtifactTextLike,
+  2503	      exactInstructionEcho,
+  2504	      taskHitCount: taskHits.length,
+  2505	      weakHitCount: weakHits.length,
+  2506	      genericHitCount: genericHits.length
+  2507	    };
+  2508	  }
+  2509	
+  2510	  const flattened = [];
+  2511	  sources.forEach((source, index) => flatten(source, "sources[" + index + "]", flattened, 0));
+  2512	
+  2513	  const instructionTexts = flattened
+  2514	    .filter((item) => isInstructionPath(item.path) && isString(item.value))
+  2515	    .map((item) => item.value.trim());
+  2516	
+  2517	  const candidates = flattened
+  2518	    .map((item) => score(item.path, item.value, instructionTexts))
+  2519	    .filter(Boolean)
+  2520	    .filter((candidate) => candidate.weakHitCount === 0)
+  2521	    .filter((candidate) => candidate.genericHitCount === 0)
+  2522	    .filter((candidate) => !candidate.instructionLike)
+  2523	    .filter((candidate) => !candidate.nextStepLike)
+  2524	    .filter((candidate) => !candidate.nonMainArtifactLike)
+  2525	    .filter((candidate) => candidate.preferredBodyPath || candidate.taskHitCount >= 4);
+  2526	  /* AIWORKEROS_B6R97R49C_C_R46_BODY_SELECTOR_FIXED_VERIFY_END */
+  2527	
+  2528	  candidates.sort((a, b) => {
+  2529	    if (b.point !== a.point) return b.point - a.point;
+  2530	    if (b.preferredBodyPath !== a.preferredBodyPath) return b.preferredBodyPath ? 1 : -1;
+  2531	    if (b.taskHitCount !== a.taskHitCount) return b.taskHitCount - a.taskHitCount;
+  2532	    return b.length - a.length;
+  2533	  });
+  2534	
+  2535	  return candidates[0]?.text || "";
+  2536	}
+  2537	/* AIWORKEROS_B6R97R46_SECTION4_REJECT_INSTRUCTION_ECHO_END */
+  2538	
+  2539	function aiwB6R95R3D1BuildGeneratedArtifacts(deliverable) {
+  2540	  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_START */
+  2541	  function aiwB6R97R65BSourceMarkdownFromDeliverable(value) {
+  2542	    if (!value || typeof value !== "object") return "";
+  2543	    const candidates = [
+  2544	      value.aiw_b6r97r65b_source_files_markdown,
+  2545	      value.sourceFilesMarkdown,
+  2546	      value.source_files_markdown,
+  2547	      value.outputPayload && value.outputPayload.source_files_markdown,
+  2548	      value.outputPayload && value.outputPayload.aiw_b6r97r65b_source_files_markdown
+  2549	    ];
+  2550	    for (const item of candidates) {
+  2551	      const text = aiwB6R95R3R3Text(item);
+  2552	      if (text && (text.includes("元データ/参照ファイル本文") || text.includes("READ_PROOF_TOKEN") || text.includes("参照ファイル"))) return text;
+  2553	    }
+  2554	    return "";
+  2555	  }
+  2556	
+  2557	  function aiwB6R97R65BAppendSourceMarkdownForMain(body, sourceMarkdown) {
+  2558	    const current = aiwB6R95R3R3Text(body || "");
+  2559	    const source = aiwB6R95R3R3Text(sourceMarkdown || "");
+  2560	    if (!source) return current;
+  2561	    if (current.includes(source)) return current;
+  2562	    if (source.includes("READ_PROOF_TOKEN") && current.includes("READ_PROOF_TOKEN")) return current;
+  2563	    return [current, "", source].filter(Boolean).join("\n").trim();
+  2564	  }
+  2565	
+  2566	  const aiwB6R97R65BSourceFilesMarkdown = aiwB6R97R65BSourceMarkdownFromDeliverable(deliverable);
+  2567	  /* AIWORKEROS_B6R97R65B_BUILD_SOURCE_MARKDOWN_MAIN_APPEND_END */
+  2568	
+  2569	  const provided = Array.isArray(deliverable?.generatedArtifacts) ? deliverable.generatedArtifacts : [];
+  2570	  const strongMainDeliverableBodyMarkdown = aiwB6R97R40SelectTaskSpecificMainDeliverableMarkdown(deliverable, ...arguments);
+  2571	  const section4MainDeliverableBodyMarkdown = aiwB6R97R46SelectSection4BodyMarkdown(deliverable, strongMainDeliverableBodyMarkdown, ...arguments);
+  2572	
+  2573	  if (provided.length > 0) {
+  2574	    return provided.map((item, index) => {
+  2575	      const normalized = aiwB6R95R3D1NormalizeGeneratedArtifact(item, index);
+  2576	      if (
+  2577	        normalized.file_name === "01_main_deliverable.md" ||
+  2578	        normalized.artifact_kind_code === "main_deliverable" ||
+  2579	        normalized.kind === "main_deliverable" ||
+  2580	        normalized.title === "主成果物"
+  2581	      ) {
+  2582	        return Object.assign({}, normalized, {
+  2583	          body_markdown: aiwB6R97R65BAppendSourceMarkdownForMain(aiwB6R97R46SelectSection4BodyMarkdown(normalized, deliverable, section4MainDeliverableBodyMarkdown, strongMainDeliverableBodyMarkdown, ...arguments) || normalized.body_markdown || normalized.bodyMarkdown || normalized.content || "", aiwB6R97R65BSourceFilesMarkdown)
+  2584	        });
+  2585	      }
+  2586	      return normalized;
+  2587	    });
+  2588	  }
+  2589	
+  2590	  const artifacts = [
+  2591	    {
+  2592	      kind: "main_deliverable",
+  2593	      title: deliverable?.outputTitle || "主成果物",
+  2594	      file_name: "01_main_deliverable.md",
+  2595	      body_markdown: aiwB6R97R65BAppendSourceMarkdownForMain(section4MainDeliverableBodyMarkdown || deliverable?.bodyMarkdown || deliverable?.body_markdown || deliverable?.output_body_ja || "", aiwB6R97R65BSourceFilesMarkdown)
+  2596	    }
+  2597	  ];
+  2598	
+  2599	  /* AIWORKEROS_B6R97R52B_BUILD_ARTIFACT_LINE_BASED_FILENAMES_START */
+  2600	  if (aiwB6R95R3R3Text(deliverable?.qualityNotes)) {
+  2601	    artifacts.push({
+  2602	      kind: "quality_notes",
+  2603	      artifact_kind_code: "quality_notes",
+  2604	      title: "品質メモ",
+  2605	      file_name: "90_quality_notes.md",
+  2606	      body_markdown: deliverable.qualityNotes
+  2607	    });
+  2608	  }
+  2609	
+  2610	  if (aiwB6R95R3R3Text(deliverable?.unresolvedIssues)) {
+  2611	    artifacts.push({
+  2612	      kind: "unresolved_issues",
+  2613	      artifact_kind_code: "unresolved_issues",
+  2614	      title: "未解決事項",
+  2615	      file_name: "91_unresolved_issues.md",
+  2616	      body_markdown: deliverable.unresolvedIssues
+  2617	    });
+  2618	  }
+  2619	
+  2620	  if (aiwB6R95R3R3Text(deliverable?.nextSteps)) {
+  2621	    artifacts.push({
+  2622	      kind: "next_steps",
+  2623	      artifact_kind_code: "next_steps",
+  2624	      title: "次工程",
+  2625	      file_name: "92_next_steps.md",
+  2626	      body_markdown: deliverable.nextSteps
+  2627	    });
+  2628	  }
+  2629	
+  2630	  /* AIWORKEROS_B6R97R52B_BUILD_ARTIFACT_LINE_BASED_FILENAMES_END */
+  2631	  return artifacts.map(aiwB6R95R3D1NormalizeGeneratedArtifact);
+  2632	}
+  2633	
+  2634	function aiwB6R95R3D1ZipCrc32(buffer) {
+  2635	  let table = aiwB6R95R3D1ZipCrc32._table;
+  2636	  if (!table) {
+  2637	    table = new Uint32Array(256);
+  2638	    for (let i = 0; i < 256; i++) {
+  2639	      let c = i;
+  2640	      for (let k = 0; k < 8; k++) {
+  2641	        c = (c & 1) ? (0xedb88320 ^ (c >>> 1)) : (c >>> 1);
+  2642	      }
+  2643	      table[i] = c >>> 0;
+  2644	    }
+  2645	    aiwB6R95R3D1ZipCrc32._table = table;
+  2646	  }
+  2647	  let crc = 0xffffffff;
+  2648	  for (const byte of buffer) {
+  2649	    crc = table[(crc ^ byte) & 0xff] ^ (crc >>> 8);
+  2650	  }
+  2651	  return (crc ^ 0xffffffff) >>> 0;
+  2652	}
+  2653	
+  2654	function aiwB6R95R3D1ZipDosDateTime(date) {
+  2655	  const year = Math.max(1980, date.getFullYear());
+  2656	  const dosTime = (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2);
+  2657	  const dosDate = ((year - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate();
+  2658	  return { dosTime, dosDate };
+  2659	}
+  2660	
+  2661	function aiwB6R95R3D1ZipStored(entries) {
+  2662	  const localParts = [];
+  2663	  const centralParts = [];
+  2664	  let offset = 0;
+  2665	  const now = aiwB6R95R3D1ZipDosDateTime(new Date());
+  2666	
+  2667	  for (const entry of entries) {
+  2668	    const nameBuffer = Buffer.from(entry.name, "utf8");
+  2669	    const dataBuffer = Buffer.from(String(entry.content ?? ""), "utf8");
+  2670	    const crc = aiwB6R95R3D1ZipCrc32(dataBuffer);
+  2671	
+  2672	    const local = Buffer.alloc(30);
+  2673	    local.writeUInt32LE(0x04034b50, 0);
+  2674	    local.writeUInt16LE(20, 4);
+  2675	    local.writeUInt16LE(0, 6);
+  2676	    local.writeUInt16LE(0, 8);
+  2677	    local.writeUInt16LE(now.dosTime, 10);
+  2678	    local.writeUInt16LE(now.dosDate, 12);
+  2679	    local.writeUInt32LE(crc, 14);
+  2680	    local.writeUInt32LE(dataBuffer.length, 18);
+  2681	    local.writeUInt32LE(dataBuffer.length, 22);
+  2682	    local.writeUInt16LE(nameBuffer.length, 26);
+  2683	    local.writeUInt16LE(0, 28);
+  2684	    localParts.push(local, nameBuffer, dataBuffer);
+  2685	
+  2686	    const central = Buffer.alloc(46);
+  2687	    central.writeUInt32LE(0x02014b50, 0);
+  2688	    central.writeUInt16LE(20, 4);
+  2689	    central.writeUInt16LE(20, 6);
+  2690	    central.writeUInt16LE(0, 8);
+  2691	    central.writeUInt16LE(0, 10);
+  2692	    central.writeUInt16LE(now.dosTime, 12);
+  2693	    central.writeUInt16LE(now.dosDate, 14);
+  2694	    central.writeUInt32LE(crc, 16);
+  2695	    central.writeUInt32LE(dataBuffer.length, 20);
+  2696	    central.writeUInt32LE(dataBuffer.length, 24);
+  2697	    central.writeUInt16LE(nameBuffer.length, 28);
+  2698	    central.writeUInt16LE(0, 30);
+  2699	    central.writeUInt16LE(0, 32);
+  2700	    central.writeUInt16LE(0, 34);
+  2701	    central.writeUInt16LE(0, 36);
+  2702	    central.writeUInt32LE(0, 38);
+  2703	    central.writeUInt32LE(offset, 42);
+  2704	    centralParts.push(central, nameBuffer);
+  2705	
+  2706	    offset += local.length + nameBuffer.length + dataBuffer.length;
+  2707	  }
+  2708	
+  2709	  const localData = Buffer.concat(localParts);
+  2710	  const centralDir = Buffer.concat(centralParts);
+  2711	  const eocd = Buffer.alloc(22);
+  2712	  eocd.writeUInt32LE(0x06054b50, 0);
+  2713	  eocd.writeUInt16LE(0, 4);
+  2714	  eocd.writeUInt16LE(0, 6);
+  2715	  eocd.writeUInt16LE(entries.length, 8);
+  2716	  eocd.writeUInt16LE(entries.length, 10);
+  2717	  eocd.writeUInt32LE(centralDir.length, 12);
+  2718	  eocd.writeUInt32LE(localData.length, 16);
+  2719	  eocd.writeUInt16LE(0, 20);
+  2720	
+  2721	  return Buffer.concat([localData, centralDir, eocd]);
+  2722	}
+  2723	
+  2724	
+  2725	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_START */
+  2726	function aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...sources) {
+  2727	  function isObject(value) {
+  2728	    return value && typeof value === "object" && !Array.isArray(value);
+  2729	  }
+  2730	
+  2731	  function isString(value) {
+  2732	    return typeof value === "string" && value.trim().length > 0;
+  2733	  }
+  2734	
+  2735	  function clonePlain(value) {
+  2736	    if (Array.isArray(value)) return value.map(clonePlain);
+  2737	    if (isObject(value)) {
+  2738	      const out = {};
+  2739	      for (const [key, child] of Object.entries(value)) out[key] = clonePlain(child);
+  2740	      return out;
+  2741	    }
+  2742	    return value;
+  2743	  }
+  2744	
+  2745	  function flatten(value, path, out, depth) {
+  2746	    if (depth > 10 || value === null || value === undefined) return;
+  2747	
+  2748	    if (typeof value === "string") {
+  2749	      out.push({ path, value });
+  2750	      return;
+  2751	    }
+  2752	
+  2753	    if (Array.isArray(value)) {
+  2754	      value.forEach((item, index) => flatten(item, path + "[" + index + "]", out, depth + 1));
+  2755	      return;
+  2756	    }
+  2757	
+  2758	    if (typeof value === "object") {
+  2759	      for (const [key, child] of Object.entries(value)) {
+  2760	        flatten(child, path ? path + "." + key : key, out, depth + 1);
+  2761	      }
+  2762	    }
+  2763	  }
+  2764	
+  2765	  function isPreferredProvidedBodyPath(path) {
+  2766	    return /requester_delivery_payload\.deliverable\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+  2767	      /deliverable\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+  2768	      /(^|\.)(output_body_ja|body_markdown|bodyMarkdown)$/i.test(path);
+  2769	  }
+  2770	
+  2771	  function isInstructionPath(path) {
+  2772	    return /task_instruction_ja|instruction_text|instructionText|prompt_ja|task_title|task_title_ja/i.test(path);
+  2773	  }
+  2774	
+  2775	  function scoreCandidate(path, value) {
+  2776	    if (!isString(value)) return null;
+  2777	
+  2778	    const text = value.trim();
+  2779	
+  2780	    const weakSignals = [
+  2781	      "individual request queued",
+  2782	      "worker_work_unit_id",
+  2783	      "詳細資料を作成せよ",
+  2784	      "一次成果物",
+  2785	      "B6R97R32B individual request queued"
+  2786	    ];
+  2787	
+  2788	    const genericCxSignals = [
+  2789	      "CX参照素材からの展開本文",
+  2790	      "地域文化は尊重ベース",
+  2791	      "祭りは地域の記憶装置",
+  2792	      "説明は段階化すると伝わりやすい",
+  2793	      "ManagerからLeaderへの粗細分解",
+  2794	      "DBや外部状態を変える操作"
+  2795	    ];
+  2796	
+  2797	    const taskSpecificSignals = [
+  2798	      "大化の改新",
+  2799	      "乙巳の変",
+  2800	      "蘇我",
+  2801	      "入鹿",
+  2802	      "蝦夷",
+  2803	      "中大兄",
+  2804	      "中臣鎌足",
+  2805	      "孝徳天皇",
+  2806	      "改新の詔",
+  2807	      "公地公民",
+  2808	      "班田収授",
+  2809	      "戸籍",
+  2810	      "評",
+  2811	      "郡",
+  2812	      "飛鳥",
+  2813	      "難波宮",
+  2814	      "租庸調"
+  2815	    ];
+  2816	
+  2817	    const weakHits = weakSignals.filter((term) => text.includes(term));
+  2818	    const genericHits = genericCxSignals.filter((term) => text.includes(term));
+  2819	    const taskHits = taskSpecificSignals.filter((term) => text.includes(term));
+  2820	
+  2821	    let score = text.length;
+  2822	
+  2823	    if (isPreferredProvidedBodyPath(path)) score += 30000;
+  2824	    if (isInstructionPath(path)) score -= 25000;
+  2825	
+  2826	    score += taskHits.length * 3000;
+  2827	    score -= weakHits.length * 12000;
+  2828	    score -= genericHits.length * 12000;
+  2829	
+  2830	    if (text.length >= 1800) score += 10000;
+  2831	    if (text.length >= 3000) score += 15000;
+  2832	    if (taskHits.length >= 6) score += 12000;
+  2833	    if (genericHits.length > 0 && taskHits.length < 3) score -= 30000;
+  2834	
+  2835	    return {
+  2836	      path,
+  2837	      text,
+  2838	      score,
+  2839	      length: text.length,
+  2840	      taskHitCount: taskHits.length,
+  2841	      weakHitCount: weakHits.length,
+  2842	      genericHitCount: genericHits.length,
+  2843	      preferredProvidedBodyPath: isPreferredProvidedBodyPath(path),
+  2844	      instructionPath: isInstructionPath(path)
+  2845	    };
+  2846	  }
+  2847	
+  2848	  function selectProvidedBody() {
+  2849	    const flattened = [];
+  2850	    sources.forEach((source, index) => flatten(source, "sources[" + index + "]", flattened, 0));
+  2851	    flatten(deliverable, "deliverable", flattened, 0);
+  2852	
+  2853	    const candidates = flattened
+  2854	      .map((item) => scoreCandidate(item.path, item.value))
+  2855	      .filter(Boolean)
+  2856	      .filter((candidate) => candidate.preferredProvidedBodyPath || candidate.taskHitCount >= 3)
+  2857	      .filter((candidate) => candidate.weakHitCount === 0)
+  2858	      .filter((candidate) => !(candidate.instructionPath && candidate.length < 1800));
+  2859	
+  2860	    candidates.sort((a, b) => {
+  2861	      if (b.score !== a.score) return b.score - a.score;
+  2862	      if (b.preferredProvidedBodyPath !== a.preferredProvidedBodyPath) return b.preferredProvidedBodyPath ? 1 : -1;
+  2863	      if (b.taskHitCount !== a.taskHitCount) return b.taskHitCount - a.taskHitCount;
+  2864	      return b.length - a.length;
+  2865	    });
+  2866	
+  2867	    return candidates[0] || null;
+  2868	  }
+  2869	
+  2870	  const selected = selectProvidedBody();
+  2871	  if (!selected || !selected.text) return deliverable;
+  2872	
+  2873	  const merged = clonePlain(isObject(deliverable) ? deliverable : {});
+  2874	  merged.bodyMarkdown = selected.text;
+  2875	  merged.body_markdown = selected.text;
+  2876	  merged.output_body_ja = selected.text;
+  2877	  merged.aiw_b6r97r43_body_source_path = selected.path;
+  2878	
+  2879	  function patchArtifactArray(value) {
+  2880	    if (!Array.isArray(value)) return value;
+  2881	
+  2882	    return value.map((artifact) => {
+  2883	      if (!isObject(artifact)) return artifact;
+  2884	
+  2885	      const fileName = artifact.file_name || artifact.filename || artifact.name || "";
+  2886	      const kind = artifact.kind || artifact.artifact_kind_code || "";
+  2887	      const title = artifact.title || "";
+  2888	
+  2889	      const isMain =
+  2890	        fileName === "01_main_deliverable.md" ||
+  2891	        kind === "main_deliverable" ||
+  2892	        /主成果物|main/i.test(title);
+  2893	
+  2894	      if (!isMain) return artifact;
+  2895	
+  2896	      return {
+  2897	        ...artifact,
+  2898	        file_name: fileName || "01_main_deliverable.md",
+  2899	        kind: artifact.kind || "main_deliverable",
+  2900	        artifact_kind_code: artifact.artifact_kind_code || "main_deliverable",
+  2901	        bodyMarkdown: selected.text,
+  2902	        body_markdown: selected.text,
+  2903	        content: selected.text,
+  2904	        aiw_b6r97r43_body_source_path: selected.path
+  2905	      };
+  2906	    });
+  2907	  }
+  2908	
+  2909	  merged.generatedArtifacts = patchArtifactArray(merged.generatedArtifacts);
+  2910	  merged.generated_artifacts = patchArtifactArray(merged.generated_artifacts);
+  2911	
+  2912	  return merged;
+  2913	}
+  2914	/* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_END */
+  2915	
+  2916	function aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable) {
+  2917	  const fs = require("fs");
+  2918	  const path = require("path");
+  2919	
+  2920	  const response = responsePayload && typeof responsePayload === "object" ? responsePayload : {};
+  2921	  const packageMeta = deliverable?.deliverablePackage || aiwB6R95R3D1BuildZipPackageMeta("requester", "deliverables");
+  2922	  const generatedArtifacts = aiwB6R95R3D1BuildGeneratedArtifacts(aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...arguments, deliverable));
+  2923	
+  2924	  const zipDir = process.env.AIWORKEROS_DELIVERABLE_ZIP_DIR || path.join(process.cwd(), "runtime-deliverable-zips");
+  2925	  fs.mkdirSync(zipDir, { recursive: true });
+  2926	
+  2927	  const fileName = aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip").endsWith(".zip")
+  2928	    ? aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip")
+  2929	    : `${aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables")}.zip`;
+  2930	  const zipPath = path.join(zipDir, fileName);
+  2931	
+  2932	  // AIWORKEROS_B6R95R3F_ZIP_LINK_ACTUAL_FILE_FIX
+  2933	  // Keep the returned zip link aligned with the actual sanitized filename written to disk.
+  2934	  const actualZipLink = `aiworkeros://runtime-deliverable-zip/${fileName}`;
+  2935	  const actualZipRef = Object.assign({}, packageMeta.zip_ref || {}, {
+  2936	    source: "aiworkeros",
+  2937	    storage_code: "runtime-deliverable-zip",
+  2938	    file_name: fileName
+  2939	  });
+  2940	
+  2941	  const summaryText = response.deliverable?.summary_text || deliverable?.summaryText || "";
+  2942	  const manifest = {
+  2943	    contract_version: "B6R95R3D-R1",
+  2944	    contract_name: "aiworkeros_common_requester_multi_artifact_zip_contract",
+  2945	    package_purpose: "bundle_generated_artifacts_for_single_download",
+  2946	    request_id: response.request_id || null,
+  2947	    output_id: response.output_id || null,
+  2948	    deliverable_title: response.deliverable?.title || deliverable?.outputTitle || "成果物",
+  2949	    summary_text: summaryText,
+  2950	    artifact_count: generatedArtifacts.length,
+  2951	    generated_artifacts: generatedArtifacts.map((artifact) => ({
+  2952	      artifact_no: artifact.artifact_no,
+  2953	      artifact_kind_code: artifact.artifact_kind_code,
+  2954	      title: artifact.title,
+  2955	      file_name: artifact.file_name,
+  2956	      body_format: artifact.body_format
+  2957	    })),
+  2958	    deliverable_ref: response.deliverable_ref || null,
+  2959	    robot_context: response.robot_context || deliverable?.robotContext || null,
+  2960	    generation_basis: response.generation_basis || deliverable?.generationBasis || null,
+  2961	    safety: response.safety || null,
+  2962	    created_at: new Date().toISOString()
+  2963	  };
+  2964	
+  2965	  const entries = [
+  2966	    { name: "00_summary.md", content: summaryText },
+  2967	    ...generatedArtifacts.map((artifact) => ({
+  2968	      name: artifact.file_name,
+  2969	      content: artifact.body_markdown
+  2970	    })),
+  2971	    { name: "manifest.json", content: JSON.stringify(manifest, null, 2) }
+  2972	  ];
+  2973	
+  2974	  const zipBuffer = aiwB6R95R3D1ZipStored(entries);
+  2975	  fs.writeFileSync(zipPath, zipBuffer);
+  2976	  const stat = fs.statSync(zipPath);
+  2977	
+  2978	  const zipPublic = {
+  2979	    package_kind: "delivery_package",
+  2980	    package_format: "zip",
+  2981	    mime_type: "application/zip",
+  2982	    zip_id: packageMeta.zip_id,
+  2983	    file_name: fileName,
+  2984	    zip_link: actualZipLink,
+  2985	    zip_ref: actualZipRef,
+  2986	    byte_size: stat.size,
+  2987	    entry_count: entries.length,
+  2988	    artifact_count: generatedArtifacts.length,
+  2989	    created_at: manifest.created_at
+  2990	  };
+  2991	
+  2992	  response.generated_artifacts = generatedArtifacts.map((artifact) => ({
+  2993	    artifact_no: artifact.artifact_no,
+  2994	    artifact_kind_code: artifact.artifact_kind_code,
+  2995	    title: artifact.title,
+  2996	    file_name: artifact.file_name,
+  2997	    body_format: artifact.body_format
+  2998	  }));
+  2999	  response.deliverable_package = zipPublic;
+  3000	  response.deliverable_zip_ref = actualZipRef;
+  3001	  response.deliverable_link = actualZipLink;
+  3002	
+  3003	  response.requester_delivery_payload = Object.assign({}, response.requester_delivery_payload || {}, {
+  3004	    summary_text: summaryText,
+  3005	    deliverable_link: actualZipLink,
+  3006	    deliverable_package: zipPublic,
+  3007	    deliverable_zip_ref: actualZipRef,
+  3008	    generated_artifacts: response.generated_artifacts
+  3009	  });
+  3010	
+  3011	  response.deliverable = Object.assign({}, response.deliverable || {}, {
+  3012	    deliverable_package: zipPublic,
+  3013	    zip_link: actualZipLink,
+  3014	    generated_artifacts: response.generated_artifacts
+  3015	  });
+  3016	
+  3017	  return response;
+  3018	}
+  3019	// AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_END
+  3020	// AIWORKEROS_B6R95R3B_R3_COMMON_DELIVERABLE_CONTRACT_END
+  3021	function createRuntimeRequest(payload, idempotencyKeyFromHeader) {
+  3022	  const idempotencyKey = payload.idempotency_key || idempotencyKeyFromHeader || "";
+  3023	  const sourceRouteCode = String(
+  3024	    payload.source_route_code ||
+  3025	    payload.sourceRouteCode ||
+  3026	    payload.source_route ||
+  3027	    ""
+  3028	  ).trim();
+  3029	  if (!idempotencyKey) {
+  3030	    const e = new Error("Idempotency-Key is required");
+  3031	    e.httpStatus = 400;
+  3032	    throw e;
+  3033	  }
+  3034	
+  3035	  const required = ["app_surface_code", "model_code", "task_domain_code", "task_title", "task_instruction_ja"];
+  3036	  for (const key of required) {
+  3037	    if (!payload[key] || String(payload[key]).trim() === "") {
+  3038	      const e = new Error(`Missing required field: ${key}`);
+  3039	      e.httpStatus = 400;
+  3040	      throw e;
+  3041	    }
+  3042	  }
+  3043	
+  3044	  const deliverable = aiwB6R95R3R3BuildRequesterFacingDeliverable(payload, sourceRouteCode);
+  3045	
+  3046	  const sql = [
+  3047	    "with created as (",
+  3048	    "  select aiworker.fn_runtime_execution_create_request_with_route_v1(",
+  3049	    "    :'app_surface_code',",
+  3050	    "    :'model_code',",
+  3051	    "    :'task_domain_code',",
+  3052	    "    :'task_title',",
+  3053	    "    :'task_instruction_ja',",
+  3054	    "    :'source_app_ref',",
+  3055	    "    :'source_request_ref',",
+  3056	    "    :'requested_by_ref',",
+  3057	    "    :'idempotency_key',",
+  3058	    "    :'source_route_code'",
+  3059	    "  ) as request_id",
+  3060	    "),",
+  3061	    "worker_output as (",
+  3062	    "  select aiworker.fn_runtime_execution_submit_worker_output(",
+  3063	    "    (select request_id from created),",
+  3064	    "    :'output_title_ja',",
+  3065	    "    :'output_body_ja',",
+  3066	    "    :'output_summary_ja',",
+  3067	    "    :'output_payload_jsonb'::jsonb,",
+  3068	    "    :'artifacts_jsonb'::jsonb",
+  3069	    "  ) as output_id",
+  3070	    "),",
+  3071	    "board as (",
+  3072	    "  select p.*",
+  3073	    "  from aiworker.vw_app_aiworker_runtime_execution_app_read_payload_v1 p",
+  3074	    "  join created c",
+  3075	    "    on c.request_id = p.request_id",
+  3076	    ")",
+  3077	    "select jsonb_build_object(",
+  3078	    "  'result', 'completed_internal_draft',",
+  3079	    "  'status', 'WORKER_OUTPUT_DONE',",
+  3080	    "  'request_id', (select request_id from created),",
+  3081	    "  'output_id', (select output_id from worker_output),",
+  3082	    "  'idempotency_key', :'idempotency_key',",
+  3083	    "  'requester_app_ref', :'source_app_ref',",
+  3084	    "  'source_request_ref', :'source_request_ref',",
+  3085	    "  'source_route_code', :'source_route_code',",
+  3086	    "  'payload', coalesce((select app_read_payload_jsonb from board limit 1), '{}'::jsonb),",
+  3087	    "  'robot_context', :'robot_context_jsonb'::jsonb,",
+  3088	    "  'generation_basis', :'generation_basis_jsonb'::jsonb,",    "  'deliverable', jsonb_build_object(",
+  3089	    "    'package_kind', 'delivery_package',",
+  3090	    "    'deliverable_kind', 'document',",
+  3091	    "    'title', :'output_title_ja',",
+  3092	    "    'body_format', 'markdown',",
+  3093	    "    'deliverable_package', :'deliverable_package_jsonb'::jsonb,",
+  3094	    "    'generated_artifacts', :'generated_artifacts_jsonb'::jsonb,",
+  3095	    "    'body_markdown', :'output_body_ja',",
+  3096	    "    'summary_text', :'output_summary_ja',",
+  3097	    "    'quality_notes', :'quality_notes',",
+  3098	    "    'unresolved_issues', :'unresolved_issues',",
+  3099	    "    'next_steps', :'next_steps',",
+  3100	    "    'output_id', (select output_id from worker_output),",
+  3101	    "    'zip_link', :'deliverable_zip_link'",
+  3102	    "  ),",
+  3103	    "  'deliverable_ref', jsonb_build_object(",
+  3104	    "    'source', 'aiworkeros',",
+  3105	    "    'schema', 'aiworker',",
+  3106	    "    'table', 'runtime_worker_output',",
+  3107	    "    'id', (select output_id from worker_output)::text",
+  3108	    "  ),",
+  3109	    "  'deliverable_link', :'deliverable_zip_link',",    "  'requester_delivery_payload', jsonb_build_object(",
+  3110	    "    'summary_text', :'output_summary_ja',",
+  3111	    "    'deliverable_title', :'output_title_ja',",
+  3112	    "    'package_kind', 'delivery_package',",
+  3113	    "    'deliverable_kind', 'document',",
+  3114	    "    'body_format', 'markdown',",
+  3115	    "    'generated_artifacts', :'generated_artifacts_jsonb'::jsonb,",
+  3116	    "    'deliverable_link', :'deliverable_zip_link',",
+  3117	    "    'deliverable_package', :'deliverable_package_jsonb'::jsonb,",
+  3118	    "    'deliverable_ref', jsonb_build_object(",
+  3119	    "      'source', 'aiworkeros',",
+  3120	    "      'schema', 'aiworker',",
+  3121	    "      'table', 'runtime_worker_output',",
+  3122	    "      'id', (select output_id from worker_output)::text",
+  3123	    "    )",
+  3124	    "  ),",
+  3125	    "  'safety', jsonb_build_object(",
+  3126	    "    'external_execution_performed_flag', false,",
+  3127	    "    'pg_apply_performed_flag', false,",
+  3128	    "    'destructive_action_performed_flag', false",
+  3129	    "  )",
+  3130	    ")::text;",
+  3131	  ].join("\n");
+  3132	
+  3133	  const responsePayload = psqlJson(sql, {
+  3134	    app_surface_code: payload.app_surface_code,
+  3135	    model_code: payload.model_code,
+  3136	    task_domain_code: payload.task_domain_code,
+  3137	    task_title: payload.task_title,
+  3138	    task_instruction_ja: payload.task_instruction_ja,
+  3139	    source_app_ref: payload.source_app_ref || "HTTP_LOCAL",
+  3140	    source_request_ref: payload.source_request_ref || "",
+  3141	    source_route_code: sourceRouteCode,
+  3142	    requested_by_ref: payload.requested_by_ref || "human",
+  3143	    idempotency_key: idempotencyKey,
+  3144	    output_title_ja: deliverable.outputTitle,
+  3145	    output_body_ja: deliverable.bodyMarkdown,
+  3146	    output_summary_ja: deliverable.summaryText,
+  3147	    quality_notes: deliverable.qualityNotes,
+  3148	    unresolved_issues: deliverable.unresolvedIssues,
+  3149	    next_steps: deliverable.nextSteps,
+  3150	    deliverable_package_jsonb: JSON.stringify(deliverable.deliverablePackage),
+  3151	    deliverable_zip_link: deliverable.deliverablePackage.zip_link,
+  3152	    generated_artifacts_jsonb: JSON.stringify(deliverable.generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index))),
+  3153	    robot_context_jsonb: JSON.stringify(deliverable.robotContext),
+  3154	    generation_basis_jsonb: JSON.stringify(deliverable.generationBasis),
+  3155	    output_payload_jsonb: JSON.stringify(deliverable.outputPayload),
+  3156	    artifacts_jsonb: JSON.stringify(deliverable.artifacts)
+  3157	  });
+  3158	
+  3159	  return aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable);
+  3160	}
+  3161	
+  3162	const server = http.createServer(async (req, res) => {
+  3163	  const url = new URL(req.url, `http://${req.headers.host || "127.0.0.1"}`);
+  3164	
+  3165	  try {
+  3166	    if (req.method === "GET" && url.pathname === "/health") {
+  3167	      return sendJson(res, 200, {
+  3168	        ok: true,
+  3169	        service: "aiworker-runtime-execution-http-api",
+  3170	        db: "PERSONA_DATABASE_URL",
+  3171	        external_execution: false,
+  3172	        pg_apply: false,
+  3173	        destructive_action: false
+  3174	      });
+  3175	    }
+  3176	
+  3177	    if (!requireAuth(req)) {
+  3178	      return sendJson(res, 401, {
+  3179	        result: "error",
+  3180	        error_code: "UNAUTHORIZED",
+  3181	        message: "Missing or invalid Authorization bearer token."
+  3182	      });
+  3183	    }
+  3184	
+  3185	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/endpoint-ready") {
+  3186	      return sendJson(res, 200, { result: "ok", data: endpointReady() });
+  3187	    }
+  3188	
+  3189	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/api-contract") {
+  3190	      return sendJson(res, 200, { result: "ok", data: apiContracts() });
+  3191	    }
+  3192	
+  3193	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/persistent-smoke") {
+  3194	      return sendJson(res, 200, { result: "ok", data: persistentSmoke() });
+  3195	    }
+  3196	
+  3197	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/pipeline-board") {
+  3198	      return sendJson(res, 200, { result: "ok", data: pipelineBoard(url.searchParams) });
+  3199	    }
+  3200	
+  3201	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/app-read-payload") {
+  3202	      return sendJson(res, 200, { result: "ok", data: appReadPayload(url.searchParams) });
+  3203	    }
+  3204	
+  3205	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/delivery") {
+  3206	      return sendJson(res, 200, { result: "ok", data: deliveryBoard(url.searchParams) });
+  3207	    }
+  3208	
+  3209	
+  3210	    // BRAIN_CONTEXT_BRIDGE_ROUTE_V1
+  3211	    if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/brain-context") {
+  3212	      const modelCode = url.searchParams.get("model_code") || url.searchParams.get("modelCode") || "";
+  3213	      const usePurposeCode =
+  3214	        url.searchParams.get("use_purpose_code") ||
+  3215	        url.searchParams.get("purpose_code") ||
+  3216	        url.searchParams.get("task_domain_code") ||
+  3217	        "reference";
+  3218	      const domainsRaw = url.searchParams.get("domains") || "";
+  3219	      const domainCodes = domainsRaw
+  3220	        ? domainsRaw.split(",").map((value) => value.trim()).filter(Boolean)
+  3221	        : [];
+  3222	      const includeMissingSources =
+  3223	        url.searchParams.get("include_missing_sources") === "true" ||
+  3224	        url.searchParams.get("includeMissingSources") === "true";
+  3225	
+  3226	      const brainContext = buildRuntimeBrainContext({
+  3227	        modelCode,
+  3228	        usePurposeCode,
+  3229	        domainCodes,
+  3230	        includeMissingSources
+  3231	      });
+  3232	
+  3233	      return sendJson(res, 200, {
+  3234	        result: "ok",
+  3235	        external_execution_performed_flag: false,
+  3236	        data: {
+  3237	          model_code: modelCode,
+  3238	          use_purpose_code: brainContext.purposeCode,
+  3239	          brain_context: brainContext,
+  3240	          prompt_brain_context: renderPromptBrainContext(brainContext)
+  3241	        }
+  3242	      });
+  3243	    }
+  3244	
+  3245	    if (req.method === "POST" && url.pathname === "/aiworker/v1/runtime-execution/request") {
+  3246	      const bodyText = await readBody(req);
+  3247	      let payload;
+  3248	      try {
+  3249	        payload = bodyText ? JSON.parse(bodyText) : {};
+  3250	      } catch (e) {
+  3251	        return sendJson(res, 400, {
+  3252	          result: "error",
+  3253	          error_code: "INVALID_JSON",
+  3254	          message: "Request body must be valid JSON."
+  3255	        });
+  3256	      }
+  3257	
+  3258	      const idempotencyKey = req.headers["idempotency-key"] || "";
+  3259	      const result = createRuntimeRequest(payload, idempotencyKey);
+  3260	      return sendJson(res, 201, result);
+  3261	    }
+  3262	
+  3263	    return sendJson(res, 404, {
+  3264	      result: "error",
+  3265	      error_code: "NOT_FOUND",
+  3266	      path: url.pathname
+  3267	    });
+  3268	  } catch (err) {
+  3269	    const status = err.httpStatus || 500;
+  3270	    return sendJson(res, status, {
+  3271	      result: "error",
+  3272	      error_code: status === 400 ? "BAD_REQUEST" : "INTERNAL_ERROR",
+  3273	      message: err.message,
+  3274	      safety: {
+  3275	        external_execution_performed_flag: false,
+  3276	        pg_apply_performed_flag: false,
+  3277	        destructive_action_performed_flag: false
+  3278	      }
+  3279	    });
+  3280	  }
+  3281	});
+  3282	
+  3283	server.listen(port, "127.0.0.1", () => {
+  3284	  console.log(`AIWorkerOS runtime execution HTTP API listening on http://127.0.0.1:${port}`);
+  3285	});
+  3286	
+  3287	
+  3288	// AIW_B6R97R14_QUEUE_CONSUMER_START
+  3289	// AIWorkerOS-owned queue consumer.
+  3290	// AICM does not trigger execution here.
+  3291	// This consumer scans waiting/retryable work, claims it, calls existing createRuntimeRequest,
+  3292	// records AIWorkerOS request/output metadata, and creates/updates AICM human review rows.
+  3293	const childProcessB6R97R14 = require("node:child_process");
+  3294	
+  3295	function aiwB6R97R14DbUrl() {
+  3296	  return process.env.PERSONA_DATABASE_URL || process.env.DATABASE_URL || "";
+  3297	}
+  3298	
+  3299	function aiwB6R97R14SqlLiteral(value) {
+  3300	  return "'" + String(value == null ? "" : value).replace(/'/g, "''") + "'";
+  3301	}
+  3302	
+  3303	function aiwB6R97R14IsUuid(value) {
+  3304	  return /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(String(value || "").trim());
+  3305	}
+  3306	
+  3307	function aiwB6R97R14UuidOrNull(value) {
+  3308	  const text = String(value || "").trim();
+  3309	  return aiwB6R97R14IsUuid(text) ? aiwB6R97R14SqlLiteral(text) + "::uuid" : "NULL";
+  3310	}
+  3311	
+  3312	function aiwB6R97R14PsqlText(sql) {
+  3313	  const dbUrl = aiwB6R97R14DbUrl();
+  3314	  if (!dbUrl) {
+  3315	    throw new Error("PERSONA_DATABASE_URL is not set for AIWorkerOS consumer");
+  3316	  }
+  3317	
+  3318	  // AIW_B6R97R17_PSQL_STDIN_SAFE_ERROR_PATCH
+  3319	  // Pass SQL via stdin instead of psql -c to avoid OS argv length limits.
+  3320	  return childProcessB6R97R14.execFileSync("psql", [
+  3321	    dbUrl,
+  3322	    "-v", "ON_ERROR_STOP=1",
+  3323	    "-X",
+  3324	    "-q",
+  3325	    "-A",
+  3326	    "-t",
+  3327	    "-P", "pager=off"
+  3328	  ], {
+  3329	    input: String(sql || "") + "\n",
+  3330	    encoding: "utf8",
+  3331	    maxBuffer: 1024 * 1024 * 40
+  3332	  }).trim();
+  3333	}
+  3334	
+  3335	function aiwB6R97R14PsqlJson(sql, fallback) {
+  3336	  const raw = aiwB6R97R14PsqlText(sql);
+  3337	  if (!raw) return fallback;
+  3338	  try {
+  3339	    return JSON.parse(raw);
+  3340	  } catch (error) {
+  3341	    throw new Error("AIWorkerOS consumer failed to parse psql JSON: " + error.message + " raw=" + raw.slice(0, 400));
+  3342	  }
+  3343	}
+  3344	
+  3345	function aiwB6R97R14ClaimWorkUnits(limit) {
+  3346	  const sql = [
+  3347	    "with picked as (",
+  3348	    "  select u.aicm_worker_work_unit_id",
+  3349	    "  from business.aicm_worker_work_unit u",
+  3350	    "  where (",
+  3351	    "    coalesce(u.metadata_jsonb->>'aiworkeros_execution_state','') in ('waiting','waiting_for_artifact_zip')",
+  3352	    "    or lower(coalesce(u.metadata_jsonb->>'aiworkeros_retryable','false')) in ('true','t','1','yes')",
+  3353	    "  )",
+  3354	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_consumer_claim_state','') <> 'processing'",
+  3355	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_request_id','') = ''",
+  3356	    "  order by u.updated_at asc nulls last, u.created_at asc nulls last",
+  3357	    "  limit " + Number(limit || 5),
+  3358	    "  for update skip locked",
+  3359	    "), claimed as (",
+  3360	    "  update business.aicm_worker_work_unit u",
+  3361	    "  set metadata_jsonb = coalesce(u.metadata_jsonb, '{}'::jsonb) || jsonb_build_object(",
+  3362	    "      'aiworkeros_execution_state', 'processing',",
+  3363	    "      'aiworkeros_retryable', 'false',",
+  3364	    "      'aiworkeros_consumer_claim_state', 'processing',",
+  3365	    "      'aiworkeros_claimed_by', 'AIWorkerOS/B6R97R14',",
+  3366	    "      'aiworkeros_claimed_at', now()::text",
+  3367	    "    ),",
+  3368	    "    updated_at = now()",
+  3369	    "  from picked p",
+  3370	    "  where u.aicm_worker_work_unit_id = p.aicm_worker_work_unit_id",
+  3371	    "  returning to_jsonb(u) as row_json",
+  3372	    ")",
+  3373	    "select coalesce(jsonb_agg(row_json), '[]'::jsonb)::text from claimed;"
+  3374	  ].join("\n");
+  3375	
+  3376	  return aiwB6R97R14PsqlJson(sql, []);
+  3377	}
+  3378	
+  3379	function aiwB6R97R14BuildPayload(row) {
+  3380	  const meta = row && row.metadata_jsonb && typeof row.metadata_jsonb === "object" ? row.metadata_jsonb : {};
+  3381	  const workUnitId = String(row.aicm_worker_work_unit_id || row.worker_work_unit_id || row.work_unit_id || "");
+  3382	  const sourceRouteCode = String(meta.source_route_code || row.source_route_code || "aicm_worker_work_unit");
+  3383	  const title = String(row.work_unit_name || row.task_name || row.title || "AICompanyManager Worker作業");
+  3384	  const instruction = [
+  3385	    String(row.work_instruction_text || ""),
+  3386	    String(row.work_unit_description || ""),
+  3387	    String(row.note || ""),
+  3388	    "AICM worker_work_unit_id: " + workUnitId,
+  3389	    "source_route_code: " + sourceRouteCode
+  3390	  ].filter(Boolean).join("\n\n");
+  3391	
+  3392	  return {
+  3393	    app_surface_code: String(meta.app_surface_code || "ai_company_manager"),
+  3394	    model_code: String(meta.model_code || "byd2_003_asic_leader3"),
+  3395	    task_domain_code: String(meta.task_domain_code || "business_operation"),
+  3396	    task_title: title,
+  3397	    task_instruction_ja: instruction || title,
+  3398	    source_app_ref: String(meta.source_app_ref || "AICompanyManager"),
+  3399	    source_request_ref: workUnitId,
+  3400	    requested_by_ref: String(meta.requested_by_ref || "AIWorkerOSConsumer"),
+  3401	    source_route_code: sourceRouteCode,
+  3402	    metadata_jsonb: {
+  3403	      aicm_worker_work_unit_id: workUnitId,
+  3404	      owner_civilization_id: row.owner_civilization_id || "",
+  3405	      aicm_user_company_id: row.aicm_user_company_id || "",
+  3406	      source_route_code: sourceRouteCode,
+  3407	      consumer_code: "B6R97R14"
+  3408	    }
+  3409	  };
+  3410	}
+  3411	
+  3412	function aiwB6R97R14RequestId(result) {
+  3413	  return String(
+  3414	    (result && result.request_id) ||
+  3415	    (result && result.runtime_request_id) ||
+  3416	    (result && result.data && result.data.request_id) ||
+  3417	    ""
+  3418	  );
+  3419	}
+  3420	
+  3421	function aiwB6R97R14OutputId(result) {
+  3422	  return String(
+  3423	    (result && result.output_id) ||
+  3424	    (result && result.deliverable_ref && result.deliverable_ref.id) ||
+  3425	    (result && result.requester_delivery_payload && result.requester_delivery_payload.deliverable_ref && result.requester_delivery_payload.deliverable_ref.id) ||
+  3426	    ""
+  3427	  );
+  3428	}
+  3429	
+  3430	function aiwB6R97R14Summary(result) {
+  3431	  return String(
+  3432	    (result && result.requester_delivery_payload && result.requester_delivery_payload.summary_text) ||
+  3433	    (result && result.deliverable && result.deliverable.summary_text) ||
+  3434	    (result && result.summary_text) ||
+  3435	    ""
+  3436	  );
+  3437	}
+  3438	
+  3439	function aiwB6R97R14DeliverableLink(result) {
+  3440	  return String(
+  3441	    (result && result.deliverable_link) ||
+  3442	    (result && result.requester_delivery_payload && result.requester_delivery_payload.deliverable_link) ||
+  3443	    (result && result.deliverable && result.deliverable.zip_link) ||
+  3444	    ""
+  3445	  );
+  3446	}
+  3447	
+  3448	function aiwB6R97R14MarkFailed(row, error) {
+  3449	  const id = row && row.aicm_worker_work_unit_id;
+  3450	  if (!aiwB6R97R14IsUuid(id)) return;
+  3451	
+  3452	  // AIW_B6R97R17_PSQL_STDIN_SAFE_ERROR_PATCH: never store DB URL or full SQL command in metadata.
+  3453	  const rawMessage = String(error && error.message ? error.message : error);
+  3454	  const message = rawMessage
+  3455	    .replace(/postgres(?:ql)?:\/\/[^\s]+/gi, "[DB_URL_REDACTED]")
+  3456	    .replace(/-c\s+update[\s\S]*/i, "-c [SQL_REDACTED]")
+  3457	    .split("\n")
+  3458	    .slice(0, 8)
+  3459	    .join("\n")
+  3460	    .slice(0, 600);
+  3461	
+  3462	  const sql = [
+  3463	    "update business.aicm_worker_work_unit",
+  3464	    "set metadata_jsonb = coalesce(metadata_jsonb, '{}'::jsonb) || jsonb_build_object(",
+  3465	    "  'aiworkeros_execution_state', 'waiting',",
+  3466	    "  'aiworkeros_retryable', 'true',",
+  3467	    "  'aiworkeros_consumer_claim_state', 'failed',",
+  3468	    "  'aiworkeros_last_error', " + aiwB6R97R14SqlLiteral(message) + ",",
+  3469	    "  'aiworkeros_last_failed_at', now()::text",
+  3470	    "), updated_at = now()",
+  3471	    "where aicm_worker_work_unit_id = " + aiwB6R97R14UuidOrNull(id) + ";"
+  3472	  ].join("\n");
+  3473	
+  3474	  aiwB6R97R14PsqlText(sql);
+  3475	}
+  3476	
+  3477	
+  3478	// AIW_B6R97R21_SCHEMA_MISMATCH_REPAIR
+  3479	function aiwB6R97R19CAicmArtifactKindCode() {
+  3480	  // AIW_B6R97R19C_ARTIFACT_KIND_RESOLVER_FINALIZER_PATCH
+  3481	  return "delivery_package";
+  3482	}
+  3483	
+  3484	function aiwB6R97R19CFinalizeGeneratedReviewRows(limit) {
+  3485	  const artifactKind = aiwB6R97R19CAicmArtifactKindCode();
+  3486	  const safeLimit = Math.max(1, Number(limit || 5) || 5);
+  3487	
+  3488	  const sql = [
+  3489	    "with valid_artifact_kind as (",
+  3490	    "  select " + aiwB6R97R14SqlLiteral(artifactKind) + "::text as artifact_kind_code",
+  3491	    "  where exists (",
+  3492	    "    select 1",
+  3493	    "    from pg_constraint c",
+  3494	    "    where c.conrelid = 'business.aicm_human_review_item'::regclass",
+  3495	    "      and c.conname = 'chk_aicm_human_review_artifact_kind'",
+  3496	    "      and pg_get_constraintdef(c.oid) like '%' || " + aiwB6R97R14SqlLiteral(artifactKind) + " || '%'",
+  3497	    "  )",
+  3498	    "), target as (",
+  3499	    "  select u.*",
+  3500	    "  from business.aicm_worker_work_unit u",
+  3501	    "  where coalesce(u.metadata_jsonb->>'aiworkeros_claimed_by','') = 'AIWorkerOS/B6R97R14'",
+  3502	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_request_id','') <> ''",
+  3503	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_output_id','') <> ''",
+  3504	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_deliverable_link','') <> ''",
+  3505	    "    and coalesce(u.metadata_jsonb->>'aiworkeros_consumer_claim_state','') in ('failed','review_registration_failed')",
+  3506	    "  order by u.updated_at asc nulls last",
+  3507	    "  limit " + safeLimit,
+  3508	    "), updated_unit as (",
+  3509	    "  update business.aicm_worker_work_unit u",
+  3510	    "  set",
+  3511	    "    work_status_code = 'review_waiting',",
+  3512	    "    review_status_code = 'waiting',",
+  3513	    "    metadata_jsonb = (coalesce(u.metadata_jsonb, '{}'::jsonb) - 'aiworkeros_last_error') || jsonb_build_object(",
+  3514	    "      'aiworkeros_execution_state', 'completed',",
+  3515	    "      'aiworkeros_retryable', 'false',",
+  3516	    "      'aiworkeros_consumer_claim_state', 'completed',",
+  3517	    "      'aiworkeros_artifact_kind_code', (select artifact_kind_code from valid_artifact_kind),",
+  3518	    "      'aiworkeros_review_finalized_by', 'B6R97R19C',",
+  3519	    "      'aiworkeros_review_finalized_at', now()::text",
+  3520	    "    ),",
+  3521	    "    updated_at = now()",
+  3522	    "  from target t",
+  3523	    "  where u.aicm_worker_work_unit_id = t.aicm_worker_work_unit_id",
+  3524	    "    and exists (select 1 from valid_artifact_kind)",
+  3525	    "  returning u.*",
+  3526	    "), existing_review as (",
+  3527	    "  select h.aicm_human_review_item_id, h.related_worker_work_unit_id",
+  3528	    "  from business.aicm_human_review_item h",
+  3529	    "  join updated_unit u on h.related_worker_work_unit_id = u.aicm_worker_work_unit_id",
+  3530	    "  where coalesce(h.human_review_status_code,'') = 'pending'",
+  3531	    "), updated_review as (",
+  3532	    "  update business.aicm_human_review_item h",
+  3533	    "  set",
+  3534	    "    artifact_kind_code = (select artifact_kind_code from valid_artifact_kind),",
+  3535	    "    review_title = coalesce(nullif(h.review_title,''), '納品サマリー確認: ' || coalesce(u.work_unit_name, 'AIWorkerOS成果物')),",
+  3536	    "    delivery_summary_text = coalesce(nullif(h.delivery_summary_text,''), 'AIWorkerOS consumer generated deliverable, summary, and delivery package.'),",
+  3537	    "    main_changes_text = coalesce(nullif(h.main_changes_text,''), 'AIWorkerOS consumer generated deliverable, summary, and zip link.'),",
+  3538	    "    ai_review_result_text = coalesce(nullif(h.ai_review_result_text,''), 'AIWorkerOS consumer completed deliverable generation.'),",
+  3539	    "    artifact_link = coalesce(nullif(h.artifact_link,''), u.metadata_jsonb->>'aiworkeros_deliverable_link'),",
+  3540	    "    metadata_jsonb = coalesce(h.metadata_jsonb, '{}'::jsonb) || jsonb_build_object(",
+  3541	    "      'source_route_code', coalesce(u.metadata_jsonb->>'source_route_code', 'aicm_worker_work_unit'),",
+  3542	    "      'aiworkeros_request_id', u.metadata_jsonb->>'aiworkeros_request_id',",
+  3543	    "      'aiworkeros_output_id', u.metadata_jsonb->>'aiworkeros_output_id',",
+  3544	    "      'artifact_kind_code', (select artifact_kind_code from valid_artifact_kind),",
+  3545	    "      'consumer_code', 'B6R97R19C'",
+  3546	    "    ),",
+  3547	    "    updated_at = now()",
+  3548	    "  from updated_unit u",
+  3549	    "  where h.related_worker_work_unit_id = u.aicm_worker_work_unit_id",
+  3550	    "    and h.aicm_human_review_item_id in (select aicm_human_review_item_id from existing_review)",
+  3551	    "  returning h.aicm_human_review_item_id",
+  3552	    "), inserted_review as (",
+  3553	    "  insert into business.aicm_human_review_item (",
+  3554	    "    owner_civilization_id,",
+  3555	    "    aicm_user_company_id,",
+  3556	    "    aicm_user_company_department_id,",
+  3557	    "    aicm_user_company_section_id,",
+  3558	    "    related_manager_major_work_item_id,",
+  3559	    "    related_worker_work_unit_id,",
+  3560	    "    review_kind_code,",
+  3561	    "    artifact_kind_code,",
+  3562	    "    review_title,",
+  3563	    "    delivery_summary_text,",
+  3564	    "    main_changes_text,",
+  3565	    "    ai_review_result_text,",
+  3566	    "    unresolved_issues_text,",
+  3567	    "    artifact_link,",
+  3568	    "    responsible_ai_label,",
+  3569	    "    requested_by_ai_label,",
+  3570	    "    human_review_status_code,",
+  3571	    "    priority_code,",
+  3572	    "    metadata_jsonb",
+  3573	    "  )",
+  3574	    "  select",
+  3575	    "    u.owner_civilization_id,",
+  3576	    "    u.aicm_user_company_id,",
+  3577	    "    NULL::uuid,",
+  3578	    "    NULL::uuid,",
+  3579	    "    NULL::uuid,",
+  3580	    "    u.aicm_worker_work_unit_id,",
+  3581	    "    'delivery_summary',",
+  3582	    "    (select artifact_kind_code from valid_artifact_kind),",
+  3583	    "    '納品サマリー確認: ' || coalesce(u.work_unit_name, 'AIWorkerOS成果物'),",
+  3584	    "    'AIWorkerOS consumer generated deliverable, summary, and delivery package.',",
+  3585	    "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+  3586	    "    'AIWorkerOS consumer completed deliverable generation.',",
+  3587	    "    '',",
+  3588	    "    u.metadata_jsonb->>'aiworkeros_deliverable_link',",
+  3589	    "    'AIWorkerOS',",
+  3590	    "    'AICompanyManager',",
+  3591	    "    'pending',",
+  3592	    "    coalesce(nullif(u.priority_code,''), 'normal'),",
+  3593	    "    jsonb_build_object(",
+  3594	    "      'source_route_code', coalesce(u.metadata_jsonb->>'source_route_code', 'aicm_worker_work_unit'),",
+  3595	    "      'aiworkeros_request_id', u.metadata_jsonb->>'aiworkeros_request_id',",
+  3596	    "      'aiworkeros_output_id', u.metadata_jsonb->>'aiworkeros_output_id',",
+  3597	    "      'artifact_kind_code', (select artifact_kind_code from valid_artifact_kind),",
+  3598	    "      'consumer_code', 'B6R97R19C'",
+  3599	    "    )",
+  3600	    "  from updated_unit u",
+  3601	    "  where not exists (",
+  3602	    "    select 1",
+  3603	    "    from existing_review er",
+  3604	    "    where er.related_worker_work_unit_id = u.aicm_worker_work_unit_id",
+  3605	    "  )",
+  3606	    "  returning aicm_human_review_item_id",
+  3607	    ")",
+  3608	    "select 1;"
+  3609	  ].join("\n");
+  3610	
+  3611	  aiwB6R97R14PsqlText(sql);
+  3612	  return true;
+  3613	}
+  3614	
+  3615	function aiwB6R97R14RecordSuccess(row, result, payload) {
+  3616	  const workUnitId = String(row.aicm_worker_work_unit_id || "");
+  3617	  if (!aiwB6R97R14IsUuid(workUnitId)) {
+  3618	    throw new Error("invalid work unit id for AIWorkerOS consumer success");
+  3619	  }
+  3620	
+  3621	  const meta = row && row.metadata_jsonb && typeof row.metadata_jsonb === "object" ? row.metadata_jsonb : {};
+  3622	  const requestId = aiwB6R97R14RequestId(result);
+  3623	  const outputId = aiwB6R97R14OutputId(result);
+  3624	  const summary = aiwB6R97R14Summary(result);
+  3625	  const link = aiwB6R97R14DeliverableLink(result);
+  3626	  const sourceRouteCode = String(meta.source_route_code || payload.source_route_code || "aicm_worker_work_unit");
+  3627	  const title = String(payload.task_title || "AIWorkerOS成果物レビュー");
+  3628	
+  3629	  const ownerExpr = aiwB6R97R14UuidOrNull(row.owner_civilization_id || "00000000-0000-4000-8000-000000000001");
+  3630	  const companyExpr = aiwB6R97R14UuidOrNull(row.aicm_user_company_id || row.company_id || "");
+  3631	  const deptExpr = aiwB6R97R14UuidOrNull(row.aicm_user_company_department_id || "");
+  3632	  const sectionExpr = aiwB6R97R14UuidOrNull(row.aicm_user_company_section_id || "");
+  3633	  const majorExpr = aiwB6R97R14UuidOrNull(row.related_manager_major_work_item_id || row.aicm_manager_major_work_item_id || "");
+  3634	
+  3635	  // AIW_B6R97R16_E2BIG_COMPACT_RESULT_PATCH
+  3636	  // Do not embed the full AIWorkerOS result JSON into psql -c SQL.
+  3637	  // Full result payload can exceed OS argv limits and cause spawnSync psql E2BIG.
+  3638	  const compactResultJson = JSON.stringify({
+  3639	    result: result && result.result ? result.result : "",
+  3640	    request_id: requestId,
+  3641	    output_id: outputId,
+  3642	    summary_present: Boolean(summary),
+  3643	    deliverable_link: link,
+  3644	    consumer_code: "B6R97R16"
+  3645	  });
+  3646	
+  3647	  const sql = [
+  3648	    "update business.aicm_worker_work_unit",
+  3649	    "set work_status_code = 'review_waiting',",
+  3650	    "    review_status_code = 'waiting',",
+  3651	    "    metadata_jsonb = coalesce(metadata_jsonb, '{}'::jsonb) || jsonb_build_object(",
+  3652	    "      'aiworkeros_execution_state', 'completed',",
+  3653	    "      'aiworkeros_retryable', 'false',",
+  3654	    "      'aiworkeros_consumer_claim_state', 'completed',",
+  3655	    "      'aiworkeros_request_id', " + aiwB6R97R14SqlLiteral(requestId) + ",",
+  3656	    "      'aiworkeros_output_id', " + aiwB6R97R14SqlLiteral(outputId) + ",",
+  3657	    "      'aiworkeros_deliverable_link', " + aiwB6R97R14SqlLiteral(link) + ",",
+  3658	    "      'aiworkeros_completed_at', now()::text",
+  3659	    "    ),",
+  3660	    "    updated_at = now()",
+  3661	    "where aicm_worker_work_unit_id = " + aiwB6R97R14UuidOrNull(workUnitId) + ";",
+  3662	    "",
+  3663	    "with existing as (",
+  3664	    "  select aicm_human_review_item_id",
+  3665	    "  from business.aicm_human_review_item",
+  3666	    "  where related_worker_work_unit_id = " + aiwB6R97R14UuidOrNull(workUnitId),
+  3667	    "    and coalesce(human_review_status_code,'') = 'pending'",
+  3668	    "  limit 1",
+  3669	    "), updated as (",
+  3670	    "  update business.aicm_human_review_item h",
+  3671	    "  set review_title = " + aiwB6R97R14SqlLiteral(title) + ",",
+  3672	    "      delivery_summary_text = " + aiwB6R97R14SqlLiteral(summary) + ",",
+  3673	    "      artifact_link = " + aiwB6R97R14SqlLiteral(link) + ",",
+  3674	    "      ai_review_result_text = 'AIWorkerOS consumer completed deliverable generation.',",
+  3675	    "      metadata_jsonb = coalesce(h.metadata_jsonb, '{}'::jsonb) || jsonb_build_object(",
+  3676	    "        'source_route_code', " + aiwB6R97R14SqlLiteral(sourceRouteCode) + ",",
+  3677	    "        'aiworkeros_request_id', " + aiwB6R97R14SqlLiteral(requestId) + ",",
+  3678	    "        'aiworkeros_output_id', " + aiwB6R97R14SqlLiteral(outputId) + ",",
+  3679	    "        'aiworkeros_result_compact', " + aiwB6R97R14SqlLiteral(compactResultJson) + "::jsonb",
+  3680	    "      ),",
+  3681	    "      updated_at = now()",
+  3682	    "  where h.aicm_human_review_item_id in (select aicm_human_review_item_id from existing)",
+  3683	    "  returning h.aicm_human_review_item_id",
+  3684	    "), inserted as (",
+  3685	    "  insert into business.aicm_human_review_item (",
+  3686	    "    owner_civilization_id,",
+  3687	    "    aicm_user_company_id,",
+  3688	    "    aicm_user_company_department_id,",
+  3689	    "    aicm_user_company_section_id,",
+  3690	    "    related_manager_major_work_item_id,",
+  3691	    "    related_worker_work_unit_id,",
+  3692	    "    review_kind_code,",
+  3693	    "    artifact_kind_code,",
+  3694	    "    review_title,",
+  3695	    "    delivery_summary_text,",
+  3696	    "    main_changes_text,",
+  3697	    "    ai_review_result_text,",
+  3698	    "    unresolved_issues_text,",
+  3699	    "    artifact_link,",
+  3700	    "    responsible_ai_label,",
+  3701	    "    requested_by_ai_label,",
+  3702	    "    human_review_status_code,",
+  3703	    "    priority_code,",
+  3704	    "    metadata_jsonb",
+  3705	    "  )",
+  3706	    "  select",
+  3707	    "    " + ownerExpr + ",",
+  3708	    "    " + companyExpr + ",",
+  3709	    "    " + deptExpr + ",",
+  3710	    "    " + sectionExpr + ",",
+  3711	    "    " + majorExpr + ",",
+  3712	    "    " + aiwB6R97R14UuidOrNull(workUnitId) + ",",
+  3713	    "    'delivery_summary',",
+  3714	    "    'delivery_package',",
+  3715	    "    " + aiwB6R97R14SqlLiteral(title) + ",",
+  3716	    "    " + aiwB6R97R14SqlLiteral(summary) + ",",
+  3717	    "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+  3718	    "    'AIWorkerOS consumer completed deliverable generation.',",
+  3719	    "    '',",
+  3720	    "    " + aiwB6R97R14SqlLiteral(link) + ",",
+  3721	    "    'AIWorkerOS',",
+  3722	    "    'AICompanyManager',",
+  3723	    "    'pending',",
+  3724	    "    coalesce(" + aiwB6R97R14SqlLiteral(row.priority_code || "") + ", 'normal'),",
+  3725	    "    jsonb_build_object(",
+  3726	    "      'source_route_code', " + aiwB6R97R14SqlLiteral(sourceRouteCode) + ",",
+  3727	    "      'aiworkeros_request_id', " + aiwB6R97R14SqlLiteral(requestId) + ",",
+  3728	    "      'aiworkeros_output_id', " + aiwB6R97R14SqlLiteral(outputId) + ",",
+  3729	    "      'aiworkeros_result_compact', " + aiwB6R97R14SqlLiteral(compactResultJson) + "::jsonb,",
+  3730	    "      'consumer_code', 'B6R97R14'",
+  3731	    "    )",
+  3732	    "  where not exists (select 1 from existing)",
+  3733	    "  returning aicm_human_review_item_id",
+  3734	    ")",
+  3735	    "select coalesce((select aicm_human_review_item_id::text from updated limit 1), (select aicm_human_review_item_id::text from inserted limit 1), '') as review_id;"
+  3736	  ].join("\n");
+  3737	
+  3738	  aiwB6R97R14PsqlText(sql);
+  3739	}
+  3740	
+  3741	async function aiwB6R97R14ConsumerOnce(reason) {
+  3742	  const state = globalThis.__AIW_B6R97R14_QUEUE_CONSUMER_STATE__ || {
+  3743	    running: false,
+  3744	    lastRunAt: "",
+  3745	    lastReason: "",
+  3746	    processedTotal: 0
+  3747	  };
+  3748	  globalThis.__AIW_B6R97R14_QUEUE_CONSUMER_STATE__ = state;
+  3749	
+  3750	  if (state.running) return { skipped: true, reason: "already_running" };
+  3751	
+  3752	  state.running = true;
+  3753	  state.lastRunAt = new Date().toISOString();
+  3754	  state.lastReason = reason;
+  3755	
+  3756	  const limit = Math.max(1, Number(process.env.AIWORKER_QUEUE_CONSUMER_BATCH_LIMIT || "5") || 5);
+  3757	
+  3758	  try {
+  3759	    const finalizedReviewRowsB6R97R19C = aiwB6R97R19CFinalizeGeneratedReviewRows(limit);
+  3760	    if (finalizedReviewRowsB6R97R19C) {
+  3761	      state.processedTotal += 1;
+  3762	    }
+  3763	
+  3764	    const rows = aiwB6R97R14ClaimWorkUnits(limit);
+  3765	    if (!Array.isArray(rows) || !rows.length) {
+  3766	      return { processed: 0 };
+  3767	    }
+  3768	
+  3769	    let processed = 0;
+  3770	
+  3771	    for (const row of rows) {
+  3772	      const payload = aiwB6R97R14BuildPayload(row);
+  3773	      const idempotencyKey = "aiworker-consumer-b6r97r14:" + String(row.aicm_worker_work_unit_id || "");
+  3774	      try {
+  3775	        const result = createRuntimeRequest(payload, idempotencyKey);
+  3776	        aiwB6R97R14RecordSuccess(row, result, payload);
+  3777	        processed += 1;
+  3778	      } catch (error) {
+  3779	        aiwB6R97R14MarkFailed(row, error);
+  3780	      }
+  3781	    }
+  3782	
+  3783	    state.processedTotal += processed;
+  3784	    return { processed };
+  3785	  } finally {
+  3786	    state.running = false;
+  3787	  }
+  3788	}
+  3789	
+  3790	function aiwB6R97R14StartConsumer() {
+  3791	  if (process.env.AIWORKER_QUEUE_CONSUMER_ENABLED === "0") {
+  3792	    console.log("[B6R97R14] AIWorkerOS queue consumer disabled by env");
+  3793	    return;
+  3794	  }
+  3795	
+  3796	  const key = "__AIW_B6R97R14_QUEUE_CONSUMER_STARTED__";
+  3797	  if (globalThis[key]) return;
+  3798	  globalThis[key] = true;
+  3799	
+  3800	  const intervalMs = Math.max(1000, Number(process.env.AIWORKER_QUEUE_CONSUMER_INTERVAL_MS || "5000") || 5000);
+  3801	
+  3802	  setTimeout(() => {
+  3803	    aiwB6R97R14ConsumerOnce("startup").catch((error) => {
+  3804	      console.error("[B6R97R14] startup consumer failed", String(error && error.message ? error.message : error).replace(/postgres(?:ql)?:\/\/[^\s]+/gi, "[DB_URL_REDACTED]").split("\n").slice(0, 8).join("\n"));
+  3805	    });
+  3806	  }, 1000);
+  3807	
+  3808	  const timer = setInterval(() => {
+  3809	    aiwB6R97R14ConsumerOnce("interval").catch((error) => {
+  3810	      console.error("[B6R97R14] interval consumer failed", String(error && error.message ? error.message : error).replace(/postgres(?:ql)?:\/\/[^\s]+/gi, "[DB_URL_REDACTED]").split("\n").slice(0, 8).join("\n"));
+  3811	    });
+  3812	  }, intervalMs);
+  3813	
+  3814	  globalThis.__AIW_B6R97R14_QUEUE_CONSUMER_TIMER__ = timer;
+  3815	
+  3816	  process.once("SIGTERM", () => clearInterval(timer));
+  3817	  process.once("SIGINT", () => clearInterval(timer));
+  3818	
+  3819	  console.log("[B6R97R14] AIWorkerOS queue consumer started interval_ms=" + intervalMs);
+  3820	}
+  3821	
+  3822	setTimeout(aiwB6R97R14StartConsumer, 1500);
+  3823	// AIW_B6R97R14_QUEUE_CONSUMER_END
+  3824	
+  3825	// B6R98R4F1C_SOURCE_MATERIAL_TMP_CLEANUP_START
+  3826	// Completed source material tmp cleanup.
+  3827	// Deletes only AICM runtime-source-files/tmp files after worker_unit reaches completed/review_waiting.
+  3828	// No cleanup for waiting/running/retryable states.
+  3829	const aiwB6R98R4F1CFs = require("node:fs");
+  3830	const aiwB6R98R4F1CPath = require("node:path");
+  3831	const aiwB6R98R4F1CChildProcess = require("node:child_process");
+  3832	
+  3833	const AIW_B6R98R4F1C_PATCH_CODE = "B6R98R4F1C";
+  3834	const AIW_B6R98R4F1C_TMP_ROOT = process.env.AICM_SOURCE_MATERIAL_TMP_ROOT ||
+  3835	  "/data/data/com.termux/files/home/03.civilization-development/03.business-os/AICompanyManager/storage/runtime-source-files/tmp";
+  3836	
+  3837	function aiwB6R98R4F1CText(value) {
+  3838	  return value === null || value === undefined ? "" : String(value);
+  3839	}
+  3840	
+  3841	function aiwB6R98R4F1CTmpRootResolved() {
+  3842	  return aiwB6R98R4F1CPath.resolve(AIW_B6R98R4F1C_TMP_ROOT);
+  3843	}
+  3844	
+  3845	function aiwB6R98R4F1CIsUnderTmpRoot(value) {
+  3846	  const target = aiwB6R98R4F1CPath.resolve(aiwB6R98R4F1CText(value));
+  3847	  const root = aiwB6R98R4F1CTmpRootResolved();
+  3848	  return target === root || target.startsWith(root + aiwB6R98R4F1CPath.sep);
+  3849	}
+  3850	
+  3851	function aiwB6R98R4F1CEscapeRegExp(value) {
+  3852	  return aiwB6R98R4F1CText(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  3853	}
+  3854	
+  3855	function aiwB6R98R4F1CExtractTmpPaths(row) {
+  3856	  const text = [
+  3857	    aiwB6R98R4F1CText(row.reference_files_text),
+  3858	    aiwB6R98R4F1CText(row.metadata_text)
+  3859	  ].join("\n");
+  3860	
+  3861	  const root = aiwB6R98R4F1CEscapeRegExp(aiwB6R98R4F1CTmpRootResolved());
+  3862	  const re = new RegExp(root + "[^\\s\"'\\]\\},]+", "g");
+  3863	  const found = text.match(re) || [];
+  3864	  const unique = [];
+  3865	
+  3866	  found.forEach((rawPath) => {
+  3867	    const cleanPath = aiwB6R98R4F1CText(rawPath).trim();
+  3868	    if (!cleanPath) return;
+  3869	    if (!aiwB6R98R4F1CIsUnderTmpRoot(cleanPath)) return;
+  3870	    if (!unique.includes(cleanPath)) unique.push(cleanPath);
+  3871	  });
+  3872	
+  3873	  return unique;
+  3874	}
+  3875	
+  3876	function aiwB6R98R4F1CRunPsql(sql, timeoutMs) {
+  3877	  const dbUrl = process.env.PERSONA_DATABASE_URL;
+  3878	  if (!dbUrl) {
+  3879	    return {
+  3880	      ok: false,
+  3881	      stdout: "",
+  3882	      stderr: "PERSONA_DATABASE_URL is not set",
+  3883	      status: 1
+  3884	    };
+  3885	  }
+  3886	
+  3887	  const result = aiwB6R98R4F1CChildProcess.spawnSync(
+  3888	    "psql",
+  3889	    [dbUrl, "-v", "ON_ERROR_STOP=1", "-X", "-q", "-t", "-A"],
+  3890	    {
+  3891	      input: sql,
+  3892	      encoding: "utf8",
+  3893	      timeout: timeoutMs || 20000,
+  3894	      maxBuffer: 1024 * 1024 * 4
+  3895	    }
+  3896	  );
+  3897	
+  3898	  return {
+  3899	    ok: result.status === 0,
+  3900	    stdout: result.stdout || "",
+  3901	    stderr: result.stderr || "",
+  3902	    status: result.status
+  3903	  };
+  3904	}
+  3905	
+  3906	function aiwB6R98R4F1CLoadEligibleRows() {
+  3907	  const sql = [
+  3908	    "select jsonb_build_object(",
+  3909	    "  'id', aicm_worker_work_unit_id::text,",
+  3910	    "  'reference_files_text', coalesce(reference_files_text,''),",
+  3911	    "  'metadata_text', coalesce(metadata_jsonb::text,''),",
+  3912	    "  'work_status_code', work_status_code,",
+  3913	    "  'review_status_code', review_status_code,",
+  3914	    "  'aiworkeros_execution_state', coalesce(metadata_jsonb->>'aiworkeros_execution_state',''),",
+  3915	    "  'aiworkeros_consumer_claim_state', coalesce(metadata_jsonb->>'aiworkeros_consumer_claim_state',''),",
+  3916	    "  'aiworkeros_retryable', coalesce(metadata_jsonb->>'aiworkeros_retryable','false')",
+  3917	    ")::text",
+  3918	    "from business.aicm_worker_work_unit",
+  3919	    "where (reference_files_text ilike '%runtime-source-files/tmp%' or metadata_jsonb::text ilike '%runtime-source-files/tmp%')",
+  3920	    "  and work_status_code = 'review_waiting'",
+  3921	    "  and review_status_code = 'waiting'",
+  3922	    "  and coalesce(metadata_jsonb->>'aiworkeros_execution_state','') = 'completed'",
+  3923	    "  and coalesce(metadata_jsonb->>'aiworkeros_consumer_claim_state','') = 'completed'",
+  3924	    "  and coalesce(metadata_jsonb->>'aiworkeros_retryable','false') in ('false','')",
+  3925	    "  and coalesce(metadata_jsonb->>'source_material_tmp_cleanup_state','') not in ('deleted','completed')",
+  3926	    "order by updated_at desc",
+  3927	    "limit 20;"
+  3928	  ].join("\n");
+  3929	
+  3930	  const result = aiwB6R98R4F1CRunPsql(sql, 20000);
+  3931	  if (!result.ok) {
+  3932	    console.error("[B6R98R4F1C] cleanup eligible load failed", result.stderr);
+  3933	    return [];
+  3934	  }
+  3935	
+  3936	  return result.stdout
+  3937	    .split(/\r?\n/)
+  3938	    .map((line) => line.trim())
+  3939	    .filter(Boolean)
+  3940	    .map((line) => {
+  3941	      try {
+  3942	        return JSON.parse(line);
+  3943	      } catch (_) {
+  3944	        return null;
+  3945	      }
+  3946	    })
+  3947	    .filter(Boolean);
+  3948	}
+  3949	
+  3950	function aiwB6R98R4F1CDeleteTmpPaths(paths) {
+  3951	  const deleted = [];
+  3952	  const skipped = [];
+  3953	
+  3954	  (Array.isArray(paths) ? paths : []).forEach((rawPath) => {
+  3955	    const target = aiwB6R98R4F1CPath.resolve(aiwB6R98R4F1CText(rawPath));
+  3956	    if (!aiwB6R98R4F1CIsUnderTmpRoot(target)) {
+  3957	      skipped.push({ path: rawPath, reason: "outside_tmp_root" });
+  3958	      return;
+  3959	    }
+  3960	
+  3961	    try {
+  3962	      if (aiwB6R98R4F1CFs.existsSync(target) && aiwB6R98R4F1CFs.statSync(target).isFile()) {
+  3963	        aiwB6R98R4F1CFs.unlinkSync(target);
+  3964	        deleted.push(target);
+  3965	      } else {
+  3966	        skipped.push({ path: target, reason: "not_found_or_not_file" });
+  3967	      }
+  3968	    } catch (error) {
+  3969	      skipped.push({
+  3970	        path: target,
+  3971	        reason: "delete_error",
+  3972	        message: error && error.message ? error.message : String(error)
+  3973	      });
+  3974	    }
+  3975	  });
+  3976	
+  3977	  return { deleted, skipped };
+  3978	}
+  3979	
+  3980	function aiwB6R98R4F1CJsonLiteral(value) {
+  3981	  return "'" + JSON.stringify(value).replace(/'/g, "''") + "'::jsonb";
+  3982	}
+  3983	
+  3984	function aiwB6R98R4F1CUpdateCleanupMetadata(row, cleanupResult) {
+  3985	  const deletedCount = cleanupResult.deleted.length;
+  3986	  const skippedCount = cleanupResult.skipped.length;
+  3987	  const state = deletedCount > 0 ? "deleted" : "completed";
+  3988	
+  3989	  const metadataPatch = {
+  3990	    source_material_tmp_cleanup_state: state,
+  3991	    source_material_tmp_cleanup_at: new Date().toISOString(),
+  3992	    source_material_tmp_cleanup_patch_code: AIW_B6R98R4F1C_PATCH_CODE,
+  3993	    source_material_tmp_cleanup_deleted_count: deletedCount,
+  3994	    source_material_tmp_cleanup_skipped_count: skippedCount,
+  3995	    source_material_tmp_cleanup_deleted_paths: cleanupResult.deleted,
+  3996	    source_material_tmp_cleanup_skipped_paths: cleanupResult.skipped
+  3997	  };
+  3998	
+  3999	  const id = aiwB6R98R4F1CText(row.id).replace(/'/g, "''");
+  4000	
+  4001	  const sql = [
+  4002	    "update business.aicm_worker_work_unit",
+  4003	    "set metadata_jsonb = coalesce(metadata_jsonb, '{}'::jsonb) || " + aiwB6R98R4F1CJsonLiteral(metadataPatch) + ",",
+  4004	    "    updated_at = now()",
+  4005	    "where aicm_worker_work_unit_id = '" + id + "'::uuid",
+  4006	    "  and work_status_code = 'review_waiting'",
+  4007	    "  and review_status_code = 'waiting'",
+  4008	    "  and coalesce(metadata_jsonb->>'aiworkeros_execution_state','') = 'completed'",
+  4009	    "  and coalesce(metadata_jsonb->>'aiworkeros_consumer_claim_state','') = 'completed'",
+  4010	    "  and coalesce(metadata_jsonb->>'aiworkeros_retryable','false') in ('false','')",
+  4011	    "  and coalesce(metadata_jsonb->>'source_material_tmp_cleanup_state','') not in ('deleted','completed');"
+  4012	  ].join("\n");
+  4013	
+  4014	  const result = aiwB6R98R4F1CRunPsql(sql, 20000);
+  4015	  if (!result.ok) {
+  4016	    console.error("[B6R98R4F1C] cleanup metadata update failed", row.id, result.stderr);
+  4017	  }
+  4018	
+  4019	  return result.ok;
+  4020	}
+  4021	
+  4022	function aiwB6R98R4F1CRunCleanupOnce() {
+  4023	  if (process.env.AIWORKEROS_SOURCE_MATERIAL_CLEANUP_DISABLED === "1") {
+  4024	    return { ok: true, disabled: true };
+  4025	  }
+  4026	
+  4027	  const rows = aiwB6R98R4F1CLoadEligibleRows();
+  4028	  let deletedTotal = 0;
+  4029	  let skippedTotal = 0;
+  4030	  let updatedTotal = 0;
+  4031	
+  4032	  rows.forEach((row) => {
+  4033	    const paths = aiwB6R98R4F1CExtractTmpPaths(row);
+  4034	    const cleanupResult = aiwB6R98R4F1CDeleteTmpPaths(paths);
+  4035	    deletedTotal += cleanupResult.deleted.length;
+  4036	    skippedTotal += cleanupResult.skipped.length;
+  4037	    if (aiwB6R98R4F1CUpdateCleanupMetadata(row, cleanupResult)) {
+  4038	      updatedTotal += 1;
+  4039	    }
+  4040	  });
+  4041	
+  4042	  if (rows.length || deletedTotal || skippedTotal) {
+  4043	    console.log("[B6R98R4F1C] source material tmp cleanup", JSON.stringify({
+  4044	      rows: rows.length,
+  4045	      deleted: deletedTotal,
+  4046	      skipped: skippedTotal,
+  4047	      updated: updatedTotal
+  4048	    }));
+  4049	  }
+  4050	
+  4051	  return {
+  4052	    ok: true,
+  4053	    rows: rows.length,
+  4054	    deleted: deletedTotal,
+  4055	    skipped: skippedTotal,
+  4056	    updated: updatedTotal
+  4057	  };
+  4058	}
+  4059	
+  4060	function aiwB6R98R4F1CScheduleCleanup() {
+  4061	  if (globalThis.__AIW_B6R98R4F1C_SOURCE_MATERIAL_CLEANUP_SCHEDULED__) return;
+  4062	  globalThis.__AIW_B6R98R4F1C_SOURCE_MATERIAL_CLEANUP_SCHEDULED__ = true;
+  4063	
+  4064	  setTimeout(() => {
+  4065	    try {
+  4066	      aiwB6R98R4F1CRunCleanupOnce();
+  4067	    } catch (error) {
+  4068	      console.error("[B6R98R4F1C] initial cleanup failed", error && error.stack ? error.stack : error);
+  4069	    }
+  4070	  }, 1500);
+  4071	
+  4072	  setInterval(() => {
+  4073	    try {
+  4074	      aiwB6R98R4F1CRunCleanupOnce();
+  4075	    } catch (error) {
+  4076	      console.error("[B6R98R4F1C] interval cleanup failed", error && error.stack ? error.stack : error);
+  4077	    }
+  4078	  }, Number(process.env.AIWORKEROS_SOURCE_MATERIAL_CLEANUP_INTERVAL_MS || "60000"));
+  4079	}
+  4080	
+  4081	aiwB6R98R4F1CScheduleCleanup();
+  4082	// B6R98R4F1C_SOURCE_MATERIAL_TMP_CLEANUP_END

@@ -1,0 +1,322 @@
+line	score	category	text
+6	5	execution_candidate	 async function gkd4eR3RunRuntimeGuardrailPreflight(runtimeRequest) {
+7	5	execution_candidate	   return guardrailRuntimePreflight.runAndPersistGuardrailPreflight(runtimeRequest);
+76	5	execution_candidate	     payload.runtime_request_id ||
+336	3	artifact_candidate	     summary_text  role + " role produced a stable minimum deliverable.",
+336	5	execution_candidate	     summary_text  role + " role produced a stable minimum deliverable.",
+420	5	execution_candidate	     body.runtime_execution_request_id
+430	1	route_candidate	   const returnTargetType = aiwB6R44fText(body.return_target_type || metadata.return_target_type || source.return_target_type);
+431	1	route_candidate	   const returnTargetId = aiwB6R44fText(body.return_target_id || metadata.return_target_id || source.return_target_id);
+432	1	route_candidate	   const reexecuteTargetType = aiwB6R44fText(body.reexecute_target_type || metadata.reexecute_target_type || source.reexecute_target_type);
+433	1	route_candidate	   const reexecuteTargetId = aiwB6R44fText(body.reexecute_target_id || metadata.reexecute_target_id || source.reexecute_target_id);
+437	1	route_candidate	   if (returnTargetType) route.return_target_type = returnTargetType;
+438	1	route_candidate	   if (returnTargetId) route.return_target_id = returnTargetId;
+439	1	route_candidate	   if (reexecuteTargetType) route.reexecute_target_type = reexecuteTargetType;
+440	1	route_candidate	   if (reexecuteTargetId) route.reexecute_target_id = reexecuteTargetId;
+488	2	response_candidate	 // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_START
+491	2	response_candidate	   SendJson boundary wrapper.
+500	5	execution_candidate	   if (row.request_id || row.runtime_execution_request_id || row.request_code) return true;
+548	2	response_candidate	 // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_SOURCE_ROUTE_HELPER_END
+591	2	response_candidate	 function sendJson(res, status, payload) {
+592	2	response_candidate	   // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_START
+596	2	response_candidate	     // Keep sendJson stable for non-runtime payloads.
+598	2	response_candidate	   // AIWORKEROS_V10L_C2G_B6R44G_R4_SENDJSON_BODY_WRAP_END
+600	2	response_candidate	   res.writeHead(status, {
+604	2	response_candidate	   res.end(JSON.stringify(aiwB6R96R1G2EnsureRequesterDeliveryPayload(payload, null, 2)));
+637	1	route_candidate	  * were not substituted and were sent to PostgreSQL as-is.
+716	5	execution_candidate	       left join aiworker.runtime_execution_request rr
+725	1	route_candidate	     request_id  query.get("request_id") || "",
+726	1	route_candidate	     request_code  query.get("request_code") || "",
+727	1	route_candidate	     app_surface_code  query.get("app_surface_code") || "",
+728	1	route_candidate	     limit  normalizeLimit(query.get("limit"))
+738	5	execution_candidate	       left join aiworker.runtime_execution_request rr
+747	1	route_candidate	     request_id  query.get("request_id") || "",
+748	1	route_candidate	     request_code  query.get("request_code") || "",
+749	1	route_candidate	     app_surface_code  query.get("app_surface_code") || "",
+750	1	route_candidate	     limit  normalizeLimit(query.get("limit"))
+766	1	route_candidate	     request_id  query.get("request_id") || "",
+767	1	route_candidate	     request_code  query.get("request_code") || "",
+768	1	route_candidate	     limit  normalizeLimit(query.get("limit"))
+782	3	artifact_candidate	   - Requester apps store summary_text plus deliverable_ref / deliverable_link.
+782	5	execution_candidate	   - Requester apps store summary_text plus deliverable_ref / deliverable_link.
+819	5	execution_candidate	   const roleLayerCode = aiwB6R95R3R3OneLine(payload.role_layer_code || payload.roleLayerCode, "runtime_resolved_by_aiworker");
+820	5	execution_candidate	   const seriesCode = aiwB6R95R3R3OneLine(payload.series_code || payload.seriesCode, "runtime_resolved_by_aiworker");
+821	5	execution_candidate	   const capabilityProfileCode = aiwB6R95R3R3OneLine(payload.capability_profile_code || payload.capabilityProfileCode, "runtime_resolved_by_aiworker");
+848	3	artifact_candidate	   const deliverablePackage = aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle);
+848	5	execution_candidate	   const deliverablePackage = aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle);
+850	3	artifact_candidate	     `AIWorkerOSが${modelCode}を成果物生成主体として、${taskTitle}の一次成果物と一次サマリを作成しました。依頼元アプリはこのsummary_textとdeliverable_ref/linkを保存してレビューに利用できます。`,
+850	5	execution_candidate	     `AIWorkerOSが${modelCode}を成果物生成主体として、${taskTitle}の一次成果物と一次サマリを作成しました。依頼元アプリはこのsummary_textとdeliverable_ref/linkを保存してレビューに利用できます。`,
+870	3	artifact_candidate	     "依頼元アプリでsummary_textとdeliverable_ref/linkを保存する。",
+870	5	execution_candidate	     "依頼元アプリでsummary_textとdeliverable_ref/linkを保存する。",
+917	5	execution_candidate	   const generatedArtifacts = [
+948	5	execution_candidate	     deliverable_package  deliverablePackage,
+949	3	artifact_candidate	     deliverable_link  deliverablePackage.zip_link,
+949	5	execution_candidate	     deliverable_link  deliverablePackage.zip_link,
+950	3	artifact_candidate	     generated_artifacts  generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+950	5	execution_candidate	     generated_artifacts  generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+970	5	execution_candidate	       deliverable_package  deliverablePackage,
+971	3	artifact_candidate	       deliverable_link  deliverablePackage.zip_link,
+971	5	execution_candidate	       deliverable_link  deliverablePackage.zip_link,
+972	3	artifact_candidate	       generated_artifacts  generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+972	5	execution_candidate	       generated_artifacts  generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index)),
+974	3	artifact_candidate	       summary_text  summaryText,
+974	5	execution_candidate	       summary_text  summaryText,
+993	5	execution_candidate	     deliverablePackage,
+994	5	execution_candidate	     generatedArtifacts,
+1069	5	execution_candidate	   for (const nestedKey of ["payload", "request_payload", "input_json", "body", "request", "runtime_request"]) {
+1122	3	artifact_candidate	     if (!terms.includes(v) && !/してください|成果物|summary|generated|artifacts|link|zip/.test(v)) terms.push(v);
+1122	5	execution_candidate	     if (!terms.includes(v) && !/してください|成果物|summary|generated|artifacts|link|zip/.test(v)) terms.push(v);
+1371	3	artifact_candidate	   blocks.push("依頼元アプリは summary_text と deliverable_link を保存し、必要に応じて追加条件を指定して再生成できます。");
+1371	5	execution_candidate	   blocks.push("依頼元アプリは summary_text と deliverable_link を保存し、必要に応じて追加条件を指定して再生成できます。");
+1515	5	execution_candidate	   ["payload", "request_payload", "input_json", "body", "request", "runtime_request", "metadata_jsonb", "metadata"].forEach((key) => {
+1723	2	response_candidate	       rejected.push({ path  candidate, reason  "max_files_exceeded" });
+1732	2	response_candidate	         rejected.push({ path  candidate, reason  "outside_allowed_roots" });
+1742	2	response_candidate	         rejected.push({ path  candidate, reason  "unsupported_source_extension", media_type  aiwB6R97R67MaterialType });
+1748	2	response_candidate	         rejected.push({ path  candidate, reason  "not_found" });
+1754	2	response_candidate	         rejected.push({ path  candidate, reason  "not_file" });
+1759	2	response_candidate	         rejected.push({ path  candidate, reason  "file_too_large", size  stat.size });
+1798	2	response_candidate	         reason  "read_error",
+1799	2	response_candidate	         message  error && error.message ? error.message   String(error)
+1933	5	execution_candidate	   if (Array.isArray(safeDeliverable.generatedArtifacts)) {
+1934	5	execution_candidate	     safeDeliverable.generatedArtifacts = safeDeliverable.generatedArtifacts.map((artifact) => {
+1942	3	artifact_candidate	   if (safeDeliverable.outputPayload && Array.isArray(safeDeliverable.outputPayload.generated_artifacts)) {
+1942	5	execution_candidate	   if (safeDeliverable.outputPayload && Array.isArray(safeDeliverable.outputPayload.generated_artifacts)) {
+1943	3	artifact_candidate	     safeDeliverable.outputPayload.generated_artifacts = safeDeliverable.outputPayload.generated_artifacts.map((artifact) => {
+1943	5	execution_candidate	     safeDeliverable.outputPayload.generated_artifacts = safeDeliverable.outputPayload.generated_artifacts.map((artifact) => {
+1985	3	artifact_candidate	 // AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_START
+1988	3	artifact_candidate	   Multi-artifact deliverable zip package contract.
+1988	5	execution_candidate	   Multi-artifact deliverable zip package contract.
+1991	5	execution_candidate	   - AIWorkerOS creates one or more deliverable artifacts from the instruction.
+1992	3	artifact_candidate	   - AIWorkerOS creates summary_text.
+1992	5	execution_candidate	   - AIWorkerOS creates summary_text.
+1993	3	artifact_candidate	   - AIWorkerOS bundles generated artifacts into one deliverable zip.
+1993	5	execution_candidate	   - AIWorkerOS bundles generated artifacts into one deliverable zip.
+1994	3	artifact_candidate	   - Requester apps display summary_text and link to the zip.
+1994	5	execution_candidate	   - Requester apps display summary_text and link to the zip.
+1995	3	artifact_candidate	   - The zip exists to avoid one-by-one downloads when multiple artifacts are generated.
+2009	3	artifact_candidate	 function aiwB6R95R3D1BuildZipPackageMeta(requesterAppRef, taskTitle) {
+2011	3	artifact_candidate	   const zipId = `${Date.now()}_${crypto.randomUUID()}`;
+2014	3	artifact_candidate	   const rawFileName = `${requesterPart}_${titlePart}_${zipId}.zip`;
+2016	3	artifact_candidate	   // AIWORKEROS_B6R95R3H_PACKAGE_META_ZIP_LINK_BEFORE_DB_FIX
+2017	3	artifact_candidate	   // The package metadata is saved to DB before the zip file is written.
+2018	3	artifact_candidate	   // Therefore file_name / zip_link must already use the exact sanitized filename
+2019	3	artifact_candidate	   // that will be written to disk by aiwB6R95R3D1CreateZipAndAttach.
+2020	3	artifact_candidate	   const fileName = aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables.zip").endsWith(".zip")
+2021	3	artifact_candidate	     ? aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables.zip")
+2022	3	artifact_candidate	       `${aiwB6R95R3D1SafeFilePart(rawFileName, "deliverables")}.zip`;
+2023	3	artifact_candidate	   const zipLink = `aiworkeros //runtime-deliverable-zip/${fileName}`;
+2027	3	artifact_candidate	     package_format  "zip",
+2028	3	artifact_candidate	     mime_type  "application/zip",
+2029	3	artifact_candidate	     zip_id  zipId,
+2031	3	artifact_candidate	     zip_link  zipLink,
+2032	3	artifact_candidate	     zip_ref  {
+2034	3	artifact_candidate	       storage_code  "runtime-deliverable-zip",
+2040	5	execution_candidate	 function aiwB6R95R3D1NormalizeGeneratedArtifact(item, index) {
+2163	3	artifact_candidate	 /* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_START */
+2220	3	artifact_candidate	       "zip",
+2368	3	artifact_candidate	 /* AIWORKEROS_B6R97R40_PRE_ZIP_BODY_SOURCE_ORDER_END */
+2405	5	execution_candidate	       /generatedArtifacts\[[0-9]+\]\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path) ||
+2406	3	artifact_candidate	       /generated_artifacts\[[0-9]+\]\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path);
+2406	5	execution_candidate	       /generated_artifacts\[[0-9]+\]\.(bodyMarkdown|body_markdown|output_body_ja)$/i.test(path);
+2467	3	artifact_candidate	     const nextStepLike = /next_steps|nextSteps|next_step|nextStep|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path) ||
+2467	5	execution_candidate	     const nextStepLike = /next_steps|nextSteps|next_step|nextStep|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path) ||
+2468	3	artifact_candidate	       text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+2468	5	execution_candidate	       text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+2473	3	artifact_candidate	     const nonMainArtifactPathLike = /qualityNotes|quality_notes|unresolvedIssues|unresolved_issues|nextSteps|next_steps|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path);
+2473	5	execution_candidate	     const nonMainArtifactPathLike = /qualityNotes|quality_notes|unresolvedIssues|unresolved_issues|nextSteps|next_steps|summary_text|summaryText|deliverable_ref|deliverableRef/i.test(path);
+2479	3	artifact_candidate	       text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+2479	5	execution_candidate	       text.includes("依頼元アプリでsummary_textとdeliverable_ref/linkを保存する") ||
+2548	5	execution_candidate	 function aiwB6R95R3D1BuildGeneratedArtifacts(deliverable) {
+2578	5	execution_candidate	   const provided = Array.isArray(deliverable?.generatedArtifacts) ? deliverable.generatedArtifacts   [];
+2584	5	execution_candidate	       const normalized = aiwB6R95R3D1NormalizeGeneratedArtifact(item, index);
+2640	5	execution_candidate	   return artifacts.map(aiwB6R95R3D1NormalizeGeneratedArtifact);
+2643	3	artifact_candidate	 function aiwB6R95R3D1ZipCrc32(buffer) {
+2644	3	artifact_candidate	   let table = aiwB6R95R3D1ZipCrc32._table;
+2654	3	artifact_candidate	     aiwB6R95R3D1ZipCrc32._table = table;
+2663	3	artifact_candidate	 function aiwB6R95R3D1ZipDosDateTime(date) {
+2664	1	route_candidate	   const year = Math.max(1980, date.getFullYear());
+2665	1	route_candidate	   const dosTime = (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2);
+2666	1	route_candidate	   const dosDate = ((year - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate();
+2670	3	artifact_candidate	 function aiwB6R95R3D1ZipStored(entries) {
+2674	3	artifact_candidate	   const now = aiwB6R95R3D1ZipDosDateTime(new Date());
+2679	3	artifact_candidate	     const crc = aiwB6R95R3D1ZipCrc32(dataBuffer);
+2734	3	artifact_candidate	 /* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_START */
+2918	5	execution_candidate	   merged.generatedArtifacts = patchArtifactArray(merged.generatedArtifacts);
+2919	3	artifact_candidate	   merged.generated_artifacts = patchArtifactArray(merged.generated_artifacts);
+2919	5	execution_candidate	   merged.generated_artifacts = patchArtifactArray(merged.generated_artifacts);
+2923	3	artifact_candidate	 /* AIWORKEROS_B6R97R43_CREATE_ZIP_PROVIDED_BODY_PRIORITY_END */
+2925	3	artifact_candidate	 function aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable) {
+2930	3	artifact_candidate	   const packageMeta = deliverable?.deliverablePackage || aiwB6R95R3D1BuildZipPackageMeta("requester", "deliverables");
+2930	5	execution_candidate	   const packageMeta = deliverable?.deliverablePackage || aiwB6R95R3D1BuildZipPackageMeta("requester", "deliverables");
+2931	5	execution_candidate	   const generatedArtifacts = aiwB6R95R3D1BuildGeneratedArtifacts(aiwB6R97R43MergeProvidedBodyIntoDeliverable(deliverable, ...arguments, deliverable));
+2933	3	artifact_candidate	   const zipDir = process.env.AIWORKEROS_DELIVERABLE_ZIP_DIR || path.join(process.cwd(), "runtime-deliverable-zips");
+2934	3	artifact_candidate	   fs.mkdirSync(zipDir, { recursive  true });
+2936	3	artifact_candidate	   const fileName = aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip").endsWith(".zip")
+2937	3	artifact_candidate	     ? aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables.zip")
+2938	3	artifact_candidate	       `${aiwB6R95R3D1SafeFilePart(packageMeta.file_name, "deliverables")}.zip`;
+2939	3	artifact_candidate	   const zipPath = path.join(zipDir, fileName);
+2941	3	artifact_candidate	   // AIWORKEROS_B6R95R3F_ZIP_LINK_ACTUAL_FILE_FIX
+2942	3	artifact_candidate	   // Keep the returned zip link aligned with the actual sanitized filename written to disk.
+2943	3	artifact_candidate	   const actualZipLink = `aiworkeros //runtime-deliverable-zip/${fileName}`;
+2944	3	artifact_candidate	   const actualZipRef = Object.assign({}, packageMeta.zip_ref || {}, {
+2946	3	artifact_candidate	     storage_code  "runtime-deliverable-zip",
+2950	3	artifact_candidate	   const summaryText = response.deliverable?.summary_text || deliverable?.summaryText || "";
+2950	5	execution_candidate	   const summaryText = response.deliverable?.summary_text || deliverable?.summaryText || "";
+2953	3	artifact_candidate	     contract_name  "aiworkeros_common_requester_multi_artifact_zip_contract",
+2954	3	artifact_candidate	     package_purpose  "bundle_generated_artifacts_for_single_download",
+2954	5	execution_candidate	     package_purpose  "bundle_generated_artifacts_for_single_download",
+2958	3	artifact_candidate	     summary_text  summaryText,
+2958	5	execution_candidate	     summary_text  summaryText,
+2959	5	execution_candidate	     artifact_count  generatedArtifacts.length,
+2960	3	artifact_candidate	     generated_artifacts  generatedArtifacts.map((artifact) => ({
+2960	5	execution_candidate	     generated_artifacts  generatedArtifacts.map((artifact) => ({
+2967	3	artifact_candidate	     deliverable_ref  response.deliverable_ref || null,
+2976	5	execution_candidate	     ...generatedArtifacts.map((artifact) => ({
+2983	3	artifact_candidate	   const zipBuffer = aiwB6R95R3D1ZipStored(entries);
+2984	3	artifact_candidate	   fs.writeFileSync(zipPath, zipBuffer);
+2985	3	artifact_candidate	   const stat = fs.statSync(zipPath);
+2987	3	artifact_candidate	   const zipPublic = {
+2989	3	artifact_candidate	     package_format  "zip",
+2990	3	artifact_candidate	     mime_type  "application/zip",
+2991	3	artifact_candidate	     zip_id  packageMeta.zip_id,
+2993	3	artifact_candidate	     zip_link  actualZipLink,
+2994	3	artifact_candidate	     zip_ref  actualZipRef,
+2997	5	execution_candidate	     artifact_count  generatedArtifacts.length,
+3001	3	artifact_candidate	   response.generated_artifacts = generatedArtifacts.map((artifact) => ({
+3001	5	execution_candidate	   response.generated_artifacts = generatedArtifacts.map((artifact) => ({
+3008	3	artifact_candidate	   response.deliverable_package = zipPublic;
+3008	5	execution_candidate	   response.deliverable_package = zipPublic;
+3009	3	artifact_candidate	   response.deliverable_zip_ref = actualZipRef;
+3010	3	artifact_candidate	   response.deliverable_link = actualZipLink;
+3013	3	artifact_candidate	     summary_text  summaryText,
+3013	5	execution_candidate	     summary_text  summaryText,
+3014	3	artifact_candidate	     deliverable_link  actualZipLink,
+3015	3	artifact_candidate	     deliverable_package  zipPublic,
+3015	5	execution_candidate	     deliverable_package  zipPublic,
+3016	3	artifact_candidate	     deliverable_zip_ref  actualZipRef,
+3017	3	artifact_candidate	     generated_artifacts  response.generated_artifacts
+3017	5	execution_candidate	     generated_artifacts  response.generated_artifacts
+3021	3	artifact_candidate	     deliverable_package  zipPublic,
+3021	5	execution_candidate	     deliverable_package  zipPublic,
+3022	3	artifact_candidate	     zip_link  actualZipLink,
+3023	3	artifact_candidate	     generated_artifacts  response.generated_artifacts
+3023	5	execution_candidate	     generated_artifacts  response.generated_artifacts
+3028	3	artifact_candidate	 // AIWORKEROS_B6R95R3D_R1_MULTI_ARTIFACT_ZIP_CONTRACT_END
+3030	5	execution_candidate	 function createRuntimeRequest(payload, idempotencyKeyFromHeader) {
+3057	5	execution_candidate	     "  select aiworker.fn_runtime_execution_create_request_with_route_v1(",
+3071	5	execution_candidate	     "  select aiworker.fn_runtime_execution_submit_worker_output(",
+3102	5	execution_candidate	     "    'deliverable_package',  'deliverable_package_jsonb'  jsonb,",
+3103	3	artifact_candidate	     "    'generated_artifacts',  'generated_artifacts_jsonb'  jsonb,",
+3103	5	execution_candidate	     "    'generated_artifacts',  'generated_artifacts_jsonb'  jsonb,",
+3105	3	artifact_candidate	     "    'summary_text',  'output_summary_ja',",
+3105	5	execution_candidate	     "    'summary_text',  'output_summary_ja',",
+3110	3	artifact_candidate	     "    'zip_link',  'deliverable_zip_link'",
+3112	3	artifact_candidate	     "  'deliverable_ref', jsonb_build_object(",
+3115	5	execution_candidate	     "    'table', 'runtime_worker_output',",
+3118	3	artifact_candidate	     "  'deliverable_link',  'deliverable_zip_link',",    "  'requester_delivery_payload', jsonb_build_object(",
+3119	3	artifact_candidate	     "    'summary_text',  'output_summary_ja',",
+3119	5	execution_candidate	     "    'summary_text',  'output_summary_ja',",
+3124	3	artifact_candidate	     "    'generated_artifacts',  'generated_artifacts_jsonb'  jsonb,",
+3124	5	execution_candidate	     "    'generated_artifacts',  'generated_artifacts_jsonb'  jsonb,",
+3125	3	artifact_candidate	     "    'deliverable_link',  'deliverable_zip_link',",
+3126	5	execution_candidate	     "    'deliverable_package',  'deliverable_package_jsonb'  jsonb,",
+3127	3	artifact_candidate	     "    'deliverable_ref', jsonb_build_object(",
+3130	5	execution_candidate	     "      'table', 'runtime_worker_output',",
+3159	5	execution_candidate	     deliverable_package_jsonb  JSON.stringify(deliverable.deliverablePackage),
+3160	3	artifact_candidate	     deliverable_zip_link  deliverable.deliverablePackage.zip_link,
+3160	5	execution_candidate	     deliverable_zip_link  deliverable.deliverablePackage.zip_link,
+3161	3	artifact_candidate	     generated_artifacts_jsonb  JSON.stringify(deliverable.generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index))),
+3161	5	execution_candidate	     generated_artifacts_jsonb  JSON.stringify(deliverable.generatedArtifacts.map((artifact, index) => aiwB6R95R3D1NormalizeGeneratedArtifact(artifact, index))),
+3168	3	artifact_candidate	   return aiwB6R95R3D1CreateZipAndAttach(responsePayload, deliverable);
+3171	1	route_candidate	 const server = http.createServer(async (req, res) => {
+3172	1	route_candidate	   const url = new URL(req.url, `http //${req.headers.host || "127.0.0.1"}`);
+3175	1	route_candidate	     if (req.method === "GET" && url.pathname === "/health") {
+3176	2	response_candidate	       return sendJson(res, 200, {
+3177	2	response_candidate	         ok  true,
+3187	2	response_candidate	       return sendJson(res, 401, {
+3190	2	response_candidate	         message  "Missing or invalid Authorization bearer token."
+3194	1	route_candidate	     if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/endpoint-ready") {
+3195	2	response_candidate	       return sendJson(res, 200, { result  "ok", data  endpointReady() });
+3198	1	route_candidate	     if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/api-contract") {
+3199	2	response_candidate	       return sendJson(res, 200, { result  "ok", data  apiContracts() });
+3202	1	route_candidate	     if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/persistent-smoke") {
+3203	2	response_candidate	       return sendJson(res, 200, { result  "ok", data  persistentSmoke() });
+3206	1	route_candidate	     if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/pipeline-board") {
+3207	2	response_candidate	       return sendJson(res, 200, { result  "ok", data  pipelineBoard(url.searchParams) });
+3210	1	route_candidate	     if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/app-read-payload") {
+3211	2	response_candidate	       return sendJson(res, 200, { result  "ok", data  appReadPayload(url.searchParams) });
+3214	1	route_candidate	     if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/delivery") {
+3215	2	response_candidate	       return sendJson(res, 200, { result  "ok", data  deliveryBoard(url.searchParams) });
+3220	1	route_candidate	     if (req.method === "GET" && url.pathname === "/aiworker/v1/runtime-execution/brain-context") {
+3221	1	route_candidate	       const modelCode = url.searchParams.get("model_code") || url.searchParams.get("modelCode") || "";
+3223	1	route_candidate	         url.searchParams.get("use_purpose_code") ||
+3224	1	route_candidate	         url.searchParams.get("purpose_code") ||
+3225	1	route_candidate	         url.searchParams.get("task_domain_code") ||
+3227	1	route_candidate	       const domainsRaw = url.searchParams.get("domains") || "";
+3232	1	route_candidate	         url.searchParams.get("include_missing_sources") === "true" ||
+3233	1	route_candidate	         url.searchParams.get("includeMissingSources") === "true";
+3242	2	response_candidate	       return sendJson(res, 200, {
+3254	1	route_candidate	     if (req.method === "POST" && url.pathname === "/aiworker/v1/runtime-execution/request") {
+3254	5	execution_candidate	     if (req.method === "POST" && url.pathname === "/aiworker/v1/runtime-execution/request") {
+3260	2	response_candidate	         return sendJson(res, 400, {
+3263	2	response_candidate	           message  "Request body must be valid JSON."
+3268	5	execution_candidate	       const result = createRuntimeRequest(payload, idempotencyKey);
+3269	2	response_candidate	       return sendJson(res, 201, result);
+3272	2	response_candidate	     return sendJson(res, 404, {
+3275	1	route_candidate	       path  url.pathname
+3279	2	response_candidate	     return sendJson(res, status, {
+3282	2	response_candidate	       message  err.message,
+3300	5	execution_candidate	 // This consumer scans waiting/retryable work, claims it, calls existing createRuntimeRequest,
+3360	3	artifact_candidate	     "    coalesce(u.metadata_jsonb->>'aiworkeros_execution_state','') in ('waiting','waiting_for_artifact_zip')",
+3424	5	execution_candidate	     (result && result.runtime_request_id) ||
+3433	3	artifact_candidate	     (result && result.deliverable_ref && result.deliverable_ref.id) ||
+3434	3	artifact_candidate	     (result && result.requester_delivery_payload && result.requester_delivery_payload.deliverable_ref && result.requester_delivery_payload.deliverable_ref.id) ||
+3441	3	artifact_candidate	     (result && result.requester_delivery_payload && result.requester_delivery_payload.summary_text) ||
+3441	5	execution_candidate	     (result && result.requester_delivery_payload && result.requester_delivery_payload.summary_text) ||
+3442	3	artifact_candidate	     (result && result.deliverable && result.deliverable.summary_text) ||
+3442	5	execution_candidate	     (result && result.deliverable && result.deliverable.summary_text) ||
+3443	3	artifact_candidate	     (result && result.summary_text) ||
+3443	5	execution_candidate	     (result && result.summary_text) ||
+3452	3	artifact_candidate	     (result && result.deliverable && result.deliverable.zip_link) ||
+3464	1	route_candidate	     .replace(/postgres(? ql)? \/\/[^\s]+/gi, "[DB_URL_REDACTED]")
+3505	1	route_candidate	     "      and pg_get_constraintdef(c.oid) like '%' || " + aiwB6R97R14SqlLiteral(artifactKind) + " || '%'",
+3507	1	route_candidate	     "), target as (",
+3531	1	route_candidate	     "  from target t",
+3545	3	artifact_candidate	     "    delivery_summary_text = coalesce(nullif(h.delivery_summary_text,''), 'AIWorkerOS consumer generated deliverable, summary, and delivery package.'),",
+3545	5	execution_candidate	     "    delivery_summary_text = coalesce(nullif(h.delivery_summary_text,''), 'AIWorkerOS consumer generated deliverable, summary, and delivery package.'),",
+3546	3	artifact_candidate	     "    main_changes_text = coalesce(nullif(h.main_changes_text,''), 'AIWorkerOS consumer generated deliverable, summary, and zip link.'),",
+3572	3	artifact_candidate	     "    delivery_summary_text,",
+3572	5	execution_candidate	     "    delivery_summary_text,",
+3593	5	execution_candidate	     "    'AIWorkerOS consumer generated deliverable, summary, and delivery package.',",
+3594	3	artifact_candidate	     "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+3681	3	artifact_candidate	     "      delivery_summary_text = " + aiwB6R97R14SqlLiteral(summary) + ",",
+3681	5	execution_candidate	     "      delivery_summary_text = " + aiwB6R97R14SqlLiteral(summary) + ",",
+3704	3	artifact_candidate	     "    delivery_summary_text,",
+3704	5	execution_candidate	     "    delivery_summary_text,",
+3726	3	artifact_candidate	     "    'AIWorkerOS consumer generated deliverable, summary, and zip link.',",
+3754	2	response_candidate	     lastReason  "",
+3759	2	response_candidate	   if (state.running) return { skipped  true, reason  "already_running" };
+3765	5	execution_candidate	   const limit = Math.max(1, Number(process.env.AIWORKER_QUEUE_CONSUMER_BATCH_LIMIT || "5") || 5);
+3784	5	execution_candidate	         const result = createRuntimeRequest(payload, idempotencyKey);
+3800	5	execution_candidate	   if (process.env.AIWORKER_QUEUE_CONSUMER_ENABLED === "0") {
+3809	5	execution_candidate	   const intervalMs = Math.max(1000, Number(process.env.AIWORKER_QUEUE_CONSUMER_INTERVAL_MS || "5000") || 5000);
+3813	1	route_candidate	       console.error("[B6R97R14] startup consumer failed", String(error && error.message ? error.message   error).replace(/postgres(? ql)? \/\/[^\s]+/gi, "[DB_URL_REDACTED]").split("\n").slice(0, 8).join("\n"));
+3819	1	route_candidate	       console.error("[B6R97R14] interval consumer failed", String(error && error.message ? error.message   error).replace(/postgres(? ql)? \/\/[^\s]+/gi, "[DB_URL_REDACTED]").split("\n").slice(0, 8).join("\n"));
+3836	5	execution_candidate	 // Deletes only AICM runtime-source-files/tmp files after worker_unit reaches completed/review_waiting.
+3855	1	route_candidate	   const target = aiwB6R98R4F1CPath.resolve(aiwB6R98R4F1CText(value));
+3857	1	route_candidate	   return target === root || target.startsWith(root + aiwB6R98R4F1CPath.sep);
+3889	2	response_candidate	       ok  false,
+3908	2	response_candidate	     ok  result.status === 0,
+3964	1	route_candidate	     const target = aiwB6R98R4F1CPath.resolve(aiwB6R98R4F1CText(rawPath));
+3965	1	route_candidate	     if (!aiwB6R98R4F1CIsUnderTmpRoot(target)) {
+3966	2	response_candidate	       skipped.push({ path  rawPath, reason  "outside_tmp_root" });
+3971	1	route_candidate	       if (aiwB6R98R4F1CFs.existsSync(target) && aiwB6R98R4F1CFs.statSync(target).isFile()) {
+3972	1	route_candidate	         aiwB6R98R4F1CFs.unlinkSync(target);
+3973	1	route_candidate	         deleted.push(target);
+3975	1	route_candidate	         skipped.push({ path  target, reason  "not_found_or_not_file" });
+3975	2	response_candidate	         skipped.push({ path  target, reason  "not_found_or_not_file" });
+3979	1	route_candidate	         path  target,
+3980	2	response_candidate	         reason  "delete_error",
+3981	2	response_candidate	         message  error && error.message ? error.message   String(error)
+4033	2	response_candidate	     return { ok  true, disabled  true };
+4061	2	response_candidate	     ok  true,

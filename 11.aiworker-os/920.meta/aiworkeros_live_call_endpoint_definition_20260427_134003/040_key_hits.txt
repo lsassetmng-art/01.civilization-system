@@ -1,0 +1,32 @@
+148:-    118	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/AICompanyManager/live-aiworkeros-call/00_INDEX.md
+149:-    119	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/AICompanyManager/live-aiworkeros-call/00_OVERVIEW.md
+150:-    120	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/AICompanyManager/live-aiworkeros-call/10_LIVE_AIWORKEROS_CALL_ENDPOINT_CONTRACT.md
+151:-    121	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/AICompanyManager/live-aiworkeros-call/20_REQUEST_RESPONSE_EXACT_PAYLOAD.md
+152:-    122	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/AICompanyManager/live-aiworkeros-call/30_SECURITY_IDEMPOTENCY_AND_BOUNDARY.md
+153:-    123	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/060.integration/AICompanyManager/live-aiworkeros-call/40_IMPLEMENTATION_GATE_AND_NOT_EXECUTED_RULE.md
+220050:# SOURCE: 060.integration/AICompanyManager/live-aiworkeros-call/00_INDEX.md
+220052:# live-aiworkeros-call INDEX
+220056:AIWorkerOS / 060.integration / AICompanyManager / live-aiworkeros-call
+220086:# SOURCE: 060.integration/AICompanyManager/live-aiworkeros-call/00_OVERVIEW.md
+220122:PERSONA_DATABASE_URL is for PostgreSQL or Supabase DB access.
+220129:- PERSONA_AIWORKEROS_BASE_URL
+220130:- PERSONA_AIWORKEROS_AUTH_TOKEN
+220134:- AIWORKEROS_BASE_URL
+220141:POST /aicm/v1/workflow-start/live-aiworkeros-call
+220145:{PERSONA_AIWORKEROS_BASE_URL}/aicm/v1/workflow-start/live-aiworkeros-call
+220161:# SOURCE: 060.integration/AICompanyManager/live-aiworkeros-call/10_LIVE_AIWORKEROS_CALL_ENDPOINT_CONTRACT.md
+220167:POST /aicm/v1/workflow-start/live-aiworkeros-call
+220171:{PERSONA_AIWORKEROS_BASE_URL}/aicm/v1/workflow-start/live-aiworkeros-call
+220194:- Authorization: Bearer <PERSONA_AIWORKEROS_AUTH_TOKEN>
+220195:- Idempotency-Key: aicm-live-aiworkeros-<workflow_run_id>
+220223:2. Validate Idempotency-Key.
+220250:# SOURCE: 060.integration/AICompanyManager/live-aiworkeros-call/20_REQUEST_RESPONSE_EXACT_PAYLOAD.md
+220317:  "next_poll_url": "/aicm/v1/workflow-start/live-aiworkeros-call/00000000-0000-4000-8000-a10000000001"
+220350:# SOURCE: 060.integration/AICompanyManager/live-aiworkeros-call/30_SECURITY_IDEMPOTENCY_AND_BOUNDARY.md
+220360:- Idempotency-Key
+220427:# SOURCE: 060.integration/AICompanyManager/live-aiworkeros-call/40_IMPLEMENTATION_GATE_AND_NOT_EXECUTED_RULE.md
+220447:- PERSONA_AIWORKEROS_BASE_URL
+220448:- AIWORKEROS_BASE_URL
+220455:POST /aicm/v1/workflow-start/live-aiworkeros-call
+220462:4. Endpoint handles duplicate Idempotency-Key safely.
+220470:- live AIWorkerOS call must be recorded as BLOCKED_BY_MISSING_ENDPOINT.

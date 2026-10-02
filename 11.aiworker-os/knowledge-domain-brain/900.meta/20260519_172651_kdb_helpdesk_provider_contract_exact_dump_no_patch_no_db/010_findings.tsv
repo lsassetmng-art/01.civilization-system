@@ -1,0 +1,13 @@
+PASS	TARGET_FILE_EXISTS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/lib/knowledge-domain-brain/helpdesk-provider.mjs
+PASS	TARGET_FILE_EXISTS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/lib/knowledge-domain-brain/index.mjs
+PASS	TARGET_FILE_EXISTS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/lib/knowledge-domain-brain/kdb-runtime-context.mjs
+PASS	FAILED_RESULT_EXISTS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_152702_kdb_helpdesk_runtime_query_dependency_contract_harness_no_patch_no_db/120_runtime_query_dependency_contract_result.json
+PASS	SOURCE_STATIC_CONTEXT_CREATED	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_172651_kdb_helpdesk_provider_contract_exact_dump_no_patch_no_db/030_helpdesk_provider_static_contract_context.md
+PASS	CONTRACT_DUMP_NODE_EXIT_ZERO	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_172651_kdb_helpdesk_provider_contract_exact_dump_no_patch_no_db/020_provider_contract_exact_dump.json
+PASS	CONTRACT_DUMP_CREATED	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_172651_kdb_helpdesk_provider_contract_exact_dump_no_patch_no_db/020_provider_contract_exact_dump.json
+PASS	BUILD_SPEC_MENTIONS_HELPDESK_VIEW	BUILD_SPEC_WITH_VIEW_COUNT=7
+PASS	RESOLVE_QUERY_DEPENDENCY_SHAPE_CONFIRMED	RESOLVE_QUERY_CALL_COUNT=1
+PASS	CONTRACT_DECISION_CREATED	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_172651_kdb_helpdesk_provider_contract_exact_dump_no_patch_no_db/040_contract_decision.md
+PASS	PROVIDER_HAS_NO_DIRECT_DB_DEPENDENCY	PROVIDER_FORBIDDEN_COUNT=0
+PASS	TARGET_STATUS_STILL_THREE_FILES	GIT_STATUS_TARGET_COUNT=3
+PASS	SECRET_SCAN_STRONG_COUNT_ZERO	SECRET_STRONG_COUNT=0

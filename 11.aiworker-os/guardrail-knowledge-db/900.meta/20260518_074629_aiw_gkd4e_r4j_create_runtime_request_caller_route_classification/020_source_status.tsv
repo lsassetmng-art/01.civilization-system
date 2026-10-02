@@ -1,0 +1,5 @@
+name	path	exists	size_bytes
+SERVER_JS	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/server.js	YES	147469
+HELPER_FILE	/data/data/com.termux/files/home/03.civilization-development/11.aiworker-os/runtime-execution-http-api/guardrail/guardrail-runtime-preflight.cjs	YES	8373
+R4I_CALLER_CONTRACT	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/guardrail-knowledge-db/900.meta/20260518_074019_aiw_gkd4e_r4i_create_runtime_request_caller_contract/050_caller_contract.tsv	YES	269
+R4I_CALLER_CONTEXT	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/guardrail-knowledge-db/900.meta/20260518_074019_aiw_gkd4e_r4i_create_runtime_request_caller_contract/040_caller_context.md	YES	19540

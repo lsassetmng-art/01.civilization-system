@@ -1,0 +1,894 @@
+{
+  "ok": true,
+  "exports": {
+    "HELPDESK_PROVIDER_CODE": {
+      "type": "string",
+      "value": "helpdesk"
+    },
+    "HELPDESK_SUPPORTED_DOMAIN_CODES": {
+      "type": "object",
+      "value": [
+        "helpdesk",
+        "app_support"
+      ]
+    },
+    "buildHelpdeskRetrievalQuerySpec": {
+      "type": "function",
+      "length": 0
+    },
+    "createHelpdeskProvider": {
+      "type": "function",
+      "length": 0
+    },
+    "default": {
+      "type": "function",
+      "length": 0
+    },
+    "mapHelpdeskRetrievalRowToMatch": {
+      "type": "function",
+      "length": 1
+    },
+    "normalizeHelpdeskProviderInput": {
+      "type": "function",
+      "length": 0
+    },
+    "rankHelpdeskRetrievalDocuments": {
+      "type": "function",
+      "length": 0
+    },
+    "resolveHelpdeskKnowledgeContext": {
+      "type": "function",
+      "length": 0
+    }
+  },
+  "buildSpecs": [
+    {
+      "label": "query_domainCodes",
+      "inputShape": [
+        "domainCodes",
+        "limit",
+        "query"
+      ],
+      "outputType": "object",
+      "outputKeys": [
+        "normalizedInput",
+        "readonly",
+        "source",
+        "sql",
+        "values"
+      ],
+      "output": {
+        "sql": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+        "values": [
+          "ja",
+          [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          5
+        ],
+        "normalizedInput": {
+          "appCode": null,
+          "sourceAppCode": null,
+          "locale": "ja",
+          "requestKind": "qa_question",
+          "documentKinds": [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          "userQuestion": null,
+          "screenCode": null,
+          "flowCode": null,
+          "errorCode": null,
+          "errorText": null,
+          "severityHint": null,
+          "maxMatches": 5,
+          "textTerms": [],
+          "guardrailResult": null,
+          "runtimeContext": {}
+        },
+        "readonly": true,
+        "source": "aiworker.v_helpdesk_retrieval_document"
+      },
+      "sqlLike": [
+        {
+          "path": "sql",
+          "prefix": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  co",
+          "startsSelect": true,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        },
+        {
+          "path": "source",
+          "prefix": "aiworker.v_helpdesk_retrieval_document",
+          "startsSelect": false,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        }
+      ]
+    },
+    {
+      "label": "queryText_domainCodes",
+      "inputShape": [
+        "domainCodes",
+        "limit",
+        "queryText"
+      ],
+      "outputType": "object",
+      "outputKeys": [
+        "normalizedInput",
+        "readonly",
+        "source",
+        "sql",
+        "values"
+      ],
+      "output": {
+        "sql": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+        "values": [
+          "ja",
+          [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          5
+        ],
+        "normalizedInput": {
+          "appCode": null,
+          "sourceAppCode": null,
+          "locale": "ja",
+          "requestKind": "qa_question",
+          "documentKinds": [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          "userQuestion": null,
+          "screenCode": null,
+          "flowCode": null,
+          "errorCode": null,
+          "errorText": null,
+          "severityHint": null,
+          "maxMatches": 5,
+          "textTerms": [],
+          "guardrailResult": null,
+          "runtimeContext": {}
+        },
+        "readonly": true,
+        "source": "aiworker.v_helpdesk_retrieval_document"
+      },
+      "sqlLike": [
+        {
+          "path": "sql",
+          "prefix": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  co",
+          "startsSelect": true,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        },
+        {
+          "path": "source",
+          "prefix": "aiworker.v_helpdesk_retrieval_document",
+          "startsSelect": false,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        }
+      ]
+    },
+    {
+      "label": "text_domainCodes",
+      "inputShape": [
+        "domainCodes",
+        "limit",
+        "text"
+      ],
+      "outputType": "object",
+      "outputKeys": [
+        "normalizedInput",
+        "readonly",
+        "source",
+        "sql",
+        "values"
+      ],
+      "output": {
+        "sql": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+        "values": [
+          "ja",
+          [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          5
+        ],
+        "normalizedInput": {
+          "appCode": null,
+          "sourceAppCode": null,
+          "locale": "ja",
+          "requestKind": "qa_question",
+          "documentKinds": [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          "userQuestion": null,
+          "screenCode": null,
+          "flowCode": null,
+          "errorCode": null,
+          "errorText": null,
+          "severityHint": null,
+          "maxMatches": 5,
+          "textTerms": [],
+          "guardrailResult": null,
+          "runtimeContext": {}
+        },
+        "readonly": true,
+        "source": "aiworker.v_helpdesk_retrieval_document"
+      },
+      "sqlLike": [
+        {
+          "path": "sql",
+          "prefix": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  co",
+          "startsSelect": true,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        },
+        {
+          "path": "source",
+          "prefix": "aiworker.v_helpdesk_retrieval_document",
+          "startsSelect": false,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        }
+      ]
+    },
+    {
+      "label": "searchText_domainCodes",
+      "inputShape": [
+        "domainCodes",
+        "limit",
+        "searchText"
+      ],
+      "outputType": "object",
+      "outputKeys": [
+        "normalizedInput",
+        "readonly",
+        "source",
+        "sql",
+        "values"
+      ],
+      "output": {
+        "sql": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+        "values": [
+          "ja",
+          [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          5
+        ],
+        "normalizedInput": {
+          "appCode": null,
+          "sourceAppCode": null,
+          "locale": "ja",
+          "requestKind": "qa_question",
+          "documentKinds": [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          "userQuestion": null,
+          "screenCode": null,
+          "flowCode": null,
+          "errorCode": null,
+          "errorText": null,
+          "severityHint": null,
+          "maxMatches": 5,
+          "textTerms": [],
+          "guardrailResult": null,
+          "runtimeContext": {}
+        },
+        "readonly": true,
+        "source": "aiworker.v_helpdesk_retrieval_document"
+      },
+      "sqlLike": [
+        {
+          "path": "sql",
+          "prefix": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  co",
+          "startsSelect": true,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        },
+        {
+          "path": "source",
+          "prefix": "aiworker.v_helpdesk_retrieval_document",
+          "startsSelect": false,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        }
+      ]
+    },
+    {
+      "label": "instruction_text",
+      "inputShape": [
+        "domainCodes",
+        "instruction",
+        "limit"
+      ],
+      "outputType": "object",
+      "outputKeys": [
+        "normalizedInput",
+        "readonly",
+        "source",
+        "sql",
+        "values"
+      ],
+      "output": {
+        "sql": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+        "values": [
+          "ja",
+          [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          5
+        ],
+        "normalizedInput": {
+          "appCode": null,
+          "sourceAppCode": null,
+          "locale": "ja",
+          "requestKind": "qa_question",
+          "documentKinds": [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          "userQuestion": null,
+          "screenCode": null,
+          "flowCode": null,
+          "errorCode": null,
+          "errorText": null,
+          "severityHint": null,
+          "maxMatches": 5,
+          "textTerms": [],
+          "guardrailResult": null,
+          "runtimeContext": {}
+        },
+        "readonly": true,
+        "source": "aiworker.v_helpdesk_retrieval_document"
+      },
+      "sqlLike": [
+        {
+          "path": "sql",
+          "prefix": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  co",
+          "startsSelect": true,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        },
+        {
+          "path": "source",
+          "prefix": "aiworker.v_helpdesk_retrieval_document",
+          "startsSelect": false,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        }
+      ]
+    },
+    {
+      "label": "runtimeRequest_query",
+      "inputShape": [
+        "limit",
+        "runtimeRequest"
+      ],
+      "outputType": "object",
+      "outputKeys": [
+        "normalizedInput",
+        "readonly",
+        "source",
+        "sql",
+        "values"
+      ],
+      "output": {
+        "sql": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+        "values": [
+          "ja",
+          [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          5
+        ],
+        "normalizedInput": {
+          "appCode": null,
+          "sourceAppCode": null,
+          "locale": "ja",
+          "requestKind": "qa_question",
+          "documentKinds": [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          "userQuestion": null,
+          "screenCode": null,
+          "flowCode": null,
+          "errorCode": null,
+          "errorText": null,
+          "severityHint": null,
+          "maxMatches": 5,
+          "textTerms": [],
+          "guardrailResult": null,
+          "runtimeContext": {}
+        },
+        "readonly": true,
+        "source": "aiworker.v_helpdesk_retrieval_document"
+      },
+      "sqlLike": [
+        {
+          "path": "sql",
+          "prefix": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  co",
+          "startsSelect": true,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        },
+        {
+          "path": "source",
+          "prefix": "aiworker.v_helpdesk_retrieval_document",
+          "startsSelect": false,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        }
+      ]
+    },
+    {
+      "label": "string",
+      "inputShape": "string",
+      "outputType": "object",
+      "outputKeys": [
+        "normalizedInput",
+        "readonly",
+        "source",
+        "sql",
+        "values"
+      ],
+      "output": {
+        "sql": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+        "values": [
+          "ja",
+          [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          20
+        ],
+        "normalizedInput": {
+          "appCode": null,
+          "sourceAppCode": null,
+          "locale": "ja",
+          "requestKind": "qa_question",
+          "documentKinds": [
+            "qa",
+            "screen",
+            "operation_flow"
+          ],
+          "userQuestion": null,
+          "screenCode": null,
+          "flowCode": null,
+          "errorCode": null,
+          "errorText": null,
+          "severityHint": null,
+          "maxMatches": 20,
+          "textTerms": [],
+          "guardrailResult": null,
+          "runtimeContext": {}
+        },
+        "readonly": true,
+        "source": "aiworker.v_helpdesk_retrieval_document"
+      },
+      "sqlLike": [
+        {
+          "path": "sql",
+          "prefix": "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  co",
+          "startsSelect": true,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        },
+        {
+          "path": "source",
+          "prefix": "aiworker.v_helpdesk_retrieval_document",
+          "startsSelect": false,
+          "startsWith": false,
+          "mentionsHelpdeskView": true
+        }
+      ]
+    }
+  ],
+  "resolveCalls": [
+    {
+      "label": "single_arg_query_dependencies_query",
+      "outputType": "object",
+      "outputKeys": [
+        "guardrailFindings",
+        "helpdeskMatches",
+        "metadata",
+        "ok",
+        "providerCode",
+        "requiresHumanReview",
+        "safetyCautions",
+        "selectedReferences",
+        "status",
+        "statusCode",
+        "supportedDomainCodes",
+        "usageSummary"
+      ],
+      "output": {
+        "ok": true,
+        "statusCode": "skipped",
+        "providerCode": "helpdesk",
+        "supportedDomainCodes": [
+          "helpdesk",
+          "app_support"
+        ],
+        "selectedReferences": [],
+        "helpdeskMatches": [],
+        "guardrailFindings": [],
+        "safetyCautions": [],
+        "usageSummary": {
+          "providerCode": "helpdesk",
+          "attempted": false,
+          "matchedCount": 0
+        },
+        "requiresHumanReview": false,
+        "metadata": {
+          "reason": "QUERY_DEPENDENCY_MISSING",
+          "readonly": true,
+          "normalizedInput": {
+            "appCode": null,
+            "sourceAppCode": null,
+            "locale": "ja",
+            "requestKind": "qa_question",
+            "documentKinds": [
+              "qa",
+              "screen",
+              "operation_flow"
+            ],
+            "userQuestion": null,
+            "screenCode": null,
+            "flowCode": null,
+            "errorCode": null,
+            "errorText": null,
+            "severityHint": null,
+            "maxMatches": 5,
+            "textTerms": [],
+            "guardrailResult": null,
+            "runtimeContext": {}
+          }
+        },
+        "status": "skipped"
+      },
+      "queryCallsAdded": 0
+    },
+    {
+      "label": "single_arg_queryDependency",
+      "outputType": "object",
+      "outputKeys": [
+        "guardrailFindings",
+        "helpdeskMatches",
+        "metadata",
+        "ok",
+        "providerCode",
+        "requiresHumanReview",
+        "safetyCautions",
+        "selectedReferences",
+        "status",
+        "statusCode",
+        "supportedDomainCodes",
+        "usageSummary"
+      ],
+      "output": {
+        "ok": true,
+        "statusCode": "skipped",
+        "providerCode": "helpdesk",
+        "supportedDomainCodes": [
+          "helpdesk",
+          "app_support"
+        ],
+        "selectedReferences": [],
+        "helpdeskMatches": [],
+        "guardrailFindings": [],
+        "safetyCautions": [],
+        "usageSummary": {
+          "providerCode": "helpdesk",
+          "attempted": false,
+          "matchedCount": 0
+        },
+        "requiresHumanReview": false,
+        "metadata": {
+          "reason": "QUERY_DEPENDENCY_MISSING",
+          "readonly": true,
+          "normalizedInput": {
+            "appCode": null,
+            "sourceAppCode": null,
+            "locale": "ja",
+            "requestKind": "qa_question",
+            "documentKinds": [
+              "qa",
+              "screen",
+              "operation_flow"
+            ],
+            "userQuestion": null,
+            "screenCode": null,
+            "flowCode": null,
+            "errorCode": null,
+            "errorText": null,
+            "severityHint": null,
+            "maxMatches": 5,
+            "textTerms": [],
+            "guardrailResult": null,
+            "runtimeContext": {}
+          }
+        },
+        "status": "skipped"
+      },
+      "queryCallsAdded": 0
+    },
+    {
+      "label": "two_args_query_dependency_object",
+      "outputType": "object",
+      "outputKeys": [
+        "guardrailFindings",
+        "helpdeskMatches",
+        "metadata",
+        "ok",
+        "providerCode",
+        "requiresHumanReview",
+        "safetyCautions",
+        "selectedReferences",
+        "status",
+        "statusCode",
+        "supportedDomainCodes",
+        "usageSummary"
+      ],
+      "output": {
+        "ok": true,
+        "statusCode": "ok",
+        "providerCode": "helpdesk",
+        "supportedDomainCodes": [
+          "helpdesk",
+          "app_support"
+        ],
+        "selectedReferences": [],
+        "helpdeskMatches": [
+          {
+            "retrievalDocumentId": null,
+            "sourceTable": null,
+            "sourceId": null,
+            "appCode": null,
+            "locale": null,
+            "documentKind": null,
+            "title": "Mock Helpdesk Contract",
+            "body": null,
+            "keywords": null,
+            "screenCode": null,
+            "flowCode": null,
+            "errorCode": null,
+            "runbookCode": null,
+            "ruleCode": null,
+            "templateCode": null,
+            "confidenceLevel": null,
+            "priority": 0,
+            "visibility": null,
+            "escalationRequired": false,
+            "blocksAiAnswer": false,
+            "matchScore": 10,
+            "matchReasons": [],
+            "sourceRef": {
+              "schema": "aiworker",
+              "view": "v_helpdesk_retrieval_document"
+            }
+          }
+        ],
+        "guardrailFindings": [],
+        "safetyCautions": [],
+        "usageSummary": {
+          "providerCode": "helpdesk",
+          "attempted": true,
+          "matchedCount": 1,
+          "source": "aiworker.v_helpdesk_retrieval_document",
+          "readonly": true
+        },
+        "requiresHumanReview": false,
+        "metadata": {
+          "normalizedInput": {
+            "appCode": null,
+            "sourceAppCode": null,
+            "locale": "ja",
+            "requestKind": "qa_question",
+            "documentKinds": [
+              "qa",
+              "screen",
+              "operation_flow"
+            ],
+            "userQuestion": null,
+            "screenCode": null,
+            "flowCode": null,
+            "errorCode": null,
+            "errorText": null,
+            "severityHint": null,
+            "maxMatches": 5,
+            "textTerms": [],
+            "guardrailResult": null,
+            "runtimeContext": {}
+          },
+          "querySource": "aiworker.v_helpdesk_retrieval_document",
+          "readonly": true
+        },
+        "status": "ok"
+      },
+      "queryCallsAdded": 1
+    },
+    {
+      "label": "two_args_dependencies_query",
+      "outputType": "object",
+      "outputKeys": [
+        "guardrailFindings",
+        "helpdeskMatches",
+        "metadata",
+        "ok",
+        "providerCode",
+        "requiresHumanReview",
+        "safetyCautions",
+        "selectedReferences",
+        "status",
+        "statusCode",
+        "supportedDomainCodes",
+        "usageSummary"
+      ],
+      "output": {
+        "ok": true,
+        "statusCode": "skipped",
+        "providerCode": "helpdesk",
+        "supportedDomainCodes": [
+          "helpdesk",
+          "app_support"
+        ],
+        "selectedReferences": [],
+        "helpdeskMatches": [],
+        "guardrailFindings": [],
+        "safetyCautions": [],
+        "usageSummary": {
+          "providerCode": "helpdesk",
+          "attempted": false,
+          "matchedCount": 0
+        },
+        "requiresHumanReview": false,
+        "metadata": {
+          "reason": "QUERY_DEPENDENCY_MISSING",
+          "readonly": true,
+          "normalizedInput": {
+            "appCode": null,
+            "sourceAppCode": null,
+            "locale": "ja",
+            "requestKind": "qa_question",
+            "documentKinds": [
+              "qa",
+              "screen",
+              "operation_flow"
+            ],
+            "userQuestion": null,
+            "screenCode": null,
+            "flowCode": null,
+            "errorCode": null,
+            "errorText": null,
+            "severityHint": null,
+            "maxMatches": 5,
+            "textTerms": [],
+            "guardrailResult": null,
+            "runtimeContext": {}
+          }
+        },
+        "status": "skipped"
+      },
+      "queryCallsAdded": 0
+    },
+    {
+      "label": "runtimeRequest_dependencies",
+      "outputType": "object",
+      "outputKeys": [
+        "guardrailFindings",
+        "helpdeskMatches",
+        "metadata",
+        "ok",
+        "providerCode",
+        "requiresHumanReview",
+        "safetyCautions",
+        "selectedReferences",
+        "status",
+        "statusCode",
+        "supportedDomainCodes",
+        "usageSummary"
+      ],
+      "output": {
+        "ok": true,
+        "statusCode": "skipped",
+        "providerCode": "helpdesk",
+        "supportedDomainCodes": [
+          "helpdesk",
+          "app_support"
+        ],
+        "selectedReferences": [],
+        "helpdeskMatches": [],
+        "guardrailFindings": [],
+        "safetyCautions": [],
+        "usageSummary": {
+          "providerCode": "helpdesk",
+          "attempted": false,
+          "matchedCount": 0
+        },
+        "requiresHumanReview": false,
+        "metadata": {
+          "reason": "QUERY_DEPENDENCY_MISSING",
+          "readonly": true,
+          "normalizedInput": {
+            "appCode": null,
+            "sourceAppCode": null,
+            "locale": "ja",
+            "requestKind": "qa_question",
+            "documentKinds": [
+              "qa",
+              "screen",
+              "operation_flow"
+            ],
+            "userQuestion": null,
+            "screenCode": null,
+            "flowCode": null,
+            "errorCode": null,
+            "errorText": null,
+            "severityHint": null,
+            "maxMatches": 20,
+            "textTerms": [],
+            "guardrailResult": null,
+            "runtimeContext": {}
+          }
+        },
+        "status": "skipped"
+      },
+      "queryCallsAdded": 0
+    }
+  ],
+  "createProvider": {
+    "outputType": "object",
+    "outputKeys": [
+      "providerCode",
+      "resolveKnowledgeContext",
+      "supportedDomainCodes"
+    ],
+    "output": {
+      "providerCode": "helpdesk",
+      "supportedDomainCodes": [
+        "helpdesk",
+        "app_support"
+      ],
+      "resolveKnowledgeContext": "[Function resolveKnowledgeContext]"
+    }
+  },
+  "errors": [],
+  "queryCalls": [
+    [
+      "select\n  retrieval_document_id,\n  source_table,\n  source_id,\n  app_code,\n  locale,\n  document_kind,\n  title,\n  body,\n  keywords,\n  searchable_text,\n  screen_code,\n  flow_code,\n  error_code,\n  runbook_code,\n  rule_code,\n  template_code,\n  confidence_level,\n  priority,\n  visibility,\n  escalation_required,\n  blocks_ai_answer,\n  updated_at\nfrom aiworker.v_helpdesk_retrieval_document\nwhere is_active = true\n  and locale = $1\n  and document_kind = any($2::text[])\norder by\n  case when app_code is null then 1 else 0 end,\n  priority asc,\n  updated_at desc nulls last\nlimit $3",
+      [
+        "ja",
+        [
+          "qa",
+          "screen",
+          "operation_flow"
+        ],
+        5
+      ]
+    ]
+  ]
+}

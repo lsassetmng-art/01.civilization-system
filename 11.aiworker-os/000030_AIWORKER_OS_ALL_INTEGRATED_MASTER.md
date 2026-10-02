@@ -154772,7 +154772,7 @@ HD registered lineup:
 - HD-R4 / Leader / 上位統制aiワーカー
 - HD-R3 / Worker / Aiワーカー
 - HD-R1 / Helper / 秘書aiワーカー
-- HD-R2 / Butler / 戦闘員aiワーカー
+- HD-R2 / Battler / 戦闘員aiワーカー
 - HD-R1C / Friend / フレンドaiワーカー
 - HD-R1A / Lover / 恋人系aiワーカー
 - HD-R2S / Sniper / 狙撃手aiワーカー

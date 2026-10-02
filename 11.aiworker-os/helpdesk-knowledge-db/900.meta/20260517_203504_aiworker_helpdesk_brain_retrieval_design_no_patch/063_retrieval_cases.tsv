@@ -1,0 +1,10 @@
+case_code	inputs	primary_source	secondary_source	expected_output
+app_support_overview	app_code, locale	aiworker.v_helpdesk_active_supported_app	aiworker.helpdesk_answer_template	app profile context
+qa_question	app_code, question, locale	aiworker.v_helpdesk_active_qa	aiworker.helpdesk_answer_template	ranked QA context
+screen_help	app_code, screen_code, locale	aiworker.helpdesk_screen_knowledge	aiworker.helpdesk_operation_flow	screen help context
+operation_flow	app_code, flow_code, locale	aiworker.helpdesk_operation_flow	aiworker.helpdesk_screen_knowledge	step context
+error_troubleshooting	app_code, error_text, locale	aiworker.v_helpdesk_active_error_pattern	aiworker.helpdesk_troubleshooting_runbook	error/runbook context
+escalation_check	app_code, request_text, locale	aiworker.helpdesk_escalation_rule	guardrail runtime result reference	escalation context
+template_selection	use_case, locale	aiworker.helpdesk_answer_template	none	answer format context
+guardrail_boundary	request_text, app_code	guardrail runtime result reference	aiworker.helpdesk_escalation_rule	block/escalation context
+cx_reference_enrichment	app_code, domain hint	cx22073jw approved reference views	aiworker.helpdesk_qa_entry	background context only

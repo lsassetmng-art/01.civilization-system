@@ -1,0 +1,23 @@
+PASS	PREVIOUS_FAILED_STAGE_TARGET_RESET_OK	target index cleanup only
+PASS	PREVIOUS_FAILED_CACHED_NAMES_CAPTURED	PREVIOUS_FAILED_CACHED_COUNT=3
+PASS	GIT_REPO_OK	/data/data/com.termux/files/home/03.civilization-development
+PASS	READINESS_REPORT_READY	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_174216_kdb_helpdesk_commit_readiness_review_no_push/000_KDB_HELPDESK_COMMIT_READINESS_REVIEW_NO_PUSH_REPORT.md
+PASS	TARGET_FILE_EXISTS	lib/knowledge-domain-brain/helpdesk-provider.mjs
+PASS	TARGET_FILE_EXISTS	lib/knowledge-domain-brain/index.mjs
+PASS	TARGET_FILE_EXISTS	lib/knowledge-domain-brain/kdb-runtime-context.mjs
+PASS	CURRENT_BRANCH_OK	main
+PASS	PARENT_COMMIT_CAPTURED	bd3a6077e6453e20363e471cc211aa3faacecb3e
+PASS	MAIN_INDEX_NO_EXISTING_STAGED_FILES	BEFORE_CACHED_MAIN_INDEX_COUNT=0
+PASS	TARGET_STATUS_PRESENT	BEFORE_TARGET_STATUS_COUNT=3
+PASS	SERVER_JS_NO_DIFF	SERVER_DIFF_COUNT=0
+PASS	NODE_CHECK_PASS	lib/knowledge-domain-brain/helpdesk-provider.mjs
+PASS	NODE_CHECK_PASS	lib/knowledge-domain-brain/index.mjs
+PASS	NODE_CHECK_PASS	lib/knowledge-domain-brain/kdb-runtime-context.mjs
+PASS	DYNAMIC_IMPORT_PASS	/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/knowledge-domain-brain/900.meta/20260519_193218_kdb_helpdesk_commit_push_target_only_isolated_index_r1/031_dynamic_import_targets.out
+PASS	PROVIDER_HAS_NO_DIRECT_DB_DEPENDENCY	PROVIDER_FORBIDDEN_COUNT=0
+PASS	INDEX_EXPORT_PRESENT	INDEX_EXPORT_COUNT=1
+PASS	RUNTIME_HELPDESK_SIGNALS_PRESENT	RUNTIME_HELPDESK_SIGNAL_COUNT=28
+PASS	ISOLATED_INDEX_READ_TREE_OK	bd3a6077e6453e20363e471cc211aa3faacecb3e
+PASS	ISOLATED_INDEX_ADD_TARGETS_OK	ISO_ADD_STATUS=0
+PASS	ISOLATED_CACHED_CHANGES_PRESENT	ISO_CACHED_COUNT=3
+FAIL	ISOLATED_CACHED_SCOPE_FORBIDDEN	ISO_CACHED_FORBIDDEN_COUNT=3

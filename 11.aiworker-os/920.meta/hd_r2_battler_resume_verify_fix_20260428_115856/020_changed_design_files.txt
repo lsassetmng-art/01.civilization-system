@@ -1,0 +1,2 @@
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/000030_AIWORKER_OS_ALL_INTEGRATED_MASTER.md
+/data/data/com.termux/files/home/01.civilization-system/11.aiworker-os/030.model/030_AIWORKER_MODEL_CATALOG_DIALOG_STYLE_AND_LOVERS_APPEND.md

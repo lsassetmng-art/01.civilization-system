@@ -1,0 +1,28 @@
+6:import { createHelpdeskProvider } from "./helpdesk-provider.mjs";
+14:  const helpdeskMatches = [];
+16:  const safetyCautions = [];
+18:  let requiresHumanReview = false;
+23:    helpdeskMatches.push(...(result.helpdeskMatches ?? []));
+25:    safetyCautions.push(...(result.safetyCautions ?? []));
+26:    if (result.usageSummary) usageParts.push(result.usageSummary);
+27:    if (result.requiresHumanReview) requiresHumanReview = true;
+32:    helpdeskMatches,
+34:    safetyCautions,
+35:    usageSummary: usageParts.join("\n").trim(),
+36:    requiresHumanReview
+66:  return domainCodes.includes("helpdesk") || domainCodes.includes("app_support");
+99:      helpdeskMatches: [],
+100:      safetyCautions: [],
+101:      usageSummary: {
+102:        providerCode: "helpdesk",
+106:      requiresHumanReview: false,
+142:    helpdeskProvider: providerValue ?? {
+143:      providerCode: "helpdesk",
+185:    helpdeskMatches: merged.helpdeskMatches,
+187:    safetyCautions: merged.safetyCautions,
+188:    usageSummary: merged.usageSummary || classification.classificationSummary,
+189:    requiresHumanReview: Boolean(classification.requiresHumanReview || merged.requiresHumanReview),
+204:    helpdeskMatches: mergeKdbHelpdeskArrays(kdbBaseRuntimeContext.helpdeskMatches, kdbHelpdeskProviderResult?.helpdeskMatches),
+205:    safetyCautions: mergeKdbHelpdeskArrays(kdbBaseRuntimeContext.safetyCautions, kdbHelpdeskProviderResult?.safetyCautions),
+206:    usageSummary: mergeKdbHelpdeskUsageSummary(kdbBaseRuntimeContext.usageSummary, kdbHelpdeskProviderResult?.usageSummary),
+207:    requiresHumanReview: Boolean(kdbBaseRuntimeContext.requiresHumanReview || kdbHelpdeskProviderResult?.requiresHumanReview),
