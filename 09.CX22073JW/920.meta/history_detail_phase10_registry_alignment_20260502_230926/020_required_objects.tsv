@@ -1,0 +1,13 @@
+cx22073jw.civilization_exam_question_bank	exam question only canon table	exists
+cx22073jw.civilization_foundation_history_detail_entry	civilization foundation history detail canon table	exists
+cx22073jw.earth_history_detail_entry	earth history detail canon table	exists
+cx22073jw.robot_model_role_reference_binding	robot model role binding canon table	exists
+cx22073jw.vw_civilization_exam_question_reference_v1	exam question reference view	exists
+cx22073jw.vw_earth_history_detail_reference_v1	earth history detail reference view	exists
+cx22073jw.vw_history_detail_unified_reference_v1	unified history detail reference view	exists
+cx22073jw.vw_history_exam_question_unified_reference_v1	unified history exam reference view	exists
+cx22073jw.vw_robot_model_civilization_exam_reference_v1	robot model exam reference view	exists
+cx22073jw.vw_robot_model_earth_history_detail_reference_v1	robot model earth history detail reference view	exists
+cx22073jw.vw_robot_model_history_detail_coverage_v1	robot model history coverage gate view	exists
+cx22073jw.vw_robot_model_history_detail_unified_reference_v1	robot model unified history detail reference view	exists
+cx22073jw.vw_robot_model_history_exam_unified_reference_v1	robot model unified history exam reference view	exists

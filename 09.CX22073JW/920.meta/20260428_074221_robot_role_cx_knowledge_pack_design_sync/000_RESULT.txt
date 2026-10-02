@@ -1,0 +1,8 @@
+STATUS=PASS
+MODEL_DOC=/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/030.model/030920_CX22073JW_ROBOT_ROLE_KNOWLEDGE_PACK_MODEL.md
+INTEGRATION_DOC=/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/060.integration/060920_CX22073JW_AIWORKER_ROLE_CX_KNOWLEDGE_REFERENCE_INTEGRATION.md
+IMPL_DOC=/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/120.implementation-ready/120920_CX22073JW_ROBOT_ROLE_KNOWLEDGE_PACK_IMPLEMENTATION_READY.md
+INDEX=/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/000_CX22073JW_INDEX.md
+OVERVIEW=/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/001_CX22073JW_OVERVIEW.md
+INTEGRATED=/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/199_CX22073JW_FULL_INTEGRATED_CANONICAL.md
+DOC_COUNT=111

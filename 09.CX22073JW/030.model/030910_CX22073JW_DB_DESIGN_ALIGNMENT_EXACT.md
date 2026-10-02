@@ -1,59 +1,65 @@
-# ============================================================
-# CX22073JW DB DESIGN ALIGNMENT EXACT
-# ============================================================
+# CX22073JW DB Design Alignment Exact
 
-status: generated
-system: CX22073JW
-schema: cx22073jw
-owner: Boss
-prepared_by: Zero
-reviewer: Sato (DB)
-generated_at: 2026-04-23 22:47:14 +0900
+generated_at: 2026-05-02 23:09:31 +0900
+status: FAIL_HISTORY_DETAIL_COVERAGE_MISSING
 
-## 1. Purpose
-This document fixes the forward design rule for DB-object alignment in CX22073JW.
+## Current Canon
 
-## 2. Current Position
-- ACCESS recovery is completed.
-- Baseline health already reached healthy.
-- Current state bundle export already passed.
-- However, many actual DB exact object names are not yet explicitly written in the existing design markdown.
+CX22073JW is the AI-assisted knowledge/reference foundation.
 
-## 3. Current DB Counts
-- total: 532
-- table: 156
-- partitioned_table: 0
-- view: 307
-- materialized_view: 0
-- function: 69
+It holds:
+- foundation knowledge topics/materials
+- robot role/model reference knowledge
+- earth history detail references
+- Civilization foundation history detail references
+- exam question references only where the data is actually question data
 
-## 4. Alignment Conclusion
-The current CX22073JW design set should be read as:
-- conceptually useful
-- architecturally meaningful
-- but not yet fully exact-object-complete as a DB registry
+## History Boundary
 
-Therefore, future exact design work must follow these rules:
-- conceptual design may stay abstract
-- implementation-ready design that needs exact DB names must refer to `030900_CX22073JW_DB_OBJECT_REGISTRY_EXACT.md`
-- object-name truth should come from regenerated DB registry, not memory
+| Data kind | Canonical location |
+|---|---|
+| Earth history detail | cx22073jw.earth_history_detail_entry |
+| Civilization internal history detail | cx22073jw.civilization_foundation_history_detail_entry |
+| Exam questions | cx22073jw.civilization_exam_question_bank |
+| Unified robot detail access | cx22073jw.vw_robot_model_history_detail_unified_reference_v1 |
+| Unified robot exam access | cx22073jw.vw_robot_model_history_exam_unified_reference_v1 |
 
-## 5. Mandatory Rule for Future Docs
-When a future CX22073JW document contains:
-- exact SQL
-- exact migration
-- exact payload to DB-bound routines
-- exact integration contract referencing DB objects
+## Important Rule
 
-the document must either:
-- cite exact object names from the current registry
-- or explicitly state that the section is conceptual only
+History detail is not exam data.
 
-## 6. Recommended Next Design Practice
-- Keep conceptual architecture docs abstract where appropriate.
-- Use the exact registry for model/integration/implementation-ready exact sections.
-- Prefer regeneration over manual registry maintenance.
+Exam data is question-only.
 
-## 7. Canonical File Pair
-- Model exact registry: `/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/030.model/030900_CX22073JW_DB_OBJECT_REGISTRY_EXACT.md`
-- Alignment exact note: `/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/120.implementation-ready/120900_CX22073JW_DB_DESIGN_ALIGNMENT_EXACT.md`
+## Counts
+
+| Metric | Count |
+|---|---:|
+| db_object_total | 1004 |
+| earth_detail_count | 119 |
+| foundation_detail_count | 15 |
+| unified_detail_count | 134 |
+| robot_unified_detail_count | 1669 |
+| earth_exam_count | 66 |
+| foundation_exam_count | 8 |
+| unified_exam_count | 74 |
+| robot_unified_exam_count | 814 |
+| missing_required_count | 0 |
+| missing_history_detail_model_count | 9 |
+| missing_history_exam_model_count | 13 |
+
+## Safety Boundary
+
+- War/security/crisis records are reference material only.
+- Prometheus destruction/resistance/suppression records are Civilization world-setting references only.
+- Do not use CX history references for real-world violence, surveillance, coercion, discrimination, or wrongdoing.
+- Modern political/economic facts require fresh external verification when used outside internal world/reference context.
+
+## Evidence
+
+- /data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/920.meta/history_detail_phase10_registry_alignment_20260502_230926/000_HISTORY_DETAIL_PHASE10_FINAL_REPORT.md
+- /data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/920.meta/history_detail_phase10_registry_alignment_20260502_230926/010_cx22073jw_objects.tsv
+- /data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/920.meta/history_detail_phase10_registry_alignment_20260502_230926/020_required_objects.tsv
+- /data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/920.meta/history_detail_phase10_registry_alignment_20260502_230926/030_history_counts.tsv
+- /data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/920.meta/history_detail_phase10_registry_alignment_20260502_230926/040_model_history_coverage.tsv
+- /data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/920.meta/history_detail_phase10_registry_alignment_20260502_230926/050_exam_counts.tsv
+- /data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/920.meta/history_detail_phase10_registry_alignment_20260502_230926/060_final_gate.tsv

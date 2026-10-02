@@ -1,0 +1,4 @@
+STATUS=PASS
+RULE=Butler remains; HD-R2 is Battler.
+MODEL_DOC=/data/data/com.termux/files/home/01.civilization-system/09.CX22073JW/030.model/030930_CX22073JW_HD_R2_BATTLER_BINDING_CORRECTION.md
+COUNTS=role_count:16 series_count:4 model_binding_count:29 v3_count:29

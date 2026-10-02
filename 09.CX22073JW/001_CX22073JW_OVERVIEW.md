@@ -6,28 +6,28 @@ status: regenerated
 system: CX22073JW
 owner: Boss
 prepared_by: Zero
-generated_at: 2026-04-23 22:51:38 +0900
+generated_at: 2026-05-02 18:06:31 +0900
 
-## 1. Positioning
-CX22073JW is the shared knowledge / reference / template foundation for Civilization.
+## Current confirmed state
+- DB object total: 579
+- robot role count: 16
+- robot series supplement count: 4
+- model-role binding count: 29
+- foundation topic count: 12
+- foundation material count: 18
+- earth history count: 30
+- civilization foundation history count: 56
+- model history reference count: 961
+- missing model history coverage count: 0
 
-## 2. Current Project State
-- ACCESS recovery: completed
-- baseline health: healthy
-- current state export: pass
-- DB exact object canon: placed in Model
-- DB/design alignment canon: placed in Model
+## Main canon files
+- `030.model/030900_CX22073JW_DB_OBJECT_REGISTRY_EXACT.md`
+- `030.model/030910_CX22073JW_DB_DESIGN_ALIGNMENT_EXACT.md`
+- `030.model/030950_CX22073JW_ROBOT_HISTORY_COVERAGE_SUMMARY.md`
 
-## 3. Reading Order
-1. `199_CX22073JW_FULL_INTEGRATED_CANONICAL.md`
-2. `020.architecture/*`
-3. `030.model/030900_CX22073JW_DB_OBJECT_REGISTRY_EXACT.md`
-4. `030.model/030910_CX22073JW_DB_DESIGN_ALIGNMENT_EXACT.md`
-
-## 4. Rule
-Future exact DB-bound design sections should read the Model exact registry first.
-
-## 5. Key Files
-- integrated canonical: `199_CX22073JW_FULL_INTEGRATED_CANONICAL.md`
-- model exact registry: `030.model/030900_CX22073JW_DB_OBJECT_REGISTRY_EXACT.md`
-- model exact alignment: `030.model/030910_CX22073JW_DB_DESIGN_ALIGNMENT_EXACT.md`
+## Important history canon
+- Earth history and Civilization foundation history are separated.
+- Current Civilization is restored from Civilization Year 18.
+- Prometheus is a Year 320-397 real-world management Arc.
+- Aerial starts at Year 540.
+- Year 620 revolt/system destruction is excluded.
