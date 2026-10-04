@@ -6,7 +6,7 @@ if [ -z "${PERSONA_DATABASE_URL:-}" ]; then
   exit 1
 fi
 
-psql "$PERSONA_DATABASE_URL" <<'SQL'
+psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 <<'SQL'
 \pset footer off
 \pset tuples_only on
 
@@ -44,9 +44,7 @@ select
 from expected_table e
 left join pg_class c
   on c.relname = e.table_name
-left join pg_namespace n
-  on n.oid = c.relnamespace
- and n.nspname = 'staticart'
+ and c.relnamespace = 'staticart'::regnamespace
  and c.relkind = 'r'
 order by e.table_name;
 SQL

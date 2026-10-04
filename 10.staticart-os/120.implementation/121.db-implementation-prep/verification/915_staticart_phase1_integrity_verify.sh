@@ -6,7 +6,7 @@ if [ -z "${PERSONA_DATABASE_URL:-}" ]; then
   exit 1
 fi
 
-psql "$PERSONA_DATABASE_URL" <<'SQL'
+psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 <<'SQL'
 \pset footer off
 \pset tuples_only on
 

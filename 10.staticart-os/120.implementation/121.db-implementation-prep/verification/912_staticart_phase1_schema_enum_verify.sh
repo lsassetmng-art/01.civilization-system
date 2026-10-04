@@ -6,7 +6,7 @@ if [ -z "${PERSONA_DATABASE_URL:-}" ]; then
   exit 1
 fi
 
-psql "$PERSONA_DATABASE_URL" <<'SQL'
+psql "$PERSONA_DATABASE_URL" -v ON_ERROR_STOP=1 <<'SQL'
 \pset footer off
 \pset tuples_only on
 
@@ -48,8 +48,6 @@ select
 from expected_enum e
 left join pg_type t
   on t.typname = e.type_name
-left join pg_namespace n
-  on n.oid = t.typnamespace
- and n.nspname = 'staticart'
+ and t.typnamespace = 'staticart'::regnamespace
 order by e.type_name;
 SQL

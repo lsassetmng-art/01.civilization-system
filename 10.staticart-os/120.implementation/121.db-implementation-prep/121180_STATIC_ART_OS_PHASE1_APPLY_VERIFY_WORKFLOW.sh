@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set -eu
 
-BASE="$HOME/01.civilization-system/10.staticart-os/121.db-implementation-prep"
+BASE="$(cd "$(dirname "$0")" && pwd)"
 SQLBASE="$BASE/sql"
 VERIFYBASE="$BASE/verification"
 
