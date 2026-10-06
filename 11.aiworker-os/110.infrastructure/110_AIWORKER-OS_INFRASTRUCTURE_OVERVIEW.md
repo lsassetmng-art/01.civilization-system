@@ -30,3 +30,10 @@ current_scope:
 - 1100117_AIWORKER_RESTRICTED_AND_PRIVILEGED_ACCESS_MATRIX_EXACT.md
 - 1100118_AIWORKER_REPLAY_DECISION_MATRIX_AND_LEDGER_EXACT.md
 - 1100119_AIWORKER_ACCEPTANCE_TEST_CATALOG_EXACT.md
+
+web_public_infrastructure:
+- 1100200_AIWORKER_WEB_PUBLIC_INFRASTRUCTURE_EXACT.md
+- provider: undecided
+- public_origin: not_assigned
+- portal_contract: NEXT_PUBLIC_AIWORKEROS_URL + /aiworker-menu
+- runtime_api_8787: separate
