@@ -27,6 +27,8 @@ The query is scoped to the verified creator ownership or separately verified pub
 
 The existing POST accepts a valid `asset_type` and `initial_language_code`. `creator_id`, if present for compatibility with the current request DTO, must match the actor's verified creator identity. `publisher_id` requires separately verified publisher authority. Both `X-Request-Id` and `Idempotency-Key` are required. Reusing the same key and body returns the original draft; the same key with a different body returns 409. The response contains the persisted `asset_id` and initial `version_no=1`. `asset_master` and `asset_version` are inserted atomically. No file or localization is represented as saved until its own write succeeds.
 
+`initial_language_code` selects the language for the next metadata entry screen. The initial draft transaction does not store a title or localization row; the UI must not present the language as saved asset metadata. The replay result is committed in the same DB transaction under `122400_STATIC_ART_OS_ASSET_CREATE_IDEMPOTENCY_PERSISTENCE_CONTRACT.md`.
+
 ## UI behavior and acceptance
 
 - The list distinguishes loading, empty, ready, forbidden, and retryable failure. It preserves the current filter on pagination and does not show another creator's work.

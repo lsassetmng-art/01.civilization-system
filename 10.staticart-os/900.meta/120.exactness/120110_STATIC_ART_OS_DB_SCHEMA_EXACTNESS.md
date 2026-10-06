@@ -108,6 +108,15 @@ canonical_tables:
   - staticart.asset_exhibition_projection
   - staticart.asset_audit_event
 
+api_support_tables:
+  - staticart.api_idempotency_result
+
+api_support_table_rules:
+  - The replay table stores the committed asset.create response, not asset canon.
+  - Its primary key is verified actor_user_id, operation_code, idempotency_key.
+  - Its asset_id references asset_master; its rows are immutable.
+  - Add it only after Phase 1 via sql/080_staticart_asset_create_idempotency.sql.
+
 derived_surfaces:
   - user_library_projection
   - asset_exhibition_projection

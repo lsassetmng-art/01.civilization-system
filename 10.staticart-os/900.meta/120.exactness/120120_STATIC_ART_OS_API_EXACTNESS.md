@@ -98,10 +98,14 @@ concurrency:
   idempotency:
     same_key_same_body: return same result
     same_key_different_body: conflict 409
+    asset_create_store: staticart.api_idempotency_result
+    asset_create_scope: verified actor_user_id + asset.create + Idempotency-Key
+    asset_create_atomicity: asset_master + asset_version + replay result in one transaction
 
 api_groups:
   canonical_write:
     - POST /assets
+    - GET /assets
     - GET /assets/{asset_id}
     - PUT /assets/{asset_id}/localizations/{language_code}
     - PUT /assets/{asset_id}/categories
