@@ -203,3 +203,89 @@ Accepted when:
 - City Builder separation is preserved
 - lib/map-data.ts remains navigation-only
 - no mutation is allowed through read endpoints
+
+## R13 Server-Readable Session Handoff
+
+R13_SERVER_READABLE_SESSION_HANDOFF_V1
+
+### Authentication authority
+
+The existing CivilizationOS OAuth flow remains the authentication authority.
+
+R13 does not create a second login mechanism.
+
+The provider callback validates the OAuth authorization response, retrieves
+provider identity server-side, and creates the existing CivilizationOS
+authenticated session handoff.
+
+### Server-readable session
+
+R13 server read APIs require a server-verifiable authentication context.
+
+Browser localStorage and sessionStorage are not server authentication
+authorities.
+
+The existing OAuth callback therefore mirrors its server-created authenticated
+identity into a signed HttpOnly session cookie.
+
+Cookie contract:
+
+- cookie name: civilization_os_server_session_v1
+- version: 1
+- signature: HMAC-SHA256
+- signing environment: CIVILIZATION_SESSION_SIGNING_SECRET
+- minimum signing-secret length: 32 characters
+- HttpOnly: true
+- SameSite: lax
+- Path: /
+- Secure: true when the configured CivilizationOS public base URL is HTTPS
+- expiry: no later than the server-created authenticated session expiry
+
+The signed payload contains only non-secret identity and runtime fields created
+by the server.
+
+OAuth access tokens, refresh tokens, provider client secrets, database URLs,
+service-role keys, and private keys must not be placed in the cookie.
+
+### Trust boundary
+
+R13 server routes may trust only a session token whose HMAC signature and
+expiry validate server-side.
+
+R13 server authentication must not trust:
+
+- localStorage
+- sessionStorage
+- nation_id route values
+- civilization_id route or query values
+- arbitrary Civilization ID request headers
+- unsigned client JSON
+- unverified browser bearer identity
+
+The signed session proves authenticated actor/session context only.
+Resource authorization remains a separate server-side decision.
+
+### Fail-closed behavior
+
+If CIVILIZATION_SESSION_SIGNING_SECRET is unavailable or invalid, the existing
+client OAuth handoff may continue, but no R13 server-authenticated session
+exists.
+
+R13 server reads must fail closed before repository access.
+
+### Persistence boundary
+
+This prerequisite session handoff is stateless.
+
+It creates no auth database table, second database connection, second
+authentication provider, or second Civilization identity.
+
+DB-backed authentication persistence remains outside this prerequisite repair.
+
+### R13 integration
+
+The R13 server read layer consumes this signed server-readable session before
+repository access.
+
+Repository code must not parse browser storage or reconstruct authentication
+identity from route values, query values, or arbitrary request headers.
