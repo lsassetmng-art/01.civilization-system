@@ -20,8 +20,8 @@ It does not authorize DB connection or execution.
 This DDL must preserve:
 
 - CivilizationOS DB owner boundary
-- CIVILIZATION_DATABASE_URL
-- civilization_os schema
+- PERSONA_DATABASE_URL
+- civilization schema
 - public schema prohibition
 - Territory Record identity
 - Facility Registry identity
@@ -48,7 +48,7 @@ This DDL introduces no extension dependency and no automatic UUID generator.
 
 Exact order:
 
-1. create civilization_os schema when absent
+1. create civilization schema when absent
 2. territory_record
 3. facility_registry
 4. district_registry
@@ -314,7 +314,7 @@ Rollback is repair-first.
 The prepared destructive rollback script refuses to drop the four relations
 when canonical rows exist.
 
-It does not drop the civilization_os schema.
+It does not drop the civilization schema.
 
 Destructive rollback requires a separate explicit DB GO.
 

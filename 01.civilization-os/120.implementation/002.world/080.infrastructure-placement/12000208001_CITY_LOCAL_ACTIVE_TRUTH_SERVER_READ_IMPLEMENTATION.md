@@ -34,12 +34,12 @@ Draft and seed sources are not active read truth.
 
 Server-only persistence access uses:
 
-- CIVILIZATION_DATABASE_URL
-- civilization_os schema
+- PERSONA_DATABASE_URL
+- civilization schema
 
 Client code must never receive database credentials or directly query canonical tables.
 
-No fallback is allowed to PERSONA_DATABASE_URL or DATABASE_URL.
+Fallback to DATABASE_URL is prohibited.
 
 ## 4. Authentication Boundary
 

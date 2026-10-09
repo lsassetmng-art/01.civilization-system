@@ -1,117 +1,134 @@
 # CIVILIZATION DB OWNERSHIP AND ENVIRONMENT BOUNDARY RULE
 
-status: db-boundary-rule
+status: canonical
 layer: implementation
 domain: 018.meta
 subdomain: 480.db-registration-preparation
 document_id: 1201848009
-owner: Boss
-prepared_by: Zero
+owner: CivilizationOS
 language: English
 
 ## 1. Purpose
 
-Defines the database boundary for canonical records owned directly by CivilizationOS.
+Defines the database connection and schema boundary for canonical records
+owned directly by CivilizationOS.
 
-This document complements the existing Persona DB and ERP DB boundary rule.
-It does not replace the Persona/ERP split.
+This rule preserves the established shared PostgreSQL topology and does not
+introduce a dedicated CivilizationOS database connection.
 
-## 2. Existing Boundaries Preserved
+## 2. Established Database Connection Boundary
 
-Persona-side canonical work continues to use:
+The established connection mapping is:
+
+- Persona-side canonical DB work uses PERSONA_DATABASE_URL
+- CivilizationOS-owned canonical DB work uses PERSONA_DATABASE_URL
+- ERP-side canonical DB work uses DATABASE_URL
+- ERP sendout uses DATABASE_URL
+
+CivilizationOS must not introduce a separate CIVILIZATION_DATABASE_URL
+connection contract.
+
+## 3. CivilizationOS Schema Boundary
+
+CivilizationOS-owned canonical persistence uses the existing:
+
+- connection: PERSONA_DATABASE_URL
+- schema: civilization
+
+The civilization schema already exists in the shared PostgreSQL database.
+
+R13 must not create a new civilization_os schema.
+
+The public schema is not an application persistence target.
+
+## 4. Ownership
+
+Sharing PERSONA_DATABASE_URL does not transfer canonical ownership.
+
+- PersonaOS-owned records remain PersonaOS-owned.
+- CivilizationOS-owned records remain CivilizationOS-owned.
+- ERP-owned records remain ERP-owned.
+
+Canonical ownership is determined by the owning OS contract, model and schema,
+not by connection-variable reuse.
+
+## 5. ERP Separation
+
+CivilizationOS-owned persistence must not use DATABASE_URL.
+
+DATABASE_URL remains the ERP-side connection.
+
+If PERSONA_DATABASE_URL is missing or unavailable, CivilizationOS DB work must
+stop rather than redirect to DATABASE_URL.
+
+## 6. R13 Physical Binding
+
+R13 city-local active truth uses:
 
 - PERSONA_DATABASE_URL
+- existing civilization schema
 
-ERP-side canonical work and ERP sendout continue to use:
+Target relations:
 
-- DATABASE_URL
+- civilization.territory_record
+- civilization.facility_registry
+- civilization.district_registry
+- civilization.active_facility_placement
 
-The existing prohibition on ambiguous cross-boundary direct writes remains in force.
+This rule does not authorize DDL execution by itself.
 
-## 3. CivilizationOS Boundary
+## 7. Existing Schema Reuse Rule
 
-CivilizationOS-owned canonical domain persistence uses:
+R13 must reuse the existing civilization schema.
 
-- CIVILIZATION_DATABASE_URL
+R13 must not:
 
-Canonical CivilizationOS schema:
+- create civilization_os
+- create another OS-specific schema for the same ownership domain
+- use public
+- redirect to DATABASE_URL
+- infer another connection URL
 
-- civilization_os
+Schema creation is outside the R13 apply operation.
 
-Use of public schema is prohibited.
+## 8. Cross-Boundary Rule
 
-## 4. No Fallback Rule
+Cross-boundary references do not transfer ownership.
 
-A CivilizationOS-owned canonical operation must not fall back to:
+Persona references consumed by CivilizationOS remain Persona-owned.
 
-- PERSONA_DATABASE_URL
-- DATABASE_URL
+ERP references consumed by CivilizationOS remain ERP-owned.
 
-A missing CIVILIZATION_DATABASE_URL is a configuration failure.
+CivilizationOS persists only CivilizationOS-owned facts authorized by its
+canonical models.
 
-It must not be repaired by writing CivilizationOS-owned truth into Persona or ERP storage.
+## 9. Registration Plan Requirement
 
-## 5. Boundary Classification
+A CivilizationOS DB execution plan must declare:
 
-Future DB execution plans must declare the canonical owner before execution.
-
-Valid owner classes include:
-
-- Persona-owned canonical record
-- ERP-owned canonical record
-- CivilizationOS-owned canonical record
-- sendout candidate
-- sync-reference-only record
-- prohibited direct-write crossing
-
-## 6. CivilizationOS Registration Plan
-
-A CivilizationOS-owned DB execution plan must declare:
-
+- canonical owner: CivilizationOS
+- connection: PERSONA_DATABASE_URL
+- existing schema: civilization
+- target relation
 - source authority
-- target CivilizationOS relation
-- CIVILIZATION_DATABASE_URL
-- civilization_os schema
 - transaction boundary
-- idempotency posture where mutation is retryable
 - verification posture
 - rollback posture
 
-## 7. Cross-Boundary Rule
+## 10. Phase Rule
 
-Cross-boundary data flow does not transfer canonical ownership by itself.
+This correction does not widen DB execution scope.
 
-A Persona reference consumed by CivilizationOS remains Persona-owned.
+R13 DDL execution remains subject to its separate explicit apply gate.
 
-An ERP reference consumed by CivilizationOS remains ERP-owned.
-
-CivilizationOS must persist only the CivilizationOS-owned canonical facts authorized by its models.
-
-## 8. R13 Binding
-
-R13 city-local active truth uses the CivilizationOS-owned boundary for:
-
-- territory_record
-- facility_registry
-- district_registry
-- active_facility_placement
-
-This rule does not authorize DDL execution.
-
-## 9. Phase 1 Rule
-
-Defining the CivilizationOS boundary does not widen execution phase 1 DB preparation.
-
-R13 domain persistence remains outside the current narrow phase 1 DB subset.
-
-## 10. Acceptance
+## 11. Acceptance
 
 Accepted when:
 
-- Persona environment remains PERSONA_DATABASE_URL
-- ERP environment remains DATABASE_URL
-- CivilizationOS environment is CIVILIZATION_DATABASE_URL
-- CivilizationOS schema is civilization_os
-- public schema is prohibited
-- fallback across owners is prohibited
-- phase 1 remains unchanged
+- CivilizationOS uses PERSONA_DATABASE_URL
+- existing civilization schema is reused
+- no CIVILIZATION_DATABASE_URL contract remains
+- no civilization_os schema contract remains
+- DATABASE_URL remains ERP-side
+- public remains unused for application persistence
+- R13 DDL does not create or drop the civilization schema

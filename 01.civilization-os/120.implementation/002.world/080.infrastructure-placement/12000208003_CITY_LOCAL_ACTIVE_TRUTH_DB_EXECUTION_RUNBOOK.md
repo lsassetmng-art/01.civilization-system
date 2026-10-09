@@ -32,14 +32,13 @@ Without that GO:
 
 Required:
 
-- CIVILIZATION_DATABASE_URL
-
-Forbidden fallback:
-
 - PERSONA_DATABASE_URL
+
+Forbidden target connection:
+
 - DATABASE_URL
 
-If CIVILIZATION_DATABASE_URL is missing, stop.
+If PERSONA_DATABASE_URL is missing, stop.
 
 ## 4. Preflight
 
@@ -51,7 +50,7 @@ Future execution must first verify read-only:
 - current_user
 - current_database()
 - server version
-- civilization_os schema state
+- civilization schema state
 - no conflicting four R13 tables
 - no public-schema duplicates
 - no unexpected pending transaction
@@ -67,7 +66,7 @@ Use only:
 
 The file creates:
 
-- civilization_os schema when absent
+- civilization schema when absent
 - territory_record
 - facility_registry
 - district_registry
@@ -135,7 +134,7 @@ The rollback is intentionally guarded.
 
 It refuses destructive table removal if canonical rows exist.
 
-The civilization_os schema is never dropped by this R13 rollback.
+The civilization schema is never dropped by this R13 rollback.
 
 If canonical rows exist, use repair/invalidation/supersede planning instead of destructive rollback.
 

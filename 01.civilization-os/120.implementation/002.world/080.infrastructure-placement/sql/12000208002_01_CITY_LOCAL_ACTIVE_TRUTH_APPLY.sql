@@ -2,9 +2,8 @@
 
 BEGIN;
 
-CREATE SCHEMA IF NOT EXISTS civilization_os;
 
-CREATE TABLE civilization_os.territory_record (
+CREATE TABLE civilization.territory_record (
     territory_record_id uuid NOT NULL,
     nation_id uuid NOT NULL,
     territory_code text NOT NULL,
@@ -41,7 +40,7 @@ CREATE TABLE civilization_os.territory_record (
         )
 );
 
-CREATE TABLE civilization_os.facility_registry (
+CREATE TABLE civilization.facility_registry (
     facility_registry_id uuid NOT NULL,
     facility_domain text NOT NULL,
     facility_code text NOT NULL,
@@ -71,7 +70,7 @@ CREATE TABLE civilization_os.facility_registry (
         )
 );
 
-CREATE TABLE civilization_os.district_registry (
+CREATE TABLE civilization.district_registry (
     district_registry_id uuid NOT NULL,
     nation_id uuid NOT NULL,
     city_code text NOT NULL,
@@ -102,7 +101,7 @@ CREATE TABLE civilization_os.district_registry (
 
     CONSTRAINT fk_district_registry_territory
         FOREIGN KEY (nation_id, territory_code)
-        REFERENCES civilization_os.territory_record
+        REFERENCES civilization.territory_record
             (nation_id, territory_code),
 
     CONSTRAINT ck_district_registry_status
@@ -121,7 +120,7 @@ CREATE TABLE civilization_os.district_registry (
         CHECK (source_state_version > 0)
 );
 
-CREATE TABLE civilization_os.active_facility_placement (
+CREATE TABLE civilization.active_facility_placement (
     active_facility_placement_id uuid NOT NULL,
     facility_registry_id uuid NOT NULL,
     placement_version integer NOT NULL,
@@ -149,12 +148,12 @@ CREATE TABLE civilization_os.active_facility_placement (
 
     CONSTRAINT fk_active_facility_placement_facility
         FOREIGN KEY (facility_registry_id)
-        REFERENCES civilization_os.facility_registry
+        REFERENCES civilization.facility_registry
             (facility_registry_id),
 
     CONSTRAINT fk_active_facility_placement_territory
         FOREIGN KEY (nation_id, territory_code)
-        REFERENCES civilization_os.territory_record
+        REFERENCES civilization.territory_record
             (nation_id, territory_code),
 
     CONSTRAINT fk_active_facility_placement_district
@@ -164,7 +163,7 @@ CREATE TABLE civilization_os.active_facility_placement (
             city_code,
             territory_code
         )
-        REFERENCES civilization_os.district_registry (
+        REFERENCES civilization.district_registry (
             district_registry_id,
             nation_id,
             city_code,
@@ -196,7 +195,7 @@ CREATE TABLE civilization_os.active_facility_placement (
 );
 
 CREATE UNIQUE INDEX uq_active_facility_placement_current_active
-    ON civilization_os.active_facility_placement
+    ON civilization.active_facility_placement
         (facility_registry_id)
     WHERE placement_status = 'active'
       AND effective_until IS NULL;

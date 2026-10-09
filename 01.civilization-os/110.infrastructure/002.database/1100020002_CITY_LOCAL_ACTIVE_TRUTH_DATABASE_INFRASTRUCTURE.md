@@ -22,27 +22,24 @@ Owner:
 
 Connection environment:
 
-- CIVILIZATION_DATABASE_URL
+- PERSONA_DATABASE_URL
 
 Schema:
 
-- civilization_os
+- civilization
 
 Use of public schema is prohibited.
 
-No fallback is allowed to:
-
-- PERSONA_DATABASE_URL
-- DATABASE_URL
+PERSONA_DATABASE_URL is the established shared PostgreSQL connection. Fallback to DATABASE_URL is prohibited.
 
 ## 3. Canonical Physical Relations
 
 Required relations:
 
-- civilization_os.territory_record
-- civilization_os.facility_registry
-- civilization_os.district_registry
-- civilization_os.active_facility_placement
+- civilization.territory_record
+- civilization.facility_registry
+- civilization.district_registry
+- civilization.active_facility_placement
 
 These relations are physical bindings of existing canonical models.
 They are not new semantic identities.
@@ -142,7 +139,7 @@ Required integrity includes:
 
 Runtime client code must not read this schema directly.
 
-Only server-side CivilizationOS read components may use CIVILIZATION_DATABASE_URL.
+Only server-side CivilizationOS read components may use PERSONA_DATABASE_URL.
 
 The server read layer must return canonical projection contracts rather than raw unrestricted rows.
 

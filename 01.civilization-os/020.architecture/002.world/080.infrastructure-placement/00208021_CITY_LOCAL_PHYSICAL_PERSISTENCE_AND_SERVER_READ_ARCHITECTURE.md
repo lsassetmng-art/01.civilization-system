@@ -37,18 +37,15 @@ through a CivilizationOS-owned database boundary.
 
 Canonical connection environment:
 
-- CIVILIZATION_DATABASE_URL
+- PERSONA_DATABASE_URL
 
 Canonical schema:
 
-- civilization_os
+- civilization
 
 The public schema is prohibited.
 
-CIVILIZATION_DATABASE_URL must not fall back to:
-
-- PERSONA_DATABASE_URL
-- DATABASE_URL
+PERSONA_DATABASE_URL is the established shared PostgreSQL connection. CivilizationOS-owned persistence must not use DATABASE_URL.
 
 Persona canonical truth remains Persona-owned.
 ERP canonical truth remains ERP-owned.
@@ -58,10 +55,10 @@ CivilizationOS city-local active truth is neither Persona-side nor ERP-side trut
 
 The R13 active read model depends on these physical canonical relations:
 
-- civilization_os.territory_record
-- civilization_os.facility_registry
-- civilization_os.district_registry
-- civilization_os.active_facility_placement
+- civilization.territory_record
+- civilization.facility_registry
+- civilization.district_registry
+- civilization.active_facility_placement
 
 No duplicate city registry is introduced by R13.
 
@@ -180,7 +177,6 @@ require their own later implementation and GO gates.
 Prohibited:
 
 - public schema use
-- PERSONA_DATABASE_URL fallback
 - DATABASE_URL fallback
 - client-side direct DB access
 - seed/default promotion to active truth

@@ -17,7 +17,7 @@ BEGIN
               ('active_facility_placement')
       ) AS expected(table_name)
       WHERE to_regclass(
-          'civilization_os.' || expected.table_name
+          'civilization.' || expected.table_name
       ) IS NULL;
 
     IF missing_count <> 0 THEN
@@ -63,7 +63,7 @@ BEGIN
       FROM pg_catalog.pg_constraint c
       JOIN pg_catalog.pg_namespace n
         ON n.oid = c.connamespace
-     WHERE n.nspname = 'civilization_os'
+     WHERE n.nspname = 'civilization'
        AND c.conname IN (
            'pk_territory_record',
            'uq_territory_record_nation_code',
@@ -100,7 +100,7 @@ $verify$;
 DO $verify$
 BEGIN
     IF to_regclass(
-        'civilization_os.uq_active_facility_placement_current_active'
+        'civilization.uq_active_facility_placement_current_active'
     ) IS NULL THEN
         RAISE EXCEPTION
             'R13 verify failed: current-active unique index missing';
@@ -116,7 +116,7 @@ BEGIN
       INTO duplicate_count
       FROM (
           SELECT nation_id, territory_code
-            FROM civilization_os.territory_record
+            FROM civilization.territory_record
            GROUP BY nation_id, territory_code
           HAVING count(*) > 1
       ) q;
@@ -130,7 +130,7 @@ BEGIN
       INTO duplicate_count
       FROM (
           SELECT facility_domain, facility_code
-            FROM civilization_os.facility_registry
+            FROM civilization.facility_registry
            GROUP BY facility_domain, facility_code
           HAVING count(*) > 1
       ) q;
@@ -144,7 +144,7 @@ BEGIN
       INTO duplicate_count
       FROM (
           SELECT nation_id, city_code, district_code
-            FROM civilization_os.district_registry
+            FROM civilization.district_registry
            GROUP BY nation_id, city_code, district_code
           HAVING count(*) > 1
       ) q;
@@ -164,7 +164,7 @@ BEGIN
       INTO invalid_count
       FROM (
           SELECT facility_registry_id
-            FROM civilization_os.active_facility_placement
+            FROM civilization.active_facility_placement
            WHERE placement_status = 'active'
              AND effective_until IS NULL
            GROUP BY facility_registry_id
@@ -197,7 +197,7 @@ BEGIN
                   PARTITION BY facility_registry_id
                   ORDER BY placement_version
               ) AS prior_source_state_version
-          FROM civilization_os.active_facility_placement
+          FROM civilization.active_facility_placement
       ) q
      WHERE prior_placement_version IS NOT NULL
        AND (
@@ -214,5 +214,5 @@ $verify$;
 
 SELECT
     'PASS' AS result,
-    'civilization_os' AS schema_name,
+    'civilization' AS schema_name,
     4 AS required_table_count;
