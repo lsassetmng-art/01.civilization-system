@@ -435,3 +435,29 @@ Accepted when:
 - no automatic authorization is allowed
 - no seed is promoted into canonical city truth
 - no DB connection occurs during design mutation
+
+## 20. R13 City/Auth Provisioning Resolution
+
+The previously deferred authorization grant provisioning path is now
+specified by:
+
+12000208006_CITY_LOCAL_CITY_AUTH_PROVISIONING_DESIGN.md
+
+and:
+
+12000208007_CITY_LOCAL_CITY_AUTH_PROVISIONING_EXECUTION_RUNBOOK.md
+
+Provisioning remains separate from authentication.
+
+The supplemental DDL does not itself create:
+
+- Territory Record
+- city_registry rows
+- nation_read_authorization grants
+
+City provisioning requires an approved current-active Territory Record.
+
+Authorization provisioning requires an opaque actor key proven by a valid
+signed server session and separate mutation authority.
+
+No login-time auto-grant is introduced.

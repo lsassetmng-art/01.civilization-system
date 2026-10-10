@@ -207,3 +207,26 @@ Those dependencies must not be fabricated.
 This supplemental database design requires no AWS mutation.
 
 Runtime deployment / environment reflection is a later explicit gate.
+
+## 15. R13 Provisioning Follow-Up
+
+After successful supplemental DDL application, canonical city and
+authorization rows remain absent until explicit provisioning.
+
+Provisioning authority and execution are defined by:
+
+- 12000208006_CITY_LOCAL_CITY_AUTH_PROVISIONING_DESIGN.md
+- 12000208007_CITY_LOCAL_CITY_AUTH_PROVISIONING_EXECUTION_RUNBOOK.md
+
+The provisioning design does not weaken the original DDL boundary.
+
+In particular:
+
+- no automatic city seed
+- no automatic Territory Record
+- no login-time authorization grant
+- no public mutation endpoint
+- no localStorage authorization authority
+
+If current-active Territory Record is absent, city provisioning must stop
+until nation / territory bootstrap authority is separately resolved.
