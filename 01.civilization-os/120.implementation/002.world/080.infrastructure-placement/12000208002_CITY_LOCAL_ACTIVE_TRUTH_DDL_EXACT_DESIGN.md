@@ -336,3 +336,26 @@ Accepted when:
 - verify SQL exists
 - guarded rollback SQL exists
 - no DB connection occurred during design
+
+## 19. R13 City Lineage Supplemental Resolution
+
+The original four-table DDL intentionally deferred the physical city owner.
+
+That deferral is now resolved by:
+
+12000208004_CITY_LOCAL_CITY_LINEAGE_READ_AUTHORIZATION_DDL_EXACT_DESIGN.md
+
+The original four-table apply remains historical and unchanged in scope.
+
+The supplemental design adds:
+
+- civilization.city_registry
+- civilization.nation_read_authorization
+- district -> city FK
+- active placement -> city FK
+
+The original statement that this four-table phase creates no city table
+remains true for that original apply file only.
+
+Server-read implementation must not proceed on the four-table DDL alone
+after this supplemental dependency is adopted.

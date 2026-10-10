@@ -26,7 +26,8 @@ The server read layer consumes canonical truth from:
 - Active Facility Placement
 - Facility Type master
 - canonical facility UI mapping
-- existing active city lineage
+- civilization.city_registry
+- civilization.nation_read_authorization
 
 Draft and seed sources are not active read truth.
 
@@ -289,3 +290,44 @@ repository access.
 
 Repository code must not parse browser storage or reconstruct authentication
 identity from route values, query values, or arbitrary request headers.
+
+## R13 City Lineage and Read Authorization Resolution
+
+R13_CITY_LINEAGE_READ_AUTHORIZATION_V1
+
+The previously deferred active-city physical owner is resolved by:
+
+- civilization.city_registry
+
+The R13 server-side nation read authorization decision source is:
+
+- civilization.nation_read_authorization
+
+The signed CivilizationOS server session remains authentication authority.
+
+Its signed civilizationId field is consumed by R13 authorization only as an
+opaque server_session_actor_key.
+
+It is not converted into a UUID Civilization identity.
+
+Authorization rules:
+
+- no valid signed session -> 401
+- valid session but no current active city_local_read grant for target nation -> 403
+- grant existence does not prove resource existence
+- city identity must independently resolve through city_registry
+- absent city identity -> 404 after authorization
+- known but non-current city -> 200 blocked readiness
+- no route/query/header/local-storage value may create authorization
+
+City lineage rules:
+
+- district_registry must bind to city_registry
+- active_facility_placement must bind to city_registry
+- R11 navigation data remains non-canonical
+- no city is auto-created from existing city_code strings
+- no authorization grant is auto-created by login
+
+Exact supplemental DDL authority:
+
+12000208004_CITY_LOCAL_CITY_LINEAGE_READ_AUTHORIZATION_DDL_EXACT_DESIGN.md

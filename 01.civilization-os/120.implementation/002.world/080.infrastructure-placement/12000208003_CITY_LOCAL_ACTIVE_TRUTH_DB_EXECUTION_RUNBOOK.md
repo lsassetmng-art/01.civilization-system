@@ -160,3 +160,17 @@ DDL design alone requires no AWS runtime reflection.
 
 Actual runtime infrastructure change must be evaluated separately
 when the server implementation/deployment stage is reached.
+
+## 12. Supplemental R13 Prerequisite
+
+The original four-table R13 DDL no longer completes all prerequisites
+required by the server-read contract.
+
+Before R13 server repository/API implementation proceeds,
+the supplemental city-lineage/read-authorization migration defined by:
+
+12000208004_CITY_LOCAL_CITY_LINEAGE_READ_AUTHORIZATION_DDL_EXACT_DESIGN.md
+
+must pass its own explicit DB apply and verification gate.
+
+No automatic city seed or authorization grant is permitted.
