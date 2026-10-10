@@ -260,3 +260,23 @@ If no approved current-active Territory Record exists, the next design work
 must resolve nation / territory bootstrap authority before city provisioning.
 
 No city provisioning SQL may bypass that prerequisite.
+
+## 20. Nation Registry Prerequisite Resolution
+
+The previous nation / territory prerequisite is now physically resolved by:
+
+- civilization.nation_registry
+- civilization.territory_record
+
+defined by:
+
+12000208008_NATION_TERRITORY_BOOTSTRAP_DESIGN.md
+
+City/auth provisioning must not execute until:
+
+1. nation_registry DDL has been applied and verified
+2. the approved current-active nation exists
+3. the approved current-active Territory Record exists
+4. the territory binds to the same nation_id
+
+No source may bypass this ordering.

@@ -461,3 +461,27 @@ Authorization provisioning requires an opaque actor key proven by a valid
 signed server session and separate mutation authority.
 
 No login-time auto-grant is introduced.
+
+## 21. R13 Nation Registry Resolution
+
+The earlier statement that no approved CivilizationOS nation-registry owner
+had been identified was correct at the time of this supplemental design.
+
+That remaining boundary is now resolved by:
+
+12000208008_NATION_TERRITORY_BOOTSTRAP_DESIGN.md
+
+R13 now assigns canonical CivilizationOS physical nation identity to:
+
+- civilization.nation_registry
+
+After its approved DDL is applied:
+
+- territory_record.nation_id binds to nation_registry
+- facility_registry.owner_nation_id binds to nation_registry
+- nation_read_authorization.nation_id binds to nation_registry
+
+This does not adopt personaos.nation.
+
+No existing seed, navigation, or PersonaOS identity is automatically
+promoted or backfilled.

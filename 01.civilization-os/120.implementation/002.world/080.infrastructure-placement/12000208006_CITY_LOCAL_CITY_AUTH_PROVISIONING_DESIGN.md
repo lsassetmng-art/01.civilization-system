@@ -431,3 +431,26 @@ Accepted when:
 - no silent UPDATE/DELETE fallback exists
 - revocation preserves history
 - no DB connection occurs during this design GO
+
+## 25. R13 Nation Registry Resolution
+
+Section 6 described the fail-closed state before a CivilizationOS
+physical nation owner existed.
+
+That boundary is now superseded by:
+
+12000208008_NATION_TERRITORY_BOOTSTRAP_DESIGN.md
+
+After adoption and DDL application:
+
+- civilization.nation_registry becomes the physical nation identity owner
+- approved nation_id must resolve there
+- Territory Record must bind to that nation
+- city provisioning requires both current-active nation and territory
+
+The following remain prohibited:
+
+- nation UUID synthesis
+- PersonaOS automatic adoption
+- R11 navigation-code promotion
+- seed-key promotion without an explicit manifest
