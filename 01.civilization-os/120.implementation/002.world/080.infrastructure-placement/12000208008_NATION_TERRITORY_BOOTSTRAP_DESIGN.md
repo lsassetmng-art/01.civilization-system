@@ -419,3 +419,30 @@ Accepted when:
 - bootstrap nation and territory values are explicit
 - exact idempotency replaces silent upsert
 - no DB connection occurs during this design GO
+
+## 25. First Manifest Resolution
+
+The first concrete R13 nation / territory semantic manifest is defined by:
+
+12000208010_NATION_TERRITORY_MANIFEST_DESIGN.md
+
+The first bootstrap target is:
+
+- Helios Democratic Kingdom
+
+The physical R13 nation code is explicitly fixed to:
+
+- helios
+
+The initial territory semantics are explicitly fixed to:
+
+- territory_code = national-territory
+- territory_class = national_primary_territory
+- controlling_authority_scope = nation
+
+This is an explicit new R13 physical design decision.
+
+It is not an automatic promotion of navigation truth.
+
+UUIDs and the effective timestamp remain outside the design repository
+until a separately approved runtime-local instantiation step.

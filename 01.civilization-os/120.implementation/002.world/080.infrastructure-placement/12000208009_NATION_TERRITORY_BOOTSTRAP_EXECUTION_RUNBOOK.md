@@ -275,3 +275,23 @@ Long-term nation and territory lifecycle mutation requires explicit
 CivilizationOS administrative authority and canonical audit integration.
 
 Bootstrap SQL must not become a public API.
+
+## 20. First Manifest Resolution
+
+The semantic manifest prerequisite is now defined by:
+
+- 12000208010_NATION_TERRITORY_MANIFEST_DESIGN.md
+- 12000208011_NATION_TERRITORY_MANIFEST_INSTANTIATION_RUNBOOK.md
+
+Nation / territory data provisioning must not execute until:
+
+1. manifest design is canonical
+2. runtime-local UUIDs are materialized
+3. one shared effective timestamp is materialized
+4. exact manifest values are reviewed
+5. manifest SHA-256 is fixed
+6. separate provisioning APPLY GO is issued
+
+The first bootstrap target is Helios Democratic Kingdom.
+
+Aurelia remains excluded from active bootstrap.
