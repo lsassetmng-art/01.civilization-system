@@ -331,3 +331,35 @@ City lineage rules:
 Exact supplemental DDL authority:
 
 12000208004_CITY_LOCAL_CITY_LINEAGE_READ_AUTHORIZATION_DDL_EXACT_DESIGN.md
+
+## R13 Canonical Implementation Acceptance
+
+The city-local server-read implementation substrate is canonically accepted
+at implementation head:
+
+f737f7f94515889bedc79aaccba7ec404d7eb331
+
+Acceptance authority:
+
+12000208014_CITY_LOCAL_SERVER_READ_CANONICAL_ACCEPTANCE.md
+
+The acceptance includes:
+
+- exact endpoint family
+- PERSONA_DATABASE_URL-only server persistence
+- READ ONLY transaction boundary
+- signed-session authentication boundary
+- nation_read_authorization boundary
+- city / territory effective-time semantics
+- active-placement effective-time semantics
+- canonical projection field names
+- active / partial_data / blocked readiness
+- fail-closed unresolved facility type / canonical UI mapping
+
+It does not claim:
+
+- AWS runtime acceptance
+- real actor acceptance
+- city/auth DB provisioning completion
+- live authorized 200 DB read
+- facility route operational activation
