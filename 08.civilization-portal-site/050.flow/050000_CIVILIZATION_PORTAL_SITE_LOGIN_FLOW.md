@@ -43,3 +43,29 @@ layer:
 個別文書で詳細を確認し、
 必要に応じて同一レイヤの overview / index へ戻り、
 さらに必要に応じてルート正本へ戻る。
+
+# ============================================================
+# R13 CivilizationOS Login Handoff Exact Flow
+# ============================================================
+
+Civilization / AI Worker の対象入口では、未認証時の `/login` は
+Portal same-origin `/login` を意味しない。
+
+Portal は CivilizationOS の公開 Web `/login` へ遷移する。
+
+Civilization:
+Portal -> CivilizationOS /login
+-> requested_os_code=civilization
+-> /civilization-menu
+
+AI Worker:
+Portal -> CivilizationOS /login
+-> requested_os_code=aiworker
+-> CivilizationOS server-side destination resolution
+-> AIWorkerOS /aiworker-menu
+
+既存 signed CivilizationOS session が有効な場合は、
+browser localStorage ではなく signed session を根拠に再認証を省略する。
+
+詳細:
+- ../060.integration/060005_CIVILIZATION_PORTAL_TO_CIVILIZATIONOS_LOGIN_HANDOFF_REPAIR_DESIGN.md

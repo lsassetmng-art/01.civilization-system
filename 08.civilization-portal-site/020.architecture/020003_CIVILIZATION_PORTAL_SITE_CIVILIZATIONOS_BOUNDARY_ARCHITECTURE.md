@@ -69,3 +69,17 @@ layer:
 個別文書で詳細を確認し、
 必要に応じて同一レイヤの overview / index へ戻り、
 さらに必要に応じてルート正本へ戻る。
+
+# ============================================================
+# R13 CivilizationOS Login Handoff Repair
+# ============================================================
+
+Portal の Civilization / AI Worker 公開入口における未認証遷移は、
+Portal 自身の mock `/login` を認証正本として使用してはならない。
+
+正本の認証境界は CivilizationOS とし、
+Portal は設定済み CivilizationOS Web `/login` へ復帰文脈を付けて
+遷移する。
+
+詳細:
+- ../060.integration/060005_CIVILIZATION_PORTAL_TO_CIVILIZATIONOS_LOGIN_HANDOFF_REPAIR_DESIGN.md

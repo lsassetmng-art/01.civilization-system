@@ -50,3 +50,29 @@ layer:
 個別文書で詳細を確認し、
 必要に応じて同一レイヤの overview / index へ戻り、
 さらに必要に応じてルート正本へ戻る。
+
+# ============================================================
+# R13 Exact Login Return Context
+# ============================================================
+
+R13 Portal -> CivilizationOS login handoff では次を保持する。
+
+- locale_code
+- language_code
+- after_login_path
+- return_to
+- requested_os_code
+
+Civilization:
+- requested_os_code = civilization
+- after_login_path = /civilization-menu
+
+AI Worker:
+- requested_os_code = aiworker
+- after_login_path = /civilization-menu
+
+AIWorkerOS の外部 origin は復帰文脈から受け取らず、
+CivilizationOS server-side 設定で解決する。
+
+詳細:
+- 060005_CIVILIZATION_PORTAL_TO_CIVILIZATIONOS_LOGIN_HANDOFF_REPAIR_DESIGN.md

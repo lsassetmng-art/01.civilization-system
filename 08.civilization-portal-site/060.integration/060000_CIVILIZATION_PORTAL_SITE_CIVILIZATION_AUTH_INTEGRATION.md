@@ -52,3 +52,23 @@ layer:
 個別文書で詳細を確認し、
 必要に応じて同一レイヤの overview / index へ戻り、
 さらに必要に応じてルート正本へ戻る。
+
+# ============================================================
+# R13 Direct CivilizationOS Web Login Handoff
+# ============================================================
+
+Portal の Civilization / AI Worker 入口は、
+既存の次の設定契約を使用して CivilizationOS 認証へ handoff する。
+
+NEXT_PUBLIC_CIVILIZATION_AUTH_AUTHORIZE_URL
+
+この値は CivilizationOS の公開 `/login` URL を表す。
+
+Portal の mock browser-storage login は、
+当該2入口の認証正本として使用しない。
+
+AIWorkerOS の認証後 origin は Portal が after_login_path で決めず、
+CivilizationOS server-side の AIWORKEROS_PUBLIC_BASE_URL が決める。
+
+詳細:
+- 060005_CIVILIZATION_PORTAL_TO_CIVILIZATIONOS_LOGIN_HANDOFF_REPAIR_DESIGN.md

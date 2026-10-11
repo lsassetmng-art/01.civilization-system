@@ -39,3 +39,10 @@ prepared_by: Zero
 原則として、
 レイヤ概要を確認した後に必要な個別文書を読み、
 必要に応じて統合正本へ戻る。
+
+# ============================================================
+# R13 Login Handoff Repair Documents
+# ============================================================
+
+- 060005_CIVILIZATION_PORTAL_TO_CIVILIZATIONOS_LOGIN_HANDOFF_REPAIR_DESIGN.md
+- 060006_CIVILIZATION_PORTAL_TO_CIVILIZATIONOS_LOGIN_HANDOFF_REPAIR_IMPLEMENTATION_RUNBOOK.md
