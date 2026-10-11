@@ -364,3 +364,21 @@ Accepted implementation head:
 f737f7f94515889bedc79aaccba7ec404d7eb331
 
 Runtime authorization and AWS acceptance remain explicitly open.
+
+## Test Login Runtime Prerequisite
+
+AWS runtime validation requires a server-authenticated manual test path
+alongside the existing Google and Yahoo OAuth paths.
+
+The manual path is defined by:
+
+12000208015_TEST_LOGIN_SERVER_SESSION_HANDOFF_DESIGN.md
+
+Required manual AWS flows:
+
+- Portal -> test login -> AIWorkerOS
+- Portal -> test login -> CivilizationOS
+
+Google/Yahoo must remain available and must not regress.
+
+AWS runtime acceptance remains open until later execution.

@@ -377,3 +377,24 @@ Accepted when:
 - runtime UUIDs and timestamp remain unmaterialized
 - no DB connection occurs
 - no DB mutation occurs
+
+## Test Login Actor Proof Path
+
+The planned AWS manual integration-test actor may authenticate through:
+
+12000208015_TEST_LOGIN_SERVER_SESSION_HANDOFF_DESIGN.md
+
+Manual credentials:
+
+- Login ID: test
+- Password input: test
+
+The city_local_read actor must still be obtained from a successful runtime:
+
+GET /api/civilization/auth/session-identity
+
+after a valid signed server session exists.
+
+Google and Yahoo OAuth remain alternate authentication paths.
+
+Authentication does not create authorization.
