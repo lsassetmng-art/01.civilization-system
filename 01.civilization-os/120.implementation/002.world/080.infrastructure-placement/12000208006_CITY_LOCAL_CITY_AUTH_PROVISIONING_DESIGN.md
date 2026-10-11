@@ -454,3 +454,33 @@ The following remain prohibited:
 - PersonaOS automatic adoption
 - R11 navigation-code promotion
 - seed-key promotion without an explicit manifest
+
+## 26. Server Session Identity Proof Resolution
+
+The server-side actor proof prerequisite defined in section 10 is now
+physically implemented by:
+
+GET /api/civilization/auth/session-identity
+
+implementation lineage:
+
+f2f11148c839095d0522665747f41aeb040cc963
+
+Validated behavior:
+
+- valid signed session -> 200 with server_session_actor_key
+- missing session -> 401
+- invalid session -> 401
+- expired session -> 401
+- signing configuration unavailable -> 503
+- cache-control no-store
+- no DB connection
+- no authorization mutation
+
+This resolves the identity-proof implementation blocker.
+
+It does not create any city_local_read grant.
+
+The first concrete city/auth semantic manifest is defined separately by:
+
+12000208012_CITY_AUTH_MANIFEST_DESIGN.md

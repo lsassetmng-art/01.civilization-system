@@ -280,3 +280,33 @@ City/auth provisioning must not execute until:
 4. the territory binds to the same nation_id
 
 No source may bypass this ordering.
+
+## 21. First City/Auth Manifest Resolution
+
+The first R13 city/auth semantic manifest is defined by:
+
+- 12000208012_CITY_AUTH_MANIFEST_DESIGN.md
+- 12000208013_CITY_AUTH_MANIFEST_INSTANTIATION_RUNBOOK.md
+
+The first city target is:
+
+- helios_city
+
+Fixed physical semantics:
+
+- city_code = helios_city
+- city_name = Helios City
+- territory_code = national-territory
+- source_state_version = 1
+- scope_code = city_local_read
+
+Runtime materialization is still required for:
+
+- city_registry_id
+- exact Helios nation_id lineage input
+- nation_read_authorization_id
+- real server_session_actor_key
+- shared city/auth effective timestamp
+
+No DB provisioning may execute until the runtime-local manifest is
+instantiated, reviewed, and separately approved for DB mutation.
